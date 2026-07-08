@@ -156,11 +156,11 @@ function Index() {
         </section>
 
         {/* FIELD REPORTS */}
-        <section className="border-t border-border/50 px-6 py-24 lg:px-8 lg:py-32">
+        <section className="border-t border-border/50 bg-[#121212] px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-14 max-w-3xl">
+            <div className="mb-16 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Field Reports from Messe Wien
+                Field Reports from Messe Wien 2026
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Unfiltered candidate notes from the exam hall floor.
@@ -171,18 +171,20 @@ function Index() {
               {reports.map((report) => (
                 <article
                   key={report.id}
-                  className="group flex flex-col justify-between rounded-2xl border border-transparent bg-card/30 p-8 transition-all hover:border-border hover:bg-card/50"
+                  className="group flex flex-col justify-between rounded-2xl border border-transparent bg-card/20 p-8 transition-all hover:border-border/40 hover:bg-card/40"
                 >
-                  <p className="text-lg leading-relaxed text-foreground">&ldquo;{report.quote}&rdquo;</p>
+                  <p className="leading-relaxed text-muted-foreground">
+                    &ldquo;{report.quote}&rdquo;
+                  </p>
                   <div className="mt-8">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-1.5">
-                      <span className="text-xs font-semibold tracking-wide text-foreground">
+                    <p className="font-display text-sm font-semibold text-foreground">
+                      {report.name}
+                    </p>
+                    <div className="mt-3 inline-flex items-center rounded-full border border-border/60 bg-background/60 px-3 py-1">
+                      <span className="text-xs font-semibold tracking-wide text-primary">
                         {report.badge}
                       </span>
                     </div>
-                    <p className="mt-3 text-xs font-medium tracking-wide text-slate-dim uppercase">
-                      {report.handle}
-                    </p>
                   </div>
                 </article>
               ))}
@@ -212,23 +214,23 @@ function Index() {
 const reports = [
   {
     id: 1,
+    name: "Maxim, Vienna",
     quote:
-      "Saved by the 2-3 answers discipline. The simulator forced me to stop second-guessing and commit before the clock bled out.",
-    badge: "Official Score: 84.0%",
-    handle: "Session 2025 — Candidate #117",
+      "The 42-seconds time limit on Math & Logic completely broke the hall. People started guessing blindly in the last 15 minutes and committed a penalty suicide. I strictly held the 2-3 answers discipline from the simulator, left blank spaces, and isolated my losses. The system rewarded me with massive Partial Credit. I am on the first course now.",
+    badge: "Score: 78.5% (Direct Admission)",
   },
   {
     id: 2,
+    name: "Lukas, Munich",
     quote:
-      "Avoided the marking system trap. Partial-Credit looked generous until I realized wrong answers could erase more than blanks.",
-    badge: "Official Score: 79.5%",
-    handle: "Session 2025 — Candidate #204",
+      "Everyone thought the Economics section was easy because the Furthmann textbook terms looked familiar. But the professors hid massive linguistic traps using words like 'only' and 'directly'. This simulator taught me exactly how to scan for these tricks. Economics alone dragged my entire exam onto a safe score line.",
+    badge: "Score: 82.0% (Top 100)",
   },
   {
     id: 3,
+    name: "Anna, Almaty",
     quote:
-      "Furman\u2019s textbook traps bypassed. The engine surfaced every edge-case distractor that the official prep missed completely.",
-    badge: "Official Score: 88.5%",
-    handle: "Session 2025 — Candidate #089",
+      "I panicked hard when two heavy math cases went completely to zero. In a standard school test, that would be a total failure. But thanks to the core scoring logic practiced here, those zeroes were safely containerized and didn't pull down my perfect Economics score. Waiting List moved in two weeks, and my student ticket is locked.",
+    badge: "Score: 74.5% (Waiting List Crossed)",
   },
 ];
