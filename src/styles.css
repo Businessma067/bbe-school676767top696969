@@ -4,7 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
+@theme inline {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
  * Design system: Messe Wien Survivor — luxury dark mode.
  *
  * Palette: solid graphite (#121212), crisp white, muted slate,
