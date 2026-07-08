@@ -5,10 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system: Messe Wien Survivor — luxury dark mode.
+ * Design system: Messe Wien Survivor — light academic mode.
  *
- * Palette: solid graphite (#121212), crisp white, muted slate,
- * deep corporate burgundy (#7A0026), subtle neon white glows.
+ * Palette: warm ivory (#F7F3EC), crisp white, deep espresso text,
+ * soft caramel/tan accents. Alternating parallax bands with a
+ * darkened WU Vienna campus photo behind neutral sections.
  */
 
 @theme inline {
@@ -44,11 +45,11 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  --color-burgundy: var(--burgundy);
-  --color-graphite: var(--graphite);
-  --color-slate: var(--slate);
-  --color-slate-dim: var(--slate-dim);
-  --color-glow: var(--glow);
+  --color-caramel: var(--caramel);
+  --color-caramel-deep: var(--caramel-deep);
+  --color-ivory: var(--ivory);
+  --color-espresso: var(--espresso);
+  --color-taupe: var(--taupe);
 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -68,68 +69,46 @@
 :root {
   --radius: 0.625rem;
 
-  /* Luxury dark mode as default. */
-  --background: oklch(from #121212 l c h);
-  --foreground: oklch(1 0 0);
-  --card: oklch(from #181818 l c h);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(from #181818 l c h);
-  --popover-foreground: oklch(1 0 0);
-  --primary: oklch(from #7A0026 l c h);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(from #181818 l c h);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(from #1a1a1a l c h);
-  --muted-foreground: oklch(0.7 0.02 260);
-  --accent: oklch(from #7A0026 l c h);
-  --accent-foreground: oklch(1 0 0);
+  /* Light academic palette */
+  --background: oklch(from #F7F3EC l c h);
+  --foreground: oklch(from #2A1F17 l c h);
+  --card: oklch(from #FFFFFF l c h);
+  --card-foreground: oklch(from #2A1F17 l c h);
+  --popover: oklch(from #FFFFFF l c h);
+  --popover-foreground: oklch(from #2A1F17 l c h);
+  --primary: oklch(from #8B5A2B l c h);
+  --primary-foreground: oklch(from #FFFDF8 l c h);
+  --secondary: oklch(from #EFE6D6 l c h);
+  --secondary-foreground: oklch(from #2A1F17 l c h);
+  --muted: oklch(from #F0E9DB l c h);
+  --muted-foreground: oklch(from #6B584A l c h);
+  --accent: oklch(from #B8865B l c h);
+  --accent-foreground: oklch(from #FFFDF8 l c h);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(from #7A0026 l c h);
+  --border: oklch(from #2A1F17 l c h / 12%);
+  --input: oklch(from #2A1F17 l c h / 12%);
+  --ring: oklch(from #8B5A2B l c h);
 
-  --graphite: oklch(from #121212 l c h);
-  --burgundy: oklch(from #7A0026 l c h);
-  --slate: oklch(0.75 0.02 260);
-  --slate-dim: oklch(0.55 0.02 260);
-  --glow: oklch(1 0 0 / 0.85);
+  --ivory: oklch(from #F7F3EC l c h);
+  --caramel: oklch(from #B8865B l c h);
+  --caramel-deep: oklch(from #8B5A2B l c h);
+  --espresso: oklch(from #2A1F17 l c h);
+  --taupe: oklch(from #6B584A l c h);
 
-  --chart-1: oklch(0.55 0.2 25);
-  --chart-2: oklch(0.65 0.18 260);
-  --chart-3: oklch(0.75 0.16 80);
-  --chart-4: oklch(0.7 0.18 300);
-  --chart-5: oklch(0.6 0.2 180);
-  --sidebar: oklch(from #181818 l c h);
-  --sidebar-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(from #7A0026 l c h);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(from #1a1a1a l c h);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(from #7A0026 l c h);
-}
-
-.dark {
-  --background: oklch(from #121212 l c h);
-  --foreground: oklch(1 0 0);
-  --card: oklch(from #181818 l c h);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(from #181818 l c h);
-  --popover-foreground: oklch(1 0 0);
-  --primary: oklch(from #7A0026 l c h);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(from #181818 l c h);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(from #1a1a1a l c h);
-  --muted-foreground: oklch(0.7 0.02 260);
-  --accent: oklch(from #7A0026 l c h);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(from #7A0026 l c h);
+  --chart-1: oklch(0.55 0.12 60);
+  --chart-2: oklch(0.65 0.08 50);
+  --chart-3: oklch(0.75 0.06 80);
+  --chart-4: oklch(0.7 0.1 40);
+  --chart-5: oklch(0.6 0.14 70);
+  --sidebar: oklch(from #FFFFFF l c h);
+  --sidebar-foreground: oklch(from #2A1F17 l c h);
+  --sidebar-primary: oklch(from #8B5A2B l c h);
+  --sidebar-primary-foreground: oklch(from #FFFDF8 l c h);
+  --sidebar-accent: oklch(from #EFE6D6 l c h);
+  --sidebar-accent-foreground: oklch(from #2A1F17 l c h);
+  --sidebar-border: oklch(from #2A1F17 l c h / 12%);
+  --sidebar-ring: oklch(from #8B5A2B l c h);
 }
 
 @layer base {
@@ -147,24 +126,10 @@
   }
 }
 
-@utility text-glow {
-  text-shadow: 0 0 24px var(--color-glow), 0 0 48px var(--color-glow);
+@utility text-caramel {
+  color: var(--color-caramel-deep);
 }
 
-@utility box-glow {
-  box-shadow: 0 0 32px -8px var(--color-glow), 0 0 64px -16px var(--color-burgundy);
-}
-
-@utility box-glow-subtle {
-  box-shadow: 0 0 24px -12px var(--color-glow);
-}
-
-@utility glass-frame {
-  background: oklch(1 0 0 / 5%);
-  backdrop-filter: blur(24px) saturate(140%);
-  border: 1px solid oklch(1 0 0 / 14%);
-}
-
-@utility divider-burgundy {
-  border-top: 1px solid var(--color-burgundy);
+@utility divider-caramel {
+  border-top: 1px solid var(--color-caramel);
 }
