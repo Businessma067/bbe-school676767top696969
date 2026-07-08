@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -7,8 +8,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      {/* Minimal executive header */}
-      <header className="border-b border-border/50">
+      {/* Header */}
+      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
           <div className="flex items-center gap-3">
             <div className="h-2 w-2 rounded-full bg-primary" />
@@ -23,23 +24,22 @@ function Index() {
       </header>
 
       <main>
-        {/* HERO SECTION */}
+        {/* HERO — light ivory */}
         <section className="relative overflow-hidden px-6 pt-20 pb-24 lg:px-8 lg:pt-28 lg:pb-32">
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-              {/* Left: copy */}
               <div className="max-w-2xl">
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-1.5">
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  <span className="text-xs font-medium tracking-wide text-slate">
+                  <span className="text-xs font-medium tracking-wide text-taupe">
                     Built by a Top-240 Survivor
                   </span>
                 </div>
 
-                <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                   Messe Wien 2026
                   <br />
-                  <span className="text-glow">In-Person Exam Cracked.</span>
+                  <span className="text-caramel">In-Person Exam Cracked.</span>
                 </h1>
 
                 <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
@@ -48,20 +48,20 @@ function Index() {
                 </p>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                  <button className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-[0_0_32px_-8px_var(--color-burgundy)] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                  <button className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
                     Access the Simulator Engine
                   </button>
                   <a
                     href="/Message_to_Parents_WU_Vienna_2027.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md border border-white/20 bg-transparent px-6 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-white/40 hover:bg-white/5 hover:box-glow-subtle focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                    className="inline-flex items-center justify-center rounded-md border border-border bg-card px-6 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                   >
                     Message to Parents
                   </a>
                 </div>
 
-                <div className="mt-8 flex items-center gap-6 text-xs font-medium tracking-wide text-slate-dim">
+                <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
                   <span>42s / question</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
                   <span>Partial-Credit Engine</span>
@@ -70,35 +70,63 @@ function Index() {
                 </div>
               </div>
 
-              {/* Right: video placeholder */}
               <div className="relative">
-                <div className="glass-frame relative aspect-video rounded-2xl p-1">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
-                  <div className="relative flex h-full flex-col items-center justify-center rounded-xl bg-graphite/60 p-8 text-center">
-                    <div className="mb-6 grid h-16 w-16 place-items-center rounded-full border border-white/10 bg-white/5">
-                      <div className="h-0 w-0 border-y-8 border-y-transparent border-l-[14px] border-l-foreground/80 pl-1" />
+                <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
+                  <div
+                    className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
+                    style={{
+                      backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.55), rgba(42,31,23,0.75)), url(${wuAsset.url})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <div className="mb-6 grid h-16 w-16 place-items-center rounded-full border border-white/40 bg-white/10 backdrop-blur">
+                      <div className="h-0 w-0 border-y-8 border-y-transparent border-l-[14px] border-l-white pl-1" />
                     </div>
-                    <p className="font-display text-lg font-medium text-foreground">
+                    <p className="font-display text-lg font-medium text-white">
                       Watch Intro Video
                     </p>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="mt-2 text-sm text-white/80">
                       Passing the Exam from Rimini Beach
                     </p>
-                    <div className="mt-6 text-xs font-medium tracking-wider text-slate-dim">
+                    <div className="mt-6 text-xs font-medium tracking-wider text-white/70">
                       02:14 PREVIEW
                     </div>
                   </div>
                 </div>
-                {/* Decorative glow */}
-                <div className="pointer-events-none absolute -top-12 -right-12 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
-                <div className="pointer-events-none absolute -bottom-12 -left-12 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* FINANCIAL PRESTIGE & ROI BLOCK */}
-        <section className="border-t border-border/50 px-6 py-24 lg:px-8 lg:py-32">
+        {/* PARALLAX BAND — darkened WU campus */}
+        <section
+          className="relative bg-fixed"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.78), rgba(42,31,23,0.72)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-6 py-28 text-center lg:px-8 lg:py-36">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
+              WU Vienna · Campus D2
+            </p>
+            <h2 className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+              A triple-accredited elite business school.
+              <br />
+              <span className="text-white/80">Tuition virtually €0.</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+              One 90-minute exam stands between your family and a world-class degree at zero
+              tuition cost.
+            </p>
+          </div>
+        </section>
+
+        {/* FINANCIAL PRESTIGE & ROI — back to light */}
+        <section className="px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
             <div className="mb-14 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -109,12 +137,11 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-card sm:grid-cols-2">
-              {/* Left Column */}
-              <div className="bg-background p-8 sm:p-10 lg:p-12">
+            <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
+              <div className="bg-card p-8 sm:p-10 lg:p-12">
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-1 w-8 bg-slate-dim" />
-                  <span className="text-xs font-semibold tracking-widest text-slate-dim uppercase">
+                  <div className="h-1 w-8 bg-taupe/50" />
+                  <span className="text-xs font-semibold tracking-widest text-taupe uppercase">
                     Trap
                   </span>
                 </div>
@@ -129,8 +156,7 @@ function Index() {
                 </p>
               </div>
 
-              {/* Right Column */}
-              <div className="bg-card/50 p-8 sm:p-10 lg:p-12">
+              <div className="bg-secondary p-8 sm:p-10 lg:p-12">
                 <div className="mb-6 flex items-center gap-3">
                   <div className="h-1 w-8 bg-primary" />
                   <span className="text-xs font-semibold tracking-widest text-primary uppercase">
@@ -140,7 +166,7 @@ function Index() {
                 <h3 className="font-display text-2xl font-semibold text-foreground">
                   The WU Vienna Arbitrage
                 </h3>
-                <p className="mt-5 leading-relaxed text-muted-foreground">
+                <p className="mt-5 leading-relaxed text-foreground/80">
                   WU Vienna is a world-class, triple-accredited elite business school with tuition
                   fees of virtually{" "}
                   <span className="font-semibold text-foreground">€0</span>. Passing this exam is
@@ -149,8 +175,7 @@ function Index() {
               </div>
             </div>
 
-            {/* Bottom alert box */}
-            <div className="mt-10 rounded-xl border border-l-2 border-l-primary border-border bg-card/40 px-6 py-5 sm:px-8">
+            <div className="mt-10 rounded-xl border border-l-4 border-l-primary border-border bg-card px-6 py-5 shadow-sm sm:px-8">
               <p className="text-sm leading-relaxed text-foreground sm:text-base">
                 <span className="font-semibold text-primary">Hedge note.</span>{" "}
                 By investing today, you block tens of thousands in future tuition debts. This is a
@@ -160,8 +185,28 @@ function Index() {
           </div>
         </section>
 
-        {/* FIELD REPORTS */}
-        <section className="border-t border-border/50 bg-[#121212] px-6 py-24 lg:px-8 lg:py-32">
+        {/* PARALLAX BAND #2 */}
+        <section
+          className="relative bg-fixed"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.82), rgba(42,31,23,0.68)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8 lg:py-32">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
+              Field Reports
+            </p>
+            <h2 className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl">
+              Voices from the exam hall floor.
+            </h2>
+          </div>
+        </section>
+
+        {/* FIELD REPORTS — light */}
+        <section className="px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
             <div className="mb-16 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -176,7 +221,7 @@ function Index() {
               {reports.map((report) => (
                 <article
                   key={report.id}
-                  className="group flex flex-col justify-between rounded-2xl border border-transparent bg-card/20 p-8 transition-all hover:border-border/40 hover:bg-card/40"
+                  className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-8 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <p className="leading-relaxed text-muted-foreground">
                     &ldquo;{report.quote}&rdquo;
@@ -185,7 +230,7 @@ function Index() {
                     <p className="font-display text-sm font-semibold text-foreground">
                       {report.name}
                     </p>
-                    <div className="mt-3 inline-flex items-center rounded-full border border-border/60 bg-background/60 px-3 py-1">
+                    <div className="mt-3 inline-flex items-center rounded-full border border-primary/30 bg-secondary px-3 py-1">
                       <span className="text-xs font-semibold tracking-wide text-primary">
                         {report.badge}
                       </span>
@@ -197,8 +242,8 @@ function Index() {
           </div>
         </section>
 
-        {/* Minimal footer */}
-        <footer className="border-t border-border/50 px-6 py-10 lg:px-8">
+        {/* Footer */}
+        <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
               <div className="h-2 w-2 rounded-full bg-primary" />
