@@ -51,9 +51,15 @@ function Index() {
                   <button className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-[0_0_32px_-8px_var(--color-burgundy)] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
                     Access the Simulator Engine
                   </button>
-                  <button className="inline-flex items-center justify-center rounded-md border border-white/20 bg-transparent px-6 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-white/40 hover:bg-white/5 hover:box-glow-subtle focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
-                    Parents&apos; Financial Guide (Download PDF)
-                  </button>
+                  <a
+                    href="/Message_to_Parents_WU_Vienna_2027.pdf"
+                    download="Message_to_Parents_WU_Vienna_2027.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-md border border-white/20 bg-transparent px-6 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-white/40 hover:bg-white/5 hover:box-glow-subtle focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                  >
+                    Message to Parents
+                  </a>
                 </div>
 
                 <div className="mt-8 flex items-center gap-6 text-xs font-medium tracking-wide text-slate-dim">
