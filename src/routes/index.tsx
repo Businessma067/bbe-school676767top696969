@@ -136,17 +136,23 @@ function Index() {
                   42-second time crunch and the brutal Partial-Credit marking system.
                 </p>
 
-                <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                  <button className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
-                    Access the Simulator Engine
+                <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                  <button className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    <span>Try demo-practice</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
+                  </button>
+                  <button className="inline-flex flex-col items-center justify-center rounded-md bg-primary px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    <span>Full course</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-primary-foreground/80">Pass the exam confidently</span>
                   </button>
                   <a
                     href="/Message_to_Parents_WU_Vienna_2027.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md border border-border bg-card px-6 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                    className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                   >
-                    Message to Parents
+                    <span>Message to Parents</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">Why our course?</span>
                   </a>
                 </div>
 
