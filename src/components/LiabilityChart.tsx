@@ -19,10 +19,10 @@ const data = [
 const fmt = (n: number) =>
   "€" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
 
-function PremiumTooltip({ active, payload, label }: TooltipProps<number, string>) {
+function PremiumTooltip({ active, payload, label }: any) {
   if (!active || !payload?.length) return null;
-  const priv = Number(payload.find((p) => p.dataKey === "private")?.value ?? 0);
-  const wu = Number(payload.find((p) => p.dataKey === "wu")?.value ?? 0);
+  const priv = Number(payload.find((p: any) => p.dataKey === "private")?.value ?? 0);
+  const wu = Number(payload.find((p: any) => p.dataKey === "wu")?.value ?? 0);
   const delta = priv - wu;
   return (
     <div
