@@ -113,6 +113,14 @@ function Index() {
               </div>
 
               <div className="relative">
+                <div className="mb-5 flex flex-col gap-3 sm:flex-row">
+                  <button className="inline-flex flex-1 items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    Купить полный пакет
+                  </button>
+                  <button className="inline-flex flex-1 items-center justify-center rounded-md border border-primary/50 bg-card px-5 py-3 text-sm font-semibold text-foreground transition-all hover:border-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    Начать демо-подготовку
+                  </button>
+                </div>
                 <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
                   <div
                     className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
