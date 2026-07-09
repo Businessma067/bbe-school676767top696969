@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import { LiabilityChart } from "@/components/LiabilityChart";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -184,6 +185,50 @@ function Index() {
             </div>
           </div>
         </section>
+
+        {/* LIABILITY CHART — dark fintech island */}
+        <section
+          className="px-6 py-24 lg:px-8 lg:py-32"
+          style={{ backgroundColor: "#0D0D0D" }}
+        >
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 max-w-3xl">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/50">
+                48-Month Capital Model
+              </p>
+              <h2 className="mt-5 font-display text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-5xl">
+                The Accumulation of Liability.
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-white/55 sm:text-lg">
+                A strict financial comparison tracking tuition, mandatory foundation blocks,
+                rent, and European living costs over 48 months.
+              </p>
+            </div>
+
+            <LiabilityChart />
+
+            <div
+              className="mt-12 rounded-2xl px-6 py-6 sm:px-8 sm:py-7"
+              style={{
+                backgroundColor: "rgba(122,0,38,0.06)",
+                border: "1px solid rgba(122,0,38,0.55)",
+              }}
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em]"
+                 style={{ color: "#C8375A" }}>
+                The Math is Absolute
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">
+                Securing a Top-240 seat at world-class WU Vienna blocks a compounding{" "}
+                <span className="font-semibold text-white">€70,000 family debt liability</span>.
+                Investing <span className="font-semibold text-white">€349</span> in the survival
+                engine today is a calculated asset-protection strategy.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
 
         {/* PARALLAX BAND #2 */}
         <section
