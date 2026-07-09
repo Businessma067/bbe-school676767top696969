@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Messe Wien Survivor | WU Vienna BBE Exam Prep" },
-      { name: "description", content: "The strict risk-management simulator built by a Top-240 survivor. Master the WU Vienna BBE in-person exam: 42-second time crunch, partial-credit marking, and Furman textbook traps." },
-      { name: "author", content: "Messe Wien Survivor" },
-      { property: "og:title", content: "Messe Wien Survivor | WU Vienna BBE Exam Prep" },
+      { title: "BBE School | WU Vienna BBE Exam Prep" },
+      { name: "description", content: "BBE School — the strict risk-management simulator built by a Top-240 survivor. Master the WU Vienna BBE in-person exam: 42-second time crunch, partial-credit marking, and Furman textbook traps." },
+      { name: "author", content: "BBE School" },
+      { property: "og:title", content: "BBE School | WU Vienna BBE Exam Prep" },
       { property: "og:description", content: "The strict risk-management simulator built by a Top-240 survivor. Master the WU Vienna BBE in-person exam." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@MesseWienSurvivor" },
+      { name: "twitter:site", content: "@BBESchool" },
     ],
     links: [
       {
