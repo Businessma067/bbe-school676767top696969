@@ -1,10 +1,58 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
+import { supabase } from "@/integrations/supabase/client";
+import type { User } from "@supabase/supabase-js";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
+
+function AuthButton() {
+  const [user, setUser] = useState<User | null>(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null));
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => sub.subscription.unsubscribe();
+  }, []);
+
+  if (user) {
+    const initial = (user.email ?? "?").charAt(0).toUpperCase();
+    return (
+      <div className="flex items-center gap-2">
+        <div className="hidden items-center gap-2 sm:flex">
+          <div className="grid h-8 w-8 place-items-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
+            {initial}
+          </div>
+          <span className="max-w-[140px] truncate text-xs font-medium text-foreground">{user.email}</span>
+        </div>
+        <button
+          onClick={async () => {
+            await supabase.auth.signOut();
+            navigate({ to: "/" });
+          }}
+          className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+        >
+          Sign out
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      to="/auth"
+      className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+    >
+      Sign in
+    </Link>
+  );
+}
 
 function Index() {
   return (
@@ -22,11 +70,10 @@ function Index() {
               <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
             </div>
           </a>
-          <div className="hidden text-xs font-medium tracking-wider text-muted-foreground sm:block">
-            WU Vienna BBE Preparatory Platform
-          </div>
+          <AuthButton />
         </div>
       </header>
+
 
       <main>
         {/* HERO — light ivory */}
