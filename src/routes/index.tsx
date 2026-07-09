@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import { LiabilityChart } from "@/components/LiabilityChart";
 
 export const Route = createFileRoute("/")({
   component: Index,
