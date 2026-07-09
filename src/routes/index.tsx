@@ -14,7 +14,7 @@ function Index() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="/" className="group flex items-center gap-3">
             <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-base font-bold leading-none text-primary-foreground tracking-tight">BB</span>
+              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
               <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-background ring-2 ring-primary" />
             </div>
             <div className="flex flex-col leading-tight">
@@ -113,14 +113,6 @@ function Index() {
               </div>
 
               <div className="relative">
-                <div className="mb-5 flex flex-col gap-3 sm:flex-row">
-                  <button className="inline-flex flex-1 items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
-                    Купить полный пакет
-                  </button>
-                  <button className="inline-flex flex-1 items-center justify-center rounded-md border border-primary/50 bg-card px-5 py-3 text-sm font-semibold text-foreground transition-all hover:border-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
-                    Начать демо-подготовку
-                  </button>
-                </div>
                 <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
                   <div
                     className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
@@ -175,65 +167,6 @@ function Index() {
           </div>
         </section>
 
-        {/* FINANCIAL PRESTIGE & ROI — back to light */}
-        <section className="px-6 py-24 lg:px-8 lg:py-32">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-14 max-w-3xl">
-              <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                The Economics of Admission: Expense vs. Investment
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                A clear comparison of the opportunity cost facing every candidate family.
-              </p>
-            </div>
-
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
-              <div className="bg-card p-8 sm:p-10 lg:p-12">
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="h-1 w-8 bg-taupe/50" />
-                  <span className="text-xs font-semibold tracking-widest text-taupe uppercase">
-                    Trap
-                  </span>
-                </div>
-                <h3 className="font-display text-2xl font-semibold text-foreground">
-                  The $20,000/Year Trap
-                </h3>
-                <p className="mt-5 leading-relaxed text-muted-foreground">
-                  Attending a private university or a lower-tier business school means burning over
-                  $20,000 annually in tuition. Over 3 years, that is a{" "}
-                  <span className="font-semibold text-foreground">$60,000 family liability</span>{" "}
-                  with zero historical prestige.
-                </p>
-              </div>
-
-              <div className="bg-secondary p-8 sm:p-10 lg:p-12">
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="h-1 w-8 bg-primary" />
-                  <span className="text-xs font-semibold tracking-widest text-primary uppercase">
-                    Arbitrage
-                  </span>
-                </div>
-                <h3 className="font-display text-2xl font-semibold text-foreground">
-                  The WU Vienna Arbitrage
-                </h3>
-                <p className="mt-5 leading-relaxed text-foreground/80">
-                  WU Vienna is a world-class, triple-accredited elite business school with tuition
-                  fees of virtually{" "}
-                  <span className="font-semibold text-foreground">€0</span>. Passing this exam is
-                  a massive high-ROI financial pivot.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 rounded-xl border border-l-4 border-l-primary border-border bg-card px-6 py-5 shadow-sm sm:px-8">
-              <p className="text-sm leading-relaxed text-foreground sm:text-base">
-                <span className="font-semibold text-primary">Hedge note.</span>{" "}
-                By investing today, you block tens of thousands in future tuition debts. This is a
-                pure financial hedge.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* LIABILITY CHART — dark fintech island */}
         <section
