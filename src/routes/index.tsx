@@ -342,11 +342,11 @@ function Index() {
             <div className="flex items-center gap-3">
               <div className="h-2 w-2 rounded-full bg-primary" />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
-                Messe Wien Survivor
+                BBE School
               </span>
             </div>
             <p className="text-xs text-muted-foreground">
-              © 2026 Messe Wien Survivor. Not affiliated with WU Vienna.
+              © 2026 BBE School. Not affiliated with WU Vienna.
             </p>
           </div>
         </footer>
