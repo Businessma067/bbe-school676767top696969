@@ -11,13 +11,17 @@ function Index() {
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-          <div className="flex items-center gap-3">
-            <div className="h-2 w-2 rounded-full bg-primary" />
-            <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
-              Messe Wien Survivor
-            </span>
-          </div>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+          <a href="/" className="group flex items-center gap-3">
+            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
+              <span className="font-display text-base font-bold leading-none text-primary-foreground tracking-tight">BB</span>
+              <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-background ring-2 ring-primary" />
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="font-display text-base font-bold tracking-tight text-foreground">BBE School</span>
+              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
+            </div>
+          </a>
           <div className="hidden text-xs font-medium tracking-wider text-muted-foreground sm:block">
             WU Vienna BBE Preparatory Platform
           </div>
@@ -30,6 +34,43 @@ function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="max-w-2xl">
+                {/* Rating + reviews */}
+                <div className="mb-6 flex flex-wrap items-center gap-4">
+                  <div className="flex -space-x-2">
+                    {[
+                      "https://i.pravatar.cc/64?img=12",
+                      "https://i.pravatar.cc/64?img=32",
+                      "https://i.pravatar.cc/64?img=47",
+                      "https://i.pravatar.cc/64?img=68",
+                      "https://i.pravatar.cc/64?img=5",
+                    ].map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt={`Student ${i + 1}`}
+                        loading="lazy"
+                        className="h-8 w-8 rounded-full border-2 border-background object-cover shadow-sm"
+                      />
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-0.5" aria-label="Rated 4.77 out of 5">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <svg
+                          key={i}
+                          viewBox="0 0 20 20"
+                          className="h-4 w-4 fill-[#E0A100]"
+                          aria-hidden="true"
+                        >
+                          <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="font-display text-sm font-semibold text-foreground">4.77</span>
+                    <span className="text-sm text-muted-foreground">· 348 reviews</span>
+                  </div>
+                </div>
+
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                   <span className="text-xs font-medium tracking-wide text-taupe">
@@ -72,6 +113,14 @@ function Index() {
               </div>
 
               <div className="relative">
+                <div className="mb-5 flex flex-col gap-3 sm:flex-row">
+                  <button className="inline-flex flex-1 items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    Купить полный пакет
+                  </button>
+                  <button className="inline-flex flex-1 items-center justify-center rounded-md border border-primary/50 bg-card px-5 py-3 text-sm font-semibold text-foreground transition-all hover:border-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    Начать демо-подготовку
+                  </button>
+                </div>
                 <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
                   <div
                     className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
@@ -293,11 +342,11 @@ function Index() {
             <div className="flex items-center gap-3">
               <div className="h-2 w-2 rounded-full bg-primary" />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
-                Messe Wien Survivor
+                BBE School
               </span>
             </div>
             <p className="text-xs text-muted-foreground">
-              © 2026 Messe Wien Survivor. Not affiliated with WU Vienna.
+              © 2026 BBE School. Not affiliated with WU Vienna.
             </p>
           </div>
         </footer>
