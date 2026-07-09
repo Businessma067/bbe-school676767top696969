@@ -34,6 +34,43 @@ function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="max-w-2xl">
+                {/* Rating + reviews */}
+                <div className="mb-6 flex flex-wrap items-center gap-4">
+                  <div className="flex -space-x-2">
+                    {[
+                      "https://i.pravatar.cc/64?img=12",
+                      "https://i.pravatar.cc/64?img=32",
+                      "https://i.pravatar.cc/64?img=47",
+                      "https://i.pravatar.cc/64?img=68",
+                      "https://i.pravatar.cc/64?img=5",
+                    ].map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt={`Student ${i + 1}`}
+                        loading="lazy"
+                        className="h-8 w-8 rounded-full border-2 border-background object-cover shadow-sm"
+                      />
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-0.5" aria-label="Rated 4.77 out of 5">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <svg
+                          key={i}
+                          viewBox="0 0 20 20"
+                          className="h-4 w-4 fill-[#E0A100]"
+                          aria-hidden="true"
+                        >
+                          <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="font-display text-sm font-semibold text-foreground">4.77</span>
+                    <span className="text-sm text-muted-foreground">· 348 reviews</span>
+                  </div>
+                </div>
+
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                   <span className="text-xs font-medium tracking-wide text-taupe">
