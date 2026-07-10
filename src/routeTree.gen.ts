@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 
+const DemoPracticeRoute = DemoPracticeRouteImport.update({
+  id: '/demo-practice',
+  path: '/demo-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
@@ -26,14 +32,14 @@ const IndexRoute = IndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
-  id: '/demo-practice/',
-  path: '/demo-practice/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => DemoPracticeRoute,
 } as any)
 const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
-  id: '/demo-practice/economics',
-  path: '/demo-practice/economics',
-  getParentRoute: () => rootRouteImport,
+  id: '/economics',
+  path: '/economics',
+  getParentRoute: () => DemoPracticeRoute,
 } as any)
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/admin/economics',
@@ -44,6 +50,7 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
@@ -59,6 +66,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
@@ -68,6 +76,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/auth'
+    | '/demo-practice'
     | '/admin/economics'
     | '/demo-practice/economics'
     | '/demo-practice/'
@@ -82,6 +91,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/auth'
+    | '/demo-practice'
     | '/admin/economics'
     | '/demo-practice/economics'
     | '/demo-practice/'
@@ -90,13 +100,19 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRoute
+  DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   AdminEconomicsRoute: typeof AdminEconomicsRoute
-  DemoPracticeEconomicsRoute: typeof DemoPracticeEconomicsRoute
-  DemoPracticeIndexRoute: typeof DemoPracticeIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/demo-practice': {
+      id: '/demo-practice'
+      path: '/demo-practice'
+      fullPath: '/demo-practice'
+      preLoaderRoute: typeof DemoPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/auth': {
       id: '/auth'
       path: '/auth'
@@ -113,17 +129,17 @@ declare module '@tanstack/react-router' {
     }
     '/demo-practice/': {
       id: '/demo-practice/'
-      path: '/demo-practice'
+      path: '/'
       fullPath: '/demo-practice/'
       preLoaderRoute: typeof DemoPracticeIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof DemoPracticeRoute
     }
     '/demo-practice/economics': {
       id: '/demo-practice/economics'
-      path: '/demo-practice/economics'
+      path: '/economics'
       fullPath: '/demo-practice/economics'
       preLoaderRoute: typeof DemoPracticeEconomicsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof DemoPracticeRoute
     }
     '/admin/economics': {
       id: '/admin/economics'
@@ -135,12 +151,25 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface DemoPracticeRouteChildren {
+  DemoPracticeEconomicsRoute: typeof DemoPracticeEconomicsRoute
+  DemoPracticeIndexRoute: typeof DemoPracticeIndexRoute
+}
+
+const DemoPracticeRouteChildren: DemoPracticeRouteChildren = {
+  DemoPracticeEconomicsRoute: DemoPracticeEconomicsRoute,
+  DemoPracticeIndexRoute: DemoPracticeIndexRoute,
+}
+
+const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
+  DemoPracticeRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRoute,
+  DemoPracticeRoute: DemoPracticeRouteWithChildren,
   AdminEconomicsRoute: AdminEconomicsRoute,
-  DemoPracticeEconomicsRoute: DemoPracticeEconomicsRoute,
-  DemoPracticeIndexRoute: DemoPracticeIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
