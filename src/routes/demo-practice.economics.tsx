@@ -324,11 +324,11 @@ function CaseCard({
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
-  const correctCount = answers.reduce<number>(
-    (acc, a, i) => acc + (a !== null && a === data.answer_key[i] ? 1 : 0),
+  // Effective answer: checked = true, otherwise (null or false) = false
+  const correctCount = data.answer_key.reduce<number>(
+    (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
   );
-  const allAnswered = answers.every((a) => a !== null);
 
   const handleSubmit = () => {
     setChecked(true);
