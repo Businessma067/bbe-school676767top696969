@@ -110,7 +110,9 @@ function EconomicsTasks() {
   const activeList: Case[] =
     activeChapter === "revision"
       ? revisionCases
-      : byChapter.get(activeChapter) ?? [];
+      : activeChapter === null
+        ? []
+        : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
 
   const recordResult = (caseId: string, allCorrect: boolean) => {
