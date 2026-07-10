@@ -67,11 +67,13 @@ function chapterOf(c: Case): number {
 function EconomicsTasks() {
   const [cases, setCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [activeChapter, setActiveChapter] = useState<number | "revision">(2);
+  const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [navOpen, setNavOpen] = useState(false);
-  const [expanded, setExpanded] = useState<Record<number, boolean>>({ 2: true });
+  const [expanded, setExpanded] = useState<Record<number, boolean>>(
+    () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
+  );
 
   useEffect(() => {
     let cancel = false;
