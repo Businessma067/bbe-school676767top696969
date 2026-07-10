@@ -4,6 +4,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -299,24 +300,7 @@ function Index() {
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {reports.map((report) => (
-                <article
-                  key={report.id}
-                  className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-8 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-                >
-                  <p className="leading-relaxed text-muted-foreground">
-                    &ldquo;{report.quote}&rdquo;
-                  </p>
-                  <div className="mt-8">
-                    <p className="font-display text-sm font-semibold text-foreground">
-                      {report.name}
-                    </p>
-                    <div className="mt-3 inline-flex items-center rounded-full border border-primary/30 bg-secondary px-3 py-1">
-                      <span className="text-xs font-semibold tracking-wide text-primary">
-                        {report.badge}
-                      </span>
-                    </div>
-                  </div>
-                </article>
+                <ReviewCard key={report.id} report={report} />
               ))}
             </div>
           </div>
@@ -341,26 +325,70 @@ function Index() {
   );
 }
 
+function ReviewCard({ report }: { report: (typeof reports)[0] }) {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <article className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-8 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
+      <div>
+        <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
+          &ldquo;{report.quote}&rdquo;
+        </p>
+        <button
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-3 text-xs font-semibold text-primary hover:underline focus:outline-none"
+          aria-label={expanded ? "Show less" : "Show more"}
+        >
+          {expanded ? "Show less" : "Show more"}
+        </button>
+      </div>
+      <div className="mt-8">
+        <p className="font-display text-sm font-semibold text-foreground">
+          {report.name}
+        </p>
+        <div className="mt-3 inline-flex items-center rounded-full border border-primary/30 bg-secondary px-3 py-1">
+          <span className="text-xs font-semibold tracking-wide text-primary">
+            {report.badge}
+          </span>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 const reports = [
   {
     id: 1,
-    name: "Maxim, Vienna",
+    name: "Igor, Kiev",
     quote:
-      "The 42-seconds time limit on Math & Logic completely broke the hall. People started guessing blindly in the last 15 minutes and committed a penalty suicide. I strictly held the 2-3 answers discipline from the simulator, left blank spaces, and isolated my losses. The system rewarded me with massive Partial Credit. I am on the first course now.",
-    badge: "Score: 78.5% (Direct Admission)",
+      "You know, I believe the most important thing is knowing exactly what to do, understanding the material, and not panicking when it matters most. Many of my friends studied hard but didn't make it because they weren't familiar with the types of tasks involved, and that’s precisely the advantage BBE School gave me.",
+    badge: "Rank: 197th",
   },
   {
     id: 2,
-    name: "Lukas, Munich",
+    name: "Michael, Budapest",
     quote:
-      "Everyone thought the Economics section was easy because the Furthmann textbook terms looked familiar. But the professors hid massive linguistic traps using words like 'only' and 'directly'. This simulator taught me exactly how to scan for these tricks. Economics alone dragged my entire exam onto a safe score line.",
-    badge: "Score: 82.0% (Top 100)",
+      "In general, I’ve always found the material easy to grasp. The exam questions were relatively easy, though the wording was tricky. It was a huge help that I’d done so many mock exams and learned time management, otherwise, I wouldn't have had time to finish about five of the questions.",
+    badge: "Rank: 43rd",
   },
   {
     id: 3,
-    name: "Anna, Almaty",
+    name: "Lisa, Graz",
     quote:
-      "I panicked hard when two heavy math cases went completely to zero. In a standard school test, that would be a total failure. But thanks to the core scoring logic practiced here, those zeroes were safely containerized and didn't pull down my perfect Economics score. Waiting List moved in two weeks, and my student ticket is locked.",
-    badge: "Score: 74.5% (Waiting List Crossed)",
+      "I hardly know what to say. I don't even understand how others manage to pass such a strange exam without supplementary materials like the BBE School course. I believe that buying the course three months before the exam was the best decision. I am very happy and grateful for this opportunity.",
+    badge: "Rank: 227th",
+  },
+  {
+    id: 4,
+    name: "Marcus, Zagreb",
+    quote:
+      "We'll I'll be straightforward: I don’t think I would have even come close to passing the exam without BBE School. I have absolutely no regrets about the money, time, and effort I put it. It was 100% worth it.",
+    badge: "Rank: 97th",
+  },
+  {
+    id: 5,
+    name: "Daniel, Ljubljana",
+    quote:
+      "I am grateful to bbe school for providing clear, structured questions that offer the best possible simulation of the actual live exam. Time management also played a crucial role. Another important factor were simply brilliant time-management tools — ones I hadn't seen before — were exactly what helped me meet the deadline.",
+    badge: "Rank: 7th",
   },
 ];
