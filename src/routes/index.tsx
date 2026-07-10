@@ -219,42 +219,55 @@ function Index() {
         </section>
 
 
-        {/* LIABILITY CHART — dark fintech island */}
-        <section
-          className="px-6 py-24 lg:px-8 lg:py-32"
-          style={{ backgroundColor: "#0D0D0D" }}
-        >
-          <div className="mx-auto max-w-6xl">
+        {/* LIABILITY CHART — light academic island */}
+        <section className="relative px-6 py-24 lg:px-8 lg:py-32 bg-ivory">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse at top right, rgba(184,134,91,0.10), transparent 55%), radial-gradient(ellipse at bottom left, rgba(42,31,23,0.06), transparent 60%)",
+            }}
+          />
+          <div className="relative mx-auto max-w-6xl">
             <div className="mb-12 max-w-3xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/50">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
                 48-Month Capital Model
               </p>
-              <h2 className="mt-5 font-display text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-5xl">
-                The Accumulation of Liability.
+              <h2 className="mt-5 font-display text-3xl font-bold leading-[1.1] tracking-tight text-espresso sm:text-4xl lg:text-5xl">
+                Two paths. One decision that compounds.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-white/55 sm:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-taupe sm:text-lg">
                 A strict financial comparison tracking tuition, mandatory foundation blocks,
                 rent, and European living costs over 48 months.
               </p>
             </div>
 
-            <LiabilityChart />
+            <div
+              className="rounded-3xl bg-card p-6 sm:p-8 lg:p-10"
+              style={{
+                border: "1px solid rgba(42,31,23,0.10)",
+                boxShadow:
+                  "0 1px 0 rgba(255,255,255,0.6) inset, 0 30px 60px -30px rgba(42,31,23,0.25)",
+              }}
+            >
+              <LiabilityChart />
+            </div>
 
             <div
               className="mt-12 rounded-2xl px-6 py-6 sm:px-8 sm:py-7"
               style={{
-                backgroundColor: "rgba(122,0,38,0.06)",
-                border: "1px solid rgba(122,0,38,0.55)",
+                backgroundColor: "rgba(184,134,91,0.10)",
+                border: "1px solid rgba(139,90,43,0.35)",
               }}
             >
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em]"
-                 style={{ color: "#C8375A" }}>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-caramel">
                 The Math is Absolute
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-espresso/85 sm:text-base">
                 Securing a Top-240 seat at world-class WU Vienna blocks a compounding{" "}
-                <span className="font-semibold text-white">€70,000 family debt liability</span>.
-                Investing <span className="font-semibold text-white">€349</span> in the survival
+                <span className="font-semibold text-espresso">€70,000 family debt liability</span>.
+                Investing <span className="font-semibold text-espresso">€349</span> in the survival
                 engine today is a calculated asset-protection strategy.
               </p>
             </div>
