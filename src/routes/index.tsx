@@ -255,6 +255,8 @@ function Index() {
                   </a>
                 </div>
 
+                <SubjectAccordion />
+
                 <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
                   <span>Beauty of stress and time management</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
@@ -262,8 +264,6 @@ function Index() {
                   <span className="h-1 w-1 rounded-full bg-border" />
                   <span>Exam life hacks and loopholes</span>
                 </div>
-
-                <SubjectAccordion />
               </div>
 
               <div className="relative">
