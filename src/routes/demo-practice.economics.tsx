@@ -219,14 +219,14 @@ function EconomicsTasks() {
                                 }}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
-                                  active ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
+                                  active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
                                     passed
-                                      ? "border-emerald-500 bg-emerald-500 text-white"
+                                      ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
                                       : rev
                                         ? "border-destructive bg-destructive/10 text-destructive"
                                         : "border-border bg-background",
@@ -235,7 +235,7 @@ function EconomicsTasks() {
                                   {passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className="truncate">{c.case_id} — {c.title}</span>
+                                <span className={cn("truncate", passed && "line-through text-muted-foreground")}>Task {i + 1}</span>
                               </button>
                             </li>
                           );
