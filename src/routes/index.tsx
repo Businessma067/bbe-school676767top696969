@@ -123,7 +123,7 @@ function Index() {
                 </div>
 
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "#2DD4A8" }} />
                   <span className="text-xs font-medium tracking-wide text-taupe">
                     Built by top 1% of the hall
                   </span>
@@ -145,9 +145,15 @@ function Index() {
                     <span>Try demo-practice</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
                   </Link>
-                  <button className="inline-flex flex-col items-center justify-center rounded-md bg-primary px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                  <button
+                    className="inline-flex flex-col items-center justify-center rounded-md px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                    style={{
+                      background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                      boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                    }}
+                  >
                     <span>Full course</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-primary-foreground/80">Pass the exam confidently</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">Pass the exam confidently</span>
                   </button>
                   <a
                     href="/Message_to_Parents_WU_Vienna_2027.pdf"
@@ -325,7 +331,7 @@ function Index() {
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-primary" />
+              <span className="inline-flex h-2.5 w-2.5 rounded-full" style={{ background: "linear-gradient(135deg,#E85D3A,#3B82F6 50%,#2DD4A8)" }} />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
               </span>
@@ -360,12 +366,15 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
         <p className="font-display text-sm font-semibold text-foreground">
           {report.name}
         </p>
-        <div className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-secondary px-3 py-1">
-          <span className="text-xs font-semibold tracking-wide text-primary">
+        <div
+          className="mt-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1"
+          style={{ borderColor: "rgba(232,93,58,0.35)", backgroundColor: "rgba(232,93,58,0.10)" }}
+        >
+          <span className="text-xs font-semibold tracking-wide" style={{ color: "#B84A2E" }}>
             {report.badge}
           </span>
           {report.fire && (
-            <Flame className="h-3.5 w-3.5 fill-caramel text-caramel" aria-hidden />
+            <Flame className="h-3.5 w-3.5" style={{ fill: "#D97706", color: "#D97706" }} aria-hidden />
           )}
         </div>
       </div>
