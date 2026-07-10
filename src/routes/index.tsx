@@ -4,6 +4,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   component: Index,
