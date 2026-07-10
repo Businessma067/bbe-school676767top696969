@@ -288,7 +288,16 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && (
+          {cases !== null && activeChapter === null && (
+            <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
+              <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Economics</h1>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Pick a chapter on the left to start practicing. Your progress is saved on this device.
+              </p>
+            </div>
+          )}
+
+          {cases !== null && activeChapter !== null && (
             <div className="mb-5">
               <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
                 {activeChapter === "revision" ? "Revision folder" : `Chapter ${activeChapter}`}
@@ -301,7 +310,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && activeList.length === 0 && (
+          {cases !== null && activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
                 ? "Nothing to revise — all attempted cases are clean. Keep going."
