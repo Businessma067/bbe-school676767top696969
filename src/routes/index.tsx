@@ -1,5 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
 import { supabase } from "@/integrations/supabase/client";
@@ -352,10 +353,13 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
         <p className="font-display text-sm font-semibold text-foreground">
           {report.name}
         </p>
-        <div className="mt-3 inline-flex items-center rounded-full border border-primary/30 bg-secondary px-3 py-1">
+        <div className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-secondary px-3 py-1">
           <span className="text-xs font-semibold tracking-wide text-primary">
             {report.badge}
           </span>
+          {report.fire && (
+            <Flame className="h-3.5 w-3.5 fill-caramel text-caramel" aria-hidden />
+          )}
         </div>
       </div>
     </article>
