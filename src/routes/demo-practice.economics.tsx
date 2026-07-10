@@ -370,6 +370,7 @@ function CaseCard({
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
+  const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     setAnswers([null, null, null, null, null]);
