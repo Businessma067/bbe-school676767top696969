@@ -2,6 +2,9 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import economicsAsset from "@/assets/economics.png.asset.json";
+import mathAsset from "@/assets/math.png.asset.json";
+import englishAsset from "@/assets/english.png.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
@@ -53,6 +56,103 @@ function AuthButton() {
     >
       Sign in
     </Link>
+  );
+}
+
+function SubjectAccordion() {
+  const [open, setOpen] = useState<string | null>(null);
+
+  const subjects = [
+    {
+      id: "economics",
+      title: "Economics",
+      image: economicsAsset.url,
+      alt: "Economics practice section",
+      description:
+        "Master supply and demand, market structures, elasticities, and the economic intuition tested on the WU BBE exam.",
+    },
+    {
+      id: "math",
+      title: "Math",
+      image: mathAsset.url,
+      alt: "Math practice section",
+      description:
+        "Sharpen algebra, ratios, percentages, graphs, and the quantitative shortcuts that save time under pressure.",
+    },
+    {
+      id: "english",
+      title: "English",
+      image: englishAsset.url,
+      alt: "English practice section",
+      description:
+        "Build reading speed, vocabulary, and logical reasoning for the language and comprehension part of the exam.",
+    },
+  ];
+
+  return (
+    <div className="mt-10 grid gap-3">
+      {subjects.map((subject) => {
+        const isOpen = open === subject.id;
+        return (
+          <div
+            key={subject.id}
+            className={cn(
+              "overflow-hidden rounded-2xl border transition-all",
+              isOpen
+                ? "border-primary/40 bg-card shadow-md"
+                : "border-border bg-card/50 hover:bg-card"
+            )}
+          >
+            <button
+              onClick={() => setOpen(isOpen ? null : subject.id)}
+              className="flex w-full items-center justify-between px-5 py-4 text-left"
+              aria-expanded={isOpen}
+            >
+              <span className="font-display text-sm font-semibold text-foreground">
+                {subject.title}
+              </span>
+              <span
+                className={cn(
+                  "grid h-6 w-6 place-items-center rounded-full border border-border text-muted-foreground transition-transform",
+                  isOpen && "rotate-180"
+                )}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+            {isOpen && (
+              <div className="px-5 pb-5">
+                <div className="overflow-hidden rounded-xl border border-border">
+                  <img
+                    src={subject.image}
+                    alt={subject.alt}
+                    width={768}
+                    height={768}
+                    loading="lazy"
+                    className="w-full object-cover"
+                  />
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {subject.description}
+                </p>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -154,6 +254,8 @@ function Index() {
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">Why our course?</span>
                   </a>
                 </div>
+
+                <SubjectAccordion />
 
                 <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
                   <span>Beauty of stress and time management</span>
