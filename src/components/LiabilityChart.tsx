@@ -16,6 +16,12 @@ const data = [
   { stage: "Year 3 (Graduation)", private: 85000, wu: 15000 },
 ];
 
+// Palette (matches the site's warm ivory / caramel / espresso system)
+const ESPRESSO = "#2A1F17";
+const CARAMEL = "#B8865B";
+const CARAMEL_DEEP = "#8B5A2B";
+const IVORY = "#F7F3EC";
+
 const fmt = (n: number) =>
   "€" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
 
@@ -26,39 +32,59 @@ function PremiumTooltip({ active, payload, label }: any) {
   const delta = priv - wu;
   return (
     <div
-      className="rounded-xl border border-white/15 px-5 py-4 shadow-2xl"
+      className="rounded-xl px-5 py-4 shadow-2xl"
       style={{
-        background: "rgba(20,20,20,0.72)",
+        background: "rgba(255, 253, 248, 0.92)",
         backdropFilter: "blur(18px) saturate(140%)",
         WebkitBackdropFilter: "blur(18px) saturate(140%)",
+        border: `1px solid ${CARAMEL}55`,
         minWidth: 240,
       }}
     >
-      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/50">
+      <p
+        className="text-[10px] font-semibold uppercase tracking-[0.28em]"
+        style={{ color: `${ESPRESSO}99` }}
+      >
         {label}
       </p>
       <div className="mt-3 space-y-1.5">
         <div className="flex items-center justify-between gap-6">
-          <span className="text-xs text-white/60">Private Route</span>
-          <span className="font-display text-sm font-semibold text-white">
+          <span className="text-xs" style={{ color: `${ESPRESSO}AA` }}>
+            Private Route
+          </span>
+          <span
+            className="font-display text-sm font-semibold"
+            style={{ color: ESPRESSO }}
+          >
             {fmt(priv)}
           </span>
         </div>
         <div className="flex items-center justify-between gap-6">
-          <span className="text-xs text-white/60">WU Vienna Route</span>
+          <span className="text-xs" style={{ color: `${ESPRESSO}AA` }}>
+            WU Vienna Route
+          </span>
           <span
             className="font-display text-sm font-semibold"
-            style={{ color: "#C8375A" }}
+            style={{ color: CARAMEL_DEEP }}
           >
             {fmt(wu)}
           </span>
         </div>
       </div>
-      <div className="mt-4 border-t border-white/10 pt-3">
-        <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-white/45">
-          Net Family Capital Loss
+      <div
+        className="mt-4 pt-3"
+        style={{ borderTop: `1px solid ${ESPRESSO}18` }}
+      >
+        <p
+          className="text-[10px] font-medium uppercase tracking-[0.22em]"
+          style={{ color: `${ESPRESSO}80` }}
+        >
+          Net Family Capital Saved
         </p>
-        <p className="mt-1 font-display text-lg font-bold text-white">
+        <p
+          className="mt-1 font-display text-lg font-bold"
+          style={{ color: CARAMEL_DEEP }}
+        >
           {fmt(delta)}
         </p>
       </div>
@@ -78,42 +104,35 @@ export function LiabilityChart() {
           >
             <defs>
               <linearGradient id="privateFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#FFFFFF" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#FFFFFF" stopOpacity={0} />
+                <stop offset="0%" stopColor={ESPRESSO} stopOpacity={0.28} />
+                <stop offset="100%" stopColor={ESPRESSO} stopOpacity={0} />
               </linearGradient>
               <linearGradient id="wuFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#7A0026" stopOpacity={0.55} />
-                <stop offset="100%" stopColor="#7A0026" stopOpacity={0} />
+                <stop offset="0%" stopColor={CARAMEL} stopOpacity={0.5} />
+                <stop offset="100%" stopColor={CARAMEL} stopOpacity={0} />
               </linearGradient>
-              <filter id="whiteGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="3" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
             </defs>
             <CartesianGrid
-              stroke="rgba(255,255,255,0.06)"
+              stroke={`${ESPRESSO}12`}
               vertical={false}
             />
             <XAxis
               dataKey="stage"
               tick={{
-                fill: "rgba(255,255,255,0.55)",
+                fill: `${ESPRESSO}AA`,
                 fontSize: 11,
                 fontFamily: "DM Sans, sans-serif",
                 letterSpacing: 0.4,
               }}
               tickLine={false}
-              axisLine={{ stroke: "rgba(255,255,255,0.1)" }}
+              axisLine={{ stroke: `${ESPRESSO}22` }}
               tickMargin={12}
             />
             <YAxis
               ticks={ticks}
               tickFormatter={(v) => `€${(v / 1000).toFixed(0)}k`}
               tick={{
-                fill: "rgba(255,255,255,0.45)",
+                fill: `${ESPRESSO}88`,
                 fontSize: 11,
                 fontFamily: "DM Sans, sans-serif",
               }}
@@ -124,7 +143,7 @@ export function LiabilityChart() {
             <Tooltip
               content={<PremiumTooltip />}
               cursor={{
-                stroke: "rgba(255,255,255,0.2)",
+                stroke: `${CARAMEL_DEEP}80`,
                 strokeDasharray: "3 4",
               }}
             />
@@ -132,11 +151,10 @@ export function LiabilityChart() {
               type="monotone"
               dataKey="private"
               name="Private Route"
-              stroke="#FFFFFF"
+              stroke={ESPRESSO}
               strokeWidth={2.25}
               fill="url(#privateFill)"
-              filter="url(#whiteGlow)"
-              activeDot={{ r: 5, fill: "#FFFFFF", stroke: "#0D0D0D", strokeWidth: 2 }}
+              activeDot={{ r: 5, fill: ESPRESSO, stroke: IVORY, strokeWidth: 2 }}
               isAnimationActive
               animationDuration={1400}
             />
@@ -144,10 +162,15 @@ export function LiabilityChart() {
               type="monotone"
               dataKey="wu"
               name="WU Vienna"
-              stroke="#7A0026"
+              stroke={CARAMEL_DEEP}
               strokeWidth={2.25}
               fill="url(#wuFill)"
-              activeDot={{ r: 5, fill: "#7A0026", stroke: "#0D0D0D", strokeWidth: 2 }}
+              activeDot={{
+                r: 5,
+                fill: CARAMEL_DEEP,
+                stroke: IVORY,
+                strokeWidth: 2,
+              }}
               isAnimationActive
               animationDuration={1600}
             />
@@ -160,15 +183,21 @@ export function LiabilityChart() {
         <div className="flex items-center gap-3">
           <span
             className="h-[2px] w-8"
-            style={{ background: "#FFFFFF", boxShadow: "0 0 8px rgba(255,255,255,0.6)" }}
+            style={{ background: ESPRESSO }}
           />
-          <span className="text-xs font-medium tracking-wide text-white/70">
+          <span
+            className="text-xs font-medium tracking-wide"
+            style={{ color: `${ESPRESSO}CC` }}
+          >
             Private Business School — cumulative outlay
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="h-[2px] w-8" style={{ background: "#7A0026" }} />
-          <span className="text-xs font-medium tracking-wide text-white/70">
+          <span className="h-[2px] w-8" style={{ background: CARAMEL_DEEP }} />
+          <span
+            className="text-xs font-medium tracking-wide"
+            style={{ color: `${ESPRESSO}CC` }}
+          >
             WU Vienna Direct Admission
           </span>
         </div>
