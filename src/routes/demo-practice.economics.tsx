@@ -155,56 +155,96 @@ function EconomicsTasks() {
         </div>
       </header>
 
-      <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10">
-        {/* Sidebar */}
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10">
+        {/* Sidebar — expandable chapters with per-case checklist */}
         <aside className={cn(
-          "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-72 lg:shrink-0",
+          "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0",
           !navOpen && "hidden lg:block",
         )}>
-          <div className="flex h-full flex-col justify-between rounded-2xl border border-border bg-card p-4">
-            <div>
-              <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                <BookOpen className="h-3.5 w-3.5" /> Chapters
-              </h3>
-              <ul className="space-y-1.5">
-                {CHAPTERS.map((ch) => {
-                  const { pct, done, total } = chapterProgress(ch.num);
-                  const active = activeChapter === ch.num;
-                  return (
-                    <li key={ch.num}>
-                      <button
-                        onClick={() => { setActiveChapter(ch.num); setNavOpen(false); }}
-                        className={cn(
-                          "w-full rounded-xl border p-3 text-left transition-all",
-                          active
-                            ? "border-primary bg-primary/10"
-                            : "border-transparent bg-background hover:border-border hover:bg-secondary",
-                        )}
-                      >
+          <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
+            <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+              <BookOpen className="h-3.5 w-3.5" /> Chapters
+            </h3>
+            <ul className="flex-1 space-y-1.5 overflow-y-auto pr-1">
+              {CHAPTERS.map((ch) => {
+                const list = byChapter.get(ch.num) ?? [];
+                const done = list.filter((c) => progress.passed.includes(c.id)).length;
+                const total = list.length;
+                const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+                const isOpen = !!expanded[ch.num];
+                const isActiveCh = activeChapter === ch.num;
+                return (
+                  <li key={ch.num} className={cn(
+                    "rounded-xl border transition-colors",
+                    isActiveCh ? "border-primary/40 bg-primary/5" : "border-transparent",
+                  )}>
+                    <button
+                      onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
+                      className="flex w-full items-center gap-2 rounded-xl px-3 py-2.5 text-left hover:bg-secondary/60"
+                    >
+                      <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
+                      <div className="min-w-0 flex-1">
                         <div className="flex items-baseline justify-between gap-2">
-                          <span className={cn("text-sm font-bold", active ? "text-primary" : "text-foreground")}>
-                            {ch.num}. {ch.title.split(" ").slice(0, 3).join(" ")}
-                            {ch.title.split(" ").length > 3 ? "…" : ""}
-                          </span>
-                          <span className="text-[10px] font-bold text-muted-foreground">{pct}%</span>
+                          <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
+                          <span className="shrink-0 text-[10px] font-bold text-muted-foreground">{done}/{total}</span>
                         </div>
-                        <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">{ch.title}</p>
-                        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-secondary">
+                        <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
                           <div
                             className={cn("h-full rounded-full transition-all", pct === 100 ? "bg-emerald-500" : "bg-primary")}
                             style={{ width: `${pct}%` }}
                           />
                         </div>
-                        <p className="mt-1 text-[10px] text-muted-foreground">{done}/{total} cases</p>
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+                      </div>
+                    </button>
+                    {isOpen && (
+                      <ul className="border-t border-border/60 py-1">
+                        {list.length === 0 && (
+                          <li className="px-4 py-2 text-[11px] text-muted-foreground">No cases yet.</li>
+                        )}
+                        {list.map((c, i) => {
+                          const passed = progress.passed.includes(c.id);
+                          const rev = progress.revision.includes(c.id);
+                          const active = isActiveCh && activeList[activeIdx]?.id === c.id;
+                          return (
+                            <li key={c.id}>
+                              <button
+                                onClick={() => {
+                                  setActiveChapter(ch.num);
+                                  setNavOpen(false);
+                                  setTimeout(() => setActiveIdx(i), 0);
+                                }}
+                                className={cn(
+                                  "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
+                                  active ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
+                                )}
+                              >
+                                <span
+                                  className={cn(
+                                    "grid h-4 w-4 shrink-0 place-items-center rounded border",
+                                    passed
+                                      ? "border-emerald-500 bg-emerald-500 text-white"
+                                      : rev
+                                        ? "border-destructive bg-destructive/10 text-destructive"
+                                        : "border-border bg-background",
+                                  )}
+                                >
+                                  {passed && <Check className="h-3 w-3" strokeWidth={3} />}
+                                  {!passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
+                                </span>
+                                <span className="truncate">{c.case_id} — {c.title}</span>
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
 
-            {/* Revision folder at bottom */}
-            <div className="mt-4 border-t border-border pt-4">
+            {/* Revision folder */}
+            <div className="mt-3 border-t border-border pt-3">
               <button
                 onClick={() => { setActiveChapter("revision"); setNavOpen(false); }}
                 className={cn(
@@ -225,9 +265,6 @@ function EconomicsTasks() {
                     {revisionCases.length}
                   </span>
                 </div>
-                <p className="mt-1 text-[11px] leading-snug text-muted-foreground">
-                  Cases with any wrong statement land here until you nail them.
-                </p>
               </button>
             </div>
           </div>
@@ -301,10 +338,33 @@ function EconomicsTasks() {
             </div>
           )}
         </main>
+
+        {/* Theory panel — desktop only, to be filled in later */}
+        <aside className="hidden xl:sticky xl:top-20 xl:block xl:h-[calc(100vh-6rem)] xl:w-80 xl:shrink-0">
+          <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
+            <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+              <NotebookPen className="h-3.5 w-3.5" /> Theory
+            </h3>
+            {activeCase ? (
+              <div className="min-h-0 flex-1 overflow-y-auto">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">{activeCase.case_id}</p>
+                <h4 className="mt-1 font-display text-base font-bold leading-snug">{activeCase.title}</h4>
+                <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
+                  Theory notes for this case will appear here. We'll fill this panel with definitions, formulas and shortcuts chapter by chapter.
+                </div>
+              </div>
+            ) : (
+              <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
+                Open a case to see its theory notes here.
+              </div>
+            )}
+          </div>
+        </aside>
       </div>
     </div>
   );
 }
+
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed,
