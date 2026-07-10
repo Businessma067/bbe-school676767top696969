@@ -367,25 +367,50 @@ function CaseCard({
         {data.context}
       </p>
 
-      <ol className="mt-6 space-y-4">
+      <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+        <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+          <span className="w-6 text-center">#</span>
+          <span className="flex-1">Statement</span>
+          <span className="w-14 text-center">Correct</span>
+          {checked && <span className="w-6" aria-hidden />}
+        </li>
         {data.statements.map((stmt, i) => {
           const userAns = answers[i];
+          const isChecked = userAns === true;
           const correctAns = data.answer_key[i];
-          const isCorrect = checked && userAns === correctAns;
-          const isWrong = checked && userAns !== null && userAns !== correctAns;
+          const effective = isChecked;
+          const isCorrect = checked && effective === correctAns;
+          const isWrong = checked && effective !== correctAns;
           return (
             <li
               key={i}
               className={cn(
-                "rounded-xl border p-4 transition-all",
-                isCorrect && "border-emerald-500/60 bg-emerald-500/5",
-                isWrong && "border-destructive/60 bg-destructive/5",
-                !checked && "border-border bg-background",
+                "px-4 py-3 transition-colors",
+                isCorrect && "bg-emerald-500/5",
+                isWrong && "bg-destructive/5",
               )}
             >
-              <div className="flex items-start gap-3">
-                <span className="mt-0.5 text-xs font-bold text-muted-foreground">{i + 1}.</span>
+              <div className="flex items-center gap-3">
+                <span className="w-6 text-center text-xs font-bold text-muted-foreground">{i + 1}.</span>
                 <p className="flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
+                <div className="flex w-14 justify-center">
+                  <button
+                    role="checkbox"
+                    aria-checked={isChecked}
+                    aria-label={`Mark statement ${i + 1} as correct`}
+                    disabled={checked}
+                    onClick={() => setAt(i, !isChecked)}
+                    className={cn(
+                      "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                      isChecked
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-border bg-background hover:border-primary/60",
+                      checked && "cursor-default",
+                    )}
+                  >
+                    {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
+                  </button>
+                </div>
                 {checked && (
                   <span
                     className={cn(
@@ -399,30 +424,14 @@ function CaseCard({
                 )}
               </div>
 
-              <div className="mt-3 flex gap-2">
-                <TFButton
-                  label="True"
-                  selected={userAns === true}
-                  disabled={checked}
-                  correct={checked && correctAns === true}
-                  wrongPick={checked && userAns === true && correctAns !== true}
-                  onClick={() => setAt(i, true)}
-                />
-                <TFButton
-                  label="False"
-                  selected={userAns === false}
-                  disabled={checked}
-                  correct={checked && correctAns === false}
-                  wrongPick={checked && userAns === false && correctAns !== false}
-                  onClick={() => setAt(i, false)}
-                />
-              </div>
-
               {checked && (
                 <p className={cn(
                   "mt-3 rounded-md p-3 text-xs leading-relaxed",
                   isCorrect ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200" : "bg-destructive/10 text-destructive",
                 )}>
+                  <span className="font-bold">
+                    {correctAns ? "Correct answer: ✓ checked. " : "Correct answer: ☐ unchecked. "}
+                  </span>
                   {data.tactical_explanations[i]}
                 </p>
               )}
