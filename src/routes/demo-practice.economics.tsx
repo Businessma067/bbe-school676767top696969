@@ -275,7 +275,7 @@ function EconomicsTasks() {
         </aside>
 
         {/* Main content */}
-        <main className="min-w-0 flex-1">
+        <main className={cn("min-w-0 flex-1", activeChapter === null && "hidden lg:block")}>
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
@@ -288,14 +288,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && activeChapter === null && (
-            <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
-              <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Economics</h1>
-              <p className="mt-3 text-sm text-muted-foreground">
-                Pick a chapter on the left to start practicing. Your progress is saved on this device.
-              </p>
-            </div>
-          )}
+
 
           {cases !== null && activeChapter !== null && (
             <div className="mb-5">
