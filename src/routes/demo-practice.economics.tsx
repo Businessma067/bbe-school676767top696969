@@ -67,11 +67,13 @@ function chapterOf(c: Case): number {
 function EconomicsTasks() {
   const [cases, setCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [activeChapter, setActiveChapter] = useState<number | "revision">(2);
+  const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [navOpen, setNavOpen] = useState(false);
-  const [expanded, setExpanded] = useState<Record<number, boolean>>({ 2: true });
+  const [expanded, setExpanded] = useState<Record<number, boolean>>(
+    () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
+  );
 
   useEffect(() => {
     let cancel = false;
@@ -108,7 +110,9 @@ function EconomicsTasks() {
   const activeList: Case[] =
     activeChapter === "revision"
       ? revisionCases
-      : byChapter.get(activeChapter) ?? [];
+      : activeChapter === null
+        ? []
+        : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
 
   const recordResult = (caseId: string, allCorrect: boolean) => {
@@ -215,14 +219,14 @@ function EconomicsTasks() {
                                 }}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
-                                  active ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
+                                  active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
                                     passed
-                                      ? "border-emerald-500 bg-emerald-500 text-white"
+                                      ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
                                       : rev
                                         ? "border-destructive bg-destructive/10 text-destructive"
                                         : "border-border bg-background",
@@ -231,7 +235,7 @@ function EconomicsTasks() {
                                   {passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className="truncate">{c.case_id} — {c.title}</span>
+                                <span className={cn("truncate", passed && "line-through text-muted-foreground")}>Task {i + 1}</span>
                               </button>
                             </li>
                           );
@@ -284,7 +288,16 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && (
+          {cases !== null && activeChapter === null && (
+            <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
+              <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Economics</h1>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Pick a chapter on the left to start practicing. Your progress is saved on this device.
+              </p>
+            </div>
+          )}
+
+          {cases !== null && activeChapter !== null && (
             <div className="mb-5">
               <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
                 {activeChapter === "revision" ? "Revision folder" : `Chapter ${activeChapter}`}
@@ -297,7 +310,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && activeList.length === 0 && (
+          {cases !== null && activeChapter !== null && activeList.length === 0 && (
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
                 ? "Nothing to revise — all attempted cases are clean. Keep going."
@@ -347,8 +360,7 @@ function EconomicsTasks() {
             </h3>
             {activeCase ? (
               <div className="min-h-0 flex-1 overflow-y-auto">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">{activeCase.case_id}</p>
-                <h4 className="mt-1 font-display text-base font-bold leading-snug">{activeCase.title}</h4>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
                 <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
                   Theory notes for this case will appear here. We'll fill this panel with definitions, formulas and shortcuts chapter by chapter.
                 </div>
@@ -405,12 +417,11 @@ function CaseCard({
     <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-          Case #{index + 1}
+          Task {index + 1}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
           Difficulty {data.difficulty_level}
         </span>
-        <span className="text-xs font-semibold text-muted-foreground">{data.case_id}</span>
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
@@ -423,10 +434,10 @@ function CaseCard({
         )}
       </div>
 
-      <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{data.title}</h2>
       <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
         {data.context}
       </p>
+
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
