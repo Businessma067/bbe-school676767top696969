@@ -360,8 +360,7 @@ function EconomicsTasks() {
             </h3>
             {activeCase ? (
               <div className="min-h-0 flex-1 overflow-y-auto">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">{activeCase.case_id}</p>
-                <h4 className="mt-1 font-display text-base font-bold leading-snug">{activeCase.title}</h4>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
                 <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
                   Theory notes for this case will appear here. We'll fill this panel with definitions, formulas and shortcuts chapter by chapter.
                 </div>
