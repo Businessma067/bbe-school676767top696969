@@ -71,6 +71,7 @@ function EconomicsTasks() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [navOpen, setNavOpen] = useState(false);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({ 2: true });
 
   useEffect(() => {
     let cancel = false;
