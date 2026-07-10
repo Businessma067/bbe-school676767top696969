@@ -375,6 +375,7 @@ function CaseCard({
   useEffect(() => {
     setAnswers([null, null, null, null, null]);
     setChecked(false);
+    setOpenExpl({});
   }, [data.id]);
 
   const setAt = (i: number, v: boolean) => {
@@ -395,6 +396,7 @@ function CaseCard({
   const handleReset = () => {
     setChecked(false);
     setAnswers([null, null, null, null, null]);
+    setOpenExpl({});
   };
 
   return (
