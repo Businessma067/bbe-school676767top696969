@@ -3,7 +3,7 @@ import economicsAsset from "@/assets/economics.png.asset.json";
 import mathAsset from "@/assets/math.png.asset.json";
 import englishAsset from "@/assets/english.png.asset.json";
 
-export const Route = createFileRoute("/demo-practice")({
+export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
     meta: [
       { title: "Demo Practice — BBE School" },
