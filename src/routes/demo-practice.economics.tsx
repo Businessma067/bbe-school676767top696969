@@ -435,10 +435,10 @@ function CaseCard({
         )}
       </div>
 
-      <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{data.title}</h2>
       <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
         {data.context}
       </p>
+
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
