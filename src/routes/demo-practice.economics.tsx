@@ -163,7 +163,7 @@ function EconomicsTasks() {
         {/* Sidebar — expandable chapters with per-case checklist */}
         <aside className={cn(
           "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0",
-          !navOpen && "hidden lg:block",
+          !navOpen && activeChapter !== null && "hidden lg:block",
         )}>
           <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
             <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
