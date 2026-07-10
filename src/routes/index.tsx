@@ -258,7 +258,7 @@ function Index() {
                   </a>
                 </div>
 
-                <SubjectAccordion />
+                
 
                 <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
                   <span>Beauty of stress and time management</span>
