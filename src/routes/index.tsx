@@ -300,24 +300,7 @@ function Index() {
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {reports.map((report) => (
-                <article
-                  key={report.id}
-                  className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-8 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-                >
-                  <p className="leading-relaxed text-muted-foreground">
-                    &ldquo;{report.quote}&rdquo;
-                  </p>
-                  <div className="mt-8">
-                    <p className="font-display text-sm font-semibold text-foreground">
-                      {report.name}
-                    </p>
-                    <div className="mt-3 inline-flex items-center rounded-full border border-primary/30 bg-secondary px-3 py-1">
-                      <span className="text-xs font-semibold tracking-wide text-primary">
-                        {report.badge}
-                      </span>
-                    </div>
-                  </div>
-                </article>
+                <ReviewCard key={report.id} report={report} />
               ))}
             </div>
           </div>
