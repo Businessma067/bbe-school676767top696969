@@ -70,7 +70,7 @@ function EconomicsTasks() {
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
-  const [navOpen, setNavOpen] = useState(false);
+  
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
   );
@@ -146,12 +146,6 @@ function EconomicsTasks() {
           <Link to="/demo-practice" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
           </Link>
-          <button
-            className="rounded-md border border-border px-3 py-1.5 text-xs font-semibold lg:hidden"
-            onClick={() => setNavOpen((v) => !v)}
-          >
-            {navOpen ? "Close chapters" : "Chapters"}
-          </button>
           <div className="hidden sm:flex flex-col items-end leading-tight">
             <span className="font-display text-sm font-bold tracking-tight">Economics</span>
             <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU BBE · Cases</span>
@@ -161,10 +155,7 @@ function EconomicsTasks() {
 
       <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10">
         {/* Sidebar — expandable chapters with per-case checklist */}
-        <aside className={cn(
-          "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0",
-          !navOpen && activeChapter !== null && "hidden lg:block",
-        )}>
+        <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0">
           <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
             <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
               <BookOpen className="h-3.5 w-3.5" /> Chapters
@@ -214,7 +205,6 @@ function EconomicsTasks() {
                               <button
                                 onClick={() => {
                                   setActiveChapter(ch.num);
-                                  setNavOpen(false);
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
                                 className={cn(
@@ -250,7 +240,7 @@ function EconomicsTasks() {
             {/* Revision folder */}
             <div className="mt-3 border-t border-border pt-3">
               <button
-                onClick={() => { setActiveChapter("revision"); setNavOpen(false); }}
+                onClick={() => { setActiveChapter("revision"); }}
                 className={cn(
                   "w-full rounded-xl border p-3 text-left transition-all",
                   activeChapter === "revision"
@@ -275,7 +265,7 @@ function EconomicsTasks() {
         </aside>
 
         {/* Main content */}
-        <main className={cn("min-w-0 flex-1", activeChapter === null && "hidden lg:block")}>
+        <main className={cn("min-w-0 flex-1", activeChapter === null && "hidden")}>
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
