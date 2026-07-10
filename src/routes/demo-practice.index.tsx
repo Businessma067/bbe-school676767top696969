@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import economicsAsset from "@/assets/economics.png.asset.json";
-import mathAsset from "@/assets/math.png.asset.json";
-import englishAsset from "@/assets/english.png.asset.json";
+import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
+import mathAsset from "@/assets/math-bw.jpg.asset.json";
+import englishAsset from "@/assets/english-bw.jpg.asset.json";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
@@ -20,6 +20,8 @@ const subjects = [
     id: "economics",
     title: "Economics",
     image: economicsAsset.url,
+    accent: "#E85D3A", // ember
+    tag: "Markets & Business",
     description:
       "Master supply and demand, market structures, elasticities, and the economic intuition tested on the WU BBE exam.",
   },
@@ -27,6 +29,8 @@ const subjects = [
     id: "math",
     title: "Math",
     image: mathAsset.url,
+    accent: "#3B82F6", // electric blue
+    tag: "Quantitative",
     description:
       "Sharpen algebra, ratios, percentages, graphs, and the quantitative shortcuts that save time under pressure.",
   },
@@ -34,6 +38,8 @@ const subjects = [
     id: "english",
     title: "English",
     image: englishAsset.url,
+    accent: "#2DD4A8", // fresh mint
+    tag: "Language",
     description:
       "Build reading speed, vocabulary, and logical reasoning for the language and comprehension part of the exam.",
   },
@@ -81,32 +87,49 @@ function DemoPractice() {
             {subjects.map((s) => (
               <div
                 key={s.id}
-                className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                style={{ borderTop: `4px solid ${s.accent}` }}
               >
-                <div className="aspect-[4/3] overflow-hidden bg-secondary">
+                <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                   <img
                     src={s.image}
                     alt={`${s.title} practice`}
                     width={768}
                     height={576}
                     loading="lazy"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <span
+                    className="absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white shadow-sm"
+                    style={{ backgroundColor: s.accent }}
+                  >
+                    {s.tag}
+                  </span>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <h2 className="font-display text-xl font-semibold text-foreground">{s.title}</h2>
+                  <h2 className="font-display text-xl font-semibold text-foreground">
+                    <span
+                      className="mr-2 inline-block h-2 w-2 rounded-full align-middle"
+                      style={{ backgroundColor: s.accent }}
+                    />
+                    {s.title}
+                  </h2>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
                   {s.id === "economics" ? (
                     <Link
                       to="/demo-practice/economics"
-                      className="mt-5 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                      className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
                     >
                       Go to tasks →
                     </Link>
                   ) : (
-                    <button className="mt-5 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                    <button
+                      className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-90 shadow-sm transition-all hover:brightness-110"
+                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
+                    >
                       Go to tasks →
                     </button>
                   )}
