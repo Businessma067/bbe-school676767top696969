@@ -226,8 +226,8 @@ function Index() {
               <span className="text-white/80">Almost free education.</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-              One 2-hour exam stands between your family and a world-class degree at almost free
-              education.
+              One 2-hour exam stands between your family and a world-class degree at almost zero
+              cost.
             </p>
           </div>
         </section>
