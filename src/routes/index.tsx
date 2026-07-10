@@ -110,7 +110,7 @@ function Index() {
                         <svg
                           key={i}
                           viewBox="0 0 20 20"
-                          className="h-4 w-4 fill-[#E0A100]"
+                          className="h-4 w-4 fill-foreground"
                           aria-hidden="true"
                         >
                           <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
@@ -176,7 +176,7 @@ function Index() {
                   <div
                     className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
                     style={{
-                      backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.55), rgba(42,31,23,0.75)), url(${wuAsset.url})`,
+                      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url(${wuAsset.url})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -204,7 +204,7 @@ function Index() {
         <section
           className="relative bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.78), rgba(42,31,23,0.72)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.72)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
@@ -234,7 +234,7 @@ function Index() {
             className="pointer-events-none absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(ellipse at top right, rgba(184,134,91,0.10), transparent 55%), radial-gradient(ellipse at bottom left, rgba(42,31,23,0.06), transparent 60%)",
+                "radial-gradient(ellipse at top right, rgba(0,0,0,0.10), transparent 55%), radial-gradient(ellipse at bottom left, rgba(0,0,0,0.06), transparent 60%)",
             }}
           />
           <div className="relative mx-auto max-w-6xl">
@@ -254,9 +254,9 @@ function Index() {
             <div
               className="rounded-3xl bg-card p-6 sm:p-8 lg:p-10"
               style={{
-                border: "1px solid rgba(42,31,23,0.10)",
+                border: "1px solid rgba(0,0,0,0.10)",
                 boxShadow:
-                  "0 1px 0 rgba(255,255,255,0.6) inset, 0 30px 60px -30px rgba(42,31,23,0.25)",
+                  "0 1px 0 rgba(255,255,255,0.6) inset, 0 30px 60px -30px rgba(0,0,0,0.25)",
               }}
             >
               <LiabilityChart />
@@ -265,8 +265,8 @@ function Index() {
             <div
               className="mt-12 rounded-2xl px-6 py-6 sm:px-8 sm:py-7"
               style={{
-                backgroundColor: "rgba(184,134,91,0.10)",
-                border: "1px solid rgba(139,90,43,0.35)",
+                backgroundColor: "rgba(0,0,0,0.10)",
+                border: "1px solid rgba(0,0,0,0.35)",
               }}
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-caramel">
@@ -288,7 +288,7 @@ function Index() {
         <section
           className="relative bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(42,31,23,0.82), rgba(42,31,23,0.68)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.82), rgba(0,0,0,0.68)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center 30%",
             backgroundAttachment: "fixed",
