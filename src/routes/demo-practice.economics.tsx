@@ -418,12 +418,11 @@ function CaseCard({
     <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-          Case #{index + 1}
+          Task {index + 1}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
           Difficulty {data.difficulty_level}
         </span>
-        <span className="text-xs font-semibold text-muted-foreground">{data.case_id}</span>
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
