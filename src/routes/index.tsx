@@ -236,10 +236,13 @@ function Index() {
                 </p>
 
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <button className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                  <Link
+                    to="/demo-practice"
+                    className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                  >
                     <span>Try demo-practice</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
-                  </button>
+                  </Link>
                   <button className="inline-flex flex-col items-center justify-center rounded-md bg-primary px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
                     <span>Full course</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-primary-foreground/80">Pass the exam confidently</span>
