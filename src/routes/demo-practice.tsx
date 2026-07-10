@@ -98,9 +98,18 @@ function DemoPractice() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
-                  <button className="mt-5 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
-                    Go to tasks →
-                  </button>
+                  {s.id === "economics" ? (
+                    <Link
+                      to="/demo-practice/economics"
+                      className="mt-5 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                    >
+                      Go to tasks →
+                    </Link>
+                  ) : (
+                    <button className="mt-5 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
+                      Go to tasks →
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
