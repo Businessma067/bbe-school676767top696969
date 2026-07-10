@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
-import englishAsset from "@/assets/english-bw.jpg.asset.json";
+import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
