@@ -373,6 +373,7 @@ const reports = [
     quote:
       "You know, I believe the most important thing is knowing exactly what to do, understanding the material, and not panicking when it matters most. Many of my friends studied hard but didn't make it because they weren't familiar with the types of tasks involved, and that’s precisely the advantage BBE School gave me.",
     badge: "Rank: 197th",
+    fire: false,
   },
   {
     id: 2,
@@ -380,6 +381,7 @@ const reports = [
     quote:
       "In general, I’ve always found the material easy to grasp. The exam questions were relatively easy, though the wording was tricky. It was a huge help that I’d done so many mock exams and learned time management, otherwise, I wouldn't have had time to finish about five of the questions.",
     badge: "Rank: 43rd",
+    fire: true,
   },
   {
     id: 3,
@@ -387,6 +389,7 @@ const reports = [
     quote:
       "I hardly know what to say. I don't even understand how others manage to pass such a strange exam without supplementary materials like the BBE School course. I believe that buying the course three months before the exam was the best decision. I am very happy and grateful for this opportunity.",
     badge: "Rank: 227th",
+    fire: false,
   },
   {
     id: 4,
@@ -394,6 +397,7 @@ const reports = [
     quote:
       "We'll I'll be straightforward: I don’t think I would have even come close to passing the exam without BBE School. I have absolutely no regrets about the money, time, and effort I put it. It was 100% worth it.",
     badge: "Rank: 97th",
+    fire: true,
   },
   {
     id: 5,
@@ -401,5 +405,6 @@ const reports = [
     quote:
       "I am grateful to bbe school for providing clear, structured questions that offer the best possible simulation of the actual live exam. Time management also played a crucial role. Another important factor were simply brilliant time-management tools — ones I hadn't seen before — were exactly what helped me meet the deadline.",
     badge: "Rank: 7th",
+    fire: true,
   },
 ];
