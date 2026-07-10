@@ -18,7 +18,7 @@ const data = [
 
 // Palette (matches the site's warm ivory / caramel / espresso system)
 const ESPRESSO = "#2A1F17";
-const CARAMEL = "#B8865B";
+const CARAMEL = "#111111";
 const CARAMEL_DEEP = "#8B5A2B";
 const IVORY = "#F7F3EC";
 
