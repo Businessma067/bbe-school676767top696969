@@ -122,19 +122,16 @@ function Index() {
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                   <span className="text-xs font-medium tracking-wide text-taupe">
-                    Built by a Top-240 Survivor
+                    Built by top 1% of the hall
                   </span>
                 </div>
 
                 <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-                  Messe Wien 2026
-                  <br />
-                  <span className="text-caramel">In-Person Exam Cracked.</span>
+                  Step by step preparation for your 2027 WU BBE exam
                 </h1>
 
                 <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                  The strict risk-management simulator built by a Top-240 survivor. Master the
-                  42-second time crunch and the brutal Partial-Credit marking system.
+                  Master every detail and tactic of the actual exam.
                 </p>
 
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -158,11 +155,11 @@ function Index() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
-                  <span>42s / question</span>
+                  <span>Beauty of stress and time management</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
-                  <span>Partial-Credit Engine</span>
+                  <span>Most common and tricky Mistakes</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
-                  <span>Top-240 Calibration</span>
+                  <span>Exam life hacks and loopholes</span>
                 </div>
               </div>
 
@@ -291,11 +288,8 @@ function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-16 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Field Reports from Messe Wien 2026
+                Students' reviews right after receiving an acceptance letter.
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Unfiltered candidate notes from the exam hall floor.
-              </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
