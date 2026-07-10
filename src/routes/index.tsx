@@ -218,16 +218,16 @@ function Index() {
         >
           <div className="mx-auto max-w-5xl px-6 py-28 text-center lg:px-8 lg:py-36">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-              WU Vienna · Campus D2
+              WU Vienna
             </p>
             <h2 className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
               A triple-accredited elite business school.
               <br />
-              <span className="text-white/80">Tuition virtually €0.</span>
+              <span className="text-white/80">Almost free education.</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-              One 90-minute exam stands between your family and a world-class degree at zero
-              tuition cost.
+              One 2-hour exam stands between your family and a world-class degree at almost free
+              education.
             </p>
           </div>
         </section>
