@@ -6,6 +6,7 @@ import { LiabilityChart } from "@/components/LiabilityChart";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
+import { FaqAccordion } from "@/components/FaqAccordion";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -326,6 +327,9 @@ function Index() {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <FaqAccordion />
 
         {/* Footer */}
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
