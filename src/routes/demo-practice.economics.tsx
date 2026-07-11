@@ -404,11 +404,12 @@ function EconomicsTasks() {
 
 
 function CaseCard({
-  data, index, onGraded, inRevision, alreadyPassed,
+  data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
+  onResetProgress: () => void;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -424,7 +425,6 @@ function CaseCard({
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
-  // Effective answer: checked = true, otherwise (null or false) = false
   const correctCount = data.answer_key.reduce<number>(
     (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
@@ -439,6 +439,11 @@ function CaseCard({
     setChecked(false);
     setAnswers([null, null, null, null, null]);
     setOpenExpl({});
+  };
+
+  const handleFullReset = () => {
+    handleReset();
+    onResetProgress();
   };
 
   return (
