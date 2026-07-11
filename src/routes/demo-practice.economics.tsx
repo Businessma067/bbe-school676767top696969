@@ -465,6 +465,17 @@ function CaseCard({
             In revision
           </span>
         )}
+        <span className="flex-1" />
+        {(alreadyPassed || inRevision || checked) && (
+          <button
+            onClick={handleFullReset}
+            title="Reset this task"
+            aria-label="Reset this task"
+            className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:border-destructive hover:text-destructive"
+          >
+            <RotateCcw className="h-3 w-3" /> Reset task
+          </button>
+        )}
       </div>
 
       <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
