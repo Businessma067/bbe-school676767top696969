@@ -295,6 +295,13 @@ function EconomicsTasks() {
                 </div>
               </button>
             </div>
+
+            <button
+              onClick={() => setCustomResetOpen(true)}
+              className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl border border-dashed border-border px-3 py-2 text-xs font-semibold text-muted-foreground hover:border-primary hover:bg-primary/5 hover:text-primary"
+            >
+              <Settings2 className="h-3.5 w-3.5" /> Customize reset
+            </button>
           </div>
         </aside>
 
