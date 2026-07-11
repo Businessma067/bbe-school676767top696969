@@ -31,6 +31,21 @@ const faqs = [
     answer:
       "Because we don't just give you plain textbooks—we provide a premium simulator with unique tools you won't find anywhere else on the market. We built exclusive, market-first features: Stress-Test Modules to handle exam pressure, Timing Tests to master your speed, and an automatic Revision Block to fix your mistakes. Combined with real answer sheet replicas and instant feedback, it is the only tool available that makes you 100% ready for the actual exam.",
   },
+  {
+    question: "Can I use the simulator on my phone, or do I need a PC?",
+    answer:
+      "The platform is fully responsive and optimized for all devices, including smartphones, tablets, and laptops. Every interactive True/False toggle, slide-down tactical explanation, and dashboard tracker is engineered to run flawlessly on any screen size. This cross-device optimization ensures you can maximize your preparation efficiency and practice high-stress exam tasks on the go, anytime and anywhere.",
+  },
+  {
+    question: "Is there a limit on how many times I can reset and rerun the tests?",
+    answer:
+      "No, absolutely zero limits. Within each chapter, you can simply click the reset button and specifically choose which sections or question sets you want to clear. You can repeat this customizable reset process infinitely, allowing you to rerun the entire multi-subject question database 5, 10, or 20 times right up until your actual exam date to master your speed and analytical skills.",
+  },
+  {
+    question: "How long do I keep access to the platform after purchasing?",
+    answer:
+      "Your premium access remains fully active until the official university entrance exam date for the current academic year concludes. You get continuous, unlimited access to the entire question database, error-tracking features, and all structural updates right up until you walk into the test room.",
+  },
 ];
 
 export function FaqAccordion() {
