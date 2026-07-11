@@ -328,6 +328,9 @@ function Index() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <FaqAccordion />
+
         {/* Footer */}
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
