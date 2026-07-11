@@ -132,6 +132,26 @@ function EconomicsTasks() {
     });
   };
 
+  const resetCaseIds = (ids: string[]) => {
+    if (ids.length === 0) return;
+    const idSet = new Set(ids);
+    setProgress((prev) => {
+      const next = {
+        passed: prev.passed.filter((x) => !idSet.has(x)),
+        revision: prev.revision.filter((x) => !idSet.has(x)),
+      };
+      saveProgress(next);
+      return next;
+    });
+  };
+
+  const resetChapter = (ch: number) => {
+    const list = byChapter.get(ch) ?? [];
+    resetCaseIds(list.map((c) => c.id));
+  };
+
+  const [customResetOpen, setCustomResetOpen] = useState(false);
+
   const chapterProgress = (ch: number) => {
     const list = byChapter.get(ch) ?? [];
     if (list.length === 0) return { pct: 0, done: 0, total: 0 };
