@@ -193,9 +193,10 @@ function EconomicsTasks() {
                     "rounded-xl border transition-colors",
                     isActiveCh ? "border-primary/40 bg-primary/5" : "border-transparent",
                   )}>
+                  <div className="flex items-stretch">
                     <button
                       onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
-                      className="flex w-full items-center gap-2 rounded-xl px-3 py-2.5 text-left hover:bg-secondary/60"
+                      className="flex flex-1 items-center gap-2 rounded-l-xl px-3 py-2.5 text-left hover:bg-secondary/60"
                     >
                       <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
                       <div className="min-w-0 flex-1">
@@ -211,6 +212,19 @@ function EconomicsTasks() {
                         </div>
                       </div>
                     </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (done + (list.filter((c) => progress.revision.includes(c.id)).length) === 0) return;
+                        if (window.confirm(`Reset all progress for Chapter ${ch.num}?`)) resetChapter(ch.num);
+                      }}
+                      title={`Reset Chapter ${ch.num}`}
+                      aria-label={`Reset Chapter ${ch.num}`}
+                      className="grid w-9 shrink-0 place-items-center rounded-r-xl text-muted-foreground hover:bg-destructive/10 hover:text-destructive"
+                    >
+                      <RotateCcw className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
                     {isOpen && (
                       <ul className="border-t border-border/60 py-1">
                         {list.length === 0 && (
