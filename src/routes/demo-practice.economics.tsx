@@ -350,6 +350,7 @@ function EconomicsTasks() {
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
+              onResetProgress={() => resetCaseIds([activeCase.id])}
             />
           )}
 
