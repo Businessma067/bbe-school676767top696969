@@ -398,6 +398,138 @@ function EconomicsTasks() {
           </div>
         </aside>
       </div>
+
+      {customResetOpen && (
+        <CustomResetModal
+          chapters={CHAPTERS}
+          byChapter={byChapter}
+          progress={progress}
+          onClose={() => setCustomResetOpen(false)}
+          onReset={(ids) => { resetCaseIds(ids); setCustomResetOpen(false); }}
+        />
+      )}
+    </div>
+  );
+}
+
+function CustomResetModal({
+  chapters, byChapter, progress, onClose, onReset,
+}: {
+  chapters: { num: number; title: string }[];
+  byChapter: Map<number, Case[]>;
+  progress: Progress;
+  onClose: () => void;
+  onReset: (ids: string[]) => void;
+}) {
+  const attempted = (c: Case) => progress.passed.includes(c.id) || progress.revision.includes(c.id);
+  const [selected, setSelected] = useState<Record<string, boolean>>({});
+  const [openCh, setOpenCh] = useState<Record<number, boolean>>(
+    () => Object.fromEntries(chapters.map((c) => [c.num, true])),
+  );
+
+  const toggle = (id: string) => setSelected((s) => ({ ...s, [id]: !s[id] }));
+  const toggleChapter = (ch: number) => {
+    const list = (byChapter.get(ch) ?? []).filter(attempted);
+    const allOn = list.every((c) => selected[c.id]);
+    setSelected((s) => {
+      const next = { ...s };
+      list.forEach((c) => { next[c.id] = !allOn; });
+      return next;
+    });
+  };
+
+  const chosenIds = Object.entries(selected).filter(([, v]) => v).map(([k]) => k);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onClose}>
+      <div className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded-2xl border border-border bg-card shadow-xl" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between border-b border-border px-5 py-4">
+          <div>
+            <h2 className="font-display text-lg font-bold">Customize reset</h2>
+            <p className="text-xs text-muted-foreground">Pick individual cases to clear from your progress.</p>
+          </div>
+          <button onClick={onClose} className="rounded-md p-1.5 text-muted-foreground hover:bg-secondary" aria-label="Close">
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
+          {chapters.map((ch) => {
+            const list = byChapter.get(ch.num) ?? [];
+            const attemptedList = list.filter(attempted);
+            const isOpen = !!openCh[ch.num];
+            return (
+              <div key={ch.num} className="mb-3 rounded-xl border border-border">
+                <div className="flex items-center justify-between px-3 py-2">
+                  <button
+                    onClick={() => setOpenCh((s) => ({ ...s, [ch.num]: !s[ch.num] }))}
+                    className="flex flex-1 items-center gap-2 text-left"
+                  >
+                    <ChevronDown className={cn("h-4 w-4 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
+                    <span className="text-sm font-bold">Ch. {ch.num} — {ch.title}</span>
+                    <span className="text-[10px] font-semibold text-muted-foreground">({attemptedList.length} attempted)</span>
+                  </button>
+                  <button
+                    onClick={() => toggleChapter(ch.num)}
+                    disabled={attemptedList.length === 0}
+                    className="rounded-md border border-border px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary disabled:opacity-40"
+                  >
+                    Toggle all
+                  </button>
+                </div>
+                {isOpen && (
+                  <ul className="border-t border-border/60 p-2">
+                    {list.length === 0 && (
+                      <li className="px-2 py-2 text-xs text-muted-foreground">No cases.</li>
+                    )}
+                    {list.map((c, i) => {
+                      const dis = !attempted(c);
+                      const passed = progress.passed.includes(c.id);
+                      const rev = progress.revision.includes(c.id);
+                      return (
+                        <li key={c.id}>
+                          <label className={cn(
+                            "flex cursor-pointer items-center gap-2.5 rounded-md px-2 py-1.5 text-xs",
+                            dis ? "cursor-not-allowed opacity-50" : "hover:bg-secondary/60",
+                          )}>
+                            <input
+                              type="checkbox"
+                              checked={!!selected[c.id]}
+                              disabled={dis}
+                              onChange={() => toggle(c.id)}
+                              className="h-3.5 w-3.5 rounded border-border"
+                            />
+                            <span className="flex-1 truncate">
+                              <span className="font-semibold">Task {i + 1}</span>
+                              <span className="ml-2 text-muted-foreground">{c.case_id}</span>
+                            </span>
+                            {passed && <span className="text-[10px] font-bold text-emerald-600">passed</span>}
+                            {rev && <span className="text-[10px] font-bold text-destructive">revision</span>}
+                          </label>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex items-center justify-between border-t border-border px-5 py-3">
+          <span className="text-xs text-muted-foreground">{chosenIds.length} selected</span>
+          <div className="flex gap-2">
+            <button onClick={onClose} className="rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary">
+              Cancel
+            </button>
+            <button
+              onClick={() => onReset(chosenIds)}
+              disabled={chosenIds.length === 0}
+              className="inline-flex items-center gap-1.5 rounded-md bg-destructive px-3 py-2 text-xs font-semibold text-destructive-foreground hover:bg-destructive/90 disabled:opacity-40"
+            >
+              <RotateCcw className="h-3.5 w-3.5" /> Reset selected
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
