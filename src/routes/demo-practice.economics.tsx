@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
-import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen } from "lucide-react";
+import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2 } from "lucide-react";
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
@@ -132,6 +132,26 @@ function EconomicsTasks() {
     });
   };
 
+  const resetCaseIds = (ids: string[]) => {
+    if (ids.length === 0) return;
+    const idSet = new Set(ids);
+    setProgress((prev) => {
+      const next = {
+        passed: prev.passed.filter((x) => !idSet.has(x)),
+        revision: prev.revision.filter((x) => !idSet.has(x)),
+      };
+      saveProgress(next);
+      return next;
+    });
+  };
+
+  const resetChapter = (ch: number) => {
+    const list = byChapter.get(ch) ?? [];
+    resetCaseIds(list.map((c) => c.id));
+  };
+
+  const [customResetOpen, setCustomResetOpen] = useState(false);
+
   const chapterProgress = (ch: number) => {
     const list = byChapter.get(ch) ?? [];
     if (list.length === 0) return { pct: 0, done: 0, total: 0 };
@@ -173,9 +193,10 @@ function EconomicsTasks() {
                     "rounded-xl border transition-colors",
                     isActiveCh ? "border-primary/40 bg-primary/5" : "border-transparent",
                   )}>
+                  <div className="flex items-stretch">
                     <button
                       onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
-                      className="flex w-full items-center gap-2 rounded-xl px-3 py-2.5 text-left hover:bg-secondary/60"
+                      className="flex flex-1 items-center gap-2 rounded-l-xl px-3 py-2.5 text-left hover:bg-secondary/60"
                     >
                       <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
                       <div className="min-w-0 flex-1">
@@ -191,6 +212,19 @@ function EconomicsTasks() {
                         </div>
                       </div>
                     </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (done + (list.filter((c) => progress.revision.includes(c.id)).length) === 0) return;
+                        if (window.confirm(`Reset all progress for Chapter ${ch.num}?`)) resetChapter(ch.num);
+                      }}
+                      title={`Reset Chapter ${ch.num}`}
+                      aria-label={`Reset Chapter ${ch.num}`}
+                      className="grid w-9 shrink-0 place-items-center rounded-r-xl text-muted-foreground hover:bg-destructive/10 hover:text-destructive"
+                    >
+                      <RotateCcw className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
                     {isOpen && (
                       <ul className="border-t border-border/60 py-1">
                         {list.length === 0 && (
@@ -261,6 +295,13 @@ function EconomicsTasks() {
                 </div>
               </button>
             </div>
+
+            <button
+              onClick={() => setCustomResetOpen(true)}
+              className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl border border-dashed border-border px-3 py-2 text-xs font-semibold text-muted-foreground hover:border-primary hover:bg-primary/5 hover:text-primary"
+            >
+              <Settings2 className="h-3.5 w-3.5" /> Customize reset
+            </button>
           </div>
         </aside>
 
@@ -309,6 +350,7 @@ function EconomicsTasks() {
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
+              onResetProgress={() => resetCaseIds([activeCase.id])}
             />
           )}
 
@@ -356,17 +398,150 @@ function EconomicsTasks() {
           </div>
         </aside>
       </div>
+
+      {customResetOpen && (
+        <CustomResetModal
+          chapters={CHAPTERS}
+          byChapter={byChapter}
+          progress={progress}
+          onClose={() => setCustomResetOpen(false)}
+          onReset={(ids) => { resetCaseIds(ids); setCustomResetOpen(false); }}
+        />
+      )}
+    </div>
+  );
+}
+
+function CustomResetModal({
+  chapters, byChapter, progress, onClose, onReset,
+}: {
+  chapters: { num: number; title: string }[];
+  byChapter: Map<number, Case[]>;
+  progress: Progress;
+  onClose: () => void;
+  onReset: (ids: string[]) => void;
+}) {
+  const attempted = (c: Case) => progress.passed.includes(c.id) || progress.revision.includes(c.id);
+  const [selected, setSelected] = useState<Record<string, boolean>>({});
+  const [openCh, setOpenCh] = useState<Record<number, boolean>>(
+    () => Object.fromEntries(chapters.map((c) => [c.num, true])),
+  );
+
+  const toggle = (id: string) => setSelected((s) => ({ ...s, [id]: !s[id] }));
+  const toggleChapter = (ch: number) => {
+    const list = (byChapter.get(ch) ?? []).filter(attempted);
+    const allOn = list.every((c) => selected[c.id]);
+    setSelected((s) => {
+      const next = { ...s };
+      list.forEach((c) => { next[c.id] = !allOn; });
+      return next;
+    });
+  };
+
+  const chosenIds = Object.entries(selected).filter(([, v]) => v).map(([k]) => k);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onClose}>
+      <div className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded-2xl border border-border bg-card shadow-xl" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between border-b border-border px-5 py-4">
+          <div>
+            <h2 className="font-display text-lg font-bold">Customize reset</h2>
+            <p className="text-xs text-muted-foreground">Pick individual cases to clear from your progress.</p>
+          </div>
+          <button onClick={onClose} className="rounded-md p-1.5 text-muted-foreground hover:bg-secondary" aria-label="Close">
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
+          {chapters.map((ch) => {
+            const list = byChapter.get(ch.num) ?? [];
+            const attemptedList = list.filter(attempted);
+            const isOpen = !!openCh[ch.num];
+            return (
+              <div key={ch.num} className="mb-3 rounded-xl border border-border">
+                <div className="flex items-center justify-between px-3 py-2">
+                  <button
+                    onClick={() => setOpenCh((s) => ({ ...s, [ch.num]: !s[ch.num] }))}
+                    className="flex flex-1 items-center gap-2 text-left"
+                  >
+                    <ChevronDown className={cn("h-4 w-4 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
+                    <span className="text-sm font-bold">Ch. {ch.num} — {ch.title}</span>
+                    <span className="text-[10px] font-semibold text-muted-foreground">({attemptedList.length} attempted)</span>
+                  </button>
+                  <button
+                    onClick={() => toggleChapter(ch.num)}
+                    disabled={attemptedList.length === 0}
+                    className="rounded-md border border-border px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary disabled:opacity-40"
+                  >
+                    Toggle all
+                  </button>
+                </div>
+                {isOpen && (
+                  <ul className="border-t border-border/60 p-2">
+                    {list.length === 0 && (
+                      <li className="px-2 py-2 text-xs text-muted-foreground">No cases.</li>
+                    )}
+                    {list.map((c, i) => {
+                      const dis = !attempted(c);
+                      const passed = progress.passed.includes(c.id);
+                      const rev = progress.revision.includes(c.id);
+                      return (
+                        <li key={c.id}>
+                          <label className={cn(
+                            "flex cursor-pointer items-center gap-2.5 rounded-md px-2 py-1.5 text-xs",
+                            dis ? "cursor-not-allowed opacity-50" : "hover:bg-secondary/60",
+                          )}>
+                            <input
+                              type="checkbox"
+                              checked={!!selected[c.id]}
+                              disabled={dis}
+                              onChange={() => toggle(c.id)}
+                              className="h-3.5 w-3.5 rounded border-border"
+                            />
+                            <span className="flex-1 truncate">
+                              <span className="font-semibold">Task {i + 1}</span>
+                              <span className="ml-2 text-muted-foreground">{c.case_id}</span>
+                            </span>
+                            {passed && <span className="text-[10px] font-bold text-emerald-600">passed</span>}
+                            {rev && <span className="text-[10px] font-bold text-destructive">revision</span>}
+                          </label>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex items-center justify-between border-t border-border px-5 py-3">
+          <span className="text-xs text-muted-foreground">{chosenIds.length} selected</span>
+          <div className="flex gap-2">
+            <button onClick={onClose} className="rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary">
+              Cancel
+            </button>
+            <button
+              onClick={() => onReset(chosenIds)}
+              disabled={chosenIds.length === 0}
+              className="inline-flex items-center gap-1.5 rounded-md bg-destructive px-3 py-2 text-xs font-semibold text-destructive-foreground hover:bg-destructive/90 disabled:opacity-40"
+            >
+              <RotateCcw className="h-3.5 w-3.5" /> Reset selected
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 
 function CaseCard({
-  data, index, onGraded, inRevision, alreadyPassed,
+  data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
+  onResetProgress: () => void;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -382,7 +557,6 @@ function CaseCard({
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
-  // Effective answer: checked = true, otherwise (null or false) = false
   const correctCount = data.answer_key.reduce<number>(
     (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
@@ -397,6 +571,11 @@ function CaseCard({
     setChecked(false);
     setAnswers([null, null, null, null, null]);
     setOpenExpl({});
+  };
+
+  const handleFullReset = () => {
+    handleReset();
+    onResetProgress();
   };
 
   return (
@@ -417,6 +596,17 @@ function CaseCard({
           <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
             In revision
           </span>
+        )}
+        <span className="flex-1" />
+        {(alreadyPassed || inRevision || checked) && (
+          <button
+            onClick={handleFullReset}
+            title="Reset this task"
+            aria-label="Reset this task"
+            className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:border-destructive hover:text-destructive"
+          >
+            <RotateCcw className="h-3 w-3" /> Reset task
+          </button>
         )}
       </div>
 
