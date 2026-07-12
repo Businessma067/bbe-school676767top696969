@@ -336,7 +336,9 @@ function Index() {
         </section>
 
         {/* FAQ */}
-        <FaqAccordion />
+        <div id="faq">
+          <FaqAccordion />
+        </div>
 
         {/* Footer */}
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
