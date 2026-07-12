@@ -14,6 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
+      book_chunks: {
+        Row: {
+          chunk_index: number
+          content: string
+          created_at: string
+          embedding: string
+          id: string
+          source: string
+        }
+        Insert: {
+          chunk_index: number
+          content: string
+          created_at?: string
+          embedding: string
+          id?: string
+          source?: string
+        }
+        Update: {
+          chunk_index?: number
+          content?: string
+          created_at?: string
+          embedding?: string
+          id?: string
+          source?: string
+        }
+        Relationships: []
+      }
       economics_cases: {
         Row: {
           answer_key: boolean[]
@@ -94,6 +121,15 @@ export type Database = {
           _user_id: string
         }
         Returns: boolean
+      }
+      match_book_chunks: {
+        Args: { match_count?: number; query_embedding: string }
+        Returns: {
+          chunk_index: number
+          content: string
+          id: string
+          similarity: number
+        }[]
       }
     }
     Enums: {
