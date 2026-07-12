@@ -3,6 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Send, Sparkles, Loader2 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 
 import {
   Sheet,
@@ -101,9 +104,10 @@ export function MobileNav() {
   }
 
   const suggestions = [
-    "Где попробовать демо?",
+    "Объясни эластичность спроса",
+    "Как решать задачи на производные?",
     "Что входит в Full course?",
-    "Покажи отзывы",
+    "Советы по тайм-менеджменту на экзамене",
   ];
 
   return (
@@ -180,7 +184,7 @@ export function MobileNav() {
               {messages.length === 0 ? (
                 <div className="space-y-3">
                   <p className="px-2 text-xs leading-relaxed text-muted-foreground">
-                    Спросите, где найти демо, что входит в курс, или как устроен экзамен.
+                    Помогу с навигацией по сайту и разберу задачи по экономике, математике и английскому для BBE-экзамена.
                   </p>
                   <div className="flex flex-wrap gap-1.5 px-2">
                     {suggestions.map((s) => (
@@ -205,8 +209,12 @@ export function MobileNav() {
                     </div>
                   ) : (
                     <div key={m.id} className="flex justify-start">
-                      <div className="max-w-[90%] whitespace-pre-wrap text-sm leading-relaxed text-foreground">
-                        {m.text || (loading ? <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" /> : null)}
+                      <div className="max-w-[92%] text-sm leading-relaxed text-foreground [&_p]:mb-2 [&_p:last-child]:mb-0 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_code]:rounded [&_code]:bg-secondary [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-[12px] [&_pre]:my-2 [&_pre]:overflow-x-auto [&_pre]:rounded-md [&_pre]:bg-secondary [&_pre]:p-2 [&_pre]:text-[12px] [&_strong]:font-semibold [&_h1]:mt-2 [&_h1]:mb-1 [&_h1]:text-base [&_h1]:font-semibold [&_h2]:mt-2 [&_h2]:mb-1 [&_h2]:text-sm [&_h2]:font-semibold [&_h3]:mt-2 [&_h3]:mb-1 [&_h3]:text-sm [&_h3]:font-semibold [&_a]:underline">
+                        {m.text ? (
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.text}</ReactMarkdown>
+                        ) : loading ? (
+                          <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+                        ) : null}
                       </div>
                     </div>
                   ),
