@@ -184,7 +184,7 @@ export function MobileNav() {
               {messages.length === 0 ? (
                 <div className="space-y-3">
                   <p className="px-2 text-xs leading-relaxed text-muted-foreground">
-                    Спросите, где найти демо, что входит в курс, или как устроен экзамен.
+                    Помогу с навигацией по сайту и разберу задачи по экономике, математике и английскому для BBE-экзамена.
                   </p>
                   <div className="flex flex-wrap gap-1.5 px-2">
                     {suggestions.map((s) => (
