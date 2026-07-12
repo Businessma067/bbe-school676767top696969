@@ -13,22 +13,13 @@ import {
 } from "@/components/ui/sheet";
 
 const menuItems = [
-  { emoji: "🎯", label: "Demo-Practice", href: "/demo-practice", isRoute: true },
-  { emoji: "★", label: "Full course", href: "#full-course", isRoute: false },
-  { emoji: "📚", label: "BBE-school products", href: "#bbe-products", isRoute: false },
-  { emoji: "!", label: "Important features", href: "#important-features", isRoute: false },
-  { emoji: "👤", label: "Reviews", href: "#reviews", isRoute: false },
-  { emoji: "❓", label: "FAQ", href: "#faq", isRoute: false },
+  { label: "Demo-Practice", href: "/demo-practice", isRoute: true },
+  { label: "Full course", href: "#full-course", isRoute: false },
+  { label: "BBE-school products", href: "#bbe-products", isRoute: false },
+  { label: "Important features", href: "#important-features", isRoute: false },
+  { label: "Reviews", href: "#reviews", isRoute: false },
+  { label: "FAQ", href: "#faq", isRoute: false },
 ];
-
-function MenuItemContent({ emoji, label }: { emoji: string; label: string }) {
-  return (
-    <span className="inline-flex items-center gap-3">
-      <span className="grayscale" aria-hidden="true">{emoji}</span>
-      <span>{label}</span>
-    </span>
-  );
-}
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -73,7 +64,7 @@ export function MobileNav() {
                       onClick={() => setOpen(false)}
                       className="block rounded-lg px-3 py-3.5 font-display text-lg font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
                     >
-                      <MenuItemContent emoji={item.emoji} label={item.label} />
+                      {item.label}
                     </Link>
                   ) : (
                     <a
@@ -81,7 +72,7 @@ export function MobileNav() {
                       onClick={() => setOpen(false)}
                       className="block rounded-lg px-3 py-3.5 font-display text-lg font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
                     >
-                      <MenuItemContent emoji={item.emoji} label={item.label} />
+                      {item.label}
                     </a>
                   )}
                 </li>
