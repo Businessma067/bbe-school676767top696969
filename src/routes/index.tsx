@@ -319,7 +319,7 @@ function Index() {
         </section>
 
         {/* FIELD REPORTS — light */}
-        <section className="px-6 py-24 lg:px-8 lg:py-32">
+        <section id="reviews" className="px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
             <div className="mb-16 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
