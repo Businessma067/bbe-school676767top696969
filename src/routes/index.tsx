@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { MobileNav } from "@/components/MobileNav";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -75,7 +76,12 @@ function Index() {
               <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
             </div>
           </a>
-          <AuthButton />
+          <div className="flex items-center gap-3">
+            <AuthButton />
+            <div className="lg:hidden">
+              <MobileNav />
+            </div>
+          </div>
         </div>
       </header>
 
@@ -138,7 +144,7 @@ function Index() {
                   Master every detail and tactic of the actual exam.
                 </p>
 
-                <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <div id="bbe-products" className="mt-10 flex flex-col gap-3 sm:flex-row">
                   <Link
                     to="/demo-practice"
                     className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
@@ -147,6 +153,7 @@ function Index() {
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
                   </Link>
                   <button
+                    id="full-course"
                     className="inline-flex flex-col items-center justify-center rounded-md px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                     style={{
                       background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
@@ -169,7 +176,7 @@ function Index() {
 
                 
 
-                <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
+                <div id="important-features" className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
                   <span>Beauty of stress and time management</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
                   <span>Most common and tricky Mistakes</span>
@@ -312,7 +319,7 @@ function Index() {
         </section>
 
         {/* FIELD REPORTS — light */}
-        <section className="px-6 py-24 lg:px-8 lg:py-32">
+        <section id="reviews" className="px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
             <div className="mb-16 max-w-3xl">
               <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -329,7 +336,9 @@ function Index() {
         </section>
 
         {/* FAQ */}
-        <FaqAccordion />
+        <div id="faq">
+          <FaqAccordion />
+        </div>
 
         {/* Footer */}
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
