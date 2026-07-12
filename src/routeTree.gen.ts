@@ -14,6 +14,7 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 
 const DemoPracticeRoute = DemoPracticeRouteImport.update({
@@ -41,6 +42,11 @@ const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
   path: '/economics',
   getParentRoute: () => DemoPracticeRoute,
 } as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/admin/economics',
   path: '/admin/economics',
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/auth': typeof AuthRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
 }
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
 }
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/auth': typeof AuthRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
 }
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/demo-practice'
     | '/admin/economics'
+    | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/'
   fileRoutesByTo: FileRoutesByTo
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
     | '/'
     | '/auth'
     | '/admin/economics'
+    | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice'
   id:
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/demo-practice'
     | '/admin/economics'
+    | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/'
   fileRoutesById: FileRoutesById
@@ -102,6 +114,7 @@ export interface RootRouteChildren {
   AuthRoute: typeof AuthRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   AdminEconomicsRoute: typeof AdminEconomicsRoute
+  ApiChatRoute: typeof ApiChatRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -141,6 +154,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DemoPracticeEconomicsRouteImport
       parentRoute: typeof DemoPracticeRoute
     }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/economics': {
       id: '/admin/economics'
       path: '/admin/economics'
@@ -170,6 +190,7 @@ const rootRouteChildren: RootRouteChildren = {
   AuthRoute: AuthRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   AdminEconomicsRoute: AdminEconomicsRoute,
+  ApiChatRoute: ApiChatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
