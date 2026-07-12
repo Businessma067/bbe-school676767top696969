@@ -76,7 +76,12 @@ function Index() {
               <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
             </div>
           </a>
-          <AuthButton />
+          <div className="flex items-center gap-3">
+            <AuthButton />
+            <div className="lg:hidden">
+              <MobileNav />
+            </div>
+          </div>
         </div>
       </header>
 
