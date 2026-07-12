@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { MobileNav } from "@/components/MobileNav";
 
 export const Route = createFileRoute("/")({
   component: Index,
