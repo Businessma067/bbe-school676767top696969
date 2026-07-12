@@ -153,6 +153,7 @@ function Index() {
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
                   </Link>
                   <button
+                    id="full-course"
                     className="inline-flex flex-col items-center justify-center rounded-md px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                     style={{
                       background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
