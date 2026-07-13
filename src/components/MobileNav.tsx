@@ -165,7 +165,7 @@ export function MobileNav() {
           <Menu className="h-5 w-5" />
         </button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[85vw] max-w-sm border-l border-border bg-background p-0">
+      <SheetContent side="right" className="w-[85vw] max-w-sm border-l border-border bg-background p-0 [&>button]:hidden">
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between border-b border-border px-6 py-4">
             <SheetTitle className="font-display text-base font-semibold tracking-tight text-foreground">
