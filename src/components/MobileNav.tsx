@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Send, Sparkles, Loader2 } from "lucide-react";
+import { Menu, Send, Sparkles, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -171,14 +171,6 @@ export function MobileNav() {
             <SheetTitle className="font-display text-base font-semibold tracking-tight text-foreground">
               Menu
             </SheetTitle>
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              aria-label="Close menu"
-              className="inline-flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-            >
-              <X className="h-5 w-5" />
-            </button>
           </div>
           <SheetDescription className="sr-only">
             Navigation menu and AI assistant for the BBE School website
