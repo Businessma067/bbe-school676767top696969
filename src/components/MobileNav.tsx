@@ -9,6 +9,47 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 
+// Normalize LaTeX so KaTeX renders it. Converts \( \) and \[ \] to $ $ / $$ $$,
+// and auto-wraps bare LaTeX commands (\boxed, \frac, \sqrt, \cdot, \sum, \int, ...)
+// when the model forgot the $...$ delimiters.
+function preprocessMath(src: string): string {
+  if (!src) return src;
+  let s = src;
+  // Protect fenced code blocks and inline code from math transforms.
+  const codeBlocks: string[] = [];
+  s = s.replace(/```[\s\S]*?```|`[^`\n]*`/g, (m) => {
+    codeBlocks.push(m);
+    return `\u0000CODE${codeBlocks.length - 1}\u0000`;
+  });
+
+  // \[ ... \]  →  $$ ... $$
+  s = s.replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner) => `$$${inner}$$`);
+  // \( ... \)  →  $ ... $
+  s = s.replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner) => `$${inner}$`);
+
+  // Auto-wrap bare LaTeX commands that appear outside $...$.
+  // Split by $...$ / $$...$$ segments and only transform the non-math parts.
+  const parts = s.split(/(\$\$[\s\S]+?\$\$|\$[^\n$]+?\$)/g);
+  const cmd = /\\(?:boxed|frac|dfrac|tfrac|sqrt|cdot|times|div|pm|mp|leq|geq|neq|approx|infty|sum|prod|int|lim|log|ln|sin|cos|tan|alpha|beta|gamma|delta|theta|lambda|mu|pi|sigma|phi|omega|mathbb|mathrm|mathbf|text|left|right|to|Rightarrow|Leftrightarrow|forall|exists|in|notin|subset|cup|cap|partial|nabla|binom|overline|underline|hat|bar|vec)\b/;
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2 === 1) continue; // math segment, keep as-is
+    const seg = parts[i];
+    if (!cmd.test(seg)) continue;
+    // Wrap runs that contain LaTeX commands / braces / ^ _ in $...$.
+    parts[i] = seg.replace(
+      /(\\[A-Za-z]+(?:\s*(?:\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}|\[[^\]]*\]))*(?:\s*[\^_]\s*(?:\{[^{}]*\}|[A-Za-z0-9]))*)/g,
+      (m) => `$${m}$`,
+    );
+  }
+  s = parts.join("");
+
+  // Restore code blocks.
+  s = s.replace(/\u0000CODE(\d+)\u0000/g, (_m, i) => codeBlocks[Number(i)]);
+  return s;
+}
+
+
+
 
 import {
   Sheet,
