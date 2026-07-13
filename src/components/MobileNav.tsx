@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Send, Sparkles, Loader2 } from "lucide-react";
+import { Menu, Send, Sparkles, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
