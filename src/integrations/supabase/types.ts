@@ -89,6 +89,142 @@ export type Database = {
         }
         Relationships: []
       }
+      questions: {
+        Row: {
+          created_at: string
+          difficulty: string | null
+          id: string
+          image_url: string | null
+          is_active: boolean
+          stem_text: string
+          subject_id: string
+          topic_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          difficulty?: string | null
+          id?: string
+          image_url?: string | null
+          is_active?: boolean
+          stem_text: string
+          subject_id: string
+          topic_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          difficulty?: string | null
+          id?: string
+          image_url?: string | null
+          is_active?: boolean
+          stem_text?: string
+          subject_id?: string
+          topic_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "questions_subject_id_fkey"
+            columns: ["subject_id"]
+            isOneToOne: false
+            referencedRelation: "subjects"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "questions_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      statements: {
+        Row: {
+          correct_answer: boolean
+          explanation: string | null
+          id: string
+          question_id: string | null
+          statement_order: number
+          statement_text: string
+        }
+        Insert: {
+          correct_answer: boolean
+          explanation?: string | null
+          id?: string
+          question_id?: string | null
+          statement_order: number
+          statement_text: string
+        }
+        Update: {
+          correct_answer?: boolean
+          explanation?: string | null
+          id?: string
+          question_id?: string | null
+          statement_order?: number
+          statement_text?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "statements_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      subjects: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          slug: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          slug: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          slug?: string
+        }
+        Relationships: []
+      }
+      topics: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          slug: string
+          subject_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          slug: string
+          subject_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          slug?: string
+          subject_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "topics_subject_id_fkey"
+            columns: ["subject_id"]
+            isOneToOne: false
+            referencedRelation: "subjects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_roles: {
         Row: {
           created_at: string
