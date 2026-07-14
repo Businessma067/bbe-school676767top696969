@@ -6,9 +6,16 @@ import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, B
 
 const CHAPTER5_FREE_LIMIT = 8;
 const CHAPTER2_FREE_LIMIT = 6;
+const CHAPTER3_FREE_LIMIT = 5;
+const freeLimitOf = (ch: number | "revision" | null): number => {
+  if (ch === 2) return CHAPTER2_FREE_LIMIT;
+  if (ch === 3) return CHAPTER3_FREE_LIMIT;
+  if (ch === 5) return CHAPTER5_FREE_LIMIT;
+  return Number.POSITIVE_INFINITY;
+};
 const isLocked = (chapter: number | "revision" | null, idx: number) =>
-  (chapter === 5 && idx >= CHAPTER5_FREE_LIMIT) ||
-  (chapter === 2 && idx >= CHAPTER2_FREE_LIMIT);
+  idx >= freeLimitOf(chapter);
+
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
@@ -241,6 +248,10 @@ function EconomicsTasks() {
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
                           const locked = isLocked(ch.num, i);
+                          const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
+                          const lockedStyle = locked
+                            ? { backgroundColor: `rgba(0,0,0,${0.05 + Math.min(lockedPos, 2) * 0.07})` }
+                            : undefined;
                           return (
                             <li key={c.id}>
                               <button
@@ -249,17 +260,18 @@ function EconomicsTasks() {
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
                                 disabled={locked}
+                                style={lockedStyle}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
-                                  locked && "cursor-not-allowed opacity-50 hover:bg-transparent",
+                                  locked && "cursor-not-allowed hover:bg-transparent",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
                                     locked
-                                      ? "border-border bg-secondary text-muted-foreground"
+                                      ? "border-border/60 bg-background/40 text-muted-foreground"
                                       : passed
                                         ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
                                         : rev
@@ -271,12 +283,13 @@ function EconomicsTasks() {
                                   {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground", locked && "text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
                               </button>
                             </li>
                           );
+
                         })}
                       </ul>
                     )}
@@ -359,7 +372,8 @@ function EconomicsTasks() {
           )}
 
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
-            const freeLimit = activeChapter === 2 ? CHAPTER2_FREE_LIMIT : CHAPTER5_FREE_LIMIT;
+            const freeLimit = freeLimitOf(activeChapter);
+
             return (
             <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
