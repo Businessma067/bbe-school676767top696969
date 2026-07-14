@@ -42,6 +42,14 @@ function DashboardPage() {
     );
   }
 
+  if (auth === null) {
+    return (
+      <Shell>
+        <p className="text-sm text-muted-foreground">Redirecting…</p>
+      </Shell>
+    );
+  }
+
   return (
     <Shell>
       <div className="space-y-6">

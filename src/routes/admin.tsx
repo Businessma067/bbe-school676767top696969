@@ -38,6 +38,10 @@ function AdminPage() {
     return <Shell><p className="text-sm text-muted-foreground">Checking access…</p></Shell>;
   }
 
+  if (auth === null) {
+    return <Shell><p className="text-sm text-muted-foreground">Redirecting…</p></Shell>;
+  }
+
   if (auth.role !== "admin") {
     return (
       <Shell>
