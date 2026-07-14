@@ -9,8 +9,8 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
-import { Route as DbTestRouteImport } from './routes/db-test'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
@@ -18,14 +18,14 @@ import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practic
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 
+const PracticeRoute = PracticeRouteImport.update({
+  id: '/practice',
+  path: '/practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DemoPracticeRoute = DemoPracticeRouteImport.update({
   id: '/demo-practice',
   path: '/demo-practice',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DbTestRoute = DbTestRouteImport.update({
-  id: '/db-test',
-  path: '/db-test',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -62,8 +62,8 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/db-test': typeof DbTestRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
+  '/practice': typeof PracticeRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -72,7 +72,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/db-test': typeof DbTestRoute
+  '/practice': typeof PracticeRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -82,8 +82,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/db-test': typeof DbTestRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
+  '/practice': typeof PracticeRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -94,8 +94,8 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/auth'
-    | '/db-test'
     | '/demo-practice'
+    | '/practice'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -104,7 +104,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/auth'
-    | '/db-test'
+    | '/practice'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -113,8 +113,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/auth'
-    | '/db-test'
     | '/demo-practice'
+    | '/practice'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -124,26 +124,26 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRoute
-  DbTestRoute: typeof DbTestRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
+  PracticeRoute: typeof PracticeRoute
   AdminEconomicsRoute: typeof AdminEconomicsRoute
   ApiChatRoute: typeof ApiChatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/practice': {
+      id: '/practice'
+      path: '/practice'
+      fullPath: '/practice'
+      preLoaderRoute: typeof PracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/demo-practice': {
       id: '/demo-practice'
       path: '/demo-practice'
       fullPath: '/demo-practice'
       preLoaderRoute: typeof DemoPracticeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/db-test': {
-      id: '/db-test'
-      path: '/db-test'
-      fullPath: '/db-test'
-      preLoaderRoute: typeof DbTestRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -208,21 +208,11 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRoute,
-  DbTestRoute: DbTestRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
+  PracticeRoute: PracticeRoute,
   AdminEconomicsRoute: AdminEconomicsRoute,
   ApiChatRoute: ApiChatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
