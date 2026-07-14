@@ -16,7 +16,9 @@ export const Route = createFileRoute("/practice")({
 type QuestionRow = {
   id: string;
   stem_text: string;
-  topics: { name: string; subjects: { name: string } | null } | null;
+  subject_id: string | null;
+  topic_id: string | null;
+  topics: { id: string; name: string; subjects: { id: string; name: string } | null } | null;
 };
 type StatementRow = {
   id: string;
