@@ -238,6 +238,7 @@ function EconomicsTasks() {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
+                          const locked = isLocked(ch.num, i);
                           return (
                             <li key={c.id}>
                               <button
@@ -245,25 +246,32 @@ function EconomicsTasks() {
                                   setActiveChapter(ch.num);
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
+                                disabled={locked}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
+                                  locked && "cursor-not-allowed opacity-50 hover:bg-transparent",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                    passed
-                                      ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
-                                      : rev
-                                        ? "border-destructive bg-destructive/10 text-destructive"
-                                        : "border-border bg-background",
+                                    locked
+                                      ? "border-border bg-secondary text-muted-foreground"
+                                      : passed
+                                        ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
+                                        : rev
+                                          ? "border-destructive bg-destructive/10 text-destructive"
+                                          : "border-border bg-background",
                                   )}
                                 >
-                                  {passed && <Check className="h-3 w-3" strokeWidth={3} />}
-                                  {!passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
+                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={3} />}
+                                  {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
+                                  {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("truncate", passed && "line-through text-muted-foreground")}>Task {i + 1}</span>
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                  Task {i + 1}{locked && " · Locked"}
+                                </span>
                               </button>
                             </li>
                           );
