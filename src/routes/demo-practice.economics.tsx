@@ -318,7 +318,7 @@ function EconomicsTasks() {
         </aside>
 
         {/* Main content */}
-        <main className={cn("min-w-0 flex-1", activeChapter === null && "hidden")}>
+        <main className="min-w-0 flex-1">
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
@@ -331,7 +331,9 @@ function EconomicsTasks() {
             </div>
           )}
 
-
+          {cases !== null && (
+            <StatsOverview cases={cases} progress={progress} byChapter={byChapter} />
+          )}
 
           {cases !== null && activeChapter !== null && (
             <div className="mb-5">
@@ -354,7 +356,23 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {activeCase && (
+          {activeCase && isLocked(activeChapter, activeIdx) ? (
+            <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
+              <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
+                <Lock className="h-6 w-6" />
+              </div>
+              <h2 className="font-display text-xl font-bold">Locked in demo</h2>
+              <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
+                Chapter 5 tasks {CHAPTER5_FREE_LIMIT + 1}+ are part of the full course. The first {CHAPTER5_FREE_LIMIT} are free.
+              </p>
+              <button
+                onClick={() => setActiveIdx(CHAPTER5_FREE_LIMIT - 1)}
+                className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
+              >
+                <ChevronLeft className="h-4 w-4" /> Back to Task {CHAPTER5_FREE_LIMIT}
+              </button>
+            </div>
+          ) : activeCase && (
             <CaseCard
               key={activeCase.id}
               data={activeCase}
@@ -366,7 +384,7 @@ function EconomicsTasks() {
             />
           )}
 
-          {activeList.length > 0 && (
+          {activeList.length > 0 && activeChapter !== null && (
             <div className="mt-6 flex items-center justify-between">
               <button
                 onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
@@ -380,10 +398,14 @@ function EconomicsTasks() {
               </span>
               <button
                 onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                disabled={activeIdx >= activeList.length - 1}
+                disabled={
+                  activeIdx >= activeList.length - 1 ||
+                  isLocked(activeChapter, activeIdx + 1)
+                }
+                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                Next <ChevronRight className="h-4 w-4" />
+                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
           )}
