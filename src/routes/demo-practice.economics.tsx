@@ -249,8 +249,9 @@ function EconomicsTasks() {
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
                           const locked = isLocked(ch.num, i);
                           const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
-                          const lockedStyle = locked
-                            ? { backgroundColor: `rgba(0,0,0,${0.05 + Math.min(lockedPos, 2) * 0.07})` }
+                          // Fade text toward invisibility as tasks get deeper into locked territory
+                          const lockedOpacity = locked
+                            ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                             : undefined;
                           return (
                             <li key={c.id}>
@@ -260,18 +261,18 @@ function EconomicsTasks() {
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
                                 disabled={locked}
-                                style={lockedStyle}
+                                style={locked ? { opacity: lockedOpacity } : undefined}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
-                                  locked && "cursor-not-allowed hover:bg-transparent",
+                                  locked && "cursor-not-allowed hover:bg-transparent text-muted-foreground",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
                                     locked
-                                      ? "border-border/60 bg-background/40 text-muted-foreground"
+                                      ? "border-transparent bg-transparent text-muted-foreground"
                                       : passed
                                         ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
                                         : rev
@@ -279,16 +280,17 @@ function EconomicsTasks() {
                                           : "border-border bg-background",
                                   )}
                                 >
-                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={3} />}
+                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
                                   {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground", locked && "text-muted-foreground")}>
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
                               </button>
                             </li>
                           );
+
 
                         })}
                       </ul>
