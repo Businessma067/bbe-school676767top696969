@@ -19,6 +19,9 @@ export function friendlyAuthError(error: unknown, fallback = "Something went wro
 }
 
 export async function getCurrentAuthState(): Promise<AuthState | null> {
+  const sessionRes = await supabase.auth.getSession();
+  if (!sessionRes.data.session) return null;
+
   const { data, error } = await supabase.auth.getUser();
   if (error || !data.user) return null;
 
