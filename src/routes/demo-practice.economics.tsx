@@ -5,8 +5,10 @@ import { cn } from "@/lib/utils";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
+const CHAPTER2_FREE_LIMIT = 6;
 const isLocked = (chapter: number | "revision" | null, idx: number) =>
-  chapter === 5 && idx >= CHAPTER5_FREE_LIMIT;
+  (chapter === 5 && idx >= CHAPTER5_FREE_LIMIT) ||
+  (chapter === 2 && idx >= CHAPTER2_FREE_LIMIT);
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
