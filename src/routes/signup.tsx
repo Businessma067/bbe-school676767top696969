@@ -120,10 +120,12 @@ export function AuthShell({ title, subtitle, children }: { title: string; subtit
 export function Field({
   label, type, value, onChange, placeholder,
 }: { label: string; type: string; value: string; onChange: (v: string) => void; placeholder?: string }) {
+  const id = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
   return (
     <div>
-      <label className="mb-1 block text-xs font-medium text-foreground">{label}</label>
+      <label htmlFor={id} className="mb-1 block text-xs font-medium text-foreground">{label}</label>
       <input
+        id={id}
         type={type}
         required
         value={value}
