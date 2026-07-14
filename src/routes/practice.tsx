@@ -181,8 +181,8 @@ function PracticePage() {
                     const uid = sess.session?.user?.id;
                     if (!uid || !question) return;
                     const correctCount = statements.filter((s) => answers[s.id] === s.correct_answer).length;
-                    const subjectId = (question as any).topics?.subjects?.id ?? null;
-                    const topicId = (question as any).topics?.id ?? null;
+                    const subjectId = question.subject_id ?? question.topics?.subjects?.id ?? null;
+                    const topicId = question.topic_id ?? question.topics?.id ?? null;
                     const { data: created, error: sErr } = await supabase
                       .from("practice_sessions")
                       .insert({
