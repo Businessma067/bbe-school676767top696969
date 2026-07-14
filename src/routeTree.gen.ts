@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
+import { Route as DbTestRouteImport } from './routes/db-test'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
@@ -20,6 +21,11 @@ import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 const DemoPracticeRoute = DemoPracticeRouteImport.update({
   id: '/demo-practice',
   path: '/demo-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DbTestRoute = DbTestRouteImport.update({
+  id: '/db-test',
+  path: '/db-test',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -56,6 +62,7 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/db-test': typeof DbTestRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
@@ -65,6 +72,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/db-test': typeof DbTestRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -74,6 +82,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/db-test': typeof DbTestRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
@@ -85,6 +94,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/auth'
+    | '/db-test'
     | '/demo-practice'
     | '/admin/economics'
     | '/api/chat'
@@ -94,6 +104,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/auth'
+    | '/db-test'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -102,6 +113,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/auth'
+    | '/db-test'
     | '/demo-practice'
     | '/admin/economics'
     | '/api/chat'
@@ -112,6 +124,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRoute
+  DbTestRoute: typeof DbTestRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   AdminEconomicsRoute: typeof AdminEconomicsRoute
   ApiChatRoute: typeof ApiChatRoute
@@ -124,6 +137,13 @@ declare module '@tanstack/react-router' {
       path: '/demo-practice'
       fullPath: '/demo-practice'
       preLoaderRoute: typeof DemoPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/db-test': {
+      id: '/db-test'
+      path: '/db-test'
+      fullPath: '/db-test'
+      preLoaderRoute: typeof DbTestRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -188,6 +208,7 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRoute,
+  DbTestRoute: DbTestRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   AdminEconomicsRoute: AdminEconomicsRoute,
   ApiChatRoute: ApiChatRoute,
