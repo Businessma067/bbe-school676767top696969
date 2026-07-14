@@ -372,7 +372,8 @@ function EconomicsTasks() {
           )}
 
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
-            const freeLimit = activeChapter === 2 ? CHAPTER2_FREE_LIMIT : CHAPTER5_FREE_LIMIT;
+            const freeLimit = freeLimitOf(activeChapter);
+
             return (
             <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
