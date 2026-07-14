@@ -66,7 +66,7 @@ function LoginPage() {
         </button>
       </form>
       <div className="mt-4 text-center text-sm">
-        <Link to="/forgot-password" className="text-primary hover:underline">Forgot password?</Link>
+        <Link to="/reset-password" className="text-primary hover:underline">Forgot password?</Link>
       </div>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         No account?{" "}
