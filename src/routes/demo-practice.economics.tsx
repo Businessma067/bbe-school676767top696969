@@ -2,7 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
-import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2 } from "lucide-react";
+import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock } from "lucide-react";
+
+const CHAPTER5_FREE_LIMIT = 8;
+const isLocked = (chapter: number | "revision" | null, idx: number) =>
+  chapter === 5 && idx >= CHAPTER5_FREE_LIMIT;
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
@@ -234,6 +238,7 @@ function EconomicsTasks() {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
+                          const locked = isLocked(ch.num, i);
                           return (
                             <li key={c.id}>
                               <button
@@ -241,25 +246,32 @@ function EconomicsTasks() {
                                   setActiveChapter(ch.num);
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
+                                disabled={locked}
                                 className={cn(
                                   "flex w-full items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
                                   active ? "text-primary font-semibold" : "text-foreground hover:bg-secondary/60",
+                                  locked && "cursor-not-allowed opacity-50 hover:bg-transparent",
                                 )}
                               >
                                 <span
                                   className={cn(
                                     "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                    passed
-                                      ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
-                                      : rev
-                                        ? "border-destructive bg-destructive/10 text-destructive"
-                                        : "border-border bg-background",
+                                    locked
+                                      ? "border-border bg-secondary text-muted-foreground"
+                                      : passed
+                                        ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
+                                        : rev
+                                          ? "border-destructive bg-destructive/10 text-destructive"
+                                          : "border-border bg-background",
                                   )}
                                 >
-                                  {passed && <Check className="h-3 w-3" strokeWidth={3} />}
-                                  {!passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
+                                  {locked && <Lock className="h-2.5 w-2.5" strokeWidth={3} />}
+                                  {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
+                                  {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("truncate", passed && "line-through text-muted-foreground")}>Task {i + 1}</span>
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                  Task {i + 1}{locked && " · Locked"}
+                                </span>
                               </button>
                             </li>
                           );
@@ -306,7 +318,7 @@ function EconomicsTasks() {
         </aside>
 
         {/* Main content */}
-        <main className={cn("min-w-0 flex-1", activeChapter === null && "hidden")}>
+        <main className="min-w-0 flex-1">
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
@@ -319,7 +331,9 @@ function EconomicsTasks() {
             </div>
           )}
 
-
+          {cases !== null && (
+            <StatsOverview cases={cases} progress={progress} byChapter={byChapter} />
+          )}
 
           {cases !== null && activeChapter !== null && (
             <div className="mb-5">
@@ -342,7 +356,23 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {activeCase && (
+          {activeCase && isLocked(activeChapter, activeIdx) ? (
+            <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
+              <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
+                <Lock className="h-6 w-6" />
+              </div>
+              <h2 className="font-display text-xl font-bold">Locked in demo</h2>
+              <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
+                Chapter 5 tasks {CHAPTER5_FREE_LIMIT + 1}+ are part of the full course. The first {CHAPTER5_FREE_LIMIT} are free.
+              </p>
+              <button
+                onClick={() => setActiveIdx(CHAPTER5_FREE_LIMIT - 1)}
+                className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
+              >
+                <ChevronLeft className="h-4 w-4" /> Back to Task {CHAPTER5_FREE_LIMIT}
+              </button>
+            </div>
+          ) : activeCase && (
             <CaseCard
               key={activeCase.id}
               data={activeCase}
@@ -354,7 +384,7 @@ function EconomicsTasks() {
             />
           )}
 
-          {activeList.length > 0 && (
+          {activeList.length > 0 && activeChapter !== null && (
             <div className="mt-6 flex items-center justify-between">
               <button
                 onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
@@ -368,10 +398,14 @@ function EconomicsTasks() {
               </span>
               <button
                 onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                disabled={activeIdx >= activeList.length - 1}
+                disabled={
+                  activeIdx >= activeList.length - 1 ||
+                  isLocked(activeChapter, activeIdx + 1)
+                }
+                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                Next <ChevronRight className="h-4 w-4" />
+                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
           )}
@@ -753,5 +787,86 @@ function TFButton({
     >
       {label}
     </button>
+  );
+}
+
+function StatsOverview({
+  cases, progress, byChapter,
+}: {
+  cases: Case[];
+  progress: Progress;
+  byChapter: Map<number, Case[]>;
+}) {
+  const total = cases.length;
+  const passed = progress.passed.length;
+  const rev = progress.revision.length;
+  const attempted = passed + rev;
+  const accuracy = attempted > 0 ? Math.round((passed / attempted) * 100) : 0;
+
+  return (
+    <section className="mb-6 rounded-2xl border border-border bg-card p-5 shadow-sm">
+      <div className="mb-4 flex items-center justify-between">
+        <h2 className="font-display text-sm font-bold uppercase tracking-widest text-muted-foreground">
+          Your progress
+        </h2>
+        <span className="text-[10px] font-semibold text-muted-foreground">
+          {passed}/{total} tasks passed
+        </span>
+      </div>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <StatTile label="Attempted" value={attempted} />
+        <StatTile label="Passed" value={passed} tone="pass" />
+        <StatTile label="In revision" value={rev} tone="rev" />
+        <StatTile label="Accuracy" value={`${accuracy}%`} />
+      </div>
+      <ul className="mt-5 space-y-2">
+        {CHAPTERS.map((ch) => {
+          const list = byChapter.get(ch.num) ?? [];
+          const done = list.filter((c) => progress.passed.includes(c.id)).length;
+          const pct = list.length ? Math.round((done / list.length) * 100) : 0;
+          const chLocked = ch.num === 5;
+          return (
+            <li key={ch.num} className="flex items-center gap-3">
+              <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">Ch.{ch.num}</span>
+              <span className="flex-1 truncate text-xs text-foreground">
+                {ch.title}
+                {chLocked && (
+                  <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-secondary px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-muted-foreground">
+                    <Lock className="h-2.5 w-2.5" /> Demo · {CHAPTER5_FREE_LIMIT} free
+                  </span>
+                )}
+              </span>
+              <div className="h-1.5 w-32 overflow-hidden rounded-full bg-secondary">
+                <div
+                  className={cn("h-full rounded-full", pct === 100 ? "bg-emerald-500" : "bg-primary")}
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+              <span className="w-14 shrink-0 text-right text-[11px] font-semibold text-muted-foreground">
+                {done}/{list.length}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+function StatTile({ label, value, tone }: { label: string; value: number | string; tone?: "pass" | "rev" }) {
+  return (
+    <div
+      className={cn(
+        "rounded-lg border p-3",
+        tone === "pass"
+          ? "border-emerald-500/30 bg-emerald-500/5"
+          : tone === "rev"
+            ? "border-destructive/30 bg-destructive/5"
+            : "border-border bg-secondary/40",
+      )}
+    >
+      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{label}</p>
+      <p className="mt-1 text-xl font-bold">{value}</p>
+    </div>
   );
 }

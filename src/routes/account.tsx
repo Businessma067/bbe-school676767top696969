@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { AuthNav } from "@/components/AuthNav";
@@ -17,28 +17,12 @@ export const Route = createFileRoute("/account")({
 });
 
 type Profile = { display_name: string | null; created_at: string };
-type SessionRow = {
-  id: string;
-  mode: string;
-  started_at: string;
-  completed_at: string | null;
-  total_questions: number;
-  correct_answers: number;
-  subjects: { name: string } | null;
-  topics: { name: string } | null;
-};
-type AnswerAgg = {
-  is_correct: boolean;
-  statements: { question_id: string; questions: { subjects: { name: string } | null } | null } | null;
-};
 
 function AccountPage() {
   const navigate = useNavigate();
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [role, setRole] = useState<string | null>(null);
-  const [sessions, setSessions] = useState<SessionRow[]>([]);
-  const [answers, setAnswers] = useState<AnswerAgg[]>([]);
   const [loading, setLoading] = useState(true);
   const [editingName, setEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState("");
@@ -58,62 +42,21 @@ function AccountPage() {
       if (cancelled) return;
       setUser(u);
 
-      const [pRes, rRes, sesRes, ansRes] = await Promise.all([
+      const [pRes, rRes] = await Promise.all([
         supabase.from("profiles").select("display_name, created_at").eq("user_id", u.id).maybeSingle(),
         supabase.from("user_roles").select("role").eq("user_id", u.id),
-        supabase
-          .from("practice_sessions")
-          .select("id, mode, started_at, completed_at, total_questions, correct_answers, subjects(name), topics(name)")
-          .eq("user_id", u.id)
-          .order("started_at", { ascending: false })
-          .limit(10),
-        supabase
-          .from("session_answers")
-          .select("is_correct, statements!inner(question_id, questions!inner(subjects(name)))")
-          .eq("user_id", u.id),
       ]);
       if (cancelled) return;
 
       setProfile(pRes.data ?? { display_name: null, created_at: u.created_at });
       setNameDraft(pRes.data?.display_name ?? "");
       setRole(rRes.data?.[0]?.role ?? "student");
-      setSessions((sesRes.data as unknown as SessionRow[]) ?? []);
-      setAnswers((ansRes.data as unknown as AnswerAgg[]) ?? []);
       setLoading(false);
     })();
     return () => { cancelled = true; };
   }, [navigate]);
 
-  const stats = useMemo(() => {
-    const total = answers.length;
-    const correct = answers.filter((a) => a.is_correct).length;
-    const bySubject: Record<string, { correct: number; total: number }> = {};
-    for (const a of answers) {
-      const name = a.statements?.questions?.subjects?.name ?? "—";
-      const s = bySubject[name] ?? { correct: 0, total: 0 };
-      s.total += 1;
-      if (a.is_correct) s.correct += 1;
-      bySubject[name] = s;
-    }
-    const byMode = { practice: 0, timed_test: 0 };
-    for (const s of sessions) {
-      if (s.completed_at && (s.mode === "practice" || s.mode === "timed_test")) {
-        byMode[s.mode as "practice" | "timed_test"] += 1;
-      }
-    }
-    const lastActive = sessions[0]?.started_at ?? null;
-    const subjectRows = Object.entries(bySubject).map(([name, v]) => ({
-      name, correct: v.correct, total: v.total, pct: v.total ? Math.round((v.correct / v.total) * 100) : 0,
-    })).sort((a, b) => b.total - a.total);
-    const weak = subjectRows.filter((r) => r.total >= 3).sort((a, b) => a.pct - b.pct).slice(0, 3);
-    return {
-      total, correct,
-      accuracy: total ? Math.round((correct / total) * 100) : 0,
-      byMode, lastActive, subjectRows, weak,
-    };
-  }, [answers, sessions]);
 
-  const continueSession = sessions.find((s) => !s.completed_at) ?? null;
 
   const handleSaveName = async () => {
     if (!user) return;
@@ -215,108 +158,24 @@ function AccountPage() {
           {resetMsg && <p className="mt-2 text-xs text-muted-foreground">{resetMsg}</p>}
         </Card>
 
-        {/* STATISTICS */}
-        <Card title="Statistics overview">
-          {stats.total === 0 ? (
-            <EmptyState msg="No questions answered yet." ctaTo="/practice" ctaLabel="Start practicing" />
-          ) : (
-            <>
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                <Stat label="Questions attempted" value={stats.total} />
-                <Stat label="Overall accuracy" value={`${stats.accuracy}%`} />
-                <Stat label="Practice sessions" value={stats.byMode.practice} />
-                <Stat label="Timed tests" value={stats.byMode.timed_test} />
-              </div>
-              <div className="mt-6">
-                <h3 className="text-sm font-semibold">Accuracy by subject</h3>
-                <ul className="mt-2 space-y-2">
-                  {stats.subjectRows.map((r) => (
-                    <li key={r.name} className="flex items-center gap-3">
-                      <span className="w-32 truncate text-sm">{r.name}</span>
-                      <div className="h-2 flex-1 overflow-hidden rounded-full bg-secondary">
-                        <div className="h-full bg-primary" style={{ width: `${r.pct}%` }} />
-                      </div>
-                      <span className="w-20 text-right text-xs text-muted-foreground">{r.correct}/{r.total} · {r.pct}%</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <p className="mt-4 text-xs text-muted-foreground">
-                Last active: {stats.lastActive ? new Date(stats.lastActive).toLocaleString() : "—"}
-              </p>
-            </>
-          )}
-        </Card>
-
         {/* MY COURSE */}
         <Card title="My course">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-wider text-muted-foreground">Access</p>
               <p className="mt-1 text-lg font-semibold">Demo</p>
-              <p className="text-xs text-muted-foreground">Full course unlocks with payments (coming soon).</p>
+              <p className="text-xs text-muted-foreground">
+                Your progress and statistics live in the demo practice section.
+              </p>
             </div>
-            {continueSession ? (
-              <Link
-                to="/practice"
-                className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
-              >
-                Continue session →
-              </Link>
-            ) : (
-              <Link
-                to="/practice"
-                className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
-              >
-                Start practicing
-              </Link>
-            )}
+            <Link
+              to="/demo-practice"
+              className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+            >
+              Go to demo practice →
+            </Link>
           </div>
         </Card>
-
-        {/* RECENT ACTIVITY */}
-        <Card title="Recent activity">
-          {sessions.length === 0 ? (
-            <EmptyState msg="No activity yet — start practicing!" ctaTo="/demo-practice" ctaLabel="Try demo practice" />
-          ) : (
-            <ul className="divide-y divide-border">
-              {sessions.map((s) => {
-                const acc = s.total_questions ? Math.round((s.correct_answers / s.total_questions) * 100) : 0;
-                return (
-                  <li key={s.id} className="flex flex-wrap items-center justify-between gap-3 py-3">
-                    <div>
-                      <p className="text-sm font-medium">
-                        {s.mode === "timed_test" ? "Timed test" : "Practice"} · {s.subjects?.name ?? "—"}
-                        {s.topics?.name ? ` / ${s.topics.name}` : ""}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {new Date(s.started_at).toLocaleString()} · {s.completed_at ? `${s.correct_answers}/${s.total_questions} (${acc}%)` : "In progress"}
-                      </p>
-                    </div>
-                    <Link to="/practice" className="text-xs font-semibold text-primary hover:underline">
-                      {s.completed_at ? "Review" : "Resume"}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </Card>
-
-        {/* WEAK AREAS */}
-        {stats.weak.length > 0 && (
-          <Card title="Focus areas">
-            <p className="text-xs text-muted-foreground">Your lowest-accuracy subjects (min. 3 answers).</p>
-            <ul className="mt-3 space-y-2">
-              {stats.weak.map((r) => (
-                <li key={r.name} className="flex items-center justify-between rounded-md border border-border bg-secondary/40 px-3 py-2">
-                  <span className="text-sm font-medium">{r.name}</span>
-                  <span className="text-xs text-muted-foreground">{r.correct}/{r.total} · {r.pct}%</span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-        )}
       </main>
     </div>
   );
