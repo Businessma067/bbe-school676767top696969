@@ -42,7 +42,7 @@ function AdminEconomics() {
       <Shell>
         <div className="rounded-2xl border border-border bg-card p-8 text-center">
           <p className="text-sm text-muted-foreground">You must be signed in as an admin.</p>
-          <button onClick={() => navigate({ to: "/auth" })} className="mt-4 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">Sign in</button>
+          <button onClick={() => navigate({ to: "/login" })} className="mt-4 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">Sign in</button>
         </div>
       </Shell>
     );

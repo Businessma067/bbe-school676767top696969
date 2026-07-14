@@ -1,7 +1,8 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { AuthShell, Field } from "./signup";
+import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/login")({
   component: LoginPage,
@@ -21,6 +22,17 @@ function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const auth = await getCurrentAuthState();
+      if (!cancelled && auth) navigate({ to: "/dashboard" });
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [navigate]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -30,9 +42,10 @@ function LoginPage() {
     try {
       const { error: err } = await supabase.auth.signInWithPassword({ email, password });
       if (err) throw err;
-      navigate({ to: "/account" });
+      navigate({ to: "/dashboard" });
     } catch (err: any) {
-      setError(err?.message ?? "Wrong email or password.");
+      console.error("Login failed", err);
+      setError(friendlyAuthError(err, "Wrong email or password."));
     } finally {
       setLoading(false);
     }

@@ -2,6 +2,8 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
+import { AuthNav } from "@/components/AuthNav";
+import { friendlyAuthError } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/account")({
   component: AccountPage,
@@ -47,8 +49,8 @@ function AccountPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const { data: s } = await supabase.auth.getSession();
-      const u = s.session?.user ?? null;
+      const { data: s, error: userError } = await supabase.auth.getUser();
+      const u = userError ? null : s.user;
       if (!u) {
         navigate({ to: "/login" });
         return;
@@ -120,7 +122,7 @@ function AccountPage() {
       .from("profiles")
       .upsert({ user_id: user.id, display_name: nameDraft.trim() || null }, { onConflict: "user_id" });
     setSavingName(false);
-    if (error) setNameMsg(error.message);
+    if (error) setNameMsg(friendlyAuthError(error, "Could not save your name."));
     else {
       setProfile((p) => (p ? { ...p, display_name: nameDraft.trim() || null } : p));
       setEditingName(false);
@@ -133,7 +135,7 @@ function AccountPage() {
     const { error } = await supabase.auth.resetPasswordForEmail(user.email, {
       redirectTo: window.location.origin + "/reset-password",
     });
-    setResetMsg(error ? error.message : "Password reset link sent to your email.");
+    setResetMsg(error ? friendlyAuthError(error, "Could not send reset email.") : "Password reset link sent to your email.");
   };
 
   const handleLogout = async () => {
@@ -330,7 +332,10 @@ function PageHeader() {
           </div>
           <span className="font-display text-sm font-bold tracking-tight">BBE School</span>
         </Link>
-        <Link to="/practice" className="text-sm font-semibold text-primary hover:underline">Practice →</Link>
+        <div className="flex items-center gap-3">
+          <Link to="/practice" className="text-sm font-semibold text-primary hover:underline">Practice →</Link>
+          <AuthNav />
+        </div>
       </div>
     </header>
   );

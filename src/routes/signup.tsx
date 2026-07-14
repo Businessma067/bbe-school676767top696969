@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/signup")({
   component: SignupPage,
@@ -23,6 +24,17 @@ function SignupPage() {
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
 
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const auth = await getCurrentAuthState();
+      if (!cancelled && auth) navigate({ to: "/dashboard" });
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [navigate]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -43,12 +55,13 @@ function SignupPage() {
       });
       if (err) throw err;
       if (data.session) {
-        navigate({ to: "/account" });
+        navigate({ to: "/dashboard" });
       } else {
         setInfo("Check your email to confirm your account, then sign in.");
       }
     } catch (err: any) {
-      setError(err?.message ?? "Signup failed");
+      console.error("Signup failed", err);
+      setError(friendlyAuthError(err, "Signup failed."));
     } finally {
       setLoading(false);
     }
