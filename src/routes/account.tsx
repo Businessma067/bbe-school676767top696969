@@ -17,28 +17,12 @@ export const Route = createFileRoute("/account")({
 });
 
 type Profile = { display_name: string | null; created_at: string };
-type SessionRow = {
-  id: string;
-  mode: string;
-  started_at: string;
-  completed_at: string | null;
-  total_questions: number;
-  correct_answers: number;
-  subjects: { name: string } | null;
-  topics: { name: string } | null;
-};
-type AnswerAgg = {
-  is_correct: boolean;
-  statements: { question_id: string; questions: { subjects: { name: string } | null } | null } | null;
-};
 
 function AccountPage() {
   const navigate = useNavigate();
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [role, setRole] = useState<string | null>(null);
-  const [sessions, setSessions] = useState<SessionRow[]>([]);
-  const [answers, setAnswers] = useState<AnswerAgg[]>([]);
   const [loading, setLoading] = useState(true);
   const [editingName, setEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState("");
@@ -58,62 +42,21 @@ function AccountPage() {
       if (cancelled) return;
       setUser(u);
 
-      const [pRes, rRes, sesRes, ansRes] = await Promise.all([
+      const [pRes, rRes] = await Promise.all([
         supabase.from("profiles").select("display_name, created_at").eq("user_id", u.id).maybeSingle(),
         supabase.from("user_roles").select("role").eq("user_id", u.id),
-        supabase
-          .from("practice_sessions")
-          .select("id, mode, started_at, completed_at, total_questions, correct_answers, subjects(name), topics(name)")
-          .eq("user_id", u.id)
-          .order("started_at", { ascending: false })
-          .limit(10),
-        supabase
-          .from("session_answers")
-          .select("is_correct, statements!inner(question_id, questions!inner(subjects(name)))")
-          .eq("user_id", u.id),
       ]);
       if (cancelled) return;
 
       setProfile(pRes.data ?? { display_name: null, created_at: u.created_at });
       setNameDraft(pRes.data?.display_name ?? "");
       setRole(rRes.data?.[0]?.role ?? "student");
-      setSessions((sesRes.data as unknown as SessionRow[]) ?? []);
-      setAnswers((ansRes.data as unknown as AnswerAgg[]) ?? []);
       setLoading(false);
     })();
     return () => { cancelled = true; };
   }, [navigate]);
 
-  const stats = useMemo(() => {
-    const total = answers.length;
-    const correct = answers.filter((a) => a.is_correct).length;
-    const bySubject: Record<string, { correct: number; total: number }> = {};
-    for (const a of answers) {
-      const name = a.statements?.questions?.subjects?.name ?? "—";
-      const s = bySubject[name] ?? { correct: 0, total: 0 };
-      s.total += 1;
-      if (a.is_correct) s.correct += 1;
-      bySubject[name] = s;
-    }
-    const byMode = { practice: 0, timed_test: 0 };
-    for (const s of sessions) {
-      if (s.completed_at && (s.mode === "practice" || s.mode === "timed_test")) {
-        byMode[s.mode as "practice" | "timed_test"] += 1;
-      }
-    }
-    const lastActive = sessions[0]?.started_at ?? null;
-    const subjectRows = Object.entries(bySubject).map(([name, v]) => ({
-      name, correct: v.correct, total: v.total, pct: v.total ? Math.round((v.correct / v.total) * 100) : 0,
-    })).sort((a, b) => b.total - a.total);
-    const weak = subjectRows.filter((r) => r.total >= 3).sort((a, b) => a.pct - b.pct).slice(0, 3);
-    return {
-      total, correct,
-      accuracy: total ? Math.round((correct / total) * 100) : 0,
-      byMode, lastActive, subjectRows, weak,
-    };
-  }, [answers, sessions]);
 
-  const continueSession = sessions.find((s) => !s.completed_at) ?? null;
 
   const handleSaveName = async () => {
     if (!user) return;
