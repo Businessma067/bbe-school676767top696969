@@ -5,8 +5,10 @@ import { cn } from "@/lib/utils";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
+const CHAPTER2_FREE_LIMIT = 6;
 const isLocked = (chapter: number | "revision" | null, idx: number) =>
-  chapter === 5 && idx >= CHAPTER5_FREE_LIMIT;
+  (chapter === 5 && idx >= CHAPTER5_FREE_LIMIT) ||
+  (chapter === 2 && idx >= CHAPTER2_FREE_LIMIT);
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
@@ -356,23 +358,26 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {activeCase && isLocked(activeChapter, activeIdx) ? (
+          {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
+            const freeLimit = activeChapter === 2 ? CHAPTER2_FREE_LIMIT : CHAPTER5_FREE_LIMIT;
+            return (
             <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                 <Lock className="h-6 w-6" />
               </div>
               <h2 className="font-display text-xl font-bold">Locked in demo</h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Chapter 5 tasks {CHAPTER5_FREE_LIMIT + 1}+ are part of the full course. The first {CHAPTER5_FREE_LIMIT} are free.
+                Chapter {activeChapter} tasks {freeLimit + 1}+ are part of the full course. The first {freeLimit} are free.
               </p>
               <button
-                onClick={() => setActiveIdx(CHAPTER5_FREE_LIMIT - 1)}
+                onClick={() => setActiveIdx(freeLimit - 1)}
                 className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
-                <ChevronLeft className="h-4 w-4" /> Back to Task {CHAPTER5_FREE_LIMIT}
+                <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
               </button>
             </div>
-          ) : activeCase && (
+            );
+          })() : activeCase && (
             <CaseCard
               key={activeCase.id}
               data={activeCase}
