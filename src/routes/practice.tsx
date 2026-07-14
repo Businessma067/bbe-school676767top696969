@@ -55,7 +55,7 @@ function PracticePage() {
       const offset = Math.floor(Math.random() * count);
       const { data: qData, error: qErr } = await supabase
         .from("questions")
-        .select("id, stem_text, topics ( name, subjects ( name ) )")
+        .select("id, stem_text, subject_id, topic_id, topics ( id, name, subjects ( id, name ) )")
         .range(offset, offset)
         .single();
       if (qErr || !qData) throw qErr ?? new Error("No question");
