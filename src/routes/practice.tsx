@@ -171,7 +171,42 @@ function PracticePage() {
             {!submitted ? (
               <button
                 type="button"
-                onClick={() => setSubmitted(true)}
+                onClick={async () => {
+                  setSubmitted(true);
+                  // Log session + answers when signed in (best-effort; errors ignored to not disrupt UX)
+                  try {
+                    const { data: sess } = await supabase.auth.getSession();
+                    const uid = sess.session?.user?.id;
+                    if (!uid || !question) return;
+                    const correctCount = statements.filter((s) => answers[s.id] === s.correct_answer).length;
+                    const subjectId = (question as any).topics?.subjects?.id ?? null;
+                    const topicId = (question as any).topics?.id ?? null;
+                    const { data: created, error: sErr } = await supabase
+                      .from("practice_sessions")
+                      .insert({
+                        user_id: uid,
+                        mode: "practice",
+                        subject_id: subjectId,
+                        topic_id: topicId,
+                        total_questions: statements.length,
+                        correct_answers: correctCount,
+                        completed_at: new Date().toISOString(),
+                      })
+                      .select("id")
+                      .single();
+                    if (sErr || !created) return;
+                    await supabase.from("session_answers").insert(
+                      statements.map((s) => ({
+                        session_id: created.id,
+                        user_id: uid,
+                        question_id: question.id,
+                        statement_id: s.id,
+                        selected_answer: answers[s.id] as boolean,
+                        is_correct: answers[s.id] === s.correct_answer,
+                      })),
+                    );
+                  } catch { /* swallow */ }
+                }}
                 disabled={!allAnswered}
                 className="rounded-md bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
               >
