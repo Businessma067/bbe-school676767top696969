@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -29,12 +29,14 @@ type StatementRow = {
 };
 
 function PracticePage() {
+  const navigate = useNavigate();
   const [question, setQuestion] = useState<QuestionRow | null>(null);
   const [statements, setStatements] = useState<StatementRow[]>([]);
   const [answers, setAnswers] = useState<Record<string, boolean | undefined>>({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [authenticated, setAuthenticated] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -79,8 +81,24 @@ function PracticePage() {
   }, []);
 
   useEffect(() => {
-    void load();
-  }, [load]);
+    let cancelled = false;
+    (async () => {
+      const { data, error } = await supabase.auth.getUser();
+      if (cancelled) return;
+      if (error || !data.user) {
+        navigate({ to: "/login" });
+        return;
+      }
+      setAuthenticated(true);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [navigate]);
+
+  useEffect(() => {
+    if (authenticated) void load();
+  }, [authenticated, load]);
 
   const allAnswered = statements.length > 0 && statements.every((s) => answers[s.id] !== undefined);
   const correctCount = submitted
