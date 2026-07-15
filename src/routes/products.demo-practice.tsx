@@ -1,5 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import slide1 from "@/assets/demo-slide-1.png.asset.json";
 import slide2 from "@/assets/demo-slide-2.png.asset.json";
 import slide3 from "@/assets/demo-slide-3.png.asset.json";
