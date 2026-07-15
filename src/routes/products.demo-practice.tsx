@@ -163,6 +163,42 @@ function DemoPracticeProduct() {
           >
             Start Practicing →
           </Link>
+
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            ✓ 100% Free • Instant web access
+          </p>
+
+          <section className="mt-10">
+            <h2 className="mb-5 text-center font-display text-xl font-semibold tracking-tight text-foreground">
+              What You Will Master
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+                <h3 className="mb-2 font-display text-base font-semibold text-foreground">
+                  Format Familiarization
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Master the specific True/False logic and partial points system utilized by the university examiners.
+                </p>
+              </div>
+              <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+                <h3 className="mb-2 font-display text-base font-semibold text-foreground">
+                  Baseline Evaluation
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Test your current knowledge across core pillars of Economics, Math, and English in under 30 minutes.
+                </p>
+              </div>
+              <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+                <h3 className="mb-2 font-display text-base font-semibold text-foreground">
+                  Tactical Review
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Access point-by-point logical breakdowns under each task to see exactly where your reasoning fails.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </div>
