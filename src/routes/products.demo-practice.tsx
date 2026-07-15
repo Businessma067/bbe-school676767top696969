@@ -1,5 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import slide1 from "@/assets/demo-slide-1.png.asset.json";
 import slide2 from "@/assets/demo-slide-2.png.asset.json";
 import slide3 from "@/assets/demo-slide-3.png.asset.json";
@@ -23,6 +29,44 @@ export const Route = createFileRoute("/products/demo-practice")({
 const ORANGE = "#C2643A";
 
 const slides = [slide1.url, slide2.url, slide3.url, slide4.url, slide5.url];
+
+const demoFaqs = [
+  {
+    question: "Is this completely free? Do I need to link a credit card?",
+    answer:
+      "Yes, it is 100% free. No credit card required. You only need an Email to create your account so the site can save your progress if you close the tab.",
+  },
+  {
+    question: "Does the free trial look and work exactly like the paid version?",
+    answer:
+      "Yes, the interface, buttons, fonts, and mobile design are 100% identical. You will practice in the exact same workspace as premium members.",
+  },
+  {
+    question: "How does this trial compare to the Full Course?",
+    answer:
+      "The free trial contains a limited set of cases and does not include extra features like the AI Assistant or timing tests. However, it is a fully working, high-quality sample so you can test the platform before buying.",
+  },
+  {
+    question: "Who is this free package designed for?",
+    answer:
+      "For beginners who want to check their basic knowledge, skeptical students who want to test our question quality first-hand, and anyone looking for a quick 30-minute practice check.",
+  },
+  {
+    question: "Do these free cases reflect the actual difficulty of the WU Vienna exam?",
+    answer:
+      "Yes, these are not easy warm-up tests. All questions fully match the real difficulty, terms, and tricky traps that university professors use in the actual exam.",
+  },
+  {
+    question: "Does the free package include step-by-step solutions?",
+    answer:
+      "Yes. Every single question has a clear, point-by-point explanation underneath to show you exactly why it is True or False and fix your mistakes immediately.",
+  },
+  {
+    question: "Will my trial progress be saved if I upgrade to the Full Course later?",
+    answer:
+      "Yes, everything is saved in our database. When you choose to unlock full premium access, all your history and performance stats will transfer automatically.",
+  },
+];
 
 function Star({ fill }: { fill: "full" | "half" | "empty" }) {
   const id = `g-${Math.random().toString(36).slice(2, 9)}`;
@@ -198,6 +242,29 @@ function DemoPracticeProduct() {
                 </p>
               </div>
             </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mt-14">
+            <h2 className="mb-6 text-center font-display text-xl font-semibold tracking-tight text-foreground">
+              Frequently Asked Questions — Demo-Practice
+            </h2>
+            <Accordion type="single" collapsible className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+              {demoFaqs.map((faq, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`demo-faq-${index}`}
+                  className="border-b-0 border-t border-border/40 first:border-t-0"
+                >
+                  <AccordionTrigger className="py-4 text-left font-display text-base font-semibold text-foreground hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </section>
         </div>
       </main>
