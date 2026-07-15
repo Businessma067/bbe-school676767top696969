@@ -104,17 +104,18 @@ function Index() {
                     <span>Try demo-practice</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
                   </Link>
-                  <button
-                    id="full-course"
+                  <Link
+                    to="/products"
+                    id="explore-courses"
                     className="inline-flex flex-col items-center justify-center rounded-md px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                     style={{
                       background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
                       boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
                     }}
                   >
-                    <span>Full course</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">Pass the exam confidently</span>
-                  </button>
+                    <span>Explore Courses</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">See all BBE School products</span>
+                  </Link>
                   <a
                     href="/Message_to_Parents_WU_Vienna_2027.pdf"
                     target="_blank"
