@@ -188,23 +188,13 @@ export function MobileNav() {
             <ul className="flex flex-col gap-1">
               {menuItems.map((item) => (
                 <li key={item.label}>
-                  {item.isRoute ? (
-                    <Link
-                      to={item.href}
-                      onClick={() => setOpen(false)}
-                      className="block rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <a
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className="block rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
-                    >
-                      {item.label}
-                    </a>
-                  )}
+                  <a
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
