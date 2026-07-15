@@ -98,7 +98,7 @@ function DemoPracticeProduct() {
               type="button"
               onClick={() => go(idx - 1)}
               aria-label="Previous"
-              className="absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
+              className="absolute left-2 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-lg text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
             >
               ‹
             </button>
@@ -106,7 +106,7 @@ function DemoPracticeProduct() {
               type="button"
               onClick={() => go(idx + 1)}
               aria-label="Next"
-              className="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
+              className="absolute right-2 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-lg text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
             >
               ›
             </button>
@@ -139,12 +139,12 @@ function DemoPracticeProduct() {
 
           {/* Feature panel */}
           <div className="mt-6 rounded-2xl border border-border/60 bg-card/60 p-5 shadow-sm backdrop-blur">
-            <div className="grid grid-cols-3 gap-3 text-center">
+            <div className="grid grid-cols-3 divide-x divide-border/60 text-center">
               <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">3</span>
                 <span className="mt-1 text-xs font-medium text-muted-foreground">Subjects</span>
               </div>
-              <div className="flex flex-col items-center border-x border-border/60">
+              <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">100+</span>
                 <span className="mt-1 text-xs font-medium text-muted-foreground">Practice tasks</span>
               </div>
