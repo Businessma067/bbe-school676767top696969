@@ -93,9 +93,9 @@ const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   getParentRoute: () => DemoPracticeRoute,
 } as any)
 const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
-  id: '/products/demo-practice',
-  path: '/products/demo-practice',
-  getParentRoute: () => rootRouteImport,
+  id: '/demo-practice',
+  path: '/demo-practice',
+  getParentRoute: () => ProductsRoute,
 } as any)
 const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
   id: '/economics',
@@ -242,7 +242,6 @@ export interface RootRouteChildren {
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
   ApiChatRoute: typeof ApiChatRoute
-  ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -341,10 +340,10 @@ declare module '@tanstack/react-router' {
     }
     '/products/demo-practice': {
       id: '/products/demo-practice'
-      path: '/products/demo-practice'
+      path: '/demo-practice'
       fullPath: '/products/demo-practice'
       preLoaderRoute: typeof ProductsDemoPracticeRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ProductsRoute
     }
     '/demo-practice/economics': {
       id: '/demo-practice/economics'
@@ -407,9 +406,18 @@ const rootRouteChildren: RootRouteChildren = {
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,
   ApiChatRoute: ApiChatRoute,
-  ProductsDemoPracticeRoute: ProductsDemoPracticeRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
