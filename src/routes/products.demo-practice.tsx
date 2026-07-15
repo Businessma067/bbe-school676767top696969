@@ -124,7 +124,7 @@ function DemoPracticeProduct() {
           {/* Carousel */}
           <div className="relative overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
             <div
-              className="flex transition-transform duration-500 ease-out"
+              className="flex transition-transform duration-1000 ease-in-out"
               style={{ transform: `translateX(-${idx * 100}%)` }}
             >
               {slides.map((src, i) => (
