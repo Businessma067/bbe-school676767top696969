@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
@@ -21,6 +20,7 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
@@ -35,11 +35,6 @@ const SignupRoute = SignupRouteImport.update({
 const ResetPasswordRoute = ResetPasswordRouteImport.update({
   id: '/reset-password',
   path: '/reset-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PracticeRoute = PracticeRouteImport.update({
@@ -87,15 +82,20 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsIndexRoute = ProductsIndexRouteImport.update({
+  id: '/products/',
+  path: '/products/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => DemoPracticeRoute,
 } as any)
 const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
-  id: '/demo-practice',
-  path: '/demo-practice',
-  getParentRoute: () => ProductsRoute,
+  id: '/products/demo-practice',
+  path: '/products/demo-practice',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
   id: '/economics',
@@ -123,7 +123,6 @@ export interface FileRoutesByFullPath {
   '/forgot-password': typeof ForgotPasswordRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
-  '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
@@ -131,6 +130,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
+  '/products/': typeof ProductsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -141,7 +141,6 @@ export interface FileRoutesByTo {
   '/forgot-password': typeof ForgotPasswordRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
-  '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
@@ -149,6 +148,7 @@ export interface FileRoutesByTo {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
+  '/products': typeof ProductsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -161,7 +161,6 @@ export interface FileRoutesById {
   '/forgot-password': typeof ForgotPasswordRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
-  '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
@@ -169,6 +168,7 @@ export interface FileRoutesById {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
+  '/products/': typeof ProductsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -182,7 +182,6 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/login'
     | '/practice'
-    | '/products'
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
@@ -190,6 +189,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/products/demo-practice'
     | '/demo-practice/'
+    | '/products/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -200,7 +200,6 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/login'
     | '/practice'
-    | '/products'
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
@@ -208,6 +207,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/products/demo-practice'
     | '/demo-practice'
+    | '/products'
   id:
     | '__root__'
     | '/'
@@ -219,7 +219,6 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/login'
     | '/practice'
-    | '/products'
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
@@ -227,6 +226,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/products/demo-practice'
     | '/demo-practice/'
+    | '/products/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -239,10 +239,11 @@ export interface RootRouteChildren {
   ForgotPasswordRoute: typeof ForgotPasswordRoute
   LoginRoute: typeof LoginRoute
   PracticeRoute: typeof PracticeRoute
-  ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
   ApiChatRoute: typeof ApiChatRoute
+  ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
+  ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -259,13 +260,6 @@ declare module '@tanstack/react-router' {
       path: '/reset-password'
       fullPath: '/reset-password'
       preLoaderRoute: typeof ResetPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/practice': {
@@ -331,6 +325,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/': {
+      id: '/products/'
+      path: '/products'
+      fullPath: '/products/'
+      preLoaderRoute: typeof ProductsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/demo-practice/': {
       id: '/demo-practice/'
       path: '/'
@@ -340,10 +341,10 @@ declare module '@tanstack/react-router' {
     }
     '/products/demo-practice': {
       id: '/products/demo-practice'
-      path: '/demo-practice'
+      path: '/products/demo-practice'
       fullPath: '/products/demo-practice'
       preLoaderRoute: typeof ProductsDemoPracticeRouteImport
-      parentRoute: typeof ProductsRoute
+      parentRoute: typeof rootRouteImport
     }
     '/demo-practice/economics': {
       id: '/demo-practice/economics'
@@ -393,18 +394,6 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
   DemoPracticeRouteChildren,
 )
 
-interface ProductsRouteChildren {
-  ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
-}
-
-const ProductsRouteChildren: ProductsRouteChildren = {
-  ProductsDemoPracticeRoute: ProductsDemoPracticeRoute,
-}
-
-const ProductsRouteWithChildren = ProductsRoute._addFileChildren(
-  ProductsRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AccountRoute: AccountRoute,
@@ -415,10 +404,11 @@ const rootRouteChildren: RootRouteChildren = {
   ForgotPasswordRoute: ForgotPasswordRoute,
   LoginRoute: LoginRoute,
   PracticeRoute: PracticeRoute,
-  ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,
   ApiChatRoute: ApiChatRoute,
+  ProductsDemoPracticeRoute: ProductsDemoPracticeRoute,
+  ProductsIndexRoute: ProductsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
