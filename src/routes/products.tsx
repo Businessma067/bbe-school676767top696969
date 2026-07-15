@@ -34,7 +34,7 @@ const products: Product[] = [
     description:
       "A free trial version containing 50+ baseline cases across three subjects with step-by-step logic explanations to get a real look at the exam format.",
     cta: "Visit for free",
-    to: "/demo-practice",
+    to: "/products/demo-practice",
   },
   {
     title: "Full BBE Course",
