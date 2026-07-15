@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 
-export const Route = createFileRoute("/products")({
+export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
       { title: "Products — BBE School" },
