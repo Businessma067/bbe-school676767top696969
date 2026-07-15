@@ -139,12 +139,12 @@ function DemoPracticeProduct() {
 
           {/* Feature panel */}
           <div className="mt-6 rounded-2xl border border-border/60 bg-card/60 p-5 shadow-sm backdrop-blur">
-            <div className="grid grid-cols-3 gap-3 text-center">
+            <div className="grid grid-cols-3 divide-x divide-border/60 text-center">
               <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">3</span>
                 <span className="mt-1 text-xs font-medium text-muted-foreground">Subjects</span>
               </div>
-              <div className="flex flex-col items-center border-x border-border/60">
+              <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">100+</span>
                 <span className="mt-1 text-xs font-medium text-muted-foreground">Practice tasks</span>
               </div>
