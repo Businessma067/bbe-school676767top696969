@@ -98,7 +98,7 @@ function DemoPracticeProduct() {
               type="button"
               onClick={() => go(idx - 1)}
               aria-label="Previous"
-              className="absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
+              className="absolute left-2 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-lg text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
             >
               ‹
             </button>
@@ -106,7 +106,7 @@ function DemoPracticeProduct() {
               type="button"
               onClick={() => go(idx + 1)}
               aria-label="Next"
-              className="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
+              className="absolute right-2 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-full bg-background/80 text-lg text-foreground shadow-md ring-1 ring-border backdrop-blur transition hover:bg-background"
             >
               ›
             </button>
