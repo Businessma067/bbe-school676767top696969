@@ -37,6 +37,7 @@ function SignupPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("[signup] handleSubmit triggered", { name, email, passwordLength: password.length });
     setError(null);
     setInfo(null);
     if (!name.trim()) return setError("Please enter your name.");
@@ -45,7 +46,8 @@ function SignupPage() {
     if (password !== confirm) return setError("Passwords don't match.");
     setLoading(true);
     try {
-      const { data, error: err } = await supabase.auth.signUp({
+      console.log("[signup] calling supabase.auth.signUp with", { email, password });
+      const response = await supabase.auth.signUp({
         email,
         password,
         options: {
@@ -53,6 +55,8 @@ function SignupPage() {
           data: { display_name: name.trim() },
         },
       });
+      console.log("[signup] supabase.auth.signUp response", { data: response.data, error: response.error });
+      const { data, error: err } = response;
       if (err) throw err;
       if (data.session) {
         navigate({ to: "/dashboard" });
@@ -66,6 +70,7 @@ function SignupPage() {
       setLoading(false);
     }
   };
+
 
   return (
     <AuthShell title="Create account" subtitle="Start your WU Vienna BBE preparation.">
