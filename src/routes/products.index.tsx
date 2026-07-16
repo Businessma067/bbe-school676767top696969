@@ -3,6 +3,7 @@ import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import simulatorAsset from "@/assets/speed-focus-simulator.png.asset.json";
+import vipAsset from "@/assets/ultimate-vip-bundle.png.asset.json";
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -63,6 +64,14 @@ const products: Product[] = [
     cta: "Try now",
     disabled: true,
   },
+  {
+    title: "Ultimate VIP Bundle",
+    image: vipAsset.url,
+    description:
+      "The ultimate preparation framework. If your goal is guaranteed admission to WU Vienna, this package contains everything you need to succeed.",
+    cta: "Get Ultimate VIP Access",
+    disabled: true,
+  },
 ];
 
 function ProductsPage() {
@@ -103,11 +112,11 @@ function ProductsPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <div
                 key={p.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg last:lg:col-start-2"
               >
                 <div className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}>
                   {p.badge && (
