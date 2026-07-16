@@ -111,6 +111,14 @@ function ProductsPage() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="relative aspect-[3/2] overflow-hidden bg-secondary">
+                  {p.badge && (
+                    <span
+                      className="absolute left-3 top-3 z-10 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
+                      style={{ backgroundColor: ORANGE }}
+                    >
+                      {p.badge}
+                    </span>
+                  )}
                   <img
                     src={p.image}
                     alt={p.title}
