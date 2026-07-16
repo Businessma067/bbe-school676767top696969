@@ -64,6 +64,14 @@ const products: Product[] = [
     cta: "Try now",
     disabled: true,
   },
+  {
+    title: "Ultimate VIP Bundle",
+    image: vipAsset.url,
+    description:
+      "The ultimate preparation framework. If your goal is guaranteed admission to WU Vienna, this package contains everything you need to succeed.",
+    cta: "Get Ultimate VIP Access",
+    disabled: true,
+  },
 ];
 
 function ProductsPage() {
