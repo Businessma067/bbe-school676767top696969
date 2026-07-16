@@ -7,10 +7,15 @@ import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, B
 const CHAPTER5_FREE_LIMIT = 8;
 const CHAPTER2_FREE_LIMIT = 6;
 const CHAPTER3_FREE_LIMIT = 5;
+const CHAPTER4_FREE_LIMIT = 6;
+const CHAPTER6_FREE_LIMIT = 8;
+const PHANTOM_LOCKED_COUNT = 3;
 const freeLimitOf = (ch: number | "revision" | null): number => {
   if (ch === 2) return CHAPTER2_FREE_LIMIT;
   if (ch === 3) return CHAPTER3_FREE_LIMIT;
+  if (ch === 4) return CHAPTER4_FREE_LIMIT;
   if (ch === 5) return CHAPTER5_FREE_LIMIT;
+  if (ch === 6) return CHAPTER6_FREE_LIMIT;
   return Number.POSITIVE_INFINITY;
 };
 const isLocked = (chapter: number | "revision" | null, idx: number) =>
