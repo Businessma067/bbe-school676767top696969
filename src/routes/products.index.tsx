@@ -112,11 +112,11 @@ function ProductsPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <div
                 key={p.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg last:lg:col-start-2"
               >
                 <div className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}>
                   {p.badge && (
