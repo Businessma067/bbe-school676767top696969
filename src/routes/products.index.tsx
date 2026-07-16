@@ -68,7 +68,7 @@ const products: Product[] = [
     title: "Ultimate VIP Bundle",
     image: vipAsset.url,
     description:
-      "The ultimate preparation framework. If your goal is guaranteed admission to WU Vienna, this package contains everything you need to succeed.",
+      "The ultimate bundle combines our \"Full Practice course\" and \"Speed & Focus Simulator\", with every exclusive platform feature fully unlocked, providing the best value.",
     cta: "Get Ultimate VIP Access",
     disabled: true,
   },
