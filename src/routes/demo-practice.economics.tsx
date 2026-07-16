@@ -303,7 +303,7 @@ function EconomicsTasks() {
 
 
                         })}
-                        {Array.from({ length: PHANTOM_LOCKED_COUNT }).map((_, p) => {
+                        {Array.from({ length: phantomCountFor(ch.num) }).map((_, p) => {
                           const num = list.length + p + 1;
                           const opacity = Math.max(0.08, 0.45 - p * 0.15);
                           return (
