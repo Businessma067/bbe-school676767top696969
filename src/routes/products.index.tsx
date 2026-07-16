@@ -62,7 +62,6 @@ const products: Product[] = [
       "Special countdown testing modules, rapid True/False decision drills, and memory-training tools designed strictly to build your exam speed and help you maintain focus under pressure.",
     cta: "Try now",
     disabled: true,
-    badge: "🔥 FIRST ON THE MARKET",
   },
 ];
 
