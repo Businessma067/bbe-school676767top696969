@@ -110,21 +110,23 @@ function ProductsPage() {
                 key={p.title}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative aspect-[3/2] overflow-hidden bg-secondary">
+                <div className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}>
                   {p.badge && (
                     <span
-                      className="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-[calc(100%-10px)] whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
+                      className="absolute left-1/2 top-0 z-10 -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
                       style={{ backgroundColor: ORANGE }}
                     >
                       {p.badge}
                     </span>
                   )}
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <div className={`h-full w-full ${p.badge ? "overflow-hidden rounded-t-2xl" : ""}`}>
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h2 className="font-display text-xl font-semibold text-foreground">
