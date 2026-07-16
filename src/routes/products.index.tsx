@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
+import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
+import simulatorAsset from "@/assets/speed-focus-simulator.png.asset.json";
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -25,6 +27,7 @@ type Product = {
   cta: string;
   to?: string;
   disabled?: boolean;
+  badge?: string;
 };
 
 const products: Product[] = [
@@ -41,8 +44,25 @@ const products: Product[] = [
     image: fullAsset.url,
     description:
       "Complete exam preparation guide containing over 1500 complex practice cases across all three subjects, equipped with custom Timing and Stress-Test Modules, Full Mock Exams, a context-aware AI Assistant, task explanations and much more...",
-    cta: "Coming soon",
+    cta: "Unlock full access",
     disabled: true,
+  },
+  {
+    title: "Lite BBE Course",
+    image: liteAsset.url,
+    description:
+      "Get access to the comprehensive 950+ question database with full step-by-step logic explanations under every statement, designed for steady self-paced preparation.",
+    cta: "Unlock lite access",
+    disabled: true,
+  },
+  {
+    title: "Speed & Focus Simulator",
+    image: simulatorAsset.url,
+    description:
+      "Special countdown testing modules, rapid True/False decision drills, and memory-training tools designed strictly to build your exam speed and help you maintain focus under pressure.",
+    cta: "Try now",
+    disabled: true,
+    badge: "🔥 FIRST ON THE MARKET",
   },
 ];
 
@@ -91,6 +111,14 @@ function ProductsPage() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="relative aspect-[3/2] overflow-hidden bg-secondary">
+                  {p.badge && (
+                    <span
+                      className="absolute left-3 top-3 z-10 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
+                      style={{ backgroundColor: ORANGE }}
+                    >
+                      {p.badge}
+                    </span>
+                  )}
                   <img
                     src={p.image}
                     alt={p.title}
