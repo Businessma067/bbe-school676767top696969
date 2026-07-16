@@ -113,7 +113,7 @@ function ProductsPage() {
                 <div className="relative aspect-[3/2] overflow-hidden bg-secondary">
                   {p.badge && (
                     <span
-                      className="absolute left-3 top-3 z-10 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
+                      className="absolute left-1/2 top-3 z-10 -translate-x-1/2 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
                       style={{ backgroundColor: ORANGE }}
                     >
                       {p.badge}
