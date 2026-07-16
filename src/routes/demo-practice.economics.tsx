@@ -9,7 +9,12 @@ const CHAPTER2_FREE_LIMIT = 6;
 const CHAPTER3_FREE_LIMIT = 5;
 const CHAPTER4_FREE_LIMIT = 6;
 const CHAPTER6_FREE_LIMIT = 8;
-const PHANTOM_LOCKED_COUNT = 3;
+const DEFAULT_PHANTOM_LOCKED_COUNT = 3;
+const phantomCountFor = (ch: number): number => {
+  // Chapters 2 & 3 already have 3 real locked gradient tasks; no extra phantom rows needed.
+  if (ch === 2 || ch === 3) return 0;
+  return DEFAULT_PHANTOM_LOCKED_COUNT;
+};
 const freeLimitOf = (ch: number | "revision" | null): number => {
   if (ch === 2) return CHAPTER2_FREE_LIMIT;
   if (ch === 3) return CHAPTER3_FREE_LIMIT;
