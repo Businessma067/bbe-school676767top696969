@@ -27,6 +27,7 @@ type Product = {
   cta: string;
   to?: string;
   disabled?: boolean;
+  badge?: string;
 };
 
 const products: Product[] = [
