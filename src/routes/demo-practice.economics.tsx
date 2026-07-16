@@ -298,6 +298,25 @@ function EconomicsTasks() {
 
 
                         })}
+                        {Array.from({ length: PHANTOM_LOCKED_COUNT }).map((_, p) => {
+                          const num = list.length + p + 1;
+                          const opacity = Math.max(0.08, 0.45 - p * 0.15);
+                          return (
+                            <li key={`phantom-${ch.num}-${p}`}>
+                              <button
+                                type="button"
+                                disabled
+                                style={{ opacity }}
+                                className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
+                              >
+                                <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
+                                  <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
+                                </span>
+                                <span className="truncate">Task {num} · Locked</span>
+                              </button>
+                            </li>
+                          );
+                        })}
                       </ul>
                     )}
                   </li>
