@@ -44,8 +44,25 @@ const products: Product[] = [
     image: fullAsset.url,
     description:
       "Complete exam preparation guide containing over 1500 complex practice cases across all three subjects, equipped with custom Timing and Stress-Test Modules, Full Mock Exams, a context-aware AI Assistant, task explanations and much more...",
-    cta: "Coming soon",
+    cta: "Unlock full access",
     disabled: true,
+  },
+  {
+    title: "Lite BBE Course",
+    image: liteAsset.url,
+    description:
+      "Get access to the comprehensive 950+ question database with full step-by-step logic explanations under every statement, designed for steady self-paced preparation.",
+    cta: "Unlock lite access",
+    disabled: true,
+  },
+  {
+    title: "Speed & Focus Simulator",
+    image: simulatorAsset.url,
+    description:
+      "Special countdown testing modules, rapid True/False decision drills, and memory-training tools designed strictly to build your exam speed and help you maintain focus under pressure.",
+    cta: "Try now",
+    disabled: true,
+    badge: "🔥 FIRST ON THE MARKET",
   },
 ];
 
