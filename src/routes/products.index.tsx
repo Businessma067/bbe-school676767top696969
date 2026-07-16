@@ -65,11 +65,11 @@ const products: Product[] = [
     disabled: true,
   },
   {
-    title: "Ultimate VIP Bundle",
-    image: vipAsset.url,
+    title: "Ultimate BBE course",
+    image: ultimateBbeCourseAsset.url,
     description:
       "The ultimate bundle combines our \"Full Practice course\" and \"Speed & Focus Simulator\", with every exclusive platform feature fully unlocked, providing the best value.",
-    cta: "Get Ultimate VIP Access",
+    cta: "Unlock ultimate access",
     disabled: true,
   },
 ];
