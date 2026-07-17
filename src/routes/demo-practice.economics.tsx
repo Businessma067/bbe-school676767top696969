@@ -128,7 +128,33 @@ function EconomicsTasks() {
     return () => { cancel = true; };
   }, []);
 
-  useEffect(() => { setActiveIdx(0); }, [activeChapter]);
+  useEffect(() => { setActiveIdx(0); setExplanation(null); }, [activeChapter]);
+  useEffect(() => { setExplanation(null); }, [activeIdx]);
+
+  const requestExplanation = async (caseData: Case, i: number) => {
+    const key = `${caseData.id}:${i}`;
+    if (explanation?.key === key) return;
+    const stmt = caseData.statements[i];
+    const correct = caseData.answer_key[i];
+    setExplanation({
+      key, caseId: caseData.id, statementIndex: i,
+      statementText: stmt, correctAnswer: correct,
+      loading: true, data: null, error: null,
+    });
+    try {
+      const result = await explainFn({
+        data: { stem: caseData.context, statement: stmt, correctAnswer: correct },
+      });
+      setExplanation((prev) => prev && prev.key === key
+        ? { ...prev, loading: false, data: result as ExplanationData }
+        : prev);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Failed to load explanation.";
+      setExplanation((prev) => prev && prev.key === key
+        ? { ...prev, loading: false, error: msg }
+        : prev);
+    }
+  };
 
   const byChapter = useMemo(() => {
     const map = new Map<number, Case[]>();
