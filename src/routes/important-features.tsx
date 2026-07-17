@@ -198,6 +198,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
   const [marks, setMarks] = useState<Mark[]>([]);
   const [cursor, setCursor] = useState({ x: 60, y: 60 });
   const [clickPulse, setClickPulse] = useState(0);
+  const [cursorMode, setCursorMode] = useState<"pointer" | "pen">("pointer");
 
   const sheetRef = useRef<HTMLDivElement | null>(null);
   const lastNameRef = useRef<HTMLDivElement | null>(null);
