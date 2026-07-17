@@ -287,20 +287,27 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       }
       t += 300;
 
-      // --- Pick up the pen and move to signature line ---
+      // --- Glide (as pointer) toward the signature line, THEN pick up the pen ---
       schedule(() => {
-        setCursorMode("pen");
         const sheet = sheetRef.current;
         const sig = sigRef.current;
         if (sheet && sig) {
           const s = sheet.getBoundingClientRect();
           const r = sig.getBoundingClientRect();
-          setCursor({ x: r.left - s.left + 6, y: r.top - s.top + r.height - 6 });
+          setCursor({
+            x: r.left - s.left + 6,
+            y: r.top - s.top + r.height / 2,
+          });
         }
       }, t);
-      t += 600;
+      t += 900; // let the smooth pointer transition finish
 
-      // --- Draw signature: pen traces the stroke ---
+      // Swap to pen once already in place
+      schedule(() => setCursorMode("pen"), t);
+      t += 250;
+
+      // --- Draw signature: pen traces just across the written text ---
+      const SIG_TEXT_WIDTH = 92; // "John Doe" at 22px cursive ~ 92px
       const sigSteps = 60;
       for (let i = 1; i <= sigSteps; i++) {
         const p = i / sigSteps;
@@ -311,7 +318,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
           if (sheet && sig) {
             const s = sheet.getBoundingClientRect();
             const r = sig.getBoundingClientRect();
-            const x = r.left - s.left + 6 + p * (r.width - 12);
+            const x = r.left - s.left + 6 + p * SIG_TEXT_WIDTH;
             const wobble = Math.sin(p * Math.PI * 3) * 1.2;
             const y = r.top - s.top + r.height / 2 + wobble;
             setCursor({ x, y });
@@ -320,11 +327,11 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
         t += 45;
       }
 
-      t += 500;
-
-      // --- Put the pen down, back to pointer for the grid ---
+      // Immediately drop the pen — no lingering — swap to pointer for the grid
       schedule(() => setCursorMode("pointer"), t);
-      t += 200;
+      t += 50;
+
+
 
 
       // --- Step 2: Click X's on the grid ---
