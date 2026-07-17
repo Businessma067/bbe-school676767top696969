@@ -255,6 +255,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       setMarks([]);
       setClickPulse(0);
       setCursor({ x: 40, y: 40 });
+      setCursorMode("pointer");
 
       let t = 400;
 
@@ -286,19 +287,45 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       }
       t += 300;
 
-      // --- Draw signature ---
+      // --- Pick up the pen and move to signature line ---
       schedule(() => {
-        const p = centerOf(sigRef.current);
-        setCursor({ x: p.x - 30, y: p.y + 5 });
+        setCursorMode("pen");
+        const sheet = sheetRef.current;
+        const sig = sigRef.current;
+        if (sheet && sig) {
+          const s = sheet.getBoundingClientRect();
+          const r = sig.getBoundingClientRect();
+          setCursor({ x: r.left - s.left + 6, y: r.top - s.top + r.height - 6 });
+        }
       }, t);
+      t += 600;
+
+      // --- Draw signature: pen traces the stroke ---
+      const sigSteps = 40;
+      for (let i = 1; i <= sigSteps; i++) {
+        const p = i / sigSteps;
+        schedule(() => {
+          setSigProgress(p);
+          const sheet = sheetRef.current;
+          const sig = sigRef.current;
+          if (sheet && sig) {
+            const s = sheet.getBoundingClientRect();
+            const r = sig.getBoundingClientRect();
+            // trace along signature width with a gentle vertical wobble
+            const x = r.left - s.left + 6 + p * (r.width - 12);
+            const wobble = Math.sin(p * Math.PI * 5) * 4;
+            const y = r.top - s.top + r.height / 2 + wobble;
+            setCursor({ x, y });
+          }
+        }, t);
+        t += 55;
+      }
       t += 500;
 
-      const sigSteps = 30;
-      for (let i = 1; i <= sigSteps; i++) {
-        schedule(() => setSigProgress(i / sigSteps), t);
-        t += 45;
-      }
-      t += 400;
+      // --- Put the pen down, back to pointer for the grid ---
+      schedule(() => setCursorMode("pointer"), t);
+      t += 200;
+
 
       // --- Step 2: Click X's on the grid ---
       for (const m of CLICK_SEQUENCE) {
