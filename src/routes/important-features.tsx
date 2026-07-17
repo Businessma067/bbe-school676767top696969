@@ -198,6 +198,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
   const [marks, setMarks] = useState<Mark[]>([]);
   const [cursor, setCursor] = useState({ x: 60, y: 60 });
   const [clickPulse, setClickPulse] = useState(0);
+  const [cursorMode, setCursorMode] = useState<"pointer" | "pen">("pointer");
 
   const sheetRef = useRef<HTMLDivElement | null>(null);
   const lastNameRef = useRef<HTMLDivElement | null>(null);
@@ -254,6 +255,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       setMarks([]);
       setClickPulse(0);
       setCursor({ x: 40, y: 40 });
+      setCursorMode("pointer");
 
       let t = 400;
 
@@ -285,19 +287,45 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       }
       t += 300;
 
-      // --- Draw signature ---
+      // --- Pick up the pen and move to signature line ---
       schedule(() => {
-        const p = centerOf(sigRef.current);
-        setCursor({ x: p.x - 30, y: p.y + 5 });
+        setCursorMode("pen");
+        const sheet = sheetRef.current;
+        const sig = sigRef.current;
+        if (sheet && sig) {
+          const s = sheet.getBoundingClientRect();
+          const r = sig.getBoundingClientRect();
+          setCursor({ x: r.left - s.left + 6, y: r.top - s.top + r.height - 6 });
+        }
       }, t);
+      t += 600;
+
+      // --- Draw signature: pen traces the stroke ---
+      const sigSteps = 40;
+      for (let i = 1; i <= sigSteps; i++) {
+        const p = i / sigSteps;
+        schedule(() => {
+          setSigProgress(p);
+          const sheet = sheetRef.current;
+          const sig = sigRef.current;
+          if (sheet && sig) {
+            const s = sheet.getBoundingClientRect();
+            const r = sig.getBoundingClientRect();
+            // trace along signature width with a gentle vertical wobble
+            const x = r.left - s.left + 6 + p * (r.width - 12);
+            const wobble = Math.sin(p * Math.PI * 5) * 4;
+            const y = r.top - s.top + r.height / 2 + wobble;
+            setCursor({ x, y });
+          }
+        }, t);
+        t += 55;
+      }
       t += 500;
 
-      const sigSteps = 30;
-      for (let i = 1; i <= sigSteps; i++) {
-        schedule(() => setSigProgress(i / sigSteps), t);
-        t += 45;
-      }
-      t += 400;
+      // --- Put the pen down, back to pointer for the grid ---
+      schedule(() => setCursorMode("pointer"), t);
+      t += 200;
+
 
       // --- Step 2: Click X's on the grid ---
       for (const m of CLICK_SEQUENCE) {
@@ -429,13 +457,17 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
 
           {/* Cursor overlay */}
           <div
-            className="pointer-events-none absolute left-0 top-0 z-10 transition-all duration-500 ease-out"
+            className="pointer-events-none absolute left-0 top-0 z-10"
             style={{
               transform: `translate(${cursor.x}px, ${cursor.y}px)`,
+              transition:
+                cursorMode === "pen"
+                  ? "transform 55ms linear"
+                  : "transform 500ms ease-out",
             }}
           >
             <div className="relative">
-              <CursorIcon />
+              {cursorMode === "pen" ? <PenIcon /> : <CursorIcon />}
               {clickPulse > 0 && (
                 <span
                   key={clickPulse}
@@ -448,6 +480,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
               )}
             </div>
           </div>
+
 
           <style>{`
             @keyframes ripple {
@@ -646,3 +679,44 @@ function CursorIcon() {
     </svg>
   );
 }
+
+function PenIcon() {
+  // Pen with tip at (2, 22) so the cursor coordinate maps to the writing point.
+  return (
+    <svg
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      style={{
+        filter: "drop-shadow(0 2px 3px rgba(0,0,0,0.35))",
+        transform: "translate(-2px, -22px)",
+      }}
+    >
+      {/* barrel */}
+      <path
+        d="M17 3 L23 9 L11 21 L4 22 L5 15 Z"
+        fill="#1f2937"
+        stroke="#000"
+        strokeWidth="1"
+        strokeLinejoin="round"
+      />
+      {/* metallic collar */}
+      <path
+        d="M14.5 5.5 L20.5 11.5 L18.5 13.5 L12.5 7.5 Z"
+        fill="#c0c4cc"
+        stroke="#000"
+        strokeWidth="0.8"
+      />
+      {/* orange tip */}
+      <path
+        d="M5 15 L4 22 L2 22 L4 20 Z"
+        fill={ORANGE}
+        stroke="#000"
+        strokeWidth="0.8"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
