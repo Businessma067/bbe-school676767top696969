@@ -990,3 +990,148 @@ function StatTile({ label, value, tone }: { label: string; value: number | strin
     </div>
   );
 }
+
+type ExplanationPanelState = {
+  key: string;
+  statementIndex: number;
+  statementText: string;
+  correctAnswer: boolean;
+  loading: boolean;
+  data: { classic_explanation: string; textbook_context: string; highlight_text: string } | null;
+  error: string | null;
+};
+
+function ExplanationPanels({
+  state, onClose, onRetry,
+}: {
+  state: ExplanationPanelState;
+  onClose: () => void;
+  onRetry: () => void;
+}) {
+  const [reveal, setReveal] = useState(false);
+  const highlightRef = useRef<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    setReveal(false);
+    if (!state.data) return;
+    const t = setTimeout(() => setReveal(true), 350);
+    return () => clearTimeout(t);
+  }, [state.key, state.data]);
+
+  useEffect(() => {
+    if (!reveal || !highlightRef.current) return;
+    const el = highlightRef.current;
+    const done = () => el.classList.add("done");
+    el.addEventListener("animationend", done, { once: true });
+    return () => el.removeEventListener("animationend", done);
+  }, [reveal]);
+
+  return (
+    <div className="flex h-full flex-col gap-3">
+      {/* Header */}
+      <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
+        <div className="flex items-center gap-2">
+          <Sparkles className="h-4 w-4 text-primary" />
+          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+            AI Explanation · Statement {state.statementIndex + 1}
+          </span>
+        </div>
+        <button
+          onClick={onClose}
+          aria-label="Close explanation"
+          className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+        >
+          <X className="h-4 w-4" />
+        </button>
+      </div>
+
+      {/* Panel B: Classic Explanation */}
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            Classic Explanation
+          </span>
+          <span className={cn(
+            "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+            state.correctAnswer ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive",
+          )}>
+            Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
+          </span>
+        </div>
+        <p className="mb-3 text-[11px] italic text-muted-foreground">"{state.statementText}"</p>
+        {state.loading && (
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
+          </div>
+        )}
+        {state.error && (
+          <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+            {state.error}
+            <button onClick={onRetry} className="ml-2 underline">Retry</button>
+          </div>
+        )}
+        {state.data && (
+          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+        )}
+      </div>
+
+      {/* Panel C: Textbook Canvas */}
+      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
+        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+          <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
+            <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
+          </span>
+          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+            Fuhrmann · WU 2019
+          </span>
+        </div>
+        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+          {state.loading && (
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…
+            </div>
+          )}
+          {state.data && (
+            <TextbookCanvasBody
+              text={state.data.textbook_context}
+              highlight={state.data.highlight_text}
+              reveal={reveal}
+              highlightRef={highlightRef}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TextbookCanvasBody({
+  text, highlight, reveal, highlightRef,
+}: {
+  text: string;
+  highlight: string;
+  reveal: boolean;
+  highlightRef: React.MutableRefObject<HTMLSpanElement | null>;
+}) {
+  const idx = highlight ? text.indexOf(highlight) : -1;
+  if (idx === -1 || !highlight) {
+    return <p>{text}</p>;
+  }
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + highlight.length);
+  const after = text.slice(idx + highlight.length);
+  return (
+    <p>
+      {before}
+      <span
+        ref={highlightRef}
+        className={reveal ? "neon-highlight" : undefined}
+        style={reveal ? undefined : { padding: "0 2px" }}
+      >
+        {match}
+      </span>
+      {after}
+    </p>
+  );
+}
+
