@@ -505,25 +505,36 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Theory panel — desktop only, to be filled in later */}
-        <aside className="hidden xl:sticky xl:top-20 xl:block xl:h-[calc(100vh-6rem)] xl:w-80 xl:shrink-0">
-          <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
-            <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-              <NotebookPen className="h-3.5 w-3.5" /> Theory
-            </h3>
-            {activeCase ? (
-              <div className="min-h-0 flex-1 overflow-y-auto">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
-                <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
-                  Theory notes for this case will appear here. We'll fill this panel with definitions, formulas and shortcuts chapter by chapter.
+        {/* Right panel: AI Explanation Engine when active, Theory otherwise. */}
+        <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
+          {explanation ? (
+            <ExplanationPanels
+              state={explanation}
+              onClose={() => setExplanation(null)}
+              onRetry={() => {
+                if (!activeCase) return;
+                requestExplanation(activeCase, explanation.statementIndex);
+              }}
+            />
+          ) : (
+            <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
+              <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                <NotebookPen className="h-3.5 w-3.5" /> Theory
+              </h3>
+              {activeCase ? (
+                <div className="min-h-0 flex-1 overflow-y-auto">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
+                  <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
+                    After you check your answers, tap <span className="font-semibold text-primary">Show AI textbook explanation</span> under any statement to open the double-panel engine here — a plain-English reasoning card plus the actual textbook passage with the key line highlighted.
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
-                Open a case to see its theory notes here.
-              </div>
-            )}
-          </div>
+              ) : (
+                <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
+                  Open a case to see its theory notes here.
+                </div>
+              )}
+            </div>
+          )}
         </aside>
       </div>
 
