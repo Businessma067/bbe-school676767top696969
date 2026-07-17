@@ -679,3 +679,44 @@ function CursorIcon() {
     </svg>
   );
 }
+
+function PenIcon() {
+  // Pen with tip at (2, 22) so the cursor coordinate maps to the writing point.
+  return (
+    <svg
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      style={{
+        filter: "drop-shadow(0 2px 3px rgba(0,0,0,0.35))",
+        transform: "translate(-2px, -22px)",
+      }}
+    >
+      {/* barrel */}
+      <path
+        d="M17 3 L23 9 L11 21 L4 22 L5 15 Z"
+        fill="#1f2937"
+        stroke="#000"
+        strokeWidth="1"
+        strokeLinejoin="round"
+      />
+      {/* metallic collar */}
+      <path
+        d="M14.5 5.5 L20.5 11.5 L18.5 13.5 L12.5 7.5 Z"
+        fill="#c0c4cc"
+        stroke="#000"
+        strokeWidth="0.8"
+      />
+      {/* orange tip */}
+      <path
+        d="M5 15 L4 22 L2 22 L4 20 Z"
+        fill={ORANGE}
+        stroke="#000"
+        strokeWidth="0.8"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
