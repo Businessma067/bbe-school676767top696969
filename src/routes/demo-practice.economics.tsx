@@ -665,11 +665,14 @@ function CustomResetModal({
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
+  activeExplanationIndex, onRequestExplanation,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
+  activeExplanationIndex: number | null;
+  onRequestExplanation: (i: number) => void;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
