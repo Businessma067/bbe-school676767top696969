@@ -457,13 +457,17 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
 
           {/* Cursor overlay */}
           <div
-            className="pointer-events-none absolute left-0 top-0 z-10 transition-all duration-500 ease-out"
+            className="pointer-events-none absolute left-0 top-0 z-10"
             style={{
               transform: `translate(${cursor.x}px, ${cursor.y}px)`,
+              transition:
+                cursorMode === "pen"
+                  ? "transform 55ms linear"
+                  : "transform 500ms ease-out",
             }}
           >
             <div className="relative">
-              <CursorIcon />
+              {cursorMode === "pen" ? <PenIcon /> : <CursorIcon />}
               {clickPulse > 0 && (
                 <span
                   key={clickPulse}
@@ -476,6 +480,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
               )}
             </div>
           </div>
+
 
           <style>{`
             @keyframes ripple {
