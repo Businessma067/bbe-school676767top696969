@@ -63,7 +63,7 @@ const menuItems = [
   { label: "Demo-Practice", href: "/demo-practice", isRoute: true },
   { label: "Full course", href: "#full-course", isRoute: false },
   { label: "BBE-school products", href: "/products", isRoute: true },
-  { label: "Important features", href: "#important-features", isRoute: false },
+  { label: "Important features", href: "/important-features", isRoute: true },
   { label: "Reviews", href: "#reviews", isRoute: false },
   { label: "FAQ", href: "#faq", isRoute: false },
 ];
