@@ -86,7 +86,7 @@ export const explainCase = createServerFn({ method: "POST" })
     }
 
     const truthLabel = data.correctAnswer ? "TRUE" : "FALSE";
-    const gateway = createLovableAiGatewayProvider(key, undefined, { structuredOutputs: true });
+    const gateway = createLovableAiGatewayProvider(key);
 
     const prompt = `You are the BBE School economics tutor. The official textbook is "Introduction to Business and Economics" by Bettina Fuhrmann (WU, 2019).
 
