@@ -302,7 +302,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       // --- Step 2: Click X's on the grid ---
       for (const m of CLICK_SEQUENCE) {
         schedule(() => {
-          const el = cellRefs.current.get(`${m.row}-${m.col}`);
+          const el = cellRefs.current.get(`${m.row}-${m.col}`) ?? null;
           const p = centerOf(el);
           setCursor({ x: p.x, y: p.y });
         }, t);
