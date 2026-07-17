@@ -14,6 +14,7 @@ import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as LoginRouteImport } from './routes/login'
+import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
@@ -51,6 +52,11 @@ const PracticeRoute = PracticeRouteImport.update({
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
   path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImportantFeaturesRoute = ImportantFeaturesRouteImport.update({
+  id: '/important-features',
+  path: '/important-features',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
@@ -127,6 +133,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
@@ -146,6 +153,7 @@ export interface FileRoutesByTo {
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
   '/forgot-password': typeof ForgotPasswordRoute
+  '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/forgot-password': typeof ForgotPasswordRoute
+  '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
@@ -188,6 +197,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/demo-practice'
     | '/forgot-password'
+    | '/important-features'
     | '/login'
     | '/practice'
     | '/products'
@@ -207,6 +217,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/dashboard'
     | '/forgot-password'
+    | '/important-features'
     | '/login'
     | '/practice'
     | '/reset-password'
@@ -226,6 +237,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/demo-practice'
     | '/forgot-password'
+    | '/important-features'
     | '/login'
     | '/practice'
     | '/products'
@@ -247,6 +259,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   ForgotPasswordRoute: typeof ForgotPasswordRoute
+  ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
   PracticeRoute: typeof PracticeRoute
   ProductsRoute: typeof ProductsRouteWithChildren
@@ -290,6 +303,13 @@ declare module '@tanstack/react-router' {
       path: '/login'
       fullPath: '/login'
       preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/important-features': {
+      id: '/important-features'
+      path: '/important-features'
+      fullPath: '/important-features'
+      preLoaderRoute: typeof ImportantFeaturesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/forgot-password': {
@@ -432,6 +452,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   ForgotPasswordRoute: ForgotPasswordRoute,
+  ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,
   PracticeRoute: PracticeRoute,
   ProductsRoute: ProductsRouteWithChildren,
