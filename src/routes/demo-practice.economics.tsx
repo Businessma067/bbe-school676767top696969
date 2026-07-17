@@ -473,6 +473,8 @@ function EconomicsTasks() {
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
               onResetProgress={() => resetCaseIds([activeCase.id])}
+              activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
+              onRequestExplanation={(i) => requestExplanation(activeCase, i)}
             />
           )}
 
