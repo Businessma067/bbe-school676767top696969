@@ -95,7 +95,21 @@ function EconomicsTasks() {
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
-  
+
+  type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
+  type ExplanationState = {
+    key: string; // caseId + ":" + statementIndex
+    caseId: string;
+    statementIndex: number;
+    statementText: string;
+    correctAnswer: boolean;
+    loading: boolean;
+    data: ExplanationData | null;
+    error: string | null;
+  };
+  const [explanation, setExplanation] = useState<ExplanationState | null>(null);
+  const explainFn = useServerFn(explainCase);
+
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
   );
