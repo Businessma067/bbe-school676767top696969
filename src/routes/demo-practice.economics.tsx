@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
-import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock } from "lucide-react";
+import { explainCase } from "@/lib/explain-case.functions";
+import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
 const CHAPTER2_FREE_LIMIT = 6;
@@ -93,7 +95,21 @@ function EconomicsTasks() {
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
-  
+
+  type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
+  type ExplanationState = {
+    key: string; // caseId + ":" + statementIndex
+    caseId: string;
+    statementIndex: number;
+    statementText: string;
+    correctAnswer: boolean;
+    loading: boolean;
+    data: ExplanationData | null;
+    error: string | null;
+  };
+  const [explanation, setExplanation] = useState<ExplanationState | null>(null);
+  const explainFn = useServerFn(explainCase);
+
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
   );
@@ -112,7 +128,33 @@ function EconomicsTasks() {
     return () => { cancel = true; };
   }, []);
 
-  useEffect(() => { setActiveIdx(0); }, [activeChapter]);
+  useEffect(() => { setActiveIdx(0); setExplanation(null); }, [activeChapter]);
+  useEffect(() => { setExplanation(null); }, [activeIdx]);
+
+  const requestExplanation = async (caseData: Case, i: number) => {
+    const key = `${caseData.id}:${i}`;
+    if (explanation?.key === key) return;
+    const stmt = caseData.statements[i];
+    const correct = caseData.answer_key[i];
+    setExplanation({
+      key, caseId: caseData.id, statementIndex: i,
+      statementText: stmt, correctAnswer: correct,
+      loading: true, data: null, error: null,
+    });
+    try {
+      const result = await explainFn({
+        data: { stem: caseData.context, statement: stmt, correctAnswer: correct },
+      });
+      setExplanation((prev) => prev && prev.key === key
+        ? { ...prev, loading: false, data: result as ExplanationData }
+        : prev);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Failed to load explanation.";
+      setExplanation((prev) => prev && prev.key === key
+        ? { ...prev, loading: false, error: msg }
+        : prev);
+    }
+  };
 
   const byChapter = useMemo(() => {
     const map = new Map<number, Case[]>();
@@ -431,6 +473,8 @@ function EconomicsTasks() {
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
               onResetProgress={() => resetCaseIds([activeCase.id])}
+              activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
+              onRequestExplanation={(i) => requestExplanation(activeCase, i)}
             />
           )}
 
@@ -461,25 +505,36 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Theory panel — desktop only, to be filled in later */}
-        <aside className="hidden xl:sticky xl:top-20 xl:block xl:h-[calc(100vh-6rem)] xl:w-80 xl:shrink-0">
-          <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
-            <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-              <NotebookPen className="h-3.5 w-3.5" /> Theory
-            </h3>
-            {activeCase ? (
-              <div className="min-h-0 flex-1 overflow-y-auto">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
-                <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
-                  Theory notes for this case will appear here. We'll fill this panel with definitions, formulas and shortcuts chapter by chapter.
+        {/* Right panel: AI Explanation Engine when active, Theory otherwise. */}
+        <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
+          {explanation ? (
+            <ExplanationPanels
+              state={explanation}
+              onClose={() => setExplanation(null)}
+              onRetry={() => {
+                if (!activeCase) return;
+                requestExplanation(activeCase, explanation.statementIndex);
+              }}
+            />
+          ) : (
+            <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
+              <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                <NotebookPen className="h-3.5 w-3.5" /> Theory
+              </h3>
+              {activeCase ? (
+                <div className="min-h-0 flex-1 overflow-y-auto">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
+                  <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
+                    After you check your answers, tap <span className="font-semibold text-primary">Show AI textbook explanation</span> under any statement to open the double-panel engine here — a plain-English reasoning card plus the actual textbook passage with the key line highlighted.
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
-                Open a case to see its theory notes here.
-              </div>
-            )}
-          </div>
+              ) : (
+                <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
+                  Open a case to see its theory notes here.
+                </div>
+              )}
+            </div>
+          )}
         </aside>
       </div>
 
@@ -621,11 +676,14 @@ function CustomResetModal({
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
+  activeExplanationIndex, onRequestExplanation,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
+  activeExplanationIndex: number | null;
+  onRequestExplanation: (i: number) => void;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -757,7 +815,7 @@ function CaseCard({
               </div>
 
               {checked && (
-                <div className="mt-3">
+                <div className="mt-3 flex flex-wrap items-center gap-2">
                   <button
                     onClick={() => setOpenExpl((s) => ({ ...s, [i]: !s[i] }))}
                     className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
@@ -766,9 +824,21 @@ function CaseCard({
                     Explanation
                     <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", openExpl[i] && "rotate-180")} />
                   </button>
+                  <button
+                    onClick={() => onRequestExplanation(i)}
+                    className={cn(
+                      "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                      activeExplanationIndex === i
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                    )}
+                  >
+                    <Sparkles className="h-3 w-3" />
+                    {activeExplanationIndex === i ? "AI textbook shown →" : "Show AI textbook explanation"}
+                  </button>
                   {openExpl[i] && (
                     <p className={cn(
-                      "mt-2 rounded-md p-3 text-xs leading-relaxed",
+                      "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
                       isCorrect ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200" : "bg-destructive/10 text-destructive",
                     )}>
                       {data.tactical_explanations[i]}
@@ -920,3 +990,148 @@ function StatTile({ label, value, tone }: { label: string; value: number | strin
     </div>
   );
 }
+
+type ExplanationPanelState = {
+  key: string;
+  statementIndex: number;
+  statementText: string;
+  correctAnswer: boolean;
+  loading: boolean;
+  data: { classic_explanation: string; textbook_context: string; highlight_text: string } | null;
+  error: string | null;
+};
+
+function ExplanationPanels({
+  state, onClose, onRetry,
+}: {
+  state: ExplanationPanelState;
+  onClose: () => void;
+  onRetry: () => void;
+}) {
+  const [reveal, setReveal] = useState(false);
+  const highlightRef = useRef<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    setReveal(false);
+    if (!state.data) return;
+    const t = setTimeout(() => setReveal(true), 350);
+    return () => clearTimeout(t);
+  }, [state.key, state.data]);
+
+  useEffect(() => {
+    if (!reveal || !highlightRef.current) return;
+    const el = highlightRef.current;
+    const done = () => el.classList.add("done");
+    el.addEventListener("animationend", done, { once: true });
+    return () => el.removeEventListener("animationend", done);
+  }, [reveal]);
+
+  return (
+    <div className="flex h-full flex-col gap-3">
+      {/* Header */}
+      <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
+        <div className="flex items-center gap-2">
+          <Sparkles className="h-4 w-4 text-primary" />
+          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+            AI Explanation · Statement {state.statementIndex + 1}
+          </span>
+        </div>
+        <button
+          onClick={onClose}
+          aria-label="Close explanation"
+          className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+        >
+          <X className="h-4 w-4" />
+        </button>
+      </div>
+
+      {/* Panel B: Classic Explanation */}
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            Classic Explanation
+          </span>
+          <span className={cn(
+            "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+            state.correctAnswer ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive",
+          )}>
+            Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
+          </span>
+        </div>
+        <p className="mb-3 text-[11px] italic text-muted-foreground">"{state.statementText}"</p>
+        {state.loading && (
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
+          </div>
+        )}
+        {state.error && (
+          <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+            {state.error}
+            <button onClick={onRetry} className="ml-2 underline">Retry</button>
+          </div>
+        )}
+        {state.data && (
+          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+        )}
+      </div>
+
+      {/* Panel C: Textbook Canvas */}
+      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
+        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+          <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
+            <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
+          </span>
+          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+            Fuhrmann · WU 2019
+          </span>
+        </div>
+        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+          {state.loading && (
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…
+            </div>
+          )}
+          {state.data && (
+            <TextbookCanvasBody
+              text={state.data.textbook_context}
+              highlight={state.data.highlight_text}
+              reveal={reveal}
+              highlightRef={highlightRef}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TextbookCanvasBody({
+  text, highlight, reveal, highlightRef,
+}: {
+  text: string;
+  highlight: string;
+  reveal: boolean;
+  highlightRef: React.MutableRefObject<HTMLSpanElement | null>;
+}) {
+  const idx = highlight ? text.indexOf(highlight) : -1;
+  if (idx === -1 || !highlight) {
+    return <p>{text}</p>;
+  }
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + highlight.length);
+  const after = text.slice(idx + highlight.length);
+  return (
+    <p>
+      {before}
+      <span
+        ref={highlightRef}
+        className={reveal ? "neon-highlight" : undefined}
+        style={reveal ? undefined : { padding: "0 2px" }}
+      >
+        {match}
+      </span>
+      {after}
+    </p>
+  );
+}
+
