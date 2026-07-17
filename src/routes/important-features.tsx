@@ -301,7 +301,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       t += 600;
 
       // --- Draw signature: pen traces the stroke ---
-      const sigSteps = 40;
+      const sigSteps = 60;
       for (let i = 1; i <= sigSteps; i++) {
         const p = i / sigSteps;
         schedule(() => {
@@ -311,15 +311,15 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
           if (sheet && sig) {
             const s = sheet.getBoundingClientRect();
             const r = sig.getBoundingClientRect();
-            // trace along signature width with a gentle vertical wobble
             const x = r.left - s.left + 6 + p * (r.width - 12);
-            const wobble = Math.sin(p * Math.PI * 5) * 4;
+            const wobble = Math.sin(p * Math.PI * 3) * 1.2;
             const y = r.top - s.top + r.height / 2 + wobble;
             setCursor({ x, y });
           }
         }, t);
-        t += 55;
+        t += 45;
       }
+
       t += 500;
 
       // --- Put the pen down, back to pointer for the grid ---
@@ -550,34 +550,36 @@ function HandText({ text }: { text: string }) {
 }
 
 function Signature({ progress }: { progress: number }) {
-  // Cursive "John Doe" path drawn progressively via strokeDasharray
-  const path =
-    "M4 22 C 8 6, 14 6, 14 20 S 22 32, 26 18 C 28 10, 32 10, 34 22 " +
-    "M 38 22 Q 42 8, 46 22 T 54 22 " +
-    "M 60 22 C 62 12, 70 12, 70 22 S 62 32, 60 22 Z " +
-    "M 78 22 C 80 8, 88 8, 88 22 S 80 32, 78 22 Z " +
-    "M 96 22 C 100 8, 108 8, 108 22 " +
-    "M 96 22 L 108 22 M 96 16 L 106 16";
-  const length = 260;
+  // Reveal a cursive "John Doe" left-to-right as the pen moves.
+  const pct = Math.max(0, Math.min(1, progress)) * 100;
   return (
-    <svg
-      viewBox="0 0 120 32"
-      className="absolute bottom-0 left-1 h-8 w-[110px]"
-      fill="none"
-      stroke={ORANGE}
-      strokeWidth={1.8}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    <div
+      className="absolute bottom-0 left-1 h-8 w-[130px] overflow-hidden"
+      style={{
+        clipPath: `inset(0 ${100 - pct}% 0 0)`,
+        transition: "clip-path 55ms linear",
+      }}
     >
-      <path
-        d={path}
-        strokeDasharray={length}
-        strokeDashoffset={length * (1 - progress)}
-        style={{ transition: "stroke-dashoffset 40ms linear" }}
-      />
-    </svg>
+      <span
+        className="absolute bottom-[-2px] left-0 whitespace-nowrap"
+        style={{
+          color: ORANGE,
+          fontFamily:
+            '"Snell Roundhand", "Segoe Script", "Bradley Hand", "Lucida Handwriting", cursive',
+          fontStyle: "italic",
+          fontWeight: 700,
+          fontSize: "22px",
+          lineHeight: 1,
+          letterSpacing: "0.5px",
+          textShadow: `0 0 1px ${ORANGE}55`,
+        }}
+      >
+        John Doe
+      </span>
+    </div>
   );
 }
+
 
 function IdBubbles() {
   return (
