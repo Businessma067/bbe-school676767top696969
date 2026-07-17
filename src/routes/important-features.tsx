@@ -301,7 +301,7 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
       t += 600;
 
       // --- Draw signature: pen traces the stroke ---
-      const sigSteps = 40;
+      const sigSteps = 60;
       for (let i = 1; i <= sigSteps; i++) {
         const p = i / sigSteps;
         schedule(() => {
@@ -311,15 +311,15 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
           if (sheet && sig) {
             const s = sheet.getBoundingClientRect();
             const r = sig.getBoundingClientRect();
-            // trace along signature width with a gentle vertical wobble
             const x = r.left - s.left + 6 + p * (r.width - 12);
-            const wobble = Math.sin(p * Math.PI * 5) * 4;
+            const wobble = Math.sin(p * Math.PI * 3) * 1.2;
             const y = r.top - s.top + r.height / 2 + wobble;
             setCursor({ x, y });
           }
         }, t);
-        t += 55;
+        t += 45;
       }
+
       t += 500;
 
       // --- Put the pen down, back to pointer for the grid ---
