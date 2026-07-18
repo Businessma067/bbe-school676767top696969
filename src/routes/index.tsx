@@ -463,8 +463,9 @@ function RingMetric({
               {
                 "--circumference": circumference,
                 "--target-offset": targetOffset,
-              } as React.CSSProperties
+              } as CSSProperties
             }
+
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
