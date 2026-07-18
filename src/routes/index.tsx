@@ -474,11 +474,11 @@ function RingMetric({
         <svg className="h-full w-full" viewBox="0 0 180 180">
           <path
             d={fullCircle}
-            className={isAccent ? "fill-caramel-deep/10" : "fill-white/5"}
+            className="fill-white/15"
           />
           <path
             d={filledPath}
-            className={cn("ring-animate-fill", isAccent ? "fill-caramel-deep" : "fill-white/30")}
+            className={cn("ring-animate-fill", "fill-caramel-deep")}
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
