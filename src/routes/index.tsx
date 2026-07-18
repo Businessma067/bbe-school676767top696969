@@ -428,11 +428,40 @@ function RingMetric({
   percent: number;
   glow?: boolean;
 }) {
-  const radius = 80;
-  const stroke = 10;
-  const circumference = 2 * Math.PI * radius;
-  const targetOffset = circumference * (1 - percent);
   const isAccent = variant === "accent";
+  const outerR = 82;
+  const innerR = 58;
+  const cx = 90;
+  const cy = 90;
+
+  const angle = Math.max(0, Math.min(1, percent)) * 360;
+
+  function polar(r: number, deg: number) {
+    const rad = ((deg - 90) * Math.PI) / 180;
+    return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+  }
+
+  const startOuter = polar(outerR, 0);
+  const endOuter = polar(outerR, angle);
+  const startInner = polar(innerR, 0);
+  const endInner = polar(innerR, angle);
+  const largeArc = angle > 180 ? 1 : 0;
+
+  const filledPath = [
+    `M ${startOuter.x} ${startOuter.y}`,
+    `A ${outerR} ${outerR} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
+    `L ${endInner.x} ${endInner.y}`,
+    `A ${innerR} ${innerR} 0 ${largeArc} 0 ${startInner.x} ${startInner.y}`,
+    "Z",
+  ].join(" ");
+
+  const fullCircle = [
+    `M ${startOuter.x} ${startOuter.y}`,
+    `A ${outerR} ${outerR} 0 1 1 ${startOuter.x} ${startOuter.y + 0.001}`,
+    `L ${startInner.x} ${startInner.y + 0.001}`,
+    `A ${innerR} ${innerR} 0 1 0 ${startInner.x} ${startInner.y}`,
+    "Z",
+  ].join(" ");
 
   return (
     <div
@@ -442,30 +471,14 @@ function RingMetric({
       )}
     >
       <div className="relative h-44 w-44">
-        <svg className="h-full w-full -rotate-90" viewBox="0 0 180 180">
-          <circle
-            cx="90"
-            cy="90"
-            r={radius}
-            fill="none"
-            strokeWidth={stroke}
-            className={isAccent ? "stroke-caramel-deep/20" : "stroke-white/10"}
+        <svg className="h-full w-full" viewBox="0 0 180 180">
+          <path
+            d={fullCircle}
+            className={isAccent ? "fill-caramel-deep/10" : "fill-white/5"}
           />
-          <circle
-            cx="90"
-            cy="90"
-            r={radius}
-            fill="none"
-            strokeWidth={stroke}
-            strokeLinecap="round"
-            className={cn("ring-animate", isAccent ? "stroke-caramel-deep" : "stroke-white/40")}
-            style={
-              {
-                "--circumference": circumference,
-                "--target-offset": targetOffset,
-              } as CSSProperties
-            }
-
+          <path
+            d={filledPath}
+            className={cn("ring-animate-fill", isAccent ? "fill-caramel-deep" : "fill-white/30")}
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
