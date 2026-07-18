@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -429,12 +429,55 @@ function RingMetric({
   glow?: boolean;
 }) {
   const isAccent = variant === "accent";
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [animatedPercent, setAnimatedPercent] = useState(0);
+  const [animatedNumber, setAnimatedNumber] = useState(0);
+  const hasAnimated = useRef(false);
+
+  const numericMatch = value.match(/[0-9]*\.?[0-9]+/);
+  const targetNumber = numericMatch ? parseFloat(numericMatch[0]) : 0;
+  const suffix = value.replace(/[0-9]*\.?[0-9]+/, "");
+  const decimals = value.includes(".") ? value.split(".")[1].replace(/[^0-9]/g, "").length : 0;
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated.current) {
+          hasAnimated.current = true;
+          const duration = 1600;
+          const start = performance.now();
+
+          const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+          const tick = (now: number) => {
+            const raw = Math.min((now - start) / duration, 1);
+            const eased = easeOutCubic(raw);
+            setAnimatedPercent(eased * percent);
+            setAnimatedNumber(eased * targetNumber);
+            if (raw < 1) {
+              requestAnimationFrame(tick);
+            }
+          };
+
+          requestAnimationFrame(tick);
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [percent, targetNumber]);
+
   const outerR = 82;
   const innerR = 58;
   const cx = 90;
   const cy = 90;
 
-  const angle = Math.max(0, Math.min(1, percent)) * 360;
+  const angle = Math.max(0, Math.min(1, animatedPercent)) * 360;
 
   function polar(r: number, deg: number) {
     const rad = ((deg - 90) * Math.PI) / 180;
@@ -465,8 +508,13 @@ function RingMetric({
     "Z",
   ].join(" ");
 
+  const displayValue = decimals > 0
+    ? `${animatedNumber.toFixed(decimals)}${suffix}`
+    : `${Math.round(animatedNumber)}${suffix}`;
+
   return (
     <div
+      ref={containerRef}
       className={cn(
         "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse"
@@ -490,7 +538,7 @@ function RingMetric({
               isAccent ? "text-caramel-deep" : "text-primary-foreground/60"
             )}
           >
-            {value}
+            {displayValue}
           </span>
         </div>
       </div>
