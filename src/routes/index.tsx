@@ -456,10 +456,12 @@ function RingMetric({
   ].join(" ");
 
   const fullCircle = [
-    `M ${startOuter.x} ${startOuter.y}`,
-    `A ${outerR} ${outerR} 0 1 1 ${startOuter.x} ${startOuter.y + 0.001}`,
-    `L ${startInner.x} ${startInner.y + 0.001}`,
-    `A ${innerR} ${innerR} 0 1 0 ${startInner.x} ${startInner.y}`,
+    `M ${cx} ${cy - outerR}`,
+    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy + outerR}`,
+    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy - outerR}`,
+    `L ${cx} ${cy - innerR}`,
+    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy + innerR}`,
+    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy - innerR}`,
     "Z",
   ].join(" ");
 
