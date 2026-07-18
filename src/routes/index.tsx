@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
