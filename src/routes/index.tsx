@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
+
 import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
@@ -193,9 +194,73 @@ function Index() {
           </div>
         </section>
 
+        {/* WHY US — high-contrast dark fintech */}
+        <section className="relative overflow-hidden bg-why-us-bg px-6 py-24 lg:px-8 lg:py-32">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
+            }}
+          />
+          <div className="relative mx-auto max-w-6xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
+                Why Us
+              </p>
+              <h2 className="mt-4 font-display text-3xl font-bold leading-[1.1] tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
+                Why Choose US
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
+                The standards at WU Vienna are exceptionally high. Let's be honest: entry competition
+                is brutal, and no software can ever guarantee your admission. Success requires hard,
+                disciplined work. But our data proves how we shift the odds in your favor.
+              </p>
+            </div>
+
+            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:gap-8">
+              <RingMetric
+                value="8%"
+                label="Official WU Vienna BBE Acceptance Rate"
+                sublabel="(Average Applicant Pool)"
+                variant="muted"
+                percent={0.08}
+              />
+              <RingMetric
+                value="41.3%"
+                label="BBE-School Acceptance Rate"
+                sublabel="57 out of 138 prepared students successfully admitted last year"
+                variant="accent"
+                percent={0.413}
+                glow
+              />
+            </div>
+
+            <p className="mx-auto mt-12 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+              Our students achieve a success rate{" "}
+              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+              applicant pool.
+            </p>
+
+            <div className="mt-12 flex justify-center">
+              <Link
+                to="/products"
+                className="inline-flex items-center justify-center rounded-md px-7 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                style={{
+                  background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                  boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                }}
+              >
+                View Preparation Courses
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* LIABILITY CHART — light academic island */}
         <section className="relative px-6 py-24 lg:px-8 lg:py-32 bg-ivory">
+
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"
@@ -348,7 +413,80 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
   );
 }
 
+function RingMetric({
+  value,
+  label,
+  sublabel,
+  variant,
+  percent,
+  glow,
+}: {
+  value: string;
+  label: string;
+  sublabel: string;
+  variant: "muted" | "accent";
+  percent: number;
+  glow?: boolean;
+}) {
+  const radius = 80;
+  const stroke = 10;
+  const circumference = 2 * Math.PI * radius;
+  const targetOffset = circumference * (1 - percent);
+  const isAccent = variant === "accent";
+
+  return (
+    <div
+      className={cn(
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
+        glow && "why-us-glow why-us-pulse"
+      )}
+    >
+      <div className="relative h-44 w-44">
+        <svg className="h-full w-full -rotate-90" viewBox="0 0 180 180">
+          <circle
+            cx="90"
+            cy="90"
+            r={radius}
+            fill="none"
+            strokeWidth={stroke}
+            className={isAccent ? "stroke-caramel-deep/20" : "stroke-white/10"}
+          />
+          <circle
+            cx="90"
+            cy="90"
+            r={radius}
+            fill="none"
+            strokeWidth={stroke}
+            strokeLinecap="round"
+            className={cn("ring-animate", isAccent ? "stroke-caramel-deep" : "stroke-white/40")}
+            style={
+              {
+                "--circumference": circumference,
+                "--target-offset": targetOffset,
+              } as CSSProperties
+            }
+
+          />
+        </svg>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span
+            className={cn(
+              "font-display text-4xl font-bold sm:text-5xl",
+              isAccent ? "text-caramel-deep" : "text-primary-foreground/60"
+            )}
+          >
+            {value}
+          </span>
+        </div>
+      </div>
+      <h3 className="mt-6 font-display text-lg font-semibold text-primary-foreground">{label}</h3>
+      <p className="mt-1 text-sm text-primary-foreground/60">{sublabel}</p>
+    </div>
+  );
+}
+
 const reports = [
+
   {
     id: 1,
     name: "Igor, Kiev",

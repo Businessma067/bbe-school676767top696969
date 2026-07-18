@@ -50,6 +50,9 @@
   --color-ivory: var(--ivory);
   --color-espresso: var(--espresso);
   --color-taupe: var(--taupe);
+  --color-why-us-bg: var(--why-us-bg);
+  --color-why-us-card: var(--why-us-card);
+
 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -95,6 +98,9 @@
   --caramel-deep: oklch(0.62 0.19 42);   /* ember accent (eyebrows, flame) */
   --espresso: oklch(0.1 0 0);
   --taupe: oklch(0.45 0 0);
+  --why-us-bg: oklch(0.08 0 0);
+  --why-us-card: oklch(0.12 0 0);
+
 
   --chart-1: oklch(0.62 0.19 42);   /* ember  */
   --chart-2: oklch(0.65 0.17 250);  /* blue   */
@@ -134,6 +140,32 @@
   border-top: 1px solid var(--color-caramel);
 }
 
+/* Why Us — high-contrast dark fintech section. */
+@utility why-us-glow {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--color-caramel-deep) 25%, transparent),
+    0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 65%, transparent),
+    0 0 80px -24px color-mix(in oklab, var(--color-caramel) 45%, transparent);
+}
+
+@utility why-us-pulse {
+  animation: why-us-pulse 3s ease-in-out infinite;
+}
+
+@keyframes why-us-pulse {
+  0%, 100% { box-shadow: 0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 60%, transparent); }
+  50% { box-shadow: 0 0 60px -4px color-mix(in oklab, var(--color-caramel-deep) 85%, transparent); }
+}
+
+@keyframes ring-fill {
+  0% { stroke-dashoffset: var(--circumference); }
+  100% { stroke-dashoffset: var(--target-offset); }
+}
+
+@utility ring-animate {
+  animation: ring-fill 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 /* Neon highlighter sweep for the AI textbook canvas. */
 @keyframes neon-sweep {
   0% { background-size: 0% 100%; }
@@ -155,4 +187,5 @@
   box-shadow: 0 0 14px rgba(255, 149, 0, 0.55), 0 0 3px rgba(255, 149, 0, 0.9);
   transition: box-shadow 0.4s ease-out;
 }
+
 
