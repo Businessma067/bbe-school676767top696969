@@ -134,6 +134,32 @@
   border-top: 1px solid var(--color-caramel);
 }
 
+/* Why Us — high-contrast dark fintech section. */
+@utility why-us-glow {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--color-caramel-deep) 25%, transparent),
+    0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 65%, transparent),
+    0 0 80px -24px color-mix(in oklab, var(--color-caramel) 45%, transparent);
+}
+
+@utility why-us-pulse {
+  animation: why-us-pulse 3s ease-in-out infinite;
+}
+
+@keyframes why-us-pulse {
+  0%, 100% { box-shadow: 0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 60%, transparent); }
+  50% { box-shadow: 0 0 60px -4px color-mix(in oklab, var(--color-caramel-deep) 85%, transparent); }
+}
+
+@keyframes ring-fill {
+  0% { stroke-dashoffset: var(--circumference); }
+  100% { stroke-dashoffset: var(--target-offset); }
+}
+
+@utility ring-animate {
+  animation: ring-fill 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 /* Neon highlighter sweep for the AI textbook canvas. */
 @keyframes neon-sweep {
   0% { background-size: 0% 100%; }
@@ -155,4 +181,5 @@
   box-shadow: 0 0 14px rgba(255, 149, 0, 0.55), 0 0 3px rgba(255, 149, 0, 0.9);
   transition: box-shadow 0.4s ease-out;
 }
+
 
