@@ -412,7 +412,79 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
   );
 }
 
+function RingMetric({
+  value,
+  label,
+  sublabel,
+  variant,
+  percent,
+  glow,
+}: {
+  value: string;
+  label: string;
+  sublabel: string;
+  variant: "muted" | "accent";
+  percent: number;
+  glow?: boolean;
+}) {
+  const radius = 80;
+  const stroke = 10;
+  const circumference = 2 * Math.PI * radius;
+  const targetOffset = circumference * (1 - percent);
+  const isAccent = variant === "accent";
+
+  return (
+    <div
+      className={cn(
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
+        glow && "why-us-glow why-us-pulse"
+      )}
+    >
+      <div className="relative h-44 w-44">
+        <svg className="h-full w-full -rotate-90" viewBox="0 0 180 180">
+          <circle
+            cx="90"
+            cy="90"
+            r={radius}
+            fill="none"
+            strokeWidth={stroke}
+            className={isAccent ? "stroke-caramel-deep/20" : "stroke-white/10"}
+          />
+          <circle
+            cx="90"
+            cy="90"
+            r={radius}
+            fill="none"
+            strokeWidth={stroke}
+            strokeLinecap="round"
+            className={cn("ring-animate", isAccent ? "stroke-caramel-deep" : "stroke-white/40")}
+            style={
+              {
+                "--circumference": circumference,
+                "--target-offset": targetOffset,
+              } as React.CSSProperties
+            }
+          />
+        </svg>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span
+            className={cn(
+              "font-display text-4xl font-bold sm:text-5xl",
+              isAccent ? "text-caramel-deep" : "text-primary-foreground/60"
+            )}
+          >
+            {value}
+          </span>
+        </div>
+      </div>
+      <h3 className="mt-6 font-display text-lg font-semibold text-primary-foreground">{label}</h3>
+      <p className="mt-1 text-sm text-primary-foreground/60">{sublabel}</p>
+    </div>
+  );
+}
+
 const reports = [
+
   {
     id: 1,
     name: "Igor, Kiev",
