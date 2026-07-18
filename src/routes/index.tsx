@@ -479,7 +479,6 @@ function RingMetric({
           <path
             d={filledPath}
             className={cn("ring-animate-fill", isAccent ? "fill-caramel-deep" : "fill-white/30")}
-            style={{ transformOrigin: "90px 90px" } as CSSProperties}
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
