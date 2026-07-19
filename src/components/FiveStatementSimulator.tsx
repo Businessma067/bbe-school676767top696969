@@ -1,371 +1,419 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Check, ChevronDown, RotateCcw, Sparkles, X, BookOpen } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-type Statement = {
-  id: number;
-  text: string;
-  answer: "TRUE" | "FALSE";
-  proof: string;
-  textbook: string;
-  highlightRange: [number, number]; // char indices to highlight in textbook
-  explanation: string;
-  trap?: boolean;
+// Real case pulled verbatim from economics_cases (CASE 2.01)
+const CASE = {
+  case_id: "CASE 2.01",
+  title: "Being Part of the Economy",
+  difficulty_level: 2,
+  context:
+    "Statements test foundational claims about participation in the economy and resource exchange.",
+  statements: [
+    "Businesses provide goods and services to satisfy the needs of individuals and other businesses.",
+    "Individuals never exchange goods or services directly with one another outside formal business transactions.",
+    "Exchange would be simpler if all desired goods were available in unlimited abundance.",
+    "No participant in the economy is able to opt out of making economic decisions.",
+    "Resources are described as being abundant rather than scarce in most economic contexts.",
+  ],
+  answer_key: [true, false, true, true, false],
+  tactical_explanations: [
+    "TRUE. Businesses are explicitly described as offering goods and services to satisfy needs of individuals and other businesses.",
+    "FALSE. Individuals may exchange goods and services directly with each other, e.g. exchanging vegetables for wine.",
+    "TRUE. Exchange would be easier if everything wanted/needed were available in abundance.",
+    "TRUE. No one is explicitly able to opt out of making economic decisions.",
+    "FALSE. Resources are explicitly described as scarce, not abundant.",
+  ],
+  // textbook passages (mirroring the Textbook Canvas panel style, with a highlight substring)
+  textbook: [
+    {
+      body: "Businesses in a market economy exist to provide goods and services that satisfy the needs of individuals and other businesses. Every firm depends on customers, and firms themselves are customers of other firms — components, energy, logistics, professional services.",
+      highlight: "provide goods and services that satisfy the needs of individuals and other businesses",
+    },
+    {
+      body: "Direct exchange between individuals — barter, favours, informal trade — remains a basic form of economic activity. A gardener trading vegetables for a neighbour's homemade wine is a textbook example of exchange outside any formal business transaction.",
+      highlight: "Direct exchange between individuals — barter, favours, informal trade — remains a basic form of economic activity",
+    },
+    {
+      body: "Exchange arises precisely because goods are scarce. If every desired good were available in unlimited abundance, the coordination problem would disappear and exchange would be far simpler — no prices, no negotiation, no scarcity-driven trade-offs.",
+      highlight: "If every desired good were available in unlimited abundance, the coordination problem would disappear and exchange would be far simpler",
+    },
+    {
+      body: "Every household, firm, and government is embedded in the economy through the decisions it makes about consumption, production, work, and savings. No participant can genuinely opt out of making economic decisions — even inaction is itself an economic choice.",
+      highlight: "No participant can genuinely opt out of making economic decisions",
+    },
+    {
+      body: "The starting point of economics is scarcity: resources — time, labour, capital, raw materials — are limited relative to human wants. This is why households and firms must economise. Resources are therefore scarce, not abundant, in almost every relevant context.",
+      highlight: "Resources are therefore scarce, not abundant, in almost every relevant context",
+    },
+  ],
 };
 
-const STATEMENTS: Statement[] = [
-  {
-    id: 1,
-    text: "In a perfectly competitive market, individual firms are price takers because no single seller can influence the market price.",
-    answer: "TRUE",
-    proof: "Firms in perfect competition are price takers.",
-    textbook:
-      "Under perfect competition each firm supplies a negligible share of total output, so no single seller can influence the market price. Firms are therefore price takers who accept the equilibrium price determined by market supply and demand.",
-    highlightRange: [72, 154],
-    explanation:
-      "Correct. The definition of perfect competition explicitly excludes any single firm having market power.",
-  },
-  {
-    id: 2,
-    text: "An increase in the price of a substitute good will shift the demand curve for the original good to the left.",
-    answer: "FALSE",
-    proof: "Substitute price ↑ → demand for the other good ↑ (shifts right).",
-    textbook:
-      "When two goods are substitutes, a rise in the price of one good increases the demand for the other. The demand curve of the other good shifts to the RIGHT, not to the left. A leftward shift corresponds to complementary goods.",
-    highlightRange: [63, 158],
-    explanation:
-      "Trick sign flip. Substitutes move together in demand — the shift is to the right.",
-  },
-  {
-    id: 3,
-    text: "The marginal cost curve intersects the average total cost curve at the minimum point of the ATC.",
-    answer: "TRUE",
-    proof: "MC crosses ATC exactly at min(ATC).",
-    textbook:
-      "By construction, whenever marginal cost lies below average total cost the average is falling; when marginal cost lies above, the average is rising. Therefore the MC curve must intersect the ATC curve precisely at the minimum point of ATC.",
-    highlightRange: [170, 235],
-    explanation: "Standard cost-curve geometry. Always true by definition of averages.",
-  },
-  {
-    id: 4,
-    text: "A monopolist always produces the socially optimal quantity where price equals marginal cost.",
-    answer: "FALSE",
-    proof: "Monopolist sets MR = MC, with P > MC → deadweight loss.",
-    textbook:
-      "A profit-maximising monopolist chooses output where marginal revenue equals marginal cost. Because the monopolist faces a downward-sloping demand curve, price exceeds marginal revenue and therefore exceeds marginal cost. Output is below the socially optimal level, creating deadweight loss.",
-    highlightRange: [96, 218],
-    explanation: "P > MC under monopoly — output is under-supplied vs. the social optimum.",
-  },
-  {
-    id: 5,
-    text: "If GDP grows by 4% and the population grows by 2%, the standard of living has necessarily improved.",
-    answer: "FALSE",
-    proof: "GDP per capita ↑ ≠ living standard ↑ (distribution, inflation, composition ignored).",
-    textbook:
-      "Real GDP per capita rising is a necessary but NOT sufficient condition for a rising standard of living. The measure ignores income distribution, non-market activity, environmental costs, and the composition of output. Examiners frequently exploit the word 'necessarily' to convert a partially true idea into a false statement.",
-    highlightRange: [0, 90],
-    explanation:
-      "The Professor's Trap: the word 'necessarily' invalidates the claim. Per-capita GDP growth does not guarantee welfare gains — distribution, inflation, and composition matter.",
-    trap: true,
-  },
-];
-
-const HOLD_MS = 3000;
+type Phase = "click" | "submit" | "explain" | "hold" | "reset";
 
 export default function FiveStatementSimulator() {
-  const [active, setActive] = useState<number>(0); // index in STATEMENTS
-  const [clicked, setClicked] = useState<Set<number>>(new Set());
-  const [choice, setChoice] = useState<Record<number, "TRUE" | "FALSE">>({});
-  const [cursorTarget, setCursorTarget] = useState<{ x: number; y: number }>({ x: 8, y: 8 });
+  const [answers, setAnswers] = useState<Record<number, boolean>>({});
+  const [checked, setChecked] = useState(false);
+  const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
+  const [activeExplIdx, setActiveExplIdx] = useState<number | null>(null);
+  const [cursor, setCursor] = useState({ x: 20, y: 20 });
   const [clicking, setClicking] = useState(false);
-  const [resetting, setResetting] = useState(false);
-  const [phase, setPhase] = useState<"idle" | "moving" | "clicked" | "highlight">("idle");
+  const [dim, setDim] = useState(false);
+  const stageRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
-    const moveTo = (id: number) => {
-      const el = document.querySelector<HTMLElement>(
-        `[data-sim-btn="${id}-${STATEMENTS[id - 1].answer}"]`,
-      );
-      const stage = document.querySelector<HTMLElement>("[data-sim-stage]");
-      if (!el || !stage) return;
+    const moveTo = (selector: string) => {
+      const stage = stageRef.current;
+      const el = stage?.querySelector<HTMLElement>(selector);
+      if (!stage || !el) return;
       const s = stage.getBoundingClientRect();
       const b = el.getBoundingClientRect();
-      setCursorTarget({
+      setCursor({
         x: b.left - s.left + b.width / 2,
         y: b.top - s.top + b.height / 2,
       });
     };
 
-    const run = async () => {
-      while (!cancelled) {
-        setResetting(false);
-        setClicked(new Set());
-        setChoice({});
-        setActive(0);
-        await wait(400);
+    const click = async () => {
+      setClicking(true);
+      await wait(180);
+      setClicking(false);
+    };
 
-        for (let i = 0; i < STATEMENTS.length; i++) {
+    const loop = async () => {
+      while (!cancelled) {
+        // Reset
+        setDim(true);
+        await wait(400);
+        setAnswers({});
+        setChecked(false);
+        setOpenExpl({});
+        setActiveExplIdx(null);
+        setDim(false);
+        await wait(500);
+
+        // Step 1: click TRUE (checkbox) on each of the 5 statements the student thinks true
+        // Real user pattern: they mark all TRUE statements (indices where answer_key is true: 0, 2, 3)
+        // But to show the "trap" they also mark statement 4 (index 4) — which is FALSE — as true.
+        const toMark = [0, 2, 3, 4];
+        for (const i of toMark) {
           if (cancelled) return;
-          const st = STATEMENTS[i];
-          setActive(i);
-          setPhase("moving");
-          // let DOM paint the newly-active row
-          await wait(60);
-          moveTo(st.id);
-          await wait(st.trap ? 1400 : 700);
-          setClicking(true);
-          setPhase("clicked");
-          await wait(180);
-          setClicking(false);
-          setChoice((c) => ({ ...c, [st.id]: st.answer }));
-          setClicked((s) => new Set([...s, st.id]));
-          setPhase("highlight");
-          await wait(st.trap ? 1600 : 1000);
+          moveTo(`[data-sim-check="${i}"]`);
+          await wait(650);
+          await click();
+          setAnswers((a) => ({ ...a, [i]: true }));
+          await wait(250);
         }
 
-        await wait(HOLD_MS);
-        setResetting(true);
-        await wait(600);
+        // Step 2: submit
+        moveTo(`[data-sim-submit]`);
+        await wait(650);
+        await click();
+        setChecked(true);
+        await wait(900);
+
+        // Step 3: for each statement open AI textbook explanation, one-by-one
+        for (let i = 0; i < CASE.statements.length; i++) {
+          if (cancelled) return;
+          moveTo(`[data-sim-ai="${i}"]`);
+          await wait(i === 4 ? 1100 : 600); // pause longer on the trap
+          await click();
+          setActiveExplIdx(i);
+          setOpenExpl((s) => ({ ...s, [i]: true }));
+          await wait(i === 4 ? 1800 : 1200);
+        }
+
+        // Hold final diagnostic state
+        await wait(3000);
       }
     };
 
-    run();
+    loop();
     return () => {
       cancelled = true;
     };
   }, []);
 
+  const activeTextbook = activeExplIdx !== null ? CASE.textbook[activeExplIdx] : null;
+  const activeCorrect = activeExplIdx !== null ? CASE.answer_key[activeExplIdx] : null;
+
   return (
-    <div
-      data-sim-stage
-      className={`relative mx-auto w-full max-w-6xl overflow-hidden rounded-2xl border border-white/10 bg-[#0b0f17] shadow-2xl transition-opacity duration-500 ${
-        resetting ? "opacity-40" : "opacity-100"
-      }`}
-    >
-      {/* Browser chrome */}
-      <div className="flex items-center gap-2 border-b border-white/10 bg-[#111826] px-4 py-2.5">
-        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-        <div className="ml-4 flex-1">
-          <div className="mx-auto max-w-md rounded-md bg-[#1a2233] px-3 py-1 text-center text-[11px] text-white/50">
-            bbe-school.app / demo-practice / economics / case-14
-          </div>
-        </div>
-        <div className="hidden text-[10px] font-medium tracking-widest text-caramel-deep sm:block">
-          LIVE SIMULATION
-        </div>
-      </div>
-
-      {/* Split panels */}
-      <div className="grid gap-0 lg:grid-cols-[1.05fr_1fr]">
-        {/* Left: statements */}
-        <div className="border-b border-white/10 bg-[#0d1320] p-4 sm:p-6 lg:border-b-0 lg:border-r">
-          <div className="mb-4 flex items-center justify-between">
-            <div>
-              <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
-                Case 14 · Microeconomics
-              </div>
-              <div className="mt-1 font-display text-sm font-semibold text-white sm:text-base">
-                Mark each statement TRUE or FALSE
-              </div>
-            </div>
-            <div className="rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] text-white/60">
-              {clicked.size}/5
+    // Outer "video frame" — matches the Rimini video block styling above
+    <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
+      <div
+        ref={stageRef}
+        className={cn(
+          "relative overflow-hidden rounded-xl bg-background transition-opacity duration-500",
+          dim ? "opacity-40" : "opacity-100",
+        )}
+      >
+        {/* Browser chrome */}
+        <div className="flex items-center gap-2 border-b border-border bg-secondary/60 px-4 py-2.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+          <div className="ml-3 flex-1">
+            <div className="mx-auto max-w-md rounded-md border border-border bg-background px-3 py-1 text-center text-[11px] text-muted-foreground">
+              bbe-school.app / demo-practice / economics / {CASE.case_id.toLowerCase().replace(" ", "-")}
             </div>
           </div>
+          <div className="hidden text-[10px] font-semibold tracking-widest text-primary sm:block">
+            LIVE DEMO
+          </div>
+        </div>
 
-          <ol className="space-y-2.5">
-            {STATEMENTS.map((s, i) => {
-              const isActive = active === i && !resetting;
-              const isDone = clicked.has(s.id);
-              const picked = choice[s.id];
-              return (
-                <li
-                  key={s.id}
-                  className={`rounded-lg border p-3 transition-all duration-300 ${
-                    isActive
-                      ? "border-caramel-deep/60 bg-caramel-deep/5 shadow-[0_0_0_1px_rgba(232,93,58,0.35)]"
-                      : isDone
-                        ? "border-white/10 bg-white/[0.03]"
-                        : "border-white/5 bg-white/[0.02] opacity-70"
-                  }`}
-                >
-                  <div className="flex items-start gap-3">
-                    <span
-                      className={`mt-0.5 grid h-6 w-6 flex-none place-items-center rounded-md text-[11px] font-bold ${
-                        isDone
-                          ? "bg-caramel-deep text-white"
-                          : "bg-white/10 text-white/70"
-                      }`}
-                    >
-                      {s.id}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <p className="text-[12px] leading-snug text-white/85 sm:text-[13px]">
-                        {s.text}
-                      </p>
-                      <div className="mt-2 flex gap-2">
-                        {(["TRUE", "FALSE"] as const).map((opt) => {
-                          const isPicked = picked === opt;
-                          const isCorrect = s.answer === opt;
-                          return (
-                            <button
-                              key={opt}
-                              type="button"
-                              data-sim-btn={`${s.id}-${opt}`}
-                              className={`rounded-md border px-2.5 py-1 text-[10px] font-semibold tracking-wide transition-all ${
-                                isPicked
-                                  ? isCorrect
-                                    ? "border-emerald-400/60 bg-emerald-400/15 text-emerald-300"
-                                    : "border-red-400/60 bg-red-400/15 text-red-300"
-                                  : "border-white/10 bg-white/[0.04] text-white/60"
-                              }`}
-                            >
-                              {opt}
-                            </button>
-                          );
-                        })}
+        <div className="grid gap-4 p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
+          {/* LEFT: real CaseCard replica */}
+          <article className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                Task 1
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+                Difficulty {CASE.difficulty_level}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                {CASE.case_id}
+              </span>
+              <span className="flex-1" />
+              {checked && (
+                <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground">
+                  <RotateCcw className="h-3 w-3" /> Reset task
+                </span>
+              )}
+            </div>
+
+            <p className="mt-2 whitespace-pre-line text-[13px] leading-relaxed text-muted-foreground">
+              {CASE.context}
+            </p>
+
+            <ol className="mt-5 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+              <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                <span className="w-6 text-center">#</span>
+                <span className="flex-1">Statement</span>
+                <span className="w-14 text-center">Correct</span>
+                {checked && <span className="w-6" aria-hidden />}
+              </li>
+
+              {CASE.statements.map((stmt, i) => {
+                const userAns = answers[i];
+                const isChecked = userAns === true;
+                const correctAns = CASE.answer_key[i];
+                const isCorrect = checked && isChecked === correctAns;
+                const isWrong = checked && isChecked !== correctAns;
+                return (
+                  <li
+                    key={i}
+                    className={cn(
+                      "px-4 py-3 transition-colors",
+                      isCorrect && "bg-emerald-500/5",
+                      isWrong && "bg-destructive/5",
+                    )}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="w-6 text-center text-xs font-bold text-muted-foreground">
+                        {i + 1}.
+                      </span>
+                      <p className="flex-1 text-[13px] leading-relaxed text-foreground">{stmt}</p>
+                      <div className="flex w-14 justify-center">
+                        <span
+                          data-sim-check={i}
+                          className={cn(
+                            "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                            isChecked
+                              ? "border-primary bg-primary text-primary-foreground"
+                              : "border-border bg-background",
+                          )}
+                        >
+                          {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
+                        </span>
                       </div>
+                      {checked && (
+                        <span
+                          className={cn(
+                            "grid h-6 w-6 place-items-center rounded-full",
+                            isCorrect
+                              ? "bg-emerald-500 text-white"
+                              : "bg-destructive text-destructive-foreground",
+                          )}
+                        >
+                          {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
+                        </span>
+                      )}
                     </div>
+
+                    {checked && (
+                      <div className="mt-3 flex flex-wrap items-center gap-2">
+                        <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground">
+                          Explanation
+                          <ChevronDown
+                            className={cn(
+                              "h-3.5 w-3.5 transition-transform",
+                              openExpl[i] && "rotate-180",
+                            )}
+                          />
+                        </span>
+                        <span
+                          data-sim-ai={i}
+                          className={cn(
+                            "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                            activeExplIdx === i
+                              ? "border-primary bg-primary text-primary-foreground"
+                              : "border-primary/60 bg-primary/10 text-primary",
+                          )}
+                        >
+                          <Sparkles className="h-3 w-3" />
+                          {activeExplIdx === i ? "AI textbook shown →" : "Show AI textbook explanation"}
+                        </span>
+                        {openExpl[i] && (
+                          <p
+                            className={cn(
+                              "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
+                              isCorrect
+                                ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
+                                : "bg-destructive/10 text-destructive",
+                            )}
+                          >
+                            {CASE.tactical_explanations[i]}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+              {!checked ? (
+                <span
+                  data-sim-submit
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm"
+                >
+                  Check answers
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground">
+                  Score:{" "}
+                  <span className="text-foreground">
+                    {CASE.answer_key.filter((v, i) => (answers[i] === true) === v).length}/5
+                  </span>
+                </span>
+              )}
+            </div>
+          </article>
+
+          {/* RIGHT: AI Explanation Hub (Classic + Textbook Canvas) */}
+          <aside className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
+                AI Explanation Engine
+              </div>
+              <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
+                RAG · live
+              </div>
+            </div>
+
+            {activeExplIdx === null || !activeTextbook ? (
+              <div className="grid h-full min-h-[240px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center">
+                <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
+                  After you check your answers, tap{" "}
+                  <span className="font-semibold text-primary">Show AI textbook explanation</span>{" "}
+                  under any statement to open the double-panel engine here.
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {/* Classic Explanation */}
+                <div className="rounded-xl border border-border bg-background p-3 sm:p-4">
+                  <div className="mb-1.5 flex items-center gap-2">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                      Classic Explanation
+                    </span>
+                    <span
+                      className={cn(
+                        "rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wider",
+                        activeCorrect
+                          ? "bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                          : "bg-destructive/20 text-destructive",
+                      )}
+                    >
+                      Answer: {activeCorrect ? "TRUE" : "FALSE"}
+                    </span>
+                    <span className="ml-auto text-[10px] text-muted-foreground">
+                      Statement {activeExplIdx + 1}
+                    </span>
                   </div>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
+                  <p className="mb-2 text-[11px] italic text-muted-foreground">
+                    "{CASE.statements[activeExplIdx]}"
+                  </p>
+                  <p className="text-[12px] leading-relaxed text-foreground">
+                    {CASE.tactical_explanations[activeExplIdx]}
+                  </p>
+                </div>
 
-        {/* Right: AI Explanation Hub */}
-        <div className="relative bg-[#0a0f1a] p-4 sm:p-6">
-          <div className="mb-3 flex items-center justify-between">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-caramel-deep">
-              AI Explanation Hub
-            </div>
-            <div className="flex items-center gap-1 text-[10px] text-white/40">
-              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-              RAG · live
-            </div>
-          </div>
-
-          <ExplanationPanel
-            active={STATEMENTS[active]}
-            visible={!resetting && (phase === "highlight" || clicked.has(STATEMENTS[active].id))}
-          />
-        </div>
-      </div>
-
-      {/* Cursor */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-0 top-0 z-30 transition-all duration-700 ease-out"
-        style={{
-          transform: `translate(${cursorTarget.x}px, ${cursorTarget.y}px)`,
-        }}
-      >
-        <div className="relative -translate-x-1 -translate-y-1">
-          <svg width="22" height="22" viewBox="0 0 24 24" className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
-            <path
-              d="M3 2 L3 18 L7.5 14 L10.5 21 L13.5 19.7 L10.5 12.8 L17 12.8 Z"
-              fill="#fff"
-              stroke="#0a0f1a"
-              strokeWidth="1.2"
-              strokeLinejoin="round"
-            />
-          </svg>
-          {clicking && (
-            <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-caramel-deep/60" />
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function ExplanationPanel({
-  active,
-  visible,
-}: {
-  active: Statement;
-  visible: boolean;
-}) {
-  const [beforeHi, hi, afterHi] = splitHighlight(active.textbook, active.highlightRange);
-
-  return (
-    <div
-      className={`transition-all duration-500 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-      }`}
-    >
-      {/* Classic Explanation Card */}
-      <div
-        className={`rounded-lg border p-3 sm:p-4 ${
-          active.trap
-            ? "border-caramel-deep/50 bg-gradient-to-br from-caramel-deep/10 to-transparent"
-            : "border-white/10 bg-white/[0.03]"
-        }`}
-      >
-        <div className="mb-1.5 flex items-center gap-2">
-          <span
-            className={`rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wider ${
-              active.answer === "TRUE"
-                ? "bg-emerald-400/20 text-emerald-300"
-                : "bg-red-400/20 text-red-300"
-            }`}
-          >
-            {active.answer}
-          </span>
-          {active.trap && (
-            <span className="rounded bg-caramel-deep/25 px-1.5 py-0.5 text-[9px] font-bold tracking-wider text-caramel-deep">
-              PROFESSOR'S TRAP
-            </span>
-          )}
-          <span className="text-[10px] text-white/40">Task {active.id}</span>
-        </div>
-        <p className="text-[12px] leading-relaxed text-white/85 sm:text-[13px]">
-          {active.explanation}
-        </p>
-      </div>
-
-      {/* Textbook Canvas */}
-      <div className="mt-3 rounded-lg border border-white/10 bg-[#111826] p-3 sm:p-4">
-        <div className="mb-2 flex items-center justify-between">
-          <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
-            Textbook Canvas · Mankiw, ch. {active.id + 3}
-          </div>
-          <div className="text-[10px] text-white/30">p. {120 + active.id * 7}</div>
-        </div>
-        <p className="relative text-[12px] leading-relaxed text-white/70 sm:text-[13px]">
-          {beforeHi}
-          <span className="relative inline">
-            <span className="relative z-10">{hi}</span>
-            {visible && (
-              <span
-                key={active.id}
-                aria-hidden
-                className="pointer-events-none absolute inset-y-0 left-0 -mx-0.5 rounded-sm bg-caramel-deep/45 shadow-[0_0_14px_rgba(232,93,58,0.55)]"
-                style={{
-                  animation: "sim-highlight-sweep 1s ease-out forwards",
-                }}
-              />
+                {/* Textbook Canvas */}
+                <div className="rounded-xl border border-border bg-background p-3 sm:p-4">
+                  <div className="mb-2 flex items-center justify-between">
+                    <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                      <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
+                    </div>
+                    <span className="text-[10px] text-muted-foreground">
+                      Ch. {activeExplIdx + 2} · p. {110 + activeExplIdx * 6}
+                    </span>
+                  </div>
+                  <TextbookBody
+                    key={activeExplIdx}
+                    text={activeTextbook.body}
+                    highlight={activeTextbook.highlight}
+                  />
+                </div>
+              </div>
             )}
-          </span>
-          {afterHi}
-        </p>
-        <div className="mt-3 flex items-center gap-2 border-t border-white/5 pt-2 text-[10px] text-white/50">
-          <span className="rounded bg-white/5 px-1.5 py-0.5">Proof</span>
-          <span className="truncate">{active.proof}</span>
+          </aside>
+        </div>
+
+        {/* Cursor */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-all duration-700 ease-out"
+          style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
+        >
+          <div className="relative -translate-x-1 -translate-y-1">
+            <svg width="22" height="22" viewBox="0 0 24 24" className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
+              <path
+                d="M3 2 L3 18 L7.5 14 L10.5 21 L13.5 19.7 L10.5 12.8 L17 12.8 Z"
+                fill="#fff"
+                stroke="#111"
+                strokeWidth="1.2"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {clicking && (
+              <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-primary/50" />
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-function splitHighlight(text: string, range: [number, number]): [string, string, string] {
-  const [a, b] = range;
-  const clampA = Math.max(0, Math.min(text.length, a));
-  const clampB = Math.max(clampA, Math.min(text.length, b));
-  return [text.slice(0, clampA), text.slice(clampA, clampB), text.slice(clampB)];
+function TextbookBody({ text, highlight }: { text: string; highlight: string }) {
+  const idx = text.indexOf(highlight);
+  if (idx < 0) {
+    return <p className="text-[12px] leading-relaxed text-muted-foreground">{text}</p>;
+  }
+  return (
+    <p className="text-[12px] leading-relaxed text-muted-foreground">
+      {text.slice(0, idx)}
+      <span className="neon-highlight text-foreground">{highlight}</span>
+      {text.slice(idx + highlight.length)}
+    </p>
+  );
 }
