@@ -828,14 +828,67 @@ function CapitalBars() {
   );
 }
 
-const placements: { name: string; mark: string; sub?: string }[] = [
-  { name: "Goldman Sachs", mark: "GS", sub: "Goldman Sachs" },
-  { name: "McKinsey & Company", mark: "McK", sub: "McKinsey & Co." },
-  { name: "Boston Consulting Group", mark: "BCG", sub: "Boston Consulting" },
-  { name: "J.P. Morgan", mark: "JPM", sub: "J.P. Morgan" },
-  { name: "Google", mark: "G", sub: "Google" },
-  { name: "Morgan Stanley", mark: "MS", sub: "Morgan Stanley" },
+const placements: {
+  name: string;
+  domain: string;
+  mark: string;
+  sub: string;
+}[] = [
+  { name: "Goldman Sachs", domain: "goldmansachs.com", mark: "GS", sub: "Goldman Sachs" },
+  { name: "McKinsey & Company", domain: "mckinsey.com", mark: "McK", sub: "McKinsey & Co." },
+  { name: "Boston Consulting Group", domain: "bcg.com", mark: "BCG", sub: "Boston Consulting" },
+  { name: "J.P. Morgan", domain: "jpmorgan.com", mark: "JPM", sub: "J.P. Morgan" },
+  { name: "Google", domain: "google.com", mark: "G", sub: "Google" },
+  { name: "Morgan Stanley", domain: "morganstanley.com", mark: "MS", sub: "Morgan Stanley" },
 ];
+
+function PlacementLogo({
+  domain,
+  name,
+  mark,
+  sub,
+}: {
+  domain: string;
+  name: string;
+  mark: string;
+  sub: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  // Public logo.dev demo token (client-safe). Greyscale + retina for crisp muted look.
+  const src = `https://img.logo.dev/${domain}?token=pk_X-1ZO13ESamOoWc1MdIx4gA&size=200&format=png&greyscale=true&retina=true`;
+  return (
+    <div className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/20 bg-gradient-to-b from-white/[0.02] to-[color:var(--color-caramel-deep)]/[0.06] px-2 py-4 transition hover:border-[color:var(--color-caramel-deep)]/60 hover:from-[color:var(--color-caramel-deep)]/10 hover:to-[color:var(--color-caramel-deep)]/20">
+      <div className="flex h-10 w-full items-center justify-center sm:h-12">
+        {failed ? (
+          <span
+            className="font-display text-2xl font-bold tracking-tight text-[color:var(--color-caramel-deep)] sm:text-3xl"
+            style={{
+              textShadow:
+                "0 0 18px color-mix(in oklab, var(--color-caramel-deep) 55%, transparent)",
+            }}
+          >
+            {mark}
+          </span>
+        ) : (
+          <img
+            src={src}
+            alt={`${name} logo`}
+            loading="lazy"
+            onError={() => setFailed(true)}
+            className="max-h-full max-w-full object-contain opacity-80 transition group-hover:opacity-100"
+            style={{
+              filter:
+                "brightness(0) invert(1) brightness(0.85) sepia(0.4) saturate(3) hue-rotate(-15deg)",
+            }}
+          />
+        )}
+      </div>
+      <span className="mt-2 text-center text-[9px] font-semibold uppercase tracking-[0.18em] text-primary-foreground/60 group-hover:text-primary-foreground/85 sm:text-[10px]">
+        {sub}
+      </span>
+    </div>
+  );
+}
 
 function PlacementsTicker() {
   return (
@@ -844,24 +897,8 @@ function PlacementsTicker() {
         ◆ Where alumni land ◆
       </p>
       <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
-        {placements.map(({ name, mark, sub }) => (
-          <div
-            key={name}
-            className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/20 bg-gradient-to-b from-white/[0.02] to-[color:var(--color-caramel-deep)]/[0.06] px-2 py-4 transition hover:border-[color:var(--color-caramel-deep)]/60 hover:from-[color:var(--color-caramel-deep)]/10 hover:to-[color:var(--color-caramel-deep)]/20"
-          >
-            <span
-              className="font-display text-2xl font-bold tracking-tight text-[color:var(--color-caramel-deep)] sm:text-3xl"
-              style={{
-                textShadow:
-                  "0 0 18px color-mix(in oklab, var(--color-caramel-deep) 55%, transparent)",
-              }}
-            >
-              {mark}
-            </span>
-            <span className="mt-1.5 text-center text-[9px] font-semibold uppercase tracking-[0.18em] text-primary-foreground/60 group-hover:text-primary-foreground/85 sm:text-[10px]">
-              {sub ?? name}
-            </span>
-          </div>
+        {placements.map((p) => (
+          <PlacementLogo key={p.name} {...p} />
         ))}
       </div>
       <p className="mt-6 border-t border-[color:var(--color-caramel-deep)]/20 pt-4 text-center text-xs text-primary-foreground/55">
