@@ -191,6 +191,13 @@ function DashboardPage() {
           >
             ⚙ Account settings
           </Link>
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
+          >
+            Log out
+          </button>
 
           {/* Mobile tab switcher */}
           <div className="mt-6 flex gap-2 sm:hidden">
