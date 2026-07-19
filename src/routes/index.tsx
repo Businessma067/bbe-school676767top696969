@@ -253,7 +253,7 @@ function Index() {
         </section>
 
         {/* WHY US — full-page snap slider */}
-        <div className="relative h-screen w-screen overflow-hidden bg-why-us-bg">
+        <div className="relative h-[100dvh] w-full overflow-hidden bg-why-us-bg">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 z-0"
@@ -263,8 +263,7 @@ function Index() {
             }}
           />
           <div
-            className="relative z-10 flex h-full w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scroll-smooth"
-            style={{ scrollBehavior: "smooth" }}
+            className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden"
           >
 
             {/* Slide 01 — Acceptance Rate */}
@@ -642,8 +641,8 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative flex h-screen w-screen flex-none snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
-      <div className="relative w-full max-w-6xl overflow-y-auto rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12" style={{ maxHeight: "calc(100vh - 4rem)" }}>
+    <section className="relative flex h-full w-full min-w-full flex-none snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
+      <div className="relative w-full max-w-6xl overflow-y-auto rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12" style={{ maxHeight: "calc(100dvh - 4rem)" }}>
         <div className="mb-8 flex items-start gap-5 sm:items-center">
           <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
             {index}
