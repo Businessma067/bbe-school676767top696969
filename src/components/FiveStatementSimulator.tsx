@@ -166,9 +166,9 @@ export default function FiveStatementSimulator() {
           </div>
         </div>
 
-        <div className="grid gap-4 p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
+        <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
           {/* LEFT: real CaseCard replica */}
-          <article className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
+          <article className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
             <div className="mb-4 flex flex-wrap items-center gap-2">
               <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Task 1
