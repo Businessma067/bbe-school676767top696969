@@ -594,6 +594,96 @@ function RingMetric({
   );
 }
 
+function WhyCarousel({ children }: { children: ReactNode }) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const slides = Array.isArray(children) ? children : [children];
+  const total = slides.length;
+  const [active, setActive] = useState(0);
+  const userInteractingRef = useRef(false);
+  const interactTimerRef = useRef<number | null>(null);
+
+  // Track which slide is centered.
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const onScroll = () => {
+      const w = el.clientWidth;
+      const idx = Math.round(el.scrollLeft / w);
+      setActive(Math.max(0, Math.min(total - 1, idx)));
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [total]);
+
+  // Pause nudge briefly on any user interaction.
+  const markInteract = () => {
+    userInteractingRef.current = true;
+    if (interactTimerRef.current) window.clearTimeout(interactTimerRef.current);
+    interactTimerRef.current = window.setTimeout(() => {
+      userInteractingRef.current = false;
+    }, 4000);
+  };
+
+  // Every 7.5s, gently nudge toward next slide and back — a "peek" hint.
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const id = window.setInterval(() => {
+      if (userInteractingRef.current) return;
+      const w = el.clientWidth;
+      const maxLeft = el.scrollWidth - w;
+      const atEnd = el.scrollLeft >= maxLeft - 4;
+      const dir = atEnd ? -1 : 1;
+      const peek = Math.min(46, w * 0.08);
+      const base = el.scrollLeft;
+      el.scrollTo({ left: base + dir * peek, behavior: "smooth" });
+      window.setTimeout(() => {
+        el.scrollTo({ left: base, behavior: "smooth" });
+      }, 650);
+    }, 7500);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const goTo = (i: number) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    markInteract();
+    el.scrollTo({ left: i * el.clientWidth, behavior: "smooth" });
+  };
+
+  return (
+    <div className="mt-10">
+      <div
+        ref={scrollerRef}
+        onPointerDown={markInteract}
+        onWheel={markInteract}
+        onTouchStart={markInteract}
+        className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {slides.map((child, i) => (
+          <div key={i} className="min-w-full shrink-0 snap-center">
+            {child}
+          </div>
+        ))}
+      </div>
+      <div className="mt-6 flex items-center justify-center gap-2.5">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            aria-label={`Go to slide ${i + 1}`}
+            onClick={() => goTo(i)}
+            className={cn(
+              "h-2 rounded-full transition-all",
+              active === i ? "w-8 bg-caramel-deep" : "w-2 bg-white/25 hover:bg-white/50"
+            )}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function WhySlide({
   index,
   title,
