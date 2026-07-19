@@ -60,6 +60,7 @@ export default function FiveStatementSimulator() {
   const [clicking, setClicking] = useState(false);
   const [dim, setDim] = useState(false);
   const stageRef = useRef<HTMLDivElement | null>(null);
+  const leftRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -70,11 +71,21 @@ export default function FiveStatementSimulator() {
       const stage = stageRef.current;
       const el = stage?.querySelector<HTMLElement>(selector);
       if (!stage || !el) return;
-      const s = stage.getBoundingClientRect();
-      const b = el.getBoundingClientRect();
-      setCursor({
-        x: b.left - s.left + b.width / 2,
-        y: b.top - s.top + b.height / 2,
+      // Auto-scroll the left panel so the target is centered in view
+      const left = leftRef.current;
+      if (left && left.contains(el)) {
+        const lb = left.getBoundingClientRect();
+        const eb = el.getBoundingClientRect();
+        const targetTop = left.scrollTop + (eb.top - lb.top) - lb.height / 2 + eb.height / 2;
+        left.scrollTo({ top: Math.max(0, targetTop), behavior: "smooth" });
+      }
+      requestAnimationFrame(() => {
+        const s = stage.getBoundingClientRect();
+        const b = el.getBoundingClientRect();
+        setCursor({
+          x: b.left - s.left + b.width / 2,
+          y: b.top - s.top + b.height / 2,
+        });
       });
     };
 
