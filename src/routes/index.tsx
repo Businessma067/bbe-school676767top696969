@@ -835,16 +835,16 @@ import jpmorganLogo from "@/assets/jpmorgan.png.asset.json";
 import googleLogo from "@/assets/google.png.asset.json";
 import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
-const placements: { name: string; src: string }[] = [
-  { name: "Goldman Sachs", src: goldmanLogo.url },
-  { name: "McKinsey & Company", src: mckinseyLogo.url },
-  { name: "Boston Consulting Group", src: bcgLogo.url },
-  { name: "J.P. Morgan", src: jpmorganLogo.url },
-  { name: "Google", src: googleLogo.url },
-  { name: "Deloitte", src: deloitteLogo.url },
+const placements: { name: string; sub: string; src: string }[] = [
+  { name: "Goldman Sachs", sub: "Goldman Sachs", src: goldmanLogo.url },
+  { name: "McKinsey & Company", sub: "McKinsey & Co.", src: mckinseyLogo.url },
+  { name: "Boston Consulting Group", sub: "Boston Consulting", src: bcgLogo.url },
+  { name: "J.P. Morgan", sub: "JPMorgan Chase", src: jpmorganLogo.url },
+  { name: "Google", sub: "Google", src: googleLogo.url },
+  { name: "Deloitte", sub: "Deloitte", src: deloitteLogo.url },
 ];
 
-function PlacementLogo({ src, name }: { src: string; name: string }) {
+function PlacementLogo({ src, name, sub }: { src: string; name: string; sub: string }) {
   return (
     <div className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/25 bg-white px-3 py-4 transition hover:border-[color:var(--color-caramel-deep)]/70 hover:shadow-[0_0_20px_-4px_color-mix(in_oklab,var(--color-caramel-deep)_60%,transparent)]">
       <div className="flex h-10 w-full items-center justify-center sm:h-12">
@@ -855,6 +855,9 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
           className="max-h-full max-w-full object-contain"
         />
       </div>
+      <span className="mt-2 text-center text-[9px] font-semibold uppercase tracking-[0.18em] text-neutral-600 sm:text-[10px]">
+        {sub}
+      </span>
     </div>
   );
 }

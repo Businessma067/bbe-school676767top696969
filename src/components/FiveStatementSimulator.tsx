@@ -56,75 +56,79 @@ export default function FiveStatementSimulator() {
   const [checked, setChecked] = useState(false);
   const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
   const [activeExplIdx, setActiveExplIdx] = useState<number | null>(null);
+  const [cursor, setCursor] = useState({ x: 20, y: 20 });
+  const [clicking, setClicking] = useState(false);
   const [dim, setDim] = useState(false);
-  const [zoom, setZoom] = useState<{ scale: number; ox: string; oy: string }>({
-    scale: 1,
-    ox: "50%",
-    oy: "0%",
-  });
-  const leftRef = useRef<HTMLElement | null>(null);
+  const stageRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
-    const focusOn = (selector: string | null, scale = 1.12) => {
-      const panel = leftRef.current;
-      if (!panel) {
-        setZoom({ scale: 1, ox: "50%", oy: "0%" });
-        return;
-      }
-      if (!selector) {
-        setZoom({ scale: 1, ox: "50%", oy: "0%" });
-        return;
-      }
-      const el = panel.querySelector<HTMLElement>(selector);
-      if (!el) return;
-      const p = panel.getBoundingClientRect();
+    const moveTo = (selector: string) => {
+      const stage = stageRef.current;
+      const el = stage?.querySelector<HTMLElement>(selector);
+      if (!stage || !el) return;
+      const s = stage.getBoundingClientRect();
       const b = el.getBoundingClientRect();
-      const ox = ((b.left - p.left + b.width / 2) / p.width) * 100;
-      const oy = ((b.top - p.top + b.height / 2) / p.height) * 100;
-      setZoom({ scale, ox: `${ox}%`, oy: `${oy}%` });
+      setCursor({
+        x: b.left - s.left + b.width / 2,
+        y: b.top - s.top + b.height / 2,
+      });
+    };
+
+    const click = async () => {
+      setClicking(true);
+      await wait(180);
+      setClicking(false);
     };
 
     const loop = async () => {
       while (!cancelled) {
+        // Reset
         setDim(true);
         await wait(400);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveExplIdx(null);
-        focusOn(null);
         setDim(false);
-        await wait(600);
+        await wait(500);
 
+        // Step 1: click TRUE (checkbox) on each of the 5 statements the student thinks true
+        // Real user pattern: they mark all TRUE statements (indices where answer_key is true: 0, 2, 3)
+        // But to show the "trap" they also mark statement 4 (index 4) — which is FALSE — as true.
         const toMark = [0, 2, 3, 4];
         for (const i of toMark) {
           if (cancelled) return;
-          focusOn(`[data-sim-row="${i}"]`, 1.15);
-          await wait(750);
+          moveTo(`[data-sim-check="${i}"]`);
+          await wait(650);
+          await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(500);
+          await wait(250);
         }
 
-        focusOn(null);
-        await wait(700);
+        // Step 2: submit
+        moveTo(`[data-sim-submit]`);
+        await wait(650);
+        await click();
         setChecked(true);
-        await wait(1100);
+        await wait(900);
 
+        // Step 3: for each statement open AI textbook explanation, one-by-one
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
-          focusOn(`[data-sim-row="${i}"]`, 1.18);
-          await wait(i === 4 ? 900 : 600);
+          moveTo(`[data-sim-ai="${i}"]`);
+          await wait(i === 4 ? 1100 : 600); // pause longer on the trap
+          await click();
           setActiveExplIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
-          await wait(i === 4 ? 2200 : 1500);
+          await wait(i === 4 ? 1800 : 1200);
         }
 
-        focusOn(null);
-        await wait(2600);
+        // Hold final diagnostic state
+        await wait(3000);
       }
     };
 
@@ -139,10 +143,11 @@ export default function FiveStatementSimulator() {
 
   return (
     // Outer "video frame" — matches the Rimini video block styling above
-    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[520px] lg:h-[560px]">
+    <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
       <div
+        ref={stageRef}
         className={cn(
-          "relative flex h-full flex-col overflow-hidden rounded-xl bg-background transition-opacity duration-500",
+          "relative overflow-hidden rounded-xl bg-background transition-opacity duration-500",
           dim ? "opacity-40" : "opacity-100",
         )}
       >
@@ -161,16 +166,9 @@ export default function FiveStatementSimulator() {
           </div>
         </div>
 
-        <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
+        <div className="grid gap-4 p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
           {/* LEFT: real CaseCard replica */}
-          <article
-            ref={leftRef}
-            className="min-h-0 overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-sm transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:p-6"
-            style={{
-              transform: `scale(${zoom.scale})`,
-              transformOrigin: `${zoom.ox} ${zoom.oy}`,
-            }}
-          >
+          <article className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
             <div className="mb-4 flex flex-wrap items-center gap-2">
               <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Task 1
@@ -210,7 +208,6 @@ export default function FiveStatementSimulator() {
                 return (
                   <li
                     key={i}
-                    data-sim-row={i}
                     className={cn(
                       "px-4 py-3 transition-colors",
                       isCorrect && "bg-emerald-500/5",
@@ -311,7 +308,7 @@ export default function FiveStatementSimulator() {
           </article>
 
           {/* RIGHT: AI Explanation Hub (Classic + Textbook Canvas) */}
-          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
+          <aside className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                 AI Explanation Engine
@@ -323,7 +320,7 @@ export default function FiveStatementSimulator() {
             </div>
 
             {activeExplIdx === null || !activeTextbook ? (
-              <div className="grid h-[180px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center sm:h-[220px]">
+              <div className="grid h-full min-h-[240px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center">
                 <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
                   After you check your answers, tap{" "}
                   <span className="font-semibold text-primary">Show AI textbook explanation</span>{" "}
@@ -381,6 +378,27 @@ export default function FiveStatementSimulator() {
           </aside>
         </div>
 
+        {/* Cursor */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-all duration-700 ease-out"
+          style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
+        >
+          <div className="relative -translate-x-1 -translate-y-1">
+            <svg width="22" height="22" viewBox="0 0 24 24" className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
+              <path
+                d="M3 2 L3 18 L7.5 14 L10.5 21 L13.5 19.7 L10.5 12.8 L17 12.8 Z"
+                fill="#fff"
+                stroke="#111"
+                strokeWidth="1.2"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {clicking && (
+              <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-primary/50" />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
