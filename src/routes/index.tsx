@@ -749,32 +749,45 @@ function CapitalBars() {
   );
 }
 
-const placements = [
-  { name: "Goldman Sachs", slug: "goldmansachs" },
-  { name: "McKinsey & Company", slug: "mckinsey" },
-  { name: "Boston Consulting Group", slug: "bcg" },
-  { name: "J.P. Morgan", slug: "jpmorgan" },
-  { name: "Google", slug: "google" },
-  { name: "Morgan Stanley", slug: "morganstanley" },
+const placements: { name: string; mark: string; sub?: string }[] = [
+  { name: "Goldman Sachs", mark: "GS", sub: "Goldman Sachs" },
+  { name: "McKinsey & Company", mark: "McK", sub: "McKinsey & Co." },
+  { name: "Boston Consulting Group", mark: "BCG", sub: "Boston Consulting" },
+  { name: "J.P. Morgan", mark: "JPM", sub: "J.P. Morgan" },
+  { name: "Google", mark: "G", sub: "Google" },
+  { name: "Morgan Stanley", mark: "MS", sub: "Morgan Stanley" },
 ];
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-8">
-      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
-        Where alumni land
+    <div className="mt-8 rounded-xl border border-[color:var(--color-caramel-deep)]/25 bg-black/40 px-4 py-6 sm:px-8 sm:py-8 why-us-glow">
+      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.32em] text-[color:var(--color-caramel)]/80">
+        ◆ Where alumni land ◆
       </p>
-      <div className="grid grid-cols-3 items-center justify-items-center gap-x-6 gap-y-8 sm:grid-cols-6 sm:gap-x-8">
-        {placements.map(({ name, slug }) => (
-          <img
-            key={slug}
-            src={`https://cdn.simpleicons.org/${slug}/9ca3af`}
-            alt={`${name} logo`}
-            loading="lazy"
-            className="h-7 w-auto max-w-[110px] object-contain opacity-70 transition hover:opacity-100 sm:h-8"
-          />
+      <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
+        {placements.map(({ name, mark, sub }) => (
+          <div
+            key={name}
+            className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/20 bg-gradient-to-b from-white/[0.02] to-[color:var(--color-caramel-deep)]/[0.06] px-2 py-4 transition hover:border-[color:var(--color-caramel-deep)]/60 hover:from-[color:var(--color-caramel-deep)]/10 hover:to-[color:var(--color-caramel-deep)]/20"
+          >
+            <span
+              className="font-display text-2xl font-bold tracking-tight text-[color:var(--color-caramel-deep)] sm:text-3xl"
+              style={{
+                textShadow:
+                  "0 0 18px color-mix(in oklab, var(--color-caramel-deep) 55%, transparent)",
+              }}
+            >
+              {mark}
+            </span>
+            <span className="mt-1.5 text-center text-[9px] font-semibold uppercase tracking-[0.18em] text-primary-foreground/60 group-hover:text-primary-foreground/85 sm:text-[10px]">
+              {sub ?? name}
+            </span>
+          </div>
         ))}
       </div>
+      <p className="mt-6 border-t border-[color:var(--color-caramel-deep)]/20 pt-4 text-center text-xs text-primary-foreground/55">
+        Global tier-1 finance, consulting & tech.
+      </p>
     </div>
   );
 }
