@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { Flame } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -219,40 +219,84 @@ function Index() {
               </p>
             </div>
 
-            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:gap-8">
-              <RingMetric
-                value="8%"
-                label="Official WU Vienna BBE Acceptance Rate"
-                sublabel="(Average Applicant Pool)"
-                variant="muted"
-                percent={0.08}
-              />
-              <RingMetric
-                value="41.3%"
-                label="BBE-School Acceptance Rate"
-                sublabel="57 out of 138 prepared students successfully admitted last year"
-                variant="accent"
-                percent={0.413}
-                glow
-              />
-            </div>
+            {/* Slide 01 — Acceptance Rate */}
+            <WhySlide
+              index="01"
+              title="Acceptance Rate Uplift"
+              subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
+            >
+              <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+                <RingMetric
+                  value="8%"
+                  label="Official WU Vienna BBE Acceptance Rate"
+                  sublabel="(Average Applicant Pool)"
+                  variant="muted"
+                  percent={0.08}
+                />
+                <RingMetric
+                  value="41.3%"
+                  label="BBE-School Acceptance Rate"
+                  sublabel="57 out of 138 prepared students successfully admitted last year"
+                  variant="accent"
+                  percent={0.413}
+                  glow
+                />
+              </div>
+              <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+                Our students achieve a success rate{" "}
+                <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+                applicant pool.
+              </p>
+            </WhySlide>
 
-            <p className="mx-auto mt-12 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-              Our students achieve a success rate{" "}
-              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-              applicant pool.
-            </p>
+            {/* Slide 02 — Capital Preservation */}
+            <WhySlide
+              index="02"
+              title="Capital Preservation"
+              subtitle="One exam, one decision — protecting a six-figure family advantage."
+            >
+              <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+                <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                  Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                  textbook slides with you — that is a financial black hole. Furthermore, top-tier
+                  university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
+                  than comparable business schools in the UK or US, making it the highest ROI
+                  investment in your future. A single one-time investment in our platform saves you
+                  thousands of euros in useless prep costs, protecting your path to an incredibly
+                  affordable, world-class degree. Failing the exam means losing a{" "}
+                  <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+                </p>
+                <CapitalBars />
+              </div>
+            </WhySlide>
 
-            <div className="mt-12 flex justify-center">
+            {/* Slide 03 — Top-Tier Career Outcomes */}
+            <WhySlide
+              index="03"
+              title="Top-Tier Career Outcomes"
+              subtitle="Where the top of the class ends up after WU Vienna."
+            >
+              <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                WU Vienna is a premier target university for the world's elite firms, but only for
+                the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
+                your brain to handle brutal exam pressure now, you build the raw analytical stamina
+                required to later survive intense recruitment cycles and secure elite international
+                career placements. BBE alumni consistently secure top-tier offers across global
+                financial and consulting hubs.
+              </p>
+              <PlacementsTicker />
+            </WhySlide>
+
+            <div className="mt-16 flex justify-center">
               <Link
                 to="/products"
-                className="inline-flex items-center justify-center rounded-md px-7 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                 style={{
                   background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                  boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                  boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
                 }}
               >
-                View Preparation Courses
+                View Preparation Products <span aria-hidden>👇</span>
               </Link>
             </div>
           </div>
@@ -547,6 +591,158 @@ function RingMetric({
     </div>
   );
 }
+
+function WhySlide({
+  index,
+  title,
+  subtitle,
+  children,
+}: {
+  index: string;
+  title: string;
+  subtitle: string;
+  children: ReactNode;
+}) {
+  return (
+    <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+      <div className="mb-8 flex items-start gap-5 sm:items-center">
+        <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
+          {index}
+        </span>
+        <span className="h-px flex-1 bg-white/10" />
+        <div className="min-w-0 text-right sm:text-left">
+          <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
+            {title}
+          </h3>
+          <p className="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/50 sm:text-[11px]">
+            {subtitle}
+          </p>
+        </div>
+      </div>
+      {children}
+    </section>
+  );
+}
+
+function CapitalBars() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    let started = false;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          const dur = 1500;
+          const t0 = performance.now();
+          const ease = (t: number) => 1 - Math.pow(1 - t, 3);
+          const tick = (now: number) => {
+            const r = Math.min((now - t0) / dur, 1);
+            setProgress(ease(r));
+            if (r < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  const maxH = 260;
+  const ukHeight = maxH * progress;
+  const wuHeight = maxH * 0.11 * progress;
+
+  return (
+    <div
+      ref={ref}
+      className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8"
+    >
+      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+        Total tuition · 3 years
+      </p>
+      <div className="flex items-end justify-around gap-6" style={{ height: maxH + 20 }}>
+        <div className="flex h-full flex-1 flex-col items-center justify-end">
+          <span
+            className="mb-2 font-display text-sm font-semibold text-primary-foreground/85"
+            style={{ opacity: progress }}
+          >
+            €60k – €120k
+          </span>
+          <div
+            className="w-full max-w-[90px] rounded-t-md bg-white/25"
+            style={{
+              height: ukHeight,
+              transition: "background-color 0.3s",
+            }}
+          />
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/55">
+            UK / US Target Schools
+          </span>
+        </div>
+        <div className="flex h-full flex-1 flex-col items-center justify-end">
+          <span
+            className="mb-2 font-display text-sm font-semibold text-caramel-deep"
+            style={{ opacity: progress }}
+          >
+            ~€2,200
+          </span>
+          <div
+            className="w-full max-w-[90px] rounded-t-md"
+            style={{
+              height: wuHeight,
+              background: "linear-gradient(180deg, #F59E0B 0%, #E85D3A 100%)",
+              boxShadow: "0 0 24px -4px rgba(232,93,58,0.7)",
+            }}
+          />
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-caramel-deep">
+            WU Vienna · 3-Year Total
+          </span>
+        </div>
+      </div>
+      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-primary-foreground/55">
+        Same degree tier. <span className="text-primary-foreground/85">~50× tuition delta.</span>
+      </p>
+    </div>
+  );
+}
+
+const placements = [
+  "Goldman Sachs",
+  "McKinsey & Company",
+  "Boston Consulting Group",
+  "J.P. Morgan",
+  "Google",
+  "Morgan Stanley",
+];
+
+function PlacementsTicker() {
+  return (
+    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
+      <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+        Where alumni land
+      </p>
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-5">
+        {placements.map((name, i) => (
+          <div key={name} className="flex items-center gap-3 sm:gap-5">
+            <span className="font-display text-sm font-semibold tracking-tight text-primary-foreground/80 sm:text-base">
+              {name}
+            </span>
+            {i < placements.length - 1 && (
+              <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
 
 const reports = [
 
