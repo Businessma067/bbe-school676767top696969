@@ -67,25 +67,46 @@ export default function FiveStatementSimulator() {
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
+    const smoothScroll = (el: HTMLElement, to: number, duration = 900) => {
+      const start = el.scrollTop;
+      const change = to - start;
+      if (Math.abs(change) < 1) return;
+      const startTime = performance.now();
+      const step = (now: number) => {
+        if (cancelled) return;
+        const t = Math.min(1, (now - startTime) / duration);
+        const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; // easeInOutQuad
+        el.scrollTop = start + change * eased;
+        if (t < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
     const moveTo = (selector: string) => {
       const stage = stageRef.current;
       const el = stage?.querySelector<HTMLElement>(selector);
       if (!stage || !el) return;
-      // Auto-scroll the left panel so the target is centered in view
+      const s = stage.getBoundingClientRect();
+      const eb = el.getBoundingClientRect();
       const left = leftRef.current;
+
+      let cursorY: number;
       if (left && left.contains(el)) {
         const lb = left.getBoundingClientRect();
-        const eb = el.getBoundingClientRect();
-        const targetTop = left.scrollTop + (eb.top - lb.top) - lb.height / 2 + eb.height / 2;
-        left.scrollTo({ top: Math.max(0, targetTop), behavior: "smooth" });
+        // Center element vertically inside the left panel
+        const desiredTop = left.scrollTop + (eb.top - lb.top) - lb.height / 2 + eb.height / 2;
+        const clamped = Math.max(0, Math.min(desiredTop, left.scrollHeight - left.clientHeight));
+        smoothScroll(left, clamped, 900);
+        // After scroll settles, element center Y (in stage coords) will be:
+        const scrollDelta = clamped - left.scrollTop;
+        cursorY = eb.top - s.top + eb.height / 2 - scrollDelta;
+      } else {
+        cursorY = eb.top - s.top + eb.height / 2;
       }
-      requestAnimationFrame(() => {
-        const s = stage.getBoundingClientRect();
-        const b = el.getBoundingClientRect();
-        setCursor({
-          x: b.left - s.left + b.width / 2,
-          y: b.top - s.top + b.height / 2,
-        });
+
+      setCursor({
+        x: eb.left - s.left + eb.width / 2,
+        y: cursorY,
       });
     };
 
