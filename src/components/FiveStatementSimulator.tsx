@@ -56,79 +56,75 @@ export default function FiveStatementSimulator() {
   const [checked, setChecked] = useState(false);
   const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
   const [activeExplIdx, setActiveExplIdx] = useState<number | null>(null);
-  const [cursor, setCursor] = useState({ x: 20, y: 20 });
-  const [clicking, setClicking] = useState(false);
   const [dim, setDim] = useState(false);
-  const stageRef = useRef<HTMLDivElement | null>(null);
+  const [zoom, setZoom] = useState<{ scale: number; ox: string; oy: string }>({
+    scale: 1,
+    ox: "50%",
+    oy: "0%",
+  });
+  const leftRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
-    const moveTo = (selector: string) => {
-      const stage = stageRef.current;
-      const el = stage?.querySelector<HTMLElement>(selector);
-      if (!stage || !el) return;
-      const s = stage.getBoundingClientRect();
+    const focusOn = (selector: string | null, scale = 1.12) => {
+      const panel = leftRef.current;
+      if (!panel) {
+        setZoom({ scale: 1, ox: "50%", oy: "0%" });
+        return;
+      }
+      if (!selector) {
+        setZoom({ scale: 1, ox: "50%", oy: "0%" });
+        return;
+      }
+      const el = panel.querySelector<HTMLElement>(selector);
+      if (!el) return;
+      const p = panel.getBoundingClientRect();
       const b = el.getBoundingClientRect();
-      setCursor({
-        x: b.left - s.left + b.width / 2,
-        y: b.top - s.top + b.height / 2,
-      });
-    };
-
-    const click = async () => {
-      setClicking(true);
-      await wait(180);
-      setClicking(false);
+      const ox = ((b.left - p.left + b.width / 2) / p.width) * 100;
+      const oy = ((b.top - p.top + b.height / 2) / p.height) * 100;
+      setZoom({ scale, ox: `${ox}%`, oy: `${oy}%` });
     };
 
     const loop = async () => {
       while (!cancelled) {
-        // Reset
         setDim(true);
         await wait(400);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveExplIdx(null);
+        focusOn(null);
         setDim(false);
-        await wait(500);
+        await wait(600);
 
-        // Step 1: click TRUE (checkbox) on each of the 5 statements the student thinks true
-        // Real user pattern: they mark all TRUE statements (indices where answer_key is true: 0, 2, 3)
-        // But to show the "trap" they also mark statement 4 (index 4) — which is FALSE — as true.
         const toMark = [0, 2, 3, 4];
         for (const i of toMark) {
           if (cancelled) return;
-          moveTo(`[data-sim-check="${i}"]`);
-          await wait(650);
-          await click();
+          focusOn(`[data-sim-row="${i}"]`, 1.15);
+          await wait(750);
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(250);
+          await wait(500);
         }
 
-        // Step 2: submit
-        moveTo(`[data-sim-submit]`);
-        await wait(650);
-        await click();
+        focusOn(null);
+        await wait(700);
         setChecked(true);
-        await wait(900);
+        await wait(1100);
 
-        // Step 3: for each statement open AI textbook explanation, one-by-one
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
-          moveTo(`[data-sim-ai="${i}"]`);
-          await wait(i === 4 ? 1100 : 600); // pause longer on the trap
-          await click();
+          focusOn(`[data-sim-row="${i}"]`, 1.18);
+          await wait(i === 4 ? 900 : 600);
           setActiveExplIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
-          await wait(i === 4 ? 1800 : 1200);
+          await wait(i === 4 ? 2200 : 1500);
         }
 
-        // Hold final diagnostic state
-        await wait(3000);
+        focusOn(null);
+        await wait(2600);
       }
     };
 
