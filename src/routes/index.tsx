@@ -815,29 +815,40 @@ function CapitalBars() {
 }
 
 const placements = [
-  "Goldman Sachs",
-  "McKinsey & Company",
-  "Boston Consulting Group",
-  "J.P. Morgan",
-  "Google",
-  "Morgan Stanley",
+  { name: "Goldman Sachs", domain: "goldmansachs.com" },
+  { name: "McKinsey & Company", domain: "mckinsey.com" },
+  { name: "Boston Consulting Group", domain: "bcg.com" },
+  { name: "J.P. Morgan", domain: "jpmorgan.com" },
+  { name: "Google", domain: "google.com" },
+  { name: "Morgan Stanley", domain: "morganstanley.com" },
 ];
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
+    <div className="rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
       <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
         Where alumni land
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-5">
-        {placements.map((name, i) => (
-          <div key={name} className="flex items-center gap-3 sm:gap-5">
-            <span className="font-display text-sm font-semibold tracking-tight text-primary-foreground/80 sm:text-base">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4">
+        {placements.map(({ name, domain }) => (
+          <div
+            key={name}
+            className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2.5 transition-colors hover:border-white/25 hover:bg-white/[0.07]"
+          >
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-1">
+              <img
+                src={`https://logo.clearbit.com/${domain}`}
+                alt={`${name} logo`}
+                loading="lazy"
+                className="h-full w-full object-contain"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
+                }}
+              />
+            </div>
+            <span className="min-w-0 truncate font-display text-xs font-semibold tracking-tight text-primary-foreground/85 sm:text-sm">
               {name}
             </span>
-            {i < placements.length - 1 && (
-              <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
-            )}
           </div>
         ))}
       </div>
