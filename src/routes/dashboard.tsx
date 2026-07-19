@@ -159,13 +159,25 @@ function DashboardPage() {
             <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-lg font-bold text-primary-foreground shadow-sm">
               {initial}
             </div>
-            <div>
+            <div className="flex-1">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Dashboard</p>
               <h1 className="mt-0.5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 Welcome back, {auth.name}
               </h1>
             </div>
+            <Link
+              to="/account"
+              className="hidden shrink-0 items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
+            >
+              ⚙ Account settings
+            </Link>
           </div>
+          <Link
+            to="/account"
+            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
+          >
+            ⚙ Account settings
+          </Link>
 
           {/* Mobile tab switcher */}
           <div className="mt-6 flex gap-2 sm:hidden">
