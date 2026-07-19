@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { MobileNav } from "@/components/MobileNav";
 import { AuthNav } from "@/components/AuthNav";
+import FiveStatementSimulator from "@/components/FiveStatementSimulator";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -167,6 +169,35 @@ function Index() {
             </div>
           </div>
         </section>
+
+        {/* FIVE-STATEMENT SIMULATION ENGINE */}
+        <section className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse at top, color-mix(in oklab, var(--color-caramel-deep) 14%, transparent), transparent 55%)",
+            }}
+          />
+          <div className="relative mx-auto max-w-6xl text-center">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.3em] text-caramel-deep">
+              Live product demo
+            </div>
+            <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Full-Cycle 5-Statement Simulation Engine
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
+              Watch the exact loop a prepared BBE candidate runs during the exam — TRUE/FALSE
+              decisions on the left, instant RAG-backed textbook proof on the right.
+            </p>
+          </div>
+          <div className="relative mx-auto mt-10 w-full max-w-6xl">
+            <FiveStatementSimulator />
+          </div>
+        </section>
+
+
 
         {/* PARALLAX BAND — darkened WU campus */}
         <section
