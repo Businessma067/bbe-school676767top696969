@@ -320,7 +320,7 @@ export default function FiveStatementSimulator() {
             </div>
 
             {activeExplIdx === null || !activeTextbook ? (
-              <div className="grid h-full min-h-[240px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center">
+              <div className="grid h-[180px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center sm:h-[220px]">
                 <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
                   After you check your answers, tap{" "}
                   <span className="font-semibold text-primary">Show AI textbook explanation</span>{" "}
