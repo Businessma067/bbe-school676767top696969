@@ -381,27 +381,6 @@ export default function FiveStatementSimulator() {
           </aside>
         </div>
 
-        {/* Cursor */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-all duration-700 ease-out"
-          style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
-        >
-          <div className="relative -translate-x-1 -translate-y-1">
-            <svg width="22" height="22" viewBox="0 0 24 24" className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
-              <path
-                d="M3 2 L3 18 L7.5 14 L10.5 21 L13.5 19.7 L10.5 12.8 L17 12.8 Z"
-                fill="#fff"
-                stroke="#111"
-                strokeWidth="1.2"
-                strokeLinejoin="round"
-              />
-            </svg>
-            {clicking && (
-              <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-primary/50" />
-            )}
-          </div>
-        </div>
       </div>
     </div>
   );
