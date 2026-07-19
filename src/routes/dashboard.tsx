@@ -132,6 +132,11 @@ function DashboardPage() {
 
   const initial = auth.name.charAt(0).toUpperCase();
 
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    navigate({ to: "/" });
+  };
+
   return (
     <Shell>
       <div className="flex min-h-[calc(100vh-57px)]">
