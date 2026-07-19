@@ -7,6 +7,7 @@ import { LiabilityChart } from "@/components/LiabilityChart";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { MobileNav } from "@/components/MobileNav";
+import { DesktopNav } from "@/components/DesktopNav";
 import { AuthNav } from "@/components/AuthNav";
 import FiveStatementSimulator from "@/components/FiveStatementSimulator";
 
@@ -20,8 +21,8 @@ function Index() {
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="/" className="group flex items-center gap-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
+          <a href="/" className="group flex items-center gap-3 shrink-0">
             <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
               <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
               <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-background ring-2 ring-primary" />
@@ -31,6 +32,7 @@ function Index() {
               <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
             </div>
           </a>
+          <DesktopNav />
           <div className="flex items-center gap-3">
             <AuthNav />
             <div className="lg:hidden">

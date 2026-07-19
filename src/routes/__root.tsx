@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Breadcrumbs } from "../components/Breadcrumbs";
+import { FloatingAssistant } from "../components/FloatingAssistant";
 
 function NotFoundComponent() {
   return (
@@ -132,6 +133,7 @@ function RootComponent() {
       <Breadcrumbs />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <FloatingAssistant />
     </QueryClientProvider>
   );
 }
