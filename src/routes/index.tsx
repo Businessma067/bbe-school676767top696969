@@ -610,22 +610,25 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
-      <div className="mb-8 flex items-start gap-5 sm:items-center">
-        <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
-          {index}
-        </span>
-        <span className="h-px flex-1 bg-white/10" />
-        <div className="min-w-0 text-right sm:text-left">
-          <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
-            {title}
-          </h3>
+    <section className="relative flex h-screen w-full snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
+      <div className="relative w-full max-w-6xl overflow-y-auto rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12" style={{ maxHeight: "calc(100vh - 4rem)" }}>
+        <div className="mb-8 flex items-start gap-5 sm:items-center">
+          <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
+            {index}
+          </span>
+          <span className="h-px flex-1 bg-white/10" />
+          <div className="min-w-0 text-right sm:text-left">
+            <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
+              {title}
+            </h3>
+          </div>
         </div>
+        {children}
       </div>
-      {children}
     </section>
   );
 }
+
 
 function CapitalBars() {
   const ref = useRef<HTMLDivElement>(null);
