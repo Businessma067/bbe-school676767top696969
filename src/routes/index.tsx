@@ -263,7 +263,17 @@ function Index() {
             }}
           />
           <div
-            className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden"
+            className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden overscroll-contain"
+            style={{ touchAction: "pan-x", overscrollBehavior: "contain" }}
+            onWheel={(e) => {
+              // Prevent horizontal-only scroller from hijacking the page's vertical wheel.
+              if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                e.currentTarget.scrollLeft += 0; // no-op; let page handle vertical scroll
+                // Manually bubble vertical scroll to the window
+                window.scrollBy({ top: e.deltaY, behavior: "auto" });
+                e.preventDefault();
+              }
+            }}
           >
 
             {/* Slide 01 — Acceptance Rate */}
