@@ -253,7 +253,7 @@ function Index() {
         </section>
 
         {/* WHY US — full-page snap slider */}
-        <div className="relative h-screen w-screen overflow-hidden bg-why-us-bg">
+        <div className="relative h-[100dvh] w-full overflow-hidden bg-why-us-bg">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 z-0"
@@ -263,8 +263,7 @@ function Index() {
             }}
           />
           <div
-            className="relative z-10 flex h-full w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scroll-smooth"
-            style={{ scrollBehavior: "smooth" }}
+            className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden"
           >
 
             {/* Slide 01 — Acceptance Rate */}
