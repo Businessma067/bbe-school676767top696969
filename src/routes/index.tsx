@@ -232,9 +232,10 @@ function Index() {
             }}
           />
           <div
-            className="relative z-10 h-full w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth"
+            className="relative z-10 flex h-full w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scroll-smooth"
             style={{ scrollBehavior: "smooth" }}
           >
+
             {/* Slide 01 — Acceptance Rate */}
             <WhySlide index="01" title="Acceptance Rate">
               <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
@@ -304,7 +305,7 @@ function Index() {
                 boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
               }}
             >
-              View Preparation Products <span aria-hidden>👇</span>
+              View Preparation Products
             </Link>
           </div>
         </section>
@@ -610,7 +611,7 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative flex h-screen w-full snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
+    <section className="relative flex h-screen w-screen flex-none snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
       <div className="relative w-full max-w-6xl overflow-y-auto rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12" style={{ maxHeight: "calc(100vh - 4rem)" }}>
         <div className="mb-8 flex items-start gap-5 sm:items-center">
           <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
