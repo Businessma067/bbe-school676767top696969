@@ -653,7 +653,7 @@ function CapitalBars() {
           requestAnimationFrame(tick);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.6 }
     );
     obs.observe(el);
     return () => obs.disconnect();
