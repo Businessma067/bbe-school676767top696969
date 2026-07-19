@@ -143,11 +143,11 @@ export default function FiveStatementSimulator() {
 
   return (
     // Outer "video frame" — matches the Rimini video block styling above
-    <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
+    <div className="relative h-[560px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[600px] lg:h-[640px]">
       <div
         ref={stageRef}
         className={cn(
-          "relative overflow-hidden rounded-xl bg-background transition-opacity duration-500",
+          "relative flex h-full flex-col overflow-hidden rounded-xl bg-background transition-opacity duration-500",
           dim ? "opacity-40" : "opacity-100",
         )}
       >
