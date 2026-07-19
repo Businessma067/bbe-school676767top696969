@@ -232,9 +232,10 @@ function Index() {
             }}
           />
           <div
-            className="relative z-10 h-full w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth"
+            className="relative z-10 flex h-full w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scroll-smooth"
             style={{ scrollBehavior: "smooth" }}
           >
+
             {/* Slide 01 — Acceptance Rate */}
             <WhySlide index="01" title="Acceptance Rate">
               <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
@@ -304,7 +305,7 @@ function Index() {
                 boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
               }}
             >
-              View Preparation Products <span aria-hidden>👇</span>
+              View Preparation Products
             </Link>
           </div>
         </section>
