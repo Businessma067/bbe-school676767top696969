@@ -750,30 +750,29 @@ function CapitalBars() {
 }
 
 const placements = [
-  "Goldman Sachs",
-  "McKinsey & Company",
-  "Boston Consulting Group",
-  "J.P. Morgan",
-  "Google",
-  "Morgan Stanley",
+  { name: "Goldman Sachs", slug: "goldmansachs" },
+  { name: "McKinsey & Company", slug: "mckinsey" },
+  { name: "Boston Consulting Group", slug: "bcg" },
+  { name: "J.P. Morgan", slug: "jpmorgan" },
+  { name: "Google", slug: "google" },
+  { name: "Morgan Stanley", slug: "morganstanley" },
 ];
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
-      <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-8">
+      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
         Where alumni land
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-5">
-        {placements.map((name, i) => (
-          <div key={name} className="flex items-center gap-3 sm:gap-5">
-            <span className="font-display text-sm font-semibold tracking-tight text-primary-foreground/80 sm:text-base">
-              {name}
-            </span>
-            {i < placements.length - 1 && (
-              <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
-            )}
-          </div>
+      <div className="grid grid-cols-3 items-center justify-items-center gap-x-6 gap-y-8 sm:grid-cols-6 sm:gap-x-8">
+        {placements.map(({ name, slug }) => (
+          <img
+            key={slug}
+            src={`https://cdn.simpleicons.org/${slug}/9ca3af`}
+            alt={`${name} logo`}
+            loading="lazy"
+            className="h-7 w-auto max-w-[110px] object-contain opacity-70 transition hover:opacity-100 sm:h-8"
+          />
         ))}
       </div>
     </div>
