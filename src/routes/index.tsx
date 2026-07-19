@@ -592,6 +592,158 @@ function RingMetric({
   );
 }
 
+function WhySlide({
+  index,
+  title,
+  subtitle,
+  children,
+}: {
+  index: string;
+  title: string;
+  subtitle: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+      <div className="mb-8 flex items-start gap-5 sm:items-center">
+        <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
+          {index}
+        </span>
+        <span className="h-px flex-1 bg-white/10" />
+        <div className="min-w-0 text-right sm:text-left">
+          <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
+            {title}
+          </h3>
+          <p className="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/50 sm:text-[11px]">
+            {subtitle}
+          </p>
+        </div>
+      </div>
+      {children}
+    </section>
+  );
+}
+
+function CapitalBars() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    let started = false;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          const dur = 1500;
+          const t0 = performance.now();
+          const ease = (t: number) => 1 - Math.pow(1 - t, 3);
+          const tick = (now: number) => {
+            const r = Math.min((now - t0) / dur, 1);
+            setProgress(ease(r));
+            if (r < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  const maxH = 260;
+  const ukHeight = maxH * progress;
+  const wuHeight = maxH * 0.11 * progress;
+
+  return (
+    <div
+      ref={ref}
+      className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8"
+    >
+      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+        Total tuition · 3 years
+      </p>
+      <div className="flex items-end justify-around gap-6" style={{ height: maxH + 20 }}>
+        <div className="flex h-full flex-1 flex-col items-center justify-end">
+          <span
+            className="mb-2 font-display text-sm font-semibold text-primary-foreground/85"
+            style={{ opacity: progress }}
+          >
+            €60k – €120k
+          </span>
+          <div
+            className="w-full max-w-[90px] rounded-t-md bg-white/25"
+            style={{
+              height: ukHeight,
+              transition: "background-color 0.3s",
+            }}
+          />
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/55">
+            UK / US Target Schools
+          </span>
+        </div>
+        <div className="flex h-full flex-1 flex-col items-center justify-end">
+          <span
+            className="mb-2 font-display text-sm font-semibold text-caramel-deep"
+            style={{ opacity: progress }}
+          >
+            ~€2,200
+          </span>
+          <div
+            className="w-full max-w-[90px] rounded-t-md"
+            style={{
+              height: wuHeight,
+              background: "linear-gradient(180deg, #F59E0B 0%, #E85D3A 100%)",
+              boxShadow: "0 0 24px -4px rgba(232,93,58,0.7)",
+            }}
+          />
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-caramel-deep">
+            WU Vienna · 3-Year Total
+          </span>
+        </div>
+      </div>
+      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-primary-foreground/55">
+        Same degree tier. <span className="text-primary-foreground/85">~50× tuition delta.</span>
+      </p>
+    </div>
+  );
+}
+
+const placements = [
+  "Goldman Sachs",
+  "McKinsey & Company",
+  "Boston Consulting Group",
+  "J.P. Morgan",
+  "Google",
+  "Morgan Stanley",
+];
+
+function PlacementsTicker() {
+  return (
+    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
+      <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+        Where alumni land
+      </p>
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-5">
+        {placements.map((name, i) => (
+          <div key={name} className="flex items-center gap-3 sm:gap-5">
+            <span className="font-display text-sm font-semibold tracking-tight text-primary-foreground/80 sm:text-base">
+              {name}
+            </span>
+            {i < placements.length - 1 && (
+              <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+
 const reports = [
 
   {
