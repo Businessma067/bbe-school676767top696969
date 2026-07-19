@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
-import { Flame } from "lucide-react";
+import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { LiabilityChart } from "@/components/LiabilityChart";
 import { cn } from "@/lib/utils";
@@ -253,86 +253,7 @@ function Index() {
         </section>
 
         {/* WHY US — full-page snap slider */}
-        <div className="relative h-[100dvh] w-full overflow-hidden bg-why-us-bg">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 z-0"
-            style={{
-              backgroundImage:
-                "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
-            }}
-          />
-          <div
-            className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden overscroll-contain"
-            style={{ touchAction: "pan-x", overscrollBehavior: "contain" }}
-            onWheel={(e) => {
-              // Prevent horizontal-only scroller from hijacking the page's vertical wheel.
-              if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-                e.currentTarget.scrollLeft += 0; // no-op; let page handle vertical scroll
-                // Manually bubble vertical scroll to the window
-                window.scrollBy({ top: e.deltaY, behavior: "auto" });
-                e.preventDefault();
-              }
-            }}
-          >
-
-            {/* Slide 01 — Acceptance Rate */}
-            <WhySlide index="01" title="Acceptance Rate">
-              <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
-                <RingMetric
-                  value="8%"
-                  label="Official WU Vienna BBE Acceptance Rate"
-                  sublabel="(Average Applicant Pool)"
-                  variant="muted"
-                  percent={0.08}
-                />
-                <RingMetric
-                  value="41.3%"
-                  label="BBE-School Acceptance Rate"
-                  sublabel="57 out of 138 prepared students successfully admitted last year"
-                  variant="accent"
-                  percent={0.413}
-                  glow
-                />
-              </div>
-              <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-                Our students achieve a success rate{" "}
-                <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-                applicant pool.
-              </p>
-            </WhySlide>
-
-            {/* Slide 02 — Capital Preservation */}
-            <WhySlide index="02" title="Capital Preservation">
-              <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-                <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-                  Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
-                  textbook slides with you — that is a financial black hole. Furthermore, top-tier
-                  university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
-                  than comparable business schools in the UK or US, making it the highest ROI
-                  investment in your future. A single one-time investment in our platform saves you
-                  thousands of euros in useless prep costs, protecting your path to an incredibly
-                  affordable, world-class degree. Failing the exam means losing a{" "}
-                  <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
-                </p>
-                <CapitalBars />
-              </div>
-            </WhySlide>
-
-            {/* Slide 03 — Top-Tier Career Outcomes */}
-            <WhySlide index="03" title="Top-Tier Career Outcomes">
-              <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-                WU Vienna is a premier target university for the world's elite firms, but only for
-                the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
-                your brain to handle brutal exam pressure now, you build the raw analytical stamina
-                required to later survive intense recruitment cycles and secure elite international
-                career placements. BBE alumni consistently secure top-tier offers across global
-                financial and consulting hubs.
-              </p>
-              <PlacementsTicker />
-            </WhySlide>
-          </div>
-        </div>
+        <WhyUsSlider />
 
         {/* CTA below snap slider */}
         <section className="relative bg-why-us-bg px-6 py-16 lg:px-8">
@@ -639,6 +560,153 @@ function RingMetric({
       </div>
       <h3 className="mt-6 font-display text-lg font-semibold text-primary-foreground">{label}</h3>
       <p className="mt-1 text-sm text-primary-foreground/60">{sublabel}</p>
+    </div>
+  );
+}
+
+function WhyUsSlider() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  const total = 3;
+
+  const scrollTo = (index: number) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const slide = track.children[index] as HTMLElement | undefined;
+    if (!slide) return;
+    track.scrollTo({ left: slide.offsetLeft, behavior: "smooth" });
+  };
+
+  const next = () => scrollTo((active + 1) % total);
+  const prev = () => scrollTo((active - 1 + total) % total);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const onScroll = () => {
+      const width = track.clientWidth || 1;
+      const idx = Math.round(track.scrollLeft / width);
+      setActive(Math.max(0, Math.min(total - 1, idx)));
+    };
+    track.addEventListener("scroll", onScroll, { passive: true });
+    return () => track.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <div className="relative h-[100dvh] w-full overflow-hidden bg-why-us-bg">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
+        }}
+      />
+
+      {/* Desktop arrows */}
+      <button
+        type="button"
+        aria-label="Previous slide"
+        onClick={prev}
+        className="hidden md:absolute md:left-6 md:top-1/2 md:z-20 md:flex md:h-12 md:w-12 md:-translate-y-1/2 md:items-center md:justify-center md:rounded-full md:border md:border-white/15 md:bg-black/40 md:text-primary-foreground md:backdrop-blur-sm md:transition-all md:hover:border-caramel-deep md:hover:bg-black/60 md:hover:text-caramel"
+      >
+        <ChevronLeft size={24} />
+      </button>
+      <button
+        type="button"
+        aria-label="Next slide"
+        onClick={next}
+        className="hidden md:absolute md:right-6 md:top-1/2 md:z-20 md:flex md:h-12 md:w-12 md:-translate-y-1/2 md:items-center md:justify-center md:rounded-full md:border md:border-white/15 md:bg-black/40 md:text-primary-foreground md:backdrop-blur-sm md:transition-all md:hover:border-caramel-deep md:hover:bg-black/60 md:hover:text-caramel"
+      >
+        <ChevronRight size={24} />
+      </button>
+
+      {/* Dot indicators */}
+      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 md:bottom-8">
+        {Array.from({ length: total }).map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            aria-label={`Go to slide ${i + 1}`}
+            onClick={() => scrollTo(i)}
+            className={cn(
+              "h-2 rounded-full transition-all duration-300",
+              active === i
+                ? "w-8 bg-caramel-deep"
+                : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50"
+            )}
+          />
+        ))}
+      </div>
+
+      <div
+        ref={trackRef}
+        className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden overscroll-contain"
+        style={{ touchAction: "pan-x", overscrollBehavior: "contain" }}
+        onWheel={(e) => {
+          // Prevent horizontal-only scroller from hijacking the page's vertical wheel.
+          if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+            window.scrollBy({ top: e.deltaY, behavior: "auto" });
+            e.preventDefault();
+          }
+        }}
+      >
+        {/* Slide 01 — Acceptance Rate */}
+        <WhySlide index="01" title="Acceptance Rate">
+          <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+            <RingMetric
+              value="8%"
+              label="Official WU Vienna BBE Acceptance Rate"
+              sublabel="(Average Applicant Pool)"
+              variant="muted"
+              percent={0.08}
+            />
+            <RingMetric
+              value="41.3%"
+              label="BBE-School Acceptance Rate"
+              sublabel="57 out of 138 prepared students successfully admitted last year"
+              variant="accent"
+              percent={0.413}
+              glow
+            />
+          </div>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+            Our students achieve a success rate{" "}
+            <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+            applicant pool.
+          </p>
+        </WhySlide>
+
+        {/* Slide 02 — Capital Preservation */}
+        <WhySlide index="02" title="Capital Preservation">
+          <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+            <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+              Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+              textbook slides with you — that is a financial black hole. Furthermore, top-tier
+              university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
+              than comparable business schools in the UK or US, making it the highest ROI
+              investment in your future. A single one-time investment in our platform saves you
+              thousands of euros in useless prep costs, protecting your path to an incredibly
+              affordable, world-class degree. Failing the exam means losing a{" "}
+              <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+            </p>
+            <CapitalBars />
+          </div>
+        </WhySlide>
+
+        {/* Slide 03 — Top-Tier Career Outcomes */}
+        <WhySlide index="03" title="Top-Tier Career Outcomes">
+          <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+            WU Vienna is a premier target university for the world's elite firms, but only for
+            the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
+            your brain to handle brutal exam pressure now, you build the raw analytical stamina
+            required to later survive intense recruitment cycles and secure elite international
+            career placements. BBE alumni consistently secure top-tier offers across global
+            financial and consulting hubs.
+          </p>
+          <PlacementsTicker />
+        </WhySlide>
+      </div>
     </div>
   );
 }
