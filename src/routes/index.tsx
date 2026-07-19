@@ -627,7 +627,9 @@ function RingMetric({
         <div className="absolute inset-0 flex items-center justify-center">
           <span
             className={cn(
-              "font-display text-4xl font-bold sm:text-5xl",
+              "font-display font-bold tabular-nums tracking-tight leading-none",
+              // scale so long values like "41.3%" fit inside the inner circle
+              displayValue.length >= 5 ? "text-2xl sm:text-3xl" : "text-3xl sm:text-4xl",
               isAccent ? "text-caramel-deep" : "text-primary-foreground/60"
             )}
           >
