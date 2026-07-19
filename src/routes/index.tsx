@@ -288,14 +288,8 @@ function Index() {
             </WhySlide>
 
             <div className="mt-16 flex justify-center">
-              <a
-                href="#bbe-products"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("bbe-products")
-                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+              <Link
+                to="/products"
                 className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                 style={{
                   background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
@@ -303,7 +297,7 @@ function Index() {
                 }}
               >
                 View Preparation Products <span aria-hidden>👇</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
