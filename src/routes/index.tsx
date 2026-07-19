@@ -219,73 +219,75 @@ function Index() {
               </p>
             </div>
 
-            {/* Slide 01 — Acceptance Rate */}
-            <WhySlide
-              index="01"
-              title="Acceptance Rate Uplift"
-              subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
-            >
-              <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
-                <RingMetric
-                  value="8%"
-                  label="Official WU Vienna BBE Acceptance Rate"
-                  sublabel="(Average Applicant Pool)"
-                  variant="muted"
-                  percent={0.08}
-                />
-                <RingMetric
-                  value="41.3%"
-                  label="BBE-School Acceptance Rate"
-                  sublabel="57 out of 138 prepared students successfully admitted last year"
-                  variant="accent"
-                  percent={0.413}
-                  glow
-                />
-              </div>
-              <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-                Our students achieve a success rate{" "}
-                <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-                applicant pool.
-              </p>
-            </WhySlide>
-
-            {/* Slide 02 — Capital Preservation */}
-            <WhySlide
-              index="02"
-              title="Capital Preservation"
-              subtitle="One exam, one decision — protecting a six-figure family advantage."
-            >
-              <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-                <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-                  Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
-                  textbook slides with you — that is a financial black hole. Furthermore, top-tier
-                  university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
-                  than comparable business schools in the UK or US, making it the highest ROI
-                  investment in your future. A single one-time investment in our platform saves you
-                  thousands of euros in useless prep costs, protecting your path to an incredibly
-                  affordable, world-class degree. Failing the exam means losing a{" "}
-                  <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+            <WhyCarousel>
+              {/* Slide 01 — Acceptance Rate */}
+              <WhySlide
+                index="01"
+                title="Acceptance Rate Uplift"
+                subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
+              >
+                <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+                  <RingMetric
+                    value="8%"
+                    label="Official WU Vienna BBE Acceptance Rate"
+                    sublabel="(Average Applicant Pool)"
+                    variant="muted"
+                    percent={0.08}
+                  />
+                  <RingMetric
+                    value="41.3%"
+                    label="BBE-School Acceptance Rate"
+                    sublabel="57 out of 138 prepared students successfully admitted last year"
+                    variant="accent"
+                    percent={0.413}
+                    glow
+                  />
+                </div>
+                <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+                  Our students achieve a success rate{" "}
+                  <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+                  applicant pool.
                 </p>
-                <CapitalBars />
-              </div>
-            </WhySlide>
+              </WhySlide>
 
-            {/* Slide 03 — Top-Tier Career Outcomes */}
-            <WhySlide
-              index="03"
-              title="Top-Tier Career Outcomes"
-              subtitle="Where the top of the class ends up after WU Vienna."
-            >
-              <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-                WU Vienna is a premier target university for the world's elite firms, but only for
-                the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
-                your brain to handle brutal exam pressure now, you build the raw analytical stamina
-                required to later survive intense recruitment cycles and secure elite international
-                career placements. BBE alumni consistently secure top-tier offers across global
-                financial and consulting hubs.
-              </p>
-              <PlacementsTicker />
-            </WhySlide>
+              {/* Slide 02 — Capital Preservation */}
+              <WhySlide
+                index="02"
+                title="Capital Preservation"
+                subtitle="One exam, one decision — protecting a six-figure family advantage."
+              >
+                <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+                  <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                    Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                    textbook slides with you — that is a financial black hole. Furthermore, top-tier
+                    university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
+                    than comparable business schools in the UK or US, making it the highest ROI
+                    investment in your future. A single one-time investment in our platform saves you
+                    thousands of euros in useless prep costs, protecting your path to an incredibly
+                    affordable, world-class degree. Failing the exam means losing a{" "}
+                    <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+                  </p>
+                  <CapitalBars />
+                </div>
+              </WhySlide>
+
+              {/* Slide 03 — Top-Tier Career Outcomes */}
+              <WhySlide
+                index="03"
+                title="Top-Tier Career Outcomes"
+                subtitle="Where the top of the class ends up after WU Vienna."
+              >
+                <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                  WU Vienna is a premier target university for the world's elite firms, but only for
+                  the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
+                  your brain to handle brutal exam pressure now, you build the raw analytical stamina
+                  required to later survive intense recruitment cycles and secure elite international
+                  career placements. BBE alumni consistently secure top-tier offers across global
+                  financial and consulting hubs.
+                </p>
+                <PlacementsTicker />
+              </WhySlide>
+            </WhyCarousel>
 
             <div className="mt-16 flex justify-center">
               <Link
@@ -592,6 +594,96 @@ function RingMetric({
   );
 }
 
+function WhyCarousel({ children }: { children: ReactNode }) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const slides = Array.isArray(children) ? children : [children];
+  const total = slides.length;
+  const [active, setActive] = useState(0);
+  const userInteractingRef = useRef(false);
+  const interactTimerRef = useRef<number | null>(null);
+
+  // Track which slide is centered.
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const onScroll = () => {
+      const w = el.clientWidth;
+      const idx = Math.round(el.scrollLeft / w);
+      setActive(Math.max(0, Math.min(total - 1, idx)));
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [total]);
+
+  // Pause nudge briefly on any user interaction.
+  const markInteract = () => {
+    userInteractingRef.current = true;
+    if (interactTimerRef.current) window.clearTimeout(interactTimerRef.current);
+    interactTimerRef.current = window.setTimeout(() => {
+      userInteractingRef.current = false;
+    }, 4000);
+  };
+
+  // Every 7.5s, gently nudge toward next slide and back — a "peek" hint.
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const id = window.setInterval(() => {
+      if (userInteractingRef.current) return;
+      const w = el.clientWidth;
+      const maxLeft = el.scrollWidth - w;
+      const atEnd = el.scrollLeft >= maxLeft - 4;
+      const dir = atEnd ? -1 : 1;
+      const peek = Math.min(46, w * 0.08);
+      const base = el.scrollLeft;
+      el.scrollTo({ left: base + dir * peek, behavior: "smooth" });
+      window.setTimeout(() => {
+        el.scrollTo({ left: base, behavior: "smooth" });
+      }, 650);
+    }, 7500);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const goTo = (i: number) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    markInteract();
+    el.scrollTo({ left: i * el.clientWidth, behavior: "smooth" });
+  };
+
+  return (
+    <div className="mt-10">
+      <div
+        ref={scrollerRef}
+        onPointerDown={markInteract}
+        onWheel={markInteract}
+        onTouchStart={markInteract}
+        className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {slides.map((child, i) => (
+          <div key={i} className="min-w-full shrink-0 snap-center">
+            {child}
+          </div>
+        ))}
+      </div>
+      <div className="mt-6 flex items-center justify-center gap-2.5">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            aria-label={`Go to slide ${i + 1}`}
+            onClick={() => goTo(i)}
+            className={cn(
+              "h-2 rounded-full transition-all",
+              active === i ? "w-8 bg-caramel-deep" : "w-2 bg-white/25 hover:bg-white/50"
+            )}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function WhySlide({
   index,
   title,
@@ -604,7 +696,7 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+    <section className="relative h-full overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
       <div className="mb-8 flex items-start gap-5 sm:items-center">
         <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
           {index}
