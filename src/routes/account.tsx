@@ -103,7 +103,16 @@ function AccountPage() {
     <div className="min-h-screen bg-background text-foreground">
       <PageHeader />
       <main className="mx-auto max-w-5xl space-y-6 px-6 py-10">
-        <h1 className="font-display text-3xl font-bold tracking-tight">My account</h1>
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <h1 className="font-display text-3xl font-bold tracking-tight">My account</h1>
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            Log out
+          </button>
+        </div>
 
         {/* PROFILE */}
         <Card title="Profile">
