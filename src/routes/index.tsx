@@ -220,43 +220,53 @@ function Index() {
             </div>
 
             <WhyCarousel>
-              {/* Slide 01 — Acceptance Rate */}
+              {/* Slide 01 — Acceptance Rate — graphic LEFT, text RIGHT */}
               <WhySlide
                 index="01"
                 title="Acceptance Rate Uplift"
                 subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
               >
-                <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
-                  <RingMetric
-                    value="8%"
-                    label="Official WU Vienna BBE Acceptance Rate"
-                    sublabel="(Average Applicant Pool)"
-                    variant="muted"
-                    percent={0.08}
-                  />
-                  <RingMetric
-                    value="41.3%"
-                    label="BBE-School Acceptance Rate"
-                    sublabel="57 out of 138 prepared students successfully admitted last year"
-                    variant="accent"
-                    percent={0.413}
-                    glow
-                  />
+                <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    <RingMetric
+                      value="8%"
+                      label="Official WU Vienna BBE Acceptance Rate"
+                      sublabel="(Average Applicant Pool)"
+                      variant="muted"
+                      percent={0.08}
+                    />
+                    <RingMetric
+                      value="41.3%"
+                      label="BBE-School Acceptance Rate"
+                      sublabel="57 out of 138 prepared students successfully admitted last year"
+                      variant="accent"
+                      percent={0.413}
+                      glow
+                    />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                      Last year, only 8% of general applicants earned a seat at WU Vienna's BBE
+                      program. Students who prepared with us achieved a 41.3% admission rate — 57
+                      out of 138 candidates walked into the exam ready, and walked out admitted.
+                    </p>
+                    <p className="mt-6 text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+                      Our students achieve a success rate{" "}
+                      <span className="text-caramel-deep">nearly 6 times higher</span> than the
+                      general applicant pool.
+                    </p>
+                  </div>
                 </div>
-                <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-                  Our students achieve a success rate{" "}
-                  <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-                  applicant pool.
-                </p>
               </WhySlide>
 
-              {/* Slide 02 — Capital Preservation */}
+              {/* Slide 02 — Capital Preservation — graphic LEFT, text RIGHT */}
               <WhySlide
                 index="02"
                 title="Capital Preservation"
                 subtitle="One exam, one decision — protecting a six-figure family advantage."
               >
-                <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+                <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:items-center">
+                  <CapitalBars />
                   <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                     Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
                     textbook slides with you — that is a financial black hole. Furthermore, top-tier
@@ -267,25 +277,26 @@ function Index() {
                     affordable, world-class degree. Failing the exam means losing a{" "}
                     <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
                   </p>
-                  <CapitalBars />
                 </div>
               </WhySlide>
 
-              {/* Slide 03 — Top-Tier Career Outcomes */}
+              {/* Slide 03 — Top-Tier Career Outcomes — text LEFT, logos RIGHT */}
               <WhySlide
                 index="03"
                 title="Top-Tier Career Outcomes"
                 subtitle="Where the top of the class ends up after WU Vienna."
               >
-                <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-                  WU Vienna is a premier target university for the world's elite firms, but only for
-                  the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
-                  your brain to handle brutal exam pressure now, you build the raw analytical stamina
-                  required to later survive intense recruitment cycles and secure elite international
-                  career placements. BBE alumni consistently secure top-tier offers across global
-                  financial and consulting hubs.
-                </p>
-                <PlacementsTicker />
+                <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+                  <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                    WU Vienna is a premier target university for the world's elite firms, but only for
+                    the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
+                    your brain to handle brutal exam pressure now, you build the raw analytical stamina
+                    required to later survive intense recruitment cycles and secure elite international
+                    career placements. BBE alumni consistently secure top-tier offers across global
+                    financial and consulting hubs.
+                  </p>
+                  <PlacementsTicker />
+                </div>
               </WhySlide>
             </WhyCarousel>
 
@@ -804,29 +815,40 @@ function CapitalBars() {
 }
 
 const placements = [
-  "Goldman Sachs",
-  "McKinsey & Company",
-  "Boston Consulting Group",
-  "J.P. Morgan",
-  "Google",
-  "Morgan Stanley",
+  { name: "Goldman Sachs", domain: "goldmansachs.com" },
+  { name: "McKinsey & Company", domain: "mckinsey.com" },
+  { name: "Boston Consulting Group", domain: "bcg.com" },
+  { name: "J.P. Morgan", domain: "jpmorgan.com" },
+  { name: "Google", domain: "google.com" },
+  { name: "Morgan Stanley", domain: "morganstanley.com" },
 ];
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
+    <div className="rounded-xl border border-white/10 bg-black/30 px-4 py-5 sm:px-6 sm:py-6">
       <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
         Where alumni land
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-5">
-        {placements.map((name, i) => (
-          <div key={name} className="flex items-center gap-3 sm:gap-5">
-            <span className="font-display text-sm font-semibold tracking-tight text-primary-foreground/80 sm:text-base">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4">
+        {placements.map(({ name, domain }) => (
+          <div
+            key={name}
+            className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2.5 transition-colors hover:border-white/25 hover:bg-white/[0.07]"
+          >
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white p-1">
+              <img
+                src={`https://logo.clearbit.com/${domain}`}
+                alt={`${name} logo`}
+                loading="lazy"
+                className="h-full w-full object-contain"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
+                }}
+              />
+            </div>
+            <span className="min-w-0 truncate font-display text-xs font-semibold tracking-tight text-primary-foreground/85 sm:text-sm">
               {name}
             </span>
-            {i < placements.length - 1 && (
-              <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
-            )}
           </div>
         ))}
       </div>
