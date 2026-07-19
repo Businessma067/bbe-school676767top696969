@@ -219,41 +219,91 @@ function Index() {
               </p>
             </div>
 
-            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:gap-8">
-              <RingMetric
-                value="8%"
-                label="Official WU Vienna BBE Acceptance Rate"
-                sublabel="(Average Applicant Pool)"
-                variant="muted"
-                percent={0.08}
-              />
-              <RingMetric
-                value="41.3%"
-                label="BBE-School Acceptance Rate"
-                sublabel="57 out of 138 prepared students successfully admitted last year"
-                variant="accent"
-                percent={0.413}
-                glow
-              />
-            </div>
+            {/* Slide 01 — Acceptance Rate */}
+            <WhySlide
+              index="01"
+              title="Acceptance Rate Uplift"
+              subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
+            >
+              <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+                <RingMetric
+                  value="8%"
+                  label="Official WU Vienna BBE Acceptance Rate"
+                  sublabel="(Average Applicant Pool)"
+                  variant="muted"
+                  percent={0.08}
+                />
+                <RingMetric
+                  value="41.3%"
+                  label="BBE-School Acceptance Rate"
+                  sublabel="57 out of 138 prepared students successfully admitted last year"
+                  variant="accent"
+                  percent={0.413}
+                  glow
+                />
+              </div>
+              <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+                Our students achieve a success rate{" "}
+                <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+                applicant pool.
+              </p>
+            </WhySlide>
 
-            <p className="mx-auto mt-12 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-              Our students achieve a success rate{" "}
-              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-              applicant pool.
-            </p>
+            {/* Slide 02 — Capital Preservation */}
+            <WhySlide
+              index="02"
+              title="Capital Preservation"
+              subtitle="One exam, one decision — protecting a six-figure family advantage."
+            >
+              <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+                <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                  Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                  textbook slides with you — that is a financial black hole. Furthermore, top-tier
+                  university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
+                  than comparable business schools in the UK or US, making it the highest ROI
+                  investment in your future. A single one-time investment in our platform saves you
+                  thousands of euros in useless prep costs, protecting your path to an incredibly
+                  affordable, world-class degree. Failing the exam means losing a{" "}
+                  <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+                </p>
+                <CapitalBars />
+              </div>
+            </WhySlide>
 
-            <div className="mt-12 flex justify-center">
-              <Link
-                to="/products"
-                className="inline-flex items-center justify-center rounded-md px-7 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+            {/* Slide 03 — Top-Tier Career Outcomes */}
+            <WhySlide
+              index="03"
+              title="Top-Tier Career Outcomes"
+              subtitle="Where the top of the class ends up after WU Vienna."
+            >
+              <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                WU Vienna is a premier target university for the world's elite firms, but only for
+                the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
+                your brain to handle brutal exam pressure now, you build the raw analytical stamina
+                required to later survive intense recruitment cycles and secure elite international
+                career placements. BBE alumni consistently secure top-tier offers across global
+                financial and consulting hubs.
+              </p>
+              <PlacementsTicker />
+            </WhySlide>
+
+            <div className="mt-16 flex justify-center">
+              <a
+                href="#bbe-products"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("bbe-products")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                 style={{
                   background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                  boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                  boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
                 }}
               >
-                View Preparation Courses
-              </Link>
+                View Preparation Products <span aria-hidden>👇</span>
+              </a>
             </div>
           </div>
         </section>
