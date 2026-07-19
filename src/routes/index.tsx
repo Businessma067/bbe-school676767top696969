@@ -606,7 +606,7 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+    <section className="relative h-full overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
       <div className="mb-8 flex items-start gap-5 sm:items-center">
         <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
           {index}
