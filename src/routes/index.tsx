@@ -218,12 +218,25 @@ function Index() {
                 disciplined work. But our data proves how we shift the odds in your favor.
               </p>
             </div>
+          </div>
+        </section>
 
+        {/* WHY US — full-page snap slider */}
+        <div className="relative h-screen w-screen overflow-hidden bg-why-us-bg">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
+            }}
+          />
+          <div
+            className="relative z-10 h-full w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth"
+            style={{ scrollBehavior: "smooth" }}
+          >
             {/* Slide 01 — Acceptance Rate */}
-            <WhySlide
-              index="01"
-              title="Acceptance Rate"
-            >
+            <WhySlide index="01" title="Acceptance Rate">
               <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
                 <RingMetric
                   value="8%"
@@ -249,10 +262,7 @@ function Index() {
             </WhySlide>
 
             {/* Slide 02 — Capital Preservation */}
-            <WhySlide
-              index="02"
-              title="Capital Preservation"
-            >
+            <WhySlide index="02" title="Capital Preservation">
               <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
                 <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                   Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
@@ -269,10 +279,7 @@ function Index() {
             </WhySlide>
 
             {/* Slide 03 — Top-Tier Career Outcomes */}
-            <WhySlide
-              index="03"
-              title="Top-Tier Career Outcomes"
-            >
+            <WhySlide index="03" title="Top-Tier Career Outcomes">
               <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                 WU Vienna is a premier target university for the world's elite firms, but only for
                 the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
@@ -283,21 +290,25 @@ function Index() {
               </p>
               <PlacementsTicker />
             </WhySlide>
+          </div>
+        </div>
 
-            <div className="mt-16 flex justify-center">
-              <Link
-                to="/products"
-                className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                style={{
-                  background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                  boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
-                }}
-              >
-                View Preparation Products <span aria-hidden>👇</span>
-              </Link>
-            </div>
+        {/* CTA below snap slider */}
+        <section className="relative bg-why-us-bg px-6 py-16 lg:px-8">
+          <div className="mx-auto flex max-w-6xl justify-center">
+            <Link
+              to="/products"
+              className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+              style={{
+                background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
+              }}
+            >
+              View Preparation Products <span aria-hidden>👇</span>
+            </Link>
           </div>
         </section>
+
 
         {/* LIABILITY CHART — light academic island */}
         <section className="relative px-6 py-24 lg:px-8 lg:py-32 bg-ivory">
