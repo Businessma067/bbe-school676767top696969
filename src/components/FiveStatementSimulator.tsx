@@ -143,11 +143,11 @@ export default function FiveStatementSimulator() {
 
   return (
     // Outer "video frame" — matches the Rimini video block styling above
-    <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
+    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[520px] lg:h-[560px]">
       <div
         ref={stageRef}
         className={cn(
-          "relative overflow-hidden rounded-xl bg-background transition-opacity duration-500",
+          "relative flex h-full flex-col overflow-hidden rounded-xl bg-background transition-opacity duration-500",
           dim ? "opacity-40" : "opacity-100",
         )}
       >
@@ -166,9 +166,9 @@ export default function FiveStatementSimulator() {
           </div>
         </div>
 
-        <div className="grid gap-4 p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
+        <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
           {/* LEFT: real CaseCard replica */}
-          <article className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
+          <article className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
             <div className="mb-4 flex flex-wrap items-center gap-2">
               <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Task 1
@@ -308,7 +308,7 @@ export default function FiveStatementSimulator() {
           </article>
 
           {/* RIGHT: AI Explanation Hub (Classic + Textbook Canvas) */}
-          <aside className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
+          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                 AI Explanation Engine
@@ -320,7 +320,7 @@ export default function FiveStatementSimulator() {
             </div>
 
             {activeExplIdx === null || !activeTextbook ? (
-              <div className="grid h-full min-h-[240px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center">
+              <div className="grid h-[180px] place-items-center rounded-xl border border-dashed border-border bg-background/60 p-6 text-center sm:h-[220px]">
                 <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
                   After you check your answers, tap{" "}
                   <span className="font-semibold text-primary">Show AI textbook explanation</span>{" "}
