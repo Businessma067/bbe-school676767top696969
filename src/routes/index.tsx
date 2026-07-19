@@ -222,8 +222,7 @@ function Index() {
             {/* Slide 01 — Acceptance Rate */}
             <WhySlide
               index="01"
-              title="Acceptance Rate Uplift"
-              subtitle="Prepared vs. general applicant pool — measured on last year's cohort."
+              title="Acceptance Rate"
             >
               <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
                 <RingMetric
@@ -253,7 +252,6 @@ function Index() {
             <WhySlide
               index="02"
               title="Capital Preservation"
-              subtitle="One exam, one decision — protecting a six-figure family advantage."
             >
               <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
                 <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
@@ -274,7 +272,6 @@ function Index() {
             <WhySlide
               index="03"
               title="Top-Tier Career Outcomes"
-              subtitle="Where the top of the class ends up after WU Vienna."
             >
               <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                 WU Vienna is a premier target university for the world's elite firms, but only for
@@ -595,12 +592,10 @@ function RingMetric({
 function WhySlide({
   index,
   title,
-  subtitle,
   children,
 }: {
   index: string;
   title: string;
-  subtitle: string;
   children: ReactNode;
 }) {
   return (
@@ -614,9 +609,6 @@ function WhySlide({
           <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
             {title}
           </h3>
-          <p className="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/50 sm:text-[11px]">
-            {subtitle}
-          </p>
         </div>
       </div>
       {children}
