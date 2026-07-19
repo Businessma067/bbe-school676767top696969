@@ -64,25 +64,39 @@ export default function FiveStatementSimulator() {
 
   useEffect(() => {
     let cancelled = false;
+    const MOVE_DURATION = 1050;
+    const CLICK_PRESS_DURATION = 170;
+    const CLICK_SETTLE_DURATION = 180;
+    const STEP_SETTLE_DURATION = 260;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
-    const smoothScroll = (el: HTMLElement, to: number, duration = 900) => {
+    const smoothScroll = (el: HTMLElement, to: number, duration = MOVE_DURATION) => {
       const start = el.scrollTop;
       const change = to - start;
-      if (Math.abs(change) < 1) return;
-      const startTime = performance.now();
-      const step = (now: number) => {
-        if (cancelled) return;
-        const t = Math.min(1, (now - startTime) / duration);
-        const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; // easeInOutQuad
-        el.scrollTop = start + change * eased;
-        if (t < 1) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
+      if (Math.abs(change) < 1) return Promise.resolve();
+
+      return new Promise<void>((resolve) => {
+        const startTime = performance.now();
+        const step = (now: number) => {
+          if (cancelled) {
+            resolve();
+            return;
+          }
+          const t = Math.min(1, (now - startTime) / duration);
+          const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; // easeInOutQuad
+          el.scrollTop = start + change * eased;
+          if (t < 1) {
+            requestAnimationFrame(step);
+          } else {
+            resolve();
+          }
+        };
+        requestAnimationFrame(step);
+      });
     };
 
-    const moveTo = (selector: string) => {
+    const moveTo = async (selector: string) => {
       const stage = stageRef.current;
       const el = stage?.querySelector<HTMLElement>(selector);
       if (!stage || !el) return;
@@ -91,12 +105,13 @@ export default function FiveStatementSimulator() {
       const left = leftRef.current;
 
       let cursorY: number;
+      let scrollPromise = Promise.resolve();
       if (left && left.contains(el)) {
         const lb = left.getBoundingClientRect();
         // Center element vertically inside the left panel
         const desiredTop = left.scrollTop + (eb.top - lb.top) - lb.height / 2 + eb.height / 2;
         const clamped = Math.max(0, Math.min(desiredTop, left.scrollHeight - left.clientHeight));
-        smoothScroll(left, clamped, 900);
+        scrollPromise = smoothScroll(left, clamped, MOVE_DURATION);
         // After scroll settles, element center Y (in stage coords) will be:
         const scrollDelta = clamped - left.scrollTop;
         cursorY = eb.top - s.top + eb.height / 2 - scrollDelta;
@@ -108,12 +123,16 @@ export default function FiveStatementSimulator() {
         x: eb.left - s.left + eb.width / 2,
         y: cursorY,
       });
+
+      await Promise.all([scrollPromise, wait(MOVE_DURATION)]);
+      await wait(STEP_SETTLE_DURATION);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(180);
+      await wait(CLICK_PRESS_DURATION);
       setClicking(false);
+      await wait(CLICK_SETTLE_DURATION);
     };
 
     const loop = async () => {
@@ -134,29 +153,27 @@ export default function FiveStatementSimulator() {
         const toMark = [0, 2, 3, 4];
         for (const i of toMark) {
           if (cancelled) return;
-          moveTo(`[data-sim-check="${i}"]`);
-          await wait(650);
+          await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(250);
+          await wait(STEP_SETTLE_DURATION);
         }
 
         // Step 2: submit
-        moveTo(`[data-sim-submit]`);
-        await wait(650);
+        await moveTo(`[data-sim-submit]`);
         await click();
         setChecked(true);
-        await wait(900);
+        await wait(1100);
 
         // Step 3: for each statement open AI textbook explanation, one-by-one
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
-          moveTo(`[data-sim-ai="${i}"]`);
-          await wait(i === 4 ? 1100 : 600); // pause longer on the trap
+          await moveTo(`[data-sim-ai="${i}"]`);
+          if (i === 4) await wait(450); // pause longer on the trap before opening it
           await click();
           setActiveExplIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
-          await wait(i === 4 ? 1800 : 1200);
+          await wait(i === 4 ? 2200 : 1500);
         }
 
         // Hold final diagnostic state
