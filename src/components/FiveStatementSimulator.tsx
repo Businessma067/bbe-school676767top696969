@@ -210,6 +210,7 @@ export default function FiveStatementSimulator() {
                 return (
                   <li
                     key={i}
+                    data-sim-row={i}
                     className={cn(
                       "px-4 py-3 transition-colors",
                       isCorrect && "bg-emerald-500/5",
