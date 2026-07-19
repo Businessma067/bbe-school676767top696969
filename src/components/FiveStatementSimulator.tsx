@@ -413,7 +413,7 @@ export default function FiveStatementSimulator() {
         {/* Cursor */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-all duration-700 ease-out"
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[900ms] ease-in-out"
           style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
         >
           <div className="relative -translate-x-1 -translate-y-1">
