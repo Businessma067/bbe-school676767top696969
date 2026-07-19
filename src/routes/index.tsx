@@ -601,7 +601,7 @@ function WhySlide({
   index: string;
   title: string;
   subtitle: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <section className="relative mt-10 overflow-hidden rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
