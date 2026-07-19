@@ -852,7 +852,7 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
           src={src}
           alt={`${name} logo`}
           loading="lazy"
-          className="max-h-full max-w-full object-contain"
+          className="h-full w-auto max-w-full object-contain"
         />
       </div>
     </div>
