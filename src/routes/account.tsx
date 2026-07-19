@@ -160,9 +160,6 @@ function AccountPage() {
             <button onClick={handlePasswordReset} className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary">
               Change password
             </button>
-            <button onClick={handleLogout} className="rounded-md bg-destructive px-3 py-1.5 text-xs font-semibold text-destructive-foreground hover:opacity-90">
-              Log out
-            </button>
           </div>
           {resetMsg && <p className="mt-2 text-xs text-muted-foreground">{resetMsg}</p>}
         </Card>
