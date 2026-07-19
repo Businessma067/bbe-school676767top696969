@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import { supabase } from "@/integrations/supabase/client";
 import { BookOpen, ClipboardCheck, Flame, Clock, AlertTriangle, TrendingUp, Trophy, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
