@@ -308,7 +308,7 @@ export default function FiveStatementSimulator() {
           </article>
 
           {/* RIGHT: AI Explanation Hub (Classic + Textbook Canvas) */}
-          <aside className="rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
+          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                 AI Explanation Engine
