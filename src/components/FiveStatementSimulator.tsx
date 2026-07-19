@@ -163,7 +163,14 @@ export default function FiveStatementSimulator() {
 
         <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
           {/* LEFT: real CaseCard replica */}
-          <article className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6">
+          <article
+            ref={leftRef}
+            className="min-h-0 overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-sm transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:p-6"
+            style={{
+              transform: `scale(${zoom.scale})`,
+              transformOrigin: `${zoom.ox} ${zoom.oy}`,
+            }}
+          >
             <div className="mb-4 flex flex-wrap items-center gap-2">
               <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Task 1
