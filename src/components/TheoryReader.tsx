@@ -195,6 +195,13 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                       />
                     ),
                     hr: () => <hr className="my-8 border-border" />,
+                    img: ({ node: _node, ...p }) => (
+                      <img
+                        className="my-6 mx-auto rounded-lg border border-border shadow-sm max-w-full h-auto"
+                        loading="lazy"
+                        {...p}
+                      />
+                    ),
                   }}
                 >
                   {markdown}
