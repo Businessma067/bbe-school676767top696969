@@ -89,6 +89,84 @@ const failureReasons = [
   "They study alone, with no way to check whether their understanding is actually correct until it's too late.",
 ];
 
+const fullCourseFaqs = [
+  {
+    question: "What is included in the Full Course?",
+    answer:
+      "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.",
+  },
+  {
+    question: "Is this a subscription or a one-time payment?",
+    answer:
+      "It is a strict one-time payment of €359. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
+  },
+  {
+    question: "How does the AI Study Companion work?",
+    answer:
+      "When you request a breakdown for any task, the system instantly scans the official exam literature. It returns a direct explanation written in simple language and applies an animated neon highlight to pin the exact proof sentence inside the source text viewport.",
+  },
+  {
+    question: "Are the questions identical to the real WU Vienna entrance exam?",
+    answer:
+      "Yes, our database of 1,200+ cases is engineered strictly based on the institutional structure, negative scoring logic, and deceptive True/False phrasing style used by the examiners over the last years.",
+  },
+  {
+    question: "What if the university updates the official exam literature?",
+    answer:
+      "All updates are fully covered. Our team monitors the university portal daily. If any changes are made to the official chapters, mathematics requirements, or exam literature, the platform database is updated immediately at zero additional cost to you.",
+  },
+  {
+    question: "Does the platform cover all three exam subjects equally?",
+    answer:
+      "Yes. The course provides 100% comprehensive training for all three blocks. It contains dedicated, heavy question databases and specialized toolkits for Business/Economics contexts, Mathematics functions/graphs, and English Proficiency logic.",
+  },
+  {
+    question: "Why is the Answer Sheet Simulator included?",
+    answer:
+      "Over 15% of applicants fail simply because they misalign text rows or panic during the final minutes of transferring answers onto the physical paper. This simulator which you can find in every Mock Exam is a precise digital copy of the official optical sheet, training your muscle memory to avoid costly technical mistakes under stress.",
+  },
+  {
+    question: "How does the platform handle the negative scoring system?",
+    answer:
+      "The platform replicates the exact negative point system used by the university, where incorrect answers deduct your score. The system automatically tracks this, teaching you the precise risk management of when to answer and when it is safer to skip a task.",
+  },
+  {
+    question: "Can I study using my mobile phone?",
+    answer:
+      "Yes. The entire software is fully cloud-optimized and ultra-responsive. You can train your speed drills, review flashcards, solve tasks, and read AI explanations seamlessly on any smartphone, tablet, laptop, or desktop computer.",
+  },
+  {
+    question: "Can two students share one account?",
+    answer:
+      "No. Every account is strictly personal and tied to your individual analytics dashboard, progress tracking, and achievements. Simultaneous logins from different devices will automatically trigger our security system and lock the account.",
+  },
+  {
+    question: "How much time per day should I spend to guarantee success?",
+    answer:
+      "No course or software can ever guarantee your admission, success depends entirely on your personal discipline. However, data shows that students who train on our platform for 45 to 60 minutes daily achieve a success rate of 41.3%, compared to the general average of 8%.",
+  },
+  {
+    question: "Are there full-length mock exams included?",
+    answer:
+      "Yes. The course unlocks complete, realistic 120-minute mock simulation tests that mix tasks from all three subjects under severe time limits, mimicking the exact time-pressure atmosphere of the real exam hall.",
+  },
+  {
+    question: "What if I get completely stuck on a complex task?",
+    answer:
+      "You are never left without help. Your AI Study Companion is available 24/7 inside every question view to instantly break down complex equations, logic chains, or vocabulary rules into simple, human-friendly steps with 0-ms delay.",
+  },
+  {
+    question: "Can my parents pay for my course access?",
+    answer:
+      "Yes. Our checkout utilizes globally secure payment gateways supporting all major credit cards, Apple Pay, Google Pay, and standard European bank transfers, allowing a secure process.",
+  },
+  {
+    question: "How long does it take to get access after the payment?",
+    answer:
+      "The entire activation process is fully automated. The exact millisecond your payment is processed, your platform account is created, the database unlocks, and you can start your training session within 30 seconds.",
+  },
+];
+
 function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
   const id = `fs-${Math.random().toString(36).slice(2, 9)}`;
   return (
