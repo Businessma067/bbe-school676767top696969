@@ -3,7 +3,7 @@ import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 
-export const Route = createFileRoute("/products/full-course/subjects")({
+export const Route = createFileRoute("/products/full-course-subjects")({
   head: () => ({
     meta: [
       { title: "Full Course — Choose a Subject — BBE School" },
