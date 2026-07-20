@@ -30,6 +30,7 @@ import { Route as ProductsFullCourseRouteImport } from './routes/products.full-c
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApiChapterTheoryRouteImport } from './routes/api/chapter-theory'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 
 const SignupRoute = SignupRouteImport.update({
@@ -139,6 +140,11 @@ const ApiChatRoute = ApiChatRouteImport.update({
   path: '/api/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiChapterTheoryRoute = ApiChapterTheoryRouteImport.update({
+  id: '/api/chapter-theory',
+  path: '/api/chapter-theory',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
@@ -160,6 +166,7 @@ export interface FileRoutesByFullPath {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chapter-theory': typeof ApiChapterTheoryRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
@@ -182,6 +189,7 @@ export interface FileRoutesByTo {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chapter-theory': typeof ApiChapterTheoryRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
@@ -207,6 +215,7 @@ export interface FileRoutesById {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/api/chapter-theory': typeof ApiChapterTheoryRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
@@ -233,6 +242,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
+    | '/api/chapter-theory'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/products/demo-practice'
@@ -255,6 +265,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
+    | '/api/chapter-theory'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/products/demo-practice'
@@ -279,6 +290,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/admin/economics'
+    | '/api/chapter-theory'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/products/demo-practice'
@@ -303,6 +315,7 @@ export interface RootRouteChildren {
   ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
+  ApiChapterTheoryRoute: typeof ApiChapterTheoryRoute
   ApiChatRoute: typeof ApiChatRoute
 }
 
@@ -455,6 +468,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiChatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/chapter-theory': {
+      id: '/api/chapter-theory'
+      path: '/api/chapter-theory'
+      fullPath: '/api/chapter-theory'
+      preLoaderRoute: typeof ApiChapterTheoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/economics': {
       id: '/admin/economics'
       path: '/economics'
@@ -523,6 +543,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,
+  ApiChapterTheoryRoute: ApiChapterTheoryRoute,
   ApiChatRoute: ApiChatRoute,
 }
 export const routeTree = rootRouteImport

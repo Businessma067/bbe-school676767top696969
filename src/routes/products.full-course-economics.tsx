@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles } from "lucide-react";
+import { TheoryReader } from "@/components/TheoryReader";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
@@ -77,6 +78,7 @@ function EconomicsTasks() {
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
 
   type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
@@ -245,9 +247,19 @@ function EconomicsTasks() {
                   <div className="flex items-stretch">
                     <button
                       onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
-                      className="flex flex-1 items-center gap-2 rounded-l-xl px-3 py-2.5 text-left hover:bg-secondary/60"
+                      className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
+                      aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
                     >
-                      <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", !isOpen && "-rotate-90")} />
+                    </button>
+                    <button
+                      onClick={() => {
+                        setActiveChapter(ch.num);
+                        setTheoryChapter(ch.num);
+                      }}
+                      className="flex flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
+                      title="Open Theory Reader for this chapter"
+                    >
                       <div className="min-w-0 flex-1">
                         <div className="flex items-baseline justify-between gap-2">
                           <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
@@ -293,6 +305,7 @@ function EconomicsTasks() {
                             <li key={c.id}>
                               <button
                                 onClick={() => {
+                                  setTheoryChapter(null);
                                   setActiveChapter(ch.num);
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
@@ -391,6 +404,18 @@ function EconomicsTasks() {
 
         {/* Main content */}
         <main className="min-w-0 flex-1">
+          {theoryChapter !== null ? (
+            <TheoryReader
+              chapter={theoryChapter}
+              title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
+              onGoToPractice={() => {
+                setTheoryChapter(null);
+                setActiveChapter(theoryChapter);
+                setActiveIdx(0);
+              }}
+            />
+          ) : (
+            <>
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
@@ -487,9 +512,12 @@ function EconomicsTasks() {
               </button>
             </div>
           )}
+            </>
+          )}
         </main>
 
         {/* Right panel: AI Explanation Engine when active, Theory otherwise. */}
+        {theoryChapter === null && (
         <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
           {explanation ? (
             <ExplanationPanels
@@ -520,6 +548,7 @@ function EconomicsTasks() {
             </div>
           )}
         </aside>
+        )}
       </div>
 
       {customResetOpen && (
