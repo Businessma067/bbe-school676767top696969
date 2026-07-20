@@ -164,7 +164,9 @@ function EconomicsTasks() {
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
 
-  const recordResult = (caseId: string, allCorrect: boolean) => {
+  const recordResult = (caseId: string, correctCount: number, total: number) => {
+    const allCorrect = correctCount === total;
+    recordAttempt("full", caseId, correctCount, total);
     setProgress((prev) => {
       const passed = new Set(prev.passed);
       const revision = new Set(prev.revision);
