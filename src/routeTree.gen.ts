@@ -29,6 +29,7 @@ import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course.subjects'
 
 const SignupRoute = SignupRouteImport.update({
   id: '/signup',
@@ -130,6 +131,12 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   path: '/economics',
   getParentRoute: () => AdminRoute,
 } as any)
+const ProductsFullCourseSubjectsRoute =
+  ProductsFullCourseSubjectsRouteImport.update({
+    id: '/subjects',
+    path: '/subjects',
+    getParentRoute: () => ProductsFullCourseRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -149,9 +156,10 @@ export interface FileRoutesByFullPath {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
-  '/products/full-course': typeof ProductsFullCourseRoute
+  '/products/full-course': typeof ProductsFullCourseRouteWithChildren
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/products/full-course/subjects': typeof ProductsFullCourseSubjectsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -169,9 +177,10 @@ export interface FileRoutesByTo {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
-  '/products/full-course': typeof ProductsFullCourseRoute
+  '/products/full-course': typeof ProductsFullCourseRouteWithChildren
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/products/full-course/subjects': typeof ProductsFullCourseSubjectsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -192,9 +201,10 @@ export interface FileRoutesById {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
-  '/products/full-course': typeof ProductsFullCourseRoute
+  '/products/full-course': typeof ProductsFullCourseRouteWithChildren
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/products/full-course/subjects': typeof ProductsFullCourseSubjectsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -219,6 +229,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/demo-practice/'
     | '/products/'
+    | '/products/full-course/subjects'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -239,6 +250,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/demo-practice'
     | '/products'
+    | '/products/full-course/subjects'
   id:
     | '__root__'
     | '/'
@@ -261,6 +273,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/demo-practice/'
     | '/products/'
+    | '/products/full-course/subjects'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -422,6 +435,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminEconomicsRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/products/full-course/subjects': {
+      id: '/products/full-course/subjects'
+      path: '/subjects'
+      fullPath: '/products/full-course/subjects'
+      preLoaderRoute: typeof ProductsFullCourseSubjectsRouteImport
+      parentRoute: typeof ProductsFullCourseRoute
+    }
   }
 }
 
@@ -449,15 +469,26 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
   DemoPracticeRouteChildren,
 )
 
+interface ProductsFullCourseRouteChildren {
+  ProductsFullCourseSubjectsRoute: typeof ProductsFullCourseSubjectsRoute
+}
+
+const ProductsFullCourseRouteChildren: ProductsFullCourseRouteChildren = {
+  ProductsFullCourseSubjectsRoute: ProductsFullCourseSubjectsRoute,
+}
+
+const ProductsFullCourseRouteWithChildren =
+  ProductsFullCourseRoute._addFileChildren(ProductsFullCourseRouteChildren)
+
 interface ProductsRouteChildren {
   ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
-  ProductsFullCourseRoute: typeof ProductsFullCourseRoute
+  ProductsFullCourseRoute: typeof ProductsFullCourseRouteWithChildren
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
 const ProductsRouteChildren: ProductsRouteChildren = {
   ProductsDemoPracticeRoute: ProductsDemoPracticeRoute,
-  ProductsFullCourseRoute: ProductsFullCourseRoute,
+  ProductsFullCourseRoute: ProductsFullCourseRouteWithChildren,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 
