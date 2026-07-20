@@ -517,6 +517,7 @@ function EconomicsTasks() {
         </main>
 
         {/* Right panel: AI Explanation Engine when active, Theory otherwise. */}
+        {theoryChapter === null && (
         <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
           {explanation ? (
             <ExplanationPanels
