@@ -928,17 +928,11 @@ function StatsOverview({
           const list = byChapter.get(ch.num) ?? [];
           const done = list.filter((c) => progress.passed.includes(c.id)).length;
           const pct = list.length ? Math.round((done / list.length) * 100) : 0;
-          const chLocked = ch.num === 5;
           return (
             <li key={ch.num} className="flex items-center gap-3">
               <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">Ch.{ch.num}</span>
               <span className="flex-1 truncate text-xs text-foreground">
                 {ch.title}
-                {chLocked && (
-                  <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-secondary px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-muted-foreground">
-                    <Lock className="h-2.5 w-2.5" /> Demo · {CHAPTER5_FREE_LIMIT} free
-                  </span>
-                )}
               </span>
               <div className="h-1.5 w-32 overflow-hidden rounded-full bg-secondary">
                 <div
