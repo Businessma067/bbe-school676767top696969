@@ -305,6 +305,7 @@ function EconomicsTasks() {
                             <li key={c.id}>
                               <button
                                 onClick={() => {
+                                  setTheoryChapter(null);
                                   setActiveChapter(ch.num);
                                   setTimeout(() => setActiveIdx(i), 0);
                                 }}
