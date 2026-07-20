@@ -78,6 +78,7 @@ function EconomicsTasks() {
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
 
   type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
