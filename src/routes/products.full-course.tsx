@@ -10,6 +10,12 @@ import {
   AlertTriangle,
   Clock,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 
 export const Route = createFileRoute("/products/full-course")({
