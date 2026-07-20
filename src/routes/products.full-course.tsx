@@ -298,6 +298,36 @@ function FullCourseProduct() {
               </p>
             </div>
           </section>
+
+          {/* Section 3 — Time investment */}
+          <section className="mt-16 rounded-2xl border border-border bg-gradient-to-br from-secondary to-background p-6 sm:p-8">
+            <div className="flex flex-col items-center gap-4 text-center">
+              <div
+                className="grid h-14 w-14 place-items-center rounded-2xl"
+                style={{ backgroundColor: `${ORANGE}18`, boxShadow: `inset 0 0 0 1px ${ORANGE}40` }}
+              >
+                <Clock className="h-7 w-7" style={{ color: ORANGE }} />
+              </div>
+              <div>
+                <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  How much time it takes
+                </h2>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+                  Start preparing early, and even one relaxed hour a day is enough to reach the
+                  top. No cramming. No all-nighters. Just steady, focused progress that compounds
+                  into real confidence by exam day.
+                </p>
+              </div>
+              <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-background px-5 py-3">
+                <span className="font-display text-3xl font-bold" style={{ color: ORANGE }}>
+                  1
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  hour / day on lazy days when you start in advance
+                </span>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </div>
