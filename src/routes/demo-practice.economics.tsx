@@ -4,6 +4,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
+import { recordAttempt } from "@/lib/practice-history";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -59,7 +60,7 @@ const CHAPTERS: { num: number; title: string }[] = [
   { num: 6, title: "Accounting – keeping record of business transactions" },
 ];
 
-const STORAGE_KEY = "bbe.economics.progress.v1";
+const STORAGE_KEY = "bbe.economics.progress.demo.v1";
 
 type Progress = {
   passed: string[];   // case ids fully correct
@@ -181,7 +182,9 @@ function EconomicsTasks() {
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
 
-  const recordResult = (caseId: string, allCorrect: boolean) => {
+  const recordResult = (caseId: string, correctCount: number, total: number) => {
+    const allCorrect = correctCount === total;
+    recordAttempt("demo", caseId, correctCount, total);
     setProgress((prev) => {
       const passed = new Set(prev.passed);
       const revision = new Set(prev.revision);
@@ -472,7 +475,7 @@ function EconomicsTasks() {
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
-              onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
+              onGraded={(correct, total) => recordResult(activeCase.id, correct, total)}
               onResetProgress={() => resetCaseIds([activeCase.id])}
               activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
               onRequestExplanation={(i) => requestExplanation(activeCase, i)}
@@ -680,7 +683,7 @@ function CaseCard({
   activeExplanationIndex, onRequestExplanation,
 }: {
   data: Case; index: number;
-  onGraded: (allCorrect: boolean) => void;
+  onGraded: (correct: number, total: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
@@ -707,7 +710,7 @@ function CaseCard({
 
   const handleSubmit = () => {
     setChecked(true);
-    onGraded(correctCount === 5);
+    onGraded(correctCount, 5);
   };
 
   const handleReset = () => {
