@@ -8,6 +8,7 @@ import {
   Gem,
   Check,
   AlertTriangle,
+  Clock,
 } from "lucide-react";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 
