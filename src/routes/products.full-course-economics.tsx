@@ -548,6 +548,7 @@ function EconomicsTasks() {
             </div>
           )}
         </aside>
+        )}
       </div>
 
       {customResetOpen && (
