@@ -404,6 +404,18 @@ function EconomicsTasks() {
 
         {/* Main content */}
         <main className="min-w-0 flex-1">
+          {theoryChapter !== null ? (
+            <TheoryReader
+              chapter={theoryChapter}
+              title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
+              onGoToPractice={() => {
+                setTheoryChapter(null);
+                setActiveChapter(theoryChapter);
+                setActiveIdx(0);
+              }}
+            />
+          ) : (
+            <>
           {error && (
             <div className="rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               {error}
@@ -499,6 +511,8 @@ function EconomicsTasks() {
                 {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
+          )}
+            </>
           )}
         </main>
 
