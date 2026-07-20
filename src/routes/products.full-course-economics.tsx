@@ -666,7 +666,7 @@ function CaseCard({
   activeExplanationIndex, onRequestExplanation,
 }: {
   data: Case; index: number;
-  onGraded: (allCorrect: boolean) => void;
+  onGraded: (correct: number, total: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
