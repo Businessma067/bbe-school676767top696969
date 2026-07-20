@@ -124,14 +124,13 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
         : props.children,
     );
     const id = slugify(text, headingCounters.current);
-    const Tag = (`h${level}` as unknown) as keyof React.JSX.IntrinsicElements;
     const cls =
       level === 2
         ? "mt-8 mb-3 font-display text-xl font-bold tracking-tight text-foreground"
         : level === 3
           ? "mt-6 mb-2 font-display text-base font-bold tracking-tight text-foreground"
           : "mt-4 mb-2 font-display text-sm font-semibold tracking-tight text-foreground/90";
-    return <Tag id={id} className={cls} {...props} />;
+    return React.createElement(`h${level}`, { id, className: cls, ...props });
   };
 
   return (
