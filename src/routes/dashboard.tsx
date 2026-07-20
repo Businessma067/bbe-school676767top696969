@@ -3,7 +3,13 @@ import { useEffect, useMemo, useState } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
-import { BookOpen, ClipboardCheck, Flame, Clock, AlertTriangle, TrendingUp, Trophy, Sparkles } from "lucide-react";
+import {
+  dailyAggregate,
+  planTotals,
+  type DayStat,
+  type Plan,
+} from "@/lib/practice-history";
+import { BookOpen, Flame, Target, CheckCircle2, Calendar } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
   component: DashboardPage,
@@ -16,116 +22,61 @@ export const Route = createFileRoute("/dashboard")({
   }),
 });
 
-type TabId = "courses" | "mocks";
-
-type Chapter = {
-  id: string;
+type PlanMeta = {
+  id: Plan;
   name: string;
-  done: number;
-  total: number;
-  accuracy: number; // 0-100, null-ish if not started
-  started: boolean;
+  subtitle: string;
+  href: string;
+  accent: string; // rgb triple for heatmap
 };
 
-type Subject = {
-  key: "economics" | "math" | "english";
-  name: string;
-  color: string; // tailwind ring/bar color
-  attempted: number;
-  passed: number;
-  accuracy: number;
-  chapters: Chapter[];
-};
-
-type Mock = {
-  id: string;
-  date: string; // ISO
-  score: number; // %
-  timeTakenMin: number;
-  timeAllottedMin: number;
-  perSubject: { economics: number; math: number; english: number };
-};
-
-const SUBJECTS: Subject[] = [
+const PLANS: PlanMeta[] = [
   {
-    key: "economics",
-    name: "Economics",
-    color: "bg-caramel-deep",
-    attempted: 142,
-    passed: 108,
-    accuracy: 76,
-    chapters: [
-      { id: "e1", name: "Ch 1 · Foundations of Economics", done: 12, total: 12, accuracy: 88, started: true },
-      { id: "e2", name: "Ch 2 · Demand & Supply", done: 10, total: 12, accuracy: 82, started: true },
-      { id: "e3", name: "Ch 3 · Elasticity", done: 6, total: 10, accuracy: 54, started: true },
-      { id: "e4", name: "Ch 4 · Marketing", done: 4, total: 12, accuracy: 71, started: true },
-      { id: "e5", name: "Ch 5 · Forms of Business Ownership", done: 2, total: 12, accuracy: 48, started: true },
-      { id: "e6", name: "Ch 6 · Accounting", done: 0, total: 14, accuracy: 0, started: false },
-    ],
+    id: "demo",
+    name: "Demo Practice",
+    subtitle: "Free preview cases",
+    href: "/demo-practice/economics",
+    accent: "16,185,129", // emerald
   },
   {
-    key: "math",
-    name: "Math",
-    color: "bg-emerald-500",
-    attempted: 96,
-    passed: 71,
-    accuracy: 74,
-    chapters: [
-      { id: "m1", name: "Ch 1 · Algebra Essentials", done: 14, total: 14, accuracy: 91, started: true },
-      { id: "m2", name: "Ch 2 · Functions & Graphs", done: 9, total: 12, accuracy: 77, started: true },
-      { id: "m3", name: "Ch 3 · Derivatives", done: 5, total: 12, accuracy: 58, started: true },
-      { id: "m4", name: "Ch 4 · Optimization", done: 0, total: 10, accuracy: 0, started: false },
-      { id: "m5", name: "Ch 5 · Probability", done: 0, total: 10, accuracy: 0, started: false },
-    ],
+    id: "full",
+    name: "Full Course",
+    subtitle: "All 281 Economics cases",
+    href: "/products/full-course-economics",
+    accent: "200,118,58", // caramel-deep
   },
-  {
-    key: "english",
-    name: "English",
-    color: "bg-sky-500",
-    attempted: 64,
-    passed: 52,
-    accuracy: 81,
-    chapters: [
-      { id: "en1", name: "Ch 1 · Reading Comprehension", done: 8, total: 10, accuracy: 84, started: true },
-      { id: "en2", name: "Ch 2 · Grammar in Context", done: 7, total: 10, accuracy: 79, started: true },
-      { id: "en3", name: "Ch 3 · Vocabulary in Use", done: 3, total: 10, accuracy: 62, started: true },
-      { id: "en4", name: "Ch 4 · Business Writing", done: 0, total: 8, accuracy: 0, started: false },
-    ],
-  },
-];
-
-const MOCKS: Mock[] = [
-  { id: "m6", date: "2026-07-14", score: 84, timeTakenMin: 108, timeAllottedMin: 120, perSubject: { economics: 82, math: 80, english: 90 } },
-  { id: "m5", date: "2026-07-02", score: 78, timeTakenMin: 116, timeAllottedMin: 120, perSubject: { economics: 74, math: 78, english: 84 } },
-  { id: "m4", date: "2026-06-20", score: 71, timeTakenMin: 119, timeAllottedMin: 120, perSubject: { economics: 68, math: 70, english: 76 } },
-  { id: "m3", date: "2026-06-05", score: 66, timeTakenMin: 120, timeAllottedMin: 120, perSubject: { economics: 60, math: 66, english: 74 } },
-  { id: "m2", date: "2026-05-22", score: 59, timeTakenMin: 118, timeAllottedMin: 120, perSubject: { economics: 55, math: 58, english: 66 } },
-  { id: "m1", date: "2026-05-08", score: 52, timeTakenMin: 120, timeAllottedMin: 120, perSubject: { economics: 48, math: 52, english: 58 } },
 ];
 
 function DashboardPage() {
   const navigate = useNavigate();
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
-  const [tab, setTab] = useState<TabId>("courses");
+  const [tick, setTick] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       const next = await getCurrentAuthState();
       if (cancelled) return;
-      if (!next) {
-        navigate({ to: "/login" });
-        return;
-      }
+      if (!next) { navigate({ to: "/login" }); return; }
       setAuth(next);
     })();
     return () => { cancelled = true; };
   }, [navigate]);
 
+  useEffect(() => {
+    const bump = () => setTick((t) => t + 1);
+    window.addEventListener("bbe:history-updated", bump);
+    window.addEventListener("storage", bump);
+    return () => {
+      window.removeEventListener("bbe:history-updated", bump);
+      window.removeEventListener("storage", bump);
+    };
+  }, []);
+
   if (auth === undefined || auth === null) {
     return (
       <Shell>
-        <p className="text-sm text-muted-foreground">Loading…</p>
+        <p className="px-6 py-10 text-sm text-muted-foreground">Loading…</p>
       </Shell>
     );
   }
@@ -139,444 +90,270 @@ function DashboardPage() {
 
   return (
     <Shell>
-      <div className="flex min-h-[calc(100vh-57px)]">
-        {/* Sidebar */}
-        <aside className="hidden w-56 shrink-0 border-r border-border/60 bg-card/40 py-6 sm:block">
-          <nav className="flex flex-col gap-1 px-3">
-            <SideItem
-              icon={<BookOpen className="h-4 w-4" />}
-              label="Courses"
-              active={tab === "courses"}
-              onClick={() => setTab("courses")}
-            />
-            <SideItem
-              icon={<ClipboardCheck className="h-4 w-4" />}
-              label="Mocks"
-              active={tab === "mocks"}
-              onClick={() => setTab("mocks")}
-            />
-          </nav>
-        </aside>
-
-        {/* Main */}
-        <main className="min-w-0 flex-1 px-6 py-8 lg:px-10">
-          {/* Persistent header */}
-          <div className="flex items-center gap-4">
-            <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-lg font-bold text-primary-foreground shadow-sm">
-              {initial}
-            </div>
-            <div className="flex-1">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Dashboard</p>
-              <h1 className="mt-0.5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Welcome back, {auth.name}
-              </h1>
-            </div>
-            <Link
-              to="/account"
-              className="hidden shrink-0 items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
-            >
-              ⚙ Account settings
-            </Link>
-            <button
-              type="button"
-              onClick={handleLogout}
-              className="hidden shrink-0 items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
-            >
-              Log out
-            </button>
+      <main className="mx-auto min-w-0 max-w-6xl px-6 py-8 lg:px-10">
+        <div className="flex flex-wrap items-center gap-4">
+          <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-lg font-bold text-primary-foreground shadow-sm">
+            {initial}
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Dashboard</p>
+            <h1 className="mt-0.5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Welcome back, {auth.name}
+            </h1>
           </div>
           <Link
             to="/account"
-            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
+            className="shrink-0 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             ⚙ Account settings
           </Link>
           <button
             type="button"
             onClick={handleLogout}
-            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
+            className="shrink-0 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             Log out
           </button>
+        </div>
 
-          {/* Mobile tab switcher */}
-          <div className="mt-6 flex gap-2 sm:hidden">
-            <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>Courses</MobileTab>
-            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mocks</MobileTab>
-          </div>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Separate stats for every plan you practice. Tap any day on the graph to see what you did.
+        </p>
 
-          <div className="mt-8">
-            {tab === "courses" ? <CoursesTab /> : <MocksTab />}
-          </div>
-        </main>
-      </div>
+        <div className="mt-8 space-y-8">
+          {PLANS.map((p) => (
+            <PlanCard key={p.id + tick} plan={p} />
+          ))}
+        </div>
+      </main>
     </Shell>
   );
 }
 
-function SideItem({
-  icon, label, active, onClick,
-}: { icon: React.ReactNode; label: string; active: boolean; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={
-        "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold transition-colors " +
-        (active
-          ? "bg-primary text-primary-foreground shadow-sm"
-          : "text-foreground hover:bg-secondary")
-      }
-    >
-      {icon}
-      <span>{label}</span>
-    </button>
-  );
-}
-
-function MobileTab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={
-        "flex-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
-        (active
-          ? "border-primary bg-primary text-primary-foreground"
-          : "border-border bg-card text-foreground hover:bg-secondary")
-      }
-    >
-      {children}
-    </button>
-  );
-}
-
-/* -------------------- COURSES TAB -------------------- */
-
-function CoursesTab() {
-  const totalHours = 47;
-  const streak = 12;
-
-  return (
-    <div className="space-y-8">
-      {/* Summary row */}
-      <div className="grid gap-3 sm:grid-cols-2">
-        <StatPill icon={<Clock className="h-4 w-4 text-caramel-deep" />} label="Total study time" value={`${totalHours}h`} sub="across all subjects" />
-        <StatPill icon={<Flame className="h-4 w-4 text-caramel-deep" />} label="Current streak" value={`${streak} days`} sub="keep it going" />
-      </div>
-
-      {SUBJECTS.map((s) => (
-        <SubjectSection key={s.key} subject={s} />
-      ))}
-    </div>
-  );
-}
-
-function StatPill({ icon, label, value, sub }: { icon: React.ReactNode; label: string; value: string; sub?: string }) {
-  return (
-    <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm">
-      <div className="grid h-9 w-9 place-items-center rounded-lg bg-secondary">{icon}</div>
-      <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
-        <p className="font-display text-xl font-bold leading-tight">{value}</p>
-        {sub && <p className="text-xs text-muted-foreground">{sub}</p>}
-      </div>
-    </div>
-  );
-}
-
-function SubjectSection({ subject }: { subject: Subject }) {
-  const totalDone = subject.chapters.reduce((a, c) => a + c.done, 0);
-  const totalCount = subject.chapters.reduce((a, c) => a + c.total, 0);
-  const pct = totalCount ? Math.round((totalDone / totalCount) * 100) : 0;
+function PlanCard({ plan }: { plan: PlanMeta }) {
+  const totals = useMemo(() => planTotals(plan.id), [plan.id]);
+  const days = useMemo(() => dailyAggregate(plan.id), [plan.id]);
+  const [selected, setSelected] = useState<DayStat | null>(null);
 
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-      <div className="flex flex-wrap items-center gap-6">
-        <ProgressRing pct={pct} color={subject.color} />
-        <div className="min-w-0 flex-1">
-          <h2 className="font-display text-2xl font-bold tracking-tight">{subject.name}</h2>
-          <p className="text-sm text-muted-foreground">{totalDone} of {totalCount} tasks completed</p>
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2">
+            <BookOpen className="h-4 w-4 text-caramel-deep" />
+            <h2 className="font-display text-2xl font-bold tracking-tight">{plan.name}</h2>
+          </div>
+          <p className="text-sm text-muted-foreground">{plan.subtitle}</p>
         </div>
-        <div className="flex flex-wrap gap-4">
-          <MiniStat label="Attempted" value={subject.attempted} />
-          <MiniStat label="Passed" value={subject.passed} />
-          <MiniStat label="Accuracy" value={`${subject.accuracy}%`} />
-        </div>
+        <Link
+          to={plan.href}
+          className="rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-sm hover:bg-primary/90"
+        >
+          {totals.tasks > 0 ? "Continue practice" : "Start practicing"}
+        </Link>
       </div>
 
-      <ul className="mt-6 divide-y divide-border/60">
-        {subject.chapters.map((c) => (
-          <ChapterRow key={c.id} chapter={c} color={subject.color} />
-        ))}
-      </ul>
+      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <Stat icon={<CheckCircle2 className="h-4 w-4 text-caramel-deep" />} label="Tasks done" value={totals.tasks} />
+        <Stat icon={<Target className="h-4 w-4 text-caramel-deep" />} label="Accuracy" value={totals.total > 0 ? `${totals.accuracy}%` : "—"} />
+        <Stat icon={<CheckCircle2 className="h-4 w-4 text-caramel-deep" />} label="All-correct cases" value={totals.passed} />
+        <Stat icon={<Flame className="h-4 w-4 text-caramel-deep" />} label="Active days" value={totals.activeDays} />
+      </div>
+
+      <div className="mt-6">
+        <div className="mb-2 flex items-center gap-2">
+          <Calendar className="h-4 w-4 text-caramel-deep" />
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+            Daily activity · last 12 weeks
+          </h3>
+        </div>
+        <Heatmap
+          days={days}
+          accent={plan.accent}
+          onSelect={setSelected}
+          selectedDate={selected?.date ?? null}
+        />
+        <div className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
+          <span>Darker = higher accuracy that day</span>
+          <div className="flex items-center gap-1">
+            <span>0%</span>
+            {[0.15, 0.35, 0.6, 0.85, 1].map((a) => (
+              <span
+                key={a}
+                className="inline-block h-3 w-3 rounded-sm"
+                style={{ background: `rgba(${plan.accent},${a})` }}
+              />
+            ))}
+            <span>100%</span>
+          </div>
+        </div>
+
+        <DayDetails selected={selected} totalsTasks={totals.tasks} />
+      </div>
     </section>
   );
 }
 
-function ProgressRing({ pct, color }: { pct: number; color: string }) {
-  const r = 34;
-  const c = 2 * Math.PI * r;
-  const offset = c - (pct / 100) * c;
-  // extract simple color from tailwind class → SVG stroke
-  const stroke =
-    color.includes("caramel") ? "#c8763a" :
-    color.includes("emerald") ? "#10b981" :
-    color.includes("sky") ? "#0ea5e9" : "#c8763a";
-
+function Stat({ icon, label, value }: { icon: React.ReactNode; label: string; value: number | string }) {
   return (
-    <div className="relative h-20 w-20 shrink-0">
-      <svg viewBox="0 0 80 80" className="h-20 w-20 -rotate-90">
-        <circle cx="40" cy="40" r={r} stroke="currentColor" className="text-secondary" strokeWidth="8" fill="none" />
-        <circle
-          cx="40" cy="40" r={r}
-          stroke={stroke}
-          strokeWidth="8"
-          fill="none"
-          strokeDasharray={c}
-          strokeDashoffset={offset}
-          strokeLinecap="round"
-          style={{ transition: "stroke-dashoffset 800ms ease" }}
-        />
-      </svg>
-      <div className="absolute inset-0 grid place-items-center">
-        <span className="font-display text-lg font-bold">{pct}%</span>
-      </div>
-    </div>
-  );
-}
-
-function MiniStat({ label, value }: { label: string; value: number | string }) {
-  return (
-    <div className="min-w-[88px]">
-      <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
-      <p className="font-display text-lg font-bold">{value}</p>
-    </div>
-  );
-}
-
-function ChapterRow({ chapter, color }: { chapter: Chapter; color: string }) {
-  const pct = chapter.total ? Math.round((chapter.done / chapter.total) * 100) : 0;
-  const needsReview = chapter.started && chapter.accuracy > 0 && chapter.accuracy < 60;
-
-  return (
-    <li className="flex flex-wrap items-center gap-4 py-3">
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
-          <p className="truncate font-semibold text-sm">{chapter.name}</p>
-          {needsReview && (
-            <span className="inline-flex items-center gap-1 rounded-full border border-orange-400/40 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-600">
-              <AlertTriangle className="h-3 w-3" />
-              Needs review
-            </span>
-          )}
-        </div>
-        <div className="mt-1.5 flex items-center gap-3">
-          <div className="h-1.5 w-full max-w-[280px] overflow-hidden rounded-full bg-secondary">
-            <div className={"h-full " + color} style={{ width: pct + "%" }} />
-          </div>
-          <span className="text-xs font-medium text-muted-foreground shrink-0">
-            {chapter.done}/{chapter.total} tasks
-            {chapter.started && chapter.accuracy > 0 && (
-              <span className="ml-2">· {chapter.accuracy}% acc</span>
-            )}
-          </span>
-        </div>
-      </div>
-      <button
-        type="button"
-        className={
-          "shrink-0 rounded-md px-4 py-1.5 text-xs font-semibold shadow-sm transition-colors " +
-          (chapter.started
-            ? "bg-primary text-primary-foreground hover:bg-primary/90"
-            : "border border-border bg-card text-foreground hover:bg-secondary")
-        }
-      >
-        {chapter.started ? "Resume" : "Start"}
-      </button>
-    </li>
-  );
-}
-
-/* -------------------- MOCKS TAB -------------------- */
-
-function MocksTab() {
-  const sorted = useMemo(() => [...MOCKS].sort((a, b) => b.date.localeCompare(a.date)), []);
-  const best = useMemo(() => [...MOCKS].sort((a, b) => b.score - a.score)[0], []);
-  const latest = sorted[0];
-  const avg = useMemo(() => {
-    const sum = MOCKS.reduce(
-      (acc, m) => ({
-        economics: acc.economics + m.perSubject.economics,
-        math: acc.math + m.perSubject.math,
-        english: acc.english + m.perSubject.english,
-      }),
-      { economics: 0, math: 0, english: 0 },
-    );
-    const n = MOCKS.length;
-    return { economics: Math.round(sum.economics / n), math: Math.round(sum.math / n), english: Math.round(sum.english / n) };
-  }, []);
-
-  return (
-    <div className="space-y-6">
-      {/* Highlights */}
-      <div className="grid gap-3 sm:grid-cols-2">
-        <HighlightCard
-          icon={<Trophy className="h-5 w-5 text-caramel-deep" />}
-          label="Best score"
-          value={`${best.score}%`}
-          sub={`Mock on ${formatDate(best.date)}`}
-        />
-        <HighlightCard
-          icon={<Sparkles className="h-5 w-5 text-caramel-deep" />}
-          label="Most recent"
-          value={`${latest.score}%`}
-          sub={`Mock on ${formatDate(latest.date)}`}
-        />
-      </div>
-
-      {/* Trend chart */}
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <div className="mb-4 flex items-center gap-2">
-          <TrendingUp className="h-4 w-4 text-caramel-deep" />
-          <h3 className="font-display text-lg font-bold tracking-tight">Score trend</h3>
-        </div>
-        <TrendChart mocks={[...MOCKS].sort((a, b) => a.date.localeCompare(b.date))} />
-      </section>
-
-      {/* Per-subject averages */}
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <h3 className="font-display text-lg font-bold tracking-tight">Average per subject</h3>
-        <p className="mt-1 text-sm text-muted-foreground">Across {MOCKS.length} completed mocks</p>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <SubjectAvg name="Economics" pct={avg.economics} color="bg-caramel-deep" />
-          <SubjectAvg name="Math" pct={avg.math} color="bg-emerald-500" />
-          <SubjectAvg name="English" pct={avg.english} color="bg-sky-500" />
-        </div>
-      </section>
-
-      {/* Table */}
-      <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[560px] text-sm">
-            <thead>
-              <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                <th className="px-3 py-2">Date</th>
-                <th className="px-3 py-2">Score</th>
-                <th className="px-3 py-2">Time</th>
-                <th className="px-3 py-2"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((m) => (
-                <tr key={m.id} className="border-t border-border/60">
-                  <td className="px-3 py-3 font-medium">{formatDate(m.date)}</td>
-                  <td className="px-3 py-3">
-                    <span className="font-display text-lg font-bold">{m.score}%</span>
-                  </td>
-                  <td className="px-3 py-3 text-muted-foreground">
-                    {m.timeTakenMin} / {m.timeAllottedMin} min
-                  </td>
-                  <td className="px-3 py-3 text-right">
-                    <button
-                      type="button"
-                      className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
-                    >
-                      Review
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-function HighlightCard({ icon, label, value, sub }: { icon: React.ReactNode; label: string; value: string; sub: string }) {
-  return (
-    <div className="rounded-2xl border border-caramel-deep/30 bg-gradient-to-br from-caramel-deep/10 to-transparent p-5 shadow-sm">
-      <div className="flex items-center gap-2">
+    <div className="rounded-xl border border-border bg-background/60 px-3 py-3">
+      <div className="flex items-center gap-1.5">
         {icon}
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
       </div>
-      <p className="mt-2 font-display text-4xl font-bold tracking-tight">{value}</p>
-      <p className="mt-1 text-xs text-muted-foreground">{sub}</p>
+      <p className="mt-1 font-display text-xl font-bold">{value}</p>
     </div>
   );
 }
 
-function SubjectAvg({ name, pct, color }: { name: string; pct: number; color: string }) {
+/* -------------------- Heatmap -------------------- */
+
+const WEEKS = 12;
+
+function Heatmap({
+  days, accent, onSelect, selectedDate,
+}: {
+  days: Map<string, DayStat>;
+  accent: string;
+  onSelect: (d: DayStat | null) => void;
+  selectedDate: string | null;
+}) {
+  // Build a grid of the last WEEKS*7 days ending today.
+  const today = useMemo(() => startOfLocalDay(new Date()), []);
+  const cells = useMemo(() => {
+    const totalDays = WEEKS * 7;
+    // Align to weeks ending on today's weekday
+    const arr: { date: string; stat: DayStat | null }[] = [];
+    for (let i = totalDays - 1; i >= 0; i--) {
+      const d = new Date(today);
+      d.setDate(today.getDate() - i);
+      const key = isoLocal(d);
+      arr.push({ date: key, stat: days.get(key) ?? null });
+    }
+    return arr;
+  }, [days, today]);
+
+  // Reshape into 7 rows (weekdays) x WEEKS columns
+  const rows: { date: string; stat: DayStat | null }[][] = Array.from({ length: 7 }, () => []);
+  cells.forEach((c, i) => rows[i % 7].push(c));
+
+  const monthLabels = useMemo(() => {
+    const labels: { col: number; text: string }[] = [];
+    let lastMonth = -1;
+    for (let col = 0; col < WEEKS; col++) {
+      const c = cells[col * 7];
+      if (!c) continue;
+      const m = new Date(c.date + "T00:00:00").getMonth();
+      if (m !== lastMonth) {
+        labels.push({ col, text: new Date(c.date + "T00:00:00").toLocaleDateString(undefined, { month: "short" }) });
+        lastMonth = m;
+      }
+    }
+    return labels;
+  }, [cells]);
+
   return (
-    <div className="rounded-xl border border-border bg-background p-4">
-      <div className="flex items-baseline justify-between">
-        <p className="text-sm font-semibold">{name}</p>
-        <p className="font-display text-xl font-bold">{pct}%</p>
-      </div>
-      <div className="mt-2 h-2 overflow-hidden rounded-full bg-secondary">
-        <div className={"h-full " + color} style={{ width: pct + "%" }} />
+    <div className="overflow-x-auto">
+      <div className="inline-block min-w-full">
+        <div className="mb-1 grid" style={{ gridTemplateColumns: `28px repeat(${WEEKS}, 1fr)` }}>
+          <span />
+          {Array.from({ length: WEEKS }).map((_, col) => {
+            const l = monthLabels.find((m) => m.col === col);
+            return (
+              <span key={col} className="text-[10px] font-medium text-muted-foreground">
+                {l?.text ?? ""}
+              </span>
+            );
+          })}
+        </div>
+        <div className="grid gap-1" style={{ gridTemplateColumns: `28px repeat(${WEEKS}, 1fr)` }}>
+          {rows.map((row, ri) => (
+            <>
+              <span key={"lbl-" + ri} className="text-[10px] leading-5 text-muted-foreground">
+                {ri % 2 === 1 ? ["Mon", "Wed", "Fri"][(ri - 1) / 2] ?? "" : ""}
+              </span>
+              {row.map((c) => {
+                const acc = c.stat ? c.stat.accuracy / 100 : 0;
+                const tasks = c.stat?.tasks ?? 0;
+                const bg = tasks === 0
+                  ? "rgba(148,163,184,0.15)"
+                  : `rgba(${accent}, ${0.15 + acc * 0.85})`;
+                const isSelected = selectedDate === c.date;
+                return (
+                  <button
+                    key={c.date + "-" + ri}
+                    type="button"
+                    aria-label={
+                      c.stat
+                        ? `${c.date}: ${c.stat.tasks} tasks, ${c.stat.accuracy}% accuracy`
+                        : `${c.date}: no activity`
+                    }
+                    onClick={() => onSelect(c.stat ?? { date: c.date, tasks: 0, correct: 0, total: 0, accuracy: 0 })}
+                    className={
+                      "aspect-square min-h-[16px] rounded-sm transition-transform hover:scale-110 " +
+                      (isSelected ? "ring-2 ring-primary ring-offset-1 ring-offset-card" : "")
+                    }
+                    style={{ background: bg }}
+                    title={
+                      c.stat
+                        ? `${prettyDate(c.date)} — ${c.stat.tasks} tasks · ${c.stat.accuracy}%`
+                        : `${prettyDate(c.date)} — no activity`
+                    }
+                  />
+                );
+              })}
+            </>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function TrendChart({ mocks }: { mocks: Mock[] }) {
-  const W = 640;
-  const H = 200;
-  const PAD_L = 32;
-  const PAD_R = 12;
-  const PAD_T = 12;
-  const PAD_B = 28;
-  const iw = W - PAD_L - PAD_R;
-  const ih = H - PAD_T - PAD_B;
-
-  const points = mocks.map((m, i) => {
-    const x = PAD_L + (mocks.length === 1 ? iw / 2 : (i * iw) / (mocks.length - 1));
-    const y = PAD_T + ih - (m.score / 100) * ih;
-    return { x, y, m };
-  });
-
-  const path = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
-  const area = `${path} L${points[points.length - 1].x},${PAD_T + ih} L${points[0].x},${PAD_T + ih} Z`;
-
-  const yTicks = [0, 25, 50, 75, 100];
-
+function DayDetails({ selected, totalsTasks }: { selected: DayStat | null; totalsTasks: number }) {
+  if (!selected) {
+    return (
+      <div className="mt-4 rounded-xl border border-dashed border-border/70 bg-background/40 px-4 py-3 text-xs text-muted-foreground">
+        {totalsTasks === 0
+          ? "No practice yet — complete a case to start filling this graph."
+          : "Tap any day above to see how many cases you finished and your accuracy."}
+      </div>
+    );
+  }
   return (
-    <div className="w-full overflow-x-auto">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[560px]" role="img" aria-label="Mock score trend">
-        {yTicks.map((t) => {
-          const y = PAD_T + ih - (t / 100) * ih;
-          return (
-            <g key={t}>
-              <line x1={PAD_L} y1={y} x2={W - PAD_R} y2={y} stroke="currentColor" className="text-border" strokeDasharray="2 4" />
-              <text x={PAD_L - 6} y={y + 3} textAnchor="end" className="fill-muted-foreground" fontSize="10">{t}</text>
-            </g>
-          );
-        })}
-        <path d={area} fill="#c8763a" opacity="0.12" />
-        <path d={path} fill="none" stroke="#c8763a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        {points.map((p) => (
-          <g key={p.m.id}>
-            <circle cx={p.x} cy={p.y} r={4} fill="#c8763a" />
-            <text x={p.x} y={H - 10} textAnchor="middle" className="fill-muted-foreground" fontSize="10">
-              {shortDate(p.m.date)}
-            </text>
-          </g>
-        ))}
-      </svg>
+    <div className="mt-4 rounded-xl border border-border bg-background/60 px-4 py-3">
+      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        {prettyDate(selected.date)}
+      </p>
+      {selected.tasks === 0 ? (
+        <p className="mt-1 text-sm text-muted-foreground">No cases completed this day.</p>
+      ) : (
+        <div className="mt-1 flex flex-wrap items-baseline gap-x-6 gap-y-1">
+          <p className="font-display text-2xl font-bold">
+            {selected.tasks} <span className="text-sm font-medium text-muted-foreground">case{selected.tasks === 1 ? "" : "s"}</span>
+          </p>
+          <p className="font-display text-2xl font-bold">
+            {selected.accuracy}% <span className="text-sm font-medium text-muted-foreground">correct ({selected.correct}/{selected.total} statements)</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 }
 
-function formatDate(iso: string) {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+/* -------------------- helpers -------------------- */
+
+function startOfLocalDay(d: Date) {
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
 }
-function shortDate(iso: string) {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+function isoLocal(d: Date) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+function prettyDate(iso: string) {
+  return new Date(iso + "T00:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric", year: "numeric" });
 }
 
 /* -------------------- SHELL -------------------- */
@@ -595,7 +372,7 @@ function Shell({ children }: { children: React.ReactNode }) {
           <AuthNav />
         </div>
       </header>
-      <div className="mx-auto max-w-7xl">{children}</div>
+      {children}
     </div>
   );
 }
