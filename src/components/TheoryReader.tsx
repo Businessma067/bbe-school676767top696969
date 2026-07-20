@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { BookOpen, Loader2, Target, AlertTriangle, List } from "lucide-react";
+import { BookOpen, Target, List, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import chaptersData from "@/data/textbook-chapters.json";
 
 type Props = {
   chapter: number;
@@ -12,13 +13,16 @@ type Props = {
 
 type Heading = { id: string; text: string; level: number };
 
+const CHAPTERS = chaptersData as Record<string, { title: string; markdown: string }>;
+
 function slugify(text: string, seen: Map<string, number>): string {
-  const base = text
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s-]/gu, "")
-    .trim()
-    .replace(/\s+/g, "-")
-    .slice(0, 80) || "section";
+  const base =
+    text
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}\s-]/gu, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .slice(0, 80) || "section";
   const n = (seen.get(base) ?? 0) + 1;
   seen.set(base, n);
   return n === 1 ? base : `${base}-${n}`;
@@ -27,14 +31,7 @@ function slugify(text: string, seen: Map<string, number>): string {
 function extractHeadings(md: string): Heading[] {
   const out: Heading[] = [];
   const seen = new Map<string, number>();
-  const lines = md.split("\n");
-  let inFence = false;
-  for (const line of lines) {
-    if (line.trim().startsWith("```")) {
-      inFence = !inFence;
-      continue;
-    }
-    if (inFence) continue;
+  for (const line of md.split("\n")) {
     const m = /^(#{2,4})\s+(.+?)\s*$/.exec(line);
     if (!m) continue;
     const level = m[1].length;
@@ -46,55 +43,16 @@ function extractHeadings(md: string): Heading[] {
 }
 
 export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
-  const [markdown, setMarkdown] = useState("");
-  const [status, setStatus] = useState<"loading" | "streaming" | "done" | "error">("loading");
-  const [error, setError] = useState<string | null>(null);
+  const entry = CHAPTERS[String(chapter)];
+  const markdown = entry?.markdown ?? "";
   const [progress, setProgress] = useState(0);
   const [tocOpen, setTocOpen] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    const controller = new AbortController();
-    abortRef.current?.abort();
-    abortRef.current = controller;
-    setMarkdown("");
-    setStatus("loading");
-    setError(null);
+    if (scrollRef.current) scrollRef.current.scrollTo({ top: 0 });
     setProgress(0);
-
-    (async () => {
-      try {
-        const res = await fetch("/api/chapter-theory", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ chapter, title }),
-          signal: controller.signal,
-        });
-        if (!res.ok || !res.body) {
-          const t = await res.text().catch(() => "");
-          throw new Error(t || `Request failed (${res.status})`);
-        }
-        setStatus("streaming");
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        // eslint-disable-next-line no-constant-condition
-        while (true) {
-          const { value, done } = await reader.read();
-          if (done) break;
-          const chunk = decoder.decode(value, { stream: true });
-          setMarkdown((prev) => prev + chunk);
-        }
-        setStatus("done");
-      } catch (err) {
-        if ((err as { name?: string }).name === "AbortError") return;
-        setError(err instanceof Error ? err.message : "Failed to load theory");
-        setStatus("error");
-      }
-    })();
-
-    return () => controller.abort();
-  }, [chapter, title]);
+  }, [chapter]);
 
   const headings = useMemo(() => extractHeadings(markdown), [markdown]);
 
@@ -108,34 +66,32 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
   const jumpTo = (id: string) => {
     const el = scrollRef.current?.querySelector(`#${CSS.escape(id)}`) as HTMLElement | null;
     if (el && scrollRef.current) {
-      const top = el.offsetTop - 12;
-      scrollRef.current.scrollTo({ top, behavior: "smooth" });
+      scrollRef.current.scrollTo({ top: el.offsetTop - 12, behavior: "smooth" });
     }
     setTocOpen(false);
   };
 
-  // Render heading nodes with ids so TOC can jump to them.
   const headingCounters = useRef(new Map<string, number>());
   headingCounters.current = new Map();
-  const renderHeading = (level: 2 | 3 | 4) => (props: React.HTMLAttributes<HTMLHeadingElement>) => {
-    const text = String(
-      Array.isArray(props.children)
-        ? props.children.map((c) => (typeof c === "string" ? c : "")).join("")
-        : props.children,
-    );
-    const id = slugify(text, headingCounters.current);
-    const cls =
-      level === 2
-        ? "mt-8 mb-3 font-display text-xl font-bold tracking-tight text-foreground"
-        : level === 3
-          ? "mt-6 mb-2 font-display text-base font-bold tracking-tight text-foreground"
-          : "mt-4 mb-2 font-display text-sm font-semibold tracking-tight text-foreground/90";
-    return React.createElement(`h${level}`, { id, className: cls, ...props });
-  };
+  const renderHeading =
+    (level: 2 | 3 | 4) => (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+      const text = String(
+        Array.isArray(props.children)
+          ? props.children.map((c) => (typeof c === "string" ? c : "")).join("")
+          : props.children,
+      );
+      const id = slugify(text, headingCounters.current);
+      const cls =
+        level === 2
+          ? "mt-8 mb-3 font-display text-xl font-bold tracking-tight text-foreground"
+          : level === 3
+            ? "mt-6 mb-2 font-display text-base font-bold tracking-tight text-foreground"
+            : "mt-4 mb-2 font-display text-sm font-semibold tracking-tight text-foreground/90";
+      return React.createElement(`h${level}`, { id, className: cls, ...props });
+    };
 
   return (
     <div className="rounded-2xl border border-border bg-card shadow-sm">
-      {/* Sticky header */}
       <div className="sticky top-16 z-20 flex flex-col gap-2 rounded-t-2xl border-b border-border bg-card/95 px-4 py-3 backdrop-blur sm:px-6">
         <div className="flex items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-2">
@@ -170,7 +126,6 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       </div>
 
       <div className="flex">
-        {/* Side TOC (desktop) */}
         <nav className="hidden w-56 shrink-0 border-r border-border/60 lg:block">
           <div className="sticky top-[9.5rem] max-h-[calc(100vh-11rem)] overflow-y-auto p-4">
             <div className="mb-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -180,7 +135,6 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
           </div>
         </nav>
 
-        {/* Body */}
         <div
           ref={scrollRef}
           onScroll={onScroll}
@@ -194,18 +148,10 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
             className="mx-auto max-w-3xl px-5 py-8 sm:px-10 sm:py-12"
             style={{ fontFamily: "'Georgia','Cambria','Times New Roman',serif" }}
           >
-            {status === "loading" && markdown.length === 0 && (
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Loader2 className="h-4 w-4 animate-spin" /> Locating Chapter {chapter} in the textbook…
-              </div>
-            )}
-            {status === "error" && (
+            {!markdown && (
               <div className="flex items-start gap-2 rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
                 <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
-                <div>
-                  <div className="font-semibold">Couldn't load the chapter.</div>
-                  <div className="mt-1 text-xs opacity-80">{error}</div>
-                </div>
+                <div className="font-semibold">Theory for this chapter isn't available yet.</div>
               </div>
             )}
 
@@ -239,6 +185,9 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                     strong: ({ node: _node, ...p }) => (
                       <strong className="font-bold text-foreground" {...p} />
                     ),
+                    em: ({ node: _node, ...p }) => (
+                      <em className="text-foreground/80" {...p} />
+                    ),
                     code: ({ node: _node, ...p }) => (
                       <code
                         className="rounded bg-secondary px-1 py-0.5 font-mono text-[0.85em]"
@@ -250,18 +199,12 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                 >
                   {markdown}
                 </ReactMarkdown>
-                {status === "streaming" && (
-                  <div className="mt-6 inline-flex items-center gap-2 text-xs text-muted-foreground">
-                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Streaming remaining pages…
-                  </div>
-                )}
               </div>
             )}
           </article>
         </div>
       </div>
 
-      {/* Mobile TOC sheet */}
       {tocOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/50 lg:hidden"
@@ -284,7 +227,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
 
 function TocList({ headings, onJump }: { headings: Heading[]; onJump: (id: string) => void }) {
   if (headings.length === 0) {
-    return <div className="text-xs text-muted-foreground">Building outline…</div>;
+    return <div className="text-xs text-muted-foreground">No sections.</div>;
   }
   return (
     <ul className="space-y-1">
