@@ -46,7 +46,7 @@ const products: Product[] = [
     description:
       "Complete exam preparation guide containing over 1500 complex practice cases across all three subjects, equipped with custom Timing and Stress-Test Modules, Full Mock Exams, a context-aware AI Assistant, task explanations and much more...",
     cta: "Unlock full access",
-    disabled: true,
+    to: "/products/full-course",
   },
   {
     title: "Lite BBE Course",
