@@ -247,9 +247,19 @@ function EconomicsTasks() {
                   <div className="flex items-stretch">
                     <button
                       onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))}
-                      className="flex flex-1 items-center gap-2 rounded-l-xl px-3 py-2.5 text-left hover:bg-secondary/60"
+                      className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
+                      aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
                     >
-                      <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform", !isOpen && "-rotate-90")} />
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", !isOpen && "-rotate-90")} />
+                    </button>
+                    <button
+                      onClick={() => {
+                        setActiveChapter(ch.num);
+                        setTheoryChapter(ch.num);
+                      }}
+                      className="flex flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
+                      title="Open Theory Reader for this chapter"
+                    >
                       <div className="min-w-0 flex-1">
                         <div className="flex items-baseline justify-between gap-2">
                           <span className="truncate text-sm font-bold text-foreground">{ch.num}. {ch.title}</span>
