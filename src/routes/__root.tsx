@@ -89,8 +89,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@BBESchool" },
       { name: "twitter:title", content: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "twitter:description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8ed45c92-cc95-45dd-9b53-b7a5433ec84c" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8ed45c92-cc95-45dd-9b53-b7a5433ec84c" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9cb82508-9c21-494a-b668-61297a2abfd0" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9cb82508-9c21-494a-b668-61297a2abfd0" },
     ],
     links: [
       {
