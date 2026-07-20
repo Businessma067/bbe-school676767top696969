@@ -69,7 +69,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
           {pages.map((url, i) => (
             <figure
               key={url}
-              className="w-full overflow-hidden rounded-lg border border-border bg-white shadow-sm"
+              className="w-full overflow-hidden rounded-lg bg-white"
             >
               <img
                 src={url}
