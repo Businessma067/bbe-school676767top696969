@@ -404,6 +404,35 @@ function FullCourseProduct() {
               </div>
             </div>
           </section>
+
+          {/* FAQ */}
+          <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <div className="mx-auto max-w-3xl">
+              <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
+                Questions & Answers
+              </p>
+              <h2 className="mt-5 text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                Frequently asked questions
+              </h2>
+
+              <Accordion type="single" collapsible className="mt-8">
+                {fullCourseFaqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`full-faq-${index}`}
+                    className="border-b-0 border-t border-border/40 first:border-t-0"
+                  >
+                    <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-caramel">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </section>
         </div>
       </main>
     </div>
