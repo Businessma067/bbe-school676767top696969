@@ -117,13 +117,23 @@ function FullCourseSubjects() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
-                  <button
-                    type="button"
-                    className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-90 shadow-sm transition-all hover:brightness-110"
-                    style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
-                  >
-                    Go to tasks →
-                  </button>
+                  {s.id === "economics" ? (
+                    <Link
+                      to="/products/full-course-economics"
+                      className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
+                    >
+                      Go to tasks →
+                    </Link>
+                  ) : (
+                    <button
+                      type="button"
+                      className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-90 shadow-sm transition-all hover:brightness-110"
+                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
+                    >
+                      Go to tasks →
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
