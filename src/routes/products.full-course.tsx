@@ -229,12 +229,8 @@ function FullCourseProduct() {
             </div>
           </section>
 
-          {/* Sticky top CTA of persuasive section */}
+          {/* Persuasive section */}
           <section className="mt-16">
-            <div className="mb-8 flex justify-center">
-              <CtaButton />
-            </div>
-
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
               Why Most Applicants Fail — And Why This Course Is Built to Fix That
             </h2>
@@ -289,11 +285,7 @@ function FullCourseProduct() {
               <p className="font-display text-lg font-semibold text-foreground sm:text-xl">
                 Stop guessing. Start training the way the exam actually tests you.
               </p>
-            </div>
-
-            <div className="mt-8 flex flex-col items-center gap-3">
-              <CtaButton />
-              <p className="text-xs text-muted-foreground">
+              <p className="mt-2 text-xs text-muted-foreground">
                 One-time payment · €359 · Instant full access
               </p>
             </div>
