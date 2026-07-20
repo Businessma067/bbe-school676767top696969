@@ -140,7 +140,7 @@ export function FloatingAssistant() {
             <div className="flex flex-col leading-tight">
               <span className="font-display text-sm font-semibold text-foreground">AI Assistant</span>
               <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                Ask about the site
+                ASK ANYTHING
               </span>
             </div>
             <button
