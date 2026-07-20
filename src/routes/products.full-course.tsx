@@ -8,6 +8,7 @@ import {
   Gem,
   Check,
   AlertTriangle,
+  Clock,
 } from "lucide-react";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 
@@ -196,15 +197,14 @@ function FullCourseProduct() {
               {features.map((f) => (
                 <div
                   key={f.title}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 p-5 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
-                  style={{ backgroundColor: "var(--why-us-card)" }}
+                  className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-start gap-4">
                     <div
                       className="relative grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl"
                       style={{
-                        backgroundColor: `${ORANGE}22`,
-                        boxShadow: `inset 0 0 0 1px ${ORANGE}55`,
+                        backgroundColor: `${ORANGE}18`,
+                        boxShadow: `inset 0 0 0 1px ${ORANGE}40`,
                       }}
                     >
                       <f.icon className="h-5 w-5" style={{ color: ORANGE }} />
@@ -218,10 +218,10 @@ function FullCourseProduct() {
                       )}
                     </div>
                     <div className="min-w-0">
-                      <h3 className="font-display text-base font-semibold text-white">
+                      <h3 className="font-display text-base font-semibold text-foreground">
                         {f.title}
                       </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-white/70">{f.text}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{f.text}</p>
                     </div>
                   </div>
                 </div>
@@ -296,6 +296,36 @@ function FullCourseProduct() {
               <p className="text-xs text-muted-foreground">
                 One-time payment · €359 · Instant full access
               </p>
+            </div>
+          </section>
+
+          {/* Section 3 — Time investment */}
+          <section className="mt-16 rounded-2xl border border-border bg-gradient-to-br from-secondary to-background p-6 sm:p-8">
+            <div className="flex flex-col items-center gap-4 text-center">
+              <div
+                className="grid h-14 w-14 place-items-center rounded-2xl"
+                style={{ backgroundColor: `${ORANGE}18`, boxShadow: `inset 0 0 0 1px ${ORANGE}40` }}
+              >
+                <Clock className="h-7 w-7" style={{ color: ORANGE }} />
+              </div>
+              <div>
+                <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  How much time it takes
+                </h2>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+                  Start preparing early, and even one relaxed hour a day is enough to reach the
+                  top. No cramming. No all-nighters. Just steady, focused progress that compounds
+                  into real confidence by exam day.
+                </p>
+              </div>
+              <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-background px-5 py-3">
+                <span className="font-display text-3xl font-bold" style={{ color: ORANGE }}>
+                  1
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  hour / day on lazy days when you start in advance
+                </span>
+              </div>
             </div>
           </section>
         </div>
