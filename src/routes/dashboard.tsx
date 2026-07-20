@@ -268,8 +268,8 @@ function Heatmap({
         </div>
         <div className="grid gap-1" style={{ gridTemplateColumns: `28px repeat(${WEEKS}, 1fr)` }}>
           {rows.map((row, ri) => (
-            <>
-              <span key={"lbl-" + ri} className="text-[10px] leading-5 text-muted-foreground">
+            <div key={"row-" + ri} className="contents">
+              <span className="text-[10px] leading-5 text-muted-foreground">
                 {ri % 2 === 1 ? ["Mon", "Wed", "Fri"][(ri - 1) / 2] ?? "" : ""}
               </span>
               {row.map((c) => {
@@ -302,7 +302,7 @@ function Heatmap({
                   />
                 );
               })}
-            </>
+            </div>
           ))}
         </div>
       </div>
