@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles } from "lucide-react";
+import { TheoryReader } from "@/components/TheoryReader";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
