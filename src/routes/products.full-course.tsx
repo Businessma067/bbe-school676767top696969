@@ -229,12 +229,8 @@ function FullCourseProduct() {
             </div>
           </section>
 
-          {/* Sticky top CTA of persuasive section */}
+          {/* Persuasive section */}
           <section className="mt-16">
-            <div className="mb-8 flex justify-center">
-              <CtaButton />
-            </div>
-
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
               Why Most Applicants Fail — And Why This Course Is Built to Fix That
             </h2>
