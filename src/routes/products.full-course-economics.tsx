@@ -96,7 +96,7 @@ function EconomicsTasks() {
   const explainFn = useServerFn(explainCase);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
-    () => Object.fromEntries(CHAPTERS.map((c) => [c.num, true])),
+    () => Object.fromEntries(CHAPTERS.map((c) => [c.num, false])),
   );
 
   useEffect(() => {
