@@ -26,14 +26,11 @@ export const Route = createFileRoute("/products/full-course-economics")({
 });
 
 const CHAPTERS: { num: number; title: string; taskCount: number }[] = [
-  { num: 1, title: "Introduction to Economics", taskCount: 40 },
   { num: 2, title: "Basic Economic Concepts", taskCount: 45 },
   { num: 3, title: "Focus on different types of businesses", taskCount: 40 },
   { num: 4, title: "Forms of business ownership and sources of finance", taskCount: 50 },
   { num: 5, title: "Marketing", taskCount: 55 },
   { num: 6, title: "Accounting – keeping record of business transactions", taskCount: 60 },
-  { num: 7, title: "Human Resource Management", taskCount: 40 },
-  { num: 8, title: "International Business & Trade", taskCount: 45 },
 ];
 
 function FullCourseEconomics() {
