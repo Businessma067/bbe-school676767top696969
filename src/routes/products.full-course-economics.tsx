@@ -6,27 +6,10 @@ import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles } from "lucide-react";
 
-const CHAPTER5_FREE_LIMIT = 8;
-const CHAPTER2_FREE_LIMIT = 6;
-const CHAPTER3_FREE_LIMIT = 5;
-const CHAPTER4_FREE_LIMIT = 6;
-const CHAPTER6_FREE_LIMIT = 8;
-const DEFAULT_PHANTOM_LOCKED_COUNT = 3;
-const phantomCountFor = (ch: number): number => {
-  // Chapters 2 & 3 already have 3 real locked gradient tasks; no extra phantom rows needed.
-  if (ch === 2 || ch === 3) return 0;
-  return DEFAULT_PHANTOM_LOCKED_COUNT;
-};
-const freeLimitOf = (ch: number | "revision" | null): number => {
-  if (ch === 2) return CHAPTER2_FREE_LIMIT;
-  if (ch === 3) return CHAPTER3_FREE_LIMIT;
-  if (ch === 4) return CHAPTER4_FREE_LIMIT;
-  if (ch === 5) return CHAPTER5_FREE_LIMIT;
-  if (ch === 6) return CHAPTER6_FREE_LIMIT;
-  return Number.POSITIVE_INFINITY;
-};
-const isLocked = (chapter: number | "revision" | null, idx: number) =>
-  idx >= freeLimitOf(chapter);
+// Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
+const phantomCountFor = (_ch: number): number => 0;
+const freeLimitOf = (_ch: number | "revision" | null): number => Number.POSITIVE_INFINITY;
+const isLocked = (_chapter: number | "revision" | null, _idx: number) => false;
 
 
 export const Route = createFileRoute("/products/full-course-economics")({
