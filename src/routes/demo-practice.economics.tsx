@@ -59,7 +59,7 @@ const CHAPTERS: { num: number; title: string }[] = [
   { num: 6, title: "Accounting – keeping record of business transactions" },
 ];
 
-const STORAGE_KEY = "bbe.economics.progress.v1";
+const STORAGE_KEY = "bbe.economics.progress.demo.v1";
 
 type Progress = {
   passed: string[];   // case ids fully correct
