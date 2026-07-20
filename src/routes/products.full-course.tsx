@@ -285,11 +285,7 @@ function FullCourseProduct() {
               <p className="font-display text-lg font-semibold text-foreground sm:text-xl">
                 Stop guessing. Start training the way the exam actually tests you.
               </p>
-            </div>
-
-            <div className="mt-8 flex flex-col items-center gap-3">
-              <CtaButton />
-              <p className="text-xs text-muted-foreground">
+              <p className="mt-2 text-xs text-muted-foreground">
                 One-time payment · €359 · Instant full access
               </p>
             </div>
