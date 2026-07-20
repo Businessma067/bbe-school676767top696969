@@ -120,6 +120,7 @@ function EconomicsTasks() {
       const { data, error } = await supabase
         .from("economics_cases")
         .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order")
+        .eq("tier", "demo")
         .order("sort_order", { ascending: true });
       if (cancel) return;
       if (error) setError(error.message);

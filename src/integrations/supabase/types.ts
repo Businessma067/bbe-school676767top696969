@@ -54,6 +54,7 @@ export type Database = {
           subject: string
           subsection: string
           tactical_explanations: string[]
+          tier: string
           title: string
           updated_at: string
         }
@@ -69,6 +70,7 @@ export type Database = {
           subject?: string
           subsection: string
           tactical_explanations: string[]
+          tier?: string
           title: string
           updated_at?: string
         }
@@ -84,6 +86,7 @@ export type Database = {
           subject?: string
           subsection?: string
           tactical_explanations?: string[]
+          tier?: string
           title?: string
           updated_at?: string
         }
