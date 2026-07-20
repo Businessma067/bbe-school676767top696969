@@ -197,15 +197,14 @@ function FullCourseProduct() {
               {features.map((f) => (
                 <div
                   key={f.title}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 p-5 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
-                  style={{ backgroundColor: "var(--why-us-card)" }}
+                  className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-start gap-4">
                     <div
                       className="relative grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl"
                       style={{
-                        backgroundColor: `${ORANGE}22`,
-                        boxShadow: `inset 0 0 0 1px ${ORANGE}55`,
+                        backgroundColor: `${ORANGE}18`,
+                        boxShadow: `inset 0 0 0 1px ${ORANGE}40`,
                       }}
                     >
                       <f.icon className="h-5 w-5" style={{ color: ORANGE }} />
@@ -219,10 +218,10 @@ function FullCourseProduct() {
                       )}
                     </div>
                     <div className="min-w-0">
-                      <h3 className="font-display text-base font-semibold text-white">
+                      <h3 className="font-display text-base font-semibold text-foreground">
                         {f.title}
                       </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-white/70">{f.text}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{f.text}</p>
                     </div>
                   </div>
                 </div>
