@@ -710,7 +710,7 @@ function CaseCard({
 
   const handleSubmit = () => {
     setChecked(true);
-    onGraded(correctCount === 5);
+    onGraded(correctCount, 5);
   };
 
   const handleReset = () => {
