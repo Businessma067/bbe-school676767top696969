@@ -1080,3 +1080,115 @@ function PassageBody({
     </>
   );
 }
+
+// ---------------- Grammar explanation panel ----------------
+
+function GrammarExplanationPanel({
+  explanation,
+  tactical,
+  onClose,
+}: {
+  explanation: {
+    key: string;
+    statementIndex: number;
+    statementText: string;
+    correctAnswer: boolean;
+    highlight: string;
+  } | null;
+  tactical: string;
+  onClose: () => void;
+}) {
+  const [reveal, setReveal] = useState(false);
+  useEffect(() => {
+    setReveal(false);
+    if (!explanation) return;
+    const t = setTimeout(() => setReveal(true), 200);
+    return () => clearTimeout(t);
+  }, [explanation?.key, explanation]);
+
+  return (
+    <div className="flex h-full flex-col gap-3">
+      <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
+        <div className="flex items-center gap-2">
+          <Sparkles className="h-4 w-4 text-primary" />
+          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+            {explanation ? `AI Breakdown · Statement ${explanation.statementIndex + 1}` : "AI Grammar Coach"}
+          </span>
+        </div>
+        {explanation && (
+          <button
+            onClick={onClose}
+            aria-label="Close explanation"
+            className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        )}
+      </div>
+
+      {!explanation && (
+        <div className="flex flex-1 items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
+          Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Show AI text explanation</span>
+          on any statement to see exactly where the trap is set.
+        </div>
+      )}
+
+      {explanation && (
+        <div className="min-h-0 flex-1 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm">
+          <div className="mb-3 flex items-center gap-2">
+            <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+              Statement {explanation.statementIndex + 1}
+            </span>
+            <span className={cn(
+              "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+              explanation.correctAnswer
+                ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
+                : "bg-destructive/15 text-destructive",
+            )}>
+              {explanation.correctAnswer ? "GRAMMATICAL" : "UNGRAMMATICAL"}
+            </span>
+          </div>
+
+          <div className="rounded-xl border border-border bg-[#fdf9f0] p-3 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+            <SentenceWithHighlight
+              text={explanation.statementText}
+              highlight={explanation.highlight}
+              reveal={reveal}
+            />
+          </div>
+
+          <div className="mt-4">
+            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+              Where the exam catches you
+            </p>
+            <p className="whitespace-pre-line text-[13px] leading-relaxed text-foreground">
+              {tactical}
+            </p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SentenceWithHighlight({
+  text, highlight, reveal,
+}: { text: string; highlight: string; reveal: boolean }) {
+  const idx = highlight ? text.indexOf(highlight) : -1;
+  if (idx === -1 || !highlight) return <>{text}</>;
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + highlight.length);
+  const after = text.slice(idx + highlight.length);
+  return (
+    <>
+      {before}
+      <span
+        className={reveal ? "neon-highlight" : undefined}
+        style={reveal ? undefined : { padding: "0 2px" }}
+      >
+        {match}
+      </span>
+      {after}
+    </>
+  );
+}
