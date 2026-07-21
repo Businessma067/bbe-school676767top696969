@@ -121,11 +121,11 @@ const columns = [
 ] as const;
 
 function renderValue(value: string) {
-  if (value === "tick") {
+  if (value === "tick" || value === "✔️") {
     return <Check className="mx-auto h-5 w-5 text-caramel-deep" strokeWidth={3} />;
   }
   if (value === "❌") {
-    return <X className="mx-auto h-5 w-5 text-muted-foreground/60" strokeWidth={2.5} />;
+    return <X className="mx-auto h-5 w-5 text-gray-400" strokeWidth={2.5} />;
   }
   return value;
 }
@@ -153,7 +153,7 @@ function CompareTable() {
                 {columns.map((col) => (
                   <th
                     key={col.key}
-                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-muted-foreground"} ${col.featured ? "bg-caramel-deep/10" : "bg-muted/50"}`}
+                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-foreground" : "text-muted-foreground"} ${col.featured ? "bg-muted" : "bg-muted/50"} ${col.featured ? "featured-column" : ""}`}
                   >
                     {col.label}
                   </th>
@@ -185,7 +185,7 @@ function CompareTable() {
                         return (
                           <td
                             key={col.key}
-                            className={`relative px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-foreground/80"} ${isFeatured ? "bg-caramel-deep/[0.06]" : ""} ${isFeatured ? "featured-column" : ""}`}
+                            className={`relative px-4 py-3.5 text-center font-medium text-foreground/80 ${isFeatured ? "featured-column" : ""}`}
                           >
                             {renderValue(value)}
                           </td>
