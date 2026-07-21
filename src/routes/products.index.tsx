@@ -103,12 +103,12 @@ const comparisonSections: ComparisonSection[] = [
   {
     title: "Insider Guide",
     rows: [
-      { label: "Step by step explanations", free: "✔️", lite: "❌", full: "✔️" },
+      { label: "Step by step explanations", free: "✔️", lite: "tick", full: "✔️" },
       { label: "AI Study Assistant", free: "❌", lite: "❌", full: "tick" },
       { label: "Tactical Trap Callouts", free: "❌", lite: "❌", full: "✔️" },
-      { label: "Dynamic Focus Heatmap", free: "❌", lite: "❌", full: "✔️" },
-      { label: "Support Chat", free: "❌", lite: "❌", full: "tick" },
-      { label: "Achievements & Medals Tab", free: "❌", lite: "❌", full: "✔️" },
+      { label: "Dynamic Focus Heatmap", free: "❌", lite: "tick", full: "✔️" },
+      { label: "Support Chat", free: "❌", lite: "tick", full: "tick" },
+      { label: "Achievements & Medals Tab", free: "❌", lite: "tick", full: "✔️" },
       { label: "OSA Guide", free: "❌", lite: "❌", full: "✔️" },
     ],
   },
