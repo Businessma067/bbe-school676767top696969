@@ -610,6 +610,7 @@ function EnglishTasks() {
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(ok) => recordResult(activeCase.id, ok)}
               onResetProgress={() => resetCaseIds([activeCase.id])}
+              isGrammar={isGrammarCase}
               activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
               onRequestExplanation={(i) => requestExplanation(activeCase, i)}
             />
@@ -668,12 +669,13 @@ function EnglishTasks() {
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
-  activeExplanationIndex, onRequestExplanation,
+  isGrammar, activeExplanationIndex, onRequestExplanation,
 }: {
   data: ReadingTask | GrammarTask; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
+  isGrammar: boolean;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
 }) {
@@ -805,18 +807,20 @@ function CaseCard({
                     Explanation
                     <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", openExpl[i] && "rotate-180")} />
                   </button>
-                  <button
-                    onClick={() => onRequestExplanation(i)}
-                    className={cn(
-                      "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                      activeExplanationIndex === i
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
-                    )}
-                  >
-                    <Sparkles className="h-3 w-3" />
-                    {activeExplanationIndex === i ? "Highlighted in passage →" : "Show AI text explanation"}
-                  </button>
+                  {!isGrammar && (
+                    <button
+                      onClick={() => onRequestExplanation(i)}
+                      className={cn(
+                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                        activeExplanationIndex === i
+                          ? "border-primary bg-primary text-primary-foreground"
+                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                      )}
+                    >
+                      <Sparkles className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Highlighted in passage →" : "Show AI text explanation"}
+                    </button>
+                  )}
                   {openExpl[i] && (
                     <p className={cn(
                       "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
@@ -1128,8 +1132,8 @@ function GrammarExplanationPanel({
 
       {!explanation && (
         <div className="flex flex-1 items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-          Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Show AI text explanation</span>
-          on any statement to see exactly where the trap is set.
+          Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Explanation</span>
+          below any statement to see the detailed breakdown.
         </div>
       )}
 
