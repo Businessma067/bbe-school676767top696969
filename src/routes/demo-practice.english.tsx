@@ -670,7 +670,7 @@ function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
   activeExplanationIndex, onRequestExplanation,
 }: {
-  data: ReadingTask; index: number;
+  data: ReadingTask | GrammarTask; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
