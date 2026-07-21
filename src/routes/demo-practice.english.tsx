@@ -222,7 +222,7 @@ const GRAMMAR_TASKS: GrammarTask[] = [
       "TRUE. This is a correct future perfect construction: \"will have already been submitted\" correctly expresses an action completed before another future point in time (\"by the time the meeting starts\"). The present-tense \"starts\" after \"by the time\" is required — future tense there would be wrong.",
       "FALSE. \"Used to\" + base verb means a past habit (\"she used to work\"), while \"be used to\" + gerund means accustomed to something (\"she is used to working\"). The sentence mixes the two structures — it should be \"used to working,\" not \"used to work,\" to match \"is used to.\" The trap is that both forms exist and both sound familiar.",
     ],
-    focus: [
+    highlights: [
       "nor the employees was aware",
       "Had the company invested earlier",
       "which was collected",
@@ -250,7 +250,7 @@ const GRAMMAR_TASKS: GrammarTask[] = [
       "TRUE. \"Not only…but also\" correctly triggers subject-auxiliary inversion after the fronted negative (\"Not only did the report highlight…\"), and the parallel structure with \"also proposed\" is correctly formed. Without \"did,\" the sentence would be ungrammatical — the inversion is mandatory here.",
       "TRUE. The comparative structure \"less conclusive than what we had anticipated\" is grammatically valid, with the past perfect correctly indicating an expectation formed prior to the results being known. Some students flag \"than what\" as wrong, but it is acceptable formal English.",
     ],
-    focus: [
+    highlights: [
       "If I would have known",
       "committee has reduced",
       "Despite of the rising costs",
@@ -278,7 +278,7 @@ const GRAMMAR_TASKS: GrammarTask[] = [
       "FALSE. \"There is\" must agree with the plural noun \"reasons\" that follows — it should read \"There are several reasons,\" not \"There is several reasons.\" The dummy subject \"there\" pushes agreement onto the noun that follows.",
       "TRUE. \"Whoever\" correctly functions as the subject of the subordinate clause (\"whoever is responsible\"), and the main clause verb \"should acknowledge\" is properly formed. Students often want to \"correct\" this to \"whomever,\" but that would be wrong here — case is set by the subordinate clause, not the main one.",
     ],
-    focus: [
+    highlights: [
       "Each of the proposals have their own",
       "will have operated",
       "insisted that the report be submitted",
@@ -306,7 +306,7 @@ const GRAMMAR_TASKS: GrammarTask[] = [
       "TRUE. \"No sooner…than\" correctly triggers inversion (\"No sooner had the announcement been made\"), and the past perfect followed by simple past (\"began to fall\") correctly sequences the two rapid events. A common wrong \"correction\" would swap \"than\" for \"when\" — that would be ungrammatical.",
       "FALSE. \"Along with several amendments\" is a parenthetical phrase, not part of the compound subject — the verb must agree with the singular \"the proposal,\" so it should read \"The proposal…was rejected,\" not \"were rejected.\" The same rule applies to \"together with,\" \"as well as,\" and \"in addition to.\"",
     ],
-    focus: [
+    highlights: [
       "The number of employees affected by the restructuring have doubled",
       "every candidate submits their application",
       "Having reviewed the evidence, the conclusion was reached",
