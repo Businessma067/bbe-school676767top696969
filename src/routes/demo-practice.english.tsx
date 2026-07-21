@@ -651,8 +651,6 @@ function EnglishTasks() {
                             </li>
                           );
                         })}
-                          );
-                        })}
                       </ul>
                     )}
                   </li>
