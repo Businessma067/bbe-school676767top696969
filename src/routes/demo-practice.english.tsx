@@ -632,8 +632,9 @@ function EnglishTasks() {
                             </li>
                           );
                         })}
-                        {isComingSoon && Array.from({ length: 3 }).map((_, p) => {
+                        {Array.from({ length: 3 }).map((_, p) => {
                           const opacity = Math.max(0.08, 0.45 - p * 0.15);
+                          const num = ch.tasks.length + p + 1;
                           return (
                             <li key={`ph-${ch.key}-${p}`}>
                               <button
@@ -645,9 +646,11 @@ function EnglishTasks() {
                                 <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
                                   <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
                                 </span>
-                                <span className="truncate">Task {p + 1} · Locked</span>
+                                <span className="truncate">Task {num} · Locked</span>
                               </button>
                             </li>
+                          );
+                        })}
                           );
                         })}
                       </ul>
