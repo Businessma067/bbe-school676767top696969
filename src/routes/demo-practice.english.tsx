@@ -197,9 +197,10 @@ type GrammarTask = {
   answer_key: boolean[];
   tactical: string[];
   // Substring inside each statement that pinpoints the error/key structure.
-  focus: string[];
+  highlights: string[];
   difficulty: string;
 };
+
 
 const GRAMMAR_TASKS: GrammarTask[] = [
   {
