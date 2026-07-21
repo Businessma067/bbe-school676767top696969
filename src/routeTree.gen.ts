@@ -28,6 +28,7 @@ import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/product
 import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
+import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
@@ -129,6 +130,11 @@ const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
   path: '/demo-practice',
   getParentRoute: () => ProductsRoute,
 } as any)
+const DemoPracticeEnglishRoute = DemoPracticeEnglishRouteImport.update({
+  id: '/english',
+  path: '/english',
+  getParentRoute: () => DemoPracticeRoute,
+} as any)
 const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
@@ -162,6 +168,7 @@ export interface FileRoutesByFullPath {
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
+  '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -184,6 +191,7 @@ export interface FileRoutesByTo {
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
+  '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -209,6 +217,7 @@ export interface FileRoutesById {
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
+  '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -235,6 +244,7 @@ export interface FileRouteTypes {
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
+    | '/demo-practice/english'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -257,6 +267,7 @@ export interface FileRouteTypes {
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
+    | '/demo-practice/english'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -281,6 +292,7 @@ export interface FileRouteTypes {
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
+    | '/demo-practice/english'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -441,6 +453,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsDemoPracticeRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/demo-practice/english': {
+      id: '/demo-practice/english'
+      path: '/english'
+      fullPath: '/demo-practice/english'
+      preLoaderRoute: typeof DemoPracticeEnglishRouteImport
+      parentRoute: typeof DemoPracticeRoute
+    }
     '/demo-practice/economics': {
       id: '/demo-practice/economics'
       path: '/economics'
@@ -477,11 +496,13 @@ const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 interface DemoPracticeRouteChildren {
   DemoPracticeEconomicsRoute: typeof DemoPracticeEconomicsRoute
+  DemoPracticeEnglishRoute: typeof DemoPracticeEnglishRoute
   DemoPracticeIndexRoute: typeof DemoPracticeIndexRoute
 }
 
 const DemoPracticeRouteChildren: DemoPracticeRouteChildren = {
   DemoPracticeEconomicsRoute: DemoPracticeEconomicsRoute,
+  DemoPracticeEnglishRoute: DemoPracticeEnglishRoute,
   DemoPracticeIndexRoute: DemoPracticeIndexRoute,
 }
 
