@@ -669,12 +669,13 @@ function EnglishTasks() {
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
-  activeExplanationIndex, onRequestExplanation,
+  isGrammar, activeExplanationIndex, onRequestExplanation,
 }: {
   data: ReadingTask | GrammarTask; index: number;
   onGraded: (allCorrect: boolean) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
+  isGrammar: boolean;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
 }) {
