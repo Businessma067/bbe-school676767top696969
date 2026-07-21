@@ -150,10 +150,6 @@
 
 @utility featured-column {
   background-color: color-mix(in oklab, var(--color-foreground) 5%, transparent);
-  box-shadow:
-    inset 1px 0 0 0 color-mix(in oklab, var(--color-foreground) 35%, transparent),
-    inset -1px 0 0 0 color-mix(in oklab, var(--color-foreground) 35%, transparent),
-    0 0 40px -12px color-mix(in oklab, var(--color-foreground) 20%, transparent);
 }
 
 @utility why-us-pulse {
