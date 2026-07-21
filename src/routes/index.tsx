@@ -194,7 +194,7 @@ function Index() {
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
               Watch the exact loop a prepared BBE candidate runs during the exam — TRUE/FALSE
-              decisions on the left, instant textbook proof on the right.
+              decisions on the left, instant proof on the right.
             </p>
           </div>
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
@@ -305,64 +305,6 @@ function Index() {
             </Link>
           </div>
         </section>
-
-
-        {/* LIABILITY CHART — light academic island */}
-        <section className="relative px-6 py-24 lg:px-8 lg:py-32 bg-ivory">
-
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{
-              backgroundImage:
-                "radial-gradient(ellipse at top right, rgba(0,0,0,0.10), transparent 55%), radial-gradient(ellipse at bottom left, rgba(0,0,0,0.06), transparent 60%)",
-            }}
-          />
-          <div className="relative mx-auto max-w-6xl">
-            <div className="mb-12 max-w-3xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
-                48-Month Capital Model
-              </p>
-              <h2 className="mt-5 font-display text-3xl font-bold leading-[1.1] tracking-tight text-espresso sm:text-4xl lg:text-5xl">
-                Two paths. One decision that compounds.
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-taupe sm:text-lg">
-                A strict financial comparison tracking tuition, mandatory foundation blocks,
-                rent, and European living costs over 48 months.
-              </p>
-            </div>
-
-            <div
-              className="rounded-3xl bg-card p-6 sm:p-8 lg:p-10"
-              style={{
-                border: "1px solid rgba(0,0,0,0.10)",
-                boxShadow:
-                  "0 1px 0 rgba(255,255,255,0.6) inset, 0 30px 60px -30px rgba(0,0,0,0.25)",
-              }}
-            >
-              <LiabilityChart />
-            </div>
-
-            <div
-              className="mt-12 rounded-2xl px-6 py-6 sm:px-8 sm:py-7"
-              style={{
-                backgroundColor: "rgba(0,0,0,0.10)",
-                border: "1px solid rgba(0,0,0,0.35)",
-              }}
-            >
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-caramel">
-                The Math is Absolute
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-espresso/85 sm:text-base">
-                Securing a Top-240 seat at world-class WU Vienna blocks a compounding{" "}
-                <span className="font-semibold text-espresso">€70,000 family debt liability</span>.
-                Investing <span className="font-semibold text-espresso">€349</span> in the survival
-                engine today is a calculated asset-protection strategy.
-              </p>
-            </div>
-          </div>
-        </section>
-
 
 
         {/* PARALLAX BAND #2 */}
