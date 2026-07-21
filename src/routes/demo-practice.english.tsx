@@ -582,7 +582,8 @@ function EnglishTasks() {
             </div>
           )}
 
-          {activeChapter !== null && activeChapter !== "reading" && activeChapter !== "revision" && (
+          {activeChapter !== null && activeChapter !== "revision" &&
+            (CHAPTERS.find((c) => c.key === activeChapter)?.tasks.length ?? 0) === 0 && (
             <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                 <Lock className="h-6 w-6" />
@@ -637,14 +638,27 @@ function EnglishTasks() {
           )}
         </main>
 
-        {/* Right panel — always shows the passage; when explanation active, highlight the phrase */}
+        {/* Right panel — Reading shows the passage with highlight; Grammar shows the detailed AI breakdown. */}
         <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
-          <ReadingPanel
-            passage={READING_PASSAGE}
-            explanation={explanation}
-            onClose={() => setExplanation(null)}
-          />
+          {isGrammarCase ? (
+            <GrammarExplanationPanel
+              explanation={explanation}
+              tactical={
+                activeCase && explanation?.caseId === activeCase.id
+                  ? activeCase.tactical[explanation.statementIndex]
+                  : ""
+              }
+              onClose={() => setExplanation(null)}
+            />
+          ) : (
+            <ReadingPanel
+              passage={READING_PASSAGE}
+              explanation={explanation}
+              onClose={() => setExplanation(null)}
+            />
+          )}
         </aside>
+
       </div>
     </div>
   );
