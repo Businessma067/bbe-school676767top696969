@@ -1132,8 +1132,8 @@ function GrammarExplanationPanel({
 
       {!explanation && (
         <div className="flex flex-1 items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-          Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Show AI text explanation</span>
-          on any statement to see exactly where the trap is set.
+          Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Explanation</span>
+          below any statement to see the detailed breakdown.
         </div>
       )}
 
