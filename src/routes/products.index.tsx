@@ -132,10 +132,10 @@ function renderValue(value: string) {
 
 function CompareTable() {
   return (
-    <section className="mt-20 overflow-hidden rounded-3xl bg-why-us-bg text-foreground ring-1 ring-white/10">
+    <section className="mt-20 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
       <div className="px-6 py-12 lg:px-10 lg:py-16">
         <div className="mb-10 text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Compare plans
           </h2>
           <p className="mt-3 text-sm text-muted-foreground">
@@ -143,17 +143,17 @@ function CompareTable() {
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl ring-1 ring-white/10">
+        <div className="overflow-x-auto rounded-2xl border border-border bg-background">
           <table className="w-full min-w-[720px] border-collapse text-sm">
             <thead>
-              <tr className="border-b border-white/10">
-                <th className="sticky left-0 z-10 w-[220px] bg-why-us-bg px-4 py-4 text-left font-display text-xs font-semibold uppercase tracking-widest text-white/70">
+              <tr className="border-b border-border bg-muted/50">
+                <th className="sticky left-0 z-10 w-[220px] bg-muted px-4 py-4 text-left font-display text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   Compare
                 </th>
                 {columns.map((col) => (
                   <th
                     key={col.key}
-                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-white/70"} ${col.featured ? "bg-caramel-deep/10" : "bg-why-us-bg"} ${col.featured ? "featured-column" : ""}`}
+                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-muted-foreground"} ${col.featured ? "bg-caramel-deep/10" : "bg-muted/50"}`}
                   >
                     {col.label}
                   </th>
@@ -163,10 +163,10 @@ function CompareTable() {
             <tbody>
               {comparisonSections.map((section, sectionIdx) => (
                 <>
-                  <tr key={section.title} className="border-t border-white/10">
+                  <tr key={section.title} className="border-t border-border">
                     <td
                       colSpan={4}
-                      className="sticky left-0 z-10 bg-why-us-bg px-4 py-3 text-left font-display text-xs font-semibold uppercase tracking-widest text-caramel"
+                      className="sticky left-0 z-10 bg-background px-4 py-3 text-left font-display text-xs font-semibold uppercase tracking-widest text-caramel-deep"
                     >
                       {section.title}
                     </td>
@@ -174,9 +174,9 @@ function CompareTable() {
                   {section.rows.map((row, rowIdx) => (
                     <tr
                       key={row.label}
-                      className={`border-t border-white/5 ${rowIdx % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"}`}
+                      className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
                     >
-                      <td className="sticky left-0 z-10 w-[220px] bg-why-us-bg px-4 py-3.5 font-medium text-white/90">
+                      <td className="sticky left-0 z-10 w-[220px] bg-background px-4 py-3.5 font-medium text-foreground/90">
                         {row.label}
                       </td>
                       {columns.map((col) => {
@@ -185,7 +185,7 @@ function CompareTable() {
                         return (
                           <td
                             key={col.key}
-                            className={`relative px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-white/80"} ${isFeatured ? "bg-caramel-deep/[0.08]" : ""} ${isFeatured ? "featured-column" : ""}`}
+                            className={`relative px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-foreground/80"} ${isFeatured ? "bg-caramel-deep/[0.06]" : ""} ${isFeatured ? "featured-column" : ""}`}
                           >
                             {renderValue(value)}
                           </td>
@@ -194,8 +194,8 @@ function CompareTable() {
                     </tr>
                   ))}
                   {sectionIdx < comparisonSections.length - 1 && (
-                    <tr className="border-t border-white/10">
-                      <td colSpan={4} className="h-2 bg-why-us-bg" />
+                    <tr className="border-t border-border">
+                      <td colSpan={4} className="h-2 bg-background" />
                     </tr>
                   )}
                 </>
