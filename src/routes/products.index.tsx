@@ -115,8 +115,8 @@ const comparisonSections: ComparisonSection[] = [
 ];
 
 const columns = [
-  { key: "free", label: "Free Sample" },
-  { key: "lite", label: "BBE Lite Practice" },
+  { key: "free", label: "Free Sample", featured: false },
+  { key: "lite", label: "BBE Lite Practice", featured: false },
   { key: "full", label: "BBE Full Course", featured: true },
 ] as const;
 
