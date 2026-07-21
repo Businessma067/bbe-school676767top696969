@@ -807,18 +807,20 @@ function CaseCard({
                     Explanation
                     <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", openExpl[i] && "rotate-180")} />
                   </button>
-                  <button
-                    onClick={() => onRequestExplanation(i)}
-                    className={cn(
-                      "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                      activeExplanationIndex === i
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
-                    )}
-                  >
-                    <Sparkles className="h-3 w-3" />
-                    {activeExplanationIndex === i ? "Highlighted in passage →" : "Show AI text explanation"}
-                  </button>
+                  {!isGrammar && (
+                    <button
+                      onClick={() => onRequestExplanation(i)}
+                      className={cn(
+                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                        activeExplanationIndex === i
+                          ? "border-primary bg-primary text-primary-foreground"
+                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                      )}
+                    >
+                      <Sparkles className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Highlighted in passage →" : "Show AI text explanation"}
+                    </button>
+                  )}
                   {openExpl[i] && (
                     <p className={cn(
                       "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
