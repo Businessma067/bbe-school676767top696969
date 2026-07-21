@@ -148,6 +148,13 @@
     0 0 80px -24px color-mix(in oklab, var(--color-caramel) 45%, transparent);
 }
 
+@utility featured-column {
+  box-shadow:
+    inset 1px 0 0 0 var(--color-caramel-deep),
+    inset -1px 0 0 0 var(--color-caramel-deep),
+    0 0 24px -6px color-mix(in oklab, var(--color-caramel-deep) 70%, transparent);
+}
+
 @utility why-us-pulse {
   animation: why-us-pulse 3s ease-in-out infinite;
 }
