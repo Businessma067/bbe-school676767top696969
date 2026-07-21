@@ -668,7 +668,7 @@ function CaseCard({
                     )}
                   >
                     <Sparkles className="h-3 w-3" />
-                    {activeExplanationIndex === i ? "Highlighted in passage →" : "Explanation AI"}
+                    {activeExplanationIndex === i ? "Highlighted in passage →" : "Show AI text explanation"}
                   </button>
                   {openExpl[i] && (
                     <p className={cn(
