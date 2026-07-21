@@ -610,6 +610,7 @@ function EnglishTasks() {
               alreadyPassed={progress.passed.includes(activeCase.id)}
               onGraded={(ok) => recordResult(activeCase.id, ok)}
               onResetProgress={() => resetCaseIds([activeCase.id])}
+              isGrammar={isGrammarCase}
               activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
               onRequestExplanation={(i) => requestExplanation(activeCase, i)}
             />
