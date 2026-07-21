@@ -75,6 +75,139 @@ const products: Product[] = [
   },
 ];
 
+type ComparisonCell = {
+  label: string;
+  free: string;
+  lite: string;
+  full: string;
+};
+
+type ComparisonSection = {
+  title: string;
+  rows: ComparisonCell[];
+};
+
+const comparisonSections: ComparisonSection[] = [
+  {
+    title: "Features",
+    rows: [
+      { label: "Math Tasks", free: "50", lite: "550", full: "800+" },
+      { label: "Economics Tasks", free: "35", lite: "375", full: "500+" },
+      { label: "English Tasks", free: "10", lite: "150", full: "240+" },
+      { label: "Textbook Theory", free: "❌", lite: "Crucial materials", full: "Full materials" },
+      { label: "Answer Sheet Simulator", free: "❌", lite: "❌", full: "tick" },
+      { label: "Interactive Speed Simulators", free: "❌", lite: "❌", full: "tick" },
+      { label: "Mock Exams", free: "❌", lite: "3", full: "7+ exams with answer sheets" },
+    ],
+  },
+  {
+    title: "Insider Guide",
+    rows: [
+      { label: "Step by step explanations", free: "✔️", lite: "❌", full: "✔️" },
+      { label: "AI Study Assistant", free: "❌", lite: "❌", full: "tick" },
+      { label: "Tactical Trap Callouts", free: "❌", lite: "❌", full: "✔️" },
+      { label: "Dynamic Focus Heatmap", free: "❌", lite: "❌", full: "✔️" },
+      { label: "Support Chat", free: "❌", lite: "❌", full: "tick" },
+      { label: "Achievements & Medals Tab", free: "❌", lite: "❌", full: "✔️" },
+      { label: "OSA Guide", free: "❌", lite: "❌", full: "✔️" },
+    ],
+  },
+];
+
+const columns = [
+  { key: "free", label: "Free Sample" },
+  { key: "lite", label: "BBE Lite Practice" },
+  { key: "full", label: "BBE Full Course", featured: true },
+] as const;
+
+function renderValue(value: string) {
+  if (value === "tick") {
+    return <Check className="mx-auto h-5 w-5 text-caramel-deep" strokeWidth={3} />;
+  }
+  if (value === "❌") {
+    return <X className="mx-auto h-5 w-5 text-muted-foreground/60" strokeWidth={2.5} />;
+  }
+  return value;
+}
+
+function CompareTable() {
+  return (
+    <section className="mt-20 overflow-hidden rounded-3xl bg-why-us-bg text-foreground ring-1 ring-white/10">
+      <div className="px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mb-10 text-center">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Compare plans
+          </h2>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Pick the prep package that matches your ambition.
+          </p>
+        </div>
+
+        <div className="overflow-x-auto rounded-2xl ring-1 ring-white/10">
+          <table className="w-full min-w-[720px] border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-white/10">
+                <th className="sticky left-0 z-10 w-[220px] bg-why-us-bg px-4 py-4 text-left font-display text-xs font-semibold uppercase tracking-widest text-white/70">
+                  Compare
+                </th>
+                {columns.map((col) => (
+                  <th
+                    key={col.key}
+                    className={`px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-white/70"} ${col.featured ? "bg-caramel-deep/10" : "bg-why-us-bg"}`}
+                  >
+                    {col.label}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonSections.map((section, sectionIdx) => (
+                <>
+                  <tr key={section.title} className="border-t border-white/10">
+                    <td
+                      colSpan={4}
+                      className="sticky left-0 z-10 bg-why-us-bg px-4 py-3 text-left font-display text-xs font-semibold uppercase tracking-widest text-caramel"
+                    >
+                      {section.title}
+                    </td>
+                  </tr>
+                  {section.rows.map((row, rowIdx) => (
+                    <tr
+                      key={row.label}
+                      className={`border-t border-white/5 ${rowIdx % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"}`}
+                    >
+                      <td className="sticky left-0 z-10 w-[220px] bg-why-us-bg px-4 py-3.5 font-medium text-white/90">
+                        {row.label}
+                      </td>
+                      {columns.map((col) => {
+                        const isFeatured = col.featured;
+                        const value = row[col.key];
+                        return (
+                          <td
+                            key={col.key}
+                            className={`px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-white/80"} ${isFeatured ? "bg-caramel-deep/[0.08]" : ""}`}
+                          >
+                            {renderValue(value)}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                  {sectionIdx < comparisonSections.length - 1 && (
+                    <tr className="border-t border-white/10">
+                      <td colSpan={4} className="h-2 bg-why-us-bg" />
+                    </tr>
+                  )}
+                </>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ProductsPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -165,6 +298,8 @@ function ProductsPage() {
               </div>
             ))}
           </div>
+
+          <CompareTable />
         </div>
       </main>
     </div>
