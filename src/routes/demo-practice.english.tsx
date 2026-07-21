@@ -317,10 +317,123 @@ const GRAMMAR_TASKS: GrammarTask[] = [
   },
 ];
 
+const VOCAB_TASKS: GrammarTask[] = [
+  {
+    id: "en-v-1",
+    title: "TASK 1 — Vocabulary True/False I",
+    context: "Determine whether each statement about word meaning or usage is correct.",
+    statements: [
+      "\"Lend\" means to give something temporarily to someone else, while \"borrow\" means to take something temporarily from someone else.",
+      "\"Sensible\" means having good judgement or practical reasoning, while \"sensitive\" means easily affected by or responsive to external stimuli.",
+      "\"Accept\" means to agree to receive or take something offered, while \"except\" means to exclude or leave out something from a group.",
+      "\"Contemptuous\" means showing scorn or disrespect, while \"contemptible\" means deserving of scorn or disrespect.",
+      "\"Denote\" means to strongly suggest an additional or secondary meaning, while \"connote\" means to indicate or refer to something directly and literally.",
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical: [
+      "TRUE. Correctly distinguishes \"lend\" (give temporarily) from \"borrow\" (take temporarily).",
+      "TRUE. Correctly distinguishes \"sensible\" (practical judgement) from \"sensitive\" (easily affected).",
+      "TRUE. Correctly distinguishes \"accept\" (agree to receive) from \"except\" (exclude).",
+      "TRUE. Correctly distinguishes \"contemptuous\" (showing scorn — a person's attitude) from \"contemptible\" (deserving scorn — the object of that attitude).",
+      "FALSE. Reversed — \"denote\" means to indicate directly/literally; \"connote\" means to suggest an additional, secondary meaning.",
+    ],
+    highlights: ["Lend", "Sensible", "Accept", "Contemptuous", "Denote"],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-v-2",
+    title: "TASK 2 — Vocabulary True/False II",
+    context: "Determine whether each statement about word meaning or usage is correct.",
+    statements: [
+      "\"Exhaustive\" means extremely tired, while \"exhausting\" means thorough and comprehensive in scope.",
+      "\"Appraise\" means to assess the value or quality of something, while \"apprise\" means to inform someone of something.",
+      "\"Notable\" means worthy of attention or remarkable, while \"notorious\" means famous for something specifically negative or undesirable.",
+      "\"Prescribe\" means to recommend or authorise a course of action, while \"proscribe\" means to forbid or prohibit something.",
+      "\"Adopt\" means to formally accept or take on a plan or approach, while \"adept\" means highly skilled or proficient at something.",
+    ],
+    answer_key: [false, true, true, true, true],
+    tactical: [
+      "FALSE. Reversed — \"exhausting\" means causing extreme tiredness; \"exhaustive\" means thorough and comprehensive.",
+      "TRUE. Correctly distinguishes \"appraise\" (assess value) from \"apprise\" (inform someone).",
+      "TRUE. Correctly distinguishes \"notable\" (worthy of attention) from \"notorious\" (famous for something bad).",
+      "TRUE. Correctly distinguishes \"prescribe\" (recommend/authorise) from \"proscribe\" (forbid).",
+      "TRUE. Correctly distinguishes the verb \"adopt\" (take on) from the adjective \"adept\" (skilled).",
+    ],
+    highlights: ["Exhaustive", "Appraise", "Notable", "Prescribe", "Adopt"],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-v-3",
+    title: "TASK 3 — Vocabulary True/False III",
+    context: "Determine whether each statement about word meaning or usage is correct.",
+    statements: [
+      "\"Bemused\" means mildly amused and entertained, while \"amused\" means confused and puzzled.",
+      "\"Ingenious\" means clever and inventive, while \"ingenuous\" means innocent and lacking sophistication.",
+      "\"Wary\" means cautious about potential danger or problems, while \"weary\" means physically or mentally tired.",
+      "\"Venal\" means capable of being bribed or corrupted, while \"venial\" means a minor, easily forgivable fault or sin.",
+      "\"Complacent\" means self-satisfied and unaware of potential danger, while \"compliant\" means willing to obey rules or requests.",
+    ],
+    answer_key: [false, true, true, true, true],
+    tactical: [
+      "FALSE. Reversed — \"bemused\" means confused/puzzled; \"amused\" means entertained.",
+      "TRUE. Correctly distinguishes \"ingenious\" (clever) from \"ingenuous\" (innocent, naïve).",
+      "TRUE. Correctly distinguishes \"wary\" (cautious of danger) from \"weary\" (tired).",
+      "TRUE. Correctly distinguishes \"venal\" (corruptible) from \"venial\" (minor, forgivable).",
+      "TRUE. Correctly distinguishes \"complacent\" (self-satisfied, unaware of risk) from \"compliant\" (obedient).",
+    ],
+    highlights: ["Bemused", "Ingenious", "Wary", "Venal", "Complacent"],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-v-4",
+    title: "TASK 4 — Can This Word Be Used Here? I",
+    context: "For each sentence, determine whether the italicised word is used correctly and appropriately in that specific sentence.",
+    statements: [
+      "\"The board decided to forgo the annual bonus in order to reinvest the funds into research.\"",
+      "\"After months of negotiation, the two companies finally reached a mutual agreement that benefited only one party.\"",
+      "\"The manager was loath to approve the proposal, given the obvious risks involved.\"",
+      "\"The committee will convene a meeting to discuss the budget shortfall next week.\"",
+      "\"Her explanation was so succinct that it took nearly twenty minutes and several tangents to finish.\"",
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical: [
+      "TRUE. \"Forgo\" (to go without/decline something) fits correctly: the board is choosing to go without the bonus.",
+      "FALSE. \"Mutual\" implies shared benefit or feeling between two parties; an agreement benefiting \"only one party\" contradicts the meaning of \"mutual\".",
+      "TRUE. \"Loath\" (reluctant, unwilling) fits correctly: the manager is reluctant to approve given the risks.",
+      "TRUE. \"Convene\" (to formally call together/assemble) fits correctly for a committee calling a meeting.",
+      "FALSE. \"Succinct\" means brief and to the point; a twenty-minute, tangent-filled explanation describes the opposite of succinct.",
+    ],
+    highlights: ["forgo", "mutual", "loath", "convene", "succinct"],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-v-5",
+    title: "TASK 5 — Can This Word Be Used Here? II",
+    context: "For each sentence, determine whether the italicised word is used correctly and appropriately in that specific sentence.",
+    statements: [
+      "\"The results were ambiguous, leaving no doubt whatsoever about which strategy had performed better.\"",
+      "\"Given the company's precarious financial position, further borrowing seemed like an unnecessary risk.\"",
+      "\"The new policy was met with widespread approval, with almost every department expressing support.\"",
+      "\"His argument was entirely coherent, jumping erratically between unrelated points without any clear structure.\"",
+      "\"The team worked diligently through the night to meet the deadline, checking every detail carefully.\"",
+    ],
+    answer_key: [false, true, true, false, true],
+    tactical: [
+      "FALSE. \"Ambiguous\" means unclear or open to more than one interpretation; \"leaving no doubt whatsoever\" directly contradicts this meaning.",
+      "TRUE. \"Precarious\" (unstable, uncertain) fits correctly: a precarious financial position logically makes further borrowing risky.",
+      "TRUE. \"Widespread\" (occurring across many people/areas) fits correctly, matching \"almost every department.\"",
+      "FALSE. \"Coherent\" means logical and well-structured; erratic jumping without structure describes the opposite of coherence.",
+      "TRUE. \"Diligently\" (with careful, persistent effort) fits correctly, matching \"checking every detail carefully.\"",
+    ],
+    highlights: ["ambiguous", "precarious", "widespread", "coherent", "diligently"],
+    difficulty: "5/5",
+  },
+];
+
 const CHAPTERS = [
   { key: "reading", num: 1, title: "Reading", tasks: READING_TASKS as (ReadingTask | GrammarTask)[] },
   { key: "grammar", num: 2, title: "Grammar", tasks: GRAMMAR_TASKS as (ReadingTask | GrammarTask)[] },
-  { key: "vocabulary", num: 3, title: "Vocabulary", tasks: [] as (ReadingTask | GrammarTask)[] },
+  { key: "vocabulary", num: 3, title: "Vocabulary", tasks: VOCAB_TASKS as (ReadingTask | GrammarTask)[] },
 ];
 
 
