@@ -197,9 +197,39 @@ function Index() {
               decisions on the left, instant RAG-backed textbook proof on the right.
             </p>
           </div>
-          <div className="relative mx-auto mt-10 w-full max-w-6xl">
-            <FiveStatementSimulator />
+          <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {([
+              { key: "economics", label: "Economics", enabled: true },
+              { key: "math", label: "Math", enabled: false },
+              { key: "english", label: "English", enabled: true },
+            ] as const).map((s) => {
+              const active = demoSubject === s.key;
+              return (
+                <button
+                  key={s.key}
+                  type="button"
+                  onClick={() => s.enabled && setDemoSubject(s.key)}
+                  disabled={!s.enabled}
+                  className={cn(
+                    "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
+                    active
+                      ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
+                      : s.enabled
+                        ? "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white"
+                        : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
+                  )}
+                >
+                  {s.label}
+                  {!s.enabled && <span className="ml-2 text-[9px] opacity-70">soon</span>}
+                </button>
+              );
+            })}
           </div>
+          <div className="relative mx-auto mt-6 w-full max-w-6xl">
+            {demoSubject === "economics" && <FiveStatementSimulator />}
+            {demoSubject === "english" && <EnglishReadingSimulator />}
+          </div>
+
         </section>
 
 
