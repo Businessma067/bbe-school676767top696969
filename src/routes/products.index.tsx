@@ -153,7 +153,7 @@ function CompareTable() {
                 {columns.map((col) => (
                   <th
                     key={col.key}
-                    className={`px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-white/70"} ${col.featured ? "bg-caramel-deep/10" : "bg-why-us-bg"}`}
+                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-caramel-deep" : "text-white/70"} ${col.featured ? "bg-caramel-deep/10" : "bg-why-us-bg"} ${col.featured ? "featured-column" : ""}`}
                   >
                     {col.label}
                   </th>
@@ -185,7 +185,7 @@ function CompareTable() {
                         return (
                           <td
                             key={col.key}
-                            className={`px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-white/80"} ${isFeatured ? "bg-caramel-deep/[0.08]" : ""}`}
+                            className={`relative px-4 py-3.5 text-center font-medium ${isFeatured ? "text-caramel-deep" : "text-white/80"} ${isFeatured ? "bg-caramel-deep/[0.08]" : ""} ${isFeatured ? "featured-column" : ""}`}
                           >
                             {renderValue(value)}
                           </td>
