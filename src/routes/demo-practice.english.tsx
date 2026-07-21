@@ -369,17 +369,21 @@ function EnglishTasks() {
   useEffect(() => { setExplanation(null); }, [activeIdx]);
 
   const revisionCases = useMemo(
-    () => READING_TASKS.filter((t) => progress.revision.includes(t.id)),
+    () => [...READING_TASKS, ...GRAMMAR_TASKS].filter((t) => progress.revision.includes(t.id)),
     [progress.revision],
   );
 
-  const activeList: ReadingTask[] =
+  const activeList: (ReadingTask | GrammarTask)[] =
     activeChapter === "revision"
       ? revisionCases
       : activeChapter === "reading"
         ? READING_TASKS
-        : [];
+        : activeChapter === "grammar"
+          ? GRAMMAR_TASKS
+          : [];
   const activeCase = activeList[activeIdx];
+  const isGrammarCase =
+    !!activeCase && GRAMMAR_TASKS.some((t) => t.id === activeCase.id);
 
   const recordResult = (id: string, allCorrect: boolean) => {
     setProgress((prev) => {
@@ -406,7 +410,7 @@ function EnglishTasks() {
     });
   };
 
-  const requestExplanation = (t: ReadingTask, i: number) => {
+  const requestExplanation = (t: ReadingTask | GrammarTask, i: number) => {
     const key = `${t.id}:${i}`;
     if (explanation?.key === key) return;
     setExplanation({
