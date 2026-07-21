@@ -194,7 +194,7 @@ function Index() {
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
               Watch the exact loop a prepared BBE candidate runs during the exam — TRUE/FALSE
-              decisions on the left, instant RAG-backed textbook proof on the right.
+              decisions on the left, instant textbook proof on the right.
             </p>
           </div>
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
