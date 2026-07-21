@@ -150,9 +150,8 @@
 
 @utility featured-column {
   box-shadow:
-    inset 1px 0 0 0 var(--color-caramel-deep),
-    inset -1px 0 0 0 var(--color-caramel-deep),
-    0 0 24px -6px color-mix(in oklab, var(--color-caramel-deep) 70%, transparent);
+    inset 1px 0 0 0 var(--color-foreground),
+    inset -1px 0 0 0 var(--color-foreground);
 }
 
 @utility why-us-pulse {
