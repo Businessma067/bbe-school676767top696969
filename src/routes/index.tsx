@@ -10,6 +10,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { AuthNav } from "@/components/AuthNav";
 import FiveStatementSimulator from "@/components/FiveStatementSimulator";
+import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
 
 
 export const Route = createFileRoute("/")({
@@ -17,6 +18,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       {/* Header */}
