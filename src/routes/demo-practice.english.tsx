@@ -189,11 +189,139 @@ const READING_TASKS: ReadingTask[] = [
   },
 ];
 
-const CHAPTERS = [
-  { key: "reading", num: 1, title: "Reading", tasks: READING_TASKS },
-  { key: "grammar", num: 2, title: "Grammar", tasks: [] as ReadingTask[] },
-  { key: "vocabulary", num: 3, title: "Vocabulary", tasks: [] as ReadingTask[] },
+type GrammarTask = {
+  id: string;
+  title: string;
+  context: string;
+  statements: string[];
+  answer_key: boolean[];
+  tactical: string[];
+  // Substring inside each statement that pinpoints the error/key structure.
+  focus: string[];
+  difficulty: string;
+};
+
+const GRAMMAR_TASKS: GrammarTask[] = [
+  {
+    id: "en-g-1",
+    title: "TASK 1 — Grammar Correctness I",
+    context: "Determine whether each sentence is grammatically correct as written. Errors, where present, are subtle and may involve agreement, tense, prepositions, or conditional structures.",
+    statements: [
+      "Neither the manager nor the employees was aware that the policy had changed.",
+      "Had the company invested earlier, it would have avoided the losses it later suffered.",
+      "The data, which was collected over several years, suggests a clear upward trend.",
+      "By the time the meeting starts, the report will have already been submitted.",
+      "She is used to work late hours, since she has managed remote teams for years.",
+    ],
+    answer_key: [false, true, false, true, false],
+    tactical: [
+      "FALSE. With \"neither…nor,\" the verb must agree with the nearer subject (\"employees,\" plural), so it should read \"…nor the employees were aware…\" — \"was\" incorrectly agrees with the singular \"manager\" instead. This is a classic proximity-agreement trap: the eye locks onto the first noun and lets a singular verb slip through.",
+      "TRUE. This is a correctly formed third conditional: \"Had the company invested earlier\" (inverted past perfect, omitting \"if\") + \"it would have avoided\" (would have + past participle) — both clauses are properly matched. The inversion is what usually feels \"off\" to students, but it is fully standard formal English.",
+      "FALSE. \"Data\" is treated as a plural noun in formal/academic English (\"data…are\" or \"data…were\"), so the correct relative clause should be \"which were collected,\" not \"which was collected.\" Informally this varies, but the exam-style formal register expects the plural agreement — this is exactly the register-trap the examiners exploit.",
+      "TRUE. This is a correct future perfect construction: \"will have already been submitted\" correctly expresses an action completed before another future point in time (\"by the time the meeting starts\"). The present-tense \"starts\" after \"by the time\" is required — future tense there would be wrong.",
+      "FALSE. \"Used to\" + base verb means a past habit (\"she used to work\"), while \"be used to\" + gerund means accustomed to something (\"she is used to working\"). The sentence mixes the two structures — it should be \"used to working,\" not \"used to work,\" to match \"is used to.\" The trap is that both forms exist and both sound familiar.",
+    ],
+    focus: [
+      "nor the employees was aware",
+      "Had the company invested earlier",
+      "which was collected",
+      "will have already been submitted",
+      "is used to work late hours",
+    ],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-g-2",
+    title: "TASK 2 — Grammar Correctness II",
+    context: "Determine whether each sentence is grammatically correct as written.",
+    statements: [
+      "If I would have known about the delay, I would have left earlier.",
+      "The committee has reduced the number of employees who are eligible for the bonus.",
+      "Despite of the rising costs, the company decided to expand its operations.",
+      "Not only did the report highlight the risks, but it also proposed several solutions.",
+      "The results were less conclusive than what we had anticipated.",
+    ],
+    answer_key: [false, true, false, true, true],
+    tactical: [
+      "FALSE. Third-conditional \"if\" clauses use the past perfect, not \"would have\" — it should read \"If I had known,\" not \"If I would have known.\" Using \"would have\" in the if-clause is one of the single most common — and most heavily tested — errors in formal English.",
+      "TRUE. Subject-verb agreement is correct throughout: \"committee has reduced\" (singular collective noun) and \"employees who are eligible\" (plural relative clause subject). The sentence looks like it might contain a \"number of\" trap, but here \"the number of employees\" is not the subject being described as plural.",
+      "FALSE. \"Despite\" is never followed by \"of\" — it must be either \"despite the rising costs\" or \"in spite of the rising costs.\" \"Despite of\" is a hybrid error combining both correct forms. Examiners love this one because it sounds fluent when spoken quickly.",
+      "TRUE. \"Not only…but also\" correctly triggers subject-auxiliary inversion after the fronted negative (\"Not only did the report highlight…\"), and the parallel structure with \"also proposed\" is correctly formed. Without \"did,\" the sentence would be ungrammatical — the inversion is mandatory here.",
+      "TRUE. The comparative structure \"less conclusive than what we had anticipated\" is grammatically valid, with the past perfect correctly indicating an expectation formed prior to the results being known. Some students flag \"than what\" as wrong, but it is acceptable formal English.",
+    ],
+    focus: [
+      "If I would have known",
+      "committee has reduced",
+      "Despite of the rising costs",
+      "Not only did the report highlight",
+      "less conclusive than what we had anticipated",
+    ],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-g-3",
+    title: "TASK 3 — Grammar Correctness III",
+    context: "Determine whether each sentence is grammatically correct as written.",
+    statements: [
+      "Each of the proposals have their own advantages and drawbacks.",
+      "By next year, the firm will have operated in this market for over a decade.",
+      "The manager insisted that the report be submitted by Friday.",
+      "There is several reasons why the merger failed to proceed as planned.",
+      "Whoever is responsible for the error should acknowledge it immediately.",
+    ],
+    answer_key: [false, true, true, false, true],
+    tactical: [
+      "FALSE. \"Each of\" takes a singular verb regardless of the plural noun that follows — it should read \"Each of the proposals has its own advantages,\" not \"have their own.\" The plural noun \"proposals\" is a distractor; the grammatical subject is \"Each,\" which is singular.",
+      "TRUE. This is a correctly formed future perfect: \"will have operated\" correctly expresses an ongoing action continuing up to a future point in time (\"by next year\"). The time marker \"by next year\" is the standard trigger for this tense.",
+      "TRUE. This uses the correct subjunctive mood after \"insisted that,\" where the base form of the verb (\"be submitted\") is required, not \"is submitted.\" Verbs of demand/insistence/recommendation systematically trigger this bare-infinitive subjunctive in formal English.",
+      "FALSE. \"There is\" must agree with the plural noun \"reasons\" that follows — it should read \"There are several reasons,\" not \"There is several reasons.\" The dummy subject \"there\" pushes agreement onto the noun that follows.",
+      "TRUE. \"Whoever\" correctly functions as the subject of the subordinate clause (\"whoever is responsible\"), and the main clause verb \"should acknowledge\" is properly formed. Students often want to \"correct\" this to \"whomever,\" but that would be wrong here — case is set by the subordinate clause, not the main one.",
+    ],
+    focus: [
+      "Each of the proposals have their own",
+      "will have operated",
+      "insisted that the report be submitted",
+      "There is several reasons",
+      "Whoever is responsible",
+    ],
+    difficulty: "5/5",
+  },
+  {
+    id: "en-g-4",
+    title: "TASK 4 — Grammar Correctness IV",
+    context: "Determine whether each sentence is grammatically correct as written.",
+    statements: [
+      "The number of employees affected by the restructuring have doubled since last year.",
+      "It is essential that every candidate submits their application before the deadline.",
+      "Having reviewed the evidence, the conclusion was reached by the committee that reforms were necessary.",
+      "No sooner had the announcement been made than the stock price began to fall.",
+      "The proposal, along with several amendments, were rejected by the board.",
+    ],
+    answer_key: [false, false, false, true, false],
+    tactical: [
+      "FALSE. \"The number of\" takes a singular verb, since \"number\" (not \"employees\") is the grammatical subject — it should read \"The number…has doubled,\" not \"have doubled.\" Contrast this with \"a number of employees,\" which does take a plural verb — the definite article flips the rule.",
+      "FALSE. Formal subjunctive mood after \"It is essential that\" requires the base form of the verb — it should read \"every candidate submit their application,\" not \"submits.\" Impersonal expressions of necessity (\"it is essential/imperative/vital that\") behave exactly like verbs of insistence for this rule.",
+      "FALSE. This is a dangling participle: \"Having reviewed the evidence\" should logically modify \"the committee,\" not \"the conclusion\" — the sentence incorrectly implies the conclusion reviewed the evidence. It should read \"Having reviewed the evidence, the committee reached the conclusion that…\" Passive voice is what enables the trap here.",
+      "TRUE. \"No sooner…than\" correctly triggers inversion (\"No sooner had the announcement been made\"), and the past perfect followed by simple past (\"began to fall\") correctly sequences the two rapid events. A common wrong \"correction\" would swap \"than\" for \"when\" — that would be ungrammatical.",
+      "FALSE. \"Along with several amendments\" is a parenthetical phrase, not part of the compound subject — the verb must agree with the singular \"the proposal,\" so it should read \"The proposal…was rejected,\" not \"were rejected.\" The same rule applies to \"together with,\" \"as well as,\" and \"in addition to.\"",
+    ],
+    focus: [
+      "The number of employees affected by the restructuring have doubled",
+      "every candidate submits their application",
+      "Having reviewed the evidence, the conclusion was reached",
+      "No sooner had the announcement been made than",
+      "The proposal, along with several amendments, were rejected",
+    ],
+    difficulty: "5/5",
+  },
 ];
+
+const CHAPTERS = [
+  { key: "reading", num: 1, title: "Reading", tasks: READING_TASKS as (ReadingTask | GrammarTask)[] },
+  { key: "grammar", num: 2, title: "Grammar", tasks: GRAMMAR_TASKS as (ReadingTask | GrammarTask)[] },
+  { key: "vocabulary", num: 3, title: "Vocabulary", tasks: [] as (ReadingTask | GrammarTask)[] },
+];
+
 
 // ---------------- Progress ----------------
 
