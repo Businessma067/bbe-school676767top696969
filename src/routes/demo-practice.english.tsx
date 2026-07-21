@@ -482,7 +482,7 @@ function EnglishTasks() {
   useEffect(() => { setExplanation(null); }, [activeIdx]);
 
   const revisionCases = useMemo(
-    () => [...READING_TASKS, ...GRAMMAR_TASKS].filter((t) => progress.revision.includes(t.id)),
+    () => [...READING_TASKS, ...GRAMMAR_TASKS, ...VOCAB_TASKS].filter((t) => progress.revision.includes(t.id)),
     [progress.revision],
   );
 
@@ -493,10 +493,15 @@ function EnglishTasks() {
         ? READING_TASKS
         : activeChapter === "grammar"
           ? GRAMMAR_TASKS
-          : [];
+          : activeChapter === "vocabulary"
+            ? VOCAB_TASKS
+            : [];
   const activeCase = activeList[activeIdx];
   const isGrammarCase =
-    !!activeCase && GRAMMAR_TASKS.some((t) => t.id === activeCase.id);
+    !!activeCase && (
+      GRAMMAR_TASKS.some((t) => t.id === activeCase.id) ||
+      VOCAB_TASKS.some((t) => t.id === activeCase.id)
+    );
 
   const recordResult = (id: string, allCorrect: boolean) => {
     setProgress((prev) => {
