@@ -463,13 +463,13 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
             </feMerge>
           </filter>
           <marker id="arrowUpL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#16a34a" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
           <marker id="arrowDownL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#dc2626" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
           <marker id="arrowFlash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#ef4444" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
         </defs>
 
@@ -590,34 +590,34 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
           </g>
         )}
 
-        {/* Left rising green arrow — only for statement 4 (derivative context) */}
+        {/* Left rising orange arrow — only for statement 4 (derivative context), placed below the curve */}
         {statementId === 3 && (
           <g style={{ transition: "opacity 400ms" }}>
             <line
               x1={sx(6.5)}
-              y1={sy(P(6.5))}
+              y1={sy(P(6.5)) + 28}
               x2={sx(8.5)}
-              y2={sy(P(8.5))}
-              stroke="#16a34a"
+              y2={sy(P(8.5)) + 28}
+              stroke="#f97316"
               strokeWidth="2.4"
               markerEnd="url(#arrowUpL)"
             />
-            <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
+            <text x={sx(6.2)} y={sy(P(6.5)) + 22} fill="#c2410c" fontSize="10" fontWeight="700">
               P′ &gt; 0 ↑
             </text>
           </g>
         )}
 
 
-        {/* Right falling red arrow — only for statement 5 */}
+        {/* Right falling orange arrow — only for statement 5, placed below the curve */}
         {showRightArrow && (
           <g style={{ transition: "opacity 400ms" }}>
             <line
               x1={sx(11.5)}
-              y1={sy(P(11.5))}
+              y1={sy(P(11.5)) + 28}
               x2={sx(13.7)}
-              y2={sy(P(13.7))}
-              stroke="#dc2626"
+              y2={sy(P(13.7)) + 28}
+              stroke="#f97316"
               strokeWidth={3.4}
               markerEnd="url(#arrowFlash)"
             >
@@ -625,8 +625,8 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
             </line>
             <text
               x={sx(13.7)}
-              y={sy(P(11.5)) - 6}
-              fill="#b91c1c"
+              y={sy(P(11.5)) + 22}
+              fill="#c2410c"
               fontSize="10"
               fontWeight="700"
               textAnchor="end"
@@ -721,10 +721,10 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
           <span className="h-2 w-2 rounded-full bg-[#ffb020]" /> Critical point
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#16a34a]" /> Increasing
+          <span className="h-[3px] w-4 rounded bg-[#f97316]" /> Increasing
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#dc2626]" /> Decreasing
+          <span className="h-[3px] w-4 rounded bg-[#f97316]" /> Decreasing
         </span>
         {statementId === 3 && (
           <span className="inline-flex items-center gap-1">
