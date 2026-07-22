@@ -590,24 +590,24 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
           </g>
         )}
 
-        {/* Left rising arrow */}
-        <g
-          opacity={dimLeft ? 0.15 : statementId === 3 ? 0.9 : 0.55}
-          style={{ transition: "opacity 400ms" }}
-        >
-          <line
-            x1={sx(6.5)}
-            y1={sy(P(6.5))}
-            x2={sx(8.5)}
-            y2={sy(P(8.5))}
-            stroke="#16a34a"
-            strokeWidth="2.2"
-            markerEnd="url(#arrowUpL)"
-          />
-          <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
-            P′ &gt; 0 ↑
-          </text>
-        </g>
+        {/* Left rising green arrow — only for statement 4 (derivative context) */}
+        {statementId === 3 && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <line
+              x1={sx(6.5)}
+              y1={sy(P(6.5))}
+              x2={sx(8.5)}
+              y2={sy(P(8.5))}
+              stroke="#16a34a"
+              strokeWidth="2.4"
+              markerEnd="url(#arrowUpL)"
+            />
+            <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
+              P′ &gt; 0 ↑
+            </text>
+          </g>
+        )}
+
 
         {/* Right falling arrow (flashes for statement 5) */}
         <g
