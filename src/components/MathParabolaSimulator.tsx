@@ -609,35 +609,33 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
         )}
 
 
-        {/* Right falling arrow (flashes for statement 5) */}
-        <g
-          opacity={showRightArrow ? 1 : statementId === 3 ? 0.9 : 0.55}
-          style={{ transition: "opacity 400ms" }}
-        >
-          <line
-            x1={sx(11.5)}
-            y1={sy(P(11.5))}
-            x2={sx(13.7)}
-            y2={sy(P(13.7))}
-            stroke="#dc2626"
-            strokeWidth={showRightArrow ? 3.4 : 2.2}
-            markerEnd={showRightArrow ? "url(#arrowFlash)" : "url(#arrowDownL)"}
-          >
-            {showRightArrow && (
+        {/* Right falling red arrow — only for statement 5 */}
+        {showRightArrow && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <line
+              x1={sx(11.5)}
+              y1={sy(P(11.5))}
+              x2={sx(13.7)}
+              y2={sy(P(13.7))}
+              stroke="#dc2626"
+              strokeWidth={3.4}
+              markerEnd="url(#arrowFlash)"
+            >
               <animate attributeName="opacity" values="1;0.35;1" dur="0.9s" repeatCount="indefinite" />
-            )}
-          </line>
-          <text
-            x={sx(13.7)}
-            y={sy(P(11.5)) - 6}
-            fill="#b91c1c"
-            fontSize="10"
-            fontWeight="700"
-            textAnchor="end"
-          >
-            {showRightArrow ? "DECREASING for x > 10" : "P′ < 0 ↓"}
-          </text>
-        </g>
+            </line>
+            <text
+              x={sx(13.7)}
+              y={sy(P(11.5)) - 6}
+              fill="#b91c1c"
+              fontSize="10"
+              fontWeight="700"
+              textAnchor="end"
+            >
+              DECREASING for x &gt; 10
+            </text>
+          </g>
+        )}
+
 
         {/* X target line at x=10 */}
         <line
