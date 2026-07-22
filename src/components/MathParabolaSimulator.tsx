@@ -32,7 +32,7 @@ const CASE = {
   ] as const,
 };
 
-type Focus = (typeof CASE.focus)[number];
+
 
 export default function MathParabolaSimulator() {
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
