@@ -721,10 +721,10 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
           <span className="h-2 w-2 rounded-full bg-[#ffb020]" /> Critical point
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#16a34a]" /> Increasing
+          <span className="h-[3px] w-4 rounded bg-[#f97316]" /> Increasing
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#dc2626]" /> Decreasing
+          <span className="h-[3px] w-4 rounded bg-[#f97316]" /> Decreasing
         </span>
         {statementId === 3 && (
           <span className="inline-flex items-center gap-1">
