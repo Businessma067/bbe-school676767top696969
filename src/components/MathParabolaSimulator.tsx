@@ -325,17 +325,13 @@ export default function MathParabolaSimulator() {
           </article>
 
           {/* RIGHT: AI plot canvas */}
-          <aside className="min-h-0 overflow-hidden rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
+          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                 <LineChart className="h-3.5 w-3.5" />
                 {activeIdx === null
                   ? "AI Graph Canvas"
                   : `AI Plot · Statement ${activeIdx + 1}`}
-              </div>
-              <div className="flex items-center gap-1 text-[10px] text-white/50">
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-                edugraph · live
               </div>
             </div>
 
@@ -352,12 +348,13 @@ export default function MathParabolaSimulator() {
                   Answer: {activeCorrect ? "TRUE" : "FALSE"}
                 </span>
                 <p className="mt-2 text-[11px] italic text-white/60">
-                  "{CASE.statements[activeIdx]}"
+                  {CASE.statements[activeIdx]}
                 </p>
               </div>
             )}
 
             <ParabolaPlot statementId={activeStatementId} />
+
           </aside>
         </div>
 
