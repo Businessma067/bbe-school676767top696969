@@ -354,7 +354,7 @@ export default function MathParabolaSimulator() {
               </div>
             )}
 
-            <ParabolaPlot focus={focus} />
+            <ParabolaPlot statementId={activeStatementId} />
           </aside>
         </div>
 
