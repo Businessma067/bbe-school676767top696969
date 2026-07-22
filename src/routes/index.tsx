@@ -11,6 +11,7 @@ import { DesktopNav } from "@/components/DesktopNav";
 import { AuthNav } from "@/components/AuthNav";
 import FiveStatementSimulator from "@/components/FiveStatementSimulator";
 import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
+import MathParabolaSimulator from "@/components/MathParabolaSimulator";
 
 
 export const Route = createFileRoute("/")({
