@@ -325,17 +325,13 @@ export default function MathParabolaSimulator() {
           </article>
 
           {/* RIGHT: AI plot canvas */}
-          <aside className="min-h-0 overflow-hidden rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
+          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                 <LineChart className="h-3.5 w-3.5" />
                 {activeIdx === null
                   ? "AI Graph Canvas"
                   : `AI Plot · Statement ${activeIdx + 1}`}
-              </div>
-              <div className="flex items-center gap-1 text-[10px] text-white/50">
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-                edugraph · live
               </div>
             </div>
 
@@ -352,12 +348,13 @@ export default function MathParabolaSimulator() {
                   Answer: {activeCorrect ? "TRUE" : "FALSE"}
                 </span>
                 <p className="mt-2 text-[11px] italic text-white/60">
-                  "{CASE.statements[activeIdx]}"
+                  {CASE.statements[activeIdx]}
                 </p>
               </div>
             )}
 
             <ParabolaPlot statementId={activeStatementId} />
+
           </aside>
         </div>
 
@@ -593,54 +590,52 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
           </g>
         )}
 
-        {/* Left rising arrow */}
-        <g
-          opacity={dimLeft ? 0.15 : statementId === 3 ? 0.9 : 0.55}
-          style={{ transition: "opacity 400ms" }}
-        >
-          <line
-            x1={sx(6.5)}
-            y1={sy(P(6.5))}
-            x2={sx(8.5)}
-            y2={sy(P(8.5))}
-            stroke="#16a34a"
-            strokeWidth="2.2"
-            markerEnd="url(#arrowUpL)"
-          />
-          <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
-            P′ &gt; 0 ↑
-          </text>
-        </g>
+        {/* Left rising green arrow — only for statement 4 (derivative context) */}
+        {statementId === 3 && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <line
+              x1={sx(6.5)}
+              y1={sy(P(6.5))}
+              x2={sx(8.5)}
+              y2={sy(P(8.5))}
+              stroke="#16a34a"
+              strokeWidth="2.4"
+              markerEnd="url(#arrowUpL)"
+            />
+            <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
+              P′ &gt; 0 ↑
+            </text>
+          </g>
+        )}
 
-        {/* Right falling arrow (flashes for statement 5) */}
-        <g
-          opacity={showRightArrow ? 1 : statementId === 3 ? 0.9 : 0.55}
-          style={{ transition: "opacity 400ms" }}
-        >
-          <line
-            x1={sx(11.5)}
-            y1={sy(P(11.5))}
-            x2={sx(13.7)}
-            y2={sy(P(13.7))}
-            stroke="#dc2626"
-            strokeWidth={showRightArrow ? 3.4 : 2.2}
-            markerEnd={showRightArrow ? "url(#arrowFlash)" : "url(#arrowDownL)"}
-          >
-            {showRightArrow && (
+
+        {/* Right falling red arrow — only for statement 5 */}
+        {showRightArrow && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <line
+              x1={sx(11.5)}
+              y1={sy(P(11.5))}
+              x2={sx(13.7)}
+              y2={sy(P(13.7))}
+              stroke="#dc2626"
+              strokeWidth={3.4}
+              markerEnd="url(#arrowFlash)"
+            >
               <animate attributeName="opacity" values="1;0.35;1" dur="0.9s" repeatCount="indefinite" />
-            )}
-          </line>
-          <text
-            x={sx(13.7)}
-            y={sy(P(11.5)) - 6}
-            fill="#b91c1c"
-            fontSize="10"
-            fontWeight="700"
-            textAnchor="end"
-          >
-            {showRightArrow ? "DECREASING for x > 10" : "P′ < 0 ↓"}
-          </text>
-        </g>
+            </line>
+            <text
+              x={sx(13.7)}
+              y={sy(P(11.5)) - 6}
+              fill="#b91c1c"
+              fontSize="10"
+              fontWeight="700"
+              textAnchor="end"
+            >
+              DECREASING for x &gt; 10
+            </text>
+          </g>
+        )}
+
 
         {/* X target line at x=10 */}
         <line
