@@ -201,7 +201,7 @@ function Index() {
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
             {([
               { key: "economics", label: "Economics", enabled: true },
-              { key: "math", label: "Math", enabled: false },
+              { key: "math", label: "Math", enabled: true },
               { key: "english", label: "English", enabled: true },
             ] as const).map((s) => {
               const active = demoSubject === s.key;
