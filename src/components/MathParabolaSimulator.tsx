@@ -144,7 +144,12 @@ export default function MathParabolaSimulator() {
   }, []);
 
   const activeCorrect = activeIdx !== null ? CASE.answer_key[activeIdx] : null;
-  const focus: Focus | null = activeIdx !== null ? CASE.focus[activeIdx] : null;
+  const activeStatementId: number | null = activeIdx;
+
+  const selectStatement = (i: number) => {
+    setActiveIdx(i);
+    setOpenExpl((s) => ({ ...s, [i]: true }));
+  };
 
   return (
     <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[520px] lg:h-[560px]">
