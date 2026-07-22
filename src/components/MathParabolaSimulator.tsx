@@ -387,9 +387,8 @@ export default function MathParabolaSimulator() {
   );
 }
 
-// ---------- Native SVG "edugraph" plot ----------
-function ParabolaPlot({ focus }: { focus: Focus | null }) {
-  // Data domain: x ∈ [5, 15], y ∈ [P(5)=-50 ... P(10)=50]
+// ---------- Native SVG "edugraph" plot (light theme, statement-reactive) ----------
+function ParabolaPlot({ statementId }: { statementId: number | null }) {
   const W = 520;
   const H = 340;
   const PAD_L = 46;
@@ -408,8 +407,9 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
   const sy = (y: number) => PAD_T + (1 - (y - yMin) / (yMax - yMin)) * ih;
 
   const P = (x: number) => -2 * x * x + 40 * x - 150;
+  const Pprime = (x: number) => -4 * x + 40;
 
-  const N = 120;
+  const N = 160;
   const pts: [number, number][] = [];
   for (let i = 0; i <= N; i++) {
     const x = xMin + (i / N) * (xMax - xMin);
@@ -425,32 +425,55 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
   const vX = 10;
   const vY = 50;
 
-  const highlightCritical = focus === "critical" || focus === "vertex";
-  const highlightConcavity = focus === "concavity";
-  const highlightLeft = focus === "derivative";
-  const highlightRight = focus === "slope-right" || focus === "derivative";
+  // Statement-driven layer visibility (0-indexed)
+  const showXTarget = statementId === 0 || statementId === 1;
+  const showYTarget = statementId === 1;
+  const showVertexFlash = statementId === 0 || statementId === 1;
+  const showConcavity = statementId === 2;
+  const showTangent = statementId === 3;
+  const showRightArrow = statementId === 4;
+  const dimLeft = statementId === 4;
+
+  // Tangent at vertex (slope = 0) — for statement 4 show tangent at x=8 as a rate-of-change illustration
+  const tX = 8;
+  const tY = P(tX);
+  const tSlope = Pprime(tX); // 8
+  const tSpan = 2.2;
+  const tx1 = tX - tSpan;
+  const tx2 = tX + tSpan;
+  const ty1 = tY + tSlope * (tx1 - tX);
+  const ty2 = tY + tSlope * (tx2 - tX);
 
   return (
     <div className="w-full">
       <svg
         viewBox={`0 0 ${W} ${H}`}
-        className="h-auto w-full"
+        className="h-auto w-full rounded-lg bg-white"
         preserveAspectRatio="xMidYMid meet"
         role="img"
         aria-label="Parabola plot of P(x) = -2x^2 + 40x - 150"
       >
         <defs>
-          <linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor="#ff8a1f" stopOpacity={highlightConcavity ? 0.35 : 0.16} />
+          <linearGradient id="areaFillLight" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor="#ff8a1f" stopOpacity={showConcavity ? 0.32 : 0.1} />
             <stop offset="100%" stopColor="#ff8a1f" stopOpacity="0" />
           </linearGradient>
-          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="2.6" result="b" />
+          <filter id="glowLight" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2.2" result="b" />
             <feMerge>
               <feMergeNode in="b" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
+          <marker id="arrowUpL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#16a34a" />
+          </marker>
+          <marker id="arrowDownL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#dc2626" />
+          </marker>
+          <marker id="arrowFlash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#ef4444" />
+          </marker>
         </defs>
 
         {/* grid */}
@@ -461,8 +484,8 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
             x2={W - PAD_R}
             y1={sy(g)}
             y2={sy(g)}
-            stroke="#ffffff"
-            strokeOpacity={g === 0 ? 0.25 : 0.06}
+            stroke="#0f172a"
+            strokeOpacity={g === 0 ? 0.32 : 0.07}
             strokeWidth={g === 0 ? 1 : 0.6}
           />
         ))}
@@ -473,8 +496,8 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
             y2={H - PAD_B}
             x1={sx(g)}
             x2={sx(g)}
-            stroke="#ffffff"
-            strokeOpacity={0.06}
+            stroke="#0f172a"
+            strokeOpacity={g === 10 ? 0.18 : 0.06}
             strokeWidth={0.6}
           />
         ))}
@@ -485,7 +508,7 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
             key={`xl${v}`}
             x={sx(v)}
             y={H - PAD_B + 14}
-            fill="#ffffff90"
+            fill="#334155"
             fontSize="10"
             textAnchor="middle"
           >
@@ -497,38 +520,43 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
             key={`yl${v}`}
             x={PAD_L - 6}
             y={sy(v) + 3}
-            fill="#ffffff90"
+            fill="#334155"
             fontSize="10"
             textAnchor="end"
           >
             {v}
           </text>
         ))}
-        <text x={W - PAD_R} y={H - PAD_B + 26} fill="#ffffff70" fontSize="10" textAnchor="end">
+        <text x={W - PAD_R} y={H - PAD_B + 26} fill="#64748b" fontSize="10" textAnchor="end">
           price x
         </text>
-        <text x={PAD_L - 30} y={PAD_T + 4} fill="#ffffff70" fontSize="10">
+        <text x={PAD_L - 30} y={PAD_T + 4} fill="#64748b" fontSize="10">
           P(x)
         </text>
 
-        {/* concavity shading */}
+        {/* concavity shading (base is faint, boosted on statement 3) */}
         <path
           d={areaPath}
-          fill="url(#areaFill)"
-          style={{ transition: "opacity 500ms" }}
-          opacity={1}
+          fill="url(#areaFillLight)"
+          style={{ transition: "opacity 400ms" }}
         />
-        {highlightConcavity && (
-          <text
-            x={sx(10)}
-            y={sy(15)}
-            fill="#ffb74d"
-            fontSize="11"
-            fontWeight="700"
-            textAnchor="middle"
-          >
-            Concave Down · P″(x) = −4 &lt; 0
-          </text>
+        {showConcavity && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <rect
+              x={PAD_L}
+              y={PAD_T}
+              width={iw}
+              height={sy(0) - PAD_T}
+              fill="#ff8a1f"
+              fillOpacity={0.08}
+            />
+            <g transform={`translate(${sx(10)}, ${sy(18)})`}>
+              <rect x={-118} y={-14} rx={6} ry={6} width={236} height={22} fill="#fff" stroke="#ff8a1f" />
+              <text x={0} y={2} fill="#b45309" fontSize="11" fontWeight="700" textAnchor="middle">
+                P″(10) = −4 &lt; 0 · Strict Local Maximum
+              </text>
+            </g>
+          </g>
         )}
 
         {/* curve */}
@@ -539,13 +567,35 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
           strokeWidth="2.6"
           strokeLinecap="round"
           strokeLinejoin="round"
-          filter="url(#glow)"
+          filter="url(#glowLight)"
+          style={{ transition: "opacity 400ms" }}
         />
 
-        {/* Slope arrows */}
-        {/* Left rising arrow (x ~ 6.5 -> 8.5) */}
+        {/* Statement 4: tangent line illustrating rate of change */}
+        {showTangent && (
+          <g style={{ transition: "opacity 400ms" }}>
+            <line
+              x1={sx(tx1)}
+              y1={sy(ty1)}
+              x2={sx(tx2)}
+              y2={sy(ty2)}
+              stroke="#2563eb"
+              strokeWidth="2"
+              strokeDasharray="5 4"
+            />
+            <circle cx={sx(tX)} cy={sy(tY)} r={5} fill="#2563eb" />
+            <g transform={`translate(${sx(tX) + 10}, ${sy(tY) - 22})`}>
+              <rect x={0} y={0} rx={6} ry={6} width={168} height={22} fill="#fff" stroke="#2563eb" />
+              <text x={8} y={15} fill="#1d4ed8" fontSize="10.5" fontWeight="700">
+                P′(8) = 8 · rate of change
+              </text>
+            </g>
+          </g>
+        )}
+
+        {/* Left rising arrow */}
         <g
-          opacity={highlightLeft ? 1 : 0.55}
+          opacity={dimLeft ? 0.15 : statementId === 3 ? 0.9 : 0.55}
           style={{ transition: "opacity 400ms" }}
         >
           <line
@@ -553,104 +603,117 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
             y1={sy(P(6.5))}
             x2={sx(8.5)}
             y2={sy(P(8.5))}
-            stroke="#22c55e"
+            stroke="#16a34a"
             strokeWidth="2.2"
-            markerEnd="url(#arrowUp)"
+            markerEnd="url(#arrowUpL)"
           />
-          <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#22c55e" fontSize="10" fontWeight="700">
+          <text x={sx(6.2)} y={sy(P(6.5)) - 6} fill="#15803d" fontSize="10" fontWeight="700">
             P′ &gt; 0 ↑
           </text>
         </g>
-        {/* Right falling arrow (x ~ 11.5 -> 13.5) */}
+
+        {/* Right falling arrow (flashes for statement 5) */}
         <g
-          opacity={highlightRight ? 1 : 0.55}
+          opacity={showRightArrow ? 1 : statementId === 3 ? 0.9 : 0.55}
           style={{ transition: "opacity 400ms" }}
         >
           <line
             x1={sx(11.5)}
             y1={sy(P(11.5))}
-            x2={sx(13.5)}
-            y2={sy(P(13.5))}
-            stroke={focus === "slope-right" ? "#ef4444" : "#ef4444"}
-            strokeWidth={focus === "slope-right" ? 3 : 2.2}
-            markerEnd="url(#arrowDown)"
-          />
+            x2={sx(13.7)}
+            y2={sy(P(13.7))}
+            stroke="#dc2626"
+            strokeWidth={showRightArrow ? 3.4 : 2.2}
+            markerEnd={showRightArrow ? "url(#arrowFlash)" : "url(#arrowDownL)"}
+          >
+            {showRightArrow && (
+              <animate attributeName="opacity" values="1;0.35;1" dur="0.9s" repeatCount="indefinite" />
+            )}
+          </line>
           <text
             x={sx(13.7)}
             y={sy(P(11.5)) - 6}
-            fill="#ef4444"
+            fill="#b91c1c"
             fontSize="10"
             fontWeight="700"
             textAnchor="end"
           >
-            P′ &lt; 0 ↓
+            {showRightArrow ? "DECREASING for x > 10" : "P′ < 0 ↓"}
           </text>
         </g>
 
-        <defs>
-          <marker id="arrowUp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#22c55e" />
-          </marker>
-          <marker id="arrowDown" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#ef4444" />
-          </marker>
-        </defs>
-
-        {/* Dotted vertex intersection */}
+        {/* X target line at x=10 */}
         <line
           x1={sx(vX)}
           y1={sy(vY)}
           x2={sx(vX)}
           y2={sy(yMin)}
           stroke="#ff8a1f"
-          strokeOpacity={highlightCritical ? 0.9 : 0.45}
+          strokeOpacity={showXTarget ? 0.95 : 0.35}
           strokeDasharray="3 4"
-          strokeWidth="1.2"
+          strokeWidth={showXTarget ? 1.6 : 1.1}
+          style={{ transition: "stroke-opacity 400ms" }}
         />
+        {showXTarget && (
+          <text x={sx(vX)} y={H - PAD_B - 4} fill="#b45309" fontSize="10.5" fontWeight="700" textAnchor="middle">
+            x = 10
+          </text>
+        )}
+
+        {/* Y target line at P=50 */}
         <line
           x1={sx(vX)}
           y1={sy(vY)}
           x2={PAD_L}
           y2={sy(vY)}
           stroke="#ff8a1f"
-          strokeOpacity={highlightCritical ? 0.9 : 0.45}
+          strokeOpacity={showYTarget ? 0.95 : 0.35}
           strokeDasharray="3 4"
-          strokeWidth="1.2"
+          strokeWidth={showYTarget ? 1.6 : 1.1}
+          style={{ transition: "stroke-opacity 400ms" }}
         />
+        {showYTarget && (
+          <text x={PAD_L + 4} y={sy(vY) - 4} fill="#b45309" fontSize="10.5" fontWeight="700">
+            P = 50
+          </text>
+        )}
 
-        {/* Vertex dot (blinking) */}
+        {/* Vertex dot */}
         <circle
           cx={sx(vX)}
           cy={sy(vY)}
-          r={highlightCritical ? 8 : 6}
+          r={showVertexFlash ? 9 : 6}
           fill="#ffb020"
-          filter="url(#glow)"
+          stroke="#b45309"
+          strokeWidth={showVertexFlash ? 2 : 1}
+          filter="url(#glowLight)"
+          style={{ transition: "r 300ms" }}
         >
-          <animate
-            attributeName="opacity"
-            values="1;0.35;1"
-            dur="1.4s"
-            repeatCount="indefinite"
-          />
+          {showVertexFlash && (
+            <animate attributeName="opacity" values="1;0.35;1" dur="1.1s" repeatCount="indefinite" />
+          )}
         </circle>
         <circle cx={sx(vX)} cy={sy(vY)} r={3} fill="#fff" />
 
-        {/* Vertex label */}
-        <g transform={`translate(${sx(vX) + 12}, ${sy(vY) - 18})`}>
+        {/* Vertex label — emphasized on statement 2 */}
+        <g transform={`translate(${sx(vX) + 12}, ${sy(vY) - 26})`}>
           <rect
             x={0}
             y={0}
             rx={6}
             ry={6}
-            width={170}
+            width={showYTarget ? 120 : 170}
             height={22}
-            fill="#000"
-            fillOpacity={0.55}
+            fill="#fff"
             stroke="#ff8a1f"
-            strokeOpacity={0.7}
-          />
-          <text x={8} y={15} fill="#ffb74d" fontSize="10.5" fontWeight="700">
-            Vertex / Max Profit: (10, 50)
+            strokeWidth={showYTarget ? 2 : 1}
+          >
+            {showYTarget && (
+              <animate attributeName="stroke-opacity" values="1;0.4;1" dur="0.9s" repeatCount="indefinite" />
+            )}
+          </rect>
+          <text x={8} y={15} fill="#b45309" fontSize="10.5" fontWeight="700">
+            {showYTarget ? "(10, 50)" : "Vertex / Max: (10, 50)"}
           </text>
         </g>
       </svg>
@@ -663,12 +726,18 @@ function ParabolaPlot({ focus }: { focus: Focus | null }) {
           <span className="h-2 w-2 rounded-full bg-[#ffb020]" /> Critical point
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#22c55e]" /> Increasing
+          <span className="h-[3px] w-4 rounded bg-[#16a34a]" /> Increasing
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-[3px] w-4 rounded bg-[#ef4444]" /> Decreasing
+          <span className="h-[3px] w-4 rounded bg-[#dc2626]" /> Decreasing
         </span>
+        {statementId === 3 && (
+          <span className="inline-flex items-center gap-1">
+            <span className="h-[3px] w-4 rounded bg-[#2563eb]" /> Tangent
+          </span>
+        )}
       </div>
     </div>
   );
 }
+
