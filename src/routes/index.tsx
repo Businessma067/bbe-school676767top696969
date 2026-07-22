@@ -11,6 +11,7 @@ import { DesktopNav } from "@/components/DesktopNav";
 import { AuthNav } from "@/components/AuthNav";
 import FiveStatementSimulator from "@/components/FiveStatementSimulator";
 import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
+import MathParabolaSimulator from "@/components/MathParabolaSimulator";
 
 
 export const Route = createFileRoute("/")({
@@ -200,7 +201,7 @@ function Index() {
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
             {([
               { key: "economics", label: "Economics", enabled: true },
-              { key: "math", label: "Math", enabled: false },
+              { key: "math", label: "Math", enabled: true },
               { key: "english", label: "English", enabled: true },
             ] as const).map((s) => {
               const active = demoSubject === s.key;
@@ -228,6 +229,7 @@ function Index() {
           <div className="relative mx-auto mt-6 w-full max-w-6xl">
             {demoSubject === "economics" && <FiveStatementSimulator />}
             {demoSubject === "english" && <EnglishReadingSimulator />}
+            {demoSubject === "math" && <MathParabolaSimulator />}
           </div>
 
         </section>
