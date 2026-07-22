@@ -351,7 +351,15 @@ export default function MathParabolaSimulator() {
               </div>
             )}
 
-            <ParabolaPlot statementId={activeStatementId} />
+            {activeIdx !== null ? (
+              <ParabolaPlot statementId={activeStatementId} />
+            ) : (
+              <div className="grid h-[280px] place-items-center rounded-lg border border-dashed border-white/10 bg-white/[0.02] text-center">
+                <p className="max-w-[220px] px-4 text-[11px] leading-relaxed text-white/40">
+                  Click "Show AI graph explanation" on any statement to render the plot.
+                </p>
+              </div>
+            )}
 
           </aside>
         </div>
