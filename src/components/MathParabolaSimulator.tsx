@@ -222,10 +222,8 @@ export default function MathParabolaSimulator() {
                 return (
                   <li
                     key={i}
-                    onClick={() => checked && selectStatement(i)}
                     className={cn(
                       "px-4 py-3 transition-colors",
-                      checked && "cursor-pointer hover:bg-secondary/40",
                       activeIdx === i && "ring-1 ring-primary/50 bg-primary/5",
                       isCorrect && "bg-emerald-500/5",
                       isWrong && "bg-destructive/5",
