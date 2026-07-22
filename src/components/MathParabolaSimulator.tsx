@@ -463,13 +463,13 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
             </feMerge>
           </filter>
           <marker id="arrowUpL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#16a34a" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
           <marker id="arrowDownL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#dc2626" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
           <marker id="arrowFlash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#ef4444" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#f97316" />
           </marker>
         </defs>
 
