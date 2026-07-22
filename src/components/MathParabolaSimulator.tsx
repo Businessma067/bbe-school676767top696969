@@ -609,15 +609,15 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
         )}
 
 
-        {/* Right falling red arrow — only for statement 5 */}
+        {/* Right falling orange arrow — only for statement 5, placed below the curve */}
         {showRightArrow && (
           <g style={{ transition: "opacity 400ms" }}>
             <line
               x1={sx(11.5)}
-              y1={sy(P(11.5))}
+              y1={sy(P(11.5)) + 28}
               x2={sx(13.7)}
-              y2={sy(P(13.7))}
-              stroke="#dc2626"
+              y2={sy(P(13.7)) + 28}
+              stroke="#f97316"
               strokeWidth={3.4}
               markerEnd="url(#arrowFlash)"
             >
@@ -625,8 +625,8 @@ function ParabolaPlot({ statementId }: { statementId: number | null }) {
             </line>
             <text
               x={sx(13.7)}
-              y={sy(P(11.5)) - 6}
-              fill="#b91c1c"
+              y={sy(P(11.5)) + 22}
+              fill="#c2410c"
               fontSize="10"
               fontWeight="700"
               textAnchor="end"
