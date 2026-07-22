@@ -229,6 +229,7 @@ function Index() {
           <div className="relative mx-auto mt-6 w-full max-w-6xl">
             {demoSubject === "economics" && <FiveStatementSimulator />}
             {demoSubject === "english" && <EnglishReadingSimulator />}
+            {demoSubject === "math" && <MathParabolaSimulator />}
           </div>
 
         </section>
