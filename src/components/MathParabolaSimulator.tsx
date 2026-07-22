@@ -325,8 +325,8 @@ export default function MathParabolaSimulator() {
           </article>
 
           {/* RIGHT: AI plot canvas */}
-          <aside className="flex min-h-0 flex-col overflow-y-auto rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
-            <div className="mb-3 flex shrink-0 items-center justify-between">
+          <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
+            <div className="mb-3 flex items-center justify-between">
               <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                 <LineChart className="h-3.5 w-3.5" />
                 {activeIdx === null
@@ -336,7 +336,7 @@ export default function MathParabolaSimulator() {
             </div>
 
             {activeIdx !== null && (
-              <div className="mb-3 shrink-0 rounded-lg border border-white/10 bg-white/5 p-3">
+              <div className="mb-3 rounded-lg border border-white/10 bg-white/5 p-3">
                 <span
                   className={cn(
                     "inline-block rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wider",
@@ -353,9 +353,8 @@ export default function MathParabolaSimulator() {
               </div>
             )}
 
-            <div className="flex min-h-0 flex-1 items-center justify-center">
-              <ParabolaPlot statementId={activeStatementId} />
-            </div>
+            <ParabolaPlot statementId={activeStatementId} />
+
           </aside>
         </div>
 
