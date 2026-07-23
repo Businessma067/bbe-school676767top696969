@@ -381,7 +381,7 @@ export default function MathParabolaSimulator() {
               />
             </svg>
             {clicking && (
-              <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-primary/50" />
+              <span className="absolute -left-3 -top-3 h-10 w-10 rounded-full bg-primary/60 animate-[click-ripple_0.42s_ease-out_forwards]" />
             )}
           </div>
         </div>
