@@ -14,7 +14,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CompareTable } from "@/components/CompareTable";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
+
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
