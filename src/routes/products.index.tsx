@@ -37,7 +37,7 @@ const products: Product[] = [
     title: "Demo-Practice Package",
     image: demoAsset.url,
     description:
-      "A free trial version containing 50+ baseline cases across three subjects with step-by-step logic explanations to get a real look at the exam format.",
+      "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.",
     cta: "Visit for free",
     to: "/products/demo-practice",
   },
@@ -45,7 +45,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: fullAsset.url,
     description:
-      "Complete exam preparation guide containing over 1500 complex practice cases across all three subjects, equipped with custom Timing and Stress-Test Modules, Full Mock Exams, a context-aware AI Assistant, task explanations and much more...",
+      "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Unlock full access",
     to: "/products/full-course",
   },
@@ -53,7 +53,7 @@ const products: Product[] = [
     title: "Lite BBE Course",
     image: liteAsset.url,
     description:
-      "Get access to the comprehensive 950+ question database with full step-by-step logic explanations under every statement, designed for steady self-paced preparation.",
+      "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
     cta: "Unlock lite access",
     to: "/products/lite-bbe-course",
   },
@@ -61,7 +61,7 @@ const products: Product[] = [
     title: "Speed & Focus Simulator",
     image: simulatorAsset.url,
     description:
-      "Special countdown testing modules, rapid True/False decision drills, and memory-training tools designed strictly to build your exam speed and help you maintain focus under pressure.",
+      "Countdown modules, rapid True/False drills, and memory training built for one job: raising your exam speed and keeping your focus under real pressure.",
     cta: "Try now",
     disabled: true,
   },
@@ -69,11 +69,12 @@ const products: Product[] = [
     title: "Ultimate BBE course",
     image: ultimateBbeCourseAsset.url,
     description:
-      "The ultimate bundle combines our \"Full Practice course\" and \"Speed & Focus Simulator\", with every exclusive platform feature fully unlocked, providing the best value.",
+      "The full bundle: the Full Practice Course plus the Speed & Focus Simulator, with every exclusive feature on the platform unlocked. The best value if you want everything.",
     cta: "Unlock ultimate access",
     disabled: true,
   },
 ];
+
 
 type ComparisonCell = {
   label: string;
