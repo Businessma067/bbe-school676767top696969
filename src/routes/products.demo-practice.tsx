@@ -6,11 +6,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CompareTable } from "@/components/CompareTable";
 import slide1 from "@/assets/demo-slide-1.png.asset.json";
 import slide2 from "@/assets/demo-slide-2.png.asset.json";
 import slide3 from "@/assets/demo-slide-3.png.asset.json";
 import slide4 from "@/assets/demo-slide-4.png.asset.json";
 import slide5 from "@/assets/demo-slide-5.png.asset.json";
+
 
 export const Route = createFileRoute("/products/demo-practice")({
   head: () => ({
