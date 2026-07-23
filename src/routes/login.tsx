@@ -1,7 +1,8 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { AuthShell, Field } from "./signup";
+import { lovable } from "@/integrations/lovable/index";
+import { AuthShell, Field, PasswordField, GoogleButton, Divider } from "./signup";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/login")({
@@ -19,6 +20,7 @@ function LoginPage() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -32,6 +34,21 @@ function LoginPage() {
       cancelled = true;
     };
   }, [navigate]);
+
+  const handleGoogle = async () => {
+    setError(null);
+    setLoading(true);
+    const result = await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: window.location.origin,
+    });
+    if (result.error) {
+      setError(friendlyAuthError(result.error, "Google sign-in failed"));
+      setLoading(false);
+      return;
+    }
+    if (result.redirected) return;
+    navigate({ to: "/dashboard" });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,9 +70,11 @@ function LoginPage() {
 
   return (
     <AuthShell title="Sign in" subtitle="Access your BBE School dashboard.">
+      <GoogleButton onClick={handleGoogle} disabled={loading} label="Sign in with Google" />
+      <Divider />
       <form onSubmit={handleSubmit} className="space-y-4">
         <Field label="Email" type="email" value={email} onChange={setEmail} placeholder="you@example.com" />
-        <Field label="Password" type="password" value={password} onChange={setPassword} placeholder="••••••••" />
+        <PasswordField label="Password" value={password} onChange={setPassword} placeholder="••••••••" show={showPassword} onToggle={() => setShowPassword((v) => !v)} />
         {error && <p className="text-sm text-destructive">{error}</p>}
         <button
           type="submit"

@@ -1,7 +1,9 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { lovable } from "@/integrations/lovable/index";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
+import { Eye, EyeOff } from "lucide-react";
 
 export const Route = createFileRoute("/signup")({
   component: SignupPage,
@@ -20,6 +22,9 @@ function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [agree, setAgree] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
@@ -35,18 +40,33 @@ function SignupPage() {
     };
   }, [navigate]);
 
+  const handleGoogle = async () => {
+    setError(null);
+    if (!agree) return setError("Please accept the Terms of Service and Privacy Policy to continue.");
+    setLoading(true);
+    const result = await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: window.location.origin,
+    });
+    if (result.error) {
+      setError(friendlyAuthError(result.error, "Google sign-in failed"));
+      setLoading(false);
+      return;
+    }
+    if (result.redirected) return;
+    navigate({ to: "/dashboard" });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("[signup] handleSubmit triggered", { name, email, passwordLength: password.length });
     setError(null);
     setInfo(null);
     if (!name.trim()) return setError("Please enter your name.");
     if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email.");
     if (password.length < 6) return setError("Password must be at least 6 characters.");
     if (password !== confirm) return setError("Passwords don't match.");
+    if (!agree) return setError("Please accept the Terms of Service and Privacy Policy to continue.");
     setLoading(true);
     try {
-      console.log("[signup] calling supabase.auth.signUp with", { email, password });
       const response = await supabase.auth.signUp({
         email,
         password,
@@ -55,7 +75,6 @@ function SignupPage() {
           data: { display_name: name.trim() },
         },
       });
-      console.log("[signup] supabase.auth.signUp response", { data: response.data, error: response.error });
       const { data, error: err } = response;
       if (err) throw err;
       if (data.session) {
@@ -74,11 +93,29 @@ function SignupPage() {
 
   return (
     <AuthShell title="Create account" subtitle="Start your WU Vienna BBE preparation.">
+      <GoogleButton onClick={handleGoogle} disabled={loading} label="Sign up with Google" />
+      <Divider />
       <form onSubmit={handleSubmit} className="space-y-4">
         <Field label="Name" type="text" value={name} onChange={setName} placeholder="Your name" />
         <Field label="Email" type="email" value={email} onChange={setEmail} placeholder="you@example.com" />
-        <Field label="Password" type="password" value={password} onChange={setPassword} placeholder="At least 6 characters" />
-        <Field label="Confirm password" type="password" value={confirm} onChange={setConfirm} placeholder="Repeat password" />
+        <PasswordField label="Password" value={password} onChange={setPassword} placeholder="At least 6 characters" show={showPassword} onToggle={() => setShowPassword((v) => !v)} />
+        <PasswordField label="Confirm password" value={confirm} onChange={setConfirm} placeholder="Repeat password" show={showConfirm} onToggle={() => setShowConfirm((v) => !v)} />
+
+        <label className="flex items-start gap-2 text-sm text-muted-foreground">
+          <input
+            type="checkbox"
+            checked={agree}
+            onChange={(e) => setAgree(e.target.checked)}
+            className="mt-0.5 h-4 w-4 rounded border-border accent-primary"
+          />
+          <span>
+            I agree to the{" "}
+            <Link to="/terms" className="font-medium text-primary hover:underline">
+              Terms of Service &amp; Privacy Policy
+            </Link>
+            .
+          </span>
+        </label>
 
         {error && <p className="text-sm text-destructive">{error}</p>}
         {info && <p className="text-sm text-primary">{info}</p>}
@@ -138,6 +175,62 @@ export function Field({
         placeholder={placeholder}
         className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
       />
+    </div>
+  );
+}
+
+export function PasswordField({
+  label, value, onChange, placeholder, show, onToggle,
+}: { label: string; value: string; onChange: (v: string) => void; placeholder?: string; show: boolean; onToggle: () => void }) {
+  const id = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  return (
+    <div>
+      <label htmlFor={id} className="mb-1 block text-xs font-medium text-foreground">{label}</label>
+      <div className="relative">
+        <input
+          id={id}
+          type={show ? "text" : "password"}
+          required
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder={placeholder}
+          className="w-full rounded-md border border-border bg-background px-3 py-2 pr-10 text-sm outline-none focus:ring-2 focus:ring-ring"
+        />
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-label={show ? "Hide password" : "Show password"}
+          className="absolute inset-y-0 right-0 grid w-10 place-items-center text-muted-foreground hover:text-foreground"
+        >
+          {show ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export function GoogleButton({ onClick, disabled, label }: { onClick: () => void; disabled?: boolean; label: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className="inline-flex w-full items-center justify-center gap-3 rounded-md border border-border bg-background px-4 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-secondary disabled:opacity-60"
+    >
+      <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
+        <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.4-1.7 4.1-5.5 4.1-3.3 0-6-2.7-6-6s2.7-6 6-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3.6 14.6 2.7 12 2.7 6.9 2.7 2.7 6.9 2.7 12s4.2 9.3 9.3 9.3c5.4 0 8.9-3.8 8.9-9.1 0-.6-.06-1.1-.15-1.6H12z" />
+      </svg>
+      {label}
+    </button>
+  );
+}
+
+export function Divider() {
+  return (
+    <div className="my-6 flex items-center gap-3">
+      <div className="h-px flex-1 bg-border" />
+      <span className="text-xs uppercase tracking-wider text-muted-foreground">or</span>
+      <div className="h-px flex-1 bg-border" />
     </div>
   );
 }
