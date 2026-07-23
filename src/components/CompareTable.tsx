@@ -57,15 +57,6 @@ function renderValue(value: string) {
   return value;
 }
 
-function renderValueMobile(value: string) {
-  if (value === "tick" || value === "✔️") {
-    return <Check className="h-5 w-5 text-caramel-deep" strokeWidth={3} />;
-  }
-  if (value === "❌") {
-    return <X className="h-5 w-5 text-gray-400" strokeWidth={2.5} />;
-  }
-  return <span className="text-sm font-medium text-foreground/90">{value}</span>;
-}
 
 export function CompareTable({
   highlight,
