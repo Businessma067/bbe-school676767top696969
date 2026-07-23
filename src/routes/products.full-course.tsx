@@ -17,7 +17,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CompareTable } from "@/components/CompareTable";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
+
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
