@@ -48,7 +48,7 @@ const ORANGE = "#C2643A";
 const fullStats = [
   { value: "3", label: "Subjects" },
   { value: "2000+", label: "Tasks" },
-  { value: "7", label: "Mock Exams" },
+  { value: "7", label: "Mock Exams", sub: "All features" },
 ];
 
 
@@ -276,6 +276,11 @@ function FullCourseProduct() {
                 <div key={s.label} className="flex flex-col items-center">
                   <span className="font-display text-2xl font-bold text-foreground">{s.value}</span>
                   <span className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</span>
+                  {s.sub && (
+                    <span className="mt-0.5 text-[10px] font-medium text-muted-foreground/60">
+                      {s.sub}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
