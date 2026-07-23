@@ -24,7 +24,7 @@ const comparisonSections: ComparisonSection[] = [
       { label: "Textbook Theory", free: "❌", lite: "Crucial materials", full: "Full materials" },
       { label: "Answer Sheet Simulator", free: "❌", lite: "❌", full: "tick" },
       { label: "Interactive Speed Simulators", free: "❌", lite: "❌", full: "tick" },
-      { label: "Mock Exams", free: "❌", lite: "3", full: "7+ exams with answer sheets" },
+      { label: "Mock Exams", free: "❌", lite: "2", full: "7+ exams with answer sheets" },
     ],
   },
   {
