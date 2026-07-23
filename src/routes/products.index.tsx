@@ -1,10 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, X } from "lucide-react";
+import { CompareTable } from "@/components/CompareTable";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import simulatorAsset from "@/assets/speed-focus-simulator.png.asset.json";
 import ultimateBbeCourseAsset from "@/assets/ultimate-bbe-course.png.asset.json";
+
+
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -37,7 +39,7 @@ const products: Product[] = [
     title: "Demo-Practice Package",
     image: demoAsset.url,
     description:
-      "A free trial version containing 50+ baseline cases across three subjects with step-by-step logic explanations to get a real look at the exam format.",
+      "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.",
     cta: "Visit for free",
     to: "/products/demo-practice",
   },
@@ -45,7 +47,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: fullAsset.url,
     description:
-      "Complete exam preparation guide containing over 1500 complex practice cases across all three subjects, equipped with custom Timing and Stress-Test Modules, Full Mock Exams, a context-aware AI Assistant, task explanations and much more...",
+      "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Unlock full access",
     to: "/products/full-course",
   },
@@ -53,7 +55,7 @@ const products: Product[] = [
     title: "Lite BBE Course",
     image: liteAsset.url,
     description:
-      "Get access to the comprehensive 950+ question database with full step-by-step logic explanations under every statement, designed for steady self-paced preparation.",
+      "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
     cta: "Unlock lite access",
     to: "/products/lite-bbe-course",
   },
@@ -61,7 +63,7 @@ const products: Product[] = [
     title: "Speed & Focus Simulator",
     image: simulatorAsset.url,
     description:
-      "Special countdown testing modules, rapid True/False decision drills, and memory-training tools designed strictly to build your exam speed and help you maintain focus under pressure.",
+      "Countdown modules, rapid True/False drills, and memory training built for one job: raising your exam speed and keeping your focus under real pressure.",
     cta: "Try now",
     disabled: true,
   },
@@ -69,144 +71,14 @@ const products: Product[] = [
     title: "Ultimate BBE course",
     image: ultimateBbeCourseAsset.url,
     description:
-      "The ultimate bundle combines our \"Full Practice course\" and \"Speed & Focus Simulator\", with every exclusive platform feature fully unlocked, providing the best value.",
+      "The full bundle: the Full Practice Course plus the Speed & Focus Simulator, with every exclusive feature on the platform unlocked. The best value if you want everything.",
     cta: "Unlock ultimate access",
     disabled: true,
   },
 ];
 
-type ComparisonCell = {
-  label: string;
-  free: string;
-  lite: string;
-  full: string;
-};
 
-type ComparisonSection = {
-  title: string;
-  rows: ComparisonCell[];
-};
 
-const comparisonSections: ComparisonSection[] = [
-  {
-    title: "Features",
-    rows: [
-      { label: "Math Tasks", free: "50", lite: "550", full: "800+" },
-      { label: "Economics Tasks", free: "35", lite: "375", full: "500+" },
-      { label: "English Tasks", free: "10", lite: "150", full: "240+" },
-      { label: "Textbook Theory", free: "❌", lite: "Crucial materials", full: "Full materials" },
-      { label: "Answer Sheet Simulator", free: "❌", lite: "❌", full: "tick" },
-      { label: "Interactive Speed Simulators", free: "❌", lite: "❌", full: "tick" },
-      { label: "Mock Exams", free: "❌", lite: "3", full: "7+ exams with answer sheets" },
-    ],
-  },
-  {
-    title: "Insider Guide",
-    rows: [
-      { label: "Step by step explanations", free: "tick", lite: "tick", full: "tick" },
-      { label: "AI Study Assistant", free: "❌", lite: "❌", full: "tick" },
-      { label: "Tactical Trap Callouts", free: "❌", lite: "❌", full: "tick" },
-      { label: "Dynamic Focus Heatmap", free: "❌", lite: "tick", full: "tick" },
-      { label: "Support Chat", free: "❌", lite: "tick", full: "tick" },
-      { label: "Achievements & Medals Tab", free: "❌", lite: "tick", full: "tick" },
-      { label: "OSA Guide", free: "❌", lite: "❌", full: "tick" },
-    ],
-  },
-];
-
-const columns = [
-  { key: "free", label: "Free Sample", featured: false },
-  { key: "lite", label: "BBE Lite Practice", featured: false },
-  { key: "full", label: "BBE Full Course", featured: true },
-] as const;
-
-function renderValue(value: string) {
-  if (value === "tick" || value === "✔️") {
-    return <Check className="mx-auto h-5 w-5 text-caramel-deep" strokeWidth={3} />;
-  }
-  if (value === "❌") {
-    return <X className="mx-auto h-5 w-5 text-gray-400" strokeWidth={2.5} />;
-  }
-  return value;
-}
-
-function CompareTable() {
-  return (
-    <section className="mt-20 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
-      <div className="px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mb-10 text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Compare plans
-          </h2>
-          <p className="mt-3 text-sm text-muted-foreground">
-            Pick the prep package that matches your ambition.
-          </p>
-        </div>
-
-        <div className="overflow-x-auto rounded-2xl border border-border bg-background">
-          <table className="w-full min-w-[720px] border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-border bg-muted/50">
-                <th className="sticky left-0 z-10 w-[220px] bg-muted px-4 py-4 text-left font-display text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Compare
-                </th>
-                {columns.map((col) => (
-                  <th
-                    key={col.key}
-                    className={`relative px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${col.featured ? "text-foreground" : "text-muted-foreground"} ${col.featured ? "bg-muted" : "bg-muted/50"} ${col.featured ? "featured-column" : ""}`}
-                  >
-                    {col.label}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonSections.map((section, sectionIdx) => (
-                <>
-                  <tr key={section.title} className="border-t border-border">
-                    <td
-                      colSpan={4}
-                      className="sticky left-0 z-10 bg-background px-4 py-3 text-left font-display text-xs font-semibold uppercase tracking-widest text-caramel-deep"
-                    >
-                      {section.title}
-                    </td>
-                  </tr>
-                  {section.rows.map((row, rowIdx) => (
-                    <tr
-                      key={row.label}
-                      className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
-                    >
-                      <td className="sticky left-0 z-10 w-[220px] bg-background px-4 py-3.5 font-medium text-foreground/90">
-                        {row.label}
-                      </td>
-                      {columns.map((col) => {
-                        const isFeatured = col.featured;
-                        const value = row[col.key];
-                        return (
-                          <td
-                            key={col.key}
-                            className={`relative px-4 py-3.5 text-center font-medium text-foreground/80 ${isFeatured ? "featured-column" : ""}`}
-                          >
-                            {renderValue(value)}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  ))}
-                  {sectionIdx < comparisonSections.length - 1 && (
-                    <tr className="border-t border-border">
-                      <td colSpan={4} className="h-2 bg-background" />
-                    </tr>
-                  )}
-                </>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function ProductsPage() {
   return (
