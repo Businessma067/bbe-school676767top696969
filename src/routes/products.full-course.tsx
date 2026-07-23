@@ -9,6 +9,7 @@ import {
   Check,
   AlertTriangle,
   Clock,
+  Quote,
 } from "lucide-react";
 import {
   Accordion,
@@ -343,20 +344,85 @@ function FullCourseProduct() {
             </ul>
 
             <h3 className="mt-10 font-display text-2xl font-bold tracking-tight text-foreground">
-              Why this course is different
+              What this course is really about
             </h3>
+
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              This course was built around one idea: you don't rise to the level of your goals, you
-              fall to the level of your preparation. Every practice task here is engineered to match
-              the real exam's logic — not simplified, not softened. You'll face the same kind of
-              misleading, plausible-sounding statements you'll meet on exam day, so by the time you
-              sit down for the real thing, nothing about the format surprises you.
+              There's a pattern behind who gets into WU's Business & Economics program — it's rarely
+              about who worked hardest, and almost always about who prepared the smartest way, early
+              enough for it to actually stick. This course exists to close that gap.
             </p>
+
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              With over 2,000 practice tasks across all three subjects, full mock exams run under
-              real timing conditions, on-demand AI explanations for every single question, and
-              direct support from real people who know this exam inside out — this isn't just "more
-              practice." It's the preparation system top scorers actually use.
+              Most applicants don't fail because they didn't study. They fail because they trained on
+              the wrong kind of questions — ones that don't match how the real exam actually tries to
+              trip you up. The WU BBE entrance exam isn't built to test whether you memorized facts; it's
+              built to catch people who think they understand a concept but haven't actually internalized
+              it. That's exactly the gap this course is designed to close, question by question.
+            </p>
+
+            <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
+              <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
+              <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
+                "The WU BBE entrance exam isn't built to test whether you memorized facts; it's built to
+                catch people who think they understand a concept but haven't actually internalized it."
+              </p>
+            </blockquote>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Every practice task here is built to mirror that exact logic — confident, plausible-sounding
+              statements that are quietly false, the same trap structure you'll meet on exam day. By the
+              time you're sitting in the real exam room, nothing about the format catches you off guard,
+              because you've already trained against it hundreds of times.
+            </p>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              We also noticed something else worth mentioning: the applicants who got the most out of
+              preparation weren't the ones who passively worked through tasks — they were the ones who
+              asked questions when something didn't click, and pushed until they actually understood why.
+              That's why direct support isn't an afterthought here — every question you ask gets a real,
+              detailed answer, because a half-understood concept on exam day is the same as not knowing it
+              at all.
+            </p>
+
+            <h4 className="mt-8 font-display text-lg font-semibold text-foreground">
+              What you will train against:
+            </h4>
+            <ul className="mt-4 space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  The exact True/False logic and partial-points system used by university examiners.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Plausible-sounding statements that are quietly false — the trap structure that separates
+                  real understanding from surface familiarity.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  The discipline of asking questions when something doesn't click, because a half-understood
+                  concept is the same as not knowing it.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  A living system that grows with you: a growing question bank, real explanations, timed
+                  simulations, and a community of people going through the same thing.
+                </span>
+              </li>
+            </ul>
+
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              This course isn't a repackaged classroom lecture series. It's a living system — a growing
+              question bank, real explanations, timed simulations, and a community of people going through
+              the exact same thing you are. Put in the work, use the tools, and give yourself the preparation
+              that actually matches what the exam demands.
             </p>
 
             <div
