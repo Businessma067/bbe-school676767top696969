@@ -85,12 +85,13 @@ const features = [
 ];
 
 const failureReasons = [
-  "They memorize isolated facts instead of understanding how concepts connect — so a familiar idea phrased slightly differently on exam day throws them off completely.",
-  "They practice with question formats that don't match the real exam's structure, so the actual test format feels unfamiliar under pressure.",
-  "They never train against the exam's true difficulty — confident, logical-sounding statements that are actually false — so they get fooled by exactly the kind of trap the real exam is built around.",
-  "They run out of time, because they've never practiced under real timing constraints across all three subjects.",
-  "They study alone, with no way to check whether their understanding is actually correct until it's too late.",
+  "They memorize isolated facts instead of understanding how concepts connect, so a familiar idea phrased slightly differently on exam day throws them off completely.",
+  "They practice with question formats that do not match the real exam's structure, so the actual test format feels unfamiliar under pressure.",
+  "They never train against the exam's true difficulty: confident, logical sounding statements that are actually false, so they get fooled by exactly the kind of trap the real exam is built around.",
+  "They run out of time, because they have never practiced under real timing constraints across all three subjects.",
+  "They study alone, with no way to check whether their understanding is actually correct until it is too late.",
 ];
+
 
 const fullCourseFaqs = [
   {
@@ -323,9 +324,8 @@ function FullCourseProduct() {
             </h2>
 
             <p className="text-base leading-relaxed text-muted-foreground">
-              Every year, the vast majority of applicants walk into the WU BBE entrance exam and
-              walk out disappointed. Not because they didn't study — but because they studied the
-              wrong way.
+              Every year, most applicants walk into the WU BBE entrance exam and walk out disappointed.
+              Not because they did not study, but because they studied the wrong way.
             </p>
 
             <h3 className="mt-8 font-display text-lg font-semibold text-foreground">
@@ -350,41 +350,41 @@ function FullCourseProduct() {
             </h3>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              There's a pattern behind who gets into WU's Business & Economics program — it's rarely
-              about who worked hardest, and almost always about who prepared the smartest way, early
+              There is a pattern behind who gets into WU's Business &amp; Economics program. It is rarely
+              about who worked hardest, and almost always about who prepared the smart way, early
               enough for it to actually stick. This course exists to close that gap.
             </p>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Most applicants don't fail because they didn't study. They fail because they trained on
-              the wrong kind of questions — ones that don't match how the real exam actually tries to
-              trip you up. The WU BBE entrance exam isn't built to test whether you memorized facts; it's
-              built to catch people who think they understand a concept but haven't actually internalized
-              it. That's exactly the gap this course is designed to close, question by question.
+              Most applicants do not fail because they did not study. They fail because they trained on
+              the wrong kind of questions, ones that do not match how the real exam actually tries to
+              trip you up. The WU BBE entrance exam is not built to test whether you memorized facts, it
+              is built to catch people who think they understand a concept but have not actually
+              internalized it. That is exactly the gap this course is designed to close, question by
+              question.
             </p>
 
             <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
               <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
               <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
-                "The WU BBE entrance exam isn't built to test whether you memorized facts; it's built to
-                catch people who think they understand a concept but haven't actually internalized it."
+                "The WU BBE entrance exam is not built to test whether you memorized facts. It is built
+                to catch people who think they understand a concept but have not actually internalized it."
               </p>
             </blockquote>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Every practice task here is built to mirror that exact logic — confident, plausible-sounding
-              statements that are quietly false, the same trap structure you'll meet on exam day. By the
-              time you're sitting in the real exam room, nothing about the format catches you off guard,
-              because you've already trained against it hundreds of times.
+              Every practice task here is built to mirror that exact logic: confident, plausible
+              sounding statements that are quietly false, the same trap structure you will meet on exam
+              day. By the time you are sitting in the real exam room, nothing about the format catches
+              you off guard, because you have already trained against it hundreds of times.
             </p>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              We also noticed something else worth mentioning: the applicants who got the most out of
-              preparation weren't the ones who passively worked through tasks — they were the ones who
-              asked questions when something didn't click, and pushed until they actually understood why.
-              That's why direct support isn't an afterthought here — every question you ask gets a real,
-              detailed answer, because a half-understood concept on exam day is the same as not knowing it
-              at all.
+              One more thing we noticed: the applicants who got the most out of preparation were not the
+              ones who passively worked through tasks. They were the ones who asked questions when
+              something did not click, and pushed until they actually understood why. That is why direct
+              support is not an afterthought here. Every question you ask gets a real, detailed answer,
+              because a half understood concept on exam day is the same as not knowing it at all.
             </p>
 
             <h4 className="mt-8 font-display text-lg font-semibold text-foreground">
@@ -394,38 +394,39 @@ function FullCourseProduct() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  The exact True/False logic and partial-points system used by university examiners.
+                  The exact True/False logic and partial points system used by university examiners.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  Plausible-sounding statements that are quietly false — the trap structure that separates
-                  real understanding from surface familiarity.
+                  Plausible sounding statements that are quietly false, the trap structure that
+                  separates real understanding from surface familiarity.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  The discipline of asking questions when something doesn't click, because a half-understood
-                  concept is the same as not knowing it.
+                  The discipline of asking questions when something does not click, because a half
+                  understood concept is the same as not knowing it.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  A living system that grows with you: a growing question bank, real explanations, timed
-                  simulations, and a community of people going through the same thing.
+                  A living system that grows with you: a growing question bank, real explanations,
+                  timed simulations, and a community of people going through the same thing.
                 </span>
               </li>
             </ul>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              This course isn't a repackaged classroom lecture series. It's a living system — a growing
-              question bank, real explanations, timed simulations, and a community of people going through
-              the exact same thing you are. Put in the work, use the tools, and give yourself the preparation
-              that actually matches what the exam demands.
+              This course is not a repackaged classroom lecture series. It is a living system: a growing
+              question bank, real explanations, timed simulations, and a community of people going
+              through the exact same thing you are. Put in the work, use the tools, and give yourself
+              the preparation that actually matches what the exam demands.
             </p>
+
 
             <div
               className="mt-10 rounded-2xl border p-6 text-center"
@@ -473,8 +474,11 @@ function FullCourseProduct() {
             </div>
           </section>
 
+          <CompareTable highlight="full" heading="How the Full Course stacks up" subheading="Everything unlocked, side by side with the lighter options." />
+
           {/* FAQ */}
           <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+
             <div className="mx-auto max-w-3xl">
               <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
                 Questions & Answers
