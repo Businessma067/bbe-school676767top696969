@@ -6,7 +6,14 @@ import {
   Users,
   Lightbulb,
   Check,
+  Quote,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
@@ -69,6 +76,79 @@ const includes = [
     icon: Check,
     title: "Curated working set",
     text: "A genuinely solid foundation pulled from our full question bank, designed for early-stage prep.",
+  },
+];
+
+const liteFaqs = [
+  {
+    question: "What's the difference between Light and Full Access?",
+    answer:
+      "Light gives you a curated 500+ task set, 2 mock exams, and community support: a genuinely solid starting foundation. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and special features like the Duel Grid and achievement system.",
+  },
+  {
+    question: "Is Light enough to actually pass the exam?",
+    answer:
+      "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.",
+  },
+  {
+    question: "Can I upgrade to Full Access later?",
+    answer:
+      "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.",
+  },
+  {
+    question: "Which 500+ tasks are included, is it random or selected?",
+    answer:
+      "It's a curated working set covering every chapter and subject, chosen to give you a genuinely representative foundation rather than a random slice.",
+  },
+  {
+    question: "How long do I have access after purchasing?",
+    answer:
+      "Forever. It's a single one time payment, with no subscription and no expiration on your access.",
+  },
+  {
+    question: "Is €279 a one time payment or a subscription?",
+    answer:
+      "A single one time payment of €279, no recurring charges, no subscription.",
+  },
+  {
+    question: "What kind of support do I get with Light?",
+    answer:
+      "Community support, you can connect with other applicants working through the same material. Direct 1:1 support is reserved for Full Access.",
+  },
+  {
+    question: "Are the 2 mock exams timed like the real thing?",
+    answer:
+      "Yes, both mock exams run under realistic timing conditions across all three subjects, so you get an accurate read on where you stand.",
+  },
+  {
+    question: "Do I need any prior background in economics or business?",
+    answer:
+      "No, the core theory coverage included in Light takes you from the basics up, so you can build your foundation from zero.",
+  },
+  {
+    question: "Can I try before I buy?",
+    answer:
+      "Yes, the same free trial and sample question access available on Full Access applies here, so you can see the question style and platform before committing.",
+  },
+  {
+    question: "What happens to my progress if I upgrade to Full Access?",
+    answer:
+      "Everything carries over. Your completed tasks, mock exam history, and account progress stay exactly as they are when you move to Full Access.",
+  },
+  {
+    question: "Can I access Light on my phone as well as desktop?",
+    answer:
+      "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.",
+  },
+  {
+    question: "Do the 500+ tasks include all three subjects equally?",
+    answer:
+      "Yes, the curated set spans Math, English, and Business & Economics, covering core theory and exam style questions across all three.",
+  },
+  {
+    question: "Will new tasks be added to my Light package over time?",
+    answer:
+      "Yes. New practice tasks are added to the question bank regularly, and your Light access includes these updates as they roll out, so your library keeps growing over time.",
   },
 ];
 
@@ -224,33 +304,85 @@ function LiteBbeCourseProduct() {
             <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-foreground">
               Built for the early stage of your prep
             </h2>
-            <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p>
-                Not everyone is two months out from the exam, buried in prep, needing every tool at
-                once. Some applicants are still early — three, four, five months out — and just want
-                to start building real fundamentals without committing to the full experience yet.
-                Light is built exactly for that stage.
+
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Not everyone is two months out from the exam, buried in prep, needing every tool at once.
+              Some applicants are still early — three, four, five months out — and just want to start
+              building real fundamentals without committing to the full experience yet. Light is built
+              exactly for that stage.
+            </p>
+
+            <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
+              <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
+              <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
+                "What actually works is starting with a focused, genuinely solid set of practice — enough
+                to build real intuition for how the exam thinks, without the pressure of an all-in commitment."
               </p>
-              <p>
-                Here's the thing most people get wrong about early preparation: they either do nothing
-                until crunch time, or they overload themselves with more material than they can
-                actually absorb. Neither works. What actually works is starting with a focused,
-                genuinely solid set of practice — enough to build real intuition for how the exam
-                thinks, without the pressure of an all-in commitment.
+            </blockquote>
+
+            <h3 className="font-display text-lg font-semibold text-foreground">
+              What this starter kit gives you:
+            </h3>
+            <ul className="mt-4 space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Real exam-style questions across all three subjects — Business & Economics, Math, and English.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Explanations that actually teach the reasoning behind each answer, not just the correct letter.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Two full mock exams under realistic timing, so you know exactly where you stand before the real test.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  A clean upgrade path: everything you build here carries straight over to Full Access.
+                </span>
+              </li>
+            </ul>
+
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              That's what this package gives you. It's not a trimmed-down teaser — it's a complete, usable
+              toolkit for this stage of your preparation. When you're ready to go further, Full Access is
+              there waiting. Light isn't a smaller version of getting in. It's where getting in actually starts.
+            </p>
+          </section>
+
+          {/* FAQ */}
+          <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <div className="mx-auto max-w-3xl">
+              <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
+                Light vs. Full Access
               </p>
-              <p>
-                That's what this package gives you: real exam-style questions across all three
-                subjects, explanations that actually teach you the reasoning behind each answer, and
-                two full mock exams so you know exactly where you stand before you decide what's
-                next. It's not a trimmed-down teaser — it's a complete, usable toolkit for this stage
-                of your preparation.
-              </p>
-              <p>
-                When you're ready to go further — closer to exam day, wanting unlimited mock exams,
-                the full question bank, and direct 1:1 support — Full Access is there waiting, and
-                everything you've built here carries straight over. Light isn't a smaller version of
-                getting in. It's where getting in actually starts.
-              </p>
+              <h2 className="mt-5 text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                Frequently asked questions
+              </h2>
+
+              <Accordion type="single" collapsible className="mt-8">
+                {liteFaqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`lite-faq-${index}`}
+                    className="border-b-0 border-t border-border/40 first:border-t-0"
+                  >
+                    <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-caramel">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </section>
         </div>
