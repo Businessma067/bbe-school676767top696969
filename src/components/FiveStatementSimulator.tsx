@@ -139,13 +139,13 @@ export default function FiveStatementSimulator() {
       while (!cancelled) {
         // Reset
         setDim(true);
-        await wait(400);
+        await wait(320);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveExplIdx(null);
         setDim(false);
-        await wait(500);
+        await wait(400);
 
         // Step 1: click TRUE (checkbox) on each of the 5 statements the student thinks true
         // Real user pattern: they mark all TRUE statements (indices where answer_key is true: 0, 2, 3)
@@ -163,13 +163,13 @@ export default function FiveStatementSimulator() {
         await moveTo(`[data-sim-submit]`);
         await click();
         setChecked(true);
-        await wait(1100);
+        await wait(880);
 
         // Step 3: for each statement open AI textbook explanation, one-by-one
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
           await moveTo(`[data-sim-ai="${i}"]`);
-          if (i === 4) await wait(450); // pause longer on the trap before opening it
+          if (i === 4) await wait(360); // pause longer on the trap before opening it
           await click();
           setActiveExplIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
@@ -177,7 +177,7 @@ export default function FiveStatementSimulator() {
         }
 
         // Hold final diagnostic state
-        await wait(3000);
+        await wait(2400);
       }
     };
 
