@@ -304,33 +304,85 @@ function LiteBbeCourseProduct() {
             <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-foreground">
               Built for the early stage of your prep
             </h2>
-            <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p>
-                Not everyone is two months out from the exam, buried in prep, needing every tool at
-                once. Some applicants are still early — three, four, five months out — and just want
-                to start building real fundamentals without committing to the full experience yet.
-                Light is built exactly for that stage.
+
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Not everyone is two months out from the exam, buried in prep, needing every tool at once.
+              Some applicants are still early — three, four, five months out — and just want to start
+              building real fundamentals without committing to the full experience yet. Light is built
+              exactly for that stage.
+            </p>
+
+            <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
+              <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
+              <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
+                "What actually works is starting with a focused, genuinely solid set of practice — enough
+                to build real intuition for how the exam thinks, without the pressure of an all-in commitment."
               </p>
-              <p>
-                Here's the thing most people get wrong about early preparation: they either do nothing
-                until crunch time, or they overload themselves with more material than they can
-                actually absorb. Neither works. What actually works is starting with a focused,
-                genuinely solid set of practice — enough to build real intuition for how the exam
-                thinks, without the pressure of an all-in commitment.
+            </blockquote>
+
+            <h3 className="font-display text-lg font-semibold text-foreground">
+              What this starter kit gives you:
+            </h3>
+            <ul className="mt-4 space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Real exam-style questions across all three subjects — Business & Economics, Math, and English.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Explanations that actually teach the reasoning behind each answer, not just the correct letter.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  Two full mock exams under realistic timing, so you know exactly where you stand before the real test.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  A clean upgrade path: everything you build here carries straight over to Full Access.
+                </span>
+              </li>
+            </ul>
+
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              That's what this package gives you. It's not a trimmed-down teaser — it's a complete, usable
+              toolkit for this stage of your preparation. When you're ready to go further, Full Access is
+              there waiting. Light isn't a smaller version of getting in. It's where getting in actually starts.
+            </p>
+          </section>
+
+          {/* FAQ */}
+          <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <div className="mx-auto max-w-3xl">
+              <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
+                Light vs. Full Access
               </p>
-              <p>
-                That's what this package gives you: real exam-style questions across all three
-                subjects, explanations that actually teach you the reasoning behind each answer, and
-                two full mock exams so you know exactly where you stand before you decide what's
-                next. It's not a trimmed-down teaser — it's a complete, usable toolkit for this stage
-                of your preparation.
-              </p>
-              <p>
-                When you're ready to go further — closer to exam day, wanting unlimited mock exams,
-                the full question bank, and direct 1:1 support — Full Access is there waiting, and
-                everything you've built here carries straight over. Light isn't a smaller version of
-                getting in. It's where getting in actually starts.
-              </p>
+              <h2 className="mt-5 text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                Frequently asked questions
+              </h2>
+
+              <Accordion type="single" collapsible className="mt-8">
+                {liteFaqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`lite-faq-${index}`}
+                    className="border-b-0 border-t border-border/40 first:border-t-0"
+                  >
+                    <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-caramel">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </section>
         </div>
