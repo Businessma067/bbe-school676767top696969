@@ -57,15 +57,6 @@ function renderValue(value: string) {
   return value;
 }
 
-function renderValueMobile(value: string) {
-  if (value === "tick" || value === "✔️") {
-    return <Check className="h-5 w-5 text-caramel-deep" strokeWidth={3} />;
-  }
-  if (value === "❌") {
-    return <X className="h-5 w-5 text-gray-400" strokeWidth={2.5} />;
-  }
-  return <span className="text-sm font-medium text-foreground/90">{value}</span>;
-}
 
 export function CompareTable({
   highlight,
@@ -160,44 +151,76 @@ export function CompareTable({
           </table>
         </div>
 
-        {/* Mobile card view */}
-        <div className="space-y-6 sm:hidden">
-          {comparisonSections.map((section) => (
-            <div key={section.title}>
-              <h3 className="mb-3 font-display text-xs font-semibold uppercase tracking-widest text-caramel-deep">
-                {section.title}
-              </h3>
-              <div className="space-y-3">
-                {section.rows.map((row) => (
-                  <div
-                    key={row.label}
-                    className="rounded-2xl border border-border bg-background p-4 shadow-sm"
-                  >
-                    <p className="mb-3 text-sm font-semibold text-foreground">{row.label}</p>
-                    <div className="grid grid-cols-3 gap-2">
-                      {columns.map((col) => {
-                        const isHi = highlight === col.key;
-                        const isDim = highlight && !isHi;
-                        return (
-                          <div
-                            key={col.key}
-                            className={`flex flex-col items-center justify-between rounded-xl border border-border/60 px-2 py-3 text-center ${
-                              isHi ? "bg-[#C2643A0d] ring-2 ring-[#C2643A]" : "bg-muted/30"
-                            } ${isDim ? dimClass : ""}`}
-                          >
-                            <span className="mb-2 line-clamp-2 min-h-[2rem] text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-                              {col.label}
-                            </span>
-                            {renderValueMobile(row[col.key])}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
+        {/* Mobile unified table */}
+        <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[340px] border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-border bg-muted/50">
+                  <th className="sticky left-0 z-10 w-[140px] bg-muted px-3 py-3 text-left font-display text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+                    Compare
+                  </th>
+                  {columns.map((col) => {
+                    const isHi = highlight === col.key;
+                    const isDim = highlight && !isHi;
+                    return (
+                      <th
+                        key={col.key}
+                        className={`px-2 py-3 text-center font-display text-[10px] font-semibold uppercase tracking-widest ${
+                          isHi ? "text-foreground bg-muted " + hiClass : "text-muted-foreground bg-muted/50"
+                        } ${isDim ? dimClass : ""}`}
+                      >
+                        {col.label}
+                      </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonSections.map((section, sectionIdx) => (
+                  <>
+                    <tr key={section.title} className="border-t border-border">
+                      <td
+                        colSpan={4}
+                        className="sticky left-0 z-10 bg-background px-3 py-2 text-left font-display text-[10px] font-semibold uppercase tracking-widest text-caramel-deep"
+                      >
+                        {section.title}
+                      </td>
+                    </tr>
+                    {section.rows.map((row, rowIdx) => (
+                      <tr
+                        key={row.label}
+                        className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
+                      >
+                        <td className="sticky left-0 z-10 w-[140px] bg-background px-3 py-3 text-xs font-medium text-foreground/90">
+                          {row.label}
+                        </td>
+                        {columns.map((col) => {
+                          const isHi = highlight === col.key;
+                          const isDim = highlight && !isHi;
+                          return (
+                            <td
+                              key={col.key}
+                              className={`px-2 py-3 text-center text-xs font-medium text-foreground/80 ${
+                                isHi ? hiClass : ""
+                              } ${isDim ? dimClass : ""}`}
+                            >
+                              {renderValue(row[col.key])}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    ))}
+                    {sectionIdx < comparisonSections.length - 1 && (
+                      <tr className="border-t border-border">
+                        <td colSpan={4} className="h-2 bg-background" />
+                      </tr>
+                    )}
+                  </>
                 ))}
-              </div>
-            </div>
-          ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
