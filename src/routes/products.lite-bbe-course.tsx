@@ -309,7 +309,7 @@ function LiteBbeCourseProduct() {
 
             <p className="text-base leading-relaxed text-muted-foreground">
               Not everyone is two months out from the exam, buried in prep, needing every tool at once.
-              Some applicants are still early — three, four, five months out — and just want to start
+              Some applicants are still early, three, four, five months out, and just want to start
               building real fundamentals without committing to the full experience yet. Light is built
               exactly for that stage.
             </p>
@@ -317,8 +317,8 @@ function LiteBbeCourseProduct() {
             <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
               <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
               <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
-                "What actually works is starting with a focused, genuinely solid set of practice — enough
-                to build real intuition for how the exam thinks, without the pressure of an all-in commitment."
+                "What actually works is starting with a focused, genuinely solid set of practice, enough
+                to build real intuition for how the exam thinks, without the pressure of an all in commitment."
               </p>
             </blockquote>
 
@@ -329,7 +329,7 @@ function LiteBbeCourseProduct() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  Real exam-style questions across all three subjects — Business & Economics, Math, and English.
+                  Real exam style questions across all three subjects: Business &amp; Economics, Math, and English.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -353,11 +353,15 @@ function LiteBbeCourseProduct() {
             </ul>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              That's what this package gives you. It's not a trimmed-down teaser — it's a complete, usable
-              toolkit for this stage of your preparation. When you're ready to go further, Full Access is
-              there waiting. Light isn't a smaller version of getting in. It's where getting in actually starts.
+              That is what this package gives you. It is not a trimmed down teaser, it is a complete,
+              usable toolkit for this stage of your preparation. When you are ready to go further, Full
+              Access is there waiting. Light is not a smaller version of getting in. It is where getting
+              in actually starts.
             </p>
           </section>
+
+          <CompareTable highlight="lite" heading="How Light stacks up" subheading="Here is exactly what you unlock, and what waits for you if you upgrade later." />
+
 
           {/* FAQ */}
           <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
