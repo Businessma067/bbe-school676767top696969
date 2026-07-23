@@ -24,6 +24,7 @@ import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
+import { Route as ProductsLiteBbeCourseRouteImport } from './routes/products.lite-bbe-course'
 import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
 import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
@@ -108,6 +109,11 @@ const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   path: '/',
   getParentRoute: () => DemoPracticeRoute,
 } as any)
+const ProductsLiteBbeCourseRoute = ProductsLiteBbeCourseRouteImport.update({
+  id: '/lite-bbe-course',
+  path: '/lite-bbe-course',
+  getParentRoute: () => ProductsRoute,
+} as any)
 const ProductsFullCourseSubjectsRoute =
   ProductsFullCourseSubjectsRouteImport.update({
     id: '/full-course-subjects',
@@ -173,6 +179,7 @@ export interface FileRoutesByFullPath {
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
+  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -196,6 +203,7 @@ export interface FileRoutesByTo {
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
+  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/products': typeof ProductsIndexRoute
 }
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
+  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -249,6 +258,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/products/full-course-economics'
     | '/products/full-course-subjects'
+    | '/products/lite-bbe-course'
     | '/demo-practice/'
     | '/products/'
   fileRoutesByTo: FileRoutesByTo
@@ -272,6 +282,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/products/full-course-economics'
     | '/products/full-course-subjects'
+    | '/products/lite-bbe-course'
     | '/demo-practice'
     | '/products'
   id:
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/products/full-course'
     | '/products/full-course-economics'
     | '/products/full-course-subjects'
+    | '/products/lite-bbe-course'
     | '/demo-practice/'
     | '/products/'
   fileRoutesById: FileRoutesById
@@ -425,6 +437,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DemoPracticeIndexRouteImport
       parentRoute: typeof DemoPracticeRoute
     }
+    '/products/lite-bbe-course': {
+      id: '/products/lite-bbe-course'
+      path: '/lite-bbe-course'
+      fullPath: '/products/lite-bbe-course'
+      preLoaderRoute: typeof ProductsLiteBbeCourseRouteImport
+      parentRoute: typeof ProductsRoute
+    }
     '/products/full-course-subjects': {
       id: '/products/full-course-subjects'
       path: '/full-course-subjects'
@@ -515,6 +534,7 @@ interface ProductsRouteChildren {
   ProductsFullCourseRoute: typeof ProductsFullCourseRoute
   ProductsFullCourseEconomicsRoute: typeof ProductsFullCourseEconomicsRoute
   ProductsFullCourseSubjectsRoute: typeof ProductsFullCourseSubjectsRoute
+  ProductsLiteBbeCourseRoute: typeof ProductsLiteBbeCourseRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -523,6 +543,7 @@ const ProductsRouteChildren: ProductsRouteChildren = {
   ProductsFullCourseRoute: ProductsFullCourseRoute,
   ProductsFullCourseEconomicsRoute: ProductsFullCourseEconomicsRoute,
   ProductsFullCourseSubjectsRoute: ProductsFullCourseSubjectsRoute,
+  ProductsLiteBbeCourseRoute: ProductsLiteBbeCourseRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 
@@ -549,13 +570,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
