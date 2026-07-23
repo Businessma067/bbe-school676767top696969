@@ -55,7 +55,7 @@ const products: Product[] = [
     description:
       "Get access to the comprehensive 950+ question database with full step-by-step logic explanations under every statement, designed for steady self-paced preparation.",
     cta: "Unlock lite access",
-    disabled: true,
+    to: "/products/lite-bbe-course",
   },
   {
     title: "Speed & Focus Simulator",
