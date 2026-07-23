@@ -269,8 +269,21 @@ function FullCourseProduct() {
             <span className="text-sm text-muted-foreground">114 Reviews</span>
           </div>
 
+          {/* Stats */}
+          <div className="mt-6 rounded-2xl border border-border/60 bg-card/60 p-5 shadow-sm backdrop-blur">
+            <div className="grid grid-cols-3 divide-x divide-border/60 text-center">
+              {fullStats.map((s) => (
+                <div key={s.label} className="flex flex-col items-center">
+                  <span className="font-display text-2xl font-bold text-foreground">{s.value}</span>
+                  <span className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Price + CTA */}
           <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
+
             <div>
               <div className="text-xs font-medium uppercase tracking-widest text-taupe">
                 One-time payment
