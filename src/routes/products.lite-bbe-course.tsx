@@ -6,7 +6,14 @@ import {
   Users,
   Lightbulb,
   Check,
+  Quote,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
@@ -69,6 +76,79 @@ const includes = [
     icon: Check,
     title: "Curated working set",
     text: "A genuinely solid foundation pulled from our full question bank, designed for early-stage prep.",
+  },
+];
+
+const liteFaqs = [
+  {
+    question: "What's the difference between Light and Full Access?",
+    answer:
+      "Light gives you a curated 500+ task set, 2 mock exams, and community support: a genuinely solid starting foundation. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and special features like the Duel Grid and achievement system.",
+  },
+  {
+    question: "Is Light enough to actually pass the exam?",
+    answer:
+      "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.",
+  },
+  {
+    question: "Can I upgrade to Full Access later?",
+    answer:
+      "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.",
+  },
+  {
+    question: "Which 500+ tasks are included, is it random or selected?",
+    answer:
+      "It's a curated working set covering every chapter and subject, chosen to give you a genuinely representative foundation rather than a random slice.",
+  },
+  {
+    question: "How long do I have access after purchasing?",
+    answer:
+      "Forever. It's a single one time payment, with no subscription and no expiration on your access.",
+  },
+  {
+    question: "Is €279 a one time payment or a subscription?",
+    answer:
+      "A single one time payment of €279, no recurring charges, no subscription.",
+  },
+  {
+    question: "What kind of support do I get with Light?",
+    answer:
+      "Community support, you can connect with other applicants working through the same material. Direct 1:1 support is reserved for Full Access.",
+  },
+  {
+    question: "Are the 2 mock exams timed like the real thing?",
+    answer:
+      "Yes, both mock exams run under realistic timing conditions across all three subjects, so you get an accurate read on where you stand.",
+  },
+  {
+    question: "Do I need any prior background in economics or business?",
+    answer:
+      "No, the core theory coverage included in Light takes you from the basics up, so you can build your foundation from zero.",
+  },
+  {
+    question: "Can I try before I buy?",
+    answer:
+      "Yes, the same free trial and sample question access available on Full Access applies here, so you can see the question style and platform before committing.",
+  },
+  {
+    question: "What happens to my progress if I upgrade to Full Access?",
+    answer:
+      "Everything carries over. Your completed tasks, mock exam history, and account progress stay exactly as they are when you move to Full Access.",
+  },
+  {
+    question: "Can I access Light on my phone as well as desktop?",
+    answer:
+      "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.",
+  },
+  {
+    question: "Do the 500+ tasks include all three subjects equally?",
+    answer:
+      "Yes, the curated set spans Math, English, and Business & Economics, covering core theory and exam style questions across all three.",
+  },
+  {
+    question: "Will new tasks be added to my Light package over time?",
+    answer:
+      "Yes. New practice tasks are added to the question bank regularly, and your Light access includes these updates as they roll out, so your library keeps growing over time.",
   },
 ];
 
