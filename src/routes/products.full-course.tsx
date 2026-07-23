@@ -45,6 +45,13 @@ export const Route = createFileRoute("/products/full-course")({
 
 const ORANGE = "#C2643A";
 
+const fullStats = [
+  { value: "3", label: "Subjects" },
+  { value: "2000+", label: "Tasks" },
+  { value: "7", label: "Mock Exams" },
+];
+
+
 const features = [
   {
     icon: BookOpen,
