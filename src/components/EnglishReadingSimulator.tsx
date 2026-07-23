@@ -54,10 +54,10 @@ export default function EnglishReadingSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE_DURATION = 1050;
-    const CLICK_PRESS = 170;
-    const CLICK_SETTLE = 180;
-    const STEP_SETTLE = 260;
+    const MOVE_DURATION = 840;
+    const CLICK_PRESS = 136;
+    const CLICK_SETTLE = 144;
+    const STEP_SETTLE = 208;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -124,14 +124,14 @@ export default function EnglishReadingSimulator() {
     const loop = async () => {
       while (!cancelled) {
         setDim(true);
-        await wait(400);
+        await wait(320);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveIdx(null);
         if (rightRef.current) rightRef.current.scrollTop = 0;
         setDim(false);
-        await wait(500);
+        await wait(400);
 
         // Mark TRUEs (student marks 0,2,3,4 — misses statement 4 wait, 4 is actually TRUE)
         const toMark = [0, 2, 3, 4];
@@ -146,7 +146,7 @@ export default function EnglishReadingSimulator() {
         await moveTo(`[data-sim-submit]`);
         await click();
         setChecked(true);
-        await wait(1100);
+        await wait(880);
 
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
@@ -154,12 +154,12 @@ export default function EnglishReadingSimulator() {
           await click();
           setActiveIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
-          await wait(120);
+          await wait(96);
           await scrollRightToHighlight();
-          await wait(1600);
+          await wait(1280);
         }
 
-        await wait(2600);
+        await wait(2080);
       }
     };
     loop();
@@ -387,7 +387,7 @@ export default function EnglishReadingSimulator() {
         {/* Cursor */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[900ms] ease-in-out"
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[720ms] ease-in-out"
           style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
         >
           <div className="relative -translate-x-1 -translate-y-1">

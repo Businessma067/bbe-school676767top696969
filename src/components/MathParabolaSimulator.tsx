@@ -47,7 +47,7 @@ export default function MathParabolaSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 1050;
+    const MOVE = 840;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -90,26 +90,26 @@ export default function MathParabolaSimulator() {
       }
       setCursor({ x: eb.left - s.left + eb.width / 2, y: cursorY });
       await Promise.all([scrollP, wait(MOVE)]);
-      await wait(260);
+      await wait(208);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(170);
+      await wait(136);
       setClicking(false);
-      await wait(180);
+      await wait(144);
     };
 
     const loop = async () => {
       while (!cancelled) {
         setDim(true);
-        await wait(400);
+        await wait(320);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveIdx(null);
         setDim(false);
-        await wait(500);
+        await wait(400);
 
         // Student marks 0,1,2,3 as TRUE (traps 2 & 4 wrong)
         const toMark = [0, 1, 2, 3];
@@ -118,13 +118,13 @@ export default function MathParabolaSimulator() {
           await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(240);
+          await wait(192);
         }
 
         await moveTo(`[data-sim-submit]`);
         await click();
         setChecked(true);
-        await wait(1100);
+        await wait(880);
 
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
@@ -132,9 +132,9 @@ export default function MathParabolaSimulator() {
           await click();
           setActiveIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
-          await wait(2100);
+          await wait(1680);
         }
-        await wait(2600);
+        await wait(2080);
       }
     };
     loop();
@@ -367,7 +367,7 @@ export default function MathParabolaSimulator() {
         {/* Cursor */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[900ms] ease-in-out"
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[720ms] ease-in-out"
           style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
         >
           <div className="relative -translate-x-1 -translate-y-1">

@@ -64,10 +64,10 @@ export default function FiveStatementSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE_DURATION = 1050;
-    const CLICK_PRESS_DURATION = 170;
-    const CLICK_SETTLE_DURATION = 180;
-    const STEP_SETTLE_DURATION = 260;
+    const MOVE_DURATION = 840;
+    const CLICK_PRESS_DURATION = 136;
+    const CLICK_SETTLE_DURATION = 144;
+    const STEP_SETTLE_DURATION = 208;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -139,13 +139,13 @@ export default function FiveStatementSimulator() {
       while (!cancelled) {
         // Reset
         setDim(true);
-        await wait(400);
+        await wait(320);
         setAnswers({});
         setChecked(false);
         setOpenExpl({});
         setActiveExplIdx(null);
         setDim(false);
-        await wait(500);
+        await wait(400);
 
         // Step 1: click TRUE (checkbox) on each of the 5 statements the student thinks true
         // Real user pattern: they mark all TRUE statements (indices where answer_key is true: 0, 2, 3)
@@ -163,13 +163,13 @@ export default function FiveStatementSimulator() {
         await moveTo(`[data-sim-submit]`);
         await click();
         setChecked(true);
-        await wait(1100);
+        await wait(880);
 
         // Step 3: for each statement open AI textbook explanation, one-by-one
         for (let i = 0; i < CASE.statements.length; i++) {
           if (cancelled) return;
           await moveTo(`[data-sim-ai="${i}"]`);
-          if (i === 4) await wait(450); // pause longer on the trap before opening it
+          if (i === 4) await wait(360); // pause longer on the trap before opening it
           await click();
           setActiveExplIdx(i);
           setOpenExpl((s) => ({ ...s, [i]: true }));
@@ -177,7 +177,7 @@ export default function FiveStatementSimulator() {
         }
 
         // Hold final diagnostic state
-        await wait(3000);
+        await wait(2400);
       }
     };
 
@@ -430,7 +430,7 @@ export default function FiveStatementSimulator() {
         {/* Cursor */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[900ms] ease-in-out"
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[720ms] ease-in-out"
           style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
         >
           <div className="relative -translate-x-1 -translate-y-1">
