@@ -320,7 +320,7 @@ function FullCourseProduct() {
           {/* Persuasive section */}
           <section className="mt-16">
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-              Why Most Applicants Fail — And Why This Course Is Built to Fix That
+              Why most applicants fail, and why this course is built to fix that
             </h2>
 
             <p className="text-base leading-relaxed text-muted-foreground">
