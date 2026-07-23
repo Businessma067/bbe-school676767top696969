@@ -65,8 +65,8 @@ export default function FiveStatementSimulator() {
   useEffect(() => {
     let cancelled = false;
     const MOVE_DURATION = 840;
-    const CLICK_PRESS_DURATION = 136;
-    const CLICK_SETTLE_DURATION = 144;
+    const CLICK_PRESS_DURATION = 90;
+    const CLICK_SETTLE_DURATION = 90;
     const STEP_SETTLE_DURATION = 208;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
@@ -444,7 +444,7 @@ export default function FiveStatementSimulator() {
               />
             </svg>
             {clicking && (
-              <span className="absolute -left-2 -top-2 h-8 w-8 animate-ping rounded-full bg-primary/50" />
+              <span className="absolute -left-3 -top-3 h-10 w-10 rounded-full bg-primary/60 animate-[click-ripple_0.42s_ease-out_forwards]" />
             )}
           </div>
         </div>
