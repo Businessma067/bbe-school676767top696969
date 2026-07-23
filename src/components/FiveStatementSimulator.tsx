@@ -64,10 +64,10 @@ export default function FiveStatementSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE_DURATION = 1050;
-    const CLICK_PRESS_DURATION = 170;
-    const CLICK_SETTLE_DURATION = 180;
-    const STEP_SETTLE_DURATION = 260;
+    const MOVE_DURATION = 840;
+    const CLICK_PRESS_DURATION = 136;
+    const CLICK_SETTLE_DURATION = 144;
+    const STEP_SETTLE_DURATION = 208;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -430,7 +430,7 @@ export default function FiveStatementSimulator() {
         {/* Cursor */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[900ms] ease-in-out"
+          className="pointer-events-none absolute left-0 top-0 z-30 transition-transform duration-[720ms] ease-in-out"
           style={{ transform: `translate(${cursor.x}px, ${cursor.y}px)` }}
         >
           <div className="relative -translate-x-1 -translate-y-1">
