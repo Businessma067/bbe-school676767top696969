@@ -55,8 +55,8 @@ export default function EnglishReadingSimulator() {
   useEffect(() => {
     let cancelled = false;
     const MOVE_DURATION = 840;
-    const CLICK_PRESS = 136;
-    const CLICK_SETTLE = 144;
+    const CLICK_PRESS = 90;
+    const CLICK_SETTLE = 90;
     const STEP_SETTLE = 208;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));

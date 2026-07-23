@@ -95,9 +95,9 @@ export default function MathParabolaSimulator() {
 
     const click = async () => {
       setClicking(true);
-      await wait(136);
+      await wait(90);
       setClicking(false);
-      await wait(144);
+      await wait(90);
     };
 
     const loop = async () => {
