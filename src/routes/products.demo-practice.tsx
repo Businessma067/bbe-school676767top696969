@@ -268,8 +268,11 @@ function DemoPracticeProduct() {
               ))}
             </Accordion>
           </section>
+
+          <CompareTable highlight="free" />
         </div>
       </main>
     </div>
+
   );
 }
