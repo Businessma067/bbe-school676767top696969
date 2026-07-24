@@ -125,15 +125,8 @@ function Index() {
                     <span>Explore Courses</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">See all BBE School products</span>
                   </Link>
-                  <a
-                    href="/Message_to_Parents_WU_Vienna_2027.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                  >
-                    <span>Message to Parents</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">Why our course?</span>
-                  </a>
+
+
                 </div>
 
                 
