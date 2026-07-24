@@ -315,14 +315,14 @@ function Index() {
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
                 Before choosing a preparation strategy, look at what your child is actually walking
-                into at Messe Wien, and what a wrong plan costs the family in real euros.
+                into at WU Vienna, and what a wrong plan costs the family in real euros.
               </p>
             </div>
 
             <div className="relative mt-12">
               <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
                 <p>
-                  The mandatory in-person BBE entrance exam at Messe Wien is not a regular school
+                  The mandatory in-person BBE entrance exam at WU Vienna is not a regular school
                   test. It is a filtering conveyor. A massive convention hall, more than 3000
                   applicants from around the world, echoing announcements, and exactly 240 seats on
                   the other side of the door. That is over 12 candidates competing for a single
