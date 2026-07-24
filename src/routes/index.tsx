@@ -336,6 +336,18 @@ function Index() {
                   Vienna a wrong answer does not just score zero. The computer actively subtracts
                   points from what the student got right elsewhere.
                 </p>
+                <div className="flex justify-center py-4">
+                  <Link
+                    to="/products/full-course"
+                    className="inline-flex items-center justify-center rounded-md px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                    style={{
+                      background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                      boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                    }}
+                  >
+                    Protect your €60,000 — see the Full BBE Course →
+                  </Link>
+                </div>
                 <p>
                   If a candidate panics under the clock and starts guessing blindly, a strong
                   paper can collapse to zero in minutes. That is why straight-A students with
