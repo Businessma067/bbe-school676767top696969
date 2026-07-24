@@ -202,7 +202,7 @@ function ParentsPage() {
             We do not copy-paste dry economics textbooks at your child. The person who built this
             platform sat through the exact WU Vienna exam, finished 24th, and felt the weight of
             every penalty mark on their own answer sheet. Out of that experience came an interactive
-            exam simulator that costs <strong className="font-semibold text-foreground">€359 for the VIP Package</strong>.
+            exam simulator that costs <strong className="font-semibold text-foreground">€359 for the Full BBE Course</strong>.
             It is not an educational expense. It is a direct financial insurance policy against
             burning €60,000+ later.
           </p>
