@@ -71,8 +71,7 @@ function ParentsPage() {
             <span className="text-[#F0A64D]">The Real Cost of WU Vienna Admission</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
-            Before you commit to a preparation strategy, read the structure of the exam your child
-            is walking into. This is written for the family behind the applicant.
+            Weigh the time and money spent on a failed admission.
           </p>
         </div>
       </section>
