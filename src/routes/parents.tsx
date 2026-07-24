@@ -186,7 +186,7 @@ function ParentsPage() {
             className="h-72 w-full object-cover sm:h-96"
           />
           <figcaption className="bg-card px-5 py-3 text-xs text-muted-foreground">
-            Every missed seat at WU Vienna costs the family the price of a car.
+            Every missed spot at the university costs the family the price of a car.
           </figcaption>
         </figure>
 
