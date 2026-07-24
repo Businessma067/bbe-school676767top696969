@@ -125,15 +125,8 @@ function Index() {
                     <span>Explore Courses</span>
                     <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">See all BBE School products</span>
                   </Link>
-                  <a
-                    href="/Message_to_Parents_WU_Vienna_2027.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                  >
-                    <span>Message to Parents</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">Why our course?</span>
-                  </a>
+
+
                 </div>
 
                 
@@ -307,6 +300,88 @@ function Index() {
             </Link>
           </div>
         </section>
+
+        {/* PARENTS — a frank audit teaser */}
+        <section className="relative bg-background px-6 py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-3xl">
+            <div className="text-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-[10px] font-medium uppercase tracking-[0.25em] text-taupe">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#E85D3A]" />
+                An open letter to parents
+              </span>
+              <h2 className="mt-5 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+                A Frank Audit for Parents:<br />
+                <span className="text-caramel">The Real Cost of WU Vienna Admission</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Before choosing a preparation strategy, look at what your child is actually walking
+                into at Messe Wien, and what a wrong plan costs the family in real euros.
+              </p>
+            </div>
+
+            <div className="relative mt-12">
+              <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
+                <p>
+                  The mandatory in-person BBE entrance exam at Messe Wien is not a regular school
+                  test. It is a filtering conveyor. A massive convention hall, more than 3000
+                  applicants from around the world, echoing announcements, and exactly 240 seats on
+                  the other side of the door. That is over 12 candidates competing for a single
+                  desk.
+                </p>
+                <p>
+                  The volume of competitors is not even the hardest part. The real difficulty is
+                  buried in the structural rules the university uses to break the field. Your
+                  child gets less than a minute per statement to scan a dense English passage or
+                  work through a data-sufficiency style problem entirely in their head. And at WU
+                  Vienna a wrong answer does not just score zero. The computer actively subtracts
+                  points from what the student got right elsewhere.
+                </p>
+                <p>
+                  If a candidate panics under the clock and starts guessing blindly, a strong
+                  paper can collapse to zero in minutes. That is why straight-A students with
+                  expensive private tutors still fail here every single year. They were simply
+                  never taught how to manage the clock and the penalty system at the same time.
+                </p>
+                <p>
+                  And when the seat is missed, the real bill arrives. A private business school in
+                  the EU or UK is around €20,000 per year, or roughly <strong>€60,000</strong> across a
+                  3-year Bachelor cycle. A mandatory foundation year adds another €25,000+ in rent,
+                  food and delayed career start. Meanwhile studying at world-class WU Vienna is
+                  effectively free.
+                </p>
+              </div>
+
+              {/* Fading overlay + arrow CTA */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent via-background/85 to-background" />
+              <div className="relative -mt-8 flex justify-center">
+                <Link
+                  to="/parents"
+                  className="pointer-events-auto group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
+                  style={{
+                    background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                    boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
+                  }}
+                >
+                  <span>Read the full letter</span>
+                  <svg
+                    className="h-4 w-4 animate-bounce"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
 
         {/* PARALLAX BAND #2 */}
