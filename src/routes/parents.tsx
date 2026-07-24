@@ -191,6 +191,19 @@ function ParentsPage() {
           </figcaption>
         </figure>
 
+        <div className="my-10 flex justify-center">
+          <Link
+            to="/products/full-course"
+            className="inline-flex items-center justify-center rounded-md px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+            style={{
+              background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+              boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+            }}
+          >
+            Protect your €60,000 — see the Full BBE Course →
+          </Link>
+        </div>
+
         {/* Section 3 */}
         <article>
           <div className="mb-4 flex items-center gap-3">
