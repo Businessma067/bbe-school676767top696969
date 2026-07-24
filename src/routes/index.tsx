@@ -338,14 +338,26 @@ function Index() {
                 </p>
                 <div className="flex justify-center py-4">
                   <Link
-                    to="/products/full-course"
-                    className="inline-flex items-center justify-center rounded-md px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                    to="/parents"
+                    className="group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
                     style={{
                       background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                      boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                      boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
                     }}
                   >
-                    Protect your €60,000 — see the Full BBE Course →
+                    <span>Read the full letter</span>
+                    <svg
+                      className="h-4 w-4 animate-bounce"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
                   </Link>
                 </div>
                 <p>
@@ -363,32 +375,8 @@ function Index() {
                 </p>
               </div>
 
-              {/* Fading overlay + arrow CTA */}
+              {/* Fading overlay */}
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent via-background/85 to-background" />
-              <div className="relative -mt-8 flex justify-center">
-                <Link
-                  to="/parents"
-                  className="pointer-events-auto group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
-                  style={{
-                    background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                    boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
-                  }}
-                >
-                  <span>Read the full letter</span>
-                  <svg
-                    className="h-4 w-4 animate-bounce"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </Link>
-              </div>
             </div>
           </div>
         </section>
