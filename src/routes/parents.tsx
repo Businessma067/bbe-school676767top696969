@@ -18,7 +18,7 @@ export const Route = createFileRoute("/parents")({
       {
         property: "og:description",
         content:
-          "3000+ applicants. 240 seats. Penalty marking. Here is what actually happens at Messe Wien, and what a wrong preparation strategy costs a family.",
+          "3000+ applicants. 240 seats. Penalty marking. Here is what actually happens at the WU Vienna entrance test, and what a wrong preparation strategy costs a family.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -86,7 +86,7 @@ function ParentsPage() {
             </h2>
           </div>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-            The mandatory in-person entrance test for the BBE program at Messe Wien is closer to a
+            The mandatory in-person BBE entrance test at WU Vienna is closer to a
             filtering conveyor than to a classroom exam. Imagine a huge convention hall, more than
             3000 applicants from across the world, echoing announcements, and exactly 240 seats on
             the other side of the door. That is over 12 candidates competing for a single desk.
@@ -186,7 +186,7 @@ function ParentsPage() {
             className="h-72 w-full object-cover sm:h-96"
           />
           <figcaption className="bg-card px-5 py-3 text-xs text-muted-foreground">
-            Every missed seat at Messe Wien costs the family the price of a car.
+            Every missed seat at WU Vienna costs the family the price of a car.
           </figcaption>
         </figure>
 
@@ -213,7 +213,7 @@ function ParentsPage() {
           </div>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
             We do not copy-paste dry economics textbooks at your child. The person who built this
-            platform sat through the exact Messe Wien exam, finished 24th, and felt the weight of
+            platform sat through the exact WU Vienna exam, finished 24th, and felt the weight of
             every penalty mark on their own answer sheet. Out of that experience came an interactive
             exam simulator that costs <strong className="font-semibold text-foreground">€359 for the VIP Package</strong>.
             It is not an educational expense. It is a direct financial insurance policy against
@@ -251,7 +251,7 @@ function ParentsPage() {
             <p className="mt-3 text-base leading-relaxed text-foreground sm:text-lg">
               You can rely on standard school knowledge and possibly burn €60,000+ on private
               tuition or a lost foundation year. Or you can invest <strong>€359</strong> into a specialized
-              simulator that teaches your child how to survive the actual Messe Wien constraints
+              simulator that teaches your child how to survive the actual WU Vienna constraints
               and secure a seat on a free, world-class program. The choice is yours.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
