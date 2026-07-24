@@ -336,47 +336,35 @@ function Index() {
                   Vienna a wrong answer does not just score zero. The computer actively subtracts
                   points from what the student got right elsewhere.
                 </p>
-                <div className="flex justify-center py-4">
-                  <Link
-                    to="/parents"
-                    className="group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
-                    style={{
-                      background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
-                      boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
-                    }}
-                  >
-                    <span>Read the full letter</span>
-                    <svg
-                      className="h-4 w-4 animate-bounce"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </Link>
-                </div>
-                <p>
-                  If a candidate panics under the clock and starts guessing blindly, a strong
-                  paper can collapse to zero in minutes. That is why straight-A students with
-                  expensive private tutors still fail here every single year. They were simply
-                  never taught how to manage the clock and the penalty system at the same time.
-                </p>
-                <p>
-                  And when the seat is missed, the real bill arrives. A private business school in
-                  the EU or UK is around €20,000 per year, or roughly <strong>€60,000</strong> across a
-                  3-year Bachelor cycle. A mandatory foundation year adds another €25,000+ in rent,
-                  food and delayed career start. Meanwhile studying at world-class WU Vienna is
-                  effectively free.
-                </p>
               </div>
 
-              {/* Fading overlay */}
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent via-background/85 to-background" />
+              {/* Fading overlay starting at the second paragraph */}
+              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
+
+              <div className="relative z-10 flex justify-center py-4">
+                <Link
+                  to="/parents"
+                  className="group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
+                  style={{
+                    background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                    boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
+                  }}
+                >
+                  <span>Read the full letter</span>
+                  <svg
+                    className="h-4 w-4 animate-bounce"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
