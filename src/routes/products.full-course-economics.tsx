@@ -765,9 +765,13 @@ function CaseCard({
         )}
       </div>
 
-      <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
-        {data.context}
-      </p>
+      {data.context.startsWith("[[TABLE]]") ? (
+        <BalanceSheetTable raw={data.context} />
+      ) : (
+        <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+          {data.context}
+        </p>
+      )}
 
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
@@ -1141,4 +1145,107 @@ function TextbookCanvasBody({
     </p>
   );
 }
+
+function BalanceSheetTable({ raw }: { raw: string }) {
+  const body = raw.replace(/^\[\[TABLE\]\]\s*/, "");
+  const bsIdx = body.indexOf("||BS||");
+  const isIdx = body.indexOf("||IS||");
+  const intro = (bsIdx >= 0 ? body.slice(0, bsIdx) : body).trim();
+  const bsRaw = bsIdx >= 0 ? body.slice(bsIdx + 6, isIdx >= 0 ? isIdx : undefined).trim() : "";
+  const isRaw = isIdx >= 0 ? body.slice(isIdx + 6).trim() : "";
+
+  const bsRows = bsRaw
+    .split("\n")
+    .filter(Boolean)
+    .map((line) => line.split("|"));
+  const isRows = isRaw
+    .split("\n")
+    .filter(Boolean)
+    .map((line) => line.split("|"));
+
+  const isTotal = (label: string) =>
+    /^total\b/i.test(label.trim()) || /^ebit\b/i.test(label.trim());
+
+  return (
+    <div className="mt-4 space-y-4">
+      {intro && (
+        <p className="text-sm leading-relaxed text-muted-foreground">{intro}</p>
+      )}
+
+      {bsRows.length > 0 && (
+        <div className="overflow-hidden rounded-xl border-2 border-orange-500/60 bg-gradient-to-br from-orange-50 to-amber-50 shadow-[0_0_0_1px_rgba(249,115,22,0.15)] dark:from-orange-950/30 dark:to-amber-950/20">
+          <div className="flex items-center justify-between border-b-2 border-orange-500/60 bg-orange-500/10 px-4 py-2">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-orange-700 dark:text-orange-300">
+              Balance sheet (€ thousands)
+            </span>
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-orange-600/70 dark:text-orange-400/70">
+              Assets · Equity & Liabilities
+            </span>
+          </div>
+          <table className="w-full border-collapse text-sm">
+            <tbody>
+              {bsRows.map((cols, i) => {
+                const [aLabel = "", aVal = "", eLabel = "", eVal = ""] = cols;
+                const total = isTotal(aLabel) || isTotal(eLabel);
+                return (
+                  <tr
+                    key={i}
+                    className={cn(
+                      "border-b border-orange-500/20 last:border-b-0",
+                      total && "bg-orange-500/15 font-bold text-orange-900 dark:text-orange-100",
+                    )}
+                  >
+                    <td className="px-3 py-1.5 text-foreground">{aLabel}</td>
+                    <td className="w-20 px-3 py-1.5 text-right font-mono tabular-nums text-foreground">
+                      {aVal}
+                    </td>
+                    <td className="border-l border-orange-500/30 px-3 py-1.5 text-foreground">
+                      {eLabel}
+                    </td>
+                    <td className="w-20 px-3 py-1.5 text-right font-mono tabular-nums text-foreground">
+                      {eVal}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {isRows.length > 0 && (
+        <div className="overflow-hidden rounded-xl border-2 border-orange-500/60 bg-gradient-to-br from-orange-50 to-amber-50 shadow-[0_0_0_1px_rgba(249,115,22,0.15)] dark:from-orange-950/30 dark:to-amber-950/20">
+          <div className="border-b-2 border-orange-500/60 bg-orange-500/10 px-4 py-2">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-orange-700 dark:text-orange-300">
+              Income statement (€ thousands)
+            </span>
+          </div>
+          <table className="w-full border-collapse text-sm">
+            <tbody>
+              {isRows.map((cols, i) => {
+                const [label = "", val = ""] = cols;
+                const total = isTotal(label);
+                return (
+                  <tr
+                    key={i}
+                    className={cn(
+                      "border-b border-orange-500/20 last:border-b-0",
+                      total && "bg-orange-500/15 font-bold text-orange-900 dark:text-orange-100",
+                    )}
+                  >
+                    <td className="px-3 py-1.5 text-foreground">{label}</td>
+                    <td className="w-24 px-3 py-1.5 text-right font-mono tabular-nums text-foreground">
+                      {val}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+
 
