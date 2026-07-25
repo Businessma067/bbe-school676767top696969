@@ -765,9 +765,13 @@ function CaseCard({
         )}
       </div>
 
-      <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
-        {data.context}
-      </p>
+      {data.context.startsWith("[[TABLE]]") ? (
+        <BalanceSheetTable raw={data.context} />
+      ) : (
+        <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+          {data.context}
+        </p>
+      )}
 
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
