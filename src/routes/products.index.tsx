@@ -3,8 +3,6 @@ import { CompareTable } from "@/components/CompareTable";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
-import simulatorAsset from "@/assets/speed-focus-simulator.png.asset.json";
-import ultimateBbeCourseAsset from "@/assets/ultimate-bbe-course.png.asset.json";
 
 
 
