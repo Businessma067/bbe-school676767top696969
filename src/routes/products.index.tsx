@@ -50,6 +50,7 @@ const products: Product[] = [
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Unlock full access",
     to: "/products/full-course",
+    badge: "#BEST DEAL",
   },
   {
     title: "Lite BBE Course",
