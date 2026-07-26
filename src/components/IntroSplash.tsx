@@ -10,8 +10,8 @@ export function IntroSplash() {
     if (sessionStorage.getItem("bbe_intro_played")) return;
     sessionStorage.setItem("bbe_intro_played", "1");
     setMounted(true);
-    const t1 = setTimeout(() => setFadeOut(true), 2600);
-    const t2 = setTimeout(() => setHidden(true), 3200);
+    const t1 = setTimeout(() => setFadeOut(true), 3800);
+    const t2 = setTimeout(() => setHidden(true), 5200);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
@@ -22,13 +22,13 @@ export function IntroSplash() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-500 ${
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
       aria-hidden="true"
     >
-      <div className="flex items-center gap-4 px-6">
-        {/* Logo — sweeps in from left with gradient shine */}
+      <div className="flex items-center gap-5 px-6">
+        {/* Logo — soft gradient reveal from left */}
         <div className="intro-logo relative grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary shadow-xl ring-1 ring-primary/30">
           <span className="font-display text-lg font-bold leading-none text-primary-foreground tracking-tight">
             BBE
@@ -36,10 +36,10 @@ export function IntroSplash() {
           <span className="intro-shine absolute inset-0" />
         </div>
 
-        {/* Text — unfolds from left */}
+        {/* Text — unfolds gently from the logo */}
         <div className="intro-text-wrap overflow-hidden">
           <div className="flex flex-col leading-tight whitespace-nowrap">
-            <span className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+            <span className="intro-brand font-display text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
               BBE-School
             </span>
             <span className="intro-slogan mt-1 text-[11px] sm:text-xs font-medium uppercase tracking-[0.28em] text-taupe">
@@ -51,36 +51,87 @@ export function IntroSplash() {
 
       <style>{`
         @keyframes intro-logo-in {
-          0% { opacity: 0; transform: translateX(-40px) scale(0.85); filter: blur(6px); }
-          60% { opacity: 1; filter: blur(0); }
-          100% { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+          0% {
+            opacity: 0;
+            transform: translateX(-28px) scale(0.92);
+            filter: blur(4px);
+          }
+          40% {
+            opacity: 0.85;
+            filter: blur(1px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            filter: blur(0);
+          }
         }
         @keyframes intro-shine {
-          0% { transform: translateX(-120%); opacity: 0; }
-          40% { opacity: 0.9; }
-          100% { transform: translateX(120%); opacity: 0; }
+          0% {
+            transform: translateX(-130%);
+            opacity: 0;
+          }
+          25% {
+            opacity: 0.6;
+          }
+          75% {
+            opacity: 0.6;
+          }
+          100% {
+            transform: translateX(130%);
+            opacity: 0;
+          }
         }
         @keyframes intro-unfold {
-          0% { max-width: 0; opacity: 0; }
-          100% { max-width: 600px; opacity: 1; }
+          0% {
+            max-width: 0;
+            opacity: 0;
+            transform: translateX(-10px);
+          }
+          100% {
+            max-width: 600px;
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes intro-brand-in {
+          0% {
+            opacity: 0;
+            transform: translateY(4px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         @keyframes intro-slogan-in {
-          0% { opacity: 0; transform: translateY(6px); letter-spacing: 0.5em; }
-          100% { opacity: 1; transform: translateY(0); letter-spacing: 0.28em; }
+          0% {
+            opacity: 0;
+            transform: translateY(8px);
+            letter-spacing: 0.42em;
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+            letter-spacing: 0.28em;
+          }
         }
         .intro-logo {
-          animation: intro-logo-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+          animation: intro-logo-in 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
         .intro-shine {
-          background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.7) 50%, transparent 70%);
-          animation: intro-shine 1.2s ease-out 0.5s both;
+          background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.55) 50%, transparent 75%);
+          animation: intro-shine 2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
         }
         .intro-text-wrap {
-          animation: intro-unfold 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both;
+          animation: intro-unfold 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+        }
+        .intro-brand {
+          animation: intro-brand-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.6s both;
         }
         .intro-slogan {
           display: inline-block;
-          animation: intro-slogan-in 0.8s ease-out 1.4s both;
+          animation: intro-slogan-in 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.9s both;
         }
       `}</style>
     </div>
