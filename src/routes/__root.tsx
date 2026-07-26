@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { FloatingAssistant } from "../components/FloatingAssistant";
+import { IntroSplash } from "../components/IntroSplash";
 
 function NotFoundComponent() {
   return (
