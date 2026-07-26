@@ -3,8 +3,6 @@ import { CompareTable } from "@/components/CompareTable";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
-import simulatorAsset from "@/assets/speed-focus-simulator.png.asset.json";
-import ultimateBbeCourseAsset from "@/assets/ultimate-bbe-course.png.asset.json";
 
 
 
@@ -50,6 +48,7 @@ const products: Product[] = [
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Unlock full access",
     to: "/products/full-course",
+    badge: "#BEST DEAL",
   },
   {
     title: "Lite BBE Course",
@@ -58,22 +57,6 @@ const products: Product[] = [
       "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
     cta: "Unlock lite access",
     to: "/products/lite-bbe-course",
-  },
-  {
-    title: "Speed & Focus Simulator",
-    image: simulatorAsset.url,
-    description:
-      "Countdown modules, rapid True/False drills, and memory training built for one job: raising your exam speed and keeping your focus under real pressure.",
-    cta: "Try now",
-    disabled: true,
-  },
-  {
-    title: "Ultimate BBE course",
-    image: ultimateBbeCourseAsset.url,
-    description:
-      "The full bundle: the Full Practice Course plus the Speed & Focus Simulator, with every exclusive feature on the platform unlocked. The best value if you want everything.",
-    cta: "Unlock ultimate access",
-    disabled: true,
   },
 ];
 
@@ -122,7 +105,7 @@ function ProductsPage() {
             {products.map((p) => (
               <div
                 key={p.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg last:lg:col-start-2"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}>
                   {p.badge && (
