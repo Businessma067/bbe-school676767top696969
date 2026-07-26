@@ -59,22 +59,6 @@ const products: Product[] = [
     cta: "Unlock lite access",
     to: "/products/lite-bbe-course",
   },
-  {
-    title: "Speed & Focus Simulator",
-    image: simulatorAsset.url,
-    description:
-      "Countdown modules, rapid True/False drills, and memory training built for one job: raising your exam speed and keeping your focus under real pressure.",
-    cta: "Try now",
-    disabled: true,
-  },
-  {
-    title: "Ultimate BBE course",
-    image: ultimateBbeCourseAsset.url,
-    description:
-      "The full bundle: the Full Practice Course plus the Speed & Focus Simulator, with every exclusive feature on the platform unlocked. The best value if you want everything.",
-    cta: "Unlock ultimate access",
-    disabled: true,
-  },
 ];
 
 
