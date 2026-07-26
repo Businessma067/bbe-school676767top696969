@@ -28,7 +28,7 @@ export function IntroSplash() {
       aria-hidden="true"
     >
       <div className="flex items-center gap-5 px-6">
-        {/* Logo — soft gradient reveal from left */}
+        {/* Logo — soft gradient reveal from center, then pushed right by text */}
         <div className="intro-logo relative grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary shadow-xl ring-1 ring-primary/30">
           <span className="font-display text-lg font-bold leading-none text-primary-foreground tracking-tight">
             BBE
