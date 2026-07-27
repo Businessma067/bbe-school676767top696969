@@ -15,6 +15,7 @@ import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as ParentsRouteImport } from './routes/parents'
+import { Route as MockExamsRouteImport } from './routes/mock-exams'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
@@ -25,6 +26,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
+import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as ProductsLiteBbeCourseRouteImport } from './routes/products.lite-bbe-course'
 import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
@@ -35,6 +37,8 @@ import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
+import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -64,6 +68,11 @@ const PracticeRoute = PracticeRouteImport.update({
 const ParentsRoute = ParentsRouteImport.update({
   id: '/parents',
   path: '/parents',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MockExamsRoute = MockExamsRouteImport.update({
+  id: '/mock-exams',
+  path: '/mock-exams',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -115,6 +124,11 @@ const ProductsIndexRoute = ProductsIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => ProductsRoute,
+} as any)
+const MockExamsIndexRoute = MockExamsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => MockExamsRoute,
 } as any)
 const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   id: '/',
@@ -168,6 +182,16 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   path: '/economics',
   getParentRoute: () => AdminRoute,
 } as any)
+const MockExamsExamIdTakeRoute = MockExamsExamIdTakeRouteImport.update({
+  id: '/$examId/take',
+  path: '/$examId/take',
+  getParentRoute: () => MockExamsRoute,
+} as any)
+const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
+  id: '/$examId/review',
+  path: '/$examId/review',
+  getParentRoute: () => MockExamsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -179,6 +203,7 @@ export interface FileRoutesByFullPath {
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
+  '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
@@ -195,7 +220,10 @@ export interface FileRoutesByFullPath {
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
+  '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
+  '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -221,7 +249,10 @@ export interface FileRoutesByTo {
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
+  '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
+  '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -234,6 +265,7 @@ export interface FileRoutesById {
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
+  '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
@@ -250,7 +282,10 @@ export interface FileRoutesById {
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
+  '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
+  '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -264,6 +299,7 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/important-features'
     | '/login'
+    | '/mock-exams'
     | '/parents'
     | '/practice'
     | '/products'
@@ -280,7 +316,10 @@ export interface FileRouteTypes {
     | '/products/full-course-subjects'
     | '/products/lite-bbe-course'
     | '/demo-practice/'
+    | '/mock-exams/'
     | '/products/'
+    | '/mock-exams/$examId/review'
+    | '/mock-exams/$examId/take'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -306,7 +345,10 @@ export interface FileRouteTypes {
     | '/products/full-course-subjects'
     | '/products/lite-bbe-course'
     | '/demo-practice'
+    | '/mock-exams'
     | '/products'
+    | '/mock-exams/$examId/review'
+    | '/mock-exams/$examId/take'
   id:
     | '__root__'
     | '/'
@@ -318,6 +360,7 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/important-features'
     | '/login'
+    | '/mock-exams'
     | '/parents'
     | '/practice'
     | '/products'
@@ -334,7 +377,10 @@ export interface FileRouteTypes {
     | '/products/full-course-subjects'
     | '/products/lite-bbe-course'
     | '/demo-practice/'
+    | '/mock-exams/'
     | '/products/'
+    | '/mock-exams/$examId/review'
+    | '/mock-exams/$examId/take'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -347,6 +393,7 @@ export interface RootRouteChildren {
   ForgotPasswordRoute: typeof ForgotPasswordRoute
   ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
+  MockExamsRoute: typeof MockExamsRouteWithChildren
   ParentsRoute: typeof ParentsRoute
   PracticeRoute: typeof PracticeRoute
   ProductsRoute: typeof ProductsRouteWithChildren
@@ -398,6 +445,13 @@ declare module '@tanstack/react-router' {
       path: '/parents'
       fullPath: '/parents'
       preLoaderRoute: typeof ParentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mock-exams': {
+      id: '/mock-exams'
+      path: '/mock-exams'
+      fullPath: '/mock-exams'
+      preLoaderRoute: typeof MockExamsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login': {
@@ -470,6 +524,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsIndexRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/mock-exams/': {
+      id: '/mock-exams/'
+      path: '/'
+      fullPath: '/mock-exams/'
+      preLoaderRoute: typeof MockExamsIndexRouteImport
+      parentRoute: typeof MockExamsRoute
+    }
     '/demo-practice/': {
       id: '/demo-practice/'
       path: '/'
@@ -540,6 +601,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminEconomicsRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/mock-exams/$examId/take': {
+      id: '/mock-exams/$examId/take'
+      path: '/$examId/take'
+      fullPath: '/mock-exams/$examId/take'
+      preLoaderRoute: typeof MockExamsExamIdTakeRouteImport
+      parentRoute: typeof MockExamsRoute
+    }
+    '/mock-exams/$examId/review': {
+      id: '/mock-exams/$examId/review'
+      path: '/$examId/review'
+      fullPath: '/mock-exams/$examId/review'
+      preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
+      parentRoute: typeof MockExamsRoute
+    }
   }
 }
 
@@ -567,6 +642,22 @@ const DemoPracticeRouteChildren: DemoPracticeRouteChildren = {
 
 const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
   DemoPracticeRouteChildren,
+)
+
+interface MockExamsRouteChildren {
+  MockExamsIndexRoute: typeof MockExamsIndexRoute
+  MockExamsExamIdReviewRoute: typeof MockExamsExamIdReviewRoute
+  MockExamsExamIdTakeRoute: typeof MockExamsExamIdTakeRoute
+}
+
+const MockExamsRouteChildren: MockExamsRouteChildren = {
+  MockExamsIndexRoute: MockExamsIndexRoute,
+  MockExamsExamIdReviewRoute: MockExamsExamIdReviewRoute,
+  MockExamsExamIdTakeRoute: MockExamsExamIdTakeRoute,
+}
+
+const MockExamsRouteWithChildren = MockExamsRoute._addFileChildren(
+  MockExamsRouteChildren,
 )
 
 interface ProductsRouteChildren {
@@ -601,6 +692,7 @@ const rootRouteChildren: RootRouteChildren = {
   ForgotPasswordRoute: ForgotPasswordRoute,
   ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,
+  MockExamsRoute: MockExamsRouteWithChildren,
   ParentsRoute: ParentsRoute,
   PracticeRoute: PracticeRoute,
   ProductsRoute: ProductsRouteWithChildren,
