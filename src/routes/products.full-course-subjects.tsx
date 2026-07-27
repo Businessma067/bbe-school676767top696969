@@ -138,6 +138,34 @@ function FullCourseSubjects() {
               </div>
             ))}
           </div>
+
+          <div className="mt-6">
+            <Link
+              to="/mock-exams"
+              className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
+              style={{ borderTop: "4px solid #C2703A" }}
+            >
+              <div>
+                <span className="mb-2 inline-block rounded-full bg-[#C2703A] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
+                  Full simulation
+                </span>
+                <h2 className="font-display text-xl font-semibold text-foreground">
+                  Mock Exams
+                </h2>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                  Full-length exam simulations: 34 tasks, 2 hours, 160 points,
+                  scored with the official wi2 method.
+                </p>
+              </div>
+              <span
+                className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
+                style={{ backgroundColor: "#C2703A", boxShadow: "0 4px 14px -4px #C2703A80" }}
+              >
+                Go to mock exams →
+              </span>
+            </Link>
+          </div>
+
         </div>
       </main>
     </div>
