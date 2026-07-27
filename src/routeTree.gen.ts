@@ -38,6 +38,7 @@ import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practic
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
+import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -186,6 +187,11 @@ const MockExamsExamIdTakeRoute = MockExamsExamIdTakeRouteImport.update({
   path: '/$examId/take',
   getParentRoute: () => MockExamsRoute,
 } as any)
+const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
+  id: '/$examId/review',
+  path: '/$examId/review',
+  getParentRoute: () => MockExamsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -216,6 +222,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRoutesByTo {
@@ -244,6 +251,7 @@ export interface FileRoutesByTo {
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRoutesById {
@@ -276,6 +284,7 @@ export interface FileRoutesById {
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
 export interface FileRouteTypes {
@@ -309,6 +318,7 @@ export interface FileRouteTypes {
     | '/demo-practice/'
     | '/mock-exams/'
     | '/products/'
+    | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -337,6 +347,7 @@ export interface FileRouteTypes {
     | '/demo-practice'
     | '/mock-exams'
     | '/products'
+    | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   id:
     | '__root__'
@@ -368,6 +379,7 @@ export interface FileRouteTypes {
     | '/demo-practice/'
     | '/mock-exams/'
     | '/products/'
+    | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesById: FileRoutesById
 }
@@ -596,6 +608,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsExamIdTakeRouteImport
       parentRoute: typeof MockExamsRoute
     }
+    '/mock-exams/$examId/review': {
+      id: '/mock-exams/$examId/review'
+      path: '/$examId/review'
+      fullPath: '/mock-exams/$examId/review'
+      preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
+      parentRoute: typeof MockExamsRoute
+    }
   }
 }
 
@@ -627,11 +646,13 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
 
 interface MockExamsRouteChildren {
   MockExamsIndexRoute: typeof MockExamsIndexRoute
+  MockExamsExamIdReviewRoute: typeof MockExamsExamIdReviewRoute
   MockExamsExamIdTakeRoute: typeof MockExamsExamIdTakeRoute
 }
 
 const MockExamsRouteChildren: MockExamsRouteChildren = {
   MockExamsIndexRoute: MockExamsIndexRoute,
+  MockExamsExamIdReviewRoute: MockExamsExamIdReviewRoute,
   MockExamsExamIdTakeRoute: MockExamsExamIdTakeRoute,
 }
 
