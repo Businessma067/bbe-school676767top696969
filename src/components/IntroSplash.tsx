@@ -1,28 +1,31 @@
 import { useEffect, useState } from "react";
 
 export function IntroSplash() {
-  const [mounted, setMounted] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
+  const [skip, setSkip] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (sessionStorage.getItem("bbe_intro_played")) return;
+    if (sessionStorage.getItem("bbe_intro_played")) {
+      setSkip(true);
+      setHidden(true);
+      return;
+    }
     sessionStorage.setItem("bbe_intro_played", "1");
-    setMounted(true);
-    const t1 = setTimeout(() => setFadeOut(true), 1300);
-    const t2 = setTimeout(() => setHidden(true), 1900);
+    const t1 = setTimeout(() => setFadeOut(true), 1000);
+    const t2 = setTimeout(() => setHidden(true), 1450);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
     };
   }, []);
 
-  if (!mounted || hidden) return null;
+  if (skip || hidden) return null;
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-700 ease-out ${
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-500 ease-out ${
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
       aria-hidden="true"
@@ -48,8 +51,8 @@ export function IntroSplash() {
         @keyframes intro-brightness-in {
           0% {
             opacity: 0;
-            transform: scale(0.95);
-            filter: brightness(0.4);
+            transform: scale(0.96);
+            filter: brightness(0.5);
           }
           100% {
             opacity: 1;
@@ -58,7 +61,7 @@ export function IntroSplash() {
           }
         }
         .intro-content {
-          animation: intro-brightness-in 1.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+          animation: intro-brightness-in 1s cubic-bezier(0.4, 0, 0.2, 1) both;
         }
       `}</style>
     </div>
