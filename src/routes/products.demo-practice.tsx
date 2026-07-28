@@ -1,3 +1,4 @@
+import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
@@ -202,13 +203,14 @@ function DemoPracticeProduct() {
           </div>
 
           {/* CTA */}
-          <Link
+          <EnrollButton
+            slug="demo-practice"
             to="/demo-practice"
             className="mt-6 flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
             style={{ backgroundColor: ORANGE, boxShadow: `0 8px 24px -8px ${ORANGE}80` }}
           >
             Start Practicing →
-          </Link>
+          </EnrollButton>
 
           <p className="mt-3 text-center text-xs text-muted-foreground">
             ✓ 100% Free • Instant web access
