@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -9,11 +9,17 @@ import {
 } from "@/components/ui/dialog";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import {
-  COMPLETED_EXAMS,
+  MOCK_EXAMS,
   getExamsForTier,
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exams";
+import {
+  fetchEnrollments,
+  fetchMockAttempts,
+  highestTier,
+  type MockAttempt,
+} from "@/lib/user-progress";
 import { Clock, FileText, PlayCircle, Timer, Trophy } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/")({
@@ -36,13 +42,37 @@ export const Route = createFileRoute("/mock-exams/")({
   component: MockExamsPage,
 });
 
-// TODO: read from auth/product context once entitlements are wired in.
-const CURRENT_TIER: ProductTier = "full";
-
 function MockExamsPage() {
   const navigate = useNavigate();
   const [selected, setSelected] = useState<MockExamSummary | null>(null);
-  const exams = getExamsForTier(CURRENT_TIER);
+  const [tier, setTier] = useState<ProductTier | null>(null);
+  const [attempts, setAttempts] = useState<MockAttempt[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const [enrollments, history] = await Promise.all([
+        fetchEnrollments(),
+        fetchMockAttempts(),
+      ]);
+      if (cancelled) return;
+      const owned = highestTier(enrollments);
+      setTier(owned === "full" ? "full" : "lite");
+      setAttempts(history);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const exams = getExamsForTier(tier ?? "lite");
+  const completed = attempts ?? [];
+  const bestByExam = new Map<string, MockAttempt>();
+  for (const a of completed) {
+    const prev = bestByExam.get(a.exam_id);
+    if (!prev || a.points_earned > prev.points_earned) bestByExam.set(a.exam_id, a);
+  }
+  const lockedExams = MOCK_EXAMS.filter((e) => !exams.some((x) => x.id === e.id));
 
   const start = (timed: boolean) => {
     if (!selected) return;
@@ -91,24 +121,41 @@ function MockExamsPage() {
                 <p className="flex-1 text-sm text-muted-foreground">
                   {exam.questionCount} questions · {exam.durationMinutes / 60} hours
                 </p>
+                {bestByExam.has(exam.id) && (
+                  <p className="mt-2 text-xs font-semibold text-caramel-deep">
+                    Completed · best {bestByExam.get(exam.id)!.points_earned.toFixed(1)}/
+                    {bestByExam.get(exam.id)!.points_total}
+                  </p>
+                )}
                 <button
                   type="button"
                   onClick={() => setSelected(exam)}
                   className="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
                 >
                   <PlayCircle className="h-4 w-4" />
-                  Start Exam
+                  {bestByExam.has(exam.id) ? "Retake Exam" : "Start Exam"}
                 </button>
               </div>
             ))}
           </div>
+          {lockedExams.length > 0 && (
+            <div className="mt-4 rounded-2xl border border-dashed border-border bg-card/50 p-5 text-sm text-muted-foreground">
+              {lockedExams.length} more mock exam{lockedExams.length > 1 ? "s" : ""} are
+              included in the Full BBE Course.{" "}
+              <Link to="/products/full-course" className="font-semibold text-caramel-deep">
+                See Full Course →
+              </Link>
+            </div>
+          )}
         </section>
 
         <section>
           <h2 className="mb-5 font-display text-xl font-semibold">
             Completed Exams
           </h2>
-          {COMPLETED_EXAMS.length === 0 ? (
+          {attempts === null ? (
+            <p className="text-sm text-muted-foreground">Loading your results…</p>
+          ) : completed.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
               <Trophy className="mx-auto mb-3 h-6 w-6 text-taupe" />
               <p className="text-sm text-muted-foreground">
@@ -118,8 +165,8 @@ function MockExamsPage() {
             </div>
           ) : (
             <div className="space-y-3">
-              {COMPLETED_EXAMS.map((c) => {
-                const pct = Math.round((c.pointsEarned / c.pointsTotal) * 100);
+              {completed.map((c) => {
+                const pct = Math.round((c.points_earned / c.points_total) * 100);
                 return (
                   <div
                     key={c.id}
@@ -127,11 +174,11 @@ function MockExamsPage() {
                   >
                     <div>
                       <h3 className="font-display text-base font-semibold">
-                        {c.title}
+                        {c.exam_title}
                       </h3>
                       <p className="mt-1 flex items-center gap-2 text-xs text-taupe">
                         <Clock className="h-3.5 w-3.5" />
-                        {new Date(c.completedAt).toLocaleDateString(undefined, {
+                        {new Date(c.completed_at).toLocaleDateString(undefined, {
                           day: "numeric",
                           month: "short",
                           year: "numeric",
@@ -141,13 +188,13 @@ function MockExamsPage() {
                     <div className="flex items-center gap-5">
                       <div className="text-right">
                         <div className="font-display text-lg font-bold text-caramel-deep">
-                          {c.pointsEarned.toFixed(1)}/{c.pointsTotal}
+                          {c.points_earned.toFixed(1)}/{c.points_total}
                         </div>
                         <div className="text-xs text-taupe">{pct}%</div>
                       </div>
                       <Link
                         to="/mock-exams/$examId/review"
-                        params={{ examId: c.examId }}
+                        params={{ examId: c.exam_id }}
                         className="rounded-md border border-border bg-secondary px-4 py-2 text-sm font-semibold transition-all hover:bg-secondary/70"
                       >
                         Review Exam
