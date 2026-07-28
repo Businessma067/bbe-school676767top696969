@@ -1,3 +1,4 @@
+import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   BookOpen,
@@ -255,13 +256,14 @@ function LiteBbeCourseProduct() {
                   <span className="font-display text-4xl font-bold text-foreground">€279</span>
                 </div>
               </div>
-              <Link
-                to="/products"
+              <EnrollButton
+                slug="lite-bbe-course"
+                to="/mock-exams"
                 className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
                 style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
               >
                 Get Light Access →
-              </Link>
+              </EnrollButton>
             </div>
             <p className="mt-3 text-center text-xs text-muted-foreground sm:text-left">
               A focused starting point — see terms for access details.

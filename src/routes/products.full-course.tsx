@@ -1,3 +1,4 @@
+import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   BookOpen,
@@ -201,13 +202,14 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
 
 function CtaButton({ label = "Unlock Full Access" }: { label?: string }) {
   return (
-    <Link
+    <EnrollButton
+      slug="full-course"
       to="/products/full-course-subjects"
       className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
       style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
     >
       {label} →
-    </Link>
+    </EnrollButton>
   );
 }
 
