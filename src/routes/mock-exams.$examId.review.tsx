@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { buildExamQuestions, getExamById, SECTION_TOTALS } from "@/lib/mock-exams";
 import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
 import { answersStorageKey } from "./mock-exams.$examId.take";
+import { recordMockAttempt } from "@/lib/user-progress";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
@@ -71,6 +72,33 @@ function ReviewExamPage() {
   }, [marked, taskScores]);
 
   const pct = Math.round((total / SCORING_CONFIG.examTotalPoints) * 100);
+
+  // Persist the attempt to the user's account once per finished exam.
+  const saved = useRef(false);
+  useEffect(() => {
+    if (saved.current || !attempt) return;
+    saved.current = true;
+    const flag = `bbe-mock-saved:${examId}:${attempt.secondsTaken ?? "x"}`;
+    try {
+      if (sessionStorage.getItem(flag)) return;
+      sessionStorage.setItem(flag, "1");
+    } catch {
+      /* ignore */
+    }
+    void recordMockAttempt({
+      examId,
+      examTitle: exam?.title ?? examId,
+      pointsEarned: Number(total.toFixed(2)),
+      pointsTotal: SCORING_CONFIG.examTotalPoints,
+      perSubject: {
+        economics: Number(perSubject.economics.toFixed(2)),
+        math: Number(perSubject.math.toFixed(2)),
+        english: Number(perSubject.english.toFixed(2)),
+      },
+      secondsTaken: attempt.secondsTaken ?? null,
+      timed: attempt.timed,
+    });
+  }, [attempt, exam, examId, perSubject, total]);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
