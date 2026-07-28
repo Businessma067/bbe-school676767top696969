@@ -3,7 +3,30 @@ import { useEffect, useMemo, useState } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
-import { BookOpen, ClipboardCheck, Flame, Clock, AlertTriangle, TrendingUp, Trophy, Sparkles } from "lucide-react";
+import {
+  COURSE_CATALOG,
+  computeStreak,
+  fetchEnrollments,
+  fetchMockAttempts,
+  fetchTaskAttempts,
+  summarizeTaskAttempts,
+  type CourseSlug,
+  type Enrollment,
+  type MockAttempt,
+  type SubjectStats,
+  type TaskAttempt,
+} from "@/lib/user-progress";
+import {
+  BookOpen,
+  ClipboardCheck,
+  Flame,
+  Target,
+  TrendingUp,
+  Trophy,
+  Sparkles,
+  AlertTriangle,
+  GraduationCap,
+} from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
   component: DashboardPage,
@@ -18,95 +41,25 @@ export const Route = createFileRoute("/dashboard")({
 
 type TabId = "courses" | "mocks";
 
-type Chapter = {
-  id: string;
-  name: string;
-  done: number;
-  total: number;
-  accuracy: number; // 0-100, null-ish if not started
-  started: boolean;
+const SUBJECT_COLORS: Record<string, string> = {
+  economics: "#c8763a",
+  math: "#10b981",
+  english: "#0ea5e9",
 };
 
-type Subject = {
-  key: "economics" | "math" | "english";
-  name: string;
-  color: string; // tailwind ring/bar color
-  attempted: number;
-  passed: number;
-  accuracy: number;
-  chapters: Chapter[];
+const SUBJECT_LABEL: Record<string, string> = {
+  economics: "Economics",
+  math: "Math",
+  english: "English",
 };
-
-type Mock = {
-  id: string;
-  date: string; // ISO
-  score: number; // %
-  timeTakenMin: number;
-  timeAllottedMin: number;
-  perSubject: { economics: number; math: number; english: number };
-};
-
-const SUBJECTS: Subject[] = [
-  {
-    key: "economics",
-    name: "Economics",
-    color: "bg-caramel-deep",
-    attempted: 142,
-    passed: 108,
-    accuracy: 76,
-    chapters: [
-      { id: "e1", name: "Ch 1 · Foundations of Economics", done: 12, total: 12, accuracy: 88, started: true },
-      { id: "e2", name: "Ch 2 · Demand & Supply", done: 10, total: 12, accuracy: 82, started: true },
-      { id: "e3", name: "Ch 3 · Elasticity", done: 6, total: 10, accuracy: 54, started: true },
-      { id: "e4", name: "Ch 4 · Marketing", done: 4, total: 12, accuracy: 71, started: true },
-      { id: "e5", name: "Ch 5 · Forms of Business Ownership", done: 2, total: 12, accuracy: 48, started: true },
-      { id: "e6", name: "Ch 6 · Accounting", done: 0, total: 14, accuracy: 0, started: false },
-    ],
-  },
-  {
-    key: "math",
-    name: "Math",
-    color: "bg-emerald-500",
-    attempted: 96,
-    passed: 71,
-    accuracy: 74,
-    chapters: [
-      { id: "m1", name: "Ch 1 · Algebra Essentials", done: 14, total: 14, accuracy: 91, started: true },
-      { id: "m2", name: "Ch 2 · Functions & Graphs", done: 9, total: 12, accuracy: 77, started: true },
-      { id: "m3", name: "Ch 3 · Derivatives", done: 5, total: 12, accuracy: 58, started: true },
-      { id: "m4", name: "Ch 4 · Optimization", done: 0, total: 10, accuracy: 0, started: false },
-      { id: "m5", name: "Ch 5 · Probability", done: 0, total: 10, accuracy: 0, started: false },
-    ],
-  },
-  {
-    key: "english",
-    name: "English",
-    color: "bg-sky-500",
-    attempted: 64,
-    passed: 52,
-    accuracy: 81,
-    chapters: [
-      { id: "en1", name: "Ch 1 · Reading Comprehension", done: 8, total: 10, accuracy: 84, started: true },
-      { id: "en2", name: "Ch 2 · Grammar in Context", done: 7, total: 10, accuracy: 79, started: true },
-      { id: "en3", name: "Ch 3 · Vocabulary in Use", done: 3, total: 10, accuracy: 62, started: true },
-      { id: "en4", name: "Ch 4 · Business Writing", done: 0, total: 8, accuracy: 0, started: false },
-    ],
-  },
-];
-
-const MOCKS: Mock[] = [
-  { id: "m6", date: "2026-07-14", score: 84, timeTakenMin: 108, timeAllottedMin: 120, perSubject: { economics: 82, math: 80, english: 90 } },
-  { id: "m5", date: "2026-07-02", score: 78, timeTakenMin: 116, timeAllottedMin: 120, perSubject: { economics: 74, math: 78, english: 84 } },
-  { id: "m4", date: "2026-06-20", score: 71, timeTakenMin: 119, timeAllottedMin: 120, perSubject: { economics: 68, math: 70, english: 76 } },
-  { id: "m3", date: "2026-06-05", score: 66, timeTakenMin: 120, timeAllottedMin: 120, perSubject: { economics: 60, math: 66, english: 74 } },
-  { id: "m2", date: "2026-05-22", score: 59, timeTakenMin: 118, timeAllottedMin: 120, perSubject: { economics: 55, math: 58, english: 66 } },
-  { id: "m1", date: "2026-05-08", score: 52, timeTakenMin: 120, timeAllottedMin: 120, perSubject: { economics: 48, math: 52, english: 58 } },
-];
 
 function DashboardPage() {
   const navigate = useNavigate();
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
   const [tab, setTab] = useState<TabId>("courses");
+  const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
+  const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
+  const [mocks, setMocks] = useState<MockAttempt[] | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -118,19 +71,31 @@ function DashboardPage() {
         return;
       }
       setAuth(next);
+      const [e, t, m] = await Promise.all([
+        fetchEnrollments(),
+        fetchTaskAttempts(),
+        fetchMockAttempts(),
+      ]);
+      if (cancelled) return;
+      setEnrollments(e);
+      setTasks(t);
+      setMocks(m);
     })();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [navigate]);
 
   if (auth === undefined || auth === null) {
     return (
       <Shell>
-        <p className="text-sm text-muted-foreground">Loading…</p>
+        <p className="px-6 py-10 text-sm text-muted-foreground">Loading…</p>
       </Shell>
     );
   }
 
   const initial = auth.name.charAt(0).toUpperCase();
+  const loading = enrollments === null || tasks === null || mocks === null;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -140,7 +105,6 @@ function DashboardPage() {
   return (
     <Shell>
       <div className="flex min-h-[calc(100vh-57px)]">
-        {/* Sidebar */}
         <aside className="hidden w-56 shrink-0 border-r border-border/60 bg-card/40 py-6 sm:block">
           <nav className="flex flex-col gap-1 px-3">
             <SideItem
@@ -158,9 +122,7 @@ function DashboardPage() {
           </nav>
         </aside>
 
-        {/* Main */}
         <main className="min-w-0 flex-1 px-6 py-8 lg:px-10">
-          {/* Persistent header */}
           <div className="flex items-center gap-4">
             <div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-lg font-bold text-primary-foreground shadow-sm">
               {initial}
@@ -185,28 +147,35 @@ function DashboardPage() {
               Log out
             </button>
           </div>
-          <Link
-            to="/account"
-            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
-          >
-            ⚙ Account settings
-          </Link>
-          <button
-            type="button"
-            onClick={handleLogout}
-            className="mt-4 inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:hidden"
-          >
-            Log out
-          </button>
+          <div className="mt-4 flex gap-2 sm:hidden">
+            <Link
+              to="/account"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+            >
+              ⚙ Account settings
+            </Link>
+            <button
+              type="button"
+              onClick={handleLogout}
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+            >
+              Log out
+            </button>
+          </div>
 
-          {/* Mobile tab switcher */}
           <div className="mt-6 flex gap-2 sm:hidden">
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>Courses</MobileTab>
             <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mocks</MobileTab>
           </div>
 
           <div className="mt-8">
-            {tab === "courses" ? <CoursesTab /> : <MocksTab />}
+            {loading ? (
+              <p className="text-sm text-muted-foreground">Loading your progress…</p>
+            ) : tab === "courses" ? (
+              <CoursesTab enrollments={enrollments!} tasks={tasks!} mocks={mocks!} />
+            ) : (
+              <MocksTab mocks={mocks!} />
+            )}
           </div>
         </main>
       </div>
@@ -214,60 +183,113 @@ function DashboardPage() {
   );
 }
 
-function SideItem({
-  icon, label, active, onClick,
-}: { icon: React.ReactNode; label: string; active: boolean; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={
-        "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold transition-colors " +
-        (active
-          ? "bg-primary text-primary-foreground shadow-sm"
-          : "text-foreground hover:bg-secondary")
-      }
-    >
-      {icon}
-      <span>{label}</span>
-    </button>
-  );
-}
-
-function MobileTab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={
-        "flex-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
-        (active
-          ? "border-primary bg-primary text-primary-foreground"
-          : "border-border bg-card text-foreground hover:bg-secondary")
-      }
-    >
-      {children}
-    </button>
-  );
-}
-
 /* -------------------- COURSES TAB -------------------- */
 
-function CoursesTab() {
-  const totalHours = 47;
-  const streak = 12;
+function CoursesTab({
+  enrollments,
+  tasks,
+  mocks,
+}: {
+  enrollments: Enrollment[];
+  tasks: TaskAttempt[];
+  mocks: MockAttempt[];
+}) {
+  const stats: SubjectStats[] = useMemo(() => summarizeTaskAttempts(tasks), [tasks]);
+  const streak = useMemo(
+    () => computeStreak([...tasks.map((t) => t.created_at), ...mocks.map((m) => m.completed_at)]),
+    [tasks, mocks],
+  );
+  const totalPassed = stats.reduce((a, s) => a + s.passed, 0);
+  const totalAttempted = stats.reduce((a, s) => a + s.attempted, 0);
+  const overallAccuracy = totalAttempted ? Math.round((totalPassed / totalAttempted) * 100) : 0;
+
+  const enrolledSlugs = new Set(enrollments.map((e) => e.product_slug));
+  const available = (Object.keys(COURSE_CATALOG) as CourseSlug[]).filter((s) => !enrolledSlugs.has(s));
 
   return (
     <div className="space-y-8">
-      {/* Summary row */}
-      <div className="grid gap-3 sm:grid-cols-2">
-        <StatPill icon={<Clock className="h-4 w-4 text-caramel-deep" />} label="Total study time" value={`${totalHours}h`} sub="across all subjects" />
-        <StatPill icon={<Flame className="h-4 w-4 text-caramel-deep" />} label="Current streak" value={`${streak} days`} sub="keep it going" />
+      {/* My courses */}
+      <section>
+        <h2 className="mb-3 font-display text-xl font-bold tracking-tight">My courses</h2>
+        {enrollments.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-border bg-card/50 p-8 text-center">
+            <GraduationCap className="mx-auto mb-3 h-6 w-6 text-taupe" />
+            <p className="text-sm text-muted-foreground">
+              You are not enrolled in any course yet. Pick one below to get started.
+            </p>
+          </div>
+        ) : (
+          <div className="grid gap-3 sm:grid-cols-2">
+            {enrollments.map((e) => (
+              <div key={e.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                  {e.tier} access
+                </p>
+                <h3 className="mt-1 font-display text-lg font-bold">{e.product_name}</h3>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Enrolled {new Date(e.created_at).toLocaleDateString()}
+                </p>
+                <div className="mt-3 flex items-center gap-3">
+                  <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
+                    <div
+                      className="h-full bg-caramel-deep"
+                      style={{ width: `${overallAccuracy && totalAttempted ? Math.min(100, Math.round((totalPassed / Math.max(totalAttempted, 1)) * 100)) : 0}%` }}
+                    />
+                  </div>
+                  <span className="shrink-0 text-xs font-semibold text-muted-foreground">
+                    {totalPassed} tasks passed
+                  </span>
+                </div>
+                <Link
+                  to={COURSE_CATALOG[(e.product_slug as CourseSlug)]?.href ?? "/products"}
+                  className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
+                >
+                  Continue
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {available.length > 0 && (
+        <section>
+          <h2 className="mb-3 font-display text-xl font-bold tracking-tight">Available courses</h2>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {available.map((slug) => (
+              <Link
+                key={slug}
+                to={slug === "demo-practice" ? "/products/demo-practice" : slug === "lite-bbe-course" ? "/products/lite-bbe-course" : "/products/full-course"}
+                className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                  {COURSE_CATALOG[slug].tier} access
+                </p>
+                <h3 className="mt-1 font-display text-base font-bold">{COURSE_CATALOG[slug].name}</h3>
+                <p className="mt-2 text-xs font-semibold text-caramel-deep">View course →</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Summary */}
+      <div className="grid gap-3 sm:grid-cols-3">
+        <StatPill icon={<Target className="h-4 w-4 text-caramel-deep" />} label="Tasks attempted" value={`${totalAttempted}`} sub={`${totalPassed} passed`} />
+        <StatPill icon={<TrendingUp className="h-4 w-4 text-caramel-deep" />} label="Accuracy" value={`${overallAccuracy}%`} sub="across all subjects" />
+        <StatPill icon={<Flame className="h-4 w-4 text-caramel-deep" />} label="Current streak" value={`${streak} ${streak === 1 ? "day" : "days"}`} sub="days with activity" />
       </div>
 
-      {SUBJECTS.map((s) => (
-        <SubjectSection key={s.key} subject={s} />
-      ))}
+      {stats.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
+          <p className="text-sm text-muted-foreground">
+            No practice recorded yet. Your progress is 0% — start a chapter and your statistics will
+            appear here automatically.
+          </p>
+        </div>
+      ) : (
+        stats.map((s) => <SubjectSection key={s.subject} stats={s} />)
+      )}
     </div>
   );
 }
@@ -285,45 +307,66 @@ function StatPill({ icon, label, value, sub }: { icon: React.ReactNode; label: s
   );
 }
 
-function SubjectSection({ subject }: { subject: Subject }) {
-  const totalDone = subject.chapters.reduce((a, c) => a + c.done, 0);
-  const totalCount = subject.chapters.reduce((a, c) => a + c.total, 0);
-  const pct = totalCount ? Math.round((totalDone / totalCount) * 100) : 0;
+function SubjectSection({ stats }: { stats: SubjectStats }) {
+  const color = SUBJECT_COLORS[stats.subject] ?? "#c8763a";
+  const pct = stats.attempted ? Math.round((stats.passed / stats.attempted) * 100) : 0;
 
   return (
     <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
       <div className="flex flex-wrap items-center gap-6">
-        <ProgressRing pct={pct} color={subject.color} />
+        <ProgressRing pct={pct} stroke={color} />
         <div className="min-w-0 flex-1">
-          <h2 className="font-display text-2xl font-bold tracking-tight">{subject.name}</h2>
-          <p className="text-sm text-muted-foreground">{totalDone} of {totalCount} tasks completed</p>
+          <h2 className="font-display text-2xl font-bold tracking-tight">
+            {SUBJECT_LABEL[stats.subject] ?? stats.subject}
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            {stats.passed} of {stats.attempted} attempted tasks passed
+          </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          <MiniStat label="Attempted" value={subject.attempted} />
-          <MiniStat label="Passed" value={subject.passed} />
-          <MiniStat label="Accuracy" value={`${subject.accuracy}%`} />
+          <MiniStat label="Attempted" value={stats.attempted} />
+          <MiniStat label="Passed" value={stats.passed} />
+          <MiniStat label="Accuracy" value={`${stats.accuracy}%`} />
         </div>
       </div>
 
       <ul className="mt-6 divide-y divide-border/60">
-        {subject.chapters.map((c) => (
-          <ChapterRow key={c.id} chapter={c} color={subject.color} />
-        ))}
+        {stats.chapters.map((c) => {
+          const cpct = c.attempted ? Math.round((c.passed / c.attempted) * 100) : 0;
+          const needsReview = c.accuracy < 60;
+          return (
+            <li key={c.chapter} className="flex flex-wrap items-center gap-4 py-3">
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <p className="truncate text-sm font-semibold">{c.chapter}</p>
+                  {needsReview && (
+                    <span className="inline-flex items-center gap-1 rounded-full border border-orange-400/40 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-600">
+                      <AlertTriangle className="h-3 w-3" />
+                      Needs review
+                    </span>
+                  )}
+                </div>
+                <div className="mt-1.5 flex items-center gap-3">
+                  <div className="h-1.5 w-full max-w-[280px] overflow-hidden rounded-full bg-secondary">
+                    <div className="h-full" style={{ width: cpct + "%", backgroundColor: color }} />
+                  </div>
+                  <span className="shrink-0 text-xs font-medium text-muted-foreground">
+                    {c.passed}/{c.attempted} passed · {c.accuracy}% acc
+                  </span>
+                </div>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
 }
 
-function ProgressRing({ pct, color }: { pct: number; color: string }) {
+function ProgressRing({ pct, stroke }: { pct: number; stroke: string }) {
   const r = 34;
   const c = 2 * Math.PI * r;
   const offset = c - (pct / 100) * c;
-  // extract simple color from tailwind class → SVG stroke
-  const stroke =
-    color.includes("caramel") ? "#c8763a" :
-    color.includes("emerald") ? "#10b981" :
-    color.includes("sky") ? "#0ea5e9" : "#c8763a";
-
   return (
     <div className="relative h-20 w-20 shrink-0">
       <svg viewBox="0 0 80 80" className="h-20 w-20 -rotate-90">
@@ -355,112 +398,80 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
   );
 }
 
-function ChapterRow({ chapter, color }: { chapter: Chapter; color: string }) {
-  const pct = chapter.total ? Math.round((chapter.done / chapter.total) * 100) : 0;
-  const needsReview = chapter.started && chapter.accuracy > 0 && chapter.accuracy < 60;
-
-  return (
-    <li className="flex flex-wrap items-center gap-4 py-3">
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
-          <p className="truncate font-semibold text-sm">{chapter.name}</p>
-          {needsReview && (
-            <span className="inline-flex items-center gap-1 rounded-full border border-orange-400/40 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-600">
-              <AlertTriangle className="h-3 w-3" />
-              Needs review
-            </span>
-          )}
-        </div>
-        <div className="mt-1.5 flex items-center gap-3">
-          <div className="h-1.5 w-full max-w-[280px] overflow-hidden rounded-full bg-secondary">
-            <div className={"h-full " + color} style={{ width: pct + "%" }} />
-          </div>
-          <span className="text-xs font-medium text-muted-foreground shrink-0">
-            {chapter.done}/{chapter.total} tasks
-            {chapter.started && chapter.accuracy > 0 && (
-              <span className="ml-2">· {chapter.accuracy}% acc</span>
-            )}
-          </span>
-        </div>
-      </div>
-      <button
-        type="button"
-        className={
-          "shrink-0 rounded-md px-4 py-1.5 text-xs font-semibold shadow-sm transition-colors " +
-          (chapter.started
-            ? "bg-primary text-primary-foreground hover:bg-primary/90"
-            : "border border-border bg-card text-foreground hover:bg-secondary")
-        }
-      >
-        {chapter.started ? "Resume" : "Start"}
-      </button>
-    </li>
-  );
-}
-
 /* -------------------- MOCKS TAB -------------------- */
 
-function MocksTab() {
-  const sorted = useMemo(() => [...MOCKS].sort((a, b) => b.date.localeCompare(a.date)), []);
-  const best = useMemo(() => [...MOCKS].sort((a, b) => b.score - a.score)[0], []);
-  const latest = sorted[0];
-  const avg = useMemo(() => {
-    const sum = MOCKS.reduce(
-      (acc, m) => ({
-        economics: acc.economics + m.perSubject.economics,
-        math: acc.math + m.perSubject.math,
-        english: acc.english + m.perSubject.english,
-      }),
-      { economics: 0, math: 0, english: 0 },
+function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
+  const sorted = useMemo(
+    () => [...mocks].sort((a, b) => b.completed_at.localeCompare(a.completed_at)),
+    [mocks],
+  );
+  const chronological = useMemo(() => [...sorted].reverse(), [sorted]);
+
+  if (mocks.length === 0) {
+    return (
+      <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
+        <Trophy className="mx-auto mb-3 h-6 w-6 text-taupe" />
+        <p className="text-sm text-muted-foreground">
+          No mock exams completed yet. Your scores appear here as soon as you finish one.
+        </p>
+        <Link
+          to="/mock-exams"
+          className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
+        >
+          Browse mock exams
+        </Link>
+      </div>
     );
-    const n = MOCKS.length;
-    return { economics: Math.round(sum.economics / n), math: Math.round(sum.math / n), english: Math.round(sum.english / n) };
-  }, []);
+  }
+
+  const best = [...mocks].sort((a, b) => b.points_earned - a.points_earned)[0];
+  const latest = sorted[0];
+  const avg = (key: string) => {
+    const vals = mocks.map((m) => Number(m.per_subject?.[key] ?? 0));
+    return vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0;
+  };
 
   return (
     <div className="space-y-6">
-      {/* Highlights */}
       <div className="grid gap-3 sm:grid-cols-2">
         <HighlightCard
           icon={<Trophy className="h-5 w-5 text-caramel-deep" />}
           label="Best score"
-          value={`${best.score}%`}
-          sub={`Mock on ${formatDate(best.date)}`}
+          value={`${Math.round((best.points_earned / best.points_total) * 100)}%`}
+          sub={`${best.exam_title} · ${best.points_earned.toFixed(1)}/${best.points_total}`}
         />
         <HighlightCard
           icon={<Sparkles className="h-5 w-5 text-caramel-deep" />}
           label="Most recent"
-          value={`${latest.score}%`}
-          sub={`Mock on ${formatDate(latest.date)}`}
+          value={`${Math.round((latest.points_earned / latest.points_total) * 100)}%`}
+          sub={`${latest.exam_title} · ${formatDate(latest.completed_at)}`}
         />
       </div>
 
-      {/* Trend chart */}
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
         <div className="mb-4 flex items-center gap-2">
           <TrendingUp className="h-4 w-4 text-caramel-deep" />
           <h3 className="font-display text-lg font-bold tracking-tight">Score trend</h3>
         </div>
-        <TrendChart mocks={[...MOCKS].sort((a, b) => a.date.localeCompare(b.date))} />
+        <TrendChart mocks={chronological} />
       </section>
 
-      {/* Per-subject averages */}
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <h3 className="font-display text-lg font-bold tracking-tight">Average per subject</h3>
-        <p className="mt-1 text-sm text-muted-foreground">Across {MOCKS.length} completed mocks</p>
+        <h3 className="font-display text-lg font-bold tracking-tight">Average points per subject</h3>
+        <p className="mt-1 text-sm text-muted-foreground">Across {mocks.length} completed mock{mocks.length > 1 ? "s" : ""}</p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <SubjectAvg name="Economics" pct={avg.economics} color="bg-caramel-deep" />
-          <SubjectAvg name="Math" pct={avg.math} color="bg-emerald-500" />
-          <SubjectAvg name="English" pct={avg.english} color="bg-sky-500" />
+          <SubjectAvg name="Economics" points={avg("economics")} max={64} color={SUBJECT_COLORS.economics} />
+          <SubjectAvg name="Math" points={avg("math")} max={62.4} color={SUBJECT_COLORS.math} />
+          <SubjectAvg name="English" points={avg("english")} max={33.6} color={SUBJECT_COLORS.english} />
         </div>
       </section>
 
-      {/* Table */}
       <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
         <div className="overflow-x-auto">
           <table className="w-full min-w-[560px] text-sm">
             <thead>
               <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <th className="px-3 py-2">Exam</th>
                 <th className="px-3 py-2">Date</th>
                 <th className="px-3 py-2">Score</th>
                 <th className="px-3 py-2">Time</th>
@@ -470,20 +481,27 @@ function MocksTab() {
             <tbody>
               {sorted.map((m) => (
                 <tr key={m.id} className="border-t border-border/60">
-                  <td className="px-3 py-3 font-medium">{formatDate(m.date)}</td>
+                  <td className="px-3 py-3 font-medium">{m.exam_title}</td>
+                  <td className="px-3 py-3 text-muted-foreground">{formatDate(m.completed_at)}</td>
                   <td className="px-3 py-3">
-                    <span className="font-display text-lg font-bold">{m.score}%</span>
+                    <span className="font-display text-lg font-bold">
+                      {Math.round((m.points_earned / m.points_total) * 100)}%
+                    </span>
+                    <span className="ml-2 text-xs text-muted-foreground">
+                      {m.points_earned.toFixed(1)}/{m.points_total}
+                    </span>
                   </td>
                   <td className="px-3 py-3 text-muted-foreground">
-                    {m.timeTakenMin} / {m.timeAllottedMin} min
+                    {m.seconds_taken != null ? `${Math.round(m.seconds_taken / 60)} min` : "—"}
                   </td>
                   <td className="px-3 py-3 text-right">
-                    <button
-                      type="button"
+                    <Link
+                      to="/mock-exams/$examId/review"
+                      params={{ examId: m.exam_id }}
                       className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
                     >
                       Review
-                    </button>
+                    </Link>
                   </td>
                 </tr>
               ))}
@@ -508,21 +526,22 @@ function HighlightCard({ icon, label, value, sub }: { icon: React.ReactNode; lab
   );
 }
 
-function SubjectAvg({ name, pct, color }: { name: string; pct: number; color: string }) {
+function SubjectAvg({ name, points, max, color }: { name: string; points: number; max: number; color: string }) {
+  const pct = Math.round((points / max) * 100);
   return (
     <div className="rounded-xl border border-border bg-background p-4">
       <div className="flex items-baseline justify-between">
         <p className="text-sm font-semibold">{name}</p>
-        <p className="font-display text-xl font-bold">{pct}%</p>
+        <p className="font-display text-xl font-bold">{points}/{max}</p>
       </div>
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-secondary">
-        <div className={"h-full " + color} style={{ width: pct + "%" }} />
+        <div className="h-full" style={{ width: Math.min(100, pct) + "%", backgroundColor: color }} />
       </div>
     </div>
   );
 }
 
-function TrendChart({ mocks }: { mocks: Mock[] }) {
+function TrendChart({ mocks }: { mocks: MockAttempt[] }) {
   const W = 640;
   const H = 200;
   const PAD_L = 32;
@@ -533,14 +552,17 @@ function TrendChart({ mocks }: { mocks: Mock[] }) {
   const ih = H - PAD_T - PAD_B;
 
   const points = mocks.map((m, i) => {
+    const score = (m.points_earned / m.points_total) * 100;
     const x = PAD_L + (mocks.length === 1 ? iw / 2 : (i * iw) / (mocks.length - 1));
-    const y = PAD_T + ih - (m.score / 100) * ih;
+    const y = PAD_T + ih - (score / 100) * ih;
     return { x, y, m };
   });
 
   const path = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
-  const area = `${path} L${points[points.length - 1].x},${PAD_T + ih} L${points[0].x},${PAD_T + ih} Z`;
-
+  const area =
+    points.length > 0
+      ? `${path} L${points[points.length - 1].x},${PAD_T + ih} L${points[0].x},${PAD_T + ih} Z`
+      : "";
   const yTicks = [0, 25, 50, 75, 100];
 
   return (
@@ -555,13 +577,13 @@ function TrendChart({ mocks }: { mocks: Mock[] }) {
             </g>
           );
         })}
-        <path d={area} fill="#c8763a" opacity="0.12" />
+        {area && <path d={area} fill="#c8763a" opacity="0.12" />}
         <path d={path} fill="none" stroke="#c8763a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
         {points.map((p) => (
           <g key={p.m.id}>
             <circle cx={p.x} cy={p.y} r={4} fill="#c8763a" />
             <text x={p.x} y={H - 10} textAnchor="middle" className="fill-muted-foreground" fontSize="10">
-              {shortDate(p.m.date)}
+              {shortDate(p.m.completed_at)}
             </text>
           </g>
         ))}
@@ -571,15 +593,46 @@ function TrendChart({ mocks }: { mocks: Mock[] }) {
 }
 
 function formatDate(iso: string) {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+  return new Date(iso).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 }
 function shortDate(iso: string) {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
 /* -------------------- SHELL -------------------- */
+
+function SideItem({
+  icon, label, active, onClick,
+}: { icon: React.ReactNode; label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={
+        "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold transition-colors " +
+        (active ? "bg-primary text-primary-foreground shadow-sm" : "text-foreground hover:bg-secondary")
+      }
+    >
+      {icon}
+      <span>{label}</span>
+    </button>
+  );
+}
+
+function MobileTab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={
+        "flex-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
+        (active ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:bg-secondary")
+      }
+    >
+      {children}
+    </button>
+  );
+}
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
@@ -588,7 +641,7 @@ function Shell({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-3">
             <div className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
-              <span className="font-display text-xs font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
+              <span className="font-display text-xs font-bold leading-none tracking-tight text-primary-foreground">BBE</span>
             </div>
             <span className="font-display text-sm font-bold tracking-tight">BBE School</span>
           </Link>
