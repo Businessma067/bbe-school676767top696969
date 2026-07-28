@@ -92,6 +92,78 @@ export type Database = {
         }
         Relationships: []
       }
+      enrollments: {
+        Row: {
+          created_at: string
+          id: string
+          product_name: string
+          product_slug: string
+          tier: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          product_name: string
+          product_slug: string
+          tier?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          product_name?: string
+          product_slug?: string
+          tier?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      mock_attempts: {
+        Row: {
+          answers: Json
+          completed_at: string
+          exam_id: string
+          exam_title: string
+          id: string
+          per_subject: Json
+          points_earned: number
+          points_total: number
+          seconds_taken: number | null
+          timed: boolean
+          user_id: string
+        }
+        Insert: {
+          answers?: Json
+          completed_at?: string
+          exam_id: string
+          exam_title: string
+          id?: string
+          per_subject?: Json
+          points_earned?: number
+          points_total?: number
+          seconds_taken?: number | null
+          timed?: boolean
+          user_id: string
+        }
+        Update: {
+          answers?: Json
+          completed_at?: string
+          exam_id?: string
+          exam_title?: string
+          id?: string
+          per_subject?: Json
+          points_earned?: number
+          points_total?: number
+          seconds_taken?: number | null
+          timed?: boolean
+          user_id?: string
+        }
+        Relationships: []
+      }
       practice_sessions: {
         Row: {
           completed_at: string | null
@@ -329,6 +401,45 @@ export type Database = {
           id?: string
           name?: string
           slug?: string
+        }
+        Relationships: []
+      }
+      task_attempts: {
+        Row: {
+          chapter: string
+          correct_count: number
+          created_at: string
+          id: string
+          is_passed: boolean
+          statement_count: number
+          subject: string
+          task_key: string
+          task_title: string | null
+          user_id: string
+        }
+        Insert: {
+          chapter: string
+          correct_count?: number
+          created_at?: string
+          id?: string
+          is_passed?: boolean
+          statement_count?: number
+          subject: string
+          task_key: string
+          task_title?: string | null
+          user_id: string
+        }
+        Update: {
+          chapter?: string
+          correct_count?: number
+          created_at?: string
+          id?: string
+          is_passed?: boolean
+          statement_count?: number
+          subject?: string
+          task_key?: string
+          task_title?: string | null
+          user_id?: string
         }
         Relationships: []
       }
