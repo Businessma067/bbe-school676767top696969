@@ -1,3 +1,4 @@
+import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
@@ -472,7 +473,17 @@ function EconomicsTasks() {
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
-              onGraded={(allCorrect) => recordResult(activeCase.id, allCorrect)}
+              onGraded={(allCorrect, correctCount) => {
+                recordResult(activeCase.id, allCorrect);
+                void recordTaskAttempt({
+                  subject: "economics",
+                  chapter: `Chapter ${chapterOf(activeCase)}`,
+                  taskKey: `demo:${activeCase.case_id}`,
+                  taskTitle: activeCase.title,
+                  correctCount,
+                  statementCount: activeCase.statements.length || 5,
+                });
+              }}
               onResetProgress={() => resetCaseIds([activeCase.id])}
               activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
               onRequestExplanation={(i) => requestExplanation(activeCase, i)}
@@ -680,7 +691,7 @@ function CaseCard({
   activeExplanationIndex, onRequestExplanation,
 }: {
   data: Case; index: number;
-  onGraded: (allCorrect: boolean) => void;
+  onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
@@ -707,7 +718,7 @@ function CaseCard({
 
   const handleSubmit = () => {
     setChecked(true);
-    onGraded(correctCount === 5);
+    onGraded(correctCount === 5, correctCount);
   };
 
   const handleReset = () => {

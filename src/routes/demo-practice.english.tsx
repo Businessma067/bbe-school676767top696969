@@ -1,3 +1,4 @@
+import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -727,7 +728,20 @@ function EnglishTasks() {
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
-              onGraded={(ok) => recordResult(activeCase.id, ok)}
+              onGraded={(ok, correctCount) => {
+                recordResult(activeCase.id, ok);
+                void recordTaskAttempt({
+                  subject: "english",
+                  chapter:
+                    activeChapter && activeChapter !== "revision"
+                      ? activeChapter.charAt(0).toUpperCase() + activeChapter.slice(1)
+                      : "Revision",
+                  taskKey: `demo:${activeCase.id}`,
+                  taskTitle: activeCase.title,
+                  correctCount,
+                  statementCount: activeCase.answer_key.length || 5,
+                });
+              }}
               onResetProgress={() => resetCaseIds([activeCase.id])}
               isGrammar={isGrammarCase}
               activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
@@ -791,7 +805,7 @@ function CaseCard({
   isGrammar, activeExplanationIndex, onRequestExplanation,
 }: {
   data: ReadingTask | GrammarTask; index: number;
-  onGraded: (allCorrect: boolean) => void;
+  onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
   isGrammar: boolean;
@@ -819,7 +833,7 @@ function CaseCard({
 
   const handleSubmit = () => {
     setChecked(true);
-    onGraded(correctCount === 5);
+    onGraded(correctCount === 5, correctCount);
   };
 
   const handleReset = () => {
