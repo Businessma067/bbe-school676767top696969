@@ -53,26 +53,6 @@ export function getExamById(id: string): MockExamSummary | undefined {
   return MOCK_EXAMS.find((e) => e.id === id);
 }
 
-/** Mock completed history — replaced by user_attempts once wired in. */
-export const COMPLETED_EXAMS: CompletedExam[] = [
-  {
-    id: "attempt-1",
-    examId: "mock-1",
-    title: "Mock Exam 1",
-    completedAt: "2026-06-14T10:30:00.000Z",
-    pointsEarned: 118.4,
-    pointsTotal: SCORING_CONFIG.examTotalPoints,
-  },
-  {
-    id: "attempt-2",
-    examId: "mock-2",
-    title: "Mock Exam 2",
-    completedAt: "2026-07-02T15:05:00.000Z",
-    pointsEarned: 96.2,
-    pointsTotal: SCORING_CONFIG.examTotalPoints,
-  },
-];
-
 /** Deterministic pseudo-random generator so mock content is stable per exam. */
 function makeRandom(seed: string) {
   let h = 2166136261;
