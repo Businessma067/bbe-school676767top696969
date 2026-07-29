@@ -184,7 +184,7 @@ function Index() {
               Live product demo
             </div>
             <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Full-Cycle 5-Statement Simulation Engine
+              How it works
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
               Watch the exact loop a prepared BBE candidate runs during the exam — TRUE/FALSE
