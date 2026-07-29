@@ -415,9 +415,19 @@ function EconomicsTasks() {
             </button>
           </div>
         </aside>
+        )}
 
         {/* Main content */}
         <main className="min-w-0 flex-1">
+          {sidebarCollapsed && (
+            <button
+              type="button"
+              onClick={() => setSidebarCollapsed(false)}
+              className="mb-4 hidden lg:inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary"
+            >
+              <PanelLeftOpen className="h-3.5 w-3.5" /> Show chapters
+            </button>
+          )}
           {theoryChapter !== null ? (
             <TheoryReader
               chapter={theoryChapter}
@@ -442,9 +452,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {cases !== null && (
-            <StatsOverview cases={cases} progress={progress} byChapter={byChapter} />
-          )}
+
 
           {cases !== null && activeChapter !== null && (
             <div className="mb-5">
