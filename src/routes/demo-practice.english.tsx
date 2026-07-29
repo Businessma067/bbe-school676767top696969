@@ -697,10 +697,20 @@ function EnglishTasks() {
             </div>
           </div>
         </aside>
+        )}
 
         {/* Main */}
         <main className="min-w-0 flex-1">
-          <StatsOverview progress={progress} />
+          {sidebarCollapsed && (
+            <button
+              type="button"
+              onClick={() => setSidebarCollapsed(false)}
+              className="mb-4 hidden lg:inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary"
+            >
+              <PanelLeftOpen className="h-3.5 w-3.5" /> Show chapters
+            </button>
+          )}
+
 
           {activeChapter !== null && (
             <div className="mb-5">
