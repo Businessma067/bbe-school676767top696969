@@ -468,6 +468,7 @@ function EnglishTasks() {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
     reading: true, grammar: false, vocabulary: false,
   });
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   type ExplanationState = {
     key: string;
