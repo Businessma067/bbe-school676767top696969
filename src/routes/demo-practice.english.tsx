@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import {
   Check, X, ChevronLeft, ChevronRight, ChevronDown, RotateCcw,
-  BookOpen, AlertTriangle, Lock, Sparkles,
+  BookOpen, AlertTriangle, Lock, Sparkles, PanelLeftClose, PanelLeftOpen,
 } from "lucide-react";
 
 export const Route = createFileRoute("/demo-practice/english")({
