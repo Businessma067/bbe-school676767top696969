@@ -241,13 +241,25 @@ function EconomicsTasks() {
         </div>
       </header>
 
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10">
+      <div className="mx-auto flex w-full max-w-none flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10 2xl:px-12">
         {/* Sidebar — expandable chapters with per-case checklist */}
-        <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0">
+        {!sidebarCollapsed && (
+        <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0 2xl:w-96">
           <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
-            <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-              <BookOpen className="h-3.5 w-3.5" /> Chapters
-            </h3>
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                <BookOpen className="h-3.5 w-3.5" /> Chapters
+              </h3>
+              <button
+                type="button"
+                onClick={() => setSidebarCollapsed(true)}
+                title="Collapse chapters"
+                aria-label="Collapse chapters"
+                className="hidden lg:grid h-7 w-7 place-items-center rounded-md border border-border text-muted-foreground hover:bg-secondary hover:text-foreground"
+              >
+                <PanelLeftClose className="h-3.5 w-3.5" />
+              </button>
+            </div>
             <ul className="flex-1 space-y-1.5 overflow-y-auto pr-1">
               {CHAPTERS.map((ch) => {
                 const list = byChapter.get(ch.num) ?? [];
