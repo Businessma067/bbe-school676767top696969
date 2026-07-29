@@ -99,6 +99,7 @@ function EconomicsTasks() {
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(CHAPTERS.map((c) => [c.num, false])),
   );
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   useEffect(() => {
     let cancel = false;
