@@ -700,8 +700,12 @@ function WhyUsSlider() {
       >
         <div
           className="flex w-full"
-          style={{ transitionProperty: "transform", transitionDuration: "900ms", transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-          style={{ transform: `translate3d(-${active * 100}%, 0, 0)` }}
+          style={{
+            transform: `translate3d(-${active * 100}%, 0, 0)`,
+            transitionProperty: "transform",
+            transitionDuration: "900ms",
+            transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
+          }}
         >
 
         {/* Slide 01 — Acceptance Rate */}
