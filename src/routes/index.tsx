@@ -607,35 +607,34 @@ function RingMetric({
 }
 
 function WhyUsSlider() {
-  const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const total = 3;
 
-  const scrollTo = (index: number) => {
-    const track = trackRef.current;
-    if (!track) return;
-    const slide = track.children[index] as HTMLElement | undefined;
-    if (!slide) return;
-    track.scrollTo({ left: slide.offsetLeft, behavior: "smooth" });
-  };
+  const goTo = (index: number) => setActive(((index % total) + total) % total);
+  const next = () => goTo(active + 1);
+  const prev = () => goTo(active - 1);
 
-  const next = () => scrollTo((active + 1) % total);
-  const prev = () => scrollTo((active - 1 + total) % total);
-
+  // Keyboard navigation while the slider is in view.
+  const rootRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-    const onScroll = () => {
-      const width = track.clientWidth || 1;
-      const idx = Math.round(track.scrollLeft / width);
-      setActive(Math.max(0, Math.min(total - 1, idx)));
+    const onKey = (e: KeyboardEvent) => {
+      const el = rootRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const visible = rect.top < window.innerHeight * 0.6 && rect.bottom > window.innerHeight * 0.4;
+      if (!visible) return;
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
     };
-    track.addEventListener("scroll", onScroll, { passive: true });
-    return () => track.removeEventListener("scroll", onScroll);
-  }, []);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [active]);
+
+  // Touch swipe (horizontal only — vertical page scroll stays untouched).
+  const touch = useRef<{ x: number; y: number } | null>(null);
 
   return (
-    <div className="relative h-[100dvh] w-full overflow-hidden bg-why-us-bg">
+    <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg py-12 sm:py-16">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-0"
@@ -645,12 +644,12 @@ function WhyUsSlider() {
         }}
       />
 
-      {/* Desktop arrows */}
+      {/* Arrows */}
       <button
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="hidden md:absolute md:left-6 md:top-1/2 md:z-20 md:flex md:h-12 md:w-12 md:-translate-y-1/2 md:items-center md:justify-center md:rounded-full md:border md:border-white/15 md:bg-black/40 md:text-primary-foreground md:backdrop-blur-sm md:transition-all md:hover:border-caramel-deep md:hover:bg-black/60 md:hover:text-caramel"
+        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:left-6 sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -658,19 +657,19 @@ function WhyUsSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="hidden md:absolute md:right-6 md:top-1/2 md:z-20 md:flex md:h-12 md:w-12 md:-translate-y-1/2 md:items-center md:justify-center md:rounded-full md:border md:border-white/15 md:bg-black/40 md:text-primary-foreground md:backdrop-blur-sm md:transition-all md:hover:border-caramel-deep md:hover:bg-black/60 md:hover:text-caramel"
+        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:right-6 sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 md:bottom-8">
+      <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 sm:bottom-6">
         {Array.from({ length: total }).map((_, i) => (
           <button
             key={i}
             type="button"
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => scrollTo(i)}
+            onClick={() => goTo(i)}
             className={cn(
               "h-2 rounded-full transition-all duration-300",
               active === i
@@ -682,17 +681,28 @@ function WhyUsSlider() {
       </div>
 
       <div
-        ref={trackRef}
-        className="relative z-10 flex h-full w-full snap-x snap-proximity overflow-x-auto overflow-y-hidden overscroll-contain"
-        style={{ touchAction: "pan-x", overscrollBehavior: "contain" }}
-        onWheel={(e) => {
-          // Prevent horizontal-only scroller from hijacking the page's vertical wheel.
-          if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-            window.scrollBy({ top: e.deltaY, behavior: "auto" });
-            e.preventDefault();
+        className="relative z-10 w-full overflow-hidden"
+        onTouchStart={(e) => {
+          const t = e.touches[0];
+          touch.current = { x: t.clientX, y: t.clientY };
+        }}
+        onTouchEnd={(e) => {
+          const start = touch.current;
+          touch.current = null;
+          if (!start) return;
+          const t = e.changedTouches[0];
+          const dx = t.clientX - start.x;
+          const dy = t.clientY - start.y;
+          if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+            dx < 0 ? next() : prev();
           }
         }}
       >
+        <div
+          className="flex w-full transition-transform duration-500 ease-out"
+          style={{ transform: `translate3d(-${active * 100}%, 0, 0)` }}
+        >
+
         {/* Slide 01 — Acceptance Rate */}
         <WhySlide index="01" title="Acceptance Rate">
           <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
