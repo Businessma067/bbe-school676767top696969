@@ -73,12 +73,12 @@ export function CompareTable({
 
   return (
     <section className="mt-20 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
-      <div className="px-5 py-10 sm:px-6 lg:px-10 lg:py-16">
-        <div className="mb-8 text-center sm:mb-10">
-          <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
+      <div className="px-5 py-6 sm:px-6 lg:px-10 lg:py-8">
+        <div className="mb-4 text-center sm:mb-5">
+          <h2 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl lg:text-3xl">
             {heading}
           </h2>
-          <p className="mt-3 text-sm text-muted-foreground">{subheading}</p>
+          <p className="mt-1.5 text-xs text-muted-foreground">{subheading}</p>
         </div>
 
         {/* Desktop table */}
