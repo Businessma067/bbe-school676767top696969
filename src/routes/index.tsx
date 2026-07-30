@@ -758,10 +758,12 @@ function WhyUsSlider() {
           </p>
           <PlacementsTicker />
         </WhySlide>
+        </div>
       </div>
     </div>
   );
 }
+
 
 function WhySlide({
   index,
