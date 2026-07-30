@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { NavItemLink } from "./NavItemLink";
 
 import {
   Sheet,
@@ -55,13 +56,11 @@ export function MobileNav() {
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
-                  >
-                    {item.label}
-                  </a>
+                  <NavItemLink
+                    item={item}
+                    onNavigate={() => setOpen(false)}
+                    className="block w-full text-left rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                  />
                 </li>
               ))}
             </ul>
