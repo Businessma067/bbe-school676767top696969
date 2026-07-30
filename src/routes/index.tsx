@@ -775,8 +775,9 @@ function WhySlide({
   children: ReactNode;
 }) {
   return (
-    <section className="relative flex h-full w-full min-w-full flex-none snap-start snap-always items-center justify-center overflow-hidden px-6 py-10 sm:px-10 lg:px-16">
-      <div className="relative w-full max-w-6xl overflow-y-auto rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12" style={{ maxHeight: "calc(100dvh - 4rem)" }}>
+    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
+      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+
         <div className="mb-8 flex items-start gap-5 sm:items-center">
           <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
             {index}
