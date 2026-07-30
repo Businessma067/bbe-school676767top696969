@@ -86,26 +86,32 @@ export function AuthNav() {
             {initial}
           </div>
           <span className="hidden max-w-[140px] truncate text-xs font-medium text-foreground sm:inline">{auth.name}</span>
-          <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+          <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
         </button>
-        {open && (
-          <div className="absolute right-0 top-full mt-2 w-44 rounded-lg border border-border bg-card p-1 shadow-lg z-50">
-            <Link
-              to="/dashboard"
-              onClick={() => setOpen(false)}
-              className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
-            >
-              Dashboard
-            </Link>
-            <Link
-              to="/account"
-              onClick={() => setOpen(false)}
-              className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
-            >
-              Settings
-            </Link>
-          </div>
-        )}
+        <div
+          className={`absolute right-0 top-full z-50 mt-2 w-44 origin-top-right rounded-lg border border-border bg-card p-1 shadow-lg transition-all duration-300 ease-out ${
+            open
+              ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
+              : "pointer-events-none -translate-y-2 scale-95 opacity-0"
+          }`}
+        >
+          <Link
+            to="/dashboard"
+            onClick={() => setOpen(false)}
+            tabIndex={open ? 0 : -1}
+            className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
+          >
+            Dashboard
+          </Link>
+          <Link
+            to="/account"
+            onClick={() => setOpen(false)}
+            tabIndex={open ? 0 : -1}
+            className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
+          >
+            Settings
+          </Link>
+        </div>
       </div>
     </div>
   );
