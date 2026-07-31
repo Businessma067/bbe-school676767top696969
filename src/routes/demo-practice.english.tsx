@@ -1,6 +1,8 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { AnnotatablePassage } from "@/components/AnnotatablePassage";
+
 import { cn } from "@/lib/utils";
 import {
   Check, X, ChevronLeft, ChevronRight, ChevronDown, RotateCcw,
@@ -1171,15 +1173,16 @@ function ReadingPanel({
             <BookOpen className="h-3.5 w-3.5" /> Reading Text
           </span>
           <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
-            The Classical Gold Standard
+            Select text → highlight · underline · note
           </span>
         </div>
         <div ref={scrollRef} className="h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
-          <PassageBody
+          <AnnotatablePassage
             passage={passage}
-            highlight={explanation?.highlight ?? ""}
+            storageKey="demo-english-reading"
+            aiHighlight={explanation?.highlight ?? ""}
             reveal={reveal && !!explanation}
-            highlightRef={highlightRef}
+            aiHighlightRef={highlightRef}
           />
         </div>
       </div>
@@ -1187,59 +1190,6 @@ function ReadingPanel({
   );
 }
 
-function PassageBody({
-  passage, highlight, reveal, highlightRef,
-}: {
-  passage: string;
-  highlight: string;
-  reveal: boolean;
-  highlightRef: React.MutableRefObject<HTMLSpanElement | null>;
-}) {
-  const paragraphs = passage.split(/\n\n+/);
-  const idx = highlight ? passage.indexOf(highlight) : -1;
-
-  if (idx === -1 || !highlight) {
-    return (
-      <>
-        {paragraphs.map((p, i) => (
-          <p key={i} className="mb-3 whitespace-pre-line">{p}</p>
-        ))}
-      </>
-    );
-  }
-
-  // Find which paragraph contains the highlight and split it
-  let cursor = 0;
-  return (
-    <>
-      {paragraphs.map((p, i) => {
-        const start = cursor;
-        const end = cursor + p.length;
-        cursor = end + 2; // account for "\n\n"
-        if (idx >= start && idx < end) {
-          const rel = idx - start;
-          const before = p.slice(0, rel);
-          const match = p.slice(rel, rel + highlight.length);
-          const after = p.slice(rel + highlight.length);
-          return (
-            <p key={i} className="mb-3 whitespace-pre-line">
-              {before}
-              <span
-                ref={highlightRef}
-                className={reveal ? "neon-highlight" : undefined}
-                style={reveal ? undefined : { padding: "0 2px" }}
-              >
-                {match}
-              </span>
-              {after}
-            </p>
-          );
-        }
-        return <p key={i} className="mb-3 whitespace-pre-line">{p}</p>;
-      })}
-    </>
-  );
-}
 
 // ---------------- Grammar explanation panel ----------------
 
