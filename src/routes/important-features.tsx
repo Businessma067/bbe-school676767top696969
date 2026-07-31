@@ -1,7 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, Lock, X as CloseIcon } from "lucide-react";
+import {
+  ArrowRight,
+  Clock,
+  ClipboardCheck,
+  Focus,
+  Lock,
+} from "lucide-react";
 import answerSheetImg from "@/assets/answer-sheet-simulator.png.asset.json";
+import examHallImg from "@/assets/parents-hall.jpg.asset.json";
 
 export const Route = createFileRoute("/important-features")({
   head: () => ({
@@ -41,8 +48,10 @@ const features: Feature[] = [
   },
 ];
 
+const PRODUCT_ORANGE = "#C2643A";
+
 function ImportantFeaturesPage() {
-  const [openTitle, setOpenTitle] = useState<string | null>(null);
+  const [expandedTitle, setExpandedTitle] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -91,25 +100,26 @@ function ImportantFeaturesPage() {
             <FeatureCard
               key={f.title}
               feature={f}
-              onViewMore={() => setOpenTitle(f.title)}
+              expanded={expandedTitle === f.title}
+              onToggle={() =>
+                setExpandedTitle(expandedTitle === f.title ? null : f.title)
+              }
             />
           ))}
         </div>
       </main>
-
-      {openTitle === "Official Answer Sheet" && (
-        <AnswerSheetModal onClose={() => setOpenTitle(null)} />
-      )}
     </div>
   );
 }
 
 function FeatureCard({
   feature,
-  onViewMore,
+  expanded,
+  onToggle,
 }: {
   feature: Feature;
-  onViewMore: () => void;
+  expanded: boolean;
+  onToggle: () => void;
 }) {
   return (
     <article className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
@@ -145,11 +155,14 @@ function FeatureCard({
           <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-3">
             <button
               type="button"
-              onClick={onViewMore}
+              onClick={onToggle}
+              aria-expanded={expanded}
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-foreground transition-colors hover:text-primary"
             >
-              View More
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              {expanded ? "View Less" : "View More"}
+              <ArrowRight
+                className={`h-4 w-4 transition-transform ${expanded ? "-rotate-90" : "group-hover:translate-x-0.5"}`}
+              />
             </button>
 
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
@@ -159,12 +172,157 @@ function FeatureCard({
           </div>
         </div>
       </div>
+
+      {expanded && feature.title === "Official Answer Sheet" && (
+        <AnswerSheetDetails onCollapse={onToggle} />
+      )}
     </article>
   );
 }
 
 /* ============================================================
-   Animated Answer Sheet Modal
+   Answer Sheet — expanded product details
+   ============================================================ */
+
+const answerSheetHighlights = [
+  {
+    icon: ClipboardCheck,
+    title: "Official WU layout",
+    text: "Same fields, same grid, same transfer workflow as the real optical sheet.",
+  },
+  {
+    icon: Clock,
+    title: "Timed inside mock exams",
+    text: "You practice the transfer while the clock is still running, not after the fact.",
+  },
+  {
+    icon: Focus,
+    title: "Know before exam day",
+    text: "Repeated runs show where you hesitate or misalign, while there is still time to fix it.",
+  },
+];
+
+function AnswerSheetDetails({ onCollapse }: { onCollapse: () => void }) {
+  return (
+    <div className="animate-in fade-in slide-in-from-top-2 border-t border-border/60 duration-300">
+      <div className="mx-auto max-w-4xl px-6 pb-10 pt-8 md:px-10 md:pb-12 md:pt-10">
+        {/* Hero — animated preview */}
+        <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+          <div className="flex items-center justify-center p-6 sm:p-10">
+            <AnswerSheetPreview />
+          </div>
+        </div>
+
+        {/* Product description */}
+        <section className="mt-10">
+          <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            The step almost nobody practices
+          </h2>
+
+          <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+            Students spend months on math, English, and economics. Then the exam ends with forty
+            answers to transfer onto an optical sheet while the clock runs out. That final step is
+            where a lot of strong candidates lose points they already earned.
+          </p>
+
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Roughly 95% of applicants never train this properly. They drill questions, not the
+            transfer. So when exam day comes, even students who were at the top of their class
+            panic over row alignment, rush the grid, or simply run out of time. The exam does not
+            care that you knew the answers on scratch paper.
+          </p>
+
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            That is why so many straight-A students with expensive tutors still fail. Not because
+            the material was too hard, but because nobody prepared them for the last ten minutes.
+            The answer sheet is not a formality. It is a filter, and most people walk into it
+            cold.
+          </p>
+
+          <figure className="my-10 overflow-hidden rounded-2xl border border-border shadow-sm">
+            <img
+              src={examHallImg.url}
+              alt="Exam hall filled with applicants waiting to take the BBE entrance test"
+              loading="lazy"
+              className="h-64 w-full object-cover sm:h-80"
+            />
+            <figcaption className="bg-card px-5 py-3 text-sm italic text-muted-foreground">
+              Three thousand applicants. Two hundred and forty seats. The sheet decides who looked
+              ready and who only thought they were.
+            </figcaption>
+          </figure>
+
+          <p className="text-base leading-relaxed text-muted-foreground">
+            The Official Answer Sheet Simulator is built into every mock exam. Same layout as the
+            WU document, same time pressure. You fill in your details, mark the grid, and learn to
+            stay calm when seconds actually matter. Do it enough times here, and exam day stops
+            feeling like your first try.
+          </p>
+
+          <div
+            className="mt-8 rounded-2xl border p-6 text-center"
+            style={{
+              borderColor: `${PRODUCT_ORANGE}55`,
+              backgroundColor: `${PRODUCT_ORANGE}10`,
+            }}
+          >
+            <p className="font-display text-lg font-semibold text-foreground sm:text-xl">
+              Practice the transfer before it costs you a seat.
+            </p>
+            <p className="mt-2 text-xs text-muted-foreground">
+              Included with the Full BBE Course · Available inside every mock exam
+            </p>
+          </div>
+        </section>
+
+        {/* Highlight cards */}
+        <section className="mt-12">
+          <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">
+            What the simulator trains
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {answerSheetHighlights.map((f) => (
+              <div
+                key={f.title}
+                className="rounded-xl border border-border bg-card p-5 shadow-sm"
+              >
+                <div
+                  className="mb-4 grid h-10 w-10 place-items-center rounded-xl"
+                  style={{
+                    backgroundColor: `${PRODUCT_ORANGE}18`,
+                    boxShadow: `inset 0 0 0 1px ${PRODUCT_ORANGE}40`,
+                  }}
+                >
+                  <f.icon className="h-5 w-5" style={{ color: PRODUCT_ORANGE }} />
+                </div>
+                <h3 className="font-display text-base font-semibold text-foreground">
+                  {f.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {f.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            onClick={onCollapse}
+            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
+          >
+            View Less
+            <ArrowRight className="h-4 w-4 -rotate-90 transition-transform group-hover:-translate-y-0.5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ============================================================
+   Animated Answer Sheet Preview
    ============================================================ */
 
 const ORANGE = "#EA6A2C";
@@ -191,7 +349,7 @@ const CLICK_SEQUENCE: Mark[] = [
   { row: 10, col: 4 },
 ];
 
-function AnswerSheetModal({ onClose }: { onClose: () => void }) {
+function AnswerSheetPreview() {
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [sigProgress, setSigProgress] = useState(0); // 0..1
@@ -206,22 +364,6 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
   const sigRef = useRef<HTMLDivElement | null>(null);
   const cellRefs = useRef<Map<string, HTMLDivElement | null>>(new Map());
   const timers = useRef<number[]>([]);
-
-  // Close on Escape
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
-
-  // Lock body scroll while open
-  useEffect(() => {
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, []);
 
   // Helper: schedule with cleanup tracking
   const schedule = (fn: () => void, delay: number) => {
@@ -368,33 +510,16 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-3 backdrop-blur-sm animate-fade-in"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
-      aria-label="Official Answer Sheet preview"
+      className="relative w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl"
+      style={{
+        boxShadow: `0 20px 60px -10px ${ORANGE}55, 0 0 0 2px ${ORANGE}`,
+      }}
     >
       <div
-        className="relative w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl animate-scale-in"
-        style={{
-          boxShadow: `0 20px 60px -10px ${ORANGE}55, 0 0 0 2px ${ORANGE}`,
-        }}
-        onClick={(e) => e.stopPropagation()}
+        ref={sheetRef}
+        className="relative select-none bg-white p-4 text-[9px] leading-tight text-black sm:text-[10px]"
+        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
       >
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute right-3 top-3 z-20 grid h-8 w-8 place-items-center rounded-full bg-white/90 text-gray-700 shadow ring-1 ring-black/10 transition hover:bg-white"
-        >
-          <CloseIcon className="h-4 w-4" />
-        </button>
-
-        <div
-          ref={sheetRef}
-          className="relative select-none bg-white p-4 text-[9px] leading-tight text-black sm:text-[10px]"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-        >
           {/* Header */}
           <div className="mb-1 text-[13px] font-bold sm:text-sm">
             Vienna University of Economics and Business
@@ -500,11 +625,10 @@ function AnswerSheetModal({ onClose }: { onClose: () => void }) {
               100% { transform: scale(1); opacity: 1; }
             }
           `}</style>
-        </div>
+      </div>
 
-        <div className="border-t border-gray-200 bg-gray-50 px-4 py-2 text-center text-[10px] text-gray-500">
-          Auto-preview · Official WU answer sheet replica
-        </div>
+      <div className="border-t border-gray-200 bg-gray-50 px-4 py-2 text-center text-[10px] text-gray-500">
+        Auto-preview · Official WU answer sheet replica
       </div>
     </div>
   );
