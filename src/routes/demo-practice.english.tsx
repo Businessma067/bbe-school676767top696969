@@ -1,6 +1,8 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { AnnotatablePassage } from "@/components/AnnotatablePassage";
+
 import { cn } from "@/lib/utils";
 import {
   Check, X, ChevronLeft, ChevronRight, ChevronDown, RotateCcw,
