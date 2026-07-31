@@ -219,8 +219,58 @@ export function AnnotatablePassage({
     return out;
   };
 
+  const tools: { key: NonNullable<typeof mode>; label: string; icon: typeof Highlighter }[] = [
+    { key: "highlight", label: "Highlight", icon: Highlighter },
+    { key: "underline", label: "Underline", icon: Underline },
+    { key: "note", label: "Note", icon: StickyNote },
+    { key: "erase", label: "Erase", icon: Eraser },
+  ];
+
   return (
     <div ref={containerRef} className={cn("relative", className)} onMouseUp={onMouseUp}>
+      {/* Persistent tool bar — pick a tool first, then select text */}
+      <div className="sticky top-0 z-20 -mx-1 mb-3 flex flex-wrap items-center gap-1.5 rounded-xl border border-border bg-card/95 px-2 py-1.5 font-sans shadow-sm backdrop-blur">
+        <div className="flex items-center gap-1">
+          {COLORS.map((c) => (
+            <button
+              key={c.key}
+              onClick={() => setColor(c.key)}
+              aria-label={c.label}
+              className={cn(
+                "h-4 w-4 rounded-full border transition",
+                color === c.key ? "ring-2 ring-foreground ring-offset-1" : "border-border",
+              )}
+              style={{ backgroundColor: c.swatch }}
+            />
+          ))}
+        </div>
+        <span className="mx-0.5 h-5 w-px bg-border" />
+        {tools.map((t) => {
+          const Icon = t.icon;
+          const on = mode === t.key;
+          return (
+            <button
+              key={t.key}
+              onClick={() => setMode(on ? null : t.key)}
+              aria-pressed={on}
+              className={cn(
+                "inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold transition",
+                on
+                  ? t.key === "erase"
+                    ? "bg-destructive text-destructive-foreground"
+                    : "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary",
+              )}
+            >
+              <Icon className="h-3.5 w-3.5" /> {t.label}
+            </button>
+          );
+        })}
+        <span className="ml-auto pl-2 text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+          {mode ? "Now select the text" : "Pick a tool, then select text"}
+        </span>
+      </div>
+
       {paragraphs.map((p) => (
         <p key={p.start} className="mb-3 whitespace-pre-line">
           {segmentsFor(p.start, p.text).map((seg) => {
