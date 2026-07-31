@@ -61,6 +61,8 @@ export function AnnotatablePassage({
   const [activeAnn, setActiveAnn] = useState<{ ann: Annotation; x: number; y: number } | null>(null);
   const [noteDraft, setNoteDraft] = useState<{ target: Annotation; value: string } | null>(null);
   const [color, setColor] = useState<Annotation["color"]>("yellow");
+  const [mode, setMode] = useState<"highlight" | "underline" | "note" | "erase" | null>(null);
+
 
   useEffect(() => {
     setAnnotations(loadAnnotations(storageKey));
