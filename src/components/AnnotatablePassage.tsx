@@ -119,45 +119,60 @@ export function AnnotatablePassage({
     };
   }, []);
 
-  const onMouseUp = () => {
-    const next = readSelection();
-    setSelection(next);
-    if (next) setActiveAnn(null);
-  };
-
   const clearSelection = () => {
     window.getSelection()?.removeAllRanges();
     setSelection(null);
   };
 
-  const addAnnotation = (type: Annotation["type"], note?: string) => {
-    if (!selection) return;
+  const applyAt = (
+    range: { start: number; end: number; x: number; y: number },
+    type: Annotation["type"],
+    withNote = false,
+  ) => {
     const ann: Annotation = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      start: selection.start,
-      end: selection.end,
+      start: range.start,
+      end: range.end,
       type,
       color,
-      ...(note ? { note } : {}),
+      ...(withNote ? { note: "" } : {}),
     };
     setAnnotations((prev) => [...prev, ann]);
+    if (withNote) {
+      setActiveAnn({ ann, x: range.x, y: range.y });
+      setNoteDraft({ target: ann, value: "" });
+    }
     clearSelection();
+  };
+
+  const eraseIn = (range: { start: number; end: number }) => {
+    setAnnotations((prev) => prev.filter((a) => a.end <= range.start || a.start >= range.end));
+    clearSelection();
+  };
+
+  const onMouseUp = () => {
+    const next = readSelection();
+    if (next && mode) {
+      setActiveAnn(null);
+      if (mode === "erase") eraseIn(next);
+      else if (mode === "note") applyAt(next, "highlight", true);
+      else applyAt(next, mode);
+      return;
+    }
+    setSelection(next);
+    if (next) setActiveAnn(null);
+  };
+
+  const addAnnotation = (type: Annotation["type"]) => {
+    if (!selection) return;
+    applyAt(selection, type);
   };
 
   const startNote = () => {
     if (!selection) return;
-    const ann: Annotation = {
-      id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      start: selection.start,
-      end: selection.end,
-      type: "highlight",
-      color,
-      note: "",
-    };
-    setAnnotations((prev) => [...prev, ann]);
-    setNoteDraft({ target: ann, value: "" });
-    clearSelection();
+    applyAt(selection, "highlight", true);
   };
+
 
   const removeAnnotation = (id: string) => {
     setAnnotations((prev) => prev.filter((a) => a.id !== id));
