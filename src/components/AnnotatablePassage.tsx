@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Highlighter, Underline, StickyNote, Trash2, X } from "lucide-react";
+import { Highlighter, Underline, StickyNote, Trash2, X, Eraser } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Annotation = {
@@ -61,6 +61,8 @@ export function AnnotatablePassage({
   const [activeAnn, setActiveAnn] = useState<{ ann: Annotation; x: number; y: number } | null>(null);
   const [noteDraft, setNoteDraft] = useState<{ target: Annotation; value: string } | null>(null);
   const [color, setColor] = useState<Annotation["color"]>("yellow");
+  const [mode, setMode] = useState<"highlight" | "underline" | "note" | "erase" | null>(null);
+
 
   useEffect(() => {
     setAnnotations(loadAnnotations(storageKey));
@@ -117,45 +119,60 @@ export function AnnotatablePassage({
     };
   }, []);
 
-  const onMouseUp = () => {
-    const next = readSelection();
-    setSelection(next);
-    if (next) setActiveAnn(null);
-  };
-
   const clearSelection = () => {
     window.getSelection()?.removeAllRanges();
     setSelection(null);
   };
 
-  const addAnnotation = (type: Annotation["type"], note?: string) => {
-    if (!selection) return;
+  const applyAt = (
+    range: { start: number; end: number; x: number; y: number },
+    type: Annotation["type"],
+    withNote = false,
+  ) => {
     const ann: Annotation = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      start: selection.start,
-      end: selection.end,
+      start: range.start,
+      end: range.end,
       type,
       color,
-      ...(note ? { note } : {}),
+      ...(withNote ? { note: "" } : {}),
     };
     setAnnotations((prev) => [...prev, ann]);
+    if (withNote) {
+      setActiveAnn({ ann, x: range.x, y: range.y });
+      setNoteDraft({ target: ann, value: "" });
+    }
     clearSelection();
+  };
+
+  const eraseIn = (range: { start: number; end: number }) => {
+    setAnnotations((prev) => prev.filter((a) => a.end <= range.start || a.start >= range.end));
+    clearSelection();
+  };
+
+  const onMouseUp = () => {
+    const next = readSelection();
+    if (next && mode) {
+      setActiveAnn(null);
+      if (mode === "erase") eraseIn(next);
+      else if (mode === "note") applyAt(next, "highlight", true);
+      else applyAt(next, mode);
+      return;
+    }
+    setSelection(next);
+    if (next) setActiveAnn(null);
+  };
+
+  const addAnnotation = (type: Annotation["type"]) => {
+    if (!selection) return;
+    applyAt(selection, type);
   };
 
   const startNote = () => {
     if (!selection) return;
-    const ann: Annotation = {
-      id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      start: selection.start,
-      end: selection.end,
-      type: "highlight",
-      color,
-      note: "",
-    };
-    setAnnotations((prev) => [...prev, ann]);
-    setNoteDraft({ target: ann, value: "" });
-    clearSelection();
+    applyAt(selection, "highlight", true);
   };
+
 
   const removeAnnotation = (id: string) => {
     setAnnotations((prev) => prev.filter((a) => a.id !== id));
@@ -202,8 +219,58 @@ export function AnnotatablePassage({
     return out;
   };
 
+  const tools: { key: NonNullable<typeof mode>; label: string; icon: typeof Highlighter }[] = [
+    { key: "highlight", label: "Highlight", icon: Highlighter },
+    { key: "underline", label: "Underline", icon: Underline },
+    { key: "note", label: "Note", icon: StickyNote },
+    { key: "erase", label: "Erase", icon: Eraser },
+  ];
+
   return (
     <div ref={containerRef} className={cn("relative", className)} onMouseUp={onMouseUp}>
+      {/* Persistent tool bar — pick a tool first, then select text */}
+      <div className="sticky top-0 z-20 -mx-1 mb-3 flex flex-wrap items-center gap-1.5 rounded-xl border border-border bg-card/95 px-2 py-1.5 font-sans shadow-sm backdrop-blur">
+        <div className="flex items-center gap-1">
+          {COLORS.map((c) => (
+            <button
+              key={c.key}
+              onClick={() => setColor(c.key)}
+              aria-label={c.label}
+              className={cn(
+                "h-4 w-4 rounded-full border transition",
+                color === c.key ? "ring-2 ring-foreground ring-offset-1" : "border-border",
+              )}
+              style={{ backgroundColor: c.swatch }}
+            />
+          ))}
+        </div>
+        <span className="mx-0.5 h-5 w-px bg-border" />
+        {tools.map((t) => {
+          const Icon = t.icon;
+          const on = mode === t.key;
+          return (
+            <button
+              key={t.key}
+              onClick={() => setMode(on ? null : t.key)}
+              aria-pressed={on}
+              className={cn(
+                "inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold transition",
+                on
+                  ? t.key === "erase"
+                    ? "bg-destructive text-destructive-foreground"
+                    : "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary",
+              )}
+            >
+              <Icon className="h-3.5 w-3.5" /> {t.label}
+            </button>
+          );
+        })}
+        <span className="ml-auto pl-2 text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+          {mode ? "Now select the text" : "Pick a tool, then select text"}
+        </span>
+      </div>
+
       {paragraphs.map((p) => (
         <p key={p.start} className="mb-3 whitespace-pre-line">
           {segmentsFor(p.start, p.text).map((seg) => {
