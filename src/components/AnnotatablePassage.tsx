@@ -140,7 +140,6 @@ export function AnnotatablePassage({
     };
     setAnnotations((prev) => [...prev, ann]);
     clearSelection();
-    if (type === "highlight" && note === undefined && false) return;
   };
 
   const startNote = () => {
