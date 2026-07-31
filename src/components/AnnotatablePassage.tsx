@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Highlighter, Underline, StickyNote, Trash2, X } from "lucide-react";
+import { Highlighter, Underline, StickyNote, Trash2, X, Eraser } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Annotation = {
