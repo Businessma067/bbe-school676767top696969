@@ -33,6 +33,7 @@ import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/product
 import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
+import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
 import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
@@ -162,6 +163,11 @@ const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
   path: '/demo-practice',
   getParentRoute: () => ProductsRoute,
 } as any)
+const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
+  id: '/features/answer-sheet',
+  path: '/features/answer-sheet',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DemoPracticeEnglishRoute = DemoPracticeEnglishRouteImport.update({
   id: '/english',
   path: '/english',
@@ -214,6 +220,7 @@ export interface FileRoutesByFullPath {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
+  '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -243,6 +250,7 @@ export interface FileRoutesByTo {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
+  '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -276,6 +284,7 @@ export interface FileRoutesById {
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
+  '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -310,6 +319,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
+    | '/features/answer-sheet'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -339,6 +349,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
+    | '/features/answer-sheet'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -371,6 +382,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
+    | '/features/answer-sheet'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -401,6 +413,7 @@ export interface RootRouteChildren {
   SignupRoute: typeof SignupRoute
   TermsRoute: typeof TermsRoute
   ApiChatRoute: typeof ApiChatRoute
+  FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -573,6 +586,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsDemoPracticeRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/features/answer-sheet': {
+      id: '/features/answer-sheet'
+      path: '/features/answer-sheet'
+      fullPath: '/features/answer-sheet'
+      preLoaderRoute: typeof FeaturesAnswerSheetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/demo-practice/english': {
       id: '/demo-practice/english'
       path: '/english'
@@ -700,17 +720,8 @@ const rootRouteChildren: RootRouteChildren = {
   SignupRoute: SignupRoute,
   TermsRoute: TermsRoute,
   ApiChatRoute: ApiChatRoute,
+  FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
