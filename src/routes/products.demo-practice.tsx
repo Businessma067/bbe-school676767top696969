@@ -216,6 +216,44 @@ function DemoPracticeProduct() {
             ✓ 100% Free • Instant web access
           </p>
 
+          {/* Long description */}
+          <section className="mt-10 space-y-4 text-base leading-relaxed text-muted-foreground">
+            <p>
+              The Demo-Practice Package exists for one simple reason. Before anyone spends money on
+              exam preparation, they should be able to open the platform, sit down with real
+              questions and see for themselves whether it actually helps. So this is not a trimmed
+              down brochure version. It is the same workspace our paying students use every day,
+              with a smaller set of cases inside it.
+            </p>
+            <p>
+              You get questions from all three parts of the entrance exam. Economics with the
+              True/False statement blocks the professors love, math tasks written in the same style
+              and difficulty as the real paper, and an English reading section with a full passage
+              and its statements. Nothing here is a warm up. These are the same traps, the same
+              wording and the same partial points logic you will face at Messe Wien.
+            </p>
+            <p>
+              Every task comes with a written breakdown underneath. Not just the correct letter, but
+              the reasoning line by line, so when you get something wrong you immediately see which
+              step of your thinking went sideways. That is usually the moment students realise the
+              exam is not testing memory, it is testing how carefully you read.
+            </p>
+            <p>
+              You can also try out how the platform itself feels. Highlighting and annotating an
+              English passage, collapsing the chapter sidebar to give the question more room,
+              tracking what you have already solved, watching your accuracy appear on the dashboard
+              as you go. Your progress is saved to your account, so you can close the tab, come back
+              tomorrow and continue exactly where you stopped.
+            </p>
+            <p>
+              Half an hour in here tells you more than any description on this page. If the
+              questions feel right, if the explanations make sense to you, if the interface is
+              something you want to spend the next months inside, then upgrading later is an easy
+              decision, and everything you did in the demo carries over with you.
+            </p>
+          </section>
+
+
           <section className="mt-10">
             <h2 className="mb-5 text-center font-display text-xl font-semibold tracking-tight text-foreground">
               What You Will Master
