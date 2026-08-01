@@ -49,10 +49,10 @@ const columns: { key: ColKey; label: string }[] = [
 
 function renderValue(value: string) {
   if (value === "tick" || value === "✔️") {
-    return <Check className="mx-auto h-5 w-5 text-caramel-deep" strokeWidth={3} />;
+    return <Check className="mx-auto h-3.5 w-3.5 text-caramel-deep" strokeWidth={3} />;
   }
   if (value === "❌") {
-    return <X className="mx-auto h-5 w-5 text-gray-400" strokeWidth={2.5} />;
+    return <X className="mx-auto h-3.5 w-3.5 text-gray-400" strokeWidth={2.5} />;
   }
   return value;
 }
@@ -72,21 +72,21 @@ export function CompareTable({
     "relative bg-gradient-to-b from-[#C2643A0d] to-transparent ring-2 ring-[#C2643A] shadow-[0_0_24px_-4px_rgba(194,100,58,0.55)]";
 
   return (
-    <section className="mt-20 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
-      <div className="px-5 py-6 sm:px-6 lg:px-10 lg:py-8">
-        <div className="mb-4 text-center sm:mb-5">
-          <h2 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl lg:text-3xl">
+    <section className="mt-14 overflow-hidden rounded-3xl border border-border bg-card text-foreground shadow-sm">
+      <div className="px-3 py-3 sm:px-4 lg:px-6 lg:py-4">
+        <div className="mb-2 text-center sm:mb-3">
+          <h2 className="font-display text-sm font-bold tracking-tight text-foreground sm:text-base lg:text-lg">
             {heading}
           </h2>
-          <p className="mt-1.5 text-xs text-muted-foreground">{subheading}</p>
+          <p className="mt-1 text-[10px] text-muted-foreground">{subheading}</p>
         </div>
 
         {/* Desktop table */}
         <div className="hidden overflow-x-auto rounded-2xl border border-border bg-background sm:block">
-          <table className="w-full min-w-[720px] border-collapse text-sm">
+          <table className="w-full min-w-[620px] border-collapse text-[11px]">
             <thead>
               <tr className="border-b border-border bg-muted/50">
-                <th className="sticky left-0 z-10 w-[220px] bg-muted px-4 py-4 text-left font-display text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                <th className="sticky left-0 z-10 w-[170px] bg-muted px-2.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
                   Compare
                 </th>
                 {columns.map((col) => {
@@ -95,7 +95,7 @@ export function CompareTable({
                   return (
                     <th
                       key={col.key}
-                      className={`px-4 py-4 text-center font-display text-xs font-semibold uppercase tracking-widest ${
+                      className={`px-2.5 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
                         isHi ? "text-foreground bg-muted " + hiClass : "text-muted-foreground bg-muted/50"
                       } ${isDim ? dimClass : ""}`}
                     >
@@ -111,7 +111,7 @@ export function CompareTable({
                   <tr key={section.title} className="border-t border-border">
                     <td
                       colSpan={4}
-                      className="sticky left-0 z-10 bg-background px-4 py-3 text-left font-display text-xs font-semibold uppercase tracking-widest text-caramel-deep"
+                      className="sticky left-0 z-10 bg-background px-2.5 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                     >
                       {section.title}
                     </td>
@@ -121,7 +121,7 @@ export function CompareTable({
                       key={row.label}
                       className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
                     >
-                      <td className="sticky left-0 z-10 w-[220px] bg-background px-4 py-3.5 font-medium text-foreground/90">
+                      <td className="sticky left-0 z-10 w-[170px] bg-background px-2.5 py-1.5 font-medium text-foreground/90">
                         {row.label}
                       </td>
                       {columns.map((col) => {
@@ -130,7 +130,7 @@ export function CompareTable({
                         return (
                           <td
                             key={col.key}
-                            className={`px-4 py-3.5 text-center font-medium text-foreground/80 ${
+                            className={`px-2.5 py-1.5 text-center font-medium text-foreground/80 ${
                               isHi ? hiClass : ""
                             } ${isDim ? dimClass : ""}`}
                           >
@@ -142,7 +142,7 @@ export function CompareTable({
                   ))}
                   {sectionIdx < comparisonSections.length - 1 && (
                     <tr className="border-t border-border">
-                      <td colSpan={4} className="h-2 bg-background" />
+                      <td colSpan={4} className="h-1 bg-background" />
                     </tr>
                   )}
                 </>
@@ -154,10 +154,10 @@ export function CompareTable({
         {/* Mobile unified table */}
         <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[340px] border-collapse text-sm">
+            <table className="w-full min-w-[320px] border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
-                  <th className="sticky left-0 z-10 w-[140px] bg-muted px-3 py-3 text-left font-display text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+                  <th className="sticky left-0 z-10 w-[120px] bg-muted px-2 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
                     Compare
                   </th>
                   {columns.map((col) => {
@@ -166,7 +166,7 @@ export function CompareTable({
                     return (
                       <th
                         key={col.key}
-                        className={`px-2 py-3 text-center font-display text-[10px] font-semibold uppercase tracking-widest ${
+                        className={`px-1.5 py-1.5 text-center font-display text-[9px] font-semibold uppercase tracking-widest ${
                           isHi ? "text-foreground bg-muted " + hiClass : "text-muted-foreground bg-muted/50"
                         } ${isDim ? dimClass : ""}`}
                       >
@@ -182,7 +182,7 @@ export function CompareTable({
                     <tr key={section.title} className="border-t border-border">
                       <td
                         colSpan={4}
-                        className="sticky left-0 z-10 bg-background px-3 py-2 text-left font-display text-[10px] font-semibold uppercase tracking-widest text-caramel-deep"
+                        className="sticky left-0 z-10 bg-background px-2 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                       >
                         {section.title}
                       </td>
@@ -192,7 +192,7 @@ export function CompareTable({
                         key={row.label}
                         className={`border-t border-border ${rowIdx % 2 === 0 ? "bg-muted/[0.4]" : "bg-transparent"}`}
                       >
-                        <td className="sticky left-0 z-10 w-[140px] bg-background px-3 py-3 text-xs font-medium text-foreground/90">
+                        <td className="sticky left-0 z-10 w-[120px] bg-background px-2 py-1.5 text-[10px] font-medium text-foreground/90">
                           {row.label}
                         </td>
                         {columns.map((col) => {
@@ -201,7 +201,7 @@ export function CompareTable({
                           return (
                             <td
                               key={col.key}
-                              className={`px-2 py-3 text-center text-xs font-medium text-foreground/80 ${
+                              className={`px-1.5 py-1.5 text-center text-[10px] font-medium text-foreground/80 ${
                                 isHi ? hiClass : ""
                               } ${isDim ? dimClass : ""}`}
                             >
@@ -213,7 +213,7 @@ export function CompareTable({
                     ))}
                     {sectionIdx < comparisonSections.length - 1 && (
                       <tr className="border-t border-border">
-                        <td colSpan={4} className="h-2 bg-background" />
+                        <td colSpan={4} className="h-1 bg-background" />
                       </tr>
                     )}
                   </>
