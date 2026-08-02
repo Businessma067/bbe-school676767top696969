@@ -107,13 +107,10 @@ function FeatureCard({ feature }: { feature: Feature }) {
         ))}
       </div>
 
-      <div className="flex shrink-0 items-center justify-center bg-secondary/50 p-4 sm:w-[42%]">
-        <img
-          src={feature.image}
-          alt={feature.title}
-          className="h-56 w-full rounded-lg object-contain sm:h-full sm:max-h-72"
-          loading="lazy"
-        />
+      <div className="relative flex h-64 sm:h-72 shrink-0 items-center justify-center overflow-hidden sm:w-[42%]">
+        <div className="absolute left-1/2 top-1/2 w-[320px] -translate-x-1/2 -translate-y-1/2 scale-[0.50] sm:scale-[0.60]">
+          <AnswerSheetPreview />
+        </div>
       </div>
 
 
