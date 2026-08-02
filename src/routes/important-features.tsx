@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
-import answerSheetImg from "@/assets/answer-sheet-simulator.png.asset.json";
+import { AnswerSheetPreview } from "@/components/AnswerSheetPreview";
 
 export const Route = createFileRoute("/important-features")({
   head: () => ({
@@ -26,7 +26,6 @@ export const Route = createFileRoute("/important-features")({
 type Feature = {
   title: string;
   description: string;
-  image: string;
   tags: [string, string];
   to: string;
 };
@@ -36,7 +35,6 @@ const features: Feature[] = [
     title: "Official Answer Sheet",
     description:
       "Practice transferring your answers into a perfect digital replica of the official WU Vienna answer sheet to eliminate technical mistakes under exam pressure.",
-    image: answerSheetImg.url,
     tags: ["#Stress & Focus", "#Time Management"],
     to: "/features/answer-sheet",
   },
