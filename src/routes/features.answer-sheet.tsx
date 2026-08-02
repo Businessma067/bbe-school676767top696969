@@ -77,10 +77,13 @@ function AnswerSheetFeaturePage() {
 
       <main className="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-14">
         {/* Top: interactive preview left, intro text right */}
-        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,46%)_minmax(0,54%)] lg:gap-12">
-          <div className="flex justify-center rounded-2xl border border-border bg-secondary/60 p-4 shadow-sm sm:p-6">
-            <AnswerSheetPreview />
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,38%)_minmax(0,62%)] lg:gap-12">
+          <div className="flex items-start justify-center overflow-hidden rounded-2xl border border-border bg-secondary/60 p-4 shadow-sm sm:p-6">
+            <div className="w-full origin-top scale-[0.92] sm:scale-100 lg:scale-[0.64] lg:-mb-[272px]">
+              <AnswerSheetPreview />
+            </div>
           </div>
+
 
           <div>
             <span className="mb-3 inline-block rounded-full border border-border bg-card px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
@@ -97,7 +100,17 @@ function AnswerSheetFeaturePage() {
               points they had already earned.
             </p>
 
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            <blockquote
+              className="mt-5 border-l-2 pl-4 text-base italic leading-relaxed text-foreground"
+              style={{ borderColor: PRODUCT_ORANGE }}
+            >
+              "I knew every answer. I just ran out of time writing them down."
+              <span className="mt-1 block text-xs not-italic text-muted-foreground">
+                — a repeat applicant, after his first attempt
+              </span>
+            </blockquote>
+
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Almost nobody trains it. People drill questions, not the transfer. So on exam day even
               students who were at the top of their class suddenly find themselves checking row
               numbers twice, second guessing an alignment, or racing the last three minutes with
@@ -113,8 +126,8 @@ function AnswerSheetFeaturePage() {
           </div>
         </div>
 
-        {/* Continuation of the text below */}
-        <section className="mt-12 max-w-3xl">
+        {/* Continuation of the text, full width */}
+        <section className="mt-12">
           <h2 className="font-display text-2xl font-bold tracking-tight text-foreground">
             How it lives inside our mock exams
           </h2>
@@ -134,7 +147,24 @@ function AnswerSheetFeaturePage() {
             you rushed. Nothing is locked until you submit.
           </p>
 
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <ul className="mt-5 space-y-2.5">
+            {[
+              "The same header fields: last name, first name, signature, exam ID.",
+              "The same grid and the same row logic as the printed optical sheet.",
+              "Every mark editable until you submit, so a rushed row can be cleaned up.",
+              "One shared timer for solving and transferring, never two separate clocks.",
+            ].map((item) => (
+              <li key={item} className="flex gap-3 text-base leading-relaxed text-muted-foreground">
+                <span
+                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
+                  style={{ backgroundColor: PRODUCT_ORANGE }}
+                />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-5 text-base leading-relaxed text-muted-foreground">
             That freedom is deliberate. There is no single correct way to transfer answers, and we
             are not going to teach you one. What actually matters is that you find the method that
             fits how you think, and then repeat it until it costs you no attention at all. Some
@@ -142,6 +172,34 @@ function AnswerSheetFeaturePage() {
             on the question paper and give themselves a firm eight minute window at the end. Both
             work. Both fail if you try them for the first time on exam day.
           </p>
+
+          <div
+            className="mt-8 rounded-2xl border p-6"
+            style={{
+              borderColor: `${PRODUCT_ORANGE}55`,
+              backgroundColor: `${PRODUCT_ORANGE}10`,
+            }}
+          >
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              What we actually recommend
+            </p>
+            <p className="mt-2 font-display text-lg font-semibold leading-snug text-foreground">
+              Fill in the answer sheet right after you finish a subject. Not earlier, not at the
+              very end.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              This is the fastest and most reliable rhythm we have seen in practice. When you close
+              a subject and immediately move its answers over, your head stays inside one subject at
+              a time instead of jumping back and forth between economics rows and math rows. The
+              block is fresh, the numbering is still in your short term memory, and you are checking
+              one clean range of rows instead of hunting through the whole grid.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              It also leaves you room to change your mind. You still have the rest of the exam ahead
+              of you, so if something clicks later, you can come back and fix a mark calmly instead
+              of doing it in the final minute with a queue already forming at the front of the hall.
+            </p>
+          </div>
 
           <figure className="my-10 overflow-hidden rounded-2xl border border-border shadow-sm">
             <img
@@ -155,7 +213,7 @@ function AnswerSheetFeaturePage() {
               desks, one shared clock on the wall, and no chance to ask a question once the papers
               are handed out. Every person here already knows the material. What separates them by
               the end is how calmly they handle the last few minutes, when the only thing left to do
-              is move forty answers onto one page without a single misplaced row.
+              is move your answers onto one page without a single misplaced row.
             </figcaption>
           </figure>
 
@@ -177,9 +235,16 @@ function AnswerSheetFeaturePage() {
             impossible to build by reading about it.
           </p>
 
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Do it enough times here and exam day stops being your first attempt. The sheet becomes
-            the boring part of the exam, which is exactly what it should be.
+          <blockquote
+            className="mt-6 border-l-2 pl-4 text-base italic leading-relaxed text-foreground"
+            style={{ borderColor: PRODUCT_ORANGE }}
+          >
+            "The sheet should be the boring part of your exam. If it is the stressful part, you
+            simply have not done it enough times yet."
+          </blockquote>
+
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            Do it enough times here and exam day stops being your first attempt.
           </p>
 
           <div
@@ -197,6 +262,7 @@ function AnswerSheetFeaturePage() {
             </p>
           </div>
         </section>
+
 
         <section className="mt-12">
           <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">

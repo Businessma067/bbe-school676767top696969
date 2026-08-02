@@ -1172,9 +1172,6 @@ function ReadingPanel({
           <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
             <BookOpen className="h-3.5 w-3.5" /> Reading Text
           </span>
-          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
-            Select text → highlight · underline · note
-          </span>
         </div>
         <div ref={scrollRef} className="h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
           <AnnotatablePassage
