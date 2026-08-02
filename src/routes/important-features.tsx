@@ -97,7 +97,7 @@ function ImportantFeaturesPage() {
 
 function FeatureCard({ feature }: { feature: Feature }) {
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
+    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md sm:flex-row">
       <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-1.5">
         {feature.tags.map((tag) => (
           <span
@@ -109,14 +109,15 @@ function FeatureCard({ feature }: { feature: Feature }) {
         ))}
       </div>
 
-      <div className="flex items-center justify-center bg-secondary/50 p-4">
+      <div className="flex shrink-0 items-center justify-center bg-secondary/50 p-4 sm:w-[42%]">
         <img
           src={feature.image}
           alt={feature.title}
-          className="h-44 w-full rounded-lg object-contain"
+          className="h-56 w-full rounded-lg object-contain sm:h-full sm:max-h-72"
           loading="lazy"
         />
       </div>
+
 
       <div className="flex flex-1 flex-col gap-3 p-5">
         <h2 className="font-display text-lg font-bold tracking-tight text-foreground">
