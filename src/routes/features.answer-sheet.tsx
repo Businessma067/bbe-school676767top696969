@@ -78,8 +78,8 @@ function AnswerSheetFeaturePage() {
       <main className="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-14">
         {/* Top: interactive preview left, intro text right */}
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,38%)_minmax(0,62%)] lg:gap-12">
-          <div className="flex items-start justify-center overflow-hidden rounded-2xl border border-border bg-secondary/60 p-4 shadow-sm sm:p-6">
-            <div className="w-full origin-top scale-[0.92] sm:scale-100 lg:scale-[0.64] lg:-mb-[272px]">
+          <div className="flex items-start justify-center overflow-hidden rounded-2xl">
+            <div className="w-full origin-top scale-[0.92] sm:scale-100 lg:scale-[0.68] lg:-mb-[242px]">
               <AnswerSheetPreview />
             </div>
           </div>

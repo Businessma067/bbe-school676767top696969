@@ -306,9 +306,6 @@ export function AnswerSheetPreview() {
           `}</style>
       </div>
 
-      <div className="border-t border-gray-200 bg-gray-50 px-4 py-2 text-center text-[10px] text-gray-500">
-        Auto-preview · Official WU answer sheet replica
-      </div>
     </div>
   );
 }
