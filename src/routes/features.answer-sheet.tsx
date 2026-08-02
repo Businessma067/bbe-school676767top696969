@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Clock, ClipboardCheck, Focus, ArrowLeft } from "lucide-react";
-import { AnswerSheetPreview } from "@/components/AnswerSheetPreview";
+import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import examHallImg from "@/assets/exam-hall-real.png.asset.json";
 
 export const Route = createFileRoute("/features/answer-sheet")({
@@ -78,12 +78,7 @@ function AnswerSheetFeaturePage() {
       <main className="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-14">
         {/* Top: interactive preview left, intro text right */}
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,38%)_minmax(0,62%)] lg:gap-12">
-          <div className="flex items-start justify-center overflow-hidden rounded-2xl">
-            <div className="w-full origin-top scale-[0.92] sm:scale-100 lg:scale-[0.68] lg:-mb-[242px]">
-              <AnswerSheetPreview />
-            </div>
-          </div>
-
+          <AnswerSheetPreviewFill fit="width" className="w-full" />
 
           <div>
             <span className="mb-3 inline-block rounded-full border border-border bg-card px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">

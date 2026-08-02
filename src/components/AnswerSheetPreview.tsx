@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 /* ============================================================
    Animated Answer Sheet Preview
@@ -28,7 +29,7 @@ const CLICK_SEQUENCE: Mark[] = [
   { row: 10, col: 4 },
 ];
 
-export function AnswerSheetPreview() {
+export function AnswerSheetPreview({ embedded = false }: { embedded?: boolean }) {
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [sigProgress, setSigProgress] = useState(0); // 0..1
@@ -51,14 +52,37 @@ export function AnswerSheetPreview() {
     return id;
   };
 
-  const centerOf = (el: HTMLElement | null) => {
+  /** Maps viewport coords (after CSS scale on ancestors) back to local sheet pixels. */
+  const sheetScale = () => {
     const sheet = sheetRef.current;
-    if (!el || !sheet) return { x: 0, y: 0 };
+    if (!sheet) return 1;
+    const visual = sheet.getBoundingClientRect().width;
+    const local = sheet.offsetWidth;
+    return local > 0 && visual > 0 ? visual / local : 1;
+  };
+
+  const toLocalPoint = (el: HTMLElement, offsetX = 0, offsetY = 0) => {
+    const sheet = sheetRef.current;
+    if (!sheet) return { x: 0, y: 0 };
     const s = sheet.getBoundingClientRect();
     const r = el.getBoundingClientRect();
+    const scale = sheetScale();
     return {
-      x: r.left - s.left + r.width / 2,
-      y: r.top - s.top + r.height / 2,
+      x: (r.left - s.left) / scale + offsetX,
+      y: (r.top - s.top) / scale + offsetY,
+    };
+  };
+
+  const centerOf = (el: HTMLElement | null) => {
+    if (!el) return { x: 0, y: 0 };
+    const sheet = sheetRef.current;
+    if (!sheet) return { x: 0, y: 0 };
+    const s = sheet.getBoundingClientRect();
+    const r = el.getBoundingClientRect();
+    const scale = sheetScale();
+    return {
+      x: (r.left - s.left + r.width / 2) / scale,
+      y: (r.top - s.top + r.height / 2) / scale,
     };
   };
 
@@ -110,15 +134,10 @@ export function AnswerSheetPreview() {
 
       // --- Glide (as pointer) toward the signature line, THEN pick up the pen ---
       schedule(() => {
-        const sheet = sheetRef.current;
         const sig = sigRef.current;
-        if (sheet && sig) {
-          const s = sheet.getBoundingClientRect();
-          const r = sig.getBoundingClientRect();
-          setCursor({
-            x: r.left - s.left + 6,
-            y: r.top - s.top + r.height / 2,
-          });
+        if (sig) {
+          const p = toLocalPoint(sig, 6, sig.offsetHeight / 2);
+          setCursor({ x: p.x, y: p.y });
         }
       }, t);
       t += 900; // let the smooth pointer transition finish
@@ -134,15 +153,11 @@ export function AnswerSheetPreview() {
         const p = i / sigSteps;
         schedule(() => {
           setSigProgress(p);
-          const sheet = sheetRef.current;
           const sig = sigRef.current;
-          if (sheet && sig) {
-            const s = sheet.getBoundingClientRect();
-            const r = sig.getBoundingClientRect();
-            const x = r.left - s.left + 6 + p * SIG_TEXT_WIDTH;
+          if (sig) {
+            const base = toLocalPoint(sig, 6, sig.offsetHeight / 2);
             const wobble = Math.sin(p * Math.PI * 3) * 1.2;
-            const y = r.top - s.top + r.height / 2 + wobble;
-            setCursor({ x, y });
+            setCursor({ x: base.x + p * SIG_TEXT_WIDTH, y: base.y + wobble });
           }
         }, t);
         t += 45;
@@ -189,10 +204,17 @@ export function AnswerSheetPreview() {
 
   return (
     <div
-      className="relative w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl"
-      style={{
-        boxShadow: `0 20px 60px -10px ${ORANGE}55, 0 0 0 2px ${ORANGE}`,
-      }}
+      className={cn(
+        "relative w-full overflow-hidden bg-white",
+        embedded ? "w-[448px]" : "max-w-md rounded-2xl shadow-2xl",
+      )}
+      style={
+        embedded
+          ? undefined
+          : {
+              boxShadow: `0 20px 60px -10px ${ORANGE}55, 0 0 0 2px ${ORANGE}`,
+            }
+      }
     >
       <div
         ref={sheetRef}
@@ -306,6 +328,99 @@ export function AnswerSheetPreview() {
           `}</style>
       </div>
 
+    </div>
+  );
+}
+
+const NEON_FRAME =
+  "rounded-2xl p-[2px] shadow-[0_20px_60px_-10px_rgba(234,106,44,0.33)]";
+const NEON_BORDER_BG = { backgroundColor: ORANGE };
+
+/** Scales the animated preview to fill its container. Neon border stays on the frame. */
+export function AnswerSheetPreviewFill({
+  className,
+  fit = "cover",
+}: {
+  className?: string;
+  /** cover = edge-to-edge fill; width = fit column width, full height visible */
+  fit?: "cover" | "width";
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [layout, setLayout] = useState({ scale: 1, width: 0, height: 0 });
+
+  useLayoutEffect(() => {
+    const update = () => {
+      const container = containerRef.current;
+      const content = contentRef.current;
+      if (!container || !content) return;
+
+      const contentW = content.offsetWidth;
+      const contentH = content.offsetHeight;
+      if (!contentW || !contentH) return;
+
+      if (fit === "width") {
+        const cw = container.clientWidth;
+        if (!cw) return;
+        const scale = cw / contentW;
+        setLayout({ scale, width: cw, height: contentH * scale });
+        return;
+      }
+
+      const cw = container.clientWidth;
+      const ch = container.clientHeight;
+      if (!cw || !ch) return;
+
+      const scale = Math.max(cw / contentW, ch / contentH);
+      setLayout({ scale, width: cw, height: ch });
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    if (containerRef.current) ro.observe(containerRef.current);
+    return () => ro.disconnect();
+  }, [fit]);
+
+  if (fit === "width") {
+    return (
+      <div ref={containerRef} className={cn("w-full", className)}>
+        <div
+          className={NEON_FRAME}
+          style={{
+            ...NEON_BORDER_BG,
+            width: layout.width || undefined,
+            height: layout.height || undefined,
+          }}
+        >
+          <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white">
+            <div
+              className="absolute left-0 top-0 origin-top-left"
+              style={{ transform: `scale(${layout.scale})` }}
+            >
+              <div ref={contentRef}>
+                <AnswerSheetPreview embedded />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div ref={containerRef} className={cn("relative", className)}>
+      <div className={cn("h-full w-full", NEON_FRAME)} style={NEON_BORDER_BG}>
+        <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white">
+          <div
+            className="absolute left-1/2 top-1/2"
+            style={{ transform: `translate(-50%, -50%) scale(${layout.scale})` }}
+          >
+            <div ref={contentRef}>
+              <AnswerSheetPreview embedded />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

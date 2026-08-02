@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
-import { AnswerSheetPreview } from "@/components/AnswerSheetPreview";
+import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 
 export const Route = createFileRoute("/important-features")({
   head: () => ({
@@ -107,11 +107,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
         ))}
       </div>
 
-      <div className="relative flex h-64 sm:h-72 shrink-0 items-center justify-center overflow-hidden sm:w-[42%]">
-        <div className="absolute left-1/2 top-1/2 w-[320px] -translate-x-1/2 -translate-y-1/2 scale-[0.50] sm:scale-[0.60]">
-          <AnswerSheetPreview />
-        </div>
-      </div>
+      <AnswerSheetPreviewFill className="h-64 shrink-0 sm:h-72 sm:w-[42%]" />
 
 
       <div className="flex flex-1 flex-col gap-3 p-5">
