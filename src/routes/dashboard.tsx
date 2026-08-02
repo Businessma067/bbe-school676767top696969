@@ -115,7 +115,7 @@ function DashboardPage() {
             />
             <SideItem
               icon={<ClipboardCheck className="h-4 w-4" />}
-              label="Mocks"
+              label="Mock Exams"
               active={tab === "mocks"}
               onClick={() => setTab("mocks")}
             />
@@ -165,7 +165,7 @@ function DashboardPage() {
 
           <div className="mt-6 flex gap-2 sm:hidden">
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>Courses</MobileTab>
-            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mocks</MobileTab>
+            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mock Exams</MobileTab>
           </div>
 
           <div className="mt-8">
