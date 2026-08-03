@@ -333,7 +333,7 @@ export function AnswerSheetPreview({ embedded = false }: { embedded?: boolean })
 }
 
 const NEON_FRAME =
-  "rounded-2xl p-[2px] shadow-[0_20px_60px_-10px_rgba(234,106,44,0.33)]";
+  "rounded-2xl p-px shadow-[0_20px_60px_-10px_rgba(234,106,44,0.33)]";
 const NEON_BORDER_BG = { backgroundColor: ORANGE };
 
 /** Scales the animated preview to fill its container. Neon border stays on the frame. */
