@@ -96,17 +96,6 @@ function ImportantFeaturesPage() {
 function FeatureCard({ feature }: { feature: Feature }) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md sm:flex-row">
-      <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-1.5">
-        {feature.tags.map((tag) => (
-          <span
-            key={tag}
-            className="rounded-md bg-foreground/85 px-1.5 py-0.5 text-[9px] font-bold tracking-tight text-background backdrop-blur-sm"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
       <AnswerSheetPreviewFill className="h-64 shrink-0 sm:h-72 sm:w-[42%]" />
 
 
@@ -124,6 +113,17 @@ function FeatureCard({ feature }: { feature: Feature }) {
             View More
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
+
+          <div className="flex flex-wrap gap-1.5">
+            {feature.tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-md border border-border bg-secondary/70 px-1.5 py-0.5 text-[9px] font-bold tracking-tight text-muted-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
             <Lock className="h-3 w-3" />
