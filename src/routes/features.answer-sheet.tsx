@@ -118,6 +118,37 @@ function AnswerSheetFeaturePage() {
               without a seat. The material was never the problem. Nobody prepared them for the last
               ten minutes.
             </p>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              The panel on the left is the tool itself, running exactly as it does inside a mock
+              exam. Name fields, signature, exam ID, and a forty row grid that behaves like the
+              printed original. Nothing here is a picture of the sheet; it is the sheet you will
+              actually work with.
+            </p>
+
+            <ul className="mt-5 space-y-2">
+              {[
+                "Built into every mock exam, on the same running clock.",
+                "Every mark stays editable until you press submit.",
+                "Fill it row by row, block by block, or all at the end.",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex gap-3 text-sm leading-relaxed text-muted-foreground"
+                >
+                  <span
+                    className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
+                    style={{ backgroundColor: PRODUCT_ORANGE }}
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              Do it a dozen times in practice and the transfer stops being an event. It becomes the
+              quiet, automatic ending of an exam you have already finished in your head.
+            </p>
           </div>
         </div>
 
@@ -204,11 +235,8 @@ function AnswerSheetFeaturePage() {
               className="h-64 w-full object-cover sm:h-96"
             />
             <figcaption className="bg-card px-5 py-4 text-sm leading-relaxed text-muted-foreground">
-              This is the room the answer sheet is filled in: thousands of applicants at single
-              desks, one shared clock on the wall, and no chance to ask a question once the papers
-              are handed out. Every person here already knows the material. What separates them by
-              the end is how calmly they handle the last few minutes, when the only thing left to do
-              is move your answers onto one page without a single misplaced row.
+              The room where the sheet is filled in: single desks, one shared clock, no questions
+              allowed. Everyone here knows the material. The last few minutes decide the rest.
             </figcaption>
           </figure>
 

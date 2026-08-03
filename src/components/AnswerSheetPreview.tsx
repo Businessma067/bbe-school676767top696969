@@ -333,7 +333,7 @@ export function AnswerSheetPreview({ embedded = false }: { embedded?: boolean })
 }
 
 const NEON_FRAME =
-  "rounded-2xl p-[2px] shadow-[0_20px_60px_-10px_rgba(234,106,44,0.33)]";
+  "rounded-2xl p-px shadow-[0_20px_60px_-10px_rgba(234,106,44,0.33)]";
 const NEON_BORDER_BG = { backgroundColor: ORANGE };
 
 /** Scales the animated preview to fill its container. Neon border stays on the frame. */
@@ -392,7 +392,7 @@ export function AnswerSheetPreviewFill({
             height: layout.height || undefined,
           }}
         >
-          <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white">
+          <div className="relative h-full w-full overflow-hidden rounded-[15px] bg-white">
             <div
               className="absolute left-0 top-0 origin-top-left"
               style={{ transform: `scale(${layout.scale})` }}
@@ -410,7 +410,7 @@ export function AnswerSheetPreviewFill({
   return (
     <div ref={containerRef} className={cn("relative", className)}>
       <div className={cn("h-full w-full", NEON_FRAME)} style={NEON_BORDER_BG}>
-        <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white">
+        <div className="relative h-full w-full overflow-hidden rounded-[15px] bg-white">
           <div
             className="absolute left-1/2 top-1/2"
             style={{ transform: `translate(-50%, -50%) scale(${layout.scale})` }}
