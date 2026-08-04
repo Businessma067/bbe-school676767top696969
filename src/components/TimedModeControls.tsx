@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, Gauge, Timer, TimerOff, X } from "lucide-react";
+import { Clock, Gauge, Timer, TimerOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   DIFFICULTY_LABEL,
@@ -189,5 +189,3 @@ export function TimerStatusDot({ entry }: { entry: QuestionTimerState | undefine
   const m = map[status];
   return <span title={m.title} aria-label={m.title} className={cn("h-1.5 w-1.5 shrink-0 rounded-full", m.cls)} />;
 }
-
-export { X as _X };
