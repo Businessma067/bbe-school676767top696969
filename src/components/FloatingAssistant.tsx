@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
+import { supabase } from "@/integrations/supabase/client";
 
 function preprocessMath(src: string): string {
   if (!src) return src;
@@ -35,8 +36,6 @@ function preprocessMath(src: string): string {
 }
 
 type ChatMsg = { id: string; role: "user" | "assistant"; text: string };
-
-import { supabase } from "@/integrations/supabase/client";
 
 export function FloatingAssistant() {
   const [open, setOpen] = useState(false);
