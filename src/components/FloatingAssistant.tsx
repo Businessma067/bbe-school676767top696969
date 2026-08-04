@@ -36,6 +36,8 @@ function preprocessMath(src: string): string {
 
 type ChatMsg = { id: string; role: "user" | "assistant"; text: string };
 
+import { supabase } from "@/integrations/supabase/client";
+
 export function FloatingAssistant() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMsg[]>([]);
@@ -59,9 +61,15 @@ export function FloatingAssistant() {
     setLoading(true);
 
     try {
+      const { data: sessionData } = await supabase.auth.getSession();
+      const accessToken = sessionData.session?.access_token;
+      if (!accessToken) throw new Error("Please sign in to use the assistant.");
       const res = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`,
+        },
         body: JSON.stringify({
           messages: newMessages.map((m) => ({
             id: m.id,

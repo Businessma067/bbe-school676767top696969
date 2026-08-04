@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { streamText, convertToModelMessages, type UIMessage } from "ai";
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
 import bookData from "@/data/book-embeddings.json";
+import { getAuthenticatedUserId } from "@/lib/require-auth.server";
 
 const SYSTEM_PROMPT = `You are the BBE School AI assistant — a knowledgeable tutor + site guide for students preparing for the WU Vienna BBE entrance exam (2027 cohort).
 
@@ -135,6 +136,9 @@ export const Route = createFileRoute("/api/chat")({
   server: {
     handlers: {
       POST: async ({ request }) => {
+        const userId = await getAuthenticatedUserId(request);
+        if (!userId) return new Response("Unauthorized", { status: 401 });
+
         const { messages } = (await request.json()) as { messages?: UIMessage[] };
         if (!Array.isArray(messages)) {
           return new Response("Messages are required", { status: 400 });
