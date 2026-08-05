@@ -810,6 +810,11 @@ function CaseCard({
             Passed
           </span>
         )}
+        {timerNote && (
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+            {timerNote}
+          </span>
+        )}
         {inRevision && (
           <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
             In revision
