@@ -519,8 +519,15 @@ function EconomicsTasks() {
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
+              reviewOnly={!!activeTimer?.reviewOnly}
+              timerNote={
+                activeTimer?.timedOut && activeTimer.status !== "submitted"
+                  ? "Failed on time"
+                  : null
+              }
               onGraded={(allCorrect, correctCount) => {
                 recordResult(activeCase.id, allCorrect);
+                if (timed.enabled) timed.markSubmitted(activeCase.id);
                 void recordTaskAttempt({
                   subject: "economics",
                   chapter: `Chapter ${chapterOf(activeCase)}`,
