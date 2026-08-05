@@ -1633,7 +1633,7 @@
       "Opportunity cost applies only when both alternatives have explicit price tags attached.",
       "Leisure time spent volunteering forfeits paid work hours that could have been chosen instead.",
       "Non-financial enjoyment never enters opportunity-cost reasoning under any circumstances.",
-      "Scarce time creates opportunity cost even when the chosen activity has zero monetary price."
+      "Scarce time creates opportunity cost while other determinants remain unchanged."
     ],
     "answer_key": [
       true,
@@ -1805,7 +1805,7 @@
     "statements": [
       "Any price change anywhere is automatically macroeconomics regardless of scope analysed.",
       "Because a national bonus programme exists, her purchase automatically becomes macroeconomics instead of micro.",
-      "Microeconomics and macroeconomics are unrelated subjects with no shared foundation (alt 2.3/2).",
+      "A single café changing cake prices is automatically a macroeconomic event.",
       "Nationwide statistics on total car sales after the bonus would be macroeconomic analysis.",
       "Microeconomics and macroeconomics study identical questions with no meaningful scope difference."
     ],
@@ -1890,10 +1890,10 @@
     "title": "BrewPeak espresso price hike",
     "context": "Inês raises BrewPeak espresso prices after imported bean costs rise, thinking only about her Porto shop. Evaluate:",
     "statements": [
-      "Economics fails as a science because human behaviour can never be studied with theories (alt 2.3/9).",
+      "National unemployment figures belong to microeconomics because each worker is an individual.",
       "Macroeconomics is simply the study of any price change, including one café's espresso price.",
-      "Household budget choices are excluded from economics because only businesses matter (alt 2.3/10).",
-      "Macroeconomics cannot explain recessions because only micro markets exist (alt 2.3/11).",
+      "Microeconomics never studies how two firms interact in one product market.",
+      "Macroeconomics refuses to discuss inflation because inflation starts in single shops.",
       "Economics remains a science building theories to explain and predict behaviour despite imperfect human prediction."
     ],
     "answer_key": [
@@ -2064,7 +2064,7 @@
     "title": "Startup funding round",
     "context": "Ten startups in a city receive venture funding; an analyst studies only one robotics firm's hiring plan. Evaluate:",
     "statements": [
-      "Any price change anywhere is automatically macroeconomics regardless of scope analysed (alt 2.3/1).",
+      "Choosing a smartphone brand is classified as macroeconomics once the price exceeds €500.",
       "Because venture capital is a national phenomenon, any firm-level study becomes macroeconomics.",
       "Summing all startup investment in the country to assess economic growth would be macroeconomics.",
       "Microeconomics explains and predicts behaviour of individual businesses and markets.",
@@ -2093,9 +2093,9 @@
     "title": "Kelvinia rate rise",
     "context": "Kelvinia's central bank raises the key interest rate nationwide to slow inflation. Evaluate:",
     "statements": [
-      "Micro and macro study identical questions with no meaningful difference in scope (alt 2.3/12).",
-      "Any price change anywhere is automatically macroeconomics regardless of scope analysed (alt 2.3/13).",
-      "Microeconomics and macroeconomics are unrelated subjects with no shared foundation (alt 2.3/14).",
+      "GDP growth and one household's grocery list are analysed with identical tools and the same scope.",
+      "Interest rates on national policy are a micro topic because each loan is signed by one borrower.",
+      "Microeconomics covers only diagrams; macroeconomics covers only newspaper opinion.",
       "Because mortgages of specific families change, the central-bank move is automatically microeconomics.",
       "Economics tries to build theories explaining why central banks raise rates and predict inflation effects."
     ],
@@ -2238,7 +2238,7 @@
     "title": "ECB inflation target discussion",
     "context": "Commentators discuss whether euro-area inflation at 2.3% requires tighter policy across the whole currency bloc. Evaluate:",
     "statements": [
-      "Economics fails as a science because human behaviour can never be studied with theories (alt 2.3/3).",
+      "If a statement mentions price, it must be macroeconomics regardless of whose price it is.",
       "Inflation measurement for one grocery item in one shop is macroeconomics because inflation is involved.",
       "A household reacting to higher bread prices by switching brands is microeconomics.",
       "Macroeconomics tries to explain and predict economy-wide price level changes and policy responses.",
@@ -2298,7 +2298,7 @@
     "statements": [
       "Microeconomics and macroeconomics are unrelated subjects with no shared foundation.",
       "Because Elif is a student not a company, her situation falls outside economics entirely.",
-      "Household budget choices are excluded from economics because only businesses matter (alt 2.3/4).",
+      "Recessions cannot be studied because economics only ever looks at one market at a time.",
       "Economics studies households deciding what to do with limited resources such as time and income.",
       "Without a government bonus, Elif's decision cannot be analysed using economic theory."
     ],
@@ -2356,7 +2356,7 @@
     "statements": [
       "Economics fails as a science because human behaviour can never be studied with theories.",
       "One shop hiring two extra cashiers is macroeconomics because employment is involved.",
-      "Micro and macro study identical questions with no meaningful difference in scope (alt 2.3/6).",
+      "Household budgets are outside economics entirely; only listed corporations count.",
       "Macroeconomics aims to explain and predict aggregate outcomes such as growth and price levels.",
       "Economics is only macroeconomics; microeconomics is a separate subject unrelated to resource allocation."
     ],
@@ -2412,7 +2412,7 @@
     "title": "Town housing permit",
     "context": "A municipality approves one apartment block's building permit while ignoring national construction statistics. Evaluate:",
     "statements": [
-      "Macroeconomics cannot explain recessions because only micro markets exist (alt 2.3/5).",
+      "Theories cannot guide economics because every person behaves randomly forever.",
       "All construction is macroeconomics because building affects national GDP automatically.",
       "If analysts measured total national housing starts affecting growth, that would be macroeconomics.",
       "Economics can study how limited land and budgets shape one municipality's permit choice.",
@@ -2470,7 +2470,7 @@
     "title": "Pharmacy generic switch",
     "context": "One pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. Evaluate:",
     "statements": [
-      "Any price change anywhere is automatically macroeconomics regardless of scope analysed (alt 2.3/7).",
+      "Micro and macro share no vocabulary and cannot appear in one course.",
       "Any drug pricing discussion is macroeconomics because healthcare is a national sector.",
       "If health authorities measured economy-wide pharmaceutical spending affecting budgets, that aggregate would be macroeconomics.",
       "Economics studies how limited household income guides such product substitutions.",
@@ -2530,7 +2530,7 @@
     "statements": [
       "Household budget choices are excluded from economics because only businesses matter.",
       "Economics excludes household decisions and studies only corporate profit maximisation.",
-      "Microeconomics and macroeconomics are unrelated subjects with no shared foundation (alt 2.3/8).",
+      "Aggregate price-level questions belong in microeconomics as soon as one consumer is named.",
       "Perfect prediction of human behaviour is required before economics can be called a science.",
       "Microeconomics and macroeconomics are two branches applying the same core idea at different scopes."
     ],
@@ -2674,7 +2674,7 @@
     "context": "Evaluate assertions about the circular flow of income and spending:",
     "statements": [
       "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note.",
-      "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note (alt 2.4/1).",
+      "A banknote's face value freezes its real purchasing power for decades.",
       "Households can only appear on the spending side and never supply labour or capital to firms.",
       "The circular flow shows how income earned from production returns as spending on output.",
       "Government, banks, and foreign trade never appear in any circular-flow diagram."
@@ -2760,9 +2760,9 @@
     "title": "Money's three functions",
     "context": "Analyze the three functions of money in a modern economy:",
     "statements": [
-      "Inflation refers to one shop's single price hike only, never to the general price level (alt 2.4/4).",
-      "Money's store-of-value function is strengthened when inflation is very high and unpredictable (alt 2.4/5).",
-      "Only foreign trade creates free-rider problems; domestic public services never do (alt 2.4/6).",
+      "High, erratic inflation makes cash a safer long-term store of value.",
+      "Inflation means any one product got dearer in a single aisle.",
+      "Street lighting never faces free riders because neighbours always chip in voluntarily.",
       "Because money stores value, its purchasing power never changes over time.",
       "Barter requires a double coincidence of wants, which money helps overcome as medium of exchange."
     ],
@@ -2847,8 +2847,8 @@
     "title": "Subsidy for rail commuters",
     "context": "Government pays a per-trip subsidy lowering commuter rail tickets. Evaluate transfers and subsidies:",
     "statements": [
-      "Inflation refers to one shop's single price hike only, never to the general price level (alt 2.4/10).",
-      "Money's store-of-value function is strengthened when inflation is very high and unpredictable (alt 2.4/11).",
+      "Barter partners always want exactly the same items, so matching wants is automatic.",
+      "Call centres cannot specialise; only factory workers may divide tasks.",
       "Subsidies are identical to public goods because both always require taxation.",
       "Subsidised tickets can shift commuter choices toward rail without making rail a pure public good.",
       "Transfers redistribute resources and can target policy goals such as mobility or environmental aims."
@@ -2907,7 +2907,7 @@
     "statements": [
       "Barter requires double coincidence of wants between each pair of traders.",
       "Absence of money as medium of exchange makes multilateral trading chains harder to arrange.",
-      "Such swaps still constitute exchange even when no currency is used.",
+      "Such swaps still constitute exchange under otherwise unchanged conditions.",
       "Barter eliminates all comparison problems because traders always value goods equally.",
       "Introducing money would add medium of exchange simplifying trades that barter complicates."
     ],
@@ -2965,7 +2965,7 @@
     "statements": [
       "Barter requires no matching of wants because any trade partners automatically desire identical goods.",
       "Inflation increases purchasing power because prices and money value always move together upward.",
-      "Specialisation never occurs in service industries because only factories can divide tasks (alt 2.4/3).",
+      "Money as a unit of account disappears the moment two currencies exist in tourism.",
       "If prices rise faster than incomes, households can buy fewer goods with the same nominal cash.",
       "Inflation affects only foreign trade and never domestic purchasing power of euro cash."
     ],
@@ -3108,8 +3108,8 @@
     "title": "Factory specialisation drawback",
     "context": "Workers on one repetitive bolt-tightening task report fatigue and cannot switch lines quickly. Evaluate:",
     "statements": [
-      "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note (alt 2.4/13).",
-      "Barter requires no matching of wants because any trade partners automatically desire identical goods (alt 2.4/14).",
+      "Taxes never fund public goods; private firms always supply defence at market prices.",
+      "Circular flow stops when households save, because wages then cease to exist.",
       "Specialisation always improves worker satisfaction with no possible downsides whatsoever.",
       "Narrow task focus may limit workers' transferable skills if jobs disappear.",
       "Despite drawbacks, specialisation often lowers average production cost per unit."
@@ -3166,9 +3166,9 @@
     "title": "Public goods and free riders",
     "context": "Assess public goods, taxation, and free-rider problems:",
     "statements": [
-      "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note (alt 2.4/7).",
-      "Barter requires no matching of wants because any trade partners automatically desire identical goods (alt 2.4/8).",
-      "Specialisation never occurs in service industries because only factories can divide tasks (alt 2.4/9).",
+      "Specialisation removes all risk for a firm if it masters one narrow product forever.",
+      "Domestic police services never create free-rider incentives for non-payers.",
+      "Store-of-value works best when prices jump unpredictably every week.",
       "Street lighting is excludable for every passer-by, so free-rider problems never arise in practice.",
       "Transfers and subsidies redistribute income or support specific groups without always being pure public goods."
     ],
@@ -3225,7 +3225,7 @@
     "context": "A car assembly line splits welding, painting, and electronics into separate tasks. Evaluate specialisation:",
     "statements": [
       "Specialisation never occurs in service industries because only factories can divide tasks.",
-      "Only foreign trade creates free-rider problems; domestic public services never do (alt 2.4/12).",
+      "Transfer payments to households break circular flow permanently.",
       "Division of labour never creates drawbacks such as monotonous work or dependency on other stages.",
       "Specialisation applies only to agriculture and cannot occur in manufacturing or services.",
       "Interdependent assembly stages mean a breakdown in one station can halt the whole line."
@@ -3282,7 +3282,7 @@
     "title": "Unit of account role",
     "context": "Prices in a supermarket are all labelled in euros. Evaluate money's unit-of-account function:",
     "statements": [
-      "Barter requires no matching of wants because any trade partners automatically desire identical goods (alt 2.4/2).",
+      "Without money, modern exchange is usually easier than with money.",
       "Unit of account means money serves as common measure for quoting prices and recording debts.",
       "Unit of account requires barter because prices cannot be listed without trading goods directly.",
       "Without a unit of account, comparing bread and cinema ticket values becomes harder.",
@@ -3399,7 +3399,7 @@
     "context": "Two farmers swap eggs for vegetables without using money. Evaluate barter and money:",
     "statements": [
       "Inflation refers to one shop's single price hike only, never to the general price level.",
-      "Specialisation never occurs in service industries because only factories can divide tasks (alt 2.4/15).",
+      "Division of labour across countries is impossible because climate never differs.",
       "Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all.",
       "Without money, storing value from perishable eggs into future purchases is harder than holding currency.",
       "Barter economies never face problems comparing relative values of unlike goods."
@@ -3485,7 +3485,7 @@
     "title": "Consumer sovereignty test",
     "context": "Households shift spending toward plant-based foods; grocers expand vegan ranges. Evaluate:",
     "statements": [
-      "Transformation never causes unemployment because market reforms instantly create perfect jobs for everyone (alt 2.5/6).",
+      "A free market bans courts, defence, and every other public function.",
       "Consumer sovereignty means households never influence production because only planners decide output.",
       "Firms respond to changing demand to earn revenue and profit in market systems.",
       "In planned economies, identical consumer shifts always instantaneously change quotas without lag.",
@@ -3544,7 +3544,7 @@
     "context": "Evaluate core differences between market and planned economic systems:",
     "statements": [
       "Eco-social market economy eliminates all market prices because ecology requires pure central planning.",
-      "Central planning always matches consumer preferences perfectly with zero information problems (alt 2.5/7).",
+      "Pure planning erases scarcity by ordering infinite output of every good.",
       "Market and planned systems are identical because both use money in every transaction.",
       "Transformation from planned toward market systems often introduces private ownership and competition.",
       "Planned systems never face any resource constraints because the centre can print unlimited orders."
@@ -3601,7 +3601,7 @@
     "title": "Price liberalisation step",
     "context": "A transforming economy removes fixed bread prices, allowing shops to set levels. Evaluate:",
     "statements": [
-      "Market and planned systems are identical because both use money in transactions (alt 2.5/5).",
+      "OECD members today run only central plans with no private pricing.",
       "Market prices can signal shortages and surpluses to producers and consumers.",
       "Liberalisation means all prices become zero because competition removes cost entirely.",
       "Transition from planned systems often phases in price freedom gradually to limit shocks.",
@@ -3633,7 +3633,7 @@
       "Free market economy means zero government role including no courts, defence, or public goods.",
       "Market and planned systems are identical because both use money in transactions.",
       "Free market economies ban all government activity including courts and national defence.",
-      "Eco-social market economy eliminates all market prices because ecology requires pure central planning (alt 2.5/10).",
+      "Market and planned systems are the same whenever banknotes circulate.",
       "Prices in free markets help coordinate supply and demand without central direction."
     ],
     "answer_key": [
@@ -3659,7 +3659,7 @@
     "title": "German social partners",
     "context": "Employers' associations negotiate with unions under legal framework while firms compete in product markets. Evaluate social market:",
     "statements": [
-      "Free market economy means zero government role including no courts, defence, or public goods (alt 2.5/8).",
+      "Eco-social market systems abolish prices and reinstate pure planning for green goals.",
       "Co-determination and welfare institutions aim at social peace without abolishing private firms.",
       "Social market means unions set all output quotas replacing consumer demand entirely.",
       "Market competition among firms can coexist with worker representation rules.",
@@ -3719,7 +3719,7 @@
     "statements": [
       "All OECD countries today operate as pure planned economies with no market competition.",
       "Social market economy rejects all market competition in favour of pure central planning.",
-      "Planned systems never face scarcity because central authorities can order unlimited output of every good (alt 2.5/9).",
+      "Transformation to markets raises zero unemployment by creating ideal jobs overnight.",
       "Regulation of labour markets can coexist with firm competition for customers.",
       "Social and eco-social market models both retain market coordination as a base."
     ],
@@ -3804,7 +3804,7 @@
     "title": "Eco-tax on carbon",
     "context": "Government imposes carbon price while keeping competitive electricity markets. Evaluate eco-social alignment:",
     "statements": [
-      "Market and planned systems are identical because both use money in transactions (alt 2.5/12).",
+      "Planners always know every preference, so misallocation never occurs.",
       "Eco-social market economy integrates ecological targets with market-based policy tools.",
       "Carbon taxes eliminate all market prices because government sets every outcome directly.",
       "Environmental goals in eco-social models can coexist with private firms competing on cost and quality.",
@@ -3836,7 +3836,7 @@
       "Planned systems never face scarcity because central authorities can order unlimited output of every good.",
       "Central planning always matches consumer preferences perfectly with zero information problems.",
       "Social market economy abolishes all private firms and replaces them with central planning.",
-      "Transformation never causes unemployment because market reforms instantly create perfect jobs for everyone (alt 2.5/13).",
+      "Social market economies forbid any income support for the poor by definition.",
       "Germany is often cited as an example of the social market economy approach."
     ],
     "answer_key": [
@@ -3862,7 +3862,7 @@
     "title": "State farm to cooperative",
     "context": "Former state collective farms become farmer cooperatives selling on open markets. Evaluate transformation:",
     "statements": [
-      "All OECD countries today operate as pure planned economies with no market competition (alt 2.5/11).",
+      "Free markets require the state to set every consumer price daily.",
       "Market sales expose producers to consumer demand rather than fulfilment of plan quotas alone.",
       "Transition always keeps 100% state ownership because privatisation never occurs in agriculture.",
       "Profit incentive and price signals can guide crop choice after liberalisation.",
@@ -3920,7 +3920,7 @@
     "title": "Eco-social housing standard",
     "context": "Government sets energy-efficiency rules while builders compete on design and price. Evaluate:",
     "statements": [
-      "Central planning always matches consumer preferences perfectly with zero information problems (alt 2.5/14).",
+      "Planned systems give households unlimited product choice by design.",
       "Environmental standards aim at sustainability without eliminating private builders competing for buyers.",
       "Eco-social model requires abolishing all housing markets and assigning homes by central plan only.",
       "Regulation sets minimum ecological performance; markets still compete above that floor.",
@@ -3979,7 +3979,7 @@
     "context": "Planned tractor factory misses component targets, halting farm deliveries nationwide. Evaluate planned-system weaknesses:",
     "statements": [
       "Transformation never causes unemployment because market reforms instantly create perfect jobs for everyone.",
-      "Free market economy means zero government role including no courts, defence, or public goods (alt 2.5/15).",
+      "Eco-social policy means firms may ignore all environmental rules.",
       "Planned systems always outperform markets on flexibility and consumer responsiveness by definition.",
       "Price signals in markets can relay local shortages faster than hierarchical quota revisions.",
       "Transformation reforms often aim to reduce such rigidities by introducing market competition."
@@ -4036,8 +4036,8 @@
     "title": "Eco-social market economy",
     "context": "Assess the eco-social market economy concept:",
     "statements": [
-      "Planned systems never face scarcity because central authorities can order unlimited output of every good (alt 2.5/2).",
-      "Planned systems never face scarcity because central authorities can order unlimited output of every good (alt 2.5/16).",
+      "Leaving planning never involves painful adjustment for workers or firms.",
+      "Private ownership of capital is required even in classical planned systems.",
       "Eco-social market economy eliminates prices entirely so environmental goals need no economic trade-offs.",
       "Environmental taxes or cap-and-trade can use market instruments within an eco-social framework.",
       "Transformation from planned systems is unrelated to eco-social market ideas because they apply only to island economies."
@@ -4094,7 +4094,7 @@
     "title": "Planned economy coordination",
     "context": "In a centrally planned system, ministries set steel output quotas. Evaluate:",
     "statements": [
-      "Market and planned systems are identical because both use money in transactions (alt 2.5/19).",
+      "Countries cannot mix market prices with targeted social transfers.",
       "Planned economies historically involved state ownership of major industries in many cases.",
       "Consumer preferences automatically dominate production under planning without any information problem.",
       "Transformation toward markets often privatises state firms and liberalises prices gradually.",
@@ -4152,8 +4152,8 @@
     "title": "Private property rights",
     "context": "Evaluate role of private ownership in market systems:",
     "statements": [
-      "Free market economy means zero government role including no courts, defence, or public goods (alt 2.5/1).",
-      "All OECD countries today operate as pure planned economies with no market competition (alt 2.5/18).",
+      "Calling a system social market deletes competition among private firms.",
+      "A free market bans courts, defence, and every other public function with technology held fixed.",
       "Market economies require zero government enforcement of contracts and property rights.",
       "Transformation from planned economies often restores or clarifies private property rights.",
       "Without ownership incentives, profit motive and consumer responsiveness weaken in allocation."
@@ -4181,7 +4181,7 @@
     "title": "Black market under planning",
     "context": "Consumers queue for state-priced shoes; unofficial sellers offer imports at higher prices. Evaluate:",
     "statements": [
-      "Eco-social market economy eliminates all market prices because ecology requires pure central planning (alt 2.5/17).",
+      "Pure planning erases scarcity by ordering infinite output of every good with incomes unchanged.",
       "Black markets emerge when official prices do not clear demand at allocated supply.",
       "Planned economies never experience shortages because quotas always match preferences perfectly.",
       "Transformation toward market pricing aims to reduce such parallel unofficial markets over time.",
@@ -4210,8 +4210,8 @@
     "title": "Mixed economy reality",
     "context": "Most modern economies combine markets with public education and healthcare funding. Evaluate:",
     "statements": [
-      "Eco-social market economy eliminates all market prices because ecology requires pure central planning (alt 2.5/3).",
-      "Central planning always matches consumer preferences perfectly with zero information problems (alt 2.5/21).",
+      "Price-taking behavior is impossible for farmers even on a huge wheat exchange with standardised grades.",
+      "Market and planned systems are the same whenever banknotes circulate irrespective of substitute availability.",
       "Social market economy explicitly embraces this mix of competition plus social policy.",
       "Planned economy elements like total state ownership dominate every OECD country today without exception.",
       "Eco-social market adds environmental policy goals to mixed market frameworks."
@@ -4239,7 +4239,7 @@
     "title": "Profit motive response",
     "context": "Fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:",
     "statements": [
-      "Transformation never causes unemployment because market reforms instantly create perfect jobs for everyone (alt 2.5/20).",
+      "Physical apparel alone guarantees that fashion retail meets perfect competition worldwide.",
       "Consumer sovereignty still operates as riders choose cheaper fares where competition exists.",
       "Profit motive exists only in planned economies because state firms never care about cost.",
       "Market prices transmit fuel cost changes to operators deciding fleet composition.",
@@ -4268,8 +4268,8 @@
     "title": "Post-transition privatisation",
     "context": "A former planned economy sells state factories to private investors and opens markets. Evaluate transformation:",
     "statements": [
-      "All OECD countries today operate as pure planned economies with no market competition (alt 2.5/4).",
-      "Free market economy means zero government role including no courts, defence, or public goods (alt 2.5/22).",
+      "Transformation to markets raises zero unemployment by creating ideal jobs overnight while other determinants remain unchanged.",
+      "Planners always know every preference, so misallocation never occurs under otherwise unchanged conditions.",
       "Transition never changes ownership structures because all firms must remain state property forever.",
       "Introducing competition can improve efficiency after monopolistic state production.",
       "Market transformation happens overnight with zero adjustment costs or unemployment ever."
@@ -4355,8 +4355,8 @@
     "title": "Harvest glut surplus",
     "context": "Mild weather yields bumper apple harvest; orchards cannot sell all crates at current price. Evaluate:",
     "statements": [
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/4).",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/13).",
+      "A rise in the good's own price shifts the whole demand curve sideways.",
+      "One boutique's higher coat price alone proves national inflation without indices.",
       "Surplus means consumers want more apples than farmers picked at the going price.",
       "Rightward supply shift from bumper crop can create surplus if price is sticky downward.",
       "Lower equilibrium price clears surplus by raising quantity demanded and discouraging some supply."
@@ -4414,9 +4414,9 @@
     "context": "Evaluate the law of demand and demand curve behaviour:",
     "statements": [
       "A change in the good's own price shifts the entire demand curve rather than moving along it.",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/3).",
+      "When markets clear, households drop all budget limits and scarcity vanishes.",
       "The law of demand claims quantity demanded rises when price rises, other things equal.",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/16).",
+      "Higher income always shifts demand left for normal everyday goods.",
       "Demand shifters such as income changes shift the whole curve rather than moving along it."
     ],
     "answer_key": [
@@ -4471,7 +4471,7 @@
     "title": "Concert ticket scalping",
     "context": "Official price fixed below equilibrium; scalpers resell at higher market-clearing levels. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/14).",
+      "Ceteris paribus is optional when stating the law of demand.",
       "Secondary market price reflects higher equilibrium where quantity demanded meets limited supply.",
       "Shortage means unsold tickets pile up at the box office because nobody wants them.",
       "Price ceilings below equilibrium prevent market from clearing at official rate.",
@@ -4500,10 +4500,10 @@
     "title": "Law of supply",
     "context": "Analyze the law of supply and supply curve behaviour:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/29).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/30).",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/31).",
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/32).",
+      "Surplus means quantity demanded exceeds quantity supplied at the going price.",
+      "Shortage means sellers offer more than buyers want at that price.",
+      "More suppliers entering a market always shifts demand, never supply.",
+      "Cheaper complementary goods reduce demand for the related main good.",
       "A change in the good's own price causes movement along the supply curve."
     ],
     "answer_key": [
@@ -4529,7 +4529,7 @@
     "title": "Popularity fad demand shift",
     "context": "Viral trend spikes demand for a reusable bottle at every price level. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/17).",
+      "Interest-rate increases raise spending and therefore fuel inflation further.",
       "Movement along demand requires a change in the bottle's own price, not social media alone.",
       "Fad shifts supply left because factories dislike trendy products by law of supply.",
       "Rightward demand with unchanged supply tends to raise equilibrium price and quantity.",
@@ -4587,8 +4587,8 @@
     "title": "Online marketplace platform",
     "context": "Evaluate types of markets including virtual ones:",
     "statements": [
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/6).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/15).",
+      "Quantity of money rising with fixed output cannot pressure general prices.",
+      "Labour markets are not markets because wages are not prices.",
       "Markets exist only as literal town squares with no digital or institutional forms allowed.",
       "Specialised markets include labour, goods, services, and financial asset markets.",
       "Price mechanism coordinates plans in competitive markets through supply and demand interaction."
@@ -4674,7 +4674,7 @@
     "title": "Inflation too much money",
     "context": "Prices rise broadly after rapid money supply growth while output lags. Evaluate:",
     "statements": [
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/18).",
+      "Online platforms cannot host markets because no physical stall exists.",
       "General price level rise reduces purchasing power of each euro held.",
       "Inflation always improves purchasing power because higher prices mean richer consumers automatically.",
       "Central banks may raise interest rates to cool inflation by reducing spending and credit growth.",
@@ -4704,8 +4704,8 @@
     "context": "A city bus ticket market settles at 2.50 euros where quantity demanded equals quantity supplied. Evaluate:",
     "statements": [
       "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears.",
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/5).",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/19).",
+      "Equilibrium price is whatever one dominant firm prints on a tag.",
+      "Own-price movements are drawn as demand shifts, not slides along demand.",
       "Equilibrium eliminates scarcity entirely so no buyer ever faces a budget constraint again.",
       "Surplus puts downward pressure on price; shortage puts upward pressure toward equilibrium."
     ],
@@ -4732,7 +4732,7 @@
     "title": "Fuel tax supply for taxis",
     "context": "Higher fuel tax raises taxi operating cost; fewer rides offered at each fare. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/20).",
+      "Inflation equals any sticker shock at a single petrol pump.",
       "If demand unchanged, equilibrium fare tends to rise and quantity of rides falls.",
       "Fuel tax shifts demand right because passengers enjoy paying more for identical trips.",
       "Own-fare increase for taxis alone causes movement along supply, not shift from fuel tax.",
@@ -4848,8 +4848,8 @@
     "title": "Rate hike mortgage effect",
     "context": "Central bank raises rates; variable mortgage holders cut discretionary spending. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/8).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/21).",
+      "After equilibrium, buyers need not economise on remaining income.",
+      "Technological cost cuts always shift demand right and leave supply untouched.",
       "Interest rate changes never affect consumer spending because borrowing is impossible for households.",
       "Tighter credit can shift demand left for interest-sensitive goods like housing and durables.",
       "Anti-inflation policy trades short-term demand slowdown against price stability goals."
@@ -4907,9 +4907,9 @@
     "context": "Household incomes rise after a wage agreement; demand for restaurant meals increases at every price. Evaluate:",
     "statements": [
       "Individual shop price changes alone define economy-wide inflation without reference to general price level.",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/7).",
+      "A rise in the good's own price shifts the whole demand curve sideways with technology held fixed.",
       "Income rise always shifts demand left because richer households buy less of everything.",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/22).",
+      "Three large mobile networks cannot form an oligopoly because customers can still switch SIMs.",
       "Equilibrium meal price may rise after demand shifts right if supply unchanged."
     ],
     "answer_key": [
@@ -4964,10 +4964,10 @@
     "title": "Supply shifter: energy cost",
     "context": "Bakeries face higher oven fuel costs; less bread supplied at each price. Evaluate:",
     "statements": [
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/1).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/9).",
+      "When markets clear, households drop all budget limits and scarcity vanishes with incomes unchanged.",
+      "Higher income always shifts demand left for normal everyday goods irrespective of substitute availability.",
       "Input cost rise shifts demand left because consumers dislike expensive flour spiritually.",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/25).",
+      "Ceteris paribus is optional when stating the law of demand while other determinants remain unchanged.",
       "Leftward supply shift with unchanged demand tends to raise equilibrium bread price."
     ],
     "answer_key": [
@@ -5022,8 +5022,8 @@
     "title": "Substitute price shift",
     "context": "Coffee bean price spike raises espresso price; some customers switch to tea. Evaluate demand:",
     "statements": [
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/10).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/24).",
+      "Surplus means quantity demanded exceeds quantity supplied at the going price under otherwise unchanged conditions.",
+      "Shortage means sellers offer more than buyers want at that price with technology held fixed.",
       "Coffee and tea can be substitutes; relative price changes redirect some spending.",
       "Substitute price rise shifts coffee supply left automatically with no separate demand effect.",
       "Market equilibrium for tea may rise in price if tea demand shifts right with fixed tea supply."
@@ -5051,7 +5051,7 @@
     "title": "Hyperinflation wheelbarrow cash",
     "context": "Rapid money growth makes prices rise daily; cash buys less each week. Evaluate inflation:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/23).",
+      "A lone alpine hut is a perfect competitor if restaurants exist somewhere in the country.",
       "Too much money relative to available goods can drive such general price surges.",
       "Hyperinflation improves store-of-value function of currency because holding cash becomes smarter.",
       "Central banks combat high inflation partly by tightening monetary policy and raising interest rates.",
@@ -5080,8 +5080,8 @@
     "title": "Tech improvement supply shift",
     "context": "Automated picking cuts apple harvest labour cost; more apples supplied at each price. Evaluate:",
     "statements": [
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/12).",
-      "Individual shop price changes alone define economy-wide inflation without reference to general price level (alt 2.6/27).",
+      "Cheaper complementary goods reduce demand for the related main good with incomes unchanged.",
+      "Secret price agreements among cement firms are required by competition law.",
       "Cheaper harvesting raises supply and tends to lower equilibrium price if demand unchanged.",
       "Technology shifts demand left because consumers dislike automated fruit by definition.",
       "Rightward supply with fixed demand increases equilibrium quantity and usually lowers price."
@@ -5109,7 +5109,7 @@
     "title": "Complement price change",
     "context": "Printer price falls; demand for ink cartridges rises at each cartridge price. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/26).",
+      "Quantity of money rising with fixed output cannot pressure general prices irrespective of substitute availability.",
       "Complement price fall for printer increases demand for paired cartridge good.",
       "Cartridge own-price fall would shift cartridge demand right rather than move along it.",
       "Complement relations differ from substitute relations where relative price rise redirects demand.",
@@ -5138,10 +5138,10 @@
     "title": "Ice cream shortage heatwave",
     "context": "Heatwave boosts ice cream demand while supply unchanged; queues form at kiosks. Evaluate:",
     "statements": [
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/2).",
-      "Equilibrium eliminates scarcity so buyers face no budget constraints after the market clears (alt 2.6/11).",
+      "Labour markets are not markets because wages are not prices while other determinants remain unchanged.",
+      "Online platforms cannot host markets because no physical stall exists under otherwise unchanged conditions.",
       "Shortage means sellers cannot sell all stock and must dump unsold ice cream daily.",
-      "A change in the good's own price shifts the entire demand curve rather than moving along it (alt 2.6/28).",
+      "Equilibrium price is whatever one dominant firm prints on a tag with technology held fixed.",
       "Equilibrium adjustment may raise price until quantity demanded equals quantity supplied again."
     ],
     "answer_key": [
@@ -5283,10 +5283,10 @@
     "title": "Perfect competition assumptions",
     "context": "Evaluate assumptions of perfect competition:",
     "statements": [
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/3).",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/4).",
+      "A monopolist takes price as given because endless rivals sell the same good.",
+      "Perfect competition needs one dominant seller who sets price for all.",
       "Perfect competition requires one dominant seller setting price for the entire market.",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/7).",
+      "Clothing retail is perfectly competitive everywhere just because clothes are physical.",
       "Near-perfect competition appears in some agricultural markets with standardised grain grades."
     ],
     "answer_key": [
@@ -5370,9 +5370,9 @@
     "title": "Local water utility",
     "context": "Only one piped water company serves a small town under licence. Evaluate market structure:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/5).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/6).",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/10).",
+      "Oligopolists never react when a rival cuts price.",
+      "Cartel price fixing is treated as legal whenever firms call it cooperation.",
+      "Local sole suppliers within a valley cannot be monopoly-like if other towns exist.",
       "Perfect competition with dozens of interchangeable water pipe networks exists in every small town.",
       "Monopoly power can allow price above marginal cost if regulation permits."
     ],
@@ -5457,8 +5457,8 @@
     "title": "Municipal bus monopoly",
     "context": "City awards exclusive bus franchise; no rival buses on same routes legally. Evaluate:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/14).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/15).",
+      "Perfect competition allows strong brand loyalty and unique non-replaceable styles.",
+      "Entry barriers are required for a market to approach perfect competition.",
       "Exclusive franchise instantly creates perfect competition because passengers choose routes freely.",
       "Regulators may cap fares when monopoly or franchise power would otherwise overcharge riders.",
       "Monopoly-like structures can arise from law as well as from natural cost conditions."
@@ -5544,8 +5544,8 @@
     "title": "Assumption audit",
     "context": "Spot violations of perfect competition assumptions:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/17).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/18).",
+      "Many standardised grain traders cannot approach perfect competition by definition.",
+      "Oligopoly means thousands of tiny sellers each too small to notice rivals.",
       "Free entry and exit without barriers is a perfect competition condition.",
       "Perfect competition assumes each firm is a price taker unable to move market price alone.",
       "Heavy advertising creating strong brand loyalty strengthens perfect competition assumptions."
@@ -5573,10 +5573,10 @@
     "title": "Mobile carrier oligopoly",
     "context": "Three national carriers control 95% of mobile subscriptions. Evaluate:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/8).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/9).",
+      "Laws against cartels exist to protect producers from customers.",
+      "Full information for all traders works against the idea of perfect competition.",
       "Oligopoly always means exactly two firms globally by mathematical definition only.",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/13).",
+      "Monopoly is the most common market form in everyday consumer markets.",
       "Cartels—oligopolists cooperating illegally to fix prices—are prohibited in competitive law."
     ],
     "answer_key": [
@@ -5718,7 +5718,7 @@
     "title": "Steel industry trio",
     "context": "Three steelmakers account for most national output and track each other's capacity announcements. Evaluate:",
     "statements": [
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/1).",
+      "A ski-hut alone on a peak faces perfect competition from city restaurants below.",
       "Capacity announcements signal strategic interdependence typical of oligopoly.",
       "Three-firm concentration is monopoly because monopoly always means more than ten firms.",
       "Independent competitive pricing without considering rivals defines oligopoly behaviour.",
@@ -5776,10 +5776,10 @@
     "title": "Cartel raid headline",
     "context": "Regulators fine flour mills for secretly agreeing uniform wholesale prices. Evaluate:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/11).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/12).",
+      "Telecom markets with three large networks cannot be oligopolies.",
+      "A monopolist takes price as given because endless rivals sell the same good with incomes unchanged.",
       "Open price competition among many small bakeries is cartel behaviour by definition.",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/16).",
+      "Perfect competition needs one dominant seller who sets price for all irrespective of substitute availability.",
       "Oligopoly becomes cartel when firms collude rather than compete independently."
     ],
     "answer_key": [
@@ -5834,8 +5834,8 @@
     "title": "Wheat exchange floor",
     "context": "Standardised wheat grades trade on a commodity exchange with many farmers and buyers. Evaluate:",
     "statements": [
-      "Perfect competition requires one dominant seller setting price for the entire market (dedup 2.7/1).",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/19).",
+      "Monopolists cannot force rivals out if perfect competition already forces them to take price as given.",
+      "Full information for all traders prevents any approach to perfect competition.",
       "Every retail clothing shop worldwide is a perfect competition market because clothes exist.",
       "Free entry and many participants push individual farmers toward price-taking behaviour.",
       "Differentiated designer fashion brands with few luxury houses resemble perfect competition."
@@ -5892,7 +5892,7 @@
     "title": "Village pharmacy distance",
     "context": "Only one pharmacy within twenty kilometres; villagers buy prescriptions there. Evaluate:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/2).",
+      "Oligopolists never react when a rival cuts price under otherwise unchanged conditions.",
       "Customers facing long travel may accept higher prices or limited hours from the single seller.",
       "Local monopoly-like power requires global dominance in worldwide pharmaceutical production.",
       "Many competing pharmacies on the same village square would restore near-perfect competition locally.",
@@ -5950,8 +5950,8 @@
     "title": "Airline route duopoly",
     "context": "Two airlines fly a thin international route; each matches fare changes within hours. Evaluate:",
     "statements": [
-      "All retail clothing markets worldwide are perfect competition because clothes are physical goods (alt 2.7/20).",
-      "Monopoly sellers are price takers because they face many rivals selling identical goods (alt 2.7/21).",
+      "Zero entry barriers make monopoly the natural outcome of agricultural spots.",
+      "Local sole suppliers within a valley cannot be monopoly-like if other towns exist with technology held fixed.",
       "Two carriers on a route prove perfect competition with price-taking behaviour.",
       "Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.",
       "Secret agreement to fix identical fares would be illegal cartel conduct."
@@ -6009,7 +6009,7 @@
     "context": "One firm holds the exclusive airport parking concession contract. Evaluate:",
     "statements": [
       "All retail clothing markets worldwide are perfect competition because clothes are physical goods.",
-      "Perfect competition requires one dominant seller setting price for the entire market (alt 2.7/22).",
+      "Perfect competition allows strong brand loyalty and unique non-replaceable styles with incomes unchanged.",
       "Exclusive contracts never create market power because airports are public buildings.",
       "Monopoly-like local concessions can sustain prices above competitive levels without regulation.",
       "Perfect competition requires many parking operators at the identical terminal location simultaneously."
@@ -6068,7 +6068,7 @@
     "statements": [
       "Cartel penalties aim to deter oligopolists from secret collusion on price or output.",
       "Legal independent pricing in oligopoly remains permitted without collusive agreement.",
-      "All oligopolies are automatically legal cartels even when firms compete aggressively.",
+      "All oligopolies are automatically legal cartels irrespective of substitute availability.",
       "Consumers benefit when cartel price fixing is blocked and competitive undercutting resumes.",
       "Near-perfect competition in standardised commodities contrasts with cartel behaviour in concentrated industries."
     ],
