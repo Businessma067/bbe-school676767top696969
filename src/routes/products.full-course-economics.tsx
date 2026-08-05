@@ -171,6 +171,14 @@ function EconomicsTasks() {
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
 
+  useEffect(() => {
+    if (!timed.enabled) return;
+    timed.openQuestion(activeCase?.id ?? null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timed.enabled, activeCase?.id]);
+
+  const activeTimer = timed.get(activeCase?.id);
+
   const recordResult = (caseId: string, allCorrect: boolean) => {
     setProgress((prev) => {
       const passed = new Set(prev.passed);
