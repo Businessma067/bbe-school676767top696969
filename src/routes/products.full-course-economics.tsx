@@ -36,7 +36,18 @@ type Case = {
   tactical_explanations: string[];
   difficulty_level: string;
   sort_order: number;
+  /** Legacy Full Course bank uses chapter ids ("2"…"5"). Book-subtopic ids ("2.1") are Custom Mock Builder only. */
+  subsection?: string;
 };
+
+/** Main Full Course list: chapter-level rows only (e.g. "2"), not mock-builder subtopics ("2.1"). */
+function isMainFullCourseCase(c: { subsection?: string; case_id: string }): boolean {
+  if (c.subsection != null && c.subsection !== "") {
+    return /^\d+$/.test(c.subsection);
+  }
+  // Fallback if subsection missing: exclude CASE 2.1.01-style ids (three numeric parts).
+  return !/^CASE\s+\d+\.\d+\.\d+/i.test(c.case_id);
+}
 
 const CHAPTERS: { num: number; title: string }[] = [
   { num: 2, title: "Basic Economic Concepts" },
@@ -109,12 +120,12 @@ function EconomicsTasks() {
     (async () => {
       const { data, error } = await supabase
         .from("economics_cases")
-        .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order")
+        .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order, subsection")
         .eq("tier", "full")
         .order("sort_order", { ascending: true });
       if (cancel) return;
       if (error) setError(error.message);
-      else setCases((data as Case[]) ?? []);
+      else setCases(((data as Case[]) ?? []).filter(isMainFullCourseCase));
     })();
     return () => { cancel = true; };
   }, []);
