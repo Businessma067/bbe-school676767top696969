@@ -25,6 +25,10 @@ import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
 import { ExamReviewScreen } from "@/components/mock-exam/ExamReviewScreen";
 import { QuestionPalette } from "@/components/mock-exam/QuestionPalette";
 import {
+  seedFiredTimerWarnings,
+  TimerWarningPlaque,
+} from "@/components/mock-exam/TimerWarningPlaque";
+import {
   Sheet,
   SheetContent,
   SheetDescription,
@@ -82,6 +86,8 @@ function TakeExamPage() {
   const remoteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const sessionRef = useRef(session);
   sessionRef.current = session;
+  const firedWarningsRef = useRef<Set<number>>(new Set());
+  const warningsSeeded = useRef(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -114,11 +120,24 @@ function TakeExamPage() {
       }
       setSession(merged);
       setHydrated(true);
+      if (merged.timed && merged.secondsLeft != null) {
+        firedWarningsRef.current = seedFiredTimerWarnings(merged.secondsLeft);
+        warningsSeeded.current = true;
+      }
     })();
     return () => {
       cancelled = true;
     };
   }, [examId, timed, questionIds, questions]);
+
+  // If a fresh timed session starts at full duration, allow all thresholds later.
+  useEffect(() => {
+    if (!hydrated || !session?.timed || warningsSeeded.current) return;
+    if (session.secondsLeft != null) {
+      firedWarningsRef.current = seedFiredTimerWarnings(session.secondsLeft);
+      warningsSeeded.current = true;
+    }
+  }, [hydrated, session?.timed, session?.secondsLeft]);
 
   useEffect(() => {
     if (!hydrated || !session) return;
@@ -360,6 +379,13 @@ function TakeExamPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased">
+      {session.timed && (
+        <TimerWarningPlaque
+          timed={session.timed}
+          secondsLeft={session.secondsLeft}
+          firedRef={firedWarningsRef}
+        />
+      )}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
