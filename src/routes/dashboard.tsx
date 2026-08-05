@@ -17,6 +17,11 @@ import {
   type TaskAttempt,
 } from "@/lib/user-progress";
 import {
+  fetchSessionAnswerStats,
+  type SessionAnswerStat,
+} from "@/lib/study-progress";
+import { StudyProgressSection } from "@/components/StudyProgressSection";
+import {
   BookOpen,
   ClipboardCheck,
   Flame,
@@ -60,6 +65,7 @@ function DashboardPage() {
   const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
   const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
   const [mocks, setMocks] = useState<MockAttempt[] | null>(null);
+  const [sessionAnswers, setSessionAnswers] = useState<SessionAnswerStat[] | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -71,15 +77,17 @@ function DashboardPage() {
         return;
       }
       setAuth(next);
-      const [e, t, m] = await Promise.all([
+      const [e, t, m, s] = await Promise.all([
         fetchEnrollments(),
         fetchTaskAttempts(),
         fetchMockAttempts(),
+        fetchSessionAnswerStats(),
       ]);
       if (cancelled) return;
       setEnrollments(e);
       setTasks(t);
       setMocks(m);
+      setSessionAnswers(s);
     })();
     return () => {
       cancelled = true;
@@ -95,7 +103,8 @@ function DashboardPage() {
   }
 
   const initial = auth.name.charAt(0).toUpperCase();
-  const loading = enrollments === null || tasks === null || mocks === null;
+  const loading =
+    enrollments === null || tasks === null || mocks === null || sessionAnswers === null;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -172,7 +181,12 @@ function DashboardPage() {
             {loading ? (
               <p className="text-sm text-muted-foreground">Loading your progress…</p>
             ) : tab === "courses" ? (
-              <CoursesTab enrollments={enrollments!} tasks={tasks!} mocks={mocks!} />
+              <CoursesTab
+                enrollments={enrollments!}
+                tasks={tasks!}
+                mocks={mocks!}
+                sessionAnswers={sessionAnswers!}
+              />
             ) : (
               <MocksTab mocks={mocks!} />
             )}
@@ -189,10 +203,12 @@ function CoursesTab({
   enrollments,
   tasks,
   mocks,
+  sessionAnswers,
 }: {
   enrollments: Enrollment[];
   tasks: TaskAttempt[];
   mocks: MockAttempt[];
+  sessionAnswers: SessionAnswerStat[];
 }) {
   const stats: SubjectStats[] = useMemo(() => summarizeTaskAttempts(tasks), [tasks]);
   const streak = useMemo(
@@ -208,6 +224,8 @@ function CoursesTab({
 
   return (
     <div className="space-y-8">
+      <StudyProgressSection tasks={tasks} mocks={mocks} sessionAnswers={sessionAnswers} />
+
       {/* My courses */}
       <section>
         <h2 className="mb-3 font-display text-xl font-bold tracking-tight">My courses</h2>

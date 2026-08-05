@@ -73,6 +73,18 @@ function ReviewExamPage() {
 
   const pct = Math.round((total / SCORING_CONFIG.examTotalPoints) * 100);
 
+  const statementTotals = useMemo(() => {
+    let correctCount = 0;
+    let statementCount = 0;
+    for (const m of marked) {
+      for (const s of m.statements) {
+        statementCount += 1;
+        if (s.userMarked === s.isTrue) correctCount += 1;
+      }
+    }
+    return { correctCount, statementCount };
+  }, [marked]);
+
   // Persist the attempt to the user's account once per finished exam.
   const saved = useRef(false);
   useEffect(() => {
@@ -97,8 +109,10 @@ function ReviewExamPage() {
       },
       secondsTaken: attempt.secondsTaken ?? null,
       timed: attempt.timed,
+      correctCount: statementTotals.correctCount,
+      statementCount: statementTotals.statementCount,
     });
-  }, [attempt, exam, examId, perSubject, total]);
+  }, [attempt, exam, examId, perSubject, statementTotals, total]);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">

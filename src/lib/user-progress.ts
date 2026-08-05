@@ -34,7 +34,26 @@ export type MockAttempt = {
   seconds_taken: number | null;
   timed: boolean;
   completed_at: string;
+  /** Statement-level totals when recorded; null for legacy rows. */
+  correct_count: number | null;
+  statement_count: number | null;
 };
+
+/** Payload stored in `mock_attempts.answers` for study-progress history. */
+export type MockAnswersPayload = {
+  correct_count: number;
+  statement_count: number;
+};
+
+function parseMockAnswers(raw: unknown): { correct_count: number | null; statement_count: number | null } {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+    return { correct_count: null, statement_count: null };
+  }
+  const obj = raw as Record<string, unknown>;
+  const correct_count = typeof obj.correct_count === "number" ? obj.correct_count : null;
+  const statement_count = typeof obj.statement_count === "number" ? obj.statement_count : null;
+  return { correct_count, statement_count };
+}
 
 export const COURSE_CATALOG: Record<
   CourseSlug,
@@ -144,9 +163,15 @@ export async function recordMockAttempt(input: {
   perSubject: Record<string, number>;
   secondsTaken: number | null;
   timed: boolean;
+  correctCount: number;
+  statementCount: number;
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
+  const answers: MockAnswersPayload = {
+    correct_count: input.correctCount,
+    statement_count: input.statementCount,
+  };
   const { error } = await supabase.from("mock_attempts").insert({
     user_id: userId,
     exam_id: input.examId,
@@ -156,6 +181,7 @@ export async function recordMockAttempt(input: {
     per_subject: input.perSubject,
     seconds_taken: input.secondsTaken,
     timed: input.timed,
+    answers,
   });
   if (error) console.error("recordMockAttempt", error);
 }
@@ -165,19 +191,31 @@ export async function fetchMockAttempts(): Promise<MockAttempt[]> {
   if (!userId) return [];
   const { data, error } = await supabase
     .from("mock_attempts")
-    .select("id, exam_id, exam_title, points_earned, points_total, per_subject, seconds_taken, timed, completed_at")
+    .select(
+      "id, exam_id, exam_title, points_earned, points_total, per_subject, seconds_taken, timed, completed_at, answers",
+    )
     .eq("user_id", userId)
     .order("completed_at", { ascending: false });
   if (error) {
     console.error("fetchMockAttempts", error);
     return [];
   }
-  return (data ?? []).map((row) => ({
-    ...row,
-    points_earned: Number(row.points_earned),
-    points_total: Number(row.points_total),
-    per_subject: (row.per_subject ?? {}) as Record<string, number>,
-  })) as MockAttempt[];
+  return (data ?? []).map((row) => {
+    const statementStats = parseMockAnswers(row.answers);
+    return {
+      id: row.id,
+      exam_id: row.exam_id,
+      exam_title: row.exam_title,
+      points_earned: Number(row.points_earned),
+      points_total: Number(row.points_total),
+      per_subject: (row.per_subject ?? {}) as Record<string, number>,
+      seconds_taken: row.seconds_taken,
+      timed: row.timed,
+      completed_at: row.completed_at,
+      correct_count: statementStats.correct_count,
+      statement_count: statementStats.statement_count,
+    };
+  });
 }
 
 /* --------------------------- aggregation -------------------------- */
