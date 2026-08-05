@@ -607,6 +607,13 @@ function EconomicsTasks() {
         )}
       </div>
 
+      {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
+        <TimeoutModal
+          onOvertime={() => timed.chooseOvertime(activeCase.id)}
+          onReview={() => timed.chooseReview(activeCase.id)}
+        />
+      )}
+
       {customResetOpen && (
         <CustomResetModal
           chapters={CHAPTERS}
