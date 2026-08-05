@@ -349,7 +349,7 @@ export async function fetchMockAttempts(): Promise<MockAttempt[]> {
         per_subject: (row.per_subject ?? {}) as Record<string, number>,
         seconds_taken: row.seconds_taken,
         timed: row.timed,
-        completed_at: row.completed_at,
+        completed_at: row.completed_at ?? new Date().toISOString(),
         correct_count: statementStats.correct_count,
         statement_count: statementStats.statement_count,
       };
