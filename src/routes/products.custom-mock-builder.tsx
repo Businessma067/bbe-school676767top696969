@@ -119,8 +119,15 @@ function CustomMockBuilderPage() {
       setHistory((prev) => [summary, ...(prev ?? []).filter((m) => m.id !== summary.id)]);
       setSelected(summary);
     } catch (e) {
-      const msg = e instanceof Error ? e.message : "Generation failed. Please try again.";
-      setError(msg.replace(/^Unauthorized:.*$/i, "Please log in again to generate a mock."));
+      const raw = e instanceof Error ? e.message : "Generation failed. Please try again.";
+      let msg = raw;
+      if (/payment required|402|credits|quota|billing/i.test(raw)) {
+        msg =
+          "AI generation hit a Lovable AI credit limit — this feature itself is free. Check Cloud AI usage/credits in Lovable, then try again.";
+      } else if (/unauthorized/i.test(raw)) {
+        msg = "Please log in again to generate a mock.";
+      }
+      setError(msg);
     } finally {
       setGenerating(false);
     }
@@ -199,7 +206,7 @@ function CustomMockBuilderPage() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <Sparkles className="h-3.5 w-3.5 text-[#8B5E3C]" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                Premium · Economics · Chapters 2–5
+                Free · Economics · Chapters 2–5
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">

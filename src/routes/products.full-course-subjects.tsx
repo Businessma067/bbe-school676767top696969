@@ -1,9 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
-import { getCurrentAuthState } from "@/lib/auth-ui";
 import { Wand2 } from "lucide-react";
 
 export const Route = createFileRoute("/products/full-course-subjects")({
@@ -49,19 +47,6 @@ const subjects = [
 ];
 
 function FullCourseSubjects() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const auth = await getCurrentAuthState();
-      if (!cancelled) setLoggedIn(Boolean(auth));
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
@@ -181,57 +166,31 @@ function FullCourseSubjects() {
               </span>
             </Link>
 
-            {loggedIn ? (
-              <Link
-                to="/products/custom-mock-builder"
-                className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
-                style={{ borderTop: "4px solid #8B5E3C" }}
-              >
-                <div>
-                  <span className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-[#8B5E3C] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-                    <Wand2 className="h-3 w-3" />
-                    Premium
-                  </span>
-                  <h2 className="font-display text-xl font-semibold text-foreground">
-                    Custom Mock Builder
-                  </h2>
-                  <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                    Generate unlimited new Economics mocks from Full Course material —
-                    same format, difficulty, and wi2 scoring. Chapters 2–5.
-                  </p>
-                </div>
-                <span
-                  className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
-                  style={{ backgroundColor: "#8B5E3C", boxShadow: "0 4px 14px -4px #8B5E3C80" }}
-                >
-                  Open builder →
+            <Link
+              to="/products/custom-mock-builder"
+              className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
+              style={{ borderTop: "4px solid #8B5E3C" }}
+            >
+              <div>
+                <span className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-[#8B5E3C] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
+                  <Wand2 className="h-3 w-3" />
+                  Free access
                 </span>
-              </Link>
-            ) : (
-              <div
-                className="flex flex-col items-start gap-4 rounded-2xl border border-dashed border-border bg-card/60 p-6 sm:flex-row sm:items-center sm:justify-between"
-                style={{ borderTop: "4px solid #8B5E3C" }}
-              >
-                <div>
-                  <span className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-[#8B5E3C]/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-                    <Wand2 className="h-3 w-3" />
-                    Premium
-                  </span>
-                  <h2 className="font-display text-xl font-semibold text-foreground">
-                    Custom Mock Builder
-                  </h2>
-                  <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                    Log in to generate unlimited Economics mocks from Full Course material.
-                  </p>
-                </div>
-                <Link
-                  to="/login"
-                  className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold transition-all hover:bg-secondary"
-                >
-                  Log in to unlock →
-                </Link>
+                <h2 className="font-display text-xl font-semibold text-foreground">
+                  Custom Mock Builder
+                </h2>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                  Generate unlimited new Economics mocks from Full Course material —
+                  same format, difficulty, and wi2 scoring. Chapters 2–5.
+                </p>
               </div>
-            )}
+              <span
+                className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
+                style={{ backgroundColor: "#8B5E3C", boxShadow: "0 4px 14px -4px #8B5E3C80" }}
+              >
+                Open builder →
+              </span>
+            </Link>
           </div>
 
         </div>
