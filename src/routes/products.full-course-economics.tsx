@@ -361,6 +361,9 @@ function EconomicsTasks() {
                                 <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
+                                {timed.enabled && !locked && (
+                                  <TimerStatusDot entry={timed.state[c.id]} />
+                                )}
                               </button>
                             </li>
                           );
