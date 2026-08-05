@@ -190,7 +190,7 @@ function FullCourseSubjects() {
                 <div>
                   <span className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-[#8B5E3C] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
                     <Wand2 className="h-3 w-3" />
-                    Premium
+                    Free for members
                   </span>
                   <h2 className="font-display text-xl font-semibold text-foreground">
                     Custom Mock Builder
