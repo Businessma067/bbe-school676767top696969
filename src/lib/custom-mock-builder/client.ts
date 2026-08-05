@@ -1,8 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
-import {
-  customMockExamId,
-  type CustomMockQuestionCount,
-} from "@/config/custom-mock-builder";
+import { customMockExamId } from "@/config/custom-mock-builder";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import type { CustomMockRow, CustomMockSummary } from "./types";
 
@@ -121,5 +118,5 @@ export function readCachedCustomMock(id: string): CustomMockRow | null {
 
 export type GenerateArgs = {
   subtopics: string[];
-  questionCount: CustomMockQuestionCount;
+  questionCount: number;
 };

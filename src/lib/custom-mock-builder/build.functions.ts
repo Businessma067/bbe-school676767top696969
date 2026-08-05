@@ -2,8 +2,9 @@ import { createServerFn } from "@tanstack/react-start";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { z } from "zod";
 import {
-  CUSTOM_MOCK_QUESTION_COUNTS,
+  clampQuestionCount,
   durationMinutesForQuestionCount,
+  maxQuestionsForChapters,
   pointsTotalForEconomicsQuestions,
 } from "@/config/custom-mock-builder";
 import { SCORING_CONFIG } from "@/config/scoring-config";
@@ -16,7 +17,7 @@ import {
 
 const Input = z.object({
   subtopics: z.array(z.string().min(1)).min(1).max(40),
-  questionCount: z.union([z.literal(5), z.literal(10), z.literal(20)]),
+  questionCount: z.number().int().min(1).max(50),
 });
 
 type CaseRow = {
@@ -117,10 +118,6 @@ export const buildCustomMock = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => Input.parse(d))
   .handler(async ({ data, context }) => {
-    if (!CUSTOM_MOCK_QUESTION_COUNTS.includes(data.questionCount)) {
-      throw new Error("Invalid question count");
-    }
-
     const enabled = getEnabledBookChapters();
     const enabledSubIds = new Set(enabled.flatMap((c) => c.subtopics.map((s) => s.id)));
     const subtopics = [...new Set(data.subtopics)].filter((id) => enabledSubIds.has(id)).sort();
@@ -131,6 +128,14 @@ export const buildCustomMock = createServerFn({ method: "POST" })
     const chapters = chaptersFromSubtopicIds(subtopics);
     if (chapters.length === 0) {
       throw new Error("Selected subtopics do not map to an enabled chapter.");
+    }
+
+    const maxQ = maxQuestionsForChapters(chapters);
+    const questionCount = clampQuestionCount(data.questionCount, maxQ);
+    if (questionCount !== data.questionCount) {
+      throw new Error(
+        `Question count must be between 1 and ${maxQ} for the selected chapter(s).`,
+      );
     }
 
     // Prefer cases tagged with book section ids (e.g. '2.1'). Also include
@@ -149,24 +154,24 @@ export const buildCustomMock = createServerFn({ method: "POST" })
 
     // Prefer subtopic-tagged cases when available for the selection.
     const tagged = allRows.filter((c) => subtopics.includes(c.subsection));
-    const pool = tagged.length >= data.questionCount ? tagged : allRows;
+    const pool = tagged.length >= questionCount ? tagged : allRows;
     if (pool.length === 0) {
       throw new Error("No Full Course questions found for the selected subtopics yet.");
     }
 
     // Shuffle within each selected subsection so mocks never follow sort_order /
     // CASE …01, …02 order; then interleave subtopics and shuffle the final set.
-    const picked = pickRandomFromSubtopics(pool, subtopics, data.questionCount);
-    if (picked.length < data.questionCount) {
+    const picked = pickRandomFromSubtopics(pool, subtopics, questionCount);
+    if (picked.length < questionCount) {
       throw new Error(
-        `Only ${picked.length} Full Course questions available for the selected chapters (need ${data.questionCount}). Pick more chapters/subtopics or fewer questions.`,
+        `Only ${picked.length} Full Course questions available for the selected chapters (need ${questionCount}). Pick more chapters/subtopics or fewer questions.`,
       );
     }
 
-    const durationMinutes = durationMinutesForQuestionCount(data.questionCount);
-    const pointsTotal = pointsTotalForEconomicsQuestions(data.questionCount);
+    const durationMinutes = durationMinutesForQuestionCount(questionCount);
+    const pointsTotal = pointsTotalForEconomicsQuestions(questionCount);
     const label = subtopics.join(", ");
-    const title = `Custom Economics Mock · ${label} · ${data.questionCount}Q`;
+    const title = `Custom Economics Mock · ${label} · ${questionCount}Q`;
 
     const { data: inserted, error: insertError } = await context.supabase
       .from("custom_mocks")
@@ -175,7 +180,7 @@ export const buildCustomMock = createServerFn({ method: "POST" })
         subject: "economics",
         title,
         chapters: subtopics,
-        question_count: data.questionCount,
+        question_count: questionCount,
         duration_minutes: durationMinutes,
         points_total: pointsTotal,
         questions: [],

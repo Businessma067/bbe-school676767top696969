@@ -27,7 +27,7 @@ export type CustomMockSummary = {
 
 export type GenerateCustomMockInput = {
   subtopics: string[];
-  questionCount: 5 | 10 | 20;
+  questionCount: number;
 };
 
 export type GeneratedQuestionPayload = {

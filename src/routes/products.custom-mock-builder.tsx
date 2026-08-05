@@ -3,10 +3,11 @@ import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useMemo, useState } from "react";
 import {
   CUSTOM_MOCK_MINUTES_PER_QUESTION,
-  CUSTOM_MOCK_QUESTION_COUNTS,
+  clampQuestionCount,
   durationMinutesForQuestionCount,
+  maxQuestionsForChapters,
   pointsTotalForEconomicsQuestions,
-  type CustomMockQuestionCount,
+  presetsForMax,
 } from "@/config/custom-mock-builder";
 import {
   cacheCustomMock,
@@ -16,7 +17,7 @@ import {
 } from "@/lib/custom-mock-builder/client";
 import { buildCustomMock } from "@/lib/custom-mock-builder/build.functions";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
-import { getEnabledBookChapters } from "@/data/economics-subtopics";
+import { chaptersFromSubtopicIds, getEnabledBookChapters } from "@/data/economics-subtopics";
 import { getCurrentAuthState } from "@/lib/auth-ui";
 import { clearSession, loadSession } from "@/lib/mock-exam-session";
 import {
@@ -54,7 +55,8 @@ function CustomMockBuilderPage() {
   const [expanded, setExpanded] = useState<Record<number, boolean>>(() =>
     Object.fromEntries(bookChapters.map((c) => [c.num, true])),
   );
-  const [questionCount, setQuestionCount] = useState<CustomMockQuestionCount>(10);
+  const [questionCount, setQuestionCount] = useState(10);
+  const [customCountDraft, setCustomCountDraft] = useState("10");
   const [building, setBuilding] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<CustomMockSummary[] | null>(null);
@@ -85,6 +87,27 @@ function CustomMockBuilderPage() {
       cancelled = true;
     };
   }, [navigate]);
+
+  const maxQuestions = useMemo(() => {
+    const caps = chaptersFromSubtopicIds(selectedSubtopics);
+    return maxQuestionsForChapters(caps);
+  }, [selectedSubtopics]);
+
+  const questionPresets = useMemo(() => presetsForMax(maxQuestions), [maxQuestions]);
+
+  useEffect(() => {
+    setQuestionCount((prev) => {
+      const next = clampQuestionCount(prev, maxQuestions);
+      if (next !== prev) setCustomCountDraft(String(next));
+      return next;
+    });
+  }, [maxQuestions]);
+
+  const applyQuestionCount = (n: number) => {
+    const next = clampQuestionCount(n, maxQuestions);
+    setQuestionCount(next);
+    setCustomCountDraft(String(next));
+  };
 
   const durationMinutes = durationMinutesForQuestionCount(questionCount);
   const pointsTotal = pointsTotalForEconomicsQuestions(questionCount);
@@ -309,14 +332,15 @@ function CustomMockBuilderPage() {
 
             <h2 className="mt-8 font-display text-xl font-semibold">Number of Questions</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Timed mode uses {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question.
+              Timed mode uses {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question. Max{" "}
+              {maxQuestions} for the selected chapter(s) (Ch.2 → 30, Ch.3 → 50).
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              {CUSTOM_MOCK_QUESTION_COUNTS.map((n) => (
+              {questionPresets.map((n) => (
                 <button
                   key={n}
                   type="button"
-                  onClick={() => setQuestionCount(n)}
+                  onClick={() => applyQuestionCount(n)}
                   className={cn(
                     "min-w-[72px] rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
                     questionCount === n
@@ -327,6 +351,28 @@ function CustomMockBuilderPage() {
                   {n}
                 </button>
               ))}
+            </div>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <label htmlFor="custom-q-count" className="text-sm text-muted-foreground">
+                Custom
+              </label>
+              <input
+                id="custom-q-count"
+                type="number"
+                min={1}
+                max={maxQuestions}
+                value={customCountDraft}
+                onChange={(e) => setCustomCountDraft(e.target.value)}
+                onBlur={() => applyQuestionCount(Number(customCountDraft))}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    applyQuestionCount(Number(customCountDraft));
+                  }
+                }}
+                className="w-24 rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]"
+              />
+              <span className="text-xs text-muted-foreground">1–{maxQuestions}</span>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-4 text-xs text-muted-foreground">

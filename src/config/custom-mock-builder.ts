@@ -4,8 +4,22 @@ import { SCORING_CONFIG } from "@/config/scoring-config";
 /** Minutes allotted per question for Custom Mock Builder timed mode. */
 export const CUSTOM_MOCK_MINUTES_PER_QUESTION = 2;
 
+/** Quick-select buttons; actual count may be any integer within the chapter cap. */
+export const CUSTOM_MOCK_QUESTION_PRESETS = [5, 10, 15, 20, 25, 30, 40, 50] as const;
+
+/** Max questions allowed when a chapter’s subtopics are selected (pool size also limits). */
+export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
+  2: 30,
+  3: 50,
+  4: 30,
+  5: 30,
+};
+
+export const DEFAULT_QUESTION_CAP = 30;
+
+/** @deprecated Use CUSTOM_MOCK_QUESTION_PRESETS; kept for older imports. */
 export const CUSTOM_MOCK_QUESTION_COUNTS = [5, 10, 20] as const;
-export type CustomMockQuestionCount = (typeof CUSTOM_MOCK_QUESTION_COUNTS)[number];
+export type CustomMockQuestionCount = number;
 
 export type CustomMockSubjectId = "economics" | "math" | "english";
 
@@ -90,4 +104,21 @@ export function durationSecondsForQuestionCount(count: number): number {
 
 export function pointsTotalForEconomicsQuestions(count: number): number {
   return Number((count * CUSTOM_MOCK_SUBJECTS.economics.pointsPerQuestion).toFixed(2));
+}
+
+/** Highest cap among selected book chapters (e.g. ch2→30, ch3→50). */
+export function maxQuestionsForChapters(chapterNums: number[]): number {
+  if (chapterNums.length === 0) return DEFAULT_QUESTION_CAP;
+  return Math.max(
+    ...chapterNums.map((n) => CHAPTER_QUESTION_CAPS[n] ?? DEFAULT_QUESTION_CAP),
+  );
+}
+
+export function clampQuestionCount(count: number, max: number): number {
+  if (!Number.isFinite(count)) return Math.min(10, max);
+  return Math.max(1, Math.min(max, Math.floor(count)));
+}
+
+export function presetsForMax(max: number): number[] {
+  return CUSTOM_MOCK_QUESTION_PRESETS.filter((n) => n <= max);
 }
