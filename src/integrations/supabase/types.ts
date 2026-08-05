@@ -41,6 +41,45 @@ export type Database = {
         }
         Relationships: []
       }
+      custom_mocks: {
+        Row: {
+          chapters: string[]
+          created_at: string
+          duration_minutes: number
+          id: string
+          points_total: number
+          question_count: number
+          questions: Json
+          subject: string
+          title: string
+          user_id: string
+        }
+        Insert: {
+          chapters: string[]
+          created_at?: string
+          duration_minutes: number
+          id?: string
+          points_total?: number
+          question_count: number
+          questions?: Json
+          subject?: string
+          title: string
+          user_id: string
+        }
+        Update: {
+          chapters?: string[]
+          created_at?: string
+          duration_minutes?: number
+          id?: string
+          points_total?: number
+          question_count?: number
+          questions?: Json
+          subject?: string
+          title?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       economics_cases: {
         Row: {
           answer_key: boolean[]
