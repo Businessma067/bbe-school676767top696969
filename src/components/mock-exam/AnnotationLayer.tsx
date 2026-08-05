@@ -187,7 +187,8 @@ export function AnnotationLayer({ enabled, strokes, onChange, className }: Props
         </svg>
       </div>
 
-      {/* Floating toolbar — always receives clicks */}
+      {/* Floating toolbar — only while draw mode is on */}
+      {enabled && (
       <div className="pointer-events-auto absolute bottom-3 left-1/2 z-30 -translate-x-1/2 sm:bottom-4">
         <div className="rounded-xl border border-border bg-card/95 shadow-lg backdrop-blur">
           <button
@@ -196,7 +197,7 @@ export function AnnotationLayer({ enabled, strokes, onChange, className }: Props
             className="flex w-full items-center justify-center gap-1 border-b border-border/60 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-taupe hover:bg-secondary/50"
             aria-expanded={!collapsed}
           >
-            Annotate
+            Draw tools
             {collapsed ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
           </button>
           {!collapsed && (
@@ -270,6 +271,7 @@ export function AnnotationLayer({ enabled, strokes, onChange, className }: Props
           )}
         </div>
       </div>
+      )}
     </div>
   );
 }

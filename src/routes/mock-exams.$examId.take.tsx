@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Flag, PanelRightClose, PanelRightOpen, PenLine, Timer } from "lucide-react";
+import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X } from "lucide-react";
 import { SUBJECT_META } from "@/config/scoring-config";
 import { buildExamQuestions, getExamById } from "@/lib/mock-exams";
 import {
@@ -24,6 +24,13 @@ import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
 import { ExamReviewScreen } from "@/components/mock-exam/ExamReviewScreen";
 import { QuestionPalette } from "@/components/mock-exam/QuestionPalette";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/mock-exams/$examId/take")({
@@ -44,6 +51,7 @@ export const Route = createFileRoute("/mock-exams/$examId/take")({
 export { answersStorageKey };
 
 type Phase = "exam" | "review";
+type RightPanel = "sheet" | "notes" | null;
 
 function mergeSessions(
   local: MockExamSession | null,
@@ -68,26 +76,23 @@ function TakeExamPage() {
   const [hydrated, setHydrated] = useState(false);
   const [phase, setPhase] = useState<Phase>("exam");
   const [annotationMode, setAnnotationMode] = useState(false);
-  const [toolsOpen, setToolsOpen] = useState(true);
+  const [rightPanel, setRightPanel] = useState<RightPanel>(null);
   const [saveError, setSaveError] = useState<string | null>(null);
   const submitted = useRef(false);
   const remoteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const sessionRef = useRef(session);
   sessionRef.current = session;
 
-  // Hydrate from localStorage (+ remote if newer / missing local)
   useEffect(() => {
     let cancelled = false;
     (async () => {
       const fresh = createFreshSession(examId, timed, questionIds);
       const local = loadSession(examId);
-      // Prefer local same timed mode; ignore incompatible sittings
       const localOk = local && local.timed === timed ? local : null;
       let remote: MockExamSession | null = null;
       try {
         remote = await fetchInProgressMockSession(examId);
         if (remote && remote.timed !== timed) remote = null;
-        // Fill missing answer keys from question set
         if (remote) {
           remote = {
             ...remote,
@@ -102,7 +107,6 @@ function TakeExamPage() {
       }
       if (cancelled) return;
       const merged = mergeSessions(localOk, remote, fresh);
-      // Ensure all question keys exist
       merged.answers = { ...fresh.answers, ...merged.answers };
       if (!merged.visited.includes(questions[merged.currentIndex]?.id ?? "")) {
         const id = questions[merged.currentIndex]?.id;
@@ -116,13 +120,11 @@ function TakeExamPage() {
     };
   }, [examId, timed, questionIds, questions]);
 
-  // Local auto-save on every session change
   useEffect(() => {
     if (!hydrated || !session) return;
     saveSession(session);
   }, [session, hydrated]);
 
-  // Debounced remote auto-save
   useEffect(() => {
     if (!hydrated || !session) return;
     if (remoteTimer.current) clearTimeout(remoteTimer.current);
@@ -131,16 +133,17 @@ function TakeExamPage() {
         examId,
         examTitle: exam?.title ?? examId,
         session,
-      }).then(() => setSaveError(null)).catch(() => {
-        setSaveError("Could not sync progress — your work is still saved on this device.");
-      });
+      })
+        .then(() => setSaveError(null))
+        .catch(() => {
+          setSaveError("Could not sync progress — your work is still saved on this device.");
+        });
     }, 1200);
     return () => {
       if (remoteTimer.current) clearTimeout(remoteTimer.current);
     };
   }, [session, hydrated, examId, exam?.title]);
 
-  // Timer
   useEffect(() => {
     if (!hydrated || !session?.timed || phase !== "exam") return;
     const id = setInterval(() => {
@@ -181,7 +184,6 @@ function TakeExamPage() {
     [examId, navigate],
   );
 
-  // Auto-submit when timer hits 0
   useEffect(() => {
     if (!session?.timed || session.secondsLeft !== 0 || submitted.current) return;
     submit(EXAM_SECONDS);
@@ -199,21 +201,24 @@ function TakeExamPage() {
         return { ...prev, currentIndex: index, visited };
       });
       setPhase("exam");
+      setAnnotationMode(false);
     },
     [patch, questions],
   );
 
   const toggleMark = useCallback(
     (questionNumber: number, statementIndex: number) => {
-      const q = questions[questionNumber - 1];
-      if (!q) return;
+      const qItem = questions[questionNumber - 1];
+      if (!qItem) return;
       patch((prev) => {
-        const marks = [...(prev.answers[q.id] ?? [false, false, false, false, false])];
+        const marks = [...(prev.answers[qItem.id] ?? [false, false, false, false, false])];
         marks[statementIndex] = !marks[statementIndex];
-        const visited = prev.visited.includes(q.id) ? prev.visited : [...prev.visited, q.id];
+        const visited = prev.visited.includes(qItem.id)
+          ? prev.visited
+          : [...prev.visited, qItem.id];
         return {
           ...prev,
-          answers: { ...prev.answers, [q.id]: marks },
+          answers: { ...prev.answers, [qItem.id]: marks },
           visited,
         };
       });
@@ -260,7 +265,16 @@ function TakeExamPage() {
     [patch, questions, session],
   );
 
-  // Keyboard: arrows + F for flag (when not typing)
+  const openPanel = useCallback((panel: Exclude<RightPanel, null>) => {
+    setAnnotationMode(false);
+    setRightPanel(panel);
+  }, []);
+
+  const toggleDraw = useCallback(() => {
+    setRightPanel(null);
+    setAnnotationMode((v) => !v);
+  }, []);
+
   useEffect(() => {
     if (phase !== "exam" || !session) return;
     const onKey = (e: KeyboardEvent) => {
@@ -277,34 +291,31 @@ function TakeExamPage() {
       } else if (e.key === "f" || e.key === "F") {
         e.preventDefault();
         toggleFlag();
+      } else if (e.key === "Escape" && annotationMode) {
+        e.preventDefault();
+        setAnnotationMode(false);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [phase, session, questions.length, goTo, toggleFlag]);
+  }, [phase, session, questions.length, goTo, toggleFlag, annotationMode]);
 
-  const flaggedSet = useMemo(
-    () => new Set(session?.flagged ?? []),
-    [session?.flagged],
-  );
-  const visitedSet = useMemo(
-    () => new Set(session?.visited ?? []),
-    [session?.visited],
-  );
+  const flaggedSet = useMemo(() => new Set(session?.flagged ?? []), [session?.flagged]);
+  const visitedSet = useMemo(() => new Set(session?.visited ?? []), [session?.visited]);
 
   const marksByNumber = useMemo(() => {
     const map: Record<number, boolean[]> = {};
     if (!session) return map;
-    for (const q of questions) {
-      map[q.index] = session.answers[q.id] ?? [false, false, false, false, false];
+    for (const item of questions) {
+      map[item.index] = session.answers[item.id] ?? [false, false, false, false, false];
     }
     return map;
   }, [questions, session]);
 
   const flaggedNumbers = useMemo(() => {
     const set = new Set<number>();
-    for (const q of questions) {
-      if (flaggedSet.has(q.id)) set.add(q.index);
+    for (const item of questions) {
+      if (flaggedSet.has(item.id)) set.add(item.index);
     }
     return set;
   }, [questions, flaggedSet]);
@@ -343,11 +354,14 @@ function TakeExamPage() {
       : session.timed && secondsLeft < 15 * 60
         ? "warn"
         : null;
+  const hasNotes = Boolean(session.notes[q.id]?.trim());
+  const hasInk = (session.annotations[q.id]?.length ?? 0) > 0;
+  const answered = isQuestionAnswered(session.answers[q.id]);
 
   return (
     <div className="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased">
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
+        <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <h1 className="truncate font-display text-base font-bold">
               {exam?.title ?? "Mock Exam"}
@@ -378,16 +392,6 @@ function TakeExamPage() {
               >
                 <Timer className="h-3.5 w-3.5 shrink-0" />
                 {formatExamTime(secondsLeft)}
-                {timerWarn === "warn" && (
-                  <span className="ml-1 hidden text-[10px] font-sans font-medium uppercase tracking-wide sm:inline">
-                    15 min
-                  </span>
-                )}
-                {timerWarn === "critical" && (
-                  <span className="ml-1 hidden text-[10px] font-sans font-medium uppercase tracking-wide sm:inline">
-                    5 min
-                  </span>
-                )}
               </span>
             )}
             <button
@@ -397,29 +401,6 @@ function TakeExamPage() {
             >
               Review
             </button>
-            <button
-              type="button"
-              onClick={() => setAnnotationMode((v) => !v)}
-              className={cn(
-                "inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors",
-                annotationMode
-                  ? "border-caramel-deep bg-caramel-deep text-white"
-                  : "border-border bg-card hover:bg-secondary",
-              )}
-              aria-pressed={annotationMode}
-            >
-              <PenLine className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline">Annotate</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setToolsOpen((v) => !v)}
-              className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary lg:hidden"
-              aria-expanded={toolsOpen}
-            >
-              {toolsOpen ? <PanelRightClose className="h-3.5 w-3.5" /> : <PanelRightOpen className="h-3.5 w-3.5" />}
-              Tools
-            </button>
           </div>
         </div>
         {saveError && (
@@ -427,17 +408,30 @@ function TakeExamPage() {
             {saveError}
           </div>
         )}
+        {annotationMode && (
+          <div className="flex items-center justify-center gap-3 border-t border-caramel-deep/30 bg-caramel-deep/10 px-4 py-1.5 text-xs font-medium text-caramel-deep">
+            Draw mode on — drag to annotate. Esc or Draw again to exit.
+            <button
+              type="button"
+              onClick={() => setAnnotationMode(false)}
+              className="inline-flex items-center gap-1 rounded border border-caramel-deep/40 px-2 py-0.5 font-semibold hover:bg-caramel-deep/15"
+            >
+              <X className="h-3 w-3" /> Exit
+            </button>
+          </div>
+        )}
       </header>
 
-      <div className="mx-auto flex w-full max-w-[1400px] flex-1 flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:gap-5">
-        {/* LEFT — question info + palette */}
-        <aside className="w-full shrink-0 space-y-4 lg:w-[220px] xl:w-[240px]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-1 gap-4 px-4 py-4 sm:px-6 lg:gap-5">
+        <aside className="hidden w-[200px] shrink-0 space-y-4 xl:block xl:w-[220px]">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
             <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
               Question
             </div>
             <div className="mt-1 font-display text-2xl font-bold tabular-nums">{q.index}</div>
-            <div className={`mt-2 inline-flex rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${meta.badgeClass}`}>
+            <div
+              className={`mt-2 inline-flex rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${meta.badgeClass}`}
+            >
               {meta.label}
             </div>
             <button
@@ -472,16 +466,46 @@ function TakeExamPage() {
           </div>
         </aside>
 
-        {/* CENTER — stimulus only */}
         <main className="relative min-w-0 flex-1">
+          <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm xl:hidden">
+            <div className="mb-2 flex items-center justify-between gap-2">
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                Q{q.index} · {meta.label}
+              </span>
+              <button
+                type="button"
+                onClick={toggleFlag}
+                aria-pressed={isFlagged}
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-[11px] font-semibold",
+                  isFlagged
+                    ? "border-orange-500 bg-orange-500 text-white"
+                    : "border-border bg-background hover:bg-secondary",
+                )}
+              >
+                <Flag className={cn("h-3 w-3", isFlagged && "fill-current")} />
+                Flag
+              </button>
+            </div>
+            <QuestionPalette
+              questions={questions}
+              currentIndex={session.currentIndex}
+              answers={session.answers}
+              flagged={flaggedSet}
+              visited={visitedSet}
+              onNavigate={goTo}
+              compact
+            />
+          </div>
+
           <div
             className={cn(
               "relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm",
-              annotationMode && "select-none",
+              annotationMode && "select-none ring-2 ring-caramel-deep/40",
             )}
           >
-            <div className="relative p-5 sm:p-7">
-              <p className="font-display text-lg font-semibold leading-relaxed sm:text-xl">
+            <div className="relative p-5 sm:p-8 lg:p-10">
+              <p className="font-display text-lg font-semibold leading-relaxed sm:text-xl lg:text-[1.35rem]">
                 {q.stem}
               </p>
 
@@ -492,9 +516,9 @@ function TakeExamPage() {
                 {q.statements.map((s, i) => (
                   <div
                     key={s.id}
-                    className="border-b border-border px-4 py-3.5 last:border-b-0"
+                    className="border-b border-border px-4 py-4 last:border-b-0 sm:px-5"
                   >
-                    <p className="text-sm leading-relaxed sm:text-[15px]">
+                    <p className="text-sm leading-relaxed sm:text-[15px] lg:text-base">
                       <span className="mr-2 font-semibold text-taupe">
                         {String.fromCharCode(65 + i)}.
                       </span>
@@ -505,10 +529,8 @@ function TakeExamPage() {
               </div>
 
               <p className="mt-4 text-xs text-muted-foreground">
-                Mark answers on the Answer Sheet.{" "}
-                {isQuestionAnswered(session.answers[q.id])
-                  ? "This question has marks on the sheet."
-                  : "No marks yet for this question."}
+                Use <strong>Answer Sheet</strong> on the right to mark True.{" "}
+                {answered ? "This question has marks on the sheet." : "No marks yet."}
               </p>
             </div>
 
@@ -549,32 +571,122 @@ function TakeExamPage() {
           </nav>
         </main>
 
-        {/* RIGHT — answer sheet + notes */}
-        <aside
-          className={cn(
-            "w-full shrink-0 space-y-4 lg:w-[300px] xl:w-[340px]",
-            !toolsOpen && "hidden lg:block",
-          )}
-        >
-          <div className="lg:sticky lg:top-[4.5rem] lg:max-h-[calc(100vh-5rem)] lg:space-y-4 lg:overflow-y-auto">
+        <aside className="sticky top-[4.5rem] flex h-fit w-14 shrink-0 flex-col gap-2 sm:w-16">
+          <ToolRailButton
+            label="Answer Sheet"
+            short="Sheet"
+            active={rightPanel === "sheet"}
+            badge={answered}
+            onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
+          >
+            <FileSpreadsheet className="h-5 w-5" />
+          </ToolRailButton>
+          <ToolRailButton
+            label="Notes"
+            short="Notes"
+            active={rightPanel === "notes"}
+            badge={hasNotes}
+            onClick={() => (rightPanel === "notes" ? setRightPanel(null) : openPanel("notes"))}
+          >
+            <StickyNote className="h-5 w-5" />
+          </ToolRailButton>
+          <ToolRailButton
+            label="Draw"
+            short="Draw"
+            active={annotationMode}
+            badge={hasInk}
+            onClick={toggleDraw}
+          >
+            <PenLine className="h-5 w-5" />
+          </ToolRailButton>
+        </aside>
+      </div>
+
+      <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
+        <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-md">
+          <SheetHeader className="pr-8 text-left">
+            <SheetTitle className="font-display">Answer Sheet</SheetTitle>
+            <SheetDescription>
+              Mark ✕ for True. This is the only place answers are recorded.
+            </SheetDescription>
+          </SheetHeader>
+          <div className="mt-4 pb-8">
             <ExamAnswerSheet
               marksByNumber={marksByNumber}
               questionCount={questions.length}
               currentQuestion={q.index}
               flaggedNumbers={flaggedNumbers}
               onToggle={toggleMark}
-              onNavigate={(n) => goTo(n - 1)}
+              onNavigate={(n) => {
+                goTo(n - 1);
+              }}
             />
-            <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-              <ExamNotesPanel
-                value={session.notes[q.id] ?? ""}
-                onChange={setNotes}
-                questionLabel={`Question ${q.index}`}
-              />
-            </div>
           </div>
-        </aside>
-      </div>
+        </SheetContent>
+      </Sheet>
+
+      <Sheet open={rightPanel === "notes"} onOpenChange={(o) => setRightPanel(o ? "notes" : null)}>
+        <SheetContent side="right" className="flex w-full flex-col sm:max-w-md">
+          <SheetHeader className="pr-8 text-left">
+            <SheetTitle className="font-display">Notes</SheetTitle>
+            <SheetDescription>
+              Typed notes for question {q.index}. Independent from drawings.
+            </SheetDescription>
+          </SheetHeader>
+          <div className="mt-4 flex min-h-0 flex-1 flex-col pb-6">
+            <ExamNotesPanel
+              value={session.notes[q.id] ?? ""}
+              onChange={setNotes}
+              questionLabel={`Question ${q.index}`}
+              className="min-h-[280px] flex-1"
+            />
+          </div>
+        </SheetContent>
+      </Sheet>
     </div>
+  );
+}
+
+function ToolRailButton({
+  children,
+  label,
+  short,
+  active,
+  badge,
+  onClick,
+}: {
+  children: React.ReactNode;
+  label: string;
+  short: string;
+  active?: boolean;
+  badge?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      title={label}
+      aria-label={label}
+      aria-pressed={active}
+      onClick={onClick}
+      className={cn(
+        "relative flex flex-col items-center gap-1 rounded-xl border px-1.5 py-2.5 text-[10px] font-semibold transition-colors",
+        active
+          ? "border-caramel-deep bg-caramel-deep text-white shadow-sm"
+          : "border-border bg-card text-foreground hover:bg-secondary",
+      )}
+    >
+      {children}
+      <span className="leading-none">{short}</span>
+      {badge && (
+        <span
+          className={cn(
+            "absolute right-1 top-1 h-1.5 w-1.5 rounded-full",
+            active ? "bg-white" : "bg-caramel-deep",
+          )}
+          aria-hidden
+        />
+      )}
+    </button>
   );
 }
