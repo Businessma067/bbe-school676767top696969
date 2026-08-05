@@ -38,6 +38,54 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/**
+ * Random-order pick for a mock:
+ * - each selected subtopic’s own pool is shuffled (never CASE …01, …02 order);
+ * - picks are interleaved across selected subtopics when possible;
+ * - final mock set is shuffled again so display order is random.
+ * Falls back to a plain shuffle of the whole pool when rows are legacy chapter-level.
+ */
+function pickRandomFromSubtopics(
+  pool: CaseRow[],
+  subtopics: string[],
+  questionCount: number,
+): CaseRow[] {
+  const bySub = new Map<string, CaseRow[]>();
+  for (const row of pool) {
+    const key = subtopics.includes(row.subsection) ? row.subsection : "__mixed__";
+    const list = bySub.get(key) ?? [];
+    list.push(row);
+    bySub.set(key, list);
+  }
+
+  for (const [k, list] of bySub) {
+    bySub.set(k, shuffle(list));
+  }
+
+  const keys = shuffle([...bySub.keys()]);
+  const queues = keys.map((k) => [...(bySub.get(k) ?? [])]);
+  const picked: CaseRow[] = [];
+  const seen = new Set<string>();
+
+  while (picked.length < questionCount) {
+    let progressed = false;
+    for (const q of queues) {
+      while (q.length > 0) {
+        const next = q.shift()!;
+        if (seen.has(next.id)) continue;
+        seen.add(next.id);
+        picked.push(next);
+        progressed = true;
+        break;
+      }
+      if (picked.length >= questionCount) break;
+    }
+    if (!progressed) break;
+  }
+
+  return shuffle(picked);
+}
+
 function caseToExamQuestion(c: CaseRow, index: number, mockId: string): ExamQuestion {
   const statements = (c.statements ?? []).slice(0, 5);
   const keys = (c.answer_key ?? []).slice(0, 5);
@@ -85,23 +133,30 @@ export const buildCustomMock = createServerFn({ method: "POST" })
       throw new Error("Selected subtopics do not map to an enabled chapter.");
     }
 
+    // Prefer cases tagged with book section ids (e.g. '2.1'). Also include
+    // legacy chapter-level rows ('2') so older Full Course banks remain usable.
+    const subsectionKeys = [...new Set([...subtopics, ...chapters.map(String)])];
+
     const { data: caseRows, error: caseError } = await context.supabase
       .from("economics_cases")
       .select("id, case_id, context, statements, answer_key, tactical_explanations, subsection")
       .eq("tier", "full")
-      .in(
-        "subsection",
-        chapters.map(String),
-      )
+      .in("subsection", subsectionKeys)
       .order("sort_order", { ascending: true });
 
     if (caseError) throw new Error(`Failed to load Full Course cases: ${caseError.message}`);
-    const pool = (caseRows ?? []) as CaseRow[];
+    const allRows = (caseRows ?? []) as CaseRow[];
+
+    // Prefer subtopic-tagged cases when available for the selection.
+    const tagged = allRows.filter((c) => subtopics.includes(c.subsection));
+    const pool = tagged.length >= data.questionCount ? tagged : allRows;
     if (pool.length === 0) {
-      throw new Error("No Full Course questions found for the selected chapters.");
+      throw new Error("No Full Course questions found for the selected subtopics yet.");
     }
 
-    const picked = shuffle(pool).slice(0, Math.min(data.questionCount, pool.length));
+    // Shuffle within each selected subsection so mocks never follow sort_order /
+    // CASE …01, …02 order; then interleave subtopics and shuffle the final set.
+    const picked = pickRandomFromSubtopics(pool, subtopics, data.questionCount);
     if (picked.length < data.questionCount) {
       throw new Error(
         `Only ${picked.length} Full Course questions available for the selected chapters (need ${data.questionCount}). Pick more chapters/subtopics or fewer questions.`,

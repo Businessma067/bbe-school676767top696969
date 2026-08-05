@@ -180,8 +180,8 @@ function FullCourseSubjects() {
                   Custom Mock Builder
                 </h2>
                 <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Build Economics mocks from Full Course questions by textbook subtopic
-                  (2.1, 2.2, …) — same answer sheet and wi2 scoring.
+                  Build Economics mocks by textbook subtopic (2.1, 2.2, …) from the
+                  Full Course question bank.
                 </p>
               </div>
               <span
