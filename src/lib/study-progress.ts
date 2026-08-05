@@ -33,7 +33,7 @@ export type StudyProgressSummary = {
   /** Statement-level: total correct ÷ total answered (all history in range). */
   averageAccuracy: number | null;
   statementsThisMonth: number;
-  assignmentsThisMonth: number;
+  tasksThisMonth: number;
   days: DayProgress[];
 };
 
@@ -266,11 +266,11 @@ export function buildStudyProgress(
 
   const monthPrefix = todayKey.slice(0, 7); // YYYY-MM
   let statementsThisMonth = 0;
-  let assignmentsThisMonth = 0;
+  let tasksThisMonth = 0;
   for (const d of days) {
     if (d.isFuture || !d.date.startsWith(monthPrefix)) continue;
     statementsThisMonth += d.statementsAnswered;
-    assignmentsThisMonth += d.assignmentsCompleted + d.questionsCompleted;
+    tasksThisMonth += d.assignmentsCompleted + d.questionsCompleted;
   }
 
   return {
@@ -278,7 +278,7 @@ export function buildStudyProgress(
     longestStreak,
     averageAccuracy,
     statementsThisMonth,
-    assignmentsThisMonth,
+    tasksThisMonth,
     days,
   };
 }

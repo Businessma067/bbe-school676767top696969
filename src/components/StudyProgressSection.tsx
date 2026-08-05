@@ -69,8 +69,8 @@ export function StudyProgressSection({ tasks, mocks, sessionAnswers }: Props) {
         />
         <SummaryCard
           icon={<CheckCircle2 className="h-4 w-4 text-caramel-deep" />}
-          label="Assignments this month"
-          value={`${summary.assignmentsThisMonth}`}
+          label="Tasks this month"
+          value={`${summary.tasksThisMonth}`}
           sub="completed"
         />
       </div>
