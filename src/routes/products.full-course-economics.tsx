@@ -745,7 +745,7 @@ function CustomResetModal({
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
-  activeExplanationIndex, onRequestExplanation,
+  activeExplanationIndex, onRequestExplanation, reviewOnly = false, timerNote = null,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean, correctCount: number) => void;
@@ -753,6 +753,8 @@ function CaseCard({
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
+  reviewOnly?: boolean;
+  timerNote?: string | null;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -763,6 +765,11 @@ function CaseCard({
     setChecked(false);
     setOpenExpl({});
   }, [data.id]);
+
+  useEffect(() => {
+    if (reviewOnly) setChecked(true);
+  }, [reviewOnly, data.id]);
+
 
   const setAt = (i: number, v: boolean) => {
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
