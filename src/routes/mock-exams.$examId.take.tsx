@@ -467,11 +467,16 @@ function TakeExamPage() {
               className={cn(
                 "mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors",
                 isFlagged
-                  ? "border-orange-500 bg-orange-500 text-white"
+                  ? "border-red-600/40 bg-red-50 text-red-800 dark:bg-red-950/40 dark:text-red-200"
                   : "border-border bg-background hover:bg-secondary",
               )}
             >
-              <Flag className={cn("h-3.5 w-3.5", isFlagged && "fill-current")} />
+              <Flag
+                className={cn(
+                  "h-3.5 w-3.5",
+                  isFlagged ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300" : "text-taupe",
+                )}
+              />
               {isFlagged ? "Flagged" : "Flag for review"}
             </button>
           </div>
@@ -505,11 +510,16 @@ function TakeExamPage() {
                 className={cn(
                   "inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-[11px] font-semibold",
                   isFlagged
-                    ? "border-orange-500 bg-orange-500 text-white"
+                    ? "border-red-600/40 bg-red-50 text-red-800 dark:bg-red-950/40 dark:text-red-200"
                     : "border-border bg-background hover:bg-secondary",
                 )}
               >
-                <Flag className={cn("h-3 w-3", isFlagged && "fill-current")} />
+                <Flag
+                  className={cn(
+                    "h-3 w-3",
+                    isFlagged ? "fill-red-600 text-red-700 dark:fill-red-400 dark:text-red-300" : "text-taupe",
+                  )}
+                />
                 Flag
               </button>
             </div>

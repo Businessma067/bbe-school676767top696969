@@ -101,7 +101,7 @@ export function QuestionPalette({
                     {item.index}
                     {(state === "flagged" || (flagged.has(item.id) && state === "current")) && (
                       <Flag
-                        className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 fill-current"
+                        className="absolute -right-1 -top-1 h-3 w-3 text-red-700 fill-red-600 drop-shadow-[0_0_1.5px_rgba(255,255,255,0.95)]"
                         aria-hidden
                       />
                     )}
@@ -128,7 +128,12 @@ function Legend({
   return (
     <span className="inline-flex items-center gap-1">
       <span className={cn("relative inline-block h-2.5 w-2.5 rounded-sm border", swatch)}>
-        {flag && <Flag className="absolute -right-1 -top-1 h-2 w-2 text-orange-700" aria-hidden />}
+        {flag && (
+          <Flag
+            className="absolute -right-1 -top-1 h-2.5 w-2.5 text-red-700 fill-red-600 drop-shadow-[0_0_1px_white]"
+            aria-hidden
+          />
+        )}
       </span>
       {label}
     </span>
