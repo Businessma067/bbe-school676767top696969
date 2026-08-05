@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   HEATMAP_LEVEL_COLORS,
   accuracyToLevel,
   buildStudyProgress,
+  toLocalDateKey,
   type DayProgress,
   type SessionAnswerStat,
 } from "@/lib/study-progress";
@@ -140,6 +141,38 @@ function HeatmapLegend() {
 
 function ContributionHeatmap({ days }: { days: DayProgress[] }) {
   const [hovered, setHovered] = useState<DayProgress | null>(null);
+  const [todayKey, setTodayKey] = useState(() => toLocalDateKey(new Date()));
+
+  // Keep the "today" outline on the correct square when the calendar date changes.
+  useEffect(() => {
+    const syncToday = () => {
+      const next = toLocalDateKey(new Date());
+      setTodayKey((prev) => (prev === next ? prev : next));
+    };
+
+    const now = new Date();
+    const nextMidnight = new Date(now);
+    nextMidnight.setHours(24, 0, 0, 0);
+    const untilMidnight = nextMidnight.getTime() - now.getTime() + 50;
+
+    const midnightTimer = window.setTimeout(() => {
+      syncToday();
+    }, untilMidnight);
+
+    // Fallback for sleep/wake / background tabs missing the midnight timeout.
+    const interval = window.setInterval(syncToday, 60_000);
+
+    const onVisibility = () => {
+      if (document.visibilityState === "visible") syncToday();
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+
+    return () => {
+      window.clearTimeout(midnightTimer);
+      window.clearInterval(interval);
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, [todayKey]);
 
   const weeks = useMemo(() => {
     const result: DayProgress[][] = [];
@@ -189,12 +222,14 @@ function ContributionHeatmap({ days }: { days: DayProgress[] }) {
                       );
                     }
                     const level = accuracyToLevel(day.accuracy);
+                    const isToday = day.date === todayKey;
                     const isHovered = hovered?.date === day.date;
                     return (
                       <button
                         key={day.date}
                         type="button"
                         aria-label={ariaLabelForDay(day)}
+                        aria-current={isToday ? "date" : undefined}
                         onMouseEnter={() => setHovered(day)}
                         onMouseLeave={() => setHovered(null)}
                         onFocus={() => setHovered(day)}
@@ -205,10 +240,12 @@ function ContributionHeatmap({ days }: { days: DayProgress[] }) {
                           transform: isHovered ? "scale(1.28)" : "scale(1)",
                           boxShadow: isHovered
                             ? `0 0 0 1px color-mix(in oklab, ${HEATMAP_LEVEL_COLORS[7]} 35%, transparent), 0 0 10px -2px color-mix(in oklab, ${HEATMAP_LEVEL_COLORS[5]} 70%, transparent)`
-                            : "0 1px 1px rgba(0,0,0,0.04)",
+                            : isToday
+                              ? "0 0 0 1.5px #111, 0 1px 1px rgba(0,0,0,0.04)"
+                              : "0 1px 1px rgba(0,0,0,0.04)",
                           transition:
                             "transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease",
-                          zIndex: isHovered ? 2 : 1,
+                          zIndex: isHovered || isToday ? 2 : 1,
                         }}
                       />
                     );
