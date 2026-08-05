@@ -1,4 +1,9 @@
 import { SCORING_CONFIG, type SubjectKey } from "@/config/scoring-config";
+import {
+  isCustomExamId,
+  parseCustomMockId,
+} from "@/config/custom-mock-builder";
+import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
 
 export type ProductTier = "full" | "lite";
 
@@ -8,6 +13,8 @@ export interface MockExamSummary {
   questionCount: number;
   durationMinutes: number;
   tier: ProductTier;
+  /** Present for Custom Mock Builder exams — total wi2 points. */
+  pointsTotal?: number;
 }
 
 export interface CompletedExam {
@@ -52,6 +59,19 @@ export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
 export function getExamById(id: string): MockExamSummary | undefined {
   return MOCK_EXAMS.find((e) => e.id === id);
 }
+
+export function summaryFromCustomMock(row: CustomMockRow): MockExamSummary {
+  return {
+    id: `custom-${row.id}`,
+    title: row.title,
+    questionCount: row.question_count,
+    durationMinutes: row.duration_minutes,
+    tier: "full",
+    pointsTotal: row.points_total,
+  };
+}
+
+export { isCustomExamId, parseCustomMockId };
 
 /** Deterministic pseudo-random generator so mock content is stable per exam. */
 function makeRandom(seed: string) {

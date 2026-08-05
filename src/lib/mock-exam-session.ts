@@ -47,6 +47,8 @@ export function createFreshSession(
   examId: string,
   timed: boolean,
   questionIds: string[],
+  /** Override total seconds for custom/short exams (default: full mock EXAM_SECONDS). */
+  durationSeconds: number = EXAM_SECONDS,
 ): MockExamSession {
   const now = Date.now();
   return {
@@ -54,7 +56,7 @@ export function createFreshSession(
     examId,
     timed,
     startedAt: now,
-    secondsLeft: timed ? EXAM_SECONDS : null,
+    secondsLeft: timed ? durationSeconds : null,
     currentIndex: 0,
     answers: emptyAnswers(questionIds),
     flagged: [],

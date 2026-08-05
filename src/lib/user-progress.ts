@@ -226,6 +226,7 @@ export async function upsertMockExamProgress(input: {
   examId: string;
   examTitle: string;
   session: MockExamSession;
+  pointsTotal?: number;
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
@@ -235,7 +236,7 @@ export async function upsertMockExamProgress(input: {
     exam_id: input.examId,
     exam_title: input.examTitle,
     points_earned: 0,
-    points_total: 160,
+    points_total: input.pointsTotal ?? 160,
     per_subject: {},
     seconds_taken: null as number | null,
     timed: input.session.timed,

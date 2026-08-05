@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
-import { buildExamQuestions, getExamById, SECTION_TOTALS } from "@/lib/mock-exams";
+import { isCustomExamId, SECTION_TOTALS } from "@/lib/mock-exams";
+import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
+import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
 import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
@@ -36,13 +38,37 @@ function fmtDuration(sec: number) {
 
 function ReviewExamPage() {
   const { examId } = Route.useParams();
-  const exam = getExamById(examId);
-  const questions = useMemo(() => buildExamQuestions(examId), [examId]);
+  const [exam, setExam] = useState<MockExamSummary | null>(null);
+  const [questions, setQuestions] = useState<ExamQuestion[]>([]);
+  const [pointsTotal, setPointsTotal] = useState<number>(SCORING_CONFIG.examTotalPoints);
+  const [isCustom, setIsCustom] = useState(false);
+  const [ready, setReady] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const attempt = useMemo(() => readAttempt(examId), [examId]);
   const [open, setOpen] = useState<string | null>(null);
 
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const resolved = await resolveExam(examId);
+      if (cancelled) return;
+      if (!resolved) {
+        setLoadError("This exam could not be loaded.");
+        setReady(true);
+        return;
+      }
+      setExam(resolved.summary);
+      setQuestions(resolved.questions);
+      setPointsTotal(resolved.pointsTotal);
+      setIsCustom(resolved.isCustom);
+      setReady(true);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [examId]);
+
   const marked = useMemo(() => {
-    // fall back to deterministic mock ticks when no stored attempt exists
     return questions.map((q) => {
       const stored = attempt?.answers?.[q.id];
       const userMarks =
@@ -71,7 +97,7 @@ function ReviewExamPage() {
     return acc;
   }, [marked, taskScores]);
 
-  const pct = Math.round((total / SCORING_CONFIG.examTotalPoints) * 100);
+  const pct = pointsTotal > 0 ? Math.round((total / pointsTotal) * 100) : 0;
 
   const statementTotals = useMemo(() => {
     let correctCount = 0;
@@ -85,10 +111,23 @@ function ReviewExamPage() {
     return { correctCount, statementCount };
   }, [marked]);
 
-  // Persist the attempt to the user's account once per finished exam.
+  const subjectsToShow = useMemo(() => {
+    if (isCustom) return (["economics"] as const);
+    return (["economics", "english", "math"] as const);
+  }, [isCustom]);
+
+  const subjectMax = useMemo(() => {
+    if (!isCustom) return SECTION_TOTALS;
+    return {
+      economics: pointsTotal,
+      math: 0,
+      english: 0,
+    } as Record<SubjectKey, number>;
+  }, [isCustom, pointsTotal]);
+
   const saved = useRef(false);
   useEffect(() => {
-    if (saved.current || !attempt) return;
+    if (!ready || saved.current || !attempt || questions.length === 0) return;
     saved.current = true;
     const flag = `bbe-mock-saved:${examId}:${attempt.secondsTaken ?? "x"}`;
     try {
@@ -101,7 +140,7 @@ function ReviewExamPage() {
       examId,
       examTitle: exam?.title ?? examId,
       pointsEarned: Number(total.toFixed(2)),
-      pointsTotal: SCORING_CONFIG.examTotalPoints,
+      pointsTotal,
       perSubject: {
         economics: Number(perSubject.economics.toFixed(2)),
         math: Number(perSubject.math.toFixed(2)),
@@ -112,8 +151,38 @@ function ReviewExamPage() {
       correctCount: statementTotals.correctCount,
       statementCount: statementTotals.statementCount,
     });
-  }, [attempt, exam, examId, perSubject, statementTotals, total]);
+  }, [ready, attempt, exam, examId, perSubject, statementTotals, total, pointsTotal, questions.length]);
 
+  if (!ready) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background text-sm text-muted-foreground">
+        Loading review…
+      </div>
+    );
+  }
+
+  if (loadError) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background px-6">
+        <p className="text-sm text-muted-foreground">{loadError}</p>
+        {isCustomExamId(examId) ? (
+          <Link
+            to="/products/custom-mock-builder"
+            className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
+          >
+            ← Back
+          </Link>
+        ) : (
+          <Link
+            to="/mock-exams"
+            className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
+          >
+            ← Back
+          </Link>
+        )}
+      </div>
+    );
+  }
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <main className="mx-auto max-w-5xl px-6 py-12">
@@ -127,21 +196,20 @@ function ReviewExamPage() {
             </p>
           </div>
           <Link
-            to="/mock-exams"
+            to={isCustom ? "/products/custom-mock-builder" : "/mock-exams"}
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold transition-all hover:bg-secondary"
           >
-            ← All mock exams
+            {isCustom ? "← Custom Mock Builder" : "← All mock exams"}
           </Link>
         </div>
 
-        {/* Summary cards */}
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
             <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-taupe">
               <Target className="h-3.5 w-3.5" /> Overall score
             </div>
             <div className="font-display text-3xl font-bold text-caramel-deep">
-              {total.toFixed(1)} / {SCORING_CONFIG.examTotalPoints}
+              {total.toFixed(1)} / {pointsTotal}
             </div>
             <div className="mt-1 text-sm text-muted-foreground">{pct}%</div>
           </div>
@@ -167,14 +235,13 @@ function ReviewExamPage() {
           </div>
         </div>
 
-        {/* Subject breakdown */}
         <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
           <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
           <div className="space-y-4">
-            {(["economics", "english", "math"] as const).map((s) => {
+            {subjectsToShow.map((s) => {
               const sm = SUBJECT_META[s];
               const earned = perSubject[s];
-              const max = SECTION_TOTALS[s];
+              const max = subjectMax[s];
               return (
                 <div key={s}>
                   <div className="mb-1.5 flex items-center justify-between text-sm">
@@ -186,7 +253,7 @@ function ReviewExamPage() {
                   <div className="h-2 overflow-hidden rounded-full bg-secondary">
                     <div
                       className="h-full rounded-full transition-all duration-700"
-                      style={{ width: `${Math.min(100, (earned / max) * 100)}%`, backgroundColor: sm.color }}
+                      style={{ width: `${Math.min(100, max > 0 ? (earned / max) * 100 : 0)}%`, backgroundColor: sm.color }}
                     />
                   </div>
                 </div>
@@ -195,10 +262,9 @@ function ReviewExamPage() {
           </div>
         </div>
 
-        {/* Per-question breakdown */}
         <h2 className="mb-4 font-display text-xl font-semibold">Question breakdown</h2>
         <div className="space-y-2">
-          {marked.map((m, i) => {
+          {marked.map((m) => {
             const q = m.question;
             const sm = SUBJECT_META[q.subject];
             const score = calculateTaskScore(q.maxPoints, m.statements);

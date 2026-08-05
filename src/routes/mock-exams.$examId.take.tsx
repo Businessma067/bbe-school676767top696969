@@ -1,13 +1,13 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X } from "lucide-react";
 import { SUBJECT_META } from "@/config/scoring-config";
-import { buildExamQuestions, getExamById } from "@/lib/mock-exams";
+import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
+import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import {
   answersStorageKey,
   clearSession,
   createFreshSession,
-  EXAM_SECONDS,
   formatExamTime,
   isQuestionAnswered,
   loadSession,
@@ -72,9 +72,15 @@ function TakeExamPage() {
   const { timed } = Route.useSearch();
   const navigate = useNavigate();
 
-  const questions = useMemo(() => buildExamQuestions(examId), [examId]);
-  const exam = getExamById(examId);
+  const [exam, setExam] = useState<MockExamSummary | null>(null);
+  const [questions, setQuestions] = useState<ExamQuestion[]>([]);
+  const [examSeconds, setExamSeconds] = useState(2 * 60 * 60);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [contentReady, setContentReady] = useState(false);
+
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions]);
+  const examSecondsRef = useRef(examSeconds);
+  examSecondsRef.current = examSeconds;
 
   const [session, setSession] = useState<MockExamSession | null>(null);
   const [hydrated, setHydrated] = useState(false);
@@ -91,8 +97,35 @@ function TakeExamPage() {
 
   useEffect(() => {
     let cancelled = false;
+    setContentReady(false);
+    setHydrated(false);
+    setSession(null);
+    setLoadError(null);
+    warningsSeeded.current = false;
+    submitted.current = false;
     (async () => {
-      const fresh = createFreshSession(examId, timed, questionIds);
+      const resolved = await resolveExam(examId);
+      if (cancelled) return;
+      if (!resolved) {
+        setLoadError("This exam could not be loaded. It may have been deleted.");
+        setContentReady(true);
+        return;
+      }
+      setExam(resolved.summary);
+      setQuestions(resolved.questions);
+      setExamSeconds(resolved.durationSeconds);
+      setContentReady(true);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [examId]);
+
+  useEffect(() => {
+    if (!contentReady || questions.length === 0 || loadError) return;
+    let cancelled = false;
+    (async () => {
+      const fresh = createFreshSession(examId, timed, questionIds, examSeconds);
       const local = loadSession(examId);
       const localOk = local && local.timed === timed ? local : null;
       let remote: MockExamSession | null = null;
@@ -128,7 +161,7 @@ function TakeExamPage() {
     return () => {
       cancelled = true;
     };
-  }, [examId, timed, questionIds, questions]);
+  }, [contentReady, examId, timed, questionIds, questions, examSeconds, loadError]);
 
   // If a fresh timed session starts at full duration, allow all thresholds later.
   useEffect(() => {
@@ -152,6 +185,7 @@ function TakeExamPage() {
         examId,
         examTitle: exam?.title ?? examId,
         session,
+        pointsTotal: exam?.pointsTotal,
       })
         .then(() => setSaveError(null))
         .catch(() => {
@@ -182,9 +216,10 @@ function TakeExamPage() {
       if (submitted.current || !sessionRef.current) return;
       submitted.current = true;
       const s = sessionRef.current;
+      const totalSeconds = examSecondsRef.current;
       const secondsTaken =
         elapsed ??
-        (s.timed && s.secondsLeft != null ? EXAM_SECONDS - s.secondsLeft : null);
+        (s.timed && s.secondsLeft != null ? totalSeconds - s.secondsLeft : null);
       try {
         sessionStorage.setItem(
           answersStorageKey(examId),
@@ -205,7 +240,7 @@ function TakeExamPage() {
 
   useEffect(() => {
     if (!session?.timed || session.secondsLeft !== 0 || submitted.current) return;
-    submit(EXAM_SECONDS);
+    submit(examSecondsRef.current);
   }, [session?.secondsLeft, session?.timed, submit]);
 
   const patch = useCallback((updater: (prev: MockExamSession) => MockExamSession) => {
@@ -339,7 +374,21 @@ function TakeExamPage() {
     return set;
   }, [questions, flaggedSet]);
 
-  if (!hydrated || !session) {
+  if (loadError) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background px-6 font-sans text-foreground">
+        <p className="text-sm text-muted-foreground">{loadError}</p>
+        <Link
+          to="/products/custom-mock-builder"
+          className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
+        >
+          ← Custom Mock Builder
+        </Link>
+      </div>
+    );
+  }
+
+  if (!hydrated || !session || questions.length === 0) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background font-sans text-muted-foreground">
         Loading exam…
@@ -366,7 +415,7 @@ function TakeExamPage() {
   const meta = SUBJECT_META[q.subject];
   const isLast = session.currentIndex === questions.length - 1;
   const isFlagged = flaggedSet.has(q.id);
-  const secondsLeft = session.secondsLeft ?? EXAM_SECONDS;
+  const secondsLeft = session.secondsLeft ?? examSeconds;
   const timerWarn =
     session.timed && secondsLeft < 5 * 60
       ? "critical"

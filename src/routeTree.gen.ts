@@ -33,6 +33,7 @@ import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/product
 import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
+import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
 import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
@@ -163,6 +164,12 @@ const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
   path: '/demo-practice',
   getParentRoute: () => ProductsRoute,
 } as any)
+const ProductsCustomMockBuilderRoute =
+  ProductsCustomMockBuilderRouteImport.update({
+    id: '/custom-mock-builder',
+    path: '/custom-mock-builder',
+    getParentRoute: () => ProductsRoute,
+  } as any)
 const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
   id: '/features/answer-sheet',
   path: '/features/answer-sheet',
@@ -221,6 +228,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
+  '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -251,6 +259,7 @@ export interface FileRoutesByTo {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
+  '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -285,6 +294,7 @@ export interface FileRoutesById {
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
+  '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
   '/products/full-course-economics': typeof ProductsFullCourseEconomicsRoute
@@ -320,6 +330,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/demo-practice/english'
     | '/features/answer-sheet'
+    | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -350,6 +361,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/demo-practice/english'
     | '/features/answer-sheet'
+    | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -383,6 +395,7 @@ export interface FileRouteTypes {
     | '/demo-practice/economics'
     | '/demo-practice/english'
     | '/features/answer-sheet'
+    | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
     | '/products/full-course-economics'
@@ -586,6 +599,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsDemoPracticeRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/products/custom-mock-builder': {
+      id: '/products/custom-mock-builder'
+      path: '/custom-mock-builder'
+      fullPath: '/products/custom-mock-builder'
+      preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
+      parentRoute: typeof ProductsRoute
+    }
     '/features/answer-sheet': {
       id: '/features/answer-sheet'
       path: '/features/answer-sheet'
@@ -681,6 +701,7 @@ const MockExamsRouteWithChildren = MockExamsRoute._addFileChildren(
 )
 
 interface ProductsRouteChildren {
+  ProductsCustomMockBuilderRoute: typeof ProductsCustomMockBuilderRoute
   ProductsDemoPracticeRoute: typeof ProductsDemoPracticeRoute
   ProductsFullCourseRoute: typeof ProductsFullCourseRoute
   ProductsFullCourseEconomicsRoute: typeof ProductsFullCourseEconomicsRoute
@@ -690,6 +711,7 @@ interface ProductsRouteChildren {
 }
 
 const ProductsRouteChildren: ProductsRouteChildren = {
+  ProductsCustomMockBuilderRoute: ProductsCustomMockBuilderRoute,
   ProductsDemoPracticeRoute: ProductsDemoPracticeRoute,
   ProductsFullCourseRoute: ProductsFullCourseRoute,
   ProductsFullCourseEconomicsRoute: ProductsFullCourseEconomicsRoute,

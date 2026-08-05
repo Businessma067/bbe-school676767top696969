@@ -17,6 +17,11 @@ import {
   type TaskAttempt,
 } from "@/lib/user-progress";
 import {
+  fetchCustomMocks,
+} from "@/lib/custom-mock-builder/client";
+import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
+import { isCustomExamId } from "@/config/custom-mock-builder";
+import {
   fetchSessionAnswerStats,
   type SessionAnswerStat,
 } from "@/lib/study-progress";
@@ -31,6 +36,7 @@ import {
   Sparkles,
   AlertTriangle,
   GraduationCap,
+  Wand2,
 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
@@ -44,7 +50,7 @@ export const Route = createFileRoute("/dashboard")({
   }),
 });
 
-type TabId = "courses" | "mocks";
+type TabId = "courses" | "mocks" | "custom";
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -65,6 +71,7 @@ function DashboardPage() {
   const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
   const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
   const [mocks, setMocks] = useState<MockAttempt[] | null>(null);
+  const [customMocks, setCustomMocks] = useState<CustomMockSummary[] | null>(null);
   const [sessionAnswers, setSessionAnswers] = useState<SessionAnswerStat[] | null>(null);
 
   useEffect(() => {
@@ -77,17 +84,19 @@ function DashboardPage() {
         return;
       }
       setAuth(next);
-      const [e, t, m, s] = await Promise.all([
+      const [e, t, m, s, c] = await Promise.all([
         fetchEnrollments(),
         fetchTaskAttempts(),
         fetchMockAttempts(),
         fetchSessionAnswerStats(),
+        fetchCustomMocks(),
       ]);
       if (cancelled) return;
       setEnrollments(e);
       setTasks(t);
       setMocks(m);
       setSessionAnswers(s);
+      setCustomMocks(c);
     })();
     return () => {
       cancelled = true;
@@ -104,7 +113,11 @@ function DashboardPage() {
 
   const initial = auth.name.charAt(0).toUpperCase();
   const loading =
-    enrollments === null || tasks === null || mocks === null || sessionAnswers === null;
+    enrollments === null ||
+    tasks === null ||
+    mocks === null ||
+    sessionAnswers === null ||
+    customMocks === null;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -127,6 +140,12 @@ function DashboardPage() {
               label="Mock Exams"
               active={tab === "mocks"}
               onClick={() => setTab("mocks")}
+            />
+            <SideItem
+              icon={<Wand2 className="h-4 w-4" />}
+              label="Custom Mocks"
+              active={tab === "custom"}
+              onClick={() => setTab("custom")}
             />
           </nav>
         </aside>
@@ -175,6 +194,7 @@ function DashboardPage() {
           <div className="mt-6 flex gap-2 sm:hidden">
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>Courses</MobileTab>
             <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mock Exams</MobileTab>
+            <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>Custom</MobileTab>
           </div>
 
           <div className="mt-8">
@@ -187,8 +207,13 @@ function DashboardPage() {
                 mocks={mocks!}
                 sessionAnswers={sessionAnswers!}
               />
+            ) : tab === "mocks" ? (
+              <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
             ) : (
-              <MocksTab mocks={mocks!} />
+              <CustomMocksTab
+                customMocks={customMocks!}
+                attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
+              />
             )}
           </div>
         </main>
@@ -417,6 +442,215 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 }
 
 /* -------------------- MOCKS TAB -------------------- */
+
+function CustomMocksTab({
+  customMocks,
+  attempts,
+}: {
+  customMocks: CustomMockSummary[];
+  attempts: MockAttempt[];
+}) {
+  const attemptsByExam = useMemo(() => {
+    const map = new Map<string, MockAttempt[]>();
+    for (const a of attempts) {
+      const list = map.get(a.exam_id) ?? [];
+      list.push(a);
+      map.set(a.exam_id, list);
+    }
+    for (const [, list] of map) {
+      list.sort((a, b) => b.completed_at.localeCompare(a.completed_at));
+    }
+    return map;
+  }, [attempts]);
+
+  const sortedAttempts = useMemo(
+    () => [...attempts].sort((a, b) => b.completed_at.localeCompare(a.completed_at)),
+    [attempts],
+  );
+
+  if (customMocks.length === 0 && attempts.length === 0) {
+    return (
+      <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
+        <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
+        <p className="text-sm text-muted-foreground">
+          No custom mocks yet. Generate Economics mocks from Full Course material — they appear
+          here with scores after you finish.
+        </p>
+        <Link
+          to="/products/custom-mock-builder"
+          className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
+        >
+          Open Custom Mock Builder
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 className="font-display text-xl font-bold tracking-tight">Custom Mock Builder</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Generated mocks and your wi2 results.
+          </p>
+        </div>
+        <Link
+          to="/products/custom-mock-builder"
+          className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold hover:bg-secondary"
+        >
+          <Wand2 className="h-3.5 w-3.5" />
+          Build new mock
+        </Link>
+      </div>
+
+      {sortedAttempts.length > 0 && (
+        <div className="grid gap-3 sm:grid-cols-2">
+          <HighlightCard
+            icon={<Trophy className="h-5 w-5 text-caramel-deep" />}
+            label="Best custom score"
+            value={`${Math.round(
+              (Math.max(...sortedAttempts.map((a) => a.points_earned / Math.max(1, a.points_total))) *
+                100),
+            )}%`}
+            sub={`${sortedAttempts.length} completed attempt${sortedAttempts.length > 1 ? "s" : ""}`}
+          />
+          <HighlightCard
+            icon={<Sparkles className="h-5 w-5 text-caramel-deep" />}
+            label="Most recent"
+            value={`${Math.round(
+              (sortedAttempts[0].points_earned / Math.max(1, sortedAttempts[0].points_total)) * 100,
+            )}%`}
+            sub={`${sortedAttempts[0].exam_title} · ${formatDate(sortedAttempts[0].completed_at)}`}
+          />
+        </div>
+      )}
+
+      <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
+        <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
+          Built mocks
+        </h3>
+        {customMocks.length === 0 ? (
+          <p className="px-3 pb-3 text-sm text-muted-foreground">
+            No saved blueprints yet — generate one in the builder.
+          </p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] text-sm">
+              <thead>
+                <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  <th className="px-3 py-2">Mock</th>
+                  <th className="px-3 py-2">Created</th>
+                  <th className="px-3 py-2">Best result</th>
+                  <th className="px-3 py-2">Attempts</th>
+                  <th className="px-3 py-2"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {customMocks.map((mock) => {
+                  const examAttempts = attemptsByExam.get(mock.examId) ?? [];
+                  const best = examAttempts[0]
+                    ? examAttempts.reduce((a, b) =>
+                        a.points_earned >= b.points_earned ? a : b,
+                      )
+                    : null;
+                  return (
+                    <tr key={mock.id} className="border-t border-border/60">
+                      <td className="px-3 py-3">
+                        <p className="font-medium">{mock.title}</p>
+                        <p className="text-xs text-muted-foreground">
+                          Ch. {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
+                          {mock.durationMinutes} min
+                        </p>
+                      </td>
+                      <td className="px-3 py-3 text-muted-foreground">
+                        {formatDate(mock.createdAt)}
+                      </td>
+                      <td className="px-3 py-3">
+                        {best ? (
+                          <>
+                            <span className="font-display text-lg font-bold">
+                              {Math.round((best.points_earned / best.points_total) * 100)}%
+                            </span>
+                            <span className="ml-2 text-xs text-muted-foreground">
+                              {best.points_earned.toFixed(1)}/{best.points_total}
+                            </span>
+                          </>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">Not taken yet</span>
+                        )}
+                      </td>
+                      <td className="px-3 py-3 text-muted-foreground">{examAttempts.length}</td>
+                      <td className="px-3 py-3 text-right">
+                        <Link
+                          to="/products/custom-mock-builder"
+                          className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+                        >
+                          Open
+                        </Link>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      {sortedAttempts.length > 0 && (
+        <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
+          <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
+            Attempt history
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[560px] text-sm">
+              <thead>
+                <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  <th className="px-3 py-2">Exam</th>
+                  <th className="px-3 py-2">Date</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Time</th>
+                  <th className="px-3 py-2"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {sortedAttempts.map((m) => (
+                  <tr key={m.id} className="border-t border-border/60">
+                    <td className="px-3 py-3 font-medium">{m.exam_title}</td>
+                    <td className="px-3 py-3 text-muted-foreground">
+                      {formatDate(m.completed_at)}
+                    </td>
+                    <td className="px-3 py-3">
+                      <span className="font-display text-lg font-bold">
+                        {Math.round((m.points_earned / m.points_total) * 100)}%
+                      </span>
+                      <span className="ml-2 text-xs text-muted-foreground">
+                        {m.points_earned.toFixed(1)}/{m.points_total}
+                      </span>
+                    </td>
+                    <td className="px-3 py-3 text-muted-foreground">
+                      {m.seconds_taken != null ? `${Math.round(m.seconds_taken / 60)} min` : "—"}
+                    </td>
+                    <td className="px-3 py-3 text-right">
+                      <Link
+                        to="/mock-exams/$examId/review"
+                        params={{ examId: m.exam_id }}
+                        className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+                      >
+                        Review
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
 
 function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
   const sorted = useMemo(
