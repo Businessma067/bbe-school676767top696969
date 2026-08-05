@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import type { MockExamSession } from "@/lib/mock-exam-session";
 
 /* ----------------------------- types ----------------------------- */
 
@@ -172,6 +173,39 @@ export async function recordMockAttempt(input: {
     correct_count: input.correctCount,
     statement_count: input.statementCount,
   };
+
+  // Prefer converting in-progress row → submitted so recovery state is cleared.
+  const { data: existing } = await supabase
+    .from("mock_attempts")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("exam_id", input.examId)
+    .eq("status", "in_progress")
+    .maybeSingle();
+
+  if (existing?.id) {
+    const { error } = await supabase
+      .from("mock_attempts")
+      .update({
+        exam_title: input.examTitle,
+        points_earned: input.pointsEarned,
+        points_total: input.pointsTotal,
+        per_subject: input.perSubject,
+        seconds_taken: input.secondsTaken,
+        timed: input.timed,
+        answers,
+        status: "submitted",
+        completed_at: new Date().toISOString(),
+        flags: {},
+        notes: {},
+        annotations: {},
+        progress: {},
+      })
+      .eq("id", existing.id);
+    if (error) console.error("recordMockAttempt", error);
+    return;
+  }
+
   const { error } = await supabase.from("mock_attempts").insert({
     user_id: userId,
     exam_id: input.examId,
@@ -182,8 +216,106 @@ export async function recordMockAttempt(input: {
     seconds_taken: input.secondsTaken,
     timed: input.timed,
     answers,
+    status: "submitted",
   });
   if (error) console.error("recordMockAttempt", error);
+}
+
+/** Debounced remote backup of an in-progress sitting (logged-in users only). */
+export async function upsertMockExamProgress(input: {
+  examId: string;
+  examTitle: string;
+  session: MockExamSession;
+}): Promise<void> {
+  const userId = await currentUserId();
+  if (!userId) return;
+
+  const row = {
+    user_id: userId,
+    exam_id: input.examId,
+    exam_title: input.examTitle,
+    points_earned: 0,
+    points_total: 160,
+    per_subject: {},
+    seconds_taken: null as number | null,
+    timed: input.session.timed,
+    answers: { marks: input.session.answers },
+    status: "in_progress" as const,
+    started_at: new Date(input.session.startedAt).toISOString(),
+    current_index: input.session.currentIndex,
+    flags: Object.fromEntries(input.session.flagged.map((id) => [id, true])),
+    notes: input.session.notes,
+    annotations: input.session.annotations as unknown as Record<string, unknown>,
+    progress: {
+      secondsLeft: input.session.secondsLeft,
+      visited: input.session.visited,
+      updatedAt: input.session.updatedAt,
+    },
+  };
+
+  const { data: existing } = await supabase
+    .from("mock_attempts")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("exam_id", input.examId)
+    .eq("status", "in_progress")
+    .maybeSingle();
+
+  if (existing?.id) {
+    const { error } = await supabase
+      .from("mock_attempts")
+      .update(row as never)
+      .eq("id", existing.id);
+    if (error) console.error("upsertMockExamProgress", error);
+    return;
+  }
+
+  const { error } = await supabase.from("mock_attempts").insert(row as never);
+  if (error) console.error("upsertMockExamProgress", error);
+}
+
+export async function fetchInProgressMockSession(
+  examId: string,
+): Promise<MockExamSession | null> {
+  const userId = await currentUserId();
+  if (!userId) return null;
+  const { data, error } = await supabase
+    .from("mock_attempts")
+    .select(
+      "exam_id, timed, started_at, current_index, flags, notes, annotations, progress, answers",
+    )
+    .eq("user_id", userId)
+    .eq("exam_id", examId)
+    .eq("status", "in_progress")
+    .maybeSingle();
+  if (error) {
+    console.error("fetchInProgressMockSession", error);
+    return null;
+  }
+  if (!data) return null;
+
+  const progress = (data.progress ?? {}) as {
+    secondsLeft?: number | null;
+    visited?: string[];
+    updatedAt?: number;
+  };
+  const answersRaw = (data.answers ?? {}) as { marks?: Record<string, boolean[]> };
+  const flagsObj = (data.flags ?? {}) as Record<string, boolean>;
+
+  return {
+    version: 1,
+    examId: data.exam_id,
+    timed: data.timed,
+    startedAt: data.started_at ? new Date(data.started_at).getTime() : Date.now(),
+    secondsLeft: progress.secondsLeft ?? null,
+    currentIndex: data.current_index ?? 0,
+    answers: answersRaw.marks ?? {},
+    flagged: Object.keys(flagsObj).filter((k) => flagsObj[k]),
+    visited: progress.visited ?? [],
+    notes: (data.notes ?? {}) as Record<string, string>,
+    annotations: (data.annotations ?? {}) as MockExamSession["annotations"],
+    updatedAt: progress.updatedAt ?? Date.now(),
+  };
 }
 
 export async function fetchMockAttempts(): Promise<MockAttempt[]> {
@@ -192,7 +324,7 @@ export async function fetchMockAttempts(): Promise<MockAttempt[]> {
   const { data, error } = await supabase
     .from("mock_attempts")
     .select(
-      "id, exam_id, exam_title, points_earned, points_total, per_subject, seconds_taken, timed, completed_at, answers",
+      "id, exam_id, exam_title, points_earned, points_total, per_subject, seconds_taken, timed, completed_at, answers, status",
     )
     .eq("user_id", userId)
     .order("completed_at", { ascending: false });
@@ -200,22 +332,27 @@ export async function fetchMockAttempts(): Promise<MockAttempt[]> {
     console.error("fetchMockAttempts", error);
     return [];
   }
-  return (data ?? []).map((row) => {
-    const statementStats = parseMockAnswers(row.answers);
-    return {
-      id: row.id,
-      exam_id: row.exam_id,
-      exam_title: row.exam_title,
-      points_earned: Number(row.points_earned),
-      points_total: Number(row.points_total),
-      per_subject: (row.per_subject ?? {}) as Record<string, number>,
-      seconds_taken: row.seconds_taken,
-      timed: row.timed,
-      completed_at: row.completed_at,
-      correct_count: statementStats.correct_count,
-      statement_count: statementStats.statement_count,
-    };
-  });
+  return (data ?? [])
+    .filter((row) => {
+      const status = (row as { status?: string }).status;
+      return !status || status === "submitted";
+    })
+    .map((row) => {
+      const statementStats = parseMockAnswers(row.answers);
+      return {
+        id: row.id,
+        exam_id: row.exam_id,
+        exam_title: row.exam_title,
+        points_earned: Number(row.points_earned),
+        points_total: Number(row.points_total),
+        per_subject: (row.per_subject ?? {}) as Record<string, number>,
+        seconds_taken: row.seconds_taken,
+        timed: row.timed,
+        completed_at: row.completed_at,
+        correct_count: statementStats.correct_count,
+        statement_count: statementStats.statement_count,
+      };
+    });
 }
 
 /* --------------------------- aggregation -------------------------- */

@@ -1,6 +1,9 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
+/** Interactive exam answer sheet — same optical sheet family as this preview. */
+export { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
+
 /* ============================================================
    Animated Answer Sheet Preview
    ============================================================ */

@@ -14,6 +14,7 @@ import {
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exams";
+import { clearSession, loadSession } from "@/lib/mock-exam-session";
 import {
   fetchEnrollments,
   fetchMockAttempts,
@@ -47,6 +48,7 @@ function MockExamsPage() {
   const [selected, setSelected] = useState<MockExamSummary | null>(null);
   const [tier, setTier] = useState<ProductTier | null>(null);
   const [attempts, setAttempts] = useState<MockAttempt[] | null>(null);
+  const [inProgress, setInProgress] = useState<Record<string, { timed: boolean }>>({});
 
   useEffect(() => {
     let cancelled = false;
@@ -59,6 +61,13 @@ function MockExamsPage() {
       const owned = highestTier(enrollments);
       setTier(owned === "full" ? "full" : "lite");
       setAttempts(history);
+
+      const progress: Record<string, { timed: boolean }> = {};
+      for (const exam of MOCK_EXAMS) {
+        const s = loadSession(exam.id);
+        if (s) progress[exam.id] = { timed: s.timed };
+      }
+      setInProgress(progress);
     })();
     return () => {
       cancelled = true;
@@ -76,10 +85,26 @@ function MockExamsPage() {
 
   const start = (timed: boolean) => {
     if (!selected) return;
+    clearSession(selected.id);
+    setInProgress((prev) => {
+      const next = { ...prev };
+      delete next[selected.id];
+      return next;
+    });
     navigate({
       to: "/mock-exams/$examId/take",
       params: { examId: selected.id },
       search: { timed },
+    });
+  };
+
+  const resume = (exam: MockExamSummary) => {
+    const saved = inProgress[exam.id];
+    if (!saved) return;
+    navigate({
+      to: "/mock-exams/$examId/take",
+      params: { examId: exam.id },
+      search: { timed: saved.timed },
     });
   };
 
@@ -127,14 +152,39 @@ function MockExamsPage() {
                     {bestByExam.get(exam.id)!.points_total}
                   </p>
                 )}
-                <button
-                  type="button"
-                  onClick={() => setSelected(exam)}
-                  className="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
-                >
-                  <PlayCircle className="h-4 w-4" />
-                  {bestByExam.has(exam.id) ? "Retake Exam" : "Start Exam"}
-                </button>
+                {inProgress[exam.id] && (
+                  <p className="mt-2 text-xs font-semibold text-blue-600 dark:text-blue-400">
+                    In progress — you can resume where you left off
+                  </p>
+                )}
+                {inProgress[exam.id] ? (
+                  <div className="mt-5 flex flex-col gap-2">
+                    <button
+                      type="button"
+                      onClick={() => resume(exam)}
+                      className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
+                    >
+                      <PlayCircle className="h-4 w-4" />
+                      Resume Exam
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSelected(exam)}
+                      className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold transition-all hover:bg-secondary"
+                    >
+                      Start over…
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setSelected(exam)}
+                    className="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
+                  >
+                    <PlayCircle className="h-4 w-4" />
+                    {bestByExam.has(exam.id) ? "Retake Exam" : "Start Exam"}
+                  </button>
+                )}
               </div>
             ))}
           </div>

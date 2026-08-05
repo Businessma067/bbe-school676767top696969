@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { buildExamQuestions, getExamById, SECTION_TOTALS } from "@/lib/mock-exams";
 import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
-import { answersStorageKey } from "./mock-exams.$examId.take";
+import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 

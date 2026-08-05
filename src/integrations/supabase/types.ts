@@ -125,40 +125,61 @@ export type Database = {
       mock_attempts: {
         Row: {
           answers: Json
+          annotations: Json
           completed_at: string
+          current_index: number
           exam_id: string
           exam_title: string
+          flags: Json
           id: string
+          notes: Json
           per_subject: Json
           points_earned: number
           points_total: number
+          progress: Json
           seconds_taken: number | null
+          started_at: string
+          status: string
           timed: boolean
           user_id: string
         }
         Insert: {
           answers?: Json
+          annotations?: Json
           completed_at?: string
+          current_index?: number
           exam_id: string
           exam_title: string
+          flags?: Json
           id?: string
+          notes?: Json
           per_subject?: Json
           points_earned?: number
           points_total?: number
+          progress?: Json
           seconds_taken?: number | null
+          started_at?: string
+          status?: string
           timed?: boolean
           user_id: string
         }
         Update: {
           answers?: Json
+          annotations?: Json
           completed_at?: string
+          current_index?: number
           exam_id?: string
           exam_title?: string
+          flags?: Json
           id?: string
+          notes?: Json
           per_subject?: Json
           points_earned?: number
           points_total?: number
+          progress?: Json
           seconds_taken?: number | null
+          started_at?: string
+          status?: string
           timed?: boolean
           user_id?: string
         }
