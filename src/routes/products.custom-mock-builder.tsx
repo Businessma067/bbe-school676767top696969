@@ -199,7 +199,7 @@ function CustomMockBuilderPage() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <Sparkles className="h-3.5 w-3.5 text-[#8B5E3C]" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                Premium · Economics · Chapters 2–5
+                Free for all accounts · Economics · Chapters 2–5
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
