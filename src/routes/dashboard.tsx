@@ -473,7 +473,7 @@ function CustomMocksTab({
       <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
         <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
         <p className="text-sm text-muted-foreground">
-          No custom mocks yet. Generate Economics mocks from Full Course material — they appear
+          No custom mocks yet. Generate Economics mocks from Full Course material by book subtopic — they appear
           here with scores after you finish.
         </p>
         <Link

@@ -120,6 +120,6 @@ export function readCachedCustomMock(id: string): CustomMockRow | null {
 }
 
 export type GenerateArgs = {
-  chapters: number[];
+  subtopics: string[];
   questionCount: CustomMockQuestionCount;
 };

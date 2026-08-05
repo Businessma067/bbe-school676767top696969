@@ -5,7 +5,6 @@ import {
   CUSTOM_MOCK_MINUTES_PER_QUESTION,
   CUSTOM_MOCK_QUESTION_COUNTS,
   durationMinutesForQuestionCount,
-  getEnabledEconomicsChapters,
   pointsTotalForEconomicsQuestions,
   type CustomMockQuestionCount,
 } from "@/config/custom-mock-builder";
@@ -15,8 +14,9 @@ import {
   fetchCustomMockById,
   type GenerateArgs,
 } from "@/lib/custom-mock-builder/client";
-import { generateCustomMock } from "@/lib/custom-mock-builder/generate.functions";
+import { buildCustomMock } from "@/lib/custom-mock-builder/build.functions";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
+import { getEnabledBookChapters } from "@/data/economics-subtopics";
 import { getCurrentAuthState } from "@/lib/auth-ui";
 import { clearSession, loadSession } from "@/lib/mock-exam-session";
 import {
@@ -26,7 +26,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Clock, Loader2, PlayCircle, Sparkles, Wand2 } from "lucide-react";
+import { BookOpen, ChevronDown, Clock, Loader2, PlayCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/products/custom-mock-builder")({
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/products/custom-mock-builder")({
       {
         name: "description",
         content:
-          "Generate unlimited Economics mock exams from Full Course material using AI.",
+          "Build Economics mock exams from Full Course questions by book subtopic (2.1, 2.2, …).",
       },
       { name: "robots", content: "noindex" },
     ],
@@ -46,13 +46,16 @@ export const Route = createFileRoute("/products/custom-mock-builder")({
 
 function CustomMockBuilderPage() {
   const navigate = useNavigate();
-  const generateFn = useServerFn(generateCustomMock);
-  const chapters = useMemo(() => getEnabledEconomicsChapters(), []);
+  const buildFn = useServerFn(buildCustomMock);
+  const bookChapters = useMemo(() => getEnabledBookChapters(), []);
 
   const [authReady, setAuthReady] = useState(false);
-  const [selectedChapters, setSelectedChapters] = useState<number[]>([]);
+  const [selectedSubtopics, setSelectedSubtopics] = useState<string[]>([]);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>(() =>
+    Object.fromEntries(bookChapters.map((c) => [c.num, true])),
+  );
   const [questionCount, setQuestionCount] = useState<CustomMockQuestionCount>(10);
-  const [generating, setGenerating] = useState(false);
+  const [building, setBuilding] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<CustomMockSummary[] | null>(null);
   const [selected, setSelected] = useState<CustomMockSummary | null>(null);
@@ -85,24 +88,35 @@ function CustomMockBuilderPage() {
 
   const durationMinutes = durationMinutesForQuestionCount(questionCount);
   const pointsTotal = pointsTotalForEconomicsQuestions(questionCount);
-  const canGenerate = selectedChapters.length > 0 && !generating;
+  const canBuild = selectedSubtopics.length > 0 && !building;
 
-  const toggleChapter = (num: number) => {
-    setSelectedChapters((prev) =>
-      prev.includes(num) ? prev.filter((n) => n !== num) : [...prev, num].sort((a, b) => a - b),
+  const toggleSubtopic = (id: string) => {
+    setSelectedSubtopics((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id].sort(),
     );
   };
 
-  const onGenerate = async () => {
-    if (!canGenerate) return;
-    setGenerating(true);
+  const toggleChapterAll = (chapterNum: number) => {
+    const chapter = bookChapters.find((c) => c.num === chapterNum);
+    if (!chapter) return;
+    const ids = chapter.subtopics.map((s) => s.id);
+    const allOn = ids.every((id) => selectedSubtopics.includes(id));
+    setSelectedSubtopics((prev) => {
+      if (allOn) return prev.filter((id) => !ids.includes(id));
+      return [...new Set([...prev, ...ids])].sort();
+    });
+  };
+
+  const onBuild = async () => {
+    if (!canBuild) return;
+    setBuilding(true);
     setError(null);
     try {
       const args: GenerateArgs = {
-        chapters: selectedChapters,
+        subtopics: selectedSubtopics,
         questionCount,
       };
-      const result = await generateFn({ data: args });
+      const result = await buildFn({ data: args });
       const row = await fetchCustomMockById(result.id);
       if (row) cacheCustomMock(row);
       const summary: CustomMockSummary = {
@@ -119,17 +133,10 @@ function CustomMockBuilderPage() {
       setHistory((prev) => [summary, ...(prev ?? []).filter((m) => m.id !== summary.id)]);
       setSelected(summary);
     } catch (e) {
-      const raw = e instanceof Error ? e.message : "Generation failed. Please try again.";
-      let msg = raw;
-      if (/payment required|402|credits|quota|billing/i.test(raw)) {
-        msg =
-          "AI generation hit a Lovable AI credit limit — this feature itself is free. Check Cloud AI usage/credits in Lovable, then try again.";
-      } else if (/unauthorized/i.test(raw)) {
-        msg = "Please log in again to generate a mock.";
-      }
-      setError(msg);
+      const raw = e instanceof Error ? e.message : "Could not build mock. Please try again.";
+      setError(/unauthorized/i.test(raw) ? "Please log in again to build a mock." : raw);
     } finally {
-      setGenerating(false);
+      setBuilding(false);
     }
   };
 
@@ -204,17 +211,17 @@ function CustomMockBuilderPage() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-10 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-              <Sparkles className="h-3.5 w-3.5 text-[#8B5E3C]" />
+              <BookOpen className="h-3.5 w-3.5 text-[#8B5E3C]" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                Free · Economics · Chapters 2–5
+                From the book · Economics · Chapters 2–5
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Custom Mock Builder
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
-              Generate new Economics mocks from Full Course material and the platform textbook —
-              same format, same difficulty, unlimited practice.
+              Pick textbook subtopics (2.1, 2.2, …) and build a mock from existing Full Course
+              questions — no AI.
             </p>
           </div>
 
@@ -222,34 +229,79 @@ function CustomMockBuilderPage() {
             className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8"
             style={{ borderTop: "4px solid #8B5E3C" }}
           >
-            <h2 className="font-display text-xl font-semibold">Select Chapters</h2>
+            <h2 className="font-display text-xl font-semibold">Select book subtopics</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Economics only for now. Choose one or more chapters with complete Full Course banks.
+              From Fuhrmann — Introduction to Business and Economics (same TOC as Full Course theory).
             </p>
-            <ul className="mt-5 space-y-2">
-              {chapters.map((ch) => {
-                const checked = selectedChapters.includes(ch.num);
+
+            <ul className="mt-5 space-y-3">
+              {bookChapters.map((ch) => {
+                const open = expanded[ch.num] !== false;
+                const ids = ch.subtopics.map((s) => s.id);
+                const selectedInCh = ids.filter((id) => selectedSubtopics.includes(id)).length;
+                const allOn = selectedInCh === ids.length;
                 return (
-                  <li key={ch.num}>
-                    <label
-                      className={cn(
-                        "flex cursor-pointer items-start gap-3 rounded-xl border px-4 py-3 transition-colors",
-                        checked
-                          ? "border-[#8B5E3C]/40 bg-[#8B5E3C]/5"
-                          : "border-border hover:bg-secondary/40",
-                      )}
-                    >
-                      <input
-                        type="checkbox"
-                        className="mt-1 h-4 w-4 rounded border-border accent-[#8B5E3C]"
-                        checked={checked}
-                        onChange={() => toggleChapter(ch.num)}
-                      />
-                      <span>
-                        <span className="block text-sm font-semibold">Chapter {ch.num}</span>
-                        <span className="text-xs text-muted-foreground">{ch.title}</span>
-                      </span>
-                    </label>
+                  <li key={ch.num} className="overflow-hidden rounded-xl border border-border">
+                    <div className="flex items-stretch bg-secondary/30">
+                      <button
+                        type="button"
+                        onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !open }))}
+                        className="flex flex-1 items-center gap-2 px-4 py-3 text-left"
+                      >
+                        <ChevronDown
+                          className={cn(
+                            "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
+                            open ? "rotate-0" : "-rotate-90",
+                          )}
+                        />
+                        <span className="font-display text-sm font-semibold">
+                          Chapter {ch.num}
+                        </span>
+                        <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
+                        {selectedInCh > 0 && (
+                          <span className="ml-auto shrink-0 rounded-full bg-[#8B5E3C]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8B5E3C]">
+                            {selectedInCh}/{ids.length}
+                          </span>
+                        )}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => toggleChapterAll(ch.num)}
+                        className="shrink-0 border-l border-border px-3 text-[11px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+                      >
+                        {allOn ? "Clear" : "All"}
+                      </button>
+                    </div>
+                    {open && (
+                      <ul className="divide-y divide-border/60 px-2 py-1">
+                        {ch.subtopics.map((s) => {
+                          const checked = selectedSubtopics.includes(s.id);
+                          return (
+                            <li key={s.id}>
+                              <label
+                                className={cn(
+                                  "flex cursor-pointer items-start gap-3 rounded-lg px-3 py-2.5 transition-colors",
+                                  checked ? "bg-[#8B5E3C]/5" : "hover:bg-secondary/40",
+                                )}
+                              >
+                                <input
+                                  type="checkbox"
+                                  className="mt-0.5 h-4 w-4 rounded border-border accent-[#8B5E3C]"
+                                  checked={checked}
+                                  onChange={() => toggleSubtopic(s.id)}
+                                />
+                                <span>
+                                  <span className="text-sm font-semibold tabular-nums">{s.id}</span>
+                                  <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                    {s.title}
+                                  </span>
+                                </span>
+                              </label>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </li>
                 );
               })}
@@ -283,6 +335,9 @@ function CustomMockBuilderPage() {
                 {durationMinutes} min timed
               </span>
               <span>{pointsTotal} points · wi2 scoring</span>
+              {selectedSubtopics.length > 0 && (
+                <span>{selectedSubtopics.length} subtopic{selectedSubtopics.length > 1 ? "s" : ""}</span>
+              )}
             </div>
 
             {error && (
@@ -293,36 +348,31 @@ function CustomMockBuilderPage() {
 
             <button
               type="button"
-              disabled={!canGenerate}
-              onClick={() => void onGenerate()}
+              disabled={!canBuild}
+              onClick={() => void onBuild()}
               className={cn(
                 "mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md px-4 py-3.5 text-sm font-semibold text-white shadow-sm transition-all",
-                canGenerate
+                canBuild
                   ? "hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
                   : "cursor-not-allowed opacity-60",
               )}
               style={{
                 backgroundColor: "#8B5E3C",
-                boxShadow: canGenerate ? "0 4px 14px -4px #8B5E3C80" : undefined,
+                boxShadow: canBuild ? "0 4px 14px -4px #8B5E3C80" : undefined,
               }}
             >
-              {generating ? (
+              {building ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin" />
-                  Generating AI Mock…
+                  Building mock…
                 </>
               ) : (
                 <>
-                  <Wand2 className="h-4 w-4" />
-                  Generate AI Mock
+                  <BookOpen className="h-4 w-4" />
+                  Create Mock from Full Course
                 </>
               )}
             </button>
-            {generating && (
-              <p className="mt-3 text-center text-xs text-muted-foreground">
-                Reading textbook passages and Full Course examples to match style and difficulty…
-              </p>
-            )}
           </section>
 
           <section className="mt-12">
@@ -331,8 +381,7 @@ function CustomMockBuilderPage() {
               <p className="text-sm text-muted-foreground">Loading…</p>
             ) : history.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center text-sm text-muted-foreground">
-                No custom mocks yet. Generate your first one above — saved mocks reopen without
-                calling AI again.
+                No custom mocks yet. Select subtopics above and create your first one.
               </div>
             ) : (
               <div className="grid gap-4">
@@ -353,7 +402,7 @@ function CustomMockBuilderPage() {
                         })}
                       </p>
                       <p className="mt-1 text-xs text-muted-foreground">
-                        Chapters {mock.chapters.join(", ")}
+                        Topics {mock.chapters.join(", ")}
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-2">
