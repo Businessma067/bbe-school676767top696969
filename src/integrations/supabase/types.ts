@@ -163,9 +163,9 @@ export type Database = {
       }
       mock_attempts: {
         Row: {
-          answers: Json
           annotations: Json
-          completed_at: string
+          answers: Json
+          completed_at: string | null
           current_index: number
           exam_id: string
           exam_title: string
@@ -183,9 +183,9 @@ export type Database = {
           user_id: string
         }
         Insert: {
-          answers?: Json
           annotations?: Json
-          completed_at?: string
+          answers?: Json
+          completed_at?: string | null
           current_index?: number
           exam_id: string
           exam_title: string
@@ -203,9 +203,9 @@ export type Database = {
           user_id: string
         }
         Update: {
-          answers?: Json
           annotations?: Json
-          completed_at?: string
+          answers?: Json
+          completed_at?: string | null
           current_index?: number
           exam_id?: string
           exam_title?: string
