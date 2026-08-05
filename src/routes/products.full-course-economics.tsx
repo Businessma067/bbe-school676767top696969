@@ -489,6 +489,9 @@ function EconomicsTasks() {
             </div>
           )}
 
+          {activeCase && <TimedModeBar session={timed} />}
+
+
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
             const freeLimit = freeLimitOf(activeChapter);
 
