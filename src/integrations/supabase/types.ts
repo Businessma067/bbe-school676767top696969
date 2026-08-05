@@ -41,45 +41,6 @@ export type Database = {
         }
         Relationships: []
       }
-      custom_mocks: {
-        Row: {
-          chapters: string[]
-          created_at: string
-          duration_minutes: number
-          id: string
-          points_total: number
-          question_count: number
-          questions: Json
-          subject: string
-          title: string
-          user_id: string
-        }
-        Insert: {
-          chapters: string[]
-          created_at?: string
-          duration_minutes: number
-          id?: string
-          points_total?: number
-          question_count: number
-          questions?: Json
-          subject?: string
-          title: string
-          user_id: string
-        }
-        Update: {
-          chapters?: string[]
-          created_at?: string
-          duration_minutes?: number
-          id?: string
-          points_total?: number
-          question_count?: number
-          questions?: Json
-          subject?: string
-          title?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
       economics_cases: {
         Row: {
           answer_key: boolean[]
@@ -164,61 +125,40 @@ export type Database = {
       mock_attempts: {
         Row: {
           answers: Json
-          annotations: Json
           completed_at: string
-          current_index: number
           exam_id: string
           exam_title: string
-          flags: Json
           id: string
-          notes: Json
           per_subject: Json
           points_earned: number
           points_total: number
-          progress: Json
           seconds_taken: number | null
-          started_at: string
-          status: string
           timed: boolean
           user_id: string
         }
         Insert: {
           answers?: Json
-          annotations?: Json
           completed_at?: string
-          current_index?: number
           exam_id: string
           exam_title: string
-          flags?: Json
           id?: string
-          notes?: Json
           per_subject?: Json
           points_earned?: number
           points_total?: number
-          progress?: Json
           seconds_taken?: number | null
-          started_at?: string
-          status?: string
           timed?: boolean
           user_id: string
         }
         Update: {
           answers?: Json
-          annotations?: Json
           completed_at?: string
-          current_index?: number
           exam_id?: string
           exam_title?: string
-          flags?: Json
           id?: string
-          notes?: Json
           per_subject?: Json
           points_earned?: number
           points_total?: number
-          progress?: Json
           seconds_taken?: number | null
-          started_at?: string
-          status?: string
           timed?: boolean
           user_id?: string
         }
