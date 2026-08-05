@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { TheoryReader } from "@/components/TheoryReader";
+import { useTimedSession } from "@/lib/timed-practice";
+import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
@@ -81,6 +83,7 @@ function EconomicsTasks() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const timed = useTimedSession();
 
   type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
   type ExplanationState = {
@@ -167,6 +170,14 @@ function EconomicsTasks() {
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+
+  useEffect(() => {
+    if (!timed.enabled) return;
+    timed.openQuestion(activeCase?.id ?? null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timed.enabled, activeCase?.id]);
+
+  const activeTimer = timed.get(activeCase?.id);
 
   const recordResult = (caseId: string, allCorrect: boolean) => {
     setProgress((prev) => {
@@ -350,6 +361,9 @@ function EconomicsTasks() {
                                 <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
+                                {timed.enabled && !locked && (
+                                  <TimerStatusDot entry={timed.state[c.id]} />
+                                )}
                               </button>
                             </li>
                           );
@@ -475,6 +489,9 @@ function EconomicsTasks() {
             </div>
           )}
 
+          {activeCase && <TimedModeBar session={timed} />}
+
+
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
             const freeLimit = freeLimitOf(activeChapter);
 
@@ -502,8 +519,15 @@ function EconomicsTasks() {
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
+              reviewOnly={!!activeTimer?.reviewOnly}
+              timerNote={
+                activeTimer?.timedOut && activeTimer.status !== "submitted"
+                  ? "Failed on time"
+                  : null
+              }
               onGraded={(allCorrect, correctCount) => {
                 recordResult(activeCase.id, allCorrect);
+                if (timed.enabled) timed.markSubmitted(activeCase.id);
                 void recordTaskAttempt({
                   subject: "economics",
                   chapter: `Chapter ${chapterOf(activeCase)}`,
@@ -582,6 +606,13 @@ function EconomicsTasks() {
         </aside>
         )}
       </div>
+
+      {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
+        <TimeoutModal
+          onOvertime={() => timed.chooseOvertime(activeCase.id)}
+          onReview={() => timed.chooseReview(activeCase.id)}
+        />
+      )}
 
       {customResetOpen && (
         <CustomResetModal
@@ -721,7 +752,7 @@ function CustomResetModal({
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
-  activeExplanationIndex, onRequestExplanation,
+  activeExplanationIndex, onRequestExplanation, reviewOnly = false, timerNote = null,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean, correctCount: number) => void;
@@ -729,6 +760,8 @@ function CaseCard({
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
+  reviewOnly?: boolean;
+  timerNote?: string | null;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -739,6 +772,11 @@ function CaseCard({
     setChecked(false);
     setOpenExpl({});
   }, [data.id]);
+
+  useEffect(() => {
+    if (reviewOnly) setChecked(true);
+  }, [reviewOnly, data.id]);
+
 
   const setAt = (i: number, v: boolean) => {
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
@@ -777,6 +815,11 @@ function CaseCard({
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
+          </span>
+        )}
+        {timerNote && (
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+            {timerNote}
           </span>
         )}
         {inRevision && (
