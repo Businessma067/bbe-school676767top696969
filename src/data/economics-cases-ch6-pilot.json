@@ -2,219 +2,219 @@
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.01",
-    "title": "Comparative Balance Sheets Over Two Years",
+    "title": "Two-Year Balance Sheet Growth and Structure",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following comparative balance sheet extracts (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Land and buildings | 450 | 506 |\n| Machinery | 160 | 205 |\n| Inventory | 95 | 118 |\n| Trade receivables | 72 | 90 |\n| Cash and cash equivalents | 53 | 41 |\n| **Total assets** | **830** | **960** |\n| Share capital | 250 | 250 |\n| Retained earnings | 170 | 230 |\n| Long-term bank loan | 280 | 316 |\n| Trade payables | 95 | 120 |\n| Short-term loan | 35 | 44 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=370 | Total assets=775\nYear 2 | Equity=435 | Total assets=875\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 300 | 340 |\n| Machinery | 150 | 170 |\n| Office equipment | 45 | 50 |\n| Patents, trademarks and licences | 30 | 30 |\n| Inventory | 100 | 125 |\n| Trade receivables | 90 | 115 |\n| Cash and cash equivalents | 60 | 45 |\n| Total assets | **775** | **875** |\n| **EQUITY** | | |\n| Share capital | 150 | 150 |\n| Retained earnings | 220 | 285 |\n| Total equity | **370** | **435** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 245 | 275 |\n| Bonds payable | 50 | 55 |\n| Trade payables | 70 | 75 |\n| Bank overdraft | 40 | 35 |\n| Total liabilities | **405** | **440** |\n| Total equity and liabilities | **775** | **875** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Total assets grew by more than €110 thousand between the two years.",
-      "Equity increased, but the equity ratio declined.",
-      "Cash and cash equivalents fell even though every other asset category on the extract increased.",
-      "Working capital increased by exactly €15 thousand.",
-      "The long-term bank loan grew at a higher percentage rate than trade payables."
+      "Total equity increased by more than 20% from Year 1 to Year 2.",
+      "Since share capital remained unchanged, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2.",
+      "Trade payables are classified under non-current liabilities because businesses are normally allowed more than a year to pay their suppliers.",
+      "Working capital more than doubled between Year 1 and Year 2."
     ],
     "answer_key": [
-      true,
+      false,
       true,
       true,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Total assets rose from 830 to 960, an increase of 130, which is more than 110.",
-      "TRUE — Equity rose from 420 to 480. The equity ratio fell from 50.60% (420/830) to 50.00% (480/960), so the ratio declined despite higher equity.",
-      "TRUE — Cash fell from 53 to 41. Land and buildings, machinery, inventory, and trade receivables all increased.",
-      "FALSE — Working capital was 90 in Year 1 (220 − 130) and 85 in Year 2 (249 − 164). The change is -5, not +15.",
-      "FALSE — The long-term bank loan grew by about 12.9%, while trade payables grew by about 26.3%. Trade payables grew faster, not the loan."
+      "FALSE — Equity rose from 370 to 435, an increase of 65. Relative growth is about 17.6%, which is below 20%.",
+      "TRUE — Share capital stayed at 150 in both years, so the entire equity increase of 65 came from retained earnings (220 → 285), i.e. from internal sources.",
+      "TRUE — Non-current assets were 525 in Year 1 (67.7% of assets) and 590 in Year 2 (67.4%). The share fell slightly.",
+      "FALSE — Trade payables normally arise from short-term supplier credit and are classified as a current liability, not a non-current liability.",
+      "FALSE — Working capital was 140 in Year 1 and 175 in Year 2, an increase of only about 25%, nowhere near doubling."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.02",
-    "title": "Balance Sheet Structure and Equity Claims",
+    "title": "Comparative Balance Sheet Gearing",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following balance sheet extract (in € thousands) for a business whose identity is not disclosed.\n\n| Assets (€ thousands) | Amount | Liabilities and equity (€ thousands) | Amount |\n| --- | ---: | --- | ---: |\n| Buildings | 410 | Share capital | 180 |\n| Machinery | 265 | Retained earnings | 165 |\n| Patents | 35 | Long-term bank loan | 400 |\n| Inventory | 128 | Trade payables | 180 |\n| Trade receivables | 94 | Short-term loan | 65 |\n| Cash and cash equivalents | 58 | | |\n| **Total assets** | **990** | **Total liabilities and equity** | **990** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity versus non-current liabilities\"]]\nYear 1 | Equity=220 | Non-current liabilities=450\nYear 2 | Equity=225 | Non-current liabilities=490\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 350 | 380 |\n| Machinery | 170 | 185 |\n| Patents, trademarks and licences | 80 | 85 |\n| Inventory | 100 | 115 |\n| Trade receivables | 90 | 105 |\n| Cash and cash equivalents | 40 | 40 |\n| Total assets | **830** | **910** |\n| **EQUITY** | | |\n| Share capital | 100 | 100 |\n| Retained earnings | 120 | 125 |\n| Total equity | **220** | **225** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 400 | 435 |\n| Bonds payable | 50 | 55 |\n| Trade payables | 120 | 150 |\n| Bank overdraft | 40 | 45 |\n| Total liabilities | **610** | **685** |\n| Total equity and liabilities | **830** | **910** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Equity is less than the recorded value of the buildings.",
-      "The debt ratio exceeds 65%.",
-      "If retained earnings had been €20 thousand lower, the equity ratio would have fallen below 32%.",
-      "Non-current liabilities are more than six times the size of the short-term loan.",
-      "Non-current assets on this extract exceed €700 thousand."
+      "The equity ratio improved from Year 1 to Year 2.",
+      "The debt ratio decreased from Year 1 to Year 2.",
+      "Given that its non-current liabilities are far greater than its equity in both years, this business would be considered high geared in both Year 1 and Year 2.",
+      "Non-current assets are fully covered by the sum of equity and non-current liabilities in both years.",
+      "Total assets grew by more than 12% from Year 1 to Year 2."
     ],
     "answer_key": [
-      true,
-      true,
+      false,
       false,
       true,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Equity = share capital + retained earnings = 345. Buildings are recorded at 410, so equity (345) is less than buildings.",
-      "TRUE — Total liabilities = 645. Debt ratio = 645/990 ≈ 65.15%, which sits just above 65%.",
-      "FALSE — Equity would become 325. Equity ratio = 325/990 ≈ 32.83%, which is still above 32%, not below it.",
-      "TRUE — Long-term bank loan 400 divided by short-term loan 65 is about 6.15, which is more than six.",
-      "TRUE — Buildings + machinery + patents = 710, which exceeds 700."
+      "FALSE — Equity ratio Year 1 ≈ 26.5%; Year 2 ≈ 24.7%. The ratio fell.",
+      "FALSE — Debt ratio Year 1 ≈ 73.5%; Year 2 ≈ 75.3%. The ratio rose.",
+      "TRUE — Non-current liabilities (450 then 490) far exceed equity (220 then 225) in both years, so the business is high geared.",
+      "TRUE — Year 1 non-current assets 600 ≤ equity plus non-current liabilities 670. Year 2: 650 ≤ 715. Covered in both years.",
+      "FALSE — Total assets grew from 830 to 910, about 9.6%, which is not more than 12%."
     ]
   },
   {
     "subsection": "6.2",
     "case_id": "CASE 6.2.01",
-    "title": "Cash Flow Statement Extract",
+    "title": "Comparative Cash Flow Statement Extract",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item | Amount (€ thousands) |\n| --- | ---: |\n| Cash flow from operating activities | 84 |\n| Cash flow from investing activities | (132) |\n| Cash flow from financing activities | 55 |\n| Net change in cash and cash equivalents | 7 |\n| Cash and cash equivalents at beginning of year | 18 |\n| Cash and cash equivalents at end of year | 25 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed, comparing the current year (Year 2) with the prior year (Year 1).\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=140 | Investing=-120\nYear 2 | Operating=150 | Investing=-250\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities before changes in working capital | 150 | 195 |\n| Cash flow from operating activities | 140 | 150 |\n| Cash flow from investing activities | (120) | (250) |\n| Operating free cash flow | 20 | (100) |\n| Free cash flow | 5 | (120) |\n| Cash flow from financing activities | 30 | 110 |\n| Change in cash and cash equivalents | 35 | (10) |\n| Currency effects on cash and cash equivalents | 3 | (6) |\n| Cash and cash equivalents at end of the year | 118 | 102 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The net change in cash and cash equivalents is €9 thousand.",
-      "Cash flow from investing activities, in absolute terms, is more than double the financing inflow.",
-      "Ending cash and cash equivalents equal €30 thousand.",
-      "If operating activities had instead generated €100 thousand, the net change in cash would have been positive.",
-      "Beginning cash and cash equivalents exceed ending cash and cash equivalents."
+      "Cash flow from operating activities increased by more than 10% from Year 1 to Year 2.",
+      "A negative cash flow from investing activities always means that a business is in financial difficulty.",
+      "In both years, cash flow from operating activities was lower than cash flow from operating activities before changes in working capital.",
+      "If a customer settles an outstanding invoice during the year, the resulting cash inflow would be recorded within cash flow from operating activities, since it relates to the core activities of the business.",
+      "Cash and cash equivalents at the end of the year fell by more than 20% from Year 1 to Year 2."
     ],
     "answer_key": [
       false,
-      true,
       false,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — Operating 84 plus investing (−132) plus financing 55 equals a net change of 7, not 9.",
-      "TRUE — Absolute investing outflow is 132. Double the financing inflow of 55 is 110. Because 132 is greater than 110, investing is more than double the financing inflow.",
-      "FALSE — Beginning cash 18 plus net change 7 equals ending cash 25, not 30.",
-      "TRUE — With operating cash flow of 100, net change would be 100 − 132 + 55 = 23, which is positive.",
-      "FALSE — Beginning cash (18) is lower than ending cash (25), so beginning does not exceed ending."
+      "FALSE — Operating cash flow rose from 140 to 150, about 7.1%, which is below 10%.",
+      "FALSE — A negative investing cash flow usually indicates investment in long-term assets, not financial distress; investing inflows typically come from selling assets.",
+      "TRUE — Year 1: 140 is below 150; Year 2: 150 is below 195.",
+      "TRUE — Collecting a trade receivable is a core operating change in a current asset, so the cash inflow sits in operating activities.",
+      "FALSE — Ending cash fell from 118 to 102, about 13.6%, which is not more than 20%."
     ]
   },
   {
     "subsection": "6.2",
     "case_id": "CASE 6.2.02",
-    "title": "Income Statement With Missing Totals",
+    "title": "Two-Year Statement of Profit and Loss",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following income statement extract (in € thousands) for a business whose identity is not disclosed. Gross profit and the operating result must be calculated from the figures given.\n\n| Item | Amount (€ thousands) |\n| --- | ---: |\n| Revenue | 2,140 |\n| Cost of sales | 1,380 |\n| Gross profit | ? |\n| Distribution costs | 145 |\n| General and administrative costs | 210 |\n| Depreciation and amortisation | 95 |\n| Operating result | ? |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue, gross profit and operating result\"]]\nYear 1 | Revenue=780 | Gross profit=270 | Operating result=201\nYear 2 | Revenue=920 | Gross profit=320 | Operating result=231\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 780 | 920 |\n| Cost of sales | (510) | (600) |\n| Gross profit | 270 | 320 |\n| Distribution costs | (42) | (50) |\n| General and administrative costs | (30) | (37) |\n| Other operating result | 3 | (2) |\n| Operating result | 201 | 231 |\n| Finance income | 5 | 4 |\n| Finance costs | (18) | (23) |\n| Finance costs – net | (13) | (19) |\n| Profit before tax | 188 | 212 |\n| Income taxes | (40) | (54) |\n| Profit for the year | 148 | 158 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Operating result before depreciation and amortisation is more than 30% higher than the operating result.",
-      "The gross profit margin, rounded to the nearest whole percent, is 36%.",
-      "Distribution costs are more than double depreciation and amortisation.",
-      "If general and administrative costs had been €40 thousand lower, the operating result would exceed €360 thousand.",
-      "The operating margin is below 14%."
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1.",
+      "The operating result more than doubled from Year 1 to Year 2.",
+      "Income taxes as a percentage of profit before tax were higher in Year 2 than in Year 1.",
+      "Distribution costs and general and administrative costs are subtracted from revenue before gross profit is calculated.",
+      "Finance costs – net worsened by more than €10 thousand between Year 1 and Year 2."
     ],
     "answer_key": [
       true,
-      true,
       false,
+      true,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Gross profit = 2,140 − 1,380 = 760. Operating result = 760 − 145 − 210 − 95 = 310. Operating result before depreciation and amortisation = 310 + 95 = 405. 405/310 ≈ 1.306, which is more than 30% higher.",
-      "TRUE — Gross profit margin = 760/2,140 ≈ 35.51%. Rounded to the nearest whole percent this is 36%.",
-      "FALSE — 145 / 95 ≈ 1.53, which is less than double. Double would require at least 190.",
-      "FALSE — Lowering administrative costs by 40 would raise the operating result from 310 to 350, which is still below 360.",
-      "FALSE — Operating margin = 310/2,140 ≈ 14.49%, which is above 14%, not below it."
+      "TRUE — Gross margin Year 1 ≈ 34.6%; Year 2 ≈ 34.8%. The proportion rose slightly.",
+      "FALSE — Operating result rose from 201 to 231, about 14.9%, far short of doubling.",
+      "TRUE — Tax / profit before tax Year 1 ≈ 21.3%; Year 2 ≈ 25.5%. The proportion rose.",
+      "FALSE — Gross profit is revenue minus cost of sales only. Distribution costs, general and administrative costs and other operating result are deducted after gross profit on the way to the operating result.",
+      "FALSE — Finance costs – net moved from (13) to (19), a worsening of only 6, not more than 10."
     ]
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.01",
-    "title": "Comparative Income Statements Across Two Years",
+    "title": "Balance Sheet With Income and Cash Flow Extracts",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following comparative income statement extracts (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1,250 | 1,400 |\n| Cost of sales | 800 | 868 |\n| Gross profit | 450 | 532 |\n| Distribution costs | 95 | 110 |\n| General and administrative costs | 140 | 155 |\n| Depreciation and amortisation | 60 | 70 |\n| Operating result | 155 | 197 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet and income statement extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=380\nMachinery=180\nPatents, trademarks and licences=90\nInventory=150\nTrade receivables=120\nCash and cash equivalents=70\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 380 |\n| Machinery | 180 |\n| Patents, trademarks and licences | 90 |\n| Inventory | 150 |\n| Trade receivables | 120 |\n| Cash and cash equivalents | 70 |\n| Total assets | **990** |\n| **EQUITY** | |\n| Share capital | 260 |\n| Retained earnings | 330 |\n| Total equity | **590** |\n| **LIABILITIES** | |\n| Long-term bank loan | 180 |\n| Bonds payable | 50 |\n| Trade payables | 120 |\n| Bank overdraft | 50 |\n| Total liabilities | **400** |\n| Total equity and liabilities | **990** |\n\n| Income statement item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,180 |\n| Cost of sales | (760) |\n| Gross profit | 420 |\n| Operating expenses | (230) |\n| Other operating result | 12 |\n| Operating result | 202 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 195 |\n| Cash flow from investing activities | (240) |\n| Cash flow from financing activities | 70 |\n| Cash and cash equivalents at the beginning of the year | 60 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Revenue grew by more than 11%.",
-      "The gross profit margin improved by more than 3 percentage points.",
-      "In Year 2, operating result before depreciation and amortisation is more than 30% above the Year 2 operating result.",
-      "If Year 2 general and administrative costs had been €20 thousand lower, Year 2 operating result would exceed €220 thousand.",
-      "The operating margin rose by more than 1.5 percentage points."
+      "Return on equity exceeds 35%.",
+      "Return on capital employed figures are mainly useful for comparing profitability between similar businesses, or for one business's performance over time, rather than being meaningful on their own.",
+      "Working capital equals €150 thousand.",
+      "The net change in cash and cash equivalents for the year equals €25 thousand.",
+      "Cash and cash equivalents at the end of the year exceed €90 thousand."
     ],
     "answer_key": [
-      true,
       false,
       true,
       false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Revenue growth = (1,400 − 1,250) / 1,250 = 12.0%, which exceeds 11%.",
-      "FALSE — Gross margin Year 1 = 450/1,250 = 36.00%. Year 2 = 532/1,400 ≈ 38.00%. The improvement is about 2.00 percentage points, which is not more than 3.",
-      "TRUE — Year 2 operating result before depreciation and amortisation = 197 + 70 = 267. Relative to operating result 197 this is about 35.5% higher, which is more than 30%.",
-      "FALSE — Cutting administrative costs by 20 would lift Year 2 operating result from 197 to 217, which is still below 220.",
-      "TRUE — Operating margin Year 1 = 155/1,250 = 12.40%. Year 2 = 197/1,400 ≈ 14.07%. The rise is about 1.67 percentage points, more than 1.5."
+      "FALSE — Using operating result over equity, return on equity ≈ 34.2%, which is below 35%.",
+      "TRUE — A single return on capital employed figure says little in isolation; it becomes useful when compared with peers or tracked over time.",
+      "FALSE — Current assets 340 minus current liabilities 170 gives working capital 170, not 150.",
+      "TRUE — Net change = 195 + (-240) + 70 = 25.",
+      "FALSE — Beginning cash 60 plus net change 25 equals ending cash 85, which does not exceed 90."
     ]
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.02",
-    "title": "Reading Returns From Balance Sheet And Operating Result",
+    "title": "Combined Balance Sheet, Profit and Loss, and Cash Flow",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following balance sheet extract and operating result figure (in € thousands) for a business whose identity is not disclosed.\n\n| Assets (€ thousands) | Amount | Liabilities and equity (€ thousands) | Amount |\n| --- | ---: | --- | ---: |\n| Property | 620 | Share capital | 300 |\n| Machinery | 380 | Retained earnings | 260 |\n| Patents | 55 | Long-term bank loan | 520 |\n| Inventory | 90 | Trade payables | 210 |\n| Trade receivables | 140 | Short-term loan | 60 |\n| Cash and cash equivalents | 65 | | |\n| **Total assets** | **1,350** | **Total liabilities and equity** | **1,350** |\n\n| Income statement extract | Amount (€ thousands) |\n| --- | ---: |\n| Operating result | 189 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=500\nMachinery=250\nPatents, trademarks and licences=100\nInventory=180\nTrade receivables=150\nCash and cash equivalents=100\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 500 |\n| Machinery | 250 |\n| Patents, trademarks and licences | 100 |\n| Inventory | 180 |\n| Trade receivables | 150 |\n| Cash and cash equivalents | 100 |\n| Total assets | **1,280** |\n| **EQUITY** | |\n| Share capital | 200 |\n| Retained earnings | 290 |\n| Total equity | **490** |\n| **LIABILITIES** | |\n| Long-term bank loan | 400 |\n| Bonds payable | 70 |\n| Trade payables | 230 |\n| Bank overdraft | 90 |\n| Total liabilities | **790** |\n| Total equity and liabilities | **1,280** |\n\n| Statement of profit and loss extract (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,420 |\n| Cost of sales | (930) |\n| Gross profit | 490 |\n| Operating expenses | (295) |\n| Other operating result | 6 |\n| Operating result | 201 |\n| Finance costs – net | (28) |\n| Profit before tax | 173 |\n| Income taxes | (42) |\n| Profit for the year | 131 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 205 |\n| Cash flow from investing activities | (275) |\n| Cash flow from financing activities | 45 |\n| Cash and cash equivalents at the beginning of the year | 80 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Return on capital employed exceeds 18%.",
-      "Return on equity is more than double return on capital employed.",
-      "The debt ratio is below 58%.",
-      "Capital employed is less than twice the combined value of trade payables and the short-term loan.",
-      "If the operating result had been €21 thousand higher, return on capital employed would exceed 19%."
+      "Return on capital employed is above 25%.",
+      "A positive cash flow from operating activities combined with a negative cash flow from investing activities is typically a sign that a business is generating cash from its core operations while also investing in long-term assets, rather than a sign that it is in trouble.",
+      "Working capital equals €150 thousand.",
+      "The net change in cash and cash equivalents for the year is negative, meaning the year-end cash balance is lower than the beginning balance.",
+      "Income taxes as a percentage of profit before tax are below 20%."
     ],
     "answer_key": [
       false,
+      true,
       false,
-      false,
-      false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "FALSE — Capital employed = equity 560 + long-term bank loan 520 = 1080. Return on capital employed = 189/1080 ≈ 17.50%, which does not exceed 18%.",
-      "FALSE — Return on equity = 189/560 ≈ 33.75%. Dividing by return on capital employed ≈ 1.93, which falls just short of double.",
-      "FALSE — Total liabilities = 790. Debt ratio = 790/1,350 ≈ 58.52%, which is above 58%, not below it.",
-      "FALSE — Trade payables plus short-term loan = 270; twice that is 540. Capital employed (1080) is well above that amount, not below it.",
-      "TRUE — A higher operating result of 189 + 21 = 210 gives return on capital employed = 210/1080 ≈ 19.44%, which exceeds 19%."
+      "FALSE — Capital employed = equity 490 + non-current liabilities 470 = 960. Return on capital employed = 201/960 ≈ 20.9%, below 25%.",
+      "TRUE — Operating cash generation paired with investing outflows usually means the firm invests in long-term assets while its core business produces cash — often a healthy growth pattern.",
+      "FALSE — Current assets 430 minus current liabilities 320 equals working capital 110, not 150.",
+      "TRUE — Net change = 205 + (-275) + 45 = -25, so year-end cash (55) is below the beginning balance.",
+      "FALSE — Income taxes / profit before tax = 42/173 ≈ 24.3%, which is above 20%."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.01",
-    "title": "Straight-Line Depreciation Schedule",
+    "title": "Straight-Line Depreciation Across Three Assets",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "An asset is purchased for €96,000 with an expected useful life of 8 years and zero residual value. It is depreciated on a straight-line basis for a business whose identity is not disclosed.\n\n| End of year | Accumulated depreciation (€) | Book value (€) |\n| ---: | ---: | ---: |\n| 3 | 36,000 | 60,000 |\n| 5 | 60,000 | 36,000 |\n| 7 | 84,000 | 12,000 |\n\nEvaluate the following economic assertions:",
+    "context": "A business owns the following fixed assets, all depreciated on a straight-line basis.\n\n[[CHART type=\"bar\" title=\"Annual depreciation by asset\"]]\nMachinery | Annual depreciation=15000\nDelivery truck | Annual depreciation=8000\nComputer equipment | Annual depreciation=7000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €150,000 purchase price, 10-year useful life, no residual value |\n| Asset B – Delivery truck | €54,000 purchase price, 6-year useful life, €6,000 residual value |\n| Asset C – Computer equipment | €21,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The book value at the end of Year 5 is exactly triple the book value at the end of Year 7.",
-      "Accumulated depreciation after Year 3 equals the book value remaining after Year 5.",
-      "If the useful life had instead been 6 years with the same purchase cost, annual depreciation would be exactly one-third higher than under the 8-year plan.",
-      "The asset retains more than 25% of its original cost at the end of Year 5.",
-      "Depreciation expense reduces reported profit but does not itself change the cash and cash equivalents balance."
+      "Combined annual depreciation for all three assets is €30,000.",
+      "After three years, the book value of the delivery truck is €24,000.",
+      "After three years, the computer equipment is fully depreciated.",
+      "After three years, the combined book value of all three assets exceeds €150,000.",
+      "Recording depreciation is necessary because, without it, the value of these assets shown in the accounts would be inaccurate and overstated."
     ],
     "answer_key": [
       true,
+      false,
       true,
-      true,
-      true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Book value Year 5 = 96,000 − 5 × 12,000 = 36000. Book value Year 7 = 12000. 36000 ÷ 12000 = 3 exactly.",
-      "TRUE — Accumulated depreciation after Year 3 = 3 × 12,000 = 36000. This equals the Year 5 book value (36000). That equality is a feature of these numbers, not a general rule.",
-      "TRUE — With a 6-year life, annual depreciation = 96,000 ÷ 6 = 16,000. Compared with 12,000 this is an increase of 4,000, and 4,000 ÷ 12,000 = one-third.",
-      "TRUE — Year 5 book value 36000 divided by original cost 96,000 = 37.5%, which is above 25%.",
-      "TRUE — Depreciation is a non-cash expense: it lowers profit on the income statement but does not by itself move cash into or out of the business."
+      "TRUE — Annual charges are 15,000, 8,000 and 7,000, which sum to 30,000.",
+      "FALSE — After three years the truck's book value is 54,000 − 24,000 = 30,000, not 24,000.",
+      "TRUE — After three years accumulated depreciation equals the full purchase price of 21,000, so book value is zero.",
+      "FALSE — Combined book value after three years is 135,000, which does not exceed 150,000.",
+      "TRUE — Fixed assets lose value as they are used; without depreciation they would remain at original cost and overstate their worth."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.02",
-    "title": "Financial Accounting Versus Management Accounting Uses",
+    "title": "Financial Versus Management Accounting Uses",
     "difficulty_level": "4/5",
     "tier": "full",
-    "context": "The following overview summarises typical uses of accounting information for a business whose identity is not disclosed.\n\n| Report or record | Primary users | Typical purpose |\n| --- | --- | --- |\n| Published balance sheet | External investors and creditors | Assess financial position and security |\n| Published income statement | External investors and creditors | Assess profitability over a period |\n| Detailed cost report by product line | Internal managers | Decide pricing and cost control |\n| Cash budget for next quarter | Internal managers | Plan short-term liquidity |\n| Annual financial statements filed under law | Authorities and the public | Meet legal reporting duties |\n\nEvaluate the following economic assertions:",
+    "context": "A mid-sized manufacturer whose identity is not disclosed prepares both a published annual report for external users and detailed internal cost reports for plant managers.\n\n[[CHART type=\"bar\" title=\"Illustrative reporting audiences\"]]\nExternal users | Typical report volume=1\nInternal managers | Typical report volume=12\n[[/CHART]]\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Detailed cost reports by product line belong primarily to management accounting because they support internal decision-making.",
-      "A published balance sheet is intended first and foremost as an internal weekly tool for shop-floor supervisors.",
-      "Cash budgets for the next quarter are management accounting instruments used to plan liquidity.",
-      "Financial accounting focuses on standardised reports that can be shown to external parties such as investors and creditors.",
-      "Management accounting information is useful only after it has been published in the annual financial statements."
+      "Financial accounting information in the annual report is aimed primarily at external users such as owners, lenders and tax authorities.",
+      "Management accounting reports must follow the same legally prescribed formats as the published financial statements.",
+      "Depreciation appears as an expense in the income statement even though it does not by itself cause a cash payment in the year it is recognised.",
+      "Internal management reports may be prepared more frequently than once a year and can focus on product costs or department performance.",
+      "Only financial accounting can ever be used to decide whether to continue or discontinue a product line."
     ],
     "answer_key": [
       true,
@@ -224,69 +224,69 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Cost reports broken down by product line are prepared for managers inside the firm to control costs and pricing; that is management accounting.",
-      "FALSE — A published balance sheet is a financial accounting statement aimed at external users, not a weekly shop-floor control sheet.",
-      "TRUE — Forward-looking cash budgets are internal planning tools and form part of management accounting.",
-      "TRUE — Financial accounting produces formal, comparable statements for outsiders such as investors and creditors.",
-      "FALSE — Management accounting information is prepared for internal use and often never appears in the published annual statements."
+      "TRUE — Financial accounting serves external stakeholders with the published financial statements and related disclosures.",
+      "FALSE — Management accounting is not bound to the statutory presentation of published financial statements; formats are chosen for internal decision needs.",
+      "TRUE — Depreciation allocates the cost of a fixed asset over its useful life and does not itself move cash when the charge is recorded.",
+      "TRUE — Management accounts are often monthly or weekly and can zoom in on products, customers or cost centres.",
+      "FALSE — Discontinue / continue decisions routinely rely on management accounting cost and contribution analysis, not only on published financial statements."
     ]
   },
   {
     "subsection": "6.5",
     "case_id": "CASE 6.5.01",
-    "title": "Share Price Chart And Return Measures",
+    "title": "Retail Balance Sheet Liquidity Analysis",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider share-price and performance figures for a listed business whose identity is not disclosed.\n\n**Closing share prices (€)**\n\n```\n€\n26 |             ●\n24 |         ●       ●\n22 |     ●\n20 | ●\n   +------------------\n     Jan Feb Mar Apr May\n```\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 20 | 500,000 |\n| February | 22 | 500,000 |\n| March | 24 | 500,000 |\n| April | 26 | 500,000 |\n| May | 24 | 500,000 |\n\n| Annual figure (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 210 |\n| Equity | 1,200 |\n| Capital employed | 1,800 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nStore buildings=400\nWarehouse=130\nFixtures and fittings=50\nMerchandise inventory=250\nTrade receivables=65\nCash and cash equivalents=30\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Store buildings | 400 |\n| Warehouse | 130 |\n| Fixtures and fittings | 50 |\n| Merchandise inventory | 250 |\n| Trade receivables | 65 |\n| Cash and cash equivalents | 30 |\n| Total assets | **925** |\n| **EQUITY** | |\n| Share capital | 140 |\n| Retained earnings | 115 |\n| Total equity | **255** |\n| **LIABILITIES** | |\n| Long-term bank loan | 320 |\n| Bonds payable | 55 |\n| Trade payables | 225 |\n| Bank overdraft | 70 |\n| Total liabilities | **670** |\n| Total equity and liabilities | **925** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation in May exceeds €11 million.",
-      "From January to April the share price rose by more than 25%.",
-      "Return on capital employed exceeds 11%.",
-      "Return on equity is higher than return on capital employed.",
-      "If May’s closing price had stayed at €26 instead of falling to €24, May market capitalisation would equal January’s market capitalisation multiplied by 1.3."
+      "The current ratio falls between 1.5 and 2, the range often considered ideal.",
+      "Working capital equals €50 thousand.",
+      "Because inventory is not always quickly convertible into cash, the acid-test ratio excludes it from current assets to give a stricter test of a business's liquidity than the current ratio.",
+      "The equity ratio is below 25%.",
+      "If merchandise inventory alone were excluded from current assets, the remaining current assets would still be enough to cover current liabilities more than once."
     ],
     "answer_key": [
+      false,
       true,
       true,
-      true,
-      true,
-      true
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — May market capitalisation = 24 × 500,000 = 12,000,000, which is more than €11 million.",
-      "TRUE — Price rise from 20 to 26 is (26 − 20) / 20 = 30%, which exceeds 25%.",
-      "TRUE — Return on capital employed = 210 / 1,800 = 11.67%, which exceeds 11%.",
-      "TRUE — Return on equity = 210 / 1,200 = 17.5%, which is higher than return on capital employed (11.67%).",
-      "TRUE — At €26, May market capitalisation = 13,000,000. January market capitalisation = 10,000,000. 13,000,000 ÷ 10,000,000 = 1.3 exactly."
+      "FALSE — Current assets 345 / current liabilities 295 ≈ 1.17, which is below the 1.5–2 range.",
+      "TRUE — Working capital = 345 − 295 = 50.",
+      "TRUE — The acid-test ratio removes inventory because it can be harder to turn into cash quickly, giving a stricter liquidity check than the current ratio.",
+      "FALSE — Equity ratio = 255/925 ≈ 27.6%, which is above 25%.",
+      "FALSE — Remaining current assets 95 cover current liabilities only about 0.32 times, below 1."
     ]
   },
   {
     "subsection": "6.5",
     "case_id": "CASE 6.5.02",
-    "title": "Liquidity Analysis From Current Items",
+    "title": "Asset and Inventory Turnover Extract",
     "difficulty_level": "5/5",
     "tier": "full",
-    "context": "Consider the following balance sheet extract of current items (in € thousands) for a business whose identity is not disclosed.\n\n| Item | Amount (€ thousands) |\n| --- | ---: |\n| Inventory | 310 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 42 |\n| Trade payables | 250 |\n| Short-term loan | 87 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=840 | Ending=930\nInventory | Beginning=140 | Ending=170\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,080 |\n| Cost of sales | 705 |\n| Total assets at the beginning of the year | 840 |\n| Total assets at the end of the year | 930 |\n| Inventory at the beginning of the year | 140 |\n| Inventory at the end of the year | 170 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is closer to 1.5 than to 1.4.",
-      "The acid-test ratio is more than half the current ratio.",
-      "Inventory accounts for less than two-thirds of current assets.",
-      "Working capital is greater than €150 thousand.",
-      "If the short-term loan were €40 thousand higher (all else equal), the acid-test ratio would rise."
+      "Asset turnover is above 1.5.",
+      "Inventory turnover is below 5 times per year.",
+      "Average inventory represents less than 15% of average total assets.",
+      "A higher inventory turnover figure generally indicates that goods are selling well and are not remaining in stock for a long time, meaning less money is tied up in inventory.",
+      "The increase in inventory from the beginning to the end of the year represents a rise of more than 25%."
     ],
     "answer_key": [
-      true,
       false,
       true,
+      false,
       true,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current assets = 497; current liabilities = 337; current ratio ≈ 1.475. Distance to 1.5 is 0.025; distance to 1.4 is 0.075. It is closer to 1.5.",
-      "FALSE — Acid-test ratio = (497 − 310)/337 ≈ 0.555. Half of the current ratio is about 0.737. Because 0.555 is below that half, the claim is false.",
-      "TRUE — Inventory share = 310/497 ≈ 62.4%, which is below two-thirds (≈66.7%).",
-      "TRUE — Working capital = 497 − 337 = 160, which is greater than 150.",
-      "FALSE — With the short-term loan raised by 40, current liabilities become 377 and the acid-test ratio becomes 0.4960212201591512 ≈ 0.496, which is lower than the original 0.555, so the ratio would fall, not rise."
+      "FALSE — Average total assets = 885; asset turnover = 1080/885 ≈ 1.22, below 1.5.",
+      "TRUE — Average inventory = 155; inventory turnover = 705/155 ≈ 4.55, which is below 5.",
+      "FALSE — Average inventory / average assets ≈ 17.5%, which is not less than 15%.",
+      "TRUE — High inventory turnover means stock turns over quickly, so less cash is locked in inventory for long periods.",
+      "FALSE — Inventory rose from 140 to 170, about 21.4%, which is not more than 25%."
     ]
   }
 ]

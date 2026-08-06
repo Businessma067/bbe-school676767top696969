@@ -1,657 +1,960 @@
 /**
- * Generate 10 Ch.6 pilot cases with programmatic formula verification.
- * Full terms only (no EBIT/ROE/ROCE/EBITDA abbreviations in student-facing text).
+ * Generate 10 Ch.6 pilot cases from PDF 113–122 style (full FS tables + charts).
+ * Full terms only — no EBIT/ROE/ROCE abbreviations in student-facing text.
+ * No parenthetical formula hints in statements.
+ *
+ * Run: node scripts/gen-ch6-pilot-10.mjs
  */
 import fs from "node:fs";
 
 function assert(cond, msg) {
   if (!cond) throw new Error(msg);
 }
-function nearly(a, b, eps = 1e-9) {
+function nearly(a, b, eps = 1e-6) {
   return Math.abs(a - b) < eps;
 }
 function pct(n) {
   return n * 100;
 }
+function fmt(n) {
+  return Number(n).toLocaleString("en-GB");
+}
 
 const cases = [];
 
-// ---------- 6.1.01 Comparative balance sheets ----------
+function pushCase(c) {
+  cases.push(c);
+}
+
+function md2year(headerLeft, rows) {
+  // rows: [label, y1, y2] ; use "" for section label y1/y2
+  const lines = [`| ${headerLeft} | Year 1 | Year 2 |`, `| --- | ---: | ---: |`];
+  for (const [label, a, b] of rows) {
+    if (a === "" && b === "") lines.push(`| **${label}** | | |`);
+    else lines.push(`| ${label} | ${a} | ${b} |`);
+  }
+  return lines.join("\n");
+}
+
+function mdAmount(headerLeft, rows) {
+  const lines = [`| ${headerLeft} | Amount |`, `| --- | ---: |`];
+  for (const [label, amt] of rows) {
+    if (amt === "") lines.push(`| **${label}** | |`);
+    else lines.push(`| ${label} | ${amt} |`);
+  }
+  return lines.join("\n");
+}
+
+function chartBar(title, rows) {
+  // rows: "Category | Key=val | Key=val"
+  return [
+    `[[CHART type="bar" title="${title}"]]`,
+    ...rows,
+    `[[/CHART]]`,
+  ].join("\n");
+}
+
+function chartPie(title, slices) {
+  return [
+    `[[CHART type="pie" title="${title}"]]`,
+    ...slices.map(([n, v]) => `${n}=${v}`),
+    `[[/CHART]]`,
+  ].join("\n");
+}
+
+// ---------- 6.1.01 ← PDF 115 comparative BS ----------
 {
   const y1 = {
-    land: 450,
-    machinery: 160,
-    inventory: 95,
-    receivables: 72,
-    cash: 53,
-    share: 250,
-    retained: 170,
-    ltLoan: 280,
-    payables: 95,
-    stLoan: 35,
+    buildings: 300,
+    machinery: 150,
+    office: 45,
+    patents: 30,
+    inv: 100,
+    recv: 90,
+    cash: 60,
+    share: 150,
+    re: 220,
+    lt: 245,
+    bonds: 50,
+    pay: 70,
+    od: 40,
   };
   const y2 = {
-    land: 506,
-    machinery: 205,
-    inventory: 118,
-    receivables: 90,
-    cash: 41,
-    share: 250,
-    retained: 230,
-    ltLoan: 316,
-    payables: 120,
-    stLoan: 44,
+    buildings: 340,
+    machinery: 170,
+    office: 50,
+    patents: 30,
+    inv: 125,
+    recv: 115,
+    cash: 45,
+    share: 150,
+    re: 285,
+    lt: 275,
+    bonds: 55,
+    pay: 75,
+    od: 35,
   };
-  const tot1 =
-    y1.land + y1.machinery + y1.inventory + y1.receivables + y1.cash;
-  const tot2 =
-    y2.land + y2.machinery + y2.inventory + y2.receivables + y2.cash;
-  assert(tot1 === 830, `y1 assets ${tot1}`);
-  assert(tot2 === 960, `y2 assets ${tot2}`);
-  const eq1 = y1.share + y1.retained;
-  const eq2 = y2.share + y2.retained;
-  const liab1 = y1.ltLoan + y1.payables + y1.stLoan;
-  const liab2 = y2.ltLoan + y2.payables + y2.stLoan;
-  assert(eq1 + liab1 === tot1, "y1 balance");
-  assert(eq2 + liab2 === tot2, "y2 balance");
-  const growth = tot2 - tot1;
-  const er1 = eq1 / tot1;
-  const er2 = eq2 / tot2;
-  const ca1 = y1.inventory + y1.receivables + y1.cash;
-  const cl1 = y1.payables + y1.stLoan;
-  const ca2 = y2.inventory + y2.receivables + y2.cash;
-  const cl2 = y2.payables + y2.stLoan;
-  const wc1 = ca1 - cl1;
-  const wc2 = ca2 - cl2;
-  const loanGrowth = (y2.ltLoan - y1.ltLoan) / y1.ltLoan;
-  const payGrowth = (y2.payables - y1.payables) / y1.payables;
+  const tot = (y) =>
+    y.buildings + y.machinery + y.office + y.patents + y.inv + y.recv + y.cash;
+  const eq = (y) => y.share + y.re;
+  const liab = (y) => y.lt + y.bonds + y.pay + y.od;
+  assert(tot(y1) === 775 && tot(y2) === 875, "115 assets");
+  assert(eq(y1) + liab(y1) === 775 && eq(y2) + liab(y2) === 875, "115 bal");
+
+  const eqGrowth = (eq(y2) - eq(y1)) / eq(y1);
+  const nca = (y) => y.buildings + y.machinery + y.office + y.patents;
+  const ncaShare1 = nca(y1) / tot(y1);
+  const ncaShare2 = nca(y2) / tot(y2);
+  const ca = (y) => y.inv + y.recv + y.cash;
+  const cl = (y) => y.pay + y.od;
+  const wc1 = ca(y1) - cl(y1);
+  const wc2 = ca(y2) - cl(y2);
 
   const keys = [
-    growth > 110, // 130 > 110
-    eq2 > eq1 && er2 < er1, // equity up, ratio down
-    y2.cash < y1.cash &&
-      y2.land > y1.land &&
-      y2.machinery > y1.machinery &&
-      y2.inventory > y1.inventory &&
-      y2.receivables > y1.receivables,
-    wc2 - wc1 === 15, // actually -5, false
-    loanGrowth > payGrowth, // false
+    eqGrowth > 0.2, // false ~17.6%
+    y1.share === y2.share && y2.re > y1.re, // true
+    ncaShare2 < ncaShare1, // true
+    false, // trade payables are current, not non-current
+    wc2 > 2 * wc1, // false
   ];
-  assert(keys[0] && keys[1] && keys[2] && !keys[3] && !keys[4], "6.1.01 keys");
+  assert(!keys[0] && keys[1] && keys[2] && !keys[3] && !keys[4], "6.1.01");
 
-  cases.push({
+  pushCase({
     subsection: "6.1",
     case_id: "CASE 6.1.01",
-    title: "Comparative Balance Sheets Over Two Years",
+    title: "Two-Year Balance Sheet Growth and Structure",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following comparative balance sheet extracts (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Land and buildings | 450 | 506 |
-| Machinery | 160 | 205 |
-| Inventory | 95 | 118 |
-| Trade receivables | 72 | 90 |
-| Cash and cash equivalents | 53 | 41 |
-| **Total assets** | **830** | **960** |
-| Share capital | 250 | 250 |
-| Retained earnings | 170 | 230 |
-| Long-term bank loan | 280 | 316 |
-| Trade payables | 95 | 120 |
-| Short-term loan | 35 | 44 |
+${chartBar("Equity and total assets", [
+  `Year 1 | Equity=${eq(y1)} | Total assets=${tot(y1)}`,
+  `Year 2 | Equity=${eq(y2)} | Total assets=${tot(y2)}`,
+])}
+
+${md2year("€ in thousands", [
+  ["ASSETS", "", ""],
+  ["Buildings", y1.buildings, y2.buildings],
+  ["Machinery", y1.machinery, y2.machinery],
+  ["Office equipment", y1.office, y2.office],
+  ["Patents, trademarks and licences", y1.patents, y2.patents],
+  ["Inventory", y1.inv, y2.inv],
+  ["Trade receivables", y1.recv, y2.recv],
+  ["Cash and cash equivalents", y1.cash, y2.cash],
+  ["Total assets", `**${tot(y1)}**`, `**${tot(y2)}**`],
+  ["EQUITY", "", ""],
+  ["Share capital", y1.share, y2.share],
+  ["Retained earnings", y1.re, y2.re],
+  ["Total equity", `**${eq(y1)}**`, `**${eq(y2)}**`],
+  ["LIABILITIES", "", ""],
+  ["Long-term bank loan", y1.lt, y2.lt],
+  ["Bonds payable", y1.bonds, y2.bonds],
+  ["Trade payables", y1.pay, y2.pay],
+  ["Bank overdraft", y1.od, y2.od],
+  ["Total liabilities", `**${liab(y1)}**`, `**${liab(y2)}**`],
+  ["Total equity and liabilities", `**${tot(y1)}**`, `**${tot(y2)}**`],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Total assets grew by more than €110 thousand between the two years.",
-      "Equity increased, but the equity ratio declined.",
-      "Cash and cash equivalents fell even though every other asset category on the extract increased.",
-      "Working capital increased by exactly €15 thousand.",
-      "The long-term bank loan grew at a higher percentage rate than trade payables.",
+      "Total equity increased by more than 20% from Year 1 to Year 2.",
+      "Since share capital remained unchanged, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2.",
+      "Trade payables are classified under non-current liabilities because businesses are normally allowed more than a year to pay their suppliers.",
+      "Working capital more than doubled between Year 1 and Year 2.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Total assets rose from 830 to 960, an increase of ${growth}, which is more than 110.`,
-      `TRUE — Equity rose from ${eq1} to ${eq2}. The equity ratio fell from ${(pct(er1)).toFixed(2)}% (${eq1}/830) to ${(pct(er2)).toFixed(2)}% (${eq2}/960), so the ratio declined despite higher equity.`,
-      "TRUE — Cash fell from 53 to 41. Land and buildings, machinery, inventory, and trade receivables all increased.",
-      `FALSE — Working capital was ${wc1} in Year 1 (${ca1} − ${cl1}) and ${wc2} in Year 2 (${ca2} − ${cl2}). The change is ${wc2 - wc1}, not +15.`,
-      `FALSE — The long-term bank loan grew by about ${(pct(loanGrowth)).toFixed(1)}%, while trade payables grew by about ${(pct(payGrowth)).toFixed(1)}%. Trade payables grew faster, not the loan.`,
+      `FALSE — Equity rose from ${eq(y1)} to ${eq(y2)}, an increase of ${eq(y2) - eq(y1)}. Relative growth is about ${pct(eqGrowth).toFixed(1)}%, which is below 20%.`,
+      `TRUE — Share capital stayed at ${y1.share} in both years, so the entire equity increase of ${eq(y2) - eq(y1)} came from retained earnings (${y1.re} → ${y2.re}), i.e. from internal sources.`,
+      `TRUE — Non-current assets were ${nca(y1)} in Year 1 (${pct(ncaShare1).toFixed(1)}% of assets) and ${nca(y2)} in Year 2 (${pct(ncaShare2).toFixed(1)}%). The share fell slightly.`,
+      "FALSE — Trade payables normally arise from short-term supplier credit and are classified as a current liability, not a non-current liability.",
+      `FALSE — Working capital was ${wc1} in Year 1 and ${wc2} in Year 2, an increase of only about ${pct((wc2 - wc1) / wc1).toFixed(0)}%, nowhere near doubling.`,
     ],
   });
 }
 
-// ---------- 6.1.02 Single balance sheet structure ----------
+// ---------- 6.1.02 ← PDF 120 comparative BS gearing ----------
 {
-  const a = {
-    buildings: 410,
-    machinery: 265,
-    patents: 35,
-    inventory: 128,
-    receivables: 94,
-    cash: 58,
-    share: 180,
-    retained: 165,
-    ltLoan: 400,
-    payables: 180,
-    stLoan: 65,
+  const y1 = {
+    buildings: 350,
+    machinery: 170,
+    patents: 80,
+    inv: 100,
+    recv: 90,
+    cash: 40,
+    share: 100,
+    re: 120,
+    lt: 400,
+    bonds: 50,
+    pay: 120,
+    od: 40,
   };
-  const assets =
-    a.buildings + a.machinery + a.patents + a.inventory + a.receivables + a.cash;
-  const equity = a.share + a.retained;
-  const liab = a.ltLoan + a.payables + a.stLoan;
-  assert(assets === 990 && equity + liab === 990, "6.1.02 balance");
-  const debtRatio = liab / assets;
-  const equityIf = equity - 20;
-  const equityRatioIf = equityIf / assets;
-  const keys = [
-    equity < a.buildings,
-    debtRatio > 0.65,
-    equityRatioIf < 0.32, // 325/990 ≈ 0.3283 — false
-    a.ltLoan / a.stLoan > 6,
-    true, // non-current assets > current? NC=410+265+35=710, C=128+94+58=280 — true but use different claim
-  ];
-  // Replace 5 with: "Non-current assets exceed 700."
-  keys[4] = a.buildings + a.machinery + a.patents > 700;
-  assert(keys[0] && keys[1] && !keys[2] && keys[3] && keys[4], "6.1.02 keys");
+  const y2 = {
+    buildings: 380,
+    machinery: 185,
+    patents: 85,
+    inv: 115,
+    recv: 105,
+    cash: 40,
+    share: 100,
+    re: 125,
+    lt: 435,
+    bonds: 55,
+    pay: 150,
+    od: 45,
+  };
+  const tot = (y) => y.buildings + y.machinery + y.patents + y.inv + y.recv + y.cash;
+  const eq = (y) => y.share + y.re;
+  const liab = (y) => y.lt + y.bonds + y.pay + y.od;
+  const ncl = (y) => y.lt + y.bonds;
+  const nca = (y) => y.buildings + y.machinery + y.patents;
+  assert(tot(y1) === 830 && tot(y2) === 910, "120 assets");
+  assert(eq(y1) + liab(y1) === 830 && eq(y2) + liab(y2) === 910, "120 bal");
 
-  cases.push({
+  const er1 = eq(y1) / tot(y1);
+  const er2 = eq(y2) / tot(y2);
+  const dr1 = liab(y1) / tot(y1);
+  const dr2 = liab(y2) / tot(y2);
+  const growth = (tot(y2) - tot(y1)) / tot(y1);
+
+  const keys = [
+    er2 > er1, // false — fell
+    dr2 < dr1, // false — rose
+    ncl(y1) > eq(y1) && ncl(y2) > eq(y2), // true high geared
+    nca(y1) <= eq(y1) + ncl(y1) && nca(y2) <= eq(y2) + ncl(y2), // true
+    growth > 0.12, // false ~9.6%
+  ];
+  assert(!keys[0] && !keys[1] && keys[2] && keys[3] && !keys[4], "6.1.02");
+
+  pushCase({
     subsection: "6.1",
     case_id: "CASE 6.1.02",
-    title: "Balance Sheet Structure and Equity Claims",
+    title: "Comparative Balance Sheet Gearing",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following balance sheet extract (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-| Assets (€ thousands) | Amount | Liabilities and equity (€ thousands) | Amount |
-| --- | ---: | --- | ---: |
-| Buildings | 410 | Share capital | 180 |
-| Machinery | 265 | Retained earnings | 165 |
-| Patents | 35 | Long-term bank loan | 400 |
-| Inventory | 128 | Trade payables | 180 |
-| Trade receivables | 94 | Short-term loan | 65 |
-| Cash and cash equivalents | 58 | | |
-| **Total assets** | **990** | **Total liabilities and equity** | **990** |
+${chartBar("Equity versus non-current liabilities", [
+  `Year 1 | Equity=${eq(y1)} | Non-current liabilities=${ncl(y1)}`,
+  `Year 2 | Equity=${eq(y2)} | Non-current liabilities=${ncl(y2)}`,
+])}
+
+${md2year("€ in thousands", [
+  ["ASSETS", "", ""],
+  ["Buildings", y1.buildings, y2.buildings],
+  ["Machinery", y1.machinery, y2.machinery],
+  ["Patents, trademarks and licences", y1.patents, y2.patents],
+  ["Inventory", y1.inv, y2.inv],
+  ["Trade receivables", y1.recv, y2.recv],
+  ["Cash and cash equivalents", y1.cash, y2.cash],
+  ["Total assets", `**${tot(y1)}**`, `**${tot(y2)}**`],
+  ["EQUITY", "", ""],
+  ["Share capital", y1.share, y2.share],
+  ["Retained earnings", y1.re, y2.re],
+  ["Total equity", `**${eq(y1)}**`, `**${eq(y2)}**`],
+  ["LIABILITIES", "", ""],
+  ["Long-term bank loan", y1.lt, y2.lt],
+  ["Bonds payable", y1.bonds, y2.bonds],
+  ["Trade payables", y1.pay, y2.pay],
+  ["Bank overdraft", y1.od, y2.od],
+  ["Total liabilities", `**${liab(y1)}**`, `**${liab(y2)}**`],
+  ["Total equity and liabilities", `**${tot(y1)}**`, `**${tot(y2)}**`],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Equity is less than the recorded value of the buildings.",
-      "The debt ratio exceeds 65%.",
-      "If retained earnings had been €20 thousand lower, the equity ratio would have fallen below 32%.",
-      "Non-current liabilities are more than six times the size of the short-term loan.",
-      "Non-current assets on this extract exceed €700 thousand.",
+      "The equity ratio improved from Year 1 to Year 2.",
+      "The debt ratio decreased from Year 1 to Year 2.",
+      "Given that its non-current liabilities are far greater than its equity in both years, this business would be considered high geared in both Year 1 and Year 2.",
+      "Non-current assets are fully covered by the sum of equity and non-current liabilities in both years.",
+      "Total assets grew by more than 12% from Year 1 to Year 2.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Equity = share capital + retained earnings = ${equity}. Buildings are recorded at 410, so equity (${equity}) is less than buildings.`,
-      `TRUE — Total liabilities = ${liab}. Debt ratio = ${liab}/990 ≈ ${(pct(debtRatio)).toFixed(2)}%, which sits just above 65%.`,
-      `FALSE — Equity would become ${equityIf}. Equity ratio = ${equityIf}/990 ≈ ${(pct(equityRatioIf)).toFixed(2)}%, which is still above 32%, not below it.`,
-      `TRUE — Long-term bank loan 400 divided by short-term loan 65 is about ${(a.ltLoan / a.stLoan).toFixed(2)}, which is more than six.`,
-      `TRUE — Buildings + machinery + patents = ${a.buildings + a.machinery + a.patents}, which exceeds 700.`,
+      `FALSE — Equity ratio Year 1 ≈ ${pct(er1).toFixed(1)}%; Year 2 ≈ ${pct(er2).toFixed(1)}%. The ratio fell.`,
+      `FALSE — Debt ratio Year 1 ≈ ${pct(dr1).toFixed(1)}%; Year 2 ≈ ${pct(dr2).toFixed(1)}%. The ratio rose.`,
+      `TRUE — Non-current liabilities (${ncl(y1)} then ${ncl(y2)}) far exceed equity (${eq(y1)} then ${eq(y2)}) in both years, so the business is high geared.`,
+      `TRUE — Year 1 non-current assets ${nca(y1)} ≤ equity plus non-current liabilities ${eq(y1) + ncl(y1)}. Year 2: ${nca(y2)} ≤ ${eq(y2) + ncl(y2)}. Covered in both years.`,
+      `FALSE — Total assets grew from ${tot(y1)} to ${tot(y2)}, about ${pct(growth).toFixed(1)}%, which is not more than 12%.`,
     ],
   });
 }
 
-// ---------- 6.2.01 Cash flow ----------
+// ---------- 6.2.01 ← PDF 114 cash flow ----------
 {
-  const op = 84,
-    inv = -132,
-    fin = 55,
-    beg = 18;
-  const net = op + inv + fin;
-  const end = beg + net;
-  assert(net === 7 && end === 25, "cf totals");
+  const y2 = { opBefore: 195, op: 150, inv: -250, ofcf: -100, fcf: -120, fin: 110, chg: -10, fx: -6, end: 102 };
+  const y1 = { opBefore: 150, op: 140, inv: -120, ofcf: 20, fcf: 5, fin: 30, chg: 35, fx: 3, end: 118 };
+  const opGrowth = (y2.op - y1.op) / y1.op;
+  const endFall = (y1.end - y2.end) / y1.end;
   const keys = [
-    net === 9, // false
-    Math.abs(inv) > 2 * fin, // true 132 > 110
-    end === 30, // false
-    100 + inv + fin > 0, // true
-    beg > end, // false
+    opGrowth > 0.1, // false ~7.1%
+    false, // negative investing ≠ difficulty
+    y2.op < y2.opBefore && y1.op < y1.opBefore, // true
+    true, // receivable collection is operating
+    endFall > 0.2, // false ~13.6%
   ];
-  assert(!keys[0] && keys[1] && !keys[2] && keys[3] && !keys[4], "6.2.01");
+  assert(!keys[0] && !keys[1] && keys[2] && keys[3] && !keys[4], "6.2.01");
 
-  cases.push({
+  pushCase({
     subsection: "6.2",
     case_id: "CASE 6.2.01",
-    title: "Cash Flow Statement Extract",
+    title: "Comparative Cash Flow Statement Extract",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed, comparing the current year (Year 2) with the prior year (Year 1).
 
-| Item | Amount (€ thousands) |
-| --- | ---: |
-| Cash flow from operating activities | 84 |
-| Cash flow from investing activities | (132) |
-| Cash flow from financing activities | 55 |
-| Net change in cash and cash equivalents | 7 |
-| Cash and cash equivalents at beginning of year | 18 |
-| Cash and cash equivalents at end of year | 25 |
+${chartBar("Operating and investing cash flows", [
+  `Year 1 | Operating=${y1.op} | Investing=${y1.inv}`,
+  `Year 2 | Operating=${y2.op} | Investing=${y2.inv}`,
+])}
+
+${md2year("Item (€ thousands)", [
+  ["Cash flow from operating activities before changes in working capital", y1.opBefore, y2.opBefore],
+  ["Cash flow from operating activities", y1.op, y2.op],
+  ["Cash flow from investing activities", `(${Math.abs(y1.inv)})`, `(${Math.abs(y2.inv)})`],
+  ["Operating free cash flow", y1.ofcf, `(${Math.abs(y2.ofcf)})`],
+  ["Free cash flow", y1.fcf, `(${Math.abs(y2.fcf)})`],
+  ["Cash flow from financing activities", y1.fin, y2.fin],
+  ["Change in cash and cash equivalents", y1.chg, `(${Math.abs(y2.chg)})`],
+  ["Currency effects on cash and cash equivalents", y1.fx, `(${Math.abs(y2.fx)})`],
+  ["Cash and cash equivalents at end of the year", y1.end, y2.end],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "The net change in cash and cash equivalents is €9 thousand.",
-      "Cash flow from investing activities, in absolute terms, is more than double the financing inflow.",
-      "Ending cash and cash equivalents equal €30 thousand.",
-      "If operating activities had instead generated €100 thousand, the net change in cash would have been positive.",
-      "Beginning cash and cash equivalents exceed ending cash and cash equivalents.",
+      "Cash flow from operating activities increased by more than 10% from Year 1 to Year 2.",
+      "A negative cash flow from investing activities always means that a business is in financial difficulty.",
+      "In both years, cash flow from operating activities was lower than cash flow from operating activities before changes in working capital.",
+      "If a customer settles an outstanding invoice during the year, the resulting cash inflow would be recorded within cash flow from operating activities, since it relates to the core activities of the business.",
+      "Cash and cash equivalents at the end of the year fell by more than 20% from Year 1 to Year 2.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `FALSE — Operating 84 plus investing (−132) plus financing 55 equals a net change of ${net}, not 9.`,
-      `TRUE — Absolute investing outflow is 132. Double the financing inflow of 55 is 110. Because 132 is greater than 110, investing is more than double the financing inflow.`,
-      `FALSE — Beginning cash 18 plus net change ${net} equals ending cash ${end}, not 30.`,
-      `TRUE — With operating cash flow of 100, net change would be 100 − 132 + 55 = ${100 + inv + fin}, which is positive.`,
-      `FALSE — Beginning cash (${beg}) is lower than ending cash (${end}), so beginning does not exceed ending.`,
+      `FALSE — Operating cash flow rose from ${y1.op} to ${y2.op}, about ${pct(opGrowth).toFixed(1)}%, which is below 10%.`,
+      "FALSE — A negative investing cash flow usually indicates investment in long-term assets, not financial distress; investing inflows typically come from selling assets.",
+      `TRUE — Year 1: ${y1.op} is below ${y1.opBefore}; Year 2: ${y2.op} is below ${y2.opBefore}.`,
+      "TRUE — Collecting a trade receivable is a core operating change in a current asset, so the cash inflow sits in operating activities.",
+      `FALSE — Ending cash fell from ${y1.end} to ${y2.end}, about ${pct(endFall).toFixed(1)}%, which is not more than 20%.`,
     ],
   });
 }
 
-// ---------- 6.2.02 Income statement ----------
+// ---------- 6.2.02 ← PDF 116 comparative P&L ----------
 {
-  const rev = 2140,
-    cos = 1380,
-    dist = 145,
-    admin = 210,
-    dep = 95;
-  const gp = rev - cos;
-  const ebit = gp - dist - admin - dep;
-  const ebitda = ebit + dep;
-  assert(gp === 760 && ebit === 310 && ebitda === 405, "is");
-  const keys = [
-    ebitda / ebit > 1.3,
-    Math.round(pct(gp / rev)) === 36,
-    dist > 2 * dep, // false
-    ebit + 40 > 360, // 350 > 360 false
-    ebit / rev < 0.14, // 14.49% false
-  ];
-  assert(keys[0] && keys[1] && !keys[2] && !keys[3] && !keys[4], "6.2.02");
+  const y1 = {
+    rev: 780,
+    cos: 510,
+    gp: 270,
+    dist: 42,
+    admin: 30,
+    other: 3,
+    op: 201,
+    fi: 5,
+    fc: 18,
+    fnet: 13,
+    pbt: 188,
+    tax: 40,
+    pat: 148,
+  };
+  const y2 = {
+    rev: 920,
+    cos: 600,
+    gp: 320,
+    dist: 50,
+    admin: 37,
+    other: -2,
+    op: 231,
+    fi: 4,
+    fc: 23,
+    fnet: 19,
+    pbt: 212,
+    tax: 54,
+    pat: 158,
+  };
+  assert(y1.rev - y1.cos === y1.gp && y2.rev - y2.cos === y2.gp, "116 gp");
+  const gm1 = y1.gp / y1.rev;
+  const gm2 = y2.gp / y2.rev;
+  const tax1 = y1.tax / y1.pbt;
+  const tax2 = y2.tax / y2.pbt;
+  const fnetWorse = y2.fnet - y1.fnet;
 
-  cases.push({
+  const keys = [
+    gm2 > gm1, // true
+    y2.op > 2 * y1.op, // false
+    tax2 > tax1, // true
+    false, // dist/admin not before gross profit
+    fnetWorse > 10, // false — worsened by 6
+  ];
+  assert(keys[0] && !keys[1] && keys[2] && !keys[3] && !keys[4], "6.2.02");
+
+  pushCase({
     subsection: "6.2",
     case_id: "CASE 6.2.02",
-    title: "Income Statement With Missing Totals",
+    title: "Two-Year Statement of Profit and Loss",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following income statement extract (in € thousands) for a business whose identity is not disclosed. Gross profit and the operating result must be calculated from the figures given.
+    context: `Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
-| Item | Amount (€ thousands) |
-| --- | ---: |
-| Revenue | 2,140 |
-| Cost of sales | 1,380 |
-| Gross profit | ? |
-| Distribution costs | 145 |
-| General and administrative costs | 210 |
-| Depreciation and amortisation | 95 |
-| Operating result | ? |
+${chartBar("Revenue, gross profit and operating result", [
+  `Year 1 | Revenue=${y1.rev} | Gross profit=${y1.gp} | Operating result=${y1.op}`,
+  `Year 2 | Revenue=${y2.rev} | Gross profit=${y2.gp} | Operating result=${y2.op}`,
+])}
+
+${md2year("Item (€ thousands)", [
+  ["Revenue", y1.rev, y2.rev],
+  ["Cost of sales", `(${y1.cos})`, `(${y2.cos})`],
+  ["Gross profit", y1.gp, y2.gp],
+  ["Distribution costs", `(${y1.dist})`, `(${y2.dist})`],
+  ["General and administrative costs", `(${y1.admin})`, `(${y2.admin})`],
+  ["Other operating result", y1.other, `(${Math.abs(y2.other)})`],
+  ["Operating result", y1.op, y2.op],
+  ["Finance income", y1.fi, y2.fi],
+  ["Finance costs", `(${y1.fc})`, `(${y2.fc})`],
+  ["Finance costs – net", `(${y1.fnet})`, `(${y2.fnet})`],
+  ["Profit before tax", y1.pbt, y2.pbt],
+  ["Income taxes", `(${y1.tax})`, `(${y2.tax})`],
+  ["Profit for the year", y1.pat, y2.pat],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Operating result before depreciation and amortisation is more than 30% higher than the operating result.",
-      "The gross profit margin, rounded to the nearest whole percent, is 36%.",
-      "Distribution costs are more than double depreciation and amortisation.",
-      "If general and administrative costs had been €40 thousand lower, the operating result would exceed €360 thousand.",
-      "The operating margin is below 14%.",
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1.",
+      "The operating result more than doubled from Year 1 to Year 2.",
+      "Income taxes as a percentage of profit before tax were higher in Year 2 than in Year 1.",
+      "Distribution costs and general and administrative costs are subtracted from revenue before gross profit is calculated.",
+      "Finance costs – net worsened by more than €10 thousand between Year 1 and Year 2.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Gross profit = 2,140 − 1,380 = ${gp}. Operating result = ${gp} − 145 − 210 − 95 = ${ebit}. Operating result before depreciation and amortisation = ${ebit} + 95 = ${ebitda}. ${ebitda}/${ebit} ≈ ${(ebitda / ebit).toFixed(3)}, which is more than 30% higher.`,
-      `TRUE — Gross profit margin = ${gp}/2,140 ≈ ${(pct(gp / rev)).toFixed(2)}%. Rounded to the nearest whole percent this is 36%.`,
-      `FALSE — 145 / 95 ≈ ${(dist / dep).toFixed(2)}, which is less than double. Double would require at least 190.`,
-      `FALSE — Lowering administrative costs by 40 would raise the operating result from ${ebit} to ${ebit + 40}, which is still below 360.`,
-      `FALSE — Operating margin = ${ebit}/2,140 ≈ ${(pct(ebit / rev)).toFixed(2)}%, which is above 14%, not below it.`,
+      `TRUE — Gross margin Year 1 ≈ ${pct(gm1).toFixed(1)}%; Year 2 ≈ ${pct(gm2).toFixed(1)}%. The proportion rose slightly.`,
+      `FALSE — Operating result rose from ${y1.op} to ${y2.op}, about ${pct((y2.op - y1.op) / y1.op).toFixed(1)}%, far short of doubling.`,
+      `TRUE — Tax / profit before tax Year 1 ≈ ${pct(tax1).toFixed(1)}%; Year 2 ≈ ${pct(tax2).toFixed(1)}%. The proportion rose.`,
+      "FALSE — Gross profit is revenue minus cost of sales only. Distribution costs, general and administrative costs and other operating result are deducted after gross profit on the way to the operating result.",
+      `FALSE — Finance costs – net moved from (${y1.fnet}) to (${y2.fnet}), a worsening of only ${fnetWorse}, not more than 10.`,
     ],
   });
 }
 
-// ---------- 6.3.01 Comparative income statements ----------
+// ---------- 6.3.01 ← PDF 119 BS + IS + CF ----------
 {
-  const y1 = { rev: 1250, cos: 800, dist: 95, admin: 140, dep: 60 };
-  const y2 = { rev: 1400, cos: 868, dist: 110, admin: 155, dep: 70 };
-  const gp1 = y1.rev - y1.cos,
-    gp2 = y2.rev - y2.cos;
-  const op1 = gp1 - y1.dist - y1.admin - y1.dep;
-  const op2 = gp2 - y2.dist - y2.admin - y2.dep;
-  assert(gp1 === 450 && gp2 === 532 && op1 === 155 && op2 === 197, "6.3.01");
-  const revGrowth = (y2.rev - y1.rev) / y1.rev;
-  const gm1 = gp1 / y1.rev,
-    gm2 = gp2 / y2.rev;
-  const ebitda2 = op2 + y2.dep;
-  const keys = [
-    revGrowth > 0.11,
-    gm2 - gm1 > 0.03, // +0.02 false
-    ebitda2 / op2 > 1.3,
-    op2 + 20 > 220, // 217 false
-    op2 / y2.rev - op1 / y1.rev > 0.015,
-  ];
-  assert(keys[0] && !keys[1] && keys[2] && !keys[3] && keys[4], "6.3.01k");
+  const a = {
+    buildings: 380,
+    machinery: 180,
+    patents: 90,
+    inv: 150,
+    recv: 120,
+    cash: 70,
+    share: 260,
+    re: 330,
+    lt: 180,
+    bonds: 50,
+    pay: 120,
+    od: 50,
+    rev: 1180,
+    cos: 760,
+    gp: 420,
+    opex: 230,
+    other: 12,
+    op: 202,
+    cfOp: 195,
+    cfInv: -240,
+    cfFin: 70,
+    cashBeg: 60,
+  };
+  const tot = a.buildings + a.machinery + a.patents + a.inv + a.recv + a.cash;
+  const eq = a.share + a.re;
+  const liab = a.lt + a.bonds + a.pay + a.od;
+  assert(tot === 990 && eq + liab === 990, "119 bal");
+  assert(a.rev - a.cos === a.gp, "119 gp");
+  assert(a.gp - a.opex + a.other === a.op, "119 op");
+  const roce = a.op / (eq + a.lt + a.bonds); // wait ROE not ROCE for stmt1
+  const roe = a.op / eq; // PDF uses 202/590 — operating result / equity as ROE proxy in explanations
+  const ca = a.inv + a.recv + a.cash;
+  const cl = a.pay + a.od;
+  const wc = ca - cl;
+  const netChg = a.cfOp + a.cfInv + a.cfFin;
+  const cashEnd = a.cashBeg + netChg;
 
-  cases.push({
+  const keys = [
+    roe > 0.35, // false ~34.2%
+    true, // ROCE useful comparatively
+    wc === 150, // false — 170
+    netChg === 25, // true
+    cashEnd > 90, // false — 85
+  ];
+  assert(!keys[0] && keys[1] && !keys[2] && keys[3] && !keys[4], "6.3.01");
+
+  pushCase({
     subsection: "6.3",
     case_id: "CASE 6.3.01",
-    title: "Comparative Income Statements Across Two Years",
+    title: "Balance Sheet With Income and Cash Flow Extracts",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following comparative income statement extracts (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following balance sheet and income statement extracts (in € thousands) for a business whose identity is not disclosed.
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Revenue | 1,250 | 1,400 |
-| Cost of sales | 800 | 868 |
-| Gross profit | 450 | 532 |
-| Distribution costs | 95 | 110 |
-| General and administrative costs | 140 | 155 |
-| Depreciation and amortisation | 60 | 70 |
-| Operating result | 155 | 197 |
+${chartPie("Asset composition", [
+  ["Buildings", a.buildings],
+  ["Machinery", a.machinery],
+  ["Patents, trademarks and licences", a.patents],
+  ["Inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+])}
+
+${mdAmount("€ in thousands", [
+  ["ASSETS", ""],
+  ["Buildings", a.buildings],
+  ["Machinery", a.machinery],
+  ["Patents, trademarks and licences", a.patents],
+  ["Inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+  ["Total assets", `**${tot}**`],
+  ["EQUITY", ""],
+  ["Share capital", a.share],
+  ["Retained earnings", a.re],
+  ["Total equity", `**${eq}**`],
+  ["LIABILITIES", ""],
+  ["Long-term bank loan", a.lt],
+  ["Bonds payable", a.bonds],
+  ["Trade payables", a.pay],
+  ["Bank overdraft", a.od],
+  ["Total liabilities", `**${liab}**`],
+  ["Total equity and liabilities", `**${tot}**`],
+])}
+
+${mdAmount("Income statement item (€ thousands)", [
+  ["Revenue", fmt(a.rev)],
+  ["Cost of sales", `(${a.cos})`],
+  ["Gross profit", a.gp],
+  ["Operating expenses", `(${a.opex})`],
+  ["Other operating result", a.other],
+  ["Operating result", a.op],
+])}
+
+${mdAmount("Cash flow statement extract (€ thousands)", [
+  ["Cash flow from operating activities", a.cfOp],
+  ["Cash flow from investing activities", `(${Math.abs(a.cfInv)})`],
+  ["Cash flow from financing activities", a.cfFin],
+  ["Cash and cash equivalents at the beginning of the year", a.cashBeg],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Revenue grew by more than 11%.",
-      "The gross profit margin improved by more than 3 percentage points.",
-      "In Year 2, operating result before depreciation and amortisation is more than 30% above the Year 2 operating result.",
-      "If Year 2 general and administrative costs had been €20 thousand lower, Year 2 operating result would exceed €220 thousand.",
-      "The operating margin rose by more than 1.5 percentage points.",
+      "Return on equity exceeds 35%.",
+      "Return on capital employed figures are mainly useful for comparing profitability between similar businesses, or for one business's performance over time, rather than being meaningful on their own.",
+      "Working capital equals €150 thousand.",
+      "The net change in cash and cash equivalents for the year equals €25 thousand.",
+      "Cash and cash equivalents at the end of the year exceed €90 thousand.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Revenue growth = (1,400 − 1,250) / 1,250 = ${(pct(revGrowth)).toFixed(1)}%, which exceeds 11%.`,
-      `FALSE — Gross margin Year 1 = 450/1,250 = ${(pct(gm1)).toFixed(2)}%. Year 2 = 532/1,400 ≈ ${(pct(gm2)).toFixed(2)}%. The improvement is about ${(pct(gm2 - gm1)).toFixed(2)} percentage points, which is not more than 3.`,
-      `TRUE — Year 2 operating result before depreciation and amortisation = 197 + 70 = ${ebitda2}. Relative to operating result 197 this is about ${(pct(ebitda2 / op2 - 1)).toFixed(1)}% higher, which is more than 30%.`,
-      `FALSE — Cutting administrative costs by 20 would lift Year 2 operating result from 197 to 217, which is still below 220.`,
-      `TRUE — Operating margin Year 1 = 155/1,250 = ${(pct(op1 / y1.rev)).toFixed(2)}%. Year 2 = 197/1,400 ≈ ${(pct(op2 / y2.rev)).toFixed(2)}%. The rise is about ${(pct(op2 / y2.rev - op1 / y1.rev)).toFixed(2)} percentage points, more than 1.5.`,
+      `FALSE — Using operating result over equity, return on equity ≈ ${pct(roe).toFixed(1)}%, which is below 35%.`,
+      "TRUE — A single return on capital employed figure says little in isolation; it becomes useful when compared with peers or tracked over time.",
+      `FALSE — Current assets ${ca} minus current liabilities ${cl} gives working capital ${wc}, not 150.`,
+      `TRUE — Net change = ${a.cfOp} + (${a.cfInv}) + ${a.cfFin} = ${netChg}.`,
+      `FALSE — Beginning cash ${a.cashBeg} plus net change ${netChg} equals ending cash ${cashEnd}, which does not exceed 90.`,
     ],
   });
+  void roce;
 }
 
-// ---------- 6.3.02 Balance sheet + income statement learning ----------
+// ---------- 6.3.02 ← PDF 122 combined mega ----------
 {
-  const assets = 1350,
-    share = 300,
-    retained = 260,
-    lt = 520,
-    pay = 210,
-    st = 60,
-    ebit = 189;
-  const equity = share + retained;
-  const ce = equity + lt;
-  const liab = lt + pay + st;
-  assert(equity + liab === assets, "6.3.02 bal");
-  const roce = ebit / ce;
-  const roe = ebit / equity;
-  const debt = liab / assets;
-  const keys = [
-    roce > 0.18, // 17.5% false
-    roe > 2 * roce, // 33.75 / 17.5 ≈ 1.93 false
-    debt < 0.58, // 58.5% false
-    ce < 2 * (pay + st), // 1080 < 540 false
-    (ebit + 21) / ce > 0.19, // true
-  ];
-  assert(!keys[0] && !keys[1] && !keys[2] && !keys[3] && keys[4], "6.3.02k");
+  const a = {
+    buildings: 500,
+    machinery: 250,
+    patents: 100,
+    inv: 180,
+    recv: 150,
+    cash: 100,
+    share: 200,
+    re: 290,
+    lt: 400,
+    bonds: 70,
+    pay: 230,
+    od: 90,
+    rev: 1420,
+    cos: 930,
+    gp: 490,
+    opex: 295,
+    other: 6,
+    op: 201,
+    fnet: 28,
+    pbt: 173,
+    tax: 42,
+    pat: 131,
+    cfOp: 205,
+    cfInv: -275,
+    cfFin: 45,
+    cashBeg: 80,
+  };
+  const tot = a.buildings + a.machinery + a.patents + a.inv + a.recv + a.cash;
+  const eq = a.share + a.re;
+  const liab = a.lt + a.bonds + a.pay + a.od;
+  assert(tot === 1280 && eq + liab === 1280, "122 bal");
+  assert(a.rev - a.cos === a.gp && a.gp - a.opex + a.other === a.op, "122 is");
+  assert(a.op - a.fnet === a.pbt && a.pbt - a.tax === a.pat, "122 bottom");
+  const ce = eq + a.lt + a.bonds;
+  const roce = a.op / ce;
+  const ca = a.inv + a.recv + a.cash;
+  const cl = a.pay + a.od;
+  const wc = ca - cl;
+  const netChg = a.cfOp + a.cfInv + a.cfFin;
+  const taxRate = a.tax / a.pbt;
 
-  cases.push({
+  const keys = [
+    roce > 0.25, // false ~20.9%
+    true, // conceptual
+    wc === 150, // false — 110
+    netChg < 0, // true
+    taxRate < 0.2, // false ~24.3%
+  ];
+  assert(!keys[0] && keys[1] && !keys[2] && keys[3] && !keys[4], "6.3.02");
+
+  pushCase({
     subsection: "6.3",
     case_id: "CASE 6.3.02",
-    title: "Reading Returns From Balance Sheet And Operating Result",
+    title: "Combined Balance Sheet, Profit and Loss, and Cash Flow",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following balance sheet extract and operating result figure (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
-| Assets (€ thousands) | Amount | Liabilities and equity (€ thousands) | Amount |
-| --- | ---: | --- | ---: |
-| Property | 620 | Share capital | 300 |
-| Machinery | 380 | Retained earnings | 260 |
-| Patents | 55 | Long-term bank loan | 520 |
-| Inventory | 90 | Trade payables | 210 |
-| Trade receivables | 140 | Short-term loan | 60 |
-| Cash and cash equivalents | 65 | | |
-| **Total assets** | **1,350** | **Total liabilities and equity** | **1,350** |
+${chartPie("Asset composition", [
+  ["Buildings", a.buildings],
+  ["Machinery", a.machinery],
+  ["Patents, trademarks and licences", a.patents],
+  ["Inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+])}
 
-| Income statement extract | Amount (€ thousands) |
-| --- | ---: |
-| Operating result | 189 |
+${mdAmount("€ in thousands", [
+  ["ASSETS", ""],
+  ["Buildings", a.buildings],
+  ["Machinery", a.machinery],
+  ["Patents, trademarks and licences", a.patents],
+  ["Inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+  ["Total assets", `**${fmt(tot)}**`],
+  ["EQUITY", ""],
+  ["Share capital", a.share],
+  ["Retained earnings", a.re],
+  ["Total equity", `**${eq}**`],
+  ["LIABILITIES", ""],
+  ["Long-term bank loan", a.lt],
+  ["Bonds payable", a.bonds],
+  ["Trade payables", a.pay],
+  ["Bank overdraft", a.od],
+  ["Total liabilities", `**${liab}**`],
+  ["Total equity and liabilities", `**${fmt(tot)}**`],
+])}
+
+${mdAmount("Statement of profit and loss extract (€ thousands)", [
+  ["Revenue", fmt(a.rev)],
+  ["Cost of sales", `(${a.cos})`],
+  ["Gross profit", a.gp],
+  ["Operating expenses", `(${a.opex})`],
+  ["Other operating result", a.other],
+  ["Operating result", a.op],
+  ["Finance costs – net", `(${a.fnet})`],
+  ["Profit before tax", a.pbt],
+  ["Income taxes", `(${a.tax})`],
+  ["Profit for the year", a.pat],
+])}
+
+${mdAmount("Cash flow statement extract (€ thousands)", [
+  ["Cash flow from operating activities", a.cfOp],
+  ["Cash flow from investing activities", `(${Math.abs(a.cfInv)})`],
+  ["Cash flow from financing activities", a.cfFin],
+  ["Cash and cash equivalents at the beginning of the year", a.cashBeg],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Return on capital employed exceeds 18%.",
-      "Return on equity is more than double return on capital employed.",
-      "The debt ratio is below 58%.",
-      "Capital employed is less than twice the combined value of trade payables and the short-term loan.",
-      "If the operating result had been €21 thousand higher, return on capital employed would exceed 19%.",
+      "Return on capital employed is above 25%.",
+      "A positive cash flow from operating activities combined with a negative cash flow from investing activities is typically a sign that a business is generating cash from its core operations while also investing in long-term assets, rather than a sign that it is in trouble.",
+      "Working capital equals €150 thousand.",
+      "The net change in cash and cash equivalents for the year is negative, meaning the year-end cash balance is lower than the beginning balance.",
+      "Income taxes as a percentage of profit before tax are below 20%.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `FALSE — Capital employed = equity ${equity} + long-term bank loan 520 = ${ce}. Return on capital employed = 189/${ce} ≈ ${(pct(roce)).toFixed(2)}%, which does not exceed 18%.`,
-      `FALSE — Return on equity = 189/${equity} ≈ ${(pct(roe)).toFixed(2)}%. Dividing by return on capital employed ≈ ${(roe / roce).toFixed(2)}, which falls just short of double.`,
-      `FALSE — Total liabilities = ${liab}. Debt ratio = ${liab}/1,350 ≈ ${(pct(debt)).toFixed(2)}%, which is above 58%, not below it.`,
-      `FALSE — Trade payables plus short-term loan = ${pay + st}; twice that is ${2 * (pay + st)}. Capital employed (${ce}) is well above that amount, not below it.`,
-      `TRUE — A higher operating result of 189 + 21 = 210 gives return on capital employed = 210/${ce} ≈ ${(pct((ebit + 21) / ce)).toFixed(2)}%, which exceeds 19%.`,
+      `FALSE — Capital employed = equity ${eq} + non-current liabilities ${a.lt + a.bonds} = ${ce}. Return on capital employed = ${a.op}/${ce} ≈ ${pct(roce).toFixed(1)}%, below 25%.`,
+      "TRUE — Operating cash generation paired with investing outflows usually means the firm invests in long-term assets while its core business produces cash — often a healthy growth pattern.",
+      `FALSE — Current assets ${ca} minus current liabilities ${cl} equals working capital ${wc}, not 150.`,
+      `TRUE — Net change = ${a.cfOp} + (${a.cfInv}) + ${a.cfFin} = ${netChg}, so year-end cash (${a.cashBeg + netChg}) is below the beginning balance.`,
+      `FALSE — Income taxes / profit before tax = ${a.tax}/${a.pbt} ≈ ${pct(taxRate).toFixed(1)}%, which is above 20%.`,
     ],
   });
 }
 
-// ---------- 6.4.01 Depreciation ----------
+// ---------- 6.4.01 ← PDF 117 depreciation ----------
 {
-  const cost = 96000,
-    life = 8,
-    ann = cost / life;
-  assert(ann === 12000, "dep");
-  const bv = (y) => cost - y * ann;
-  const acc = (y) => y * ann;
-  const keys = [
-    nearly(bv(5) / bv(7), 3),
-    nearly(acc(3), bv(5)),
-    nearly((cost / 6 - ann) / ann, 1 / 3),
-    bv(5) / cost > 0.25,
-    true, // depreciation non-cash
-  ];
-  assert(keys.every(Boolean), "6.4.01");
+  const A = { cost: 150000, life: 10, resid: 0 };
+  const B = { cost: 54000, life: 6, resid: 6000 };
+  const C = { cost: 21000, life: 3, resid: 0 };
+  const depA = (A.cost - A.resid) / A.life;
+  const depB = (B.cost - B.resid) / B.life;
+  const depC = (C.cost - C.resid) / C.life;
+  assert(depA === 15000 && depB === 8000 && depC === 7000, "117 dep");
+  const ann = depA + depB + depC;
+  assert(ann === 30000, "117 ann");
+  const bvB3 = B.cost - 3 * depB;
+  const bvA3 = A.cost - 3 * depA;
+  const bvC3 = C.cost - 3 * depC;
+  const combined3 = bvA3 + bvB3 + bvC3;
 
-  cases.push({
+  const keys = [
+    ann === 30000, // true
+    bvB3 === 24000, // false — 30000
+    bvC3 === 0, // true
+    combined3 > 150000, // false — 135000
+    true, // conceptual
+  ];
+  assert(keys[0] && !keys[1] && keys[2] && !keys[3] && keys[4], "6.4.01");
+
+  pushCase({
     subsection: "6.4",
     case_id: "CASE 6.4.01",
-    title: "Straight-Line Depreciation Schedule",
+    title: "Straight-Line Depreciation Across Three Assets",
     difficulty_level: "5/5",
     tier: "full",
-    context: `An asset is purchased for €96,000 with an expected useful life of 8 years and zero residual value. It is depreciated on a straight-line basis for a business whose identity is not disclosed.
+    context: `A business owns the following fixed assets, all depreciated on a straight-line basis.
 
-| End of year | Accumulated depreciation (€) | Book value (€) |
-| ---: | ---: | ---: |
-| 3 | 36,000 | 60,000 |
-| 5 | 60,000 | 36,000 |
-| 7 | 84,000 | 12,000 |
+${chartBar("Annual depreciation by asset", [
+  `Machinery | Annual depreciation=${depA}`,
+  `Delivery truck | Annual depreciation=${depB}`,
+  `Computer equipment | Annual depreciation=${depC}`,
+])}
+
+${mdAmount("Asset details", [
+  ["Asset A – Machinery", "€150,000 purchase price, 10-year useful life, no residual value"],
+  ["Asset B – Delivery truck", "€54,000 purchase price, 6-year useful life, €6,000 residual value"],
+  ["Asset C – Computer equipment", "€21,000 purchase price, 3-year useful life, no residual value"],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "The book value at the end of Year 5 is exactly triple the book value at the end of Year 7.",
-      "Accumulated depreciation after Year 3 equals the book value remaining after Year 5.",
-      "If the useful life had instead been 6 years with the same purchase cost, annual depreciation would be exactly one-third higher than under the 8-year plan.",
-      "The asset retains more than 25% of its original cost at the end of Year 5.",
-      "Depreciation expense reduces reported profit but does not itself change the cash and cash equivalents balance.",
+      "Combined annual depreciation for all three assets is €30,000.",
+      "After three years, the book value of the delivery truck is €24,000.",
+      "After three years, the computer equipment is fully depreciated.",
+      "After three years, the combined book value of all three assets exceeds €150,000.",
+      "Recording depreciation is necessary because, without it, the value of these assets shown in the accounts would be inaccurate and overstated.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Book value Year 5 = 96,000 − 5 × 12,000 = ${bv(5)}. Book value Year 7 = ${bv(7)}. ${bv(5)} ÷ ${bv(7)} = 3 exactly.`,
-      `TRUE — Accumulated depreciation after Year 3 = 3 × 12,000 = ${acc(3)}. This equals the Year 5 book value (${bv(5)}). That equality is a feature of these numbers, not a general rule.`,
-      `TRUE — With a 6-year life, annual depreciation = 96,000 ÷ 6 = 16,000. Compared with 12,000 this is an increase of 4,000, and 4,000 ÷ 12,000 = one-third.`,
-      `TRUE — Year 5 book value ${bv(5)} divided by original cost 96,000 = ${(pct(bv(5) / cost)).toFixed(1)}%, which is above 25%.`,
-      "TRUE — Depreciation is a non-cash expense: it lowers profit on the income statement but does not by itself move cash into or out of the business.",
+      `TRUE — Annual charges are ${fmt(depA)}, ${fmt(depB)} and ${fmt(depC)}, which sum to ${fmt(ann)}.`,
+      `FALSE — After three years the truck's book value is ${fmt(B.cost)} − ${fmt(3 * depB)} = ${fmt(bvB3)}, not 24,000.`,
+      `TRUE — After three years accumulated depreciation equals the full purchase price of ${fmt(C.cost)}, so book value is zero.`,
+      `FALSE — Combined book value after three years is ${fmt(combined3)}, which does not exceed 150,000.`,
+      "TRUE — Fixed assets lose value as they are used; without depreciation they would remain at original cost and overstate their worth.",
     ],
   });
 }
 
-// Fix table Year 3 BV in context - I wrote 60,000 correctly. Acc 3 = 36k, BV5 = 36k for statement 2. Good.
-
-// ---------- 6.4.02 Who uses which accounts ----------
+// ---------- 6.4.02 financial vs management accounting (refreshed) ----------
 {
-  // Table of report uses - conceptual, verify logical statements carefully
-  cases.push({
+  const keys = [true, false, true, true, false];
+  pushCase({
     subsection: "6.4",
     case_id: "CASE 6.4.02",
-    title: "Financial Accounting Versus Management Accounting Uses",
+    title: "Financial Versus Management Accounting Uses",
     difficulty_level: "4/5",
     tier: "full",
-    context: `The following overview summarises typical uses of accounting information for a business whose identity is not disclosed.
+    context: `A mid-sized manufacturer whose identity is not disclosed prepares both a published annual report for external users and detailed internal cost reports for plant managers.
 
-| Report or record | Primary users | Typical purpose |
-| --- | --- | --- |
-| Published balance sheet | External investors and creditors | Assess financial position and security |
-| Published income statement | External investors and creditors | Assess profitability over a period |
-| Detailed cost report by product line | Internal managers | Decide pricing and cost control |
-| Cash budget for next quarter | Internal managers | Plan short-term liquidity |
-| Annual financial statements filed under law | Authorities and the public | Meet legal reporting duties |
+[[CHART type="bar" title="Illustrative reporting audiences"]]
+External users | Typical report volume=1
+Internal managers | Typical report volume=12
+[[/CHART]]
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Detailed cost reports by product line belong primarily to management accounting because they support internal decision-making.",
-      "A published balance sheet is intended first and foremost as an internal weekly tool for shop-floor supervisors.",
-      "Cash budgets for the next quarter are management accounting instruments used to plan liquidity.",
-      "Financial accounting focuses on standardised reports that can be shown to external parties such as investors and creditors.",
-      "Management accounting information is useful only after it has been published in the annual financial statements.",
+      "Financial accounting information in the annual report is aimed primarily at external users such as owners, lenders and tax authorities.",
+      "Management accounting reports must follow the same legally prescribed formats as the published financial statements.",
+      "Depreciation appears as an expense in the income statement even though it does not by itself cause a cash payment in the year it is recognised.",
+      "Internal management reports may be prepared more frequently than once a year and can focus on product costs or department performance.",
+      "Only financial accounting can ever be used to decide whether to continue or discontinue a product line.",
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: keys,
     tactical_explanations: [
-      "TRUE — Cost reports broken down by product line are prepared for managers inside the firm to control costs and pricing; that is management accounting.",
-      "FALSE — A published balance sheet is a financial accounting statement aimed at external users, not a weekly shop-floor control sheet.",
-      "TRUE — Forward-looking cash budgets are internal planning tools and form part of management accounting.",
-      "TRUE — Financial accounting produces formal, comparable statements for outsiders such as investors and creditors.",
-      "FALSE — Management accounting information is prepared for internal use and often never appears in the published annual statements.",
+      "TRUE — Financial accounting serves external stakeholders with the published financial statements and related disclosures.",
+      "FALSE — Management accounting is not bound to the statutory presentation of published financial statements; formats are chosen for internal decision needs.",
+      "TRUE — Depreciation allocates the cost of a fixed asset over its useful life and does not itself move cash when the charge is recorded.",
+      "TRUE — Management accounts are often monthly or weekly and can zoom in on products, customers or cost centres.",
+      "FALSE — Discontinue / continue decisions routinely rely on management accounting cost and contribution analysis, not only on published financial statements.",
     ],
   });
 }
 
-// ---------- 6.5.01 Share chart + returns ----------
+// ---------- 6.5.01 ← PDF 118 liquidity ----------
 {
-  const prices = { jan: 20, feb: 22, mar: 24, apr: 26, may: 24 };
-  const shares = 500_000;
-  const ebit = 210,
-    equity = 1200,
-    ce = 1800; // € thousands
-  const mcapMay = prices.may * shares;
-  const rise = (prices.apr - prices.jan) / prices.jan;
-  const roce = ebit / ce;
-  const roe = ebit / equity;
-  const keys = [
-    mcapMay > 11_000_000,
-    rise > 0.25,
-    roce > 0.11,
-    roe > roce,
-    nearly((26 * shares) / (20 * shares), 1.3),
-  ];
-  assert(keys.every(Boolean), "6.5.01");
+  const a = {
+    store: 400,
+    warehouse: 130,
+    fixtures: 50,
+    inv: 250,
+    recv: 65,
+    cash: 30,
+    share: 140,
+    re: 115,
+    lt: 320,
+    bonds: 55,
+    pay: 225,
+    od: 70,
+  };
+  const tot = a.store + a.warehouse + a.fixtures + a.inv + a.recv + a.cash;
+  const eq = a.share + a.re;
+  const liab = a.lt + a.bonds + a.pay + a.od;
+  assert(tot === 925 && eq + liab === 925, "118 bal");
+  const ca = a.inv + a.recv + a.cash;
+  const cl = a.pay + a.od;
+  const cr = ca / cl;
+  const wc = ca - cl;
+  const er = eq / tot;
+  const withoutInv = (ca - a.inv) / cl;
 
-  cases.push({
+  const keys = [
+    cr >= 1.5 && cr <= 2, // false ~1.17
+    wc === 50, // true
+    true, // acid-test concept
+    er < 0.25, // false ~27.6%
+    withoutInv > 1, // false ~0.32
+  ];
+  assert(!keys[0] && keys[1] && keys[2] && !keys[3] && !keys[4], "6.5.01");
+
+  pushCase({
     subsection: "6.5",
     case_id: "CASE 6.5.01",
-    title: "Share Price Chart And Return Measures",
+    title: "Retail Balance Sheet Liquidity Analysis",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider share-price and performance figures for a listed business whose identity is not disclosed.
+    context: `Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-**Closing share prices (€)**
+${chartPie("Asset composition", [
+  ["Store buildings", a.store],
+  ["Warehouse", a.warehouse],
+  ["Fixtures and fittings", a.fixtures],
+  ["Merchandise inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+])}
 
-\`\`\`
-€
-26 |             ●
-24 |         ●       ●
-22 |     ●
-20 | ●
-   +------------------
-     Jan Feb Mar Apr May
-\`\`\`
-
-| Month | Closing price (€) | Shares outstanding |
-| --- | ---: | ---: |
-| January | 20 | 500,000 |
-| February | 22 | 500,000 |
-| March | 24 | 500,000 |
-| April | 26 | 500,000 |
-| May | 24 | 500,000 |
-
-| Annual figure (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 210 |
-| Equity | 1,200 |
-| Capital employed | 1,800 |
+${mdAmount("€ in thousands", [
+  ["ASSETS", ""],
+  ["Store buildings", a.store],
+  ["Warehouse", a.warehouse],
+  ["Fixtures and fittings", a.fixtures],
+  ["Merchandise inventory", a.inv],
+  ["Trade receivables", a.recv],
+  ["Cash and cash equivalents", a.cash],
+  ["Total assets", `**${tot}**`],
+  ["EQUITY", ""],
+  ["Share capital", a.share],
+  ["Retained earnings", a.re],
+  ["Total equity", `**${eq}**`],
+  ["LIABILITIES", ""],
+  ["Long-term bank loan", a.lt],
+  ["Bonds payable", a.bonds],
+  ["Trade payables", a.pay],
+  ["Bank overdraft", a.od],
+  ["Total liabilities", `**${liab}**`],
+  ["Total equity and liabilities", `**${tot}**`],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "Market capitalisation in May exceeds €11 million.",
-      "From January to April the share price rose by more than 25%.",
-      "Return on capital employed exceeds 11%.",
-      "Return on equity is higher than return on capital employed.",
-      "If May’s closing price had stayed at €26 instead of falling to €24, May market capitalisation would equal January’s market capitalisation multiplied by 1.3.",
+      "The current ratio falls between 1.5 and 2, the range often considered ideal.",
+      "Working capital equals €50 thousand.",
+      "Because inventory is not always quickly convertible into cash, the acid-test ratio excludes it from current assets to give a stricter test of a business's liquidity than the current ratio.",
+      "The equity ratio is below 25%.",
+      "If merchandise inventory alone were excluded from current assets, the remaining current assets would still be enough to cover current liabilities more than once.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — May market capitalisation = 24 × 500,000 = ${mcapMay.toLocaleString("en-GB")}, which is more than €11 million.`,
-      `TRUE — Price rise from 20 to 26 is (26 − 20) / 20 = ${(pct(rise)).toFixed(0)}%, which exceeds 25%.`,
-      `TRUE — Return on capital employed = 210 / 1,800 = ${(pct(roce)).toFixed(2)}%, which exceeds 11%.`,
-      `TRUE — Return on equity = 210 / 1,200 = ${(pct(roe)).toFixed(1)}%, which is higher than return on capital employed (${(pct(roce)).toFixed(2)}%).`,
-      `TRUE — At €26, May market capitalisation = 13,000,000. January market capitalisation = 10,000,000. 13,000,000 ÷ 10,000,000 = 1.3 exactly.`,
+      `FALSE — Current assets ${ca} / current liabilities ${cl} ≈ ${cr.toFixed(2)}, which is below the 1.5–2 range.`,
+      `TRUE — Working capital = ${ca} − ${cl} = ${wc}.`,
+      "TRUE — The acid-test ratio removes inventory because it can be harder to turn into cash quickly, giving a stricter liquidity check than the current ratio.",
+      `FALSE — Equity ratio = ${eq}/${tot} ≈ ${pct(er).toFixed(1)}%, which is above 25%.`,
+      `FALSE — Remaining current assets ${ca - a.inv} cover current liabilities only about ${withoutInv.toFixed(2)} times, below 1.`,
     ],
   });
 }
 
-// ---------- 6.5.02 Liquidity ratios ----------
+// ---------- 6.5.02 ← PDF 121 turnover ----------
 {
-  const inv = 310,
-    rec = 145,
-    cash = 42,
-    pay = 250,
-    st = 87;
-  const ca = inv + rec + cash;
-  const cl = pay + st;
-  const cr = ca / cl;
-  const acid = (ca - inv) / cl;
-  const keys = [
-    Math.abs(cr - 1.5) < Math.abs(cr - 1.4),
-    acid > 0.5 * cr, // false
-    inv / ca < 2 / 3,
-    ca - cl > 150,
-    (ca - inv) / (cl + 40) > acid, // false — falls
-  ];
-  assert(keys[0] && !keys[1] && keys[2] && keys[3] && !keys[4], "6.5.02");
+  const rev = 1080;
+  const cos = 705;
+  const assetsBeg = 840;
+  const assetsEnd = 930;
+  const invBeg = 140;
+  const invEnd = 170;
+  const avgAssets = (assetsBeg + assetsEnd) / 2;
+  const avgInv = (invBeg + invEnd) / 2;
+  const assetTurn = rev / avgAssets;
+  const invTurn = cos / avgInv;
+  const invShare = avgInv / avgAssets;
+  const invGrowth = (invEnd - invBeg) / invBeg;
 
-  cases.push({
+  const keys = [
+    assetTurn > 1.5, // false ~1.22
+    invTurn < 5, // true ~4.55
+    invShare < 0.15, // false ~17.5%
+    true, // conceptual
+    invGrowth > 0.25, // false ~21.4%
+  ];
+  assert(!keys[0] && keys[1] && !keys[2] && keys[3] && !keys[4], "6.5.02");
+
+  pushCase({
     subsection: "6.5",
     case_id: "CASE 6.5.02",
-    title: "Liquidity Analysis From Current Items",
+    title: "Asset and Inventory Turnover Extract",
     difficulty_level: "5/5",
     tier: "full",
-    context: `Consider the following balance sheet extract of current items (in € thousands) for a business whose identity is not disclosed.
+    context: `Consider the following extract (in € thousands) for a business whose identity is not disclosed.
 
-| Item | Amount (€ thousands) |
-| --- | ---: |
-| Inventory | 310 |
-| Trade receivables | 145 |
-| Cash and cash equivalents | 42 |
-| Trade payables | 250 |
-| Short-term loan | 87 |
+${chartBar("Beginning versus ending balances", [
+  `Total assets | Beginning=${assetsBeg} | Ending=${assetsEnd}`,
+  `Inventory | Beginning=${invBeg} | Ending=${invEnd}`,
+])}
+
+${mdAmount("Item (€ thousands)", [
+  ["Revenue", fmt(rev)],
+  ["Cost of sales", cos],
+  ["Total assets at the beginning of the year", assetsBeg],
+  ["Total assets at the end of the year", assetsEnd],
+  ["Inventory at the beginning of the year", invBeg],
+  ["Inventory at the end of the year", invEnd],
+])}
 
 Evaluate the following economic assertions:`,
     statements: [
-      "The current ratio is closer to 1.5 than to 1.4.",
-      "The acid-test ratio is more than half the current ratio.",
-      "Inventory accounts for less than two-thirds of current assets.",
-      "Working capital is greater than €150 thousand.",
-      "If the short-term loan were €40 thousand higher (all else equal), the acid-test ratio would rise.",
+      "Asset turnover is above 1.5.",
+      "Inventory turnover is below 5 times per year.",
+      "Average inventory represents less than 15% of average total assets.",
+      "A higher inventory turnover figure generally indicates that goods are selling well and are not remaining in stock for a long time, meaning less money is tied up in inventory.",
+      "The increase in inventory from the beginning to the end of the year represents a rise of more than 25%.",
     ],
     answer_key: keys,
     tactical_explanations: [
-      `TRUE — Current assets = ${ca}; current liabilities = ${cl}; current ratio ≈ ${cr.toFixed(3)}. Distance to 1.5 is ${Math.abs(cr - 1.5).toFixed(3)}; distance to 1.4 is ${Math.abs(cr - 1.4).toFixed(3)}. It is closer to 1.5.`,
-      `FALSE — Acid-test ratio = (${ca} − 310)/${cl} ≈ ${acid.toFixed(3)}. Half of the current ratio is about ${(0.5 * cr).toFixed(3)}. Because ${acid.toFixed(3)} is below that half, the claim is false.`,
-      `TRUE — Inventory share = 310/${ca} ≈ ${(pct(inv / ca)).toFixed(1)}%, which is below two-thirds (≈66.7%).`,
-      `TRUE — Working capital = ${ca} − ${cl} = ${ca - cl}, which is greater than 150.`,
-      `FALSE — With the short-term loan raised by 40, current liabilities become ${cl + 40} and the acid-test ratio becomes ${(ca - inv) / (cl + 40)} ≈ ${((ca - inv) / (cl + 40)).toFixed(3)}, which is lower than the original ${acid.toFixed(3)}, so the ratio would fall, not rise.`,
+      `FALSE — Average total assets = ${avgAssets}; asset turnover = ${rev}/${avgAssets} ≈ ${assetTurn.toFixed(2)}, below 1.5.`,
+      `TRUE — Average inventory = ${avgInv}; inventory turnover = ${cos}/${avgInv} ≈ ${invTurn.toFixed(2)}, which is below 5.`,
+      `FALSE — Average inventory / average assets ≈ ${pct(invShare).toFixed(1)}%, which is not less than 15%.`,
+      "TRUE — High inventory turnover means stock turns over quickly, so less cash is locked in inventory for long periods.",
+      `FALSE — Inventory rose from ${invBeg} to ${invEnd}, about ${pct(invGrowth).toFixed(1)}%, which is not more than 25%.`,
     ],
   });
 }
 
 assert(cases.length === 10, `expected 10 got ${cases.length}`);
 
-// ban abbreviations in student-facing fields
 const ban = /\b(EBIT|EBITDA|ROCE|ROE|WC|MCAP|P&L)\b/;
 for (const c of cases) {
   const blob = [c.context, ...c.statements, ...c.tactical_explanations].join("\n");
-  if (ban.test(blob)) throw new Error(`Abbreviation found in ${c.case_id}`);
+  if (ban.test(blob)) throw new Error(`Abbreviation found in ${c.case_id}: ${blob.match(ban)[0]}`);
   assert(c.statements.length === 5, c.case_id);
   assert(c.answer_key.length === 5, c.case_id);
   assert(c.tactical_explanations.length === 5, c.case_id);
@@ -660,6 +963,12 @@ for (const c of cases) {
     assert(c.tactical_explanations[i].startsWith(`${want} —`), `${c.case_id} expl ${i}`);
   }
   assert(/Evaluate the following economic assertions:\s*$/.test(c.context.trim()), c.case_id);
+  // no formula hints in statements
+  for (const s of c.statements) {
+    if (/\([^)]*(?:divided by|calculated as|defined as)[^)]*\)/i.test(s)) {
+      throw new Error(`Formula hint in ${c.case_id}: ${s}`);
+    }
+  }
 }
 
 fs.writeFileSync(
@@ -667,7 +976,6 @@ fs.writeFileSync(
   JSON.stringify(cases, null, 2) + "\n",
 );
 
-// SQL
 function esc(s) {
   return String(s).replace(/'/g, "''");
 }
@@ -679,7 +987,7 @@ function barr(a) {
 }
 
 const lines = [];
-lines.push("-- Chapter 6 pilot: 10 Full Course table-based cases (6.1–6.5).");
+lines.push("-- Chapter 6 pilot: 10 Full Course PDF-style cases with tables + charts (6.1–6.5).");
 lines.push(
   "DELETE FROM public.economics_cases WHERE case_id LIKE 'CASE 6.%' AND tier = 'full' AND subsection IN ('6.1','6.2','6.3','6.4','6.5');",
 );
@@ -691,7 +999,7 @@ lines.push(
 lines.push("VALUES");
 lines.push(
   cases
-    .map((c, i) => {
+    .map((c) => {
       const sort = Number(c.case_id.split(".").pop());
       return `( '${c.subsection}', '${esc(c.case_id)}', '${esc(c.title)}', '${esc(c.context)}', ${arr(c.statements)}, ${barr(c.answer_key)}, ${arr(c.tactical_explanations)}, '${esc(c.difficulty_level)}', ${sort}, 'full' )`;
     })
@@ -716,5 +1024,5 @@ fs.writeFileSync(
 console.log("OK", cases.length, "cases");
 for (const c of cases) {
   const t = c.answer_key.filter(Boolean).length;
-  console.log(c.case_id, c.subsection, `TRUE=${t}`, c.difficulty_level);
+  console.log(c.case_id, c.subsection, `TRUE=${t}`, c.difficulty_level, c.context.includes("[[CHART") ? "chart" : "no-chart");
 }
