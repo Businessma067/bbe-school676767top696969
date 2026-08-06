@@ -487,88 +487,42 @@ function bs1y(slot, rng, used) {
 function cf2y(slot, rng, used) {
   const { y1, y2 } = genCf2y(rng);
   const opG = (y2.op - y1.op) / y1.op;
-  const finG = (y2.fin - y1.fin) / y1.fin;
   const endFall = y1.end > 0 ? (y1.end - y2.end) / y1.end : 0;
-  const invShare1 = Math.abs(y1.inv) / y1.op;
   const invShare2 = Math.abs(y2.inv) / y2.op;
-  const wcDrag1 = (y1.opBefore - y1.op) / y1.opBefore;
-  const wcDrag2 = (y2.opBefore - y2.op) / y2.opBefore;
 
   const chart = chartBar("Operating and investing cash flows", [
     `Year 1 | Operating=${y1.op} | Investing=${y1.inv}`,
     `Year 2 | Operating=${y2.op} | Investing=${y2.inv}`,
   ]);
-  const ctx = `Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
+  const ctx = `Consider the cash flow extract below (€ thousands).\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
 
   const cands = [
-    growthUp(rng, "Cash flow from operating activities", opG, 6, 25),
-    growthUp(rng, "Cash flow from financing activities", finG, 10, 60),
+    growthUp(rng, "Operating cash flow", opG, 6, 25),
     withPct(rng, 100, 220, (th) => ({
-      stmt: `The cash outflow used for investing activities amounts to more than ${th}% of cash flow from operating activities in Year 1.`,
-      val: invShare1 * 100 > th,
-      expl: `Investing outflow is about ${pct(invShare1).toFixed(1)}% of operating cash flow in Year 1.`,
+      stmt: `Year 2 investing outflow exceeds ${th}% of Year 2 operating cash flow.`,
+      val: invShare2 * 100 > th,
+      expl: `Investing/operating ≈ ${pct(invShare2).toFixed(1)}%.`,
     })),
-    withPct(rng, 130, 260, (th) => ({
-      stmt: `The cash outflow used for investing activities amounts to less than ${th}% of cash flow from operating activities in Year 2.`,
-      val: invShare2 * 100 < th,
-      expl: `Investing outflow is about ${pct(invShare2).toFixed(1)}% of operating cash flow in Year 2.`,
+    withPct(rng, 5, 25, (th) => ({
+      stmt: `Year-end cash fell by more than ${th}% from Year 1 to Year 2.`,
+      val: endFall * 100 > th,
+      expl: `End-cash change ≈ ${pct(endFall).toFixed(1)}%.`,
     })),
-    y1.end > 0
-      ? withPct(rng, 5, 25, (th) => ({
-          stmt: `Cash and cash equivalents at year-end fell by more than ${th}% from Year 1 to Year 2.`,
-          val: endFall * 100 > th,
-          expl: `End-cash change ≈ ${pct(endFall).toFixed(1)}%.`,
-        }))
-      : {
-          stmt: `Cash and cash equivalents at the end of Year 2 exceed those at the end of Year 1.`,
-          val: y2.end > y1.end,
-          expl: `End-cash moved from ${y1.end} to ${y2.end}.`,
-        },
-    withPct(rng, 4, 22, (th) => ({
-      stmt: `Working capital movements reduced cash flow from operating activities by more than ${th}% of the before-working-capital figure in Year 1.`,
-      val: wcDrag1 * 100 > th,
-      expl: `Working-capital drag ≈ ${pct(wcDrag1).toFixed(1)}% in Year 1.`,
-    })),
-    withPct(rng, 15, 40, (th) => ({
-      stmt: `Working capital movements reduced cash flow from operating activities by less than ${th}% of the before-working-capital figure in Year 2.`,
-      val: wcDrag2 * 100 < th,
-      expl: `Working-capital drag ≈ ${pct(wcDrag2).toFixed(1)}% in Year 2.`,
-    })),
-    {
-      stmt: `With Year 2 cash flow from operating activities of €${fmt(y2.op)} thousand, collecting a customer invoice increases cash within that heading.`,
-      val: true,
-      expl: `Receivable collections are operating cash inflows.`,
-    },
-    {
-      stmt: `A negative cash flow from investing activities of €${fmt(Math.abs(y2.inv))} thousand in Year 2 always shows that a business is failing.`,
-      val: false,
-      expl: `Negative investing cash flow often just means asset purchases.`,
-    },
-    {
-      stmt: `Repaying part of a bank loan, unlike the €${fmt(y2.op)} thousand generated from operations in Year 2, appears within cash flow from financing activities rather than operating activities.`,
-      val: true,
-      expl: `Loan repayments are financing cash flows.`,
-    },
-    { stmt: `The net change in cash and cash equivalents is positive in Year 1.`, val: y1.chg > 0, expl: `Year 1 net change = ${y1.chg}.` },
-    { stmt: `The net change in cash and cash equivalents is positive in Year 2.`, val: y2.chg > 0, expl: `Year 2 net change = ${y2.chg}.` },
-    withPct(rng, 60, 130, (th) => ({
-      stmt: `Cash flow from financing activities covers more than ${th}% of the cash outflow used for investing activities in Year 2.`,
-      val: (y2.fin / Math.abs(y2.inv)) * 100 > th,
-      expl: `Financing inflow is about ${pct(y2.fin / Math.abs(y2.inv)).toFixed(1)}% of investing outflow in Year 2.`,
-    })),
+    { stmt: `Year 2 operating cash flow is below the before-working-capital figure.`, val: y2.op < y2.opBefore, expl: `${y2.op} vs ${y2.opBefore}.` },
+    { stmt: `Investing cash flow is an outflow in both years.`, val: y1.inv < 0 && y2.inv < 0, expl: `Investing: ${y1.inv}, ${y2.inv}.` },
+    { stmt: `Year 2 financing cash flow is positive.`, val: y2.fin > 0, expl: `Financing Year 2 = ${y2.fin}.` },
+    { stmt: `Net cash change is positive in Year 1.`, val: y1.chg > 0, expl: `Year 1 change = ${y1.chg}.` },
+    { stmt: `Net cash change is positive in Year 2.`, val: y2.chg > 0, expl: `Year 2 change = ${y2.chg}.` },
     (() => {
-      const { claimed, val } = exactAmt(rng, y2.chg, { deltaMin: 10, deltaMax: 35 });
-      return { stmt: `The net change in cash and cash equivalents in Year 2 equals exactly €${fmt(claimed)} thousand.`, val, expl: `Net change in Year 2 is €${fmt(y2.chg)} thousand.` };
+      const { claimed, val } = exactAmt(rng, y2.end, { deltaMin: 10, deltaMax: 35 });
+      return { stmt: `Year 2 ending cash equals €${fmt(claimed)} thousand.`, val, expl: `Ending cash = €${fmt(y2.end)} thousand.` };
     })(),
     (() => {
-      const { claimed, val } = exactAmt(rng, y2.end, { deltaMin: 15, deltaMax: 40 });
-      return { stmt: `Cash and cash equivalents at the end of Year 2 equal exactly €${fmt(claimed)} thousand.`, val, expl: `Ending cash in Year 2 is €${fmt(y2.end)} thousand.` };
+      const { claimed, val } = exactAmt(rng, y2.op, { deltaMin: 8, deltaMax: 30 });
+      return { stmt: `Year 2 operating cash flow equals €${fmt(claimed)} thousand.`, val, expl: `Operating cash flow = €${fmt(y2.op)} thousand.` };
     })(),
-    (() => {
-      const { claimed, val } = exactPct(rng, opG, { deltaMin: 3, deltaMax: 9 });
-      return { stmt: `Cash flow from operating activities grew by exactly ${claimed.toFixed(1)}% from Year 1 to Year 2.`, val, expl: `Actual operating cash flow growth ≈ ${pct(opG).toFixed(1)}%.` };
-    })(),
-    growthUp(rng, "Cash flow from operating activities before changes in working capital", (y2.opBefore - y1.opBefore) / y1.opBefore, 8, 30),
+    { stmt: `Negative investing cash flow always means the business is failing.`, val: false, expl: `It often reflects asset purchases.` },
+    { stmt: `Collecting a customer invoice is an operating cash inflow.`, val: true, expl: `Trade-receivable collections are operating.` },
   ];
 
   return pack(slot, titleFor(slot, "cf2y"), ctx, cands, used);
@@ -953,89 +907,105 @@ function share(slot, rng, used) {
   const rise = (sh.end - sh.start) / sh.start;
   const mcapStart = (sh.start * sh.shares) / 1_000_000;
   const mcapEnd = (sh.end * sh.shares) / 1_000_000;
-  const earnings = ri(rng, 180, 280);
+  const earnings = ri(rng, 180, 320);
   const eps = earnings / (sh.shares / 1000);
   const prices = sh.rows.map((r) => r[1]);
+  const vols = sh.rows.map((r) => r[3]);
   const maxP = Math.max(...prices);
   const minP = Math.min(...prices);
-  const avgP = prices.reduce((a, b) => a + b, 0) / prices.length;
+  const maxVol = Math.max(...vols);
+  const minVol = Math.min(...vols);
+  const volTurn = sh.totalVol / sh.shares;
   let risingMonths = 0;
   for (let i = 1; i < prices.length; i++) if (prices[i] > prices[i - 1]) risingMonths++;
-  const volatility = (maxP - minP) / minP;
 
   const line = chartLine("Closing share price", sh.lineRows);
-  const rows = ["| Month | Closing price (€) | Shares outstanding |", "| --- | ---: | ---: |"];
-  for (const [m, p, s] of sh.rows) rows.push(`| ${m} | ${p} | ${fmt(s)} |`);
-  const ctx = `Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n${line}\n\n${rows.join("\n")}\n\n${mdAmount("Annual figures (€ thousands)", [
+  const volChart = chartBar("Monthly share turnover", sh.volRows);
+  const rows = [
+    "| Month | Closing price (€) | Shares outstanding | Shares traded |",
+    "| --- | ---: | ---: | ---: |",
+  ];
+  for (const [m, p, s, v] of sh.rows) rows.push(`| ${m} | ${p} | ${fmt(s)} | ${fmt(v)} |`);
+  const ctx = `Consider the share market extract below for a listed business whose identity is not disclosed.\n\n${line}\n\n${volChart}\n\n${rows.join("\n")}\n\n${mdAmount("Annual figures (€ thousands)", [
     ["Operating result", earnings],
     ["Shares outstanding", fmt(sh.shares)],
+    ["Total shares traded (six months)", fmt(sh.totalVol)],
   ])}\n\nEvaluate the following economic assertions:`;
 
   const cands = [
-    withPct(rng, 8, 30, (th) => ({
-      stmt: `The closing share price rose by more than ${th}% from the first to the last month shown.`,
+    withPct(rng, 8, 35, (th) => ({
+      stmt: `The closing share price rose by more than ${th}% from first to last month.`,
       val: rise * 100 > th,
       expl: `Price change ≈ ${pct(rise).toFixed(1)}%.`,
     })),
     (() => {
-      const mult = 0.8 + rng() * 0.15;
-      const thAmt = Number((mcapEnd * mult).toFixed(1));
+      const thAmt = Number((mcapEnd * (0.75 + rng() * 0.2)).toFixed(1));
       return {
-        stmt: `Market capitalisation at the last month shown exceeds €${thAmt} million.`,
+        stmt: `Market capitalisation at the last month exceeds €${thAmt} million.`,
         val: mcapEnd > thAmt,
-        expl: `Market capitalisation at the last month ≈ €${mcapEnd.toFixed(1)} million.`,
+        expl: `Market capitalisation ≈ €${mcapEnd.toFixed(1)} million.`,
       };
     })(),
-    withPct(rng, 8, 28, (th) => ({
-      stmt: `Market capitalisation grew by more than ${th}% from the first to the last month shown.`,
+    withPct(rng, 8, 35, (th) => ({
+      stmt: `Market capitalisation rose by more than ${th}% over the period.`,
       val: ((mcapEnd - mcapStart) / mcapStart) * 100 > th,
-      expl: `Market capitalisation moved from €${mcapStart.toFixed(1)} million to €${mcapEnd.toFixed(1)} million.`,
+      expl: `€${mcapStart.toFixed(1)}m → €${mcapEnd.toFixed(1)}m.`,
     })),
     (() => {
-      const mult = 0.75 + rng() * 0.2;
-      const thAmt = Number((eps * mult).toFixed(2));
+      const thAmt = Number((eps * (0.7 + rng() * 0.25)).toFixed(2));
       return {
-        stmt: `Earnings per share, calculated by spreading the operating result evenly across the shares outstanding, exceeds €${thAmt} on the figures given.`,
+        stmt: `Earnings per share exceeds €${thAmt}.`,
         val: eps > thAmt,
         expl: `Earnings per share ≈ €${eps.toFixed(2)}.`,
       };
     })(),
-    withPct(rng, 10, 35, (th) => ({
-      stmt: `The highest closing price shown is more than ${th}% above the lowest closing price shown.`,
-      val: volatility * 100 > th,
-      expl: `Price ranged from €${minP} to €${maxP}, a spread of about ${pct(volatility).toFixed(1)}%.`,
+    withPct(rng, 12, 45, (th) => ({
+      stmt: `Highest closing price is more than ${th}% above the lowest.`,
+      val: ((maxP - minP) / minP) * 100 > th,
+      expl: `Range €${minP}–€${maxP}.`,
     })),
-    { stmt: `Shares outstanding remain unchanged at ${fmt(sh.shares)} across every month shown.`, val: true, expl: `Shares outstanding stay at ${fmt(sh.shares)} throughout.` },
-    {
-      stmt: `The closing share price rose in more than half of the month-to-month steps shown.`,
-      val: risingMonths > (prices.length - 1) / 2,
-      expl: `The price rose in ${risingMonths} of the ${prices.length - 1} month-to-month steps.`,
-    },
+    withPct(rng, 8, 40, (th) => ({
+      stmt: `Total shares traded over six months exceed ${th}% of shares outstanding.`,
+      val: volTurn * 100 > th,
+      expl: `Turnover ≈ ${pct(volTurn).toFixed(1)}% of shares outstanding.`,
+    })),
     (() => {
-      const mult = 0.85 + rng() * 0.1;
-      const thAmt = Number((avgP * mult).toFixed(1));
+      const th = intTh(rng, Math.round(maxVol * 0.6), Math.round(maxVol * 1.15));
       return {
-        stmt: `The average closing price across the months shown exceeds €${thAmt}.`,
-        val: avgP > thAmt,
-        expl: `Average closing price ≈ €${avgP.toFixed(2)}.`,
+        stmt: `Peak monthly share turnover exceeds ${fmt(th)} shares.`,
+        val: maxVol > th,
+        expl: `Peak monthly volume = ${fmt(maxVol)}.`,
       };
     })(),
+    {
+      stmt: `Share turnover peaked in the same month as the highest closing price.`,
+      val: prices.indexOf(maxP) === vols.indexOf(maxVol),
+      expl: `Peak price month vs peak volume month.`,
+    },
+    {
+      stmt: `Closing price rose in more than half of the month-to-month steps.`,
+      val: risingMonths > (prices.length - 1) / 2,
+      expl: `Rose in ${risingMonths} of ${prices.length - 1} steps.`,
+    },
+    { stmt: `Shares outstanding stay at ${fmt(sh.shares)} every month.`, val: true, expl: `Shares outstanding unchanged.` },
+    { stmt: `The last closing price is below the first.`, val: sh.end < sh.start, expl: `${sh.start} → ${sh.end}.` },
     (() => {
-      const th = intTh(rng, 190, 270);
+      const th = intTh(rng, 190, 300);
       return { stmt: `Operating result is below €${th} thousand.`, val: earnings < th, expl: `Operating result = ${earnings}.` };
     })(),
     (() => {
-      const { claimed, val } = exactAmt(rng, eps * 100, { deltaMin: 3, deltaMax: 10 });
+      const { claimed, val } = exactAmt(rng, Math.round(eps * 100), { deltaMin: 3, deltaMax: 12 });
       return { stmt: `Earnings per share is exactly €${(claimed / 100).toFixed(2)}.`, val, expl: `Earnings per share ≈ €${eps.toFixed(2)}.` };
     })(),
-    (() => {
-      const { claimed, val } = exactPct(rng, rise, { deltaMin: 3, deltaMax: 9 });
-      return { stmt: `The closing share price changed by exactly ${claimed.toFixed(1)}% from the first to the last month shown.`, val, expl: `Actual price change ≈ ${pct(rise).toFixed(1)}%.` };
-    })(),
     {
-      stmt: `A rising market capitalisation with unchanged shares outstanding must be driven by a rising share price rather than new share issues.`,
+      stmt: `With unchanged shares outstanding, rising market capitalisation means the share price rose.`,
       val: true,
-      expl: `Market capitalisation equals share price times shares outstanding, so with shares fixed, only price movements explain the change.`,
+      expl: `Market capitalisation = price × shares.`,
+    },
+    {
+      stmt: `Lowest monthly share turnover is under half of the peak month.`,
+      val: minVol < maxVol / 2,
+      expl: `Low ${fmt(minVol)} vs peak ${fmt(maxVol)}.`,
     },
   ];
 
@@ -1165,11 +1135,19 @@ function depSmall(slot, rng, used) {
 /* ---------------------------------------------------------------------- */
 
 function buildersFor(sub, chartHeavy) {
-  if (sub === "6.1") return chartHeavy ? [bs1y, bs1y, bs2y] : [bs2y, bs2y, bs1y];
-  if (sub === "6.2") return chartHeavy ? [dep, share, pnl2y] : [cf2y, pnl2y, dep, cf2y];
-  if (sub === "6.3") return chartHeavy ? [share, combined, pnl2y] : [combined, pnl2y, bs2y, combined];
-  if (sub === "6.4") return chartHeavy ? [depSmall, bsSmall] : [bsSmall, depSmall, bsSmall];
-  return chartHeavy ? [share, share, turnover] : [turnover, bs1y, combined, turnover];
+  // chartHeavy ≈ last 40% of table slots → listed share charts dominate
+  if (chartHeavy) {
+    if (sub === "6.1") return [share, share, bs1y];
+    if (sub === "6.2") return [share, share, dep];
+    if (sub === "6.3") return [share, share, combined];
+    if (sub === "6.4") return [share, depSmall, bsSmall];
+    return [share, share, share, turnover];
+  }
+  if (sub === "6.1") return [bs2y, bs2y, bs1y];
+  if (sub === "6.2") return [cf2y, pnl2y, dep, cf2y];
+  if (sub === "6.3") return [combined, pnl2y, bs2y];
+  if (sub === "6.4") return [bsSmall, depSmall];
+  return [turnover, bs1y, combined, turnover];
 }
 
 function rescue(slot, rng, used) {
@@ -1185,11 +1163,16 @@ function rescue(slot, rng, used) {
 }
 
 function generateCase(slot, used, tableIndex, tableCount) {
-  const chartHeavy = tableIndex / Math.max(1, tableCount) >= 0.6;
-  const builders = [...buildersFor(slot.subsection, chartHeavy), rescue];
+  // ~40% of table slots → listed share / market charts
+  const marketBand = tableIndex / Math.max(1, tableCount) >= 0.6;
+  const builders = marketBand
+    ? [share, share, share]
+    : [...buildersFor(slot.subsection, false), rescue];
   for (let attempt = 0; attempt < 400; attempt++) {
     const rng = mulberry32(hashSeed(`${slot.case_id}:${attempt}`));
-    const c = builders[(tableIndex + attempt) % builders.length](slot, rng, used);
+    let builder = builders[(tableIndex + attempt) % builders.length];
+    if (marketBand && attempt >= 250) builder = rescue;
+    const c = builder(slot, rng, used);
     if (c) return c;
   }
   throw new Error(`failed ${slot.case_id}`);

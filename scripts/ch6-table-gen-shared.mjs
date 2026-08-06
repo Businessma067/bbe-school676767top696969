@@ -296,16 +296,32 @@ export function cfTable2y({ y1, y2 }) {
 
 export function genShareSeries(rng) {
   const months = ["January", "February", "March", "April", "May", "June"];
-  const shares = ri(rng, 400, 800) * 1000;
-  let price = ri(rng, 16, 24);
+  const shares = ri(rng, 400, 900) * 1000;
+  let price = 12 + rng() * 20;
+  const drift = (rng() - 0.35) * 0.05;
   const rows = [];
   const lineRows = [];
+  const volRows = [];
+  let totalVol = 0;
   for (const m of months) {
-    price = Math.max(14, Math.round(price * (1 + (rng() - 0.45) * 0.08)));
-    rows.push([m, price, shares]);
-    lineRows.push(`${m} | Price=${price}`);
+    price = Math.max(8, price * (1 + drift + (rng() - 0.5) * 0.24));
+    const p = Math.max(8, Math.round(price));
+    const vol = ri(rng, 12, 75) * 1000;
+    totalVol += vol;
+    rows.push([m, p, shares, vol]);
+    lineRows.push(`${m} | Price=${p}`);
+    volRows.push(`${m} | Volume=${vol}`);
   }
-  return { months, shares, rows, lineRows, start: rows[0][1], end: rows[rows.length - 1][1] };
+  return {
+    months,
+    shares,
+    rows,
+    lineRows,
+    volRows,
+    totalVol,
+    start: rows[0][1],
+    end: rows[rows.length - 1][1],
+  };
 }
 
 export function mkExpl(keys, texts) {

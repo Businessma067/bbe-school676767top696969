@@ -1412,17 +1412,17 @@
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.084",
-    "title": "Liquidity From the Balance Sheet 84",
+    "title": "Share Price and Market Capitalisation 84",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=434\nCurrent liabilities=214\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 396 |\n| Machinery | 221 |\n| Office equipment | 34 |\n| Patents, trademarks and licences | 56 |\n| Inventory | 237 |\n| Trade receivables | 155 |\n| Cash and cash equivalents | 42 |\n| Total assets | **1141** |\n| **EQUITY** | |\n| Share capital | 120 |\n| Retained earnings | 380 |\n| Total equity | **500** |\n| **LIABILITIES** | |\n| Long-term bank loan | 387 |\n| Bonds payable | 40 |\n| Trade payables | 134 |\n| Bank overdraft | 80 |\n| Total liabilities | **641** |\n| Total equity and liabilities | **1141** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=25\nMarch | Price=23\nApril | Price=24\nMay | Price=23\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=62000\nFebruary | Volume=21000\nMarch | Volume=73000\nApril | Volume=12000\nMay | Volume=65000\nJune | Volume=38000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 24 | 641,000 | 62,000 |\n| February | 25 | 641,000 | 21,000 |\n| March | 23 | 641,000 | 73,000 |\n| April | 24 | 641,000 | 12,000 |\n| May | 23 | 641,000 | 65,000 |\n| June | 20 | 641,000 | 38,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 279 |\n| Shares outstanding | 641,000 |\n| Total shares traded (six months) | 271,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.06.",
-      "Working capital of €220 thousand is positive on this balance sheet.",
-      "Inventory make up more than 36% of current assets.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 5.1%.",
-      "Inventory of €237 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+      "Market capitalisation at the last month exceeds €10.6 million.",
+      "Earnings per share exceeds €0.33.",
+      "Highest closing price is more than 17.1% above the lowest.",
+      "Total shares traded over six months exceed 25.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 45,166 shares."
     ],
     "answer_key": [
       true,
@@ -1432,27 +1432,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.03.",
-      "TRUE — Working capital = 220.",
-      "TRUE — Inventory are about 54.6% of current assets.",
-      "TRUE — Long-term financing covers non-current assets by about 31.1%.",
-      "TRUE — Inventory is always a current asset."
+      "TRUE — Market capitalisation ≈ €12.8 million.",
+      "TRUE — Earnings per share ≈ €0.44.",
+      "TRUE — Range €20–€25.",
+      "TRUE — Turnover ≈ 42.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 73,000."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.085",
-    "title": "Asset Composition Chart 85",
+    "title": "Listed Company Performance Charts 85",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=420\nMachinery=261\nPatents, trademarks and licences=47\nInventory=84\nTrade receivables=96\nCash and cash equivalents=39\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 420 |\n| Machinery | 261 |\n| Office equipment | 62 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 84 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 39 |\n| Total assets | **1009** |\n| **EQUITY** | |\n| Share capital | 135 |\n| Retained earnings | 149 |\n| Total equity | **284** |\n| **LIABILITIES** | |\n| Long-term bank loan | 399 |\n| Bonds payable | 63 |\n| Trade payables | 195 |\n| Bank overdraft | 68 |\n| Total liabilities | **725** |\n| Total equity and liabilities | **1009** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=26\nApril | Price=28\nMay | Price=30\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=13000\nFebruary | Volume=18000\nMarch | Volume=65000\nApril | Volume=41000\nMay | Volume=53000\nJune | Volume=60000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 29 | 692,000 | 13,000 |\n| February | 28 | 692,000 | 18,000 |\n| March | 26 | 692,000 | 65,000 |\n| April | 28 | 692,000 | 41,000 |\n| May | 30 | 692,000 | 53,000 |\n| June | 28 | 692,000 | 60,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 234 |\n| Shares outstanding | 692,000 |\n| Total shares traded (six months) | 250,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is below 1.13.",
-      "The equity ratio is below 35.1%.",
-      "Trade receivables make up less than 49.3% of current assets.",
-      "Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
-      "Working capital equals exactly €-44 thousand."
+      "Market capitalisation at the last month exceeds €18.4 million.",
+      "Earnings per share exceeds €0.28.",
+      "Total shares traded over six months exceed 17.9% of shares outstanding.",
+      "Peak monthly share turnover exceeds 50,402 shares.",
+      "Shares outstanding stay at 692,000 every month."
     ],
     "answer_key": [
       true,
@@ -1462,27 +1462,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 0.83.",
-      "TRUE — Equity ratio ≈ 28.1%.",
-      "TRUE — Trade receivables are about 43.8% of current assets.",
-      "TRUE — Inventory is always a current asset.",
-      "TRUE — Working capital = -44."
+      "TRUE — Market capitalisation ≈ €19.4 million.",
+      "TRUE — Earnings per share ≈ €0.34.",
+      "TRUE — Turnover ≈ 36.1% of shares outstanding.",
+      "TRUE — Peak monthly volume = 65,000.",
+      "TRUE — Shares outstanding unchanged."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.087",
-    "title": "Liquidity From the Balance Sheet 87",
+    "title": "Share Price and Market Capitalisation 87",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=283\nMachinery=167\nPatents, trademarks and licences=79\nInventory=121\nTrade receivables=154\nCash and cash equivalents=77\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 283 |\n| Machinery | 167 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 121 |\n| Trade receivables | 154 |\n| Cash and cash equivalents | 77 |\n| Total assets | **928** |\n| **EQUITY** | |\n| Share capital | 280 |\n| Retained earnings | 106 |\n| Total equity | **386** |\n| **LIABILITIES** | |\n| Long-term bank loan | 257 |\n| Bonds payable | 76 |\n| Trade payables | 179 |\n| Bank overdraft | 30 |\n| Total liabilities | **542** |\n| Total equity and liabilities | **928** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=20\nMarch | Price=22\nApril | Price=21\nMay | Price=22\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=25000\nFebruary | Volume=45000\nMarch | Volume=51000\nApril | Volume=57000\nMay | Volume=17000\nJune | Volume=33000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 408,000 | 25,000 |\n| February | 20 | 408,000 | 45,000 |\n| March | 22 | 408,000 | 51,000 |\n| April | 21 | 408,000 | 57,000 |\n| May | 22 | 408,000 | 17,000 |\n| June | 21 | 408,000 | 33,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 252 |\n| Shares outstanding | 408,000 |\n| Total shares traded (six months) | 228,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.42.",
-      "Working capital of €143 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.01 times over.",
-      "Trade receivables make up less than 53.6% of current assets.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 6.4%."
+      "Market capitalisation at the last month exceeds €7.2 million.",
+      "Earnings per share exceeds €0.53.",
+      "Total shares traded over six months exceed 23.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 36,577 shares.",
+      "Closing price rose in more than half of the month-to-month steps."
     ],
     "answer_key": [
       true,
@@ -1492,27 +1492,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.68.",
-      "TRUE — Working capital = 143.",
-      "TRUE — Acid-test ratio ≈ 1.11.",
-      "TRUE — Trade receivables are about 43.8% of current assets.",
-      "TRUE — Long-term financing covers non-current assets by about 24.8%."
+      "TRUE — Market capitalisation ≈ €8.6 million.",
+      "TRUE — Earnings per share ≈ €0.62.",
+      "TRUE — Turnover ≈ 55.9% of shares outstanding.",
+      "TRUE — Peak monthly volume = 57,000.",
+      "TRUE — Rose in 3 of 5 steps."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.089",
-    "title": "Two-Year Balance Sheet Review 89",
+    "title": "Earnings Per Share From Reported Figures 89",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=494 | Total assets=1116\nYear 2 | Equity=563 | Total assets=1204\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 356 | 375 |\n| Machinery | 155 | 165 |\n| Office equipment | 71 | 75 |\n| Patents, trademarks and licences | 58 | 58 |\n| Inventory | 263 | 291 |\n| Trade receivables | 135 | 155 |\n| Cash and cash equivalents | 78 | 85 |\n| Total assets | **1116** | **1204** |\n| **EQUITY** | | |\n| Share capital | 182 | 182 |\n| Retained earnings | 312 | 381 |\n| Total equity | **494** | **563** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 366 | 371 |\n| Bonds payable | 41 | 43 |\n| Trade payables | 150 | 152 |\n| Bank overdraft | 65 | 75 |\n| Total liabilities | **622** | **641** |\n| Total equity and liabilities | **1116** | **1204** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=18\nMarch | Price=18\nApril | Price=19\nMay | Price=19\nJune | Price=18\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=70000\nFebruary | Volume=46000\nMarch | Volume=57000\nApril | Volume=13000\nMay | Volume=51000\nJune | Volume=40000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 17 | 559,000 | 70,000 |\n| February | 18 | 559,000 | 46,000 |\n| March | 18 | 559,000 | 57,000 |\n| April | 19 | 559,000 | 13,000 |\n| May | 19 | 559,000 | 51,000 |\n| June | 18 | 559,000 | 40,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 249 |\n| Shares outstanding | 559,000 |\n| Total shares traded (six months) | 277,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Total assets grew by more than 11.7% between Year 1 and Year 2.",
-      "Inventory grew by more than 26.9% between Year 1 and Year 2.",
-      "Non-current liabilities amount to less than 100.4% of total equity in Year 2.",
-      "Trade payables grew by more than 23% between Year 1 and Year 2.",
-      "Cash and cash equivalents fell by more than 28.5% between Year 1 and Year 2."
+      "The closing share price rose by more than 19.6% from first to last month.",
+      "Market capitalisation rose by more than 34.2% over the period.",
+      "Market capitalisation at the last month exceeds €9 million.",
+      "Highest closing price is more than 15.2% above the lowest.",
+      "Share turnover peaked in the same month as the highest closing price."
     ],
     "answer_key": [
       false,
@@ -1522,27 +1522,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Total assets changed by about 7.9% between the two years.",
-      "FALSE — Inventory changed by about 10.6% between the two years.",
-      "TRUE — Non-current liabilities are about 73.5% of equity in Year 2.",
-      "FALSE — Trade payables changed by about 1.3% between the two years.",
-      "FALSE — Cash and cash equivalents changed by about 9.0% between the two years."
+      "FALSE — Price change ≈ 5.9%.",
+      "FALSE — €9.5m → €10.1m.",
+      "TRUE — Market capitalisation ≈ €10.1 million.",
+      "FALSE — Range €17–€19.",
+      "FALSE — Peak price month vs peak volume month."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.090",
-    "title": "Liquidity From the Balance Sheet 90",
+    "title": "Share Price and Market Capitalisation 90",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=232\nCurrent liabilities=276\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 433 |\n| Machinery | 275 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 20 |\n| Inventory | 101 |\n| Trade receivables | 66 |\n| Cash and cash equivalents | 65 |\n| Total assets | **1007** |\n| **EQUITY** | |\n| Share capital | 135 |\n| Retained earnings | 253 |\n| Total equity | **388** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 57 |\n| Trade payables | 195 |\n| Bank overdraft | 81 |\n| Total liabilities | **619** |\n| Total equity and liabilities | **1007** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=25\nMarch | Price=23\nApril | Price=22\nMay | Price=23\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=18000\nFebruary | Volume=37000\nMarch | Volume=33000\nApril | Volume=34000\nMay | Volume=66000\nJune | Volume=15000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 28 | 718,000 | 18,000 |\n| February | 25 | 718,000 | 37,000 |\n| March | 23 | 718,000 | 33,000 |\n| April | 22 | 718,000 | 34,000 |\n| May | 23 | 718,000 | 66,000 |\n| June | 25 | 718,000 | 15,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 193 |\n| Shares outstanding | 718,000 |\n| Total shares traded (six months) | 203,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The debt ratio exceeds 53.7%.",
-      "Inventory make up more than 32.4% of current assets.",
-      "Trade receivables make up less than 45.5% of current assets.",
-      "Cash and cash equivalents make up more than 15.3% of current assets.",
-      "Inventory of €101 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+      "Market capitalisation at the last month exceeds €14.4 million.",
+      "Earnings per share exceeds €0.19.",
+      "Total shares traded over six months exceed 12.6% of shares outstanding.",
+      "Peak monthly share turnover exceeds 40,148 shares.",
+      "Shares outstanding stay at 718,000 every month."
     ],
     "answer_key": [
       true,
@@ -1552,27 +1552,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Debt ratio ≈ 61.5%.",
-      "TRUE — Inventory are about 43.5% of current assets.",
-      "TRUE — Trade receivables are about 28.4% of current assets.",
-      "TRUE — Cash and cash equivalents are about 28.0% of current assets.",
-      "TRUE — Inventory is always a current asset."
+      "TRUE — Market capitalisation ≈ €17.9 million.",
+      "TRUE — Earnings per share ≈ €0.27.",
+      "TRUE — Turnover ≈ 28.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 66,000.",
+      "TRUE — Shares outstanding unchanged."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.091",
-    "title": "Asset Composition Chart 91",
+    "title": "Listed Company Performance Charts 91",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=328\nMachinery=150\nPatents, trademarks and licences=50\nInventory=105\nTrade receivables=89\nCash and cash equivalents=62\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 328 |\n| Machinery | 150 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 105 |\n| Trade receivables | 89 |\n| Cash and cash equivalents | 62 |\n| Total assets | **831** |\n| **EQUITY** | |\n| Share capital | 203 |\n| Retained earnings | -17 |\n| Total equity | **186** |\n| **LIABILITIES** | |\n| Long-term bank loan | 284 |\n| Bonds payable | 72 |\n| Trade payables | 238 |\n| Bank overdraft | 51 |\n| Total liabilities | **645** |\n| Total equity and liabilities | **831** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=15\nFebruary | Price=14\nMarch | Price=14\nApril | Price=14\nMay | Price=16\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=20000\nFebruary | Volume=34000\nMarch | Volume=39000\nApril | Volume=52000\nMay | Volume=37000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 15 | 501,000 | 20,000 |\n| February | 14 | 501,000 | 34,000 |\n| March | 14 | 501,000 | 39,000 |\n| April | 14 | 501,000 | 52,000 |\n| May | 16 | 501,000 | 37,000 |\n| June | 17 | 501,000 | 74,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 231 |\n| Shares outstanding | 501,000 |\n| Total shares traded (six months) | 256,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is below 1.28.",
-      "The current ratio exceeds 1.79.",
-      "Working capital of €33 thousand is positive on this balance sheet.",
-      "The equity ratio is below 30.7%.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.89 times over."
+      "Market capitalisation at the last month exceeds €6.7 million.",
+      "The closing share price rose by more than 22.1% from first to last month.",
+      "Market capitalisation rose by more than 29.7% over the period.",
+      "Earnings per share exceeds €0.38.",
+      "Highest closing price is more than 39.9% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1582,27 +1582,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 0.89.",
-      "FALSE — Current ratio ≈ 0.89.",
-      "FALSE — Working capital = -33.",
-      "TRUE — Equity ratio ≈ 22.4%.",
-      "FALSE — Acid-test ratio ≈ 0.52."
+      "TRUE — Market capitalisation ≈ €8.5 million.",
+      "FALSE — Price change ≈ 13.3%.",
+      "FALSE — €7.5m → €8.5m.",
+      "TRUE — Earnings per share ≈ €0.46.",
+      "FALSE — Range €14–€17."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.092",
-    "title": "Balance Sheet Structure Review 92",
+    "title": "Earnings Per Share From Reported Figures 92",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=426\nMachinery=244\nPatents, trademarks and licences=33\nInventory=110\nTrade receivables=122\nCash and cash equivalents=92\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 426 |\n| Machinery | 244 |\n| Office equipment | 67 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 110 |\n| Trade receivables | 122 |\n| Cash and cash equivalents | 92 |\n| Total assets | **1094** |\n| **EQUITY** | |\n| Share capital | 111 |\n| Retained earnings | 294 |\n| Total equity | **405** |\n| **LIABILITIES** | |\n| Long-term bank loan | 421 |\n| Bonds payable | 81 |\n| Trade payables | 102 |\n| Bank overdraft | 85 |\n| Total liabilities | **689** |\n| Total equity and liabilities | **1094** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=26\nFebruary | Price=26\nMarch | Price=24\nApril | Price=27\nMay | Price=26\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=21000\nFebruary | Volume=56000\nMarch | Volume=38000\nApril | Volume=64000\nMay | Volume=70000\nJune | Volume=58000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 26 | 703,000 | 21,000 |\n| February | 26 | 703,000 | 56,000 |\n| March | 24 | 703,000 | 38,000 |\n| April | 27 | 703,000 | 64,000 |\n| May | 26 | 703,000 | 70,000 |\n| June | 25 | 703,000 | 58,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 305 |\n| Shares outstanding | 703,000 |\n| Total shares traded (six months) | 307,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.31 times over.",
-      "The current ratio exceeds 1.28.",
-      "Working capital of €137 thousand is positive on this balance sheet.",
-      "The debt ratio exceeds 48.9%.",
-      "Buildings make up more than 38.5% of total assets."
+      "The closing share price rose by more than 11.5% from first to last month.",
+      "Market capitalisation at the last month exceeds €13.6 million.",
+      "Earnings per share exceeds €0.32.",
+      "Total shares traded over six months exceed 16% of shares outstanding.",
+      "Peak monthly share turnover exceeds 62,216 shares."
     ],
     "answer_key": [
       false,
@@ -1612,27 +1612,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Acid-test ratio ≈ 1.14.",
-      "TRUE — Current ratio ≈ 1.73.",
-      "TRUE — Working capital = 137.",
-      "TRUE — Debt ratio ≈ 63.0%.",
-      "TRUE — Buildings are about 38.9% of total assets."
+      "FALSE — Price change ≈ -3.8%.",
+      "TRUE — Market capitalisation ≈ €17.6 million.",
+      "TRUE — Earnings per share ≈ €0.43.",
+      "TRUE — Turnover ≈ 43.7% of shares outstanding.",
+      "TRUE — Peak monthly volume = 70,000."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.095",
-    "title": "Two-Year Balance Sheet Review 95",
+    "title": "Earnings Per Share From Reported Figures 95",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=532 | Total assets=1173\nYear 2 | Equity=562 | Total assets=1230\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 398 | 411 |\n| Machinery | 269 | 287 |\n| Office equipment | 57 | 58 |\n| Patents, trademarks and licences | 90 | 90 |\n| Inventory | 160 | 177 |\n| Trade receivables | 109 | 115 |\n| Cash and cash equivalents | 90 | 92 |\n| Total assets | **1173** | **1230** |\n| **EQUITY** | | |\n| Share capital | 130 | 130 |\n| Retained earnings | 402 | 432 |\n| Total equity | **532** | **562** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 306 | 325 |\n| Bonds payable | 57 | 60 |\n| Trade payables | 213 | 220 |\n| Bank overdraft | 65 | 63 |\n| Total liabilities | **641** | **668** |\n| Total equity and liabilities | **1173** | **1230** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=33\nMarch | Price=31\nApril | Price=31\nMay | Price=33\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=54000\nMarch | Volume=49000\nApril | Volume=34000\nMay | Volume=51000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 34 | 646,000 | 37,000 |\n| February | 33 | 646,000 | 54,000 |\n| March | 31 | 646,000 | 49,000 |\n| April | 31 | 646,000 | 34,000 |\n| May | 33 | 646,000 | 51,000 |\n| June | 30 | 646,000 | 36,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 265 |\n| Shares outstanding | 646,000 |\n| Total shares traded (six months) | 261,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Non-current liabilities amount to less than 100% of total equity in Year 2 (see the extract prepared for case 6.1.095).",
-      "Current liabilities are covered by current assets less than 1.39 times over in Year 2 (see the extract prepared for case 6.1.095).",
-      "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2 (see the extract prepared for case 6.1.095).",
-      "Total equity grew by more than 28.1% between Year 1 and Year 2 (see the extract prepared for case 6.1.095).",
-      "Trade payables of €220 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year (see the extract prepared for case 6.1.095)."
+      "Market capitalisation at the last month exceeds €17.5 million.",
+      "Total shares traded over six months exceed 27.6% of shares outstanding.",
+      "Peak monthly share turnover exceeds 47,464 shares.",
+      "The closing share price rose by more than 10.2% from first to last month.",
+      "Shares outstanding stay at 646,000 every month."
     ],
     "answer_key": [
       true,
@@ -1642,27 +1642,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Non-current liabilities are about 68.5% of equity in Year 2.",
-      "TRUE — Current ratio in Year 2 is about 1.36.",
-      "TRUE — Retained earnings growth ≈ 7.5% versus total equity growth ≈ 5.6%.",
-      "FALSE — Total equity changed by about 5.6% between the two years.",
-      "TRUE — Trade payables are a current liability regardless of the amount."
+      "TRUE — Market capitalisation ≈ €19.4 million.",
+      "TRUE — Turnover ≈ 40.4% of shares outstanding.",
+      "TRUE — Peak monthly volume = 54,000.",
+      "FALSE — Price change ≈ -11.8%.",
+      "TRUE — Shares outstanding unchanged."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.096",
-    "title": "Liquidity From the Balance Sheet 96",
+    "title": "Share Price and Market Capitalisation 96",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=354\nCurrent liabilities=203\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 375 |\n| Machinery | 231 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 82 |\n| Inventory | 185 |\n| Trade receivables | 112 |\n| Cash and cash equivalents | 57 |\n| Total assets | **1099** |\n| **EQUITY** | |\n| Share capital | 249 |\n| Retained earnings | 183 |\n| Total equity | **432** |\n| **LIABILITIES** | |\n| Long-term bank loan | 376 |\n| Bonds payable | 88 |\n| Trade payables | 121 |\n| Bank overdraft | 82 |\n| Total liabilities | **667** |\n| Total equity and liabilities | **1099** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=28\nMarch | Price=29\nApril | Price=31\nMay | Price=30\nJune | Price=32\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=31000\nMarch | Volume=46000\nApril | Volume=73000\nMay | Volume=67000\nJune | Volume=27000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 28 | 598,000 | 45,000 |\n| February | 28 | 598,000 | 31,000 |\n| March | 29 | 598,000 | 46,000 |\n| April | 31 | 598,000 | 73,000 |\n| May | 30 | 598,000 | 67,000 |\n| June | 32 | 598,000 | 27,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 270 |\n| Shares outstanding | 598,000 |\n| Total shares traded (six months) | 289,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.12 times over.",
-      "Buildings make up more than 42.6% of total assets.",
-      "Working capital of €151 thousand is positive on this balance sheet.",
-      "Inventory make up more than 55.9% of current assets.",
-      "Cash and cash equivalents make up more than 29.1% of current assets."
+      "The closing share price rose by more than 26.1% from first to last month.",
+      "Market capitalisation rose by more than 17% over the period.",
+      "Market capitalisation at the last month exceeds €16.1 million.",
+      "Highest closing price is more than 44% above the lowest.",
+      "The last closing price is below the first."
     ],
     "answer_key": [
       false,
@@ -1672,27 +1672,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Acid-test ratio ≈ 0.83.",
-      "FALSE — Buildings are about 34.1% of total assets.",
-      "TRUE — Working capital = 151.",
-      "FALSE — Inventory are about 52.3% of current assets.",
-      "FALSE — Cash and cash equivalents are about 16.1% of current assets."
+      "FALSE — Price change ≈ 14.3%.",
+      "FALSE — €16.7m → €19.1m.",
+      "TRUE — Market capitalisation ≈ €19.1 million.",
+      "FALSE — Range €28–€32.",
+      "FALSE — 28 → 32."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.097",
-    "title": "Asset Composition Chart 97",
+    "title": "Listed Company Performance Charts 97",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=377\nMachinery=178\nPatents, trademarks and licences=50\nInventory=186\nTrade receivables=82\nCash and cash equivalents=70\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 377 |\n| Machinery | 178 |\n| Office equipment | 44 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 186 |\n| Trade receivables | 82 |\n| Cash and cash equivalents | 70 |\n| Total assets | **987** |\n| **EQUITY** | |\n| Share capital | 300 |\n| Retained earnings | 57 |\n| Total equity | **357** |\n| **LIABILITIES** | |\n| Long-term bank loan | 383 |\n| Bonds payable | 49 |\n| Trade payables | 157 |\n| Bank overdraft | 41 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **987** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=17\nMarch | Price=19\nApril | Price=20\nMay | Price=20\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=46000\nFebruary | Volume=40000\nMarch | Volume=22000\nApril | Volume=24000\nMay | Volume=27000\nJune | Volume=27000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 602,000 | 46,000 |\n| February | 17 | 602,000 | 40,000 |\n| March | 19 | 602,000 | 22,000 |\n| April | 20 | 602,000 | 24,000 |\n| May | 20 | 602,000 | 27,000 |\n| June | 22 | 602,000 | 27,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 225 |\n| Shares outstanding | 602,000 |\n| Total shares traded (six months) | 186,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.77.",
-      "The equity ratio is below 20.6%.",
-      "Cash and cash equivalents make up more than 32.3% of current assets.",
-      "Buildings make up more than 37% of total assets.",
-      "The long-term bank loan of €383 thousand should be classified within equity rather than liabilities."
+      "Highest closing price is more than 35.6% above the lowest (see the extract prepared for case 6.1.097).",
+      "Total shares traded over six months exceed 36.2% of shares outstanding (see the extract prepared for case 6.1.097).",
+      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.097).",
+      "The closing share price rose by more than 13.1% from first to last month (see the extract prepared for case 6.1.097).",
+      "The last closing price is below the first (see the extract prepared for case 6.1.097)."
     ],
     "answer_key": [
       false,
@@ -1702,27 +1702,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.71.",
-      "FALSE — Equity ratio ≈ 36.2%.",
-      "FALSE — Cash and cash equivalents are about 20.7% of current assets.",
-      "TRUE — Buildings are about 38.2% of total assets.",
-      "FALSE — A bank loan is a liability, not equity, regardless of its size."
+      "FALSE — Range €17–€22.",
+      "FALSE — Turnover ≈ 30.9% of shares outstanding.",
+      "FALSE — Peak price month vs peak volume month.",
+      "TRUE — Price change ≈ 15.8%.",
+      "FALSE — 19 → 22."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.100",
-    "title": "Asset Composition Chart 100",
+    "title": "Listed Company Performance Charts 100",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=311\nMachinery=120\nPatents, trademarks and licences=29\nInventory=193\nTrade receivables=132\nCash and cash equivalents=47\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 311 |\n| Machinery | 120 |\n| Office equipment | 34 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 193 |\n| Trade receivables | 132 |\n| Cash and cash equivalents | 47 |\n| Total assets | **866** |\n| **EQUITY** | |\n| Share capital | 242 |\n| Retained earnings | -133 |\n| Total equity | **109** |\n| **LIABILITIES** | |\n| Long-term bank loan | 379 |\n| Bonds payable | 64 |\n| Trade payables | 239 |\n| Bank overdraft | 75 |\n| Total liabilities | **757** |\n| Total equity and liabilities | **866** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=11\nFebruary | Price=11\nMarch | Price=11\nApril | Price=12\nMay | Price=13\nJune | Price=14\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=48000\nFebruary | Volume=24000\nMarch | Volume=43000\nApril | Volume=42000\nMay | Volume=61000\nJune | Volume=42000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 11 | 464,000 | 48,000 |\n| February | 11 | 464,000 | 24,000 |\n| March | 11 | 464,000 | 43,000 |\n| April | 12 | 464,000 | 42,000 |\n| May | 13 | 464,000 | 61,000 |\n| June | 14 | 464,000 | 42,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 184 |\n| Shares outstanding | 464,000 |\n| Total shares traded (six months) | 260,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Working capital of €58 thousand is positive on this balance sheet.",
-      "The equity ratio is below 32.5%.",
-      "The debt ratio exceeds 50.1%.",
-      "Inventory make up more than 33.2% of current assets.",
-      "Trade receivables make up less than 43.9% of current assets."
+      "The closing share price rose by more than 23.8% from first to last month.",
+      "Market capitalisation at the last month exceeds €5.1 million.",
+      "Market capitalisation rose by more than 17.5% over the period.",
+      "Earnings per share exceeds €0.29.",
+      "Total shares traded over six months exceed 39.2% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1732,27 +1732,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Working capital = 58.",
-      "TRUE — Equity ratio ≈ 12.6%.",
-      "TRUE — Debt ratio ≈ 87.4%.",
-      "TRUE — Inventory are about 51.9% of current assets.",
-      "TRUE — Trade receivables are about 35.5% of current assets."
+      "TRUE — Price change ≈ 27.3%.",
+      "TRUE — Market capitalisation ≈ €6.5 million.",
+      "TRUE — €5.1m → €6.5m.",
+      "TRUE — Earnings per share ≈ €0.40.",
+      "TRUE — Turnover ≈ 56.0% of shares outstanding."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.103",
-    "title": "Gearing From Comparative Figures 103",
+    "title": "Listed Company Performance Charts 103",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=605 | Total assets=1133\nYear 2 | Equity=633 | Total assets=1233\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 515 | 574 |\n| Machinery | 190 | 199 |\n| Office equipment | 44 | 51 |\n| Patents, trademarks and licences | 60 | 60 |\n| Inventory | 93 | 102 |\n| Trade receivables | 133 | 148 |\n| Cash and cash equivalents | 98 | 99 |\n| Total assets | **1133** | **1233** |\n| **EQUITY** | | |\n| Share capital | 273 | 273 |\n| Retained earnings | 332 | 360 |\n| Total equity | **605** | **633** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 298 | 342 |\n| Bonds payable | 77 | 83 |\n| Trade payables | 109 | 125 |\n| Bank overdraft | 44 | 50 |\n| Total liabilities | **528** | **600** |\n| Total equity and liabilities | **1133** | **1233** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=21\nMarch | Price=23\nApril | Price=22\nMay | Price=21\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=16000\nFebruary | Volume=60000\nMarch | Volume=24000\nApril | Volume=59000\nMay | Volume=30000\nJune | Volume=45000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 21 | 889,000 | 16,000 |\n| February | 21 | 889,000 | 60,000 |\n| March | 23 | 889,000 | 24,000 |\n| April | 22 | 889,000 | 59,000 |\n| May | 21 | 889,000 | 30,000 |\n| June | 22 | 889,000 | 45,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 190 |\n| Shares outstanding | 889,000 |\n| Total shares traded (six months) | 234,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Total equity grew by more than 21.3% between Year 1 and Year 2.",
-      "Total assets grew by more than 8.2% between Year 1 and Year 2.",
-      "Trade payables grew by more than 13.2% between Year 1 and Year 2.",
-      "Non-current liabilities amount to less than 114.1% of total equity in Year 2.",
-      "Inventory grew by more than 30.6% between Year 1 and Year 2."
+      "The closing share price rose by more than 33.5% from first to last month.",
+      "Market capitalisation at the last month exceeds €16.3 million.",
+      "Earnings per share exceeds €0.15.",
+      "Peak monthly share turnover exceeds 41,335 shares.",
+      "Market capitalisation rose by more than 21.5% over the period."
     ],
     "answer_key": [
       false,
@@ -1762,27 +1762,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Total equity changed by about 4.6% between the two years.",
-      "TRUE — Total assets changed by about 8.8% between the two years.",
-      "TRUE — Trade payables changed by about 14.7% between the two years.",
-      "TRUE — Non-current liabilities are about 67.1% of equity in Year 2.",
-      "FALSE — Inventory changed by about 9.7% between the two years."
+      "FALSE — Price change ≈ 4.8%.",
+      "TRUE — Market capitalisation ≈ €19.6 million.",
+      "TRUE — Earnings per share ≈ €0.21.",
+      "TRUE — Peak monthly volume = 60,000.",
+      "FALSE — €18.7m → €19.6m."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.104",
-    "title": "Balance Sheet Structure Review 104",
+    "title": "Earnings Per Share From Reported Figures 104",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=310\nCurrent liabilities=205\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 390 |\n| Machinery | 175 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 59 |\n| Inventory | 182 |\n| Trade receivables | 66 |\n| Cash and cash equivalents | 62 |\n| Total assets | **1007** |\n| **EQUITY** | |\n| Share capital | 104 |\n| Retained earnings | 445 |\n| Total equity | **549** |\n| **LIABILITIES** | |\n| Long-term bank loan | 195 |\n| Bonds payable | 58 |\n| Trade payables | 131 |\n| Bank overdraft | 74 |\n| Total liabilities | **458** |\n| Total equity and liabilities | **1007** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=16\nApril | Price=15\nMay | Price=15\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=44000\nFebruary | Volume=35000\nMarch | Volume=68000\nApril | Volume=34000\nMay | Volume=60000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 629,000 | 44,000 |\n| February | 18 | 629,000 | 35,000 |\n| March | 16 | 629,000 | 68,000 |\n| April | 15 | 629,000 | 34,000 |\n| May | 15 | 629,000 | 60,000 |\n| June | 17 | 629,000 | 47,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 217 |\n| Shares outstanding | 629,000 |\n| Total shares traded (six months) | 288,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.89.",
-      "Working capital of €105 thousand is positive on this balance sheet.",
-      "Inventory make up more than 40.9% of current assets.",
-      "Trade receivables make up less than 33.2% of current assets.",
-      "Cash and cash equivalents make up more than 16.4% of current assets."
+      "The closing share price rose by more than 16.7% from first to last month.",
+      "Market capitalisation at the last month exceeds €8.8 million.",
+      "Earnings per share exceeds €0.27.",
+      "Highest closing price is more than 16.2% above the lowest.",
+      "Total shares traded over six months exceed 14.2% of shares outstanding."
     ],
     "answer_key": [
       false,
@@ -1792,27 +1792,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.51.",
-      "TRUE — Working capital = 105.",
-      "TRUE — Inventory are about 58.7% of current assets.",
-      "TRUE — Trade receivables are about 21.3% of current assets.",
-      "TRUE — Cash and cash equivalents are about 20.0% of current assets."
+      "FALSE — Price change ≈ -10.5%.",
+      "TRUE — Market capitalisation ≈ €10.7 million.",
+      "TRUE — Earnings per share ≈ €0.34.",
+      "TRUE — Range €15–€19.",
+      "TRUE — Turnover ≈ 45.8% of shares outstanding."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.106",
-    "title": "Asset Composition Chart 106",
+    "title": "Listed Company Performance Charts 106",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=392\nMachinery=251\nPatents, trademarks and licences=94\nInventory=162\nTrade receivables=175\nCash and cash equivalents=104\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 392 |\n| Machinery | 251 |\n| Office equipment | 45 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 162 |\n| Trade receivables | 175 |\n| Cash and cash equivalents | 104 |\n| Total assets | **1223** |\n| **EQUITY** | |\n| Share capital | 184 |\n| Retained earnings | 499 |\n| Total equity | **683** |\n| **LIABILITIES** | |\n| Long-term bank loan | 333 |\n| Bonds payable | 77 |\n| Trade payables | 61 |\n| Bank overdraft | 69 |\n| Total liabilities | **540** |\n| Total equity and liabilities | **1223** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=35\nMarch | Price=34\nApril | Price=34\nMay | Price=30\nJune | Price=27\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=38000\nFebruary | Volume=64000\nMarch | Volume=46000\nApril | Volume=59000\nMay | Volume=55000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 31 | 633,000 | 38,000 |\n| February | 35 | 633,000 | 64,000 |\n| March | 34 | 633,000 | 46,000 |\n| April | 34 | 633,000 | 59,000 |\n| May | 30 | 633,000 | 55,000 |\n| June | 27 | 633,000 | 59,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 301 |\n| Shares outstanding | 633,000 |\n| Total shares traded (six months) | 321,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Working capital of €311 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.29 times over.",
-      "The current ratio is below 1.12.",
-      "The equity ratio is below 38.3%.",
-      "The debt ratio exceeds 59.5%."
+      "Market capitalisation at the last month exceeds €14.3 million.",
+      "Earnings per share exceeds €0.35.",
+      "The closing share price rose by more than 29% from first to last month.",
+      "Market capitalisation rose by more than 18.8% over the period.",
+      "Highest closing price is more than 40% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1822,27 +1822,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Working capital = 311.",
-      "TRUE — Acid-test ratio ≈ 2.15.",
-      "FALSE — Current ratio ≈ 3.39.",
-      "FALSE — Equity ratio ≈ 55.8%.",
-      "FALSE — Debt ratio ≈ 44.2%."
+      "TRUE — Market capitalisation ≈ €17.1 million.",
+      "TRUE — Earnings per share ≈ €0.48.",
+      "FALSE — Price change ≈ -12.9%.",
+      "FALSE — €19.6m → €17.1m.",
+      "FALSE — Range €27–€35."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.107",
-    "title": "Balance Sheet Structure Review 107",
+    "title": "Earnings Per Share From Reported Figures 107",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=471\nMachinery=176\nPatents, trademarks and licences=26\nInventory=142\nTrade receivables=117\nCash and cash equivalents=94\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 471 |\n| Machinery | 176 |\n| Office equipment | 48 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 142 |\n| Trade receivables | 117 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1074** |\n| **EQUITY** | |\n| Share capital | 291 |\n| Retained earnings | 101 |\n| Total equity | **392** |\n| **LIABILITIES** | |\n| Long-term bank loan | 369 |\n| Bonds payable | 59 |\n| Trade payables | 188 |\n| Bank overdraft | 66 |\n| Total liabilities | **682** |\n| Total equity and liabilities | **1074** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=17\nMarch | Price=19\nApril | Price=20\nMay | Price=21\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=32000\nFebruary | Volume=57000\nMarch | Volume=20000\nApril | Volume=36000\nMay | Volume=51000\nJune | Volume=13000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 17 | 799,000 | 32,000 |\n| February | 17 | 799,000 | 57,000 |\n| March | 19 | 799,000 | 20,000 |\n| April | 20 | 799,000 | 36,000 |\n| May | 21 | 799,000 | 51,000 |\n| June | 22 | 799,000 | 13,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 228 |\n| Shares outstanding | 799,000 |\n| Total shares traded (six months) | 209,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Working capital of €99 thousand is positive on this balance sheet.",
-      "Trade receivables make up less than 38.9% of current assets.",
-      "Cash and cash equivalents make up more than 20.3% of current assets.",
-      "The current ratio exceeds 1.72.",
-      "Inventory of €142 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+      "The closing share price rose by more than 9.4% from first to last month.",
+      "Market capitalisation at the last month exceeds €16.2 million.",
+      "Earnings per share exceeds €0.25.",
+      "Market capitalisation rose by more than 30.8% over the period.",
+      "Highest closing price is more than 23.8% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1852,27 +1852,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Working capital = 99.",
-      "TRUE — Trade receivables are about 33.1% of current assets.",
-      "TRUE — Cash and cash equivalents are about 26.6% of current assets.",
-      "FALSE — Current ratio ≈ 1.39.",
-      "TRUE — Inventory is always a current asset."
+      "TRUE — Price change ≈ 29.4%.",
+      "TRUE — Market capitalisation ≈ €17.6 million.",
+      "TRUE — Earnings per share ≈ €0.29.",
+      "FALSE — €13.6m → €17.6m.",
+      "TRUE — Range €17–€22."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.108",
-    "title": "Comparative Balance Sheet Analysis 108",
+    "title": "Share Price and Market Capitalisation 108",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=498 | Total assets=936\nYear 2 | Equity=583 | Total assets=1038\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 330 | 365 |\n| Machinery | 121 | 134 |\n| Office equipment | 33 | 37 |\n| Patents, trademarks and licences | 98 | 98 |\n| Inventory | 141 | 154 |\n| Trade receivables | 174 | 204 |\n| Cash and cash equivalents | 39 | 46 |\n| Total assets | **936** | **1038** |\n| **EQUITY** | | |\n| Share capital | 142 | 142 |\n| Retained earnings | 356 | 441 |\n| Total equity | **498** | **583** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 256 | 267 |\n| Bonds payable | 41 | 44 |\n| Trade payables | 84 | 86 |\n| Bank overdraft | 57 | 58 |\n| Total liabilities | **438** | **455** |\n| Total equity and liabilities | **936** | **1038** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=13\nFebruary | Price=15\nMarch | Price=13\nApril | Price=13\nMay | Price=11\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=31000\nFebruary | Volume=18000\nMarch | Volume=61000\nApril | Volume=13000\nMay | Volume=43000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 13 | 504,000 | 31,000 |\n| February | 15 | 504,000 | 18,000 |\n| March | 13 | 504,000 | 61,000 |\n| April | 13 | 504,000 | 13,000 |\n| May | 11 | 504,000 | 43,000 |\n| June | 11 | 504,000 | 52,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 267 |\n| Shares outstanding | 504,000 |\n| Total shares traded (six months) | 218,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Total assets grew by more than 7.2% between Year 1 and Year 2.",
-      "The debt ratio fell by more than 2.7 percentage points between Year 1 and Year 2.",
-      "Trade payables grew by more than 25.3% between Year 1 and Year 2.",
-      "Non-current liabilities amount to less than 87.8% of total equity in Year 2.",
-      "Non-current assets make up more than 58.1% of total assets in Year 2."
+      "Market capitalisation at the last month exceeds €4.8 million.",
+      "Earnings per share exceeds €0.49.",
+      "The closing share price rose by more than 27.8% from first to last month.",
+      "Highest closing price is more than 17.8% above the lowest.",
+      "Total shares traded over six months exceed 10.7% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1882,27 +1882,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Total assets changed by about 10.9% between the two years.",
-      "TRUE — Debt ratio moved from 46.8% to 43.8%.",
-      "FALSE — Trade payables changed by about 2.4% between the two years.",
-      "TRUE — Non-current liabilities are about 53.3% of equity in Year 2.",
-      "TRUE — Non-current assets are about 61.1% of total assets in Year 2."
+      "TRUE — Market capitalisation ≈ €5.5 million.",
+      "TRUE — Earnings per share ≈ €0.53.",
+      "FALSE — Price change ≈ -15.4%.",
+      "TRUE — Range €11–€15.",
+      "TRUE — Turnover ≈ 43.3% of shares outstanding."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.110",
-    "title": "Balance Sheet Structure Review 110",
+    "title": "Earnings Per Share From Reported Figures 110",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=339\nCurrent liabilities=230\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 393 |\n| Machinery | 144 |\n| Office equipment | 70 |\n| Patents, trademarks and licences | 37 |\n| Inventory | 178 |\n| Trade receivables | 64 |\n| Cash and cash equivalents | 97 |\n| Total assets | **983** |\n| **EQUITY** | |\n| Share capital | 174 |\n| Retained earnings | 344 |\n| Total equity | **518** |\n| **LIABILITIES** | |\n| Long-term bank loan | 181 |\n| Bonds payable | 54 |\n| Trade payables | 181 |\n| Bank overdraft | 49 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **983** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=14\nFebruary | Price=13\nMarch | Price=13\nApril | Price=12\nMay | Price=12\nJune | Price=12\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=43000\nFebruary | Volume=59000\nMarch | Volume=29000\nApril | Volume=30000\nMay | Volume=36000\nJune | Volume=53000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 14 | 635,000 | 43,000 |\n| February | 13 | 635,000 | 59,000 |\n| March | 13 | 635,000 | 29,000 |\n| April | 12 | 635,000 | 30,000 |\n| May | 12 | 635,000 | 36,000 |\n| June | 12 | 635,000 | 53,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 197 |\n| Shares outstanding | 635,000 |\n| Total shares traded (six months) | 250,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.7 times over.",
-      "The current ratio exceeds 1.37.",
-      "The equity ratio is below 42.6%.",
-      "The debt ratio exceeds 66.1%.",
-      "Buildings make up more than 50.4% of total assets."
+      "The closing share price rose by more than 32.8% from first to last month (see the extract prepared for case 6.1.110).",
+      "Market capitalisation at the last month exceeds €6.7 million (see the extract prepared for case 6.1.110).",
+      "Market capitalisation rose by more than 26.1% over the period (see the extract prepared for case 6.1.110).",
+      "Highest closing price is more than 37.8% above the lowest (see the extract prepared for case 6.1.110).",
+      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.110)."
     ],
     "answer_key": [
       false,
@@ -1912,27 +1912,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Acid-test ratio ≈ 0.70.",
-      "TRUE — Current ratio ≈ 1.47.",
-      "FALSE — Equity ratio ≈ 52.7%.",
-      "FALSE — Debt ratio ≈ 47.3%.",
-      "FALSE — Buildings are about 40.0% of total assets."
+      "FALSE — Price change ≈ -14.3%.",
+      "TRUE — Market capitalisation ≈ €7.6 million.",
+      "FALSE — €8.9m → €7.6m.",
+      "FALSE — Range €12–€14.",
+      "FALSE — Peak price month vs peak volume month."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.111",
-    "title": "Liquidity From the Balance Sheet 111",
+    "title": "Share Price and Market Capitalisation 111",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=328\nMachinery=232\nPatents, trademarks and licences=23\nInventory=248\nTrade receivables=166\nCash and cash equivalents=75\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 328 |\n| Machinery | 232 |\n| Office equipment | 45 |\n| Patents, trademarks and licences | 23 |\n| Inventory | 248 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 75 |\n| Total assets | **1117** |\n| **EQUITY** | |\n| Share capital | 107 |\n| Retained earnings | 376 |\n| Total equity | **483** |\n| **LIABILITIES** | |\n| Long-term bank loan | 241 |\n| Bonds payable | 89 |\n| Trade payables | 236 |\n| Bank overdraft | 68 |\n| Total liabilities | **634** |\n| Total equity and liabilities | **1117** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=25\nMarch | Price=22\nApril | Price=21\nMay | Price=23\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=65000\nFebruary | Volume=43000\nMarch | Volume=13000\nApril | Volume=74000\nMay | Volume=54000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 501,000 | 65,000 |\n| February | 25 | 501,000 | 43,000 |\n| March | 22 | 501,000 | 13,000 |\n| April | 21 | 501,000 | 74,000 |\n| May | 23 | 501,000 | 54,000 |\n| June | 22 | 501,000 | 52,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 216 |\n| Shares outstanding | 501,000 |\n| Total shares traded (six months) | 301,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.39.",
-      "Working capital of €185 thousand is positive on this balance sheet.",
-      "Inventory make up more than 48.1% of current assets.",
-      "Trade receivables make up less than 35.4% of current assets.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 19%."
+      "Market capitalisation at the last month exceeds €10.2 million.",
+      "Earnings per share exceeds €0.37.",
+      "Total shares traded over six months exceed 32.5% of shares outstanding.",
+      "Peak monthly share turnover exceeds 64,138 shares.",
+      "Shares outstanding stay at 501,000 every month."
     ],
     "answer_key": [
       true,
@@ -1942,27 +1942,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.61.",
-      "TRUE — Working capital = 185.",
-      "TRUE — Inventory are about 50.7% of current assets.",
-      "TRUE — Trade receivables are about 33.9% of current assets.",
-      "TRUE — Long-term financing covers non-current assets by about 29.5%."
+      "TRUE — Market capitalisation ≈ €11.0 million.",
+      "TRUE — Earnings per share ≈ €0.43.",
+      "TRUE — Turnover ≈ 60.1% of shares outstanding.",
+      "TRUE — Peak monthly volume = 74,000.",
+      "TRUE — Shares outstanding unchanged."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.113",
-    "title": "Balance Sheet Structure Review 113",
+    "title": "Earnings Per Share From Reported Figures 113",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=410\nMachinery=239\nPatents, trademarks and licences=34\nInventory=191\nTrade receivables=116\nCash and cash equivalents=57\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 410 |\n| Machinery | 239 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 34 |\n| Inventory | 191 |\n| Trade receivables | 116 |\n| Cash and cash equivalents | 57 |\n| Total assets | **1087** |\n| **EQUITY** | |\n| Share capital | 145 |\n| Retained earnings | 382 |\n| Total equity | **527** |\n| **LIABILITIES** | |\n| Long-term bank loan | 324 |\n| Bonds payable | 79 |\n| Trade payables | 95 |\n| Bank overdraft | 62 |\n| Total liabilities | **560** |\n| Total equity and liabilities | **1087** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=24\nMarch | Price=22\nApril | Price=22\nMay | Price=21\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=47000\nFebruary | Volume=31000\nMarch | Volume=23000\nApril | Volume=61000\nMay | Volume=48000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 671,000 | 47,000 |\n| February | 24 | 671,000 | 31,000 |\n| March | 22 | 671,000 | 23,000 |\n| April | 22 | 671,000 | 61,000 |\n| May | 21 | 671,000 | 48,000 |\n| June | 21 | 671,000 | 59,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 185 |\n| Shares outstanding | 671,000 |\n| Total shares traded (six months) | 269,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The equity ratio is below 16%.",
-      "The current ratio exceeds 1.5.",
-      "Working capital of €207 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.63 times over.",
-      "Inventory make up more than 30.3% of current assets."
+      "The closing share price rose by more than 8.9% from first to last month.",
+      "Market capitalisation at the last month exceeds €11.7 million.",
+      "Total shares traded over six months exceed 31.5% of shares outstanding.",
+      "Shares outstanding stay at 671,000 every month.",
+      "Operating result is below €219 thousand."
     ],
     "answer_key": [
       false,
@@ -1972,27 +1972,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 48.5%.",
-      "TRUE — Current ratio ≈ 2.32.",
-      "TRUE — Working capital = 207.",
-      "TRUE — Acid-test ratio ≈ 1.10.",
-      "TRUE — Inventory are about 52.5% of current assets."
+      "FALSE — Price change ≈ -16.0%.",
+      "TRUE — Market capitalisation ≈ €14.1 million.",
+      "TRUE — Turnover ≈ 40.1% of shares outstanding.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — Operating result = 185."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.115",
-    "title": "Gearing From Comparative Figures 115",
+    "title": "Listed Company Performance Charts 115",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=532 | Total assets=1244\nYear 2 | Equity=532 | Total assets=1270\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 501 | 500 |\n| Machinery | 143 | 147 |\n| Office equipment | 74 | 78 |\n| Patents, trademarks and licences | 71 | 71 |\n| Inventory | 233 | 245 |\n| Trade receivables | 121 | 133 |\n| Cash and cash equivalents | 101 | 96 |\n| Total assets | **1244** | **1270** |\n| **EQUITY** | | |\n| Share capital | 165 | 165 |\n| Retained earnings | 367 | 367 |\n| Total equity | **532** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 375 | 387 |\n| Bonds payable | 53 | 56 |\n| Trade payables | 209 | 221 |\n| Bank overdraft | 75 | 74 |\n| Total liabilities | **712** | **738** |\n| Total equity and liabilities | **1244** | **1270** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=16\nFebruary | Price=16\nMarch | Price=16\nApril | Price=17\nMay | Price=19\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=60000\nFebruary | Volume=62000\nMarch | Volume=67000\nApril | Volume=28000\nMay | Volume=61000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 16 | 860,000 | 60,000 |\n| February | 16 | 860,000 | 62,000 |\n| March | 16 | 860,000 | 67,000 |\n| April | 17 | 860,000 | 28,000 |\n| May | 19 | 860,000 | 61,000 |\n| June | 17 | 860,000 | 20,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 226 |\n| Shares outstanding | 860,000 |\n| Total shares traded (six months) | 298,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Non-current liabilities amount to more than 50.5% of total equity in Year 1.",
-      "Non-current assets make up more than 60% of total assets in Year 2.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 6.6% in Year 1.",
-      "Total assets grew by more than 9.6% between Year 1 and Year 2.",
-      "Trade payables of €221 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+      "Market capitalisation at the last month exceeds €12.4 million.",
+      "Highest closing price is more than 16.6% above the lowest.",
+      "Total shares traded over six months exceed 16.9% of shares outstanding.",
+      "The closing share price rose by more than 23% from first to last month.",
+      "Peak monthly share turnover exceeds 56,728 shares."
     ],
     "answer_key": [
       true,
@@ -2002,27 +2002,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Non-current liabilities are about 80.5% of equity in Year 1.",
-      "TRUE — Non-current assets are about 62.7% of total assets in Year 2.",
-      "TRUE — Long-term financing covers non-current assets by about 21.7% in Year 1.",
-      "FALSE — Total assets changed by about 2.1% between the two years.",
-      "TRUE — Trade payables are a current liability regardless of the amount."
+      "TRUE — Market capitalisation ≈ €14.6 million.",
+      "TRUE — Range €16–€19.",
+      "TRUE — Turnover ≈ 34.7% of shares outstanding.",
+      "FALSE — Price change ≈ 6.3%.",
+      "TRUE — Peak monthly volume = 67,000."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.116",
-    "title": "Balance Sheet Structure Review 116",
+    "title": "Earnings Per Share From Reported Figures 116",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=374\nCurrent liabilities=189\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 402 |\n| Machinery | 176 |\n| Office equipment | 35 |\n| Patents, trademarks and licences | 20 |\n| Inventory | 157 |\n| Trade receivables | 170 |\n| Cash and cash equivalents | 47 |\n| Total assets | **1007** |\n| **EQUITY** | |\n| Share capital | 284 |\n| Retained earnings | 147 |\n| Total equity | **431** |\n| **LIABILITIES** | |\n| Long-term bank loan | 319 |\n| Bonds payable | 68 |\n| Trade payables | 143 |\n| Bank overdraft | 46 |\n| Total liabilities | **576** |\n| Total equity and liabilities | **1007** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=18\nMarch | Price=20\nApril | Price=19\nMay | Price=19\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=36000\nFebruary | Volume=24000\nMarch | Volume=67000\nApril | Volume=47000\nMay | Volume=32000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 17 | 654,000 | 36,000 |\n| February | 18 | 654,000 | 24,000 |\n| March | 20 | 654,000 | 67,000 |\n| April | 19 | 654,000 | 47,000 |\n| May | 19 | 654,000 | 32,000 |\n| June | 17 | 654,000 | 74,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 283 |\n| Shares outstanding | 654,000 |\n| Total shares traded (six months) | 280,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.16.",
-      "The debt ratio exceeds 54.1%.",
-      "Inventory make up more than 30.8% of current assets.",
-      "Trade receivables make up less than 46.7% of current assets.",
-      "Inventory of €157 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+      "Earnings per share exceeds €0.31.",
+      "Total shares traded over six months exceed 9% of shares outstanding.",
+      "Shares outstanding stay at 654,000 every month.",
+      "With unchanged shares outstanding, rising market capitalisation means the share price rose.",
+      "Lowest monthly share turnover is under half of the peak month."
     ],
     "answer_key": [
       true,
@@ -2032,27 +2032,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.98.",
-      "TRUE — Debt ratio ≈ 57.2%.",
-      "TRUE — Inventory are about 42.0% of current assets.",
-      "TRUE — Trade receivables are about 45.5% of current assets.",
-      "TRUE — Inventory is always a current asset."
+      "TRUE — Earnings per share ≈ €0.43.",
+      "TRUE — Turnover ≈ 42.8% of shares outstanding.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — Market capitalisation = price × shares.",
+      "TRUE — Low 24,000 vs peak 74,000."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.117",
-    "title": "Liquidity From the Balance Sheet 117",
+    "title": "Share Price and Market Capitalisation 117",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=395\nMachinery=274\nPatents, trademarks and licences=85\nInventory=171\nTrade receivables=70\nCash and cash equivalents=116\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 395 |\n| Machinery | 274 |\n| Office equipment | 77 |\n| Patents, trademarks and licences | 85 |\n| Inventory | 171 |\n| Trade receivables | 70 |\n| Cash and cash equivalents | 116 |\n| Total assets | **1188** |\n| **EQUITY** | |\n| Share capital | 295 |\n| Retained earnings | 349 |\n| Total equity | **644** |\n| **LIABILITIES** | |\n| Long-term bank loan | 298 |\n| Bonds payable | 50 |\n| Trade payables | 159 |\n| Bank overdraft | 37 |\n| Total liabilities | **544** |\n| Total equity and liabilities | **1188** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=32\nMarch | Price=37\nApril | Price=37\nMay | Price=38\nJune | Price=37\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=73000\nMarch | Volume=47000\nApril | Volume=24000\nMay | Volume=24000\nJune | Volume=70000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 34 | 641,000 | 40,000 |\n| February | 32 | 641,000 | 73,000 |\n| March | 37 | 641,000 | 47,000 |\n| April | 37 | 641,000 | 24,000 |\n| May | 38 | 641,000 | 24,000 |\n| June | 37 | 641,000 | 70,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 180 |\n| Shares outstanding | 641,000 |\n| Total shares traded (six months) | 278,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is below 1.24.",
-      "The equity ratio is below 30.8%.",
-      "The debt ratio exceeds 61.9%.",
-      "Buildings make up more than 57% of total assets.",
-      "The current ratio exceeds 1.23."
+      "The closing share price rose by more than 22.2% from first to last month (see the extract prepared for case 6.1.117).",
+      "Market capitalisation rose by more than 33.8% over the period (see the extract prepared for case 6.1.117).",
+      "Highest closing price is more than 35% above the lowest (see the extract prepared for case 6.1.117).",
+      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.117).",
+      "Market capitalisation at the last month exceeds €20.2 million (see the extract prepared for case 6.1.117)."
     ],
     "answer_key": [
       false,
@@ -2062,27 +2062,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.82.",
-      "FALSE — Equity ratio ≈ 54.2%.",
-      "FALSE — Debt ratio ≈ 45.8%.",
-      "FALSE — Buildings are about 33.2% of total assets.",
-      "TRUE — Current ratio ≈ 1.82."
+      "FALSE — Price change ≈ 8.8%.",
+      "FALSE — €21.8m → €23.7m.",
+      "FALSE — Range €32–€38.",
+      "FALSE — Peak price month vs peak volume month.",
+      "TRUE — Market capitalisation ≈ €23.7 million."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.119",
-    "title": "Balance Sheet Structure Review 119",
+    "title": "Earnings Per Share From Reported Figures 119",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=335\nMachinery=167\nPatents, trademarks and licences=91\nInventory=240\nTrade receivables=85\nCash and cash equivalents=44\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 335 |\n| Machinery | 167 |\n| Office equipment | 67 |\n| Patents, trademarks and licences | 91 |\n| Inventory | 240 |\n| Trade receivables | 85 |\n| Cash and cash equivalents | 44 |\n| Total assets | **1029** |\n| **EQUITY** | |\n| Share capital | 263 |\n| Retained earnings | 92 |\n| Total equity | **355** |\n| **LIABILITIES** | |\n| Long-term bank loan | 420 |\n| Bonds payable | 86 |\n| Trade payables | 98 |\n| Bank overdraft | 70 |\n| Total liabilities | **674** |\n| Total equity and liabilities | **1029** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=19\nMarch | Price=21\nApril | Price=23\nMay | Price=22\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=63000\nFebruary | Volume=22000\nMarch | Volume=56000\nApril | Volume=70000\nMay | Volume=56000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 20 | 514,000 | 63,000 |\n| February | 19 | 514,000 | 22,000 |\n| March | 21 | 514,000 | 56,000 |\n| April | 23 | 514,000 | 70,000 |\n| May | 22 | 514,000 | 56,000 |\n| June | 22 | 514,000 | 52,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 180 |\n| Shares outstanding | 514,000 |\n| Total shares traded (six months) | 319,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is below 1.04.",
-      "Working capital of €201 thousand is positive on this balance sheet.",
-      "The equity ratio is below 34.4%.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.6 times over.",
-      "The debt ratio exceeds 68.9%."
+      "The closing share price rose by more than 25.5% from first to last month.",
+      "Market capitalisation at the last month exceeds €10.1 million.",
+      "Market capitalisation rose by more than 23.7% over the period.",
+      "Highest closing price is more than 18.2% above the lowest.",
+      "Peak monthly share turnover exceeds 71,813 shares."
     ],
     "answer_key": [
       false,
@@ -2092,27 +2092,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 2.20.",
-      "TRUE — Working capital = 201.",
-      "FALSE — Equity ratio ≈ 34.5%.",
-      "TRUE — Acid-test ratio ≈ 0.77.",
-      "FALSE — Debt ratio ≈ 65.5%."
+      "FALSE — Price change ≈ 10.0%.",
+      "TRUE — Market capitalisation ≈ €11.3 million.",
+      "FALSE — €10.3m → €11.3m.",
+      "TRUE — Range €19–€23.",
+      "FALSE — Peak monthly volume = 70,000."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.120",
-    "title": "Comparative Balance Sheet Analysis 120",
+    "title": "Share Price and Market Capitalisation 120",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=275 | Total assets=851\nYear 2 | Equity=291 | Total assets=912\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 438 | 463 |\n| Machinery | 136 | 156 |\n| Office equipment | 34 | 36 |\n| Patents, trademarks and licences | 20 | 20 |\n| Inventory | 99 | 104 |\n| Trade receivables | 82 | 88 |\n| Cash and cash equivalents | 42 | 45 |\n| Total assets | **851** | **912** |\n| **EQUITY** | | |\n| Share capital | 222 | 222 |\n| Retained earnings | 53 | 69 |\n| Total equity | **275** | **291** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 257 | 272 |\n| Bonds payable | 63 | 70 |\n| Trade payables | 219 | 239 |\n| Bank overdraft | 37 | 40 |\n| Total liabilities | **576** | **621** |\n| Total equity and liabilities | **851** | **912** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=12\nFebruary | Price=11\nMarch | Price=11\nApril | Price=11\nMay | Price=11\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=18000\nFebruary | Volume=20000\nMarch | Volume=73000\nApril | Volume=41000\nMay | Volume=24000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 12 | 729,000 | 18,000 |\n| February | 11 | 729,000 | 20,000 |\n| March | 11 | 729,000 | 73,000 |\n| April | 11 | 729,000 | 41,000 |\n| May | 11 | 729,000 | 24,000 |\n| June | 10 | 729,000 | 36,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 314 |\n| Shares outstanding | 729,000 |\n| Total shares traded (six months) | 212,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Non-current liabilities amount to more than 56.2% of total equity in Year 1.",
-      "Non-current liabilities amount to less than 122.3% of total equity in Year 2.",
-      "Non-current assets make up more than 72.2% of total assets in Year 2.",
-      "Trade payables of €239 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
-      "Total equity grew by more than 11.8% between Year 1 and Year 2."
+      "Market capitalisation at the last month exceeds €6 million.",
+      "Earnings per share exceeds €0.36.",
+      "Total shares traded over six months exceed 18.8% of shares outstanding.",
+      "Shares outstanding stay at 729,000 every month.",
+      "The closing share price rose by more than 17.8% from first to last month."
     ],
     "answer_key": [
       true,
@@ -2122,27 +2122,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Non-current liabilities are about 116.4% of equity in Year 1.",
-      "TRUE — Non-current liabilities are about 117.5% of equity in Year 2.",
-      "TRUE — Non-current assets are about 74.0% of total assets in Year 2.",
-      "TRUE — Trade payables are a current liability regardless of the amount.",
-      "FALSE — Total equity changed by about 5.8% between the two years."
+      "TRUE — Market capitalisation ≈ €7.3 million.",
+      "TRUE — Earnings per share ≈ €0.43.",
+      "TRUE — Turnover ≈ 29.1% of shares outstanding.",
+      "TRUE — Shares outstanding unchanged.",
+      "FALSE — Price change ≈ -16.7%."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.122",
-    "title": "Balance Sheet Structure Review 122",
+    "title": "Earnings Per Share From Reported Figures 122",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=406\nCurrent liabilities=244\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 351 |\n| Machinery | 177 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 59 |\n| Inventory | 151 |\n| Trade receivables | 141 |\n| Cash and cash equivalents | 114 |\n| Total assets | **1056** |\n| **EQUITY** | |\n| Share capital | 196 |\n| Retained earnings | 391 |\n| Total equity | **587** |\n| **LIABILITIES** | |\n| Long-term bank loan | 182 |\n| Bonds payable | 43 |\n| Trade payables | 202 |\n| Bank overdraft | 42 |\n| Total liabilities | **469** |\n| Total equity and liabilities | **1056** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=21\nMarch | Price=21\nApril | Price=19\nMay | Price=20\nJune | Price=19\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=71000\nMarch | Volume=34000\nApril | Volume=16000\nMay | Volume=28000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 549,000 | 34,000 |\n| February | 21 | 549,000 | 71,000 |\n| March | 21 | 549,000 | 34,000 |\n| April | 19 | 549,000 | 16,000 |\n| May | 20 | 549,000 | 28,000 |\n| June | 19 | 549,000 | 59,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 287 |\n| Shares outstanding | 549,000 |\n| Total shares traded (six months) | 242,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.21 times over.",
-      "The equity ratio is below 24.9%.",
-      "Working capital of €162 thousand is positive on this balance sheet.",
-      "Trade receivables make up less than 40.8% of current assets.",
-      "Cash and cash equivalents make up more than 25% of current assets."
+      "The closing share price rose by more than 16.9% from first to last month.",
+      "Market capitalisation rose by more than 25.6% over the period.",
+      "Market capitalisation at the last month exceeds €8.2 million.",
+      "Earnings per share exceeds €0.48.",
+      "Total shares traded over six months exceed 26.1% of shares outstanding."
     ],
     "answer_key": [
       false,
@@ -2152,27 +2152,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Acid-test ratio ≈ 1.05.",
-      "FALSE — Equity ratio ≈ 55.6%.",
-      "TRUE — Working capital = 162.",
-      "TRUE — Trade receivables are about 34.7% of current assets.",
-      "TRUE — Cash and cash equivalents are about 28.1% of current assets."
+      "FALSE — Price change ≈ 0.0%.",
+      "FALSE — €10.4m → €10.4m.",
+      "TRUE — Market capitalisation ≈ €10.4 million.",
+      "TRUE — Earnings per share ≈ €0.52.",
+      "TRUE — Turnover ≈ 44.1% of shares outstanding."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.123",
-    "title": "Liquidity From the Balance Sheet 123",
+    "title": "Share Price and Market Capitalisation 123",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=476\nMachinery=133\nPatents, trademarks and licences=20\nInventory=146\nTrade receivables=168\nCash and cash equivalents=35\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 476 |\n| Machinery | 133 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 20 |\n| Inventory | 146 |\n| Trade receivables | 168 |\n| Cash and cash equivalents | 35 |\n| Total assets | **1032** |\n| **EQUITY** | |\n| Share capital | 276 |\n| Retained earnings | 147 |\n| Total equity | **423** |\n| **LIABILITIES** | |\n| Long-term bank loan | 321 |\n| Bonds payable | 45 |\n| Trade payables | 180 |\n| Bank overdraft | 63 |\n| Total liabilities | **609** |\n| Total equity and liabilities | **1032** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=12\nFebruary | Price=13\nMarch | Price=15\nApril | Price=15\nMay | Price=15\nJune | Price=14\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=33000\nFebruary | Volume=15000\nMarch | Volume=44000\nApril | Volume=18000\nMay | Volume=49000\nJune | Volume=13000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 12 | 807,000 | 33,000 |\n| February | 13 | 807,000 | 15,000 |\n| March | 15 | 807,000 | 44,000 |\n| April | 15 | 807,000 | 18,000 |\n| May | 15 | 807,000 | 49,000 |\n| June | 14 | 807,000 | 13,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 195 |\n| Shares outstanding | 807,000 |\n| Total shares traded (six months) | 172,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.04.",
-      "The equity ratio is below 37.7%.",
-      "The debt ratio exceeds 76.5%.",
-      "Buildings make up more than 53.7% of total assets.",
-      "Inventory make up more than 51% of current assets."
+      "Earnings per share exceeds €0.21.",
+      "The closing share price rose by more than 28.4% from first to last month.",
+      "Market capitalisation rose by more than 30% over the period.",
+      "Highest closing price is more than 35.6% above the lowest.",
+      "Total shares traded over six months exceed 26.8% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -2182,27 +2182,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.44.",
-      "FALSE — Equity ratio ≈ 41.0%.",
-      "FALSE — Debt ratio ≈ 59.0%.",
-      "FALSE — Buildings are about 46.1% of total assets.",
-      "FALSE — Inventory are about 41.8% of current assets."
+      "TRUE — Earnings per share ≈ €0.24.",
+      "FALSE — Price change ≈ 16.7%.",
+      "FALSE — €9.7m → €11.3m.",
+      "FALSE — Range €12–€15.",
+      "FALSE — Turnover ≈ 21.3% of shares outstanding."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.125",
-    "title": "Balance Sheet Structure Review 125",
+    "title": "Earnings Per Share From Reported Figures 125",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=452\nMachinery=226\nPatents, trademarks and licences=94\nInventory=99\nTrade receivables=84\nCash and cash equivalents=84\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 452 |\n| Machinery | 226 |\n| Office equipment | 36 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 99 |\n| Trade receivables | 84 |\n| Cash and cash equivalents | 84 |\n| Total assets | **1075** |\n| **EQUITY** | |\n| Share capital | 297 |\n| Retained earnings | 114 |\n| Total equity | **411** |\n| **LIABILITIES** | |\n| Long-term bank loan | 384 |\n| Bonds payable | 43 |\n| Trade payables | 194 |\n| Bank overdraft | 43 |\n| Total liabilities | **664** |\n| Total equity and liabilities | **1075** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=25\nMarch | Price=28\nApril | Price=29\nMay | Price=30\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=18000\nFebruary | Volume=50000\nMarch | Volume=71000\nApril | Volume=16000\nMay | Volume=30000\nJune | Volume=12000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 27 | 759,000 | 18,000 |\n| February | 25 | 759,000 | 50,000 |\n| March | 28 | 759,000 | 71,000 |\n| April | 29 | 759,000 | 16,000 |\n| May | 30 | 759,000 | 30,000 |\n| June | 28 | 759,000 | 12,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 291 |\n| Shares outstanding | 759,000 |\n| Total shares traded (six months) | 197,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.25.",
-      "Working capital of €30 thousand is positive on this balance sheet.",
-      "Buildings make up more than 36.8% of total assets.",
-      "Inventory make up more than 33.4% of current assets.",
-      "Trade receivables make up less than 41.4% of current assets."
+      "The closing share price rose by more than 17.7% from first to last month.",
+      "Market capitalisation at the last month exceeds €19.9 million.",
+      "Peak monthly share turnover exceeds 58,512 shares.",
+      "Shares outstanding stay at 759,000 every month.",
+      "Operating result is below €297 thousand."
     ],
     "answer_key": [
       false,
@@ -2212,27 +2212,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.13.",
-      "TRUE — Working capital = 30.",
-      "TRUE — Buildings are about 42.0% of total assets.",
-      "TRUE — Inventory are about 37.1% of current assets.",
-      "TRUE — Trade receivables are about 31.5% of current assets."
+      "FALSE — Price change ≈ 3.7%.",
+      "TRUE — Market capitalisation ≈ €21.3 million.",
+      "TRUE — Peak monthly volume = 71,000.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — Operating result = 291."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.126",
-    "title": "Comparative Balance Sheet Analysis 126",
+    "title": "Share Price and Market Capitalisation 126",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=301 | Total assets=941\nYear 2 | Equity=315 | Total assets=1022\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 304 | 328 |\n| Machinery | 178 | 190 |\n| Office equipment | 36 | 40 |\n| Patents, trademarks and licences | 43 | 43 |\n| Inventory | 150 | 173 |\n| Trade receivables | 129 | 146 |\n| Cash and cash equivalents | 101 | 102 |\n| Total assets | **941** | **1022** |\n| **EQUITY** | | |\n| Share capital | 141 | 141 |\n| Retained earnings | 160 | 174 |\n| Total equity | **301** | **315** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 264 | 294 |\n| Bonds payable | 56 | 62 |\n| Trade payables | 238 | 263 |\n| Bank overdraft | 82 | 88 |\n| Total liabilities | **640** | **707** |\n| Total equity and liabilities | **941** | **1022** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=18\nFebruary | Price=18\nMarch | Price=17\nApril | Price=16\nMay | Price=17\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=62000\nMarch | Volume=61000\nApril | Volume=32000\nMay | Volume=67000\nJune | Volume=39000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 18 | 450,000 | 34,000 |\n| February | 18 | 450,000 | 62,000 |\n| March | 17 | 450,000 | 61,000 |\n| April | 16 | 450,000 | 32,000 |\n| May | 17 | 450,000 | 67,000 |\n| June | 17 | 450,000 | 39,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 230 |\n| Shares outstanding | 450,000 |\n| Total shares traded (six months) | 295,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Non-current liabilities amount to more than 82.2% of total equity in Year 1.",
-      "Non-current liabilities amount to less than 119.2% of total equity in Year 2.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 6.4% in Year 1.",
-      "Trade payables of €263 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
-      "The current ratio in Year 1 is exactly 1.19."
+      "Market capitalisation at the last month exceeds €7 million.",
+      "Highest closing price is more than 12.4% above the lowest.",
+      "Total shares traded over six months exceed 31.7% of shares outstanding.",
+      "Peak monthly share turnover exceeds 62,416 shares.",
+      "Shares outstanding stay at 450,000 every month."
     ],
     "answer_key": [
       true,
@@ -2242,27 +2242,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Non-current liabilities are about 106.3% of equity in Year 1.",
-      "TRUE — Non-current liabilities are about 113.0% of equity in Year 2.",
-      "TRUE — Long-term financing covers non-current assets by about 10.7% in Year 1.",
-      "TRUE — Trade payables are a current liability regardless of the amount.",
-      "TRUE — Current ratio in Year 1 is 1.19."
+      "TRUE — Market capitalisation ≈ €7.7 million.",
+      "TRUE — Range €16–€18.",
+      "TRUE — Turnover ≈ 65.6% of shares outstanding.",
+      "TRUE — Peak monthly volume = 67,000.",
+      "TRUE — Shares outstanding unchanged."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.127",
-    "title": "Asset Composition Chart 127",
+    "title": "Listed Company Performance Charts 127",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=462\nCurrent liabilities=180\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 289 |\n| Machinery | 207 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 93 |\n| Inventory | 212 |\n| Trade receivables | 163 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1102** |\n| **EQUITY** | |\n| Share capital | 292 |\n| Retained earnings | 199 |\n| Total equity | **491** |\n| **LIABILITIES** | |\n| Long-term bank loan | 368 |\n| Bonds payable | 63 |\n| Trade payables | 111 |\n| Bank overdraft | 69 |\n| Total liabilities | **611** |\n| Total equity and liabilities | **1102** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=27\nMarch | Price=31\nApril | Price=32\nMay | Price=30\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=54000\nFebruary | Volume=52000\nMarch | Volume=15000\nApril | Volume=41000\nMay | Volume=54000\nJune | Volume=49000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 420,000 | 54,000 |\n| February | 27 | 420,000 | 52,000 |\n| March | 31 | 420,000 | 15,000 |\n| April | 32 | 420,000 | 41,000 |\n| May | 30 | 420,000 | 54,000 |\n| June | 28 | 420,000 | 49,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 230 |\n| Shares outstanding | 420,000 |\n| Total shares traded (six months) | 265,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.15.",
-      "Working capital of €282 thousand is positive on this balance sheet.",
-      "The debt ratio exceeds 47%.",
-      "Inventory make up more than 32.1% of current assets.",
-      "Trade receivables make up less than 48.4% of current assets."
+      "Earnings per share exceeds €0.39.",
+      "Total shares traded over six months exceed 38.8% of shares outstanding.",
+      "Peak monthly share turnover exceeds 45,456 shares.",
+      "Shares outstanding stay at 420,000 every month.",
+      "Operating result is below €274 thousand."
     ],
     "answer_key": [
       true,
@@ -2272,27 +2272,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.57.",
-      "TRUE — Working capital = 282.",
-      "TRUE — Debt ratio ≈ 55.4%.",
-      "TRUE — Inventory are about 45.9% of current assets.",
-      "TRUE — Trade receivables are about 35.3% of current assets."
+      "TRUE — Earnings per share ≈ €0.55.",
+      "TRUE — Turnover ≈ 63.1% of shares outstanding.",
+      "TRUE — Peak monthly volume = 54,000.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — Operating result = 230."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.128",
-    "title": "Balance Sheet Structure Review 128",
+    "title": "Earnings Per Share From Reported Figures 128",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=412\nMachinery=191\nPatents, trademarks and licences=31\nInventory=131\nTrade receivables=178\nCash and cash equivalents=94\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 412 |\n| Machinery | 191 |\n| Office equipment | 32 |\n| Patents, trademarks and licences | 31 |\n| Inventory | 131 |\n| Trade receivables | 178 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1069** |\n| **EQUITY** | |\n| Share capital | 150 |\n| Retained earnings | 482 |\n| Total equity | **632** |\n| **LIABILITIES** | |\n| Long-term bank loan | 204 |\n| Bonds payable | 43 |\n| Trade payables | 113 |\n| Bank overdraft | 77 |\n| Total liabilities | **437** |\n| Total equity and liabilities | **1069** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=21\nMarch | Price=19\nApril | Price=17\nMay | Price=16\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=28000\nFebruary | Volume=57000\nMarch | Volume=39000\nApril | Volume=16000\nMay | Volume=62000\nJune | Volume=71000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 676,000 | 28,000 |\n| February | 21 | 676,000 | 57,000 |\n| March | 19 | 676,000 | 39,000 |\n| April | 17 | 676,000 | 16,000 |\n| May | 16 | 676,000 | 62,000 |\n| June | 17 | 676,000 | 71,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 317 |\n| Shares outstanding | 676,000 |\n| Total shares traded (six months) | 273,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.84.",
-      "Working capital of €213 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.38 times over.",
-      "Trade receivables make up less than 53% of current assets.",
-      "The debt ratio exceeds 77.5%."
+      "Market capitalisation at the last month exceeds €10.9 million.",
+      "Total shares traded over six months exceed 19.1% of shares outstanding.",
+      "Peak monthly share turnover exceeds 59,490 shares.",
+      "Shares outstanding stay at 676,000 every month.",
+      "The closing share price rose by more than 28.5% from first to last month."
     ],
     "answer_key": [
       true,
@@ -2302,27 +2302,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.12.",
-      "TRUE — Working capital = 213.",
-      "TRUE — Acid-test ratio ≈ 1.43.",
-      "TRUE — Trade receivables are about 44.2% of current assets.",
-      "FALSE — Debt ratio ≈ 40.9%."
+      "TRUE — Market capitalisation ≈ €11.5 million.",
+      "TRUE — Turnover ≈ 40.4% of shares outstanding.",
+      "TRUE — Peak monthly volume = 71,000.",
+      "TRUE — Shares outstanding unchanged.",
+      "FALSE — Price change ≈ -10.5%."
     ]
   },
   {
     "subsection": "6.1",
     "case_id": "CASE 6.1.129",
-    "title": "Liquidity From the Balance Sheet 129",
+    "title": "Share Price and Market Capitalisation 129",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=307\nMachinery=171\nPatents, trademarks and licences=44\nInventory=105\nTrade receivables=102\nCash and cash equivalents=78\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 171 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 44 |\n| Inventory | 105 |\n| Trade receivables | 102 |\n| Cash and cash equivalents | 78 |\n| Total assets | **885** |\n| **EQUITY** | |\n| Share capital | 295 |\n| Retained earnings | 126 |\n| Total equity | **421** |\n| **LIABILITIES** | |\n| Long-term bank loan | 218 |\n| Bonds payable | 85 |\n| Trade payables | 85 |\n| Bank overdraft | 76 |\n| Total liabilities | **464** |\n| Total equity and liabilities | **885** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=18\nFebruary | Price=18\nMarch | Price=21\nApril | Price=19\nMay | Price=18\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=20000\nFebruary | Volume=46000\nMarch | Volume=47000\nApril | Volume=69000\nMay | Volume=62000\nJune | Volume=22000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 18 | 456,000 | 20,000 |\n| February | 18 | 456,000 | 46,000 |\n| March | 21 | 456,000 | 47,000 |\n| April | 19 | 456,000 | 69,000 |\n| May | 18 | 456,000 | 62,000 |\n| June | 20 | 456,000 | 22,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 276 |\n| Shares outstanding | 456,000 |\n| Total shares traded (six months) | 266,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.73.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.15 times over.",
-      "The equity ratio is below 23.9%.",
-      "The debt ratio exceeds 73.7%.",
-      "Buildings make up more than 42.9% of total assets."
+      "Market capitalisation at the last month exceeds €8.4 million.",
+      "The closing share price rose by more than 16% from first to last month.",
+      "Market capitalisation rose by more than 17.2% over the period.",
+      "Operating result is below €213 thousand.",
+      "Earnings per share is exactly €0.57."
     ],
     "answer_key": [
       true,
@@ -2332,11 +2332,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.77.",
-      "FALSE — Acid-test ratio ≈ 1.12.",
-      "FALSE — Equity ratio ≈ 47.6%.",
-      "FALSE — Debt ratio ≈ 52.4%.",
-      "FALSE — Buildings are about 34.7% of total assets."
+      "TRUE — Market capitalisation ≈ €9.1 million.",
+      "FALSE — Price change ≈ 11.1%.",
+      "FALSE — €8.2m → €9.1m.",
+      "FALSE — Operating result = 276.",
+      "FALSE — Earnings per share ≈ €0.61."
     ]
   }
 ]

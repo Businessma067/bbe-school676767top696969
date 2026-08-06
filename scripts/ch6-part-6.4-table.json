@@ -62,17 +62,17 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.006",
-    "title": "Short Balance Sheet Extract 6",
+    "title": "Liquidity From the Balance Sheet 6",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=122\nTotal liabilities=226\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 209 |\n| Inventory | 95 |\n| Cash and cash equivalents | 44 |\n| Total assets | **348** |\n| **EQUITY** | |\n| Share capital | 112 |\n| Retained earnings | 10 |\n| Total equity | **122** |\n| **LIABILITIES** | |\n| Long-term bank loan | 140 |\n| Trade payables | 86 |\n| Total liabilities | **226** |\n| Total equity and liabilities | **348** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=409\nCurrent liabilities=205\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 292 |\n| Machinery | 176 |\n| Office equipment | 42 |\n| Patents, trademarks and licences | 45 |\n| Inventory | 192 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 102 |\n| Total assets | **964** |\n| **EQUITY** | |\n| Share capital | 149 |\n| Retained earnings | 116 |\n| Total equity | **265** |\n| **LIABILITIES** | |\n| Long-term bank loan | 436 |\n| Bonds payable | 58 |\n| Trade payables | 170 |\n| Bank overdraft | 35 |\n| Total liabilities | **699** |\n| Total equity and liabilities | **964** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.2.",
-      "Inventory of €95 thousand is correctly classified as a current asset.",
-      "A published version of the extract above, showing total assets of €348 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "The equity ratio is below 32.7%.",
-      "An independent audit of the extract above, including the total assets of €348 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+      "The current ratio exceeds 1.34.",
+      "Working capital of €204 thousand is positive on this balance sheet.",
+      "The debt ratio exceeds 63.6%.",
+      "The equity ratio is below 20%.",
+      "Inventory make up more than 32.3% of current assets."
     ],
     "answer_key": [
       true,
@@ -82,57 +82,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 1.62.",
-      "TRUE — Inventory is always current.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "FALSE — Equity ratio ≈ 35.1%.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
+      "TRUE — Current ratio ≈ 2.00.",
+      "TRUE — Working capital = 204.",
+      "TRUE — Debt ratio ≈ 72.5%.",
+      "FALSE — Equity ratio ≈ 27.5%.",
+      "TRUE — Inventory are about 46.9% of current assets."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.008",
-    "title": "Balance Sheet Structure Review 8",
+    "title": "Short Balance Sheet Extract 8",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=298\nCurrent liabilities=199\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 478 |\n| Machinery | 210 |\n| Office equipment | 44 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 95 |\n| Trade receivables | 149 |\n| Cash and cash equivalents | 54 |\n| Total assets | **1080** |\n| **EQUITY** | |\n| Share capital | 168 |\n| Retained earnings | 273 |\n| Total equity | **441** |\n| **LIABILITIES** | |\n| Long-term bank loan | 387 |\n| Bonds payable | 53 |\n| Trade payables | 164 |\n| Bank overdraft | 35 |\n| Total liabilities | **639** |\n| Total equity and liabilities | **1080** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=290\nTotal liabilities=221\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 348 |\n| Inventory | 116 |\n| Cash and cash equivalents | 47 |\n| Total assets | **511** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 172 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 172 |\n| Trade payables | 49 |\n| Total liabilities | **221** |\n| Total equity and liabilities | **511** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Inventory of €95 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
-      "The acid-test ratio is exactly 1.02.",
-      "Total assets of €1,080 thousand equal total equity plus total liabilities.",
-      "On a balance sheet with total assets of €1,080 thousand, the acid-test ratio is more conservative than the current ratio because it leaves inventory out of current assets.",
-      "Non-current assets exceed current assets by more than 36.1% of current assets."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Inventory is always a current asset.",
-      "TRUE — Acid-test ratio ≈ 1.02.",
-      "TRUE — The balance sheet balances at 1080.",
-      "TRUE — Excluding inventory always makes the acid-test ratio no higher than the current ratio.",
-      "TRUE — Non-current assets are 782, current assets are 298."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.009",
-    "title": "Short Balance Sheet Extract 9",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=149\nTotal liabilities=232\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 215 |\n| Inventory | 125 |\n| Cash and cash equivalents | 41 |\n| Total assets | **381** |\n| **EQUITY** | |\n| Share capital | 115 |\n| Retained earnings | 34 |\n| Total equity | **149** |\n| **LIABILITIES** | |\n| Long-term bank loan | 152 |\n| Trade payables | 80 |\n| Total liabilities | **232** |\n| Total equity and liabilities | **381** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "Inventory of €125 thousand is correctly classified as a current asset.",
-      "A published version of the extract above, showing total assets of €381 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €381 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
-      "Because the extract above discloses total assets of €381 thousand to outside parties, it is best described as financial accounting rather than management accounting.",
-      "An auditor reviewing the extract above, including total assets of €381 thousand, is responsible for forming an opinion on the figures, not for guaranteeing the business will remain profitable."
+      "Inventory of €116 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €511 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €511 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses total assets of €511 thousand to outside parties, it is best described as financial accounting rather than management accounting.",
+      "An auditor reviewing the extract above, including total assets of €511 thousand, is responsible for forming an opinion on the figures, not for guaranteeing the business will remain profitable."
     ],
     "answer_key": [
       true,
@@ -151,18 +121,18 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.010",
-    "title": "Short Depreciation Extract 10",
-    "difficulty_level": "2/5",
+    "case_id": "CASE 6.4.009",
+    "title": "Short Depreciation Extract 9",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=13250\nAsset B=4400\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €106,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €25,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9286\nAsset B=4200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €65,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset A's annual depreciation charge is exactly €13,250.",
-      "Asset B's annual depreciation charge is exactly €4,400.",
-      "Asset A's annual depreciation charge is more than 44.4% higher than Asset B's annual depreciation charge.",
-      "A published version of the extract above, showing the combined asset cost of €131,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the the combined asset cost of €131,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+      "Asset A's annual depreciation charge is exactly €9,286.",
+      "Asset A's annual depreciation charge is more than 29.9% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
     ],
     "answer_key": [
       true,
@@ -172,11 +142,41 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Asset A annual charge = €13,250.",
-      "TRUE — Asset B annual charge = €4,400.",
-      "TRUE — Asset A ≈ €13,250 a year versus Asset B ≈ €4,400 a year.",
+      "TRUE — Asset A annual charge = €9,286.",
+      "TRUE — Asset A ≈ €9,286 a year versus Asset B ≈ €4,200 a year.",
       "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
+      "TRUE — Audits provide reasonable, not absolute, assurance.",
+      "TRUE — Reports aimed at external parties fall under financial accounting."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.010",
+    "title": "Asset Composition Chart 10",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=356\nCurrent liabilities=223\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €133 thousand is positive on this balance sheet.",
+      "The debt ratio exceeds 56%.",
+      "Trade receivables make up less than 48.5% of current assets.",
+      "Cash and cash equivalents make up more than 23.1% of current assets.",
+      "Inventory of €156 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Working capital = 133.",
+      "TRUE — Debt ratio ≈ 59.5%.",
+      "TRUE — Trade receivables are about 22.8% of current assets.",
+      "TRUE — Cash and cash equivalents are about 33.4% of current assets.",
+      "TRUE — Inventory is always a current asset."
     ]
   },
   {
@@ -190,7 +190,7 @@
     "statements": [
       "The equity ratio is below 29.8%.",
       "The long-term bank loan of €120 thousand is correctly classified within equity.",
-      "Inventory of €116 thousand is correctly classified as a current asset.",
+      "The current ratio is exactly 2.18.",
       "Because the extract above (total assets of €517 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
       "Internal management reports covering the same period as the extract above (total assets of €517 thousand) must follow the identical statutory format shown here."
     ],
@@ -204,7 +204,7 @@
     "tactical_explanations": [
       "FALSE — Equity ratio ≈ 61.7%.",
       "FALSE — A loan is a liability, never equity.",
-      "TRUE — Inventory is always current.",
+      "TRUE — Current ratio ≈ 2.18.",
       "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
       "FALSE — Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements."
     ]
@@ -212,17 +212,17 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.013",
-    "title": "Asset Composition Chart 13",
+    "title": "Short Depreciation Extract 13",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=351\nCurrent liabilities=246\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 336 |\n| Machinery | 257 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 40 |\n| Inventory | 237 |\n| Trade receivables | 62 |\n| Cash and cash equivalents | 52 |\n| Total assets | **1024** |\n| **EQUITY** | |\n| Share capital | 165 |\n| Retained earnings | 238 |\n| Total equity | **403** |\n| **LIABILITIES** | |\n| Long-term bank loan | 323 |\n| Bonds payable | 52 |\n| Trade payables | 206 |\n| Bank overdraft | 40 |\n| Total liabilities | **621** |\n| Total equity and liabilities | **1024** |\n\nEvaluate the following economic assertions:",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9250\nAsset B=4400\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €74,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio is below 0.74.",
-      "The debt ratio exceeds 75.8%.",
-      "The equity ratio is below 40.5%.",
-      "Buildings make up more than 46.4% of total assets.",
-      "Cash and cash equivalents make up more than 26.9% of current assets."
+      "Asset A's annual depreciation charge is exactly €8,722.",
+      "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Asset B's annual depreciation charge is exactly €4,400.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.",
+      "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
     ],
     "answer_key": [
       false,
@@ -232,27 +232,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.43.",
-      "FALSE — Debt ratio ≈ 60.6%.",
-      "TRUE — Equity ratio ≈ 39.4%.",
-      "FALSE — Buildings are about 32.8% of total assets.",
-      "FALSE — Cash and cash equivalents are about 14.8% of current assets."
+      "FALSE — Asset A annual charge = €9,250.",
+      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
+      "TRUE — Asset B annual charge = €4,400.",
+      "FALSE — Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.",
+      "FALSE — Figures such as this are routinely published for external users like tax authorities and shareholders."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.014",
-    "title": "Short Balance Sheet Extract 14",
+    "title": "Balance Sheet Structure Review 14",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=321\nTotal liabilities=223\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 372 |\n| Inventory | 89 |\n| Cash and cash equivalents | 83 |\n| Total assets | **544** |\n| **EQUITY** | |\n| Share capital | 172 |\n| Retained earnings | 149 |\n| Total equity | **321** |\n| **LIABILITIES** | |\n| Long-term bank loan | 187 |\n| Trade payables | 36 |\n| Total liabilities | **223** |\n| Total equity and liabilities | **544** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=467\nCurrent liabilities=263\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 510 |\n| Machinery | 167 |\n| Office equipment | 75 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 263 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 38 |\n| Total assets | **1313** |\n| **EQUITY** | |\n| Share capital | 204 |\n| Retained earnings | 419 |\n| Total equity | **623** |\n| **LIABILITIES** | |\n| Long-term bank loan | 361 |\n| Bonds payable | 66 |\n| Trade payables | 237 |\n| Bank overdraft | 26 |\n| Total liabilities | **690** |\n| Total equity and liabilities | **1313** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The equity ratio is below 32%.",
-      "Inventory of €89 thousand is correctly classified as a current asset.",
-      "The long-term bank loan of €187 thousand is correctly classified within equity.",
-      "A published version of the extract above, showing total assets of €544 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €544 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+      "The equity ratio is below 33.6%.",
+      "The current ratio exceeds 1.35.",
+      "Buildings make up more than 53% of total assets.",
+      "The debt ratio exceeds 47.9%.",
+      "Inventory make up more than 54% of current assets."
     ],
     "answer_key": [
       false,
@@ -262,27 +262,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 59.0%.",
-      "TRUE — Inventory is always current.",
-      "FALSE — A loan is a liability, never equity.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
+      "FALSE — Equity ratio ≈ 47.4%.",
+      "TRUE — Current ratio ≈ 1.78.",
+      "FALSE — Buildings are about 38.8% of total assets.",
+      "TRUE — Debt ratio ≈ 52.6%.",
+      "TRUE — Inventory are about 56.3% of current assets."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.015",
-    "title": "Short Depreciation Extract 15",
+    "title": "Short Balance Sheet Extract 15",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=15600\nAsset B=6000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €78,000 purchase price, 5-year useful life, no residual value |\n| Asset B | €35,000 purchase price, 5-year useful life, €5,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=279\nTotal liabilities=137\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 255 |\n| Inventory | 85 |\n| Cash and cash equivalents | 76 |\n| Total assets | **416** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 117 |\n| Total equity | **279** |\n| **LIABILITIES** | |\n| Long-term bank loan | 101 |\n| Trade payables | 36 |\n| Total liabilities | **137** |\n| Total equity and liabilities | **416** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset B's annual depreciation charge is exactly €6,000.",
-      "Asset A's annual depreciation charge is more than 20.2% higher than Asset B's annual depreciation charge.",
-      "Asset A's annual depreciation charge is exactly €14,967.",
-      "A published version of the extract above, showing the combined asset cost of €113,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "Because the extract above (the combined asset cost of €113,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+      "The current ratio exceeds 1.3.",
+      "Inventory of €85 thousand is correctly classified as a current asset.",
+      "The equity ratio is below 25.2%.",
+      "The current ratio is exactly 4.47.",
+      "The long-term bank loan of €101 thousand is correctly classified within equity."
     ],
     "answer_key": [
       true,
@@ -292,27 +292,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Asset B annual charge = €6,000.",
-      "TRUE — Asset A ≈ €15,600 a year versus Asset B ≈ €6,000 a year.",
-      "FALSE — Asset A annual charge = €15,600.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives."
+      "TRUE — Current ratio ≈ 4.47.",
+      "TRUE — Inventory is always current.",
+      "FALSE — Equity ratio ≈ 67.1%.",
+      "TRUE — Current ratio ≈ 4.47.",
+      "FALSE — A loan is a liability, never equity."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.016",
-    "title": "Short Balance Sheet Extract 16",
+    "title": "Short Depreciation Extract 16",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=305\nTotal liabilities=185\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 254 |\n| Inventory | 149 |\n| Cash and cash equivalents | 87 |\n| Total assets | **490** |\n| **EQUITY** | |\n| Share capital | 143 |\n| Retained earnings | 162 |\n| Total equity | **305** |\n| **LIABILITIES** | |\n| Long-term bank loan | 114 |\n| Trade payables | 71 |\n| Total liabilities | **185** |\n| Total equity and liabilities | **490** |\n\nEvaluate the following economic assertions:",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9750\nAsset B=7000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €78,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €39,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The long-term bank loan of €114 thousand is correctly classified within equity.",
-      "Inventory of €149 thousand is correctly classified as a current asset.",
-      "A published version of the extract above, showing total assets of €490 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €490 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
-      "Because the extract above discloses total assets of €490 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+      "Because the extract above (the combined asset cost of €117,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Asset A's annual depreciation charge is exactly €9,750.",
+      "Asset B's annual depreciation charge is exactly €7,000.",
+      "Asset A's annual depreciation charge is more than 32.4% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €117,000 thousand, is an example of external financial reporting that a lender might study before extending credit."
     ],
     "answer_key": [
       false,
@@ -322,11 +322,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — A loan is a liability, never equity.",
-      "TRUE — Inventory is always current.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance.",
-      "TRUE — Reports aimed at external parties fall under financial accounting."
+      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
+      "TRUE — Asset A annual charge = €9,750.",
+      "TRUE — Asset B annual charge = €7,000.",
+      "TRUE — Asset A ≈ €9,750 a year versus Asset B ≈ €7,000 a year.",
+      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders."
     ]
   },
   {
@@ -339,10 +339,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=335\nCurrent liabilities=252\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 480 |\n| Machinery | 214 |\n| Office equipment | 38 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 82 |\n| Trade receivables | 161 |\n| Cash and cash equivalents | 92 |\n| Total assets | **1132** |\n| **EQUITY** | |\n| Share capital | 239 |\n| Retained earnings | 279 |\n| Total equity | **518** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 48 |\n| Trade payables | 227 |\n| Bank overdraft | 25 |\n| Total liabilities | **614** |\n| Total equity and liabilities | **1132** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The current ratio exceeds 1.14.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.17 times over.",
+      "The current ratio is below 0.83.",
       "Working capital of €83 thousand is positive on this balance sheet.",
-      "The equity ratio is below 35.7%.",
-      "Cash and cash equivalents make up more than 24.2% of current assets."
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.17 times over.",
+      "Buildings make up more than 39.3% of total assets."
     ],
     "answer_key": [
       true,
@@ -353,10 +353,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Current ratio ≈ 1.33.",
-      "FALSE — Acid-test ratio ≈ 1.00.",
+      "FALSE — Current ratio ≈ 1.33.",
       "TRUE — Working capital = 83.",
-      "FALSE — Equity ratio ≈ 45.8%.",
-      "TRUE — Cash and cash equivalents are about 27.5% of current assets."
+      "FALSE — Acid-test ratio ≈ 1.00.",
+      "TRUE — Buildings are about 42.4% of total assets."
     ]
   },
   {
@@ -368,11 +368,11 @@
     "half": "table",
     "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=288\nTotal liabilities=216\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 312 |\n| Inventory | 145 |\n| Cash and cash equivalents | 47 |\n| Total assets | **504** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 170 |\n| Total equity | **288** |\n| **LIABILITIES** | |\n| Long-term bank loan | 144 |\n| Trade payables | 72 |\n| Total liabilities | **216** |\n| Total equity and liabilities | **504** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.3.",
+      "Inventory of €145 thousand is correctly classified as a current asset.",
       "The equity ratio is below 31.3%.",
       "The long-term bank loan of €144 thousand is correctly classified within equity.",
       "Because the extract above (total assets of €504 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
-      "Inventory of €145 thousand is correctly classified as a current asset."
+      "The current ratio is exactly 2.67."
     ],
     "answer_key": [
       true,
@@ -382,11 +382,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.67.",
+      "TRUE — Inventory is always current.",
       "FALSE — Equity ratio ≈ 57.1%.",
       "FALSE — A loan is a liability, never equity.",
       "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
-      "TRUE — Inventory is always current."
+      "TRUE — Current ratio ≈ 2.67."
     ]
   },
   {
@@ -422,17 +422,17 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.022",
-    "title": "Short Balance Sheet Extract 22",
+    "title": "Asset Composition Chart 22",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=208\nTotal liabilities=169\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 251 |\n| Inventory | 71 |\n| Cash and cash equivalents | 55 |\n| Total assets | **377** |\n| **EQUITY** | |\n| Share capital | 140 |\n| Retained earnings | 68 |\n| Total equity | **208** |\n| **LIABILITIES** | |\n| Long-term bank loan | 111 |\n| Trade payables | 58 |\n| Total liabilities | **169** |\n| Total equity and liabilities | **377** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=324\nCurrent liabilities=193\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 348 |\n| Machinery | 138 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 68 |\n| Inventory | 175 |\n| Trade receivables | 83 |\n| Cash and cash equivalents | 66 |\n| Total assets | **929** |\n| **EQUITY** | |\n| Share capital | 292 |\n| Retained earnings | 87 |\n| Total equity | **379** |\n| **LIABILITIES** | |\n| Long-term bank loan | 278 |\n| Bonds payable | 79 |\n| Trade payables | 141 |\n| Bank overdraft | 52 |\n| Total liabilities | **550** |\n| Total equity and liabilities | **929** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The equity ratio is below 49.4%.",
-      "Inventory of €71 thousand is correctly classified as a current asset.",
-      "The current ratio is exactly 2.17.",
-      "The long-term bank loan of €111 thousand is correctly classified within equity.",
-      "A published version of the extract above, showing total assets of €377 thousand, is an example of external financial reporting that a lender might study before extending credit."
+      "The equity ratio is below 39.8%.",
+      "The current ratio exceeds 1.63.",
+      "Working capital of €131 thousand is positive on this balance sheet.",
+      "The long-term bank loan of €278 thousand should be classified within equity rather than liabilities.",
+      "The debt ratio exceeds 48.3%."
     ],
     "answer_key": [
       false,
@@ -442,27 +442,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 55.2%.",
-      "TRUE — Inventory is always current.",
-      "TRUE — Current ratio ≈ 2.17.",
-      "FALSE — A loan is a liability, never equity.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders."
+      "FALSE — Equity ratio ≈ 40.8%.",
+      "TRUE — Current ratio ≈ 1.68.",
+      "TRUE — Working capital = 131.",
+      "FALSE — A bank loan is a liability, not equity, regardless of its size.",
+      "TRUE — Debt ratio ≈ 59.2%."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.023",
-    "title": "Balance Sheet Structure Review 23",
+    "title": "Short Balance Sheet Extract 23",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=266\nCurrent liabilities=233\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 479 |\n| Machinery | 218 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 61 |\n| Inventory | 119 |\n| Trade receivables | 66 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1075** |\n| **EQUITY** | |\n| Share capital | 208 |\n| Retained earnings | 135 |\n| Total equity | **343** |\n| **LIABILITIES** | |\n| Long-term bank loan | 413 |\n| Bonds payable | 86 |\n| Trade payables | 161 |\n| Bank overdraft | 72 |\n| Total liabilities | **732** |\n| Total equity and liabilities | **1075** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=359\nTotal liabilities=166\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 349 |\n| Inventory | 121 |\n| Cash and cash equivalents | 55 |\n| Total assets | **525** |\n| **EQUITY** | |\n| Share capital | 131 |\n| Retained earnings | 228 |\n| Total equity | **359** |\n| **LIABILITIES** | |\n| Long-term bank loan | 96 |\n| Trade payables | 70 |\n| Total liabilities | **166** |\n| Total equity and liabilities | **525** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.6.",
-      "The current ratio is below 0.92.",
-      "Buildings make up more than 38.2% of total assets.",
-      "Inventory make up more than 36.3% of current assets.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.74 times over."
+      "The equity ratio is below 39.6%.",
+      "The long-term bank loan of €96 thousand is correctly classified within equity.",
+      "The current ratio exceeds 1.43.",
+      "Inventory of €121 thousand is correctly classified as a current asset.",
+      "The current ratio is exactly 2.98."
     ],
     "answer_key": [
       false,
@@ -472,27 +472,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.14.",
-      "FALSE — Current ratio ≈ 1.14.",
-      "TRUE — Buildings are about 44.6% of total assets.",
-      "TRUE — Inventory are about 44.7% of current assets.",
-      "FALSE — Acid-test ratio ≈ 0.63."
+      "FALSE — Equity ratio ≈ 68.4%.",
+      "FALSE — A loan is a liability, never equity.",
+      "TRUE — Current ratio ≈ 2.51.",
+      "TRUE — Inventory is always current.",
+      "FALSE — Current ratio ≈ 2.51."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.024",
-    "title": "Short Balance Sheet Extract 24",
+    "title": "Short Depreciation Extract 24",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=183\nTotal liabilities=245\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 265 |\n| Inventory | 80 |\n| Cash and cash equivalents | 83 |\n| Total assets | **428** |\n| **EQUITY** | |\n| Share capital | 81 |\n| Retained earnings | 102 |\n| Total equity | **183** |\n| **LIABILITIES** | |\n| Long-term bank loan | 170 |\n| Trade payables | 75 |\n| Total liabilities | **245** |\n| Total equity and liabilities | **428** |\n\nEvaluate the following economic assertions:",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=16400\nAsset B=7200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €82,000 purchase price, 5-year useful life, no residual value |\n| Asset B | €38,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The long-term bank loan of €170 thousand is correctly classified within equity.",
-      "The current ratio exceeds 1.78.",
-      "Because the extract above (total assets of €428 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
-      "Inventory of €80 thousand is correctly classified as a current asset.",
-      "Internal management reports covering the same period as the extract above (total assets of €428 thousand) must follow the identical statutory format shown here."
+      "Asset A's annual depreciation charge is exactly €17,843.",
+      "Asset A's annual depreciation charge is more than 38.4% higher than Asset B's annual depreciation charge.",
+      "Asset B's annual depreciation charge is exactly €6,416.",
+      "A published version of the extract above, showing the combined asset cost of €120,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "Because the extract above (the combined asset cost of €120,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
     ],
     "answer_key": [
       false,
@@ -502,27 +502,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — A loan is a liability, never equity.",
-      "TRUE — Current ratio ≈ 2.17.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
-      "TRUE — Inventory is always current.",
-      "FALSE — Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements."
+      "FALSE — Asset A annual charge = €16,400.",
+      "TRUE — Asset A ≈ €16,400 a year versus Asset B ≈ €7,200 a year.",
+      "FALSE — Asset B annual charge = €7,200.",
+      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
+      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.027",
-    "title": "Short Depreciation Extract 27",
+    "title": "Liquidity From the Balance Sheet 27",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=14286\nAsset B=6200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €100,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €33,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=350\nCurrent liabilities=296\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 439 |\n| Machinery | 217 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 182 |\n| Trade receivables | 64 |\n| Cash and cash equivalents | 104 |\n| Total assets | **1102** |\n| **EQUITY** | |\n| Share capital | 212 |\n| Retained earnings | 154 |\n| Total equity | **366** |\n| **LIABILITIES** | |\n| Long-term bank loan | 354 |\n| Bonds payable | 86 |\n| Trade payables | 247 |\n| Bank overdraft | 49 |\n| Total liabilities | **736** |\n| Total equity and liabilities | **1102** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset A's annual depreciation charge is more than 42.1% higher than Asset B's annual depreciation charge.",
-      "Asset A's annual depreciation charge is exactly €14,835.",
-      "A published version of the extract above, showing the combined asset cost of €133,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the the combined asset cost of €133,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
-      "Because the extract above discloses the combined asset cost of €133,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+      "Working capital of €54 thousand is positive on this balance sheet.",
+      "The current ratio exceeds 1.89.",
+      "The equity ratio is below 38%.",
+      "Inventory make up more than 34.8% of current assets.",
+      "Trade receivables make up less than 42.3% of current assets."
     ],
     "answer_key": [
       true,
@@ -532,11 +532,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Asset A ≈ €14,286 a year versus Asset B ≈ €6,200 a year.",
-      "FALSE — Asset A annual charge = €14,286.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance.",
-      "TRUE — Reports aimed at external parties fall under financial accounting."
+      "TRUE — Working capital = 54.",
+      "FALSE — Current ratio ≈ 1.18.",
+      "TRUE — Equity ratio ≈ 33.2%.",
+      "TRUE — Inventory are about 52.0% of current assets.",
+      "TRUE — Trade receivables are about 18.3% of current assets."
     ]
   },
   {
@@ -572,17 +572,17 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.031",
-    "title": "Asset Composition Chart 31",
+    "title": "Short Depreciation Extract 31",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=292\nCurrent liabilities=141\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 335 |\n| Machinery | 223 |\n| Office equipment | 50 |\n| Patents, trademarks and licences | 99 |\n| Inventory | 173 |\n| Trade receivables | 65 |\n| Cash and cash equivalents | 54 |\n| Total assets | **999** |\n| **EQUITY** | |\n| Share capital | 276 |\n| Retained earnings | 249 |\n| Total equity | **525** |\n| **LIABILITIES** | |\n| Long-term bank loan | 265 |\n| Bonds payable | 68 |\n| Trade payables | 115 |\n| Bank overdraft | 26 |\n| Total liabilities | **474** |\n| Total equity and liabilities | **999** |\n\nEvaluate the following economic assertions:",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=10429\nAsset B=4600\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €73,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €28,000 purchase price, 5-year useful life, €5,000 residual value |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.11.",
-      "Inventory make up more than 37.6% of current assets.",
-      "Trade receivables make up less than 35.5% of current assets.",
-      "Inventory of €173 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
-      "The current ratio is exactly 2.07."
+      "Asset A's annual depreciation charge is exactly €10,429.",
+      "Asset B's annual depreciation charge is exactly €4,600.",
+      "Asset A's annual depreciation charge is more than 23.2% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €101,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €101,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
     ],
     "answer_key": [
       true,
@@ -592,27 +592,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.07.",
-      "TRUE — Inventory are about 59.2% of current assets.",
-      "TRUE — Trade receivables are about 22.3% of current assets.",
-      "TRUE — Inventory is always a current asset.",
-      "TRUE — Current ratio is 2.07."
+      "TRUE — Asset A annual charge = €10,429.",
+      "TRUE — Asset B annual charge = €4,600.",
+      "TRUE — Asset A ≈ €10,429 a year versus Asset B ≈ €4,600 a year.",
+      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
+      "TRUE — Audits provide reasonable, not absolute, assurance."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.033",
-    "title": "Short Balance Sheet Extract 33",
+    "title": "Liquidity From the Balance Sheet 33",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=307\nTotal liabilities=198\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 366 |\n| Inventory | 105 |\n| Cash and cash equivalents | 34 |\n| Total assets | **505** |\n| **EQUITY** | |\n| Share capital | 106 |\n| Retained earnings | 201 |\n| Total equity | **307** |\n| **LIABILITIES** | |\n| Long-term bank loan | 158 |\n| Trade payables | 40 |\n| Total liabilities | **198** |\n| Total equity and liabilities | **505** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=422\nCurrent liabilities=275\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 192 |\n| Office equipment | 34 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 245 |\n| Trade receivables | 134 |\n| Cash and cash equivalents | 43 |\n| Total assets | **1191** |\n| **EQUITY** | |\n| Share capital | 282 |\n| Retained earnings | 161 |\n| Total equity | **443** |\n| **LIABILITIES** | |\n| Long-term bank loan | 433 |\n| Bonds payable | 40 |\n| Trade payables | 209 |\n| Bank overdraft | 66 |\n| Total liabilities | **748** |\n| Total equity and liabilities | **1191** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The equity ratio is below 20.3%.",
-      "The long-term bank loan of €158 thousand is correctly classified within equity.",
-      "The current ratio is exactly 3.68.",
-      "Inventory of €105 thousand is correctly classified as a current asset.",
-      "Because the extract above (total assets of €505 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+      "The current ratio is below 1.19.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.12 times over.",
+      "The equity ratio is below 30.9%.",
+      "The current ratio exceeds 1.36.",
+      "Buildings make up more than 44.1% of total assets."
     ],
     "answer_key": [
       false,
@@ -622,236 +622,26 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 60.8%.",
-      "FALSE — A loan is a liability, never equity.",
-      "FALSE — Current ratio ≈ 3.48.",
-      "TRUE — Inventory is always current.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives."
+      "FALSE — Current ratio ≈ 1.53.",
+      "FALSE — Acid-test ratio ≈ 0.64.",
+      "FALSE — Equity ratio ≈ 37.2%.",
+      "TRUE — Current ratio ≈ 1.53.",
+      "FALSE — Buildings are about 42.1% of total assets."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.040",
-    "title": "Short Depreciation Extract 40",
+    "title": "Short Balance Sheet Extract 40",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=14000\nAsset B=7400\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €70,000 purchase price, 5-year useful life, no residual value |\n| Asset B | €39,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=182\nTotal liabilities=228\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 231 |\n| Inventory | 93 |\n| Cash and cash equivalents | 86 |\n| Total assets | **410** |\n| **EQUITY** | |\n| Share capital | 88 |\n| Retained earnings | 94 |\n| Total equity | **182** |\n| **LIABILITIES** | |\n| Long-term bank loan | 139 |\n| Trade payables | 89 |\n| Total liabilities | **228** |\n| Total equity and liabilities | **410** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset A's annual depreciation charge is more than 36.6% higher than Asset B's annual depreciation charge.",
-      "A published version of the extract above, showing the combined asset cost of €109,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the the combined asset cost of €109,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
-      "Asset A's annual depreciation charge is exactly €15,082.",
-      "Asset B's annual depreciation charge is exactly €8,337."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Asset A ≈ €14,000 a year versus Asset B ≈ €7,400 a year.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance.",
-      "FALSE — Asset A annual charge = €14,000.",
-      "FALSE — Asset B annual charge = €7,400."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.041",
-    "title": "Short Balance Sheet Extract 41",
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=315\nTotal liabilities=177\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 279 |\n| Inventory | 156 |\n| Cash and cash equivalents | 57 |\n| Total assets | **492** |\n| **EQUITY** | |\n| Share capital | 96 |\n| Retained earnings | 219 |\n| Total equity | **315** |\n| **LIABILITIES** | |\n| Long-term bank loan | 131 |\n| Trade payables | 46 |\n| Total liabilities | **177** |\n| Total equity and liabilities | **492** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "Inventory of €156 thousand is correctly classified as a current asset.",
-      "The equity ratio is below 38.5%.",
-      "The current ratio is exactly 4.63.",
-      "A published version of the extract above, showing total assets of €492 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €492 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Inventory is always current.",
-      "FALSE — Equity ratio ≈ 64.0%.",
-      "TRUE — Current ratio ≈ 4.63.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.044",
-    "title": "Balance Sheet Structure Review 44",
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=412\nCurrent liabilities=198\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 495 |\n| Machinery | 222 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 54 |\n| Inventory | 218 |\n| Trade receivables | 153 |\n| Cash and cash equivalents | 41 |\n| Total assets | **1246** |\n| **EQUITY** | |\n| Share capital | 213 |\n| Retained earnings | 349 |\n| Total equity | **562** |\n| **LIABILITIES** | |\n| Long-term bank loan | 423 |\n| Bonds payable | 63 |\n| Trade payables | 166 |\n| Bank overdraft | 32 |\n| Total liabilities | **684** |\n| Total equity and liabilities | **1246** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "The equity ratio is below 41.2%.",
-      "The debt ratio exceeds 57.7%.",
-      "Trade receivables make up less than 36.7% of current assets.",
-      "Cash and cash equivalents make up more than 31.5% of current assets.",
-      "The current ratio exceeds 1.48."
-    ],
-    "answer_key": [
-      false,
-      false,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 45.1%.",
-      "FALSE — Debt ratio ≈ 54.9%.",
-      "FALSE — Trade receivables are about 37.1% of current assets.",
-      "FALSE — Cash and cash equivalents are about 10.0% of current assets.",
-      "TRUE — Current ratio ≈ 2.08."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.045",
-    "title": "Short Depreciation Extract 45",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=28750\nAsset B=5200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €115,000 purchase price, 4-year useful life, no residual value |\n| Asset B | €31,000 purchase price, 5-year useful life, €5,000 residual value |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "Asset A's annual depreciation charge is exactly €28,750.",
-      "Asset B's annual depreciation charge is exactly €5,200.",
-      "Asset A's annual depreciation charge is more than 32.7% higher than Asset B's annual depreciation charge.",
-      "A published version of the extract above, showing the combined asset cost of €146,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the the combined asset cost of €146,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Asset A annual charge = €28,750.",
-      "TRUE — Asset B annual charge = €5,200.",
-      "TRUE — Asset A ≈ €28,750 a year versus Asset B ≈ €5,200 a year.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.048",
-    "title": "Short Balance Sheet Extract 48",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=134\nTotal liabilities=293\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 314 |\n| Inventory | 77 |\n| Cash and cash equivalents | 36 |\n| Total assets | **427** |\n| **EQUITY** | |\n| Share capital | 164 |\n| Retained earnings | -30 |\n| Total equity | **134** |\n| **LIABILITIES** | |\n| Long-term bank loan | 193 |\n| Trade payables | 100 |\n| Total liabilities | **293** |\n| Total equity and liabilities | **427** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "The long-term bank loan of €193 thousand is correctly classified within equity.",
-      "The equity ratio is below 37.3%.",
-      "Inventory of €77 thousand is correctly classified as a current asset.",
-      "The current ratio is exactly 0.83.",
-      "Because the extract above (total assets of €427 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — A loan is a liability, never equity.",
-      "TRUE — Equity ratio ≈ 31.4%.",
-      "TRUE — Inventory is always current.",
-      "FALSE — Current ratio ≈ 1.13.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.049",
-    "title": "Asset Composition Chart 49",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=357\nCurrent liabilities=229\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 377 |\n| Machinery | 125 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 93 |\n| Inventory | 136 |\n| Trade receivables | 124 |\n| Cash and cash equivalents | 97 |\n| Total assets | **1003** |\n| **EQUITY** | |\n| Share capital | 131 |\n| Retained earnings | 169 |\n| Total equity | **300** |\n| **LIABILITIES** | |\n| Long-term bank loan | 421 |\n| Bonds payable | 53 |\n| Trade payables | 148 |\n| Bank overdraft | 81 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1003** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "The current ratio is below 0.71.",
-      "Working capital of €128 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.68 times over.",
-      "The equity ratio is below 17.8%.",
-      "The debt ratio exceeds 50.7%."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Current ratio ≈ 1.56.",
-      "TRUE — Working capital = 128.",
-      "TRUE — Acid-test ratio ≈ 0.97.",
-      "FALSE — Equity ratio ≈ 29.9%.",
-      "TRUE — Debt ratio ≈ 70.1%."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.050",
-    "title": "Short Depreciation Extract 50",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=15667\nAsset B=4600\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €94,000 purchase price, 6-year useful life, no residual value |\n| Asset B | €28,000 purchase price, 5-year useful life, €5,000 residual value |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "Because the extract above (the combined asset cost of €122,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
-      "Asset A's annual depreciation charge is exactly €15,667.",
-      "Asset B's annual depreciation charge is exactly €4,600.",
-      "Internal management reports covering the same period as the extract above (the combined asset cost of €122,000 thousand) must follow the identical statutory format shown here.",
-      "The the combined asset cost of €122,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
-      "TRUE — Asset A annual charge = €15,667.",
-      "TRUE — Asset B annual charge = €4,600.",
-      "FALSE — Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.",
-      "FALSE — Figures such as this are routinely published for external users like tax authorities and shareholders."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.051",
-    "title": "Short Balance Sheet Extract 51",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=186\nTotal liabilities=225\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 211 |\n| Inventory | 146 |\n| Cash and cash equivalents | 54 |\n| Total assets | **411** |\n| **EQUITY** | |\n| Share capital | 127 |\n| Retained earnings | 59 |\n| Total equity | **186** |\n| **LIABILITIES** | |\n| Long-term bank loan | 139 |\n| Trade payables | 86 |\n| Total liabilities | **225** |\n| Total equity and liabilities | **411** |\n\nEvaluate the following economic assertions:",
-    "statements": [
-      "The current ratio exceeds 1.57.",
-      "Inventory of €146 thousand is correctly classified as a current asset.",
-      "A published version of the extract above, showing total assets of €411 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "The equity ratio is below 20.9%.",
+      "Inventory of €93 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €410 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €410 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "The equity ratio is below 33.1%.",
       "The long-term bank loan of €139 thousand is correctly classified within equity."
     ],
     "answer_key": [
@@ -862,27 +652,87 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.33.",
       "TRUE — Inventory is always current.",
       "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "FALSE — Equity ratio ≈ 45.3%.",
+      "TRUE — Audits provide reasonable, not absolute, assurance.",
+      "FALSE — Equity ratio ≈ 44.4%.",
       "FALSE — A loan is a liability, never equity."
     ]
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.052",
-    "title": "Asset Composition Chart 52",
+    "case_id": "CASE 6.4.041",
+    "title": "Earnings Per Share From Reported Figures 41",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=25\nApril | Price=22\nMay | Price=20\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=27000\nMarch | Volume=51000\nApril | Volume=25000\nMay | Volume=61000\nJune | Volume=62000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 29 | 620,000 | 56,000 |\n| February | 28 | 620,000 | 27,000 |\n| March | 25 | 620,000 | 51,000 |\n| April | 22 | 620,000 | 25,000 |\n| May | 20 | 620,000 | 61,000 |\n| June | 20 | 620,000 | 62,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 261 |\n| Shares outstanding | 620,000 |\n| Total shares traded (six months) | 282,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €9.4 million.",
+      "The closing share price rose by more than 17.6% from first to last month.",
+      "Highest closing price is more than 33.9% above the lowest.",
+      "Total shares traded over six months exceed 35.9% of shares outstanding.",
+      "Peak monthly share turnover exceeds 47,788 shares."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market capitalisation ≈ €12.4 million.",
+      "FALSE — Price change ≈ -31.0%.",
+      "TRUE — Range €20–€29.",
+      "TRUE — Turnover ≈ 45.5% of shares outstanding.",
+      "TRUE — Peak monthly volume = 62,000."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.044",
+    "title": "Earnings Per Share From Reported Figures 44",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=343\nCurrent liabilities=128\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 382 |\n| Machinery | 269 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 84 |\n| Trade receivables | 146 |\n| Cash and cash equivalents | 113 |\n| Total assets | **1070** |\n| **EQUITY** | |\n| Share capital | 179 |\n| Retained earnings | 305 |\n| Total equity | **484** |\n| **LIABILITIES** | |\n| Long-term bank loan | 407 |\n| Bonds payable | 51 |\n| Trade payables | 67 |\n| Bank overdraft | 61 |\n| Total liabilities | **586** |\n| Total equity and liabilities | **1070** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=27\nMarch | Price=27\nApril | Price=31\nMay | Price=31\nJune | Price=32\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=20000\nMarch | Volume=44000\nApril | Volume=42000\nMay | Volume=19000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 848,000 | 56,000 |\n| February | 27 | 848,000 | 20,000 |\n| March | 27 | 848,000 | 44,000 |\n| April | 31 | 848,000 | 42,000 |\n| May | 31 | 848,000 | 19,000 |\n| June | 32 | 848,000 | 52,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 287 |\n| Shares outstanding | 848,000 |\n| Total shares traded (six months) | 233,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Trade receivables make up less than 51.9% of current assets.",
-      "Cash and cash equivalents make up more than 13.5% of current assets.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 7.2%.",
-      "The current ratio is exactly 2.68.",
-      "The equity ratio is exactly 45.2%."
+      "The closing share price rose by more than 31.6% from first to last month.",
+      "Total shares traded over six months exceed 35.1% of shares outstanding.",
+      "Peak monthly share turnover exceeds 61,160 shares.",
+      "Earnings per share is exactly €0.23.",
+      "Market capitalisation at the last month exceeds €22.4 million."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change ≈ 28.0%.",
+      "FALSE — Turnover ≈ 27.5% of shares outstanding.",
+      "FALSE — Peak monthly volume = 56,000.",
+      "FALSE — Earnings per share ≈ €0.34.",
+      "TRUE — Market capitalisation ≈ €27.1 million."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.045",
+    "title": "Share Price and Market Capitalisation 45",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=14\nFebruary | Price=14\nMarch | Price=14\nApril | Price=12\nMay | Price=13\nJune | Price=12\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=49000\nMarch | Volume=17000\nApril | Volume=20000\nMay | Volume=57000\nJune | Volume=27000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 14 | 855,000 | 19,000 |\n| February | 14 | 855,000 | 49,000 |\n| March | 14 | 855,000 | 17,000 |\n| April | 12 | 855,000 | 20,000 |\n| May | 13 | 855,000 | 57,000 |\n| June | 12 | 855,000 | 27,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 306 |\n| Shares outstanding | 855,000 |\n| Total shares traded (six months) | 189,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €9.1 million (see the extract prepared for case 6.4.045).",
+      "Earnings per share exceeds €0.3 (see the extract prepared for case 6.4.045).",
+      "Peak monthly share turnover exceeds 54,837 shares (see the extract prepared for case 6.4.045).",
+      "Shares outstanding stay at 855,000 every month (see the extract prepared for case 6.4.045).",
+      "The last closing price is below the first (see the extract prepared for case 6.4.045)."
     ],
     "answer_key": [
       true,
@@ -892,27 +742,177 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Trade receivables are about 42.6% of current assets.",
-      "TRUE — Cash and cash equivalents are about 32.9% of current assets.",
-      "TRUE — Long-term financing covers non-current assets by about 29.6%.",
-      "TRUE — Current ratio is 2.68.",
-      "TRUE — Equity ratio ≈ 45.2%."
+      "TRUE — Market capitalisation ≈ €10.3 million.",
+      "TRUE — Earnings per share ≈ €0.36.",
+      "TRUE — Peak monthly volume = 57,000.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — 14 → 12."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.048",
+    "title": "Share Price and Market Capitalisation 48",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=18\nMarch | Price=20\nApril | Price=22\nMay | Price=21\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=44000\nFebruary | Volume=75000\nMarch | Volume=48000\nApril | Volume=32000\nMay | Volume=31000\nJune | Volume=38000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 17 | 716,000 | 44,000 |\n| February | 18 | 716,000 | 75,000 |\n| March | 20 | 716,000 | 48,000 |\n| April | 22 | 716,000 | 32,000 |\n| May | 21 | 716,000 | 31,000 |\n| June | 21 | 716,000 | 38,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 300 |\n| Shares outstanding | 716,000 |\n| Total shares traded (six months) | 268,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation rose by more than 30.9% over the period.",
+      "The closing share price rose by more than 21.9% from first to last month.",
+      "Market capitalisation at the last month exceeds €12.6 million.",
+      "Total shares traded over six months exceed 39.8% of shares outstanding.",
+      "Peak monthly share turnover exceeds 78,864 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — €12.2m → €15.0m.",
+      "TRUE — Price change ≈ 23.5%.",
+      "TRUE — Market capitalisation ≈ €15.0 million.",
+      "FALSE — Turnover ≈ 37.4% of shares outstanding.",
+      "FALSE — Peak monthly volume = 75,000."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.049",
+    "title": "Listed Company Performance Charts 49",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=14\nFebruary | Price=14\nMarch | Price=13\nApril | Price=14\nMay | Price=14\nJune | Price=15\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=30000\nFebruary | Volume=59000\nMarch | Volume=20000\nApril | Volume=28000\nMay | Volume=66000\nJune | Volume=21000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 14 | 602,000 | 30,000 |\n| February | 14 | 602,000 | 59,000 |\n| March | 13 | 602,000 | 20,000 |\n| April | 14 | 602,000 | 28,000 |\n| May | 14 | 602,000 | 66,000 |\n| June | 15 | 602,000 | 21,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 194 |\n| Shares outstanding | 602,000 |\n| Total shares traded (six months) | 224,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 10.6% from first to last month.",
+      "Market capitalisation at the last month exceeds €7.1 million.",
+      "Total shares traded over six months exceed 8.2% of shares outstanding.",
+      "Market capitalisation rose by more than 18.4% over the period.",
+      "Peak monthly share turnover exceeds 65,843 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change ≈ 7.1%.",
+      "TRUE — Market capitalisation ≈ €9.0 million.",
+      "TRUE — Turnover ≈ 37.2% of shares outstanding.",
+      "FALSE — €8.4m → €9.0m.",
+      "TRUE — Peak monthly volume = 66,000."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.050",
+    "title": "Earnings Per Share From Reported Figures 50",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=24\nMarch | Price=27\nApril | Price=29\nMay | Price=28\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=38000\nFebruary | Volume=49000\nMarch | Volume=25000\nApril | Volume=21000\nMay | Volume=25000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 684,000 | 38,000 |\n| February | 24 | 684,000 | 49,000 |\n| March | 27 | 684,000 | 25,000 |\n| April | 29 | 684,000 | 21,000 |\n| May | 28 | 684,000 | 25,000 |\n| June | 25 | 684,000 | 47,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 240 |\n| Shares outstanding | 684,000 |\n| Total shares traded (six months) | 205,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 26.8% from first to last month.",
+      "Market capitalisation at the last month exceeds €14.1 million.",
+      "Peak monthly share turnover exceeds 35,123 shares.",
+      "Market capitalisation rose by more than 31.9% over the period.",
+      "Highest closing price is more than 44.2% above the lowest."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change ≈ 0.0%.",
+      "TRUE — Market capitalisation ≈ €17.1 million.",
+      "TRUE — Peak monthly volume = 49,000.",
+      "FALSE — €17.1m → €17.1m.",
+      "FALSE — Range €24–€29."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.051",
+    "title": "Share Price and Market Capitalisation 51",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=29\nMarch | Price=30\nApril | Price=33\nMay | Price=30\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=44000\nFebruary | Volume=63000\nMarch | Volume=13000\nApril | Volume=54000\nMay | Volume=15000\nJune | Volume=68000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 29 | 432,000 | 44,000 |\n| February | 29 | 432,000 | 63,000 |\n| March | 30 | 432,000 | 13,000 |\n| April | 33 | 432,000 | 54,000 |\n| May | 30 | 432,000 | 15,000 |\n| June | 30 | 432,000 | 68,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 198 |\n| Shares outstanding | 432,000 |\n| Total shares traded (six months) | 257,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €11.3 million.",
+      "Earnings per share exceeds €0.43.",
+      "Total shares traded over six months exceed 11.4% of shares outstanding.",
+      "The closing share price rose by more than 8% from first to last month.",
+      "Market capitalisation rose by more than 17.6% over the period."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Market capitalisation ≈ €13.0 million.",
+      "TRUE — Earnings per share ≈ €0.46.",
+      "TRUE — Turnover ≈ 59.5% of shares outstanding.",
+      "FALSE — Price change ≈ 3.4%.",
+      "FALSE — €12.5m → €13.0m."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.052",
+    "title": "Listed Company Performance Charts 52",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=29\nMarch | Price=29\nApril | Price=31\nMay | Price=27\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=13000\nFebruary | Volume=71000\nMarch | Volume=75000\nApril | Volume=26000\nMay | Volume=47000\nJune | Volume=16000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 28 | 612,000 | 13,000 |\n| February | 29 | 612,000 | 71,000 |\n| March | 29 | 612,000 | 75,000 |\n| April | 31 | 612,000 | 26,000 |\n| May | 27 | 612,000 | 47,000 |\n| June | 28 | 612,000 | 16,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 277 |\n| Shares outstanding | 612,000 |\n| Total shares traded (six months) | 248,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €14.7 million (see the extract prepared for case 6.4.052).",
+      "Earnings per share exceeds €0.33 (see the extract prepared for case 6.4.052).",
+      "Total shares traded over six months exceed 10.1% of shares outstanding (see the extract prepared for case 6.4.052).",
+      "Peak monthly share turnover exceeds 49,276 shares (see the extract prepared for case 6.4.052).",
+      "Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.4.052)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market capitalisation ≈ €17.1 million.",
+      "TRUE — Earnings per share ≈ €0.45.",
+      "TRUE — Turnover ≈ 40.5% of shares outstanding.",
+      "TRUE — Peak monthly volume = 75,000.",
+      "TRUE — Rose in 3 of 5 steps."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.053",
-    "title": "Short Depreciation Extract 53",
+    "title": "Earnings Per Share From Reported Figures 53",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=12250\nAsset B=7000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €98,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €39,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=33\nMarch | Price=35\nApril | Price=36\nMay | Price=33\nJune | Price=35\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=52000\nFebruary | Volume=66000\nMarch | Volume=65000\nApril | Volume=71000\nMay | Volume=13000\nJune | Volume=13000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 30 | 716,000 | 52,000 |\n| February | 33 | 716,000 | 66,000 |\n| March | 35 | 716,000 | 65,000 |\n| April | 36 | 716,000 | 71,000 |\n| May | 33 | 716,000 | 13,000 |\n| June | 35 | 716,000 | 13,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 301 |\n| Shares outstanding | 716,000 |\n| Total shares traded (six months) | 280,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset A's annual depreciation charge is exactly €13,769.",
-      "Asset A's annual depreciation charge is more than 42.9% higher than Asset B's annual depreciation charge.",
-      "A published version of the extract above, showing the combined asset cost of €137,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "Asset B's annual depreciation charge is exactly €8,343.",
-      "Because the extract above (the combined asset cost of €137,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+      "The closing share price rose by more than 30% from first to last month.",
+      "Market capitalisation at the last month exceeds €23.8 million.",
+      "Total shares traded over six months exceed 22% of shares outstanding.",
+      "Market capitalisation rose by more than 31.1% over the period.",
+      "Highest closing price is more than 34.3% above the lowest."
     ],
     "answer_key": [
       false,
@@ -922,27 +922,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Asset A annual charge = €12,250.",
-      "TRUE — Asset A ≈ €12,250 a year versus Asset B ≈ €7,000 a year.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "FALSE — Asset B annual charge = €7,000.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives."
+      "FALSE — Price change ≈ 16.7%.",
+      "TRUE — Market capitalisation ≈ €25.1 million.",
+      "TRUE — Turnover ≈ 39.1% of shares outstanding.",
+      "FALSE — €21.5m → €25.1m.",
+      "FALSE — Range €30–€36."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.056",
-    "title": "Short Balance Sheet Extract 56",
+    "title": "Earnings Per Share From Reported Figures 56",
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=390\nTotal liabilities=184\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 377 |\n| Inventory | 152 |\n| Cash and cash equivalents | 45 |\n| Total assets | **574** |\n| **EQUITY** | |\n| Share capital | 80 |\n| Retained earnings | 310 |\n| Total equity | **390** |\n| **LIABILITIES** | |\n| Long-term bank loan | 100 |\n| Trade payables | 84 |\n| Total liabilities | **184** |\n| Total equity and liabilities | **574** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=24\nMarch | Price=23\nApril | Price=23\nMay | Price=25\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=24000\nFebruary | Volume=60000\nMarch | Volume=63000\nApril | Volume=18000\nMay | Volume=38000\nJune | Volume=31000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 27 | 891,000 | 24,000 |\n| February | 24 | 891,000 | 60,000 |\n| March | 23 | 891,000 | 63,000 |\n| April | 23 | 891,000 | 18,000 |\n| May | 25 | 891,000 | 38,000 |\n| June | 24 | 891,000 | 31,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 252 |\n| Shares outstanding | 891,000 |\n| Total shares traded (six months) | 234,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The current ratio exceeds 1.36.",
-      "Inventory of €152 thousand is correctly classified as a current asset.",
-      "The current ratio is exactly 2.35.",
-      "A published version of the extract above, showing total assets of €574 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €574 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+      "Market capitalisation at the last month exceeds €19.8 million (see the extract prepared for case 6.4.056).",
+      "Earnings per share exceeds €0.23 (see the extract prepared for case 6.4.056).",
+      "Peak monthly share turnover exceeds 43,737 shares (see the extract prepared for case 6.4.056).",
+      "Shares outstanding stay at 891,000 every month (see the extract prepared for case 6.4.056).",
+      "The last closing price is below the first (see the extract prepared for case 6.4.056)."
     ],
     "answer_key": [
       true,
@@ -952,27 +952,27 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Current ratio ≈ 2.35.",
-      "TRUE — Inventory is always current.",
-      "TRUE — Current ratio ≈ 2.35.",
-      "TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.",
-      "TRUE — Audits provide reasonable, not absolute, assurance."
+      "TRUE — Market capitalisation ≈ €21.4 million.",
+      "TRUE — Earnings per share ≈ €0.28.",
+      "TRUE — Peak monthly volume = 63,000.",
+      "TRUE — Shares outstanding unchanged.",
+      "TRUE — 27 → 24."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.057",
-    "title": "Liquidity From the Balance Sheet 57",
+    "title": "Share Price and Market Capitalisation 57",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=308\nCurrent liabilities=215\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 487 |\n| Machinery | 155 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 115 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 98 |\n| Total assets | **1019** |\n| **EQUITY** | |\n| Share capital | 257 |\n| Retained earnings | 77 |\n| Total equity | **334** |\n| **LIABILITIES** | |\n| Long-term bank loan | 390 |\n| Bonds payable | 80 |\n| Trade payables | 128 |\n| Bank overdraft | 87 |\n| Total liabilities | **685** |\n| Total equity and liabilities | **1019** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=15\nFebruary | Price=14\nMarch | Price=15\nApril | Price=16\nMay | Price=15\nJune | Price=13\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=23000\nFebruary | Volume=60000\nMarch | Volume=33000\nApril | Volume=63000\nMay | Volume=72000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 15 | 831,000 | 23,000 |\n| February | 14 | 831,000 | 60,000 |\n| March | 15 | 831,000 | 33,000 |\n| April | 16 | 831,000 | 63,000 |\n| May | 15 | 831,000 | 72,000 |\n| June | 13 | 831,000 | 52,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 296 |\n| Shares outstanding | 831,000 |\n| Total shares traded (six months) | 303,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Working capital of €93 thousand is positive on this balance sheet.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 27%.",
-      "The long-term bank loan of €390 thousand should be classified within equity rather than liabilities.",
-      "The bank overdraft of €87 thousand belongs under non-current liabilities because overdrafts usually run for several years.",
-      "The current ratio is exactly 1.85."
+      "Market capitalisation at the last month exceeds €9.5 million.",
+      "Market capitalisation rose by more than 13.5% over the period.",
+      "Highest closing price is more than 31.4% above the lowest.",
+      "Peak monthly share turnover exceeds 72,570 shares.",
+      "Operating result is below €266 thousand."
     ],
     "answer_key": [
       true,
@@ -982,27 +982,27 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Working capital = 93.",
-      "FALSE — Long-term financing covers non-current assets by about 13.1%.",
-      "FALSE — A bank loan is a liability, not equity, regardless of its size.",
-      "FALSE — A bank overdraft is a current liability.",
-      "FALSE — Current ratio is 1.43."
+      "TRUE — Market capitalisation ≈ €10.8 million.",
+      "FALSE — €12.5m → €10.8m.",
+      "FALSE — Range €13–€16.",
+      "FALSE — Peak monthly volume = 72,000.",
+      "FALSE — Operating result = 296."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.058",
-    "title": "Short Depreciation Extract 58",
+    "title": "Listed Company Performance Charts 58",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=26500\nAsset B=5800\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €106,000 purchase price, 4-year useful life, no residual value |\n| Asset B | €31,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=12\nFebruary | Price=13\nMarch | Price=13\nApril | Price=12\nMay | Price=12\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=63000\nFebruary | Volume=19000\nMarch | Volume=26000\nApril | Volume=21000\nMay | Volume=47000\nJune | Volume=13000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 12 | 779,000 | 63,000 |\n| February | 13 | 779,000 | 19,000 |\n| March | 13 | 779,000 | 26,000 |\n| April | 12 | 779,000 | 21,000 |\n| May | 12 | 779,000 | 47,000 |\n| June | 11 | 779,000 | 13,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 313 |\n| Shares outstanding | 779,000 |\n| Total shares traded (six months) | 189,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Asset A's annual depreciation charge is exactly €25,079.",
-      "Internal management reports covering the same period as the extract above (the combined asset cost of €137,000 thousand) must follow the identical statutory format shown here.",
-      "Asset B's annual depreciation charge is exactly €5,800.",
-      "The the combined asset cost of €137,000 thousand shown above would never be disclosed to any party outside the business under any circumstances.",
-      "Tax authorities have no legitimate interest in the the combined asset cost of €137,000 thousand disclosed above."
+      "The closing share price rose by more than 33.9% from first to last month.",
+      "Market capitalisation rose by more than 9.6% over the period.",
+      "Shares outstanding stay at 779,000 every month.",
+      "Highest closing price is more than 36.9% above the lowest.",
+      "Total shares traded over six months exceed 37.4% of shares outstanding."
     ],
     "answer_key": [
       false,
@@ -1012,27 +1012,27 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Asset A annual charge = €26,500.",
-      "FALSE — Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.",
-      "TRUE — Asset B annual charge = €5,800.",
-      "FALSE — Figures such as this are routinely published for external users like tax authorities and shareholders.",
-      "FALSE — Tax authorities are a standard external user of published financial statements."
+      "FALSE — Price change ≈ -8.3%.",
+      "FALSE — €9.3m → €8.6m.",
+      "TRUE — Shares outstanding unchanged.",
+      "FALSE — Range €11–€13.",
+      "FALSE — Turnover ≈ 24.3% of shares outstanding."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.059",
-    "title": "Short Balance Sheet Extract 59",
+    "title": "Earnings Per Share From Reported Figures 59",
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=356\nTotal liabilities=198\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 366 |\n| Inventory | 108 |\n| Cash and cash equivalents | 80 |\n| Total assets | **554** |\n| **EQUITY** | |\n| Share capital | 136 |\n| Retained earnings | 220 |\n| Total equity | **356** |\n| **LIABILITIES** | |\n| Long-term bank loan | 143 |\n| Trade payables | 55 |\n| Total liabilities | **198** |\n| Total equity and liabilities | **554** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=22\nFebruary | Price=23\nMarch | Price=24\nApril | Price=25\nMay | Price=26\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=33000\nFebruary | Volume=35000\nMarch | Volume=61000\nApril | Volume=44000\nMay | Volume=70000\nJune | Volume=44000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 22 | 860,000 | 33,000 |\n| February | 23 | 860,000 | 35,000 |\n| March | 24 | 860,000 | 61,000 |\n| April | 25 | 860,000 | 44,000 |\n| May | 26 | 860,000 | 70,000 |\n| June | 29 | 860,000 | 44,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 315 |\n| Shares outstanding | 860,000 |\n| Total shares traded (six months) | 287,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The equity ratio is below 43.2%.",
-      "The long-term bank loan of €143 thousand is correctly classified within equity.",
-      "The current ratio is exactly 3.77.",
-      "Because the extract above (total assets of €554 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
-      "Inventory of €108 thousand is correctly classified as a current asset."
+      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.4.059).",
+      "The last closing price is below the first (see the extract prepared for case 6.4.059).",
+      "Operating result is below €254 thousand (see the extract prepared for case 6.4.059).",
+      "Earnings per share is exactly €0.27 (see the extract prepared for case 6.4.059).",
+      "The closing share price rose by more than 11.8% from first to last month (see the extract prepared for case 6.4.059)."
     ],
     "answer_key": [
       false,
@@ -1042,27 +1042,27 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Equity ratio ≈ 64.3%.",
-      "FALSE — A loan is a liability, never equity.",
-      "FALSE — Current ratio ≈ 3.42.",
-      "FALSE — External users routinely rely on single-year financial statements, often alongside prior-year comparatives.",
-      "TRUE — Inventory is always current."
+      "FALSE — Peak price month vs peak volume month.",
+      "FALSE — 22 → 29.",
+      "FALSE — Operating result = 315.",
+      "FALSE — Earnings per share ≈ €0.37.",
+      "TRUE — Price change ≈ 31.8%."
     ]
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.060",
-    "title": "Liquidity From the Balance Sheet 60",
+    "title": "Share Price and Market Capitalisation 60",
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=279\nCurrent liabilities=262\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 286 |\n| Machinery | 269 |\n| Office equipment | 64 |\n| Patents, trademarks and licences | 95 |\n| Inventory | 94 |\n| Trade receivables | 85 |\n| Cash and cash equivalents | 100 |\n| Total assets | **993** |\n| **EQUITY** | |\n| Share capital | 130 |\n| Retained earnings | 139 |\n| Total equity | **269** |\n| **LIABILITIES** | |\n| Long-term bank loan | 422 |\n| Bonds payable | 40 |\n| Trade payables | 204 |\n| Bank overdraft | 58 |\n| Total liabilities | **724** |\n| Total equity and liabilities | **993** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=32\nMarch | Price=30\nApril | Price=34\nMay | Price=36\nJune | Price=41\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=16000\nFebruary | Volume=61000\nMarch | Volume=43000\nApril | Volume=12000\nMay | Volume=44000\nJune | Volume=31000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 34 | 413,000 | 16,000 |\n| February | 32 | 413,000 | 61,000 |\n| March | 30 | 413,000 | 43,000 |\n| April | 34 | 413,000 | 12,000 |\n| May | 36 | 413,000 | 44,000 |\n| June | 41 | 413,000 | 31,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 283 |\n| Shares outstanding | 413,000 |\n| Total shares traded (six months) | 207,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Working capital of €17 thousand is positive on this balance sheet.",
-      "The debt ratio exceeds 46.5%.",
-      "The current ratio is below 0.81.",
-      "Trade receivables make up less than 48.7% of current assets.",
-      "Cash and cash equivalents make up more than 18.1% of current assets."
+      "The closing share price rose by more than 20.2% from first to last month.",
+      "Market capitalisation rose by more than 20% over the period.",
+      "Highest closing price is more than 36.7% above the lowest.",
+      "Earnings per share exceeds €0.55.",
+      "Peak monthly share turnover exceeds 50,038 shares."
     ],
     "answer_key": [
       true,
@@ -1072,11 +1072,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Working capital = 17.",
-      "TRUE — Debt ratio ≈ 72.9%.",
-      "FALSE — Current ratio ≈ 1.06.",
-      "TRUE — Trade receivables are about 30.5% of current assets.",
-      "TRUE — Cash and cash equivalents are about 35.8% of current assets."
+      "TRUE — Price change ≈ 20.6%.",
+      "TRUE — €14.0m → €16.9m.",
+      "FALSE — Range €30–€41.",
+      "TRUE — Earnings per share ≈ €0.69.",
+      "TRUE — Peak monthly volume = 61,000."
     ]
   }
 ]
