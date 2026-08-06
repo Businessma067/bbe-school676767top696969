@@ -9,6 +9,7 @@ import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { scrubStatementHints } from "@/lib/case-context";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
@@ -366,7 +367,7 @@ function ReviewExamPage() {
                                   <span className="mr-2 font-semibold text-taupe">
                                     {String.fromCharCode(65 + si)}.
                                   </span>
-                                  {s.text}
+                                  {scrubStatementHints(s.text)}
                                 </p>
                                 <p className="mt-1.5 text-xs text-taupe">
                                   Your answer: <strong>{userMarked ? "True" : "—"}</strong> ·

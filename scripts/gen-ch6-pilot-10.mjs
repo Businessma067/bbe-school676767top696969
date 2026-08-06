@@ -458,13 +458,11 @@ Evaluate the following economic assertions:`,
 | 5 | 60,000 | 36,000 |
 | 7 | 84,000 | 12,000 |
 
-*Note: annual depreciation = 96,000 ÷ 8 = 12,000. The Year 3 book value in the table above is 96,000 − 36,000 = 60,000.*
-
 Evaluate the following economic assertions:`,
     statements: [
       "The book value at the end of Year 5 is exactly triple the book value at the end of Year 7.",
       "Accumulated depreciation after Year 3 equals the book value remaining after Year 5.",
-      "If the useful life had instead been 6 years (cost unchanged), annual depreciation would be exactly one-third higher than under the 8-year plan.",
+      "If the useful life had instead been 6 years with the same purchase cost, annual depreciation would be exactly one-third higher than under the 8-year plan.",
       "The asset retains more than 25% of its original cost at the end of Year 5.",
       "Depreciation expense reduces reported profit but does not itself change the cash and cash equivalents balance.",
     ],

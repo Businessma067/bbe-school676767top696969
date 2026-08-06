@@ -9,6 +9,7 @@ import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { scrubStatementHints } from "@/lib/case-context";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -860,7 +861,7 @@ function CaseCard({
             >
               <div className="flex items-center gap-3">
                 <span className="w-6 text-center text-xs font-bold text-muted-foreground">{i + 1}.</span>
-                <p className="flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
+                <p className="flex-1 text-sm leading-relaxed text-foreground">{scrubStatementHints(stmt)}</p>
                 <div className="flex w-14 justify-center">
                   <button
                     role="checkbox"

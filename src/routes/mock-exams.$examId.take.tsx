@@ -30,6 +30,7 @@ import {
 } from "@/components/mock-exam/TimerWarningPlaque";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { scrubStatementHints } from "@/lib/case-context";
 import {
   Sheet,
   SheetContent,
@@ -608,7 +609,7 @@ function TakeExamPage() {
                       <span className="mr-2 font-semibold text-taupe">
                         {String.fromCharCode(65 + i)}.
                       </span>
-                      {s.text}
+                      {scrubStatementHints(s.text)}
                     </p>
                   </div>
                 ))}

@@ -1,23 +1,62 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { cn } from "@/lib/utils";
+import { segmentCaseContext } from "@/lib/case-context";
 
 type CaseContextRichProps = {
   content: string;
   className?: string;
-  /** Stronger title-like stem (mock exam take). */
   emphasized?: boolean;
 };
 
+function CaseTable({ rows }: { rows: string[][] }) {
+  if (rows.length === 0) return null;
+  const header = rows[0]!;
+  const body = rows.slice(1);
+  return (
+    <div className="my-4 w-full overflow-x-auto rounded-lg border border-border">
+      <table className="w-full min-w-[28rem] border-collapse text-[13px]">
+        <thead className="bg-secondary/70">
+          <tr>
+            {header.map((cell, i) => (
+              <th
+                key={`h-${i}`}
+                className="border-b border-border px-3 py-2 text-left font-semibold text-foreground"
+              >
+                {cell.replace(/\*\*/g, "")}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {body.map((row, ri) => (
+            <tr key={`r-${ri}`} className={ri % 2 === 1 ? "bg-secondary/20" : undefined}>
+              {row.map((cell, ci) => (
+                <td
+                  key={`c-${ri}-${ci}`}
+                  className="border-t border-border px-3 py-2 align-top tabular-nums text-foreground/90"
+                >
+                  {cell.replace(/\*\*/g, "")}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /**
- * Renders economics case context with GFM tables, code/ASCII charts, and lists.
- * Falls back gracefully for plain-text contexts from earlier chapters.
+ * Renders economics case context with reliable HTML tables + markdown prose.
  */
 export function CaseContextRich({ content, className, emphasized }: CaseContextRichProps) {
+  const segments = segmentCaseContext(content);
+
   return (
     <div
       className={cn(
-        "case-context-rich text-sm leading-relaxed text-muted-foreground",
+        "case-context-rich max-w-full text-sm leading-relaxed text-muted-foreground",
         "[&_p]:mb-3 [&_p:last-child]:mb-0",
         "[&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5",
         "[&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5",
@@ -26,15 +65,22 @@ export function CaseContextRich({ content, className, emphasized }: CaseContextR
         "[&_pre]:my-3 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:border [&_pre]:border-border [&_pre]:bg-secondary/40 [&_pre]:p-3 [&_pre]:font-mono [&_pre]:text-[12px] [&_pre]:leading-snug [&_pre]:text-foreground",
         "[&_code]:rounded [&_code]:bg-secondary [&_code]:px-1 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[12px]",
         "[&_pre_code]:bg-transparent [&_pre_code]:p-0",
-        "[&_table]:my-3 [&_table]:w-full [&_table]:border-collapse [&_table]:text-[13px]",
-        "[&_th]:border [&_th]:border-border [&_th]:bg-secondary/60 [&_th]:px-2.5 [&_th]:py-1.5 [&_th]:text-left [&_th]:font-semibold [&_th]:text-foreground",
-        "[&_td]:border [&_td]:border-border [&_td]:px-2.5 [&_td]:py-1.5 [&_td]:align-top",
-        "[&_tr:nth-child(even)_td]:bg-secondary/20",
-        emphasized && "[&_p:first-child]:font-display [&_p:first-child]:text-lg [&_p:first-child]:font-semibold [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-xl",
+        emphasized &&
+          "[&_p:first-child]:font-display [&_p:first-child]:text-lg [&_p:first-child]:font-semibold [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-xl",
         className,
       )}
     >
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+      {segments.map((seg, idx) =>
+        seg.kind === "table" ? (
+          <CaseTable key={`t-${idx}`} rows={seg.rows} />
+        ) : (
+          <ReactMarkdown key={`m-${idx}`} remarkPlugins={[remarkGfm]}>
+            {seg.text}
+          </ReactMarkdown>
+        ),
+      )}
     </div>
   );
 }
+
+export { scrubStatementHints, normalizeCaseContext } from "@/lib/case-context";

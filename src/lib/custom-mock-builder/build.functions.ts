@@ -15,6 +15,7 @@ import {
   findSubtopic,
   getCustomMockBookChapters,
 } from "@/data/economics-subtopics";
+import { scrubStatementHints } from "@/lib/case-context";
 
 const Input = z.object({
   subtopics: z.array(z.string().min(1)).min(1).max(40),
@@ -104,7 +105,7 @@ function caseToExamQuestion(c: CaseRow, index: number, mockId: string): ExamQues
     maxPoints: SCORING_CONFIG.economics.defaultMaxPerTask,
     statements: statements.map((text, j) => ({
       id: `${mockId}-q${index}-s${j + 1}`,
-      text,
+      text: scrubStatementHints(text),
       isTrue: Boolean(keys[j]),
       explanation: expl[j] || (keys[j] ? "This statement is true." : "This statement is false."),
     })),
