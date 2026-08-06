@@ -20,13 +20,18 @@ const LABELS: Record<string, string> = {
   api: "API",
   products: "Products",
   "custom-mock-builder": "Custom Mock Builder",
+  "full-course": "Full Course",
   "full-course-economics": "Full Course Economics",
-  "full-course-subjects": "Full Course",
+  "full-course-subjects": "Full Course Subjects",
+  "lite-bbe-course": "Light BBE Course",
   "mock-exams": "Mock Exams",
+  take: "Take",
+  review: "Review",
 };
 
 function prettify(segment: string): string {
   if (LABELS[segment]) return LABELS[segment];
+  if (isCustomExamId(segment)) return "Custom Mock";
   return segment
     .split("-")
     .map((w) => (w.length === 0 ? w : w[0].toUpperCase() + w.slice(1)))
@@ -39,16 +44,29 @@ type Crumb = {
   isLast: boolean;
 };
 
-function buildDefaultCrumbs(pathname: string): Crumb[] {
-  const segments = pathname.split("/").filter(Boolean);
-  return segments.map((seg, i) => ({
-    label: prettify(decodeURIComponent(seg)),
-    to: "/" + segments.slice(0, i + 1).join("/"),
-    isLast: i === segments.length - 1,
+function withLastFlags(crumbs: Omit<Crumb, "isLast">[]): Crumb[] {
+  return crumbs.map((c, i) => ({
+    ...c,
+    isLast: i === crumbs.length - 1,
   }));
 }
 
-/** `/mock-exams/custom-…/take|review` → Custom Mock Builder trail. */
+/** URL segments as crumbs (Home is rendered separately). */
+function buildDefaultCrumbs(pathname: string): Crumb[] {
+  const segments = pathname.split("/").filter(Boolean);
+  return withLastFlags(
+    segments.map((seg, i) => ({
+      label: prettify(decodeURIComponent(seg)),
+      to: "/" + segments.slice(0, i + 1).join("/"),
+    })),
+  );
+}
+
+/**
+ * Custom mocks live under `/mock-exams/...` for the exam runner, but belong to
+ * the Products › Custom Mock Builder flow — keep that hierarchy in the trail.
+ * Home › Products › Custom Mock Builder › Custom Mock 3.3 10q › Take
+ */
 function buildCustomMockCrumbs(
   pathname: string,
   examId: string,
@@ -60,24 +78,21 @@ function buildCustomMockCrumbs(
       ? "Take"
       : null;
   const mockLabel = title ?? "Custom Mock";
-  const crumbs: Crumb[] = [
-    {
-      label: "Custom Mock Builder",
-      to: "/products/custom-mock-builder",
-      isLast: false,
-    },
+  const trail: Omit<Crumb, "isLast">[] = [
+    { label: "Products", to: "/products" },
+    { label: "Custom Mock Builder", to: "/products/custom-mock-builder" },
     {
       label: mockLabel,
       to: action ? `/mock-exams/${examId}/take` : null,
-      isLast: !action,
     },
   ];
   if (action) {
-    crumbs.push({ label: action, to: null, isLast: true });
+    trail.push({ label: action, to: null });
   }
-  return crumbs;
+  return withLastFlags(trail);
 }
 
+/** Home › Mock Exams › Mock Exam 1 › Take */
 function buildCatalogMockCrumbs(pathname: string, examId: string): Crumb[] {
   const action = pathname.endsWith("/review")
     ? "Review"
@@ -85,18 +100,17 @@ function buildCatalogMockCrumbs(pathname: string, examId: string): Crumb[] {
       ? "Take"
       : null;
   const exam = getExamById(examId);
-  const crumbs: Crumb[] = [
-    { label: "Mock Exams", to: "/mock-exams", isLast: false },
+  const trail: Omit<Crumb, "isLast">[] = [
+    { label: "Mock Exams", to: "/mock-exams" },
     {
       label: exam?.title ?? prettify(examId),
       to: action ? `/mock-exams/${examId}/take` : null,
-      isLast: !action,
     },
   ];
   if (action) {
-    crumbs.push({ label: action, to: null, isLast: true });
+    trail.push({ label: action, to: null });
   }
-  return crumbs;
+  return withLastFlags(trail);
 }
 
 export function Breadcrumbs() {
@@ -109,9 +123,10 @@ export function Breadcrumbs() {
     return { examId: decodeURIComponent(m[1]), action: m[2] ?? null };
   }, [pathname]);
 
-  const customMockId = mockExamMatch && isCustomExamId(mockExamMatch.examId)
-    ? parseCustomMockId(mockExamMatch.examId)
-    : null;
+  const customMockId =
+    mockExamMatch && isCustomExamId(mockExamMatch.examId)
+      ? parseCustomMockId(mockExamMatch.examId)
+      : null;
 
   useEffect(() => {
     if (!customMockId) {
