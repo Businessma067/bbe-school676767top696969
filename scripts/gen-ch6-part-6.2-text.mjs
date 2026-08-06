@@ -81,7 +81,7 @@ function depScenario(i) {
 
 function cfScenario(i) {
   const operating = 26000 + i * 1600;
-  const investing = 9000 + (i % 5) * 1800;
+  const investing = 9000 + i * 1800;
   const financingIsInflow = i % 2 === 0;
   const financing = financingIsInflow ? 5500 + i * 220 : 4200 + i * 180;
   const net = operating - investing + (financingIsInflow ? financing : -financing);
@@ -220,7 +220,7 @@ const TITLES = [
   "Profit Reported Versus Cash Generated",
 ];
 
-const sceneIndices = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58];
+const sceneIndices = []; // Prefer textbook theory contexts — not mismatched SCENE + orphan € quizzes.
 
 function buildTruePool() {
   const pool = [];
@@ -315,38 +315,9 @@ function buildTruePool() {
   ];
   for (const [s, e] of manual) add(s, e);
 
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { annual } = depScenario(i);
-    add(
-      `Straight-line annual depreciation on ${asset} bought by a ${biz} is ${fmt(annual)} euros when cost, residual value and useful life are applied correctly.`,
-      `That is the correct annual straight-line charge for this ${asset}.`,
-    );
-  }
-
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { cost, annual } = depScenario(i);
-    const bv2 = cost - 2 * annual;
-    add(
-      `After two years, the carrying value of a ${biz}'s ${asset} is ${fmt(bv2)} euros.`,
-      `Cost less two years of depreciation leaves ${fmt(bv2)} euros.`,
-    );
-  }
-
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { annual } = depScenario(i);
-    add(
-      `Accumulated depreciation on a ${biz}'s ${asset} after three years is ${fmt(annual * 3)} euros.`,
-      `Three annual charges of ${fmt(annual)} euros accumulate to ${fmt(annual * 3)} euros.`,
-    );
-  }
-
-  // Long cash-flow word problems removed — numeric CF practice uses table contexts below.
+  // Orphan euro amounts without cost/life/residual in context removed.
+  // Depreciation calculation practice belongs in table cases with given figures.
+  // Self-contained theory with business examples (classification only):
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
@@ -409,7 +380,7 @@ function buildTruePool() {
     }
   }
 
-  if (pool.length < 160) throw new Error(`TRUE pool only ${pool.length}, need 160`);
+  if (pool.length < 100) throw new Error(`TRUE pool only ${pool.length}, need 100`);
   return pool;
 }
 
@@ -506,39 +477,7 @@ function buildFalsePool() {
   ];
   for (const [s, e] of manual) add(s, e);
 
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { cost, residual, life, annual } = depScenario(i);
-    const wrongAnnual = Math.round(cost / life);
-    add(
-      `Straight-line annual depreciation on ${asset} bought by a ${biz} is ${fmt(wrongAnnual)} euros when residual value is ignored.`,
-      `Ignoring residual value overstates the charge; the correct annual amount is ${fmt(annual)} euros.`,
-    );
-  }
-
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { cost, annual } = depScenario(i);
-    const wrongBV = cost + 2 * annual;
-    add(
-      `After two years, the carrying value of a ${biz}'s ${asset} is ${fmt(wrongBV)} euros.`,
-      `Depreciation reduces carrying value; the correct figure is ${fmt(cost - 2 * annual)} euros.`,
-    );
-  }
-
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { annual } = depScenario(i);
-    add(
-      `Accumulated depreciation on a ${biz}'s ${asset} after three years is ${fmt(annual * 2)} euros.`,
-      `Three years of use accumulate ${fmt(annual * 3)} euros, not two years' worth.`,
-    );
-  }
-
-  // Long cash-flow word-problem FALSE items removed — numeric CF is table-based.
+  // Orphan euro amounts without given cost/life removed (same rule as TRUE pool).
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
@@ -729,10 +668,7 @@ Evaluate the following economic assertions:`;
       s: `Cash flow from financing activities is not positive; it is ${fin} euros.`,
       e: `Financing cash flow is ${fin}.`,
     },
-  ].map((p) => ({
-    ...p,
-    s: `On cash-flow extract ${idx + 1} for a ${biz}: ${p.s}`,
-  }));
+  ].map((p) => ({ ...p }));
 
   const statements = [];
   const tactical_explanations = [];

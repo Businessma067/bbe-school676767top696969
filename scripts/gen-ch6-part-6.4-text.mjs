@@ -107,7 +107,7 @@ const TITLES = [
   "Purpose Behind Internal Reporting Choices",
 ];
 
-const sceneIndices = [1, 5, 9, 13, 17, 21];
+const sceneIndices = [];
 
 const sectors = [
   "manufacturer",

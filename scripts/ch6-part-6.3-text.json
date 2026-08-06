@@ -63,7 +63,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.004",
     "title": "Reading Financial Statements With Caution for Analysts",
-    "context": "Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:",
+    "context": "Analyze how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:",
     "statements": [
       "Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
       "A trend that persists across three or more reporting periods carries more weight than a single period's outcome when judging a business's direction of travel.",
@@ -183,7 +183,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.013",
     "title": "Comparing Results Across Several Years Explained",
-    "context": "Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:",
+    "context": "Analyze how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:",
     "statements": [
       "A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues.",
       "The pattern of a business's equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy.",
@@ -303,7 +303,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.023",
     "title": "Benchmarking Against Industry Peers in Practice",
-    "context": "Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:",
+    "context": "Analyze how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time. Evaluate the following economic assertions:",
     "statements": [
       "Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance.",
       "The relative weight of non-current assets against current assets on a business's balance sheet gives no indication of how capital-intensive its operations are.",
@@ -423,7 +423,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.038",
     "title": "Benchmarking Against Industry Peers in Context",
-    "context": "Consider an industrial cleaning company whose accountant is walking new staff through the difference between cost of sales and the operating expenses reported further down the income statement. Evaluate the following economic assertions:",
+    "context": "Review how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:",
     "statements": [
       "Tracking the operating result over several years shows how a business's core trading is developing independently of changes in interest rates or tax policy.",
       "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed.",
@@ -543,7 +543,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.046",
     "title": "The Current and Non-Current Asset Balance Over Time",
-    "context": "Consider a beverage bottling company whose finance team is preparing balance sheet and income statement summaries for a meeting with its bank. Evaluate the following economic assertions:",
+    "context": "Review how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:",
     "statements": [
       "Stable growth in both revenue and cost of sales at similar rates tends to keep a business's gross profit margin relatively steady from year to year.",
       "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace.",
@@ -663,7 +663,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.053",
     "title": "Sources of Equity Growth for Analysts",
-    "context": "Consider a commercial bakery chain preparing a presentation on how its cost of sales and gross profit have moved over the past several years. Evaluate the following economic assertions:",
+    "context": "Review how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time. Evaluate the following economic assertions:",
     "statements": [
       "A commercial bakery chain is regarded as financing its ovens and proofing equipment soundly when their value does not exceed equity plus a long-term bakery expansion loan.",
       "Tracking the operating result over several years cannot show how a business's core trading is developing, since the figure already reflects changes in interest rates and tax policy.",
@@ -783,7 +783,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.060",
     "title": "Matching Long-Term Assets to Long-Term Finance Explained",
-    "context": "Consider a dairy cooperative whose members are reviewing the balance sheet to judge whether its long-term assets are financed appropriately. Evaluate the following economic assertions:",
+    "context": "Examine how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:",
     "statements": [
       "Paying in advance for a full year of insurance cover is recognised entirely as an expense at the moment of payment, regardless of which period the cover relates to.",
       "A single large expenditure must always be recognised entirely as an expense within the same accounting period in which it occurs.",
@@ -903,7 +903,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.068",
     "title": "Defining Cost of Sales in Practice",
-    "context": "Consider a seed and fertiliser distributor whose members are reviewing the income statement to understand how gross profit was calculated this season. Evaluate the following economic assertions:",
+    "context": "Examine how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:",
     "statements": [
       "Pay earned by outbound freight handlers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
       "Amounts paid to field sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
@@ -1023,7 +1023,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.074",
     "title": "Defining Cost of Sales in Context",
-    "context": "Consider a paper mill whose analysts are reading its financial statements cautiously before recommending whether to extend further credit. Evaluate the following economic assertions:",
+    "context": "Examine how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time. Evaluate the following economic assertions:",
     "statements": [
       "Amounts paid to sales commission earners are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
       "The direct purchase cost of goods bought for resale are included within cost of sales because they are incurred directly in producing the goods that a commercial bakery chain has sold.",
@@ -1143,7 +1143,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.095",
     "title": "Calculating Gross Profit Over Time",
-    "context": "Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:",
+    "context": "Assess how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:",
     "statements": [
       "The balance between ovens and proofing equipment and dough and ingredient stock on a commercial bakery chain's statements has no bearing on whether the business is becoming more or less capital-intensive.",
       "A marine equipment supplier is regarded as financing its dockside cranes and lifting gear soundly only when they are covered mainly by short-term credit from parts suppliers.",
@@ -1263,7 +1263,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.107",
     "title": "Understanding the Operating Result for Analysts",
-    "context": "Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:",
+    "context": "Assess how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:",
     "statements": [
       "The balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company's statements has no bearing on whether the business is becoming more or less capital-intensive.",
       "Pay earned by transport scheduling staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
@@ -1383,7 +1383,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.118",
     "title": "Expenditure Versus Expense Explained",
-    "context": "Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:",
+    "context": "Assess how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time. Evaluate the following economic assertions:",
     "statements": [
       "The balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company's statements has no bearing on whether the business is becoming more or less capital-intensive.",
       "The wages of head office administrators are included within cost of sales because every employee contributes in some way to the goods that are sold.",

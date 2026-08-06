@@ -81,7 +81,7 @@ for (const stem of themeStems) {
   }
 }
 
-const sceneIndices = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46];
+const sceneIndices = [];
 
 // ---------------------------------------------------------------------------
 // Titles
@@ -1020,7 +1020,7 @@ if (slots.length < 20) throw new Error(`expected text slots, got ${slots.length}
 if (SCENE.length < 10) throw new Error(`SCENE pool only ${SCENE.length}`);
 if (THEORY.length < 20) throw new Error(`THEORY pool only ${THEORY.length}`);
 if (TITLES.length < 50) throw new Error(`TITLES need >= 50, got ${TITLES.length}`);
-if (sceneIndices.length < 8) throw new Error(`sceneIndices too short: ${sceneIndices.length}`);
+// sceneIndices empty ⇒ all THEORY contexts (textbook concept stems).
 
 const cases = buildCases({
   subsection: "6.3",
