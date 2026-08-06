@@ -1807,7 +1807,7 @@
       "Exporting advice does not convert coaching into secondary manufacturing.",
       "Remote coaching is primary because trainers work from home offices.",
       "Because no goods cross borders, the activity cannot be counted in GDP.",
-      "Selling coaching sessions is primary extraction because trainers work from home offices."
+      "Human coaching skills are classified as land, so remote training is primary extraction."
     ],
     "answer_key": [
       true,
@@ -1821,7 +1821,7 @@
       "TRUE — Coaching stays a service even when clients are abroad.",
       "FALSE — Delivery location does not turn a service into primary activity.",
       "FALSE — Services produced domestically can count in home-country GDP.",
-      "FALSE — Delivery location does not turn a service into primary activity."
+      "FALSE — Coaching is a tertiary service, not extraction of raw materials."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1865,7 +1865,7 @@
       "Every barter transaction is always fully recorded in official GDP.",
       "Unpaid home maintenance done by owners is always included in GDP.",
       "GDP fully captures household volunteering and unpaid care in its totals.",
-      "Household volunteering and unpaid care are always counted in official GDP totals."
+      "Barter exchanges between neighbours are always fully counted in official GDP totals."
     ],
     "answer_key": [
       true,
@@ -1879,7 +1879,7 @@
       "FALSE — Informal and non-market activity is often missed by GDP.",
       "FALSE — Non-market unpaid work is typically outside GDP scope.",
       "FALSE — GDP is criticised for omitting unpaid and informal activity.",
-      "FALSE — GDP is criticised for omitting unpaid and informal activity."
+      "FALSE — Informal barter and non-market activity is often missed by GDP."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -1894,7 +1894,7 @@
       "Both operations are tertiary because each serves customers.",
       "Claims handling at the insurance branch is primary because policies cover basic risks.",
       "Harvesting wheat is secondary manufacturing because flour milling follows.",
-      "Wheat farming is secondary because grain is processed into flour elsewhere."
+      "Paying insurance claims classifies the cooperative as primary because policies cover crops."
     ],
     "answer_key": [
       true,
@@ -1908,7 +1908,7 @@
       "FALSE — Customer service does not make farming tertiary.",
       "FALSE — Insurance is a financial service, not resource extraction.",
       "FALSE — Harvesting crops is primary even if downstream milling is secondary.",
-      "FALSE — Harvesting crops is primary even if downstream milling is secondary."
+      "FALSE — Paying claims is a financial service, not crop extraction."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1951,7 +1951,7 @@
       "Mining origins of steel do not make warehousing or shipbuilding primary.",
       "The chain shows tertiary logistics feeding secondary production.",
       "Welding hull sections at the shipyard is secondary manufacturing.",
-      "Building ships from steel plate is secondary manufacturing.",
+      "Converting steel plate into finished hulls transforms raw materials into goods.",
       "Warehousing imported steel before fabrication is a tertiary logistics service."
     ],
     "answer_key": [
@@ -1965,7 +1965,7 @@
       "TRUE — Downstream storage and shipbuilding are not primary extraction.",
       "TRUE — Services can support manufacturing downstream.",
       "TRUE — Building ships from materials is secondary activity.",
-      "TRUE — Building ships from materials is secondary activity.",
+      "TRUE — Shipbuilding transforms raw materials into manufactured goods.",
       "TRUE — Storage and logistics are tertiary services."
     ],
     "difficulty_level": "3/5",
@@ -2007,7 +2007,7 @@
     "context": "Assess how disaster recovery affects measured GDP:",
     "statements": [
       "Rebuilding infrastructure after ecological damage can raise measured GDP.",
-      "Recovery and rebuild spending adds to measured output.",
+      "Construction wages paid during disaster recovery count toward measured GDP.",
       "GDP rising after disasters proves living standards improved.",
       "Cleanup spending automatically reduces GDP because it repairs harm.",
       "Disaster rebuilds exclude construction wages from GDP to avoid counting damage twice."
@@ -2021,7 +2021,7 @@
     ],
     "tactical_explanations": [
       "TRUE — Disaster recovery spending adds to GDP even when welfare falls.",
-      "TRUE — Disaster recovery spending adds to GDP even when welfare falls.",
+      "TRUE — Recovery spending on construction adds to GDP totals.",
       "FALSE — GDP may rise from rebuilds without restoring lost welfare.",
       "FALSE — Recovery and rebuild spending adds to measured output.",
       "FALSE — Rebuild spending is included and can raise GDP."
@@ -2091,13 +2091,13 @@
     "subsection": "3.2",
     "case_id": "CASE 3.2.23",
     "title": "Mining pit and smelters chain",
-    "context": "A mining pit extracts ore while downstream smelters shape metal for machinery plants. Evaluate:",
+    "context": "A mining firm extracts ore; other firms smelt metal and manufacture machinery. Evaluate:",
     "statements": [
-      "Smelters shaping metal perform secondary transformation.",
-      "Smelting ore into metal stays primary extraction rather than secondary processing.",
-      "The entire chain from pit to machinery is primary because metal is natural.",
-      "Every downstream step from pit to machinery counts as primary because metal is natural.",
-      "Smelting remains primary because ore comes directly from the earth."
+      "Smelters that transform raw ore into metal operate in the secondary sector.",
+      "Smelting ore into metal is still primary extraction rather than manufacturing.",
+      "Mining, smelting and making machinery are all primary because they start from natural resources.",
+      "Manufacturing machinery from smelted metal remains primary because the metal originally came from mining.",
+      "Extracting ore from the earth (mining) belongs to the secondary sector, not the primary sector."
     ],
     "answer_key": [
       true,
@@ -2107,11 +2107,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Processing ore into metal is secondary activity.",
-      "FALSE — Processing ore into metal is secondary transformation.",
-      "FALSE — Only extraction is primary; downstream processing is secondary.",
-      "FALSE — Only extraction is primary; downstream processing is secondary.",
-      "FALSE — Processing ore into metal is secondary transformation."
+      "TRUE — The secondary sector transforms raw materials into goods (manufacturing).",
+      "FALSE — Transforming raw materials into goods is secondary; primary is extraction (e.g. mining).",
+      "FALSE — Only extraction of raw materials from the earth is primary; later manufacturing stages are secondary.",
+      "FALSE — Making machinery is manufacturing in the secondary sector.",
+      "FALSE — Mining is primary: extraction of raw materials from the earth."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2181,7 +2181,7 @@
     "context": "Evaluate GDP correlation with health and happiness indicators:",
     "statements": [
       "GDP is often correlated with indicators such as health status and happiness.",
-      "Higher GDP frequently aligns with better health and happiness scores.",
+      "Cross-country data often link higher GDP with better health and happiness scores.",
       "GDP critics still note correlation with some wellbeing measures.",
       "Correlation implies GDP captures every aspect of wellbeing perfectly.",
       "Cross-country data show no link between GDP and health outcomes."
@@ -2195,7 +2195,7 @@
     ],
     "tactical_explanations": [
       "TRUE — Higher GDP frequently aligns with better health and happiness scores.",
-      "TRUE — Higher GDP frequently aligns with better health and happiness scores.",
+      "TRUE — GDP correlates with health and happiness though it does not measure all welfare.",
       "TRUE — The text acknowledges correlation despite GDP limits.",
       "FALSE — Correlation does not mean GDP fully measures welfare.",
       "FALSE — GDP is usually correlated with wellbeing indicators."
@@ -2211,9 +2211,9 @@
     "statements": [
       "The link illustrates primary output feeding secondary production.",
       "Finishing tables for dining rooms is tertiary because buyers are households.",
-      "Furniture finishing is tertiary because it serves home customers.",
+      "Selling dining tables to households converts furniture production into tertiary distribution.",
       "Both stages are secondary because furniture is sold to households.",
-      "Logging and furniture making are both secondary because output is sold retail."
+      "Harvesting logs in forestry is secondary because timber is processed into furniture."
     ],
     "answer_key": [
       true,
@@ -2225,9 +2225,9 @@
     "tactical_explanations": [
       "TRUE — Primary extraction commonly supplies secondary manufacturers.",
       "FALSE — Manufacturing furniture is secondary, not tertiary.",
-      "FALSE — Manufacturing furniture is secondary, not tertiary.",
+      "FALSE — Manufacturing furniture is secondary even when sold to households.",
       "FALSE — Logging remains primary even if output later becomes furniture.",
-      "FALSE — Logging remains primary even if output later becomes furniture."
+      "FALSE — Forestry extracts raw materials and is primary activity."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2271,7 +2271,7 @@
       "A software helpdesk is tertiary even when supporting manufactured devices.",
       "Manufacturing and after-sales service mean the entire firm is tertiary.",
       "Printing books and bookstore distribution are both secondary.",
-      "After-sales repair makes the entire firm tertiary only."
+      "A firm offering both manufacturing and repair must be classified entirely as secondary."
     ],
     "answer_key": [
       true,
@@ -2285,7 +2285,7 @@
       "TRUE — Technical support is a tertiary service.",
       "FALSE — Manufacturing stays secondary; services can be tertiary alongside it.",
       "FALSE — Manufacturing and distribution occupy different sectors.",
-      "FALSE — Manufacturing stays secondary; services can be tertiary alongside it."
+      "FALSE — After-sales repair is tertiary even when the firm also manufactures."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2300,7 +2300,7 @@
       "Final goods produced domestically within a year enter GDP totals.",
       "Output from a domestic plant of a foreign-owned firm counts in that country's GDP.",
       "Foreign production by domestic firms is counted where it occurs, not in home GDP.",
-      "Territorial production location determines GDP inclusion."
+      "Production inside national borders determines whether output enters GDP totals."
     ],
     "answer_key": [
       true,
@@ -2314,7 +2314,7 @@
       "TRUE — Domestic final production in the period is counted.",
       "TRUE — Location of production determines GDP inclusion.",
       "TRUE — Foreign production is counted where it occurs, not in home GDP.",
-      "TRUE — GDP is based on geography of production."
+      "TRUE — GDP measures territorial output regardless of firm ownership."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2445,7 +2445,7 @@
       "GDP does not replace all other indicators because it misses some income sources.",
       "GDP counts final goods and services produced in a defined period.",
       "GDP excludes final services such as insurance from its totals.",
-      "Insurance and other final services are omitted from official GDP totals."
+      "Banking services are excluded from GDP because they produce no physical goods."
     ],
     "answer_key": [
       true,
@@ -2459,7 +2459,7 @@
       "TRUE — GDP misses some informal and unpaid activity.",
       "TRUE — GDP covers final domestic production over time.",
       "FALSE — GDP includes final services produced within borders.",
-      "FALSE — GDP includes final services produced within borders."
+      "FALSE — Final banking and insurance services are included in GDP totals."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2531,8 +2531,8 @@
       "The three-sector model classifies activities rather than assigning one label per economy.",
       "A farm selling produce can only be classified as primary.",
       "AT&S manufacturing with client advice is tertiary only.",
-      "A single sector label on a firm blocks any activity in another sector.",
-      "One sector label applied to a firm prevents any activity in another sector."
+      "A farm that also runs a roadside shop can only report primary activity.",
+      "Once labelled primary, a firm cannot perform tertiary services in the same economy."
     ],
     "answer_key": [
       true,
@@ -2545,8 +2545,8 @@
       "TRUE — The model classifies activities, not single labels per economy.",
       "FALSE — Firms can operate across multiple sectors.",
       "FALSE — Manufacturing can coexist with service offerings.",
-      "FALSE — Firms can operate across multiple sectors.",
-      "FALSE — Firms can operate across multiple sectors."
+      "FALSE — The same firm can carry out primary farming and tertiary retail.",
+      "FALSE — Activities are classified by sector, not one label for all operations."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2619,7 +2619,7 @@
       "PCB advice to clients converts fabrication into tertiary services only.",
       "Copper mining for laminate reclassifies PCB plants as primary extraction.",
       "Testing substrates in clean rooms becomes tertiary inspection service only.",
-      "Copper mining for laminate makes PCB plants primary."
+      "Natural copper in laminate inputs reclassifies PCB fabrication as primary mining."
     ],
     "answer_key": [
       true,
@@ -2633,7 +2633,7 @@
       "FALSE — Manufacturing remains secondary even if services accompany sales.",
       "FALSE — Manufacturing components is secondary regardless of input origin.",
       "FALSE — Quality steps in manufacturing stay secondary activity.",
-      "FALSE — Manufacturing components is secondary regardless of input origin."
+      "FALSE — Transforming materials into PCBs is secondary manufacturing."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3226,7 +3226,7 @@
     "statements": [
       "Ticket income covering nightly running costs lets performances continue.",
       "Outreach funded from surplus shows mission reinvestment of NPO gains.",
-      "Performances require covered costs even when the mission is cultural outreach.",
+      "NPOs must cover operating costs from ticket income, donations, or grants.",
       "Reinvesting ticket surplus in outreach uses NPO gains for mission expansion.",
       "The theatre combines earned ticket income with mission reinvestment aims."
     ],
@@ -3240,7 +3240,7 @@
     "tactical_explanations": [
       "TRUE — NPOs need revenues to cover operating costs.",
       "TRUE — Reinvested surplus can broaden mission reach.",
-      "TRUE — NPOs need revenues to cover operating costs.",
+      "TRUE — Cultural NPOs still need inflows that cover nightly running costs.",
       "TRUE — NPO surpluses fund expanded mission activities.",
       "TRUE — NPOs may combine fees and mission surplus use."
     ],
@@ -3284,7 +3284,7 @@
     "statements": [
       "Retained profit can reward investors for capital exposed to business risk.",
       "Investors expect profit as compensation for capital committed to the firm.",
-      "Retained earnings and investor reward both link to business risk-bearing.",
+      "Capital providers expect returns when revenues exceed costs because they bear business risk.",
       "Fixed wages to investors replace profit regardless of business performance.",
       "Capital at risk deserves no return when revenues exceed expenses."
     ],
@@ -3298,7 +3298,7 @@
     "tactical_explanations": [
       "TRUE — Profit compensates capital providers for risk taken.",
       "TRUE — Investors receive profit as reward for risk taken.",
-      "TRUE — Profit compensates capital providers for risk taken.",
+      "TRUE — Risk-bearing investors receive profit when the firm succeeds.",
       "TRUE — Profit rewards vary with business performance and risk.",
       "FALSE — Owners and investors expect profit as reward for risk."
     ],
@@ -3806,7 +3806,7 @@
     "statements": [
       "Profit compares total revenue with total costs and expenses.",
       "Profit-oriented firms compare inflows with total expenses rather than counting revenue alone.",
-      "Margin appears only when revenue exceeds costs.",
+      "Margin exists when total revenue exceeds total costs and expenses.",
       "Strong sales do not guarantee profit when expenses rise faster than revenue.",
       "Cost control remains essential to achieving profit."
     ],
@@ -3820,7 +3820,7 @@
     "tactical_explanations": [
       "TRUE — Both sides of the account determine profit.",
       "TRUE — Profit requires revenues above costs.",
-      "TRUE — Profit requires revenues above costs.",
+      "TRUE — Profit arises only when revenues surpass total costs.",
       "TRUE — Rising costs can erase profit despite revenue.",
       "TRUE — Both revenue and costs determine profit outcomes."
     ],
@@ -5025,8 +5025,8 @@
       "Village location prevents micro classification regardless of size metrics.",
       "€40m turnover alone is sufficient proof of medium enterprise status.",
       "SME status depends on official headcount and financial thresholds, not on industry sector.",
-      "Medium classification uses an OR test between turnover and balance sheet financial caps.",
-      "Micro classification uses an OR test between turnover and balance sheet financial caps."
+      "Medium status applies when staff are below two hundred fifty and turnover or balance sheet meets medium financial limits.",
+      "Micro status applies when staff are below ten and turnover or balance sheet meets micro financial limits."
     ],
     "answer_key": [
       false,
@@ -5051,9 +5051,9 @@
     "title": "AT&S accounting contrast",
     "context": "Compare reporting expectations for AT&S and a micro village supplier:",
     "statements": [
-      "Growing beyond small thresholds can reclassify a firm as medium when medium criteria are met.",
+      "Crossing medium staff and turnover thresholds moves a growing firm out of the small tier.",
       "Three thousand staff far exceeds the two hundred and fifty employee medium ceiling.",
-      "Growing beyond micro thresholds can reclassify a firm as small when small criteria are met.",
+      "A firm meeting small staff and financial limits is reclassified from micro to small.",
       "Export activity does not override EU SME threshold tests for classification.",
       "€200m turnover far exceeds the €50m medium turnover ceiling."
     ],
@@ -5065,7 +5065,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Progression to medium replaces small when medium limits are satisfied.",
+      "TRUE — Growth into medium limits replaces small classification when thresholds are met.",
       "TRUE — 3,000 staff places a firm outside medium limits.",
       "TRUE — Progression to small replaces micro when small limits are satisfied.",
       "TRUE — Cross-border sales do not replace official size criteria.",
@@ -5082,21 +5082,21 @@
     "statements": [
       "€10.4m turnover exceeds the €10m small turnover cap.",
       "€55m turnover exceeds the €50m medium turnover cap.",
-      "€52m turnover exceeds the €50m medium turnover cap.",
+      "Fifty staff alone qualifies a firm for medium status without turnover data.",
       "Firms skip the small tier whenever they hire a tenth employee.",
       "€2.1m turnover exceeds the €2m micro turnover cap."
     ],
     "answer_key": [
       true,
       true,
-      true,
+      false,
       false,
       true
     ],
     "tactical_explanations": [
       "TRUE — €10.4m breaks the small turnover threshold.",
       "TRUE — €55m breaks the medium turnover threshold.",
-      "TRUE — €52m breaks the medium turnover threshold.",
+      "FALSE — Medium status requires joint staff and financial tests, not headcount alone.",
       "FALSE — Ten employees fail micro but small requires further staff and turnover tests.",
       "TRUE — €2.1m breaks the micro turnover threshold."
     ],
@@ -5110,7 +5110,7 @@
     "context": "An examiner checks claims mixing micro and small staff ceilings; evaluate:",
     "statements": [
       "€2.4m turnover exceeds the €2m micro turnover cap.",
-      "€2.3m turnover exceeds the €2m micro turnover cap.",
+      "Turnover above the €2m micro limit removes micro status even when staff are below ten.",
       "Exactly ten staff satisfies the micro requirement of fewer than ten employees.",
       "Exactly two hundred fifty staff satisfies the medium requirement of fewer than two hundred and fifty.",
       "Exactly fifty staff satisfies the small enterprise requirement of fewer than fifty."
@@ -5124,7 +5124,7 @@
     ],
     "tactical_explanations": [
       "TRUE — €2.4m breaks the micro turnover threshold.",
-      "TRUE — €2.3m breaks the micro turnover threshold.",
+      "TRUE — Turnover above the €2m micro limit ends micro status even with low headcount.",
       "FALSE — Ten is not fewer than ten; the micro staff test fails.",
       "FALSE — 250 is not fewer than 250; the medium staff test fails.",
       "FALSE — Fifty is not fewer than fifty; the small staff test fails."
@@ -5140,9 +5140,9 @@
     "statements": [
       "€2.05m turnover exceeds the €2m micro turnover cap.",
       "A €43.5m balance sheet exceeds the €43m medium balance sheet cap.",
-      "€2.1m turnover still meets the micro turnover cap of €2m.",
-      "€2.3m turnover still meets the micro turnover cap of €2m.",
-      "A €44m balance sheet exceeds the €43m medium balance sheet cap."
+      "€2.2m turnover still meets the micro turnover cap of €2m.",
+      "Exactly ten staff meets the micro requirement of fewer than ten employees.",
+      "Turnover above €50m breaches the medium turnover threshold."
     ],
     "answer_key": [
       true,
@@ -5154,9 +5154,9 @@
     "tactical_explanations": [
       "TRUE — €2.05m breaks the micro turnover threshold.",
       "TRUE — €43.5m breaks the medium balance sheet threshold.",
-      "FALSE — €2.1m exceeds the €2m micro turnover threshold.",
-      "FALSE — €2.3m exceeds the €2m micro turnover threshold.",
-      "TRUE — €44m breaks the medium balance sheet threshold."
+      "FALSE — €2.2m exceeds the €2m micro turnover threshold.",
+      "FALSE — Ten is not fewer than ten; the micro staff test fails.",
+      "TRUE — Turnover above €50m breaks the medium turnover threshold."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5170,7 +5170,7 @@
       "€2.4m turnover still meets the micro turnover cap of €2m.",
       "€10.4m turnover still meets the small turnover cap of €10m.",
       "€52m turnover still meets the medium turnover cap of €50m.",
-      "€55m turnover still meets the medium turnover cap of €50m.",
+      "Steve's €180k turnover exceeds the €2m micro turnover cap.",
       "Seven staff fits the micro employee ceiling below ten."
     ],
     "answer_key": [
@@ -5184,7 +5184,7 @@
       "FALSE — €2.4m exceeds the €2m micro turnover threshold.",
       "FALSE — €10.4m exceeds the €10m small turnover threshold.",
       "FALSE — €52m exceeds the €50m medium turnover threshold.",
-      "FALSE — €55m exceeds the €50m medium turnover threshold.",
+      "FALSE — €180k is within the €2m micro turnover ceiling.",
       "TRUE — Seven is below the ten-person micro limit."
     ],
     "difficulty_level": "1/5",
@@ -5198,9 +5198,9 @@
     "statements": [
       "Eight staff fits the micro employee ceiling below ten.",
       "A €44m balance sheet still meets the medium balance sheet cap of €43m.",
-      "A €43.5m balance sheet still meets the medium balance sheet cap of €43m.",
-      "Two staff exceeds the micro employee ceiling of fewer than ten.",
-      "Six staff exceeds the micro employee ceiling of fewer than ten."
+      "Balance sheet above €43m always qualifies a firm for medium status regardless of staff.",
+      "Meeting the micro staff test alone guarantees micro status without financial verification.",
+      "Fifteen staff exceeds the micro employee ceiling of fewer than ten."
     ],
     "answer_key": [
       true,
@@ -5212,9 +5212,9 @@
     "tactical_explanations": [
       "TRUE — Eight is below the ten-person micro limit.",
       "FALSE — €44m exceeds the €43m medium balance sheet threshold.",
-      "FALSE — €43.5m exceeds the €43m medium balance sheet threshold.",
-      "FALSE — Two is below ten and fits the micro staff ceiling.",
-      "FALSE — Six is below ten and fits the micro staff ceiling."
+      "FALSE — Medium status requires joint staff and financial tests.",
+      "FALSE — Micro status also requires turnover or balance sheet verification.",
+      "FALSE — Fifteen exceeds the ten-person micro limit."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5225,10 +5225,10 @@
     "title": "Three thousand staff group",
     "context": "A tech group employs three thousand staff with €200m turnover; assess SME classification claims:",
     "statements": [
-      "Three thousand staff fits the medium employee ceiling below two hundred and fifty.",
+      "Three thousand staff exceeds the two hundred and fifty employee medium ceiling.",
       "One hundred and eighty staff fits the medium employee ceiling below two hundred and fifty.",
-      "Thirty staff exceeds the small employee ceiling of fewer than fifty.",
-      "One hundred and eighty staff fits the small employee ceiling below fifty.",
+      "Grant eligibility for medium firms ignores official headcount thresholds.",
+      "Sixty staff exceeds the small employee ceiling of fewer than fifty.",
       "Two hundred staff fits the small employee ceiling below fifty."
     ],
     "answer_key": [
@@ -5241,7 +5241,7 @@
     "tactical_explanations": [
       "FALSE — 3,000 far exceeds the 250-person medium limit.",
       "TRUE — 180 is below the 250-person medium limit.",
-      "FALSE — Thirty is below fifty and fits the small staff ceiling.",
+      "FALSE — EU support schemes apply standard headcount thresholds.",
       "FALSE — 180 exceeds the fifty-employee small limit.",
       "FALSE — 200 exceeds the fifty-employee small limit."
     ],
@@ -5254,11 +5254,11 @@
     "title": "Architect turnover edge",
     "context": "An architect practice has nine staff, €2.05m turnover, and a €1.6m balance sheet; assess micro status:",
     "statements": [
-      "Ten thousand AT&S staff fits the medium employee ceiling below two hundred and fifty.",
+      "Ten thousand staff exceeds the two hundred and fifty employee medium ceiling.",
       "Forty-five staff fits the small employee ceiling below fifty.",
-      "One hundred and twenty staff fits the medium employee ceiling below two hundred and fifty.",
-      "One hundred staff fits the medium employee ceiling below two hundred and fifty.",
-      "Two hundred staff fits the medium employee ceiling below two hundred and fifty."
+      "Nine staff fits the micro employee ceiling below ten.",
+      "A €1.6m balance sheet fits the micro balance sheet cap of €2m.",
+      "€2.05m turnover exceeds the €2m micro turnover cap."
     ],
     "answer_key": [
       false,
@@ -5270,9 +5270,9 @@
     "tactical_explanations": [
       "FALSE — 10,000 far exceeds the 250-person medium limit.",
       "TRUE — 45 is below the fifty-employee small limit.",
-      "TRUE — 120 is below the 250-person medium limit.",
-      "TRUE — 100 is below the 250-person medium limit.",
-      "TRUE — 200 is below the 250-person medium limit."
+      "TRUE — Nine is below the ten-person micro limit.",
+      "TRUE — €1.6m is within the €2m micro balance sheet ceiling.",
+      "TRUE — €2.05m breaks the micro turnover threshold."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5315,7 +5315,7 @@
       "Turnover of €9.9m exceeds the small turnover cap of €10m.",
       "A firm with nine staff still needs turnover or balance sheet data to confirm micro status.",
       "EU support programmes use standard SME thresholds to verify applicant eligibility.",
-      "A firm with eight staff still needs turnover or balance sheet data to confirm micro status.",
+      "Headcount below ten alone cannot confirm micro status without turnover or balance sheet figures.",
       "Large firms face reporting duties rather than exemption from financial disclosure."
     ],
     "answer_key": [
@@ -5329,7 +5329,7 @@
       "FALSE — €9.9m is within the €10m small turnover ceiling.",
       "TRUE — Financial caps must be verified alongside headcount.",
       "TRUE — Finance schemes rely on official size criteria.",
-      "TRUE — Financial caps must be verified alongside headcount.",
+      "TRUE — Micro classification requires financial data alongside headcount.",
       "TRUE — Large classification brings reporting obligations."
     ],
     "difficulty_level": "5/5",
@@ -5489,7 +5489,7 @@
       "Turnover at or below €50m can satisfy the medium financial test.",
       "Balance sheet at or below €43m can satisfy the medium financial test.",
       "Crossing the small staff ceiling immediately classifies a firm as large.",
-      "Balance sheet at or below €2m can satisfy the micro financial test.",
+      "Fewer than ten employees can satisfy the micro headcount test.",
       "Balance sheet figures are ignored for medium status when turnover qualifies."
     ],
     "answer_key": [
@@ -5573,10 +5573,10 @@
     "title": "Staff-only exam trap",
     "context": "A case lists eight staff and asks whether SME status is certain; evaluate reasoning:",
     "statements": [
-      "A firm with eight staff is confirmed micro without turnover documentation.",
+      "Eight staff alone cannot confirm micro status without turnover or balance sheet verification.",
       "Classification review requires both headcount and financial figures for EU SME tiers.",
       "Grant schemes ignore official micro thresholds when the applicant is a local shop.",
-      "A firm with nine staff is confirmed micro without turnover documentation.",
+      "Grant officers may ignore turnover data when a shop has nine staff.",
       "A tech group with three thousand staff is treated as large under EU size rules."
     ],
     "answer_key": [
@@ -5587,10 +5587,10 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Financial thresholds are mandatory for micro confirmation.",
+      "FALSE — EU micro rules require financial thresholds alongside headcount.",
       "TRUE — Incomplete data prevents reliable SME verification.",
       "FALSE — Support programmes use standard EU micro criteria.",
-      "FALSE — Financial thresholds are mandatory for micro confirmation.",
+      "FALSE — Support programmes use standard EU micro criteria including financial tests.",
       "TRUE — 3,000 employees exceeds all SME staff ceilings."
     ],
     "difficulty_level": "5/5",
@@ -5632,10 +5632,10 @@
     "context": "A retailer has thirty staff and €9.9m turnover; assess small enterprise claims:",
     "statements": [
       "A manufacturer with two hundred forty staff can meet the medium staff test.",
-      "The EU micro cap for turnover is €10m rather than €2m.",
+      "Micro enterprises may use a €10m turnover cap instead of the €2m micro limit.",
       "An engineering firm with two hundred staff can meet the medium staff test.",
       "One hundred and eighty staff with €45m turnover can meet medium staff and turnover tests.",
-      "The EU small cap for turnover is €2m rather than €10m."
+      "Small enterprises are capped at €2m turnover rather than the €10m small limit."
     ],
     "answer_key": [
       true,
@@ -5721,8 +5721,8 @@
       "A firm at nine staff is not confirmed as micro without financial verification.",
       "Small turnover of €9.5m stays within the €10m small cap.",
       "Medium turnover of €40m stays within the €50m medium cap.",
-      "Small turnover of €9.9m stays within the €10m small cap.",
-      "Medium turnover of €49m stays within the €50m medium cap."
+      "Micro turnover at or below €2m can satisfy the micro financial test.",
+      "Small status requires fewer than fifty staff plus turnover at or below €10m."
     ],
     "answer_key": [
       true,
@@ -5735,8 +5735,8 @@
       "TRUE — Headcount alone does not confirm micro status.",
       "TRUE — €9.5m meets the small turnover threshold.",
       "TRUE — €40m meets the medium turnover threshold.",
-      "TRUE — €9.9m meets the small turnover threshold.",
-      "TRUE — €49m meets the medium turnover threshold."
+      "TRUE — €2m is the micro turnover ceiling.",
+      "TRUE — Small combines staff ceiling with the €10m turnover cap."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5777,8 +5777,8 @@
     "context": "Place a growing firm on the SME ladder as it adds staff and sales:",
     "statements": [
       "Medium balance sheet of €40m stays within the €43m medium cap.",
-      "Medium balance sheet of €42m stays within the €43m medium cap.",
-      "Micro turnover of €1.9m balance sheet total stays within the €2m micro balance sheet cap.",
+      "Micro balance sheet of €1.8m stays within the €2m micro cap.",
+      "Small turnover at or below €10m can satisfy the small financial test.",
       "A firm becomes large immediately upon reaching €2.1m turnover.",
       "One criterion alone is enough for medium status when turnover is €40m."
     ],
@@ -5791,8 +5791,8 @@
     ],
     "tactical_explanations": [
       "TRUE — €40m meets the medium balance sheet threshold.",
-      "TRUE — €42m meets the medium balance sheet threshold.",
-      "TRUE — €1.9m meets the micro balance sheet threshold.",
+      "TRUE — €1.8m meets the micro balance sheet threshold.",
+      "TRUE — €10m is the small turnover ceiling.",
       "FALSE — Turnover above €2m removes micro status but small or medium may apply.",
       "FALSE — Medium requires sub-250 staff plus financial tests."
     ],
@@ -8158,7 +8158,7 @@
       "The flour supplier expects payment and future orders from Tina and Steve's bakery.",
       "Tina and Steve depend on the supplier for quality flour while the supplier depends on their orders.",
       "Delayed bakery orders threaten the flour supplier's cash flow and staffing plans.",
-      "Buyers and suppliers rely on each other for orders and cash flow."
+      "Supplier survival depends on steady bakery orders as well as timely payment."
     ],
     "answer_key": [
       false,
@@ -8172,7 +8172,7 @@
       "TRUE — Suppliers expect payment and orders without needing ownership.",
       "TRUE — Mutual dependency runs both ways between buyers and suppliers.",
       "TRUE — Order volumes affect supplier livelihoods as stakeholders.",
-      "TRUE — Mutual dependency runs both ways between buyers and suppliers."
+      "TRUE — Suppliers rely on order volume and payment for ongoing operations."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -8330,7 +8330,7 @@
     "statements": [
       "Expansion plans may clash with community preferences about noise and traffic.",
       "Community objections to a bakery extension illustrate conflicting stakeholder interests in practice.",
-      "Tina and Steve's growth ambitions may conflict with neighbours' wish to limit delivery traffic.",
+      "Neighbours near the bakery hold community stakeholder interests in delivery traffic from expansion.",
       "Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions.",
       "Neighbours opposing Tina and Steve's extension show conflicting stakeholder interests over local amenities."
     ],
@@ -8344,7 +8344,7 @@
     "tactical_explanations": [
       "TRUE — Community and owner interests may conflict on expansion impacts.",
       "TRUE — Conflicting stakeholder interests arise when growth affects local amenities.",
-      "TRUE — Community and owner interests may conflict on expansion impacts.",
+      "TRUE — Local residents are community stakeholders affected by expansion plans.",
       "TRUE — Profit and community concerns can conflict in expansion decisions.",
       "TRUE — Community and owner interests can conflict in expansion decisions."
     ],
@@ -8477,7 +8477,7 @@
       "Delayed invoices affect only the buyer's finance department, not supplier stakeholders.",
       "Fair payment terms matter to suppliers as stakeholder treatment, not only to accountants.",
       "Suppliers have no stakeholder interest in payment timing once a contract is signed.",
-      "Fair supplier terms are purely legal technicalities, not stakeholder fairness concerns."
+      "Extending payment deadlines ignores supplier interests in cash flow and fair treatment."
     ],
     "answer_key": [
       false,
@@ -8491,7 +8491,7 @@
       "FALSE — Payment timing affects supplier stakeholders directly.",
       "TRUE — Payment and order treatment reflect supplier stakeholder interests.",
       "FALSE — Timely payment is a core supplier stakeholder interest.",
-      "FALSE — Payment and order treatment reflect supplier stakeholder interests."
+      "FALSE — Payment timing is a core supplier stakeholder concern in fair dealings."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -8593,7 +8593,7 @@
       "A major employer's expansion or closure decision affects community stakeholders beyond the factory gate.",
       "Residents whose family members work at the plant hold a community stakeholder interest in its future.",
       "Local spending from factory wages links community welfare to the firm's continued operation.",
-      "A town relying on one employer shows community stake in that firm's survival."
+      "Closure of the town's main employer would remove wages that support local shops and services."
     ],
     "answer_key": [
       true,
@@ -8607,7 +8607,7 @@
       "TRUE — Communities are affected by business activity and count as stakeholders.",
       "TRUE — Local employment ties community interests to firm outcomes.",
       "TRUE — Local spending and jobs link community interests to firm activity.",
-      "TRUE — Local employment ties community interests to firm outcomes."
+      "TRUE — Community welfare is tied to jobs and spending from major local employers."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
