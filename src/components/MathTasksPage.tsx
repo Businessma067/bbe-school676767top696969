@@ -301,7 +301,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                       passed && !locked && "text-muted-foreground line-through",
                                     )}
                                   >
-                                    Task {i + 1}
+                                    {c.placeholder || !c.title
+                                      ? `Task ${i + 1}`
+                                      : `Task ${i + 1} · ${c.title}`}
                                     {locked && " · Locked"}
                                   </span>
                                 </button>
@@ -426,7 +428,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               freeLimit={freeLimitOf(tier, activeChapter)}
               onBack={() => setActiveIdx(freeLimitOf(tier, activeChapter) - 1)}
             />
-          ) : activeCase ? (
+          ) : activeCase?.placeholder ? (
             <PlaceholderTaskCard
               task={activeCase}
               index={activeIdx}
@@ -435,6 +437,26 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   ? "Revision"
                   : (chapters.find((c) => c.num === activeChapter)?.title ?? "Mathematics")
               }
+            />
+          ) : activeCase ? (
+            <MathTaskCard
+              task={activeCase}
+              index={activeIdx}
+              alreadyPassed={progress.passed.includes(activeCase.id)}
+              inRevision={progress.revision.includes(activeCase.id)}
+              onGraded={(allCorrect) => {
+                setProgress((prev) => {
+                  const next: Progress = {
+                    passed: prev.passed.filter((x) => x !== activeCase.id),
+                    revision: prev.revision.filter((x) => x !== activeCase.id),
+                  };
+                  if (allCorrect) next.passed = [...next.passed, activeCase.id];
+                  else next.revision = [...next.revision, activeCase.id];
+                  saveProgress(next);
+                  return next;
+                });
+              }}
+              onResetProgress={() => resetCaseIds([activeCase.id])}
             />
           ) : null}
 
@@ -488,10 +510,25 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               <div className="min-h-0 flex-1 overflow-y-auto">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
                   Task {activeIdx + 1}
+                  {!activeCase.placeholder && activeCase.title ? ` · ${activeCase.title}` : ""}
                 </p>
-                <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
-                  Theory notes for this topic will appear here once tasks are added.
-                </div>
+                {activeCase.placeholder ? (
+                  <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
+                    Theory notes for this topic will appear here once tasks are added.
+                  </div>
+                ) : (
+                  <div className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
+                    <p>
+                      BBE format: mark each of the five statements independently as True or
+                      False. The number of true statements varies by case.
+                    </p>
+                    <p>
+                      Notation: <span className="font-semibold text-foreground">C(n, r)</span>{" "}
+                      combinations, <span className="font-semibold text-foreground">P(n, r)</span>{" "}
+                      permutations. Prefer exact counts over intuition on close inequalities.
+                    </p>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
@@ -545,6 +582,214 @@ function LockedDemoCard({
         <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
       </button>
     </div>
+  );
+}
+
+function MathTaskCard({
+  task,
+  index,
+  alreadyPassed,
+  inRevision,
+  onGraded,
+  onResetProgress,
+}: {
+  task: MathTask;
+  index: number;
+  alreadyPassed: boolean;
+  inRevision: boolean;
+  onGraded: (allCorrect: boolean) => void;
+  onResetProgress: () => void;
+}) {
+  const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
+    task.statements.map(() => null),
+  );
+  const [checked, setChecked] = useState(false);
+  const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
+
+  useEffect(() => {
+    setAnswers(task.statements.map(() => null));
+    setChecked(false);
+    setOpenExpl({});
+  }, [task.id, task.statements]);
+
+  const setAt = (i: number, v: boolean) => {
+    setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
+  };
+
+  const correctCount = task.answer_key.reduce<number>(
+    (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
+    0,
+  );
+
+  const handleSubmit = () => {
+    setChecked(true);
+    onGraded(correctCount === task.answer_key.length);
+  };
+
+  const handleReset = () => {
+    setChecked(false);
+    setAnswers(task.statements.map(() => null));
+    setOpenExpl({});
+  };
+
+  return (
+    <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+          Task {index + 1}
+        </span>
+        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+          {task.case_id}
+        </span>
+        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+          Difficulty {task.difficulty_level}
+        </span>
+        {alreadyPassed && (
+          <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
+            Passed
+          </span>
+        )}
+        {inRevision && (
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+            In revision
+          </span>
+        )}
+        <span className="flex-1" />
+        {(alreadyPassed || inRevision || checked) && (
+          <button
+            type="button"
+            onClick={() => {
+              handleReset();
+              onResetProgress();
+            }}
+            title="Reset this task"
+            aria-label="Reset this task"
+            className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:border-destructive hover:text-destructive"
+          >
+            <RotateCcw className="h-3 w-3" /> Reset task
+          </button>
+        )}
+      </div>
+
+      <h2 className="font-display text-lg font-bold tracking-tight">{task.title}</h2>
+      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{task.context}</p>
+
+      <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+        <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+          <span className="w-6 text-center">#</span>
+          <span className="flex-1">Statement</span>
+          <span className="w-14 text-center">True</span>
+          {checked && <span className="w-6" aria-hidden />}
+        </li>
+        {task.statements.map((stmt, i) => {
+          const isChecked = answers[i] === true;
+          const correctAns = task.answer_key[i];
+          const isCorrect = checked && isChecked === correctAns;
+          const isWrong = checked && isChecked !== correctAns;
+          return (
+            <li
+              key={i}
+              className={cn(
+                "px-4 py-3 transition-colors",
+                isCorrect && "bg-emerald-500/5",
+                isWrong && "bg-destructive/5",
+              )}
+            >
+              <div className="flex items-center gap-3">
+                <span className="w-6 text-center text-xs font-bold text-muted-foreground">
+                  {String.fromCharCode(65 + i)}.
+                </span>
+                <p className="flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
+                <div className="flex w-14 justify-center">
+                  <button
+                    type="button"
+                    role="checkbox"
+                    aria-checked={isChecked}
+                    aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
+                    disabled={checked}
+                    onClick={() => setAt(i, !isChecked)}
+                    className={cn(
+                      "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                      isChecked
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-border bg-background hover:border-primary/60",
+                      checked && "cursor-default",
+                    )}
+                  >
+                    {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
+                  </button>
+                </div>
+                {checked && (
+                  <span
+                    className={cn(
+                      "grid h-6 w-6 place-items-center rounded-full",
+                      isCorrect
+                        ? "bg-emerald-500 text-white"
+                        : "bg-destructive text-destructive-foreground",
+                    )}
+                    aria-label={isCorrect ? "Correct" : "Incorrect"}
+                  >
+                    {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
+                  </span>
+                )}
+              </div>
+              {checked && (
+                <div className="mt-3">
+                  <button
+                    type="button"
+                    onClick={() => setOpenExpl((s) => ({ ...s, [i]: !s[i] }))}
+                    className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+                    aria-expanded={!!openExpl[i]}
+                  >
+                    Explanation
+                    <ChevronDown
+                      className={cn("h-3.5 w-3.5 transition-transform", openExpl[i] && "rotate-180")}
+                    />
+                  </button>
+                  {openExpl[i] && (
+                    <p
+                      className={cn(
+                        "mt-2 w-full rounded-md p-3 text-xs leading-relaxed",
+                        isCorrect
+                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
+                          : "bg-destructive/10 text-destructive",
+                      )}
+                    >
+                      {task.tactical_explanations[i]}
+                    </p>
+                  )}
+                </div>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+        {!checked ? (
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+          >
+            Check Answers / Submit
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={handleReset}
+            className="inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            <RotateCcw className="h-4 w-4" /> Try again
+          </button>
+        )}
+        {checked && (
+          <span className="text-sm font-semibold text-muted-foreground">
+            {correctCount}/{task.answer_key.length} correct
+          </span>
+        )}
+      </div>
+    </article>
   );
 }
 

@@ -1,7 +1,9 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Task content will be filled in later — placeholder slots keep the UI ready.
+ * Chapter 12 (Elementary probability) is populated; other chapters use placeholders.
  */
+
+import ch12Probability from "@/data/math-cases-ch12-probability.json";
 
 export type MathTask = {
   id: string;
@@ -63,12 +65,19 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
   });
 }
 
+const CHAPTER_TASK_OVERRIDES: Partial<Record<number, MathTask[]>> = {
+  12: (ch12Probability.tasks as MathTask[]).map((t) => ({
+    ...t,
+    placeholder: false,
+  })),
+};
+
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   const num = i + 1;
   return {
     num,
     title,
-    tasks: makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
+    tasks: CHAPTER_TASK_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
   };
 });
 
