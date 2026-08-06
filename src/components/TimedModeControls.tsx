@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Clock, Gauge, Timer, TimerOff } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import {
   DIFFICULTY_LABEL,
   DIFFICULTY_MULTIPLIER,
@@ -35,6 +36,8 @@ export function TimedModeBar({ session }: { session: TimedSession }) {
         >
           <Timer className="h-4 w-4" /> Timed Mode {session.enabled ? "ON" : "OFF"}
         </button>
+
+        <PracticeCalculatorInline />
 
         {session.enabled && (
           <>

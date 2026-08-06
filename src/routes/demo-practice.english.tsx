@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthNav } from "@/components/AuthNav";
+import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 import { cn } from "@/lib/utils";
@@ -720,7 +721,8 @@ function EnglishTasks() {
 
 
           {activeChapter !== null && (
-            <div className="mb-5">
+            <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
+              <div>
               <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
                 {activeChapter === "revision" ? "Revision folder" : `Chapter ${CHAPTERS.find((c) => c.key === activeChapter)?.num}`}
               </span>
@@ -729,6 +731,8 @@ function EnglishTasks() {
                   ? "Fix what tripped you up"
                   : CHAPTERS.find((c) => c.key === activeChapter)?.title}
               </h1>
+              </div>
+              <PracticeCalculatorInline />
             </div>
           )}
 

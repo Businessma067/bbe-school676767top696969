@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 export const Route = createFileRoute("/practice")({
@@ -114,13 +115,16 @@ function PracticePage() {
     <div className={PRACTICE_PAGE}>
       <SiteHeader maxWidthClassName="max-w-none" compact />
       <main className={`${PRACTICE_BODY} flex-col space-y-6`}>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <h1 className="text-2xl font-bold">Practice</h1>
-          {submitted && (
-            <div className="rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold">
-              Score: {correctCount}/{statements.length} correct
-            </div>
-          )}
+          <div className="flex items-center gap-2">
+            <PracticeCalculatorInline />
+            {submitted && (
+              <div className="rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold">
+                Score: {correctCount}/{statements.length} correct
+              </div>
+            )}
+          </div>
         </div>
 
         {loading && <p className="text-muted-foreground">Loading…</p>}

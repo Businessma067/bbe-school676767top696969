@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X } from "lucide-react";
+import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X, Calculator } from "lucide-react";
 import { SUBJECT_META } from "@/config/scoring-config";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
@@ -29,6 +29,7 @@ import {
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { scrubStatementHints } from "@/lib/case-context";
@@ -59,7 +60,7 @@ export const Route = createFileRoute("/mock-exams/$examId/take")({
 export { answersStorageKey };
 
 type Phase = "exam" | "review";
-type RightPanel = "sheet" | "notes" | null;
+type RightPanel = "sheet" | "notes" | "calc" | null;
 
 function mergeSessions(
   local: MockExamSession | null,
@@ -675,6 +676,14 @@ function TakeExamPage() {
             <FileSpreadsheet className="h-5 w-5" />
           </ToolRailButton>
           <ToolRailButton
+            label="Calculator"
+            short="Calc"
+            active={rightPanel === "calc"}
+            onClick={() => (rightPanel === "calc" ? setRightPanel(null) : openPanel("calc"))}
+          >
+            <Calculator className="h-5 w-5" />
+          </ToolRailButton>
+          <ToolRailButton
             label="Notes"
             short="Notes"
             active={rightPanel === "notes"}
@@ -714,6 +723,20 @@ function TakeExamPage() {
                 goTo(n - 1);
               }}
             />
+          </div>
+        </SheetContent>
+      </Sheet>
+
+      <Sheet open={rightPanel === "calc"} onOpenChange={(o) => setRightPanel(o ? "calc" : null)}>
+        <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-lg">
+          <SheetHeader className="pr-8 text-left">
+            <SheetTitle className="font-display">Calculator</SheetTitle>
+            <SheetDescription>
+              MathPrint-style scientific calculator for timed exam practice (TI-30XS feature set).
+            </SheetDescription>
+          </SheetHeader>
+          <div className="mt-4 flex justify-center pb-8">
+            <Ti30MathPrint className="w-full" />
           </div>
         </SheetContent>
       </Sheet>
