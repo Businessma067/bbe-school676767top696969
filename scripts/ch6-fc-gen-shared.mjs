@@ -54,7 +54,12 @@ export function buildCases({
   const usedGlobal = new Set();
   const tCursor = { i: 0 };
   const fCursor = { i: 0 };
-  const sceneSet = new Set(sceneIndices);
+  const sceneSet = new Set(
+    (sceneIndices || []).filter((i) => Number.isInteger(i) && i >= 0 && i < slots.length),
+  );
+  if (sceneSet.size < Math.min(8, Math.max(1, Math.floor(slots.length / 4)))) {
+    for (let i = 2; i < slots.length; i += 4) sceneSet.add(i);
+  }
 
   return slots.map((slot, idx) => {
     const statements = [];
@@ -70,7 +75,7 @@ export function buildCases({
     return {
       subsection,
       case_id: slot.case_id,
-      title: TITLES[idx] ?? `Accounting Case ${idx + 1}`,
+      title: TITLES[idx % TITLES.length] ?? `Accounting Case ${idx + 1}`,
       context: ctxPool[idx % ctxPool.length],
       statements,
       answer_key: slot.answer_key,

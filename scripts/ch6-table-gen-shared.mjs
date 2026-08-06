@@ -312,6 +312,138 @@ export function mkExpl(keys, texts) {
   return keys.map((k, i) => `${k ? "TRUE" : "FALSE"} — ${texts[i]}`);
 }
 
+/** Small balance sheet (fewer line items) for the half-page 6.4 scope. */
+export function genSmallBs(rng) {
+  const buildings = ri(rng, 200, 380);
+  const inventory = ri(rng, 60, 160);
+  const cash = ri(rng, 30, 90);
+  const assets = buildings + inventory + cash;
+
+  const share = ri(rng, 80, 180);
+  let retained = ri(rng, 40, 140);
+  const loan = ri(rng, 90, 200);
+  const payables = ri(rng, 30, 100);
+  let equity = share + retained;
+  let liab = loan + payables;
+  const diff = assets - equity - liab;
+  retained += diff;
+  equity = share + retained;
+  assert(equity + liab === assets, "small bs balance");
+  return {
+    buildings,
+    inventory,
+    cash,
+    assets,
+    share,
+    retained,
+    equity,
+    loan,
+    payables,
+    liab,
+    nca: buildings,
+    ca: inventory + cash,
+    ncl: loan,
+    cl: payables,
+  };
+}
+
+export function smallBsTable(b) {
+  return mdAmount("€ in thousands", [
+    ["ASSETS", ""],
+    ["Buildings", b.buildings],
+    ["Inventory", b.inventory],
+    ["Cash and cash equivalents", b.cash],
+    ["Total assets", `**${b.assets}**`],
+    ["EQUITY", ""],
+    ["Share capital", b.share],
+    ["Retained earnings", b.retained],
+    ["Total equity", `**${b.equity}**`],
+    ["LIABILITIES", ""],
+    ["Long-term bank loan", b.loan],
+    ["Trade payables", b.payables],
+    ["Total liabilities", `**${b.liab}**`],
+    ["Total equity and liabilities", `**${b.assets}**`],
+  ]);
+}
+
+/** One or two depreciating assets, straight-line, for the half-page 6.4 scope. */
+export function genDepPair(rng) {
+  const cost = ri(rng, 60, 120) * 1000;
+  const life = ri(rng, 4, 8);
+  const ann = cost / life;
+  const cost2 = ri(rng, 20, 40) * 1000;
+  const resid2 = ri(rng, 2, 5) * 1000;
+  const life2 = 5;
+  const ann2 = (cost2 - resid2) / life2;
+  return { cost, life, ann, cost2, resid2, life2, ann2 };
+}
+
+const LINE_ITEM_PHRASES = [
+  "cash flow from operating activities before changes in working capital",
+  "cash flow from operating activities",
+  "cash flow from investing activities",
+  "cash flow from financing activities",
+  "change in cash and cash equivalents",
+  "cash and cash equivalents at the beginning of the year",
+  "cash and cash equivalents at the end of the year",
+  "cash and cash equivalents",
+  "general and administrative costs",
+  "patents, trademarks and licences",
+  "non-current liabilities",
+  "trade receivables",
+  "current liabilities",
+  "non-current assets",
+  "long-term bank loan",
+  "distribution costs",
+  "profit before tax",
+  "income taxes",
+  "profit for the year",
+  "bank overdraft",
+  "bonds payable",
+  "trade payables",
+  "office equipment",
+  "current assets",
+  "total liabilities",
+  "share capital",
+  "retained earnings",
+  "total equity",
+  "total assets",
+  "operating result",
+  "finance costs",
+  "cost of sales",
+  "gross profit",
+  "inventory",
+  "buildings",
+  "machinery",
+  "revenue",
+  "equity",
+  "liabilities",
+  "assets",
+  "receivables",
+  "payables",
+];
+
+const COMPARISON_VERB = /\bexceed(?:s)?\b|\b(?:is|are)\s+(?:greater|higher|lower|less|more|smaller|bigger)\b.{0,40}\bthan\b|\b(?:is|are)\s+below\b|\b(?:is|are)\s+above\b/i;
+
+const CALC_QUALIFIER = /%|percent|ratio|\btimes\b|more than half|less than half|\bhalf of\b|\bdouble\b|\btwice\b|\btriple\b|growth|grew|\bgrow\b|\brose\b|\brisen\b|\bfell\b|\bfallen\b|declin|increas|decreas|per share|turnover|coverage|margin|proportion|share of|account(?:s)? for|on average|average\b/i;
+
+/** Heuristic ban on trivial "read two numbers off the table and compare" statements. */
+function findObviousReadOff(stmt) {
+  if (!COMPARISON_VERB.test(stmt)) return null;
+  if (CALC_QUALIFIER.test(stmt)) return null;
+  const lower = stmt.toLowerCase();
+  const mentioned = LINE_ITEM_PHRASES.filter((p) => lower.includes(p));
+  // collapse phrases that are substrings of a longer mentioned phrase (avoid double count)
+  const distinct = mentioned.filter(
+    (p) => !mentioned.some((q) => q !== p && q.includes(p)),
+  );
+  if (distinct.length >= 2) return stmt;
+  const hasBothYears = /\byear 1\b/i.test(stmt) && /\byear 2\b/i.test(stmt);
+  const hasBeginEnd = /beginning of the year/i.test(stmt) && /end of the year/i.test(stmt);
+  if (distinct.length >= 1 && (hasBothYears || hasBeginEnd)) return stmt;
+  return null;
+}
+
 export function validateTableCase(c) {
   const ban = /\b(EBIT|EBITDA|ROCE|ROE|EPS|WC|P&L|BS|IS|CF)\b/;
   const hint = /\([^)]*(?:divided by|calculated as|defined as|cost of sales divided)[^)]*\)/i;
@@ -323,6 +455,8 @@ export function validateTableCase(c) {
   if (!c.context.includes("|")) throw new Error(`no table ${c.case_id}`);
   for (const s of c.statements) {
     if (hint.test(s)) throw new Error(`hint in ${c.case_id}: ${s}`);
+    const readOff = findObviousReadOff(s);
+    if (readOff) throw new Error(`obvious read-off in ${c.case_id}: ${readOff}`);
     for (const other of c.statements) {
       if (other !== s && jaccard(s, other) >= 0.78) throw new Error(`near dup in ${c.case_id}`);
     }

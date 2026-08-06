@@ -1,7 +1,15 @@
 /**
- * Ch.6 slot plan: 125 cases × 5 subtopics.
- * Part 1 (text):  CASE 6.x.001–050 — 50 per subtopic
- * Part 2 (table): CASE 6.x.051–125 — 75 per subtopic
+ * Ch.6 slot plan — proportional by textbook volume + formula weight.
+ * Total ~625. Halves interleaved (not text-then-table blocks).
+ *
+ * Counts:
+ *   6.5 160  analysis/ratios (formula-heavy)
+ *   6.2 150  P&L, cash flow, depreciation (formula medium-high)
+ *   6.1 130  balance sheet basics (some equity ratio)
+ *   6.3 125  reading statements (margins / interpretation)
+ *   6.4  60  types of accounting (conceptual; half-page)
+ *
+ * Within each: ~40% text / ~60% table; TRUE 1..5 even; difficulties mixed.
  */
 import fs from "node:fs";
 
@@ -29,9 +37,19 @@ function truePositions(trueCount, rng) {
   return [0, 1, 2, 3, 4].map((i) => set.has(i));
 }
 
-function buildHalf(sub, halfTag, startIdx, count, seedOffset) {
+/** ~40% text, rest table — exact counts that sum to n */
+function halfTags(n, rng) {
+  const textN = Math.round(n * 0.4);
+  const tags = [...Array(textN).fill("text"), ...Array(n - textN).fill("table")];
+  return shuffle(tags, rng);
+}
+
+function buildSub(sub, count, seedOffset) {
   const rng = mulberry32(Number(sub.replace(".", "")) * 7919 + seedOffset);
   const perTrue = count / 5;
+  if (perTrue !== Math.floor(perTrue)) {
+    throw new Error(`${sub} count ${count} not divisible by 5`);
+  }
   const trueCounts = shuffle(
     [
       ...Array(perTrue).fill(1),
@@ -53,39 +71,54 @@ function buildHalf(sub, halfTag, startIdx, count, seedOffset) {
     ],
     rng,
   );
-  return trueCounts.map((tc, i) => {
-    const n = startIdx + i;
-    return {
-      case_id: `CASE ${sub}.${String(n).padStart(3, "0")}`,
-      subsection: sub,
-      half: halfTag,
-      trueCount: tc,
-      answer_key: truePositions(tc, rng),
-      difficulty_level: diffs[i],
-    };
-  });
+  const halves = halfTags(count, rng);
+
+  return trueCounts.map((tc, i) => ({
+    case_id: `CASE ${sub}.${String(i + 1).padStart(3, "0")}`,
+    subsection: sub,
+    half: halves[i],
+    trueCount: tc,
+    answer_key: truePositions(tc, rng),
+    difficulty_level: diffs[i],
+  }));
 }
+
+/** Volume + formula weight (6.5/6.2 heaviest; 6.4 lightest). */
+const COUNTS = {
+  "6.5": 160,
+  "6.2": 150,
+  "6.1": 130,
+  "6.3": 125,
+  "6.4": 60,
+};
 
 const SUBS = ["6.1", "6.2", "6.3", "6.4", "6.5"];
 const out = {};
+let total = 0;
 
 for (const sub of SUBS) {
-  const text = buildHalf(sub, "text", 1, 50, 11);
-  const table = buildHalf(sub, "table", 51, 75, 77);
-  out[sub] = [...text, ...table];
-}
-
-fs.writeFileSync("scripts/ch6-slot-plan.json", JSON.stringify(out, null, 2) + "\n");
-
-for (const sub of SUBS) {
-  const slots = out[sub];
-  const td = {};
-  const dd = {};
+  out[sub] = buildSub(sub, COUNTS[sub], 41);
+  total += out[sub].length;
   const halves = { text: 0, table: 0 };
-  for (const s of slots) {
-    td[s.trueCount] = (td[s.trueCount] || 0) + 1;
-    dd[s.difficulty_level] = (dd[s.difficulty_level] || 0) + 1;
-    halves[s.half]++;
+  const td = {};
+  let maxRun = 1;
+  let run = 1;
+  for (let i = 1; i < out[sub].length; i++) {
+    if (out[sub][i].half === out[sub][i - 1].half) {
+      run++;
+      maxRun = Math.max(maxRun, run);
+    } else run = 1;
   }
-  console.log(sub, "n=" + slots.length, "halves", halves, "TRUE", td, "DIFF", dd);
+  for (const s of out[sub]) {
+    halves[s.half]++;
+    td[s.trueCount] = (td[s.trueCount] || 0) + 1;
+  }
+  console.log(sub, "n=" + out[sub].length, halves, "TRUE", td, "maxSameHalfRun", maxRun);
 }
+
+console.log("TOTAL", total);
+fs.writeFileSync("scripts/ch6-slot-plan.json", JSON.stringify(out, null, 2) + "\n");
+fs.writeFileSync(
+  "scripts/ch6-counts.json",
+  JSON.stringify({ total, counts: COUNTS, mix: "40% text / 60% table interleaved" }, null, 2) + "\n",
+);

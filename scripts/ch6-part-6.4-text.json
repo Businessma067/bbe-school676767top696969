@@ -1,285 +1,105 @@
 [
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.001",
-    "title": "Financial Accounting and External Users",
-    "context": "Review how financial accounting information is prepared primarily for external users such as owners, lenders and tax authorities. Evaluate the following economic assertions:",
-    "statements": [
-      "Published financial statements prepared under financial accounting are aimed primarily at tax authorities and other parties outside day-to-day management.",
-      "Tax authorities typically rely on audited annual reports rather than on informal internal spreadsheets when judging a business.",
-      "Detailed cost schedules prepared for store managers are examples of management accounting information used inside the business.",
-      "Store managers may receive weekly or monthly internal reports that are not part of the legally prescribed annual financial statements.",
-      "A manufacturer may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Financial accounting serves external stakeholders such as tax authorities, not only internal managers.",
-      "TRUE — External parties such as tax authorities depend on formal published and often audited accounts.",
-      "TRUE — Management accounting supplies internal decision makers such as store managers with tailored cost and performance data.",
-      "TRUE — Management accounting can be produced frequently for store managers without following the statutory formats used externally.",
-      "TRUE — Discontinue-or-continue product decisions for a manufacturer often draw on internal contribution analysis from management accounting."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
     "case_id": "CASE 6.4.002",
-    "title": "Management Accounting for Internal Decisions",
-    "context": "Consider a retail chain whose finance team prepares internal margin reports weekly while lenders review its statutory balance sheet. Evaluate the following economic assertions:",
+    "title": "Financial Accounting and External Users",
+    "context": "Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:",
     "statements": [
-      "Management accounting reports for a manufacturer must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Managers at a manufacturer can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter.",
-      "Only financial accounting can ever support a manufacturer's decision on whether to discontinue an unprofitable product line.",
-      "A manufacturer prepares management accounting solely for tax authorities and never for its own managers.",
-      "Owners of a manufacturer may judge whether retained capital is justified by comparing profit with the risk they bear."
+      "Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements."
     ],
     "answer_key": [
+      true,
       false,
       true,
       false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "TRUE — Cost-cutting choices at a manufacturer are typical management accounting uses rather than purposes of external reporting.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a manufacturer."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.003",
-    "title": "Owners, Managers and Employees as Users",
-    "context": "Review the distinction between users inside a business and users outside it when accounts are prepared. Evaluate the following economic assertions:",
-    "statements": [
-      "External lenders of a manufacturer typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "An independent audit of a manufacturer's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a manufacturer's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a manufacturer may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "An audit of a manufacturer's accounts is performed by the firm's own sales managers to verify daily cash takings."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a manufacturer.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a manufacturer.",
-      "TRUE — Internal formats for a manufacturer can differ from statutory presentation because management accounting serves different questions.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers."
+      "TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.",
+      "FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.",
+      "FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.004",
-    "title": "Suppliers Reading Customer Accounts",
-    "context": "Analyze why owners may care about return on their investment relative to the risk they bear. Evaluate the following economic assertions:",
+    "title": "Management Accounting for Internal Users",
+    "context": "Consider a retail chain whose employees hear informal updates on trading performance while tax authorities rely solely on its filed financial accounts. Evaluate the following economic assertions:",
     "statements": [
-      "A retailer may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.",
-      "Managers at a retailer can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter.",
-      "Owners of a retailer may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "An independent audit of a retailer's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a retailer's income statement reduces reported profit without causing a cash payment in the same period."
+      "Management accounting reports prepared for managers of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Lenders of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Employees of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Managers of a manufacturer work inside the business and can be given management accounting reports designed around their own questions."
     ],
     "answer_key": [
+      false,
       true,
       true,
-      true,
-      true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Discontinue-or-continue product decisions for a retailer often draw on internal contribution analysis from management accounting.",
-      "TRUE — Cost-cutting choices at a retailer are typical management accounting uses rather than purposes of external reporting.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a retailer.",
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a retailer.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a retailer."
+      "FALSE — Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.",
+      "TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.",
+      "FALSE — Internal users such as employees can receive management accounting far more often than the annual financial statements.",
+      "TRUE — Managers are internal users who can receive management accounting tailored to their needs."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.005",
-    "title": "Investors and Published Profit",
-    "context": "Review how managers use accounting data to decide whether to cut costs in a particular department. Evaluate the following economic assertions:",
+    "title": "Owners Weighing Return Against Risk",
+    "context": "Analyze why managers and employees are generally classified as internal users of accounting information. Evaluate the following economic assertions:",
     "statements": [
-      "Depreciation recorded by a manufacturer requires an equal cash payment to leave the business in the same month it is charged.",
-      "Management accounting reports for a retailer may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A service firm may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.",
-      "Published financial statements of a manufacturer are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Owners of a manufacturer never compare profit with the risk of their investment when reading accounts."
+      "Management accounting reports prepared for employees of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Managers of a manufacturer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a manufacturer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Employees of a manufacturer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Owners of a manufacturer look at accounting information mainly to judge the return earned on the capital they have invested."
     ],
     "answer_key": [
       false,
       true,
       true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "TRUE — Internal formats for a retailer can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a service firm often draw on internal contribution analysis from management accounting.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.006",
-    "title": "Tax Authorities and Statutory Accounts",
-    "context": "Consider a logistics operator whose depot managers receive fuel-cost summaries while bondholders read its audited annual report. Evaluate the following economic assertions:",
-    "statements": [
-      "Management accounting reports for a retailer must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a retailer's decision on whether to discontinue an unprofitable product line.",
-      "A retailer prepares management accounting solely for tax authorities and never for its own managers.",
-      "External lenders of a retailer typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "Managers at a service firm can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter."
-    ],
-    "answer_key": [
-      false,
-      false,
-      false,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "TRUE — Cost-cutting choices at a service firm are typical management accounting uses rather than purposes of external reporting."
+      "FALSE — Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.",
+      "TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.",
+      "TRUE — Employees are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.007",
-    "title": "Auditing and the Annual Report",
-    "context": "Review why employees may be interested in whether a business is thriving when they read internal summaries. Evaluate the following economic assertions:",
+    "title": "Lenders and Repayment Capacity",
+    "context": "Review why owners weigh the return on their investment against the risk they are taking. Evaluate the following economic assertions:",
     "statements": [
-      "An audit of a retailer's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Owners of a service firm may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "Depreciation recorded by a retailer requires an equal cash payment to leave the business in the same month it is charged.",
-      "Published financial statements of a retailer are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Owners of a retailer never compare profit with the risk of their investment when reading accounts."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a service firm.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.008",
-    "title": "Independent Verification of Accounts",
-    "context": "Analyze why suppliers may study a customer's published accounts before extending trade credit. Evaluate the following economic assertions:",
-    "statements": [
-      "An independent audit of a service firm's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Management accounting reports for a service firm must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Depreciation charged in a service firm's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a service firm may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A construction contractor may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a service firm.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a service firm.",
-      "TRUE — Internal formats for a service firm can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a construction contractor often draw on internal contribution analysis from management accounting."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.009",
-    "title": "Flexible Formats in Management Accounting",
-    "context": "Review why competitors may examine publicly available financial statements of rival firms. Evaluate the following economic assertions:",
-    "statements": [
-      "Managers at a construction contractor can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter.",
-      "Only financial accounting can ever support a service firm's decision on whether to discontinue an unprofitable product line.",
-      "A service firm prepares management accounting solely for tax authorities and never for its own managers.",
-      "Owners of a construction contractor may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "External lenders of a service firm typically base their credit decisions only on informal internal spreadsheets prepared for supervisors."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Cost-cutting choices at a construction contractor are typical management accounting uses rather than purposes of external reporting.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a construction contractor.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.010",
-    "title": "Statutory Presentation in Financial Accounting",
-    "context": "Consider a farming cooperative whose field managers monitor input costs while members receive a simplified annual summary. Evaluate the following economic assertions:",
-    "statements": [
-      "An independent audit of a construction contractor's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a construction contractor's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a construction contractor may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A hospitality group may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.",
-      "Managers at a hospitality group can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter."
+      "Lenders of a manufacturer look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a manufacturer look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a manufacturer look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a manufacturer look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a manufacturer look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
     ],
     "answer_key": [
       true,
@@ -289,71 +109,41 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a construction contractor.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a construction contractor.",
-      "TRUE — Internal formats for a construction contractor can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a hospitality group often draw on internal contribution analysis from management accounting.",
-      "TRUE — Cost-cutting choices at a hospitality group are typical management accounting uses rather than purposes of external reporting."
+      "TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information.",
+      "TRUE — Tax authorities focus on how much tax is due on the business's profit when they use accounting information.",
+      "TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information.",
+      "TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information.",
+      "TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information."
     ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.011",
-    "title": "Frequency of Internal Versus External Reports",
-    "context": "Review how tax authorities rely on financial accounting records to assess tax liabilities. Evaluate the following economic assertions:",
-    "statements": [
-      "An audit of a service firm's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Depreciation recorded by a service firm requires an equal cash payment to leave the business in the same month it is charged.",
-      "Published financial statements of a service firm are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Owners of a service firm never compare profit with the risk of their investment when reading accounts.",
-      "Owners of a hospitality group may judge whether retained capital is justified by comparing profit with the risk they bear."
-    ],
-    "answer_key": [
-      false,
-      false,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a hospitality group."
-    ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.012",
-    "title": "Cost Cutting and Departmental Analysis",
-    "context": "Analyze why management accounting reports are not usually bound to the same legal presentation rules as published financial statements. Evaluate the following economic assertions:",
+    "title": "Tax Authorities and Filed Accounts",
+    "context": "Analyze why lenders focus on a business's ability to repay what it owes. Evaluate the following economic assertions:",
     "statements": [
-      "An independent audit of a hospitality group's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a hospitality group's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a hospitality group may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A logistics operator may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.",
-      "Managers at a logistics operator can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter."
+      "Owners of a manufacturer have no interest in the return earned on the capital they have invested when they look at accounting information.",
+      "Lenders of a manufacturer have no interest in whether the business will be able to repay what it owes when they look at accounting information.",
+      "Owners of a retailer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Tax authorities of a manufacturer have no interest in how much tax is due on the business's profit when they look at accounting information."
     ],
     "answer_key": [
+      false,
+      false,
       true,
       true,
-      true,
-      true,
-      true
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a hospitality group.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a hospitality group.",
-      "TRUE — Internal formats for a hospitality group can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a logistics operator often draw on internal contribution analysis from management accounting.",
-      "TRUE — Cost-cutting choices at a logistics operator are typical management accounting uses rather than purposes of external reporting."
+      "FALSE — Owners are typically concerned with the return earned on the capital they have invested.",
+      "FALSE — Lenders are typically concerned with whether the business will be able to repay what it owes.",
+      "TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.",
+      "FALSE — Tax authorities are typically concerned with how much tax is due on the business's profit."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -361,45 +151,15 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.013",
-    "title": "Pricing Decisions and Internal Costs",
-    "context": "Review how financial accounting focuses on the balance sheet and income statement in forms suitable for external reporting. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.4.019",
+    "title": "Investors and Published Statements",
+    "context": "Consider a health-care provider whose employees ask about job security after an internal trading update while lenders study its audited balance sheet. Evaluate the following economic assertions:",
     "statements": [
-      "Owners of a logistics operator may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "Management accounting reports for a construction contractor must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a construction contractor's decision on whether to discontinue an unprofitable product line.",
-      "A construction contractor prepares management accounting solely for tax authorities and never for its own managers.",
-      "External lenders of a construction contractor typically base their credit decisions only on informal internal spreadsheets prepared for supervisors."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a logistics operator.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.014",
-    "title": "Product-Line Contribution Analysis",
-    "context": "Consider a textile exporter whose production planners review yarn costs while overseas buyers request its latest balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "An independent audit of a logistics operator's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a logistics operator's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a logistics operator may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A health-care provider may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.",
-      "Managers at a health-care provider can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter."
+      "Lenders of a retailer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a retailer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
     ],
     "answer_key": [
       true,
@@ -409,101 +169,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a logistics operator.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a logistics operator.",
-      "TRUE — Internal formats for a logistics operator can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a health-care provider often draw on internal contribution analysis from management accounting.",
-      "TRUE — Cost-cutting choices at a health-care provider are typical management accounting uses rather than purposes of external reporting."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.015",
-    "title": "Discontinue or Continue Decisions",
-    "context": "Review the role of auditing in checking whether published accounts present a true and fair view. Evaluate the following economic assertions:",
-    "statements": [
-      "Owners of a health-care provider may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "An independent audit of a health-care provider's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation charged in a health-care provider's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Management accounting reports for a health-care provider may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.",
-      "A technology company may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a health-care provider.",
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a health-care provider.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a health-care provider.",
-      "TRUE — Internal formats for a health-care provider can differ from statutory presentation because management accounting serves different questions.",
-      "TRUE — Discontinue-or-continue product decisions for a technology company often draw on internal contribution analysis from management accounting."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.016",
-    "title": "Return Relative to Owner Risk",
-    "context": "Analyze how an independent auditing firm examines evidence supporting the figures in an annual report. Evaluate the following economic assertions:",
-    "statements": [
-      "Managers at a technology company can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter.",
-      "Owners of a technology company may judge whether retained capital is justified by comparing profit with the risk they bear.",
-      "An audit of a construction contractor's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "An independent audit of a technology company's annual report is intended to increase confidence that the figures are reliable for external users.",
-      "Depreciation recorded by a construction contractor requires an equal cash payment to leave the business in the same month it is charged."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Cost-cutting choices at a technology company are typical management accounting uses rather than purposes of external reporting.",
-      "TRUE — Return relative to risk is a central owner concern when reading accounts of a technology company.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "TRUE — Auditing provides independent verification sought by outsiders reviewing a technology company.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.017",
-    "title": "Lenders and Repayment Capacity",
-    "context": "Review why auditing results are disclosed within or alongside the annual report of larger companies. Evaluate the following economic assertions:",
-    "statements": [
-      "Published financial statements of a construction contractor are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Depreciation charged in a technology company's income statement reduces reported profit without causing a cash payment in the same period.",
-      "Owners of a construction contractor never compare profit with the risk of their investment when reading accounts.",
-      "Management accounting reports for a hospitality group must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Management accounting reports for a technology company may be structured by product, region or cost centre rather than mirroring the published financial statements line by line."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "TRUE — Depreciation is a non-cash expense in the published accounts of a technology company.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "TRUE — Internal formats for a technology company can differ from statutory presentation because management accounting serves different questions."
+      "TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.",
+      "TRUE — Managers are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -511,209 +181,29 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.018",
-    "title": "Competitors Studying Public Filings",
-    "context": "Consider a property-management company whose building supervisors track repair invoices while owners read the consolidated financial report. Evaluate the following economic assertions:",
-    "statements": [
-      "Only financial accounting can ever support a hospitality group's decision on whether to discontinue an unprofitable product line.",
-      "A hospitality group prepares management accounting solely for tax authorities and never for its own managers.",
-      "Financial accounting must follow recognised presentation rules so that external users can compare businesses on a consistent basis.",
-      "External lenders of a hospitality group typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "An audit of a hospitality group's accounts is performed by the firm's own sales managers to verify daily cash takings."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "TRUE — Standardised external presentation is a hallmark of financial accounting.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.019",
-    "title": "Media Reaction to Headline Profit",
-    "context": "Review why discontinue-or-continue decisions for a product may rely on management accounting contribution analysis. Evaluate the following economic assertions:",
-    "statements": [
-      "Depreciation recorded by a hospitality group requires an equal cash payment to leave the business in the same month it is charged.",
-      "Published financial statements of a hospitality group are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Owners of a hospitality group never compare profit with the risk of their investment when reading accounts.",
-      "Management accounting is not usually required to follow the same legally prescribed formats as the published balance sheet and income statement.",
-      "Bookkeepers record business transactions that later support both internal management reports and external financial statements."
-    ],
-    "answer_key": [
-      false,
-      false,
-      false,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "TRUE — Flexibility of format distinguishes management accounting from statutory financial accounting.",
-      "TRUE — The same underlying transaction records can feed both accounting branches."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.020",
-    "title": "Segment Reporting for Divisions",
-    "context": "Analyze why published financial statements alone may be too aggregated for day-to-day operational choices. Evaluate the following economic assertions:",
-    "statements": [
-      "Management accounting reports for a logistics operator must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a logistics operator's decision on whether to discontinue an unprofitable product line.",
-      "Only financial accounting figures appear in the annual report that is filed for external stakeholders.",
-      "Internal management accounting helps a manufacturer decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "A logistics operator prepares management accounting solely for tax authorities and never for its own managers."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "TRUE — The annual report channel is part of financial accounting aimed at outsiders.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
     "case_id": "CASE 6.4.021",
-    "title": "Budgeting as a Management Tool",
-    "context": "Review how depreciation recorded in financial accounts reduces reported profit without an immediate cash payment. Evaluate the following economic assertions:",
+    "title": "Managers Controlling Costs Internally",
+    "context": "Analyze why investors study published financial statements before committing further capital. Evaluate the following economic assertions:",
     "statements": [
-      "External lenders of a logistics operator typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "Internal management accounting helps a manufacturer decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Internal management accounting helps a manufacturer decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "An audit of a logistics operator's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Internal management accounting helps a manufacturer decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report."
+      "Employees of a retailer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Investors of a manufacturer have no interest in the likely return and risk before committing further capital when they look at accounting information.",
+      "Employees of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for employees of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a retailer look at accounting information mainly to judge the return earned on the capital they have invested."
     ],
     "answer_key": [
+      true,
       false,
       true,
       true,
-      false,
       true
     ],
     "tactical_explanations": [
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.022",
-    "title": "Variance Analysis Internally",
-    "context": "Consider a construction firm whose site supervisors track project spending daily while tax authorities receive its filed financial statements. Evaluate the following economic assertions:",
-    "statements": [
-      "Depreciation recorded by a logistics operator requires an equal cash payment to leave the business in the same month it is charged.",
-      "Internal management accounting helps a manufacturer decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a manufacturer decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "Internal management accounting helps a manufacturer decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "Published financial statements of a logistics operator are prepared mainly for shift supervisors who need tomorrow's production schedule."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.023",
-    "title": "Bookkeeping and Transaction Records",
-    "context": "Review how financial accounting must follow recognised accounting standards for external presentation. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a manufacturer decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Owners of a logistics operator never compare profit with the risk of their investment when reading accounts.",
-      "Management accounting reports for a health-care provider must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a health-care provider's decision on whether to discontinue an unprofitable product line.",
-      "A health-care provider prepares management accounting solely for tax authorities and never for its own managers."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.024",
-    "title": "Ledger Data Feeding Both Report Types",
-    "context": "Analyze why management accounting formats can be tailored to the questions managers are asking. Evaluate the following economic assertions:",
-    "statements": [
-      "External lenders of a health-care provider typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "Internal management accounting helps a retailer decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "Internal management accounting helps a retailer decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "An audit of a health-care provider's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Internal management accounting helps a retailer decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats."
+      "TRUE — Employees are internal users who can receive management accounting tailored to their needs.",
+      "FALSE — Investors are typically concerned with the likely return and risk before committing further capital.",
+      "TRUE — Management accounting can reach internal users such as employees far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.",
+      "TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -722,88 +212,58 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.025",
-    "title": "Accounting Standards for External Reports",
-    "context": "Review how media coverage sometimes reacts to headline profit figures from published accounts. Evaluate the following economic assertions:",
+    "title": "Employees and Job Security",
+    "context": "Review why employees may take an interest in accounting information about job security and pay. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a retailer decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report.",
-      "Depreciation recorded by a health-care provider requires an equal cash payment to leave the business in the same month it is charged.",
-      "Published financial statements of a health-care provider are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Internal management accounting helps a retailer decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a retailer decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report."
+      "Lenders of a retailer look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a retailer look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a retailer look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a manufacturer have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Managers of a retailer look at accounting information mainly to judge controlling costs and choosing between courses of action."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
+      true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats."
+      "TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information.",
+      "TRUE — Tax authorities focus on how much tax is due on the business's profit when they use accounting information.",
+      "TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information.",
+      "FALSE — Managers are typically concerned with controlling costs and choosing between courses of action.",
+      "TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.026",
-    "title": "Dashboards Not in the Annual Report",
-    "context": "Consider a restaurant group whose head chefs see food-cost percentages while banks review its statutory filings. Evaluate the following economic assertions:",
+    "title": "Internal Versus External Users",
+    "context": "Analyze why managers rely on management accounting information to control costs and choose between options. Evaluate the following economic assertions:",
     "statements": [
-      "Owners of a health-care provider never compare profit with the risk of their investment when reading accounts.",
-      "Management accounting reports for a technology company must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Internal management accounting helps a retailer decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "Only financial accounting can ever support a technology company's decision on whether to discontinue an unprofitable product line.",
-      "A technology company prepares management accounting solely for tax authorities and never for its own managers."
+      "Employees of a manufacturer have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Employees of a retailer look at accounting information mainly to judge how secure their jobs and future pay are likely to be.",
+      "Owners of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a retailer are internal users who receive management accounting reports every week, in the same way as its own managers."
     ],
     "answer_key": [
       false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.027",
-    "title": "Cost-Volume-Profit Thinking",
-    "context": "Review how owners who are also managers may use both internal and external reports for different purposes. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a retailer decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Internal management accounting helps a service firm decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "Internal management accounting helps a service firm decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Internal management accounting helps a service firm decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report.",
-      "External lenders of a technology company typically base their credit decisions only on informal internal spreadsheets prepared for supervisors."
-    ],
-    "answer_key": [
-      true,
       true,
       true,
       true,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs."
+      "FALSE — Employees are typically concerned with how secure their jobs and future pay are likely to be.",
+      "TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.",
+      "TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.",
+      "FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -812,28 +272,28 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.028",
-    "title": "Aggregated External Statements",
-    "context": "Analyze why external users generally cannot access detailed internal cost schedules prepared for managers. Evaluate the following economic assertions:",
+    "title": "Frequency of Financial Reporting",
+    "context": "Consider a publishing house whose tax authorities assess liabilities from filed financial accounts rather than from internal management reports. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a service firm decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a service firm decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "An audit of a technology company's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Internal management accounting helps a service firm decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "Internal management accounting helps a service firm decide whether to shift production to a cheaper facility using information that is not presented in the published annual report."
+      "Lenders of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a retailer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Lenders of a retailer are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Managers of a retailer are not allowed to see any accounting information more often than the once-a-year published financial statements."
     ],
     "answer_key": [
       true,
       true,
       false,
-      true,
-      true
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats."
+      "TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.",
+      "FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.",
+      "FALSE — Lenders are external users who rely on annual financial accounting, not weekly internal management reports.",
+      "FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -842,44 +302,14 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.029",
-    "title": "Detailed Internal Cost Schedules",
-    "context": "Review how an annual report bundles financial statements with governance and audit information for outsiders. Evaluate the following economic assertions:",
+    "title": "Frequency of Management Reporting",
+    "context": "Analyze why management accounting is not bound by the same presentation rules as financial accounting. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a construction contractor decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "Depreciation recorded by a technology company requires an equal cash payment to leave the business in the same month it is charged.",
-      "Published financial statements of a technology company are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Internal management accounting helps a construction contractor decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Owners of a technology company never compare profit with the risk of their investment when reading accounts."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.030",
-    "title": "Depreciation in Published Profit",
-    "context": "Consider a fitness-club operator whose regional managers review membership revenue splits while auditors test its published accounts. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a construction contractor decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Internal management accounting helps a construction contractor decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report.",
-      "Internal management accounting helps a construction contractor decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a construction contractor decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "Internal management accounting helps a construction contractor decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report."
+      "Tax authorities of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Tax authorities of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a service firm work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a service firm can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a service firm can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
     ],
     "answer_key": [
       true,
@@ -889,101 +319,71 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats."
+      "TRUE — Tax authorities sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as tax authorities on the statutory annual cycle.",
+      "TRUE — Managers are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting."
     ],
     "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.031",
-    "title": "Non-Cash Expenses and Cash Planning",
-    "context": "Review how financial accounting supports accountability to parties who do not manage the business daily. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a construction contractor decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Management accounting reports for a farm cooperative must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a farm cooperative's decision on whether to discontinue an unprofitable product line.",
-      "Internal management accounting helps a hospitality group decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "A farm cooperative prepares management accounting solely for tax authorities and never for its own managers."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings."
-    ],
-    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.032",
-    "title": "Accountability to Outside Parties",
-    "context": "Analyze why budgeting and variance analysis are typical management accounting tools rather than statutory requirements. Evaluate the following economic assertions:",
+    "title": "Flexible Formats in Management Accounting",
+    "context": "Review why financial accounting statements are normally published only once a year. Evaluate the following economic assertions:",
     "statements": [
-      "External lenders of a farm cooperative typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "An audit of a farm cooperative's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Depreciation recorded by a farm cooperative requires an equal cash payment to leave the business in the same month it is charged.",
-      "Internal management accounting helps a hospitality group decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Published financial statements of a farm cooperative are prepared mainly for shift supervisors who need tomorrow's production schedule."
+      "Employees of a service firm work inside the business and can be given management accounting reports designed around their own questions.",
+      "Management accounting reports prepared for managers of a retailer must use exactly the same statutory format as the published financial statements.",
+      "Employees of a retailer are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Employees of a service firm can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Owners of a retailer have no interest in the return earned on the capital they have invested when they look at accounting information."
     ],
     "answer_key": [
-      false,
+      true,
       false,
       false,
       true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information."
+      "TRUE — Employees are internal users who can receive management accounting tailored to their needs.",
+      "FALSE — Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.",
+      "FALSE — Internal users such as employees can receive management accounting far more often than the annual financial statements.",
+      "TRUE — Management accounting can reach internal users such as employees far more frequently than annual financial accounting.",
+      "FALSE — Owners are typically concerned with the return earned on the capital they have invested."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.033",
-    "title": "Operational Choices and Internal Data",
-    "context": "Review how segment reports for divisions illustrate the flexibility of management accounting. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.4.034",
+    "title": "Statutory Formats in Financial Accounting",
+    "context": "Analyze why management accounting reports can be produced weekly or monthly for internal users. Evaluate the following economic assertions:",
     "statements": [
-      "Owners of a farm cooperative never compare profit with the risk of their investment when reading accounts.",
-      "Internal management accounting helps a hospitality group decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Management accounting reports for a publisher must be filed in exactly the same statutory format as its published balance sheet and income statement.",
-      "Only financial accounting can ever support a publisher's decision on whether to discontinue an unprofitable product line.",
-      "Internal management accounting helps a hospitality group decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report."
+      "Reports prepared for employees of a service firm can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a service firm look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Lenders of a service firm look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a service firm look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a service firm look at accounting information mainly to judge the likely return and risk before committing further capital."
     ],
     "answer_key": [
-      false,
       true,
-      false,
-      false,
+      true,
+      true,
+      true,
       true
     ],
     "tactical_explanations": [
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting is not bound to the same legal presentation rules as published financial statements.",
-      "FALSE — Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats."
+      "TRUE — Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.",
+      "TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.",
+      "TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information.",
+      "TRUE — Tax authorities focus on how much tax is due on the business's profit when they use accounting information.",
+      "TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -991,119 +391,89 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.034",
-    "title": "Strategic Pricing and Cost Data",
-    "context": "Consider a dental practice group whose clinic leads review chair-time profitability while lenders study its annual accounts. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.4.035",
+    "title": "Independent Auditing Explained",
+    "context": "Consider a hospitality group whose owners compare profit with the capital they have invested while an independent auditor checks the underlying figures. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a hospitality group decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a hospitality group decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "A publisher prepares management accounting solely for tax authorities and never for its own managers.",
-      "Internal management accounting helps a hospitality group decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "Internal management accounting helps a hospitality group decide whether to shift production to a cheaper facility using information that is not presented in the published annual report."
+      "Lenders of a retailer have no interest in whether the business will be able to repay what it owes when they look at accounting information.",
+      "Managers of a service firm look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a service firm look at accounting information mainly to judge how secure their jobs and future pay are likely to be.",
+      "Tax authorities of a retailer have no interest in how much tax is due on the business's profit when they look at accounting information.",
+      "Investors of a retailer have no interest in the likely return and risk before committing further capital when they look at accounting information."
     ],
     "answer_key": [
+      false,
       true,
       true,
       false,
-      true,
-      true
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "FALSE — Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats."
+      "FALSE — Lenders are typically concerned with whether the business will be able to repay what it owes.",
+      "TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information.",
+      "TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.",
+      "FALSE — Tax authorities are typically concerned with how much tax is due on the business's profit.",
+      "FALSE — Investors are typically concerned with the likely return and risk before committing further capital."
     ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.035",
-    "title": "Employee Interest in Business Health",
-    "context": "Review how employee representatives may request summary financial information about employer performance. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a logistics operator decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "Internal management accounting helps a logistics operator decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Internal management accounting helps a logistics operator decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Internal management accounting helps a logistics operator decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report.",
-      "Internal management accounting helps a logistics operator decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats."
-    ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.036",
-    "title": "Governance Disclosures in Annual Reports",
-    "context": "Analyze why investors in listed companies depend on audited published accounts for comparability. Evaluate the following economic assertions:",
+    "title": "Audit Independence From Management",
+    "context": "Analyze why an auditor must be independent of the managers whose figures are being checked. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a logistics operator decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "Internal management accounting helps a logistics operator decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "External lenders of a publisher typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.",
-      "Internal management accounting helps a logistics operator decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Internal management accounting helps a health-care provider decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report."
+      "Owners of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Managers of a retailer have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Employees of a retailer have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Owners of a service firm are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a service firm base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements."
     ],
     "answer_key": [
       true,
-      true,
       false,
-      true,
-      true
+      false,
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "FALSE — Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats."
+      "TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "FALSE — Managers are typically concerned with controlling costs and choosing between courses of action.",
+      "FALSE — Employees are typically concerned with how secure their jobs and future pay are likely to be.",
+      "FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports.",
+      "FALSE — Owners typically rely on published financial accounting statements, not informal internal notes."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.037",
-    "title": "Credibility Added by Auditing",
-    "context": "Review how cost-volume-profit thinking belongs to management accounting rather than external reporting. Evaluate the following economic assertions:",
+    "title": "A True and Fair View",
+    "context": "Review how auditing gives external users confidence in published financial statements. Evaluate the following economic assertions:",
     "statements": [
-      "An audit of a publisher's accounts is performed by the firm's own sales managers to verify daily cash takings.",
-      "Depreciation recorded by a publisher requires an equal cash payment to leave the business in the same month it is charged.",
-      "Internal management accounting helps a health-care provider decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Internal management accounting helps a health-care provider decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Internal management accounting helps a health-care provider decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report."
+      "Lenders of a service firm are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Lenders of a service firm base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a service firm are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Management accounting reports prepared for managers of a service firm must use exactly the same statutory format as the published financial statements.",
+      "Owners of a construction contractor normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
     ],
     "answer_key": [
       false,
       false,
-      true,
-      true,
+      false,
+      false,
       true
     ],
     "tactical_explanations": [
-      "FALSE — Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-      "FALSE — Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats."
+      "FALSE — Lenders are external users who rely on annual financial accounting, not weekly internal management reports.",
+      "FALSE — Lenders typically rely on published financial accounting statements, not informal internal notes.",
+      "FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements.",
+      "FALSE — Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.",
+      "TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1112,28 +482,28 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.038",
-    "title": "Complementary Accounting Systems",
-    "context": "Consider a craft brewery whose brewmasters monitor ingredient usage while competitors study its publicly filed statements. Evaluate the following economic assertions:",
+    "title": "Assurance for External Users",
+    "context": "Analyze why management accounting reports are not normally subject to the same audit as financial accounting statements. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a health-care provider decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Published financial statements of a publisher are prepared mainly for shift supervisors who need tomorrow's production schedule.",
-      "Owners of a publisher never compare profit with the risk of their investment when reading accounts.",
-      "Internal management accounting helps a health-care provider decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "Internal management accounting helps a health-care provider decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report."
+      "Employees of a service firm are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Management accounting reports prepared for employees of a service firm must use exactly the same statutory format as the published financial statements.",
+      "Lenders of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a service firm have no interest in the return earned on the capital they have invested when they look at accounting information.",
+      "Lenders of a service firm have no interest in whether the business will be able to repay what it owes when they look at accounting information."
     ],
     "answer_key": [
-      true,
       false,
       false,
       true,
-      true
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "FALSE — Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-      "FALSE — Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats."
+      "FALSE — Internal users such as employees can receive management accounting far more often than the annual financial statements.",
+      "FALSE — Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.",
+      "TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "FALSE — Owners are typically concerned with the return earned on the capital they have invested.",
+      "FALSE — Lenders are typically concerned with whether the business will be able to repay what it owes."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1142,134 +512,14 @@
   {
     "subsection": "6.4",
     "case_id": "CASE 6.4.039",
-    "title": "Regulatory Deadlines for Filing",
-    "context": "Review how financial accounting captures transactions in a structured ledger before statements are produced. Evaluate the following economic assertions:",
+    "title": "Unaudited Internal Reports",
+    "context": "Consider a service firm whose owners request more frequent internal figures than the statutory annual accounts provide. Evaluate the following economic assertions:",
     "statements": [
-      "Internal management accounting helps a health-care provider decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to cut distribution costs after a weak quarter using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to raise the price of a flagship service using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to close a branch that barely covers its variable costs using information that is not presented in the published annual report.",
-      "Management accounting and financial accounting are interchangeable names for the same set of reports prepared once a year."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to cut distribution costs after a weak quarter rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to raise the price of a flagship service rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to close a branch that barely covers its variable costs rely on internal management data rather than external statutory formats.",
-      "FALSE — They are distinct branches serving different users, frequencies and presentation rules."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.040",
-    "title": "Informal Spreadsheets Versus Annual Reports",
-    "context": "Analyze why management accounting may reallocate shared costs differently from the figures shown externally. Evaluate the following economic assertions:",
-    "statements": [
-      "Internal management accounting helps a technology company decide whether to outsource cleaning rather than employ staff directly using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to extend a loss-making contract for strategic reasons using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to renegotiate supplier terms before the next season using information that is not presented in the published annual report.",
-      "Suppliers extending trade credit never consult a customer's published accounts before agreeing payment terms.",
-      "Competitors are legally barred from reading any publicly filed financial statements of rival businesses."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Operational choices such as whether to outsource cleaning rather than employ staff directly rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to extend a loss-making contract for strategic reasons rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to renegotiate supplier terms before the next season rely on internal management data rather than external statutory formats.",
-      "FALSE — Suppliers often review a customer's financial statements to judge credit risk.",
-      "FALSE — Competitors may study publicly available filings when assessing rival performance."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.041",
-    "title": "Marketing Spend and Management Review",
-    "context": "Review how bookkeepers record transactions that later feed both internal and external reporting. Evaluate the following economic assertions:",
-    "statements": [
-      "Employees and managers are always classified as external users of accounting information.",
-      "Internal management accounting helps a technology company decide whether to delay a marketing campaign until margins recover using information that is not presented in the published annual report.",
-      "Internal management accounting helps a technology company decide whether to shift production to a cheaper facility using information that is not presented in the published annual report.",
-      "Bank credit committees reviewing a manufacturer typically depend on published financial accounting statements rather than confidential management packs.",
-      "Pension funds reviewing a retailer typically depend on published financial accounting statements rather than confidential management packs."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Managers and employees are internal users; tax authorities, lenders and investors are external.",
-      "TRUE — Operational choices such as whether to delay a marketing campaign until margins recover rely on internal management data rather than external statutory formats.",
-      "TRUE — Operational choices such as whether to shift production to a cheaper facility rely on internal management data rather than external statutory formats.",
-      "TRUE — External groups such as bank credit committees use formal published accounts of a manufacturer, not internal management schedules.",
-      "TRUE — External groups such as pension funds use formal published accounts of a retailer, not internal management schedules."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.042",
-    "title": "Shared Cost Allocation Internally",
-    "context": "Consider a software company whose product managers review contribution figures while investors study its published income statement. Evaluate the following economic assertions:",
-    "statements": [
-      "A manufacturer may prepare weekly internal performance summaries for managers even though its statutory financial statements are published only once a year.",
-      "External regulators do not require a manufacturer to file weekly management accounting packs in the same format as its annual balance sheet.",
-      "It is accurate to say that for a manufacturer, tax returns are prepared only from management accounting and never from financial accounting records.",
-      "Pension funds reviewing a service firm typically depend on published financial accounting statements rather than confidential management packs.",
-      "It is accurate to say that for a manufacturer, auditing replaces the need for any bookkeeping at all."
-    ],
-    "answer_key": [
-      false,
-      false,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Management accounting at a manufacturer can be produced weekly, unlike the annual external filing cycle.",
-      "FALSE — Weekly internal reports for a manufacturer are not statutory external filings.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — External groups such as pension funds use formal published accounts of a service firm, not internal management schedules.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.043",
-    "title": "Customer Contract Profitability",
-    "context": "Review how management accounting can highlight which customer contracts are barely covering their variable costs. Evaluate the following economic assertions:",
-    "statements": [
-      "Pension funds reviewing a construction contractor typically depend on published financial accounting statements rather than confidential management packs.",
-      "Trade unions reviewing a manufacturer typically depend on published financial accounting statements rather than confidential management packs.",
-      "It is accurate to say that for a manufacturer, owners never read published profit figures.",
-      "Franchise applicants reviewing a service firm typically depend on published financial accounting statements rather than confidential management packs.",
-      "When a manufacturer focuses on pricing a new catalogue line, the relevant figures are normally drawn from management accounting rather than from the published annual report alone."
+      "Lenders of a construction contractor normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Tax authorities of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Tax authorities of a service firm have no interest in how much tax is due on the business's profit when they look at accounting information.",
+      "Managers of a construction contractor work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a construction contractor can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
     ],
     "answer_key": [
       true,
@@ -1279,131 +529,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — External groups such as pension funds use formal published accounts of a construction contractor, not internal management schedules.",
-      "TRUE — External groups such as trade unions use formal published accounts of a manufacturer, not internal management schedules.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — External groups such as franchise applicants use formal published accounts of a service firm, not internal management schedules.",
-      "TRUE — Pricing a new catalogue line is a typical internal management accounting use for a manufacturer."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.044",
-    "title": "Insufficient Detail in Published Accounts",
-    "context": "Analyze why financial accounting emphasises the overall financial position rather than individual product margins. Evaluate the following economic assertions:",
-    "statements": [
-      "It is accurate to say that for a manufacturer, suppliers always ignore a customer's balance sheet before offering credit.",
-      "Published financial statements of a manufacturer are too aggregated to guide day-to-day choices about pricing a new catalogue line without supplementary internal reports.",
-      "When a retailer focuses on allocating head-office costs to branches, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "It is accurate to say that for a manufacturer, management accounting must be signed by the same independent auditor as the annual report.",
-      "Published financial statements of a retailer are too aggregated to guide day-to-day choices about allocating head-office costs to branches without supplementary internal reports."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal detail on pricing a new catalogue line goes beyond what external financial accounting provides for a manufacturer.",
-      "TRUE — Allocating head-office costs to branches is a typical internal management accounting use for a retailer.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal detail on allocating head-office costs to branches goes beyond what external financial accounting provides for a retailer."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.045",
-    "title": "Listed Company Comparability",
-    "context": "Review how strategic pricing decisions often combine market information with internal cost data. Evaluate the following economic assertions:",
-    "statements": [
-      "When a service firm focuses on tracking overtime in a single warehouse, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "It is accurate to say that for a manufacturer, financial accounting is prepared exclusively for shop-floor staff.",
-      "Published financial statements of a service firm are too aggregated to guide day-to-day choices about tracking overtime in a single warehouse without supplementary internal reports.",
-      "When a construction contractor focuses on comparing margin on two distribution channels, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "Published financial statements of a construction contractor are too aggregated to guide day-to-day choices about comparing margin on two distribution channels without supplementary internal reports."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Tracking overtime in a single warehouse is a typical internal management accounting use for a service firm.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal detail on tracking overtime in a single warehouse goes beyond what external financial accounting provides for a service firm.",
-      "TRUE — Comparing margin on two distribution channels is a typical internal management accounting use for a construction contractor.",
-      "TRUE — Internal detail on comparing margin on two distribution channels goes beyond what external financial accounting provides for a construction contractor."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.046",
-    "title": "Tax Planning Starting From Accounts",
-    "context": "Consider an engineering consultancy whose partners decide pricing using internal job-cost records while clients never see those internal schedules. Evaluate the following economic assertions:",
-    "statements": [
-      "When a hospitality group focuses on estimating break-even volume for a seasonal product, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "Published financial statements of a hospitality group are too aggregated to guide day-to-day choices about estimating break-even volume for a seasonal product without supplementary internal reports.",
-      "When a logistics operator focuses on reviewing scrap rates on a production line, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "Published financial statements of a logistics operator are too aggregated to guide day-to-day choices about reviewing scrap rates on a production line without supplementary internal reports.",
-      "When a health-care provider focuses on monitoring fuel spend across a vehicle fleet, the relevant figures are normally drawn from management accounting rather than from the published annual report alone."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Estimating break-even volume for a seasonal product is a typical internal management accounting use for a hospitality group.",
-      "TRUE — Internal detail on estimating break-even volume for a seasonal product goes beyond what external financial accounting provides for a hospitality group.",
-      "TRUE — Reviewing scrap rates on a production line is a typical internal management accounting use for a logistics operator.",
-      "TRUE — Internal detail on reviewing scrap rates on a production line goes beyond what external financial accounting provides for a logistics operator.",
-      "TRUE — Monitoring fuel spend across a vehicle fleet is a typical internal management accounting use for a health-care provider."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.047",
-    "title": "Divisional Performance Reports",
-    "context": "Review how return relative to risk motivates owners when they judge whether to keep capital in a business. Evaluate the following economic assertions:",
-    "statements": [
-      "Published financial statements of a health-care provider are too aggregated to guide day-to-day choices about monitoring fuel spend across a vehicle fleet without supplementary internal reports.",
-      "When a technology company focuses on assessing whether to renew an advertising contract, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.",
-      "Published financial statements of a technology company are too aggregated to guide day-to-day choices about assessing whether to renew an advertising contract without supplementary internal reports.",
-      "Each verified supplier invoice recorded by a manufacturer becomes part of the ledger that supports both statutory financial statements and selective internal management reports.",
-      "A branch contribution schedule prepared for managers at a manufacturer illustrates management accounting that is not normally reproduced line for line in the published annual report."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Internal detail on monitoring fuel spend across a vehicle fleet goes beyond what external financial accounting provides for a health-care provider.",
-      "TRUE — Assessing whether to renew an advertising contract is a typical internal management accounting use for a technology company.",
-      "TRUE — Internal detail on assessing whether to renew an advertising contract goes beyond what external financial accounting provides for a technology company.",
-      "TRUE — Documentary evidence such as a supplier invoice feeds the shared transaction base used by a manufacturer for external and internal reporting.",
-      "TRUE — Internal formats such as a branch contribution schedule serve managers at a manufacturer without replacing statutory financial statements."
+      "TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.",
+      "TRUE — Tax authorities sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "FALSE — Tax authorities are typically concerned with how much tax is due on the business's profit.",
+      "TRUE — Managers are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -1411,91 +541,181 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.048",
-    "title": "Weekly Internal Packs Versus Yearly Filings",
-    "context": "Analyze why suppliers worry about a customer's ability to pay invoices when credit terms are offered. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.4.042",
+    "title": "Shared Transactions, Different Purposes",
+    "context": "Analyze why financial accounting and management accounting can draw on the same underlying transactions. Evaluate the following economic assertions:",
     "statements": [
-      "A branch contribution schedule prepared for managers at a retailer illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "A product margin comparison prepared for managers at a service firm illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "It is accurate to say that for a manufacturer, internal cost schedules are legally filed alongside the balance sheet for every business.",
-      "A overhead absorption worksheet prepared for managers at a construction contractor illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "A rolling cash forecast prepared for managers at a hospitality group illustrates management accounting that is not normally reproduced line for line in the published annual report."
+      "Reports prepared for managers of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Investors of a service firm have no interest in the likely return and risk before committing further capital when they look at accounting information.",
+      "Managers of a service firm have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Employees of a service firm have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Owners of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.",
+      "FALSE — Investors are typically concerned with the likely return and risk before committing further capital.",
+      "FALSE — Managers are typically concerned with controlling costs and choosing between courses of action.",
+      "FALSE — Employees are typically concerned with how secure their jobs and future pay are likely to be.",
+      "FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.043",
+    "title": "Recognised Rules for Comparability",
+    "context": "Review why recognised presentation rules help external users compare different businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a construction contractor work inside the business and can be given management accounting reports designed around their own questions.",
+      "Employees of a construction contractor can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for employees of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a construction contractor look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Lenders of a construction contractor look at accounting information mainly to judge whether the business will be able to repay what it owes."
     ],
     "answer_key": [
       true,
       true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Employees are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Management accounting can reach internal users such as employees far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.",
+      "TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.",
+      "TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.046",
+    "title": "Owners and Investors as Separate Users",
+    "context": "Analyze why internal reports can be laid out however best suits the decision being made. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Tax authorities of a construction contractor look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a construction contractor look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a construction contractor look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a construction contractor look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.",
+      "TRUE — Tax authorities focus on how much tax is due on the business's profit when they use accounting information.",
+      "TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information.",
+      "TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information.",
+      "TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.047",
+    "title": "Annual Statements Versus Monthly Reports",
+    "context": "Consider a retail chain whose employees hear informal updates on trading performance while tax authorities rely solely on its filed financial accounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a hospitality group are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Lenders of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Lenders are external users who rely on annual financial accounting, not weekly internal management reports.",
+      "TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.",
+      "FALSE — Lenders typically rely on published financial accounting statements, not informal internal notes.",
+      "FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.054",
+    "title": "Tailored Reports for Managers",
+    "context": "Analyze why tax authorities are treated as external users of financial accounting information. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a hospitality group are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Management accounting reports prepared for managers of a construction contractor must use exactly the same statutory format as the published financial statements.",
+      "Employees of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Lenders of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a hospitality group work inside the business and can be given management accounting reports designed around their own questions."
+    ],
+    "answer_key": [
+      true,
+      false,
       false,
       true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Internal formats such as a branch contribution schedule serve managers at a retailer without replacing statutory financial statements.",
-      "TRUE — Internal formats such as a product margin comparison serve managers at a service firm without replacing statutory financial statements.",
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal formats such as a overhead absorption worksheet serve managers at a construction contractor without replacing statutory financial statements.",
-      "TRUE — Internal formats such as a rolling cash forecast serve managers at a hospitality group without replacing statutory financial statements."
+      "TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.",
+      "FALSE — Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.",
+      "FALSE — Internal users such as employees can receive management accounting far more often than the annual financial statements.",
+      "TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.",
+      "TRUE — Managers are internal users who can receive management accounting tailored to their needs."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.049",
-    "title": "Evidence Testing by Auditors",
-    "context": "Review how competitors infer strategic pressure from rivals' published profitability trends. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.4.055",
+    "title": "Why Employees Read Trading Updates",
+    "context": "Review how the frequency of reporting differs between financial accounting and management accounting. Evaluate the following economic assertions:",
     "statements": [
-      "It is accurate to say that for a manufacturer, depreciation never appears in the income statement.",
-      "It is accurate to say that for a retailer, tax returns are prepared only from management accounting and never from financial accounting records.",
-      "It is accurate to say that for a retailer, auditing replaces the need for any bookkeeping at all.",
-      "A rolling cash forecast prepared for managers at a logistics operator illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "It is accurate to say that for a retailer, owners never read published profit figures."
+      "Managers of a hospitality group can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a hospitality group can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Employees of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.",
+      "Owners of a hospitality group look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Management accounting reports prepared for employees of a construction contractor must use exactly the same statutory format as the published financial statements."
     ],
     "answer_key": [
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — That claim about a manufacturer is incorrect and reverses the usual roles of financial and management accounting.",
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting.",
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal formats such as a rolling cash forecast serve managers at a logistics operator without replacing statutory financial statements.",
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting."
+      "TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting.",
+      "TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.",
+      "TRUE — Employees are internal users who can receive management accounting tailored to their needs.",
+      "TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.",
+      "FALSE — Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting."
     ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.050",
-    "title": "True and Fair View in Auditing",
-    "context": "Consider a publishing house whose editors see print-run cost estimates while shareholders focus on the statutory profit and loss account. Evaluate the following economic assertions:",
-    "statements": [
-      "It is accurate to say that for a retailer, suppliers always ignore a customer's balance sheet before offering credit.",
-      "A rolling cash forecast prepared for managers at a health-care provider illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "A labour hour analysis by contract prepared for managers at a manufacturer illustrates management accounting that is not normally reproduced line for line in the published annual report.",
-      "It is accurate to say that for a retailer, management accounting must be signed by the same independent auditor as the annual report.",
-      "It is accurate to say that for a retailer, financial accounting is prepared exclusively for shop-floor staff."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting.",
-      "TRUE — Internal formats such as a rolling cash forecast serve managers at a health-care provider without replacing statutory financial statements.",
-      "TRUE — Internal formats such as a labour hour analysis by contract serve managers at a manufacturer without replacing statutory financial statements.",
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting.",
-      "FALSE — That claim about a retailer is incorrect and reverses the usual roles of financial and management accounting."
-    ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   }

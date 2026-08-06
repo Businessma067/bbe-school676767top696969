@@ -1,6 +1,8 @@
 /**
- * Generate scripts/ch6-part-6.2-text.json — 75 textual cases for subsection 6.2
- * "Other components of the financial statement of a business".
+ * Generate scripts/ch6-part-6.2-text.json — textual cases for subsection 6.2:
+ * the statement of profit and loss, the cash flow statement (operating,
+ * investing, financing), depreciation (straight-line, book value, non-cash
+ * nature) and the divergence between profit and cash.
  */
 import fs from "node:fs";
 import { buildCases, validateAndWrite } from "./ch6-fc-gen-shared.mjs";
@@ -10,40 +12,114 @@ const slots = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"))[
 );
 const OUT = "scripts/ch6-part-6.2-text.json";
 
+function fmt(n) {
+  return n.toLocaleString("en-US");
+}
+
+const BUSINESSES = [
+  "bakery",
+  "courier firm",
+  "construction firm",
+  "hotel chain",
+  "software developer",
+  "garage",
+  "furniture maker",
+  "brewery",
+  "textile mill",
+  "printing company",
+  "arable farm",
+  "electronics retailer",
+  "logistics company",
+  "dairy processor",
+  "pharmacy chain",
+  "fitness club chain",
+  "restaurant chain",
+  "IT consultancy",
+  "publishing house",
+  "car parts manufacturer",
+  "packaging manufacturer",
+  "catering company",
+  "recycling firm",
+  "ceramics workshop",
+];
+
+const ASSETS = [
+  "commercial ovens",
+  "delivery vans",
+  "heavy construction machinery",
+  "kitchen equipment",
+  "office computer equipment",
+  "diagnostic equipment",
+  "woodworking machinery",
+  "brewing tanks",
+  "spinning machinery",
+  "printing press",
+  "tractor",
+  "point-of-sale tills",
+  "forklift trucks",
+  "refrigerated trucks",
+  "dispensing equipment",
+  "exercise equipment",
+  "commercial refrigerators",
+  "laptop computers",
+  "binding machines",
+  "stamping presses",
+  "packaging machinery",
+  "catering vans",
+  "sorting machinery",
+  "kiln equipment",
+];
+
+function depScenario(i) {
+  const cost = 24000 + i * 4500;
+  const life = [4, 5, 6, 8, 10][i % 5];
+  let residual = 2000 + (i % 6) * 800;
+  while ((cost - residual) % life !== 0) residual += 100;
+  const annual = (cost - residual) / life;
+  return { cost, residual, life, annual };
+}
+
+function cfScenario(i) {
+  const operating = 26000 + i * 1600;
+  const investing = 9000 + (i % 5) * 1800;
+  const financingIsInflow = i % 2 === 0;
+  const financing = financingIsInflow ? 5500 + i * 220 : 4200 + i * 180;
+  const net = operating - investing + (financingIsInflow ? financing : -financing);
+  return { operating, investing, financingIsInflow, financing, net };
+}
+
 const SCENE = [
-  "Consider a bakery that recently invested in new commercial ovens and wants to understand how its balance sheet, statement of profit and loss and cash flow statement work together. Evaluate the following economic assertions:",
-  "Consider a courier firm that expanded its delivery van fleet during the year and is reviewing how that purchase appears across its financial statements. Evaluate the following economic assertions:",
-  "Consider a construction firm that finances major machinery purchases with a mix of retained profits and long-term bank borrowing. Evaluate the following economic assertions:",
-  "Consider a hotel chain replacing kitchen equipment across several properties while monitoring the effect on its accounts. Evaluate the following economic assertions:",
+  "Consider a bakery that installed new commercial ovens and wants to see how the purchase flows through its statement of profit and loss, cash flow statement and balance sheet. Evaluate the following economic assertions:",
+  "Consider a courier firm that expanded its delivery van fleet and is reviewing how the cash outflow is classified in its cash flow statement. Evaluate the following economic assertions:",
+  "Consider a construction firm financing new heavy machinery partly with retained profits and partly with a long-term loan. Evaluate the following economic assertions:",
+  "Consider a hotel chain replacing kitchen equipment across several properties and tracking the depreciation charged each year. Evaluate the following economic assertions:",
   "Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:",
-  "Consider a garage that purchased new diagnostic equipment and is reviewing how the payment is treated across its financial statements. Evaluate the following economic assertions:",
-  "Consider a furniture maker upgrading its woodworking machinery and preparing its year-end accounts. Evaluate the following economic assertions:",
-  "Consider a brewery installing additional brewing tanks and tracking the resulting cash flows. Evaluate the following economic assertions:",
-  "Consider a textile mill replacing ageing spinning machinery and reviewing the depreciation charged each year. Evaluate the following economic assertions:",
-  "Consider a printing company that bought a new printing press and is assessing the impact on its cash flow statement. Evaluate the following economic assertions:",
-  "Consider an arable farm that owns land alongside a tractor and outbuildings, and is reviewing how each asset is treated in the accounts. Evaluate the following economic assertions:",
-  "Consider an electronics retailer upgrading its point-of-sale tills across all branches and reviewing the year-end financial statements. Evaluate the following economic assertions:",
-  "Consider a logistics company that took out a long-term loan to fund a new warehouse and is reviewing its cash flow statement. Evaluate the following economic assertions:",
+  "Consider a garage that bought new diagnostic equipment and is working out the straight-line depreciation to charge on it. Evaluate the following economic assertions:",
+  "Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:",
+  "Consider a brewery installing additional brewing tanks and reviewing the resulting cash flow from investing activities. Evaluate the following economic assertions:",
+  "Consider a textile mill replacing ageing spinning machinery and calculating the machinery's book value after several years of use. Evaluate the following economic assertions:",
+  "Consider a printing company that bought a new printing press and is assessing how the purchase affects its cash flow statement. Evaluate the following economic assertions:",
+  "Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:",
+  "Consider an electronics retailer upgrading its point-of-sale tills across all branches and reviewing the accumulated depreciation recorded. Evaluate the following economic assertions:",
+  "Consider a logistics company that took out a long-term loan to buy new forklift trucks and is classifying the resulting cash flows. Evaluate the following economic assertions:",
   "Consider a dairy processor that collected several overdue customer invoices during the year and is classifying the resulting cash inflows. Evaluate the following economic assertions:",
   "Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:",
-  "Consider a fitness club chain that purchased new exercise equipment and is preparing its cash flow statement for the year. Evaluate the following economic assertions:",
-  "Consider a restaurant chain replacing commercial refrigerators across its outlets and reviewing the depreciation policy applied. Evaluate the following economic assertions:",
-  "Consider an IT consultancy that made a loss this year and is reviewing how that loss affects its balance sheet. Evaluate the following economic assertions:",
-  "Consider a publishing house that repaid part of a long-term loan during the year and is classifying the cash outflow correctly. Evaluate the following economic assertions:",
-  "Consider a car parts manufacturer reviewing how its balance sheet differs from its statement of profit and loss at year end. Evaluate the following economic assertions:",
+  "Consider a fitness club chain that purchased new exercise equipment and is preparing the investing section of its cash flow statement. Evaluate the following economic assertions:",
+  "Consider a restaurant chain replacing commercial refrigerators across its outlets and reviewing the depreciation policy applied to them. Evaluate the following economic assertions:",
+  "Consider an IT consultancy that made a loss this year and is reviewing how that loss affects the equity on its balance sheet. Evaluate the following economic assertions:",
 ];
 
 const THEORY = [
   "Review the balance sheet as a snapshot of a business's assets, equity and liabilities on one specific date. Evaluate the following economic assertions:",
-  "Analyze why the balance sheet does not report the value of sales made during the year. Evaluate the following economic assertions:",
+  "Analyze why the balance sheet does not report the sales made during the accounting period. Evaluate the following economic assertions:",
   "Review how the statement of profit and loss reports revenues, costs and the resulting profit or loss over an accounting period. Evaluate the following economic assertions:",
   "Analyze why the statement of profit and loss covers a period rather than a single point in time. Evaluate the following economic assertions:",
-  "Review how a financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:",
-  "Analyze the purpose of the cash flow statement alongside the balance sheet and statement of profit and loss. Evaluate the following economic assertions:",
+  "Review how a complete financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:",
+  "Analyze the purpose of the cash flow statement alongside the balance sheet and the statement of profit and loss. Evaluate the following economic assertions:",
   "Review how depreciation reflects the gradual wearing out of a fixed asset used to generate revenue. Evaluate the following economic assertions:",
   "Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:",
   "Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:",
-  "Analyze how the straight-line method spreads the depreciable cost of an asset evenly over its useful life. Evaluate the following economic assertions:",
+  "Analyze how the straight-line method spreads the depreciable amount of an asset evenly over its useful life. Evaluate the following economic assertions:",
   "Review how an asset's book value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:",
   "Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:",
   "Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
@@ -53,14 +129,16 @@ const THEORY = [
   "Review the three sections of a cash flow statement: operating, investing and financing activities. Evaluate the following economic assertions:",
   "Analyze which section of the cash flow statement reflects cash movements from core trading activities. Evaluate the following economic assertions:",
   "Review which section of the cash flow statement reflects cash movements from buying or selling long-term assets. Evaluate the following economic assertions:",
-  "Analyze which section of the cash flow statement reflects cash movements from borrowing or repaying loans. Evaluate the following economic assertions:",
+  "Analyze which section of the cash flow statement reflects cash movements from borrowing, repaying loans or transactions with owners. Evaluate the following economic assertions:",
   "Review why a negative cash flow from investing activities does not necessarily indicate financial distress. Evaluate the following economic assertions:",
   "Analyze how collecting a trade receivable is classified within the cash flow statement. Evaluate the following economic assertions:",
   "Review how repaying a long-term loan is classified within the cash flow statement. Evaluate the following economic assertions:",
   "Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:",
-  "Review the distinction between a point-in-time statement and a statement covering a period. Evaluate the following economic assertions:",
-  "Analyze why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:",
-  "Review how fixed assets lose value through use and why this is reflected through depreciation charges. Evaluate the following economic assertions:",
+  "Review how straight-line depreciation is calculated from an asset's cost, residual value and useful life. Evaluate the following economic assertions:",
+  "Analyze how accumulated depreciation is used to calculate an asset's book value after several years of use. Evaluate the following economic assertions:",
+  "Review why the depreciable amount of an asset excludes its expected residual value. Evaluate the following economic assertions:",
+  "Analyze how the number of years an asset has been used affects the accumulated depreciation recorded against it. Evaluate the following economic assertions:",
+  "Review why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:",
   "Analyze the difference between a cash expense and a non-cash expense such as depreciation. Evaluate the following economic assertions:",
   "Review how the components of a financial statement work together to describe a business's financial position and performance. Evaluate the following economic assertions:",
   "Analyze why the balance sheet alone cannot show how a business performed over the whole year. Evaluate the following economic assertions:",
@@ -69,27 +147,14 @@ const THEORY = [
   "Review the relationship between reported loss and the equity shown on the balance sheet. Evaluate the following economic assertions:",
   "Analyze why a business can be profitable yet still see its cash balance fall during the year. Evaluate the following economic assertions:",
   "Review why straight-line depreciation produces an equal annual charge rather than a fluctuating one. Evaluate the following economic assertions:",
-  "Analyze why land is normally excluded from a business's depreciation schedule. Evaluate the following economic assertions:",
-  "Review how the useful life of a fixed asset is used to calculate straight-line depreciation. Evaluate the following economic assertions:",
-  "Analyze how accumulated depreciation reduces an asset's book value over time. Evaluate the following economic assertions:",
-  "Review why investing activities in the cash flow statement often involve outflows for new fixed assets. Evaluate the following economic assertions:",
-  "Analyze why financing activities in the cash flow statement often involve loans and owner transactions. Evaluate the following economic assertions:",
-  "Review why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:",
-  "Analyze how a business's overall change in cash for the year links its three cash flow sections together. Evaluate the following economic assertions:",
-  "Review why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:",
-  "Analyze why collecting money owed by a customer does not belong in the financing section of the cash flow statement. Evaluate the following economic assertions:",
-  "Review why repaying a loan does not belong in the operating section of the cash flow statement. Evaluate the following economic assertions:",
-  "Analyze the difference between the balance sheet's treatment of assets and the statement of profit and loss's treatment of costs. Evaluate the following economic assertions:",
-  "Review how a business's financial statement gives a fuller picture than any single statement alone. Evaluate the following economic assertions:",
-  "Analyze why depreciation is charged even though no cash leaves the business at the time it is recorded. Evaluate the following economic assertions:",
-  "Review how an asset originally recorded at cost is gradually written down through depreciation. Evaluate the following economic assertions:",
-  "Analyze why a business's reported profit is not the same thing as cash generated during the year. Evaluate the following economic assertions:",
-  "Review why the equity of a business rises when it retains profit rather than distributing it. Evaluate the following economic assertions:",
-  "Analyze why the equity of a business falls when it incurs a loss for the year. Evaluate the following economic assertions:",
-  "Review how the cash flow statement complements the balance sheet and statement of profit and loss. Evaluate the following economic assertions:",
-  "Analyze the overall structure of a financial statement made up of three separate but related statements. Evaluate the following economic assertions:",
-  "Review why depreciation policy affects both the balance sheet and the statement of profit and loss. Evaluate the following economic assertions:",
-  "Analyze how a positive operating cash flow combined with a negative investing cash flow can indicate healthy growth. Evaluate the following economic assertions:",
+  "Analyze why depreciation is added back to profit when working out cash generated from operating activities. Evaluate the following economic assertions:",
+  "Review how a rise in inventory or trade receivables can use cash without reducing reported profit in the same period. Evaluate the following economic assertions:",
+  "Analyze why investing activities in the cash flow statement often involve outflows for new fixed assets. Evaluate the following economic assertions:",
+  "Review why financing activities in the cash flow statement often involve loans, share capital or dividends. Evaluate the following economic assertions:",
+  "Analyze why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:",
+  "Review how a business's overall change in cash for the year links its three cash flow sections together. Evaluate the following economic assertions:",
+  "Analyze why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:",
+  "Review why a business's reported profit for the year is not the same thing as the cash it generated during the year. Evaluate the following economic assertions:",
 ];
 
 const TITLES = [
@@ -112,17 +177,17 @@ const TITLES = [
   "Loss Reduces Equity",
   "Profit Versus Cash Flow",
   "Turnover and the Balance Sheet",
-  "Revenue Recognition Over Time",
-  "Bakery Balance Sheet Snapshot",
-  "Courier Firm Cash Flow Classification",
-  "Construction Firm Machinery Investment",
+  "Depreciable Amount and Residual Value",
+  "Bakery Oven Depreciation Charge",
+  "Courier Van Fleet Cash Outflow",
+  "Construction Firm Machinery Financing",
   "Hotel Chain Kitchen Equipment Depreciation",
-  "Software Developer Profit and Cash Divergence",
-  "Garage Diagnostic Equipment Purchase",
+  "Software Developer Profit and Cash Gap",
+  "Garage Diagnostic Equipment Charge",
   "Furniture Maker Depreciation Policy",
   "Brewery Investing Cash Flow",
-  "Textile Mill Machinery Wear",
-  "Printing Company Asset Purchase",
+  "Textile Mill Machinery Book Value",
+  "Printing Press Cash Flow Impact",
   "Arable Farm Land and Tractor",
   "Electronics Retailer Till Upgrade",
   "Overstated Assets Without Depreciation",
@@ -132,7 +197,6 @@ const TITLES = [
   "Financing Cash Flow and Borrowing",
   "Retained Earnings and Equity Growth",
   "Loss and Retained Earnings Decline",
-  "Reading a Balance Sheet Correctly",
   "Reading a Statement of Profit and Loss",
   "Reading a Cash Flow Statement",
   "Fixed Assets and Useful Life",
@@ -141,7 +205,6 @@ const TITLES = [
   "Financial Statement Structure Overview",
   "Balance Sheet Versus Income Statement",
   "Cash Flow Statement Purpose",
-  "Healthy Growth and Negative Investing Flow",
   "Trade Receivable Cash Classification",
   "Loan Repayment Cash Classification",
   "Combining Three Financial Statements",
@@ -152,248 +215,215 @@ const TITLES = [
   "Non-Cash Adjustments to Profit",
   "Asset Purchase and Investing Outflows",
   "Loan Financing and Cash Outflows",
-  "Core Trading and Operating Cash Flow",
   "Straight-Line Charges Across Useful Life",
   "Land Excluded From Depreciation",
-  "Book Value Decline Each Year",
   "Profit Reported Versus Cash Generated",
-  "Balance Sheet Assets Equity Liabilities",
-  "Profit and Loss Revenues and Costs",
-  "Cash Flow Statement Three Sections",
-  "Dairy Processor Receivable Collection",
-  "Pharmacy Chain Profit and Cash Gap",
-  "Fitness Club Equipment Purchase",
-  "Restaurant Chain Refrigerator Depreciation",
-  "IT Consultancy Loss and Equity",
-  "Publishing House Loan Repayment",
-  "Car Parts Manufacturer Statement Comparison",
-  "Logistics Company Warehouse Financing",
 ];
 
-const sceneIndices = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58, 62, 66, 70, 74];
-
-const BUSINESSES = [
-  "bakery",
-  "courier firm",
-  "construction firm",
-  "hotel chain",
-  "software developer",
-  "garage",
-  "furniture maker",
-  "brewery",
-  "textile mill",
-  "printing company",
-  "arable farm",
-  "electronics retailer",
-];
-
-const ASSETS = [
-  "commercial ovens",
-  "delivery van",
-  "heavy construction machinery",
-  "kitchen equipment",
-  "office computer equipment",
-  "diagnostic equipment",
-  "woodworking machinery",
-  "brewing tanks",
-  "spinning machinery",
-  "printing press",
-  "tractor",
-  "point-of-sale tills",
-];
+const sceneIndices = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58];
 
 function buildTruePool() {
   const pool = [];
   const seen = new Set();
   const add = (s, e) => {
-    if (seen.has(s)) throw new Error(`dup TRUE: ${s.slice(0, 60)}`);
+    if (seen.has(s)) throw new Error(`dup TRUE: ${s.slice(0, 70)}`);
     seen.add(s);
     pool.push([s, e]);
   };
 
   const manual = [
     [
-      "A financial statement typically brings together a balance sheet, a statement of profit and loss, and a cash flow statement to describe a business's position, performance and cash movements.",
-      "These three statements together describe financial position, trading performance and cash movements more fully than any one alone.",
+      "A complete financial statement for a business typically brings together a balance sheet, a statement of profit and loss and a cash flow statement.",
+      "These three statements together give a fuller picture of financial position, performance and cash movements than any single statement alone.",
     ],
     [
-      "The balance sheet is drawn up at a single point in time, whereas the statement of profit and loss and the cash flow statement each cover a period.",
-      "Only the balance sheet is a snapshot on one date; the other two statements summarise activity across an accounting period.",
+      "The balance sheet is drawn up at a single point in time, whereas the statement of profit and loss and the cash flow statement each summarise activity across an accounting period.",
+      "Only the balance sheet is dated at one moment; the other two statements report on a period of trading.",
     ],
     [
-      "Revenue earned and costs incurred over an accounting period are reported in the statement of profit and loss rather than in the balance sheet.",
-      "The statement of profit and loss, not the balance sheet, records revenue and costs accumulated over the period.",
+      "Turnover for the year is reported in the statement of profit and loss rather than in the balance sheet.",
+      "The balance sheet does not show sales made during the year; that figure belongs in the statement of profit and loss.",
     ],
     [
-      "Depreciation reflects the gradual wearing out of a fixed asset as it is used to generate revenue over its useful life.",
-      "Depreciation allocates the loss of value that a fixed asset experiences through use over its useful life.",
+      "Depreciation reflects the gradual wearing out of a fixed asset as it is used to help generate revenue over its useful life.",
+      "Depreciation allocates the loss of value a fixed asset suffers through use across the years it is expected to be used.",
     ],
     [
-      "A fixed asset that is never depreciated would remain on the accounts at its original cost even after years of use, overstating its true worth.",
-      "Without depreciation, an asset stays at original cost in the accounts despite having lost value through use, which overstates it.",
+      "If a fixed asset were never depreciated, it would remain on the accounts at its original cost even after years of productive use, overstating its true worth.",
+      "Skipping depreciation leaves an asset recorded above its real economic value once it has been used for some time.",
     ],
     [
-      "Depreciation is charged as an expense in the statement of profit and loss without itself triggering a cash payment in the year it is recorded.",
-      "Depreciation is a non-cash expense; the related cash was paid when the asset was originally bought, not when the charge is recorded.",
+      "Depreciation is charged as an expense in the statement of profit and loss without itself requiring a fresh cash payment in the year it is recorded.",
+      "The cash for a depreciating asset was paid when it was bought; the annual charge that follows does not involve any further cash leaving the business.",
     ],
     [
-      "Under the straight-line method, an equal amount of depreciation is charged in each year of an asset's useful life, so its book value falls steadily.",
-      "Straight-line depreciation charges the same amount every year of useful life, producing a steady annual fall in book value.",
+      "Under the straight-line method, the depreciable amount of an asset, its cost less any expected residual value, is spread evenly over its useful life.",
+      "Straight-line depreciation divides cost minus residual value by the number of years of useful life to give an equal annual charge.",
     ],
     [
       "Land is generally treated differently from buildings, machinery and vehicles because it does not wear out through use and is normally not depreciated.",
-      "Because land does not wear out through use in the way other fixed assets do, it is typically excluded from depreciation.",
+      "An unlimited useful life is the usual reason land is excluded from a depreciation schedule.",
     ],
     [
-      "A profit earned during the year increases the equity reported on the balance sheet, usually by adding to retained earnings.",
-      "Profit for the year raises equity, typically because it is added to retained earnings.",
+      "A profit earned during the year increases the equity reported on the balance sheet, usually because it is added to retained earnings.",
+      "Profit raises the owners' stake in the business by boosting retained earnings within equity.",
     ],
     [
       "A loss incurred during the year reduces the equity reported on the balance sheet.",
-      "A loss for the year lowers retained earnings and therefore reduces total equity.",
+      "A loss lowers retained earnings and therefore reduces total equity.",
     ],
     [
-      "Profit for the year and the change in cash and cash equivalents for the year are two different measures that will not usually be equal.",
-      "Profit and the net change in cash are distinct measures and typically differ from one another.",
+      "Profit for the year and the net change in cash and cash equivalents for the year are different measures that will not usually be equal.",
+      "Non-cash items and timing differences mean profit and cash movement typically diverge.",
     ],
     [
       "Cash flow from operating activities reflects cash movements arising from the core trading activities of a business during the period.",
-      "Operating cash flow captures cash generated or used by a business's day-to-day trading.",
+      "Day-to-day trading, such as receipts from customers and payments to suppliers and employees, is captured in the operating section.",
     ],
     [
       "Cash flow from investing activities reflects cash movements arising from buying or selling long-term assets during the period.",
-      "Investing cash flow captures cash spent on, or received from, long-term assets such as equipment.",
+      "Spending on or proceeds from long-term assets such as equipment or property sit in the investing section.",
     ],
     [
-      "Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, or transactions with owners during the period.",
-      "Financing cash flow captures how a business raises and repays funding, including loans and owner transactions.",
+      "Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, raising share capital or paying dividends during the period.",
+      "Transactions with lenders and owners are grouped in the financing section of the cash flow statement.",
     ],
     [
-      "A negative cash flow from investing activities in a given year often signals that a business has been purchasing long-term assets rather than facing financial difficulty.",
-      "Investing outflows commonly reflect spending on long-term assets rather than an indication of financial trouble.",
+      "A negative cash flow from investing activities in a given year often simply reflects that a business has been purchasing long-term assets, rather than facing financial difficulty.",
+      "Investing outflows commonly indicate expansion through asset purchases rather than distress.",
     ],
     [
-      "The net change in cash and cash equivalents for a period is calculated by adding together cash flows from operating, investing and financing activities.",
-      "Summing the operating, investing and financing cash flows gives the net change in cash for the period.",
+      "The net change in cash and cash equivalents for a period is calculated by adding together the cash flows from operating, investing and financing activities.",
+      "Summing the three sections of the cash flow statement gives the overall change in cash for the period.",
+    ],
+    [
+      "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.",
+      "Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.",
+    ],
+    [
+      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its book value, also called its carrying value.",
+      "Book value equals original cost less the depreciation built up against the asset since it was acquired.",
+    ],
+    [
+      "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.",
+      "Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow.",
+    ],
+    [
+      "A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing.",
+      "Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.",
     ],
   ];
   for (const [s, e] of manual) add(s, e);
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const { cost, residual, life, annual } = depScenario(i);
     add(
-      `The balance sheet of a ${biz} shows its assets, equity and liabilities at a single point in time and does not report the value of sales made during the year.`,
-      "A balance sheet is a snapshot on one date; sales for the year are reported in the statement of profit and loss, not the balance sheet.",
-    );
-    add(
-      `Because a ${biz} draws up its balance sheet at one specific date each year, that document alone cannot reveal how much revenue the business generated over the preceding accounting period.`,
-      "Revenue earned over a period is reported in the statement of profit and loss; the balance sheet only reflects the position on its stated date.",
-    );
-  }
-
-  for (const biz of BUSINESSES) {
-    add(
-      `The statement of profit and loss prepared by a ${biz} reports the revenues, costs and resulting profit or loss earned over the accounting period, rather than at a single moment.`,
-      "Unlike the balance sheet, the statement of profit and loss covers a whole trading period rather than one specific date.",
-    );
-    add(
-      `Over each financial year, a ${biz} records its revenues and costs in the statement of profit and loss in order to arrive at the profit or loss for that period.`,
-      "The statement of profit and loss summarises revenues and costs across the accounting period to calculate the resulting profit or loss.",
-    );
-  }
-
-  for (const biz of BUSINESSES) {
-    add(
-      `When a ${biz} collects payment from a customer who owed money on a trade receivable, the resulting cash inflow is classified within cash flow from operating activities.`,
-      "Collecting a trade receivable relates to core trading activity, so the cash inflow belongs in the operating section of the cash flow statement.",
-    );
-    add(
-      `If a ${biz} repays part of a long-term bank loan during the year, that cash outflow is classified within cash flow from financing activities rather than operating activities.`,
-      "Loan repayments relate to how the business is financed, so they appear in the financing section rather than the operating section.",
+      `A ${biz} buys ${asset} for ${fmt(cost)} euros, expects a residual value of ${fmt(residual)} euros at the end of its useful life, and plans to use it for ${life} years; under the straight-line method it would charge ${fmt(annual)} euros of depreciation in each of those years.`,
+      `Spreading the depreciable amount of ${fmt(cost - residual)} euros evenly over ${life} years gives an annual charge of ${fmt(annual)} euros.`,
     );
   }
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
+    const { cost, annual } = depScenario(i);
+    const bv2 = cost - 2 * annual;
     add(
-      `A cash outflow that a ${biz} incurs when purchasing new ${asset} is normally classified within cash flow from investing activities.`,
-      `Buying long-term assets such as ${asset} is an investing decision, so the related cash outflow sits in the investing section of the cash flow statement.`,
-    );
-    add(
-      `A negative cash flow from investing activities at a ${biz} in a year when it purchased new ${asset} often simply reflects that spending rather than being a sign of financial distress.`,
-      `Negative investing cash flow frequently indicates that a business is investing in long-term assets like ${asset}, which is a normal and often healthy pattern.`,
+      `A ${biz} recorded its ${asset} at a cost of ${fmt(cost)} euros and depreciates it on the straight-line method by ${fmt(annual)} euros a year; after two years of use, its book value would be ${fmt(bv2)} euros.`,
+      `Deducting two years of depreciation, ${fmt(2 * annual)} euros in total, from the original cost of ${fmt(cost)} euros leaves a book value of ${fmt(bv2)} euros.`,
     );
   }
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
+    const { annual } = depScenario(i);
+    const accum3 = annual * 3;
     add(
-      `As a ${biz} uses its ${asset} over time, the asset gradually wears out, and depreciation is charged each year to spread its cost over its useful life.`,
-      `Fixed assets like ${asset} lose value through use, and depreciation allocates their cost across the years they are expected to be used.`,
-    );
-    add(
-      `If a ${biz} failed to record depreciation on its ${asset}, the value shown for that asset in its accounts would be overstated.`,
-      `Without depreciation, an asset such as ${asset} would remain at its original cost in the accounts even though it has lost value through use.`,
-    );
-    add(
-      `Depreciation charged on a ${biz}'s ${asset} is an expense in the statement of profit and loss that does not by itself cause a cash payment in the year it is recorded.`,
-      `Depreciation is a non-cash expense; the cash was paid when the ${asset} was originally purchased, not when the annual depreciation charge is recorded.`,
-    );
-    add(
-      `Under the straight-line method, a ${biz} spreads the depreciable cost of its ${asset} evenly over its estimated useful life, reducing the asset's book value by the same amount each year.`,
-      `The straight-line method charges an equal amount of depreciation on ${asset} in every year of its useful life, so book value falls steadily.`,
+      `A ${biz} has used its ${asset} for three years and charges ${fmt(annual)} euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be ${fmt(accum3)} euros.`,
+      `Multiplying the annual charge of ${fmt(annual)} euros by the three years the asset has been used gives accumulated depreciation of ${fmt(accum3)} euros.`,
     );
   }
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const { operating, investing, financingIsInflow, financing, net } = cfScenario(i);
+    const financingPhrase = financingIsInflow
+      ? `received ${fmt(financing)} euros of cash from financing activities by taking out a new loan`
+      : `used ${fmt(financing)} euros of cash in financing activities to repay part of a loan`;
+    const netPhrase =
+      net >= 0 ? `increased by ${fmt(net)} euros` : `decreased by ${fmt(Math.abs(net))} euros`;
     add(
-      `Land owned by a ${biz} is generally not depreciated, because unlike buildings, machinery or vehicles, it does not wear out through use over time.`,
-      "Land normally has an unlimited useful life and is not used up in the way that buildings or machinery are, so it is typically excluded from depreciation.",
+      `During one year, a ${biz} generated ${fmt(operating)} euros of cash from operating activities, used ${fmt(investing)} euros of cash in investing activities to fund new ${asset}, and ${financingPhrase}; as a result, its cash and cash equivalents ${netPhrase} over the year.`,
+      `Adding the operating inflow, subtracting the investing outflow and ${financingIsInflow ? "adding" : "subtracting"} the financing ${financingIsInflow ? "inflow" : "outflow"} gives the correct net change of ${fmt(Math.abs(net))} euros.`,
     );
   }
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const type = i % 3;
+    if (type === 0) {
+      add(
+        `When a ${biz} collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.`,
+        "Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      );
+    } else if (type === 1) {
+      add(
+        `When a ${biz} repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.`,
+        "Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
+      );
+    } else {
+      add(
+        `When a ${biz} purchases new ${asset} for use in the business, the resulting cash outflow belongs in cash flow from investing activities.`,
+        `Buying long-term assets such as ${asset} is an investing decision, so the outflow is classified as an investing cash flow.`,
+      );
+    }
+  }
+
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
     add(
-      `When a ${biz} earns a profit for the year, that profit increases the equity shown on its balance sheet, typically through an increase in retained earnings.`,
-      "Profit for the year adds to the owners' claim on the business, raising equity, usually via retained earnings.",
-    );
-    add(
-      `When a ${biz} makes a loss for the year, that loss reduces the equity shown on its balance sheet.`,
-      "A loss for the year reduces retained earnings and therefore lowers total equity on the balance sheet.",
+      `The balance sheet of a ${biz} shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.`,
+      "The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
     );
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `A ${biz} can report a profit for the year in its statement of profit and loss while still experiencing a fall in its cash and cash equivalents, because profit and cash flow are not the same thing.`,
-      "Profit and cash movements can diverge; a business can be profitable on paper while its cash balance falls for other reasons during the year.",
-    );
-    add(
-      `Because non-cash items such as depreciation are deducted in arriving at profit, the profit reported by a ${biz} for the year will not usually equal the net change in its cash and cash equivalents.`,
-      "Depreciation and other non-cash adjustments mean reported profit and the net change in cash rarely match exactly.",
-    );
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    if (i % 2 === 0) {
+      add(
+        `When a ${biz} earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.`,
+        "Profit for the year raises retained earnings, which in turn increases total equity.",
+      );
+    } else {
+      add(
+        `When a ${biz} makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.`,
+        "A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      );
+    }
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `A complete financial statement for a ${biz} typically comprises a balance sheet, a statement of profit and loss, and a cash flow statement.`,
-      "These three statements together give a fuller picture of financial position, performance and cash movements than any one of them alone.",
-    );
-    add(
-      `Alongside its balance sheet and statement of profit and loss, a ${biz} also prepares a cash flow statement to show how cash moved during the year.`,
-      "The cash flow statement complements the balance sheet and statement of profit and loss by tracking cash inflows and outflows over the period.",
-    );
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    if (i % 2 === 0) {
+      add(
+        `Land owned by a ${biz} is normally left out of the depreciation schedule because, unlike its ${asset}, land does not wear out through ordinary use.`,
+        "Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
+      );
+    } else {
+      add(
+        `The depreciation that a ${biz} charges on its ${asset} each year is a non-cash expense, since the related cash was already paid out when the ${asset} was originally purchased.`,
+        "Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
+      );
+    }
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `The net change in cash and cash equivalents for a ${biz} over the year equals the sum of its cash flows from operating, investing and financing activities.`,
-      "Adding the operating, investing and financing cash flows together gives the net change in cash and cash equivalents for the period.",
-    );
-  }
-
-  if (pool.length < 225) throw new Error(`TRUE pool only ${pool.length}, need 225`);
+  if (pool.length < 200) throw new Error(`TRUE pool only ${pool.length}, need 200`);
   return pool;
 }
 
@@ -401,194 +431,208 @@ function buildFalsePool() {
   const pool = [];
   const seen = new Set();
   const add = (s, e) => {
-    if (seen.has(s)) throw new Error(`dup FALSE: ${s.slice(0, 60)}`);
+    if (seen.has(s)) throw new Error(`dup FALSE: ${s.slice(0, 70)}`);
     seen.add(s);
     pool.push([s, e]);
   };
 
   const manual = [
     [
-      "A financial statement is limited to a balance sheet alone and never includes a statement of profit and loss or a cash flow statement.",
-      "A financial statement normally includes a balance sheet, a statement of profit and loss and a cash flow statement together.",
+      "A complete financial statement is limited to a balance sheet alone and never includes a statement of profit and loss or a cash flow statement.",
+      "A financial statement normally combines a balance sheet, a statement of profit and loss and a cash flow statement.",
     ],
     [
-      "The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to cover an entire accounting period rather than a single point in time.",
-      "The balance sheet is drawn up at a single point in time; it is the other two statements that cover a period.",
+      "The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to summarise an entire accounting period rather than one specific date.",
+      "It is only the balance sheet that is dated at a single point in time; the other two statements cover a period.",
     ],
     [
-      "Revenue earned and costs incurred over an accounting period are reported in the balance sheet rather than in the statement of profit and loss.",
-      "Revenue and costs for the period are reported in the statement of profit and loss, not the balance sheet.",
+      "Turnover for the year is reported in the balance sheet rather than in the statement of profit and loss.",
+      "Sales for the year appear in the statement of profit and loss, not the balance sheet.",
     ],
     [
-      "Depreciation has nothing to do with the wearing out of a fixed asset and is simply an arbitrary bookkeeping entry with no economic meaning.",
-      "Depreciation specifically reflects the loss of value a fixed asset experiences through use over its useful life.",
+      "Depreciation has nothing to do with the wearing out of a fixed asset and is simply an arbitrary entry with no economic meaning.",
+      "Depreciation specifically reflects the loss of value a fixed asset experiences through use.",
     ],
     [
       "A fixed asset that is never depreciated will automatically show a reduced value in the accounts that reflects its true worth after years of use.",
-      "Without depreciation, an asset remains at its original cost in the accounts, overstating rather than reflecting its true worth.",
+      "Without depreciation, an asset stays at its original cost in the accounts, overstating rather than reflecting its real worth.",
     ],
     [
       "Depreciation is a cash expense in the statement of profit and loss that triggers an actual cash payment in the year it is recorded.",
-      "Depreciation is a non-cash expense; it does not itself trigger a cash payment in the year it is recorded.",
+      "Depreciation does not itself cause a cash payment in the year it is charged; the cash was paid when the asset was bought.",
     ],
     [
-      "Under the straight-line method, the amount of depreciation charged changes unpredictably from year to year rather than remaining equal.",
-      "Straight-line depreciation charges an equal amount every year of useful life rather than a fluctuating amount.",
+      "Under the straight-line method, the depreciable amount of an asset is spread unevenly across its useful life, producing a different charge each year.",
+      "Straight-line depreciation produces an equal annual charge across the useful life, not a varying one.",
     ],
     [
-      "Land is treated in exactly the same way as buildings, machinery and vehicles and is depreciated over an estimated useful life.",
-      "Land is generally not depreciated because it does not wear out through use in the way buildings and machinery do.",
+      "Land is depreciated in exactly the same way as buildings, machinery and vehicles because all fixed assets wear out identically through use.",
+      "Land is generally excluded from depreciation because it does not wear out through use the way other fixed assets do.",
     ],
     [
       "A profit earned during the year reduces the equity reported on the balance sheet.",
-      "Profit for the year increases equity, typically through retained earnings, rather than reducing it.",
+      "Profit increases equity, typically through retained earnings, rather than reducing it.",
     ],
     [
       "A loss incurred during the year increases the equity reported on the balance sheet.",
-      "A loss for the year reduces equity by lowering retained earnings; it does not increase equity.",
+      "A loss reduces equity by lowering retained earnings; it does not increase equity.",
     ],
     [
-      "Profit for the year and the change in cash and cash equivalents for the year are always identical figures.",
-      "Profit and the net change in cash are different measures and will not usually be identical.",
+      "Profit for the year and the net change in cash and cash equivalents for the year are always identical figures.",
+      "Profit and the net change in cash are distinct measures that will not usually match exactly.",
     ],
     [
       "Cash flow from operating activities reflects cash movements arising from borrowing and repaying loans during the period.",
-      "Borrowing and repaying loans are financing activities; operating cash flow reflects core trading instead.",
+      "Borrowing and loan repayments are financing activities; operating cash flow instead reflects core trading.",
     ],
     [
-      "Cash flow from investing activities reflects cash movements arising from the core trading activities of a business during the period.",
-      "Core trading activities are reflected in operating cash flow; investing cash flow relates to long-term assets.",
+      "Cash flow from investing activities reflects cash movements arising from the core day-to-day trading of a business during the period.",
+      "Core trading is reflected in operating cash flow; investing cash flow relates to long-term assets.",
     ],
     [
       "Cash flow from financing activities reflects cash movements arising from buying or selling long-term assets during the period.",
-      "Buying or selling long-term assets is reflected in investing cash flow, not financing cash flow.",
+      "Buying or selling long-term assets is an investing activity, not a financing one.",
     ],
     [
-      "A negative cash flow from investing activities in a given year is always a definite sign that a business is facing financial difficulty.",
-      "Investing outflows often simply reflect spending on long-term assets rather than financial distress.",
+      "A negative cash flow from investing activities is always a definite sign that a business is in financial difficulty, regardless of the cause.",
+      "Investing outflows often simply reflect spending on new long-term assets rather than financial distress.",
     ],
     [
-      "The net change in cash and cash equivalents for a period has no relationship to cash flows from operating, investing and financing activities.",
+      "The net change in cash and cash equivalents for a period has no relationship to the cash flows from operating, investing and financing activities.",
       "The net change in cash is exactly the sum of the operating, investing and financing cash flows for the period.",
+    ],
+    [
+      "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is deducted a second time from profit.",
+      "Depreciation is added back to profit in this reconciliation, not deducted again, because it never involved a cash payment.",
+    ],
+    [
+      "Accumulated depreciation is added to the original cost of a fixed asset to arrive at its book value.",
+      "Book value equals cost less accumulated depreciation, not cost plus accumulated depreciation.",
+    ],
+    [
+      "A rise in inventory or trade receivables during the year has no effect on cash and is fully reflected in profit for the period in exactly the same way.",
+      "Working capital increases use cash without moving through profit the same way, which is part of why profit and operating cash flow diverge.",
+    ],
+    [
+      "A business that reports a profit for the year can never see its cash and cash equivalents fall over that same year.",
+      "Non-cash charges and timing differences mean a profitable business can still see its cash balance fall during the year.",
     ],
   ];
   for (const [s, e] of manual) add(s, e);
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const { cost, residual, life, annual } = depScenario(i);
+    const wrongAnnual = Math.round(cost / life);
     add(
-      `The balance sheet of a ${biz} reports the total value of sales made throughout the year, in addition to its assets, equity and liabilities.`,
-      "The balance sheet does not report sales or turnover for the year; that information is presented in the statement of profit and loss.",
-    );
-    add(
-      `Because a ${biz} draws up its balance sheet at one specific date, that same document also summarises the revenue earned across the whole financial year.`,
-      "The balance sheet only reflects the business's position on its date; revenue earned across the year appears in the statement of profit and loss instead.",
-    );
-  }
-
-  for (const biz of BUSINESSES) {
-    add(
-      `The statement of profit and loss prepared by a ${biz} is drawn up at a single point in time and does not cover an accounting period.`,
-      "It is the balance sheet that is drawn up at a single point in time; the statement of profit and loss covers a period.",
-    );
-    add(
-      `A ${biz}'s statement of profit and loss records its assets, equity and liabilities rather than its revenues and costs for the period.`,
-      "Assets, equity and liabilities are reported on the balance sheet; the statement of profit and loss records revenues, costs and the resulting profit or loss.",
-    );
-  }
-
-  for (const biz of BUSINESSES) {
-    add(
-      `When a ${biz} collects payment from a customer who owed money on a trade receivable, the resulting cash inflow is classified within cash flow from financing activities.`,
-      "Collecting a trade receivable relates to core trading activity and belongs in cash flow from operating activities, not financing activities.",
-    );
-    add(
-      `If a ${biz} repays part of a long-term bank loan during the year, that cash outflow is classified within cash flow from operating activities rather than financing activities.`,
-      "Loan repayments relate to financing the business and belong in cash flow from financing activities, not operating activities.",
+      `A ${biz} buys ${asset} for ${fmt(cost)} euros, expects a residual value of ${fmt(residual)} euros at the end of its useful life, and plans to use it for ${life} years; under the straight-line method it would charge ${fmt(wrongAnnual)} euros of depreciation in each of those years.`,
+      `Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives ${fmt(annual)} euros, not ${fmt(wrongAnnual)} euros.`,
     );
   }
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
+    const { cost, annual } = depScenario(i);
+    const wrongBV = cost + 2 * annual;
     add(
-      `A cash outflow that a ${biz} incurs when purchasing new ${asset} is normally classified within cash flow from financing activities.`,
-      `Purchasing long-term assets such as ${asset} is an investing decision, so the cash outflow belongs in the investing section, not the financing section.`,
-    );
-    add(
-      `A negative cash flow from investing activities at a ${biz} always indicates that the business is in financial difficulty, regardless of what caused it.`,
-      `Negative investing cash flow often simply reflects spending on new assets such as ${asset}, not financial distress.`,
+      `A ${biz} recorded its ${asset} at a cost of ${fmt(cost)} euros and depreciates it on the straight-line method by ${fmt(annual)} euros a year; after two years of use, its book value would be ${fmt(wrongBV)} euros.`,
+      `Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is ${fmt(cost - 2 * annual)} euros, not ${fmt(wrongBV)} euros.`,
     );
   }
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
+    const { annual } = depScenario(i);
+    const wrongAccum = annual * 2;
     add(
-      `As a ${biz} uses its ${asset} over time, no adjustment for wear and tear is required in the accounts because fixed assets keep their original value indefinitely.`,
-      `Fixed assets such as ${asset} do wear out through use, and depreciation is charged to reflect that loss of value over time.`,
-    );
-    add(
-      `If a ${biz} failed to record depreciation on its ${asset}, the value shown for that asset in its accounts would be understated.`,
-      `Without depreciation, an asset such as ${asset} would remain at its original cost, which overstates its value rather than understating it.`,
-    );
-    add(
-      `Depreciation charged on a ${biz}'s ${asset} is a cash expense that directly reduces the bank balance in the year it is recorded.`,
-      `Depreciation does not itself cause a cash payment in the year it is recorded; it simply allocates a cost that was paid when the ${asset} was purchased.`,
-    );
-    add(
-      `Under the straight-line method, a ${biz} charges a different and unpredictable amount of depreciation on its ${asset} each year rather than an equal amount.`,
-      `The straight-line method charges the same amount of depreciation on ${asset} every year of its useful life, not a varying amount.`,
+      `A ${biz} has used its ${asset} for three years and charges ${fmt(annual)} euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be ${fmt(wrongAccum)} euros.`,
+      `The asset has been used for three full years, so three years of charges should be accumulated, giving ${fmt(annual * 3)} euros rather than the two years' worth shown here.`,
     );
   }
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const { operating, investing, financingIsInflow, financing, net } = cfScenario(i);
+    const financingPhrase = financingIsInflow
+      ? `received ${fmt(financing)} euros of cash from financing activities by taking out a new loan`
+      : `used ${fmt(financing)} euros of cash in financing activities to repay part of a loan`;
+    const wrongNet = operating + investing + (financingIsInflow ? financing : -financing);
+    const wrongNetPhrase =
+      wrongNet >= 0 ? `increased by ${fmt(wrongNet)} euros` : `decreased by ${fmt(Math.abs(wrongNet))} euros`;
+    const correctPhrase =
+      net >= 0 ? `an increase of ${fmt(net)} euros` : `a decrease of ${fmt(Math.abs(net))} euros`;
     add(
-      `Land owned by a ${biz} is depreciated in the same way as its buildings and machinery, because all fixed assets wear out identically through use.`,
-      "Land is generally not depreciated because it does not wear out through use in the way buildings and machinery do.",
+      `During one year, a ${biz} generated ${fmt(operating)} euros of cash from operating activities, used ${fmt(investing)} euros of cash in investing activities to fund new ${asset}, and ${financingPhrase}; as a result, its cash and cash equivalents ${wrongNetPhrase} over the year.`,
+      `Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly ${correctPhrase}.`,
     );
   }
 
-  for (const biz of BUSINESSES) {
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    const type = i % 3;
+    if (type === 0) {
+      add(
+        `When a ${biz} collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.`,
+        "Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      );
+    } else if (type === 1) {
+      add(
+        `When a ${biz} repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.`,
+        "Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
+      );
+    } else {
+      add(
+        `When a ${biz} purchases new ${asset} for use in the business, the resulting cash outflow belongs in cash flow from operating activities.`,
+        `Buying long-term assets such as ${asset} is an investing decision, so the outflow belongs in the investing section, not the operating section.`,
+      );
+    }
+  }
+
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
     add(
-      `When a ${biz} earns a profit for the year, that profit reduces the equity shown on its balance sheet.`,
-      "Profit for the year increases equity, typically through retained earnings, rather than reducing it.",
-    );
-    add(
-      `When a ${biz} makes a loss for the year, that loss increases the equity shown on its balance sheet.`,
-      "A loss for the year reduces equity by lowering retained earnings; it does not increase equity.",
+      `The balance sheet of a ${biz} reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.`,
+      "This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.",
     );
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `The profit reported by a ${biz} for the year is always identical to the net change in its cash and cash equivalents over that year.`,
-      "Profit and the net change in cash are different measures and will not usually be identical, partly because of non-cash items such as depreciation.",
-    );
-    add(
-      `Because depreciation is a cash expense for a ${biz}, its cash flow for the year will always equal its reported profit.`,
-      "Depreciation is a non-cash expense, and a business's cash flow for the year will not usually equal its reported profit.",
-    );
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    if (i % 2 === 0) {
+      add(
+        `When a ${biz} earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.`,
+        "Profit adds to retained earnings and increases equity; it does not reduce it.",
+      );
+    } else {
+      add(
+        `When a ${biz} makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.`,
+        "A loss lowers retained earnings and reduces equity; it does not increase it.",
+      );
+    }
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `A complete financial statement for a ${biz} consists only of a balance sheet and does not require a statement of profit and loss or a cash flow statement.`,
-      "A complete financial statement normally includes a balance sheet, a statement of profit and loss and a cash flow statement together.",
-    );
-    add(
-      `A cash flow statement is not considered part of a ${biz}'s financial statement and is prepared only voluntarily.`,
-      "The cash flow statement is one of the components that together make up a financial statement, alongside the balance sheet and the statement of profit and loss.",
-    );
+  for (let i = 0; i < BUSINESSES.length; i++) {
+    const biz = BUSINESSES[i];
+    const asset = ASSETS[i];
+    if (i % 2 === 0) {
+      add(
+        `Land owned by a ${biz} is depreciated in exactly the same way as its ${asset}, because all fixed assets wear out identically through use.`,
+        "Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
+      );
+    } else {
+      add(
+        `The depreciation that a ${biz} charges on its ${asset} each year is a cash expense that directly reduces its bank balance at the time it is recorded.`,
+        `Depreciation does not itself cause a cash payment; the related cash was already paid when the ${asset} was purchased.`,
+      );
+    }
   }
 
-  for (const biz of BUSINESSES) {
-    add(
-      `The net change in cash and cash equivalents for a ${biz} over the year is unrelated to its cash flows from operating, investing and financing activities.`,
-      "The net change in cash is exactly the sum of the operating, investing and financing cash flows for the period, so the two are directly related.",
-    );
-  }
-
-  if (pool.length < 150) throw new Error(`FALSE pool only ${pool.length}, need 150`);
+  if (pool.length < 140) throw new Error(`FALSE pool only ${pool.length}, need 140`);
   return pool;
 }
 

@@ -1,5 +1,6 @@
 /**
- * Merge Ch.6 text + table banks → economics-cases-ch6-subtopics.json + SQL.
+ * Merge Ch.6 text + table → economics-cases-ch6-subtopics.json + SQL.
+ * Respects interleaved slot order from ch6-slot-plan.json.
  */
 import fs from "node:fs";
 
@@ -7,41 +8,39 @@ const parts = ["6.1", "6.2", "6.3", "6.4", "6.5"];
 const plan = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"));
 const all = [];
 
-for (const sub of parts) {
-  const textPath = `scripts/ch6-part-${sub}-text.json`;
-  const tablePath = `scripts/ch6-part-${sub}-table.json`;
-  const textCases = JSON.parse(fs.readFileSync(textPath, "utf8"));
-  const tableCases = JSON.parse(fs.readFileSync(tablePath, "utf8"));
-  const textSlots = plan[sub].filter((s) => s.half === "text");
-  const tableSlots = plan[sub].filter((s) => s.half === "table");
-  if (textCases.length !== 50) throw new Error(`${sub} text has ${textCases.length}`);
-  if (tableCases.length !== 75) throw new Error(`${sub} table has ${tableCases.length}`);
+function loadMap(path) {
+  const cases = JSON.parse(fs.readFileSync(path, "utf8"));
+  const map = new Map(cases.map((c) => [c.case_id, c]));
+  return map;
+}
 
-  for (const group of [
-    [textCases, textSlots],
-    [tableCases, tableSlots],
-  ]) {
-    const [cases, slots] = group;
-    for (let i = 0; i < slots.length; i++) {
-      const c = cases[i];
-      const s = slots[i];
-      if (c.case_id !== s.case_id) throw new Error(`id mismatch ${c.case_id} vs ${s.case_id}`);
-      if (JSON.stringify(c.answer_key) !== JSON.stringify(s.answer_key)) {
-        throw new Error(`key mismatch ${c.case_id}`);
-      }
-      if (c.difficulty_level !== s.difficulty_level) {
-        throw new Error(`diff mismatch ${c.case_id}`);
-      }
-      for (let j = 0; j < 5; j++) {
-        const want = c.answer_key[j] ? "TRUE" : "FALSE";
-        const e = String(c.tactical_explanations[j] || "");
-        if (!e.startsWith(want)) {
-          const body = e.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "");
-          c.tactical_explanations[j] = `${want} — ${body}`;
-        }
-      }
-      all.push(c);
+for (const sub of parts) {
+  const textMap = loadMap(`scripts/ch6-part-${sub}-text.json`);
+  const tableMap = loadMap(`scripts/ch6-part-${sub}-table.json`);
+  const slots = plan[sub];
+  const textN = slots.filter((s) => s.half === "text").length;
+  const tableN = slots.filter((s) => s.half === "table").length;
+  if (textMap.size !== textN) throw new Error(`${sub} text ${textMap.size} !== ${textN}`);
+  if (tableMap.size !== tableN) throw new Error(`${sub} table ${tableMap.size} !== ${tableN}`);
+
+  for (const s of slots) {
+    const c = s.half === "text" ? textMap.get(s.case_id) : tableMap.get(s.case_id);
+    if (!c) throw new Error(`missing ${s.case_id}`);
+    if (JSON.stringify(c.answer_key) !== JSON.stringify(s.answer_key)) {
+      throw new Error(`key mismatch ${c.case_id}`);
     }
+    if (c.difficulty_level !== s.difficulty_level) {
+      throw new Error(`diff mismatch ${c.case_id}`);
+    }
+    for (let j = 0; j < 5; j++) {
+      const want = c.answer_key[j] ? "TRUE" : "FALSE";
+      const e = String(c.tactical_explanations[j] || "");
+      if (!e.startsWith(want)) {
+        const body = e.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "");
+        c.tactical_explanations[j] = `${want} — ${body}`;
+      }
+    }
+    all.push(c);
   }
 }
 
@@ -62,7 +61,9 @@ function barr(a) {
 }
 
 const lines = [];
-lines.push("-- Chapter 6 subtopics 6.1–6.5: 50 textual + 75 table/chart cases each (625 total).");
+lines.push(
+  "-- Chapter 6 subtopics 6.1–6.5: proportional Full Course bank (~625; text+table interleaved).",
+);
 lines.push(
   "DELETE FROM public.economics_cases WHERE subsection IN ('6.1','6.2','6.3','6.4','6.5') AND tier = 'full' AND case_id LIKE 'CASE 6.%';",
 );

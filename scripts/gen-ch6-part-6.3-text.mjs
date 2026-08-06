@@ -1,18 +1,25 @@
 /**
- * Generate scripts/ch6-part-6.3-text.json — 75 textual cases for subsection 6.3
+ * Generate scripts/ch6-part-6.3-text.json — textual cases for subsection 6.3,
  * "What can be learnt from reading a balance sheet and an income statement".
  *
- * Concepts covered:
- *  - reading financial statements cautiously (no single figure/year tells the whole story)
- *  - comparing results over time and against competitors
- *  - the mix of current versus non-current assets
- *  - how equity develops (retained earnings vs new share capital) and the financing mix
- *  - non-current assets should be covered by equity plus non-current liabilities (long-term finance)
- *  - cost of sales = direct production/acquisition costs only, NOT admin, shipping or sales staff
+ * Scope covered:
+ *  - reading a balance sheet and income statement cautiously (single-year figures
+ *    can mislead; notes and context matter)
+ *  - comparing results across several years to find genuine trends
+ *  - benchmarking a business's results against comparable competitors/industry
+ *  - the balance between current and non-current assets as a sign of capital intensity
+ *  - how equity growth splits between retained earnings and new share capital
+ *  - the financing mix: matching non-current assets to equity plus non-current
+ *    liabilities (sound long-term financing versus reliance on short-term credit)
+ *  - cost of sales as direct production/acquisition costs only
  *  - gross profit = revenue minus cost of sales, calculated before operating expenses
- *  - the operating result, i.e. earnings before interest and taxes, spelled out in full
- *  - expenditure versus expense
- *  - how revenue and cost of sales develop over time
+ *  - the operating result (earnings before interest and taxes, spelled out in full)
+ *    isolating core trading performance from financing and tax effects
+ *  - expenditure versus expense, including depreciation timing
+ *  - how the relative growth of revenue and cost of sales drives gross profit margin
+ *  - reading the balance sheet and income statement together rather than in isolation
+ *
+ * Formula weight: moderate. No parenthetical formula hints; all terms spelled out.
  *
  * Run: node scripts/gen-ch6-part-6.3-text.mjs
  */
@@ -32,41 +39,40 @@ function cap(s) {
 // ---------------------------------------------------------------------------
 
 const SCENE = [
-  "Consider a family-run furniture workshop reviewing its newly prepared balance sheet and income statement before meeting its bank manager. Evaluate the following economic assertions:",
-  "Consider a regional supermarket chain comparing this year's financial statements with those from the previous three years ahead of its annual shareholder meeting. Evaluate the following economic assertions:",
-  "Consider a construction contractor whose finance director is benchmarking the company's balance sheet against those of rival firms in the same region. Evaluate the following economic assertions:",
-  "Consider a freight and logistics company whose new chief financial officer is examining how the balance sheet has evolved since the business last expanded its vehicle fleet. Evaluate the following economic assertions:",
-  "Consider a specialist engineering firm preparing a presentation that compares its cost of sales and gross profit trends over the past five years. Evaluate the following economic assertions:",
-  "Consider a hotel group whose owners are reviewing how the business's non-current assets have been financed since the newest property was purchased. Evaluate the following economic assertions:",
-  "Consider a food processing company whose accountant is explaining the difference between cash spent on new equipment and the expense recognised in the income statement. Evaluate the following economic assertions:",
-  "Consider an electronics retailer whose management team is analysing whether recent growth in equity has come from retained profit or from new share issues. Evaluate the following economic assertions:",
-  "Consider a printing business whose owner is reviewing the balance sheet to judge whether long-term assets are being financed appropriately. Evaluate the following economic assertions:",
-  "Consider a pharmaceutical distributor whose analysts are comparing revenue growth with cost of sales growth over the last several reporting periods. Evaluate the following economic assertions:",
-  "Consider a textile manufacturer whose board is discussing how the split between current and non-current assets has changed since the factory was expanded. Evaluate the following economic assertions:",
-  "Consider a vehicle repair chain whose finance team is separating administrative, delivery and sales costs from the direct costs of servicing customer vehicles. Evaluate the following economic assertions:",
-  "Consider an agricultural cooperative whose members are reviewing the income statement to understand how gross profit was calculated this season. Evaluate the following economic assertions:",
-  "Consider a software services company whose investors are examining the operating result to judge performance independent of financing and tax decisions. Evaluate the following economic assertions:",
-  "Consider a wholesale hardware supplier whose accountant is walking new staff through the difference between cost of sales and the operating expenses reported below it. Evaluate the following economic assertions:",
-  "Consider a bakery chain whose owners are comparing this year's balance sheet with last year's to judge whether the business's financing structure has become more or less risky. Evaluate the following economic assertions:",
-  "Consider a shipping company whose analysts are reading the financial statements cautiously before recommending whether to extend further credit. Evaluate the following economic assertions:",
-  "Consider a furniture retailer whose finance director is reviewing how retained earnings and share capital have each contributed to the growth in equity over recent years. Evaluate the following economic assertions:",
-  "Consider a manufacturing group whose management accountants are tracing how an expenditure on new machinery will be expensed gradually over its useful life. Evaluate the following economic assertions:",
+  "Consider a beverage bottling company whose finance team is preparing balance sheet and income statement summaries for a meeting with its bank. Evaluate the following economic assertions:",
+  "Consider a paper mill whose directors are comparing this year's results with the previous four years before approving a new investment. Evaluate the following economic assertions:",
+  "Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:",
+  "Consider an automotive parts supplier whose chief financial officer is reviewing how the balance sheet has changed since a recent factory expansion. Evaluate the following economic assertions:",
+  "Consider a commercial bakery chain preparing a presentation on how its cost of sales and gross profit have moved over the past several years. Evaluate the following economic assertions:",
+  "Consider a marine equipment supplier whose owners are reviewing how its non-current assets have been financed since the newest warehouse was purchased. Evaluate the following economic assertions:",
+  "Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:",
+  "Consider a plastics moulding company whose management team is examining whether recent equity growth has come from retained profit or from new shares. Evaluate the following economic assertions:",
+  "Consider a dairy cooperative whose members are reviewing the balance sheet to judge whether its long-term assets are financed appropriately. Evaluate the following economic assertions:",
+  "Consider a mining equipment lessor whose analysts are comparing revenue growth with cost of sales growth over the last several reporting periods. Evaluate the following economic assertions:",
+  "Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:",
+  "Consider an appliance repair network whose finance staff are separating administrative, delivery and sales costs from the direct costs of repairing customer appliances. Evaluate the following economic assertions:",
+  "Consider a seed and fertiliser distributor whose members are reviewing the income statement to understand how gross profit was calculated this season. Evaluate the following economic assertions:",
+  "Consider a scaffolding rental firm whose investors are examining the operating result to judge performance independent of financing and tax decisions. Evaluate the following economic assertions:",
+  "Consider an industrial cleaning company whose accountant is walking new staff through the difference between cost of sales and the operating expenses reported further down the income statement. Evaluate the following economic assertions:",
+  "Consider a beverage bottling company comparing this year's balance sheet with last year's to judge whether its financing structure has become more or less risky. Evaluate the following economic assertions:",
+  "Consider a paper mill whose analysts are reading its financial statements cautiously before recommending whether to extend further credit. Evaluate the following economic assertions:",
+  "Consider a ceramics manufacturer whose finance director is reviewing how retained earnings and share capital have each contributed to equity growth over recent years. Evaluate the following economic assertions:",
 ];
 
 const themeStems = ["Analyze", "Review", "Examine", "Assess", "Consider"];
 const themeConcepts = [
-  "how a single year's balance sheet or income statement can be misleading without wider context",
-  "why comparing financial statements across several years reveals trends invisible in one year alone",
-  "how benchmarking a business's results against similar competitors clarifies whether performance is strong or weak",
-  "how the balance between current and non-current assets reflects a business's capital intensity",
-  "how the source of growth in equity, retained earnings versus new share capital, reveals a business's financing pattern",
-  "why non-current assets are best financed by equity and non-current liabilities rather than short-term borrowing",
-  "how cost of sales captures only the direct costs of producing the goods a business sells",
-  "why administrative, distribution and selling costs are excluded from cost of sales",
-  "how gross profit is calculated before operating expenses are deducted from revenue",
-  "why the operating result, also known as earnings before interest and taxes, isolates core trading performance from financing and tax effects",
+  "why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value",
+  "how comparing several years of financial statements reveals trends that one year's figures cannot show alone",
+  "how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak",
+  "how the balance between current and non-current assets signals how capital-intensive a business is",
+  "how the split between retained earnings and new share capital reveals the source of a business's equity growth",
+  "why non-current assets are best matched with equity and non-current liabilities rather than short-term credit",
+  "how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold",
+  "how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered",
+  "why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects",
   "how an expenditure differs from an expense recognised in the income statement",
-  "how the relative growth of revenue and cost of sales over time affects a business's gross profit margin",
+  "how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time",
+  "why reading the balance sheet and income statement together gives a fuller picture than reading either alone",
 ];
 const THEORY = [];
 for (const stem of themeStems) {
@@ -75,30 +81,25 @@ for (const stem of themeStems) {
   }
 }
 
-const sceneIndices = [
-  2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58, 62, 66, 70, 74,
-];
+const sceneIndices = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46];
 
 // ---------------------------------------------------------------------------
 // Titles
 // ---------------------------------------------------------------------------
 
 const titleCores = [
-  "Reading Financial Statements Cautiously",
-  "Comparing Results Across Years",
-  "Benchmarking Against Competitors",
-  "The Current and Non-Current Asset Mix",
+  "Reading Financial Statements With Caution",
+  "Comparing Results Across Several Years",
+  "Benchmarking Against Industry Peers",
+  "The Current and Non-Current Asset Balance",
   "Sources of Equity Growth",
-  "Financing Mix and Capital Structure",
-  "Matching Non-Current Assets to Long-Term Finance",
+  "Matching Long-Term Assets to Long-Term Finance",
   "Defining Cost of Sales",
-  "Excluding Overheads from Cost of Sales",
   "Calculating Gross Profit",
   "Understanding the Operating Result",
   "Expenditure Versus Expense",
-  "Revenue Growth Patterns",
-  "Cost of Sales Trends",
-  "Gross Profit Margin Behaviour",
+  "Revenue and Cost of Sales Trends",
+  "Reading the Balance Sheet and Income Statement Together",
 ];
 const titleModifiers = ["in Practice", "Explained", "for Analysts", "Over Time", "in Context"];
 const TITLES = [];
@@ -113,183 +114,183 @@ for (const core of titleCores) {
 // ---------------------------------------------------------------------------
 
 const bizTypes = [
-  "a furniture manufacturer",
-  "a supermarket chain",
-  "a construction contractor",
-  "a freight and logistics company",
-  "a specialist engineering firm",
-  "a hotel group",
-  "a food processing company",
-  "an electronics retailer",
-  "a printing business",
-  "a pharmaceutical distributor",
-  "a textile manufacturer",
-  "a vehicle repair chain",
-  "an agricultural cooperative",
-  "a software services company",
-  "a wholesale hardware supplier",
+  "a beverage bottling company",
+  "a paper mill",
+  "a ceramics manufacturer",
+  "an automotive parts supplier",
+  "a commercial bakery chain",
+  "a marine equipment supplier",
+  "a joinery and furniture workshop",
+  "a plastics moulding company",
+  "a dairy cooperative",
+  "a mining equipment lessor",
+  "a textile dyeing company",
+  "an appliance repair network",
+  "a seed and fertiliser distributor",
+  "a scaffolding rental firm",
+  "an industrial cleaning company",
 ];
 
 const assetNC = [
-  "factory buildings",
-  "production machinery",
-  "office equipment",
-  "patents, trademarks and licences",
-  "delivery vehicles",
-  "computer hardware",
-  "leasehold premises",
-  "specialist production plant",
-  "warehouse facilities",
-  "manufacturing tooling",
-  "long-term equipment investments",
-  "company-owned land",
-  "processing plant",
-  "distribution centre buildings",
-  "capitalised development costs",
+  "bottling line machinery",
+  "papermaking machinery",
+  "ceramics kilns and moulding equipment",
+  "assembly-line robotics",
+  "ovens and proofing equipment",
+  "dockside cranes and lifting gear",
+  "joinery workshop machinery",
+  "injection-moulding machinery",
+  "chilling and pasteurising plant",
+  "heavy mining equipment held for hire",
+  "dyeing vats and finishing lines",
+  "diagnostic and repair equipment",
+  "seed processing plant",
+  "scaffolding held for long-term hire",
+  "industrial cleaning machinery",
 ];
 
 const assetCA = [
-  "inventory",
-  "trade receivables",
-  "cash and cash equivalents",
-  "prepaid expenses",
-  "short-term investments",
-  "raw material stocks",
-  "finished goods stock",
-  "accrued income",
-  "supplies on hand",
-  "marketable securities",
-  "work in progress",
-  "advance payments to suppliers",
-  "short-term deposits",
-  "spare parts inventory",
-  "outstanding customer invoices",
+  "bottled stock awaiting dispatch",
+  "paper roll inventory",
+  "finished ceramics stock",
+  "spare automotive parts inventory",
+  "dough and ingredient stock",
+  "spare marine parts inventory",
+  "unsold furniture stock",
+  "moulded component stock",
+  "dairy products awaiting delivery",
+  "replacement parts inventory",
+  "dyed fabric stock",
+  "spare repair components",
+  "seed and fertiliser stock",
+  "scaffolding materials awaiting short-term hire",
+  "cleaning supplies inventory",
 ];
 
 const liabNC = [
-  "a long-term bank loan",
-  "bonds payable",
-  "a long-term lease liability",
-  "a long-term mortgage",
-  "long-term borrowings",
-  "long-term supplier financing",
-  "deferred tax liabilities",
-  "long-term pension obligations",
-  "a long-term equipment loan",
-  "long-term debentures",
-  "a long-term construction loan",
-  "long-term finance lease obligations",
-  "a long-term shareholder loan",
-  "long-term bank financing",
-  "a long-term infrastructure loan",
+  "a long-term bottling equipment loan",
+  "a long-term papermill mortgage",
+  "long-term kiln financing",
+  "a long-term robotics lease",
+  "a long-term bakery expansion loan",
+  "a long-term dockyard loan",
+  "a long-term workshop mortgage",
+  "long-term moulding equipment finance",
+  "a long-term dairy plant loan",
+  "long-term mining equipment finance",
+  "a long-term dyeing plant loan",
+  "a long-term equipment finance lease",
+  "a long-term seed processing loan",
+  "a long-term scaffolding fleet loan",
+  "a long-term cleaning equipment loan",
 ];
 
 const liabC = [
-  "trade payables",
-  "a bank overdraft",
-  "accrued wages",
-  "short-term loans",
-  "taxes payable",
-  "unearned revenue",
-  "accrued interest",
-  "the current portion of long-term debt",
-  "dividends payable",
-  "short-term supplier credit",
-  "accrued utility bills",
-  "short-term borrowings",
-  "outstanding supplier invoices",
-  "a short-term line of credit",
-  "accrued operating costs",
+  "short-term credit from bottle and packaging suppliers",
+  "short-term credit from pulp suppliers",
+  "short-term credit from clay suppliers",
+  "a short-term bank overdraft",
+  "short-term credit from ingredient suppliers",
+  "short-term credit from parts suppliers",
+  "short-term credit from timber suppliers",
+  "short-term credit from resin suppliers",
+  "short-term credit from feed suppliers",
+  "a short-term equipment rental payable",
+  "short-term credit from dye suppliers",
+  "short-term credit from components suppliers",
+  "short-term credit from seed suppliers",
+  "a short-term scaffolding materials payable",
+  "short-term credit from chemical suppliers",
 ];
 
 const staffRoles = [
-  "administrative staff",
-  "office administrators",
-  "human resources personnel",
-  "accounting clerks",
-  "finance department employees",
-  "reception and clerical staff",
-  "management support staff",
-  "back-office employees",
-  "payroll administrators",
-  "general office staff",
   "head office administrators",
-  "corporate support staff",
-  "office management personnel",
+  "payroll and accounts clerks",
+  "reception and clerical staff",
+  "human resources personnel",
+  "general office administrators",
+  "back-office support staff",
+  "corporate finance staff",
   "administrative assistants",
+  "office management personnel",
   "clerical support employees",
+  "head office coordinators",
+  "general administrative staff",
+  "office-based support personnel",
+  "administrative department employees",
+  "head office clerical staff",
 ];
 
-const shippingRoles = [
-  "delivery drivers",
-  "warehouse dispatch staff",
-  "shipping coordinators",
-  "outbound logistics personnel",
-  "freight and courier staff",
-  "distribution centre workers",
-  "despatch clerks",
-  "outbound delivery staff",
-  "delivery fleet employees",
-  "packing and shipping staff",
-  "transport and delivery staff",
-  "loading dock workers",
-  "courier dispatch employees",
-  "shipping department staff",
+const shipRoles = [
+  "despatch and loading staff",
   "outbound freight handlers",
+  "delivery drivers",
+  "warehouse dispatch personnel",
+  "courier and transport staff",
+  "distribution centre employees",
+  "outbound logistics coordinators",
+  "loading bay workers",
+  "delivery fleet staff",
+  "freight dispatch clerks",
+  "transport scheduling staff",
+  "outbound packing staff",
+  "courier dispatch personnel",
+  "delivery route staff",
+  "distribution warehouse staff",
 ];
 
 const salesRoles = [
-  "sales representatives",
-  "sales commission staff",
-  "the sales team",
   "account managers",
-  "sales staff",
-  "the retail sales force",
+  "field sales representatives",
+  "the retail sales team",
   "business development staff",
-  "sales department employees",
-  "customer-facing sales staff",
-  "the commercial sales team",
-  "field sales agents",
+  "sales commission earners",
   "showroom sales staff",
-  "telesales staff",
-  "sales support employees",
-  "regional sales representatives",
+  "telesales personnel",
+  "regional sales agents",
+  "the commercial sales force",
+  "customer account executives",
+  "sales support staff",
+  "territory sales representatives",
+  "the wholesale sales team",
+  "inside sales staff",
+  "key account managers",
 ];
 
 const directCosts = [
-  "raw materials consumed in production",
-  "direct production labour",
-  "components purchased for assembly",
-  "manufacturing overhead directly tied to output",
-  "materials used to manufacture the goods sold",
-  "direct labour on the factory floor",
-  "production supplies consumed making the goods sold",
-  "the purchase cost of goods bought for resale",
-  "direct costs of the manufacturing process",
-  "costs directly incurred to produce the units sold",
-  "direct materials used in the goods sold",
-  "factory floor wages tied directly to output",
-  "the cost of goods purchased for resale",
-  "direct input costs of production",
-  "production-line labour costs",
+  "raw materials consumed directly in production",
+  "direct factory labour on the production line",
+  "components purchased for direct assembly",
+  "production supplies consumed making the units sold",
+  "the direct purchase cost of goods bought for resale",
+  "materials directly consumed manufacturing the goods sold",
+  "direct labour incurred producing the units sold",
+  "factory-floor wages tied directly to output produced",
+  "the direct cost of goods acquired for resale",
+  "production-line materials consumed in manufacturing",
+  "direct input costs of the manufacturing process",
+  "direct labour hours spent producing the goods sold",
+  "materials directly used assembling the units sold",
+  "the direct cost of inventory purchased for resale",
+  "production costs directly tied to units manufactured",
 ];
 
 const capexItems = [
-  "a delivery van",
-  "a new machine",
-  "office furniture",
-  "a production line",
-  "a company vehicle",
-  "computer hardware",
-  "a warehouse extension",
-  "specialist equipment",
-  "a company building",
-  "manufacturing tooling",
-  "a new production facility",
-  "office computer equipment",
-  "a fleet of delivery trucks",
-  "processing equipment",
-  "a piece of factory machinery",
+  "a bottling line",
+  "a papermaking machine",
+  "a ceramics kiln",
+  "assembly-line robotics",
+  "a commercial oven",
+  "a dockside crane",
+  "joinery workshop machinery",
+  "an injection-moulding machine",
+  "pasteurising equipment",
+  "mining equipment",
+  "a dyeing vat",
+  "diagnostic repair equipment",
+  "seed processing equipment",
+  "a scaffolding fleet",
+  "industrial cleaning equipment",
 ];
 
 // ---------------------------------------------------------------------------
@@ -305,214 +306,271 @@ function buildTruePool() {
     pool.push([s, e]);
   };
 
-  // --- Atomic statements, four per concept -------------------------------
-
+  // --- Concept 1: reading statements cautiously --------------------------
   add(
-    "A single year's balance sheet or income statement rarely tells the full story about a business, so the figures are best interpreted alongside additional context rather than read in isolation.",
-    "Figures from one year alone lack context, so readers should look beyond a single year before drawing conclusions.",
+    "A business's balance sheet and income statement for a single year should be read cautiously, since one year's figures alone can create a misleading impression of overall performance.",
+    "One year's figures alone can mislead, so cautious reading is required before drawing conclusions.",
   );
   add(
-    "Because published financial statements condense complex operations into a handful of line items, readers should interpret the figures cautiously rather than draw firm conclusions from any single number.",
-    "Summarised statements can hide detail, so single figures deserve cautious interpretation.",
+    "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn.",
+    "Summarising a year's trading into totals can hide detail that matters for a fair conclusion.",
   );
   add(
-    "A rise in profit for the year does not by itself prove that a business is being managed well, since the improvement could stem from a one-off item rather than from the core operations.",
-    "A profit increase may come from a one-off gain rather than genuinely improved management.",
+    "An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat.",
+    "A profit improvement can come from a non-recurring event rather than better ongoing trading.",
   );
   add(
-    "Notes accompanying the financial statements often explain unusual movements that the main balance sheet and income statement alone do not make clear.",
-    "Supporting notes provide context that the main statements alone cannot always convey.",
-  );
-
-  add(
-    "Comparing a business's balance sheet and income statement across several years reveals trends that a single year's figures cannot show on their own.",
-    "Multi-year comparison exposes trends hidden within any single year's figures.",
+    "Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained.",
+    "Explanatory notes often clarify what the main financial statements alone cannot fully explain.",
   );
   add(
-    "Tracking revenue, cost of sales and profit for the year over multiple years helps show whether a business's performance is improving or deteriorating.",
-    "Multi-year tracking of key figures reveals the direction of a business's performance.",
-  );
-  add(
-    "A year-on-year comparison of the balance sheet can reveal whether a business's asset base and financing structure are expanding or contracting over time.",
-    "Comparing balance sheets year on year shows whether assets and financing are growing or shrinking.",
-  );
-  add(
-    "Reviewing several consecutive years of financial statements helps distinguish a temporary fluctuation from a lasting change in a business's performance.",
-    "Multiple years of data help separate a one-off blip from a genuine, lasting change.",
+    "A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself.",
+    "A single figure should prompt further inquiry rather than serve as a final conclusion.",
   );
 
+  // --- Concept 2: multi-year comparison -----------------------------------
   add(
-    "Comparing a business's financial statements with those of similar businesses in the same industry provides a benchmark for judging whether its results are strong or weak.",
-    "Industry peers provide the benchmark needed to judge whether results are strong or weak.",
+    "Placing several years of a business's balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year.",
+    "Multi-year comparison reveals trends invisible within any one year's figures alone.",
   );
   add(
-    "A profit figure that looks impressive when viewed alone may appear only ordinary once it is compared with the results of similar businesses in the same industry.",
-    "Context from comparable businesses can turn an apparently impressive figure into an ordinary one.",
+    "Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business's performance is heading.",
+    "Multi-period tracking of key results shows the direction of a business's performance.",
   );
   add(
-    "Industry benchmarks allow analysts to judge whether a business's asset structure or profitability is typical for its sector rather than exceptional or weak.",
-    "Sector benchmarks show whether results are typical, exceptional or weak for that industry.",
+    "Comparing successive balance sheets shows whether a business's asset base and its sources of finance are expanding, contracting or holding steady over time.",
+    "Successive balance sheet comparison shows whether assets and financing are expanding, contracting or stable.",
   );
   add(
-    "Reading a business's financial statements alongside those of its competitors helps reveal whether its performance reflects the whole industry or is specific to that business.",
-    "Comparing with competitors clarifies whether a result is industry-wide or company-specific.",
-  );
-
-  add(
-    "The proportion of a business's total assets held as non-current assets compared with current assets indicates how capital-intensive its operations are.",
-    "The non-current versus current asset split signals how capital-intensive a business is.",
+    "Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+    "Several consecutive years help distinguish a temporary blip from a lasting change.",
   );
   add(
-    "A business with a high share of current assets relative to non-current assets tends to hold more resources that can be turned into cash within a year.",
-    "A current-asset-heavy structure means more resources are convertible into cash within a year.",
-  );
-  add(
-    "Analyzing the split between current and non-current assets on the balance sheet helps explain how a business ties up its resources.",
-    "The current versus non-current split explains how a business's resources are tied up.",
-  );
-  add(
-    "A rising share of non-current assets over successive years may indicate that a business is investing more heavily in long-term production capacity.",
-    "A growing non-current asset share can signal heavier long-term investment.",
+    "A trend that persists across three or more reporting periods carries more weight than a single period's outcome when judging a business's direction of travel.",
+    "A trend persisting across several periods is more meaningful than one period's outcome alone.",
   );
 
+  // --- Concept 3: benchmarking ---------------------------------------------
   add(
-    "Comparing share capital and retained earnings over time shows whether growth in equity stems from new owner contributions or from the accumulation of prior profits.",
-    "Tracking share capital versus retained earnings reveals the source of equity growth.",
+    "Judging whether a business's results are strong or weak is more reliable when its figures are set alongside those of comparable businesses in the same industry.",
+    "Comparable industry figures provide the benchmark for judging whether results are strong or weak.",
   );
   add(
-    "A business's financing mix, meaning the balance between equity and the various liabilities on its balance sheet, can be examined by tracking its composition over successive years.",
-    "The financing mix of equity and liabilities can be tracked over successive balance sheets.",
+    "A profit margin that appears strong when viewed in isolation may turn out to be unremarkable once measured against the margins earned by similar businesses.",
+    "An apparently strong margin can look unremarkable once benchmarked against similar businesses.",
   );
   add(
-    "An increase in equity that comes mainly from retained earnings rather than new share capital indicates that a business is financing its growth internally.",
-    "Equity growth driven by retained earnings rather than new shares reflects internal financing.",
+    "Sector-wide benchmarks help determine whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out.",
+    "Sector benchmarks reveal whether a business's results are ordinary or exceptional for its industry.",
   );
   add(
-    "Reviewing how a business's equity has developed over several years reveals whether it relies more on retained profit or on external owner contributions for growth.",
-    "Multi-year equity review shows reliance on retained profit versus external contributions.",
-  );
-
-  add(
-    "Non-current assets are considered adequately financed when their value is covered by the sum of equity and non-current liabilities.",
-    "Non-current assets are adequately financed when covered by equity plus non-current liabilities.",
+    "Comparing a business's statements with those of its direct competitors can reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.",
+    "Competitor comparison distinguishes industry-wide changes from company-specific ones.",
   );
   add(
-    "Financing non-current assets primarily with long-term sources of capital, rather than short-term borrowing, is regarded as financially sound practice.",
-    "Long-term financing of long-term assets is regarded as sound financial practice.",
-  );
-  add(
-    "If non-current assets exceed the combined total of equity and non-current liabilities, part of those long-term assets is being financed by current liabilities, which is considered risky.",
-    "Non-current assets exceeding equity plus non-current liabilities implies risky short-term financing of long-term assets.",
-  );
-  add(
-    "Long-term investments such as buildings and machinery are best matched with long-term sources of finance rather than short-term credit that must soon be repaid.",
-    "Long-term assets should be matched with long-term finance, not short-term credit.",
+    "Without a suitable point of comparison, a reader has no reliable way of judging whether a given profit margin counts as good or poor performance.",
+    "Without a comparison point, judging whether a margin is good or poor is unreliable.",
   );
 
+  // --- Concept 4: current vs non-current asset mix -------------------------
   add(
-    "Cost of sales comprises the direct costs of producing or acquiring the goods that a business has sold, such as materials and direct production labour.",
-    "Cost of sales is limited to direct production or acquisition costs such as materials and direct labour.",
+    "The relative weight of non-current assets against current assets on a business's balance sheet gives an indication of how capital-intensive its operations are.",
+    "The non-current versus current asset balance indicates the capital intensity of operations.",
   );
   add(
-    "Cost of sales is limited to the direct costs of production, so administrative overheads and selling expenses appear elsewhere in the income statement.",
-    "Administrative and selling expenses sit outside cost of sales, further down the income statement.",
+    "A business holding a larger share of its resources in current assets typically has more of its wealth available for conversion into cash within the coming year.",
+    "More current assets relative to non-current assets means more resources convertible into cash soon.",
   );
   add(
-    "The cost of raw materials consumed in manufacturing the goods sold forms part of cost of sales, unlike costs incurred after production is complete.",
-    "Raw materials consumed in production belong in cost of sales; post-production costs do not.",
+    "Studying how the balance between current and non-current assets shifts over time helps explain how a business is choosing to deploy its resources.",
+    "Shifts in the current versus non-current asset balance reveal how resources are being deployed.",
   );
   add(
-    "Because cost of sales captures only direct production costs, a business's administrative and distribution functions are reported separately further down the income statement.",
-    "Direct-cost-only cost of sales means administration and distribution are reported separately.",
+    "An increasing share of non-current assets over successive years can point to a business committing more heavily to long-term productive capacity.",
+    "A rising non-current asset share can signal greater commitment to long-term capacity.",
+  );
+  add(
+    "Businesses in capital-intensive industries tend to carry a heavier weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock.",
+    "Capital-intensive industries tend to carry more non-current assets relative to current assets.",
   );
 
+  // --- Concept 5: equity growth source -------------------------------------
   add(
-    "Gross profit is calculated by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are subtracted.",
-    "Gross profit equals revenue minus cost of sales, ahead of any operating expense deductions.",
+    "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit.",
+    "Equity growth from rising retained earnings with static share capital reflects internal funding.",
   );
   add(
-    "A business's gross profit reflects the margin earned on producing and selling goods before overheads such as administration and distribution are considered.",
-    "Gross profit reflects the production and selling margin before overheads are deducted.",
+    "Tracking share capital and retained earnings separately over successive years shows whether a business's equity growth has come from owner contributions or from accumulated profit.",
+    "Separate tracking of share capital and retained earnings reveals the source of equity growth.",
   );
   add(
-    "Distribution costs and general administrative costs are deducted after gross profit has already been calculated, on the way to the operating result.",
+    "A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues.",
+    "Retained-earnings-driven equity growth relies less on outside investors than share-issue-driven growth.",
+  );
+  add(
+    "The pattern of a business's equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy.",
+    "The pattern of equity growth over time reveals a business's financing strategy.",
+  );
+  add(
+    "If share capital has remained unchanged for several years while equity has still grown, retained earnings must account for the entire increase.",
+    "Unchanged share capital plus rising equity means retained earnings account for the increase.",
+  );
+
+  // --- Concept 6: financing mix / matching maturities -----------------------
+  add(
+    "A business is considered to be financing its non-current assets soundly when their total value does not exceed the combined total of equity and non-current liabilities.",
+    "Non-current assets covered by equity plus non-current liabilities reflects sound long-term financing.",
+  );
+  add(
+    "Relying on long-term sources of finance, rather than short-term borrowing that must soon be renewed, is regarded as the prudent way to fund long-lived assets.",
+    "Long-term financing of long-lived assets is regarded as the financially prudent approach.",
+  );
+  add(
+    "When non-current assets exceed the sum of equity and non-current liabilities, part of those long-term assets must be financed by current liabilities, which increases financial risk.",
+    "Non-current assets exceeding equity plus non-current liabilities implies risky reliance on current liabilities.",
+  );
+  add(
+    "Matching the expected life of an asset with the maturity of the finance used to fund it is a widely accepted principle of sound financial management.",
+    "Matching asset life to financing maturity is a widely accepted sound-finance principle.",
+  );
+  add(
+    "Financing long-lived production assets through short-term credit that must be repaid within a year exposes a business to the risk of needing to refinance repeatedly.",
+    "Short-term financing of long-lived assets creates repeated refinancing risk.",
+  );
+
+  // --- Concept 7: cost of sales = direct costs only -------------------------
+  add(
+    "Cost of sales is confined to the direct costs incurred in producing or acquiring the goods a business has actually sold during the period.",
+    "Cost of sales captures only the direct costs of producing or acquiring the goods sold.",
+  );
+  add(
+    "Only costs that can be traced directly to manufacturing or acquiring the units a business has sold belong within cost of sales.",
+    "Only directly traceable production or acquisition costs belong within cost of sales.",
+  );
+  add(
+    "Materials physically consumed in manufacturing the units sold form part of cost of sales, while costs incurred once production is finished generally do not.",
+    "Materials consumed in production belong in cost of sales; post-production costs generally do not.",
+  );
+  add(
+    "Because cost of sales is restricted to direct production costs, functions such as administration and distribution are reported in separate lines of the income statement.",
+    "Direct-cost-only cost of sales means administration and distribution appear as separate lines.",
+  );
+  add(
+    "Direct labour spent physically producing the goods sold is treated as part of cost of sales, unlike labour spent on functions unrelated to production.",
+    "Direct production labour belongs in cost of sales; labour on unrelated functions does not.",
+  );
+
+  // --- Concept 8: gross profit calculation -----------------------------------
+  add(
+    "Gross profit is arrived at by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are taken into account.",
+    "Gross profit equals revenue minus cost of sales, calculated ahead of operating expenses.",
+  );
+  add(
+    "The margin represented by gross profit reflects how much a business earns from producing and selling its goods before overhead costs such as administration are considered.",
+    "Gross profit reflects the production and selling margin before overhead costs are considered.",
+  );
+  add(
+    "Distribution costs and administrative expenses are deducted from gross profit, not from revenue directly, on the way to arriving at the operating result.",
     "Distribution and administrative costs are deducted after gross profit, on the way to the operating result.",
   );
   add(
-    "Because gross profit is calculated before operating expenses, two businesses with identical gross profit can still end up with very different operating results.",
-    "Identical gross profit can still lead to different operating results depending on operating expenses.",
+    "Two businesses can report identical gross profit yet end up with very different operating results if their distribution and administrative costs differ.",
+    "Identical gross profit can still yield different operating results depending on subsequent operating expenses.",
+  );
+  add(
+    "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is improving.",
+    "A widening revenue-to-cost-of-sales gap, relative to revenue, means gross profit margin is improving.",
   );
 
+  // --- Concept 9: operating result / earnings before interest and taxes -----
   add(
-    "The operating result, also referred to as earnings before interest and taxes, measures profit generated from a business's core operations before financing costs and income tax are taken into account.",
-    "The operating result, also called earnings before interest and taxes, excludes financing costs and income tax.",
+    "The operating result, also described as earnings before interest and taxes, measures profit from core operations before the effects of financing costs and income tax are included.",
+    "The operating result, i.e. earnings before interest and taxes, excludes financing costs and income tax.",
   );
   add(
-    "Because the operating result excludes finance costs and income tax, it allows the core trading performance of a business to be assessed separately from how it is financed or taxed.",
-    "Excluding finance costs and tax lets the operating result show core trading performance alone.",
+    "Excluding financing costs and income tax from the operating result allows a business's core trading performance to be judged separately from how it happens to be financed or taxed.",
+    "Excluding financing and tax lets the operating result isolate core trading performance.",
   );
   add(
-    "Comparing the operating result across several years shows how a business's core trading performance is developing independently of financing decisions or tax rates.",
-    "Multi-year operating result comparison isolates trading performance from financing and tax choices.",
+    "Tracking the operating result over several years shows how a business's core trading is developing independently of changes in interest rates or tax policy.",
+    "Multi-year operating result tracking isolates trading trends from interest rate or tax changes.",
   );
   add(
-    "Two businesses with the same operating result can end up with different profit for the year if their finance costs or tax rates differ.",
-    "Equal operating results can still lead to different profit for the year due to financing or tax differences.",
+    "Two businesses reporting an identical operating result can still end up with different profit for the year if their finance costs or tax rates differ.",
+    "Identical operating results can yield different profit for the year given differing finance costs or tax rates.",
+  );
+  add(
+    "A decline in profit for the year alongside a stable or rising operating result suggests the cause lies in financing costs or taxation rather than in core trading.",
+    "Falling profit for the year with a stable operating result points to financing or tax causes, not trading.",
   );
 
+  // --- Concept 10: expenditure versus expense --------------------------------
   add(
-    "An expenditure represents an outflow of cash or resources, whereas an expense represents the portion of that outflow recognised in the income statement as relating to the current period.",
+    "An expenditure is an outflow of cash or resources, while an expense is the portion of that outflow recognised in the income statement as belonging to the current period.",
     "Expenditure is the outflow itself; expense is the portion recognised for the current period.",
   );
   add(
-    "Prepaying next year's insurance premium is an expenditure in the current year, but it only becomes an expense once the coverage period it relates to has passed.",
-    "A prepayment is an expenditure now but becomes an expense only in the period it covers.",
+    "Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each period of cover passes.",
+    "A prepayment is an expenditure immediately but becomes an expense only in the periods it covers.",
   );
   add(
-    "Distinguishing expenditure from expense matters because a large cash outflow in one year can be spread across several years' worth of expense recognition.",
-    "One large expenditure can translate into expense recognised over several future years.",
+    "A single large expenditure can result in expense being recognised gradually across several future accounting periods rather than all at once.",
+    "A large expenditure can be spread as expense across several future periods.",
   );
   add(
-    "A business can make a substantial expenditure in a given year while recognising only a small portion of it as an expense in that year's income statement.",
-    "A large expenditure need not translate into a large expense in the same year.",
-  );
-
-  add(
-    "Tracking revenue over several years shows whether a business's sales are growing, stagnating or declining.",
-    "Multi-year revenue tracking reveals whether sales are growing, stagnating or declining.",
+    "The distinction between expenditure and expense matters because it explains why a business's cash outflow for a year can differ substantially from its reported expenses for that year.",
+    "Distinguishing expenditure from expense explains gaps between cash outflow and reported expense in a year.",
   );
   add(
-    "A business whose revenue rises every year is not necessarily improving profitability, since its costs could be rising even faster.",
-    "Rising revenue alone does not guarantee improving profitability if costs rise faster still.",
-  );
-  add(
-    "Consistent revenue growth over multiple years is a more reliable signal of business health than a single year's strong sales figure.",
-    "Sustained multi-year growth is a more reliable health signal than one strong year.",
-  );
-  add(
-    "A sudden jump in revenue in one year deserves closer examination before assuming that a business's underlying demand has permanently improved.",
-    "A one-year revenue jump warrants scrutiny before assuming a lasting demand improvement.",
+    "Buying an asset that will be used for several years is an expenditure immediately, but only part of its cost becomes an expense in the year of purchase.",
+    "Buying a multi-year asset is an immediate expenditure, with only part becoming expense that year.",
   );
 
+  // --- Concept 11: revenue vs cost of sales growth / margin trend -------------
   add(
-    "Comparing the growth rate of revenue with the growth rate of cost of sales over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
+    "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
     "Comparing revenue growth with cost of sales growth reveals changing production efficiency.",
   );
   add(
-    "A business whose cost of sales rises broadly in line with its revenue is likely to maintain a stable gross profit margin from one year to the next.",
-    "Cost of sales rising in step with revenue tends to keep the gross profit margin stable.",
+    "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will widen across that period.",
+    "Cost of sales growing more slowly than revenue widens the gross profit margin.",
   );
   add(
-    "If revenue grows while cost of sales grows more slowly, a business's gross profit margin will widen over that period.",
-    "Revenue outpacing cost of sales growth widens the gross profit margin.",
+    "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin come under sustained pressure.",
+    "Cost of sales consistently outpacing revenue growth puts sustained pressure on the gross profit margin.",
   );
   add(
-    "Examining how revenue and cost of sales move together over time helps explain changes in a business's gross profit margin.",
-    "Joint examination of revenue and cost of sales trends explains gross profit margin changes.",
+    "Stable growth in both revenue and cost of sales at similar rates tends to keep a business's gross profit margin relatively steady from year to year.",
+    "Revenue and cost of sales growing at similar rates tends to keep the margin steady.",
+  );
+  add(
+    "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace.",
+    "Rising revenue does not guarantee improving profitability if cost of sales rises even faster.",
   );
 
-  // --- Templated statements ------------------------------------------------
+  // --- Concept 12: reading the balance sheet and income statement together ---
+  add(
+    "Reading the balance sheet and income statement together gives a fuller picture of a business's position and performance than studying either statement on its own.",
+    "Reading both statements together gives a fuller picture than studying either alone.",
+  );
+  add(
+    "A strong profit for the year shown in the income statement can be undermined by a weak financing position revealed only by the balance sheet.",
+    "A strong income statement result can be undermined by weaknesses only the balance sheet reveals.",
+  );
+  add(
+    "Changes in working capital shown on the balance sheet can help explain why cash movements differ from the profit for the year reported in the income statement.",
+    "Balance sheet working capital changes help explain gaps between cash movement and reported profit.",
+  );
+  add(
+    "Judging a business's overall financial health requires weighing income statement performance against balance sheet strength rather than looking at either alone.",
+    "Overall financial health requires weighing both statements together, not either alone.",
+  );
+  add(
+    "A business could report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, so both statements need to be considered together.",
+    "Rising profit can coincide with a deteriorating balance sheet, so both statements matter jointly.",
+  );
 
+  // --- Templated Set A: financing mix / asset mix by business type ------------
   for (let i = 0; i < bizTypes.length; i++) {
     const biz = bizTypes[i];
     const nc = assetNC[i];
@@ -520,80 +578,71 @@ function buildTruePool() {
     const lnc = liabNC[i];
 
     add(
-      `${cap(biz)} is regarded as financing its ${nc} soundly when their value is covered by equity together with ${lnc}.`,
+      `${cap(biz)} is regarded as financing its ${nc} soundly when their value does not exceed equity plus ${lnc}.`,
       `Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.`,
     );
     add(
-      `Tracking the proportion of ${nc} against ${ca} on ${biz}'s balance sheet over several years shows whether the business is becoming more or less capital-intensive.`,
+      `Tracking the balance between ${nc} and ${ca} on ${biz}'s statements over several years shows whether the business is becoming more or less capital-intensive.`,
       `Changes in the non-current versus current asset split over time signal shifting capital intensity.`,
-    );
-    add(
-      `If ${biz}'s retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.`,
-      `With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.`,
     );
   }
 
+  // --- Templated Set B: cost of sales exclusions by role -----------------------
   for (let i = 0; i < staffRoles.length; i++) {
     const biz = bizTypes[i];
     const staff = staffRoles[i];
-    const shipping = shippingRoles[i];
+    const ship = shipRoles[i];
     const sales = salesRoles[i];
     const direct = directCosts[i];
 
     add(
-      `The pay of ${staff} is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.`,
-      `Cost of sales reflects direct production costs only, not general administrative pay.`,
+      `The wages of ${staff} are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.`,
+      `Cost of sales reflects direct production costs only, not general administrative wages.`,
     );
     add(
-      `Wages earned by ${shipping} are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.`,
-      `Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.`,
+      `Pay earned by ${ship} is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.`,
+      `Distribution wages are incurred after production and are not part of cost of sales.`,
     );
     add(
-      `Compensation paid to ${sales} is kept out of cost of sales because selling activity takes place after the goods have already been produced.`,
-      `Selling costs are separate from production costs and excluded from cost of sales.`,
+      `Amounts paid to ${sales} are excluded from cost of sales because selling activity takes place only after the goods have already been produced.`,
+      `Selling costs occur after production and are excluded from cost of sales.`,
     );
     add(
-      `${cap(direct)} are included within cost of sales because they are directly incurred in producing the goods a business sells.`,
-      `Cost of sales captures the direct costs of production, such as materials and direct labour.`,
-    );
-    add(
-      `For ${biz}, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.`,
-      `Only direct production costs belong in cost of sales; administrative and selling costs appear separately.`,
+      `${cap(direct)} are included within cost of sales because they are incurred directly in producing the goods that ${biz} has sold.`,
+      `Direct production or acquisition costs are exactly what cost of sales is meant to capture.`,
     );
   }
 
+  // --- Templated Set C: expenditure versus expense on capital items -------------
   for (let i = 0; i < capexItems.length; i++) {
     const item = capexItems[i];
     const biz = bizTypes[i];
 
     add(
-      `Buying ${item} is a capital expenditure, and only the depreciation charged in each accounting period becomes an expense in that period's income statement.`,
-      `Capital expenditure is turned into expense gradually through depreciation over the asset's useful life.`,
+      `When ${biz} buys ${item}, only the depreciation charged in each period becomes an expense in that period's income statement, even though the full expenditure occurs at purchase.`,
+      `Capital expenditure becomes expense gradually, through depreciation, not all at once.`,
     );
     add(
-      `Not every expenditure ${biz} makes during the year appears immediately as an expense in that year's income statement.`,
-      `Capital expenditures are recognised as expenses gradually, not fully in the year of payment.`,
+      `Not every expenditure ${biz} makes during a year shows up as an expense in that same year's income statement.`,
+      `Some expenditures are capitalised and expensed only gradually in future periods.`,
     );
   }
 
+  // --- Templated Set D: gross profit / margin trend by business type ------------
   for (let i = 0; i < bizTypes.length; i++) {
     const biz = bizTypes[i];
 
     add(
-      `${cap(biz)}'s gross profit is found by deducting cost of sales from revenue, before distribution costs, administrative costs or other operating items are taken into account.`,
-      `Gross profit sits between revenue less cost of sales and the deduction of operating expenses.`,
+      `${cap(biz)}'s gross profit is calculated by deducting cost of sales from revenue, before distribution costs, administrative costs or other operating items are considered.`,
+      `Gross profit sits between revenue less cost of sales and the later deduction of operating expenses.`,
     );
     add(
-      `${cap(biz)}'s operating result, also referred to as earnings before interest and taxes, is calculated before finance costs and income tax are deducted, isolating core trading performance from financing and tax effects.`,
-      `The operating result, i.e. earnings before interest and taxes, excludes financing and tax items by definition.`,
-    );
-    add(
-      `If ${biz}'s cost of sales grows faster than its revenue over several years, its gross profit margin will narrow even while total revenue keeps rising.`,
+      `If ${biz}'s cost of sales grows faster than its revenue over several years, its gross profit margin will narrow even while total revenue keeps increasing.`,
       `Cost of sales outpacing revenue growth compresses the gross profit margin.`,
     );
   }
 
-  if (pool.length < 225) throw new Error(`TRUE pool only ${pool.length}, need 225`);
+  if (pool.length < 170) throw new Error(`TRUE pool only ${pool.length}, need 170`);
   return pool;
 }
 
@@ -610,212 +659,271 @@ function buildFalsePool() {
     pool.push([s, e]);
   };
 
+  // --- Concept 1 ---------------------------------------------------------
   add(
-    "A single year's balance sheet or income statement always tells the full story about a business, so no other years or comparisons are ever needed.",
-    "A single year's figures rarely tell the full story; wider context and comparison are needed.",
+    "A business's balance sheet and income statement for a single year can always be trusted on their own, since one year's figures alone give a complete impression of overall performance.",
+    "One year's figures alone can mislead; caution and wider context are needed before drawing conclusions.",
   );
   add(
-    "Because financial statements present exact figures, readers never need to interpret them cautiously or look for additional explanation.",
-    "Summarised figures still require cautious interpretation and often benefit from additional explanation.",
+    "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought.",
+    "Summarising into totals can hide detail, so additional information is often still needed.",
   );
   add(
-    "A rise in profit for the year always proves that a business is being managed well, regardless of whether the improvement stems from a one-off item.",
-    "A profit rise can stem from a one-off item rather than genuinely improved management.",
+    "An improvement in profit for the year always reflects stronger underlying trading, since one-off events never affect the reported profit figure.",
+    "One-off events can and do affect reported profit, so an improvement need not reflect better trading.",
   );
   add(
-    "Notes accompanying the financial statements are optional extras that never explain movements shown in the main balance sheet and income statement.",
-    "Notes often explain unusual movements that the main statements alone do not make clear.",
-  );
-
-  add(
-    "A single year's balance sheet and income statement reveal every trend in a business's performance without needing figures from other years.",
-    "Trends only become visible when several years of figures are compared, not from one year alone.",
+    "Reading the explanatory notes that accompany a balance sheet and income statement never adds anything beyond what the main statements alone already show.",
+    "Explanatory notes frequently add clarification that the main statements alone do not provide.",
   );
   add(
-    "Tracking revenue, cost of sales and profit for the year over multiple years adds no useful information beyond what one year's figures already show.",
-    "Multi-year tracking reveals trends that a single year's figures cannot show.",
-  );
-  add(
-    "A year-on-year comparison of the balance sheet cannot reveal anything about whether a business's asset base or financing structure is changing.",
-    "Year-on-year balance sheet comparison is exactly how changes in assets and financing are detected.",
-  );
-  add(
-    "Reviewing several consecutive years of financial statements makes it harder, not easier, to distinguish a temporary fluctuation from a lasting change.",
-    "More years of data make it easier, not harder, to separate a blip from a lasting change.",
+    "A cautious reader treats any single figure drawn from the financial statements as a final conclusion in itself, with no need for further inquiry.",
+    "A single figure is a starting point for inquiry, not a final conclusion on its own.",
   );
 
+  // --- Concept 2 ---------------------------------------------------------
   add(
-    "Comparing a business's financial statements with those of similar businesses in the same industry provides no useful benchmark for judging its results.",
-    "Industry comparisons are exactly the benchmark used to judge whether results are strong or weak.",
+    "Placing several years of a business's balance sheets and income statements side by side reveals nothing beyond what a single year's figures already show.",
+    "Multi-year comparison reveals trends that a single year's figures cannot show.",
   );
   add(
-    "A profit figure that looks impressive when viewed alone remains equally impressive once compared with similar businesses in the same industry.",
-    "A seemingly impressive figure can look merely ordinary once compared with industry peers.",
+    "Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business's performance is heading.",
+    "Tracking key results over several periods is exactly how a performance direction is identified.",
   );
   add(
-    "Industry benchmarks are irrelevant to judging whether a business's asset structure or profitability is typical for its sector.",
-    "Industry benchmarks are precisely what shows whether results are typical for the sector.",
+    "Comparing successive balance sheets provides no way of telling whether a business's asset base or sources of finance are expanding, contracting or holding steady.",
+    "Successive balance sheet comparison is precisely how such changes are detected.",
   );
   add(
-    "Reading a business's financial statements alongside its competitors' statements never helps explain whether its performance is industry-wide or specific to that business.",
-    "Comparing with competitors helps distinguish industry-wide trends from company-specific results.",
-  );
-
-  add(
-    "The proportion of a business's total assets held as non-current versus current assets says nothing about how capital-intensive its operations are.",
-    "The non-current versus current asset split is a direct indicator of capital intensity.",
+    "Looking at several consecutive years of results makes it harder to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+    "More years of data make this distinction easier, not harder, to draw.",
   );
   add(
-    "A business with a high share of current assets relative to non-current assets tends to hold fewer resources that can be quickly converted into cash.",
-    "A higher share of current assets means more, not fewer, resources convertible into cash quickly.",
-  );
-  add(
-    "Analyzing the split between current and non-current assets on the balance sheet provides no insight into how a business ties up its resources.",
-    "The current versus non-current split is precisely what shows how resources are tied up.",
-  );
-  add(
-    "A rising share of non-current assets over successive years always indicates declining investment in long-term production capacity.",
-    "A rising non-current asset share typically signals more, not less, long-term investment.",
+    "A trend that persists across three or more reporting periods carries no more weight than a single period's outcome when judging a business's direction of travel.",
+    "A persistent multi-period trend is more meaningful than a single period's outcome.",
   );
 
+  // --- Concept 3 ---------------------------------------------------------
   add(
-    "Comparing share capital and retained earnings over time can never reveal whether equity growth stems from new owner contributions or accumulated profit.",
-    "Comparing share capital and retained earnings is exactly how the source of equity growth is revealed.",
+    "Judging whether a business's results are strong or weak is unaffected by whether its figures are set alongside those of comparable businesses in the same industry.",
+    "Comparison with comparable businesses is exactly what allows strong or weak results to be identified.",
   );
   add(
-    "A business's financing mix, meaning the balance between equity and liabilities, cannot be examined by tracking its balance sheet composition over time.",
-    "Tracking balance sheet composition over time is precisely how the financing mix is examined.",
+    "A profit margin that appears strong when viewed in isolation remains equally strong once measured against the margins earned by similar businesses.",
+    "Benchmarking against similar businesses can turn an apparently strong margin into an unremarkable one.",
   );
   add(
-    "An increase in equity that comes mainly from retained earnings rather than new share capital indicates that new capital has been contributed by the owners.",
-    "If share capital is unchanged, equity growth must come from retained earnings, not new capital.",
+    "Sector-wide benchmarks provide no basis for determining whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out.",
+    "Sector benchmarks are precisely what shows whether results are ordinary or exceptional.",
   );
   add(
-    "Reviewing how a business's equity has developed over several years reveals nothing about whether it relies on retained profit or external contributions.",
-    "Multi-year equity review is exactly how reliance on retained profit versus external contributions is judged.",
-  );
-
-  add(
-    "Non-current assets are considered adequately financed only when their value is covered entirely by current liabilities.",
-    "Non-current assets are adequately financed when covered by equity and non-current liabilities, not current liabilities.",
+    "Comparing a business's statements with those of its direct competitors can never reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.",
+    "Competitor comparison is exactly how industry-wide effects are separated from company-specific ones.",
   );
   add(
-    "Financing non-current assets primarily with short-term borrowing rather than long-term capital is regarded as the financially sound approach.",
-    "Financing long-term assets mainly with short-term borrowing is considered risky, not sound.",
-  );
-  add(
-    "If non-current assets exceed the combined total of equity and non-current liabilities, this is always a sign of prudent financial management.",
-    "Non-current assets exceeding equity plus non-current liabilities signals risky, not prudent, financing.",
-  );
-  add(
-    "Long-term investments such as buildings and machinery are best matched with short-term credit that must soon be repaid.",
-    "Long-term assets are best matched with long-term finance, not short-term credit.",
+    "Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance.",
+    "Without a comparison point, judging a margin as good or poor is unreliable.",
   );
 
+  // --- Concept 4 ---------------------------------------------------------
   add(
-    "Cost of sales includes every cost a business incurs, from production through to administration and delivery.",
-    "Cost of sales is limited to direct production costs; administration and delivery sit elsewhere.",
+    "The relative weight of non-current assets against current assets on a business's balance sheet gives no indication of how capital-intensive its operations are.",
+    "This balance is exactly what indicates how capital-intensive operations are.",
   );
   add(
-    "Cost of sales covers administrative overheads and selling expenses in addition to the direct costs of production.",
-    "Administrative overheads and selling expenses are excluded from cost of sales.",
+    "A business holding a larger share of its resources in current assets typically has less of its wealth available for conversion into cash within the coming year.",
+    "A larger current-asset share means more, not less, of a business's resources are readily convertible to cash.",
   );
   add(
-    "The cost of raw materials consumed in manufacturing the goods sold is excluded from cost of sales because it is a production cost.",
-    "Raw materials consumed in production are a direct cost and belong within cost of sales.",
+    "Studying how the balance between current and non-current assets shifts over time reveals nothing about how a business is choosing to deploy its resources.",
+    "Such shifts are precisely what reveal changing resource deployment.",
   );
   add(
-    "Because cost of sales captures every departmental cost, a business's administrative and distribution functions are reported within it rather than separately.",
-    "Administrative and distribution costs are reported separately from cost of sales, not within it.",
+    "An increasing share of non-current assets over successive years can only point to a business reducing its commitment to long-term productive capacity.",
+    "A rising non-current asset share typically signals greater, not reduced, long-term commitment.",
+  );
+  add(
+    "Businesses in capital-intensive industries tend to carry a lighter weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock.",
+    "Capital-intensive businesses tend to carry heavier, not lighter, non-current asset weightings.",
   );
 
+  // --- Concept 5 ---------------------------------------------------------
   add(
-    "Gross profit is calculated by deducting all operating expenses, including distribution and administrative costs, from revenue.",
+    "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth must have come from a new issue of shares to owners.",
+    "With share capital unchanged, equity growth cannot come from new shares; it must be retained earnings.",
+  );
+  add(
+    "Tracking share capital and retained earnings separately over successive years provides no way of telling whether a business's equity growth has come from owner contributions or from accumulated profit.",
+    "Separate tracking of these two components is exactly how the source of equity growth is identified.",
+  );
+  add(
+    "A business that grows its equity mostly through retained earnings is relying just as heavily on outside investors as one whose equity growth comes mainly from new share issues.",
+    "Growth funded by retained earnings relies less on outside investors than growth funded by new shares.",
+  );
+  add(
+    "The pattern of a business's equity growth over several years reveals nothing about its underlying financing strategy, regardless of whether it is driven by retained profit or fresh capital.",
+    "This pattern is precisely what reveals a business's underlying financing strategy.",
+  );
+  add(
+    "If share capital has remained unchanged for several years while equity has still grown, that growth cannot be explained by retained earnings.",
+    "With share capital unchanged, retained earnings are exactly what explain rising equity.",
+  );
+
+  // --- Concept 6 ---------------------------------------------------------
+  add(
+    "A business is considered to be financing its non-current assets soundly only when their total value is covered mainly by current liabilities.",
+    "Covering long-term assets mainly with current liabilities is considered risky, not sound.",
+  );
+  add(
+    "Relying on short-term borrowing that must soon be renewed, rather than long-term sources of finance, is regarded as the prudent way to fund long-lived assets.",
+    "Funding long-lived assets mainly with short-term borrowing is regarded as risky, not prudent.",
+  );
+  add(
+    "When non-current assets exceed the sum of equity and non-current liabilities, this always indicates a conservative and low-risk financing position.",
+    "This situation indicates a risky, not conservative, financing position.",
+  );
+  add(
+    "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed.",
+    "This matching principle is central to being considered a soundly financed business.",
+  );
+  add(
+    "Financing long-lived production assets through short-term credit that must be repaid within a year removes any risk of needing to refinance.",
+    "Short-term financing of long-lived assets creates, rather than removes, refinancing risk.",
+  );
+
+  // --- Concept 7 ---------------------------------------------------------
+  add(
+    "Cost of sales includes every cost a business incurs during the period, regardless of whether the cost relates directly to the goods sold.",
+    "Cost of sales is limited to direct costs; not every cost incurred belongs there.",
+  );
+  add(
+    "Any cost that benefits the business in some way, even indirectly, belongs within cost of sales.",
+    "Only directly traceable costs belong in cost of sales; indirect benefit is not sufficient.",
+  );
+  add(
+    "Materials physically consumed in manufacturing the units sold are excluded from cost of sales because they are considered an overhead.",
+    "Materials consumed directly in production are a direct cost and belong within cost of sales.",
+  );
+  add(
+    "Because cost of sales includes every departmental cost, functions such as administration and distribution are absorbed into it rather than reported separately.",
+    "Administration and distribution are reported separately, not absorbed into cost of sales.",
+  );
+  add(
+    "Direct labour spent physically producing the goods sold is excluded from cost of sales because wages are always treated as an administrative cost.",
+    "Direct production labour is a core component of cost of sales, not an administrative cost.",
+  );
+
+  // --- Concept 8 ---------------------------------------------------------
+  add(
+    "Gross profit is arrived at by deducting all operating expenses, including distribution and administrative costs, from revenue.",
     "Gross profit only deducts cost of sales from revenue; operating expenses are deducted later.",
   );
   add(
-    "A business's gross profit reflects overall profitability after administration and distribution overheads have already been deducted.",
-    "Gross profit is calculated before, not after, administration and distribution overheads.",
+    "The margin represented by gross profit reflects a business's overall profitability after every overhead cost, including administration, has already been deducted.",
+    "Gross profit is calculated before, not after, overhead costs such as administration are deducted.",
   );
   add(
-    "Distribution costs and general administrative costs are deducted before gross profit is calculated, alongside cost of sales.",
-    "Distribution and administrative costs are deducted after gross profit, not alongside cost of sales.",
+    "Distribution costs and administrative expenses are deducted directly from revenue at the same stage as cost of sales, before gross profit is calculated.",
+    "These costs are deducted after gross profit has already been calculated, not alongside cost of sales.",
   );
   add(
-    "Because gross profit already reflects operating expenses, two businesses with identical gross profit must always report identical operating results.",
-    "Identical gross profit can still lead to different operating results depending on operating expenses.",
+    "Two businesses that report identical gross profit will always end up with identical operating results, regardless of their distribution and administrative costs.",
+    "Identical gross profit does not guarantee identical operating results if operating expenses differ.",
+  );
+  add(
+    "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is deteriorating.",
+    "A widening such gap indicates an improving, not deteriorating, gross profit margin.",
   );
 
+  // --- Concept 9 ---------------------------------------------------------
   add(
-    "The operating result, also referred to as earnings before interest and taxes, is calculated after deducting finance costs and income tax.",
-    "The operating result is calculated before, not after, finance costs and income tax.",
+    "The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have already been deducted.",
+    "The operating result is calculated before, not after, financing costs and income tax.",
   );
   add(
-    "Because the operating result includes finance costs and income tax, it cannot be used to assess a business's core trading performance separately from financing.",
-    "The operating result excludes finance costs and tax, which is exactly why it isolates core trading performance.",
+    "Because the operating result already includes financing costs and income tax, it cannot be used to judge a business's core trading performance separately from financing or tax.",
+    "The operating result excludes financing and tax, which is precisely why it isolates trading performance.",
   );
   add(
-    "Comparing the operating result across several years reveals nothing about a business's core trading performance because it already reflects financing and tax decisions.",
-    "The operating result excludes financing and tax decisions, so its trend reflects core trading performance.",
+    "Tracking the operating result over several years cannot show how a business's core trading is developing, since the figure already reflects changes in interest rates and tax policy.",
+    "The operating result is unaffected by interest rates and tax, so it can show core trading trends over time.",
   );
   add(
-    "Two businesses with the same operating result must always report the same profit for the year regardless of their finance costs or tax rates.",
+    "Two businesses reporting an identical operating result must always end up with identical profit for the year, regardless of their finance costs or tax rates.",
     "Differing finance costs or tax rates can still produce different profit for the year from the same operating result.",
   );
-
   add(
-    "An expenditure and an expense always occur in the same accounting period and therefore mean exactly the same thing.",
-    "Expenditure is a cash outflow while expense is the portion recognised in a period; they can differ in timing.",
-  );
-  add(
-    "Prepaying next year's insurance premium is recognised as a full expense in the income statement of the year it is paid.",
-    "A prepayment becomes an expense only in the period the coverage relates to, not when paid.",
-  );
-  add(
-    "Distinguishing expenditure from expense is unnecessary because every cash outflow is automatically an expense in the period it occurs.",
-    "Not every cash outflow is an expense in the period it occurs; some are spread over future periods.",
-  );
-  add(
-    "A business that makes a substantial expenditure in a given year must recognise the entire amount as an expense in that same year.",
-    "A large expenditure can be recognised as expense gradually over several future years.",
+    "A decline in profit for the year alongside a stable or rising operating result always means that core trading performance has deteriorated.",
+    "A stable operating result alongside falling profit for the year points away from, not toward, deteriorating trading.",
   );
 
+  // --- Concept 10 --------------------------------------------------------
   add(
-    "Tracking revenue over several years provides no indication of whether a business's sales are growing, stagnating or declining.",
-    "Multi-year revenue tracking is exactly how growth, stagnation or decline in sales is identified.",
+    "An expenditure and an expense refer to exactly the same amount recognised in exactly the same accounting period, with no distinction between them.",
+    "Expenditure and expense can differ; expenditure is the outflow, expense is the period-matched portion.",
   );
   add(
-    "A business whose revenue rises every year is automatically improving its profitability, regardless of how its costs are behaving.",
-    "Rising revenue does not guarantee improving profitability if costs are rising even faster.",
+    "Paying in advance for a full year of insurance cover is recognised entirely as an expense at the moment of payment, regardless of which period the cover relates to.",
+    "A prepayment becomes an expense gradually, matched to the periods it covers, not entirely at payment.",
   );
   add(
-    "A single year's strong sales figure is a more reliable signal of business health than consistent revenue growth over multiple years.",
-    "Sustained multi-year growth is a more reliable signal than one strong year alone.",
+    "A single large expenditure must always be recognised entirely as an expense within the same accounting period in which it occurs.",
+    "Expenditure can be spread over future periods as expense rather than recognised all at once.",
   );
   add(
-    "A sudden jump in revenue in one year should always be assumed to reflect a permanent improvement in underlying demand.",
-    "A one-year revenue jump warrants closer examination rather than an assumption of permanence.",
-  );
-
-  add(
-    "Comparing the growth rate of revenue with the growth rate of cost of sales over successive years reveals nothing about production efficiency.",
-    "Comparing revenue and cost of sales growth rates is exactly how changes in production efficiency are revealed.",
+    "The distinction between expenditure and expense is irrelevant because a business's cash outflow for a year is always identical to its reported expenses for that year.",
+    "Cash outflow and reported expense for a year often differ, which is exactly why the distinction matters.",
   );
   add(
-    "A business whose cost of sales rises broadly in line with its revenue will typically see its gross profit margin swing wildly from year to year.",
-    "Cost of sales rising in line with revenue tends to keep the gross profit margin stable, not volatile.",
-  );
-  add(
-    "If revenue grows while cost of sales grows more slowly, a business's gross profit margin will narrow over that period.",
-    "Revenue outpacing cost of sales growth widens, rather than narrows, the gross profit margin.",
-  );
-  add(
-    "Examining how revenue and cost of sales move together over time provides no explanation for changes in a business's gross profit margin.",
-    "Joint examination of revenue and cost of sales trends is exactly what explains gross profit margin changes.",
+    "Buying an asset that will be used for several years results in its entire cost becoming an expense in the year of purchase.",
+    "Only part of a multi-year asset's cost becomes expense in the year of purchase; the rest is spread forward.",
   );
 
-  // --- Templated statements ------------------------------------------------
+  // --- Concept 11 --------------------------------------------------------
+  add(
+    "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years reveals nothing about how efficiently a business produces what it sells.",
+    "This comparison is exactly what reveals changing production efficiency.",
+  );
+  add(
+    "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will narrow across that period.",
+    "Slower cost of sales growth relative to revenue widens, rather than narrows, the margin.",
+  );
+  add(
+    "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin improve steadily over time.",
+    "Cost of sales outpacing revenue growth puts pressure on, rather than improves, the margin.",
+  );
+  add(
+    "Stable growth in both revenue and cost of sales at similar rates tends to make a business's gross profit margin swing wildly from year to year.",
+    "Similar growth rates in revenue and cost of sales tend to stabilise, not destabilise, the margin.",
+  );
+  add(
+    "Rising revenue figures alone always guarantee improving profitability, regardless of how quickly cost of sales is rising.",
+    "Rising revenue alone does not guarantee improving profitability if costs rise faster still.",
+  );
 
+  // --- Concept 12 --------------------------------------------------------
+  add(
+    "Reading the balance sheet and income statement together adds nothing beyond what studying either statement on its own would already reveal.",
+    "Reading both statements together reveals more than studying either one alone.",
+  );
+  add(
+    "A strong profit for the year shown in the income statement guarantees that the balance sheet will also show a strong financing position.",
+    "Strong reported profit does not guarantee a strong balance sheet financing position.",
+  );
+  add(
+    "Changes in working capital shown on the balance sheet have no bearing on why cash movements might differ from the profit for the year reported in the income statement.",
+    "Working capital changes are exactly what help explain such differences.",
+  );
+  add(
+    "Judging a business's overall financial health can be done reliably by looking at the income statement alone, without any reference to the balance sheet.",
+    "Reliable judgement requires weighing both statements, not the income statement in isolation.",
+  );
+  add(
+    "A business cannot report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, since the two always move in the same direction.",
+    "Profit and balance sheet strength can move in different directions, so both need checking.",
+  );
+
+  // --- Templated Set A: financing mix / asset mix by business type ------------
   for (let i = 0; i < bizTypes.length; i++) {
     const biz = bizTypes[i];
     const nc = assetNC[i];
@@ -823,92 +931,96 @@ function buildFalsePool() {
     const lc = liabC[i];
 
     add(
-      `${cap(biz)} is considered financially sound when its ${nc} are financed mainly through ${lc}, since short-term liabilities are cheaper to arrange.`,
-      `Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.`,
+      `${cap(biz)} is regarded as financing its ${nc} soundly only when they are covered mainly by ${lc}.`,
+      `Covering long-term assets mainly with current liabilities is considered risky, not sound financing.`,
     );
     add(
-      `The mix of ${nc} and ${ca} on ${biz}'s balance sheet has no bearing on how capital-intensive the business is.`,
-      `The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.`,
-    );
-    add(
-      `If ${biz}'s retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.`,
-      `With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.`,
+      `The balance between ${nc} and ${ca} on ${biz}'s statements has no bearing on whether the business is becoming more or less capital-intensive.`,
+      `The asset mix directly reflects capital intensity; the balance is not irrelevant.`,
     );
   }
 
+  // --- Templated Set B: cost of sales exclusions by role -----------------------
   for (let i = 0; i < staffRoles.length; i++) {
     const biz = bizTypes[i];
     const staff = staffRoles[i];
-    const shipping = shippingRoles[i];
+    const ship = shipRoles[i];
     const sales = salesRoles[i];
     const direct = directCosts[i];
 
     add(
-      `The pay of ${staff} is included within cost of sales because every employee ultimately contributes to a business's output.`,
-      `Only direct production costs belong in cost of sales; administrative pay is excluded regardless of overall contribution.`,
+      `The wages of ${staff} are included within cost of sales because every employee contributes in some way to the goods that are sold.`,
+      `Only direct production costs belong in cost of sales; general contribution is not enough.`,
     );
     add(
-      `Wages earned by ${shipping} are included within cost of sales because delivering the product is considered part of production.`,
-      `Delivery activity happens after production and is a distribution cost, not cost of sales.`,
+      `Pay earned by ${ship} is included within cost of sales because moving finished goods is considered part of manufacturing them.`,
+      `Distribution activity occurs after production and belongs outside cost of sales.`,
     );
     add(
-      `Compensation paid to ${sales} is included within cost of sales because selling is necessary to generate revenue.`,
-      `Selling costs are operating expenses incurred after production, not cost of sales.`,
+      `Amounts paid to ${sales} are included within cost of sales because generating sales is necessary before any revenue can be recognised.`,
+      `Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.`,
     );
     add(
-      `${cap(direct)} are excluded from cost of sales because only cash payments count as production costs.`,
-      `Cost of sales includes all direct production costs regardless of the timing of any related cash payment.`,
-    );
-    add(
-      `For ${biz}, cost of sales includes administrative and selling costs because all costs eventually relate to sales.`,
-      `Administrative and selling costs are excluded from cost of sales and reported separately.`,
+      `${cap(direct)} are excluded from cost of sales because only costs paid in cash during the same month count toward it.`,
+      `Cost of sales includes direct production costs regardless of the timing of any related cash payment.`,
     );
   }
 
+  // --- Templated Set C: expenditure versus expense on capital items -------------
   for (let i = 0; i < capexItems.length; i++) {
     const item = capexItems[i];
     const biz = bizTypes[i];
 
     add(
-      `Buying ${item} is fully recorded as an expense in the income statement in the year of purchase, regardless of how many years the asset will be used.`,
-      `The cost of a long-lived asset is spread over its useful life as depreciation, not expensed entirely upfront.`,
+      `When ${biz} buys ${item}, the full purchase price becomes an expense in that period's income statement immediately, regardless of how many years the asset will be used.`,
+      `The cost of a multi-year asset is spread as depreciation, not expensed entirely at purchase.`,
     );
     add(
-      `Every expenditure ${biz} makes during the year must appear as an expense in that same year's income statement.`,
-      `Capital expenditures are matched to future periods through depreciation rather than expensed immediately.`,
+      `Every expenditure ${biz} makes during a year must show up in full as an expense in that same year's income statement.`,
+      `Capital expenditures are matched to future periods through depreciation, not expensed immediately in full.`,
     );
   }
 
+  // --- Templated Set D: gross profit / margin trend by business type ------------
   for (let i = 0; i < bizTypes.length; i++) {
     const biz = bizTypes[i];
 
     add(
-      `${cap(biz)}'s gross profit is found by deducting all operating expenses, including distribution and administrative costs, from revenue.`,
-      `Gross profit only deducts cost of sales from revenue; operating expenses are deducted later to reach the operating result.`,
+      `${cap(biz)}'s gross profit is calculated by deducting distribution costs, administrative costs and other operating items from revenue, alongside cost of sales.`,
+      `Gross profit only deducts cost of sales; other operating items are deducted later.`,
     );
     add(
-      `${cap(biz)}'s operating result, also referred to as earnings before interest and taxes, already includes finance costs and income tax, so it represents the final profit for the year.`,
-      `The operating result excludes finance costs and income tax; profit for the year is the figure after those deductions.`,
-    );
-    add(
-      `If ${biz}'s cost of sales grows faster than its revenue over several years, its gross profit margin will automatically widen because more goods are being produced.`,
-      `Faster cost of sales growth relative to revenue narrows, not widens, the gross profit margin.`,
+      `If ${biz}'s cost of sales grows faster than its revenue over several years, its gross profit margin will widen because output has increased.`,
+      `Faster cost of sales growth relative to revenue narrows, not widens, the margin.`,
     );
   }
 
-  if (pool.length < 150) throw new Error(`FALSE pool only ${pool.length}, need 150`);
+  if (pool.length < 120) throw new Error(`FALSE pool only ${pool.length}, need 120`);
   return pool;
 }
 
 const TRUE = buildTruePool();
 const FALSE = buildFalsePool();
 
-console.log("Pools:", TRUE.length, "TRUE,", FALSE.length, "FALSE,", SCENE.length, "SCENE,", THEORY.length, "THEORY,", TITLES.length, "TITLES");
+console.log(
+  "Pools:",
+  TRUE.length,
+  "TRUE,",
+  FALSE.length,
+  "FALSE,",
+  SCENE.length,
+  "SCENE,",
+  THEORY.length,
+  "THEORY,",
+  TITLES.length,
+  "TITLES",
+);
 
-if (slots.length !== 50) throw new Error(`expected 50 text slots, got ${slots.length}`);
-if (SCENE.length < 15) throw new Error(`SCENE pool only ${SCENE.length}, need >= 15`);
-if (THEORY.length < 40) throw new Error(`THEORY pool only ${THEORY.length}, need >= 40`);
+if (slots.length < 20) throw new Error(`expected text slots, got ${slots.length}`);
+if (SCENE.length < 10) throw new Error(`SCENE pool only ${SCENE.length}`);
+if (THEORY.length < 20) throw new Error(`THEORY pool only ${THEORY.length}`);
 if (TITLES.length < 50) throw new Error(`TITLES need >= 50, got ${TITLES.length}`);
+if (sceneIndices.length < 8) throw new Error(`sceneIndices too short: ${sceneIndices.length}`);
 
 const cases = buildCases({
   subsection: "6.3",

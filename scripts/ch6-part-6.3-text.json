@@ -2,28 +2,28 @@
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.001",
-    "title": "Reading Financial Statements Cautiously in Practice",
-    "context": "Analyze how a single year's balance sheet or income statement can be misleading without wider context. Evaluate the following economic assertions:",
+    "title": "Reading Financial Statements With Caution in Practice",
+    "context": "Analyze why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
     "statements": [
-      "A single year's balance sheet or income statement rarely tells the full story about a business, so the figures are best interpreted alongside additional context rather than read in isolation.",
-      "Because published financial statements condense complex operations into a handful of line items, readers should interpret the figures cautiously rather than draw firm conclusions from any single number.",
-      "A single year's balance sheet or income statement always tells the full story about a business, so no other years or comparisons are ever needed.",
-      "A rise in profit for the year does not by itself prove that a business is being managed well, since the improvement could stem from a one-off item rather than from the core operations.",
-      "Because financial statements present exact figures, readers never need to interpret them cautiously or look for additional explanation."
+      "A business's balance sheet and income statement for a single year should be read cautiously, since one year's figures alone can create a misleading impression of overall performance.",
+      "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn.",
+      "An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat.",
+      "Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained.",
+      "A business's balance sheet and income statement for a single year can always be trusted on their own, since one year's figures alone give a complete impression of overall performance."
     ],
     "answer_key": [
       true,
       true,
-      false,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Figures from one year alone lack context, so readers should look beyond a single year before drawing conclusions.",
-      "TRUE — Summarised statements can hide detail, so single figures deserve cautious interpretation.",
-      "FALSE — A single year's figures rarely tell the full story; wider context and comparison are needed.",
-      "TRUE — A profit increase may come from a one-off gain rather than genuinely improved management.",
-      "FALSE — Summarised figures still require cautious interpretation and often benefit from additional explanation."
+      "TRUE — One year's figures alone can mislead, so cautious reading is required before drawing conclusions.",
+      "TRUE — Summarising a year's trading into totals can hide detail that matters for a fair conclusion.",
+      "TRUE — A profit improvement can come from a non-recurring event rather than better ongoing trading.",
+      "TRUE — Explanatory notes often clarify what the main financial statements alone cannot fully explain.",
+      "FALSE — One year's figures alone can mislead; caution and wider context are needed before drawing conclusions."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -32,344 +32,164 @@
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.002",
-    "title": "Reading Financial Statements Cautiously Explained",
-    "context": "Analyze why comparing financial statements across several years reveals trends invisible in one year alone. Evaluate the following economic assertions:",
+    "title": "Reading Financial Statements With Caution Explained",
+    "context": "Analyze how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
     "statements": [
-      "A rise in profit for the year always proves that a business is being managed well, regardless of whether the improvement stems from a one-off item.",
-      "Notes accompanying the financial statements are optional extras that never explain movements shown in the main balance sheet and income statement.",
-      "A single year's balance sheet and income statement reveal every trend in a business's performance without needing figures from other years.",
-      "Notes accompanying the financial statements often explain unusual movements that the main balance sheet and income statement alone do not make clear.",
-      "Tracking revenue, cost of sales and profit for the year over multiple years adds no useful information beyond what one year's figures already show."
+      "A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself.",
+      "Placing several years of a business's balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year.",
+      "Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business's performance is heading.",
+      "Comparing successive balance sheets shows whether a business's asset base and its sources of finance are expanding, contracting or holding steady over time.",
+      "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought."
     ],
     "answer_key": [
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — A profit rise can stem from a one-off item rather than genuinely improved management.",
-      "FALSE — Notes often explain unusual movements that the main statements alone do not make clear.",
-      "FALSE — Trends only become visible when several years of figures are compared, not from one year alone.",
-      "TRUE — Supporting notes provide context that the main statements alone cannot always convey.",
-      "FALSE — Multi-year tracking reveals trends that a single year's figures cannot show."
+      "TRUE — A single figure should prompt further inquiry rather than serve as a final conclusion.",
+      "TRUE — Multi-year comparison reveals trends invisible within any one year's figures alone.",
+      "TRUE — Multi-period tracking of key results shows the direction of a business's performance.",
+      "TRUE — Successive balance sheet comparison shows whether assets and financing are expanding, contracting or stable.",
+      "FALSE — Summarising into totals can hide detail, so additional information is often still needed."
     ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.003",
-    "title": "Reading Financial Statements Cautiously for Analysts",
-    "context": "Consider a construction contractor whose finance director is benchmarking the company's balance sheet against those of rival firms in the same region. Evaluate the following economic assertions:",
-    "statements": [
-      "Comparing a business's balance sheet and income statement across several years reveals trends that a single year's figures cannot show on their own.",
-      "Tracking revenue, cost of sales and profit for the year over multiple years helps show whether a business's performance is improving or deteriorating.",
-      "A year-on-year comparison of the balance sheet can reveal whether a business's asset base and financing structure are expanding or contracting over time.",
-      "Reviewing several consecutive years of financial statements helps distinguish a temporary fluctuation from a lasting change in a business's performance.",
-      "Comparing a business's financial statements with those of similar businesses in the same industry provides a benchmark for judging whether its results are strong or weak."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Multi-year comparison exposes trends hidden within any single year's figures.",
-      "TRUE — Multi-year tracking of key figures reveals the direction of a business's performance.",
-      "TRUE — Comparing balance sheets year on year shows whether assets and financing are growing or shrinking.",
-      "TRUE — Multiple years of data help separate a one-off blip from a genuine, lasting change.",
-      "TRUE — Industry peers provide the benchmark needed to judge whether results are strong or weak."
-    ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.004",
-    "title": "Reading Financial Statements Cautiously Over Time",
-    "context": "Analyze how the balance between current and non-current assets reflects a business's capital intensity. Evaluate the following economic assertions:",
+    "title": "Reading Financial Statements With Caution for Analysts",
+    "context": "Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:",
     "statements": [
-      "A year-on-year comparison of the balance sheet cannot reveal anything about whether a business's asset base or financing structure is changing.",
-      "A profit figure that looks impressive when viewed alone may appear only ordinary once it is compared with the results of similar businesses in the same industry.",
-      "Industry benchmarks allow analysts to judge whether a business's asset structure or profitability is typical for its sector rather than exceptional or weak.",
-      "Reviewing several consecutive years of financial statements makes it harder, not easier, to distinguish a temporary fluctuation from a lasting change.",
-      "Comparing a business's financial statements with those of similar businesses in the same industry provides no useful benchmark for judging its results."
+      "Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+      "A trend that persists across three or more reporting periods carries more weight than a single period's outcome when judging a business's direction of travel.",
+      "Judging whether a business's results are strong or weak is more reliable when its figures are set alongside those of comparable businesses in the same industry.",
+      "A profit margin that appears strong when viewed in isolation may turn out to be unremarkable once measured against the margins earned by similar businesses.",
+      "Sector-wide benchmarks help determine whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out."
     ],
     "answer_key": [
-      false,
       true,
       true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Year-on-year balance sheet comparison is exactly how changes in assets and financing are detected.",
-      "TRUE — Context from comparable businesses can turn an apparently impressive figure into an ordinary one.",
-      "TRUE — Sector benchmarks show whether results are typical, exceptional or weak for that industry.",
-      "FALSE — More years of data make it easier, not harder, to separate a blip from a lasting change.",
-      "FALSE — Industry comparisons are exactly the benchmark used to judge whether results are strong or weak."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.005",
-    "title": "Reading Financial Statements Cautiously in Context",
-    "context": "Analyze how the source of growth in equity, retained earnings versus new share capital, reveals a business's financing pattern. Evaluate the following economic assertions:",
-    "statements": [
-      "A profit figure that looks impressive when viewed alone remains equally impressive once compared with similar businesses in the same industry.",
-      "Reading a business's financial statements alongside those of its competitors helps reveal whether its performance reflects the whole industry or is specific to that business.",
-      "Industry benchmarks are irrelevant to judging whether a business's asset structure or profitability is typical for its sector.",
-      "The proportion of a business's total assets held as non-current assets compared with current assets indicates how capital-intensive its operations are.",
-      "A business with a high share of current assets relative to non-current assets tends to hold more resources that can be turned into cash within a year."
-    ],
-    "answer_key": [
-      false,
       true,
-      false,
       true,
       true
     ],
     "tactical_explanations": [
-      "FALSE — A seemingly impressive figure can look merely ordinary once compared with industry peers.",
-      "TRUE — Comparing with competitors clarifies whether a result is industry-wide or company-specific.",
-      "FALSE — Industry benchmarks are precisely what shows whether results are typical for the sector.",
-      "TRUE — The non-current versus current asset split signals how capital-intensive a business is.",
-      "TRUE — A current-asset-heavy structure means more resources are convertible into cash within a year."
+      "TRUE — Several consecutive years help distinguish a temporary blip from a lasting change.",
+      "TRUE — A trend persisting across several periods is more meaningful than one period's outcome alone.",
+      "TRUE — Comparable industry figures provide the benchmark for judging whether results are strong or weak.",
+      "TRUE — An apparently strong margin can look unremarkable once benchmarked against similar businesses.",
+      "TRUE — Sector benchmarks reveal whether a business's results are ordinary or exceptional for its industry."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.006",
-    "title": "Comparing Results Across Years in Practice",
-    "context": "Analyze why non-current assets are best financed by equity and non-current liabilities rather than short-term borrowing. Evaluate the following economic assertions:",
+    "title": "Reading Financial Statements With Caution Over Time",
+    "context": "Analyze how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:",
     "statements": [
-      "Analyzing the split between current and non-current assets on the balance sheet helps explain how a business ties up its resources.",
-      "A rising share of non-current assets over successive years may indicate that a business is investing more heavily in long-term production capacity.",
-      "Reading a business's financial statements alongside its competitors' statements never helps explain whether its performance is industry-wide or specific to that business.",
-      "Comparing share capital and retained earnings over time shows whether growth in equity stems from new owner contributions or from the accumulation of prior profits.",
-      "A business's financing mix, meaning the balance between equity and the various liabilities on its balance sheet, can be examined by tracking its composition over successive years."
+      "Comparing a business's statements with those of its direct competitors can reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.",
+      "An improvement in profit for the year always reflects stronger underlying trading, since one-off events never affect the reported profit figure.",
+      "Reading the explanatory notes that accompany a balance sheet and income statement never adds anything beyond what the main statements alone already show.",
+      "Without a suitable point of comparison, a reader has no reliable way of judging whether a given profit margin counts as good or poor performance.",
+      "The relative weight of non-current assets against current assets on a business's balance sheet gives an indication of how capital-intensive its operations are."
     ],
     "answer_key": [
       true,
-      true,
+      false,
       false,
       true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — The current versus non-current split explains how a business's resources are tied up.",
-      "TRUE — A growing non-current asset share can signal heavier long-term investment.",
-      "FALSE — Comparing with competitors helps distinguish industry-wide trends from company-specific results.",
-      "TRUE — Tracking share capital versus retained earnings reveals the source of equity growth.",
-      "TRUE — The financing mix of equity and liabilities can be tracked over successive balance sheets."
+      "TRUE — Competitor comparison distinguishes industry-wide changes from company-specific ones.",
+      "FALSE — One-off events can and do affect reported profit, so an improvement need not reflect better trading.",
+      "FALSE — Explanatory notes frequently add clarification that the main statements alone do not provide.",
+      "TRUE — Without a comparison point, judging whether a margin is good or poor is unreliable.",
+      "TRUE — The non-current versus current asset balance indicates the capital intensity of operations."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.007",
-    "title": "Comparing Results Across Years Explained",
-    "context": "Consider a food processing company whose accountant is explaining the difference between cash spent on new equipment and the expense recognised in the income statement. Evaluate the following economic assertions:",
+    "title": "Reading Financial Statements With Caution in Context",
+    "context": "Analyze how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:",
     "statements": [
-      "An increase in equity that comes mainly from retained earnings rather than new share capital indicates that a business is financing its growth internally.",
-      "Reviewing how a business's equity has developed over several years reveals whether it relies more on retained profit or on external owner contributions for growth.",
-      "The proportion of a business's total assets held as non-current versus current assets says nothing about how capital-intensive its operations are.",
-      "A business with a high share of current assets relative to non-current assets tends to hold fewer resources that can be quickly converted into cash.",
-      "Non-current assets are considered adequately financed when their value is covered by the sum of equity and non-current liabilities."
+      "A business holding a larger share of its resources in current assets typically has more of its wealth available for conversion into cash within the coming year.",
+      "Studying how the balance between current and non-current assets shifts over time helps explain how a business is choosing to deploy its resources.",
+      "A cautious reader treats any single figure drawn from the financial statements as a final conclusion in itself, with no need for further inquiry.",
+      "An increasing share of non-current assets over successive years can point to a business committing more heavily to long-term productive capacity.",
+      "Businesses in capital-intensive industries tend to carry a heavier weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
     ],
     "answer_key": [
       true,
       true,
       false,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Equity growth driven by retained earnings rather than new shares reflects internal financing.",
-      "TRUE — Multi-year equity review shows reliance on retained profit versus external contributions.",
-      "FALSE — The non-current versus current asset split is a direct indicator of capital intensity.",
-      "FALSE — A higher share of current assets means more, not fewer, resources convertible into cash quickly.",
-      "TRUE — Non-current assets are adequately financed when covered by equity plus non-current liabilities."
+      "TRUE — More current assets relative to non-current assets means more resources convertible into cash soon.",
+      "TRUE — Shifts in the current versus non-current asset balance reveal how resources are being deployed.",
+      "FALSE — A single figure is a starting point for inquiry, not a final conclusion on its own.",
+      "TRUE — A rising non-current asset share can signal greater commitment to long-term capacity.",
+      "TRUE — Capital-intensive industries tend to carry more non-current assets relative to current assets."
     ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.008",
-    "title": "Comparing Results Across Years for Analysts",
-    "context": "Analyze why administrative, distribution and selling costs are excluded from cost of sales. Evaluate the following economic assertions:",
-    "statements": [
-      "Analyzing the split between current and non-current assets on the balance sheet provides no insight into how a business ties up its resources.",
-      "Financing non-current assets primarily with long-term sources of capital, rather than short-term borrowing, is regarded as financially sound practice.",
-      "A rising share of non-current assets over successive years always indicates declining investment in long-term production capacity.",
-      "Comparing share capital and retained earnings over time can never reveal whether equity growth stems from new owner contributions or accumulated profit.",
-      "A business's financing mix, meaning the balance between equity and liabilities, cannot be examined by tracking its balance sheet composition over time."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — The current versus non-current split is precisely what shows how resources are tied up.",
-      "TRUE — Long-term financing of long-term assets is regarded as sound financial practice.",
-      "FALSE — A rising non-current asset share typically signals more, not less, long-term investment.",
-      "FALSE — Comparing share capital and retained earnings is exactly how the source of equity growth is revealed.",
-      "FALSE — Tracking balance sheet composition over time is precisely how the financing mix is examined."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.009",
-    "title": "Comparing Results Across Years Over Time",
-    "context": "Analyze how gross profit is calculated before operating expenses are deducted from revenue. Evaluate the following economic assertions:",
-    "statements": [
-      "An increase in equity that comes mainly from retained earnings rather than new share capital indicates that new capital has been contributed by the owners.",
-      "Reviewing how a business's equity has developed over several years reveals nothing about whether it relies on retained profit or external contributions.",
-      "If non-current assets exceed the combined total of equity and non-current liabilities, part of those long-term assets is being financed by current liabilities, which is considered risky.",
-      "Non-current assets are considered adequately financed only when their value is covered entirely by current liabilities.",
-      "Financing non-current assets primarily with short-term borrowing rather than long-term capital is regarded as the financially sound approach."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — If share capital is unchanged, equity growth must come from retained earnings, not new capital.",
-      "FALSE — Multi-year equity review is exactly how reliance on retained profit versus external contributions is judged.",
-      "TRUE — Non-current assets exceeding equity plus non-current liabilities implies risky short-term financing of long-term assets.",
-      "FALSE — Non-current assets are adequately financed when covered by equity and non-current liabilities, not current liabilities.",
-      "FALSE — Financing long-term assets mainly with short-term borrowing is considered risky, not sound."
-    ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.010",
-    "title": "Comparing Results Across Years in Context",
-    "context": "Analyze why the operating result, also known as earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
+    "title": "Comparing Results Across Several Years in Practice",
+    "context": "Analyze why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:",
     "statements": [
-      "Long-term investments such as buildings and machinery are best matched with long-term sources of finance rather than short-term credit that must soon be repaid.",
-      "Cost of sales comprises the direct costs of producing or acquiring the goods that a business has sold, such as materials and direct production labour.",
-      "Cost of sales is limited to the direct costs of production, so administrative overheads and selling expenses appear elsewhere in the income statement.",
-      "The cost of raw materials consumed in manufacturing the goods sold forms part of cost of sales, unlike costs incurred after production is complete.",
-      "Because cost of sales captures only direct production costs, a business's administrative and distribution functions are reported separately further down the income statement."
+      "Placing several years of a business's balance sheets and income statements side by side reveals nothing beyond what a single year's figures already show.",
+      "Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business's performance is heading.",
+      "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit.",
+      "Tracking share capital and retained earnings separately over successive years shows whether a business's equity growth has come from owner contributions or from accumulated profit.",
+      "Comparing successive balance sheets provides no way of telling whether a business's asset base or sources of finance are expanding, contracting or holding steady."
     ],
     "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Long-term assets should be matched with long-term finance, not short-term credit.",
-      "TRUE — Cost of sales is limited to direct production or acquisition costs such as materials and direct labour.",
-      "TRUE — Administrative and selling expenses sit outside cost of sales, further down the income statement.",
-      "TRUE — Raw materials consumed in production belong in cost of sales; post-production costs do not.",
-      "TRUE — Direct-cost-only cost of sales means administration and distribution are reported separately."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.011",
-    "title": "Benchmarking Against Competitors in Practice",
-    "context": "Consider a textile manufacturer whose board is discussing how the split between current and non-current assets has changed since the factory was expanded. Evaluate the following economic assertions:",
-    "statements": [
-      "Gross profit is calculated by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are subtracted.",
-      "A business's gross profit reflects the margin earned on producing and selling goods before overheads such as administration and distribution are considered.",
-      "Distribution costs and general administrative costs are deducted after gross profit has already been calculated, on the way to the operating result.",
-      "Because gross profit is calculated before operating expenses, two businesses with identical gross profit can still end up with very different operating results.",
-      "The operating result, also referred to as earnings before interest and taxes, measures profit generated from a business's core operations before financing costs and income tax are taken into account."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Gross profit equals revenue minus cost of sales, ahead of any operating expense deductions.",
-      "TRUE — Gross profit reflects the production and selling margin before overheads are deducted.",
-      "TRUE — Distribution and administrative costs are deducted after gross profit, on the way to the operating result.",
-      "TRUE — Identical gross profit can still lead to different operating results depending on operating expenses.",
-      "TRUE — The operating result, also called earnings before interest and taxes, excludes financing costs and income tax."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.012",
-    "title": "Benchmarking Against Competitors Explained",
-    "context": "Analyze how the relative growth of revenue and cost of sales over time affects a business's gross profit margin. Evaluate the following economic assertions:",
-    "statements": [
-      "Because the operating result excludes finance costs and income tax, it allows the core trading performance of a business to be assessed separately from how it is financed or taxed.",
-      "Comparing the operating result across several years shows how a business's core trading performance is developing independently of financing decisions or tax rates.",
-      "If non-current assets exceed the combined total of equity and non-current liabilities, this is always a sign of prudent financial management.",
-      "Two businesses with the same operating result can end up with different profit for the year if their finance costs or tax rates differ.",
-      "An expenditure represents an outflow of cash or resources, whereas an expense represents the portion of that outflow recognised in the income statement as relating to the current period."
-    ],
-    "answer_key": [
-      true,
-      true,
+      false,
       false,
       true,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Excluding finance costs and tax lets the operating result show core trading performance alone.",
-      "TRUE — Multi-year operating result comparison isolates trading performance from financing and tax choices.",
-      "FALSE — Non-current assets exceeding equity plus non-current liabilities signals risky, not prudent, financing.",
-      "TRUE — Equal operating results can still lead to different profit for the year due to financing or tax differences.",
-      "TRUE — Expenditure is the outflow itself; expense is the portion recognised for the current period."
+      "FALSE — Multi-year comparison reveals trends that a single year's figures cannot show.",
+      "FALSE — Tracking key results over several periods is exactly how a performance direction is identified.",
+      "TRUE — Equity growth from rising retained earnings with static share capital reflects internal funding.",
+      "TRUE — Separate tracking of share capital and retained earnings reveals the source of equity growth.",
+      "FALSE — Successive balance sheet comparison is precisely how such changes are detected."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.013",
-    "title": "Benchmarking Against Competitors for Analysts",
-    "context": "Review how a single year's balance sheet or income statement can be misleading without wider context. Evaluate the following economic assertions:",
+    "title": "Comparing Results Across Several Years Explained",
+    "context": "Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:",
     "statements": [
-      "Prepaying next year's insurance premium is an expenditure in the current year, but it only becomes an expense once the coverage period it relates to has passed.",
-      "Distinguishing expenditure from expense matters because a large cash outflow in one year can be spread across several years' worth of expense recognition.",
-      "A business can make a substantial expenditure in a given year while recognising only a small portion of it as an expense in that year's income statement.",
-      "Tracking revenue over several years shows whether a business's sales are growing, stagnating or declining.",
-      "A business whose revenue rises every year is not necessarily improving profitability, since its costs could be rising even faster."
+      "A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues.",
+      "The pattern of a business's equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy.",
+      "If share capital has remained unchanged for several years while equity has still grown, retained earnings must account for the entire increase.",
+      "A business is considered to be financing its non-current assets soundly when their total value does not exceed the combined total of equity and non-current liabilities.",
+      "Relying on long-term sources of finance, rather than short-term borrowing that must soon be renewed, is regarded as the prudent way to fund long-lived assets."
     ],
     "answer_key": [
       true,
@@ -379,281 +199,101 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — A prepayment is an expenditure now but becomes an expense only in the period it covers.",
-      "TRUE — One large expenditure can translate into expense recognised over several future years.",
-      "TRUE — A large expenditure need not translate into a large expense in the same year.",
-      "TRUE — Multi-year revenue tracking reveals whether sales are growing, stagnating or declining.",
-      "TRUE — Rising revenue alone does not guarantee improving profitability if costs rise faster still."
+      "TRUE — Retained-earnings-driven equity growth relies less on outside investors than share-issue-driven growth.",
+      "TRUE — The pattern of equity growth over time reveals a business's financing strategy.",
+      "TRUE — Unchanged share capital plus rising equity means retained earnings account for the increase.",
+      "TRUE — Non-current assets covered by equity plus non-current liabilities reflects sound long-term financing.",
+      "TRUE — Long-term financing of long-lived assets is regarded as the financially prudent approach."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.014",
-    "title": "Benchmarking Against Competitors Over Time",
-    "context": "Review why comparing financial statements across several years reveals trends invisible in one year alone. Evaluate the following economic assertions:",
+    "title": "Comparing Results Across Several Years for Analysts",
+    "context": "Analyze how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:",
     "statements": [
-      "Consistent revenue growth over multiple years is a more reliable signal of business health than a single year's strong sales figure.",
-      "A sudden jump in revenue in one year deserves closer examination before assuming that a business's underlying demand has permanently improved.",
-      "Long-term investments such as buildings and machinery are best matched with short-term credit that must soon be repaid.",
-      "Comparing the growth rate of revenue with the growth rate of cost of sales over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
-      "A business whose cost of sales rises broadly in line with its revenue is likely to maintain a stable gross profit margin from one year to the next."
+      "Looking at several consecutive years of results makes it harder to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+      "A trend that persists across three or more reporting periods carries no more weight than a single period's outcome when judging a business's direction of travel.",
+      "When non-current assets exceed the sum of equity and non-current liabilities, part of those long-term assets must be financed by current liabilities, which increases financial risk.",
+      "Judging whether a business's results are strong or weak is unaffected by whether its figures are set alongside those of comparable businesses in the same industry.",
+      "Matching the expected life of an asset with the maturity of the finance used to fund it is a widely accepted principle of sound financial management."
     ],
     "answer_key": [
-      true,
-      true,
+      false,
       false,
       true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Sustained multi-year growth is a more reliable health signal than one strong year.",
-      "TRUE — A one-year revenue jump warrants scrutiny before assuming a lasting demand improvement.",
-      "FALSE — Long-term assets are best matched with long-term finance, not short-term credit.",
-      "TRUE — Comparing revenue growth with cost of sales growth reveals changing production efficiency.",
-      "TRUE — Cost of sales rising in step with revenue tends to keep the gross profit margin stable."
+      "FALSE — More years of data make this distinction easier, not harder, to draw.",
+      "FALSE — A persistent multi-period trend is more meaningful than a single period's outcome.",
+      "TRUE — Non-current assets exceeding equity plus non-current liabilities implies risky reliance on current liabilities.",
+      "FALSE — Comparison with comparable businesses is exactly what allows strong or weak results to be identified.",
+      "TRUE — Matching asset life to financing maturity is a widely accepted sound-finance principle."
     ],
     "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.015",
-    "title": "Benchmarking Against Competitors in Context",
-    "context": "Consider a wholesale hardware supplier whose accountant is walking new staff through the difference between cost of sales and the operating expenses reported below it. Evaluate the following economic assertions:",
-    "statements": [
-      "If revenue grows while cost of sales grows more slowly, a business's gross profit margin will widen over that period.",
-      "Examining how revenue and cost of sales move together over time helps explain changes in a business's gross profit margin.",
-      "A furniture manufacturer is regarded as financing its factory buildings soundly when their value is covered by equity together with a long-term bank loan.",
-      "Tracking the proportion of factory buildings against inventory on a furniture manufacturer's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "If a furniture manufacturer's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Revenue outpacing cost of sales growth widens the gross profit margin.",
-      "TRUE — Joint examination of revenue and cost of sales trends explains gross profit margin changes.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.016",
-    "title": "The Current and Non-Current Asset Mix in Practice",
-    "context": "Review how the balance between current and non-current assets reflects a business's capital intensity. Evaluate the following economic assertions:",
-    "statements": [
-      "Cost of sales includes every cost a business incurs, from production through to administration and delivery.",
-      "Cost of sales covers administrative overheads and selling expenses in addition to the direct costs of production.",
-      "A supermarket chain is regarded as financing its production machinery soundly when their value is covered by equity together with bonds payable.",
-      "The cost of raw materials consumed in manufacturing the goods sold is excluded from cost of sales because it is a production cost.",
-      "Tracking the proportion of production machinery against trade receivables on a supermarket chain's balance sheet over several years shows whether the business is becoming more or less capital-intensive."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Cost of sales is limited to direct production costs; administration and delivery sit elsewhere.",
-      "FALSE — Administrative overheads and selling expenses are excluded from cost of sales.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "FALSE — Raw materials consumed in production are a direct cost and belong within cost of sales.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.017",
-    "title": "The Current and Non-Current Asset Mix Explained",
-    "context": "Review how the source of growth in equity, retained earnings versus new share capital, reveals a business's financing pattern. Evaluate the following economic assertions:",
-    "statements": [
-      "Because cost of sales captures every departmental cost, a business's administrative and distribution functions are reported within it rather than separately.",
-      "If a supermarket chain's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "A construction contractor is regarded as financing its office equipment soundly when their value is covered by equity together with a long-term lease liability.",
-      "Gross profit is calculated by deducting all operating expenses, including distribution and administrative costs, from revenue.",
-      "A business's gross profit reflects overall profitability after administration and distribution overheads have already been deducted."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Administrative and distribution costs are reported separately from cost of sales, not within it.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "FALSE — Gross profit only deducts cost of sales from revenue; operating expenses are deducted later.",
-      "FALSE — Gross profit is calculated before, not after, administration and distribution overheads."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.018",
-    "title": "The Current and Non-Current Asset Mix for Analysts",
-    "context": "Review why non-current assets are best financed by equity and non-current liabilities rather than short-term borrowing. Evaluate the following economic assertions:",
+    "title": "Comparing Results Across Several Years Over Time",
+    "context": "Analyze why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
     "statements": [
-      "Tracking the proportion of office equipment against cash and cash equivalents on a construction contractor's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "If a construction contractor's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "A freight and logistics company is regarded as financing its patents, trademarks and licences soundly when their value is covered by equity together with a long-term mortgage.",
-      "Distribution costs and general administrative costs are deducted before gross profit is calculated, alongside cost of sales.",
-      "Tracking the proportion of patents, trademarks and licences against prepaid expenses on a freight and logistics company's balance sheet over several years shows whether the business is becoming more or less capital-intensive."
+      "A profit margin that appears strong when viewed in isolation remains equally strong once measured against the margins earned by similar businesses.",
+      "Sector-wide benchmarks provide no basis for determining whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out.",
+      "Financing long-lived production assets through short-term credit that must be repaid within a year exposes a business to the risk of needing to refinance repeatedly.",
+      "Cost of sales is confined to the direct costs incurred in producing or acquiring the goods a business has actually sold during the period.",
+      "Comparing a business's statements with those of its direct competitors can never reveal whether a change in results reflects conditions across the whole industry or is specific to that one business."
     ],
     "answer_key": [
-      true,
-      true,
-      true,
       false,
-      true
+      false,
+      true,
+      true,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "FALSE — Distribution and administrative costs are deducted after gross profit, not alongside cost of sales.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
+      "FALSE — Benchmarking against similar businesses can turn an apparently strong margin into an unremarkable one.",
+      "FALSE — Sector benchmarks are precisely what shows whether results are ordinary or exceptional.",
+      "TRUE — Short-term financing of long-lived assets creates repeated refinancing risk.",
+      "TRUE — Cost of sales captures only the direct costs of producing or acquiring the goods sold.",
+      "FALSE — Competitor comparison is exactly how industry-wide effects are separated from company-specific ones."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.019",
-    "title": "The Current and Non-Current Asset Mix Over Time",
-    "context": "Consider a manufacturing group whose management accountants are tracing how an expenditure on new machinery will be expensed gradually over its useful life. Evaluate the following economic assertions:",
+    "title": "Comparing Results Across Several Years in Context",
+    "context": "Analyze how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:",
     "statements": [
-      "If a freight and logistics company's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "Because gross profit already reflects operating expenses, two businesses with identical gross profit must always report identical operating results.",
-      "The operating result, also referred to as earnings before interest and taxes, is calculated after deducting finance costs and income tax.",
-      "A specialist engineering firm is regarded as financing its delivery vehicles soundly when their value is covered by equity together with long-term borrowings.",
-      "Tracking the proportion of delivery vehicles against short-term investments on a specialist engineering firm's balance sheet over several years shows whether the business is becoming more or less capital-intensive."
+      "Only costs that can be traced directly to manufacturing or acquiring the units a business has sold belong within cost of sales.",
+      "Materials physically consumed in manufacturing the units sold form part of cost of sales, while costs incurred once production is finished generally do not.",
+      "Because cost of sales is restricted to direct production costs, functions such as administration and distribution are reported in separate lines of the income statement.",
+      "Direct labour spent physically producing the goods sold is treated as part of cost of sales, unlike labour spent on functions unrelated to production.",
+      "Gross profit is arrived at by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are taken into account."
     ],
     "answer_key": [
       true,
-      false,
-      false,
+      true,
+      true,
       true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "FALSE — Identical gross profit can still lead to different operating results depending on operating expenses.",
-      "FALSE — The operating result is calculated before, not after, finance costs and income tax.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.020",
-    "title": "The Current and Non-Current Asset Mix in Context",
-    "context": "Review why administrative, distribution and selling costs are excluded from cost of sales. Evaluate the following economic assertions:",
-    "statements": [
-      "If a specialist engineering firm's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "A hotel group is regarded as financing its computer hardware soundly when their value is covered by equity together with long-term supplier financing.",
-      "Tracking the proportion of computer hardware against raw material stocks on a hotel group's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "Because the operating result includes finance costs and income tax, it cannot be used to assess a business's core trading performance separately from financing.",
-      "A food processing company is regarded as financing its leasehold premises soundly when their value is covered by equity together with deferred tax liabilities."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "FALSE — The operating result excludes finance costs and tax, which is exactly why it isolates core trading performance.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.021",
-    "title": "Sources of Equity Growth in Practice",
-    "context": "Review how gross profit is calculated before operating expenses are deducted from revenue. Evaluate the following economic assertions:",
-    "statements": [
-      "Tracking the proportion of leasehold premises against finished goods stock on a food processing company's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "If a food processing company's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "Comparing the operating result across several years reveals nothing about a business's core trading performance because it already reflects financing and tax decisions.",
-      "An electronics retailer is regarded as financing its specialist production plant soundly when their value is covered by equity together with long-term pension obligations.",
-      "Tracking the proportion of specialist production plant against accrued income on an electronics retailer's balance sheet over several years shows whether the business is becoming more or less capital-intensive."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "FALSE — The operating result excludes financing and tax decisions, so its trend reflects core trading performance.",
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.022",
-    "title": "Sources of Equity Growth Explained",
-    "context": "Review why the operating result, also known as earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
-    "statements": [
-      "Two businesses with the same operating result must always report the same profit for the year regardless of their finance costs or tax rates.",
-      "If an electronics retailer's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "An expenditure and an expense always occur in the same accounting period and therefore mean exactly the same thing.",
-      "Prepaying next year's insurance premium is recognised as a full expense in the income statement of the year it is paid.",
-      "Distinguishing expenditure from expense is unnecessary because every cash outflow is automatically an expense in the period it occurs."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Differing finance costs or tax rates can still produce different profit for the year from the same operating result.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "FALSE — Expenditure is a cash outflow while expense is the portion recognised in a period; they can differ in timing.",
-      "FALSE — A prepayment becomes an expense only in the period the coverage relates to, not when paid.",
-      "FALSE — Not every cash outflow is an expense in the period it occurs; some are spread over future periods."
+      "TRUE — Only directly traceable production or acquisition costs belong within cost of sales.",
+      "TRUE — Materials consumed in production belong in cost of sales; post-production costs generally do not.",
+      "TRUE — Direct-cost-only cost of sales means administration and distribution appear as separate lines.",
+      "TRUE — Direct production labour belongs in cost of sales; labour on unrelated functions does not.",
+      "TRUE — Gross profit equals revenue minus cost of sales, calculated ahead of operating expenses."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -662,58 +302,28 @@
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.023",
-    "title": "Sources of Equity Growth for Analysts",
-    "context": "Consider a freight and logistics company whose new chief financial officer is examining how the balance sheet has evolved since the business last expanded its vehicle fleet. Evaluate the following economic assertions:",
+    "title": "Benchmarking Against Industry Peers in Practice",
+    "context": "Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:",
     "statements": [
-      "A printing business is regarded as financing its warehouse facilities soundly when their value is covered by equity together with a long-term equipment loan.",
-      "A business that makes a substantial expenditure in a given year must recognise the entire amount as an expense in that same year.",
-      "Tracking the proportion of warehouse facilities against supplies on hand on a printing business's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "Tracking revenue over several years provides no indication of whether a business's sales are growing, stagnating or declining.",
-      "If a printing business's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment."
+      "Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance.",
+      "The relative weight of non-current assets against current assets on a business's balance sheet gives no indication of how capital-intensive its operations are.",
+      "The margin represented by gross profit reflects how much a business earns from producing and selling its goods before overhead costs such as administration are considered.",
+      "Distribution costs and administrative expenses are deducted from gross profit, not from revenue directly, on the way to arriving at the operating result.",
+      "Two businesses can report identical gross profit yet end up with very different operating results if their distribution and administrative costs differ."
     ],
     "answer_key": [
-      true,
+      false,
       false,
       true,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "FALSE — A large expenditure can be recognised as expense gradually over several future years.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "FALSE — Multi-year revenue tracking is exactly how growth, stagnation or decline in sales is identified.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.024",
-    "title": "Sources of Equity Growth Over Time",
-    "context": "Review how the relative growth of revenue and cost of sales over time affects a business's gross profit margin. Evaluate the following economic assertions:",
-    "statements": [
-      "A pharmaceutical distributor is regarded as financing its manufacturing tooling soundly when their value is covered by equity together with long-term debentures.",
-      "Tracking the proportion of manufacturing tooling against marketable securities on a pharmaceutical distributor's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "A business whose revenue rises every year is automatically improving its profitability, regardless of how its costs are behaving.",
-      "A single year's strong sales figure is a more reliable signal of business health than consistent revenue growth over multiple years.",
-      "If a pharmaceutical distributor's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
-      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "FALSE — Rising revenue does not guarantee improving profitability if costs are rising even faster.",
-      "FALSE — Sustained multi-year growth is a more reliable signal than one strong year alone.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing."
+      "FALSE — Without a comparison point, judging a margin as good or poor is unreliable.",
+      "FALSE — This balance is exactly what indicates how capital-intensive operations are.",
+      "TRUE — Gross profit reflects the production and selling margin before overhead costs are considered.",
+      "TRUE — Distribution and administrative costs are deducted after gross profit, on the way to the operating result.",
+      "TRUE — Identical gross profit can still yield different operating results depending on subsequent operating expenses."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -721,15 +331,285 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.025",
-    "title": "Sources of Equity Growth in Context",
-    "context": "Examine how a single year's balance sheet or income statement can be misleading without wider context. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.024",
+    "title": "Benchmarking Against Industry Peers Explained",
+    "context": "Analyze why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:",
     "statements": [
-      "A textile manufacturer is regarded as financing its long-term equipment investments soundly when their value is covered by equity together with a long-term construction loan.",
-      "Tracking the proportion of long-term equipment investments against work in progress on a textile manufacturer's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "If a textile manufacturer's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "A vehicle repair chain is regarded as financing its company-owned land soundly when their value is covered by equity together with long-term finance lease obligations.",
-      "Tracking the proportion of company-owned land against advance payments to suppliers on a vehicle repair chain's balance sheet over several years shows whether the business is becoming more or less capital-intensive."
+      "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is improving.",
+      "A business holding a larger share of its resources in current assets typically has less of its wealth available for conversion into cash within the coming year.",
+      "Studying how the balance between current and non-current assets shifts over time reveals nothing about how a business is choosing to deploy its resources.",
+      "An increasing share of non-current assets over successive years can only point to a business reducing its commitment to long-term productive capacity.",
+      "Businesses in capital-intensive industries tend to carry a lighter weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A widening revenue-to-cost-of-sales gap, relative to revenue, means gross profit margin is improving.",
+      "FALSE — A larger current-asset share means more, not less, of a business's resources are readily convertible to cash.",
+      "FALSE — Such shifts are precisely what reveal changing resource deployment.",
+      "FALSE — A rising non-current asset share typically signals greater, not reduced, long-term commitment.",
+      "FALSE — Capital-intensive businesses tend to carry heavier, not lighter, non-current asset weightings."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.029",
+    "title": "Benchmarking Against Industry Peers for Analysts",
+    "context": "Review why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
+    "statements": [
+      "The operating result, also described as earnings before interest and taxes, measures profit from core operations before the effects of financing costs and income tax are included.",
+      "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth must have come from a new issue of shares to owners.",
+      "Tracking share capital and retained earnings separately over successive years provides no way of telling whether a business's equity growth has come from owner contributions or from accumulated profit.",
+      "A business that grows its equity mostly through retained earnings is relying just as heavily on outside investors as one whose equity growth comes mainly from new share issues.",
+      "The pattern of a business's equity growth over several years reveals nothing about its underlying financing strategy, regardless of whether it is driven by retained profit or fresh capital."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The operating result, i.e. earnings before interest and taxes, excludes financing costs and income tax.",
+      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must be retained earnings.",
+      "FALSE — Separate tracking of these two components is exactly how the source of equity growth is identified.",
+      "FALSE — Growth funded by retained earnings relies less on outside investors than growth funded by new shares.",
+      "FALSE — This pattern is precisely what reveals a business's underlying financing strategy."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.030",
+    "title": "Benchmarking Against Industry Peers Over Time",
+    "context": "Review how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Excluding financing costs and income tax from the operating result allows a business's core trading performance to be judged separately from how it happens to be financed or taxed.",
+      "If share capital has remained unchanged for several years while equity has still grown, that growth cannot be explained by retained earnings.",
+      "A business is considered to be financing its non-current assets soundly only when their total value is covered mainly by current liabilities.",
+      "Relying on short-term borrowing that must soon be renewed, rather than long-term sources of finance, is regarded as the prudent way to fund long-lived assets.",
+      "When non-current assets exceed the sum of equity and non-current liabilities, this always indicates a conservative and low-risk financing position."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Excluding financing and tax lets the operating result isolate core trading performance.",
+      "FALSE — With share capital unchanged, retained earnings are exactly what explain rising equity.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound.",
+      "FALSE — Funding long-lived assets mainly with short-term borrowing is regarded as risky, not prudent.",
+      "FALSE — This situation indicates a risky, not conservative, financing position."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.038",
+    "title": "Benchmarking Against Industry Peers in Context",
+    "context": "Consider an industrial cleaning company whose accountant is walking new staff through the difference between cost of sales and the operating expenses reported further down the income statement. Evaluate the following economic assertions:",
+    "statements": [
+      "Tracking the operating result over several years shows how a business's core trading is developing independently of changes in interest rates or tax policy.",
+      "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed.",
+      "Two businesses reporting an identical operating result can still end up with different profit for the year if their finance costs or tax rates differ.",
+      "Financing long-lived production assets through short-term credit that must be repaid within a year removes any risk of needing to refinance.",
+      "A decline in profit for the year alongside a stable or rising operating result suggests the cause lies in financing costs or taxation rather than in core trading."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-year operating result tracking isolates trading trends from interest rate or tax changes.",
+      "FALSE — This matching principle is central to being considered a soundly financed business.",
+      "TRUE — Identical operating results can yield different profit for the year given differing finance costs or tax rates.",
+      "FALSE — Short-term financing of long-lived assets creates, rather than removes, refinancing risk.",
+      "TRUE — Falling profit for the year with a stable operating result points to financing or tax causes, not trading."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.041",
+    "title": "The Current and Non-Current Asset Balance in Practice",
+    "context": "Review how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:",
+    "statements": [
+      "An expenditure is an outflow of cash or resources, while an expense is the portion of that outflow recognised in the income statement as belonging to the current period.",
+      "Cost of sales includes every cost a business incurs during the period, regardless of whether the cost relates directly to the goods sold.",
+      "Any cost that benefits the business in some way, even indirectly, belongs within cost of sales.",
+      "Materials physically consumed in manufacturing the units sold are excluded from cost of sales because they are considered an overhead.",
+      "Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each period of cover passes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Expenditure is the outflow itself; expense is the portion recognised for the current period.",
+      "FALSE — Cost of sales is limited to direct costs; not every cost incurred belongs there.",
+      "FALSE — Only directly traceable costs belong in cost of sales; indirect benefit is not sufficient.",
+      "FALSE — Materials consumed directly in production are a direct cost and belong within cost of sales.",
+      "TRUE — A prepayment is an expenditure immediately but becomes an expense only in the periods it covers."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.042",
+    "title": "The Current and Non-Current Asset Balance Explained",
+    "context": "Review how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:",
+    "statements": [
+      "A single large expenditure can result in expense being recognised gradually across several future accounting periods rather than all at once.",
+      "Because cost of sales includes every departmental cost, functions such as administration and distribution are absorbed into it rather than reported separately.",
+      "Direct labour spent physically producing the goods sold is excluded from cost of sales because wages are always treated as an administrative cost.",
+      "The distinction between expenditure and expense matters because it explains why a business's cash outflow for a year can differ substantially from its reported expenses for that year.",
+      "Gross profit is arrived at by deducting all operating expenses, including distribution and administrative costs, from revenue."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A large expenditure can be spread as expense across several future periods.",
+      "FALSE — Administration and distribution are reported separately, not absorbed into cost of sales.",
+      "FALSE — Direct production labour is a core component of cost of sales, not an administrative cost.",
+      "TRUE — Distinguishing expenditure from expense explains gaps between cash outflow and reported expense in a year.",
+      "FALSE — Gross profit only deducts cost of sales from revenue; operating expenses are deducted later."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.043",
+    "title": "The Current and Non-Current Asset Balance for Analysts",
+    "context": "Review why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying an asset that will be used for several years is an expenditure immediately, but only part of its cost becomes an expense in the year of purchase.",
+      "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
+      "The margin represented by gross profit reflects a business's overall profitability after every overhead cost, including administration, has already been deducted.",
+      "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will widen across that period.",
+      "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin come under sustained pressure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Buying a multi-year asset is an immediate expenditure, with only part becoming expense that year.",
+      "TRUE — Comparing revenue growth with cost of sales growth reveals changing production efficiency.",
+      "FALSE — Gross profit is calculated before, not after, overhead costs such as administration are deducted.",
+      "TRUE — Cost of sales growing more slowly than revenue widens the gross profit margin.",
+      "TRUE — Cost of sales consistently outpacing revenue growth puts sustained pressure on the gross profit margin."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.046",
+    "title": "The Current and Non-Current Asset Balance Over Time",
+    "context": "Consider a beverage bottling company whose finance team is preparing balance sheet and income statement summaries for a meeting with its bank. Evaluate the following economic assertions:",
+    "statements": [
+      "Stable growth in both revenue and cost of sales at similar rates tends to keep a business's gross profit margin relatively steady from year to year.",
+      "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace.",
+      "Distribution costs and administrative expenses are deducted directly from revenue at the same stage as cost of sales, before gross profit is calculated.",
+      "Two businesses that report identical gross profit will always end up with identical operating results, regardless of their distribution and administrative costs.",
+      "Reading the balance sheet and income statement together gives a fuller picture of a business's position and performance than studying either statement on its own."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Revenue and cost of sales growing at similar rates tends to keep the margin steady.",
+      "TRUE — Rising revenue does not guarantee improving profitability if cost of sales rises even faster.",
+      "FALSE — These costs are deducted after gross profit has already been calculated, not alongside cost of sales.",
+      "FALSE — Identical gross profit does not guarantee identical operating results if operating expenses differ.",
+      "TRUE — Reading both statements together gives a fuller picture than studying either alone."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.048",
+    "title": "The Current and Non-Current Asset Balance in Context",
+    "context": "Review how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:",
+    "statements": [
+      "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is deteriorating.",
+      "A strong profit for the year shown in the income statement can be undermined by a weak financing position revealed only by the balance sheet.",
+      "Changes in working capital shown on the balance sheet can help explain why cash movements differ from the profit for the year reported in the income statement.",
+      "Judging a business's overall financial health requires weighing income statement performance against balance sheet strength rather than looking at either alone.",
+      "The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have already been deducted."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A widening such gap indicates an improving, not deteriorating, gross profit margin.",
+      "TRUE — A strong income statement result can be undermined by weaknesses only the balance sheet reveals.",
+      "TRUE — Balance sheet working capital changes help explain gaps between cash movement and reported profit.",
+      "TRUE — Overall financial health requires weighing both statements together, not either alone.",
+      "FALSE — The operating result is calculated before, not after, financing costs and income tax."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.049",
+    "title": "Sources of Equity Growth in Practice",
+    "context": "Review why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
+    "statements": [
+      "A business could report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, so both statements need to be considered together.",
+      "A beverage bottling company is regarded as financing its bottling line machinery soundly when their value does not exceed equity plus a long-term bottling equipment loan.",
+      "Tracking the balance between bottling line machinery and bottled stock awaiting dispatch on a beverage bottling company's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A paper mill is regarded as financing its papermaking machinery soundly when their value does not exceed equity plus a long-term papermill mortgage.",
+      "Tracking the balance between papermaking machinery and paper roll inventory on a paper mill's statements over several years shows whether the business is becoming more or less capital-intensive."
     ],
     "answer_key": [
       true,
@@ -739,9 +619,39 @@
       true
     ],
     "tactical_explanations": [
+      "TRUE — Rising profit can coincide with a deteriorating balance sheet, so both statements matter jointly.",
       "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
       "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.051",
+    "title": "Sources of Equity Growth Explained",
+    "context": "Review how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:",
+    "statements": [
+      "A ceramics manufacturer is regarded as financing its ceramics kilns and moulding equipment soundly when their value does not exceed equity plus long-term kiln financing.",
+      "Because the operating result already includes financing costs and income tax, it cannot be used to judge a business's core trading performance separately from financing or tax.",
+      "Tracking the balance between ceramics kilns and moulding equipment and finished ceramics stock on a ceramics manufacturer's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "An automotive parts supplier is regarded as financing its assembly-line robotics soundly when their value does not exceed equity plus a long-term robotics lease.",
+      "Tracking the balance between assembly-line robotics and spare automotive parts inventory on an automotive parts supplier's statements over several years shows whether the business is becoming more or less capital-intensive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "FALSE — The operating result excludes financing and tax, which is precisely why it isolates trading performance.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
       "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
       "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
     ],
@@ -751,26 +661,86 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.026",
-    "title": "Financing Mix and Capital Structure in Practice",
-    "context": "Examine why comparing financial statements across several years reveals trends invisible in one year alone. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.053",
+    "title": "Sources of Equity Growth for Analysts",
+    "context": "Consider a commercial bakery chain preparing a presentation on how its cost of sales and gross profit have moved over the past several years. Evaluate the following economic assertions:",
     "statements": [
-      "A sudden jump in revenue in one year should always be assumed to reflect a permanent improvement in underlying demand.",
-      "If a vehicle repair chain's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "An agricultural cooperative is regarded as financing its processing plant soundly when their value is covered by equity together with a long-term shareholder loan.",
-      "Tracking the proportion of processing plant against short-term deposits on an agricultural cooperative's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "A software services company is regarded as financing its distribution centre buildings soundly when their value is covered by equity together with long-term bank financing."
+      "A commercial bakery chain is regarded as financing its ovens and proofing equipment soundly when their value does not exceed equity plus a long-term bakery expansion loan.",
+      "Tracking the operating result over several years cannot show how a business's core trading is developing, since the figure already reflects changes in interest rates and tax policy.",
+      "Two businesses reporting an identical operating result must always end up with identical profit for the year, regardless of their finance costs or tax rates.",
+      "Tracking the balance between ovens and proofing equipment and dough and ingredient stock on a commercial bakery chain's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A marine equipment supplier is regarded as financing its dockside cranes and lifting gear soundly when their value does not exceed equity plus a long-term dockyard loan."
     ],
     "answer_key": [
+      true,
       false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "FALSE — The operating result is unaffected by interest rates and tax, so it can show core trading trends over time.",
+      "FALSE — Differing finance costs or tax rates can still produce different profit for the year from the same operating result.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.054",
+    "title": "Sources of Equity Growth Over Time",
+    "context": "Review why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Tracking the balance between dockside cranes and lifting gear and spare marine parts inventory on a marine equipment supplier's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A joinery and furniture workshop is regarded as financing its joinery workshop machinery soundly when their value does not exceed equity plus a long-term workshop mortgage.",
+      "Tracking the balance between joinery workshop machinery and unsold furniture stock on a joinery and furniture workshop's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A plastics moulding company is regarded as financing its injection-moulding machinery soundly when their value does not exceed equity plus long-term moulding equipment finance.",
+      "A dairy cooperative is regarded as financing its chilling and pasteurising plant soundly when their value does not exceed equity plus a long-term dairy plant loan."
+    ],
+    "answer_key": [
+      true,
       true,
       true,
       true,
       true
     ],
     "tactical_explanations": [
-      "FALSE — A one-year revenue jump warrants closer examination rather than an assumption of permanence.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.057",
+    "title": "Sources of Equity Growth in Context",
+    "context": "Examine why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
+    "statements": [
+      "Tracking the balance between chilling and pasteurising plant and dairy products awaiting delivery on a dairy cooperative's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A decline in profit for the year alongside a stable or rising operating result always means that core trading performance has deteriorated.",
+      "A mining equipment lessor is regarded as financing its heavy mining equipment held for hire soundly when their value does not exceed equity plus long-term mining equipment finance.",
+      "Tracking the balance between heavy mining equipment held for hire and replacement parts inventory on a mining equipment lessor's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A textile dyeing company is regarded as financing its dyeing vats and finishing lines soundly when their value does not exceed equity plus a long-term dyeing plant loan."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "FALSE — A stable operating result alongside falling profit for the year points away from, not toward, deteriorating trading.",
       "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
       "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
       "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing."
@@ -781,149 +751,89 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.027",
-    "title": "Financing Mix and Capital Structure Explained",
-    "context": "Consider an electronics retailer whose management team is analysing whether recent growth in equity has come from retained profit or from new share issues. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.058",
+    "title": "Matching Long-Term Assets to Long-Term Finance in Practice",
+    "context": "Examine how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
     "statements": [
-      "Tracking the proportion of distribution centre buildings against spare parts inventory on a software services company's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "Comparing the growth rate of revenue with the growth rate of cost of sales over successive years reveals nothing about production efficiency.",
-      "A business whose cost of sales rises broadly in line with its revenue will typically see its gross profit margin swing wildly from year to year.",
-      "If a software services company's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "If revenue grows while cost of sales grows more slowly, a business's gross profit margin will narrow over that period."
+      "Tracking the balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "An expenditure and an expense refer to exactly the same amount recognised in exactly the same accounting period, with no distinction between them.",
+      "An appliance repair network is regarded as financing its diagnostic and repair equipment soundly when their value does not exceed equity plus a long-term equipment finance lease.",
+      "Tracking the balance between diagnostic and repair equipment and spare repair components on an appliance repair network's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A seed and fertiliser distributor is regarded as financing its seed processing plant soundly when their value does not exceed equity plus a long-term seed processing loan."
     ],
     "answer_key": [
       true,
       false,
-      false,
       true,
-      false
+      true,
+      true
     ],
     "tactical_explanations": [
       "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "FALSE — Comparing revenue and cost of sales growth rates is exactly how changes in production efficiency are revealed.",
-      "FALSE — Cost of sales rising in line with revenue tends to keep the gross profit margin stable, not volatile.",
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "FALSE — Revenue outpacing cost of sales growth widens, rather than narrows, the gross profit margin."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.028",
-    "title": "Financing Mix and Capital Structure for Analysts",
-    "context": "Examine how the balance between current and non-current assets reflects a business's capital intensity. Evaluate the following economic assertions:",
-    "statements": [
-      "Examining how revenue and cost of sales move together over time provides no explanation for changes in a business's gross profit margin.",
-      "A furniture manufacturer is considered financially sound when its factory buildings are financed mainly through trade payables, since short-term liabilities are cheaper to arrange.",
-      "A wholesale hardware supplier is regarded as financing its capitalised development costs soundly when their value is covered by equity together with a long-term infrastructure loan.",
-      "Tracking the proportion of capitalised development costs against outstanding customer invoices on a wholesale hardware supplier's balance sheet over several years shows whether the business is becoming more or less capital-intensive.",
-      "The mix of factory buildings and inventory on a furniture manufacturer's balance sheet has no bearing on how capital-intensive the business is."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Joint examination of revenue and cost of sales trends is exactly what explains gross profit margin changes.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
+      "FALSE — Expenditure and expense can differ; expenditure is the outflow, expense is the period-matched portion.",
       "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
       "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business."
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.029",
-    "title": "Financing Mix and Capital Structure Over Time",
-    "context": "Examine how the source of growth in equity, retained earnings versus new share capital, reveals a business's financing pattern. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.060",
+    "title": "Matching Long-Term Assets to Long-Term Finance Explained",
+    "context": "Consider a dairy cooperative whose members are reviewing the balance sheet to judge whether its long-term assets are financed appropriately. Evaluate the following economic assertions:",
     "statements": [
-      "If a wholesale hardware supplier's retained earnings increase while share capital stays unchanged, the resulting rise in equity has come from internally generated profit rather than new owner investment.",
-      "If a furniture manufacturer's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "A supermarket chain is considered financially sound when its production machinery are financed mainly through a bank overdraft, since short-term liabilities are cheaper to arrange.",
-      "The mix of production machinery and trade receivables on a supermarket chain's balance sheet has no bearing on how capital-intensive the business is.",
-      "The pay of administrative staff is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
+      "Paying in advance for a full year of insurance cover is recognised entirely as an expense at the moment of payment, regardless of which period the cover relates to.",
+      "A single large expenditure must always be recognised entirely as an expense within the same accounting period in which it occurs.",
+      "Tracking the balance between seed processing plant and seed and fertiliser stock on a seed and fertiliser distributor's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A scaffolding rental firm is regarded as financing its scaffolding held for long-term hire soundly when their value does not exceed equity plus a long-term scaffolding fleet loan.",
+      "Tracking the balance between scaffolding held for long-term hire and scaffolding materials awaiting short-term hire on a scaffolding rental firm's statements over several years shows whether the business is becoming more or less capital-intensive."
     ],
     "answer_key": [
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "TRUE — With share capital unchanged, rising equity must stem from retained earnings, i.e. internal financing.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
+      "FALSE — A prepayment becomes an expense gradually, matched to the periods it covers, not entirely at payment.",
+      "FALSE — Expenditure can be spread over future periods as expense rather than recognised all at once.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.030",
-    "title": "Financing Mix and Capital Structure in Context",
-    "context": "Examine why non-current assets are best financed by equity and non-current liabilities rather than short-term borrowing. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.062",
+    "title": "Matching Long-Term Assets to Long-Term Finance for Analysts",
+    "context": "Examine how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:",
     "statements": [
-      "Wages earned by delivery drivers are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to sales representatives is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "Raw materials consumed in production are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a furniture manufacturer, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of office administrators is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
+      "An industrial cleaning company is regarded as financing its industrial cleaning machinery soundly when their value does not exceed equity plus a long-term cleaning equipment loan.",
+      "The distinction between expenditure and expense is irrelevant because a business's cash outflow for a year is always identical to its reported expenses for that year.",
+      "Tracking the balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "Buying an asset that will be used for several years results in its entire cost becoming an expense in the year of purchase.",
+      "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years reveals nothing about how efficiently a business produces what it sells."
     ],
     "answer_key": [
       true,
+      false,
       true,
-      true,
-      true,
-      true
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.031",
-    "title": "Matching Non-Current Assets to Long-Term Finance in Practice",
-    "context": "Consider a vehicle repair chain whose finance team is separating administrative, delivery and sales costs from the direct costs of servicing customer vehicles. Evaluate the following economic assertions:",
-    "statements": [
-      "If a supermarket chain's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "Wages earned by warehouse dispatch staff are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "A construction contractor is considered financially sound when its office equipment are financed mainly through accrued wages, since short-term liabilities are cheaper to arrange.",
-      "The mix of office equipment and cash and cash equivalents on a construction contractor's balance sheet has no bearing on how capital-intensive the business is.",
-      "Compensation paid to sales commission staff is kept out of cost of sales because selling activity takes place after the goods have already been produced."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales."
+      "TRUE — Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.",
+      "FALSE — Cash outflow and reported expense for a year often differ, which is exactly why the distinction matters.",
+      "TRUE — Changes in the non-current versus current asset split over time signal shifting capital intensity.",
+      "FALSE — Only part of a multi-year asset's cost becomes expense in the year of purchase; the rest is spread forward.",
+      "FALSE — This comparison is exactly what reveals changing production efficiency."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -931,119 +841,59 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.032",
-    "title": "Matching Non-Current Assets to Long-Term Finance Explained",
-    "context": "Examine why administrative, distribution and selling costs are excluded from cost of sales. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.063",
+    "title": "Matching Long-Term Assets to Long-Term Finance Over Time",
+    "context": "Examine how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:",
     "statements": [
-      "Direct production labour are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "If a construction contractor's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "For a supermarket chain, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of human resources personnel is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "A freight and logistics company is considered financially sound when its patents, trademarks and licences are financed mainly through short-term loans, since short-term liabilities are cheaper to arrange."
+      "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will narrow across that period.",
+      "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin improve steadily over time.",
+      "Stable growth in both revenue and cost of sales at similar rates tends to make a business's gross profit margin swing wildly from year to year.",
+      "Rising revenue figures alone always guarantee improving profitability, regardless of how quickly cost of sales is rising.",
+      "The wages of head office administrators are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold."
     ],
     "answer_key": [
-      true,
       false,
-      true,
-      true,
-      false
+      false,
+      false,
+      false,
+      true
     ],
     "tactical_explanations": [
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed."
+      "FALSE — Slower cost of sales growth relative to revenue widens, rather than narrows, the margin.",
+      "FALSE — Cost of sales outpacing revenue growth puts pressure on, rather than improves, the margin.",
+      "FALSE — Similar growth rates in revenue and cost of sales tend to stabilise, not destabilise, the margin.",
+      "FALSE — Rising revenue alone does not guarantee improving profitability if costs rise faster still.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.033",
-    "title": "Matching Non-Current Assets to Long-Term Finance for Analysts",
-    "context": "Examine how gross profit is calculated before operating expenses are deducted from revenue. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.065",
+    "title": "Matching Long-Term Assets to Long-Term Finance in Context",
+    "context": "Examine why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:",
     "statements": [
-      "Wages earned by shipping coordinators are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "The mix of patents, trademarks and licences and prepaid expenses on a freight and logistics company's balance sheet has no bearing on how capital-intensive the business is.",
-      "If a freight and logistics company's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "A specialist engineering firm is considered financially sound when its delivery vehicles are financed mainly through taxes payable, since short-term liabilities are cheaper to arrange.",
-      "The mix of delivery vehicles and short-term investments on a specialist engineering firm's balance sheet has no bearing on how capital-intensive the business is."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.034",
-    "title": "Matching Non-Current Assets to Long-Term Finance Over Time",
-    "context": "Examine why the operating result, also known as earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
-    "statements": [
-      "If a specialist engineering firm's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "Compensation paid to the sales team is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "A hotel group is considered financially sound when its computer hardware are financed mainly through unearned revenue, since short-term liabilities are cheaper to arrange.",
-      "The mix of computer hardware and raw material stocks on a hotel group's balance sheet has no bearing on how capital-intensive the business is.",
-      "A food processing company is considered financially sound when its leasehold premises are financed mainly through accrued interest, since short-term liabilities are cheaper to arrange."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.035",
-    "title": "Matching Non-Current Assets to Long-Term Finance in Context",
-    "context": "Consider a bakery chain whose owners are comparing this year's balance sheet with last year's to judge whether the business's financing structure has become more or less risky. Evaluate the following economic assertions:",
-    "statements": [
-      "Components purchased for assembly are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a construction contractor, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of accounting clerks is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "Wages earned by outbound logistics personnel are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "The mix of leasehold premises and finished goods stock on a food processing company's balance sheet has no bearing on how capital-intensive the business is."
+      "Pay earned by despatch and loading staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to account managers are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "Raw materials consumed directly in production are included within cost of sales because they are incurred directly in producing the goods that a beverage bottling company has sold.",
+      "Reading the balance sheet and income statement together adds nothing beyond what studying either statement on its own would already reveal.",
+      "The wages of payroll and accounts clerks are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold."
     ],
     "answer_key": [
       true,
       true,
       true,
-      true,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business."
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "FALSE — Reading both statements together reveals more than studying either one alone.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1051,119 +901,89 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.036",
+    "case_id": "CASE 6.3.068",
     "title": "Defining Cost of Sales in Practice",
-    "context": "Examine how the relative growth of revenue and cost of sales over time affects a business's gross profit margin. Evaluate the following economic assertions:",
+    "context": "Consider a seed and fertiliser distributor whose members are reviewing the income statement to understand how gross profit was calculated this season. Evaluate the following economic assertions:",
     "statements": [
-      "If a food processing company's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "An electronics retailer is considered financially sound when its specialist production plant are financed mainly through the current portion of long-term debt, since short-term liabilities are cheaper to arrange.",
-      "The mix of specialist production plant and accrued income on an electronics retailer's balance sheet has no bearing on how capital-intensive the business is.",
-      "Compensation paid to account managers is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "A printing business is considered financially sound when its warehouse facilities are financed mainly through dividends payable, since short-term liabilities are cheaper to arrange."
+      "Pay earned by outbound freight handlers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to field sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "Direct factory labour on the production line are included within cost of sales because they are incurred directly in producing the goods that a paper mill has sold.",
+      "The wages of reception and clerical staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "A strong profit for the year shown in the income statement guarantees that the balance sheet will also show a strong financing position."
     ],
     "answer_key": [
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed."
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "FALSE — Strong reported profit does not guarantee a strong balance sheet financing position."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.037",
+    "case_id": "CASE 6.3.069",
     "title": "Defining Cost of Sales Explained",
-    "context": "Assess how a single year's balance sheet or income statement can be misleading without wider context. Evaluate the following economic assertions:",
+    "context": "Examine how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:",
     "statements": [
-      "The mix of warehouse facilities and supplies on hand on a printing business's balance sheet has no bearing on how capital-intensive the business is.",
-      "Manufacturing overhead directly tied to output are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a freight and logistics company, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "If a printing business's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "The pay of finance department employees is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
+      "Pay earned by delivery drivers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to the retail sales team are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "Changes in working capital shown on the balance sheet have no bearing on why cash movements might differ from the profit for the year reported in the income statement.",
+      "Components purchased for direct assembly are included within cost of sales because they are incurred directly in producing the goods that a ceramics manufacturer has sold.",
+      "Judging a business's overall financial health can be done reliably by looking at the income statement alone, without any reference to the balance sheet."
     ],
     "answer_key": [
-      false,
       true,
       true,
       false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — Working capital changes are exactly what help explain such differences.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "FALSE — Reliable judgement requires weighing both statements, not the income statement in isolation."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.038",
+    "case_id": "CASE 6.3.071",
     "title": "Defining Cost of Sales for Analysts",
-    "context": "Assess why comparing financial statements across several years reveals trends invisible in one year alone. Evaluate the following economic assertions:",
+    "context": "Examine why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
     "statements": [
-      "A pharmaceutical distributor is considered financially sound when its manufacturing tooling are financed mainly through short-term supplier credit, since short-term liabilities are cheaper to arrange.",
-      "The mix of manufacturing tooling and marketable securities on a pharmaceutical distributor's balance sheet has no bearing on how capital-intensive the business is.",
-      "Wages earned by freight and courier staff are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to sales staff is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "If a pharmaceutical distributor's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.039",
-    "title": "Defining Cost of Sales Over Time",
-    "context": "Consider a family-run furniture workshop reviewing its newly prepared balance sheet and income statement before meeting its bank manager. Evaluate the following economic assertions:",
-    "statements": [
-      "Materials used to manufacture the goods sold are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "A textile manufacturer is considered financially sound when its long-term equipment investments are financed mainly through accrued utility bills, since short-term liabilities are cheaper to arrange.",
-      "The mix of long-term equipment investments and work in progress on a textile manufacturer's balance sheet has no bearing on how capital-intensive the business is.",
-      "For a specialist engineering firm, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of reception and clerical staff is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
+      "The wages of human resources personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "A business cannot report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, since the two always move in the same direction.",
+      "A beverage bottling company is regarded as financing its bottling line machinery soundly only when they are covered mainly by short-term credit from bottle and packaging suppliers.",
+      "The balance between bottling line machinery and bottled stock awaiting dispatch on a beverage bottling company's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Pay earned by warehouse dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
     ],
     "answer_key": [
       true,
       false,
       false,
-      true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "FALSE — Profit and balance sheet strength can move in different directions, so both need checking.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -1171,45 +991,45 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.040",
+    "case_id": "CASE 6.3.073",
+    "title": "Defining Cost of Sales Over Time",
+    "context": "Examine how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:",
+    "statements": [
+      "Amounts paid to business development staff are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "A paper mill is regarded as financing its papermaking machinery soundly only when they are covered mainly by short-term credit from pulp suppliers.",
+      "Production supplies consumed making the units sold are included within cost of sales because they are incurred directly in producing the goods that an automotive parts supplier has sold.",
+      "The wages of general office administrators are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by courier and transport staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.074",
     "title": "Defining Cost of Sales in Context",
-    "context": "Assess how the balance between current and non-current assets reflects a business's capital intensity. Evaluate the following economic assertions:",
+    "context": "Consider a paper mill whose analysts are reading its financial statements cautiously before recommending whether to extend further credit. Evaluate the following economic assertions:",
     "statements": [
-      "Wages earned by distribution centre workers are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to the retail sales force is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "Direct labour on the factory floor are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "If a textile manufacturer's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "For a hotel group, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.041",
-    "title": "Excluding Overheads from Cost of Sales in Practice",
-    "context": "Assess how the source of growth in equity, retained earnings versus new share capital, reveals a business's financing pattern. Evaluate the following economic assertions:",
-    "statements": [
-      "The pay of management support staff is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "Wages earned by despatch clerks are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to business development staff is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "Production supplies consumed making the goods sold are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a food processing company, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement."
+      "Amounts paid to sales commission earners are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "The direct purchase cost of goods bought for resale are included within cost of sales because they are incurred directly in producing the goods that a commercial bakery chain has sold.",
+      "The wages of back-office support staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by distribution centre employees is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Materials directly consumed manufacturing the goods sold are included within cost of sales because they are incurred directly in producing the goods that a marine equipment supplier has sold."
     ],
     "answer_key": [
       true,
@@ -1219,11 +1039,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately."
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1231,209 +1051,59 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.042",
-    "title": "Excluding Overheads from Cost of Sales Explained",
-    "context": "Assess why non-current assets are best financed by equity and non-current liabilities rather than short-term borrowing. Evaluate the following economic assertions:",
-    "statements": [
-      "The pay of back-office employees is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "A vehicle repair chain is considered financially sound when its company-owned land are financed mainly through short-term borrowings, since short-term liabilities are cheaper to arrange.",
-      "The mix of company-owned land and advance payments to suppliers on a vehicle repair chain's balance sheet has no bearing on how capital-intensive the business is.",
-      "If a vehicle repair chain's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "An agricultural cooperative is considered financially sound when its processing plant are financed mainly through outstanding supplier invoices, since short-term liabilities are cheaper to arrange."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.043",
-    "title": "Excluding Overheads from Cost of Sales for Analysts",
-    "context": "Consider a specialist engineering firm preparing a presentation that compares its cost of sales and gross profit trends over the past five years. Evaluate the following economic assertions:",
-    "statements": [
-      "Wages earned by outbound delivery staff are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to sales department employees is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "The purchase cost of goods bought for resale are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For an electronics retailer, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of payroll administrators is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.044",
-    "title": "Excluding Overheads from Cost of Sales Over Time",
-    "context": "Assess why administrative, distribution and selling costs are excluded from cost of sales. Evaluate the following economic assertions:",
-    "statements": [
-      "Wages earned by delivery fleet employees are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "The mix of processing plant and short-term deposits on an agricultural cooperative's balance sheet has no bearing on how capital-intensive the business is.",
-      "If an agricultural cooperative's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "A software services company is considered financially sound when its distribution centre buildings are financed mainly through a short-term line of credit, since short-term liabilities are cheaper to arrange.",
-      "The mix of distribution centre buildings and spare parts inventory on a software services company's balance sheet has no bearing on how capital-intensive the business is."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.045",
-    "title": "Excluding Overheads from Cost of Sales in Context",
-    "context": "Assess how gross profit is calculated before operating expenses are deducted from revenue. Evaluate the following economic assertions:",
-    "statements": [
-      "Compensation paid to customer-facing sales staff is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "If a software services company's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners.",
-      "Direct costs of the manufacturing process are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a printing business, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of general office staff is excluded from cost of sales because their work does not directly relate to producing the goods that are sold."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.046",
+    "case_id": "CASE 6.3.089",
     "title": "Calculating Gross Profit in Practice",
-    "context": "Assess why the operating result, also known as earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
+    "context": "Examine why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:",
     "statements": [
-      "A wholesale hardware supplier is considered financially sound when its capitalised development costs are financed mainly through accrued operating costs, since short-term liabilities are cheaper to arrange.",
-      "Wages earned by packing and shipping staff are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to the commercial sales team is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "The mix of capitalised development costs and outstanding customer invoices on a wholesale hardware supplier's balance sheet has no bearing on how capital-intensive the business is.",
-      "If a wholesale hardware supplier's retained earnings increase while share capital stays unchanged, the resulting rise in equity must have come from new shares issued to the owners."
+      "The balance between papermaking machinery and paper roll inventory on a paper mill's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "The wages of corporate finance staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "A ceramics manufacturer is regarded as financing its ceramics kilns and moulding equipment soundly only when they are covered mainly by short-term credit from clay suppliers.",
+      "The balance between ceramics kilns and moulding equipment and finished ceramics stock on a ceramics manufacturer's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Pay earned by outbound logistics coordinators is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
     ],
     "answer_key": [
       false,
       true,
-      true,
       false,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "FALSE — Financing long-term assets with current liabilities is risky, since short-term liabilities must soon be repaid or renewed.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — The asset mix directly reflects capital intensity: more non-current assets means a more capital-intensive business.",
-      "FALSE — With share capital unchanged, equity growth cannot come from new shares; it must stem from retained earnings."
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.047",
+    "case_id": "CASE 6.3.092",
     "title": "Calculating Gross Profit Explained",
-    "context": "Consider a printing business whose owner is reviewing the balance sheet to judge whether long-term assets are being financed appropriately. Evaluate the following economic assertions:",
+    "context": "Assess why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
     "statements": [
-      "Costs directly incurred to produce the units sold are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "For a pharmaceutical distributor, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement.",
-      "The pay of head office administrators is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "Wages earned by transport and delivery staff are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to field sales agents is kept out of cost of sales because selling activity takes place after the goods have already been produced."
+      "Amounts paid to telesales personnel are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "Direct labour incurred producing the units sold are included within cost of sales because they are incurred directly in producing the goods that a joinery and furniture workshop has sold.",
+      "The wages of administrative assistants are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by loading bay workers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "An automotive parts supplier is regarded as financing its assembly-line robotics soundly only when they are covered mainly by a short-term bank overdraft."
     ],
     "answer_key": [
       true,
       true,
       true,
       true,
-      true
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.048",
-    "title": "Calculating Gross Profit for Analysts",
-    "context": "Assess how the relative growth of revenue and cost of sales over time affects a business's gross profit margin. Evaluate the following economic assertions:",
-    "statements": [
-      "The pay of administrative staff is included within cost of sales because every employee ultimately contributes to a business's output.",
-      "Wages earned by delivery drivers are included within cost of sales because delivering the product is considered part of production.",
-      "Direct materials used in the goods sold are included within cost of sales because they are directly incurred in producing the goods a business sells.",
-      "Compensation paid to sales representatives is included within cost of sales because selling is necessary to generate revenue.",
-      "For a textile manufacturer, cost of sales reflects only the direct costs of producing what is sold, while administrative and selling costs sit further down the income statement."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "FALSE — Only direct production costs belong in cost of sales; administrative pay is excluded regardless of overall contribution.",
-      "FALSE — Delivery activity happens after production and is a distribution cost, not cost of sales.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour.",
-      "FALSE — Selling costs are operating expenses incurred after production, not cost of sales.",
-      "TRUE — Only direct production costs belong in cost of sales; administrative and selling costs appear separately."
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1441,29 +1111,29 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.049",
-    "title": "Calculating Gross Profit Over Time",
-    "context": "Consider how a single year's balance sheet or income statement can be misleading without wider context. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.094",
+    "title": "Calculating Gross Profit for Analysts",
+    "context": "Assess how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
     "statements": [
-      "Raw materials consumed in production are excluded from cost of sales because only cash payments count as production costs.",
-      "The pay of corporate support staff is excluded from cost of sales because their work does not directly relate to producing the goods that are sold.",
-      "For a furniture manufacturer, cost of sales includes administrative and selling costs because all costs eventually relate to sales.",
-      "The pay of office administrators is included within cost of sales because every employee ultimately contributes to a business's output.",
-      "Wages earned by warehouse dispatch staff are included within cost of sales because delivering the product is considered part of production."
+      "Amounts paid to regional sales agents are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "The balance between assembly-line robotics and spare automotive parts inventory on an automotive parts supplier's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Factory-floor wages tied directly to output produced are included within cost of sales because they are incurred directly in producing the goods that a plastics moulding company has sold.",
+      "The wages of office management personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "A commercial bakery chain is regarded as financing its ovens and proofing equipment soundly only when they are covered mainly by short-term credit from ingredient suppliers."
     ],
     "answer_key": [
-      false,
       true,
       false,
-      false,
+      true,
+      true,
       false
     ],
     "tactical_explanations": [
-      "FALSE — Cost of sales includes all direct production costs regardless of the timing of any related cash payment.",
-      "TRUE — Cost of sales reflects direct production costs only, not general administrative pay.",
-      "FALSE — Administrative and selling costs are excluded from cost of sales and reported separately.",
-      "FALSE — Only direct production costs belong in cost of sales; administrative pay is excluded regardless of overall contribution.",
-      "FALSE — Delivery activity happens after production and is a distribution cost, not cost of sales."
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1471,31 +1141,361 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.050",
-    "title": "Calculating Gross Profit in Context",
-    "context": "Consider why comparing financial statements across several years reveals trends invisible in one year alone. Evaluate the following economic assertions:",
+    "case_id": "CASE 6.3.095",
+    "title": "Calculating Gross Profit Over Time",
+    "context": "Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:",
     "statements": [
-      "Compensation paid to sales commission staff is included within cost of sales because selling is necessary to generate revenue.",
-      "Wages earned by loading dock workers are treated as a distribution cost rather than cost of sales, since they relate to delivering goods after production is complete.",
-      "Compensation paid to showroom sales staff is kept out of cost of sales because selling activity takes place after the goods have already been produced.",
-      "Direct production labour are excluded from cost of sales because only cash payments count as production costs.",
-      "Factory floor wages tied directly to output are included within cost of sales because they are directly incurred in producing the goods a business sells."
+      "The balance between ovens and proofing equipment and dough and ingredient stock on a commercial bakery chain's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "A marine equipment supplier is regarded as financing its dockside cranes and lifting gear soundly only when they are covered mainly by short-term credit from parts suppliers.",
+      "Pay earned by delivery fleet staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to the commercial sales force are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "The balance between dockside cranes and lifting gear and spare marine parts inventory on a marine equipment supplier's statements has no bearing on whether the business is becoming more or less capital-intensive."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.099",
+    "title": "Calculating Gross Profit in Context",
+    "context": "Assess how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:",
+    "statements": [
+      "A joinery and furniture workshop is regarded as financing its joinery workshop machinery soundly only when they are covered mainly by short-term credit from timber suppliers.",
+      "The direct cost of goods acquired for resale are included within cost of sales because they are incurred directly in producing the goods that a dairy cooperative has sold.",
+      "The balance between joinery workshop machinery and unsold furniture stock on a joinery and furniture workshop's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "A plastics moulding company is regarded as financing its injection-moulding machinery soundly only when they are covered mainly by short-term credit from resin suppliers.",
+      "The balance between injection-moulding machinery and moulded component stock on a plastics moulding company's statements has no bearing on whether the business is becoming more or less capital-intensive."
     ],
     "answer_key": [
       false,
       true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.101",
+    "title": "Understanding the Operating Result in Practice",
+    "context": "Assess how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:",
+    "statements": [
+      "A dairy cooperative is regarded as financing its chilling and pasteurising plant soundly only when they are covered mainly by short-term credit from feed suppliers.",
+      "The balance between chilling and pasteurising plant and dairy products awaiting delivery on a dairy cooperative's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "The wages of clerical support employees are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by freight dispatch clerks is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to customer account executives are excluded from cost of sales because selling activity takes place only after the goods have already been produced."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.103",
+    "title": "Understanding the Operating Result Explained",
+    "context": "Assess why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:",
+    "statements": [
+      "A mining equipment lessor is regarded as financing its heavy mining equipment held for hire soundly only when they are covered mainly by a short-term equipment rental payable.",
+      "The balance between heavy mining equipment held for hire and replacement parts inventory on a mining equipment lessor's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Production-line materials consumed in manufacturing are included within cost of sales because they are incurred directly in producing the goods that a mining equipment lessor has sold.",
+      "The wages of head office coordinators are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "A textile dyeing company is regarded as financing its dyeing vats and finishing lines soundly only when they are covered mainly by short-term credit from dye suppliers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.107",
+    "title": "Understanding the Operating Result for Analysts",
+    "context": "Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:",
+    "statements": [
+      "The balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Pay earned by transport scheduling staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "An appliance repair network is regarded as financing its diagnostic and repair equipment soundly only when they are covered mainly by short-term credit from components suppliers.",
+      "The balance between diagnostic and repair equipment and spare repair components on an appliance repair network's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Amounts paid to sales support staff are excluded from cost of sales because selling activity takes place only after the goods have already been produced."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.109",
+    "title": "Understanding the Operating Result Over Time",
+    "context": "Assess how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:",
+    "statements": [
+      "A seed and fertiliser distributor is regarded as financing its seed processing plant soundly only when they are covered mainly by short-term credit from seed suppliers.",
+      "The balance between seed processing plant and seed and fertiliser stock on a seed and fertiliser distributor's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Direct input costs of the manufacturing process are included within cost of sales because they are incurred directly in producing the goods that a textile dyeing company has sold.",
+      "A scaffolding rental firm is regarded as financing its scaffolding held for long-term hire soundly only when they are covered mainly by a short-term scaffolding materials payable.",
+      "The wages of general administrative staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold."
+    ],
+    "answer_key": [
+      false,
+      false,
       true,
       false,
       true
     ],
     "tactical_explanations": [
-      "FALSE — Selling costs are operating expenses incurred after production, not cost of sales.",
-      "TRUE — Delivery and shipping wages are distribution costs, incurred after production, not cost of sales.",
-      "TRUE — Selling costs are separate from production costs and excluded from cost of sales.",
-      "FALSE — Cost of sales includes all direct production costs regardless of the timing of any related cash payment.",
-      "TRUE — Cost of sales captures the direct costs of production, such as materials and direct labour."
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.110",
+    "title": "Understanding the Operating Result in Context",
+    "context": "Assess why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
+    "statements": [
+      "Pay earned by outbound packing staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "The balance between scaffolding held for long-term hire and scaffolding materials awaiting short-term hire on a scaffolding rental firm's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "Amounts paid to territory sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "An industrial cleaning company is regarded as financing its industrial cleaning machinery soundly only when they are covered mainly by short-term credit from chemical suppliers.",
+      "Direct labour hours spent producing the goods sold are included within cost of sales because they are incurred directly in producing the goods that an appliance repair network has sold."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.114",
+    "title": "Expenditure Versus Expense in Practice",
+    "context": "Assess how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:",
+    "statements": [
+      "The wages of office-based support personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by courier dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.",
+      "Amounts paid to the wholesale sales team are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "Materials directly used assembling the units sold are included within cost of sales because they are incurred directly in producing the goods that a seed and fertiliser distributor has sold.",
+      "The direct cost of inventory purchased for resale are included within cost of sales because they are incurred directly in producing the goods that a scaffolding rental firm has sold."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.118",
+    "title": "Expenditure Versus Expense Explained",
+    "context": "Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:",
+    "statements": [
+      "The balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company's statements has no bearing on whether the business is becoming more or less capital-intensive.",
+      "The wages of head office administrators are included within cost of sales because every employee contributes in some way to the goods that are sold.",
+      "Pay earned by despatch and loading staff is included within cost of sales because moving finished goods is considered part of manufacturing them.",
+      "The wages of head office clerical staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.",
+      "Pay earned by distribution warehouse staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.",
+      "FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.",
+      "FALSE — Distribution activity occurs after production and belongs outside cost of sales.",
+      "TRUE — Cost of sales reflects direct production costs only, not general administrative wages.",
+      "TRUE — Distribution wages are incurred after production and are not part of cost of sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.120",
+    "title": "Expenditure Versus Expense for Analysts",
+    "context": "Assess why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Amounts paid to account managers are included within cost of sales because generating sales is necessary before any revenue can be recognised.",
+      "Raw materials consumed directly in production are excluded from cost of sales because only costs paid in cash during the same month count toward it.",
+      "Amounts paid to key account managers are excluded from cost of sales because selling activity takes place only after the goods have already been produced.",
+      "The wages of payroll and accounts clerks are included within cost of sales because every employee contributes in some way to the goods that are sold.",
+      "Pay earned by outbound freight handlers is included within cost of sales because moving finished goods is considered part of manufacturing them."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.",
+      "FALSE — Cost of sales includes direct production costs regardless of the timing of any related cash payment.",
+      "TRUE — Selling costs occur after production and are excluded from cost of sales.",
+      "FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.",
+      "FALSE — Distribution activity occurs after production and belongs outside cost of sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.123",
+    "title": "Expenditure Versus Expense Over Time",
+    "context": "Consider why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
+    "statements": [
+      "Production costs directly tied to units manufactured are included within cost of sales because they are incurred directly in producing the goods that an industrial cleaning company has sold.",
+      "When a beverage bottling company buys a bottling line, only the depreciation charged in each period becomes an expense in that period's income statement, even though the full expenditure occurs at purchase.",
+      "Amounts paid to field sales representatives are included within cost of sales because generating sales is necessary before any revenue can be recognised.",
+      "Not every expenditure a beverage bottling company makes during a year shows up as an expense in that same year's income statement.",
+      "Not every expenditure a joinery and furniture workshop makes during a year shows up as an expense in that same year's income statement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.",
+      "TRUE — Capital expenditure becomes expense gradually, through depreciation, not all at once.",
+      "FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.",
+      "TRUE — Some expenditures are capitalised and expensed only gradually in future periods.",
+      "TRUE — Some expenditures are capitalised and expensed only gradually in future periods."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.124",
+    "title": "Expenditure Versus Expense in Context",
+    "context": "Consider how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
+    "statements": [
+      "When a plastics moulding company buys an injection-moulding machine, only the depreciation charged in each period becomes an expense in that period's income statement, even though the full expenditure occurs at purchase.",
+      "Direct factory labour on the production line are excluded from cost of sales because only costs paid in cash during the same month count toward it.",
+      "The wages of reception and clerical staff are included within cost of sales because every employee contributes in some way to the goods that are sold.",
+      "Pay earned by delivery drivers is included within cost of sales because moving finished goods is considered part of manufacturing them.",
+      "Amounts paid to the retail sales team are included within cost of sales because generating sales is necessary before any revenue can be recognised."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Capital expenditure becomes expense gradually, through depreciation, not all at once.",
+      "FALSE — Cost of sales includes direct production costs regardless of the timing of any related cash payment.",
+      "FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.",
+      "FALSE — Distribution activity occurs after production and belongs outside cost of sales.",
+      "FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity."
+    ],
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   }

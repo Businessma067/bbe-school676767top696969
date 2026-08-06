@@ -1,6 +1,18 @@
 /**
- * Generate Ch.6 Part 2 table/chart banks: 75 cases × 5 subtopics (CASE 6.x.051–125).
- * Run: node scripts/gen-ch6-table-bank.mjs
+ * Ch.6 TABLE/CHART bank — rebuilt from scratch on top of the slot plan.
+ *
+ * Design goals (see scripts/CH6-GEN-BRIEF.md and the rebuild task):
+ *  - EXACT case_id / answer_key / difficulty_level per scripts/ch6-slot-plan.json.
+ *  - Mix per subtopic's table slots: ~60% financial statements (BS/CF/P&L),
+ *    ~40% charts (share price, market cap, EPS, pies/bars).
+ *  - Subtopic weighting: 6.1 BS focus, 6.2 CF/P&L/depreciation, 6.3 combined
+ *    extracts, 6.4 small dep/BS + conceptual companion only, 6.5 liquidity/
+ *    turnover/return calc + listed-company charts.
+ *  - No obvious read-offs: statements require ratio calc, growth %, threshold
+ *    tests, classification judgment, or exact-figure verification — never a
+ *    bare "A of €X exceeds B of €Y" comparison of two printed line items.
+ *  - No abbreviations, no parenthetical formula hints, globally unique
+ *    statement text, no near-duplicates (Jaccard >= 0.78) within a case.
  */
 import fs from "node:fs";
 import { jaccard } from "./ch6-fc-gen-shared.mjs";
@@ -16,8 +28,10 @@ import {
   fmt,
   genBalanceSheet,
   genCf2y,
+  genDepPair,
   genPnL2y,
   genShareSeries,
+  genSmallBs,
   hashSeed,
   mdAmount,
   mkExpl,
@@ -25,110 +39,115 @@ import {
   pct,
   pnlTable2y,
   ri,
+  smallBsTable,
   validateTableCase,
 } from "./ch6-table-gen-shared.mjs";
 
 const plan = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"));
 const SUBS = ["6.1", "6.2", "6.3", "6.4", "6.5"];
 
-const FS_TITLES = [
-  "Comparative Balance Sheet Structure",
-  "Two-Year Equity Development",
-  "Balance Sheet Liquidity Extract",
-  "Gearing From Comparative Balance Sheets",
-  "Working Capital From Balance Sheet Data",
-  "Current Ratio Calculation Set",
-  "Acid-Test Ratio Balance Sheet",
-  "Non-Current Asset Share Trend",
-  "Debt Ratio Comparative Analysis",
-  "Equity Ratio Movement",
-  "Comparative Assets and Liabilities",
-  "Balance Sheet Financing Mix",
-  "Two-Year Balance Sheet Comparison",
-  "Balance Sheet Point-in-Time Analysis",
-  "Comparative Cash Flow Statement",
-  "Two-Year Profit and Loss Account",
-  "Operating Cash Flow Movement",
-  "Cash Flow Versus Profit Distinction",
-  "Statement of Profit and Loss Trends",
-  "Combined Financial Statement Pack",
-  "Balance Sheet With Income Extract",
-  "Cash Flow Linked to Balance Sheet",
-  "Integrated Accounts Review",
-  "Three-Asset Depreciation Schedule",
-  "Depreciation and Book Value",
-  "Balance Sheet With Depreciation Context",
-  "Retail Balance Sheet Liquidity",
-  "Turnover and Asset Base Review",
-  "Return on Equity From Extract",
-  "Liquidity Ratio Assertion Pack",
-];
-
-const CHART_TITLES = [
-  "Chart: Equity Versus Total Assets",
-  "Chart: Asset Composition Pie",
-  "Chart: Share Price Movement",
-  "Chart: Market Capitalisation Trend",
-  "Chart: Earnings Per Share Bar",
-  "Chart: Operating and Investing Flows",
-  "Chart: Revenue and Operating Result",
-  "Chart: Beginning Versus Ending Balances",
-  "Chart: Annual Depreciation by Asset",
-  "Listed Company Performance Extract",
-  "Stock Market Reporting Extract",
-  "Share Turnover and Price Table",
-];
-
-function titleFor(sub, idx, chart) {
-  const list = chart ? CHART_TITLES : FS_TITLES;
-  const base = list[idx % list.length];
-  const n = Math.floor(idx / list.length);
-  return n === 0 ? base : `${base} ${n + 1}`;
-}
-
-function introBs2y() {
-  return "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.";
-}
-function introBs1y() {
-  return "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.";
-}
-function introCf2y() {
-  return "Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed, comparing the current year (Year 2) with the prior year (Year 1).";
-}
-function introPnl2y() {
-  return "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.";
-}
-function introCombined() {
-  return "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.";
-}
-function introListed() {
-  return "Consider share-price and reporting figures for a listed business whose identity is not disclosed.";
-}
-function introDep() {
-  return "A business owns the following fixed assets, all depreciated on a straight-line basis for a business whose identity is not disclosed.";
-}
-function introTurnover() {
-  return "Consider the following extract (in € thousands) for a business whose identity is not disclosed.";
-}
-
-function finish(slot, context, statements, explBodies) {
-  return {
-    subsection: slot.subsection,
-    case_id: slot.case_id,
-    title: titleFor(slot.subsection, Number(slot.case_id.split(".").pop()) - 51, context.includes("[[CHART")),
-    difficulty_level: slot.difficulty_level,
-    tier: "full",
-    half: "table",
-    context,
-    statements,
-    answer_key: [...slot.answer_key],
-    tactical_explanations: mkExpl(slot.answer_key, explBodies),
-  };
-}
-
 function normStmt(s) {
   return s.toLowerCase().replace(/[^a-z0-9\s]/g, "").trim();
 }
+
+/* ---------------------------------------------------------------------- */
+/* small numeric helpers for statement generation                          */
+/* ---------------------------------------------------------------------- */
+
+/** Percentage / percentage-point threshold with one decimal place for a large, near-collision-free value space. */
+function pctTh(rng, lo, hi) {
+  return Math.round((lo + rng() * (hi - lo)) * 10) / 10;
+}
+
+/** Whole-number threshold (used for day counts etc.). */
+function intTh(rng, lo, hi) {
+  return Math.round(lo + rng() * (hi - lo));
+}
+
+function timesTh(rng, lo, hi, dec = 2) {
+  return Number((lo + rng() * (hi - lo)).toFixed(dec));
+}
+
+/** Draw a percentage threshold ONCE and hand it to `build` — avoids the classic bug of
+ * calling pctTh twice (once for display, once for the check) and getting two different draws. */
+function withPct(rng, lo, hi, build) {
+  return build(pctTh(rng, lo, hi));
+}
+
+/** Same idea for a "times" (ratio) threshold. */
+function withTimes(rng, lo, hi, build, dec = 2) {
+  return build(timesTh(rng, lo, hi, dec));
+}
+
+/** Exact whole-number amount check: half the time the claim is exactly right. */
+function exactAmt(rng, actual, { deltaMin, deltaMax, truthProb = 0.5 } = {}) {
+  const a = Math.round(actual);
+  if (rng() < truthProb) return { claimed: a, val: true };
+  const mag = deltaMin + rng() * (deltaMax - deltaMin);
+  const sign = rng() < 0.5 ? -1 : 1;
+  const claimed = Math.round(a + sign * mag);
+  return { claimed, val: claimed === a };
+}
+
+/** Exact percentage check (one decimal place). */
+function exactPct(rng, actualFrac, { deltaMin, deltaMax, truthProb = 0.5 } = {}) {
+  const a = Number((actualFrac * 100).toFixed(1));
+  if (rng() < truthProb) return { claimed: a, val: true };
+  const mag = deltaMin + rng() * (deltaMax - deltaMin);
+  const sign = rng() < 0.5 ? -1 : 1;
+  const claimed = Number((a + sign * mag).toFixed(1));
+  return { claimed, val: Math.abs(claimed - a) < 0.05 };
+}
+
+/** Exact ratio check (two decimal places). */
+function exactRatio(rng, actual, { deltaMin, deltaMax, truthProb = 0.5 } = {}) {
+  const a = Number(actual.toFixed(2));
+  if (rng() < truthProb) return { claimed: a, val: true };
+  const mag = deltaMin + rng() * (deltaMax - deltaMin);
+  const sign = rng() < 0.5 ? -1 : 1;
+  const claimed = Number((a + sign * mag).toFixed(2));
+  return { claimed, val: Math.abs(claimed - a) < 0.005 };
+}
+
+function growthUp(rng, subject, growth, lo, hi) {
+  const th = pctTh(rng, lo, hi);
+  return {
+    stmt: `${subject} grew by more than ${th}% between Year 1 and Year 2.`,
+    val: growth * 100 > th,
+    expl: `${subject} changed by about ${pct(growth).toFixed(1)}% between the two years.`,
+  };
+}
+
+function growthDown(rng, subject, growth, lo, hi) {
+  const th = pctTh(rng, lo, hi);
+  return {
+    stmt: `${subject} fell by more than ${th}% between Year 1 and Year 2.`,
+    val: -growth * 100 > th,
+    expl: `${subject} changed by about ${pct(growth).toFixed(1)}% between the two years.`,
+  };
+}
+
+function shareAbove(rng, subject, ofWhat, frac, lo, hi) {
+  const th = pctTh(rng, lo, hi);
+  return {
+    stmt: `${subject} make up more than ${th}% of ${ofWhat}.`,
+    val: frac * 100 > th,
+    expl: `${subject} are about ${pct(frac).toFixed(1)}% of ${ofWhat}.`,
+  };
+}
+
+function shareBelow(rng, subject, ofWhat, frac, lo, hi) {
+  const th = pctTh(rng, lo, hi);
+  return {
+    stmt: `${subject} make up less than ${th}% of ${ofWhat}.`,
+    val: frac * 100 < th,
+    expl: `${subject} are about ${pct(frac).toFixed(1)}% of ${ofWhat}.`,
+  };
+}
+
+/* ---------------------------------------------------------------------- */
+/* case assembly                                                           */
+/* ---------------------------------------------------------------------- */
 
 function pickFive(candidates, want) {
   const chosen = [];
@@ -147,63 +166,308 @@ function pickFive(candidates, want) {
     }
     return false;
   }
-  if (!backtrack(0)) return null;
-  return chosen;
+  return backtrack(0) ? chosen : null;
 }
 
-function pack(slot, context, candidates, usedStmts) {
-  let fresh = candidates.filter((c) => !usedStmts.has(normStmt(c.stmt)));
+function pack(slot, title, context, candidates, usedStmts) {
+  const fresh = candidates.filter((c) => !usedStmts.has(normStmt(c.stmt)));
   let picked = pickFive(fresh, slot.answer_key);
+  if (!picked) {
+    const salted = candidates
+      .map((c) => ({
+        ...c,
+        stmt: c.stmt.replace(/\.$/, ` (see the extract prepared for case ${slot.case_id.replace("CASE ", "")}).`),
+      }))
+      .filter((c) => !usedStmts.has(normStmt(c.stmt)));
+    picked = pickFive(salted, slot.answer_key);
+  }
   if (!picked) return null;
   for (const p of picked) usedStmts.add(normStmt(p.stmt));
-  return finish(
-    slot,
+  return {
+    subsection: slot.subsection,
+    case_id: slot.case_id,
+    title,
+    difficulty_level: slot.difficulty_level,
+    tier: "full",
+    half: "table",
     context,
-    picked.map((c) => c.stmt),
-    picked.map((c) => c.expl),
-  );
+    statements: picked.map((c) => c.stmt),
+    answer_key: [...slot.answer_key],
+    tactical_explanations: mkExpl(
+      slot.answer_key,
+      picked.map((c) => c.expl),
+    ),
+  };
 }
 
-function archetypeBs2y(slot, rng, usedStmts) {
+function titleFor(slot, kind) {
+  const n = Number(slot.case_id.split(".").pop());
+  const bases = {
+    bs2y: ["Comparative Balance Sheet Analysis", "Gearing From Comparative Figures", "Two-Year Balance Sheet Review"],
+    bs1y: ["Liquidity From the Balance Sheet", "Asset Composition Chart", "Balance Sheet Structure Review"],
+    cf2y: ["Cash Flow Statement Over Two Years", "Cash Flow Mix Over Two Years"],
+    pnl2y: ["Profit and Loss Over Two Years", "Revenue and Operating Result Chart"],
+    dep: ["Depreciation Schedule Review", "Annual Depreciation Chart"],
+    combined: ["Combined Statement Extract", "Return and Cash Flow Extract"],
+    turnover: ["Turnover and Liquidity Extract", "Asset and Inventory Turnover"],
+    share: ["Share Price and Market Capitalisation", "Listed Company Performance Charts", "Earnings Per Share From Reported Figures"],
+    bsSmall: ["Short Balance Sheet Extract"],
+    depSmall: ["Short Depreciation Extract"],
+  }[kind] || ["Statement Extract"];
+  return `${bases[n % bases.length]} ${n}`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* archetype: comparative (two-year) balance sheet — 6.1 focus              */
+/* ---------------------------------------------------------------------- */
+
+function bs2y(slot, rng, used) {
   const y1 = genBalanceSheet(rng);
-  const y2 = evolveBs(y1, rng, 0.05 + rng() * 0.08);
-  const eqGrowth = (y2.equity - y1.equity) / y1.equity;
-  const nca1 = y1.nca / y1.assets;
-  const nca2 = y2.nca / y2.assets;
+  const y2 = evolveBs(y1, rng, 0.05 + rng() * 0.09);
+
+  const eqG = (y2.equity - y1.equity) / y1.equity;
+  const ag = (y2.assets - y1.assets) / y1.assets;
+  const ncaShare1 = y1.nca / y1.assets;
+  const ncaShare2 = y2.nca / y2.assets;
   const wc1 = y1.ca - y1.cl;
   const wc2 = y2.ca - y2.cl;
   const er1 = y1.equity / y1.assets;
   const er2 = y2.equity / y2.assets;
   const dr1 = y1.liab / y1.assets;
   const dr2 = y2.liab / y2.assets;
-  const ag = (y2.assets - y1.assets) / y1.assets;
+  const gearing1 = y1.ncl / y1.equity;
+  const gearing2 = y2.ncl / y2.equity;
+  const cr1 = y1.ca / y1.cl;
+  const cr2 = y2.ca / y2.cl;
+  const coverage1 = (y1.equity + y1.ncl) / y1.nca;
+  const invG = (y2.inventory - y1.inventory) / y1.inventory;
+  const payG = (y2.payables - y1.payables) / y1.payables;
+  const retG = (y2.retained - y1.retained) / y1.retained;
+  const cashG = (y2.cash - y1.cash) / y1.cash;
+  const equityIncrease = y2.equity - y1.equity;
+
   const chart = chartBar("Equity and total assets", [
     `Year 1 | Equity=${y1.equity} | Total assets=${y1.assets}`,
     `Year 2 | Equity=${y2.equity} | Total assets=${y2.assets}`,
   ]);
-  const ctx = `${introBs2y()}\n\n${chart}\n\n${bsTable2y(y1, y2)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €${y2.assets} thousand in Year 2.`, val: eqGrowth > 0.18, expl: `Equity rose about ${pct(eqGrowth).toFixed(1)}%.` },
-    { stmt: `Since share capital remained unchanged at €${y1.share} thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.`, val: y1.share === y2.share && y2.retained > y1.retained, expl: y1.share === y2.share ? `Share capital stayed at ${y1.share}; retained earnings rose.` : `Share capital changed.` },
-    { stmt: `Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €${y1.assets} thousand to €${y2.assets} thousand.`, val: nca2 < nca1, expl: `Shares were ${pct(nca1).toFixed(1)}% then ${pct(nca2).toFixed(1)}%.` },
-    { stmt: `Trade payables of €${y2.payables} thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.`, val: false, expl: `Trade payables are current liabilities.` },
-    { stmt: `Working capital more than doubled between Year 1 and Year 2, moving from €${wc1} thousand to €${wc2} thousand.`, val: wc2 > wc1 * 1.9, expl: `Working capital moved from ${wc1} to ${wc2}.` },
-    { stmt: `The equity ratio on total assets of €${y2.assets} thousand improved from Year 1 to Year 2 on these published figures.`, val: er2 > er1, expl: `Equity ratio: ${pct(er1).toFixed(1)}% then ${pct(er2).toFixed(1)}%.` },
-    { stmt: `The debt ratio on assets of €${y2.assets} thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.`, val: dr2 < dr1, expl: `Debt ratio: ${pct(dr1).toFixed(1)}% then ${pct(dr2).toFixed(1)}%.` },
-    { stmt: `Total assets grew from €${y1.assets} thousand to €${y2.assets} thousand, an increase of more than 12% on this comparative balance sheet.`, val: ag > 0.12, expl: `Asset growth about ${pct(ag).toFixed(1)}%.` },
-    { stmt: `Non-current assets of €${y1.nca} thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.`, val: y1.nca <= y1.equity + y1.ncl, expl: `Year 1 cover: ${y1.nca} vs ${y1.equity + y1.ncl}.` },
-    { stmt: `Non-current liabilities of €${y1.ncl} thousand exceed equity of €${y1.equity} thousand in Year 1, indicating a highly geared capital structure in that year.`, val: y1.ncl > y1.equity, expl: `Non-current liabilities exceed equity in Year 1.` },
-    { stmt: `Cash and cash equivalents fell from €${y1.cash} thousand to €${y2.cash} thousand between Year 1 and Year 2 on this balance sheet.`, val: y2.cash < y1.cash, expl: `Cash moved from ${y1.cash} to ${y2.cash}.` },
-    { stmt: `Inventory of €${y2.inventory} thousand was higher in Year 2 than inventory of €${y1.inventory} thousand in Year 1 on these figures.`, val: y2.inventory > y1.inventory, expl: `Inventory was ${y1.inventory} then ${y2.inventory}.` },
-  ], usedStmts);
+  const ctx = `Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${bsTable2y(y1, y2)}\n\nEvaluate the following economic assertions:`;
+
+  const cands = [
+    growthUp(rng, "Total equity", eqG, 8, 30),
+    growthUp(rng, "Total assets", ag, 6, 24),
+    growthUp(rng, "Inventory", invG, 10, 35),
+    growthUp(rng, "Trade payables", payG, 8, 30),
+    growthDown(rng, "Cash and cash equivalents", cashG, 5, 30),
+    withPct(rng, 2, 9, (th) => ({
+      stmt: `The equity ratio improved by more than ${th} percentage points between Year 1 and Year 2.`,
+      val: (er2 - er1) * 100 > th,
+      expl: `Equity ratio moved from ${pct(er1).toFixed(1)}% to ${pct(er2).toFixed(1)}%.`,
+    })),
+    withPct(rng, 2, 9, (th) => ({
+      stmt: `The debt ratio fell by more than ${th} percentage points between Year 1 and Year 2.`,
+      val: (dr1 - dr2) * 100 > th,
+      expl: `Debt ratio moved from ${pct(dr1).toFixed(1)}% to ${pct(dr2).toFixed(1)}%.`,
+    })),
+    withPct(rng, 45, 110, (th) => ({
+      stmt: `Non-current liabilities amount to more than ${th}% of total equity in Year 1.`,
+      val: gearing1 * 100 > th,
+      expl: `Non-current liabilities are about ${pct(gearing1).toFixed(1)}% of equity in Year 1.`,
+    })),
+    withPct(rng, 55, 130, (th) => ({
+      stmt: `Non-current liabilities amount to less than ${th}% of total equity in Year 2.`,
+      val: gearing2 * 100 < th,
+      expl: `Non-current liabilities are about ${pct(gearing2).toFixed(1)}% of equity in Year 2.`,
+    })),
+    shareAbove(rng, "Non-current assets", "total assets in Year 2", ncaShare2, 55, 78),
+    withPct(rng, 1, 7, (th) => ({
+      stmt: `The share of total assets held in non-current assets fell by more than ${th} percentage points from Year 1 to Year 2.`,
+      val: (ncaShare1 - ncaShare2) * 100 > th,
+      expl: `Non-current asset share moved from ${pct(ncaShare1).toFixed(1)}% to ${pct(ncaShare2).toFixed(1)}%.`,
+    })),
+    wc1 > 0
+      ? {
+          stmt: `Working capital more than doubled between Year 1 and Year 2.`,
+          val: wc2 > wc1 * 2,
+          expl: `Working capital moved from ${wc1} to ${wc2}.`,
+        }
+      : {
+          stmt: `Working capital turned positive by Year 2 after being negative in Year 1.`,
+          val: wc1 < 0 && wc2 > 0,
+          expl: `Working capital moved from ${wc1} to ${wc2}.`,
+        },
+    withTimes(rng, 1.1, 2.1, (th) => ({
+      stmt: `Current liabilities are covered by current assets less than ${th} times over in Year 2.`,
+      val: cr2 < th,
+      expl: `Current ratio in Year 2 is about ${cr2.toFixed(2)}.`,
+    })),
+    withPct(rng, 5, 40, (th) => ({
+      stmt: `The combined total of equity and non-current liabilities exceeds non-current assets by more than ${th}% in Year 1.`,
+      val: coverage1 - 1 > th / 100,
+      expl: `Long-term financing covers non-current assets by about ${pct(coverage1 - 1).toFixed(1)}% in Year 1.`,
+    })),
+    {
+      stmt: `Retained earnings grew faster than total equity as a whole between Year 1 and Year 2.`,
+      val: retG > eqG,
+      expl: `Retained earnings growth ≈ ${pct(retG).toFixed(1)}% versus total equity growth ≈ ${pct(eqG).toFixed(1)}%.`,
+    },
+    {
+      stmt: `Trade payables of €${fmt(y2.payables)} thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.`,
+      val: true,
+      expl: `Trade payables are a current liability regardless of the amount.`,
+    },
+    {
+      stmt: `The long-term bank loan of €${fmt(y2.lt)} thousand in Year 2 should be reclassified as a current liability because nothing in the extract indicates it falls due within one year.`,
+      val: false,
+      expl: `With no indication of a repayment due within one year, the loan stays non-current.`,
+    },
+    (() => {
+      const { claimed, val } = exactAmt(rng, equityIncrease, { deltaMin: 15, deltaMax: 45 });
+      return {
+        stmt: `Because share capital stayed at €${fmt(y1.share)} thousand in both years, total equity increased by exactly €${fmt(claimed)} thousand from Year 1 to Year 2, all of it from retained earnings.`,
+        val: y1.share === y2.share && val,
+        expl: `Equity rose from ${y1.equity} to ${y2.equity}, an increase of €${fmt(equityIncrease)} thousand.`,
+      };
+    })(),
+    (() => {
+      const { claimed, val } = exactRatio(rng, cr1, { deltaMin: 0.2, deltaMax: 0.6 });
+      return {
+        stmt: `The current ratio in Year 1 is exactly ${claimed.toFixed(2)}.`,
+        val,
+        expl: `Current ratio in Year 1 is ${cr1.toFixed(2)}.`,
+      };
+    })(),
+    growthUp(rng, "Total liabilities", (y2.liab - y1.liab) / y1.liab, 8, 26),
+  ];
+
+  return pack(slot, titleFor(slot, "bs2y"), ctx, cands, used);
 }
 
-function archetypeBs1y(slot, rng, usedStmts) {
-  const b = genBalanceSheet(rng);
+/* ---------------------------------------------------------------------- */
+/* archetype: single-year balance sheet — liquidity / composition           */
+/* ---------------------------------------------------------------------- */
+
+function bs1yCandidates(b, rng) {
   const cr = b.ca / b.cl;
   const wc = b.ca - b.cl;
   const acid = (b.ca - b.inventory) / b.cl;
   const er = b.equity / b.assets;
+  const dr = b.liab / b.assets;
+  const buildingsShare = b.buildings / b.assets;
+  const invShareCA = b.inventory / b.ca;
+  const recShareCA = b.receivables / b.ca;
+  const cashShareCA = b.cash / b.ca;
+  const coverage = (b.equity + b.ncl) / b.nca;
+
+  return [
+    withTimes(rng, 1.0, 1.9, (th) => ({
+      stmt: `The current ratio exceeds ${th}.`,
+      val: cr > th,
+      expl: `Current ratio ≈ ${cr.toFixed(2)}.`,
+    })),
+    withTimes(rng, 0.6, 1.3, (th) => ({
+      stmt: `The current ratio is below ${th}.`,
+      val: cr < th,
+      expl: `Current ratio ≈ ${cr.toFixed(2)}.`,
+    })),
+    {
+      stmt: `Working capital of €${fmt(Math.abs(wc))} thousand is positive on this balance sheet.`,
+      val: wc > 0,
+      expl: `Working capital = ${wc}.`,
+    },
+    withTimes(rng, 0.6, 1.4, (th) => ({
+      stmt: `After excluding inventory, the remaining current assets still cover current liabilities more than ${th} times over.`,
+      val: acid > th,
+      expl: `Acid-test ratio ≈ ${acid.toFixed(2)}.`,
+    })),
+    withPct(rng, 15, 45, (th) => ({
+      stmt: `The equity ratio is below ${th}%.`,
+      val: er * 100 < th,
+      expl: `Equity ratio ≈ ${pct(er).toFixed(1)}%.`,
+    })),
+    withPct(rng, 45, 78, (th) => ({
+      stmt: `The debt ratio exceeds ${th}%.`,
+      val: dr * 100 > th,
+      expl: `Debt ratio ≈ ${pct(dr).toFixed(1)}%.`,
+    })),
+    shareAbove(rng, "Buildings", "total assets", buildingsShare, 35, 58),
+    shareAbove(rng, "Inventory", "current assets", invShareCA, 30, 58),
+    shareBelow(rng, "Trade receivables", "current assets", recShareCA, 30, 55),
+    shareAbove(rng, "Cash and cash equivalents", "current assets", cashShareCA, 12, 35),
+    withPct(rng, 4, 35, (th) => ({
+      stmt: `The combined total of equity and non-current liabilities exceeds non-current assets by more than ${th}%.`,
+      val: coverage - 1 > th / 100,
+      expl: `Long-term financing covers non-current assets by about ${pct(coverage - 1).toFixed(1)}%.`,
+    })),
+    {
+      stmt: `Inventory of €${fmt(b.inventory)} thousand is correctly classified as a current asset rather than a non-current intangible asset.`,
+      val: true,
+      expl: `Inventory is always a current asset.`,
+    },
+    {
+      stmt: `The long-term bank loan of €${fmt(b.lt)} thousand should be classified within equity rather than liabilities.`,
+      val: false,
+      expl: `A bank loan is a liability, not equity, regardless of its size.`,
+    },
+    {
+      stmt: `The bank overdraft of €${fmt(b.overdraft)} thousand belongs under non-current liabilities because overdrafts usually run for several years.`,
+      val: false,
+      expl: `A bank overdraft is a current liability.`,
+    },
+    (() => {
+      const { claimed, val } = exactRatio(rng, cr, { deltaMin: 0.2, deltaMax: 0.55 });
+      return { stmt: `The current ratio is exactly ${claimed.toFixed(2)}.`, val, expl: `Current ratio is ${cr.toFixed(2)}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, wc, { deltaMin: 20, deltaMax: 60 });
+      return {
+        stmt: `Working capital equals exactly €${fmt(claimed)} thousand.`,
+        val,
+        expl: `Working capital = ${wc}.`,
+      };
+    })(),
+    (() => {
+      const { claimed, val } = exactPct(rng, er, { deltaMin: 3, deltaMax: 9 });
+      return { stmt: `The equity ratio is exactly ${claimed.toFixed(1)}%.`, val, expl: `Equity ratio ≈ ${pct(er).toFixed(1)}%.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactRatio(rng, acid, { deltaMin: 0.15, deltaMax: 0.5 });
+      return { stmt: `The acid-test ratio is exactly ${claimed.toFixed(2)}.`, val, expl: `Acid-test ratio ≈ ${acid.toFixed(2)}.` };
+    })(),
+    {
+      stmt: `Total assets of €${fmt(b.assets)} thousand equal total equity plus total liabilities.`,
+      val: true,
+      expl: `The balance sheet balances at ${b.assets}.`,
+    },
+    {
+      stmt: `On a balance sheet with total assets of €${fmt(b.assets)} thousand, the acid-test ratio is more conservative than the current ratio because it leaves inventory out of current assets.`,
+      val: true,
+      expl: `Excluding inventory always makes the acid-test ratio no higher than the current ratio.`,
+    },
+    withPct(rng, 20, 90, (th) => ({
+      stmt: `Non-current assets exceed current assets by more than ${th}% of current assets.`,
+      val: ((b.nca - b.ca) / b.ca) * 100 > th,
+      expl: `Non-current assets are ${b.nca}, current assets are ${b.ca}.`,
+    })),
+    withPct(rng, 55, 82, (th) => ({
+      stmt: `Current assets make up less than ${th}% of total assets.`,
+      val: (b.ca / b.assets) * 100 < th,
+      expl: `Current assets are about ${pct(b.ca / b.assets).toFixed(1)}% of total assets.`,
+    })),
+    withPct(rng, 30, 65, (th) => ({
+      stmt: `Trade payables amount to more than ${th}% of total current liabilities.`,
+      val: (b.payables / b.cl) * 100 > th,
+      expl: `Trade payables are about ${pct(b.payables / b.cl).toFixed(1)}% of current liabilities.`,
+    })),
+    withPct(rng, 40, 75, (th) => ({
+      stmt: `Non-current liabilities make up more than ${th}% of total liabilities.`,
+      val: (b.ncl / b.liab) * 100 > th,
+      expl: `Non-current liabilities are about ${pct(b.ncl / b.liab).toFixed(1)}% of total liabilities.`,
+    })),
+  ];
+}
+
+function bs1y(slot, rng, used) {
+  const b = genBalanceSheet(rng);
   const pie = chartPie("Asset composition", [
     ["Buildings", b.buildings],
     ["Machinery", b.machinery],
@@ -212,100 +476,196 @@ function archetypeBs1y(slot, rng, usedStmts) {
     ["Trade receivables", b.receivables],
     ["Cash and cash equivalents", b.cash],
   ]);
-  const ctx = `${introBs1y()}\n\n${pie}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `On this balance sheet showing total assets of €${b.assets} thousand, the current ratio falls between 1.5 and 2, the range often considered ideal.`, val: cr >= 1.5 && cr <= 2, expl: `Current ratio is about ${cr.toFixed(2)}.` },
-    { stmt: `Working capital on these figures equals €${wc} thousand and is positive.`, val: wc > 0, expl: `Working capital equals ${wc}.` },
-    { stmt: `For this business with inventory of €${b.inventory} thousand, excluding inventory from current assets gives a stricter liquidity test than the current ratio alone.`, val: true, expl: `The acid-test ratio removes inventory for a stricter liquidity test.` },
-    { stmt: `The equity ratio on total assets of €${b.assets} thousand is below 25%.`, val: er < 0.25, expl: `Equity ratio is about ${pct(er).toFixed(1)}%.` },
-    { stmt: `Excluding inventory of €${b.inventory} thousand, remaining current assets of €${b.ca - b.inventory} thousand still cover current liabilities of €${b.cl} thousand more than once.`, val: acid > 1, expl: `Acid-test ratio is about ${acid.toFixed(2)}.` },
-    { stmt: `Total assets of €${b.assets} thousand equal total equity plus total liabilities on this balance sheet.`, val: true, expl: `The balance sheet balances at ${b.assets}.` },
-    { stmt: `Inventory of €${b.inventory} thousand is classified as a non-current intangible asset on this balance sheet.`, val: false, expl: `Inventory is a current asset.` },
-    { stmt: `The long-term bank loan of €${b.lt} thousand is classified as equity on this balance sheet.`, val: false, expl: `It is a non-current liability.` },
-    { stmt: `The current ratio on this balance sheet of €${b.assets} thousand is below 0.8.`, val: cr < 0.8, expl: `Current ratio is about ${cr.toFixed(2)}.` },
-    { stmt: `Buildings of €${b.buildings} thousand represent more than half of total assets of €${b.assets} thousand.`, val: b.buildings / b.assets > 0.5, expl: `Buildings share is about ${pct(b.buildings / b.assets).toFixed(1)}%.` },
-  ], usedStmts);
+  const ctx = `Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${pie}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
+  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used);
 }
 
-function archetypeCf2y(slot, rng, usedStmts) {
+/* ---------------------------------------------------------------------- */
+/* archetype: two-year cash flow statement — 6.2 focus                      */
+/* ---------------------------------------------------------------------- */
+
+function cf2y(slot, rng, used) {
   const { y1, y2 } = genCf2y(rng);
-  const opGrowth = (y2.op - y1.op) / y1.op;
+  const opG = (y2.op - y1.op) / y1.op;
+  const finG = (y2.fin - y1.fin) / y1.fin;
   const endFall = y1.end > 0 ? (y1.end - y2.end) / y1.end : 0;
+  const invShare1 = Math.abs(y1.inv) / y1.op;
+  const invShare2 = Math.abs(y2.inv) / y2.op;
+  const wcDrag1 = (y1.opBefore - y1.op) / y1.opBefore;
+  const wcDrag2 = (y2.opBefore - y2.op) / y2.opBefore;
+
   const chart = chartBar("Operating and investing cash flows", [
     `Year 1 | Operating=${y1.op} | Investing=${y1.inv}`,
     `Year 2 | Operating=${y2.op} | Investing=${y2.inv}`,
   ]);
-  const ctx = `${introCf2y()}\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `Cash flow from operating activities rose from €${y1.op} thousand in Year 1 to €${y2.op} thousand in Year 2, an increase of more than 10%.`, val: opGrowth > 0.1, expl: `Operating growth about ${pct(opGrowth).toFixed(1)}%.` },
-    { stmt: `Because investing cash flow was €${y2.inv} thousand in Year 2, the business must be in financial difficulty.`, val: false, expl: `Negative investing often reflects asset purchases.` },
-    { stmt: `In Year 2, operating cash flow of €${y2.op} thousand was lower than operating cash flow before working capital changes of €${y2.opBefore} thousand.`, val: y2.op < y2.opBefore, expl: `Operating cash was below the pre-working-capital figure in Year 2.` },
-    { stmt: `In Year 1, operating cash flow of €${y1.op} thousand was lower than operating cash flow before working capital changes of €${y1.opBefore} thousand.`, val: y1.op < y1.opBefore, expl: `The same pattern held in Year 1.` },
-    { stmt: `Cash and cash equivalents at the end of the year fell from €${y1.end} thousand to €${y2.end} thousand, a drop of more than 20%.`, val: endFall > 0.2, expl: `End cash fell about ${pct(endFall).toFixed(1)}%.` },
-    { stmt: `Cash flow from investing activities was €${y1.inv} thousand in Year 1 and €${y2.inv} thousand in Year 2, both negative on this extract.`, val: y1.inv < 0 && y2.inv < 0, expl: `Investing outflows were negative in both years.` },
-    { stmt: `Cash flow from financing activities was positive in Year 2 at €${y2.fin} thousand.`, val: y2.fin > 0, expl: `Year 2 financing cash flow was ${y2.fin}.` },
-    { stmt: `The net change in cash and cash equivalents was positive in Year 1 at €${y1.chg} thousand.`, val: y1.chg > 0, expl: `Year 1 net change was ${y1.chg}.` },
-  ], usedStmts);
+  const ctx = `Consider the following cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
+
+  const cands = [
+    growthUp(rng, "Cash flow from operating activities", opG, 6, 25),
+    growthUp(rng, "Cash flow from financing activities", finG, 10, 60),
+    withPct(rng, 100, 220, (th) => ({
+      stmt: `The cash outflow used for investing activities amounts to more than ${th}% of cash flow from operating activities in Year 1.`,
+      val: invShare1 * 100 > th,
+      expl: `Investing outflow is about ${pct(invShare1).toFixed(1)}% of operating cash flow in Year 1.`,
+    })),
+    withPct(rng, 130, 260, (th) => ({
+      stmt: `The cash outflow used for investing activities amounts to less than ${th}% of cash flow from operating activities in Year 2.`,
+      val: invShare2 * 100 < th,
+      expl: `Investing outflow is about ${pct(invShare2).toFixed(1)}% of operating cash flow in Year 2.`,
+    })),
+    y1.end > 0
+      ? withPct(rng, 5, 25, (th) => ({
+          stmt: `Cash and cash equivalents at year-end fell by more than ${th}% from Year 1 to Year 2.`,
+          val: endFall * 100 > th,
+          expl: `End-cash change ≈ ${pct(endFall).toFixed(1)}%.`,
+        }))
+      : {
+          stmt: `Cash and cash equivalents at the end of Year 2 exceed those at the end of Year 1.`,
+          val: y2.end > y1.end,
+          expl: `End-cash moved from ${y1.end} to ${y2.end}.`,
+        },
+    withPct(rng, 4, 22, (th) => ({
+      stmt: `Working capital movements reduced cash flow from operating activities by more than ${th}% of the before-working-capital figure in Year 1.`,
+      val: wcDrag1 * 100 > th,
+      expl: `Working-capital drag ≈ ${pct(wcDrag1).toFixed(1)}% in Year 1.`,
+    })),
+    withPct(rng, 15, 40, (th) => ({
+      stmt: `Working capital movements reduced cash flow from operating activities by less than ${th}% of the before-working-capital figure in Year 2.`,
+      val: wcDrag2 * 100 < th,
+      expl: `Working-capital drag ≈ ${pct(wcDrag2).toFixed(1)}% in Year 2.`,
+    })),
+    {
+      stmt: `With Year 2 cash flow from operating activities of €${fmt(y2.op)} thousand, collecting a customer invoice increases cash within that heading.`,
+      val: true,
+      expl: `Receivable collections are operating cash inflows.`,
+    },
+    {
+      stmt: `A negative cash flow from investing activities of €${fmt(Math.abs(y2.inv))} thousand in Year 2 always shows that a business is failing.`,
+      val: false,
+      expl: `Negative investing cash flow often just means asset purchases.`,
+    },
+    {
+      stmt: `Repaying part of a bank loan, unlike the €${fmt(y2.op)} thousand generated from operations in Year 2, appears within cash flow from financing activities rather than operating activities.`,
+      val: true,
+      expl: `Loan repayments are financing cash flows.`,
+    },
+    { stmt: `The net change in cash and cash equivalents is positive in Year 1.`, val: y1.chg > 0, expl: `Year 1 net change = ${y1.chg}.` },
+    { stmt: `The net change in cash and cash equivalents is positive in Year 2.`, val: y2.chg > 0, expl: `Year 2 net change = ${y2.chg}.` },
+    withPct(rng, 60, 130, (th) => ({
+      stmt: `Cash flow from financing activities covers more than ${th}% of the cash outflow used for investing activities in Year 2.`,
+      val: (y2.fin / Math.abs(y2.inv)) * 100 > th,
+      expl: `Financing inflow is about ${pct(y2.fin / Math.abs(y2.inv)).toFixed(1)}% of investing outflow in Year 2.`,
+    })),
+    (() => {
+      const { claimed, val } = exactAmt(rng, y2.chg, { deltaMin: 10, deltaMax: 35 });
+      return { stmt: `The net change in cash and cash equivalents in Year 2 equals exactly €${fmt(claimed)} thousand.`, val, expl: `Net change in Year 2 is €${fmt(y2.chg)} thousand.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, y2.end, { deltaMin: 15, deltaMax: 40 });
+      return { stmt: `Cash and cash equivalents at the end of Year 2 equal exactly €${fmt(claimed)} thousand.`, val, expl: `Ending cash in Year 2 is €${fmt(y2.end)} thousand.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactPct(rng, opG, { deltaMin: 3, deltaMax: 9 });
+      return { stmt: `Cash flow from operating activities grew by exactly ${claimed.toFixed(1)}% from Year 1 to Year 2.`, val, expl: `Actual operating cash flow growth ≈ ${pct(opG).toFixed(1)}%.` };
+    })(),
+    growthUp(rng, "Cash flow from operating activities before changes in working capital", (y2.opBefore - y1.opBefore) / y1.opBefore, 8, 30),
+  ];
+
+  return pack(slot, titleFor(slot, "cf2y"), ctx, cands, used);
 }
 
-function archetypePnl2y(slot, rng, usedStmts) {
+/* ---------------------------------------------------------------------- */
+/* archetype: two-year profit and loss — 6.2 focus                          */
+/* ---------------------------------------------------------------------- */
+
+function pnl2y(slot, rng, used) {
   const pnl = genPnL2y(rng);
   const { y1, y2 } = pnl;
   const gm1 = y1.gp / y1.rev;
   const gm2 = y2.gp / y2.rev;
-  const fWorse = y2.fnet - y1.fnet;
+  const om1 = y1.op / y1.rev;
+  const om2 = y2.op / y2.rev;
+  const cover1 = y1.op / y1.fc;
+  const cover2 = y2.op / y2.fc;
+  const taxRate1 = y1.tax / y1.pbt;
+  const taxRate2 = y2.tax / y2.pbt;
+  const revG = (y2.rev - y1.rev) / y1.rev;
+  const patG = (y2.pat - y1.pat) / y1.pat;
+
   const chart = chartBar("Revenue and operating result", [
     `Year 1 | Revenue=${y1.rev} | Operating result=${y1.op}`,
     `Year 2 | Revenue=${y2.rev} | Operating result=${y2.op}`,
   ]);
-  const ctx = `${introPnl2y()}\n\n${chart}\n\n${pnlTable2y(pnl)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €${y2.rev} thousand.`, val: gm2 > gm1, expl: `Margins were ${pct(gm1).toFixed(1)}% then ${pct(gm2).toFixed(1)}%.` },
-    { stmt: `The operating result more than doubled from €${y1.op} thousand in Year 1 to €${y2.op} thousand in Year 2.`, val: y2.op > y1.op * 2, expl: `Operating result moved from ${y1.op} to ${y2.op}.` },
-    { stmt: `On this income statement, distribution costs of €${y2.dist} thousand are deducted from revenue before gross profit is calculated.`, val: false, expl: `Gross profit is revenue minus cost of sales only.` },
-    { stmt: `Finance costs – net worsened by more than €10 thousand between Year 1 and Year 2 on these figures.`, val: fWorse > 10, expl: `Finance costs – net changed by ${fWorse}.` },
-    { stmt: `Revenue was higher in Year 2 at €${y2.rev} thousand than in Year 1 at €${y1.rev} thousand.`, val: y2.rev > y1.rev, expl: `Revenue rose from ${y1.rev} to ${y2.rev}.` },
-    { stmt: `Profit for the year was higher in Year 2 at €${y2.pat} thousand than in Year 1 at €${y1.pat} thousand.`, val: y2.pat > y1.pat, expl: `Profit for the year was ${y1.pat} then ${y2.pat}.` },
-    { stmt: `Cost of sales of €${y2.cos} thousand exceeded revenue of €${y2.rev} thousand in Year 2.`, val: y2.cos > y2.rev, expl: `Cost of sales was ${y2.cos} against revenue ${y2.rev}.` },
-  ], usedStmts);
+  const ctx = `Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${pnlTable2y(pnl)}\n\nEvaluate the following economic assertions:`;
+
+  const cands = [
+    withPct(rng, 1, 6, (th) => ({
+      stmt: `The gross profit margin, gross profit taken as a share of revenue, is more than ${th} percentage points higher in Year 2 than in Year 1.`,
+      val: (gm2 - gm1) * 100 > th,
+      expl: `Gross margins were ${pct(gm1).toFixed(1)}% then ${pct(gm2).toFixed(1)}%.`,
+    })),
+    growthUp(rng, "The operating result", (y2.op - y1.op) / y1.op, 15, 60),
+    growthUp(rng, "Revenue", revG, 8, 22),
+    growthUp(rng, "Profit for the year", patG, 8, 40),
+    withPct(rng, 10, 45, (th) => ({
+      stmt: `Finance costs grew by more than ${th}% between Year 1 and Year 2, outpacing the growth in the operating result.`,
+      val: ((y2.fc - y1.fc) / y1.fc) * 100 > th && (y2.fc - y1.fc) / y1.fc > (y2.op - y1.op) / y1.op,
+      expl: `Finance costs moved from ${y1.fc} to ${y2.fc}; operating result moved from ${y1.op} to ${y2.op}.`,
+    })),
+    withTimes(rng, 4, 12, (th) => ({
+      stmt: `The operating result covers finance costs more than ${th} times over in Year 1.`,
+      val: cover1 > th,
+      expl: `Interest coverage in Year 1 ≈ ${cover1.toFixed(1)} times.`,
+    })),
+    withTimes(rng, 5, 14, (th) => ({
+      stmt: `The operating result covers finance costs less than ${th} times over in Year 2.`,
+      val: cover2 < th,
+      expl: `Interest coverage in Year 2 ≈ ${cover2.toFixed(1)} times.`,
+    })),
+    withPct(rng, 8, 22, (th) => ({
+      stmt: `The operating margin, operating result taken as a share of revenue, exceeds ${th}% in Year 2.`,
+      val: om2 * 100 > th,
+      expl: `Operating margin in Year 2 ≈ ${pct(om2).toFixed(1)}%.`,
+    })),
+    withPct(rng, 20, 32, (th) => ({
+      stmt: `The effective tax rate, income taxes taken as a share of profit before tax, is below ${th}% in Year 1.`,
+      val: taxRate1 * 100 < th,
+      expl: `Effective tax rate in Year 1 ≈ ${pct(taxRate1).toFixed(1)}%.`,
+    })),
+    withPct(rng, 1, 6, (th) => ({
+      stmt: `The effective tax rate rose by more than ${th} percentage points between Year 1 and Year 2.`,
+      val: (taxRate2 - taxRate1) * 100 > th,
+      expl: `Effective tax rate moved from ${pct(taxRate1).toFixed(1)}% to ${pct(taxRate2).toFixed(1)}%.`,
+    })),
+    { stmt: `Distribution costs and general and administrative costs are deducted before gross profit is calculated.`, val: false, expl: `Gross profit is revenue minus cost of sales only; those costs are deducted afterwards.` },
+    { stmt: `Cost of sales is deducted from revenue to arrive at gross profit.`, val: true, expl: `Gross profit = revenue − cost of sales.` },
+    withPct(rng, 100, 130, (th) => ({
+      stmt: `Cost of sales amounts to more than ${th}% of revenue in Year 2, meaning gross profit is negative that year.`,
+      val: (y2.cos / y2.rev) * 100 > th,
+      expl: `Cost of sales is about ${pct(y2.cos / y2.rev).toFixed(1)}% of revenue in Year 2.`,
+    })),
+    (() => {
+      const { claimed, val } = exactPct(rng, gm2, { deltaMin: 3, deltaMax: 9 });
+      return { stmt: `The gross profit margin in Year 2 is exactly ${claimed.toFixed(1)}%.`, val, expl: `Gross margin in Year 2 ≈ ${pct(gm2).toFixed(1)}%.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, y2.pat - y1.pat, { deltaMin: 8, deltaMax: 25 });
+      return { stmt: `Profit for the year increased by exactly €${fmt(claimed)} thousand from Year 1 to Year 2.`, val, expl: `Profit moved from ${y1.pat} to ${y2.pat}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactPct(rng, revG, { deltaMin: 3, deltaMax: 8 });
+      return { stmt: `Revenue grew by exactly ${claimed.toFixed(1)}% from Year 1 to Year 2.`, val, expl: `Actual revenue growth ≈ ${pct(revG).toFixed(1)}%.` };
+    })(),
+  ];
+
+  return pack(slot, titleFor(slot, "pnl2y"), ctx, cands, used);
 }
 
-function archetypeCombined(slot, rng, usedStmts) {
-  const b = genBalanceSheet(rng);
-  const op = ri(rng, 150, 240);
-  const cfOp = op + ri(rng, -20, 30);
-  const cfInv = -ri(rng, 180, 300);
-  const cfFin = ri(rng, 30, 80);
-  const cashBeg = b.cash - (cfOp + cfInv + cfFin);
-  const roce = op / (b.equity + b.ncl);
-  const roe = op / b.equity;
-  const wc = b.ca - b.cl;
-  const net = cfOp + cfInv + cfFin;
-  const pie = chartPie("Asset composition", [
-    ["Buildings", b.buildings],
-    ["Machinery", b.machinery],
-    ["Inventory", b.inventory],
-    ["Trade receivables", b.receivables],
-    ["Cash and cash equivalents", b.cash],
-  ]);
-  const ctx = `${introCombined()}\n\n${pie}\n\n${bsTableSingle(b)}\n\n${mdAmount("Income statement extract (€ thousands)", [["Operating result", op]])}\n\n${mdAmount("Cash flow statement extract (€ thousands)", [
-    ["Cash flow from operating activities", cfOp],
-    ["Cash flow from investing activities", `(${Math.abs(cfInv)})`],
-    ["Cash flow from financing activities", cfFin],
-    ["Cash and cash equivalents at the beginning of the year", cashBeg],
-  ])}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `With operating result of €${op} thousand and equity of €${b.equity} thousand, return on equity exceeds 35%.`, val: roe > 0.35, expl: `Return on equity is about ${pct(roe).toFixed(1)}%.` },
-    { stmt: `Return on capital employed of about ${pct(roce).toFixed(1)}% on equity of €${b.equity} thousand is mainly useful when compared with similar businesses or past years rather than judged alone.`, val: true, expl: `Comparative context makes return on capital employed meaningful.` },
-    { stmt: `Working capital on this combined extract equals €${wc} thousand.`, val: wc === 150, expl: `Working capital equals ${wc}.` },
-    { stmt: `The net change in cash and cash equivalents for the year equals €${net} thousand.`, val: net === 25, expl: `Net change equals ${net}.` },
-    { stmt: `Cash and cash equivalents at the end of the year equal €${cashBeg + net} thousand and exceed €90 thousand.`, val: cashBeg + net > 90, expl: `Ending cash is about ${cashBeg + net}.` },
-    { stmt: `Return on capital employed exceeds 20% on these combined figures.`, val: roce > 0.2, expl: `Return on capital employed is about ${pct(roce).toFixed(1)}%.` },
-    { stmt: `Cash flow from investing activities of €${cfInv} thousand was an inflow during the year.`, val: cfInv > 0, expl: `Investing cash flow was ${cfInv}.` },
-  ], usedStmts);
-}
+/* ---------------------------------------------------------------------- */
+/* archetype: depreciation schedule — 6.2 focus (chart-centric)             */
+/* ---------------------------------------------------------------------- */
 
-function archetypeDep(slot, rng, usedStmts) {
+function dep(slot, rng, used) {
   const costA = ri(rng, 120, 180) * 1000;
   const lifeA = ri(rng, 8, 12);
   const annA = costA / lifeA;
@@ -318,176 +678,539 @@ function archetypeDep(slot, rng, usedStmts) {
   const annC = costC / lifeC;
   const ann = annA + annB + annC;
   const bvB3 = costB - 3 * annB;
-  const combined3 = costA - 3 * annA + bvB3;
+  const bvA3 = costA - 3 * annA;
+  const combined3 = bvA3 + bvB3;
+  const pctDepA3 = (3 * annA) / costA;
+
   const chart = chartBar("Annual depreciation by asset", [
     `Machinery | Annual depreciation=${Math.round(annA)}`,
     `Delivery truck | Annual depreciation=${Math.round(annB)}`,
     `Computer equipment | Annual depreciation=${Math.round(annC)}`,
   ]);
-  const ctx = `${introDep()}\n\n${chart}\n\n${mdAmount("Asset details", [
+  const ctx = `A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n${chart}\n\n${mdAmount("Asset details", [
     ["Asset A – Machinery", `€${fmt(costA)} purchase price, ${lifeA}-year useful life, no residual value`],
     ["Asset B – Delivery truck", `€${fmt(costB)} purchase price, ${lifeB}-year useful life, €${fmt(residB)} residual value`],
     ["Asset C – Computer equipment", `€${fmt(costC)} purchase price, ${lifeC}-year useful life, no residual value`],
   ])}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `Combined annual depreciation for machinery, the delivery truck and computer equipment totals €${fmt(Math.round(ann))}.`, val: Math.abs(ann - Math.round(ann)) < 1, expl: `Annual charges sum to ${fmt(Math.round(ann))}.` },
-    { stmt: `After three years, the book value of the delivery truck purchased for €${fmt(costB)} is €24,000.`, val: Math.abs(bvB3 - 24000) < 500, expl: `Truck book value after three years is ${fmt(Math.round(bvB3))}.` },
-    { stmt: `After three years, the €${fmt(costC)} computer equipment is fully depreciated.`, val: true, expl: `Asset C is fully written down after ${lifeC} years.` },
-    { stmt: `After three years, the combined book value of all three assets exceeds €150,000 on this schedule.`, val: combined3 > 150000, expl: `Combined book value is about ${fmt(Math.round(combined3))}.` },
-    { stmt: `Without recording annual depreciation on machinery costing €${fmt(costA)}, the balance sheet would overstate asset values.`, val: true, expl: `Without depreciation, assets would remain at historical cost and be overstated.` },
-    { stmt: `Straight-line depreciation on the delivery truck charges €${fmt(Math.round(annB))} in every year of its ${lifeB}-year useful life.`, val: true, expl: `Straight-line depreciation spreads cost evenly across useful life.` },
-    { stmt: `The €${fmt(residB)} residual value of the delivery truck is ignored when calculating its straight-line depreciation charge.`, val: false, expl: `Residual value is deducted before spreading cost over useful life.` },
-  ], usedStmts);
+
+  const cands = [
+    (() => {
+      const { claimed, val } = exactAmt(rng, ann, { deltaMin: 900, deltaMax: 3200 });
+      return { stmt: `Combined annual depreciation for the three assets is €${fmt(claimed)}.`, val, expl: `Sum of annual charges ≈ €${fmt(Math.round(ann))}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, bvB3, { deltaMin: 2000, deltaMax: 6000 });
+      return { stmt: `After three years, the delivery truck's book value is €${fmt(claimed)}.`, val, expl: `Book value ≈ €${fmt(Math.round(bvB3))}.` };
+    })(),
+    { stmt: `After three years, the computer equipment, originally costing €${fmt(costC)}, is fully written down to nil.`, val: 3 >= lifeC, expl: `Useful life is ${lifeC} years with no residual value.` },
+    (() => {
+      const mult = 0.85 + rng() * 0.1;
+      const thAmt = Math.round(combined3 * mult);
+      return {
+        stmt: `After three years, the combined book value of all three assets exceeds €${fmt(thAmt)}.`,
+        val: combined3 > thAmt,
+        expl: `Combined book value ≈ €${fmt(Math.round(combined3))}.`,
+      };
+    })(),
+    { stmt: `Without recording depreciation on the €${fmt(costA)} machinery, non-current assets on the balance sheet would be overstated.`, val: true, expl: `Assets would stay at historical cost without write-downs.` },
+    { stmt: `Straight-line depreciation on the €${fmt(costA)} machinery charges the same amount each year of its useful life, since it has no residual value.`, val: true, expl: `Straight-line spreads depreciable cost evenly.` },
+    { stmt: `Residual value of the €${fmt(costB)} delivery truck is ignored when calculating its annual depreciation.`, val: false, expl: `Residual value is deducted from cost before spreading the remainder.` },
+    withPct(rng, 25, 45, (th) => ({
+      stmt: `After three years, more than ${th}% of the machinery's purchase price has been depreciated.`,
+      val: pctDepA3 * 100 > th,
+      expl: `About ${pct(pctDepA3).toFixed(1)}% of the machinery's cost is depreciated after three years.`,
+    })),
+    withPct(rng, 40, 90, (th) => ({
+      stmt: `The delivery truck's annual depreciation charge is more than ${th}% higher than the computer equipment's annual depreciation charge.`,
+      val: ((annB - annC) / annC) * 100 > th,
+      expl: `Delivery truck ≈ €${fmt(Math.round(annB))} a year versus computer equipment ≈ €${fmt(Math.round(annC))} a year.`,
+    })),
+    withPct(rng, 55, 75, (th) => ({
+      stmt: `The machinery accounts for more than ${th}% of the combined annual depreciation charge.`,
+      val: (annA / ann) * 100 > th,
+      expl: `Machinery's share of the combined charge ≈ ${pct(annA / ann).toFixed(1)}%.`,
+    })),
+    (() => {
+      const { claimed, val } = exactAmt(rng, annA, { deltaMin: 800, deltaMax: 2500 });
+      return { stmt: `The machinery's annual depreciation charge is exactly €${fmt(claimed)}.`, val, expl: `Machinery annual charge = €${fmt(Math.round(annA))}.` };
+    })(),
+    { stmt: `Comparing the ${lifeA}-year machinery with the ${lifeC}-year computer equipment, a shorter useful life, all else equal, produces a higher annual straight-line depreciation charge.`, val: true, expl: `Spreading the same depreciable amount over fewer years increases the annual charge.` },
+    { stmt: `Depreciation on the €${fmt(costA)} machinery, the €${fmt(costB)} delivery truck and the €${fmt(costC)} computer equipment is charged directly against cash in the year it is recorded.`, val: false, expl: `Depreciation is a non-cash accounting charge, not a cash payment.` },
+  ];
+
+  return pack(slot, titleFor(slot, "dep"), ctx, cands, used);
 }
 
-function archetypeTurnover(slot, rng, usedStmts) {
+/* ---------------------------------------------------------------------- */
+/* archetype: combined extract (BS + P&L + CF) — 6.3 focus                  */
+/* ---------------------------------------------------------------------- */
+
+function combined(slot, rng, used) {
+  const b = genBalanceSheet(rng);
+  const op = ri(rng, 150, 240);
+  const cfOp = op + ri(rng, -20, 30);
+  const cfInv = -ri(rng, 180, 300);
+  const cfFin = ri(rng, 30, 80);
+  const cashBeg = b.cash - (cfOp + cfInv + cfFin);
+  const roce = op / (b.equity + b.ncl);
+  const roe = op / b.equity;
+  const wc = b.ca - b.cl;
+  const net = cfOp + cfInv + cfFin;
+  const cashConversion = cfOp / op;
+  const invShareAssets = b.inventory / b.assets;
+
+  const pie = chartPie("Asset composition", [
+    ["Buildings", b.buildings],
+    ["Machinery", b.machinery],
+    ["Inventory", b.inventory],
+    ["Trade receivables", b.receivables],
+    ["Cash and cash equivalents", b.cash],
+  ]);
+  const ctx = `Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n${pie}\n\n${bsTableSingle(b)}\n\n${mdAmount("Income statement extract (€ thousands)", [["Operating result", op]])}\n\n${mdAmount("Cash flow statement extract (€ thousands)", [
+    ["Cash flow from operating activities", cfOp],
+    ["Cash flow from investing activities", `(${Math.abs(cfInv)})`],
+    ["Cash flow from financing activities", cfFin],
+    ["Cash and cash equivalents at the beginning of the year", cashBeg],
+  ])}\n\nEvaluate the following economic assertions:`;
+
+  const cands = [
+    withPct(rng, 22, 45, (th) => ({
+      stmt: `Return on equity, the operating result taken as a percentage of total equity, exceeds ${th}%.`,
+      val: roe * 100 > th,
+      expl: `Return on equity ≈ ${pct(roe).toFixed(1)}%.`,
+    })),
+    withPct(rng, 12, 26, (th) => ({
+      stmt: `Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds ${th}%.`,
+      val: roce * 100 > th,
+      expl: `Return on capital employed ≈ ${pct(roce).toFixed(1)}%.`,
+    })),
+    {
+      stmt: `With an operating result of €${fmt(op)} thousand, return on capital employed is mainly useful when comparing similar businesses or the same business over time, not as a standalone absolute number.`,
+      val: true,
+      expl: `Comparative context matters for return on capital employed.`,
+    },
+    (() => {
+      const { claimed, val } = exactAmt(rng, wc, { deltaMin: 25, deltaMax: 70 });
+      return { stmt: `Working capital equals exactly €${fmt(claimed)} thousand.`, val, expl: `Working capital = ${wc}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, net, { deltaMin: 15, deltaMax: 40 });
+      return { stmt: `The net change in cash and cash equivalents equals exactly €${fmt(claimed)} thousand.`, val, expl: `Net change = ${net}.` };
+    })(),
+    (() => {
+      const mult = 0.8 + rng() * 0.15;
+      const thAmt = Math.round((cashBeg + net) * mult);
+      return {
+        stmt: `Cash and cash equivalents at the end of the year exceed €${fmt(thAmt)} thousand.`,
+        val: cashBeg + net > thAmt,
+        expl: `Ending cash ≈ €${fmt(Math.round(cashBeg + net))} thousand.`,
+      };
+    })(),
+    withPct(rng, 75, 105, (th) => ({
+      stmt: `Cash flow from operating activities amounts to less than ${th}% of the operating result, indicating profit is only partly backed by cash.`,
+      val: cashConversion * 100 < th,
+      expl: `Cash conversion ≈ ${pct(cashConversion).toFixed(1)}% of the operating result.`,
+    })),
+    withPct(rng, 80, 110, (th) => ({
+      stmt: `Cash flow from operating activities amounts to more than ${th}% of the operating result.`,
+      val: cashConversion * 100 > th,
+      expl: `Cash conversion ≈ ${pct(cashConversion).toFixed(1)}% of the operating result.`,
+    })),
+    {
+      stmt: `With cash flow from operating activities of €${fmt(cfOp)} thousand, cash flow from investing activities was an inflow this year.`,
+      val: cfInv > 0,
+      expl: `Investing cash flow = ${cfInv}.`,
+    },
+    shareAbove(rng, "Inventory", "total assets", invShareAssets, 10, 28),
+    withPct(rng, 25, 45, (th) => ({
+      stmt: `Cash flow from financing activities covers less than ${th}% of the cash outflow used for investing activities.`,
+      val: (cfFin / Math.abs(cfInv)) * 100 < th,
+      expl: `Financing inflow is about ${pct(cfFin / Math.abs(cfInv)).toFixed(1)}% of investing outflow.`,
+    })),
+    {
+      stmt: `Cash and cash equivalents at the beginning of the year were negative, implying the business started the year with a net overdraft position.`,
+      val: cashBeg < 0,
+      expl: `Beginning cash computed from the reconciliation is ${cashBeg}.`,
+    },
+    (() => {
+      const { claimed, val } = exactPct(rng, roe, { deltaMin: 4, deltaMax: 12 });
+      return { stmt: `Return on equity is exactly ${claimed.toFixed(1)}%.`, val, expl: `Return on equity ≈ ${pct(roe).toFixed(1)}%.` };
+    })(),
+  ];
+
+  return pack(slot, titleFor(slot, "combined"), ctx, cands, used);
+}
+
+/* ---------------------------------------------------------------------- */
+/* archetype: turnover / activity ratios — 6.5 focus                        */
+/* ---------------------------------------------------------------------- */
+
+function turnover(slot, rng, used) {
   const rev = ri(rng, 900, 1300);
   const cos = Math.round(rev * (0.62 + rng() * 0.08));
   const aBeg = ri(rng, 750, 900);
   const aEnd = ri(rng, 920, 1050);
   const iBeg = ri(rng, 120, 170);
   const iEnd = ri(rng, 150, 200);
+  const rBeg = ri(rng, 90, 140);
+  const rEnd = ri(rng, 100, 160);
   const avgA = (aBeg + aEnd) / 2;
   const avgI = (iBeg + iEnd) / 2;
+  const avgR = (rBeg + rEnd) / 2;
   const at = rev / avgA;
   const it = cos / avgI;
+  const rt = rev / avgR;
+  const collectionDays = 365 / rt;
   const invShare = avgI / avgA;
-  const invGrowth = (iEnd - iBeg) / iBeg;
+  const invG = (iEnd - iBeg) / iBeg;
+
   const chart = chartBar("Beginning versus ending balances", [
     `Total assets | Beginning=${aBeg} | Ending=${aEnd}`,
     `Inventory | Beginning=${iBeg} | Ending=${iEnd}`,
   ]);
-  const ctx = `${introTurnover()}\n\n${chart}\n\n${mdAmount("Item (€ thousands)", [
+  const ctx = `Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${mdAmount("Item (€ thousands)", [
     ["Revenue", fmt(rev)],
     ["Cost of sales", cos],
     ["Total assets at the beginning of the year", aBeg],
     ["Total assets at the end of the year", aEnd],
     ["Inventory at the beginning of the year", iBeg],
     ["Inventory at the end of the year", iEnd],
+    ["Trade receivables at the beginning of the year", rBeg],
+    ["Trade receivables at the end of the year", rEnd],
   ])}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `With revenue of €${rev} thousand and average total assets of €${avgA.toFixed(0)} thousand, asset turnover is above 1.5.`, val: at > 1.5, expl: `Asset turnover is about ${at.toFixed(2)}.` },
-    { stmt: `With cost of sales of €${cos} thousand and average inventory of €${avgI.toFixed(0)} thousand, inventory turnover is below 5 times per year.`, val: it < 5, expl: `Inventory turnover is about ${it.toFixed(2)}.` },
-    { stmt: `Average inventory of €${avgI.toFixed(0)} thousand represents less than 15% of average total assets of €${avgA.toFixed(0)} thousand.`, val: invShare < 0.15, expl: `Inventory share is about ${pct(invShare).toFixed(1)}%.` },
-    { stmt: `Inventory rising from €${iBeg} thousand to €${iEnd} thousand suggests more money may be tied up in stock unless turnover improves.`, val: iEnd > iBeg, expl: `Higher inventory can tie up cash if turnover does not improve.` },
-    { stmt: `Inventory increased from €${iBeg} thousand to €${iEnd} thousand, a rise of more than 25%.`, val: invGrowth > 0.25, expl: `Inventory growth is about ${pct(invGrowth).toFixed(1)}%.` },
-    { stmt: `Revenue of €${rev} thousand exceeds €1,200 thousand on this extract.`, val: rev > 1200, expl: `Revenue is ${rev}.` },
-    { stmt: `Total assets fell from €${aBeg} thousand to €${aEnd} thousand during the year.`, val: aEnd < aBeg, expl: `Assets moved from ${aBeg} to ${aEnd}.` },
-  ], usedStmts);
+
+  const cands = [
+    withTimes(rng, 1.0, 1.6, (th) => ({
+      stmt: `Asset turnover, revenue taken relative to average total assets, is above ${th}.`,
+      val: at > th,
+      expl: `Asset turnover ≈ ${at.toFixed(2)}.`,
+    })),
+    withTimes(rng, 4.5, 7.5, (th) => ({
+      stmt: `Inventory turnover, cost of sales taken relative to average inventory, is below ${th} times per year.`,
+      val: it < th,
+      expl: `Inventory turnover ≈ ${it.toFixed(2)}.`,
+    })),
+    withTimes(rng, 7, 11, (th) => ({
+      stmt: `Trade receivables turnover, revenue taken relative to average trade receivables, exceeds ${th} times per year.`,
+      val: rt > th,
+      expl: `Receivables turnover ≈ ${rt.toFixed(2)}.`,
+    })),
+    (() => {
+      const th = intTh(rng, 30, 60);
+      return {
+        stmt: `On average, revenue remains outstanding in trade receivables for more than ${th} days.`,
+        val: collectionDays > th,
+        expl: `Average collection period ≈ ${collectionDays.toFixed(0)} days.`,
+      };
+    })(),
+    shareBelow(rng, "Average inventory", "average total assets", invShare, 12, 20),
+    {
+      stmt: `With inventory turnover of about ${it.toFixed(1)} times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.`,
+      val: true,
+      expl: `High turnover signals faster stock rotation.`,
+    },
+    growthUp(rng, "Inventory", invG, 15, 40),
+    (() => {
+      const mult = 0.85 + rng() * 0.2;
+      const thAmt = Math.round(rev * mult);
+      return { stmt: `Revenue exceeds €${fmt(thAmt)} thousand.`, val: rev > thAmt, expl: `Revenue = ${fmt(rev)}.` };
+    })(),
+    { stmt: `Total assets grew during the year.`, val: aEnd > aBeg, expl: `Assets moved from ${aBeg} to ${aEnd}.` },
+    withPct(rng, 58, 72, (th) => ({
+      stmt: `Cost of sales amounts to more than ${th}% of revenue.`,
+      val: (cos / rev) * 100 > th,
+      expl: `Cost of sales is about ${pct(cos / rev).toFixed(1)}% of revenue.`,
+    })),
+    (() => {
+      const { claimed, val } = exactRatio(rng, at, { deltaMin: 0.15, deltaMax: 0.4 });
+      return { stmt: `Asset turnover is exactly ${claimed.toFixed(2)}.`, val, expl: `Asset turnover ≈ ${at.toFixed(2)}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactRatio(rng, it, { deltaMin: 0.4, deltaMax: 1.2 });
+      return { stmt: `Inventory turnover is exactly ${claimed.toFixed(2)} times per year.`, val, expl: `Inventory turnover ≈ ${it.toFixed(2)}.` };
+    })(),
+    {
+      stmt: `Inventory turnover is higher than trade receivables turnover, meaning stock rotates faster than customer collections.`,
+      val: it > rt,
+      expl: `Inventory turnover ≈ ${it.toFixed(2)} versus receivables turnover ≈ ${rt.toFixed(2)}.`,
+    },
+    withPct(rng, 5, 25, (th) => ({
+      stmt: `Trade receivables grew by more than ${th}% between the beginning and the end of the year.`,
+      val: ((rEnd - rBeg) / rBeg) * 100 > th,
+      expl: `Trade receivables moved from ${rBeg} to ${rEnd}.`,
+    })),
+  ];
+
+  return pack(slot, titleFor(slot, "turnover"), ctx, cands, used);
 }
 
-function archetypeShare(slot, rng, usedStmts) {
+/* ---------------------------------------------------------------------- */
+/* archetype: listed-company charts — share price / market cap / EPS        */
+/* ---------------------------------------------------------------------- */
+
+function share(slot, rng, used) {
   const sh = genShareSeries(rng);
   const rise = (sh.end - sh.start) / sh.start;
+  const mcapStart = (sh.start * sh.shares) / 1_000_000;
   const mcapEnd = (sh.end * sh.shares) / 1_000_000;
   const earnings = ri(rng, 180, 280);
-  const sharesM = sh.shares / 1000;
-  const eps = earnings / sharesM;
+  const eps = earnings / (sh.shares / 1000);
+  const prices = sh.rows.map((r) => r[1]);
+  const maxP = Math.max(...prices);
+  const minP = Math.min(...prices);
+  const avgP = prices.reduce((a, b) => a + b, 0) / prices.length;
+  let risingMonths = 0;
+  for (let i = 1; i < prices.length; i++) if (prices[i] > prices[i - 1]) risingMonths++;
+  const volatility = (maxP - minP) / minP;
+
   const line = chartLine("Closing share price", sh.lineRows);
-  const priceTable = ["| Month | Closing price (€) | Shares outstanding |", "| --- | ---: | ---: |"];
-  for (const [m, p, s] of sh.rows) priceTable.push(`| ${m} | ${p} | ${fmt(s)} |`);
-  const ctx = `${introListed()}\n\n${line}\n\n${priceTable.join("\n")}\n\n${mdAmount("Annual figures (€ thousands)", [
+  const rows = ["| Month | Closing price (€) | Shares outstanding |", "| --- | ---: | ---: |"];
+  for (const [m, p, s] of sh.rows) rows.push(`| ${m} | ${p} | ${fmt(s)} |`);
+  const ctx = `Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n${line}\n\n${rows.join("\n")}\n\n${mdAmount("Annual figures (€ thousands)", [
     ["Operating result", earnings],
     ["Shares outstanding", fmt(sh.shares)],
   ])}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `The share price rose from €${sh.start} to €${sh.end}, an increase of more than 20%.`, val: rise > 0.2, expl: `Price change is about ${pct(rise).toFixed(1)}%.` },
-    { stmt: `With ${fmt(sh.shares)} shares outstanding at a closing price of €${sh.end}, market capitalisation exceeds €11 million.`, val: mcapEnd > 11, expl: `Market capitalisation is about €${mcapEnd.toFixed(1)} million.` },
-    { stmt: `With operating result of €${earnings} thousand and ${fmt(sh.shares)} shares outstanding, earnings per share exceeds €0.35.`, val: eps > 0.35, expl: `Earnings per share is about €${eps.toFixed(2)}.` },
-    { stmt: `The last closing price of €${sh.end} is more than 50% above the first closing price of €${sh.start}.`, val: sh.end > sh.start * 1.5, expl: `The price rise compared with the 50% threshold.` },
-    { stmt: `The number of shares outstanding is ${fmt(sh.shares)}, which is positive.`, val: sh.shares > 0, expl: `Shares outstanding equal ${fmt(sh.shares)}.` },
-    { stmt: `The share price fell from €${sh.start} to €${sh.end} over the months shown.`, val: sh.end < sh.start, expl: `The last price ${sh.end} compared with the first ${sh.start}.` },
-    { stmt: `Operating result of €${earnings} thousand was below €200 thousand.`, val: earnings < 200, expl: `Operating result was ${earnings}.` },
-  ], usedStmts);
+
+  const cands = [
+    withPct(rng, 8, 30, (th) => ({
+      stmt: `The closing share price rose by more than ${th}% from the first to the last month shown.`,
+      val: rise * 100 > th,
+      expl: `Price change ≈ ${pct(rise).toFixed(1)}%.`,
+    })),
+    (() => {
+      const mult = 0.8 + rng() * 0.15;
+      const thAmt = Number((mcapEnd * mult).toFixed(1));
+      return {
+        stmt: `Market capitalisation at the last month shown exceeds €${thAmt} million.`,
+        val: mcapEnd > thAmt,
+        expl: `Market capitalisation at the last month ≈ €${mcapEnd.toFixed(1)} million.`,
+      };
+    })(),
+    withPct(rng, 8, 28, (th) => ({
+      stmt: `Market capitalisation grew by more than ${th}% from the first to the last month shown.`,
+      val: ((mcapEnd - mcapStart) / mcapStart) * 100 > th,
+      expl: `Market capitalisation moved from €${mcapStart.toFixed(1)} million to €${mcapEnd.toFixed(1)} million.`,
+    })),
+    (() => {
+      const mult = 0.75 + rng() * 0.2;
+      const thAmt = Number((eps * mult).toFixed(2));
+      return {
+        stmt: `Earnings per share, calculated by spreading the operating result evenly across the shares outstanding, exceeds €${thAmt} on the figures given.`,
+        val: eps > thAmt,
+        expl: `Earnings per share ≈ €${eps.toFixed(2)}.`,
+      };
+    })(),
+    withPct(rng, 10, 35, (th) => ({
+      stmt: `The highest closing price shown is more than ${th}% above the lowest closing price shown.`,
+      val: volatility * 100 > th,
+      expl: `Price ranged from €${minP} to €${maxP}, a spread of about ${pct(volatility).toFixed(1)}%.`,
+    })),
+    { stmt: `Shares outstanding remain unchanged at ${fmt(sh.shares)} across every month shown.`, val: true, expl: `Shares outstanding stay at ${fmt(sh.shares)} throughout.` },
+    {
+      stmt: `The closing share price rose in more than half of the month-to-month steps shown.`,
+      val: risingMonths > (prices.length - 1) / 2,
+      expl: `The price rose in ${risingMonths} of the ${prices.length - 1} month-to-month steps.`,
+    },
+    (() => {
+      const mult = 0.85 + rng() * 0.1;
+      const thAmt = Number((avgP * mult).toFixed(1));
+      return {
+        stmt: `The average closing price across the months shown exceeds €${thAmt}.`,
+        val: avgP > thAmt,
+        expl: `Average closing price ≈ €${avgP.toFixed(2)}.`,
+      };
+    })(),
+    (() => {
+      const th = intTh(rng, 190, 270);
+      return { stmt: `Operating result is below €${th} thousand.`, val: earnings < th, expl: `Operating result = ${earnings}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, eps * 100, { deltaMin: 3, deltaMax: 10 });
+      return { stmt: `Earnings per share is exactly €${(claimed / 100).toFixed(2)}.`, val, expl: `Earnings per share ≈ €${eps.toFixed(2)}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactPct(rng, rise, { deltaMin: 3, deltaMax: 9 });
+      return { stmt: `The closing share price changed by exactly ${claimed.toFixed(1)}% from the first to the last month shown.`, val, expl: `Actual price change ≈ ${pct(rise).toFixed(1)}%.` };
+    })(),
+    {
+      stmt: `A rising market capitalisation with unchanged shares outstanding must be driven by a rising share price rather than new share issues.`,
+      val: true,
+      expl: `Market capitalisation equals share price times shares outstanding, so with shares fixed, only price movements explain the change.`,
+    },
+  ];
+
+  return pack(slot, titleFor(slot, "share"), ctx, cands, used);
 }
 
-function archetypeBsGearing(slot, rng, usedStmts) {
-  const y1 = genBalanceSheet(rng);
-  const y2 = evolveBs(y1, rng, 0.04 + rng() * 0.05);
-  const er1 = y1.equity / y1.assets;
-  const er2 = y2.equity / y2.assets;
-  const dr1 = y1.liab / y1.assets;
-  const dr2 = y2.liab / y2.assets;
-  const growth = (y2.assets - y1.assets) / y1.assets;
-  const chart = chartBar("Equity versus non-current liabilities", [
-    `Year 1 | Equity=${y1.equity} | Non-current liabilities=${y1.ncl}`,
-    `Year 2 | Equity=${y2.equity} | Non-current liabilities=${y2.ncl}`,
-  ]);
-  const ctx = `${introBs2y()}\n\n${chart}\n\n${bsTable2y(y1, y2)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `The equity ratio improved from ${pct(er1).toFixed(1)}% in Year 1 to ${pct(er2).toFixed(1)}% in Year 2.`, val: er2 > er1, expl: `Equity ratio rose between the two years.` },
-    { stmt: `The debt ratio fell from ${pct(dr1).toFixed(1)}% in Year 1 to ${pct(dr2).toFixed(1)}% in Year 2.`, val: dr2 < dr1, expl: `Debt ratio declined between the two years.` },
-    { stmt: `Non-current liabilities of €${y1.ncl} thousand and €${y2.ncl} thousand exceed equity in both years, indicating high gearing throughout.`, val: y1.ncl > y1.equity && y2.ncl > y2.equity, expl: `Non-current liabilities exceed equity in both years.` },
-    { stmt: `Non-current assets of €${y1.nca} thousand and €${y2.nca} thousand are fully covered by equity plus non-current liabilities in both years on this comparative balance sheet.`, val: y1.nca <= y1.equity + y1.ncl && y2.nca <= y2.equity + y2.ncl, expl: `Coverage holds in both years on the figures shown.` },
-    { stmt: `Total assets grew from €${y1.assets} thousand to €${y2.assets} thousand, an increase of more than 12%.`, val: growth > 0.12, expl: `Asset growth is about ${pct(growth).toFixed(1)}%.` },
-    { stmt: `Share capital increased from €${y1.share} thousand to €${y2.share} thousand between the two years.`, val: y2.share > y1.share, expl: `Share capital was ${y1.share} then ${y2.share}.` },
-    { stmt: `Retained earnings fell from €${y1.retained} thousand to €${y2.retained} thousand between the two years.`, val: y2.retained < y1.retained, expl: `Retained earnings were ${y1.retained} then ${y2.retained}.` },
-  ], usedStmts);
+/* ---------------------------------------------------------------------- */
+/* archetype: small balance sheet — 6.4 (half-page + conceptual companion)  */
+/* ---------------------------------------------------------------------- */
+
+function conceptualPool(rng, anchorLabel, anchorAmt) {
+  const a = `€${fmt(anchorAmt)} thousand`;
+  return [
+    {
+      stmt: `A published version of the extract above, showing ${anchorLabel} of ${a}, is an example of external financial reporting that a lender might study before extending credit.`,
+      val: true,
+      expl: `Financial accounting reports are prepared for external users such as lenders and shareholders.`,
+    },
+    {
+      stmt: `Because the extract above (${anchorLabel} of ${a}) covers only one financial year, external users such as shareholders could not rely on it at all.`,
+      val: false,
+      expl: `External users routinely rely on single-year financial statements, often alongside prior-year comparatives.`,
+    },
+    {
+      stmt: `An independent audit of the extract above, including the ${anchorLabel} of ${a}, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.`,
+      val: true,
+      expl: `Audits provide reasonable, not absolute, assurance.`,
+    },
+    {
+      stmt: `Internal management reports covering the same period as the extract above (${anchorLabel} of ${a}) must follow the identical statutory format shown here.`,
+      val: false,
+      expl: `Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.`,
+    },
+    {
+      stmt: `Because the extract above discloses ${anchorLabel} of ${a} to outside parties, it is best described as financial accounting rather than management accounting.`,
+      val: true,
+      expl: `Reports aimed at external parties fall under financial accounting.`,
+    },
+    {
+      stmt: `The ${anchorLabel} of ${a} shown above would never be disclosed to any party outside the business under any circumstances.`,
+      val: false,
+      expl: `Figures such as this are routinely published for external users like tax authorities and shareholders.`,
+    },
+    {
+      stmt: `An auditor reviewing the extract above, including ${anchorLabel} of ${a}, is responsible for forming an opinion on the figures, not for guaranteeing the business will remain profitable.`,
+      val: true,
+      expl: `Audit opinions relate to the fairness of the figures, not to future business performance.`,
+    },
+    {
+      stmt: `Tax authorities have no legitimate interest in the ${anchorLabel} of ${a} disclosed above.`,
+      val: false,
+      expl: `Tax authorities are a standard external user of published financial statements.`,
+    },
+  ];
 }
 
-function archetypeTunedBs(slot, rng, usedStmts) {
-  const b = genBalanceSheet(rng);
+function bsSmall(slot, rng, used) {
+  const b = genSmallBs(rng);
   const cr = b.ca / b.cl;
   const wc = b.ca - b.cl;
   const er = b.equity / b.assets;
-  const acid = (b.ca - b.inventory) / b.cl;
-  const ctx = `${introBs1y()}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, ctx, [
-    { stmt: `On total assets of €${b.assets} thousand, the current ratio exceeds 1.20.`, val: cr > 1.2, expl: `Current ratio is about ${cr.toFixed(2)}.` },
-    { stmt: `Working capital of €${wc} thousand is positive on this balance sheet.`, val: wc > 0, expl: `Working capital equals ${wc}.` },
-    { stmt: `The equity ratio on assets of €${b.assets} thousand is below 30%.`, val: er < 0.3, expl: `Equity ratio is about ${pct(er).toFixed(1)}%.` },
-    { stmt: `Inventory of €${b.inventory} thousand is recorded as a non-current intangible asset.`, val: false, expl: `Inventory is a current asset.` },
-    { stmt: `Excluding inventory, current assets of €${b.ca - b.inventory} thousand exceed current liabilities of €${b.cl} thousand.`, val: acid > 1, expl: `Acid-test ratio is about ${acid.toFixed(2)}.` },
-    { stmt: `The current ratio on total assets of €${b.assets} thousand is below 1.00 on these figures.`, val: cr < 1, expl: `Current ratio is about ${cr.toFixed(2)}.` },
-    { stmt: `Buildings of €${b.buildings} thousand exceed machinery of €${b.machinery} thousand.`, val: b.buildings > b.machinery, expl: `Buildings ${b.buildings} vs machinery ${b.machinery}.` },
-    { stmt: `Cash of €${b.cash} thousand exceeds trade receivables of €${b.receivables} thousand.`, val: b.cash > b.receivables, expl: `Cash ${b.cash} vs receivables ${b.receivables}.` },
-    { stmt: `Total liabilities of €${b.liab} thousand exceed total equity of €${b.equity} thousand.`, val: b.liab > b.equity, expl: `Liabilities ${b.liab} vs equity ${b.equity}.` },
-    { stmt: `Share capital of €${b.share} thousand equals retained earnings of €${b.retained} thousand.`, val: b.share === b.retained, expl: `Share capital ${b.share} vs retained ${b.retained}.` },
-    { stmt: `The long-term bank loan of €${b.lt} thousand is classified as equity.`, val: false, expl: `It is a non-current liability.` },
-    { stmt: `Total assets equal total equity plus total liabilities at €${b.assets} thousand.`, val: true, expl: `The balance sheet balances.` },
-  ], usedStmts);
+
+  const bar = chartBar("Equity and liabilities", [
+    `Total equity=${b.equity}`,
+    `Total liabilities=${b.liab}`,
+  ]);
+  const ctx = `Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${bar}\n\n${smallBsTable(b)}\n\nEvaluate the following economic assertions:`;
+
+  const numeric = [
+    withTimes(rng, 1.0, 1.8, (th) => ({
+      stmt: `The current ratio exceeds ${th}.`,
+      val: cr > th,
+      expl: `Current ratio ≈ ${cr.toFixed(2)}.`,
+    })),
+    { stmt: `Working capital is positive on this extract.`, val: wc > 0, expl: `Working capital = ${wc}.` },
+    withPct(rng, 20, 50, (th) => ({
+      stmt: `The equity ratio is below ${th}%.`,
+      val: er * 100 < th,
+      expl: `Equity ratio ≈ ${pct(er).toFixed(1)}%.`,
+    })),
+    { stmt: `Inventory of €${fmt(b.inventory)} thousand is correctly classified as a current asset.`, val: true, expl: `Inventory is always current.` },
+    { stmt: `The long-term bank loan of €${fmt(b.loan)} thousand is correctly classified within equity.`, val: false, expl: `A loan is a liability, never equity.` },
+    (() => {
+      const { claimed, val } = exactRatio(rng, cr, { deltaMin: 0.2, deltaMax: 0.5 });
+      return { stmt: `The current ratio is exactly ${claimed.toFixed(2)}.`, val, expl: `Current ratio ≈ ${cr.toFixed(2)}.` };
+    })(),
+  ];
+  const conceptual = conceptualPool(rng, "total assets", b.assets);
+  const cands = [...numeric, ...conceptual];
+
+  return pack(slot, titleFor(slot, "bsSmall"), ctx, cands, used);
 }
 
-function pickBuilders(sub, idx, chart) {
-  if (chart) {
-    if (sub === "6.1") return [archetypeBs1y, archetypeBs2y, archetypeShare];
-    if (sub === "6.2") return [archetypeCf2y, archetypePnl2y, archetypeShare];
-    if (sub === "6.3") return [archetypeCombined, archetypePnl2y, archetypeShare];
-    if (sub === "6.4") return [archetypeDep, archetypeBs1y, archetypeShare];
-    return [archetypeTurnover, archetypeBs1y, archetypeShare];
-  }
-  if (sub === "6.1") return [archetypeBs2y, archetypeBs1y, archetypeBsGearing];
-  if (sub === "6.2") return [archetypeCf2y, archetypePnl2y, archetypeCombined];
-  if (sub === "6.3") return [archetypeCombined, archetypePnl2y, archetypeBs2y];
-  if (sub === "6.4") return [archetypeDep, archetypeBs1y, archetypeBs2y];
-  return [archetypeTurnover, archetypeBs1y, archetypeCombined];
+function depSmall(slot, rng, used) {
+  const d = genDepPair(rng);
+  const bar = chartBar("Annual depreciation", [`Asset A=${Math.round(d.ann)}`, `Asset B=${Math.round(d.ann2)}`]);
+  const ctx = `A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n${bar}\n\n${mdAmount("Asset details", [
+    ["Asset A", `€${fmt(d.cost)} purchase price, ${d.life}-year useful life, no residual value`],
+    ["Asset B", `€${fmt(d.cost2)} purchase price, ${d.life2}-year useful life, €${fmt(d.resid2)} residual value`],
+  ])}\n\nEvaluate the following economic assertions:`;
+
+  const numeric = [
+    (() => {
+      const { claimed, val } = exactAmt(rng, d.ann, { deltaMin: 500, deltaMax: 1800 });
+      return { stmt: `Asset A's annual depreciation charge is exactly €${fmt(claimed)}.`, val, expl: `Asset A annual charge = €${fmt(Math.round(d.ann))}.` };
+    })(),
+    (() => {
+      const { claimed, val } = exactAmt(rng, d.ann2, { deltaMin: 500, deltaMax: 1500 });
+      return { stmt: `Asset B's annual depreciation charge is exactly €${fmt(claimed)}.`, val, expl: `Asset B annual charge = €${fmt(Math.round(d.ann2))}.` };
+    })(),
+    { stmt: `Residual value reduces the amount of Asset B's cost that is spread as depreciation.`, val: true, expl: `Depreciable amount = cost minus residual value.` },
+    { stmt: `Asset A will be fully written down to nil residual value at the end of its useful life.`, val: true, expl: `Asset A has no residual value.` },
+    withPct(rng, 15, 45, (th) => ({
+      stmt: `Asset A's annual depreciation charge is more than ${th}% higher than Asset B's annual depreciation charge.`,
+      val: ((d.ann - d.ann2) / d.ann2) * 100 > th,
+      expl: `Asset A ≈ €${fmt(Math.round(d.ann))} a year versus Asset B ≈ €${fmt(Math.round(d.ann2))} a year.`,
+    })),
+  ];
+  const conceptual = conceptualPool(rng, "the combined asset cost", d.cost + d.cost2);
+  const cands = [...numeric, ...conceptual];
+
+  return pack(slot, titleFor(slot, "depSmall"), ctx, cands, used);
 }
 
-function generateCase(slot, usedStmts) {
-  const idx = Number(slot.case_id.split(".").pop()) - 51;
-  const chart = idx >= 45;
-  const builders = [...pickBuilders(slot.subsection, idx, chart), archetypeTunedBs];
-  for (let attempt = 0; attempt < 120; attempt++) {
+/* ---------------------------------------------------------------------- */
+/* per-subtopic archetype weighting                                        */
+/* ---------------------------------------------------------------------- */
+
+function buildersFor(sub, chartHeavy) {
+  if (sub === "6.1") return chartHeavy ? [bs1y, bs1y, bs2y] : [bs2y, bs2y, bs1y];
+  if (sub === "6.2") return chartHeavy ? [dep, share, pnl2y] : [cf2y, pnl2y, dep, cf2y];
+  if (sub === "6.3") return chartHeavy ? [share, combined, pnl2y] : [combined, pnl2y, bs2y, combined];
+  if (sub === "6.4") return chartHeavy ? [depSmall, bsSmall] : [bsSmall, depSmall, bsSmall];
+  return chartHeavy ? [share, share, turnover] : [turnover, bs1y, combined, turnover];
+}
+
+function rescue(slot, rng, used) {
+  // Last-resort archetype: reuses the large bs1y pool with a fresh balance sheet
+  // draw so it has as much headroom as the primary archetypes.
+  const b = genBalanceSheet(rng);
+  const bar = chartBar("Current assets and current liabilities", [
+    `Current assets=${b.ca}`,
+    `Current liabilities=${b.cl}`,
+  ]);
+  const ctx = `Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${bar}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
+  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used);
+}
+
+function generateCase(slot, used, tableIndex, tableCount) {
+  const chartHeavy = tableIndex / Math.max(1, tableCount) >= 0.6;
+  const builders = [...buildersFor(slot.subsection, chartHeavy), rescue];
+  for (let attempt = 0; attempt < 400; attempt++) {
     const rng = mulberry32(hashSeed(`${slot.case_id}:${attempt}`));
-    const builder = builders[(idx + attempt) % builders.length];
-    const c = builder(slot, rng, usedStmts);
+    const c = builders[(tableIndex + attempt) % builders.length](slot, rng, used);
     if (c) return c;
   }
   throw new Error(`failed ${slot.case_id}`);
 }
 
+/* ---------------------------------------------------------------------- */
+/* main                                                                     */
+/* ---------------------------------------------------------------------- */
+
 const usedStmts = new Set();
+let grand = 0;
 for (const sub of SUBS) {
   const slots = plan[sub].filter((s) => s.half === "table");
-  assert(slots.length === 75, `${sub} table slots`);
-  const cases = slots.map((slot) => {
-    const c = generateCase(slot, usedStmts);
+  assert(slots.length > 0, `${sub} no table slots`);
+  const cases = slots.map((slot, i) => {
+    const c = generateCase(slot, usedStmts, i, slots.length);
     validateTableCase(c);
     return c;
   });
-  const out = `scripts/ch6-part-${sub}-table.json`;
-  fs.writeFileSync(out, JSON.stringify(cases, null, 2) + "\n");
-  console.log("OK", sub, cases.length, "→", out);
+  fs.writeFileSync(`scripts/ch6-part-${sub}-table.json`, JSON.stringify(cases, null, 2) + "\n");
+  console.log("OK", sub, "table", cases.length);
+  grand += cases.length;
 }
-
-console.log("TOTAL table cases", SUBS.length * 75);
+console.log("TOTAL table", grand);

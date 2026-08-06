@@ -1,5 +1,12 @@
 /**
- * Generate scripts/ch6-part-6.4-text.json — 75 textual cases for subsection 6.4.
+ * Generate scripts/ch6-part-6.4-text.json — 24 textual cases for subsection 6.4.
+ *
+ * Scope (half-page subtopic, minimal formula weight, conceptual only):
+ *   - financial accounting vs management accounting
+ *   - users of accounts: owners, managers, employees, lenders, tax authorities, investors
+ *   - auditing
+ *   - frequency / flexibility of reports
+ * Nothing else (no depreciation, no ratios, no statement-reading arithmetic).
  */
 import fs from "node:fs";
 import { buildCases, validateAndWrite } from "./ch6-fc-gen-shared.mjs";
@@ -9,362 +16,202 @@ const slots = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"))[
 );
 const OUT = "scripts/ch6-part-6.4-text.json";
 
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
 const SCENE = [
-  "Consider a regional manufacturer whose plant managers receive monthly cost breakdowns while shareholders read the published annual report. Evaluate the following economic assertions:",
-  "Consider a retail chain whose finance team prepares internal margin reports weekly while lenders review its statutory balance sheet. Evaluate the following economic assertions:",
-  "Consider a construction firm whose site supervisors track project spending daily while tax authorities receive its filed financial statements. Evaluate the following economic assertions:",
-  "Consider a software company whose product managers review contribution figures while investors study its published income statement. Evaluate the following economic assertions:",
-  "Consider a hospital trust whose ward managers monitor departmental budgets while suppliers assess its creditworthiness from public accounts. Evaluate the following economic assertions:",
-  "Consider a logistics operator whose depot managers receive fuel-cost summaries while bondholders read its audited annual report. Evaluate the following economic assertions:",
-  "Consider a restaurant group whose head chefs see food-cost percentages while banks review its statutory filings. Evaluate the following economic assertions:",
-  "Consider an engineering consultancy whose partners decide pricing using internal job-cost records while clients never see those internal schedules. Evaluate the following economic assertions:",
-  "Consider a pharmacy chain whose store managers track shrinkage while the media comment on its published profit figure. Evaluate the following economic assertions:",
-  "Consider a farming cooperative whose field managers monitor input costs while members receive a simplified annual summary. Evaluate the following economic assertions:",
-  "Consider a fitness-club operator whose regional managers review membership revenue splits while auditors test its published accounts. Evaluate the following economic assertions:",
-  "Consider a publishing house whose editors see print-run cost estimates while shareholders focus on the statutory profit and loss account. Evaluate the following economic assertions:",
-  "Consider a vehicle-leasing company whose fleet managers track maintenance spend while regulators inspect its filed financial statements. Evaluate the following economic assertions:",
-  "Consider a textile exporter whose production planners review yarn costs while overseas buyers request its latest balance sheet. Evaluate the following economic assertions:",
-  "Consider a dental practice group whose clinic leads review chair-time profitability while lenders study its annual accounts. Evaluate the following economic assertions:",
-  "Consider a renewable-energy installer whose project managers track labour hours while investors read its published results. Evaluate the following economic assertions:",
-  "Consider a catering firm whose event coordinators see per-menu cost sheets while tax officials receive its statutory returns. Evaluate the following economic assertions:",
-  "Consider a property-management company whose building supervisors track repair invoices while owners read the consolidated financial report. Evaluate the following economic assertions:",
-  "Consider a craft brewery whose brewmasters monitor ingredient usage while competitors study its publicly filed statements. Evaluate the following economic assertions:",
+  "Consider a regional manufacturer whose managers review weekly cost summaries while its lenders wait for the annual audited financial statements. Evaluate the following economic assertions:",
+  "Consider a retail chain whose employees hear informal updates on trading performance while tax authorities rely solely on its filed financial accounts. Evaluate the following economic assertions:",
+  "Consider a construction contractor whose site managers track job costs daily while outside investors read only its published annual report. Evaluate the following economic assertions:",
+  "Consider a hospitality group whose owners compare profit with the capital they have invested while an independent auditor checks the underlying figures. Evaluate the following economic assertions:",
+  "Consider a logistics operator whose managers redesign internal cost reports each month while its financial accounting statements keep the same format every year. Evaluate the following economic assertions:",
+  "Consider a health-care provider whose employees ask about job security after an internal trading update while lenders study its audited balance sheet. Evaluate the following economic assertions:",
+  "Consider a technology company whose managers commission a one-off report on a single product line while investors wait for the next published financial statements. Evaluate the following economic assertions:",
+  "Consider a service firm whose owners request more frequent internal figures than the statutory annual accounts provide. Evaluate the following economic assertions:",
+  "Consider a farm cooperative whose auditor is appointed independently of its own managers before the annual report is released. Evaluate the following economic assertions:",
+  "Consider a publishing house whose tax authorities assess liabilities from filed financial accounts rather than from internal management reports. Evaluate the following economic assertions:",
 ];
 
 const THEORY = [
-  "Review how financial accounting information is prepared primarily for external users such as owners, lenders and tax authorities. Evaluate the following economic assertions:",
-  "Analyze how management accounting information supports internal planning and control decisions within a business. Evaluate the following economic assertions:",
-  "Review the distinction between users inside a business and users outside it when accounts are prepared. Evaluate the following economic assertions:",
-  "Analyze why owners may care about return on their investment relative to the risk they bear. Evaluate the following economic assertions:",
-  "Review how managers use accounting data to decide whether to cut costs in a particular department. Evaluate the following economic assertions:",
-  "Analyze how managers may use cost information to set prices for products or services. Evaluate the following economic assertions:",
-  "Review why employees may be interested in whether a business is thriving when they read internal summaries. Evaluate the following economic assertions:",
-  "Analyze why suppliers may study a customer's published accounts before extending trade credit. Evaluate the following economic assertions:",
-  "Review why competitors may examine publicly available financial statements of rival firms. Evaluate the following economic assertions:",
-  "Analyze why investors compare published profit with the capital they have committed to a business. Evaluate the following economic assertions:",
-  "Review how tax authorities rely on financial accounting records to assess tax liabilities. Evaluate the following economic assertions:",
-  "Analyze why management accounting reports are not usually bound to the same legal presentation rules as published financial statements. Evaluate the following economic assertions:",
-  "Review how financial accounting focuses on the balance sheet and income statement in forms suitable for external reporting. Evaluate the following economic assertions:",
-  "Analyze why management accounting may be prepared monthly or weekly rather than only once a year. Evaluate the following economic assertions:",
-  "Review the role of auditing in checking whether published accounts present a true and fair view. Evaluate the following economic assertions:",
-  "Analyze how an independent auditing firm examines evidence supporting the figures in an annual report. Evaluate the following economic assertions:",
-  "Review why auditing results are disclosed within or alongside the annual report of larger companies. Evaluate the following economic assertions:",
-  "Analyze how internal management reports can focus on a single product line or cost centre. Evaluate the following economic assertions:",
-  "Review why discontinue-or-continue decisions for a product may rely on management accounting contribution analysis. Evaluate the following economic assertions:",
-  "Analyze why published financial statements alone may be too aggregated for day-to-day operational choices. Evaluate the following economic assertions:",
-  "Review how depreciation recorded in financial accounts reduces reported profit without an immediate cash payment. Evaluate the following economic assertions:",
-  "Analyze why both financial and management accounting can draw on the same underlying transaction records. Evaluate the following economic assertions:",
-  "Review how financial accounting must follow recognised accounting standards for external presentation. Evaluate the following economic assertions:",
-  "Analyze why management accounting formats can be tailored to the questions managers are asking. Evaluate the following economic assertions:",
-  "Review how media coverage sometimes reacts to headline profit figures from published accounts. Evaluate the following economic assertions:",
-  "Analyze why lenders focus on solvency and repayment capacity when reading external financial statements. Evaluate the following economic assertions:",
-  "Review how owners who are also managers may use both internal and external reports for different purposes. Evaluate the following economic assertions:",
-  "Analyze why external users generally cannot access detailed internal cost schedules prepared for managers. Evaluate the following economic assertions:",
-  "Review how an annual report bundles financial statements with governance and audit information for outsiders. Evaluate the following economic assertions:",
-  "Analyze why management accounting is sometimes described as serving decision-making rather than statutory compliance. Evaluate the following economic assertions:",
-  "Review how financial accounting supports accountability to parties who do not manage the business daily. Evaluate the following economic assertions:",
-  "Analyze why budgeting and variance analysis are typical management accounting tools rather than statutory requirements. Evaluate the following economic assertions:",
-  "Review how segment reports for divisions illustrate the flexibility of management accounting. Evaluate the following economic assertions:",
-  "Analyze why tax planning may use financial accounting figures as a starting point for calculations. Evaluate the following economic assertions:",
-  "Review how employee representatives may request summary financial information about employer performance. Evaluate the following economic assertions:",
-  "Analyze why investors in listed companies depend on audited published accounts for comparability. Evaluate the following economic assertions:",
-  "Review how cost-volume-profit thinking belongs to management accounting rather than external reporting. Evaluate the following economic assertions:",
-  "Analyze why a business might prepare internal dashboards that never appear in its annual report. Evaluate the following economic assertions:",
-  "Review how financial accounting captures transactions in a structured ledger before statements are produced. Evaluate the following economic assertions:",
-  "Analyze why management accounting may reallocate shared costs differently from the figures shown externally. Evaluate the following economic assertions:",
-  "Review how bookkeepers record transactions that later feed both internal and external reporting. Evaluate the following economic assertions:",
-  "Analyze why external stakeholders need trustworthy figures verified by an independent auditor. Evaluate the following economic assertions:",
-  "Review how management accounting can highlight which customer contracts are barely covering their variable costs. Evaluate the following economic assertions:",
-  "Analyze why financial accounting emphasises the overall financial position rather than individual product margins. Evaluate the following economic assertions:",
-  "Review how strategic pricing decisions often combine market information with internal cost data. Evaluate the following economic assertions:",
-  "Analyze why published accounts are usually insufficient for deciding how many units to produce next month. Evaluate the following economic assertions:",
-  "Review how return relative to risk motivates owners when they judge whether to keep capital in a business. Evaluate the following economic assertions:",
-  "Analyze why suppliers worry about a customer's ability to pay invoices when credit terms are offered. Evaluate the following economic assertions:",
-  "Review how competitors infer strategic pressure from rivals' published profitability trends. Evaluate the following economic assertions:",
-  "Analyze why financial and management accounting are complementary rather than interchangeable. Evaluate the following economic assertions:",
-  "Review how auditing adds credibility to figures that external users cannot verify themselves. Evaluate the following economic assertions:",
-  "Analyze why internal reports may include non-financial operating measures alongside cost data. Evaluate the following economic assertions:",
-  "Review how the annual report channel differs from informal management spreadsheets used inside a firm. Evaluate the following economic assertions:",
-  "Analyze why regulatory filing deadlines apply to financial accounting but not to internal management packs. Evaluate the following economic assertions:",
-  "Review how managers interpret accounting information when deciding whether marketing spend should be reduced. Evaluate the following economic assertions:",
-  "Analyze why external users generally see only the aggregated results of many internal decisions. Evaluate the following economic assertions:",
+  "Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:",
+  "Review how owners, lenders, tax authorities and investors are generally classified as external users of accounting information. Evaluate the following economic assertions:",
+  "Analyze why managers and employees are generally classified as internal users of accounting information. Evaluate the following economic assertions:",
+  "Review why owners weigh the return on their investment against the risk they are taking. Evaluate the following economic assertions:",
+  "Analyze why lenders focus on a business's ability to repay what it owes. Evaluate the following economic assertions:",
+  "Review why tax authorities depend on financial accounting records when assessing liabilities. Evaluate the following economic assertions:",
+  "Analyze why investors study published financial statements before committing further capital. Evaluate the following economic assertions:",
+  "Review why employees may take an interest in accounting information about job security and pay. Evaluate the following economic assertions:",
+  "Analyze why managers rely on management accounting information to control costs and choose between options. Evaluate the following economic assertions:",
+  "Review why financial accounting statements must follow recognised presentation rules. Evaluate the following economic assertions:",
+  "Analyze why management accounting is not bound by the same presentation rules as financial accounting. Evaluate the following economic assertions:",
+  "Review why financial accounting statements are normally published only once a year. Evaluate the following economic assertions:",
+  "Analyze why management accounting reports can be produced weekly or monthly for internal users. Evaluate the following economic assertions:",
+  "Review the purpose of an independent audit of a business's financial accounting statements. Evaluate the following economic assertions:",
+  "Analyze why an auditor must be independent of the managers whose figures are being checked. Evaluate the following economic assertions:",
+  "Review how auditing gives external users confidence in published financial statements. Evaluate the following economic assertions:",
+  "Analyze why management accounting reports are not normally subject to the same audit as financial accounting statements. Evaluate the following economic assertions:",
+  "Review why external users generally cannot see the detailed internal reports prepared for managers. Evaluate the following economic assertions:",
+  "Analyze why financial accounting and management accounting can draw on the same underlying transactions. Evaluate the following economic assertions:",
+  "Review why recognised presentation rules help external users compare different businesses. Evaluate the following economic assertions:",
+  "Analyze why internal reports can be laid out however best suits the decision being made. Evaluate the following economic assertions:",
+  "Review why owners and investors are often treated as separate but related user groups. Evaluate the following economic assertions:",
+  "Analyze why tax authorities are treated as external users of financial accounting information. Evaluate the following economic assertions:",
+  "Review how the frequency of reporting differs between financial accounting and management accounting. Evaluate the following economic assertions:",
+  "Analyze why flexibility of format is a distinguishing feature of management accounting. Evaluate the following economic assertions:",
+  "Review why an audited annual report carries more weight with external users than an unaudited internal summary. Evaluate the following economic assertions:",
+  "Analyze the difference between users who work inside a business and users who assess it from outside. Evaluate the following economic assertions:",
+  "Review why lenders and investors are both classified as external users despite having different concerns. Evaluate the following economic assertions:",
+  "Analyze why management accounting can focus on a single decision rather than the whole business. Evaluate the following economic assertions:",
+  "Review why bookkeeping continues even after a business's accounts have been audited. Evaluate the following economic assertions:",
 ];
 
 const TITLES = [
   "Financial Accounting and External Users",
-  "Management Accounting for Internal Decisions",
-  "Owners, Managers and Employees as Users",
-  "Suppliers Reading Customer Accounts",
-  "Investors and Published Profit",
-  "Tax Authorities and Statutory Accounts",
-  "Auditing and the Annual Report",
-  "Independent Verification of Accounts",
-  "Flexible Formats in Management Accounting",
-  "Statutory Presentation in Financial Accounting",
-  "Frequency of Internal Versus External Reports",
-  "Cost Cutting and Departmental Analysis",
-  "Pricing Decisions and Internal Costs",
-  "Product-Line Contribution Analysis",
-  "Discontinue or Continue Decisions",
-  "Return Relative to Owner Risk",
+  "Management Accounting for Internal Users",
+  "Owners Weighing Return Against Risk",
   "Lenders and Repayment Capacity",
-  "Competitors Studying Public Filings",
-  "Media Reaction to Headline Profit",
-  "Segment Reporting for Divisions",
-  "Budgeting as a Management Tool",
-  "Variance Analysis Internally",
-  "Bookkeeping and Transaction Records",
-  "Ledger Data Feeding Both Report Types",
-  "Accounting Standards for External Reports",
-  "Dashboards Not in the Annual Report",
-  "Cost-Volume-Profit Thinking",
-  "Aggregated External Statements",
-  "Detailed Internal Cost Schedules",
-  "Depreciation in Published Profit",
-  "Non-Cash Expenses and Cash Planning",
-  "Accountability to Outside Parties",
-  "Operational Choices and Internal Data",
-  "Strategic Pricing and Cost Data",
-  "Employee Interest in Business Health",
-  "Governance Disclosures in Annual Reports",
-  "Credibility Added by Auditing",
-  "Complementary Accounting Systems",
-  "Regulatory Deadlines for Filing",
-  "Informal Spreadsheets Versus Annual Reports",
-  "Marketing Spend and Management Review",
-  "Shared Cost Allocation Internally",
-  "Customer Contract Profitability",
-  "Insufficient Detail in Published Accounts",
-  "Listed Company Comparability",
-  "Tax Planning Starting From Accounts",
-  "Divisional Performance Reports",
-  "Weekly Internal Packs Versus Yearly Filings",
-  "Evidence Testing by Auditors",
-  "True and Fair View in Auditing",
-  "Management Accounting and Compliance",
-  "Financial Accounting and Decision Timing",
-  "Owner-Managers Using Both Report Types",
+  "Tax Authorities and Filed Accounts",
+  "Investors and Published Statements",
+  "Managers Controlling Costs Internally",
+  "Employees and Job Security",
+  "Internal Versus External Users",
+  "Frequency of Financial Reporting",
+  "Frequency of Management Reporting",
+  "Flexible Formats in Management Accounting",
+  "Statutory Formats in Financial Accounting",
+  "Independent Auditing Explained",
+  "Audit Independence From Management",
+  "A True and Fair View",
+  "Assurance for External Users",
+  "Unaudited Internal Reports",
+  "Shared Transactions, Different Purposes",
+  "Recognised Rules for Comparability",
+  "Owners and Investors as Separate Users",
+  "Annual Statements Versus Monthly Reports",
+  "Tailored Reports for Managers",
+  "Why Employees Read Trading Updates",
+  "Why Lenders Study Balance Sheets",
+  "Why Tax Authorities Need Filed Accounts",
+  "Why Investors Wait for Annual Reports",
+  "Internal Reports Not Publicly Filed",
   "External Users Without Daily Access",
-  "Internal Non-Financial Measures",
-  "Strategic Inference From Rivals' Profit",
-  "Supplier Credit and Customer Solvency",
-  "Recording Transactions Accurately",
-  "Supporting Documents Behind Entries",
-  "Why Auditing Matters to Outsiders",
-  "Management Focus on Control",
-  "Financial Focus on Stewardship",
-  "Pricing Below Full Cost Traps",
-  "Contribution Margin Thinking",
-  "Annual Report as External Bundle",
-  "Internal Reports for Shift Managers",
-  "Bank Covenants and Published Figures",
-  "Investor Return Expectations",
-  "Cutting Costs in Administration",
-  "Cutting Costs in Distribution",
-  "Product Mix and Internal Margins",
-  "External Profit Versus Internal Detail",
-  "Audited Figures for Shareholders",
-  "Management Packs for Supervisors",
-  "Tax Returns From Financial Records",
-  "Competitor Benchmarking From Filings",
-  "Closing Review of Accounting Uses",
+  "One-Off Reports for a Single Decision",
+  "Bookkeeping Behind Both Report Types",
+  "Auditors Independent of Managers",
+  "Confidence Through Independent Checks",
+  "Comparing Businesses Using Published Rules",
+  "Weekly Figures for Internal Managers",
+  "Annual Cycle for External Statements",
+  "Distinguishing the Two Accounting Branches",
+  "Users Inside and Outside the Business",
+  "Reliability of Audited Statements",
+  "Purpose Behind Internal Reporting Choices",
 ];
 
-const sceneIndices = [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73];
+const sceneIndices = [1, 5, 9, 13, 17, 21];
+
+const sectors = [
+  "manufacturer",
+  "retailer",
+  "service firm",
+  "construction contractor",
+  "hospitality group",
+  "logistics operator",
+  "health-care provider",
+  "technology company",
+];
+
+const externalUsers = [
+  { name: "owners", note: "the return earned on the capital they have invested" },
+  { name: "lenders", note: "whether the business will be able to repay what it owes" },
+  { name: "tax authorities", note: "how much tax is due on the business's profit" },
+  { name: "investors", note: "the likely return and risk before committing further capital" },
+];
+const internalUsers = [
+  { name: "managers", note: "controlling costs and choosing between courses of action" },
+  { name: "employees", note: "how secure their jobs and future pay are likely to be" },
+];
+const allUsers = [...externalUsers, ...internalUsers];
 
 function buildTruePool() {
   const pool = [];
   const seen = new Set();
   const add = (s, e) => {
-    if (seen.has(s)) throw new Error(`dup TRUE: ${s.slice(0, 50)}`);
+    if (seen.has(s)) throw new Error(`dup TRUE: ${s.slice(0, 60)}`);
     seen.add(s);
     pool.push([s, e]);
   };
 
-  const externals = [
-    "tax authorities",
-    "long-term lenders",
-    "trade suppliers",
-    "equity investors",
-    "financial journalists",
-    "bondholders",
-    "credit-rating analysts",
-    "regulators",
-  ];
-  const internals = [
-    "store managers",
-    "production supervisors",
-    "regional directors",
-    "product managers",
-    "department heads",
-    "project leaders",
-    "shift coordinators",
-    "divisional controllers",
-  ];
-  const sectors = [
-    "manufacturer",
-    "retailer",
-    "service firm",
-    "construction contractor",
-    "hospitality group",
-    "logistics operator",
-    "health-care provider",
-    "technology company",
-  ];
-
-  for (const u of externals) {
-    add(
-      `Published financial statements prepared under financial accounting are aimed primarily at ${u} and other parties outside day-to-day management.`,
-      `Financial accounting serves external stakeholders such as ${u}, not only internal managers.`,
-    );
-    add(
-      `${u.charAt(0).toUpperCase() + u.slice(1)} typically rely on audited annual reports rather than on informal internal spreadsheets when judging a business.`,
-      `External parties such as ${u} depend on formal published and often audited accounts.`,
-    );
-  }
-
-  for (const u of internals) {
-    add(
-      `Detailed cost schedules prepared for ${u} are examples of management accounting information used inside the business.`,
-      `Management accounting supplies internal decision makers such as ${u} with tailored cost and performance data.`,
-    );
-    add(
-      `${u.charAt(0).toUpperCase() + u.slice(1)} may receive weekly or monthly internal reports that are not part of the legally prescribed annual financial statements.`,
-      `Management accounting can be produced frequently for ${u} without following the statutory formats used externally.`,
-    );
-  }
-
-  for (const s of sectors) {
-    add(
-      `A ${s} may use management accounting to decide whether a product line still covers its variable costs even when published accounts show overall profit.`,
-      `Discontinue-or-continue product decisions for a ${s} often draw on internal contribution analysis from management accounting.`,
-    );
-    add(
-      `Managers at a ${s} can use internal accounting data to review whether marketing expenditure should be reduced in a weak quarter.`,
-      `Cost-cutting choices at a ${s} are typical management accounting uses rather than purposes of external reporting.`,
-    );
-    add(
-      `Owners of a ${s} may judge whether retained capital is justified by comparing profit with the risk they bear.`,
-      `Return relative to risk is a central owner concern when reading accounts of a ${s}.`,
-    );
-    add(
-      `An independent audit of a ${s}'s annual report is intended to increase confidence that the figures are reliable for external users.`,
-      `Auditing provides independent verification sought by outsiders reviewing a ${s}.`,
-    );
-    add(
-      `Depreciation charged in a ${s}'s income statement reduces reported profit without causing a cash payment in the same period.`,
-      `Depreciation is a non-cash expense in the published accounts of a ${s}.`,
-    );
-    add(
-      `Management accounting reports for a ${s} may be structured by product, region or cost centre rather than mirroring the published financial statements line by line.`,
-      `Internal formats for a ${s} can differ from statutory presentation because management accounting serves different questions.`,
-    );
-  }
-
-  add(
-    "Financial accounting must follow recognised presentation rules so that external users can compare businesses on a consistent basis.",
-    "Standardised external presentation is a hallmark of financial accounting.",
-  );
-  add(
-    "Management accounting is not usually required to follow the same legally prescribed formats as the published balance sheet and income statement.",
-    "Flexibility of format distinguishes management accounting from statutory financial accounting.",
-  );
-  add(
-    "Bookkeepers record business transactions that later support both internal management reports and external financial statements.",
-    "The same underlying transaction records can feed both accounting branches.",
-  );
-  add(
-    "Only financial accounting figures appear in the annual report that is filed for external stakeholders.",
-    "The annual report channel is part of financial accounting aimed at outsiders.",
-  );
-
-  const decisions = [
-    "whether to cut distribution costs after a weak quarter",
-    "whether to raise the price of a flagship service",
-    "whether to close a branch that barely covers its variable costs",
-    "whether to outsource cleaning rather than employ staff directly",
-    "whether to extend a loss-making contract for strategic reasons",
-    "whether to renegotiate supplier terms before the next season",
-    "whether to delay a marketing campaign until margins recover",
-    "whether to shift production to a cheaper facility",
-  ];
-  for (const s of sectors) {
-    for (const d of decisions) {
+  for (const sector of sectors) {
+    for (const u of externalUsers) {
       add(
-        `Internal management accounting helps a ${s} decide ${d} using information that is not presented in the published annual report.`,
-        `Operational choices such as ${d} rely on internal management data rather than external statutory formats.`,
+        `${cap(u.name)} of a ${sector} are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.`,
+        `${cap(u.name)} sit outside daily management and depend on financial accounting rather than internal management reports.`,
+      );
+      add(
+        `${cap(u.name)} of a ${sector} normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.`,
+        `Financial accounting statements reach external users such as ${u.name} on the statutory annual cycle.`,
+      );
+    }
+    for (const u of internalUsers) {
+      add(
+        `${cap(u.name)} of a ${sector} work inside the business and can be given management accounting reports designed around their own questions.`,
+        `${cap(u.name)} are internal users who can receive management accounting tailored to their needs.`,
+      );
+      add(
+        `${cap(u.name)} of a ${sector} can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.`,
+        `Management accounting can reach internal users such as ${u.name} far more frequently than annual financial accounting.`,
+      );
+      add(
+        `Reports prepared for ${u.name} of a ${sector} can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.`,
+        `Management accounting for internal users such as ${u.name} is flexible in format, unlike statutory financial accounting.`,
+      );
+    }
+    for (const u of allUsers) {
+      add(
+        `${cap(u.name)} of a ${sector} look at accounting information mainly to judge ${u.note}.`,
+        `${cap(u.name)} focus on ${u.note} when they use accounting information.`,
       );
     }
   }
 
-  const audiences = ["bank credit committees", "pension funds", "trade unions", "franchise applicants"];
-  for (const a of audiences) {
-    for (const s of sectors.slice(0, 6)) {
-      add(
-        `${a.charAt(0).toUpperCase() + a.slice(1)} reviewing a ${s} typically depend on published financial accounting statements rather than confidential management packs.`,
-        `External groups such as ${a} use formal published accounts of a ${s}, not internal management schedules.`,
-      );
-    }
-  }
-
-  const topics = [
-    "pricing a new catalogue line",
-    "allocating head-office costs to branches",
-    "tracking overtime in a single warehouse",
-    "comparing margin on two distribution channels",
-    "estimating break-even volume for a seasonal product",
-    "reviewing scrap rates on a production line",
-    "monitoring fuel spend across a vehicle fleet",
-    "assessing whether to renew an advertising contract",
-  ];
-  for (let i = 0; i < topics.length; i++) {
-    const biz = sectors[i % sectors.length];
+  for (const sector of sectors) {
     add(
-      `When a ${biz} focuses on ${topics[i]}, the relevant figures are normally drawn from management accounting rather than from the published annual report alone.`,
-      `${topics[i].charAt(0).toUpperCase() + topics[i].slice(1)} is a typical internal management accounting use for a ${biz}.`,
+      `An independent auditor examines a ${sector}'s financial accounting statements before they are published, to check whether the figures give a true and fair view.`,
+      `Auditing is an independent check on published financial accounting statements.`,
     );
     add(
-      `Published financial statements of a ${biz} are too aggregated to guide day-to-day choices about ${topics[i]} without supplementary internal reports.`,
-      `Internal detail on ${topics[i]} goes beyond what external financial accounting provides for a ${biz}.`,
+      `The auditor of a ${sector} is independent of its own managers, which allows external users to place more trust in the published financial statements.`,
+      `Audit independence from management is what gives external users confidence in published accounts.`,
+    );
+    add(
+      `Financial accounting and management accounting at a ${sector} both draw on the same underlying transactions, yet they are prepared for different users and different purposes.`,
+      `The two branches share a data source but differ in users and purpose.`,
     );
   }
-
-  const documents = [
-    "supplier invoice",
-    "customer receipt",
-    "bank transfer confirmation",
-    "inventory count sheet",
-    "payroll summary",
-    "delivery note",
-    "lease agreement",
-    "insurance premium notice",
-  ];
-  for (const doc of documents) {
-    for (const s of sectors) {
+  for (const sector of sectors) {
+    for (const u of externalUsers) {
       add(
-        `Each verified ${doc} recorded by a ${s} becomes part of the ledger that supports both statutory financial statements and selective internal management reports.`,
-        `Documentary evidence such as a ${doc} feeds the shared transaction base used by a ${s} for external and internal reporting.`,
+        `Auditing gives ${u.name} of a ${sector} some assurance that the published financial accounting statements can be relied upon.`,
+        `Audited statements provide assurance to external users such as ${u.name}.`,
+      );
+      add(
+        `A ${sector} must prepare its financial accounting statements according to recognised rules so that ${u.name} can compare its performance with other businesses.`,
+        `Recognised presentation rules for financial accounting exist so external users such as ${u.name} can compare businesses.`,
+      );
+    }
+    for (const u of internalUsers) {
+      add(
+        `Management accounting reports produced only for ${u.name} inside a ${sector} are not normally subject to the same independent audit as its financial accounting statements.`,
+        `Internal management accounting is not typically audited in the way financial accounting is.`,
+      );
+      add(
+        `Because management accounting is not governed by the same rules as financial accounting, a ${sector} can design internal reports around whatever question ${u.name} are asking.`,
+        `Freedom from statutory rules lets management accounting be shaped around the needs of internal users such as ${u.name}.`,
       );
     }
   }
 
-  const reportTypes = [
-    "branch contribution schedule",
-    "product margin comparison",
-    "overhead absorption worksheet",
-    "rolling cash forecast",
-    "labour hour analysis by contract",
-  ];
-  for (const r of reportTypes) {
-    for (const s of sectors) {
-      add(
-        `A ${r} prepared for managers at a ${s} illustrates management accounting that is not normally reproduced line for line in the published annual report.`,
-        `Internal formats such as a ${r} serve managers at a ${s} without replacing statutory financial statements.`,
-      );
-    }
-  }
-
-  if (pool.length < 220) throw new Error(`TRUE pool only ${pool.length}`);
+  if (pool.length < 100) throw new Error(`TRUE pool only ${pool.length}`);
   return pool;
 }
 
@@ -372,126 +219,80 @@ function buildFalsePool() {
   const pool = [];
   const seen = new Set();
   const add = (s, e) => {
-    if (seen.has(s)) throw new Error(`dup FALSE: ${s.slice(0, 50)}`);
+    if (seen.has(s)) throw new Error(`dup FALSE: ${s.slice(0, 60)}`);
     seen.add(s);
     pool.push([s, e]);
   };
 
-  const sectors = [
-    "manufacturer",
-    "retailer",
-    "service firm",
-    "construction contractor",
-    "hospitality group",
-    "logistics operator",
-    "health-care provider",
-    "technology company",
-    "farm cooperative",
-    "publisher",
-  ];
-
-  for (const s of sectors) {
-    add(
-      `Management accounting reports for a ${s} must be filed in exactly the same statutory format as its published balance sheet and income statement.`,
-      "Management accounting is not bound to the same legal presentation rules as published financial statements.",
-    );
-    add(
-      `Only financial accounting can ever support a ${s}'s decision on whether to discontinue an unprofitable product line.`,
-      "Management accounting contribution analysis is commonly used for discontinue-or-continue product decisions.",
-    );
-    add(
-      `A ${s} prepares management accounting solely for tax authorities and never for its own managers.`,
-      "Management accounting primarily serves internal managers; tax authorities rely on financial accounting filings.",
-    );
-    add(
-      `External lenders of a ${s} typically base their credit decisions only on informal internal spreadsheets prepared for supervisors.`,
-      "Lenders generally rely on published and often audited financial statements rather than internal management packs.",
-    );
-    add(
-      `An audit of a ${s}'s accounts is performed by the firm's own sales managers to verify daily cash takings.`,
-      "Auditing is carried out by an independent firm to test the reliability of published accounts, not by sales managers.",
-    );
-    add(
-      `Depreciation recorded by a ${s} requires an equal cash payment to leave the business in the same month it is charged.`,
-      "Depreciation reduces profit but does not by itself cause a cash payment when recorded.",
-    );
-    add(
-      `Published financial statements of a ${s} are prepared mainly for shift supervisors who need tomorrow's production schedule.`,
-      "Published financial statements serve external users and overall accountability; daily production scheduling uses internal management information.",
-    );
-    add(
-      `Owners of a ${s} never compare profit with the risk of their investment when reading accounts.`,
-      "Owners commonly weigh return against risk when judging whether capital should remain in the business.",
-    );
-  }
-
-  add(
-    "Management accounting and financial accounting are interchangeable names for the same set of reports prepared once a year.",
-    "They are distinct branches serving different users, frequencies and presentation rules.",
-  );
-  add(
-    "Suppliers extending trade credit never consult a customer's published accounts before agreeing payment terms.",
-    "Suppliers often review a customer's financial statements to judge credit risk.",
-  );
-  add(
-    "Competitors are legally barred from reading any publicly filed financial statements of rival businesses.",
-    "Competitors may study publicly available filings when assessing rival performance.",
-  );
-  add(
-    "Employees and managers are always classified as external users of accounting information.",
-    "Managers and employees are internal users; tax authorities, lenders and investors are external.",
-  );
-
-  const freq = ["weekly", "monthly", "quarterly"];
-  for (const f of freq) {
-    for (const s of sectors) {
+  for (const sector of sectors) {
+    for (const u of externalUsers) {
       add(
-        `A ${s} may prepare ${f} internal performance summaries for managers even though its statutory financial statements are published only once a year.`,
-        `Management accounting at a ${s} can be produced ${f}, unlike the annual external filing cycle.`,
+        `${cap(u.name)} of a ${sector} are internal users who receive management accounting reports every week, in the same way as its own managers.`,
+        `${cap(u.name)} are external users who rely on annual financial accounting, not weekly internal management reports.`,
       );
       add(
-        `External regulators do not require a ${s} to file ${f} management accounting packs in the same format as its annual balance sheet.`,
-        `${f.charAt(0).toUpperCase() + f.slice(1)} internal reports for a ${s} are not statutory external filings.`,
+        `${cap(u.name)} of a ${sector} base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.`,
+        `${cap(u.name)} typically rely on published financial accounting statements, not informal internal notes.`,
+      );
+    }
+    for (const u of internalUsers) {
+      add(
+        `${cap(u.name)} of a ${sector} are not allowed to see any accounting information more often than the once-a-year published financial statements.`,
+        `Internal users such as ${u.name} can receive management accounting far more often than the annual financial statements.`,
+      );
+      add(
+        `Management accounting reports prepared for ${u.name} of a ${sector} must use exactly the same statutory format as the published financial statements.`,
+        `Management accounting for internal users such as ${u.name} is not tied to the statutory format used for financial accounting.`,
+      );
+    }
+    for (const u of allUsers) {
+      add(
+        `${cap(u.name)} of a ${sector} have no interest in ${u.note} when they look at accounting information.`,
+        `${cap(u.name)} are typically concerned with ${u.note}.`,
       );
     }
   }
 
-  const wrongClaims = [
-    "tax returns are prepared only from management accounting and never from financial accounting records",
-    "auditing replaces the need for any bookkeeping at all",
-    "owners never read published profit figures",
-    "suppliers always ignore a customer's balance sheet before offering credit",
-    "management accounting must be signed by the same independent auditor as the annual report",
-    "financial accounting is prepared exclusively for shop-floor staff",
-    "internal cost schedules are legally filed alongside the balance sheet for every business",
-    "depreciation never appears in the income statement",
-  ];
-  for (const s of sectors) {
-    for (const w of wrongClaims) {
+  for (const sector of sectors) {
+    add(
+      `A ${sector} may present its financial accounting statements in any layout management prefers, without following any recognised presentation rules.`,
+      `Financial accounting must follow recognised presentation rules; it is not left to management's free choice.`,
+    );
+    add(
+      `The audit of a ${sector} is carried out by its own managers, who check their own figures before the statements are published.`,
+      `An audit is carried out by an independent party, not by the business's own managers.`,
+    );
+    add(
+      `Once a ${sector}'s financial accounting statements have been audited, no further bookkeeping records need to be kept afterwards.`,
+      `Auditing checks existing records; it does not remove the ongoing need for bookkeeping.`,
+    );
+    add(
+      `Financial accounting and management accounting at a ${sector} are simply two names for identical reports produced with the same frequency and format.`,
+      `The two branches differ in users, frequency and format; they are not identical.`,
+    );
+  }
+  for (const sector of sectors) {
+    for (const u of externalUsers) {
       add(
-        `It is accurate to say that for a ${s}, ${w}.`,
-        `That claim about a ${s} is incorrect and reverses the usual roles of financial and management accounting.`,
+        `A ${sector} need not follow any recognised presentation rules in its financial accounting statements, since ${u.name} can compare businesses however they wish.`,
+        `Recognised presentation rules exist precisely so that external users such as ${u.name} can compare businesses consistently.`,
       );
     }
   }
 
-  if (pool.length < 220) throw new Error(`FALSE pool only ${pool.length}`);
+  if (pool.length < 80) throw new Error(`FALSE pool only ${pool.length}`);
   return pool;
 }
 
-console.log(
-  "Pools:",
-  buildTruePool().length,
-  "TRUE,",
-  buildFalsePool().length,
-  "FALSE",
-);
+const truePool = buildTruePool();
+const falsePool = buildFalsePool();
+console.log("Pools:", truePool.length, "TRUE,", falsePool.length, "FALSE");
 
 const cases = buildCases({
   subsection: "6.4",
   slots,
-  TRUE: buildTruePool(),
-  FALSE: buildFalsePool(),
+  TRUE: truePool,
+  FALSE: falsePool,
   SCENE,
   THEORY,
   TITLES,
