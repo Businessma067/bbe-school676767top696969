@@ -1,0 +1,2902 @@
+[
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.01",
+    "title": "Primary and Secondary Research Sources",
+    "context": "Consider a components manufacturer that commissions an online survey and telephone interviews to learn what industrial buyers expect from next-generation circuit boards. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary market research may gather information through questionnaires administered to hundreds of respondents designed for the specific interests of the business.",
+      "Secondary information is gathered by administering a new questionnaire programme designed solely for the commissioning business.",
+      "Primary market research may gather information through personal interviews with selected buyers designed for the specific interests of the business.",
+      "Primary market research may gather information through online surveys distributed to a defined sample designed for the specific interests of the business.",
+      "Primary market research may gather information through empirical studies commissioned from a market research institute designed for the specific interests of the business."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Primary research uses tailored empirical methods such as questionnaires administered to hundreds of respondents to collect data for the firm.",
+      "FALSE — New bespoke questionnaires produce primary information, not secondary data.",
+      "TRUE — Primary research uses tailored empirical methods such as personal interviews with selected buyers to collect data for the firm.",
+      "TRUE — Primary research uses tailored empirical methods such as online surveys distributed to a defined sample to collect data for the firm.",
+      "TRUE — Primary research uses tailored empirical methods such as empirical studies commissioned from a market research institute to collect data for the firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.02",
+    "title": "Empirical Studies and Tailored Data",
+    "context": "Analyze the distinction between primary and secondary sources of market research data. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary information is gained by conducting an empirical study or having data collected by a market research institute.",
+      "A primary study can be tailored to the needs and interests of the business commissioning the research.",
+      "Administering large questionnaire programmes and analysing the responses is a major cost of primary market research.",
+      "Conducting personal or telephone interviews as part of market research requires substantial expenditure on data collection.",
+      "Setting up and interpreting an online survey still involves analysis costs that make primary research expensive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The textbook defines primary information as data from a new empirical study or institute collection.",
+      "TRUE — Primary research is designed around the commissioning firm's specific questions and interests.",
+      "TRUE — Questionnaire administration and data analysis contribute to the high cost of primary research.",
+      "TRUE — Interview-based primary research involves significant collection and processing costs.",
+      "TRUE — Online surveys remain primary research and carry analysis costs noted in the chapter."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.03",
+    "title": "Cost Barriers in Primary Research",
+    "context": "Review how primary information is obtained through empirical studies tailored to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Small businesses often cannot afford extensive primary market research because of the cost of large-scale data collection.",
+      "Primary research allows a business to ask who its customers are and which products they buy in a study designed for that firm.",
+      "Primary market research reuses published government statistics without collecting any new empirical data.",
+      "Primary research can investigate how much customers are willing to pay and what support they expect from a supplier.",
+      "Market share is calculated by dividing total market sales by the sales of one business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The chapter notes that especially small businesses struggle to fund costly primary studies.",
+      "TRUE — Tailored primary studies can target firm-specific who and what customer questions.",
+      "FALSE — Reusing published statistics is secondary research; primary requires new empirical collection.",
+      "TRUE — Willingness to pay and support needs are examples of questions primary research can address.",
+      "FALSE — Market share divides business sales by total market sales, not the reverse."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.04",
+    "title": "Government and Association Secondary Data",
+    "context": "Analyze why conducting primary market research can be costly for smaller businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share equals the largest competitor's sales divided by the firm's own sales volume.",
+      "Primary research can compare answers from different customer groups such as older and younger users or men and women.",
+      "Relative market share equals the firm's sales volume divided by total market volume expressed as a percentage.",
+      "Primary data collection through interviews lets a firm explore why customers prefer one product over close substitutes.",
+      "An empirical primary study can be shaped around the distribution channels a business wishes to evaluate."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Absolute share uses firm sales over market volume, not rival sales over firm sales.",
+      "TRUE — Demographic comparisons within a tailored primary study are part of customer analysis.",
+      "FALSE — That formula describes absolute share; relative share compares with the leader's share.",
+      "TRUE — Why-customer motives can be explored through primary interview research.",
+      "TRUE — Primary research can be tailored to test where customers prefer to buy."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.05",
+    "title": "Customer Analysis Overview",
+    "context": "Consider a pharmaceutical wholesaler operating in a business-to-business market that interviews hospital buyers about motives for choosing one supplier over another. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary research may track when customers purchase so that seasonal patterns are identified from newly collected data.",
+      "Market size refers only to the sales volume of one business rather than all businesses in the market.",
+      "Market potential is always equal to current market volume because every customer already purchases in the market.",
+      "Sales potential cannot exceed current sales volume once the firm has published its annual revenue figure.",
+      "Secondary research is always tailored to the specific interests of the business that reads the report."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — When-customer timing can be captured directly in a primary empirical study.",
+      "FALSE — Market size is total sales of all firms in the market, not one firm alone.",
+      "FALSE — The chapter assumes potential can exceed volume when unconverted customers remain.",
+      "FALSE — Sales potential may exceed current sales volume through gains and market growth.",
+      "FALSE — Secondary information is usually general and not tailored to one firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.06",
+    "title": "Who Customers Are in B2B and B2C",
+    "context": "Analyze the customer-analysis question of who current and potential customers are. Evaluate the following economic assertions:",
+    "statements": [
+      "Commissioning a market research institute to collect data is a recognised way of obtaining primary information.",
+      "Primary research is appropriate when a business needs buyer-specific detail that general published statistics cannot supply.",
+      "Questionnaires distributed to thousands of respondents represent primary data because they are collected for the commissioning study.",
+      "Primary research is free of charge because the business designs the questions itself.",
+      "Customer analysis excludes the question of why customers prefer one product over another."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Institute collection on behalf of the business is primary information in the textbook framework.",
+      "TRUE — Tailored primary research fills gaps left by non-specific secondary data.",
+      "TRUE — Large-scale questionnaires produce primary information when gathered for the firm's study.",
+      "FALSE — Primary research is costly due to collection and analysis, especially for small firms.",
+      "FALSE — Why-customers choose is an explicit customer-analysis dimension."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.07",
+    "title": "Buyer User and Influencer Roles",
+    "context": "Review how customer analysis distinguishes business-to-consumer and business-to-business markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer analysis covers only who customers are and excludes what, where, when, and why dimensions.",
+      "Primary research supports learning whether customers also buy similar products from competing businesses.",
+      "In a business-to-consumer market the customers are other businesses purchasing for production use.",
+      "In a business-to-business market the customers are always final household consumers.",
+      "Primary research can reveal what customers think about a product through questions designed for that product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Customer analysis includes who, what, where, when, and why.",
+      "TRUE — Competitive purchasing behaviour can be investigated through tailored primary research.",
+      "FALSE — B2C markets have consumers as customers; business customers indicate B2B.",
+      "FALSE — B2B markets involve business customers, not final consumers.",
+      "TRUE — Product opinion questions in a tailored study are primary customer insight."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.08",
+    "title": "What Customers Do With Products",
+    "context": "Analyze the roles of buyer, user, and influencer in customer purchasing decisions. Evaluate the following economic assertions:",
+    "statements": [
+      "The cost of interpreting primary research data is part of why small firms may rely on cheaper secondary sources instead.",
+      "The buyer and user of a product must always be the same person in every market.",
+      "Children can never influence purchasing decisions because only adults hold payment cards.",
+      "Where-customer analysis is unrelated to identifying preferred distribution channels.",
+      "When-customer analysis cannot reveal seasonal fluctuations because purchase dates are never recorded."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Analysis and interpretation costs contribute to primary research expense for smaller businesses.",
+      "FALSE — The chapter notes buyer and user may differ.",
+      "FALSE — Children may influence choices even when adults pay.",
+      "FALSE — Where customers buy helps identify distribution channels.",
+      "FALSE — When customers buy can reveal seasonal patterns."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.09",
+    "title": "Where Customers Purchase Products",
+    "context": "Consider a logistics firm reviewing published transport-market forecasts alongside its own shipment records to judge growth opportunities. Evaluate the following economic assertions:",
+    "statements": [
+      "Why-customer analysis is irrelevant to product development and market-share growth.",
+      "Primary information is newly collected for the study rather than taken unchanged from earlier publications.",
+      "Market research provides information only about competitors and excludes customer analysis.",
+      "A business may design primary research around prospective customers it has not yet converted to buyers.",
+      "Primary research through personal interviews can explore preferred product use in the customer's own words."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Motives and preferences matter for development and share enhancement.",
+      "TRUE — Primary data are gathered for the current empirical study rather than reused unchanged.",
+      "FALSE — Market research covers customers, competitors, and industry conditions.",
+      "TRUE — Primary studies can target prospective as well as existing customers.",
+      "TRUE — What-customer use patterns can be captured through primary interviews."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.10",
+    "title": "When Customers Buy and Seasonality",
+    "context": "Analyze how knowledge of preferred product use supports development and improvement. Evaluate the following economic assertions:",
+    "statements": [
+      "Relative market share is found by subtracting the firm's absolute share from one hundred per cent.",
+      "Absolute market share is found by dividing the largest competitor's share by the firm's share.",
+      "Tailored primary research can test alternative pricing levels by asking willingness-to-pay questions directly.",
+      "Primary data from a bespoke survey can inform channel strategy when respondents state where they prefer to shop.",
+      "Empirical primary research remains the source when a firm pays an institute to design and run the entire study."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Relative share is a ratio against the leader's share, not 100% minus absolute share.",
+      "FALSE — Absolute share uses firm sales over market volume, not rival over firm.",
+      "TRUE — Primary studies can include pricing questions tailored to the firm's product.",
+      "TRUE — Where-customer preferences can be collected in a tailored primary survey.",
+      "TRUE — Institute-run bespoke studies supply primary information to the commissioning business."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.11",
+    "title": "Why Customers Choose Products",
+    "context": "Review the customer-analysis dimension of where customers buy products. Evaluate the following economic assertions:",
+    "statements": [
+      "Secondary information is based on existing research that has already been completed by another organisation.",
+      "Government agencies may publish market research that businesses can use as a secondary information source.",
+      "Trade and industry associations sometimes conduct research that is available to member businesses as secondary data.",
+      "Other businesses may publish research findings that serve as secondary sources for firms studying the market.",
+      "Secondary market information is often available free of charge although it may not match a firm's specific interests."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Secondary data come from prior research conducted by others.",
+      "TRUE — Government publications are listed as sources of secondary market information.",
+      "TRUE — Association research can supply secondary information to firms in the sector.",
+      "TRUE — Research published by other businesses can be used as secondary information.",
+      "TRUE — Free secondary data are noted in the chapter though they may be general."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.12",
+    "title": "Market Size as Total Industry Sales",
+    "context": "Analyze how purchase-location data helps identify preferred distribution channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Secondary research data are usually general and not tailored to the specific interests of one business.",
+      "A firm using industry consumption statistics from a trade body is relying on secondary rather than primary research.",
+      "Secondary sources are useful when a business needs broad market background before designing a tailored primary study.",
+      "Forecasts published by research firms and reused by a manufacturer count as secondary market information.",
+      "Secondary data compiled for another purpose may still help a business learn about overall industry development."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The textbook states secondary information is typically general rather than firm-specific.",
+      "TRUE — Published association statistics are secondary information gathered earlier by others.",
+      "TRUE — Secondary data can provide general context ahead of primary research.",
+      "TRUE — Reused published forecasts are secondary data in the market-research framework.",
+      "TRUE — Secondary research done for other aims can still inform general market learning."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.13",
+    "title": "Market Share Percentage Calculation",
+    "context": "Consider a software vendor learning how business clients use its platform so that product updates match preferred operational workflows. Evaluate the following economic assertions:",
+    "statements": [
+      "Market volume and market potential are identical terms with no difference in meaning.",
+      "Reading an annual industry review prepared by a government department is an example of using secondary research.",
+      "Secondary information does not require the business to administer its own questionnaire programme to obtain the data.",
+      "A retailer consulting freely available national retail-sales statistics is using secondary market research.",
+      "Secondary research may cover entire market segments even when it lacks detail on one firm's customers."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Potential can exceed volume when unconverted customers remain.",
+      "TRUE — Government industry reviews are secondary sources of market information.",
+      "TRUE — Secondary data reuse existing studies rather than new firm-administered questionnaires.",
+      "TRUE — National statistics published elsewhere are secondary information.",
+      "TRUE — Broad segment coverage is a feature of general secondary data."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.14",
+    "title": "Absolute Market Share Formula",
+    "context": "Analyze how timing information reveals seasonal fluctuations and supports production planning. Evaluate the following economic assertions:",
+    "statements": [
+      "Because secondary research was conducted for another purpose, it may omit questions a business would ask in primary work.",
+      "Industry association reports on total sector output provide secondary context for estimating market size.",
+      "A components manufacturer reading published electronics-market forecasts is consuming secondary research data.",
+      "Secondary sources reduce data-collection cost because the business does not pay for a full bespoke empirical programme.",
+      "Market reports sold or shared by other businesses can supplement a firm's understanding as secondary data."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Different original purposes limit how tailored secondary data can be.",
+      "TRUE — Association output reports are secondary sources for size measures.",
+      "TRUE — Published market forecasts reused by the firm are secondary information.",
+      "TRUE — Reusing existing research avoids the cost of a new primary collection programme.",
+      "TRUE — Other firms' published reports function as secondary sources."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.15",
+    "title": "Relative Market Share Formula",
+    "context": "Review the customer-analysis dimension of why customers choose one product over another. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales volume and sales potential must always be equal for a mature business.",
+      "Primary data are secondary when the survey questions were written by the commissioning firm.",
+      "Secondary information from government agencies may describe industry trends without naming individual customer accounts.",
+      "Customer analysis often asks who current and potential customers are as part of market research.",
+      "Government statistics become primary data when a manager reads them in a board meeting."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales potential can exceed current sales volume.",
+      "FALSE — Tailored questionnaires still produce primary information.",
+      "TRUE — Government secondary data tend to be aggregate and general.",
+      "TRUE — Who-customers are a core dimension of customer analysis in the chapter.",
+      "FALSE — Reading published data does not convert secondary information into primary."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.16",
+    "title": "Market Volume Versus Market Potential",
+    "context": "Analyze how motives and preferences inform product development and market-share growth. Evaluate the following economic assertions:",
+    "statements": [
+      "An online survey counts as secondary research because responses are stored electronically.",
+      "If customers are final consumers, the business operates in a business-to-consumer market.",
+      "If customers are other businesses rather than final consumers, the firm operates in a business-to-business market.",
+      "The buyer of a product and the user of the product may not be the same person in customer analysis.",
+      "Some people influence buying decisions even when another person completes the purchase payment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Electronic collection does not make a new survey secondary.",
+      "TRUE — B2C markets serve consumers as customers in the textbook classification.",
+      "TRUE — B2B markets involve business customers purchasing from the firm.",
+      "TRUE — The chapter distinguishes buyer and user roles among customers.",
+      "TRUE — Influencers can shape decisions without being the paying buyer."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.17",
+    "title": "Sales Volume Versus Sales Potential",
+    "context": "Consider a regional bakery chain that studies government retail statistics and trade-association reports before opening outlets in new towns. Evaluate the following economic assertions:",
+    "statements": [
+      "Children may influence product choices while parents or grandparents complete the actual purchase.",
+      "Customer analysis examines what customers do with products to guide development according to needs.",
+      "The more a business knows about preferred product use, the more it can improve the product for customers.",
+      "Customer analysis considers where customers buy products to identify preferred distribution channels.",
+      "Analysis of purchase location can reveal weaknesses in current distribution channels."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The textbook gives children influencing purchases paid for by parents as an example.",
+      "TRUE — What-customers do with products supports need-based development.",
+      "TRUE — Preferred-use knowledge feeds product improvement in customer analysis.",
+      "TRUE — Where-customers buy links to channel identification.",
+      "TRUE — Where-customer data can expose channel weaknesses noted in the chapter."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.18",
+    "title": "Questionnaires as Primary Research",
+    "context": "Analyze how market size may be expressed as a monetary value or as a quantity sold. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-customer findings may encourage a business to use alternative distribution channels.",
+      "Telephone interviews count as secondary research when the interviewer works for a research institute.",
+      "Trade-association reports are primary because associations are outside the requesting business.",
+      "Market share measures total industry sales rather than one firm's proportion of those sales.",
+      "A firm with sales of 50,000 euros in a 1,000,000 euro market holds a fifty per cent absolute share."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel analysis can prompt alternative channel strategies.",
+      "FALSE — Institute-conducted interviews for the study are primary collection.",
+      "FALSE — Outside publisher does not make prior research primary.",
+      "FALSE — Market share is the firm's proportion, not total industry sales.",
+      "FALSE — 50,000/1,000,000 is 5%, not 50%."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.19",
+    "title": "Interviews and Online Surveys",
+    "context": "Review market share as the proportion of market sales held by a business or brand. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer analysis records when customers buy to identify seasonal fluctuations in demand.",
+      "A firm with sales of 150,000 euros in a 1,000,000 euro market holds a one point five per cent absolute share.",
+      "If absolute share is fifteen per cent and the leader has thirty per cent, relative share equals forty-five per cent.",
+      "If absolute share is twenty per cent and the leader has twenty per cent, relative share equals zero.",
+      "Knowing when customers purchase helps plan production ahead of predictable demand peaks."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — When-customers buy reveals seasonal patterns for planning.",
+      "FALSE — 150,000/1,000,000 is 15%, not 1.5%.",
+      "FALSE — Relative share is 15/30 = 0.5, not 45%.",
+      "FALSE — Equal shares give relative share of 1.0, not zero.",
+      "TRUE — Timing analysis supports forward production planning."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.20",
+    "title": "Secondary Data Generality Limits",
+    "context": "Analyze the formula for absolute market share using business sales and market volume. Evaluate the following economic assertions:",
+    "statements": [
+      "When-customer analysis can support price differentiation across different periods of the year.",
+      "Customer analysis investigates why customers choose one product or prefer another.",
+      "Learning customer motives and preferences is important for product development and enhancing market share.",
+      "Market research provides information about existing customers and prospective buyers of a firm's products.",
+      "Market research also covers competition and general industry conditions beyond customer profiles alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Seasonal timing links to differentiated pricing over the year.",
+      "TRUE — Why-customers choose addresses motives and preferences.",
+      "TRUE — Why-customer insight supports development and share growth.",
+      "TRUE — Research covers both current and potential customers in the chapter overview.",
+      "TRUE — Competitors and industry context are within market research scope."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.21",
+    "title": "Distribution Channel Identification",
+    "context": "Consider a small craft brewery that cannot afford a large-scale questionnaire programme and instead relies on freely available industry consumption data. Evaluate the following economic assertions:",
+    "statements": [
+      "Who-customer research distinguishes consumer markets from business markets for the same product category.",
+      "Relative market share is expressed as the same percentage figure as absolute market share.",
+      "What-customer analysis can show whether buyers use a product at home, at work, or in industrial processes.",
+      "Customer analysis involving hospital procurement teams illustrates business-to-business purchasing of medical supplies within market research.",
+      "Customer analysis involving household shoppers illustrates business-to-consumer retail purchases within market research."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Customer type determines B2C versus B2B classification.",
+      "FALSE — Relative share is a ratio against the leader, not the same percentage.",
+      "TRUE — Preferred use settings are part of what-customer research.",
+      "TRUE — The example shows how who-customer research maps to market type and roles.",
+      "TRUE — The example shows how who-customer research maps to market type and roles, in rental business models."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.22",
+    "title": "Seasonal Planning From Timing Data",
+    "context": "Analyze the formula for relative market share using a firm's share and the leader's share. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer analysis involving fleet managers illustrates business-to-business acquisition of commercial vehicles within market research.",
+      "Customer analysis involving teenagers recommending apps illustrates influence on purchases paid for by parents within market research.",
+      "Customer analysis involving factory maintenance staff illustrates actual users of industrial components bought by managers within market research.",
+      "Where-customer research may show that buyers increasingly prefer retail stores for certain product categories.",
+      "Market size can only be measured in euros and never as a quantity of pieces sold."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The example shows how who-customer research maps to market type and roles.",
+      "TRUE — The example shows how who-customer research maps to market type and roles, for consumer-facing offers.",
+      "TRUE — The example shows how who-customer research maps to market type and roles, in business-to-business markets.",
+      "TRUE — Purchase-location analysis identifies channel preferences such as retail stores.",
+      "FALSE — Market size may be expressed as value or quantity."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.23",
+    "title": "Motive Analysis for Product Development",
+    "context": "Review how market potential can exceed current market volume when unconverted customers remain. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-customer research may show that buyers increasingly prefer online platforms for certain product categories.",
+      "Market size can only be measured as units sold and never as a euro value total.",
+      "When-customer analysis may reveal higher purchase volumes during winter holiday periods for relevant product lines.",
+      "Why-customer research may show that buyers select a supplier because of lower total cost of ownership.",
+      "Why-customer research may show that buyers select a supplier because of perceived product reliability."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Purchase-location analysis identifies channel preferences such as online platforms.",
+      "FALSE — Market size may be expressed as quantity or value.",
+      "TRUE — Timing research identifies seasonal peaks such as winter holiday periods.",
+      "TRUE — Motive analysis can identify preferences such as lower total cost of ownership.",
+      "TRUE — Motive analysis can identify preferences such as perceived product reliability."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.24",
+    "title": "Investor Relevance of Market Share",
+    "context": "Analyze how sales potential can exceed a firm's current sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Why-customer research may show that buyers select a supplier because of faster delivery performance.",
+      "Customer analysis asks where products are manufactured rather than where customers buy them.",
+      "Why-customer research may show that buyers select a supplier because of environmental reputation of the brand.",
+      "Customer analysis asks when products are designed rather than when customers purchase them.",
+      "Why-customer research may show that buyers select a supplier because of availability of after-sales support."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Motive analysis can identify preferences such as faster delivery performance.",
+      "FALSE — Where-customer analysis concerns purchase location, not factory location.",
+      "TRUE — Motive analysis can identify preferences such as environmental reputation of the brand.",
+      "FALSE — When-customer analysis concerns purchase timing, not design timing.",
+      "TRUE — Motive analysis can identify preferences such as availability of after-sales support."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.25",
+    "title": "Competitive Context in Relative Share",
+    "context": "Consider a cosmetics brand dividing its brand sales by the sales of its largest rival to interpret competitive standing. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size, also called market volume, is the total sales of a product by all businesses in the market.",
+      "Market size can be expressed as a monetary value such as total euro sales across the market.",
+      "Market size can also be expressed as a quantity such as the number of pieces sold in the market.",
+      "Market share is the proportion of market sales held by a business, product, or brand.",
+      "Absolute market share equals the sales of one business divided by total market sales, expressed as a percentage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market size or volume is total industry sales in the textbook definition.",
+      "TRUE — Value expression of market size uses currency totals.",
+      "TRUE — Quantity expression counts units sold across the market.",
+      "TRUE — Market share is defined as the firm's proportion of total market sales.",
+      "TRUE — Market share is firm sales divided by total market sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.26",
+    "title": "Misclassifying Primary Research",
+    "context": "Analyze government and trade-association publications as secondary research sources. Evaluate the following economic assertions:",
+    "statements": [
+      "What-customer analysis refers to what price competitors charge rather than what customers do with products.",
+      "Absolute market share equals the sales volume of one business divided by total market volume.",
+      "If a business sells 150,000 euros in a market of 1,000,000 euros, its absolute market share is fifteen per cent.",
+      "Who-customer analysis refers only to which employees serve customers inside the firm.",
+      "Why-customer analysis refers only to why production costs rose rather than why buyers choose products."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — What-customers concerns product use, not rival list prices.",
+      "TRUE — The textbook gives this formula for absolute market share.",
+      "TRUE — 150,000 divided by 1,000,000 equals 15% in the chapter example.",
+      "FALSE — Who-customers concerns market customers, not internal staff.",
+      "FALSE — Why-customers concerns purchase motives, not internal cost causes."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.27",
+    "title": "Misclassifying Secondary Research",
+    "context": "Review why secondary data are often general rather than tailored to one business. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share is important information for the business itself and for potential investors.",
+      "Absolute market share alone does not reveal much about how other competitors are performing.",
+      "Relative market share compares a business's market share with the market share of its largest competitor.",
+      "Relative market share equals the firm's market share divided by the largest competitor's market share.",
+      "If absolute share is fifteen per cent and the largest rival holds thirty per cent, relative market share is 0.5."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The chapter notes absolute share matters to the firm and investors.",
+      "TRUE — Absolute share lacks direct rival comparison in the textbook.",
+      "TRUE — Relative share uses the leader's share as the benchmark.",
+      "TRUE — The textbook states this ratio formula for relative share.",
+      "TRUE — 15 divided by 30 yields 0.5 in the continued chapter example."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.28",
+    "title": "Confusing Market Size and Share",
+    "context": "Analyze how distribution-channel weaknesses may appear through where-customer analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "Influencers must always be the same person who completes payment for the product.",
+      "Relative market share adds competitive context that absolute share figures do not provide on their own.",
+      "A business-to-business market is one where the firm advertises on social media to the general public.",
+      "Market potential can exceed market volume when potential customers in the market have not yet been converted to buyers.",
+      "Secondary research requires the firm to conduct personal interviews with every customer in the market."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Influencers may differ from the paying buyer.",
+      "TRUE — Relative share contextualises performance against the leader.",
+      "FALSE — B2B involves business customers; general public advertising suggests B2C.",
+      "TRUE — Unconverted customers push potential above current volume.",
+      "FALSE — Secondary research reuses existing studies rather than new universal interviews."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.29",
+    "title": "Absolute Versus Relative Share Traps",
+    "context": "Consider a food producer estimating market volume in tonnes for organic cereals and comparing that total with its own annual shipments. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential of a business can exceed its current sales volume when gains from rivals or market growth are achievable.",
+      "Primary research is defined as any information taken from an annual report published last year.",
+      "Market research excludes information about industry conditions and focuses only on internal accounting.",
+      "Gains from competitors are excluded from the concept of sales potential.",
+      "A share in the increase of market potential is excluded from sales potential."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Sales potential includes room beyond current sales volume.",
+      "FALSE — Prior published reports are secondary, not primary information.",
+      "FALSE — Industry and competition are within market research scope.",
+      "FALSE — Gains from competitors are listed as part of sales potential.",
+      "FALSE — A share in market-potential growth is part of sales potential."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.30",
+    "title": "Market Potential Exceeding Volume",
+    "context": "Analyze absolute market share as information relevant to the firm and to investors. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share tells a firm exactly how every smaller rival is performing in detail.",
+      "Relative market share is unnecessary because absolute share already names each competitor.",
+      "Sales potential may include gains achievable by winning customers from competing firms.",
+      "Market volume excludes sales of competing firms and includes only the focal business.",
+      "Sales potential equals current sales volume when market potential exceeds market volume."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Absolute share alone gives limited insight into other competitors.",
+      "FALSE — Absolute share does not detail rivals; relative share compares with the leader.",
+      "TRUE — Gains from competitors form part of sales potential in Figure 13.",
+      "FALSE — Market volume sums sales of all firms in the market.",
+      "FALSE — Higher market potential does not force sales potential to equal current volume."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.31",
+    "title": "Sales Potential Components",
+    "context": "Review why absolute market share alone gives limited insight into rival performance. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential may include a share in the increase of overall market potential.",
+      "Market volume records sales of all firms currently active in the market.",
+      "Market research on industry development helps a business evaluate its market position and future prospects.",
+      "A brand's market share can be calculated by dividing that brand's sales by total category sales.",
+      "If total components market sales rise from 57.5 million euros to 59.7 million euros, market size measured in value has increased."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A share in market-potential growth is part of sales potential.",
+      "TRUE — Market volume aggregates existing firm sales in the market.",
+      "TRUE — Tracking market development supports position and outlook assessment.",
+      "TRUE — Brand share uses brand sales over total category sales.",
+      "TRUE — Rising aggregate euro sales show a larger value-based market size."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.32",
+    "title": "Small Firm Primary Research Limits",
+    "context": "Analyze relative market share as contextual information about competitive position. Evaluate the following economic assertions:",
+    "statements": [
+      "Questionnaires administered by an institute for a client are secondary because the institute is external.",
+      "If total packaging market sales rise from 420 million euros to 450 million euros, market size measured in value has increased.",
+      "If total logistics services market sales rise from 310 million euros to 325 million euros, market size measured in value has increased.",
+      "A firm with sales of 80 million euros in a market of 400 million euros holds a 20 per cent absolute market share.",
+      "Free secondary data are always tailored to each small firm's product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — External institute collection for a bespoke study is primary.",
+      "TRUE — Rising aggregate euro sales show a larger value-based market size.",
+      "TRUE — Rising aggregate euro sales show a larger value-based market size, within responsible marketing.",
+      "TRUE — 80 divided by 400 equals 20% absolute share.",
+      "FALSE — Secondary data are often general, not tailored."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.33",
+    "title": "Tailored Versus General Research Data",
+    "context": "Consider a furniture producer that tracks where customers purchase dining sets, whether in showrooms, online stores, or department concessions. Evaluate the following economic assertions:",
+    "statements": [
+      "Costly primary research is affordable for every small business according to the chapter.",
+      "A firm with sales of 45 million euros in a market of 300 million euros holds a 15 per cent absolute market share.",
+      "Customer analysis is optional and unrelated to market research activities.",
+      "Where-customer findings cannot encourage alternative channels because channels are fixed forever.",
+      "When-customer findings cannot support price differentiation across the year."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Small businesses often cannot afford extensive primary research.",
+      "TRUE — 45 divided by 300 equals 15% absolute share.",
+      "FALSE — Customer analysis is often an important element of market research.",
+      "FALSE — Channel analysis can encourage alternative channels.",
+      "FALSE — Timing analysis can support seasonal price differentiation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.34",
+    "title": "B2C Market Customer Identification",
+    "context": "Analyze sales volume versus sales potential for an individual business. Evaluate the following economic assertions:",
+    "statements": [
+      "A business recording 9 million euros of sales in a 36 million euro market holds a 25 per cent absolute market share.",
+      "Preferred product use information cannot guide product improvement.",
+      "Prospective customers are excluded from the scope of market research.",
+      "Market share of a brand is calculated using only that brand's costs rather than its sales.",
+      "Market share uses production capacity in the denominator instead of total market sales."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Absolute market share equals firm sales divided by total market sales.",
+      "FALSE — Preferred-use knowledge supports development and improvement.",
+      "FALSE — Research covers existing and prospective customers.",
+      "FALSE — Share uses sales, not costs, in the numerator.",
+      "FALSE — The denominator is total market sales, not capacity."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.35",
+    "title": "B2B Market Customer Identification",
+    "context": "Review how market research supports learning about existing and prospective customers. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm with sales of 7 million euros in a market of 140 million euros holds a 5 per cent absolute market share.",
+      "A relative share of 1.5 means the firm holds one point five per cent of the total market.",
+      "A relative share of 0.5 means the firm has withdrawn from half of the geographic market.",
+      "With absolute share of 15 per cent and the largest competitor at 30 per cent, relative market share equals 0.5.",
+      "Measuring market share in percentage terms expresses one firm's sales as a share of all market sales."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — 7 divided by 140 equals 5% absolute share.",
+      "FALSE — 1.5 relative share is a ratio to the leader, not a market percentage.",
+      "FALSE — 0.5 relative share compares shares with the leader, not geography.",
+      "TRUE — 15 divided by 30 gives relative share of 0.5.",
+      "TRUE — Percentage share is sales of the firm over total market sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.36",
+    "title": "Influencers Without Payment Role",
+    "context": "Analyze how competition and industry conditions form part of market research scope. Evaluate the following economic assertions:",
+    "statements": [
+      "Investors may examine absolute market share when assessing how large a firm's position is within its industry.",
+      "Primary research cannot study willingness to pay because prices are set only by government.",
+      "Secondary research always replaces the need for any customer analysis.",
+      "Business customers in a B2B market are classified as consumers because they consume products.",
+      "A relative share below one indicates the firm's percentage share trails the largest competitor's percentage."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Investors use absolute share as one position indicator.",
+      "FALSE — Primary research can include willingness-to-pay questions.",
+      "FALSE — Secondary data may be too general to replace tailored customer analysis.",
+      "FALSE — Business customers indicate B2B even if products are consumed in production.",
+      "TRUE — Relative share under 1.0 means trailing the leader's share."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.37",
+    "title": "Preferred Use and Product Improvement",
+    "context": "Consider an electronics assembler comparing its euro sales with total industry revenue to estimate its proportion of the national components market. Evaluate the following economic assertions:",
+    "statements": [
+      "Household shoppers in a supermarket are classified as business customers in B2B markets.",
+      "A relative share above one indicates the firm's percentage share exceeds the largest competitor's percentage.",
+      "Customer analysis integrates who, what, where, when, and why questions within market research.",
+      "Market size decreases when every firm's sales in the market rise simultaneously.",
+      "If two firms each hold twenty per cent absolute share in the same market, relative share of each against the other is two."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Household shoppers indicate B2C, not B2B.",
+      "TRUE — Relative share above 1.0 means leading the largest rival.",
+      "TRUE — All five customer dimensions are listed in customer analysis.",
+      "FALSE — Rising total sales increase market size, not decrease it.",
+      "FALSE — Equal twenty per cent shares give relative share of 1.0 between them if each is the largest."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.38",
+    "title": "Channel Weakness and Alternatives",
+    "context": "Analyze tailoring primary research to the specific needs and interests of a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Empirical studies tailored to a business are classified as secondary because they are newly commissioned.",
+      "Published industry forecasts reused without new collection are primary because they inform strategy.",
+      "Primary research can be designed around whether men and women differ in product preferences.",
+      "Market research data cover only the firm's own accounting records and not customer behaviour.",
+      "Secondary association data may describe total sector output without listing individual buyer accounts."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Tailored empirical studies are primary information.",
+      "FALSE — Reused forecasts are secondary even when strategically useful.",
+      "TRUE — Demographic splits are addressable in tailored primary studies.",
+      "FALSE — Market research addresses customers, rivals, and industry conditions.",
+      "TRUE — Association data are aggregate secondary information."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.39",
+    "title": "Seasonal Fluctuation Recognition",
+    "context": "Review free secondary research that may still serve general market-learning purposes. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-customer analysis helps determine whether weaknesses exist in current retail or wholesale channels.",
+      "When-customer patterns support advance production scheduling before predictable demand surges.",
+      "Why-customer insight helps explain substitution between close rival products in the same category.",
+      "Market research data describe prospective buyers who might purchase if needs are met.",
+      "Customer analysis excludes where customers buy because channels are chosen only by producers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel weakness identification is a where-customer use.",
+      "TRUE — Forward scheduling follows from timing analysis.",
+      "TRUE — Motive research clarifies substitution among rivals.",
+      "TRUE — Prospective customers are within research scope.",
+      "FALSE — Where customers buy is an explicit analysis dimension."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.40",
+    "title": "Price Differentiation Over the Year",
+    "context": "Analyze business-to-consumer markets where customers are final consumers. Evaluate the following economic assertions:",
+    "statements": [
+      "Total sales of all businesses in a product market form the denominator when calculating market share.",
+      "When-customer analysis refers to when the firm was founded rather than when purchases occur.",
+      "Why-customer analysis refers to why the firm exists rather than why buyers choose products.",
+      "Absolute market share is calculated with market volume in the numerator and firm sales in the denominator.",
+      "Relative market share uses total market sales as the denominator instead of the leader's share."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — All-market sales are the share denominator.",
+      "FALSE — When-customers concerns purchase timing.",
+      "FALSE — Why-customers concerns purchase motives.",
+      "FALSE — Firm sales are the numerator; market volume is the denominator.",
+      "FALSE — Relative share divides by the largest competitor's share."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.41",
+    "title": "Value and Quantity Market Measures",
+    "context": "Consider a hotel operator mapping when conference bookings surge in spring and autumn to adjust staffing and room rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share uses the firm's own sales in the numerator of the share calculation.",
+      "Market potential is below market volume whenever new applications emerge in the industry.",
+      "Relative market share uses the leader's share as the denominator in the ratio calculation.",
+      "Market potential includes room from customers not yet purchasing in the current market volume.",
+      "Sales volume records what one business currently sells in the market."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Firm sales sit in the numerator for absolute share.",
+      "FALSE — Potential can exceed volume when unconverted customers remain.",
+      "TRUE — The largest competitor's share is the relative-share denominator.",
+      "TRUE — Unserved customers raise potential above current volume.",
+      "TRUE — Sales volume is the firm's current sales total."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.42",
+    "title": "Fifteen Per Cent Absolute Share Example",
+    "context": "Analyze situations where the product user differs from the person who pays for the purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential is capped at sales volume even when rivals' customers could be won.",
+      "Primary interviews become secondary when summarized in an internal memo for managers.",
+      "A trade association survey from last year is primary for a member who reads it this year.",
+      "Gains from competitors represent one component that can raise sales potential above current volume.",
+      "A share in rising market potential can form part of a firm's sales potential."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Gains from competitors can raise sales potential above volume.",
+      "FALSE — Summarizing primary data does not convert collection into secondary research.",
+      "FALSE — Prior association surveys are secondary for later readers.",
+      "TRUE — Winning rival customers increases sales potential.",
+      "TRUE — Market-potential growth can add to sales potential."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.43",
+    "title": "Relative Share of Zero Point Five",
+    "context": "Review how children may influence buying decisions although parents complete payment. Evaluate the following economic assertions:",
+    "statements": [
+      "Government-published industry statistics may be reused as free secondary market information.",
+      "Personal interviews let researchers probe detailed why-customer motives in primary studies.",
+      "Online surveys can reach many respondents yet still count as primary when newly collected.",
+      "Questionnaire programmes remain primary even when administered electronically to thousands of users.",
+      "A business-to-business components supplier researches fleet buyers rather than final consumers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Free government data are secondary sources.",
+      "TRUE — Interviews support deep motive exploration in primary work.",
+      "TRUE — Large online samples still produce primary data.",
+      "TRUE — Electronic questionnaires are primary collection methods.",
+      "TRUE — B2B research targets business customers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.44",
+    "title": "Leader Comparison in Relative Share",
+    "context": "Analyze identifying alternative distribution channels when current channels show weakness. Evaluate the following economic assertions:",
+    "statements": [
+      "A business-to-consumer retailer researches household shoppers as its customer group.",
+      "Influencers may recommend specifications that the formal buyer later approves in a business purchase.",
+      "Market share of fifteen per cent means the firm sold fifteen euros for every hundred euros of its own revenue.",
+      "What-customer research on office furniture may examine home-office versus corporate use.",
+      "Where-customer data may compare showroom purchases with e-commerce purchases for the same brand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — B2C research targets consumer customers.",
+      "TRUE — Influencers shape specifications before the buyer decides.",
+      "FALSE — Fifteen per cent is share of market sales, not of the firm's own revenue.",
+      "TRUE — Use context is part of what-customer analysis.",
+      "TRUE — Channel mix appears in where-customer research."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.45",
+    "title": "Total Sales Basis for Share",
+    "context": "Consider a packaging business weighing the cost of administering thousands of questionnaires against the value of customised customer insight. Evaluate the following economic assertions:",
+    "statements": [
+      "When-customer research on heating equipment may show winter peaks in replacement demand.",
+      "Why-customer research may highlight warranty terms as a decisive preference over list price alone.",
+      "Market size measured in tonnes sold applies the same volume concept using quantity units.",
+      "Market size measured in euro sales applies the same volume concept using monetary units.",
+      "If the leader holds thirty per cent share, a firm with fifteen per cent has relative share of two."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Seasonal replacement peaks appear in timing analysis.",
+      "TRUE — Motive research can prioritise warranty over price.",
+      "TRUE — Tonnes are a quantity expression of market size.",
+      "TRUE — Euro totals are a value expression of market size.",
+      "FALSE — 15/30 is 0.5, not 2."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.46",
+    "title": "Prospective Customer Research Scope",
+    "context": "Analyze expressing market size in euros as a value measure of total industry sales. Evaluate the following economic assertions:",
+    "statements": [
+      "If the leader holds ten per cent share, a firm with twenty per cent has relative share of zero point five.",
+      "A fifteen per cent absolute share means the firm accounts for fifteen of every hundred euros sold in the market.",
+      "B2C classification applies when industrial buyers purchase components for factory assembly lines.",
+      "A relative share of 0.5 means the firm's share is half the percentage held by the market leader.",
+      "B2B classification applies when individuals buy clothing for personal use in a retail store."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — 20/10 is 2.0, not 0.5.",
+      "TRUE — Percentage share interprets parts per hundred of market sales.",
+      "FALSE — Factory assembly buyers indicate B2B, not B2C.",
+      "TRUE — 0.5 relative share is half the leader's percentage.",
+      "FALSE — Personal retail purchases indicate B2C, not B2B."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.47",
+    "title": "Competition Within Research Scope",
+    "context": "Review expressing market size as the number of pieces sold across the market. Evaluate the following economic assertions:",
+    "statements": [
+      "A relative share of 1.5 means the firm's percentage share is one and a half times the leader's percentage.",
+      "Market research on competition complements customer analysis when assessing industry position.",
+      "Influencers must hold legal title to the product before they can affect a purchase decision.",
+      "Secondary forecasts may describe segment growth rates before a firm invests in primary buyer interviews.",
+      "What-customer research examines what shareholders earn rather than what customers do with goods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — 1.5 relative share exceeds the leader's percentage.",
+      "TRUE — Competitive information accompanies customer research.",
+      "FALSE — Influencers may affect decisions without holding title.",
+      "TRUE — Forecasts as secondary data precede tailored primary work.",
+      "FALSE — What-customers concerns product use by buyers."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.48",
+    "title": "Institute Commissioned Primary Studies",
+    "context": "Analyze calculating market share by dividing a firm's sales by total market sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary willingness-to-pay questions help set realistic price bands for a new product launch.",
+      "Where-customer research examines where raw materials are mined rather than where purchases occur.",
+      "Customer analysis of where purchases occur can prompt expansion into an underused online channel.",
+      "Customer analysis of when purchases occur can justify higher prices during peak weeks.",
+      "Customer analysis of why purchases occur can guide advertising that stresses the decisive motive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Primary pricing questions inform launch price bands.",
+      "FALSE — Where-customers concerns purchase location.",
+      "TRUE — Where analysis can justify new channel investment.",
+      "TRUE — Peak-week pricing links to when-customer data.",
+      "TRUE — Advertising can target motives found in why-research."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.49",
+    "title": "Analysis Costs in Primary Research",
+    "context": "Consider a sportswear retailer that analyses seasonal peaks in running-shoe purchases to plan stock levels and promotional pricing across the year. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size for a category equals the sales of the market leader alone.",
+      "Market share can be computed without knowing total sales of all firms in the market.",
+      "Secondary data are primary when downloaded from a government website by an employee.",
+      "Primary data are secondary when the sample size exceeds one thousand respondents.",
+      "Market volume sums current sales of all competing firms offering the product in the market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Market size is total sales of all businesses.",
+      "FALSE — Total market sales are required in the denominator.",
+      "FALSE — Download method does not make prior research primary.",
+      "FALSE — Large samples still produce primary information.",
+      "TRUE — All rival sales sum to market volume."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.50",
+    "title": "Free Secondary Research Availability",
+    "context": "Analyze an example where fifteen per cent absolute share against a leader's thirty per cent yields relative share of 0.5. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential exceeds sales volume when the firm could win additional buyers not yet captured.",
+      "Customer analysis excludes prospective buyers and studies only past purchasers.",
+      "Seasonal fluctuations cannot inform production planning according to customer-analysis timing data.",
+      "Motive research cannot affect market-share strategies because share is fixed by regulation.",
+      "Gains from competitors are part of market volume rather than sales potential."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Uncaptured buyers raise sales potential above volume.",
+      "FALSE — Prospective buyers are within research scope.",
+      "FALSE — Timing analysis supports planning ahead for seasonal demand.",
+      "FALSE — Motives inform development and share enhancement.",
+      "FALSE — Gains from competitors belong to sales potential."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.51",
+    "title": "Children Influencing Parent Purchases",
+    "context": "Review gains from competitors as a component of sales potential for one firm. Evaluate the following economic assertions:",
+    "statements": [
+      "Market potential exceeds market volume when category demand from non-buyers remains untapped.",
+      "Absolute share is expressed as a percentage of total market sales attributable to one business.",
+      "Share in market-potential growth is part of market volume rather than sales potential.",
+      "Relative share is expressed as a ratio rather than as a direct percentage of total market sales.",
+      "Research institutes may administer questionnaires as primary data collection on behalf of clients."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Non-buyers keep market potential above volume.",
+      "TRUE — Absolute share is a percentage of total market sales.",
+      "FALSE — Market-potential growth share belongs to sales potential.",
+      "TRUE — Relative share is a ratio against the leader, not a market percentage.",
+      "TRUE — Institute-administered questionnaires are primary collection."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.52",
+    "title": "User Distinct From Buyer",
+    "context": "Analyze a share in the increase of market potential as part of sales potential. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade-body reports may give secondary overview of market size before a firm calculates its own share.",
+      "Investors ignore absolute market share because only relative share appears in annual reports.",
+      "Relative share compares a firm with the smallest competitor rather than the largest.",
+      "Children influencing grocery choices while adults pay illustrates influencer roles in customer analysis.",
+      "Users of industrial components may differ from managers who sign supplier contracts in business markets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Secondary size overviews precede firm share calculation.",
+      "FALSE — Absolute share is relevant to investors per the chapter.",
+      "FALSE — Relative share uses the largest competitor's share.",
+      "TRUE — Influencer example appears in who-customer discussion.",
+      "TRUE — User and buyer can differ in B2B settings."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.53",
+    "title": "Retail Versus Online Channel Data",
+    "context": "Consider a garden-centre group noting that children influence plant-pot choices even though parents complete the checkout payment. Evaluate the following economic assertions:",
+    "statements": [
+      "A questionnaire sent by post is secondary whereas an online questionnaire is primary.",
+      "Reading a competitor's published market review creates primary data for the reader's firm.",
+      "Preferred use information from what-customer research reduces mismatch between product features and needs.",
+      "Market research excludes competition because rivals refuse to share any information.",
+      "Children influencing purchases means children must be the legal buyers in B2C markets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Both are primary when newly collected for the study.",
+      "FALSE — Competitor publications used without new collection are secondary.",
+      "TRUE — Feature alignment follows preferred-use insight.",
+      "FALSE — Competition is explicitly within market research scope.",
+      "FALSE — Children may influence without being the buyer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.54",
+    "title": "Production Planning From Timing",
+    "context": "Analyze automotive, industrial, and medical segments as parts of wider component markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Weak showroom traffic identified in where-research may trigger stronger dealer support programmes.",
+      "Predictable summer demand identified in when-research may trigger earlier inventory builds.",
+      "Preference for local suppliers identified in why-research may shape regional marketing messages.",
+      "A supplier in the printed circuit boards segment may improve positioning by commissioning a tailored questionnaire before launching an updated product line.",
+      "Published trade statistics on the printed circuit boards market can serve as secondary information when estimating total industry sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel weakness responses follow where analysis.",
+      "TRUE — Inventory builds follow seasonal timing insight.",
+      "TRUE — Regional messaging can reflect why-customer motives.",
+      "TRUE — Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the printed circuit boards market.",
+      "TRUE — Trade statistics reused for the printed circuit boards segment are secondary market information."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.55",
+    "title": "Preference Motives and Market Share",
+    "context": "Review long-term growth opportunities linked to new applications in technology markets. Evaluate the following economic assertions:",
+    "statements": [
+      "User and buyer must coincide in B2B markets because businesses sign one contract per person.",
+      "Channel weakness cannot be detected because customers never reveal where they shop.",
+      "Customer analysis in the printed circuit boards market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "If a printed circuit boards producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "Price differentiation over the year is unrelated to when-customer purchase patterns."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — User and buyer may differ even in B2B settings.",
+      "FALSE — Where analysis is designed to identify purchase channels.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in printed circuit boards.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the printed circuit boards example.",
+      "FALSE — Timing analysis can support seasonal price differentiation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.56",
+    "title": "Electronics Market Segment Measures",
+    "context": "Analyze administering and interpreting large questionnaire programmes as a primary-research cost. Evaluate the following economic assertions:",
+    "statements": [
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in printed circuit boards, relative market share equals 0.5.",
+      "Market potential in printed circuit boards may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one printed circuit boards firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Market volume plus potential customers equals sales volume of one firm.",
+      "A supplier in the industrial adhesives segment may improve positioning by running telephone interviews with buyers before launching an updated product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — 15/30 yields 0.5 relative share against the leader in printed circuit boards.",
+      "TRUE — Unconverted buyers keep market potential above volume in printed circuit boards.",
+      "TRUE — Sales potential includes room beyond current volume for a printed circuit boards supplier.",
+      "FALSE — That confuses market measures with a single firm's sales volume.",
+      "TRUE — Tailored primary research such as running telephone interviews with buyers supports informed decisions in the industrial adhesives market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.57",
+    "title": "Growth Opportunities in New Applications",
+    "context": "Consider an automotive-parts supplier using secondary data from industry associations before designing a tailored buyer survey. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the industrial adhesives market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the industrial adhesives market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "If a industrial adhesives producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in industrial adhesives, relative market share equals 0.5.",
+      "Market potential in industrial adhesives may exceed current market volume when buyers not yet served could enter the category."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Trade statistics reused for the industrial adhesives segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in industrial adhesives.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the industrial adhesives example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in industrial adhesives.",
+      "TRUE — Unconverted buyers keep market potential above volume in industrial adhesives."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.58",
+    "title": "Gains From Competitors in Potential",
+    "context": "Analyze online surveys as a primary research tool that still requires analysis expenditure. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential minus sales volume always equals zero in growing markets.",
+      "Sales potential for one industrial adhesives firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the commercial laundry equipment segment may improve positioning by analysing responses from an online survey before launching an updated product line.",
+      "Published trade statistics on the commercial laundry equipment market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the commercial laundry equipment market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales potential can exceed current sales volume in growing markets.",
+      "TRUE — Sales potential includes room beyond current volume for a industrial adhesives supplier.",
+      "TRUE — Tailored primary research such as analysing responses from an online survey supports informed decisions in the commercial laundry equipment market.",
+      "TRUE — Trade statistics reused for the commercial laundry equipment segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in commercial laundry equipment."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.59",
+    "title": "Share in Market Potential Increase",
+    "context": "Review industry reports published by other businesses as possible secondary sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Fifteen per cent absolute share means the market is fifteen times larger than the firm's sales.",
+      "If a commercial laundry equipment producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "A relative share of one means the firm has one per cent of total market sales.",
+      "Primary research is secondary when conducted for another industry and later read by a different firm.",
+      "Secondary research is primary when the business pays a fee to access an industry database."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The market is about 6.67 times larger (100/15), not fifteen times.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the commercial laundry equipment example.",
+      "FALSE — Relative share of 1.0 means equal percentage with the leader, not 1% market share.",
+      "FALSE — Research for another purpose read later is secondary.",
+      "FALSE — Paying for access does not convert existing research into primary collection."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.60",
+    "title": "Monetary Expression of Market Size",
+    "context": "Analyze matching product development to customer needs revealed through what-customer analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer analysis dimensions are limited to who and what only.",
+      "Market size expressed in pieces sold cannot be compared with market size expressed in euros.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in commercial laundry equipment, relative market share equals 0.5.",
+      "Market potential in commercial laundry equipment may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one commercial laundry equipment firm can exceed its current sales volume through gains from competitors and market growth."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Who, what, where, when, and why are all included.",
+      "FALSE — Both are expressions of market size or volume.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in commercial laundry equipment.",
+      "TRUE — Unconverted buyers keep market potential above volume in commercial laundry equipment.",
+      "TRUE — Sales potential includes room beyond current volume for a commercial laundry equipment supplier."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.61",
+    "title": "Quantity Expression of Market Size",
+    "context": "Consider a components manufacturer that commissions an online survey and telephone interviews to learn what industrial buyers expect from next-generation circuit boards. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the enterprise accounting software segment may improve positioning by hiring an institute to conduct field interviews before launching an updated product line.",
+      "Absolute and relative market share always produce identical numerical results.",
+      "Published trade statistics on the enterprise accounting software market can serve as secondary information when estimating total industry sales.",
+      "Market research institutes collect secondary data because they are independent organisations.",
+      "Customer analysis in the enterprise accounting software market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the enterprise accounting software market.",
+      "FALSE — They measure different relationships and need not match numerically.",
+      "TRUE — Trade statistics reused for the enterprise accounting software segment are secondary market information.",
+      "FALSE — Institute collection for a bespoke study is primary.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in enterprise accounting software."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.62",
+    "title": "Percentage Share of One Business",
+    "context": "Analyze timing analysis that supports differentiated pricing across seasons or months. Evaluate the following economic assertions:",
+    "statements": [
+      "Small firms always prefer primary research because it is cheaper than secondary sources.",
+      "If a enterprise accounting software producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in enterprise accounting software, relative market share equals 0.5.",
+      "Market potential in enterprise accounting software may exceed current market volume when buyers not yet served could enter the category.",
+      "Why-customer motives are recorded only after sales fall to zero."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Primary is costly; small firms often cannot afford it.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the enterprise accounting software example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in enterprise accounting software.",
+      "TRUE — Unconverted buyers keep market potential above volume in enterprise accounting software.",
+      "FALSE — Why analysis informs development before collapse."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.63",
+    "title": "Absolute Share Without Rival Detail",
+    "context": "Review motive analysis explaining preference for one brand over close substitutes. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-customer data show factory locations of suppliers rather than customer purchase points.",
+      "Sales potential for one enterprise accounting software firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the organic breakfast cereals segment may improve positioning by designing a primary study around channel preferences before launching an updated product line.",
+      "Published trade statistics on the organic breakfast cereals market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the organic breakfast cereals market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Where-customers concerns purchase location.",
+      "TRUE — Sales potential includes room beyond current volume for a enterprise accounting software supplier.",
+      "TRUE — Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the organic breakfast cereals market.",
+      "TRUE — Trade statistics reused for the organic breakfast cereals segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in organic breakfast cereals."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.64",
+    "title": "Relative Share Adding Context",
+    "context": "Analyze total market sales as the basis for measuring both size and competitive share. Evaluate the following economic assertions:",
+    "statements": [
+      "When-customer data refer to product warranty periods rather than purchase dates.",
+      "If a organic breakfast cereals producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in organic breakfast cereals, relative market share equals 0.5.",
+      "Market potential in organic breakfast cereals may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one organic breakfast cereals firm can exceed its current sales volume through gains from competitors and market growth."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — When-customers concerns purchase timing.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the organic breakfast cereals example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in organic breakfast cereals.",
+      "TRUE — Unconverted buyers keep market potential above volume in organic breakfast cereals.",
+      "TRUE — Sales potential includes room beyond current volume for a organic breakfast cereals supplier."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.65",
+    "title": "Unconverted Customers and Potential",
+    "context": "Consider a pharmaceutical wholesaler operating in a business-to-business market that interviews hospital buyers about motives for choosing one supplier over another. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the electric vehicle chargers segment may improve positioning by commissioning a tailored questionnaire before launching an updated product line.",
+      "Published trade statistics on the electric vehicle chargers market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the electric vehicle chargers market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "If a electric vehicle chargers producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "Market share rises automatically when market size falls even if the firm's sales are unchanged."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the electric vehicle chargers market.",
+      "TRUE — Trade statistics reused for the electric vehicle chargers segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in electric vehicle chargers.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the electric vehicle chargers example.",
+      "FALSE — Unchanged firm sales with smaller market raise share, but not automatically in every scenario described."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.66",
+    "title": "Combining Primary and Secondary Methods",
+    "context": "Analyze competitive benchmarking through relative share against the market leader. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm's sales potential falls when market potential rises because competition intensifies.",
+      "Primary empirical studies cannot be tailored to specific business interests.",
+      "Secondary information is always more detailed than primary data for one product line.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in electric vehicle chargers, relative market share equals 0.5.",
+      "Relative market share of 0.5 always means the firm holds fifty per cent of the market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Rising market potential can contribute to higher sales potential.",
+      "FALSE — Primary studies can be tailored to the commissioning firm.",
+      "FALSE — Secondary data are usually general, not more detailed.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in electric vehicle chargers.",
+      "FALSE — 0.5 means half the leader's percentage share, not fifty per cent of the market."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.67",
+    "title": "Who What Where When Why Integration",
+    "context": "Review market potential as market volume plus customers not yet converted to purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share of fifty per cent means relative share must also equal fifty.",
+      "Market potential in electric vehicle chargers may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one electric vehicle chargers firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Customer analysis excludes analysis of whether buyers also purchase rival products.",
+      "A supplier in the medical diagnostic kits segment may improve positioning by running telephone interviews with buyers before launching an updated product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Absolute percentage and relative ratio measure different comparisons.",
+      "TRUE — Unconverted buyers keep market potential above volume in electric vehicle chargers.",
+      "TRUE — Sales potential includes room beyond current volume for a electric vehicle chargers supplier.",
+      "FALSE — Primary research can ask about similar rival products.",
+      "TRUE — Tailored primary research such as running telephone interviews with buyers supports informed decisions in the medical diagnostic kits market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.68",
+    "title": "Industry Trend Evaluation",
+    "context": "Analyze sales potential as current sales plus achievable gains from rivals and market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the medical diagnostic kits market can serve as secondary information when estimating total industry sales.",
+      "Market volume is the sum of market potential and sales potential for one firm.",
+      "Customer analysis in the medical diagnostic kits market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Sales volume for one firm is the same concept as market volume for the whole market.",
+      "B2B customers are consumers whenever they personally use a product at work."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Trade statistics reused for the medical diagnostic kits segment are secondary market information.",
+      "FALSE — Market volume is total current sales; it is not that sum.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in medical diagnostic kits.",
+      "FALSE — Sales volume is one firm; market volume is all firms.",
+      "FALSE — Business purchasers for work still indicate B2B."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.69",
+    "title": "Brand Sales Against Category Total",
+    "context": "Consider a logistics firm reviewing published transport-market forecasts alongside its own shipment records to judge growth opportunities. Evaluate the following economic assertions:",
+    "statements": [
+      "If a medical diagnostic kits producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in medical diagnostic kits, relative market share equals 0.5.",
+      "Market potential in medical diagnostic kits may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one medical diagnostic kits firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Prospective customers are counted in market volume before they make any purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — 90 divided by 600 equals 15% absolute share in the medical diagnostic kits example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in medical diagnostic kits.",
+      "TRUE — Unconverted buyers keep market potential above volume in medical diagnostic kits.",
+      "TRUE — Sales potential includes room beyond current volume for a medical diagnostic kits supplier.",
+      "FALSE — Market volume reflects current sales, not unconverted prospects alone."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.70",
+    "title": "Relative Share Below Unity",
+    "context": "Analyze primary research design around questions such as willingness to pay and support needs. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the warehouse automation systems segment may improve positioning by analysing responses from an online survey before launching an updated product line.",
+      "Published trade statistics on the warehouse automation systems market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the warehouse automation systems market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "If a warehouse automation systems producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in warehouse automation systems, relative market share equals 0.5."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Tailored primary research such as analysing responses from an online survey supports informed decisions in the warehouse automation systems market.",
+      "TRUE — Trade statistics reused for the warehouse automation systems segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in warehouse automation systems.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the warehouse automation systems example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in warehouse automation systems."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.71",
+    "title": "Relative Share Above Unity",
+    "context": "Review limitations of secondary data when a firm needs buyer-specific detail. Evaluate the following economic assertions:",
+    "statements": [
+      "Market potential in warehouse automation systems may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one warehouse automation systems firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the specialty coffee roasting segment may improve positioning by hiring an institute to conduct field interviews before launching an updated product line.",
+      "Published trade statistics on the specialty coffee roasting market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the specialty coffee roasting market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Unconverted buyers keep market potential above volume in warehouse automation systems.",
+      "TRUE — Sales potential includes room beyond current volume for a warehouse automation systems supplier.",
+      "TRUE — Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the specialty coffee roasting market.",
+      "TRUE — Trade statistics reused for the specialty coffee roasting segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in specialty coffee roasting."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.72",
+    "title": "Market Research for Investors",
+    "context": "Analyze distinguishing consumer markets from business markets in who-customer research. Evaluate the following economic assertions:",
+    "statements": [
+      "If a specialty coffee roasting producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in specialty coffee roasting, relative market share equals 0.5.",
+      "Market potential in specialty coffee roasting may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one specialty coffee roasting firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the renewable-energy inverters segment may improve positioning by designing a primary study around channel preferences before launching an updated product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — 90 divided by 600 equals 15% absolute share in the specialty coffee roasting example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in specialty coffee roasting.",
+      "TRUE — Unconverted buyers keep market potential above volume in specialty coffee roasting.",
+      "TRUE — Sales potential includes room beyond current volume for a specialty coffee roasting supplier.",
+      "TRUE — Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the renewable-energy inverters market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.73",
+    "title": "Primary Survey Administration Costs",
+    "context": "Consider a software vendor learning how business clients use its platform so that product updates match preferred operational workflows. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the renewable-energy inverters market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the renewable-energy inverters market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Questionnaire analysis costs are excluded from the cost of primary market research.",
+      "If a renewable-energy inverters producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "With fifteen per cent absolute share and a leading rival at thirty per cent in renewable-energy inverters, relative market share equals 0.5."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Trade statistics reused for the renewable-energy inverters segment are secondary market information.",
+      "TRUE — Where, when, and why dimensions apply alongside other customer analysis in renewable-energy inverters.",
+      "FALSE — Analysis costs are part of primary research expense.",
+      "TRUE — 90 divided by 600 equals 15% absolute share in the renewable-energy inverters example.",
+      "TRUE — 15/30 yields 0.5 relative share against the leader in renewable-energy inverters."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.74",
+    "title": "Telephone Interview Primary Data",
+    "context": "Analyze using where-customer findings to encourage alternative retail or wholesale channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Telephone interviews are secondary when answers are recorded on a computer.",
+      "Market potential in renewable-energy inverters may exceed current market volume when buyers not yet served could enter the category.",
+      "Online surveys are secondary because respondents type answers without an interviewer present.",
+      "Sales potential for one renewable-energy inverters firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Government agency research is primary for every firm that later cites the publication."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Recording method does not make interviews secondary.",
+      "TRUE — Unconverted buyers keep market potential above volume in renewable-energy inverters.",
+      "FALSE — Self-completion online surveys are still primary collection.",
+      "TRUE — Sales potential includes room beyond current volume for a renewable-energy inverters supplier.",
+      "FALSE — Prior agency research is secondary for later users."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.75",
+    "title": "Personal Interview Primary Data",
+    "context": "Review when-customer findings that expose predictable peaks before holiday periods. Evaluate the following economic assertions:",
+    "statements": [
+      "Researching procurement managers as customers indicates the firm is studying a business-to-business market segment.",
+      "Association research is tailored to each member's product line by default.",
+      "Market share can be measured without distinguishing absolute from relative concepts.",
+      "Primary interviews with procurement managers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "A firm trailing the leader always has relative market share above one."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — procurement managers as customers align with business-to-business classification in who-customer analysis.",
+      "FALSE — Association research is typically general secondary information.",
+      "FALSE — The chapter distinguishes absolute and relative market share.",
+      "TRUE — Why and what dimensions can be explored with procurement managers in primary research.",
+      "FALSE — Trailing the leader implies relative share below one."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.76",
+    "title": "Online Survey Analysis Expenditure",
+    "context": "Analyze why-customer findings that guide differentiation and share expansion strategies. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm matching the leader's percentage share has relative market share below one.",
+      "Market research on when customers buy cannot support differentiated pricing.",
+      "Researching household consumers as customers indicates the firm is studying a business-to-consumer market segment.",
+      "Primary interviews with household consumers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Why-customer research is limited to price motives and excludes quality preferences."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Matching the leader gives relative share of 1.0.",
+      "FALSE — Timing analysis can support price differentiation over the year.",
+      "TRUE — household consumers as customers align with business-to-consumer classification in who-customer analysis.",
+      "TRUE — Why and what dimensions can be explored with household consumers in primary research.",
+      "FALSE — Why analysis covers motives and preferences broadly."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.77",
+    "title": "Industry Reports as Secondary Sources",
+    "context": "Consider a regional bakery chain that studies government retail statistics and trade-association reports before opening outlets in new towns. Evaluate the following economic assertions:",
+    "statements": [
+      "Researching fleet operators as customers indicates the firm is studying a business-to-business market segment.",
+      "What-customer research excludes how products are used in daily operations.",
+      "Primary interviews with fleet operators can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Where-customer research excludes online channels because only stores matter.",
+      "Researching retail shoppers as customers indicates the firm is studying a business-to-consumer market segment."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — fleet operators as customers align with business-to-business classification in who-customer analysis.",
+      "FALSE — Preferred use is central to what-customer analysis.",
+      "TRUE — Why and what dimensions can be explored with fleet operators in primary research.",
+      "FALSE — Online purchase locations are part of where analysis.",
+      "TRUE — retail shoppers as customers align with business-to-consumer classification in who-customer analysis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.78",
+    "title": "Business Published Secondary Data",
+    "context": "Analyze percentage market share as sales of one business divided by all market sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Who-customer research excludes distinguishing B2B from B2C markets.",
+      "Primary interviews with retail shoppers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Researching hospital purchasing committees as customers indicates the firm is studying a business-to-business market segment.",
+      "Primary research never uses questionnaires because they are too expensive for any firm.",
+      "Secondary research never comes from government agencies according to the chapter."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Who analysis distinguishes consumer and business customers.",
+      "TRUE — Why and what dimensions can be explored with retail shoppers in primary research.",
+      "TRUE — hospital purchasing committees as customers align with business-to-business classification in who-customer analysis.",
+      "FALSE — Questionnaires are listed primary methods despite cost.",
+      "FALSE — Government agencies are listed secondary sources."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.79",
+    "title": "Channel Preference Identification",
+    "context": "Review absolute share figures that omit direct comparison with the leading competitor. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size and market share use the same formula with identical numerators and denominators.",
+      "Sales potential excludes any share of growth in overall market potential.",
+      "Primary interviews with hospital purchasing committees can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Researching online subscribers as customers indicates the firm is studying a business-to-consumer market segment.",
+      "Gains from competitors are excluded when estimating how far sales could rise."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Size is total market sales; share is firm sales over total.",
+      "FALSE — A share in market-potential increase is part of sales potential.",
+      "TRUE — Why and what dimensions can be explored with hospital purchasing committees in primary research.",
+      "TRUE — online subscribers as customers align with business-to-consumer classification in who-customer analysis.",
+      "FALSE — Gains from competitors are part of sales potential."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.80",
+    "title": "Differentiated Seasonal Pricing",
+    "context": "Analyze relative share ratios that add competitive context to absolute percentage results. Evaluate the following economic assertions:",
+    "statements": [
+      "Investors disregard market share because only profit margins matter for valuation.",
+      "Primary interviews with online subscribers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Children never appear in customer-analysis examples about influence on purchases.",
+      "Researching factory maintenance teams as customers indicates the firm is studying a business-to-business market segment.",
+      "Researching gift buyers as customers indicates the firm is studying a business-to-consumer market segment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Absolute share is noted as relevant to investors.",
+      "TRUE — Why and what dimensions can be explored with online subscribers in primary research.",
+      "FALSE — Children influencing purchases paid by adults is a textbook example.",
+      "TRUE — factory maintenance teams as customers align with business-to-business classification in who-customer analysis.",
+      "TRUE — gift buyers as customers align with business-to-consumer classification in who-customer analysis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.81",
+    "title": "Substitute Preference Motives",
+    "context": "Consider a small craft brewery that cannot afford a large-scale questionnaire programme and instead relies on freely available industry consumption data. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary interviews with gift buyers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Expressing market size through value in euros is consistent with measuring market volume as monetary totals across all sellers.",
+      "Expressing market size through units shipped is consistent with measuring market volume as quantities sold across the market.",
+      "Expressing market size through tonnes delivered is consistent with measuring market volume as physical quantity totals in the market.",
+      "Expressing market size through licence seats sold is consistent with measuring market volume as count-based market volume in software."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Why and what dimensions can be explored with gift buyers in primary research.",
+      "TRUE — Market size may be expressed as value in euros, reflecting monetary totals across all sellers.",
+      "TRUE — Market size may be expressed as units shipped, reflecting quantities sold across the market.",
+      "TRUE — Market size may be expressed as tonnes delivered, reflecting physical quantity totals in the market.",
+      "TRUE — Market size may be expressed as licence seats sold, reflecting count-based market volume in software."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.82",
+    "title": "Total Category Sales Measurement",
+    "context": "Analyze how a components manufacturer might combine secondary forecasts with primary buyer surveys. Evaluate the following economic assertions:",
+    "statements": [
+      "Buyer and user must differ in every single purchase transaction.",
+      "Market potential shrinks when unconverted customers enter the market.",
+      "Expressing market size through room nights booked is consistent with measuring market volume as quantity measure in hospitality markets.",
+      "Relative share is calculated before absolute share in the textbook sequence.",
+      "A fifteen per cent absolute share combined with a thirty per cent leader share gives relative share of forty-five."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — They may differ but need not differ in every case.",
+      "FALSE — Unconverted customers tend to keep potential above current volume.",
+      "TRUE — Market size may be expressed as room nights booked, reflecting quantity measure in hospitality markets.",
+      "FALSE — Absolute share is defined before relative share uses it.",
+      "FALSE — 15/30 equals 0.5, not 45."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.83",
+    "title": "Forecast and Position Assessment",
+    "context": "Review ethical use of market research data about customer behaviour and preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "Market research helps a components manufacturer judge whether substrate demand will grow in coming years.",
+      "A firm may read secondary Prismark-style forecasts before estimating its share of an electronics submarket.",
+      "Customer analysis of preferred use can show whether buyers deploy a product in harsh industrial environments.",
+      "Market research excludes learning what customers think about products.",
+      "Empirical studies are secondary when results are published in a trade journal."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Industry development research supports forward position assessment.",
+      "TRUE — Secondary forecasts inform share estimation in technology markets.",
+      "TRUE — What-customer use settings guide robust product design.",
+      "FALSE — Primary research can ask what customers think about products.",
+      "FALSE — Publication does not retroactively make bespoke collection secondary."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.84",
+    "title": "Buyer Specific Detail Needs",
+    "context": "Analyze integrating who, what, where, when, and why dimensions within customer analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-research may reveal that business buyers increasingly order through integrated procurement portals.",
+      "When-research on replacement cycles can show multi-year intervals between repeat purchases.",
+      "Existing research by other businesses is primary when it is recent.",
+      "Why-research may find that compliance certification outweighs minor price differences for medical buyers.",
+      "Customer analysis is separate from market research and never combined in practice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — B2B channel shifts appear in where-customer analysis.",
+      "TRUE — Timing analysis covers replacement intervals as well as seasons.",
+      "FALSE — Recency does not make others' prior research primary for a new user.",
+      "TRUE — Regulatory motives appear in why-customer analysis.",
+      "FALSE — Customer analysis is often an important element of market research."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.85",
+    "title": "Consumer Versus Business Market Trap",
+    "context": "Consider a cosmetics brand dividing its brand sales by the sales of its largest rival to interpret competitive standing. Evaluate the following economic assertions:",
+    "statements": [
+      "Channel weaknesses cannot be addressed because distribution is fixed by law.",
+      "Seasonal production planning ignores when-customer timing insights.",
+      "Absolute market share uses the leader's sales as the numerator.",
+      "Absolute share of eight per cent in a fragmented market still informs investors about scale of operations.",
+      "Relative market share is expressed only as a percentage of total market sales."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Analysis can encourage alternative channels when weaknesses appear.",
+      "FALSE — Timing analysis supports planning ahead for seasonal fluctuations.",
+      "FALSE — Absolute share uses the firm's own sales in the numerator.",
+      "TRUE — Even modest absolute share is investor-relevant information.",
+      "FALSE — Relative share is a ratio to the leader, not a market percentage."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.86",
+    "title": "Grandparent and Parent Decision Roles",
+    "context": "Analyze comparing a brand's sales to total category sales when estimating market share. Evaluate the following economic assertions:",
+    "statements": [
+      "Market volume for all firms is smaller than sales volume of one large company.",
+      "Primary data become secondary once analysed and presented in charts.",
+      "Secondary data become primary when a manager photocopies an industry report.",
+      "A components manufacturer must ignore published forecasts and collect only primary data.",
+      "Relative share of 0.8 against the leader signals the firm trails but remains a substantial competitor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Market volume aggregates all firms and exceeds one firm's sales.",
+      "FALSE — Analysis presentation does not reclassify primary collection as secondary.",
+      "FALSE — Copying a report does not create primary empirical research.",
+      "FALSE — Firms may combine secondary forecasts with primary studies.",
+      "TRUE — Relative share below one indicates trailing the leader."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.87",
+    "title": "Alternative Channel Encouragement",
+    "context": "Review interpreting a relative share below one as trailing the largest competitor's position. Evaluate the following economic assertions:",
+    "statements": [
+      "Relative share of 1.2 signals the firm holds a larger percentage share than its largest rival.",
+      "Market volume sums revenue from all vendors offering substitutable products in the defined market.",
+      "Sales volume for one vendor is only part of the market volume that forms the share denominator.",
+      "Primary research on support needs can distinguish customers wanting on-site service from those preferring remote help.",
+      "Secondary industry reviews may describe AIM segments alongside communication and consumer segments in electronics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Relative share above one exceeds the leader's percentage.",
+      "TRUE — Substitutable offerings define the market for volume totals.",
+      "TRUE — One vendor's sales are a subset of total market volume.",
+      "TRUE — Support preferences are addressable in tailored primary studies.",
+      "TRUE — Segment breakdowns can appear in secondary industry reports."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.88",
+    "title": "Holiday Peak Timing Analysis",
+    "context": "Analyze interpreting a relative share above one as exceeding the largest competitor's share. Evaluate the following economic assertions:",
+    "statements": [
+      "New applications such as wearables may expand long-term market potential beyond current CCC-dominated volume.",
+      "Willingness-to-pay questions belong only to secondary government surveys.",
+      "Questionnaire design in primary research can test whether buyers also purchase substitute brands.",
+      "Personal interviews allow follow-up questions when a respondent's answer about purchase motives is unclear.",
+      "Government open-data portals may provide secondary statistics on sector output and employment."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Emerging applications can raise long-term market potential.",
+      "FALSE — Willingness to pay can be studied in tailored primary research.",
+      "TRUE — Rival purchasing can be asked directly in primary questionnaires.",
+      "TRUE — Interviews support clarification in why-customer research.",
+      "TRUE — Government open data are secondary sources for market learning."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.89",
+    "title": "Differentiation From Why Analysis",
+    "context": "Consider a food producer estimating market volume in tonnes for organic cereals and comparing that total with its own annual shipments. Evaluate the following economic assertions:",
+    "statements": [
+      "Association membership surveys conducted for the sector are secondary for an individual member firm reading results.",
+      "Market share of a brand is undefined when brands compete in the same category.",
+      "Who-research clarifies whether the paying entity is a household, a company, or an institution.",
+      "Relative share above one means the firm is smaller than the largest competitor.",
+      "What-research on software can examine whether clients use modules for payroll, inventory, or customer records."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Sector surveys are secondary for member firms using published results.",
+      "FALSE — Brand share can be calculated within a category.",
+      "TRUE — Who analysis identifies the type of purchasing entity.",
+      "FALSE — Relative share above one means exceeding the leader's percentage.",
+      "TRUE — Module use is part of what-customer analysis for software."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.90",
+    "title": "Dual Expression of Market Volume",
+    "context": "Analyze the distinction between primary and secondary sources of market research data. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-research comparing direct and indirect channels can expose over-reliance on a single retailer.",
+      "When-research on subscription renewals can identify months with unusually high churn or upgrade rates.",
+      "Why-research comparing eco-labels and price may show heterogeneous motives across customer segments.",
+      "Investors comparing two firms may examine absolute share first before comparing relative position to the leader.",
+      "A marketing team may set share targets using sales potential estimates that include winnable rival accounts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel concentration risk appears in where analysis.",
+      "TRUE — Renewal timing is part of when-customer analysis.",
+      "TRUE — Segment-specific motives appear in why analysis.",
+      "TRUE — Absolute share is a starting point before relative comparison.",
+      "TRUE — Winnable rival accounts feed sales potential estimates."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.91",
+    "title": "Single Firm Share Percentage",
+    "context": "Review how primary information is obtained through empirical studies tailored to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Relative share below one means the firm exceeds the largest competitor's share.",
+      "Market research excludes industry trends because trends are macroeconomic only.",
+      "Market research on competition identifies whether rivals are gaining share in the same product category.",
+      "Tailoring a primary study avoids paying for questions irrelevant to the commissioning firm's product line.",
+      "Prospective buyers are irrelevant when estimating market potential."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Relative share below one means trailing the leader.",
+      "FALSE — Industry development is part of market research scope.",
+      "TRUE — Competitive share shifts are part of market research scope.",
+      "TRUE — Tailoring limits primary research to relevant questions.",
+      "FALSE — Potential customers relate to market potential above volume."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.92",
+    "title": "Omitting Leader From Absolute Share",
+    "context": "Analyze why conducting primary market research can be costly for smaller businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Secondary data may describe national totals while primary work later targets one region in detail.",
+      "What-customer analysis is about what suppliers produce rather than what buyers do with goods.",
+      "Why-customer analysis cannot inform advertising messages.",
+      "Where-customer analysis cannot reveal online purchase growth.",
+      "When-customer analysis cannot identify holiday peaks."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Secondary breadth can precede regional primary focus.",
+      "FALSE — What-customers concerns buyer use, not supplier output.",
+      "FALSE — Motive insight can guide promotional emphasis.",
+      "FALSE — Online channels are part of where-customer research.",
+      "FALSE — Seasonal peaks are identified through when analysis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.93",
+    "title": "Ratio Form of Relative Share",
+    "context": "Consider a furniture producer that tracks where customers purchase dining sets, whether in showrooms, online stores, or department concessions. Evaluate the following economic assertions:",
+    "statements": [
+      "Children recommending educational apps while parents subscribe illustrates influencer effects in digital B2C markets.",
+      "Grandparents gifting products chosen partly by grandchildren shows influencers who are neither buyer nor user.",
+      "Who-customer analysis cannot separate consumer from business purchasers.",
+      "Primary research is defined as information already collected by government agencies.",
+      "Secondary research requires new empirical collection for each business every year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Influencers operate in digital B2C as well as physical retail.",
+      "TRUE — Influencers need not be buyer or primary user.",
+      "FALSE — B2C and B2B distinction is part of who analysis.",
+      "FALSE — Government prior research is secondary, not primary.",
+      "FALSE — Secondary reuses existing research rather than new universal collection."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.94",
+    "title": "Potential Customers Above Volume",
+    "context": "Analyze the customer-analysis question of who current and potential customers are. Evaluate the following economic assertions:",
+    "statements": [
+      "A user in a business may specify technical requirements while a procurement officer signs the contract.",
+      "Preferred-use insight can justify adding features for outdoor operation rather than office use only.",
+      "Weak performance in one retail chain identified through where-data may prompt reallocation to online sales.",
+      "Advance production of seasonal goods follows when-data showing demand spikes before public holidays.",
+      "Advertising that stresses durability responds to why-data showing longevity as the decisive purchase motive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Technical users and signing buyers can differ in B2B.",
+      "TRUE — Use context steers feature prioritisation.",
+      "TRUE — Where findings can trigger channel reallocation.",
+      "TRUE — Holiday spikes in when-data support advance production.",
+      "TRUE — Why-data can steer advertising emphasis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.95",
+    "title": "Components Manufacturer Research Mix",
+    "context": "Review how customer analysis distinguishes business-to-consumer and business-to-business markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size falls when every competitor increases its unit sales.",
+      "Market size growth from 2.0 billion to 2.1 billion euros indicates a larger value-based market volume.",
+      "Sales volume of one firm equals market volume when the firm is the market leader.",
+      "Absolute share of twenty per cent means relative share must be twenty against any leader.",
+      "A market of 1,000,000 euros with firm sales of 100,000 euros gives a ninety per cent share."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Rising total unit sales increase market size.",
+      "TRUE — Higher euro totals mean larger value-based market size.",
+      "FALSE — Market volume sums all firms, not just the leader.",
+      "FALSE — Relative share depends on the leader's percentage.",
+      "FALSE — 100,000/1,000,000 is 10%, not 90%."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.96",
+    "title": "Behaviour Data in Customer Study",
+    "context": "Analyze the roles of buyer, user, and influencer in customer purchasing decisions. Evaluate the following economic assertions:",
+    "statements": [
+      "A market of 2,000,000 euros with firm sales of 500,000 euros gives a four per cent share.",
+      "Market potential is identical to sales potential for the entire industry.",
+      "Sales potential for one firm aggregates market volume for all competitors.",
+      "Customer analysis excludes grandparents who influence family purchases.",
+      "Market size of 4.5 million units sold indicates quantity-based market volume across the category."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — 500,000/2,000,000 is 25%, not 4%.",
+      "FALSE — Market potential and sales potential apply at different levels.",
+      "FALSE — Sales potential is firm-level; market volume is industry-level.",
+      "FALSE — Influencers such as grandparents may shape decisions.",
+      "TRUE — Unit counts express quantity-based market size."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.97",
+    "title": "Position and Prospect Evaluation",
+    "context": "Consider an electronics assembler comparing its euro sales with total industry revenue to estimate its proportion of the national components market. Evaluate the following economic assertions:",
+    "statements": [
+      "Dividing 75,000 euros of firm sales by 500,000 euros of market sales yields fifteen per cent absolute share.",
+      "Influencers always pay for products they recommend to others.",
+      "Dividing 200,000 euros of firm sales by 800,000 euros of market sales yields twenty-five per cent absolute share.",
+      "With absolute share ten per cent and leader share twenty per cent, relative market share equals 0.5.",
+      "Primary questionnaires are secondary when distributed through email."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — 75/500 equals 15% absolute market share.",
+      "FALSE — Influencers may recommend without paying.",
+      "TRUE — 200/800 equals 25% absolute market share.",
+      "TRUE — 10/20 gives relative share of 0.5.",
+      "FALSE — Email distribution does not make questionnaires secondary."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.98",
+    "title": "Category Share for One Brand",
+    "context": "Analyze how knowledge of preferred product use supports development and improvement. Evaluate the following economic assertions:",
+    "statements": [
+      "With absolute share twelve per cent and leader share twelve per cent, relative market share equals 1.0.",
+      "Market potential includes demand from buyers who might enter if products better match their needs.",
+      "Sales potential includes revenue that could be won if the firm captures a portion of unmet category demand.",
+      "Research institutes analysing primary data produce interpretations tailored to the commissioning client's brief.",
+      "Free secondary reports may still underrepresent niche buyer segments that primary research later targets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — 12/12 gives relative share of 1.0.",
+      "TRUE — Better-matched products can convert potential into volume.",
+      "TRUE — Unmet demand can raise a firm's sales potential.",
+      "TRUE — Institute analysis serves the client's tailored primary study.",
+      "TRUE — Secondary generality can miss niches addressed in primary work."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.99",
+    "title": "Trailing the Market Leader",
+    "context": "Review the customer-analysis dimension of where customers buy products. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary market research may gather information through telephone interviews with potential customers designed for the specific interests of the business.",
+      "Institute-collected interviews are secondary because the institute is a third party.",
+      "Free secondary data are always outdated and therefore primary when less than one year old.",
+      "Cost barriers to primary research apply only to multinational corporations.",
+      "Where-customer research may show that buyers increasingly prefer wholesale distributors for certain product categories."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Primary research uses tailored empirical methods such as telephone interviews with potential customers to collect data for the firm.",
+      "FALSE — Third-party collection for a bespoke study is primary.",
+      "FALSE — Age alone does not convert secondary data into primary.",
+      "FALSE — Small businesses especially face affordability limits.",
+      "TRUE — Purchase-location analysis identifies channel preferences such as wholesale distributors."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.100",
+    "title": "Leading the Largest Competitor",
+    "context": "Analyze how purchase-location data helps identify preferred distribution channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share calculations use costs of production instead of sales revenue.",
+      "Where-customer research may show that buyers increasingly prefer department concessions for certain product categories.",
+      "Relative market share subtracts the leader's share from the firm's share.",
+      "Absolute market share multiplies firm sales by total market sales.",
+      "Market research never examines competition because antitrust law forbids it."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Share uses sales, not production costs.",
+      "TRUE — Purchase-location analysis identifies channel preferences such as department concessions.",
+      "FALSE — Relative share is a ratio, not a subtraction.",
+      "FALSE — Absolute share divides firm sales by market sales.",
+      "FALSE — Competition is within market research scope."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

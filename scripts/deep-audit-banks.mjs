@@ -8,6 +8,7 @@ const files = [
   "src/data/economics-cases-ch2-subtopics.json",
   "src/data/economics-cases-ch3-subtopics.json",
   "src/data/economics-cases-ch4-subtopics.json",
+  "src/data/economics-cases-ch5-subtopics.json",
 ];
 
 function norm(s) {

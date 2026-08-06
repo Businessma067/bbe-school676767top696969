@@ -9,6 +9,7 @@ export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
   2: 50,
   3: 50,
   4: 50,
+  5: 100,
 };
 
 export const DEFAULT_QUESTION_CAP = 50;
@@ -51,7 +52,7 @@ export const CUSTOM_MOCK_SUBJECTS: Record<CustomMockSubjectId, CustomMockSubject
       { num: 2, title: CHAPTER_TITLES[2] ?? "Basic economic concepts", enabled: true },
       { num: 3, title: CHAPTER_TITLES[3] ?? "Focus on different types of businesses", enabled: true },
       { num: 4, title: CHAPTER_TITLES[4] ?? "Forms of business ownership and sources of finance", enabled: true },
-      { num: 5, title: CHAPTER_TITLES[5] ?? "Marketing", enabled: false },
+      { num: 5, title: CHAPTER_TITLES[5] ?? "Marketing", enabled: true },
       { num: 6, title: CHAPTER_TITLES[6] ?? "Accounting", enabled: false },
     ],
   },

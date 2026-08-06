@@ -1,0 +1,2902 @@
+[
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.01",
+    "title": "Product Orientation Versus Market Orientation",
+    "context": "Review how product-oriented and market-oriented businesses differ in where they place initial emphasis when developing offerings. Evaluate the following economic assertions:",
+    "statements": [
+      "A product-oriented business first analyses customers' needs and wants before defining product specifications.",
+      "A product-oriented business focuses on the product and its specifications first and later thinks about how to sell it.",
+      "A market-oriented business will first analyse customers' needs and wants and then tailor products to fulfil these requirements.",
+      "Product-oriented and market-oriented businesses may pursue identical marketing objectives even when their strategic starting points differ.",
+      "A product-oriented business mainly relies on the quality of the features of the product to be successful in the market."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation focuses on the product first; needs analysis leads in market orientation.",
+      "TRUE — Product orientation places product specifications ahead of selling plans.",
+      "TRUE — Market orientation begins with needs analysis before product tailoring.",
+      "TRUE — Orientation differs in process, not necessarily in stated objectives such as market share.",
+      "TRUE — Product orientation trusts feature quality as the primary route to market success."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.02",
+    "title": "Focus on Features or Customer Needs",
+    "context": "Analyze the contrast between focusing on product features and focusing on customers' needs and wants in marketing orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "The market-oriented approach has the advantage of anticipating changing needs and wants and responding to market changes earlier than product-oriented competitors.",
+      "Market-oriented businesses define specifications first and only later consider whether buyers want those features.",
+      "Product-oriented and market-oriented businesses must always pursue completely different marketing objectives.",
+      "A product-oriented business ignores product quality and relies solely on aggressive advertising without strong features.",
+      "Market-oriented businesses cannot anticipate changing needs because they focus only on current specifications."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Market-oriented firms can react to shifts before specification-led rivals adjust.",
+      "FALSE — Market orientation analyses needs before tailoring products, not after locking specifications.",
+      "FALSE — The chapter states their objectives may even be identical despite different orientation processes.",
+      "FALSE — Product orientation mainly relies on feature quality rather than abandoning it for advertising alone.",
+      "FALSE — Market orientation specifically anticipates and responds to changing needs earlier than product-oriented rivals."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.03",
+    "title": "Identical Objectives With Different Orientations",
+    "context": "Review why many businesses have moved from product orientation towards a market-oriented approach over recent decades. Evaluate the following economic assertions:",
+    "statements": [
+      "Which orientation is more suitable for a business largely depends on the product itself and the number of competitors in the market.",
+      "Orientation suitability is identical for every product regardless of competitive conditions or product characteristics.",
+      "Markets and the expectations of customers should not be neglected even when a firm emphasises internal product development.",
+      "Customer relationship management aims at creating a long-term relationship with customers rather than treating each sale as isolated.",
+      "CRM systems keep customer data so the business can mail or email newsletters, coupons, and product information to encourage repeat purchases."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product characteristics and competitive intensity shape orientation suitability.",
+      "FALSE — Suitability depends on the product itself and the number of competitors.",
+      "TRUE — Customer and market expectations remain relevant regardless of orientation emphasis.",
+      "TRUE — CRM prioritises sustained relationships over one-off transactions.",
+      "TRUE — Stored data supports ongoing communication that brings customers back."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.04",
+    "title": "Market-Oriented Anticipation of Change",
+    "context": "Consider a fashion retailer that surveys changing style preferences each season before commissioning new garment lines from suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "Sensitive use of personal customer data is indispensable when businesses build detailed CRM profiles.",
+      "By using personal accounts and loyalty cards, customers often give up their anonymity willingly in order to receive discounts and special offers.",
+      "Strong product specifications allow a business to ignore markets and customer expectations entirely.",
+      "Many businesses collect data on their customers and their buying behaviours so they can tailor offers to personal preferences.",
+      "Product orientation emphasises focus on production and product features rather than on customers' needs and wants at the initial stage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Personal data must be handled carefully within CRM programmes.",
+      "TRUE — Loyalty benefits lead many customers to accept identifiable registration voluntarily.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong products.",
+      "TRUE — Behavioural data enables personalised promotional tailoring.",
+      "TRUE — Product orientation centres internal features and production before external needs analysis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.05",
+    "title": "Product Quality as Primary Market Strategy",
+    "context": "Review the market-oriented advantage of anticipating changing customer needs and responding earlier than product-oriented rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer relationship management aims only at single-transaction sales without building long-term customer relationships.",
+      "Market orientation emphasises focus on customers' needs and wants when deciding what to produce and promote.",
+      "CRM systems delete customer data immediately after each purchase so no newsletters or coupons can be sent later.",
+      "Sensitive use of personal data is optional and unnecessary when businesses operate loyalty programmes.",
+      "Loyalty cards and personal accounts always preserve full customer anonymity without any identifiable records."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM aims at creating long-term relationships rather than isolated transactions.",
+      "TRUE — Market orientation places customer requirements at the centre of decisions.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Sensitive use of personal data is described as indispensable in modern CRM practice.",
+      "FALSE — Customers often give up anonymity willingly through loyalty cards and accounts for discounts."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.06",
+    "title": "Neglecting Customer Expectations",
+    "context": "Analyze how product-oriented and market-oriented firms may pursue identical marketing objectives yet follow different strategic paths. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses cannot tailor offers to personal preferences because collecting buying-behaviour data is prohibited in CRM.",
+      "Product orientation and market orientation differ only in advertising slogans rather than in development focus.",
+      "Market orientation means producing whatever engineers prefer without reference to customer requirements.",
+      "Over recent decades many businesses have moved from a product-oriented approach towards a market-oriented approach.",
+      "CRM discourages repeat purchases by avoiding contact between one sale and the next."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Businesses collect behavioural data specifically to tailor offers to personal preferences.",
+      "FALSE — Orientation differs in whether focus starts with product features or customers' needs and wants.",
+      "FALSE — Market orientation produces what customers need and want after analysing requirements.",
+      "TRUE — The chapter notes a broad shift towards market orientation over time.",
+      "FALSE — CRM uses ongoing contact to encourage customers to return and buy again."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.07",
+    "title": "CRM Long-Term Relationship Goals",
+    "context": "Review Figure 10 comparing product orientation with market orientation on focus, selling logic, and customer emphasis. Evaluate the following economic assertions:",
+    "statements": [
+      "A product-oriented business may believe that a good product sells itself through its features and quality.",
+      "Market orientation aligns with producing what customers need and want rather than what internal teams prefer in isolation.",
+      "CRM encourages customers to return and buy again through informed contact supported by stored personal records.",
+      "Personal data sensitivity has become a very important topic as businesses expand loyalty-driven marketing programmes.",
+      "Tailored offers reflect stored knowledge of individual customer preferences derived from purchase histories and account data."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation often assumes superior features reduce heavy selling effort.",
+      "TRUE — Market-oriented firms produce to fulfil identified customer requirements.",
+      "TRUE — Ongoing CRM communication supports repeat purchasing behaviour.",
+      "TRUE — Growing CRM data use raises the importance of sensitive personal data handling.",
+      "TRUE — Personalisation follows from collected behavioural and preference records."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.08",
+    "title": "Sensitive Use of Personal Data",
+    "context": "Consider a furniture workshop that invests in craftsmanship and material quality before researching whether buyers want modular or traditional designs. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal data sensitivity became irrelevant once loyalty programmes began offering discounts.",
+      "A market-oriented firm analyses requirements before tailoring products, whereas a product-oriented firm defines specifications before selling.",
+      "A market-oriented business believes a good product sells itself without studying customer needs.",
+      "Product-oriented firms tailor products to fulfil requirements identified through upfront needs analysis.",
+      "Businesses have universally abandoned market orientation and returned entirely to product orientation."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Personal data sensitivity remains a very important and indispensable topic.",
+      "TRUE — The sequencing of analysis versus specification distinguishes the two orientations.",
+      "FALSE — The good-product-sells-itself logic aligns with product orientation, not market orientation.",
+      "FALSE — Product-oriented firms focus on specifications first; tailoring after needs analysis is market orientation.",
+      "FALSE — Many businesses moved towards market orientation over recent decades, not away from it."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.09",
+    "title": "Loyalty Cards and Voluntary Anonymity",
+    "context": "Review the warning that markets and customer expectations should not be neglected even when product quality is strong. Evaluate the following economic assertions:",
+    "statements": [
+      "Identical profitability or market-share objectives can coexist with different orientation choices across competing firms.",
+      "CRM newsletters and coupons are unrelated to stored customer data and require no personal records.",
+      "Product-oriented competitors may respond to market changes later than market-oriented rivals who anticipated shifting wants.",
+      "CRM newsletters and coupons sent by email use retained customer data to maintain contact between purchase occasions.",
+      "Loyalty cards link identifiable customers to discounts, illustrating willing exchange of anonymity for tangible benefits."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Objectives may match even when orientation processes diverge.",
+      "FALSE — CRM keeps data specifically to mail or email newsletters, coupons, and product information.",
+      "TRUE — Timing of response to change favours market-oriented businesses.",
+      "TRUE — Email communication uses stored data to sustain customer relationships.",
+      "TRUE — Registered loyalty participation trades privacy for price advantages."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.10",
+    "title": "Tailoring Offers to Customer Preferences",
+    "context": "Analyze customer relationship management as a practice aimed at creating long-term relationships with customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers never willingly surrender anonymity because loyalty discounts are always worthless.",
+      "Buying-behaviour data is collected only for tax reporting and not for marketing tailoring.",
+      "Market-oriented competitors respond later to change because they wait for engineers to finish specifications.",
+      "Buying-behaviour records help businesses match promotional content to what individual customers are likely to value.",
+      "Product orientation places customers' needs and wants ahead of production and product features at the initial stage."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Customers often give up anonymity willingly to receive discounts and special offers.",
+      "FALSE — Behavioural data is collected to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms respond earlier; product-oriented rivals may adjust later.",
+      "TRUE — Past purchase patterns guide customised offer design.",
+      "FALSE — Product orientation focuses on production and product features before needs analysis."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.11",
+    "title": "Product-First Specification Development",
+    "context": "Review how CRM systems retain customer data to mail or email newsletters, coupons, and product information. Evaluate the following economic assertions:",
+    "statements": [
+      "Neglecting evolving customer expectations undermines success even when product specifications remain technically strong.",
+      "Orientation choice is fixed by law so every firm in a sector must use market orientation.",
+      "Market-oriented businesses tailor products after analysing needs, placing customer focus ahead of final specification choices.",
+      "Product-oriented businesses think about selling only after the product and its specifications have been defined internally.",
+      "Sensitive handling of personal data supports sustainable CRM rather than eroding trust built through long-term relationships."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Strong features alone do not remove the need to heed market expectations.",
+      "FALSE — Orientation suitability depends on product and competitors rather than universal legal mandate.",
+      "TRUE — Needs analysis precedes tailoring in market orientation.",
+      "TRUE — Selling plans follow specification work in product orientation.",
+      "TRUE — Ethical data use underpins durable CRM relationships."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.12",
+    "title": "Needs Analysis Before Product Design",
+    "context": "Consider a bookshop that analyses reading-category sales data before deciding which new titles to stock for the coming quarter. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM aims at long-term relationships supported by mailing or emailing product information that encourages customers to return.",
+      "Customers who register personal accounts often accept reduced anonymity because loyalty schemes deliver discounts and special offers.",
+      "Businesses tailor offers to personal preferences after collecting data on customers and their buying behaviours.",
+      "CRM long-term relationships require no communication because customers automatically return without contact.",
+      "Suitability of product versus market orientation is contingent on product type and competitive conditions rather than fixed by rule."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term CRM uses communication channels to drive repeat business.",
+      "TRUE — Tangible loyalty benefits motivate voluntary identifiable registration.",
+      "TRUE — Behavioural databases enable preference-aligned promotions.",
+      "FALSE — CRM uses newsletters, coupons, and product information to encourage return purchases.",
+      "TRUE — Orientation choice depends on context rather than universal prescription."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.13",
+    "title": "Competitive Timing in Market Orientation",
+    "context": "Review how personal accounts and loyalty cards lead customers to give up anonymity willingly for discounts and special offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Sensitive personal data handling matters only for government agencies and not for commercial CRM programmes.",
+      "Product orientation centres production and feature development before external customer needs receive detailed attention.",
+      "Identical marketing objectives prove that two firms must also share the same orientation starting point.",
+      "Market-oriented firms never collect customer data because data collection contradicts customer focus.",
+      "Product-oriented businesses never advertise because they assume buyers discover features without promotion."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Sensitive use of personal data is indispensable for businesses using CRM data.",
+      "TRUE — Internal production and features lead in product-oriented planning.",
+      "FALSE — Identical objectives can coexist with different orientation processes.",
+      "FALSE — Market-oriented CRM collects behavioural data to tailor offers responsibly.",
+      "FALSE — Product orientation thinks about selling later; it does not eliminate selling altogether."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.14",
+    "title": "Orientation Suitability and Product Type",
+    "context": "Analyze how businesses collect data on customers and buying behaviours to tailor offers to personal preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "Market orientation places customers' needs and wants at the forefront when shaping what the business will offer.",
+      "CRM retention tactics include coupons designed to bring registered customers back for additional purchases.",
+      "Personal data sensitivity matters because CRM systems retain identifiable information for ongoing marketing contact.",
+      "Loyalty programmes force anonymity on customers who cannot access discounts without remaining unidentified.",
+      "Market-oriented firms gain an edge by responding earlier when customer needs and wants begin to change."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Customer needs and wants guide market-oriented offering design.",
+      "TRUE — Coupon distribution through CRM channels encourages repeat visits.",
+      "TRUE — Identifiable CRM records require careful sensitive use of personal data.",
+      "FALSE — Customers willingly give up anonymity to obtain discounts and special offers.",
+      "TRUE — Early response to shifting wants is a market-orientation advantage."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.15",
+    "title": "CRM Newsletters and Repeat Purchases",
+    "context": "Review the product-oriented view that a good product sells itself through its features rather than through market adaptation. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented firms mainly bet on feature quality rather than on continuous market adaptation for success.",
+      "Registered loyalty programmes illustrate how customers willingly surrender anonymity to obtain price benefits.",
+      "Tailored offers ignore personal preferences because CRM stores only aggregate industry statistics.",
+      "Neglecting customer expectations is recommended when product specifications are technically advanced.",
+      "CRM is identical to a single promotional campaign with no aim of sustaining relationships over time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Feature quality is the primary bet in product orientation.",
+      "TRUE — Loyalty registration is a voluntary privacy trade-off for discounts.",
+      "FALSE — CRM collects individual behavioural data to tailor offers to personal preferences.",
+      "FALSE — Customer and market expectations should not be neglected.",
+      "FALSE — CRM aims at long-term relationships rather than one-off campaigns alone."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.16",
+    "title": "Buying Behaviour Data Collection",
+    "context": "Consider a consumer electronics manufacturer that engineers advanced specifications first and only later designs promotional campaigns around those technical features. Evaluate the following economic assertions:",
+    "statements": [
+      "Stored customer histories enable businesses to email tailored product information aligned with prior interests.",
+      "Personal accounts and loyalty cards never record buying behaviour usable for later marketing contact.",
+      "Market orientation eliminates the need to consider product quality because only customer opinions matter.",
+      "Product orientation means ignoring production entirely and focusing only on customer service scripts.",
+      "Both orientations may target customer satisfaction, yet product orientation still prioritises specifications before selling."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Email tailoring uses recorded purchase and preference histories.",
+      "FALSE — Accounts and cards support data collection on buying behaviours for tailored offers.",
+      "FALSE — Market orientation tailors to needs but does not discard product quality considerations.",
+      "FALSE — Product orientation emphasises production and product features, not service scripts alone.",
+      "TRUE — Shared satisfaction goals do not erase orientation sequencing differences."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.17",
+    "title": "Product Orientation Selling Logic",
+    "context": "Review how CRM encourages customers to return and buy again through ongoing communication and targeted incentives. Evaluate the following economic assertions:",
+    "statements": [
+      "Market and customer expectations should not be neglected because competitive markets punish firms that ignore shifting wants.",
+      "Anticipating changing needs is a disadvantage of market orientation because it creates unnecessary adaptation costs.",
+      "Competitor numbers have no bearing on whether product or market orientation is more suitable.",
+      "Emailing coupons to registered customers contradicts CRM because coupons undermine long-term relationships.",
+      "Sensitive data use means publishing all customer records publicly to maximise transparency."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Ignoring expectations risks market failure even with strong products.",
+      "FALSE — Anticipating change is presented as an advantage of market orientation.",
+      "FALSE — The number of competitors influences which orientation is more suitable.",
+      "FALSE — CRM uses coupons and newsletters to support long-term repeat relationships.",
+      "FALSE — Sensitive use means careful handling, not public disclosure of personal records."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.18",
+    "title": "Market Orientation Production Principle",
+    "context": "Analyze the role of customer focus when a business tailors newsletters and coupons using stored personal data. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM long-term relationship goals distinguish ongoing contact from single-transaction selling approaches.",
+      "Collecting buying-behaviour data supports tailoring offers that reflect individual customer preferences.",
+      "Product-oriented selling logic assumes that superior features attract buyers with limited prior market research.",
+      "Market-oriented workflows begin with understanding requirements and end with products shaped to fulfil them.",
+      "Sensitive use of personal data is indispensable when loyalty cards and accounts identify individual customers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — CRM contrasts relationship building with one-off sales focus.",
+      "TRUE — Behavioural collection enables preference-based offer customisation.",
+      "TRUE — Good-product logic reduces reliance on upfront needs analysis.",
+      "TRUE — Market orientation sequences needs study before product tailoring.",
+      "TRUE — Identifiable loyalty data demands sensitive handling practices."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.19",
+    "title": "Shifting From Product to Market Focus",
+    "context": "Review why personal data sensitivity matters when firms build detailed profiles from loyalty schemes and online accounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented firms define products first and only ask customers whether they like the result afterwards.",
+      "Anticipating changing needs gives market-oriented businesses a timing advantage over specification-led rivals.",
+      "Many firms shifted orientation emphasis as competitive markets made customer adaptation more critical over time.",
+      "In product orientation, managers emphasise the product and its specifications before they develop detailed plans for selling the finished offering.",
+      "Product-oriented firms never think about how to sell because superior features eliminate any selling activity."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Market orientation analyses needs and wants before tailoring products to fulfil requirements.",
+      "TRUE — Anticipation supports earlier adjustment than product-oriented response.",
+      "TRUE — Competitive pressure contributed to broader movement towards market orientation.",
+      "TRUE — Product orientation places product and its specifications ahead of selling strategy in the development sequence.",
+      "FALSE — Product-oriented firms think about selling later, not that selling never occurs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.20",
+    "title": "Customer Focus in CRM Practice",
+    "context": "Consider a software firm that stores customer account histories to email personalised upgrade suggestions and loyalty coupons. Evaluate the following economic assertions:",
+    "statements": [
+      "A product-oriented team may refine the product and its specifications extensively before surveying whether buyers value those priorities.",
+      "CRM data retention is pointless because customers never return after receiving a newsletter.",
+      "Loyalty discounts are unrelated to personal accounts because discounts apply anonymously to every visitor.",
+      "Product-oriented planning treats product and its specifications as the primary basis for believing the offering will succeed commercially.",
+      "In product orientation, managers emphasise the quality of the features of the product before they develop detailed plans for selling the finished offering."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Specification-led work on product and its specifications precedes market validation in product orientation.",
+      "FALSE — CRM aims to bring customers back through informed contact supported by retained data.",
+      "FALSE — Personal accounts and loyalty cards tie identifiable customers to discount benefits.",
+      "TRUE — Commercial confidence in product orientation rests heavily on product and its specifications.",
+      "TRUE — Product orientation places quality of the features of the product ahead of selling strategy in the development sequence."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.21",
+    "title": "Personal Data Trade-Offs in Loyalty Schemes",
+    "context": "Review how product-oriented businesses think about selling only after the product and its specifications have been defined. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying-behaviour records cannot inform tailored offers because preferences never change after one purchase.",
+      "A product-oriented team may refine the quality of the features of the product extensively before surveying whether buyers value those priorities.",
+      "Both orientations always require different profitability targets that make objectives incompatible.",
+      "Product-oriented planning treats quality of the features of the product as the primary basis for believing the offering will succeed commercially.",
+      "In product orientation, managers emphasise the internal production capabilities before they develop detailed plans for selling the finished offering."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Tailoring uses behavioural records reflecting evolving personal preferences.",
+      "TRUE — Specification-led work on quality of the features of the product precedes market validation in product orientation.",
+      "FALSE — Marketing objectives may be identical even when orientation processes differ.",
+      "TRUE — Commercial confidence in product orientation rests heavily on quality of the features of the product.",
+      "TRUE — Product orientation places internal production capabilities ahead of selling strategy in the development sequence."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.22",
+    "title": "Feature Quality Versus Market Adaptation",
+    "context": "Analyze the strategic timing advantage market-oriented competitors gain when customer preferences begin to shift. Evaluate the following economic assertions:",
+    "statements": [
+      "Market orientation prohibits collecting personal data because customer focus means ignoring purchase histories.",
+      "Product orientation is defined by mailing coupons before any product specifications are considered.",
+      "Customer expectations matter only for market-oriented firms and never for product-oriented businesses.",
+      "A product-oriented team may refine the internal production capabilities extensively before surveying whether buyers value those priorities.",
+      "consumer electronics retailers using product orientation must first analyse every customer's needs before engineering any product specifications."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Market-oriented CRM collects data to tailor offers while handling it sensitively.",
+      "FALSE — Product orientation begins with product focus; CRM coupons use retained data later.",
+      "FALSE — Markets and customer expectations should not be neglected by any orientation.",
+      "TRUE — Specification-led work on internal production capabilities precedes market validation in product orientation.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.23",
+    "title": "Early Response to Changing Wants",
+    "context": "Review how identical marketing objectives can coexist with different orientation choices across competing businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented planning treats internal production capabilities as the primary basis for believing the offering will succeed commercially.",
+      "consumer electronics retailers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "consumer electronics retailers with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at consumer electronics retailers requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at consumer electronics retailers preserve complete customer anonymity while still delivering personalised coupons."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Commercial confidence in product orientation rests heavily on internal production capabilities.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.24",
+    "title": "Competitor Count and Orientation Choice",
+    "context": "Consider an online grocer that tracks purchase histories so it can recommend items aligned with each shopper's dietary preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "In product orientation, managers emphasise the technical specifications of the offering before they develop detailed plans for selling the finished offering.",
+      "A product-oriented team may refine the technical specifications of the offering extensively before surveying whether buyers value those priorities.",
+      "Product-oriented planning treats technical specifications of the offering as the primary basis for believing the offering will succeed commercially.",
+      "A product-oriented team may refine the laboratory formulation and feature set extensively before surveying whether buyers value those priorities.",
+      "Market-oriented planning begins by studying customers' needs and wants before final product specifications are locked in."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation places technical specifications of the offering ahead of selling strategy in the development sequence.",
+      "TRUE — Specification-led work on technical specifications of the offering precedes market validation in product orientation.",
+      "TRUE — Commercial confidence in product orientation rests heavily on technical specifications of the offering.",
+      "TRUE — Specification-led work on laboratory formulation and feature set precedes market validation in product orientation.",
+      "TRUE — Market orientation starts with analysis of customers' needs and wants prior to specification decisions."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.25",
+    "title": "CRM Coupons and Customer Retention",
+    "context": "Review CRM data uses including mailing product information that encourages repeat purchases from known customers. Evaluate the following economic assertions:",
+    "statements": [
+      "A market-oriented business tailors its offering after examining customers' needs and wants rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when customers' needs and wants indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying shifting customer preferences before final product specifications are locked in.",
+      "Market-oriented managers adjust promotions when shifting customer preferences indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying recorded purchase histories before final product specifications are locked in."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Tailoring follows examination of customers' needs and wants in market-oriented development.",
+      "TRUE — Shifts in customers' needs and wants trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of shifting customer preferences prior to specification decisions.",
+      "TRUE — Shifts in shifting customer preferences trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of recorded purchase histories prior to specification decisions."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.26",
+    "title": "Registered Accounts and Special Offers",
+    "context": "Analyze why customers often accept reduced anonymity when loyalty cards deliver tangible price benefits. Evaluate the following economic assertions:",
+    "statements": [
+      "consumer electronics retailers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented consumer electronics retailers always respond later to changing wants because they wait for finished specifications.",
+      "A market-oriented business tailors its offering after examining recorded purchase histories rather than assuming internal preferences suffice.",
+      "Product-oriented consumer electronics retailers never rely on feature quality and depend only on coupons without strong offerings.",
+      "regional supermarket chains using product orientation must first analyse every customer's needs before engineering any product specifications."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — Tailoring follows examination of recorded purchase histories in market-oriented development.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.27",
+    "title": "Behavioural Data for Personalised Marketing",
+    "context": "Review the collection of buying-behaviour records as a foundation for personalised marketing offers. Evaluate the following economic assertions:",
+    "statements": [
+      "regional supermarket chains practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "Market-oriented managers adjust promotions when recorded purchase histories indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying identified market requirements before final product specifications are locked in.",
+      "regional supermarket chains with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "A market-oriented business tailors its offering after examining identified market requirements rather than assuming internal preferences suffice."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — Shifts in recorded purchase histories trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of identified market requirements prior to specification decisions.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "TRUE — Tailoring follows examination of identified market requirements in market-oriented development."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.28",
+    "title": "Production Focus in Product Orientation",
+    "context": "Consider a vehicle repair garage that emails service reminders and seasonal maintenance coupons to motorists registered on its customer database. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at regional supermarket chains requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at regional supermarket chains preserve complete customer anonymity while still delivering personalised coupons.",
+      "regional supermarket chains cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented regional supermarket chains always respond later to changing wants because they wait for finished specifications.",
+      "Market-oriented managers adjust promotions when identified market requirements indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — Shifts in identified market requirements trigger promotional adjustment under market orientation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.29",
+    "title": "Customer Needs Focus in Market Orientation",
+    "context": "Review market orientation emphasis on customers' needs and wants when deciding what to produce and promote. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented regional supermarket chains never rely on feature quality and depend only on coupons without strong offerings.",
+      "Market-oriented planning begins by studying evolving buyer expectations before final product specifications are locked in.",
+      "fashion garment suppliers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "fashion garment suppliers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "fashion garment suppliers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — Market orientation starts with analysis of evolving buyer expectations prior to specification decisions.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.30",
+    "title": "Indispensable Personal Data Sensitivity",
+    "context": "Analyze how sensitive handling of personal data supports sustainable CRM rather than undermining customer trust. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at fashion garment suppliers requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at fashion garment suppliers preserve complete customer anonymity while still delivering personalised coupons.",
+      "fashion garment suppliers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "A market-oriented business tailors its offering after examining evolving buyer expectations rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when evolving buyer expectations indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "TRUE — Tailoring follows examination of evolving buyer expectations in market-oriented development.",
+      "TRUE — Shifts in evolving buyer expectations trigger promotional adjustment under market orientation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.31",
+    "title": "Long-Term CRM Versus One-Off Sales",
+    "context": "Review the long-term relationship goal that distinguishes CRM from one-off transactional selling. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented planning begins by studying segment-specific customer demands before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining segment-specific customer demands rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when segment-specific customer demands indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying feedback gathered from target buyers before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining feedback gathered from target buyers rather than assuming internal preferences suffice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market orientation starts with analysis of segment-specific customer demands prior to specification decisions.",
+      "TRUE — Tailoring follows examination of segment-specific customer demands in market-oriented development.",
+      "TRUE — Shifts in segment-specific customer demands trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of feedback gathered from target buyers prior to specification decisions.",
+      "TRUE — Tailoring follows examination of feedback gathered from target buyers in market-oriented development."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.32",
+    "title": "Tailored Product Information by Email",
+    "context": "Consider a regional supermarket chain that analyses household shopping patterns before adjusting product ranges and weekly promotional offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented managers adjust promotions when feedback gathered from target buyers indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying preferences expressed through loyalty accounts before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining preferences expressed through loyalty accounts rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when preferences expressed through loyalty accounts indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying requirements revealed by market research before final product specifications are locked in."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Shifts in feedback gathered from target buyers trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of preferences expressed through loyalty accounts prior to specification decisions.",
+      "TRUE — Tailoring follows examination of preferences expressed through loyalty accounts in market-oriented development.",
+      "TRUE — Shifts in preferences expressed through loyalty accounts trigger promotional adjustment under market orientation.",
+      "TRUE — Market orientation starts with analysis of requirements revealed by market research prior to specification decisions."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.33",
+    "title": "Market Changes Despite Strong Specifications",
+    "context": "Review why neglecting market changes undermines even firms with historically strong product specifications. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented fashion garment suppliers always respond later to changing wants because they wait for finished specifications.",
+      "A market-oriented business tailors its offering after examining requirements revealed by market research rather than assuming internal preferences suffice.",
+      "Product-oriented fashion garment suppliers never rely on feature quality and depend only on coupons without strong offerings.",
+      "software subscription providers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "Market-oriented managers adjust promotions when requirements revealed by market research indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — Tailoring follows examination of requirements revealed by market research in market-oriented development.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — Shifts in requirements revealed by market research trigger promotional adjustment under market orientation."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.34",
+    "title": "Specification-Led Development Traps",
+    "context": "Analyze the product-oriented selling logic that quality features will attract buyers without deep market research. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented planning begins by studying wants signalled through repeat purchase patterns before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining wants signalled through repeat purchase patterns rather than assuming internal preferences suffice.",
+      "software subscription providers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "software subscription providers with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at software subscription providers requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Market orientation starts with analysis of wants signalled through repeat purchase patterns prior to specification decisions.",
+      "TRUE — Tailoring follows examination of wants signalled through repeat purchase patterns in market-oriented development.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.35",
+    "title": "Market-Oriented Response Advantages",
+    "context": "Review the market-oriented response pattern when competitors still centre decisions on internal product specifications. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at software subscription providers preserve complete customer anonymity while still delivering personalised coupons.",
+      "Market-oriented managers adjust promotions when wants signalled through repeat purchase patterns indicate that prior assumptions no longer hold.",
+      "For consumer electronics supplied in hospitality markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "software subscription providers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "A hospitality supplier of consumer electronics may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "TRUE — Shifts in wants signalled through repeat purchase patterns trigger promotional adjustment under market orientation.",
+      "TRUE — Orientation suitability for consumer electronics in hospitality hinges on product traits and competitor numbers.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "TRUE — Identical objectives can coexist with different orientations in hospitality consumer electronics markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.36",
+    "title": "CRM Communication and Repeat Visits",
+    "context": "Consider a hotel group that registers guest preferences through loyalty cards in order to tailor room offers and repeat-stay discounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when consumer electronics quality is high in hospitality, markets and customer expectations should not be neglected by the supplier.",
+      "For household groceries supplied in retail fashion markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "Market-oriented software subscription providers always respond later to changing wants because they wait for finished specifications.",
+      "Product-oriented software subscription providers never rely on feature quality and depend only on coupons without strong offerings.",
+      "A retail fashion supplier of household groceries may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Strong consumer electronics features in hospitality do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for household groceries in retail fashion hinges on product traits and competitor numbers.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — Identical objectives can coexist with different orientations in retail fashion household groceries markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.37",
+    "title": "Privacy Exchange for Discount Benefits",
+    "context": "Review personal data topics linked to loyalty programmes that trade privacy for discounts and special offers. Evaluate the following economic assertions:",
+    "statements": [
+      "hotel loyalty programmes using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "hotel loyalty programmes practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "hotel loyalty programmes with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "Even when household groceries quality is high in retail fashion, markets and customer expectations should not be neglected by the supplier.",
+      "CRM at hotel loyalty programmes requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "TRUE — Strong household groceries features in retail fashion do not justify ignoring market and customer expectations.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.38",
+    "title": "Balancing Data Collection and Sensitivity",
+    "context": "Analyze how businesses balance customer data collection with the need for sensitive use of personal information. Evaluate the following economic assertions:",
+    "statements": [
+      "For seasonal fashion garments supplied in business software markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when seasonal fashion garments quality is high in business software, markets and customer expectations should not be neglected by the supplier.",
+      "For hotel accommodation services supplied in food service markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A food service supplier of hotel accommodation services may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Orientation suitability for seasonal fashion garments in business software hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in business software seasonal fashion garments markets.",
+      "TRUE — Strong seasonal fashion garments features in business software do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for hotel accommodation services in food service hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in food service hotel accommodation services markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.39",
+    "title": "Shared Objectives Across Orientations",
+    "context": "Review orientation differences when both approaches may target customer satisfaction or market share objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when hotel accommodation services quality is high in food service, markets and customer expectations should not be neglected by the supplier.",
+      "For dental care services supplied in financial services markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A financial services supplier of dental care services may share profitability objectives with rivals yet follow different orientation paths.",
+      "For home furniture ranges supplied in healthcare supplies markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A healthcare supplies supplier of home furniture ranges may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Strong hotel accommodation services features in food service do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for dental care services in financial services hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in financial services dental care services markets.",
+      "TRUE — Orientation suitability for home furniture ranges in healthcare supplies hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in healthcare supplies home furniture ranges markets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.40",
+    "title": "Needs-Led Product Tailoring",
+    "context": "Consider a fitness studio that offers members discounted classes after recording attendance patterns through personal accounts on its booking platform. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at hotel loyalty programmes preserve complete customer anonymity while still delivering personalised coupons.",
+      "hotel loyalty programmes cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented hotel loyalty programmes always respond later to changing wants because they wait for finished specifications.",
+      "Even when home furniture ranges quality is high in healthcare supplies, markets and customer expectations should not be neglected by the supplier.",
+      "For online grocery deliveries supplied in home improvement markets, orientation fit depends on the offering itself and how many rivals compete in that category."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — Strong home furniture ranges features in healthcare supplies do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for online grocery deliveries in home improvement hinges on product traits and competitor numbers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.41",
+    "title": "Feature Reliance in Product Orientation",
+    "context": "Review product-oriented reliance on feature quality as the primary route to market success. Evaluate the following economic assertions:",
+    "statements": [
+      "A home improvement supplier of online grocery deliveries may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when online grocery deliveries quality is high in home improvement, markets and customer expectations should not be neglected by the supplier.",
+      "For fitness class memberships supplied in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A automotive after-sales supplier of fitness class memberships may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when fitness class memberships quality is high in automotive after-sales, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Identical objectives can coexist with different orientations in home improvement online grocery deliveries markets.",
+      "TRUE — Strong online grocery deliveries features in home improvement do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for fitness class memberships in automotive after-sales hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in automotive after-sales fitness class memberships markets.",
+      "TRUE — Strong fitness class memberships features in automotive after-sales do not justify ignoring market and customer expectations."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.42",
+    "title": "Anticipating Shifts in Customer Wants",
+    "context": "Analyze early response to changing needs and wants as a competitive edge for market-oriented firms. Evaluate the following economic assertions:",
+    "statements": [
+      "For corporate catering menus supplied in education technology markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A education technology supplier of corporate catering menus may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when corporate catering menus quality is high in education technology, markets and customer expectations should not be neglected by the supplier.",
+      "Product-oriented hotel loyalty programmes never rely on feature quality and depend only on coupons without strong offerings.",
+      "For bookshop inventory selections supplied in leisure travel markets, orientation fit depends on the offering itself and how many rivals compete in that category."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Orientation suitability for corporate catering menus in education technology hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in education technology corporate catering menus markets.",
+      "TRUE — Strong corporate catering menus features in education technology do not justify ignoring market and customer expectations.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — Orientation suitability for bookshop inventory selections in leisure travel hinges on product traits and competitor numbers."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.43",
+    "title": "Contextual Orientation Suitability",
+    "context": "Review the contextual factors—product type and competitor numbers—that shape orientation suitability. Evaluate the following economic assertions:",
+    "statements": [
+      "dental membership schemes using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "dental membership schemes practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "A leisure travel supplier of bookshop inventory selections may share profitability objectives with rivals yet follow different orientation paths.",
+      "dental membership schemes with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "Even when bookshop inventory selections quality is high in leisure travel, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — Identical objectives can coexist with different orientations in leisure travel bookshop inventory selections markets.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "TRUE — Strong bookshop inventory selections features in leisure travel do not justify ignoring market and customer expectations."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.44",
+    "title": "Coupon-Driven CRM Retention",
+    "context": "Consider a cosmetics producer that emphasises laboratory formulation and product features before studying shifting consumer beauty trends. Evaluate the following economic assertions:",
+    "statements": [
+      "For vehicle maintenance services supplied in specialty cosmetics markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "CRM at dental membership schemes requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "A specialty cosmetics supplier of vehicle maintenance services may share profitability objectives with rivals yet follow different orientation paths.",
+      "Loyalty programmes at dental membership schemes preserve complete customer anonymity while still delivering personalised coupons.",
+      "Even when vehicle maintenance services quality is high in specialty cosmetics, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Orientation suitability for vehicle maintenance services in specialty cosmetics hinges on product traits and competitor numbers.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "TRUE — Identical objectives can coexist with different orientations in specialty cosmetics vehicle maintenance services markets.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "TRUE — Strong vehicle maintenance services features in specialty cosmetics do not justify ignoring market and customer expectations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.45",
+    "title": "Willing Anonymity Surrender via Loyalty",
+    "context": "Review willing surrender of anonymity through registered accounts that unlock personalised pricing benefits. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetic beauty products supplied in hospitality markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A hospitality supplier of cosmetic beauty products may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when cosmetic beauty products quality is high in hospitality, markets and customer expectations should not be neglected by the supplier.",
+      "For family holiday packages supplied in retail fashion markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A retail fashion supplier of family holiday packages may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Orientation suitability for cosmetic beauty products in hospitality hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in hospitality cosmetic beauty products markets.",
+      "TRUE — Strong cosmetic beauty products features in hospitality do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for family holiday packages in retail fashion hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in retail fashion family holiday packages markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.46",
+    "title": "Purchase History and Custom Offers",
+    "context": "Analyze buying-behaviour databases as inputs to customised product information and promotional targeting. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when family holiday packages quality is high in retail fashion, markets and customer expectations should not be neglected by the supplier.",
+      "For artisan bakery products supplied in business software markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A business software supplier of artisan bakery products may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when artisan bakery products quality is high in business software, markets and customer expectations should not be neglected by the supplier.",
+      "CRM programmes may use email newsletters to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Strong family holiday packages features in retail fashion do not justify ignoring market and customer expectations.",
+      "TRUE — Orientation suitability for artisan bakery products in business software hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in business software artisan bakery products markets.",
+      "TRUE — Strong artisan bakery products features in business software do not justify ignoring market and customer expectations.",
+      "TRUE — email newsletters within CRM can encourage customers to return and buy again when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.47",
+    "title": "Contemporary Market Orientation Shift",
+    "context": "Review the shift from product-first thinking towards customer-needs analysis in contemporary marketing practice. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use email newsletters to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — email newsletters within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.48",
+    "title": "Persistent Customer Expectation Relevance",
+    "context": "Consider a neighbourhood bakery that refines recipes and packaging before testing whether local customers actually prefer sweeter or healthier alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "dental membership schemes cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented dental membership schemes always respond later to changing wants because they wait for finished specifications.",
+      "Product-oriented dental membership schemes never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use email newsletters to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to build durable commercial relationships with buyers among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — email newsletters within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can build durable commercial relationships with buyers when personal data is used sensitively."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.49",
+    "title": "CRM Sustaining Repeat Business",
+    "context": "Review CRM's role in sustaining repeat business through informed contact rather than isolated transactions. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use email newsletters to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "furniture manufacturers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use posted coupon mailings to maintain contact between purchase occasions among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — email newsletters within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "TRUE — email newsletters within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — posted coupon mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.50",
+    "title": "Ethical Handling of CRM Personal Data",
+    "context": "Analyze sensitive personal data handling as a prerequisite for ethical CRM in loyalty-driven businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "furniture manufacturers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use posted coupon mailings to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "furniture manufacturers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — posted coupon mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.51",
+    "title": "Orientation Starting Points in Marketing",
+    "context": "Review product versus market orientation as competing starting points within the same broader marketing framework. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at furniture manufacturers requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "CRM programmes may use posted coupon mailings to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to foster continuity rather than one-off sales among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "TRUE — posted coupon mailings within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "TRUE — posted coupon mailings within CRM can foster continuity rather than one-off sales when personal data is used sensitively."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.52",
+    "title": "Mailing Tailored Product Information",
+    "context": "Consider a dental practice that emails appointment reminders and oral-care product information to patients who joined its membership scheme. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use loyalty-card discount alerts to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — loyalty-card discount alerts within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can keep customers informed about relevant products when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.53",
+    "title": "Loyalty Mechanisms and Identifiable Data",
+    "context": "Review loyalty mechanisms through which customers exchange identifiable data for discounts and preferential offers. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use loyalty-card discount alerts to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — loyalty-card discount alerts within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "TRUE — loyalty-card discount alerts within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can encourage customers to return and buy again when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.54",
+    "title": "Personalised Promotions From Behaviour Data",
+    "context": "Analyze tailoring promotional content to personal preferences after collecting behavioural purchase data. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use personalised product-information emails to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "Loyalty programmes at furniture manufacturers preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use personalised product-information emails to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — personalised product-information emails within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "TRUE — personalised product-information emails within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can keep customers informed about relevant products when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.55",
+    "title": "Specifications Before Selling Plans",
+    "context": "Review the product-oriented sequence of defining specifications before considering how the offering will be sold. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use personalised product-information emails to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — personalised product-information emails within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "TRUE — personalised product-information emails within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "TRUE — registered-account promotional messages within CRM can encourage customers to return and buy again when personal data is used sensitively."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.56",
+    "title": "Customer Analysis Before Design Choices",
+    "context": "Consider a catering business that prioritises recipe refinement and portion consistency before surveying corporate clients about menu preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "furniture manufacturers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "CRM programmes may use registered-account promotional messages to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Market-oriented furniture manufacturers always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use registered-account promotional messages to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to support repeat purchasing behaviour among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "TRUE — registered-account promotional messages within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — registered-account promotional messages within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — registered-account promotional messages within CRM can support repeat purchasing behaviour when personal data is used sensitively."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.57",
+    "title": "Later Response by Product-Oriented Rivals",
+    "context": "Review competitive dynamics when product-oriented rivals respond later to shifts already anticipated by market-oriented firms. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "Product-oriented furniture manufacturers never rely on feature quality and depend only on coupons without strong offerings.",
+      "online grocery platforms using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "online grocery platforms practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "online grocery platforms with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — registered-account promotional messages within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.58",
+    "title": "Profitability Targets Across Orientations",
+    "context": "Analyze identical objective sets—such as profitability targets—across firms with different orientation starting points. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM at online grocery platforms requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "CRM programmes may use registered-account promotional messages to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "Loyalty programmes at online grocery platforms preserve complete customer anonymity while still delivering personalised coupons."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — registered-account promotional messages within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "TRUE — registered-account promotional messages within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — registered-account promotional messages within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.59",
+    "title": "Product and Competitor Orientation Factors",
+    "context": "Review orientation suitability judgments tied to product characteristics and competitive market structure. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "online grocery platforms cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "CRM programmes may use repeat-stay offer notifications to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Market-oriented online grocery platforms always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — registered-account promotional messages within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "TRUE — repeat-stay offer notifications within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "TRUE — repeat-stay offer notifications within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.60",
+    "title": "CRM Beyond Immediate Transactions",
+    "context": "Consider a travel agency that records family holiday preferences so it can propose tailored package deals when school vacations approach. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use repeat-stay offer notifications to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "Product-oriented online grocery platforms never rely on feature quality and depend only on coupons without strong offerings.",
+      "fitness studio operators using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use repeat-stay offer notifications to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — repeat-stay offer notifications within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — repeat-stay offer notifications within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — repeat-stay offer notifications within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.61",
+    "title": "Personal Data in Identifiable CRM Systems",
+    "context": "Review personal data sensitivity as an indispensable concern when CRM systems store identifiable customer information. Evaluate the following economic assertions:",
+    "statements": [
+      "fitness studio operators practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use repeat-stay offer notifications to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "fitness studio operators with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at fitness studio operators requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at fitness studio operators preserve complete customer anonymity while still delivering personalised coupons."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — repeat-stay offer notifications within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.62",
+    "title": "Account Registration for Loyalty Benefits",
+    "context": "Analyze customer willingness to register personal accounts when loyalty benefits offset reduced anonymity. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use repeat-stay offer notifications to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "fitness studio operators cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented fitness studio operators always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use repeat-stay offer notifications to foster continuity rather than one-off sales among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — repeat-stay offer notifications within CRM can build durable commercial relationships with buyers when personal data is used sensitively.",
+      "TRUE — repeat-stay offer notifications within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — repeat-stay offer notifications within CRM can foster continuity rather than one-off sales when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.63",
+    "title": "Behavioural Records for Offer Design",
+    "context": "Review behavioural data collection practices that support customised offers aligned with prior purchasing patterns. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use membership-scheme communications to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Product-oriented fitness studio operators never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use membership-scheme communications to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use membership-scheme communications to support repeat purchasing behaviour among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — membership-scheme communications within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "TRUE — membership-scheme communications within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — membership-scheme communications within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — membership-scheme communications within CRM can support repeat purchasing behaviour when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.64",
+    "title": "Internal Feature Priorities in Production",
+    "context": "Consider a fashion retailer that surveys changing style preferences each season before commissioning new garment lines from suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "corporate catering firms using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use membership-scheme communications to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "corporate catering firms practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "corporate catering firms with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — membership-scheme communications within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — membership-scheme communications within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.65",
+    "title": "External Requirements in Market Orientation",
+    "context": "Review market orientation focus on external customer requirements when shaping product and service bundles. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at corporate catering firms requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at corporate catering firms preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use membership-scheme communications to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "corporate catering firms cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented corporate catering firms always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "TRUE — membership-scheme communications within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.66",
+    "title": "Universal Market Expectation Attention",
+    "context": "Analyze the marketing assertion that markets and customer expectations should not be neglected by any orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented corporate catering firms never rely on feature quality and depend only on coupons without strong offerings.",
+      "independent bookshops using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "independent bookshops practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use membership-scheme communications to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "independent bookshops with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — membership-scheme communications within CRM can build durable commercial relationships with buyers when personal data is used sensitively.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.67",
+    "title": "Newsletter-Led Repeat Purchase Encouragement",
+    "context": "Review CRM-enabled repeat purchase encouragement through ongoing newsletters and targeted coupon distribution. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM at independent bookshops requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at independent bookshops preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use membership-scheme communications to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "independent bookshops cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — membership-scheme communications within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "TRUE — membership-scheme communications within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.68",
+    "title": "Sensitive Data Rules for Loyalty Programmes",
+    "context": "Consider a furniture workshop that invests in craftsmanship and material quality before researching whether buyers want modular or traditional designs. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use targeted coupon distributions to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — targeted coupon distributions within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can keep customers informed about relevant products when personal data is used sensitively."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.69",
+    "title": "Preference-Matched Promotional Targeting",
+    "context": "Review tailored offer logic when businesses match promotions to recorded individual customer preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use targeted coupon distributions to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "Market-oriented independent bookshops always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — targeted coupon distributions within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "TRUE — targeted coupon distributions within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.70",
+    "title": "Feature Superiority Beliefs in Product Orientation",
+    "context": "Analyze product-oriented belief that superior features reduce the need for extensive customer adaptation. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — seasonal reminder mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "TRUE — seasonal reminder mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — seasonal reminder mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.",
+      "TRUE — seasonal reminder mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — seasonal reminder mailings within CRM can keep customers informed about relevant products when personal data is used sensitively."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.71",
+    "title": "Evolving Needs and Offer Adjustment",
+    "context": "Review market-oriented practice of adjusting offerings when evidence shows evolving customer needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "Product-oriented independent bookshops never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use seasonal reminder mailings to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "vehicle service garages using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use seasonal reminder mailings to prompt additional visits through informed contact among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — seasonal reminder mailings within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — seasonal reminder mailings within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — seasonal reminder mailings within CRM can prompt additional visits through informed contact when personal data is used sensitively."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.72",
+    "title": "CRM Data for Customer Communication",
+    "context": "Consider a bookshop that analyses reading-category sales data before deciding which new titles to stock for the coming quarter. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "vehicle service garages practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use tailored upgrade suggestions to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to strengthen long-term customer relationships among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — seasonal reminder mailings within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — tailored upgrade suggestions within CRM can encourage customers to return and buy again when personal data is used sensitively.",
+      "TRUE — tailored upgrade suggestions within CRM can maintain contact between purchase occasions when personal data is used sensitively.",
+      "TRUE — tailored upgrade suggestions within CRM can strengthen long-term customer relationships when personal data is used sensitively."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.73",
+    "title": "Identification for Discount Access",
+    "context": "Review personal data trade-offs where customers accept identification for discounts and special promotional access. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use tailored upgrade suggestions to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "vehicle service garages with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at vehicle service garages requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — tailored upgrade suggestions within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "TRUE — tailored upgrade suggestions within CRM can keep customers informed about relevant products when personal data is used sensitively.",
+      "TRUE — tailored upgrade suggestions within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.",
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.74",
+    "title": "Buying Patterns in Marketing Tailoring",
+    "context": "Analyze buying-behaviour records as a basis for personalised marketing communication and offer design. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at vehicle service garages preserve complete customer anonymity while still delivering personalised coupons.",
+      "vehicle service garages cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented vehicle service garages always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use tailored upgrade suggestions to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "Product-oriented vehicle service garages never rely on feature quality and depend only on coupons without strong offerings."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — tailored upgrade suggestions within CRM can sustain engagement beyond single transactions when personal data is used sensitively.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.75",
+    "title": "Decades of Orientation Movement",
+    "context": "Review decades-long business movement from specification-led product orientation towards needs-led market orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use tailored upgrade suggestions to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "cosmetics producers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "cosmetics producers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "cosmetics producers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — tailored upgrade suggestions within CRM can build durable commercial relationships with buyers when personal data is used sensitively.",
+      "TRUE — tailored upgrade suggestions within CRM can prompt additional visits through informed contact when personal data is used sensitively.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.76",
+    "title": "Contingent Rather Than Universal Orientation",
+    "context": "Consider a consumer electronics manufacturer that engineers advanced specifications first and only later designs promotional campaigns around those technical features. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use tailored upgrade suggestions to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "In hospitality markets, a business that prioritises a software firm releasing features only after internal testing illustrates product orientation starting from internal specifications.",
+      "When market research showed declining demand for the planned upgrade in hospitality, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in hospitality showing repeat purchases can help a market-oriented firm tailor follow-up offers after market research showed declining demand for the planned upgrade.",
+      "CRM at cosmetics producers requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — tailored upgrade suggestions within CRM can foster continuity rather than one-off sales when personal data is used sensitively.",
+      "TRUE — Product orientation in hospitality begins with internal product focus rather than leading with market research showed declining demand for the planned upgrade.",
+      "TRUE — Market orientation in hospitality supports earlier adaptation when customer signals such as market research showed declining demand for the planned upgrade emerge.",
+      "TRUE — CRM in hospitality supports tailored follow-up when firms respond to signals like market research showed declining demand for the planned upgrade.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.77",
+    "title": "CRM Contrast With Short-Term Selling",
+    "context": "Review CRM relationship-building contrasted with short-term selling that ignores stored customer histories. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at cosmetics producers preserve complete customer anonymity while still delivering personalised coupons.",
+      "cosmetics producers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Customers in hospitality who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after market research showed declining demand for the planned upgrade.",
+      "Market-oriented cosmetics producers always respond later to changing wants because they wait for finished specifications.",
+      "Product-oriented cosmetics producers never rely on feature quality and depend only on coupons without strong offerings."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "TRUE — Loyalty registration in hospitality can trade some anonymity for tailored communication following market signals.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.78",
+    "title": "Sensitive Personal Data in CRM Programmes",
+    "context": "Analyze indispensable sensitive handling of personal data within modern customer relationship programmes. Evaluate the following economic assertions:",
+    "statements": [
+      "travel agencies using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "In retail fashion markets, a business that prioritises a bakery emphasising recipe quality before surveying breakfast preferences illustrates product orientation starting from internal specifications.",
+      "When customer feedback revealed preference for smaller portion sizes in retail fashion, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "travel agencies practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "travel agencies with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.",
+      "TRUE — Product orientation in retail fashion begins with internal product focus rather than leading with customer feedback revealed preference for smaller portion sizes.",
+      "TRUE — Market orientation in retail fashion supports earlier adaptation when customer signals such as customer feedback revealed preference for smaller portion sizes emerge.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "FALSE — Identical objectives can coexist with different orientation starting points."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.79",
+    "title": "Side-by-Side Orientation Comparison",
+    "context": "Review product and market orientation side by side on focus, selling philosophy, and customer engagement. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM data in retail fashion showing repeat purchases can help a market-oriented firm tailor follow-up offers after customer feedback revealed preference for smaller portion sizes.",
+      "Customers in retail fashion who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after customer feedback revealed preference for smaller portion sizes.",
+      "CRM at travel agencies requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at travel agencies preserve complete customer anonymity while still delivering personalised coupons.",
+      "travel agencies cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — CRM in retail fashion supports tailored follow-up when firms respond to signals like customer feedback revealed preference for smaller portion sizes.",
+      "TRUE — Loyalty registration in retail fashion can trade some anonymity for tailored communication following market signals.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.80",
+    "title": "Timing Edge for Market-Oriented Firms",
+    "context": "Consider a software firm that stores customer account histories to email personalised upgrade suggestions and loyalty coupons. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented travel agencies always respond later to changing wants because they wait for finished specifications.",
+      "In business software markets, a business that prioritises a clothing retailer stocking designs buyers did not request illustrates product orientation starting from internal specifications.",
+      "Product-oriented travel agencies never rely on feature quality and depend only on coupons without strong offerings.",
+      "When trend analysis indicated shifting colour preferences among shoppers in business software, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "artisan bakeries using product orientation must first analyse every customer's needs before engineering any product specifications."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — Product orientation in business software begins with internal product focus rather than leading with trend analysis indicated shifting colour preferences among shoppers.",
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — Market orientation in business software supports earlier adaptation when customer signals such as trend analysis indicated shifting colour preferences among shoppers emerge.",
+      "FALSE — Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.81",
+    "title": "Loyalty Price Advantages and Privacy",
+    "context": "Review loyalty-card programmes as voluntary exchanges of anonymity for tangible customer price advantages. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM data in business software showing repeat purchases can help a market-oriented firm tailor follow-up offers after trend analysis indicated shifting colour preferences among shoppers.",
+      "Customers in business software who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after trend analysis indicated shifting colour preferences among shoppers.",
+      "In consumer electronics markets, a business that prioritises an electronics supplier prioritising engineering specifications illustrates product orientation starting from internal specifications.",
+      "artisan bakeries practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "When client surveys highlighted compatibility concerns with existing systems in consumer electronics, a market-oriented rival may adapt its offer sooner than a specification-led competitor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — CRM in business software supports tailored follow-up when firms respond to signals like trend analysis indicated shifting colour preferences among shoppers.",
+      "TRUE — Loyalty registration in business software can trade some anonymity for tailored communication following market signals.",
+      "TRUE — Product orientation in consumer electronics begins with internal product focus rather than leading with client surveys highlighted compatibility concerns with existing systems.",
+      "FALSE — Markets and customer expectations should not be neglected even with strong features.",
+      "TRUE — Market orientation in consumer electronics supports earlier adaptation when customer signals such as client surveys highlighted compatibility concerns with existing systems emerge."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.82",
+    "title": "CRM Tailoring From Behavioural Data",
+    "context": "Analyze CRM-supported tailoring of offers using collected data on customers and their buying behaviours. Evaluate the following economic assertions:",
+    "statements": [
+      "artisan bakeries with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM data in consumer electronics showing repeat purchases can help a market-oriented firm tailor follow-up offers after client surveys highlighted compatibility concerns with existing systems.",
+      "Customers in consumer electronics who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after client surveys highlighted compatibility concerns with existing systems.",
+      "CRM at artisan bakeries requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "In food service markets, a business that prioritises a hotel chain renovating rooms before guest satisfaction reviews illustrates product orientation starting from internal specifications."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Identical objectives can coexist with different orientation starting points.",
+      "TRUE — CRM in consumer electronics supports tailored follow-up when firms respond to signals like client surveys highlighted compatibility concerns with existing systems.",
+      "TRUE — Loyalty registration in consumer electronics can trade some anonymity for tailored communication following market signals.",
+      "FALSE — CRM retains data to mail or email newsletters, coupons, and product information for repeat business.",
+      "TRUE — Product orientation in food service begins with internal product focus rather than leading with guest feedback identified noise reduction as the top priority."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.83",
+    "title": "Specification Work Before Promotion",
+    "context": "Review product-oriented sequencing that prioritises internal specification work before promotional planning begins. Evaluate the following economic assertions:",
+    "statements": [
+      "When guest feedback identified noise reduction as the top priority in food service, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "Loyalty programmes at artisan bakeries preserve complete customer anonymity while still delivering personalised coupons.",
+      "artisan bakeries cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented artisan bakeries always respond later to changing wants because they wait for finished specifications.",
+      "CRM data in food service showing repeat purchases can help a market-oriented firm tailor follow-up offers after guest feedback identified noise reduction as the top priority."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market orientation in food service supports earlier adaptation when customer signals such as guest feedback identified noise reduction as the top priority emerge.",
+      "FALSE — Customers often willingly give up anonymity through loyalty cards and accounts for discounts.",
+      "FALSE — Businesses collect behavioural data to tailor offers to personal preferences.",
+      "FALSE — Market-oriented firms anticipate and respond earlier than product-oriented competitors.",
+      "TRUE — CRM in food service supports tailored follow-up when firms respond to signals like guest feedback identified noise reduction as the top priority."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.84",
+    "title": "Needs-Led Workflow Sequencing",
+    "context": "Consider an online grocer that tracks purchase histories so it can recommend items aligned with each shopper's dietary preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented artisan bakeries never rely on feature quality and depend only on coupons without strong offerings.",
+      "Customers in food service who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after guest feedback identified noise reduction as the top priority.",
+      "In financial services markets, a business that prioritises a cosmetics brand launching fragrances without focus-group input illustrates product orientation starting from internal specifications.",
+      "When consumer panels favoured lighter scents than the laboratory prototype in financial services, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in financial services showing repeat purchases can help a market-oriented firm tailor follow-up offers after consumer panels favoured lighter scents than the laboratory prototype."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Product orientation mainly relies on the quality of product features for market success.",
+      "TRUE — Loyalty registration in food service can trade some anonymity for tailored communication following market signals.",
+      "TRUE — Product orientation in financial services begins with internal product focus rather than leading with consumer panels favoured lighter scents than the laboratory prototype.",
+      "TRUE — Market orientation in financial services supports earlier adaptation when customer signals such as consumer panels favoured lighter scents than the laboratory prototype emerge.",
+      "TRUE — CRM in financial services supports tailored follow-up when firms respond to signals like consumer panels favoured lighter scents than the laboratory prototype."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.85",
+    "title": "Strong Products and Market Attention",
+    "context": "Review the principle that strong products alone cannot justify ignoring evolving market and customer expectations. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers in financial services who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after consumer panels favoured lighter scents than the laboratory prototype.",
+      "In healthcare supplies markets, a business that prioritises a furniture maker refining wood finishes internally illustrates product orientation starting from internal specifications.",
+      "When showroom visitors requested modular storage configurations in healthcare supplies, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in healthcare supplies showing repeat purchases can help a market-oriented firm tailor follow-up offers after showroom visitors requested modular storage configurations.",
+      "Customers in healthcare supplies who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after showroom visitors requested modular storage configurations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Loyalty registration in financial services can trade some anonymity for tailored communication following market signals.",
+      "TRUE — Product orientation in healthcare supplies begins with internal product focus rather than leading with showroom visitors requested modular storage configurations.",
+      "TRUE — Market orientation in healthcare supplies supports earlier adaptation when customer signals such as showroom visitors requested modular storage configurations emerge.",
+      "TRUE — CRM in healthcare supplies supports tailored follow-up when firms respond to signals like showroom visitors requested modular storage configurations.",
+      "TRUE — Loyalty registration in healthcare supplies can trade some anonymity for tailored communication following market signals."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.86",
+    "title": "CRM Newsletters Coupons and Communication",
+    "context": "Analyze long-term CRM relationship goals supported by newsletters, coupons, and informed product communication. Evaluate the following economic assertions:",
+    "statements": [
+      "In home improvement markets, a business that prioritises a streaming service adding channels engineers preferred illustrates product orientation starting from internal specifications.",
+      "When viewing data showed stronger interest in documentary content in home improvement, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in home improvement showing repeat purchases can help a market-oriented firm tailor follow-up offers after viewing data showed stronger interest in documentary content.",
+      "Customers in home improvement who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after viewing data showed stronger interest in documentary content.",
+      "In automotive after-sales markets, a business that prioritises a car-hire firm expanding fleet specifications illustrates product orientation starting from internal specifications."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation in home improvement begins with internal product focus rather than leading with viewing data showed stronger interest in documentary content.",
+      "TRUE — Market orientation in home improvement supports earlier adaptation when customer signals such as viewing data showed stronger interest in documentary content emerge.",
+      "TRUE — CRM in home improvement supports tailored follow-up when firms respond to signals like viewing data showed stronger interest in documentary content.",
+      "TRUE — Loyalty registration in home improvement can trade some anonymity for tailored communication following market signals.",
+      "TRUE — Product orientation in automotive after-sales begins with internal product focus rather than leading with corporate clients requested more fuel-efficient compact vehicles."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.87",
+    "title": "Detailed Profiles and Data Sensitivity",
+    "context": "Review personal data sensitivity obligations when businesses maintain detailed identifiable customer profiles. Evaluate the following economic assertions:",
+    "statements": [
+      "Managers at consumer electronics retailers may reverses orientation sequencing if orientation and CRM principles are misunderstood.",
+      "When corporate clients requested more fuel-efficient compact vehicles in automotive after-sales, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "A common misconception at consumer electronics retailers is that firms reverses orientation sequencing when balancing product focus with customer data use.",
+      "Managers at consumer electronics retailers may confuses CRM with one-off selling if orientation and CRM principles are misunderstood.",
+      "CRM data in automotive after-sales showing repeat purchases can help a market-oriented firm tailor follow-up offers after corporate clients requested more fuel-efficient compact vehicles."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Orientation sequencing differs: product-first versus needs-first. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "TRUE — Market orientation in automotive after-sales supports earlier adaptation when customer signals such as corporate clients requested more fuel-efficient compact vehicles emerge.",
+      "FALSE — Orientation sequencing differs: product-first versus needs-first. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "FALSE — CRM builds long-term relationships rather than isolated transactions. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "TRUE — CRM in automotive after-sales supports tailored follow-up when firms respond to signals like corporate clients requested more fuel-efficient compact vehicles."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.88",
+    "title": "Product Orientation Misclassification Traps",
+    "context": "Consider a vehicle repair garage that emails service reminders and seasonal maintenance coupons to motorists registered on its customer database. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers in automotive after-sales who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after corporate clients requested more fuel-efficient compact vehicles.",
+      "A common misconception at consumer electronics retailers is that firms confuses CRM with one-off selling when balancing product focus with customer data use.",
+      "In education technology markets, a business that prioritises a training provider designing courses around instructor expertise illustrates product orientation starting from internal specifications.",
+      "When employer interviews showed demand for shorter certification modules in education technology, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "Managers at consumer electronics retailers may denies data retention in CRM if orientation and CRM principles are misunderstood."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Loyalty registration in automotive after-sales can trade some anonymity for tailored communication following market signals.",
+      "FALSE — CRM builds long-term relationships rather than isolated transactions. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "TRUE — Product orientation in education technology begins with internal product focus rather than leading with employer interviews showed demand for shorter certification modules.",
+      "TRUE — Market orientation in education technology supports earlier adaptation when customer signals such as employer interviews showed demand for shorter certification modules emerge.",
+      "FALSE — CRM retains customer data for ongoing newsletters and coupons. The error would misapply orientation or CRM concepts at consumer electronics retailers."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.89",
+    "title": "Market Orientation Misclassification Traps",
+    "context": "Analyze the contrast between focusing on product features and focusing on customers' needs and wants in marketing orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "A common misconception at consumer electronics retailers is that firms denies data retention in CRM when balancing product focus with customer data use.",
+      "Managers at consumer electronics retailers may claims anonymity is preserved in loyalty schemes if orientation and CRM principles are misunderstood.",
+      "CRM data in education technology showing repeat purchases can help a market-oriented firm tailor follow-up offers after employer interviews showed demand for shorter certification modules.",
+      "Customers in education technology who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after employer interviews showed demand for shorter certification modules.",
+      "Managers at consumer electronics retailers may treats orientation objectives as always different if orientation and CRM principles are misunderstood."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains customer data for ongoing newsletters and coupons. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "FALSE — Loyalty cards and accounts often involve willing anonymity surrender. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "TRUE — CRM in education technology supports tailored follow-up when firms respond to signals like employer interviews showed demand for shorter certification modules.",
+      "TRUE — Loyalty registration in education technology can trade some anonymity for tailored communication following market signals.",
+      "FALSE — Objectives may be identical across orientations. The error would misapply orientation or CRM concepts at consumer electronics retailers."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.90",
+    "title": "CRM Purpose and Data Retention",
+    "context": "Review why many businesses have moved from product orientation towards a market-oriented approach over recent decades. Evaluate the following economic assertions:",
+    "statements": [
+      "In leisure travel markets, a business that prioritises a beverage company reformulating packaging before taste tests illustrates product orientation starting from internal specifications.",
+      "When blind tastings favoured a less sweet recipe than planned in leisure travel, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in leisure travel showing repeat purchases can help a market-oriented firm tailor follow-up offers after blind tastings favoured a less sweet recipe than planned.",
+      "A common misconception at consumer electronics retailers is that firms treats orientation objectives as always different when balancing product focus with customer data use.",
+      "Customers in leisure travel who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after blind tastings favoured a less sweet recipe than planned."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation in leisure travel begins with internal product focus rather than leading with blind tastings favoured a less sweet recipe than planned.",
+      "TRUE — Market orientation in leisure travel supports earlier adaptation when customer signals such as blind tastings favoured a less sweet recipe than planned emerge.",
+      "TRUE — CRM in leisure travel supports tailored follow-up when firms respond to signals like blind tastings favoured a less sweet recipe than planned.",
+      "FALSE — Objectives may be identical across orientations. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "TRUE — Loyalty registration in leisure travel can trade some anonymity for tailored communication following market signals."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.91",
+    "title": "Loyalty Programme Privacy Trade-Offs",
+    "context": "Analyze how a product-oriented business mainly relies on the quality of product features to succeed in the market. Evaluate the following economic assertions:",
+    "statements": [
+      "In specialty cosmetics markets, a business that prioritises a garden-centre chain ordering stock from supplier catalogues illustrates product orientation starting from internal specifications.",
+      "Managers at consumer electronics retailers may ignores market expectation relevance if orientation and CRM principles are misunderstood.",
+      "When local buyers asked for more drought-resistant plant varieties in specialty cosmetics, a market-oriented rival may adapt its offer sooner than a specification-led competitor.",
+      "CRM data in specialty cosmetics showing repeat purchases can help a market-oriented firm tailor follow-up offers after local buyers asked for more drought-resistant plant varieties.",
+      "Customers in specialty cosmetics who register for loyalty benefits may accept reduced anonymity in exchange for personalised offers after local buyers asked for more drought-resistant plant varieties."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation in specialty cosmetics begins with internal product focus rather than leading with local buyers asked for more drought-resistant plant varieties.",
+      "FALSE — Customer and market expectations should not be neglected. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "TRUE — Market orientation in specialty cosmetics supports earlier adaptation when customer signals such as local buyers asked for more drought-resistant plant varieties emerge.",
+      "TRUE — CRM in specialty cosmetics supports tailored follow-up when firms respond to signals like local buyers asked for more drought-resistant plant varieties.",
+      "TRUE — Loyalty registration in specialty cosmetics can trade some anonymity for tailored communication following market signals."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.92",
+    "title": "Orientation Focus Distinctions Review",
+    "context": "Consider a regional supermarket chain that analyses household shopping patterns before adjusting product ranges and weekly promotional offers. Evaluate the following economic assertions:",
+    "statements": [
+      "In product orientation, managers emphasise the laboratory formulation and feature set before they develop detailed plans for selling the finished offering.",
+      "Product-oriented planning treats laboratory formulation and feature set as the primary basis for believing the offering will succeed commercially.",
+      "A common misconception at consumer electronics retailers is that firms ignores market expectation relevance when balancing product focus with customer data use.",
+      "A product-oriented team may refine the craftsmanship embedded in the product extensively before surveying whether buyers value those priorities.",
+      "Managers at consumer electronics retailers may mislabels product orientation as needs-first if orientation and CRM principles are misunderstood."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Product orientation places laboratory formulation and feature set ahead of selling strategy in the development sequence.",
+      "TRUE — Commercial confidence in product orientation rests heavily on laboratory formulation and feature set.",
+      "FALSE — Customer and market expectations should not be neglected. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "TRUE — Specification-led work on craftsmanship embedded in the product precedes market validation in product orientation.",
+      "FALSE — Product orientation focuses on product and specifications first. The error would misapply orientation or CRM concepts at consumer electronics retailers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.93",
+    "title": "Customer Wants and Competitive Response",
+    "context": "Analyze how product-oriented and market-oriented firms may pursue identical marketing objectives yet follow different strategic paths. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented planning treats craftsmanship embedded in the product as the primary basis for believing the offering will succeed commercially.",
+      "A common misconception at consumer electronics retailers is that firms mislabels product orientation as needs-first when balancing product focus with customer data use.",
+      "In product orientation, managers emphasise the engineering performance metrics before they develop detailed plans for selling the finished offering.",
+      "A product-oriented team may refine the engineering performance metrics extensively before surveying whether buyers value those priorities.",
+      "Managers at consumer electronics retailers may mislabels market orientation as specification-first if orientation and CRM principles are misunderstood."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Commercial confidence in product orientation rests heavily on craftsmanship embedded in the product.",
+      "FALSE — Product orientation focuses on product and specifications first. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "TRUE — Product orientation places engineering performance metrics ahead of selling strategy in the development sequence.",
+      "TRUE — Specification-led work on engineering performance metrics precedes market validation in product orientation.",
+      "FALSE — Market orientation analyses needs before tailoring products. The error would misapply orientation or CRM concepts at consumer electronics retailers."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.94",
+    "title": "Repeat Purchase CRM Mechanics",
+    "context": "Review Figure 10 comparing product orientation with market orientation on focus, selling logic, and customer emphasis. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented planning treats engineering performance metrics as the primary basis for believing the offering will succeed commercially.",
+      "In product orientation, managers emphasise the material quality and build standards before they develop detailed plans for selling the finished offering.",
+      "A product-oriented team may refine the material quality and build standards extensively before surveying whether buyers value those priorities.",
+      "Product-oriented planning treats material quality and build standards as the primary basis for believing the offering will succeed commercially.",
+      "In product orientation, managers emphasise the product design conceived internally before they develop detailed plans for selling the finished offering."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Commercial confidence in product orientation rests heavily on engineering performance metrics.",
+      "TRUE — Product orientation places material quality and build standards ahead of selling strategy in the development sequence.",
+      "TRUE — Specification-led work on material quality and build standards precedes market validation in product orientation.",
+      "TRUE — Commercial confidence in product orientation rests heavily on material quality and build standards.",
+      "TRUE — Product orientation places product design conceived internally ahead of selling strategy in the development sequence."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.95",
+    "title": "Personal Data Indispensable Sensitivity",
+    "context": "Analyze why suitability of product versus market orientation depends on the product itself and the number of competitors. Evaluate the following economic assertions:",
+    "statements": [
+      "A common misconception at consumer electronics retailers is that firms mislabels market orientation as specification-first when balancing product focus with customer data use.",
+      "A product-oriented team may refine the product design conceived internally extensively before surveying whether buyers value those priorities.",
+      "Managers at consumer electronics retailers may denies sensitive data importance if orientation and CRM principles are misunderstood.",
+      "Managers at consumer electronics retailers may claims tailoring without behavioural data if orientation and CRM principles are misunderstood.",
+      "A common misconception at consumer electronics retailers is that firms claims tailoring without behavioural data when balancing product focus with customer data use."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Market orientation analyses needs before tailoring products. This misconception misstates orientation or CRM practice at consumer electronics retailers.",
+      "TRUE — Specification-led work on product design conceived internally precedes market validation in product orientation.",
+      "FALSE — Sensitive use of personal data is indispensable. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "FALSE — Businesses collect buying-behaviour data to tailor offers. The error would misapply orientation or CRM concepts at consumer electronics retailers.",
+      "FALSE — Businesses collect buying-behaviour data to tailor offers. This misconception misstates orientation or CRM practice at consumer electronics retailers."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.96",
+    "title": "Tailored Offers From Stored Records",
+    "context": "Consider a hotel group that registers guest preferences through loyalty cards in order to tailor room offers and repeat-stay discounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Managers at regional supermarket chains may reverses orientation sequencing if orientation and CRM principles are misunderstood.",
+      "Product-oriented planning treats product design conceived internally as the primary basis for believing the offering will succeed commercially.",
+      "A common misconception at regional supermarket chains is that firms reverses orientation sequencing when balancing product focus with customer data use.",
+      "In product orientation, managers emphasise the feature improvements developed in-house before they develop detailed plans for selling the finished offering.",
+      "A product-oriented team may refine the feature improvements developed in-house extensively before surveying whether buyers value those priorities."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Orientation sequencing differs: product-first versus needs-first. The error would misapply orientation or CRM concepts at regional supermarket chains.",
+      "TRUE — Commercial confidence in product orientation rests heavily on product design conceived internally.",
+      "FALSE — Orientation sequencing differs: product-first versus needs-first. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "TRUE — Product orientation places feature improvements developed in-house ahead of selling strategy in the development sequence.",
+      "TRUE — Specification-led work on feature improvements developed in-house precedes market validation in product orientation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.97",
+    "title": "Product-Led Versus Needs-Led Sequencing",
+    "context": "Analyze customer relationship management as a practice aimed at creating long-term relationships with customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented planning treats feature improvements developed in-house as the primary basis for believing the offering will succeed commercially.",
+      "Managers at regional supermarket chains may confuses CRM with one-off selling if orientation and CRM principles are misunderstood.",
+      "A common misconception at regional supermarket chains is that firms confuses CRM with one-off selling when balancing product focus with customer data use.",
+      "Managers at regional supermarket chains may denies data retention in CRM if orientation and CRM principles are misunderstood.",
+      "A market-oriented business tailors its offering after examining shifting customer preferences rather than assuming internal preferences suffice."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Commercial confidence in product orientation rests heavily on feature improvements developed in-house.",
+      "FALSE — CRM builds long-term relationships rather than isolated transactions. The error would misapply orientation or CRM concepts at regional supermarket chains.",
+      "FALSE — CRM builds long-term relationships rather than isolated transactions. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "FALSE — CRM retains customer data for ongoing newsletters and coupons. The error would misapply orientation or CRM concepts at regional supermarket chains.",
+      "TRUE — Tailoring follows examination of shifting customer preferences in market-oriented development."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.98",
+    "title": "Market Expectations Neglect Warning",
+    "context": "Review how CRM systems retain customer data to mail or email newsletters, coupons, and product information. Evaluate the following economic assertions:",
+    "statements": [
+      "A common misconception at regional supermarket chains is that firms denies data retention in CRM when balancing product focus with customer data use.",
+      "For business software packages supplied in consumer electronics markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A consumer electronics supplier of business software packages may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when business software packages quality is high in consumer electronics, markets and customer expectations should not be neglected by the supplier.",
+      "Even when dental care services quality is high in financial services, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — CRM retains customer data for ongoing newsletters and coupons. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "TRUE — Orientation suitability for business software packages in consumer electronics hinges on product traits and competitor numbers.",
+      "TRUE — Identical objectives can coexist with different orientations in consumer electronics business software packages markets.",
+      "TRUE — Strong business software packages features in consumer electronics do not justify ignoring market and customer expectations.",
+      "TRUE — Strong dental care services features in financial services do not justify ignoring market and customer expectations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.99",
+    "title": "CRM Long-Term Relationship Framework",
+    "context": "Analyze why sensitive use of personal customer data has become indispensable in modern marketing practice. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use posted coupon mailings to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "Managers at regional supermarket chains may claims anonymity is preserved in loyalty schemes if orientation and CRM principles are misunderstood.",
+      "A common misconception at regional supermarket chains is that firms claims anonymity is preserved in loyalty schemes when balancing product focus with customer data use.",
+      "CRM programmes may use repeat-stay offer notifications to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "Managers at regional supermarket chains may treats orientation objectives as always different if orientation and CRM principles are misunderstood."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — posted coupon mailings within CRM can build durable commercial relationships with buyers when personal data is used sensitively.",
+      "FALSE — Loyalty cards and accounts often involve willing anonymity surrender. The error would misapply orientation or CRM concepts at regional supermarket chains.",
+      "FALSE — Loyalty cards and accounts often involve willing anonymity surrender. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "TRUE — repeat-stay offer notifications within CRM can support repeat purchasing behaviour when personal data is used sensitively.",
+      "FALSE — Objectives may be identical across orientations. The error would misapply orientation or CRM concepts at regional supermarket chains."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.100",
+    "title": "Sensitive CRM Data Handling Standards",
+    "context": "Consider a fitness studio that offers members discounted classes after recording attendance patterns through personal accounts on its booking platform. Evaluate the following economic assertions:",
+    "statements": [
+      "A common misconception at regional supermarket chains is that firms treats orientation objectives as always different when balancing product focus with customer data use.",
+      "Managers at regional supermarket chains may ignores market expectation relevance if orientation and CRM principles are misunderstood.",
+      "CRM programmes may use targeted coupon distributions to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "A common misconception at regional supermarket chains is that firms ignores market expectation relevance when balancing product focus with customer data use.",
+      "In product orientation, managers emphasise the craftsmanship embedded in the product before they develop detailed plans for selling the finished offering."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Objectives may be identical across orientations. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "FALSE — Customer and market expectations should not be neglected. The error would misapply orientation or CRM concepts at regional supermarket chains.",
+      "TRUE — targeted coupon distributions within CRM can build durable commercial relationships with buyers when personal data is used sensitively.",
+      "FALSE — Customer and market expectations should not be neglected. This misconception misstates orientation or CRM practice at regional supermarket chains.",
+      "TRUE — Product orientation places craftsmanship embedded in the product ahead of selling strategy in the development sequence."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,1452 @@
+[
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.01",
+    "title": "Matching Finance Term to Asset Life",
+    "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditures on assets used over many years should normally be matched with long-term finance.",
+      "The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored.",
+      "Interest is the sole cost element businesses must consider when comparing loans with share issues.",
+      "High gearing automatically disqualifies a firm from using any form of short-term trade credit for materials.",
+      "Capital expenditure on a warehouse extension should be funded from weekly supplier credit without regard to asset life."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-lived asset spending calls for long-term finance so repayment timing aligns with the period of use.",
+      "FALSE — Cost matters, but intended use and current gearing also shape the appropriate choice.",
+      "FALSE — Share and bond issues carry administration costs that must be weighed against borrowing.",
+      "FALSE — High gearing complicates further borrowing but does not ban routine short-term credit for revenue spending.",
+      "FALSE — Long-lived assets require long-term finance; short-term supplier credit mismatches repayment to asset life."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.02",
+    "title": "Administration Costs in Finance Comparison",
+    "context": "Analyze the role of costs—including interest and issuance expenses—in selecting an appropriate source of finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue expenditures on production inputs should always be matched with a twenty-year mortgage loan.",
+      "Administration costs of issuing bonds are irrelevant when comparing finance sources for any project.",
+      "Revenue expenditures such as buying materials for current production can safely be financed by short-term sources.",
+      "A business never needs to consider its current gearing when choosing how to pay for weekly raw materials.",
+      "Revenue expenditure on materials consumed in current production must be financed exclusively through share issues."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Long-term debt would mismatch repayment to the brief consumption period of materials.",
+      "FALSE — Bond issuance costs are part of the cost criterion in finance selection.",
+      "TRUE — Short-cycle materials need short-term credit such as overdrafts or trade credit.",
+      "FALSE — Gearing affects overall finance strategy even when short-term credit suits revenue spending.",
+      "FALSE — Materials for current production suit short-term sources, not equity issues for long-lived capital."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.03",
+    "title": "Revenue Spending and Short-Term Credit",
+    "context": "Review how capital expenditures on long-lived assets should be matched with the term of finance chosen. Evaluate the following economic assertions:",
+    "statements": [
+      "A highly geared business will always obtain new loans at the same interest rate as a low-debt rival.",
+      "Intended use of funds is unrelated to whether finance should be short-term or long-term.",
+      "The absolute interest rate is the only criterion when choosing finance, so matching term to asset life is unnecessary.",
+      "A highly geared business may struggle to raise further credit except at higher interest rates and/or against additional collateral.",
+      "High gearing means a firm should ignore issuance administration costs when comparing share finance with bonds."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Lenders often charge higher interest or demand collateral when loan capital is already high.",
+      "FALSE — Intended use is a core criterion linking expenditure type to finance maturity.",
+      "FALSE — Intended use and gearing also matter; interest alone does not govern finance choice.",
+      "TRUE — High gearing makes lenders cautious and often raises the price or collateral demand of new debt.",
+      "FALSE — Administration costs for shares and bonds remain part of the cost criterion regardless of gearing."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.04",
+    "title": "Capital Expenditure and Long-Term Funding",
+    "context": "Analyze how revenue expenditures on materials and other short-cycle inputs relate to short-term finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "When loan capital is already high, internal funds or new equity investors can reduce insolvency risk relative to taking another large loan.",
+      "Only the intended use of funds counts as a cost when choosing between overdraft and trade credit.",
+      "A highly geared business can ignore its financial situation if the interest rate on a new loan appears low.",
+      "Administration costs incurred when issuing shares or bonds form part of the cost comparison among finance sources.",
+      "Capital expenditure on a ten-year production line should be funded from a thirty-day trade credit facility alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Retained earnings or investors avoid adding further mandatory repayment obligations.",
+      "FALSE — Intended use is a separate criterion from cost; both matter alongside financial position.",
+      "FALSE — Low quoted interest does not override high gearing and repayment risk in finance choice.",
+      "TRUE — Issuance expenses belong to the cost criterion alongside interest on loans and credit.",
+      "FALSE — Long-lived capital projects need long-term finance, not brief supplier credit."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.05",
+    "title": "Three Criteria for Finance Choice",
+    "context": "Consider a neighbourhood bakery that needs new ovens lasting many years while also buying flour and sugar for weekly production cycles. Evaluate the following economic assertions:",
+    "statements": [
+      "When several sources of finance are available, a business will most probably weigh costs, intended use, and current financial situation.",
+      "Equity finance carries no cost element because issuing shares never involves administration expenses.",
+      "Capital expenditure on equipment with a long useful life should be matched with long-term finance.",
+      "A business already carrying a high proportion of loan capital may have difficulties obtaining more credit from lenders.",
+      "Lenders may offer further funds to a highly geared business only at a higher interest rate and/or if collateral can be provided."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost, use, and financial position are the main decision criteria in the chapter framework.",
+      "FALSE — Share issuance incurs administration costs that must be weighed against loans.",
+      "TRUE — Multi-year assets call for finance whose maturity aligns with years of service.",
+      "TRUE — Heavy existing debt makes lenders cautious about extending additional credit.",
+      "TRUE — Stricter pricing or collateral often accompanies new loans to highly geared borrowers."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.06",
+    "title": "High Gearing and Credit Access",
+    "context": "Analyze why a business with a high proportion of loan capital may prefer internal funds or investors over additional debt. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure and revenue expenditure both require identical long-term mortgage funding regardless of use.",
+      "Such a business should rather try to use internal sources of finance and/or find investors willing to provide funds.",
+      "Because loans must be repaid, a high proportion of loan capital can increase the risk of insolvency.",
+      "Costs of finance include interest payments on loans and credit as well as administration costs for issuing shares or bonds.",
+      "Financial funds used for capital expenditures on long-lived assets require long-term sources of finance."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Expenditure type determines appropriate finance maturity; they are not interchangeable.",
+      "TRUE — Retained earnings or investor funds avoid adding further mandatory repayment obligations.",
+      "TRUE — Repayment pressure on existing and new loans raises insolvency risk when debt is already high.",
+      "TRUE — The cost criterion covers both interest and issuance-related administration expenses.",
+      "TRUE — Asset purchases with extended useful lives call for comparably long finance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.07",
+    "title": "Cost Criterion in Finance Selection",
+    "context": "Review how administration costs of issuing shares or bonds enter the cost comparison among finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Matching long-term finance to capital expenditure spreads repayment over the years the asset generates benefits.",
+      "A high geared business may obtain further credit only if it can offer collateral acceptable to lenders.",
+      "Investors or business partners may supply funds when additional loans would worsen insolvency risk.",
+      "Interest on loans and credit is excluded from the cost criterion when comparing finance sources.",
+      "Funding a new factory building exclusively through supplier credit for raw materials matches finance maturity correctly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Aligning maturity to asset life reduces cash-flow strain from premature principal repayment.",
+      "TRUE — Collateral often becomes a condition for new credit when existing loan capital is substantial.",
+      "TRUE — Equity-type injections reduce reliance on repayable debt when gearing is already elevated.",
+      "FALSE — Interest on loans and credit is explicitly part of the cost criterion.",
+      "FALSE — Factory construction is capital expenditure needing long-term finance, not material trade credit."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.08",
+    "title": "Intended Use and Finance Maturity",
+    "context": "Analyze the insolvency risk that arises when loan capital must be repaid while the business already carries heavy debt. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest is one cost element, but intended use and gearing also guide finance selection.",
+      "Businesses with several finance options most probably decide using costs, intended use, and current financial situation.",
+      "Purchasing assets that will be used over some or even many years counts as capital expenditure requiring long-term finance.",
+      "Interest payments on loans and credit are part of the cost criterion when choosing among finance sources.",
+      "Administration costs of share issues are counted as intended use rather than as finance costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost, use, and financial situation are joint criteria, not interest alone.",
+      "TRUE — All three criteria—cost, use, and position—frame realistic finance choice.",
+      "TRUE — Asset spending with multi-year benefits should be funded over a comparable long horizon.",
+      "TRUE — Borrowing costs include interest, which businesses weigh when selecting finance.",
+      "FALSE — Issuance costs are part of the cost criterion, not a description of fund use."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.09",
+    "title": "Gearing Collateral and Insolvency Risk",
+    "context": "Consider a regional retailer financing seasonal stock with supplier credit while planning a long-term store refurbishment from retained earnings. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying material that is used for production within the operating cycle is revenue expenditure that can safely be financed by short-term sources.",
+      "Bond issues carry both coupon interest and upfront flotation expenses that enter the finance comparison.",
+      "Purchasing components for assembly within the month is revenue expenditure that can safely be financed by short-term sources.",
+      "Lenders may be reluctant to offer more funds to a business that already has a high proportion of loan capital.",
+      "Further credit to a highly geared business may be available only at a higher interest rate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Short-cycle inputs align with short-term finance such as trade credit or overdrafts.",
+      "TRUE — Bond finance price reflects interest plus related administration costs.",
+      "TRUE — Short-cycle production inputs align with brief credit facilities.",
+      "TRUE — Heavy debt loads make creditors cautious about increasing exposure.",
+      "TRUE — Risk pricing often raises interest when gearing is already elevated."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.10",
+    "title": "Integrated Finance Decision Criteria",
+    "context": "Analyze why lenders may demand collateral or charge higher interest when extending credit to a highly geared firm. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal finance or investor funds avoid creating new mandatory debt repayment schedules.",
+      "Interest on loans and credit is a cost element businesses compare when choosing finance sources.",
+      "Intended use of funds still matters even when one source appears cheaper on interest alone.",
+      "When loan capital is already high, a business must reject internal funds and investors because only debt can fund expansion.",
+      "Capital expenditure on machinery, plant, or vehicles used over many years requires long-term finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity and retained earnings do not carry the same contractual repayment burden as loans.",
+      "TRUE — Borrowing carries explicit interest that forms part of the cost criterion.",
+      "TRUE — Matching finance term to expenditure type remains necessary regardless of nominal interest.",
+      "FALSE — Internal funds and investors are recommended when further loans would worsen repayment pressure.",
+      "TRUE — Long-lived assets should be funded over a horizon comparable to their useful life."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.11",
+    "title": "Issuance Costs Versus Loan Interest",
+    "context": "Review the three main decision criteria when several sources of finance are available to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Financial funds for capital expenditures require long-term finance because assets will be used over years.",
+      "Costs comprise interest on loans and administration costs of issuing shares or bonds.",
+      "Choosing finance based only on the headline interest rate ignores intended use and current gearing.",
+      "Issuing bonds instead of bank loans eliminates repayment risk for a highly geared business.",
+      "Revenue expenditure on production inputs should always be matched with bond finance maturing in twenty years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-year asset spending calls for long-term funding to match benefit periods.",
+      "TRUE — Both interest and issuance costs belong in the cost comparison.",
+      "FALSE — Cost is one of three criteria; use and financial situation also govern choice.",
+      "FALSE — Bonds are still loan capital that must be repaid with interest; gearing risk remains.",
+      "FALSE — Short-cycle materials suit short-term finance, not long-term bond funding."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.12",
+    "title": "Capital and Revenue Finance Matching",
+    "context": "Analyze how matching finance maturity to expenditure type reduces repayment pressure on routine operations. Evaluate the following economic assertions:",
+    "statements": [
+      "Such a firm should rather try internal sources of finance and/or investors willing to provide funds.",
+      "A business with a high proportion of loan capital may have difficulties obtaining more credit.",
+      "Administration costs incurred when issuing shares or bonds should be weighed alongside interest on loans.",
+      "Revenue expenditure such as buying materials for production can safely be financed by short-term sources.",
+      "High gearing removes any need to compare administration costs when issuing shares to raise funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Retained earnings and investor funds reduce reliance on new repayable debt when gearing is high.",
+      "TRUE — Heavy loan capital makes additional borrowing harder to secure.",
+      "TRUE — Issuance fees belong in the cost criterion next to loan interest.",
+      "TRUE — Short-cycle spending fits short-term credit without lengthy principal schedules.",
+      "FALSE — Share issuance costs remain part of the cost criterion even when gearing motivates equity."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.13",
+    "title": "Working Capital and Short-Term Credit",
+    "context": "Consider a construction firm covering payroll gaps with short-term bank loans while shareholders debate whether to inject equity instead of adding more debt. Evaluate the following economic assertions:",
+    "statements": [
+      "A business with a high proportion of loan capital might have difficulties obtaining more credit.",
+      "High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.",
+      "Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.",
+      "Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.",
+      "Administration costs of bond issues are ignored because only equity carries issuance expenses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Existing heavy debt makes creditors wary of increasing exposure.",
+      "FALSE — The chapter advises against piling on debt when gearing is high; internal or investor funds are preferred.",
+      "TRUE — Security requirements often accompany new loans when loan capital is already substantial.",
+      "FALSE — Short-term finance for revenue spending remains appropriate even when long-term debt is already high.",
+      "FALSE — Both shares and bonds carry administration costs in the cost criterion."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.14",
+    "title": "Lender Reluctance Under High Gearing",
+    "context": "Analyze how buying assets used over many years differs from buying production materials in finance-matching logic. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on a multi-year production plant should be funded from weekly overdraft drawings alone.",
+      "Capital expenditure on assets that will be used over some or even many years requires long-term finance.",
+      "Costs, intended use, and current financial situation are the main criteria when choosing among finance sources.",
+      "Funding a multi-year production plant solely through repeated overdraft drawings mismatches short-term finance to capital expenditure.",
+      "Treating the absolute interest rate as the only selection criterion ignores intended use and current gearing."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Long-lived plant assets need long-term finance, not reliance on short overdraft facilities.",
+      "TRUE — Asset life governs the appropriate maturity of finance.",
+      "TRUE — The chapter presents this trio as the decision framework.",
+      "TRUE — Long-lived assets require long-term finance, not rolling short-term overdraft reliance.",
+      "TRUE — The chapter requires weighing cost together with use and financial situation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.15",
+    "title": "Insolvency Risk from Heavy Loan Capital",
+    "context": "Review how internal sources of finance can reduce insolvency risk for a business already reliant on loan capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit from suppliers postpones payment for inputs consumed within the operating cycle.",
+      "Revenue expenditure on raw materials requires a bond issue with a fifteen-year maturity.",
+      "High gearing guarantees unlimited access to cheap long-term loans for any capital project.",
+      "Matching finance maturity to expenditure type is still required when comparing loan interest with bond coupons.",
+      "When loan capital is already high, internal sources of finance and investors can be preferable to another large loan."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Supplier credit is a standard short-term source for routine purchases.",
+      "FALSE — Long-term bond finance mismatches the brief consumption period of materials.",
+      "FALSE — Heavy debt typically restricts rather than expands cheap credit availability.",
+      "TRUE — Asset life and gearing shape finance choice beyond nominal interest rates.",
+      "TRUE — Retained earnings and investor funds avoid new fixed repayment obligations."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.16",
+    "title": "Interest Issuance Costs and Intended Use",
+    "context": "Consider a hotel operator with heavy existing borrowings that must fund a new wing through bonds, an overdraft, or reinvested profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue expenditure on production materials can safely be financed by short-term sources even when loan capital is already high.",
+      "High gearing complicates obtaining further long-term loans but does not ban appropriate short-term finance for revenue spending.",
+      "Because loans must be repaid, a high proportion of loan capital can be a burden that increases insolvency risk.",
+      "Costs, intended use, and current financial situation together guide finance choice when several sources exist.",
+      "Financing a multi-year production facility exclusively through short-term overdraft drawings mismatches revenue-type credit to capital expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Short-cycle materials still suit trade credit or overdrafts regardless of balance-sheet debt.",
+      "TRUE — Gearing mainly affects appetite for additional long-term debt, not all short-term working-capital credit.",
+      "TRUE — Fixed repayment schedules on heavy debt threaten solvency if income weakens.",
+      "TRUE — No single criterion overrides the other two in the chapter framework.",
+      "TRUE — Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.17",
+    "title": "Long-Term Assets and Finance Horizon",
+    "context": "Review how a business with several finance options will most probably weigh cost, use, and financial situation together. Evaluate the following economic assertions:",
+    "statements": [
+      "A highly geared business may obtain further credit only at higher interest and/or if collateral is provided.",
+      "Capital expenditure on machinery used over many years should be matched with long-term finance.",
+      "When several funding routes exist, selection usually weighs costs, the purpose of the funds, and the firm's gearing.",
+      "Ignoring administration costs when issuing shares or bonds understates the true cost of those finance sources.",
+      "A high proportion of loan capital can be a burden because loans must be repaid, raising insolvency risk."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Lenders tighten pricing and security when loan capital is already substantial.",
+      "TRUE — Multi-year machinery calls for finance spanning comparable years.",
+      "TRUE — Costs, intended use, and financial situation jointly shape the choice.",
+      "TRUE — Issuance expenses belong in the cost criterion alongside loan interest.",
+      "TRUE — Mandatory debt service on heavy loans threatens solvency when cash flow is insufficient."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.18",
+    "title": "Core Finance Matching Principles",
+    "context": "Analyze the trade-off between debt interest and the administration costs of raising equity or bond finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue expenditure on weekly supplies must be financed through a twenty-year mortgage.",
+      "Share issues carry no administration costs, so only loan interest needs comparison.",
+      "All production materials must be financed through long-term bond issues regardless of consumption speed.",
+      "Costs, intended use, and financial situation jointly determine finance choice among available sources for expansion projects.",
+      "Administration costs of bond issues belong in the cost comparison with loan interest."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Short-cycle revenue spending suits short-term sources, not long-term mortgages.",
+      "FALSE — Equity and bond issues both involve administration costs in the chapter framework.",
+      "FALSE — Long-term bonds mismatch the brief use period of routine materials.",
+      "TRUE — All three chapter criteria apply together.",
+      "TRUE — Issuance costs are part of the cost criterion alongside borrowing interest."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.19",
+    "title": "Gearing Traps in Finance Choice",
+    "context": "Review why additional loan capital can become a burden when repayment obligations already strain cash flow. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on assets used over many years still requires long-term finance despite high gearing.",
+      "Capital expenditure on vehicles used for ten years should be funded from thirty-day supplier credit.",
+      "High gearing removes interest from the list of costs businesses must compare.",
+      "High gearing means revenue expenditure must be reclassified as capital expenditure before any finance is chosen.",
+      "Collateral requirements prove that interest is the only cost businesses need to compare among finance sources."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Asset life dictates long-term funding needs even when additional debt is costly.",
+      "FALSE — Long-lived vehicles are capital expenditure requiring long-term finance.",
+      "FALSE — Interest on loans remains part of the cost criterion at any gearing level.",
+      "FALSE — Expenditure type is determined by use and asset life, not by renaming it when debt is high.",
+      "FALSE — Collateral relates to lender risk from gearing; interest and issuance costs remain separate cost elements."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.20",
+    "title": "Single Criterion Misconceptions",
+    "context": "Consider a freight carrier renewing its vehicle fleet with a long-term bank loan while purchasing fuel and tyres on trade credit. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue expenditure on materials for current production can safely be financed by short-term sources.",
+      "High gearing automatically makes share issuance free of administration costs.",
+      "Costs comprise interest on loans and credit plus administration costs for issuing shares or bonds.",
+      "High gearing may leave lenders reluctant except at higher interest or with collateral, favouring internal funds or investors.",
+      "Revenue expenditure on flour and sugar for weekly baking must be funded through a twenty-year bond."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Short-cycle inputs align with trade credit or overdrafts.",
+      "FALSE — Share and bond administration costs still enter the cost criterion regardless of gearing.",
+      "TRUE — The cost criterion covers interest and issuance expenses.",
+      "TRUE — Elevated debt tightens credit terms and makes non-debt finance attractive.",
+      "FALSE — Short-cycle ingredients suit short-term finance, not multi-year bond funding."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.21",
+    "title": "Revenue Inputs and Trade Credit",
+    "context": "Review why revenue expenditure on inputs used for current production aligns with short-term finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on a ten-year asset should be funded from trade credit for raw materials.",
+      "Using short-term credit for revenue expenditure avoids tying multi-year repayment schedules to inputs quickly consumed.",
+      "Comparing a bank loan with a bond issue requires weighing interest against bond issuance expenses.",
+      "Share issues involve administration costs that should enter the cost side of the finance decision.",
+      "Only intended use matters, so a highly geared firm may ignore repayment risk when taking new loans."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Long-lived assets need long-term finance, not supplier credit for materials.",
+      "TRUE — Short-term finance suits spending that rolls over each operating period.",
+      "TRUE — Bond interest and flotation costs together shape the price of that debt source.",
+      "TRUE — Equity raising is not cost-free; administration costs form part of the comparison.",
+      "FALSE — Financial situation and gearing affect whether further debt is prudent even when use is matched."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.22",
+    "title": "Capital Projects and Debt Capacity",
+    "context": "Analyze how high gearing may leave lenders reluctant to offer more funds except on stricter terms. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal funds are never preferable to loans regardless of how high loan capital already is.",
+      "Administration costs of share issues are excluded from cost comparisons because shares carry no fees.",
+      "Revenue expenditures on weekly ingredients can safely be financed through trade credit or overdraft facilities.",
+      "Revenue expenditure on materials for production must be financed exclusively through twenty-year mortgage loans.",
+      "When gearing is elevated, adding another large loan can worsen repayment pressure on cash flow."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The chapter explicitly favours internal funds or investors when gearing is high.",
+      "FALSE — Share issuance involves administration costs that must be weighed against loan interest.",
+      "TRUE — Working-capital spending suits short-term credit without multi-year repayment tails.",
+      "FALSE — Short-cycle materials suit short-term finance, not long-term mortgage loans.",
+      "TRUE — Additional loans compound fixed repayment obligations when debt is already substantial."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.23",
+    "title": "Issuance Costs Versus Borrowing",
+    "context": "Review how retained earnings and new investors can strengthen finance choice when external credit is costly. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of share or bond issues are excluded from the cost comparison when choosing finance.",
+      "A low headline interest rate does not by itself prove a loan is cheaper than equity once issuance fees are included.",
+      "Buying material used for production within the current cycle is revenue expenditure suited to short-term finance.",
+      "Buying assets that will be used over some or even many years is capital expenditure requiring long-term finance.",
+      "Internal sources of finance can be preferable when loan capital is already high because they avoid new repayment obligations."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Issuance costs belong in the cost criterion alongside loan interest.",
+      "TRUE — Total cost includes both ongoing charges and upfront issuance expenses.",
+      "TRUE — Inputs consumed quickly fit short-term credit without lengthy repayment schedules.",
+      "TRUE — Multi-year assets should be funded over a horizon matching useful life.",
+      "TRUE — Retained earnings do not create new mandatory debt service like another loan would."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.24",
+    "title": "Short-Term Sources for Materials",
+    "context": "Consider an agricultural cooperative retaining member profits internally while lenders demand higher interest on any further long-term credit. Evaluate the following economic assertions:",
+    "statements": [
+      "A highly geared business should always add another large loan rather than use internal funds or investors.",
+      "Capital expenditure on assets used over many years can safely rely on thirty-day trade credit alone.",
+      "Because loans must be repaid, a high proportion of loan capital can burden the business with insolvency risk.",
+      "Interest on loans is the only cost element, so administration costs of share or bond issues need not be compared.",
+      "High gearing means a firm should ignore its financial situation and select finance solely by the lowest advertised interest rate."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The chapter favours internal funds or investors when gearing is already high.",
+      "FALSE — Multi-year assets require long-term finance, not brief supplier credit.",
+      "TRUE — Debt service on heavy loans threatens solvency if revenues fall short.",
+      "FALSE — Administration costs for shares and bonds are part of the cost criterion alongside loan interest.",
+      "FALSE — Financial situation and gearing still matter even when one source quotes a low interest rate."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.25",
+    "title": "Highly Geared Firm Strategy",
+    "context": "Review how collateral requirements may accompany new credit offers to highly geared borrowers. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on expansion assets used over many years requires long-term finance.",
+      "Revenue expenditure on routine inputs can safely use short-term finance.",
+      "High gearing guarantees that every lender will extend further credit at the same rate as before the debt build-up.",
+      "High gearing may make lenders offer credit only at higher interest or with collateral.",
+      "Bond flotation costs should be ignored when comparing debt sources because only coupon interest represents the price of bond finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-lived expansion assets need long-term funding.",
+      "TRUE — Short-cycle spending fits brief credit facilities.",
+      "FALSE — Lenders typically tighten terms when loan capital is already substantial, not maintain identical pricing.",
+      "TRUE — Stricter terms often accompany new loans to highly geared firms.",
+      "FALSE — Flotation costs belong in the total cost of bond finance alongside coupon interest."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.26",
+    "title": "Collateral and Credit Pricing",
+    "context": "Analyze how administration costs affect the comparison between issuing shares and taking a bank loan. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal funds or investors can reduce insolvency risk when loan capital is already high.",
+      "Elevated gearing points the firm toward retained funds or new investors rather than stacking another major loan.",
+      "Administration costs of issuing shares or bonds belong to the cost criterion alongside loan interest.",
+      "A finance decision based only on loan interest ignores flotation and related costs of market issues.",
+      "Revenue expenditure on weekly ingredients requires bond finance maturing after fifteen years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Non-debt finance avoids adding repayable obligations when debt is heavy.",
+      "TRUE — High loan capital makes internal equity or outside investors preferable.",
+      "TRUE — Issuance fees are part of the cost criterion next to borrowing interest.",
+      "TRUE — Total cost of bond or share finance includes non-interest fees.",
+      "FALSE — Long-term bonds mismatch the quick consumption of production materials."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.27",
+    "title": "Balancing Cost Use and Position",
+    "context": "Review the link between loan repayment obligations and the risk of insolvency in highly geared businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Intended use still requires matching long-term finance to capital expenditure on multi-year assets.",
+      "When several sources of finance are available, decision-making most probably weighs costs, intended use, and financial situation.",
+      "Financial funds for capital expenditures require long-term finance because benefits extend over years.",
+      "Revenue expenditures on production inputs can safely use short-term sources.",
+      "High gearing may mean credit is offered only at higher interest and/or with collateral."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Asset life determines finance maturity regardless of nominal coupon or dividend.",
+      "TRUE — All three criteria jointly determine appropriate finance.",
+      "TRUE — Asset spending with extended life needs long-term funding.",
+      "TRUE — Materials consumed in the cycle fit short-term finance.",
+      "TRUE — Lenders price and secure new loans more strictly when debt is heavy."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.28",
+    "title": "Long-Term Finance for Plant Assets",
+    "context": "Consider a dental practice choosing between a multi-year premises loan, supplier credit for consumables, and funds from new investor-partners. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on machinery, plant, or vehicles used over many years should be matched with long-term finance.",
+      "Capital expenditure on a warehouse used for decades should be funded exclusively through thirty-day trade credit.",
+      "High gearing means intended use no longer influences whether finance should be short or long term.",
+      "Matching finance maturity to expenditure type is optional when the quoted loan interest rate is low.",
+      "A business should finance ten-year equipment and weekly materials from the same thirty-day overdraft without distinction."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-lived assets require finance whose term spans years of service.",
+      "FALSE — Long-lived buildings are capital expenditure needing long-term finance.",
+      "FALSE — Intended use remains a core criterion regardless of gearing level.",
+      "FALSE — Intended use and gearing still matter even when nominal interest appears attractive.",
+      "FALSE — Different expenditure types require different finance maturities."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.29",
+    "title": "Overdraft Misuse for Capital Spending",
+    "context": "Review why trade credit and overdrafts suit revenue-type spending better than multi-year asset projects. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing means lenders will always match the lowest market interest rate on new loans.",
+      "Costs include interest on loans and administration costs when issuing shares or bonds.",
+      "Costs of finance exclude interest because lenders provide credit without charge.",
+      "Collateral requirements prove that revenue expenditure must always be financed through long-term bonds.",
+      "Insolvency risk arises only from equity finance because shareholders can withdraw capital overnight without notice."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Heavy debt often leads to higher pricing or refusal, not automatic low rates.",
+      "TRUE — Both interest and issuance fees enter cost comparisons.",
+      "FALSE — Interest on loans and credit is explicitly part of the cost criterion.",
+      "FALSE — Revenue spending still suits short-term finance; collateral relates to lender risk on new debt.",
+      "FALSE — Share capital is not repayable like loans; insolvency risk is tied to debt service."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.30",
+    "title": "Interest Alone Fallacy",
+    "context": "Analyze how a firm's current financial situation shapes whether further loan capital is prudent. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest is irrelevant to finance choice because lenders never charge for credit.",
+      "A business with high gearing may prefer internal funds or investors over additional large loans.",
+      "Revenue expenditure on materials must be financed through share issues because equity has no administration costs.",
+      "Because loans must be repaid, heavy loan capital raises insolvency risk.",
+      "High gearing automatically makes bond interest zero for any new borrowing."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Interest on loans is explicitly part of the cost criterion.",
+      "TRUE — Further debt is often unwise when repayment obligations are already substantial.",
+      "FALSE — Share issues carry administration costs and materials suit short-term finance, not equity raises.",
+      "TRUE — Debt service burden threatens solvency when loan capital is high.",
+      "FALSE — Bond and loan interest remain part of the cost criterion at any gearing level."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.31",
+    "title": "Trade Credit for Revenue Spending",
+    "context": "Consider a software startup weighing share issuance costs against a short-term credit line for routine operating expenses. Evaluate the following economic assertions:",
+    "statements": [
+      "When gearing is elevated, internal finance or investors may be preferable to stacking on more repayable debt.",
+      "Share issuance is costless, so only bond coupons need comparison with bank interest.",
+      "Capital expenditure on long-lived assets requires long-term finance.",
+      "Businesses choose finance using costs, intended use, and current financial situation when several sources are available.",
+      "Interest on loans and administration costs of share or bond issues belong to the cost criterion."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity and retained funds avoid new mandatory debt service when loan capital is already high.",
+      "FALSE — Share issues involve administration costs that enter finance comparisons.",
+      "TRUE — Multi-year assets call for long-term funding.",
+      "TRUE — The chapter's trio of criteria frames finance decisions.",
+      "TRUE — Cost includes both interest and issuance administration expenses."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.32",
+    "title": "Asset Life and Repayment Schedules",
+    "context": "Analyze why issuance costs for bonds must be weighed alongside interest when comparing debt sources. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing may push a firm toward internal funds or investors and raises insolvency risk from loan repayment.",
+      "Revenue expenditure on weekly supplies should be funded through twenty-year loans.",
+      "Lenders may require collateral before extending further credit to a business with a high proportion of loan capital.",
+      "Capital expenditure on assets used over years requires long-term finance.",
+      "Internal funds or investors can be preferable when loan capital is already high because loans must be repaid."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Heavy debt limits further borrowing and repayment risk favours non-debt finance.",
+      "FALSE — Short-cycle revenue spending suits short-term sources, not long-term loans.",
+      "TRUE — Security is commonly demanded when existing loan capital is already substantial.",
+      "TRUE — Multi-year assets call for long-term funding.",
+      "TRUE — Avoiding new debt reduces repayment burden and insolvency risk when gearing is high."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.33",
+    "title": "Gearing and Investor Alternatives",
+    "context": "Review how intended use and gearing interact when a business selects among internal and external finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest on loans is the only cost element in finance selection.",
+      "A business with several finance sources will most probably decide using costs, intended use, and current financial situation.",
+      "Capital expenditure requires long-term finance; revenue expenditure can safely use short-term sources.",
+      "Matching long-term funding to multi-year assets spreads repayment over the period benefits are earned.",
+      "Capital expenditure and revenue expenditure both require identical long-term bond funding."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Administration costs for shares and bonds also count toward total finance cost.",
+      "TRUE — All three criteria jointly guide realistic finance selection.",
+      "TRUE — Expenditure type determines appropriate finance maturity.",
+      "TRUE — Aligning repayment with years of service reduces cash-flow mismatch.",
+      "FALSE — Revenue spending suits short-term finance; capital spending needs long-term funding."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.34",
+    "title": "Working Capital Versus Fixed Assets",
+    "context": "Analyze how short-term credit for materials avoids locking repayment schedules to long-lived assets. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest on loans and credit forms part of the cost comparison among finance options.",
+      "Revenue expenditure on production materials can safely use short-term finance such as trade credit.",
+      "High gearing may force a firm toward internal funds or investors rather than another large loan.",
+      "Once loan capital is high, a business may ignore intended use and select finance solely by the lowest advertised interest rate.",
+      "Funding a multi-year production facility exclusively through short-term overdraft drawings mismatches short-term finance to capital expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Borrowing interest is an explicit element of the cost criterion.",
+      "TRUE — Short-cycle inputs align with short-term credit without long repayment tails.",
+      "TRUE — Further debt is often costly or unavailable when loan capital is already high.",
+      "TRUE — Intended use and gearing still matter even when one source quotes a low interest rate.",
+      "TRUE — Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.35",
+    "title": "Full Criteria Synthesis",
+    "context": "Consider a textile producer already highly geared when deciding how to finance new machinery versus weekly raw-material deliveries. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of bond issues belong in the cost comparison with loan interest for highly geared borrowers.",
+      "High gearing has no effect on whether lenders demand collateral for new credit.",
+      "Revenue expenditure on inputs for current production can safely be financed through short-term sources.",
+      "Intended use is secondary to picking whichever source has the lowest administration cost alone.",
+      "Loan repayment risk disappears if a business funds capital expenditure through additional long-term loans regardless of gearing."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Issuance costs are part of the cost criterion alongside borrowing interest.",
+      "FALSE — Collateral demands commonly rise when loan capital is already high.",
+      "TRUE — Short-cycle spending fits short-term credit without locking repayment to long asset lives.",
+      "FALSE — Intended use and gearing matter alongside cost; lowest admin cost alone is insufficient.",
+      "FALSE — More long-term debt when gearing is high worsens repayment pressure rather than removing risk."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.36",
+    "title": "Collateral Demand Signal",
+    "context": "Analyze how capital expenditure on long-lived assets illustrates the need for long-term funding. Evaluate the following economic assertions:",
+    "statements": [
+      "A high proportion of loan capital can make lenders reluctant to extend further credit except on stricter terms.",
+      "Comparing share finance with a bank loan requires weighing issuance administration costs against loan interest.",
+      "Short-term credit suits revenue spending on inputs consumed quickly because it avoids locking the firm into long repayment schedules.",
+      "A business with several finance options will most probably weigh costs, intended use, and current financial situation together.",
+      "Revenue expenditure on materials consumed in current production can safely be financed by short-term sources."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — High gearing often leads to higher interest, collateral demands, or refusal of new loans.",
+      "TRUE — Equity raising carries administration costs that must enter the finance comparison.",
+      "TRUE — Short-term credit matches quickly consumed revenue expenditure.",
+      "TRUE — All three criteria jointly guide realistic finance selection.",
+      "TRUE — Production materials used within the cycle fit short-term credit such as supplier terms."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.37",
+    "title": "Finance Selection Overview",
+    "context": "Review how revenue expenditure on working-capital inputs illustrates safe use of short-term finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of issuing shares or bonds also enter that cost comparison.",
+      "Intended use of funds distinguishes long-term finance for assets from short-term finance for working capital.",
+      "Retained earnings and new investors can strengthen finance choice when external credit is costly.",
+      "Collateral may be required before lenders extend additional loans to a high geared firm.",
+      "Share capital from investors is preferable to loans when gearing is high because loans must be repaid."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Capital market issues involve administration expenses beyond any coupon or dividend.",
+      "TRUE — Expenditure type determines appropriate finance maturity.",
+      "TRUE — Non-debt finance becomes attractive when lenders tighten terms.",
+      "TRUE — Security requirements commonly accompany new lending to highly geared borrowers.",
+      "TRUE — Investor funds avoid new mandatory repayment streams when debt is already heavy."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.38",
+    "title": "Decision Framework Recap",
+    "context": "Review how businesses choose among available sources of finance when costs, intended use, and current financial position all matter. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit for weekly ingredients aligns revenue expenditure with short-term finance sources.",
+      "Long-term bank loans suit capital expenditure on vehicles used over many years.",
+      "Total finance cost includes both loan interest and share-issue administration expenses.",
+      "A firm's current financial situation influences whether further loan capital is prudent.",
+      "Bond flotation costs should be weighed alongside coupon interest when comparing debt sources."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Brief supplier credit suits inputs consumed within the operating cycle.",
+      "TRUE — Fleet renewal calls for finance whose maturity spans years of service.",
+      "TRUE — Cost comparison spans recurring interest and one-off issuance fees.",
+      "TRUE — Gearing shapes whether additional debt is wise alongside cost and intended use.",
+      "TRUE — Issuance expenses belong in the cost criterion for bond finance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.39",
+    "title": "Maturity Matching Essentials",
+    "context": "Consider a catering business using supplier credit for ingredients while owners consider whether retained earnings should fund a delivery van. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal equity from retained earnings avoids adding repayable debt when gearing is already elevated.",
+      "Revenue expenditure on materials should be financed exclusively through equity issues to eliminate interest.",
+      "Capital expenditure on a production line used for ten years requires long-term finance.",
+      "High gearing eliminates the need to match finance maturity to expenditure type.",
+      "A highly geared business may ignore repayment risk when selecting the lowest-interest long-term loan available."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Reinvested profit does not create new fixed repayment schedules like loans.",
+      "FALSE — Materials for current production suit short-term finance; equity is not required for every revenue item.",
+      "TRUE — Multi-year assets should not rely on short-term overdraft facilities alone.",
+      "FALSE — Expenditure type still determines appropriate finance maturity regardless of gearing.",
+      "FALSE — Gearing and repayment risk still matter even when a loan quotes a low interest rate."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.40",
+    "title": "Gearing and Short-Term Credit",
+    "context": "Review how capital expenditures on long-lived assets should be matched with the term of finance chosen. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing means revenue expenditure must be financed only through long-term bonds.",
+      "Administration costs of share issues are excluded when comparing finance sources.",
+      "Both capital and revenue expenditure should be funded from identical thirty-day trade credit regardless of asset life.",
+      "Revenue spending on packaging consumed within weeks can safely use supplier trade credit.",
+      "High gearing may leave lenders offering credit only at a higher price in the form of interest."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Materials for current production still suit short-term finance regardless of gearing.",
+      "FALSE — Share issuance costs remain part of the cost criterion.",
+      "FALSE — Different expenditure types require different finance maturities.",
+      "TRUE — Short-cycle inputs align with brief credit terms.",
+      "TRUE — Risk pricing rises when loan capital is already substantial."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.41",
+    "title": "Debt Burden and Solvency",
+    "context": "Analyze how revenue expenditures on materials and other short-cycle inputs relate to short-term finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Investor or partner funds can substitute for additional loans when repayment risk is already high.",
+      "High gearing eliminates the need to consider intended use when selecting finance.",
+      "Administration costs apply only to bond issues and never to share issuance.",
+      "Matching finance maturity to expenditure type reduces repayment pressure on routine operations.",
+      "Interest payments for loans and credit are part of the cost criterion in finance selection."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity injections reduce reliance on repayable debt under high gearing.",
+      "FALSE — Intended use remains central even when gearing is elevated.",
+      "FALSE — Both shares and bonds carry administration costs in the cost criterion.",
+      "TRUE — Aligning term to use keeps debt service proportional to benefit periods.",
+      "TRUE — Borrowing interest enters the cost comparison among sources."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.42",
+    "title": "Use Cost and Gearing Together",
+    "context": "Review the concept of a high geared business and its implications for further borrowing. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs for issuing shares form part of the cost criterion alongside loan interest.",
+      "Purchasing raw materials for current production is revenue expenditure suited to short-term finance.",
+      "Intended use is irrelevant once a business becomes highly geared.",
+      "High gearing requires that all spending, including weekly materials, be funded through new fifteen-year bank loans.",
+      "Purchasing machinery used over many years is capital expenditure requiring long-term finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity issuance is not cost-free in the finance comparison.",
+      "TRUE — Inputs used within the cycle fit trade credit or overdrafts.",
+      "FALSE — Intended use remains central to matching finance maturity.",
+      "FALSE — Revenue expenditure should not be forced into long-term loans merely because gearing is high.",
+      "TRUE — Long-lived equipment calls for multi-year funding sources."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.43",
+    "title": "Issuance Fees and Loan Interest",
+    "context": "Consider a municipal supplier drawing on an overdraft for cash-flow gaps while issuing bonds to expand its warehouse. Evaluate the following economic assertions:",
+    "statements": [
+      "When gearing is already high, management should prefer internal funds or new equity investors over another major loan.",
+      "Because loans must be repaid, heavy loan capital can increase insolvency risk.",
+      "Costs, intended use, and financial situation are weighed together when several finance sources exist.",
+      "Short-term finance for revenue expenditure avoids locking repayment to long-lived assets.",
+      "Long-term finance for capital expenditure spreads repayment over years of asset use."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — High gearing makes internal finance or investors preferable to additional large borrowing.",
+      "TRUE — Debt service on substantial loans threatens solvency if cash flow falls.",
+      "TRUE — No single criterion alone determines the appropriate finance choice.",
+      "TRUE — Working-capital credit suits inputs consumed within the operating cycle.",
+      "TRUE — Asset life governs the appropriate maturity of funding."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.44",
+    "title": "Complete Subsection Synthesis",
+    "context": "Review how administration costs of issuing shares or bonds enter the cost comparison among finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of share or bond issues are excluded from the cost comparison because only interest on loans counts as a cost.",
+      "Lenders may be reluctant to offer more funds when loan capital is already a high proportion of finance.",
+      "Intended use of funds is irrelevant when comparing a bank loan with a bond for buying production materials.",
+      "Funding a multi-year production plant exclusively through short-term overdraft drawings matches finance maturity correctly.",
+      "Even under high gearing, managers should still prefer repeating large bank borrowings over seeking equity investors."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Administration costs for shares and bonds are part of the cost criterion alongside loan interest.",
+      "TRUE — Heavy debt makes creditors cautious about increasing exposure.",
+      "FALSE — Materials are revenue expenditure suited to short-term finance regardless of debt instrument.",
+      "FALSE — Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance.",
+      "FALSE — Further large loans raise insolvency risk; internal funds or investors are safer options."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.45",
+    "title": "Administration Cost Neglect",
+    "context": "Analyze the insolvency risk that arises when loan capital must be repaid while the business already carries heavy debt. Evaluate the following economic assertions:",
+    "statements": [
+      "Choosing among finance sources requires comparing only administration costs, not intended use or gearing.",
+      "Share issues involve no administration costs, so only bond coupons need comparison with bank interest.",
+      "High gearing guarantees that lenders will always match the lowest market interest rate on new loans.",
+      "Revenue expenditure on packaging consumed within weeks must be financed exclusively through fifteen-year bond issues.",
+      "Collateral demands may accompany new credit offers to highly geared borrowers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Costs, intended use, and financial situation are all weighed when several finance sources exist.",
+      "FALSE — Share issues involve administration costs that enter finance comparisons.",
+      "FALSE — Heavy debt often leads to higher pricing or refusal, not automatic low rates.",
+      "FALSE — Short-cycle packaging is revenue expenditure suited to short-term finance, not long-term bonds.",
+      "TRUE — Security requirements often tighten when gearing is elevated."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.46",
+    "title": "Insolvency and Repayment Pressure",
+    "context": "Consider a family-owned workshop where heavy loan capital already burdens the balance sheet before owners seek finance for replacement equipment. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal sources of finance reduce insolvency risk relative to stacking on more loan capital.",
+      "The absolute interest rate alone does not determine the best finance source.",
+      "Revenue expenditure on production inputs aligns with short-term credit such as trade credit.",
+      "Capital expenditure on plant and machinery aligns with long-term loans or bond finance.",
+      "Administration costs of bond issues must be compared with loan interest when choosing debt finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Retained earnings avoid new mandatory debt service.",
+      "TRUE — Cost must be weighed with intended use and current financial situation.",
+      "TRUE — Short-cycle spending fits brief credit facilities.",
+      "TRUE — Multi-year assets call for long-term funding sources.",
+      "TRUE — Flotation costs belong in the total cost of bond finance."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.47",
+    "title": "Criteria Integration for Expansion",
+    "context": "Analyze why lenders may demand collateral or charge higher interest when extending credit to a highly geared firm. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing does not prevent appropriate short-term finance for routine revenue expenditure.",
+      "Intended use is irrelevant when comparing a bank loan with a bond for buying production materials.",
+      "Expecting a return on invested capital automatically reclassifies equity investors as creditors under debt finance.",
+      "Bank overdrafts are long-term debt finance because overdraft limits may remain available across several years.",
+      "Customer payments that later become retained profit transform those earnings into external equity finance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Short-term credit for materials remains suitable even when long-term debt is high.",
+      "FALSE — Materials are revenue expenditure suited to short-term finance regardless of debt instrument.",
+      "FALSE — Investor equity remains equity finance even when investors seek financial return.",
+      "FALSE — Overdrafts are classified as short-term credit despite renewable facilities.",
+      "FALSE — Retained earnings stay internal equity after profit is kept in the firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.48",
+    "title": "Plant Funding Mismatch Trap",
+    "context": "Review the three main decision criteria when several sources of finance are available to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "A business with high loan capital may obtain further credit only on stricter terms.",
+      "Trade credit from suppliers is equity finance because suppliers share commercial risk with the buyer.",
+      "Investors willing to provide funds can be preferable to another large loan when gearing is high.",
+      "Insolvency risk rises when a business carries a high proportion of loan capital that must be repaid.",
+      "Transferability of bonds on secondary markets turns long-term bond finance into short-term equity finance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Lenders tighten pricing or demand collateral when gearing is elevated.",
+      "FALSE — Supplier trade credit is short-term debt finance, not equity shared with suppliers.",
+      "TRUE — Equity-type finance avoids new repayable debt obligations.",
+      "TRUE — Mandatory repayment threatens solvency if revenues fall short.",
+      "FALSE — Bond financing remains long-term debt for the issuer regardless of secondary trading."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.49",
+    "title": "Gearing Cost and Use Combined",
+    "context": "Analyze how matching finance maturity to expenditure type reduces repayment pressure on routine operations. Evaluate the following economic assertions:",
+    "statements": [
+      "Finance choice considers costs, intended use, and the firm's current financial situation together.",
+      "Share issues involve administration costs that enter the cost comparison with bank loans.",
+      "A business with high gearing should ignore issuance administration costs when comparing share finance with bonds.",
+      "Overdraft facilities may fund revenue expenditure but are unsuitable alone for multi-year capital projects.",
+      "High gearing automatically converts revenue expenditure into capital expenditure for finance-matching purposes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — All three criteria jointly shape realistic finance decisions.",
+      "TRUE — Equity issuance fees belong alongside borrowing interest in the cost criterion.",
+      "FALSE — Administration costs for shares and bonds remain part of the cost criterion regardless of gearing.",
+      "TRUE — Long-lived capital spending requires long-term finance beyond rolling overdraft use.",
+      "FALSE — Expenditure classification depends on use and asset life, not on the firm's debt ratio."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.50",
+    "title": "Finance Maturity Distinctions",
+    "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Once loan capital is high, intended use no longer influences whether finance should be short or long term.",
+      "Revenue expenditure on production materials must be financed exclusively through twenty-year mortgage loans.",
+      "Retained earnings provide internal finance that does not add new loan repayment obligations.",
+      "Bond coupon payments and flotation costs together determine the price of bond finance.",
+      "Capital expenditure on assets used over many years can safely rely on weekly trade credit alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Intended use remains a core criterion regardless of gearing level.",
+      "FALSE — Short-cycle materials suit short-term finance, not long-term mortgage loans.",
+      "TRUE — Internal equity avoids mandatory debt service when gearing is already high.",
+      "TRUE — Total bond cost includes both interest and issuance administration expenses.",
+      "FALSE — Multi-year assets require long-term finance, not brief supplier credit."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  }
+]

@@ -237,7 +237,7 @@
     "title": "Core Features of Sole Trader Businesses",
     "context": "Analyze the defining characteristics of sole proprietorship as described in business ownership theory. Evaluate the following economic assertions:",
     "statements": [
-      "A sole proprietorship is owned by one person who also manages and runs the business.",
+      "A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners.",
       "Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start.",
       "The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement.",
       "Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid.",
@@ -251,7 +251,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Single ownership combined with management defines the structure.",
+      "TRUE — One person owns and runs the business in a sole proprietorship.",
       "TRUE — Minimal formal capital requirements facilitate establishment.",
       "TRUE — Profits flow to the owner's personal tax without corporate separation.",
       "TRUE — Creditors may reach personal property under unlimited liability.",
@@ -817,7 +817,7 @@
     "title": "Overdraft Mechanics for Sole Traders",
     "context": "Consider a sole proprietor using a bank overdraft to bridge seasonal cash-flow gaps between customer receipts. Evaluate the following economic assertions:",
     "statements": [
-      "A bank overdraft is a flexible short-term credit instrument available once a business bank account has been opened.",
+      "Once a business current account is opened, an overdraft facility can provide flexible short-term credit for cash shortfalls.",
       "An overdraft facility converts the sole proprietorship into a corporation with limited liability.",
       "Because overdrafts are short-term, they are not counted among the proprietor's business liabilities.",
       "Overdraft interest is charged on the full account balance even when the balance remains positive.",
@@ -831,7 +831,7 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Overdrafts allow withdrawal beyond the account balance when needed.",
+      "TRUE — Overdrafts are flexible short-term credit linked to a business bank account.",
       "FALSE — Overdraft arrangements do not change legal structure or liability.",
       "FALSE — Short-term credit still counts as a liability.",
       "FALSE — Overdraft interest applies only when the account is overdrawn, not on positive balances.",
@@ -1196,7 +1196,7 @@
     "statements": [
       "External finance from creditors eliminates unlimited liability because the bank shares business risk.",
       "Extra money can be sought from investors and/or from banks when the sole proprietor needs additional funds.",
-      "The owner's investment and financial funds from investors and creditors are external sources of finance.",
+      "Capital contributed by the owner together with investor funds and creditor finance counts as external finance for the firm.",
       "Creditor funds need not be repaid when the loan is used to purchase productive business assets.",
       "Insufficient personal wealth has no effect on whether a sole proprietorship can be established."
     ],
@@ -1210,7 +1210,7 @@
     "tactical_explanations": [
       "FALSE — Borrowing does not limit the proprietor's unlimited liability.",
       "TRUE — Investors and banks supplement personal resources.",
-      "TRUE — These sources come from outside operating surplus.",
+      "TRUE — Owner investment plus investor and creditor funds are external sources of finance.",
       "FALSE — Credit agreements require repayment with interest regardless of asset use.",
       "FALSE — Limited personal funds make establishment very difficult."
     ],
@@ -3777,7 +3777,7 @@
     "statements": [
       "Investors may only acquire shares by purchasing them from the corporation at the annual stockholders' meeting.",
       "Once shares are issued, no further investor may buy stock unless the corporation executes a new IPO each year.",
-      "Shares can be bought at initial issue by the corporation or later from another shareholder who sells.",
+      "Investors may acquire shares directly from the corporation at issue or purchase them later from an existing shareholder.",
       "Buying at initial issue provides share capital to the corporation; buying later transfers ownership between investors.",
       "Persons who buy shares become shareholders regardless of whether purchase occurs at issue or on the secondary market."
     ],
@@ -3791,7 +3791,7 @@
     "tactical_explanations": [
       "FALSE — Shares trade at issue and on secondary markets, not only at meetings.",
       "FALSE — Secondary trading continues without repeating an IPO annually.",
-      "TRUE — Both primary and secondary purchase channels exist.",
+      "TRUE — Shares trade at initial issue or on the secondary market between shareholders.",
       "TRUE — Only primary sales fund the issuer; later trades swap owners.",
       "TRUE — Any share purchase confers shareholder status."
     ],
@@ -6356,7 +6356,7 @@
     "title": "Full Sources-of-Finance Matrix",
     "context": "Review how reinvested profit supports internal equity finance without new borrowing. Evaluate the following economic assertions:",
     "statements": [
-      "Retained earnings are internal equity finance because undistributed profit remains available within the business.",
+      "Profit kept inside the firm rather than distributed to owners supplies internal equity finance through retained earnings.",
       "Share capital is external equity finance when investors provide ownership funding from outside the business.",
       "Bank overdrafts are short-term debt finance used to cover temporary cash shortfalls on current accounts.",
       "Long-term bank loans are long-term debt finance with repayment extending beyond the short-term credit category.",
@@ -6370,7 +6370,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Retained earnings are the internal equity source listed in the finance overview.",
+      "TRUE — Retained earnings are internal equity from undistributed profit.",
       "TRUE — Share capital is external equity from outside investors.",
       "TRUE — Overdrafts are short-term debt for liquidity management.",
       "TRUE — Long-term bank loans are long-term external debt.",
@@ -8272,7 +8272,7 @@
     "statements": [
       "A high proportion of loan capital can make lenders reluctant to extend further credit except on stricter terms.",
       "Comparing share finance with a bank loan requires weighing issuance administration costs against loan interest.",
-      "Using short-term credit for revenue expenditure avoids tying multi-year loan repayment to inputs quickly consumed.",
+      "Short-term credit suits revenue spending on inputs consumed quickly because it avoids locking the firm into long repayment schedules.",
       "A business with several finance options will most probably weigh costs, intended use, and current financial situation together.",
       "Revenue expenditure on materials consumed in current production can safely be financed by short-term sources."
     ],
@@ -8286,7 +8286,7 @@
     "tactical_explanations": [
       "TRUE — High gearing often leads to higher interest, collateral demands, or refusal of new loans.",
       "TRUE — Equity raising carries administration costs that must enter the finance comparison.",
-      "TRUE — Maturity alignment keeps repayment aligned with when benefits from spending are realised.",
+      "TRUE — Short-term credit matches quickly consumed revenue expenditure.",
       "TRUE — All three criteria jointly guide realistic finance selection.",
       "TRUE — Production materials used within the cycle fit short-term credit such as supplier terms."
     ],
@@ -8473,7 +8473,7 @@
     "title": "Issuance Fees and Loan Interest",
     "context": "Consider a municipal supplier drawing on an overdraft for cash-flow gaps while issuing bonds to expand its warehouse. Evaluate the following economic assertions:",
     "statements": [
-      "A highly geared business should rather use internal funds or investors than add another large loan.",
+      "When gearing is already high, management should prefer internal funds or new equity investors over another major loan.",
       "Because loans must be repaid, heavy loan capital can increase insolvency risk.",
       "Costs, intended use, and financial situation are weighed together when several finance sources exist.",
       "Short-term finance for revenue expenditure avoids locking repayment to long-lived assets.",
@@ -8487,7 +8487,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Further debt increases repayment burden when loan capital is already high.",
+      "TRUE — High gearing makes internal finance or investors preferable to additional large borrowing.",
       "TRUE — Debt service on substantial loans threatens solvency if cash flow falls.",
       "TRUE — No single criterion alone determines the appropriate finance choice.",
       "TRUE — Working-capital credit suits inputs consumed within the operating cycle.",

@@ -1,0 +1,2902 @@
+[
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.01",
+    "title": "Marketing Objectives Overview",
+    "context": "Analyze how businesses set marketing objectives after analysing the markets they wish to operate in. Evaluate the following economic assertions:",
+    "statements": [
+      "If customers are not satisfied with the product, they are unlikely to buy it again.",
+      "Satisfied customers often become loyal customers who may purchase the product again.",
+      "Customer satisfaction is unrelated to whether buyers purchase the product again.",
+      "Customer satisfaction as a marketing objective is interrelated with objectives such as sales and loyalty.",
+      "Meeting customer wishes and needs is a prerequisite for defining meaningful marketing objectives."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Dissatisfied customers typically withhold repeat purchases, which is why satisfaction is a core marketing objective.",
+      "TRUE — Satisfaction frequently leads to loyalty and repeat buying behaviour.",
+      "FALSE — Satisfaction is explicitly interrelated with repeat purchase and loyalty objectives.",
+      "TRUE — The text links satisfaction to other marketing goals rather than treating it in isolation.",
+      "TRUE — Businesses analyse wishes and needs before clarifying the objectives they pursue."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.02",
+    "title": "Customer Satisfaction and Loyalty",
+    "context": "Consider a sportswear manufacturer investing in distinctive product design, athlete endorsements, and loyalty programmes to stand apart from rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "A business that ignores customer satisfaction risks losing repeat sales from otherwise viable buyers.",
+      "A dissatisfied customer may still become a loyal repeat buyer without any change in the product.",
+      "Post-purchase satisfaction influences whether a customer considers the product for a future purchase.",
+      "Customer satisfaction is the only marketing objective and replaces sales and profit goals.",
+      "Businesses set marketing objectives without analysing customer wishes and needs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Unsatisfied customers tend not to return, undermining sales and loyalty objectives.",
+      "FALSE — Dissatisfied customers are unlikely to buy again per the marketing framework.",
+      "TRUE — Future purchase intent is tied to how satisfied the customer felt after buying.",
+      "FALSE — Satisfaction is one of several objectives, not the sole aim.",
+      "FALSE — The text requires market and wishes/needs analysis before setting objectives."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.03",
+    "title": "Unique Selling Proposition Basics",
+    "context": "Analyze how a unique selling proposition supports product differentiation and attracts loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyal customers who buy again help sustain sales volume over time.",
+      "Customer satisfaction supports retention rather than relying solely on one-off transactions.",
+      "Satisfied customers rarely buy the product again because loyalty is independent of satisfaction.",
+      "Satisfied customers may recommend the product to others, extending marketing impact beyond the original sale.",
+      "Customer satisfaction objectives apply only to service firms, not to goods producers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Repeat purchases from loyal customers support the sales objective.",
+      "TRUE — Satisfaction aims at ongoing relationships, not isolated single purchases.",
+      "FALSE — Satisfied customers often become loyal and may buy again.",
+      "TRUE — Positive satisfaction can generate word-of-mouth that supports sales growth.",
+      "FALSE — Satisfaction is a general marketing objective for businesses fulfilling customer needs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.04",
+    "title": "Market Share as Competitiveness",
+    "context": "Review why gaining and maintaining market share indicates a firm's relative competitiveness. Evaluate the following economic assertions:",
+    "statements": [
+      "Repeat purchase behaviour proves that customer satisfaction objectives are unnecessary.",
+      "Marketing objectives include ensuring customers are content enough to consider repurchasing.",
+      "Dissatisfied customers are a signal that marketing and product delivery may be missing stated objectives.",
+      "Marketing objectives exclude customer satisfaction when profitability is prioritised.",
+      "Dissatisfied customers will still buy again if the price is reduced slightly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Repeat purchase is evidence satisfaction objectives matter, not that they are redundant.",
+      "TRUE — Repurchase potential is linked to satisfaction in the marketing objectives framework.",
+      "TRUE — Persistent dissatisfaction indicates objectives around satisfaction are not being met.",
+      "FALSE — Profitability does not remove satisfaction from the set of possible objectives.",
+      "FALSE — The text states dissatisfied customers will not buy again, not merely resist until a small discount."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.05",
+    "title": "Sales Volume and Revenue",
+    "context": "Consider a dairy cooperative that brands its organic milk line, measures shelf share in supermarkets, and reinvests surplus profit into processing equipment. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is measured only after profitability targets have been met.",
+      "Customer satisfaction surveys can inform how well a business is meeting its marketing objectives.",
+      "A firm pursuing loyalty must first address whether customers are satisfied with the core product.",
+      "Loyal customers emerge without any need for prior satisfaction with the product.",
+      "Repeat purchase behaviour is more likely when prior use met or exceeded customer expectations."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Satisfaction is an objective in its own right, not a post-profit afterthought.",
+      "TRUE — Feedback instruments help assess progress toward satisfaction goals.",
+      "TRUE — Loyalty generally builds on satisfaction with what was purchased.",
+      "FALSE — Loyalty in the framework builds on satisfied customers who may buy again.",
+      "TRUE — Expectations met through satisfactory experience encourage buying again."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.06",
+    "title": "Profitability Objective Foundations",
+    "context": "Review profitability as a marketing objective and its link to reimbursing owners and reinvestment. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction has no connection to market share or sales volume objectives.",
+      "A business can ignore wishes and needs analysis if it already has a strong brand.",
+      "Customer satisfaction is not separable from long-run sales performance in the marketing framework.",
+      "Satisfaction objectives mean customers must be delighted on every dimension or they will never return.",
+      "Customer complaints rising after a campaign indicate success on satisfaction objectives."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Satisfaction is interrelated with other marketing objectives including sales.",
+      "FALSE — Wishes and needs analysis precedes clear marketing objectives regardless of brand strength.",
+      "TRUE — The text presents satisfaction as interrelated with sales and other objectives.",
+      "FALSE — The text requires satisfaction, not impossible perfection on every dimension.",
+      "FALSE — Rising complaints signal failure on satisfaction objectives."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.07",
+    "title": "Interrelated Marketing Goals",
+    "context": "Analyze how customer satisfaction interrelates with other marketing objectives such as sales and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses analyse customer wishes and needs because unsatisfied buyers will not sustain demand.",
+      "Satisfaction objectives aim to convert first-time buyers into customers who return.",
+      "A marketing plan that achieves high satisfaction can reinforce market share by retaining buyers.",
+      "Satisfied customers never recommend products to others, keeping satisfaction private.",
+      "Customer satisfaction is achieved solely by lowering prices below competitors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Understanding needs helps avoid the outcome where buyers refuse repeat purchase.",
+      "TRUE — The satisfaction objective supports turning initial purchases into repeat business.",
+      "TRUE — Retained satisfied buyers help maintain share against competitors.",
+      "FALSE — Satisfied customers may recommend products, extending marketing impact.",
+      "FALSE — Price cuts alone do not define satisfaction in the marketing objectives framework."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.08",
+    "title": "Differentiation Through Branding",
+    "context": "Consider a hardware store chain comparing local market share, promotional sales spikes, and net profit after covering warehouse costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a customer buys once, satisfaction objectives are automatically fulfilled.",
+      "Dissatisfied customers continue buying out of habit, so satisfaction objectives are optional.",
+      "Customer satisfaction objectives conflict with profitability and cannot coexist.",
+      "Customer complaints rising over time suggest the satisfaction objective is not being achieved.",
+      "Satisfaction surveys are irrelevant to assessing marketing objective performance."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A single purchase does not prove satisfaction objectives are met.",
+      "FALSE — Dissatisfied customers will not buy again according to the text.",
+      "FALSE — Objectives are interrelated and can coexist within a marketing plan.",
+      "TRUE — Elevated complaints indicate failure relative to the satisfaction goal.",
+      "FALSE — Surveys help assess whether satisfaction objectives are being achieved."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.09",
+    "title": "Satisfaction and Repeat Purchase",
+    "context": "Analyze why building a brand supports the creation of a unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied customers provide a foundation for brand loyalty programmes to succeed.",
+      "If a product fails to meet needs, marketing objectives around sales growth become harder to reach.",
+      "A loyal customer is one who buys again regardless of whether they were satisfied.",
+      "Satisfaction with product quality can encourage customers to choose the same brand on the next occasion.",
+      "Marketing objectives treat customer satisfaction as linked to maintaining competitive sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Loyalty initiatives work best when underlying satisfaction is already present.",
+      "TRUE — Unmet needs undermine sales because buyers avoid repeat purchase.",
+      "FALSE — Loyalty is linked to satisfied customers who possibly buy again.",
+      "TRUE — Quality satisfaction supports brand-level repeat choice.",
+      "TRUE — Satisfaction and sales objectives are presented as interrelated."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.10",
+    "title": "USP and Loyal Customer Attraction",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "A business measuring repurchase rates is indirectly tracking success on satisfaction objectives.",
+      "Customers who feel their wishes were fulfilled are more willing to buy the product again.",
+      "Satisfaction objectives complement differentiation by ensuring the promised uniqueness is experienced.",
+      "Poor satisfaction can erode market share even when promotional spending remains high.",
+      "Satisfaction is an objective because unhappy customers simply will not buy the product again."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Repurchase frequency reflects whether customers remain satisfied.",
+      "TRUE — Fulfilled wishes support the repeat purchase outcome described in the text.",
+      "TRUE — Customers must be satisfied with the differentiated offer for loyalty to follow.",
+      "TRUE — Dissatisfied customers may switch to rivals, reducing relative share.",
+      "TRUE — The text states dissatisfied customers will not buy again."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.11",
+    "title": "Relative Market Importance",
+    "context": "Analyze the relationship between higher sales figures and profitability within stated limitations. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction applies only after market share targets have been reached.",
+      "Marketing objectives treat satisfaction as separate from loyalty with no connection.",
+      "Loyalty outcomes depend on customers having a satisfactory experience with prior purchases.",
+      "Businesses need not fulfil wishes and needs if differentiation is strong enough.",
+      "Businesses set satisfaction targets because loyal repeat buyers strengthen several other objectives."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Satisfaction is not deferred until share targets are met.",
+      "FALSE — Satisfaction and loyalty are explicitly linked in the framework.",
+      "TRUE — Loyalty in the framework follows from satisfactory prior buying experiences.",
+      "FALSE — Fulfilling wishes and needs remains central even with differentiation.",
+      "TRUE — Loyal repeat buyers support sales, share, and profitability aims."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.12",
+    "title": "Sales Covering Production Costs",
+    "context": "Review why dissatisfied customers are unlikely to buy a product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied customers buy again only when legally required to do so under contract.",
+      "Meeting needs analysed in the market helps a firm align its product with satisfaction goals.",
+      "Customer satisfaction is unrelated to sales because sales depend only on advertising spend.",
+      "A firm with high satisfaction can ignore market share because satisfied buyers guarantee success.",
+      "Dissatisfaction improves long-run sales by encouraging customers to try alternatives within the range."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Repeat purchase from satisfaction is voluntary customer behaviour.",
+      "TRUE — Market analysis of wishes and needs supports satisfaction objectives.",
+      "FALSE — Satisfaction interrelates with sales through repeat purchase and loyalty.",
+      "FALSE — Satisfaction supports but does not replace other objectives like share.",
+      "FALSE — Dissatisfaction leads customers not to buy again, harming sales."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.13",
+    "title": "Profit Reinvestment Rationale",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction objectives are met when promotional reach is high, regardless of product experience.",
+      "Satisfied customers never buy complementary products from the same firm.",
+      "A satisfied customer base reduces reliance on constant new-customer acquisition alone.",
+      "Customer satisfaction is irrelevant to USP objectives because differentiation is purely visual.",
+      "Repeat purchase rates falling while satisfaction scores rise always indicates data error only."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Reach alone does not satisfy; experience with the product matters.",
+      "FALSE — Satisfied customers may buy other products from the firm.",
+      "TRUE — Retention of satisfied buyers supplements acquisition in meeting sales goals.",
+      "FALSE — USP and satisfaction interrelate when customers experience the differentiated offer.",
+      "FALSE — Falling repurchase despite claimed satisfaction may reflect real objective failure."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.14",
+    "title": "Dissatisfaction and Lost Sales",
+    "context": "Review the marketing objective of maintaining sales volume to generate revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is one of several marketing objectives a business may pursue.",
+      "Satisfaction contributes to profitability indirectly by supporting repeat revenue streams.",
+      "When customers are satisfied, they are more likely to remain with the firm rather than switch.",
+      "Customer satisfaction means the product must be the cheapest in the market.",
+      "Marketing staff may track satisfaction scores alongside sales when reviewing objective performance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The text lists satisfaction among multiple possible marketing objectives.",
+      "TRUE — Repeat revenue from satisfied customers can support profit objectives.",
+      "TRUE — Satisfaction reduces switching, helping maintain share and sales.",
+      "FALSE — Satisfaction concerns meeting wishes and needs, not being cheapest.",
+      "TRUE — Satisfaction metrics complement sales data in objective review."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.15",
+    "title": "Perceived Product Uniqueness",
+    "context": "Analyze how retained profit from higher sales can be reinvested in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes eliminate the need to pursue customer satisfaction objectives.",
+      "Dissatisfied customers still generate loyal behaviour if enrolled in a rewards scheme.",
+      "A product that delights customers on first use is better positioned to achieve loyalty objectives.",
+      "Customer satisfaction is a financial accounting measure identical to gross profit.",
+      "Businesses set satisfaction objectives only in declining markets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Loyalty programmes complement but do not replace satisfaction objectives.",
+      "FALSE — Dissatisfaction undermines loyalty even with rewards enrolment.",
+      "TRUE — Positive first-use experience supports subsequent loyalty.",
+      "FALSE — Satisfaction is a marketing objective distinct from gross profit.",
+      "FALSE — Satisfaction is a general objective across market conditions."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.16",
+    "title": "Share Maintenance Strategies",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "A satisfied customer will never switch to a rival with a stronger USP.",
+      "Customer satisfaction objectives are fulfilled when production volume is maximised.",
+      "A unique selling proposition means the product is identical to all similar products on every feature.",
+      "Dissatisfaction after a promotional trial can undo short-term sales gains from the campaign.",
+      "Satisfaction objectives encourage firms to deliver what was promised in differentiation messaging."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Satisfaction helps retention but does not make switching impossible.",
+      "FALSE — Maximising production volume does not equate to customer satisfaction.",
+      "FALSE — USP means the product is or is considered different from similar products.",
+      "TRUE — Temporary sales spikes fail if buyers are dissatisfied and do not return.",
+      "TRUE — Delivering on promises links satisfaction to credible USP claims."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.17",
+    "title": "Revenue Growth Objectives",
+    "context": "Analyze how loyal customers who buy again strengthen both sales and competitive position. Evaluate the following economic assertions:",
+    "statements": [
+      "Repeat visits to a retailer by the same household suggest satisfaction objectives are being met.",
+      "Customer satisfaction is interrelated with profitability because loyal buyers generate recurring revenue.",
+      "Product differentiation requires the product to be objectively unique in every technical respect.",
+      "Building a brand has no role in creating a unique selling proposition.",
+      "Firms that prioritise satisfaction still pursue other objectives such as market share and sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Household repeat visits indicate ongoing satisfaction.",
+      "TRUE — Recurring revenue from loyal buyers can support profit aims.",
+      "FALSE — Differentiation can be based on perception and promotion as well as characteristics.",
+      "FALSE — Building a brand supports creating a USP per the text.",
+      "TRUE — Satisfaction is one objective among several, not the only one."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.18",
+    "title": "Sales-Profit Relationship Limits",
+    "context": "Review why businesses analyse customer wishes and needs before defining marketing objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "A decline in satisfaction ratings may precede a fall in relative market share.",
+      "Satisfied customers are more receptive to extensions of a product line from the same business.",
+      "The marketing objectives framework assumes satisfied customers may buy again.",
+      "Businesses failing on satisfaction will struggle to build the loyal customer base a USP aims to attract.",
+      "Customer wishes and needs analysis helps set realistic satisfaction targets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Falling satisfaction can foreshadow share loss to rivals.",
+      "TRUE — Satisfaction with the core offer supports acceptance of related products.",
+      "TRUE — Repeat purchase from satisfied customers is explicitly noted.",
+      "TRUE — USP objectives assume satisfaction sustains the loyalty USP is meant to create.",
+      "TRUE — Understanding needs informs what satisfaction should look like."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.19",
+    "title": "Customer Needs Analysis First",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfaction with after-sales service can reinforce overall marketing objective achievement.",
+      "A USP is achieved only when the firm holds one hundred percent market share.",
+      "Product differentiation and unique selling proposition refer to unrelated marketing concepts.",
+      "A loyal customer who buys again reduces the average cost of acquiring each unit sold.",
+      "Marketing objectives on satisfaction aim to prevent customers from abandoning the product."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Service satisfaction supports broader objective success.",
+      "FALSE — USP concerns differentiation, not total market dominance.",
+      "FALSE — Differentiation is also called product differentiation in the USP context.",
+      "TRUE — Repeat buyers lower effective acquisition cost, aiding profitability.",
+      "TRUE — Preventing abandonment through satisfaction supports retention."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.20",
+    "title": "Promotion-Based Differentiation",
+    "context": "Review market share as an indicator of relative importance compared with rival firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Promotion and customer perception cannot contribute to a product's unique selling proposition.",
+      "A USP means the product is worse than rivals but cheaper.",
+      "Businesses avoid creating a USP because it attracts too many one-time buyers only.",
+      "High satisfaction can stabilise sales when competitors launch aggressive price promotions.",
+      "Brand-building undermines differentiation by making all products appear the same."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Differentiation can arise from promotion and how customers perceive the product.",
+      "FALSE — USP positions the product as special, unique, or better than the rest.",
+      "FALSE — USP helps attract many loyal customers, not only one-time buyers.",
+      "TRUE — Loyal satisfied buyers may resist switching on price alone.",
+      "FALSE — Brand-building supports rather than undermines USP creation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.21",
+    "title": "Competitive Share Indicators",
+    "context": "Analyze why sales revenues must cover production costs before profit can be earned. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfaction measurement helps a business know whether differentiation claims match customer experience.",
+      "A unique selling proposition eliminates the need for any customer satisfaction efforts.",
+      "Differentiation objectives apply only to luxury goods and never to everyday products.",
+      "A USP based on promotion alone is not recognised as product differentiation.",
+      "If two products share a brand, they cannot each have distinct unique selling propositions."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Feedback reveals whether perceived differentiation is experienced as satisfactory.",
+      "FALSE — USP interrelates with satisfaction when customers experience the offer.",
+      "FALSE — USP and differentiation are general marketing objectives.",
+      "FALSE — Promotion-based perception is explicitly valid for differentiation.",
+      "FALSE — Product lines may carry distinct USPs within a brand."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.22",
+    "title": "Owner Reimbursement Through Profit",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers not satisfied with one product in a range may avoid other products from the same firm.",
+      "A product without a USP can still attract many loyal customers without any differentiation effort.",
+      "Satisfaction objectives align with the idea that marketing must fulfil wishes and needs.",
+      "Product differentiation means copying the market leader's features exactly.",
+      "A USP is defined solely by the lowest price in the product category."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Dissatisfaction can spread wariness across the firm's offerings.",
+      "FALSE — USP aims to attract loyal customers through perceived difference.",
+      "TRUE — Fulfilling wishes and needs is the broader aim satisfaction supports.",
+      "FALSE — Differentiation requires difference from similar products, not exact copying.",
+      "FALSE — USP concerns uniqueness or perceived superiority, not price alone."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.23",
+    "title": "Loyalty From Satisfied Buyers",
+    "context": "Analyze the objective of creating differentiation so customers view a product as unlike similar offerings. Evaluate the following economic assertions:",
+    "statements": [
+      "A satisfied customer is a candidate for becoming a loyal customer in the textbook framework.",
+      "Repeat purchase is a behavioural sign that satisfaction and loyalty objectives are progressing.",
+      "Satisfaction supports market share maintenance by keeping existing buyers from leaving.",
+      "Businesses treat satisfaction as strategically linked to sales volume over multiple periods.",
+      "Without satisfactory delivery, differentiation claims may fail to produce loyal customers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Satisfaction often precedes loyalty in the described relationship.",
+      "TRUE — Repurchase signals progress on satisfaction-linked loyalty.",
+      "TRUE — Retained buyers help hold share against competitors.",
+      "TRUE — Multi-period sales benefit when satisfaction drives repeat buying.",
+      "TRUE — USP attraction of loyal customers assumes satisfactory product experience."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.24",
+    "title": "Characteristic-Based USP Claims",
+    "context": "Review satisfied customers as a foundation for loyalty and further purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is presented as interrelated with the objective of increasing sales.",
+      "A firm improving satisfaction may see improved retention metrics in subsequent quarters.",
+      "A unique selling proposition means a product is or is considered different from similar products.",
+      "Product differentiation can be based on a characteristic of the product itself.",
+      "Building a brand is a financial objective unrelated to marketing differentiation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Satisfaction and sales objectives reinforce each other in the text.",
+      "TRUE — Better satisfaction can show up as higher retention over time.",
+      "TRUE — USP is defined as actual or perceived difference from similar offerings.",
+      "TRUE — Differentiation may rest on tangible product features.",
+      "FALSE — Brand-building supports USP within marketing objectives."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.25",
+    "title": "Market Position Relative to Rivals",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Product differentiation can also arise from the way a product is promoted and perceived by customers.",
+      "Customers cannot perceive a USP when products are functionally similar.",
+      "A unique selling proposition guarantees unlimited market share without further effort.",
+      "Differentiation through packaging is excluded from the USP concept.",
+      "Building a brand supports creating a unique selling proposition for the product."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Promotion and perception are valid bases for differentiation.",
+      "FALSE — Customers may consider a product different even when functional similarities exist.",
+      "FALSE — USP supports competitiveness but does not alone guarantee share.",
+      "FALSE — Packaging and presentation can contribute to perceived differentiation.",
+      "TRUE — Brand-building is explicitly linked to USP creation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.26",
+    "title": "Maintaining Sales Volume",
+    "context": "Review the limitation that higher sales do not automatically guarantee higher profit in every circumstance. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP objective is met when the firm spends the most on advertising regardless of message.",
+      "Product differentiation replaces sales and profitability objectives entirely.",
+      "A USP must be based on a patented invention or it is invalid.",
+      "Brand loyalty and USP objectives are mutually exclusive marketing goals.",
+      "A product with a USP may seem special, unique, or better than the rest to customers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — USP requires meaningful difference or perception, not spend alone.",
+      "FALSE — Differentiation is one objective among several.",
+      "FALSE — USP can rest on characteristics or promotion, not only patents.",
+      "FALSE — Brand-building and USP work together to attract loyal customers.",
+      "TRUE — USP positions the product as distinctive or superior in customer perception."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.27",
+    "title": "Higher Sales and Profit Link",
+    "context": "Analyze how a clear unique selling proposition helps attract many loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses create a USP because it helps attract many loyal customers.",
+      "A product considered the same as rivals still has a strong USP by definition.",
+      "Differentiation means customers never compare the product with substitutes.",
+      "A USP is created only when the product wins every industry quality award.",
+      "Promotion cannot change customer perception of uniqueness once the product is launched."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — USP is pursued to draw loyal customers to the offering.",
+      "FALSE — USP requires actual or perceived difference from similar products.",
+      "FALSE — Customers may still compare; USP shapes how the product is viewed in comparison.",
+      "FALSE — Awards are not required; characteristics or perception can establish USP.",
+      "FALSE — Promotion shapes perception as a valid differentiation basis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.28",
+    "title": "Marketing Objective Interdependence",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "A unique selling proposition applies only to the promotion mix, not to the product.",
+      "Businesses create USPs primarily to reduce sales volume by targeting fewer buyers.",
+      "Product differentiation is another term for the positioning achieved through a unique selling proposition.",
+      "A USP can rest on design features that rivals' similar products do not emphasise.",
+      "Promotional messaging can shape how customers perceive a product's uniqueness."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — USP can rest on product characteristics or promotion and perception.",
+      "FALSE — USP aims to attract many loyal customers, supporting sales.",
+      "TRUE — Differentiation and USP are treated as related concepts.",
+      "TRUE — Design emphasis can underpin differentiation.",
+      "TRUE — Perception shaped by promotion supports USP."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.29",
+    "title": "Brand Support for Differentiation",
+    "context": "Analyze market share maintenance as a competitiveness indicator in contested markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand identity helps customers recognise why one product differs from close substitutes.",
+      "Product differentiation is identical to market segmentation with no separate meaning.",
+      "A credible USP makes similar products appear distinct in the buyer's mind.",
+      "A USP eliminates all price competition because differentiated products have fixed prices.",
+      "Differentiation through service quality can form part of a product's unique selling proposition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Brand identity reinforces differentiated recognition.",
+      "FALSE — Differentiation concerns USP; segmentation is a distinct marketing concept.",
+      "TRUE — USP creates mental distinction among similar products.",
+      "FALSE — USP reduces price-only competition but does not eliminate pricing decisions.",
+      "TRUE — Service quality may be the differentiating characteristic."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.30",
+    "title": "Repeat Purchase Behaviour",
+    "context": "Review sales growth objectives in relation to covering costs and sustaining operations. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm investing in brand advertising may be pursuing a USP objective.",
+      "USP objectives aim to reduce direct comparability with undifferentiated rivals on price alone.",
+      "Customers may perceive uniqueness even when products share many functional similarities.",
+      "A unique selling proposition can highlight delivery speed as the distinguishing element.",
+      "Packaging design can contribute to differentiation and support a USP."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Brand advertising supports USP-related differentiation.",
+      "TRUE — Differentiation moves competition beyond pure price comparison.",
+      "TRUE — Perceived uniqueness can exist alongside functional similarity.",
+      "TRUE — Delivery speed may serve as the USP characteristic.",
+      "TRUE — Packaging may be part of the differentiated presentation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.31",
+    "title": "Attracting Loyal Customers",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP based on ethical sourcing can differentiate a product in a crowded category.",
+      "Product differentiation helps a business stand out when many similar alternatives exist.",
+      "Brand loyalty programmes often accompany products with a clear unique selling proposition.",
+      "A USP may emphasise durability as the product characteristic that sets it apart.",
+      "Promotion that stresses craftsmanship can build a perceived USP for handmade goods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Ethical sourcing claims can underpin differentiation.",
+      "TRUE — Differentiation addresses crowded markets with similar options.",
+      "TRUE — Loyalty programmes complement USP-driven differentiation.",
+      "TRUE — Durability can be the differentiating product characteristic.",
+      "TRUE — Craftsmanship messaging supports perceived differentiation."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.32",
+    "title": "Share as Competitiveness Signal",
+    "context": "Review how product characteristics and promotional messaging jointly shape differentiation. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand-building is unnecessary when the product has a legally protected monopoly.",
+      "Differentiation objectives encourage customers to view the offer as unlike substitutes.",
+      "A strong brand can make customers believe a product is better than the rest.",
+      "A USP that emphasises speed of delivery cannot coexist with a quality-based USP.",
+      "USP creation is a recognised marketing objective in the textbook overview."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Brand still supports perceived uniqueness even with limited competition.",
+      "TRUE — The aim is distinct perception versus substitutes.",
+      "TRUE — Brand strength supports better-than-the-rest perception.",
+      "FALSE — Different characteristics can be emphasised in USP messaging.",
+      "TRUE — USP is listed among marketing objectives businesses may pursue."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.33",
+    "title": "Revenue Versus Cost Coverage",
+    "context": "Analyze why marketing objectives extend beyond a single measure such as sales volume alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Differentiation through warranty terms can form a valid unique selling proposition.",
+      "A product considered unique may command buyer attention despite numerous rivals.",
+      "Brand-building and USP objectives work together to attract loyal repeat buyers.",
+      "A USP may rest on how the product is experienced after purchase, not only on pre-purchase claims.",
+      "Promotional differentiation shapes customer perception even before the first purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Warranty terms may differentiate the offering.",
+      "TRUE — Perceived uniqueness draws attention in competitive markets.",
+      "TRUE — Brand and USP jointly support loyal customer attraction.",
+      "TRUE — Post-purchase experience can sustain differentiation.",
+      "TRUE — Pre-purchase perception is shaped by promotion."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.34",
+    "title": "Retained Profit for Growth",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Differentiation objectives are unrelated to attracting loyal customers.",
+      "Businesses pursue differentiation because similar products without a USP compete mainly on price.",
+      "A unique selling proposition can highlight environmental credentials as the distinguishing factor.",
+      "Product lines may each carry a distinct USP within the same corporate brand.",
+      "A product that seems better than the rest cannot have a USP if rivals disagree."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — USP is pursued because it helps attract many loyal customers.",
+      "TRUE — Without USP, price becomes the primary competitive lever.",
+      "TRUE — Environmental credentials may underpin the USP.",
+      "TRUE — Different USPs can apply across product lines under one brand.",
+      "FALSE — USP concerns customer perception, not unanimous rival agreement."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.35",
+    "title": "Satisfaction Survey Insights",
+    "context": "Analyze how a business positions itself as better than the rest through a credible unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "USP creation is a short-term tactic replaced by profitability objectives each quarter.",
+      "Differentiation based on customer support quality can attract buyers who value assistance.",
+      "A USP makes the product or seems to make the product unlike other similar offerings.",
+      "Brand investment is a marketing activity that supports USP objectives.",
+      "Differentiation can rely on a single prominent characteristic promoted consistently."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — USP is a sustained marketing objective, not a quarterly replacement for profit.",
+      "TRUE — Support quality may be the differentiating element.",
+      "TRUE — USP creates actual or apparent difference from similar products.",
+      "TRUE — Brand investment is linked to USP creation in the text.",
+      "TRUE — One promoted characteristic can anchor the USP."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.36",
+    "title": "Perception and Product Differentiation",
+    "context": "Review relative market share comparisons among firms serving the same customer base. Evaluate the following economic assertions:",
+    "statements": [
+      "A perceived USP can persist through consistent branding across multiple channels.",
+      "USP objectives interrelate with satisfaction because customers must experience the claimed difference.",
+      "A product differentiation strategy may target buyers who seek premium perceived quality.",
+      "Marketing objectives on USP aim to make the firm's offer memorable versus rivals.",
+      "Differentiation through local sourcing can be promoted as a unique selling proposition."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Consistent branding sustains perceived differentiation.",
+      "TRUE — Experienced difference links USP to satisfaction outcomes.",
+      "TRUE — Premium quality perception can be the differentiation target.",
+      "TRUE — Memorable distinction is a USP outcome.",
+      "TRUE — Local sourcing may be promoted as the USP."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.37",
+    "title": "Benchmarking Market Share",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP helps attract loyal customers who identify with the brand's differentiated identity.",
+      "Product differentiation is pursued so the product appears special relative to the rest.",
+      "Promotional emphasis on innovation can support a USP in technology categories.",
+      "Brand reputation accumulated over time reinforces the product's unique selling proposition.",
+      "A USP may combine a product feature with a distinctive promotional style."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Brand identity alignment attracts loyal buyers.",
+      "TRUE — Special appearance relative to alternatives is a USP aim.",
+      "TRUE — Innovation messaging can underpin differentiation.",
+      "TRUE — Reputation reinforces ongoing USP credibility.",
+      "TRUE — Features and promotional style can jointly form the USP."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.38",
+    "title": "Volume Targets and Margins",
+    "context": "Review reinvestment of profit as a reason owners pursue profitable marketing outcomes. Evaluate the following economic assertions:",
+    "statements": [
+      "Product differentiation requires abandoning customer satisfaction objectives.",
+      "Differentiation objectives are listed alongside satisfaction and market share objectives.",
+      "Customers comparing similar products may rely on USP cues to make a choice.",
+      "A business without differentiation may struggle to attract loyal customers in a saturated market.",
+      "Building a brand is a means to an end of creating perceived product uniqueness."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Differentiation and satisfaction objectives interrelate.",
+      "TRUE — USP/differentiation sits among the stated marketing objectives.",
+      "TRUE — USP cues guide choice among similar products.",
+      "TRUE — Saturated markets make USP important for loyal customer attraction.",
+      "TRUE — Brand-building serves perceived uniqueness objectives."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.39",
+    "title": "Profit Within Objective Set",
+    "context": "Analyze customer loyalty as a consequence of sustained satisfaction with the product offering. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP based on customisation options differentiates a standard product category offering.",
+      "Differentiation through perceived exclusivity can support premium pricing objectives.",
+      "USP messaging must align with what customers ultimately experience to sustain loyalty.",
+      "A USP is valid only when verified by government regulators.",
+      "Product differentiation reduces the product's substitutability in the customer's view."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Customisation can differentiate within a standard category.",
+      "TRUE — Exclusivity perception can accompany premium positioning.",
+      "TRUE — Aligned experience sustains loyalty promised by USP.",
+      "FALSE — USP rests on business positioning and customer perception, not regulatory certification.",
+      "TRUE — Differentiation lowers perceived substitutability."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.40",
+    "title": "Wishes and Needs Before Objectives",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "A unique selling proposition can highlight reliability as the key product characteristic.",
+      "Brand symbols and logos help communicate the differentiated identity of the product.",
+      "Marketing spend on differentiation supports the objective of seeming better than alternatives.",
+      "Building a brand is the same as achieving maximum market share instantly.",
+      "Market share measures absolute sales volume with no reference to competitors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Reliability may be the highlighted differentiating characteristic.",
+      "TRUE — Visual brand elements communicate differentiation.",
+      "TRUE — Differentiation spend targets better-than-alternatives perception.",
+      "FALSE — Brand-building supports USP; it does not instantly maximise share.",
+      "FALSE — Market share indicates relative importance compared with competitors."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.41",
+    "title": "Quality Perception and USP",
+    "context": "Analyze maintaining market share when rivals intensify promotional competition. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP created through promotion still counts as differentiation in the marketing framework.",
+      "A firm with the highest absolute sales always has the highest market share in every market definition.",
+      "Differentiation and USP objectives connect to attracting a loyal customer following.",
+      "Market share objectives are unrelated to competitiveness indicators.",
+      "Gaining and maintaining market share is a marketing objective for many businesses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Promotion-based differentiation is explicitly recognised.",
+      "FALSE — Share depends on market boundary; highest absolute sales may not mean highest share.",
+      "TRUE — USP aims to attract many loyal customers per the text.",
+      "FALSE — Market share is described as an indicator of competitiveness.",
+      "TRUE — Market share is listed among marketing objectives."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.42",
+    "title": "Relative Share Comparisons",
+    "context": "Review increasing sales as a means to strengthen financial capacity without ignoring cost structures. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share indicates a firm's relative importance in the market compared with competitors.",
+      "Gaining market share is impossible without simultaneously doubling production costs.",
+      "Market share serves as an indicator of competitiveness in the marketing framework.",
+      "Businesses compare their share with competitors' positions in the same market.",
+      "A rising market share may signal improved performance relative to rival firms."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share reflects relative standing versus rivals.",
+      "FALSE — Share can be gained through marketing without requiring cost doubling.",
+      "TRUE — Share is described as a competitiveness indicator.",
+      "TRUE — Share is assessed relative to competitor positions.",
+      "TRUE — Share gains suggest improved relative performance."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.43",
+    "title": "Cost Constraints on Profitability",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is identical to customer satisfaction percentage in the marketing framework.",
+      "Businesses ignore competitors when setting market share objectives.",
+      "Maintaining market share can be an explicit marketing objective during intense rivalry.",
+      "Market share reflects the firm's portion of total sales in the defined market.",
+      "A declining market share always means absolute sales are falling."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Share and satisfaction are distinct objectives.",
+      "FALSE — Share is inherently relative to competitors' positions.",
+      "TRUE — Share maintenance is a valid stated objective.",
+      "TRUE — Share is a portion of total market sales.",
+      "FALSE — Share can fall while absolute sales rise if the market grows faster."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.44",
+    "title": "Recommendation From Satisfied Customers",
+    "context": "Review the marketing framework in which satisfaction, differentiation, share, sales, and profit coexist. Evaluate the following economic assertions:",
+    "statements": [
+      "Losing market share may indicate weakened competitiveness against other suppliers.",
+      "Marketing campaigns may aim to protect share when a new competitor enters.",
+      "Market share objectives complement sales objectives by adding a relative dimension.",
+      "Market share is the only marketing objective that matters for public companies.",
+      "A firm with small absolute sales may still hold a significant share in a niche market."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share loss signals weakened relative competitiveness.",
+      "TRUE — Defensive campaigns can target share protection.",
+      "TRUE — Share adds relative context to absolute sales.",
+      "FALSE — Share is one of several possible marketing objectives.",
+      "TRUE — Share can be significant even with modest absolute sales in niches."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.45",
+    "title": "Service Elements in USP",
+    "context": "Analyze how dissatisfaction leads customers to withhold repeat purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Competitiveness is partly assessed through how market share changes over time.",
+      "Maintaining market share requires no marketing expenditure if the product once led.",
+      "Market share indicates a firm's absolute importance without comparing rivals.",
+      "A new entrant automatically receives fifty percent market share upon launch.",
+      "Market share objectives replace profitability analysis entirely."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share trends inform competitiveness assessment.",
+      "FALSE — Share maintenance typically requires ongoing marketing effort.",
+      "FALSE — Share indicates relative importance compared with competitors.",
+      "FALSE — Entrants must earn share through competitive performance.",
+      "FALSE — Share complements but does not replace profit objectives."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.46",
+    "title": "Share Erosion Warning Signs",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses interested in market share want to know their position versus rivals.",
+      "Relative market importance is measured by total assets, not market share.",
+      "Gaining share always improves profitability in the same reporting period.",
+      "Market share is calculated without defining which market boundary applies.",
+      "A firm can hold one hundred percent share in a market with no competitors by definition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share answers relative position questions.",
+      "FALSE — Share, not assets alone, indicates relative market importance in this framework.",
+      "FALSE — Share gains may temporarily reduce profit when achieved through heavy spending.",
+      "FALSE — Share requires a defined market among competing firms.",
+      "FALSE — Share comparisons require competitors within the defined market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.47",
+    "title": "Campaign Revenue Monitoring",
+    "context": "Analyze market share gains as evidence of improved relative standing among competitors. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share maintenance is unrelated to customer loyalty programmes.",
+      "Gaining share often requires taking customers from competing firms.",
+      "Market share is a relative measure rather than an absolute sales total alone.",
+      "Share objectives are set without analysing the market the business operates in.",
+      "A stable market share in a growing market may still mean rising absolute sales."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Loyal customers help maintain share against rivals.",
+      "TRUE — Share gains typically come at rivals' expense.",
+      "TRUE — Share is inherently relative to the market total.",
+      "FALSE — Market analysis precedes objective setting including share targets.",
+      "TRUE — Stable share can coexist with rising absolute sales in growing markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.48",
+    "title": "Strategic Profit Retention",
+    "context": "Review sales objectives as necessary but not sufficient for long-term financial success alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share and sales volume objectives always move in opposite directions.",
+      "A competitiveness indicator excludes market share in favour of staff headcount alone.",
+      "Losing share to a rival proves customer satisfaction objectives were exceeded.",
+      "Marketing objectives may target a minimum share threshold to remain competitive.",
+      "Market share is a marketing objective only for government agencies."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales growth can support share when the firm outpaces market growth.",
+      "FALSE — Share is explicitly a competitiveness indicator.",
+      "FALSE — Share loss often signals competitive weakness, not excess satisfaction.",
+      "TRUE — Minimum share targets express competitiveness aims.",
+      "FALSE — Share objectives apply to businesses competing in markets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.49",
+    "title": "Satisfaction Supporting Sales",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Share analysis helps managers understand competitive dynamics in their industry.",
+      "A business defending share may increase promotional spending when rivals gain ground.",
+      "Relative importance in the market is shown by advertising spend, not share.",
+      "Market share objectives are interrelated with satisfaction and differentiation goals.",
+      "Relative importance in the market is what market share is designed to indicate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share data illuminates industry competitive dynamics.",
+      "TRUE — Promotional response can aim at share defence.",
+      "FALSE — Share indicates relative importance; ad spend alone does not.",
+      "TRUE — Share links to other objectives in the framework.",
+      "TRUE — Share indicates relative market importance per the text."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.50",
+    "title": "Distinct Identity in Crowded Markets",
+    "context": "Review customer satisfaction surveys as inputs to marketing objective setting. Evaluate the following economic assertions:",
+    "statements": [
+      "Two firms with equal absolute sales may have different shares if market sizes differ.",
+      "Gaining market share means the total market size must shrink.",
+      "A firm tracking share monthly is monitoring a competitiveness indicator.",
+      "Market share objectives conflict with USP objectives and cannot be pursued together.",
+      "A firm with zero market share still leads the market if its brand is well known."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share depends on market total, not absolute sales alone.",
+      "FALSE — Share can be gained while the market grows or shrinks.",
+      "TRUE — Regular share tracking monitors competitiveness.",
+      "FALSE — Share and USP objectives can be pursued within one marketing plan.",
+      "FALSE — Leadership is reflected in share relative to competitors, not brand fame alone."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.51",
+    "title": "Mature Market Share Defence",
+    "context": "Analyze differentiation based on how customers perceive the product after promotional exposure. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is unchanged when a firm's sales double and all rivals' sales double.",
+      "Market share maintenance is harder when differentiated rivals win satisfied loyal buyers.",
+      "Maintaining share is unnecessary when absolute sales targets are met.",
+      "Share objectives encourage attention to competitor actions, not only internal sales.",
+      "A market leader's share position signals its relative importance among industry firms."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Equal proportional growth leaves share unchanged.",
+      "TRUE — Rival differentiation and loyalty challenge share maintenance.",
+      "FALSE — Share adds relative competitiveness information beyond absolute sales.",
+      "TRUE — Share focus requires competitor awareness.",
+      "TRUE — Leaders' share shows relative industry importance."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.52",
+    "title": "Fixed and Variable Cost Coverage",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing plans may set share targets alongside volume and profit goals.",
+      "Market share is measured in currency of production costs rather than sales.",
+      "Competitiveness improves automatically when a firm reduces its market share.",
+      "Market share objectives apply only when the firm is the smallest competitor.",
+      "Declining share despite rising sales can occur if the overall market grows faster."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share sits alongside volume and profit in planning.",
+      "FALSE — Share relates to portion of market sales, not production cost currency.",
+      "FALSE — Share decline indicates weakened relative competitiveness.",
+      "FALSE — Firms of any size may pursue share objectives.",
+      "TRUE — Fast market growth can lower share even as sales rise."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.53",
+    "title": "Capital Providers and Profit",
+    "context": "Analyze the revenue requirement that sales must meet or exceed production costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Competitiveness indicators include whether share is holding steady against key rivals.",
+      "A rising share always results from improved customer dissatisfaction among rivals' buyers.",
+      "Businesses analyse markets partly to estimate achievable share objectives.",
+      "Market share is unrelated to sales because share excludes revenue entirely.",
+      "Gaining share requires exiting the market temporarily."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Steady share against rivals indicates competitive holding.",
+      "FALSE — Share gains typically reflect competitive success, not rivals' dissatisfaction alone.",
+      "TRUE — Market analysis informs realistic share targets.",
+      "FALSE — Share derives from sales within the defined market.",
+      "FALSE — Share is gained by competing within the market."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.54",
+    "title": "Post-Purchase Satisfaction Predictors",
+    "context": "Review owner reimbursement through profit distributions and retained earnings. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share indicators are irrelevant when the firm sells only one product.",
+      "Relative market position is assessed through share compared with competitors' positions.",
+      "Market share objectives mean the firm must acquire every competitor.",
+      "A new entrant's share gain comes at the expense of incumbents' relative positions.",
+      "A stable share in a growing market implies falling absolute sales."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Single-product firms still compete for share in their market.",
+      "FALSE — Share comparisons with rivals assess relative position.",
+      "FALSE — Share objectives do not require acquiring all competitors.",
+      "TRUE — Entrant gains redistribute relative share.",
+      "FALSE — Stable share in a growing market can coincide with rising absolute sales."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.55",
+    "title": "Mental Product Classification",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is compared among firms serving the same customer base.",
+      "Market share is a profitability measure identical to net margin.",
+      "Sales are unimportant to businesses because production costs are funded from share capital alone.",
+      "Holding share in a declining market may require gaining sales while the total shrinks.",
+      "Maintaining or increasing sales is excluded from marketing objectives."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share comparisons use the same market boundary.",
+      "FALSE — Share indicates relative sales position, not profit margin.",
+      "FALSE — Sales revenue is needed to cover production costs.",
+      "TRUE — Shrinking markets make share defence demanding.",
+      "FALSE — Sales maintenance and growth are listed marketing objectives."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.56",
+    "title": "Share Sales Profit Trends",
+    "context": "Review product uniqueness claims that distinguish an offering from similar substitutes. Evaluate the following economic assertions:",
+    "statements": [
+      "Share objectives motivate firms to monitor rival promotional and pricing moves.",
+      "A firm's relative importance falls when its market share declines.",
+      "Revenue from sales is unnecessary for covering production costs if the brand is strong.",
+      "Higher sales always guarantee higher profit with no limitations whatsoever.",
+      "Marketing staff may present share charts to show competitiveness trends to management."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Rival moves matter for share objectives.",
+      "TRUE — Share decline reduces indicated relative importance.",
+      "FALSE — Sales provide revenues that must cover production costs.",
+      "FALSE — The text notes limitations on the sales-profit relationship.",
+      "TRUE — Share charts communicate competitiveness trends."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.57",
+    "title": "Cash Inflow From Volume",
+    "context": "Analyze defensive marketing aimed at holding share against aggressive rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales objectives are met when promotional impressions reach a target audience count.",
+      "Gaining share can strengthen negotiating power with distributors in some industries.",
+      "A business can cover production costs without any sales if inventory is high.",
+      "Increasing sales is unrelated to marketing objectives on profitability.",
+      "Sales volume objectives apply only to firms that do not pursue market share."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales objectives concern units or revenue sold, not impressions alone.",
+      "TRUE — Higher share can improve channel negotiating position.",
+      "FALSE — Costs are covered from sales revenue, not inventory holdings alone.",
+      "FALSE — Sales and profit objectives are interrelated.",
+      "FALSE — Sales and share objectives can coexist."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.58",
+    "title": "Discounting Offsetting Volume Gains",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue from sales exceeds production costs automatically at any positive unit price.",
+      "Marketing campaigns targeting awareness alone fulfil sales volume objectives without selling.",
+      "Share is an objective because it summarises standing versus competitors.",
+      "Sales are important only to not-for-profit organisations, not to profit-seeking firms.",
+      "Satisfied loyal customers help a firm maintain its market share against rivals."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Costs must be compared to revenue; low prices may fail to cover costs.",
+      "FALSE — Sales objectives require actual sales, not awareness alone.",
+      "TRUE — Share summarises competitive standing.",
+      "FALSE — Sales matter to businesses needing revenue to cover costs and profit.",
+      "TRUE — Loyal satisfied buyers support share maintenance."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.59",
+    "title": "Lifecycle Marketing Objectives",
+    "context": "Analyze profit objectives within the broader set of marketing aims a business may pursue. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales volume means keeping production output constant regardless of demand.",
+      "A USP that attracts loyal buyers can support market share objectives.",
+      "Market share data is used to benchmark performance against the competitive set.",
+      "A decline in unit sales indicates success on sales growth objectives.",
+      "Sales revenue and production costs are unrelated in the marketing framework."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales maintenance concerns customer purchases, not production output alone.",
+      "TRUE — USP-driven loyalty can underpin share gains or defence.",
+      "TRUE — Share benchmarks performance within the competitive set.",
+      "FALSE — Declining unit sales indicate failure on sales objectives.",
+      "FALSE — Sales revenue must cover production costs before profit."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.60",
+    "title": "Buy-Again Loyalty Outcomes",
+    "context": "Review how wishes and needs analysis precedes selecting measurable marketing objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Increasing sales requires reducing customer satisfaction to push quick transactions.",
+      "Relative share comparisons matter more than isolated internal sales figures for competitiveness.",
+      "A business may sacrifice short-term profit to invest in share gains.",
+      "Share erosion to a rival with a stronger USP signals differentiation weakness.",
+      "Maintaining share is a marketing objective distinct from merely raising absolute sales."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Satisfaction supports sustainable sales; cutting satisfaction undermines repeat purchase.",
+      "TRUE — Competitiveness assessment uses relative share.",
+      "TRUE — Share investment may temporarily reduce profit.",
+      "TRUE — Share loss to a differentiated rival signals competitive pressure.",
+      "TRUE — Share maintenance differs from absolute sales growth alone."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.61",
+    "title": "Better Than the Rest Positioning",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share reflects how much of the market's total sales the firm captures.",
+      "Competitiveness improves when a firm gains share while rivals lose ground.",
+      "Share targets are set after analysing the market the business wants to operate in.",
+      "A firm with declining satisfaction may see market share fall as customers switch.",
+      "Marketing objectives on share align with wanting a certain portion of market sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Captured portion of market sales defines share.",
+      "TRUE — Relative share shift indicates improved competitiveness.",
+      "TRUE — Market analysis precedes share objective setting.",
+      "TRUE — Dissatisfaction-driven switching reduces share.",
+      "TRUE — Share objectives express desired market portion."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.62",
+    "title": "Relative Not Absolute Share",
+    "context": "Review relative share metrics when comparing firms of different absolute sales sizes. Evaluate the following economic assertions:",
+    "statements": [
+      "Industry reports ranking firms by share illustrate relative importance.",
+      "Sales objectives are independent of market analysis of wishes and needs.",
+      "A firm with rising sales never needs to monitor production costs.",
+      "Sales volume objectives are achieved when warehouse stock levels peak.",
+      "Revenue coverage of costs is irrelevant when pursuing differentiation objectives."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share rankings show relative importance among firms.",
+      "FALSE — Market analysis informs realistic sales objectives.",
+      "FALSE — Rising sales still require cost monitoring for profit objectives.",
+      "FALSE — Stock levels do not equal sales to customers.",
+      "FALSE — Sales revenue remains necessary to cover costs alongside differentiation."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.63",
+    "title": "Ongoing Revenue From Sales",
+    "context": "Analyze the sales-profit relationship subject to cost and pricing constraints. Evaluate the following economic assertions:",
+    "statements": [
+      "Defensive marketing aims to stop share loss to aggressive competitors.",
+      "Share and sales objectives together give absolute and relative performance views.",
+      "A competitiveness review typically examines market share alongside rival trends.",
+      "Gaining share in a mature market often requires taking customers from established rivals.",
+      "Market share is an indicator, not a substitute for profitability analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Defensive efforts target share stabilisation.",
+      "TRUE — Sales and share provide complementary performance lenses.",
+      "TRUE — Competitiveness reviews include share and rival data.",
+      "TRUE — Mature markets require share taken from incumbents.",
+      "TRUE — Share indicates competitiveness but does not replace profit analysis."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.64",
+    "title": "Internal Fund Retention",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales growth from dissatisfied one-time buyers is a sustainable long-run strategy.",
+      "Businesses monitor share because it shows position relative to competitors' positions.",
+      "Unit sales targets are unrelated to quarterly marketing planning.",
+      "Sales are unconnected to profitability because profit comes only from asset sales.",
+      "Maintaining sales means prices must rise every month regardless of demand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Dissatisfied buyers will not sustain long-run sales through repeat purchase.",
+      "TRUE — Share shows position relative to rivals.",
+      "FALSE — Quarterly plans commonly include unit sales targets.",
+      "FALSE — Profit in the framework comes from sales revenue minus costs.",
+      "FALSE — Sales maintenance concerns volume sold, not mandatory monthly price rises."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.65",
+    "title": "Single Objective Trap Cases",
+    "context": "Analyze unique selling propositions that rest on delivery speed, design, or service elements. Evaluate the following economic assertions:",
+    "statements": [
+      "A marketing objective to grow share implies outperforming rivals in relative terms.",
+      "A promotional campaign that raises awareness but not purchases meets sales objectives.",
+      "Sales volume is measured by the number of employees rather than customer purchases.",
+      "Share maintenance can be supported by customer loyalty built through satisfaction.",
+      "Relative importance in the market is the concept market share is meant to convey."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share growth means relative outperformance.",
+      "FALSE — Sales objectives require purchases generating revenue.",
+      "FALSE — Sales volume reflects customer purchases, not headcount.",
+      "TRUE — Loyalty from satisfaction aids share defence.",
+      "TRUE — Share conveys relative market importance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.66",
+    "title": "USP Misclassification Traps",
+    "context": "Review market share erosion as a signal of weakened competitive position. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining or increasing sales is a marketing objective because sales generate revenue.",
+      "Increasing sales is impossible when pursuing customer satisfaction objectives.",
+      "Sales revenue cannot fund production costs if the product is differentiated.",
+      "Sales are important to businesses because revenues must cover production costs.",
+      "A business with zero sales can still meet sales volume objectives through forecasts."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Sales objectives exist because sales produce revenue.",
+      "FALSE — Satisfaction supports repeat sales; the objectives interrelate.",
+      "FALSE — Differentiated products still require sales revenue to cover costs.",
+      "TRUE — Revenue from sales must cover production costs.",
+      "FALSE — Objectives require actual sales performance, not forecasts alone."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.67",
+    "title": "Share Versus Absolute Sales",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales revenue contributes to the ability to make a profit after costs are met.",
+      "A business pursuing higher sales aims to strengthen its revenue inflow.",
+      "Marketing campaigns often target a sales volume increase in a defined period.",
+      "Sales objectives replace the need for any profitability analysis.",
+      "Sales objectives may be stated in units sold or in revenue terms."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — After covering costs, sales revenue enables profit.",
+      "TRUE — Higher sales strengthen revenue inflow.",
+      "TRUE — Campaigns commonly set period sales volume targets.",
+      "FALSE — Sales support but do not replace profitability objectives.",
+      "TRUE — Volume can be measured in units or revenue."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.68",
+    "title": "Profit Without Sales Trap",
+    "context": "Review profit reinvestment as a strategic use of earnings retained in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Without adequate sales, a business cannot cover its production costs from revenue.",
+      "Increasing sales is listed among marketing objectives businesses may pursue.",
+      "Seasonal sales peaks may still align with an overall objective to increase annual volume.",
+      "Revenue from exports does not count toward sales volume objectives.",
+      "Sales growth supports cash inflows needed for day-to-day operations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Insufficient sales leave costs uncovered by revenue.",
+      "TRUE — Sales growth is a recognised marketing objective.",
+      "TRUE — Seasonal peaks contribute to annual volume objectives.",
+      "FALSE — Export sales contribute to total sales volume.",
+      "TRUE — Higher sales improve operational cash inflows."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.69",
+    "title": "Satisfaction Isolation Errors",
+    "context": "Analyze the objective hierarchy in which satisfaction supports loyalty and subsequent sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher sales figures always reduce production costs per unit to zero.",
+      "A promotional discount may be used to lift short-term sales volume.",
+      "Sales growth objectives are unrelated to customer loyalty from satisfaction.",
+      "A temporary sales spike from a failed product satisfies long-term sales objectives.",
+      "Sales targets are set after analysing the market the firm wishes to serve."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Higher sales do not automatically eliminate unit costs.",
+      "TRUE — Discounts can temporarily raise sales volume.",
+      "FALSE — Loyal satisfied customers contribute to sales growth.",
+      "FALSE — Failed products with unsatisfied buyers do not sustain long-term sales.",
+      "TRUE — Market analysis informs sales target setting."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.70",
+    "title": "Differentiation Definition Traps",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue from sales must exceed production costs for profit to be possible.",
+      "Maintaining sales volume can be an objective when a market matures.",
+      "Sales performance is monitored to assess progress toward marketing objectives.",
+      "A decline in unit sales may signal failure on sales-related marketing objectives.",
+      "Higher sales figures usually support profitability, subject to stated limitations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Profit requires sales revenue above production costs.",
+      "TRUE — Mature markets may emphasise volume maintenance.",
+      "TRUE — Sales monitoring tracks objective progress.",
+      "TRUE — Falling unit sales indicate missed sales objectives.",
+      "TRUE — Higher sales generally support profit with noted limitations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.71",
+    "title": "Market Share Purpose Errors",
+    "context": "Analyze share maintenance when entering mature markets with established competitors. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales objectives interrelate with customer satisfaction because repeat buyers add volume.",
+      "Distribution expansion may be pursued to increase sales to new geographic areas.",
+      "A firm may set quarterly sales targets as part of its marketing plan.",
+      "Sales are important because they allow the firm to ignore market share completely.",
+      "Sales volume growth in a new product launch is a common marketing objective."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Repeat buyers from satisfaction add to sales volume.",
+      "TRUE — Geographic expansion can raise sales volume.",
+      "TRUE — Quarterly targets operationalise sales objectives.",
+      "FALSE — Sales complement share objectives; they do not eliminate share relevance.",
+      "TRUE — Launch campaigns often target volume growth."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.72",
+    "title": "Sales Alone Sufficiency Traps",
+    "context": "Review revenue growth objectives tied to covering fixed and variable production costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales requires shutting down marketing expenditure entirely.",
+      "Sales volume and revenue are unrelated concepts in the marketing objectives framework.",
+      "Production costs are covered from government grants rather than sales revenue.",
+      "Revenue coverage of costs is why sales matter beyond mere activity measures.",
+      "Wholesale and retail channels both contribute to the firm's total sales volume."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Sales maintenance typically requires continued marketing activity.",
+      "FALSE — Revenue derives from volume and price together.",
+      "FALSE — Sales revenue covers production costs in the standard business model described.",
+      "TRUE — Sales matter because they fund cost coverage.",
+      "TRUE — Channel sales aggregate into total volume."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.73",
+    "title": "Profitability Link Misstatements",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Increasing sales means profitability objectives become unnecessary.",
+      "A sales objective to maintain volume may apply when supply constraints cap growth.",
+      "Sales objectives are fulfilled when distribution centres are built, regardless of sell-through.",
+      "Marketing spend on advertising may aim to raise sales of a specific product line.",
+      "A firm can make a profit without any sales if customer satisfaction is high."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Profit remains a distinct objective even with rising sales.",
+      "TRUE — Supply limits can shift focus to maintenance.",
+      "FALSE — Sell-through to customers defines sales achievement.",
+      "TRUE — Advertising can target line-level sales increases.",
+      "FALSE — Profit requires sales revenue exceeding costs; satisfaction alone does not replace sales."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.74",
+    "title": "Loyalty Without Satisfaction",
+    "context": "Review post-purchase satisfaction as a predictor of whether customers return. Evaluate the following economic assertions:",
+    "statements": [
+      "Unit sales growth contributes to the revenue pool from which costs are paid.",
+      "Profitability is unrelated to sales because profits come only from borrowed funds.",
+      "Higher sales always reduce profit because production costs rise infinitely with volume.",
+      "Profits cannot be retained in the business for reinvestment under any circumstances.",
+      "Sales data helps managers see whether marketing objectives are being achieved."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Unit growth enlarges the revenue pool for costs.",
+      "FALSE — Profits arise from sales revenue relative to costs, not borrowing alone.",
+      "FALSE — Higher sales usually increase profit subject to limitations, not infinite cost rises.",
+      "FALSE — Profits can be retained and reinvested per the text.",
+      "TRUE — Sales data indicates objective achievement."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.75",
+    "title": "Brand Versus USP Confusion",
+    "context": "Analyze promotional differentiation that shapes how customers classify the product mentally. Evaluate the following economic assertions:",
+    "statements": [
+      "A business with rising sales but rising costs may still miss profit objectives.",
+      "Profitability objectives exclude owner reimbursement for invested capital.",
+      "Marketing objectives never include profitability because marketing only targets awareness.",
+      "A firm with falling sales can always increase profit without any cost changes.",
+      "Retained profit is identical to short-term trade credit from suppliers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Sales growth does not guarantee profit if costs rise.",
+      "FALSE — Profits reimburse owners for invested money.",
+      "FALSE — Profitability is listed among marketing objectives.",
+      "FALSE — Profit typically depends on sales and cost performance together.",
+      "FALSE — Retained profit is internal equity from undistributed profit, not supplier credit."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.76",
+    "title": "Competitor Share Comparisons",
+    "context": "Review competitive benchmarking through market share alongside sales and profit trends. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales is essential for ongoing revenue to fund business activity.",
+      "Profitability and sales objectives are completely unrelated measures.",
+      "Sales objectives complement share objectives by measuring absolute performance.",
+      "Owners are reimbursed through sales volume alone without any profit calculation.",
+      "Promotional bundles may be introduced to stimulate higher sales volume quickly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Ongoing activity requires maintained sales revenue.",
+      "FALSE — Higher sales usually support profit with stated limitations.",
+      "TRUE — Absolute sales complement relative share measures.",
+      "FALSE — Owners are reimbursed through profits, not unit volume alone.",
+      "TRUE — Bundles can stimulate short-term volume."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.77",
+    "title": "Cost Coverage Misunderstandings",
+    "context": "Analyze sales volume increases that strengthen cash inflows before profit is calculated. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment is prohibited when a firm pursues USP objectives.",
+      "Sales revenue flows from customers purchasing the product in the market.",
+      "There are no limitations on the link between higher sales and higher profit.",
+      "A marketing plan without sales targets would omit a core objective category.",
+      "Profitability is achieved when market share reaches fifty percent regardless of costs."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Profit can be reinvested including in brand and differentiation.",
+      "TRUE — Customer purchases generate sales revenue.",
+      "FALSE — The text explicitly notes certain limitations on the sales-profit link.",
+      "TRUE — Sales targets belong in comprehensive marketing plans.",
+      "FALSE — Profit requires revenue exceeding costs, not share alone."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.78",
+    "title": "Reinvestment Objective Errors",
+    "context": "Review limitations on the sales-profit link when discounting or costs offset volume gains. Evaluate the following economic assertions:",
+    "statements": [
+      "Volume sold through online channels counts toward overall sales objectives.",
+      "Sales growth from loyal repeat customers is a sustainable volume source.",
+      "Production must be aligned with sales objectives to avoid unmet demand or excess stock.",
+      "A temporary sales spike from a campaign still counts toward period volume objectives.",
+      "Sales cover variable and fixed production costs when revenue is sufficient."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Online channel sales count in total volume.",
+      "TRUE — Loyal repeat buyers sustainably add volume.",
+      "TRUE — Operations align with sales objective levels.",
+      "TRUE — Campaign spikes contribute to period volume.",
+      "TRUE — Sufficient revenue covers both cost types."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.79",
+    "title": "Repeat Purchase Denials",
+    "context": "Analyze interrelated marketing objectives that reinforce one another across the customer lifecycle. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits are unimportant because owners require no return on invested money.",
+      "A discounting strategy that maximises unit sales always maximises profit simultaneously.",
+      "Profitability objectives conflict with customer satisfaction and cannot coexist.",
+      "Marketing staff may compare actual sales to targeted sales each month.",
+      "Retained earnings from profit cannot finance marketing campaigns."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Profits are important to reimburse owners for invested capital.",
+      "FALSE — Discount-driven volume can reduce unit profitability.",
+      "FALSE — Objectives interrelate and can coexist within marketing planning.",
+      "TRUE — Monthly actual-versus-target comparison tracks sales objectives.",
+      "FALSE — Retained profit can fund marketing and reinvestment."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.80",
+    "title": "Promotion-Only Differentiation",
+    "context": "Review loyalty as an outcome when satisfaction leads customers to buy the product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher sales figures never contribute to profit under any market condition.",
+      "Increasing sales in export markets can be a marketing objective for growth.",
+      "Sales volume objectives may be adjusted after market analysis reveals demand limits.",
+      "Profit is recorded before sales revenue is earned from customers.",
+      "A price reduction might raise unit sales while affecting revenue per unit."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Higher sales usually mean more profit with certain limitations.",
+      "TRUE — Export growth is a valid sales objective.",
+      "TRUE — Demand analysis can revise volume targets.",
+      "FALSE — Revenue from sales precedes profit calculation.",
+      "TRUE — Price cuts can raise units while changing revenue per unit."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.81",
+    "title": "Share Maintenance Denials",
+    "context": "Analyze unique selling propositions that position a product as better than the rest in buyers' minds. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing success is judged only by share gains with no regard to profit.",
+      "Profit reinvestment means paying all revenue to suppliers immediately.",
+      "Profitability requires sales to fall so that costs can be eliminated.",
+      "Owners' invested money is reimbursed through promotional reach metrics.",
+      "Sales are important because they provide the funds to cover production costs and profit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Profitability is a recognised marketing objective alongside share.",
+      "FALSE — Reinvestment retains profit in the business for future use.",
+      "FALSE — Profit generally benefits from adequate sales covering costs.",
+      "FALSE — Owners are reimbursed through profits, not reach metrics.",
+      "TRUE — Sales fund costs and enable profit per the text."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.82",
+    "title": "Volume Profit Assumptions",
+    "context": "Review market share as a relative measure rather than an absolute sales total alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Volume targets at retail level roll up to manufacturer sales objectives.",
+      "A USP guarantees profit without regard to sales volume or costs.",
+      "A business may prioritise sales growth when entering a new customer segment.",
+      "Profitability objectives apply only when the firm has no competitors.",
+      "Retained profit must be distributed entirely to creditors each year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Retail volume aggregates to supplier sales.",
+      "FALSE — USP supports marketing but profit still depends on sales and costs.",
+      "TRUE — New segments often trigger sales growth focus.",
+      "FALSE — Profit objectives apply in competitive markets.",
+      "FALSE — Profit can be retained in the business rather than paid to creditors."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.83",
+    "title": "Objective Hierarchy Mistakes",
+    "context": "Analyze maintaining sales as essential for ongoing revenue to fund business activity. Evaluate the following economic assertions:",
+    "statements": [
+      "Limitations on the sales-profit link mean higher sales always lower profit.",
+      "Sales performance relative to plan indicates marketing effectiveness.",
+      "Revenue objectives are closely tied to sales volume and selling price.",
+      "Profitability is unrelated to marketing because marketing generates only costs.",
+      "Maintaining sales during an economic downturn can be a demanding marketing objective."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Limitations qualify the positive link; they do not reverse it always.",
+      "TRUE — Plan variance shows marketing effectiveness.",
+      "TRUE — Revenue depends on volume and price together.",
+      "FALSE — Marketing aims contribute to profitable sales outcomes.",
+      "TRUE — Downturns make sales maintenance challenging."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.84",
+    "title": "Customer Needs Neglect",
+    "context": "Review profitability enabling owners to be reimbursed and the firm to retain funds internally. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales from repeat purchases reduce dependence on costly new customer acquisition.",
+      "A marketing objective to double sales implies a substantial volume increase target.",
+      "Sales growth supports the broader aim of making a profit after covering costs.",
+      "Trade promotions to retailers may aim to lift sell-through sales volume.",
+      "A firm with high customer satisfaction cannot pursue profitability objectives."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Repeat sales lower acquisition reliance.",
+      "TRUE — Doubling sales is an explicit volume ambition.",
+      "TRUE — Volume growth supports profit after cost coverage.",
+      "TRUE — Trade promos target sell-through volume.",
+      "FALSE — Satisfaction and profitability objectives can be pursued together."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.85",
+    "title": "Perceived Uniqueness Denials",
+    "context": "Analyze how businesses set marketing objectives after analysing the markets they wish to operate in. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales monitoring by region helps allocate marketing resources effectively.",
+      "Volume sold is a direct measure of progress on sales-related marketing objectives.",
+      "Sales revenue must be earned before profit can be distributed or retained.",
+      "A firm may accept lower margin temporarily to achieve a sales volume milestone.",
+      "Marketing objectives on sales recognise that businesses need revenues to operate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Regional sales data guides resource allocation.",
+      "TRUE — Units sold directly measure sales progress.",
+      "TRUE — Profit follows earned sales revenue.",
+      "TRUE — Volume milestones may justify temporary margin sacrifice.",
+      "TRUE — Sales objectives reflect revenue necessity."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.86",
+    "title": "Competitiveness Indicator Traps",
+    "context": "Review the role of customer satisfaction as a marketing objective linked to repeat purchase and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment is the same as issuing new share capital to investors.",
+      "Higher sales from satisfied loyal customers illustrate interrelated marketing objectives.",
+      "Sales targets for a new store opening reflect geographic expansion objectives.",
+      "Volume growth without cost control may fail to improve profitability.",
+      "Sales covering production costs is sufficient for profit with no margin required."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Reinvestment uses retained profit internally, unlike new share issues.",
+      "TRUE — Loyalty-driven sales show objective interrelation.",
+      "TRUE — New store targets express geographic sales aims.",
+      "TRUE — Uncosted volume growth may not improve profit.",
+      "FALSE — Profit requires revenue above costs, not mere cost coverage alone."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.87",
+    "title": "Revenue Flow Assertions",
+    "context": "Analyze how a unique selling proposition supports product differentiation and attracts loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability is a marketing objective because profits reimburse owners for invested money.",
+      "Profits can be retained and reinvested in the business for future growth.",
+      "Usually the higher the sales figures are, the more profit a business will make, with certain limitations.",
+      "Profitability objectives sit alongside satisfaction, differentiation, share, and sales goals.",
+      "Marketing success ultimately contributes to profit when revenues exceed relevant costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Profits return value to owners for their investment.",
+      "TRUE — Retained profits fund reinvestment.",
+      "TRUE — Higher sales generally raise profit subject to limitations.",
+      "TRUE — Profit is one objective among several.",
+      "TRUE — Profit arises when revenue exceeds costs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.88",
+    "title": "Owner Return Misconceptions",
+    "context": "Review why gaining and maintaining market share indicates a firm's relative competitiveness. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability is measured by customer satisfaction scores rather than financial surplus.",
+      "Owners expect profits as compensation for the capital they invested in the firm.",
+      "Retained profit can finance new equipment without raising external finance.",
+      "A profitability target may be expressed as a margin percentage on sales.",
+      "Higher sales support profitability when unit margins and costs remain favourable."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Profit is a financial surplus; satisfaction is a separate objective.",
+      "TRUE — Owner reimbursement is a stated profit rationale.",
+      "TRUE — Retained profit funds internal investment.",
+      "TRUE — Margin percentages operationalise profit targets.",
+      "TRUE — Favourable margins make higher sales support profit."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.89",
+    "title": "Satisfaction Sales Interlink",
+    "context": "Analyze the importance of maintaining or increasing sales to cover production costs and earn profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit objectives acknowledge that sales alone do not guarantee profit in every case.",
+      "Marketing campaigns are assessed partly on whether they improve profitable sales.",
+      "Reinvestment of profit supports long-term marketing and production capacity.",
+      "Profitability is important because it sustains the business for owners and reinvestment.",
+      "Higher sales always eliminate the need to reinvest profit in the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Limitations on the sales-profit link are recognised.",
+      "TRUE — Campaigns should contribute to profitable sales.",
+      "TRUE — Reinvested profit builds future capacity.",
+      "TRUE — Profit sustains the business for owners and growth.",
+      "FALSE — Reinvestment remains valuable even when sales rise."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.90",
+    "title": "USP Loyalty Connection",
+    "context": "Review profitability as a marketing objective and its link to reimbursing owners and reinvestment. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm may reject unprofitable volume that fails margin thresholds.",
+      "Profit objectives are met when advertising spending equals total revenue.",
+      "Owners receive reimbursement only through wages, never through profit.",
+      "Cost increases can offset sales growth and limit profit improvement.",
+      "Profit retained in the business reduces dependence on external borrowing for expansion."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Unprofitable volume may be rejected.",
+      "FALSE — Matching ad spend to revenue does not define profit.",
+      "FALSE — Profits reimburse owners for invested money per the text.",
+      "TRUE — Rising costs can cap profit despite sales growth.",
+      "TRUE — Retention lowers borrowing needs for expansion."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.91",
+    "title": "Relative Importance Measures",
+    "context": "Analyze how customer satisfaction interrelates with other marketing objectives such as sales and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing objectives include profitability because owners need returns on investment.",
+      "Discounting that raises sales volume may reduce profitability per unit sold.",
+      "Profit measurement follows revenue from sales minus the costs of production and marketing.",
+      "A profitability review examines whether marketing spend generated adequate returns.",
+      "Profitability and market share move in opposite directions in every case."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Owner returns motivate profit objectives.",
+      "TRUE — Discount-driven volume can cut unit profitability.",
+      "TRUE — Profit is revenue minus relevant costs.",
+      "TRUE — Marketing ROI forms part of profit review.",
+      "FALSE — Share and profit can both improve or require trade-offs depending on strategy."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.92",
+    "title": "Production Cost Coverage",
+    "context": "Review how product differentiation can rest on product characteristics or on promotion and customer perception. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied loyal customers who buy repeatedly can improve lifetime profitability.",
+      "Profit reinvestment may fund brand-building that supports future differentiation.",
+      "Higher sales figures usually mean more profit, though limitations such as rising costs apply.",
+      "Profitability objectives encourage attention to cost coverage, not only gross revenue.",
+      "Owners may withdraw part of profit as income while retaining the rest in the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Repeat loyal buyers can raise lifetime profit.",
+      "TRUE — Profit can fund brand investment for USP.",
+      "TRUE — The text notes the usual sales-profit link with limitations.",
+      "TRUE — Profit focus requires cost awareness beyond revenue.",
+      "TRUE — Profit can be distributed or retained."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.93",
+    "title": "Profit Limitation Awareness",
+    "context": "Analyze why building a brand supports the creation of a unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "A marketing plan should consider whether sales targets are profit-compatible.",
+      "Profit from one product line can subsidise marketing investment in another line.",
+      "Profitability is linked to sales because sales provide the revenue base for profit calculation.",
+      "Retained earnings from profit strengthen the firm's internal finance for marketing.",
+      "A firm pursuing share at the expense of margin may temporarily reduce profitability."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Targets should align with profit compatibility.",
+      "TRUE — Cross-line profit can fund marketing.",
+      "TRUE — Sales revenue forms the profit calculation base.",
+      "TRUE — Retained profit supports marketing finance.",
+      "TRUE — Share pursuit can temporarily lower profit."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.94",
+    "title": "Integrated Marketing Objective Review",
+    "context": "Review how market share reflects a business position relative to competitors in the same market. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit objectives motivate efficient use of marketing budgets.",
+      "Limitations on the sales-profit link include unfavourable changes in unit costs.",
+      "Profitability allows owners to be compensated while the firm retains funds for growth.",
+      "Marketing staff may track gross profit by product to align with profitability objectives.",
+      "A USP supporting premium pricing can improve profitability if costs are controlled."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Profit aims encourage marketing efficiency.",
+      "TRUE — Unit cost changes limit the sales-profit relationship.",
+      "TRUE — Profit serves both owner compensation and retention.",
+      "TRUE — Product-level gross profit tracks objective progress.",
+      "TRUE — Premium USP can lift profit with cost control."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.95",
+    "title": "Closing Objective Distinctions",
+    "context": "Analyze the relationship between higher sales figures and profitability within stated limitations. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment in production capacity can support future sales growth.",
+      "Profitability is a stated marketing objective in the textbook marketing overview.",
+      "Sales must cover production costs before any profit can be recorded.",
+      "Owners reinvest profit when they expect future returns from expanded operations.",
+      "A decline in profitability despite stable sales may reflect higher input costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Capacity investment links profit retention to sales.",
+      "TRUE — Profit is explicitly listed as a marketing objective.",
+      "TRUE — Cost coverage precedes profit recording.",
+      "TRUE — Reinvestment reflects expected future returns.",
+      "TRUE — Stable sales with falling profit may mean higher costs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.96",
+    "title": "Final Marketing Goals Assessment",
+    "context": "Review why dissatisfied customers are unlikely to buy a product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit targets may be set annually alongside sales and share objectives.",
+      "Marketing that attracts profitable customer segments supports profitability objectives.",
+      "Retained profit is internally generated finance for marketing initiatives.",
+      "The relationship between sales and profit is positive in general but not without exceptions.",
+      "Profitability objectives remind managers that revenue growth must exceed cost growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Annual profit targets accompany other objectives.",
+      "TRUE — Segment choice affects profit outcomes.",
+      "TRUE — Retention provides internal marketing finance.",
+      "TRUE — General positive link with exceptions is stated.",
+      "TRUE — Profit requires revenue growth to beat cost growth."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.97",
+    "title": "Comprehensive Objective Assertions",
+    "context": "Analyze how a unique selling proposition makes a product seem special, unique, or better than alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit cannot support production capacity expansion.",
+      "A profitability objective is fulfilled when the firm has the most employees.",
+      "A business may analyse contribution margin per unit to support profit objectives.",
+      "Marketing that raises sales with rising costs always increases profit.",
+      "Profitability is excluded when businesses analyse customer wishes and needs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Retained profit can be reinvested in the business including capacity.",
+      "FALSE — Profit relates to financial surplus, not headcount.",
+      "TRUE — Contribution margin analysis aids profit planning.",
+      "FALSE — Rising costs can offset sales growth and limit profit gains.",
+      "FALSE — Profit is one objective set alongside market analysis."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.98",
+    "title": "Late-Stage USP and Share Cases",
+    "context": "Review the marketing objective of maintaining sales volume to generate revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits reimburse owners and can be ploughed back into the business per the text.",
+      "Marketing objectives on profit recognise limitations when discounting erodes margins.",
+      "Higher sales volume increases the revenue pool from which profit is calculated after costs.",
+      "Profit retention funds improvements that may later support customer satisfaction.",
+      "Profits are important only for tax purposes and not for reinvestment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Owner reimbursement and reinvestment are both noted.",
+      "TRUE — Discount erosion is a profit limitation.",
+      "TRUE — Larger revenue pool supports profit after costs.",
+      "TRUE — Reinvestment can later improve satisfaction.",
+      "FALSE — Profits can be retained and reinvested in the business."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.99",
+    "title": "Terminal Profit and Sales Review",
+    "context": "Analyze how retained profit from higher sales can be reinvested in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability assessment includes whether marketing achieved cost-effective sales growth.",
+      "Owners' invested money is reimbursed through profits earned from successful operations.",
+      "A firm may delay profit growth while investing heavily in brand and USP development.",
+      "Profit reinvestment is a strategic use of earnings kept within the business.",
+      "Limitations on sales-driven profit include simultaneous increases in marketing expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost-effective growth matters for profit.",
+      "TRUE — Operations generate profit that reimburses owners.",
+      "TRUE — Brand investment may defer near-term profit.",
+      "TRUE — Retained earnings serve strategic reinvestment.",
+      "TRUE — Higher marketing spend can limit profit from sales growth."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.100",
+    "title": "Marketing Case 100",
+    "context": "Review the interdependence of customer satisfaction, differentiation, market share, sales, and profitability objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability and sales objectives are interrelated but not identical measures.",
+      "Marketing performance should ultimately contribute to sustainable profitability.",
+      "Retained profit strengthens the balance sheet for future marketing campaigns.",
+      "Profit per unit may fall even when total sales volume rises if prices are cut sharply.",
+      "Marketing objectives exclude profitability whenever sales volume targets are set."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Sales and profit relate but differ.",
+      "TRUE — Sustainable profit is the long-run marketing contribution.",
+      "TRUE — Balance sheet strength supports future campaigns.",
+      "TRUE — Sharp price cuts can reduce unit profit despite volume.",
+      "FALSE — Profitability remains a valid objective alongside sales volume targets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  }
+]

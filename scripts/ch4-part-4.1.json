@@ -1,0 +1,1452 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.01",
+    "title": "Sole Proprietorship Ownership and Management",
+    "context": "Analyze how a sole proprietorship concentrates ownership and operational control in a single individual. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship is a business owned by one person who also manages and runs the business.",
+      "The sole proprietor can make all management decisions without necessarily having to consider other opinions.",
+      "Because the business is not a legal entity of its own, profits are reported on the owner's personal income tax statement.",
+      "A sole proprietorship is a separate legal person that files corporate income tax independently of the owner.",
+      "Retirement or long-term illness of the sole proprietor may create continuity problems for the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Ownership and day-to-day management rest with a single proprietor.",
+      "TRUE — Centralised control allows the proprietor to decide without mandatory consultation.",
+      "TRUE — Without separate legal personality, business profits are taxed as personal income.",
+      "FALSE — A sole proprietorship lacks separate legal personality and is not taxed as a corporation.",
+      "TRUE — Dependence on one manager creates continuity risk when the proprietor retires or falls ill."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.02",
+    "title": "Establishment Requirements and Liability Exposure",
+    "context": "Consider a neighbourhood bakery operated as a sole proprietorship with one owner-manager and a small team of assistants. Evaluate the following economic assertions:",
+    "statements": [
+      "Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business.",
+      "Limited liability protects the sole proprietor's private assets so creditors may claim only assets formally recorded as business property.",
+      "Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid.",
+      "Incorporating as a sole proprietorship grants the owner limited liability equal to the capital originally invested.",
+      "Trade credit from suppliers eliminates the sole proprietor's liability for those purchase obligations."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — No minimum capital requirement makes sole proprietorships straightforward to set up.",
+      "FALSE — Sole proprietors face unlimited liability; private assets are also at stake.",
+      "TRUE — Personal assets can be used to satisfy creditors when business funds fall short.",
+      "FALSE — Sole proprietorships remain unincorporated and carry unlimited, not limited, liability.",
+      "FALSE — Trade credit is a liability the sole proprietor must repay according to the supplier agreement."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.03",
+    "title": "Legal Status and Tax Treatment",
+    "context": "Review the legal and fiscal position of a sole proprietorship compared with incorporated business forms. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship is not a legal entity of its own separate from the business owner.",
+      "The owner pays tax on the profits that are earned from the business through the personal income tax statement.",
+      "Management of the business largely depends on the sole proprietor, who retains responsibility for the most important decisions.",
+      "Because profits pass directly to the owner for tax purposes, the business cannot hire employees or enter supplier contracts.",
+      "If the sole proprietor needs support, he or she can hire personnel while still bearing the central management role."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The firm lacks independent legal personality distinct from its owner.",
+      "TRUE — Business profits are assessed as the proprietor's personal taxable income.",
+      "TRUE — Key strategic and management choices remain with the sole proprietor.",
+      "FALSE — Lack of separate legal personality does not prevent hiring staff or contracting with suppliers.",
+      "TRUE — Personnel may be employed, yet the proprietor keeps ultimate decision authority and risk."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.04",
+    "title": "Single Owner Control and Staffing",
+    "context": "Analyze management authority within a sole proprietorship when the owner employs assistants for daily operations. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor may hire personnel when additional support is required to run the business.",
+      "Hiring staff transfers unlimited liability for business debts entirely to the employees rather than the owner.",
+      "Even with hired personnel, it remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "The sole proprietor can make all management decisions and does not necessarily have to consider other opinions.",
+      "Continuity of the business may be disrupted when the sole proprietor cannot continue managing due to long-term illness."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Sole proprietors may recruit employees to support operations.",
+      "FALSE — Employees do not assume the proprietor's unlimited liability for business obligations.",
+      "TRUE — Ultimate decisions and business risk stay with the sole proprietor despite hired help.",
+      "TRUE — Centralised authority allows unilateral management choices.",
+      "TRUE — Reliance on one manager creates continuity risk during prolonged absence."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.05",
+    "title": "Misconceptions About Sole Trader Status",
+    "context": "Review common claims about what sole proprietorship status implies for liability, taxation, and legal personality. Evaluate the following economic assertions:",
+    "statements": [
+      "Registering a business name as a sole proprietorship converts the firm into an incorporated legal person with its own tax identity.",
+      "Profits earned by a sole proprietorship are directly reported on the business owner's personal income tax statement.",
+      "A sole proprietorship requires substantial minimum share capital before the owner may begin trading legally.",
+      "Limited liability protects a sole proprietor's private home from creditors when business debts exceed available firm assets.",
+      "Two persons who wish to share tasks and risk equally should choose a sole proprietorship rather than a partnership."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A sole proprietorship remains unincorporated and is not a separate legal entity.",
+      "TRUE — Without corporate personality, profits are taxed as the owner's personal income.",
+      "FALSE — There are no financial requirements to start a sole proprietorship.",
+      "FALSE — Sole proprietors face unlimited liability; private assets are also at stake.",
+      "FALSE — Shared ownership and equal responsibilities align with a partnership structure, not sole tradership."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.06",
+    "title": "Continuity Risk and Decision Authority",
+    "context": "Consider operational continuity when a sole trader plans retirement after years of running a local repair workshop. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship automatically continues unchanged when the owner retires without any transfer arrangement.",
+      "Continuity problems may occur if the sole proprietor wants to retire or suffers a long-term illness.",
+      "Because one person owns and manages the firm, succession planning is always simpler than in structures with transferable shares.",
+      "Retirement of the sole proprietor has no effect on business continuity because staff can legally assume ownership without transfer.",
+      "The management of the business largely depends on the sole proprietor, who retains the most important decision rights."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Business continuity depends on the proprietor; retirement creates continuity problems without transfer.",
+      "TRUE — Single-person dependence creates vulnerability at retirement or prolonged illness.",
+      "FALSE — Lack of separate shares or partners can complicate orderly succession.",
+      "FALSE — Staff cannot automatically become owners; ownership rests with the sole proprietor.",
+      "TRUE — Central management authority remains with the sole proprietor throughout operations."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.07",
+    "title": "Unlimited Liability in Practice",
+    "context": "Analyze how creditor claims against a failing sole proprietorship may extend beyond business assets. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor is liable for all debts and obligations of the business under unlimited liability.",
+      "Unlimited liability applies only to short-term trade credit and not to long-term bank loans secured by property.",
+      "Creditors usually ask for assets that can serve as collateral, especially for long-term credit.",
+      "Private assets of the sole proprietor are also at stake if the business fails and debts need to be repaid.",
+      "Pledging collateral for a bank loan fully exempts all remaining private assets from any further creditor claims."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Unlimited liability makes the proprietor responsible for all business debts.",
+      "FALSE — Unlimited liability covers all debts and obligations, including long-term secured credit.",
+      "TRUE — Long-term lenders commonly demand collateral such as land or property.",
+      "TRUE — Creditors may reach personal property when business funds are insufficient.",
+      "FALSE — Collateral reduces lender risk but does not remove broader unlimited liability exposure."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.08",
+    "title": "Personal Taxation of Business Profits",
+    "context": "Review how fiscal treatment links sole proprietorship earnings to the owner's personal tax affairs. Evaluate the following economic assertions:",
+    "statements": [
+      "Because the sole proprietorship is not a legal entity, profits are reported on the owner's personal income tax statement.",
+      "Operating as a sole proprietorship exempts the owner from income tax on business profits entirely.",
+      "The owner pays tax on the profits earned from the business rather than through a separate corporate tax return.",
+      "Business profits and the proprietor's other personal income may appear on the same personal tax assessment.",
+      "Separate legal personality is required before profits can be taxed as personal income of the owner."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Absence of corporate personality routes profits to personal taxation.",
+      "FALSE — Business profits remain taxable as the owner's personal income.",
+      "TRUE — The proprietor pays income tax on business earnings as personal income.",
+      "TRUE — Combined personal reporting reflects the unincorporated structure.",
+      "FALSE — Sole proprietorships lack separate legal personality yet profits are taxed personally."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.09",
+    "title": "Core Features of Sole Trader Businesses",
+    "context": "Analyze the defining characteristics of sole proprietorship as described in business ownership theory. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners.",
+      "Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start.",
+      "The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement.",
+      "Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid.",
+      "If the sole proprietor needs support, personnel may be hired while the proprietor retains key management decisions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — One person owns and runs the business in a sole proprietorship.",
+      "TRUE — Minimal formal capital requirements facilitate establishment.",
+      "TRUE — Profits flow to the owner's personal tax without corporate separation.",
+      "TRUE — Creditors may reach personal property under unlimited liability.",
+      "TRUE — Staff may assist operations but the proprietor keeps decisive authority."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.10",
+    "title": "Legal Personality and Liability Distinctions",
+    "context": "Review distinctions between unincorporated sole traders and incorporated companies regarding legal status and creditor protection. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name.",
+      "Profits of a sole proprietorship are reported on the business owner's personal income tax statement.",
+      "Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid.",
+      "Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses.",
+      "Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Without incorporation, the business is not an independent legal person.",
+      "TRUE — Taxation follows the owner personally because there is no separate entity.",
+      "TRUE — Unlimited liability exposes personal wealth to business failure.",
+      "TRUE — No minimum capital requirement lowers barriers to starting a sole tradership.",
+      "TRUE — Dependence on one manager creates continuity risk."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.11",
+    "title": "Management Concentration and Risk Bearing",
+    "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor can make all management decisions without necessarily consulting other owners.",
+      "It remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "Management of the business largely depends on the sole proprietor rather than on a separate board of directors.",
+      "Even when administrative tasks are delegated, the proprietor retains authority over the most important management decisions.",
+      "Hiring personnel means the employees rather than the proprietor decide the firm's strategic direction."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — No co-owners require consultation for management choices.",
+      "TRUE — Ultimate decisions and risk remain with the sole proprietor.",
+      "TRUE — There is no corporate board; the proprietor directs the firm.",
+      "TRUE — Delegation of routine work does not remove the proprietor's decisive role.",
+      "FALSE — Employees execute tasks; strategic authority stays with the proprietor."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.12",
+    "title": "Establishment Ease and Business Continuity",
+    "context": "Analyze why sole proprietorships appeal for small start-ups yet pose succession challenges over time. Evaluate the following economic assertions:",
+    "statements": [
+      "Sole proprietorships are easy to establish because there are no financial requirements to start this kind of business.",
+      "A sole proprietorship is owned and managed by one person who bears the central operational responsibility.",
+      "Stepping away through retirement or prolonged illness may interrupt continuity in a sole proprietorship.",
+      "Extra money can be sought from investors and/or from banks when personal funds prove insufficient.",
+      "Because the firm is not a legal entity, profits are taxed on the owner's personal income tax statement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Minimal entry barriers make sole tradership accessible for small ventures.",
+      "TRUE — Single ownership and management define the structure.",
+      "TRUE — Reliance on one individual creates succession and continuity risk.",
+      "TRUE — Investors and banks can supply finance when personal resources are insufficient.",
+      "TRUE — Unincorporated status routes profits to personal taxation."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.13",
+    "title": "Creditor Claims and Collateral Exposure",
+    "context": "Review how secured and unsecured borrowing affects a sole proprietor when revenue falls short of repayment obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "Listing a trading name transforms a sole proprietorship into a corporation with its own legal personality.",
+      "A sole proprietorship remains unincorporated even when the owner registers for tax and hires multiple employees.",
+      "The sole proprietor pays personal income tax on business profits because the business is not a legal entity of its own.",
+      "All kinds of credit, short-term as well as long-term, are liabilities for the sole proprietor.",
+      "Collateral requirements apply only to internal sources of finance such as retained profit."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Registration of a name does not create separate legal personality.",
+      "TRUE — Hiring staff and tax registration do not incorporate the business.",
+      "TRUE — Unincorporated status routes profits to personal income tax.",
+      "TRUE — Every credit arrangement creates a repayment liability for the proprietor.",
+      "FALSE — Retained profit is internal finance and involves no creditor collateral."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.14",
+    "title": "Ownership Structure Compared With Partnership",
+    "context": "Analyze when sole proprietorship is appropriate versus partnership for persons planning a jointly managed venture. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship suits one owner who both manages the business and accepts the associated risk.",
+      "A sole proprietorship allows two equal co-owners to divide management rights without a partnership agreement.",
+      "A sole proprietorship is the appropriate structure when several investors seek limited liability through transferable shares.",
+      "Two persons who want to share tasks and risk with equal rights would better realise their business as a partnership.",
+      "Partnerships are unnecessary when two founders can rely on sole proprietorship rules to share ownership equally."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Single ownership and management align with sole tradership.",
+      "FALSE — Sole proprietorship has one owner; co-ownership requires a different structure.",
+      "FALSE — Limited liability and share transfer belong to incorporated forms, not sole tradership.",
+      "TRUE — Shared tasks, risk, and equal rights fit a partnership rather than sole ownership.",
+      "FALSE — Joint founding with equal rights requires a partnership agreement, not sole tradership."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.15",
+    "title": "Tax Reporting Without Corporate Personality",
+    "context": "Review fiscal consequences when a business lacks separate legal personality from its owner. Evaluate the following economic assertions:",
+    "statements": [
+      "Business profits of an unincorporated sole trader flow directly onto the owner's personal income tax statement.",
+      "The owner pays tax on profits earned from the business because the firm is not a separate legal entity.",
+      "Personal income tax treatment means the sole proprietorship must issue dividends to the owner before tax is due.",
+      "Operating without corporate personality does not exempt the proprietor from tax on business profits.",
+      "A separate corporate tax return is required for every sole proprietorship regardless of legal status."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Unincorporated profits flow to the owner's personal tax.",
+      "TRUE — Absence of legal separation links business profit to personal taxation.",
+      "FALSE — Dividends are a corporate concept; sole traders report profits directly as personal income.",
+      "TRUE — Business profits remain taxable even without incorporation.",
+      "FALSE — Sole proprietorships report through personal income tax, not a corporate return."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.16",
+    "title": "Liability Scope Across Credit Types",
+    "context": "Consider a sole trader using supplier trade credit, a bank overdraft, and a property-backed long-term loan simultaneously. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit from a supplier never requires repayment because deferred payment is a grant from the supplier.",
+      "Trade credit from a supplier creates a short-term liability that the sole proprietor must honour.",
+      "Long-term bank loans secured by land are excluded from unlimited liability because collateral protects the owner completely.",
+      "If the business fails, private assets are also at stake when debts need to be repaid beyond available business funds.",
+      "All kinds of credit, whether short-term or long-term, remain obligations of the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Trade credit must be repaid within the agreed supplier credit period.",
+      "TRUE — Supplier credit is a payable liability under the agreed terms.",
+      "FALSE — Collateral reduces lender risk but unlimited liability still exposes the proprietor broadly.",
+      "TRUE — Personal assets can satisfy creditors when business assets are insufficient.",
+      "TRUE — Every credit form creates proprietor liability."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.17",
+    "title": "Single-Owner Misclassification Traps",
+    "context": "Review assertions that confuse sole proprietorship with incorporated or partnership structures. Evaluate the following economic assertions:",
+    "statements": [
+      "Registering a commercial trading name automatically gives a sole proprietorship separate corporate legal personality.",
+      "Two friends planning equal management shares should form a sole proprietorship rather than a partnership.",
+      "Because the firm lacks separate legal personality, business profits are assessed as the proprietor's personal income.",
+      "Incorporated limited liability automatically applies once a sole trader opens a business bank account.",
+      "Hiring several employees automatically incorporates a sole proprietorship as a limited liability company."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Registration of a name does not create separate legal personality.",
+      "FALSE — Equal shared management requires a partnership or other multi-owner form.",
+      "TRUE — Unincorporated status routes profits to personal income tax.",
+      "FALSE — A bank account alone does not confer limited liability or incorporation.",
+      "FALSE — Employment does not change legal structure or liability status."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.18",
+    "title": "Basic Establishment and Tax Facts",
+    "context": "Analyze foundational facts about starting and taxing a sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Mandatory minimum share capital must be deposited before any sole proprietorship may legally commence trading.",
+      "A sole proprietorship is a separate legal person that must file corporate income tax independently of the owner.",
+      "Limited liability protects the sole proprietor when business debts exceed assets held in the business name.",
+      "The owner pays tax on profits earned from the business through personal income taxation.",
+      "Corporate income tax is assessed on sole proprietorship profits in a separate return from the owner's personal affairs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — No financial requirements apply to starting a sole proprietorship.",
+      "FALSE — Sole proprietorships lack separate legal personality and are not taxed as corporations.",
+      "FALSE — Sole proprietors carry unlimited liability extending to private assets.",
+      "TRUE — Business earnings are taxed as the proprietor's personal income.",
+      "FALSE — There is no separate corporate tax entity for a sole trader."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.19",
+    "title": "Integrated Sole Trader Profile",
+    "context": "Review the combined legal, managerial, and fiscal profile of a typical sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "One person owns, manages, and runs the business while retaining the most important decision authority.",
+      "Without separate legal personality, business profits are assessed on the owner's personal income tax statement.",
+      "No minimum capital requirement applies when establishing a sole proprietorship for a small business.",
+      "Unlimited liability means private assets are also at stake if business debts must be repaid.",
+      "Continuity problems may occur when the sole proprietor retires or suffers long-term illness."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Ownership and management converge in one individual.",
+      "TRUE — Unincorporated profits are personal taxable income.",
+      "TRUE — No minimum capital is required to begin trading.",
+      "TRUE — Creditors may reach beyond business assets under unlimited liability.",
+      "TRUE — Single-person dependence creates continuity risk."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.20",
+    "title": "Finance Classification Nuances",
+    "context": "Analyze how internal and external sources of finance apply to a sole proprietorship funding expansion. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit reinvested in the business counts as an internal source of finance for the sole proprietorship.",
+      "The owner's initial investment from personal savings is classified as an external source of finance.",
+      "Retained earnings and sale of unused assets are external sources because they originate outside the business.",
+      "Bank credit is internal finance for a sole proprietorship because borrowed money is deposited in the business bank account.",
+      "Internal sources of finance avoid financial charges such as interest that apply to borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Profit kept in the firm supplies internal finance once operations generate surplus.",
+      "TRUE — Owner investment from outside the operating cycle is external finance.",
+      "FALSE — Retained profit and asset sales are internal sources generated within the business.",
+      "FALSE — Bank credit is external finance regardless of which account receives the funds.",
+      "TRUE — Internal funds do not carry interest charges unlike creditor finance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.21",
+    "title": "Short-Term and Long-Term Credit Instruments",
+    "context": "Review credit instruments commonly available to sole proprietors from banks and suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "A bank overdraft is a flexible short-term credit instrument once a business bank account has been opened.",
+      "Trade credit allows a business to defer payment for purchases according to an agreement with the supplier.",
+      "Interest on a bank overdraft is paid only when the account is overdrawn.",
+      "Long-term bank loans are often based on land and property serving as collateral through a mortgage arrangement.",
+      "Trade credit from suppliers is classified as long-term debt finance because payment is deferred."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Overdraft facilities provide flexible short-term withdrawal beyond the account balance.",
+      "TRUE — Suppliers may grant a credit period before payment is due.",
+      "TRUE — Overdraft interest accrues when the account balance falls below zero.",
+      "TRUE — Property-backed mortgages commonly secure long-term bank lending.",
+      "FALSE — Trade credit typically covers short-term purchase obligations, not long-term finance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.22",
+    "title": "Starting Capital and Owner Savings",
+    "context": "Consider a new sole trader who funds start-up costs primarily from personal savings before seeking bank support. Evaluate the following economic assertions:",
+    "statements": [
+      "Most sole proprietors invest their own savings in their business as an external source of finance.",
+      "If the sole proprietor lacks financial funds, setting up the business will be very difficult.",
+      "Personal savings invested at start-up are internal finance because they are generated from earlier business profits.",
+      "No financial requirements to start a sole proprietorship mean the owner never contributes personal capital.",
+      "Financial capability of the sole proprietor has no bearing on funds available to the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Owner savings are a common external funding source at establishment.",
+      "TRUE — Limited personal funds constrain the ability to launch and operate.",
+      "FALSE — Start-up savings are owner investment (external), not retained operating profit (internal).",
+      "FALSE — Voluntary owner investment from savings is common despite no minimum rule.",
+      "FALSE — Available funds largely reflect the proprietor's financial capacity."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.23",
+    "title": "Internal Versus External Finance Boundaries",
+    "context": "Analyze classification of finance sources once a sole proprietorship is operating and generating revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Sale of assets that are no longer needed is classified as external finance provided by creditors.",
+      "The owner's investment from savings is internal finance because the owner and the business are the same legal person.",
+      "Retained profit that is reinvested rather than withdrawn by the proprietor supplies internal finance.",
+      "Investor funds and creditor loans from banks are internal sources because they are deposited in the business account.",
+      "Internal sources of finance require paying market interest rates to the proprietor acting as a lender."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Proceeds from disposing unused assets are internal funds, not external creditor finance.",
+      "FALSE — Owner investment is external finance even though ownership is unified.",
+      "TRUE — Reinvested profit remains inside the business as internal finance.",
+      "FALSE — Investors and banks provide external finance regardless of the receiving account.",
+      "FALSE — Internal finance avoids interest charges; it is not a loan from the owner-as-creditor."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.24",
+    "title": "Comprehensive Finance and Liability Picture",
+    "context": "Review how sole proprietors combine internal funds, owner investment, and creditor finance while bearing personal liability. Evaluate the following economic assertions:",
+    "statements": [
+      "The owner's investment and funds from investors and creditors are external sources of finance.",
+      "Retained profit and sale of unneeded assets are internal sources of finance once operations generate surplus.",
+      "All kinds of credit, short-term and long-term, are liabilities for the sole proprietor.",
+      "If revenues exceed expenses, profit can be retained and reinvested unless the sole proprietor withdraws it.",
+      "Unlimited liability still applies to the sole proprietor whether finance is sourced internally or externally."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Owner, investor, and creditor funds enter from outside accumulated internal surplus.",
+      "TRUE — Retained earnings and asset sales fund the firm from within.",
+      "TRUE — Every credit arrangement creates repayment obligations for the proprietor.",
+      "TRUE — Surplus profit may be reinvested or taken by the proprietor.",
+      "TRUE — Unlimited liability persists regardless of whether finance is internal or external."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.25",
+    "title": "Easy Start-Up and Operating Finance Mix",
+    "context": "Analyze how low entry barriers interact with later financing choices for a small sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Entry as a sole trader is straightforward because no financial requirements must be met before starting this type of business.",
+      "Most sole proprietors invest their own savings when launching the venture.",
+      "Extra money can be sought from investors and/or from banks when personal funds are insufficient.",
+      "Once operating, internal sources such as retained profit may supplement external borrowing.",
+      "Lenders extending long-term credit commonly require assets that can serve as collateral."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — No minimum capital requirement simplifies start-up.",
+      "TRUE — Personal savings commonly seed the business.",
+      "TRUE — Investors and banks provide additional external funds when needed.",
+      "TRUE — Operating surplus can be reinvested alongside external finance.",
+      "TRUE — Long-term lenders commonly demand security such as land or property."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.26",
+    "title": "Retained Profit and Reinvestment Options",
+    "context": "Consider a profitable sole trader deciding whether to withdraw earnings or fund new equipment from surplus. Evaluate the following economic assertions:",
+    "statements": [
+      "When revenues exceed expenses, the business makes a profit that can be retained and reinvested.",
+      "Profit retained in the business rather than withdrawn by the proprietor counts as internal finance.",
+      "The sole proprietor may take profit out of the business instead of reinvesting it for expansion.",
+      "Retained profit reinvested avoids the financial charges associated with creditor borrowing.",
+      "Using internally generated funds avoids interest payments that external creditors would charge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Operating surplus creates profit available for retention or withdrawal.",
+      "TRUE — Reinvested earnings are an internal funding source.",
+      "TRUE — The proprietor may withdraw profit rather than retain it.",
+      "TRUE — Internal funds avoid borrowing costs such as interest.",
+      "TRUE — Internal finance carries no creditor interest charges."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.27",
+    "title": "Collateral and Creditor Lending Terms",
+    "context": "Review lending conditions when a sole proprietor requests long-term bank finance secured against property. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit is never accepted as security and therefore collateral applies only to external borrowing.",
+      "Financial institutions typically require pledgeable assets as collateral when granting long-term credit.",
+      "Property-backed mortgages commonly secure long-term bank lending to sole proprietors.",
+      "The creditor provides money for a certain time period that must be repaid according to the agreement, usually with interest.",
+      "If private property served as mortgage collateral, it remains at stake when the business cannot repay the loan."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Retained profit is internal finance and involves no creditor collateral.",
+      "TRUE — Lenders commonly demand security for longer-term exposure.",
+      "TRUE — Mortgages on land and property frequently back long-term loans.",
+      "TRUE — Credit agreements specify repayment periods and interest as the rate of return.",
+      "TRUE — Mortgaged private property can be claimed upon default."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.28",
+    "title": "Isolated Liability Principle",
+    "context": "Analyze the single correct principle about creditor reach when a sole proprietorship becomes insolvent. Evaluate the following economic assertions:",
+    "statements": [
+      "When business debts exceed firm resources, unlimited liability allows creditors to reach the sole proprietor's private assets.",
+      "Incorporating informally as a sole trader limits creditor claims to assets formally recorded on the business balance sheet.",
+      "Employees hired by the sole proprietor share unlimited liability for all business obligations equally with the owner.",
+      "Trade credit obligations disappear automatically when the sole proprietorship is not a separate legal entity.",
+      "Unlimited liability applies only when the sole proprietorship borrows from external creditors."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Unlimited liability extends creditor reach to personal property.",
+      "FALSE — Sole proprietorships are unincorporated and do not confer limited liability.",
+      "FALSE — Employees do not assume the proprietor's unlimited liability.",
+      "FALSE — Lack of legal personality does not cancel trade credit liabilities.",
+      "FALSE — Unlimited liability covers all business debts, not only external borrowing."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.29",
+    "title": "Overdraft Mechanics for Sole Traders",
+    "context": "Consider a sole proprietor using a bank overdraft to bridge seasonal cash-flow gaps between customer receipts. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a business current account is opened, an overdraft facility can provide flexible short-term credit for cash shortfalls.",
+      "An overdraft facility converts the sole proprietorship into a corporation with limited liability.",
+      "Because overdrafts are short-term, they are not counted among the proprietor's business liabilities.",
+      "Overdraft interest is charged on the full account balance even when the balance remains positive.",
+      "A bank overdraft is classified as internal finance because it uses the proprietor's own bank account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Overdrafts are flexible short-term credit linked to a business bank account.",
+      "FALSE — Overdraft arrangements do not change legal structure or liability.",
+      "FALSE — Short-term credit still counts as a liability.",
+      "FALSE — Overdraft interest applies only when the account is overdrawn, not on positive balances.",
+      "FALSE — Overdrafts are external short-term credit from the bank, not internal finance."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.30",
+    "title": "Trade Credit and Supplier Agreements",
+    "context": "Analyze trade credit as a short-term financing arrangement between a sole trader and material suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit is based on an agreement with the supplier allowing deferred payment for purchases.",
+      "Trade credit carries no repayment obligation because it is classified as internal finance.",
+      "Supplier trade credit removes the need for the sole proprietor to manage cash-flow timing.",
+      "Outstanding supplier balances from trade credit are external short-term liabilities until payment is made.",
+      "A business using trade credit does not have to pay all purchases immediately but receives a credit period."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Supplier agreements define deferred payment terms.",
+      "FALSE — Trade credit is external short-term finance, not internal.",
+      "FALSE — Trade credit assists timing but repayment obligations remain.",
+      "TRUE — Payables to suppliers are liabilities of the sole proprietor.",
+      "TRUE — Purchases may be settled after an agreed credit period."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.31",
+    "title": "Owner Investment and Investor Funds",
+    "context": "Review external finance available when a sole proprietor seeks capital beyond personal savings. Evaluate the following economic assertions:",
+    "statements": [
+      "The owner's investment from personal funds is an external source of finance for the sole proprietorship.",
+      "Financial funds from investors who provide capital to the business are external sources of finance.",
+      "Funds from creditors such as banks are external sources that must be repaid according to the credit agreement.",
+      "Limited personal wealth makes it very difficult for a sole proprietor to set up the business.",
+      "Launching a sole tradership typically begins with the proprietor's own savings as initial funding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Owner injection from personal wealth is external to operating surplus.",
+      "TRUE — Investor contributions enter from outside the firm.",
+      "TRUE — Bank credit is external finance creating repayment duties.",
+      "TRUE — Insufficient personal funds constrain establishment.",
+      "TRUE — Personal savings commonly provide initial external finance at launch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.32",
+    "title": "Internal Finance Advantages",
+    "context": "Analyze why reinvested earnings and asset disposals matter for a sole proprietorship avoiding borrowing costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal sources of finance are important because no financial charges such as interest have to be paid.",
+      "Retained profit reinvested in the business is an internal source of finance once revenues exceed expenses.",
+      "Sale of assets that are not needed anymore can provide internal finance for the sole proprietorship.",
+      "Disposing of surplus equipment can release internal funds for reinvestment without borrowing from creditors.",
+      "Using internal finance means the sole proprietor no longer bears unlimited liability for business debts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Internal funds avoid borrowing costs like interest.",
+      "TRUE — Reinvested surplus is generated within operations.",
+      "TRUE — Disposing unused assets releases internal funds.",
+      "TRUE — Asset sales supply internal finance without external borrowing.",
+      "FALSE — Liability structure is unchanged by the finance source used."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.33",
+    "title": "Short-Term Versus Long-Term Credit Duration",
+    "context": "Review how banks classify credit duration for sole proprietorship borrowing arrangements. Evaluate the following economic assertions:",
+    "statements": [
+      "Banks offer only long-term credit to sole proprietors and never short-term facilities with duration less than a year.",
+      "A bank overdraft is among the most common forms of short-term credit for a sole proprietorship.",
+      "Trade credit from suppliers typically functions as short-term finance for purchase obligations.",
+      "Short-term credit is never recorded as a liability for the sole proprietor because it is repaid quickly.",
+      "Long-term mortgage loans cease to be liabilities once land and property are pledged as collateral."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Banks offer both short-term and long-term credit to sole proprietors.",
+      "TRUE — Overdrafts are a standard short-term facility.",
+      "TRUE — Supplier credit periods cover near-term purchases.",
+      "FALSE — Short-term credit remains a liability until repaid.",
+      "FALSE — Mortgage loans remain liabilities despite property collateral."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.34",
+    "title": "Finance Source Classification Traps",
+    "context": "Analyze subtle distinctions between owner savings, retained profit, and creditor funds for sole traders. Evaluate the following economic assertions:",
+    "statements": [
+      "Most sole proprietors invest their own savings as an external source of finance when starting the business.",
+      "Owner savings at start-up and retained profit from later years are both classified as internal finance.",
+      "Retained profit reinvested after successful trading is an internal source of finance.",
+      "Bank credit and trade credit are internal sources once the funds are held in the business bank account.",
+      "Investor funds obtained when personal savings are insufficient are internal sources of operating cash."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Initial savings are owner investment from outside operating surplus.",
+      "FALSE — Start-up savings are external; only later retained profit is internal.",
+      "TRUE — Reinvested earnings originate within the business.",
+      "FALSE — Creditor and supplier credit are external liabilities.",
+      "FALSE — Investor capital supplements owner funds from outside."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.35",
+    "title": "Operating Surplus and Asset Disposal",
+    "context": "Consider a sole trader reinvesting earnings and selling obsolete equipment to fund working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "When revenues exceed expenses, profit can be retained and reinvested unless withdrawn by the sole proprietor.",
+      "Sale of assets no longer needed provides internal finance without incurring interest charges.",
+      "Internal sources of finance avoid financial charges such as interest paid on borrowed funds.",
+      "Reinvested surplus can fund operations without creating creditor liabilities for the sole proprietorship.",
+      "Withdrawn profit used for personal spending remains available as internal finance for the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Surplus may be kept in the firm or taken by the owner.",
+      "TRUE — Asset disposal releases internal funds without borrowing.",
+      "TRUE — Internal funding avoids creditor interest costs.",
+      "TRUE — Retained earnings kept in the firm supply internal finance.",
+      "FALSE — Withdrawn profit leaves the business and is no longer internal finance."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.36",
+    "title": "Mortgage Collateral and Repayment Duties",
+    "context": "Review long-term borrowing secured against property owned by a sole proprietor. Evaluate the following economic assertions:",
+    "statements": [
+      "Property used as mortgage collateral for a long-term bank loan automatically incorporates the sole proprietorship as a limited company.",
+      "Long-term creditors may waive all interest charges when land and buildings serve as mortgage collateral.",
+      "Private assets that served as collateral remain completely protected from claims once the mortgage is registered.",
+      "Short-term overdrafts and long-term mortgage loans both create liabilities for the sole proprietor.",
+      "Long-term credit secured by a mortgage is excluded from the sole proprietor's liabilities once collateral is pledged."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Mortgage collateral does not change the unincorporated legal structure.",
+      "FALSE — Credit agreements still specify interest as the rate of return.",
+      "FALSE — Collateral assets can be claimed upon default.",
+      "TRUE — All credit forms create repayment obligations.",
+      "FALSE — Mortgage loans remain liabilities despite collateral."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.37",
+    "title": "Integrated Finance and Liability Review",
+    "context": "Analyze the combined financing and liability profile of a typical sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Financial funds of the business mainly depend on the financial capabilities of the sole proprietor.",
+      "Owner investment, investor funds, and creditor loans are external sources of finance.",
+      "Retained profit and sale of unused assets are internal sources of finance once operations are under way.",
+      "Unlimited liability is confined to obligations arising from external creditor borrowing only.",
+      "All credit, whether short-term overdraft or long-term mortgage, is a liability for the sole proprietor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Available funds reflect the proprietor's financial capacity.",
+      "TRUE — These funds enter from outside accumulated internal surplus.",
+      "TRUE — Reinvested earnings and asset sales fund from within.",
+      "FALSE — Unlimited liability applies to all business debts regardless of finance source.",
+      "TRUE — Every credit arrangement creates repayment duty."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.38",
+    "title": "Management Retention Despite Staffing",
+    "context": "Consider a retail sole proprietorship where the owner employs sales staff for daily customer service. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor can hire personnel when support is needed to operate the business.",
+      "Hiring sales staff transfers the most important management decisions to employees permanently.",
+      "Despite employed assistants, the proprietor must make the key management decisions and accept the associated business risk.",
+      "Management of the business largely depends on the sole proprietor even when staff are present.",
+      "Employees assume unlimited liability for business debts in proportion to their wages."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Staff may be recruited to support operations.",
+      "FALSE — Strategic authority stays with the proprietor, not employees.",
+      "TRUE — Ultimate decisions and risk remain with the owner.",
+      "TRUE — The proprietor retains central management responsibility.",
+      "FALSE — Employees do not share the proprietor's unlimited liability."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.39",
+    "title": "Legal Entity and Hiring Capacity",
+    "context": "Review whether lack of separate legal personality limits a sole proprietorship's operational capacity. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship that is not a legal entity of its own cannot hire personnel under any circumstances.",
+      "A sole proprietorship that is not a legal entity of its own may still hire personnel when support is required.",
+      "Because the business lacks separate legal personality, it cannot enter contracts with suppliers or banks.",
+      "Incorporation is automatic once a sole trader hires more than one employee.",
+      "Hiring employees transfers ownership of the sole proprietorship to the workforce collectively."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Unincorporated status does not bar employment.",
+      "TRUE — Sole traders may recruit staff despite lacking separate legal personality.",
+      "FALSE — Sole traders routinely contract with suppliers and banks.",
+      "FALSE — Employment does not incorporate the business or change liability.",
+      "FALSE — Employees do not acquire ownership; the sole proprietor remains the owner."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.40",
+    "title": "Succession and Illness Continuity",
+    "context": "Analyze continuity risks when a sole proprietor faces prolonged absence from management duties. Evaluate the following economic assertions:",
+    "statements": [
+      "Continuity problems may occur if the sole proprietor suffers a long-term illness.",
+      "Long-term illness of the owner has no continuity effect because employees legally become co-owners automatically.",
+      "A sole proprietorship automatically converts to a partnership when the owner cannot work for several months.",
+      "Retirement plans of the sole proprietor can create continuity problems for the business.",
+      "Dependence on one manager makes succession planning less pressing than in firms with transferable ownership shares."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Prolonged absence disrupts management continuity.",
+      "FALSE — Employees do not automatically acquire ownership.",
+      "FALSE — Temporary absence does not change the legal structure to a partnership.",
+      "TRUE — Retirement removes the central owner-manager.",
+      "FALSE — Single ownership makes succession planning more pressing, not less."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.41",
+    "title": "Complete Sole Trader Feature Set",
+    "context": "Review the full set of structural, fiscal, and financing characteristics attributed to sole proprietorships. Evaluate the following economic assertions:",
+    "statements": [
+      "One person owns, manages, and runs the business as a sole proprietorship.",
+      "Establishment is easy with no financial requirements to start this kind of business.",
+      "Profits are taxed on the owner's personal income tax statement because the firm is not a legal entity.",
+      "The sole proprietor faces unlimited liability with private assets also at stake.",
+      "Internal finance from retained profit avoids interest charges, while external credit creates liabilities with interest."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Single ownership and management define the form.",
+      "TRUE — No minimum capital is required.",
+      "TRUE — Unincorporated profits are personal income.",
+      "TRUE — Unlimited liability exposes personal wealth.",
+      "TRUE — Internal funds avoid interest; external credit carries repayment costs."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.42",
+    "title": "External Finance and Creditor Obligations",
+    "context": "Analyze external funding routes when personal savings prove insufficient for a sole proprietorship expansion. Evaluate the following economic assertions:",
+    "statements": [
+      "External finance from creditors eliminates unlimited liability because the bank shares business risk.",
+      "Extra money can be sought from investors and/or from banks when the sole proprietor needs additional funds.",
+      "Capital contributed by the owner together with investor funds and creditor finance counts as external finance for the firm.",
+      "Creditor funds need not be repaid when the loan is used to purchase productive business assets.",
+      "Insufficient personal wealth has no effect on whether a sole proprietorship can be established."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Borrowing does not limit the proprietor's unlimited liability.",
+      "TRUE — Investors and banks supplement personal resources.",
+      "TRUE — Owner investment plus investor and creditor funds are external sources of finance.",
+      "FALSE — Credit agreements require repayment with interest regardless of asset use.",
+      "FALSE — Limited personal funds make establishment very difficult."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.43",
+    "title": "Credit Duration and Instrument Types",
+    "context": "Review short-term and long-term credit instruments outlined for sole proprietorship finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit from suppliers is long-term finance because payment may be deferred for several months.",
+      "Overdraft interest is charged on the account even when the balance remains positive and the account is not overdrawn.",
+      "Short-term credit includes bank overdrafts and trade credit with duration typically less than a year.",
+      "Long-term mortgage loans secured by property are not liabilities because collateral replaces repayment duty.",
+      "All kinds of credit are optional gifts that create no repayment obligation for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Trade credit remains short-term purchase finance despite deferral.",
+      "FALSE — Overdraft interest applies during overdrawn periods only.",
+      "TRUE — Overdrafts and trade credit cover near-term needs.",
+      "FALSE — Mortgage loans remain liabilities despite collateral.",
+      "FALSE — Every credit form creates repayment obligations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.44",
+    "title": "Personal Savings and Business Viability",
+    "context": "Consider how the proprietor's personal wealth constrains sole proprietorship formation and early operations. Evaluate the following economic assertions:",
+    "statements": [
+      "The amount of finance available to the business is closely tied to the sole proprietor's personal financial capacity.",
+      "Mandatory minimum share capital must be raised from public investors before a sole trader may open.",
+      "A zero capital entry requirement does not stop the owner from contributing personal savings voluntarily.",
+      "Most sole proprietors invest their own savings in their business at the start.",
+      "Owner savings invested at launch are internal finance generated entirely from earlier trading surplus."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Available capital reflects the owner's financial position.",
+      "FALSE — No such capital requirement applies to sole proprietorships.",
+      "FALSE — Voluntary owner investment from savings is common despite no minimum rule.",
+      "TRUE — Personal savings commonly fund initial operations.",
+      "FALSE — Initial owner investment from savings is external finance at start-up."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.45",
+    "title": "Interest Charges on Borrowed Funds",
+    "context": "Analyze cost differences between internal reinvestment and creditor finance for a sole trader. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained earnings kept in the firm must be remunerated with interest paid to the owner as if the owner were an external lender.",
+      "Bank credit may be taken without any repayment obligation when the business generates strong revenues.",
+      "Retained profit reinvested in the firm carries the same mandatory interest cost as a bank overdraft.",
+      "Using a bank overdraft means interest is paid only when the account is overdrawn.",
+      "Trade credit from suppliers never creates any liability for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Internal finance avoids creditor interest charges.",
+      "FALSE — Credit agreements require repayment with interest regardless of revenue.",
+      "FALSE — Retained profit is internal and does not incur borrowing interest.",
+      "TRUE — Overdraft interest applies during overdrawn periods only.",
+      "FALSE — Trade credit is a payable liability until settled."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.46",
+    "title": "Collateral Requirements Across Credit Terms",
+    "context": "Review creditor security demands when a sole proprietor applies for short-term overdraft versus long-term property loan. Evaluate the following economic assertions:",
+    "statements": [
+      "Short-term trade credit from suppliers typically requires pledging the proprietor's private home as mortgage collateral.",
+      "Long-term lenders commonly insist on pledgeable assets as security when extending credit beyond one year.",
+      "Mortgage arrangements often tie long-term bank loans to land and property owned by the proprietor.",
+      "If private assets served as collateral and the business fails, those assets remain at stake.",
+      "Pledging collateral for a long-term loan removes all unlimited liability exposure for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Trade credit is supplier agreement finance, not typically mortgage-backed.",
+      "TRUE — Long-term lenders commonly demand security.",
+      "TRUE — Property mortgages frequently back long-term loans.",
+      "TRUE — Pledged assets can be seized upon default.",
+      "FALSE — Unlimited liability persists; collateral does not remove broader exposure."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.47",
+    "title": "Finance Mix and Tax Treatment Combined",
+    "context": "Analyze how fiscal treatment and finance sourcing interact within an unincorporated sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits are reported on the owner's personal income tax statement because the business is not a legal entity.",
+      "Retained profit reinvested rather than withdrawn supplies internal finance without interest charges.",
+      "Personal income tax on profits means the sole proprietorship pays corporate tax on retained earnings separately.",
+      "Funds from investors and banks are external sources that create liabilities or ownership claims from outside.",
+      "Sale of unused assets can provide internal finance once the business is operating."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Unincorporated profits are personal taxable income.",
+      "TRUE — Reinvested surplus is internal and avoids borrowing costs.",
+      "FALSE — There is no separate corporate tax on retained earnings for a sole trader.",
+      "TRUE — External finance enters from investors and creditors.",
+      "TRUE — Asset disposal releases internal funds during operations."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.48",
+    "title": "Liability Persistence Under All Finance Choices",
+    "context": "Review whether finance source selection alters the sole proprietor's liability for business obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor is liable for all debts and obligations regardless of whether finance is internal or external.",
+      "Private assets are also at stake if the business fails and debts need to be repaid.",
+      "Bank overdrafts, trade credit, and long-term loans all count as liabilities for the sole proprietor.",
+      "Unlimited liability applies even when the sole proprietorship relies on retained profit or asset sales for finance.",
+      "Unlimited liability applies to all business debts and is not limited to externally borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Liability structure is independent of funding source.",
+      "TRUE — Personal wealth remains exposed under unlimited liability.",
+      "TRUE — All credit forms create repayment duties.",
+      "TRUE — Internal finance does not remove unlimited liability for business debts.",
+      "TRUE — Internal and external finance alike leave the proprietor fully liable."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.49",
+    "title": "Holistic Sole Proprietorship Assessment",
+    "context": "Consider a small service business operated as a sole proprietorship combining owner savings, supplier credit, and reinvested profit. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship cannot employ staff because the business is not a separate legal entity.",
+      "Because the business lacks separate legal personality, operating profits are included on the proprietor's personal income tax return.",
+      "Owner savings and bank credit are external sources; retained profit and asset sales are internal sources.",
+      "All credit including overdrafts and trade credit creates liabilities, and unlimited liability exposes private assets.",
+      "Continuity of a sole proprietorship is unaffected when the sole proprietor retires or suffers long-term illness."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Unincorporated status does not prevent hiring personnel.",
+      "TRUE — Unincorporated profits are personal taxable income.",
+      "TRUE — External versus internal classification follows the textbook definitions.",
+      "TRUE — Credit creates liabilities under unlimited liability reaching private assets.",
+      "FALSE — Single-person dependence creates succession and continuity risk."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.50",
+    "title": "Final Finance and Management Synthesis",
+    "context": "Analyze the interplay of management authority, finance sources, and liability for a mature sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor retains the most important management decisions even when employees handle routine tasks.",
+      "Easy establishment with no capital requirements means the business never faces continuity or liability concerns.",
+      "Retained profit reinvested in the firm requires paying interest charges to external creditors.",
+      "If revenues exceed expenses, profit may be retained for reinvestment unless the proprietor withdraws it.",
+      "Investor funds and bank loans are internal sources because they are deposited in the business bank account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Strategic authority remains with the proprietor despite hired staff.",
+      "FALSE — Easy start-up does not remove continuity risk or unlimited liability.",
+      "FALSE — Retained profit is internal finance and does not incur creditor interest.",
+      "TRUE — Operating surplus may be reinvested or taken personally.",
+      "FALSE — Investor and bank funds are external sources, not internal finance."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

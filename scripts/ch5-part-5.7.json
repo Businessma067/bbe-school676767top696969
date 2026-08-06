@@ -1,0 +1,2902 @@
+[
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.01",
+    "title": "Marketing Mix Four Ps Overview",
+    "context": "Review the marketing mix as a harmonised blend of product, price, place, and promotion tools. Evaluate the following economic assertions:",
+    "statements": [
+      "A marketing mix is a harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market.",
+      "The marketing mix consists of only product and promotion because price and place are determined entirely by competitors.",
+      "Product is the least important element of the marketing mix because pricing decisions alone determine sales.",
+      "Place in the marketing mix refers primarily to the geographic location of the business headquarters.",
+      "The marketing mix consists of the four elements product, price, place, and promotion, commonly called the four Ps."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The textbook defines the marketing mix as a coordinated blend of tools aligned with targeted customer needs.",
+      "FALSE — All four Ps—product, price, place, and promotion—form the marketing mix.",
+      "FALSE — Product is described as the most important decision and at the heart of marketing.",
+      "FALSE — Place concerns customer access and distribution, not the firm's headquarters location.",
+      "TRUE — Product, price, place, and promotion are the four Ps forming the marketing mix."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.02",
+    "title": "Harmonised Blend of Marketing Tools",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Promotion in the marketing mix means reducing the list price until stock is cleared from the warehouse.",
+      "A product line consists of completely unrelated goods such as laptops and restaurant meals grouped for accounting convenience.",
+      "Mix extension adds new variants within one existing line, such as another flavour in the same ice-cream range.",
+      "The basic idea of the marketing mix is to provide a good at an affordable price at a convenient place and communicate a message to promote sales.",
+      "Decisions across the four Ps of the marketing mix are based on market research findings about the targeted market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Promotion covers communication tools such as advertising, not price cuts alone.",
+      "FALSE — A product line contains very similar products, not unrelated categories.",
+      "FALSE — That describes line extension; mix extension adds a new product line.",
+      "TRUE — Affordable price, convenient place, and promotional communication embody the core marketing-mix idea.",
+      "TRUE — Market research underpins marketing-mix decisions for the targeted market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.03",
+    "title": "Product P at the Heart of Marketing",
+    "context": "Review Figure 15 on the four elements of the marketing mix based on market research. Evaluate the following economic assertions:",
+    "statements": [
+      "Line extension widens the product mix by adding an entirely new product line such as yogurts beside ice cream.",
+      "A relaunch always requires eliminating the product from the product line and replacing it with a new category.",
+      "Minor packaging changes are classified as mix extension because they alter how the product line is presented.",
+      "Each of the four Ps comprises several tools that marketers can combine within the overall marketing mix.",
+      "Brand loyalty is unrelated to the product element and belongs exclusively to the promotion P of the marketing mix."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Adding a new line is mix extension; line extension deepens one existing line.",
+      "FALSE — Relaunch involves minor changes such as packaging or colours, not automatic elimination.",
+      "FALSE — Minor packaging or colour changes are relaunches within alteration, not mix extension.",
+      "TRUE — Every P contains multiple tools that form part of the harmonised mix.",
+      "FALSE — Brands support differentiation within the product P and build loyalty there."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.04",
+    "title": "Product Lines and Mix Width",
+    "context": "Analyze the product element of the marketing mix as the first P covering goods and services offered. Evaluate the following economic assertions:",
+    "statements": [
+      "Brands consist only of production patents and contain no name, symbol, or sign visible to customers.",
+      "A harmonised marketing mix coordinates product, price, place, and promotion rather than treating each P independently.",
+      "The four Ps framework helps a business align what it sells, what it charges, where it is sold, and how it is promoted.",
+      "Marketing-mix planning seeks to satisfy targeted customers' needs and wants through a coordinated set of tools.",
+      "During introduction the product life cycle always shows peak profit because early buyers pay premium prices."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Brands include names, words, symbols, or signs distinguishing the product.",
+      "TRUE — The mix is harmonised across all four elements to meet customer needs.",
+      "TRUE — Product, price, place, and promotion cover offering, charge, distribution, and communication.",
+      "TRUE — Customer needs and wants in the target market guide the marketing mix.",
+      "FALSE — Introduction typically starts with losses from development and launch costs."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.05",
+    "title": "Brands and Product Differentiation",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "The product element of the marketing mix refers to all goods and services that are offered by a business.",
+      "The decline stage is characterised by the highest sales volume and peak profit in the product life cycle.",
+      "Product is at the heart of marketing and represents the most important decision of a business within the four Ps.",
+      "Maturity always lasts less than one year before every product automatically enters decline.",
+      "A question mark in the BCG matrix has high relative market share and low market growth."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The first P covers every good and service the business offers.",
+      "FALSE — Decline features falling sales and profits, not peaks.",
+      "TRUE — The textbook places product at the centre as the most important marketing decision.",
+      "FALSE — Maturity can last months or years; some products remain mature indefinitely.",
+      "FALSE — Question marks have low relative share in a rapidly growing market."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.06",
+    "title": "Relaunch Versus Major Alteration",
+    "context": "Analyze the role of brands in product differentiation, recognition, and loyalty within the product P. Evaluate the following economic assertions:",
+    "statements": [
+      "Most businesses offer not just one product but a range of products within their portfolio.",
+      "Products that are very similar, such as several slightly different laptop computers, represent a product line.",
+      "A business can specialise in just one product line or diversify by offering different product lines such as laptops and monitors.",
+      "Increasing the number of different product lines widens the product mix of a business.",
+      "A star in the BCG matrix combines low relative market share with low market growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Businesses typically manage a portfolio of products rather than a single item.",
+      "TRUE — Similar variants like different laptops form one product line.",
+      "TRUE — Firms may focus on one line or diversify across multiple lines.",
+      "TRUE — Adding lines increases product-mix width through diversification.",
+      "FALSE — Stars have high relative share in a high-growth market."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.07",
+    "title": "Line Extension Within a Product Line",
+    "context": "Review minor packaging and colour changes as a relaunch within product-mix alteration. Evaluate the following economic assertions:",
+    "statements": [
+      "Offering only laptop computers illustrates specialising in a single product line within the product mix.",
+      "A cash cow has low relative market share in a rapidly growing market and requires heavy expansion investment.",
+      "A poor dog has high relative market share and high market growth and is the most valuable portfolio position.",
+      "The BCG matrix plots absolute market share against production cost per unit rather than relative share and growth.",
+      "Penetration pricing sets a very high initial price to skim revenue from early adopters only."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A single-line focus is a product-mix specialisation strategy.",
+      "FALSE — Cash cows have high share in low-growth markets and usually receive lower investment.",
+      "FALSE — Poor dogs have low share and low growth near decline, unlike valuable stars.",
+      "FALSE — BCG uses relative market share and market growth, not cost per unit.",
+      "FALSE — High initial pricing describes skimming; penetration uses a low price to gain share."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.08",
+    "title": "Mix Extension Adding New Lines",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Services such as technical support and online help count as products within the product element of the marketing mix.",
+      "Price skimming means launching with a low price to maximise volume in the first month of sales.",
+      "Packaging, labelling, and colour variants can form part of the product decision within the marketing mix.",
+      "Cost-plus pricing ignores production costs and sets price only according to competitor advertisements.",
+      "A business may offer goods, related services, and tailored software solutions as distinct products in its portfolio."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Services are included in the product P alongside physical goods.",
+      "FALSE — Skimming starts with a high price; low launch pricing aligns with penetration.",
+      "TRUE — Product decisions encompass packaging and presentation features.",
+      "FALSE — Cost-plus pricing adds a markup to production costs.",
+      "TRUE — Goods, services, and tailored solutions can each appear as products in the portfolio."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.09",
+    "title": "Product-Mix Expansion Strategies",
+    "context": "Review product-mix strategies of expansion, alteration, and contraction in Figure 16. Evaluate the following economic assertions:",
+    "statements": [
+      "Brands are created to support product differentiation within the product element of the marketing mix.",
+      "A brand consists of a name or a few words and/or a symbol and/or a sign that distinguishes a product or business.",
+      "Brands are intended to build a USP, brand recognition, and brand loyalty among customers.",
+      "Psychological pricing requires every product to be sold at a round number such as €10.00 without exception.",
+      "Wholesalers sell products directly to final consumers at retail shops they operate under their own brand only."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Brands help distinguish offerings and support differentiation.",
+      "TRUE — Brands combine names, words, symbols, or signs for distinction.",
+      "TRUE — Brands support USP, recognition, and loyalty objectives.",
+      "FALSE — Psychological pricing often uses charm prices like €9.99, not only round numbers.",
+      "FALSE — Wholesalers resell to retailers; retailers typically serve final consumers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.10",
+    "title": "Product-Mix Alteration and Contraction",
+    "context": "Analyze the product life cycle model of introduction, growth, maturity, and decline stages. Evaluate the following economic assertions:",
+    "statements": [
+      "Some brands look the same worldwide with consistent colour and font to maintain global recognition.",
+      "Brands serve as a guarantee of stable quality and a maintained level of quality across markets.",
+      "Brands can render trust and safety of choice for customers who seek familiar products abroad.",
+      "Brand loyalty encourages customers to repurchase products associated with a trusted name or symbol.",
+      "A recognisable brand symbol can reinforce the USP communicated through the wider marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Global brands use consistent visual identity across markets.",
+      "TRUE — Brands signal consistent quality standards to customers.",
+      "TRUE — Familiar brands provide reassurance and perceived safety when travelling.",
+      "TRUE — Loyalty flows from trusted brand identity and repeated satisfactory purchase.",
+      "TRUE — Symbols support USP communication within the product P."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.11",
+    "title": "Introduction Stage of Product Life Cycle",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "Retailers purchase products in bulk from producers and resell exclusively to other wholesalers downstream.",
+      "Minor changes such as different packaging or colours are called a relaunch within product-mix alteration.",
+      "When a relaunch is not enough to keep customers satisfied, major changes or elimination from the line may be necessary.",
+      "Adding new products to an existing product line is a line extension, such as producing more flavours of ice cream.",
+      "Direct distribution always requires at least two intermediaries between producer and customer."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Retailers sell to end customers; bulk resale to other wholesalers is the wholesaler role.",
+      "TRUE — Relaunches involve minor packaging or colour changes rather than full redesign.",
+      "TRUE — Insufficient relaunches may require major alteration or product elimination.",
+      "TRUE — Line extension deepens an existing line with additional variants.",
+      "FALSE — Direct distribution sells without intermediaries."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.12",
+    "title": "Growth Stage Sales and Profit Patterns",
+    "context": "Analyze the Boston Consulting Group matrix using relative market share and market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Adding a new product line to the portfolio is a mix extension, such as yogurts in addition to ice cream.",
+      "Line extension increases the depth of a product line by adding variants within that line.",
+      "Indirect distribution means the producer delivers every product personally to each household without any retailer.",
+      "Online sales channels belong to the promotion P because they only advertise products without enabling purchase.",
+      "Mix extension increases the number of product lines offered by the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Mix extension widens the portfolio by adding a new line.",
+      "TRUE — Depth grows when more variants join one existing line.",
+      "FALSE — Indirect distribution uses intermediaries such as wholesalers and retailers.",
+      "FALSE — Online platforms are place channels that make products available for purchase.",
+      "TRUE — Width grows when a new line is added to the portfolio."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.13",
+    "title": "Maturity Stage Profit Peak",
+    "context": "Review BCG categories of stars, question marks, cash cows, and poor dogs. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling is a price tool because sales staff negotiate discounts that permanently replace promotion.",
+      "Product-mix expansion can occur through line extension or mix extension strategies.",
+      "Advertising is classified under place because it determines which warehouse stores the finished goods.",
+      "Altering existing products over time creates a new range instead of the previous one within alteration strategy.",
+      "Public relations is a product-mix contraction strategy that eliminates underperforming brands from the portfolio."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Personal selling is a promotional tool involving direct sales contact.",
+      "TRUE — Expansion uses either deeper lines or additional lines.",
+      "FALSE — Advertising is a promotional communication tool, not a distribution decision.",
+      "TRUE — Alteration replaces or refreshes an existing range when needs change.",
+      "FALSE — Public relations builds image within promotion; contraction eliminates products or lines."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.14",
+    "title": "Decline Stage Falling Sales",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Economies of scale in the growth stage always raise average unit costs as output increases.",
+      "Eliminating products or whole lines from the range reflects contraction within the product-mix strategy.",
+      "Cash cows receive the highest promotional investment because market growth in their segment remains rapid.",
+      "Stars no longer require promotional or production investment once they first achieve high market share.",
+      "A business may eliminate a product from its range when a relaunch does not seem promising."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Growth may lower average costs through economies of scale as output rises.",
+      "TRUE — Contraction removes products or lines that no longer fit the portfolio.",
+      "FALSE — Cash cows are in low-growth markets and usually receive lower promotional investment.",
+      "FALSE — Stars need continued investment in promotion and facilities to maintain position.",
+      "TRUE — Unpromising relaunch prospects can lead to product elimination."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.15",
+    "title": "BCG Matrix Relative Share and Growth",
+    "context": "Review how stars combine strong market share with continued market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-mix strategies include expansion, alteration, and contraction as shown in the textbook framework.",
+      "Product-mix contraction means adding new flavours within an existing ice-cream line to increase depth.",
+      "Specialising in one sort of product by offering just one product line narrows the product-mix width.",
+      "Diversifying production by offering different product lines increases the width of the product mix.",
+      "Increasing product-mix width means adding more variants within the same single product line only."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Expansion, alteration, and contraction are the three product-mix strategy groups.",
+      "FALSE — Adding flavours is line extension; contraction eliminates products or lines.",
+      "TRUE — Single-line specialisation keeps product-mix width narrow.",
+      "TRUE — Multiple lines diversify and widen the product mix.",
+      "FALSE — Width increases with more lines; depth increases variants within one line."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.16",
+    "title": "Question Marks in Growing Markets",
+    "context": "Analyze cash cows as high-share products in markets with low growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Specialising in one product line diversifies the product mix by increasing the number of different lines offered.",
+      "A harmonised marketing mix can ignore customer needs in the targeted market if promotion spending is high enough.",
+      "Market research informs only the product P and has no role in price, place, or promotion decisions.",
+      "The product life cycle is a theoretical model of stages over a product's life span that differ in sales volume and profit.",
+      "Fad products typically remain in maturity for decades like detergents and toothpaste before any decline occurs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Specialising narrows focus to one line; diversification adds different lines.",
+      "FALSE — The mix is designed to meet targeted customers' needs and wants, not ignore them.",
+      "FALSE — Market research underpins decisions across all four Ps.",
+      "TRUE — PLC stages vary in sales volume and profit over the product's life.",
+      "FALSE — Fads have short life cycles and may be withdrawn in under a year."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.17",
+    "title": "Stars and Strong Market Position",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Detergents and toothpaste are cited as examples of products with very short fad-like life cycles under one year.",
+      "Before market introduction there are no sales, yet product development costs mean the introduction phase starts with a loss.",
+      "After product launch, introductory prices may be low and heavy promotion may keep costs above sales early in introduction.",
+      "Towards the end of the introduction phase, revenues can exceed costs and a small profit may emerge.",
+      "During the growth period, sales increase more rapidly than costs and average costs may fall due to economies of scale."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — These products may have long or indefinite maturity phases, unlike fads.",
+      "TRUE — Pre-launch development costs create initial losses in introduction.",
+      "TRUE — Low intro prices and promotion spending can prolong introduction losses.",
+      "TRUE — Introduction can end with revenues surpassing costs for a modest profit.",
+      "TRUE — Growth brings faster sales gains and possible unit-cost reductions from scale."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.18",
+    "title": "Cash Cows in Low-Growth Markets",
+    "context": "Analyze the price element of the marketing mix as the amount customers pay for the offering. Evaluate the following economic assertions:",
+    "statements": [
+      "Adding yogurts beside an ice-cream line is classified as line extension rather than mix extension in the marketing-mix framework.",
+      "Business profit usually rises during the growth stage and peaks in the maturity stage of the product life cycle.",
+      "Changing packaging colours on an existing shampoo bottle is classified as relaunch rather than contraction in the marketing-mix framework.",
+      "Eliminating a weak product from the portfolio is classified as contraction rather than line extension in the marketing-mix framework.",
+      "Low share in a fast-growing market at launch is classified as question mark rather than cash cow in the marketing-mix framework."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Adding a new line is mix extension, not line extension.",
+      "TRUE — Profits typically grow through growth and peak at maturity.",
+      "FALSE — Packaging colour change is relaunch alteration, not contraction.",
+      "FALSE — Elimination is contraction, not line extension.",
+      "FALSE — That position is a question mark, not a cash cow."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.19",
+    "title": "Poor Dogs Near Decline",
+    "context": "Review how introductory prices may be set low to attract customers at product launch. Evaluate the following economic assertions:",
+    "statements": [
+      "In the maturity stage, market growth slows while the product may still hold a high market share.",
+      "During decline, sales fall and profits fall, sometimes rapidly, as the product nears the end of its life cycle.",
+      "The duration of product life cycle stages varies enormously across different product categories.",
+      "High share when market growth has slowed is classified as cash cow rather than star in the marketing-mix framework.",
+      "Some products such as detergents, toothpaste, or perfumes may have a long or seemingly indefinite maturity phase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Maturity combines slower market growth with often high share.",
+      "TRUE — Decline features falling sales and profits as the cycle ends.",
+      "TRUE — PLC length differs widely between product types.",
+      "FALSE — High share with low growth is a cash cow, not a star.",
+      "TRUE — Everyday products can remain in maturity for extended periods."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.20",
+    "title": "Price P and Customer Payments",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "High share while the market is still growing is classified as star rather than poor dog in the marketing-mix framework.",
+      "Low share with low market growth near decline is classified as poor dog rather than question mark in the marketing-mix framework.",
+      "A low launch price to build market share quickly is classified as penetration pricing rather than price skimming in the marketing-mix framework.",
+      "Fad products may have a very short life cycle and be withdrawn in less than a year.",
+      "A high initial price later reduced over time is classified as price skimming rather than penetration pricing in the marketing-mix framework."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — High share with high growth is a star, not a poor dog.",
+      "FALSE — Low share and low growth define a poor dog.",
+      "FALSE — Low launch price for share is penetration, not skimming.",
+      "TRUE — Fads can complete their cycle and exit within months.",
+      "FALSE — High initial price is skimming, not penetration."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.21",
+    "title": "Introductory Low Pricing at Launch",
+    "context": "Review penetration pricing as a strategy that sets a low price to gain market share quickly. Evaluate the following economic assertions:",
+    "statements": [
+      "Increased competition in maturity often causes lower prices and higher promotional costs, pressuring profits.",
+      "The Boston Consulting Group matrix classifies products using relative market share and market growth.",
+      "A product with low relative market share in a rapidly growing market is classified as a question mark.",
+      "During introduction a product can be a question mark with low share in a growing market.",
+      "As market share rises in a still-growing market, a product may become a star in the BCG matrix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Maturity competition can cut prices and raise promotion expense.",
+      "TRUE — BCG positions products by relative share and market growth.",
+      "TRUE — Low share plus high growth defines a question mark.",
+      "TRUE — Introduction-phase products may appear as question marks on the BCG matrix.",
+      "TRUE — Growing share in a growing market can produce a star."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.22",
+    "title": "Cost-Plus Pricing Markup Logic",
+    "context": "Analyze price skimming as setting a high initial price before lowering it over time. Evaluate the following economic assertions:",
+    "statements": [
+      "Stars are valuable because of their strong market position in a growing market.",
+      "Businesses invest in promotion and production facilities to maintain a star's strong position.",
+      "When market growth slows but market share remains high, a product may become a cash cow.",
+      "Cash cows usually receive lower investment because market growth has become low while revenues stay high.",
+      "As a product nears decline with low market growth and relatively low share, it increasingly becomes a poor dog."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Stars combine strength with continued market growth.",
+      "TRUE — Stars require ongoing promotional and capacity investment.",
+      "TRUE — High share with low growth characterises a cash cow.",
+      "TRUE — Low growth reduces investment needs while revenues remain substantial for cash cows.",
+      "TRUE — Low growth and low share near decline align with poor dogs."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.23",
+    "title": "Penetration Pricing for Market Share",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Poor dogs combine low relative market share with low market growth in the BCG framework.",
+      "Stars occupy high relative market share combined with high market growth on the BCG matrix.",
+      "The price element of the marketing mix refers to the amount customers pay for the goods or services offered.",
+      "Affordable price is part of the basic marketing-mix idea alongside convenient place and promotional communication.",
+      "Introductory prices may be set low at product launch to attract customers during the introduction phase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Poor dogs sit in the low-share, low-growth quadrant.",
+      "TRUE — High share and high growth define the star quadrant.",
+      "TRUE — Price is what customers pay for the business's offering.",
+      "TRUE — Affordable pricing supports the core mix objective of accessible value.",
+      "TRUE — Low launch prices help attract early customers in introduction."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.24",
+    "title": "Price Skimming on New Products",
+    "context": "Analyze psychological pricing such as charm prices that influence customer perceptions. Evaluate the following economic assertions:",
+    "statements": [
+      "Cost-plus pricing adds a markup to production costs when setting the selling price of a product.",
+      "Selling only through the firm's own shops is classified as direct distribution rather than indirect distribution in the marketing-mix framework.",
+      "Supplying supermarkets through a wholesaler is classified as indirect distribution rather than direct distribution in the marketing-mix framework.",
+      "Television commercials communicating product benefits is classified as advertising rather than place in the marketing-mix framework.",
+      "Penetration pricing sets a relatively low price to gain market share quickly after launch."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost-plus pricing builds price from costs plus a markup.",
+      "FALSE — Own shops illustrate direct, not indirect, distribution.",
+      "FALSE — Wholesaler routes are indirect, not direct, distribution.",
+      "FALSE — Television ads are promotion, not place.",
+      "TRUE — Penetration pricing uses low price to build share fast."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.25",
+    "title": "Competitive Pricing Against Rivals",
+    "context": "Review discounts, payment terms, and allowances as tools within the price P. Evaluate the following economic assertions:",
+    "statements": [
+      "Price skimming sets a high initial price that may be lowered later as competition increases.",
+      "Competitive pricing aligns the product's price with rival offerings in the same market.",
+      "Making a product available in supermarket aisles is classified as place rather than promotion in the marketing-mix framework.",
+      "Psychological pricing uses prices such as €9.99 to influence customer perceptions of affordability.",
+      "Discounts, payment terms, and trade allowances form part of the price tools within the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Skimming starts high and may reduce price over time.",
+      "TRUE — Competitive pricing references prices charged by competitors.",
+      "FALSE — Supermarket availability is place, not promotion.",
+      "TRUE — Charm prices like €9.99 are psychological pricing tools.",
+      "TRUE — Price P includes discounts, terms, and allowances."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.26",
+    "title": "Psychological Charm Pricing",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "List price and negotiated trade discounts together shape the effective price paid by channel customers.",
+      "Sales representatives visiting business clients is classified as personal selling rather than public relations in the marketing-mix framework.",
+      "Price differentiation charges different prices to distinct customer groups or distribution channels.",
+      "Press releases building corporate reputation is classified as public relations rather than sales promotion in the marketing-mix framework.",
+      "A temporary price reduction during a sales event is a price decision linked to promotional activity."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel pricing combines list price with trade discounts.",
+      "FALSE — Visiting sales staff perform personal selling, not PR alone.",
+      "TRUE — Segment or channel differences can justify differentiated prices.",
+      "FALSE — PR builds image; sales promotion uses short-term incentives.",
+      "TRUE — Sale pricing interacts with promotional campaigns in the mix."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.27",
+    "title": "Discounts and Payment Terms",
+    "context": "Review direct distribution where a business sells products without intermediaries to buyers. Evaluate the following economic assertions:",
+    "statements": [
+      "Finance instalment offers spread customer payments over time as part of the overall price package.",
+      "Loyalty discounts reward repeat customers and form part of the price element of the marketing mix.",
+      "Losses from development costs before sales take off is classified as introduction rather than maturity in the marketing-mix framework.",
+      "The place element of the marketing mix concerns where and how the product is made available to customers.",
+      "A convenient place for customers to buy supports the basic marketing-mix objective of accessible purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Instalment terms shape how customers meet the price obligation.",
+      "TRUE — Loyalty discounts are price tools encouraging repeat purchase.",
+      "FALSE — Development losses occur in introduction, not maturity.",
+      "TRUE — Place covers distribution and customer access to the offering.",
+      "TRUE — Customer convenience in purchase location is central to place decisions."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.28",
+    "title": "Place P and Distribution Channels",
+    "context": "Analyze indirect distribution through wholesalers and retailers to reach final consumers. Evaluate the following economic assertions:",
+    "statements": [
+      "Rapid sales increases with falling average costs is classified as growth rather than decline in the marketing-mix framework.",
+      "Profit peaking while market growth slows is classified as maturity rather than introduction in the marketing-mix framework.",
+      "Falling sales and profits as demand weakens is classified as decline rather than growth in the marketing-mix framework.",
+      "Place decisions focus on customer access and distribution channels rather than the firm's own office location.",
+      "Direct distribution sells products to customers without using intermediaries such as wholesalers or retailers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Rapid sales growth characterises growth, not decline.",
+      "FALSE — Profit peak with slower growth fits maturity, not introduction.",
+      "FALSE — Falling sales and profits indicate decline, not growth.",
+      "TRUE — Place is about reaching customers, not where the firm is headquartered.",
+      "TRUE — Direct distribution bypasses intermediaries between producer and buyer."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.29",
+    "title": "Direct Distribution Without Intermediaries",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Indirect distribution uses intermediaries such as wholesalers and retailers to reach final consumers.",
+      "Wholesalers purchase products in bulk and resell them to retailers within a distribution channel.",
+      "Retailers make products available to end customers at shops, supermarkets, or other points of sale.",
+      "Online sales platforms can serve as a place channel alongside physical shops for the same product.",
+      "Selling through own shops is an example of direct distribution within the place element of the mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Intermediaries carry products to end customers in indirect distribution.",
+      "TRUE — Wholesalers bulk-buy and supply retailers downstream.",
+      "TRUE — Retailers provide final customer access in the channel.",
+      "TRUE — E-commerce complements physical outlets within place strategy.",
+      "TRUE — Own retail outlets exemplify direct distribution."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.30",
+    "title": "Indirect Distribution Through Retailers",
+    "context": "Analyze how retailers make products available to end customers at the point of purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "Supplying supermarkets through a wholesaler illustrates indirect distribution in the place P.",
+      "Intensive distribution places products in many outlets to maximise convenience for customers.",
+      "Selective distribution limits the number of outlets to protect brand positioning and service standards.",
+      "Exclusive distribution uses a very limited number of specialised partners to sell the product.",
+      "Home-delivery logistics extend place convenience after a customer purchases from a showroom."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Wholesaler-to-retailer routes show indirect distribution.",
+      "TRUE — Wide outlet coverage reflects intensive distribution.",
+      "TRUE — Fewer selected outlets characterise selective distribution.",
+      "TRUE — Exclusive arrangements restrict outlet numbers sharply.",
+      "TRUE — Delivery services extend place convenience beyond the initial outlet."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.31",
+    "title": "Wholesaler Role in Distribution",
+    "context": "Review online sales channels as part of place decisions alongside physical outlets. Evaluate the following economic assertions:",
+    "statements": [
+      "Distribution channel analysis can reveal weaknesses and encourage alternative channels in place planning.",
+      "The promotion element of the marketing mix covers communicating a message in order to promote the sale of the product.",
+      "Advertising informs and persuades target customers as a promotional tool within the marketing mix.",
+      "Because breakfast cereals are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global breakfast cereals brand guarantees that product quality may vary sharply between countries without affecting brand recognition."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Channel review supports place improvements and alternatives.",
+      "TRUE — Promotion communicates messages that encourage product sales.",
+      "TRUE — Advertising is a core promotional communication tool.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.32",
+    "title": "Retailer Access for Final Customers",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling breakfast cereals exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Sales promotion includes short-term incentives and sales events designed to stimulate purchase.",
+      "Personal selling involves direct contact between sales staff and customers to promote the product.",
+      "Public relations activities build a favourable image of the business or brand among stakeholders.",
+      "Setting a low introductory price for new breakfast cereals is an example of price skimming aimed only at early luxury buyers."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "TRUE — Sales events and incentives belong to sales promotion.",
+      "TRUE — Face-to-face selling is personal selling within promotion.",
+      "TRUE — PR shapes favourable perceptions as part of promotion.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.33",
+    "title": "Online and Physical Place Channels",
+    "context": "Review the promotion element of the marketing mix as communicating a message to promote sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Removing an outdated breakfast cereals model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "Businesses may spend heavily on promotion through advertisements and sales events during product introduction.",
+      "A breakfast cereals product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Promotional spending in the growth stage helps maintain a star product's strong market position.",
+      "Cash-cow products in low-growth markets usually receive lower promotional investment than stars."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "TRUE — Introduction often features substantial advertising and sales-event spending.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "TRUE — Growth-stage promotion supports stars' competitive position.",
+      "TRUE — Low-growth cash cows need less promotional spending than stars."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.34",
+    "title": "Customer Access Not Firm Location",
+    "context": "Analyze advertising as a promotional tool that informs and persuades target customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Window displays and social-media campaigns are promotional tools communicating the product message.",
+      "Brochure advertising and reservation campaigns can coordinate promotion with price and place decisions.",
+      "A sales force calling on business customers is part of the promotion mix for organisational buyers.",
+      "Promotional messages should reflect the needs of the targeted segment identified through market research.",
+      "Increased competition near decline may raise promotional costs as firms fight for remaining demand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Displays and social media carry promotional messages.",
+      "TRUE — Brochures and campaigns integrate promotion with other Ps.",
+      "TRUE — B2B personal selling is a promotional tool for business markets.",
+      "TRUE — Segment needs guide promotional messaging content.",
+      "TRUE — Late-cycle competition can push promotional spending higher."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.35",
+    "title": "Promotion P and Communicating Messages",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Market research findings inform product design, pricing levels, distribution channels, and promotional messages together.",
+      "A harmonised marketing mix aligns affordable price, convenient place, suitable product, and clear promotional message.",
+      "Promoting breakfast cereals through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Charm pricing of breakfast cereals at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Because running shoes are physical goods, services such as installation or support cannot be counted in the product P for that business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Research supports coordinated decisions across all four Ps.",
+      "TRUE — All four Ps must align to deliver the mix objective.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "FALSE — The product P includes services as well as goods offered by the business."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.36",
+    "title": "Advertising as Promotional Tool",
+    "context": "Analyze personal selling as direct promotional contact between sales staff and customers. Evaluate the following economic assertions:",
+    "statements": [
+      "A global running shoes brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling running shoes exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new running shoes is an example of price skimming aimed only at early luxury buyers.",
+      "Different business units may offer products with distinct characteristics and cycles that address separate customer segments.",
+      "Removing an outdated running shoes model after failed relaunch attempts is an example of product-mix expansion through mix extension."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Separate units can target different segments with tailored products.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.37",
+    "title": "Sales Promotion and Sales Events",
+    "context": "Review public relations as promotion that builds a favourable image of the business or brand. Evaluate the following economic assertions:",
+    "statements": [
+      "Used equipment sales, support services, and tailored software can coexist as distinct products in one portfolio.",
+      "Adding a new flavour variant within an existing household cleaners range is a line extension that deepens the product line.",
+      "Introducing an entirely new household cleaners product line alongside an existing range is a mix extension widening the portfolio.",
+      "A running shoes product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Refreshing household cleaners packaging colours without changing the core formula is a relaunch within product-mix alteration."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Portfolios may combine goods and services as separate products.",
+      "TRUE — New variants within one household cleaners line illustrate line extension deepening the line.",
+      "TRUE — A separate household cleaners line added to the portfolio is mix extension increasing width.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "TRUE — Packaging colour changes for household cleaners exemplify minor relaunch alteration."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.38",
+    "title": "Personal Selling to Customers",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Removing an underperforming household cleaners variant from the range reflects contraction in the product-mix strategy.",
+      "A household cleaners brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new household cleaners product can attract first buyers during the introduction life-cycle stage.",
+      "Selling household cleaners through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting household cleaners are sales-promotion tools within the promotion element of the mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Eliminating a weak household cleaners variant is product-mix contraction.",
+      "TRUE — Brand symbols on household cleaners support differentiation within the product element.",
+      "TRUE — Launch pricing for new household cleaners can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for household cleaners.",
+      "TRUE — Seasonal events for household cleaners are promotional sales-promotion activities."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.39",
+    "title": "Public Relations and Brand Image",
+    "context": "Review how promotion in the growth stage supports maintaining a star's market position. Evaluate the following economic assertions:",
+    "statements": [
+      "Promoting running shoes through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Charm pricing of running shoes at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Because smart watches are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "Adding a new flavour variant within an existing sportswear range is a line extension that deepens the product line.",
+      "Introducing an entirely new sportswear product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "TRUE — New variants within one sportswear line illustrate line extension deepening the line.",
+      "TRUE — A separate sportswear line added to the portfolio is mix extension increasing width."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.40",
+    "title": "Heavy Promotion in Introduction",
+    "context": "Analyze how reduced promotion spending may accompany cash-cow products in low-growth markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing sportswear packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming sportswear variant from the range reflects contraction in the product-mix strategy.",
+      "A sportswear brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "A global smart watches brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling smart watches exclusively through wholesalers means the business uses direct distribution with no intermediaries."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging colour changes for sportswear exemplify minor relaunch alteration.",
+      "TRUE — Eliminating a weak sportswear variant is product-mix contraction.",
+      "TRUE — Brand symbols on sportswear support differentiation within the product element.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.41",
+    "title": "Promotion Investment for Stars",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing for a new sportswear product can attract first buyers during the introduction life-cycle stage.",
+      "Selling sportswear through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting sportswear are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing organic cereals range is a line extension that deepens the product line.",
+      "Introducing an entirely new organic cereals product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Launch pricing for new sportswear can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for sportswear.",
+      "TRUE — Seasonal events for sportswear are promotional sales-promotion activities.",
+      "TRUE — New variants within one organic cereals line illustrate line extension deepening the line.",
+      "TRUE — A separate organic cereals line added to the portfolio is mix extension increasing width."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.42",
+    "title": "Reduced Promotion for Cash Cows",
+    "context": "Analyze how market research underpins decisions across all four Ps of the marketing mix. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing organic cereals packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming organic cereals variant from the range reflects contraction in the product-mix strategy.",
+      "Setting a low introductory price for new smart watches is an example of price skimming aimed only at early luxury buyers.",
+      "A organic cereals brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new organic cereals product can attract first buyers during the introduction life-cycle stage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging colour changes for organic cereals exemplify minor relaunch alteration.",
+      "TRUE — Eliminating a weak organic cereals variant is product-mix contraction.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Brand symbols on organic cereals support differentiation within the product element.",
+      "TRUE — Launch pricing for new organic cereals can support introduction-stage customer acquisition."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.43",
+    "title": "Affordable Price and Convenient Place",
+    "context": "Review how product-mix contraction eliminates products or lines when relaunch seems unpromising. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling organic cereals through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting organic cereals are sales-promotion tools within the promotion element of the mix.",
+      "Removing an outdated smart watches model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "Adding a new flavour variant within an existing office stationery range is a line extension that deepens the product line.",
+      "Introducing an entirely new office stationery product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for organic cereals.",
+      "TRUE — Seasonal events for organic cereals are promotional sales-promotion activities.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "TRUE — New variants within one office stationery line illustrate line extension deepening the line.",
+      "TRUE — A separate office stationery line added to the portfolio is mix extension increasing width."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.44",
+    "title": "Market Research Across Four Ps",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "A smart watches product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Refreshing office stationery packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Promoting smart watches through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Removing an underperforming office stationery variant from the range reflects contraction in the product-mix strategy.",
+      "Charm pricing of smart watches at €9.99 is a promotional message and not part of the price element of the marketing mix."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "TRUE — Packaging colour changes for office stationery exemplify minor relaunch alteration.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "TRUE — Eliminating a weak office stationery variant is product-mix contraction.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.45",
+    "title": "Product Elimination After Failed Relaunch",
+    "context": "Review how increased competition in maturity can lower prices and raise promotional costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Because energy drinks are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global energy drinks brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling energy drinks exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new energy drinks is an example of price skimming aimed only at early luxury buyers.",
+      "A office stationery brand symbol and consistent label design support differentiation and recognition in the product P."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Brand symbols on office stationery support differentiation within the product element."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.46",
+    "title": "Economies of Scale in Growth",
+    "context": "Analyze how a fad product may have a very short life cycle withdrawn in under a year. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing for a new office stationery product can attract first buyers during the introduction life-cycle stage.",
+      "Removing an outdated energy drinks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A energy drinks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Promoting energy drinks through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Charm pricing of energy drinks at €9.99 is a promotional message and not part of the price element of the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Launch pricing for new office stationery can support introduction-stage customer acquisition.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.47",
+    "title": "Competition Pressure in Maturity",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Because hair conditioners are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global hair conditioners brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling office stationery through both a company website and partner retailers combines online and indirect place channels.",
+      "Selling hair conditioners exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new hair conditioners is an example of price skimming aimed only at early luxury buyers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for office stationery.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.48",
+    "title": "Short Life Cycle of Fad Products",
+    "context": "Analyze how brands can render trust and safety of choice for customers when travelling abroad. Evaluate the following economic assertions:",
+    "statements": [
+      "Removing an outdated hair conditioners model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A hair conditioners product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Seasonal sales events promoting office stationery are sales-promotion tools within the promotion element of the mix.",
+      "Promoting hair conditioners through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Charm pricing of hair conditioners at €9.99 is a promotional message and not part of the price element of the marketing mix."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "TRUE — Seasonal events for office stationery are promotional sales-promotion activities.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.49",
+    "title": "Long Maturity of Everyday Products",
+    "context": "Review how a business specialising in one product line contrasts with diversifying product-mix width. Evaluate the following economic assertions:",
+    "statements": [
+      "Adding a new flavour variant within an existing garden tools range is a line extension that deepens the product line.",
+      "Introducing an entirely new garden tools product line alongside an existing range is a mix extension widening the portfolio.",
+      "Refreshing garden tools packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Because LED light bulbs are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global LED light bulbs brand guarantees that product quality may vary sharply between countries without affecting brand recognition."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — New variants within one garden tools line illustrate line extension deepening the line.",
+      "TRUE — A separate garden tools line added to the portfolio is mix extension increasing width.",
+      "TRUE — Packaging colour changes for garden tools exemplify minor relaunch alteration.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.50",
+    "title": "Global Brand Recognition Abroad",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling LED light bulbs exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new LED light bulbs is an example of price skimming aimed only at early luxury buyers.",
+      "Removing an outdated LED light bulbs model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "Removing an underperforming garden tools variant from the range reflects contraction in the product-mix strategy.",
+      "A garden tools brand symbol and consistent label design support differentiation and recognition in the product P."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "TRUE — Eliminating a weak garden tools variant is product-mix contraction.",
+      "TRUE — Brand symbols on garden tools support differentiation within the product element."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.51",
+    "title": "Specialisation Versus Diversification",
+    "context": "Review how major product changes differ from minor relaunches when customer needs shift. Evaluate the following economic assertions:",
+    "statements": [
+      "A LED light bulbs product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Low introductory pricing for a new garden tools product can attract first buyers during the introduction life-cycle stage.",
+      "Selling garden tools through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting garden tools are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing pet food range is a line extension that deepens the product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "TRUE — Launch pricing for new garden tools can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for garden tools.",
+      "TRUE — Seasonal events for garden tools are promotional sales-promotion activities.",
+      "TRUE — New variants within one pet food line illustrate line extension deepening the line."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.52",
+    "title": "Increasing Depth of a Product Line",
+    "context": "Analyze how the product P remains at the heart of marketing as the most important decision. Evaluate the following economic assertions:",
+    "statements": [
+      "Promoting LED light bulbs through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Charm pricing of LED light bulbs at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Because travel backpacks are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "Introducing an entirely new pet food product line alongside an existing range is a mix extension widening the portfolio.",
+      "A global travel backpacks brand guarantees that product quality may vary sharply between countries without affecting brand recognition."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "TRUE — A separate pet food line added to the portfolio is mix extension increasing width.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.53",
+    "title": "Major Changes Beyond Relaunch",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing pet food packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Selling travel backpacks exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new travel backpacks is an example of price skimming aimed only at early luxury buyers.",
+      "Removing an underperforming pet food variant from the range reflects contraction in the product-mix strategy.",
+      "A pet food brand symbol and consistent label design support differentiation and recognition in the product P."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging colour changes for pet food exemplify minor relaunch alteration.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Eliminating a weak pet food variant is product-mix contraction.",
+      "TRUE — Brand symbols on pet food support differentiation within the product element."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.54",
+    "title": "Product as Most Important P",
+    "context": "Analyze how place convenience supports the marketing-mix goal of accessible purchase locations. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing for a new pet food product can attract first buyers during the introduction life-cycle stage.",
+      "Selling pet food through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting pet food are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing skincare creams range is a line extension that deepens the product line.",
+      "Introducing an entirely new skincare creams product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Launch pricing for new pet food can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for pet food.",
+      "TRUE — Seasonal events for pet food are promotional sales-promotion activities.",
+      "TRUE — New variants within one skincare creams line illustrate line extension deepening the line.",
+      "TRUE — A separate skincare creams line added to the portfolio is mix extension increasing width."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.55",
+    "title": "Interaction of Price and Promotion",
+    "context": "Review how promotional messages should align with the targeted segment's needs identified in research. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing skincare creams packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming skincare creams variant from the range reflects contraction in the product-mix strategy.",
+      "Removing an outdated travel backpacks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A travel backpacks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Promoting travel backpacks through social-media posts is a place decision because it chooses the warehouse where stock is stored."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging colour changes for skincare creams exemplify minor relaunch alteration.",
+      "TRUE — Eliminating a weak skincare creams variant is product-mix contraction.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.56",
+    "title": "Place Convenience for Customers",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "A skincare creams brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new skincare creams product can attract first buyers during the introduction life-cycle stage.",
+      "Selling skincare creams through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting skincare creams are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing kitchen appliances range is a line extension that deepens the product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Brand symbols on skincare creams support differentiation within the product element.",
+      "TRUE — Launch pricing for new skincare creams can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for skincare creams.",
+      "TRUE — Seasonal events for skincare creams are promotional sales-promotion activities.",
+      "TRUE — New variants within one kitchen appliances line illustrate line extension deepening the line."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.57",
+    "title": "Promotion Aligned With Segments",
+    "context": "Review how line extension increases depth while mix extension increases the number of product lines. Evaluate the following economic assertions:",
+    "statements": [
+      "Introducing an entirely new kitchen appliances product line alongside an existing range is a mix extension widening the portfolio.",
+      "Refreshing kitchen appliances packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming kitchen appliances variant from the range reflects contraction in the product-mix strategy.",
+      "A kitchen appliances brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new kitchen appliances product can attract first buyers during the introduction life-cycle stage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A separate kitchen appliances line added to the portfolio is mix extension increasing width.",
+      "TRUE — Packaging colour changes for kitchen appliances exemplify minor relaunch alteration.",
+      "TRUE — Eliminating a weak kitchen appliances variant is product-mix contraction.",
+      "TRUE — Brand symbols on kitchen appliances support differentiation within the product element.",
+      "TRUE — Launch pricing for new kitchen appliances can support introduction-stage customer acquisition."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.58",
+    "title": "Harmonised Mix Not Single P",
+    "context": "Analyze how elimination of a product line reflects contraction within the product-mix strategy. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling kitchen appliances through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting kitchen appliances are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing children's toys range is a line extension that deepens the product line.",
+      "Introducing an entirely new children's toys product line alongside an existing range is a mix extension widening the portfolio.",
+      "Refreshing children's toys packaging colours without changing the core formula is a relaunch within product-mix alteration."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for kitchen appliances.",
+      "TRUE — Seasonal events for kitchen appliances are promotional sales-promotion activities.",
+      "TRUE — New variants within one children's toys line illustrate line extension deepening the line.",
+      "TRUE — A separate children's toys line added to the portfolio is mix extension increasing width.",
+      "TRUE — Packaging colour changes for children's toys exemplify minor relaunch alteration."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.59",
+    "title": "Line Depth Versus Mix Width",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Charm pricing of travel backpacks at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Removing an underperforming children's toys variant from the range reflects contraction in the product-mix strategy.",
+      "A children's toys brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Because frozen pizzas are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "Low introductory pricing for a new children's toys product can attract first buyers during the introduction life-cycle stage."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "TRUE — Eliminating a weak children's toys variant is product-mix contraction.",
+      "TRUE — Brand symbols on children's toys support differentiation within the product element.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "TRUE — Launch pricing for new children's toys can support introduction-stage customer acquisition."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.60",
+    "title": "Contraction Eliminating Product Lines",
+    "context": "Analyze how stars require continued investment in promotion and production facilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling children's toys through both a company website and partner retailers combines online and indirect place channels.",
+      "A global frozen pizzas brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Seasonal sales events promoting children's toys are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing bicycle accessories range is a line extension that deepens the product line.",
+      "Introducing an entirely new bicycle accessories product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for children's toys.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "TRUE — Seasonal events for children's toys are promotional sales-promotion activities.",
+      "TRUE — New variants within one bicycle accessories line illustrate line extension deepening the line.",
+      "TRUE — A separate bicycle accessories line added to the portfolio is mix extension increasing width."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.61",
+    "title": "Decline Stage Low Growth Pattern",
+    "context": "Review how cash cows generate high revenues with lower investment as market growth slows. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling frozen pizzas exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new frozen pizzas is an example of price skimming aimed only at early luxury buyers.",
+      "Refreshing bicycle accessories packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an outdated frozen pizzas model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A frozen pizzas product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Packaging colour changes for bicycle accessories exemplify minor relaunch alteration.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.62",
+    "title": "Star Investment Requirements",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Removing an underperforming bicycle accessories variant from the range reflects contraction in the product-mix strategy.",
+      "A bicycle accessories brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Promoting frozen pizzas through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Low introductory pricing for a new bicycle accessories product can attract first buyers during the introduction life-cycle stage.",
+      "Selling bicycle accessories through both a company website and partner retailers combines online and indirect place channels."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Eliminating a weak bicycle accessories variant is product-mix contraction.",
+      "TRUE — Brand symbols on bicycle accessories support differentiation within the product element.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "TRUE — Launch pricing for new bicycle accessories can support introduction-stage customer acquisition.",
+      "TRUE — Website plus retailer partners blend online place with indirect distribution for bicycle accessories."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.63",
+    "title": "Cash Cow Revenue With Lower Spend",
+    "context": "Review price differentiation that charges different prices to distinct customer groups or channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Seasonal sales events promoting bicycle accessories are sales-promotion tools within the promotion element of the mix.",
+      "During the introduction stage of the product life cycle, development costs can exceed early revenues.",
+      "Charm pricing of frozen pizzas at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "During the introduction stage of the product life cycle, heavy advertising may accompany the first sales period.",
+      "During the growth stage of the product life cycle, sales rise faster than costs as output expands."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Seasonal events for bicycle accessories are promotional sales-promotion activities.",
+      "TRUE — Introduction can show losses while development and launch costs dominate.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "TRUE — Introductory promotion spending supports early awareness building.",
+      "TRUE — Growth-stage sales growth can outpace cost increases."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.64",
+    "title": "Poor Dog Low Share Low Growth",
+    "context": "Analyze list price and trade discounts as components of the overall price decision. Evaluate the following economic assertions:",
+    "statements": [
+      "Because mobile phone cases are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global mobile phone cases brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling mobile phone cases exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "During the growth stage of the product life cycle, economies of scale may reduce average unit costs.",
+      "During the maturity stage of the product life cycle, profit often reaches its peak relative to earlier stages."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct.",
+      "TRUE — Higher output in growth can lower average costs per unit.",
+      "TRUE — Maturity is commonly the profit peak in the PLC model."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.65",
+    "title": "Price Differentiation Across Groups",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Setting a low introductory price for new mobile phone cases is an example of price skimming aimed only at early luxury buyers.",
+      "During the maturity stage of the product life cycle, competition may force lower prices and higher promotion spending.",
+      "Removing an outdated mobile phone cases model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "During the decline stage of the product life cycle, sales volume tends to fall as customer interest wanes.",
+      "A mobile phone cases product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — Mature markets face competitive price and promotion pressure.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "TRUE — Decline features declining sales as demand weakens.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.66",
+    "title": "List Price and Trade Discounts",
+    "context": "Analyze intensive distribution that places products in many outlets to maximise customer convenience. Evaluate the following economic assertions:",
+    "statements": [
+      "Promoting mobile phone cases through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "During the decline stage of the product life cycle, profits usually fall alongside shrinking sales volume.",
+      "In the BCG matrix, a question mark has low relative market share in a market with high market growth.",
+      "Cost-plus pricing involves adding a standard markup to unit production costs within the price P.",
+      "Penetration pricing involves setting a deliberately low launch price to build share within the price P."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "TRUE — Declining sales in the final stage typically reduce profits.",
+      "TRUE — Question marks combine low share with high growth.",
+      "TRUE — cost-plus pricing is a recognised price tool in the marketing mix.",
+      "TRUE — penetration pricing is a recognised price tool in the marketing mix."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.67",
+    "title": "Selective Distribution Strategy",
+    "context": "Review exclusive distribution through a limited number of specialised retail partners. Evaluate the following economic assertions:",
+    "statements": [
+      "Charm pricing of mobile phone cases at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Price skimming involves charging a high price initially before gradual reductions within the price P.",
+      "Because washing powders are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global washing powders brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling washing powders exclusively through wholesalers means the business uses direct distribution with no intermediaries."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Charm pricing is a psychological pricing tool within the price P.",
+      "TRUE — price skimming is a recognised price tool in the marketing mix.",
+      "FALSE — The product P includes services as well as goods offered by the business.",
+      "FALSE — Brands serve as a guarantee of stable quality maintained across markets.",
+      "FALSE — Wholesaler channels indicate indirect distribution, not direct."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.68",
+    "title": "Intensive Distribution Coverage",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Setting a low introductory price for new washing powders is an example of price skimming aimed only at early luxury buyers.",
+      "Competitive pricing involves matching or responding to rival price levels within the price P.",
+      "Psychological pricing involves using charm prices that appear slightly below round numbers within the price P.",
+      "Removing an outdated washing powders model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A washing powders product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Low introductory pricing aligns with penetration or launch pricing, not skimming.",
+      "TRUE — competitive pricing is a recognised price tool in the marketing mix.",
+      "TRUE — psychological pricing is a recognised price tool in the marketing mix.",
+      "FALSE — Elimination after failed relaunch is contraction, not expansion.",
+      "FALSE — High share in a low-growth market is a cash cow, not a question mark."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.69",
+    "title": "Exclusive Distribution Partners",
+    "context": "Review how packaging and labelling form part of the product P alongside the core good or service. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade discounts involves reducing the list price for bulk channel purchasers within the price P.",
+      "Promoting washing powders through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Loyalty discounts involves rewarding repeat purchasers with preferential prices within the price P.",
+      "Instalment terms involves allowing customers to pay the price over several periods within the price P.",
+      "Charm pricing of washing powders at €9.99 is a promotional message and not part of the price element of the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — trade discounts is a recognised price tool in the marketing mix.",
+      "FALSE — Social-media promotion is a promotional tool, not a place or warehouse decision.",
+      "TRUE — loyalty discounts is a recognised price tool in the marketing mix.",
+      "TRUE — instalment terms is a recognised price tool in the marketing mix.",
+      "FALSE — Charm pricing is a psychological pricing tool within the price P."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.70",
+    "title": "Sales Force in Promotion Mix",
+    "context": "Analyze how services such as technical support count as products within the first P. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade discounts raise the list price for small retail buyers compared with large chains.",
+      "Direct distribution means selling without intermediaries to the final buyer within the place element.",
+      "Loyalty discounts eliminate the need for any promotional communication with customers.",
+      "Instalment terms remove the price element because payment is deferred to future periods.",
+      "Competitive pricing sets price without reference to any rival products in the market."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Trade discounts is a price tool with a distinct role described in the marketing-mix framework.",
+      "TRUE — direct distribution describes a place or distribution approach in the mix.",
+      "FALSE — Loyalty discounts is a price tool with a distinct role described in the marketing-mix framework.",
+      "FALSE — Instalment terms is a price tool with a distinct role described in the marketing-mix framework.",
+      "FALSE — Competitive pricing is a price tool with a distinct role described in the marketing-mix framework."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.71",
+    "title": "Packaging Within Product P",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "Indirect distribution means using wholesalers and retailers to reach customers within the place element.",
+      "Cost-plus pricing sets price by copying competitor advertisements rather than adding markup to costs.",
+      "Intensive distribution means placing the product in many convenient outlets within the place element.",
+      "Selective distribution means limiting outlets to protect service quality and image within the place element.",
+      "Exclusive distribution means appointing only a few specialised selling partners within the place element."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — indirect distribution describes a place or distribution approach in the mix.",
+      "FALSE — Cost-plus pricing is a price tool with a distinct role described in the marketing-mix framework.",
+      "TRUE — intensive distribution describes a place or distribution approach in the mix.",
+      "TRUE — selective distribution describes a place or distribution approach in the mix.",
+      "TRUE — exclusive distribution describes a place or distribution approach in the mix."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.72",
+    "title": "Services Counted as Products",
+    "context": "Analyze how product portfolio decisions map onto BCG categories across different market conditions. Evaluate the following economic assertions:",
+    "statements": [
+      "Online distribution means making the product purchasable through digital channels within the place element.",
+      "Advertising serves as paid mass communication to inform and persuade buyers in the promotion P.",
+      "Sales promotion serves as short-term incentives such as coupons or sales events in the promotion P.",
+      "Intensive distribution restricts a product to a single exclusive outlet in each city.",
+      "Personal selling serves as direct sales contact tailored to individual customers in the promotion P."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — online distribution describes a place or distribution approach in the mix.",
+      "TRUE — advertising is a promotional tool within the marketing mix.",
+      "TRUE — sales promotion is a promotional tool within the marketing mix.",
+      "FALSE — Intensive distribution relates to customer access within the place element.",
+      "TRUE — personal selling is a promotional tool within the marketing mix."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.73",
+    "title": "Brand Symbols and Global USP",
+    "context": "Review how profits tend to peak in the maturity stage of the product life cycle. Evaluate the following economic assertions:",
+    "statements": [
+      "Public relations serves as building favourable publicity and corporate image in the promotion P.",
+      "Window displays serves as in-store visual promotion at the point of sale in the promotion P.",
+      "Social-media campaigns serves as digital communication reaching targeted online audiences in the promotion P.",
+      "Selective distribution places the product in every possible outlet without limitation.",
+      "Market research on students can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — public relations is a promotional tool within the marketing mix.",
+      "TRUE — window displays is a promotional tool within the marketing mix.",
+      "TRUE — social-media campaigns is a promotional tool within the marketing mix.",
+      "FALSE — Selective distribution relates to customer access within the place element.",
+      "TRUE — Research on students informs coordinated decisions across all four Ps."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.74",
+    "title": "Portfolio Mapping on BCG Matrix",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "A promotional message tailored to students should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for students supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for students who rely on familiar names when choosing among competing offers.",
+      "Exclusive distribution requires selling through as many supermarkets as possible nationwide.",
+      "Online distribution prevents customers from purchasing because it only displays product photographs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Segment-focused promotion must align with product, price, and place for students.",
+      "TRUE — Affordable price for students fits the core marketing-mix objective.",
+      "TRUE — Familiar brands provide reassurance valued by students.",
+      "FALSE — Exclusive distribution relates to customer access within the place element.",
+      "FALSE — Online distribution relates to customer access within the place element."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.75",
+    "title": "Profit Peaking in Maturity",
+    "context": "Review how promotional tools communicate the intended message behind the marketing mix. Evaluate the following economic assertions:",
+    "statements": [
+      "Selective distribution may suit premium offers targeted at students when service quality must be controlled.",
+      "Personal selling may be effective for students when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among students without launching an entirely new product line.",
+      "Line extension with a budget variant can attract students within an existing product line without widening the whole mix.",
+      "Market research on families with young children can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Selective outlets can protect quality when targeting students.",
+      "TRUE — Complex offers to students can benefit from personal selling.",
+      "TRUE — Packaging relaunch can renew interest among students within alteration strategy.",
+      "TRUE — Budget variants for students deepen the line through line extension.",
+      "TRUE — Research on families with young children informs coordinated decisions across all four Ps."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.76",
+    "title": "Introduction Losses Before Sales",
+    "context": "Analyze how place and promotion together influence whether customers encounter the product offer. Evaluate the following economic assertions:",
+    "statements": [
+      "Home delivery belongs to promotion because it communicates advertising messages to households.",
+      "A promotional message tailored to families with young children should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for families with young children supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Sales events set the permanent list price for all future years of the product.",
+      "Brand trust is especially valuable for families with young children who rely on familiar names when choosing among competing offers."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Home delivery relates to customer access within the place element.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for families with young children.",
+      "TRUE — Affordable price for families with young children fits the core marketing-mix objective.",
+      "FALSE — Sales events functions as a promotional communication tool in the mix.",
+      "TRUE — Familiar brands provide reassurance valued by families with young children."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.77",
+    "title": "Promotional Message Communication",
+    "context": "Review how price and product quality signals interact in customer perceptions of value. Evaluate the following economic assertions:",
+    "statements": [
+      "Selective distribution may suit premium offers targeted at families with young children when service quality must be controlled.",
+      "Personal selling may be effective for families with young children when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among families with young children without launching an entirely new product line.",
+      "Line extension with a budget variant can attract families with young children within an existing product line without widening the whole mix.",
+      "Market research on retirees can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Selective outlets can protect quality when targeting families with young children.",
+      "TRUE — Complex offers to families with young children can benefit from personal selling.",
+      "TRUE — Packaging relaunch can renew interest among families with young children within alteration strategy.",
+      "TRUE — Budget variants for families with young children deepen the line through line extension.",
+      "TRUE — Research on retirees informs coordinated decisions across all four Ps."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.78",
+    "title": "Place and Promotion Customer Reach",
+    "context": "Analyze how altering an existing product range differs from eliminating it from the portfolio. Evaluate the following economic assertions:",
+    "statements": [
+      "Promotional messages aimed at retirees should remain consistent with the product features, price level, and distribution channels selected.",
+      "Affordable pricing for retirees supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brochure advertising determines which factory machine produces each product unit.",
+      "Brand trust is especially valuable for retirees who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at retirees when service quality must be controlled."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Promotion must align with product, price, and place decisions for the retiree segment.",
+      "TRUE — Affordable price for retirees fits the core marketing-mix objective.",
+      "FALSE — Brochure advertising functions as a promotional communication tool in the mix.",
+      "TRUE — Familiar brands provide reassurance valued by retirees.",
+      "TRUE — Selective outlets can protect quality when targeting retirees."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.79",
+    "title": "Price Quality Perception Link",
+    "context": "Review how a business unit portfolio may address different segments with distinct product characteristics. Evaluate the following economic assertions:",
+    "statements": [
+      "Window displays replace the need for any product or price decision in the marketing mix.",
+      "Sales force visits are classified as place tools because they transport goods to retailers.",
+      "Personal selling may be effective for retirees when the product requires detailed explanation before purchase.",
+      "Social-media campaigns are product-mix contraction because they remove old lines from sale.",
+      "Market research on students informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Window displays functions as a promotional communication tool in the mix.",
+      "FALSE — Sales force visits functions as a promotional communication tool in the mix.",
+      "TRUE — Complex offers to retirees can benefit from personal selling.",
+      "FALSE — Social-media campaigns functions as a promotional communication tool in the mix.",
+      "FALSE — Market research underpins decisions across all four Ps, including for students."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.80",
+    "title": "Alteration Versus Elimination",
+    "context": "Analyze how the marketing mix provides goods at affordable prices in convenient places with clear messages. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to students because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at students is classified as product-mix contraction because it reduces revenue per unit.",
+      "A relaunch with updated packaging can refresh appeal among retirees without launching an entirely new product line.",
+      "Selling through channels preferred by students is a promotion activity because it communicates advertising slogans only.",
+      "Adding a budget variant within an existing line can attract retiree buyers without expanding the full product mix width."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Brands support product differentiation and can reassure students, not only promotion.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction.",
+      "TRUE — Packaging relaunch can renew interest among retirees within alteration strategy.",
+      "FALSE — Channel choice for students is a place decision about customer access.",
+      "TRUE — Line extension adds variants within a line rather than widening the whole mix."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.81",
+    "title": "Business Units and Segments",
+    "context": "Review how relative market share is plotted against market growth in the BCG matrix framework. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to students is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at students must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on fitness enthusiasts can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to fitness enthusiasts should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for fitness enthusiasts supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price.",
+      "FALSE — A product line contains similar products, even when targeting students.",
+      "TRUE — Research on fitness enthusiasts informs coordinated decisions across all four Ps.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for fitness enthusiasts.",
+      "TRUE — Affordable price for fitness enthusiasts fits the core marketing-mix objective."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.82",
+    "title": "Affordable Accessible Communicated Offer",
+    "context": "Analyze how low introductory prices and heavy promotion can accompany the launch phase. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand trust is especially valuable for fitness enthusiasts who rely on familiar names when choosing among competing offers.",
+      "Market research on retirees informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Selective distribution may suit premium offers targeted at fitness enthusiasts when service quality must be controlled.",
+      "A familiar brand offers no reassurance to retirees because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at retirees is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Familiar brands provide reassurance valued by fitness enthusiasts.",
+      "FALSE — Market research underpins decisions across all four Ps, including for retirees.",
+      "TRUE — Selective outlets can protect quality when targeting fitness enthusiasts.",
+      "FALSE — Brands support product differentiation and can reassure retirees, not only promotion.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.83",
+    "title": "BCG Axes Share and Growth",
+    "context": "Review how channel partners extend place reach when a firm chooses indirect distribution. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling through channels preferred by retirees is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling may be effective for fitness enthusiasts when the product requires detailed explanation before purchase.",
+      "Personal selling to retirees is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at retirees must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on premium buyers informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Channel choice for retirees is a place decision about customer access.",
+      "TRUE — Complex offers to fitness enthusiasts can benefit from personal selling.",
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price.",
+      "FALSE — A product line contains similar products, even when targeting retirees.",
+      "FALSE — Market research underpins decisions across all four Ps, including for premium buyers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.84",
+    "title": "Launch Pricing and Promotion Mix",
+    "context": "Analyze how brand loyalty encourages repeat purchase within the product element of the mix. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to premium buyers because brands belong exclusively to the promotion P.",
+      "A relaunch with updated packaging can refresh appeal among fitness enthusiasts without launching an entirely new product line.",
+      "Low introductory pricing aimed at premium buyers is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by premium buyers is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to premium buyers is a price tool because sales staff set the permanent list price for all future years."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Brands support product differentiation and can reassure premium buyers, not only promotion.",
+      "TRUE — Packaging relaunch can renew interest among fitness enthusiasts within alteration strategy.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction.",
+      "FALSE — Channel choice for premium buyers is a place decision about customer access.",
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.85",
+    "title": "Indirect Channels Extend Place",
+    "context": "Review how contraction removes underperforming lines when alteration and relaunch are insufficient. Evaluate the following economic assertions:",
+    "statements": [
+      "A product line aimed at premium buyers must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on budget shoppers informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Line extension with a budget variant can attract fitness enthusiasts within an existing product line without widening the whole mix.",
+      "Market research on home-office workers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A familiar brand offers no reassurance to budget shoppers because brands belong exclusively to the promotion P."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A product line contains similar products, even when targeting premium buyers.",
+      "FALSE — Market research underpins decisions across all four Ps, including for budget shoppers.",
+      "TRUE — Budget variants for fitness enthusiasts deepen the line through line extension.",
+      "TRUE — Research on home-office workers informs coordinated decisions across all four Ps.",
+      "FALSE — Brands support product differentiation and can reassure budget shoppers, not only promotion."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.86",
+    "title": "Brand Loyalty and Repeat Purchase",
+    "context": "Analyze how the four Ps must be coordinated to meet the targeted market's needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "A promotional message tailored to home-office workers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for home-office workers supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for home-office workers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at home-office workers when service quality must be controlled.",
+      "Personal selling may be effective for home-office workers when the product requires detailed explanation before purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Segment-focused promotion must align with product, price, and place for home-office workers.",
+      "TRUE — Affordable price for home-office workers fits the core marketing-mix objective.",
+      "TRUE — Familiar brands provide reassurance valued by home-office workers.",
+      "TRUE — Selective outlets can protect quality when targeting home-office workers.",
+      "TRUE — Complex offers to home-office workers can benefit from personal selling."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.87",
+    "title": "Contraction When Relaunch Fails",
+    "context": "Review the marketing mix as a harmonised blend of product, price, place, and promotion tools. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among home-office workers without launching an entirely new product line.",
+      "Line extension with a budget variant can attract home-office workers within an existing product line without widening the whole mix.",
+      "Market research on budget-conscious shoppers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to budget-conscious shoppers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for budget-conscious shoppers supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging relaunch can renew interest among home-office workers within alteration strategy.",
+      "TRUE — Budget variants for home-office workers deepen the line through line extension.",
+      "TRUE — Research on budget-conscious shoppers informs coordinated decisions across all four Ps.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for budget-conscious shoppers.",
+      "TRUE — Affordable price for budget-conscious shoppers fits the core marketing-mix objective."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.88",
+    "title": "Coordinated Four Ps for Targets",
+    "context": "Analyze how the four Ps of the marketing mix support meeting targeted customers' needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing aimed at budget shoppers is classified as product-mix contraction because it reduces revenue per unit.",
+      "Brand trust is especially valuable for budget-conscious shoppers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at budget-conscious shoppers when service quality must be controlled.",
+      "Personal selling may be effective for budget-conscious shoppers when the product requires detailed explanation before purchase.",
+      "Selling through channels preferred by budget shoppers is a promotion activity because it communicates advertising slogans only."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction.",
+      "TRUE — Familiar brands provide reassurance valued by budget-conscious shoppers.",
+      "TRUE — Selective outlets can protect quality when targeting budget-conscious shoppers.",
+      "TRUE — Complex offers to budget-conscious shoppers can benefit from personal selling.",
+      "FALSE — Channel choice for budget shoppers is a place decision about customer access."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.89",
+    "title": "Product Portfolio Three Units",
+    "context": "Review Figure 15 on the four elements of the marketing mix based on market research. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among budget-conscious shoppers without launching an entirely new product line.",
+      "Line extension with a budget variant can attract budget-conscious shoppers within an existing product line without widening the whole mix.",
+      "Market research on premium buyers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to premium buyers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for premium buyers supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging relaunch can renew interest among budget-conscious shoppers within alteration strategy.",
+      "TRUE — Budget variants for budget-conscious shoppers deepen the line through line extension.",
+      "TRUE — Research on premium buyers informs coordinated decisions across all four Ps.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for premium buyers.",
+      "TRUE — Affordable price for premium buyers fits the core marketing-mix objective."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.90",
+    "title": "Fad Withdrawal Within One Year",
+    "context": "Analyze the product element of the marketing mix as the first P covering goods and services offered. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to budget shoppers is a price tool because sales staff set the permanent list price for all future years.",
+      "Brand trust is especially valuable for premium buyers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at premium buyers when service quality must be controlled.",
+      "Personal selling may be effective for premium buyers when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among premium buyers without launching an entirely new product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price.",
+      "TRUE — Familiar brands provide reassurance valued by premium buyers.",
+      "TRUE — Selective outlets can protect quality when targeting premium buyers.",
+      "TRUE — Complex offers to premium buyers can benefit from personal selling.",
+      "TRUE — Packaging relaunch can renew interest among premium buyers within alteration strategy."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.91",
+    "title": "Detergent Indefinite Maturity Trap",
+    "context": "Review how product lines and product-mix width relate to a business's product strategy. Evaluate the following economic assertions:",
+    "statements": [
+      "Line extension with a budget variant can attract premium buyers within an existing product line without widening the whole mix.",
+      "Market research on rural households can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A product line aimed at budget shoppers must contain unrelated categories such as food and machinery to count as one line.",
+      "A promotional message tailored to rural households should align with the product and price offered through chosen place channels.",
+      "Market research on rural customers informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Budget variants for premium buyers deepen the line through line extension.",
+      "TRUE — Research on rural households informs coordinated decisions across all four Ps.",
+      "FALSE — A product line contains similar products, even when targeting budget shoppers.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for rural households.",
+      "FALSE — Market research underpins decisions across all four Ps, including for rural customers."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.92",
+    "title": "Question Mark Becomes Star Path",
+    "context": "Analyze the role of brands in product differentiation, recognition, and loyalty within the product P. Evaluate the following economic assertions:",
+    "statements": [
+      "Affordable pricing for rural households supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for rural households who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at rural households when service quality must be controlled.",
+      "A familiar brand offers no reassurance to rural customers because brands belong exclusively to the promotion P.",
+      "Personal selling may be effective for rural households when the product requires detailed explanation before purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Affordable price for rural households fits the core marketing-mix objective.",
+      "TRUE — Familiar brands provide reassurance valued by rural households.",
+      "TRUE — Selective outlets can protect quality when targeting rural households.",
+      "FALSE — Brands support product differentiation and can reassure rural customers, not only promotion.",
+      "TRUE — Complex offers to rural households can benefit from personal selling."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.93",
+    "title": "Cash Cow Becomes Poor Dog Shift",
+    "context": "Review minor packaging and colour changes as a relaunch within product-mix alteration. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among rural households without launching an entirely new product line.",
+      "Line extension with a budget variant can attract rural households within an existing product line without widening the whole mix.",
+      "Market research on urban commuters can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to urban commuters should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for urban commuters supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Packaging relaunch can renew interest among rural households within alteration strategy.",
+      "TRUE — Budget variants for rural households deepen the line through line extension.",
+      "TRUE — Research on urban commuters informs coordinated decisions across all four Ps.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for urban commuters.",
+      "TRUE — Affordable price for urban commuters fits the core marketing-mix objective."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.94",
+    "title": "Mix Extension Yogurt Ice Cream",
+    "context": "Analyze line extension versus mix extension within product-mix expansion strategies. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand trust is especially valuable for urban commuters who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at urban commuters when service quality must be controlled.",
+      "Personal selling may be effective for urban commuters when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among urban commuters without launching an entirely new product line.",
+      "Low introductory pricing aimed at rural customers is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Familiar brands provide reassurance valued by urban commuters.",
+      "TRUE — Selective outlets can protect quality when targeting urban commuters.",
+      "TRUE — Complex offers to urban commuters can benefit from personal selling.",
+      "TRUE — Packaging relaunch can renew interest among urban commuters within alteration strategy.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.95",
+    "title": "Line Extension New Ice Flavours",
+    "context": "Review product-mix strategies of expansion, alteration, and contraction in Figure 16. Evaluate the following economic assertions:",
+    "statements": [
+      "Line extension with a budget variant can attract urban commuters within an existing product line without widening the whole mix.",
+      "Selling through channels preferred by rural customers is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to rural customers is a price tool because sales staff set the permanent list price for all future years.",
+      "Market research on small-business owners can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A product line aimed at rural customers must contain unrelated categories such as food and machinery to count as one line."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Budget variants for urban commuters deepen the line through line extension.",
+      "FALSE — Channel choice for rural customers is a place decision about customer access.",
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price.",
+      "TRUE — Research on small-business owners informs coordinated decisions across all four Ps.",
+      "FALSE — A product line contains similar products, even when targeting rural customers."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.96",
+    "title": "Relaunch Packaging Colour Change",
+    "context": "Analyze the product life cycle model of introduction, growth, maturity, and decline stages. Evaluate the following economic assertions:",
+    "statements": [
+      "Market research on business clients informs only promotion decisions and cannot influence product, price, or place choices.",
+      "A promotional message tailored to small-business owners should align with the product and price offered through chosen place channels.",
+      "A familiar brand offers no reassurance to business clients because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at business clients is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by business clients is a promotion activity because it communicates advertising slogans only."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Market research underpins decisions across all four Ps, including for business clients.",
+      "TRUE — Segment-focused promotion must align with product, price, and place for small-business owners.",
+      "FALSE — Brands support product differentiation and can reassure business clients, not only promotion.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction.",
+      "FALSE — Channel choice for business clients is a place decision about customer access."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.97",
+    "title": "Wholesaler Bakery Supermarket Supply",
+    "context": "Review how sales volume and profit patterns differ across product life cycle stages. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to business clients is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at business clients must contain unrelated categories such as food and machinery to count as one line.",
+      "Affordable pricing for small-business owners supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Market research on young families informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Brand trust is especially valuable for small-business owners who rely on familiar names when choosing among competing offers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price.",
+      "FALSE — A product line contains similar products, even when targeting business clients.",
+      "TRUE — Affordable price for small-business owners fits the core marketing-mix objective.",
+      "FALSE — Market research underpins decisions across all four Ps, including for young families.",
+      "TRUE — Familiar brands provide reassurance valued by small-business owners."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.98",
+    "title": "Charm Pricing Supermarket Shelves",
+    "context": "Analyze the Boston Consulting Group matrix using relative market share and market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to young families because brands belong exclusively to the promotion P.",
+      "Selective distribution may suit premium offers targeted at small-business owners when service quality must be controlled.",
+      "Low introductory pricing aimed at young families is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by young families is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to young families is a price tool because sales staff set the permanent list price for all future years."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Brands support product differentiation and can reassure young families, not only promotion.",
+      "TRUE — Selective outlets can protect quality when targeting small-business owners.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction.",
+      "FALSE — Channel choice for young families is a place decision about customer access.",
+      "FALSE — Personal selling is promotional contact, not the sole determinant of list price."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.99",
+    "title": "Showroom Delivery Finance Place Mix",
+    "context": "Review BCG categories of stars, question marks, cash cows, and poor dogs. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling may be effective for small-business owners when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among small-business owners without launching an entirely new product line.",
+      "Line extension with a budget variant can attract small-business owners within an existing product line without widening the whole mix.",
+      "A separate business unit supplying mobile-device components may address a distinct segment with its own product characteristics and cycle.",
+      "Portfolio analysis may classify mobile-device components as a question mark, star, cash cow, or poor dog depending on share and growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Complex offers to small-business owners can benefit from personal selling.",
+      "TRUE — Packaging relaunch can renew interest among small-business owners within alteration strategy.",
+      "TRUE — Budget variants for small-business owners deepen the line through line extension.",
+      "TRUE — mobile-device components units can target different segments with tailored products.",
+      "TRUE — mobile-device components can map to different BCG categories by market conditions."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.100",
+    "title": "Doctor Personal Selling Promotion",
+    "context": "Analyze how a question mark arises from low relative share in a rapidly growing market. Evaluate the following economic assertions:",
+    "statements": [
+      "A product line aimed at young families must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on commuters informs only promotion decisions and cannot influence product, price, or place choices.",
+      "A familiar brand offers no reassurance to commuters because brands belong exclusively to the promotion P.",
+      "Technical support services related to mobile-device components count as products within the product element of the marketing mix.",
+      "Low introductory pricing aimed at commuters is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A product line contains similar products, even when targeting young families.",
+      "FALSE — Market research underpins decisions across all four Ps, including for commuters.",
+      "FALSE — Brands support product differentiation and can reassure commuters, not only promotion.",
+      "TRUE — Support for mobile-device components is a product offering, not merely promotion.",
+      "FALSE — Introductory low pricing is a price decision, not product-mix contraction."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]
