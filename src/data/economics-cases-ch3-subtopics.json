@@ -210,9 +210,9 @@
     "statements": [
       "Their venture combines knowledge, labour, technology, capital, and entrepreneurship.",
       "Coordinating bookings, parts orders, and repairs supplies entrepreneurship.",
-      "Diagnostic tools and software licences represent technology in their service model.",
+      "Repair kits and licensed diagnostic apps form the technology layer of the service offer.",
       "Spare screens and batteries held for repairs are capital inputs for the workshop.",
-      "Their technical troubleshooting supplies labour as human resources."
+      "Staff time spent diagnosing faults counts as the labour input for the repair venture."
     ],
     "answer_key": [
       true,
@@ -817,7 +817,7 @@
     "title": "Local IT Service Factor Mix",
     "context": "Review combined factors in a local computer repair business. Evaluate the following economic assertions:",
     "statements": [
-      "Diagnostic tools and software licences represent technology in the service model.",
+      "Diagnostic equipment and licensed software count as technology supporting the service offer.",
       "Technicians replacing screens supply labour while spare parts inventory is capital.",
       "Customer training on backups combines knowledge and labour in service delivery.",
       "Repair shops combine labour, capital, technology, and coordination.",
@@ -1194,7 +1194,7 @@
     "title": "A small IT-support venture Factor Bundle",
     "context": "Analyze the factor bundle in a laptop repair and software venture. Evaluate the following economic assertions:",
     "statements": [
-      "Technical troubleshooting supplies labour as human resources.",
+      "Hands-on technical fault-finding by staff is counted as the labour factor among the firm's resources.",
       "Licensed diagnostic software and repair tools represent technology in the service model.",
       "Refurbishing laptops uses spare parts inventory as capital.",
       "The venture relies on entrepreneurship alone with no other factors.",
@@ -2471,7 +2471,7 @@
     "context": "Review traps when classifying retail activity. Evaluate the following economic assertions:",
     "statements": [
       "A bookstore selling printed titles performs tertiary retail distribution.",
-      "Online order fulfilment by a warehouse is tertiary logistics.",
+      "Warehouse pick-and-pack for e-commerce orders is classified as a tertiary logistics activity.",
       "Mixed manufacturing and retail in one firm can span secondary and tertiary activity.",
       "Physical goods sold in shops do not automatically make retail secondary.",
       "Printing the titles is secondary while selling them is tertiary."
@@ -2731,7 +2731,7 @@
     "title": "Distribution Services",
     "context": "Review distribution and logistics as tertiary activity. Evaluate the following economic assertions:",
     "statements": [
-      "Online order fulfilment from a warehouse is tertiary logistics.",
+      "Picking and dispatching online orders from a warehouse belongs to tertiary logistics services.",
       "Retail distribution of finished goods to shops is tertiary trade.",
       "Warehousing is secondary because steel will be manufactured.",
       "Bookstores are secondary because books are printed products.",
@@ -5431,7 +5431,7 @@
       "Fifty-one employees instantly relegate a firm to large-enterprise status with no intermediate tier.",
       "Both turnover and balance sheet must fail for medium status to be denied.",
       "The ninety-nine percent SME statistic refers to business numbers, not GDP share.",
-      "Balance sheet figures are ignored for medium status when turnover qualifies.",
+      "Meeting the turnover threshold for medium size does not let the firm ignore the balance-sheet criterion entirely.",
       "Eleven employees immediately push a business into the large-firm category skipping SME tiers."
     ],
     "answer_key": [
@@ -5457,7 +5457,7 @@
     "title": "Medium turnover-only breach",
     "context": "Analyze a firm has two hundred staff, €55m turnover, and a €42m balance sheet. Evaluate the following economic assertions:",
     "statements": [
-      "Turnover figures are ignored for medium status when balance sheet qualifies.",
+      "Passing the balance-sheet test alone does not drop the turnover test from the medium-size classification.",
       "Grant schemes ignore official micro thresholds when the applicant is a local shop.",
       "A firm with nine staff is confirmed micro without turnover documentation.",
       "Both turnover and balance sheet must pass for micro status to be granted.",
@@ -8593,7 +8593,7 @@
       "A major employer's expansion or closure decision affects community stakeholders beyond the factory gate.",
       "Residents whose family members work at the plant hold a community stakeholder interest in its future.",
       "Local spending from factory wages links community welfare to the firm's continued operation.",
-      "A town relying on one employer shows community stake in that firm's survival."
+      "Local jobs concentrating on a single company give the community a direct interest in that firm's continuity."
     ],
     "answer_key": [
       true,

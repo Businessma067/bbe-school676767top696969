@@ -6936,7 +6936,7 @@
     "title": "Needs-Led Product Tailoring",
     "context": "Consider a fitness studio that offers members discounted classes after recording attendance patterns through personal accounts on its booking platform. Evaluate the following economic assertions:",
     "statements": [
-      "Loyalty programmes at hotel loyalty programmes preserve complete customer anonymity while still delivering personalised coupons.",
+      "Under market orientation, a hotel shapes offers from guest preferences rather than pushing a standard product unchanged.",
       "hotel loyalty programmes cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
       "Market-oriented hotel loyalty programmes always respond later to changing wants because they wait for finished specifications.",
       "Even when home furniture ranges quality is high in healthcare supplies, markets and customer expectations should not be neglected by the supplier.",
@@ -9172,7 +9172,7 @@
       "Created needs through advertising benefit only businesses and never influence the quantity consumers buy.",
       "Sustainable production requires zero advertising because any promotion automatically causes unethical overconsumption.",
       "Sharing clothes among friends increases total new clothing production because each exchange requires a fresh purchase.",
-      "For electronics retailers in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For electronics retailers in apparel retailing, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "Consumers always recognise manipulative advertising and therefore never spend beyond affordable limits."
     ],
     "answer_key": [
@@ -9200,7 +9200,7 @@
     "statements": [
       "Product life extension through repair is irrelevant to sustainability when firms continue launching new models.",
       "Renting formal wear for one occasion is identical to buying a cheap garment that is discarded after a single use.",
-      "For electronics retailers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For electronics retailers in household durable-goods sectors, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "Responsible marketing means maximising impulse purchases because higher turnover always indicates customer satisfaction.",
       "Households never buy items they will not use because rational consumers plan every purchase in perfect detail."
     ],
@@ -9227,7 +9227,7 @@
     "title": "Extending Equipment Life Through Repair",
     "context": "Review the role of responsible marketing in limiting practices that manipulate consumers into excessive spending. Evaluate the following economic assertions:",
     "statements": [
-      "For electronics retailers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For electronics retailers when seasonal campaigns intensify, marketing-led development of new offers can create wishes that did not exist before the campaign.",
       "Environmental awareness absolves businesses from reviewing how their advertising stimulates additional consumption.",
       "Garment rental lengthens total resource use per outfit because each rental customer must also buy a duplicate owned copy.",
       "Unethical advertising is defined only by illegal pricing while persuasive exaggeration remains fully acceptable.",
@@ -9285,11 +9285,11 @@
     "title": "Event Rental Instead of Cheap Purchase",
     "context": "Review how exchanging good clothes among friends reflects shifting attitudes away from throwaway fashion consumption. Evaluate the following economic assertions:",
     "statements": [
-      "For cosmetics brands where repair services remain available, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For sporting-goods stores in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For book publishers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For toy distributors during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For garden-centre chains in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For cosmetics brands where repair services remain available, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For sporting-goods stores in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For book publishers when seasonal campaigns intensify, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For toy distributors during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For garden-centre chains in apparel retailing, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
     ],
     "answer_key": [
       true,
@@ -9314,11 +9314,11 @@
     "title": "Advertising Ethics and Trust",
     "context": "Consider a marketing campaign that creates new desires for accessories while consumer groups warn about spending beyond affordable limits. Evaluate the following economic assertions:",
     "statements": [
-      "For garden-centre chains in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For pharmacy groups in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For electronics retailers in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For hotel operators when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For fashion labels in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For garden-centre chains in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For pharmacy groups in consumer electronics markets, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For electronics retailers in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For hotel operators when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For fashion labels in household durable-goods sectors, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
     ],
     "answer_key": [
       true,
@@ -9343,11 +9343,11 @@
     "title": "Affordability and Unplanned Spending",
     "context": "Review how businesses that continuously launch new products contribute to a culture of wanting more than is strictly necessary. Evaluate the following economic assertions:",
     "statements": [
-      "For hotel operators during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For car-hire firms in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For fashion labels when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For fashion labels where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For tool-rental businesses in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For hotel operators during online promotional events, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For car-hire firms in consumer electronics markets, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For fashion labels when seasonal campaigns intensify, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For fashion labels where rental platforms operate alongside retail, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For tool-rental businesses in household durable-goods sectors, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
     ],
     "answer_key": [
       true,
@@ -9372,11 +9372,11 @@
     "title": "Sustainable Consumption Choices",
     "context": "Analyze the consumer finance risks when spending exceeds affordable limits because of unplanned purchases. Evaluate the following economic assertions:",
     "statements": [
-      "For tool-rental businesses when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For organic grocers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For bicycle shops in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For fashion labels when firms launch frequent product updates, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For jewellery retailers during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For tool-rental businesses when seasonal campaigns intensify, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For organic grocers in consumer electronics markets, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For bicycle shops in household durable-goods sectors, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For fashion labels when firms launch frequent product updates, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For jewellery retailers during online promotional events, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       true,
@@ -9401,11 +9401,11 @@
     "title": "Throwaway Products and Waste",
     "context": "Review how awareness of sustainability can encourage consumers to question whether advertised products are truly needed. Evaluate the following economic assertions:",
     "statements": [
-      "For jewellery retailers among younger budget-conscious shoppers, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For stationery wholesalers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For pet-supply stores in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For fashion labels among households tracking monthly budgets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For furniture workshops in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For jewellery retailers among younger budget-conscious shoppers, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For stationery wholesalers in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pet-supply stores in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For fashion labels among households tracking monthly budgets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For furniture workshops in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence."
     ],
     "answer_key": [
       true,
@@ -9430,11 +9430,11 @@
     "title": "Business Innovation and Overconsumption",
     "context": "Consider a community repair café where volunteers fix small appliances so residents reuse products instead of sending them to landfill. Evaluate the following economic assertions:",
     "statements": [
-      "For furniture workshops in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For appliance manufacturers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For cosmetics brands in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For pet-supply stores when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For kitchen-equipment firms in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For furniture workshops in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For appliance manufacturers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cosmetics brands in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pet-supply stores when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For kitchen-equipment firms in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
     ],
     "answer_key": [
       false,
@@ -9459,11 +9459,11 @@
     "title": "Quality Over Quantity in Apparel",
     "context": "Review how reuse of durable goods reduces the resource intensity of satisfying similar needs over time. Evaluate the following economic assertions:",
     "statements": [
-      "For kitchen-equipment firms in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For cosmetics brands when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For footwear brands in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For cosmetics brands where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For sporting-goods stores in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For kitchen-equipment firms in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For cosmetics brands when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For footwear brands in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For cosmetics brands where rental platforms operate alongside retail, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For sporting-goods stores in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence."
     ],
     "answer_key": [
       true,
@@ -9488,11 +9488,11 @@
     "title": "Temporary Access Rental Models",
     "context": "Analyze how quality-focused clothing choices support longer use and informal sharing rather than rapid disposal. Evaluate the following economic assertions:",
     "statements": [
-      "For sporting-goods stores in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For book publishers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For toy distributors when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For footwear brands when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For eyewear retailers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For sporting-goods stores in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For book publishers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For toy distributors when seasonal campaigns intensify, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For eyewear retailers in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       false,
@@ -9517,11 +9517,11 @@
     "title": "Malfunction Repair Not Immediate Replacement",
     "context": "Review the contrast between cheap short-lived products and higher-quality items suited to repair, reuse, or rental. Evaluate the following economic assertions:",
     "statements": [
-      "For toy distributors during online promotional events, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For eyewear retailers in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For music-instrument dealers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For toy distributors when credit makes impulse buying easier, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For camping-gear suppliers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For toy distributors during online promotional events, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For eyewear retailers in apparel retailing, successive introductions and ads can enlarge demand beyond needs already on record.",
+      "For music-instrument dealers in household durable-goods sectors, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors when credit makes impulse buying easier, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers when seasonal campaigns intensify, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       false,
@@ -9546,11 +9546,11 @@
     "title": "Promotional Influence on Spending Plans",
     "context": "Consider a technology firm balancing product launches with a service programme that repairs and reuses equipment to support longer product life. Evaluate the following economic assertions:",
     "statements": [
-      "For camping-gear suppliers during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For baby-product retailers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For toy distributors in communities promoting reuse, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For art-supply stores in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For wine merchants in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For camping-gear suppliers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For baby-product retailers in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors in communities promoting reuse, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For art-supply stores in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For wine merchants in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
     ],
     "answer_key": [
       true,
@@ -9575,11 +9575,11 @@
     "title": "Consumer and Producer Sustainability Duties",
     "context": "Review why consuming too much poses economic and environmental risks that responsible actors should recognise. Evaluate the following economic assertions:",
     "statements": [
-      "For wine merchants when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For toy distributors where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For toy distributors when firms launch frequent product updates, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For florist networks in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For cleaning-product makers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For wine merchants when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors where rental platforms operate alongside retail, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For toy distributors when firms launch frequent product updates, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For florist networks in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For cleaning-product makers in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
     ],
     "answer_key": [
       true,
@@ -9604,11 +9604,11 @@
     "title": "Short-Lived Purchases and Regret",
     "context": "Analyze how garment rental markets respond to consumers who want quality without permanent ownership of occasional-wear items. Evaluate the following economic assertions:",
     "statements": [
-      "For cleaning-product makers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For mobile-accessory sellers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For home-decor boutiques in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For cleaning-product makers when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For mobile-accessory sellers in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For home-decor boutiques in apparel retailing, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "For electronics retailers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For fashion labels in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For fashion labels in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       true,
@@ -9633,11 +9633,11 @@
     "title": "Circular Use of Durable Goods",
     "context": "Review how repair services for electronic equipment embody a more sustainable approach than automatic replacement. Evaluate the following economic assertions:",
     "statements": [
-      "For fashion labels when seasonal campaigns intensify, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For furniture workshops in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For appliance manufacturers in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For toy distributors among households tracking monthly budgets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For cosmetics brands during online promotional events, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For fashion labels when seasonal campaigns intensify, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For furniture workshops in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For appliance manufacturers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For toy distributors among households tracking monthly budgets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For cosmetics brands during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       true,
@@ -9662,11 +9662,11 @@
     "title": "Formal Wear Rental Economics",
     "context": "Consider a wardrobe-rental service that lends high-quality outfits for formal events instead of customers buying cheap garments worn only once. Evaluate the following economic assertions:",
     "statements": [
-      "For toy distributors in second-hand and exchange networks, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For garden-centre chains in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For cosmetics brands among younger budget-conscious shoppers, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For cosmetics brands in formal-wear and occasion-dress markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For cosmetics brands where rental platforms operate alongside retail, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For toy distributors in second-hand and exchange networks, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For garden-centre chains in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cosmetics brands among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For cosmetics brands in formal-wear and occasion-dress markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For cosmetics brands where rental platforms operate alongside retail, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       false,
@@ -9691,11 +9691,11 @@
     "title": "Manipulative Advertising Traps",
     "context": "Review the shared duty of businesses and households to adopt more sustainable production and consumption habits. Evaluate the following economic assertions:",
     "statements": [
-      "For garden-centre chains in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For pharmacy groups in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For hotel operators in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For hotel operators when credit makes impulse buying easier, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For cosmetics brands when firms launch frequent product updates, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For garden-centre chains in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pharmacy groups in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For hotel operators in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For hotel operators when credit makes impulse buying easier, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For cosmetics brands when firms launch frequent product updates, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       false,
@@ -9720,11 +9720,11 @@
     "title": "Budget Strain From Extra Wants",
     "context": "Analyze how passing on usable clothes to others extends product life and reduces demand for new cheap garments. Evaluate the following economic assertions:",
     "statements": [
-      "For cosmetics brands among households tracking monthly budgets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For hotel operators in communities promoting reuse, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For sporting-goods stores in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For car-hire firms in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For tool-rental businesses in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For cosmetics brands among households tracking monthly budgets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For hotel operators in communities promoting reuse, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For sporting-goods stores in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For car-hire firms in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For tool-rental businesses in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence."
     ],
     "answer_key": [
       true,
@@ -9749,11 +9749,11 @@
     "title": "Refurbishment and Environmental Goals",
     "context": "Review how advertising ethics intersect with broader responsibility for sustainable market outcomes. Evaluate the following economic assertions:",
     "statements": [
-      "For sporting-goods stores in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For tool-rental businesses in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For tool-rental businesses when credit makes impulse buying easier, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For organic grocers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For book publishers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For sporting-goods stores in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For tool-rental businesses in household durable-goods sectors, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For tool-rental businesses when credit makes impulse buying easier, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For organic grocers in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For book publishers in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       true,
@@ -9778,11 +9778,11 @@
     "title": "Rejecting Cheap Disposable Clothing",
     "context": "Consider a family choosing between repairing a washing machine and purchasing a discounted replacement advertised as a limited-time offer. Evaluate the following economic assertions:",
     "statements": [
-      "For book publishers in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For toy distributors in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For garden-centre chains in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For pharmacy groups during online promotional events, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For hotel operators among younger budget-conscious shoppers, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For book publishers in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For toy distributors in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For garden-centre chains in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For pharmacy groups during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For hotel operators among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       true,
@@ -9807,11 +9807,11 @@
     "title": "Needs Versus Marketing-Created Wants",
     "context": "Review how responsible businesses balance innovation with awareness of overconsumption and waste. Evaluate the following economic assertions:",
     "statements": [
-      "For organic grocers in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For hotel operators in formal-wear and occasion-dress markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For bicycle shops in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For jewellery retailers in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For hotel operators where repair services remain available, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For organic grocers in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For hotel operators in formal-wear and occasion-dress markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For bicycle shops in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For jewellery retailers in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For hotel operators where repair services remain available, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       false,
@@ -9836,11 +9836,11 @@
     "title": "Household Overconsumption Patterns",
     "context": "Analyze how event-oriented clothing rental can lower the incentive to buy low-quality outfits for one-off use. Evaluate the following economic assertions:",
     "statements": [
-      "For hotel operators when credit makes impulse buying easier, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For jewellery retailers when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For jewellery retailers where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For stationery wholesalers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For pet-supply stores in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For hotel operators when credit makes impulse buying easier, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For jewellery retailers when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For jewellery retailers where rental platforms operate alongside retail, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For stationery wholesalers in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pet-supply stores in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
     ],
     "answer_key": [
       true,
@@ -9865,11 +9865,11 @@
     "title": "Responsible Promotion Practices",
     "context": "Review the mechanism by which new product launches and campaigns can stimulate demand beyond existing requirements. Evaluate the following economic assertions:",
     "statements": [
-      "For hotel operators in communities promoting reuse, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For car-hire firms in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For pet-supply stores in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For kitchen-equipment firms in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For footwear brands in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For hotel operators in communities promoting reuse, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For car-hire firms in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For pet-supply stores in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For kitchen-equipment firms in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
     ],
     "answer_key": [
       true,
@@ -9894,11 +9894,11 @@
     "title": "Electronics Longevity Through Maintenance",
     "context": "Consider a business promoting sustainable production while critics question whether its advertising still stimulates unnecessary consumption. Evaluate the following economic assertions:",
     "statements": [
-      "For car-hire firms in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For tool-rental businesses in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For organic grocers in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For bicycle shops when seasonal campaigns intensify, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For jewellery retailers during online promotional events, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For car-hire firms in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For tool-rental businesses in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For organic grocers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For bicycle shops when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For jewellery retailers during online promotional events, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       true,
@@ -9923,11 +9923,11 @@
     "title": "Passing On Usable Garments",
     "context": "Review the sustainability rationale for keeping equipment in service through maintenance and component replacement. Evaluate the following economic assertions:",
     "statements": [
-      "For jewellery retailers among younger budget-conscious shoppers, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For footwear brands in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For footwear brands when credit makes impulse buying easier, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For footwear brands where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For jewellery retailers in formal-wear and occasion-dress markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For jewellery retailers among younger budget-conscious shoppers, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For footwear brands in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For footwear brands when credit makes impulse buying easier, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands where rental platforms operate alongside retail, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For jewellery retailers in formal-wear and occasion-dress markets, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       true,
@@ -9952,11 +9952,11 @@
     "title": "Limited-Use Clothing Disposal",
     "context": "Analyze how social exchange of quality clothing offers an alternative to discarding still-usable garments. Evaluate the following economic assertions:",
     "statements": [
-      "For jewellery retailers where repair services remain available, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For stationery wholesalers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For pet-supply stores in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For kitchen-equipment firms in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For footwear brands when firms launch frequent product updates, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For jewellery retailers where repair services remain available, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For stationery wholesalers in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For pet-supply stores in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For kitchen-equipment firms in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For footwear brands when firms launch frequent product updates, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing."
     ],
     "answer_key": [
       true,
@@ -9981,11 +9981,11 @@
     "title": "Marketing Cycles and Early Replacement",
     "context": "Review why both supply-side marketing conduct and demand-side purchasing choices matter for sustainable consumption. Evaluate the following economic assertions:",
     "statements": [
-      "For footwear brands among households tracking monthly budgets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For eyewear retailers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For music-instrument dealers in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For camping-gear suppliers in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For kitchen-equipment firms when seasonal campaigns intensify, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For footwear brands among households tracking monthly budgets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For eyewear retailers in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For music-instrument dealers in apparel retailing, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For kitchen-equipment firms when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       false,
@@ -10010,11 +10010,11 @@
     "title": "Affordable Spending Limits",
     "context": "Consider an electronics retailer that promotes frequent upgrades while a nearby workshop repairs laptops so customers keep devices longer instead of replacing them immediately. Evaluate the following economic assertions:",
     "statements": [
-      "For kitchen-equipment firms during online promotional events, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For footwear brands in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For eyewear retailers in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For music-instrument dealers in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For camping-gear suppliers when seasonal campaigns intensify, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For kitchen-equipment firms during online promotional events, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For footwear brands in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For eyewear retailers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For music-instrument dealers in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For camping-gear suppliers when seasonal campaigns intensify, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       true,
@@ -10039,11 +10039,11 @@
     "title": "Access-Based Consumption Models",
     "context": "Review how short product-use periods signal overconsumption when items were bought without lasting purpose. Evaluate the following economic assertions:",
     "statements": [
-      "For camping-gear suppliers when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For baby-product retailers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For art-supply stores in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For camping-gear suppliers during online promotional events, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For wine merchants in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For camping-gear suppliers when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For baby-product retailers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For art-supply stores in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For camping-gear suppliers during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For wine merchants in household durable-goods sectors, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
     ],
     "answer_key": [
       false,
@@ -10068,11 +10068,11 @@
     "title": "Awareness of Consumption Risks",
     "context": "Analyze how rental models can align firm revenue with temporary access rather than ownership of rarely used goods. Evaluate the following economic assertions:",
     "statements": [
-      "For wine merchants when seasonal campaigns intensify, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For camping-gear suppliers among younger budget-conscious shoppers, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For wine merchants where rental platforms operate alongside retail, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For baby-product retailers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For art-supply stores in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For wine merchants when seasonal campaigns intensify, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For wine merchants where rental platforms operate alongside retail, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For baby-product retailers in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For art-supply stores in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       false,
@@ -10097,11 +10097,11 @@
     "title": "Ethical Limits on Persuasive Advertising",
     "context": "Review the consumer-protection dimension when advertising encourages spending beyond what households can afford. Evaluate the following economic assertions:",
     "statements": [
-      "For art-supply stores in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For wine merchants when firms launch frequent product updates, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For wine merchants in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For florist networks when seasonal campaigns intensify, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For cleaning-product makers in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For art-supply stores in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For wine merchants when firms launch frequent product updates, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For wine merchants in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For florist networks when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For cleaning-product makers in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct."
     ],
     "answer_key": [
       true,
@@ -10126,11 +10126,11 @@
     "title": "Repair Markets and Sustainability",
     "context": "Consider a computer refurbishment business that extends machine life through repair and reuse rather than encouraging immediate replacement when faults appear. Evaluate the following economic assertions:",
     "statements": [
-      "For wine merchants among households tracking monthly budgets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For cleaning-product makers in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For florist networks in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For mobile-accessory sellers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
-      "For home-decor boutiques in apparel retailing, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly."
+      "For wine merchants among households tracking monthly budgets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cleaning-product makers in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For florist networks in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For mobile-accessory sellers in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For home-decor boutiques in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
     ],
     "answer_key": [
       false,
@@ -10155,11 +10155,11 @@
     "title": "Single-Use Outfit Alternatives",
     "context": "Review how preference for durable apparel supports sustainability compared with frequent purchases of inexpensive clothing. Evaluate the following economic assertions:",
     "statements": [
-      "For home-decor boutiques in household durable-goods sectors, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
+      "For home-decor boutiques in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
       "For electronics retailers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For florist networks in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For fashion labels among younger budget-conscious shoppers, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For cleaning-product makers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity."
+      "For florist networks in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For fashion labels among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For cleaning-product makers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing."
     ],
     "answer_key": [
       true,
@@ -10184,10 +10184,10 @@
     "title": "Continuous Product Development Effects",
     "context": "Analyze the economic behaviour described when shoppers buy more than intended because promotions trigger additional wants. Evaluate the following economic assertions:",
     "statements": [
-      "For cleaning-product makers in apparel retailing, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For mobile-accessory sellers in consumer electronics markets, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For home-decor boutiques in household durable-goods sectors, businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "For fashion labels in formal-wear and occasion-dress markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For cleaning-product makers in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For mobile-accessory sellers in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For home-decor boutiques in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For fashion labels in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
       "For electronics retailers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -10213,11 +10213,11 @@
     "title": "Financial Stress From Excess Spending",
     "context": "Review how businesses contribute to sustainability when they support longer product life and responsible promotion. Evaluate the following economic assertions:",
     "statements": [
-      "For fashion labels where repair services remain available, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For furniture workshops in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For appliance manufacturers in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For fashion labels where repair services remain available, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For furniture workshops in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For appliance manufacturers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
       "For electronics retailers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For cosmetics brands when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For cosmetics brands when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       true,
@@ -10242,11 +10242,11 @@
     "title": "Reuse Instead of Landfill Disposal",
     "context": "Consider a student renting a formal suit for a graduation ceremony rather than buying low-quality clothing that would rarely be worn again. Evaluate the following economic assertions:",
     "statements": [
-      "For cosmetics brands during online promotional events, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For sporting-goods stores in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For book publishers when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For cosmetics brands during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For sporting-goods stores in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For book publishers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
       "For electronics retailers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For toy distributors among younger budget-conscious shoppers, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For toy distributors among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       true,
@@ -10271,7 +10271,7 @@
     "title": "High-Quality Rental for Occasions",
     "context": "Review the environmental logic of reusing computers instead of replacing them at the first sign of malfunction. Evaluate the following economic assertions:",
     "statements": [
-      "For toy distributors in formal-wear and occasion-dress markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For toy distributors in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
       "For electronics retailers when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
@@ -10300,11 +10300,11 @@
     "title": "Unethical Campaign Recognition",
     "context": "Analyze how created needs through advertising differ from needs customers already held before exposure to campaigns. Evaluate the following economic assertions:",
     "statements": [
-      "For toy distributors where repair services remain available, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For garden-centre chains in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For pharmacy groups in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For hotel operators when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For car-hire firms in apparel retailing, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For toy distributors where repair services remain available, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For garden-centre chains in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For pharmacy groups in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For hotel operators when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For car-hire firms in apparel retailing, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       true,
@@ -10326,14 +10326,14 @@
   {
     "subsection": "5.4",
     "case_id": "CASE 5.4.57",
-    "title": "Planned Versus Actual Expenditure",
+    "title": "Affordability Risks and Responsible Consumption",
     "context": "Review why sustainable consumption requires questioning whether each purchase will be used meaningfully over time. Evaluate the following economic assertions:",
     "statements": [
-      "For car-hire firms in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For tool-rental businesses in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For organic grocers when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For bicycle shops during online promotional events, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For jewellery retailers among younger budget-conscious shoppers, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For car-hire firms, spending beyond affordable limits under promotional pressure is one of the consumption risks that responsible businesses and consumers should recognise.",
+      "For tool-rental businesses in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For organic grocers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For bicycle shops during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For jewellery retailers among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits."
     ],
     "answer_key": [
       true,
@@ -10358,11 +10358,11 @@
     "title": "Durable Goods Sharing Networks",
     "context": "Consider shoppers who accumulate unworn garments in wardrobes after impulse purchases driven by persuasive promotional messages. Evaluate the following economic assertions:",
     "statements": [
-      "For jewellery retailers in formal-wear and occasion-dress markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For jewellery retailers in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
       "For electronics retailers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For stationery wholesalers in apparel retailing, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For pet-supply stores in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For stationery wholesalers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For pet-supply stores in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       true,
@@ -10390,7 +10390,7 @@
       "For electronics retailers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pet-supply stores when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For pet-supply stores when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
       "For electronics retailers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -10420,7 +10420,7 @@
       "For fashion labels in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For fashion labels when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For fashion labels where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pet-supply stores during online promotional events, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For pet-supply stores during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       false,
@@ -10446,10 +10446,10 @@
     "context": "Review how marketing-driven product cycles can encourage replacement before the end of a product's useful life. Evaluate the following economic assertions:",
     "statements": [
       "For fashion labels when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pet-supply stores among younger budget-conscious shoppers, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For kitchen-equipment firms in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For footwear brands in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For eyewear retailers when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For pet-supply stores among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For kitchen-equipment firms in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For footwear brands in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For eyewear retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       false,
@@ -10475,8 +10475,8 @@
     "context": "Consider a fashion label that advertises seasonal collections aggressively while some shoppers prefer durable garments they can pass on to friends after years of wear. Evaluate the following economic assertions:",
     "statements": [
       "For fashion labels among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For eyewear retailers during online promotional events, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For music-instrument dealers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For eyewear retailers during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For music-instrument dealers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
       "For fashion labels in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For furniture workshops in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
@@ -10504,10 +10504,10 @@
     "context": "Review how refurbishment and repair markets support circular use of durable consumer goods. Evaluate the following economic assertions:",
     "statements": [
       "For furniture workshops in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For music-instrument dealers in apparel retailing, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For camping-gear suppliers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For music-instrument dealers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For camping-gear suppliers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
       "For appliance manufacturers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For baby-product retailers in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For baby-product retailers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits."
     ],
     "answer_key": [
       false,
@@ -10532,11 +10532,11 @@
     "title": "Component Replacement and Repair",
     "context": "Analyze how formal-wear rental services target consumers seeking quality without long-term ownership. Evaluate the following economic assertions:",
     "statements": [
-      "For baby-product retailers when seasonal campaigns intensify, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For art-supply stores in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For wine merchants in household durable-goods sectors, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For florist networks during online promotional events, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For cleaning-product makers among younger budget-conscious shoppers, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying."
+      "For baby-product retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For art-supply stores in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For wine merchants in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For florist networks during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For cleaning-product makers among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases."
     ],
     "answer_key": [
       true,
@@ -10561,11 +10561,11 @@
     "title": "Social Exchange of Quality Clothes",
     "context": "Review the societal costs associated with consuming more goods than are needed or sustainably supportable. Evaluate the following economic assertions:",
     "statements": [
-      "For cleaning-product makers in formal-wear and occasion-dress markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For mobile-accessory sellers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
-      "For home-decor boutiques in apparel retailing, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For cleaning-product makers in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For mobile-accessory sellers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For home-decor boutiques in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
       "For electronics retailers in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For fashion labels among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For fashion labels among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10590,11 +10590,11 @@
     "title": "Stimulating Demand Beyond Necessity",
     "context": "Consider a clothing swap event where participants exchange good-quality garments instead of discarding inexpensive items after a few months of use. Evaluate the following economic assertions:",
     "statements": [
-      "For fashion labels in formal-wear and occasion-dress markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For fashion labels where rental platforms operate alongside retail, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For furniture workshops in apparel retailing, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For fashion labels in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For fashion labels where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For furniture workshops in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For appliance manufacturers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For appliance manufacturers among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For appliance manufacturers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10619,11 +10619,11 @@
     "title": "Consumer Protection and Advertising",
     "context": "Review how extending the service life of electronics through repair reduces premature disposal and new purchases. Evaluate the following economic assertions:",
     "statements": [
-      "For appliance manufacturers in formal-wear and occasion-dress markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For appliance manufacturers where rental platforms operate alongside retail, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For cosmetics brands in apparel retailing, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For sporting-goods stores among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For book publishers where repair services remain available, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For appliance manufacturers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cosmetics brands in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For sporting-goods stores among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For book publishers where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
     ],
     "answer_key": [
       true,
@@ -10648,11 +10648,11 @@
     "title": "Premature Replacement Avoidance",
     "context": "Analyze how quality clothing exchanged among friends embodies reuse rather than single-user discard. Evaluate the following economic assertions:",
     "statements": [
-      "For book publishers when credit makes impulse buying easier, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For book publishers when credit makes impulse buying easier, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
       "For appliance manufacturers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For toy distributors in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For toy distributors in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For appliance manufacturers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For garden-centre chains in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For garden-centre chains in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10677,11 +10677,11 @@
     "title": "Occasion Wear Rental Benefits",
     "context": "Review the marketing responsibility theme that businesses should not rely solely on stimulating ever-greater consumption. Evaluate the following economic assertions:",
     "statements": [
-      "For garden-centre chains when seasonal campaigns intensify, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For garden-centre chains when seasonal campaigns intensify, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For appliance manufacturers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For appliance manufacturers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For appliance manufacturers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pharmacy groups in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For pharmacy groups in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10707,10 +10707,10 @@
     "context": "Consider a retailer whose loyalty programme nudges customers toward additional purchases beyond their initial shopping list and budget. Evaluate the following economic assertions:",
     "statements": [
       "For appliance manufacturers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pharmacy groups in apparel retailing, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For pharmacy groups in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For appliance manufacturers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For hotel operators among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For car-hire firms in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For hotel operators among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For car-hire firms in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
     ],
     "answer_key": [
       false,
@@ -10735,11 +10735,11 @@
     "title": "Joint Action for Sustainable Markets",
     "context": "Review how rental of high-quality products for temporary needs complements sustainability-oriented consumer choice. Evaluate the following economic assertions:",
     "statements": [
-      "For car-hire firms when seasonal campaigns intensify, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For tool-rental businesses in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For organic grocers in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For bicycle shops during online promotional events, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For jewellery retailers among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For car-hire firms when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For tool-rental businesses in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For organic grocers in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For bicycle shops during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For jewellery retailers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10764,11 +10764,11 @@
     "title": "Infrequently Used Goods and Rental",
     "context": "Analyze the difference between ethical promotion that informs consumers and practices regarded as unethical persuasion. Evaluate the following economic assertions:",
     "statements": [
-      "For jewellery retailers in formal-wear and occasion-dress markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For jewellery retailers where rental platforms operate alongside retail, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For stationery wholesalers in apparel retailing, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For pet-supply stores in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For kitchen-equipment firms among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For jewellery retailers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For jewellery retailers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For stationery wholesalers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For pet-supply stores in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For kitchen-equipment firms among younger budget-conscious shoppers, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
     ],
     "answer_key": [
       true,
@@ -10796,7 +10796,7 @@
       "For appliance manufacturers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For appliance manufacturers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For appliance manufacturers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For kitchen-equipment firms in formal-wear and occasion-dress markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For kitchen-equipment firms in formal-wear and occasion-dress markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
       "For cosmetics brands in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -10822,11 +10822,11 @@
     "title": "Longer Use Through Repair Reuse",
     "context": "Consider an event-styling firm offering premium garment rental so clients avoid buying single-use outfits for occasional occasions. Evaluate the following economic assertions:",
     "statements": [
-      "For kitchen-equipment firms where repair services remain available, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For kitchen-equipment firms where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For cosmetics brands in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For footwear brands in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For eyewear retailers in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For music-instrument dealers when seasonal campaigns intensify, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For footwear brands in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For eyewear retailers in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For music-instrument dealers when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate."
     ],
     "answer_key": [
       true,
@@ -10851,10 +10851,10 @@
     "title": "Rejecting Throwaway Fashion Norms",
     "context": "Review the trend toward rejecting cheap clothes discarded after a few months in favour of longer-lasting alternatives. Evaluate the following economic assertions:",
     "statements": [
-      "For music-instrument dealers during online promotional events, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For camping-gear suppliers in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For baby-product retailers in apparel retailing, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For art-supply stores in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For music-instrument dealers during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For camping-gear suppliers in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For baby-product retailers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For art-supply stores in household durable-goods sectors, shoppers may leave with a higher bill than planned once promotions add extras.",
       "For cosmetics brands in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -10881,10 +10881,10 @@
     "context": "Analyze how businesses and consumers jointly influence whether markets move toward or away from overconsumption. Evaluate the following economic assertions:",
     "statements": [
       "For cosmetics brands when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For art-supply stores when seasonal campaigns intensify, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For art-supply stores when seasonal campaigns intensify, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For cosmetics brands among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For wine merchants in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For florist networks in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan."
+      "For wine merchants in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For florist networks in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
     ],
     "answer_key": [
       false,
@@ -10909,10 +10909,10 @@
     "title": "Impulse Purchases and Non-Essentials",
     "context": "Review how immediate replacement of repairable equipment conflicts with sustainability-oriented consumption advice. Evaluate the following economic assertions:",
     "statements": [
-      "For florist networks when seasonal campaigns intensify, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For cleaning-product makers in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For mobile-accessory sellers in household durable-goods sectors, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
-      "For home-decor boutiques during online promotional events, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For florist networks when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cleaning-product makers in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For mobile-accessory sellers in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For home-decor boutiques during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
       "For cosmetics brands in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -10938,7 +10938,7 @@
     "title": "Temporary Need Satisfaction Models",
     "context": "Consider a household that exceeds its monthly budget after targeted online promotions persuade members to buy items they had not planned to purchase. Evaluate the following economic assertions:",
     "statements": [
-      "For home-decor boutiques among younger budget-conscious shoppers, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For home-decor boutiques among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
       "For cosmetics brands where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For electronics retailers in consumer electronics markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
       "For cosmetics brands when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
@@ -11174,7 +11174,7 @@
       "For hotel operators among younger budget-conscious shoppers, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
       "For car-hire firms when seasonal campaigns intensify, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
       "For tool-rental businesses during online promotional events, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
-      "For electronics retailers among younger budget-conscious shoppers, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For electronics retailers among younger budget-conscious shoppers, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
     ],
     "answer_key": [
       true,
@@ -11229,9 +11229,9 @@
     "context": "Review the potential risks of consuming too much and the need for more responsible behaviour on both sides of the market. Evaluate the following economic assertions:",
     "statements": [
       "For pharmacy groups in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For cosmetics brands in communities promoting reuse, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For sporting-goods stores in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For book publishers during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For cosmetics brands in communities promoting reuse, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For sporting-goods stores in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For book publishers during online promotional events, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "For pharmacy groups among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -11257,11 +11257,11 @@
     "title": "Advertising Influence on Intentions",
     "context": "Analyze how repairing and reusing products such as computers can support sustainability rather than immediate replacement. Evaluate the following economic assertions:",
     "statements": [
-      "For book publishers among younger budget-conscious shoppers, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For book publishers among younger budget-conscious shoppers, marketing-led development of new offers can create wishes that did not exist before the campaign.",
       "For pharmacy groups in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For toy distributors in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For garden-centre chains when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For pharmacy groups in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For toy distributors in consumer electronics markets, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For garden-centre chains when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pharmacy groups in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       true,
@@ -11287,8 +11287,8 @@
     "context": "Consider a technology firm balancing product launches with a service programme that repairs and reuses equipment to support longer product life. Evaluate the following economic assertions:",
     "statements": [
       "For pharmacy groups where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For pharmacy groups when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For hotel operators in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For pharmacy groups when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For hotel operators in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "For pharmacy groups when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For pharmacy groups among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
@@ -11319,7 +11319,7 @@
       "For hotel operators in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For hotel operators when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For hotel operators where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For hotel operators in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For hotel operators in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       false,
@@ -11346,9 +11346,9 @@
     "statements": [
       "For hotel operators when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For hotel operators among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For hotel operators in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For hotel operators in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "For hotel operators in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For car-hire firms in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For car-hire firms in apparel retailing, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
     ],
     "answer_key": [
       false,
@@ -11377,7 +11377,7 @@
       "For car-hire firms in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For tool-rental businesses in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For organic grocers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For car-hire firms in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For car-hire firms in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       false,
@@ -11402,11 +11402,11 @@
     "title": "Repairable Faults and Replacement Choice",
     "context": "Consider a wardrobe-rental service that lends high-quality outfits for formal events instead of customers buying cheap garments worn only once. Evaluate the following economic assertions:",
     "statements": [
-      "For car-hire firms when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For car-hire firms when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "For organic grocers when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For tool-rental businesses in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For tool-rental businesses in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "For organic grocers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For organic grocers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For organic grocers in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
     ],
     "answer_key": [
       true,
@@ -11431,10 +11431,10 @@
     "title": "Single-Event Garment Rental Logic",
     "context": "Analyze why both producers and consumers share responsibility for moving toward more sustainable consumption patterns. Evaluate the following economic assertions:",
     "statements": [
-      "For organic grocers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For bicycle shops in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For jewellery retailers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For stationery wholesalers during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For organic grocers when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For bicycle shops in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For jewellery retailers in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For stationery wholesalers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "For organic grocers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
     ],
     "answer_key": [
@@ -11460,11 +11460,11 @@
     "title": "Promotional Creation of Additional Wants",
     "context": "Review how product repair and reuse extend useful life and reduce pressure for constant replacement purchases. Evaluate the following economic assertions:",
     "statements": [
-      "For stationery wholesalers among younger budget-conscious shoppers, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For pet-supply stores in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For kitchen-equipment firms in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For footwear brands during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For eyewear retailers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For stationery wholesalers among younger budget-conscious shoppers, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pet-supply stores in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For kitchen-equipment firms in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For footwear brands during online promotional events, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For eyewear retailers when seasonal campaigns intensify, stimulating wants through marketing differs from merely reacting to wishes customers already voiced."
     ],
     "answer_key": [
       true,
@@ -11489,11 +11489,11 @@
     "title": "Consumption Risk Awareness for All",
     "context": "Analyze how garment rental services illustrate alternative consumption models focused on quality and temporary use. Evaluate the following economic assertions:",
     "statements": [
-      "For eyewear retailers during online promotional events, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For music-instrument dealers in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For eyewear retailers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For music-instrument dealers in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "For organic grocers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For camping-gear suppliers in apparel retailing, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For baby-product retailers in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For camping-gear suppliers in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For baby-product retailers in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
     ],
     "answer_key": [
       true,
@@ -11518,11 +11518,11 @@
     "title": "Sharing Rental Without Full Ownership",
     "context": "Consider a family choosing between repairing a washing machine and purchasing a discounted replacement advertised as a limited-time offer. Evaluate the following economic assertions:",
     "statements": [
-      "For baby-product retailers when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For baby-product retailers when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
       "For organic grocers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For organic grocers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For organic grocers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For art-supply stores in consumer electronics markets, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand."
+      "For art-supply stores in consumer electronics markets, new collections plus campaigns can awaken desires shoppers did not bring to the store."
     ],
     "answer_key": [
       true,
@@ -11547,7 +11547,7 @@
     "title": "Overstretched Budgets and Marketing",
     "context": "Analyze how high-quality durable goods can be circulated among users instead of being discarded after brief use. Evaluate the following economic assertions:",
     "statements": [
-      "For art-supply stores in household durable-goods sectors, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
+      "For art-supply stores in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
       "For organic grocers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For organic grocers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
       "For organic grocers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
@@ -11577,10 +11577,10 @@
     "context": "Review why sustainable production requires businesses to consider environmental and social effects beyond immediate sales targets. Evaluate the following economic assertions:",
     "statements": [
       "For bicycle shops in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For jewellery retailers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For art-supply stores when seasonal campaigns intensify, businesses may create wishes and needs by continuously developing new products and advertising them, not only by responding to existing customer demand.",
-      "For jewellery retailers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
-      "For jewellery retailers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+      "For jewellery retailers in consumer electronics markets, any rise in sales proves every advertisement used was ethically acceptable.",
+      "For art-supply stores when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For jewellery retailers when credit makes impulse buying easier, ethical standards are met automatically whenever credit-fuelled sales rise.",
+      "For jewellery retailers where rental platforms operate alongside retail, higher turnover alone means the advertising was ethical by definition."
     ],
     "answer_key": [
       false,
@@ -12203,7 +12203,7 @@
       "FALSE — Relative share is a ratio against the leader, not the same percentage.",
       "TRUE — Preferred use settings are part of what-customer research.",
       "TRUE — The example shows how who-customer research maps to market type and roles.",
-      "TRUE — The example shows how who-customer research maps to market type and roles, in rental business models."
+      "TRUE — The example shows how who-customer research maps to market type and roles."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -12229,8 +12229,8 @@
     ],
     "tactical_explanations": [
       "TRUE — The example shows how who-customer research maps to market type and roles.",
-      "TRUE — The example shows how who-customer research maps to market type and roles, for consumer-facing offers.",
-      "TRUE — The example shows how who-customer research maps to market type and roles, in business-to-business markets.",
+      "TRUE — The example shows how who-customer research maps to market type and roles.",
+      "TRUE — The example shows how who-customer research maps to market type and roles.",
       "TRUE — Purchase-location analysis identifies channel preferences such as retail stores.",
       "FALSE — Market size may be expressed as value or quantity."
     ],
@@ -12305,7 +12305,7 @@
       "Market size can be expressed as a monetary value such as total euro sales across the market.",
       "Market size can also be expressed as a quantity such as the number of pieces sold in the market.",
       "Market share is the proportion of market sales held by a business, product, or brand.",
-      "Absolute market share equals the sales of one business divided by total market sales, expressed as a percentage."
+      "Market share is calculated by dividing the sales of a business by total sales in the market."
     ],
     "answer_key": [
       true,
@@ -12319,7 +12319,7 @@
       "TRUE — Value expression of market size uses currency totals.",
       "TRUE — Quantity expression counts units sold across the market.",
       "TRUE — Market share is defined as the firm's proportion of total market sales.",
-      "TRUE — Market share is firm sales divided by total market sales."
+      "TRUE — Share equals business sales divided by all market sales."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -12520,7 +12520,7 @@
     "tactical_explanations": [
       "FALSE — External institute collection for a bespoke study is primary.",
       "TRUE — Rising aggregate euro sales show a larger value-based market size.",
-      "TRUE — Rising aggregate euro sales show a larger value-based market size, within responsible marketing.",
+      "TRUE — Rising aggregate euro sales show a larger value-based market size.",
       "TRUE — 80 divided by 400 equals 20% absolute share.",
       "FALSE — Secondary data are often general, not tailored."
     ],
@@ -12534,7 +12534,7 @@
     "context": "Consider a furniture producer that tracks where customers purchase dining sets, whether in showrooms, online stores, or department concessions. Evaluate the following economic assertions:",
     "statements": [
       "Costly primary research is affordable for every small business according to the chapter.",
-      "A firm with sales of 45 million euros in a market of 300 million euros holds a 15 per cent absolute market share.",
+      "Absolute market share is 15 per cent when firm sales are 45 million euros and total market sales are 300 million euros.",
       "Customer analysis is optional and unrelated to market research activities.",
       "Where-customer findings cannot encourage alternative channels because channels are fixed forever.",
       "When-customer findings cannot support price differentiation across the year."
@@ -12562,7 +12562,7 @@
     "title": "B2C Market Customer Identification",
     "context": "Analyze sales volume versus sales potential for an individual business. Evaluate the following economic assertions:",
     "statements": [
-      "A business recording 9 million euros of sales in a 36 million euro market holds a 25 per cent absolute market share.",
+      "With firm sales of 12 million euros against a 48 million euro market, absolute share equals 25 per cent.",
       "Preferred product use information cannot guide product improvement.",
       "Prospective customers are excluded from the scope of market research.",
       "Market share of a brand is calculated using only that brand's costs rather than its sales.",
@@ -12576,7 +12576,7 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Absolute market share equals firm sales divided by total market sales.",
+      "TRUE — 12 divided by 48 equals 25% absolute share.",
       "FALSE — Preferred-use knowledge supports development and improvement.",
       "FALSE — Research covers existing and prospective customers.",
       "FALSE — Share uses sales, not costs, in the numerator.",
@@ -12591,7 +12591,7 @@
     "title": "B2B Market Customer Identification",
     "context": "Review how market research supports learning about existing and prospective customers. Evaluate the following economic assertions:",
     "statements": [
-      "A firm with sales of 7 million euros in a market of 140 million euros holds a 5 per cent absolute market share.",
+      "Sales of 7 million euros out of a 140 million euro market represent a 5 per cent absolute market share.",
       "A relative share of 1.5 means the firm holds one point five per cent of the total market.",
       "A relative share of 0.5 means the firm has withdrawn from half of the geographic market.",
       "With absolute share of 15 per cent and the largest competitor at 30 per cent, relative market share equals 0.5.",
@@ -13174,7 +13174,7 @@
       "User and buyer must coincide in B2B markets because businesses sign one contract per person.",
       "Channel weakness cannot be detected because customers never reveal where they shop.",
       "Customer analysis in the printed circuit boards market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
-      "If a printed circuit boards producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "Printed-circuit-board producer sales of 40 million euros inside a 200 million euro market leave an absolute share of 20 per cent.",
       "Price differentiation over the year is unrelated to when-customer purchase patterns."
     ],
     "answer_key": [
@@ -13188,7 +13188,7 @@
       "FALSE — User and buyer may differ even in B2B settings.",
       "FALSE — Where analysis is designed to identify purchase channels.",
       "TRUE — Where, when, and why dimensions apply alongside other customer analysis in printed circuit boards.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the printed circuit boards example.",
+      "TRUE — 40 divided by 200 equals 20% absolute share in the printed circuit boards example.",
       "FALSE — Timing analysis can support seasonal price differentiation."
     ],
     "difficulty_level": "3/5",
@@ -13200,7 +13200,7 @@
     "title": "Electronics Market Segment Measures",
     "context": "Analyze administering and interpreting large questionnaire programmes as a primary-research cost. Evaluate the following economic assertions:",
     "statements": [
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in printed circuit boards, relative market share equals 0.5.",
+      "With 20 per cent absolute share and a leading rival at 40 per cent in printed circuit boards, relative market share equals 0.5.",
       "Market potential in printed circuit boards may exceed current market volume when buyers not yet served could enter the category.",
       "Sales potential for one printed circuit boards firm can exceed its current sales volume through gains from competitors and market growth.",
       "Market volume plus potential customers equals sales volume of one firm.",
@@ -13214,7 +13214,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — 15/30 yields 0.5 relative share against the leader in printed circuit boards.",
+      "TRUE — 20/40 yields 0.5 relative share against the leader in printed circuit boards.",
       "TRUE — Unconverted buyers keep market potential above volume in printed circuit boards.",
       "TRUE — Sales potential includes room beyond current volume for a printed circuit boards supplier.",
       "FALSE — That confuses market measures with a single firm's sales volume.",
@@ -13231,8 +13231,8 @@
     "statements": [
       "Published trade statistics on the industrial adhesives market can serve as secondary information when estimating total industry sales.",
       "Customer analysis in the industrial adhesives market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
-      "If a industrial adhesives producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in industrial adhesives, relative market share equals 0.5.",
+      "Industrial adhesives sales of 57 million euros against a 342 million euro market imply an absolute share of 16.7 per cent.",
+      "With 16.7 per cent absolute share and a leading rival at 41.75 per cent in industrial adhesives, relative market share equals 0.4.",
       "Market potential in industrial adhesives may exceed current market volume when buyers not yet served could enter the category."
     ],
     "answer_key": [
@@ -13245,8 +13245,8 @@
     "tactical_explanations": [
       "TRUE — Trade statistics reused for the industrial adhesives segment are secondary market information.",
       "TRUE — Where, when, and why dimensions apply alongside other customer analysis in industrial adhesives.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the industrial adhesives example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in industrial adhesives.",
+      "TRUE — 57 divided by 342 equals 16.7% absolute share in the industrial adhesives example.",
+      "TRUE — 16.7/41.75 yields 0.4 relative share against the leader in industrial adhesives.",
       "TRUE — Unconverted buyers keep market potential above volume in industrial adhesives."
     ],
     "difficulty_level": "4/5",
@@ -13288,7 +13288,7 @@
     "context": "Review industry reports published by other businesses as possible secondary sources. Evaluate the following economic assertions:",
     "statements": [
       "Fifteen per cent absolute share means the market is fifteen times larger than the firm's sales.",
-      "If a commercial laundry equipment producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "Commercial laundry equipment sales of 74 million euros in a 518 million euro market yield a 14.3 per cent absolute market share.",
       "A relative share of one means the firm has one per cent of total market sales.",
       "Primary research is secondary when conducted for another industry and later read by a different firm.",
       "Secondary research is primary when the business pays a fee to access an industry database."
@@ -13302,7 +13302,7 @@
     ],
     "tactical_explanations": [
       "FALSE — The market is about 6.67 times larger (100/15), not fifteen times.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the commercial laundry equipment example.",
+      "TRUE — 74 divided by 518 equals 14.3% absolute share in the commercial laundry equipment example.",
       "FALSE — Relative share of 1.0 means equal percentage with the leader, not 1% market share.",
       "FALSE — Research for another purpose read later is secondary.",
       "FALSE — Paying for access does not convert existing research into primary collection."
@@ -13318,7 +13318,7 @@
     "statements": [
       "Customer analysis dimensions are limited to who and what only.",
       "Market size expressed in pieces sold cannot be compared with market size expressed in euros.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in commercial laundry equipment, relative market share equals 0.5.",
+      "With 14.3 per cent absolute share and a leading rival at 42.900000000000006 per cent in commercial laundry equipment, relative market share equals 0.33.",
       "Market potential in commercial laundry equipment may exceed current market volume when buyers not yet served could enter the category.",
       "Sales potential for one commercial laundry equipment firm can exceed its current sales volume through gains from competitors and market growth."
     ],
@@ -13332,7 +13332,7 @@
     "tactical_explanations": [
       "FALSE — Who, what, where, when, and why are all included.",
       "FALSE — Both are expressions of market size or volume.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in commercial laundry equipment.",
+      "TRUE — 14.3/42.900000000000006 yields 0.33 relative share against the leader in commercial laundry equipment.",
       "TRUE — Unconverted buyers keep market potential above volume in commercial laundry equipment.",
       "TRUE — Sales potential includes room beyond current volume for a commercial laundry equipment supplier."
     ],
@@ -13375,8 +13375,8 @@
     "context": "Analyze timing analysis that supports differentiated pricing across seasons or months. Evaluate the following economic assertions:",
     "statements": [
       "Small firms always prefer primary research because it is cheaper than secondary sources.",
-      "If a enterprise accounting software producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in enterprise accounting software, relative market share equals 0.5.",
+      "For enterprise accounting software, 91 million euros of producer sales in a 728 million euro market imply an absolute share of 12.5 per cent.",
+      "With 12.5 per cent absolute share and a leading rival at 25 per cent in enterprise accounting software, relative market share equals 0.5.",
       "Market potential in enterprise accounting software may exceed current market volume when buyers not yet served could enter the category.",
       "Why-customer motives are recorded only after sales fall to zero."
     ],
@@ -13389,8 +13389,8 @@
     ],
     "tactical_explanations": [
       "FALSE — Primary is costly; small firms often cannot afford it.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the enterprise accounting software example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in enterprise accounting software.",
+      "TRUE — 91 divided by 728 equals 12.5% absolute share in the enterprise accounting software example.",
+      "TRUE — 12.5/25 yields 0.5 relative share against the leader in enterprise accounting software.",
       "TRUE — Unconverted buyers keep market potential above volume in enterprise accounting software.",
       "FALSE — Why analysis informs development before collapse."
     ],
@@ -13433,8 +13433,8 @@
     "context": "Analyze total market sales as the basis for measuring both size and competitive share. Evaluate the following economic assertions:",
     "statements": [
       "When-customer data refer to product warranty periods rather than purchase dates.",
-      "If a organic breakfast cereals producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in organic breakfast cereals, relative market share equals 0.5.",
+      "Organic breakfast cereals at 108 million euros of sales versus a 540 million euro market mean a 20 per cent absolute market share.",
+      "With 20 per cent absolute share and a leading rival at 50 per cent in organic breakfast cereals, relative market share equals 0.4.",
       "Market potential in organic breakfast cereals may exceed current market volume when buyers not yet served could enter the category.",
       "Sales potential for one organic breakfast cereals firm can exceed its current sales volume through gains from competitors and market growth."
     ],
@@ -13447,8 +13447,8 @@
     ],
     "tactical_explanations": [
       "FALSE — When-customers concerns purchase timing.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the organic breakfast cereals example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in organic breakfast cereals.",
+      "TRUE — 108 divided by 540 equals 20% absolute share in the organic breakfast cereals example.",
+      "TRUE — 20/50 yields 0.4 relative share against the leader in organic breakfast cereals.",
       "TRUE — Unconverted buyers keep market potential above volume in organic breakfast cereals.",
       "TRUE — Sales potential includes room beyond current volume for a organic breakfast cereals supplier."
     ],
@@ -13464,7 +13464,7 @@
       "A supplier in the electric vehicle chargers segment may improve positioning by commissioning a tailored questionnaire before launching an updated product line.",
       "Published trade statistics on the electric vehicle chargers market can serve as secondary information when estimating total industry sales.",
       "Customer analysis in the electric vehicle chargers market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
-      "If a electric vehicle chargers producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
+      "Electric vehicle charger sales reach 125 million euros in a 750 million euro market, so absolute market share is 16.7 per cent.",
       "Market share rises automatically when market size falls even if the firm's sales are unchanged."
     ],
     "answer_key": [
@@ -13478,7 +13478,7 @@
       "TRUE — Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the electric vehicle chargers market.",
       "TRUE — Trade statistics reused for the electric vehicle chargers segment are secondary market information.",
       "TRUE — Where, when, and why dimensions apply alongside other customer analysis in electric vehicle chargers.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the electric vehicle chargers example.",
+      "TRUE — 125 divided by 750 equals 16.7% absolute share in the electric vehicle chargers example.",
       "FALSE — Unchanged firm sales with smaller market raise share, but not automatically in every scenario described."
     ],
     "difficulty_level": "5/5",
@@ -13493,7 +13493,7 @@
       "A firm's sales potential falls when market potential rises because competition intensifies.",
       "Primary empirical studies cannot be tailored to specific business interests.",
       "Secondary information is always more detailed than primary data for one product line.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in electric vehicle chargers, relative market share equals 0.5.",
+      "With 16.7 per cent absolute share and a leading rival at 50.099999999999994 per cent in electric vehicle chargers, relative market share equals 0.33.",
       "Relative market share of 0.5 always means the firm holds fifty per cent of the market."
     ],
     "answer_key": [
@@ -13507,7 +13507,7 @@
       "FALSE — Rising market potential can contribute to higher sales potential.",
       "FALSE — Primary studies can be tailored to the commissioning firm.",
       "FALSE — Secondary data are usually general, not more detailed.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in electric vehicle chargers.",
+      "TRUE — 16.7/50.099999999999994 yields 0.33 relative share against the leader in electric vehicle chargers.",
       "FALSE — 0.5 means half the leader's percentage share, not fifty per cent of the market."
     ],
     "difficulty_level": "2/5",
@@ -13577,8 +13577,8 @@
     "title": "Brand Sales Against Category Total",
     "context": "Consider a logistics firm reviewing published transport-market forecasts alongside its own shipment records to judge growth opportunities. Evaluate the following economic assertions:",
     "statements": [
-      "If a medical diagnostic kits producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in medical diagnostic kits, relative market share equals 0.5.",
+      "Medical diagnostic kit sales of 142 million euros versus a 994 million euro market correspond to a 14.3 per cent absolute market share.",
+      "With 14.3 per cent absolute share and a leading rival at 28.6 per cent in medical diagnostic kits, relative market share equals 0.5.",
       "Market potential in medical diagnostic kits may exceed current market volume when buyers not yet served could enter the category.",
       "Sales potential for one medical diagnostic kits firm can exceed its current sales volume through gains from competitors and market growth.",
       "Prospective customers are counted in market volume before they make any purchase."
@@ -13591,8 +13591,8 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — 90 divided by 600 equals 15% absolute share in the medical diagnostic kits example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in medical diagnostic kits.",
+      "TRUE — 142 divided by 994 equals 14.3% absolute share in the medical diagnostic kits example.",
+      "TRUE — 14.3/28.6 yields 0.5 relative share against the leader in medical diagnostic kits.",
       "TRUE — Unconverted buyers keep market potential above volume in medical diagnostic kits.",
       "TRUE — Sales potential includes room beyond current volume for a medical diagnostic kits supplier.",
       "FALSE — Market volume reflects current sales, not unconverted prospects alone."
@@ -13609,8 +13609,8 @@
       "A supplier in the warehouse automation systems segment may improve positioning by analysing responses from an online survey before launching an updated product line.",
       "Published trade statistics on the warehouse automation systems market can serve as secondary information when estimating total industry sales.",
       "Customer analysis in the warehouse automation systems market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
-      "If a warehouse automation systems producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in warehouse automation systems, relative market share equals 0.5."
+      "For warehouse automation systems, 159 million euros of producer sales in a 1272 million euro market imply an absolute share of 12.5 per cent.",
+      "With 12.5 per cent absolute share and a leading rival at 31.25 per cent in warehouse automation systems, relative market share equals 0.4."
     ],
     "answer_key": [
       true,
@@ -13623,8 +13623,8 @@
       "TRUE — Tailored primary research such as analysing responses from an online survey supports informed decisions in the warehouse automation systems market.",
       "TRUE — Trade statistics reused for the warehouse automation systems segment are secondary market information.",
       "TRUE — Where, when, and why dimensions apply alongside other customer analysis in warehouse automation systems.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the warehouse automation systems example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in warehouse automation systems."
+      "TRUE — 159 divided by 1272 equals 12.5% absolute share in the warehouse automation systems example.",
+      "TRUE — 12.5/31.25 yields 0.4 relative share against the leader in warehouse automation systems."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -13664,8 +13664,8 @@
     "title": "Market Research for Investors",
     "context": "Analyze distinguishing consumer markets from business markets in who-customer research. Evaluate the following economic assertions:",
     "statements": [
-      "If a specialty coffee roasting producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in specialty coffee roasting, relative market share equals 0.5.",
+      "Specialty coffee roasting sales of 176 million euros in an 880 million euro market correspond to a 20 per cent absolute market share.",
+      "With 20 per cent absolute share and a leading rival at 60 per cent in specialty coffee roasting, relative market share equals 0.33.",
       "Market potential in specialty coffee roasting may exceed current market volume when buyers not yet served could enter the category.",
       "Sales potential for one specialty coffee roasting firm can exceed its current sales volume through gains from competitors and market growth.",
       "A supplier in the renewable-energy inverters segment may improve positioning by designing a primary study around channel preferences before launching an updated product line."
@@ -13678,8 +13678,8 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — 90 divided by 600 equals 15% absolute share in the specialty coffee roasting example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in specialty coffee roasting.",
+      "TRUE — 176 divided by 880 equals 20% absolute share in the specialty coffee roasting example.",
+      "TRUE — 20/60 yields 0.33 relative share against the leader in specialty coffee roasting.",
       "TRUE — Unconverted buyers keep market potential above volume in specialty coffee roasting.",
       "TRUE — Sales potential includes room beyond current volume for a specialty coffee roasting supplier.",
       "TRUE — Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the renewable-energy inverters market."
@@ -13696,8 +13696,8 @@
       "Published trade statistics on the renewable-energy inverters market can serve as secondary information when estimating total industry sales.",
       "Customer analysis in the renewable-energy inverters market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
       "Questionnaire analysis costs are excluded from the cost of primary market research.",
-      "If a renewable-energy inverters producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.",
-      "With fifteen per cent absolute share and a leading rival at thirty per cent in renewable-energy inverters, relative market share equals 0.5."
+      "Renewable-energy inverter producers holding 193 million euros of sales in a 1,158 million euro market account for 16.7 per cent absolute share.",
+      "With 16.7 per cent absolute share and a leading rival at 33.4 per cent in renewable-energy inverters, relative market share equals 0.5."
     ],
     "answer_key": [
       true,
@@ -13710,8 +13710,8 @@
       "TRUE — Trade statistics reused for the renewable-energy inverters segment are secondary market information.",
       "TRUE — Where, when, and why dimensions apply alongside other customer analysis in renewable-energy inverters.",
       "FALSE — Analysis costs are part of primary research expense.",
-      "TRUE — 90 divided by 600 equals 15% absolute share in the renewable-energy inverters example.",
-      "TRUE — 15/30 yields 0.5 relative share against the leader in renewable-energy inverters."
+      "TRUE — 193 divided by 1158 equals 16.7% absolute share in the renewable-energy inverters example.",
+      "TRUE — 16.7/33.4 yields 0.5 relative share against the leader in renewable-energy inverters."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -18508,7 +18508,7 @@
     "context": "Review how promotion in the growth stage supports maintaining a star's market position. Evaluate the following economic assertions:",
     "statements": [
       "Promoting running shoes through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Charm pricing of running shoes at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Charm pricing of running shoes at €9.99 is treated only as advertising copy and never as a price decision.",
       "Because smart watches are physical goods, services such as installation or support cannot be counted in the product P for that business.",
       "Adding a new flavour variant within an existing sportswear range is a line extension that deepens the product line.",
       "Introducing an entirely new sportswear product line alongside an existing range is a mix extension widening the portfolio."
@@ -18656,7 +18656,7 @@
       "Refreshing office stationery packaging colours without changing the core formula is a relaunch within product-mix alteration.",
       "Promoting smart watches through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
       "Removing an underperforming office stationery variant from the range reflects contraction in the product-mix strategy.",
-      "Charm pricing of smart watches at €9.99 is a promotional message and not part of the price element of the marketing mix."
+      "Listing smart watches at €9.99 means the firm has left the price element unused and relied only on promotion."
     ],
     "answer_key": [
       false,
@@ -18714,7 +18714,7 @@
       "Removing an outdated energy drinks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
       "A energy drinks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
       "Promoting energy drinks through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Charm pricing of energy drinks at €9.99 is a promotional message and not part of the price element of the marketing mix."
+      "A €9.99 charm price for energy drinks is classified exclusively under promotion rather than the price mix element."
     ],
     "answer_key": [
       true,
@@ -18772,7 +18772,7 @@
       "A hair conditioners product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
       "Seasonal sales events promoting office stationery are sales-promotion tools within the promotion element of the mix.",
       "Promoting hair conditioners through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Charm pricing of hair conditioners at €9.99 is a promotional message and not part of the price element of the marketing mix."
+      "Charm pricing of hair conditioners at €9.99 is treated only as advertising copy and never as a price decision."
     ],
     "answer_key": [
       false,
@@ -18885,7 +18885,7 @@
     "context": "Analyze how the product P remains at the heart of marketing as the most important decision. Evaluate the following economic assertions:",
     "statements": [
       "Promoting LED light bulbs through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Charm pricing of LED light bulbs at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Listing LED light bulbs at €9.99 means the firm has left the price element unused and relied only on promotion.",
       "Because travel backpacks are physical goods, services such as installation or support cannot be counted in the product P for that business.",
       "Introducing an entirely new pet food product line alongside an existing range is a mix extension widening the portfolio.",
       "A global travel backpacks brand guarantees that product quality may vary sharply between countries without affecting brand recognition."
@@ -19087,7 +19087,7 @@
     "title": "Line Depth Versus Mix Width",
     "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
     "statements": [
-      "Charm pricing of travel backpacks at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "A €9.99 charm price for travel backpacks is classified exclusively under promotion rather than the price mix element.",
       "Removing an underperforming children's toys variant from the range reflects contraction in the product-mix strategy.",
       "A children's toys brand symbol and consistent label design support differentiation and recognition in the product P.",
       "Because frozen pizzas are physical goods, services such as installation or support cannot be counted in the product P for that business.",
@@ -19205,7 +19205,7 @@
     "statements": [
       "Seasonal sales events promoting bicycle accessories are sales-promotion tools within the promotion element of the mix.",
       "During the introduction stage of the product life cycle, development costs can exceed early revenues.",
-      "Charm pricing of frozen pizzas at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Charm pricing of frozen pizzas at €9.99 is treated only as advertising copy and never as a price decision.",
       "During the introduction stage of the product life cycle, heavy advertising may accompany the first sales period.",
       "During the growth stage of the product life cycle, sales rise faster than costs as output expands."
     ],
@@ -19319,7 +19319,7 @@
     "title": "Selective Distribution Strategy",
     "context": "Review exclusive distribution through a limited number of specialised retail partners. Evaluate the following economic assertions:",
     "statements": [
-      "Charm pricing of mobile phone cases at €9.99 is a promotional message and not part of the price element of the marketing mix.",
+      "Listing mobile phone cases at €9.99 means the firm has left the price element unused and relied only on promotion.",
       "Price skimming involves charging a high price initially before gradual reductions within the price P.",
       "Because washing powders are physical goods, services such as installation or support cannot be counted in the product P for that business.",
       "A global washing powders brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
@@ -19381,7 +19381,7 @@
       "Promoting washing powders through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
       "Loyalty discounts involves rewarding repeat purchasers with preferential prices within the price P.",
       "Instalment terms involves allowing customers to pay the price over several periods within the price P.",
-      "Charm pricing of washing powders at €9.99 is a promotional message and not part of the price element of the marketing mix."
+      "A €9.99 charm price for washing powders is classified exclusively under promotion rather than the price mix element."
     ],
     "answer_key": [
       true,

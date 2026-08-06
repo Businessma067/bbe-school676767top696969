@@ -26,7 +26,7 @@ setStmt(
 setStmt(
   "CASE 4.6.47",
   2,
-  "Expecting a return on invested capital automatically reclassifies equity investors as creditors under debt finance.",
+  "Expecting a return on equity automatically reclassifies equity investors as creditors under debt finance.",
   "FALSE — Investor equity remains equity finance even when investors seek financial return.",
 );
 setStmt(

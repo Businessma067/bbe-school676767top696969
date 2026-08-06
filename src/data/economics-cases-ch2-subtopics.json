@@ -2298,7 +2298,7 @@
     "statements": [
       "Limited resources relative to wants force households, firms, and governments to make choices.",
       "Allocation means deciding how to distribute scarce resources among competing uses.",
-      "Opportunity cost is the benefit of the next-best alternative given up when one option is chosen.",
+      "Choosing one course of action means forgoing the benefit that the next-best feasible alternative would have delivered.",
       "Economising is necessary whenever resources are scarce rather than unlimited.",
       "The same logic applies whether the scarce resource is money, land, labour hours, or hospital beds."
     ],
@@ -4297,7 +4297,7 @@
     "title": "Policy Context Versus Scope",
     "context": "Analyze whether a national purchase bonus automatically reclassifies an individual car buyer as macroeconomics. Evaluate the following economic assertions:",
     "statements": [
-      "Nationwide statistics on total car sales after a bonus programme would be macroeconomic analysis.",
+      "Totals for national car sales after an incentive scheme belong to macroeconomic rather than firm-level analysis.",
       "There is no difference between studying one shop and studying the entire national economy.",
       "One household's personal car purchase remains microeconomics even when a national purchase bonus programme exists.",
       "Human unpredictability removes all scientific content from economics.",
@@ -5689,7 +5689,7 @@
     "title": "Barter, Inflation, and Public Finance Synthesis",
     "context": "Analyze how barter limits, inflation, public goods, and specialisation fit together in a monetary market economy. Evaluate the following economic assertions:",
     "statements": [
-      "Barter requires double coincidence of wants, which money as medium of exchange helps overcome.",
+      "Without money, exchange under barter fails unless each party wants exactly what the other offers at the same moment.",
       "Inflation reduces purchasing power when the general price level rises; the ECB targets stability slightly below two percent.",
       "Taxation can fund public goods when free riders would underfund voluntary provision of shared services.",
       "Division of labour through specialisation raises productivity but may create monotony and stage dependency.",
@@ -6823,7 +6823,7 @@
       "Privatisation transfers ownership from state to private investors as part of market transformation.",
       "Liberalisation allows rival carriers to enter markets where a single state operator once held monopoly power.",
       "Market transformation permanently preserves single state monopolies with no rival carriers.",
-      "Consumer sovereignty improves when households choose among competing mobile plans.",
+      "Households exercising choice across rival mobile tariffs illustrate stronger consumer sovereignty in the market.",
       "Competitive plan pricing reflects cost and demand rather than uniform administrative tariffs."
     ],
     "answer_key": [

@@ -111,7 +111,7 @@ const valueRows = cases.map((c, i) => {
 });
 lines.push(valueRows.join(",\n"));
 lines.push(
-  "ON CONFLICT (case_id) DO UPDATE SET",
+  "ON CONFLICT (case_id, tier) DO UPDATE SET",
 );
 lines.push("  subsection = EXCLUDED.subsection,");
 lines.push("  title = EXCLUDED.title,");

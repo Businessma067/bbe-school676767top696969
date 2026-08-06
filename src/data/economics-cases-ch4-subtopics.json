@@ -2532,7 +2532,7 @@
       "Partners who jointly found a business need not settle rights and responsibilities if they agree informally over coffee.",
       "Combined private assets from partners may provide more collateral when the partnership seeks credit.",
       "Because partnerships have multiple owners, they automatically qualify for limited liability like corporations.",
-      "Partners need a partnership agreement to settle rights, responsibilities, and the division of profits and losses."
+      "A written partnership agreement is used to define partners' rights, duties, and how profit and loss are shared."
     ],
     "answer_key": [
       true,
@@ -8590,8 +8590,8 @@
     "context": "Analyze why lenders may demand collateral or charge higher interest when extending credit to a highly geared firm. Evaluate the following economic assertions:",
     "statements": [
       "High gearing does not prevent appropriate short-term finance for routine revenue expenditure.",
-      "Intended use is irrelevant when comparing a bank loan with a bond for buying production materials.",
-      "Expecting a return on invested capital automatically reclassifies equity investors as creditors under debt finance.",
+      "Whether materials are bought with a bank loan or a bond issue does not by itself decide which source is suitable; matching maturity and conditions still matters.",
+      "Expecting owners to earn a return on equity does not turn equity providers into creditors of the business.",
       "Bank overdrafts are long-term debt finance because overdraft limits may remain available across several years.",
       "Customer payments that later become retained profit transform those earnings into external equity finance."
     ],
@@ -8677,7 +8677,7 @@
     "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
     "statements": [
       "Once loan capital is high, intended use no longer influences whether finance should be short or long term.",
-      "Revenue expenditure on production materials must be financed exclusively through twenty-year mortgage loans.",
+      "Day-to-day materials spend should not be funded only by ultra-long mortgage borrowing; financing maturity should fit the use of funds.",
       "Retained earnings provide internal finance that does not add new loan repayment obligations.",
       "Bond coupon payments and flotation costs together determine the price of bond finance.",
       "Capital expenditure on assets used over many years can safely rely on weekly trade credit alone."

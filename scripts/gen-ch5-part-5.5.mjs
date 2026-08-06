@@ -1165,6 +1165,12 @@ const researchActs = [
 for (let i = 0; i < industries.length; i++) {
   const ind = industries[i];
   const act = researchActs[i % researchActs.length];
+  // Unique figure pairs per industry (clean percentages; no cloned 90/600 stamp).
+  const firmSales = 40 + i * 17;
+  const marketSales = firmSales * (5 + (i % 4)); // absolute share = 1/(5..8) → 12.5%–20%
+  const absPct = Math.round((firmSales / marketSales) * 1000) / 10;
+  const leaderPct = absPct * (2 + (i % 3) * 0.5);
+  const rel = Number((absPct / leaderPct).toFixed(2));
   push(
     TRUE,
     `A supplier in the ${ind} segment may improve positioning by ${act} before launching an updated product line.`,
@@ -1182,13 +1188,13 @@ for (let i = 0; i < industries.length; i++) {
   );
   push(
     TRUE,
-    `If a ${ind} producer sells 90 million euros in a 600 million euro market, its absolute market share is fifteen per cent.`,
-    `90 divided by 600 equals 15% absolute share in the ${ind} example.`,
+    `If a ${ind} producer sells ${firmSales} million euros in a ${marketSales} million euro market, its absolute market share is ${absPct} per cent.`,
+    `${firmSales} divided by ${marketSales} equals ${absPct}% absolute share in the ${ind} example.`,
   );
   push(
     TRUE,
-    `With fifteen per cent absolute share and a leading rival at thirty per cent in ${ind}, relative market share equals 0.5.`,
-    `15/30 yields 0.5 relative share against the leader in ${ind}.`,
+    `With ${absPct} per cent absolute share and a leading rival at ${leaderPct} per cent in ${ind}, relative market share equals ${rel}.`,
+    `${absPct}/${leaderPct} yields ${rel} relative share against the leader in ${ind}.`,
   );
   push(
     TRUE,
