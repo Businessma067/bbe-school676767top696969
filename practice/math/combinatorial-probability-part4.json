@@ -156,7 +156,7 @@
       "statements": [
         "The total number of ways the coats can be returned is 720.",
         "The probability that no guest receives their own coat is greater than 40%.",
-        "The probability that no guest receives their own coat differs from 1/e by less than one percentage point.",
+        "The probability that exactly two guests receive their own coats is greater than 15%.",
         "The probability that exactly five guests receive their own coat is greater than 0.",
         "The probability that at least one guest receives their own coat is less than 50%."
       ],
@@ -170,7 +170,7 @@
       "tactical_explanations": [
         "TRUE \u2014 6! = 720. Formula: Total returns = 6!",
         "FALSE \u2014 !6/6! = 265/720 \u2248 36.81%, not > 40%. Formula: !6 / 6!",
-        "TRUE \u2014 |265/720 \u2212 1/e| \u2248 0.018 pp < 1 pp. Formula: compare !6/6! to 1/e",
+        "TRUE \u2014 Exactly two fixed points: C(6,2)\u00b7!4 = 15\u00b79 = 135, so P = 135/720 = 18.75% > 15%. Formula: P(exactly 2 fixed) = C(6,2)\u00b7!4 / 6! = 135/720 = 18.75%",
         "FALSE \u2014 Exactly 5 fixed points is impossible (probability 0). Formula: P(exactly n\u22121 fixed points) = 0",
         "FALSE \u2014 P(at least one own) = 1 \u2212 265/720 \u2248 63.19%, not < 50%. Formula: 1 \u2212 !6/6!"
       ],
