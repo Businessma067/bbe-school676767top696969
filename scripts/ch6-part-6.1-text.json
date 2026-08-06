@@ -1,0 +1,2252 @@
+[
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.01",
+    "title": "The Balance Sheet Equation",
+    "context": "Review how the balance sheet equation requires total assets to equal total liabilities plus total equity. Evaluate the following economic assertions:",
+    "statements": [
+      "An office computer kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "An office computer held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same office computer may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "An office computer used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "Classifying an office computer as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Continued use beyond one year by the business itself makes the office computer a non-current tangible asset.",
+      "TRUE — Held for resale rather than use, the office computer counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the office computer is non-current or current.",
+      "FALSE — Operational use over the long term makes the office computer a non-current tangible asset, not inventory.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the office computer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.02",
+    "title": "Assets Equal Liabilities Plus Equity",
+    "context": "Analyze how owner's equity is derived as the residual claim after liabilities are deducted from assets. Evaluate the following economic assertions:",
+    "statements": [
+      "An office computer held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "The same office computer must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying an office computer as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "When an office computer is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "An office computer purchased to be resold still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Resale intent, not the dealer's status as a business, places the office computer in inventory rather than among non-current assets.",
+      "FALSE — Classification of the office computer depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the office computer.",
+      "TRUE — Resale intent places the office computer in inventory, a current asset category.",
+      "FALSE — Resale intent keeps the office computer in inventory as a current asset regardless of how long it remains unsold."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.03",
+    "title": "Owner's Equity as a Residual Claim",
+    "context": "Consider a bakery that owns its ovens and mixers for daily production while also holding boxed pastries as stock awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "An office computer bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "An office computer that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts an office computer previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "An office computer used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "A delivery van kept in service by an operating business for more than one year is classified as a non-current tangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-period operational benefit qualifies the office computer as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the office computer from inventory to a non-current asset.",
+      "FALSE — Continued operational use makes the office computer a non-current asset; inventory is reserved for goods held for resale.",
+      "TRUE — Continued use beyond one year by the business itself makes the delivery van a non-current tangible asset."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.04",
+    "title": "Non-Current Versus Current Assets",
+    "context": "Analyze why non-current assets are expected to provide benefit for more than one year. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a dealer sells an office computer from its showroom, the buyer must continue to record it as inventory.",
+      "An office computer converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A delivery van held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same delivery van may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a delivery van as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — A buyer intending to use the office computer in operations records it as a non-current asset, not inventory, after purchase.",
+      "FALSE — A change in intended use reclassifies the office computer from inventory to a non-current asset.",
+      "TRUE — Held for resale rather than use, the delivery van counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the delivery van is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the delivery van."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.05",
+    "title": "Defining Non-Current Assets",
+    "context": "Review why current assets are expected to convert into cash within the normal operating cycle. Evaluate the following economic assertions:",
+    "statements": [
+      "A delivery van used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "When a delivery van is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "A delivery van bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A delivery van that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "A delivery van held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Operational use over the long term makes the delivery van a non-current tangible asset, not inventory.",
+      "TRUE — Resale intent places the delivery van in inventory, a current asset category.",
+      "TRUE — Multi-period operational benefit qualifies the delivery van as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the delivery van in inventory rather than among non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.06",
+    "title": "Defining Current Assets",
+    "context": "Analyze how tangible non-current assets differ from intangible non-current assets in physical form. Evaluate the following economic assertions:",
+    "statements": [
+      "If a business converts a delivery van previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A forklift truck kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A forklift truck held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same forklift truck may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a forklift truck as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A change in intended use from resale to operational use reclassifies the delivery van from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the forklift truck a non-current tangible asset.",
+      "TRUE — Held for resale rather than use, the forklift truck counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the forklift truck is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the forklift truck."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.07",
+    "title": "Tangible Non-Current Assets",
+    "context": "Consider a farm business that owns tractors for cultivation while holding harvested grain in storage awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "When a forklift truck is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "A forklift truck bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A forklift truck that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts a forklift truck previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A photocopier kept in service by an operating business for more than one year is classified as a non-current tangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Resale intent places the forklift truck in inventory, a current asset category.",
+      "TRUE — Multi-period operational benefit qualifies the forklift truck as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the forklift truck from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the photocopier a non-current tangible asset."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.08",
+    "title": "Intangible Non-Current Assets",
+    "context": "Analyze how buildings, machinery and office equipment are classified as tangible non-current assets. Evaluate the following economic assertions:",
+    "statements": [
+      "The same delivery van must always be classified identically on every balance sheet regardless of how it is held.",
+      "A photocopier held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same photocopier may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a photocopier as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "When a photocopier is purchased to be resold rather than used, it belongs among current assets as inventory."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Classification of the delivery van depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "TRUE — Held for resale rather than use, the photocopier counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the photocopier is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the photocopier.",
+      "TRUE — Resale intent places the photocopier in inventory, a current asset category."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.09",
+    "title": "Patents as Intangible Assets",
+    "context": "Review how inventory, trade receivables and cash are classified as current assets. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a delivery van as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A photocopier bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A delivery van purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A delivery van used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "Once a dealer sells a delivery van from its showroom, the buyer must continue to record it as inventory."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Intended use, not purchase price, drives non-current classification of the delivery van.",
+      "TRUE — Multi-period operational benefit qualifies the photocopier as a tangible fixed asset.",
+      "FALSE — Resale intent keeps the delivery van in inventory as a current asset regardless of how long it remains unsold.",
+      "FALSE — Continued operational use makes the delivery van a non-current asset; inventory is reserved for goods held for resale.",
+      "FALSE — A buyer intending to use the delivery van in operations records it as a non-current asset, not inventory, after purchase."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.10",
+    "title": "Trademarks on the Balance Sheet",
+    "context": "Analyze why the same physical item can be a non-current asset for one holder and inventory for another. Evaluate the following economic assertions:",
+    "statements": [
+      "A delivery van converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A forklift truck used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A photocopier that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "A forklift truck held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "The same forklift truck must always be classified identically on every balance sheet regardless of how it is held."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A change in intended use reclassifies the delivery van from inventory to a non-current asset.",
+      "FALSE — Operational use over the long term makes the forklift truck a non-current tangible asset, not inventory.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the forklift truck in inventory rather than among non-current assets.",
+      "FALSE — Classification of the forklift truck depends on whether it is used or held for resale, so identical items can differ across balance sheets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.11",
+    "title": "Licences as Intangible Assets",
+    "context": "Consider an engineering firm that owns specialised testing equipment while also holding raw materials awaiting use in customer orders. Evaluate the following economic assertions:",
+    "statements": [
+      "If a business converts a photocopier previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A company vehicle kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A company vehicle held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same company vehicle may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a company vehicle as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A change in intended use from resale to operational use reclassifies the photocopier from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the company vehicle a non-current tangible asset.",
+      "TRUE — Held for resale rather than use, the company vehicle counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the company vehicle is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the company vehicle."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.12",
+    "title": "Buildings and Machinery as Fixed Assets",
+    "context": "Analyze the distinction between current liabilities and non-current liabilities based on settlement timing. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a forklift truck as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A forklift truck purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "When a company vehicle is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "A forklift truck used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "Once a dealer sells a forklift truck from its showroom, the buyer must continue to record it as inventory."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Intended use, not purchase price, drives non-current classification of the forklift truck.",
+      "FALSE — Resale intent keeps the forklift truck in inventory as a current asset regardless of how long it remains unsold.",
+      "TRUE — Resale intent places the company vehicle in inventory, a current asset category.",
+      "FALSE — Continued operational use makes the forklift truck a non-current asset; inventory is reserved for goods held for resale.",
+      "FALSE — A buyer intending to use the forklift truck in operations records it as a non-current asset, not inventory, after purchase."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.13",
+    "title": "Office Equipment as a Fixed Asset",
+    "context": "Review why trade payables are classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A forklift truck converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A photocopier used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A photocopier held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "A company vehicle bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "The same photocopier must always be classified identically on every balance sheet regardless of how it is held."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A change in intended use reclassifies the forklift truck from inventory to a non-current asset.",
+      "FALSE — Operational use over the long term makes the photocopier a non-current tangible asset, not inventory.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the photocopier in inventory rather than among non-current assets.",
+      "TRUE — Multi-period operational benefit qualifies the company vehicle as a tangible fixed asset.",
+      "FALSE — Classification of the photocopier depends on whether it is used or held for resale, so identical items can differ across balance sheets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.14",
+    "title": "Computers for Use Versus Resale",
+    "context": "Analyze why long-term bank loans and bonds are classified as non-current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "A company vehicle that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "Classifying a photocopier as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A photocopier purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "If a business converts a company vehicle previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A photocopier used daily in a business's own operations should be recorded as inventory because it depreciates like stock."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the photocopier.",
+      "FALSE — Resale intent keeps the photocopier in inventory as a current asset regardless of how long it remains unsold.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the company vehicle from inventory to a non-current asset.",
+      "FALSE — Continued operational use makes the photocopier a non-current asset; inventory is reserved for goods held for resale."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.15",
+    "title": "Inventory as a Current Asset",
+    "context": "Consider a food producer that owns its processing machinery while owing suppliers for recently delivered packaging materials. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a dealer sells a photocopier from its showroom, the buyer must continue to record it as inventory.",
+      "A photocopier converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A diesel generator kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A company vehicle used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A company vehicle held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A buyer intending to use the photocopier in operations records it as a non-current asset, not inventory, after purchase.",
+      "FALSE — A change in intended use reclassifies the photocopier from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the diesel generator a non-current tangible asset.",
+      "FALSE — Operational use over the long term makes the company vehicle a non-current tangible asset, not inventory.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the company vehicle in inventory rather than among non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.16",
+    "title": "Trade Receivables Explained",
+    "context": "Analyze why a higher equity ratio indicates greater financial independence from creditors. Evaluate the following economic assertions:",
+    "statements": [
+      "A diesel generator held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same diesel generator may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "The same company vehicle must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a diesel generator as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "When a diesel generator is purchased to be resold rather than used, it belongs among current assets as inventory."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Held for resale rather than use, the diesel generator counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the diesel generator is non-current or current.",
+      "FALSE — Classification of the company vehicle depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the diesel generator.",
+      "TRUE — Resale intent places the diesel generator in inventory, a current asset category."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.17",
+    "title": "Cash and Cash Equivalents",
+    "context": "Review why equity does not require repayment on a fixed schedule, unlike borrowed funds. Evaluate the following economic assertions:",
+    "statements": [
+      "A diesel generator bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A diesel generator that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts a diesel generator previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A commercial oven kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A commercial oven held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-period operational benefit qualifies the diesel generator as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the diesel generator from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the commercial oven a non-current tangible asset.",
+      "TRUE — Held for resale rather than use, the commercial oven counts as inventory under current assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.18",
+    "title": "Current Liabilities Overview",
+    "context": "Analyze how equity acts as a buffer that absorbs losses before creditors are affected. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a company vehicle as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "The same commercial oven may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "A company vehicle purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A company vehicle used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "Once a dealer sells a company vehicle from its showroom, the buyer must continue to record it as inventory."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Intended use, not purchase price, drives non-current classification of the company vehicle.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the commercial oven is non-current or current.",
+      "FALSE — Resale intent keeps the company vehicle in inventory as a current asset regardless of how long it remains unsold.",
+      "FALSE — Continued operational use makes the company vehicle a non-current asset; inventory is reserved for goods held for resale.",
+      "FALSE — A buyer intending to use the company vehicle in operations records it as a non-current asset, not inventory, after purchase."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.19",
+    "title": "Non-Current Liabilities Overview",
+    "context": "Consider a hospital trust that owns its diagnostic equipment while settling invoices from medical suppliers on standard credit terms. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a commercial oven as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "When a commercial oven is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "A commercial oven bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A commercial oven that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts a commercial oven previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the commercial oven.",
+      "TRUE — Resale intent places the commercial oven in inventory, a current asset category.",
+      "TRUE — Multi-period operational benefit qualifies the commercial oven as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the commercial oven from inventory to a non-current asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.20",
+    "title": "Trade Payables as a Current Liability",
+    "context": "Analyze how a credit purchase increases both an asset and a liability simultaneously. Evaluate the following economic assertions:",
+    "statements": [
+      "An industrial sewing machine kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A company vehicle converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "An industrial sewing machine held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same industrial sewing machine may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying an industrial sewing machine as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Continued use beyond one year by the business itself makes the industrial sewing machine a non-current tangible asset.",
+      "FALSE — A change in intended use reclassifies the company vehicle from inventory to a non-current asset.",
+      "TRUE — Held for resale rather than use, the industrial sewing machine counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the industrial sewing machine is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the industrial sewing machine."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.21",
+    "title": "Long-Term Loans as Non-Current Liabilities",
+    "context": "Review the difference between a cash purchase and a credit purchase in their effect on the balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "When an industrial sewing machine is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "An industrial sewing machine bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "An industrial sewing machine that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts an industrial sewing machine previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A farm tractor kept in service by an operating business for more than one year is classified as a non-current tangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Resale intent places the industrial sewing machine in inventory, a current asset category.",
+      "TRUE — Multi-period operational benefit qualifies the industrial sewing machine as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the industrial sewing machine from inventory to a non-current asset.",
+      "TRUE — Continued use beyond one year by the business itself makes the farm tractor a non-current tangible asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.22",
+    "title": "Bonds Payable and Settlement Timing",
+    "context": "Analyze how reclassifying an asset from resale stock to operational use changes its balance sheet category. Evaluate the following economic assertions:",
+    "statements": [
+      "A farm tractor held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same farm tractor may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "A diesel generator used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A diesel generator held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "Classifying a farm tractor as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Held for resale rather than use, the farm tractor counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the farm tractor is non-current or current.",
+      "FALSE — Operational use over the long term makes the diesel generator a non-current tangible asset, not inventory.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the diesel generator in inventory rather than among non-current assets.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the farm tractor."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.23",
+    "title": "The Equity Ratio Explained",
+    "context": "Consider a bakery that owns its ovens and mixers for daily production while also holding boxed pastries as stock awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "When a farm tractor is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "A farm tractor bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A farm tractor that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "The same diesel generator must always be classified identically on every balance sheet regardless of how it is held.",
+      "If a business converts a farm tractor previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Resale intent places the farm tractor in inventory, a current asset category.",
+      "TRUE — Multi-period operational benefit qualifies the farm tractor as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "FALSE — Classification of the diesel generator depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the farm tractor from inventory to a non-current asset."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.24",
+    "title": "Financial Independence and Equity",
+    "context": "Analyze why settlement timing, not the size of a debt, determines its current or non-current classification. Evaluate the following economic assertions:",
+    "statements": [
+      "A server rack kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "Classifying a diesel generator as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A server rack held by a dealer for resale to customers is classified as inventory, a current asset, rather than as a non-current asset.",
+      "The same server rack may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a server rack as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Continued use beyond one year by the business itself makes the server rack a non-current tangible asset.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the diesel generator.",
+      "TRUE — Held for resale rather than use, the server rack counts as inventory under current assets.",
+      "TRUE — Intended use versus resale, not physical form, decides whether the server rack is non-current or current.",
+      "TRUE — Intention to use over the long term is the deciding factor for non-current classification of the server rack."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.25",
+    "title": "Equity as a Buffer for Creditors",
+    "context": "Review how partial repayment due within a year moves part of a long-term loan into current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "A diesel generator purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A diesel generator used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "When a server rack is purchased to be resold rather than used, it belongs among current assets as inventory.",
+      "Once a dealer sells a diesel generator from its showroom, the buyer must continue to record it as inventory.",
+      "A diesel generator converted from resale stock into equipment used in operations keeps its original inventory classification permanently."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Resale intent keeps the diesel generator in inventory as a current asset regardless of how long it remains unsold.",
+      "FALSE — Continued operational use makes the diesel generator a non-current asset; inventory is reserved for goods held for resale.",
+      "TRUE — Resale intent places the server rack in inventory, a current asset category.",
+      "FALSE — A buyer intending to use the diesel generator in operations records it as a non-current asset, not inventory, after purchase.",
+      "FALSE — A change in intended use reclassifies the diesel generator from inventory to a non-current asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.26",
+    "title": "Why Equity Does Not Require Repayment",
+    "context": "Analyze how a business's equity ratio changes when new equity is raised from owners. Evaluate the following economic assertions:",
+    "statements": [
+      "A server rack bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit over several accounting periods.",
+      "A server rack that a dealer displays for sale on its showroom floor is not a fixed asset of that dealer.",
+      "If a business converts a server rack previously held for resale into equipment used in its own operations, its balance sheet classification should move from current to non-current.",
+      "A patent lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a patent cannot be touched, it appears among non-current assets rather than current assets because of its long-term value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-period operational benefit qualifies the server rack as a tangible fixed asset.",
+      "TRUE — Showroom stock awaiting sale is inventory, not a fixed asset, for the dealer.",
+      "TRUE — A change in intended use from resale to operational use reclassifies the server rack from inventory to a non-current asset.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a patent.",
+      "TRUE — Long-term value places an intangible patent among non-current rather than current assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.27",
+    "title": "Asset Swaps and the Balance Sheet",
+    "context": "Consider a farm business that owns tractors for cultivation while holding harvested grain in storage awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "A patent is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a patent from being classified as a non-current asset.",
+      "A commercial oven used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A patent purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets.",
+      "A commercial oven held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Intangible and tangible non-current assets, including a patent, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a patent.",
+      "FALSE — Operational use over the long term makes the commercial oven a non-current tangible asset, not inventory.",
+      "TRUE — Multi-year protective or exploitative value groups a patent with intangible non-current assets.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the commercial oven in inventory rather than among non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.28",
+    "title": "Credit Purchases and Balance Sheet Balance",
+    "context": "Analyze why the balance sheet reports figures at a single point in time rather than over a period. Evaluate the following economic assertions:",
+    "statements": [
+      "A patent is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "The same commercial oven must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a commercial oven as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A commercial oven purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A business holding a patent for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Because a patent is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "FALSE — Classification of the commercial oven depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the commercial oven.",
+      "FALSE — Resale intent keeps the commercial oven in inventory as a current asset regardless of how long it remains unsold.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a patent out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.29",
+    "title": "Cash Purchases Versus Credit Purchases",
+    "context": "Review how total equity and liabilities together must equal total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "A trademark lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a trademark cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A trademark is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a trademark from being classified as a non-current asset.",
+      "A trademark purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a trademark.",
+      "TRUE — Long-term value places an intangible trademark among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including a trademark, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a trademark.",
+      "TRUE — Multi-year protective or exploitative value groups a trademark with intangible non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.30",
+    "title": "Reclassifying Assets by Intended Use",
+    "context": "Analyze why physical form is not required for an item to qualify as a non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "A trademark is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A commercial oven used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "Once a dealer sells a commercial oven from its showroom, the buyer must continue to record it as inventory.",
+      "A commercial oven converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A business holding a trademark for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Because a trademark is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "FALSE — Continued operational use makes the commercial oven a non-current asset; inventory is reserved for goods held for resale.",
+      "FALSE — A buyer intending to use the commercial oven in operations records it as a non-current asset, not inventory, after purchase.",
+      "FALSE — A change in intended use reclassifies the commercial oven from inventory to a non-current asset.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a trademark out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.31",
+    "title": "Dealer Inventory Versus Operating Assets",
+    "context": "Consider an engineering firm that owns specialised testing equipment while also holding raw materials awaiting use in customer orders. Evaluate the following economic assertions:",
+    "statements": [
+      "A brand licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a brand licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A brand licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a brand licence from being classified as a non-current asset.",
+      "A brand licence purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a brand licence.",
+      "TRUE — Long-term value places an intangible brand licence among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including a brand licence, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a brand licence.",
+      "TRUE — Multi-year protective or exploitative value groups a brand licence with intangible non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.32",
+    "title": "Same Item Different Classification",
+    "context": "Analyze the benefit period concept underlying non-current asset classification. Evaluate the following economic assertions:",
+    "statements": [
+      "A brand licence is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A business holding a brand licence for continued exclusive use records it as an intangible non-current asset rather than as inventory.",
+      "A franchise licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "An industrial sewing machine used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "An industrial sewing machine held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Because a brand licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a brand licence out of inventory and within intangible non-current assets.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a franchise licence.",
+      "FALSE — Operational use over the long term makes the industrial sewing machine a non-current tangible asset, not inventory.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the industrial sewing machine in inventory rather than among non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.33",
+    "title": "Settlement Timing for Liabilities",
+    "context": "Review how trade payables arise from receiving goods or services before paying suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "Although a franchise licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "The same industrial sewing machine must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying an industrial sewing machine as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "An industrial sewing machine purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A franchise licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term value places an intangible franchise licence among non-current rather than current assets.",
+      "FALSE — Classification of the industrial sewing machine depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the industrial sewing machine.",
+      "FALSE — Resale intent keeps the industrial sewing machine in inventory as a current asset regardless of how long it remains unsold.",
+      "TRUE — Intangible and tangible non-current assets, including a franchise licence, sit together in the same balance sheet section."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.34",
+    "title": "Partial Repayment and Reclassification",
+    "context": "Analyze how comparing trade payables with trade receivables reveals net short-term obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "An industrial sewing machine used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "The absence of physical form does not prevent a franchise licence from being classified as a non-current asset.",
+      "A franchise licence purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets.",
+      "A franchise licence is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A business holding a franchise licence for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Continued operational use makes the industrial sewing machine a non-current asset; inventory is reserved for goods held for resale.",
+      "TRUE — Physical form is not a requirement for non-current classification of a franchise licence.",
+      "TRUE — Multi-year protective or exploitative value groups a franchise licence with intangible non-current assets.",
+      "TRUE — Because a franchise licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a franchise licence out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.35",
+    "title": "Equity Ratio and Lender Risk",
+    "context": "Consider a food producer that owns its processing machinery while owing suppliers for recently delivered packaging materials. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a dealer sells an industrial sewing machine from its showroom, the buyer must continue to record it as inventory.",
+      "An industrial sewing machine converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A software licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a software licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A software licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — A buyer intending to use the industrial sewing machine in operations records it as a non-current asset, not inventory, after purchase.",
+      "FALSE — A change in intended use reclassifies the industrial sewing machine from inventory to a non-current asset.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a software licence.",
+      "TRUE — Long-term value places an intangible software licence among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including a software licence, sit together in the same balance sheet section."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.36",
+    "title": "Raising Equity Versus Taking on Debt",
+    "context": "Analyze how a forklift truck used in a warehouse differs in classification from one held for resale. Evaluate the following economic assertions:",
+    "statements": [
+      "The absence of physical form does not prevent a software licence from being classified as a non-current asset.",
+      "A farm tractor used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A farm tractor held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "A software licence purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets.",
+      "The same farm tractor must always be classified identically on every balance sheet regardless of how it is held."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Physical form is not a requirement for non-current classification of a software licence.",
+      "FALSE — Operational use over the long term makes the farm tractor a non-current tangible asset, not inventory.",
+      "FALSE — Resale intent, not the dealer's status as a business, places the farm tractor in inventory rather than among non-current assets.",
+      "TRUE — Multi-year protective or exploitative value groups a software licence with intangible non-current assets.",
+      "FALSE — Classification of the farm tractor depends on whether it is used or held for resale, so identical items can differ across balance sheets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.37",
+    "title": "Balance Sheet as a Point in Time",
+    "context": "Review how a commercial oven used in daily production is classified compared with one held as stock. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a farm tractor as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A software licence is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A farm tractor purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A farm tractor used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "A business holding a software licence for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Intended use, not purchase price, drives non-current classification of the farm tractor.",
+      "TRUE — Because a software licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "FALSE — Resale intent keeps the farm tractor in inventory as a current asset regardless of how long it remains unsold.",
+      "FALSE — Continued operational use makes the farm tractor a non-current asset; inventory is reserved for goods held for resale.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a software licence out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.38",
+    "title": "Total Equity and Liabilities Identity",
+    "context": "Analyze how a sewing machine used for years in production is classified as a non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a dealer sells a farm tractor from its showroom, the buyer must continue to record it as inventory.",
+      "An import licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although an import licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "An import licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent an import licence from being classified as a non-current asset."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — A buyer intending to use the farm tractor in operations records it as a non-current asset, not inventory, after purchase.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of an import licence.",
+      "TRUE — Long-term value places an intangible import licence among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including an import licence, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of an import licence."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.39",
+    "title": "Physical Form and Asset Classification",
+    "context": "Consider a hospital trust that owns its diagnostic equipment while settling invoices from medical suppliers on standard credit terms. Evaluate the following economic assertions:",
+    "statements": [
+      "An import licence purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets.",
+      "An import licence is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A business holding an import licence for continued exclusive use records it as an intangible non-current asset rather than as inventory.",
+      "A distribution licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "A farm tractor converted from resale stock into equipment used in operations keeps its original inventory classification permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Multi-year protective or exploitative value groups an import licence with intangible non-current assets.",
+      "TRUE — Because an import licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "TRUE — Continued exclusive use, not resale intent, keeps an import licence out of inventory and within intangible non-current assets.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a distribution licence.",
+      "FALSE — A change in intended use reclassifies the farm tractor from inventory to a non-current asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.40",
+    "title": "Operating Cycle and Current Assets",
+    "context": "Analyze how a tractor used on a farm is classified compared with one held by an equipment dealer. Evaluate the following economic assertions:",
+    "statements": [
+      "Although a distribution licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A server rack used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A distribution licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a distribution licence from being classified as a non-current asset.",
+      "A distribution licence purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term value places an intangible distribution licence among non-current rather than current assets.",
+      "FALSE — Operational use over the long term makes the server rack a non-current tangible asset, not inventory.",
+      "TRUE — Intangible and tangible non-current assets, including a distribution licence, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a distribution licence.",
+      "TRUE — Multi-year protective or exploitative value groups a distribution licence with intangible non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.41",
+    "title": "Benefit Period and Non-Current Assets",
+    "context": "Review how a server rack used to run internal systems is classified as a tangible non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "A server rack held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business, not a household.",
+      "The same server rack must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a server rack as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A server rack purchased to be resold still counts among non-current assets as long as it remains unsold for several months.",
+      "A distribution licence is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Resale intent, not the dealer's status as a business, places the server rack in inventory rather than among non-current assets.",
+      "FALSE — Classification of the server rack depends on whether it is used or held for resale, so identical items can differ across balance sheets.",
+      "FALSE — Intended use, not purchase price, drives non-current classification of the server rack.",
+      "FALSE — Resale intent keeps the server rack in inventory as a current asset regardless of how long it remains unsold.",
+      "TRUE — Because a distribution licence is not expected to convert into cash within the operating cycle, it is excluded from current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.42",
+    "title": "Supplier Credit and Trade Payables",
+    "context": "Analyze how a photocopier used for office administration is classified as a fixed asset. Evaluate the following economic assertions:",
+    "statements": [
+      "A business holding a distribution licence for continued exclusive use records it as an intangible non-current asset rather than as inventory.",
+      "A server rack used daily in a business's own operations should be recorded as inventory because it depreciates like stock.",
+      "A trademark registration lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a trademark registration cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A trademark registration is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Continued exclusive use, not resale intent, keeps a distribution licence out of inventory and within intangible non-current assets.",
+      "FALSE — Continued operational use makes the server rack a non-current asset; inventory is reserved for goods held for resale.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a trademark registration.",
+      "TRUE — Long-term value places an intangible trademark registration among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including a trademark registration, sit together in the same balance sheet section."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.43",
+    "title": "Comparing Payables and Receivables",
+    "context": "Consider a bakery that owns its ovens and mixers for daily production while also holding boxed pastries as stock awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "The absence of physical form does not prevent a trademark registration from being classified as a non-current asset.",
+      "A trademark registration purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets.",
+      "Once a dealer sells a server rack from its showroom, the buyer must continue to record it as inventory.",
+      "A trademark registration is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A business holding a trademark registration for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Physical form is not a requirement for non-current classification of a trademark registration.",
+      "TRUE — Multi-year protective or exploitative value groups a trademark registration with intangible non-current assets.",
+      "FALSE — A buyer intending to use the server rack in operations records it as a non-current asset, not inventory, after purchase.",
+      "TRUE — Because a trademark registration is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a trademark registration out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.44",
+    "title": "Vehicles as Fixed or Resale Assets",
+    "context": "Analyze how a franchise licence held for long-term use is classified as an intangible non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "A copyright lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a copyright cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A copyright is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a copyright from being classified as a non-current asset.",
+      "A copyright purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a copyright.",
+      "TRUE — Long-term value places an intangible copyright among non-current rather than current assets.",
+      "TRUE — Intangible and tangible non-current assets, including a copyright, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a copyright.",
+      "TRUE — Multi-year protective or exploitative value groups a copyright with intangible non-current assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.45",
+    "title": "Forklifts in Fixed Versus Current Assets",
+    "context": "Review how an import licence held for ongoing trading rights is classified on the balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "A server rack converted from resale stock into equipment used in operations keeps its original inventory classification permanently.",
+      "A copyright is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A patent is excluded from non-current assets because it has no physical substance.",
+      "A business holding a copyright for continued exclusive use records it as an intangible non-current asset rather than as inventory.",
+      "A customer list acquired in a takeover lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — A change in intended use reclassifies the server rack from inventory to a non-current asset.",
+      "TRUE — Because a copyright is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "FALSE — Physical substance is not required for non-current classification; a patent qualifies through its long-term value.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a copyright out of inventory and within intangible non-current assets.",
+      "TRUE — Long-term expected benefit, not physical form, justifies the non-current classification of a customer list acquired in a takeover."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.46",
+    "title": "Ovens Held for Use or Sale",
+    "context": "Analyze how a distribution licence supporting long-term operations is classified as an intangible asset. Evaluate the following economic assertions:",
+    "statements": [
+      "Although a customer list acquired in a takeover cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A patent is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "Because a patent cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a patent because that section is reserved strictly for tangible items like machinery.",
+      "A patent is treated as inventory because it is intended for use rather than for physical display."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Long-term value places an intangible customer list acquired in a takeover among non-current rather than current assets.",
+      "FALSE — A patent is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "FALSE — A patent with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a patent alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a patent among non-current intangible assets, not inventory."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.47",
+    "title": "Sewing Machines and Asset Classification",
+    "context": "Consider a farm business that owns tractors for cultivation while holding harvested grain in storage awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "A patent loses its non-current classification as soon as the business begins actively using it.",
+      "A customer list acquired in a takeover is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a customer list acquired in a takeover from being classified as a non-current asset.",
+      "A patent counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A customer list acquired in a takeover purchased to protect or exploit a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Active use does not remove a patent's non-current classification; it confirms the long-term benefit that justifies it.",
+      "TRUE — Intangible and tangible non-current assets, including a customer list acquired in a takeover, sit together in the same balance sheet section.",
+      "TRUE — Physical form is not a requirement for non-current classification of a customer list acquired in a takeover.",
+      "FALSE — Valuation difficulty does not reclassify a patent; expected long-term benefit keeps it a non-current intangible asset.",
+      "TRUE — Multi-year protective or exploitative value groups a customer list acquired in a takeover with intangible non-current assets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.48",
+    "title": "Generators as Operating Equipment",
+    "context": "Analyze how copyright protection is classified as an intangible non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "A customer list acquired in a takeover is not classified as a current asset because it is not expected to be converted into cash within the normal operating cycle.",
+      "A trademark is excluded from non-current assets because it has no physical substance.",
+      "A trademark is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "Because a trademark cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "A business holding a customer list acquired in a takeover for continued exclusive use records it as an intangible non-current asset rather than as inventory."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Because a customer list acquired in a takeover is not expected to convert into cash within the operating cycle, it is excluded from current assets.",
+      "FALSE — Physical substance is not required for non-current classification; a trademark qualifies through its long-term value.",
+      "FALSE — A trademark is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "FALSE — A trademark with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "TRUE — Continued exclusive use, not resale intent, keeps a customer list acquired in a takeover out of inventory and within intangible non-current assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.49",
+    "title": "Tractors in Farm Business Balance Sheets",
+    "context": "Review how a software licence used over several years is classified as a non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "Non-current assets can never include a trademark because that section is reserved strictly for tangible items like machinery.",
+      "A trademark is treated as inventory because it is intended for use rather than for physical display.",
+      "A manufacturing firm that takes out a long-term bank loan repayable in more than one year classifies the obligation as a non-current liability.",
+      "A manufacturing firm that owes trade payables to suppliers due within the next year classifies the obligation as a current liability.",
+      "A trademark loses its non-current classification as soon as the business begins actively using it."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The non-current assets section includes intangible items such as a trademark alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a trademark among non-current intangible assets, not inventory.",
+      "TRUE — Repayment due beyond one year places the long-term bank loan among non-current liabilities for a manufacturing firm.",
+      "TRUE — Settlement within one year places trade payables to suppliers among current liabilities for a manufacturing firm.",
+      "FALSE — Active use does not remove a trademark's non-current classification; it confirms the long-term benefit that justifies it."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.50",
+    "title": "Server Racks as Fixed Assets",
+    "context": "Analyze how a mortgage on business premises is classified as a non-current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A trademark counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A brand licence is excluded from non-current assets because it has no physical substance.",
+      "For a manufacturing firm, a long-term bank loan appears separately from current liabilities because it falls due after more than one year.",
+      "A brand licence is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "For a manufacturing firm, trade payables to suppliers appears within current liabilities because settlement is expected within one year."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Valuation difficulty does not reclassify a trademark; expected long-term benefit keeps it a non-current intangible asset.",
+      "FALSE — Physical substance is not required for non-current classification; a brand licence qualifies through its long-term value.",
+      "TRUE — A longer settlement horizon separates a long-term bank loan from the current liabilities of a manufacturing firm.",
+      "FALSE — A brand licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "TRUE — A short settlement horizon places trade payables to suppliers within the current liabilities of a manufacturing firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.51",
+    "title": "Photocopiers for Office Use",
+    "context": "Consider an engineering firm that owns specialised testing equipment while also holding raw materials awaiting use in customer orders. Evaluate the following economic assertions:",
+    "statements": [
+      "A long-term bank loan owed by a manufacturing firm does not increase current liabilities because it is not due within the coming year.",
+      "If part of a manufacturing firm's long-term bank loan becomes due within the next twelve months, that portion should move into current liabilities.",
+      "Because a brand licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a brand licence because that section is reserved strictly for tangible items like machinery.",
+      "A brand licence is treated as inventory because it is intended for use rather than for physical display."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Because the long-term bank loan of a manufacturing firm is not due within a year, it stays out of current liabilities.",
+      "TRUE — A long-term bank loan nearing its due date within a year is reclassified into current liabilities for a manufacturing firm.",
+      "FALSE — A brand licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a brand licence alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a brand licence among non-current intangible assets, not inventory."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.52",
+    "title": "Delivery Vans as Non-Current Assets",
+    "context": "Analyze how a bank overdraft is classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A manufacturing firm continues to record trade payables to suppliers as a current liability no matter how large the outstanding balance becomes.",
+      "A retail chain that takes out a corporate bond repayable in more than one year classifies the obligation as a non-current liability.",
+      "A brand licence loses its non-current classification as soon as the business begins actively using it.",
+      "A retail chain that owes bank overdraft due within the next year classifies the obligation as a current liability.",
+      "A brand licence counts as a current asset whenever its value is difficult to estimate precisely."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Amount owed does not change the current classification of trade payables to suppliers for a manufacturing firm; timing does.",
+      "TRUE — Repayment due beyond one year places the corporate bond among non-current liabilities for a retail chain.",
+      "FALSE — Active use does not remove a brand licence's non-current classification; it confirms the long-term benefit that justifies it.",
+      "TRUE — Settlement within one year places bank overdraft among current liabilities for a retail chain.",
+      "FALSE — Valuation difficulty does not reclassify a brand licence; expected long-term benefit keeps it a non-current intangible asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.53",
+    "title": "Franchise Licences as Intangibles",
+    "context": "Review how wages payable to employees are classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "For a retail chain, a corporate bond appears separately from current liabilities because it falls due after more than one year.",
+      "For a retail chain, bank overdraft appears within current liabilities because settlement is expected within one year.",
+      "A franchise licence is excluded from non-current assets because it has no physical substance.",
+      "A corporate bond owed by a retail chain does not increase current liabilities because it is not due within the coming year.",
+      "A franchise licence is classified as a current asset because it is intangible and therefore easily converted into cash within a year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A longer settlement horizon separates a corporate bond from the current liabilities of a retail chain.",
+      "TRUE — A short settlement horizon places bank overdraft within the current liabilities of a retail chain.",
+      "FALSE — Physical substance is not required for non-current classification; a franchise licence qualifies through its long-term value.",
+      "TRUE — Because the corporate bond of a retail chain is not due within a year, it stays out of current liabilities.",
+      "FALSE — A franchise licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.54",
+    "title": "Import Licences on the Balance Sheet",
+    "context": "Analyze how tax payable to the authorities is classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "If part of a retail chain's corporate bond becomes due within the next twelve months, that portion should move into current liabilities.",
+      "Because a franchise licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a franchise licence because that section is reserved strictly for tangible items like machinery.",
+      "A retail chain continues to record bank overdraft as a current liability no matter how large the outstanding balance becomes.",
+      "A franchise licence is treated as inventory because it is intended for use rather than for physical display."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A corporate bond nearing its due date within a year is reclassified into current liabilities for a retail chain.",
+      "FALSE — A franchise licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a franchise licence alongside tangible assets.",
+      "TRUE — Amount owed does not change the current classification of bank overdraft for a retail chain; timing does.",
+      "FALSE — Long-term exclusive use, not physical display, places a franchise licence among non-current intangible assets, not inventory."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.55",
+    "title": "Distribution Licences Explained",
+    "context": "Consider a food producer that owns its processing machinery while owing suppliers for recently delivered packaging materials. Evaluate the following economic assertions:",
+    "statements": [
+      "A logistics company that takes out a mortgage on the premises repayable in more than one year classifies the obligation as a non-current liability.",
+      "A franchise licence loses its non-current classification as soon as the business begins actively using it.",
+      "A franchise licence counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A software licence is excluded from non-current assets because it has no physical substance.",
+      "A logistics company that owes short-term loan due within the year due within the next year classifies the obligation as a current liability."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Repayment due beyond one year places the mortgage on the premises among non-current liabilities for a logistics company.",
+      "FALSE — Active use does not remove a franchise licence's non-current classification; it confirms the long-term benefit that justifies it.",
+      "FALSE — Valuation difficulty does not reclassify a franchise licence; expected long-term benefit keeps it a non-current intangible asset.",
+      "FALSE — Physical substance is not required for non-current classification; a software licence qualifies through its long-term value.",
+      "TRUE — Settlement within one year places short-term loan due within the year among current liabilities for a logistics company."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.56",
+    "title": "Customer Lists From Acquisitions",
+    "context": "Analyze how a manufacturing firm's balance sheet reflects both fixed assets and working capital items. Evaluate the following economic assertions:",
+    "statements": [
+      "For a logistics company, a mortgage on the premises appears separately from current liabilities because it falls due after more than one year.",
+      "For a logistics company, short-term loan due within the year appears within current liabilities because settlement is expected within one year.",
+      "A mortgage on the premises owed by a logistics company does not increase current liabilities because it is not due within the coming year.",
+      "If part of a logistics company's mortgage on the premises becomes due within the next twelve months, that portion should move into current liabilities.",
+      "A logistics company continues to record short-term loan due within the year as a current liability no matter how large the outstanding balance becomes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A longer settlement horizon separates a mortgage on the premises from the current liabilities of a logistics company.",
+      "TRUE — A short settlement horizon places short-term loan due within the year within the current liabilities of a logistics company.",
+      "TRUE — Because the mortgage on the premises of a logistics company is not due within a year, it stays out of current liabilities.",
+      "TRUE — A mortgage on the premises nearing its due date within a year is reclassified into current liabilities for a logistics company.",
+      "TRUE — Amount owed does not change the current classification of short-term loan due within the year for a logistics company; timing does."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.57",
+    "title": "Copyright as an Intangible Asset",
+    "context": "Review how a retail chain's balance sheet separates fixed shop fittings from seasonal inventory. Evaluate the following economic assertions:",
+    "statements": [
+      "A software licence is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "A construction contractor that takes out a five-year term loan repayable in more than one year classifies the obligation as a non-current liability.",
+      "Because a software licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a software licence because that section is reserved strictly for tangible items like machinery.",
+      "A software licence is treated as inventory because it is intended for use rather than for physical display."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A software licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "TRUE — Repayment due beyond one year places the five-year term loan among non-current liabilities for a construction contractor.",
+      "FALSE — A software licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a software licence alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a software licence among non-current intangible assets, not inventory."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.58",
+    "title": "Software Licences and Long-Term Value",
+    "context": "Analyze how a logistics company's balance sheet reflects vehicles as non-current assets. Evaluate the following economic assertions:",
+    "statements": [
+      "A construction contractor that owes wages payable to employees due within the next year classifies the obligation as a current liability.",
+      "For a construction contractor, a five-year term loan appears separately from current liabilities because it falls due after more than one year.",
+      "For a construction contractor, wages payable to employees appears within current liabilities because settlement is expected within one year.",
+      "A five-year term loan owed by a construction contractor does not increase current liabilities because it is not due within the coming year.",
+      "If part of a construction contractor's five-year term loan becomes due within the next twelve months, that portion should move into current liabilities."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Settlement within one year places wages payable to employees among current liabilities for a construction contractor.",
+      "TRUE — A longer settlement horizon separates a five-year term loan from the current liabilities of a construction contractor.",
+      "TRUE — A short settlement horizon places wages payable to employees within the current liabilities of a construction contractor.",
+      "TRUE — Because the five-year term loan of a construction contractor is not due within a year, it stays out of current liabilities.",
+      "TRUE — A five-year term loan nearing its due date within a year is reclassified into current liabilities for a construction contractor."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.59",
+    "title": "Mortgages as Non-Current Liabilities",
+    "context": "Consider a hospital trust that owns its diagnostic equipment while settling invoices from medical suppliers on standard credit terms. Evaluate the following economic assertions:",
+    "statements": [
+      "A construction contractor continues to record wages payable to employees as a current liability no matter how large the outstanding balance becomes.",
+      "A software licence loses its non-current classification as soon as the business begins actively using it.",
+      "A software company that takes out a long-term lease liability repayable in more than one year classifies the obligation as a non-current liability.",
+      "A software licence counts as a current asset whenever its value is difficult to estimate precisely.",
+      "An import licence is excluded from non-current assets because it has no physical substance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Amount owed does not change the current classification of wages payable to employees for a construction contractor; timing does.",
+      "FALSE — Active use does not remove a software licence's non-current classification; it confirms the long-term benefit that justifies it.",
+      "TRUE — Repayment due beyond one year places the long-term lease liability among non-current liabilities for a software company.",
+      "FALSE — Valuation difficulty does not reclassify a software licence; expected long-term benefit keeps it a non-current intangible asset.",
+      "FALSE — Physical substance is not required for non-current classification; an import licence qualifies through its long-term value."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.60",
+    "title": "Term Loans and Settlement Dates",
+    "context": "Analyze how equity contributions differ from borrowed funds in their effect on a business's balance sheet structure. Evaluate the following economic assertions:",
+    "statements": [
+      "A software company that owes tax payable to the authorities due within the next year classifies the obligation as a current liability.",
+      "For a software company, a long-term lease liability appears separately from current liabilities because it falls due after more than one year.",
+      "An import licence is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "For a software company, tax payable to the authorities appears within current liabilities because settlement is expected within one year.",
+      "Because an import licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Settlement within one year places tax payable to the authorities among current liabilities for a software company.",
+      "TRUE — A longer settlement horizon separates a long-term lease liability from the current liabilities of a software company.",
+      "FALSE — An import licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "TRUE — A short settlement horizon places tax payable to the authorities within the current liabilities of a software company.",
+      "FALSE — An import licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.61",
+    "title": "Overdrafts as Current Liabilities",
+    "context": "Review how the balance sheet equation requires total assets to equal total liabilities plus total equity. Evaluate the following economic assertions:",
+    "statements": [
+      "A long-term lease liability owed by a software company does not increase current liabilities because it is not due within the coming year.",
+      "If part of a software company's long-term lease liability becomes due within the next twelve months, that portion should move into current liabilities.",
+      "A software company continues to record tax payable to the authorities as a current liability no matter how large the outstanding balance becomes.",
+      "Non-current assets can never include an import licence because that section is reserved strictly for tangible items like machinery.",
+      "A hospital trust that takes out a long-term bank loan repayable in more than one year classifies the obligation as a non-current liability."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Because the long-term lease liability of a software company is not due within a year, it stays out of current liabilities.",
+      "TRUE — A long-term lease liability nearing its due date within a year is reclassified into current liabilities for a software company.",
+      "TRUE — Amount owed does not change the current classification of tax payable to the authorities for a software company; timing does.",
+      "FALSE — The non-current assets section includes intangible items such as an import licence alongside tangible assets.",
+      "TRUE — Repayment due beyond one year places the long-term bank loan among non-current liabilities for a hospital trust."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.62",
+    "title": "Wages Payable and Settlement Timing",
+    "context": "Analyze how owner's equity is derived as the residual claim after liabilities are deducted from assets. Evaluate the following economic assertions:",
+    "statements": [
+      "An import licence is treated as inventory because it is intended for use rather than for physical display.",
+      "A hospital trust that owes trade payables to suppliers due within the next year classifies the obligation as a current liability.",
+      "For a hospital trust, a long-term bank loan appears separately from current liabilities because it falls due after more than one year.",
+      "For a hospital trust, trade payables to suppliers appears within current liabilities because settlement is expected within one year.",
+      "An import licence loses its non-current classification as soon as the business begins actively using it."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Long-term exclusive use, not physical display, places an import licence among non-current intangible assets, not inventory.",
+      "TRUE — Settlement within one year places trade payables to suppliers among current liabilities for a hospital trust.",
+      "TRUE — A longer settlement horizon separates a long-term bank loan from the current liabilities of a hospital trust.",
+      "TRUE — A short settlement horizon places trade payables to suppliers within the current liabilities of a hospital trust.",
+      "FALSE — Active use does not remove an import licence's non-current classification; it confirms the long-term benefit that justifies it."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.63",
+    "title": "Tax Payable as a Current Obligation",
+    "context": "Consider a bakery that owns its ovens and mixers for daily production while also holding boxed pastries as stock awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "A long-term bank loan owed by a hospital trust does not increase current liabilities because it is not due within the coming year.",
+      "If part of a hospital trust's long-term bank loan becomes due within the next twelve months, that portion should move into current liabilities.",
+      "A hospital trust continues to record trade payables to suppliers as a current liability no matter how large the outstanding balance becomes.",
+      "A hotel group that takes out a corporate bond repayable in more than one year classifies the obligation as a non-current liability.",
+      "A hotel group that owes bank overdraft due within the next year classifies the obligation as a current liability."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Because the long-term bank loan of a hospital trust is not due within a year, it stays out of current liabilities.",
+      "TRUE — A long-term bank loan nearing its due date within a year is reclassified into current liabilities for a hospital trust.",
+      "TRUE — Amount owed does not change the current classification of trade payables to suppliers for a hospital trust; timing does.",
+      "TRUE — Repayment due beyond one year places the corporate bond among non-current liabilities for a hotel group.",
+      "TRUE — Settlement within one year places bank overdraft among current liabilities for a hotel group."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.64",
+    "title": "Lease Liabilities and Classification",
+    "context": "Analyze why non-current assets are expected to provide benefit for more than one year. Evaluate the following economic assertions:",
+    "statements": [
+      "For a hotel group, a corporate bond appears separately from current liabilities because it falls due after more than one year.",
+      "An import licence counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A distribution licence is excluded from non-current assets because it has no physical substance.",
+      "A distribution licence is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "Because a distribution licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A longer settlement horizon separates a corporate bond from the current liabilities of a hotel group.",
+      "FALSE — Valuation difficulty does not reclassify an import licence; expected long-term benefit keeps it a non-current intangible asset.",
+      "FALSE — Physical substance is not required for non-current classification; a distribution licence qualifies through its long-term value.",
+      "FALSE — A distribution licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "FALSE — A distribution licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.65",
+    "title": "Manufacturing Firms and Fixed Assets",
+    "context": "Review why current assets are expected to convert into cash within the normal operating cycle. Evaluate the following economic assertions:",
+    "statements": [
+      "For a hotel group, bank overdraft appears within current liabilities because settlement is expected within one year.",
+      "Non-current assets can never include a distribution licence because that section is reserved strictly for tangible items like machinery.",
+      "A distribution licence is treated as inventory because it is intended for use rather than for physical display.",
+      "A corporate bond owed by a hotel group does not increase current liabilities because it is not due within the coming year.",
+      "A distribution licence loses its non-current classification as soon as the business begins actively using it."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — A short settlement horizon places bank overdraft within the current liabilities of a hotel group.",
+      "FALSE — The non-current assets section includes intangible items such as a distribution licence alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a distribution licence among non-current intangible assets, not inventory.",
+      "TRUE — Because the corporate bond of a hotel group is not due within a year, it stays out of current liabilities.",
+      "FALSE — Active use does not remove a distribution licence's non-current classification; it confirms the long-term benefit that justifies it."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.66",
+    "title": "Retail Chains and Inventory Classification",
+    "context": "Analyze how tangible non-current assets differ from intangible non-current assets in physical form. Evaluate the following economic assertions:",
+    "statements": [
+      "A distribution licence counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A trademark registration is excluded from non-current assets because it has no physical substance.",
+      "A trademark registration is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "Because a trademark registration cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "If part of a hotel group's corporate bond becomes due within the next twelve months, that portion should move into current liabilities."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Valuation difficulty does not reclassify a distribution licence; expected long-term benefit keeps it a non-current intangible asset.",
+      "FALSE — Physical substance is not required for non-current classification; a trademark registration qualifies through its long-term value.",
+      "FALSE — A trademark registration is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "FALSE — A trademark registration with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "TRUE — A corporate bond nearing its due date within a year is reclassified into current liabilities for a hotel group."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.67",
+    "title": "Logistics Companies and Vehicle Assets",
+    "context": "Consider a farm business that owns tractors for cultivation while holding harvested grain in storage awaiting sale. Evaluate the following economic assertions:",
+    "statements": [
+      "Non-current assets can never include a trademark registration because that section is reserved strictly for tangible items like machinery.",
+      "A trademark registration is treated as inventory because it is intended for use rather than for physical display.",
+      "A trademark registration loses its non-current classification as soon as the business begins actively using it.",
+      "A hotel group continues to record bank overdraft as a current liability no matter how large the outstanding balance becomes.",
+      "A trademark registration counts as a current asset whenever its value is difficult to estimate precisely."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The non-current assets section includes intangible items such as a trademark registration alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a trademark registration among non-current intangible assets, not inventory.",
+      "FALSE — Active use does not remove a trademark registration's non-current classification; it confirms the long-term benefit that justifies it.",
+      "TRUE — Amount owed does not change the current classification of bank overdraft for a hotel group; timing does.",
+      "FALSE — Valuation difficulty does not reclassify a trademark registration; expected long-term benefit keeps it a non-current intangible asset."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.68",
+    "title": "Construction Contractors and Equipment",
+    "context": "Analyze how buildings, machinery and office equipment are classified as tangible non-current assets. Evaluate the following economic assertions:",
+    "statements": [
+      "An engineering firm that takes out a mortgage on the premises repayable in more than one year classifies the obligation as a non-current liability.",
+      "An engineering firm that owes short-term loan due within the year due within the next year classifies the obligation as a current liability.",
+      "For an engineering firm, a mortgage on the premises appears separately from current liabilities because it falls due after more than one year.",
+      "For an engineering firm, short-term loan due within the year appears within current liabilities because settlement is expected within one year.",
+      "A mortgage on the premises owed by an engineering firm does not increase current liabilities because it is not due within the coming year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Repayment due beyond one year places the mortgage on the premises among non-current liabilities for an engineering firm.",
+      "TRUE — Settlement within one year places short-term loan due within the year among current liabilities for an engineering firm.",
+      "TRUE — A longer settlement horizon separates a mortgage on the premises from the current liabilities of an engineering firm.",
+      "TRUE — A short settlement horizon places short-term loan due within the year within the current liabilities of an engineering firm.",
+      "TRUE — Because the mortgage on the premises of an engineering firm is not due within a year, it stays out of current liabilities."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.69",
+    "title": "Hotels and Non-Current Asset Bases",
+    "context": "Review how inventory, trade receivables and cash are classified as current assets. Evaluate the following economic assertions:",
+    "statements": [
+      "If part of an engineering firm's mortgage on the premises becomes due within the next twelve months, that portion should move into current liabilities.",
+      "A copyright is excluded from non-current assets because it has no physical substance.",
+      "An engineering firm continues to record short-term loan due within the year as a current liability no matter how large the outstanding balance becomes.",
+      "A copyright is classified as a current asset because it is intangible and therefore easily converted into cash within a year.",
+      "A food producer that takes out a five-year term loan repayable in more than one year classifies the obligation as a non-current liability."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — A mortgage on the premises nearing its due date within a year is reclassified into current liabilities for an engineering firm.",
+      "FALSE — Physical substance is not required for non-current classification; a copyright qualifies through its long-term value.",
+      "TRUE — Amount owed does not change the current classification of short-term loan due within the year for an engineering firm; timing does.",
+      "FALSE — A copyright is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.",
+      "TRUE — Repayment due beyond one year places the five-year term loan among non-current liabilities for a food producer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.70",
+    "title": "Hospitals and Balance Sheet Structure",
+    "context": "Analyze why the same physical item can be a non-current asset for one holder and inventory for another. Evaluate the following economic assertions:",
+    "statements": [
+      "A food producer that owes wages payable to employees due within the next year classifies the obligation as a current liability.",
+      "For a food producer, a five-year term loan appears separately from current liabilities because it falls due after more than one year.",
+      "For a food producer, wages payable to employees appears within current liabilities because settlement is expected within one year.",
+      "Because a copyright cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a copyright because that section is reserved strictly for tangible items like machinery."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Settlement within one year places wages payable to employees among current liabilities for a food producer.",
+      "TRUE — A longer settlement horizon separates a five-year term loan from the current liabilities of a food producer.",
+      "TRUE — A short settlement horizon places wages payable to employees within the current liabilities of a food producer.",
+      "FALSE — A copyright with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a copyright alongside tangible assets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.71",
+    "title": "Engineering Firms and Loan Classification",
+    "context": "Consider an engineering firm that owns specialised testing equipment while also holding raw materials awaiting use in customer orders. Evaluate the following economic assertions:",
+    "statements": [
+      "A copyright is treated as inventory because it is intended for use rather than for physical display.",
+      "A copyright loses its non-current classification as soon as the business begins actively using it.",
+      "A copyright counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A five-year term loan owed by a food producer does not increase current liabilities because it is not due within the coming year.",
+      "If part of a food producer's five-year term loan becomes due within the next twelve months, that portion should move into current liabilities."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Long-term exclusive use, not physical display, places a copyright among non-current intangible assets, not inventory.",
+      "FALSE — Active use does not remove a copyright's non-current classification; it confirms the long-term benefit that justifies it.",
+      "FALSE — Valuation difficulty does not reclassify a copyright; expected long-term benefit keeps it a non-current intangible asset.",
+      "TRUE — Because the five-year term loan of a food producer is not due within a year, it stays out of current liabilities.",
+      "TRUE — A five-year term loan nearing its due date within a year is reclassified into current liabilities for a food producer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.72",
+    "title": "Food Producers and Working Assets",
+    "context": "Analyze the distinction between current liabilities and non-current liabilities based on settlement timing. Evaluate the following economic assertions:",
+    "statements": [
+      "A food producer continues to record wages payable to employees as a current liability no matter how large the outstanding balance becomes.",
+      "A transport operator that takes out a long-term lease liability repayable in more than one year classifies the obligation as a non-current liability.",
+      "A transport operator that owes tax payable to the authorities due within the next year classifies the obligation as a current liability.",
+      "For a transport operator, a long-term lease liability appears separately from current liabilities because it falls due after more than one year.",
+      "For a transport operator, tax payable to the authorities appears within current liabilities because settlement is expected within one year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Amount owed does not change the current classification of wages payable to employees for a food producer; timing does.",
+      "TRUE — Repayment due beyond one year places the long-term lease liability among non-current liabilities for a transport operator.",
+      "TRUE — Settlement within one year places tax payable to the authorities among current liabilities for a transport operator.",
+      "TRUE — A longer settlement horizon separates a long-term lease liability from the current liabilities of a transport operator.",
+      "TRUE — A short settlement horizon places tax payable to the authorities within the current liabilities of a transport operator."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.73",
+    "title": "Transport Operators and Debt Structure",
+    "context": "Review why trade payables are classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A long-term lease liability owed by a transport operator does not increase current liabilities because it is not due within the coming year.",
+      "If part of a transport operator's long-term lease liability becomes due within the next twelve months, that portion should move into current liabilities.",
+      "A transport operator continues to record tax payable to the authorities as a current liability no matter how large the outstanding balance becomes.",
+      "A customer list acquired in a takeover is excluded from non-current assets because it has no physical substance.",
+      "A customer list acquired in a takeover is classified as a current asset because it is intangible and therefore easily converted into cash within a year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Because the long-term lease liability of a transport operator is not due within a year, it stays out of current liabilities.",
+      "TRUE — A long-term lease liability nearing its due date within a year is reclassified into current liabilities for a transport operator.",
+      "TRUE — Amount owed does not change the current classification of tax payable to the authorities for a transport operator; timing does.",
+      "FALSE — Physical substance is not required for non-current classification; a customer list acquired in a takeover qualifies through its long-term value.",
+      "FALSE — A customer list acquired in a takeover is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.74",
+    "title": "Equity Contributions Versus Borrowed Funds",
+    "context": "Analyze why long-term bank loans and bonds are classified as non-current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Because a customer list acquired in a takeover cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a customer list acquired in a takeover because that section is reserved strictly for tangible items like machinery.",
+      "A customer list acquired in a takeover is treated as inventory because it is intended for use rather than for physical display.",
+      "A family-owned business with a high equity ratio relies less on external creditors to finance its assets.",
+      "A customer list acquired in a takeover loses its non-current classification as soon as the business begins actively using it."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — A customer list acquired in a takeover with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.",
+      "FALSE — The non-current assets section includes intangible items such as a customer list acquired in a takeover alongside tangible assets.",
+      "FALSE — Long-term exclusive use, not physical display, places a customer list acquired in a takeover among non-current intangible assets, not inventory.",
+      "TRUE — A high equity ratio means a family-owned business finances more of its assets from owners rather than from creditors.",
+      "FALSE — Active use does not remove a customer list acquired in a takeover's non-current classification; it confirms the long-term benefit that justifies it."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.75",
+    "title": "Closing Review of Balance Sheet Basics",
+    "context": "Consider a food producer that owns its processing machinery while owing suppliers for recently delivered packaging materials. Evaluate the following economic assertions:",
+    "statements": [
+      "A customer list acquired in a takeover counts as a current asset whenever its value is difficult to estimate precisely.",
+      "A family-owned business with a low equity ratio finances a larger share of its assets through liabilities rather than equity.",
+      "Because equity does not need to be repaid on a fixed schedule, a family-owned business with more equity faces less repayment pressure than one relying mainly on debt.",
+      "Equity provides a family-owned business with a buffer that absorbs losses before creditors are affected.",
+      "A family-owned business that raises new equity from its owners increases its equity ratio, all else being equal."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Valuation difficulty does not reclassify a customer list acquired in a takeover; expected long-term benefit keeps it a non-current intangible asset.",
+      "TRUE — A low equity ratio for a family-owned business implies heavier reliance on liabilities to finance assets.",
+      "TRUE — Equity's lack of a fixed repayment date reduces repayment pressure on a family-owned business that relies more on equity.",
+      "TRUE — Losses reduce a family-owned business's equity first, buffering creditors from immediate impact.",
+      "TRUE — New equity contributions raise the numerator of a family-owned business's equity ratio, increasing the ratio."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  }
+]
