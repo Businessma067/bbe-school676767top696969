@@ -2,25 +2,24 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
-import { Wand2 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 
-export const Route = createFileRoute("/products/full-course-subjects")({
+export const Route = createFileRoute("/products/lite-bbe-course-subjects")({
   head: () => ({
     meta: [
-      { title: "Full Course — Choose a Subject — BBE School" },
+      { title: "Lite Course — Choose a Subject — BBE School" },
       {
         name: "description",
-        content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
+        content: "Access Lite Course tasks across Economics, Math, and English for the WU BBE exam.",
       },
-      { property: "og:title", content: "Full Course — Choose a Subject — BBE School" },
+      { property: "og:title", content: "Lite Course — Choose a Subject — BBE School" },
       {
         property: "og:description",
-        content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
+        content: "Access Lite Course tasks across Economics, Math, and English for the WU BBE exam.",
       },
     ],
   }),
-  component: FullCourseSubjects,
+  component: LiteCourseSubjects,
 });
 
 const subjects = [
@@ -53,14 +52,14 @@ const subjects = [
   },
 ];
 
-function FullCourseSubjects() {
+function LiteCourseSubjects() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
-            to="/products/full-course"
+            to="/products/lite-bbe-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
@@ -74,11 +73,11 @@ function FullCourseSubjects() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                2000+ tasks · Full access
+                950+ tasks · Lite access
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Full Course
+              Lite Course
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">Choose a subject to begin.</p>
           </div>
@@ -117,13 +116,9 @@ function FullCourseSubjects() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
-                  {s.id === "economics" || s.id === "math" ? (
+                  {s.id === "math" ? (
                     <Link
-                      to={
-                        s.id === "economics"
-                          ? "/products/full-course-economics"
-                          : "/products/full-course-math"
-                      }
+                      to="/products/lite-bbe-course-math"
                       className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                       style={{
                         backgroundColor: s.accent,
@@ -149,7 +144,7 @@ function FullCourseSubjects() {
             ))}
           </div>
 
-          <div className="mt-6 space-y-6">
+          <div className="mt-6">
             <Link
               to="/mock-exams"
               className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
@@ -157,12 +152,11 @@ function FullCourseSubjects() {
             >
               <div>
                 <span className="mb-2 inline-block rounded-full bg-[#C2703A] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-                  Full simulation
+                  Exam simulation
                 </span>
                 <h2 className="font-display text-xl font-semibold text-foreground">Mock Exams</h2>
                 <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Full-length exam simulations: 34 tasks, 2 hours, 160 points, scored with the
-                  official wi2 method.
+                  Practice under realistic timing with the Lite Course mock exams.
                 </p>
               </div>
               <span
@@ -170,32 +164,6 @@ function FullCourseSubjects() {
                 style={{ backgroundColor: "#C2703A", boxShadow: "0 4px 14px -4px #C2703A80" }}
               >
                 Go to mock exams →
-              </span>
-            </Link>
-
-            <Link
-              to="/products/custom-mock-builder"
-              className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
-              style={{ borderTop: "4px solid #8B5E3C" }}
-            >
-              <div>
-                <span className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-[#8B5E3C] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-                  <Wand2 className="h-3 w-3" />
-                  Free access
-                </span>
-                <h2 className="font-display text-xl font-semibold text-foreground">
-                  Custom Mock Builder
-                </h2>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Build Economics mocks by textbook subtopic (2.1, 2.2, …) from the Full Course
-                  question bank.
-                </p>
-              </div>
-              <span
-                className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
-                style={{ backgroundColor: "#8B5E3C", boxShadow: "0 4px 14px -4px #8B5E3C80" }}
-              >
-                Open builder →
               </span>
             </Link>
           </div>

@@ -234,7 +234,7 @@ function LiteBbeCourseProduct() {
               </div>
               <EnrollButton
                 slug="lite-bbe-course"
-                to="/mock-exams"
+                to="/products/lite-bbe-course-subjects"
                 className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
                 style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
               >
