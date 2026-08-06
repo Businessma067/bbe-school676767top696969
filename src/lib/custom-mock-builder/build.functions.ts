@@ -41,12 +41,24 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/** Numeric book order: 2.3 → 4.5 → 6.2 (not lexicographic string sort). */
+function compareSubtopicId(a: string, b: string): number {
+  const pa = a.split(".").map((p) => Number(p) || 0);
+  const pb = b.split(".").map((p) => Number(p) || 0);
+  const n = Math.max(pa.length, pb.length);
+  for (let i = 0; i < n; i++) {
+    const d = (pa[i] ?? 0) - (pb[i] ?? 0);
+    if (d !== 0) return d;
+  }
+  return a.localeCompare(b);
+}
+
 /**
- * Random-order pick for a mock:
- * - each selected subtopic’s own pool is shuffled (never CASE …01, …02 order);
- * - picks are interleaved across selected subtopics when possible;
- * - final mock set is shuffled again so display order is random.
- * Falls back to a plain shuffle of the whole pool when rows are legacy chapter-level.
+ * Pick for a custom mock in book/subtopic order:
+ * - selected subtopics appear as contiguous blocks (e.g. all 2.3, then 4.5, then 6.2);
+ * - within each subtopic the pool is shuffled so CASE …01, …02 order is not fixed;
+ * - counts are distributed fairly across subtopics that still have available cases.
+ * Legacy chapter-level rows (not in the selected subtopic list) append at the end if needed.
  */
 function pickRandomFromSubtopics(
   pool: CaseRow[],
@@ -65,28 +77,43 @@ function pickRandomFromSubtopics(
     bySub.set(k, shuffle(list));
   }
 
-  const keys = shuffle([...bySub.keys()]);
-  const queues = keys.map((k) => [...(bySub.get(k) ?? [])]);
-  const picked: CaseRow[] = [];
-  const seen = new Set<string>();
+  const orderedKeys = [
+    ...[...new Set(subtopics)].filter((k) => (bySub.get(k)?.length ?? 0) > 0).sort(compareSubtopicId),
+    ...(["__mixed__"] as const).filter((k) => (bySub.get(k)?.length ?? 0) > 0),
+  ];
 
-  while (picked.length < questionCount) {
+  const allot = new Map<string, number>(orderedKeys.map((k) => [k, 0]));
+  let remaining = questionCount;
+  while (remaining > 0) {
     let progressed = false;
-    for (const q of queues) {
-      while (q.length > 0) {
-        const next = q.shift()!;
-        if (seen.has(next.id)) continue;
-        seen.add(next.id);
-        picked.push(next);
+    for (const k of orderedKeys) {
+      const used = allot.get(k) ?? 0;
+      const avail = bySub.get(k)?.length ?? 0;
+      if (used < avail) {
+        allot.set(k, used + 1);
+        remaining--;
         progressed = true;
-        break;
+        if (remaining === 0) break;
       }
-      if (picked.length >= questionCount) break;
     }
     if (!progressed) break;
   }
 
-  return shuffle(picked);
+  const picked: CaseRow[] = [];
+  const seen = new Set<string>();
+  for (const k of orderedKeys) {
+    const take = allot.get(k) ?? 0;
+    let taken = 0;
+    for (const row of bySub.get(k) ?? []) {
+      if (taken >= take) break;
+      if (seen.has(row.id)) continue;
+      seen.add(row.id);
+      picked.push(row);
+      taken++;
+    }
+  }
+
+  return picked.slice(0, questionCount);
 }
 
 function caseToExamQuestion(c: CaseRow, index: number, mockId: string): ExamQuestion {
@@ -122,7 +149,9 @@ export const buildCustomMock = createServerFn({ method: "POST" })
   .handler(async ({ data, context }) => {
     const enabled = getCustomMockBookChapters();
     const enabledSubIds = new Set(enabled.flatMap((c) => c.subtopics.map((s) => s.id)));
-    const subtopics = [...new Set(data.subtopics)].filter((id) => enabledSubIds.has(id)).sort();
+    const subtopics = [...new Set(data.subtopics)]
+      .filter((id) => enabledSubIds.has(id))
+      .sort(compareSubtopicId);
     if (subtopics.length === 0) {
       throw new Error("Select at least one book subtopic (e.g. 2.1, 2.2).");
     }
@@ -161,8 +190,8 @@ export const buildCustomMock = createServerFn({ method: "POST" })
       throw new Error("No Full Course questions found for the selected subtopics yet.");
     }
 
-    // Shuffle within each selected subsection so mocks never follow sort_order /
-    // CASE …01, …02 order; then interleave subtopics and shuffle the final set.
+    // Fair pick per subtopic; display order is contiguous blocks by book order
+    // (e.g. 2.3… then 4.5… then 6.2…). Within each block the cases are shuffled.
     const picked = pickRandomFromSubtopics(pool, subtopics, questionCount);
     if (picked.length < questionCount) {
       throw new Error(
