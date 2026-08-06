@@ -432,37 +432,41 @@ Year 2 | Equity=260 | Total assets=1001
 
 Evaluate the following economic assertions:', ARRAY['Total assets grew by more than 21.2% between Year 1 and Year 2.', 'Total equity grew by more than 24.7% between Year 1 and Year 2.', 'The equity ratio improved by more than 2.4 percentage points between Year 1 and Year 2.', 'Non-current liabilities amount to more than 73.2% of total equity in Year 1.', 'Working capital more than doubled between Year 1 and Year 2.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Total assets changed by about 15.5% between the two years.', 'TRUE — Total equity changed by about 28.7% between the two years.', 'TRUE — Equity ratio moved from 23.3% to 26.0%.', 'TRUE — Non-current liabilities are about 194.1% of equity in Year 1.', 'TRUE — Working capital moved from 24 to 53.'], '5/5', 25, 'full' ),
 ( '6.1', 'CASE 6.1.026', 'Equipment for Use Versus Resale', 'Analyze why amounts owed to suppliers are classified as a current liability. Evaluate the following economic assertions:', ARRAY['When a packaging line is acquired to be resold rather than used, it belongs among current assets as inventory.', 'A packaging line bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.', 'A packaging line that a dealer displays for sale is not a fixed asset of that dealer.', 'A concrete mixer kept in service by an operating business for more than one year is classified as a non-current tangible asset.', 'A concrete mixer held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Resale intent places the packaging line in inventory, a current-asset category.', 'TRUE — Multi-period operational benefit qualifies the packaging line as a tangible fixed asset.', 'TRUE — Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.', 'TRUE — Continued operational use beyond one year makes the concrete mixer a non-current tangible asset.', 'TRUE — Held for resale rather than use, the concrete mixer counts as inventory within current assets.'], '5/5', 26, 'full' ),
-( '6.1', 'CASE 6.1.027', 'Comparative Balance Sheet Analysis 27', 'Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.
+( '6.1', 'CASE 6.1.027', 'Liquidity From the Balance Sheet 27', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Equity and total assets"]]
-Year 1 | Equity=706 | Total assets=1282
-Year 2 | Equity=770 | Total assets=1402
+[[CHART type="pie" title="Asset composition"]]
+Buildings=479
+Machinery=155
+Patents, trademarks and licences=59
+Inventory=166
+Trade receivables=73
+Cash and cash equivalents=112
 [[/CHART]]
 
-| € in thousands | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| **ASSETS** | | |
-| Buildings | 465 | 511 |
-| Machinery | 277 | 301 |
-| Office equipment | 62 | 69 |
-| Patents, trademarks and licences | 78 | 78 |
-| Inventory | 271 | 306 |
-| Trade receivables | 80 | 85 |
-| Cash and cash equivalents | 49 | 52 |
-| Total assets | **1282** | **1402** |
-| **EQUITY** | | |
-| Share capital | 196 | 196 |
-| Retained earnings | 510 | 574 |
-| Total equity | **706** | **770** |
-| **LIABILITIES** | | |
-| Long-term bank loan | 366 | 404 |
-| Bonds payable | 56 | 60 |
-| Trade payables | 72 | 82 |
-| Bank overdraft | 82 | 86 |
-| Total liabilities | **576** | **632** |
-| Total equity and liabilities | **1282** | **1402** |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 479 |
+| Machinery | 155 |
+| Office equipment | 73 |
+| Patents, trademarks and licences | 59 |
+| Inventory | 166 |
+| Trade receivables | 73 |
+| Cash and cash equivalents | 112 |
+| Total assets | **1117** |
+| **EQUITY** | |
+| Share capital | 185 |
+| Retained earnings | 430 |
+| Total equity | **615** |
+| **LIABILITIES** | |
+| Long-term bank loan | 299 |
+| Bonds payable | 50 |
+| Trade payables | 80 |
+| Bank overdraft | 73 |
+| Total liabilities | **502** |
+| Total equity and liabilities | **1117** |
 
-Evaluate the following economic assertions:', ARRAY['Non-current liabilities amount to less than 113.9% of total equity in Year 2 (see the extract prepared for case 6.1.027).', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 21.9% in Year 1 (see the extract prepared for case 6.1.027).', 'Retained earnings grew faster than total equity as a whole between Year 1 and Year 2 (see the extract prepared for case 6.1.027).', 'Trade payables of €82 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year (see the extract prepared for case 6.1.027).', 'Total liabilities grew by more than 9% between Year 1 and Year 2 (see the extract prepared for case 6.1.027).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Non-current liabilities are about 60.3% of equity in Year 2.', 'TRUE — Long-term financing covers non-current assets by about 27.9% in Year 1.', 'TRUE — Retained earnings growth ≈ 12.5% versus total equity growth ≈ 9.1%.', 'TRUE — Trade payables are a current liability regardless of the amount.', 'TRUE — Total liabilities changed by about 9.7% between the two years.'], '5/5', 27, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.31.', 'Working capital of €198 thousand is positive on this balance sheet.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.65 times over.', 'Inventory make up more than 35% of current assets.', 'Trade receivables make up less than 52.9% of current assets.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio ≈ 2.29.', 'TRUE — Working capital = 198.', 'TRUE — Acid-test ratio ≈ 1.21.', 'TRUE — Inventory are about 47.3% of current assets.', 'TRUE — Trade receivables are about 20.8% of current assets.'], '5/5', 27, 'full' ),
 ( '6.1', 'CASE 6.1.028', 'Inventory as a Current Asset', 'Review why long-term bank loans and corporate bonds are classified as non-current liabilities. Evaluate the following economic assertions:', ARRAY['The same concrete mixer may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.', 'Classifying a concrete mixer as a non-current asset depends on management''s intention to use it in operations rather than to sell it quickly.', 'A packaging line held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.', 'When a concrete mixer is acquired to be resold rather than used, it belongs among current assets as inventory.', 'A concrete mixer bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Intended use versus resale intent, not physical form, decides whether the concrete mixer is non-current or current.', 'TRUE — An intention to use the concrete mixer over the long term is the deciding factor for non-current classification.', 'FALSE — Resale intent, not the dealer''s status as a business, places the packaging line in inventory rather than among non-current assets.', 'TRUE — Resale intent places the concrete mixer in inventory, a current-asset category.', 'TRUE — Multi-period operational benefit qualifies the concrete mixer as a tangible fixed asset.'], '5/5', 28, 'full' ),
 ( '6.1', 'CASE 6.1.029', 'Trade Receivables Explained', 'Consider a dairy processor that owns its pasteurising equipment while owing suppliers for recently delivered packaging materials. Evaluate the following economic assertions:', ARRAY['A concrete mixer that a dealer displays for sale is not a fixed asset of that dealer.', 'A laptop computer kept in service by an operating business for more than one year is classified as a non-current tangible asset.', 'A laptop computer held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.', 'The same packaging line must always be classified identically on every balance sheet regardless of how it is held.', 'The same laptop computer may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.', 'TRUE — Continued operational use beyond one year makes the laptop computer a non-current tangible asset.', 'TRUE — Held for resale rather than use, the laptop computer counts as inventory within current assets.', 'FALSE — Classification of the packaging line depends on whether it is used or held for resale, so identical items can differ across balance sheets.', 'TRUE — Intended use versus resale intent, not physical form, decides whether the laptop computer is non-current or current.'], '5/5', 29, 'full' ),
 ( '6.1', 'CASE 6.1.030', 'Liquidity From the Balance Sheet 30', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
@@ -499,7 +503,7 @@ Cash and cash equivalents=44
 | Total liabilities | **638** |
 | Total equity and liabilities | **977** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.31.', 'Working capital of €117 thousand is positive on this balance sheet.', 'The equity ratio is below 42.8%.', 'Inventory make up more than 55.4% of current assets.', 'Trade receivables make up less than 31.2% of current assets.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio ≈ 1.80.', 'TRUE — Working capital = 117.', 'TRUE — Equity ratio ≈ 34.7%.', 'TRUE — Inventory are about 57.6% of current assets.', 'TRUE — Trade receivables are about 25.8% of current assets.'], '5/5', 30, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Working capital of €117 thousand is positive on this balance sheet.', 'The equity ratio is below 42.8%.', 'Inventory make up more than 55.4% of current assets.', 'Trade receivables make up less than 31.2% of current assets.', 'Inventory of €152 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Working capital = 117.', 'TRUE — Equity ratio ≈ 34.7%.', 'TRUE — Inventory are about 57.6% of current assets.', 'TRUE — Trade receivables are about 25.8% of current assets.', 'TRUE — Inventory is always a current asset.'], '5/5', 30, 'full' ),
 ( '6.1', 'CASE 6.1.031', 'Asset Composition Chart 31', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -757,7 +761,7 @@ Cash and cash equivalents=31
 | Total liabilities | **424** |
 | Total equity and liabilities | **891** |
 
-Evaluate the following economic assertions:', ARRAY['Working capital of €43 thousand is positive on this balance sheet.', 'The current ratio exceeds 1.33.', 'The current ratio is below 0.63.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.65 times over.', 'The equity ratio is below 44%.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Working capital = 43.', 'FALSE — Current ratio ≈ 1.30.', 'FALSE — Current ratio ≈ 1.30.', 'FALSE — Acid-test ratio ≈ 0.64.', 'FALSE — Equity ratio ≈ 52.4%.'], '5/5', 40, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Working capital of €43 thousand is positive on this balance sheet.', 'The current ratio exceeds 1.33.', 'The current ratio is below 0.63.', 'The equity ratio is below 44%.', 'The debt ratio exceeds 54.2%.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Working capital = 43.', 'FALSE — Current ratio ≈ 1.30.', 'FALSE — Current ratio ≈ 1.30.', 'FALSE — Equity ratio ≈ 52.4%.', 'FALSE — Debt ratio ≈ 47.6%.'], '5/5', 40, 'full' ),
 ( '6.1', 'CASE 6.1.041', 'Non-Current Liabilities Overview', 'Review how equity acts as a buffer that absorbs losses before creditors are affected. Evaluate the following economic assertions:', ARRAY['When a refrigerated van is acquired to be resold rather than used, it belongs among current assets as inventory.', 'A refrigerated van bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.', 'A refrigerated van that a dealer displays for sale is not a fixed asset of that dealer.', 'A woodworking lathe kept in service by an operating business for more than one year is classified as a non-current tangible asset.', 'A woodworking lathe held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Resale intent places the refrigerated van in inventory, a current-asset category.', 'TRUE — Multi-period operational benefit qualifies the refrigerated van as a tangible fixed asset.', 'TRUE — Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.', 'TRUE — Continued operational use beyond one year makes the woodworking lathe a non-current tangible asset.', 'TRUE — Held for resale rather than use, the woodworking lathe counts as inventory within current assets.'], '4/5', 41, 'full' ),
 ( '6.1', 'CASE 6.1.042', 'Amounts Owed to Suppliers', 'Consider a private clinic that owns its diagnostic scanners while settling invoices from medical suppliers on standard credit terms. Evaluate the following economic assertions:', ARRAY['A packaging line used daily in a business''s own operations should be recorded as inventory because it wears out over time.', 'The same woodworking lathe may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.', 'Classifying a woodworking lathe as a non-current asset depends on management''s intention to use it in operations rather than to sell it quickly.', 'When a woodworking lathe is acquired to be resold rather than used, it belongs among current assets as inventory.', 'A woodworking lathe bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Continued operational use makes the packaging line a non-current asset; inventory is reserved for goods held for resale.', 'TRUE — Intended use versus resale intent, not physical form, decides whether the woodworking lathe is non-current or current.', 'TRUE — An intention to use the woodworking lathe over the long term is the deciding factor for non-current classification.', 'TRUE — Resale intent places the woodworking lathe in inventory, a current-asset category.', 'TRUE — Multi-period operational benefit qualifies the woodworking lathe as a tangible fixed asset.'], '5/5', 42, 'full' ),
 ( '6.1', 'CASE 6.1.043', 'Long-Term Loans as Non-Current Liabilities', 'Review how a credit purchase increases an asset and a liability at the same time. Evaluate the following economic assertions:', ARRAY['A woodworking lathe that a dealer displays for sale is not a fixed asset of that dealer.', 'An espresso machine kept in service by an operating business for more than one year is classified as a non-current tangible asset.', 'An espresso machine held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.', 'The same espresso machine may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.', 'Classifying an espresso machine as a non-current asset depends on management''s intention to use it in operations rather than to sell it quickly.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.', 'TRUE — Continued operational use beyond one year makes the espresso machine a non-current tangible asset.', 'TRUE — Held for resale rather than use, the espresso machine counts as inventory within current assets.', 'TRUE — Intended use versus resale intent, not physical form, decides whether the espresso machine is non-current or current.', 'TRUE — An intention to use the espresso machine over the long term is the deciding factor for non-current classification.'], '2/5', 43, 'full' ),
@@ -1552,1134 +1556,1134 @@ Evaluate the following economic assertions:', ARRAY['Working capital of €48 th
 ( '6.1', 'CASE 6.1.084', 'Share Price and Market Capitalisation 84', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=25
-March | Price=23
-April | Price=24
-May | Price=23
-June | Price=20
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=62000
-February | Volume=21000
-March | Volume=73000
-April | Volume=12000
-May | Volume=65000
-June | Volume=38000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 641,000 | 62,000 |
-| February | 25 | 641,000 | 21,000 |
-| March | 23 | 641,000 | 73,000 |
-| April | 24 | 641,000 | 12,000 |
-| May | 23 | 641,000 | 65,000 |
-| June | 20 | 641,000 | 38,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 279 |
-| Shares outstanding | 641,000 |
-| Total shares traded (six months) | 271,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.6 million.', 'Earnings per share exceeds €0.33.', 'Highest closing price is more than 17.1% above the lowest.', 'Total shares traded over six months exceed 25.2% of shares outstanding.', 'Peak monthly share turnover exceeds 45,166 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €12.8 million.', 'TRUE — Earnings per share ≈ €0.44.', 'TRUE — Range €20–€25.', 'TRUE — Turnover ≈ 42.3% of shares outstanding.', 'TRUE — Peak monthly volume = 73,000.'], '3/5', 84, 'full' ),
-( '6.1', 'CASE 6.1.085', 'Listed Company Performance Charts 85', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
 January | Price=29
 February | Price=28
-March | Price=26
-April | Price=28
-May | Price=30
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=13000
-February | Volume=18000
-March | Volume=65000
-April | Volume=41000
-May | Volume=53000
-June | Volume=60000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 692,000 | 13,000 |
-| February | 28 | 692,000 | 18,000 |
-| March | 26 | 692,000 | 65,000 |
-| April | 28 | 692,000 | 41,000 |
-| May | 30 | 692,000 | 53,000 |
-| June | 28 | 692,000 | 60,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 234 |
-| Shares outstanding | 692,000 |
-| Total shares traded (six months) | 250,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €18.4 million.', 'Earnings per share exceeds €0.28.', 'Total shares traded over six months exceed 17.9% of shares outstanding.', 'Peak monthly share turnover exceeds 50,402 shares.', 'Shares outstanding stay at 692,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €19.4 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Turnover ≈ 36.1% of shares outstanding.', 'TRUE — Peak monthly volume = 65,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 85, 'full' ),
-( '6.1', 'CASE 6.1.086', 'Total Equity and Liabilities Identity', 'Analyze how a licence held for long-term use is classified as an intangible non-current asset. Evaluate the following economic assertions:', ARRAY['Classifying a printing press as a non-current asset depends mainly on its purchase price rather than on management''s intended use.', 'A printing press acquired for resale still counts among non-current assets as long as it remains unsold for several months.', 'A trading permit lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Although a trading permit cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A printing press used daily in a business''s own operations should be recorded as inventory because it wears out over time.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Intended use, not purchase price, drives the non-current classification of the printing press.', 'FALSE — Resale intent keeps the printing press in inventory as a current asset regardless of how long it stays unsold.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a trading permit as non-current.', 'TRUE — Long-term value places an intangible trading permit among non-current rather than current assets.', 'FALSE — Continued operational use makes the printing press a non-current asset; inventory is reserved for goods held for resale.'], '3/5', 86, 'full' ),
-( '6.1', 'CASE 6.1.087', 'Share Price and Market Capitalisation 87', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=20
-March | Price=22
-April | Price=21
-May | Price=22
-June | Price=21
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=25000
-February | Volume=45000
-March | Volume=51000
-April | Volume=57000
-May | Volume=17000
-June | Volume=33000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 408,000 | 25,000 |
-| February | 20 | 408,000 | 45,000 |
-| March | 22 | 408,000 | 51,000 |
-| April | 21 | 408,000 | 57,000 |
-| May | 22 | 408,000 | 17,000 |
-| June | 21 | 408,000 | 33,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 252 |
-| Shares outstanding | 408,000 |
-| Total shares traded (six months) | 228,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7.2 million.', 'Earnings per share exceeds €0.53.', 'Total shares traded over six months exceed 23.2% of shares outstanding.', 'Peak monthly share turnover exceeds 36,577 shares.', 'Closing price rose in more than half of the month-to-month steps.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €8.6 million.', 'TRUE — Earnings per share ≈ €0.62.', 'TRUE — Turnover ≈ 55.9% of shares outstanding.', 'TRUE — Peak monthly volume = 57,000.', 'TRUE — Rose in 3 of 5 steps.'], '4/5', 87, 'full' ),
-( '6.1', 'CASE 6.1.088', 'Physical Form and Asset Classification', 'Review how a customer relationship acquired in a takeover can be recognised as an intangible non-current asset. Evaluate the following economic assertions:', ARRAY['Once a dealer sells a printing press from its stock, the buyer must continue to record it as inventory.', 'A trading permit is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a trading permit from being classified as a non-current asset.', 'A conveyor belt used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.', 'A trading permit acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — A buyer intending to use the printing press in operations records it as a non-current asset, not inventory, after purchase.', 'TRUE — Intangible and tangible non-current assets, including a trading permit, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a trading permit as non-current.', 'FALSE — Long-term operational use makes the conveyor belt a non-current tangible asset, not inventory.', 'TRUE — Multi-year protective or operational value groups a trading permit with intangible non-current assets.'], '2/5', 88, 'full' ),
-( '6.1', 'CASE 6.1.089', 'Earnings Per Share From Reported Figures 89', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=18
-April | Price=19
-May | Price=19
-June | Price=18
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=70000
-February | Volume=46000
-March | Volume=57000
-April | Volume=13000
-May | Volume=51000
-June | Volume=40000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 559,000 | 70,000 |
-| February | 18 | 559,000 | 46,000 |
-| March | 18 | 559,000 | 57,000 |
-| April | 19 | 559,000 | 13,000 |
-| May | 19 | 559,000 | 51,000 |
-| June | 18 | 559,000 | 40,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 249 |
-| Shares outstanding | 559,000 |
-| Total shares traded (six months) | 277,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 19.6% from first to last month.', 'Market capitalisation rose by more than 34.2% over the period.', 'Market capitalisation at the last month exceeds €9 million.', 'Highest closing price is more than 15.2% above the lowest.', 'Share turnover peaked in the same month as the highest closing price.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 5.9%.', 'FALSE — €9.5m → €10.1m.', 'TRUE — Market capitalisation ≈ €10.1 million.', 'FALSE — Range €17–€19.', 'FALSE — Peak price month vs peak volume month.'], '5/5', 89, 'full' ),
-( '6.1', 'CASE 6.1.090', 'Share Price and Market Capitalisation 90', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=25
-March | Price=23
-April | Price=22
-May | Price=23
-June | Price=25
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=18000
-February | Volume=37000
-March | Volume=33000
-April | Volume=34000
-May | Volume=66000
-June | Volume=15000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 718,000 | 18,000 |
-| February | 25 | 718,000 | 37,000 |
-| March | 23 | 718,000 | 33,000 |
-| April | 22 | 718,000 | 34,000 |
-| May | 23 | 718,000 | 66,000 |
-| June | 25 | 718,000 | 15,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 193 |
-| Shares outstanding | 718,000 |
-| Total shares traded (six months) | 203,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14.4 million.', 'Earnings per share exceeds €0.19.', 'Total shares traded over six months exceed 12.6% of shares outstanding.', 'Peak monthly share turnover exceeds 40,148 shares.', 'Shares outstanding stay at 718,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €17.9 million.', 'TRUE — Earnings per share ≈ €0.27.', 'TRUE — Turnover ≈ 28.3% of shares outstanding.', 'TRUE — Peak monthly volume = 66,000.', 'TRUE — Shares outstanding unchanged.'], '5/5', 90, 'full' ),
-( '6.1', 'CASE 6.1.091', 'Listed Company Performance Charts 91', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=14
-March | Price=14
-April | Price=14
-May | Price=16
+March | Price=24
+April | Price=23
+May | Price=20
 June | Price=17
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=20000
-February | Volume=34000
-March | Volume=39000
-April | Volume=52000
-May | Volume=37000
-June | Volume=74000
+January | Volume=78000
+February | Volume=29000
+March | Volume=92000
+April | Volume=18000
+May | Volume=83000
+June | Volume=50000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 501,000 | 20,000 |
-| February | 14 | 501,000 | 34,000 |
-| March | 14 | 501,000 | 39,000 |
-| April | 14 | 501,000 | 52,000 |
-| May | 16 | 501,000 | 37,000 |
-| June | 17 | 501,000 | 74,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 29 | 78,000 |
+| February | 28 | 29,000 |
+| March | 24 | 92,000 |
+| April | 23 | 18,000 |
+| May | 20 | 83,000 |
+| June | 17 | 50,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 231 |
-| Shares outstanding | 501,000 |
-| Total shares traded (six months) | 256,000 |
+| Operating result (€ thousands) | 279 |
+| Shares outstanding | 641,000 |
+| Total shares traded (six months) | 350,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €6.7 million.', 'The closing share price rose by more than 22.1% from first to last month.', 'Market capitalisation rose by more than 29.7% over the period.', 'Earnings per share exceeds €0.38.', 'Highest closing price is more than 39.9% above the lowest.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Market capitalisation ≈ €8.5 million.', 'FALSE — Price change ≈ 13.3%.', 'FALSE — €7.5m → €8.5m.', 'TRUE — Earnings per share ≈ €0.46.', 'FALSE — Range €14–€17.'], '5/5', 91, 'full' ),
-( '6.1', 'CASE 6.1.092', 'Earnings Per Share From Reported Figures 92', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9 million.', 'Earnings per share exceeds €0.33.', 'Highest closing price is more than 17.1% above the lowest.', 'Total shares traded over six months exceed 25.2% of shares outstanding.', 'Peak monthly share turnover exceeds 56,921 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.9 million.', 'TRUE — Earnings per share ≈ €0.44.', 'TRUE — Range €17–€29.', 'TRUE — Turnover ≈ 54.6% of shares outstanding.', 'TRUE — Peak monthly volume = 92,000.'], '3/5', 84, 'full' ),
+( '6.1', 'CASE 6.1.085', 'Listed Company Performance Charts 85', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=26
-February | Price=26
-March | Price=24
-April | Price=27
-May | Price=26
-June | Price=25
+January | Price=38
+February | Price=38
+March | Price=38
+April | Price=40
+May | Price=42
+June | Price=48
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=21000
-February | Volume=56000
-March | Volume=38000
-April | Volume=64000
-May | Volume=70000
-June | Volume=58000
+January | Volume=19000
+February | Volume=26000
+March | Volume=83000
+April | Volume=53000
+May | Volume=68000
+June | Volume=77000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 26 | 703,000 | 21,000 |
-| February | 26 | 703,000 | 56,000 |
-| March | 24 | 703,000 | 38,000 |
-| April | 27 | 703,000 | 64,000 |
-| May | 26 | 703,000 | 70,000 |
-| June | 25 | 703,000 | 58,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 19,000 |
+| February | 38 | 26,000 |
+| March | 38 | 83,000 |
+| April | 40 | 53,000 |
+| May | 42 | 68,000 |
+| June | 48 | 77,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 305 |
-| Shares outstanding | 703,000 |
-| Total shares traded (six months) | 307,000 |
+| Operating result (€ thousands) | 234 |
+| Shares outstanding | 692,000 |
+| Total shares traded (six months) | 326,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 11.5% from first to last month.', 'Market capitalisation at the last month exceeds €13.6 million.', 'Earnings per share exceeds €0.32.', 'Total shares traded over six months exceed 16% of shares outstanding.', 'Peak monthly share turnover exceeds 62,216 shares.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -3.8%.', 'TRUE — Market capitalisation ≈ €17.6 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Turnover ≈ 43.7% of shares outstanding.', 'TRUE — Peak monthly volume = 70,000.'], '5/5', 92, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 26% from first to last month.', 'Market capitalisation at the last month exceeds €31.5 million.', 'Earnings per share exceeds €0.28.', 'Total shares traded over six months exceed 17.9% of shares outstanding.', 'Peak monthly share turnover exceeds 64,359 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 26.3%.', 'TRUE — Market capitalisation ≈ €33.2 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Turnover ≈ 47.1% of shares outstanding.', 'TRUE — Peak monthly volume = 83,000.'], '2/5', 85, 'full' ),
+( '6.1', 'CASE 6.1.086', 'Total Equity and Liabilities Identity', 'Analyze how a licence held for long-term use is classified as an intangible non-current asset. Evaluate the following economic assertions:', ARRAY['Classifying a printing press as a non-current asset depends mainly on its purchase price rather than on management''s intended use.', 'A printing press acquired for resale still counts among non-current assets as long as it remains unsold for several months.', 'A trading permit lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Although a trading permit cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A printing press used daily in a business''s own operations should be recorded as inventory because it wears out over time.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Intended use, not purchase price, drives the non-current classification of the printing press.', 'FALSE — Resale intent keeps the printing press in inventory as a current asset regardless of how long it stays unsold.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a trading permit as non-current.', 'TRUE — Long-term value places an intangible trading permit among non-current rather than current assets.', 'FALSE — Continued operational use makes the printing press a non-current asset; inventory is reserved for goods held for resale.'], '3/5', 86, 'full' ),
+( '6.1', 'CASE 6.1.087', 'Share Price and Market Capitalisation 87', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=25
+February | Price=25
+March | Price=25
+April | Price=24
+May | Price=24
+June | Price=29
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=34000
+February | Volume=58000
+March | Volume=66000
+April | Volume=73000
+May | Volume=24000
+June | Volume=44000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 34,000 |
+| February | 25 | 58,000 |
+| March | 25 | 66,000 |
+| April | 24 | 73,000 |
+| May | 24 | 24,000 |
+| June | 29 | 44,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 252 |
+| Shares outstanding | 408,000 |
+| Total shares traded (six months) | 299,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.9 million.', 'Earnings per share exceeds €0.53.', 'Total shares traded over six months exceed 23.2% of shares outstanding.', 'Peak monthly share turnover exceeds 46,844 shares.', 'Shares outstanding equal 408,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €11.8 million.', 'TRUE — Earnings per share ≈ €0.62.', 'TRUE — Turnover ≈ 73.3% of shares outstanding.', 'TRUE — Peak monthly volume = 73,000.', 'TRUE — Shares outstanding = 408,000.'], '4/5', 87, 'full' ),
+( '6.1', 'CASE 6.1.088', 'Physical Form and Asset Classification', 'Review how a customer relationship acquired in a takeover can be recognised as an intangible non-current asset. Evaluate the following economic assertions:', ARRAY['Once a dealer sells a printing press from its stock, the buyer must continue to record it as inventory.', 'A trading permit is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a trading permit from being classified as a non-current asset.', 'A conveyor belt used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.', 'A trading permit acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — A buyer intending to use the printing press in operations records it as a non-current asset, not inventory, after purchase.', 'TRUE — Intangible and tangible non-current assets, including a trading permit, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a trading permit as non-current.', 'FALSE — Long-term operational use makes the conveyor belt a non-current tangible asset, not inventory.', 'TRUE — Multi-year protective or operational value groups a trading permit with intangible non-current assets.'], '2/5', 88, 'full' ),
+( '6.1', 'CASE 6.1.089', 'Earnings Per Share From Reported Figures 89', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=24
+February | Price=26
+March | Price=27
+April | Price=29
+May | Price=31
+June | Price=31
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=89000
+February | Volume=59000
+March | Volume=72000
+April | Volume=20000
+May | Volume=65000
+June | Volume=52000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 89,000 |
+| February | 26 | 59,000 |
+| March | 27 | 72,000 |
+| April | 29 | 20,000 |
+| May | 31 | 65,000 |
+| June | 31 | 52,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 249 |
+| Shares outstanding | 559,000 |
+| Total shares traded (six months) | 357,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 34.2% over the period.', 'Share turnover peaked in the same month as the highest closing price.', 'The closing share price rose by more than 19.6% from first to last month.', 'The last closing price is below the first.', 'Operating result is below €211 thousand.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — €13.4m → €17.3m.', 'FALSE — Peak price month vs peak volume month.', 'TRUE — Price change ≈ 29.2%.', 'FALSE — 24 → 31.', 'FALSE — Operating result = 249.'], '5/5', 89, 'full' ),
+( '6.1', 'CASE 6.1.090', 'Share Price and Market Capitalisation 90', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=36
+February | Price=33
+March | Price=31
+April | Price=29
+May | Price=29
+June | Price=29
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=26000
+February | Volume=48000
+March | Volume=44000
+April | Volume=45000
+May | Volume=84000
+June | Volume=22000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 26,000 |
+| February | 33 | 48,000 |
+| March | 31 | 44,000 |
+| April | 29 | 45,000 |
+| May | 29 | 84,000 |
+| June | 29 | 22,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 193 |
+| Shares outstanding | 718,000 |
+| Total shares traded (six months) | 269,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €16.7 million.', 'Earnings per share exceeds €0.19.', 'Total shares traded over six months exceed 12.6% of shares outstanding.', 'Peak monthly share turnover exceeds 51,097 shares.', 'Shares outstanding equal 718,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €20.8 million.', 'TRUE — Earnings per share ≈ €0.27.', 'TRUE — Turnover ≈ 37.5% of shares outstanding.', 'TRUE — Peak monthly volume = 84,000.', 'TRUE — Shares outstanding = 718,000.'], '5/5', 90, 'full' ),
+( '6.1', 'CASE 6.1.091', 'Listed Company Performance Charts 91', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=21
+February | Price=20
+March | Price=20
+April | Price=19
+May | Price=19
+June | Price=24
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=27000
+February | Volume=45000
+March | Volume=51000
+April | Volume=67000
+May | Volume=49000
+June | Volume=93000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 27,000 |
+| February | 20 | 45,000 |
+| March | 20 | 51,000 |
+| April | 19 | 67,000 |
+| May | 19 | 49,000 |
+| June | 24 | 93,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 231 |
+| Shares outstanding | 501,000 |
+| Total shares traded (six months) | 332,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.4 million.', 'The closing share price rose by more than 22.1% from first to last month.', 'Market capitalisation rose by more than 29.7% over the period.', 'Earnings per share exceeds €0.38.', 'Highest closing price is more than 39.9% above the lowest.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Market capitalisation ≈ €12.0 million.', 'FALSE — Price change ≈ 14.3%.', 'FALSE — €10.5m → €12.0m.', 'TRUE — Earnings per share ≈ €0.46.', 'FALSE — Range €19–€24.'], '5/5', 91, 'full' ),
+( '6.1', 'CASE 6.1.092', 'Earnings Per Share From Reported Figures 92', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=35
+February | Price=37
+March | Price=37
+April | Price=41
+May | Price=41
+June | Price=42
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=29000
+February | Volume=71000
+March | Volume=50000
+April | Volume=81000
+May | Volume=89000
+June | Volume=74000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 29,000 |
+| February | 37 | 71,000 |
+| March | 37 | 50,000 |
+| April | 41 | 81,000 |
+| May | 41 | 89,000 |
+| June | 42 | 74,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 305 |
+| Shares outstanding | 703,000 |
+| Total shares traded (six months) | 394,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 38.5% above the lowest.', 'The closing share price rose by more than 11.5% from first to last month.', 'Market capitalisation at the last month exceeds €22.8 million.', 'Market capitalisation rose by more than 12.1% over the period.', 'Earnings per share exceeds €0.32.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Range €35–€42.', 'TRUE — Price change ≈ 20.0%.', 'TRUE — Market capitalisation ≈ €29.5 million.', 'TRUE — €24.6m → €29.5m.', 'TRUE — Earnings per share ≈ €0.43.'], '5/5', 92, 'full' ),
 ( '6.1', 'CASE 6.1.093', 'Operating Cycle and Current Assets', 'Consider a private clinic that owns its diagnostic scanners while settling invoices from medical suppliers on standard credit terms. Evaluate the following economic assertions:', ARRAY['A trading permit is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'A service mark lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Although a service mark cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A service mark is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a service mark from being classified as a non-current asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Because a trading permit is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a service mark as non-current.', 'TRUE — Long-term value places an intangible service mark among non-current rather than current assets.', 'TRUE — Intangible and tangible non-current assets, including a service mark, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a service mark as non-current.'], '5/5', 93, 'full' ),
 ( '6.1', 'CASE 6.1.094', 'Benefit Period and Non-Current Assets', 'Review how a bank overdraft is classified as a current liability. Evaluate the following economic assertions:', ARRAY['A service mark acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.', 'A service mark is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'A proprietary formula lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Although a proprietary formula cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A conveyor belt held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Multi-year protective or operational value groups a service mark with intangible non-current assets.', 'TRUE — Because a service mark is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a proprietary formula as non-current.', 'TRUE — Long-term value places an intangible proprietary formula among non-current rather than current assets.', 'FALSE — Resale intent, not the dealer''s status as a business, places the conveyor belt in inventory rather than among non-current assets.'], '5/5', 94, 'full' ),
 ( '6.1', 'CASE 6.1.095', 'Earnings Per Share From Reported Figures 95', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=34
-February | Price=33
-March | Price=31
-April | Price=31
-May | Price=33
-June | Price=30
+January | Price=41
+February | Price=41
+March | Price=39
+April | Price=40
+May | Price=42
+June | Price=49
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=37000
-February | Volume=54000
-March | Volume=49000
-April | Volume=34000
-May | Volume=51000
-June | Volume=36000
+January | Volume=49000
+February | Volume=70000
+March | Volume=63000
+April | Volume=44000
+May | Volume=66000
+June | Volume=47000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 34 | 646,000 | 37,000 |
-| February | 33 | 646,000 | 54,000 |
-| March | 31 | 646,000 | 49,000 |
-| April | 31 | 646,000 | 34,000 |
-| May | 33 | 646,000 | 51,000 |
-| June | 30 | 646,000 | 36,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 41 | 49,000 |
+| February | 41 | 70,000 |
+| March | 39 | 63,000 |
+| April | 40 | 44,000 |
+| May | 42 | 66,000 |
+| June | 49 | 47,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 265 |
+| Operating result (€ thousands) | 265 |
 | Shares outstanding | 646,000 |
-| Total shares traded (six months) | 261,000 |
+| Total shares traded (six months) | 339,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €17.5 million.', 'Total shares traded over six months exceed 27.6% of shares outstanding.', 'Peak monthly share turnover exceeds 47,464 shares.', 'The closing share price rose by more than 10.2% from first to last month.', 'Shares outstanding stay at 646,000 every month.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €19.4 million.', 'TRUE — Turnover ≈ 40.4% of shares outstanding.', 'TRUE — Peak monthly volume = 54,000.', 'FALSE — Price change ≈ -11.8%.', 'TRUE — Shares outstanding unchanged.'], '3/5', 95, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.2% from first to last month.', 'Market capitalisation at the last month exceeds €28.7 million.', 'Total shares traded over six months exceed 27.6% of shares outstanding.', 'Market capitalisation rose by more than 22.4% over the period.', 'Peak monthly share turnover exceeds 61,528 shares.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Price change ≈ 19.5%.', 'TRUE — Market capitalisation ≈ €31.7 million.', 'TRUE — Turnover ≈ 52.5% of shares outstanding.', 'FALSE — €26.5m → €31.7m.', 'TRUE — Peak monthly volume = 70,000.'], '3/5', 95, 'full' ),
 ( '6.1', 'CASE 6.1.096', 'Share Price and Market Capitalisation 96', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=28
-March | Price=29
-April | Price=31
-May | Price=30
-June | Price=32
+January | Price=20
+February | Price=20
+March | Price=21
+April | Price=20
+May | Price=19
+June | Price=24
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=45000
-February | Volume=31000
-March | Volume=46000
-April | Volume=73000
-May | Volume=67000
-June | Volume=27000
+January | Volume=40000
+February | Volume=70000
+March | Volume=75000
+April | Volume=38000
+May | Volume=90000
+June | Volume=73000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 598,000 | 45,000 |
-| February | 28 | 598,000 | 31,000 |
-| March | 29 | 598,000 | 46,000 |
-| April | 31 | 598,000 | 73,000 |
-| May | 30 | 598,000 | 67,000 |
-| June | 32 | 598,000 | 27,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 40,000 |
+| February | 20 | 70,000 |
+| March | 21 | 75,000 |
+| April | 20 | 38,000 |
+| May | 19 | 90,000 |
+| June | 24 | 73,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 270 |
-| Shares outstanding | 598,000 |
-| Total shares traded (six months) | 289,000 |
+| Operating result (€ thousands) | 235 |
+| Shares outstanding | 423,000 |
+| Total shares traded (six months) | 386,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 26.1% from first to last month.', 'Market capitalisation rose by more than 17% over the period.', 'Market capitalisation at the last month exceeds €16.1 million.', 'Highest closing price is more than 44% above the lowest.', 'The last closing price is below the first.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 14.3%.', 'FALSE — €16.7m → €19.1m.', 'TRUE — Market capitalisation ≈ €19.1 million.', 'FALSE — Range €28–€32.', 'FALSE — 28 → 32.'], '4/5', 96, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 29.5% from first to last month.', 'Market capitalisation rose by more than 23.8% over the period.', 'Earnings per share exceeds €0.45.', 'Highest closing price is more than 31.4% above the lowest.', 'Closing price rose in more than half of the month-to-month steps.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 20.0%.', 'FALSE — €8.5m → €10.2m.', 'TRUE — Earnings per share ≈ €0.56.', 'FALSE — Range €19–€24.', 'FALSE — Rose in 2 of 5 steps.'], '4/5', 96, 'full' ),
 ( '6.1', 'CASE 6.1.097', 'Listed Company Performance Charts 97', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=17
-March | Price=19
-April | Price=20
-May | Price=20
-June | Price=22
+January | Price=25
+February | Price=23
+March | Price=23
+April | Price=23
+May | Price=22
+June | Price=28
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=46000
-February | Volume=40000
-March | Volume=22000
-April | Volume=24000
-May | Volume=27000
-June | Volume=27000
+January | Volume=59000
+February | Volume=52000
+March | Volume=30000
+April | Volume=33000
+May | Volume=37000
+June | Volume=36000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 602,000 | 46,000 |
-| February | 17 | 602,000 | 40,000 |
-| March | 19 | 602,000 | 22,000 |
-| April | 20 | 602,000 | 24,000 |
-| May | 20 | 602,000 | 27,000 |
-| June | 22 | 602,000 | 27,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 59,000 |
+| February | 23 | 52,000 |
+| March | 23 | 30,000 |
+| April | 23 | 33,000 |
+| May | 22 | 37,000 |
+| June | 28 | 36,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 225 |
+| Operating result (€ thousands) | 225 |
 | Shares outstanding | 602,000 |
-| Total shares traded (six months) | 186,000 |
+| Total shares traded (six months) | 247,000 |
 
-Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 35.6% above the lowest (see the extract prepared for case 6.1.097).', 'Total shares traded over six months exceed 36.2% of shares outstanding (see the extract prepared for case 6.1.097).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.097).', 'The closing share price rose by more than 13.1% from first to last month (see the extract prepared for case 6.1.097).', 'The last closing price is below the first (see the extract prepared for case 6.1.097).'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Range €17–€22.', 'FALSE — Turnover ≈ 30.9% of shares outstanding.', 'FALSE — Peak price month vs peak volume month.', 'TRUE — Price change ≈ 15.8%.', 'FALSE — 19 → 22.'], '4/5', 97, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 13.1% from first to last month.', 'Highest closing price is more than 35.6% above the lowest.', 'Operating result is below €205 thousand.', 'Market capitalisation at the last month exceeds €12.7 million.', 'Lowest monthly share turnover is under half of the peak month.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ 12.0%.', 'FALSE — Range €22–€28.', 'FALSE — Operating result = 225.', 'TRUE — Market capitalisation ≈ €16.9 million.', 'FALSE — Low 30,000 vs peak 59,000.'], '4/5', 97, 'full' ),
 ( '6.1', 'CASE 6.1.098', 'Supplier Credit and Payables', 'Analyze how wages payable to employees are classified as a current liability. Evaluate the following economic assertions:', ARRAY['The same conveyor belt must always be classified identically on every balance sheet regardless of how it is held.', 'A proprietary formula is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a proprietary formula from being classified as a non-current asset.', 'Classifying a conveyor belt as a non-current asset depends mainly on its purchase price rather than on management''s intended use.', 'A conveyor belt acquired for resale still counts among non-current assets as long as it remains unsold for several months.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Classification of the conveyor belt depends on whether it is used or held for resale, so identical items can differ across balance sheets.', 'TRUE — Intangible and tangible non-current assets, including a proprietary formula, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a proprietary formula as non-current.', 'FALSE — Intended use, not purchase price, drives the non-current classification of the conveyor belt.', 'FALSE — Resale intent keeps the conveyor belt in inventory as a current asset regardless of how long it stays unsold.'], '3/5', 98, 'full' ),
 ( '6.1', 'CASE 6.1.099', 'Comparing Payables and Receivables', 'Review how tax payable to the authorities is classified as a current liability. Evaluate the following economic assertions:', ARRAY['A conveyor belt used daily in a business''s own operations should be recorded as inventory because it wears out over time.', 'Once a dealer sells a conveyor belt from its stock, the buyer must continue to record it as inventory.', 'An operating licence is excluded from non-current assets because it has no physical substance.', 'A proprietary formula acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.', 'A proprietary formula is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — Continued operational use makes the conveyor belt a non-current asset; inventory is reserved for goods held for resale.', 'FALSE — A buyer intending to use the conveyor belt in operations records it as a non-current asset, not inventory, after purchase.', 'FALSE — Physical substance is not required for non-current classification; an operating licence qualifies through its long-term value.', 'TRUE — Multi-year protective or operational value groups a proprietary formula with intangible non-current assets.', 'TRUE — Because a proprietary formula is not expected to convert into cash within the operating cycle, it is excluded from current assets.'], '5/5', 99, 'full' ),
 ( '6.1', 'CASE 6.1.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=11
-February | Price=11
-March | Price=11
-April | Price=12
-May | Price=13
-June | Price=14
+January | Price=16
+February | Price=15
+March | Price=14
+April | Price=13
+May | Price=12
+June | Price=11
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=48000
-February | Volume=24000
-March | Volume=43000
-April | Volume=42000
-May | Volume=61000
-June | Volume=42000
+January | Volume=61000
+February | Volume=33000
+March | Volume=56000
+April | Volume=54000
+May | Volume=77000
+June | Volume=55000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 11 | 464,000 | 48,000 |
-| February | 11 | 464,000 | 24,000 |
-| March | 11 | 464,000 | 43,000 |
-| April | 12 | 464,000 | 42,000 |
-| May | 13 | 464,000 | 61,000 |
-| June | 14 | 464,000 | 42,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 16 | 61,000 |
+| February | 15 | 33,000 |
+| March | 14 | 56,000 |
+| April | 13 | 54,000 |
+| May | 12 | 77,000 |
+| June | 11 | 55,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 184 |
+| Operating result (€ thousands) | 184 |
 | Shares outstanding | 464,000 |
-| Total shares traded (six months) | 260,000 |
+| Total shares traded (six months) | 336,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 23.8% from first to last month.', 'Market capitalisation at the last month exceeds €5.1 million.', 'Market capitalisation rose by more than 17.5% over the period.', 'Earnings per share exceeds €0.29.', 'Total shares traded over six months exceed 39.2% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 27.3%.', 'TRUE — Market capitalisation ≈ €6.5 million.', 'TRUE — €5.1m → €6.5m.', 'TRUE — Earnings per share ≈ €0.40.', 'TRUE — Turnover ≈ 56.0% of shares outstanding.'], '2/5', 100, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4 million.', 'Earnings per share exceeds €0.29.', 'Highest closing price is more than 30.4% above the lowest.', 'Total shares traded over six months exceed 39.2% of shares outstanding.', 'Peak monthly share turnover exceeds 50,599 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.1 million.', 'TRUE — Earnings per share ≈ €0.40.', 'TRUE — Range €11–€16.', 'TRUE — Turnover ≈ 72.4% of shares outstanding.', 'TRUE — Peak monthly volume = 77,000.'], '2/5', 100, 'full' ),
 ( '6.1', 'CASE 6.1.101', 'Vehicles as Fixed or Resale Assets', 'Consider a coffee roastery that owns its roasting drum for daily production while purchasing green coffee beans on credit from an overseas supplier. Evaluate the following economic assertions:', ARRAY['An operating licence is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'Because an operating licence cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'A concession right lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Non-current assets can never include an operating licence because that section is reserved strictly for tangible items such as machinery.', 'An operating licence is treated as inventory because it is intended for use rather than for display.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — An operating licence is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'FALSE — An operating licence with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a concession right as non-current.', 'FALSE — The non-current assets section includes intangible items such as an operating licence alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places an operating licence among non-current intangible assets, not inventory.'], '3/5', 101, 'full' ),
 ( '6.1', 'CASE 6.1.102', 'Cranes in Fixed Versus Current Assets', 'Review how a manufacturing firm''s balance sheet reflects both fixed assets and working capital items. Evaluate the following economic assertions:', ARRAY['Although a concession right cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A concession right is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a concession right from being classified as a non-current asset.', 'A concession right acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.', 'A concession right is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Long-term value places an intangible concession right among non-current rather than current assets.', 'TRUE — Intangible and tangible non-current assets, including a concession right, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a concession right as non-current.', 'TRUE — Multi-year protective or operational value groups a concession right with intangible non-current assets.', 'TRUE — Because a concession right is not expected to convert into cash within the operating cycle, it is excluded from current assets.'], '4/5', 102, 'full' ),
 ( '6.1', 'CASE 6.1.103', 'Listed Company Performance Charts 103', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=21
-March | Price=23
-April | Price=22
-May | Price=21
-June | Price=22
+January | Price=27
+February | Price=26
+March | Price=26
+April | Price=25
+May | Price=23
+June | Price=29
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=16000
-February | Volume=60000
-March | Volume=24000
-April | Volume=59000
-May | Volume=30000
-June | Volume=45000
+January | Volume=23000
+February | Volume=76000
+March | Volume=32000
+April | Volume=75000
+May | Volume=40000
+June | Volume=59000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 889,000 | 16,000 |
-| February | 21 | 889,000 | 60,000 |
-| March | 23 | 889,000 | 24,000 |
-| April | 22 | 889,000 | 59,000 |
-| May | 21 | 889,000 | 30,000 |
-| June | 22 | 889,000 | 45,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 23,000 |
+| February | 26 | 76,000 |
+| March | 26 | 32,000 |
+| April | 25 | 75,000 |
+| May | 23 | 40,000 |
+| June | 29 | 59,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 190 |
+| Operating result (€ thousands) | 190 |
 | Shares outstanding | 889,000 |
-| Total shares traded (six months) | 234,000 |
+| Total shares traded (six months) | 305,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.5% from first to last month.', 'Market capitalisation at the last month exceeds €16.3 million.', 'Earnings per share exceeds €0.15.', 'Peak monthly share turnover exceeds 41,335 shares.', 'Market capitalisation rose by more than 21.5% over the period.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Price change ≈ 4.8%.', 'TRUE — Market capitalisation ≈ €19.6 million.', 'TRUE — Earnings per share ≈ €0.21.', 'TRUE — Peak monthly volume = 60,000.', 'FALSE — €18.7m → €19.6m.'], '5/5', 103, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.5% from first to last month.', 'Market capitalisation at the last month exceeds €21.5 million.', 'Earnings per share exceeds €0.15.', 'Peak monthly share turnover exceeds 52,358 shares.', 'Market capitalisation rose by more than 21.5% over the period.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Price change ≈ 7.4%.', 'TRUE — Market capitalisation ≈ €25.8 million.', 'TRUE — Earnings per share ≈ €0.21.', 'TRUE — Peak monthly volume = 76,000.', 'FALSE — €24.0m → €25.8m.'], '5/5', 103, 'full' ),
 ( '6.1', 'CASE 6.1.104', 'Earnings Per Share From Reported Figures 104', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=18
-March | Price=16
-April | Price=15
-May | Price=15
-June | Price=17
+January | Price=27
+February | Price=28
+March | Price=28
+April | Price=28
+May | Price=30
+June | Price=33
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=35000
-March | Volume=68000
-April | Volume=34000
-May | Volume=60000
-June | Volume=47000
+January | Volume=57000
+February | Volume=46000
+March | Volume=86000
+April | Volume=45000
+May | Volume=76000
+June | Volume=61000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 629,000 | 44,000 |
-| February | 18 | 629,000 | 35,000 |
-| March | 16 | 629,000 | 68,000 |
-| April | 15 | 629,000 | 34,000 |
-| May | 15 | 629,000 | 60,000 |
-| June | 17 | 629,000 | 47,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 57,000 |
+| February | 28 | 46,000 |
+| March | 28 | 86,000 |
+| April | 28 | 45,000 |
+| May | 30 | 76,000 |
+| June | 33 | 61,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 217 |
+| Operating result (€ thousands) | 217 |
 | Shares outstanding | 629,000 |
-| Total shares traded (six months) | 288,000 |
+| Total shares traded (six months) | 371,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.7% from first to last month.', 'Market capitalisation at the last month exceeds €8.8 million.', 'Earnings per share exceeds €0.27.', 'Highest closing price is more than 16.2% above the lowest.', 'Total shares traded over six months exceed 14.2% of shares outstanding.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -10.5%.', 'TRUE — Market capitalisation ≈ €10.7 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Range €15–€19.', 'TRUE — Turnover ≈ 45.8% of shares outstanding.'], '3/5', 104, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 27.4% over the period.', 'The closing share price rose by more than 16.7% from first to last month.', 'Market capitalisation at the last month exceeds €17 million.', 'Earnings per share exceeds €0.27.', 'Highest closing price is more than 16.2% above the lowest.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — €17.0m → €20.8m.', 'TRUE — Price change ≈ 22.2%.', 'TRUE — Market capitalisation ≈ €20.8 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Range €27–€33.'], '3/5', 104, 'full' ),
 ( '6.1', 'CASE 6.1.105', 'Ovens Held for Use or Sale', 'Analyze how a retail chain''s balance sheet separates fixed shop fittings from seasonal inventory. Evaluate the following economic assertions:', ARRAY['An operating licence loses its non-current classification as soon as the business begins actively using it.', 'An exclusive distribution agreement lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.', 'Although an exclusive distribution agreement cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'An exclusive distribution agreement is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'A brand name is excluded from non-current assets because it has no physical substance.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Active use does not remove an operating licence''s non-current classification; it confirms the long-term benefit that justifies it.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying an exclusive distribution agreement as non-current.', 'TRUE — Long-term value places an intangible exclusive distribution agreement among non-current rather than current assets.', 'TRUE — Intangible and tangible non-current assets, including an exclusive distribution agreement, sit within the same balance sheet section.', 'FALSE — Physical substance is not required for non-current classification; a brand name qualifies through its long-term value.'], '5/5', 105, 'full' ),
 ( '6.1', 'CASE 6.1.106', 'Listed Company Performance Charts 106', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=35
-March | Price=34
-April | Price=34
-May | Price=30
-June | Price=27
+January | Price=37
+February | Price=38
+March | Price=36
+April | Price=35
+May | Price=32
+June | Price=29
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=38000
-February | Volume=64000
-March | Volume=46000
-April | Volume=59000
-May | Volume=55000
-June | Volume=59000
+January | Volume=49000
+February | Volume=81000
+March | Volume=59000
+April | Volume=75000
+May | Volume=70000
+June | Volume=76000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 633,000 | 38,000 |
-| February | 35 | 633,000 | 64,000 |
-| March | 34 | 633,000 | 46,000 |
-| April | 34 | 633,000 | 59,000 |
-| May | 30 | 633,000 | 55,000 |
-| June | 27 | 633,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 49,000 |
+| February | 38 | 81,000 |
+| March | 36 | 59,000 |
+| April | 35 | 75,000 |
+| May | 32 | 70,000 |
+| June | 29 | 76,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 301 |
+| Operating result (€ thousands) | 301 |
 | Shares outstanding | 633,000 |
-| Total shares traded (six months) | 321,000 |
+| Total shares traded (six months) | 410,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14.3 million.', 'Earnings per share exceeds €0.35.', 'The closing share price rose by more than 29% from first to last month.', 'Market capitalisation rose by more than 18.8% over the period.', 'Highest closing price is more than 40% above the lowest.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Earnings per share ≈ €0.48.', 'FALSE — Price change ≈ -12.9%.', 'FALSE — €19.6m → €17.1m.', 'FALSE — Range €27–€35.'], '2/5', 106, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €15.4 million.', 'Earnings per share exceeds €0.35.', 'The closing share price rose by more than 29% from first to last month.', 'Market capitalisation rose by more than 18.8% over the period.', 'Highest closing price is more than 40% above the lowest.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €18.4 million.', 'TRUE — Earnings per share ≈ €0.48.', 'FALSE — Price change ≈ -21.6%.', 'FALSE — €23.4m → €18.4m.', 'FALSE — Range €29–€38.'], '2/5', 106, 'full' ),
 ( '6.1', 'CASE 6.1.107', 'Earnings Per Share From Reported Figures 107', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=17
-March | Price=19
-April | Price=20
-May | Price=21
-June | Price=22
+January | Price=24
+February | Price=23
+March | Price=24
+April | Price=24
+May | Price=24
+June | Price=29
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=32000
-February | Volume=57000
-March | Volume=20000
-April | Volume=36000
-May | Volume=51000
-June | Volume=13000
+January | Volume=42000
+February | Volume=73000
+March | Volume=28000
+April | Volume=47000
+May | Volume=66000
+June | Volume=19000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 799,000 | 32,000 |
-| February | 17 | 799,000 | 57,000 |
-| March | 19 | 799,000 | 20,000 |
-| April | 20 | 799,000 | 36,000 |
-| May | 21 | 799,000 | 51,000 |
-| June | 22 | 799,000 | 13,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 42,000 |
+| February | 23 | 73,000 |
+| March | 24 | 28,000 |
+| April | 24 | 47,000 |
+| May | 24 | 66,000 |
+| June | 29 | 19,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 228 |
+| Operating result (€ thousands) | 228 |
 | Shares outstanding | 799,000 |
-| Total shares traded (six months) | 209,000 |
+| Total shares traded (six months) | 275,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 9.4% from first to last month.', 'Market capitalisation at the last month exceeds €16.2 million.', 'Earnings per share exceeds €0.25.', 'Market capitalisation rose by more than 30.8% over the period.', 'Highest closing price is more than 23.8% above the lowest.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Price change ≈ 29.4%.', 'TRUE — Market capitalisation ≈ €17.6 million.', 'TRUE — Earnings per share ≈ €0.29.', 'FALSE — €13.6m → €17.6m.', 'TRUE — Range €17–€22.'], '5/5', 107, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 9.4% from first to last month.', 'Market capitalisation at the last month exceeds €21.3 million.', 'Earnings per share exceeds €0.25.', 'Market capitalisation rose by more than 30.8% over the period.', 'Highest closing price is more than 23.8% above the lowest.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Price change ≈ 20.8%.', 'TRUE — Market capitalisation ≈ €23.2 million.', 'TRUE — Earnings per share ≈ €0.29.', 'FALSE — €19.2m → €23.2m.', 'TRUE — Range €23–€29.'], '5/5', 107, 'full' ),
 ( '6.1', 'CASE 6.1.108', 'Share Price and Market Capitalisation 108', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=15
-March | Price=13
+January | Price=18
+February | Price=17
+March | Price=15
 April | Price=13
-May | Price=11
-June | Price=11
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=31000
-February | Volume=18000
-March | Volume=61000
-April | Volume=13000
-May | Volume=43000
-June | Volume=52000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 504,000 | 31,000 |
-| February | 15 | 504,000 | 18,000 |
-| March | 13 | 504,000 | 61,000 |
-| April | 13 | 504,000 | 13,000 |
-| May | 11 | 504,000 | 43,000 |
-| June | 11 | 504,000 | 52,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 267 |
-| Shares outstanding | 504,000 |
-| Total shares traded (six months) | 218,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4.8 million.', 'Earnings per share exceeds €0.49.', 'The closing share price rose by more than 27.8% from first to last month.', 'Highest closing price is more than 17.8% above the lowest.', 'Total shares traded over six months exceed 10.7% of shares outstanding.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.5 million.', 'TRUE — Earnings per share ≈ €0.53.', 'FALSE — Price change ≈ -15.4%.', 'TRUE — Range €11–€15.', 'TRUE — Turnover ≈ 43.3% of shares outstanding.'], '4/5', 108, 'full' ),
-( '6.1', 'CASE 6.1.109', 'Looms and Asset Classification', 'Review how equity contributions differ from borrowed funds in their effect on a business''s balance sheet structure. Evaluate the following economic assertions:', ARRAY['The absence of physical form does not prevent an exclusive distribution agreement from being classified as a non-current asset.', 'A brand name is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'An exclusive distribution agreement acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.', 'An exclusive distribution agreement is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'A software platform licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Physical form is not a requirement for classifying an exclusive distribution agreement as non-current.', 'FALSE — A brand name is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — Multi-year protective or operational value groups an exclusive distribution agreement with intangible non-current assets.', 'TRUE — Because an exclusive distribution agreement is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a software platform licence as non-current.'], '2/5', 109, 'full' ),
-( '6.1', 'CASE 6.1.110', 'Earnings Per Share From Reported Figures 110', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=13
-March | Price=13
-April | Price=12
-May | Price=12
-June | Price=12
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=43000
-February | Volume=59000
-March | Volume=29000
-April | Volume=30000
-May | Volume=36000
-June | Volume=53000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 635,000 | 43,000 |
-| February | 13 | 635,000 | 59,000 |
-| March | 13 | 635,000 | 29,000 |
-| April | 12 | 635,000 | 30,000 |
-| May | 12 | 635,000 | 36,000 |
-| June | 12 | 635,000 | 53,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 197 |
-| Shares outstanding | 635,000 |
-| Total shares traded (six months) | 250,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 32.8% from first to last month (see the extract prepared for case 6.1.110).', 'Market capitalisation at the last month exceeds €6.7 million (see the extract prepared for case 6.1.110).', 'Market capitalisation rose by more than 26.1% over the period (see the extract prepared for case 6.1.110).', 'Highest closing price is more than 37.8% above the lowest (see the extract prepared for case 6.1.110).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.110).'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -14.3%.', 'TRUE — Market capitalisation ≈ €7.6 million.', 'FALSE — €8.9m → €7.6m.', 'FALSE — Range €12–€14.', 'FALSE — Peak price month vs peak volume month.'], '5/5', 110, 'full' ),
-( '6.1', 'CASE 6.1.111', 'Share Price and Market Capitalisation 111', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=25
-March | Price=22
-April | Price=21
-May | Price=23
-June | Price=22
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=65000
-February | Volume=43000
-March | Volume=13000
-April | Volume=74000
-May | Volume=54000
-June | Volume=52000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 501,000 | 65,000 |
-| February | 25 | 501,000 | 43,000 |
-| March | 22 | 501,000 | 13,000 |
-| April | 21 | 501,000 | 74,000 |
-| May | 23 | 501,000 | 54,000 |
-| June | 22 | 501,000 | 52,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 216 |
-| Shares outstanding | 501,000 |
-| Total shares traded (six months) | 301,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.2 million.', 'Earnings per share exceeds €0.37.', 'Total shares traded over six months exceed 32.5% of shares outstanding.', 'Peak monthly share turnover exceeds 64,138 shares.', 'Shares outstanding stay at 501,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €11.0 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Turnover ≈ 60.1% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.'], '3/5', 111, 'full' ),
-( '6.1', 'CASE 6.1.112', 'Tanks as Operating Equipment', 'Consider an orchard business that owns tractors for cultivation while holding harvested fruit in cold storage awaiting sale. Evaluate the following economic assertions:', ARRAY['Although a software platform licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A software platform licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a software platform licence from being classified as a non-current asset.', 'Because a brand name cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'A software platform licence acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Long-term value places an intangible software platform licence among non-current rather than current assets.', 'TRUE — Intangible and tangible non-current assets, including a software platform licence, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a software platform licence as non-current.', 'FALSE — A brand name with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'TRUE — Multi-year protective or operational value groups a software platform licence with intangible non-current assets.'], '5/5', 112, 'full' ),
-( '6.1', 'CASE 6.1.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=24
-March | Price=22
-April | Price=22
-May | Price=21
-June | Price=21
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=47000
-February | Volume=31000
-March | Volume=23000
-April | Volume=61000
-May | Volume=48000
-June | Volume=59000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 671,000 | 47,000 |
-| February | 24 | 671,000 | 31,000 |
-| March | 22 | 671,000 | 23,000 |
-| April | 22 | 671,000 | 61,000 |
-| May | 21 | 671,000 | 48,000 |
-| June | 21 | 671,000 | 59,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 185 |
-| Shares outstanding | 671,000 |
-| Total shares traded (six months) | 269,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.9% from first to last month.', 'Market capitalisation at the last month exceeds €11.7 million.', 'Total shares traded over six months exceed 31.5% of shares outstanding.', 'Shares outstanding stay at 671,000 every month.', 'Operating result is below €219 thousand.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -16.0%.', 'TRUE — Market capitalisation ≈ €14.1 million.', 'TRUE — Turnover ≈ 40.1% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 185.'], '5/5', 113, 'full' ),
-( '6.1', 'CASE 6.1.114', 'Tractors in Farm Business Balance Sheets', 'Review how owner''s equity is derived as the residual claim remaining once liabilities are deducted from assets. Evaluate the following economic assertions:', ARRAY['A software platform licence is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'Non-current assets can never include a brand name because that section is reserved strictly for tangible items such as machinery.', 'A brand name is treated as inventory because it is intended for use rather than for display.', 'A brand name loses its non-current classification as soon as the business begins actively using it.', 'A packaging manufacturer that takes out a ten-year bank loan repayable in more than one year classifies the obligation as a non-current liability.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Because a software platform licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'FALSE — The non-current assets section includes intangible items such as a brand name alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places a brand name among non-current intangible assets, not inventory.', 'FALSE — Active use does not remove a brand name''s non-current classification; it confirms the long-term benefit that justifies it.', 'TRUE — Repayment due beyond one year places the ten-year bank loan among the non-current liabilities of a packaging manufacturer.'], '4/5', 114, 'full' ),
-( '6.1', 'CASE 6.1.115', 'Listed Company Performance Charts 115', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=16
-February | Price=16
-March | Price=16
-April | Price=17
-May | Price=19
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=60000
-February | Volume=62000
-March | Volume=67000
-April | Volume=28000
-May | Volume=61000
-June | Volume=20000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 16 | 860,000 | 60,000 |
-| February | 16 | 860,000 | 62,000 |
-| March | 16 | 860,000 | 67,000 |
-| April | 17 | 860,000 | 28,000 |
-| May | 19 | 860,000 | 61,000 |
-| June | 17 | 860,000 | 20,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 226 |
-| Shares outstanding | 860,000 |
-| Total shares traded (six months) | 298,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.4 million.', 'Highest closing price is more than 16.6% above the lowest.', 'Total shares traded over six months exceed 16.9% of shares outstanding.', 'The closing share price rose by more than 23% from first to last month.', 'Peak monthly share turnover exceeds 56,728 shares.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €14.6 million.', 'TRUE — Range €16–€19.', 'TRUE — Turnover ≈ 34.7% of shares outstanding.', 'FALSE — Price change ≈ 6.3%.', 'TRUE — Peak monthly volume = 67,000.'], '3/5', 115, 'full' ),
-( '6.1', 'CASE 6.1.116', 'Earnings Per Share From Reported Figures 116', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=20
-April | Price=19
-May | Price=19
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=36000
-February | Volume=24000
-March | Volume=67000
-April | Volume=47000
-May | Volume=32000
-June | Volume=74000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 654,000 | 36,000 |
-| February | 18 | 654,000 | 24,000 |
-| March | 20 | 654,000 | 67,000 |
-| April | 19 | 654,000 | 47,000 |
-| May | 19 | 654,000 | 32,000 |
-| June | 17 | 654,000 | 74,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 283 |
-| Shares outstanding | 654,000 |
-| Total shares traded (six months) | 280,000 |
-
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.31.', 'Total shares traded over six months exceed 9% of shares outstanding.', 'Shares outstanding stay at 654,000 every month.', 'With unchanged shares outstanding, rising market capitalisation means the share price rose.', 'Lowest monthly share turnover is under half of the peak month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Earnings per share ≈ €0.43.', 'TRUE — Turnover ≈ 42.8% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Market capitalisation = price × shares.', 'TRUE — Low 24,000 vs peak 74,000.'], '4/5', 116, 'full' ),
-( '6.1', 'CASE 6.1.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=34
-February | Price=32
-March | Price=37
-April | Price=37
-May | Price=38
-June | Price=37
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=40000
-February | Volume=73000
-March | Volume=47000
-April | Volume=24000
-May | Volume=24000
-June | Volume=70000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 34 | 641,000 | 40,000 |
-| February | 32 | 641,000 | 73,000 |
-| March | 37 | 641,000 | 47,000 |
-| April | 37 | 641,000 | 24,000 |
-| May | 38 | 641,000 | 24,000 |
-| June | 37 | 641,000 | 70,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 180 |
-| Shares outstanding | 641,000 |
-| Total shares traded (six months) | 278,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 22.2% from first to last month (see the extract prepared for case 6.1.117).', 'Market capitalisation rose by more than 33.8% over the period (see the extract prepared for case 6.1.117).', 'Highest closing price is more than 35% above the lowest (see the extract prepared for case 6.1.117).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.1.117).', 'Market capitalisation at the last month exceeds €20.2 million (see the extract prepared for case 6.1.117).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 8.8%.', 'FALSE — €21.8m → €23.7m.', 'FALSE — Range €32–€38.', 'FALSE — Peak price month vs peak volume month.', 'TRUE — Market capitalisation ≈ €23.7 million.'], '3/5', 117, 'full' ),
-( '6.1', 'CASE 6.1.118', 'Scanners as Fixed Assets', 'Analyze the distinction drawn between non-current assets and current assets based on expected holding period. Evaluate the following economic assertions:', ARRAY['A packaging manufacturer that owes supplier balances due within the next year classifies the obligation as a current liability.', 'A registered design is excluded from non-current assets because it has no physical substance.', 'For a packaging manufacturer, a ten-year bank loan appears separately from current liabilities because it falls due after more than one year.', 'A registered design is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'For a packaging manufacturer, the supplier balances appear within current liabilities because settlement is expected within one year.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Settlement within one year places the supplier balances among the current liabilities of a packaging manufacturer.', 'FALSE — Physical substance is not required for non-current classification; a registered design qualifies through its long-term value.', 'TRUE — A longer settlement horizon separates the ten-year bank loan from the current liabilities of a packaging manufacturer.', 'FALSE — A registered design is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — A short settlement horizon places the supplier balances within the current liabilities of a packaging manufacturer.'], '5/5', 118, 'full' ),
-( '6.1', 'CASE 6.1.119', 'Earnings Per Share From Reported Figures 119', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=19
-March | Price=21
-April | Price=23
-May | Price=22
-June | Price=22
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=63000
-February | Volume=22000
-March | Volume=56000
-April | Volume=70000
-May | Volume=56000
-June | Volume=52000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 514,000 | 63,000 |
-| February | 19 | 514,000 | 22,000 |
-| March | 21 | 514,000 | 56,000 |
-| April | 23 | 514,000 | 70,000 |
-| May | 22 | 514,000 | 56,000 |
-| June | 22 | 514,000 | 52,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 180 |
-| Shares outstanding | 514,000 |
-| Total shares traded (six months) | 319,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 25.5% from first to last month.', 'Market capitalisation at the last month exceeds €10.1 million.', 'Market capitalisation rose by more than 23.7% over the period.', 'Highest closing price is more than 18.2% above the lowest.', 'Peak monthly share turnover exceeds 71,813 shares.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Price change ≈ 10.0%.', 'TRUE — Market capitalisation ≈ €11.3 million.', 'FALSE — €10.3m → €11.3m.', 'TRUE — Range €19–€23.', 'FALSE — Peak monthly volume = 70,000.'], '2/5', 119, 'full' ),
-( '6.1', 'CASE 6.1.120', 'Share Price and Market Capitalisation 120', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=11
-March | Price=11
-April | Price=11
 May | Price=11
 June | Price=10
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=18000
-February | Volume=20000
-March | Volume=73000
-April | Volume=41000
-May | Volume=24000
-June | Volume=36000
+January | Volume=41000
+February | Volume=26000
+March | Volume=78000
+April | Volume=20000
+May | Volume=56000
+June | Volume=67000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 729,000 | 18,000 |
-| February | 11 | 729,000 | 20,000 |
-| March | 11 | 729,000 | 73,000 |
-| April | 11 | 729,000 | 41,000 |
-| May | 11 | 729,000 | 24,000 |
-| June | 10 | 729,000 | 36,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 18 | 41,000 |
+| February | 17 | 26,000 |
+| March | 15 | 78,000 |
+| April | 13 | 20,000 |
+| May | 11 | 56,000 |
+| June | 10 | 67,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 314 |
-| Shares outstanding | 729,000 |
-| Total shares traded (six months) | 212,000 |
+| Operating result (€ thousands) | 267 |
+| Shares outstanding | 504,000 |
+| Total shares traded (six months) | 288,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €6 million.', 'Earnings per share exceeds €0.36.', 'Total shares traded over six months exceed 18.8% of shares outstanding.', 'Shares outstanding stay at 729,000 every month.', 'The closing share price rose by more than 17.8% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €7.3 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Turnover ≈ 29.1% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Price change ≈ -16.7%.'], '4/5', 120, 'full' ),
-( '6.1', 'CASE 6.1.121', 'Printers for Office Use', 'Review why non-current assets are expected to deliver benefit to a business for more than one year. Evaluate the following economic assertions:', ARRAY['Because a registered design cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'Non-current assets can never include a registered design because that section is reserved strictly for tangible items such as machinery.', 'A registered design is treated as inventory because it is intended for use rather than for display.', 'A registered design loses its non-current classification as soon as the business begins actively using it.', 'A ten-year bank loan owed by a packaging manufacturer does not increase current liabilities because it is not due within the coming year.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — A registered design with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'FALSE — The non-current assets section includes intangible items such as a registered design alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places a registered design among non-current intangible assets, not inventory.', 'FALSE — Active use does not remove a registered design''s non-current classification; it confirms the long-term benefit that justifies it.', 'TRUE — Because the ten-year bank loan of a packaging manufacturer is not due within a year, it stays outside current liabilities.'], '5/5', 121, 'full' ),
-( '6.1', 'CASE 6.1.122', 'Earnings Per Share From Reported Figures 122', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4.3 million.', 'Earnings per share exceeds €0.49.', 'The closing share price rose by more than 27.8% from first to last month.', 'Highest closing price is more than 17.8% above the lowest.', 'Total shares traded over six months exceed 10.7% of shares outstanding.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.0 million.', 'TRUE — Earnings per share ≈ €0.53.', 'FALSE — Price change ≈ -44.4%.', 'TRUE — Range €10–€18.', 'TRUE — Turnover ≈ 57.1% of shares outstanding.'], '4/5', 108, 'full' ),
+( '6.1', 'CASE 6.1.109', 'Looms and Asset Classification', 'Review how equity contributions differ from borrowed funds in their effect on a business''s balance sheet structure. Evaluate the following economic assertions:', ARRAY['The absence of physical form does not prevent an exclusive distribution agreement from being classified as a non-current asset.', 'A brand name is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'An exclusive distribution agreement acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.', 'An exclusive distribution agreement is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'A software platform licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Physical form is not a requirement for classifying an exclusive distribution agreement as non-current.', 'FALSE — A brand name is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — Multi-year protective or operational value groups an exclusive distribution agreement with intangible non-current assets.', 'TRUE — Because an exclusive distribution agreement is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'TRUE — Long-term expected benefit, not physical form, justifies classifying a software platform licence as non-current.'], '2/5', 109, 'full' ),
+( '6.1', 'CASE 6.1.110', 'Earnings Per Share From Reported Figures 110', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=21
-March | Price=21
-April | Price=19
-May | Price=20
-June | Price=19
+January | Price=38
+February | Price=36
+March | Price=35
+April | Price=33
+May | Price=32
+June | Price=31
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=34000
-February | Volume=71000
-March | Volume=34000
-April | Volume=16000
-May | Volume=28000
-June | Volume=59000
+January | Volume=35000
+February | Volume=37000
+March | Volume=23000
+April | Volume=63000
+May | Volume=85000
+June | Volume=58000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 549,000 | 34,000 |
-| February | 21 | 549,000 | 71,000 |
-| March | 21 | 549,000 | 34,000 |
-| April | 19 | 549,000 | 16,000 |
-| May | 20 | 549,000 | 28,000 |
-| June | 19 | 549,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 35,000 |
+| February | 36 | 37,000 |
+| March | 35 | 23,000 |
+| April | 33 | 63,000 |
+| May | 32 | 85,000 |
+| June | 31 | 58,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 287 |
-| Shares outstanding | 549,000 |
-| Total shares traded (six months) | 242,000 |
+| Operating result (€ thousands) | 218 |
+| Shares outstanding | 615,000 |
+| Total shares traded (six months) | 301,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.9% from first to last month.', 'Market capitalisation rose by more than 25.6% over the period.', 'Market capitalisation at the last month exceeds €8.2 million.', 'Earnings per share exceeds €0.48.', 'Total shares traded over six months exceed 26.1% of shares outstanding.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Price change ≈ 0.0%.', 'FALSE — €10.4m → €10.4m.', 'TRUE — Market capitalisation ≈ €10.4 million.', 'TRUE — Earnings per share ≈ €0.52.', 'TRUE — Turnover ≈ 44.1% of shares outstanding.'], '5/5', 122, 'full' ),
-( '6.1', 'CASE 6.1.123', 'Share Price and Market Capitalisation 123', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.4% from first to last month.', 'Market capitalisation at the last month exceeds €16.1 million.', 'Market capitalisation rose by more than 21.7% over the period.', 'Highest closing price is more than 26.8% above the lowest.', 'Operating result is below €216 thousand.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -18.4%.', 'TRUE — Market capitalisation ≈ €19.1 million.', 'FALSE — €23.4m → €19.1m.', 'FALSE — Range €31–€38.', 'FALSE — Operating result = 218.'], '5/5', 110, 'full' ),
+( '6.1', 'CASE 6.1.111', 'Share Price and Market Capitalisation 111', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=13
-March | Price=15
-April | Price=15
-May | Price=15
-June | Price=14
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=33000
-February | Volume=15000
-March | Volume=44000
-April | Volume=18000
-May | Volume=49000
-June | Volume=13000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 807,000 | 33,000 |
-| February | 13 | 807,000 | 15,000 |
-| March | 15 | 807,000 | 44,000 |
-| April | 15 | 807,000 | 18,000 |
-| May | 15 | 807,000 | 49,000 |
-| June | 14 | 807,000 | 13,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 195 |
-| Shares outstanding | 807,000 |
-| Total shares traded (six months) | 172,000 |
-
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.21.', 'The closing share price rose by more than 28.4% from first to last month.', 'Market capitalisation rose by more than 30% over the period.', 'Highest closing price is more than 35.6% above the lowest.', 'Total shares traded over six months exceed 26.8% of shares outstanding.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Earnings per share ≈ €0.24.', 'FALSE — Price change ≈ 16.7%.', 'FALSE — €9.7m → €11.3m.', 'FALSE — Range €12–€15.', 'FALSE — Turnover ≈ 21.3% of shares outstanding.'], '4/5', 123, 'full' ),
-( '6.1', 'CASE 6.1.124', 'Delivery Vehicles as Non-Current Assets', 'Consider a metalworking firm that owns specialised cutting equipment while also holding raw steel awaiting use in customer orders. Evaluate the following economic assertions:', ARRAY['If part of a packaging manufacturer''s ten-year bank loan becomes due within the next twelve months, that portion should move into current liabilities.', 'A development patent is excluded from non-current assets because it has no physical substance.', 'A clothing retailer that takes out a corporate debenture repayable in more than one year classifies the obligation as a non-current liability.', 'A development patent is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'A clothing retailer that owes overdraft borrowings due within the next year classifies the obligation as a current liability.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — A ten-year bank loan nearing its due date within a year has that portion reclassified into current liabilities for a packaging manufacturer.', 'FALSE — Physical substance is not required for non-current classification; a development patent qualifies through its long-term value.', 'TRUE — Repayment due beyond one year places the corporate debenture among the non-current liabilities of a clothing retailer.', 'FALSE — A development patent is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — Settlement within one year places the overdraft borrowings among the current liabilities of a clothing retailer.'], '5/5', 124, 'full' ),
-( '6.1', 'CASE 6.1.125', 'Earnings Per Share From Reported Figures 125', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=27
-February | Price=25
+January | Price=30
+February | Price=31
 March | Price=28
-April | Price=29
-May | Price=30
-June | Price=28
+April | Price=26
+May | Price=26
+June | Price=25
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=18000
-February | Volume=50000
-March | Volume=71000
-April | Volume=16000
-May | Volume=30000
-June | Volume=12000
+January | Volume=83000
+February | Volume=56000
+March | Volume=19000
+April | Volume=93000
+May | Volume=69000
+June | Volume=67000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 759,000 | 18,000 |
-| February | 25 | 759,000 | 50,000 |
-| March | 28 | 759,000 | 71,000 |
-| April | 29 | 759,000 | 16,000 |
-| May | 30 | 759,000 | 30,000 |
-| June | 28 | 759,000 | 12,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 30 | 83,000 |
+| February | 31 | 56,000 |
+| March | 28 | 19,000 |
+| April | 26 | 93,000 |
+| May | 26 | 69,000 |
+| June | 25 | 67,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 291 |
-| Shares outstanding | 759,000 |
-| Total shares traded (six months) | 197,000 |
+| Operating result (€ thousands) | 216 |
+| Shares outstanding | 501,000 |
+| Total shares traded (six months) | 387,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 17.7% from first to last month.', 'Market capitalisation at the last month exceeds €19.9 million.', 'Peak monthly share turnover exceeds 58,512 shares.', 'Shares outstanding stay at 759,000 every month.', 'Operating result is below €297 thousand.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ 3.7%.', 'TRUE — Market capitalisation ≈ €21.3 million.', 'TRUE — Peak monthly volume = 71,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 291.'], '4/5', 125, 'full' ),
-( '6.1', 'CASE 6.1.126', 'Share Price and Market Capitalisation 126', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.6 million.', 'Earnings per share exceeds €0.37.', 'Highest closing price is more than 19.1% above the lowest.', 'Total shares traded over six months exceed 32.5% of shares outstanding.', 'Peak monthly share turnover exceeds 80,606 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €12.5 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Range €25–€31.', 'TRUE — Turnover ≈ 77.2% of shares outstanding.', 'TRUE — Peak monthly volume = 93,000.'], '3/5', 111, 'full' ),
+( '6.1', 'CASE 6.1.112', 'Tanks as Operating Equipment', 'Consider an orchard business that owns tractors for cultivation while holding harvested fruit in cold storage awaiting sale. Evaluate the following economic assertions:', ARRAY['Although a software platform licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.', 'A software platform licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.', 'The absence of physical form does not prevent a software platform licence from being classified as a non-current asset.', 'Because a brand name cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'A software platform licence acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Long-term value places an intangible software platform licence among non-current rather than current assets.', 'TRUE — Intangible and tangible non-current assets, including a software platform licence, sit within the same balance sheet section.', 'TRUE — Physical form is not a requirement for classifying a software platform licence as non-current.', 'FALSE — A brand name with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'TRUE — Multi-year protective or operational value groups a software platform licence with intangible non-current assets.'], '5/5', 112, 'full' ),
+( '6.1', 'CASE 6.1.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=18
-February | Price=18
-March | Price=17
-April | Price=16
-May | Price=17
-June | Price=17
+January | Price=31
+February | Price=29
+March | Price=27
+April | Price=25
+May | Price=22
+June | Price=21
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=34000
-February | Volume=62000
-March | Volume=61000
-April | Volume=32000
-May | Volume=67000
-June | Volume=39000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 18 | 450,000 | 34,000 |
-| February | 18 | 450,000 | 62,000 |
-| March | 17 | 450,000 | 61,000 |
-| April | 16 | 450,000 | 32,000 |
-| May | 17 | 450,000 | 67,000 |
-| June | 17 | 450,000 | 39,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 230 |
-| Shares outstanding | 450,000 |
-| Total shares traded (six months) | 295,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7 million.', 'Highest closing price is more than 12.4% above the lowest.', 'Total shares traded over six months exceed 31.7% of shares outstanding.', 'Peak monthly share turnover exceeds 62,416 shares.', 'Shares outstanding stay at 450,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €7.7 million.', 'TRUE — Range €16–€18.', 'TRUE — Turnover ≈ 65.6% of shares outstanding.', 'TRUE — Peak monthly volume = 67,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 126, 'full' ),
-( '6.1', 'CASE 6.1.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=27
-March | Price=31
-April | Price=32
-May | Price=30
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=54000
-February | Volume=52000
-March | Volume=15000
-April | Volume=41000
-May | Volume=54000
-June | Volume=49000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 420,000 | 54,000 |
-| February | 27 | 420,000 | 52,000 |
-| March | 31 | 420,000 | 15,000 |
-| April | 32 | 420,000 | 41,000 |
-| May | 30 | 420,000 | 54,000 |
-| June | 28 | 420,000 | 49,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 230 |
-| Shares outstanding | 420,000 |
-| Total shares traded (six months) | 265,000 |
-
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.39.', 'Total shares traded over six months exceed 38.8% of shares outstanding.', 'Peak monthly share turnover exceeds 45,456 shares.', 'Shares outstanding stay at 420,000 every month.', 'Operating result is below €274 thousand.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Earnings per share ≈ €0.55.', 'TRUE — Turnover ≈ 63.1% of shares outstanding.', 'TRUE — Peak monthly volume = 54,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 230.'], '3/5', 127, 'full' ),
-( '6.1', 'CASE 6.1.128', 'Earnings Per Share From Reported Figures 128', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=21
-March | Price=19
-April | Price=17
-May | Price=16
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=28000
-February | Volume=57000
-March | Volume=39000
-April | Volume=16000
+January | Volume=61000
+February | Volume=41000
+March | Volume=31000
+April | Volume=77000
 May | Volume=62000
-June | Volume=71000
+June | Volume=75000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 676,000 | 28,000 |
-| February | 21 | 676,000 | 57,000 |
-| March | 19 | 676,000 | 39,000 |
-| April | 17 | 676,000 | 16,000 |
-| May | 16 | 676,000 | 62,000 |
-| June | 17 | 676,000 | 71,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 61,000 |
+| February | 29 | 41,000 |
+| March | 27 | 31,000 |
+| April | 25 | 77,000 |
+| May | 22 | 62,000 |
+| June | 21 | 75,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 317 |
-| Shares outstanding | 676,000 |
-| Total shares traded (six months) | 273,000 |
+| Operating result (€ thousands) | 185 |
+| Shares outstanding | 671,000 |
+| Total shares traded (six months) | 347,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.9 million.', 'Total shares traded over six months exceed 19.1% of shares outstanding.', 'Peak monthly share turnover exceeds 59,490 shares.', 'Shares outstanding stay at 676,000 every month.', 'The closing share price rose by more than 28.5% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €11.5 million.', 'TRUE — Turnover ≈ 40.4% of shares outstanding.', 'TRUE — Peak monthly volume = 71,000.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Price change ≈ -10.5%.'], '5/5', 128, 'full' ),
-( '6.1', 'CASE 6.1.129', 'Share Price and Market Capitalisation 129', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.9% from first to last month.', 'Market capitalisation at the last month exceeds €11.7 million.', 'Highest closing price is more than 20% above the lowest.', 'Total shares traded over six months exceed 31.5% of shares outstanding.', 'Shares outstanding equal 671,000.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -32.3%.', 'TRUE — Market capitalisation ≈ €14.1 million.', 'TRUE — Range €21–€31.', 'TRUE — Turnover ≈ 51.7% of shares outstanding.', 'TRUE — Shares outstanding = 671,000.'], '5/5', 113, 'full' ),
+( '6.1', 'CASE 6.1.114', 'Tractors in Farm Business Balance Sheets', 'Review how owner''s equity is derived as the residual claim remaining once liabilities are deducted from assets. Evaluate the following economic assertions:', ARRAY['A software platform licence is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.', 'Non-current assets can never include a brand name because that section is reserved strictly for tangible items such as machinery.', 'A brand name is treated as inventory because it is intended for use rather than for display.', 'A brand name loses its non-current classification as soon as the business begins actively using it.', 'A packaging manufacturer that takes out a ten-year bank loan repayable in more than one year classifies the obligation as a non-current liability.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Because a software platform licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.', 'FALSE — The non-current assets section includes intangible items such as a brand name alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places a brand name among non-current intangible assets, not inventory.', 'FALSE — Active use does not remove a brand name''s non-current classification; it confirms the long-term benefit that justifies it.', 'TRUE — Repayment due beyond one year places the ten-year bank loan among the non-current liabilities of a packaging manufacturer.'], '4/5', 114, 'full' ),
+( '6.1', 'CASE 6.1.115', 'Listed Company Performance Charts 115', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=18
-February | Price=18
+January | Price=38
+February | Price=38
+March | Price=37
+April | Price=36
+May | Price=33
+June | Price=31
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=51000
+February | Volume=43000
+March | Volume=33000
+April | Volume=95000
+May | Volume=20000
+June | Volume=90000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 51,000 |
+| February | 38 | 43,000 |
+| March | 37 | 33,000 |
+| April | 36 | 95,000 |
+| May | 33 | 20,000 |
+| June | 31 | 90,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 231 |
+| Shares outstanding | 806,000 |
+| Total shares traded (six months) | 332,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €21.7 million.', 'Total shares traded over six months exceed 20.2% of shares outstanding.', 'Peak monthly share turnover exceeds 70,733 shares.', 'The closing share price rose by more than 12.3% from first to last month.', 'Shares outstanding equal 806,000.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €25.0 million.', 'TRUE — Turnover ≈ 41.2% of shares outstanding.', 'TRUE — Peak monthly volume = 95,000.', 'FALSE — Price change ≈ -18.4%.', 'TRUE — Shares outstanding = 806,000.'], '3/5', 115, 'full' ),
+( '6.1', 'CASE 6.1.116', 'Earnings Per Share From Reported Figures 116', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=22
+February | Price=22
 March | Price=21
 April | Price=19
-May | Price=18
+May | Price=17
+June | Price=15
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=48000
+February | Volume=33000
+March | Volume=85000
+April | Volume=61000
+May | Volume=43000
+June | Volume=93000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 22 | 48,000 |
+| February | 22 | 33,000 |
+| March | 21 | 85,000 |
+| April | 19 | 61,000 |
+| May | 17 | 43,000 |
+| June | 15 | 93,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 283 |
+| Shares outstanding | 654,000 |
+| Total shares traded (six months) | 363,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7.9 million.', 'Earnings per share exceeds €0.31.', 'Highest closing price is more than 34.1% above the lowest.', 'Total shares traded over six months exceed 9% of shares outstanding.', 'Shares outstanding equal 654,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €9.8 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Range €15–€22.', 'TRUE — Turnover ≈ 55.5% of shares outstanding.', 'TRUE — Shares outstanding = 654,000.'], '4/5', 116, 'full' ),
+( '6.1', 'CASE 6.1.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=34
+February | Price=31
+March | Price=27
+April | Price=24
+May | Price=22
 June | Price=20
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=20000
-February | Volume=46000
-March | Volume=47000
-April | Volume=69000
-May | Volume=62000
-June | Volume=22000
+January | Volume=38000
+February | Volume=49000
+March | Volume=83000
+April | Volume=47000
+May | Volume=59000
+June | Volume=74000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 18 | 456,000 | 20,000 |
-| February | 18 | 456,000 | 46,000 |
-| March | 21 | 456,000 | 47,000 |
-| April | 19 | 456,000 | 69,000 |
-| May | 18 | 456,000 | 62,000 |
-| June | 20 | 456,000 | 22,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 38,000 |
+| February | 31 | 49,000 |
+| March | 27 | 83,000 |
+| April | 24 | 47,000 |
+| May | 22 | 59,000 |
+| June | 20 | 74,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 276 |
-| Shares outstanding | 456,000 |
-| Total shares traded (six months) | 266,000 |
+| Operating result (€ thousands) | 211 |
+| Shares outstanding | 744,000 |
+| Total shares traded (six months) | 350,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €8.4 million.', 'The closing share price rose by more than 16% from first to last month.', 'Market capitalisation rose by more than 17.2% over the period.', 'Operating result is below €213 thousand.', 'Earnings per share is exactly €0.57.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €9.1 million.', 'FALSE — Price change ≈ 11.1%.', 'FALSE — €8.2m → €9.1m.', 'FALSE — Operating result = 276.', 'FALSE — Earnings per share ≈ €0.61.'], '3/5', 129, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 24.9% from first to last month.', 'Market capitalisation rose by more than 26.9% over the period.', 'Peak monthly share turnover exceeds 90,002 shares.', 'Earnings per share is exactly €0.39.', 'Market capitalisation at the last month exceeds €11.9 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -41.2%.', 'FALSE — €25.3m → €14.9m.', 'FALSE — Peak monthly volume = 83,000.', 'FALSE — Earnings per share ≈ €0.28.', 'TRUE — Market capitalisation ≈ €14.9 million.'], '3/5', 117, 'full' ),
+( '6.1', 'CASE 6.1.118', 'Scanners as Fixed Assets', 'Analyze the distinction drawn between non-current assets and current assets based on expected holding period. Evaluate the following economic assertions:', ARRAY['A packaging manufacturer that owes supplier balances due within the next year classifies the obligation as a current liability.', 'A registered design is excluded from non-current assets because it has no physical substance.', 'For a packaging manufacturer, a ten-year bank loan appears separately from current liabilities because it falls due after more than one year.', 'A registered design is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'For a packaging manufacturer, the supplier balances appear within current liabilities because settlement is expected within one year.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Settlement within one year places the supplier balances among the current liabilities of a packaging manufacturer.', 'FALSE — Physical substance is not required for non-current classification; a registered design qualifies through its long-term value.', 'TRUE — A longer settlement horizon separates the ten-year bank loan from the current liabilities of a packaging manufacturer.', 'FALSE — A registered design is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — A short settlement horizon places the supplier balances within the current liabilities of a packaging manufacturer.'], '5/5', 118, 'full' ),
+( '6.1', 'CASE 6.1.119', 'Earnings Per Share From Reported Figures 119', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=27
+February | Price=27
+March | Price=30
+April | Price=32
+May | Price=32
+June | Price=33
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=80000
+February | Volume=30000
+March | Volume=72000
+April | Volume=89000
+May | Volume=71000
+June | Volume=67000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 80,000 |
+| February | 27 | 30,000 |
+| March | 30 | 72,000 |
+| April | 32 | 89,000 |
+| May | 32 | 71,000 |
+| June | 33 | 67,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 180 |
+| Shares outstanding | 514,000 |
+| Total shares traded (six months) | 409,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 25.5% from first to last month.', 'Market capitalisation at the last month exceeds €15.2 million.', 'Market capitalisation rose by more than 23.7% over the period.', 'Highest closing price is more than 18.2% above the lowest.', 'Peak monthly share turnover exceeds 91,305 shares.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Price change ≈ 22.2%.', 'TRUE — Market capitalisation ≈ €17.0 million.', 'FALSE — €13.9m → €17.0m.', 'TRUE — Range €27–€33.', 'FALSE — Peak monthly volume = 89,000.'], '2/5', 119, 'full' ),
+( '6.1', 'CASE 6.1.120', 'Share Price and Market Capitalisation 120', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=18
+February | Price=15
+March | Price=14
+April | Price=12
+May | Price=11
+June | Price=10
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=25000
+February | Volume=28000
+March | Volume=92000
+April | Volume=53000
+May | Volume=32000
+June | Volume=47000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 18 | 25,000 |
+| February | 15 | 28,000 |
+| March | 14 | 92,000 |
+| April | 12 | 53,000 |
+| May | 11 | 32,000 |
+| June | 10 | 47,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 314 |
+| Shares outstanding | 729,000 |
+| Total shares traded (six months) | 277,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €6 million.', 'Earnings per share exceeds €0.36.', 'Highest closing price is more than 20.5% above the lowest.', 'Total shares traded over six months exceed 18.8% of shares outstanding.', 'The closing share price rose by more than 17.8% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €7.3 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Range €10–€18.', 'TRUE — Turnover ≈ 38.0% of shares outstanding.', 'FALSE — Price change ≈ -44.4%.'], '4/5', 120, 'full' ),
+( '6.1', 'CASE 6.1.121', 'Printers for Office Use', 'Review why non-current assets are expected to deliver benefit to a business for more than one year. Evaluate the following economic assertions:', ARRAY['Because a registered design cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'Non-current assets can never include a registered design because that section is reserved strictly for tangible items such as machinery.', 'A registered design is treated as inventory because it is intended for use rather than for display.', 'A registered design loses its non-current classification as soon as the business begins actively using it.', 'A ten-year bank loan owed by a packaging manufacturer does not increase current liabilities because it is not due within the coming year.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — A registered design with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'FALSE — The non-current assets section includes intangible items such as a registered design alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places a registered design among non-current intangible assets, not inventory.', 'FALSE — Active use does not remove a registered design''s non-current classification; it confirms the long-term benefit that justifies it.', 'TRUE — Because the ten-year bank loan of a packaging manufacturer is not due within a year, it stays outside current liabilities.'], '5/5', 121, 'full' ),
+( '6.1', 'CASE 6.1.122', 'Earnings Per Share From Reported Figures 122', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=27
+February | Price=28
+March | Price=29
+April | Price=28
+May | Price=30
+June | Price=34
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=45000
+February | Volume=90000
+March | Volume=45000
+April | Volume=23000
+May | Volume=38000
+June | Volume=76000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 45,000 |
+| February | 28 | 90,000 |
+| March | 29 | 45,000 |
+| April | 28 | 23,000 |
+| May | 30 | 38,000 |
+| June | 34 | 76,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 287 |
+| Shares outstanding | 549,000 |
+| Total shares traded (six months) | 317,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 26.3% above the lowest.', 'Peak monthly share turnover exceeds 92,651 shares.', 'The closing share price rose by more than 16.9% from first to last month.', 'Market capitalisation at the last month exceeds €14.6 million.', 'Market capitalisation rose by more than 25.6% over the period.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Range €27–€34.', 'FALSE — Peak monthly volume = 90,000.', 'TRUE — Price change ≈ 25.9%.', 'TRUE — Market capitalisation ≈ €18.7 million.', 'TRUE — €14.8m → €18.7m.'], '5/5', 122, 'full' ),
+( '6.1', 'CASE 6.1.123', 'Share Price and Market Capitalisation 123', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=19
+February | Price=20
+March | Price=20
+April | Price=21
+May | Price=21
+June | Price=24
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=43000
+February | Volume=22000
+March | Volume=57000
+April | Volume=25000
+May | Volume=63000
+June | Volume=20000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 43,000 |
+| February | 20 | 22,000 |
+| March | 20 | 57,000 |
+| April | 21 | 25,000 |
+| May | 21 | 63,000 |
+| June | 24 | 20,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 195 |
+| Shares outstanding | 807,000 |
+| Total shares traded (six months) | 230,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €18.2 million.', 'The closing share price rose by more than 28.4% from first to last month.', 'Market capitalisation rose by more than 30% over the period.', 'Peak monthly share turnover exceeds 70,004 shares.', 'Earnings per share is exactly €0.14.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €19.4 million.', 'FALSE — Price change ≈ 26.3%.', 'FALSE — €15.3m → €19.4m.', 'FALSE — Peak monthly volume = 63,000.', 'FALSE — Earnings per share ≈ €0.24.'], '4/5', 123, 'full' ),
+( '6.1', 'CASE 6.1.124', 'Delivery Vehicles as Non-Current Assets', 'Consider a metalworking firm that owns specialised cutting equipment while also holding raw steel awaiting use in customer orders. Evaluate the following economic assertions:', ARRAY['If part of a packaging manufacturer''s ten-year bank loan becomes due within the next twelve months, that portion should move into current liabilities.', 'A development patent is excluded from non-current assets because it has no physical substance.', 'A clothing retailer that takes out a corporate debenture repayable in more than one year classifies the obligation as a non-current liability.', 'A development patent is classified as a current asset because, being intangible, it is easily converted into cash within a year.', 'A clothing retailer that owes overdraft borrowings due within the next year classifies the obligation as a current liability.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — A ten-year bank loan nearing its due date within a year has that portion reclassified into current liabilities for a packaging manufacturer.', 'FALSE — Physical substance is not required for non-current classification; a development patent qualifies through its long-term value.', 'TRUE — Repayment due beyond one year places the corporate debenture among the non-current liabilities of a clothing retailer.', 'FALSE — A development patent is a non-current intangible asset because it provides benefit over several years, not because it converts to cash quickly.', 'TRUE — Settlement within one year places the overdraft borrowings among the current liabilities of a clothing retailer.'], '5/5', 124, 'full' ),
+( '6.1', 'CASE 6.1.125', 'Earnings Per Share From Reported Figures 125', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=32
+February | Price=29
+March | Price=28
+April | Price=27
+May | Price=26
+June | Price=23
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=25000
+February | Volume=64000
+March | Volume=90000
+April | Volume=23000
+May | Volume=39000
+June | Volume=18000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 32 | 25,000 |
+| February | 29 | 64,000 |
+| March | 28 | 90,000 |
+| April | 27 | 23,000 |
+| May | 26 | 39,000 |
+| June | 23 | 18,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 291 |
+| Shares outstanding | 759,000 |
+| Total shares traded (six months) | 259,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 17.7% from first to last month.', 'Market capitalisation at the last month exceeds €16.3 million.', 'Highest closing price is more than 27% above the lowest.', 'Peak monthly share turnover exceeds 74,170 shares.', 'Shares outstanding equal 759,000.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -28.1%.', 'TRUE — Market capitalisation ≈ €17.5 million.', 'TRUE — Range €23–€32.', 'TRUE — Peak monthly volume = 90,000.', 'TRUE — Shares outstanding = 759,000.'], '4/5', 125, 'full' ),
+( '6.1', 'CASE 6.1.126', 'Share Price and Market Capitalisation 126', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=24
+February | Price=22
+March | Price=20
+April | Price=17
+May | Price=16
+June | Price=15
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=45000
+February | Volume=79000
+March | Volume=78000
+April | Volume=43000
+May | Volume=85000
+June | Volume=51000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 45,000 |
+| February | 22 | 79,000 |
+| March | 20 | 78,000 |
+| April | 17 | 43,000 |
+| May | 16 | 85,000 |
+| June | 15 | 51,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 230 |
+| Shares outstanding | 450,000 |
+| Total shares traded (six months) | 381,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €6.2 million.', 'Highest closing price is more than 12.4% above the lowest.', 'Total shares traded over six months exceed 31.7% of shares outstanding.', 'Peak monthly share turnover exceeds 79,184 shares.', 'Shares outstanding equal 450,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €6.8 million.', 'TRUE — Range €15–€24.', 'TRUE — Turnover ≈ 84.7% of shares outstanding.', 'TRUE — Peak monthly volume = 85,000.', 'TRUE — Shares outstanding = 450,000.'], '2/5', 126, 'full' ),
+( '6.1', 'CASE 6.1.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=31
+February | Price=32
+March | Price=34
+April | Price=34
+May | Price=33
+June | Price=39
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=69000
+February | Volume=67000
+March | Volume=22000
+April | Volume=54000
+May | Volume=70000
+June | Volume=63000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 69,000 |
+| February | 32 | 67,000 |
+| March | 34 | 22,000 |
+| April | 34 | 54,000 |
+| May | 33 | 70,000 |
+| June | 39 | 63,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 230 |
+| Shares outstanding | 420,000 |
+| Total shares traded (six months) | 345,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.2% from first to last month.', 'Market capitalisation at the last month exceeds €12.5 million.', 'Market capitalisation rose by more than 16.5% over the period.', 'Earnings per share exceeds €0.39.', 'Total shares traded over six months exceed 38.8% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.8%.', 'TRUE — Market capitalisation ≈ €16.4 million.', 'TRUE — €13.0m → €16.4m.', 'TRUE — Earnings per share ≈ €0.55.', 'TRUE — Turnover ≈ 82.1% of shares outstanding.'], '3/5', 127, 'full' ),
+( '6.1', 'CASE 6.1.128', 'Earnings Per Share From Reported Figures 128', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=24
+February | Price=24
+March | Price=21
+April | Price=17
+May | Price=15
+June | Price=13
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=37000
+February | Volume=73000
+March | Volume=51000
+April | Volume=23000
+May | Volume=79000
+June | Volume=90000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 37,000 |
+| February | 24 | 73,000 |
+| March | 21 | 51,000 |
+| April | 17 | 23,000 |
+| May | 15 | 79,000 |
+| June | 13 | 90,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 317 |
+| Shares outstanding | 676,000 |
+| Total shares traded (six months) | 353,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €8.3 million.', 'Highest closing price is more than 42.4% above the lowest.', 'Total shares traded over six months exceed 19.1% of shares outstanding.', 'Peak monthly share turnover exceeds 75,410 shares.', 'The closing share price rose by more than 28.5% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €8.8 million.', 'TRUE — Range €13–€24.', 'TRUE — Turnover ≈ 52.2% of shares outstanding.', 'TRUE — Peak monthly volume = 90,000.', 'FALSE — Price change ≈ -45.8%.'], '5/5', 128, 'full' ),
+( '6.1', 'CASE 6.1.129', 'Share Price and Market Capitalisation 129', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=32
+February | Price=31
+March | Price=30
+April | Price=30
+May | Price=31
+June | Price=38
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=95000
+February | Volume=71000
+March | Volume=24000
+April | Volume=33000
+May | Volume=39000
+June | Volume=79000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 32 | 95,000 |
+| February | 31 | 71,000 |
+| March | 30 | 24,000 |
+| April | 30 | 33,000 |
+| May | 31 | 39,000 |
+| June | 38 | 79,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 198 |
+| Shares outstanding | 680,000 |
+| Total shares traded (six months) | 341,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €22.5 million.', 'The closing share price rose by more than 20.2% from first to last month.', 'Market capitalisation rose by more than 29.1% over the period.', 'Highest closing price is more than 39.7% above the lowest.', 'Earnings per share is exactly €0.21.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €25.8 million.', 'FALSE — Price change ≈ 18.8%.', 'FALSE — €21.8m → €25.8m.', 'FALSE — Range €30–€38.', 'FALSE — Earnings per share ≈ €0.29.'], '3/5', 129, 'full' ),
 ( '6.1', 'CASE 6.1.130', 'Franchise Agreements as Intangibles', 'Review how tangible non-current assets differ from intangible non-current assets in physical form. Evaluate the following economic assertions:', ARRAY['Because a development patent cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.', 'Non-current assets can never include a development patent because that section is reserved strictly for tangible items such as machinery.', 'A development patent is treated as inventory because it is intended for use rather than for display.', 'For a clothing retailer, a corporate debenture appears separately from current liabilities because it falls due after more than one year.', 'For a clothing retailer, the overdraft borrowings appear within current liabilities because settlement is expected within one year.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — A development patent with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.', 'FALSE — The non-current assets section includes intangible items such as a development patent alongside tangible assets.', 'FALSE — Long-term exclusive use, not physical display, places a development patent among non-current intangible assets, not inventory.', 'TRUE — A longer settlement horizon separates the corporate debenture from the current liabilities of a clothing retailer.', 'TRUE — A short settlement horizon places the overdraft borrowings within the current liabilities of a clothing retailer.'], '2/5', 130, 'full' ),
 ( '6.2', 'CASE 6.2.001', 'Cash Flow Mix Over Two Years 1', 'Consider the cash flow extract below (€ thousands).
 
@@ -2736,7 +2740,16 @@ Computer equipment | Annual depreciation=6333
 | Asset C – Computer equipment | €19,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['Combined annual depreciation for the three assets is €28,652.', 'After three years, the computer equipment, originally costing €19,000, is fully written down to nil.', 'After three years, the delivery truck''s book value is €30,895.', 'After three years, the combined book value of all three assets exceeds €143,061.', 'Without recording depreciation on the €174,000 machinery, non-current assets on the balance sheet would be overstated.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Sum of annual charges ≈ €28,652.', 'TRUE — Useful life is 3 years with no residual value.', 'FALSE — Book value ≈ €26,500.', 'TRUE — Combined book value ≈ €153,045.', 'TRUE — Assets would stay at historical cost without write-downs.'], '5/5', 3, 'full' ),
-( '6.2', 'CASE 6.2.004', 'Balance Sheet as a Point-in-Time Snapshot', 'Review the balance sheet as a snapshot of a business''s assets, equity and liabilities on one specific date. Evaluate the following economic assertions:', ARRAY['A complete financial statement for a business typically brings together a balance sheet, a statement of profit and loss and a cash flow statement.', 'A complete financial statement is limited to a balance sheet alone and never includes a statement of profit and loss or a cash flow statement.', 'The balance sheet is drawn up at a single point in time, whereas the statement of profit and loss and the cash flow statement each summarise activity across an accounting period.', 'The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to summarise an entire accounting period rather than one specific date.', 'Turnover for the year is reported in the balance sheet rather than in the statement of profit and loss.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — These three statements together give a fuller picture of financial position, performance and cash movements than any single statement alone.', 'FALSE — A financial statement normally combines a balance sheet, a statement of profit and loss and a cash flow statement.', 'TRUE — Only the balance sheet is dated at one moment; the other two statements report on a period of trading.', 'FALSE — It is only the balance sheet that is dated at a single point in time; the other two statements cover a period.', 'FALSE — Sales for the year appear in the statement of profit and loss, not the balance sheet.'], '2/5', 4, 'full' ),
+( '6.2', 'CASE 6.2.004', 'Balance Sheet as a Point-in-Time Snapshot', 'Consider the following cash flow statement extract (€) for a bakery.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 26000 |
+| Cash flow from investing activities | (9000) |
+| Cash flow from financing activities | 5500 |
+| Net change in cash and cash equivalents | **22500** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 1, cash and cash equivalents change by 22,500 euros in total.', 'Treating the investing line as an addition, total cash would change by 40,500 euros on extract 1.', 'Purchases recorded under investing total an outflow of 9,000 euros on extract 1.', 'The operating figure alone of 26,000 euros is already the full net change on extract 1.', 'The investing line on extract 1 reports cash received of 9,000 euros.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Operating 26000 − investing 9000 + financing 5500 = 22500.', 'FALSE — Investing must be subtracted; correct net change is 22,500 euros.', 'TRUE — The investing line is (9000).', 'FALSE — That ignores investing and financing; correct net is 22,500 euros.', 'FALSE — Investing is an outflow of 9,000 euros.'], '2/5', 4, 'full' ),
 ( '6.2', 'CASE 6.2.005', 'Profit and Loss Over an Accounting Period', 'Analyze why the balance sheet does not report the sales made during the accounting period. Evaluate the following economic assertions:', ARRAY['Turnover for the year is reported in the statement of profit and loss rather than in the balance sheet.', 'Depreciation has nothing to do with the wearing out of a fixed asset and is simply an arbitrary entry with no economic meaning.', 'A fixed asset that is never depreciated will automatically show a reduced value in the accounts that reflects its true worth after years of use.', 'Depreciation is a cash expense in the statement of profit and loss that triggers an actual cash payment in the year it is recorded.', 'Depreciation reflects the gradual wearing out of a fixed asset as it is used to help generate revenue over its useful life.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — The balance sheet does not show sales made during the year; that figure belongs in the statement of profit and loss.', 'FALSE — Depreciation specifically reflects the loss of value a fixed asset experiences through use.', 'FALSE — Without depreciation, an asset stays at its original cost in the accounts, overstating rather than reflecting its real worth.', 'FALSE — Depreciation does not itself cause a cash payment in the year it is charged; the cash was paid when the asset was bought.', 'TRUE — Depreciation allocates the loss of value a fixed asset suffers through use across the years it is expected to be used.'], '3/5', 5, 'full' ),
 ( '6.2', 'CASE 6.2.006', 'Cash Flow Statement Over Two Years 6', 'Consider the cash flow extract below (€ thousands).
 
@@ -2787,10 +2800,28 @@ Current liabilities=278
 
 Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.', 'The debt ratio exceeds 57.6%.', 'Buildings make up more than 35.9% of total assets.', 'Working capital of €132 thousand is positive on this balance sheet.', 'Inventory make up more than 52.2% of current assets.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Current ratio ≈ 1.47.', 'FALSE — Debt ratio ≈ 55.1%.', 'FALSE — Buildings are about 29.8% of total assets.', 'TRUE — Working capital = 132.', 'FALSE — Inventory are about 38.8% of current assets.'], '3/5', 7, 'full' ),
 ( '6.2', 'CASE 6.2.008', 'Components of a Financial Statement', 'Consider a construction firm financing new heavy machinery partly with retained profits and partly with a long-term loan. Evaluate the following economic assertions:', ARRAY['Under the straight-line method, the depreciable amount of an asset is spread unevenly across its useful life, producing a different charge each year.', 'Land is depreciated in exactly the same way as buildings, machinery and vehicles because all fixed assets wear out identically through use.', 'A profit earned during the year reduces the equity reported on the balance sheet.', 'If a fixed asset were never depreciated, it would remain on the accounts at its original cost even after years of productive use, overstating its true worth.', 'A loss incurred during the year increases the equity reported on the balance sheet.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Straight-line depreciation produces an equal annual charge across the useful life, not a varying one.', 'FALSE — Land is generally excluded from depreciation because it does not wear out through use the way other fixed assets do.', 'FALSE — Profit increases equity, typically through retained earnings, rather than reducing it.', 'TRUE — Skipping depreciation leaves an asset recorded above its real economic value once it has been used for some time.', 'FALSE — A loss reduces equity by lowering retained earnings; it does not increase equity.'], '3/5', 8, 'full' ),
-( '6.2', 'CASE 6.2.009', 'Cash Flow From Operating Activities', 'Analyze why the statement of profit and loss covers a period rather than a single point in time. Evaluate the following economic assertions:', ARRAY['Depreciation is charged as an expense in the statement of profit and loss without itself requiring a fresh cash payment in the year it is recorded.', 'Under the straight-line method, the depreciable amount of an asset, its cost less any expected residual value, is spread evenly over its useful life.', 'Land is generally treated differently from buildings, machinery and vehicles because it does not wear out through use and is normally not depreciated.', 'A profit earned during the year increases the equity reported on the balance sheet, usually because it is added to retained earnings.', 'Profit for the year and the net change in cash and cash equivalents for the year are always identical figures.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — The cash for a depreciating asset was paid when it was bought; the annual charge that follows does not involve any further cash leaving the business.', 'TRUE — Straight-line depreciation divides cost minus residual value by the number of years of useful life to give an equal annual charge.', 'TRUE — An unlimited useful life is the usual reason land is excluded from a depreciation schedule.', 'TRUE — Profit raises the owners'' stake in the business by boosting retained earnings within equity.', 'FALSE — Profit and the net change in cash are distinct measures that will not usually match exactly.'], '4/5', 9, 'full' ),
+( '6.2', 'CASE 6.2.009', 'Cash Flow From Operating Activities', 'Consider the following cash flow statement extract (€) for a hotel chain.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 30800 |
+| Cash flow from investing activities | (14400) |
+| Cash flow from financing activities | (4740) |
+| Net change in cash and cash equivalents | **11660** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 4, cash and cash equivalents change by 11,660 euros in total.', 'Purchases recorded under investing total an outflow of 14,400 euros on extract 4.', 'Financing activities remove 4,740 euros from cash on extract 4.', 'Operating cash of 30,800 euros more than covers the investing outflow of 14,400 euros on extract 4.', 'Treating the investing line as an addition, total cash would change by 40,460 euros on extract 4.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Operating 30800 − investing 14400 − financing 4740 = 11660.', 'TRUE — The investing line is (14400).', 'TRUE — Financing is an outflow of 4,740 euros.', 'TRUE — Operating 30800 versus investing 14400.', 'FALSE — Investing must be subtracted; correct net change is 11,660 euros.'], '4/5', 9, 'full' ),
 ( '6.2', 'CASE 6.2.010', 'Cash Flow From Investing Activities', 'Review how a complete financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:', ARRAY['A loss incurred during the year reduces the equity reported on the balance sheet.', 'Profit for the year and the net change in cash and cash equivalents for the year are different measures that will not usually be equal.', 'Cash flow from operating activities reflects cash movements arising from the core trading activities of a business during the period.', 'Cash flow from operating activities reflects cash movements arising from borrowing and repaying loans during the period.', 'Cash flow from investing activities reflects cash movements arising from buying or selling long-term assets during the period.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — A loss lowers retained earnings and therefore reduces total equity.', 'TRUE — Non-cash items and timing differences mean profit and cash movement typically diverge.', 'TRUE — Day-to-day trading, such as receipts from customers and payments to suppliers and employees, is captured in the operating section.', 'FALSE — Borrowing and loan repayments are financing activities; operating cash flow instead reflects core trading.', 'TRUE — Spending on or proceeds from long-term assets such as equipment or property sit in the investing section.'], '3/5', 10, 'full' ),
 ( '6.2', 'CASE 6.2.011', 'Cash Flow From Financing Activities', 'Analyze the purpose of the cash flow statement alongside the balance sheet and the statement of profit and loss. Evaluate the following economic assertions:', ARRAY['Cash flow from investing activities reflects cash movements arising from the core day-to-day trading of a business during the period.', 'Cash flow from financing activities reflects cash movements arising from buying or selling long-term assets during the period.', 'Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, raising share capital or paying dividends during the period.', 'A negative cash flow from investing activities is always a definite sign that a business is in financial difficulty, regardless of the cause.', 'The net change in cash and cash equivalents for a period has no relationship to the cash flows from operating, investing and financing activities.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Core trading is reflected in operating cash flow; investing cash flow relates to long-term assets.', 'FALSE — Buying or selling long-term assets is an investing activity, not a financing one.', 'TRUE — Transactions with lenders and owners are grouped in the financing section of the cash flow statement.', 'FALSE — Investing outflows often simply reflect spending on new long-term assets rather than financial distress.', 'FALSE — The net change in cash is exactly the sum of the operating, investing and financing cash flows for the period.'], '3/5', 11, 'full' ),
-( '6.2', 'CASE 6.2.012', 'Negative Investing Cash Flow Explained', 'Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:', ARRAY['When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is deducted a second time from profit.', 'Accumulated depreciation is added to the original cost of a fixed asset to arrive at its book value.', 'A negative cash flow from investing activities in a given year often simply reflects that a business has been purchasing long-term assets, rather than facing financial difficulty.', 'The net change in cash and cash equivalents for a period is calculated by adding together the cash flows from operating, investing and financing activities.', 'A rise in inventory or trade receivables during the year has no effect on cash and is fully reflected in profit for the period in exactly the same way.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Depreciation is added back to profit in this reconciliation, not deducted again, because it never involved a cash payment.', 'FALSE — Book value equals cost less accumulated depreciation, not cost plus accumulated depreciation.', 'TRUE — Investing outflows commonly indicate expansion through asset purchases rather than distress.', 'TRUE — Summing the three sections of the cash flow statement gives the overall change in cash for the period.', 'FALSE — Working capital increases use cash without moving through profit the same way, which is part of why profit and operating cash flow diverge.'], '3/5', 12, 'full' ),
+( '6.2', 'CASE 6.2.012', 'Negative Investing Cash Flow Explained', 'Consider the following cash flow statement extract (€) for a furniture maker.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 35600 |
+| Cash flow from investing activities | (10800) |
+| Cash flow from financing activities | 6820 |
+| Net change in cash and cash equivalents | **31620** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 53,220 euros on extract 7.', 'The operating figure alone of 35,600 euros is already the full net change on extract 7.', 'On extract 7, cash and cash equivalents change by 31,620 euros in total.', 'Purchases recorded under investing total an outflow of 10,800 euros on extract 7.', 'The investing line on extract 7 reports cash received of 10,800 euros.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Investing must be subtracted; correct net change is 31,620 euros.', 'FALSE — That ignores investing and financing; correct net is 31,620 euros.', 'TRUE — Operating 35600 − investing 10800 + financing 6820 = 31620.', 'TRUE — The investing line is (10800).', 'FALSE — Investing is an outflow of 10,800 euros.'], '3/5', 12, 'full' ),
 ( '6.2', 'CASE 6.2.013', 'Cash Flow Mix Over Two Years 13', 'Consider the cash flow extract below (€ thousands).
 
 [[CHART type="bar" title="Operating and investing cash flows"]]
@@ -2808,7 +2839,7 @@ Year 2 | Operating=145 | Investing=-241
 | Cash and cash equivalents at end of the year | 100 | 78 |
 
 Evaluate the following economic assertions:', ARRAY['Year 2 investing outflow exceeds 195.1% of Year 2 operating cash flow.', 'Operating cash flow grew by more than 16.8% between Year 1 and Year 2.', 'Year 2 ending cash equals €50 thousand.', 'Year-end cash fell by more than 16.6% from Year 1 to Year 2.', 'Year 2 operating cash flow equals €161 thousand.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Investing/operating ≈ 166.2%.', 'TRUE — Operating cash flow changed by about 19.8% between the two years.', 'FALSE — Ending cash = €78 thousand.', 'TRUE — End-cash change ≈ 22.0%.', 'FALSE — Operating cash flow = €145 thousand.'], '3/5', 13, 'full' ),
-( '6.2', 'CASE 6.2.014', 'Collecting a Trade Receivable', 'Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:', ARRAY['A business that reports a profit for the year can never see its cash and cash equivalents fall over that same year.', 'A bakery buys commercial ovens for 24,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 6,000 euros of depreciation in each of those years.', 'When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.', 'Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its book value, also called its carrying value.', 'A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Non-cash charges and timing differences mean a profitable business can still see its cash balance fall during the year.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 5,500 euros, not 6,000 euros.', 'TRUE — Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.', 'TRUE — Book value equals original cost less the depreciation built up against the asset since it was acquired.', 'TRUE — Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow.'], '3/5', 14, 'full' ),
+( '6.2', 'CASE 6.2.014', 'Collecting a Trade Receivable', 'Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:', ARRAY['A business that reports a profit for the year can never see its cash and cash equivalents fall over that same year.', 'Straight-line annual depreciation on commercial ovens bought by a bakery is 6,000 euros when residual value is ignored.', 'When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.', 'Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value.', 'A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Non-cash charges and timing differences mean a profitable business can still see its cash balance fall during the year.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 5,500 euros.', 'TRUE — Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.', 'TRUE — Carrying value equals original cost less the depreciation built up against the asset since it was acquired.', 'TRUE — Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow.'], '3/5', 14, 'full' ),
 ( '6.2', 'CASE 6.2.015', 'Revenue and Operating Result Chart 15', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -2847,26 +2878,49 @@ Computer equipment | Annual depreciation=7333
 | Asset C – Computer equipment | €22,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['Residual value of the €57,000 delivery truck is ignored when calculating its annual depreciation.', 'Combined annual depreciation for the three assets is €32,833.', 'After three years, more than 34% of the machinery''s purchase price has been depreciated.', 'The delivery truck''s annual depreciation charge is more than 71.5% higher than the computer equipment''s annual depreciation charge.', 'The machinery accounts for more than 58.8% of the combined annual depreciation charge.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Residual value is deducted from cost before spreading the remainder.', 'TRUE — Sum of annual charges ≈ €32,833.', 'FALSE — About 30.0% of the machinery''s cost is depreciated after three years.', 'FALSE — Delivery truck ≈ €8,500 a year versus computer equipment ≈ €7,333 a year.', 'FALSE — Machinery''s share of the combined charge ≈ 51.8%.'], '5/5', 16, 'full' ),
-( '6.2', 'CASE 6.2.017', 'Repaying a Long-Term Loan', 'Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:', ARRAY['A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing.', 'A bakery buys commercial ovens for 24,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 5,500 euros of depreciation in each of those years.', 'A bakery recorded its commercial ovens at a cost of 24,000 euros and depreciates it on the straight-line method by 5,500 euros a year; after two years of use, its book value would be 13,000 euros.', 'A software developer recorded its office computer equipment at a cost of 42,000 euros and depreciates it on the straight-line method by 3,680 euros a year; after two years of use, its book value would be 34,640 euros.', 'A fitness club chain recorded its exercise equipment at a cost of 91,500 euros and depreciates it on the straight-line method by 21,775 euros a year; after two years of use, its book value would be 47,950 euros.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.', 'TRUE — Spreading the depreciable amount of 22,000 euros evenly over 4 years gives an annual charge of 5,500 euros.', 'TRUE — Deducting two years of depreciation, 11,000 euros in total, from the original cost of 24,000 euros leaves a book value of 13,000 euros.', 'TRUE — Deducting two years of depreciation, 7,360 euros in total, from the original cost of 42,000 euros leaves a book value of 34,640 euros.', 'TRUE — Deducting two years of depreciation, 43,550 euros in total, from the original cost of 91,500 euros leaves a book value of 47,950 euros.'], '4/5', 17, 'full' ),
-( '6.2', 'CASE 6.2.018', 'Net Change in Cash and Cash Equivalents', 'Analyze how the straight-line method spreads the depreciable amount of an asset evenly over its useful life. Evaluate the following economic assertions:', ARRAY['A restaurant chain recorded its commercial refrigerators at a cost of 96,000 euros and depreciates it on the straight-line method by 18,160 euros a year; after two years of use, its book value would be 59,680 euros.', 'A courier firm buys delivery vans for 28,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 5,700 euros of depreciation in each of those years.', 'A software developer buys office computer equipment for 42,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 4,200 euros of depreciation in each of those years.', 'A courier firm recorded its delivery vans at a cost of 28,500 euros and depreciates it on the straight-line method by 5,140 euros a year; after two years of use, its book value would be 38,780 euros.', 'A IT consultancy recorded its laptop computers at a cost of 100,500 euros and depreciates it on the straight-line method by 15,750 euros a year; after two years of use, its book value would be 69,000 euros.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Deducting two years of depreciation, 36,320 euros in total, from the original cost of 96,000 euros leaves a book value of 59,680 euros.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 5,140 euros, not 5,700 euros.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 3,680 euros, not 4,200 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 18,220 euros, not 38,780 euros.', 'TRUE — Deducting two years of depreciation, 31,500 euros in total, from the original cost of 100,500 euros leaves a book value of 69,000 euros.'], '5/5', 18, 'full' ),
-( '6.2', 'CASE 6.2.019', 'Cash Flow Mix Over Two Years 19', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.017', 'Repaying a Long-Term Loan', 'Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:', ARRAY['A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing.', 'Straight-line annual depreciation on commercial ovens bought by a bakery is 5,500 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on delivery vans bought by a courier firm is 5,140 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on kitchen equipment bought by a hotel chain is 4,125 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on woodworking machinery bought by a furniture maker is 9,800 euros when cost, residual value and useful life are applied correctly.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.', 'TRUE — That is the correct annual straight-line charge for this commercial ovens.', 'TRUE — That is the correct annual straight-line charge for this delivery vans.', 'TRUE — That is the correct annual straight-line charge for this kitchen equipment.', 'TRUE — That is the correct annual straight-line charge for this woodworking machinery.'], '4/5', 17, 'full' ),
+( '6.2', 'CASE 6.2.018', 'Net Change in Cash and Cash Equivalents', 'Consider the following cash flow statement extract (€) for a printing company.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=154 | Investing=-109
-Year 2 | Operating=167 | Investing=-211
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 40400 |
+| Cash flow from investing activities | (16200) |
+| Cash flow from financing activities | (5820) |
+| Net change in cash and cash equivalents | **18380** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 10, cash and cash equivalents change by 18,380 euros in total.', 'Treating the investing line as an addition, total cash would change by 50,780 euros on extract 10.', 'The operating figure alone of 40,400 euros is already the full net change on extract 10.', 'The investing line on extract 10 reports cash received of 16,200 euros.', 'Purchases recorded under investing total an outflow of 16,200 euros on extract 10.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Operating 40400 − investing 16200 − financing 5820 = 18380.', 'FALSE — Investing must be subtracted; correct net change is 18,380 euros.', 'FALSE — That ignores investing and financing; correct net is 18,380 euros.', 'FALSE — Investing is an outflow of 16,200 euros.', 'TRUE — The investing line is (16200).'], '5/5', 18, 'full' ),
+( '6.2', 'CASE 6.2.019', 'Asset Composition Chart 19', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
+
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=314
+Current liabilities=230
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 185 | 226 |
-| Cash flow from operating activities | 154 | 167 |
-| Cash flow from investing activities | (109) | (211) |
-| Cash flow from financing activities | 40 | 105 |
-| Change in cash and cash equivalents | 85 | 61 |
-| Cash and cash equivalents at end of the year | 128 | 113 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 516 |
+| Machinery | 236 |
+| Office equipment | 37 |
+| Patents, trademarks and licences | 49 |
+| Inventory | 80 |
+| Trade receivables | 133 |
+| Cash and cash equivalents | 101 |
+| Total assets | **1152** |
+| **EQUITY** | |
+| Share capital | 109 |
+| Retained earnings | 549 |
+| Total equity | **658** |
+| **LIABILITIES** | |
+| Long-term bank loan | 189 |
+| Bonds payable | 75 |
+| Trade payables | 175 |
+| Bank overdraft | 55 |
+| Total liabilities | **494** |
+| Total equity and liabilities | **1152** |
 
-Evaluate the following economic assertions:', ARRAY['Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.019).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.019).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.019).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.019).', 'Year 2 operating cash flow equals €167 thousand (see the extract prepared for case 6.2.019).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — 167 vs 226.', 'TRUE — Investing: -109, -211.', 'TRUE — Financing Year 2 = 105.', 'TRUE — Year 1 change = 85.', 'TRUE — Operating cash flow = €167 thousand.'], '5/5', 19, 'full' ),
-( '6.2', 'CASE 6.2.020', 'Depreciation and Asset Wear', 'Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:', ARRAY['A publishing house recorded its binding machines at a cost of 105,000 euros and depreciates it on the straight-line method by 12,875 euros a year; after two years of use, its book value would be 79,250 euros.', 'A car parts manufacturer recorded its stamping presses at a cost of 109,500 euros and depreciates it on the straight-line method by 10,670 euros a year; after two years of use, its book value would be 88,160 euros.', 'A packaging manufacturer recorded its packaging machinery at a cost of 114,000 euros and depreciates it on the straight-line method by 27,600 euros a year; after two years of use, its book value would be 58,800 euros.', 'A catering company recorded its catering vans at a cost of 118,500 euros and depreciates it on the straight-line method by 22,820 euros a year; after two years of use, its book value would be 72,860 euros.', 'A ceramics workshop recorded its kiln equipment at a cost of 127,500 euros and depreciates it on the straight-line method by 15,175 euros a year; after two years of use, its book value would be 97,150 euros.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Deducting two years of depreciation, 25,750 euros in total, from the original cost of 105,000 euros leaves a book value of 79,250 euros.', 'TRUE — Deducting two years of depreciation, 21,340 euros in total, from the original cost of 109,500 euros leaves a book value of 88,160 euros.', 'TRUE — Deducting two years of depreciation, 55,200 euros in total, from the original cost of 114,000 euros leaves a book value of 58,800 euros.', 'TRUE — Deducting two years of depreciation, 45,640 euros in total, from the original cost of 118,500 euros leaves a book value of 72,860 euros.', 'TRUE — Deducting two years of depreciation, 30,350 euros in total, from the original cost of 127,500 euros leaves a book value of 97,150 euros.'], '2/5', 20, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.27.', 'Working capital of €84 thousand is positive on this balance sheet.', 'Trade receivables make up less than 52.8% of current assets.', 'Cash and cash equivalents make up more than 12.4% of current assets.', 'Inventory of €80 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio ≈ 1.37.', 'TRUE — Working capital = 84.', 'TRUE — Trade receivables are about 42.4% of current assets.', 'TRUE — Cash and cash equivalents are about 32.2% of current assets.', 'TRUE — Inventory is always a current asset.'], '5/5', 19, 'full' ),
+( '6.2', 'CASE 6.2.020', 'Depreciation and Asset Wear', 'Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:', ARRAY['Straight-line annual depreciation on printing press bought by a printing company is 6,010 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on point-of-sale tills bought by a electronics retailer is 13,500 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on refrigerated trucks bought by a dairy processor is 9,950 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on dispensing equipment bought by a pharmacy chain is 8,340 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on binding machines bought by a publishing house is 12,875 euros when cost, residual value and useful life are applied correctly.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — That is the correct annual straight-line charge for this printing press.', 'TRUE — That is the correct annual straight-line charge for this point-of-sale tills.', 'TRUE — That is the correct annual straight-line charge for this refrigerated trucks.', 'TRUE — That is the correct annual straight-line charge for this dispensing equipment.', 'TRUE — That is the correct annual straight-line charge for this binding machines.'], '2/5', 20, 'full' ),
 ( '6.2', 'CASE 6.2.021', 'Liquidity From the Balance Sheet 21', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -2898,7 +2952,7 @@ Current liabilities=176
 | Total equity and liabilities | **890** |
 
 Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.28.', 'Buildings make up more than 48.3% of total assets.', 'Cash and cash equivalents make up more than 22.6% of current assets.', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 33.1%.', 'The current ratio exceeds 1.21.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Current ratio ≈ 1.31.', 'FALSE — Buildings are about 39.4% of total assets.', 'FALSE — Cash and cash equivalents are about 13.0% of current assets.', 'FALSE — Long-term financing covers non-current assets by about 8.2%.', 'TRUE — Current ratio ≈ 1.31.'], '5/5', 21, 'full' ),
-( '6.2', 'CASE 6.2.022', 'Depreciation as a Non-Cash Expense', 'Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:', ARRAY['A construction firm recorded its heavy construction machinery at a cost of 33,000 euros and depreciates it on the straight-line method by 4,900 euros a year; after two years of use, its book value would be 42,800 euros.', 'A hotel chain recorded its kitchen equipment at a cost of 37,500 euros and depreciates it on the straight-line method by 4,125 euros a year; after two years of use, its book value would be 45,750 euros.', 'A bakery has used its commercial ovens for three years and charges 5,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 16,500 euros.', 'A software developer recorded its office computer equipment at a cost of 42,000 euros and depreciates it on the straight-line method by 3,680 euros a year; after two years of use, its book value would be 49,360 euros.', 'A printing company recorded its printing press at a cost of 64,500 euros and depreciates it on the straight-line method by 6,010 euros a year; after two years of use, its book value would be 76,520 euros.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 23,200 euros, not 42,800 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 29,250 euros, not 45,750 euros.', 'TRUE — Multiplying the annual charge of 5,500 euros by the three years the asset has been used gives accumulated depreciation of 16,500 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 34,640 euros, not 49,360 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 52,480 euros, not 76,520 euros.'], '2/5', 22, 'full' ),
+( '6.2', 'CASE 6.2.022', 'Depreciation as a Non-Cash Expense', 'Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:', ARRAY['Straight-line annual depreciation on office computer equipment bought by a software developer is 4,200 euros when residual value is ignored.', 'Straight-line annual depreciation on diagnostic equipment bought by a garage is 11,625 euros when residual value is ignored.', 'Straight-line annual depreciation on stamping presses bought by a car parts manufacturer is 10,670 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on woodworking machinery bought by a furniture maker is 10,200 euros when residual value is ignored.', 'Straight-line annual depreciation on brewing tanks bought by a brewery is 9,250 euros when residual value is ignored.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Ignoring residual value overstates the charge; the correct annual amount is 3,680 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 10,125 euros.', 'TRUE — That is the correct annual straight-line charge for this stamping presses.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 9,800 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 8,750 euros.'], '2/5', 22, 'full' ),
 ( '6.2', 'CASE 6.2.023', 'Cash Flow Mix Over Two Years 23', 'Consider the cash flow extract below (€ thousands).
 
 [[CHART type="bar" title="Operating and investing cash flows"]]
@@ -2939,8 +2993,17 @@ Year 2 | Revenue=1158 | Operating result=290
 | Profit for the year | 175 | 208 |
 
 Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 9.7% between Year 1 and Year 2.', 'The gross profit margin, gross profit taken as a share of revenue, is more than 5.5 percentage points higher in Year 2 than in Year 1.', 'Finance costs grew by more than 40% between Year 1 and Year 2, outpacing the growth in the operating result.', 'The operating result covers finance costs more than 5.39 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 19.5% in Year 2.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Revenue changed by about 19.8% between the two years.', 'FALSE — Gross margins were 34.1% then 34.2%.', 'TRUE — Finance costs moved from 15 to 22; operating result moved from 241 to 290.', 'TRUE — Interest coverage in Year 1 ≈ 16.1 times.', 'TRUE — Operating margin in Year 2 ≈ 25.0%.'], '3/5', 24, 'full' ),
-( '6.2', 'CASE 6.2.025', 'Straight-Line Depreciation Method', 'Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:', ARRAY['A arable farm recorded its tractor at a cost of 69,000 euros and depreciates it on the straight-line method by 15,950 euros a year; after two years of use, its book value would be 100,900 euros.', 'A courier firm has used its delivery vans for three years and charges 5,140 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 15,420 euros.', 'A electronics retailer recorded its point-of-sale tills at a cost of 73,500 euros and depreciates it on the straight-line method by 13,500 euros a year; after two years of use, its book value would be 100,500 euros.', 'A hotel chain has used its kitchen equipment for three years and charges 4,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 12,375 euros.', 'A furniture maker has used its woodworking machinery for three years and charges 9,800 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 29,400 euros.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 37,100 euros, not 100,900 euros.', 'TRUE — Multiplying the annual charge of 5,140 euros by the three years the asset has been used gives accumulated depreciation of 15,420 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 46,500 euros, not 100,500 euros.', 'TRUE — Multiplying the annual charge of 4,125 euros by the three years the asset has been used gives accumulated depreciation of 12,375 euros.', 'TRUE — Multiplying the annual charge of 9,800 euros by the three years the asset has been used gives accumulated depreciation of 29,400 euros.'], '2/5', 25, 'full' ),
-( '6.2', 'CASE 6.2.026', 'Book Value After Depreciation', 'Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:', ARRAY['A brewery has used its brewing tanks for three years and charges 8,750 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 26,250 euros.', 'A logistics company recorded its forklift trucks at a cost of 78,000 euros and depreciates it on the straight-line method by 12,650 euros a year; after two years of use, its book value would be 103,300 euros.', 'A fitness club chain has used its exercise equipment for three years and charges 21,775 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 65,325 euros.', 'A car parts manufacturer has used its stamping presses for three years and charges 10,670 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 32,010 euros.', 'A dairy processor recorded its refrigerated trucks at a cost of 82,500 euros and depreciates it on the straight-line method by 9,950 euros a year; after two years of use, its book value would be 102,400 euros.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Multiplying the annual charge of 8,750 euros by the three years the asset has been used gives accumulated depreciation of 26,250 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 52,700 euros, not 103,300 euros.', 'TRUE — Multiplying the annual charge of 21,775 euros by the three years the asset has been used gives accumulated depreciation of 65,325 euros.', 'TRUE — Multiplying the annual charge of 10,670 euros by the three years the asset has been used gives accumulated depreciation of 32,010 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 62,600 euros, not 102,400 euros.'], '5/5', 26, 'full' ),
+( '6.2', 'CASE 6.2.025', 'Straight-Line Depreciation Method', 'Consider the following cash flow statement extract (€) for a logistics company.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 45200 |
+| Cash flow from investing activities | (12600) |
+| Cash flow from financing activities | 8140 |
+| Net change in cash and cash equivalents | **40740** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 65,940 euros on extract 13.', 'On extract 13, cash and cash equivalents change by 40,740 euros in total.', 'The operating figure alone of 45,200 euros is already the full net change on extract 13.', 'Purchases recorded under investing total an outflow of 12,600 euros on extract 13.', 'Financing activities add 8,140 euros to cash on extract 13.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Investing must be subtracted; correct net change is 40,740 euros.', 'TRUE — Operating 45200 − investing 12600 + financing 8140 = 40740.', 'FALSE — That ignores investing and financing; correct net is 40,740 euros.', 'TRUE — The investing line is (12600).', 'TRUE — Financing is an inflow of 8,140 euros.'], '2/5', 25, 'full' ),
+( '6.2', 'CASE 6.2.026', 'Book Value After Depreciation', 'Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a courier firm''s delivery vans is 18,220 euros.', 'Straight-line annual depreciation on tractor bought by a arable farm is 17,250 euros when residual value is ignored.', 'After two years, the carrying value of a construction firm''s heavy construction machinery is 23,200 euros.', 'After two years, the carrying value of a hotel chain''s kitchen equipment is 29,250 euros.', 'Straight-line annual depreciation on point-of-sale tills bought by a electronics retailer is 14,700 euros when residual value is ignored.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Cost less two years of depreciation leaves 18,220 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,950 euros.', 'TRUE — Cost less two years of depreciation leaves 23,200 euros.', 'TRUE — Cost less two years of depreciation leaves 29,250 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 13,500 euros.'], '5/5', 26, 'full' ),
 ( '6.2', 'CASE 6.2.027', 'Annual Depreciation Chart 27', 'A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.
 
 [[CHART type="bar" title="Annual depreciation by asset"]]
@@ -2956,24 +3019,38 @@ Computer equipment | Annual depreciation=6667
 | Asset C – Computer equipment | €20,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['After three years, the computer equipment, originally costing €20,000, is fully written down to nil.', 'Combined annual depreciation for the three assets is €32,858.', 'After three years, the delivery truck''s book value is €33,574.', 'Residual value of the €52,000 delivery truck is ignored when calculating its annual depreciation.', 'After three years, the combined book value of all three assets exceeds €120,260.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Useful life is 3 years with no residual value.', 'FALSE — Sum of annual charges ≈ €35,417.', 'FALSE — Book value ≈ €29,500.', 'FALSE — Residual value is deducted from cost before spreading the remainder.', 'TRUE — Combined book value ≈ €135,750.'], '5/5', 27, 'full' ),
-( '6.2', 'CASE 6.2.028', 'Cash Flow Statement Over Two Years 28', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.028', 'Asset Composition Chart 28', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=165 | Investing=-133
-Year 2 | Operating=178 | Investing=-203
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=403
+Current liabilities=283
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 193 | 239 |
-| Cash flow from operating activities | 165 | 178 |
-| Cash flow from investing activities | (133) | (203) |
-| Cash flow from financing activities | 45 | 112 |
-| Change in cash and cash equivalents | 77 | 87 |
-| Cash and cash equivalents at end of the year | 119 | 108 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 422 |
+| Machinery | 166 |
+| Office equipment | 79 |
+| Patents, trademarks and licences | 93 |
+| Inventory | 141 |
+| Trade receivables | 161 |
+| Cash and cash equivalents | 101 |
+| Total assets | **1163** |
+| **EQUITY** | |
+| Share capital | 121 |
+| Retained earnings | 452 |
+| Total equity | **573** |
+| **LIABILITIES** | |
+| Long-term bank loan | 239 |
+| Bonds payable | 68 |
+| Trade payables | 237 |
+| Bank overdraft | 46 |
+| Total liabilities | **590** |
+| Total equity and liabilities | **1163** |
 
-Evaluate the following economic assertions:', ARRAY['Operating cash flow grew by more than 18.5% between Year 1 and Year 2 (see the extract prepared for case 6.2.028).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.028).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.028).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.028).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.028).'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Operating cash flow changed by about 7.9% between the two years.', 'TRUE — 178 vs 239.', 'TRUE — Investing: -133, -203.', 'TRUE — Financing Year 2 = 112.', 'TRUE — Year 1 change = 77.'], '5/5', 28, 'full' ),
-( '6.2', 'CASE 6.2.029', 'Land and Non-Depreciable Assets', 'Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:', ARRAY['A pharmacy chain recorded its dispensing equipment at a cost of 87,000 euros and depreciates it on the straight-line method by 8,340 euros a year; after two years of use, its book value would be 103,680 euros.', 'A packaging manufacturer has used its packaging machinery for three years and charges 27,600 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 82,800 euros.', 'A fitness club chain recorded its exercise equipment at a cost of 91,500 euros and depreciates it on the straight-line method by 21,775 euros a year; after two years of use, its book value would be 135,050 euros.', 'During one year, a bakery generated 26,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new commercial ovens, and received 5,500 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,500 euros over the year.', 'A restaurant chain recorded its commercial refrigerators at a cost of 96,000 euros and depreciates it on the straight-line method by 18,160 euros a year; after two years of use, its book value would be 132,320 euros.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 70,320 euros, not 103,680 euros.', 'TRUE — Multiplying the annual charge of 27,600 euros by the three years the asset has been used gives accumulated depreciation of 82,800 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 47,950 euros, not 135,050 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,500 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 59,680 euros, not 132,320 euros.'], '4/5', 29, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.78.', 'The current ratio exceeds 1.35.', 'Working capital of €120 thousand is positive on this balance sheet.', 'Inventory make up more than 31.7% of current assets.', 'Trade receivables make up less than 41% of current assets.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Current ratio ≈ 1.42.', 'TRUE — Current ratio ≈ 1.42.', 'TRUE — Working capital = 120.', 'TRUE — Inventory are about 35.0% of current assets.', 'TRUE — Trade receivables are about 40.0% of current assets.'], '5/5', 28, 'full' ),
+( '6.2', 'CASE 6.2.029', 'Land and Non-Depreciable Assets', 'Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:', ARRAY['Straight-line annual depreciation on forklift trucks bought by a logistics company is 13,000 euros when residual value is ignored.', 'After two years, the carrying value of a software developer''s office computer equipment is 34,640 euros.', 'Straight-line annual depreciation on refrigerated trucks bought by a dairy processor is 10,313 euros when residual value is ignored.', 'After two years, the carrying value of a garage''s diagnostic equipment is 26,250 euros.', 'Straight-line annual depreciation on dispensing equipment bought by a pharmacy chain is 8,700 euros when residual value is ignored.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Ignoring residual value overstates the charge; the correct annual amount is 12,650 euros.', 'TRUE — Cost less two years of depreciation leaves 34,640 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 9,950 euros.', 'TRUE — Cost less two years of depreciation leaves 26,250 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 8,340 euros.'], '4/5', 29, 'full' ),
 ( '6.2', 'CASE 6.2.030', 'Liquidity From the Balance Sheet 30', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3022,8 +3099,17 @@ Year 2 | Operating=146 | Investing=-193
 | Cash and cash equivalents at end of the year | 98 | 90 |
 
 Evaluate the following economic assertions:', ARRAY['Year 2 ending cash equals €90 thousand.', 'Operating cash flow grew by more than 19.6% between Year 1 and Year 2.', 'Year 2 operating cash flow equals €146 thousand.', 'Year 2 investing outflow exceeds 186.9% of Year 2 operating cash flow.', 'Year-end cash fell by more than 13.5% from Year 1 to Year 2.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Ending cash = €90 thousand.', 'FALSE — Operating cash flow changed by about 15.9% between the two years.', 'TRUE — Operating cash flow = €146 thousand.', 'FALSE — Investing/operating ≈ 132.2%.', 'FALSE — End-cash change ≈ 8.2%.'], '3/5', 31, 'full' ),
-( '6.2', 'CASE 6.2.032', 'Profit Raises Equity', 'Analyze how non-cash items such as depreciation cause profit and cash flow to diverge. Evaluate the following economic assertions:', ARRAY['A IT consultancy recorded its laptop computers at a cost of 100,500 euros and depreciates it on the straight-line method by 15,750 euros a year; after two years of use, its book value would be 132,000 euros.', 'During one year, a courier firm generated 27,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new delivery vans, and used 4,380 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 12,420 euros over the year.', 'During one year, a construction firm generated 29,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new heavy construction machinery, and received 5,940 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,540 euros over the year.', 'A publishing house recorded its binding machines at a cost of 105,000 euros and depreciates it on the straight-line method by 12,875 euros a year; after two years of use, its book value would be 130,750 euros.', 'During one year, a hotel chain generated 30,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kitchen equipment, and used 4,740 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 11,660 euros over the year.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 69,000 euros, not 132,000 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 12,420 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,540 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 79,250 euros, not 130,750 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 11,660 euros.'], '5/5', 32, 'full' ),
-( '6.2', 'CASE 6.2.033', 'Loss Reduces Equity', 'Review the three sections of a cash flow statement: operating, investing and financing activities. Evaluate the following economic assertions:', ARRAY['During one year, a software developer generated 32,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new office computer equipment, and received 6,380 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,580 euros over the year.', 'During one year, a garage generated 34,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new diagnostic equipment, and used 5,100 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 19,900 euros over the year.', 'During one year, a furniture maker generated 35,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new woodworking machinery, and received 6,820 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 31,620 euros over the year.', 'During one year, a brewery generated 37,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new brewing tanks, and used 5,460 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 19,140 euros over the year.', 'During one year, a electronics retailer generated 43,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new point-of-sale tills, and used 6,180 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 26,620 euros over the year.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,580 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 19,900 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 31,620 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 19,140 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 26,620 euros.'], '5/5', 33, 'full' ),
+( '6.2', 'CASE 6.2.032', 'Profit Raises Equity', 'Consider the following cash flow statement extract (€) for a fitness club chain.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 50000 |
+| Cash flow from investing activities | (9000) |
+| Cash flow from financing activities | (6900) |
+| Net change in cash and cash equivalents | **34100** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 52,100 euros on extract 16.', 'On extract 16, cash and cash equivalents change by 34,100 euros in total.', 'Purchases recorded under investing total an outflow of 9,000 euros on extract 16.', 'The operating figure alone of 50,000 euros is already the full net change on extract 16.', 'Financing activities remove 6,900 euros from cash on extract 16.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Investing must be subtracted; correct net change is 34,100 euros.', 'TRUE — Operating 50000 − investing 9000 − financing 6900 = 34100.', 'TRUE — The investing line is (9000).', 'FALSE — That ignores investing and financing; correct net is 34,100 euros.', 'TRUE — Financing is an outflow of 6,900 euros.'], '5/5', 32, 'full' ),
+( '6.2', 'CASE 6.2.033', 'Loss Reduces Equity', 'Review the three sections of a cash flow statement: operating, investing and financing activities. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a printing company''s printing press is 52,480 euros.', 'After two years, the carrying value of a arable farm''s tractor is 37,100 euros.', 'After two years, the carrying value of a electronics retailer''s point-of-sale tills is 46,500 euros.', 'After two years, the carrying value of a logistics company''s forklift trucks is 52,700 euros.', 'After two years, the carrying value of a dairy processor''s refrigerated trucks is 62,600 euros.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Cost less two years of depreciation leaves 52,480 euros.', 'TRUE — Cost less two years of depreciation leaves 37,100 euros.', 'TRUE — Cost less two years of depreciation leaves 46,500 euros.', 'TRUE — Cost less two years of depreciation leaves 52,700 euros.', 'TRUE — Cost less two years of depreciation leaves 62,600 euros.'], '5/5', 33, 'full' ),
 ( '6.2', 'CASE 6.2.034', 'Profit and Loss Over Two Years 34', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3062,25 +3148,48 @@ Computer equipment | Annual depreciation=6000
 | Asset C – Computer equipment | €18,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['Combined annual depreciation for the three assets is €24,273.', 'After three years, the computer equipment, originally costing €18,000, is fully written down to nil.', 'After three years, the combined book value of all three assets exceeds €106,072.', 'Without recording depreciation on the €124,000 machinery, non-current assets on the balance sheet would be overstated.', 'After three years, the delivery truck''s book value is €28,880.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Sum of annual charges ≈ €24,273.', 'TRUE — Useful life is 3 years with no residual value.', 'TRUE — Combined book value ≈ €115,182.', 'TRUE — Assets would stay at historical cost without write-downs.', 'FALSE — Book value ≈ €25,000.'], '5/5', 35, 'full' ),
-( '6.2', 'CASE 6.2.036', 'Cash Flow Statement Over Two Years 36', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.036', 'Liquidity From the Balance Sheet 36', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=127 | Investing=-180
-Year 2 | Operating=149 | Investing=-259
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=356
+Current liabilities=182
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 156 | 185 |
-| Cash flow from operating activities | 127 | 149 |
-| Cash flow from investing activities | (180) | (259) |
-| Cash flow from financing activities | 51 | 112 |
-| Change in cash and cash equivalents | -2 | 2 |
-| Cash and cash equivalents at end of the year | 112 | 102 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 427 |
+| Machinery | 207 |
+| Office equipment | 30 |
+| Patents, trademarks and licences | 53 |
+| Inventory | 164 |
+| Trade receivables | 92 |
+| Cash and cash equivalents | 100 |
+| Total assets | **1073** |
+| **EQUITY** | |
+| Share capital | 147 |
+| Retained earnings | 329 |
+| Total equity | **476** |
+| **LIABILITIES** | |
+| Long-term bank loan | 329 |
+| Bonds payable | 86 |
+| Trade payables | 156 |
+| Bank overdraft | 26 |
+| Total liabilities | **597** |
+| Total equity and liabilities | **1073** |
 
-Evaluate the following economic assertions:', ARRAY['Year-end cash fell by more than 16.7% from Year 1 to Year 2 (see the extract prepared for case 6.2.036).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.036).', 'Negative investing cash flow always means the business is failing (see the extract prepared for case 6.2.036).', 'Operating cash flow grew by more than 8.5% between Year 1 and Year 2 (see the extract prepared for case 6.2.036).', 'Year 2 investing outflow exceeds 168.3% of Year 2 operating cash flow (see the extract prepared for case 6.2.036).'], ARRAY[false, false, false, true, true], ARRAY['FALSE — End-cash change ≈ 8.9%.', 'FALSE — Year 1 change = -2.', 'FALSE — It often reflects asset purchases.', 'TRUE — Operating cash flow changed by about 17.3% between the two years.', 'TRUE — Investing/operating ≈ 173.8%.'], '5/5', 36, 'full' ),
-( '6.2', 'CASE 6.2.037', 'Profit Versus Cash Flow', 'Analyze which section of the cash flow statement reflects cash movements from core trading activities. Evaluate the following economic assertions:', ARRAY['During one year, a logistics company generated 45,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new forklift trucks, and received 8,140 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,740 euros over the year.', 'A car parts manufacturer recorded its stamping presses at a cost of 109,500 euros and depreciates it on the straight-line method by 10,670 euros a year; after two years of use, its book value would be 130,840 euros.', 'During one year, a dairy processor generated 46,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new refrigerated trucks, and used 6,540 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 25,860 euros over the year.', 'A packaging manufacturer recorded its packaging machinery at a cost of 114,000 euros and depreciates it on the straight-line method by 27,600 euros a year; after two years of use, its book value would be 169,200 euros.', 'During one year, a fitness club chain generated 50,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new exercise equipment, and used 6,900 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 34,100 euros over the year.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,740 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 88,160 euros, not 130,840 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 25,860 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 58,800 euros, not 169,200 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 34,100 euros.'], '5/5', 37, 'full' ),
-( '6.2', 'CASE 6.2.038', 'Turnover and the Balance Sheet', 'Consider a bakery that installed new commercial ovens and wants to see how the purchase flows through its statement of profit and loss, cash flow statement and balance sheet. Evaluate the following economic assertions:', ARRAY['During one year, a restaurant chain generated 51,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new commercial refrigerators, and received 9,020 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 49,820 euros over the year.', 'A catering company recorded its catering vans at a cost of 118,500 euros and depreciates it on the straight-line method by 22,820 euros a year; after two years of use, its book value would be 164,140 euros.', 'During one year, a IT consultancy generated 53,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new laptop computers, and used 7,260 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 33,340 euros over the year.', 'A recycling firm recorded its sorting machinery at a cost of 123,000 euros and depreciates it on the straight-line method by 19,600 euros a year; after two years of use, its book value would be 162,200 euros.', 'A ceramics workshop recorded its kiln equipment at a cost of 127,500 euros and depreciates it on the straight-line method by 15,175 euros a year; after two years of use, its book value would be 157,850 euros.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 49,820 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 72,860 euros, not 164,140 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 33,340 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 83,800 euros, not 162,200 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 97,150 euros, not 157,850 euros.'], '4/5', 38, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.18.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.07 times over.', 'The equity ratio is below 21%.', 'Working capital of €174 thousand is positive on this balance sheet.', 'Trade receivables make up less than 44.2% of current assets.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — Current ratio ≈ 1.96.', 'FALSE — Acid-test ratio ≈ 1.05.', 'FALSE — Equity ratio ≈ 44.4%.', 'TRUE — Working capital = 174.', 'TRUE — Trade receivables are about 25.8% of current assets.'], '5/5', 36, 'full' ),
+( '6.2', 'CASE 6.2.037', 'Profit Versus Cash Flow', 'Analyze which section of the cash flow statement reflects cash movements from core trading activities. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a pharmacy chain''s dispensing equipment is 70,320 euros.', 'Straight-line annual depreciation on laptop computers bought by a IT consultancy is 16,750 euros when residual value is ignored.', 'After two years, the carrying value of a fitness club chain''s exercise equipment is 47,950 euros.', 'Straight-line annual depreciation on binding machines bought by a publishing house is 13,125 euros when residual value is ignored.', 'After two years, the carrying value of a restaurant chain''s commercial refrigerators is 59,680 euros.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Cost less two years of depreciation leaves 70,320 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,750 euros.', 'TRUE — Cost less two years of depreciation leaves 47,950 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 12,875 euros.', 'TRUE — Cost less two years of depreciation leaves 59,680 euros.'], '5/5', 37, 'full' ),
+( '6.2', 'CASE 6.2.038', 'Turnover and the Balance Sheet', 'Consider the following cash flow statement extract (€) for a publishing house.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 54800 |
+| Cash flow from investing activities | (14400) |
+| Cash flow from financing activities | 9460 |
+| Net change in cash and cash equivalents | **49860** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 19, cash and cash equivalents change by 49,860 euros in total.', 'Treating the investing line as an addition, total cash would change by 78,660 euros on extract 19.', 'Purchases recorded under investing total an outflow of 14,400 euros on extract 19.', 'The operating figure alone of 54,800 euros is already the full net change on extract 19.', 'The investing line on extract 19 reports cash received of 14,400 euros.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Operating 54800 − investing 14400 + financing 9460 = 49860.', 'FALSE — Investing must be subtracted; correct net change is 49,860 euros.', 'TRUE — The investing line is (14400).', 'FALSE — That ignores investing and financing; correct net is 49,860 euros.', 'FALSE — Investing is an outflow of 14,400 euros.'], '4/5', 38, 'full' ),
 ( '6.2', 'CASE 6.2.039', 'Liquidity From the Balance Sheet 39', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3152,8 +3261,8 @@ Year 2 | Revenue=1073 | Operating result=310
 | Profit for the year | 198 | 223 |
 
 Evaluate the following economic assertions:', ARRAY['Finance costs grew by more than 18.3% between Year 1 and Year 2, outpacing the growth in the operating result.', 'The gross profit margin, gross profit taken as a share of revenue, is more than 6 percentage points higher in Year 2 than in Year 1.', 'The operating result grew by more than 22.2% between Year 1 and Year 2.', 'Profit for the year grew by more than 29.8% between Year 1 and Year 2.', 'The effective tax rate rose by more than 1.3 percentage points between Year 1 and Year 2.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Finance costs moved from 18 to 23; operating result moved from 268 to 310.', 'FALSE — Gross margins were 38.2% then 38.0%.', 'FALSE — The operating result changed by about 15.7% between the two years.', 'FALSE — Profit for the year changed by about 12.6% between the two years.', 'FALSE — Effective tax rate moved from 22.4% to 22.8%.'], '5/5', 41, 'full' ),
-( '6.2', 'CASE 6.2.042', 'Depreciable Amount and Residual Value', 'Analyze which section of the cash flow statement reflects cash movements from borrowing, repaying loans or transactions with owners. Evaluate the following economic assertions:', ARRAY['During one year, a publishing house generated 54,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new binding machines, and received 9,460 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 49,860 euros over the year.', 'A bakery has used its commercial ovens for three years and charges 5,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 11,000 euros.', 'During one year, a car parts manufacturer generated 56,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new stamping presses, and used 7,620 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 32,580 euros over the year.', 'During one year, a catering company generated 59,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new catering vans, and used 7,980 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,820 euros over the year.', 'During one year, a recycling firm generated 61,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new sorting machinery, and received 10,340 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,940 euros over the year.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 49,860 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 16,500 euros rather than the two years'' worth shown here.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 32,580 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 40,820 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 58,940 euros.'], '5/5', 42, 'full' ),
-( '6.2', 'CASE 6.2.043', 'Bakery Oven Depreciation Charge', 'Review why a negative cash flow from investing activities does not necessarily indicate financial distress. Evaluate the following economic assertions:', ARRAY['During one year, a ceramics workshop generated 62,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kiln equipment, and used 8,340 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,060 euros over the year.', 'A courier firm has used its delivery vans for three years and charges 5,140 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 10,280 euros.', 'When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 40,060 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 15,420 euros rather than the two years'' worth shown here.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'TRUE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow.'], '5/5', 43, 'full' ),
+( '6.2', 'CASE 6.2.042', 'Depreciable Amount and Residual Value', 'Analyze which section of the cash flow statement reflects cash movements from borrowing, repaying loans or transactions with owners. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a car parts manufacturer''s stamping presses is 88,160 euros.', 'Straight-line annual depreciation on sorting machinery bought by a recycling firm is 20,500 euros when residual value is ignored.', 'After two years, the carrying value of a packaging manufacturer''s packaging machinery is 58,800 euros.', 'After two years, the carrying value of a catering company''s catering vans is 72,860 euros.', 'After two years, the carrying value of a recycling firm''s sorting machinery is 83,800 euros.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Cost less two years of depreciation leaves 88,160 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 19,600 euros.', 'TRUE — Cost less two years of depreciation leaves 58,800 euros.', 'TRUE — Cost less two years of depreciation leaves 72,860 euros.', 'TRUE — Cost less two years of depreciation leaves 83,800 euros.'], '5/5', 42, 'full' ),
+( '6.2', 'CASE 6.2.043', 'Bakery Oven Depreciation Charge', 'Review why a negative cash flow from investing activities does not necessarily indicate financial distress. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a ceramics workshop''s kiln equipment is 97,150 euros.', 'Straight-line annual depreciation on kiln equipment bought by a ceramics workshop is 15,938 euros when residual value is ignored.', 'Accumulated depreciation on a bakery''s commercial ovens after three years is 16,500 euros.', 'Accumulated depreciation on a courier firm''s delivery vans after three years is 15,420 euros.', 'Accumulated depreciation on a construction firm''s heavy construction machinery after three years is 14,700 euros.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Cost less two years of depreciation leaves 97,150 euros.', 'FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,175 euros.', 'TRUE — Three annual charges of 5,500 euros accumulate to 16,500 euros.', 'TRUE — Three annual charges of 5,140 euros accumulate to 15,420 euros.', 'TRUE — Three annual charges of 4,900 euros accumulate to 14,700 euros.'], '5/5', 43, 'full' ),
 ( '6.2', 'CASE 6.2.044', 'Depreciation Schedule Review 44', 'A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.
 
 [[CHART type="bar" title="Annual depreciation by asset"]]
@@ -3169,24 +3278,47 @@ Computer equipment | Annual depreciation=7000
 | Asset C – Computer equipment | €21,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['After three years, the delivery truck''s book value is €27,500.', 'After three years, the computer equipment, originally costing €21,000, is fully written down to nil.', 'After three years, the combined book value of all three assets exceeds €101,344.', 'Without recording depreciation on the €122,000 machinery, non-current assets on the balance sheet would be overstated.', 'Straight-line depreciation on the €122,000 machinery charges the same amount each year of its useful life, since it has no residual value.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Book value ≈ €27,500.', 'TRUE — Useful life is 3 years with no residual value.', 'TRUE — Combined book value ≈ €116,227.', 'TRUE — Assets would stay at historical cost without write-downs.', 'TRUE — Straight-line spreads depreciable cost evenly.'], '4/5', 44, 'full' ),
-( '6.2', 'CASE 6.2.045', 'Cash Flow Mix Over Two Years 45', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.045', 'Liquidity From the Balance Sheet 45', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=173 | Investing=-152
-Year 2 | Operating=197 | Investing=-268
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=353
+Current liabilities=182
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 144 | 188 |
-| Cash flow from operating activities | 173 | 197 |
-| Cash flow from investing activities | (152) | (268) |
-| Cash flow from financing activities | 32 | 82 |
-| Change in cash and cash equivalents | 53 | 11 |
-| Cash and cash equivalents at end of the year | 119 | 104 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 494 |
+| Machinery | 179 |
+| Office equipment | 37 |
+| Patents, trademarks and licences | 24 |
+| Inventory | 127 |
+| Trade receivables | 151 |
+| Cash and cash equivalents | 75 |
+| Total assets | **1087** |
+| **EQUITY** | |
+| Share capital | 171 |
+| Retained earnings | 273 |
+| Total equity | **444** |
+| **LIABILITIES** | |
+| Long-term bank loan | 416 |
+| Bonds payable | 45 |
+| Trade payables | 129 |
+| Bank overdraft | 53 |
+| Total liabilities | **643** |
+| Total equity and liabilities | **1087** |
 
-Evaluate the following economic assertions:', ARRAY['Year-end cash fell by more than 13.4% from Year 1 to Year 2 (see the extract prepared for case 6.2.045).', 'Operating cash flow grew by more than 12% between Year 1 and Year 2 (see the extract prepared for case 6.2.045).', 'Year 2 investing outflow exceeds 120.4% of Year 2 operating cash flow (see the extract prepared for case 6.2.045).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.045).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.045).'], ARRAY[false, true, true, true, false], ARRAY['FALSE — End-cash change ≈ 12.6%.', 'TRUE — Operating cash flow changed by about 13.9% between the two years.', 'TRUE — Investing/operating ≈ 136.0%.', 'TRUE — Investing: -152, -268.', 'FALSE — 197 vs 188.'], '2/5', 45, 'full' ),
-( '6.2', 'CASE 6.2.046', 'Courier Van Fleet Cash Outflow', 'Analyze how collecting a trade receivable is classified within the cash flow statement. Evaluate the following economic assertions:', ARRAY['When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'A construction firm has used its heavy construction machinery for three years and charges 4,900 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 9,800 euros.', 'When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'The balance sheet of a bakery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 14,700 euros rather than the two years'' worth shown here.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'TRUE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '5/5', 46, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.81.', 'The current ratio exceeds 1.57.', 'Working capital of €171 thousand is positive on this balance sheet.', 'Trade receivables make up less than 44.3% of current assets.', 'The equity ratio is below 33.9%.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Current ratio ≈ 1.94.', 'TRUE — Current ratio ≈ 1.94.', 'TRUE — Working capital = 171.', 'TRUE — Trade receivables are about 42.8% of current assets.', 'FALSE — Equity ratio ≈ 40.8%.'], '2/5', 45, 'full' ),
+( '6.2', 'CASE 6.2.046', 'Courier Van Fleet Cash Outflow', 'Consider the following cash flow statement extract (€) for a catering company.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 59600 |
+| Cash flow from investing activities | (10800) |
+| Cash flow from financing activities | (7980) |
+| Net change in cash and cash equivalents | **40820** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 22, cash and cash equivalents change by 40,820 euros in total.', 'Treating the investing line as an addition, total cash would change by 62,420 euros on extract 22.', 'Purchases recorded under investing total an outflow of 10,800 euros on extract 22.', 'Financing activities remove 7,980 euros from cash on extract 22.', 'Operating cash of 59,600 euros more than covers the investing outflow of 10,800 euros on extract 22.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Operating 59600 − investing 10800 − financing 7980 = 40820.', 'FALSE — Investing must be subtracted; correct net change is 40,820 euros.', 'TRUE — The investing line is (10800).', 'TRUE — Financing is an outflow of 7,980 euros.', 'TRUE — Operating 59600 versus investing 10800.'], '5/5', 46, 'full' ),
 ( '6.2', 'CASE 6.2.047', 'Balance Sheet Structure Review 47', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3218,25 +3350,31 @@ Current liabilities=313
 | Total equity and liabilities | **1145** |
 
 Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.58.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.15 times over.', 'The debt ratio exceeds 66.8%.', 'Buildings make up more than 46.2% of total assets.', 'Working capital of €55 thousand is positive on this balance sheet.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Current ratio ≈ 1.18.', 'FALSE — Acid-test ratio ≈ 0.57.', 'FALSE — Debt ratio ≈ 65.2%.', 'FALSE — Buildings are about 44.4% of total assets.', 'TRUE — Working capital = 55.'], '2/5', 47, 'full' ),
-( '6.2', 'CASE 6.2.048', 'Construction Firm Machinery Financing', 'Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:', ARRAY['The balance sheet of a courier firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a bakery earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a courier firm makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'Land owned by a bakery is normally left out of the depreciation schedule because, unlike its commercial ovens, land does not wear out through ordinary use.', 'A hotel chain has used its kitchen equipment for three years and charges 4,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 8,250 euros.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 12,375 euros rather than the two years'' worth shown here.'], '2/5', 48, 'full' ),
-( '6.2', 'CASE 6.2.049', 'Cash Flow Mix Over Two Years 49', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.048', 'Construction Firm Machinery Financing', 'Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a brewery''s brewing tanks after three years is 26,250 euros.', 'Accumulated depreciation on a textile mill''s spinning machinery after three years is 21,150 euros.', 'Accumulated depreciation on a printing company''s printing press after three years is 18,030 euros.', 'Accumulated depreciation on a arable farm''s tractor after three years is 47,850 euros.', 'After two years, the carrying value of a courier firm''s delivery vans is 38,780 euros.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Three annual charges of 8,750 euros accumulate to 26,250 euros.', 'TRUE — Three annual charges of 7,050 euros accumulate to 21,150 euros.', 'TRUE — Three annual charges of 6,010 euros accumulate to 18,030 euros.', 'TRUE — Three annual charges of 15,950 euros accumulate to 47,850 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 18,220 euros.'], '2/5', 48, 'full' ),
+( '6.2', 'CASE 6.2.049', 'Revenue and Operating Result Chart 49', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=126 | Investing=-130
-Year 2 | Operating=131 | Investing=-237
+[[CHART type="bar" title="Revenue and operating result"]]
+Year 1 | Revenue=1091 | Operating result=322
+Year 2 | Revenue=1231 | Operating result=360
 [[/CHART]]
 
 | Item (€ thousands) | Year 1 | Year 2 |
 | --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 199 | 221 |
-| Cash flow from operating activities | 126 | 131 |
-| Cash flow from investing activities | (130) | (237) |
-| Cash flow from financing activities | 37 | 106 |
-| Change in cash and cash equivalents | 33 | 0 |
-| Cash and cash equivalents at end of the year | 99 | 85 |
+| Revenue | 1091 | 1231 |
+| Cost of sales | (701) | (781) |
+| Gross profit | 390 | 450 |
+| Distribution costs | (36) | (41) |
+| General and administrative costs | (35) | (47) |
+| Other operating result | 3 | (2) |
+| Operating result | 322 | 360 |
+| Finance costs | (15) | (23) |
+| Finance costs – net | (9) | (17) |
+| Profit before tax | 313 | 343 |
+| Income taxes | (72) | (76) |
+| Profit for the year | 241 | 267 |
 
-Evaluate the following economic assertions:', ARRAY['Year 2 investing outflow exceeds 141.4% of Year 2 operating cash flow (see the extract prepared for case 6.2.049).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.049).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.049).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.049).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.049).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Investing/operating ≈ 180.9%.', 'TRUE — 131 vs 221.', 'TRUE — Investing: -130, -237.', 'TRUE — Financing Year 2 = 106.', 'TRUE — Year 1 change = 33.'], '4/5', 49, 'full' ),
-( '6.2', 'CASE 6.2.050', 'Hotel Chain Kitchen Equipment Depreciation', 'Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:', ARRAY['A software developer has used its office computer equipment for three years and charges 3,680 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 7,360 euros.', 'A furniture maker has used its woodworking machinery for three years and charges 9,800 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 19,600 euros.', 'A electronics retailer has used its point-of-sale tills for three years and charges 13,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 27,000 euros.', 'The depreciation that a courier firm charges on its delivery vans each year is a non-cash expense, since the related cash was already paid out when the delivery vans was originally purchased.', 'A logistics company has used its forklift trucks for three years and charges 12,650 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,300 euros.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 11,040 euros rather than the two years'' worth shown here.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 29,400 euros rather than the two years'' worth shown here.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 40,500 euros rather than the two years'' worth shown here.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 37,950 euros rather than the two years'' worth shown here.'], '5/5', 50, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 12.8% between Year 1 and Year 2.', 'Finance costs grew by more than 40.6% between Year 1 and Year 2, outpacing the growth in the operating result.', 'The operating result covers finance costs more than 5.56 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 15% in Year 2.', 'The effective tax rate, income taxes taken as a share of profit before tax, is below 28.4% in Year 1.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Revenue changed by about 12.8% between the two years.', 'TRUE — Finance costs moved from 15 to 23; operating result moved from 322 to 360.', 'TRUE — Interest coverage in Year 1 ≈ 21.5 times.', 'TRUE — Operating margin in Year 2 ≈ 29.2%.', 'TRUE — Effective tax rate in Year 1 ≈ 23.0%.'], '4/5', 49, 'full' ),
+( '6.2', 'CASE 6.2.050', 'Hotel Chain Kitchen Equipment Depreciation', 'Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a construction firm''s heavy construction machinery is 42,800 euros.', 'After two years, the carrying value of a hotel chain''s kitchen equipment is 45,750 euros.', 'After two years, the carrying value of a software developer''s office computer equipment is 49,360 euros.', 'Accumulated depreciation on a electronics retailer''s point-of-sale tills after three years is 40,500 euros.', 'After two years, the carrying value of a garage''s diagnostic equipment is 66,750 euros.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Depreciation reduces carrying value; the correct figure is 23,200 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 29,250 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 34,640 euros.', 'TRUE — Three annual charges of 13,500 euros accumulate to 40,500 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 26,250 euros.'], '5/5', 50, 'full' ),
 ( '6.2', 'CASE 6.2.051', 'Revenue and Operating Result Chart 51', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3323,24 +3461,39 @@ Current liabilities=272
 | Total equity and liabilities | **975** |
 
 Evaluate the following economic assertions:', ARRAY['Working capital of €64 thousand is positive on this balance sheet.', 'The equity ratio is below 35.2%.', 'The debt ratio exceeds 45.4%.', 'The current ratio is below 1.04.', 'Trade receivables make up less than 53.1% of current assets.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Working capital = 64.', 'TRUE — Equity ratio ≈ 30.6%.', 'TRUE — Debt ratio ≈ 69.4%.', 'FALSE — Current ratio ≈ 1.24.', 'TRUE — Trade receivables are about 18.5% of current assets.'], '2/5', 54, 'full' ),
-( '6.2', 'CASE 6.2.055', 'Cash Flow Mix Over Two Years 55', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.055', 'Revenue and Operating Result Chart 55', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=124 | Investing=-153
-Year 2 | Operating=142 | Investing=-263
+[[CHART type="bar" title="Revenue and operating result"]]
+Year 1 | Revenue=957 | Operating result=316
+Year 2 | Revenue=1097 | Operating result=360
 [[/CHART]]
 
 | Item (€ thousands) | Year 1 | Year 2 |
 | --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 151 | 184 |
-| Cash flow from operating activities | 124 | 142 |
-| Cash flow from investing activities | (153) | (263) |
-| Cash flow from financing activities | 52 | 112 |
-| Change in cash and cash equivalents | 23 | -9 |
-| Cash and cash equivalents at end of the year | 101 | 76 |
+| Revenue | 957 | 1097 |
+| Cost of sales | (566) | (644) |
+| Gross profit | 391 | 453 |
+| Distribution costs | (43) | (55) |
+| General and administrative costs | (31) | (39) |
+| Other operating result | (1) | 1 |
+| Operating result | 316 | 360 |
+| Finance costs | (17) | (24) |
+| Finance costs – net | (11) | (19) |
+| Profit before tax | 305 | 341 |
+| Income taxes | (64) | (73) |
+| Profit for the year | 241 | 268 |
 
-Evaluate the following economic assertions:', ARRAY['Operating cash flow grew by more than 7.5% between Year 1 and Year 2 (see the extract prepared for case 6.2.055).', 'Year 2 investing outflow exceeds 179.1% of Year 2 operating cash flow (see the extract prepared for case 6.2.055).', 'Year-end cash fell by more than 20.1% from Year 1 to Year 2 (see the extract prepared for case 6.2.055).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.055).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.055).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Operating cash flow changed by about 14.5% between the two years.', 'TRUE — Investing/operating ≈ 185.2%.', 'TRUE — End-cash change ≈ 24.8%.', 'TRUE — 142 vs 184.', 'TRUE — Investing: -153, -263.'], '5/5', 55, 'full' ),
-( '6.2', 'CASE 6.2.056', 'Software Developer Profit and Cash Gap', 'Review how straight-line depreciation is calculated from an asset''s cost, residual value and useful life. Evaluate the following economic assertions:', ARRAY['A dairy processor has used its refrigerated trucks for three years and charges 9,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 19,900 euros.', 'Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.', 'The depreciation that a hotel chain charges on its kitchen equipment each year is a non-cash expense, since the related cash was already paid out when the kitchen equipment was originally purchased.', 'A courier firm buys delivery vans for 28,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 5,140 euros of depreciation in each of those years.', 'A software developer buys office computer equipment for 42,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 3,680 euros of depreciation in each of those years.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 29,850 euros rather than the two years'' worth shown here.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — Spreading the depreciable amount of 25,700 euros evenly over 5 years gives an annual charge of 5,140 euros.', 'TRUE — Spreading the depreciable amount of 36,800 euros evenly over 10 years gives an annual charge of 3,680 euros.'], '5/5', 56, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 8.9% between Year 1 and Year 2.', 'The operating result covers finance costs more than 7.94 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 13% in Year 2.', 'The effective tax rate, income taxes taken as a share of profit before tax, is below 26.8% in Year 1.', 'Cost of sales is deducted from revenue to arrive at gross profit.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Revenue changed by about 14.6% between the two years.', 'TRUE — Interest coverage in Year 1 ≈ 18.6 times.', 'TRUE — Operating margin in Year 2 ≈ 32.8%.', 'TRUE — Effective tax rate in Year 1 ≈ 21.0%.', 'TRUE — Gross profit = revenue − cost of sales.'], '5/5', 55, 'full' ),
+( '6.2', 'CASE 6.2.056', 'Software Developer Profit and Cash Gap', 'Consider the following cash flow statement extract (€) for a bakery.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 64400 |
+| Cash flow from investing activities | (16200) |
+| Cash flow from financing activities | 10780 |
+| Net change in cash and cash equivalents | **58980** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 91,380 euros on extract 25.', 'On extract 25, cash and cash equivalents change by 58,980 euros in total.', 'Purchases recorded under investing total an outflow of 16,200 euros on extract 25.', 'Financing activities add 10,780 euros to cash on extract 25.', 'Operating cash of 64,400 euros more than covers the investing outflow of 16,200 euros on extract 25.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Investing must be subtracted; correct net change is 58,980 euros.', 'TRUE — Operating 64400 − investing 16200 + financing 10780 = 58980.', 'TRUE — The investing line is (16200).', 'TRUE — Financing is an inflow of 10,780 euros.', 'TRUE — Operating 64400 versus investing 16200.'], '5/5', 56, 'full' ),
 ( '6.2', 'CASE 6.2.057', 'Revenue and Operating Result Chart 57', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3363,7 +3516,7 @@ Year 2 | Revenue=986 | Operating result=306
 | Income taxes | (64) | (68) |
 | Profit for the year | 203 | 220 |
 
-Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 10.6% between Year 1 and Year 2.', 'Finance costs grew by more than 22.9% between Year 1 and Year 2, outpacing the growth in the operating result.', 'The operating result covers finance costs more than 5.11 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 21.9% in Year 2.', 'Cost of sales is deducted from revenue to arrive at gross profit.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Revenue changed by about 14.7% between the two years.', 'TRUE — Finance costs moved from 14 to 22; operating result moved from 277 to 306.', 'TRUE — Interest coverage in Year 1 ≈ 19.8 times.', 'TRUE — Operating margin in Year 2 ≈ 31.0%.', 'TRUE — Gross profit = revenue − cost of sales.'], '5/5', 57, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 10.6% between Year 1 and Year 2.', 'Finance costs grew by more than 22.9% between Year 1 and Year 2, outpacing the growth in the operating result.', 'The operating result covers finance costs more than 5.11 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 21.9% in Year 2.', 'Revenue grew by exactly 14.7% from Year 1 to Year 2.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Revenue changed by about 14.7% between the two years.', 'TRUE — Finance costs moved from 14 to 22; operating result moved from 277 to 306.', 'TRUE — Interest coverage in Year 1 ≈ 19.8 times.', 'TRUE — Operating margin in Year 2 ≈ 31.0%.', 'TRUE — Actual revenue growth ≈ 14.7%.'], '5/5', 57, 'full' ),
 ( '6.2', 'CASE 6.2.058', 'Depreciation Schedule Review 58', 'A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.
 
 [[CHART type="bar" title="Annual depreciation by asset"]]
@@ -3396,7 +3549,7 @@ Year 2 | Operating=135 | Investing=-257
 | Cash and cash equivalents at end of the year | 131 | 106 |
 
 Evaluate the following economic assertions:', ARRAY['Operating cash flow grew by more than 18% between Year 1 and Year 2.', 'Year 2 investing outflow exceeds 130.3% of Year 2 operating cash flow.', 'Year-end cash fell by more than 19.7% from Year 1 to Year 2.', 'Year 2 ending cash equals €106 thousand.', 'Year 2 operating cash flow equals €135 thousand.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Operating cash flow changed by about 4.7% between the two years.', 'TRUE — Investing/operating ≈ 190.4%.', 'FALSE — End-cash change ≈ 19.1%.', 'TRUE — Ending cash = €106 thousand.', 'TRUE — Operating cash flow = €135 thousand.'], '2/5', 59, 'full' ),
-( '6.2', 'CASE 6.2.060', 'Garage Diagnostic Equipment Charge', 'Analyze how accumulated depreciation is used to calculate an asset''s book value after several years of use. Evaluate the following economic assertions:', ARRAY['A garage buys diagnostic equipment for 46,500 euros, expects a residual value of 6,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 10,125 euros of depreciation in each of those years.', 'A pharmacy chain has used its dispensing equipment for three years and charges 8,340 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 16,680 euros.', 'A courier firm recorded its delivery vans at a cost of 28,500 euros and depreciates it on the straight-line method by 5,140 euros a year; after two years of use, its book value would be 18,220 euros.', 'A publishing house has used its binding machines for three years and charges 12,875 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,750 euros.', 'A construction firm recorded its heavy construction machinery at a cost of 33,000 euros and depreciates it on the straight-line method by 4,900 euros a year; after two years of use, its book value would be 23,200 euros.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Spreading the depreciable amount of 40,500 euros evenly over 4 years gives an annual charge of 10,125 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 25,020 euros rather than the two years'' worth shown here.', 'TRUE — Deducting two years of depreciation, 10,280 euros in total, from the original cost of 28,500 euros leaves a book value of 18,220 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 38,625 euros rather than the two years'' worth shown here.', 'TRUE — Deducting two years of depreciation, 9,800 euros in total, from the original cost of 33,000 euros leaves a book value of 23,200 euros.'], '5/5', 60, 'full' ),
+( '6.2', 'CASE 6.2.060', 'Garage Diagnostic Equipment Charge', 'Analyze how accumulated depreciation is used to calculate an asset''s carrying value after several years of use. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a restaurant chain''s commercial refrigerators after three years is 54,480 euros.', 'After two years, the carrying value of a brewery''s brewing tanks is 73,000 euros.', 'Accumulated depreciation on a IT consultancy''s laptop computers after three years is 47,250 euros.', 'After two years, the carrying value of a textile mill''s spinning machinery is 74,100 euros.', 'Accumulated depreciation on a publishing house''s binding machines after three years is 38,625 euros.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Three annual charges of 18,160 euros accumulate to 54,480 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 38,000 euros.', 'TRUE — Three annual charges of 15,750 euros accumulate to 47,250 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 45,900 euros.', 'TRUE — Three annual charges of 12,875 euros accumulate to 38,625 euros.'], '5/5', 60, 'full' ),
 ( '6.2', 'CASE 6.2.061', 'Asset Composition Chart 61', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3428,7 +3581,7 @@ Current liabilities=237
 | Total equity and liabilities | **1100** |
 
 Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.71.', 'Working capital of €166 thousand is positive on this balance sheet.', 'The current ratio is below 0.9.', 'The debt ratio exceeds 60.3%.', 'Inventory make up more than 37.4% of current assets.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Current ratio ≈ 1.70.', 'TRUE — Working capital = 166.', 'FALSE — Current ratio ≈ 1.70.', 'TRUE — Debt ratio ≈ 66.7%.', 'TRUE — Inventory are about 45.9% of current assets.'], '2/5', 61, 'full' ),
-( '6.2', 'CASE 6.2.062', 'Furniture Maker Depreciation Policy', 'Consider a textile mill replacing ageing spinning machinery and calculating the machinery''s book value after several years of use. Evaluate the following economic assertions:', ARRAY['A car parts manufacturer has used its stamping presses for three years and charges 10,670 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 21,340 euros.', 'A hotel chain recorded its kitchen equipment at a cost of 37,500 euros and depreciates it on the straight-line method by 4,125 euros a year; after two years of use, its book value would be 29,250 euros.', 'A catering company has used its catering vans for three years and charges 22,820 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 45,640 euros.', 'During one year, a bakery generated 26,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new commercial ovens, and received 5,500 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,500 euros over the year.', 'During one year, a courier firm generated 27,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new delivery vans, and used 4,380 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 34,020 euros over the year.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 32,010 euros rather than the two years'' worth shown here.', 'TRUE — Deducting two years of depreciation, 8,250 euros in total, from the original cost of 37,500 euros leaves a book value of 29,250 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 68,460 euros rather than the two years'' worth shown here.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,500 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 12,420 euros.'], '3/5', 62, 'full' ),
+( '6.2', 'CASE 6.2.062', 'Furniture Maker Depreciation Policy', 'Consider a textile mill replacing ageing spinning machinery and calculating the machinery''s carrying value after several years of use. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a printing company''s printing press is 76,520 euros.', 'Accumulated depreciation on a car parts manufacturer''s stamping presses after three years is 32,010 euros.', 'After two years, the carrying value of a arable farm''s tractor is 100,900 euros.', 'After two years, the carrying value of a electronics retailer''s point-of-sale tills is 100,500 euros.', 'After two years, the carrying value of a logistics company''s forklift trucks is 103,300 euros.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Depreciation reduces carrying value; the correct figure is 52,480 euros.', 'TRUE — Three annual charges of 10,670 euros accumulate to 32,010 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 37,100 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 46,500 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 52,700 euros.'], '3/5', 62, 'full' ),
 ( '6.2', 'CASE 6.2.063', 'Cash Flow Mix Over Two Years 63', 'Consider the cash flow extract below (€ thousands).
 
 [[CHART type="bar" title="Operating and investing cash flows"]]
@@ -3484,26 +3637,49 @@ Computer equipment | Annual depreciation=6333
 | Asset C – Computer equipment | €19,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['After three years, the combined book value of all three assets exceeds €111,069.', 'Combined annual depreciation for the three assets is €27,656.', 'Without recording depreciation on the €135,000 machinery, non-current assets on the balance sheet would be overstated.', 'Straight-line depreciation on the €135,000 machinery charges the same amount each year of its useful life, since it has no residual value.', 'The machinery''s annual depreciation charge is exactly €12,273.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Combined book value ≈ €129,182.', 'FALSE — Sum of annual charges ≈ €26,606.', 'TRUE — Assets would stay at historical cost without write-downs.', 'TRUE — Straight-line spreads depreciable cost evenly.', 'TRUE — Machinery annual charge = €12,273.'], '5/5', 65, 'full' ),
-( '6.2', 'CASE 6.2.066', 'Brewery Investing Cash Flow', 'Analyze how the number of years an asset has been used affects the accumulated depreciation recorded against it. Evaluate the following economic assertions:', ARRAY['A garage recorded its diagnostic equipment at a cost of 46,500 euros and depreciates it on the straight-line method by 10,125 euros a year; after two years of use, its book value would be 26,250 euros.', 'A furniture maker recorded its woodworking machinery at a cost of 51,000 euros and depreciates it on the straight-line method by 9,800 euros a year; after two years of use, its book value would be 31,400 euros.', 'A arable farm recorded its tractor at a cost of 69,000 euros and depreciates it on the straight-line method by 15,950 euros a year; after two years of use, its book value would be 37,100 euros.', 'A logistics company recorded its forklift trucks at a cost of 78,000 euros and depreciates it on the straight-line method by 12,650 euros a year; after two years of use, its book value would be 52,700 euros.', 'A dairy processor recorded its refrigerated trucks at a cost of 82,500 euros and depreciates it on the straight-line method by 9,950 euros a year; after two years of use, its book value would be 62,600 euros.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Deducting two years of depreciation, 20,250 euros in total, from the original cost of 46,500 euros leaves a book value of 26,250 euros.', 'TRUE — Deducting two years of depreciation, 19,600 euros in total, from the original cost of 51,000 euros leaves a book value of 31,400 euros.', 'TRUE — Deducting two years of depreciation, 31,900 euros in total, from the original cost of 69,000 euros leaves a book value of 37,100 euros.', 'TRUE — Deducting two years of depreciation, 25,300 euros in total, from the original cost of 78,000 euros leaves a book value of 52,700 euros.', 'TRUE — Deducting two years of depreciation, 19,900 euros in total, from the original cost of 82,500 euros leaves a book value of 62,600 euros.'], '2/5', 66, 'full' ),
-( '6.2', 'CASE 6.2.067', 'Textile Mill Machinery Book Value', 'Review why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:', ARRAY['A pharmacy chain recorded its dispensing equipment at a cost of 87,000 euros and depreciates it on the straight-line method by 8,340 euros a year; after two years of use, its book value would be 70,320 euros.', 'During one year, a construction firm generated 29,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new heavy construction machinery, and received 5,940 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 47,740 euros over the year.', 'A recycling firm recorded its sorting machinery at a cost of 123,000 euros and depreciates it on the straight-line method by 19,600 euros a year; after two years of use, its book value would be 83,800 euros.', 'A construction firm has used its heavy construction machinery for three years and charges 4,900 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 14,700 euros.', 'A software developer has used its office computer equipment for three years and charges 3,680 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 11,040 euros.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Deducting two years of depreciation, 16,680 euros in total, from the original cost of 87,000 euros leaves a book value of 70,320 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,540 euros.', 'TRUE — Deducting two years of depreciation, 39,200 euros in total, from the original cost of 123,000 euros leaves a book value of 83,800 euros.', 'TRUE — Multiplying the annual charge of 4,900 euros by the three years the asset has been used gives accumulated depreciation of 14,700 euros.', 'TRUE — Multiplying the annual charge of 3,680 euros by the three years the asset has been used gives accumulated depreciation of 11,040 euros.'], '5/5', 67, 'full' ),
-( '6.2', 'CASE 6.2.068', 'Cash Flow Statement Over Two Years 68', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.066', 'Brewery Investing Cash Flow', 'Consider the following cash flow statement extract (€) for a hotel chain.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=164 | Investing=-170
-Year 2 | Operating=176 | Investing=-181
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 69200 |
+| Cash flow from investing activities | (12600) |
+| Cash flow from financing activities | (9060) |
+| Net change in cash and cash equivalents | **47540** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 28, cash and cash equivalents change by 47,540 euros in total.', 'Purchases recorded under investing total an outflow of 12,600 euros on extract 28.', 'Financing activities remove 9,060 euros from cash on extract 28.', 'Operating cash of 69,200 euros more than covers the investing outflow of 12,600 euros on extract 28.', 'Buying new kitchen equipment for this hotel chain is classified under investing activities.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Operating 69200 − investing 12600 − financing 9060 = 47540.', 'TRUE — The investing line is (12600).', 'TRUE — Financing is an outflow of 9,060 euros.', 'TRUE — Operating 69200 versus investing 12600.', 'TRUE — Long-term asset purchases are investing cash flows.'], '2/5', 66, 'full' ),
+( '6.2', 'CASE 6.2.067', 'Textile Mill Machinery Book Value', 'Review why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:', ARRAY['When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'After two years, the carrying value of a dairy processor''s refrigerated trucks is 102,400 euros.', 'When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Depreciation reduces carrying value; the correct figure is 62,600 euros.', 'TRUE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow.'], '5/5', 67, 'full' ),
+( '6.2', 'CASE 6.2.068', 'Balance Sheet Structure Review 68', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
+
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=351
+Current liabilities=301
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 186 | 217 |
-| Cash flow from operating activities | 164 | 176 |
-| Cash flow from investing activities | (170) | (181) |
-| Cash flow from financing activities | 60 | 92 |
-| Change in cash and cash equivalents | 54 | 87 |
-| Cash and cash equivalents at end of the year | 107 | 95 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 456 |
+| Machinery | 151 |
+| Office equipment | 56 |
+| Patents, trademarks and licences | 54 |
+| Inventory | 137 |
+| Trade receivables | 137 |
+| Cash and cash equivalents | 77 |
+| Total assets | **1068** |
+| **EQUITY** | |
+| Share capital | 119 |
+| Retained earnings | 267 |
+| Total equity | **386** |
+| **LIABILITIES** | |
+| Long-term bank loan | 324 |
+| Bonds payable | 57 |
+| Trade payables | 228 |
+| Bank overdraft | 73 |
+| Total liabilities | **682** |
+| Total equity and liabilities | **1068** |
 
-Evaluate the following economic assertions:', ARRAY['Year-end cash fell by more than 5.8% from Year 1 to Year 2 (see the extract prepared for case 6.2.068).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.068).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.068).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.068).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.068).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — End-cash change ≈ 11.2%.', 'TRUE — 176 vs 217.', 'TRUE — Investing: -170, -181.', 'TRUE — Financing Year 2 = 92.', 'TRUE — Year 1 change = 54.'], '5/5', 68, 'full' ),
-( '6.2', 'CASE 6.2.069', 'Printing Press Cash Flow Impact', 'Analyze the difference between a cash expense and a non-cash expense such as depreciation. Evaluate the following economic assertions:', ARRAY['During one year, a hotel chain generated 30,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kitchen equipment, and used 4,740 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,460 euros over the year.', 'During one year, a software developer generated 32,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new office computer equipment, and received 6,380 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 54,980 euros over the year.', 'A garage has used its diagnostic equipment for three years and charges 10,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 30,375 euros.', 'During one year, a furniture maker generated 35,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new woodworking machinery, and received 6,820 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 53,220 euros over the year.', 'During one year, a electronics retailer generated 43,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new point-of-sale tills, and used 6,180 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 48,220 euros over the year.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 11,660 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,580 euros.', 'TRUE — Multiplying the annual charge of 10,125 euros by the three years the asset has been used gives accumulated depreciation of 30,375 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 31,620 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 26,620 euros.'], '5/5', 69, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Working capital of €50 thousand is positive on this balance sheet.', 'The debt ratio exceeds 53.2%.', 'Trade receivables make up less than 46.8% of current assets.', 'Inventory of €137 thousand is correctly classified as a current asset rather than a non-current intangible asset.', 'The current ratio is exactly 1.17.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Working capital = 50.', 'TRUE — Debt ratio ≈ 63.9%.', 'TRUE — Trade receivables are about 39.0% of current assets.', 'TRUE — Inventory is always a current asset.', 'TRUE — Current ratio is 1.17.'], '5/5', 68, 'full' ),
+( '6.2', 'CASE 6.2.069', 'Printing Press Cash Flow Impact', 'Analyze the difference between a cash expense and a non-cash expense such as depreciation. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a pharmacy chain''s dispensing equipment is 103,680 euros.', 'After two years, the carrying value of a fitness club chain''s exercise equipment is 135,050 euros.', 'When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'After two years, the carrying value of a restaurant chain''s commercial refrigerators is 132,320 euros.', 'After two years, the carrying value of a IT consultancy''s laptop computers is 132,000 euros.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Depreciation reduces carrying value; the correct figure is 70,320 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 47,950 euros.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'FALSE — Depreciation reduces carrying value; the correct figure is 59,680 euros.', 'FALSE — Depreciation reduces carrying value; the correct figure is 69,000 euros.'], '5/5', 69, 'full' ),
 ( '6.2', 'CASE 6.2.070', 'Asset Composition Chart 70', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3535,23 +3711,29 @@ Current liabilities=285
 | Total equity and liabilities | **875** |
 
 Evaluate the following economic assertions:', ARRAY['After excluding inventory, the remaining current assets still cover current liabilities more than 0.66 times over.', 'Trade receivables make up less than 44.1% of current assets.', 'Cash and cash equivalents make up more than 16.8% of current assets.', 'Inventory of €87 thousand is correctly classified as a current asset rather than a non-current intangible asset.', 'The current ratio is exactly 0.97.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Acid-test ratio ≈ 0.66.', 'TRUE — Trade receivables are about 39.5% of current assets.', 'TRUE — Cash and cash equivalents are about 29.0% of current assets.', 'TRUE — Inventory is always a current asset.', 'TRUE — Current ratio is 0.97.'], '4/5', 70, 'full' ),
-( '6.2', 'CASE 6.2.071', 'Cash Flow Mix Over Two Years 71', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.071', 'Revenue and Operating Result Chart 71', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=153 | Investing=-131
-Year 2 | Operating=168 | Investing=-276
+[[CHART type="bar" title="Revenue and operating result"]]
+Year 1 | Revenue=1097 | Operating result=309
+Year 2 | Revenue=1288 | Operating result=371
 [[/CHART]]
 
 | Item (€ thousands) | Year 1 | Year 2 |
 | --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 187 | 228 |
-| Cash flow from operating activities | 153 | 168 |
-| Cash flow from investing activities | (131) | (276) |
-| Cash flow from financing activities | 56 | 87 |
-| Change in cash and cash equivalents | 78 | -21 |
-| Cash and cash equivalents at end of the year | 108 | 91 |
+| Revenue | 1097 | 1288 |
+| Cost of sales | (700) | (821) |
+| Gross profit | 397 | 467 |
+| Distribution costs | (54) | (60) |
+| General and administrative costs | (32) | (37) |
+| Other operating result | (2) | 1 |
+| Operating result | 309 | 371 |
+| Finance costs | (18) | (25) |
+| Finance costs – net | (12) | (22) |
+| Profit before tax | 297 | 349 |
+| Income taxes | (70) | (87) |
+| Profit for the year | 227 | 262 |
 
-Evaluate the following economic assertions:', ARRAY['Operating cash flow grew by more than 9.2% between Year 1 and Year 2 (see the extract prepared for case 6.2.071).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.071).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.071).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.071).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.071).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Operating cash flow changed by about 9.8% between the two years.', 'TRUE — 168 vs 228.', 'TRUE — Investing: -131, -276.', 'TRUE — Financing Year 2 = 87.', 'TRUE — Year 1 change = 78.'], '5/5', 71, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 14% between Year 1 and Year 2.', 'The operating result covers finance costs more than 4.26 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 11.2% in Year 2.', 'The effective tax rate, income taxes taken as a share of profit before tax, is below 31.5% in Year 1.', 'The gross profit margin in Year 2 is exactly 36.3%.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Revenue changed by about 17.4% between the two years.', 'TRUE — Interest coverage in Year 1 ≈ 17.2 times.', 'TRUE — Operating margin in Year 2 ≈ 28.8%.', 'TRUE — Effective tax rate in Year 1 ≈ 23.6%.', 'TRUE — Gross margin in Year 2 ≈ 36.3%.'], '5/5', 71, 'full' ),
 ( '6.2', 'CASE 6.2.072', 'Profit and Loss Over Two Years 72', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3590,25 +3772,48 @@ Computer equipment | Annual depreciation=8000
 | Asset C – Computer equipment | €24,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['After three years, the delivery truck''s book value is €27,929.', 'Combined annual depreciation for the three assets is €31,167.', 'After three years, more than 41.2% of the machinery''s purchase price has been depreciated.', 'The delivery truck''s annual depreciation charge is more than 87.6% higher than the computer equipment''s annual depreciation charge.', 'After three years, the computer equipment, originally costing €24,000, is fully written down to nil.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Book value ≈ €30,500.', 'TRUE — Sum of annual charges ≈ €31,167.', 'FALSE — About 25.0% of the machinery''s cost is depreciated after three years.', 'FALSE — Delivery truck ≈ €8,833 a year versus computer equipment ≈ €8,000 a year.', 'TRUE — Useful life is 3 years with no residual value.'], '3/5', 73, 'full' ),
-( '6.2', 'CASE 6.2.074', 'Cash Flow Statement Over Two Years 74', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.074', 'Balance Sheet Structure Review 74', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=138 | Investing=-124
-Year 2 | Operating=150 | Investing=-261
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=330
+Current liabilities=160
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 195 | 218 |
-| Cash flow from operating activities | 138 | 150 |
-| Cash flow from investing activities | (124) | (261) |
-| Cash flow from financing activities | 20 | 90 |
-| Change in cash and cash equivalents | 34 | -21 |
-| Cash and cash equivalents at end of the year | 129 | 123 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 365 |
+| Machinery | 266 |
+| Office equipment | 54 |
+| Patents, trademarks and licences | 93 |
+| Inventory | 147 |
+| Trade receivables | 73 |
+| Cash and cash equivalents | 110 |
+| Total assets | **1108** |
+| **EQUITY** | |
+| Share capital | 101 |
+| Retained earnings | 332 |
+| Total equity | **433** |
+| **LIABILITIES** | |
+| Long-term bank loan | 441 |
+| Bonds payable | 74 |
+| Trade payables | 112 |
+| Bank overdraft | 48 |
+| Total liabilities | **675** |
+| Total equity and liabilities | **1108** |
 
-Evaluate the following economic assertions:', ARRAY['Year 2 investing outflow exceeds 216% of Year 2 operating cash flow (see the extract prepared for case 6.2.074).', 'Operating cash flow grew by more than 6.3% between Year 1 and Year 2 (see the extract prepared for case 6.2.074).', 'Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.074).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.074).', 'Year-end cash fell by more than 9% from Year 1 to Year 2 (see the extract prepared for case 6.2.074).'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Investing/operating ≈ 174.0%.', 'TRUE — Operating cash flow changed by about 8.7% between the two years.', 'TRUE — 150 vs 218.', 'TRUE — Investing: -124, -261.', 'FALSE — End-cash change ≈ 4.7%.'], '4/5', 74, 'full' ),
-( '6.2', 'CASE 6.2.075', 'Arable Farm Land and Tractor', 'Consider a logistics company that took out a long-term loan to buy new forklift trucks and is classifying the resulting cash flows. Evaluate the following economic assertions:', ARRAY['During one year, a logistics company generated 45,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new forklift trucks, and received 8,140 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 65,940 euros over the year.', 'A textile mill has used its spinning machinery for three years and charges 7,050 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 21,150 euros.', 'During one year, a dairy processor generated 46,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new refrigerated trucks, and used 6,540 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 54,660 euros over the year.', 'During one year, a fitness club chain generated 50,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new exercise equipment, and used 6,900 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 52,100 euros over the year.', 'During one year, a publishing house generated 54,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new binding machines, and received 9,460 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 78,660 euros over the year.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,740 euros.', 'TRUE — Multiplying the annual charge of 7,050 euros by the three years the asset has been used gives accumulated depreciation of 21,150 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 25,860 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 34,100 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 49,860 euros.'], '5/5', 75, 'full' ),
-( '6.2', 'CASE 6.2.076', 'Electronics Retailer Till Upgrade', 'Analyze why the balance sheet alone cannot show how a business performed over the whole year. Evaluate the following economic assertions:', ARRAY['During one year, a car parts manufacturer generated 56,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new stamping presses, and used 7,620 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 64,980 euros over the year.', 'A printing company has used its printing press for three years and charges 6,010 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 18,030 euros.', 'During one year, a textile mill generated 38,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new spinning machinery, and received 7,260 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 31,660 euros over the year.', 'During one year, a catering company generated 59,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new catering vans, and used 7,980 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 62,420 euros over the year.', 'When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 32,580 euros.', 'TRUE — Multiplying the annual charge of 6,010 euros by the three years the asset has been used gives accumulated depreciation of 18,030 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 31,660 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,820 euros.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.'], '5/5', 76, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.85.', 'The current ratio exceeds 1.11.', 'Working capital of €170 thousand is positive on this balance sheet.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.13 times over.', 'The equity ratio is below 19.9%.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Current ratio ≈ 2.06.', 'TRUE — Current ratio ≈ 2.06.', 'TRUE — Working capital = 170.', 'TRUE — Acid-test ratio ≈ 1.14.', 'FALSE — Equity ratio ≈ 39.1%.'], '4/5', 74, 'full' ),
+( '6.2', 'CASE 6.2.075', 'Arable Farm Land and Tractor', 'Consider the following cash flow statement extract (€) for a furniture maker.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 74000 |
+| Cash flow from investing activities | (9000) |
+| Cash flow from financing activities | 12100 |
+| Net change in cash and cash equivalents | **77100** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 95,100 euros on extract 31.', 'On extract 31, cash and cash equivalents change by 77,100 euros in total.', 'The operating figure alone of 74,000 euros is already the full net change on extract 31.', 'The investing line on extract 31 reports cash received of 9,000 euros.', 'Financing activities remove 12,100 euros from cash on extract 31.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Investing must be subtracted; correct net change is 77,100 euros.', 'TRUE — Operating 74000 − investing 9000 + financing 12100 = 77100.', 'FALSE — That ignores investing and financing; correct net is 77,100 euros.', 'FALSE — Investing is an outflow of 9,000 euros.', 'FALSE — Financing is an inflow of 12,100 euros, not an outflow.'], '5/5', 75, 'full' ),
+( '6.2', 'CASE 6.2.076', 'Electronics Retailer Till Upgrade', 'Analyze why the balance sheet alone cannot show how a business performed over the whole year. Evaluate the following economic assertions:', ARRAY['After two years, the carrying value of a recycling firm''s sorting machinery is 162,200 euros.', 'When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'After two years, the carrying value of a ceramics workshop''s kiln equipment is 157,850 euros.', 'Accumulated depreciation on a bakery''s commercial ovens after three years is 11,000 euros.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Depreciation reduces carrying value; the correct figure is 83,800 euros.', 'TRUE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'FALSE — Depreciation reduces carrying value; the correct figure is 97,150 euros.', 'FALSE — Three years of use accumulate 16,500 euros, not two years'' worth.'], '5/5', 76, 'full' ),
 ( '6.2', 'CASE 6.2.077', 'Balance Sheet Structure Review 77', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3640,26 +3845,41 @@ Current liabilities=158
 | Total equity and liabilities | **1117** |
 
 Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.84.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.87 times over.', 'Working capital of €129 thousand is positive on this balance sheet.', 'Inventory make up more than 51.9% of current assets.', 'Trade receivables make up less than 38.8% of current assets.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Current ratio ≈ 1.82.', 'FALSE — Acid-test ratio ≈ 0.65.', 'TRUE — Working capital = 129.', 'TRUE — Inventory are about 64.5% of current assets.', 'TRUE — Trade receivables are about 22.6% of current assets.'], '5/5', 77, 'full' ),
-( '6.2', 'CASE 6.2.078', 'Overstated Assets Without Depreciation', 'Review how retained earnings link the statement of profit and loss to the equity section of the balance sheet. Evaluate the following economic assertions:', ARRAY['When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'During one year, a printing company generated 40,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new printing press, and used 5,820 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 18,380 euros over the year.', 'When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from operating activities.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'FALSE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 18,380 euros.', 'FALSE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow belongs in the investing section, not the operating section.'], '5/5', 78, 'full' ),
-( '6.2', 'CASE 6.2.079', 'Understanding the Three Cash Flow Sections', 'Analyze the relationship between reported profit and the equity shown on the balance sheet. Evaluate the following economic assertions:', ARRAY['When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'During one year, a arable farm generated 42,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new tractor, and received 7,700 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,700 euros over the year.', 'When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,700 euros.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow is classified as an investing cash flow.', 'FALSE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.'], '4/5', 79, 'full' ),
-( '6.2', 'CASE 6.2.080', 'Cash Flow Statement Over Two Years 80', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.078', 'Overstated Assets Without Depreciation', 'Review how retained earnings link the statement of profit and loss to the equity section of the balance sheet. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a courier firm''s delivery vans after three years is 10,280 euros.', 'Accumulated depreciation on a construction firm''s heavy construction machinery after three years is 9,800 euros.', 'Accumulated depreciation on a hotel chain''s kitchen equipment after three years is 8,250 euros.', 'When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'Accumulated depreciation on a software developer''s office computer equipment after three years is 7,360 euros.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Three years of use accumulate 15,420 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 14,700 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 12,375 euros, not two years'' worth.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Three years of use accumulate 11,040 euros, not two years'' worth.'], '5/5', 78, 'full' ),
+( '6.2', 'CASE 6.2.079', 'Understanding the Three Cash Flow Sections', 'Consider the following cash flow statement extract (€) for a printing company.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=177 | Investing=-152
-Year 2 | Operating=192 | Investing=-236
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 78800 |
+| Cash flow from investing activities | (14400) |
+| Cash flow from financing activities | (10140) |
+| Net change in cash and cash equivalents | **54260** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 83,060 euros on extract 34.', 'On extract 34, cash and cash equivalents change by 54,260 euros in total.', 'The operating figure alone of 78,800 euros is already the full net change on extract 34.', 'Purchases recorded under investing total an outflow of 14,400 euros on extract 34.', 'The investing line on extract 34 reports cash received of 14,400 euros.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Investing must be subtracted; correct net change is 54,260 euros.', 'TRUE — Operating 78800 − investing 14400 − financing 10140 = 54260.', 'FALSE — That ignores investing and financing; correct net is 54,260 euros.', 'TRUE — The investing line is (14400).', 'FALSE — Investing is an outflow of 14,400 euros.'], '4/5', 79, 'full' ),
+( '6.2', 'CASE 6.2.080', 'Profit and Loss Over Two Years 80', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
+
+[[CHART type="bar" title="Revenue and operating result"]]
+Year 1 | Revenue=922 | Operating result=248
+Year 2 | Revenue=1077 | Operating result=287
 [[/CHART]]
 
 | Item (€ thousands) | Year 1 | Year 2 |
 | --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 140 | 189 |
-| Cash flow from operating activities | 177 | 192 |
-| Cash flow from investing activities | (152) | (236) |
-| Cash flow from financing activities | 40 | 70 |
-| Change in cash and cash equivalents | 65 | 26 |
-| Cash and cash equivalents at end of the year | 109 | 88 |
+| Revenue | 922 | 1077 |
+| Cost of sales | (595) | (698) |
+| Gross profit | 327 | 379 |
+| Distribution costs | (40) | (45) |
+| General and administrative costs | (37) | (48) |
+| Other operating result | (2) | 1 |
+| Operating result | 248 | 287 |
+| Finance costs | (14) | (19) |
+| Finance costs – net | (11) | (13) |
+| Profit before tax | 237 | 274 |
+| Income taxes | (59) | (67) |
+| Profit for the year | 178 | 207 |
 
-Evaluate the following economic assertions:', ARRAY['Year-end cash fell by more than 18.6% from Year 1 to Year 2 (see the extract prepared for case 6.2.080).', 'Operating cash flow grew by more than 14.7% between Year 1 and Year 2 (see the extract prepared for case 6.2.080).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.080).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.080).', 'Year 2 investing outflow exceeds 188.1% of Year 2 operating cash flow (see the extract prepared for case 6.2.080).'], ARRAY[true, false, true, true, false], ARRAY['TRUE — End-cash change ≈ 19.3%.', 'FALSE — Operating cash flow changed by about 8.5% between the two years.', 'TRUE — Investing: -152, -236.', 'TRUE — Financing Year 2 = 70.', 'FALSE — Investing/operating ≈ 122.9%.'], '5/5', 80, 'full' ),
-( '6.2', 'CASE 6.2.081', 'Operating Cash Flow and Core Trading', 'Consider a restaurant chain replacing commercial refrigerators across its outlets and reviewing the depreciation policy applied to them. Evaluate the following economic assertions:', ARRAY['When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'TRUE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow.', 'FALSE — Buying long-term assets such as laptop computers is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.'], '5/5', 81, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Revenue grew by more than 10.8% between Year 1 and Year 2.', 'The operating result grew by more than 59.1% between Year 1 and Year 2.', 'The operating result covers finance costs more than 9.99 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 11.7% in Year 2.', 'Profit for the year grew by more than 36.2% between Year 1 and Year 2.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Revenue changed by about 16.8% between the two years.', 'FALSE — The operating result changed by about 15.7% between the two years.', 'TRUE — Interest coverage in Year 1 ≈ 17.7 times.', 'TRUE — Operating margin in Year 2 ≈ 26.6%.', 'FALSE — Profit for the year changed by about 16.3% between the two years.'], '5/5', 80, 'full' ),
+( '6.2', 'CASE 6.2.081', 'Operating Cash Flow and Core Trading', 'Consider a restaurant chain replacing commercial refrigerators across its outlets and reviewing the depreciation policy applied to them. Evaluate the following economic assertions:', ARRAY['When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a catering company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'Accumulated depreciation on a textile mill''s spinning machinery after three years is 14,100 euros.', 'Accumulated depreciation on a printing company''s printing press after three years is 12,020 euros.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'TRUE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'FALSE — Three years of use accumulate 21,150 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 18,030 euros, not two years'' worth.'], '5/5', 81, 'full' ),
 ( '6.2', 'CASE 6.2.082', 'Profit and Loss Over Two Years 82', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3698,23 +3918,37 @@ Computer equipment | Annual depreciation=7667
 | Asset C – Computer equipment | €23,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['Combined annual depreciation for the three assets is €30,167.', 'After three years, the delivery truck''s book value is €32,500.', 'After three years, more than 34.5% of the machinery''s purchase price has been depreciated.', 'The delivery truck''s annual depreciation charge is more than 78.8% higher than the computer equipment''s annual depreciation charge.', 'The machinery accounts for more than 59.5% of the combined annual depreciation charge.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Sum of annual charges ≈ €30,167.', 'TRUE — Book value ≈ €32,500.', 'FALSE — About 25.0% of the machinery''s cost is depreciated after three years.', 'FALSE — Delivery truck ≈ €8,167 a year versus computer equipment ≈ €7,667 a year.', 'FALSE — Machinery''s share of the combined charge ≈ 47.5%.'], '2/5', 83, 'full' ),
-( '6.2', 'CASE 6.2.084', 'Cash Flow Statement Over Two Years 84', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.084', 'Liquidity From the Balance Sheet 84', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=180 | Investing=-176
-Year 2 | Operating=203 | Investing=-188
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=458
+Current liabilities=127
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 150 | 189 |
-| Cash flow from operating activities | 180 | 203 |
-| Cash flow from investing activities | (176) | (188) |
-| Cash flow from financing activities | 28 | 62 |
-| Change in cash and cash equivalents | 32 | 77 |
-| Cash and cash equivalents at end of the year | 136 | 126 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 466 |
+| Machinery | 204 |
+| Office equipment | 58 |
+| Patents, trademarks and licences | 74 |
+| Inventory | 211 |
+| Trade receivables | 177 |
+| Cash and cash equivalents | 70 |
+| Total assets | **1260** |
+| **EQUITY** | |
+| Share capital | 256 |
+| Retained earnings | 405 |
+| Total equity | **661** |
+| **LIABILITIES** | |
+| Long-term bank loan | 415 |
+| Bonds payable | 57 |
+| Trade payables | 71 |
+| Bank overdraft | 56 |
+| Total liabilities | **599** |
+| Total equity and liabilities | **1260** |
 
-Evaluate the following economic assertions:', ARRAY['Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.084).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.084).', 'Net cash change is positive in Year 1 (see the extract prepared for case 6.2.084).', 'Year 2 ending cash equals €126 thousand (see the extract prepared for case 6.2.084).', 'Year 2 operating cash flow equals €203 thousand (see the extract prepared for case 6.2.084).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Investing: -176, -188.', 'TRUE — Financing Year 2 = 62.', 'TRUE — Year 1 change = 32.', 'TRUE — Ending cash = €126 thousand.', 'TRUE — Operating cash flow = €203 thousand.'], '4/5', 84, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Working capital of €331 thousand is positive on this balance sheet.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.12 times over.', 'Cash and cash equivalents make up more than 14.8% of current assets.', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 24.2%.', 'Inventory of €211 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Working capital = 331.', 'TRUE — Acid-test ratio ≈ 1.94.', 'TRUE — Cash and cash equivalents are about 15.3% of current assets.', 'TRUE — Long-term financing covers non-current assets by about 41.3%.', 'TRUE — Inventory is always a current asset.'], '4/5', 84, 'full' ),
 ( '6.2', 'CASE 6.2.085', 'Asset Composition Chart 85', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -3769,8 +4003,17 @@ Year 2 | Revenue=1040 | Operating result=254
 | Profit for the year | 160 | 182 |
 
 Evaluate the following economic assertions:', ARRAY['The operating result covers finance costs more than 6.63 times over in Year 1.', 'The operating margin, operating result taken as a share of revenue, exceeds 8.9% in Year 2.', 'The effective tax rate, income taxes taken as a share of profit before tax, is below 23.1% in Year 1.', 'The gross profit margin in Year 2 is exactly 34.7%.', 'Profit for the year increased by exactly €22 thousand from Year 1 to Year 2.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Interest coverage in Year 1 ≈ 15.4 times.', 'TRUE — Operating margin in Year 2 ≈ 24.4%.', 'TRUE — Effective tax rate in Year 1 ≈ 22.7%.', 'TRUE — Gross margin in Year 2 ≈ 34.7%.', 'TRUE — Profit moved from 160 to 182.'], '4/5', 86, 'full' ),
-( '6.2', 'CASE 6.2.087', 'Investing Cash Flow and Fixed Assets', 'Analyze why a business can be profitable yet still see its cash balance fall during the year. Evaluate the following economic assertions:', ARRAY['The balance sheet of a courier firm reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.', 'When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a bakery earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a courier firm makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.', 'FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.'], '2/5', 87, 'full' ),
-( '6.2', 'CASE 6.2.088', 'Financing Cash Flow and Borrowing', 'Review why straight-line depreciation produces an equal annual charge rather than a fluctuating one. Evaluate the following economic assertions:', ARRAY['When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'The balance sheet of a construction firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the delivery vans was purchased.', 'TRUE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '2/5', 88, 'full' ),
+( '6.2', 'CASE 6.2.087', 'Investing Cash Flow and Fixed Assets', 'Analyze why a business can be profitable yet still see its cash balance fall during the year. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a arable farm''s tractor after three years is 31,900 euros.', 'When a recycling firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'Accumulated depreciation on a electronics retailer''s point-of-sale tills after three years is 27,000 euros.', 'Accumulated depreciation on a logistics company''s forklift trucks after three years is 25,300 euros.', 'Accumulated depreciation on a dairy processor''s refrigerated trucks after three years is 19,900 euros.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Three years of use accumulate 47,850 euros, not two years'' worth.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Three years of use accumulate 40,500 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 37,950 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 29,850 euros, not two years'' worth.'], '2/5', 87, 'full' ),
+( '6.2', 'CASE 6.2.088', 'Financing Cash Flow and Borrowing', 'Consider the following cash flow statement extract (€) for a logistics company.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 83600 |
+| Cash flow from investing activities | (10800) |
+| Cash flow from financing activities | 13420 |
+| Net change in cash and cash equivalents | **86220** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 37, cash and cash equivalents change by 86,220 euros in total.', 'Treating the investing line as an addition, total cash would change by 107,820 euros on extract 37.', 'Purchases recorded under investing total an outflow of 10,800 euros on extract 37.', 'Financing activities add 13,420 euros to cash on extract 37.', 'Operating cash of 83,600 euros more than covers the investing outflow of 10,800 euros on extract 37.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Operating 83600 − investing 10800 + financing 13420 = 86220.', 'FALSE — Investing must be subtracted; correct net change is 86,220 euros.', 'TRUE — The investing line is (10800).', 'TRUE — Financing is an inflow of 13,420 euros.', 'TRUE — Operating 83600 versus investing 10800.'], '2/5', 88, 'full' ),
 ( '6.2', 'CASE 6.2.089', 'Revenue and Operating Result Chart 89', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Revenue and operating result"]]
@@ -3809,1342 +4052,1419 @@ Computer equipment | Annual depreciation=7667
 | Asset C – Computer equipment | €23,000 purchase price, 3-year useful life, no residual value |
 
 Evaluate the following economic assertions:', ARRAY['After three years, the computer equipment, originally costing €23,000, is fully written down to nil.', 'Combined annual depreciation for the three assets is €32,549.', 'After three years, the combined book value of all three assets exceeds €100,238.', 'After three years, the delivery truck''s book value is €34,424.', 'Without recording depreciation on the €125,000 machinery, non-current assets on the balance sheet would be overstated.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Useful life is 3 years with no residual value.', 'FALSE — Sum of annual charges ≈ €31,458.', 'TRUE — Combined book value ≈ €109,625.', 'FALSE — Book value ≈ €31,500.', 'TRUE — Assets would stay at historical cost without write-downs.'], '4/5', 90, 'full' ),
-( '6.2', 'CASE 6.2.091', 'Cash Flow Mix Over Two Years 91', 'Consider the cash flow extract below (€ thousands).
+( '6.2', 'CASE 6.2.091', 'Asset Composition Chart 91', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Operating and investing cash flows"]]
-Year 1 | Operating=158 | Investing=-174
-Year 2 | Operating=167 | Investing=-271
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=383
+Current liabilities=176
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
-| --- | ---: | ---: |
-| Cash flow from operating activities before changes in working capital | 152 | 173 |
-| Cash flow from operating activities | 158 | 167 |
-| Cash flow from investing activities | (174) | (271) |
-| Cash flow from financing activities | 45 | 99 |
-| Change in cash and cash equivalents | 29 | -5 |
-| Cash and cash equivalents at end of the year | 100 | 93 |
+| € in thousands | Amount |
+| --- | ---: |
+| **ASSETS** | |
+| Buildings | 481 |
+| Machinery | 203 |
+| Office equipment | 61 |
+| Patents, trademarks and licences | 64 |
+| Inventory | 148 |
+| Trade receivables | 168 |
+| Cash and cash equivalents | 67 |
+| Total assets | **1192** |
+| **EQUITY** | |
+| Share capital | 272 |
+| Retained earnings | 505 |
+| Total equity | **777** |
+| **LIABILITIES** | |
+| Long-term bank loan | 195 |
+| Bonds payable | 44 |
+| Trade payables | 138 |
+| Bank overdraft | 38 |
+| Total liabilities | **415** |
+| Total equity and liabilities | **1192** |
 
-Evaluate the following economic assertions:', ARRAY['Year 2 operating cash flow is below the before-working-capital figure (see the extract prepared for case 6.2.091).', 'Investing cash flow is an outflow in both years (see the extract prepared for case 6.2.091).', 'Operating cash flow grew by more than 8.4% between Year 1 and Year 2 (see the extract prepared for case 6.2.091).', 'Year 2 investing outflow exceeds 203.4% of Year 2 operating cash flow (see the extract prepared for case 6.2.091).', 'Year 2 financing cash flow is positive (see the extract prepared for case 6.2.091).'], ARRAY[true, true, false, false, true], ARRAY['TRUE — 167 vs 173.', 'TRUE — Investing: -174, -271.', 'FALSE — Operating cash flow changed by about 5.7% between the two years.', 'FALSE — Investing/operating ≈ 162.3%.', 'TRUE — Financing Year 2 = 99.'], '2/5', 91, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Working capital of €207 thousand is positive on this balance sheet.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1 times over.', 'The equity ratio is below 35.5%.', 'The debt ratio exceeds 51.1%.', 'Inventory of €148 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, true, false, false, true], ARRAY['TRUE — Working capital = 207.', 'TRUE — Acid-test ratio ≈ 1.34.', 'FALSE — Equity ratio ≈ 65.2%.', 'FALSE — Debt ratio ≈ 34.8%.', 'TRUE — Inventory is always a current asset.'], '2/5', 91, 'full' ),
 ( '6.2', 'CASE 6.2.092', 'Earnings Per Share From Reported Figures 92', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=26
-February | Price=26
-March | Price=25
-April | Price=26
-May | Price=27
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=30000
-February | Volume=37000
-March | Volume=70000
-April | Volume=24000
-May | Volume=62000
-June | Volume=68000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 26 | 604,000 | 30,000 |
-| February | 26 | 604,000 | 37,000 |
-| March | 25 | 604,000 | 70,000 |
-| April | 26 | 604,000 | 24,000 |
-| May | 27 | 604,000 | 62,000 |
-| June | 28 | 604,000 | 68,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 200 |
-| Shares outstanding | 604,000 |
-| Total shares traded (six months) | 291,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 34.9% from first to last month.', 'Market capitalisation at the last month exceeds €12.9 million.', 'Total shares traded over six months exceed 28% of shares outstanding.', 'Peak monthly share turnover exceeds 51,600 shares.', 'Shares outstanding stay at 604,000 every month.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ 7.7%.', 'TRUE — Market capitalisation ≈ €16.9 million.', 'TRUE — Turnover ≈ 48.2% of shares outstanding.', 'TRUE — Peak monthly volume = 70,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 92, 'full' ),
-( '6.2', 'CASE 6.2.093', 'Retained Earnings and Equity Growth', 'Analyze why depreciation is added back to profit when working out cash generated from operating activities. Evaluate the following economic assertions:', ARRAY['Land owned by a construction firm is depreciated in exactly the same way as its heavy construction machinery, because all fixed assets wear out identically through use.', 'The depreciation that a hotel chain charges on its kitchen equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'The depreciation that a electronics retailer charges on its point-of-sale tills each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'The balance sheet of a hotel chain shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a construction firm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the kitchen equipment was purchased.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the point-of-sale tills was purchased.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.'], '5/5', 93, 'full' ),
-( '6.2', 'CASE 6.2.094', 'Listed Company Performance Charts 94', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=15
-March | Price=16
-April | Price=15
-May | Price=16
-June | Price=16
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=49000
-February | Volume=53000
-March | Volume=41000
-April | Volume=73000
-May | Volume=40000
-June | Volume=27000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 656,000 | 49,000 |
-| February | 15 | 656,000 | 53,000 |
-| March | 16 | 656,000 | 41,000 |
-| April | 15 | 656,000 | 73,000 |
-| May | 16 | 656,000 | 40,000 |
-| June | 16 | 656,000 | 27,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 278 |
-| Shares outstanding | 656,000 |
-| Total shares traded (six months) | 283,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.8% from first to last month.', 'Market capitalisation at the last month exceeds €8.1 million.', 'Total shares traded over six months exceed 26.4% of shares outstanding.', 'Peak monthly share turnover exceeds 44,134 shares.', 'Shares outstanding stay at 656,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 23.1%.', 'TRUE — Market capitalisation ≈ €10.5 million.', 'TRUE — Turnover ≈ 43.1% of shares outstanding.', 'TRUE — Peak monthly volume = 73,000.', 'TRUE — Shares outstanding unchanged.'], '4/5', 94, 'full' ),
-( '6.2', 'CASE 6.2.095', 'Earnings Per Share From Reported Figures 95', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=14
-March | Price=13
-April | Price=14
-May | Price=14
-June | Price=13
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=19000
-February | Volume=40000
-March | Volume=67000
-April | Volume=75000
-May | Volume=38000
-June | Volume=42000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 510,000 | 19,000 |
-| February | 14 | 510,000 | 40,000 |
-| March | 13 | 510,000 | 67,000 |
-| April | 14 | 510,000 | 75,000 |
-| May | 14 | 510,000 | 38,000 |
-| June | 13 | 510,000 | 42,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 209 |
-| Shares outstanding | 510,000 |
-| Total shares traded (six months) | 281,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €6.2 million.', 'The closing share price rose by more than 15.9% from first to last month.', 'Total shares traded over six months exceed 10.4% of shares outstanding.', 'Peak monthly share turnover exceeds 66,408 shares.', 'Shares outstanding stay at 510,000 every month.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €6.6 million.', 'FALSE — Price change ≈ -7.1%.', 'TRUE — Turnover ≈ 55.1% of shares outstanding.', 'TRUE — Peak monthly volume = 75,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 95, 'full' ),
-( '6.2', 'CASE 6.2.096', 'Loss and Retained Earnings Decline', 'Consider a construction firm financing new heavy machinery partly with retained profits and partly with a long-term loan. Evaluate the following economic assertions:', ARRAY['Land owned by a logistics company is depreciated in exactly the same way as its forklift trucks, because all fixed assets wear out identically through use.', 'The depreciation that a dairy processor charges on its refrigerated trucks each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'The depreciation that a fitness club chain charges on its exercise equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'The depreciation that a car parts manufacturer charges on its stamping presses each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'When a hotel chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the refrigerated trucks was purchased.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the exercise equipment was purchased.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the stamping presses was purchased.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.'], '5/5', 96, 'full' ),
-( '6.2', 'CASE 6.2.097', 'Listed Company Performance Charts 97', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=27
-February | Price=27
-March | Price=28
-April | Price=29
-May | Price=27
-June | Price=26
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=35000
-February | Volume=46000
-March | Volume=45000
-April | Volume=49000
-May | Volume=37000
-June | Volume=37000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 639,000 | 35,000 |
-| February | 27 | 639,000 | 46,000 |
-| March | 28 | 639,000 | 45,000 |
-| April | 29 | 639,000 | 49,000 |
-| May | 27 | 639,000 | 37,000 |
-| June | 26 | 639,000 | 37,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 230 |
-| Shares outstanding | 639,000 |
-| Total shares traded (six months) | 249,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 14.6% over the period.', 'Market capitalisation at the last month exceeds €13.7 million.', 'Earnings per share exceeds €0.26.', 'Highest closing price is more than 31.3% above the lowest.', 'Total shares traded over six months exceed 39.9% of shares outstanding.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — €17.3m → €16.6m.', 'TRUE — Market capitalisation ≈ €16.6 million.', 'TRUE — Earnings per share ≈ €0.36.', 'FALSE — Range €26–€29.', 'FALSE — Turnover ≈ 39.0% of shares outstanding.'], '5/5', 97, 'full' ),
-( '6.2', 'CASE 6.2.098', 'Reading a Statement of Profit and Loss', 'Analyze why investing activities in the cash flow statement often involve outflows for new fixed assets. Evaluate the following economic assertions:', ARRAY['When a software developer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a garage makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'Land owned by a software developer is normally left out of the depreciation schedule because, unlike its office computer equipment, land does not wear out through ordinary use.', 'The depreciation that a garage charges on its diagnostic equipment each year is a non-cash expense, since the related cash was already paid out when the diagnostic equipment was originally purchased.', 'A construction firm buys heavy construction machinery for 33,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 4,900 euros of depreciation in each of those years.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — Spreading the depreciable amount of 29,400 euros evenly over 6 years gives an annual charge of 4,900 euros.'], '2/5', 98, 'full' ),
-( '6.2', 'CASE 6.2.099', 'Share Price and Market Capitalisation 99', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=19
-March | Price=18
-April | Price=18
-May | Price=17
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=64000
-February | Volume=73000
-March | Volume=34000
-April | Volume=28000
-May | Volume=21000
-June | Volume=61000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 796,000 | 64,000 |
-| February | 19 | 796,000 | 73,000 |
-| March | 18 | 796,000 | 34,000 |
-| April | 18 | 796,000 | 28,000 |
-| May | 17 | 796,000 | 21,000 |
-| June | 17 | 796,000 | 61,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 244 |
-| Shares outstanding | 796,000 |
-| Total shares traded (six months) | 281,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.7 million.', 'Total shares traded over six months exceed 28.1% of shares outstanding.', 'Peak monthly share turnover exceeds 68,835 shares.', 'Shares outstanding stay at 796,000 every month.', 'Operating result is below €273 thousand.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €13.5 million.', 'TRUE — Turnover ≈ 35.3% of shares outstanding.', 'TRUE — Peak monthly volume = 73,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 244.'], '4/5', 99, 'full' ),
-( '6.2', 'CASE 6.2.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=19
-April | Price=18
-May | Price=18
-June | Price=19
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=58000
-February | Volume=29000
-March | Volume=57000
-April | Volume=12000
-May | Volume=50000
-June | Volume=23000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 474,000 | 58,000 |
-| February | 18 | 474,000 | 29,000 |
-| March | 19 | 474,000 | 57,000 |
-| April | 18 | 474,000 | 12,000 |
-| May | 18 | 474,000 | 50,000 |
-| June | 19 | 474,000 | 23,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 203 |
-| Shares outstanding | 474,000 |
-| Total shares traded (six months) | 229,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7 million (see the extract prepared for case 6.2.100).', 'Earnings per share exceeds €0.37 (see the extract prepared for case 6.2.100).', 'Total shares traded over six months exceed 21.9% of shares outstanding (see the extract prepared for case 6.2.100).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.2.100).', 'Shares outstanding stay at 474,000 every month (see the extract prepared for case 6.2.100).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €9.0 million.', 'TRUE — Earnings per share ≈ €0.43.', 'TRUE — Turnover ≈ 48.3% of shares outstanding.', 'TRUE — Rose in 3 of 5 steps.', 'TRUE — Shares outstanding unchanged.'], '5/5', 100, 'full' ),
-( '6.2', 'CASE 6.2.101', 'Earnings Per Share From Reported Figures 101', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=35
-March | Price=37
-April | Price=40
-May | Price=36
-June | Price=33
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=31000
-February | Volume=46000
-March | Volume=70000
-April | Volume=65000
-May | Volume=52000
-June | Volume=18000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 717,000 | 31,000 |
-| February | 35 | 717,000 | 46,000 |
-| March | 37 | 717,000 | 70,000 |
-| April | 40 | 717,000 | 65,000 |
-| May | 36 | 717,000 | 52,000 |
-| June | 33 | 717,000 | 18,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 201 |
-| Shares outstanding | 717,000 |
-| Total shares traded (six months) | 282,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €21 million (see the extract prepared for case 6.2.101).', 'The closing share price rose by more than 17% from first to last month (see the extract prepared for case 6.2.101).', 'Market capitalisation rose by more than 18.7% over the period (see the extract prepared for case 6.2.101).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.2.101).', 'The last closing price is below the first (see the extract prepared for case 6.2.101).'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €23.7 million.', 'FALSE — Price change ≈ 6.5%.', 'FALSE — €22.2m → €23.7m.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — 31 → 33.'], '3/5', 101, 'full' ),
-( '6.2', 'CASE 6.2.102', 'Share Price and Market Capitalisation 102', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=23
-March | Price=21
-April | Price=22
-May | Price=20
-June | Price=21
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=15000
-February | Volume=40000
-March | Volume=20000
-April | Volume=69000
-May | Volume=53000
-June | Volume=58000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 497,000 | 15,000 |
-| February | 23 | 497,000 | 40,000 |
-| March | 21 | 497,000 | 20,000 |
-| April | 22 | 497,000 | 69,000 |
-| May | 20 | 497,000 | 53,000 |
-| June | 21 | 497,000 | 58,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 256 |
-| Shares outstanding | 497,000 |
-| Total shares traded (six months) | 255,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33% from first to last month.', 'Market capitalisation rose by more than 29.9% over the period.', 'Market capitalisation at the last month exceeds €7.9 million.', 'Highest closing price is more than 40.6% above the lowest.', 'Earnings per share is exactly €0.59.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ -8.7%.', 'FALSE — €11.4m → €10.4m.', 'TRUE — Market capitalisation ≈ €10.4 million.', 'FALSE — Range €20–€23.', 'FALSE — Earnings per share ≈ €0.52.'], '2/5', 102, 'full' ),
-( '6.2', 'CASE 6.2.103', 'Listed Company Performance Charts 103', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=24
-March | Price=25
-April | Price=28
-May | Price=27
-June | Price=29
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=31000
-February | Volume=41000
-March | Volume=75000
-April | Volume=57000
-May | Volume=15000
-June | Volume=40000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 603,000 | 31,000 |
-| February | 24 | 603,000 | 41,000 |
-| March | 25 | 603,000 | 75,000 |
-| April | 28 | 603,000 | 57,000 |
-| May | 27 | 603,000 | 15,000 |
-| June | 29 | 603,000 | 40,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 206 |
-| Shares outstanding | 603,000 |
-| Total shares traded (six months) | 259,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €15.5 million.', 'The closing share price rose by more than 29.8% from first to last month.', 'Highest closing price is more than 26% above the lowest.', 'Peak monthly share turnover exceeds 77,232 shares.', 'Market capitalisation rose by more than 14.5% over the period.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €17.5 million.', 'FALSE — Price change ≈ 20.8%.', 'FALSE — Range €24–€29.', 'FALSE — Peak monthly volume = 75,000.', 'TRUE — €14.5m → €17.5m.'], '5/5', 103, 'full' ),
-( '6.2', 'CASE 6.2.104', 'Earnings Per Share From Reported Figures 104', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=30
-February | Price=31
-March | Price=32
-April | Price=30
-May | Price=32
-June | Price=29
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=26000
-February | Volume=12000
-March | Volume=59000
-April | Volume=25000
-May | Volume=19000
-June | Volume=61000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 30 | 858,000 | 26,000 |
-| February | 31 | 858,000 | 12,000 |
-| March | 32 | 858,000 | 59,000 |
-| April | 30 | 858,000 | 25,000 |
-| May | 32 | 858,000 | 19,000 |
-| June | 29 | 858,000 | 61,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 222 |
-| Shares outstanding | 858,000 |
-| Total shares traded (six months) | 202,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €21.4 million (see the extract prepared for case 6.2.104).', 'Earnings per share exceeds €0.21 (see the extract prepared for case 6.2.104).', 'Peak monthly share turnover exceeds 51,708 shares (see the extract prepared for case 6.2.104).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.2.104).', 'Shares outstanding stay at 858,000 every month (see the extract prepared for case 6.2.104).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €24.9 million.', 'TRUE — Earnings per share ≈ €0.26.', 'TRUE — Peak monthly volume = 61,000.', 'TRUE — Rose in 3 of 5 steps.', 'TRUE — Shares outstanding unchanged.'], '2/5', 104, 'full' ),
-( '6.2', 'CASE 6.2.105', 'Share Price and Market Capitalisation 105', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=19
-March | Price=18
-April | Price=17
-May | Price=19
-June | Price=18
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=74000
-February | Volume=48000
-March | Volume=14000
-April | Volume=43000
-May | Volume=66000
-June | Volume=23000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 567,000 | 74,000 |
-| February | 19 | 567,000 | 48,000 |
-| March | 18 | 567,000 | 14,000 |
-| April | 17 | 567,000 | 43,000 |
-| May | 19 | 567,000 | 66,000 |
-| June | 18 | 567,000 | 23,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 281 |
-| Shares outstanding | 567,000 |
-| Total shares traded (six months) | 268,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.4% from first to last month (see the extract prepared for case 6.2.105).', 'Market capitalisation rose by more than 25.1% over the period (see the extract prepared for case 6.2.105).', 'Highest closing price is more than 31.5% above the lowest (see the extract prepared for case 6.2.105).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.2.105).', 'Market capitalisation at the last month exceeds €8.4 million (see the extract prepared for case 6.2.105).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -5.3%.', 'FALSE — €10.8m → €10.2m.', 'FALSE — Range €17–€19.', 'FALSE — Rose in 1 of 5 steps.', 'TRUE — Market capitalisation ≈ €10.2 million.'], '3/5', 105, 'full' ),
-( '6.2', 'CASE 6.2.106', 'Listed Company Performance Charts 106', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=26
-February | Price=28
-March | Price=29
-April | Price=32
-May | Price=29
-June | Price=32
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=25000
-February | Volume=71000
-March | Volume=28000
-April | Volume=50000
-May | Volume=75000
-June | Volume=17000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 26 | 524,000 | 25,000 |
-| February | 28 | 524,000 | 71,000 |
-| March | 29 | 524,000 | 28,000 |
-| April | 32 | 524,000 | 50,000 |
-| May | 29 | 524,000 | 75,000 |
-| June | 32 | 524,000 | 17,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 185 |
-| Shares outstanding | 524,000 |
-| Total shares traded (six months) | 266,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 32.5% from first to last month (see the extract prepared for case 6.2.106).', 'Market capitalisation at the last month exceeds €13.5 million (see the extract prepared for case 6.2.106).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.2.106).', 'Market capitalisation rose by more than 13.4% over the period (see the extract prepared for case 6.2.106).', 'Earnings per share exceeds €0.25 (see the extract prepared for case 6.2.106).'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ 23.1%.', 'TRUE — Market capitalisation ≈ €16.8 million.', 'FALSE — Peak price month vs peak volume month.', 'TRUE — €13.6m → €16.8m.', 'TRUE — Earnings per share ≈ €0.35.'], '4/5', 106, 'full' ),
-( '6.2', 'CASE 6.2.107', 'Reading a Cash Flow Statement', 'Review why financing activities in the cash flow statement often involve loans, share capital or dividends. Evaluate the following economic assertions:', ARRAY['A hotel chain buys kitchen equipment for 37,500 euros, expects a residual value of 4,500 euros at the end of its useful life, and plans to use it for 8 years; under the straight-line method it would charge 4,125 euros of depreciation in each of those years.', 'Land owned by a packaging manufacturer is depreciated in exactly the same way as its packaging machinery, because all fixed assets wear out identically through use.', 'A textile mill buys spinning machinery for 60,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 8 years; under the straight-line method it would charge 7,050 euros of depreciation in each of those years.', 'A brewery recorded its brewing tanks at a cost of 55,500 euros and depreciates it on the straight-line method by 8,750 euros a year; after two years of use, its book value would be 38,000 euros.', 'A textile mill recorded its spinning machinery at a cost of 60,000 euros and depreciates it on the straight-line method by 7,050 euros a year; after two years of use, its book value would be 45,900 euros.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Spreading the depreciable amount of 33,000 euros evenly over 8 years gives an annual charge of 4,125 euros.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'TRUE — Spreading the depreciable amount of 56,400 euros evenly over 8 years gives an annual charge of 7,050 euros.', 'TRUE — Deducting two years of depreciation, 17,500 euros in total, from the original cost of 55,500 euros leaves a book value of 38,000 euros.', 'TRUE — Deducting two years of depreciation, 14,100 euros in total, from the original cost of 60,000 euros leaves a book value of 45,900 euros.'], '5/5', 107, 'full' ),
-( '6.2', 'CASE 6.2.108', 'Share Price and Market Capitalisation 108', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=24
-March | Price=26
-April | Price=26
-May | Price=25
-June | Price=27
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=56000
-February | Volume=25000
-March | Volume=34000
-April | Volume=13000
-May | Volume=72000
-June | Volume=45000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 535,000 | 56,000 |
-| February | 24 | 535,000 | 25,000 |
-| March | 26 | 535,000 | 34,000 |
-| April | 26 | 535,000 | 13,000 |
-| May | 25 | 535,000 | 72,000 |
-| June | 27 | 535,000 | 45,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 255 |
-| Shares outstanding | 535,000 |
-| Total shares traded (six months) | 245,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.5 million.', 'The closing share price rose by more than 27.2% from first to last month.', 'Market capitalisation rose by more than 18.2% over the period.', 'Highest closing price is more than 42.7% above the lowest.', 'Earnings per share exceeds €0.4.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €14.4 million.', 'FALSE — Price change ≈ 8.0%.', 'FALSE — €13.4m → €14.4m.', 'FALSE — Range €24–€27.', 'TRUE — Earnings per share ≈ €0.48.'], '5/5', 108, 'full' ),
-( '6.2', 'CASE 6.2.109', 'Fixed Assets and Useful Life', 'Analyze why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:', ARRAY['The depreciation that a catering company charges on its catering vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'Land owned by a recycling firm is depreciated in exactly the same way as its sorting machinery, because all fixed assets wear out identically through use.', 'A construction firm buys heavy construction machinery for 33,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 5,500 euros of depreciation in each of those years.', 'A printing company recorded its printing press at a cost of 64,500 euros and depreciates it on the straight-line method by 6,010 euros a year; after two years of use, its book value would be 52,480 euros.', 'A car parts manufacturer buys stamping presses for 109,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 10,950 euros of depreciation in each of those years.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the catering vans was purchased.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 4,900 euros, not 5,500 euros.', 'TRUE — Deducting two years of depreciation, 12,020 euros in total, from the original cost of 64,500 euros leaves a book value of 52,480 euros.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 10,670 euros, not 10,950 euros.'], '5/5', 109, 'full' ),
-( '6.2', 'CASE 6.2.110', 'Earnings Per Share From Reported Figures 110', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=28
-March | Price=30
-April | Price=28
-May | Price=31
-June | Price=31
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=49000
-February | Volume=30000
-March | Volume=48000
-April | Volume=65000
-May | Volume=67000
-June | Volume=56000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 605,000 | 49,000 |
-| February | 28 | 605,000 | 30,000 |
-| March | 30 | 605,000 | 48,000 |
-| April | 28 | 605,000 | 65,000 |
-| May | 31 | 605,000 | 67,000 |
-| June | 31 | 605,000 | 56,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 296 |
-| Shares outstanding | 605,000 |
-| Total shares traded (six months) | 315,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 11.9% from first to last month (see the extract prepared for case 6.2.110).', 'Highest closing price is more than 37.4% above the lowest (see the extract prepared for case 6.2.110).', 'The last closing price is below the first (see the extract prepared for case 6.2.110).', 'Operating result is below €217 thousand (see the extract prepared for case 6.2.110).', 'Earnings per share is exactly €0.55 (see the extract prepared for case 6.2.110).'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Price change ≈ 29.2%.', 'FALSE — Range €24–€31.', 'FALSE — 24 → 31.', 'FALSE — Operating result = 296.', 'FALSE — Earnings per share ≈ €0.49.'], '5/5', 110, 'full' ),
-( '6.2', 'CASE 6.2.111', 'Share Price and Market Capitalisation 111', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=32
-March | Price=31
-April | Price=30
-May | Price=33
-June | Price=32
+January | Price=35
+February | Price=36
+March | Price=36
+April | Price=38
+May | Price=39
+June | Price=44
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
 January | Volume=40000
-February | Volume=13000
-March | Volume=35000
-April | Volume=43000
-May | Volume=35000
-June | Volume=33000
+February | Volume=49000
+March | Volume=89000
+April | Volume=32000
+May | Volume=79000
+June | Volume=87000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 882,000 | 40,000 |
-| February | 32 | 882,000 | 13,000 |
-| March | 31 | 882,000 | 35,000 |
-| April | 30 | 882,000 | 43,000 |
-| May | 33 | 882,000 | 35,000 |
-| June | 32 | 882,000 | 33,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 40,000 |
+| February | 36 | 49,000 |
+| March | 36 | 89,000 |
+| April | 38 | 32,000 |
+| May | 39 | 79,000 |
+| June | 44 | 87,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 219 |
-| Shares outstanding | 882,000 |
-| Total shares traded (six months) | 199,000 |
+| Operating result (€ thousands) | 200 |
+| Shares outstanding | 604,000 |
+| Total shares traded (six months) | 376,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 26.3% over the period.', 'Highest closing price is more than 30.6% above the lowest.', 'Total shares traded over six months exceed 36.5% of shares outstanding.', 'Market capitalisation at the last month exceeds €21.2 million.', 'Operating result is below €214 thousand.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — €25.6m → €28.2m.', 'FALSE — Range €29–€33.', 'FALSE — Turnover ≈ 22.6% of shares outstanding.', 'TRUE — Market capitalisation ≈ €28.2 million.', 'FALSE — Operating result = 219.'], '4/5', 111, 'full' ),
-( '6.2', 'CASE 6.2.112', 'Listed Company Performance Charts 112', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 34.9% from first to last month.', 'Market capitalisation at the last month exceeds €20.3 million.', 'Highest closing price is more than 14.3% above the lowest.', 'Total shares traded over six months exceed 28% of shares outstanding.', 'Peak monthly share turnover exceeds 65,605 shares.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ 25.7%.', 'TRUE — Market capitalisation ≈ €26.6 million.', 'TRUE — Range €35–€44.', 'TRUE — Turnover ≈ 62.3% of shares outstanding.', 'TRUE — Peak monthly volume = 89,000.'], '2/5', 92, 'full' ),
+( '6.2', 'CASE 6.2.093', 'Retained Earnings and Equity Growth', 'Analyze why depreciation is added back to profit when working out cash generated from operating activities. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a fitness club chain''s exercise equipment after three years is 43,550 euros.', 'Accumulated depreciation on a restaurant chain''s commercial refrigerators after three years is 36,320 euros.', 'Accumulated depreciation on a IT consultancy''s laptop computers after three years is 31,500 euros.', 'When a construction firm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a hotel chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — Three years of use accumulate 65,325 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 54,480 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 47,250 euros, not two years'' worth.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.'], '5/5', 93, 'full' ),
+( '6.2', 'CASE 6.2.094', 'Listed Company Performance Charts 94', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=23
-March | Price=25
+January | Price=20
+February | Price=21
+March | Price=23
+April | Price=23
+May | Price=24
+June | Price=25
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=63000
+February | Volume=69000
+March | Volume=54000
+April | Volume=93000
+May | Volume=52000
+June | Volume=36000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 63,000 |
+| February | 21 | 69,000 |
+| March | 23 | 54,000 |
+| April | 23 | 93,000 |
+| May | 24 | 52,000 |
+| June | 25 | 36,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 278 |
+| Shares outstanding | 656,000 |
+| Total shares traded (six months) | 367,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.8% from first to last month.', 'Market capitalisation at the last month exceeds €12.6 million.', 'Total shares traded over six months exceed 26.4% of shares outstanding.', 'Peak monthly share turnover exceeds 56,226 shares.', 'Shares outstanding equal 656,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €16.4 million.', 'TRUE — Turnover ≈ 55.9% of shares outstanding.', 'TRUE — Peak monthly volume = 93,000.', 'TRUE — Shares outstanding = 656,000.'], '4/5', 94, 'full' ),
+( '6.2', 'CASE 6.2.095', 'Earnings Per Share From Reported Figures 95', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=20
+February | Price=20
+March | Price=20
+April | Price=20
+May | Price=20
+June | Price=24
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=26000
+February | Volume=52000
+March | Volume=85000
+April | Volume=95000
+May | Volume=50000
+June | Volume=55000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 26,000 |
+| February | 20 | 52,000 |
+| March | 20 | 85,000 |
+| April | 20 | 95,000 |
+| May | 20 | 50,000 |
+| June | 24 | 55,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 209 |
+| Shares outstanding | 510,000 |
+| Total shares traded (six months) | 363,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 15.9% from first to last month.', 'Market capitalisation rose by more than 23.2% over the period.', 'Market capitalisation at the last month exceeds €11.5 million.', 'Total shares traded over six months exceed 10.4% of shares outstanding.', 'Peak monthly share turnover exceeds 84,116 shares.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Price change ≈ 20.0%.', 'FALSE — €10.2m → €12.2m.', 'TRUE — Market capitalisation ≈ €12.2 million.', 'TRUE — Turnover ≈ 71.2% of shares outstanding.', 'TRUE — Peak monthly volume = 95,000.'], '2/5', 95, 'full' ),
+( '6.2', 'CASE 6.2.096', 'Loss and Retained Earnings Decline', 'Consider a construction firm financing new heavy machinery partly with retained profits and partly with a long-term loan. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a publishing house''s binding machines after three years is 25,750 euros.', 'Accumulated depreciation on a car parts manufacturer''s stamping presses after three years is 21,340 euros.', 'Accumulated depreciation on a packaging manufacturer''s packaging machinery after three years is 55,200 euros.', 'Accumulated depreciation on a catering company''s catering vans after three years is 45,640 euros.', 'When a software developer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Three years of use accumulate 38,625 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 32,010 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 82,800 euros, not two years'' worth.', 'FALSE — Three years of use accumulate 68,460 euros, not two years'' worth.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.'], '5/5', 96, 'full' ),
+( '6.2', 'CASE 6.2.097', 'Listed Company Performance Charts 97', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=36
+February | Price=38
+March | Price=40
+April | Price=42
+May | Price=42
+June | Price=45
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=46000
+February | Volume=59000
+March | Volume=58000
+April | Volume=63000
+May | Volume=48000
+June | Volume=49000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 46,000 |
+| February | 38 | 59,000 |
+| March | 40 | 58,000 |
+| April | 42 | 63,000 |
+| May | 42 | 48,000 |
+| June | 45 | 49,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 230 |
+| Shares outstanding | 639,000 |
+| Total shares traded (six months) | 323,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 31.3% above the lowest.', 'The closing share price rose by more than 16% from first to last month.', 'Market capitalisation at the last month exceeds €23.7 million.', 'Peak monthly share turnover exceeds 63,979 shares.', 'Operating result is below €199 thousand.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Range €36–€45.', 'TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €28.8 million.', 'FALSE — Peak monthly volume = 63,000.', 'FALSE — Operating result = 230.'], '5/5', 97, 'full' ),
+( '6.2', 'CASE 6.2.098', 'Reading a Statement of Profit and Loss', 'Consider the following cash flow statement extract (€) for a fitness club chain.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 88400 |
+| Cash flow from investing activities | (16200) |
+| Cash flow from financing activities | (11220) |
+| Net change in cash and cash equivalents | **60980** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 40, cash and cash equivalents change by 60,980 euros in total.', 'Purchases recorded under investing total an outflow of 16,200 euros on extract 40.', 'Financing activities remove 11,220 euros from cash on extract 40.', 'Operating cash of 88,400 euros more than covers the investing outflow of 16,200 euros on extract 40.', 'Buying new exercise equipment for this fitness club chain is classified under investing activities.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Operating 88400 − investing 16200 − financing 11220 = 60980.', 'TRUE — The investing line is (16200).', 'TRUE — Financing is an outflow of 11,220 euros.', 'TRUE — Operating 88400 versus investing 16200.', 'TRUE — Long-term asset purchases are investing cash flows.'], '2/5', 98, 'full' ),
+( '6.2', 'CASE 6.2.099', 'Share Price and Market Capitalisation 99', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=28
+February | Price=28
+March | Price=28
 April | Price=28
-May | Price=29
+May | Price=28
+June | Price=35
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=82000
+February | Volume=92000
+March | Volume=45000
+April | Volume=38000
+May | Volume=30000
+June | Volume=77000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 82,000 |
+| February | 28 | 92,000 |
+| March | 28 | 45,000 |
+| April | 28 | 38,000 |
+| May | 28 | 30,000 |
+| June | 35 | 77,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 244 |
+| Shares outstanding | 796,000 |
+| Total shares traded (six months) | 364,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 15.7% from first to last month.', 'Market capitalisation at the last month exceeds €22 million.', 'Market capitalisation rose by more than 23.5% over the period.', 'Total shares traded over six months exceed 28.1% of shares outstanding.', 'Peak monthly share turnover exceeds 86,752 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €27.9 million.', 'TRUE — €22.3m → €27.9m.', 'TRUE — Turnover ≈ 45.7% of shares outstanding.', 'TRUE — Peak monthly volume = 92,000.'], '4/5', 99, 'full' ),
+( '6.2', 'CASE 6.2.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=23
+February | Price=24
+March | Price=24
+April | Price=23
+May | Price=22
 June | Price=28
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=32000
-February | Volume=72000
-March | Volume=30000
-April | Volume=49000
-May | Volume=46000
-June | Volume=74000
+January | Volume=74000
+February | Volume=39000
+March | Volume=72000
+April | Volume=18000
+May | Volume=65000
+June | Volume=32000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 734,000 | 32,000 |
-| February | 23 | 734,000 | 72,000 |
-| March | 25 | 734,000 | 30,000 |
-| April | 28 | 734,000 | 49,000 |
-| May | 29 | 734,000 | 46,000 |
-| June | 28 | 734,000 | 74,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 23 | 74,000 |
+| February | 24 | 39,000 |
+| March | 24 | 72,000 |
+| April | 23 | 18,000 |
+| May | 22 | 65,000 |
+| June | 28 | 32,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 200 |
-| Shares outstanding | 734,000 |
-| Total shares traded (six months) | 303,000 |
+| Operating result (€ thousands) | 203 |
+| Shares outstanding | 474,000 |
+| Total shares traded (six months) | 300,000 |
 
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.23.', 'Highest closing price is more than 23.2% above the lowest.', 'Total shares traded over six months exceed 39% of shares outstanding.', 'Shares outstanding stay at 734,000 every month.', 'Operating result is below €201 thousand.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Earnings per share ≈ €0.27.', 'TRUE — Range €23–€29.', 'TRUE — Turnover ≈ 41.3% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 200.'], '4/5', 112, 'full' ),
-( '6.2', 'CASE 6.2.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 15% from first to last month.', 'Market capitalisation at the last month exceeds €10.4 million.', 'Market capitalisation rose by more than 13.4% over the period.', 'Highest closing price is more than 20.6% above the lowest.', 'Total shares traded over six months exceed 21.9% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 21.7%.', 'TRUE — Market capitalisation ≈ €13.3 million.', 'TRUE — €10.9m → €13.3m.', 'TRUE — Range €22–€28.', 'TRUE — Turnover ≈ 63.3% of shares outstanding.'], '5/5', 100, 'full' ),
+( '6.2', 'CASE 6.2.101', 'Earnings Per Share From Reported Figures 101', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=13
-March | Price=13
-April | Price=14
-May | Price=13
-June | Price=12
+January | Price=25
+February | Price=24
+March | Price=23
+April | Price=23
+May | Price=22
+June | Price=26
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
 January | Volume=36000
 February | Volume=42000
-March | Volume=30000
-April | Volume=12000
-May | Volume=64000
-June | Volume=71000
+March | Volume=91000
+April | Volume=75000
+May | Volume=27000
+June | Volume=41000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 869,000 | 36,000 |
-| February | 13 | 869,000 | 42,000 |
-| March | 13 | 869,000 | 30,000 |
-| April | 14 | 869,000 | 12,000 |
-| May | 13 | 869,000 | 64,000 |
-| June | 12 | 869,000 | 71,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 36,000 |
+| February | 24 | 42,000 |
+| March | 23 | 91,000 |
+| April | 23 | 75,000 |
+| May | 22 | 27,000 |
+| June | 26 | 41,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 316 |
-| Shares outstanding | 869,000 |
-| Total shares traded (six months) | 255,000 |
+| Operating result (€ thousands) | 288 |
+| Shares outstanding | 623,000 |
+| Total shares traded (six months) | 312,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 24.3% from first to last month.', 'Market capitalisation at the last month exceeds €9.6 million.', 'Market capitalisation rose by more than 32.8% over the period.', 'Highest closing price is more than 43.3% above the lowest.', 'Operating result is below €231 thousand.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -20.0%.', 'TRUE — Market capitalisation ≈ €10.4 million.', 'FALSE — €13.0m → €10.4m.', 'FALSE — Range €12–€15.', 'FALSE — Operating result = 316.'], '5/5', 113, 'full' ),
-( '6.2', 'CASE 6.2.114', 'Accumulated Depreciation Over Time', 'Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:', ARRAY['A electronics retailer recorded its point-of-sale tills at a cost of 73,500 euros and depreciates it on the straight-line method by 13,500 euros a year; after two years of use, its book value would be 46,500 euros.', 'A arable farm has used its tractor for three years and charges 15,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 47,850 euros.', 'During one year, a pharmacy chain generated 48,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new dispensing equipment, and received 8,580 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,780 euros over the year.', 'When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Deducting two years of depreciation, 27,000 euros in total, from the original cost of 73,500 euros leaves a book value of 46,500 euros.', 'TRUE — Multiplying the annual charge of 15,950 euros by the three years the asset has been used gives accumulated depreciation of 47,850 euros.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,780 euros.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.'], '5/5', 114, 'full' ),
-( '6.2', 'CASE 6.2.115', 'Listed Company Performance Charts 115', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13.3 million.', 'The closing share price rose by more than 19% from first to last month.', 'Market capitalisation rose by more than 29.9% over the period.', 'Highest closing price is more than 38.4% above the lowest.', 'Operating result is below €202 thousand.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €16.2 million.', 'FALSE — Price change ≈ 4.0%.', 'FALSE — €15.6m → €16.2m.', 'FALSE — Range €22–€26.', 'FALSE — Operating result = 288.'], '3/5', 101, 'full' ),
+( '6.2', 'CASE 6.2.102', 'Share Price and Market Capitalisation 102', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=13
-March | Price=12
-April | Price=11
-May | Price=10
-June | Price=10
+January | Price=33
+February | Price=36
+March | Price=36
+April | Price=38
+May | Price=41
+June | Price=44
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=30000
-March | Volume=68000
-April | Volume=51000
-May | Volume=68000
-June | Volume=30000
+January | Volume=45000
+February | Volume=67000
+March | Volume=62000
+April | Volume=58000
+May | Volume=43000
+June | Volume=77000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 900,000 | 44,000 |
-| February | 13 | 900,000 | 30,000 |
-| March | 12 | 900,000 | 68,000 |
-| April | 11 | 900,000 | 51,000 |
-| May | 10 | 900,000 | 68,000 |
-| June | 10 | 900,000 | 30,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 45,000 |
+| February | 36 | 67,000 |
+| March | 36 | 62,000 |
+| April | 38 | 58,000 |
+| May | 41 | 43,000 |
+| June | 44 | 77,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 259 |
-| Shares outstanding | 900,000 |
-| Total shares traded (six months) | 291,000 |
+| Operating result (€ thousands) | 244 |
+| Shares outstanding | 406,000 |
+| Total shares traded (six months) | 352,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 25.4% from first to last month.', 'Market capitalisation rose by more than 34.8% over the period.', 'Total shares traded over six months exceed 39.6% of shares outstanding.', 'Market capitalisation at the last month exceeds €7.6 million.', 'Earnings per share is exactly €0.17.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -28.6%.', 'FALSE — €12.6m → €9.0m.', 'FALSE — Turnover ≈ 32.3% of shares outstanding.', 'TRUE — Market capitalisation ≈ €9.0 million.', 'FALSE — Earnings per share ≈ €0.29.'], '3/5', 115, 'full' ),
-( '6.2', 'CASE 6.2.116', 'Earnings Per Share From Reported Figures 116', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 35% over the period.', 'Peak monthly share turnover exceeds 81,999 shares.', 'The closing share price rose by more than 25.3% from first to last month.', 'Operating result is below €212 thousand.', 'Earnings per share is exactly €0.50.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — €13.4m → €17.9m.', 'FALSE — Peak monthly volume = 77,000.', 'TRUE — Price change ≈ 33.3%.', 'FALSE — Operating result = 244.', 'FALSE — Earnings per share ≈ €0.60.'], '2/5', 102, 'full' ),
+( '6.2', 'CASE 6.2.103', 'Listed Company Performance Charts 103', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
 January | Price=32
-February | Price=28
-March | Price=27
-April | Price=29
-May | Price=28
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=16000
-February | Volume=12000
-March | Volume=54000
-April | Volume=57000
-May | Volume=32000
-June | Volume=13000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 32 | 855,000 | 16,000 |
-| February | 28 | 855,000 | 12,000 |
-| March | 27 | 855,000 | 54,000 |
-| April | 29 | 855,000 | 57,000 |
-| May | 28 | 855,000 | 32,000 |
-| June | 28 | 855,000 | 13,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 274 |
-| Shares outstanding | 855,000 |
-| Total shares traded (six months) | 184,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €18.2 million.', 'Total shares traded over six months exceed 17.4% of shares outstanding.', 'Peak monthly share turnover exceeds 47,951 shares.', 'The closing share price rose by more than 22.4% from first to last month.', 'Shares outstanding stay at 855,000 every month.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €23.9 million.', 'TRUE — Turnover ≈ 21.5% of shares outstanding.', 'TRUE — Peak monthly volume = 57,000.', 'FALSE — Price change ≈ -12.5%.', 'TRUE — Shares outstanding unchanged.'], '5/5', 116, 'full' ),
-( '6.2', 'CASE 6.2.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=21
-March | Price=23
-April | Price=24
-May | Price=24
-June | Price=23
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=22000
-February | Volume=42000
-March | Volume=59000
-April | Volume=68000
-May | Volume=75000
-June | Volume=14000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 801,000 | 22,000 |
-| February | 21 | 801,000 | 42,000 |
-| March | 23 | 801,000 | 59,000 |
-| April | 24 | 801,000 | 68,000 |
-| May | 24 | 801,000 | 75,000 |
-| June | 23 | 801,000 | 14,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 295 |
-| Shares outstanding | 801,000 |
-| Total shares traded (six months) | 280,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €16.2 million (see the extract prepared for case 6.2.117).', 'The closing share price rose by more than 27.7% from first to last month (see the extract prepared for case 6.2.117).', 'Market capitalisation rose by more than 31.6% over the period (see the extract prepared for case 6.2.117).', 'Total shares traded over six months exceed 35.9% of shares outstanding (see the extract prepared for case 6.2.117).', 'Earnings per share exceeds €0.31 (see the extract prepared for case 6.2.117).'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €18.4 million.', 'FALSE — Price change ≈ 21.1%.', 'FALSE — €15.2m → €18.4m.', 'FALSE — Turnover ≈ 35.0% of shares outstanding.', 'TRUE — Earnings per share ≈ €0.37.'], '5/5', 117, 'full' ),
-( '6.2', 'CASE 6.2.118', 'Listed Company Performance Charts 118', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=30
-February | Price=34
-March | Price=34
-April | Price=34
-May | Price=31
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=38000
-February | Volume=54000
-March | Volume=39000
-April | Volume=25000
-May | Volume=24000
-June | Volume=70000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 30 | 684,000 | 38,000 |
-| February | 34 | 684,000 | 54,000 |
-| March | 34 | 684,000 | 39,000 |
-| April | 34 | 684,000 | 25,000 |
-| May | 31 | 684,000 | 24,000 |
-| June | 28 | 684,000 | 70,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 242 |
-| Shares outstanding | 684,000 |
-| Total shares traded (six months) | 250,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.1% from first to last month.', 'Total shares traded over six months exceed 13.7% of shares outstanding.', 'Peak monthly share turnover exceeds 56,699 shares.', 'Shares outstanding stay at 684,000 every month.', 'Earnings per share is exactly €0.35.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -6.7%.', 'TRUE — Turnover ≈ 36.5% of shares outstanding.', 'TRUE — Peak monthly volume = 70,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Earnings per share ≈ €0.35.'], '4/5', 118, 'full' ),
-( '6.2', 'CASE 6.2.119', 'Depreciation Charge Consistency', 'Analyze why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:', ARRAY['When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'A packaging manufacturer buys packaging machinery for 114,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 28,500 euros of depreciation in each of those years.', 'A bakery recorded its commercial ovens at a cost of 24,000 euros and depreciates it on the straight-line method by 5,500 euros a year; after two years of use, its book value would be 35,000 euros.', 'When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 27,600 euros, not 28,500 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 13,000 euros, not 35,000 euros.', 'TRUE — Buying long-term assets such as laptop computers is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.'], '5/5', 119, 'full' ),
-( '6.2', 'CASE 6.2.120', 'Share Price and Market Capitalisation 120', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=14
-March | Price=16
-April | Price=17
-May | Price=19
-June | Price=18
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=73000
-February | Volume=47000
-March | Volume=50000
-April | Volume=68000
-May | Volume=40000
-June | Volume=14000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 478,000 | 73,000 |
-| February | 14 | 478,000 | 47,000 |
-| March | 16 | 478,000 | 50,000 |
-| April | 17 | 478,000 | 68,000 |
-| May | 19 | 478,000 | 40,000 |
-| June | 18 | 478,000 | 14,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 251 |
-| Shares outstanding | 478,000 |
-| Total shares traded (six months) | 292,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 22.9% over the period (see the extract prepared for case 6.2.120).', 'The closing share price rose by more than 18% from first to last month (see the extract prepared for case 6.2.120).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.2.120).', 'The last closing price is below the first (see the extract prepared for case 6.2.120).', 'Market capitalisation at the last month exceeds €7.5 million (see the extract prepared for case 6.2.120).'], ARRAY[false, true, false, false, true], ARRAY['FALSE — €7.2m → €8.6m.', 'TRUE — Price change ≈ 20.0%.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — 15 → 18.', 'TRUE — Market capitalisation ≈ €8.6 million.'], '5/5', 120, 'full' ),
-( '6.2', 'CASE 6.2.121', 'Financial Statement Structure Overview', 'Review why a business''s reported profit for the year is not the same thing as the cash it generated during the year. Evaluate the following economic assertions:', ARRAY['A garage recorded its diagnostic equipment at a cost of 46,500 euros and depreciates it on the straight-line method by 10,125 euros a year; after two years of use, its book value would be 66,750 euros.', 'When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'When a catering company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'The balance sheet of a software developer shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 26,250 euros, not 66,750 euros.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'TRUE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '5/5', 121, 'full' ),
-( '6.2', 'CASE 6.2.122', 'Balance Sheet Versus Income Statement', 'Review the balance sheet as a snapshot of a business''s assets, equity and liabilities on one specific date. Evaluate the following economic assertions:', ARRAY['A furniture maker recorded its woodworking machinery at a cost of 51,000 euros and depreciates it on the straight-line method by 9,800 euros a year; after two years of use, its book value would be 70,600 euros.', 'A brewery recorded its brewing tanks at a cost of 55,500 euros and depreciates it on the straight-line method by 8,750 euros a year; after two years of use, its book value would be 73,000 euros.', 'A garage has used its diagnostic equipment for three years and charges 10,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 20,250 euros.', 'The balance sheet of a garage shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'During one year, a garage generated 34,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new diagnostic equipment, and used 5,100 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 37,900 euros over the year.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 31,400 euros, not 70,600 euros.', 'FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 38,000 euros, not 73,000 euros.', 'FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 30,375 euros rather than the two years'' worth shown here.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 19,900 euros.'], '5/5', 122, 'full' ),
-( '6.2', 'CASE 6.2.123', 'Cash Flow Statement Purpose', 'Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:', ARRAY['During one year, a brewery generated 37,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new brewing tanks, and used 5,460 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 44,340 euros over the year.', 'The balance sheet of a furniture maker shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a furniture maker earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'During one year, a textile mill generated 38,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new spinning machinery, and received 7,260 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 60,460 euros over the year.', 'When a brewery makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 19,140 euros.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 31,660 euros.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.'], '5/5', 123, 'full' ),
-( '6.2', 'CASE 6.2.124', 'Trade Receivable Cash Classification', 'Review how the statement of profit and loss reports revenues, costs and the resulting profit or loss over an accounting period. Evaluate the following economic assertions:', ARRAY['When a textile mill earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a printing company makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'Land owned by a furniture maker is normally left out of the depreciation schedule because, unlike its woodworking machinery, land does not wear out through ordinary use.', 'During one year, a printing company generated 40,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new printing press, and used 5,820 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 50,780 euros over the year.', 'During one year, a arable farm generated 42,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new tractor, and received 7,700 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,700 euros over the year.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 18,380 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,700 euros.'], '5/5', 124, 'full' ),
-( '6.2', 'CASE 6.2.125', 'Loan Repayment Cash Classification', 'Analyze why the statement of profit and loss covers a period rather than a single point in time. Evaluate the following economic assertions:', ARRAY['During one year, a pharmacy chain generated 48,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new dispensing equipment, and received 8,580 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 73,180 euros over the year.', 'The depreciation that a brewery charges on its brewing tanks each year is a non-cash expense, since the related cash was already paid out when the brewing tanks was originally purchased.', 'Land owned by a textile mill is normally left out of the depreciation schedule because, unlike its spinning machinery, land does not wear out through ordinary use.', 'During one year, a IT consultancy generated 53,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new laptop computers, and used 7,260 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 58,540 euros over the year.', 'A furniture maker buys woodworking machinery for 51,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 9,800 euros of depreciation in each of those years.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,780 euros.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 33,340 euros.', 'TRUE — Spreading the depreciable amount of 49,000 euros evenly over 5 years gives an annual charge of 9,800 euros.'], '2/5', 125, 'full' ),
-( '6.2', 'CASE 6.2.126', 'Combining Three Financial Statements', 'Review how a complete financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:', ARRAY['During one year, a packaging manufacturer generated 58,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new packaging machinery, and received 9,900 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 76,900 euros over the year.', 'During one year, a ceramics workshop generated 62,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kiln equipment, and used 8,340 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 68,860 euros over the year.', 'When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'A brewery buys brewing tanks for 55,500 euros, expects a residual value of 3,000 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 8,750 euros of depreciation in each of those years.', 'When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 58,900 euros.', 'FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,060 euros.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — Spreading the depreciable amount of 52,500 euros evenly over 6 years gives an annual charge of 8,750 euros.', 'FALSE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.'], '3/5', 126, 'full' ),
-( '6.2', 'CASE 6.2.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=16
-March | Price=16
-April | Price=15
-May | Price=17
-June | Price=16
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=60000
-February | Volume=60000
-March | Volume=74000
-April | Volume=25000
-May | Volume=62000
-June | Volume=31000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 608,000 | 60,000 |
-| February | 16 | 608,000 | 60,000 |
-| March | 16 | 608,000 | 74,000 |
-| April | 15 | 608,000 | 25,000 |
-| May | 17 | 608,000 | 62,000 |
-| June | 16 | 608,000 | 31,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 295 |
-| Shares outstanding | 608,000 |
-| Total shares traded (six months) | 312,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7.9 million (see the extract prepared for case 6.2.127).', 'Earnings per share exceeds €0.35 (see the extract prepared for case 6.2.127).', 'Total shares traded over six months exceed 37.6% of shares outstanding (see the extract prepared for case 6.2.127).', 'Peak monthly share turnover exceeds 55,754 shares (see the extract prepared for case 6.2.127).', 'Shares outstanding stay at 608,000 every month (see the extract prepared for case 6.2.127).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €9.7 million.', 'TRUE — Earnings per share ≈ €0.49.', 'TRUE — Turnover ≈ 51.3% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.'], '3/5', 127, 'full' ),
-( '6.2', 'CASE 6.2.128', 'Point-in-Time Versus Period Statements', 'Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:', ARRAY['When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'A printing company buys printing press for 64,500 euros, expects a residual value of 4,400 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 6,010 euros of depreciation in each of those years.', 'A pharmacy chain buys dispensing equipment for 87,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 8,340 euros of depreciation in each of those years.', 'A electronics retailer has used its point-of-sale tills for three years and charges 13,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 40,500 euros.', 'A logistics company has used its forklift trucks for three years and charges 12,650 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 37,950 euros.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Spreading the depreciable amount of 60,100 euros evenly over 10 years gives an annual charge of 6,010 euros.', 'TRUE — Spreading the depreciable amount of 83,400 euros evenly over 10 years gives an annual charge of 8,340 euros.', 'TRUE — Multiplying the annual charge of 13,500 euros by the three years the asset has been used gives accumulated depreciation of 40,500 euros.', 'TRUE — Multiplying the annual charge of 12,650 euros by the three years the asset has been used gives accumulated depreciation of 37,950 euros.'], '3/5', 128, 'full' ),
-( '6.2', 'CASE 6.2.129', 'Equity Movements From Profit', 'Review how depreciation reflects the gradual wearing out of a fixed asset used to generate revenue. Evaluate the following economic assertions:', ARRAY['A dairy processor has used its refrigerated trucks for three years and charges 9,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 29,850 euros.', 'A pharmacy chain has used its dispensing equipment for three years and charges 8,340 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,020 euros.', 'When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'A publishing house has used its binding machines for three years and charges 12,875 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 38,625 euros.', 'A recycling firm has used its sorting machinery for three years and charges 19,600 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 58,800 euros.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Multiplying the annual charge of 9,950 euros by the three years the asset has been used gives accumulated depreciation of 29,850 euros.', 'TRUE — Multiplying the annual charge of 8,340 euros by the three years the asset has been used gives accumulated depreciation of 25,020 euros.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — Multiplying the annual charge of 12,875 euros by the three years the asset has been used gives accumulated depreciation of 38,625 euros.', 'TRUE — Multiplying the annual charge of 19,600 euros by the three years the asset has been used gives accumulated depreciation of 58,800 euros.'], '4/5', 129, 'full' ),
-( '6.2', 'CASE 6.2.130', 'Equity Movements From Loss', 'Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:', ARRAY['A ceramics workshop has used its kiln equipment for three years and charges 15,175 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 45,525 euros.', 'When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'During one year, a packaging manufacturer generated 58,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new packaging machinery, and received 9,900 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,900 euros over the year.', 'When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'When a recycling firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Multiplying the annual charge of 15,175 euros by the three years the asset has been used gives accumulated depreciation of 45,525 euros.', 'FALSE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 58,900 euros.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.'], '2/5', 130, 'full' ),
-( '6.2', 'CASE 6.2.131', 'Earnings Per Share From Reported Figures 131', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=18
-February | Price=18
-March | Price=20
-April | Price=22
-May | Price=21
-June | Price=19
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=14000
-February | Volume=28000
-March | Volume=25000
-April | Volume=46000
-May | Volume=73000
-June | Volume=29000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 18 | 532,000 | 14,000 |
-| February | 18 | 532,000 | 28,000 |
-| March | 20 | 532,000 | 25,000 |
-| April | 22 | 532,000 | 46,000 |
-| May | 21 | 532,000 | 73,000 |
-| June | 19 | 532,000 | 29,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 287 |
-| Shares outstanding | 532,000 |
-| Total shares traded (six months) | 215,000 |
-
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.5.', 'Total shares traded over six months exceed 32.9% of shares outstanding.', 'The closing share price rose by more than 12.8% from first to last month.', 'Peak monthly share turnover exceeds 50,748 shares.', 'Shares outstanding stay at 532,000 every month.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Earnings per share ≈ €0.54.', 'TRUE — Turnover ≈ 40.4% of shares outstanding.', 'FALSE — Price change ≈ 5.6%.', 'TRUE — Peak monthly volume = 73,000.', 'TRUE — Shares outstanding unchanged.'], '3/5', 131, 'full' ),
-( '6.2', 'CASE 6.2.132', 'Share Price and Market Capitalisation 132', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=35
-March | Price=38
-April | Price=38
-May | Price=39
-June | Price=43
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=37000
-February | Volume=44000
-March | Volume=53000
-April | Volume=29000
-May | Volume=21000
-June | Volume=63000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 525,000 | 37,000 |
-| February | 35 | 525,000 | 44,000 |
-| March | 38 | 525,000 | 53,000 |
-| April | 38 | 525,000 | 29,000 |
-| May | 39 | 525,000 | 21,000 |
-| June | 43 | 525,000 | 63,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 249 |
-| Shares outstanding | 525,000 |
-| Total shares traded (six months) | 247,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €21.4 million.', 'Market capitalisation rose by more than 21.2% over the period.', 'Highest closing price is more than 34% above the lowest.', 'Total shares traded over six months exceed 29.3% of shares outstanding.', 'Peak monthly share turnover exceeds 56,305 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €22.6 million.', 'TRUE — €16.3m → €22.6m.', 'TRUE — Range €31–€43.', 'TRUE — Turnover ≈ 47.0% of shares outstanding.', 'TRUE — Peak monthly volume = 63,000.'], '4/5', 132, 'full' ),
-( '6.2', 'CASE 6.2.133', 'Depreciation Policy and Reported Profit', 'Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:', ARRAY['When a ceramics workshop purchases new kiln equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'The balance sheet of a brewery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a arable farm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a electronics retailer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'The depreciation that a printing company charges on its printing press each year is a non-cash expense, since the related cash was already paid out when the printing press was originally purchased.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Buying long-term assets such as kiln equipment is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.'], '5/5', 133, 'full' ),
-( '6.2', 'CASE 6.2.134', 'Non-Cash Adjustments to Profit', 'Consider a bakery that installed new commercial ovens and wants to see how the purchase flows through its statement of profit and loss, cash flow statement and balance sheet. Evaluate the following economic assertions:', ARRAY['When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'Land owned by a arable farm is normally left out of the depreciation schedule because, unlike its tractor, land does not wear out through ordinary use.', 'When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'The depreciation that a electronics retailer charges on its point-of-sale tills each year is a non-cash expense, since the related cash was already paid out when the point-of-sale tills was originally purchased.', 'A arable farm buys tractor for 69,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 15,950 euros of depreciation in each of those years.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — Spreading the depreciable amount of 63,800 euros evenly over 4 years gives an annual charge of 15,950 euros.'], '5/5', 134, 'full' ),
-( '6.2', 'CASE 6.2.135', 'Share Price and Market Capitalisation 135', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=21
-March | Price=22
-April | Price=21
-May | Price=19
-June | Price=20
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=38000
-February | Volume=74000
-March | Volume=19000
-April | Volume=17000
-May | Volume=34000
-June | Volume=73000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 647,000 | 38,000 |
-| February | 21 | 647,000 | 74,000 |
-| March | 22 | 647,000 | 19,000 |
-| April | 21 | 647,000 | 17,000 |
-| May | 19 | 647,000 | 34,000 |
-| June | 20 | 647,000 | 73,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 319 |
-| Shares outstanding | 647,000 |
-| Total shares traded (six months) | 255,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.8 million.', 'Total shares traded over six months exceed 19.8% of shares outstanding.', 'Peak monthly share turnover exceeds 48,686 shares.', 'Market capitalisation rose by more than 14.9% over the period.', 'Highest closing price is more than 42% above the lowest.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €12.9 million.', 'TRUE — Turnover ≈ 39.4% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'FALSE — €12.3m → €12.9m.', 'FALSE — Range €19–€22.'], '4/5', 135, 'full' ),
-( '6.2', 'CASE 6.2.136', 'Listed Company Performance Charts 136', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=22
-March | Price=24
-April | Price=26
-May | Price=25
-June | Price=24
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=47000
-February | Volume=68000
-March | Volume=18000
-April | Volume=52000
-May | Volume=49000
-June | Volume=74000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 688,000 | 47,000 |
-| February | 22 | 688,000 | 68,000 |
-| March | 24 | 688,000 | 18,000 |
-| April | 26 | 688,000 | 52,000 |
-| May | 25 | 688,000 | 49,000 |
-| June | 24 | 688,000 | 74,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 312 |
-| Shares outstanding | 688,000 |
-| Total shares traded (six months) | 308,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 29.6% from first to last month.', 'Market capitalisation rose by more than 30.7% over the period.', 'Market capitalisation at the last month exceeds €13.8 million.', 'Highest closing price is more than 30.1% above the lowest.', 'Operating result is below €226 thousand.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 14.3%.', 'FALSE — €14.4m → €16.5m.', 'TRUE — Market capitalisation ≈ €16.5 million.', 'FALSE — Range €21–€26.', 'FALSE — Operating result = 312.'], '5/5', 136, 'full' ),
-( '6.2', 'CASE 6.2.137', 'Earnings Per Share From Reported Figures 137', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=28
-March | Price=28
-April | Price=28
+February | Price=31
+March | Price=31
+April | Price=31
 May | Price=30
-June | Price=27
+June | Price=38
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=29000
-February | Volume=75000
-March | Volume=37000
-April | Volume=72000
-May | Volume=64000
-June | Volume=21000
+January | Volume=41000
+February | Volume=54000
+March | Volume=95000
+April | Volume=73000
+May | Volume=21000
+June | Volume=52000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 782,000 | 29,000 |
-| February | 28 | 782,000 | 75,000 |
-| March | 28 | 782,000 | 37,000 |
-| April | 28 | 782,000 | 72,000 |
-| May | 30 | 782,000 | 64,000 |
-| June | 27 | 782,000 | 21,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 32 | 41,000 |
+| February | 31 | 54,000 |
+| March | 31 | 95,000 |
+| April | 31 | 73,000 |
+| May | 30 | 21,000 |
+| June | 38 | 52,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 318 |
-| Shares outstanding | 782,000 |
-| Total shares traded (six months) | 298,000 |
+| Operating result (€ thousands) | 206 |
+| Shares outstanding | 603,000 |
+| Total shares traded (six months) | 336,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €16.4 million.', 'The closing share price rose by more than 30.9% from first to last month.', 'Market capitalisation rose by more than 34.9% over the period.', 'Earnings per share exceeds €0.34.', 'Highest closing price is more than 19.5% above the lowest.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €21.1 million.', 'FALSE — Price change ≈ 8.0%.', 'FALSE — €19.6m → €21.1m.', 'TRUE — Earnings per share ≈ €0.41.', 'TRUE — Range €25–€30.'], '5/5', 137, 'full' ),
-( '6.2', 'CASE 6.2.138', 'Asset Purchase and Investing Outflows', 'Review how an asset''s book value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:', ARRAY['A electronics retailer buys point-of-sale tills for 73,500 euros, expects a residual value of 6,000 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 13,500 euros of depreciation in each of those years.', 'A car parts manufacturer buys stamping presses for 109,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 10,670 euros of depreciation in each of those years.', 'A restaurant chain has used its commercial refrigerators for three years and charges 18,160 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 54,480 euros.', 'The balance sheet of a textile mill shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Spreading the depreciable amount of 67,500 euros evenly over 5 years gives an annual charge of 13,500 euros.', 'TRUE — Spreading the depreciable amount of 106,700 euros evenly over 10 years gives an annual charge of 10,670 euros.', 'TRUE — Multiplying the annual charge of 18,160 euros by the three years the asset has been used gives accumulated depreciation of 54,480 euros.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.'], '2/5', 138, 'full' ),
-( '6.2', 'CASE 6.2.139', 'Loan Financing and Cash Outflows', 'Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:', ARRAY['When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'The balance sheet of a construction firm reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.', 'When a logistics company earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'FALSE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.'], '5/5', 139, 'full' ),
-( '6.2', 'CASE 6.2.140', 'Earnings Per Share From Reported Figures 140', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 14.5% over the period.', 'The closing share price rose by more than 29.8% from first to last month.', 'Peak monthly share turnover exceeds 97,827 shares.', 'Earnings per share is exactly €0.43.', 'Highest closing price is more than 26% above the lowest.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — €19.3m → €22.9m.', 'FALSE — Price change ≈ 18.8%.', 'FALSE — Peak monthly volume = 95,000.', 'FALSE — Earnings per share ≈ €0.34.', 'TRUE — Range €30–€38.'], '5/5', 103, 'full' ),
+( '6.2', 'CASE 6.2.104', 'Earnings Per Share From Reported Figures 104', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=15
-March | Price=16
-April | Price=16
-May | Price=15
-June | Price=16
+January | Price=38
+February | Price=40
+March | Price=41
+April | Price=40
+May | Price=43
+June | Price=48
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=13000
-February | Volume=49000
-March | Volume=64000
-April | Volume=47000
-May | Volume=37000
-June | Volume=50000
+January | Volume=35000
+February | Volume=18000
+March | Volume=75000
+April | Volume=34000
+May | Volume=26000
+June | Volume=78000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 766,000 | 13,000 |
-| February | 15 | 766,000 | 49,000 |
-| March | 16 | 766,000 | 64,000 |
-| April | 16 | 766,000 | 47,000 |
-| May | 15 | 766,000 | 37,000 |
-| June | 16 | 766,000 | 50,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 35,000 |
+| February | 40 | 18,000 |
+| March | 41 | 75,000 |
+| April | 40 | 34,000 |
+| May | 43 | 26,000 |
+| June | 48 | 78,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 250 |
-| Shares outstanding | 766,000 |
-| Total shares traded (six months) | 260,000 |
+| Operating result (€ thousands) | 222 |
+| Shares outstanding | 858,000 |
+| Total shares traded (six months) | 266,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.1% from first to last month.', 'Operating result is below €244 thousand.', 'Market capitalisation rose by more than 11.2% over the period.', 'Earnings per share is exactly €0.41.', 'Total shares traded over six months exceed 18.7% of shares outstanding.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ 14.3%.', 'FALSE — Operating result = 250.', 'TRUE — €10.7m → €12.3m.', 'FALSE — Earnings per share ≈ €0.33.', 'TRUE — Turnover ≈ 33.9% of shares outstanding.'], '2/5', 140, 'full' ),
-( '6.2', 'CASE 6.2.141', 'Share Price and Market Capitalisation 141', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €35.4 million.', 'Earnings per share exceeds €0.21.', 'Highest closing price is more than 22.9% above the lowest.', 'Total shares traded over six months exceed 26.5% of shares outstanding.', 'Peak monthly share turnover exceeds 66,118 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €41.2 million.', 'TRUE — Earnings per share ≈ €0.26.', 'TRUE — Range €38–€48.', 'TRUE — Turnover ≈ 31.0% of shares outstanding.', 'TRUE — Peak monthly volume = 78,000.'], '2/5', 104, 'full' ),
+( '6.2', 'CASE 6.2.105', 'Share Price and Market Capitalisation 105', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=27
-February | Price=26
-March | Price=25
-April | Price=24
-May | Price=26
-June | Price=29
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=24000
-February | Volume=49000
-March | Volume=29000
-April | Volume=33000
-May | Volume=29000
-June | Volume=66000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 890,000 | 24,000 |
-| February | 26 | 890,000 | 49,000 |
-| March | 25 | 890,000 | 29,000 |
-| April | 24 | 890,000 | 33,000 |
-| May | 26 | 890,000 | 29,000 |
-| June | 29 | 890,000 | 66,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 301 |
-| Shares outstanding | 890,000 |
-| Total shares traded (six months) | 230,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €21.6 million (see the extract prepared for case 6.2.141).', 'Earnings per share exceeds €0.32 (see the extract prepared for case 6.2.141).', 'Highest closing price is more than 14.5% above the lowest (see the extract prepared for case 6.2.141).', 'Peak monthly share turnover exceeds 63,028 shares (see the extract prepared for case 6.2.141).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.2.141).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €25.8 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Range €24–€29.', 'TRUE — Peak monthly volume = 66,000.', 'TRUE — Peak price month vs peak volume month.'], '4/5', 141, 'full' ),
-( '6.2', 'CASE 6.2.142', 'Listed Company Performance Charts 142', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=16
-March | Price=17
-April | Price=19
-May | Price=21
+January | Price=29
+February | Price=29
+March | Price=27
+April | Price=25
+May | Price=24
 June | Price=22
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=25000
-February | Volume=54000
-March | Volume=67000
-April | Volume=49000
-May | Volume=47000
-June | Volume=28000
+January | Volume=35000
+February | Volume=89000
+March | Volume=47000
+April | Volume=61000
+May | Volume=58000
+June | Volume=37000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 613,000 | 25,000 |
-| February | 16 | 613,000 | 54,000 |
-| March | 17 | 613,000 | 67,000 |
-| April | 19 | 613,000 | 49,000 |
-| May | 21 | 613,000 | 47,000 |
-| June | 22 | 613,000 | 28,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 29 | 35,000 |
+| February | 29 | 89,000 |
+| March | 27 | 47,000 |
+| April | 25 | 61,000 |
+| May | 24 | 58,000 |
+| June | 22 | 37,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 233 |
-| Shares outstanding | 613,000 |
-| Total shares traded (six months) | 270,000 |
+| Operating result (€ thousands) | 187 |
+| Shares outstanding | 656,000 |
+| Total shares traded (six months) | 327,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.8% from first to last month (see the extract prepared for case 6.2.142).', 'Market capitalisation at the last month exceeds €12.6 million (see the extract prepared for case 6.2.142).', 'Highest closing price is more than 42% above the lowest (see the extract prepared for case 6.2.142).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.2.142).', 'The last closing price is below the first (see the extract prepared for case 6.2.142).'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Price change ≈ 29.4%.', 'TRUE — Market capitalisation ≈ €13.5 million.', 'FALSE — Range €16–€22.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — 17 → 22.'], '5/5', 142, 'full' ),
-( '6.2', 'CASE 6.2.143', 'Earnings Per Share From Reported Figures 143', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 15.6% from first to last month.', 'Market capitalisation rose by more than 15.6% over the period.', 'Peak monthly share turnover exceeds 95,658 shares.', 'Earnings per share is exactly €0.19.', 'Market capitalisation at the last month exceeds €13.4 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -24.1%.', 'FALSE — €19.0m → €14.4m.', 'FALSE — Peak monthly volume = 89,000.', 'FALSE — Earnings per share ≈ €0.29.', 'TRUE — Market capitalisation ≈ €14.4 million.'], '3/5', 105, 'full' ),
+( '6.2', 'CASE 6.2.106', 'Listed Company Performance Charts 106', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=27
-February | Price=29
-March | Price=30
-April | Price=27
-May | Price=23
-June | Price=23
+January | Price=37
+February | Price=42
+March | Price=43
+April | Price=45
+May | Price=46
+June | Price=49
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=65000
-February | Volume=18000
-March | Volume=75000
-April | Volume=71000
-May | Volume=19000
-June | Volume=56000
+January | Volume=48000
+February | Volume=29000
+March | Volume=62000
+April | Volume=67000
+May | Volume=29000
+June | Volume=60000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 451,000 | 65,000 |
-| February | 29 | 451,000 | 18,000 |
-| March | 30 | 451,000 | 75,000 |
-| April | 27 | 451,000 | 71,000 |
-| May | 23 | 451,000 | 19,000 |
-| June | 23 | 451,000 | 56,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 48,000 |
+| February | 42 | 29,000 |
+| March | 43 | 62,000 |
+| April | 45 | 67,000 |
+| May | 46 | 29,000 |
+| June | 49 | 60,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 216 |
-| Shares outstanding | 451,000 |
-| Total shares traded (six months) | 304,000 |
+| Operating result (€ thousands) | 241 |
+| Shares outstanding | 784,000 |
+| Total shares traded (six months) | 295,000 |
 
-Evaluate the following economic assertions:', ARRAY['Total shares traded over six months exceed 22.7% of shares outstanding.', 'Peak monthly share turnover exceeds 57,901 shares.', 'Shares outstanding stay at 451,000 every month.', 'Operating result is below €224 thousand.', 'Earnings per share is exactly €0.48.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Turnover ≈ 67.4% of shares outstanding.', 'TRUE — Peak monthly volume = 75,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 216.', 'TRUE — Earnings per share ≈ €0.48.'], '3/5', 143, 'full' ),
-( '6.2', 'CASE 6.2.144', 'Straight-Line Charges Across Useful Life', 'Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:', ARRAY['When a dairy processor makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'The balance sheet of a hotel chain reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.', 'When a pharmacy chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a logistics company is normally left out of the depreciation schedule because, unlike its forklift trucks, land does not wear out through ordinary use.', 'The depreciation that a dairy processor charges on its refrigerated trucks each year is a non-cash expense, since the related cash was already paid out when the refrigerated trucks was originally purchased.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.'], '2/5', 144, 'full' ),
-( '6.2', 'CASE 6.2.145', 'Land Excluded From Depreciation', 'Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:', ARRAY['Land owned by a pharmacy chain is normally left out of the depreciation schedule because, unlike its dispensing equipment, land does not wear out through ordinary use.', 'The depreciation that a fitness club chain charges on its exercise equipment each year is a non-cash expense, since the related cash was already paid out when the exercise equipment was originally purchased.', 'A logistics company buys forklift trucks for 78,000 euros, expects a residual value of 2,100 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 12,650 euros of depreciation in each of those years.', 'A fitness club chain buys exercise equipment for 91,500 euros, expects a residual value of 4,400 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 21,775 euros of depreciation in each of those years.', 'A IT consultancy has used its laptop computers for three years and charges 15,750 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 47,250 euros.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — Spreading the depreciable amount of 75,900 euros evenly over 6 years gives an annual charge of 12,650 euros.', 'TRUE — Spreading the depreciable amount of 87,100 euros evenly over 4 years gives an annual charge of 21,775 euros.', 'TRUE — Multiplying the annual charge of 15,750 euros by the three years the asset has been used gives accumulated depreciation of 47,250 euros.'], '5/5', 145, 'full' ),
-( '6.2', 'CASE 6.2.146', 'Earnings Per Share From Reported Figures 146', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 38.9% above the lowest.', 'The closing share price rose by more than 17.4% from first to last month.', 'Earnings per share is exactly €0.25.', 'Market capitalisation at the last month exceeds €30.1 million.', 'Market capitalisation rose by more than 19.5% over the period.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Range €37–€49.', 'TRUE — Price change ≈ 32.4%.', 'FALSE — Earnings per share ≈ €0.31.', 'TRUE — Market capitalisation ≈ €38.4 million.', 'TRUE — €29.0m → €38.4m.'], '4/5', 106, 'full' ),
+( '6.2', 'CASE 6.2.107', 'Reading a Cash Flow Statement', 'Review why financing activities in the cash flow statement often involve loans, share capital or dividends. Evaluate the following economic assertions:', ARRAY['Straight-line annual depreciation on office computer equipment bought by a software developer is 3,680 euros when cost, residual value and useful life are applied correctly.', 'Accumulated depreciation on a recycling firm''s sorting machinery after three years is 39,200 euros.', 'Straight-line annual depreciation on tractor bought by a arable farm is 15,950 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on forklift trucks bought by a logistics company is 12,650 euros when cost, residual value and useful life are applied correctly.', 'Straight-line annual depreciation on exercise equipment bought by a fitness club chain is 21,775 euros when cost, residual value and useful life are applied correctly.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — That is the correct annual straight-line charge for this office computer equipment.', 'FALSE — Three years of use accumulate 58,800 euros, not two years'' worth.', 'TRUE — That is the correct annual straight-line charge for this tractor.', 'TRUE — That is the correct annual straight-line charge for this forklift trucks.', 'TRUE — That is the correct annual straight-line charge for this exercise equipment.'], '5/5', 107, 'full' ),
+( '6.2', 'CASE 6.2.108', 'Share Price and Market Capitalisation 108', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=16
-March | Price=17
-April | Price=16
-May | Price=16
+January | Price=43
+February | Price=45
+March | Price=49
+April | Price=48
+May | Price=48
+June | Price=54
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=59000
+February | Volume=66000
+March | Volume=56000
+April | Volume=87000
+May | Volume=42000
+June | Volume=76000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 43 | 59,000 |
+| February | 45 | 66,000 |
+| March | 49 | 56,000 |
+| April | 48 | 87,000 |
+| May | 48 | 42,000 |
+| June | 54 | 76,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 288 |
+| Shares outstanding | 404,000 |
+| Total shares traded (six months) | 386,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 21.4% from first to last month.', 'Market capitalisation rose by more than 31.6% over the period.', 'Highest closing price is more than 25.9% above the lowest.', 'Operating result is below €229 thousand.', 'Market capitalisation at the last month exceeds €18.4 million.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Price change ≈ 25.6%.', 'FALSE — €17.4m → €21.8m.', 'FALSE — Range €43–€54.', 'FALSE — Operating result = 288.', 'TRUE — Market capitalisation ≈ €21.8 million.'], '5/5', 108, 'full' ),
+( '6.2', 'CASE 6.2.109', 'Fixed Assets and Useful Life', 'Analyze why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:', ARRAY['Accumulated depreciation on a ceramics workshop''s kiln equipment after three years is 30,350 euros.', 'When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'Straight-line annual depreciation on commercial refrigerators bought by a restaurant chain is 18,160 euros when cost, residual value and useful life are applied correctly.', 'When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Three years of use accumulate 45,525 euros, not two years'' worth.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — That is the correct annual straight-line charge for this commercial refrigerators.', 'FALSE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.'], '5/5', 109, 'full' ),
+( '6.2', 'CASE 6.2.110', 'Earnings Per Share From Reported Figures 110', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=35
+February | Price=36
+March | Price=35
+April | Price=36
+May | Price=36
+June | Price=44
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=92000
+February | Volume=56000
+March | Volume=20000
+April | Volume=23000
+May | Volume=85000
+June | Volume=65000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 92,000 |
+| February | 36 | 56,000 |
+| March | 35 | 20,000 |
+| April | 36 | 23,000 |
+| May | 36 | 85,000 |
+| June | 44 | 65,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 282 |
+| Shares outstanding | 776,000 |
+| Total shares traded (six months) | 341,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 18.3% from first to last month.', 'Market capitalisation rose by more than 33.1% over the period.', 'Highest closing price is more than 43.7% above the lowest.', 'Peak monthly share turnover exceeds 92,097 shares.', 'Operating result is below €214 thousand.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Price change ≈ 25.7%.', 'FALSE — €27.2m → €34.1m.', 'FALSE — Range €35–€44.', 'FALSE — Peak monthly volume = 92,000.', 'FALSE — Operating result = 282.'], '5/5', 110, 'full' ),
+( '6.2', 'CASE 6.2.111', 'Share Price and Market Capitalisation 111', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=26
+February | Price=24
+March | Price=21
+April | Price=19
+May | Price=17
 June | Price=15
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=31000
-February | Volume=52000
-March | Volume=39000
-April | Volume=57000
-May | Volume=39000
-June | Volume=17000
+January | Volume=93000
+February | Volume=38000
+March | Volume=55000
+April | Volume=77000
+May | Volume=68000
+June | Volume=45000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 694,000 | 31,000 |
-| February | 16 | 694,000 | 52,000 |
-| March | 17 | 694,000 | 39,000 |
-| April | 16 | 694,000 | 57,000 |
-| May | 16 | 694,000 | 39,000 |
-| June | 15 | 694,000 | 17,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 26 | 93,000 |
+| February | 24 | 38,000 |
+| March | 21 | 55,000 |
+| April | 19 | 77,000 |
+| May | 17 | 68,000 |
+| June | 15 | 45,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 184 |
-| Shares outstanding | 694,000 |
-| Total shares traded (six months) | 235,000 |
+| Operating result (€ thousands) | 292 |
+| Shares outstanding | 660,000 |
+| Total shares traded (six months) | 376,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 12.8% over the period.', 'Highest closing price is more than 32.5% above the lowest.', 'Market capitalisation at the last month exceeds €9.2 million.', 'Earnings per share exceeds €0.24.', 'Total shares traded over six months exceed 15% of shares outstanding.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — €9.7m → €10.4m.', 'FALSE — Range €14–€17.', 'TRUE — Market capitalisation ≈ €10.4 million.', 'TRUE — Earnings per share ≈ €0.27.', 'TRUE — Turnover ≈ 33.9% of shares outstanding.'], '5/5', 146, 'full' ),
-( '6.2', 'CASE 6.2.147', 'Share Price and Market Capitalisation 147', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 22% from first to last month.', 'Market capitalisation rose by more than 22.6% over the period.', 'Peak monthly share turnover exceeds 97,905 shares.', 'Earnings per share exceeds €0.41.', 'Operating result is below €269 thousand.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -42.3%.', 'FALSE — €17.2m → €9.9m.', 'FALSE — Peak monthly volume = 93,000.', 'TRUE — Earnings per share ≈ €0.44.', 'FALSE — Operating result = 292.'], '4/5', 111, 'full' ),
+( '6.2', 'CASE 6.2.112', 'Listed Company Performance Charts 112', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=24
-March | Price=25
-April | Price=26
-May | Price=28
-June | Price=31
+January | Price=31
+February | Price=31
+March | Price=33
+April | Price=34
+May | Price=36
+June | Price=39
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=61000
-February | Volume=41000
-March | Volume=69000
-April | Volume=46000
-May | Volume=48000
-June | Volume=60000
+January | Volume=43000
+February | Volume=91000
+March | Volume=40000
+April | Volume=64000
+May | Volume=59000
+June | Volume=93000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 889,000 | 61,000 |
-| February | 24 | 889,000 | 41,000 |
-| March | 25 | 889,000 | 69,000 |
-| April | 26 | 889,000 | 46,000 |
-| May | 28 | 889,000 | 48,000 |
-| June | 31 | 889,000 | 60,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 43,000 |
+| February | 31 | 91,000 |
+| March | 33 | 40,000 |
+| April | 34 | 64,000 |
+| May | 36 | 59,000 |
+| June | 39 | 93,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 220 |
-| Shares outstanding | 889,000 |
-| Total shares traded (six months) | 325,000 |
+| Operating result (€ thousands) | 200 |
+| Shares outstanding | 734,000 |
+| Total shares traded (six months) | 390,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.6% from first to last month.', 'Market capitalisation rose by more than 18.3% over the period.', 'Earnings per share exceeds €0.18.', 'Total shares traded over six months exceed 18.1% of shares outstanding.', 'Shares outstanding stay at 889,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 34.8%.', 'TRUE — €20.4m → €27.6m.', 'TRUE — Earnings per share ≈ €0.25.', 'TRUE — Turnover ≈ 36.6% of shares outstanding.', 'TRUE — Shares outstanding unchanged.'], '5/5', 147, 'full' ),
-( '6.2', 'CASE 6.2.148', 'Listed Company Performance Charts 148', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €22.4 million.', 'Market capitalisation rose by more than 16.3% over the period.', 'Earnings per share exceeds €0.23.', 'Highest closing price is more than 23.2% above the lowest.', 'Total shares traded over six months exceed 39% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €28.6 million.', 'TRUE — €22.8m → €28.6m.', 'TRUE — Earnings per share ≈ €0.27.', 'TRUE — Range €31–€39.', 'TRUE — Turnover ≈ 53.1% of shares outstanding.'], '4/5', 112, 'full' ),
+( '6.2', 'CASE 6.2.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=28
-March | Price=29
-April | Price=27
-May | Price=29
+January | Price=20
+February | Price=17
+March | Price=16
+April | Price=15
+May | Price=12
+June | Price=10
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=47000
+February | Volume=55000
+March | Volume=40000
+April | Volume=18000
+May | Volume=81000
+June | Volume=90000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 47,000 |
+| February | 17 | 55,000 |
+| March | 16 | 40,000 |
+| April | 15 | 18,000 |
+| May | 12 | 81,000 |
+| June | 10 | 90,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 316 |
+| Shares outstanding | 869,000 |
+| Total shares traded (six months) | 331,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 24.3% from first to last month.', 'Market capitalisation at the last month exceeds €8 million.', 'Market capitalisation rose by more than 32.8% over the period.', 'Operating result is below €231 thousand.', 'Earnings per share is exactly €0.41.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -50.0%.', 'TRUE — Market capitalisation ≈ €8.7 million.', 'FALSE — €17.4m → €8.7m.', 'FALSE — Operating result = 316.', 'FALSE — Earnings per share ≈ €0.36.'], '5/5', 113, 'full' ),
+( '6.2', 'CASE 6.2.114', 'Accumulated Depreciation Over Time', 'Consider the following cash flow statement extract (€) for a publishing house.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 93200 |
+| Cash flow from investing activities | (12600) |
+| Cash flow from financing activities | 14740 |
+| Net change in cash and cash equivalents | **95340** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 43, cash and cash equivalents change by 95,340 euros in total.', 'Purchases recorded under investing total an outflow of 12,600 euros on extract 43.', 'Financing activities add 14,740 euros to cash on extract 43.', 'Operating cash of 93,200 euros more than covers the investing outflow of 12,600 euros on extract 43.', 'Buying new binding machines for this publishing house is classified under investing activities.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Operating 93200 − investing 12600 + financing 14740 = 95340.', 'TRUE — The investing line is (12600).', 'TRUE — Financing is an inflow of 14,740 euros.', 'TRUE — Operating 93200 versus investing 12600.', 'TRUE — Long-term asset purchases are investing cash flows.'], '5/5', 114, 'full' ),
+( '6.2', 'CASE 6.2.115', 'Listed Company Performance Charts 115', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=21
+February | Price=19
+March | Price=18
+April | Price=17
+May | Price=16
+June | Price=16
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=43000
+February | Volume=48000
+March | Volume=24000
+April | Volume=49000
+May | Volume=41000
+June | Volume=65000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 43,000 |
+| February | 19 | 48,000 |
+| March | 18 | 24,000 |
+| April | 17 | 49,000 |
+| May | 16 | 41,000 |
+| June | 16 | 65,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 249 |
+| Shares outstanding | 513,000 |
+| Total shares traded (six months) | 270,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 21% from first to last month.', 'Market capitalisation rose by more than 10% over the period.', 'Peak monthly share turnover exceeds 72,575 shares.', 'Market capitalisation at the last month exceeds €7 million.', 'Operating result is below €247 thousand.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -23.8%.', 'FALSE — €10.8m → €8.2m.', 'FALSE — Peak monthly volume = 65,000.', 'TRUE — Market capitalisation ≈ €8.2 million.', 'FALSE — Operating result = 249.'], '3/5', 115, 'full' ),
+( '6.2', 'CASE 6.2.116', 'Earnings Per Share From Reported Figures 116', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=36
+February | Price=31
+March | Price=28
+April | Price=26
+May | Price=22
+June | Price=19
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=23000
+February | Volume=18000
+March | Volume=70000
+April | Volume=73000
+May | Volume=42000
+June | Volume=20000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 23,000 |
+| February | 31 | 18,000 |
+| March | 28 | 70,000 |
+| April | 26 | 73,000 |
+| May | 22 | 42,000 |
+| June | 19 | 20,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 274 |
+| Shares outstanding | 855,000 |
+| Total shares traded (six months) | 246,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.3 million.', 'Total shares traded over six months exceed 17.4% of shares outstanding.', 'Peak monthly share turnover exceeds 61,411 shares.', 'The closing share price rose by more than 22.4% from first to last month.', 'Shares outstanding equal 855,000.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €16.2 million.', 'TRUE — Turnover ≈ 28.8% of shares outstanding.', 'TRUE — Peak monthly volume = 73,000.', 'FALSE — Price change ≈ -47.2%.', 'TRUE — Shares outstanding = 855,000.'], '5/5', 116, 'full' ),
+( '6.2', 'CASE 6.2.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=27
+February | Price=30
+March | Price=34
+April | Price=36
+May | Price=38
+June | Price=38
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=30000
+February | Volume=55000
+March | Volume=75000
+April | Volume=86000
+May | Volume=94000
+June | Volume=20000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 30,000 |
+| February | 30 | 55,000 |
+| March | 34 | 75,000 |
+| April | 36 | 86,000 |
+| May | 38 | 94,000 |
+| June | 38 | 20,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 295 |
+| Shares outstanding | 801,000 |
+| Total shares traded (six months) | 360,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 27.7% from first to last month.', 'Peak monthly share turnover exceeds 96,071 shares.', 'Operating result is below €242 thousand.', 'Earnings per share is exactly €0.26.', 'Market capitalisation at the last month exceeds €26.8 million.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Price change ≈ 40.7%.', 'FALSE — Peak monthly volume = 94,000.', 'FALSE — Operating result = 295.', 'FALSE — Earnings per share ≈ €0.37.', 'TRUE — Market capitalisation ≈ €30.4 million.'], '5/5', 117, 'full' ),
+( '6.2', 'CASE 6.2.118', 'Listed Company Performance Charts 118', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=40
+February | Price=44
+March | Price=46
+April | Price=47
+May | Price=47
+June | Price=50
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=49000
+February | Volume=69000
+March | Volume=51000
+April | Volume=34000
+May | Volume=33000
+June | Volume=89000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 40 | 49,000 |
+| February | 44 | 69,000 |
+| March | 46 | 51,000 |
+| April | 47 | 34,000 |
+| May | 47 | 33,000 |
+| June | 50 | 89,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 242 |
+| Shares outstanding | 684,000 |
+| Total shares traded (six months) | 325,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 34.5% above the lowest.', 'The closing share price rose by more than 14.1% from first to last month.', 'Market capitalisation at the last month exceeds €25.7 million.', 'Market capitalisation rose by more than 18.7% over the period.', 'Total shares traded over six months exceed 13.7% of shares outstanding.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Range €40–€50.', 'TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €34.2 million.', 'TRUE — €27.4m → €34.2m.', 'TRUE — Turnover ≈ 47.5% of shares outstanding.'], '4/5', 118, 'full' ),
+( '6.2', 'CASE 6.2.119', 'Depreciation Charge Consistency', 'Analyze why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:', ARRAY['When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.', 'The balance sheet of a courier firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'FALSE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'TRUE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow is classified as an investing cash flow.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '5/5', 119, 'full' ),
+( '6.2', 'CASE 6.2.120', 'Share Price and Market Capitalisation 120', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=35
+February | Price=35
+March | Price=33
+April | Price=31
+May | Price=28
 June | Price=27
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=51000
-February | Volume=40000
-March | Volume=25000
-April | Volume=25000
-May | Volume=70000
-June | Volume=61000
+January | Volume=23000
+February | Volume=51000
+March | Volume=56000
+April | Volume=63000
+May | Volume=52000
+June | Volume=59000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 602,000 | 51,000 |
-| February | 28 | 602,000 | 40,000 |
-| March | 29 | 602,000 | 25,000 |
-| April | 27 | 602,000 | 25,000 |
-| May | 29 | 602,000 | 70,000 |
-| June | 27 | 602,000 | 61,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 23,000 |
+| February | 35 | 51,000 |
+| March | 33 | 56,000 |
+| April | 31 | 63,000 |
+| May | 28 | 52,000 |
+| June | 27 | 59,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 307 |
-| Shares outstanding | 602,000 |
-| Total shares traded (six months) | 272,000 |
+| Operating result (€ thousands) | 212 |
+| Shares outstanding | 818,000 |
+| Total shares traded (six months) | 304,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.2 million.', 'Market capitalisation rose by more than 9.8% over the period.', 'Highest closing price is more than 20.1% above the lowest.', 'Total shares traded over six months exceed 23.1% of shares outstanding.', 'Operating result is below €225 thousand.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Market capitalisation ≈ €16.3 million.', 'FALSE — €16.9m → €16.3m.', 'FALSE — Range €27–€29.', 'TRUE — Turnover ≈ 45.2% of shares outstanding.', 'FALSE — Operating result = 307.'], '4/5', 148, 'full' ),
-( '6.2', 'CASE 6.2.149', 'Earnings Per Share From Reported Figures 149', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.4% from first to last month.', 'Market capitalisation at the last month exceeds €20.8 million.', 'Market capitalisation rose by more than 28.8% over the period.', 'Earnings per share is exactly €0.18.', 'Earnings per share exceeds €0.2.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Price change ≈ -22.9%.', 'TRUE — Market capitalisation ≈ €22.1 million.', 'FALSE — €28.6m → €22.1m.', 'FALSE — Earnings per share ≈ €0.26.', 'TRUE — Earnings per share ≈ €0.26.'], '5/5', 120, 'full' ),
+( '6.2', 'CASE 6.2.121', 'Financial Statement Structure Overview', 'Review why a business''s reported profit for the year is not the same thing as the cash it generated during the year. Evaluate the following economic assertions:', ARRAY['When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'The balance sheet of a construction firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a brewery makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a textile mill earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.'], '5/5', 121, 'full' ),
+( '6.2', 'CASE 6.2.122', 'Balance Sheet Versus Income Statement', 'Consider the following cash flow statement extract (€) for a catering company.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 98000 |
+| Cash flow from investing activities | (9000) |
+| Cash flow from financing activities | (12300) |
+| Net change in cash and cash equivalents | **76700** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 94,700 euros on extract 46.', 'The operating figure alone of 98,000 euros is already the full net change on extract 46.', 'The investing line on extract 46 reports cash received of 9,000 euros.', 'On extract 46, cash and cash equivalents change by 76,700 euros in total.', 'Financing activities add 12,300 euros to cash on extract 46.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Investing must be subtracted; correct net change is 76,700 euros.', 'FALSE — That ignores investing and financing; correct net is 76,700 euros.', 'FALSE — Investing is an outflow of 9,000 euros.', 'TRUE — Operating 98000 − investing 9000 − financing 12300 = 76700.', 'FALSE — Financing is an outflow of 12,300 euros, not an inflow.'], '5/5', 122, 'full' ),
+( '6.2', 'CASE 6.2.123', 'Cash Flow Statement Purpose', 'Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:', ARRAY['When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'Land owned by a software developer is normally left out of the depreciation schedule because, unlike its office computer equipment, land does not wear out through ordinary use.', 'The depreciation that a garage charges on its diagnostic equipment each year is a non-cash expense, since the related cash was already paid out when the diagnostic equipment was originally purchased.', 'When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'Straight-line annual depreciation on diagnostic equipment bought by a garage is 10,125 euros when cost, residual value and useful life are applied correctly.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'TRUE — That is the correct annual straight-line charge for this diagnostic equipment.'], '5/5', 123, 'full' ),
+( '6.2', 'CASE 6.2.124', 'Trade Receivable Cash Classification', 'Review how the statement of profit and loss reports revenues, costs and the resulting profit or loss over an accounting period. Evaluate the following economic assertions:', ARRAY['Straight-line annual depreciation on catering vans bought by a catering company is 22,820 euros when cost, residual value and useful life are applied correctly.', 'When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.', 'When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.', 'When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — That is the correct annual straight-line charge for this catering vans.', 'TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.', 'TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.', 'FALSE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.'], '5/5', 124, 'full' ),
+( '6.2', 'CASE 6.2.125', 'Loan Repayment Cash Classification', 'Consider the following cash flow statement extract (€) for a bakery.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 102800 |
+| Cash flow from investing activities | (14400) |
+| Cash flow from financing activities | 16060 |
+| Net change in cash and cash equivalents | **104460** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 133,260 euros on extract 49.', 'On extract 49, cash and cash equivalents change by 104,460 euros in total.', 'Purchases recorded under investing total an outflow of 14,400 euros on extract 49.', 'The operating figure alone of 102,800 euros is already the full net change on extract 49.', 'Financing activities add 16,060 euros to cash on extract 49.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Investing must be subtracted; correct net change is 104,460 euros.', 'TRUE — Operating 102800 − investing 14400 + financing 16060 = 104460.', 'TRUE — The investing line is (14400).', 'FALSE — That ignores investing and financing; correct net is 104,460 euros.', 'TRUE — Financing is an inflow of 16,060 euros.'], '2/5', 125, 'full' ),
+( '6.2', 'CASE 6.2.126', 'Combining Three Financial Statements', 'Review how a complete financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:', ARRAY['When a restaurant chain earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a IT consultancy makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use.', 'The depreciation that a brewery charges on its brewing tanks each year is a non-cash expense, since the related cash was already paid out when the brewing tanks was originally purchased.', 'The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.', 'FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the delivery vans was purchased.'], '3/5', 126, 'full' ),
+( '6.2', 'CASE 6.2.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=15
-March | Price=14
-April | Price=14
-May | Price=14
-June | Price=15
+January | Price=23
+February | Price=25
+March | Price=27
+April | Price=27
+May | Price=30
+June | Price=31
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=77000
+February | Volume=76000
+March | Volume=93000
+April | Volume=33000
+May | Volume=79000
+June | Volume=41000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 23 | 77,000 |
+| February | 25 | 76,000 |
+| March | 27 | 93,000 |
+| April | 27 | 33,000 |
+| May | 30 | 79,000 |
+| June | 31 | 41,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 295 |
+| Shares outstanding | 608,000 |
+| Total shares traded (six months) | 399,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30.4% from first to last month.', 'Market capitalisation at the last month exceeds €15.3 million.', 'Market capitalisation rose by more than 23.3% over the period.', 'Highest closing price is more than 14.9% above the lowest.', 'Total shares traded over six months exceed 37.6% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 34.8%.', 'TRUE — Market capitalisation ≈ €18.8 million.', 'TRUE — €14.0m → €18.8m.', 'TRUE — Range €23–€31.', 'TRUE — Turnover ≈ 65.6% of shares outstanding.'], '3/5', 127, 'full' ),
+( '6.2', 'CASE 6.2.128', 'Point-in-Time Versus Period Statements', 'Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:', ARRAY['Land owned by a construction firm is depreciated in exactly the same way as its heavy construction machinery, because all fixed assets wear out identically through use.', 'Land owned by a textile mill is normally left out of the depreciation schedule because, unlike its spinning machinery, land does not wear out through ordinary use.', 'The depreciation that a printing company charges on its printing press each year is a non-cash expense, since the related cash was already paid out when the printing press was originally purchased.', 'The balance sheet of a hotel chain shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a electronics retailer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.'], '3/5', 128, 'full' ),
+( '6.2', 'CASE 6.2.129', 'Equity Movements From Profit', 'Consider the following cash flow statement extract (€) for a hotel chain.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 107600 |
+| Cash flow from investing activities | (10800) |
+| Cash flow from financing activities | (13380) |
+| Net change in cash and cash equivalents | **83420** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 52, cash and cash equivalents change by 83,420 euros in total.', 'Purchases recorded under investing total an outflow of 10,800 euros on extract 52.', 'Treating the investing line as an addition, total cash would change by 105,020 euros on extract 52.', 'Financing activities remove 13,380 euros from cash on extract 52.', 'Operating cash of 107,600 euros more than covers the investing outflow of 10,800 euros on extract 52.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Operating 107600 − investing 10800 − financing 13380 = 83420.', 'TRUE — The investing line is (10800).', 'FALSE — Investing must be subtracted; correct net change is 83,420 euros.', 'TRUE — Financing is an outflow of 13,380 euros.', 'TRUE — Operating 107600 versus investing 10800.'], '4/5', 129, 'full' ),
+( '6.2', 'CASE 6.2.130', 'Equity Movements From Loss', 'Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:', ARRAY['Land owned by a logistics company is normally left out of the depreciation schedule because, unlike its forklift trucks, land does not wear out through ordinary use.', 'Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use.', 'The depreciation that a dairy processor charges on its refrigerated trucks each year is a non-cash expense, since the related cash was already paid out when the refrigerated trucks was originally purchased.', 'The depreciation that a garage charges on its diagnostic equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'The balance sheet of a software developer shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the diagnostic equipment was purchased.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '2/5', 130, 'full' ),
+( '6.2', 'CASE 6.2.131', 'Earnings Per Share From Reported Figures 131', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=25
+February | Price=25
+March | Price=26
+April | Price=26
+May | Price=25
+June | Price=30
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=21000
+February | Volume=38000
+March | Volume=34000
+April | Volume=60000
+May | Volume=92000
+June | Volume=39000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 21,000 |
+| February | 25 | 38,000 |
+| March | 26 | 34,000 |
+| April | 26 | 60,000 |
+| May | 25 | 92,000 |
+| June | 30 | 39,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 287 |
+| Shares outstanding | 532,000 |
+| Total shares traded (six months) | 284,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 12.8% from first to last month.', 'Market capitalisation at the last month exceeds €12.9 million.', 'Market capitalisation rose by more than 34.5% over the period.', 'Earnings per share exceeds €0.5.', 'Total shares traded over six months exceed 32.9% of shares outstanding.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Price change ≈ 20.0%.', 'TRUE — Market capitalisation ≈ €16.0 million.', 'FALSE — €13.3m → €16.0m.', 'TRUE — Earnings per share ≈ €0.54.', 'TRUE — Turnover ≈ 53.4% of shares outstanding.'], '3/5', 131, 'full' ),
+( '6.2', 'CASE 6.2.132', 'Share Price and Market Capitalisation 132', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=40
+February | Price=44
+March | Price=47
+April | Price=48
+May | Price=50
+June | Price=54
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=49000
+February | Volume=57000
+March | Volume=68000
+April | Volume=39000
+May | Volume=29000
+June | Volume=80000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 40 | 49,000 |
+| February | 44 | 57,000 |
+| March | 47 | 68,000 |
+| April | 48 | 39,000 |
+| May | 50 | 29,000 |
+| June | 54 | 80,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 249 |
+| Shares outstanding | 525,000 |
+| Total shares traded (six months) | 322,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €26.9 million.', 'Market capitalisation rose by more than 21.2% over the period.', 'Highest closing price is more than 34% above the lowest.', 'Total shares traded over six months exceed 29.3% of shares outstanding.', 'Peak monthly share turnover exceeds 71,499 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €28.4 million.', 'TRUE — €21.0m → €28.4m.', 'TRUE — Range €40–€54.', 'TRUE — Turnover ≈ 61.3% of shares outstanding.', 'TRUE — Peak monthly volume = 80,000.'], '4/5', 132, 'full' ),
+( '6.2', 'CASE 6.2.133', 'Depreciation Policy and Reported Profit', 'Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:', ARRAY['The balance sheet of a garage shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a pharmacy chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a fitness club chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'Land owned by a pharmacy chain is normally left out of the depreciation schedule because, unlike its dispensing equipment, land does not wear out through ordinary use.', 'The depreciation that a fitness club chain charges on its exercise equipment each year is a non-cash expense, since the related cash was already paid out when the exercise equipment was originally purchased.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.'], '5/5', 133, 'full' ),
+( '6.2', 'CASE 6.2.134', 'Non-Cash Adjustments to Profit', 'Consider the following cash flow statement extract (€) for a furniture maker.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 112400 |
+| Cash flow from investing activities | (16200) |
+| Cash flow from financing activities | 17380 |
+| Net change in cash and cash equivalents | **113580** |
+
+Evaluate the following economic assertions:', ARRAY['Treating the investing line as an addition, total cash would change by 145,980 euros on extract 55.', 'On extract 55, cash and cash equivalents change by 113,580 euros in total.', 'The operating figure alone of 112,400 euros is already the full net change on extract 55.', 'Purchases recorded under investing total an outflow of 16,200 euros on extract 55.', 'Financing activities add 17,380 euros to cash on extract 55.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Investing must be subtracted; correct net change is 113,580 euros.', 'TRUE — Operating 112400 − investing 16200 + financing 17380 = 113580.', 'FALSE — That ignores investing and financing; correct net is 113,580 euros.', 'TRUE — The investing line is (16200).', 'TRUE — Financing is an inflow of 17,380 euros.'], '5/5', 134, 'full' ),
+( '6.2', 'CASE 6.2.135', 'Share Price and Market Capitalisation 135', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=26
+February | Price=27
+March | Price=28
+April | Price=28
+May | Price=27
+June | Price=33
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=50000
+February | Volume=94000
+March | Volume=27000
+April | Volume=24000
+May | Volume=45000
+June | Volume=92000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 26 | 50,000 |
+| February | 27 | 94,000 |
+| March | 28 | 27,000 |
+| April | 28 | 24,000 |
+| May | 27 | 45,000 |
+| June | 33 | 92,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 319 |
+| Shares outstanding | 647,000 |
+| Total shares traded (six months) | 332,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €19.5 million.', 'Market capitalisation rose by more than 14.9% over the period.', 'Earnings per share exceeds €0.4.', 'Highest closing price is more than 42% above the lowest.', 'Operating result is below €271 thousand.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €21.4 million.', 'TRUE — €16.8m → €21.4m.', 'TRUE — Earnings per share ≈ €0.49.', 'FALSE — Range €26–€33.', 'FALSE — Operating result = 319.'], '4/5', 135, 'full' ),
+( '6.2', 'CASE 6.2.136', 'Listed Company Performance Charts 136', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=29
+February | Price=31
+March | Price=33
+April | Price=35
+May | Price=36
+June | Price=36
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=61000
+February | Volume=86000
+March | Volume=25000
+April | Volume=66000
+May | Volume=63000
+June | Volume=94000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 29 | 61,000 |
+| February | 31 | 86,000 |
+| March | 33 | 25,000 |
+| April | 35 | 66,000 |
+| May | 36 | 63,000 |
+| June | 36 | 94,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 312 |
+| Shares outstanding | 688,000 |
+| Total shares traded (six months) | 395,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 29.6% from first to last month.', 'Market capitalisation rose by more than 30.7% over the period.', 'Market capitalisation at the last month exceeds €20.7 million.', 'Highest closing price is more than 30.1% above the lowest.', 'Operating result is below €226 thousand.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 24.1%.', 'FALSE — €20.0m → €24.8m.', 'TRUE — Market capitalisation ≈ €24.8 million.', 'FALSE — Range €29–€36.', 'FALSE — Operating result = 312.'], '5/5', 136, 'full' ),
+( '6.2', 'CASE 6.2.137', 'Earnings Per Share From Reported Figures 137', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=33
+February | Price=37
+March | Price=38
+April | Price=40
+May | Price=43
+June | Price=43
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=39000
+February | Volume=95000
+March | Volume=48000
+April | Volume=92000
+May | Volume=82000
+June | Volume=30000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 39,000 |
+| February | 37 | 95,000 |
+| March | 38 | 48,000 |
+| April | 40 | 92,000 |
+| May | 43 | 82,000 |
+| June | 43 | 30,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 318 |
+| Shares outstanding | 782,000 |
+| Total shares traded (six months) | 386,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €26.1 million.', 'The closing share price rose by more than 30.9% from first to last month.', 'Market capitalisation rose by more than 34.9% over the period.', 'Earnings per share exceeds €0.34.', 'Highest closing price is more than 19.5% above the lowest.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €33.6 million.', 'FALSE — Price change ≈ 30.3%.', 'FALSE — €25.8m → €33.6m.', 'TRUE — Earnings per share ≈ €0.41.', 'TRUE — Range €33–€43.'], '5/5', 137, 'full' ),
+( '6.2', 'CASE 6.2.138', 'Asset Purchase and Investing Outflows', 'Review how an asset''s carrying value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:', ARRAY['The balance sheet of a brewery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a restaurant chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'When a IT consultancy makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'Land owned by a publishing house is normally left out of the depreciation schedule because, unlike its binding machines, land does not wear out through ordinary use.', 'Land owned by a textile mill is depreciated in exactly the same way as its spinning machinery, because all fixed assets wear out identically through use.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.'], '2/5', 138, 'full' ),
+( '6.2', 'CASE 6.2.139', 'Loan Financing and Cash Outflows', 'Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:', ARRAY['The depreciation that a printing company charges on its printing press each year is a cash expense that directly reduces its bank balance at the time it is recorded.', 'Land owned by a arable farm is depreciated in exactly the same way as its tractor, because all fixed assets wear out identically through use.', 'When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.', 'When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'The depreciation that a car parts manufacturer charges on its stamping presses each year is a non-cash expense, since the related cash was already paid out when the stamping presses was originally purchased.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the printing press was purchased.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.'], '5/5', 139, 'full' ),
+( '6.2', 'CASE 6.2.140', 'Earnings Per Share From Reported Figures 140', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=20
+February | Price=19
+March | Price=18
+April | Price=17
+May | Price=15
+June | Price=14
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=19000
+February | Volume=64000
+March | Volume=82000
+April | Volume=61000
+May | Volume=49000
+June | Volume=65000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 19,000 |
+| February | 19 | 64,000 |
+| March | 18 | 82,000 |
+| April | 17 | 61,000 |
+| May | 15 | 49,000 |
+| June | 14 | 65,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 250 |
+| Shares outstanding | 766,000 |
+| Total shares traded (six months) | 340,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.1% from first to last month.', 'Market capitalisation rose by more than 11.2% over the period.', 'Market capitalisation at the last month exceeds €9.3 million.', 'Operating result is below €244 thousand.', 'Total shares traded over six months exceed 18.7% of shares outstanding.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ -30.0%.', 'FALSE — €15.3m → €10.7m.', 'TRUE — Market capitalisation ≈ €10.7 million.', 'FALSE — Operating result = 250.', 'TRUE — Turnover ≈ 44.4% of shares outstanding.'], '2/5', 140, 'full' ),
+( '6.2', 'CASE 6.2.141', 'Share Price and Market Capitalisation 141', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=34
+February | Price=34
+March | Price=34
+April | Price=34
+May | Price=35
+June | Price=43
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
 January | Volume=32000
-February | Volume=12000
-March | Volume=21000
-April | Volume=40000
-May | Volume=57000
-June | Volume=23000
+February | Volume=63000
+March | Volume=39000
+April | Volume=44000
+May | Volume=39000
+June | Volume=84000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 776,000 | 32,000 |
-| February | 15 | 776,000 | 12,000 |
-| March | 14 | 776,000 | 21,000 |
-| April | 14 | 776,000 | 40,000 |
-| May | 14 | 776,000 | 57,000 |
-| June | 15 | 776,000 | 23,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 32,000 |
+| February | 34 | 63,000 |
+| March | 34 | 39,000 |
+| April | 34 | 44,000 |
+| May | 35 | 39,000 |
+| June | 43 | 84,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 264 |
-| Shares outstanding | 776,000 |
-| Total shares traded (six months) | 185,000 |
+| Operating result (€ thousands) | 301 |
+| Shares outstanding | 890,000 |
+| Total shares traded (six months) | 301,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11 million.', 'The closing share price rose by more than 11% from first to last month.', 'Market capitalisation rose by more than 12.3% over the period.', 'Highest closing price is more than 42.4% above the lowest.', 'Peak monthly share turnover exceeds 40,752 shares.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €11.6 million.', 'FALSE — Price change ≈ 7.1%.', 'FALSE — €10.9m → €11.6m.', 'FALSE — Range €14–€15.', 'TRUE — Peak monthly volume = 57,000.'], '4/5', 149, 'full' ),
-( '6.2', 'CASE 6.2.150', 'Profit Reported Versus Cash Generated', 'Review why profit for the year and the change in cash and cash equivalents are not usually the same figure. Evaluate the following economic assertions:', ARRAY['A catering company has used its catering vans for three years and charges 22,820 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 68,460 euros.', 'The balance sheet of a printing company shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a construction firm earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a hotel chain makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Multiplying the annual charge of 22,820 euros by the three years the asset has been used gives accumulated depreciation of 68,460 euros.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.', 'FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.', 'FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.'], '5/5', 150, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 15.5% from first to last month.', 'Market capitalisation at the last month exceeds €32 million.', 'Market capitalisation rose by more than 13.9% over the period.', 'Highest closing price is more than 14.5% above the lowest.', 'Peak monthly share turnover exceeds 80,218 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 26.5%.', 'TRUE — Market capitalisation ≈ €38.3 million.', 'TRUE — €30.3m → €38.3m.', 'TRUE — Range €34–€43.', 'TRUE — Peak monthly volume = 84,000.'], '4/5', 141, 'full' ),
+( '6.2', 'CASE 6.2.142', 'Listed Company Performance Charts 142', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=23
+February | Price=20
+March | Price=18
+April | Price=17
+May | Price=15
+June | Price=14
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=68000
+February | Volume=95000
+March | Volume=37000
+April | Volume=29000
+May | Volume=62000
+June | Volume=45000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 23 | 68,000 |
+| February | 20 | 95,000 |
+| March | 18 | 37,000 |
+| April | 17 | 29,000 |
+| May | 15 | 62,000 |
+| June | 14 | 45,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 279 |
+| Shares outstanding | 843,000 |
+| Total shares traded (six months) | 336,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 30.3% above the lowest.', 'Total shares traded over six months exceed 11.8% of shares outstanding.', 'The closing share price rose by more than 11.7% from first to last month.', 'Market capitalisation rose by more than 19.1% over the period.', 'Operating result is below €193 thousand.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Range €14–€23.', 'TRUE — Turnover ≈ 39.9% of shares outstanding.', 'FALSE — Price change ≈ -39.1%.', 'FALSE — €19.4m → €11.8m.', 'FALSE — Operating result = 279.'], '5/5', 142, 'full' ),
+( '6.2', 'CASE 6.2.143', 'Earnings Per Share From Reported Figures 143', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=32
+February | Price=30
+March | Price=28
+April | Price=24
+May | Price=19
+June | Price=16
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=83000
+February | Volume=26000
+March | Volume=95000
+April | Volume=90000
+May | Volume=27000
+June | Volume=72000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 32 | 83,000 |
+| February | 30 | 26,000 |
+| March | 28 | 95,000 |
+| April | 24 | 90,000 |
+| May | 19 | 27,000 |
+| June | 16 | 72,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 216 |
+| Shares outstanding | 451,000 |
+| Total shares traded (six months) | 393,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €5.8 million.', 'Highest closing price is more than 33.1% above the lowest.', 'Total shares traded over six months exceed 22.7% of shares outstanding.', 'Peak monthly share turnover exceeds 73,341 shares.', 'Shares outstanding equal 451,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €7.2 million.', 'TRUE — Range €16–€32.', 'TRUE — Turnover ≈ 87.1% of shares outstanding.', 'TRUE — Peak monthly volume = 95,000.', 'TRUE — Shares outstanding = 451,000.'], '3/5', 143, 'full' ),
+( '6.2', 'CASE 6.2.144', 'Straight-Line Charges Across Useful Life', 'Consider the following cash flow statement extract (€) for a printing company.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | 117200 |
+| Cash flow from investing activities | (12600) |
+| Cash flow from financing activities | (14460) |
+| Net change in cash and cash equivalents | **90140** |
+
+Evaluate the following economic assertions:', ARRAY['On extract 58, cash and cash equivalents change by 90,140 euros in total.', 'Treating the investing line as an addition, total cash would change by 115,340 euros on extract 58.', 'Purchases recorded under investing total an outflow of 12,600 euros on extract 58.', 'Financing activities remove 14,460 euros from cash on extract 58.', 'Operating cash of 117,200 euros more than covers the investing outflow of 12,600 euros on extract 58.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Operating 117200 − investing 12600 − financing 14460 = 90140.', 'FALSE — Investing must be subtracted; correct net change is 90,140 euros.', 'TRUE — The investing line is (12600).', 'TRUE — Financing is an outflow of 14,460 euros.', 'TRUE — Operating 117200 versus investing 12600.'], '2/5', 144, 'full' ),
+( '6.2', 'CASE 6.2.145', 'Land Excluded From Depreciation', 'Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:', ARRAY['When a car parts manufacturer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a packaging manufacturer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.', 'Land owned by a recycling firm is normally left out of the depreciation schedule because, unlike its sorting machinery, land does not wear out through ordinary use.', 'The depreciation that a ceramics workshop charges on its kiln equipment each year is a non-cash expense, since the related cash was already paid out when the kiln equipment was originally purchased.', 'The balance sheet of a printing company shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'TRUE — Profit for the year raises retained earnings, which in turn increases total equity.', 'TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.', 'TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.', 'TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.'], '5/5', 145, 'full' ),
+( '6.2', 'CASE 6.2.146', 'Earnings Per Share From Reported Figures 146', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=25
+February | Price=26
+March | Price=25
+April | Price=25
+May | Price=23
+June | Price=29
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=46000
+February | Volume=61000
+March | Volume=42000
+April | Volume=27000
+May | Volume=57000
+June | Volume=91000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 46,000 |
+| February | 26 | 61,000 |
+| March | 25 | 42,000 |
+| April | 25 | 27,000 |
+| May | 23 | 57,000 |
+| June | 29 | 91,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 263 |
+| Shares outstanding | 863,000 |
+| Total shares traded (six months) | 324,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 21.6% from first to last month.', 'Market capitalisation rose by more than 16.6% over the period.', 'Market capitalisation at the last month exceeds €22.2 million.', 'Total shares traded over six months exceed 15.3% of shares outstanding.', 'Shares outstanding equal 863,000.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Price change ≈ 16.0%.', 'FALSE — €21.6m → €25.0m.', 'TRUE — Market capitalisation ≈ €25.0 million.', 'TRUE — Turnover ≈ 37.5% of shares outstanding.', 'TRUE — Shares outstanding = 863,000.'], '5/5', 146, 'full' ),
+( '6.2', 'CASE 6.2.147', 'Share Price and Market Capitalisation 147', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=31
+February | Price=32
+March | Price=33
+April | Price=35
+May | Price=36
+June | Price=39
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=78000
+February | Volume=53000
+March | Volume=87000
+April | Volume=60000
+May | Volume=62000
+June | Volume=76000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 78,000 |
+| February | 32 | 53,000 |
+| March | 33 | 87,000 |
+| April | 35 | 60,000 |
+| May | 36 | 62,000 |
+| June | 39 | 76,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 220 |
+| Shares outstanding | 889,000 |
+| Total shares traded (six months) | 416,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.6% from first to last month.', 'Market capitalisation at the last month exceeds €26.7 million.', 'Market capitalisation rose by more than 18.3% over the period.', 'Earnings per share exceeds €0.18.', 'Total shares traded over six months exceed 18.1% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.8%.', 'TRUE — Market capitalisation ≈ €34.7 million.', 'TRUE — €27.6m → €34.7m.', 'TRUE — Earnings per share ≈ €0.25.', 'TRUE — Turnover ≈ 46.8% of shares outstanding.'], '5/5', 147, 'full' ),
+( '6.2', 'CASE 6.2.148', 'Listed Company Performance Charts 148', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=34
+February | Price=33
+March | Price=33
+April | Price=31
+May | Price=31
+June | Price=36
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=65000
+February | Volume=52000
+March | Volume=33000
+April | Volume=34000
+May | Volume=89000
+June | Volume=78000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 65,000 |
+| February | 33 | 52,000 |
+| March | 33 | 33,000 |
+| April | 31 | 34,000 |
+| May | 31 | 89,000 |
+| June | 36 | 78,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 307 |
+| Shares outstanding | 602,000 |
+| Total shares traded (six months) | 351,000 |
+
+Evaluate the following economic assertions:', ARRAY['Total shares traded over six months exceed 23.1% of shares outstanding.', 'Market capitalisation rose by more than 9.8% over the period.', 'Highest closing price is more than 20.1% above the lowest.', 'Peak monthly share turnover exceeds 58,256 shares.', 'Operating result is below €225 thousand.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Turnover ≈ 58.3% of shares outstanding.', 'FALSE — €20.5m → €21.7m.', 'FALSE — Range €31–€36.', 'TRUE — Peak monthly volume = 89,000.', 'FALSE — Operating result = 307.'], '4/5', 148, 'full' ),
+( '6.2', 'CASE 6.2.149', 'Earnings Per Share From Reported Figures 149', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=20
+February | Price=20
+March | Price=19
+April | Price=19
+May | Price=18
+June | Price=23
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=43000
+February | Volume=18000
+March | Volume=29000
+April | Volume=52000
+May | Volume=73000
+June | Volume=32000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 43,000 |
+| February | 20 | 18,000 |
+| March | 19 | 29,000 |
+| April | 19 | 52,000 |
+| May | 18 | 73,000 |
+| June | 23 | 32,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 264 |
+| Shares outstanding | 776,000 |
+| Total shares traded (six months) | 247,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 11% from first to last month.', 'Total shares traded over six months exceed 33.9% of shares outstanding.', 'Operating result is below €246 thousand.', 'Earnings per share is exactly €0.31.', 'Market capitalisation at the last month exceeds €16.9 million.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Price change ≈ 15.0%.', 'FALSE — Turnover ≈ 31.8% of shares outstanding.', 'FALSE — Operating result = 264.', 'FALSE — Earnings per share ≈ €0.34.', 'TRUE — Market capitalisation ≈ €17.8 million.'], '4/5', 149, 'full' ),
+( '6.2', 'CASE 6.2.150', 'Profit Reported Versus Cash Generated', 'Review why profit for the year and the change in cash and cash equivalents are not usually the same figure. Evaluate the following economic assertions:', ARRAY['The balance sheet of a arable farm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.', 'When a catering company makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.', 'When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities.', 'When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.', 'When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.', 'TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.', 'FALSE — Buying long-term assets such as laptop computers is an investing decision, so the outflow belongs in the investing section, not the operating section.', 'FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.', 'FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.'], '5/5', 150, 'full' ),
 ( '6.3', 'CASE 6.3.001', 'Reading Financial Statements With Caution in Practice', 'Analyze why a business''s balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:', ARRAY['A business''s balance sheet and income statement for a single year should be read cautiously, since one year''s figures alone can create a misleading impression of overall performance.', 'Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn.', 'An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat.', 'Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained.', 'A business''s balance sheet and income statement for a single year can always be trusted on their own, since one year''s figures alone give a complete impression of overall performance.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — One year''s figures alone can mislead, so cautious reading is required before drawing conclusions.', 'TRUE — Summarising a year''s trading into totals can hide detail that matters for a fair conclusion.', 'TRUE — A profit improvement can come from a non-recurring event rather than better ongoing trading.', 'TRUE — Explanatory notes often clarify what the main financial statements alone cannot fully explain.', 'FALSE — One year''s figures alone can mislead; caution and wider context are needed before drawing conclusions.'], '2/5', 1, 'full' ),
 ( '6.3', 'CASE 6.3.002', 'Reading Financial Statements With Caution Explained', 'Analyze how comparing several years of financial statements reveals trends that one year''s figures cannot show alone. Evaluate the following economic assertions:', ARRAY['A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself.', 'Placing several years of a business''s balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year.', 'Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business''s performance is heading.', 'Comparing successive balance sheets shows whether a business''s asset base and its sources of finance are expanding, contracting or holding steady over time.', 'Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — A single figure should prompt further inquiry rather than serve as a final conclusion.', 'TRUE — Multi-year comparison reveals trends invisible within any one year''s figures alone.', 'TRUE — Multi-period tracking of key results shows the direction of a business''s performance.', 'TRUE — Successive balance sheet comparison shows whether assets and financing are expanding, contracting or stable.', 'FALSE — Summarising into totals can hide detail, so additional information is often still needed.'], '2/5', 2, 'full' ),
 ( '6.3', 'CASE 6.3.003', 'Return and Cash Flow Extract 3', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
@@ -5279,7 +5599,7 @@ Current liabilities=263
 | Total liabilities | **631** |
 | Total equity and liabilities | **1004** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.22.', 'The current ratio exceeds 1.57.', 'Inventory make up more than 52.1% of current assets.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.', 'Trade receivables make up less than 38.6% of current assets.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Current ratio ≈ 1.63.', 'TRUE — Current ratio ≈ 1.63.', 'TRUE — Inventory are about 61.8% of current assets.', 'FALSE — Acid-test ratio ≈ 0.62.', 'TRUE — Trade receivables are about 16.6% of current assets.'], '3/5', 9, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.22.', 'Inventory make up more than 52.1% of current assets.', 'Trade receivables make up less than 38.6% of current assets.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.', 'Cash and cash equivalents make up more than 18.9% of current assets.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Current ratio ≈ 1.63.', 'TRUE — Inventory are about 61.8% of current assets.', 'TRUE — Trade receivables are about 16.6% of current assets.', 'FALSE — Acid-test ratio ≈ 0.62.', 'TRUE — Cash and cash equivalents are about 21.7% of current assets.'], '3/5', 9, 'full' ),
 ( '6.3', 'CASE 6.3.010', 'Comparing Results Across Several Years in Practice', 'Analyze why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:', ARRAY['Placing several years of a business''s balance sheets and income statements side by side reveals nothing beyond what a single year''s figures already show.', 'Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business''s performance is heading.', 'When a business''s equity rises mainly because retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit.', 'Tracking share capital and retained earnings separately over successive years shows whether a business''s equity growth has come from owner contributions or from accumulated profit.', 'Comparing successive balance sheets provides no way of telling whether a business''s asset base or sources of finance are expanding, contracting or holding steady.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Multi-year comparison reveals trends that a single year''s figures cannot show.', 'FALSE — Tracking key results over several periods is exactly how a performance direction is identified.', 'TRUE — Equity growth from rising retained earnings with static share capital reflects internal funding.', 'TRUE — Separate tracking of share capital and retained earnings reveals the source of equity growth.', 'FALSE — Successive balance sheet comparison is precisely how such changes are detected.'], '3/5', 10, 'full' ),
 ( '6.3', 'CASE 6.3.011', 'Return and Cash Flow Extract 11', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
@@ -6392,29 +6712,37 @@ Cash and cash equivalents=36
 Evaluate the following economic assertions:', ARRAY['Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.9%.', 'Return on equity, the operating result taken as a percentage of total equity, exceeds 29.6%.', 'The net change in cash and cash equivalents equals exactly €46 thousand.', 'Working capital equals exactly €72 thousand.', 'Cash flow from operating activities amounts to less than 98.3% of the operating result, indicating profit is only partly backed by cash.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Return on capital employed ≈ 22.5%.', 'TRUE — Return on equity ≈ 55.6%.', 'TRUE — Net change = 46.', 'FALSE — Working capital = 107.', 'FALSE — Cash conversion ≈ 104.3% of the operating result.'], '5/5', 67, 'full' ),
 ( '6.3', 'CASE 6.3.068', 'Defining Cost of Sales in Practice', 'Consider a seed and fertiliser distributor whose members are reviewing the income statement to understand how gross profit was calculated this season. Evaluate the following economic assertions:', ARRAY['Pay earned by outbound freight handlers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'Amounts paid to field sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'Direct factory labour on the production line are included within cost of sales because they are incurred directly in producing the goods that a paper mill has sold.', 'The wages of reception and clerical staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'A strong profit for the year shown in the income statement guarantees that the balance sheet will also show a strong financing position.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'FALSE — Strong reported profit does not guarantee a strong balance sheet financing position.'], '5/5', 68, 'full' ),
 ( '6.3', 'CASE 6.3.069', 'Defining Cost of Sales Explained', 'Examine how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:', ARRAY['Pay earned by delivery drivers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'Amounts paid to the retail sales team are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'Changes in working capital shown on the balance sheet have no bearing on why cash movements might differ from the profit for the year reported in the income statement.', 'Components purchased for direct assembly are included within cost of sales because they are incurred directly in producing the goods that a ceramics manufacturer has sold.', 'Judging a business''s overall financial health can be done reliably by looking at the income statement alone, without any reference to the balance sheet.'], ARRAY[true, true, false, true, false], ARRAY['TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'FALSE — Working capital changes are exactly what help explain such differences.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'FALSE — Reliable judgement requires weighing both statements, not the income statement in isolation.'], '5/5', 69, 'full' ),
-( '6.3', 'CASE 6.3.070', 'Profit and Loss Over Two Years 70', 'Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.
+( '6.3', 'CASE 6.3.070', 'Gearing From Comparative Figures 70', 'Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Revenue and operating result"]]
-Year 1 | Revenue=916 | Operating result=291
-Year 2 | Revenue=1027 | Operating result=304
+[[CHART type="bar" title="Equity and total assets"]]
+Year 1 | Equity=568 | Total assets=1129
+Year 2 | Equity=636 | Total assets=1269
 [[/CHART]]
 
-| Item (€ thousands) | Year 1 | Year 2 |
+| € in thousands | Year 1 | Year 2 |
 | --- | ---: | ---: |
-| Revenue | 916 | 1027 |
-| Cost of sales | (538) | (613) |
-| Gross profit | 378 | 414 |
-| Distribution costs | (50) | (60) |
-| General and administrative costs | (37) | (47) |
-| Other operating result | 0 | (3) |
-| Operating result | 291 | 304 |
-| Finance costs | (16) | (21) |
-| Finance costs – net | (13) | (15) |
-| Profit before tax | 278 | 289 |
-| Income taxes | (60) | (63) |
-| Profit for the year | 218 | 226 |
+| **ASSETS** | | |
+| Buildings | 291 | 333 |
+| Machinery | 278 | 320 |
+| Office equipment | 56 | 64 |
+| Patents, trademarks and licences | 95 | 95 |
+| Inventory | 191 | 216 |
+| Trade receivables | 151 | 161 |
+| Cash and cash equivalents | 67 | 80 |
+| Total assets | **1129** | **1269** |
+| **EQUITY** | | |
+| Share capital | 227 | 227 |
+| Retained earnings | 341 | 409 |
+| Total equity | **568** | **636** |
+| **LIABILITIES** | | |
+| Long-term bank loan | 384 | 434 |
+| Bonds payable | 47 | 53 |
+| Trade payables | 63 | 71 |
+| Bank overdraft | 67 | 75 |
+| Total liabilities | **561** | **633** |
+| Total equity and liabilities | **1129** | **1269** |
 
-Evaluate the following economic assertions:', ARRAY['Finance costs grew by more than 11.9% between Year 1 and Year 2, outpacing the growth in the operating result (see the extract prepared for case 6.3.070).', 'The operating result covers finance costs more than 5.01 times over in Year 1 (see the extract prepared for case 6.3.070).', 'The operating margin, operating result taken as a share of revenue, exceeds 8.4% in Year 2 (see the extract prepared for case 6.3.070).', 'Cost of sales is deducted from revenue to arrive at gross profit (see the extract prepared for case 6.3.070).', 'Revenue grew by exactly 12.1% from Year 1 to Year 2 (see the extract prepared for case 6.3.070).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Finance costs moved from 16 to 21; operating result moved from 291 to 304.', 'TRUE — Interest coverage in Year 1 ≈ 18.2 times.', 'TRUE — Operating margin in Year 2 ≈ 29.6%.', 'TRUE — Gross profit = revenue − cost of sales.', 'TRUE — Actual revenue growth ≈ 12.1%.'], '5/5', 70, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Total assets grew by more than 6.1% between Year 1 and Year 2.', 'Non-current liabilities amount to more than 67.8% of total equity in Year 1.', 'Non-current assets make up more than 63.8% of total assets in Year 2.', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 37.3% in Year 1.', 'Trade payables of €71 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Total assets changed by about 12.4% between the two years.', 'TRUE — Non-current liabilities are about 75.9% of equity in Year 1.', 'TRUE — Non-current assets are about 64.0% of total assets in Year 2.', 'TRUE — Long-term financing covers non-current assets by about 38.7% in Year 1.', 'TRUE — Trade payables are a current liability regardless of the amount.'], '5/5', 70, 'full' ),
 ( '6.3', 'CASE 6.3.071', 'Defining Cost of Sales for Analysts', 'Examine why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:', ARRAY['The wages of human resources personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'A business cannot report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, since the two always move in the same direction.', 'A beverage bottling company is regarded as financing its bottling line machinery soundly only when they are covered mainly by short-term credit from bottle and packaging suppliers.', 'The balance between bottling line machinery and bottled stock awaiting dispatch on a beverage bottling company''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Pay earned by warehouse dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'FALSE — Profit and balance sheet strength can move in different directions, so both need checking.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.'], '3/5', 71, 'full' ),
 ( '6.3', 'CASE 6.3.072', 'Comparative Balance Sheet Analysis 72', 'Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.
 
@@ -6658,1098 +6986,1098 @@ Evaluate the following economic assertions:', ARRAY['Return on equity, the opera
 ( '6.3', 'CASE 6.3.081', 'Share Price and Market Capitalisation 81', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=32
-March | Price=31
-April | Price=32
-May | Price=30
+January | Price=38
+February | Price=38
+March | Price=36
+April | Price=36
+May | Price=34
+June | Price=41
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=48000
+February | Volume=41000
+March | Volume=20000
+April | Volume=49000
+May | Volume=41000
+June | Volume=20000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 48,000 |
+| February | 38 | 41,000 |
+| March | 36 | 20,000 |
+| April | 36 | 49,000 |
+| May | 34 | 41,000 |
+| June | 41 | 20,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 230 |
+| Shares outstanding | 681,000 |
+| Total shares traded (six months) | 219,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €25.4 million.', 'Earnings per share exceeds €0.26.', 'Total shares traded over six months exceed 20% of shares outstanding.', 'The closing share price rose by more than 14.6% from first to last month.', 'Market capitalisation rose by more than 18.5% over the period.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €27.9 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Turnover ≈ 32.2% of shares outstanding.', 'FALSE — Price change ≈ 7.9%.', 'FALSE — €25.9m → €27.9m.'], '5/5', 81, 'full' ),
+( '6.3', 'CASE 6.3.082', 'Listed Company Performance Charts 82', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=38
+February | Price=37
+March | Price=37
+April | Price=37
+May | Price=35
+June | Price=41
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=66000
+February | Volume=83000
+March | Volume=21000
+April | Volume=19000
+May | Volume=77000
+June | Volume=86000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 66,000 |
+| February | 37 | 83,000 |
+| March | 37 | 21,000 |
+| April | 37 | 19,000 |
+| May | 35 | 77,000 |
+| June | 41 | 86,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 232 |
+| Shares outstanding | 418,000 |
+| Total shares traded (six months) | 352,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14.9 million.', 'The closing share price rose by more than 26.9% from first to last month.', 'Total shares traded over six months exceed 11.3% of shares outstanding.', 'Market capitalisation rose by more than 16.9% over the period.', 'Highest closing price is more than 27.7% above the lowest.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €17.1 million.', 'FALSE — Price change ≈ 7.9%.', 'TRUE — Turnover ≈ 84.2% of shares outstanding.', 'FALSE — €15.9m → €17.1m.', 'FALSE — Range €35–€41.'], '5/5', 82, 'full' ),
+( '6.3', 'CASE 6.3.083', 'Earnings Per Share From Reported Figures 83', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=23
+February | Price=24
+March | Price=25
+April | Price=25
+May | Price=25
 June | Price=29
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=36000
-February | Volume=31000
-March | Volume=13000
-April | Volume=37000
-May | Volume=31000
-June | Volume=13000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 681,000 | 36,000 |
-| February | 32 | 681,000 | 31,000 |
-| March | 31 | 681,000 | 13,000 |
-| April | 32 | 681,000 | 37,000 |
-| May | 30 | 681,000 | 31,000 |
-| June | 29 | 681,000 | 13,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 230 |
-| Shares outstanding | 681,000 |
-| Total shares traded (six months) | 161,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €17.9 million.', 'Total shares traded over six months exceed 20% of shares outstanding.', 'Peak monthly share turnover exceeds 26,034 shares.', 'The closing share price rose by more than 14.6% from first to last month.', 'Market capitalisation rose by more than 18.5% over the period.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €19.7 million.', 'TRUE — Turnover ≈ 23.6% of shares outstanding.', 'TRUE — Peak monthly volume = 37,000.', 'FALSE — Price change ≈ -6.5%.', 'FALSE — €21.1m → €19.7m.'], '5/5', 81, 'full' ),
-( '6.3', 'CASE 6.3.082', 'Listed Company Performance Charts 82', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=18
-April | Price=18
-May | Price=18
-June | Price=19
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=54000
-February | Volume=58000
+January | Volume=40000
+February | Volume=77000
 March | Volume=61000
-April | Volume=56000
-May | Volume=42000
-June | Volume=67000
+April | Volume=74000
+May | Volume=65000
+June | Volume=57000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 587,000 | 54,000 |
-| February | 18 | 587,000 | 58,000 |
-| March | 18 | 587,000 | 61,000 |
-| April | 18 | 587,000 | 56,000 |
-| May | 18 | 587,000 | 42,000 |
-| June | 19 | 587,000 | 67,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 23 | 40,000 |
+| February | 24 | 77,000 |
+| March | 25 | 61,000 |
+| April | 25 | 74,000 |
+| May | 25 | 65,000 |
+| June | 29 | 57,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 315 |
-| Shares outstanding | 587,000 |
-| Total shares traded (six months) | 338,000 |
+| Operating result (€ thousands) | 287 |
+| Shares outstanding | 515,000 |
+| Total shares traded (six months) | 374,000 |
 
-Evaluate the following economic assertions:', ARRAY['Peak monthly share turnover exceeds 51,454 shares.', 'The closing share price rose by more than 32.2% from first to last month.', 'Shares outstanding stay at 587,000 every month.', 'Highest closing price is more than 12.6% above the lowest.', 'Operating result is below €288 thousand.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Peak monthly volume = 67,000.', 'FALSE — Price change ≈ 11.8%.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Range €17–€19.', 'FALSE — Operating result = 315.'], '5/5', 82, 'full' ),
-( '6.3', 'CASE 6.3.083', 'Earnings Per Share From Reported Figures 83', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=22
-March | Price=20
-April | Price=21
-May | Price=20
-June | Price=20
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=34000
-February | Volume=60000
-March | Volume=68000
-April | Volume=49000
-May | Volume=45000
-June | Volume=17000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 737,000 | 34,000 |
-| February | 22 | 737,000 | 60,000 |
-| March | 20 | 737,000 | 68,000 |
-| April | 21 | 737,000 | 49,000 |
-| May | 20 | 737,000 | 45,000 |
-| June | 20 | 737,000 | 17,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 200 |
-| Shares outstanding | 737,000 |
-| Total shares traded (six months) | 273,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.2 million (see the extract prepared for case 6.3.083).', 'The closing share price rose by more than 8.6% from first to last month (see the extract prepared for case 6.3.083).', 'Market capitalisation rose by more than 34.3% over the period (see the extract prepared for case 6.3.083).', 'Highest closing price is more than 31.3% above the lowest (see the extract prepared for case 6.3.083).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.083).'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €14.7 million.', 'FALSE — Price change ≈ 0.0%.', 'FALSE — €14.7m → €14.7m.', 'FALSE — Range €20–€22.', 'FALSE — Peak price month vs peak volume month.'], '2/5', 83, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13 million.', 'The closing share price rose by more than 28.2% from first to last month.', 'Market capitalisation rose by more than 29.5% over the period.', 'Highest closing price is more than 28.1% above the lowest.', 'Operating result is below €238 thousand.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €14.9 million.', 'FALSE — Price change ≈ 26.1%.', 'FALSE — €11.8m → €14.9m.', 'FALSE — Range €23–€29.', 'FALSE — Operating result = 287.'], '2/5', 83, 'full' ),
 ( '6.3', 'CASE 6.3.084', 'Share Price and Market Capitalisation 84', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=29
-March | Price=30
-April | Price=33
+January | Price=35
+February | Price=33
+March | Price=32
+April | Price=32
+May | Price=28
+June | Price=25
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=45000
+February | Volume=88000
+March | Volume=66000
+April | Volume=47000
+May | Volume=52000
+June | Volume=80000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 45,000 |
+| February | 33 | 88,000 |
+| March | 32 | 66,000 |
+| April | 32 | 47,000 |
+| May | 28 | 52,000 |
+| June | 25 | 80,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 192 |
+| Shares outstanding | 752,000 |
+| Total shares traded (six months) | 378,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.1% from first to last month.', 'Market capitalisation at the last month exceeds €16 million.', 'Market capitalisation rose by more than 24.1% over the period.', 'Total shares traded over six months exceed 36.3% of shares outstanding.', 'Peak monthly share turnover exceeds 73,354 shares.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ -28.6%.', 'TRUE — Market capitalisation ≈ €18.8 million.', 'FALSE — €26.3m → €18.8m.', 'TRUE — Turnover ≈ 50.3% of shares outstanding.', 'TRUE — Peak monthly volume = 88,000.'], '5/5', 84, 'full' ),
+( '6.3', 'CASE 6.3.085', 'Listed Company Performance Charts 85', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=38
+February | Price=37
+March | Price=36
+April | Price=36
+May | Price=34
+June | Price=43
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=40000
+February | Volume=90000
+March | Volume=39000
+April | Volume=38000
+May | Volume=20000
+June | Volume=26000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 40,000 |
+| February | 37 | 90,000 |
+| March | 36 | 39,000 |
+| April | 36 | 38,000 |
+| May | 34 | 20,000 |
+| June | 43 | 26,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 266 |
+| Shares outstanding | 671,000 |
+| Total shares traded (six months) | 253,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 19.5% from first to last month.', 'Market capitalisation at the last month exceeds €23.2 million.', 'Market capitalisation rose by more than 20% over the period.', 'Peak monthly share turnover exceeds 99,409 shares.', 'Operating result is below €239 thousand.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ 13.2%.', 'TRUE — Market capitalisation ≈ €28.9 million.', 'FALSE — €25.5m → €28.9m.', 'FALSE — Peak monthly volume = 90,000.', 'FALSE — Operating result = 266.'], '4/5', 85, 'full' ),
+( '6.3', 'CASE 6.3.086', 'Earnings Per Share From Reported Figures 86', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=33
+February | Price=32
+March | Price=31
+April | Price=29
 May | Price=29
 June | Price=27
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=34000
-February | Volume=69000
-March | Volume=51000
-April | Volume=36000
-May | Volume=40000
-June | Volume=63000
+January | Volume=67000
+February | Volume=88000
+March | Volume=68000
+April | Volume=62000
+May | Volume=77000
+June | Volume=38000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 752,000 | 34,000 |
-| February | 29 | 752,000 | 69,000 |
-| March | 30 | 752,000 | 51,000 |
-| April | 33 | 752,000 | 36,000 |
-| May | 29 | 752,000 | 40,000 |
-| June | 27 | 752,000 | 63,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 67,000 |
+| February | 32 | 88,000 |
+| March | 31 | 68,000 |
+| April | 29 | 62,000 |
+| May | 29 | 77,000 |
+| June | 27 | 38,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 192 |
-| Shares outstanding | 752,000 |
-| Total shares traded (six months) | 293,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.1% from first to last month.', 'Market capitalisation at the last month exceeds €17.3 million.', 'Market capitalisation rose by more than 24.1% over the period.', 'Total shares traded over six months exceed 36.3% of shares outstanding.', 'Peak monthly share turnover exceeds 57,516 shares.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ -6.9%.', 'TRUE — Market capitalisation ≈ €20.3 million.', 'FALSE — €21.8m → €20.3m.', 'TRUE — Turnover ≈ 39.0% of shares outstanding.', 'TRUE — Peak monthly volume = 69,000.'], '5/5', 84, 'full' ),
-( '6.3', 'CASE 6.3.085', 'Listed Company Performance Charts 85', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=20
-March | Price=18
-April | Price=18
-May | Price=16
-June | Price=15
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=29000
-February | Volume=58000
-March | Volume=19000
-April | Volume=36000
-May | Volume=45000
-June | Volume=47000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 596,000 | 29,000 |
-| February | 20 | 596,000 | 58,000 |
-| March | 18 | 596,000 | 19,000 |
-| April | 18 | 596,000 | 36,000 |
-| May | 16 | 596,000 | 45,000 |
-| June | 15 | 596,000 | 47,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 249 |
-| Shares outstanding | 596,000 |
-| Total shares traded (six months) | 234,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 19.6% from first to last month (see the extract prepared for case 6.3.085).', 'Market capitalisation at the last month exceeds €8.3 million (see the extract prepared for case 6.3.085).', 'Market capitalisation rose by more than 28.5% over the period (see the extract prepared for case 6.3.085).', 'Peak monthly share turnover exceeds 62,141 shares (see the extract prepared for case 6.3.085).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.085).'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -34.8%.', 'TRUE — Market capitalisation ≈ €8.9 million.', 'FALSE — €13.7m → €8.9m.', 'FALSE — Peak monthly volume = 58,000.', 'FALSE — Peak price month vs peak volume month.'], '4/5', 85, 'full' ),
-( '6.3', 'CASE 6.3.086', 'Earnings Per Share From Reported Figures 86', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=26
-March | Price=25
-April | Price=22
-May | Price=24
-June | Price=22
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=52000
-February | Volume=70000
-March | Volume=53000
-April | Volume=48000
-May | Volume=60000
-June | Volume=28000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 763,000 | 52,000 |
-| February | 26 | 763,000 | 70,000 |
-| March | 25 | 763,000 | 53,000 |
-| April | 22 | 763,000 | 48,000 |
-| May | 24 | 763,000 | 60,000 |
-| June | 22 | 763,000 | 28,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 253 |
+| Operating result (€ thousands) | 253 |
 | Shares outstanding | 763,000 |
-| Total shares traded (six months) | 311,000 |
+| Total shares traded (six months) | 400,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13.4 million (see the extract prepared for case 6.3.086).', 'Earnings per share exceeds €0.31 (see the extract prepared for case 6.3.086).', 'Total shares traded over six months exceed 12.5% of shares outstanding (see the extract prepared for case 6.3.086).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.086).', 'Shares outstanding stay at 763,000 every month (see the extract prepared for case 6.3.086).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €16.8 million.', 'TRUE — Earnings per share ≈ €0.33.', 'TRUE — Turnover ≈ 40.8% of shares outstanding.', 'TRUE — Peak price month vs peak volume month.', 'TRUE — Shares outstanding unchanged.'], '5/5', 86, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €16.5 million.', 'Total shares traded over six months exceed 12.5% of shares outstanding.', 'Shares outstanding equal 763,000.', 'Earnings per share is exactly €0.33.', 'With unchanged shares outstanding, rising market capitalisation means the share price rose.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €20.6 million.', 'TRUE — Turnover ≈ 52.4% of shares outstanding.', 'TRUE — Shares outstanding = 763,000.', 'TRUE — Earnings per share ≈ €0.33.', 'TRUE — Market capitalisation = price × shares.'], '5/5', 86, 'full' ),
 ( '6.3', 'CASE 6.3.087', 'Share Price and Market Capitalisation 87', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=24
-March | Price=24
-April | Price=26
-May | Price=28
-June | Price=28
+January | Price=22
+February | Price=23
+March | Price=25
+April | Price=27
+May | Price=29
+June | Price=31
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=69000
-February | Volume=61000
-March | Volume=68000
-April | Volume=37000
-May | Volume=18000
-June | Volume=66000
+January | Volume=22000
+February | Volume=85000
+March | Volume=40000
+April | Volume=64000
+May | Volume=35000
+June | Volume=77000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 614,000 | 69,000 |
-| February | 24 | 614,000 | 61,000 |
-| March | 24 | 614,000 | 68,000 |
-| April | 26 | 614,000 | 37,000 |
-| May | 28 | 614,000 | 18,000 |
-| June | 28 | 614,000 | 66,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 22 | 22,000 |
+| February | 23 | 85,000 |
+| March | 25 | 40,000 |
+| April | 27 | 64,000 |
+| May | 29 | 35,000 |
+| June | 31 | 77,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 294 |
-| Shares outstanding | 614,000 |
-| Total shares traded (six months) | 319,000 |
+| Operating result (€ thousands) | 216 |
+| Shares outstanding | 779,000 |
+| Total shares traded (six months) | 323,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 29.7% from first to last month.', 'Market capitalisation at the last month exceeds €15.7 million.', 'Market capitalisation rose by more than 26.6% over the period.', 'Highest closing price is more than 27.2% above the lowest.', 'Total shares traded over six months exceed 32.3% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 33.3%.', 'TRUE — Market capitalisation ≈ €17.2 million.', 'TRUE — €12.9m → €17.2m.', 'TRUE — Range €21–€28.', 'TRUE — Turnover ≈ 52.0% of shares outstanding.'], '3/5', 87, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 27.9% from first to last month.', 'Market capitalisation at the last month exceeds €20 million.', 'Market capitalisation rose by more than 27.1% over the period.', 'Highest closing price is more than 33.2% above the lowest.', 'Total shares traded over six months exceed 38.3% of shares outstanding.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 40.9%.', 'TRUE — Market capitalisation ≈ €24.1 million.', 'TRUE — €17.1m → €24.1m.', 'TRUE — Range €22–€31.', 'TRUE — Turnover ≈ 41.5% of shares outstanding.'], '3/5', 87, 'full' ),
 ( '6.3', 'CASE 6.3.088', 'Listed Company Performance Charts 88', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=22
-March | Price=24
-April | Price=24
-May | Price=24
-June | Price=26
+January | Price=30
+February | Price=29
+March | Price=30
+April | Price=30
+May | Price=29
+June | Price=36
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=41000
-February | Volume=49000
-March | Volume=28000
-April | Volume=41000
-May | Volume=17000
-June | Volume=41000
+January | Volume=53000
+February | Volume=63000
+March | Volume=38000
+April | Volume=53000
+May | Volume=24000
+June | Volume=54000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 640,000 | 41,000 |
-| February | 22 | 640,000 | 49,000 |
-| March | 24 | 640,000 | 28,000 |
-| April | 24 | 640,000 | 41,000 |
-| May | 24 | 640,000 | 17,000 |
-| June | 26 | 640,000 | 41,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 30 | 53,000 |
+| February | 29 | 63,000 |
+| March | 30 | 38,000 |
+| April | 30 | 53,000 |
+| May | 29 | 24,000 |
+| June | 36 | 54,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 214 |
+| Operating result (€ thousands) | 214 |
 | Shares outstanding | 640,000 |
-| Total shares traded (six months) | 217,000 |
+| Total shares traded (six months) | 285,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13.3 million.', 'Total shares traded over six months exceed 23.5% of shares outstanding.', 'Peak monthly share turnover exceeds 33,975 shares.', 'The closing share price rose by more than 26.4% from first to last month.', 'Shares outstanding stay at 640,000 every month.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €16.6 million.', 'TRUE — Turnover ≈ 33.9% of shares outstanding.', 'TRUE — Peak monthly volume = 49,000.', 'FALSE — Price change ≈ 13.0%.', 'TRUE — Shares outstanding unchanged.'], '5/5', 88, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 15.7% over the period.', 'Total shares traded over six months exceed 23.5% of shares outstanding.', 'Peak monthly share turnover exceeds 43,682 shares.', 'The closing share price rose by more than 26.4% from first to last month.', 'Shares outstanding equal 640,000.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — €19.2m → €23.0m.', 'TRUE — Turnover ≈ 44.5% of shares outstanding.', 'TRUE — Peak monthly volume = 63,000.', 'FALSE — Price change ≈ 20.0%.', 'TRUE — Shares outstanding = 640,000.'], '5/5', 88, 'full' ),
 ( '6.3', 'CASE 6.3.089', 'Calculating Gross Profit in Practice', 'Examine why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:', ARRAY['The balance between papermaking machinery and paper roll inventory on a paper mill''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'The wages of corporate finance staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'A ceramics manufacturer is regarded as financing its ceramics kilns and moulding equipment soundly only when they are covered mainly by short-term credit from clay suppliers.', 'The balance between ceramics kilns and moulding equipment and finished ceramics stock on a ceramics manufacturer''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Pay earned by outbound logistics coordinators is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.'], '3/5', 89, 'full' ),
 ( '6.3', 'CASE 6.3.090', 'Share Price and Market Capitalisation 90', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=34
-February | Price=33
-March | Price=37
-April | Price=41
-May | Price=45
-June | Price=46
+January | Price=42
+February | Price=43
+March | Price=47
+April | Price=51
+May | Price=55
+June | Price=57
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=46000
-February | Volume=52000
-March | Volume=62000
-April | Volume=30000
-May | Volume=59000
-June | Volume=71000
+January | Volume=60000
+February | Volume=67000
+March | Volume=79000
+April | Volume=40000
+May | Volume=76000
+June | Volume=90000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 34 | 739,000 | 46,000 |
-| February | 33 | 739,000 | 52,000 |
-| March | 37 | 739,000 | 62,000 |
-| April | 41 | 739,000 | 30,000 |
-| May | 45 | 739,000 | 59,000 |
-| June | 46 | 739,000 | 71,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 42 | 60,000 |
+| February | 43 | 67,000 |
+| March | 47 | 79,000 |
+| April | 51 | 40,000 |
+| May | 55 | 76,000 |
+| June | 57 | 90,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 280 |
+| Operating result (€ thousands) | 280 |
 | Shares outstanding | 739,000 |
-| Total shares traded (six months) | 320,000 |
+| Total shares traded (six months) | 412,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.3% from first to last month.', 'Market capitalisation at the last month exceeds €29 million.', 'Market capitalisation rose by more than 9.1% over the period.', 'Highest closing price is more than 36.2% above the lowest.', 'Operating result is below €207 thousand.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Price change ≈ 35.3%.', 'TRUE — Market capitalisation ≈ €34.0 million.', 'TRUE — €25.1m → €34.0m.', 'TRUE — Range €33–€46.', 'FALSE — Operating result = 280.'], '2/5', 90, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.3% from first to last month.', 'Market capitalisation at the last month exceeds €35.9 million.', 'Market capitalisation rose by more than 9.1% over the period.', 'Total shares traded over six months exceed 33.5% of shares outstanding.', 'Highest closing price is more than 36.2% above the lowest.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Price change ≈ 35.7%.', 'TRUE — Market capitalisation ≈ €42.1 million.', 'TRUE — €31.0m → €42.1m.', 'TRUE — Turnover ≈ 55.8% of shares outstanding.', 'FALSE — Range €42–€57.'], '2/5', 90, 'full' ),
 ( '6.3', 'CASE 6.3.091', 'Listed Company Performance Charts 91', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=16
-February | Price=18
-March | Price=19
-April | Price=20
-May | Price=23
-June | Price=25
+January | Price=28
+February | Price=29
+March | Price=28
+April | Price=29
+May | Price=30
+June | Price=35
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=67000
-February | Volume=27000
-March | Volume=14000
-April | Volume=31000
-May | Volume=23000
-June | Volume=20000
+January | Volume=41000
+February | Volume=85000
+March | Volume=76000
+April | Volume=87000
+May | Volume=53000
+June | Volume=54000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 16 | 468,000 | 67,000 |
-| February | 18 | 468,000 | 27,000 |
-| March | 19 | 468,000 | 14,000 |
-| April | 20 | 468,000 | 31,000 |
-| May | 23 | 468,000 | 23,000 |
-| June | 25 | 468,000 | 20,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 41,000 |
+| February | 29 | 85,000 |
+| March | 28 | 76,000 |
+| April | 29 | 87,000 |
+| May | 30 | 53,000 |
+| June | 35 | 54,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 319 |
-| Shares outstanding | 468,000 |
-| Total shares traded (six months) | 182,000 |
+| Operating result (€ thousands) | 265 |
+| Shares outstanding | 599,000 |
+| Total shares traded (six months) | 396,000 |
 
-Evaluate the following economic assertions:', ARRAY['Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.091).', 'The closing share price rose by more than 16.8% from first to last month (see the extract prepared for case 6.3.091).', 'The last closing price is below the first (see the extract prepared for case 6.3.091).', 'Market capitalisation at the last month exceeds €9.2 million (see the extract prepared for case 6.3.091).', 'Market capitalisation rose by more than 30% over the period (see the extract prepared for case 6.3.091).'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Peak price month vs peak volume month.', 'TRUE — Price change ≈ 56.3%.', 'FALSE — 16 → 25.', 'TRUE — Market capitalisation ≈ €11.7 million.', 'TRUE — €7.5m → €11.7m.'], '5/5', 91, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 32% from first to last month.', 'Market capitalisation at the last month exceeds €19.8 million.', 'Market capitalisation rose by more than 34.8% over the period.', 'Highest closing price is more than 13.1% above the lowest.', 'Total shares traded over six months exceed 17% of shares outstanding.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €21.0 million.', 'FALSE — €16.8m → €21.0m.', 'TRUE — Range €28–€35.', 'TRUE — Turnover ≈ 66.1% of shares outstanding.'], '5/5', 91, 'full' ),
 ( '6.3', 'CASE 6.3.092', 'Calculating Gross Profit Explained', 'Assess why a business''s balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:', ARRAY['Amounts paid to telesales personnel are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'Direct labour incurred producing the units sold are included within cost of sales because they are incurred directly in producing the goods that a joinery and furniture workshop has sold.', 'The wages of administrative assistants are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'Pay earned by loading bay workers is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'An automotive parts supplier is regarded as financing its assembly-line robotics soundly only when they are covered mainly by a short-term bank overdraft.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Selling costs occur after production and are excluded from cost of sales.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.'], '5/5', 92, 'full' ),
 ( '6.3', 'CASE 6.3.093', 'Share Price and Market Capitalisation 93', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=19
-February | Price=18
-March | Price=18
-April | Price=19
-May | Price=19
-June | Price=21
+January | Price=25
+February | Price=23
+March | Price=22
+April | Price=22
+May | Price=21
+June | Price=26
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=40000
-February | Volume=28000
-March | Volume=69000
-April | Volume=52000
-May | Volume=43000
-June | Volume=66000
+January | Volume=52000
+February | Volume=37000
+March | Volume=87000
+April | Volume=67000
+May | Volume=55000
+June | Volume=84000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 731,000 | 40,000 |
-| February | 18 | 731,000 | 28,000 |
-| March | 18 | 731,000 | 69,000 |
-| April | 19 | 731,000 | 52,000 |
-| May | 19 | 731,000 | 43,000 |
-| June | 21 | 731,000 | 66,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 52,000 |
+| February | 23 | 37,000 |
+| March | 22 | 87,000 |
+| April | 22 | 67,000 |
+| May | 21 | 55,000 |
+| June | 26 | 84,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 258 |
+| Operating result (€ thousands) | 258 |
 | Shares outstanding | 731,000 |
-| Total shares traded (six months) | 298,000 |
+| Total shares traded (six months) | 382,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.8 million.', 'The closing share price rose by more than 32.8% from first to last month.', 'Total shares traded over six months exceed 33% of shares outstanding.', 'Peak monthly share turnover exceeds 60,237 shares.', 'Shares outstanding stay at 731,000 every month.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €15.4 million.', 'FALSE — Price change ≈ 10.5%.', 'TRUE — Turnover ≈ 40.8% of shares outstanding.', 'TRUE — Peak monthly volume = 69,000.', 'TRUE — Shares outstanding unchanged.'], '5/5', 93, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €15.8 million.', 'The closing share price rose by more than 32.8% from first to last month.', 'Total shares traded over six months exceed 33% of shares outstanding.', 'Peak monthly share turnover exceeds 75,951 shares.', 'Shares outstanding equal 731,000.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €19.0 million.', 'FALSE — Price change ≈ 4.0%.', 'TRUE — Turnover ≈ 52.3% of shares outstanding.', 'TRUE — Peak monthly volume = 87,000.', 'TRUE — Shares outstanding = 731,000.'], '5/5', 93, 'full' ),
 ( '6.3', 'CASE 6.3.094', 'Calculating Gross Profit for Analysts', 'Assess how comparing several years of financial statements reveals trends that one year''s figures cannot show alone. Evaluate the following economic assertions:', ARRAY['Amounts paid to regional sales agents are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'The balance between assembly-line robotics and spare automotive parts inventory on an automotive parts supplier''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Factory-floor wages tied directly to output produced are included within cost of sales because they are incurred directly in producing the goods that a plastics moulding company has sold.', 'The wages of office management personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'A commercial bakery chain is regarded as financing its ovens and proofing equipment soundly only when they are covered mainly by short-term credit from ingredient suppliers.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Selling costs occur after production and are excluded from cost of sales.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.'], '2/5', 94, 'full' ),
 ( '6.3', 'CASE 6.3.095', 'Calculating Gross Profit Over Time', 'Consider a ceramics manufacturer whose analysts are benchmarking its financial statements against those of competing firms in the same region. Evaluate the following economic assertions:', ARRAY['The balance between ovens and proofing equipment and dough and ingredient stock on a commercial bakery chain''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'A marine equipment supplier is regarded as financing its dockside cranes and lifting gear soundly only when they are covered mainly by short-term credit from parts suppliers.', 'Pay earned by delivery fleet staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'Amounts paid to the commercial sales force are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'The balance between dockside cranes and lifting gear and spare marine parts inventory on a marine equipment supplier''s statements has no bearing on whether the business is becoming more or less capital-intensive.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.'], '5/5', 95, 'full' ),
 ( '6.3', 'CASE 6.3.096', 'Share Price and Market Capitalisation 96', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=28
-March | Price=30
-April | Price=27
-May | Price=25
-June | Price=24
+January | Price=33
+February | Price=37
+March | Price=39
+April | Price=39
+May | Price=39
+June | Price=40
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=45000
-February | Volume=14000
-March | Volume=20000
-April | Volume=50000
-May | Volume=31000
-June | Volume=47000
+January | Volume=58000
+February | Volume=21000
+March | Volume=28000
+April | Volume=65000
+May | Volume=41000
+June | Volume=61000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 780,000 | 45,000 |
-| February | 28 | 780,000 | 14,000 |
-| March | 30 | 780,000 | 20,000 |
-| April | 27 | 780,000 | 50,000 |
-| May | 25 | 780,000 | 31,000 |
-| June | 24 | 780,000 | 47,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 58,000 |
+| February | 37 | 21,000 |
+| March | 39 | 28,000 |
+| April | 39 | 65,000 |
+| May | 39 | 41,000 |
+| June | 40 | 61,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 273 |
+| Operating result (€ thousands) | 273 |
 | Shares outstanding | 780,000 |
-| Total shares traded (six months) | 207,000 |
+| Total shares traded (six months) | 274,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 9.6% from first to last month.', 'Market capitalisation at the last month exceeds €14.8 million.', 'Peak monthly share turnover exceeds 40,946 shares.', 'Market capitalisation rose by more than 19.3% over the period.', 'Shares outstanding stay at 780,000 every month.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Price change ≈ -4.0%.', 'TRUE — Market capitalisation ≈ €18.7 million.', 'TRUE — Peak monthly volume = 50,000.', 'FALSE — €19.5m → €18.7m.', 'TRUE — Shares outstanding unchanged.'], '3/5', 96, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 25.5% above the lowest.', 'The closing share price rose by more than 9.6% from first to last month.', 'Market capitalisation at the last month exceeds €24.7 million.', 'Operating result is below €228 thousand.', 'Market capitalisation rose by more than 19.3% over the period.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Range €33–€40.', 'TRUE — Price change ≈ 21.2%.', 'TRUE — Market capitalisation ≈ €31.2 million.', 'FALSE — Operating result = 273.', 'TRUE — €25.7m → €31.2m.'], '3/5', 96, 'full' ),
 ( '6.3', 'CASE 6.3.097', 'Listed Company Performance Charts 97', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=35
-February | Price=36
-March | Price=37
-April | Price=41
-May | Price=40
-June | Price=42
+January | Price=19
+February | Price=19
+March | Price=19
+April | Price=19
+May | Price=19
+June | Price=23
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=22000
-February | Volume=35000
-March | Volume=65000
-April | Volume=31000
-May | Volume=63000
-June | Volume=59000
+January | Volume=30000
+February | Volume=52000
+March | Volume=51000
+April | Volume=35000
+May | Volume=54000
+June | Volume=80000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 35 | 518,000 | 22,000 |
-| February | 36 | 518,000 | 35,000 |
-| March | 37 | 518,000 | 65,000 |
-| April | 41 | 518,000 | 31,000 |
-| May | 40 | 518,000 | 63,000 |
-| June | 42 | 518,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 30,000 |
+| February | 19 | 52,000 |
+| March | 19 | 51,000 |
+| April | 19 | 35,000 |
+| May | 19 | 54,000 |
+| June | 23 | 80,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 232 |
-| Shares outstanding | 518,000 |
-| Total shares traded (six months) | 275,000 |
+| Operating result (€ thousands) | 265 |
+| Shares outstanding | 760,000 |
+| Total shares traded (six months) | 302,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €20.6 million.', 'Market capitalisation rose by more than 33.3% over the period.', 'Total shares traded over six months exceed 30% of shares outstanding.', 'Highest closing price is more than 32.1% above the lowest.', 'Peak monthly share turnover exceeds 61,254 shares.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €21.8 million.', 'FALSE — €18.1m → €21.8m.', 'TRUE — Turnover ≈ 53.1% of shares outstanding.', 'FALSE — Range €35–€42.', 'TRUE — Peak monthly volume = 65,000.'], '5/5', 97, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13.8 million.', 'The closing share price rose by more than 29.1% from first to last month.', 'Market capitalisation rose by more than 9% over the period.', 'Operating result is below €207 thousand.', 'Highest closing price is more than 14.8% above the lowest.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €17.5 million.', 'FALSE — Price change ≈ 21.1%.', 'TRUE — €14.4m → €17.5m.', 'FALSE — Operating result = 265.', 'TRUE — Range €19–€23.'], '5/5', 97, 'full' ),
 ( '6.3', 'CASE 6.3.098', 'Earnings Per Share From Reported Figures 98', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=23
-March | Price=21
-April | Price=19
-May | Price=19
-June | Price=19
+January | Price=31
+February | Price=31
+March | Price=31
+April | Price=30
+May | Price=31
+June | Price=38
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=35000
-February | Volume=32000
-March | Volume=17000
-April | Volume=34000
-May | Volume=41000
-June | Volume=73000
+January | Volume=46000
+February | Volume=42000
+March | Volume=25000
+April | Volume=45000
+May | Volume=54000
+June | Volume=92000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 840,000 | 35,000 |
-| February | 23 | 840,000 | 32,000 |
-| March | 21 | 840,000 | 17,000 |
-| April | 19 | 840,000 | 34,000 |
-| May | 19 | 840,000 | 41,000 |
-| June | 19 | 840,000 | 73,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 46,000 |
+| February | 31 | 42,000 |
+| March | 31 | 25,000 |
+| April | 30 | 45,000 |
+| May | 31 | 54,000 |
+| June | 38 | 92,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 235 |
+| Operating result (€ thousands) | 235 |
 | Shares outstanding | 840,000 |
-| Total shares traded (six months) | 232,000 |
+| Total shares traded (six months) | 304,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.4 million (see the extract prepared for case 6.3.098).', 'Earnings per share exceeds €0.22 (see the extract prepared for case 6.3.098).', 'Total shares traded over six months exceed 20.5% of shares outstanding (see the extract prepared for case 6.3.098).', 'Shares outstanding stay at 840,000 every month (see the extract prepared for case 6.3.098).', 'The last closing price is below the first (see the extract prepared for case 6.3.098).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €16.0 million.', 'TRUE — Earnings per share ≈ €0.28.', 'TRUE — Turnover ≈ 27.6% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'TRUE — 24 → 19.'], '5/5', 98, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €24.8 million.', 'Earnings per share exceeds €0.22.', 'Total shares traded over six months exceed 20.5% of shares outstanding.', 'Shares outstanding equal 840,000.', 'Earnings per share is exactly €0.28.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €31.9 million.', 'TRUE — Earnings per share ≈ €0.28.', 'TRUE — Turnover ≈ 36.2% of shares outstanding.', 'TRUE — Shares outstanding = 840,000.', 'TRUE — Earnings per share ≈ €0.28.'], '5/5', 98, 'full' ),
 ( '6.3', 'CASE 6.3.099', 'Calculating Gross Profit in Context', 'Assess how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:', ARRAY['A joinery and furniture workshop is regarded as financing its joinery workshop machinery soundly only when they are covered mainly by short-term credit from timber suppliers.', 'The direct cost of goods acquired for resale are included within cost of sales because they are incurred directly in producing the goods that a dairy cooperative has sold.', 'The balance between joinery workshop machinery and unsold furniture stock on a joinery and furniture workshop''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'A plastics moulding company is regarded as financing its injection-moulding machinery soundly only when they are covered mainly by short-term credit from resin suppliers.', 'The balance between injection-moulding machinery and moulded component stock on a plastics moulding company''s statements has no bearing on whether the business is becoming more or less capital-intensive.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.'], '3/5', 99, 'full' ),
 ( '6.3', 'CASE 6.3.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=30
-March | Price=29
-April | Price=29
-May | Price=27
-June | Price=25
+January | Price=38
+February | Price=35
+March | Price=33
+April | Price=32
+May | Price=32
+June | Price=40
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=73000
-February | Volume=32000
-March | Volume=74000
-April | Volume=14000
-May | Volume=44000
-June | Volume=17000
+January | Volume=72000
+February | Volume=25000
+March | Volume=32000
+April | Volume=45000
+May | Volume=91000
+June | Volume=82000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 799,000 | 73,000 |
-| February | 30 | 799,000 | 32,000 |
-| March | 29 | 799,000 | 74,000 |
-| April | 29 | 799,000 | 14,000 |
-| May | 27 | 799,000 | 44,000 |
-| June | 25 | 799,000 | 17,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 72,000 |
+| February | 35 | 25,000 |
+| March | 33 | 32,000 |
+| April | 32 | 45,000 |
+| May | 32 | 91,000 |
+| June | 40 | 82,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 278 |
-| Shares outstanding | 799,000 |
-| Total shares traded (six months) | 254,000 |
+| Operating result (€ thousands) | 309 |
+| Shares outstanding | 451,000 |
+| Total shares traded (six months) | 347,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €18.6 million.', 'Market capitalisation rose by more than 27.4% over the period.', 'Total shares traded over six months exceed 40% of shares outstanding.', 'Highest closing price is more than 14.7% above the lowest.', 'Operating result is below €228 thousand.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Market capitalisation ≈ €20.0 million.', 'FALSE — €22.4m → €20.0m.', 'FALSE — Turnover ≈ 31.8% of shares outstanding.', 'TRUE — Range €25–€30.', 'FALSE — Operating result = 278.'], '5/5', 100, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.58.', 'Market capitalisation rose by more than 18.9% over the period.', 'Highest closing price is more than 43.6% above the lowest.', 'Total shares traded over six months exceed 14.5% of shares outstanding.', 'Operating result is below €268 thousand.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Earnings per share ≈ €0.69.', 'FALSE — €17.1m → €18.0m.', 'FALSE — Range €32–€40.', 'TRUE — Turnover ≈ 76.9% of shares outstanding.', 'FALSE — Operating result = 309.'], '5/5', 100, 'full' ),
 ( '6.3', 'CASE 6.3.101', 'Understanding the Operating Result in Practice', 'Assess how the split between retained earnings and new share capital reveals the source of a business''s equity growth. Evaluate the following economic assertions:', ARRAY['A dairy cooperative is regarded as financing its chilling and pasteurising plant soundly only when they are covered mainly by short-term credit from feed suppliers.', 'The balance between chilling and pasteurising plant and dairy products awaiting delivery on a dairy cooperative''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'The wages of clerical support employees are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'Pay earned by freight dispatch clerks is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'Amounts paid to customer account executives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.'], '5/5', 101, 'full' ),
 ( '6.3', 'CASE 6.3.102', 'Share Price and Market Capitalisation 102', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=35
-March | Price=34
-April | Price=35
-May | Price=32
-June | Price=35
+January | Price=37
+February | Price=38
+March | Price=36
+April | Price=36
+May | Price=34
+June | Price=43
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=45000
-February | Volume=29000
-March | Volume=31000
-April | Volume=64000
-May | Volume=48000
-June | Volume=75000
+January | Volume=59000
+February | Volume=38000
+March | Volume=42000
+April | Volume=82000
+May | Volume=62000
+June | Volume=95000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 512,000 | 45,000 |
-| February | 35 | 512,000 | 29,000 |
-| March | 34 | 512,000 | 31,000 |
-| April | 35 | 512,000 | 64,000 |
-| May | 32 | 512,000 | 48,000 |
-| June | 35 | 512,000 | 75,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 59,000 |
+| February | 38 | 38,000 |
+| March | 36 | 42,000 |
+| April | 36 | 82,000 |
+| May | 34 | 62,000 |
+| June | 43 | 95,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 282 |
+| Operating result (€ thousands) | 282 |
 | Shares outstanding | 512,000 |
-| Total shares traded (six months) | 292,000 |
+| Total shares traded (six months) | 378,000 |
 
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.41.', 'Total shares traded over six months exceed 26% of shares outstanding.', 'Peak monthly share turnover exceeds 66,180 shares.', 'Shares outstanding stay at 512,000 every month.', 'The closing share price rose by more than 33.4% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Earnings per share ≈ €0.55.', 'TRUE — Turnover ≈ 57.0% of shares outstanding.', 'TRUE — Peak monthly volume = 75,000.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Price change ≈ 12.9%.'], '4/5', 102, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €17.6 million.', 'Total shares traded over six months exceed 26% of shares outstanding.', 'Peak monthly share turnover exceeds 83,828 shares.', 'Shares outstanding equal 512,000.', 'The closing share price rose by more than 33.4% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €22.0 million.', 'TRUE — Turnover ≈ 73.8% of shares outstanding.', 'TRUE — Peak monthly volume = 95,000.', 'TRUE — Shares outstanding = 512,000.', 'FALSE — Price change ≈ 16.2%.'], '4/5', 102, 'full' ),
 ( '6.3', 'CASE 6.3.103', 'Understanding the Operating Result Explained', 'Assess why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:', ARRAY['A mining equipment lessor is regarded as financing its heavy mining equipment held for hire soundly only when they are covered mainly by a short-term equipment rental payable.', 'The balance between heavy mining equipment held for hire and replacement parts inventory on a mining equipment lessor''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Production-line materials consumed in manufacturing are included within cost of sales because they are incurred directly in producing the goods that a mining equipment lessor has sold.', 'The wages of head office coordinators are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'A textile dyeing company is regarded as financing its dyeing vats and finishing lines soundly only when they are covered mainly by short-term credit from dye suppliers.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.'], '4/5', 103, 'full' ),
 ( '6.3', 'CASE 6.3.104', 'Earnings Per Share From Reported Figures 104', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=24
-March | Price=26
-April | Price=29
-May | Price=27
-June | Price=28
+January | Price=31
+February | Price=32
+March | Price=33
+April | Price=35
+May | Price=34
+June | Price=39
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=56000
-February | Volume=31000
-March | Volume=31000
-April | Volume=32000
-May | Volume=44000
-June | Volume=46000
+January | Volume=72000
+February | Volume=41000
+March | Volume=42000
+April | Volume=43000
+May | Volume=57000
+June | Volume=59000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 527,000 | 56,000 |
-| February | 24 | 527,000 | 31,000 |
-| March | 26 | 527,000 | 31,000 |
-| April | 29 | 527,000 | 32,000 |
-| May | 27 | 527,000 | 44,000 |
-| June | 28 | 527,000 | 46,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 72,000 |
+| February | 32 | 41,000 |
+| March | 33 | 42,000 |
+| April | 35 | 43,000 |
+| May | 34 | 57,000 |
+| June | 39 | 59,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 294 |
+| Operating result (€ thousands) | 294 |
 | Shares outstanding | 527,000 |
-| Total shares traded (six months) | 240,000 |
+| Total shares traded (six months) | 314,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13.7 million (see the extract prepared for case 6.3.104).', 'Earnings per share exceeds €0.4 (see the extract prepared for case 6.3.104).', 'Total shares traded over six months exceed 18.8% of shares outstanding (see the extract prepared for case 6.3.104).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.3.104).', 'The closing share price rose by more than 31% from first to last month (see the extract prepared for case 6.3.104).'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €14.8 million.', 'TRUE — Earnings per share ≈ €0.56.', 'TRUE — Turnover ≈ 45.5% of shares outstanding.', 'TRUE — Rose in 3 of 5 steps.', 'FALSE — Price change ≈ 16.7%.'], '5/5', 104, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €19.1 million.', 'Market capitalisation rose by more than 18% over the period.', 'Shares outstanding equal 527,000.', 'Earnings per share is exactly €0.56.', 'The closing share price rose by more than 31% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €20.6 million.', 'TRUE — €16.3m → €20.6m.', 'TRUE — Shares outstanding = 527,000.', 'TRUE — Earnings per share ≈ €0.56.', 'FALSE — Price change ≈ 25.8%.'], '5/5', 104, 'full' ),
 ( '6.3', 'CASE 6.3.105', 'Share Price and Market Capitalisation 105', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=27
-February | Price=29
-March | Price=29
-April | Price=28
-May | Price=30
-June | Price=34
+January | Price=36
+February | Price=37
+March | Price=38
+April | Price=37
+May | Price=39
+June | Price=45
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=12000
-February | Volume=59000
-March | Volume=67000
-April | Volume=64000
-May | Volume=12000
-June | Volume=49000
+January | Volume=18000
+February | Volume=75000
+March | Volume=85000
+April | Volume=82000
+May | Volume=19000
+June | Volume=64000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 409,000 | 12,000 |
-| February | 29 | 409,000 | 59,000 |
-| March | 29 | 409,000 | 67,000 |
-| April | 28 | 409,000 | 64,000 |
-| May | 30 | 409,000 | 12,000 |
-| June | 34 | 409,000 | 49,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 18,000 |
+| February | 37 | 75,000 |
+| March | 38 | 85,000 |
+| April | 37 | 82,000 |
+| May | 39 | 19,000 |
+| June | 45 | 64,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 242 |
+| Operating result (€ thousands) | 242 |
 | Shares outstanding | 409,000 |
-| Total shares traded (six months) | 263,000 |
+| Total shares traded (six months) | 343,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12 million.', 'Market capitalisation rose by more than 15.2% over the period.', 'Earnings per share exceeds €0.44.', 'Peak monthly share turnover exceeds 75,238 shares.', 'Highest closing price is more than 18.6% above the lowest.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €13.9 million.', 'TRUE — €11.0m → €13.9m.', 'TRUE — Earnings per share ≈ €0.59.', 'FALSE — Peak monthly volume = 67,000.', 'TRUE — Range €27–€34.'], '5/5', 105, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 15.2% over the period.', 'Earnings per share exceeds €0.44.', 'Highest closing price is more than 18.6% above the lowest.', 'Peak monthly share turnover exceeds 95,451 shares.', 'Total shares traded over six months exceed 35.1% of shares outstanding.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — €14.7m → €18.4m.', 'TRUE — Earnings per share ≈ €0.59.', 'TRUE — Range €36–€45.', 'FALSE — Peak monthly volume = 85,000.', 'TRUE — Turnover ≈ 83.9% of shares outstanding.'], '5/5', 105, 'full' ),
 ( '6.3', 'CASE 6.3.106', 'Listed Company Performance Charts 106', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=33
-February | Price=34
+January | Price=37
+February | Price=35
 March | Price=31
-April | Price=30
-May | Price=28
-June | Price=30
+April | Price=28
+May | Price=24
+June | Price=22
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=28000
-February | Volume=54000
-March | Volume=43000
-April | Volume=51000
-May | Volume=20000
-June | Volume=56000
+January | Volume=37000
+February | Volume=69000
+March | Volume=56000
+April | Volume=66000
+May | Volume=28000
+June | Volume=72000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 33 | 873,000 | 28,000 |
-| February | 34 | 873,000 | 54,000 |
-| March | 31 | 873,000 | 43,000 |
-| April | 30 | 873,000 | 51,000 |
-| May | 28 | 873,000 | 20,000 |
-| June | 30 | 873,000 | 56,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 37,000 |
+| February | 35 | 69,000 |
+| March | 31 | 56,000 |
+| April | 28 | 66,000 |
+| May | 24 | 28,000 |
+| June | 22 | 72,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 313 |
+| Operating result (€ thousands) | 313 |
 | Shares outstanding | 873,000 |
-| Total shares traded (six months) | 252,000 |
+| Total shares traded (six months) | 328,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €24.2 million.', 'The closing share price rose by more than 16.3% from first to last month.', 'Peak monthly share turnover exceeds 53,243 shares.', 'Market capitalisation rose by more than 8.5% over the period.', 'Highest closing price is more than 28% above the lowest.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €26.2 million.', 'FALSE — Price change ≈ -9.1%.', 'TRUE — Peak monthly volume = 56,000.', 'FALSE — €28.8m → €26.2m.', 'FALSE — Range €28–€34.'], '4/5', 106, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €17.7 million.', 'The closing share price rose by more than 16.3% from first to last month.', 'Highest closing price is more than 28% above the lowest.', 'Market capitalisation rose by more than 8.5% over the period.', 'Earnings per share is exactly €0.32.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €19.2 million.', 'FALSE — Price change ≈ -40.5%.', 'TRUE — Range €22–€37.', 'FALSE — €32.3m → €19.2m.', 'FALSE — Earnings per share ≈ €0.36.'], '4/5', 106, 'full' ),
 ( '6.3', 'CASE 6.3.107', 'Understanding the Operating Result for Analysts', 'Consider a joinery and furniture workshop whose accountant is explaining the difference between cash spent on new machinery and the expense recorded in the income statement. Evaluate the following economic assertions:', ARRAY['The balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Pay earned by transport scheduling staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'An appliance repair network is regarded as financing its diagnostic and repair equipment soundly only when they are covered mainly by short-term credit from components suppliers.', 'The balance between diagnostic and repair equipment and spare repair components on an appliance repair network''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Amounts paid to sales support staff are excluded from cost of sales because selling activity takes place only after the goods have already been produced.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.'], '3/5', 107, 'full' ),
 ( '6.3', 'CASE 6.3.108', 'Share Price and Market Capitalisation 108', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=13
-March | Price=12
-April | Price=11
-May | Price=11
-June | Price=11
+January | Price=28
+February | Price=26
+March | Price=24
+April | Price=25
+May | Price=23
+June | Price=21
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=32000
-February | Volume=67000
-March | Volume=34000
-April | Volume=17000
-May | Volume=26000
-June | Volume=37000
+January | Volume=51000
+February | Volume=73000
+March | Volume=44000
+April | Volume=27000
+May | Volume=19000
+June | Volume=45000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 871,000 | 32,000 |
-| February | 13 | 871,000 | 67,000 |
-| March | 12 | 871,000 | 34,000 |
-| April | 11 | 871,000 | 17,000 |
-| May | 11 | 871,000 | 26,000 |
-| June | 11 | 871,000 | 37,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 51,000 |
+| February | 26 | 73,000 |
+| March | 24 | 44,000 |
+| April | 25 | 27,000 |
+| May | 23 | 19,000 |
+| June | 21 | 45,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 241 |
-| Shares outstanding | 871,000 |
-| Total shares traded (six months) | 213,000 |
+| Operating result (€ thousands) | 263 |
+| Shares outstanding | 431,000 |
+| Total shares traded (six months) | 259,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 31.8% from first to last month.', 'Market capitalisation rose by more than 19.9% over the period.', 'Highest closing price is more than 35% above the lowest.', 'Total shares traded over six months exceed 28.4% of shares outstanding.', 'Market capitalisation at the last month exceeds €7.4 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -8.3%.', 'FALSE — €10.5m → €9.6m.', 'FALSE — Range €11–€13.', 'FALSE — Turnover ≈ 24.5% of shares outstanding.', 'TRUE — Market capitalisation ≈ €9.6 million.'], '2/5', 108, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 22.2% from first to last month.', 'Market capitalisation rose by more than 19.9% over the period.', 'Highest closing price is more than 35.9% above the lowest.', 'Operating result is below €220 thousand.', 'Earnings per share exceeds €0.46.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -25.0%.', 'FALSE — €12.1m → €9.1m.', 'FALSE — Range €21–€28.', 'FALSE — Operating result = 263.', 'TRUE — Earnings per share ≈ €0.61.'], '2/5', 108, 'full' ),
 ( '6.3', 'CASE 6.3.109', 'Understanding the Operating Result Over Time', 'Assess how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:', ARRAY['A seed and fertiliser distributor is regarded as financing its seed processing plant soundly only when they are covered mainly by short-term credit from seed suppliers.', 'The balance between seed processing plant and seed and fertiliser stock on a seed and fertiliser distributor''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Direct input costs of the manufacturing process are included within cost of sales because they are incurred directly in producing the goods that a textile dyeing company has sold.', 'A scaffolding rental firm is regarded as financing its scaffolding held for long-term hire soundly only when they are covered mainly by a short-term scaffolding materials payable.', 'The wages of general administrative staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.'], '2/5', 109, 'full' ),
 ( '6.3', 'CASE 6.3.110', 'Understanding the Operating Result in Context', 'Assess why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:', ARRAY['Pay earned by outbound packing staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'The balance between scaffolding held for long-term hire and scaffolding materials awaiting short-term hire on a scaffolding rental firm''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'Amounts paid to territory sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'An industrial cleaning company is regarded as financing its industrial cleaning machinery soundly only when they are covered mainly by short-term credit from chemical suppliers.', 'Direct labour hours spent producing the goods sold are included within cost of sales because they are incurred directly in producing the goods that an appliance repair network has sold.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'FALSE — Covering long-term assets mainly with current liabilities is considered risky, not sound financing.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.'], '5/5', 110, 'full' ),
 ( '6.3', 'CASE 6.3.111', 'Share Price and Market Capitalisation 111', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=25
-March | Price=27
-April | Price=29
-May | Price=26
-June | Price=24
+January | Price=30
+February | Price=28
+March | Price=28
+April | Price=27
+May | Price=24
+June | Price=21
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=13000
-February | Volume=12000
-March | Volume=54000
-April | Volume=65000
-May | Volume=59000
-June | Volume=48000
+January | Volume=19000
+February | Volume=18000
+March | Volume=70000
+April | Volume=83000
+May | Volume=76000
+June | Volume=63000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 713,000 | 13,000 |
-| February | 25 | 713,000 | 12,000 |
-| March | 27 | 713,000 | 54,000 |
-| April | 29 | 713,000 | 65,000 |
-| May | 26 | 713,000 | 59,000 |
-| June | 24 | 713,000 | 48,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 30 | 19,000 |
+| February | 28 | 18,000 |
+| March | 28 | 70,000 |
+| April | 27 | 83,000 |
+| May | 24 | 76,000 |
+| June | 21 | 63,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 271 |
+| Operating result (€ thousands) | 271 |
 | Shares outstanding | 713,000 |
-| Total shares traded (six months) | 251,000 |
+| Total shares traded (six months) | 329,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €15.3 million.', 'Total shares traded over six months exceed 10.1% of shares outstanding.', 'The closing share price rose by more than 21.6% from first to last month.', 'Peak monthly share turnover exceeds 63,034 shares.', 'Market capitalisation rose by more than 34.3% over the period.'], ARRAY[true, true, false, true, false], ARRAY['TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Turnover ≈ 35.2% of shares outstanding.', 'FALSE — Price change ≈ -4.0%.', 'TRUE — Peak monthly volume = 65,000.', 'FALSE — €17.8m → €17.1m.'], '2/5', 111, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 39% above the lowest.', 'Total shares traded over six months exceed 10.1% of shares outstanding.', 'Market capitalisation rose by more than 34.3% over the period.', 'Peak monthly share turnover exceeds 80,490 shares.', 'Earnings per share is exactly €0.49.'], ARRAY[true, true, false, true, false], ARRAY['TRUE — Range €21–€30.', 'TRUE — Turnover ≈ 46.1% of shares outstanding.', 'FALSE — €21.4m → €15.0m.', 'TRUE — Peak monthly volume = 83,000.', 'FALSE — Earnings per share ≈ €0.38.'], '2/5', 111, 'full' ),
 ( '6.3', 'CASE 6.3.112', 'Listed Company Performance Charts 112', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=13
-March | Price=14
-April | Price=16
-May | Price=14
-June | Price=13
+January | Price=35
+February | Price=35
+March | Price=34
+April | Price=34
+May | Price=32
+June | Price=29
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=29000
-February | Volume=65000
-March | Volume=66000
-April | Volume=17000
-May | Volume=45000
-June | Volume=42000
+January | Volume=54000
+February | Volume=22000
+March | Volume=68000
+April | Volume=32000
+May | Volume=52000
+June | Volume=88000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 446,000 | 29,000 |
-| February | 13 | 446,000 | 65,000 |
-| March | 14 | 446,000 | 66,000 |
-| April | 16 | 446,000 | 17,000 |
-| May | 14 | 446,000 | 45,000 |
-| June | 13 | 446,000 | 42,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 35 | 54,000 |
+| February | 35 | 22,000 |
+| March | 34 | 68,000 |
+| April | 34 | 32,000 |
+| May | 32 | 52,000 |
+| June | 29 | 88,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 212 |
-| Shares outstanding | 446,000 |
-| Total shares traded (six months) | 264,000 |
+| Operating result (€ thousands) | 280 |
+| Shares outstanding | 470,000 |
+| Total shares traded (six months) | 316,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €5 million (see the extract prepared for case 6.3.112).', 'Earnings per share exceeds €0.39 (see the extract prepared for case 6.3.112).', 'Highest closing price is more than 19.5% above the lowest (see the extract prepared for case 6.3.112).', 'Total shares traded over six months exceed 21.9% of shares outstanding (see the extract prepared for case 6.3.112).', 'Shares outstanding stay at 446,000 every month (see the extract prepared for case 6.3.112).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.8 million.', 'TRUE — Earnings per share ≈ €0.48.', 'TRUE — Range €13–€16.', 'TRUE — Turnover ≈ 59.2% of shares outstanding.', 'TRUE — Shares outstanding unchanged.'], '5/5', 112, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.54.', 'Total shares traded over six months exceed 32.2% of shares outstanding.', 'Shares outstanding equal 470,000.', 'Operating result is below €299 thousand.', 'Earnings per share is exactly €0.60.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Earnings per share ≈ €0.60.', 'TRUE — Turnover ≈ 67.2% of shares outstanding.', 'TRUE — Shares outstanding = 470,000.', 'TRUE — Operating result = 280.', 'TRUE — Earnings per share ≈ €0.60.'], '5/5', 112, 'full' ),
 ( '6.3', 'CASE 6.3.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=12
-March | Price=11
-April | Price=11
-May | Price=10
-June | Price=10
+January | Price=19
+February | Price=18
+March | Price=16
+April | Price=16
+May | Price=14
+June | Price=14
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=28000
-February | Volume=68000
-March | Volume=16000
-April | Volume=48000
-May | Volume=69000
-June | Volume=42000
+January | Volume=38000
+February | Volume=87000
+March | Volume=23000
+April | Volume=62000
+May | Volume=88000
+June | Volume=55000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 688,000 | 28,000 |
-| February | 12 | 688,000 | 68,000 |
-| March | 11 | 688,000 | 16,000 |
-| April | 11 | 688,000 | 48,000 |
-| May | 10 | 688,000 | 69,000 |
-| June | 10 | 688,000 | 42,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 38,000 |
+| February | 18 | 87,000 |
+| March | 16 | 23,000 |
+| April | 16 | 62,000 |
+| May | 14 | 88,000 |
+| June | 14 | 55,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 225 |
+| Operating result (€ thousands) | 225 |
 | Shares outstanding | 688,000 |
-| Total shares traded (six months) | 271,000 |
+| Total shares traded (six months) | 353,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €5.7 million.', 'Total shares traded over six months exceed 23.6% of shares outstanding.', 'Peak monthly share turnover exceeds 60,378 shares.', 'Shares outstanding stay at 688,000 every month.', 'The closing share price rose by more than 18.5% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Market capitalisation ≈ €6.9 million.', 'TRUE — Turnover ≈ 39.4% of shares outstanding.', 'TRUE — Peak monthly volume = 69,000.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Price change ≈ -23.1%.'], '3/5', 113, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 34.7% above the lowest.', 'Total shares traded over six months exceed 23.6% of shares outstanding.', 'Peak monthly share turnover exceeds 77,004 shares.', 'Shares outstanding equal 688,000.', 'The closing share price rose by more than 18.5% from first to last month.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Range €14–€19.', 'TRUE — Turnover ≈ 51.3% of shares outstanding.', 'TRUE — Peak monthly volume = 88,000.', 'TRUE — Shares outstanding = 688,000.', 'FALSE — Price change ≈ -26.3%.'], '3/5', 113, 'full' ),
 ( '6.3', 'CASE 6.3.114', 'Expenditure Versus Expense in Practice', 'Assess how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:', ARRAY['The wages of office-based support personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'Pay earned by courier dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.', 'Amounts paid to the wholesale sales team are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'Materials directly used assembling the units sold are included within cost of sales because they are incurred directly in producing the goods that a seed and fertiliser distributor has sold.', 'The direct cost of inventory purchased for resale are included within cost of sales because they are incurred directly in producing the goods that a scaffolding rental firm has sold.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.'], '4/5', 114, 'full' ),
 ( '6.3', 'CASE 6.3.115', 'Listed Company Performance Charts 115', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=23
-March | Price=24
-April | Price=25
-May | Price=26
-June | Price=26
+January | Price=31
+February | Price=29
+March | Price=29
+April | Price=28
+May | Price=28
+June | Price=33
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=37000
-February | Volume=61000
-March | Volume=62000
-April | Volume=62000
-May | Volume=65000
-June | Volume=57000
+January | Volume=48000
+February | Volume=78000
+March | Volume=79000
+April | Volume=80000
+May | Volume=82000
+June | Volume=73000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 831,000 | 37,000 |
-| February | 23 | 831,000 | 61,000 |
-| March | 24 | 831,000 | 62,000 |
-| April | 25 | 831,000 | 62,000 |
-| May | 26 | 831,000 | 65,000 |
-| June | 26 | 831,000 | 57,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 48,000 |
+| February | 29 | 78,000 |
+| March | 29 | 79,000 |
+| April | 28 | 80,000 |
+| May | 28 | 82,000 |
+| June | 33 | 73,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 309 |
+| Operating result (€ thousands) | 309 |
 | Shares outstanding | 831,000 |
-| Total shares traded (six months) | 344,000 |
+| Total shares traded (six months) | 440,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 25.8% over the period.', 'The closing share price rose by more than 8.1% from first to last month.', 'Highest closing price is more than 20.8% above the lowest.', 'Operating result is below €203 thousand.', 'Market capitalisation at the last month exceeds €16.7 million.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — €19.1m → €21.6m.', 'TRUE — Price change ≈ 13.0%.', 'FALSE — Range €23–€26.', 'FALSE — Operating result = 309.', 'TRUE — Market capitalisation ≈ €21.6 million.'], '5/5', 115, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.1% from first to last month.', 'Market capitalisation at the last month exceeds €21.2 million.', 'Market capitalisation rose by more than 25.8% over the period.', 'Highest closing price is more than 20.8% above the lowest.', 'Total shares traded over six months exceed 23.8% of shares outstanding.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Price change ≈ 6.5%.', 'TRUE — Market capitalisation ≈ €27.4 million.', 'FALSE — €25.8m → €27.4m.', 'FALSE — Range €28–€33.', 'TRUE — Turnover ≈ 52.9% of shares outstanding.'], '5/5', 115, 'full' ),
 ( '6.3', 'CASE 6.3.116', 'Earnings Per Share From Reported Figures 116', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=18
-March | Price=17
-April | Price=18
-May | Price=17
-June | Price=16
+January | Price=28
+February | Price=28
+March | Price=29
+April | Price=32
+May | Price=32
+June | Price=35
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=62000
-February | Volume=29000
-March | Volume=67000
-April | Volume=37000
-May | Volume=63000
-June | Volume=24000
+January | Volume=78000
+February | Volume=39000
+March | Volume=85000
+April | Volume=49000
+May | Volume=80000
+June | Volume=33000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 790,000 | 62,000 |
-| February | 18 | 790,000 | 29,000 |
-| March | 17 | 790,000 | 67,000 |
-| April | 18 | 790,000 | 37,000 |
-| May | 17 | 790,000 | 63,000 |
-| June | 16 | 790,000 | 24,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 78,000 |
+| February | 28 | 39,000 |
+| March | 29 | 85,000 |
+| April | 32 | 49,000 |
+| May | 32 | 80,000 |
+| June | 35 | 33,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 265 |
+| Operating result (€ thousands) | 265 |
 | Shares outstanding | 790,000 |
-| Total shares traded (six months) | 282,000 |
+| Total shares traded (six months) | 364,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.6 million.', 'Earnings per share exceeds €0.3.', 'Total shares traded over six months exceed 16.5% of shares outstanding.', 'Peak monthly share turnover exceeds 49,764 shares.', 'Shares outstanding stay at 790,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €12.6 million.', 'TRUE — Earnings per share ≈ €0.34.', 'TRUE — Turnover ≈ 35.7% of shares outstanding.', 'TRUE — Peak monthly volume = 67,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 116, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.3.', 'Total shares traded over six months exceed 16.5% of shares outstanding.', 'Peak monthly share turnover exceeds 63,134 shares.', 'Shares outstanding equal 790,000.', 'Earnings per share is exactly €0.34.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Earnings per share ≈ €0.34.', 'TRUE — Turnover ≈ 46.1% of shares outstanding.', 'TRUE — Peak monthly volume = 85,000.', 'TRUE — Shares outstanding = 790,000.', 'TRUE — Earnings per share ≈ €0.34.'], '2/5', 116, 'full' ),
 ( '6.3', 'CASE 6.3.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=35
-February | Price=32
-March | Price=31
-April | Price=29
-May | Price=31
-June | Price=34
+January | Price=36
+February | Price=34
+March | Price=35
+April | Price=37
+May | Price=36
+June | Price=43
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=36000
-February | Volume=13000
-March | Volume=13000
-April | Volume=25000
-May | Volume=63000
-June | Volume=44000
+January | Volume=56000
+February | Volume=53000
+March | Volume=18000
+April | Volume=48000
+May | Volume=75000
+June | Volume=87000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 35 | 820,000 | 36,000 |
-| February | 32 | 820,000 | 13,000 |
-| March | 31 | 820,000 | 13,000 |
-| April | 29 | 820,000 | 25,000 |
-| May | 31 | 820,000 | 63,000 |
-| June | 34 | 820,000 | 44,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 56,000 |
+| February | 34 | 53,000 |
+| March | 35 | 18,000 |
+| April | 37 | 48,000 |
+| May | 36 | 75,000 |
+| June | 43 | 87,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 246 |
-| Shares outstanding | 820,000 |
-| Total shares traded (six months) | 194,000 |
+| Operating result (€ thousands) | 309 |
+| Shares outstanding | 801,000 |
+| Total shares traded (six months) | 337,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 17.4% from first to last month (see the extract prepared for case 6.3.117).', 'Market capitalisation rose by more than 16% over the period (see the extract prepared for case 6.3.117).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.117).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.3.117).', 'Market capitalisation at the last month exceeds €23.5 million (see the extract prepared for case 6.3.117).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -2.9%.', 'FALSE — €28.7m → €27.9m.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — Rose in 2 of 5 steps.', 'TRUE — Market capitalisation ≈ €27.9 million.'], '4/5', 117, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 27.4% from first to last month.', 'Market capitalisation rose by more than 32.6% over the period.', 'Peak monthly share turnover exceeds 94,422 shares.', 'Operating result is below €219 thousand.', 'Market capitalisation at the last month exceeds €29.1 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 19.4%.', 'FALSE — €28.8m → €34.4m.', 'FALSE — Peak monthly volume = 87,000.', 'FALSE — Operating result = 309.', 'TRUE — Market capitalisation ≈ €34.4 million.'], '4/5', 117, 'full' ),
 ( '6.3', 'CASE 6.3.118', 'Expenditure Versus Expense Explained', 'Consider a textile dyeing company whose board is discussing how the split between current and non-current assets has changed since a recent plant upgrade. Evaluate the following economic assertions:', ARRAY['The balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company''s statements has no bearing on whether the business is becoming more or less capital-intensive.', 'The wages of head office administrators are included within cost of sales because every employee contributes in some way to the goods that are sold.', 'Pay earned by despatch and loading staff is included within cost of sales because moving finished goods is considered part of manufacturing them.', 'The wages of head office clerical staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.', 'Pay earned by distribution warehouse staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.'], ARRAY[false, false, false, true, true], ARRAY['FALSE — The asset mix directly reflects capital intensity; the balance is not irrelevant.', 'FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.', 'FALSE — Distribution activity occurs after production and belongs outside cost of sales.', 'TRUE — Cost of sales reflects direct production costs only, not general administrative wages.', 'TRUE — Distribution wages are incurred after production and are not part of cost of sales.'], '5/5', 118, 'full' ),
 ( '6.3', 'CASE 6.3.119', 'Earnings Per Share From Reported Figures 119', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=13
-March | Price=12
-April | Price=11
-May | Price=11
+January | Price=18
+February | Price=17
+March | Price=15
+April | Price=14
+May | Price=13
 June | Price=12
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=26000
-February | Volume=75000
-March | Volume=71000
-April | Volume=26000
-May | Volume=63000
-June | Volume=55000
+January | Volume=35000
+February | Volume=95000
+March | Volume=90000
+April | Volume=35000
+May | Volume=81000
+June | Volume=71000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 512,000 | 26,000 |
-| February | 13 | 512,000 | 75,000 |
-| March | 12 | 512,000 | 71,000 |
-| April | 11 | 512,000 | 26,000 |
-| May | 11 | 512,000 | 63,000 |
-| June | 12 | 512,000 | 55,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 18 | 35,000 |
+| February | 17 | 95,000 |
+| March | 15 | 90,000 |
+| April | 14 | 35,000 |
+| May | 13 | 81,000 |
+| June | 12 | 71,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 287 |
+| Operating result (€ thousands) | 287 |
 | Shares outstanding | 512,000 |
-| Total shares traded (six months) | 316,000 |
+| Total shares traded (six months) | 407,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4.8 million (see the extract prepared for case 6.3.119).', 'Earnings per share exceeds €0.45 (see the extract prepared for case 6.3.119).', 'Total shares traded over six months exceed 13.3% of shares outstanding (see the extract prepared for case 6.3.119).', 'The closing share price rose by more than 21.1% from first to last month (see the extract prepared for case 6.3.119).', 'Peak monthly share turnover exceeds 58,171 shares (see the extract prepared for case 6.3.119).'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €6.1 million.', 'TRUE — Earnings per share ≈ €0.56.', 'TRUE — Turnover ≈ 61.7% of shares outstanding.', 'FALSE — Price change ≈ -7.7%.', 'TRUE — Peak monthly volume = 75,000.'], '5/5', 119, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4.8 million.', 'Highest closing price is more than 35.5% above the lowest.', 'Total shares traded over six months exceed 13.3% of shares outstanding.', 'The closing share price rose by more than 21.1% from first to last month.', 'Peak monthly share turnover exceeds 73,683 shares.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €6.1 million.', 'TRUE — Range €12–€18.', 'TRUE — Turnover ≈ 79.5% of shares outstanding.', 'FALSE — Price change ≈ -33.3%.', 'TRUE — Peak monthly volume = 95,000.'], '5/5', 119, 'full' ),
 ( '6.3', 'CASE 6.3.120', 'Expenditure Versus Expense for Analysts', 'Assess why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:', ARRAY['Amounts paid to account managers are included within cost of sales because generating sales is necessary before any revenue can be recognised.', 'Raw materials consumed directly in production are excluded from cost of sales because only costs paid in cash during the same month count toward it.', 'Amounts paid to key account managers are excluded from cost of sales because selling activity takes place only after the goods have already been produced.', 'The wages of payroll and accounts clerks are included within cost of sales because every employee contributes in some way to the goods that are sold.', 'Pay earned by outbound freight handlers is included within cost of sales because moving finished goods is considered part of manufacturing them.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.', 'FALSE — Cost of sales includes direct production costs regardless of the timing of any related cash payment.', 'TRUE — Selling costs occur after production and are excluded from cost of sales.', 'FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.', 'FALSE — Distribution activity occurs after production and belongs outside cost of sales.'], '5/5', 120, 'full' ),
 ( '6.3', 'CASE 6.3.121', 'Listed Company Performance Charts 121', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
 January | Price=24
 February | Price=24
-March | Price=24
-April | Price=25
-May | Price=24
-June | Price=23
+March | Price=22
+April | Price=22
+May | Price=20
+June | Price=19
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=58000
-February | Volume=34000
-March | Volume=13000
-April | Volume=32000
-May | Volume=71000
-June | Volume=29000
+January | Volume=84000
+February | Volume=27000
+March | Volume=71000
+April | Volume=63000
+May | Volume=26000
+June | Volume=75000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 785,000 | 58,000 |
-| February | 24 | 785,000 | 34,000 |
-| March | 24 | 785,000 | 13,000 |
-| April | 25 | 785,000 | 32,000 |
-| May | 24 | 785,000 | 71,000 |
-| June | 23 | 785,000 | 29,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 84,000 |
+| February | 24 | 27,000 |
+| March | 22 | 71,000 |
+| April | 22 | 63,000 |
+| May | 20 | 26,000 |
+| June | 19 | 75,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 190 |
-| Shares outstanding | 785,000 |
-| Total shares traded (six months) | 237,000 |
+| Operating result (€ thousands) | 279 |
+| Shares outstanding | 453,000 |
+| Total shares traded (six months) | 346,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.9% from first to last month.', 'Market capitalisation rose by more than 17.1% over the period.', 'Highest closing price is more than 20.5% above the lowest.', 'Market capitalisation at the last month exceeds €15.9 million.', 'Peak monthly share turnover exceeds 76,959 shares.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -4.2%.', 'FALSE — €18.8m → €18.1m.', 'FALSE — Range €23–€25.', 'TRUE — Market capitalisation ≈ €18.1 million.', 'FALSE — Peak monthly volume = 71,000.'], '3/5', 121, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 24.2% from first to last month.', 'Market capitalisation rose by more than 8.4% over the period.', 'Highest closing price is more than 32.1% above the lowest.', 'Market capitalisation at the last month exceeds €7.8 million.', 'Peak monthly share turnover exceeds 87,473 shares.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -20.8%.', 'FALSE — €10.9m → €8.6m.', 'FALSE — Range €19–€24.', 'TRUE — Market capitalisation ≈ €8.6 million.', 'FALSE — Peak monthly volume = 84,000.'], '3/5', 121, 'full' ),
 ( '6.3', 'CASE 6.3.122', 'Earnings Per Share From Reported Figures 122', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=25
-March | Price=24
-April | Price=22
-May | Price=25
-June | Price=23
+January | Price=31
+February | Price=34
+March | Price=35
+April | Price=36
+May | Price=40
+June | Price=40
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=63000
-February | Volume=23000
-March | Volume=18000
-April | Volume=18000
-May | Volume=44000
-June | Volume=74000
+January | Volume=80000
+February | Volume=32000
+March | Volume=26000
+April | Volume=25000
+May | Volume=57000
+June | Volume=93000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 636,000 | 63,000 |
-| February | 25 | 636,000 | 23,000 |
-| March | 24 | 636,000 | 18,000 |
-| April | 22 | 636,000 | 18,000 |
-| May | 25 | 636,000 | 44,000 |
-| June | 23 | 636,000 | 74,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 80,000 |
+| February | 34 | 32,000 |
+| March | 35 | 26,000 |
+| April | 36 | 25,000 |
+| May | 40 | 57,000 |
+| June | 40 | 93,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 243 |
+| Operating result (€ thousands) | 243 |
 | Shares outstanding | 636,000 |
-| Total shares traded (six months) | 240,000 |
+| Total shares traded (six months) | 313,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.5 million.', 'Total shares traded over six months exceed 23.4% of shares outstanding.', 'Peak monthly share turnover exceeds 60,527 shares.', 'Shares outstanding stay at 636,000 every month.', 'Earnings per share is exactly €0.38.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €14.6 million.', 'TRUE — Turnover ≈ 37.7% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Earnings per share ≈ €0.38.'], '2/5', 122, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 13.9% from first to last month.', 'Market capitalisation rose by more than 22.3% over the period.', 'Highest closing price is more than 18.7% above the lowest.', 'Total shares traded over six months exceed 23.4% of shares outstanding.', 'Peak monthly share turnover exceeds 76,068 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 29.0%.', 'TRUE — €19.7m → €25.4m.', 'TRUE — Range €31–€40.', 'TRUE — Turnover ≈ 49.2% of shares outstanding.', 'TRUE — Peak monthly volume = 93,000.'], '2/5', 122, 'full' ),
 ( '6.3', 'CASE 6.3.123', 'Expenditure Versus Expense Over Time', 'Consider why a business''s balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:', ARRAY['Production costs directly tied to units manufactured are included within cost of sales because they are incurred directly in producing the goods that an industrial cleaning company has sold.', 'When a beverage bottling company buys a bottling line, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expenditure occurs at purchase.', 'Amounts paid to field sales representatives are included within cost of sales because generating sales is necessary before any revenue can be recognised.', 'Not every expenditure a beverage bottling company makes during a year shows up as an expense in that same year''s income statement.', 'Not every expenditure a joinery and furniture workshop makes during a year shows up as an expense in that same year''s income statement.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Direct production or acquisition costs are exactly what cost of sales is meant to capture.', 'TRUE — Capital expenditure becomes expense gradually, through depreciation, not all at once.', 'FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.', 'TRUE — Some expenditures are capitalised and expensed only gradually in future periods.', 'TRUE — Some expenditures are capitalised and expensed only gradually in future periods.'], '2/5', 123, 'full' ),
 ( '6.3', 'CASE 6.3.124', 'Expenditure Versus Expense in Context', 'Consider how comparing several years of financial statements reveals trends that one year''s figures cannot show alone. Evaluate the following economic assertions:', ARRAY['When a plastics moulding company buys an injection-moulding machine, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expenditure occurs at purchase.', 'Direct factory labour on the production line are excluded from cost of sales because only costs paid in cash during the same month count toward it.', 'The wages of reception and clerical staff are included within cost of sales because every employee contributes in some way to the goods that are sold.', 'Pay earned by delivery drivers is included within cost of sales because moving finished goods is considered part of manufacturing them.', 'Amounts paid to the retail sales team are included within cost of sales because generating sales is necessary before any revenue can be recognised.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Capital expenditure becomes expense gradually, through depreciation, not all at once.', 'FALSE — Cost of sales includes direct production costs regardless of the timing of any related cash payment.', 'FALSE — Only direct production costs belong in cost of sales; general contribution is not enough.', 'FALSE — Distribution activity occurs after production and belongs outside cost of sales.', 'FALSE — Selling costs are operating expenses, not part of cost of sales, regardless of their necessity.'], '4/5', 124, 'full' ),
 ( '6.3', 'CASE 6.3.125', 'Earnings Per Share From Reported Figures 125', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=24
-March | Price=25
-April | Price=28
-May | Price=28
-June | Price=32
+January | Price=34
+February | Price=32
+March | Price=29
+April | Price=26
+May | Price=23
+June | Price=20
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=56000
-February | Volume=36000
-March | Volume=21000
-April | Volume=63000
-May | Volume=26000
-June | Volume=63000
+January | Volume=57000
+February | Volume=60000
+March | Volume=49000
+April | Volume=64000
+May | Volume=60000
+June | Volume=45000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 587,000 | 56,000 |
-| February | 24 | 587,000 | 36,000 |
-| March | 25 | 587,000 | 21,000 |
-| April | 28 | 587,000 | 63,000 |
-| May | 28 | 587,000 | 26,000 |
-| June | 32 | 587,000 | 63,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 57,000 |
+| February | 32 | 60,000 |
+| March | 29 | 49,000 |
+| April | 26 | 64,000 |
+| May | 23 | 60,000 |
+| June | 20 | 45,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 251 |
-| Shares outstanding | 587,000 |
-| Total shares traded (six months) | 265,000 |
+| Operating result (€ thousands) | 188 |
+| Shares outstanding | 804,000 |
+| Total shares traded (six months) | 335,000 |
 
-Evaluate the following economic assertions:', ARRAY['Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.125).', 'The closing share price rose by more than 32.8% from first to last month (see the extract prepared for case 6.3.125).', 'The last closing price is below the first (see the extract prepared for case 6.3.125).', 'Market capitalisation at the last month exceeds €15.5 million (see the extract prepared for case 6.3.125).', 'Operating result is below €216 thousand (see the extract prepared for case 6.3.125).'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Peak price month vs peak volume month.', 'TRUE — Price change ≈ 39.1%.', 'FALSE — 23 → 32.', 'TRUE — Market capitalisation ≈ €18.8 million.', 'FALSE — Operating result = 251.'], '4/5', 125, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 19.6% over the period.', 'Market capitalisation at the last month exceeds €15 million.', 'Peak monthly share turnover exceeds 66,234 shares.', 'Highest closing price is more than 24.4% above the lowest.', 'Earnings per share is exactly €0.29.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — €27.3m → €16.1m.', 'TRUE — Market capitalisation ≈ €16.1 million.', 'FALSE — Peak monthly volume = 64,000.', 'TRUE — Range €20–€34.', 'FALSE — Earnings per share ≈ €0.23.'], '4/5', 125, 'full' ),
 ( '6.4', 'CASE 6.4.001', 'Short Balance Sheet Extract 1', 'Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Equity and liabilities"]]
@@ -7774,7 +8102,7 @@ Total liabilities=147
 | Total liabilities | **147** |
 | Total equity and liabilities | **320** |
 
-Evaluate the following economic assertions:', ARRAY['The equity ratio is below 45.2%.', 'The current ratio exceeds 1.27.', 'Working capital is positive on this extract.', 'Inventory of €65 thousand is correctly classified as a current asset.', 'The current ratio is exactly 3.75.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Equity ratio ≈ 54.1%.', 'TRUE — Current ratio ≈ 3.75.', 'TRUE — Working capital = 88.', 'TRUE — Inventory is always current.', 'TRUE — Current ratio ≈ 3.75.'], '3/5', 1, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The equity ratio is below 45.2%.', 'Working capital is positive on this extract.', 'Inventory of €65 thousand is correctly classified as a current asset.', 'The current ratio is exactly 3.75.', 'A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Equity ratio ≈ 54.1%.', 'TRUE — Working capital = 88.', 'TRUE — Inventory is always current.', 'TRUE — Current ratio ≈ 3.75.', 'TRUE — Financial accounting reports are prepared for external users such as lenders and shareholders.'], '3/5', 1, 'full' ),
 ( '6.4', 'CASE 6.4.002', 'Financial Accounting and External Users', 'Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:', ARRAY['Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.', 'Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers.', 'Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.', 'Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.', 'Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.', 'FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports.', 'TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.', 'FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.', 'FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements.'], '3/5', 2, 'full' ),
 ( '6.4', 'CASE 6.4.003', 'Short Depreciation Extract 3', 'A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.
 
@@ -7961,7 +8289,7 @@ Current liabilities=263
 | Total liabilities | **690** |
 | Total equity and liabilities | **1313** |
 
-Evaluate the following economic assertions:', ARRAY['The equity ratio is below 33.6%.', 'The current ratio exceeds 1.35.', 'Buildings make up more than 53% of total assets.', 'The debt ratio exceeds 47.9%.', 'Inventory make up more than 54% of current assets.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Equity ratio ≈ 47.4%.', 'TRUE — Current ratio ≈ 1.78.', 'FALSE — Buildings are about 38.8% of total assets.', 'TRUE — Debt ratio ≈ 52.6%.', 'TRUE — Inventory are about 56.3% of current assets.'], '3/5', 14, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The equity ratio is below 33.6%.', 'The debt ratio exceeds 47.9%.', 'Buildings make up more than 53% of total assets.', 'Inventory make up more than 54% of current assets.', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 9.1%.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Equity ratio ≈ 47.4%.', 'TRUE — Debt ratio ≈ 52.6%.', 'FALSE — Buildings are about 38.8% of total assets.', 'TRUE — Inventory are about 56.3% of current assets.', 'TRUE — Long-term financing covers non-current assets by about 24.1%.'], '3/5', 14, 'full' ),
 ( '6.4', 'CASE 6.4.015', 'Short Balance Sheet Extract 15', 'Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Equity and liabilities"]]
@@ -8244,7 +8572,7 @@ Current liabilities=275
 | Total liabilities | **748** |
 | Total equity and liabilities | **1191** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.19.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.12 times over.', 'The equity ratio is below 30.9%.', 'The current ratio exceeds 1.36.', 'Buildings make up more than 44.1% of total assets.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Current ratio ≈ 1.53.', 'FALSE — Acid-test ratio ≈ 0.64.', 'FALSE — Equity ratio ≈ 37.2%.', 'TRUE — Current ratio ≈ 1.53.', 'FALSE — Buildings are about 42.1% of total assets.'], '3/5', 33, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.19.', 'The equity ratio is below 30.9%.', 'Buildings make up more than 44.1% of total assets.', 'The current ratio exceeds 1.36.', 'Cash and cash equivalents make up more than 17.2% of current assets.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Current ratio ≈ 1.53.', 'FALSE — Equity ratio ≈ 37.2%.', 'FALSE — Buildings are about 42.1% of total assets.', 'TRUE — Current ratio ≈ 1.53.', 'FALSE — Cash and cash equivalents are about 10.2% of current assets.'], '3/5', 33, 'full' ),
 ( '6.4', 'CASE 6.4.034', 'Statutory Formats in Financial Accounting', 'Analyze why management accounting reports can be produced weekly or monthly for internal users. Evaluate the following economic assertions:', ARRAY['Reports prepared for employees of a service firm can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.', 'Owners of a service firm look at accounting information mainly to judge the return earned on the capital they have invested.', 'Lenders of a service firm look at accounting information mainly to judge whether the business will be able to repay what it owes.', 'Tax authorities of a service firm look at accounting information mainly to judge how much tax is due on the business''s profit.', 'Investors of a service firm look at accounting information mainly to judge the likely return and risk before committing further capital.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.', 'TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.', 'TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information.', 'TRUE — Tax authorities focus on how much tax is due on the business''s profit when they use accounting information.', 'TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information.'], '3/5', 34, 'full' ),
 ( '6.4', 'CASE 6.4.035', 'Independent Auditing Explained', 'Consider a hospitality group whose owners compare profit with the capital they have invested while an independent auditor checks the underlying figures. Evaluate the following economic assertions:', ARRAY['Lenders of a retailer have no interest in whether the business will be able to repay what it owes when they look at accounting information.', 'Managers of a service firm look at accounting information mainly to judge controlling costs and choosing between courses of action.', 'Employees of a service firm look at accounting information mainly to judge how secure their jobs and future pay are likely to be.', 'Tax authorities of a retailer have no interest in how much tax is due on the business''s profit when they look at accounting information.', 'Investors of a retailer have no interest in the likely return and risk before committing further capital when they look at accounting information.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Lenders are typically concerned with whether the business will be able to repay what it owes.', 'TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information.', 'TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.', 'FALSE — Tax authorities are typically concerned with how much tax is due on the business''s profit.', 'FALSE — Investors are typically concerned with the likely return and risk before committing further capital.'], '4/5', 35, 'full' ),
 ( '6.4', 'CASE 6.4.036', 'Audit Independence From Management', 'Analyze why an auditor must be independent of the managers whose figures are being checked. Evaluate the following economic assertions:', ARRAY['Owners of a construction contractor are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.', 'Managers of a retailer have no interest in controlling costs and choosing between courses of action when they look at accounting information.', 'Employees of a retailer have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.', 'Owners of a service firm are internal users who receive management accounting reports every week, in the same way as its own managers.', 'Owners of a service firm base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.', 'FALSE — Managers are typically concerned with controlling costs and choosing between courses of action.', 'FALSE — Employees are typically concerned with how secure their jobs and future pay are likely to be.', 'FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports.', 'FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.'], '4/5', 36, 'full' ),
@@ -8279,513 +8607,513 @@ Evaluate the following economic assertions:', ARRAY['Inventory of €93 thousand
 ( '6.4', 'CASE 6.4.041', 'Earnings Per Share From Reported Figures 41', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=28
-March | Price=25
-April | Price=22
-May | Price=20
-June | Price=20
+January | Price=37
+February | Price=36
+March | Price=34
+April | Price=32
+May | Price=31
+June | Price=30
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=56000
-February | Volume=27000
-March | Volume=51000
-April | Volume=25000
-May | Volume=61000
-June | Volume=62000
+January | Volume=72000
+February | Volume=36000
+March | Volume=66000
+April | Volume=33000
+May | Volume=78000
+June | Volume=79000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 620,000 | 56,000 |
-| February | 28 | 620,000 | 27,000 |
-| March | 25 | 620,000 | 51,000 |
-| April | 22 | 620,000 | 25,000 |
-| May | 20 | 620,000 | 61,000 |
-| June | 20 | 620,000 | 62,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 72,000 |
+| February | 36 | 36,000 |
+| March | 34 | 66,000 |
+| April | 32 | 33,000 |
+| May | 31 | 78,000 |
+| June | 30 | 79,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 261 |
+| Operating result (€ thousands) | 261 |
 | Shares outstanding | 620,000 |
-| Total shares traded (six months) | 282,000 |
+| Total shares traded (six months) | 364,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.4 million.', 'The closing share price rose by more than 17.6% from first to last month.', 'Highest closing price is more than 33.9% above the lowest.', 'Total shares traded over six months exceed 35.9% of shares outstanding.', 'Peak monthly share turnover exceeds 47,788 shares.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €12.4 million.', 'FALSE — Price change ≈ -31.0%.', 'TRUE — Range €20–€29.', 'TRUE — Turnover ≈ 45.5% of shares outstanding.', 'TRUE — Peak monthly volume = 62,000.'], '2/5', 41, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14 million.', 'The closing share price rose by more than 17.6% from first to last month.', 'Total shares traded over six months exceed 35.9% of shares outstanding.', 'Peak monthly share turnover exceeds 60,891 shares.', 'Shares outstanding equal 620,000.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €18.6 million.', 'FALSE — Price change ≈ -18.9%.', 'TRUE — Turnover ≈ 58.7% of shares outstanding.', 'TRUE — Peak monthly volume = 79,000.', 'TRUE — Shares outstanding = 620,000.'], '2/5', 41, 'full' ),
 ( '6.4', 'CASE 6.4.042', 'Shared Transactions, Different Purposes', 'Analyze why financial accounting and management accounting can draw on the same underlying transactions. Evaluate the following economic assertions:', ARRAY['Reports prepared for managers of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.', 'Investors of a service firm have no interest in the likely return and risk before committing further capital when they look at accounting information.', 'Managers of a service firm have no interest in controlling costs and choosing between courses of action when they look at accounting information.', 'Employees of a service firm have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.', 'Owners of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.', 'FALSE — Investors are typically concerned with the likely return and risk before committing further capital.', 'FALSE — Managers are typically concerned with controlling costs and choosing between courses of action.', 'FALSE — Employees are typically concerned with how secure their jobs and future pay are likely to be.', 'FALSE — Owners are external users who rely on annual financial accounting, not weekly internal management reports.'], '3/5', 42, 'full' ),
 ( '6.4', 'CASE 6.4.043', 'Recognised Rules for Comparability', 'Review why recognised presentation rules help external users compare different businesses. Evaluate the following economic assertions:', ARRAY['Employees of a construction contractor work inside the business and can be given management accounting reports designed around their own questions.', 'Employees of a construction contractor can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.', 'Reports prepared for employees of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.', 'Owners of a construction contractor look at accounting information mainly to judge the return earned on the capital they have invested.', 'Lenders of a construction contractor look at accounting information mainly to judge whether the business will be able to repay what it owes.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Employees are internal users who can receive management accounting tailored to their needs.', 'TRUE — Management accounting can reach internal users such as employees far more frequently than annual financial accounting.', 'TRUE — Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.', 'TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.', 'TRUE — Lenders focus on whether the business will be able to repay what it owes when they use accounting information.'], '3/5', 43, 'full' ),
 ( '6.4', 'CASE 6.4.044', 'Earnings Per Share From Reported Figures 44', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=27
-March | Price=27
-April | Price=31
-May | Price=31
-June | Price=32
+January | Price=20
+February | Price=21
+March | Price=21
+April | Price=21
+May | Price=22
+June | Price=25
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=56000
-February | Volume=20000
-March | Volume=44000
-April | Volume=42000
-May | Volume=19000
-June | Volume=52000
+January | Volume=76000
+February | Volume=43000
+March | Volume=32000
+April | Volume=78000
+May | Volume=55000
+June | Volume=23000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 848,000 | 56,000 |
-| February | 27 | 848,000 | 20,000 |
-| March | 27 | 848,000 | 44,000 |
-| April | 31 | 848,000 | 42,000 |
-| May | 31 | 848,000 | 19,000 |
-| June | 32 | 848,000 | 52,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 76,000 |
+| February | 21 | 43,000 |
+| March | 21 | 32,000 |
+| April | 21 | 78,000 |
+| May | 22 | 55,000 |
+| June | 25 | 23,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 287 |
-| Shares outstanding | 848,000 |
-| Total shares traded (six months) | 233,000 |
+| Operating result (€ thousands) | 275 |
+| Shares outstanding | 560,000 |
+| Total shares traded (six months) | 307,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 31.6% from first to last month.', 'Total shares traded over six months exceed 35.1% of shares outstanding.', 'Peak monthly share turnover exceeds 61,160 shares.', 'Earnings per share is exactly €0.23.', 'Market capitalisation at the last month exceeds €22.4 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 28.0%.', 'FALSE — Turnover ≈ 27.5% of shares outstanding.', 'FALSE — Peak monthly volume = 56,000.', 'FALSE — Earnings per share ≈ €0.34.', 'TRUE — Market capitalisation ≈ €27.1 million.'], '4/5', 44, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 27.2% from first to last month.', 'Highest closing price is more than 43.3% above the lowest.', 'Operating result is below €209 thousand.', 'Earnings per share is exactly €0.42.', 'Market capitalisation at the last month exceeds €11.1 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 25.0%.', 'FALSE — Range €20–€25.', 'FALSE — Operating result = 275.', 'FALSE — Earnings per share ≈ €0.49.', 'TRUE — Market capitalisation ≈ €14.0 million.'], '4/5', 44, 'full' ),
 ( '6.4', 'CASE 6.4.045', 'Share Price and Market Capitalisation 45', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=14
-March | Price=14
-April | Price=12
-May | Price=13
-June | Price=12
+January | Price=19
+February | Price=21
+March | Price=21
+April | Price=21
+May | Price=23
+June | Price=23
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=19000
-February | Volume=49000
-March | Volume=17000
-April | Volume=20000
-May | Volume=57000
-June | Volume=27000
+January | Volume=33000
+February | Volume=40000
+March | Volume=26000
+April | Volume=47000
+May | Volume=26000
+June | Volume=64000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 855,000 | 19,000 |
-| February | 14 | 855,000 | 49,000 |
-| March | 14 | 855,000 | 17,000 |
-| April | 12 | 855,000 | 20,000 |
-| May | 13 | 855,000 | 57,000 |
-| June | 12 | 855,000 | 27,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 33,000 |
+| February | 21 | 40,000 |
+| March | 21 | 26,000 |
+| April | 21 | 47,000 |
+| May | 23 | 26,000 |
+| June | 23 | 64,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 306 |
-| Shares outstanding | 855,000 |
-| Total shares traded (six months) | 189,000 |
+| Operating result (€ thousands) | 227 |
+| Shares outstanding | 655,000 |
+| Total shares traded (six months) | 236,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.1 million (see the extract prepared for case 6.4.045).', 'Earnings per share exceeds €0.3 (see the extract prepared for case 6.4.045).', 'Peak monthly share turnover exceeds 54,837 shares (see the extract prepared for case 6.4.045).', 'Shares outstanding stay at 855,000 every month (see the extract prepared for case 6.4.045).', 'The last closing price is below the first (see the extract prepared for case 6.4.045).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.3 million.', 'TRUE — Earnings per share ≈ €0.36.', 'TRUE — Peak monthly volume = 57,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — 14 → 12.'], '5/5', 45, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 20.9% from first to last month.', 'Market capitalisation at the last month exceeds €14.2 million.', 'Total shares traded over six months exceed 10.2% of shares outstanding.', 'Peak monthly share turnover exceeds 39,691 shares.', 'Shares outstanding equal 655,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 21.1%.', 'TRUE — Market capitalisation ≈ €15.1 million.', 'TRUE — Turnover ≈ 36.0% of shares outstanding.', 'TRUE — Peak monthly volume = 64,000.', 'TRUE — Shares outstanding = 655,000.'], '5/5', 45, 'full' ),
 ( '6.4', 'CASE 6.4.046', 'Owners and Investors as Separate Users', 'Analyze why internal reports can be laid out however best suits the decision being made. Evaluate the following economic assertions:', ARRAY['Owners of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.', 'Tax authorities of a construction contractor look at accounting information mainly to judge how much tax is due on the business''s profit.', 'Investors of a construction contractor look at accounting information mainly to judge the likely return and risk before committing further capital.', 'Managers of a construction contractor look at accounting information mainly to judge controlling costs and choosing between courses of action.', 'Employees of a construction contractor look at accounting information mainly to judge how secure their jobs and future pay are likely to be.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Owners typically rely on published financial accounting statements, not informal internal notes.', 'TRUE — Tax authorities focus on how much tax is due on the business''s profit when they use accounting information.', 'TRUE — Investors focus on the likely return and risk before committing further capital when they use accounting information.', 'TRUE — Managers focus on controlling costs and choosing between courses of action when they use accounting information.', 'TRUE — Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.'], '5/5', 46, 'full' ),
 ( '6.4', 'CASE 6.4.047', 'Annual Statements Versus Monthly Reports', 'Consider a retail chain whose employees hear informal updates on trading performance while tax authorities rely solely on its filed financial accounts. Evaluate the following economic assertions:', ARRAY['Lenders of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers.', 'Owners of a hospitality group are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.', 'Owners of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.', 'Lenders of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.', 'Managers of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Lenders are external users who rely on annual financial accounting, not weekly internal management reports.', 'TRUE — Owners sit outside daily management and depend on financial accounting rather than internal management reports.', 'TRUE — Financial accounting statements reach external users such as owners on the statutory annual cycle.', 'FALSE — Lenders typically rely on published financial accounting statements, not informal internal notes.', 'FALSE — Internal users such as managers can receive management accounting far more often than the annual financial statements.'], '5/5', 47, 'full' ),
 ( '6.4', 'CASE 6.4.048', 'Share Price and Market Capitalisation 48', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=20
-April | Price=22
-May | Price=21
-June | Price=21
+January | Price=21
+February | Price=21
+March | Price=21
+April | Price=20
+May | Price=18
+June | Price=17
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=75000
-March | Volume=48000
-April | Volume=32000
-May | Volume=31000
-June | Volume=38000
+January | Volume=57000
+February | Volume=95000
+March | Volume=62000
+April | Volume=43000
+May | Volume=41000
+June | Volume=50000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 716,000 | 44,000 |
-| February | 18 | 716,000 | 75,000 |
-| March | 20 | 716,000 | 48,000 |
-| April | 22 | 716,000 | 32,000 |
-| May | 21 | 716,000 | 31,000 |
-| June | 21 | 716,000 | 38,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 57,000 |
+| February | 21 | 95,000 |
+| March | 21 | 62,000 |
+| April | 20 | 43,000 |
+| May | 18 | 41,000 |
+| June | 17 | 50,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 300 |
+| Operating result (€ thousands) | 300 |
 | Shares outstanding | 716,000 |
-| Total shares traded (six months) | 268,000 |
+| Total shares traded (six months) | 348,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 30.9% over the period.', 'The closing share price rose by more than 21.9% from first to last month.', 'Market capitalisation at the last month exceeds €12.6 million.', 'Total shares traded over six months exceed 39.8% of shares outstanding.', 'Peak monthly share turnover exceeds 78,864 shares.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — €12.2m → €15.0m.', 'TRUE — Price change ≈ 23.5%.', 'TRUE — Market capitalisation ≈ €15.0 million.', 'FALSE — Turnover ≈ 37.4% of shares outstanding.', 'FALSE — Peak monthly volume = 75,000.'], '5/5', 48, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 21.9% from first to last month.', 'Market capitalisation at the last month exceeds €10.2 million.', 'Highest closing price is more than 16.5% above the lowest.', 'Market capitalisation rose by more than 30.9% over the period.', 'Peak monthly share turnover exceeds 99,894 shares.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Price change ≈ -19.0%.', 'TRUE — Market capitalisation ≈ €12.2 million.', 'TRUE — Range €17–€21.', 'FALSE — €15.0m → €12.2m.', 'FALSE — Peak monthly volume = 95,000.'], '5/5', 48, 'full' ),
 ( '6.4', 'CASE 6.4.049', 'Listed Company Performance Charts 49', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=14
-March | Price=13
-April | Price=14
-May | Price=14
-June | Price=15
+January | Price=20
+February | Price=19
+March | Price=18
+April | Price=19
+May | Price=19
+June | Price=23
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=30000
-February | Volume=59000
-March | Volume=20000
-April | Volume=28000
-May | Volume=66000
-June | Volume=21000
+January | Volume=40000
+February | Volume=75000
+March | Volume=27000
+April | Volume=38000
+May | Volume=84000
+June | Volume=29000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 602,000 | 30,000 |
-| February | 14 | 602,000 | 59,000 |
-| March | 13 | 602,000 | 20,000 |
-| April | 14 | 602,000 | 28,000 |
-| May | 14 | 602,000 | 66,000 |
-| June | 15 | 602,000 | 21,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 40,000 |
+| February | 19 | 75,000 |
+| March | 18 | 27,000 |
+| April | 19 | 38,000 |
+| May | 19 | 84,000 |
+| June | 23 | 29,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 194 |
+| Operating result (€ thousands) | 194 |
 | Shares outstanding | 602,000 |
-| Total shares traded (six months) | 224,000 |
+| Total shares traded (six months) | 293,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.6% from first to last month.', 'Market capitalisation at the last month exceeds €7.1 million.', 'Total shares traded over six months exceed 8.2% of shares outstanding.', 'Market capitalisation rose by more than 18.4% over the period.', 'Peak monthly share turnover exceeds 65,843 shares.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Price change ≈ 7.1%.', 'TRUE — Market capitalisation ≈ €9.0 million.', 'TRUE — Turnover ≈ 37.2% of shares outstanding.', 'FALSE — €8.4m → €9.0m.', 'TRUE — Peak monthly volume = 66,000.'], '5/5', 49, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 18.4% over the period.', 'The closing share price rose by more than 10.6% from first to last month.', 'Market capitalisation at the last month exceeds €10.9 million.', 'Highest closing price is more than 39.3% above the lowest.', 'Total shares traded over six months exceed 8.2% of shares outstanding.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — €12.0m → €13.8m.', 'TRUE — Price change ≈ 15.0%.', 'TRUE — Market capitalisation ≈ €13.8 million.', 'FALSE — Range €18–€23.', 'TRUE — Turnover ≈ 48.7% of shares outstanding.'], '5/5', 49, 'full' ),
 ( '6.4', 'CASE 6.4.050', 'Earnings Per Share From Reported Figures 50', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=30
+February | Price=30
+March | Price=31
+April | Price=32
+May | Price=31
+June | Price=36
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=50000
+February | Volume=63000
+March | Volume=34000
+April | Volume=29000
+May | Volume=34000
+June | Volume=61000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 30 | 50,000 |
+| February | 30 | 63,000 |
+| March | 31 | 34,000 |
+| April | 32 | 29,000 |
+| May | 31 | 34,000 |
+| June | 36 | 61,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 240 |
+| Shares outstanding | 684,000 |
+| Total shares traded (six months) | 271,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 26.8% from first to last month.', 'Total shares traded over six months exceed 33.8% of shares outstanding.', 'Peak monthly share turnover exceeds 45,158 shares.', 'Market capitalisation rose by more than 31.9% over the period.', 'Highest closing price is more than 44.2% above the lowest.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Price change ≈ 20.0%.', 'TRUE — Turnover ≈ 39.6% of shares outstanding.', 'TRUE — Peak monthly volume = 63,000.', 'FALSE — €20.5m → €24.6m.', 'FALSE — Range €30–€36.'], '5/5', 50, 'full' ),
+( '6.4', 'CASE 6.4.051', 'Share Price and Market Capitalisation 51', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=38
+February | Price=41
+March | Price=42
+April | Price=43
+May | Price=47
+June | Price=46
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=57000
+February | Volume=25000
+March | Volume=86000
+April | Volume=30000
+May | Volume=43000
+June | Volume=28000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 57,000 |
+| February | 41 | 25,000 |
+| March | 42 | 86,000 |
+| April | 43 | 30,000 |
+| May | 47 | 43,000 |
+| June | 46 | 28,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 234 |
+| Shares outstanding | 411,000 |
+| Total shares traded (six months) | 269,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14.3 million.', 'Total shares traded over six months exceed 10.3% of shares outstanding.', 'Shares outstanding equal 411,000.', 'Highest closing price is more than 27.1% above the lowest.', 'Peak monthly share turnover exceeds 86,167 shares.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €18.9 million.', 'TRUE — Turnover ≈ 65.5% of shares outstanding.', 'TRUE — Shares outstanding = 411,000.', 'FALSE — Range €38–€47.', 'FALSE — Peak monthly volume = 86,000.'], '5/5', 51, 'full' ),
+( '6.4', 'CASE 6.4.052', 'Listed Company Performance Charts 52', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
 January | Price=25
 February | Price=24
-March | Price=27
-April | Price=29
-May | Price=28
-June | Price=25
+March | Price=23
+April | Price=19
+May | Price=17
+June | Price=15
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=38000
-February | Volume=49000
-March | Volume=25000
-April | Volume=21000
-May | Volume=25000
-June | Volume=47000
+January | Volume=88000
+February | Volume=76000
+March | Volume=67000
+April | Volume=71000
+May | Volume=72000
+June | Volume=59000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 684,000 | 38,000 |
-| February | 24 | 684,000 | 49,000 |
-| March | 27 | 684,000 | 25,000 |
-| April | 29 | 684,000 | 21,000 |
-| May | 28 | 684,000 | 25,000 |
-| June | 25 | 684,000 | 47,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 25 | 88,000 |
+| February | 24 | 76,000 |
+| March | 23 | 67,000 |
+| April | 19 | 71,000 |
+| May | 17 | 72,000 |
+| June | 15 | 59,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 240 |
-| Shares outstanding | 684,000 |
-| Total shares traded (six months) | 205,000 |
+| Operating result (€ thousands) | 289 |
+| Shares outstanding | 726,000 |
+| Total shares traded (six months) | 433,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 26.8% from first to last month.', 'Market capitalisation at the last month exceeds €14.1 million.', 'Peak monthly share turnover exceeds 35,123 shares.', 'Market capitalisation rose by more than 31.9% over the period.', 'Highest closing price is more than 44.2% above the lowest.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Price change ≈ 0.0%.', 'TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Peak monthly volume = 49,000.', 'FALSE — €17.1m → €17.1m.', 'FALSE — Range €24–€29.'], '5/5', 50, 'full' ),
-( '6.4', 'CASE 6.4.051', 'Share Price and Market Capitalisation 51', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=29
-March | Price=30
-April | Price=33
-May | Price=30
-June | Price=30
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=63000
-March | Volume=13000
-April | Volume=54000
-May | Volume=15000
-June | Volume=68000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 432,000 | 44,000 |
-| February | 29 | 432,000 | 63,000 |
-| March | 30 | 432,000 | 13,000 |
-| April | 33 | 432,000 | 54,000 |
-| May | 30 | 432,000 | 15,000 |
-| June | 30 | 432,000 | 68,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 198 |
-| Shares outstanding | 432,000 |
-| Total shares traded (six months) | 257,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.3 million.', 'Earnings per share exceeds €0.43.', 'Total shares traded over six months exceed 11.4% of shares outstanding.', 'The closing share price rose by more than 8% from first to last month.', 'Market capitalisation rose by more than 17.6% over the period.'], ARRAY[true, true, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €13.0 million.', 'TRUE — Earnings per share ≈ €0.46.', 'TRUE — Turnover ≈ 59.5% of shares outstanding.', 'FALSE — Price change ≈ 3.4%.', 'FALSE — €12.5m → €13.0m.'], '5/5', 51, 'full' ),
-( '6.4', 'CASE 6.4.052', 'Listed Company Performance Charts 52', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=29
-March | Price=29
-April | Price=31
-May | Price=27
-June | Price=28
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=13000
-February | Volume=71000
-March | Volume=75000
-April | Volume=26000
-May | Volume=47000
-June | Volume=16000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 612,000 | 13,000 |
-| February | 29 | 612,000 | 71,000 |
-| March | 29 | 612,000 | 75,000 |
-| April | 31 | 612,000 | 26,000 |
-| May | 27 | 612,000 | 47,000 |
-| June | 28 | 612,000 | 16,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 277 |
-| Shares outstanding | 612,000 |
-| Total shares traded (six months) | 248,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €14.7 million (see the extract prepared for case 6.4.052).', 'Earnings per share exceeds €0.33 (see the extract prepared for case 6.4.052).', 'Total shares traded over six months exceed 10.1% of shares outstanding (see the extract prepared for case 6.4.052).', 'Peak monthly share turnover exceeds 49,276 shares (see the extract prepared for case 6.4.052).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.4.052).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Earnings per share ≈ €0.45.', 'TRUE — Turnover ≈ 40.5% of shares outstanding.', 'TRUE — Peak monthly volume = 75,000.', 'TRUE — Rose in 3 of 5 steps.'], '4/5', 52, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.5 million.', 'Highest closing price is more than 28.4% above the lowest.', 'Total shares traded over six months exceed 31.2% of shares outstanding.', 'Peak monthly share turnover exceeds 55,329 shares.', 'Shares outstanding equal 726,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.9 million.', 'TRUE — Range €15–€25.', 'TRUE — Turnover ≈ 59.6% of shares outstanding.', 'TRUE — Peak monthly volume = 88,000.', 'TRUE — Shares outstanding = 726,000.'], '4/5', 52, 'full' ),
 ( '6.4', 'CASE 6.4.053', 'Earnings Per Share From Reported Figures 53', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=30
-February | Price=33
-March | Price=35
-April | Price=36
-May | Price=33
-June | Price=35
+January | Price=26
+February | Price=24
+March | Price=21
+April | Price=18
+May | Price=17
+June | Price=14
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=52000
-February | Volume=66000
-March | Volume=65000
-April | Volume=71000
-May | Volume=13000
-June | Volume=13000
+January | Volume=80000
+February | Volume=24000
+March | Volume=70000
+April | Volume=86000
+May | Volume=36000
+June | Volume=36000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 30 | 716,000 | 52,000 |
-| February | 33 | 716,000 | 66,000 |
-| March | 35 | 716,000 | 65,000 |
-| April | 36 | 716,000 | 71,000 |
-| May | 33 | 716,000 | 13,000 |
-| June | 35 | 716,000 | 13,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 26 | 80,000 |
+| February | 24 | 24,000 |
+| March | 21 | 70,000 |
+| April | 18 | 86,000 |
+| May | 17 | 36,000 |
+| June | 14 | 36,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 301 |
-| Shares outstanding | 716,000 |
-| Total shares traded (six months) | 280,000 |
+| Operating result (€ thousands) | 283 |
+| Shares outstanding | 668,000 |
+| Total shares traded (six months) | 332,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30% from first to last month.', 'Market capitalisation at the last month exceeds €23.8 million.', 'Total shares traded over six months exceed 22% of shares outstanding.', 'Market capitalisation rose by more than 31.1% over the period.', 'Highest closing price is more than 34.3% above the lowest.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Price change ≈ 16.7%.', 'TRUE — Market capitalisation ≈ €25.1 million.', 'TRUE — Turnover ≈ 39.1% of shares outstanding.', 'FALSE — €21.5m → €25.1m.', 'FALSE — Range €30–€36.'], '5/5', 53, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30.5% from first to last month.', 'Market capitalisation at the last month exceeds €8.9 million.', 'Total shares traded over six months exceed 15.9% of shares outstanding.', 'Market capitalisation rose by more than 24.2% over the period.', 'Earnings per share is exactly €0.38.'], ARRAY[false, true, true, false, false], ARRAY['FALSE — Price change ≈ -46.2%.', 'TRUE — Market capitalisation ≈ €9.4 million.', 'TRUE — Turnover ≈ 49.7% of shares outstanding.', 'FALSE — €17.4m → €9.4m.', 'FALSE — Earnings per share ≈ €0.42.'], '5/5', 53, 'full' ),
 ( '6.4', 'CASE 6.4.054', 'Tailored Reports for Managers', 'Analyze why tax authorities are treated as external users of financial accounting information. Evaluate the following economic assertions:', ARRAY['Lenders of a hospitality group are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.', 'Management accounting reports prepared for managers of a construction contractor must use exactly the same statutory format as the published financial statements.', 'Employees of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements.', 'Lenders of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.', 'Managers of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Lenders sit outside daily management and depend on financial accounting rather than internal management reports.', 'FALSE — Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.', 'FALSE — Internal users such as employees can receive management accounting far more often than the annual financial statements.', 'TRUE — Financial accounting statements reach external users such as lenders on the statutory annual cycle.', 'TRUE — Managers are internal users who can receive management accounting tailored to their needs.'], '3/5', 54, 'full' ),
 ( '6.4', 'CASE 6.4.055', 'Why Employees Read Trading Updates', 'Review how the frequency of reporting differs between financial accounting and management accounting. Evaluate the following economic assertions:', ARRAY['Managers of a hospitality group can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.', 'Reports prepared for managers of a hospitality group can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.', 'Employees of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.', 'Owners of a hospitality group look at accounting information mainly to judge the return earned on the capital they have invested.', 'Management accounting reports prepared for employees of a construction contractor must use exactly the same statutory format as the published financial statements.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Management accounting can reach internal users such as managers far more frequently than annual financial accounting.', 'TRUE — Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.', 'TRUE — Employees are internal users who can receive management accounting tailored to their needs.', 'TRUE — Owners focus on the return earned on the capital they have invested when they use accounting information.', 'FALSE — Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.'], '4/5', 55, 'full' ),
 ( '6.4', 'CASE 6.4.056', 'Earnings Per Share From Reported Figures 56', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=27
+January | Price=24
+February | Price=25
+March | Price=27
+April | Price=27
+May | Price=30
+June | Price=30
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=20000
+February | Volume=84000
+March | Volume=34000
+April | Volume=76000
+May | Volume=31000
+June | Volume=29000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 20,000 |
+| February | 25 | 84,000 |
+| March | 27 | 34,000 |
+| April | 27 | 76,000 |
+| May | 30 | 31,000 |
+| June | 30 | 29,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 318 |
+| Shares outstanding | 430,000 |
+| Total shares traded (six months) | 274,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 16.5% from first to last month.', 'Earnings per share exceeds €0.52.', 'Total shares traded over six months exceed 21% of shares outstanding.', 'Peak monthly share turnover exceeds 51,239 shares.', 'Shares outstanding equal 430,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Earnings per share ≈ €0.74.', 'TRUE — Turnover ≈ 63.7% of shares outstanding.', 'TRUE — Peak monthly volume = 84,000.', 'TRUE — Shares outstanding = 430,000.'], '2/5', 56, 'full' ),
+( '6.4', 'CASE 6.4.057', 'Share Price and Market Capitalisation 57', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=24
 February | Price=24
-March | Price=23
-April | Price=23
-May | Price=25
+March | Price=22
+April | Price=22
+May | Price=21
+June | Price=26
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=54000
+February | Volume=54000
+March | Volume=38000
+April | Volume=43000
+May | Volume=36000
+June | Volume=48000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 54,000 |
+| February | 24 | 54,000 |
+| March | 22 | 38,000 |
+| April | 22 | 43,000 |
+| May | 21 | 36,000 |
+| June | 26 | 48,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 291 |
+| Shares outstanding | 496,000 |
+| Total shares traded (six months) | 273,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.7 million.', 'The closing share price rose by more than 13.4% from first to last month.', 'Highest closing price is more than 41.1% above the lowest.', 'Operating result is below €196 thousand.', 'Earnings per share is exactly €0.54.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €12.9 million.', 'FALSE — Price change ≈ 8.3%.', 'FALSE — Range €21–€26.', 'FALSE — Operating result = 291.', 'FALSE — Earnings per share ≈ €0.59.'], '5/5', 57, 'full' ),
+( '6.4', 'CASE 6.4.058', 'Listed Company Performance Charts 58', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=19
+February | Price=20
+March | Price=20
+April | Price=20
+May | Price=20
 June | Price=24
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=24000
-February | Volume=60000
-March | Volume=63000
-April | Volume=18000
-May | Volume=38000
-June | Volume=31000
+January | Volume=80000
+February | Volume=27000
+March | Volume=35000
+April | Volume=30000
+May | Volume=61000
+June | Volume=20000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 27 | 891,000 | 24,000 |
-| February | 24 | 891,000 | 60,000 |
-| March | 23 | 891,000 | 63,000 |
-| April | 23 | 891,000 | 18,000 |
-| May | 25 | 891,000 | 38,000 |
-| June | 24 | 891,000 | 31,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 80,000 |
+| February | 20 | 27,000 |
+| March | 20 | 35,000 |
+| April | 20 | 30,000 |
+| May | 20 | 61,000 |
+| June | 24 | 20,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 252 |
-| Shares outstanding | 891,000 |
-| Total shares traded (six months) | 234,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €19.8 million (see the extract prepared for case 6.4.056).', 'Earnings per share exceeds €0.23 (see the extract prepared for case 6.4.056).', 'Peak monthly share turnover exceeds 43,737 shares (see the extract prepared for case 6.4.056).', 'Shares outstanding stay at 891,000 every month (see the extract prepared for case 6.4.056).', 'The last closing price is below the first (see the extract prepared for case 6.4.056).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €21.4 million.', 'TRUE — Earnings per share ≈ €0.28.', 'TRUE — Peak monthly volume = 63,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — 27 → 24.'], '2/5', 56, 'full' ),
-( '6.4', 'CASE 6.4.057', 'Share Price and Market Capitalisation 57', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=14
-March | Price=15
-April | Price=16
-May | Price=15
-June | Price=13
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=23000
-February | Volume=60000
-March | Volume=33000
-April | Volume=63000
-May | Volume=72000
-June | Volume=52000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 831,000 | 23,000 |
-| February | 14 | 831,000 | 60,000 |
-| March | 15 | 831,000 | 33,000 |
-| April | 16 | 831,000 | 63,000 |
-| May | 15 | 831,000 | 72,000 |
-| June | 13 | 831,000 | 52,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 296 |
-| Shares outstanding | 831,000 |
-| Total shares traded (six months) | 303,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.5 million.', 'Market capitalisation rose by more than 13.5% over the period.', 'Highest closing price is more than 31.4% above the lowest.', 'Peak monthly share turnover exceeds 72,570 shares.', 'Operating result is below €266 thousand.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Market capitalisation ≈ €10.8 million.', 'FALSE — €12.5m → €10.8m.', 'FALSE — Range €13–€16.', 'FALSE — Peak monthly volume = 72,000.', 'FALSE — Operating result = 296.'], '5/5', 57, 'full' ),
-( '6.4', 'CASE 6.4.058', 'Listed Company Performance Charts 58', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=13
-March | Price=13
-April | Price=12
-May | Price=12
-June | Price=11
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=63000
-February | Volume=19000
-March | Volume=26000
-April | Volume=21000
-May | Volume=47000
-June | Volume=13000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 779,000 | 63,000 |
-| February | 13 | 779,000 | 19,000 |
-| March | 13 | 779,000 | 26,000 |
-| April | 12 | 779,000 | 21,000 |
-| May | 12 | 779,000 | 47,000 |
-| June | 11 | 779,000 | 13,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 313 |
+| Operating result (€ thousands) | 313 |
 | Shares outstanding | 779,000 |
-| Total shares traded (six months) | 189,000 |
+| Total shares traded (six months) | 253,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.9% from first to last month.', 'Market capitalisation rose by more than 9.6% over the period.', 'Shares outstanding stay at 779,000 every month.', 'Highest closing price is more than 36.9% above the lowest.', 'Total shares traded over six months exceed 37.4% of shares outstanding.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ -8.3%.', 'FALSE — €9.3m → €8.6m.', 'TRUE — Shares outstanding unchanged.', 'FALSE — Range €11–€13.', 'FALSE — Turnover ≈ 24.3% of shares outstanding.'], '4/5', 58, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 33.9% from first to last month.', 'Highest closing price is more than 36.9% above the lowest.', 'Market capitalisation rose by more than 9.6% over the period.', 'Total shares traded over six months exceed 37.4% of shares outstanding.', 'Peak monthly share turnover exceeds 86,180 shares.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Price change ≈ 26.3%.', 'FALSE — Range €19–€24.', 'TRUE — €14.8m → €18.7m.', 'FALSE — Turnover ≈ 32.5% of shares outstanding.', 'FALSE — Peak monthly volume = 80,000.'], '4/5', 58, 'full' ),
 ( '6.4', 'CASE 6.4.059', 'Earnings Per Share From Reported Figures 59', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=22
-February | Price=23
-March | Price=24
-April | Price=25
-May | Price=26
-June | Price=29
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=33000
-February | Volume=35000
-March | Volume=61000
-April | Volume=44000
-May | Volume=70000
-June | Volume=44000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 22 | 860,000 | 33,000 |
-| February | 23 | 860,000 | 35,000 |
-| March | 24 | 860,000 | 61,000 |
-| April | 25 | 860,000 | 44,000 |
-| May | 26 | 860,000 | 70,000 |
-| June | 29 | 860,000 | 44,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 315 |
-| Shares outstanding | 860,000 |
-| Total shares traded (six months) | 287,000 |
-
-Evaluate the following economic assertions:', ARRAY['Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.4.059).', 'The last closing price is below the first (see the extract prepared for case 6.4.059).', 'Operating result is below €254 thousand (see the extract prepared for case 6.4.059).', 'Earnings per share is exactly €0.27 (see the extract prepared for case 6.4.059).', 'The closing share price rose by more than 11.8% from first to last month (see the extract prepared for case 6.4.059).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Peak price month vs peak volume month.', 'FALSE — 22 → 29.', 'FALSE — Operating result = 315.', 'FALSE — Earnings per share ≈ €0.37.', 'TRUE — Price change ≈ 31.8%.'], '3/5', 59, 'full' ),
-( '6.4', 'CASE 6.4.060', 'Share Price and Market Capitalisation 60', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
 January | Price=34
 February | Price=32
-March | Price=30
-April | Price=34
-May | Price=36
-June | Price=41
+March | Price=31
+April | Price=30
+May | Price=29
+June | Price=27
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=16000
-February | Volume=61000
-March | Volume=43000
-April | Volume=12000
-May | Volume=44000
-June | Volume=31000
+January | Volume=27000
+February | Volume=82000
+March | Volume=87000
+April | Volume=82000
+May | Volume=55000
+June | Volume=92000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 34 | 413,000 | 16,000 |
-| February | 32 | 413,000 | 61,000 |
-| March | 30 | 413,000 | 43,000 |
-| April | 34 | 413,000 | 12,000 |
-| May | 36 | 413,000 | 44,000 |
-| June | 41 | 413,000 | 31,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 27,000 |
+| February | 32 | 82,000 |
+| March | 31 | 87,000 |
+| April | 30 | 82,000 |
+| May | 29 | 55,000 |
+| June | 27 | 92,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 283 |
-| Shares outstanding | 413,000 |
-| Total shares traded (six months) | 207,000 |
+| Operating result (€ thousands) | 312 |
+| Shares outstanding | 841,000 |
+| Total shares traded (six months) | 425,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 20.2% from first to last month.', 'Market capitalisation rose by more than 20% over the period.', 'Highest closing price is more than 36.7% above the lowest.', 'Earnings per share exceeds €0.55.', 'Peak monthly share turnover exceeds 50,038 shares.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Price change ≈ 20.6%.', 'TRUE — €14.0m → €16.9m.', 'FALSE — Range €30–€41.', 'TRUE — Earnings per share ≈ €0.69.', 'TRUE — Peak monthly volume = 61,000.'], '4/5', 60, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8% from first to last month.', 'Market capitalisation rose by more than 33.6% over the period.', 'Peak monthly share turnover exceeds 105,511 shares.', 'Operating result is below €194 thousand.', 'Market capitalisation at the last month exceeds €21.4 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -20.6%.', 'FALSE — €28.6m → €22.7m.', 'FALSE — Peak monthly volume = 92,000.', 'FALSE — Operating result = 312.', 'TRUE — Market capitalisation ≈ €22.7 million.'], '3/5', 59, 'full' ),
+( '6.4', 'CASE 6.4.060', 'Share Price and Market Capitalisation 60', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=42
+February | Price=42
+March | Price=42
+April | Price=45
+May | Price=48
+June | Price=52
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=23000
+February | Volume=78000
+March | Volume=56000
+April | Volume=18000
+May | Volume=58000
+June | Volume=41000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 42 | 23,000 |
+| February | 42 | 78,000 |
+| March | 42 | 56,000 |
+| April | 45 | 18,000 |
+| May | 48 | 58,000 |
+| June | 52 | 41,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 283 |
+| Shares outstanding | 413,000 |
+| Total shares traded (six months) | 274,000 |
+
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.55.', 'Peak monthly share turnover exceeds 63,983 shares.', 'Highest closing price is more than 36.7% above the lowest.', 'Shares outstanding equal 413,000.', 'Earnings per share is exactly €0.69.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Earnings per share ≈ €0.69.', 'TRUE — Peak monthly volume = 78,000.', 'FALSE — Range €42–€52.', 'TRUE — Shares outstanding = 413,000.', 'TRUE — Earnings per share ≈ €0.69.'], '4/5', 60, 'full' ),
 ( '6.5', 'CASE 6.5.001', 'Asset and Inventory Turnover 1', 'Consider the following extract (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Beginning versus ending balances"]]
@@ -9125,7 +9453,7 @@ Cash and cash equivalents=96
 | Total liabilities | **601** |
 | Total equity and liabilities | **1027** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.16.', 'The current ratio is below 1.21.', 'The equity ratio is below 21%.', 'Buildings make up more than 45.6% of total assets.', 'Inventory make up more than 47.1% of current assets.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Current ratio ≈ 2.02.', 'FALSE — Current ratio ≈ 2.02.', 'FALSE — Equity ratio ≈ 41.5%.', 'FALSE — Buildings are about 35.0% of total assets.', 'FALSE — Inventory are about 31.7% of current assets.'], '4/5', 26, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio exceeds 1.16.', 'The current ratio is below 1.21.', 'Buildings make up more than 45.6% of total assets.', 'Inventory make up more than 47.1% of current assets.', 'Trade receivables make up less than 35.9% of current assets.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Current ratio ≈ 2.02.', 'FALSE — Current ratio ≈ 2.02.', 'FALSE — Buildings are about 35.0% of total assets.', 'FALSE — Inventory are about 31.7% of current assets.', 'FALSE — Trade receivables are about 39.9% of current assets.'], '4/5', 26, 'full' ),
 ( '6.5', 'CASE 6.5.027', 'Return and Cash Flow Extract 27', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="pie" title="Asset composition"]]
@@ -9278,7 +9606,7 @@ Cash and cash equivalents=31
 | Total liabilities | **571** |
 | Total equity and liabilities | **1157** |
 
-Evaluate the following economic assertions:', ARRAY['Working capital of €50 thousand is positive on this balance sheet.', 'The equity ratio is below 16.6%.', 'The debt ratio exceeds 51.3%.', 'Buildings make up more than 52.2% of total assets.', 'Trade receivables make up less than 47.9% of current assets.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Working capital = 50.', 'FALSE — Equity ratio ≈ 50.6%.', 'FALSE — Debt ratio ≈ 49.4%.', 'FALSE — Buildings are about 41.7% of total assets.', 'TRUE — Trade receivables are about 36.5% of current assets.'], '5/5', 35, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Trade receivables make up less than 47.9% of current assets.', 'The equity ratio is below 16.6%.', 'The debt ratio exceeds 51.3%.', 'Buildings make up more than 52.2% of total assets.', 'Inventory of €143 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Trade receivables are about 36.5% of current assets.', 'FALSE — Equity ratio ≈ 50.6%.', 'FALSE — Debt ratio ≈ 49.4%.', 'FALSE — Buildings are about 41.7% of total assets.', 'TRUE — Inventory is always a current asset.'], '5/5', 35, 'full' ),
 ( '6.5', 'CASE 6.5.036', 'Combined Statement Extract 36', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="pie" title="Asset composition"]]
@@ -9324,25 +9652,37 @@ Cash and cash equivalents=37
 | Cash and cash equivalents at the beginning of the year | -53 |
 
 Evaluate the following economic assertions:', ARRAY['Working capital equals exactly €-3 thousand.', 'Cash flow from operating activities amounts to less than 85% of the operating result, indicating profit is only partly backed by cash.', 'Return on equity, the operating result taken as a percentage of total equity, exceeds 30.7%.', 'Cash flow from operating activities amounts to more than 102.8% of the operating result.', 'With cash flow from operating activities of €234 thousand, cash flow from investing activities was an inflow this year.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Working capital = 52.', 'FALSE — Cash conversion ≈ 97.5% of the operating result.', 'TRUE — Return on equity ≈ 142.9%.', 'FALSE — Cash conversion ≈ 97.5% of the operating result.', 'FALSE — Investing cash flow = -208.'], '5/5', 36, 'full' ),
-( '6.5', 'CASE 6.5.037', 'Asset and Inventory Turnover 37', 'Consider the following extract (in € thousands) for a business whose identity is not disclosed.
+( '6.5', 'CASE 6.5.037', 'Asset Composition Chart 37', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
-[[CHART type="bar" title="Beginning versus ending balances"]]
-Total assets | Beginning=788 | Ending=964
-Inventory | Beginning=124 | Ending=181
+[[CHART type="bar" title="Current assets and current liabilities"]]
+Current assets=409
+Current liabilities=168
 [[/CHART]]
 
-| Item (€ thousands) | Amount |
+| € in thousands | Amount |
 | --- | ---: |
-| Revenue | 1,264 |
-| Cost of sales | 862 |
-| Total assets at the beginning of the year | 788 |
-| Total assets at the end of the year | 964 |
-| Inventory at the beginning of the year | 124 |
-| Inventory at the end of the year | 181 |
-| Trade receivables at the beginning of the year | 104 |
-| Trade receivables at the end of the year | 136 |
+| **ASSETS** | |
+| Buildings | 309 |
+| Machinery | 180 |
+| Office equipment | 59 |
+| Patents, trademarks and licences | 99 |
+| Inventory | 219 |
+| Trade receivables | 99 |
+| Cash and cash equivalents | 91 |
+| Total assets | **1056** |
+| **EQUITY** | |
+| Share capital | 172 |
+| Retained earnings | 395 |
+| Total equity | **567** |
+| **LIABILITIES** | |
+| Long-term bank loan | 271 |
+| Bonds payable | 50 |
+| Trade payables | 120 |
+| Bank overdraft | 48 |
+| Total liabilities | **489** |
+| Total equity and liabilities | **1056** |
 
-Evaluate the following economic assertions:', ARRAY['On average, revenue remains outstanding in trade receivables for more than 47 days (see the extract prepared for case 6.5.037).', 'Average inventory make up less than 13.9% of average total assets (see the extract prepared for case 6.5.037).', 'Asset turnover is exactly 1.74 (see the extract prepared for case 6.5.037).', 'Inventory turnover is exactly 6.14 times per year (see the extract prepared for case 6.5.037).', 'Asset turnover, revenue taken relative to average total assets, is above 1.41 (see the extract prepared for case 6.5.037).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Average collection period ≈ 35 days.', 'FALSE — Average inventory are about 17.4% of average total assets.', 'FALSE — Asset turnover ≈ 1.44.', 'FALSE — Inventory turnover ≈ 5.65.', 'TRUE — Asset turnover ≈ 1.44.'], '5/5', 37, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.07.', 'The equity ratio is below 41.1%.', 'The debt ratio exceeds 64.2%.', 'Buildings make up more than 42.5% of total assets.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 0.92 times over.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Current ratio ≈ 2.43.', 'FALSE — Equity ratio ≈ 53.7%.', 'FALSE — Debt ratio ≈ 46.3%.', 'FALSE — Buildings are about 29.3% of total assets.', 'TRUE — Acid-test ratio ≈ 1.13.'], '5/5', 37, 'full' ),
 ( '6.5', 'CASE 6.5.038', 'Balance Sheet Structure Review 38', 'Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Current assets and current liabilities"]]
@@ -9373,7 +9713,7 @@ Current liabilities=152
 | Total liabilities | **480** |
 | Total equity and liabilities | **1301** |
 
-Evaluate the following economic assertions:', ARRAY['The equity ratio is below 34.9%.', 'Working capital of €284 thousand is positive on this balance sheet.', 'The debt ratio exceeds 64.2%.', 'Cash and cash equivalents make up more than 31% of current assets.', 'The long-term bank loan of €244 thousand should be classified within equity rather than liabilities.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Equity ratio ≈ 63.1%.', 'TRUE — Working capital = 284.', 'FALSE — Debt ratio ≈ 36.9%.', 'FALSE — Cash and cash equivalents are about 25.7% of current assets.', 'FALSE — A bank loan is a liability, not equity, regardless of its size.'], '4/5', 38, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The equity ratio is below 34.9%.', 'Working capital of €284 thousand is positive on this balance sheet.', 'Cash and cash equivalents make up more than 31% of current assets.', 'The long-term bank loan of €244 thousand should be classified within equity rather than liabilities.', 'The bank overdraft of €35 thousand belongs under non-current liabilities because overdrafts usually run for several years.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Equity ratio ≈ 63.1%.', 'TRUE — Working capital = 284.', 'FALSE — Cash and cash equivalents are about 25.7% of current assets.', 'FALSE — A bank loan is a liability, not equity, regardless of its size.', 'FALSE — A bank overdraft is a current liability.'], '4/5', 38, 'full' ),
 ( '6.5', 'CASE 6.5.039', 'Asset and Inventory Turnover 39', 'Consider the following extract (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="bar" title="Beginning versus ending balances"]]
@@ -9428,7 +9768,7 @@ Cash and cash equivalents=91
 | Total liabilities | **574** |
 | Total equity and liabilities | **1094** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.87.', 'The equity ratio is below 36.9%.', 'The debt ratio exceeds 54.2%.', 'The current ratio exceeds 1.68.', 'Buildings make up more than 55.6% of total assets.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Current ratio ≈ 1.84.', 'FALSE — Equity ratio ≈ 47.5%.', 'FALSE — Debt ratio ≈ 52.5%.', 'TRUE — Current ratio ≈ 1.84.', 'FALSE — Buildings are about 45.1% of total assets.'], '5/5', 41, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.87.', 'The equity ratio is below 36.9%.', 'Buildings make up more than 55.6% of total assets.', 'The current ratio exceeds 1.68.', 'The combined total of equity and non-current liabilities exceeds non-current assets by more than 34.7%.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Current ratio ≈ 1.84.', 'FALSE — Equity ratio ≈ 47.5%.', 'FALSE — Buildings are about 45.1% of total assets.', 'TRUE — Current ratio ≈ 1.84.', 'FALSE — Long-term financing covers non-current assets by about 14.8%.'], '5/5', 41, 'full' ),
 ( '6.5', 'CASE 6.5.042', 'Combined Statement Extract 42', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="pie" title="Asset composition"]]
@@ -9733,7 +10073,7 @@ Cash and cash equivalents=72
 | Total liabilities | **624** |
 | Total equity and liabilities | **907** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.29.', 'The debt ratio exceeds 65.2%.', 'Inventory make up more than 40.1% of current assets.', 'Trade receivables make up less than 52.8% of current assets.', 'Cash and cash equivalents make up more than 20.2% of current assets.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio ≈ 1.27.', 'TRUE — Debt ratio ≈ 68.8%.', 'TRUE — Inventory are about 47.5% of current assets.', 'TRUE — Trade receivables are about 24.9% of current assets.', 'TRUE — Cash and cash equivalents are about 27.6% of current assets.'], '5/5', 58, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The current ratio is below 1.29.', 'The debt ratio exceeds 65.2%.', 'Inventory make up more than 40.1% of current assets.', 'Cash and cash equivalents make up more than 20.2% of current assets.', 'Inventory of €124 thousand is correctly classified as a current asset rather than a non-current intangible asset.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio ≈ 1.27.', 'TRUE — Debt ratio ≈ 68.8%.', 'TRUE — Inventory are about 47.5% of current assets.', 'TRUE — Cash and cash equivalents are about 27.6% of current assets.', 'TRUE — Inventory is always a current asset.'], '5/5', 58, 'full' ),
 ( '6.5', 'CASE 6.5.059', 'Return on Capital Employed Explained Explained', 'Consider a wholesaler that drew down a short-term facility to pay suppliers and is reviewing the effect on working capital. Evaluate the following economic assertions:', ARRAY['The current ratio and the acid-test ratio for a consulting firm always produce identical results, regardless of how much inventory the business holds.', 'A return on capital employed figure for a fashion retailer carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Working capital for a manufacturer is calculated by subtracting current assets from current liabilities.', 'A manufacturer reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for a manufacturer includes inventory within current assets before comparing the total with current liabilities.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'TRUE — Return on capital employed for a fashion retailer is most useful in comparison rather than in isolation.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.'], '5/5', 59, 'full' ),
 ( '6.5', 'CASE 6.5.060', 'Combined Statement Extract 60', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
@@ -9887,7 +10227,7 @@ Cash and cash equivalents=80
 | Total liabilities | **642** |
 | Total equity and liabilities | **1089** |
 
-Evaluate the following economic assertions:', ARRAY['The current ratio is below 0.78.', 'The current ratio exceeds 1.53.', 'After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.', 'Working capital of €184 thousand is positive on this balance sheet.', 'Trade receivables make up less than 55% of current assets.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Current ratio ≈ 1.69.', 'TRUE — Current ratio ≈ 1.69.', 'FALSE — Acid-test ratio ≈ 0.88.', 'TRUE — Working capital = 184.', 'TRUE — Trade receivables are about 34.6% of current assets.'], '5/5', 68, 'full' ),
+Evaluate the following economic assertions:', ARRAY['After excluding inventory, the remaining current assets still cover current liabilities more than 1.25 times over.', 'The current ratio exceeds 1.53.', 'The debt ratio exceeds 69.9%.', 'Working capital of €184 thousand is positive on this balance sheet.', 'Trade receivables make up less than 55% of current assets.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Acid-test ratio ≈ 0.88.', 'TRUE — Current ratio ≈ 1.69.', 'FALSE — Debt ratio ≈ 59.0%.', 'TRUE — Working capital = 184.', 'TRUE — Trade receivables are about 34.6% of current assets.'], '5/5', 68, 'full' ),
 ( '6.5', 'CASE 6.5.069', 'Return and Cash Flow Extract 69', 'Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.
 
 [[CHART type="pie" title="Asset composition"]]
@@ -10538,262 +10878,336 @@ Evaluate the following economic assertions:', ARRAY['Return on equity, the opera
 ( '6.5', 'CASE 6.5.096', 'Share Price and Market Capitalisation 96', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=17
-March | Price=16
-April | Price=14
-May | Price=12
-June | Price=14
+January | Price=24
+February | Price=24
+March | Price=24
+April | Price=25
+May | Price=24
+June | Price=30
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=24000
-February | Volume=75000
-March | Volume=32000
-April | Volume=43000
-May | Volume=72000
-June | Volume=36000
+January | Volume=29000
+February | Volume=74000
+March | Volume=93000
+April | Volume=93000
+May | Volume=42000
+June | Volume=40000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 780,000 | 24,000 |
-| February | 17 | 780,000 | 75,000 |
-| March | 16 | 780,000 | 32,000 |
-| April | 14 | 780,000 | 43,000 |
-| May | 12 | 780,000 | 72,000 |
-| June | 14 | 780,000 | 36,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 29,000 |
+| February | 24 | 74,000 |
+| March | 24 | 93,000 |
+| April | 25 | 93,000 |
+| May | 24 | 42,000 |
+| June | 30 | 40,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 188 |
-| Shares outstanding | 780,000 |
-| Total shares traded (six months) | 282,000 |
+| Operating result (€ thousands) | 301 |
+| Shares outstanding | 753,000 |
+| Total shares traded (six months) | 371,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.1 million (see the extract prepared for case 6.5.096).', 'The closing share price rose by more than 22.4% from first to last month (see the extract prepared for case 6.5.096).', 'Earnings per share exceeds €0.2 (see the extract prepared for case 6.5.096).', 'Market capitalisation rose by more than 13.4% over the period (see the extract prepared for case 6.5.096).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.096).'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €10.9 million.', 'FALSE — Price change ≈ -30.0%.', 'TRUE — Earnings per share ≈ €0.24.', 'FALSE — €15.6m → €10.9m.', 'FALSE — Peak price month vs peak volume month.'], '3/5', 96, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €19.2 million.', 'Highest closing price is more than 27.3% above the lowest.', 'Total shares traded over six months exceed 21.2% of shares outstanding.', 'Peak monthly share turnover exceeds 96,969 shares.', 'Operating result is below €258 thousand.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €22.6 million.', 'FALSE — Range €24–€30.', 'TRUE — Turnover ≈ 49.3% of shares outstanding.', 'FALSE — Peak monthly volume = 93,000.', 'FALSE — Operating result = 301.'], '3/5', 96, 'full' ),
 ( '6.5', 'CASE 6.5.097', 'Asset Turnover and Revenue Generation for Analysts', 'Assess how the current ratio and the acid-test ratio each measure short-term liquidity, and why they can diverge for inventory-heavy businesses. Evaluate the following economic assertions:', ARRAY['Working capital for a pharmaceutical distributor is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'Return on equity for a fashion retailer is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'Inventory turnover for a fashion retailer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.', 'A pharmaceutical distributor is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio and the acid-test ratio for a fashion retailer always produce identical results, regardless of how much inventory the business holds.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — The standard working capital definition applies to a pharmaceutical distributor: current assets minus current liabilities.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.', 'TRUE — Positive working capital is generally preferable for a pharmaceutical distributor as a cushion over short-term obligations.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.'], '3/5', 97, 'full' ),
 ( '6.5', 'CASE 6.5.098', 'Earnings Per Share From Reported Figures 98', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=14
-March | Price=14
-April | Price=14
-May | Price=14
-June | Price=15
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=42000
-February | Volume=36000
-March | Volume=74000
-April | Volume=29000
-May | Volume=58000
-June | Volume=19000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 882,000 | 42,000 |
-| February | 14 | 882,000 | 36,000 |
-| March | 14 | 882,000 | 74,000 |
-| April | 14 | 882,000 | 29,000 |
-| May | 14 | 882,000 | 58,000 |
-| June | 15 | 882,000 | 19,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 266 |
-| Shares outstanding | 882,000 |
-| Total shares traded (six months) | 258,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €12.1 million.', 'The closing share price rose by more than 28.9% from first to last month.', 'Market capitalisation rose by more than 14.1% over the period.', 'Total shares traded over six months exceed 9.1% of shares outstanding.', 'Peak monthly share turnover exceeds 64,240 shares.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €13.2 million.', 'FALSE — Price change ≈ 7.1%.', 'FALSE — €12.3m → €13.2m.', 'TRUE — Turnover ≈ 29.3% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.'], '5/5', 98, 'full' ),
-( '6.5', 'CASE 6.5.099', 'Share Price and Market Capitalisation 99', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=14
-March | Price=13
-April | Price=14
-May | Price=14
-June | Price=13
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=68000
-February | Volume=66000
-March | Volume=53000
-April | Volume=44000
-May | Volume=22000
-June | Volume=47000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 490,000 | 68,000 |
-| February | 14 | 490,000 | 66,000 |
-| March | 13 | 490,000 | 53,000 |
-| April | 14 | 490,000 | 44,000 |
-| May | 14 | 490,000 | 22,000 |
-| June | 13 | 490,000 | 47,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 315 |
-| Shares outstanding | 490,000 |
-| Total shares traded (six months) | 300,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €5.1 million (see the extract prepared for case 6.5.099).', 'Earnings per share exceeds €0.57 (see the extract prepared for case 6.5.099).', 'Total shares traded over six months exceed 19.4% of shares outstanding (see the extract prepared for case 6.5.099).', 'Shares outstanding stay at 490,000 every month (see the extract prepared for case 6.5.099).', 'With unchanged shares outstanding, rising market capitalisation means the share price rose (see the extract prepared for case 6.5.099).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €6.4 million.', 'TRUE — Earnings per share ≈ €0.64.', 'TRUE — Turnover ≈ 61.2% of shares outstanding.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Market capitalisation = price × shares.'], '3/5', 99, 'full' ),
-( '6.5', 'CASE 6.5.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=18
-February | Price=18
-March | Price=17
-April | Price=15
-May | Price=14
-June | Price=13
+January | Price=20
+February | Price=20
+March | Price=21
+April | Price=21
+May | Price=21
+June | Price=25
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
 January | Volume=54000
-February | Volume=26000
-March | Volume=31000
-April | Volume=56000
-May | Volume=41000
-June | Volume=72000
+February | Volume=47000
+March | Volume=93000
+April | Volume=39000
+May | Volume=74000
+June | Volume=27000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 18 | 858,000 | 54,000 |
-| February | 18 | 858,000 | 26,000 |
-| March | 17 | 858,000 | 31,000 |
-| April | 15 | 858,000 | 56,000 |
-| May | 14 | 858,000 | 41,000 |
-| June | 13 | 858,000 | 72,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 54,000 |
+| February | 20 | 47,000 |
+| March | 21 | 93,000 |
+| April | 21 | 39,000 |
+| May | 21 | 74,000 |
+| June | 25 | 27,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 210 |
-| Shares outstanding | 858,000 |
-| Total shares traded (six months) | 280,000 |
+| Operating result (€ thousands) | 266 |
+| Shares outstanding | 882,000 |
+| Total shares traded (six months) | 334,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.8 million.', 'Highest closing price is more than 18.3% above the lowest.', 'Peak monthly share turnover exceeds 55,252 shares.', 'Shares outstanding stay at 858,000 every month.', 'Operating result is below €271 thousand.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €11.2 million.', 'TRUE — Range €13–€18.', 'TRUE — Peak monthly volume = 72,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 210.'], '5/5', 100, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €20.2 million.', 'The closing share price rose by more than 28.9% from first to last month.', 'Highest closing price is more than 39.8% above the lowest.', 'Market capitalisation rose by more than 14.1% over the period.', 'Total shares traded over six months exceed 9.1% of shares outstanding.'], ARRAY[true, false, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €22.1 million.', 'FALSE — Price change ≈ 25.0%.', 'FALSE — Range €20–€25.', 'TRUE — €17.6m → €22.1m.', 'TRUE — Turnover ≈ 37.9% of shares outstanding.'], '5/5', 98, 'full' ),
+( '6.5', 'CASE 6.5.099', 'Share Price and Market Capitalisation 99', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=20
+February | Price=21
+March | Price=20
+April | Price=21
+May | Price=21
+June | Price=25
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=87000
+February | Volume=84000
+March | Volume=68000
+April | Volume=57000
+May | Volume=30000
+June | Volume=60000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 87,000 |
+| February | 21 | 84,000 |
+| March | 20 | 68,000 |
+| April | 21 | 57,000 |
+| May | 21 | 30,000 |
+| June | 25 | 60,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 315 |
+| Shares outstanding | 490,000 |
+| Total shares traded (six months) | 386,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €9.8 million.', 'Earnings per share exceeds €0.57.', 'Total shares traded over six months exceed 19.4% of shares outstanding.', 'Shares outstanding equal 490,000.', 'Earnings per share is exactly €0.64.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €12.3 million.', 'TRUE — Earnings per share ≈ €0.64.', 'TRUE — Turnover ≈ 78.8% of shares outstanding.', 'TRUE — Shares outstanding = 490,000.', 'TRUE — Earnings per share ≈ €0.64.'], '3/5', 99, 'full' ),
+( '6.5', 'CASE 6.5.100', 'Listed Company Performance Charts 100', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=19
+February | Price=18
+March | Price=16
+April | Price=15
+May | Price=13
+June | Price=12
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=74000
+February | Volume=74000
+March | Volume=91000
+April | Volume=42000
+May | Volume=60000
+June | Volume=40000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 74,000 |
+| February | 18 | 74,000 |
+| March | 16 | 91,000 |
+| April | 15 | 42,000 |
+| May | 13 | 60,000 |
+| June | 12 | 40,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 318 |
+| Shares outstanding | 425,000 |
+| Total shares traded (six months) | 381,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €3.8 million.', 'Earnings per share exceeds €0.66.', 'Highest closing price is more than 34.3% above the lowest.', 'Total shares traded over six months exceed 36.2% of shares outstanding.', 'Peak monthly share turnover exceeds 81,302 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.1 million.', 'TRUE — Earnings per share ≈ €0.75.', 'TRUE — Range €12–€19.', 'TRUE — Turnover ≈ 89.6% of shares outstanding.', 'TRUE — Peak monthly volume = 91,000.'], '5/5', 100, 'full' ),
 ( '6.5', 'CASE 6.5.101', 'Asset Turnover and Revenue Generation Across Sectors', 'Consider a publishing house analysing whether short-term borrowing improved cash but weakened working capital. Evaluate the following economic assertions:', ARRAY['The current ratio for a pharmaceutical distributor sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Working capital for a utility company is calculated by subtracting current assets from current liabilities.', 'Return on equity for a pharmaceutical distributor relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a pharmaceutical distributor carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a pharmaceutical distributor relates revenue earned during the period to the average total assets employed to generate that revenue.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Current ratio analysis for a pharmaceutical distributor compares current assets with current liabilities.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'TRUE — Return on equity for a pharmaceutical distributor links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a pharmaceutical distributor is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a pharmaceutical distributor generates per unit of average assets.'], '5/5', 101, 'full' ),
 ( '6.5', 'CASE 6.5.102', 'Share Price and Market Capitalisation 102', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=29
-March | Price=30
-April | Price=30
-May | Price=26
-June | Price=27
+January | Price=38
+February | Price=37
+March | Price=38
+April | Price=36
+May | Price=37
+June | Price=45
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=18000
-February | Volume=55000
+January | Volume=86000
+February | Volume=73000
 March | Volume=36000
-April | Volume=14000
-May | Volume=62000
-June | Volume=74000
+April | Volume=23000
+May | Volume=77000
+June | Volume=28000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 694,000 | 18,000 |
-| February | 29 | 694,000 | 55,000 |
-| March | 30 | 694,000 | 36,000 |
-| April | 30 | 694,000 | 14,000 |
-| May | 26 | 694,000 | 62,000 |
-| June | 27 | 694,000 | 74,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 38 | 86,000 |
+| February | 37 | 73,000 |
+| March | 38 | 36,000 |
+| April | 36 | 23,000 |
+| May | 37 | 77,000 |
+| June | 45 | 28,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 316 |
-| Shares outstanding | 694,000 |
-| Total shares traded (six months) | 259,000 |
+| Operating result (€ thousands) | 318 |
+| Shares outstanding | 758,000 |
+| Total shares traded (six months) | 323,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €15.4 million (see the extract prepared for case 6.5.102).', 'Earnings per share exceeds €0.37 (see the extract prepared for case 6.5.102).', 'Total shares traded over six months exceed 10.8% of shares outstanding (see the extract prepared for case 6.5.102).', 'Peak monthly share turnover exceeds 72,896 shares (see the extract prepared for case 6.5.102).', 'Shares outstanding stay at 694,000 every month (see the extract prepared for case 6.5.102).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €18.7 million.', 'TRUE — Earnings per share ≈ €0.46.', 'TRUE — Turnover ≈ 37.3% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.'], '5/5', 102, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €27.7 million.', 'Market capitalisation rose by more than 10.4% over the period.', 'Total shares traded over six months exceed 34% of shares outstanding.', 'Peak monthly share turnover exceeds 61,167 shares.', 'Shares outstanding equal 758,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €34.1 million.', 'TRUE — €28.8m → €34.1m.', 'TRUE — Turnover ≈ 42.6% of shares outstanding.', 'TRUE — Peak monthly volume = 86,000.', 'TRUE — Shares outstanding = 758,000.'], '5/5', 102, 'full' ),
 ( '6.5', 'CASE 6.5.103', 'Listed Company Performance Charts 103', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=34
-February | Price=34
-March | Price=31
-April | Price=30
-May | Price=31
-June | Price=33
+January | Price=21
+February | Price=21
+March | Price=21
+April | Price=21
+May | Price=20
+June | Price=25
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=26000
-February | Volume=28000
-March | Volume=67000
-April | Volume=51000
-May | Volume=16000
-June | Volume=57000
+January | Volume=27000
+February | Volume=39000
+March | Volume=24000
+April | Volume=55000
+May | Volume=24000
+June | Volume=38000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 34 | 518,000 | 26,000 |
-| February | 34 | 518,000 | 28,000 |
-| March | 31 | 518,000 | 67,000 |
-| April | 30 | 518,000 | 51,000 |
-| May | 31 | 518,000 | 16,000 |
-| June | 33 | 518,000 | 57,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 27,000 |
+| February | 21 | 39,000 |
+| March | 21 | 24,000 |
+| April | 21 | 55,000 |
+| May | 20 | 24,000 |
+| June | 25 | 38,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 243 |
-| Shares outstanding | 518,000 |
-| Total shares traded (six months) | 245,000 |
+| Operating result (€ thousands) | 243 |
+| Shares outstanding | 572,000 |
+| Total shares traded (six months) | 207,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 20.1% over the period.', 'Market capitalisation at the last month exceeds €13.1 million.', 'Highest closing price is more than 21.1% above the lowest.', 'Earnings per share exceeds €0.42.', 'Total shares traded over six months exceed 34.9% of shares outstanding.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — €17.6m → €17.1m.', 'TRUE — Market capitalisation ≈ €17.1 million.', 'FALSE — Range €30–€34.', 'TRUE — Earnings per share ≈ €0.47.', 'TRUE — Turnover ≈ 47.3% of shares outstanding.'], '5/5', 103, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 22.5% from first to last month.', 'Highest closing price is more than 15.7% above the lowest.', 'Market capitalisation rose by more than 26.1% over the period.', 'Total shares traded over six months exceed 21.4% of shares outstanding.', 'Peak monthly share turnover exceeds 49,902 shares.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ 19.0%.', 'TRUE — Range €20–€25.', 'FALSE — €12.0m → €14.3m.', 'TRUE — Turnover ≈ 36.2% of shares outstanding.', 'TRUE — Peak monthly volume = 55,000.'], '5/5', 103, 'full' ),
 ( '6.5', 'CASE 6.5.104', 'Earnings Per Share From Reported Figures 104', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=15
-March | Price=17
-April | Price=16
-May | Price=18
-June | Price=17
+January | Price=40
+February | Price=41
+March | Price=42
+April | Price=47
+May | Price=48
+June | Price=53
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=68000
-February | Volume=23000
-March | Volume=47000
-April | Volume=18000
-May | Volume=24000
-June | Volume=59000
+January | Volume=92000
+February | Volume=44000
+March | Volume=77000
+April | Volume=36000
+May | Volume=78000
+June | Volume=73000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 635,000 | 68,000 |
-| February | 15 | 635,000 | 23,000 |
-| March | 17 | 635,000 | 47,000 |
-| April | 16 | 635,000 | 18,000 |
-| May | 18 | 635,000 | 24,000 |
-| June | 17 | 635,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 40 | 92,000 |
+| February | 41 | 44,000 |
+| March | 42 | 77,000 |
+| April | 47 | 36,000 |
+| May | 48 | 78,000 |
+| June | 53 | 73,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 317 |
-| Shares outstanding | 635,000 |
-| Total shares traded (six months) | 239,000 |
+| Operating result (€ thousands) | 232 |
+| Shares outstanding | 859,000 |
+| Total shares traded (six months) | 400,000 |
 
-Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 41.1% above the lowest (see the extract prepared for case 6.5.104).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.104).', 'The closing share price rose by more than 23.7% from first to last month (see the extract prepared for case 6.5.104).', 'Market capitalisation at the last month exceeds €8.6 million (see the extract prepared for case 6.5.104).', 'Market capitalisation rose by more than 10.8% over the period (see the extract prepared for case 6.5.104).'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Range €13–€18.', 'FALSE — Peak price month vs peak volume month.', 'TRUE — Price change ≈ 30.8%.', 'TRUE — Market capitalisation ≈ €10.8 million.', 'TRUE — €8.3m → €10.8m.'], '4/5', 104, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 34.1% from first to last month.', 'Highest closing price is more than 45% above the lowest.', 'Market capitalisation at the last month exceeds €38.5 million.', 'Total shares traded over six months exceed 38.7% of shares outstanding.', 'Shares outstanding equal 859,000.'], ARRAY[false, false, true, true, true], ARRAY['FALSE — Price change ≈ 32.5%.', 'FALSE — Range €40–€53.', 'TRUE — Market capitalisation ≈ €45.5 million.', 'TRUE — Turnover ≈ 46.6% of shares outstanding.', 'TRUE — Shares outstanding = 859,000.'], '4/5', 104, 'full' ),
 ( '6.5', 'CASE 6.5.105', 'Share Price and Market Capitalisation 105', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=26
+January | Price=31
+February | Price=35
+March | Price=36
+April | Price=36
+May | Price=37
+June | Price=39
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=91000
+February | Volume=84000
+March | Volume=50000
+April | Volume=68000
+May | Volume=29000
+June | Volume=50000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 91,000 |
+| February | 35 | 84,000 |
+| March | 36 | 50,000 |
+| April | 36 | 68,000 |
+| May | 37 | 29,000 |
+| June | 39 | 50,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 299 |
+| Shares outstanding | 444,000 |
+| Total shares traded (six months) | 372,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 29.3% over the period.', 'Earnings per share exceeds €0.63.', 'Highest closing price is more than 43.1% above the lowest.', 'Operating result is below €237 thousand.', 'Total shares traded over six months exceed 36% of shares outstanding.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — €13.8m → €17.3m.', 'TRUE — Earnings per share ≈ €0.67.', 'FALSE — Range €31–€39.', 'FALSE — Operating result = 299.', 'TRUE — Turnover ≈ 83.8% of shares outstanding.'], '5/5', 105, 'full' ),
+( '6.5', 'CASE 6.5.106', 'Asset Turnover and Revenue Generation in Context', 'Assess how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:', ARRAY['A utility company reporting negative working capital always holds more cash than it needs for its daily operations.', 'The equity ratio for a pharmaceutical distributor expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'The acid-test ratio for a utility company includes inventory within current assets before comparing the total with current liabilities.', 'If a pharmaceutical distributor draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'A single return on capital employed figure for a utility company is always fully meaningful on its own, without any need to compare it against other years or similar businesses.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'TRUE — Equity ratio analysis for a pharmaceutical distributor expresses equity as a share of total assets.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a pharmaceutical distributor.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.'], '3/5', 106, 'full' ),
+( '6.5', 'CASE 6.5.107', 'Earnings Per Share From Reported Figures 107', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=20
+February | Price=21
+March | Price=21
+April | Price=22
+May | Price=24
+June | Price=25
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=78000
+February | Volume=36000
+March | Volume=57000
+April | Volume=39000
+May | Volume=77000
+June | Volume=51000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 20 | 78,000 |
+| February | 21 | 36,000 |
+| March | 21 | 57,000 |
+| April | 22 | 39,000 |
+| May | 24 | 77,000 |
+| June | 25 | 51,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 186 |
+| Shares outstanding | 446,000 |
+| Total shares traded (six months) | 338,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €8.5 million.', 'Market capitalisation rose by more than 23.9% over the period.', 'Total shares traded over six months exceed 33.7% of shares outstanding.', 'Peak monthly share turnover exceeds 70,887 shares.', 'Shares outstanding equal 446,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €11.2 million.', 'TRUE — €8.9m → €11.2m.', 'TRUE — Turnover ≈ 75.8% of shares outstanding.', 'TRUE — Peak monthly volume = 78,000.', 'TRUE — Shares outstanding = 446,000.'], '3/5', 107, 'full' ),
+( '6.5', 'CASE 6.5.108', 'Inventory Turnover and Stock Rotation in Practice', 'Assess how return on capital employed relates profit before interest and tax to the long-term capital financing a business. Evaluate the following economic assertions:', ARRAY['Return on equity for a utility company is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'Working capital for a transport operator is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'Inventory turnover for a utility company is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.', 'The current ratio and the acid-test ratio for a utility company always produce identical results, regardless of how much inventory the business holds.', 'Working capital for a wholesaler is calculated by subtracting current assets from current liabilities.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — The standard working capital definition applies to a transport operator: current assets minus current liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.'], '3/5', 108, 'full' ),
+( '6.5', 'CASE 6.5.109', 'Listed Company Performance Charts 109', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=29
+February | Price=28
 March | Price=26
 April | Price=24
 May | Price=23
@@ -10801,659 +11215,253 @@ June | Price=22
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=72000
-February | Volume=66000
-March | Volume=38000
-April | Volume=53000
-May | Volume=21000
-June | Volume=38000
+January | Volume=74000
+February | Volume=47000
+March | Volume=33000
+April | Volume=56000
+May | Volume=92000
+June | Volume=80000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 444,000 | 72,000 |
-| February | 26 | 444,000 | 66,000 |
-| March | 26 | 444,000 | 38,000 |
-| April | 24 | 444,000 | 53,000 |
-| May | 23 | 444,000 | 21,000 |
-| June | 22 | 444,000 | 38,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 29 | 74,000 |
+| February | 28 | 47,000 |
+| March | 26 | 33,000 |
+| April | 24 | 56,000 |
+| May | 23 | 92,000 |
+| June | 22 | 80,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 299 |
-| Shares outstanding | 444,000 |
-| Total shares traded (six months) | 288,000 |
+| Operating result (€ thousands) | 291 |
+| Shares outstanding | 817,000 |
+| Total shares traded (six months) | 382,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 19.5% from first to last month.', 'Earnings per share exceeds €0.63.', 'Market capitalisation rose by more than 29.3% over the period.', 'Highest closing price is more than 43.1% above the lowest.', 'Total shares traded over six months exceed 36% of shares outstanding.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Price change ≈ -4.3%.', 'TRUE — Earnings per share ≈ €0.67.', 'FALSE — €10.2m → €9.8m.', 'FALSE — Range €22–€26.', 'TRUE — Turnover ≈ 64.9% of shares outstanding.'], '5/5', 105, 'full' ),
-( '6.5', 'CASE 6.5.106', 'Asset Turnover and Revenue Generation in Context', 'Assess how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:', ARRAY['A utility company reporting negative working capital always holds more cash than it needs for its daily operations.', 'The equity ratio for a pharmaceutical distributor expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'The acid-test ratio for a utility company includes inventory within current assets before comparing the total with current liabilities.', 'If a pharmaceutical distributor draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'A single return on capital employed figure for a utility company is always fully meaningful on its own, without any need to compare it against other years or similar businesses.'], ARRAY[false, true, false, true, false], ARRAY['FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'TRUE — Equity ratio analysis for a pharmaceutical distributor expresses equity as a share of total assets.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a pharmaceutical distributor.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.'], '3/5', 106, 'full' ),
-( '6.5', 'CASE 6.5.107', 'Earnings Per Share From Reported Figures 107', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=12
-March | Price=11
-April | Price=11
-May | Price=12
-June | Price=12
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=61000
-February | Volume=26000
-March | Volume=44000
-April | Volume=29000
-May | Volume=60000
-June | Volume=39000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 446,000 | 61,000 |
-| February | 12 | 446,000 | 26,000 |
-| March | 11 | 446,000 | 44,000 |
-| April | 11 | 446,000 | 29,000 |
-| May | 12 | 446,000 | 60,000 |
-| June | 12 | 446,000 | 39,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 186 |
-| Shares outstanding | 446,000 |
-| Total shares traded (six months) | 259,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €4.1 million.', 'Total shares traded over six months exceed 33.7% of shares outstanding.', 'Peak monthly share turnover exceeds 55,438 shares.', 'Shares outstanding stay at 446,000 every month.', 'Operating result is below €269 thousand.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €5.4 million.', 'TRUE — Turnover ≈ 58.1% of shares outstanding.', 'TRUE — Peak monthly volume = 61,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 186.'], '3/5', 107, 'full' ),
-( '6.5', 'CASE 6.5.108', 'Inventory Turnover and Stock Rotation in Practice', 'Assess how return on capital employed relates profit before interest and tax to the long-term capital financing a business. Evaluate the following economic assertions:', ARRAY['Return on equity for a utility company is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'Working capital for a transport operator is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'Inventory turnover for a utility company is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.', 'The current ratio and the acid-test ratio for a utility company always produce identical results, regardless of how much inventory the business holds.', 'Working capital for a wholesaler is calculated by subtracting current assets from current liabilities.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — The standard working capital definition applies to a transport operator: current assets minus current liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.'], '3/5', 108, 'full' ),
-( '6.5', 'CASE 6.5.109', 'Listed Company Performance Charts 109', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=21
-March | Price=22
-April | Price=21
-May | Price=21
-June | Price=20
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=63000
-February | Volume=68000
-March | Volume=28000
-April | Volume=35000
-May | Volume=22000
-June | Volume=67000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 691,000 | 63,000 |
-| February | 21 | 691,000 | 68,000 |
-| March | 22 | 691,000 | 28,000 |
-| April | 21 | 691,000 | 35,000 |
-| May | 21 | 691,000 | 22,000 |
-| June | 20 | 691,000 | 67,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 208 |
-| Shares outstanding | 691,000 |
-| Total shares traded (six months) | 283,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 20.9% from first to last month.', 'Market capitalisation rose by more than 17.4% over the period.', 'Highest closing price is more than 14.6% above the lowest.', 'Peak monthly share turnover exceeds 72,810 shares.', 'Earnings per share exceeds €0.22.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -4.8%.', 'FALSE — €14.5m → €13.8m.', 'FALSE — Range €20–€22.', 'FALSE — Peak monthly volume = 68,000.', 'TRUE — Earnings per share ≈ €0.30.'], '2/5', 109, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 18.4% from first to last month.', 'Market capitalisation rose by more than 27.5% over the period.', 'Highest closing price is more than 37% above the lowest.', 'Peak monthly share turnover exceeds 96,324 shares.', 'Shares outstanding equal 817,000.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -24.1%.', 'FALSE — €23.7m → €18.0m.', 'FALSE — Range €22–€29.', 'FALSE — Peak monthly volume = 92,000.', 'TRUE — Shares outstanding = 817,000.'], '2/5', 109, 'full' ),
 ( '6.5', 'CASE 6.5.110', 'Earnings Per Share From Reported Figures 110', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=25
-March | Price=27
-April | Price=25
-May | Price=22
-June | Price=21
+January | Price=31
+February | Price=30
+March | Price=31
+April | Price=29
+May | Price=26
+June | Price=25
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=18000
-February | Volume=57000
-March | Volume=44000
-April | Volume=25000
-May | Volume=54000
-June | Volume=59000
+January | Volume=26000
+February | Volume=73000
+March | Volume=58000
+April | Volume=34000
+May | Volume=69000
+June | Volume=75000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 708,000 | 18,000 |
-| February | 25 | 708,000 | 57,000 |
-| March | 27 | 708,000 | 44,000 |
-| April | 25 | 708,000 | 25,000 |
-| May | 22 | 708,000 | 54,000 |
-| June | 21 | 708,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 26,000 |
+| February | 30 | 73,000 |
+| March | 31 | 58,000 |
+| April | 29 | 34,000 |
+| May | 26 | 69,000 |
+| June | 25 | 75,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 297 |
+| Operating result (€ thousands) | 297 |
 | Shares outstanding | 708,000 |
-| Total shares traded (six months) | 257,000 |
+| Total shares traded (six months) | 335,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.3% from first to last month.', 'Market capitalisation rose by more than 9.7% over the period.', 'Highest closing price is more than 35.1% above the lowest.', 'Operating result is below €276 thousand.', 'Peak monthly share turnover exceeds 54,888 shares.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -12.5%.', 'FALSE — €17.0m → €14.9m.', 'FALSE — Range €21–€27.', 'FALSE — Operating result = 297.', 'TRUE — Peak monthly volume = 59,000.'], '2/5', 110, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 10.3% from first to last month.', 'Market capitalisation rose by more than 9.7% over the period.', 'Highest closing price is more than 35.1% above the lowest.', 'Operating result is below €276 thousand.', 'Peak monthly share turnover exceeds 69,773 shares.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ -19.4%.', 'FALSE — €21.9m → €17.7m.', 'FALSE — Range €25–€31.', 'FALSE — Operating result = 297.', 'TRUE — Peak monthly volume = 75,000.'], '2/5', 110, 'full' ),
 ( '6.5', 'CASE 6.5.111', 'Inventory Turnover and Stock Rotation Explained', 'Assess why a single return on capital employed figure is best interpreted alongside comparable years or similar businesses rather than in isolation. Evaluate the following economic assertions:', ARRAY['A transport operator is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a transport operator sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a transport operator relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a transport operator carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a transport operator relates revenue earned during the period to the average total assets employed to generate that revenue.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Positive working capital is generally preferable for a transport operator as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a transport operator compares current assets with current liabilities.', 'TRUE — Return on equity for a transport operator links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a transport operator is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a transport operator generates per unit of average assets.'], '5/5', 111, 'full' ),
 ( '6.5', 'CASE 6.5.112', 'Listed Company Performance Charts 112', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=24
-March | Price=22
-April | Price=24
-May | Price=24
+January | Price=34
+February | Price=35
+March | Price=36
+April | Price=39
+May | Price=41
+June | Price=42
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=80000
+February | Volume=32000
+March | Volume=18000
+April | Volume=83000
+May | Volume=61000
+June | Volume=48000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 80,000 |
+| February | 35 | 32,000 |
+| March | 36 | 18,000 |
+| April | 39 | 83,000 |
+| May | 41 | 61,000 |
+| June | 42 | 48,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 251 |
+| Shares outstanding | 674,000 |
+| Total shares traded (six months) | 322,000 |
+
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 13.7% above the lowest.', 'The closing share price rose by more than 32.7% from first to last month.', 'Peak monthly share turnover exceeds 73,138 shares.', 'Market capitalisation rose by more than 28.3% over the period.', 'Earnings per share is exactly €0.45.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Range €34–€42.', 'FALSE — Price change ≈ 23.5%.', 'TRUE — Peak monthly volume = 83,000.', 'FALSE — €22.9m → €28.3m.', 'FALSE — Earnings per share ≈ €0.37.'], '5/5', 112, 'full' ),
+( '6.5', 'CASE 6.5.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=19
+February | Price=20
+March | Price=21
+April | Price=21
+May | Price=21
 June | Price=24
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=63000
-February | Volume=23000
-March | Volume=12000
-April | Volume=65000
-May | Volume=47000
-June | Volume=36000
+January | Volume=30000
+February | Volume=21000
+March | Volume=42000
+April | Volume=71000
+May | Volume=86000
+June | Volume=83000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 674,000 | 63,000 |
-| February | 24 | 674,000 | 23,000 |
-| March | 22 | 674,000 | 12,000 |
-| April | 24 | 674,000 | 65,000 |
-| May | 24 | 674,000 | 47,000 |
-| June | 24 | 674,000 | 36,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 30,000 |
+| February | 20 | 21,000 |
+| March | 21 | 42,000 |
+| April | 21 | 71,000 |
+| May | 21 | 86,000 |
+| June | 24 | 83,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 251 |
-| Shares outstanding | 674,000 |
-| Total shares traded (six months) | 246,000 |
-
-Evaluate the following economic assertions:', ARRAY['Total shares traded over six months exceed 33.9% of shares outstanding.', 'The closing share price rose by more than 32.7% from first to last month.', 'Peak monthly share turnover exceeds 57,276 shares.', 'Market capitalisation rose by more than 28.3% over the period.', 'Highest closing price is more than 13.7% above the lowest.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Turnover ≈ 36.5% of shares outstanding.', 'FALSE — Price change ≈ 0.0%.', 'TRUE — Peak monthly volume = 65,000.', 'FALSE — €16.2m → €16.2m.', 'FALSE — Range €22–€24.'], '5/5', 112, 'full' ),
-( '6.5', 'CASE 6.5.113', 'Earnings Per Share From Reported Figures 113', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=12
-February | Price=13
-March | Price=13
-April | Price=12
-May | Price=11
-June | Price=11
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=22000
-February | Volume=14000
-March | Volume=32000
-April | Volume=55000
-May | Volume=67000
-June | Volume=65000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 12 | 546,000 | 22,000 |
-| February | 13 | 546,000 | 14,000 |
-| March | 13 | 546,000 | 32,000 |
-| April | 12 | 546,000 | 55,000 |
-| May | 11 | 546,000 | 67,000 |
-| June | 11 | 546,000 | 65,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 285 |
+| Operating result (€ thousands) | 285 |
 | Shares outstanding | 546,000 |
-| Total shares traded (six months) | 255,000 |
+| Total shares traded (six months) | 333,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 28.2% from first to last month.', 'Market capitalisation at the last month exceeds €5.5 million.', 'Peak monthly share turnover exceeds 66,467 shares.', 'Shares outstanding stay at 546,000 every month.', 'Operating result is below €291 thousand.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -8.3%.', 'TRUE — Market capitalisation ≈ €6.0 million.', 'TRUE — Peak monthly volume = 67,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 285.'], '2/5', 113, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 41.4% above the lowest.', 'Earnings per share exceeds €0.48.', 'Total shares traded over six months exceed 30% of shares outstanding.', 'Peak monthly share turnover exceeds 85,316 shares.', 'Shares outstanding equal 546,000.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Range €19–€24.', 'TRUE — Earnings per share ≈ €0.52.', 'TRUE — Turnover ≈ 61.0% of shares outstanding.', 'TRUE — Peak monthly volume = 86,000.', 'TRUE — Shares outstanding = 546,000.'], '2/5', 113, 'full' ),
 ( '6.5', 'CASE 6.5.114', 'Share Price and Market Capitalisation 114', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=25
-March | Price=28
-April | Price=24
-May | Price=22
-June | Price=22
+January | Price=29
+February | Price=28
+March | Price=27
+April | Price=23
+May | Price=20
+June | Price=17
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=30000
-February | Volume=61000
-March | Volume=19000
-April | Volume=25000
-May | Volume=21000
-June | Volume=57000
+January | Volume=40000
+February | Volume=78000
+March | Volume=27000
+April | Volume=34000
+May | Volume=30000
+June | Volume=73000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 622,000 | 30,000 |
-| February | 25 | 622,000 | 61,000 |
-| March | 28 | 622,000 | 19,000 |
-| April | 24 | 622,000 | 25,000 |
-| May | 22 | 622,000 | 21,000 |
-| June | 22 | 622,000 | 57,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 29 | 40,000 |
+| February | 28 | 78,000 |
+| March | 27 | 27,000 |
+| April | 23 | 34,000 |
+| May | 20 | 30,000 |
+| June | 17 | 73,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 294 |
+| Operating result (€ thousands) | 294 |
 | Shares outstanding | 622,000 |
-| Total shares traded (six months) | 213,000 |
+| Total shares traded (six months) | 282,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €13 million.', 'Highest closing price is more than 13% above the lowest.', 'Total shares traded over six months exceed 15.4% of shares outstanding.', 'Peak monthly share turnover exceeds 51,091 shares.', 'Shares outstanding stay at 622,000 every month.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €13.7 million.', 'TRUE — Range €22–€28.', 'TRUE — Turnover ≈ 34.2% of shares outstanding.', 'TRUE — Peak monthly volume = 61,000.', 'TRUE — Shares outstanding unchanged.'], '3/5', 114, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10 million.', 'Earnings per share exceeds €0.43.', 'Highest closing price is more than 13% above the lowest.', 'Total shares traded over six months exceed 15.4% of shares outstanding.', 'Peak monthly share turnover exceeds 65,329 shares.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.6 million.', 'TRUE — Earnings per share ≈ €0.47.', 'TRUE — Range €17–€29.', 'TRUE — Turnover ≈ 45.3% of shares outstanding.', 'TRUE — Peak monthly volume = 78,000.'], '3/5', 114, 'full' ),
 ( '6.5', 'CASE 6.5.115', 'Inventory Turnover and Stock Rotation for Analysts', 'Consider a listed manufacturer whose shareholders compare its return on equity with sector peers. Evaluate the following economic assertions:', ARRAY['The equity ratio for a transport operator expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'A wholesaler reporting negative working capital always holds more cash than it needs for its daily operations.', 'If a transport operator draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'The acid-test ratio for a wholesaler includes inventory within current assets before comparing the total with current liabilities.', 'Working capital for a software subscription business is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Equity ratio analysis for a transport operator expresses equity as a share of total assets.', 'FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a transport operator.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'TRUE — The standard working capital definition applies to a software subscription business: current assets minus current liabilities.'], '5/5', 115, 'full' ),
 ( '6.5', 'CASE 6.5.116', 'Inventory Turnover and Stock Rotation Across Sectors', 'Assess how inventory turnover links cost of sales to average inventory, and what a rising figure typically indicates. Evaluate the following economic assertions:', ARRAY['A software subscription business is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'A single return on capital employed figure for a wholesaler is always fully meaningful on its own, without any need to compare it against other years or similar businesses.', 'Return on equity for a wholesaler is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'The current ratio for a software subscription business sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Inventory turnover for a wholesaler is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.'], ARRAY[true, false, false, true, false], ARRAY['TRUE — Positive working capital is generally preferable for a software subscription business as a cushion over short-term obligations.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — Current ratio analysis for a software subscription business compares current assets with current liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.'], '5/5', 116, 'full' ),
 ( '6.5', 'CASE 6.5.117', 'Share Price and Market Capitalisation 117', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=13
-February | Price=12
-March | Price=11
-April | Price=10
-May | Price=11
-June | Price=9
+January | Price=19
+February | Price=18
+March | Price=17
+April | Price=17
+May | Price=17
+June | Price=20
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=32000
-February | Volume=57000
-March | Volume=30000
-April | Volume=71000
-May | Volume=68000
-June | Volume=75000
+January | Volume=43000
+February | Volume=73000
+March | Volume=40000
+April | Volume=90000
+May | Volume=87000
+June | Volume=95000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 13 | 433,000 | 32,000 |
-| February | 12 | 433,000 | 57,000 |
-| March | 11 | 433,000 | 30,000 |
-| April | 10 | 433,000 | 71,000 |
-| May | 11 | 433,000 | 68,000 |
-| June | 9 | 433,000 | 75,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 43,000 |
+| February | 18 | 73,000 |
+| March | 17 | 40,000 |
+| April | 17 | 90,000 |
+| May | 17 | 87,000 |
+| June | 20 | 95,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 271 |
+| Operating result (€ thousands) | 271 |
 | Shares outstanding | 433,000 |
-| Total shares traded (six months) | 333,000 |
+| Total shares traded (six months) | 428,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €3.2 million.', 'The closing share price rose by more than 22.8% from first to last month.', 'Market capitalisation rose by more than 20.8% over the period.', 'Operating result is below €257 thousand.', 'Earnings per share exceeds €0.52.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €3.9 million.', 'FALSE — Price change ≈ -30.8%.', 'FALSE — €5.6m → €3.9m.', 'FALSE — Operating result = 271.', 'TRUE — Earnings per share ≈ €0.63.'], '4/5', 117, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7.2 million.', 'The closing share price rose by more than 22.8% from first to last month.', 'Market capitalisation rose by more than 20.8% over the period.', 'Highest closing price is more than 23.9% above the lowest.', 'Total shares traded over six months exceed 37.1% of shares outstanding.'], ARRAY[true, false, false, false, true], ARRAY['TRUE — Market capitalisation ≈ €8.7 million.', 'FALSE — Price change ≈ 5.3%.', 'FALSE — €8.2m → €8.7m.', 'FALSE — Range €17–€20.', 'TRUE — Turnover ≈ 98.8% of shares outstanding.'], '4/5', 117, 'full' ),
 ( '6.5', 'CASE 6.5.118', 'Listed Company Performance Charts 118', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=25
-February | Price=25
-March | Price=26
-April | Price=26
-May | Price=28
-June | Price=26
+January | Price=37
+February | Price=35
+March | Price=33
+April | Price=34
+May | Price=35
+June | Price=41
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=39000
-February | Volume=62000
-March | Volume=61000
-April | Volume=44000
-May | Volume=21000
-June | Volume=23000
+January | Volume=40000
+February | Volume=89000
+March | Volume=68000
+April | Volume=35000
+May | Volume=30000
+June | Volume=91000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 25 | 846,000 | 39,000 |
-| February | 25 | 846,000 | 62,000 |
-| March | 26 | 846,000 | 61,000 |
-| April | 26 | 846,000 | 44,000 |
-| May | 28 | 846,000 | 21,000 |
-| June | 26 | 846,000 | 23,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 40,000 |
+| February | 35 | 89,000 |
+| March | 33 | 68,000 |
+| April | 34 | 35,000 |
+| May | 35 | 30,000 |
+| June | 41 | 91,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 216 |
-| Shares outstanding | 846,000 |
-| Total shares traded (six months) | 250,000 |
+| Operating result (€ thousands) | 256 |
+| Shares outstanding | 480,000 |
+| Total shares traded (six months) | 353,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 23.5% from first to last month.', 'Highest closing price is more than 18.4% above the lowest.', 'Market capitalisation at the last month exceeds €20.3 million.', 'Total shares traded over six months exceed 17.5% of shares outstanding.', 'Earnings per share is exactly €0.16.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Price change ≈ 4.0%.', 'FALSE — Range €25–€28.', 'TRUE — Market capitalisation ≈ €22.0 million.', 'TRUE — Turnover ≈ 29.6% of shares outstanding.', 'FALSE — Earnings per share ≈ €0.26.'], '2/5', 118, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 18.7% from first to last month.', 'Market capitalisation rose by more than 30.5% over the period.', 'Market capitalisation at the last month exceeds €14.8 million.', 'Total shares traded over six months exceed 8.4% of shares outstanding.', 'Highest closing price is more than 37.8% above the lowest.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Price change ≈ 10.8%.', 'FALSE — €17.8m → €19.7m.', 'TRUE — Market capitalisation ≈ €19.7 million.', 'TRUE — Turnover ≈ 73.5% of shares outstanding.', 'FALSE — Range €33–€41.'], '2/5', 118, 'full' ),
 ( '6.5', 'CASE 6.5.119', 'Earnings Per Share From Reported Figures 119', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=22
-March | Price=23
-April | Price=24
-May | Price=26
-June | Price=25
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=57000
-February | Volume=24000
-March | Volume=69000
-April | Volume=32000
-May | Volume=36000
-June | Volume=35000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 443,000 | 57,000 |
-| February | 22 | 443,000 | 24,000 |
-| March | 23 | 443,000 | 69,000 |
-| April | 24 | 443,000 | 32,000 |
-| May | 26 | 443,000 | 36,000 |
-| June | 25 | 443,000 | 35,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 242 |
-| Shares outstanding | 443,000 |
-| Total shares traded (six months) | 253,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 27.3% from first to last month (see the extract prepared for case 6.5.119).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.119).', 'The last closing price is below the first (see the extract prepared for case 6.5.119).', 'Earnings per share is exactly €0.59 (see the extract prepared for case 6.5.119).', 'Market capitalisation at the last month exceeds €9 million (see the extract prepared for case 6.5.119).'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 25.0%.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — 20 → 25.', 'FALSE — Earnings per share ≈ €0.55.', 'TRUE — Market capitalisation ≈ €11.1 million.'], '3/5', 119, 'full' ),
-( '6.5', 'CASE 6.5.120', 'Inventory Turnover and Stock Rotation in Context', 'Assess how the equity ratio and the debt ratio together describe the way a business finances its total assets. Evaluate the following economic assertions:', ARRAY['Return on equity for a software subscription business relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'The current ratio and the acid-test ratio for a wholesaler always produce identical results, regardless of how much inventory the business holds.', 'A return on capital employed figure for a software subscription business carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a software subscription business relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a software subscription business expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Return on equity for a software subscription business links profit before interest and tax to owners'' equity.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'TRUE — Return on capital employed for a software subscription business is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a software subscription business generates per unit of average assets.', 'TRUE — Equity ratio analysis for a software subscription business expresses equity as a share of total assets.'], '4/5', 120, 'full' ),
-( '6.5', 'CASE 6.5.121', 'Listed Company Performance Charts 121', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=21
-March | Price=21
-April | Price=23
-May | Price=23
-June | Price=24
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=53000
-February | Volume=24000
-March | Volume=23000
-April | Volume=23000
-May | Volume=71000
-June | Volume=27000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 480,000 | 53,000 |
-| February | 21 | 480,000 | 24,000 |
-| March | 21 | 480,000 | 23,000 |
-| April | 23 | 480,000 | 23,000 |
-| May | 23 | 480,000 | 71,000 |
-| June | 24 | 480,000 | 27,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 304 |
-| Shares outstanding | 480,000 |
-| Total shares traded (six months) | 221,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.3 million.', 'The closing share price rose by more than 27.3% from first to last month.', 'Total shares traded over six months exceed 38.9% of shares outstanding.', 'Market capitalisation rose by more than 24.6% over the period.', 'Peak monthly share turnover exceeds 64,634 shares.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €11.5 million.', 'FALSE — Price change ≈ 0.0%.', 'TRUE — Turnover ≈ 46.0% of shares outstanding.', 'FALSE — €11.5m → €11.5m.', 'TRUE — Peak monthly volume = 71,000.'], '5/5', 121, 'full' ),
-( '6.5', 'CASE 6.5.122', 'The Equity Ratio in Financial Structure in Practice', 'Assess why comparing ratios with industry peers or with a business''s own history over time improves interpretation. Evaluate the following economic assertions:', ARRAY['The debt ratio for a software subscription business expresses the proportion of total assets financed through liabilities rather than through owners'' equity.', 'Working capital for an online retailer is calculated by subtracting current assets from current liabilities.', 'If a software subscription business draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a medical-device maker is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A medical-device maker is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Debt ratio analysis for a software subscription business expresses total liabilities relative to total assets.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a software subscription business.', 'TRUE — The standard working capital definition applies to a medical-device maker: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a medical-device maker as a cushion over short-term obligations.'], '5/5', 122, 'full' ),
-( '6.5', 'CASE 6.5.123', 'The Equity Ratio in Financial Structure Explained', 'Consider a wholesaler that drew down a short-term facility to pay suppliers and is reviewing the effect on working capital. Evaluate the following economic assertions:', ARRAY['The current ratio for a medical-device maker sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a medical-device maker relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a medical-device maker carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a medical-device maker relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a medical-device maker expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio analysis for a medical-device maker compares current assets with current liabilities.', 'TRUE — Return on equity for a medical-device maker links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a medical-device maker is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a medical-device maker generates per unit of average assets.', 'TRUE — Equity ratio analysis for a medical-device maker expresses equity as a share of total assets.'], '5/5', 123, 'full' ),
-( '6.5', 'CASE 6.5.124', 'Listed Company Performance Charts 124', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=29
-March | Price=26
-April | Price=28
-May | Price=26
-June | Price=26
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=24000
-February | Volume=62000
-March | Volume=71000
-April | Volume=40000
-May | Volume=34000
-June | Volume=41000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 403,000 | 24,000 |
-| February | 29 | 403,000 | 62,000 |
-| March | 26 | 403,000 | 71,000 |
-| April | 28 | 403,000 | 40,000 |
-| May | 26 | 403,000 | 34,000 |
-| June | 26 | 403,000 | 41,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 202 |
-| Shares outstanding | 403,000 |
-| Total shares traded (six months) | 272,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €8.4 million (see the extract prepared for case 6.5.124).', 'Earnings per share exceeds €0.47 (see the extract prepared for case 6.5.124).', 'Total shares traded over six months exceed 23.2% of shares outstanding (see the extract prepared for case 6.5.124).', 'Peak monthly share turnover exceeds 48,614 shares (see the extract prepared for case 6.5.124).', 'Shares outstanding stay at 403,000 every month (see the extract prepared for case 6.5.124).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.5 million.', 'TRUE — Earnings per share ≈ €0.50.', 'TRUE — Turnover ≈ 67.5% of shares outstanding.', 'TRUE — Peak monthly volume = 71,000.', 'TRUE — Shares outstanding unchanged.'], '2/5', 124, 'full' ),
-( '6.5', 'CASE 6.5.125', 'The Equity Ratio in Financial Structure for Analysts', 'Assess why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:', ARRAY['A online retailer reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for an online retailer includes inventory within current assets before comparing the total with current liabilities.', 'The debt ratio for a medical-device maker expresses the proportion of total assets financed through liabilities rather than through owners'' equity.', 'If a medical-device maker draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'A single return on capital employed figure for an online retailer is always fully meaningful on its own, without any need to compare it against other years or similar businesses.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'TRUE — Debt ratio analysis for a medical-device maker expresses total liabilities relative to total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a medical-device maker.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.'], '5/5', 125, 'full' ),
-( '6.5', 'CASE 6.5.126', 'The Equity Ratio in Financial Structure Across Sectors', 'Consider how working capital is defined and why a positive balance is generally preferred to a negative one. Evaluate the following economic assertions:', ARRAY['Working capital for a cinema chain is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A cinema chain is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a cinema chain sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a cinema chain relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a cinema chain carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — The standard working capital definition applies to a cinema chain: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a cinema chain as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a cinema chain compares current assets with current liabilities.', 'TRUE — Return on equity for a cinema chain links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a cinema chain is most useful in comparison rather than in isolation.'], '5/5', 126, 'full' ),
-( '6.5', 'CASE 6.5.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=28
-February | Price=28
-March | Price=30
-April | Price=28
-May | Price=28
-June | Price=30
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=37000
-February | Volume=62000
-March | Volume=14000
-April | Volume=62000
-May | Volume=21000
-June | Volume=74000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 28 | 666,000 | 37,000 |
-| February | 28 | 666,000 | 62,000 |
-| March | 30 | 666,000 | 14,000 |
-| April | 28 | 666,000 | 62,000 |
-| May | 28 | 666,000 | 21,000 |
-| June | 30 | 666,000 | 74,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 221 |
-| Shares outstanding | 666,000 |
-| Total shares traded (six months) | 270,000 |
-
-Evaluate the following economic assertions:', ARRAY['Total shares traded over six months exceed 14.4% of shares outstanding.', 'The closing share price rose by more than 33.7% from first to last month.', 'Peak monthly share turnover exceeds 56,392 shares.', 'Shares outstanding stay at 666,000 every month.', 'Market capitalisation rose by more than 31.8% over the period.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Turnover ≈ 40.5% of shares outstanding.', 'FALSE — Price change ≈ 7.1%.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.', 'FALSE — €18.6m → €20.0m.'], '5/5', 127, 'full' ),
-( '6.5', 'CASE 6.5.128', 'Earnings Per Share From Reported Figures 128', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=31
-February | Price=32
-March | Price=30
-April | Price=31
-May | Price=29
-June | Price=27
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=70000
-March | Volume=49000
-April | Volume=31000
-May | Volume=55000
-June | Volume=60000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 31 | 483,000 | 44,000 |
-| February | 32 | 483,000 | 70,000 |
-| March | 30 | 483,000 | 49,000 |
-| April | 31 | 483,000 | 31,000 |
-| May | 29 | 483,000 | 55,000 |
-| June | 27 | 483,000 | 60,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 247 |
-| Shares outstanding | 483,000 |
-| Total shares traded (six months) | 309,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 20% from first to last month.', 'Earnings per share exceeds €0.46.', 'Market capitalisation rose by more than 15.8% over the period.', 'Operating result is below €242 thousand.', 'Highest closing price is more than 12.1% above the lowest.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Price change ≈ -12.9%.', 'TRUE — Earnings per share ≈ €0.51.', 'FALSE — €15.0m → €13.0m.', 'FALSE — Operating result = 247.', 'TRUE — Range €27–€32.'], '5/5', 128, 'full' ),
-( '6.5', 'CASE 6.5.129', 'Share Price and Market Capitalisation 129', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=36
-February | Price=39
-March | Price=36
-April | Price=38
-May | Price=38
-June | Price=36
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=12000
-February | Volume=18000
-March | Volume=58000
-April | Volume=33000
-May | Volume=18000
-June | Volume=42000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 36 | 679,000 | 12,000 |
-| February | 39 | 679,000 | 18,000 |
-| March | 36 | 679,000 | 58,000 |
-| April | 38 | 679,000 | 33,000 |
-| May | 38 | 679,000 | 18,000 |
-| June | 36 | 679,000 | 42,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 283 |
-| Shares outstanding | 679,000 |
-| Total shares traded (six months) | 181,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €20.3 million (see the extract prepared for case 6.5.129).', 'Earnings per share exceeds €0.37 (see the extract prepared for case 6.5.129).', 'Shares outstanding stay at 679,000 every month (see the extract prepared for case 6.5.129).', 'Operating result is below €298 thousand (see the extract prepared for case 6.5.129).', 'With unchanged shares outstanding, rising market capitalisation means the share price rose (see the extract prepared for case 6.5.129).'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €24.4 million.', 'TRUE — Earnings per share ≈ €0.42.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Operating result = 283.', 'TRUE — Market capitalisation = price × shares.'], '5/5', 129, 'full' ),
-( '6.5', 'CASE 6.5.130', 'The Equity Ratio in Financial Structure in Context', 'Consider how the current ratio and the acid-test ratio each measure short-term liquidity, and why they can diverge for inventory-heavy businesses. Evaluate the following economic assertions:', ARRAY['Asset turnover for a cinema chain relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a cinema chain expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'Return on equity for an online retailer is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'If a cinema chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a brewery group is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Asset turnover measures how much revenue a cinema chain generates per unit of average assets.', 'TRUE — Equity ratio analysis for a cinema chain expresses equity as a share of total assets.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a cinema chain.', 'TRUE — The standard working capital definition applies to a brewery group: current assets minus current liabilities.'], '5/5', 130, 'full' ),
-( '6.5', 'CASE 6.5.131', 'Earnings Per Share From Reported Figures 131', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=24
-February | Price=22
-March | Price=24
-April | Price=22
-May | Price=24
-June | Price=27
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=13000
-February | Volume=32000
-March | Volume=21000
-April | Volume=45000
-May | Volume=44000
-June | Volume=20000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 24 | 777,000 | 13,000 |
-| February | 22 | 777,000 | 32,000 |
-| March | 24 | 777,000 | 21,000 |
-| April | 22 | 777,000 | 45,000 |
-| May | 24 | 777,000 | 44,000 |
-| June | 27 | 777,000 | 20,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 249 |
-| Shares outstanding | 777,000 |
-| Total shares traded (six months) | 175,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30% from first to last month (see the extract prepared for case 6.5.131).', 'Market capitalisation at the last month exceeds €19 million (see the extract prepared for case 6.5.131).', 'Earnings per share exceeds €0.29 (see the extract prepared for case 6.5.131).', 'Highest closing price is more than 17.5% above the lowest (see the extract prepared for case 6.5.131).', 'Total shares traded over six months exceed 11.4% of shares outstanding (see the extract prepared for case 6.5.131).'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ 12.5%.', 'TRUE — Market capitalisation ≈ €21.0 million.', 'TRUE — Earnings per share ≈ €0.32.', 'TRUE — Range €22–€27.', 'TRUE — Turnover ≈ 22.5% of shares outstanding.'], '5/5', 131, 'full' ),
-( '6.5', 'CASE 6.5.132', 'The Debt Ratio in Financial Structure in Practice', 'Consider a transport operator comparing this year''s profitability ratios with its own figures from five years earlier. Evaluate the following economic assertions:', ARRAY['A brewery group is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a brewery group sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a brewery group relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a brewery group carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a brewery group relates revenue earned during the period to the average total assets employed to generate that revenue.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Positive working capital is generally preferable for a brewery group as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a brewery group compares current assets with current liabilities.', 'TRUE — Return on equity for a brewery group links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a brewery group is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a brewery group generates per unit of average assets.'], '4/5', 132, 'full' ),
-( '6.5', 'CASE 6.5.133', 'Listed Company Performance Charts 133', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=16
-March | Price=15
-April | Price=16
-May | Price=17
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=44000
-February | Volume=62000
-March | Volume=46000
-April | Volume=30000
-May | Volume=49000
-June | Volume=31000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 666,000 | 44,000 |
-| February | 16 | 666,000 | 62,000 |
-| March | 15 | 666,000 | 46,000 |
-| April | 16 | 666,000 | 30,000 |
-| May | 17 | 666,000 | 49,000 |
-| June | 17 | 666,000 | 31,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 291 |
-| Shares outstanding | 666,000 |
-| Total shares traded (six months) | 262,000 |
-
-Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 23% over the period.', 'Highest closing price is more than 32.6% above the lowest.', 'Market capitalisation at the last month exceeds €8.9 million.', 'Operating result is below €230 thousand.', 'Total shares traded over six months exceed 15.3% of shares outstanding.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — €9.3m → €11.3m.', 'FALSE — Range €14–€17.', 'TRUE — Market capitalisation ≈ €11.3 million.', 'FALSE — Operating result = 291.', 'TRUE — Turnover ≈ 39.3% of shares outstanding.'], '5/5', 133, 'full' ),
-( '6.5', 'CASE 6.5.134', 'Earnings Per Share From Reported Figures 134', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=29
-February | Price=26
-March | Price=23
-April | Price=22
-May | Price=25
-June | Price=25
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=17000
-February | Volume=37000
-March | Volume=15000
-April | Volume=56000
-May | Volume=31000
-June | Volume=59000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 29 | 686,000 | 17,000 |
-| February | 26 | 686,000 | 37,000 |
-| March | 23 | 686,000 | 15,000 |
-| April | 22 | 686,000 | 56,000 |
-| May | 25 | 686,000 | 31,000 |
-| June | 25 | 686,000 | 59,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 182 |
-| Shares outstanding | 686,000 |
-| Total shares traded (six months) | 215,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 26.9% from first to last month (see the extract prepared for case 6.5.134).', 'Market capitalisation at the last month exceeds €15 million (see the extract prepared for case 6.5.134).', 'Market capitalisation rose by more than 28% over the period (see the extract prepared for case 6.5.134).', 'Highest closing price is more than 40.9% above the lowest (see the extract prepared for case 6.5.134).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.134).'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -13.8%.', 'TRUE — Market capitalisation ≈ €17.1 million.', 'FALSE — €19.9m → €17.1m.', 'FALSE — Range €22–€29.', 'FALSE — Peak price month vs peak volume month.'], '5/5', 134, 'full' ),
-( '6.5', 'CASE 6.5.135', 'The Debt Ratio in Financial Structure Explained', 'Consider how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:', ARRAY['The equity ratio for a brewery group expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a brewery group draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a packaging plant is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A packaging plant is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'Inventory turnover for an online retailer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Equity ratio analysis for a brewery group expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a brewery group.', 'TRUE — The standard working capital definition applies to a packaging plant: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a packaging plant as a cushion over short-term obligations.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.'], '5/5', 135, 'full' ),
-( '6.5', 'CASE 6.5.136', 'Listed Company Performance Charts 136', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=18
+January | Price=19
 February | Price=18
 March | Price=18
 April | Price=17
@@ -11462,105 +11470,437 @@ June | Price=20
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=74000
-February | Volume=38000
-March | Volume=70000
-April | Volume=52000
-May | Volume=46000
-June | Volume=61000
+January | Volume=37000
+February | Volume=40000
+March | Volume=58000
+April | Volume=81000
+May | Volume=28000
+June | Volume=20000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 18 | 427,000 | 74,000 |
-| February | 18 | 427,000 | 38,000 |
-| March | 18 | 427,000 | 70,000 |
-| April | 17 | 427,000 | 52,000 |
-| May | 17 | 427,000 | 46,000 |
-| June | 20 | 427,000 | 61,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 37,000 |
+| February | 18 | 40,000 |
+| March | 18 | 58,000 |
+| April | 17 | 81,000 |
+| May | 17 | 28,000 |
+| June | 20 | 20,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 318 |
-| Shares outstanding | 427,000 |
-| Total shares traded (six months) | 341,000 |
+| Operating result (€ thousands) | 302 |
+| Shares outstanding | 420,000 |
+| Total shares traded (six months) | 264,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.2% from first to last month.', 'Earnings per share exceeds €0.54.', 'Market capitalisation rose by more than 21% over the period.', 'Total shares traded over six months exceed 31.6% of shares outstanding.', 'Shares outstanding stay at 427,000 every month.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Price change ≈ 11.1%.', 'TRUE — Earnings per share ≈ €0.74.', 'FALSE — €7.7m → €8.5m.', 'TRUE — Turnover ≈ 79.9% of shares outstanding.', 'TRUE — Shares outstanding unchanged.'], '4/5', 136, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 12.4% from first to last month.', 'Market capitalisation rose by more than 10.6% over the period.', 'Highest closing price is more than 25.8% above the lowest.', 'Operating result is below €261 thousand.', 'Market capitalisation at the last month exceeds €7.6 million.'], ARRAY[false, false, false, false, true], ARRAY['FALSE — Price change ≈ 5.3%.', 'FALSE — €8.0m → €8.4m.', 'FALSE — Range €17–€20.', 'FALSE — Operating result = 302.', 'TRUE — Market capitalisation ≈ €8.4 million.'], '3/5', 119, 'full' ),
+( '6.5', 'CASE 6.5.120', 'Inventory Turnover and Stock Rotation in Context', 'Assess how the equity ratio and the debt ratio together describe the way a business finances its total assets. Evaluate the following economic assertions:', ARRAY['Return on equity for a software subscription business relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'The current ratio and the acid-test ratio for a wholesaler always produce identical results, regardless of how much inventory the business holds.', 'A return on capital employed figure for a software subscription business carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a software subscription business relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a software subscription business expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Return on equity for a software subscription business links profit before interest and tax to owners'' equity.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'TRUE — Return on capital employed for a software subscription business is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a software subscription business generates per unit of average assets.', 'TRUE — Equity ratio analysis for a software subscription business expresses equity as a share of total assets.'], '4/5', 120, 'full' ),
+( '6.5', 'CASE 6.5.121', 'Listed Company Performance Charts 121', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=30
+February | Price=26
+March | Price=24
+April | Price=22
+May | Price=20
+June | Price=18
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=68000
+February | Volume=33000
+March | Volume=31000
+April | Volume=31000
+May | Volume=90000
+June | Volume=36000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 30 | 68,000 |
+| February | 26 | 33,000 |
+| March | 24 | 31,000 |
+| April | 22 | 31,000 |
+| May | 20 | 90,000 |
+| June | 18 | 36,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 304 |
+| Shares outstanding | 480,000 |
+| Total shares traded (six months) | 289,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €7.7 million.', 'The closing share price rose by more than 27.3% from first to last month.', 'Highest closing price is more than 25.6% above the lowest.', 'Market capitalisation rose by more than 24.6% over the period.', 'Total shares traded over six months exceed 38.9% of shares outstanding.'], ARRAY[true, false, true, false, true], ARRAY['TRUE — Market capitalisation ≈ €8.6 million.', 'FALSE — Price change ≈ -40.0%.', 'TRUE — Range €18–€30.', 'FALSE — €14.4m → €8.6m.', 'TRUE — Turnover ≈ 60.2% of shares outstanding.'], '5/5', 121, 'full' ),
+( '6.5', 'CASE 6.5.122', 'The Equity Ratio in Financial Structure in Practice', 'Assess why comparing ratios with industry peers or with a business''s own history over time improves interpretation. Evaluate the following economic assertions:', ARRAY['The debt ratio for a software subscription business expresses the proportion of total assets financed through liabilities rather than through owners'' equity.', 'Working capital for an online retailer is calculated by subtracting current assets from current liabilities.', 'If a software subscription business draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a medical-device maker is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A medical-device maker is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Debt ratio analysis for a software subscription business expresses total liabilities relative to total assets.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a software subscription business.', 'TRUE — The standard working capital definition applies to a medical-device maker: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a medical-device maker as a cushion over short-term obligations.'], '5/5', 122, 'full' ),
+( '6.5', 'CASE 6.5.123', 'The Equity Ratio in Financial Structure Explained', 'Consider a wholesaler that drew down a short-term facility to pay suppliers and is reviewing the effect on working capital. Evaluate the following economic assertions:', ARRAY['The current ratio for a medical-device maker sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a medical-device maker relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a medical-device maker carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a medical-device maker relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a medical-device maker expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Current ratio analysis for a medical-device maker compares current assets with current liabilities.', 'TRUE — Return on equity for a medical-device maker links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a medical-device maker is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a medical-device maker generates per unit of average assets.', 'TRUE — Equity ratio analysis for a medical-device maker expresses equity as a share of total assets.'], '5/5', 123, 'full' ),
+( '6.5', 'CASE 6.5.124', 'Listed Company Performance Charts 124', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=36
+February | Price=37
+March | Price=36
+April | Price=38
+May | Price=37
+June | Price=45
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=32000
+February | Volume=79000
+March | Volume=90000
+April | Volume=52000
+May | Volume=45000
+June | Volume=53000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 32,000 |
+| February | 37 | 79,000 |
+| March | 36 | 90,000 |
+| April | 38 | 52,000 |
+| May | 37 | 45,000 |
+| June | 45 | 53,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 202 |
+| Shares outstanding | 403,000 |
+| Total shares traded (six months) | 351,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 8.4% from first to last month.', 'Market capitalisation at the last month exceeds €14.5 million.', 'Market capitalisation rose by more than 13.5% over the period.', 'Earnings per share exceeds €0.47.', 'Highest closing price is more than 12% above the lowest.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €18.1 million.', 'TRUE — €14.5m → €18.1m.', 'TRUE — Earnings per share ≈ €0.50.', 'TRUE — Range €36–€45.'], '2/5', 124, 'full' ),
+( '6.5', 'CASE 6.5.125', 'The Equity Ratio in Financial Structure for Analysts', 'Assess why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:', ARRAY['A online retailer reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for an online retailer includes inventory within current assets before comparing the total with current liabilities.', 'The debt ratio for a medical-device maker expresses the proportion of total assets financed through liabilities rather than through owners'' equity.', 'If a medical-device maker draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'A single return on capital employed figure for an online retailer is always fully meaningful on its own, without any need to compare it against other years or similar businesses.'], ARRAY[false, false, true, true, false], ARRAY['FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'TRUE — Debt ratio analysis for a medical-device maker expresses total liabilities relative to total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a medical-device maker.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.'], '5/5', 125, 'full' ),
+( '6.5', 'CASE 6.5.126', 'The Equity Ratio in Financial Structure Across Sectors', 'Consider how working capital is defined and why a positive balance is generally preferred to a negative one. Evaluate the following economic assertions:', ARRAY['Working capital for a cinema chain is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A cinema chain is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a cinema chain sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a cinema chain relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a cinema chain carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — The standard working capital definition applies to a cinema chain: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a cinema chain as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a cinema chain compares current assets with current liabilities.', 'TRUE — Return on equity for a cinema chain links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a cinema chain is most useful in comparison rather than in isolation.'], '5/5', 126, 'full' ),
+( '6.5', 'CASE 6.5.127', 'Listed Company Performance Charts 127', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=36
+February | Price=34
+March | Price=34
+April | Price=32
+May | Price=31
+June | Price=39
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=48000
+February | Volume=79000
+March | Volume=20000
+April | Volume=79000
+May | Volume=29000
+June | Volume=94000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 36 | 48,000 |
+| February | 34 | 79,000 |
+| March | 34 | 20,000 |
+| April | 32 | 79,000 |
+| May | 31 | 29,000 |
+| June | 39 | 94,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 221 |
+| Shares outstanding | 666,000 |
+| Total shares traded (six months) | 349,000 |
+
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.24.', 'The closing share price rose by more than 33.7% from first to last month.', 'Total shares traded over six months exceed 14.4% of shares outstanding.', 'Peak monthly share turnover exceeds 71,634 shares.', 'Market capitalisation rose by more than 31.8% over the period.'], ARRAY[true, false, true, true, false], ARRAY['TRUE — Earnings per share ≈ €0.33.', 'FALSE — Price change ≈ 8.3%.', 'TRUE — Turnover ≈ 52.4% of shares outstanding.', 'TRUE — Peak monthly volume = 94,000.', 'FALSE — €24.0m → €26.0m.'], '5/5', 127, 'full' ),
+( '6.5', 'CASE 6.5.128', 'Earnings Per Share From Reported Figures 128', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=39
+February | Price=39
+March | Price=40
+April | Price=43
+May | Price=45
+June | Price=47
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=68000
+February | Volume=59000
+March | Volume=56000
+April | Volume=52000
+May | Volume=20000
+June | Volume=56000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 39 | 68,000 |
+| February | 39 | 59,000 |
+| March | 40 | 56,000 |
+| April | 43 | 52,000 |
+| May | 45 | 20,000 |
+| June | 47 | 56,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 300 |
+| Shares outstanding | 520,000 |
+| Total shares traded (six months) | 311,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 34% from first to last month.', 'Market capitalisation rose by more than 19.8% over the period.', 'Highest closing price is more than 36.3% above the lowest.', 'Peak monthly share turnover exceeds 77,534 shares.', 'Earnings per share exceeds €0.51.'], ARRAY[false, true, false, false, true], ARRAY['FALSE — Price change ≈ 20.5%.', 'TRUE — €20.3m → €24.4m.', 'FALSE — Range €39–€47.', 'FALSE — Peak monthly volume = 68,000.', 'TRUE — Earnings per share ≈ €0.58.'], '5/5', 128, 'full' ),
+( '6.5', 'CASE 6.5.129', 'Share Price and Market Capitalisation 129', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=44
+February | Price=47
+March | Price=47
+April | Price=49
+May | Price=51
+June | Price=55
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=18000
+February | Volume=25000
+March | Volume=75000
+April | Volume=44000
+May | Volume=25000
+June | Volume=54000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 44 | 18,000 |
+| February | 47 | 25,000 |
+| March | 47 | 75,000 |
+| April | 49 | 44,000 |
+| May | 51 | 25,000 |
+| June | 55 | 54,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 283 |
+| Shares outstanding | 679,000 |
+| Total shares traded (six months) | 241,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 17.9% from first to last month.', 'Market capitalisation at the last month exceeds €30.9 million.', 'Market capitalisation rose by more than 15% over the period.', 'Highest closing price is more than 14% above the lowest.', 'Shares outstanding equal 679,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €37.3 million.', 'TRUE — €29.9m → €37.3m.', 'TRUE — Range €44–€55.', 'TRUE — Shares outstanding = 679,000.'], '5/5', 129, 'full' ),
+( '6.5', 'CASE 6.5.130', 'The Equity Ratio in Financial Structure in Context', 'Consider how the current ratio and the acid-test ratio each measure short-term liquidity, and why they can diverge for inventory-heavy businesses. Evaluate the following economic assertions:', ARRAY['Asset turnover for a cinema chain relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a cinema chain expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'Return on equity for an online retailer is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'If a cinema chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a brewery group is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Asset turnover measures how much revenue a cinema chain generates per unit of average assets.', 'TRUE — Equity ratio analysis for a cinema chain expresses equity as a share of total assets.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a cinema chain.', 'TRUE — The standard working capital definition applies to a brewery group: current assets minus current liabilities.'], '5/5', 130, 'full' ),
+( '6.5', 'CASE 6.5.131', 'Earnings Per Share From Reported Figures 131', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=28
+February | Price=26
+March | Price=25
+April | Price=23
+May | Price=23
+June | Price=22
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=19000
+February | Volume=42000
+March | Volume=29000
+April | Volume=59000
+May | Volume=57000
+June | Volume=28000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 19,000 |
+| February | 26 | 42,000 |
+| March | 25 | 29,000 |
+| April | 23 | 59,000 |
+| May | 23 | 57,000 |
+| June | 22 | 28,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 249 |
+| Shares outstanding | 777,000 |
+| Total shares traded (six months) | 234,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30% from first to last month.', 'Market capitalisation at the last month exceeds €15.5 million.', 'Highest closing price is more than 17.5% above the lowest.', 'Total shares traded over six months exceed 11.4% of shares outstanding.', 'Peak monthly share turnover exceeds 47,258 shares.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Price change ≈ -21.4%.', 'TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Range €22–€28.', 'TRUE — Turnover ≈ 30.1% of shares outstanding.', 'TRUE — Peak monthly volume = 59,000.'], '5/5', 131, 'full' ),
+( '6.5', 'CASE 6.5.132', 'The Debt Ratio in Financial Structure in Practice', 'Consider a transport operator comparing this year''s profitability ratios with its own figures from five years earlier. Evaluate the following economic assertions:', ARRAY['A brewery group is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a brewery group sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a brewery group relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a brewery group carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a brewery group relates revenue earned during the period to the average total assets employed to generate that revenue.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Positive working capital is generally preferable for a brewery group as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a brewery group compares current assets with current liabilities.', 'TRUE — Return on equity for a brewery group links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a brewery group is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a brewery group generates per unit of average assets.'], '4/5', 132, 'full' ),
+( '6.5', 'CASE 6.5.133', 'Listed Company Performance Charts 133', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=34
+February | Price=30
+March | Price=29
+April | Price=27
+May | Price=25
+June | Price=22
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=23000
+February | Volume=31000
+March | Volume=38000
+April | Volume=42000
+May | Volume=18000
+June | Volume=18000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 23,000 |
+| February | 30 | 31,000 |
+| March | 29 | 38,000 |
+| April | 27 | 42,000 |
+| May | 25 | 18,000 |
+| June | 22 | 18,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 249 |
+| Shares outstanding | 407,000 |
+| Total shares traded (six months) | 170,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 13.2% from first to last month.', 'Market capitalisation rose by more than 30.3% over the period.', 'Highest closing price is more than 24.8% above the lowest.', 'Peak monthly share turnover exceeds 46,668 shares.', 'Total shares traded over six months exceed 28.8% of shares outstanding.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ -35.3%.', 'FALSE — €13.8m → €9.0m.', 'TRUE — Range €22–€34.', 'FALSE — Peak monthly volume = 42,000.', 'TRUE — Turnover ≈ 41.8% of shares outstanding.'], '5/5', 133, 'full' ),
+( '6.5', 'CASE 6.5.134', 'Earnings Per Share From Reported Figures 134', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=24
+February | Price=23
+March | Price=21
+April | Price=19
+May | Price=18
+June | Price=16
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=70000
+February | Volume=35000
+March | Volume=30000
+April | Volume=74000
+May | Volume=50000
+June | Volume=85000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 70,000 |
+| February | 23 | 35,000 |
+| March | 21 | 30,000 |
+| April | 19 | 74,000 |
+| May | 18 | 50,000 |
+| June | 16 | 85,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 201 |
+| Shares outstanding | 820,000 |
+| Total shares traded (six months) | 344,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 30.1% from first to last month.', 'Market capitalisation at the last month exceeds €12 million.', 'Market capitalisation rose by more than 20.6% over the period.', 'Operating result is below €190 thousand.', 'Earnings per share is exactly €0.20.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — Price change ≈ -33.3%.', 'TRUE — Market capitalisation ≈ €13.1 million.', 'FALSE — €19.7m → €13.1m.', 'FALSE — Operating result = 201.', 'FALSE — Earnings per share ≈ €0.25.'], '5/5', 134, 'full' ),
+( '6.5', 'CASE 6.5.135', 'The Debt Ratio in Financial Structure Explained', 'Consider how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:', ARRAY['The equity ratio for a brewery group expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a brewery group draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a packaging plant is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A packaging plant is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'Inventory turnover for an online retailer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.'], ARRAY[true, true, true, true, false], ARRAY['TRUE — Equity ratio analysis for a brewery group expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a brewery group.', 'TRUE — The standard working capital definition applies to a packaging plant: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a packaging plant as a cushion over short-term obligations.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.'], '5/5', 135, 'full' ),
+( '6.5', 'CASE 6.5.136', 'Listed Company Performance Charts 136', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=26
+February | Price=28
+March | Price=29
+April | Price=30
+May | Price=32
+June | Price=35
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=94000
+February | Volume=50000
+March | Volume=88000
+April | Volume=67000
+May | Volume=60000
+June | Volume=78000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 26 | 94,000 |
+| February | 28 | 50,000 |
+| March | 29 | 88,000 |
+| April | 30 | 67,000 |
+| May | 32 | 60,000 |
+| June | 35 | 78,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 318 |
+| Shares outstanding | 427,000 |
+| Total shares traded (six months) | 437,000 |
+
+Evaluate the following economic assertions:', ARRAY['Peak monthly share turnover exceeds 97,257 shares.', 'The closing share price rose by more than 14.2% from first to last month.', 'Operating result is below €198 thousand.', 'Market capitalisation at the last month exceeds €12.2 million.', 'Market capitalisation rose by more than 21% over the period.'], ARRAY[false, true, false, true, true], ARRAY['FALSE — Peak monthly volume = 94,000.', 'TRUE — Price change ≈ 34.6%.', 'FALSE — Operating result = 318.', 'TRUE — Market capitalisation ≈ €14.9 million.', 'TRUE — €11.1m → €14.9m.'], '4/5', 136, 'full' ),
 ( '6.5', 'CASE 6.5.137', 'The Debt Ratio in Financial Structure for Analysts', 'Consider how return on capital employed relates profit before interest and tax to the long-term capital financing a business. Evaluate the following economic assertions:', ARRAY['The current ratio and the acid-test ratio for an online retailer always produce identical results, regardless of how much inventory the business holds.', 'The current ratio for a packaging plant sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Working capital for a hotel operator is calculated by subtracting current assets from current liabilities.', 'A hotel operator reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for a hotel operator includes inventory within current assets before comparing the total with current liabilities.'], ARRAY[false, true, false, false, false], ARRAY['FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'TRUE — Current ratio analysis for a packaging plant compares current assets with current liabilities.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.'], '5/5', 137, 'full' ),
 ( '6.5', 'CASE 6.5.138', 'The Debt Ratio in Financial Structure Across Sectors', 'Consider why a single return on capital employed figure is best interpreted alongside comparable years or similar businesses rather than in isolation. Evaluate the following economic assertions:', ARRAY['Return on equity for a packaging plant relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a packaging plant carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a packaging plant relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a packaging plant expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a packaging plant draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Return on equity for a packaging plant links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a packaging plant is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a packaging plant generates per unit of average assets.', 'TRUE — Equity ratio analysis for a packaging plant expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a packaging plant.'], '5/5', 138, 'full' ),
 ( '6.5', 'CASE 6.5.139', 'Listed Company Performance Charts 139', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=22
-March | Price=21
-April | Price=23
-May | Price=22
-June | Price=21
+January | Price=33
+February | Price=33
+March | Price=30
+April | Price=27
+May | Price=27
+June | Price=27
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=35000
-February | Volume=68000
-March | Volume=39000
-April | Volume=75000
-May | Volume=59000
-June | Volume=38000
+January | Volume=71000
+February | Volume=30000
+March | Volume=74000
+April | Volume=83000
+May | Volume=18000
+June | Volume=26000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 405,000 | 35,000 |
-| February | 22 | 405,000 | 68,000 |
-| March | 21 | 405,000 | 39,000 |
-| April | 23 | 405,000 | 75,000 |
-| May | 22 | 405,000 | 59,000 |
-| June | 21 | 405,000 | 38,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 71,000 |
+| February | 33 | 30,000 |
+| March | 30 | 74,000 |
+| April | 27 | 83,000 |
+| May | 27 | 18,000 |
+| June | 27 | 26,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 298 |
-| Shares outstanding | 405,000 |
-| Total shares traded (six months) | 314,000 |
+| Operating result (€ thousands) | 246 |
+| Shares outstanding | 546,000 |
+| Total shares traded (six months) | 302,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 35% from first to last month.', 'Highest closing price is more than 13.9% above the lowest.', 'Total shares traded over six months exceed 8.1% of shares outstanding.', 'Operating result is below €240 thousand.', 'Peak monthly share turnover exceeds 48,255 shares.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ 0.0%.', 'FALSE — Range €21–€23.', 'TRUE — Turnover ≈ 77.5% of shares outstanding.', 'FALSE — Operating result = 298.', 'TRUE — Peak monthly volume = 75,000.'], '2/5', 139, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 23.7% from first to last month.', 'Market capitalisation rose by more than 15.8% over the period.', 'Highest closing price is more than 16.3% above the lowest.', 'Peak monthly share turnover exceeds 87,996 shares.', 'Total shares traded over six months exceed 34.9% of shares outstanding.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ -18.2%.', 'FALSE — €18.0m → €14.7m.', 'TRUE — Range €27–€33.', 'FALSE — Peak monthly volume = 83,000.', 'TRUE — Turnover ≈ 55.3% of shares outstanding.'], '2/5', 139, 'full' ),
 ( '6.5', 'CASE 6.5.140', 'The Debt Ratio in Financial Structure in Context', 'Consider a brewery group reviewing whether revenue growth is matched by efficient use of its total asset base. Evaluate the following economic assertions:', ARRAY['A single return on capital employed figure for a hotel operator is always fully meaningful on its own, without any need to compare it against other years or similar businesses.', 'Return on equity for a hotel operator is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'Working capital for an office-furniture retailer is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'Inventory turnover for a hotel operator is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.', 'The current ratio and the acid-test ratio for a hotel operator always produce identical results, regardless of how much inventory the business holds.'], ARRAY[false, false, true, false, false], ARRAY['FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — The standard working capital definition applies to an office-furniture retailer: current assets minus current liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.'], '5/5', 140, 'full' ),
 ( '6.5', 'CASE 6.5.141', 'Share Price and Market Capitalisation 141', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=14
-February | Price=15
-March | Price=16
-April | Price=16
-May | Price=16
-June | Price=16
+January | Price=21
+February | Price=22
+March | Price=24
+April | Price=24
+May | Price=25
+June | Price=26
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=41000
-February | Volume=71000
-March | Volume=28000
-April | Volume=29000
-May | Volume=65000
-June | Volume=74000
+January | Volume=54000
+February | Volume=90000
+March | Volume=37000
+April | Volume=39000
+May | Volume=83000
+June | Volume=93000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 14 | 658,000 | 41,000 |
-| February | 15 | 658,000 | 71,000 |
-| March | 16 | 658,000 | 28,000 |
-| April | 16 | 658,000 | 29,000 |
-| May | 16 | 658,000 | 65,000 |
-| June | 16 | 658,000 | 74,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 54,000 |
+| February | 22 | 90,000 |
+| March | 24 | 37,000 |
+| April | 24 | 39,000 |
+| May | 25 | 83,000 |
+| June | 26 | 93,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 216 |
+| Operating result (€ thousands) | 216 |
 | Shares outstanding | 658,000 |
-| Total shares traded (six months) | 308,000 |
+| Total shares traded (six months) | 396,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 11.4% from first to last month.', 'Total shares traded over six months exceed 31.3% of shares outstanding.', 'Peak monthly share turnover exceeds 58,177 shares.', 'Shares outstanding stay at 658,000 every month.', 'Earnings per share is exactly €0.33.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 14.3%.', 'TRUE — Turnover ≈ 46.8% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Earnings per share ≈ €0.33.'], '5/5', 141, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 11.4% from first to last month.', 'Market capitalisation at the last month exceeds €13.6 million.', 'Total shares traded over six months exceed 31.3% of shares outstanding.', 'Peak monthly share turnover exceeds 73,114 shares.', 'Shares outstanding equal 658,000.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Price change ≈ 23.8%.', 'TRUE — Market capitalisation ≈ €17.1 million.', 'TRUE — Turnover ≈ 60.2% of shares outstanding.', 'TRUE — Peak monthly volume = 93,000.', 'TRUE — Shares outstanding = 658,000.'], '5/5', 141, 'full' ),
 ( '6.5', 'CASE 6.5.142', 'Comparing Ratios Across Time and Peers in Practice', 'Consider how inventory turnover links cost of sales to average inventory, and what a rising figure typically indicates. Evaluate the following economic assertions:', ARRAY['An office-furniture retailer is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for an office-furniture retailer sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for an office-furniture retailer relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for an office-furniture retailer carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for an office-furniture retailer relates revenue earned during the period to the average total assets employed to generate that revenue.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Positive working capital is generally preferable for an office-furniture retailer as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for an office-furniture retailer compares current assets with current liabilities.', 'TRUE — Return on equity for an office-furniture retailer links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for an office-furniture retailer is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue an office-furniture retailer generates per unit of average assets.'], '5/5', 142, 'full' ),
 ( '6.5', 'CASE 6.5.143', 'Earnings Per Share From Reported Figures 143', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
@@ -11568,144 +11908,144 @@ Evaluate the following economic assertions:', ARRAY['The closing share price ros
 January | Price=19
 February | Price=18
 March | Price=18
-April | Price=18
-May | Price=20
-June | Price=19
+April | Price=17
+May | Price=16
+June | Price=15
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=39000
-February | Volume=30000
-March | Volume=14000
-April | Volume=74000
-May | Volume=65000
-June | Volume=59000
+January | Volume=86000
+February | Volume=38000
+March | Volume=82000
+April | Volume=19000
+May | Volume=60000
+June | Volume=51000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 19 | 806,000 | 39,000 |
-| February | 18 | 806,000 | 30,000 |
-| March | 18 | 806,000 | 14,000 |
-| April | 18 | 806,000 | 74,000 |
-| May | 20 | 806,000 | 65,000 |
-| June | 19 | 806,000 | 59,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 19 | 86,000 |
+| February | 18 | 38,000 |
+| March | 18 | 82,000 |
+| April | 17 | 19,000 |
+| May | 16 | 60,000 |
+| June | 15 | 51,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 251 |
-| Shares outstanding | 806,000 |
-| Total shares traded (six months) | 281,000 |
+| Operating result (€ thousands) | 298 |
+| Shares outstanding | 845,000 |
+| Total shares traded (six months) | 336,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 31.2% from first to last month.', 'Market capitalisation rose by more than 33% over the period.', 'Peak monthly share turnover exceeds 57,759 shares.', 'Highest closing price is more than 13.5% above the lowest.', 'Shares outstanding stay at 806,000 every month.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Price change ≈ 0.0%.', 'FALSE — €15.3m → €15.3m.', 'TRUE — Peak monthly volume = 74,000.', 'FALSE — Range €18–€20.', 'TRUE — Shares outstanding unchanged.'], '5/5', 143, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 42.5% above the lowest.', 'Operating result is below €218 thousand.', 'Peak monthly share turnover exceeds 83,467 shares.', 'Earnings per share is exactly €0.46.', 'Shares outstanding equal 845,000.'], ARRAY[false, false, true, false, true], ARRAY['FALSE — Range €15–€19.', 'FALSE — Operating result = 298.', 'TRUE — Peak monthly volume = 86,000.', 'FALSE — Earnings per share ≈ €0.35.', 'TRUE — Shares outstanding = 845,000.'], '5/5', 143, 'full' ),
 ( '6.5', 'CASE 6.5.144', 'Share Price and Market Capitalisation 144', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=17
-February | Price=18
-March | Price=17
-April | Price=17
+January | Price=24
+February | Price=25
+March | Price=24
+April | Price=25
+May | Price=25
+June | Price=30
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=58000
+February | Volume=47000
+March | Volume=66000
+April | Volume=76000
+May | Volume=91000
+June | Volume=78000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 24 | 58,000 |
+| February | 25 | 47,000 |
+| March | 24 | 66,000 |
+| April | 25 | 76,000 |
+| May | 25 | 91,000 |
+| June | 30 | 78,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 293 |
+| Shares outstanding | 732,000 |
+| Total shares traded (six months) | 416,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation rose by more than 8.8% over the period.', 'Operating result is below €285 thousand.', 'Highest closing price is more than 18.8% above the lowest.', 'Peak monthly share turnover exceeds 81,445 shares.', 'Shares outstanding equal 732,000.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — €17.6m → €22.0m.', 'FALSE — Operating result = 293.', 'TRUE — Range €24–€30.', 'TRUE — Peak monthly volume = 91,000.', 'TRUE — Shares outstanding = 732,000.'], '5/5', 144, 'full' ),
+( '6.5', 'CASE 6.5.145', 'Listed Company Performance Charts 145', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=31
+February | Price=29
+March | Price=26
+April | Price=25
+May | Price=24
+June | Price=23
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=35000
+February | Volume=88000
+March | Volume=76000
+April | Volume=71000
+May | Volume=80000
+June | Volume=33000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 31 | 35,000 |
+| February | 29 | 88,000 |
+| March | 26 | 76,000 |
+| April | 25 | 71,000 |
+| May | 24 | 80,000 |
+| June | 23 | 33,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 219 |
+| Shares outstanding | 527,000 |
+| Total shares traded (six months) | 383,000 |
+
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.7 million.', 'Market capitalisation rose by more than 22% over the period.', 'Highest closing price is more than 32.2% above the lowest.', 'Peak monthly share turnover exceeds 96,320 shares.', 'Earnings per share is exactly €0.36.'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Market capitalisation ≈ €12.1 million.', 'FALSE — €16.3m → €12.1m.', 'TRUE — Range €23–€31.', 'FALSE — Peak monthly volume = 88,000.', 'FALSE — Earnings per share ≈ €0.42.'], '5/5', 145, 'full' ),
+( '6.5', 'CASE 6.5.146', 'Earnings Per Share From Reported Figures 146', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=27
+February | Price=25
+March | Price=24
+April | Price=21
 May | Price=18
 June | Price=16
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=45000
-February | Volume=36000
-March | Volume=51000
-April | Volume=59000
-May | Volume=72000
-June | Volume=61000
+January | Volume=23000
+February | Volume=94000
+March | Volume=71000
+April | Volume=67000
+May | Volume=54000
+June | Volume=21000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 17 | 732,000 | 45,000 |
-| February | 18 | 732,000 | 36,000 |
-| March | 17 | 732,000 | 51,000 |
-| April | 17 | 732,000 | 59,000 |
-| May | 18 | 732,000 | 72,000 |
-| June | 16 | 732,000 | 61,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 27 | 23,000 |
+| February | 25 | 94,000 |
+| March | 24 | 71,000 |
+| April | 21 | 67,000 |
+| May | 18 | 54,000 |
+| June | 16 | 21,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 293 |
-| Shares outstanding | 732,000 |
-| Total shares traded (six months) | 324,000 |
+| Operating result (€ thousands) | 309 |
+| Shares outstanding | 538,000 |
+| Total shares traded (six months) | 330,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €10.4 million.', 'Market capitalisation rose by more than 8.8% over the period.', 'Peak monthly share turnover exceeds 64,440 shares.', 'Shares outstanding stay at 732,000 every month.', 'Earnings per share is exactly €0.40.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Market capitalisation ≈ €11.7 million.', 'FALSE — €12.4m → €11.7m.', 'TRUE — Peak monthly volume = 72,000.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Earnings per share ≈ €0.40.'], '5/5', 144, 'full' ),
-( '6.5', 'CASE 6.5.145', 'Listed Company Performance Charts 145', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=15
-February | Price=15
-March | Price=17
-April | Price=17
-May | Price=17
-June | Price=19
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=51000
-February | Volume=51000
-March | Volume=39000
-April | Volume=45000
-May | Volume=41000
-June | Volume=46000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 15 | 796,000 | 51,000 |
-| February | 15 | 796,000 | 51,000 |
-| March | 17 | 796,000 | 39,000 |
-| April | 17 | 796,000 | 45,000 |
-| May | 17 | 796,000 | 41,000 |
-| June | 19 | 796,000 | 46,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 303 |
-| Shares outstanding | 796,000 |
-| Total shares traded (six months) | 273,000 |
-
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 17.5% from first to last month (see the extract prepared for case 6.5.145).', 'Peak monthly share turnover exceeds 58,482 shares (see the extract prepared for case 6.5.145).', 'Market capitalisation at the last month exceeds €12.2 million (see the extract prepared for case 6.5.145).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.145).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.5.145).'], ARRAY[true, false, true, false, false], ARRAY['TRUE — Price change ≈ 26.7%.', 'FALSE — Peak monthly volume = 51,000.', 'TRUE — Market capitalisation ≈ €15.1 million.', 'FALSE — Peak price month vs peak volume month.', 'FALSE — Rose in 2 of 5 steps.'], '5/5', 145, 'full' ),
-( '6.5', 'CASE 6.5.146', 'Earnings Per Share From Reported Figures 146', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=30
-February | Price=33
-March | Price=33
-April | Price=36
-May | Price=38
-June | Price=39
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=65000
-February | Volume=26000
-March | Volume=33000
-April | Volume=23000
-May | Volume=13000
-June | Volume=18000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 30 | 646,000 | 65,000 |
-| February | 33 | 646,000 | 26,000 |
-| March | 33 | 646,000 | 33,000 |
-| April | 36 | 646,000 | 23,000 |
-| May | 38 | 646,000 | 13,000 |
-| June | 39 | 646,000 | 18,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 310 |
-| Shares outstanding | 646,000 |
-| Total shares traded (six months) | 178,000 |
-
-Evaluate the following economic assertions:', ARRAY['Peak monthly share turnover exceeds 67,837 shares (see the extract prepared for case 6.5.146).', 'The closing share price rose by more than 22.1% from first to last month (see the extract prepared for case 6.5.146).', 'Market capitalisation at the last month exceeds €22.7 million (see the extract prepared for case 6.5.146).', 'Market capitalisation rose by more than 15.3% over the period (see the extract prepared for case 6.5.146).', 'Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.5.146).'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Peak monthly volume = 65,000.', 'TRUE — Price change ≈ 30.0%.', 'TRUE — Market capitalisation ≈ €25.2 million.', 'TRUE — €19.4m → €25.2m.', 'FALSE — Peak price month vs peak volume month.'], '2/5', 146, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 34.8% from first to last month.', 'Peak monthly share turnover exceeds 66,814 shares.', 'Shares outstanding equal 538,000.', 'Earnings per share is exactly €0.57.', 'Operating result is below €236 thousand.'], ARRAY[false, true, true, true, false], ARRAY['FALSE — Price change ≈ -40.7%.', 'TRUE — Peak monthly volume = 94,000.', 'TRUE — Shares outstanding = 538,000.', 'TRUE — Earnings per share ≈ €0.57.', 'FALSE — Operating result = 309.'], '2/5', 146, 'full' ),
 ( '6.5', 'CASE 6.5.147', 'Comparing Ratios Across Time and Peers Explained', 'Consider how the equity ratio and the debt ratio together describe the way a business finances its total assets. Evaluate the following economic assertions:', ARRAY['The equity ratio for an office-furniture retailer expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If an office-furniture retailer draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.', 'Working capital for a dairy cooperative is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'Working capital for a pharmaceutical distributor is calculated by subtracting current assets from current liabilities.', 'A dairy cooperative is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Equity ratio analysis for an office-furniture retailer expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for an office-furniture retailer.', 'TRUE — The standard working capital definition applies to a dairy cooperative: current assets minus current liabilities.', 'FALSE — Working capital is current assets minus current liabilities, not the reverse.', 'TRUE — Positive working capital is generally preferable for a dairy cooperative as a cushion over short-term obligations.'], '5/5', 147, 'full' ),
 ( '6.5', 'CASE 6.5.148', 'Comparing Ratios Across Time and Peers for Analysts', 'Consider why comparing ratios with industry peers or with a business''s own history over time improves interpretation. Evaluate the following economic assertions:', ARRAY['The current ratio for a dairy cooperative sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Return on equity for a dairy cooperative relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A pharmaceutical distributor reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for a pharmaceutical distributor includes inventory within current assets before comparing the total with current liabilities.', 'A single return on capital employed figure for a pharmaceutical distributor is always fully meaningful on its own, without any need to compare it against other years or similar businesses.'], ARRAY[true, true, false, false, false], ARRAY['TRUE — Current ratio analysis for a dairy cooperative compares current assets with current liabilities.', 'TRUE — Return on equity for a dairy cooperative links profit before interest and tax to owners'' equity.', 'FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.'], '2/5', 148, 'full' ),
 ( '6.5', 'CASE 6.5.149', 'Comparing Ratios Across Time and Peers Across Sectors', 'Consider a publishing house analysing whether short-term borrowing improved cash but weakened working capital. Evaluate the following economic assertions:', ARRAY['Return on equity for a pharmaceutical distributor is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.', 'A return on capital employed figure for a dairy cooperative carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a dairy cooperative relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a dairy cooperative expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a dairy cooperative draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.'], ARRAY[false, true, true, true, true], ARRAY['FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.', 'TRUE — Return on capital employed for a dairy cooperative is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a dairy cooperative generates per unit of average assets.', 'TRUE — Equity ratio analysis for a dairy cooperative expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a dairy cooperative.'], '2/5', 149, 'full' ),
@@ -11713,223 +12053,223 @@ Evaluate the following economic assertions:', ARRAY['Peak monthly share turnover
 ( '6.5', 'CASE 6.5.151', 'Listed Company Performance Charts 151', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=23
-February | Price=21
-March | Price=20
-April | Price=19
-May | Price=18
-June | Price=17
-[[/CHART]]
-
-[[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=37000
-February | Volume=39000
-March | Volume=34000
-April | Volume=44000
-May | Volume=57000
-June | Volume=58000
-[[/CHART]]
-
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 23 | 408,000 | 37,000 |
-| February | 21 | 408,000 | 39,000 |
-| March | 20 | 408,000 | 34,000 |
-| April | 19 | 408,000 | 44,000 |
-| May | 18 | 408,000 | 57,000 |
-| June | 17 | 408,000 | 58,000 |
-
-| Annual figures (€ thousands) | Amount |
-| --- | ---: |
-| Operating result | 315 |
-| Shares outstanding | 408,000 |
-| Total shares traded (six months) | 269,000 |
-
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.73.', 'Highest closing price is more than 29.8% above the lowest.', 'Total shares traded over six months exceed 25% of shares outstanding.', 'Operating result is below €217 thousand.', 'Peak monthly share turnover exceeds 52,960 shares.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Earnings per share ≈ €0.77.', 'TRUE — Range €17–€23.', 'TRUE — Turnover ≈ 65.9% of shares outstanding.', 'FALSE — Operating result = 315.', 'TRUE — Peak monthly volume = 58,000.'], '5/5', 151, 'full' ),
-( '6.5', 'CASE 6.5.152', 'Earnings Per Share From Reported Figures 152', 'Consider the share market extract below for a listed business whose identity is not disclosed.
-
-[[CHART type="line" title="Closing share price"]]
-January | Price=21
-February | Price=22
-March | Price=23
-April | Price=25
+January | Price=28
+February | Price=27
+March | Price=25
+April | Price=24
 May | Price=22
 June | Price=22
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=65000
-February | Volume=38000
-March | Volume=42000
-April | Volume=55000
-May | Volume=29000
-June | Volume=68000
+January | Volume=49000
+February | Volume=51000
+March | Volume=46000
+April | Volume=57000
+May | Volume=73000
+June | Volume=74000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 21 | 644,000 | 65,000 |
-| February | 22 | 644,000 | 38,000 |
-| March | 23 | 644,000 | 42,000 |
-| April | 25 | 644,000 | 55,000 |
-| May | 22 | 644,000 | 29,000 |
-| June | 22 | 644,000 | 68,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 49,000 |
+| February | 27 | 51,000 |
+| March | 25 | 46,000 |
+| April | 24 | 57,000 |
+| May | 22 | 73,000 |
+| June | 22 | 74,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 278 |
-| Shares outstanding | 644,000 |
-| Total shares traded (six months) | 297,000 |
+| Operating result (€ thousands) | 315 |
+| Shares outstanding | 408,000 |
+| Total shares traded (six months) | 350,000 |
 
-Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 17.6% above the lowest.', 'Total shares traded over six months exceed 27.3% of shares outstanding.', 'The closing share price rose by more than 13.6% from first to last month.', 'Shares outstanding stay at 644,000 every month.', 'Earnings per share is exactly €0.43.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Range €21–€25.', 'TRUE — Turnover ≈ 46.1% of shares outstanding.', 'FALSE — Price change ≈ 4.8%.', 'TRUE — Shares outstanding unchanged.', 'TRUE — Earnings per share ≈ €0.43.'], '5/5', 152, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.73.', 'Total shares traded over six months exceed 25% of shares outstanding.', 'Peak monthly share turnover exceeds 67,570 shares.', 'Highest closing price is more than 29.8% above the lowest.', 'Earnings per share is exactly €0.77.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — Earnings per share ≈ €0.77.', 'TRUE — Turnover ≈ 85.8% of shares outstanding.', 'TRUE — Peak monthly volume = 74,000.', 'FALSE — Range €22–€28.', 'TRUE — Earnings per share ≈ €0.77.'], '5/5', 151, 'full' ),
+( '6.5', 'CASE 6.5.152', 'Earnings Per Share From Reported Figures 152', 'Consider the share market extract below for a listed business whose identity is not disclosed.
+
+[[CHART type="line" title="Closing share price"]]
+January | Price=28
+February | Price=29
+March | Price=29
+April | Price=30
+May | Price=29
+June | Price=35
+[[/CHART]]
+
+[[CHART type="bar" title="Monthly share turnover"]]
+January | Volume=83000
+February | Volume=50000
+March | Volume=54000
+April | Volume=71000
+May | Volume=39000
+June | Volume=87000
+[[/CHART]]
+
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 28 | 83,000 |
+| February | 29 | 50,000 |
+| March | 29 | 54,000 |
+| April | 30 | 71,000 |
+| May | 29 | 39,000 |
+| June | 35 | 87,000 |
+
+| Annual figures | Amount |
+| --- | ---: |
+| Operating result (€ thousands) | 278 |
+| Shares outstanding | 644,000 |
+| Total shares traded (six months) | 384,000 |
+
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 13.6% from first to last month.', 'Market capitalisation at the last month exceeds €19.3 million.', 'Peak monthly share turnover exceeds 93,396 shares.', 'Highest closing price is more than 17.6% above the lowest.', 'Total shares traded over six months exceed 27.3% of shares outstanding.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Price change ≈ 25.0%.', 'TRUE — Market capitalisation ≈ €22.5 million.', 'FALSE — Peak monthly volume = 87,000.', 'TRUE — Range €28–€35.', 'TRUE — Turnover ≈ 59.6% of shares outstanding.'], '5/5', 152, 'full' ),
 ( '6.5', 'CASE 6.5.153', 'The Four Pillars of Ratio Analysis in Practice', 'Analyze how working capital is defined and why a positive balance is generally preferred to a negative one. Evaluate the following economic assertions:', ARRAY['The current ratio for a publishing house sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'A transport operator reporting negative working capital always holds more cash than it needs for its daily operations.', 'The acid-test ratio for a transport operator includes inventory within current assets before comparing the total with current liabilities.', 'A single return on capital employed figure for a transport operator is always fully meaningful on its own, without any need to compare it against other years or similar businesses.', 'Return on equity for a transport operator is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.'], ARRAY[true, false, false, false, false], ARRAY['TRUE — Current ratio analysis for a publishing house compares current assets with current liabilities.', 'FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.', 'FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.', 'FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.', 'FALSE — Return on equity relates profit before interest and tax to equity, not cash to liabilities.'], '4/5', 153, 'full' ),
 ( '6.5', 'CASE 6.5.154', 'Listed Company Performance Charts 154', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=11
-February | Price=11
-March | Price=11
-April | Price=11
-May | Price=10
-June | Price=9
+January | Price=37
+February | Price=39
+March | Price=42
+April | Price=41
+May | Price=44
+June | Price=45
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=66000
-February | Volume=55000
-March | Volume=19000
-April | Volume=30000
-May | Volume=42000
+January | Volume=67000
+February | Volume=50000
+March | Volume=53000
+April | Volume=75000
+May | Volume=44000
 June | Volume=19000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 11 | 715,000 | 66,000 |
-| February | 11 | 715,000 | 55,000 |
-| March | 11 | 715,000 | 19,000 |
-| April | 11 | 715,000 | 30,000 |
-| May | 10 | 715,000 | 42,000 |
-| June | 9 | 715,000 | 19,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 37 | 67,000 |
+| February | 39 | 50,000 |
+| March | 42 | 53,000 |
+| April | 41 | 75,000 |
+| May | 44 | 44,000 |
+| June | 45 | 19,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 230 |
-| Shares outstanding | 715,000 |
-| Total shares traded (six months) | 231,000 |
+| Operating result (€ thousands) | 320 |
+| Shares outstanding | 427,000 |
+| Total shares traded (six months) | 308,000 |
 
-Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 28.8% from first to last month (see the extract prepared for case 6.5.154).', 'Market capitalisation rose by more than 20.7% over the period (see the extract prepared for case 6.5.154).', 'Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.5.154).', 'Market capitalisation at the last month exceeds €6.1 million (see the extract prepared for case 6.5.154).', 'Operating result is below €210 thousand (see the extract prepared for case 6.5.154).'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ -18.2%.', 'FALSE — €7.9m → €6.4m.', 'FALSE — Rose in 0 of 5 steps.', 'TRUE — Market capitalisation ≈ €6.4 million.', 'FALSE — Operating result = 230.'], '3/5', 154, 'full' ),
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 24.8% from first to last month.', 'Market capitalisation rose by more than 33.8% over the period.', 'Operating result is below €254 thousand.', 'Market capitalisation at the last month exceeds €17.9 million.', 'Earnings per share is exactly €0.65.'], ARRAY[false, false, false, true, false], ARRAY['FALSE — Price change ≈ 21.6%.', 'FALSE — €15.8m → €19.2m.', 'FALSE — Operating result = 320.', 'TRUE — Market capitalisation ≈ €19.2 million.', 'FALSE — Earnings per share ≈ €0.75.'], '3/5', 154, 'full' ),
 ( '6.5', 'CASE 6.5.155', 'Earnings Per Share From Reported Figures 155', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=20
-February | Price=20
-March | Price=21
-April | Price=22
-May | Price=22
-June | Price=22
+January | Price=33
+February | Price=33
+March | Price=33
+April | Price=33
+May | Price=35
+June | Price=41
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=54000
-February | Volume=14000
-March | Volume=32000
-April | Volume=30000
-May | Volume=24000
-June | Volume=58000
+January | Volume=88000
+February | Volume=60000
+March | Volume=67000
+April | Volume=55000
+May | Volume=21000
+June | Volume=59000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 20 | 740,000 | 54,000 |
-| February | 20 | 740,000 | 14,000 |
-| March | 21 | 740,000 | 32,000 |
-| April | 22 | 740,000 | 30,000 |
-| May | 22 | 740,000 | 24,000 |
-| June | 22 | 740,000 | 58,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 33 | 88,000 |
+| February | 33 | 60,000 |
+| March | 33 | 67,000 |
+| April | 33 | 55,000 |
+| May | 35 | 21,000 |
+| June | 41 | 59,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 269 |
-| Shares outstanding | 740,000 |
-| Total shares traded (six months) | 212,000 |
+| Operating result (€ thousands) | 256 |
+| Shares outstanding | 435,000 |
+| Total shares traded (six months) | 350,000 |
 
-Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 37.2% above the lowest.', 'Market capitalisation at the last month exceeds €14.9 million.', 'Total shares traded over six months exceed 21.2% of shares outstanding.', 'Peak monthly share turnover exceeds 61,474 shares.', 'Shares outstanding stay at 740,000 every month.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Range €20–€22.', 'TRUE — Market capitalisation ≈ €16.3 million.', 'TRUE — Turnover ≈ 28.6% of shares outstanding.', 'FALSE — Peak monthly volume = 58,000.', 'TRUE — Shares outstanding unchanged.'], '3/5', 155, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Highest closing price is more than 24.3% above the lowest.', 'Total shares traded over six months exceed 34.3% of shares outstanding.', 'Peak monthly share turnover exceeds 58,884 shares.', 'Operating result is below €221 thousand.', 'Shares outstanding equal 435,000.'], ARRAY[false, true, true, false, true], ARRAY['FALSE — Range €33–€41.', 'TRUE — Turnover ≈ 80.5% of shares outstanding.', 'TRUE — Peak monthly volume = 88,000.', 'FALSE — Operating result = 256.', 'TRUE — Shares outstanding = 435,000.'], '3/5', 155, 'full' ),
 ( '6.5', 'CASE 6.5.156', 'The Four Pillars of Ratio Analysis Explained', 'Analyze how the current ratio and the acid-test ratio each measure short-term liquidity, and why they can diverge for inventory-heavy businesses. Evaluate the following economic assertions:', ARRAY['Return on equity for a publishing house relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.', 'A return on capital employed figure for a publishing house carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'Asset turnover for a publishing house relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a publishing house expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a publishing house draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.'], ARRAY[true, true, true, true, true], ARRAY['TRUE — Return on equity for a publishing house links profit before interest and tax to owners'' equity.', 'TRUE — Return on capital employed for a publishing house is most useful in comparison rather than in isolation.', 'TRUE — Asset turnover measures how much revenue a publishing house generates per unit of average assets.', 'TRUE — Equity ratio analysis for a publishing house expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a publishing house.'], '2/5', 156, 'full' ),
 ( '6.5', 'CASE 6.5.157', 'The Four Pillars of Ratio Analysis for Analysts', 'Consider a listed manufacturer whose shareholders compare its return on equity with sector peers. Evaluate the following economic assertions:', ARRAY['Working capital for a telecommunications provider is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.', 'A telecommunications provider is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.', 'The current ratio for a telecommunications provider sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.', 'Inventory turnover for a transport operator is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.', 'Return on equity for a telecommunications provider relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.'], ARRAY[true, true, true, false, true], ARRAY['TRUE — The standard working capital definition applies to a telecommunications provider: current assets minus current liabilities.', 'TRUE — Positive working capital is generally preferable for a telecommunications provider as a cushion over short-term obligations.', 'TRUE — Current ratio analysis for a telecommunications provider compares current assets with current liabilities.', 'FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.', 'TRUE — Return on equity for a telecommunications provider links profit before interest and tax to owners'' equity.'], '5/5', 157, 'full' ),
 ( '6.5', 'CASE 6.5.158', 'Earnings Per Share From Reported Figures 158', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=16
-February | Price=16
-March | Price=17
+January | Price=21
+February | Price=20
+March | Price=18
 April | Price=17
-May | Price=19
-June | Price=18
+May | Price=16
+June | Price=14
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=53000
-February | Volume=68000
-March | Volume=45000
-April | Volume=44000
-May | Volume=48000
-June | Volume=19000
+January | Volume=68000
+February | Volume=87000
+March | Volume=58000
+April | Volume=57000
+May | Volume=62000
+June | Volume=27000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 16 | 769,000 | 53,000 |
-| February | 16 | 769,000 | 68,000 |
-| March | 17 | 769,000 | 45,000 |
-| April | 17 | 769,000 | 44,000 |
-| May | 19 | 769,000 | 48,000 |
-| June | 18 | 769,000 | 19,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 21 | 68,000 |
+| February | 20 | 87,000 |
+| March | 18 | 58,000 |
+| April | 17 | 57,000 |
+| May | 16 | 62,000 |
+| June | 14 | 27,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 209 |
+| Operating result (€ thousands) | 209 |
 | Shares outstanding | 769,000 |
-| Total shares traded (six months) | 277,000 |
+| Total shares traded (six months) | 359,000 |
 
-Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €11.2 million.', 'Total shares traded over six months exceed 20.4% of shares outstanding.', 'Market capitalisation rose by more than 16.6% over the period.', 'Peak monthly share turnover exceeds 45,083 shares.', 'Shares outstanding stay at 769,000 every month.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €13.8 million.', 'TRUE — Turnover ≈ 36.0% of shares outstanding.', 'FALSE — €12.3m → €13.8m.', 'TRUE — Peak monthly volume = 68,000.', 'TRUE — Shares outstanding unchanged.'], '5/5', 158, 'full' ),
+Evaluate the following economic assertions:', ARRAY['Market capitalisation at the last month exceeds €8.7 million.', 'Highest closing price is more than 39.6% above the lowest.', 'The closing share price rose by more than 33% from first to last month.', 'Total shares traded over six months exceed 20.4% of shares outstanding.', 'Peak monthly share turnover exceeds 57,679 shares.'], ARRAY[true, true, false, true, true], ARRAY['TRUE — Market capitalisation ≈ €10.8 million.', 'TRUE — Range €14–€21.', 'FALSE — Price change ≈ -33.3%.', 'TRUE — Turnover ≈ 46.7% of shares outstanding.', 'TRUE — Peak monthly volume = 87,000.'], '5/5', 158, 'full' ),
 ( '6.5', 'CASE 6.5.159', 'The Four Pillars of Ratio Analysis Across Sectors', 'Analyze how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:', ARRAY['A return on capital employed figure for a telecommunications provider carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.', 'The current ratio and the acid-test ratio for a transport operator always produce identical results, regardless of how much inventory the business holds.', 'Asset turnover for a telecommunications provider relates revenue earned during the period to the average total assets employed to generate that revenue.', 'The equity ratio for a telecommunications provider expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.', 'If a telecommunications provider draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.'], ARRAY[true, false, true, true, true], ARRAY['TRUE — Return on capital employed for a telecommunications provider is most useful in comparison rather than in isolation.', 'FALSE — When inventory is material, the acid-test ratio differs from the current ratio.', 'TRUE — Asset turnover measures how much revenue a telecommunications provider generates per unit of average assets.', 'TRUE — Equity ratio analysis for a telecommunications provider expresses equity as a share of total assets.', 'TRUE — Short-term borrowing can boost cash yet reduce working capital for a telecommunications provider.'], '2/5', 159, 'full' ),
 ( '6.5', 'CASE 6.5.160', 'Listed Company Performance Charts 160', 'Consider the share market extract below for a listed business whose identity is not disclosed.
 
 [[CHART type="line" title="Closing share price"]]
-January | Price=26
-February | Price=27
-March | Price=29
-April | Price=27
-May | Price=27
-June | Price=28
+January | Price=34
+February | Price=35
+March | Price=38
+April | Price=36
+May | Price=38
+June | Price=43
 [[/CHART]]
 
 [[CHART type="bar" title="Monthly share turnover"]]
-January | Volume=62000
-February | Volume=13000
-March | Volume=62000
-April | Volume=34000
-May | Volume=15000
-June | Volume=22000
+January | Volume=79000
+February | Volume=20000
+March | Volume=79000
+April | Volume=45000
+May | Volume=22000
+June | Volume=31000
 [[/CHART]]
 
-| Month | Closing price (€) | Shares outstanding | Shares traded |
-| --- | ---: | ---: | ---: |
-| January | 26 | 447,000 | 62,000 |
-| February | 27 | 447,000 | 13,000 |
-| March | 29 | 447,000 | 62,000 |
-| April | 27 | 447,000 | 34,000 |
-| May | 27 | 447,000 | 15,000 |
-| June | 28 | 447,000 | 22,000 |
+| Month | Closing price (€) | Shares traded |
+| --- | ---: | ---: |
+| January | 34 | 79,000 |
+| February | 35 | 20,000 |
+| March | 38 | 79,000 |
+| April | 36 | 45,000 |
+| May | 38 | 22,000 |
+| June | 43 | 31,000 |
 
-| Annual figures (€ thousands) | Amount |
+| Annual figures | Amount |
 | --- | ---: |
-| Operating result | 298 |
+| Operating result (€ thousands) | 298 |
 | Shares outstanding | 447,000 |
-| Total shares traded (six months) | 208,000 |
+| Total shares traded (six months) | 276,000 |
 
-Evaluate the following economic assertions:', ARRAY['Earnings per share exceeds €0.61.', 'Total shares traded over six months exceed 16.1% of shares outstanding.', 'The closing share price rose by more than 14.4% from first to last month.', 'Market capitalisation rose by more than 28.5% over the period.', 'Peak monthly share turnover exceeds 40,542 shares.'], ARRAY[true, true, false, false, true], ARRAY['TRUE — Earnings per share ≈ €0.67.', 'TRUE — Turnover ≈ 46.5% of shares outstanding.', 'FALSE — Price change ≈ 7.7%.', 'FALSE — €11.6m → €12.5m.', 'TRUE — Peak monthly volume = 62,000.'], '5/5', 160, 'full' )
+Evaluate the following economic assertions:', ARRAY['The closing share price rose by more than 14.4% from first to last month.', 'Earnings per share exceeds €0.61.', 'Market capitalisation rose by more than 28.5% over the period.', 'Highest closing price is more than 43.9% above the lowest.', 'Total shares traded over six months exceed 16.1% of shares outstanding.'], ARRAY[true, true, false, false, true], ARRAY['TRUE — Price change ≈ 26.5%.', 'TRUE — Earnings per share ≈ €0.67.', 'FALSE — €15.2m → €19.2m.', 'FALSE — Range €34–€43.', 'TRUE — Turnover ≈ 61.7% of shares outstanding.'], '5/5', 160, 'full' )
 ON CONFLICT (case_id, tier) DO UPDATE SET
   subsection = EXCLUDED.subsection,
   title = EXCLUDED.title,

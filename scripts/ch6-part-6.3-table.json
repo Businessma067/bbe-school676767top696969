@@ -99,10 +99,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=429\nCurrent liabilities=263\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 320 |\n| Machinery | 167 |\n| Office equipment | 55 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 265 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 93 |\n| Total assets | **1004** |\n| **EQUITY** | |\n| Share capital | 279 |\n| Retained earnings | 94 |\n| Total equity | **373** |\n| **LIABILITIES** | |\n| Long-term bank loan | 292 |\n| Bonds payable | 76 |\n| Trade payables | 225 |\n| Bank overdraft | 38 |\n| Total liabilities | **631** |\n| Total equity and liabilities | **1004** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The current ratio is below 1.22.",
-      "The current ratio exceeds 1.57.",
       "Inventory make up more than 52.1% of current assets.",
+      "Trade receivables make up less than 38.6% of current assets.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.",
-      "Trade receivables make up less than 38.6% of current assets."
+      "Cash and cash equivalents make up more than 18.9% of current assets."
     ],
     "answer_key": [
       false,
@@ -113,10 +113,10 @@
     ],
     "tactical_explanations": [
       "FALSE — Current ratio ≈ 1.63.",
-      "TRUE — Current ratio ≈ 1.63.",
       "TRUE — Inventory are about 61.8% of current assets.",
+      "TRUE — Trade receivables are about 16.6% of current assets.",
       "FALSE — Acid-test ratio ≈ 0.62.",
-      "TRUE — Trade receivables are about 16.6% of current assets."
+      "TRUE — Cash and cash equivalents are about 21.7% of current assets."
     ]
   },
   {
@@ -1112,17 +1112,17 @@
   {
     "subsection": "6.3",
     "case_id": "CASE 6.3.070",
-    "title": "Profit and Loss Over Two Years 70",
+    "title": "Gearing From Comparative Figures 70",
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=916 | Operating result=291\nYear 2 | Revenue=1027 | Operating result=304\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 916 | 1027 |\n| Cost of sales | (538) | (613) |\n| Gross profit | 378 | 414 |\n| Distribution costs | (50) | (60) |\n| General and administrative costs | (37) | (47) |\n| Other operating result | 0 | (3) |\n| Operating result | 291 | 304 |\n| Finance costs | (16) | (21) |\n| Finance costs – net | (13) | (15) |\n| Profit before tax | 278 | 289 |\n| Income taxes | (60) | (63) |\n| Profit for the year | 218 | 226 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=568 | Total assets=1129\nYear 2 | Equity=636 | Total assets=1269\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 291 | 333 |\n| Machinery | 278 | 320 |\n| Office equipment | 56 | 64 |\n| Patents, trademarks and licences | 95 | 95 |\n| Inventory | 191 | 216 |\n| Trade receivables | 151 | 161 |\n| Cash and cash equivalents | 67 | 80 |\n| Total assets | **1129** | **1269** |\n| **EQUITY** | | |\n| Share capital | 227 | 227 |\n| Retained earnings | 341 | 409 |\n| Total equity | **568** | **636** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 384 | 434 |\n| Bonds payable | 47 | 53 |\n| Trade payables | 63 | 71 |\n| Bank overdraft | 67 | 75 |\n| Total liabilities | **561** | **633** |\n| Total equity and liabilities | **1129** | **1269** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Finance costs grew by more than 11.9% between Year 1 and Year 2, outpacing the growth in the operating result (see the extract prepared for case 6.3.070).",
-      "The operating result covers finance costs more than 5.01 times over in Year 1 (see the extract prepared for case 6.3.070).",
-      "The operating margin, operating result taken as a share of revenue, exceeds 8.4% in Year 2 (see the extract prepared for case 6.3.070).",
-      "Cost of sales is deducted from revenue to arrive at gross profit (see the extract prepared for case 6.3.070).",
-      "Revenue grew by exactly 12.1% from Year 1 to Year 2 (see the extract prepared for case 6.3.070)."
+      "Total assets grew by more than 6.1% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 67.8% of total equity in Year 1.",
+      "Non-current assets make up more than 63.8% of total assets in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 37.3% in Year 1.",
+      "Trade payables of €71 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
     ],
     "answer_key": [
       true,
@@ -1132,11 +1132,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Finance costs moved from 16 to 21; operating result moved from 291 to 304.",
-      "TRUE — Interest coverage in Year 1 ≈ 18.2 times.",
-      "TRUE — Operating margin in Year 2 ≈ 29.6%.",
-      "TRUE — Gross profit = revenue − cost of sales.",
-      "TRUE — Actual revenue growth ≈ 12.1%."
+      "TRUE — Total assets changed by about 12.4% between the two years.",
+      "TRUE — Non-current liabilities are about 75.9% of equity in Year 1.",
+      "TRUE — Non-current assets are about 64.0% of total assets in Year 2.",
+      "TRUE — Long-term financing covers non-current assets by about 38.7% in Year 1.",
+      "TRUE — Trade payables are a current liability regardless of the amount."
     ]
   },
   {
@@ -1356,11 +1356,11 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=32\nMarch | Price=31\nApril | Price=32\nMay | Price=30\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=36000\nFebruary | Volume=31000\nMarch | Volume=13000\nApril | Volume=37000\nMay | Volume=31000\nJune | Volume=13000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 31 | 681,000 | 36,000 |\n| February | 32 | 681,000 | 31,000 |\n| March | 31 | 681,000 | 13,000 |\n| April | 32 | 681,000 | 37,000 |\n| May | 30 | 681,000 | 31,000 |\n| June | 29 | 681,000 | 13,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 230 |\n| Shares outstanding | 681,000 |\n| Total shares traded (six months) | 161,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=38\nMarch | Price=36\nApril | Price=36\nMay | Price=34\nJune | Price=41\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=48000\nFebruary | Volume=41000\nMarch | Volume=20000\nApril | Volume=49000\nMay | Volume=41000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 48,000 |\n| February | 38 | 41,000 |\n| March | 36 | 20,000 |\n| April | 36 | 49,000 |\n| May | 34 | 41,000 |\n| June | 41 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 230 |\n| Shares outstanding | 681,000 |\n| Total shares traded (six months) | 219,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €17.9 million.",
+      "Market capitalisation at the last month exceeds €25.4 million.",
+      "Earnings per share exceeds €0.26.",
       "Total shares traded over six months exceed 20% of shares outstanding.",
-      "Peak monthly share turnover exceeds 26,034 shares.",
       "The closing share price rose by more than 14.6% from first to last month.",
       "Market capitalisation rose by more than 18.5% over the period."
     ],
@@ -1372,11 +1372,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €19.7 million.",
-      "TRUE — Turnover ≈ 23.6% of shares outstanding.",
-      "TRUE — Peak monthly volume = 37,000.",
-      "FALSE — Price change ≈ -6.5%.",
-      "FALSE — €21.1m → €19.7m."
+      "TRUE — Market capitalisation ≈ €27.9 million.",
+      "TRUE — Earnings per share ≈ €0.34.",
+      "TRUE — Turnover ≈ 32.2% of shares outstanding.",
+      "FALSE — Price change ≈ 7.9%.",
+      "FALSE — €25.9m → €27.9m."
     ]
   },
   {
@@ -1386,13 +1386,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=18\nMarch | Price=18\nApril | Price=18\nMay | Price=18\nJune | Price=19\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=54000\nFebruary | Volume=58000\nMarch | Volume=61000\nApril | Volume=56000\nMay | Volume=42000\nJune | Volume=67000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 17 | 587,000 | 54,000 |\n| February | 18 | 587,000 | 58,000 |\n| March | 18 | 587,000 | 61,000 |\n| April | 18 | 587,000 | 56,000 |\n| May | 18 | 587,000 | 42,000 |\n| June | 19 | 587,000 | 67,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 315 |\n| Shares outstanding | 587,000 |\n| Total shares traded (six months) | 338,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=37\nMarch | Price=37\nApril | Price=37\nMay | Price=35\nJune | Price=41\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=66000\nFebruary | Volume=83000\nMarch | Volume=21000\nApril | Volume=19000\nMay | Volume=77000\nJune | Volume=86000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 66,000 |\n| February | 37 | 83,000 |\n| March | 37 | 21,000 |\n| April | 37 | 19,000 |\n| May | 35 | 77,000 |\n| June | 41 | 86,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 232 |\n| Shares outstanding | 418,000 |\n| Total shares traded (six months) | 352,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Peak monthly share turnover exceeds 51,454 shares.",
-      "The closing share price rose by more than 32.2% from first to last month.",
-      "Shares outstanding stay at 587,000 every month.",
-      "Highest closing price is more than 12.6% above the lowest.",
-      "Operating result is below €288 thousand."
+      "Market capitalisation at the last month exceeds €14.9 million.",
+      "The closing share price rose by more than 26.9% from first to last month.",
+      "Total shares traded over six months exceed 11.3% of shares outstanding.",
+      "Market capitalisation rose by more than 16.9% over the period.",
+      "Highest closing price is more than 27.7% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1402,11 +1402,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Peak monthly volume = 67,000.",
-      "FALSE — Price change ≈ 11.8%.",
-      "TRUE — Shares outstanding unchanged.",
-      "FALSE — Range €17–€19.",
-      "FALSE — Operating result = 315."
+      "TRUE — Market capitalisation ≈ €17.1 million.",
+      "FALSE — Price change ≈ 7.9%.",
+      "TRUE — Turnover ≈ 84.2% of shares outstanding.",
+      "FALSE — €15.9m → €17.1m.",
+      "FALSE — Range €35–€41."
     ]
   },
   {
@@ -1416,13 +1416,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=22\nMarch | Price=20\nApril | Price=21\nMay | Price=20\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=60000\nMarch | Volume=68000\nApril | Volume=49000\nMay | Volume=45000\nJune | Volume=17000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 20 | 737,000 | 34,000 |\n| February | 22 | 737,000 | 60,000 |\n| March | 20 | 737,000 | 68,000 |\n| April | 21 | 737,000 | 49,000 |\n| May | 20 | 737,000 | 45,000 |\n| June | 20 | 737,000 | 17,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 200 |\n| Shares outstanding | 737,000 |\n| Total shares traded (six months) | 273,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=24\nMarch | Price=25\nApril | Price=25\nMay | Price=25\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=77000\nMarch | Volume=61000\nApril | Volume=74000\nMay | Volume=65000\nJune | Volume=57000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 23 | 40,000 |\n| February | 24 | 77,000 |\n| March | 25 | 61,000 |\n| April | 25 | 74,000 |\n| May | 25 | 65,000 |\n| June | 29 | 57,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 287 |\n| Shares outstanding | 515,000 |\n| Total shares traded (six months) | 374,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €11.2 million (see the extract prepared for case 6.3.083).",
-      "The closing share price rose by more than 8.6% from first to last month (see the extract prepared for case 6.3.083).",
-      "Market capitalisation rose by more than 34.3% over the period (see the extract prepared for case 6.3.083).",
-      "Highest closing price is more than 31.3% above the lowest (see the extract prepared for case 6.3.083).",
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.083)."
+      "Market capitalisation at the last month exceeds €13 million.",
+      "The closing share price rose by more than 28.2% from first to last month.",
+      "Market capitalisation rose by more than 29.5% over the period.",
+      "Highest closing price is more than 28.1% above the lowest.",
+      "Operating result is below €238 thousand."
     ],
     "answer_key": [
       true,
@@ -1432,11 +1432,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €14.7 million.",
-      "FALSE — Price change ≈ 0.0%.",
-      "FALSE — €14.7m → €14.7m.",
-      "FALSE — Range €20–€22.",
-      "FALSE — Peak price month vs peak volume month."
+      "TRUE — Market capitalisation ≈ €14.9 million.",
+      "FALSE — Price change ≈ 26.1%.",
+      "FALSE — €11.8m → €14.9m.",
+      "FALSE — Range €23–€29.",
+      "FALSE — Operating result = 287."
     ]
   },
   {
@@ -1446,13 +1446,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=29\nMarch | Price=30\nApril | Price=33\nMay | Price=29\nJune | Price=27\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=69000\nMarch | Volume=51000\nApril | Volume=36000\nMay | Volume=40000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 29 | 752,000 | 34,000 |\n| February | 29 | 752,000 | 69,000 |\n| March | 30 | 752,000 | 51,000 |\n| April | 33 | 752,000 | 36,000 |\n| May | 29 | 752,000 | 40,000 |\n| June | 27 | 752,000 | 63,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n| Shares outstanding | 752,000 |\n| Total shares traded (six months) | 293,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=33\nMarch | Price=32\nApril | Price=32\nMay | Price=28\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=88000\nMarch | Volume=66000\nApril | Volume=47000\nMay | Volume=52000\nJune | Volume=80000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 45,000 |\n| February | 33 | 88,000 |\n| March | 32 | 66,000 |\n| April | 32 | 47,000 |\n| May | 28 | 52,000 |\n| June | 25 | 80,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 192 |\n| Shares outstanding | 752,000 |\n| Total shares traded (six months) | 378,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The closing share price rose by more than 16.1% from first to last month.",
-      "Market capitalisation at the last month exceeds €17.3 million.",
+      "Market capitalisation at the last month exceeds €16 million.",
       "Market capitalisation rose by more than 24.1% over the period.",
       "Total shares traded over six months exceed 36.3% of shares outstanding.",
-      "Peak monthly share turnover exceeds 57,516 shares."
+      "Peak monthly share turnover exceeds 73,354 shares."
     ],
     "answer_key": [
       false,
@@ -1462,11 +1462,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -6.9%.",
-      "TRUE — Market capitalisation ≈ €20.3 million.",
-      "FALSE — €21.8m → €20.3m.",
-      "TRUE — Turnover ≈ 39.0% of shares outstanding.",
-      "TRUE — Peak monthly volume = 69,000."
+      "FALSE — Price change ≈ -28.6%.",
+      "TRUE — Market capitalisation ≈ €18.8 million.",
+      "FALSE — €26.3m → €18.8m.",
+      "TRUE — Turnover ≈ 50.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 88,000."
     ]
   },
   {
@@ -1476,13 +1476,13 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=20\nMarch | Price=18\nApril | Price=18\nMay | Price=16\nJune | Price=15\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=58000\nMarch | Volume=19000\nApril | Volume=36000\nMay | Volume=45000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 596,000 | 29,000 |\n| February | 20 | 596,000 | 58,000 |\n| March | 18 | 596,000 | 19,000 |\n| April | 18 | 596,000 | 36,000 |\n| May | 16 | 596,000 | 45,000 |\n| June | 15 | 596,000 | 47,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 249 |\n| Shares outstanding | 596,000 |\n| Total shares traded (six months) | 234,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=37\nMarch | Price=36\nApril | Price=36\nMay | Price=34\nJune | Price=43\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=90000\nMarch | Volume=39000\nApril | Volume=38000\nMay | Volume=20000\nJune | Volume=26000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 40,000 |\n| February | 37 | 90,000 |\n| March | 36 | 39,000 |\n| April | 36 | 38,000 |\n| May | 34 | 20,000 |\n| June | 43 | 26,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 266 |\n| Shares outstanding | 671,000 |\n| Total shares traded (six months) | 253,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The closing share price rose by more than 19.6% from first to last month (see the extract prepared for case 6.3.085).",
-      "Market capitalisation at the last month exceeds €8.3 million (see the extract prepared for case 6.3.085).",
-      "Market capitalisation rose by more than 28.5% over the period (see the extract prepared for case 6.3.085).",
-      "Peak monthly share turnover exceeds 62,141 shares (see the extract prepared for case 6.3.085).",
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.085)."
+      "The closing share price rose by more than 19.5% from first to last month.",
+      "Market capitalisation at the last month exceeds €23.2 million.",
+      "Market capitalisation rose by more than 20% over the period.",
+      "Peak monthly share turnover exceeds 99,409 shares.",
+      "Operating result is below €239 thousand."
     ],
     "answer_key": [
       false,
@@ -1492,11 +1492,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -34.8%.",
-      "TRUE — Market capitalisation ≈ €8.9 million.",
-      "FALSE — €13.7m → €8.9m.",
-      "FALSE — Peak monthly volume = 58,000.",
-      "FALSE — Peak price month vs peak volume month."
+      "FALSE — Price change ≈ 13.2%.",
+      "TRUE — Market capitalisation ≈ €28.9 million.",
+      "FALSE — €25.5m → €28.9m.",
+      "FALSE — Peak monthly volume = 90,000.",
+      "FALSE — Operating result = 266."
     ]
   },
   {
@@ -1506,13 +1506,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=26\nMarch | Price=25\nApril | Price=22\nMay | Price=24\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=52000\nFebruary | Volume=70000\nMarch | Volume=53000\nApril | Volume=48000\nMay | Volume=60000\nJune | Volume=28000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 763,000 | 52,000 |\n| February | 26 | 763,000 | 70,000 |\n| March | 25 | 763,000 | 53,000 |\n| April | 22 | 763,000 | 48,000 |\n| May | 24 | 763,000 | 60,000 |\n| June | 22 | 763,000 | 28,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 253 |\n| Shares outstanding | 763,000 |\n| Total shares traded (six months) | 311,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=33\nFebruary | Price=32\nMarch | Price=31\nApril | Price=29\nMay | Price=29\nJune | Price=27\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=67000\nFebruary | Volume=88000\nMarch | Volume=68000\nApril | Volume=62000\nMay | Volume=77000\nJune | Volume=38000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 33 | 67,000 |\n| February | 32 | 88,000 |\n| March | 31 | 68,000 |\n| April | 29 | 62,000 |\n| May | 29 | 77,000 |\n| June | 27 | 38,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 253 |\n| Shares outstanding | 763,000 |\n| Total shares traded (six months) | 400,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €13.4 million (see the extract prepared for case 6.3.086).",
-      "Earnings per share exceeds €0.31 (see the extract prepared for case 6.3.086).",
-      "Total shares traded over six months exceed 12.5% of shares outstanding (see the extract prepared for case 6.3.086).",
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.086).",
-      "Shares outstanding stay at 763,000 every month (see the extract prepared for case 6.3.086)."
+      "Market capitalisation at the last month exceeds €16.5 million.",
+      "Total shares traded over six months exceed 12.5% of shares outstanding.",
+      "Shares outstanding equal 763,000.",
+      "Earnings per share is exactly €0.33.",
+      "With unchanged shares outstanding, rising market capitalisation means the share price rose."
     ],
     "answer_key": [
       true,
@@ -1522,11 +1522,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €16.8 million.",
+      "TRUE — Market capitalisation ≈ €20.6 million.",
+      "TRUE — Turnover ≈ 52.4% of shares outstanding.",
+      "TRUE — Shares outstanding = 763,000.",
       "TRUE — Earnings per share ≈ €0.33.",
-      "TRUE — Turnover ≈ 40.8% of shares outstanding.",
-      "TRUE — Peak price month vs peak volume month.",
-      "TRUE — Shares outstanding unchanged."
+      "TRUE — Market capitalisation = price × shares."
     ]
   },
   {
@@ -1536,13 +1536,13 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=24\nMarch | Price=24\nApril | Price=26\nMay | Price=28\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=69000\nFebruary | Volume=61000\nMarch | Volume=68000\nApril | Volume=37000\nMay | Volume=18000\nJune | Volume=66000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 21 | 614,000 | 69,000 |\n| February | 24 | 614,000 | 61,000 |\n| March | 24 | 614,000 | 68,000 |\n| April | 26 | 614,000 | 37,000 |\n| May | 28 | 614,000 | 18,000 |\n| June | 28 | 614,000 | 66,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 294 |\n| Shares outstanding | 614,000 |\n| Total shares traded (six months) | 319,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=22\nFebruary | Price=23\nMarch | Price=25\nApril | Price=27\nMay | Price=29\nJune | Price=31\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=22000\nFebruary | Volume=85000\nMarch | Volume=40000\nApril | Volume=64000\nMay | Volume=35000\nJune | Volume=77000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 22 | 22,000 |\n| February | 23 | 85,000 |\n| March | 25 | 40,000 |\n| April | 27 | 64,000 |\n| May | 29 | 35,000 |\n| June | 31 | 77,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 216 |\n| Shares outstanding | 779,000 |\n| Total shares traded (six months) | 323,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The closing share price rose by more than 29.7% from first to last month.",
-      "Market capitalisation at the last month exceeds €15.7 million.",
-      "Market capitalisation rose by more than 26.6% over the period.",
-      "Highest closing price is more than 27.2% above the lowest.",
-      "Total shares traded over six months exceed 32.3% of shares outstanding."
+      "The closing share price rose by more than 27.9% from first to last month.",
+      "Market capitalisation at the last month exceeds €20 million.",
+      "Market capitalisation rose by more than 27.1% over the period.",
+      "Highest closing price is more than 33.2% above the lowest.",
+      "Total shares traded over six months exceed 38.3% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1552,11 +1552,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Price change ≈ 33.3%.",
-      "TRUE — Market capitalisation ≈ €17.2 million.",
-      "TRUE — €12.9m → €17.2m.",
-      "TRUE — Range €21–€28.",
-      "TRUE — Turnover ≈ 52.0% of shares outstanding."
+      "TRUE — Price change ≈ 40.9%.",
+      "TRUE — Market capitalisation ≈ €24.1 million.",
+      "TRUE — €17.1m → €24.1m.",
+      "TRUE — Range €22–€31.",
+      "TRUE — Turnover ≈ 41.5% of shares outstanding."
     ]
   },
   {
@@ -1566,13 +1566,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=22\nMarch | Price=24\nApril | Price=24\nMay | Price=24\nJune | Price=26\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=41000\nFebruary | Volume=49000\nMarch | Volume=28000\nApril | Volume=41000\nMay | Volume=17000\nJune | Volume=41000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 640,000 | 41,000 |\n| February | 22 | 640,000 | 49,000 |\n| March | 24 | 640,000 | 28,000 |\n| April | 24 | 640,000 | 41,000 |\n| May | 24 | 640,000 | 17,000 |\n| June | 26 | 640,000 | 41,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 214 |\n| Shares outstanding | 640,000 |\n| Total shares traded (six months) | 217,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=29\nMarch | Price=30\nApril | Price=30\nMay | Price=29\nJune | Price=36\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=53000\nFebruary | Volume=63000\nMarch | Volume=38000\nApril | Volume=53000\nMay | Volume=24000\nJune | Volume=54000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 30 | 53,000 |\n| February | 29 | 63,000 |\n| March | 30 | 38,000 |\n| April | 30 | 53,000 |\n| May | 29 | 24,000 |\n| June | 36 | 54,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 214 |\n| Shares outstanding | 640,000 |\n| Total shares traded (six months) | 285,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €13.3 million.",
+      "Market capitalisation rose by more than 15.7% over the period.",
       "Total shares traded over six months exceed 23.5% of shares outstanding.",
-      "Peak monthly share turnover exceeds 33,975 shares.",
+      "Peak monthly share turnover exceeds 43,682 shares.",
       "The closing share price rose by more than 26.4% from first to last month.",
-      "Shares outstanding stay at 640,000 every month."
+      "Shares outstanding equal 640,000."
     ],
     "answer_key": [
       true,
@@ -1582,11 +1582,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €16.6 million.",
-      "TRUE — Turnover ≈ 33.9% of shares outstanding.",
-      "TRUE — Peak monthly volume = 49,000.",
-      "FALSE — Price change ≈ 13.0%.",
-      "TRUE — Shares outstanding unchanged."
+      "TRUE — €19.2m → €23.0m.",
+      "TRUE — Turnover ≈ 44.5% of shares outstanding.",
+      "TRUE — Peak monthly volume = 63,000.",
+      "FALSE — Price change ≈ 20.0%.",
+      "TRUE — Shares outstanding = 640,000."
     ]
   },
   {
@@ -1596,13 +1596,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=33\nMarch | Price=37\nApril | Price=41\nMay | Price=45\nJune | Price=46\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=46000\nFebruary | Volume=52000\nMarch | Volume=62000\nApril | Volume=30000\nMay | Volume=59000\nJune | Volume=71000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 34 | 739,000 | 46,000 |\n| February | 33 | 739,000 | 52,000 |\n| March | 37 | 739,000 | 62,000 |\n| April | 41 | 739,000 | 30,000 |\n| May | 45 | 739,000 | 59,000 |\n| June | 46 | 739,000 | 71,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 280 |\n| Shares outstanding | 739,000 |\n| Total shares traded (six months) | 320,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=42\nFebruary | Price=43\nMarch | Price=47\nApril | Price=51\nMay | Price=55\nJune | Price=57\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=60000\nFebruary | Volume=67000\nMarch | Volume=79000\nApril | Volume=40000\nMay | Volume=76000\nJune | Volume=90000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 42 | 60,000 |\n| February | 43 | 67,000 |\n| March | 47 | 79,000 |\n| April | 51 | 40,000 |\n| May | 55 | 76,000 |\n| June | 57 | 90,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 280 |\n| Shares outstanding | 739,000 |\n| Total shares traded (six months) | 412,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The closing share price rose by more than 14.3% from first to last month.",
-      "Market capitalisation at the last month exceeds €29 million.",
+      "Market capitalisation at the last month exceeds €35.9 million.",
       "Market capitalisation rose by more than 9.1% over the period.",
-      "Highest closing price is more than 36.2% above the lowest.",
-      "Operating result is below €207 thousand."
+      "Total shares traded over six months exceed 33.5% of shares outstanding.",
+      "Highest closing price is more than 36.2% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1612,11 +1612,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Price change ≈ 35.3%.",
-      "TRUE — Market capitalisation ≈ €34.0 million.",
-      "TRUE — €25.1m → €34.0m.",
-      "TRUE — Range €33–€46.",
-      "FALSE — Operating result = 280."
+      "TRUE — Price change ≈ 35.7%.",
+      "TRUE — Market capitalisation ≈ €42.1 million.",
+      "TRUE — €31.0m → €42.1m.",
+      "TRUE — Turnover ≈ 55.8% of shares outstanding.",
+      "FALSE — Range €42–€57."
     ]
   },
   {
@@ -1626,13 +1626,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=16\nFebruary | Price=18\nMarch | Price=19\nApril | Price=20\nMay | Price=23\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=67000\nFebruary | Volume=27000\nMarch | Volume=14000\nApril | Volume=31000\nMay | Volume=23000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 16 | 468,000 | 67,000 |\n| February | 18 | 468,000 | 27,000 |\n| March | 19 | 468,000 | 14,000 |\n| April | 20 | 468,000 | 31,000 |\n| May | 23 | 468,000 | 23,000 |\n| June | 25 | 468,000 | 20,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 319 |\n| Shares outstanding | 468,000 |\n| Total shares traded (six months) | 182,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=29\nMarch | Price=28\nApril | Price=29\nMay | Price=30\nJune | Price=35\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=41000\nFebruary | Volume=85000\nMarch | Volume=76000\nApril | Volume=87000\nMay | Volume=53000\nJune | Volume=54000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 28 | 41,000 |\n| February | 29 | 85,000 |\n| March | 28 | 76,000 |\n| April | 29 | 87,000 |\n| May | 30 | 53,000 |\n| June | 35 | 54,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 265 |\n| Shares outstanding | 599,000 |\n| Total shares traded (six months) | 396,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.091).",
-      "The closing share price rose by more than 16.8% from first to last month (see the extract prepared for case 6.3.091).",
-      "The last closing price is below the first (see the extract prepared for case 6.3.091).",
-      "Market capitalisation at the last month exceeds €9.2 million (see the extract prepared for case 6.3.091).",
-      "Market capitalisation rose by more than 30% over the period (see the extract prepared for case 6.3.091)."
+      "The closing share price rose by more than 32% from first to last month.",
+      "Market capitalisation at the last month exceeds €19.8 million.",
+      "Market capitalisation rose by more than 34.8% over the period.",
+      "Highest closing price is more than 13.1% above the lowest.",
+      "Total shares traded over six months exceed 17% of shares outstanding."
     ],
     "answer_key": [
       false,
@@ -1642,11 +1642,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Peak price month vs peak volume month.",
-      "TRUE — Price change ≈ 56.3%.",
-      "FALSE — 16 → 25.",
-      "TRUE — Market capitalisation ≈ €11.7 million.",
-      "TRUE — €7.5m → €11.7m."
+      "FALSE — Price change ≈ 25.0%.",
+      "TRUE — Market capitalisation ≈ €21.0 million.",
+      "FALSE — €16.8m → €21.0m.",
+      "TRUE — Range €28–€35.",
+      "TRUE — Turnover ≈ 66.1% of shares outstanding."
     ]
   },
   {
@@ -1656,13 +1656,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=18\nApril | Price=19\nMay | Price=19\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=28000\nMarch | Volume=69000\nApril | Volume=52000\nMay | Volume=43000\nJune | Volume=66000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 19 | 731,000 | 40,000 |\n| February | 18 | 731,000 | 28,000 |\n| March | 18 | 731,000 | 69,000 |\n| April | 19 | 731,000 | 52,000 |\n| May | 19 | 731,000 | 43,000 |\n| June | 21 | 731,000 | 66,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 258 |\n| Shares outstanding | 731,000 |\n| Total shares traded (six months) | 298,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=23\nMarch | Price=22\nApril | Price=22\nMay | Price=21\nJune | Price=26\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=52000\nFebruary | Volume=37000\nMarch | Volume=87000\nApril | Volume=67000\nMay | Volume=55000\nJune | Volume=84000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 25 | 52,000 |\n| February | 23 | 37,000 |\n| March | 22 | 87,000 |\n| April | 22 | 67,000 |\n| May | 21 | 55,000 |\n| June | 26 | 84,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 258 |\n| Shares outstanding | 731,000 |\n| Total shares traded (six months) | 382,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €12.8 million.",
+      "Market capitalisation at the last month exceeds €15.8 million.",
       "The closing share price rose by more than 32.8% from first to last month.",
       "Total shares traded over six months exceed 33% of shares outstanding.",
-      "Peak monthly share turnover exceeds 60,237 shares.",
-      "Shares outstanding stay at 731,000 every month."
+      "Peak monthly share turnover exceeds 75,951 shares.",
+      "Shares outstanding equal 731,000."
     ],
     "answer_key": [
       true,
@@ -1672,11 +1672,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €15.4 million.",
-      "FALSE — Price change ≈ 10.5%.",
-      "TRUE — Turnover ≈ 40.8% of shares outstanding.",
-      "TRUE — Peak monthly volume = 69,000.",
-      "TRUE — Shares outstanding unchanged."
+      "TRUE — Market capitalisation ≈ €19.0 million.",
+      "FALSE — Price change ≈ 4.0%.",
+      "TRUE — Turnover ≈ 52.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 87,000.",
+      "TRUE — Shares outstanding = 731,000."
     ]
   },
   {
@@ -1686,13 +1686,13 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=28\nMarch | Price=30\nApril | Price=27\nMay | Price=25\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=14000\nMarch | Volume=20000\nApril | Volume=50000\nMay | Volume=31000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 780,000 | 45,000 |\n| February | 28 | 780,000 | 14,000 |\n| March | 30 | 780,000 | 20,000 |\n| April | 27 | 780,000 | 50,000 |\n| May | 25 | 780,000 | 31,000 |\n| June | 24 | 780,000 | 47,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 273 |\n| Shares outstanding | 780,000 |\n| Total shares traded (six months) | 207,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=33\nFebruary | Price=37\nMarch | Price=39\nApril | Price=39\nMay | Price=39\nJune | Price=40\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=58000\nFebruary | Volume=21000\nMarch | Volume=28000\nApril | Volume=65000\nMay | Volume=41000\nJune | Volume=61000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 33 | 58,000 |\n| February | 37 | 21,000 |\n| March | 39 | 28,000 |\n| April | 39 | 65,000 |\n| May | 39 | 41,000 |\n| June | 40 | 61,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 273 |\n| Shares outstanding | 780,000 |\n| Total shares traded (six months) | 274,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
+      "Highest closing price is more than 25.5% above the lowest.",
       "The closing share price rose by more than 9.6% from first to last month.",
-      "Market capitalisation at the last month exceeds €14.8 million.",
-      "Peak monthly share turnover exceeds 40,946 shares.",
-      "Market capitalisation rose by more than 19.3% over the period.",
-      "Shares outstanding stay at 780,000 every month."
+      "Market capitalisation at the last month exceeds €24.7 million.",
+      "Operating result is below €228 thousand.",
+      "Market capitalisation rose by more than 19.3% over the period."
     ],
     "answer_key": [
       false,
@@ -1702,11 +1702,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -4.0%.",
-      "TRUE — Market capitalisation ≈ €18.7 million.",
-      "TRUE — Peak monthly volume = 50,000.",
-      "FALSE — €19.5m → €18.7m.",
-      "TRUE — Shares outstanding unchanged."
+      "FALSE — Range €33–€40.",
+      "TRUE — Price change ≈ 21.2%.",
+      "TRUE — Market capitalisation ≈ €31.2 million.",
+      "FALSE — Operating result = 273.",
+      "TRUE — €25.7m → €31.2m."
     ]
   },
   {
@@ -1716,13 +1716,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=36\nMarch | Price=37\nApril | Price=41\nMay | Price=40\nJune | Price=42\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=22000\nFebruary | Volume=35000\nMarch | Volume=65000\nApril | Volume=31000\nMay | Volume=63000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 35 | 518,000 | 22,000 |\n| February | 36 | 518,000 | 35,000 |\n| March | 37 | 518,000 | 65,000 |\n| April | 41 | 518,000 | 31,000 |\n| May | 40 | 518,000 | 63,000 |\n| June | 42 | 518,000 | 59,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 232 |\n| Shares outstanding | 518,000 |\n| Total shares traded (six months) | 275,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=19\nMarch | Price=19\nApril | Price=19\nMay | Price=19\nJune | Price=23\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=30000\nFebruary | Volume=52000\nMarch | Volume=51000\nApril | Volume=35000\nMay | Volume=54000\nJune | Volume=80000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 30,000 |\n| February | 19 | 52,000 |\n| March | 19 | 51,000 |\n| April | 19 | 35,000 |\n| May | 19 | 54,000 |\n| June | 23 | 80,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 265 |\n| Shares outstanding | 760,000 |\n| Total shares traded (six months) | 302,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €20.6 million.",
-      "Market capitalisation rose by more than 33.3% over the period.",
-      "Total shares traded over six months exceed 30% of shares outstanding.",
-      "Highest closing price is more than 32.1% above the lowest.",
-      "Peak monthly share turnover exceeds 61,254 shares."
+      "Market capitalisation at the last month exceeds €13.8 million.",
+      "The closing share price rose by more than 29.1% from first to last month.",
+      "Market capitalisation rose by more than 9% over the period.",
+      "Operating result is below €207 thousand.",
+      "Highest closing price is more than 14.8% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1732,11 +1732,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €21.8 million.",
-      "FALSE — €18.1m → €21.8m.",
-      "TRUE — Turnover ≈ 53.1% of shares outstanding.",
-      "FALSE — Range €35–€42.",
-      "TRUE — Peak monthly volume = 65,000."
+      "TRUE — Market capitalisation ≈ €17.5 million.",
+      "FALSE — Price change ≈ 21.1%.",
+      "TRUE — €14.4m → €17.5m.",
+      "FALSE — Operating result = 265.",
+      "TRUE — Range €19–€23."
     ]
   },
   {
@@ -1746,13 +1746,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=23\nMarch | Price=21\nApril | Price=19\nMay | Price=19\nJune | Price=19\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=35000\nFebruary | Volume=32000\nMarch | Volume=17000\nApril | Volume=34000\nMay | Volume=41000\nJune | Volume=73000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 24 | 840,000 | 35,000 |\n| February | 23 | 840,000 | 32,000 |\n| March | 21 | 840,000 | 17,000 |\n| April | 19 | 840,000 | 34,000 |\n| May | 19 | 840,000 | 41,000 |\n| June | 19 | 840,000 | 73,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 235 |\n| Shares outstanding | 840,000 |\n| Total shares traded (six months) | 232,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=31\nMarch | Price=31\nApril | Price=30\nMay | Price=31\nJune | Price=38\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=46000\nFebruary | Volume=42000\nMarch | Volume=25000\nApril | Volume=45000\nMay | Volume=54000\nJune | Volume=92000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 46,000 |\n| February | 31 | 42,000 |\n| March | 31 | 25,000 |\n| April | 30 | 45,000 |\n| May | 31 | 54,000 |\n| June | 38 | 92,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 235 |\n| Shares outstanding | 840,000 |\n| Total shares traded (six months) | 304,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €12.4 million (see the extract prepared for case 6.3.098).",
-      "Earnings per share exceeds €0.22 (see the extract prepared for case 6.3.098).",
-      "Total shares traded over six months exceed 20.5% of shares outstanding (see the extract prepared for case 6.3.098).",
-      "Shares outstanding stay at 840,000 every month (see the extract prepared for case 6.3.098).",
-      "The last closing price is below the first (see the extract prepared for case 6.3.098)."
+      "Market capitalisation at the last month exceeds €24.8 million.",
+      "Earnings per share exceeds €0.22.",
+      "Total shares traded over six months exceed 20.5% of shares outstanding.",
+      "Shares outstanding equal 840,000.",
+      "Earnings per share is exactly €0.28."
     ],
     "answer_key": [
       true,
@@ -1762,11 +1762,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €16.0 million.",
+      "TRUE — Market capitalisation ≈ €31.9 million.",
       "TRUE — Earnings per share ≈ €0.28.",
-      "TRUE — Turnover ≈ 27.6% of shares outstanding.",
-      "TRUE — Shares outstanding unchanged.",
-      "TRUE — 24 → 19."
+      "TRUE — Turnover ≈ 36.2% of shares outstanding.",
+      "TRUE — Shares outstanding = 840,000.",
+      "TRUE — Earnings per share ≈ €0.28."
     ]
   },
   {
@@ -1776,13 +1776,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=30\nMarch | Price=29\nApril | Price=29\nMay | Price=27\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=73000\nFebruary | Volume=32000\nMarch | Volume=74000\nApril | Volume=14000\nMay | Volume=44000\nJune | Volume=17000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 28 | 799,000 | 73,000 |\n| February | 30 | 799,000 | 32,000 |\n| March | 29 | 799,000 | 74,000 |\n| April | 29 | 799,000 | 14,000 |\n| May | 27 | 799,000 | 44,000 |\n| June | 25 | 799,000 | 17,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 278 |\n| Shares outstanding | 799,000 |\n| Total shares traded (six months) | 254,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=35\nMarch | Price=33\nApril | Price=32\nMay | Price=32\nJune | Price=40\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=72000\nFebruary | Volume=25000\nMarch | Volume=32000\nApril | Volume=45000\nMay | Volume=91000\nJune | Volume=82000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 72,000 |\n| February | 35 | 25,000 |\n| March | 33 | 32,000 |\n| April | 32 | 45,000 |\n| May | 32 | 91,000 |\n| June | 40 | 82,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 309 |\n| Shares outstanding | 451,000 |\n| Total shares traded (six months) | 347,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €18.6 million.",
-      "Market capitalisation rose by more than 27.4% over the period.",
-      "Total shares traded over six months exceed 40% of shares outstanding.",
-      "Highest closing price is more than 14.7% above the lowest.",
-      "Operating result is below €228 thousand."
+      "Earnings per share exceeds €0.58.",
+      "Market capitalisation rose by more than 18.9% over the period.",
+      "Highest closing price is more than 43.6% above the lowest.",
+      "Total shares traded over six months exceed 14.5% of shares outstanding.",
+      "Operating result is below €268 thousand."
     ],
     "answer_key": [
       true,
@@ -1792,11 +1792,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €20.0 million.",
-      "FALSE — €22.4m → €20.0m.",
-      "FALSE — Turnover ≈ 31.8% of shares outstanding.",
-      "TRUE — Range €25–€30.",
-      "FALSE — Operating result = 278."
+      "TRUE — Earnings per share ≈ €0.69.",
+      "FALSE — €17.1m → €18.0m.",
+      "FALSE — Range €32–€40.",
+      "TRUE — Turnover ≈ 76.9% of shares outstanding.",
+      "FALSE — Operating result = 309."
     ]
   },
   {
@@ -1806,12 +1806,12 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=35\nMarch | Price=34\nApril | Price=35\nMay | Price=32\nJune | Price=35\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=29000\nMarch | Volume=31000\nApril | Volume=64000\nMay | Volume=48000\nJune | Volume=75000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 31 | 512,000 | 45,000 |\n| February | 35 | 512,000 | 29,000 |\n| March | 34 | 512,000 | 31,000 |\n| April | 35 | 512,000 | 64,000 |\n| May | 32 | 512,000 | 48,000 |\n| June | 35 | 512,000 | 75,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 282 |\n| Shares outstanding | 512,000 |\n| Total shares traded (six months) | 292,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=37\nFebruary | Price=38\nMarch | Price=36\nApril | Price=36\nMay | Price=34\nJune | Price=43\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=59000\nFebruary | Volume=38000\nMarch | Volume=42000\nApril | Volume=82000\nMay | Volume=62000\nJune | Volume=95000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 37 | 59,000 |\n| February | 38 | 38,000 |\n| March | 36 | 42,000 |\n| April | 36 | 82,000 |\n| May | 34 | 62,000 |\n| June | 43 | 95,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 282 |\n| Shares outstanding | 512,000 |\n| Total shares traded (six months) | 378,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Earnings per share exceeds €0.41.",
+      "Market capitalisation at the last month exceeds €17.6 million.",
       "Total shares traded over six months exceed 26% of shares outstanding.",
-      "Peak monthly share turnover exceeds 66,180 shares.",
-      "Shares outstanding stay at 512,000 every month.",
+      "Peak monthly share turnover exceeds 83,828 shares.",
+      "Shares outstanding equal 512,000.",
       "The closing share price rose by more than 33.4% from first to last month."
     ],
     "answer_key": [
@@ -1822,11 +1822,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Earnings per share ≈ €0.55.",
-      "TRUE — Turnover ≈ 57.0% of shares outstanding.",
-      "TRUE — Peak monthly volume = 75,000.",
-      "TRUE — Shares outstanding unchanged.",
-      "FALSE — Price change ≈ 12.9%."
+      "TRUE — Market capitalisation ≈ €22.0 million.",
+      "TRUE — Turnover ≈ 73.8% of shares outstanding.",
+      "TRUE — Peak monthly volume = 95,000.",
+      "TRUE — Shares outstanding = 512,000.",
+      "FALSE — Price change ≈ 16.2%."
     ]
   },
   {
@@ -1836,13 +1836,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=26\nApril | Price=29\nMay | Price=27\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=31000\nMarch | Volume=31000\nApril | Volume=32000\nMay | Volume=44000\nJune | Volume=46000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 24 | 527,000 | 56,000 |\n| February | 24 | 527,000 | 31,000 |\n| March | 26 | 527,000 | 31,000 |\n| April | 29 | 527,000 | 32,000 |\n| May | 27 | 527,000 | 44,000 |\n| June | 28 | 527,000 | 46,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 294 |\n| Shares outstanding | 527,000 |\n| Total shares traded (six months) | 240,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=32\nMarch | Price=33\nApril | Price=35\nMay | Price=34\nJune | Price=39\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=72000\nFebruary | Volume=41000\nMarch | Volume=42000\nApril | Volume=43000\nMay | Volume=57000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 72,000 |\n| February | 32 | 41,000 |\n| March | 33 | 42,000 |\n| April | 35 | 43,000 |\n| May | 34 | 57,000 |\n| June | 39 | 59,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 294 |\n| Shares outstanding | 527,000 |\n| Total shares traded (six months) | 314,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €13.7 million (see the extract prepared for case 6.3.104).",
-      "Earnings per share exceeds €0.4 (see the extract prepared for case 6.3.104).",
-      "Total shares traded over six months exceed 18.8% of shares outstanding (see the extract prepared for case 6.3.104).",
-      "Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.3.104).",
-      "The closing share price rose by more than 31% from first to last month (see the extract prepared for case 6.3.104)."
+      "Market capitalisation at the last month exceeds €19.1 million.",
+      "Market capitalisation rose by more than 18% over the period.",
+      "Shares outstanding equal 527,000.",
+      "Earnings per share is exactly €0.56.",
+      "The closing share price rose by more than 31% from first to last month."
     ],
     "answer_key": [
       true,
@@ -1852,11 +1852,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €14.8 million.",
+      "TRUE — Market capitalisation ≈ €20.6 million.",
+      "TRUE — €16.3m → €20.6m.",
+      "TRUE — Shares outstanding = 527,000.",
       "TRUE — Earnings per share ≈ €0.56.",
-      "TRUE — Turnover ≈ 45.5% of shares outstanding.",
-      "TRUE — Rose in 3 of 5 steps.",
-      "FALSE — Price change ≈ 16.7%."
+      "FALSE — Price change ≈ 25.8%."
     ]
   },
   {
@@ -1866,13 +1866,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=29\nMarch | Price=29\nApril | Price=28\nMay | Price=30\nJune | Price=34\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=12000\nFebruary | Volume=59000\nMarch | Volume=67000\nApril | Volume=64000\nMay | Volume=12000\nJune | Volume=49000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 27 | 409,000 | 12,000 |\n| February | 29 | 409,000 | 59,000 |\n| March | 29 | 409,000 | 67,000 |\n| April | 28 | 409,000 | 64,000 |\n| May | 30 | 409,000 | 12,000 |\n| June | 34 | 409,000 | 49,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 242 |\n| Shares outstanding | 409,000 |\n| Total shares traded (six months) | 263,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=37\nMarch | Price=38\nApril | Price=37\nMay | Price=39\nJune | Price=45\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=18000\nFebruary | Volume=75000\nMarch | Volume=85000\nApril | Volume=82000\nMay | Volume=19000\nJune | Volume=64000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 18,000 |\n| February | 37 | 75,000 |\n| March | 38 | 85,000 |\n| April | 37 | 82,000 |\n| May | 39 | 19,000 |\n| June | 45 | 64,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 242 |\n| Shares outstanding | 409,000 |\n| Total shares traded (six months) | 343,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €12 million.",
       "Market capitalisation rose by more than 15.2% over the period.",
       "Earnings per share exceeds €0.44.",
-      "Peak monthly share turnover exceeds 75,238 shares.",
-      "Highest closing price is more than 18.6% above the lowest."
+      "Highest closing price is more than 18.6% above the lowest.",
+      "Peak monthly share turnover exceeds 95,451 shares.",
+      "Total shares traded over six months exceed 35.1% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1882,11 +1882,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €13.9 million.",
-      "TRUE — €11.0m → €13.9m.",
+      "TRUE — €14.7m → €18.4m.",
       "TRUE — Earnings per share ≈ €0.59.",
-      "FALSE — Peak monthly volume = 67,000.",
-      "TRUE — Range €27–€34."
+      "TRUE — Range €36–€45.",
+      "FALSE — Peak monthly volume = 85,000.",
+      "TRUE — Turnover ≈ 83.9% of shares outstanding."
     ]
   },
   {
@@ -1896,13 +1896,13 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=33\nFebruary | Price=34\nMarch | Price=31\nApril | Price=30\nMay | Price=28\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=28000\nFebruary | Volume=54000\nMarch | Volume=43000\nApril | Volume=51000\nMay | Volume=20000\nJune | Volume=56000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 33 | 873,000 | 28,000 |\n| February | 34 | 873,000 | 54,000 |\n| March | 31 | 873,000 | 43,000 |\n| April | 30 | 873,000 | 51,000 |\n| May | 28 | 873,000 | 20,000 |\n| June | 30 | 873,000 | 56,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 313 |\n| Shares outstanding | 873,000 |\n| Total shares traded (six months) | 252,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=37\nFebruary | Price=35\nMarch | Price=31\nApril | Price=28\nMay | Price=24\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=69000\nMarch | Volume=56000\nApril | Volume=66000\nMay | Volume=28000\nJune | Volume=72000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 37 | 37,000 |\n| February | 35 | 69,000 |\n| March | 31 | 56,000 |\n| April | 28 | 66,000 |\n| May | 24 | 28,000 |\n| June | 22 | 72,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 313 |\n| Shares outstanding | 873,000 |\n| Total shares traded (six months) | 328,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €24.2 million.",
+      "Market capitalisation at the last month exceeds €17.7 million.",
       "The closing share price rose by more than 16.3% from first to last month.",
-      "Peak monthly share turnover exceeds 53,243 shares.",
+      "Highest closing price is more than 28% above the lowest.",
       "Market capitalisation rose by more than 8.5% over the period.",
-      "Highest closing price is more than 28% above the lowest."
+      "Earnings per share is exactly €0.32."
     ],
     "answer_key": [
       true,
@@ -1912,11 +1912,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €26.2 million.",
-      "FALSE — Price change ≈ -9.1%.",
-      "TRUE — Peak monthly volume = 56,000.",
-      "FALSE — €28.8m → €26.2m.",
-      "FALSE — Range €28–€34."
+      "TRUE — Market capitalisation ≈ €19.2 million.",
+      "FALSE — Price change ≈ -40.5%.",
+      "TRUE — Range €22–€37.",
+      "FALSE — €32.3m → €19.2m.",
+      "FALSE — Earnings per share ≈ €0.36."
     ]
   },
   {
@@ -1926,13 +1926,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=12\nFebruary | Price=13\nMarch | Price=12\nApril | Price=11\nMay | Price=11\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=32000\nFebruary | Volume=67000\nMarch | Volume=34000\nApril | Volume=17000\nMay | Volume=26000\nJune | Volume=37000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 12 | 871,000 | 32,000 |\n| February | 13 | 871,000 | 67,000 |\n| March | 12 | 871,000 | 34,000 |\n| April | 11 | 871,000 | 17,000 |\n| May | 11 | 871,000 | 26,000 |\n| June | 11 | 871,000 | 37,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 241 |\n| Shares outstanding | 871,000 |\n| Total shares traded (six months) | 213,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=26\nMarch | Price=24\nApril | Price=25\nMay | Price=23\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=51000\nFebruary | Volume=73000\nMarch | Volume=44000\nApril | Volume=27000\nMay | Volume=19000\nJune | Volume=45000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 28 | 51,000 |\n| February | 26 | 73,000 |\n| March | 24 | 44,000 |\n| April | 25 | 27,000 |\n| May | 23 | 19,000 |\n| June | 21 | 45,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 263 |\n| Shares outstanding | 431,000 |\n| Total shares traded (six months) | 259,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The closing share price rose by more than 31.8% from first to last month.",
+      "The closing share price rose by more than 22.2% from first to last month.",
       "Market capitalisation rose by more than 19.9% over the period.",
-      "Highest closing price is more than 35% above the lowest.",
-      "Total shares traded over six months exceed 28.4% of shares outstanding.",
-      "Market capitalisation at the last month exceeds €7.4 million."
+      "Highest closing price is more than 35.9% above the lowest.",
+      "Operating result is below €220 thousand.",
+      "Earnings per share exceeds €0.46."
     ],
     "answer_key": [
       false,
@@ -1942,11 +1942,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -8.3%.",
-      "FALSE — €10.5m → €9.6m.",
-      "FALSE — Range €11–€13.",
-      "FALSE — Turnover ≈ 24.5% of shares outstanding.",
-      "TRUE — Market capitalisation ≈ €9.6 million."
+      "FALSE — Price change ≈ -25.0%.",
+      "FALSE — €12.1m → €9.1m.",
+      "FALSE — Range €21–€28.",
+      "FALSE — Operating result = 263.",
+      "TRUE — Earnings per share ≈ €0.61."
     ]
   },
   {
@@ -1956,13 +1956,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=25\nMarch | Price=27\nApril | Price=29\nMay | Price=26\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=13000\nFebruary | Volume=12000\nMarch | Volume=54000\nApril | Volume=65000\nMay | Volume=59000\nJune | Volume=48000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 25 | 713,000 | 13,000 |\n| February | 25 | 713,000 | 12,000 |\n| March | 27 | 713,000 | 54,000 |\n| April | 29 | 713,000 | 65,000 |\n| May | 26 | 713,000 | 59,000 |\n| June | 24 | 713,000 | 48,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 271 |\n| Shares outstanding | 713,000 |\n| Total shares traded (six months) | 251,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=28\nMarch | Price=28\nApril | Price=27\nMay | Price=24\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=18000\nMarch | Volume=70000\nApril | Volume=83000\nMay | Volume=76000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 30 | 19,000 |\n| February | 28 | 18,000 |\n| March | 28 | 70,000 |\n| April | 27 | 83,000 |\n| May | 24 | 76,000 |\n| June | 21 | 63,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 271 |\n| Shares outstanding | 713,000 |\n| Total shares traded (six months) | 329,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €15.3 million.",
+      "Highest closing price is more than 39% above the lowest.",
       "Total shares traded over six months exceed 10.1% of shares outstanding.",
-      "The closing share price rose by more than 21.6% from first to last month.",
-      "Peak monthly share turnover exceeds 63,034 shares.",
-      "Market capitalisation rose by more than 34.3% over the period."
+      "Market capitalisation rose by more than 34.3% over the period.",
+      "Peak monthly share turnover exceeds 80,490 shares.",
+      "Earnings per share is exactly €0.49."
     ],
     "answer_key": [
       true,
@@ -1972,11 +1972,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €17.1 million.",
-      "TRUE — Turnover ≈ 35.2% of shares outstanding.",
-      "FALSE — Price change ≈ -4.0%.",
-      "TRUE — Peak monthly volume = 65,000.",
-      "FALSE — €17.8m → €17.1m."
+      "TRUE — Range €21–€30.",
+      "TRUE — Turnover ≈ 46.1% of shares outstanding.",
+      "FALSE — €21.4m → €15.0m.",
+      "TRUE — Peak monthly volume = 83,000.",
+      "FALSE — Earnings per share ≈ €0.38."
     ]
   },
   {
@@ -1986,13 +1986,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=15\nFebruary | Price=13\nMarch | Price=14\nApril | Price=16\nMay | Price=14\nJune | Price=13\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=65000\nMarch | Volume=66000\nApril | Volume=17000\nMay | Volume=45000\nJune | Volume=42000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 15 | 446,000 | 29,000 |\n| February | 13 | 446,000 | 65,000 |\n| March | 14 | 446,000 | 66,000 |\n| April | 16 | 446,000 | 17,000 |\n| May | 14 | 446,000 | 45,000 |\n| June | 13 | 446,000 | 42,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 212 |\n| Shares outstanding | 446,000 |\n| Total shares traded (six months) | 264,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=35\nMarch | Price=34\nApril | Price=34\nMay | Price=32\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=54000\nFebruary | Volume=22000\nMarch | Volume=68000\nApril | Volume=32000\nMay | Volume=52000\nJune | Volume=88000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 54,000 |\n| February | 35 | 22,000 |\n| March | 34 | 68,000 |\n| April | 34 | 32,000 |\n| May | 32 | 52,000 |\n| June | 29 | 88,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 280 |\n| Shares outstanding | 470,000 |\n| Total shares traded (six months) | 316,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €5 million (see the extract prepared for case 6.3.112).",
-      "Earnings per share exceeds €0.39 (see the extract prepared for case 6.3.112).",
-      "Highest closing price is more than 19.5% above the lowest (see the extract prepared for case 6.3.112).",
-      "Total shares traded over six months exceed 21.9% of shares outstanding (see the extract prepared for case 6.3.112).",
-      "Shares outstanding stay at 446,000 every month (see the extract prepared for case 6.3.112)."
+      "Earnings per share exceeds €0.54.",
+      "Total shares traded over six months exceed 32.2% of shares outstanding.",
+      "Shares outstanding equal 470,000.",
+      "Operating result is below €299 thousand.",
+      "Earnings per share is exactly €0.60."
     ],
     "answer_key": [
       true,
@@ -2002,11 +2002,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €5.8 million.",
-      "TRUE — Earnings per share ≈ €0.48.",
-      "TRUE — Range €13–€16.",
-      "TRUE — Turnover ≈ 59.2% of shares outstanding.",
-      "TRUE — Shares outstanding unchanged."
+      "TRUE — Earnings per share ≈ €0.60.",
+      "TRUE — Turnover ≈ 67.2% of shares outstanding.",
+      "TRUE — Shares outstanding = 470,000.",
+      "TRUE — Operating result = 280.",
+      "TRUE — Earnings per share ≈ €0.60."
     ]
   },
   {
@@ -2016,12 +2016,12 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=13\nFebruary | Price=12\nMarch | Price=11\nApril | Price=11\nMay | Price=10\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=28000\nFebruary | Volume=68000\nMarch | Volume=16000\nApril | Volume=48000\nMay | Volume=69000\nJune | Volume=42000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 13 | 688,000 | 28,000 |\n| February | 12 | 688,000 | 68,000 |\n| March | 11 | 688,000 | 16,000 |\n| April | 11 | 688,000 | 48,000 |\n| May | 10 | 688,000 | 69,000 |\n| June | 10 | 688,000 | 42,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 225 |\n| Shares outstanding | 688,000 |\n| Total shares traded (six months) | 271,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=16\nApril | Price=16\nMay | Price=14\nJune | Price=14\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=38000\nFebruary | Volume=87000\nMarch | Volume=23000\nApril | Volume=62000\nMay | Volume=88000\nJune | Volume=55000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 38,000 |\n| February | 18 | 87,000 |\n| March | 16 | 23,000 |\n| April | 16 | 62,000 |\n| May | 14 | 88,000 |\n| June | 14 | 55,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 225 |\n| Shares outstanding | 688,000 |\n| Total shares traded (six months) | 353,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €5.7 million.",
+      "Highest closing price is more than 34.7% above the lowest.",
       "Total shares traded over six months exceed 23.6% of shares outstanding.",
-      "Peak monthly share turnover exceeds 60,378 shares.",
-      "Shares outstanding stay at 688,000 every month.",
+      "Peak monthly share turnover exceeds 77,004 shares.",
+      "Shares outstanding equal 688,000.",
       "The closing share price rose by more than 18.5% from first to last month."
     ],
     "answer_key": [
@@ -2032,11 +2032,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €6.9 million.",
-      "TRUE — Turnover ≈ 39.4% of shares outstanding.",
-      "TRUE — Peak monthly volume = 69,000.",
-      "TRUE — Shares outstanding unchanged.",
-      "FALSE — Price change ≈ -23.1%."
+      "TRUE — Range €14–€19.",
+      "TRUE — Turnover ≈ 51.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 88,000.",
+      "TRUE — Shares outstanding = 688,000.",
+      "FALSE — Price change ≈ -26.3%."
     ]
   },
   {
@@ -2046,13 +2046,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=23\nMarch | Price=24\nApril | Price=25\nMay | Price=26\nJune | Price=26\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=61000\nMarch | Volume=62000\nApril | Volume=62000\nMay | Volume=65000\nJune | Volume=57000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 831,000 | 37,000 |\n| February | 23 | 831,000 | 61,000 |\n| March | 24 | 831,000 | 62,000 |\n| April | 25 | 831,000 | 62,000 |\n| May | 26 | 831,000 | 65,000 |\n| June | 26 | 831,000 | 57,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 309 |\n| Shares outstanding | 831,000 |\n| Total shares traded (six months) | 344,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=29\nMarch | Price=29\nApril | Price=28\nMay | Price=28\nJune | Price=33\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=48000\nFebruary | Volume=78000\nMarch | Volume=79000\nApril | Volume=80000\nMay | Volume=82000\nJune | Volume=73000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 48,000 |\n| February | 29 | 78,000 |\n| March | 29 | 79,000 |\n| April | 28 | 80,000 |\n| May | 28 | 82,000 |\n| June | 33 | 73,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 309 |\n| Shares outstanding | 831,000 |\n| Total shares traded (six months) | 440,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation rose by more than 25.8% over the period.",
       "The closing share price rose by more than 8.1% from first to last month.",
+      "Market capitalisation at the last month exceeds €21.2 million.",
+      "Market capitalisation rose by more than 25.8% over the period.",
       "Highest closing price is more than 20.8% above the lowest.",
-      "Operating result is below €203 thousand.",
-      "Market capitalisation at the last month exceeds €16.7 million."
+      "Total shares traded over six months exceed 23.8% of shares outstanding."
     ],
     "answer_key": [
       false,
@@ -2062,11 +2062,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — €19.1m → €21.6m.",
-      "TRUE — Price change ≈ 13.0%.",
-      "FALSE — Range €23–€26.",
-      "FALSE — Operating result = 309.",
-      "TRUE — Market capitalisation ≈ €21.6 million."
+      "FALSE — Price change ≈ 6.5%.",
+      "TRUE — Market capitalisation ≈ €27.4 million.",
+      "FALSE — €25.8m → €27.4m.",
+      "FALSE — Range €28–€33.",
+      "TRUE — Turnover ≈ 52.9% of shares outstanding."
     ]
   },
   {
@@ -2076,13 +2076,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=18\nMarch | Price=17\nApril | Price=18\nMay | Price=17\nJune | Price=16\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=62000\nFebruary | Volume=29000\nMarch | Volume=67000\nApril | Volume=37000\nMay | Volume=63000\nJune | Volume=24000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 20 | 790,000 | 62,000 |\n| February | 18 | 790,000 | 29,000 |\n| March | 17 | 790,000 | 67,000 |\n| April | 18 | 790,000 | 37,000 |\n| May | 17 | 790,000 | 63,000 |\n| June | 16 | 790,000 | 24,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 265 |\n| Shares outstanding | 790,000 |\n| Total shares traded (six months) | 282,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=28\nMarch | Price=29\nApril | Price=32\nMay | Price=32\nJune | Price=35\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=78000\nFebruary | Volume=39000\nMarch | Volume=85000\nApril | Volume=49000\nMay | Volume=80000\nJune | Volume=33000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 28 | 78,000 |\n| February | 28 | 39,000 |\n| March | 29 | 85,000 |\n| April | 32 | 49,000 |\n| May | 32 | 80,000 |\n| June | 35 | 33,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 265 |\n| Shares outstanding | 790,000 |\n| Total shares traded (six months) | 364,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €11.6 million.",
       "Earnings per share exceeds €0.3.",
       "Total shares traded over six months exceed 16.5% of shares outstanding.",
-      "Peak monthly share turnover exceeds 49,764 shares.",
-      "Shares outstanding stay at 790,000 every month."
+      "Peak monthly share turnover exceeds 63,134 shares.",
+      "Shares outstanding equal 790,000.",
+      "Earnings per share is exactly €0.34."
     ],
     "answer_key": [
       true,
@@ -2092,11 +2092,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €12.6 million.",
       "TRUE — Earnings per share ≈ €0.34.",
-      "TRUE — Turnover ≈ 35.7% of shares outstanding.",
-      "TRUE — Peak monthly volume = 67,000.",
-      "TRUE — Shares outstanding unchanged."
+      "TRUE — Turnover ≈ 46.1% of shares outstanding.",
+      "TRUE — Peak monthly volume = 85,000.",
+      "TRUE — Shares outstanding = 790,000.",
+      "TRUE — Earnings per share ≈ €0.34."
     ]
   },
   {
@@ -2106,13 +2106,13 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=32\nMarch | Price=31\nApril | Price=29\nMay | Price=31\nJune | Price=34\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=36000\nFebruary | Volume=13000\nMarch | Volume=13000\nApril | Volume=25000\nMay | Volume=63000\nJune | Volume=44000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 35 | 820,000 | 36,000 |\n| February | 32 | 820,000 | 13,000 |\n| March | 31 | 820,000 | 13,000 |\n| April | 29 | 820,000 | 25,000 |\n| May | 31 | 820,000 | 63,000 |\n| June | 34 | 820,000 | 44,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 246 |\n| Shares outstanding | 820,000 |\n| Total shares traded (six months) | 194,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=34\nMarch | Price=35\nApril | Price=37\nMay | Price=36\nJune | Price=43\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=53000\nMarch | Volume=18000\nApril | Volume=48000\nMay | Volume=75000\nJune | Volume=87000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 56,000 |\n| February | 34 | 53,000 |\n| March | 35 | 18,000 |\n| April | 37 | 48,000 |\n| May | 36 | 75,000 |\n| June | 43 | 87,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 309 |\n| Shares outstanding | 801,000 |\n| Total shares traded (six months) | 337,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The closing share price rose by more than 17.4% from first to last month (see the extract prepared for case 6.3.117).",
-      "Market capitalisation rose by more than 16% over the period (see the extract prepared for case 6.3.117).",
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.117).",
-      "Closing price rose in more than half of the month-to-month steps (see the extract prepared for case 6.3.117).",
-      "Market capitalisation at the last month exceeds €23.5 million (see the extract prepared for case 6.3.117)."
+      "The closing share price rose by more than 27.4% from first to last month.",
+      "Market capitalisation rose by more than 32.6% over the period.",
+      "Peak monthly share turnover exceeds 94,422 shares.",
+      "Operating result is below €219 thousand.",
+      "Market capitalisation at the last month exceeds €29.1 million."
     ],
     "answer_key": [
       false,
@@ -2122,11 +2122,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -2.9%.",
-      "FALSE — €28.7m → €27.9m.",
-      "FALSE — Peak price month vs peak volume month.",
-      "FALSE — Rose in 2 of 5 steps.",
-      "TRUE — Market capitalisation ≈ €27.9 million."
+      "FALSE — Price change ≈ 19.4%.",
+      "FALSE — €28.8m → €34.4m.",
+      "FALSE — Peak monthly volume = 87,000.",
+      "FALSE — Operating result = 309.",
+      "TRUE — Market capitalisation ≈ €34.4 million."
     ]
   },
   {
@@ -2136,13 +2136,13 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=13\nFebruary | Price=13\nMarch | Price=12\nApril | Price=11\nMay | Price=11\nJune | Price=12\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=26000\nFebruary | Volume=75000\nMarch | Volume=71000\nApril | Volume=26000\nMay | Volume=63000\nJune | Volume=55000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 13 | 512,000 | 26,000 |\n| February | 13 | 512,000 | 75,000 |\n| March | 12 | 512,000 | 71,000 |\n| April | 11 | 512,000 | 26,000 |\n| May | 11 | 512,000 | 63,000 |\n| June | 12 | 512,000 | 55,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 287 |\n| Shares outstanding | 512,000 |\n| Total shares traded (six months) | 316,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=18\nFebruary | Price=17\nMarch | Price=15\nApril | Price=14\nMay | Price=13\nJune | Price=12\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=35000\nFebruary | Volume=95000\nMarch | Volume=90000\nApril | Volume=35000\nMay | Volume=81000\nJune | Volume=71000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 18 | 35,000 |\n| February | 17 | 95,000 |\n| March | 15 | 90,000 |\n| April | 14 | 35,000 |\n| May | 13 | 81,000 |\n| June | 12 | 71,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 287 |\n| Shares outstanding | 512,000 |\n| Total shares traded (six months) | 407,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €4.8 million (see the extract prepared for case 6.3.119).",
-      "Earnings per share exceeds €0.45 (see the extract prepared for case 6.3.119).",
-      "Total shares traded over six months exceed 13.3% of shares outstanding (see the extract prepared for case 6.3.119).",
-      "The closing share price rose by more than 21.1% from first to last month (see the extract prepared for case 6.3.119).",
-      "Peak monthly share turnover exceeds 58,171 shares (see the extract prepared for case 6.3.119)."
+      "Market capitalisation at the last month exceeds €4.8 million.",
+      "Highest closing price is more than 35.5% above the lowest.",
+      "Total shares traded over six months exceed 13.3% of shares outstanding.",
+      "The closing share price rose by more than 21.1% from first to last month.",
+      "Peak monthly share turnover exceeds 73,683 shares."
     ],
     "answer_key": [
       true,
@@ -2153,10 +2153,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Market capitalisation ≈ €6.1 million.",
-      "TRUE — Earnings per share ≈ €0.56.",
-      "TRUE — Turnover ≈ 61.7% of shares outstanding.",
-      "FALSE — Price change ≈ -7.7%.",
-      "TRUE — Peak monthly volume = 75,000."
+      "TRUE — Range €12–€18.",
+      "TRUE — Turnover ≈ 79.5% of shares outstanding.",
+      "FALSE — Price change ≈ -33.3%.",
+      "TRUE — Peak monthly volume = 95,000."
     ]
   },
   {
@@ -2166,13 +2166,13 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=24\nApril | Price=25\nMay | Price=24\nJune | Price=23\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=58000\nFebruary | Volume=34000\nMarch | Volume=13000\nApril | Volume=32000\nMay | Volume=71000\nJune | Volume=29000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 24 | 785,000 | 58,000 |\n| February | 24 | 785,000 | 34,000 |\n| March | 24 | 785,000 | 13,000 |\n| April | 25 | 785,000 | 32,000 |\n| May | 24 | 785,000 | 71,000 |\n| June | 23 | 785,000 | 29,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 190 |\n| Shares outstanding | 785,000 |\n| Total shares traded (six months) | 237,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=22\nApril | Price=22\nMay | Price=20\nJune | Price=19\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=84000\nFebruary | Volume=27000\nMarch | Volume=71000\nApril | Volume=63000\nMay | Volume=26000\nJune | Volume=75000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 84,000 |\n| February | 24 | 27,000 |\n| March | 22 | 71,000 |\n| April | 22 | 63,000 |\n| May | 20 | 26,000 |\n| June | 19 | 75,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 279 |\n| Shares outstanding | 453,000 |\n| Total shares traded (six months) | 346,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "The closing share price rose by more than 10.9% from first to last month.",
-      "Market capitalisation rose by more than 17.1% over the period.",
-      "Highest closing price is more than 20.5% above the lowest.",
-      "Market capitalisation at the last month exceeds €15.9 million.",
-      "Peak monthly share turnover exceeds 76,959 shares."
+      "The closing share price rose by more than 24.2% from first to last month.",
+      "Market capitalisation rose by more than 8.4% over the period.",
+      "Highest closing price is more than 32.1% above the lowest.",
+      "Market capitalisation at the last month exceeds €7.8 million.",
+      "Peak monthly share turnover exceeds 87,473 shares."
     ],
     "answer_key": [
       false,
@@ -2182,11 +2182,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Price change ≈ -4.2%.",
-      "FALSE — €18.8m → €18.1m.",
-      "FALSE — Range €23–€25.",
-      "TRUE — Market capitalisation ≈ €18.1 million.",
-      "FALSE — Peak monthly volume = 71,000."
+      "FALSE — Price change ≈ -20.8%.",
+      "FALSE — €10.9m → €8.6m.",
+      "FALSE — Range €19–€24.",
+      "TRUE — Market capitalisation ≈ €8.6 million.",
+      "FALSE — Peak monthly volume = 84,000."
     ]
   },
   {
@@ -2196,13 +2196,13 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=25\nMarch | Price=24\nApril | Price=22\nMay | Price=25\nJune | Price=23\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=63000\nFebruary | Volume=23000\nMarch | Volume=18000\nApril | Volume=18000\nMay | Volume=44000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 636,000 | 63,000 |\n| February | 25 | 636,000 | 23,000 |\n| March | 24 | 636,000 | 18,000 |\n| April | 22 | 636,000 | 18,000 |\n| May | 25 | 636,000 | 44,000 |\n| June | 23 | 636,000 | 74,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 243 |\n| Shares outstanding | 636,000 |\n| Total shares traded (six months) | 240,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=34\nMarch | Price=35\nApril | Price=36\nMay | Price=40\nJune | Price=40\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=80000\nFebruary | Volume=32000\nMarch | Volume=26000\nApril | Volume=25000\nMay | Volume=57000\nJune | Volume=93000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 80,000 |\n| February | 34 | 32,000 |\n| March | 35 | 26,000 |\n| April | 36 | 25,000 |\n| May | 40 | 57,000 |\n| June | 40 | 93,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 243 |\n| Shares outstanding | 636,000 |\n| Total shares traded (six months) | 313,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Market capitalisation at the last month exceeds €12.5 million.",
+      "The closing share price rose by more than 13.9% from first to last month.",
+      "Market capitalisation rose by more than 22.3% over the period.",
+      "Highest closing price is more than 18.7% above the lowest.",
       "Total shares traded over six months exceed 23.4% of shares outstanding.",
-      "Peak monthly share turnover exceeds 60,527 shares.",
-      "Shares outstanding stay at 636,000 every month.",
-      "Earnings per share is exactly €0.38."
+      "Peak monthly share turnover exceeds 76,068 shares."
     ],
     "answer_key": [
       true,
@@ -2212,11 +2212,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Market capitalisation ≈ €14.6 million.",
-      "TRUE — Turnover ≈ 37.7% of shares outstanding.",
-      "TRUE — Peak monthly volume = 74,000.",
-      "TRUE — Shares outstanding unchanged.",
-      "TRUE — Earnings per share ≈ €0.38."
+      "TRUE — Price change ≈ 29.0%.",
+      "TRUE — €19.7m → €25.4m.",
+      "TRUE — Range €31–€40.",
+      "TRUE — Turnover ≈ 49.2% of shares outstanding.",
+      "TRUE — Peak monthly volume = 93,000."
     ]
   },
   {
@@ -2226,13 +2226,13 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=24\nMarch | Price=25\nApril | Price=28\nMay | Price=28\nJune | Price=32\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=36000\nMarch | Volume=21000\nApril | Volume=63000\nMay | Volume=26000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding | Shares traded |\n| --- | ---: | ---: | ---: |\n| January | 23 | 587,000 | 56,000 |\n| February | 24 | 587,000 | 36,000 |\n| March | 25 | 587,000 | 21,000 |\n| April | 28 | 587,000 | 63,000 |\n| May | 28 | 587,000 | 26,000 |\n| June | 32 | 587,000 | 63,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 251 |\n| Shares outstanding | 587,000 |\n| Total shares traded (six months) | 265,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=32\nMarch | Price=29\nApril | Price=26\nMay | Price=23\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=57000\nFebruary | Volume=60000\nMarch | Volume=49000\nApril | Volume=64000\nMay | Volume=60000\nJune | Volume=45000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 34 | 57,000 |\n| February | 32 | 60,000 |\n| March | 29 | 49,000 |\n| April | 26 | 64,000 |\n| May | 23 | 60,000 |\n| June | 20 | 45,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 188 |\n| Shares outstanding | 804,000 |\n| Total shares traded (six months) | 335,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Share turnover peaked in the same month as the highest closing price (see the extract prepared for case 6.3.125).",
-      "The closing share price rose by more than 32.8% from first to last month (see the extract prepared for case 6.3.125).",
-      "The last closing price is below the first (see the extract prepared for case 6.3.125).",
-      "Market capitalisation at the last month exceeds €15.5 million (see the extract prepared for case 6.3.125).",
-      "Operating result is below €216 thousand (see the extract prepared for case 6.3.125)."
+      "Market capitalisation rose by more than 19.6% over the period.",
+      "Market capitalisation at the last month exceeds €15 million.",
+      "Peak monthly share turnover exceeds 66,234 shares.",
+      "Highest closing price is more than 24.4% above the lowest.",
+      "Earnings per share is exactly €0.29."
     ],
     "answer_key": [
       false,
@@ -2242,11 +2242,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Peak price month vs peak volume month.",
-      "TRUE — Price change ≈ 39.1%.",
-      "FALSE — 23 → 32.",
-      "TRUE — Market capitalisation ≈ €18.8 million.",
-      "FALSE — Operating result = 251."
+      "FALSE — €27.3m → €16.1m.",
+      "TRUE — Market capitalisation ≈ €16.1 million.",
+      "FALSE — Peak monthly volume = 64,000.",
+      "TRUE — Range €20–€34.",
+      "FALSE — Earnings per share ≈ €0.23."
     ]
   }
 ]

@@ -297,20 +297,34 @@ export function cfTable2y({ y1, y2 }) {
 export function genShareSeries(rng) {
   const months = ["January", "February", "March", "April", "May", "June"];
   const shares = ri(rng, 400, 900) * 1000;
-  let price = 12 + rng() * 20;
-  const drift = (rng() - 0.35) * 0.05;
+  // Force a clear journey: start mid-range, apply a real trend + noise so
+  // the series never looks almost flat on a 0–20 chart.
+  let price = 18 + rng() * 22; // typically ~18–40
+  const endTarget = price * (0.55 + rng() * 0.95); // end between ~55% and 150% of start
+  const step = (endTarget - price) / (months.length - 1);
   const rows = [];
   const lineRows = [];
   const volRows = [];
   let totalVol = 0;
-  for (const m of months) {
-    price = Math.max(8, price * (1 + drift + (rng() - 0.5) * 0.24));
+  for (let i = 0; i < months.length; i++) {
+    const m = months[i];
+    const noise = (rng() - 0.5) * price * 0.12;
+    price = Math.max(8, price + step + noise);
     const p = Math.max(8, Math.round(price));
-    const vol = ri(rng, 12, 75) * 1000;
+    const vol = ri(rng, 18, 95) * 1000;
     totalVol += vol;
     rows.push([m, p, shares, vol]);
     lineRows.push(`${m} | Price=${p}`);
     volRows.push(`${m} | Volume=${vol}`);
+  }
+  // Guarantee meaningful spread (at least 20% range relative to low)
+  const prices = rows.map((r) => r[1]);
+  const lo = Math.min(...prices);
+  const hi = Math.max(...prices);
+  if ((hi - lo) / lo < 0.2) {
+    const bump = Math.max(3, Math.round(lo * 0.25));
+    rows[rows.length - 1][1] = lo + bump;
+    lineRows[lineRows.length - 1] = `${months[months.length - 1]} | Price=${lo + bump}`;
   }
   return {
     months,
@@ -465,6 +479,9 @@ export function validateTableCase(c) {
   const hint = /\([^)]*(?:divided by|calculated as|defined as|cost of sales divided)[^)]*\)/i;
   const blob = [c.context, ...c.statements, ...c.tactical_explanations].join("\n");
   if (ban.test(blob)) throw new Error(`abbrev in ${c.case_id}`);
+  if (/\(see the extract prepared for case/i.test(blob)) {
+    throw new Error(`case cross-ref hint in ${c.case_id}`);
+  }
   if (!/Evaluate the following economic assertions:\s*$/.test(c.context.trim())) {
     throw new Error(`bad context end ${c.case_id}`);
   }

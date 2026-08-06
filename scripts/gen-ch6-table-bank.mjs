@@ -171,16 +171,7 @@ function pickFive(candidates, want) {
 
 function pack(slot, title, context, candidates, usedStmts) {
   const fresh = candidates.filter((c) => !usedStmts.has(normStmt(c.stmt)));
-  let picked = pickFive(fresh, slot.answer_key);
-  if (!picked) {
-    const salted = candidates
-      .map((c) => ({
-        ...c,
-        stmt: c.stmt.replace(/\.$/, ` (see the extract prepared for case ${slot.case_id.replace("CASE ", "")}).`),
-      }))
-      .filter((c) => !usedStmts.has(normStmt(c.stmt)));
-    picked = pickFive(salted, slot.answer_key);
-  }
+  const picked = pickFive(fresh, slot.answer_key);
   if (!picked) return null;
   for (const p of picked) usedStmts.add(normStmt(p.stmt));
   return {
@@ -922,12 +913,12 @@ function share(slot, rng, used) {
   const line = chartLine("Closing share price", sh.lineRows);
   const volChart = chartBar("Monthly share turnover", sh.volRows);
   const rows = [
-    "| Month | Closing price (€) | Shares outstanding | Shares traded |",
-    "| --- | ---: | ---: | ---: |",
+    "| Month | Closing price (€) | Shares traded |",
+    "| --- | ---: | ---: |",
   ];
-  for (const [m, p, s, v] of sh.rows) rows.push(`| ${m} | ${p} | ${fmt(s)} | ${fmt(v)} |`);
-  const ctx = `Consider the share market extract below for a listed business whose identity is not disclosed.\n\n${line}\n\n${volChart}\n\n${rows.join("\n")}\n\n${mdAmount("Annual figures (€ thousands)", [
-    ["Operating result", earnings],
+  for (const [m, p, , v] of sh.rows) rows.push(`| ${m} | ${p} | ${fmt(v)} |`);
+  const ctx = `Consider the share market extract below for a listed business whose identity is not disclosed.\n\n${line}\n\n${volChart}\n\n${rows.join("\n")}\n\n${mdAmount("Annual figures", [
+    ["Operating result (€ thousands)", earnings],
     ["Shares outstanding", fmt(sh.shares)],
     ["Total shares traded (six months)", fmt(sh.totalVol)],
   ])}\n\nEvaluate the following economic assertions:`;
@@ -987,7 +978,7 @@ function share(slot, rng, used) {
       val: risingMonths > (prices.length - 1) / 2,
       expl: `Rose in ${risingMonths} of ${prices.length - 1} steps.`,
     },
-    { stmt: `Shares outstanding stay at ${fmt(sh.shares)} every month.`, val: true, expl: `Shares outstanding unchanged.` },
+    { stmt: `Shares outstanding equal ${fmt(sh.shares)}.`, val: true, expl: `Shares outstanding = ${fmt(sh.shares)}.` },
     { stmt: `The last closing price is below the first.`, val: sh.end < sh.start, expl: `${sh.start} → ${sh.end}.` },
     (() => {
       const th = intTh(rng, 190, 300);

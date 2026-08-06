@@ -112,7 +112,7 @@ export function validateAndWrite(cases, slots, outPath) {
     if (!endRe.test(c.context.trim()) || c.context.trim().length < 70)
       issues.push(`${c.case_id} bad context`);
     const blob = JSON.stringify(c);
-    if (banned.test(blob)) issues.push(`${c.case_id} banned phrase`);
+    if (banned.test(blob)) issues.push(`${c.case_id} banned phrase: ${(blob.match(banned) || [])[0]}`);
     if (ABBREV.test(blob)) issues.push(`${c.case_id} abbreviation`);
     for (let j = 0; j < 5; j++) {
       const expect = c.answer_key[j] ? "TRUE" : "FALSE";

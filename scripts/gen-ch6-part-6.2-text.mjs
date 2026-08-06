@@ -1,7 +1,7 @@
 /**
  * Generate scripts/ch6-part-6.2-text.json — textual cases for subsection 6.2:
  * the statement of profit and loss, the cash flow statement (operating,
- * investing, financing), depreciation (straight-line, book value, non-cash
+ * investing, financing), depreciation (straight-line, carrying value, non-cash
  * nature) and the divergence between profit and cash.
  */
 import fs from "node:fs";
@@ -97,7 +97,7 @@ const SCENE = [
   "Consider a garage that bought new diagnostic equipment and is working out the straight-line depreciation to charge on it. Evaluate the following economic assertions:",
   "Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:",
   "Consider a brewery installing additional brewing tanks and reviewing the resulting cash flow from investing activities. Evaluate the following economic assertions:",
-  "Consider a textile mill replacing ageing spinning machinery and calculating the machinery's book value after several years of use. Evaluate the following economic assertions:",
+  "Consider a textile mill replacing ageing spinning machinery and calculating the machinery's carrying value after several years of use. Evaluate the following economic assertions:",
   "Consider a printing company that bought a new printing press and is assessing how the purchase affects its cash flow statement. Evaluate the following economic assertions:",
   "Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:",
   "Consider an electronics retailer upgrading its point-of-sale tills across all branches and reviewing the accumulated depreciation recorded. Evaluate the following economic assertions:",
@@ -120,7 +120,7 @@ const THEORY = [
   "Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:",
   "Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:",
   "Analyze how the straight-line method spreads the depreciable amount of an asset evenly over its useful life. Evaluate the following economic assertions:",
-  "Review how an asset's book value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:",
+  "Review how an asset's carrying value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:",
   "Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:",
   "Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
   "Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
@@ -135,7 +135,7 @@ const THEORY = [
   "Review how repaying a long-term loan is classified within the cash flow statement. Evaluate the following economic assertions:",
   "Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:",
   "Review how straight-line depreciation is calculated from an asset's cost, residual value and useful life. Evaluate the following economic assertions:",
-  "Analyze how accumulated depreciation is used to calculate an asset's book value after several years of use. Evaluate the following economic assertions:",
+  "Analyze how accumulated depreciation is used to calculate an asset's carrying value after several years of use. Evaluate the following economic assertions:",
   "Review why the depreciable amount of an asset excludes its expected residual value. Evaluate the following economic assertions:",
   "Analyze how the number of years an asset has been used affects the accumulated depreciation recorded against it. Evaluate the following economic assertions:",
   "Review why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:",
@@ -301,8 +301,8 @@ function buildTruePool() {
       "Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.",
     ],
     [
-      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its book value, also called its carrying value.",
-      "Book value equals original cost less the depreciation built up against the asset since it was acquired.",
+      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value.",
+      "Carrying value equals original cost less the depreciation built up against the asset since it was acquired.",
     ],
     [
       "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.",
@@ -318,10 +318,10 @@ function buildTruePool() {
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
-    const { cost, residual, life, annual } = depScenario(i);
+    const { annual } = depScenario(i);
     add(
-      `A ${biz} buys ${asset} for ${fmt(cost)} euros, expects a residual value of ${fmt(residual)} euros at the end of its useful life, and plans to use it for ${life} years; under the straight-line method it would charge ${fmt(annual)} euros of depreciation in each of those years.`,
-      `Spreading the depreciable amount of ${fmt(cost - residual)} euros evenly over ${life} years gives an annual charge of ${fmt(annual)} euros.`,
+      `Straight-line annual depreciation on ${asset} bought by a ${biz} is ${fmt(annual)} euros when cost, residual value and useful life are applied correctly.`,
+      `That is the correct annual straight-line charge for this ${asset}.`,
     );
   }
 
@@ -331,8 +331,8 @@ function buildTruePool() {
     const { cost, annual } = depScenario(i);
     const bv2 = cost - 2 * annual;
     add(
-      `A ${biz} recorded its ${asset} at a cost of ${fmt(cost)} euros and depreciates it on the straight-line method by ${fmt(annual)} euros a year; after two years of use, its book value would be ${fmt(bv2)} euros.`,
-      `Deducting two years of depreciation, ${fmt(2 * annual)} euros in total, from the original cost of ${fmt(cost)} euros leaves a book value of ${fmt(bv2)} euros.`,
+      `After two years, the carrying value of a ${biz}'s ${asset} is ${fmt(bv2)} euros.`,
+      `Cost less two years of depreciation leaves ${fmt(bv2)} euros.`,
     );
   }
 
@@ -340,27 +340,13 @@ function buildTruePool() {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
     const { annual } = depScenario(i);
-    const accum3 = annual * 3;
     add(
-      `A ${biz} has used its ${asset} for three years and charges ${fmt(annual)} euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be ${fmt(accum3)} euros.`,
-      `Multiplying the annual charge of ${fmt(annual)} euros by the three years the asset has been used gives accumulated depreciation of ${fmt(accum3)} euros.`,
+      `Accumulated depreciation on a ${biz}'s ${asset} after three years is ${fmt(annual * 3)} euros.`,
+      `Three annual charges of ${fmt(annual)} euros accumulate to ${fmt(annual * 3)} euros.`,
     );
   }
 
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { operating, investing, financingIsInflow, financing, net } = cfScenario(i);
-    const financingPhrase = financingIsInflow
-      ? `received ${fmt(financing)} euros of cash from financing activities by taking out a new loan`
-      : `used ${fmt(financing)} euros of cash in financing activities to repay part of a loan`;
-    const netPhrase =
-      net >= 0 ? `increased by ${fmt(net)} euros` : `decreased by ${fmt(Math.abs(net))} euros`;
-    add(
-      `During one year, a ${biz} generated ${fmt(operating)} euros of cash from operating activities, used ${fmt(investing)} euros of cash in investing activities to fund new ${asset}, and ${financingPhrase}; as a result, its cash and cash equivalents ${netPhrase} over the year.`,
-      `Adding the operating inflow, subtracting the investing outflow and ${financingIsInflow ? "adding" : "subtracting"} the financing ${financingIsInflow ? "inflow" : "outflow"} gives the correct net change of ${fmt(Math.abs(net))} euros.`,
-    );
-  }
+  // Long cash-flow word problems removed — numeric CF practice uses table contexts below.
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
@@ -423,7 +409,7 @@ function buildTruePool() {
     }
   }
 
-  if (pool.length < 200) throw new Error(`TRUE pool only ${pool.length}, need 200`);
+  if (pool.length < 160) throw new Error(`TRUE pool only ${pool.length}, need 160`);
   return pool;
 }
 
@@ -506,8 +492,8 @@ function buildFalsePool() {
       "Depreciation is added back to profit in this reconciliation, not deducted again, because it never involved a cash payment.",
     ],
     [
-      "Accumulated depreciation is added to the original cost of a fixed asset to arrive at its book value.",
-      "Book value equals cost less accumulated depreciation, not cost plus accumulated depreciation.",
+      "Accumulated depreciation is added to the original cost of a fixed asset to arrive at its carrying value.",
+      "Carrying value equals cost less accumulated depreciation, not cost plus accumulated depreciation.",
     ],
     [
       "A rise in inventory or trade receivables during the year has no effect on cash and is fully reflected in profit for the period in exactly the same way.",
@@ -526,8 +512,8 @@ function buildFalsePool() {
     const { cost, residual, life, annual } = depScenario(i);
     const wrongAnnual = Math.round(cost / life);
     add(
-      `A ${biz} buys ${asset} for ${fmt(cost)} euros, expects a residual value of ${fmt(residual)} euros at the end of its useful life, and plans to use it for ${life} years; under the straight-line method it would charge ${fmt(wrongAnnual)} euros of depreciation in each of those years.`,
-      `Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives ${fmt(annual)} euros, not ${fmt(wrongAnnual)} euros.`,
+      `Straight-line annual depreciation on ${asset} bought by a ${biz} is ${fmt(wrongAnnual)} euros when residual value is ignored.`,
+      `Ignoring residual value overstates the charge; the correct annual amount is ${fmt(annual)} euros.`,
     );
   }
 
@@ -537,8 +523,8 @@ function buildFalsePool() {
     const { cost, annual } = depScenario(i);
     const wrongBV = cost + 2 * annual;
     add(
-      `A ${biz} recorded its ${asset} at a cost of ${fmt(cost)} euros and depreciates it on the straight-line method by ${fmt(annual)} euros a year; after two years of use, its book value would be ${fmt(wrongBV)} euros.`,
-      `Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is ${fmt(cost - 2 * annual)} euros, not ${fmt(wrongBV)} euros.`,
+      `After two years, the carrying value of a ${biz}'s ${asset} is ${fmt(wrongBV)} euros.`,
+      `Depreciation reduces carrying value; the correct figure is ${fmt(cost - 2 * annual)} euros.`,
     );
   }
 
@@ -546,30 +532,13 @@ function buildFalsePool() {
     const biz = BUSINESSES[i];
     const asset = ASSETS[i];
     const { annual } = depScenario(i);
-    const wrongAccum = annual * 2;
     add(
-      `A ${biz} has used its ${asset} for three years and charges ${fmt(annual)} euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be ${fmt(wrongAccum)} euros.`,
-      `The asset has been used for three full years, so three years of charges should be accumulated, giving ${fmt(annual * 3)} euros rather than the two years' worth shown here.`,
+      `Accumulated depreciation on a ${biz}'s ${asset} after three years is ${fmt(annual * 2)} euros.`,
+      `Three years of use accumulate ${fmt(annual * 3)} euros, not two years' worth.`,
     );
   }
 
-  for (let i = 0; i < BUSINESSES.length; i++) {
-    const biz = BUSINESSES[i];
-    const asset = ASSETS[i];
-    const { operating, investing, financingIsInflow, financing, net } = cfScenario(i);
-    const financingPhrase = financingIsInflow
-      ? `received ${fmt(financing)} euros of cash from financing activities by taking out a new loan`
-      : `used ${fmt(financing)} euros of cash in financing activities to repay part of a loan`;
-    const wrongNet = operating + investing + (financingIsInflow ? financing : -financing);
-    const wrongNetPhrase =
-      wrongNet >= 0 ? `increased by ${fmt(wrongNet)} euros` : `decreased by ${fmt(Math.abs(wrongNet))} euros`;
-    const correctPhrase =
-      net >= 0 ? `an increase of ${fmt(net)} euros` : `a decrease of ${fmt(Math.abs(net))} euros`;
-    add(
-      `During one year, a ${biz} generated ${fmt(operating)} euros of cash from operating activities, used ${fmt(investing)} euros of cash in investing activities to fund new ${asset}, and ${financingPhrase}; as a result, its cash and cash equivalents ${wrongNetPhrase} over the year.`,
-      `Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly ${correctPhrase}.`,
-    );
-  }
+  // Long cash-flow word-problem FALSE items removed — numeric CF is table-based.
 
   for (let i = 0; i < BUSINESSES.length; i++) {
     const biz = BUSINESSES[i];
@@ -632,7 +601,7 @@ function buildFalsePool() {
     }
   }
 
-  if (pool.length < 140) throw new Error(`FALSE pool only ${pool.length}, need 140`);
+  if (pool.length < 100) throw new Error(`FALSE pool only ${pool.length}, need 100`);
   return pool;
 }
 
@@ -641,7 +610,158 @@ const FALSE = buildFalsePool();
 
 console.log("Pools:", TRUE.length, "TRUE,", FALSE.length, "FALSE");
 
-const cases = buildCases({
+function cfTableCase(slot, idx) {
+  const biz = BUSINESSES[idx % BUSINESSES.length];
+  const asset = ASSETS[idx % ASSETS.length];
+  const sc = cfScenario(idx);
+  const finCell = sc.financingIsInflow ? String(sc.financing) : `(${sc.financing})`;
+  const context = `Consider the following cash flow statement extract (€) for a ${biz}.
+
+| Item | Amount |
+| --- | ---: |
+| Cash flow from operating activities | ${sc.operating} |
+| Cash flow from investing activities | (${sc.investing}) |
+| Cash flow from financing activities | ${finCell} |
+| Net change in cash and cash equivalents | **${sc.net}** |
+
+Evaluate the following economic assertions:`;
+
+  const wrongNet = sc.operating + sc.investing + (sc.financingIsInflow ? sc.financing : -sc.financing);
+  const pool = [
+    {
+      t: true,
+      s: `On extract ${idx + 1}, cash and cash equivalents change by ${fmt(sc.net)} euros in total.`,
+      e: `Operating ${sc.operating} − investing ${sc.investing} ${sc.financingIsInflow ? "+" : "−"} financing ${sc.financing} = ${sc.net}.`,
+    },
+    {
+      t: false,
+      s: `Treating the investing line as an addition, total cash would change by ${fmt(wrongNet)} euros on extract ${idx + 1}.`,
+      e: `Investing must be subtracted; correct net change is ${fmt(sc.net)} euros.`,
+    },
+    {
+      t: false,
+      s: `The operating figure alone of ${fmt(sc.operating)} euros is already the full net change on extract ${idx + 1}.`,
+      e: `That ignores investing and financing; correct net is ${fmt(sc.net)} euros.`,
+    },
+    {
+      t: true,
+      s: `Purchases recorded under investing total an outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
+      e: `The investing line is (${sc.investing}).`,
+    },
+    {
+      t: false,
+      s: `The investing line on extract ${idx + 1} reports cash received of ${fmt(sc.investing)} euros.`,
+      e: `Investing is an outflow of ${fmt(sc.investing)} euros.`,
+    },
+    {
+      t: true,
+      s: sc.financingIsInflow
+        ? `Financing activities add ${fmt(sc.financing)} euros to cash on extract ${idx + 1}.`
+        : `Financing activities remove ${fmt(sc.financing)} euros from cash on extract ${idx + 1}.`,
+      e: sc.financingIsInflow
+        ? `Financing is an inflow of ${fmt(sc.financing)} euros.`
+        : `Financing is an outflow of ${fmt(sc.financing)} euros.`,
+    },
+    {
+      t: false,
+      s: sc.financingIsInflow
+        ? `Financing activities remove ${fmt(sc.financing)} euros from cash on extract ${idx + 1}.`
+        : `Financing activities add ${fmt(sc.financing)} euros to cash on extract ${idx + 1}.`,
+      e: sc.financingIsInflow
+        ? `Financing is an inflow of ${fmt(sc.financing)} euros, not an outflow.`
+        : `Financing is an outflow of ${fmt(sc.financing)} euros, not an inflow.`,
+    },
+    {
+      t: sc.operating > sc.investing,
+      s: `Operating cash of ${fmt(sc.operating)} euros more than covers the investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
+      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
+    },
+    {
+      t: sc.operating <= sc.investing,
+      s: `Operating cash of ${fmt(sc.operating)} euros does not cover the investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
+      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
+    },
+    {
+      t: true,
+      s: `Buying new ${asset} for this ${biz} is classified under investing activities.`,
+      e: `Long-term asset purchases are investing cash flows.`,
+    },
+    {
+      t: false,
+      s: `Buying new ${asset} for this ${biz} is classified under operating activities.`,
+      e: `Long-term asset purchases are investing, not operating.`,
+    },
+    {
+      t: false,
+      s: `An investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1} means this ${biz} must be failing.`,
+      e: `Negative investing cash flow often just means assets were purchased.`,
+    },
+    {
+      t: true,
+      s: `For this ${biz}, collecting a trade receivable counts as an operating cash inflow.`,
+      e: `Trade-receivable collections sit in operating activities.`,
+    },
+    {
+      t: false,
+      s: `For this ${biz}, repayments of borrowed money count as operating cash outflows.`,
+      e: `Loan repayments are financing, not operating.`,
+    },
+    {
+      t: sc.net > 0,
+      s: `Over the year shown on extract ${idx + 1}, the cash balance increases by ${fmt(sc.net)} euros.`,
+      e: `Net change is ${sc.net}.`,
+    },
+    {
+      t: sc.net <= 0,
+      s: `Over the year shown on extract ${idx + 1}, the cash balance decreases by ${fmt(Math.abs(sc.net))} euros.`,
+      e: `Net change is ${sc.net}.`,
+    },
+  ];
+
+  const statements = [];
+  const tactical_explanations = [];
+  const used = new Set();
+  const tokens = (s) =>
+    new Set(
+      s
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ")
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+  const tooClose = (a, b) => {
+    const A = tokens(a);
+    const B = tokens(b);
+    let inter = 0;
+    for (const t of A) if (B.has(t)) inter++;
+    const uni = A.size + B.size - inter;
+    return uni ? inter / uni >= 0.75 : false;
+  };
+  for (const want of slot.answer_key) {
+    const item = pool.find(
+      (p) => p.t === want && !used.has(p.s) && !statements.some((s) => tooClose(s, p.s)),
+    );
+    if (!item) throw new Error(`cfTableCase pool miss ${slot.case_id} want=${want}`);
+    used.add(item.s);
+    statements.push(item.s);
+    tactical_explanations.push(`${want ? "TRUE" : "FALSE"} — ${item.e}`);
+  }
+
+  return {
+    subsection: "6.2",
+    case_id: slot.case_id,
+    title: TITLES[idx % TITLES.length] ?? `Cash Flow Extract ${idx + 1}`,
+    context,
+    statements,
+    answer_key: slot.answer_key,
+    tactical_explanations,
+    difficulty_level: slot.difficulty_level,
+    tier: "full",
+    half: "text",
+  };
+}
+
+const conceptual = buildCases({
   subsection: "6.2",
   slots,
   TRUE,
@@ -651,5 +771,8 @@ const cases = buildCases({
   TITLES,
   sceneIndices,
 });
+
+// ~1/3 of text slots get book-style CF tables + short statements
+const cases = conceptual.map((c, idx) => (idx % 3 === 0 ? cfTableCase(slots[idx], idx) : c));
 
 validateAndWrite(cases, slots, OUT);

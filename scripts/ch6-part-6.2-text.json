@@ -3,13 +3,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.004",
     "title": "Balance Sheet as a Point-in-Time Snapshot",
-    "context": "Review the balance sheet as a snapshot of a business's assets, equity and liabilities on one specific date. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 26000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | 5500 |\n| Net change in cash and cash equivalents | **22500** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A complete financial statement for a business typically brings together a balance sheet, a statement of profit and loss and a cash flow statement.",
-      "A complete financial statement is limited to a balance sheet alone and never includes a statement of profit and loss or a cash flow statement.",
-      "The balance sheet is drawn up at a single point in time, whereas the statement of profit and loss and the cash flow statement each summarise activity across an accounting period.",
-      "The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to summarise an entire accounting period rather than one specific date.",
-      "Turnover for the year is reported in the balance sheet rather than in the statement of profit and loss."
+      "On extract 1, cash and cash equivalents change by 22,500 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 40,500 euros on extract 1.",
+      "Purchases recorded under investing total an outflow of 9,000 euros on extract 1.",
+      "The operating figure alone of 26,000 euros is already the full net change on extract 1.",
+      "The investing line on extract 1 reports cash received of 9,000 euros."
     ],
     "answer_key": [
       true,
@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — These three statements together give a fuller picture of financial position, performance and cash movements than any single statement alone.",
-      "FALSE — A financial statement normally combines a balance sheet, a statement of profit and loss and a cash flow statement.",
-      "TRUE — Only the balance sheet is dated at one moment; the other two statements report on a period of trading.",
-      "FALSE — It is only the balance sheet that is dated at a single point in time; the other two statements cover a period.",
-      "FALSE — Sales for the year appear in the statement of profit and loss, not the balance sheet."
+      "TRUE — Operating 26000 − investing 9000 + financing 5500 = 22500.",
+      "FALSE — Investing must be subtracted; correct net change is 22,500 euros.",
+      "TRUE — The investing line is (9000).",
+      "FALSE — That ignores investing and financing; correct net is 22,500 euros.",
+      "FALSE — Investing is an outflow of 9,000 euros."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -93,13 +93,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.009",
     "title": "Cash Flow From Operating Activities",
-    "context": "Analyze why the statement of profit and loss covers a period rather than a single point in time. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 30800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | (4740) |\n| Net change in cash and cash equivalents | **11660** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Depreciation is charged as an expense in the statement of profit and loss without itself requiring a fresh cash payment in the year it is recorded.",
-      "Under the straight-line method, the depreciable amount of an asset, its cost less any expected residual value, is spread evenly over its useful life.",
-      "Land is generally treated differently from buildings, machinery and vehicles because it does not wear out through use and is normally not depreciated.",
-      "A profit earned during the year increases the equity reported on the balance sheet, usually because it is added to retained earnings.",
-      "Profit for the year and the net change in cash and cash equivalents for the year are always identical figures."
+      "On extract 4, cash and cash equivalents change by 11,660 euros in total.",
+      "Purchases recorded under investing total an outflow of 14,400 euros on extract 4.",
+      "Financing activities remove 4,740 euros from cash on extract 4.",
+      "Operating cash of 30,800 euros more than covers the investing outflow of 14,400 euros on extract 4.",
+      "Treating the investing line as an addition, total cash would change by 40,460 euros on extract 4."
     ],
     "answer_key": [
       true,
@@ -109,11 +109,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — The cash for a depreciating asset was paid when it was bought; the annual charge that follows does not involve any further cash leaving the business.",
-      "TRUE — Straight-line depreciation divides cost minus residual value by the number of years of useful life to give an equal annual charge.",
-      "TRUE — An unlimited useful life is the usual reason land is excluded from a depreciation schedule.",
-      "TRUE — Profit raises the owners' stake in the business by boosting retained earnings within equity.",
-      "FALSE — Profit and the net change in cash are distinct measures that will not usually match exactly."
+      "TRUE — Operating 30800 − investing 14400 − financing 4740 = 11660.",
+      "TRUE — The investing line is (14400).",
+      "TRUE — Financing is an outflow of 4,740 euros.",
+      "TRUE — Operating 30800 versus investing 14400.",
+      "FALSE — Investing must be subtracted; correct net change is 11,660 euros."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -183,13 +183,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.012",
     "title": "Negative Investing Cash Flow Explained",
-    "context": "Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 35600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | 6820 |\n| Net change in cash and cash equivalents | **31620** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is deducted a second time from profit.",
-      "Accumulated depreciation is added to the original cost of a fixed asset to arrive at its book value.",
-      "A negative cash flow from investing activities in a given year often simply reflects that a business has been purchasing long-term assets, rather than facing financial difficulty.",
-      "The net change in cash and cash equivalents for a period is calculated by adding together the cash flows from operating, investing and financing activities.",
-      "A rise in inventory or trade receivables during the year has no effect on cash and is fully reflected in profit for the period in exactly the same way."
+      "Treating the investing line as an addition, total cash would change by 53,220 euros on extract 7.",
+      "The operating figure alone of 35,600 euros is already the full net change on extract 7.",
+      "On extract 7, cash and cash equivalents change by 31,620 euros in total.",
+      "Purchases recorded under investing total an outflow of 10,800 euros on extract 7.",
+      "The investing line on extract 7 reports cash received of 10,800 euros."
     ],
     "answer_key": [
       false,
@@ -199,11 +199,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation is added back to profit in this reconciliation, not deducted again, because it never involved a cash payment.",
-      "FALSE — Book value equals cost less accumulated depreciation, not cost plus accumulated depreciation.",
-      "TRUE — Investing outflows commonly indicate expansion through asset purchases rather than distress.",
-      "TRUE — Summing the three sections of the cash flow statement gives the overall change in cash for the period.",
-      "FALSE — Working capital increases use cash without moving through profit the same way, which is part of why profit and operating cash flow diverge."
+      "FALSE — Investing must be subtracted; correct net change is 31,620 euros.",
+      "FALSE — That ignores investing and financing; correct net is 31,620 euros.",
+      "TRUE — Operating 35600 − investing 10800 + financing 6820 = 31620.",
+      "TRUE — The investing line is (10800).",
+      "FALSE — Investing is an outflow of 10,800 euros."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -216,9 +216,9 @@
     "context": "Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:",
     "statements": [
       "A business that reports a profit for the year can never see its cash and cash equivalents fall over that same year.",
-      "A bakery buys commercial ovens for 24,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 6,000 euros of depreciation in each of those years.",
+      "Straight-line annual depreciation on commercial ovens bought by a bakery is 6,000 euros when residual value is ignored.",
       "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.",
-      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its book value, also called its carrying value.",
+      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value.",
       "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ."
     ],
     "answer_key": [
@@ -230,9 +230,9 @@
     ],
     "tactical_explanations": [
       "FALSE — Non-cash charges and timing differences mean a profitable business can still see its cash balance fall during the year.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 5,500 euros, not 6,000 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 5,500 euros.",
       "TRUE — Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.",
-      "TRUE — Book value equals original cost less the depreciation built up against the asset since it was acquired.",
+      "TRUE — Carrying value equals original cost less the depreciation built up against the asset since it was acquired.",
       "TRUE — Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow."
     ],
     "difficulty_level": "3/5",
@@ -246,10 +246,10 @@
     "context": "Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:",
     "statements": [
       "A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing.",
-      "A bakery buys commercial ovens for 24,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 5,500 euros of depreciation in each of those years.",
-      "A bakery recorded its commercial ovens at a cost of 24,000 euros and depreciates it on the straight-line method by 5,500 euros a year; after two years of use, its book value would be 13,000 euros.",
-      "A software developer recorded its office computer equipment at a cost of 42,000 euros and depreciates it on the straight-line method by 3,680 euros a year; after two years of use, its book value would be 34,640 euros.",
-      "A fitness club chain recorded its exercise equipment at a cost of 91,500 euros and depreciates it on the straight-line method by 21,775 euros a year; after two years of use, its book value would be 47,950 euros."
+      "Straight-line annual depreciation on commercial ovens bought by a bakery is 5,500 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on delivery vans bought by a courier firm is 5,140 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on kitchen equipment bought by a hotel chain is 4,125 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on woodworking machinery bought by a furniture maker is 9,800 euros when cost, residual value and useful life are applied correctly."
     ],
     "answer_key": [
       true,
@@ -260,10 +260,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.",
-      "TRUE — Spreading the depreciable amount of 22,000 euros evenly over 4 years gives an annual charge of 5,500 euros.",
-      "TRUE — Deducting two years of depreciation, 11,000 euros in total, from the original cost of 24,000 euros leaves a book value of 13,000 euros.",
-      "TRUE — Deducting two years of depreciation, 7,360 euros in total, from the original cost of 42,000 euros leaves a book value of 34,640 euros.",
-      "TRUE — Deducting two years of depreciation, 43,550 euros in total, from the original cost of 91,500 euros leaves a book value of 47,950 euros."
+      "TRUE — That is the correct annual straight-line charge for this commercial ovens.",
+      "TRUE — That is the correct annual straight-line charge for this delivery vans.",
+      "TRUE — That is the correct annual straight-line charge for this kitchen equipment.",
+      "TRUE — That is the correct annual straight-line charge for this woodworking machinery."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -273,13 +273,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.018",
     "title": "Net Change in Cash and Cash Equivalents",
-    "context": "Analyze how the straight-line method spreads the depreciable amount of an asset evenly over its useful life. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 40400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | (5820) |\n| Net change in cash and cash equivalents | **18380** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A restaurant chain recorded its commercial refrigerators at a cost of 96,000 euros and depreciates it on the straight-line method by 18,160 euros a year; after two years of use, its book value would be 59,680 euros.",
-      "A courier firm buys delivery vans for 28,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 5,700 euros of depreciation in each of those years.",
-      "A software developer buys office computer equipment for 42,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 4,200 euros of depreciation in each of those years.",
-      "A courier firm recorded its delivery vans at a cost of 28,500 euros and depreciates it on the straight-line method by 5,140 euros a year; after two years of use, its book value would be 38,780 euros.",
-      "A IT consultancy recorded its laptop computers at a cost of 100,500 euros and depreciates it on the straight-line method by 15,750 euros a year; after two years of use, its book value would be 69,000 euros."
+      "On extract 10, cash and cash equivalents change by 18,380 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 50,780 euros on extract 10.",
+      "The operating figure alone of 40,400 euros is already the full net change on extract 10.",
+      "The investing line on extract 10 reports cash received of 16,200 euros.",
+      "Purchases recorded under investing total an outflow of 16,200 euros on extract 10."
     ],
     "answer_key": [
       true,
@@ -289,11 +289,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Deducting two years of depreciation, 36,320 euros in total, from the original cost of 96,000 euros leaves a book value of 59,680 euros.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 5,140 euros, not 5,700 euros.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 3,680 euros, not 4,200 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 18,220 euros, not 38,780 euros.",
-      "TRUE — Deducting two years of depreciation, 31,500 euros in total, from the original cost of 100,500 euros leaves a book value of 69,000 euros."
+      "TRUE — Operating 40400 − investing 16200 − financing 5820 = 18380.",
+      "FALSE — Investing must be subtracted; correct net change is 18,380 euros.",
+      "FALSE — That ignores investing and financing; correct net is 18,380 euros.",
+      "FALSE — Investing is an outflow of 16,200 euros.",
+      "TRUE — The investing line is (16200)."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -305,11 +305,11 @@
     "title": "Depreciation and Asset Wear",
     "context": "Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:",
     "statements": [
-      "A publishing house recorded its binding machines at a cost of 105,000 euros and depreciates it on the straight-line method by 12,875 euros a year; after two years of use, its book value would be 79,250 euros.",
-      "A car parts manufacturer recorded its stamping presses at a cost of 109,500 euros and depreciates it on the straight-line method by 10,670 euros a year; after two years of use, its book value would be 88,160 euros.",
-      "A packaging manufacturer recorded its packaging machinery at a cost of 114,000 euros and depreciates it on the straight-line method by 27,600 euros a year; after two years of use, its book value would be 58,800 euros.",
-      "A catering company recorded its catering vans at a cost of 118,500 euros and depreciates it on the straight-line method by 22,820 euros a year; after two years of use, its book value would be 72,860 euros.",
-      "A ceramics workshop recorded its kiln equipment at a cost of 127,500 euros and depreciates it on the straight-line method by 15,175 euros a year; after two years of use, its book value would be 97,150 euros."
+      "Straight-line annual depreciation on printing press bought by a printing company is 6,010 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on point-of-sale tills bought by a electronics retailer is 13,500 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on refrigerated trucks bought by a dairy processor is 9,950 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on dispensing equipment bought by a pharmacy chain is 8,340 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on binding machines bought by a publishing house is 12,875 euros when cost, residual value and useful life are applied correctly."
     ],
     "answer_key": [
       true,
@@ -319,11 +319,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Deducting two years of depreciation, 25,750 euros in total, from the original cost of 105,000 euros leaves a book value of 79,250 euros.",
-      "TRUE — Deducting two years of depreciation, 21,340 euros in total, from the original cost of 109,500 euros leaves a book value of 88,160 euros.",
-      "TRUE — Deducting two years of depreciation, 55,200 euros in total, from the original cost of 114,000 euros leaves a book value of 58,800 euros.",
-      "TRUE — Deducting two years of depreciation, 45,640 euros in total, from the original cost of 118,500 euros leaves a book value of 72,860 euros.",
-      "TRUE — Deducting two years of depreciation, 30,350 euros in total, from the original cost of 127,500 euros leaves a book value of 97,150 euros."
+      "TRUE — That is the correct annual straight-line charge for this printing press.",
+      "TRUE — That is the correct annual straight-line charge for this point-of-sale tills.",
+      "TRUE — That is the correct annual straight-line charge for this refrigerated trucks.",
+      "TRUE — That is the correct annual straight-line charge for this dispensing equipment.",
+      "TRUE — That is the correct annual straight-line charge for this binding machines."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -335,11 +335,11 @@
     "title": "Depreciation as a Non-Cash Expense",
     "context": "Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:",
     "statements": [
-      "A construction firm recorded its heavy construction machinery at a cost of 33,000 euros and depreciates it on the straight-line method by 4,900 euros a year; after two years of use, its book value would be 42,800 euros.",
-      "A hotel chain recorded its kitchen equipment at a cost of 37,500 euros and depreciates it on the straight-line method by 4,125 euros a year; after two years of use, its book value would be 45,750 euros.",
-      "A bakery has used its commercial ovens for three years and charges 5,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 16,500 euros.",
-      "A software developer recorded its office computer equipment at a cost of 42,000 euros and depreciates it on the straight-line method by 3,680 euros a year; after two years of use, its book value would be 49,360 euros.",
-      "A printing company recorded its printing press at a cost of 64,500 euros and depreciates it on the straight-line method by 6,010 euros a year; after two years of use, its book value would be 76,520 euros."
+      "Straight-line annual depreciation on office computer equipment bought by a software developer is 4,200 euros when residual value is ignored.",
+      "Straight-line annual depreciation on diagnostic equipment bought by a garage is 11,625 euros when residual value is ignored.",
+      "Straight-line annual depreciation on stamping presses bought by a car parts manufacturer is 10,670 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on woodworking machinery bought by a furniture maker is 10,200 euros when residual value is ignored.",
+      "Straight-line annual depreciation on brewing tanks bought by a brewery is 9,250 euros when residual value is ignored."
     ],
     "answer_key": [
       false,
@@ -349,11 +349,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 23,200 euros, not 42,800 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 29,250 euros, not 45,750 euros.",
-      "TRUE — Multiplying the annual charge of 5,500 euros by the three years the asset has been used gives accumulated depreciation of 16,500 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 34,640 euros, not 49,360 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 52,480 euros, not 76,520 euros."
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 3,680 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 10,125 euros.",
+      "TRUE — That is the correct annual straight-line charge for this stamping presses.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 9,800 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 8,750 euros."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -363,13 +363,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.025",
     "title": "Straight-Line Depreciation Method",
-    "context": "Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 45200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | 8140 |\n| Net change in cash and cash equivalents | **40740** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A arable farm recorded its tractor at a cost of 69,000 euros and depreciates it on the straight-line method by 15,950 euros a year; after two years of use, its book value would be 100,900 euros.",
-      "A courier firm has used its delivery vans for three years and charges 5,140 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 15,420 euros.",
-      "A electronics retailer recorded its point-of-sale tills at a cost of 73,500 euros and depreciates it on the straight-line method by 13,500 euros a year; after two years of use, its book value would be 100,500 euros.",
-      "A hotel chain has used its kitchen equipment for three years and charges 4,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 12,375 euros.",
-      "A furniture maker has used its woodworking machinery for three years and charges 9,800 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 29,400 euros."
+      "Treating the investing line as an addition, total cash would change by 65,940 euros on extract 13.",
+      "On extract 13, cash and cash equivalents change by 40,740 euros in total.",
+      "The operating figure alone of 45,200 euros is already the full net change on extract 13.",
+      "Purchases recorded under investing total an outflow of 12,600 euros on extract 13.",
+      "Financing activities add 8,140 euros to cash on extract 13."
     ],
     "answer_key": [
       false,
@@ -379,11 +379,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 37,100 euros, not 100,900 euros.",
-      "TRUE — Multiplying the annual charge of 5,140 euros by the three years the asset has been used gives accumulated depreciation of 15,420 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 46,500 euros, not 100,500 euros.",
-      "TRUE — Multiplying the annual charge of 4,125 euros by the three years the asset has been used gives accumulated depreciation of 12,375 euros.",
-      "TRUE — Multiplying the annual charge of 9,800 euros by the three years the asset has been used gives accumulated depreciation of 29,400 euros."
+      "FALSE — Investing must be subtracted; correct net change is 40,740 euros.",
+      "TRUE — Operating 45200 − investing 12600 + financing 8140 = 40740.",
+      "FALSE — That ignores investing and financing; correct net is 40,740 euros.",
+      "TRUE — The investing line is (12600).",
+      "TRUE — Financing is an inflow of 8,140 euros."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -395,11 +395,11 @@
     "title": "Book Value After Depreciation",
     "context": "Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
     "statements": [
-      "A brewery has used its brewing tanks for three years and charges 8,750 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 26,250 euros.",
-      "A logistics company recorded its forklift trucks at a cost of 78,000 euros and depreciates it on the straight-line method by 12,650 euros a year; after two years of use, its book value would be 103,300 euros.",
-      "A fitness club chain has used its exercise equipment for three years and charges 21,775 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 65,325 euros.",
-      "A car parts manufacturer has used its stamping presses for three years and charges 10,670 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 32,010 euros.",
-      "A dairy processor recorded its refrigerated trucks at a cost of 82,500 euros and depreciates it on the straight-line method by 9,950 euros a year; after two years of use, its book value would be 102,400 euros."
+      "After two years, the carrying value of a courier firm's delivery vans is 18,220 euros.",
+      "Straight-line annual depreciation on tractor bought by a arable farm is 17,250 euros when residual value is ignored.",
+      "After two years, the carrying value of a construction firm's heavy construction machinery is 23,200 euros.",
+      "After two years, the carrying value of a hotel chain's kitchen equipment is 29,250 euros.",
+      "Straight-line annual depreciation on point-of-sale tills bought by a electronics retailer is 14,700 euros when residual value is ignored."
     ],
     "answer_key": [
       true,
@@ -409,11 +409,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Multiplying the annual charge of 8,750 euros by the three years the asset has been used gives accumulated depreciation of 26,250 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 52,700 euros, not 103,300 euros.",
-      "TRUE — Multiplying the annual charge of 21,775 euros by the three years the asset has been used gives accumulated depreciation of 65,325 euros.",
-      "TRUE — Multiplying the annual charge of 10,670 euros by the three years the asset has been used gives accumulated depreciation of 32,010 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 62,600 euros, not 102,400 euros."
+      "TRUE — Cost less two years of depreciation leaves 18,220 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,950 euros.",
+      "TRUE — Cost less two years of depreciation leaves 23,200 euros.",
+      "TRUE — Cost less two years of depreciation leaves 29,250 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 13,500 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -425,11 +425,11 @@
     "title": "Land and Non-Depreciable Assets",
     "context": "Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:",
     "statements": [
-      "A pharmacy chain recorded its dispensing equipment at a cost of 87,000 euros and depreciates it on the straight-line method by 8,340 euros a year; after two years of use, its book value would be 103,680 euros.",
-      "A packaging manufacturer has used its packaging machinery for three years and charges 27,600 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 82,800 euros.",
-      "A fitness club chain recorded its exercise equipment at a cost of 91,500 euros and depreciates it on the straight-line method by 21,775 euros a year; after two years of use, its book value would be 135,050 euros.",
-      "During one year, a bakery generated 26,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new commercial ovens, and received 5,500 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,500 euros over the year.",
-      "A restaurant chain recorded its commercial refrigerators at a cost of 96,000 euros and depreciates it on the straight-line method by 18,160 euros a year; after two years of use, its book value would be 132,320 euros."
+      "Straight-line annual depreciation on forklift trucks bought by a logistics company is 13,000 euros when residual value is ignored.",
+      "After two years, the carrying value of a software developer's office computer equipment is 34,640 euros.",
+      "Straight-line annual depreciation on refrigerated trucks bought by a dairy processor is 10,313 euros when residual value is ignored.",
+      "After two years, the carrying value of a garage's diagnostic equipment is 26,250 euros.",
+      "Straight-line annual depreciation on dispensing equipment bought by a pharmacy chain is 8,700 euros when residual value is ignored."
     ],
     "answer_key": [
       false,
@@ -439,11 +439,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 70,320 euros, not 103,680 euros.",
-      "TRUE — Multiplying the annual charge of 27,600 euros by the three years the asset has been used gives accumulated depreciation of 82,800 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 47,950 euros, not 135,050 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,500 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 59,680 euros, not 132,320 euros."
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 12,650 euros.",
+      "TRUE — Cost less two years of depreciation leaves 34,640 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 9,950 euros.",
+      "TRUE — Cost less two years of depreciation leaves 26,250 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 8,340 euros."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -453,13 +453,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.032",
     "title": "Profit Raises Equity",
-    "context": "Analyze how non-cash items such as depreciation cause profit and cash flow to diverge. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | (6900) |\n| Net change in cash and cash equivalents | **34100** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A IT consultancy recorded its laptop computers at a cost of 100,500 euros and depreciates it on the straight-line method by 15,750 euros a year; after two years of use, its book value would be 132,000 euros.",
-      "During one year, a courier firm generated 27,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new delivery vans, and used 4,380 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 12,420 euros over the year.",
-      "During one year, a construction firm generated 29,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new heavy construction machinery, and received 5,940 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,540 euros over the year.",
-      "A publishing house recorded its binding machines at a cost of 105,000 euros and depreciates it on the straight-line method by 12,875 euros a year; after two years of use, its book value would be 130,750 euros.",
-      "During one year, a hotel chain generated 30,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kitchen equipment, and used 4,740 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 11,660 euros over the year."
+      "Treating the investing line as an addition, total cash would change by 52,100 euros on extract 16.",
+      "On extract 16, cash and cash equivalents change by 34,100 euros in total.",
+      "Purchases recorded under investing total an outflow of 9,000 euros on extract 16.",
+      "The operating figure alone of 50,000 euros is already the full net change on extract 16.",
+      "Financing activities remove 6,900 euros from cash on extract 16."
     ],
     "answer_key": [
       false,
@@ -469,11 +469,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 69,000 euros, not 132,000 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 12,420 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,540 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 79,250 euros, not 130,750 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 11,660 euros."
+      "FALSE — Investing must be subtracted; correct net change is 34,100 euros.",
+      "TRUE — Operating 50000 − investing 9000 − financing 6900 = 34100.",
+      "TRUE — The investing line is (9000).",
+      "FALSE — That ignores investing and financing; correct net is 34,100 euros.",
+      "TRUE — Financing is an outflow of 6,900 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -485,11 +485,11 @@
     "title": "Loss Reduces Equity",
     "context": "Review the three sections of a cash flow statement: operating, investing and financing activities. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a software developer generated 32,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new office computer equipment, and received 6,380 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 22,580 euros over the year.",
-      "During one year, a garage generated 34,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new diagnostic equipment, and used 5,100 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 19,900 euros over the year.",
-      "During one year, a furniture maker generated 35,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new woodworking machinery, and received 6,820 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 31,620 euros over the year.",
-      "During one year, a brewery generated 37,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new brewing tanks, and used 5,460 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 19,140 euros over the year.",
-      "During one year, a electronics retailer generated 43,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new point-of-sale tills, and used 6,180 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 26,620 euros over the year."
+      "After two years, the carrying value of a printing company's printing press is 52,480 euros.",
+      "After two years, the carrying value of a arable farm's tractor is 37,100 euros.",
+      "After two years, the carrying value of a electronics retailer's point-of-sale tills is 46,500 euros.",
+      "After two years, the carrying value of a logistics company's forklift trucks is 52,700 euros.",
+      "After two years, the carrying value of a dairy processor's refrigerated trucks is 62,600 euros."
     ],
     "answer_key": [
       true,
@@ -499,11 +499,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 22,580 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 19,900 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 31,620 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 19,140 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 26,620 euros."
+      "TRUE — Cost less two years of depreciation leaves 52,480 euros.",
+      "TRUE — Cost less two years of depreciation leaves 37,100 euros.",
+      "TRUE — Cost less two years of depreciation leaves 46,500 euros.",
+      "TRUE — Cost less two years of depreciation leaves 52,700 euros.",
+      "TRUE — Cost less two years of depreciation leaves 62,600 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -515,11 +515,11 @@
     "title": "Profit Versus Cash Flow",
     "context": "Analyze which section of the cash flow statement reflects cash movements from core trading activities. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a logistics company generated 45,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new forklift trucks, and received 8,140 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,740 euros over the year.",
-      "A car parts manufacturer recorded its stamping presses at a cost of 109,500 euros and depreciates it on the straight-line method by 10,670 euros a year; after two years of use, its book value would be 130,840 euros.",
-      "During one year, a dairy processor generated 46,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new refrigerated trucks, and used 6,540 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 25,860 euros over the year.",
-      "A packaging manufacturer recorded its packaging machinery at a cost of 114,000 euros and depreciates it on the straight-line method by 27,600 euros a year; after two years of use, its book value would be 169,200 euros.",
-      "During one year, a fitness club chain generated 50,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new exercise equipment, and used 6,900 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 34,100 euros over the year."
+      "After two years, the carrying value of a pharmacy chain's dispensing equipment is 70,320 euros.",
+      "Straight-line annual depreciation on laptop computers bought by a IT consultancy is 16,750 euros when residual value is ignored.",
+      "After two years, the carrying value of a fitness club chain's exercise equipment is 47,950 euros.",
+      "Straight-line annual depreciation on binding machines bought by a publishing house is 13,125 euros when residual value is ignored.",
+      "After two years, the carrying value of a restaurant chain's commercial refrigerators is 59,680 euros."
     ],
     "answer_key": [
       true,
@@ -529,11 +529,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,740 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 88,160 euros, not 130,840 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 25,860 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 58,800 euros, not 169,200 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 34,100 euros."
+      "TRUE — Cost less two years of depreciation leaves 70,320 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,750 euros.",
+      "TRUE — Cost less two years of depreciation leaves 47,950 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 12,875 euros.",
+      "TRUE — Cost less two years of depreciation leaves 59,680 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -543,13 +543,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.038",
     "title": "Turnover and the Balance Sheet",
-    "context": "Consider a bakery that installed new commercial ovens and wants to see how the purchase flows through its statement of profit and loss, cash flow statement and balance sheet. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 54800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | 9460 |\n| Net change in cash and cash equivalents | **49860** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "During one year, a restaurant chain generated 51,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new commercial refrigerators, and received 9,020 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 49,820 euros over the year.",
-      "A catering company recorded its catering vans at a cost of 118,500 euros and depreciates it on the straight-line method by 22,820 euros a year; after two years of use, its book value would be 164,140 euros.",
-      "During one year, a IT consultancy generated 53,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new laptop computers, and used 7,260 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 33,340 euros over the year.",
-      "A recycling firm recorded its sorting machinery at a cost of 123,000 euros and depreciates it on the straight-line method by 19,600 euros a year; after two years of use, its book value would be 162,200 euros.",
-      "A ceramics workshop recorded its kiln equipment at a cost of 127,500 euros and depreciates it on the straight-line method by 15,175 euros a year; after two years of use, its book value would be 157,850 euros."
+      "On extract 19, cash and cash equivalents change by 49,860 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 78,660 euros on extract 19.",
+      "Purchases recorded under investing total an outflow of 14,400 euros on extract 19.",
+      "The operating figure alone of 54,800 euros is already the full net change on extract 19.",
+      "The investing line on extract 19 reports cash received of 14,400 euros."
     ],
     "answer_key": [
       true,
@@ -559,11 +559,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 49,820 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 72,860 euros, not 164,140 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 33,340 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 83,800 euros, not 162,200 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 97,150 euros, not 157,850 euros."
+      "TRUE — Operating 54800 − investing 14400 + financing 9460 = 49860.",
+      "FALSE — Investing must be subtracted; correct net change is 49,860 euros.",
+      "TRUE — The investing line is (14400).",
+      "FALSE — That ignores investing and financing; correct net is 49,860 euros.",
+      "FALSE — Investing is an outflow of 14,400 euros."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -575,11 +575,11 @@
     "title": "Depreciable Amount and Residual Value",
     "context": "Analyze which section of the cash flow statement reflects cash movements from borrowing, repaying loans or transactions with owners. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a publishing house generated 54,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new binding machines, and received 9,460 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 49,860 euros over the year.",
-      "A bakery has used its commercial ovens for three years and charges 5,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 11,000 euros.",
-      "During one year, a car parts manufacturer generated 56,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new stamping presses, and used 7,620 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 32,580 euros over the year.",
-      "During one year, a catering company generated 59,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new catering vans, and used 7,980 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,820 euros over the year.",
-      "During one year, a recycling firm generated 61,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new sorting machinery, and received 10,340 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,940 euros over the year."
+      "After two years, the carrying value of a car parts manufacturer's stamping presses is 88,160 euros.",
+      "Straight-line annual depreciation on sorting machinery bought by a recycling firm is 20,500 euros when residual value is ignored.",
+      "After two years, the carrying value of a packaging manufacturer's packaging machinery is 58,800 euros.",
+      "After two years, the carrying value of a catering company's catering vans is 72,860 euros.",
+      "After two years, the carrying value of a recycling firm's sorting machinery is 83,800 euros."
     ],
     "answer_key": [
       true,
@@ -589,11 +589,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 49,860 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 16,500 euros rather than the two years' worth shown here.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 32,580 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 40,820 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 58,940 euros."
+      "TRUE — Cost less two years of depreciation leaves 88,160 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 19,600 euros.",
+      "TRUE — Cost less two years of depreciation leaves 58,800 euros.",
+      "TRUE — Cost less two years of depreciation leaves 72,860 euros.",
+      "TRUE — Cost less two years of depreciation leaves 83,800 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -605,11 +605,11 @@
     "title": "Bakery Oven Depreciation Charge",
     "context": "Review why a negative cash flow from investing activities does not necessarily indicate financial distress. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a ceramics workshop generated 62,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kiln equipment, and used 8,340 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,060 euros over the year.",
-      "A courier firm has used its delivery vans for three years and charges 5,140 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 10,280 euros.",
-      "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
+      "After two years, the carrying value of a ceramics workshop's kiln equipment is 97,150 euros.",
+      "Straight-line annual depreciation on kiln equipment bought by a ceramics workshop is 15,938 euros when residual value is ignored.",
+      "Accumulated depreciation on a bakery's commercial ovens after three years is 16,500 euros.",
+      "Accumulated depreciation on a courier firm's delivery vans after three years is 15,420 euros.",
+      "Accumulated depreciation on a construction firm's heavy construction machinery after three years is 14,700 euros."
     ],
     "answer_key": [
       true,
@@ -619,11 +619,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 40,060 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 15,420 euros rather than the two years' worth shown here.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "TRUE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow."
+      "TRUE — Cost less two years of depreciation leaves 97,150 euros.",
+      "FALSE — Ignoring residual value overstates the charge; the correct annual amount is 15,175 euros.",
+      "TRUE — Three annual charges of 5,500 euros accumulate to 16,500 euros.",
+      "TRUE — Three annual charges of 5,140 euros accumulate to 15,420 euros.",
+      "TRUE — Three annual charges of 4,900 euros accumulate to 14,700 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -633,13 +633,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.046",
     "title": "Courier Van Fleet Cash Outflow",
-    "context": "Analyze how collecting a trade receivable is classified within the cash flow statement. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | (7980) |\n| Net change in cash and cash equivalents | **40820** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "A construction firm has used its heavy construction machinery for three years and charges 4,900 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 9,800 euros.",
-      "When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "The balance sheet of a bakery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
+      "On extract 22, cash and cash equivalents change by 40,820 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 62,420 euros on extract 22.",
+      "Purchases recorded under investing total an outflow of 10,800 euros on extract 22.",
+      "Financing activities remove 7,980 euros from cash on extract 22.",
+      "Operating cash of 59,600 euros more than covers the investing outflow of 10,800 euros on extract 22."
     ],
     "answer_key": [
       true,
@@ -649,11 +649,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 14,700 euros rather than the two years' worth shown here.",
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "TRUE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow is classified as an investing cash flow.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
+      "TRUE — Operating 59600 − investing 10800 − financing 7980 = 40820.",
+      "FALSE — Investing must be subtracted; correct net change is 40,820 euros.",
+      "TRUE — The investing line is (10800).",
+      "TRUE — Financing is an outflow of 7,980 euros.",
+      "TRUE — Operating 59600 versus investing 10800."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -665,11 +665,11 @@
     "title": "Construction Firm Machinery Financing",
     "context": "Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:",
     "statements": [
-      "The balance sheet of a courier firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a bakery earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "When a courier firm makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "Land owned by a bakery is normally left out of the depreciation schedule because, unlike its commercial ovens, land does not wear out through ordinary use.",
-      "A hotel chain has used its kitchen equipment for three years and charges 4,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 8,250 euros."
+      "Accumulated depreciation on a brewery's brewing tanks after three years is 26,250 euros.",
+      "Accumulated depreciation on a textile mill's spinning machinery after three years is 21,150 euros.",
+      "Accumulated depreciation on a printing company's printing press after three years is 18,030 euros.",
+      "Accumulated depreciation on a arable farm's tractor after three years is 47,850 euros.",
+      "After two years, the carrying value of a courier firm's delivery vans is 38,780 euros."
     ],
     "answer_key": [
       true,
@@ -679,11 +679,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 12,375 euros rather than the two years' worth shown here."
+      "TRUE — Three annual charges of 8,750 euros accumulate to 26,250 euros.",
+      "TRUE — Three annual charges of 7,050 euros accumulate to 21,150 euros.",
+      "TRUE — Three annual charges of 6,010 euros accumulate to 18,030 euros.",
+      "TRUE — Three annual charges of 15,950 euros accumulate to 47,850 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 18,220 euros."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -695,11 +695,11 @@
     "title": "Hotel Chain Kitchen Equipment Depreciation",
     "context": "Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:",
     "statements": [
-      "A software developer has used its office computer equipment for three years and charges 3,680 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 7,360 euros.",
-      "A furniture maker has used its woodworking machinery for three years and charges 9,800 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 19,600 euros.",
-      "A electronics retailer has used its point-of-sale tills for three years and charges 13,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 27,000 euros.",
-      "The depreciation that a courier firm charges on its delivery vans each year is a non-cash expense, since the related cash was already paid out when the delivery vans was originally purchased.",
-      "A logistics company has used its forklift trucks for three years and charges 12,650 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,300 euros."
+      "After two years, the carrying value of a construction firm's heavy construction machinery is 42,800 euros.",
+      "After two years, the carrying value of a hotel chain's kitchen equipment is 45,750 euros.",
+      "After two years, the carrying value of a software developer's office computer equipment is 49,360 euros.",
+      "Accumulated depreciation on a electronics retailer's point-of-sale tills after three years is 40,500 euros.",
+      "After two years, the carrying value of a garage's diagnostic equipment is 66,750 euros."
     ],
     "answer_key": [
       false,
@@ -709,11 +709,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 11,040 euros rather than the two years' worth shown here.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 29,400 euros rather than the two years' worth shown here.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 40,500 euros rather than the two years' worth shown here.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 37,950 euros rather than the two years' worth shown here."
+      "FALSE — Depreciation reduces carrying value; the correct figure is 23,200 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 29,250 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 34,640 euros.",
+      "TRUE — Three annual charges of 13,500 euros accumulate to 40,500 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 26,250 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -723,13 +723,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.056",
     "title": "Software Developer Profit and Cash Gap",
-    "context": "Review how straight-line depreciation is calculated from an asset's cost, residual value and useful life. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 64400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | 10780 |\n| Net change in cash and cash equivalents | **58980** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A dairy processor has used its refrigerated trucks for three years and charges 9,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 19,900 euros.",
-      "Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.",
-      "The depreciation that a hotel chain charges on its kitchen equipment each year is a non-cash expense, since the related cash was already paid out when the kitchen equipment was originally purchased.",
-      "A courier firm buys delivery vans for 28,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 5,140 euros of depreciation in each of those years.",
-      "A software developer buys office computer equipment for 42,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 3,680 euros of depreciation in each of those years."
+      "Treating the investing line as an addition, total cash would change by 91,380 euros on extract 25.",
+      "On extract 25, cash and cash equivalents change by 58,980 euros in total.",
+      "Purchases recorded under investing total an outflow of 16,200 euros on extract 25.",
+      "Financing activities add 10,780 euros to cash on extract 25.",
+      "Operating cash of 64,400 euros more than covers the investing outflow of 16,200 euros on extract 25."
     ],
     "answer_key": [
       false,
@@ -739,11 +739,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 29,850 euros rather than the two years' worth shown here.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "TRUE — Spreading the depreciable amount of 25,700 euros evenly over 5 years gives an annual charge of 5,140 euros.",
-      "TRUE — Spreading the depreciable amount of 36,800 euros evenly over 10 years gives an annual charge of 3,680 euros."
+      "FALSE — Investing must be subtracted; correct net change is 58,980 euros.",
+      "TRUE — Operating 64400 − investing 16200 + financing 10780 = 58980.",
+      "TRUE — The investing line is (16200).",
+      "TRUE — Financing is an inflow of 10,780 euros.",
+      "TRUE — Operating 64400 versus investing 16200."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -753,13 +753,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.060",
     "title": "Garage Diagnostic Equipment Charge",
-    "context": "Analyze how accumulated depreciation is used to calculate an asset's book value after several years of use. Evaluate the following economic assertions:",
+    "context": "Analyze how accumulated depreciation is used to calculate an asset's carrying value after several years of use. Evaluate the following economic assertions:",
     "statements": [
-      "A garage buys diagnostic equipment for 46,500 euros, expects a residual value of 6,000 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 10,125 euros of depreciation in each of those years.",
-      "A pharmacy chain has used its dispensing equipment for three years and charges 8,340 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 16,680 euros.",
-      "A courier firm recorded its delivery vans at a cost of 28,500 euros and depreciates it on the straight-line method by 5,140 euros a year; after two years of use, its book value would be 18,220 euros.",
-      "A publishing house has used its binding machines for three years and charges 12,875 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,750 euros.",
-      "A construction firm recorded its heavy construction machinery at a cost of 33,000 euros and depreciates it on the straight-line method by 4,900 euros a year; after two years of use, its book value would be 23,200 euros."
+      "Accumulated depreciation on a restaurant chain's commercial refrigerators after three years is 54,480 euros.",
+      "After two years, the carrying value of a brewery's brewing tanks is 73,000 euros.",
+      "Accumulated depreciation on a IT consultancy's laptop computers after three years is 47,250 euros.",
+      "After two years, the carrying value of a textile mill's spinning machinery is 74,100 euros.",
+      "Accumulated depreciation on a publishing house's binding machines after three years is 38,625 euros."
     ],
     "answer_key": [
       true,
@@ -769,11 +769,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Spreading the depreciable amount of 40,500 euros evenly over 4 years gives an annual charge of 10,125 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 25,020 euros rather than the two years' worth shown here.",
-      "TRUE — Deducting two years of depreciation, 10,280 euros in total, from the original cost of 28,500 euros leaves a book value of 18,220 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 38,625 euros rather than the two years' worth shown here.",
-      "TRUE — Deducting two years of depreciation, 9,800 euros in total, from the original cost of 33,000 euros leaves a book value of 23,200 euros."
+      "TRUE — Three annual charges of 18,160 euros accumulate to 54,480 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 38,000 euros.",
+      "TRUE — Three annual charges of 15,750 euros accumulate to 47,250 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 45,900 euros.",
+      "TRUE — Three annual charges of 12,875 euros accumulate to 38,625 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -783,13 +783,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.062",
     "title": "Furniture Maker Depreciation Policy",
-    "context": "Consider a textile mill replacing ageing spinning machinery and calculating the machinery's book value after several years of use. Evaluate the following economic assertions:",
+    "context": "Consider a textile mill replacing ageing spinning machinery and calculating the machinery's carrying value after several years of use. Evaluate the following economic assertions:",
     "statements": [
-      "A car parts manufacturer has used its stamping presses for three years and charges 10,670 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 21,340 euros.",
-      "A hotel chain recorded its kitchen equipment at a cost of 37,500 euros and depreciates it on the straight-line method by 4,125 euros a year; after two years of use, its book value would be 29,250 euros.",
-      "A catering company has used its catering vans for three years and charges 22,820 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 45,640 euros.",
-      "During one year, a bakery generated 26,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new commercial ovens, and received 5,500 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,500 euros over the year.",
-      "During one year, a courier firm generated 27,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new delivery vans, and used 4,380 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 34,020 euros over the year."
+      "After two years, the carrying value of a printing company's printing press is 76,520 euros.",
+      "Accumulated depreciation on a car parts manufacturer's stamping presses after three years is 32,010 euros.",
+      "After two years, the carrying value of a arable farm's tractor is 100,900 euros.",
+      "After two years, the carrying value of a electronics retailer's point-of-sale tills is 100,500 euros.",
+      "After two years, the carrying value of a logistics company's forklift trucks is 103,300 euros."
     ],
     "answer_key": [
       false,
@@ -799,11 +799,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 32,010 euros rather than the two years' worth shown here.",
-      "TRUE — Deducting two years of depreciation, 8,250 euros in total, from the original cost of 37,500 euros leaves a book value of 29,250 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 68,460 euros rather than the two years' worth shown here.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,500 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 12,420 euros."
+      "FALSE — Depreciation reduces carrying value; the correct figure is 52,480 euros.",
+      "TRUE — Three annual charges of 10,670 euros accumulate to 32,010 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 37,100 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 46,500 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 52,700 euros."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -813,13 +813,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.066",
     "title": "Brewery Investing Cash Flow",
-    "context": "Analyze how the number of years an asset has been used affects the accumulated depreciation recorded against it. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 69200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | (9060) |\n| Net change in cash and cash equivalents | **47540** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A garage recorded its diagnostic equipment at a cost of 46,500 euros and depreciates it on the straight-line method by 10,125 euros a year; after two years of use, its book value would be 26,250 euros.",
-      "A furniture maker recorded its woodworking machinery at a cost of 51,000 euros and depreciates it on the straight-line method by 9,800 euros a year; after two years of use, its book value would be 31,400 euros.",
-      "A arable farm recorded its tractor at a cost of 69,000 euros and depreciates it on the straight-line method by 15,950 euros a year; after two years of use, its book value would be 37,100 euros.",
-      "A logistics company recorded its forklift trucks at a cost of 78,000 euros and depreciates it on the straight-line method by 12,650 euros a year; after two years of use, its book value would be 52,700 euros.",
-      "A dairy processor recorded its refrigerated trucks at a cost of 82,500 euros and depreciates it on the straight-line method by 9,950 euros a year; after two years of use, its book value would be 62,600 euros."
+      "On extract 28, cash and cash equivalents change by 47,540 euros in total.",
+      "Purchases recorded under investing total an outflow of 12,600 euros on extract 28.",
+      "Financing activities remove 9,060 euros from cash on extract 28.",
+      "Operating cash of 69,200 euros more than covers the investing outflow of 12,600 euros on extract 28.",
+      "Buying new kitchen equipment for this hotel chain is classified under investing activities."
     ],
     "answer_key": [
       true,
@@ -829,11 +829,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Deducting two years of depreciation, 20,250 euros in total, from the original cost of 46,500 euros leaves a book value of 26,250 euros.",
-      "TRUE — Deducting two years of depreciation, 19,600 euros in total, from the original cost of 51,000 euros leaves a book value of 31,400 euros.",
-      "TRUE — Deducting two years of depreciation, 31,900 euros in total, from the original cost of 69,000 euros leaves a book value of 37,100 euros.",
-      "TRUE — Deducting two years of depreciation, 25,300 euros in total, from the original cost of 78,000 euros leaves a book value of 52,700 euros.",
-      "TRUE — Deducting two years of depreciation, 19,900 euros in total, from the original cost of 82,500 euros leaves a book value of 62,600 euros."
+      "TRUE — Operating 69200 − investing 12600 − financing 9060 = 47540.",
+      "TRUE — The investing line is (12600).",
+      "TRUE — Financing is an outflow of 9,060 euros.",
+      "TRUE — Operating 69200 versus investing 12600.",
+      "TRUE — Long-term asset purchases are investing cash flows."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -845,11 +845,11 @@
     "title": "Textile Mill Machinery Book Value",
     "context": "Review why turnover for the year appears in the statement of profit and loss rather than the balance sheet. Evaluate the following economic assertions:",
     "statements": [
-      "A pharmacy chain recorded its dispensing equipment at a cost of 87,000 euros and depreciates it on the straight-line method by 8,340 euros a year; after two years of use, its book value would be 70,320 euros.",
-      "During one year, a construction firm generated 29,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new heavy construction machinery, and received 5,940 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 47,740 euros over the year.",
-      "A recycling firm recorded its sorting machinery at a cost of 123,000 euros and depreciates it on the straight-line method by 19,600 euros a year; after two years of use, its book value would be 83,800 euros.",
-      "A construction firm has used its heavy construction machinery for three years and charges 4,900 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 14,700 euros.",
-      "A software developer has used its office computer equipment for three years and charges 3,680 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 11,040 euros."
+      "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "After two years, the carrying value of a dairy processor's refrigerated trucks is 102,400 euros.",
+      "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
+      "When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
     ],
     "answer_key": [
       true,
@@ -859,11 +859,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Deducting two years of depreciation, 16,680 euros in total, from the original cost of 87,000 euros leaves a book value of 70,320 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,540 euros.",
-      "TRUE — Deducting two years of depreciation, 39,200 euros in total, from the original cost of 123,000 euros leaves a book value of 83,800 euros.",
-      "TRUE — Multiplying the annual charge of 4,900 euros by the three years the asset has been used gives accumulated depreciation of 14,700 euros.",
-      "TRUE — Multiplying the annual charge of 3,680 euros by the three years the asset has been used gives accumulated depreciation of 11,040 euros."
+      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 62,600 euros.",
+      "TRUE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow.",
+      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      "TRUE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -875,11 +875,11 @@
     "title": "Printing Press Cash Flow Impact",
     "context": "Analyze the difference between a cash expense and a non-cash expense such as depreciation. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a hotel chain generated 30,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kitchen equipment, and used 4,740 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 40,460 euros over the year.",
-      "During one year, a software developer generated 32,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new office computer equipment, and received 6,380 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 54,980 euros over the year.",
-      "A garage has used its diagnostic equipment for three years and charges 10,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 30,375 euros.",
-      "During one year, a furniture maker generated 35,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new woodworking machinery, and received 6,820 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 53,220 euros over the year.",
-      "During one year, a electronics retailer generated 43,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new point-of-sale tills, and used 6,180 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 48,220 euros over the year."
+      "After two years, the carrying value of a pharmacy chain's dispensing equipment is 103,680 euros.",
+      "After two years, the carrying value of a fitness club chain's exercise equipment is 135,050 euros.",
+      "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "After two years, the carrying value of a restaurant chain's commercial refrigerators is 132,320 euros.",
+      "After two years, the carrying value of a IT consultancy's laptop computers is 132,000 euros."
     ],
     "answer_key": [
       false,
@@ -889,11 +889,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 11,660 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 22,580 euros.",
-      "TRUE — Multiplying the annual charge of 10,125 euros by the three years the asset has been used gives accumulated depreciation of 30,375 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 31,620 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 26,620 euros."
+      "FALSE — Depreciation reduces carrying value; the correct figure is 70,320 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 47,950 euros.",
+      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 59,680 euros.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 69,000 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -903,13 +903,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.075",
     "title": "Arable Farm Land and Tractor",
-    "context": "Consider a logistics company that took out a long-term loan to buy new forklift trucks and is classifying the resulting cash flows. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 74000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | 12100 |\n| Net change in cash and cash equivalents | **77100** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "During one year, a logistics company generated 45,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new forklift trucks, and received 8,140 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 65,940 euros over the year.",
-      "A textile mill has used its spinning machinery for three years and charges 7,050 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 21,150 euros.",
-      "During one year, a dairy processor generated 46,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new refrigerated trucks, and used 6,540 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 54,660 euros over the year.",
-      "During one year, a fitness club chain generated 50,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new exercise equipment, and used 6,900 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 52,100 euros over the year.",
-      "During one year, a publishing house generated 54,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new binding machines, and received 9,460 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 78,660 euros over the year."
+      "Treating the investing line as an addition, total cash would change by 95,100 euros on extract 31.",
+      "On extract 31, cash and cash equivalents change by 77,100 euros in total.",
+      "The operating figure alone of 74,000 euros is already the full net change on extract 31.",
+      "The investing line on extract 31 reports cash received of 9,000 euros.",
+      "Financing activities remove 12,100 euros from cash on extract 31."
     ],
     "answer_key": [
       false,
@@ -919,11 +919,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,740 euros.",
-      "TRUE — Multiplying the annual charge of 7,050 euros by the three years the asset has been used gives accumulated depreciation of 21,150 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 25,860 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 34,100 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 49,860 euros."
+      "FALSE — Investing must be subtracted; correct net change is 77,100 euros.",
+      "TRUE — Operating 74000 − investing 9000 + financing 12100 = 77100.",
+      "FALSE — That ignores investing and financing; correct net is 77,100 euros.",
+      "FALSE — Investing is an outflow of 9,000 euros.",
+      "FALSE — Financing is an inflow of 12,100 euros, not an outflow."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -935,11 +935,11 @@
     "title": "Electronics Retailer Till Upgrade",
     "context": "Analyze why the balance sheet alone cannot show how a business performed over the whole year. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a car parts manufacturer generated 56,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new stamping presses, and used 7,620 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 64,980 euros over the year.",
-      "A printing company has used its printing press for three years and charges 6,010 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 18,030 euros.",
-      "During one year, a textile mill generated 38,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new spinning machinery, and received 7,260 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 31,660 euros over the year.",
-      "During one year, a catering company generated 59,600 euros of cash from operating activities, used 10,800 euros of cash in investing activities to fund new catering vans, and used 7,980 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 62,420 euros over the year.",
-      "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities."
+      "After two years, the carrying value of a recycling firm's sorting machinery is 162,200 euros.",
+      "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
+      "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "After two years, the carrying value of a ceramics workshop's kiln equipment is 157,850 euros.",
+      "Accumulated depreciation on a bakery's commercial ovens after three years is 11,000 euros."
     ],
     "answer_key": [
       false,
@@ -949,11 +949,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 32,580 euros.",
-      "TRUE — Multiplying the annual charge of 6,010 euros by the three years the asset has been used gives accumulated depreciation of 18,030 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 31,660 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,820 euros.",
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section."
+      "FALSE — Depreciation reduces carrying value; the correct figure is 83,800 euros.",
+      "TRUE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow is classified as an investing cash flow.",
+      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      "FALSE — Depreciation reduces carrying value; the correct figure is 97,150 euros.",
+      "FALSE — Three years of use accumulate 16,500 euros, not two years' worth."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -965,11 +965,11 @@
     "title": "Overstated Assets Without Depreciation",
     "context": "Review how retained earnings link the statement of profit and loss to the equity section of the balance sheet. Evaluate the following economic assertions:",
     "statements": [
-      "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
-      "When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "During one year, a printing company generated 40,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new printing press, and used 5,820 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 18,380 euros over the year.",
-      "When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
+      "Accumulated depreciation on a courier firm's delivery vans after three years is 10,280 euros.",
+      "Accumulated depreciation on a construction firm's heavy construction machinery after three years is 9,800 euros.",
+      "Accumulated depreciation on a hotel chain's kitchen equipment after three years is 8,250 euros.",
+      "When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "Accumulated depreciation on a software developer's office computer equipment after three years is 7,360 euros."
     ],
     "answer_key": [
       false,
@@ -979,11 +979,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "FALSE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.",
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and subtracting the financing outflow gives the correct net change of 18,380 euros.",
-      "FALSE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow belongs in the investing section, not the operating section."
+      "FALSE — Three years of use accumulate 15,420 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 14,700 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 12,375 euros, not two years' worth.",
+      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
+      "FALSE — Three years of use accumulate 11,040 euros, not two years' worth."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -993,13 +993,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.079",
     "title": "Understanding the Three Cash Flow Sections",
-    "context": "Analyze the relationship between reported profit and the equity shown on the balance sheet. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 78800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | (10140) |\n| Net change in cash and cash equivalents | **54260** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "During one year, a arable farm generated 42,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new tractor, and received 7,700 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,700 euros over the year.",
-      "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
+      "Treating the investing line as an addition, total cash would change by 83,060 euros on extract 34.",
+      "On extract 34, cash and cash equivalents change by 54,260 euros in total.",
+      "The operating figure alone of 78,800 euros is already the full net change on extract 34.",
+      "Purchases recorded under investing total an outflow of 14,400 euros on extract 34.",
+      "The investing line on extract 34 reports cash received of 14,400 euros."
     ],
     "answer_key": [
       false,
@@ -1009,11 +1009,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,700 euros.",
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "TRUE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow is classified as an investing cash flow.",
-      "FALSE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section."
+      "FALSE — Investing must be subtracted; correct net change is 54,260 euros.",
+      "TRUE — Operating 78800 − investing 14400 − financing 10140 = 54260.",
+      "FALSE — That ignores investing and financing; correct net is 54,260 euros.",
+      "TRUE — The investing line is (14400).",
+      "FALSE — Investing is an outflow of 14,400 euros."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1025,11 +1025,11 @@
     "title": "Operating Cash Flow and Core Trading",
     "context": "Consider a restaurant chain replacing commercial refrigerators across its outlets and reviewing the depreciation policy applied to them. Evaluate the following economic assertions:",
     "statements": [
-      "When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
-      "The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date."
+      "When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
+      "When a catering company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "Accumulated depreciation on a textile mill's spinning machinery after three years is 14,100 euros.",
+      "Accumulated depreciation on a printing company's printing press after three years is 12,020 euros."
     ],
     "answer_key": [
       true,
@@ -1039,11 +1039,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
       "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "TRUE — Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow.",
-      "FALSE — Buying long-term assets such as laptop computers is an investing decision, so the outflow belongs in the investing section, not the operating section.",
-      "FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period."
+      "TRUE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow is classified as an investing cash flow.",
+      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      "FALSE — Three years of use accumulate 21,150 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 18,030 euros, not two years' worth."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1055,11 +1055,11 @@
     "title": "Investing Cash Flow and Fixed Assets",
     "context": "Analyze why a business can be profitable yet still see its cash balance fall during the year. Evaluate the following economic assertions:",
     "statements": [
-      "The balance sheet of a courier firm reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.",
-      "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "When a bakery earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "When a courier firm makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use."
+      "Accumulated depreciation on a arable farm's tractor after three years is 31,900 euros.",
+      "When a recycling firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "Accumulated depreciation on a electronics retailer's point-of-sale tills after three years is 27,000 euros.",
+      "Accumulated depreciation on a logistics company's forklift trucks after three years is 25,300 euros.",
+      "Accumulated depreciation on a dairy processor's refrigerated trucks after three years is 19,900 euros."
     ],
     "answer_key": [
       false,
@@ -1069,11 +1069,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.",
-      "FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.",
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation."
+      "FALSE — Three years of use accumulate 47,850 euros, not two years' worth.",
+      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
+      "FALSE — Three years of use accumulate 40,500 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 37,950 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 29,850 euros, not two years' worth."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1083,13 +1083,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.088",
     "title": "Financing Cash Flow and Borrowing",
-    "context": "Review why straight-line depreciation produces an equal annual charge rather than a fluctuating one. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 83600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | 13420 |\n| Net change in cash and cash equivalents | **86220** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "The balance sheet of a construction firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
+      "On extract 37, cash and cash equivalents change by 86,220 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 107,820 euros on extract 37.",
+      "Purchases recorded under investing total an outflow of 10,800 euros on extract 37.",
+      "Financing activities add 13,420 euros to cash on extract 37.",
+      "Operating cash of 83,600 euros more than covers the investing outflow of 10,800 euros on extract 37."
     ],
     "answer_key": [
       true,
@@ -1099,11 +1099,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the delivery vans was purchased.",
-      "TRUE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow is classified as an investing cash flow.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
+      "TRUE — Operating 83600 − investing 10800 + financing 13420 = 86220.",
+      "FALSE — Investing must be subtracted; correct net change is 86,220 euros.",
+      "TRUE — The investing line is (10800).",
+      "TRUE — Financing is an inflow of 13,420 euros.",
+      "TRUE — Operating 83600 versus investing 10800."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1115,11 +1115,11 @@
     "title": "Retained Earnings and Equity Growth",
     "context": "Analyze why depreciation is added back to profit when working out cash generated from operating activities. Evaluate the following economic assertions:",
     "statements": [
-      "Land owned by a construction firm is depreciated in exactly the same way as its heavy construction machinery, because all fixed assets wear out identically through use.",
-      "The depreciation that a hotel chain charges on its kitchen equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "The depreciation that a electronics retailer charges on its point-of-sale tills each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "The balance sheet of a hotel chain shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a construction firm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet."
+      "Accumulated depreciation on a fitness club chain's exercise equipment after three years is 43,550 euros.",
+      "Accumulated depreciation on a restaurant chain's commercial refrigerators after three years is 36,320 euros.",
+      "Accumulated depreciation on a IT consultancy's laptop computers after three years is 31,500 euros.",
+      "When a construction firm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "When a hotel chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
     ],
     "answer_key": [
       false,
@@ -1129,11 +1129,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the kitchen equipment was purchased.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the point-of-sale tills was purchased.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity."
+      "FALSE — Three years of use accumulate 65,325 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 54,480 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 47,250 euros, not two years' worth.",
+      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1145,11 +1145,11 @@
     "title": "Loss and Retained Earnings Decline",
     "context": "Consider a construction firm financing new heavy machinery partly with retained profits and partly with a long-term loan. Evaluate the following economic assertions:",
     "statements": [
-      "Land owned by a logistics company is depreciated in exactly the same way as its forklift trucks, because all fixed assets wear out identically through use.",
-      "The depreciation that a dairy processor charges on its refrigerated trucks each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "The depreciation that a fitness club chain charges on its exercise equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "The depreciation that a car parts manufacturer charges on its stamping presses each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "When a hotel chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
+      "Accumulated depreciation on a publishing house's binding machines after three years is 25,750 euros.",
+      "Accumulated depreciation on a car parts manufacturer's stamping presses after three years is 21,340 euros.",
+      "Accumulated depreciation on a packaging manufacturer's packaging machinery after three years is 55,200 euros.",
+      "Accumulated depreciation on a catering company's catering vans after three years is 45,640 euros.",
+      "When a software developer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet."
     ],
     "answer_key": [
       false,
@@ -1159,11 +1159,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the refrigerated trucks was purchased.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the exercise equipment was purchased.",
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the stamping presses was purchased.",
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity."
+      "FALSE — Three years of use accumulate 38,625 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 32,010 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 82,800 euros, not two years' worth.",
+      "FALSE — Three years of use accumulate 68,460 euros, not two years' worth.",
+      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1173,13 +1173,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.098",
     "title": "Reading a Statement of Profit and Loss",
-    "context": "Analyze why investing activities in the cash flow statement often involve outflows for new fixed assets. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 88400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | (11220) |\n| Net change in cash and cash equivalents | **60980** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a software developer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "When a garage makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "Land owned by a software developer is normally left out of the depreciation schedule because, unlike its office computer equipment, land does not wear out through ordinary use.",
-      "The depreciation that a garage charges on its diagnostic equipment each year is a non-cash expense, since the related cash was already paid out when the diagnostic equipment was originally purchased.",
-      "A construction firm buys heavy construction machinery for 33,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 4,900 euros of depreciation in each of those years."
+      "On extract 40, cash and cash equivalents change by 60,980 euros in total.",
+      "Purchases recorded under investing total an outflow of 16,200 euros on extract 40.",
+      "Financing activities remove 11,220 euros from cash on extract 40.",
+      "Operating cash of 88,400 euros more than covers the investing outflow of 16,200 euros on extract 40.",
+      "Buying new exercise equipment for this fitness club chain is classified under investing activities."
     ],
     "answer_key": [
       true,
@@ -1189,11 +1189,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "TRUE — Spreading the depreciable amount of 29,400 euros evenly over 6 years gives an annual charge of 4,900 euros."
+      "TRUE — Operating 88400 − investing 16200 − financing 11220 = 60980.",
+      "TRUE — The investing line is (16200).",
+      "TRUE — Financing is an outflow of 11,220 euros.",
+      "TRUE — Operating 88400 versus investing 16200.",
+      "TRUE — Long-term asset purchases are investing cash flows."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1205,11 +1205,11 @@
     "title": "Reading a Cash Flow Statement",
     "context": "Review why financing activities in the cash flow statement often involve loans, share capital or dividends. Evaluate the following economic assertions:",
     "statements": [
-      "A hotel chain buys kitchen equipment for 37,500 euros, expects a residual value of 4,500 euros at the end of its useful life, and plans to use it for 8 years; under the straight-line method it would charge 4,125 euros of depreciation in each of those years.",
-      "Land owned by a packaging manufacturer is depreciated in exactly the same way as its packaging machinery, because all fixed assets wear out identically through use.",
-      "A textile mill buys spinning machinery for 60,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 8 years; under the straight-line method it would charge 7,050 euros of depreciation in each of those years.",
-      "A brewery recorded its brewing tanks at a cost of 55,500 euros and depreciates it on the straight-line method by 8,750 euros a year; after two years of use, its book value would be 38,000 euros.",
-      "A textile mill recorded its spinning machinery at a cost of 60,000 euros and depreciates it on the straight-line method by 7,050 euros a year; after two years of use, its book value would be 45,900 euros."
+      "Straight-line annual depreciation on office computer equipment bought by a software developer is 3,680 euros when cost, residual value and useful life are applied correctly.",
+      "Accumulated depreciation on a recycling firm's sorting machinery after three years is 39,200 euros.",
+      "Straight-line annual depreciation on tractor bought by a arable farm is 15,950 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on forklift trucks bought by a logistics company is 12,650 euros when cost, residual value and useful life are applied correctly.",
+      "Straight-line annual depreciation on exercise equipment bought by a fitness club chain is 21,775 euros when cost, residual value and useful life are applied correctly."
     ],
     "answer_key": [
       true,
@@ -1219,11 +1219,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Spreading the depreciable amount of 33,000 euros evenly over 8 years gives an annual charge of 4,125 euros.",
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
-      "TRUE — Spreading the depreciable amount of 56,400 euros evenly over 8 years gives an annual charge of 7,050 euros.",
-      "TRUE — Deducting two years of depreciation, 17,500 euros in total, from the original cost of 55,500 euros leaves a book value of 38,000 euros.",
-      "TRUE — Deducting two years of depreciation, 14,100 euros in total, from the original cost of 60,000 euros leaves a book value of 45,900 euros."
+      "TRUE — That is the correct annual straight-line charge for this office computer equipment.",
+      "FALSE — Three years of use accumulate 58,800 euros, not two years' worth.",
+      "TRUE — That is the correct annual straight-line charge for this tractor.",
+      "TRUE — That is the correct annual straight-line charge for this forklift trucks.",
+      "TRUE — That is the correct annual straight-line charge for this exercise equipment."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1235,11 +1235,11 @@
     "title": "Fixed Assets and Useful Life",
     "context": "Analyze why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:",
     "statements": [
-      "The depreciation that a catering company charges on its catering vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
-      "Land owned by a recycling firm is depreciated in exactly the same way as its sorting machinery, because all fixed assets wear out identically through use.",
-      "A construction firm buys heavy construction machinery for 33,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 5,500 euros of depreciation in each of those years.",
-      "A printing company recorded its printing press at a cost of 64,500 euros and depreciates it on the straight-line method by 6,010 euros a year; after two years of use, its book value would be 52,480 euros.",
-      "A car parts manufacturer buys stamping presses for 109,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 10,950 euros of depreciation in each of those years."
+      "Accumulated depreciation on a ceramics workshop's kiln equipment after three years is 30,350 euros.",
+      "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
+      "Straight-line annual depreciation on commercial refrigerators bought by a restaurant chain is 18,160 euros when cost, residual value and useful life are applied correctly.",
+      "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
     ],
     "answer_key": [
       false,
@@ -1249,11 +1249,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the catering vans was purchased.",
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 4,900 euros, not 5,500 euros.",
-      "TRUE — Deducting two years of depreciation, 12,020 euros in total, from the original cost of 64,500 euros leaves a book value of 52,480 euros.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 10,670 euros, not 10,950 euros."
+      "FALSE — Three years of use accumulate 45,525 euros, not two years' worth.",
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
+      "TRUE — That is the correct annual straight-line charge for this commercial refrigerators.",
+      "FALSE — Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow belongs in the investing section, not the operating section."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1263,13 +1263,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.114",
     "title": "Accumulated Depreciation Over Time",
-    "context": "Consider a furniture maker upgrading its woodworking machinery and preparing its year-end statement of profit and loss. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 93200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | 14740 |\n| Net change in cash and cash equivalents | **95340** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A electronics retailer recorded its point-of-sale tills at a cost of 73,500 euros and depreciates it on the straight-line method by 13,500 euros a year; after two years of use, its book value would be 46,500 euros.",
-      "A arable farm has used its tractor for three years and charges 15,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 47,850 euros.",
-      "During one year, a pharmacy chain generated 48,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new dispensing equipment, and received 8,580 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 40,780 euros over the year.",
-      "When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
+      "On extract 43, cash and cash equivalents change by 95,340 euros in total.",
+      "Purchases recorded under investing total an outflow of 12,600 euros on extract 43.",
+      "Financing activities add 14,740 euros to cash on extract 43.",
+      "Operating cash of 93,200 euros more than covers the investing outflow of 12,600 euros on extract 43.",
+      "Buying new binding machines for this publishing house is classified under investing activities."
     ],
     "answer_key": [
       true,
@@ -1279,11 +1279,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Deducting two years of depreciation, 27,000 euros in total, from the original cost of 73,500 euros leaves a book value of 46,500 euros.",
-      "TRUE — Multiplying the annual charge of 15,950 euros by the three years the asset has been used gives accumulated depreciation of 47,850 euros.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 40,780 euros.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow."
+      "TRUE — Operating 93200 − investing 12600 + financing 14740 = 95340.",
+      "TRUE — The investing line is (12600).",
+      "TRUE — Financing is an inflow of 14,740 euros.",
+      "TRUE — Operating 93200 versus investing 12600.",
+      "TRUE — Long-term asset purchases are investing cash flows."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1295,11 +1295,11 @@
     "title": "Depreciation Charge Consistency",
     "context": "Analyze why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:",
     "statements": [
-      "When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "A packaging manufacturer buys packaging machinery for 114,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 28,500 euros of depreciation in each of those years.",
-      "A bakery recorded its commercial ovens at a cost of 24,000 euros and depreciates it on the straight-line method by 5,500 euros a year; after two years of use, its book value would be 35,000 euros.",
-      "When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities."
+      "When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
+      "When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
+      "The balance sheet of a courier firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
     ],
     "answer_key": [
       true,
@@ -1310,10 +1310,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "FALSE — Dividing the full cost by the useful life while ignoring the residual value overstates the charge; correctly deducting the residual value first gives 27,600 euros, not 28,500 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 13,000 euros, not 35,000 euros.",
-      "TRUE — Buying long-term assets such as laptop computers is an investing decision, so the outflow is classified as an investing cash flow.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow."
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "FALSE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.",
+      "TRUE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow is classified as an investing cash flow.",
+      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1325,11 +1325,11 @@
     "title": "Financial Statement Structure Overview",
     "context": "Review why a business's reported profit for the year is not the same thing as the cash it generated during the year. Evaluate the following economic assertions:",
     "statements": [
-      "A garage recorded its diagnostic equipment at a cost of 46,500 euros and depreciates it on the straight-line method by 10,125 euros a year; after two years of use, its book value would be 66,750 euros.",
-      "When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
-      "When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "When a catering company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
-      "The balance sheet of a software developer shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
+      "When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "The balance sheet of a construction firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a brewery makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "When a textile mill earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use."
     ],
     "answer_key": [
       false,
@@ -1339,11 +1339,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 26,250 euros, not 66,750 euros.",
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
-      "TRUE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow is classified as an investing cash flow.",
-      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1353,13 +1353,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.122",
     "title": "Balance Sheet Versus Income Statement",
-    "context": "Review the balance sheet as a snapshot of a business's assets, equity and liabilities on one specific date. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | (12300) |\n| Net change in cash and cash equivalents | **76700** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A furniture maker recorded its woodworking machinery at a cost of 51,000 euros and depreciates it on the straight-line method by 9,800 euros a year; after two years of use, its book value would be 70,600 euros.",
-      "A brewery recorded its brewing tanks at a cost of 55,500 euros and depreciates it on the straight-line method by 8,750 euros a year; after two years of use, its book value would be 73,000 euros.",
-      "A garage has used its diagnostic equipment for three years and charges 10,125 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 20,250 euros.",
-      "The balance sheet of a garage shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "During one year, a garage generated 34,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new diagnostic equipment, and used 5,100 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 37,900 euros over the year."
+      "Treating the investing line as an addition, total cash would change by 94,700 euros on extract 46.",
+      "The operating figure alone of 98,000 euros is already the full net change on extract 46.",
+      "The investing line on extract 46 reports cash received of 9,000 euros.",
+      "On extract 46, cash and cash equivalents change by 76,700 euros in total.",
+      "Financing activities add 12,300 euros to cash on extract 46."
     ],
     "answer_key": [
       false,
@@ -1369,11 +1369,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 31,400 euros, not 70,600 euros.",
-      "FALSE — Depreciation reduces book value and should be subtracted from cost, not added; correctly, its book value after two years is 38,000 euros, not 73,000 euros.",
-      "FALSE — The asset has been used for three full years, so three years of charges should be accumulated, giving 30,375 euros rather than the two years' worth shown here.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 19,900 euros."
+      "FALSE — Investing must be subtracted; correct net change is 76,700 euros.",
+      "FALSE — That ignores investing and financing; correct net is 76,700 euros.",
+      "FALSE — Investing is an outflow of 9,000 euros.",
+      "TRUE — Operating 98000 − investing 9000 − financing 12300 = 76700.",
+      "FALSE — Financing is an outflow of 12,300 euros, not an inflow."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1385,11 +1385,11 @@
     "title": "Cash Flow Statement Purpose",
     "context": "Consider an arable farm that owns land alongside a tractor and is reviewing how each asset is treated for depreciation purposes. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a brewery generated 37,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new brewing tanks, and used 5,460 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 44,340 euros over the year.",
-      "The balance sheet of a furniture maker shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a furniture maker earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "During one year, a textile mill generated 38,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new spinning machinery, and received 7,260 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 60,460 euros over the year.",
-      "When a brewery makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
+      "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "Land owned by a software developer is normally left out of the depreciation schedule because, unlike its office computer equipment, land does not wear out through ordinary use.",
+      "The depreciation that a garage charges on its diagnostic equipment each year is a non-cash expense, since the related cash was already paid out when the diagnostic equipment was originally purchased.",
+      "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
+      "Straight-line annual depreciation on diagnostic equipment bought by a garage is 10,125 euros when cost, residual value and useful life are applied correctly."
     ],
     "answer_key": [
       false,
@@ -1399,11 +1399,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 19,140 euros.",
-      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 31,660 euros.",
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity."
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
+      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
+      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
+      "TRUE — That is the correct annual straight-line charge for this diagnostic equipment."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1415,11 +1415,11 @@
     "title": "Trade Receivable Cash Classification",
     "context": "Review how the statement of profit and loss reports revenues, costs and the resulting profit or loss over an accounting period. Evaluate the following economic assertions:",
     "statements": [
-      "When a textile mill earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "When a printing company makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "Land owned by a furniture maker is normally left out of the depreciation schedule because, unlike its woodworking machinery, land does not wear out through ordinary use.",
-      "During one year, a printing company generated 40,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new printing press, and used 5,820 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 50,780 euros over the year.",
-      "During one year, a arable farm generated 42,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new tractor, and received 7,700 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,700 euros over the year."
+      "Straight-line annual depreciation on catering vans bought by a catering company is 22,820 euros when cost, residual value and useful life are applied correctly.",
+      "When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
+      "The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date."
     ],
     "answer_key": [
       true,
@@ -1429,11 +1429,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 18,380 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,700 euros."
+      "TRUE — That is the correct annual straight-line charge for this catering vans.",
+      "TRUE — Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.",
+      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.",
+      "FALSE — Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.",
+      "FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1443,13 +1443,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.125",
     "title": "Loan Repayment Cash Classification",
-    "context": "Analyze why the statement of profit and loss covers a period rather than a single point in time. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 102800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | 16060 |\n| Net change in cash and cash equivalents | **104460** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "During one year, a pharmacy chain generated 48,400 euros of cash from operating activities, used 16,200 euros of cash in investing activities to fund new dispensing equipment, and received 8,580 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 73,180 euros over the year.",
-      "The depreciation that a brewery charges on its brewing tanks each year is a non-cash expense, since the related cash was already paid out when the brewing tanks was originally purchased.",
-      "Land owned by a textile mill is normally left out of the depreciation schedule because, unlike its spinning machinery, land does not wear out through ordinary use.",
-      "During one year, a IT consultancy generated 53,200 euros of cash from operating activities, used 12,600 euros of cash in investing activities to fund new laptop computers, and used 7,260 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 58,540 euros over the year.",
-      "A furniture maker buys woodworking machinery for 51,000 euros, expects a residual value of 2,000 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 9,800 euros of depreciation in each of those years."
+      "Treating the investing line as an addition, total cash would change by 133,260 euros on extract 49.",
+      "On extract 49, cash and cash equivalents change by 104,460 euros in total.",
+      "Purchases recorded under investing total an outflow of 14,400 euros on extract 49.",
+      "The operating figure alone of 102,800 euros is already the full net change on extract 49.",
+      "Financing activities add 16,060 euros to cash on extract 49."
     ],
     "answer_key": [
       false,
@@ -1459,11 +1459,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,780 euros.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 33,340 euros.",
-      "TRUE — Spreading the depreciable amount of 49,000 euros evenly over 5 years gives an annual charge of 9,800 euros."
+      "FALSE — Investing must be subtracted; correct net change is 104,460 euros.",
+      "TRUE — Operating 102800 − investing 14400 + financing 16060 = 104460.",
+      "TRUE — The investing line is (14400).",
+      "FALSE — That ignores investing and financing; correct net is 104,460 euros.",
+      "TRUE — Financing is an inflow of 16,060 euros."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1475,11 +1475,11 @@
     "title": "Combining Three Financial Statements",
     "context": "Review how a complete financial statement typically combines a balance sheet, a statement of profit and loss and a cash flow statement. Evaluate the following economic assertions:",
     "statements": [
-      "During one year, a packaging manufacturer generated 58,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new packaging machinery, and received 9,900 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 76,900 euros over the year.",
-      "During one year, a ceramics workshop generated 62,800 euros of cash from operating activities, used 14,400 euros of cash in investing activities to fund new kiln equipment, and used 8,340 euros of cash in financing activities to repay part of a loan; as a result, its cash and cash equivalents increased by 68,860 euros over the year.",
-      "When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "A brewery buys brewing tanks for 55,500 euros, expects a residual value of 3,000 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 8,750 euros of depreciation in each of those years.",
-      "When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
+      "When a restaurant chain earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "When a IT consultancy makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use.",
+      "The depreciation that a brewery charges on its brewing tanks each year is a non-cash expense, since the related cash was already paid out when the brewing tanks was originally purchased.",
+      "The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded."
     ],
     "answer_key": [
       false,
@@ -1489,11 +1489,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 58,900 euros.",
-      "FALSE — Investing outflows use cash and must be subtracted, not added; treating the investing figure as an addition overstates the net change, which is correctly an increase of 40,060 euros.",
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "TRUE — Spreading the depreciable amount of 52,500 euros evenly over 6 years gives an annual charge of 8,750 euros.",
-      "FALSE — Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow belongs in the investing section, not the operating section."
+      "FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.",
+      "FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.",
+      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
+      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
+      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the delivery vans was purchased."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -1505,11 +1505,11 @@
     "title": "Point-in-Time Versus Period Statements",
     "context": "Consider a pharmacy chain reviewing why its reported profit for the year does not match the change in its cash balance. Evaluate the following economic assertions:",
     "statements": [
-      "When a furniture maker collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "A printing company buys printing press for 64,500 euros, expects a residual value of 4,400 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 6,010 euros of depreciation in each of those years.",
-      "A pharmacy chain buys dispensing equipment for 87,000 euros, expects a residual value of 3,600 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 8,340 euros of depreciation in each of those years.",
-      "A electronics retailer has used its point-of-sale tills for three years and charges 13,500 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 40,500 euros.",
-      "A logistics company has used its forklift trucks for three years and charges 12,650 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 37,950 euros."
+      "Land owned by a construction firm is depreciated in exactly the same way as its heavy construction machinery, because all fixed assets wear out identically through use.",
+      "Land owned by a textile mill is normally left out of the depreciation schedule because, unlike its spinning machinery, land does not wear out through ordinary use.",
+      "The depreciation that a printing company charges on its printing press each year is a non-cash expense, since the related cash was already paid out when the printing press was originally purchased.",
+      "The balance sheet of a hotel chain shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a electronics retailer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
     ],
     "answer_key": [
       false,
@@ -1519,11 +1519,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
-      "TRUE — Spreading the depreciable amount of 60,100 euros evenly over 10 years gives an annual charge of 6,010 euros.",
-      "TRUE — Spreading the depreciable amount of 83,400 euros evenly over 10 years gives an annual charge of 8,340 euros.",
-      "TRUE — Multiplying the annual charge of 13,500 euros by the three years the asset has been used gives accumulated depreciation of 40,500 euros.",
-      "TRUE — Multiplying the annual charge of 12,650 euros by the three years the asset has been used gives accumulated depreciation of 37,950 euros."
+      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
+      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
+      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -1533,13 +1533,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.129",
     "title": "Equity Movements From Profit",
-    "context": "Review how depreciation reflects the gradual wearing out of a fixed asset used to generate revenue. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 107600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | (13380) |\n| Net change in cash and cash equivalents | **83420** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A dairy processor has used its refrigerated trucks for three years and charges 9,950 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 29,850 euros.",
-      "A pharmacy chain has used its dispensing equipment for three years and charges 8,340 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 25,020 euros.",
-      "When a brewery repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "A publishing house has used its binding machines for three years and charges 12,875 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 38,625 euros.",
-      "A recycling firm has used its sorting machinery for three years and charges 19,600 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 58,800 euros."
+      "On extract 52, cash and cash equivalents change by 83,420 euros in total.",
+      "Purchases recorded under investing total an outflow of 10,800 euros on extract 52.",
+      "Treating the investing line as an addition, total cash would change by 105,020 euros on extract 52.",
+      "Financing activities remove 13,380 euros from cash on extract 52.",
+      "Operating cash of 107,600 euros more than covers the investing outflow of 10,800 euros on extract 52."
     ],
     "answer_key": [
       true,
@@ -1549,11 +1549,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Multiplying the annual charge of 9,950 euros by the three years the asset has been used gives accumulated depreciation of 29,850 euros.",
-      "TRUE — Multiplying the annual charge of 8,340 euros by the three years the asset has been used gives accumulated depreciation of 25,020 euros.",
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "TRUE — Multiplying the annual charge of 12,875 euros by the three years the asset has been used gives accumulated depreciation of 38,625 euros.",
-      "TRUE — Multiplying the annual charge of 19,600 euros by the three years the asset has been used gives accumulated depreciation of 58,800 euros."
+      "TRUE — Operating 107600 − investing 10800 − financing 13380 = 83420.",
+      "TRUE — The investing line is (10800).",
+      "FALSE — Investing must be subtracted; correct net change is 83,420 euros.",
+      "TRUE — Financing is an outflow of 13,380 euros.",
+      "TRUE — Operating 107600 versus investing 10800."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1565,11 +1565,11 @@
     "title": "Equity Movements From Loss",
     "context": "Analyze why failing to record depreciation would overstate the value of a fixed asset in the accounts. Evaluate the following economic assertions:",
     "statements": [
-      "A ceramics workshop has used its kiln equipment for three years and charges 15,175 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 45,525 euros.",
-      "When a textile mill purchases new spinning machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
-      "During one year, a packaging manufacturer generated 58,000 euros of cash from operating activities, used 9,000 euros of cash in investing activities to fund new packaging machinery, and received 9,900 euros of cash from financing activities by taking out a new loan; as a result, its cash and cash equivalents increased by 58,900 euros over the year.",
-      "When a printing company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "When a recycling firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
+      "Land owned by a logistics company is normally left out of the depreciation schedule because, unlike its forklift trucks, land does not wear out through ordinary use.",
+      "Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use.",
+      "The depreciation that a dairy processor charges on its refrigerated trucks each year is a non-cash expense, since the related cash was already paid out when the refrigerated trucks was originally purchased.",
+      "The depreciation that a garage charges on its diagnostic equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
+      "The balance sheet of a software developer shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
     ],
     "answer_key": [
       true,
@@ -1579,11 +1579,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Multiplying the annual charge of 15,175 euros by the three years the asset has been used gives accumulated depreciation of 45,525 euros.",
-      "FALSE — Buying long-term assets such as spinning machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.",
-      "TRUE — Adding the operating inflow, subtracting the investing outflow and adding the financing inflow gives the correct net change of 58,900 euros.",
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
-      "TRUE — Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow."
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
+      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
+      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
+      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the diagnostic equipment was purchased.",
+      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1595,11 +1595,11 @@
     "title": "Depreciation Policy and Reported Profit",
     "context": "Review why depreciation is described as an expense that does not by itself cause a cash payment. Evaluate the following economic assertions:",
     "statements": [
-      "When a ceramics workshop purchases new kiln equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
-      "The balance sheet of a brewery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a arable farm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "When a electronics retailer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "The depreciation that a printing company charges on its printing press each year is a non-cash expense, since the related cash was already paid out when the printing press was originally purchased."
+      "The balance sheet of a garage shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a pharmacy chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "When a fitness club chain makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "Land owned by a pharmacy chain is normally left out of the depreciation schedule because, unlike its dispensing equipment, land does not wear out through ordinary use.",
+      "The depreciation that a fitness club chain charges on its exercise equipment each year is a non-cash expense, since the related cash was already paid out when the exercise equipment was originally purchased."
     ],
     "answer_key": [
       true,
@@ -1609,10 +1609,10 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Buying long-term assets such as kiln equipment is an investing decision, so the outflow is classified as an investing cash flow.",
       "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
       "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
       "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
       "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment."
     ],
     "difficulty_level": "5/5",
@@ -1623,13 +1623,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.134",
     "title": "Non-Cash Adjustments to Profit",
-    "context": "Consider a bakery that installed new commercial ovens and wants to see how the purchase flows through its statement of profit and loss, cash flow statement and balance sheet. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 112400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | 17380 |\n| Net change in cash and cash equivalents | **113580** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a arable farm repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "Land owned by a arable farm is normally left out of the depreciation schedule because, unlike its tractor, land does not wear out through ordinary use.",
-      "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "The depreciation that a electronics retailer charges on its point-of-sale tills each year is a non-cash expense, since the related cash was already paid out when the point-of-sale tills was originally purchased.",
-      "A arable farm buys tractor for 69,000 euros, expects a residual value of 5,200 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 15,950 euros of depreciation in each of those years."
+      "Treating the investing line as an addition, total cash would change by 145,980 euros on extract 55.",
+      "On extract 55, cash and cash equivalents change by 113,580 euros in total.",
+      "The operating figure alone of 112,400 euros is already the full net change on extract 55.",
+      "Purchases recorded under investing total an outflow of 16,200 euros on extract 55.",
+      "Financing activities add 17,380 euros to cash on extract 55."
     ],
     "answer_key": [
       false,
@@ -1639,11 +1639,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "TRUE — Spreading the depreciable amount of 63,800 euros evenly over 4 years gives an annual charge of 15,950 euros."
+      "FALSE — Investing must be subtracted; correct net change is 113,580 euros.",
+      "TRUE — Operating 112400 − investing 16200 + financing 17380 = 113580.",
+      "FALSE — That ignores investing and financing; correct net is 113,580 euros.",
+      "TRUE — The investing line is (16200).",
+      "TRUE — Financing is an inflow of 17,380 euros."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1653,13 +1653,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.138",
     "title": "Asset Purchase and Investing Outflows",
-    "context": "Review how an asset's book value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:",
+    "context": "Review how an asset's carrying value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:",
     "statements": [
-      "A electronics retailer buys point-of-sale tills for 73,500 euros, expects a residual value of 6,000 euros at the end of its useful life, and plans to use it for 5 years; under the straight-line method it would charge 13,500 euros of depreciation in each of those years.",
-      "A car parts manufacturer buys stamping presses for 109,500 euros, expects a residual value of 2,800 euros at the end of its useful life, and plans to use it for 10 years; under the straight-line method it would charge 10,670 euros of depreciation in each of those years.",
-      "A restaurant chain has used its commercial refrigerators for three years and charges 18,160 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 54,480 euros.",
-      "The balance sheet of a textile mill shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities."
+      "The balance sheet of a brewery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a restaurant chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "When a IT consultancy makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "Land owned by a publishing house is normally left out of the depreciation schedule because, unlike its binding machines, land does not wear out through ordinary use.",
+      "Land owned by a textile mill is depreciated in exactly the same way as its spinning machinery, because all fixed assets wear out identically through use."
     ],
     "answer_key": [
       true,
@@ -1669,11 +1669,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Spreading the depreciable amount of 67,500 euros evenly over 5 years gives an annual charge of 13,500 euros.",
-      "TRUE — Spreading the depreciable amount of 106,700 euros evenly over 10 years gives an annual charge of 10,670 euros.",
-      "TRUE — Multiplying the annual charge of 18,160 euros by the three years the asset has been used gives accumulated depreciation of 54,480 euros.",
       "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section."
+      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
+      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1685,11 +1685,11 @@
     "title": "Loan Financing and Cash Outflows",
     "context": "Analyze why land is generally treated differently from buildings, machinery and vehicles when it comes to depreciation. Evaluate the following economic assertions:",
     "statements": [
-      "When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
-      "When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
-      "When a packaging manufacturer purchases new packaging machinery for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
-      "The balance sheet of a construction firm reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.",
-      "When a logistics company earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet."
+      "The depreciation that a printing company charges on its printing press each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
+      "Land owned by a arable farm is depreciated in exactly the same way as its tractor, because all fixed assets wear out identically through use.",
+      "When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.",
+      "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "The depreciation that a car parts manufacturer charges on its stamping presses each year is a non-cash expense, since the related cash was already paid out when the stamping presses was originally purchased."
     ],
     "answer_key": [
       false,
@@ -1699,11 +1699,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "FALSE — Depreciation does not itself cause a cash payment; the related cash was already paid when the printing press was purchased.",
+      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.",
       "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.",
-      "FALSE — Buying long-term assets such as packaging machinery is an investing decision, so the outflow belongs in the investing section, not the operating section.",
-      "FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.",
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity."
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1713,13 +1713,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.144",
     "title": "Straight-Line Charges Across Useful Life",
-    "context": "Review how a profit earned during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 117200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | (14460) |\n| Net change in cash and cash equivalents | **90140** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "When a dairy processor makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "The balance sheet of a hotel chain reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.",
-      "When a pharmacy chain earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "Land owned by a logistics company is normally left out of the depreciation schedule because, unlike its forklift trucks, land does not wear out through ordinary use.",
-      "The depreciation that a dairy processor charges on its refrigerated trucks each year is a non-cash expense, since the related cash was already paid out when the refrigerated trucks was originally purchased."
+      "On extract 58, cash and cash equivalents change by 90,140 euros in total.",
+      "Treating the investing line as an addition, total cash would change by 115,340 euros on extract 58.",
+      "Purchases recorded under investing total an outflow of 12,600 euros on extract 58.",
+      "Financing activities remove 14,460 euros from cash on extract 58.",
+      "Operating cash of 117,200 euros more than covers the investing outflow of 12,600 euros on extract 58."
     ],
     "answer_key": [
       true,
@@ -1729,11 +1729,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
-      "FALSE — This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.",
-      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
-      "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
-      "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment."
+      "TRUE — Operating 117200 − investing 12600 − financing 14460 = 90140.",
+      "FALSE — Investing must be subtracted; correct net change is 90,140 euros.",
+      "TRUE — The investing line is (12600).",
+      "TRUE — Financing is an outflow of 14,460 euros.",
+      "TRUE — Operating 117200 versus investing 12600."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1745,11 +1745,11 @@
     "title": "Land Excluded From Depreciation",
     "context": "Consider a software developer that reported a healthy profit for the year but noticed its cash and cash equivalents had fallen. Evaluate the following economic assertions:",
     "statements": [
-      "Land owned by a pharmacy chain is normally left out of the depreciation schedule because, unlike its dispensing equipment, land does not wear out through ordinary use.",
-      "The depreciation that a fitness club chain charges on its exercise equipment each year is a non-cash expense, since the related cash was already paid out when the exercise equipment was originally purchased.",
-      "A logistics company buys forklift trucks for 78,000 euros, expects a residual value of 2,100 euros at the end of its useful life, and plans to use it for 6 years; under the straight-line method it would charge 12,650 euros of depreciation in each of those years.",
-      "A fitness club chain buys exercise equipment for 91,500 euros, expects a residual value of 4,400 euros at the end of its useful life, and plans to use it for 4 years; under the straight-line method it would charge 21,775 euros of depreciation in each of those years.",
-      "A IT consultancy has used its laptop computers for three years and charges 15,750 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 47,250 euros."
+      "When a car parts manufacturer makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "When a packaging manufacturer earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "Land owned by a recycling firm is normally left out of the depreciation schedule because, unlike its sorting machinery, land does not wear out through ordinary use.",
+      "The depreciation that a ceramics workshop charges on its kiln equipment each year is a non-cash expense, since the related cash was already paid out when the kiln equipment was originally purchased.",
+      "The balance sheet of a printing company shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period."
     ],
     "answer_key": [
       true,
@@ -1759,11 +1759,11 @@
       true
     ],
     "tactical_explanations": [
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      "TRUE — Profit for the year raises retained earnings, which in turn increases total equity.",
       "TRUE — Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.",
       "TRUE — Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.",
-      "TRUE — Spreading the depreciable amount of 75,900 euros evenly over 6 years gives an annual charge of 12,650 euros.",
-      "TRUE — Spreading the depreciable amount of 87,100 euros evenly over 4 years gives an annual charge of 21,775 euros.",
-      "TRUE — Multiplying the annual charge of 15,750 euros by the three years the asset has been used gives accumulated depreciation of 47,250 euros."
+      "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1775,11 +1775,11 @@
     "title": "Profit Reported Versus Cash Generated",
     "context": "Review why profit for the year and the change in cash and cash equivalents are not usually the same figure. Evaluate the following economic assertions:",
     "statements": [
-      "A catering company has used its catering vans for three years and charges 22,820 euros of straight-line depreciation on it each year; the accumulated depreciation recorded against the asset after three years would be 68,460 euros.",
-      "The balance sheet of a printing company shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
-      "When a construction firm earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
-      "When a hotel chain makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use."
+      "The balance sheet of a arable farm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a catering company makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities.",
+      "When a publishing house collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.",
+      "When a car parts manufacturer repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities."
     ],
     "answer_key": [
       true,
@@ -1789,11 +1789,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Multiplying the annual charge of 22,820 euros by the three years the asset has been used gives accumulated depreciation of 68,460 euros.",
       "TRUE — The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.",
-      "FALSE — Profit adds to retained earnings and increases equity; it does not reduce it.",
-      "FALSE — A loss lowers retained earnings and reduces equity; it does not increase it.",
-      "FALSE — Land does not wear out through use the way equipment does, so it is normally excluded from depreciation."
+      "TRUE — A loss for the year lowers retained earnings, which in turn reduces total equity.",
+      "FALSE — Buying long-term assets such as laptop computers is an investing decision, so the outflow belongs in the investing section, not the operating section.",
+      "FALSE — Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.",
+      "FALSE — Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
