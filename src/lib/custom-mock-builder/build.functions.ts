@@ -124,12 +124,20 @@ function caseToExamQuestion(c: CaseRow, index: number, mockId: string): ExamQues
   while (keys.length < 5) keys.push(false);
   while (expl.length < 5) expl.push("");
 
+  const meta = findSubtopic(c.subsection);
+  const subtopicTag = meta
+    ? `#${meta.id} - ${meta.title}`
+    : c.subsection && c.subsection !== "__mixed__"
+      ? `#${c.subsection}`
+      : undefined;
+
   return {
     id: `${mockId}-q${index}`,
     index,
     subject: "economics",
     stem: c.context?.trim() || c.case_id,
     maxPoints: SCORING_CONFIG.economics.defaultMaxPerTask,
+    subtopicTag,
     statements: statements.map((text, j) => ({
       id: `${mockId}-q${index}-s${j + 1}`,
       text: scrubStatementHints(text),

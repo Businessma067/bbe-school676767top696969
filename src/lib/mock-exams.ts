@@ -41,6 +41,8 @@ export interface ExamQuestion {
   stem: string;
   maxPoints: number;
   statements: ExamStatement[];
+  /** Custom mocks: light gray label like "#2.3 - Different economic systems". */
+  subtopicTag?: string;
 }
 
 /** Available exams. Placeholder content until real questions are added. */

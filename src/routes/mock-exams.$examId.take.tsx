@@ -594,6 +594,11 @@ function TakeExamPage() {
             )}
           >
             <div className="relative p-5 sm:p-8 lg:p-10">
+              {q.subtopicTag ? (
+                <p className="mb-3 text-xs font-medium tracking-wide text-muted-foreground/70">
+                  {q.subtopicTag}
+                </p>
+              ) : null}
               <CaseContextRich content={q.stem} emphasized className="text-foreground" />
 
               <div className="mt-6 overflow-hidden rounded-xl border border-border">

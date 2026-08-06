@@ -340,6 +340,11 @@ function ReviewExamPage() {
                 </button>
                 {isOpen && (
                   <div className="border-t border-border px-5 py-4">
+                    {q.subtopicTag ? (
+                      <p className="mb-2 text-xs font-medium tracking-wide text-muted-foreground/70">
+                        {q.subtopicTag}
+                      </p>
+                    ) : null}
                     <CaseContextRich content={q.stem} className="mb-4" />
                     <div className="space-y-3">
                       {q.statements.map((s, si) => {
