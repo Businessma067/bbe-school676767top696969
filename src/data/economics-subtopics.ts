@@ -110,9 +110,9 @@ export function getEnabledBookChapters(): EconomicsChapterToc[] {
   return ECONOMICS_BOOK_TOC.filter((c) => c.enabled);
 }
 
-/** Custom Mock Builder currently ships subtopic banks for chapters 2–3 only. */
+/** Custom Mock Builder ships subtopic banks for chapters 2–4. */
 export function getCustomMockBookChapters(): EconomicsChapterToc[] {
-  return ECONOMICS_BOOK_TOC.filter((c) => c.enabled && (c.num === 2 || c.num === 3));
+  return ECONOMICS_BOOK_TOC.filter((c) => c.enabled && (c.num === 2 || c.num === 3 || c.num === 4));
 }
 
 export function findSubtopic(id: string): EconomicsSubtopic | undefined {

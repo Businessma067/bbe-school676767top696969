@@ -1,0 +1,163 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.01",
+    "title": "Sole Proprietorship Structure and Liability",
+    "context": "Analyze the defining features of a sole proprietorship as a form of business ownership. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship is owned by one person who also manages and runs the business.",
+      "The sole proprietorship is not a legal entity of its own, so profits are reported on the owner's personal income tax statement.",
+      "A sole proprietor enjoys limited liability so private assets stay fully protected if business debts cannot be repaid.",
+      "Sole proprietorships require substantial minimum share capital before trading may begin.",
+      "Hiring staff removes the sole proprietor from responsibility for major management decisions and business risk."
+    ],
+    "answer_key": [true, true, false, false, false],
+    "tactical_explanations": [
+      "TRUE — Ownership and day-to-day management rest with a single proprietor.",
+      "TRUE — Without separate legal personality, profits are taxed as the owner's personal income.",
+      "FALSE — The sole proprietor has unlimited liability; private assets are also at stake.",
+      "FALSE — Sole proprietorships are easy to establish and face no such capital requirement.",
+      "FALSE — Even with hired personnel, the proprietor retains key decisions and bears the risk."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.01",
+    "title": "Partnership Agreement and Partner Liability",
+    "context": "Consider two consultants who jointly found a business and draft a partnership agreement covering ownership shares, profit division, and decision rights. Evaluate the following economic assertions:",
+    "statements": [
+      "A partnership is formed when two or more persons jointly found a business and settle rights in a partnership agreement.",
+      "In a general partnership all partners typically share equal rights, liabilities, and responsibilities.",
+      "Each general partner is solely liable for all debts of the business under unlimited liability.",
+      "A limited partner who does not manage the business still carries unlimited liability for all partnership debts.",
+      "Partners cannot specialise in different tasks because every partner must perform identical management duties."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "TRUE — Joint founding plus a partnership agreement defines the partnership structure.",
+      "TRUE — General partnerships assign equal rights, liabilities, and responsibilities to partners.",
+      "TRUE — Unlimited liability means each general partner can be held for the whole debt.",
+      "FALSE — In a limited partnership, a limited partner's liability is capped at the capital contributed.",
+      "FALSE — Partners may share tasks and specialise while remaining jointly responsible."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.01",
+    "title": "Corporations as Legal Entities",
+    "context": "Review how corporations differ from unincorporated businesses through separate legal personality and limited shareholder liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A corporation is a legal entity of its own and can own property, hire people, close contracts, sue, and be sued.",
+      "Shareholders need not manage the corporation, and managers need not own shares of the business.",
+      "Shareholders' liability is usually limited to the amount they invested when buying the shares.",
+      "Share capital is divided into shares so that large sums can be raised when investors purchase stock.",
+      "Once share prices rise on the stock exchange after issue, the issuing corporation automatically receives additional financing equal to that price rise."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "TRUE — Corporations are legal persons with the same rights and obligations as natural persons in business life.",
+      "TRUE — Ownership and management can be separated in a corporation.",
+      "TRUE — Limited liability confines shareholders' exposure to their invested capital.",
+      "TRUE — Selling shares builds share capital that finances the corporation.",
+      "FALSE — Post-issue market gains accrue to shareholders; they do not inject new funds into the issuer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.01",
+    "title": "Unincorporated versus Incorporated Ownership",
+    "context": "Analyze the overview that distinguishes unincorporated from incorporated forms of business ownership. Evaluate the following economic assertions:",
+    "statements": [
+      "Unincorporated businesses are not legal entities of their own, whereas incorporated businesses are legal persons.",
+      "In unincorporated forms such as sole proprietorships and partnerships, owners and managers are typically the same persons.",
+      "In corporations, owners and managers need not be the same persons because shareholders provide capital and directors run the company.",
+      "A sole proprietorship is classified as an incorporated business because it files personal income tax on profits.",
+      "Limited liability companies belong with unincorporated businesses because their shares are not always listed on a stock exchange."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "TRUE — Separate legal personality is the core split between unincorporated and incorporated structures.",
+      "TRUE — Sole traders and partners usually both own and manage the firm.",
+      "TRUE — Corporate structure allows shareholders to own while directors manage.",
+      "FALSE — A sole proprietorship remains unincorporated and lacks separate legal personality.",
+      "FALSE — Private limited companies are still incorporated legal persons with limited liability."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.01",
+    "title": "Equity Finance and Debt Finance",
+    "context": "Review the main sources of finance available to businesses as classified into equity and debt. Evaluate the following economic assertions:",
+    "statements": [
+      "Share capital provided by investors is an external equity source of finance for corporations.",
+      "Retained earnings that are reinvested in the business are an internal equity source of finance.",
+      "Bank overdrafts and trade credit are examples of short-term debt finance.",
+      "Long-term bank loans and bonds issued to investors are forms of long-term debt finance.",
+      "Debt finance is classified as internal finance because interest payments return profit to the owners."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "TRUE — Share capital comes from outside investors and counts as equity finance.",
+      "TRUE — Profits retained in the firm supply internal equity finance without interest charges.",
+      "TRUE — Overdrafts and supplier trade credit finance short-term obligations as debt.",
+      "TRUE — Loans and bonds provide longer-term creditors' funds that must be repaid with interest.",
+      "FALSE — Debt finance is external; interest is a cost of borrowing, not internal equity."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.02",
+    "title": "Share Markets, Dividends and Corporate Bonds",
+    "context": "Analyze how share demand, dividends, voting rights, and bond issues relate to corporation finance after shares have already been issued. Evaluate the following economic assertions:",
+    "statements": [
+      "Comparatively low interest rates tend to support higher demand for shares because alternative fixed-return investments become less attractive.",
+      "A corporation that withholds dividends for a long period may face weaker investor demand and falling share prices even though dividend payments remain discretionary.",
+      "Holders of preferred shares usually forgo voting rights at the stockholders' meeting in exchange for a higher dividend claim.",
+      "Issuing bonds can be attractive because the interest rate on bonds is often lower than the interest rate on a comparable bank loan.",
+      "If secondary-market share prices rise after the IPO, the corporation records matching equity finance equal to the cumulative market gain."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "TRUE — Lower interest rates reduce the relative appeal of interest-bearing alternatives and can raise share demand.",
+      "TRUE — Dividends are not obligatory, yet prolonged non-payment can make shares unattractive and pressure prices.",
+      "TRUE — Preferred stock typically trades voting rights for preferential dividend treatment.",
+      "TRUE — Bond issues may finance large projects more cheaply than bank borrowing.",
+      "FALSE — Secondary price rises benefit trading shareholders; they do not inject additional share capital into the issuer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.01",
+    "title": "Matching Finance to Use Cost and Gearing",
+    "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditures on assets used over many years should normally be matched with long-term finance.",
+      "Revenue expenditures such as buying materials for current production can safely be financed by short-term sources.",
+      "A highly geared business may struggle to raise further credit except at higher interest rates and/or against additional collateral.",
+      "When loan capital is already high, internal funds or new equity investors can reduce insolvency risk relative to taking another large loan.",
+      "The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "TRUE — Long-lived asset spending calls for long-term finance so repayment timing matches use.",
+      "TRUE — Short-cycle materials need short-term credit such as overdrafts or trade credit.",
+      "TRUE — High gearing makes lenders cautious and often raises the price or collateral demand of new debt.",
+      "TRUE — Extra debt increases repayment burden; retained earnings or investors avoid adding that load.",
+      "FALSE — Cost matters, but intended use and current gearing also shape the appropriate choice."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]
