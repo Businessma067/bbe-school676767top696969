@@ -9,8 +9,8 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=761 | Total assets=1181\nYear 2 | Equity=839 | Total assets=1279\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 381 | 403 |\n| Machinery | 266 | 298 |\n| Office equipment | 59 | 61 |\n| Patents, trademarks and licences | 34 | 34 |\n| Inventory | 254 | 288 |\n| Trade receivables | 84 | 86 |\n| Cash and cash equivalents | 103 | 109 |\n| Total assets | **1181** | **1279** |\n| **EQUITY** | | |\n| Share capital | 212 | 212 |\n| Retained earnings | 549 | 627 |\n| Total equity | **761** | **839** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 209 | 220 |\n| Bonds payable | 58 | 63 |\n| Trade payables | 99 | 101 |\n| Bank overdraft | 54 | 56 |\n| Total liabilities | **420** | **440** |\n| Total equity and liabilities | **1181** | **1279** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
-      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
       "Non-current liabilities amount to less than 56.8% of total equity in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 7.3% in Year 1.",
       "Total equity grew by more than 24.5% between Year 1 and Year 2.",
       "Total assets grew by more than 10% between Year 1 and Year 2."
     ],
@@ -23,8 +23,8 @@
     ],
     "tactical_explanations": [
       "TRUE — This matches the textbook distinction between non-current and current assets.",
-      "TRUE — Current assets turn into cash within the normal operating cycle.",
       "TRUE — Non-current liabilities are about 33.7% of equity in Year 2.",
+      "TRUE — Long-term financing covers non-current assets by about 38.9% in Year 1.",
       "FALSE — Total equity changed by about 10.2% between the two years.",
       "FALSE — Total assets changed by about 8.3% between the two years."
     ]
@@ -39,10 +39,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=399 | Total assets=951\nYear 2 | Equity=407 | Total assets=1034\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 362 | 405 |\n| Machinery | 132 | 144 |\n| Office equipment | 45 | 52 |\n| Patents, trademarks and licences | 72 | 72 |\n| Inventory | 204 | 211 |\n| Trade receivables | 106 | 117 |\n| Cash and cash equivalents | 30 | 33 |\n| Total assets | **951** | **1034** |\n| **EQUITY** | | |\n| Share capital | 129 | 129 |\n| Retained earnings | 270 | 278 |\n| Total equity | **399** | **407** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 294 | 340 |\n| Bonds payable | 62 | 70 |\n| Trade payables | 149 | 160 |\n| Bank overdraft | 47 | 57 |\n| Total liabilities | **552** | **627** |\n| Total equity and liabilities | **951** | **1034** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
       "Total equity grew by more than 10.4% between Year 1 and Year 2.",
       "Total assets grew by more than 21.8% between Year 1 and Year 2.",
-      "Inventory grew by more than 21% between Year 1 and Year 2."
+      "Inventory grew by more than 21% between Year 1 and Year 2.",
+      "Trade payables grew by more than 25.4% between Year 1 and Year 2."
     ],
     "answer_key": [
       true,
@@ -53,10 +53,10 @@
     ],
     "tactical_explanations": [
       "TRUE — These are textbook advantages of equity finance.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
       "FALSE — Total equity changed by about 2.0% between the two years.",
       "FALSE — Total assets changed by about 8.7% between the two years.",
-      "FALSE — Inventory changed by about 3.4% between the two years."
+      "FALSE — Inventory changed by about 3.4% between the two years.",
+      "FALSE — Trade payables changed by about 7.4% between the two years."
     ]
   },
   {
@@ -69,9 +69,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=379\nMachinery=182\nPatents, trademarks and licences=66\nInventory=160\nTrade receivables=79\nCash and cash equivalents=113\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 379 |\n| Machinery | 182 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 160 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 113 |\n| Total assets | **1019** |\n| **EQUITY** | |\n| Share capital | 280 |\n| Retained earnings | 196 |\n| Total equity | **476** |\n| **LIABILITIES** | |\n| Long-term bank loan | 269 |\n| Bonds payable | 46 |\n| Trade payables | 188 |\n| Bank overdraft | 40 |\n| Total liabilities | **543** |\n| Total equity and liabilities | **1019** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
-      "The current ratio is below 0.79.",
       "The current ratio exceeds 1.54.",
+      "The current ratio is below 0.79.",
+      "Working capital of €124 thousand is positive on this balance sheet.",
       "The equity ratio is below 41.5%."
     ],
     "answer_key": [
@@ -83,9 +83,9 @@
     ],
     "tactical_explanations": [
       "TRUE — Assets = liabilities + equity is the fundamental balance sheet equation.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
-      "FALSE — Current ratio ≈ 1.54.",
       "TRUE — Current ratio ≈ 1.54.",
+      "FALSE — Current ratio ≈ 1.54.",
+      "TRUE — Working capital = 124.",
       "FALSE — Equity ratio ≈ 46.7%."
     ]
   },
@@ -99,9 +99,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=406\nCurrent liabilities=159\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 409 |\n| Machinery | 265 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 72 |\n| Inventory | 201 |\n| Trade receivables | 163 |\n| Cash and cash equivalents | 42 |\n| Total assets | **1192** |\n| **EQUITY** | |\n| Share capital | 183 |\n| Retained earnings | 444 |\n| Total equity | **627** |\n| **LIABILITIES** | |\n| Long-term bank loan | 328 |\n| Bonds payable | 78 |\n| Trade payables | 101 |\n| Bank overdraft | 58 |\n| Total liabilities | **565** |\n| Total equity and liabilities | **1192** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
       "The current ratio exceeds 1.47.",
       "Working capital of €247 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.64 times over.",
       "The current ratio is below 0.72."
     ],
     "answer_key": [
@@ -113,9 +113,9 @@
     ],
     "tactical_explanations": [
       "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
       "TRUE — Current ratio ≈ 2.55.",
       "TRUE — Working capital = 247.",
+      "TRUE — Acid-test ratio ≈ 1.29.",
       "FALSE — Current ratio ≈ 2.55."
     ]
   },
@@ -129,7 +129,7 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=524 | Total assets=1194\nYear 2 | Equity=550 | Total assets=1247\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 400 | 402 |\n| Machinery | 268 | 276 |\n| Office equipment | 69 | 72 |\n| Patents, trademarks and licences | 54 | 54 |\n| Inventory | 147 | 152 |\n| Trade receivables | 144 | 160 |\n| Cash and cash equivalents | 112 | 131 |\n| Total assets | **1194** | **1247** |\n| **EQUITY** | | |\n| Share capital | 124 | 124 |\n| Retained earnings | 400 | 426 |\n| Total equity | **524** | **550** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 357 | 374 |\n| Bonds payable | 71 | 73 |\n| Trade payables | 165 | 163 |\n| Bank overdraft | 77 | 87 |\n| Total liabilities | **670** | **697** |\n| Total equity and liabilities | **1194** | **1247** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2.",
       "Total equity grew by more than 16.9% between Year 1 and Year 2.",
       "Total assets grew by more than 16.5% between Year 1 and Year 2.",
       "Inventory grew by more than 21.8% between Year 1 and Year 2."
@@ -143,7 +143,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "TRUE — Current assets turn into cash within the normal operating cycle.",
+      "TRUE — Retained earnings growth ≈ 6.5% versus total equity growth ≈ 5.0%.",
       "FALSE — Total equity changed by about 5.0% between the two years.",
       "FALSE — Total assets changed by about 4.4% between the two years.",
       "FALSE — Inventory changed by about 3.4% between the two years."
@@ -159,8 +159,8 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=351 | Total assets=1115\nYear 2 | Equity=381 | Total assets=1203\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 499 |\n| Machinery | 178 | 199 |\n| Office equipment | 36 | 39 |\n| Patents, trademarks and licences | 82 | 82 |\n| Inventory | 147 | 162 |\n| Trade receivables | 87 | 99 |\n| Cash and cash equivalents | 114 | 123 |\n| Total assets | **1115** | **1203** |\n| **EQUITY** | | |\n| Share capital | 232 | 232 |\n| Retained earnings | 119 | 149 |\n| Total equity | **351** | **381** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 395 | 432 |\n| Bonds payable | 84 | 88 |\n| Trade payables | 213 | 231 |\n| Bank overdraft | 72 | 71 |\n| Total liabilities | **764** | **822** |\n| Total equity and liabilities | **1115** | **1203** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
       "Non-current liabilities amount to more than 102.9% of total equity in Year 1.",
+      "Non-current assets make up more than 66% of total assets in Year 2.",
       "Total equity grew by more than 9.3% between Year 1 and Year 2.",
       "Inventory grew by more than 16.8% between Year 1 and Year 2."
     ],
@@ -173,8 +173,8 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity equals assets minus liabilities.",
-      "TRUE — Equity ratio expresses equity relative to assets.",
       "TRUE — Non-current liabilities are about 136.5% of equity in Year 1.",
+      "TRUE — Non-current assets are about 68.1% of total assets in Year 2.",
       "FALSE — Total equity changed by about 8.5% between the two years.",
       "FALSE — Inventory changed by about 10.2% between the two years."
     ]
@@ -189,10 +189,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=354\nMachinery=202\nPatents, trademarks and licences=89\nInventory=228\nTrade receivables=95\nCash and cash equivalents=81\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 202 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 228 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1127** |\n| **EQUITY** | |\n| Share capital | 129 |\n| Retained earnings | 400 |\n| Total equity | **529** |\n| **LIABILITIES** | |\n| Long-term bank loan | 342 |\n| Bonds payable | 75 |\n| Trade payables | 148 |\n| Bank overdraft | 33 |\n| Total liabilities | **598** |\n| Total equity and liabilities | **1127** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
       "The current ratio exceeds 1.24.",
       "Working capital of €223 thousand is positive on this balance sheet.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.82 times over."
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.82 times over.",
+      "The debt ratio exceeds 53%."
     ],
     "answer_key": [
       true,
@@ -203,10 +203,10 @@
     ],
     "tactical_explanations": [
       "TRUE — The income statement links to the balance sheet via retained earnings.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
       "TRUE — Current ratio ≈ 2.23.",
       "TRUE — Working capital = 223.",
-      "TRUE — Acid-test ratio ≈ 0.97."
+      "TRUE — Acid-test ratio ≈ 0.97.",
+      "TRUE — Debt ratio ≈ 53.1%."
     ]
   },
   {
@@ -219,9 +219,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=389\nCurrent liabilities=212\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 360 |\n| Machinery | 239 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 224 |\n| Trade receivables | 133 |\n| Cash and cash equivalents | 32 |\n| Total assets | **1119** |\n| **EQUITY** | |\n| Share capital | 143 |\n| Retained earnings | 397 |\n| Total equity | **540** |\n| **LIABILITIES** | |\n| Long-term bank loan | 302 |\n| Bonds payable | 65 |\n| Trade payables | 147 |\n| Bank overdraft | 65 |\n| Total liabilities | **579** |\n| Total equity and liabilities | **1119** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "The current ratio exceeds 1.62.",
       "The current ratio is below 0.76.",
+      "The current ratio exceeds 1.62.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.23 times over.",
       "Working capital of €177 thousand is positive on this balance sheet."
     ],
     "answer_key": [
@@ -233,9 +233,9 @@
     ],
     "tactical_explanations": [
       "TRUE — Classification follows intended use, not physical form alone.",
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "TRUE — Current ratio ≈ 1.83.",
       "FALSE — Current ratio ≈ 1.83.",
+      "TRUE — Current ratio ≈ 1.83.",
+      "FALSE — Acid-test ratio ≈ 0.78.",
       "TRUE — Working capital = 177."
     ]
   },
@@ -249,10 +249,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=340 | Total assets=1006\nYear 2 | Equity=348 | Total assets=1051\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 302 | 329 |\n| Machinery | 234 | 230 |\n| Office equipment | 60 | 64 |\n| Patents, trademarks and licences | 28 | 28 |\n| Inventory | 189 | 205 |\n| Trade receivables | 138 | 135 |\n| Cash and cash equivalents | 55 | 60 |\n| Total assets | **1006** | **1051** |\n| **EQUITY** | | |\n| Share capital | 128 | 128 |\n| Retained earnings | 212 | 220 |\n| Total equity | **340** | **348** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 353 | 370 |\n| Bonds payable | 56 | 58 |\n| Trade payables | 178 | 188 |\n| Bank overdraft | 79 | 87 |\n| Total liabilities | **666** | **703** |\n| Total equity and liabilities | **1006** | **1051** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Total equity grew by more than 9.8% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 56.5% of total equity in Year 1.",
       "Current liabilities are covered by current assets less than 1.83 times over in Year 2.",
-      "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2."
+      "Trade payables of €188 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
     ],
     "answer_key": [
       true,
@@ -263,10 +263,10 @@
     ],
     "tactical_explanations": [
       "TRUE — These are textbook advantages of equity finance.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
+      "FALSE — Total equity changed by about 2.4% between the two years.",
       "TRUE — Non-current liabilities are about 120.3% of equity in Year 1.",
       "TRUE — Current ratio in Year 2 is about 1.45.",
-      "TRUE — Retained earnings growth ≈ 3.8% versus total equity growth ≈ 2.4%."
+      "TRUE — Trade payables are a current liability regardless of the amount."
     ]
   },
   {
@@ -279,10 +279,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=613 | Total assets=1263\nYear 2 | Equity=620 | Total assets=1347\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 463 | 483 |\n| Machinery | 269 | 282 |\n| Office equipment | 39 | 42 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 212 | 239 |\n| Trade receivables | 109 | 131 |\n| Cash and cash equivalents | 78 | 77 |\n| Total assets | **1263** | **1347** |\n| **EQUITY** | | |\n| Share capital | 203 | 203 |\n| Retained earnings | 410 | 417 |\n| Total equity | **613** | **620** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 297 | 345 |\n| Bonds payable | 70 | 80 |\n| Trade payables | 204 | 216 |\n| Bank overdraft | 79 | 86 |\n| Total liabilities | **650** | **727** |\n| Total equity and liabilities | **1263** | **1347** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
       "Non-current liabilities amount to more than 50.2% of total equity in Year 1.",
       "Non-current liabilities amount to less than 107.9% of total equity in Year 2.",
-      "Non-current assets make up more than 61.1% of total assets in Year 2."
+      "Non-current assets make up more than 61.1% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.57 times over in Year 2."
     ],
     "answer_key": [
       true,
@@ -293,10 +293,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Assets = liabilities + equity is the fundamental balance sheet equation.",
-      "TRUE — Classification follows intended use, not physical form alone.",
       "TRUE — Non-current liabilities are about 59.9% of equity in Year 1.",
       "TRUE — Non-current liabilities are about 68.5% of equity in Year 2.",
-      "TRUE — Non-current assets are about 66.8% of total assets in Year 2."
+      "TRUE — Non-current assets are about 66.8% of total assets in Year 2.",
+      "TRUE — Current ratio in Year 2 is about 1.48."
     ]
   },
   {
@@ -309,10 +309,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=492\nMachinery=256\nPatents, trademarks and licences=63\nInventory=136\nTrade receivables=162\nCash and cash equivalents=34\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
       "The current ratio is below 0.93.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
-      "The equity ratio is below 33.7%."
+      "The equity ratio is below 33.7%.",
+      "The debt ratio exceeds 47.8%."
     ],
     "answer_key": [
       true,
@@ -323,10 +323,10 @@
     ],
     "tactical_explanations": [
       "TRUE — This matches the textbook distinction between non-current and current assets.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
       "FALSE — Current ratio ≈ 1.68.",
       "FALSE — Acid-test ratio ≈ 0.99.",
-      "FALSE — Equity ratio ≈ 59.5%."
+      "FALSE — Equity ratio ≈ 59.5%.",
+      "FALSE — Debt ratio ≈ 40.5%."
     ]
   },
   {
@@ -339,10 +339,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=321\nCurrent liabilities=106\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 450 |\n| Machinery | 186 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 46 |\n| Inventory | 164 |\n| Trade receivables | 127 |\n| Cash and cash equivalents | 30 |\n| Total assets | **1046** |\n| **EQUITY** | |\n| Share capital | 169 |\n| Retained earnings | 368 |\n| Total equity | **537** |\n| **LIABILITIES** | |\n| Long-term bank loan | 320 |\n| Bonds payable | 83 |\n| Trade payables | 65 |\n| Bank overdraft | 41 |\n| Total liabilities | **509** |\n| Total equity and liabilities | **1046** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "The current ratio exceeds 1.41.",
       "The current ratio is below 0.95.",
       "The equity ratio is below 26.9%.",
-      "The current ratio exceeds 1.41."
+      "Working capital of €215 thousand is positive on this balance sheet."
     ],
     "answer_key": [
       true,
@@ -353,10 +353,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity ratio expresses equity relative to assets.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
+      "TRUE — Current ratio ≈ 3.03.",
       "FALSE — Current ratio ≈ 3.03.",
       "FALSE — Equity ratio ≈ 51.3%.",
-      "TRUE — Current ratio ≈ 3.03."
+      "TRUE — Working capital = 215."
     ]
   },
   {
@@ -369,10 +369,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=202 | Total assets=867\nYear 2 | Equity=260 | Total assets=1001\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 336 | 384 |\n| Machinery | 136 | 161 |\n| Office equipment | 74 | 86 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 131 | 147 |\n| Trade receivables | 109 | 128 |\n| Cash and cash equivalents | 57 | 71 |\n| Total assets | **867** | **1001** |\n| **EQUITY** | | |\n| Share capital | 152 | 152 |\n| Retained earnings | 50 | 108 |\n| Total equity | **202** | **260** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 324 | 372 |\n| Bonds payable | 68 | 76 |\n| Trade payables | 205 | 215 |\n| Bank overdraft | 68 | 78 |\n| Total liabilities | **665** | **741** |\n| Total equity and liabilities | **867** | **1001** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
       "Total equity grew by more than 24.7% between Year 1 and Year 2.",
       "The equity ratio improved by more than 2.4 percentage points between Year 1 and Year 2.",
-      "Non-current liabilities amount to more than 73.2% of total equity in Year 1."
+      "Non-current liabilities amount to more than 73.2% of total equity in Year 1.",
+      "Working capital more than doubled between Year 1 and Year 2."
     ],
     "answer_key": [
       false,
@@ -383,10 +383,10 @@
     ],
     "tactical_explanations": [
       "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "TRUE — Equity equals assets minus liabilities.",
       "TRUE — Total equity changed by about 28.7% between the two years.",
       "TRUE — Equity ratio moved from 23.3% to 26.0%.",
-      "TRUE — Non-current liabilities are about 194.1% of equity in Year 1."
+      "TRUE — Non-current liabilities are about 194.1% of equity in Year 1.",
+      "TRUE — Working capital moved from 24 to 53."
     ]
   },
   {
@@ -399,10 +399,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=706 | Total assets=1282\nYear 2 | Equity=770 | Total assets=1402\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 465 | 511 |\n| Machinery | 277 | 301 |\n| Office equipment | 62 | 69 |\n| Patents, trademarks and licences | 78 | 78 |\n| Inventory | 271 | 306 |\n| Trade receivables | 80 | 85 |\n| Cash and cash equivalents | 49 | 52 |\n| Total assets | **1282** | **1402** |\n| **EQUITY** | | |\n| Share capital | 196 | 196 |\n| Retained earnings | 510 | 574 |\n| Total equity | **706** | **770** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 366 | 404 |\n| Bonds payable | 56 | 60 |\n| Trade payables | 72 | 82 |\n| Bank overdraft | 82 | 86 |\n| Total liabilities | **576** | **632** |\n| Total equity and liabilities | **1282** | **1402** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
       "Non-current liabilities amount to less than 113.9% of total equity in Year 2.",
       "The combined total of equity and non-current liabilities exceeds non-current assets by more than 21.9% in Year 1.",
-      "Trade payables of €82 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+      "Trade payables of €82 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Total liabilities grew by more than 9% between Year 1 and Year 2."
     ],
     "answer_key": [
       true,
@@ -413,10 +413,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Classification follows intended use, not physical form alone.",
-      "TRUE — Equity ratio expresses equity relative to assets.",
       "TRUE — Non-current liabilities are about 60.3% of equity in Year 2.",
       "TRUE — Long-term financing covers non-current assets by about 27.9% in Year 1.",
-      "TRUE — Trade payables are a current liability regardless of the amount."
+      "TRUE — Trade payables are a current liability regardless of the amount.",
+      "TRUE — Total liabilities changed by about 9.7% between the two years."
     ]
   },
   {
@@ -429,10 +429,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=389\nMachinery=221\nPatents, trademarks and licences=27\nInventory=152\nTrade receivables=68\nCash and cash equivalents=44\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | **977** |\n| **EQUITY** | |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | **339** |\n| **LIABILITIES** | |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | **638** |\n| Total equity and liabilities | **977** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
       "The current ratio exceeds 1.31.",
       "Working capital of €117 thousand is positive on this balance sheet.",
-      "The equity ratio is below 42.8%."
+      "The equity ratio is below 42.8%.",
+      "Inventory make up more than 55.4% of current assets."
     ],
     "answer_key": [
       true,
@@ -443,10 +443,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Classification follows intended use, not physical form alone.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
       "TRUE — Current ratio ≈ 1.80.",
       "TRUE — Working capital = 117.",
-      "TRUE — Equity ratio ≈ 34.7%."
+      "TRUE — Equity ratio ≈ 34.7%.",
+      "TRUE — Inventory are about 57.6% of current assets."
     ]
   },
   {
@@ -459,10 +459,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=290\nCurrent liabilities=261\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 309 |\n| Machinery | 279 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 130 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 99 |\n| Total assets | **966** |\n| **EQUITY** | |\n| Share capital | 245 |\n| Retained earnings | 204 |\n| Total equity | **449** |\n| **LIABILITIES** | |\n| Long-term bank loan | 196 |\n| Bonds payable | 60 |\n| Trade payables | 174 |\n| Bank overdraft | 87 |\n| Total liabilities | **517** |\n| Total equity and liabilities | **966** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "Current liabilities are debts that must be repaid after more than one year.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 1.26 times over.",
       "The equity ratio is below 25.8%.",
-      "The debt ratio exceeds 77.4%."
+      "The debt ratio exceeds 77.4%.",
+      "Buildings make up more than 57.9% of total assets."
     ],
     "answer_key": [
       true,
@@ -473,10 +473,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Assets = liabilities + equity is the fundamental balance sheet equation.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
       "FALSE — Acid-test ratio ≈ 0.61.",
       "FALSE — Equity ratio ≈ 46.5%.",
-      "FALSE — Debt ratio ≈ 53.5%."
+      "FALSE — Debt ratio ≈ 53.5%.",
+      "FALSE — Buildings are about 32.0% of total assets."
     ]
   },
   {
@@ -489,10 +489,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=619 | Total assets=1145\nYear 2 | Equity=655 | Total assets=1257\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 467 | 500 |\n| Machinery | 129 | 145 |\n| Office equipment | 42 | 46 |\n| Patents, trademarks and licences | 76 | 76 |\n| Inventory | 216 | 253 |\n| Trade receivables | 146 | 164 |\n| Cash and cash equivalents | 69 | 73 |\n| Total assets | **1145** | **1257** |\n| **EQUITY** | | |\n| Share capital | 182 | 182 |\n| Retained earnings | 437 | 473 |\n| Total equity | **619** | **655** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 197 | 217 |\n| Bonds payable | 73 | 83 |\n| Trade payables | 169 | 198 |\n| Bank overdraft | 87 | 104 |\n| Total liabilities | **526** | **602** |\n| Total equity and liabilities | **1145** | **1257** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
       "Total equity grew by more than 10.8% between Year 1 and Year 2.",
+      "Total assets grew by more than 23.6% between Year 1 and Year 2.",
       "Inventory grew by more than 10.5% between Year 1 and Year 2.",
-      "Total assets grew by more than 23.6% between Year 1 and Year 2."
+      "Trade payables grew by more than 20% between Year 1 and Year 2."
     ],
     "answer_key": [
       false,
@@ -503,10 +503,10 @@
     ],
     "tactical_explanations": [
       "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
       "FALSE — Total equity changed by about 5.8% between the two years.",
+      "FALSE — Total assets changed by about 9.8% between the two years.",
       "TRUE — Inventory changed by about 17.1% between the two years.",
-      "FALSE — Total assets changed by about 9.8% between the two years."
+      "FALSE — Trade payables changed by about 17.2% between the two years."
     ]
   },
   {
@@ -519,10 +519,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=190 | Total assets=959\nYear 2 | Equity=245 | Total assets=1042\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 287 | 303 |\n| Machinery | 212 | 237 |\n| Office equipment | 79 | 87 |\n| Patents, trademarks and licences | 90 | 90 |\n| Inventory | 107 | 123 |\n| Trade receivables | 137 | 151 |\n| Cash and cash equivalents | 47 | 51 |\n| Total assets | **959** | **1042** |\n| **EQUITY** | | |\n| Share capital | 194 | 194 |\n| Retained earnings | -4 | 51 |\n| Total equity | **190** | **245** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 395 | 424 |\n| Bonds payable | 78 | 82 |\n| Trade payables | 235 | 232 |\n| Bank overdraft | 61 | 59 |\n| Total liabilities | **769** | **797** |\n| Total equity and liabilities | **959** | **1042** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Current liabilities are debts that must be repaid after more than one year.",
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "Total equity grew by more than 29.1% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 56.1% of total equity in Year 1.",
-      "Non-current assets make up more than 59.9% of total assets in Year 2."
+      "Total equity grew by more than 29.1% between Year 1 and Year 2.",
+      "Non-current assets make up more than 59.9% of total assets in Year 2.",
+      "Working capital turned positive by Year 2 after being negative in Year 1."
     ],
     "answer_key": [
       false,
@@ -533,10 +533,10 @@
     ],
     "tactical_explanations": [
       "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Equity ratio expresses equity relative to assets.",
-      "FALSE — Total equity changed by about 28.9% between the two years.",
       "TRUE — Non-current liabilities are about 248.9% of equity in Year 1.",
-      "TRUE — Non-current assets are about 68.8% of total assets in Year 2."
+      "FALSE — Total equity changed by about 28.9% between the two years.",
+      "TRUE — Non-current assets are about 68.8% of total assets in Year 2.",
+      "TRUE — Working capital moved from -5 to 34."
     ]
   },
   {
@@ -549,10 +549,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=319\nMachinery=124\nPatents, trademarks and licences=34\nInventory=113\nTrade receivables=85\nCash and cash equivalents=73\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 319 |\n| Machinery | 124 |\n| Office equipment | 53 |\n| Patents, trademarks and licences | 34 |\n| Inventory | 113 |\n| Trade receivables | 85 |\n| Cash and cash equivalents | 73 |\n| Total assets | **801** |\n| **EQUITY** | |\n| Share capital | 265 |\n| Retained earnings | -93 |\n| Total equity | **172** |\n| **LIABILITIES** | |\n| Long-term bank loan | 433 |\n| Bonds payable | 65 |\n| Trade payables | 94 |\n| Bank overdraft | 37 |\n| Total liabilities | **629** |\n| Total equity and liabilities | **801** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "The current ratio exceeds 1.75.",
       "The current ratio is below 0.75.",
       "Buildings make up more than 41.2% of total assets.",
-      "The current ratio exceeds 1.75."
+      "Working capital of €140 thousand is positive on this balance sheet."
     ],
     "answer_key": [
       true,
@@ -563,10 +563,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity ratio expresses equity relative to assets.",
-      "TRUE — Current assets turn into cash within the normal operating cycle.",
+      "TRUE — Current ratio ≈ 2.07.",
       "FALSE — Current ratio ≈ 2.07.",
       "FALSE — Buildings are about 39.8% of total assets.",
-      "TRUE — Current ratio ≈ 2.07."
+      "TRUE — Working capital = 140."
     ]
   },
   {
@@ -579,9 +579,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=466\nCurrent liabilities=231\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 328 |\n| Machinery | 270 |\n| Office equipment | 34 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 207 |\n| Trade receivables | 161 |\n| Cash and cash equivalents | 98 |\n| Total assets | **1161** |\n| **EQUITY** | |\n| Share capital | 213 |\n| Retained earnings | 329 |\n| Total equity | **542** |\n| **LIABILITIES** | |\n| Long-term bank loan | 327 |\n| Bonds payable | 61 |\n| Trade payables | 161 |\n| Bank overdraft | 70 |\n| Total liabilities | **619** |\n| Total equity and liabilities | **1161** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
-      "Working capital of €235 thousand is positive on this balance sheet.",
       "The current ratio is below 1.08.",
+      "Working capital of €235 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.36 times over.",
       "Inventory make up more than 36.1% of current assets."
     ],
     "answer_key": [
@@ -593,9 +593,9 @@
     ],
     "tactical_explanations": [
       "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
-      "TRUE — Working capital = 235.",
       "FALSE — Current ratio ≈ 2.02.",
+      "TRUE — Working capital = 235.",
+      "FALSE — Acid-test ratio ≈ 1.12.",
       "TRUE — Inventory are about 44.4% of current assets."
     ]
   },
@@ -609,10 +609,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=371 | Total assets=957\nYear 2 | Equity=407 | Total assets=1041\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 364 | 388 |\n| Machinery | 180 | 205 |\n| Office equipment | 37 | 42 |\n| Patents, trademarks and licences | 76 | 76 |\n| Inventory | 140 | 157 |\n| Trade receivables | 60 | 61 |\n| Cash and cash equivalents | 100 | 112 |\n| Total assets | **957** | **1041** |\n| **EQUITY** | | |\n| Share capital | 234 | 234 |\n| Retained earnings | 137 | 173 |\n| Total equity | **371** | **407** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 223 | 242 |\n| Bonds payable | 87 | 97 |\n| Trade payables | 192 | 205 |\n| Bank overdraft | 84 | 90 |\n| Total liabilities | **586** | **634** |\n| Total equity and liabilities | **957** | **1041** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
       "Non-current liabilities amount to more than 62.2% of total equity in Year 1.",
       "Non-current liabilities amount to less than 125.6% of total equity in Year 2.",
-      "Non-current assets make up more than 57.6% of total assets in Year 2."
+      "Non-current assets make up more than 57.6% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.61 times over in Year 2."
     ],
     "answer_key": [
       true,
@@ -623,10 +623,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity ratio expresses equity relative to assets.",
-      "TRUE — Classification follows intended use, not physical form alone.",
       "TRUE — Non-current liabilities are about 83.6% of equity in Year 1.",
       "TRUE — Non-current liabilities are about 83.3% of equity in Year 2.",
-      "TRUE — Non-current assets are about 68.3% of total assets in Year 2."
+      "TRUE — Non-current assets are about 68.3% of total assets in Year 2.",
+      "TRUE — Current ratio in Year 2 is about 1.12."
     ]
   },
   {
@@ -639,10 +639,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=510 | Total assets=1204\nYear 2 | Equity=511 | Total assets=1282\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 426 | 443 |\n| Machinery | 234 | 250 |\n| Office equipment | 37 | 41 |\n| Patents, trademarks and licences | 28 | 28 |\n| Inventory | 194 | 213 |\n| Trade receivables | 172 | 194 |\n| Cash and cash equivalents | 113 | 113 |\n| Total assets | **1204** | **1282** |\n| **EQUITY** | | |\n| Share capital | 184 | 184 |\n| Retained earnings | 326 | 327 |\n| Total equity | **510** | **511** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 401 | 454 |\n| Bonds payable | 79 | 86 |\n| Trade payables | 133 | 149 |\n| Bank overdraft | 81 | 82 |\n| Total liabilities | **694** | **771** |\n| Total equity and liabilities | **1204** | **1282** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "Current liabilities are debts that must be repaid after more than one year.",
-      "Non-current liabilities amount to more than 55.1% of total equity in Year 1.",
       "Total assets grew by more than 15.9% between Year 1 and Year 2.",
-      "Inventory grew by more than 29.8% between Year 1 and Year 2."
+      "Non-current liabilities amount to more than 55.1% of total equity in Year 1.",
+      "Inventory grew by more than 29.8% between Year 1 and Year 2.",
+      "Trade payables grew by more than 21.2% between Year 1 and Year 2."
     ],
     "answer_key": [
       true,
@@ -653,10 +653,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity ratio expresses equity relative to assets.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Non-current liabilities are about 94.1% of equity in Year 1.",
       "FALSE — Total assets changed by about 6.5% between the two years.",
-      "FALSE — Inventory changed by about 9.8% between the two years."
+      "TRUE — Non-current liabilities are about 94.1% of equity in Year 1.",
+      "FALSE — Inventory changed by about 9.8% between the two years.",
+      "FALSE — Trade payables changed by about 12.0% between the two years."
     ]
   },
   {
@@ -669,10 +669,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=472\nMachinery=140\nPatents, trademarks and licences=42\nInventory=95\nTrade receivables=60\nCash and cash equivalents=31\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 472 |\n| Machinery | 140 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 42 |\n| Inventory | 95 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 31 |\n| Total assets | **891** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 349 |\n| Total equity | **467** |\n| **LIABILITIES** | |\n| Long-term bank loan | 195 |\n| Bonds payable | 86 |\n| Trade payables | 89 |\n| Bank overdraft | 54 |\n| Total liabilities | **424** |\n| Total equity and liabilities | **891** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
       "The current ratio exceeds 1.33.",
       "The current ratio is below 0.63.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.65 times over."
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.65 times over.",
+      "The equity ratio is below 44%."
     ],
     "answer_key": [
       true,
@@ -683,10 +683,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity equals assets minus liabilities.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
       "FALSE — Current ratio ≈ 1.30.",
       "FALSE — Current ratio ≈ 1.30.",
-      "FALSE — Acid-test ratio ≈ 0.64."
+      "FALSE — Acid-test ratio ≈ 0.64.",
+      "FALSE — Equity ratio ≈ 52.4%."
     ]
   },
   {
@@ -699,10 +699,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=468\nCurrent liabilities=221\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 462 |\n| Machinery | 260 |\n| Office equipment | 52 |\n| Patents, trademarks and licences | 51 |\n| Inventory | 180 |\n| Trade receivables | 178 |\n| Cash and cash equivalents | 110 |\n| Total assets | **1293** |\n| **EQUITY** | |\n| Share capital | 227 |\n| Retained earnings | 454 |\n| Total equity | **681** |\n| **LIABILITIES** | |\n| Long-term bank loan | 320 |\n| Bonds payable | 71 |\n| Trade payables | 147 |\n| Bank overdraft | 74 |\n| Total liabilities | **612** |\n| Total equity and liabilities | **1293** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
-      "Current liabilities are debts that must be repaid after more than one year.",
-      "The current ratio exceeds 1.85.",
       "The current ratio is below 0.64.",
-      "The equity ratio is below 26.8%."
+      "The current ratio exceeds 1.85.",
+      "The equity ratio is below 26.8%.",
+      "The debt ratio exceeds 68%."
     ],
     "answer_key": [
       true,
@@ -713,10 +713,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity ratio expresses equity relative to assets.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Current ratio ≈ 2.12.",
       "FALSE — Current ratio ≈ 2.12.",
-      "FALSE — Equity ratio ≈ 52.7%."
+      "TRUE — Current ratio ≈ 2.12.",
+      "FALSE — Equity ratio ≈ 52.7%.",
+      "FALSE — Debt ratio ≈ 47.3%."
     ]
   },
   {
@@ -729,7 +729,7 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=251 | Total assets=952\nYear 2 | Equity=257 | Total assets=1010\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 342 | 363 |\n| Machinery | 227 | 247 |\n| Office equipment | 55 | 58 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 154 | 155 |\n| Trade receivables | 76 | 89 |\n| Cash and cash equivalents | 74 | 74 |\n| Total assets | **952** | **1010** |\n| **EQUITY** | | |\n| Share capital | 165 | 165 |\n| Retained earnings | 86 | 92 |\n| Total equity | **251** | **257** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 403 | 434 |\n| Bonds payable | 55 | 60 |\n| Trade payables | 218 | 234 |\n| Bank overdraft | 25 | 25 |\n| Total liabilities | **701** | **753** |\n| Total equity and liabilities | **952** | **1010** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Total equity grew by more than 25.9% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 108.2% of total equity in Year 1.",
       "Non-current assets make up more than 67.9% of total assets in Year 2.",
       "Trade payables of €234 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
@@ -743,7 +743,7 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity equals assets minus liabilities.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
+      "FALSE — Total equity changed by about 2.4% between the two years.",
       "TRUE — Non-current liabilities are about 182.5% of equity in Year 1.",
       "TRUE — Non-current assets are about 68.5% of total assets in Year 2.",
       "TRUE — Trade payables are a current liability regardless of the amount."
@@ -759,10 +759,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=543 | Total assets=997\nYear 2 | Equity=578 | Total assets=1079\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 379 | 410 |\n| Machinery | 159 | 176 |\n| Office equipment | 30 | 32 |\n| Patents, trademarks and licences | 53 | 53 |\n| Inventory | 140 | 153 |\n| Trade receivables | 128 | 142 |\n| Cash and cash equivalents | 108 | 113 |\n| Total assets | **997** | **1079** |\n| **EQUITY** | | |\n| Share capital | 113 | 113 |\n| Retained earnings | 430 | 465 |\n| Total equity | **543** | **578** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 280 | 311 |\n| Bonds payable | 48 | 51 |\n| Trade payables | 72 | 83 |\n| Bank overdraft | 54 | 56 |\n| Total liabilities | **454** | **501** |\n| Total equity and liabilities | **997** | **1079** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
-      "Current liabilities are debts that must be repaid after more than one year.",
       "Total equity grew by more than 14.8% between Year 1 and Year 2.",
+      "Total assets grew by more than 20.1% between Year 1 and Year 2.",
       "Non-current liabilities amount to less than 87.7% of total equity in Year 2.",
-      "Total assets grew by more than 20.1% between Year 1 and Year 2."
+      "Inventory grew by more than 13.8% between Year 1 and Year 2."
     ],
     "answer_key": [
       true,
@@ -773,10 +773,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Classification follows intended use, not physical form alone.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
       "FALSE — Total equity changed by about 6.4% between the two years.",
+      "FALSE — Total assets changed by about 8.2% between the two years.",
       "TRUE — Non-current liabilities are about 62.6% of equity in Year 2.",
-      "FALSE — Total assets changed by about 8.2% between the two years."
+      "FALSE — Inventory changed by about 9.3% between the two years."
     ]
   },
   {
@@ -789,7 +789,7 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=459\nMachinery=215\nPatents, trademarks and licences=55\nInventory=204\nTrade receivables=104\nCash and cash equivalents=57\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 459 |\n| Machinery | 215 |\n| Office equipment | 53 |\n| Patents, trademarks and licences | 55 |\n| Inventory | 204 |\n| Trade receivables | 104 |\n| Cash and cash equivalents | 57 |\n| Total assets | **1147** |\n| **EQUITY** | |\n| Share capital | 271 |\n| Retained earnings | 317 |\n| Total equity | **588** |\n| **LIABILITIES** | |\n| Long-term bank loan | 371 |\n| Bonds payable | 67 |\n| Trade payables | 67 |\n| Bank overdraft | 54 |\n| Total liabilities | **559** |\n| Total equity and liabilities | **1147** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
-      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "The current ratio exceeds 1.56.",
       "The current ratio is below 0.96.",
       "The equity ratio is below 40%.",
       "The debt ratio exceeds 71.6%."
@@ -803,7 +803,7 @@
     ],
     "tactical_explanations": [
       "TRUE — The income statement links to the balance sheet via retained earnings.",
-      "TRUE — Assets = liabilities + equity is the fundamental balance sheet equation.",
+      "TRUE — Current ratio ≈ 3.02.",
       "FALSE — Current ratio ≈ 3.02.",
       "FALSE — Equity ratio ≈ 51.3%.",
       "FALSE — Debt ratio ≈ 48.7%."
@@ -819,9 +819,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=369\nCurrent liabilities=151\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 407 |\n| Machinery | 133 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 160 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1018** |\n| **EQUITY** | |\n| Share capital | 209 |\n| Retained earnings | 383 |\n| Total equity | **592** |\n| **LIABILITIES** | |\n| Long-term bank loan | 202 |\n| Bonds payable | 73 |\n| Trade payables | 85 |\n| Bank overdraft | 66 |\n| Total liabilities | **426** |\n| Total equity and liabilities | **1018** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
-      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
       "The current ratio exceeds 1.67.",
       "Working capital of €218 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.67 times over.",
       "The current ratio is below 0.62."
     ],
     "answer_key": [
@@ -833,9 +833,9 @@
     ],
     "tactical_explanations": [
       "TRUE — The income statement links to the balance sheet via retained earnings.",
-      "TRUE — Current assets turn into cash within the normal operating cycle.",
       "TRUE — Current ratio ≈ 2.44.",
       "TRUE — Working capital = 218.",
+      "TRUE — Acid-test ratio ≈ 1.38.",
       "FALSE — Current ratio ≈ 2.44."
     ]
   },
@@ -848,11 +848,11 @@
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=364 | Total assets=1046\nYear 2 | Equity=419 | Total assets=1160\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 419 | 463 |\n| Machinery | 228 | 264 |\n| Office equipment | 38 | 41 |\n| Patents, trademarks and licences | 53 | 53 |\n| Inventory | 102 | 105 |\n| Trade receivables | 148 | 169 |\n| Cash and cash equivalents | 58 | 65 |\n| Total assets | **1046** | **1160** |\n| **EQUITY** | | |\n| Share capital | 160 | 160 |\n| Retained earnings | 204 | 259 |\n| Total equity | **364** | **419** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 446 | 483 |\n| Bonds payable | 52 | 59 |\n| Trade payables | 137 | 148 |\n| Bank overdraft | 47 | 51 |\n| Total liabilities | **682** | **741** |\n| Total equity and liabilities | **1046** | **1160** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
       "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
-      "Total equity grew by more than 23.7% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 63.6% of total equity in Year 1.",
-      "Non-current assets make up more than 56.2% of total assets in Year 2."
+      "Total equity grew by more than 23.7% between Year 1 and Year 2.",
+      "Non-current assets make up more than 56.2% of total assets in Year 2.",
+      "Trade payables of €148 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
     ],
     "answer_key": [
       true,
@@ -862,11 +862,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Equity ratio expresses equity relative to assets.",
       "TRUE — The income statement links to the balance sheet via retained earnings.",
-      "FALSE — Total equity changed by about 15.1% between the two years.",
       "TRUE — Non-current liabilities are about 136.8% of equity in Year 1.",
-      "TRUE — Non-current assets are about 70.8% of total assets in Year 2."
+      "FALSE — Total equity changed by about 15.1% between the two years.",
+      "TRUE — Non-current assets are about 70.8% of total assets in Year 2.",
+      "TRUE — Trade payables are a current liability regardless of the amount."
     ]
   },
   {
@@ -879,10 +879,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=705 | Total assets=1050\nYear 2 | Equity=784 | Total assets=1176\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 315 | 344 |\n| Machinery | 218 | 245 |\n| Office equipment | 31 | 35 |\n| Patents, trademarks and licences | 70 | 70 |\n| Inventory | 240 | 283 |\n| Trade receivables | 130 | 151 |\n| Cash and cash equivalents | 46 | 48 |\n| Total assets | **1050** | **1176** |\n| **EQUITY** | | |\n| Share capital | 183 | 183 |\n| Retained earnings | 522 | 601 |\n| Total equity | **705** | **784** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 181 | 208 |\n| Bonds payable | 69 | 79 |\n| Trade payables | 65 | 73 |\n| Bank overdraft | 30 | 32 |\n| Total liabilities | **345** | **392** |\n| Total equity and liabilities | **1050** | **1176** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
-      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
       "Non-current liabilities amount to less than 60.5% of total equity in Year 2.",
       "The combined total of equity and non-current liabilities exceeds non-current assets by more than 23.1% in Year 1.",
-      "Trade payables of €73 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+      "Trade payables of €73 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt."
     ],
     "answer_key": [
       true,
@@ -893,10 +893,10 @@
     ],
     "tactical_explanations": [
       "TRUE — These are textbook advantages of equity finance.",
-      "TRUE — Equity equals assets minus liabilities.",
       "TRUE — Non-current liabilities are about 36.6% of equity in Year 2.",
       "TRUE — Long-term financing covers non-current assets by about 50.6% in Year 1.",
-      "TRUE — Trade payables are a current liability regardless of the amount."
+      "TRUE — Trade payables are a current liability regardless of the amount.",
+      "TRUE — Equity equals assets minus liabilities."
     ]
   },
   {
@@ -909,9 +909,9 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=354\nMachinery=239\nPatents, trademarks and licences=39\nInventory=209\nTrade receivables=100\nCash and cash equivalents=80\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 239 |\n| Office equipment | 71 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 209 |\n| Trade receivables | 100 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1092** |\n| **EQUITY** | |\n| Share capital | 166 |\n| Retained earnings | 406 |\n| Total equity | **572** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 72 |\n| Trade payables | 85 |\n| Bank overdraft | 49 |\n| Total liabilities | **520** |\n| Total equity and liabilities | **1092** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Current liabilities are debts that must be repaid after more than one year.",
-      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
       "The current ratio exceeds 1.76.",
       "Working capital of €255 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.09 times over.",
       "The current ratio is below 0.61."
     ],
     "answer_key": [
@@ -923,9 +923,9 @@
     ],
     "tactical_explanations": [
       "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Current assets turn into cash within the normal operating cycle.",
       "TRUE — Current ratio ≈ 2.90.",
       "TRUE — Working capital = 255.",
+      "TRUE — Acid-test ratio ≈ 1.34.",
       "FALSE — Current ratio ≈ 2.90."
     ]
   },
@@ -939,10 +939,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=454\nCurrent liabilities=277\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 433 |\n| Machinery | 172 |\n| Office equipment | 77 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 222 |\n| Trade receivables | 143 |\n| Cash and cash equivalents | 89 |\n| Total assets | **1183** |\n| **EQUITY** | |\n| Share capital | 195 |\n| Retained earnings | 473 |\n| Total equity | **668** |\n| **LIABILITIES** | |\n| Long-term bank loan | 187 |\n| Bonds payable | 51 |\n| Trade payables | 205 |\n| Bank overdraft | 72 |\n| Total liabilities | **515** |\n| Total equity and liabilities | **1183** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
       "The current ratio exceeds 1.74.",
+      "The current ratio is below 1.03.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 0.78 times over.",
-      "The current ratio is below 1.03."
+      "The equity ratio is below 40.1%."
     ],
     "answer_key": [
       false,
@@ -953,10 +953,10 @@
     ],
     "tactical_explanations": [
       "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
+      "FALSE — Current ratio ≈ 1.64.",
       "FALSE — Current ratio ≈ 1.64.",
       "TRUE — Acid-test ratio ≈ 0.84.",
-      "FALSE — Current ratio ≈ 1.64."
+      "FALSE — Equity ratio ≈ 56.5%."
     ]
   },
   {
@@ -969,8 +969,8 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=289 | Total assets=995\nYear 2 | Equity=383 | Total assets=1149\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 460 | 537 |\n| Machinery | 147 | 167 |\n| Office equipment | 39 | 43 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 157 | 187 |\n| Trade receivables | 85 | 91 |\n| Cash and cash equivalents | 83 | 100 |\n| Total assets | **995** | **1149** |\n| **EQUITY** | | |\n| Share capital | 111 | 111 |\n| Retained earnings | 178 | 272 |\n| Total equity | **289** | **383** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 388 | 427 |\n| Bonds payable | 47 | 52 |\n| Trade payables | 212 | 223 |\n| Bank overdraft | 59 | 64 |\n| Total liabilities | **706** | **766** |\n| Total equity and liabilities | **995** | **1149** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
       "Total equity grew by more than 21.4% between Year 1 and Year 2.",
+      "Total assets grew by more than 9% between Year 1 and Year 2.",
       "Inventory grew by more than 30.4% between Year 1 and Year 2.",
       "Trade payables grew by more than 16.3% between Year 1 and Year 2."
     ],
@@ -983,8 +983,8 @@
     ],
     "tactical_explanations": [
       "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
-      "TRUE — Equity ratio expresses equity relative to assets.",
       "TRUE — Total equity changed by about 32.5% between the two years.",
+      "TRUE — Total assets changed by about 15.5% between the two years.",
       "FALSE — Inventory changed by about 19.1% between the two years.",
       "FALSE — Trade payables changed by about 5.2% between the two years."
     ]
@@ -999,9 +999,9 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=393 | Total assets=1064\nYear 2 | Equity=436 | Total assets=1168\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 337 | 372 |\n| Machinery | 170 | 197 |\n| Office equipment | 33 | 38 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 176 | 203 |\n| Trade receivables | 149 | 159 |\n| Cash and cash equivalents | 106 | 106 |\n| Total assets | **1064** | **1168** |\n| **EQUITY** | | |\n| Share capital | 127 | 127 |\n| Retained earnings | 266 | 309 |\n| Total equity | **393** | **436** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 339 | 366 |\n| Bonds payable | 55 | 60 |\n| Trade payables | 193 | 221 |\n| Bank overdraft | 84 | 85 |\n| Total liabilities | **671** | **732** |\n| Total equity and liabilities | **1064** | **1168** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Current liabilities are debts that must be repaid after more than one year.",
-      "Trade payables grew by more than 10.4% between Year 1 and Year 2.",
       "Total equity grew by more than 22.8% between Year 1 and Year 2.",
+      "Trade payables grew by more than 10.4% between Year 1 and Year 2.",
+      "Total assets grew by more than 10.2% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 78.1% of total equity in Year 1."
     ],
     "answer_key": [
@@ -1013,9 +1013,9 @@
     ],
     "tactical_explanations": [
       "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Trade payables changed by about 14.5% between the two years.",
       "FALSE — Total equity changed by about 10.9% between the two years.",
+      "TRUE — Trade payables changed by about 14.5% between the two years.",
+      "FALSE — Total assets changed by about 9.8% between the two years.",
       "TRUE — Non-current liabilities are about 100.3% of equity in Year 1."
     ]
   },
@@ -1029,10 +1029,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=420\nMachinery=274\nPatents, trademarks and licences=26\nInventory=83\nTrade receivables=165\nCash and cash equivalents=85\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 420 |\n| Machinery | 274 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 83 |\n| Trade receivables | 165 |\n| Cash and cash equivalents | 85 |\n| Total assets | **1131** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 600 |\n| Total equity | **798** |\n| **LIABILITIES** | |\n| Long-term bank loan | 181 |\n| Bonds payable | 64 |\n| Trade payables | 61 |\n| Bank overdraft | 27 |\n| Total liabilities | **333** |\n| Total equity and liabilities | **1131** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
-      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
       "The current ratio exceeds 1.88.",
+      "Working capital of €245 thousand is positive on this balance sheet.",
       "The current ratio is below 1.11.",
-      "Working capital of €245 thousand is positive on this balance sheet."
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.37 times over."
     ],
     "answer_key": [
       true,
@@ -1043,10 +1043,10 @@
     ],
     "tactical_explanations": [
       "TRUE — This matches the textbook distinction between non-current and current assets.",
-      "TRUE — These are textbook advantages of equity finance.",
       "TRUE — Current ratio ≈ 3.78.",
+      "TRUE — Working capital = 245.",
       "FALSE — Current ratio ≈ 3.78.",
-      "TRUE — Working capital = 245."
+      "TRUE — Acid-test ratio ≈ 2.84."
     ]
   },
   {
@@ -1059,8 +1059,8 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=478\nCurrent liabilities=217\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 463 |\n| Machinery | 229 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 28 |\n| Inventory | 210 |\n| Trade receivables | 152 |\n| Cash and cash equivalents | 116 |\n| Total assets | **1264** |\n| **EQUITY** | |\n| Share capital | 178 |\n| Retained earnings | 574 |\n| Total equity | **752** |\n| **LIABILITIES** | |\n| Long-term bank loan | 231 |\n| Bonds payable | 64 |\n| Trade payables | 142 |\n| Bank overdraft | 75 |\n| Total liabilities | **512** |\n| Total equity and liabilities | **1264** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
       "The current ratio is below 0.67.",
+      "The equity ratio is below 21.2%.",
       "The current ratio exceeds 1.17.",
       "Working capital of €261 thousand is positive on this balance sheet."
     ],
@@ -1073,8 +1073,8 @@
     ],
     "tactical_explanations": [
       "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
       "FALSE — Current ratio ≈ 2.20.",
+      "FALSE — Equity ratio ≈ 59.5%.",
       "TRUE — Current ratio ≈ 2.20.",
       "TRUE — Working capital = 261."
     ]
@@ -1089,7 +1089,7 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=570 | Total assets=1104\nYear 2 | Equity=610 | Total assets=1175\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 353 | 360 |\n| Machinery | 155 | 162 |\n| Office equipment | 53 | 56 |\n| Patents, trademarks and licences | 86 | 86 |\n| Inventory | 231 | 256 |\n| Trade receivables | 147 | 164 |\n| Cash and cash equivalents | 79 | 91 |\n| Total assets | **1104** | **1175** |\n| **EQUITY** | | |\n| Share capital | 260 | 260 |\n| Retained earnings | 310 | 350 |\n| Total equity | **570** | **610** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 322 | 339 |\n| Bonds payable | 76 | 85 |\n| Trade payables | 71 | 73 |\n| Bank overdraft | 65 | 68 |\n| Total liabilities | **534** | **565** |\n| Total equity and liabilities | **1104** | **1175** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Non-current liabilities amount to more than 47.7% of total equity in Year 1.",
       "Total equity grew by more than 24% between Year 1 and Year 2.",
       "Total assets grew by more than 9.5% between Year 1 and Year 2.",
       "Inventory grew by more than 32.1% between Year 1 and Year 2."
@@ -1103,7 +1103,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "TRUE — These are textbook advantages of equity finance.",
+      "TRUE — Non-current liabilities are about 69.8% of equity in Year 1.",
       "FALSE — Total equity changed by about 7.0% between the two years.",
       "FALSE — Total assets changed by about 6.4% between the two years.",
       "FALSE — Inventory changed by about 10.8% between the two years."
@@ -1119,7 +1119,7 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=487 | Total assets=1091\nYear 2 | Equity=536 | Total assets=1177\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 284 | 326 |\n| Machinery | 270 | 288 |\n| Office equipment | 52 | 56 |\n| Patents, trademarks and licences | 75 | 75 |\n| Inventory | 235 | 253 |\n| Trade receivables | 138 | 141 |\n| Cash and cash equivalents | 37 | 38 |\n| Total assets | **1091** | **1177** |\n| **EQUITY** | | |\n| Share capital | 213 | 213 |\n| Retained earnings | 274 | 323 |\n| Total equity | **487** | **536** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 241 | 250 |\n| Bonds payable | 52 | 56 |\n| Trade payables | 229 | 245 |\n| Bank overdraft | 82 | 90 |\n| Total liabilities | **604** | **641** |\n| Total equity and liabilities | **1091** | **1177** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "Total equity grew by more than 16% between Year 1 and Year 2.",
       "Non-current liabilities amount to less than 103.8% of total equity in Year 2.",
       "Non-current assets make up more than 61.9% of total assets in Year 2.",
       "Current liabilities are covered by current assets less than 1.94 times over in Year 2."
@@ -1133,7 +1133,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
+      "FALSE — Total equity changed by about 10.1% between the two years.",
       "TRUE — Non-current liabilities are about 57.1% of equity in Year 2.",
       "TRUE — Non-current assets are about 63.3% of total assets in Year 2.",
       "TRUE — Current ratio in Year 2 is about 1.29."
@@ -1149,7 +1149,7 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=467\nMachinery=166\nPatents, trademarks and licences=65\nInventory=183\nTrade receivables=162\nCash and cash equivalents=76\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 467 |\n| Machinery | 166 |\n| Office equipment | 72 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 183 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 76 |\n| Total assets | **1191** |\n| **EQUITY** | |\n| Share capital | 175 |\n| Retained earnings | 380 |\n| Total equity | **555** |\n| **LIABILITIES** | |\n| Long-term bank loan | 304 |\n| Bonds payable | 78 |\n| Trade payables | 178 |\n| Bank overdraft | 76 |\n| Total liabilities | **636** |\n| Total equity and liabilities | **1191** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
-      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "Working capital of €167 thousand is positive on this balance sheet.",
       "The current ratio exceeds 1.66.",
       "The current ratio is below 1.25.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 1.11 times over."
@@ -1163,7 +1163,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
-      "TRUE — This matches the textbook distinction between non-current and current assets.",
+      "TRUE — Working capital = 167.",
       "FALSE — Current ratio ≈ 1.66.",
       "FALSE — Current ratio ≈ 1.66.",
       "FALSE — Acid-test ratio ≈ 0.94."
@@ -1179,10 +1179,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=333\nCurrent liabilities=315\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 440 |\n| Machinery | 259 |\n| Office equipment | 72 |\n| Patents, trademarks and licences | 75 |\n| Inventory | 140 |\n| Trade receivables | 120 |\n| Cash and cash equivalents | 73 |\n| Total assets | **1179** |\n| **EQUITY** | |\n| Share capital | 235 |\n| Retained earnings | 344 |\n| Total equity | **579** |\n| **LIABILITIES** | |\n| Long-term bank loan | 214 |\n| Bonds payable | 71 |\n| Trade payables | 242 |\n| Bank overdraft | 73 |\n| Total liabilities | **600** |\n| Total equity and liabilities | **1179** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "The current ratio is below 0.65.",
       "Working capital of €18 thousand is positive on this balance sheet.",
       "Inventory make up more than 32.6% of current assets.",
-      "The current ratio is below 0.65."
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.72 times over."
     ],
     "answer_key": [
       false,
@@ -1193,10 +1193,10 @@
     ],
     "tactical_explanations": [
       "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
+      "FALSE — Current ratio ≈ 1.06.",
       "TRUE — Working capital = 18.",
       "TRUE — Inventory are about 42.0% of current assets.",
-      "FALSE — Current ratio ≈ 1.06."
+      "FALSE — Acid-test ratio ≈ 0.61."
     ]
   },
   {
@@ -1209,10 +1209,10 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=685 | Total assets=1115\nYear 2 | Equity=679 | Total assets=1140\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 414 | 416 |\n| Machinery | 196 | 193 |\n| Office equipment | 46 | 49 |\n| Patents, trademarks and licences | 51 | 51 |\n| Inventory | 234 | 259 |\n| Trade receivables | 66 | 71 |\n| Cash and cash equivalents | 108 | 101 |\n| Total assets | **1115** | **1140** |\n| **EQUITY** | | |\n| Share capital | 286 | 286 |\n| Retained earnings | 399 | 393 |\n| Total equity | **685** | **679** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 200 | 214 |\n| Bonds payable | 80 | 87 |\n| Trade payables | 94 | 96 |\n| Bank overdraft | 56 | 64 |\n| Total liabilities | **430** | **461** |\n| Total equity and liabilities | **1115** | **1140** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
-      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
       "Cash and cash equivalents fell by more than 5.4% between Year 1 and Year 2.",
       "Non-current liabilities amount to less than 96.3% of total equity in Year 2.",
-      "Non-current assets make up more than 57.1% of total assets in Year 2."
+      "Non-current assets make up more than 57.1% of total assets in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 27.8% in Year 1."
     ],
     "answer_key": [
       false,
@@ -1223,10 +1223,10 @@
     ],
     "tactical_explanations": [
       "FALSE — Cash falls by the same amount as the software rises, so total assets stay unchanged.",
-      "TRUE — These are textbook advantages of equity finance.",
       "TRUE — Cash and cash equivalents changed by about -6.5% between the two years.",
       "TRUE — Non-current liabilities are about 44.3% of equity in Year 2.",
-      "TRUE — Non-current assets are about 62.2% of total assets in Year 2."
+      "TRUE — Non-current assets are about 62.2% of total assets in Year 2.",
+      "TRUE — Long-term financing covers non-current assets by about 36.5% in Year 1."
     ]
   },
   {
@@ -1238,11 +1238,11 @@
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=594 | Total assets=1222\nYear 2 | Equity=686 | Total assets=1380\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 520 | 604 |\n| Machinery | 157 | 184 |\n| Office equipment | 33 | 36 |\n| Patents, trademarks and licences | 63 | 63 |\n| Inventory | 266 | 281 |\n| Trade receivables | 84 | 93 |\n| Cash and cash equivalents | 99 | 119 |\n| Total assets | **1222** | **1380** |\n| **EQUITY** | | |\n| Share capital | 188 | 188 |\n| Retained earnings | 406 | 498 |\n| Total equity | **594** | **686** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 273 | 293 |\n| Bonds payable | 66 | 71 |\n| Trade payables | 203 | 232 |\n| Bank overdraft | 86 | 98 |\n| Total liabilities | **628** | **694** |\n| Total equity and liabilities | **1222** | **1380** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
       "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
       "Total equity grew by more than 14.4% between Year 1 and Year 2.",
       "Non-current liabilities amount to more than 54.8% of total equity in Year 1.",
-      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 10.5% in Year 1."
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 10.5% in Year 1.",
+      "Trade payables of €232 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
     ],
     "answer_key": [
       true,
@@ -1252,11 +1252,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Equity ratio expresses equity relative to assets.",
       "TRUE — These are textbook advantages of equity finance.",
       "TRUE — Total equity changed by about 15.5% between the two years.",
       "TRUE — Non-current liabilities are about 57.1% of equity in Year 1.",
-      "TRUE — Long-term financing covers non-current assets by about 20.7% in Year 1."
+      "TRUE — Long-term financing covers non-current assets by about 20.7% in Year 1.",
+      "TRUE — Trade payables are a current liability regardless of the amount."
     ]
   },
   {
@@ -1268,8 +1268,8 @@
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=325\nMachinery=168\nPatents, trademarks and licences=77\nInventory=83\nTrade receivables=99\nCash and cash equivalents=39\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 325 |\n| Machinery | 168 |\n| Office equipment | 33 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 83 |\n| Trade receivables | 99 |\n| Cash and cash equivalents | 39 |\n| Total assets | **824** |\n| **EQUITY** | |\n| Share capital | 190 |\n| Retained earnings | 73 |\n| Total equity | **263** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 63 |\n| Trade payables | 155 |\n| Bank overdraft | 29 |\n| Total liabilities | **561** |\n| Total equity and liabilities | **824** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Long-term assets should preferably be financed only with short-term trade credit.",
-      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
+      "Current liabilities are debts that must be repaid after more than one year.",
+      "The current ratio exceeds 1.02.",
       "The current ratio is below 0.77.",
       "After excluding inventory, the remaining current assets still cover current liabilities more than 1.27 times over.",
       "The debt ratio exceeds 70.9%."
@@ -1282,8 +1282,8 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "TRUE — Equity ratio expresses equity relative to assets.",
+      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
+      "TRUE — Current ratio ≈ 1.20.",
       "FALSE — Current ratio ≈ 1.20.",
       "FALSE — Acid-test ratio ≈ 0.75.",
       "FALSE — Debt ratio ≈ 68.1%."
@@ -1298,8 +1298,8 @@
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=367\nCurrent liabilities=231\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 454 |\n| Machinery | 160 |\n| Office equipment | 69 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 222 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 49 |\n| Total assets | **1080** |\n| **EQUITY** | |\n| Share capital | 185 |\n| Retained earnings | 307 |\n| Total equity | **492** |\n| **LIABILITIES** | |\n| Long-term bank loan | 273 |\n| Bonds payable | 84 |\n| Trade payables | 171 |\n| Bank overdraft | 60 |\n| Total liabilities | **588** |\n| Total equity and liabilities | **1080** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
       "Current liabilities are debts that must be repaid after more than one year.",
+      "The current ratio is below 1.05.",
       "The current ratio exceeds 1.29.",
       "Working capital of €136 thousand is positive on this balance sheet.",
       "The debt ratio exceeds 51.5%."
@@ -1312,8 +1312,8 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
       "FALSE — Current liabilities are due within one year; longer debts are non-current.",
+      "FALSE — Current ratio ≈ 1.59.",
       "TRUE — Current ratio ≈ 1.59.",
       "TRUE — Working capital = 136.",
       "TRUE — Debt ratio ≈ 54.4%."
@@ -1329,9 +1329,9 @@
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=343 | Total assets=944\nYear 2 | Equity=319 | Total assets=999\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 292 | 307 |\n| Machinery | 170 | 182 |\n| Office equipment | 52 | 56 |\n| Patents, trademarks and licences | 98 | 98 |\n| Inventory | 142 | 156 |\n| Trade receivables | 144 | 155 |\n| Cash and cash equivalents | 46 | 45 |\n| Total assets | **944** | **999** |\n| **EQUITY** | | |\n| Share capital | 161 | 161 |\n| Retained earnings | 182 | 158 |\n| Total equity | **343** | **319** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 367 | 418 |\n| Bonds payable | 43 | 47 |\n| Trade payables | 123 | 138 |\n| Bank overdraft | 68 | 77 |\n| Total liabilities | **601** | **680** |\n| Total equity and liabilities | **944** | **999** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Non-current liabilities amount to more than 102.2% of total equity in Year 1.",
       "Total assets grew by more than 19% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 102.2% of total equity in Year 1.",
+      "Inventory grew by more than 20.1% between Year 1 and Year 2.",
       "Non-current assets make up more than 64.2% of total assets in Year 2."
     ],
     "answer_key": [
@@ -1343,9 +1343,9 @@
     ],
     "tactical_explanations": [
       "TRUE — Classification follows intended use, not physical form alone.",
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "TRUE — Non-current liabilities are about 119.5% of equity in Year 1.",
       "FALSE — Total assets changed by about 5.8% between the two years.",
+      "TRUE — Non-current liabilities are about 119.5% of equity in Year 1.",
+      "FALSE — Inventory changed by about 9.9% between the two years.",
       "TRUE — Non-current assets are about 64.4% of total assets in Year 2."
     ]
   },
@@ -1358,10 +1358,10 @@
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=866 | Total assets=1381\nYear 2 | Equity=987 | Total assets=1546\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 516 | 575 |\n| Machinery | 247 | 293 |\n| Office equipment | 71 | 78 |\n| Patents, trademarks and licences | 94 | 94 |\n| Inventory | 274 | 300 |\n| Trade receivables | 85 | 96 |\n| Cash and cash equivalents | 94 | 110 |\n| Total assets | **1381** | **1546** |\n| **EQUITY** | | |\n| Share capital | 211 | 211 |\n| Retained earnings | 655 | 776 |\n| Total equity | **866** | **987** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 235 | 256 |\n| Bonds payable | 87 | 97 |\n| Trade payables | 116 | 125 |\n| Bank overdraft | 77 | 81 |\n| Total liabilities | **515** | **559** |\n| Total equity and liabilities | **1381** | **1546** |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Current liabilities are debts that must be repaid after more than one year.",
       "Total assets grew by more than 15.2% between Year 1 and Year 2.",
-      "Inventory grew by more than 13.8% between Year 1 and Year 2.",
+      "Trade payables grew by more than 10.1% between Year 1 and Year 2.",
+      "Cash and cash equivalents fell by more than 23.2% between Year 1 and Year 2.",
       "Total equity grew by more than 13.1% between Year 1 and Year 2."
     ],
     "answer_key": [
@@ -1372,10 +1372,10 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
+      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
       "FALSE — Total assets changed by about 11.9% between the two years.",
-      "FALSE — Inventory changed by about 9.5% between the two years.",
+      "FALSE — Trade payables changed by about 7.8% between the two years.",
+      "FALSE — Cash and cash equivalents changed by about 17.0% between the two years.",
       "TRUE — Total equity changed by about 14.0% between the two years."
     ]
   },
@@ -1389,10 +1389,10 @@
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=310\nMachinery=152\nPatents, trademarks and licences=35\nInventory=83\nTrade receivables=138\nCash and cash equivalents=88\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 310 |\n| Machinery | 152 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 35 |\n| Inventory | 83 |\n| Trade receivables | 138 |\n| Cash and cash equivalents | 88 |\n| Total assets | **845** |\n| **EQUITY** | |\n| Share capital | 189 |\n| Retained earnings | 115 |\n| Total equity | **304** |\n| **LIABILITIES** | |\n| Long-term bank loan | 239 |\n| Bonds payable | 41 |\n| Trade payables | 211 |\n| Bank overdraft | 50 |\n| Total liabilities | **541** |\n| Total equity and liabilities | **845** |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
-      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
       "Working capital of €48 thousand is positive on this balance sheet.",
       "The equity ratio is below 37.5%.",
-      "Cash and cash equivalents make up more than 15.2% of current assets."
+      "Cash and cash equivalents make up more than 15.2% of current assets.",
+      "Inventory of €83 thousand is correctly classified as a current asset rather than a non-current intangible asset."
     ],
     "answer_key": [
       true,
@@ -1403,10 +1403,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Equity equals assets minus liabilities.",
-      "TRUE — Classification follows intended use, not physical form alone.",
       "TRUE — Working capital = 48.",
       "TRUE — Equity ratio ≈ 36.0%.",
-      "TRUE — Cash and cash equivalents are about 28.5% of current assets."
+      "TRUE — Cash and cash equivalents are about 28.5% of current assets.",
+      "TRUE — Inventory is always a current asset."
     ]
   },
   {
@@ -1418,11 +1418,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=24\nApril | Price=23\nMay | Price=20\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=78000\nFebruary | Volume=29000\nMarch | Volume=92000\nApril | Volume=18000\nMay | Volume=83000\nJune | Volume=50000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 29 | 78,000 |\n| February | 28 | 29,000 |\n| March | 24 | 92,000 |\n| April | 23 | 18,000 |\n| May | 20 | 83,000 |\n| June | 17 | 50,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 279 |\n| Shares outstanding | 641,000 |\n| Total shares traded (six months) | 350,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
       "Market capitalisation at the last month exceeds €9 million.",
       "Earnings per share exceeds €0.33.",
-      "Highest closing price is more than 17.1% above the lowest."
+      "Highest closing price is more than 17.1% above the lowest.",
+      "Total shares traded over six months exceed 25.2% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1432,11 +1432,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Market capitalisation = shares × price; price can move for reasons unrelated to value.",
       "TRUE — Market capitalisation ≈ €10.9 million.",
       "TRUE — Earnings per share ≈ €0.44.",
-      "TRUE — Range €17–€29."
+      "TRUE — Range €17–€29.",
+      "TRUE — Turnover ≈ 54.6% of shares outstanding."
     ]
   },
   {
@@ -1448,11 +1448,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=38\nMarch | Price=38\nApril | Price=40\nMay | Price=42\nJune | Price=48\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=26000\nMarch | Volume=83000\nApril | Volume=53000\nMay | Volume=68000\nJune | Volume=77000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 19,000 |\n| February | 38 | 26,000 |\n| March | 38 | 83,000 |\n| April | 40 | 53,000 |\n| May | 42 | 68,000 |\n| June | 48 | 77,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 234 |\n| Shares outstanding | 692,000 |\n| Total shares traded (six months) | 326,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
       "The closing share price rose by more than 26% from first to last month.",
       "Market capitalisation at the last month exceeds €31.5 million.",
-      "Earnings per share exceeds €0.28."
+      "Earnings per share exceeds €0.28.",
+      "Total shares traded over six months exceed 17.9% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1462,11 +1462,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Common shares vote; preferred shares usually emphasise dividend priority.",
       "TRUE — Price change ≈ 26.3%.",
       "TRUE — Market capitalisation ≈ €33.2 million.",
-      "TRUE — Earnings per share ≈ €0.34."
+      "TRUE — Earnings per share ≈ €0.34.",
+      "TRUE — Turnover ≈ 47.1% of shares outstanding."
     ]
   },
   {
@@ -1478,11 +1478,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=25\nMarch | Price=25\nApril | Price=24\nMay | Price=24\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=58000\nMarch | Volume=66000\nApril | Volume=73000\nMay | Volume=24000\nJune | Volume=44000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 25 | 34,000 |\n| February | 25 | 58,000 |\n| March | 25 | 66,000 |\n| April | 24 | 73,000 |\n| May | 24 | 24,000 |\n| June | 29 | 44,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 252 |\n| Shares outstanding | 408,000 |\n| Total shares traded (six months) | 299,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers.",
       "Market capitalisation at the last month exceeds €9.9 million.",
       "Earnings per share exceeds €0.53.",
-      "Total shares traded over six months exceed 23.2% of shares outstanding."
+      "Total shares traded over six months exceed 23.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 46,844 shares."
     ],
     "answer_key": [
       true,
@@ -1492,11 +1492,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Comparative context matters for return ratios.",
       "TRUE — Market capitalisation ≈ €11.8 million.",
       "TRUE — Earnings per share ≈ €0.62.",
-      "TRUE — Turnover ≈ 73.3% of shares outstanding."
+      "TRUE — Turnover ≈ 73.3% of shares outstanding.",
+      "TRUE — Peak monthly volume = 73,000."
     ]
   },
   {
@@ -1508,11 +1508,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=26\nMarch | Price=27\nApril | Price=29\nMay | Price=31\nJune | Price=31\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=89000\nFebruary | Volume=59000\nMarch | Volume=72000\nApril | Volume=20000\nMay | Volume=65000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 89,000 |\n| February | 26 | 59,000 |\n| March | 27 | 72,000 |\n| April | 29 | 20,000 |\n| May | 31 | 65,000 |\n| June | 31 | 52,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 249 |\n| Shares outstanding | 559,000 |\n| Total shares traded (six months) | 357,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
-      "The closing share price rose by more than 19.6% from first to last month.",
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital.",
       "Market capitalisation rose by more than 34.2% over the period.",
-      "Share turnover peaked in the same month as the highest closing price."
+      "The closing share price rose by more than 19.6% from first to last month.",
+      "Share turnover peaked in the same month as the highest closing price.",
+      "The last closing price is below the first."
     ],
     "answer_key": [
       false,
@@ -1522,11 +1522,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "TRUE — Price change ≈ 29.2%.",
+      "FALSE — Secondary-market transfers do not bring cash into the corporation.",
       "FALSE — €13.4m → €17.3m.",
-      "FALSE — Peak price month vs peak volume month."
+      "TRUE — Price change ≈ 29.2%.",
+      "FALSE — Peak price month vs peak volume month.",
+      "FALSE — 24 → 31."
     ]
   },
   {
@@ -1538,11 +1538,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=33\nMarch | Price=31\nApril | Price=29\nMay | Price=29\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=26000\nFebruary | Volume=48000\nMarch | Volume=44000\nApril | Volume=45000\nMay | Volume=84000\nJune | Volume=22000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 26,000 |\n| February | 33 | 48,000 |\n| March | 31 | 44,000 |\n| April | 29 | 45,000 |\n| May | 29 | 84,000 |\n| June | 29 | 22,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 193 |\n| Shares outstanding | 718,000 |\n| Total shares traded (six months) | 269,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "A corporation is not obliged to pay a dividend every year regardless of performance; unpaid dividends over a longer period may make the shares less attractive, but payment is not legally required every year.",
       "Market capitalisation at the last month exceeds €16.7 million.",
       "Earnings per share exceeds €0.19.",
-      "Total shares traded over six months exceed 12.6% of shares outstanding."
+      "Total shares traded over six months exceed 12.6% of shares outstanding.",
+      "Peak monthly share turnover exceeds 51,097 shares."
     ],
     "answer_key": [
       true,
@@ -1552,11 +1552,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Dividends are not a mandatory annual cash outflow.",
       "TRUE — Market capitalisation ≈ €20.8 million.",
       "TRUE — Earnings per share ≈ €0.27.",
-      "TRUE — Turnover ≈ 37.5% of shares outstanding."
+      "TRUE — Turnover ≈ 37.5% of shares outstanding.",
+      "TRUE — Peak monthly volume = 84,000."
     ]
   },
   {
@@ -1568,11 +1568,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=20\nMarch | Price=20\nApril | Price=19\nMay | Price=19\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=45000\nMarch | Volume=51000\nApril | Volume=67000\nMay | Volume=49000\nJune | Volume=93000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 27,000 |\n| February | 20 | 45,000 |\n| March | 20 | 51,000 |\n| April | 19 | 67,000 |\n| May | 19 | 49,000 |\n| June | 24 | 93,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 231 |\n| Shares outstanding | 501,000 |\n| Total shares traded (six months) | 332,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
+      "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
       "The closing share price rose by more than 22.1% from first to last month.",
+      "Market capitalisation rose by more than 29.7% over the period.",
       "Market capitalisation at the last month exceeds €9.4 million.",
-      "Market capitalisation rose by more than 29.7% over the period."
+      "Highest closing price is more than 39.9% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1582,11 +1582,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "FALSE — There is no obligation to pay a dividend every year.",
+      "TRUE — Textbook motives for buying shares include dividends, growth, voting and real-value motives.",
       "FALSE — Price change ≈ 14.3%.",
+      "FALSE — €10.5m → €12.0m.",
       "TRUE — Market capitalisation ≈ €12.0 million.",
-      "FALSE — €10.5m → €12.0m."
+      "FALSE — Range €19–€24."
     ]
   },
   {
@@ -1598,11 +1598,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=37\nMarch | Price=37\nApril | Price=41\nMay | Price=41\nJune | Price=42\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=71000\nMarch | Volume=50000\nApril | Volume=81000\nMay | Volume=89000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 29,000 |\n| February | 37 | 71,000 |\n| March | 37 | 50,000 |\n| April | 41 | 81,000 |\n| May | 41 | 89,000 |\n| June | 42 | 74,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 305 |\n| Shares outstanding | 703,000 |\n| Total shares traded (six months) | 394,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
       "The closing share price rose by more than 11.5% from first to last month.",
       "Market capitalisation at the last month exceeds €22.8 million.",
-      "Market capitalisation rose by more than 12.1% over the period."
+      "Market capitalisation rose by more than 12.1% over the period.",
+      "Earnings per share exceeds €0.32."
     ],
     "answer_key": [
       false,
@@ -1612,11 +1612,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — Listed price rises do not transfer cash to the issuer.",
       "TRUE — Price change ≈ 20.0%.",
       "TRUE — Market capitalisation ≈ €29.5 million.",
-      "TRUE — €24.6m → €29.5m."
+      "TRUE — €24.6m → €29.5m.",
+      "TRUE — Earnings per share ≈ €0.43."
     ]
   },
   {
@@ -1628,11 +1628,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=41\nFebruary | Price=41\nMarch | Price=39\nApril | Price=40\nMay | Price=42\nJune | Price=49\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=49000\nFebruary | Volume=70000\nMarch | Volume=63000\nApril | Volume=44000\nMay | Volume=66000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 41 | 49,000 |\n| February | 41 | 70,000 |\n| March | 39 | 63,000 |\n| April | 40 | 44,000 |\n| May | 42 | 66,000 |\n| June | 49 | 47,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 265 |\n| Shares outstanding | 646,000 |\n| Total shares traded (six months) | 339,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "A share buyback reduces the number of shares outstanding, which can raise earnings per share even if total profit stays exactly the same.",
       "The closing share price rose by more than 10.2% from first to last month.",
+      "Market capitalisation at the last month exceeds €28.7 million.",
       "Market capitalisation rose by more than 22.4% over the period.",
-      "Market capitalisation at the last month exceeds €28.7 million."
+      "Total shares traded over six months exceed 27.6% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1642,11 +1642,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Fewer shares increase earnings per share for an unchanged profit.",
       "TRUE — Price change ≈ 19.5%.",
+      "TRUE — Market capitalisation ≈ €31.7 million.",
       "FALSE — €26.5m → €31.7m.",
-      "TRUE — Market capitalisation ≈ €31.7 million."
+      "TRUE — Turnover ≈ 52.5% of shares outstanding."
     ]
   },
   {
@@ -1658,11 +1658,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=35\nMarch | Price=36\nApril | Price=38\nMay | Price=37\nJune | Price=44\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=58000\nFebruary | Volume=41000\nMarch | Volume=60000\nApril | Volume=92000\nMay | Volume=85000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 58,000 |\n| February | 35 | 41,000 |\n| March | 36 | 60,000 |\n| April | 38 | 92,000 |\n| May | 37 | 85,000 |\n| June | 44 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 270 |\n| Shares outstanding | 598,000 |\n| Total shares traded (six months) | 372,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Current liabilities are debts that must be repaid after more than one year.",
-      "Market capitalisation at the last month exceeds €22.2 million.",
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
       "The closing share price rose by more than 26.1% from first to last month.",
-      "Highest closing price is more than 44% above the lowest."
+      "Market capitalisation at the last month exceeds €22.2 million.",
+      "Highest closing price is more than 44% above the lowest.",
+      "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights."
     ],
     "answer_key": [
       false,
@@ -1672,11 +1672,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "TRUE — Market capitalisation ≈ €26.3 million.",
+      "FALSE — There is no universal legal duty to pay a dividend every year.",
       "FALSE — Price change ≈ 25.7%.",
-      "FALSE — Range €35–€44."
+      "TRUE — Market capitalisation ≈ €26.3 million.",
+      "FALSE — Range €35–€44.",
+      "FALSE — That reverses the usual voting rights of common versus preferred shares."
     ]
   },
   {
@@ -1688,11 +1688,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=23\nMarch | Price=23\nApril | Price=23\nMay | Price=22\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=59000\nFebruary | Volume=52000\nMarch | Volume=30000\nApril | Volume=33000\nMay | Volume=37000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 25 | 59,000 |\n| February | 23 | 52,000 |\n| March | 23 | 30,000 |\n| April | 23 | 33,000 |\n| May | 22 | 37,000 |\n| June | 28 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 225 |\n| Shares outstanding | 602,000 |\n| Total shares traded (six months) | 247,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "After shares are already trading, any rise in the market price automatically provides new cash funds to the issuing corporation.",
       "The closing share price rose by more than 13.1% from first to last month.",
+      "Highest closing price is more than 35.6% above the lowest.",
       "Market capitalisation at the last month exceeds €12.7 million.",
-      "Highest closing price is more than 35.6% above the lowest."
+      "Closing price rose in more than half of the month-to-month steps."
     ],
     "answer_key": [
       false,
@@ -1702,11 +1702,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
+      "FALSE — Secondary trading does not raise new company funds.",
       "FALSE — Price change ≈ 12.0%.",
+      "FALSE — Range €22–€28.",
       "TRUE — Market capitalisation ≈ €16.9 million.",
-      "FALSE — Range €22–€28."
+      "FALSE — Rose in 1 of 5 steps."
     ]
   },
   {
@@ -1718,11 +1718,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=16\nFebruary | Price=15\nMarch | Price=14\nApril | Price=13\nMay | Price=12\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=61000\nFebruary | Volume=33000\nMarch | Volume=56000\nApril | Volume=54000\nMay | Volume=77000\nJune | Volume=55000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 16 | 61,000 |\n| February | 15 | 33,000 |\n| March | 14 | 56,000 |\n| April | 13 | 54,000 |\n| May | 12 | 77,000 |\n| June | 11 | 55,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 184 |\n| Shares outstanding | 464,000 |\n| Total shares traded (six months) | 336,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
       "Market capitalisation at the last month exceeds €4 million.",
       "Earnings per share exceeds €0.29.",
-      "Highest closing price is more than 30.4% above the lowest."
+      "Highest closing price is more than 30.4% above the lowest.",
+      "Total shares traded over six months exceed 39.2% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1732,11 +1732,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Textbook motives for buying shares include dividends, growth, voting and real-value motives.",
       "TRUE — Market capitalisation ≈ €5.1 million.",
       "TRUE — Earnings per share ≈ €0.40.",
-      "TRUE — Range €11–€16."
+      "TRUE — Range €11–€16.",
+      "TRUE — Turnover ≈ 72.4% of shares outstanding."
     ]
   },
   {
@@ -1748,10 +1748,10 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=26\nMarch | Price=26\nApril | Price=25\nMay | Price=23\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=23000\nFebruary | Volume=76000\nMarch | Volume=32000\nApril | Volume=75000\nMay | Volume=40000\nJune | Volume=59000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 23,000 |\n| February | 26 | 76,000 |\n| March | 26 | 32,000 |\n| April | 25 | 75,000 |\n| May | 23 | 40,000 |\n| June | 29 | 59,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 190 |\n| Shares outstanding | 889,000 |\n| Total shares traded (six months) | 305,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
       "Market capitalisation at the last month exceeds €21.5 million.",
       "Earnings per share exceeds €0.15.",
+      "Peak monthly share turnover exceeds 52,358 shares.",
       "The closing share price rose by more than 33.5% from first to last month."
     ],
     "answer_key": [
@@ -1762,10 +1762,10 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — Listed price rises do not transfer cash to the issuer.",
       "TRUE — Market capitalisation ≈ €25.8 million.",
       "TRUE — Earnings per share ≈ €0.21.",
+      "TRUE — Peak monthly volume = 76,000.",
       "FALSE — Price change ≈ 7.4%."
     ]
   },
@@ -1778,11 +1778,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=28\nMarch | Price=28\nApril | Price=28\nMay | Price=30\nJune | Price=33\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=57000\nFebruary | Volume=46000\nMarch | Volume=86000\nApril | Volume=45000\nMay | Volume=76000\nJune | Volume=61000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 57,000 |\n| February | 28 | 46,000 |\n| March | 28 | 86,000 |\n| April | 28 | 45,000 |\n| May | 30 | 76,000 |\n| June | 33 | 61,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 217 |\n| Shares outstanding | 629,000 |\n| Total shares traded (six months) | 371,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Low inventory turnover always proves that goods sell quickly and cash is not tied up in stock.",
       "The closing share price rose by more than 16.7% from first to last month.",
       "Market capitalisation at the last month exceeds €17 million.",
-      "Earnings per share exceeds €0.27."
+      "Earnings per share exceeds €0.27.",
+      "Highest closing price is more than 16.2% above the lowest."
     ],
     "answer_key": [
       false,
@@ -1792,11 +1792,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — Low turnover means goods stay in stock longer.",
       "TRUE — Price change ≈ 22.2%.",
       "TRUE — Market capitalisation ≈ €20.8 million.",
-      "TRUE — Earnings per share ≈ €0.34."
+      "TRUE — Earnings per share ≈ €0.34.",
+      "TRUE — Range €27–€33."
     ]
   },
   {
@@ -1808,8 +1808,8 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=37\nFebruary | Price=38\nMarch | Price=36\nApril | Price=35\nMay | Price=32\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=49000\nFebruary | Volume=81000\nMarch | Volume=59000\nApril | Volume=75000\nMay | Volume=70000\nJune | Volume=76000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 37 | 49,000 |\n| February | 38 | 81,000 |\n| March | 36 | 59,000 |\n| April | 35 | 75,000 |\n| May | 32 | 70,000 |\n| June | 29 | 76,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 301 |\n| Shares outstanding | 633,000 |\n| Total shares traded (six months) | 410,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "A share buyback reduces the number of shares outstanding, which can raise earnings per share even if total profit stays exactly the same.",
+      "Market capitalisation at the last month exceeds €15.4 million.",
       "The closing share price rose by more than 29% from first to last month.",
       "Market capitalisation rose by more than 18.8% over the period.",
       "Highest closing price is more than 40% above the lowest."
@@ -1822,8 +1822,8 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Fewer shares increase earnings per share for an unchanged profit.",
+      "TRUE — Market capitalisation ≈ €18.4 million.",
       "FALSE — Price change ≈ -21.6%.",
       "FALSE — €23.4m → €18.4m.",
       "FALSE — Range €29–€38."
@@ -1839,10 +1839,10 @@
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=23\nMarch | Price=24\nApril | Price=24\nMay | Price=24\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=42000\nFebruary | Volume=73000\nMarch | Volume=28000\nApril | Volume=47000\nMay | Volume=66000\nJune | Volume=19000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 42,000 |\n| February | 23 | 73,000 |\n| March | 24 | 28,000 |\n| April | 24 | 47,000 |\n| May | 24 | 66,000 |\n| June | 29 | 19,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 228 |\n| Shares outstanding | 799,000 |\n| Total shares traded (six months) | 275,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
       "The closing share price rose by more than 9.4% from first to last month.",
+      "Market capitalisation at the last month exceeds €21.3 million.",
       "Market capitalisation rose by more than 30.8% over the period.",
-      "Market capitalisation at the last month exceeds €21.3 million."
+      "Earnings per share exceeds €0.25."
     ],
     "answer_key": [
       true,
@@ -1853,10 +1853,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
       "TRUE — Price change ≈ 20.8%.",
+      "TRUE — Market capitalisation ≈ €23.2 million.",
       "FALSE — €19.2m → €23.2m.",
-      "TRUE — Market capitalisation ≈ €23.2 million."
+      "TRUE — Earnings per share ≈ €0.29."
     ]
   },
   {
@@ -1868,11 +1868,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=18\nFebruary | Price=17\nMarch | Price=15\nApril | Price=13\nMay | Price=11\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=41000\nFebruary | Volume=26000\nMarch | Volume=78000\nApril | Volume=20000\nMay | Volume=56000\nJune | Volume=67000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 18 | 41,000 |\n| February | 17 | 26,000 |\n| March | 15 | 78,000 |\n| April | 13 | 20,000 |\n| May | 11 | 56,000 |\n| June | 10 | 67,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 267 |\n| Shares outstanding | 504,000 |\n| Total shares traded (six months) | 288,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
-      "The closing share price rose by more than 27.8% from first to last month.",
+      "Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long.",
       "Market capitalisation at the last month exceeds €4.3 million.",
-      "Earnings per share exceeds €0.49."
+      "The closing share price rose by more than 27.8% from first to last month.",
+      "Earnings per share exceeds €0.49.",
+      "Highest closing price is more than 17.8% above the lowest."
     ],
     "answer_key": [
       true,
@@ -1882,11 +1882,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
-      "FALSE — Price change ≈ -44.4%.",
+      "TRUE — Annual dividends are not a legal obligation every year.",
       "TRUE — Market capitalisation ≈ €5.0 million.",
-      "TRUE — Earnings per share ≈ €0.53."
+      "FALSE — Price change ≈ -44.4%.",
+      "TRUE — Earnings per share ≈ €0.53.",
+      "TRUE — Range €10–€18."
     ]
   },
   {
@@ -1898,11 +1898,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=22\nFebruary | Price=22\nMarch | Price=23\nApril | Price=23\nMay | Price=24\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=56000\nFebruary | Volume=75000\nMarch | Volume=39000\nApril | Volume=40000\nMay | Volume=47000\nJune | Volume=68000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 22 | 56,000 |\n| February | 22 | 75,000 |\n| March | 23 | 39,000 |\n| April | 23 | 40,000 |\n| May | 24 | 47,000 |\n| June | 28 | 68,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 197 |\n| Shares outstanding | 635,000 |\n| Total shares traded (six months) | 325,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
+      "Market capitalisation at the last month exceeds €15.6 million.",
       "The closing share price rose by more than 32.8% from first to last month.",
       "Highest closing price is more than 37.8% above the lowest.",
-      "The last closing price is below the first."
+      "Low inventory turnover always proves that goods sell quickly and cash is not tied up in stock."
     ],
     "answer_key": [
       false,
@@ -1912,11 +1912,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — Listed price rises do not transfer cash to the issuer.",
+      "TRUE — Market capitalisation ≈ €17.8 million.",
       "FALSE — Price change ≈ 27.3%.",
       "FALSE — Range €22–€28.",
-      "FALSE — 22 → 28."
+      "FALSE — Low turnover means goods stay in stock longer."
     ]
   },
   {
@@ -1928,11 +1928,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=31\nMarch | Price=28\nApril | Price=26\nMay | Price=26\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=83000\nFebruary | Volume=56000\nMarch | Volume=19000\nApril | Volume=93000\nMay | Volume=69000\nJune | Volume=67000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 30 | 83,000 |\n| February | 31 | 56,000 |\n| March | 28 | 19,000 |\n| April | 26 | 93,000 |\n| May | 26 | 69,000 |\n| June | 25 | 67,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 216 |\n| Shares outstanding | 501,000 |\n| Total shares traded (six months) | 387,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
       "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
       "Market capitalisation at the last month exceeds €11.6 million.",
       "Earnings per share exceeds €0.37.",
-      "Highest closing price is more than 19.1% above the lowest."
+      "Highest closing price is more than 19.1% above the lowest.",
+      "Total shares traded over six months exceed 32.5% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -1942,11 +1942,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Common shares vote; preferred shares usually trade voting rights for a higher dividend.",
       "TRUE — Market capitalisation ≈ €12.5 million.",
       "TRUE — Earnings per share ≈ €0.43.",
-      "TRUE — Range €25–€31."
+      "TRUE — Range €25–€31.",
+      "TRUE — Turnover ≈ 77.2% of shares outstanding."
     ]
   },
   {
@@ -1958,11 +1958,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=29\nMarch | Price=27\nApril | Price=25\nMay | Price=22\nJune | Price=21\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=61000\nFebruary | Volume=41000\nMarch | Volume=31000\nApril | Volume=77000\nMay | Volume=62000\nJune | Volume=75000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 61,000 |\n| February | 29 | 41,000 |\n| March | 27 | 31,000 |\n| April | 25 | 77,000 |\n| May | 22 | 62,000 |\n| June | 21 | 75,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 185 |\n| Shares outstanding | 671,000 |\n| Total shares traded (six months) | 347,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis.",
       "Market capitalisation at the last month exceeds €11.7 million.",
       "Highest closing price is more than 20% above the lowest.",
-      "Total shares traded over six months exceed 31.5% of shares outstanding."
+      "Total shares traded over six months exceed 31.5% of shares outstanding.",
+      "Shares outstanding equal 671,000."
     ],
     "answer_key": [
       false,
@@ -1972,11 +1972,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts.",
       "TRUE — Market capitalisation ≈ €14.1 million.",
       "TRUE — Range €21–€31.",
-      "TRUE — Turnover ≈ 51.7% of shares outstanding."
+      "TRUE — Turnover ≈ 51.7% of shares outstanding.",
+      "TRUE — Shares outstanding = 671,000."
     ]
   },
   {
@@ -1988,11 +1988,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=25\nMarch | Price=26\nApril | Price=28\nMay | Price=31\nJune | Price=31\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=77000\nFebruary | Volume=79000\nMarch | Volume=85000\nApril | Volume=37000\nMay | Volume=77000\nJune | Volume=28000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 23 | 77,000 |\n| February | 25 | 79,000 |\n| March | 26 | 85,000 |\n| April | 28 | 37,000 |\n| May | 31 | 77,000 |\n| June | 31 | 28,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 226 |\n| Shares outstanding | 860,000 |\n| Total shares traded (six months) | 383,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
       "The closing share price rose by more than 23% from first to last month.",
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Market capitalisation at the last month exceeds €22.6 million."
+      "Market capitalisation at the last month exceeds €22.6 million.",
+      "Any absolute profit proves the business is sufficiently profitable relative to the capital invested.",
+      "Market capitalisation rose by more than 28.2% over the period."
     ],
     "answer_key": [
       true,
@@ -2002,11 +2002,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Market capitalisation = shares × price; price can move for reasons unrelated to value.",
       "TRUE — Price change ≈ 34.8%.",
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Market capitalisation ≈ €26.7 million."
+      "TRUE — Market capitalisation ≈ €26.7 million.",
+      "FALSE — Profit must be judged relative to capital or turnover.",
+      "TRUE — €19.8m → €26.7m."
     ]
   },
   {
@@ -2018,11 +2018,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=22\nFebruary | Price=22\nMarch | Price=21\nApril | Price=19\nMay | Price=17\nJune | Price=15\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=48000\nFebruary | Volume=33000\nMarch | Volume=85000\nApril | Volume=61000\nMay | Volume=43000\nJune | Volume=93000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 22 | 48,000 |\n| February | 22 | 33,000 |\n| March | 21 | 85,000 |\n| April | 19 | 61,000 |\n| May | 17 | 43,000 |\n| June | 15 | 93,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 283 |\n| Shares outstanding | 654,000 |\n| Total shares traded (six months) | 363,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long.",
       "Market capitalisation at the last month exceeds €7.9 million.",
       "Earnings per share exceeds €0.31.",
-      "Highest closing price is more than 34.1% above the lowest."
+      "Highest closing price is more than 34.1% above the lowest.",
+      "Total shares traded over six months exceed 9% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -2032,11 +2032,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Annual dividends are not a legal obligation every year.",
       "TRUE — Market capitalisation ≈ €9.8 million.",
       "TRUE — Earnings per share ≈ €0.43.",
-      "TRUE — Range €15–€22."
+      "TRUE — Range €15–€22.",
+      "TRUE — Turnover ≈ 55.5% of shares outstanding."
     ]
   },
   {
@@ -2046,13 +2046,13 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=44\nFebruary | Price=45\nMarch | Price=51\nApril | Price=54\nMay | Price=58\nJune | Price=60\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=53000\nFebruary | Volume=92000\nMarch | Volume=60000\nApril | Volume=33000\nMay | Volume=33000\nJune | Volume=89000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 44 | 53,000 |\n| February | 45 | 92,000 |\n| March | 51 | 60,000 |\n| April | 54 | 33,000 |\n| May | 58 | 33,000 |\n| June | 60 | 89,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 180 |\n| Shares outstanding | 641,000 |\n| Total shares traded (six months) | 360,000 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=21\nMarch | Price=24\nApril | Price=25\nMay | Price=28\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=29000\nMarch | Volume=54000\nApril | Volume=28000\nMay | Volume=75000\nJune | Volume=86000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 29,000 |\n| February | 21 | 29,000 |\n| March | 24 | 54,000 |\n| April | 25 | 28,000 |\n| May | 28 | 75,000 |\n| June | 30 | 86,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 212 |\n| Shares outstanding | 516,000 |\n| Total shares traded (six months) | 301,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Current liabilities are debts that must be repaid after more than one year.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
-      "The closing share price rose by more than 22.2% from first to last month."
+      "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights.",
+      "Peak monthly share turnover exceeds 95,580 shares.",
+      "Operating result is below €201 thousand.",
+      "Low inventory turnover always proves that goods sell quickly and cash is not tied up in stock.",
+      "The closing share price rose by more than 20.7% from first to last month."
     ],
     "answer_key": [
       false,
@@ -2062,11 +2062,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Current liabilities are due within one year; longer debts are non-current.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt.",
-      "TRUE — Price change ≈ 36.4%."
+      "FALSE — That reverses the usual voting rights of common versus preferred shares.",
+      "FALSE — Peak monthly volume = 86,000.",
+      "FALSE — Operating result = 212.",
+      "FALSE — Low turnover means goods stay in stock longer.",
+      "TRUE — Price change ≈ 50.0%."
     ]
   },
   {
@@ -2078,10 +2078,10 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=27\nMarch | Price=30\nApril | Price=32\nMay | Price=32\nJune | Price=33\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=80000\nFebruary | Volume=30000\nMarch | Volume=72000\nApril | Volume=89000\nMay | Volume=71000\nJune | Volume=67000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 80,000 |\n| February | 27 | 30,000 |\n| March | 30 | 72,000 |\n| April | 32 | 89,000 |\n| May | 32 | 71,000 |\n| June | 33 | 67,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 180 |\n| Shares outstanding | 514,000 |\n| Total shares traded (six months) | 409,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "The closing share price rose by more than 25.5% from first to last month.",
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital.",
       "Market capitalisation at the last month exceeds €15.2 million.",
+      "The closing share price rose by more than 25.5% from first to last month.",
+      "Highest closing price is more than 18.2% above the lowest.",
       "Market capitalisation rose by more than 23.7% over the period."
     ],
     "answer_key": [
@@ -2092,10 +2092,10 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "FALSE — Price change ≈ 22.2%.",
+      "FALSE — Secondary-market transfers do not bring cash into the corporation.",
       "TRUE — Market capitalisation ≈ €17.0 million.",
+      "FALSE — Price change ≈ 22.2%.",
+      "TRUE — Range €27–€33.",
       "FALSE — €13.9m → €17.0m."
     ]
   },
@@ -2108,10 +2108,10 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=18\nFebruary | Price=15\nMarch | Price=14\nApril | Price=12\nMay | Price=11\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=25000\nFebruary | Volume=28000\nMarch | Volume=92000\nApril | Volume=53000\nMay | Volume=32000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 18 | 25,000 |\n| February | 15 | 28,000 |\n| March | 14 | 92,000 |\n| April | 12 | 53,000 |\n| May | 11 | 32,000 |\n| June | 10 | 47,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 314 |\n| Shares outstanding | 729,000 |\n| Total shares traded (six months) | 277,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
       "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
       "Market capitalisation at the last month exceeds €6 million.",
       "Earnings per share exceeds €0.36.",
+      "Highest closing price is more than 20.5% above the lowest.",
       "The closing share price rose by more than 17.8% from first to last month."
     ],
     "answer_key": [
@@ -2122,10 +2122,10 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Common shares vote; preferred shares usually trade voting rights for a higher dividend.",
       "TRUE — Market capitalisation ≈ €7.3 million.",
       "TRUE — Earnings per share ≈ €0.43.",
+      "TRUE — Range €10–€18.",
       "FALSE — Price change ≈ -44.4%."
     ]
   },
@@ -2138,8 +2138,8 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=28\nMarch | Price=29\nApril | Price=28\nMay | Price=30\nJune | Price=34\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=90000\nMarch | Volume=45000\nApril | Volume=23000\nMay | Volume=38000\nJune | Volume=76000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 45,000 |\n| February | 28 | 90,000 |\n| March | 29 | 45,000 |\n| April | 28 | 23,000 |\n| May | 30 | 38,000 |\n| June | 34 | 76,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 287 |\n| Shares outstanding | 549,000 |\n| Total shares traded (six months) | 317,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Preferred shareholders vote at the stockholders' meeting, while common shareholders never vote.",
+      "Highest closing price is more than 26.3% above the lowest.",
       "The closing share price rose by more than 16.9% from first to last month.",
       "Market capitalisation at the last month exceeds €14.6 million.",
       "Market capitalisation rose by more than 25.6% over the period."
@@ -2152,8 +2152,8 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
+      "FALSE — Common shares typically vote; preferred shares usually do not.",
+      "FALSE — Range €27–€34.",
       "TRUE — Price change ≈ 25.9%.",
       "TRUE — Market capitalisation ≈ €18.7 million.",
       "TRUE — €14.8m → €18.7m."
@@ -2168,11 +2168,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=20\nMarch | Price=20\nApril | Price=21\nMay | Price=21\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=43000\nFebruary | Volume=22000\nMarch | Volume=57000\nApril | Volume=25000\nMay | Volume=63000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 43,000 |\n| February | 20 | 22,000 |\n| March | 20 | 57,000 |\n| April | 21 | 25,000 |\n| May | 21 | 63,000 |\n| June | 24 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 195 |\n| Shares outstanding | 807,000 |\n| Total shares traded (six months) | 230,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
+      "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
       "The closing share price rose by more than 28.4% from first to last month.",
       "Market capitalisation rose by more than 30% over the period.",
-      "Peak monthly share turnover exceeds 70,004 shares."
+      "Peak monthly share turnover exceeds 70,004 shares.",
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis."
     ],
     "answer_key": [
       true,
@@ -2182,11 +2182,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "FALSE — There is no obligation to pay a dividend every year.",
+      "TRUE — Textbook motives for buying shares include dividends, growth, voting and real-value motives.",
       "FALSE — Price change ≈ 26.3%.",
       "FALSE — €15.3m → €19.4m.",
-      "FALSE — Peak monthly volume = 63,000."
+      "FALSE — Peak monthly volume = 63,000.",
+      "FALSE — That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts."
     ]
   },
   {
@@ -2198,11 +2198,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=32\nFebruary | Price=29\nMarch | Price=28\nApril | Price=27\nMay | Price=26\nJune | Price=23\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=25000\nFebruary | Volume=64000\nMarch | Volume=90000\nApril | Volume=23000\nMay | Volume=39000\nJune | Volume=18000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 32 | 25,000 |\n| February | 29 | 64,000 |\n| March | 28 | 90,000 |\n| April | 27 | 23,000 |\n| May | 26 | 39,000 |\n| June | 23 | 18,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 291 |\n| Shares outstanding | 759,000 |\n| Total shares traded (six months) | 259,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
       "Market capitalisation at the last month exceeds €16.3 million.",
       "Highest closing price is more than 27% above the lowest.",
-      "Peak monthly share turnover exceeds 74,170 shares."
+      "Peak monthly share turnover exceeds 74,170 shares.",
+      "Shares outstanding equal 759,000."
     ],
     "answer_key": [
       false,
@@ -2212,11 +2212,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "TRUE — Secondary-market price rises do not raise new company cash.",
+      "FALSE — There is no universal legal duty to pay a dividend every year.",
       "TRUE — Market capitalisation ≈ €17.5 million.",
       "TRUE — Range €23–€32.",
-      "TRUE — Peak monthly volume = 90,000."
+      "TRUE — Peak monthly volume = 90,000.",
+      "TRUE — Shares outstanding = 759,000."
     ]
   },
   {
@@ -2228,11 +2228,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=22\nMarch | Price=20\nApril | Price=17\nMay | Price=16\nJune | Price=15\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=79000\nMarch | Volume=78000\nApril | Volume=43000\nMay | Volume=85000\nJune | Volume=51000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 45,000 |\n| February | 22 | 79,000 |\n| March | 20 | 78,000 |\n| April | 17 | 43,000 |\n| May | 16 | 85,000 |\n| June | 15 | 51,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 230 |\n| Shares outstanding | 450,000 |\n| Total shares traded (six months) | 381,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
       "Market capitalisation at the last month exceeds €6.2 million.",
       "Earnings per share exceeds €0.38.",
-      "Highest closing price is more than 12.4% above the lowest."
+      "Highest closing price is more than 12.4% above the lowest.",
+      "Total shares traded over six months exceed 31.7% of shares outstanding."
     ],
     "answer_key": [
       true,
@@ -2242,11 +2242,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Market capitalisation = shares × price; price can move for reasons unrelated to value.",
       "TRUE — Market capitalisation ≈ €6.8 million.",
       "TRUE — Earnings per share ≈ €0.51.",
-      "TRUE — Range €15–€24."
+      "TRUE — Range €15–€24.",
+      "TRUE — Turnover ≈ 84.7% of shares outstanding."
     ]
   },
   {
@@ -2258,11 +2258,11 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=32\nMarch | Price=34\nApril | Price=34\nMay | Price=33\nJune | Price=39\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=69000\nFebruary | Volume=67000\nMarch | Volume=22000\nApril | Volume=54000\nMay | Volume=70000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 69,000 |\n| February | 32 | 67,000 |\n| March | 34 | 22,000 |\n| April | 34 | 54,000 |\n| May | 33 | 70,000 |\n| June | 39 | 63,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 230 |\n| Shares outstanding | 420,000 |\n| Total shares traded (six months) | 345,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
       "The closing share price rose by more than 16.2% from first to last month.",
       "Market capitalisation at the last month exceeds €12.5 million.",
-      "Market capitalisation rose by more than 16.5% over the period."
+      "Market capitalisation rose by more than 16.5% over the period.",
+      "Earnings per share exceeds €0.39."
     ],
     "answer_key": [
       true,
@@ -2272,11 +2272,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — Common shares vote; preferred shares usually emphasise dividend priority.",
       "TRUE — Price change ≈ 25.8%.",
       "TRUE — Market capitalisation ≈ €16.4 million.",
-      "TRUE — €13.0m → €16.4m."
+      "TRUE — €13.0m → €16.4m.",
+      "TRUE — Earnings per share ≈ €0.55."
     ]
   },
   {
@@ -2288,10 +2288,10 @@
     "half": "table",
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=21\nApril | Price=17\nMay | Price=15\nJune | Price=13\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=73000\nMarch | Volume=51000\nApril | Volume=23000\nMay | Volume=79000\nJune | Volume=90000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 37,000 |\n| February | 24 | 73,000 |\n| March | 21 | 51,000 |\n| April | 17 | 23,000 |\n| May | 15 | 79,000 |\n| June | 13 | 90,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 317 |\n| Shares outstanding | 676,000 |\n| Total shares traded (six months) | 353,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
-      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Carrying value per share, together with closing share price, high and low prices, dividend per share, dividend yield, earnings per share and the price-earnings ratio, are figures that shareholders and potential investors typically use when evaluating a company's shares.",
       "Market capitalisation at the last month exceeds €8.3 million.",
       "Highest closing price is more than 42.4% above the lowest.",
+      "Total shares traded over six months exceed 19.1% of shares outstanding.",
       "The closing share price rose by more than 28.5% from first to last month."
     ],
     "answer_key": [
@@ -2302,10 +2302,10 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Secondary-market price rises do not raise new company cash.",
-      "TRUE — Common shares vote; preferred shares usually receive a higher dividend without voting rights.",
+      "TRUE — These are the textbook's key stock figures.",
       "TRUE — Market capitalisation ≈ €8.8 million.",
       "TRUE — Range €13–€24.",
+      "TRUE — Turnover ≈ 52.2% of shares outstanding.",
       "FALSE — Price change ≈ -45.8%."
     ]
   },
@@ -2319,10 +2319,10 @@
     "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=29\nMarch | Price=32\nApril | Price=33\nMay | Price=34\nJune | Price=38\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=59000\nMarch | Volume=61000\nApril | Volume=88000\nMay | Volume=79000\nJune | Volume=30000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 27,000 |\n| February | 29 | 59,000 |\n| March | 32 | 61,000 |\n| April | 33 | 88,000 |\n| May | 34 | 79,000 |\n| June | 38 | 30,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 276 |\n| Shares outstanding | 456,000 |\n| Total shares traded (six months) | 344,000 |\n\nEvaluate the following economic assertions:",
     "statements": [
       "The closing share price rose by more than 16% from first to last month.",
-      "A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.",
-      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
       "Operating result is below €213 thousand.",
-      "Owner's equity is the portion of assets financed by bank loans and trade creditors."
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis."
     ],
     "answer_key": [
       true,
@@ -2333,10 +2333,10 @@
     ],
     "tactical_explanations": [
       "TRUE — Price change ≈ 40.7%.",
-      "FALSE — There is no obligation to pay a dividend every year.",
-      "FALSE — Long-term assets should be financed with long-term financial resources.",
+      "FALSE — There is no universal legal duty to pay a dividend every year.",
       "FALSE — Operating result = 276.",
-      "FALSE — That portion is liabilities; equity is the residual not financed by debt."
+      "FALSE — Listed price rises do not transfer cash to the issuer.",
+      "FALSE — That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts."
     ]
   }
 ]

@@ -2,6 +2,11 @@
  * Shared FC case assembler for Ch.6 generators.
  */
 import fs from "node:fs";
+import {
+  canUseTheory,
+  noteTheoryUse,
+  resetTheoryUsage,
+} from "./ch6-theory-pool.mjs";
 
 export function tokens(s) {
   return new Set(
@@ -23,26 +28,23 @@ export function jaccard(a, b) {
 }
 
 export function pickFrom(pool, cursorRef, localStmts, usedGlobal, threshold = 0.65) {
-  for (let n = 0; n < pool.length; n++) {
-    const item = pool[(cursorRef.i + n) % pool.length];
-    const isNumeric = /\d/.test(item[0]);
-    // Theory stems may repeat across cases (PDF style); numeric claims stay unique.
-    if (isNumeric && usedGlobal.has(item[0])) continue;
-    if (localStmts.some((s) => jaccard(s, item[0]) >= threshold)) continue;
-    if (isNumeric) usedGlobal.add(item[0]);
-    cursorRef.i = (cursorRef.i + n + 1) % pool.length;
-    return item;
-  }
-  for (let n = 0; n < pool.length; n++) {
-    const item = pool[(cursorRef.i + n) % pool.length];
-    const isNumeric = /\d/.test(item[0]);
-    if (isNumeric && usedGlobal.has(item[0])) continue;
-    if (localStmts.some((s) => jaccard(s, item[0]) >= threshold)) continue;
-    if (isNumeric) usedGlobal.add(item[0]);
-    cursorRef.i = (cursorRef.i + n + 1) % pool.length;
-    return item;
-  }
-  throw new Error(`Ran out of unique statements (${localStmts.length} local, pool ${pool.length})`);
+  const tryPick = (requireTheoryCap) => {
+    for (let n = 0; n < pool.length; n++) {
+      const item = pool[(cursorRef.i + n) % pool.length];
+      const isNumeric = /\d/.test(item[0]);
+      if (isNumeric && usedGlobal.has(item[0])) continue;
+      if (requireTheoryCap && !isNumeric && !canUseTheory(item[0])) continue;
+      if (localStmts.some((s) => jaccard(s, item[0]) >= threshold)) continue;
+      if (isNumeric) usedGlobal.add(item[0]);
+      else noteTheoryUse(item[0]);
+      cursorRef.i = (cursorRef.i + n + 1) % pool.length;
+      return item;
+    }
+    return null;
+  };
+  return tryPick(true) || tryPick(false) || (() => {
+    throw new Error(`Ran out of unique statements (${localStmts.length} local, pool ${pool.length})`);
+  })();
 }
 
 export function buildCases({
@@ -54,7 +56,9 @@ export function buildCases({
   THEORY,
   TITLES,
   sceneIndices,
+  resetTheory = false,
 }) {
+  if (resetTheory) resetTheoryUsage();
   const usedGlobal = new Set();
   const tCursor = { i: 0 };
   const fCursor = { i: 0 };

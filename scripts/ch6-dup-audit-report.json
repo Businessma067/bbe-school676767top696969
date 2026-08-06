@@ -1,0 +1,335 @@
+{
+  "verdict": {
+    "exactNumericStatementDups": 0,
+    "identicalCaseNumberFingerprints": 0,
+    "withinCaseNearDup078": 0,
+    "theoryExactReuseGroupsGlobal": 110,
+    "theoryStemsUsedOver10times": 19
+  },
+  "perSub": [
+    {
+      "sub": "6.1",
+      "cases": 130,
+      "theoryStmts": 382,
+      "calcStmts": 268,
+      "theoryExactReuseGroups": 13,
+      "theoryMaxReuse": 25,
+      "theoryTop": [
+        {
+          "count": 25,
+          "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself pro"
+        },
+        {
+          "count": 16,
+          "preview": "common shareholders are entitled to vote at the annual stockholders meeting whereas holders of prefe"
+        },
+        {
+          "count": 16,
+          "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial "
+        }
+      ],
+      "calcTemplateFamilies_ge3": 23,
+      "calcTopTemplates": [
+        {
+          "count": 21,
+          "preview": "market capitalisation at the last month exceeds # # million"
+        },
+        {
+          "count": 18,
+          "preview": "the current ratio is below # #"
+        },
+        {
+          "count": 18,
+          "preview": "the closing share price rose by more than # # from first to last month"
+        }
+      ],
+      "exactNumericDupGroups": 0
+    },
+    {
+      "sub": "6.2",
+      "cases": 150,
+      "theoryStmts": 429,
+      "calcStmts": 321,
+      "theoryExactReuseGroups": 83,
+      "theoryMaxReuse": 28,
+      "theoryTop": [
+        {
+          "count": 28,
+          "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself pro"
+        },
+        {
+          "count": 23,
+          "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial "
+        },
+        {
+          "count": 20,
+          "preview": "dividends paid to shareholders are recorded within cash flow from financing activities not cash flow"
+        }
+      ],
+      "calcTemplateFamilies_ge3": 36,
+      "calcTopTemplates": [
+        {
+          "count": 24,
+          "preview": "market capitalisation at the last month exceeds # # million"
+        },
+        {
+          "count": 22,
+          "preview": "the closing share price rose by more than # # from first to last month"
+        },
+        {
+          "count": 17,
+          "preview": "the dividends paid line of # euros belongs in investing activities"
+        }
+      ],
+      "exactNumericDupGroups": 0
+    },
+    {
+      "sub": "6.3",
+      "cases": 125,
+      "theoryStmts": 381,
+      "calcStmts": 244,
+      "theoryExactReuseGroups": 14,
+      "theoryMaxReuse": 26,
+      "theoryTop": [
+        {
+          "count": 26,
+          "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself pro"
+        },
+        {
+          "count": 16,
+          "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial "
+        },
+        {
+          "count": 15,
+          "preview": "common shareholders are entitled to vote at the annual stockholders meeting whereas holders of prefe"
+        }
+      ],
+      "calcTemplateFamilies_ge3": 34,
+      "calcTopTemplates": [
+        {
+          "count": 21,
+          "preview": "market capitalisation at the last month exceeds # # million"
+        },
+        {
+          "count": 17,
+          "preview": "the closing share price rose by more than # # from first to last month"
+        },
+        {
+          "count": 11,
+          "preview": "market capitalisation rose by more than # # over the period"
+        }
+      ],
+      "exactNumericDupGroups": 0
+    },
+    {
+      "sub": "6.4",
+      "cases": 60,
+      "theoryStmts": 206,
+      "calcStmts": 94,
+      "theoryExactReuseGroups": 12,
+      "theoryMaxReuse": 11,
+      "theoryTop": [
+        {
+          "count": 11,
+          "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself pro"
+        },
+        {
+          "count": 10,
+          "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial "
+        },
+        {
+          "count": 5,
+          "preview": "buying software with cash always increases total assets because a new asset is added without reducin"
+        }
+      ],
+      "calcTemplateFamilies_ge3": 16,
+      "calcTopTemplates": [
+        {
+          "count": 7,
+          "preview": "the current ratio exceeds # #"
+        },
+        {
+          "count": 7,
+          "preview": "the equity ratio is below # #"
+        },
+        {
+          "count": 7,
+          "preview": "the closing share price rose by more than # # from first to last month"
+        }
+      ],
+      "exactNumericDupGroups": 0
+    },
+    {
+      "sub": "6.5",
+      "cases": 160,
+      "theoryStmts": 496,
+      "calcStmts": 304,
+      "theoryExactReuseGroups": 19,
+      "theoryMaxReuse": 29,
+      "theoryTop": [
+        {
+          "count": 29,
+          "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself pro"
+        },
+        {
+          "count": 26,
+          "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial "
+        },
+        {
+          "count": 16,
+          "preview": "common shareholders are entitled to vote at the annual stockholders meeting whereas holders of prefe"
+        }
+      ],
+      "calcTemplateFamilies_ge3": 28,
+      "calcTopTemplates": [
+        {
+          "count": 22,
+          "preview": "market capitalisation at the last month exceeds # # million"
+        },
+        {
+          "count": 19,
+          "preview": "the closing share price rose by more than # # from first to last month"
+        },
+        {
+          "count": 17,
+          "preview": "asset turnover revenue taken relative to average total assets is above # #"
+        }
+      ],
+      "exactNumericDupGroups": 0
+    }
+  ],
+  "hottestTheory": [
+    {
+      "count": 119,
+      "preview": "once shares are already trading on a stock exchange a rise in their market price does not itself provide the issuing company with ",
+      "bySub": {
+        "6.1": 25,
+        "6.2": 28,
+        "6.3": 26,
+        "6.4": 11,
+        "6.5": 29
+      }
+    },
+    {
+      "count": 91,
+      "preview": "a corporation must always pay a dividend to its shareholders every year regardless of its financial performance",
+      "bySub": {
+        "6.1": 16,
+        "6.2": 23,
+        "6.3": 16,
+        "6.4": 10,
+        "6.5": 26
+      }
+    },
+    {
+      "count": 65,
+      "preview": "common shareholders are entitled to vote at the annual stockholders meeting whereas holders of preferred shares do not have this r",
+      "bySub": {
+        "6.1": 16,
+        "6.2": 13,
+        "6.3": 15,
+        "6.4": 5,
+        "6.5": 16
+      }
+    },
+    {
+      "count": 23,
+      "preview": "buying software with cash always increases total assets because a new asset is added without reducing any other asset",
+      "bySub": {
+        "6.1": 12,
+        "6.2": 0,
+        "6.3": 6,
+        "6.4": 5,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 22,
+      "preview": "paying dividends is classified as an investing cash outflow because it uses cash belonging to shareholders",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 11,
+        "6.3": 11,
+        "6.4": 0,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 21,
+      "preview": "dividends paid to shareholders are recorded within cash flow from financing activities not cash flow from operating activities",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 20,
+        "6.3": 1,
+        "6.4": 0,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 20,
+      "preview": "dividends paid to shareholders sit in financing activities not operating activities",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 20,
+        "6.3": 0,
+        "6.4": 0,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 19,
+      "preview": "owner s equity is the portion of assets financed by bank loans and trade creditors",
+      "bySub": {
+        "6.1": 12,
+        "6.2": 0,
+        "6.3": 4,
+        "6.4": 3,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 18,
+      "preview": "a business can report an investing outflow and still pay a dividend in the same year because investing and financing are separate ",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 18,
+        "6.3": 0,
+        "6.4": 0,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 17,
+      "preview": "profit for the year is reported in the income statement and increases retained earnings within equity on the balance sheet but it ",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 0,
+        "6.3": 8,
+        "6.4": 0,
+        "6.5": 9
+      }
+    },
+    {
+      "count": 16,
+      "preview": "a high equity ratio indicates that a larger portion of assets was financed by the company s own resources rather than by creditors",
+      "bySub": {
+        "6.1": 12,
+        "6.2": 0,
+        "6.3": 1,
+        "6.4": 3,
+        "6.5": 0
+      }
+    },
+    {
+      "count": 15,
+      "preview": "a business can have a negative cash flow from investing activities in the same year that it pays a dividend to its shareholders si",
+      "bySub": {
+        "6.1": 0,
+        "6.2": 15,
+        "6.3": 0,
+        "6.4": 0,
+        "6.5": 0
+      }
+    }
+  ]
+}

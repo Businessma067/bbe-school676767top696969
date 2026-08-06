@@ -42,7 +42,7 @@ import {
   smallBsTable,
   validateTableCase,
 } from "./ch6-table-gen-shared.mjs";
-import { sampleTheory, topicsForSubsection } from "./ch6-theory-pool.mjs";
+import { sampleTheoryAvailable, topicsForSubsection, canUseTheory, noteTheoryUse, resetTheoryUsage } from "./ch6-theory-pool.mjs";
 
 const plan = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"));
 const SUBS = ["6.1", "6.2", "6.3", "6.4", "6.5"];
@@ -150,13 +150,16 @@ function shareBelow(rng, subject, ofWhat, frac, lo, hi) {
 /* case assembly                                                           */
 /* ---------------------------------------------------------------------- */
 
-function pickFive(candidates, want, { minTheory = 2, maxTheory = 3 } = {}) {
+function pickFive(candidates, want, { minTheory = 1, maxTheory = 3 } = {}) {
   const chosen = [];
   const used = new Set();
+  let nodes = 0;
+  const LIMIT = 25000;
   function theoryN(list) {
     return list.filter((c) => c.theory).length;
   }
   function backtrack(pos) {
+    if (++nodes > LIMIT) return false;
     if (pos === 5) {
       const t = theoryN(chosen);
       return t >= minTheory && t <= maxTheory;
@@ -173,7 +176,6 @@ function pickFive(candidates, want, { minTheory = 2, maxTheory = 3 } = {}) {
     order.sort((a, b) => {
       const ta = Number(!!candidates[a].theory);
       const tb = Number(!!candidates[b].theory);
-      // Prefer theory until we have enough, then prefer calc.
       if (needTheory) return tb - ta;
       return ta - tb;
     });
@@ -188,25 +190,23 @@ function pickFive(candidates, want, { minTheory = 2, maxTheory = 3 } = {}) {
     return false;
   }
   if (backtrack(0)) return chosen;
-  // Soft fallbacks for hard answer_keys
-  if (minTheory > 1 || maxTheory < 4) {
-    return pickFive(candidates, want, { minTheory: 1, maxTheory: 4 });
-  }
+  if (minTheory > 0) return pickFive(candidates, want, { minTheory: 0, maxTheory: 5 });
   return null;
 }
 
-function pack(slot, title, context, candidates, usedStmts, rng) {
-  const topics = topicsForSubsection(slot.subsection);
-  const theory = sampleTheory(topics, rng || (() => 0.5), 12);
+function pack(slot, title, context, candidates, usedStmts, rng, topicOverride) {
+  const topics = topicOverride || topicsForSubsection(slot.subsection);
+  const theory = sampleTheoryAvailable(topics, rng || (() => 0.5), 16);
   const calc = candidates
     .filter((c) => !/\bequals exactly\b|\bis exactly €|\bis exactly \d/i.test(c.stmt))
-    .map((c) => ({ theory: false, ...c }));
+    .map((c) => ({ ...c, theory: !!c.theory }))
+    .filter((c) => !c.theory || canUseTheory(c.stmt));
   const fresh = [...calc, ...theory].filter((c) => !usedStmts.has(normStmt(c.stmt)));
   const picked = pickFive(fresh, slot.answer_key);
   if (!picked) return null;
   for (const p of picked) {
-    // Theory may reuse Fuhrmann stems across cases (PDF-style); keep calc stmts globally unique.
-    if (!p.theory) usedStmts.add(normStmt(p.stmt));
+    if (p.theory) noteTheoryUse(p.stmt);
+    else usedStmts.add(normStmt(p.stmt));
   }
   return {
     subsection: slot.subsection,
@@ -553,18 +553,6 @@ function cf2y(slot, rng, used) {
       expl: `Dividends: ${y1.div} then ${y2.div}.`,
     },
     growthUp(rng, "Cash flow from operating activities", opG, 6, 25),
-    {
-      theory: true,
-      stmt: `Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.`,
-      val: true,
-      expl: `Dividend payments are a financing activity.`,
-    },
-    {
-      theory: true,
-      stmt: `A business can have a negative cash flow from investing activities in the same year that it pays a dividend to its shareholders, since dividend payments and investment spending are recorded in different sections of the cash flow statement.`,
-      val: true,
-      expl: `Investing and financing are separate sections.`,
-    },
   ];
 
   return pack(slot, titleFor(slot, "cf2y"), ctx, cands, used, rng);
@@ -798,18 +786,6 @@ function combined(slot, rng, used) {
       val: cfInv < 0,
       expl: `Investing cash flow = ${cfInv}.`,
     },
-    {
-      theory: true,
-      stmt: `Profit for the year is reported in the income statement and increases retained earnings within equity on the balance sheet, but it does not appear as a separate line item within the cash flow statement, which instead records actual cash inflows and outflows.`,
-      val: true,
-      expl: `Profit links to retained earnings; the cash flow statement tracks cash, not profit as a line.`,
-    },
-    {
-      theory: true,
-      stmt: `The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.`,
-      val: true,
-      expl: `Assets = liabilities + equity.`,
-    },
   ];
 
   return pack(slot, titleFor(slot, "combined"), ctx, cands, used, rng);
@@ -1013,37 +989,9 @@ function share(slot, rng, used) {
       const th = intTh(rng, 190, 300);
       return { stmt: `Operating result is below €${th} thousand.`, val: earnings < th, expl: `Operating result = ${earnings}.` };
     })(),
-    (() => {
-      const { claimed, val } = exactAmt(rng, Math.round(eps * 100), { deltaMin: 3, deltaMax: 12 });
-      return { stmt: `Earnings per share is exactly €${(claimed / 100).toFixed(2)}.`, val, expl: `Earnings per share ≈ €${eps.toFixed(2)}.` };
-    })(),
-    {
-      theory: true,
-      stmt: `Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.`,
-      val: true,
-      expl: `Secondary-market price rises do not raise new company cash.`,
-    },
-    {
-      theory: true,
-      stmt: `Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.`,
-      val: true,
-      expl: `Common shares vote; preferred shares usually receive a higher dividend without voting rights.`,
-    },
-    {
-      theory: true,
-      stmt: `Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.`,
-      val: true,
-      expl: `These match the textbook motives for buying shares.`,
-    },
-    {
-      theory: true,
-      stmt: `A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.`,
-      val: false,
-      expl: `There is no obligation to pay a dividend every year.`,
-    },
   ];
 
-  return pack(slot, titleFor(slot, "share"), ctx, cands, used, rng);
+  return pack(slot, titleFor(slot, "share"), ctx, cands, used, rng, ["shares", "analysis"]);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -1217,6 +1165,7 @@ function generateCase(slot, used, tableIndex, tableCount) {
 /* ---------------------------------------------------------------------- */
 
 const usedStmts = new Set();
+resetTheoryUsage();
 let grand = 0;
 for (const sub of SUBS) {
   const slots = plan[sub].filter((s) => s.half === "table");

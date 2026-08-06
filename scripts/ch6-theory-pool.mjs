@@ -343,6 +343,61 @@ export const THEORY_BY_TOPIC = {
       stmt: "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital.",
       expl: "Secondary-market transfers do not bring cash into the corporation.",
     },
+    // Paraphrases — keep exact-string reuse ≤5 chapter-wide.
+    {
+      theory: true,
+      val: true,
+      stmt: "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation's cash reserves.",
+      expl: "Secondary-market price rises do not raise new company cash.",
+    },
+    {
+      theory: true,
+      val: true,
+      stmt: "Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company.",
+      expl: "Secondary trading does not raise new company funds.",
+    },
+    {
+      theory: true,
+      val: true,
+      stmt: "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not.",
+      expl: "New share capital arises at issue, not in aftermarket trades.",
+    },
+    {
+      theory: true,
+      val: true,
+      stmt: "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
+      expl: "Common shares vote; preferred shares usually emphasise dividend priority.",
+    },
+    {
+      theory: true,
+      val: true,
+      stmt: "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
+      expl: "Textbook motives for buying shares include dividends, growth, voting and real-value motives.",
+    },
+    {
+      theory: true,
+      val: true,
+      stmt: "Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long.",
+      expl: "Annual dividends are not a legal obligation every year.",
+    },
+    {
+      theory: true,
+      val: false,
+      stmt: "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
+      expl: "Listed price rises do not transfer cash to the issuer.",
+    },
+    {
+      theory: true,
+      val: false,
+      stmt: "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
+      expl: "There is no universal legal duty to pay a dividend every year.",
+    },
+    {
+      theory: true,
+      val: false,
+      stmt: "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights.",
+      expl: "That reverses the usual voting rights of common versus preferred shares.",
+    },
   ],
   analysis: [
     {
@@ -461,3 +516,41 @@ export function topicsForSubsection(sub) {
       return ["general"];
   }
 }
+
+/** Max identical theory sentence uses chapter-wide (text + table). */
+export const THEORY_MAX_USES = 5;
+
+/** @type {Map<string, number>} */
+export const theoryUsage = new Map();
+
+export function resetTheoryUsage() {
+  theoryUsage.clear();
+}
+
+export function theoryKey(s) {
+  return String(s)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function canUseTheory(s) {
+  return (theoryUsage.get(theoryKey(s)) || 0) < THEORY_MAX_USES;
+}
+
+export function noteTheoryUse(s) {
+  const k = theoryKey(s);
+  theoryUsage.set(k, (theoryUsage.get(k) || 0) + 1);
+}
+
+/**
+ * @param {string|string[]} topic
+ * @param {() => number} rng
+ * @param {number} [n]
+ * @returns {TheoryCand[]}
+ */
+export function sampleTheoryAvailable(topic, rng, n = 14) {
+  return sampleTheory(topic, rng, 80).filter((c) => canUseTheory(c.stmt)).slice(0, n);
+}
+

@@ -575,47 +575,47 @@ Evaluate the following economic assertions:`;
   const pool = [
     {
       t: true,
-      s: `Dividends paid to shareholders sit in financing activities, not operating activities.`,
+      s: `For this ${biz}, dividends paid to shareholders sit in financing activities, not operating activities.`,
       e: `Dividend payments are a financing activity.`,
     },
     {
       t: true,
-      s: `A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.`,
+      s: `For this ${biz}, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.`,
       e: `Investing and financing are recorded separately.`,
     },
     {
       t: true,
-      s: `Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.`,
+      s: `For this ${biz}, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.`,
       e: `Customer collections belong in operating cash flow.`,
     },
     {
       t: true,
-      s: `Buying new ${asset} is classified as an investing cash outflow.`,
+      s: `For this ${biz}, buying new ${asset} is classified as an investing cash outflow.`,
       e: `Long-term asset purchases are investing outflows.`,
     },
     {
       t: true,
-      s: `A positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals.`,
+      s: `For this ${biz}, a positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals.`,
       e: `Profit and cash movement are different concepts.`,
     },
     {
       t: false,
-      s: `The dividends paid line of (${div}) euros belongs in investing activities.`,
+      s: `For this ${biz}, the dividends paid line of (${div}) euros belongs in investing activities.`,
       e: `Dividends are financing outflows, not investing.`,
     },
     {
       t: false,
-      s: `The investing outflow of ${fmt(sc.investing)} euros means the business must be failing.`,
+      s: `For this ${biz}, the investing outflow of ${fmt(sc.investing)} euros means the business must be failing.`,
       e: `Negative investing cash flow often just means assets were purchased.`,
     },
     {
       t: false,
-      s: `Repayments of borrowed money count as operating cash outflows.`,
+      s: `For this ${biz}, repayments of borrowed money count as operating cash outflows.`,
       e: `Loan repayments are financing, not operating.`,
     },
     {
       t: false,
-      s: `Customer collections of receivables are financing cash inflows.`,
+      s: `For this ${biz}, customer collections of receivables are financing cash inflows.`,
       e: `They are operating inflows.`,
     },
     {
@@ -668,7 +668,7 @@ Evaluate the following economic assertions:`;
       s: `Cash flow from financing activities is not positive; it is ${fin} euros.`,
       e: `Financing cash flow is ${fin}.`,
     },
-  ].map((p) => ({ ...p }));
+  ];
 
   const statements = [];
   const tactical_explanations = [];
