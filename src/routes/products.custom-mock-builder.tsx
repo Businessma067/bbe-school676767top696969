@@ -333,7 +333,7 @@ function CustomMockBuilderPage() {
             <h2 className="mt-8 font-display text-xl font-semibold">Number of Questions</h2>
             <p className="mt-1 text-sm text-muted-foreground">
               Timed mode uses {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question. Max{" "}
-              {maxQuestions} for the selected chapter(s) (Ch.2 → 30, Ch.3 → 50).
+              {maxQuestions} for the selected chapter(s) (Ch.2–3 → 50).
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {questionPresets.map((n) => (

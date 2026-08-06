@@ -9,7 +9,7 @@ export const CUSTOM_MOCK_QUESTION_PRESETS = [5, 10, 15, 20, 25, 30, 40, 50] as c
 
 /** Max questions allowed when a chapter’s subtopics are selected (pool size also limits). */
 export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
-  2: 30,
+  2: 50,
   3: 50,
   4: 30,
   5: 30,
