@@ -1,11 +1,10 @@
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { ChevronDown } from "lucide-react";
 
 export function AuthNav() {
-  const navigate = useNavigate();
   const [auth, setAuth] = useState<AuthState | null>(null);
   const [ready, setReady] = useState(false);
   const [open, setOpen] = useState(false);
@@ -23,7 +22,8 @@ export function AuthNav() {
 
     void refresh();
     const { data } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") void refresh();
+      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED")
+        void refresh();
     });
 
     return () => {
@@ -43,7 +43,8 @@ export function AuthNav() {
     return () => document.removeEventListener("mousedown", handle);
   }, [open]);
 
-  if (!ready) return <div className="h-9 w-28 rounded-md border border-border bg-card" aria-hidden="true" />;
+  if (!ready)
+    return <div className="h-9 w-28 rounded-md border border-border bg-card" aria-hidden="true" />;
 
   if (!auth) {
     return (
@@ -85,8 +86,12 @@ export function AuthNav() {
           <div className="grid h-7 w-7 place-items-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
             {initial}
           </div>
-          <span className="hidden max-w-[140px] truncate text-xs font-medium text-foreground sm:inline">{auth.name}</span>
-          <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          <span className="hidden max-w-[140px] truncate text-xs font-medium text-foreground sm:inline">
+            {auth.name}
+          </span>
+          <ChevronDown
+            className={`h-3.5 w-3.5 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          />
         </button>
         <div
           className={`absolute right-0 top-full z-50 mt-2 w-44 origin-top-right rounded-lg border border-border bg-card p-1 shadow-lg transition-all duration-300 ease-out ${

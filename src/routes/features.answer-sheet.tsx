@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Clock, ClipboardCheck, Focus, ArrowLeft } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import examHallImg from "@/assets/exam-hall-real.png.asset.json";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/features/answer-sheet")({
   head: () => ({
@@ -48,23 +49,9 @@ const highlights = [
 function AnswerSheetFeaturePage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none tracking-tight text-primary-foreground">
-                BBE
-              </span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">
-                BBE School
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                WU Vienna · Prep
-              </span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/important-features"
             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
@@ -72,8 +59,8 @@ function AnswerSheetFeaturePage() {
             <ArrowLeft className="h-3.5 w-3.5" />
             Features
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-14">
         {/* Top: interactive preview left, intro text right */}
@@ -132,10 +119,7 @@ function AnswerSheetFeaturePage() {
                 "Every mark stays editable until you press submit.",
                 "Fill it row by row, block by block, or all at the end.",
               ].map((item) => (
-                <li
-                  key={item}
-                  className="flex gap-3 text-sm leading-relaxed text-muted-foreground"
-                >
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                   <span
                     className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
                     style={{ backgroundColor: PRODUCT_ORANGE }}
@@ -285,7 +269,6 @@ function AnswerSheetFeaturePage() {
             </p>
           </div>
         </section>
-
 
         <section className="mt-12">
           <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">

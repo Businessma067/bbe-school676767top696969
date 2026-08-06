@@ -7,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { SiteHeader } from "@/components/SiteHeader";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import {
   MOCK_EXAMS,
@@ -53,10 +54,7 @@ function MockExamsPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [enrollments, history] = await Promise.all([
-        fetchEnrollments(),
-        fetchMockAttempts(),
-      ]);
+      const [enrollments, history] = await Promise.all([fetchEnrollments(), fetchMockAttempts()]);
       if (cancelled) return;
       const owned = highestTier(enrollments);
       setTier(owned === "full" ? "full" : "lite");
@@ -110,6 +108,17 @@ function MockExamsPage() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+      <SiteHeader
+        maxWidthClassName="max-w-5xl"
+        actions={
+          <Link
+            to="/dashboard"
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            ← Dashboard
+          </Link>
+        }
+      />
       <main className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="mb-10">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
@@ -118,19 +127,15 @@ function MockExamsPage() {
               34 tasks · 160 points · wi2 scoring
             </span>
           </div>
-          <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
-            Mock Exams
-          </h1>
+          <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">Mock Exams</h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Full-length simulations of the WU BBE entrance exam. Same structure,
-            same time limit, same scoring method.
+            Full-length simulations of the WU BBE entrance exam. Same structure, same time limit,
+            same scoring method.
           </p>
         </div>
 
         <section className="mb-14">
-          <h2 className="mb-5 font-display text-xl font-semibold">
-            Available Exams
-          </h2>
+          <h2 className="mb-5 font-display text-xl font-semibold">Available Exams</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {exams.map((exam) => (
               <div
@@ -139,9 +144,7 @@ function MockExamsPage() {
               >
                 <div className="mb-3 flex items-center gap-2">
                   <FileText className="h-4 w-4 text-caramel-deep" />
-                  <h3 className="font-display text-lg font-semibold">
-                    {exam.title}
-                  </h3>
+                  <h3 className="font-display text-lg font-semibold">{exam.title}</h3>
                 </div>
                 <p className="flex-1 text-sm text-muted-foreground">
                   {exam.questionCount} questions · {exam.durationMinutes / 60} hours
@@ -190,8 +193,8 @@ function MockExamsPage() {
           </div>
           {lockedExams.length > 0 && (
             <div className="mt-4 rounded-2xl border border-dashed border-border bg-card/50 p-5 text-sm text-muted-foreground">
-              {lockedExams.length} more mock exam{lockedExams.length > 1 ? "s" : ""} are
-              included in the Full BBE Course.{" "}
+              {lockedExams.length} more mock exam{lockedExams.length > 1 ? "s" : ""} are included in
+              the Full BBE Course.{" "}
               <Link to="/products/full-course" className="font-semibold text-caramel-deep">
                 See Full Course →
               </Link>
@@ -200,17 +203,15 @@ function MockExamsPage() {
         </section>
 
         <section>
-          <h2 className="mb-5 font-display text-xl font-semibold">
-            Completed Exams
-          </h2>
+          <h2 className="mb-5 font-display text-xl font-semibold">Completed Exams</h2>
           {attempts === null ? (
             <p className="text-sm text-muted-foreground">Loading your results…</p>
           ) : completed.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
               <Trophy className="mx-auto mb-3 h-6 w-6 text-taupe" />
               <p className="text-sm text-muted-foreground">
-                No exams completed yet. Finish your first mock exam and your
-                results will show up here.
+                No exams completed yet. Finish your first mock exam and your results will show up
+                here.
               </p>
             </div>
           ) : (
@@ -223,9 +224,7 @@ function MockExamsPage() {
                     className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between"
                   >
                     <div>
-                      <h3 className="font-display text-base font-semibold">
-                        {c.exam_title}
-                      </h3>
+                      <h3 className="font-display text-base font-semibold">{c.exam_title}</h3>
                       <p className="mt-1 flex items-center gap-2 text-xs text-taupe">
                         <Clock className="h-3.5 w-3.5" />
                         {new Date(c.completed_at).toLocaleDateString(undefined, {
@@ -261,9 +260,7 @@ function MockExamsPage() {
       <Dialog open={!!selected} onOpenChange={(o) => !o && setSelected(null)}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="font-display text-xl">
-              {selected?.title}
-            </DialogTitle>
+            <DialogTitle className="font-display text-xl">{selected?.title}</DialogTitle>
             <DialogDescription>
               Full-length simulation, {SCORING_CONFIG.examTotalPoints} points total.
             </DialogDescription>
@@ -289,8 +286,8 @@ function MockExamsPage() {
           </div>
 
           <p className="text-xs text-taupe">
-            If you choose the timed option, the exam is limited to 2 hours and
-            submits automatically when the timer reaches zero.
+            If you choose the timed option, the exam is limited to 2 hours and submits automatically
+            when the timer reaches zero.
           </p>
 
           <div className="mt-1 flex flex-col gap-2">

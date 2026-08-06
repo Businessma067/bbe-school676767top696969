@@ -6,13 +6,10 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { MobileNav } from "@/components/MobileNav";
-import { DesktopNav } from "@/components/DesktopNav";
-import { AuthNav } from "@/components/AuthNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import FiveStatementSimulator from "@/components/FiveStatementSimulator";
 import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
 import MathParabolaSimulator from "@/components/MathParabolaSimulator";
-
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -23,29 +20,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      {/* Header */}
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
-          <a href="/" className="group flex items-center gap-3 shrink-0">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
-              <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-background ring-2 ring-primary" />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">BBE School</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
-            </div>
-          </a>
-          <DesktopNav />
-          <div className="flex items-center gap-3">
-            <AuthNav />
-            <div className="lg:hidden">
-              <MobileNav />
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <SiteHeader showNav showMobileNav />
 
       <main>
         {/* HERO — light ivory */}
@@ -91,7 +66,10 @@ function Index() {
                 </div>
 
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-                  <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "#2DD4A8" }} />
+                  <span
+                    className="h-1.5 w-1.5 rounded-full"
+                    style={{ backgroundColor: "#2DD4A8" }}
+                  />
                   <span className="text-xs font-medium tracking-wide text-taupe">
                     Built by top 1% of the hall
                   </span>
@@ -111,7 +89,9 @@ function Index() {
                     className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                   >
                     <span>Try demo-practice</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">50+ tasks for start</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                      50+ tasks for start
+                    </span>
                   </Link>
                   <Link
                     to="/products"
@@ -123,15 +103,16 @@ function Index() {
                     }}
                   >
                     <span>Explore Courses</span>
-                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">See all BBE School products</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">
+                      See all BBE School products
+                    </span>
                   </Link>
-
-
                 </div>
 
-                
-
-                <div id="important-features" className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe">
+                <div
+                  id="important-features"
+                  className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+                >
                   <span>Beauty of stress and time management</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
                   <span>Most common and tricky Mistakes</span>
@@ -153,12 +134,8 @@ function Index() {
                     <div className="mb-6 grid h-16 w-16 place-items-center rounded-full border border-white/40 bg-white/10 backdrop-blur">
                       <div className="h-0 w-0 border-y-8 border-y-transparent border-l-[14px] border-l-white pl-1" />
                     </div>
-                    <p className="font-display text-lg font-medium text-white">
-                      Watch Intro Video
-                    </p>
-                    <p className="mt-2 text-sm text-white/80">
-                      Passing the Exam from Rimini Beach
-                    </p>
+                    <p className="font-display text-lg font-medium text-white">Watch Intro Video</p>
+                    <p className="mt-2 text-sm text-white/80">Passing the Exam from Rimini Beach</p>
                     <div className="mt-6 text-xs font-medium tracking-wider text-white/70">
                       02:14 PREVIEW
                     </div>
@@ -192,11 +169,13 @@ function Index() {
             </p>
           </div>
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {([
-              { key: "economics", label: "Economics", enabled: true },
-              { key: "math", label: "Math", enabled: true },
-              { key: "english", label: "English", enabled: true },
-            ] as const).map((s) => {
+            {(
+              [
+                { key: "economics", label: "Economics", enabled: true },
+                { key: "math", label: "Math", enabled: true },
+                { key: "english", label: "English", enabled: true },
+              ] as const
+            ).map((s) => {
               const active = demoSubject === s.key;
               return (
                 <button
@@ -224,10 +203,7 @@ function Index() {
             {demoSubject === "english" && <EnglishReadingSimulator />}
             {demoSubject === "math" && <MathParabolaSimulator />}
           </div>
-
         </section>
-
-
 
         {/* PARALLAX BAND — darkened WU campus */}
         <section
@@ -274,9 +250,10 @@ function Index() {
                 Why Choose US
               </h2>
               <p className="mt-5 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
-                The standards at WU Vienna are exceptionally high. Let's be honest: entry competition
-                is brutal, and no software can ever guarantee your admission. Success requires hard,
-                disciplined work. But our data proves how we shift the odds in your favor.
+                The standards at WU Vienna are exceptionally high. Let's be honest: entry
+                competition is brutal, and no software can ever guarantee your admission. Success
+                requires hard, disciplined work. But our data proves how we shift the odds in your
+                favor.
               </p>
             </div>
           </div>
@@ -310,7 +287,8 @@ function Index() {
                 An open letter to parents
               </span>
               <h2 className="mt-5 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-                A Frank Audit for Parents:<br />
+                A Frank Audit for Parents:
+                <br />
                 <span className="text-caramel">The Real Cost of WU Vienna Admission</span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
@@ -330,11 +308,11 @@ function Index() {
                 </p>
                 <p>
                   The volume of competitors is not even the hardest part. The real difficulty is
-                  buried in the structural rules the university uses to break the field. Your
-                  child gets less than a minute per statement to scan a dense English passage or
-                  work through a data-sufficiency style problem entirely in their head. And at WU
-                  Vienna a wrong answer does not just score zero. The computer actively subtracts
-                  points from what the student got right elsewhere.
+                  buried in the structural rules the university uses to break the field. Your child
+                  gets less than a minute per statement to scan a dense English passage or work
+                  through a data-sufficiency style problem entirely in their head. And at WU Vienna
+                  a wrong answer does not just score zero. The computer actively subtracts points
+                  from what the student got right elsewhere.
                 </p>
               </div>
 
@@ -368,9 +346,6 @@ function Index() {
             </div>
           </div>
         </section>
-
-
-
 
         {/* PARALLAX BAND #2 */}
         <section
@@ -418,7 +393,10 @@ function Index() {
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
-              <span className="inline-flex h-2.5 w-2.5 rounded-full" style={{ background: "linear-gradient(135deg,#E85D3A,#3B82F6 50%,#2DD4A8)" }} />
+              <span
+                className="inline-flex h-2.5 w-2.5 rounded-full"
+                style={{ background: "linear-gradient(135deg,#E85D3A,#3B82F6 50%,#2DD4A8)" }}
+              />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
               </span>
@@ -450,9 +428,7 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
         </button>
       </div>
       <div className="mt-8">
-        <p className="font-display text-sm font-semibold text-foreground">
-          {report.name}
-        </p>
+        <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
         <div
           className="mt-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1"
           style={{ borderColor: "rgba(232,93,58,0.35)", backgroundColor: "rgba(232,93,58,0.10)" }}
@@ -461,7 +437,11 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
             {report.badge}
           </span>
           {report.fire && (
-            <Flame className="h-3.5 w-3.5" style={{ fill: "#D97706", color: "#D97706" }} aria-hidden />
+            <Flame
+              className="h-3.5 w-3.5"
+              style={{ fill: "#D97706", color: "#D97706" }}
+              aria-hidden
+            />
           )}
         </div>
       </div>
@@ -521,7 +501,7 @@ function RingMetric({
           requestAnimationFrame(tick);
         }
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     observer.observe(el);
@@ -564,28 +544,23 @@ function RingMetric({
     "Z",
   ].join(" ");
 
-  const displayValue = decimals > 0
-    ? `${animatedNumber.toFixed(decimals)}${suffix}`
-    : `${Math.round(animatedNumber)}${suffix}`;
+  const displayValue =
+    decimals > 0
+      ? `${animatedNumber.toFixed(decimals)}${suffix}`
+      : `${Math.round(animatedNumber)}${suffix}`;
 
   return (
     <div
       ref={containerRef}
       className={cn(
         "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
-        glow && "why-us-glow why-us-pulse"
+        glow && "why-us-glow why-us-pulse",
       )}
     >
       <div className="relative h-44 w-44">
         <svg className="h-full w-full" viewBox="0 0 180 180">
-          <path
-            d={fullCircle}
-            className="fill-white/15"
-          />
-          <path
-            d={filledPath}
-            className={cn("ring-animate-fill", "fill-caramel-deep")}
-          />
+          <path d={fullCircle} className="fill-white/15" />
+          <path d={filledPath} className={cn("ring-animate-fill", "fill-caramel-deep")} />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
           <span
@@ -593,7 +568,7 @@ function RingMetric({
               "font-display font-bold tabular-nums tracking-tight leading-none",
               // scale so long values like "41.3%" fit inside the inner circle
               displayValue.length >= 5 ? "text-2xl sm:text-3xl" : "text-3xl sm:text-4xl",
-              isAccent ? "text-caramel-deep" : "text-primary-foreground/60"
+              isAccent ? "text-caramel-deep" : "text-primary-foreground/60",
             )}
           >
             {displayValue}
@@ -674,7 +649,7 @@ function WhyUsSlider() {
               "h-2 rounded-full transition-all duration-300",
               active === i
                 ? "w-8 bg-caramel-deep"
-                : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50"
+                : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50",
             )}
           />
         ))}
@@ -707,68 +682,71 @@ function WhyUsSlider() {
             transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
           }}
         >
-
-        {/* Slide 01 — Acceptance Rate */}
-        <WhySlide index="01" title="Acceptance Rate">
-          <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
-            <RingMetric
-              value="8%"
-              label="Official WU Vienna BBE Acceptance Rate"
-              sublabel="(Average Applicant Pool)"
-              variant="muted"
-              percent={0.08}
-            />
-            <RingMetric
-              value="41.3%"
-              label="BBE-School Acceptance Rate"
-              sublabel="57 out of 138 prepared students successfully admitted last year"
-              variant="accent"
-              percent={0.413}
-              glow
-            />
-          </div>
-          <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
-            Our students achieve a success rate{" "}
-            <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-            applicant pool.
-          </p>
-        </WhySlide>
-
-        {/* Slide 02 — Capital Preservation */}
-        <WhySlide index="02" title="Capital Preservation">
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-            <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-              Private tutors in Vienna charge <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
-              textbook slides with you — that is a financial black hole. Furthermore, top-tier
-              university education at WU Vienna costs literally <span className="text-caramel-deep">10 times less</span> in tuition
-              than comparable business schools in the UK or US, making it the highest ROI
-              investment in your future. A single one-time investment in our platform saves you
-              thousands of euros in useless prep costs, protecting your path to an incredibly
-              affordable, world-class degree. Failing the exam means losing a{" "}
-              <span className="font-semibold text-primary-foreground">€100,000 financial advantage</span>.
+          {/* Slide 01 — Acceptance Rate */}
+          <WhySlide index="01" title="Acceptance Rate">
+            <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
+              <RingMetric
+                value="8%"
+                label="Official WU Vienna BBE Acceptance Rate"
+                sublabel="(Average Applicant Pool)"
+                variant="muted"
+                percent={0.08}
+              />
+              <RingMetric
+                value="41.3%"
+                label="BBE-School Acceptance Rate"
+                sublabel="57 out of 138 prepared students successfully admitted last year"
+                variant="accent"
+                percent={0.413}
+                glow
+              />
+            </div>
+            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+              Our students achieve a success rate{" "}
+              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+              applicant pool.
             </p>
-            <CapitalBars />
-          </div>
-        </WhySlide>
+          </WhySlide>
 
-        {/* Slide 03 — Top-Tier Career Outcomes */}
-        <WhySlide index="03" title="Top-Tier Career Outcomes">
-          <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
-            WU Vienna is a premier target university for the world's elite firms, but only for
-            the <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just the first filter. By training
-            your brain to handle brutal exam pressure now, you build the raw analytical stamina
-            required to later survive intense recruitment cycles and secure elite international
-            career placements. BBE alumni consistently secure top-tier offers across global
-            financial and consulting hubs.
-          </p>
-          <PlacementsTicker />
-        </WhySlide>
+          {/* Slide 02 — Capital Preservation */}
+          <WhySlide index="02" title="Capital Preservation">
+            <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+              <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+                Private tutors in Vienna charge{" "}
+                <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                textbook slides with you — that is a financial black hole. Furthermore, top-tier
+                university education at WU Vienna costs literally{" "}
+                <span className="text-caramel-deep">10 times less</span> in tuition than comparable
+                business schools in the UK or US, making it the highest ROI investment in your
+                future. A single one-time investment in our platform saves you thousands of euros in
+                useless prep costs, protecting your path to an incredibly affordable, world-class
+                degree. Failing the exam means losing a{" "}
+                <span className="font-semibold text-primary-foreground">
+                  €100,000 financial advantage
+                </span>
+                .
+              </p>
+              <CapitalBars />
+            </div>
+          </WhySlide>
+
+          {/* Slide 03 — Top-Tier Career Outcomes */}
+          <WhySlide index="03" title="Top-Tier Career Outcomes">
+            <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+              WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
+              <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
+              the first filter. By training your brain to handle brutal exam pressure now, you build
+              the raw analytical stamina required to later survive intense recruitment cycles and
+              secure elite international career placements. BBE alumni consistently secure top-tier
+              offers across global financial and consulting hubs.
+            </p>
+            <PlacementsTicker />
+          </WhySlide>
         </div>
       </div>
     </div>
   );
 }
-
 
 function WhySlide({
   index,
@@ -782,7 +760,6 @@ function WhySlide({
   return (
     <section className="relative flex w-full min-w-full flex-none items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
       <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
-
         <div className="mb-8 flex items-start gap-5 sm:items-center">
           <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
             {index}
@@ -799,7 +776,6 @@ function WhySlide({
     </section>
   );
 }
-
 
 function CapitalBars() {
   const ref = useRef<HTMLDivElement>(null);
@@ -824,7 +800,7 @@ function CapitalBars() {
           requestAnimationFrame(tick);
         }
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -835,10 +811,7 @@ function CapitalBars() {
   const wuHeight = maxH * 0.11 * progress;
 
   return (
-    <div
-      ref={ref}
-      className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8"
-    >
+    <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8">
       <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
         Total tuition · 3 years
       </p>
@@ -937,11 +910,7 @@ function PlacementsTicker() {
   );
 }
 
-
-
-
 const reports = [
-
   {
     id: 1,
     name: "Igor, Kiev",

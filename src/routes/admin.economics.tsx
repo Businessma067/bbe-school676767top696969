@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
+import { AuthNav } from "@/components/AuthNav";
 import { Loader2, ChevronLeft, Check } from "lucide-react";
 
 export const Route = createFileRoute("/admin/economics")({
@@ -75,7 +76,10 @@ function Shell({ children }: { children: React.ReactNode }) {
           <Link to="/" className="flex items-center gap-2 text-sm font-semibold hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> Home
           </Link>
-          <span className="font-display text-sm font-bold tracking-tight">Admin · Economics</span>
+          <div className="flex items-center gap-3">
+            <span className="font-display text-sm font-bold tracking-tight">Admin · Economics</span>
+            <AuthNav />
+          </div>
         </div>
       </header>
       <main className="mx-auto max-w-4xl px-6 py-10 lg:px-8">{children}</main>

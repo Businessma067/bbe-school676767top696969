@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/accordion";
 import { CompareTable } from "@/components/CompareTable";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
-
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
@@ -51,7 +51,6 @@ const fullStats = [
   { value: "2000+", label: "Tasks" },
   { value: "7", label: "Mock Exams", sub: "All features" },
 ];
-
 
 const features = [
   {
@@ -99,7 +98,6 @@ const failureReasons = [
   "They run out of time, because they have never practiced under real timing constraints across all three subjects.",
   "They study alone, with no way to check whether their understanding is actually correct until it is too late.",
 ];
-
 
 const fullCourseFaqs = [
   {
@@ -216,31 +214,17 @@ function CtaButton({ label = "Unlock Full Access" }: { label?: string }) {
 function FullCourseProduct() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">
-                BBE
-              </span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">
-                BBE School
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                WU Vienna · Prep
-              </span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="px-6 py-10 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl">
@@ -290,7 +274,6 @@ function FullCourseProduct() {
 
           {/* Price + CTA */}
           <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
-
             <div>
               <div className="text-xs font-medium uppercase tracking-widest text-taupe">
                 One-time payment
@@ -351,8 +334,8 @@ function FullCourseProduct() {
             </h2>
 
             <p className="text-base leading-relaxed text-muted-foreground">
-              Every year, most applicants walk into the WU BBE entrance exam and walk out disappointed.
-              Not because they did not study, but because they studied the wrong way.
+              Every year, most applicants walk into the WU BBE entrance exam and walk out
+              disappointed. Not because they did not study, but because they studied the wrong way.
             </p>
 
             <h3 className="mt-8 font-display text-lg font-semibold text-foreground">
@@ -377,41 +360,43 @@ function FullCourseProduct() {
             </h3>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              There is a pattern behind who gets into WU's Business &amp; Economics program. It is rarely
-              about who worked hardest, and almost always about who prepared the smart way, early
-              enough for it to actually stick. This course exists to close that gap.
+              There is a pattern behind who gets into WU's Business &amp; Economics program. It is
+              rarely about who worked hardest, and almost always about who prepared the smart way,
+              early enough for it to actually stick. This course exists to close that gap.
             </p>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Most applicants do not fail because they did not study. They fail because they trained on
-              the wrong kind of questions, ones that do not match how the real exam actually tries to
-              trip you up. The WU BBE entrance exam is not built to test whether you memorized facts, it
-              is built to catch people who think they understand a concept but have not actually
-              internalized it. That is exactly the gap this course is designed to close, question by
-              question.
+              Most applicants do not fail because they did not study. They fail because they trained
+              on the wrong kind of questions, ones that do not match how the real exam actually
+              tries to trip you up. The WU BBE entrance exam is not built to test whether you
+              memorized facts, it is built to catch people who think they understand a concept but
+              have not actually internalized it. That is exactly the gap this course is designed to
+              close, question by question.
             </p>
 
             <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
               <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
               <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
-                "The WU BBE entrance exam is not built to test whether you memorized facts. It is built
-                to catch people who think they understand a concept but have not actually internalized it."
+                "The WU BBE entrance exam is not built to test whether you memorized facts. It is
+                built to catch people who think they understand a concept but have not actually
+                internalized it."
               </p>
             </blockquote>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Every practice task here is built to mirror that exact logic: confident, plausible
-              sounding statements that are quietly false, the same trap structure you will meet on exam
-              day. By the time you are sitting in the real exam room, nothing about the format catches
-              you off guard, because you have already trained against it hundreds of times.
+              sounding statements that are quietly false, the same trap structure you will meet on
+              exam day. By the time you are sitting in the real exam room, nothing about the format
+              catches you off guard, because you have already trained against it hundreds of times.
             </p>
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              One more thing we noticed: the applicants who got the most out of preparation were not the
-              ones who passively worked through tasks. They were the ones who asked questions when
-              something did not click, and pushed until they actually understood why. That is why direct
-              support is not an afterthought here. Every question you ask gets a real, detailed answer,
-              because a half understood concept on exam day is the same as not knowing it at all.
+              One more thing we noticed: the applicants who got the most out of preparation were not
+              the ones who passively worked through tasks. They were the ones who asked questions
+              when something did not click, and pushed until they actually understood why. That is
+              why direct support is not an afterthought here. Every question you ask gets a real,
+              detailed answer, because a half understood concept on exam day is the same as not
+              knowing it at all.
             </p>
 
             <h4 className="mt-8 font-display text-lg font-semibold text-foreground">
@@ -448,12 +433,11 @@ function FullCourseProduct() {
             </ul>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              This course is not a repackaged classroom lecture series. It is a living system: a growing
-              question bank, real explanations, timed simulations, and a community of people going
-              through the exact same thing you are. Put in the work, use the tools, and give yourself
-              the preparation that actually matches what the exam demands.
+              This course is not a repackaged classroom lecture series. It is a living system: a
+              growing question bank, real explanations, timed simulations, and a community of people
+              going through the exact same thing you are. Put in the work, use the tools, and give
+              yourself the preparation that actually matches what the exam demands.
             </p>
-
 
             <div
               className="mt-10 rounded-2xl border p-6 text-center"
@@ -485,9 +469,9 @@ function FullCourseProduct() {
                   How much time it takes
                 </h2>
                 <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
-                  Start preparing early, and even one relaxed hour a day is enough to reach the
-                  top. No cramming. No all-nighters. Just steady, focused progress that compounds
-                  into real confidence by exam day.
+                  Start preparing early, and even one relaxed hour a day is enough to reach the top.
+                  No cramming. No all-nighters. Just steady, focused progress that compounds into
+                  real confidence by exam day.
                 </p>
               </div>
               <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-background px-5 py-3">
@@ -501,11 +485,14 @@ function FullCourseProduct() {
             </div>
           </section>
 
-          <CompareTable highlight="full" heading="How the Full Course stacks up" subheading="Everything unlocked, side by side with the lighter options." />
+          <CompareTable
+            highlight="full"
+            heading="How the Full Course stacks up"
+            subheading="Everything unlocked, side by side with the lighter options."
+          />
 
           {/* FAQ */}
           <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
-
             <div className="mx-auto max-w-3xl">
               <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
                 Questions & Answers

@@ -13,15 +13,22 @@ import slide2 from "@/assets/demo-slide-2.png.asset.json";
 import slide3 from "@/assets/demo-slide-3.png.asset.json";
 import slide4 from "@/assets/demo-slide-4.png.asset.json";
 import slide5 from "@/assets/demo-slide-5.png.asset.json";
-
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/demo-practice")({
   head: () => ({
     meta: [
       { title: "Demo-Practice Package — BBE School" },
-      { name: "description", content: "Free trial: 50+ baseline WU BBE exam cases across three subjects with step-by-step explanations." },
+      {
+        name: "description",
+        content:
+          "Free trial: 50+ baseline WU BBE exam cases across three subjects with step-by-step explanations.",
+      },
       { property: "og:title", content: "Demo-Practice Package — BBE School" },
-      { property: "og:description", content: "Free trial with 50+ baseline cases across three subjects." },
+      {
+        property: "og:description",
+        content: "Free trial with 50+ baseline cases across three subjects.",
+      },
       { property: "og:image", content: slide1.url },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -98,25 +105,17 @@ function DemoPracticeProduct() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">BBE School</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="px-6 py-10 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-3xl">
@@ -193,7 +192,9 @@ function DemoPracticeProduct() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">100+</span>
-                <span className="mt-1 text-xs font-medium text-muted-foreground">Practice tasks</span>
+                <span className="mt-1 text-xs font-medium text-muted-foreground">
+                  Practice tasks
+                </span>
               </div>
               <div className="flex flex-col items-center">
                 <span className="font-display text-2xl font-bold text-foreground">✓</span>
@@ -253,7 +254,6 @@ function DemoPracticeProduct() {
             </p>
           </section>
 
-
           <section className="mt-10">
             <h2 className="mb-5 text-center font-display text-xl font-semibold tracking-tight text-foreground">
               What You Will Master
@@ -264,7 +264,8 @@ function DemoPracticeProduct() {
                   Format Familiarization
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Master the specific True/False logic and partial points system utilized by the university examiners.
+                  Master the specific True/False logic and partial points system utilized by the
+                  university examiners.
                 </p>
               </div>
               <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
@@ -272,7 +273,8 @@ function DemoPracticeProduct() {
                   Baseline Evaluation
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Test your current knowledge across core pillars of Economics, Math, and English in under 30 minutes.
+                  Test your current knowledge across core pillars of Economics, Math, and English in
+                  under 30 minutes.
                 </p>
               </div>
               <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
@@ -280,7 +282,8 @@ function DemoPracticeProduct() {
                   Tactical Review
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Access point-by-point logical breakdowns under each task to see exactly where your reasoning fails.
+                  Access point-by-point logical breakdowns under each task to see exactly where your
+                  reasoning fails.
                 </p>
               </div>
             </div>
@@ -291,7 +294,11 @@ function DemoPracticeProduct() {
             <h2 className="mb-6 text-center font-display text-xl font-semibold tracking-tight text-foreground">
               Frequently Asked Questions — Demo-Practice
             </h2>
-            <Accordion type="single" collapsible className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+            <Accordion
+              type="single"
+              collapsible
+              className="rounded-2xl border border-border bg-card p-4 shadow-sm"
+            >
               {demoFaqs.map((faq, index) => (
                 <AccordionItem
                   key={index}
@@ -313,6 +320,5 @@ function DemoPracticeProduct() {
         </div>
       </main>
     </div>
-
   );
 }

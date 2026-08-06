@@ -4,6 +4,7 @@ import hallAsset from "@/assets/parents-hall.jpg.asset.json";
 import clockAsset from "@/assets/parents-clock.jpg.asset.json";
 import moneyAsset from "@/assets/parents-money.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/parents")({
   head: () => ({
@@ -14,7 +15,10 @@ export const Route = createFileRoute("/parents")({
         content:
           "An honest breakdown for parents: the true structural cost of the WU Vienna BBE entrance exam, the €60,000+ backup-plan trap, and how a €359 simulator becomes financial insurance.",
       },
-      { property: "og:title", content: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission" },
+      {
+        property: "og:title",
+        content: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission",
+      },
       {
         property: "og:description",
         content:
@@ -22,8 +26,14 @@ export const Route = createFileRoute("/parents")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}` },
-      { name: "twitter:image", content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}` },
+      {
+        property: "og:image",
+        content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}`,
+      },
+      {
+        name: "twitter:image",
+        content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}`,
+      },
     ],
   }),
   component: ParentsPage,
@@ -32,25 +42,17 @@ export const Route = createFileRoute("/parents")({
 function ParentsPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">BBE School</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-5xl"
+        actions={
           <Link
             to="/"
             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             <ArrowLeft className="h-3.5 w-3.5" /> Back
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       {/* Hero */}
       <section
@@ -67,7 +69,8 @@ function ParentsPage() {
             An open letter to parents
           </span>
           <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            A Frank Audit for Parents:<br />
+            A Frank Audit for Parents:
+            <br />
             <span className="text-[#F0A64D]">The Real Cost of WU Vienna Admission</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
@@ -80,16 +83,18 @@ function ParentsPage() {
         {/* Section 1 */}
         <article className="prose-neutral">
           <div className="mb-4 flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">01</span>
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">
+              01
+            </span>
             <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               This is not a regular school test
             </h2>
           </div>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-            The mandatory in-person BBE entrance test at WU Vienna is closer to a
-            filtering conveyor than to a classroom exam. Imagine a huge convention hall, more than
-            3000 applicants from across the world, echoing announcements, and exactly 240 seats on
-            the other side of the door. That is over 12 candidates competing for a single desk.
+            The mandatory in-person BBE entrance test at WU Vienna is closer to a filtering conveyor
+            than to a classroom exam. Imagine a huge convention hall, more than 3000 applicants from
+            across the world, echoing announcements, and exactly 240 seats on the other side of the
+            door. That is over 12 candidates competing for a single desk.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             The volume of competitors is not the hardest part. The real difficulty is buried in the
@@ -99,25 +104,25 @@ function ParentsPage() {
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">A brutal time constraint.</strong>{" "}
-                Your child gets less than a minute per statement to scan a dense English passage
-                or work through a data-sufficiency style problem entirely in their head.
+                <strong className="font-semibold">A brutal time constraint.</strong> Your child gets
+                less than a minute per statement to scan a dense English passage or work through a
+                data-sufficiency style problem entirely in their head.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E85D3A]" />
               <span>
-                <strong className="font-semibold">A penalty-marking system.</strong>{" "}
-                At WU Vienna a wrong answer does not just score zero. The computer actively
-                subtracts points from what the student got right elsewhere.
+                <strong className="font-semibold">A penalty-marking system.</strong> At WU Vienna a
+                wrong answer does not just score zero. The computer actively subtracts points from
+                what the student got right elsewhere.
               </span>
             </li>
           </ul>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             If a candidate panics under the clock and starts guessing blindly, a strong paper can
             collapse to zero in minutes. That is why straight-A students with expensive private
-            tutors still fail here every single year. They were never taught how to manage the
-            clock and the penalty system at the same time.
+            tutors still fail here every single year. They were never taught how to manage the clock
+            and the penalty system at the same time.
           </p>
         </article>
 
@@ -137,7 +142,9 @@ function ParentsPage() {
         {/* Section 2 */}
         <article>
           <div className="mb-4 flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">02</span>
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">
+              02
+            </span>
             <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               The price of a mistake: minus €60,000 from the family budget
             </h2>
@@ -150,23 +157,32 @@ function ParentsPage() {
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#C2643A]">Scenario A</span>
-              <h3 className="mt-2 font-display text-lg font-semibold text-foreground">Private business school</h3>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#C2643A]">
+                Scenario A
+              </span>
+              <h3 className="mt-2 font-display text-lg font-semibold text-foreground">
+                Private business school
+              </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Enrolling in a private institution in the EU or UK (Frankfurt School and similar)
                 typically means around €20,000 per year in tuition. Across a 3-year Bachelor cycle
-                that is a direct <strong className="font-semibold text-foreground">€60,000 cash drain</strong> from the
-                parents.
+                that is a direct{" "}
+                <strong className="font-semibold text-foreground">€60,000 cash drain</strong> from
+                the parents.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#C2643A]">Scenario B</span>
-              <h3 className="mt-2 font-display text-lg font-semibold text-foreground">The foundation year trap</h3>
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#C2643A]">
+                Scenario B
+              </span>
+              <h3 className="mt-2 font-display text-lg font-semibold text-foreground">
+                The foundation year trap
+              </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 A mandatory preparatory year means throwing 1 to 2 extra years of your child's life
                 into limbo. Add European rent, food, pocket money and a delayed career start, and
-                you are looking at another <strong className="font-semibold text-foreground">€25,000+</strong> of
-                liquid loss.
+                you are looking at another{" "}
+                <strong className="font-semibold text-foreground">€25,000+</strong> of liquid loss.
               </p>
             </div>
           </div>
@@ -193,7 +209,9 @@ function ParentsPage() {
         {/* Section 3 */}
         <article>
           <div className="mb-4 flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">03</span>
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-background">
+              03
+            </span>
             <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               How we hack the system
             </h2>
@@ -202,7 +220,8 @@ function ParentsPage() {
             We do not copy-paste dry economics textbooks at your child. The person who built this
             platform sat through the exact WU Vienna exam, finished 24th, and felt the weight of
             every penalty mark on their own answer sheet. Out of that experience came an interactive
-            exam simulator that costs <strong className="font-semibold text-foreground">€359 for the Full BBE Course</strong>.
+            exam simulator that costs{" "}
+            <strong className="font-semibold text-foreground">€359 for the Full BBE Course</strong>.
             It is not an educational expense. It is a direct financial insurance policy against
             burning €60,000+ later.
           </p>
@@ -234,12 +253,14 @@ function ParentsPage() {
           </div>
 
           <div className="mt-10 rounded-2xl border border-[#C2643A]/30 bg-gradient-to-br from-[#fff7f0] to-[#ffe9d6] p-6 shadow-sm sm:p-8">
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#C2643A]">The bottom line</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#C2643A]">
+              The bottom line
+            </p>
             <p className="mt-3 text-base leading-relaxed text-foreground sm:text-lg">
               You can rely on standard school knowledge and possibly burn €60,000+ on private
-              tuition or a lost foundation year. Or you can invest <strong>€359</strong> into a specialized
-              simulator that teaches your child how to survive the actual WU Vienna constraints
-              and secure a seat on a free, world-class program. The choice is yours.
+              tuition or a lost foundation year. Or you can invest <strong>€359</strong> into a
+              specialized simulator that teaches your child how to survive the actual WU Vienna
+              constraints and secure a seat on a free, world-class program. The choice is yours.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link

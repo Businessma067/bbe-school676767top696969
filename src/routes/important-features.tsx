@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/important-features")({
   head: () => ({
@@ -43,31 +44,17 @@ const features: Feature[] = [
 function ImportantFeaturesPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none tracking-tight text-primary-foreground">
-                BBE
-              </span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">
-                BBE School
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                WU Vienna · Prep
-              </span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Home
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="mx-auto max-w-5xl px-6 py-12 lg:px-8 lg:py-16">
         <div className="mb-10 max-w-2xl">
@@ -97,7 +84,6 @@ function FeatureCard({ feature }: { feature: Feature }) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md sm:flex-row">
       <AnswerSheetPreviewFill className="h-64 shrink-0 sm:h-72 sm:w-[42%]" />
-
 
       <div className="flex flex-1 flex-col gap-3 p-5">
         <h2 className="font-display text-lg font-bold tracking-tight text-foreground">

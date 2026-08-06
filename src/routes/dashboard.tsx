@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { AuthNav } from "@/components/AuthNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -16,18 +16,10 @@ import {
   type SubjectStats,
   type TaskAttempt,
 } from "@/lib/user-progress";
-import {
-  fetchCustomMocks,
-} from "@/lib/custom-mock-builder/client";
+import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
-import {
-  displayTitleForCustomMock,
-  isCustomExamId,
-} from "@/config/custom-mock-builder";
-import {
-  fetchSessionAnswerStats,
-  type SessionAnswerStat,
-} from "@/lib/study-progress";
+import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
+import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import {
   BookOpen,
@@ -159,7 +151,9 @@ function DashboardPage() {
               {initial}
             </div>
             <div className="flex-1">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Dashboard</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">
+                Dashboard
+              </p>
               <h1 className="mt-0.5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 Welcome back, {auth.name}
               </h1>
@@ -195,9 +189,15 @@ function DashboardPage() {
           </div>
 
           <div className="mt-6 flex gap-2 sm:hidden">
-            <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>Courses</MobileTab>
-            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>Mock Exams</MobileTab>
-            <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>Custom</MobileTab>
+            <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>
+              Courses
+            </MobileTab>
+            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>
+              Mock Exams
+            </MobileTab>
+            <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
+              Custom
+            </MobileTab>
           </div>
 
           <div className="mt-8">
@@ -248,7 +248,9 @@ function CoursesTab({
   const overallAccuracy = totalAttempted ? Math.round((totalPassed / totalAttempted) * 100) : 0;
 
   const enrolledSlugs = new Set(enrollments.map((e) => e.product_slug));
-  const available = (Object.keys(COURSE_CATALOG) as CourseSlug[]).filter((s) => !enrolledSlugs.has(s));
+  const available = (Object.keys(COURSE_CATALOG) as CourseSlug[]).filter(
+    (s) => !enrolledSlugs.has(s),
+  );
 
   return (
     <div className="space-y-8">
@@ -279,7 +281,9 @@ function CoursesTab({
                   <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
                     <div
                       className="h-full bg-caramel-deep"
-                      style={{ width: `${overallAccuracy && totalAttempted ? Math.min(100, Math.round((totalPassed / Math.max(totalAttempted, 1)) * 100)) : 0}%` }}
+                      style={{
+                        width: `${overallAccuracy && totalAttempted ? Math.min(100, Math.round((totalPassed / Math.max(totalAttempted, 1)) * 100)) : 0}%`,
+                      }}
                     />
                   </div>
                   <span className="shrink-0 text-xs font-semibold text-muted-foreground">
@@ -287,7 +291,7 @@ function CoursesTab({
                   </span>
                 </div>
                 <Link
-                  to={COURSE_CATALOG[(e.product_slug as CourseSlug)]?.href ?? "/products"}
+                  to={COURSE_CATALOG[e.product_slug as CourseSlug]?.href ?? "/products"}
                   className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
                 >
                   Continue
@@ -305,13 +309,21 @@ function CoursesTab({
             {available.map((slug) => (
               <Link
                 key={slug}
-                to={slug === "demo-practice" ? "/products/demo-practice" : slug === "lite-bbe-course" ? "/products/lite-bbe-course" : "/products/full-course"}
+                to={
+                  slug === "demo-practice"
+                    ? "/products/demo-practice"
+                    : slug === "lite-bbe-course"
+                      ? "/products/lite-bbe-course"
+                      : "/products/full-course"
+                }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
                   {COURSE_CATALOG[slug].tier} access
                 </p>
-                <h3 className="mt-1 font-display text-base font-bold">{COURSE_CATALOG[slug].name}</h3>
+                <h3 className="mt-1 font-display text-base font-bold">
+                  {COURSE_CATALOG[slug].name}
+                </h3>
                 <p className="mt-2 text-xs font-semibold text-caramel-deep">View course →</p>
               </Link>
             ))}
@@ -321,9 +333,24 @@ function CoursesTab({
 
       {/* Summary */}
       <div className="grid gap-3 sm:grid-cols-3">
-        <StatPill icon={<Target className="h-4 w-4 text-caramel-deep" />} label="Tasks attempted" value={`${totalAttempted}`} sub={`${totalPassed} passed`} />
-        <StatPill icon={<TrendingUp className="h-4 w-4 text-caramel-deep" />} label="Accuracy" value={`${overallAccuracy}%`} sub="across all subjects" />
-        <StatPill icon={<Flame className="h-4 w-4 text-caramel-deep" />} label="Current streak" value={`${streak} ${streak === 1 ? "day" : "days"}`} sub="days with activity" />
+        <StatPill
+          icon={<Target className="h-4 w-4 text-caramel-deep" />}
+          label="Tasks attempted"
+          value={`${totalAttempted}`}
+          sub={`${totalPassed} passed`}
+        />
+        <StatPill
+          icon={<TrendingUp className="h-4 w-4 text-caramel-deep" />}
+          label="Accuracy"
+          value={`${overallAccuracy}%`}
+          sub="across all subjects"
+        />
+        <StatPill
+          icon={<Flame className="h-4 w-4 text-caramel-deep" />}
+          label="Current streak"
+          value={`${streak} ${streak === 1 ? "day" : "days"}`}
+          sub="days with activity"
+        />
       </div>
 
       {stats.length === 0 ? (
@@ -340,12 +367,24 @@ function CoursesTab({
   );
 }
 
-function StatPill({ icon, label, value, sub }: { icon: React.ReactNode; label: string; value: string; sub?: string }) {
+function StatPill({
+  icon,
+  label,
+  value,
+  sub,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  sub?: string;
+}) {
   return (
     <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-sm">
       <div className="grid h-9 w-9 place-items-center rounded-lg bg-secondary">{icon}</div>
       <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {label}
+        </p>
         <p className="font-display text-xl font-bold leading-tight">{value}</p>
         {sub && <p className="text-xs text-muted-foreground">{sub}</p>}
       </div>
@@ -416,9 +455,19 @@ function ProgressRing({ pct, stroke }: { pct: number; stroke: string }) {
   return (
     <div className="relative h-20 w-20 shrink-0">
       <svg viewBox="0 0 80 80" className="h-20 w-20 -rotate-90">
-        <circle cx="40" cy="40" r={r} stroke="currentColor" className="text-secondary" strokeWidth="8" fill="none" />
         <circle
-          cx="40" cy="40" r={r}
+          cx="40"
+          cy="40"
+          r={r}
+          stroke="currentColor"
+          className="text-secondary"
+          strokeWidth="8"
+          fill="none"
+        />
+        <circle
+          cx="40"
+          cy="40"
+          r={r}
           stroke={stroke}
           strokeWidth="8"
           fill="none"
@@ -438,7 +487,9 @@ function ProgressRing({ pct, stroke }: { pct: number; stroke: string }) {
 function MiniStat({ label, value }: { label: string; value: number | string }) {
   return (
     <div className="min-w-[88px]">
-      <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+      <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+        {label}
+      </p>
       <p className="font-display text-lg font-bold">{value}</p>
     </div>
   );
@@ -476,8 +527,8 @@ function CustomMocksTab({
       <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
         <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
         <p className="text-sm text-muted-foreground">
-          No custom mocks yet. Generate Economics mocks from Full Course material by book subtopic — they appear
-          here with scores after you finish.
+          No custom mocks yet. Generate Economics mocks from Full Course material by book subtopic —
+          they appear here with scores after you finish.
         </p>
         <Link
           to="/products/custom-mock-builder"
@@ -513,8 +564,9 @@ function CustomMocksTab({
             icon={<Trophy className="h-5 w-5 text-caramel-deep" />}
             label="Best custom score"
             value={`${Math.round(
-              (Math.max(...sortedAttempts.map((a) => a.points_earned / Math.max(1, a.points_total))) *
-                100),
+              Math.max(
+                ...sortedAttempts.map((a) => a.points_earned / Math.max(1, a.points_total)),
+              ) * 100,
             )}%`}
             sub={`${sortedAttempts.length} completed attempt${sortedAttempts.length > 1 ? "s" : ""}`}
           />
@@ -553,16 +605,12 @@ function CustomMocksTab({
                 {customMocks.map((mock) => {
                   const examAttempts = attemptsByExam.get(mock.examId) ?? [];
                   const best = examAttempts[0]
-                    ? examAttempts.reduce((a, b) =>
-                        a.points_earned >= b.points_earned ? a : b,
-                      )
+                    ? examAttempts.reduce((a, b) => (a.points_earned >= b.points_earned ? a : b))
                     : null;
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">
-                        <p className="font-medium">
-                          {displayTitleForCustomMock(mock)}
-                        </p>
+                        <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
                         <p className="text-xs text-muted-foreground">
                           Ch. {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
                           {mock.durationMinutes} min
@@ -708,12 +756,26 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
       </section>
 
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <h3 className="font-display text-lg font-bold tracking-tight">Average points per subject</h3>
-        <p className="mt-1 text-sm text-muted-foreground">Across {mocks.length} completed mock{mocks.length > 1 ? "s" : ""}</p>
+        <h3 className="font-display text-lg font-bold tracking-tight">
+          Average points per subject
+        </h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Across {mocks.length} completed mock{mocks.length > 1 ? "s" : ""}
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <SubjectAvg name="Economics" points={avg("economics")} max={64} color={SUBJECT_COLORS.economics} />
+          <SubjectAvg
+            name="Economics"
+            points={avg("economics")}
+            max={64}
+            color={SUBJECT_COLORS.economics}
+          />
           <SubjectAvg name="Math" points={avg("math")} max={62.4} color={SUBJECT_COLORS.math} />
-          <SubjectAvg name="English" points={avg("english")} max={33.6} color={SUBJECT_COLORS.english} />
+          <SubjectAvg
+            name="English"
+            points={avg("english")}
+            max={33.6}
+            color={SUBJECT_COLORS.english}
+          />
         </div>
       </section>
 
@@ -764,12 +826,24 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
   );
 }
 
-function HighlightCard({ icon, label, value, sub }: { icon: React.ReactNode; label: string; value: string; sub: string }) {
+function HighlightCard({
+  icon,
+  label,
+  value,
+  sub,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  sub: string;
+}) {
   return (
     <div className="rounded-2xl border border-caramel-deep/30 bg-gradient-to-br from-caramel-deep/10 to-transparent p-5 shadow-sm">
       <div className="flex items-center gap-2">
         {icon}
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {label}
+        </p>
       </div>
       <p className="mt-2 font-display text-4xl font-bold tracking-tight">{value}</p>
       <p className="mt-1 text-xs text-muted-foreground">{sub}</p>
@@ -777,16 +851,31 @@ function HighlightCard({ icon, label, value, sub }: { icon: React.ReactNode; lab
   );
 }
 
-function SubjectAvg({ name, points, max, color }: { name: string; points: number; max: number; color: string }) {
+function SubjectAvg({
+  name,
+  points,
+  max,
+  color,
+}: {
+  name: string;
+  points: number;
+  max: number;
+  color: string;
+}) {
   const pct = Math.round((points / max) * 100);
   return (
     <div className="rounded-xl border border-border bg-background p-4">
       <div className="flex items-baseline justify-between">
         <p className="text-sm font-semibold">{name}</p>
-        <p className="font-display text-xl font-bold">{points}/{max}</p>
+        <p className="font-display text-xl font-bold">
+          {points}/{max}
+        </p>
       </div>
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-secondary">
-        <div className="h-full" style={{ width: Math.min(100, pct) + "%", backgroundColor: color }} />
+        <div
+          className="h-full"
+          style={{ width: Math.min(100, pct) + "%", backgroundColor: color }}
+        />
       </div>
     </div>
   );
@@ -809,7 +898,9 @@ function TrendChart({ mocks }: { mocks: MockAttempt[] }) {
     return { x, y, m };
   });
 
-  const path = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+  const path = points
+    .map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`)
+    .join(" ");
   const area =
     points.length > 0
       ? `${path} L${points[points.length - 1].x},${PAD_T + ih} L${points[0].x},${PAD_T + ih} Z`
@@ -818,22 +909,56 @@ function TrendChart({ mocks }: { mocks: MockAttempt[] }) {
 
   return (
     <div className="w-full overflow-x-auto">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[560px]" role="img" aria-label="Mock score trend">
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        className="w-full min-w-[560px]"
+        role="img"
+        aria-label="Mock score trend"
+      >
         {yTicks.map((t) => {
           const y = PAD_T + ih - (t / 100) * ih;
           return (
             <g key={t}>
-              <line x1={PAD_L} y1={y} x2={W - PAD_R} y2={y} stroke="currentColor" className="text-border" strokeDasharray="2 4" />
-              <text x={PAD_L - 6} y={y + 3} textAnchor="end" className="fill-muted-foreground" fontSize="10">{t}</text>
+              <line
+                x1={PAD_L}
+                y1={y}
+                x2={W - PAD_R}
+                y2={y}
+                stroke="currentColor"
+                className="text-border"
+                strokeDasharray="2 4"
+              />
+              <text
+                x={PAD_L - 6}
+                y={y + 3}
+                textAnchor="end"
+                className="fill-muted-foreground"
+                fontSize="10"
+              >
+                {t}
+              </text>
             </g>
           );
         })}
         {area && <path d={area} fill="#c8763a" opacity="0.12" />}
-        <path d={path} fill="none" stroke="#c8763a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d={path}
+          fill="none"
+          stroke="#c8763a"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         {points.map((p) => (
           <g key={p.m.id}>
             <circle cx={p.x} cy={p.y} r={4} fill="#c8763a" />
-            <text x={p.x} y={H - 10} textAnchor="middle" className="fill-muted-foreground" fontSize="10">
+            <text
+              x={p.x}
+              y={H - 10}
+              textAnchor="middle"
+              className="fill-muted-foreground"
+              fontSize="10"
+            >
               {shortDate(p.m.completed_at)}
             </text>
           </g>
@@ -844,7 +969,11 @@ function TrendChart({ mocks }: { mocks: MockAttempt[] }) {
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+  return new Date(iso).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
 }
 function shortDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
@@ -853,15 +982,25 @@ function shortDate(iso: string) {
 /* -------------------- SHELL -------------------- */
 
 function SideItem({
-  icon, label, active, onClick,
-}: { icon: React.ReactNode; label: string; active: boolean; onClick: () => void }) {
+  icon,
+  label,
+  active,
+  onClick,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
       className={
         "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold transition-colors " +
-        (active ? "bg-primary text-primary-foreground shadow-sm" : "text-foreground hover:bg-secondary")
+        (active
+          ? "bg-primary text-primary-foreground shadow-sm"
+          : "text-foreground hover:bg-secondary")
       }
     >
       {icon}
@@ -870,14 +1009,24 @@ function SideItem({
   );
 }
 
-function MobileTab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+function MobileTab({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
       className={
         "flex-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
-        (active ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:bg-secondary")
+        (active
+          ? "border-primary bg-primary text-primary-foreground"
+          : "border-border bg-card text-foreground hover:bg-secondary")
       }
     >
       {children}
@@ -888,17 +1037,7 @@ function MobileTab({ active, onClick, children }: { active: boolean; onClick: ()
 function Shell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
-              <span className="font-display text-xs font-bold leading-none tracking-tight text-primary-foreground">BBE</span>
-            </div>
-            <span className="font-display text-sm font-bold tracking-tight">BBE School</span>
-          </Link>
-          <AuthNav />
-        </div>
-      </header>
+      <SiteHeader compact maxWidthClassName="max-w-7xl" />
       <div className="mx-auto max-w-7xl">{children}</div>
     </div>
   );

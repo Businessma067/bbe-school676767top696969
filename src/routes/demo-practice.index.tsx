@@ -2,14 +2,21 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
     meta: [
       { title: "Demo Practice — BBE School" },
-      { name: "description", content: "Try 50+ demo tasks in Economics, Math, and English for the WU BBE exam." },
+      {
+        name: "description",
+        content: "Try 50+ demo tasks in Economics, Math, and English for the WU BBE exam.",
+      },
       { property: "og:title", content: "Demo Practice — BBE School" },
-      { property: "og:description", content: "Try 50+ demo tasks in Economics, Math, and English for the WU BBE exam." },
+      {
+        property: "og:description",
+        content: "Try 50+ demo tasks in Economics, Math, and English for the WU BBE exam.",
+      },
     ],
   }),
   component: DemoPractice,
@@ -48,32 +55,26 @@ const subjects = [
 function DemoPractice() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">BBE School</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU Vienna · Prep</span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="px-6 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              <span className="text-xs font-medium tracking-wide text-taupe">50+ tasks for start</span>
+              <span className="text-xs font-medium tracking-wide text-taupe">
+                50+ tasks for start
+              </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Demo Practice
@@ -119,16 +120,24 @@ function DemoPractice() {
                   </p>
                   {s.id === "economics" || s.id === "english" ? (
                     <Link
-                      to={s.id === "economics" ? "/demo-practice/economics" : "/demo-practice/english"}
+                      to={
+                        s.id === "economics" ? "/demo-practice/economics" : "/demo-practice/english"
+                      }
                       className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
+                      style={{
+                        backgroundColor: s.accent,
+                        boxShadow: `0 4px 14px -4px ${s.accent}80`,
+                      }}
                     >
                       Go to tasks →
                     </Link>
                   ) : (
                     <button
                       className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-90 shadow-sm transition-all hover:brightness-110"
-                      style={{ backgroundColor: s.accent, boxShadow: `0 4px 14px -4px ${s.accent}80` }}
+                      style={{
+                        backgroundColor: s.accent,
+                        boxShadow: `0 4px 14px -4px ${s.accent}80`,
+                      }}
                     >
                       Go to tasks →
                     </button>
