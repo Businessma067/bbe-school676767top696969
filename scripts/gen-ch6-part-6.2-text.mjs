@@ -559,6 +559,7 @@ function cfTableCase(slot, idx) {
     : Math.max(5000, div - sc.financing);
   // Reconstruct financing so:fin = -div + borrow
   const fin = -div + borrow;
+  const finCell = fin < 0 ? `(${Math.abs(fin)})` : String(fin);
   const context = `Consider the following cash flow statement extract (€) for a ${biz}.
 
 | Item | Amount |
@@ -567,7 +568,7 @@ function cfTableCase(slot, idx) {
 | Cash flow from investing activities | (${sc.investing}) |
 | Dividends paid | (${div}) |
 | Proceeds from new borrowing | ${borrow} |
-| Cash flow from financing activities | ${fin} |
+| Cash flow from financing activities | ${finCell} |
 
 Evaluate the following economic assertions:`;
 
@@ -665,8 +666,8 @@ Evaluate the following economic assertions:`;
     },
     {
       t: fin <= 0,
-      s: `Cash flow from financing activities is not positive; it is ${fin} euros.`,
-      e: `Financing cash flow is ${fin}.`,
+      s: `Cash flow from financing activities is not positive; it is (${Math.abs(fin)}) euros.`,
+      e: `Financing cash flow is (${Math.abs(fin)}).`,
     },
   ];
 

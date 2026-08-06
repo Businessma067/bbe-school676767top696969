@@ -130,6 +130,9 @@ export function validateAndWrite(cases, slots, outPath) {
     ) {
       issues.push(`${c.case_id} pre-summed cash-flow total row`);
     }
+    if (/Cash flow from/.test(c.context) && /\|\s*-\d/.test(c.context)) {
+      issues.push(`${c.case_id} leading-minus cash-flow cell`);
+    }
     if (banned.test(blob)) issues.push(`${c.case_id} banned phrase: ${(blob.match(banned) || [])[0]}`);
     if (ABBREV.test(blob)) issues.push(`${c.case_id} abbreviation`);
     if (/\bon cash-flow extract\s+\d+/i.test(blob) || /\bextract\s+\d+\s+for a\b/i.test(blob)) {

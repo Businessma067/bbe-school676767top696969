@@ -15,6 +15,13 @@ export function fmt(n) {
   return Number(n).toLocaleString("en-GB");
 }
 
+/** Cash-flow table cell: outflows as (amount), never a leading minus. */
+export function fmtCf(n) {
+  const v = Number(n);
+  if (v < 0) return `(${fmt(Math.abs(v))})`;
+  return fmt(v);
+}
+
 export function hashSeed(s) {
   let h = 2166136261;
   for (let i = 0; i < s.length; i++) {
@@ -287,11 +294,11 @@ export function genCf2y(rng) {
 
 export function cfTable2y({ y1, y2 }) {
   return md2year("Item (€ thousands)", [
-    ["Cash flow from operating activities", y1.op, y2.op],
-    ["Cash flow from investing activities", `(${Math.abs(y1.inv)})`, `(${Math.abs(y2.inv)})`],
-    ["Dividends paid", `(${y1.div})`, `(${y2.div})`],
-    ["Proceeds from new borrowing", y1.borrow, y2.borrow],
-    ["Cash flow from financing activities", y1.fin, y2.fin],
+    ["Cash flow from operating activities", fmtCf(y1.op), fmtCf(y2.op)],
+    ["Cash flow from investing activities", fmtCf(y1.inv), fmtCf(y2.inv)],
+    ["Dividends paid", fmtCf(-Math.abs(y1.div)), fmtCf(-Math.abs(y2.div))],
+    ["Proceeds from new borrowing", fmtCf(y1.borrow), fmtCf(y2.borrow)],
+    ["Cash flow from financing activities", fmtCf(y1.fin), fmtCf(y2.fin)],
   ]);
 }
 
@@ -483,13 +490,16 @@ export function validateTableCase(c) {
   if (/\(see the extract prepared for case/i.test(blob)) {
     throw new Error(`case cross-ref hint in ${c.case_id}`);
   }
-  // Never pre-sum the cash-flow table (students compute net change themselves).
+  // Never pre-sum a cash-flow total; never show outflows with a leading minus — always (amount).
   if (
     /\|?\s*Net change in cash and cash equivalents\s*\|/i.test(c.context) ||
     /\|?\s*Change in cash and cash equivalents\s*\|/i.test(c.context) ||
     /\|?\s*Cash and cash equivalents at end of the year\s*\|/i.test(c.context)
   ) {
     throw new Error(`pre-summed cash-flow total row in ${c.case_id}`);
+  }
+  if (/Cash flow from/.test(c.context) && /\|\s*-\d/.test(c.context)) {
+    throw new Error(`leading-minus cash-flow cell in ${c.case_id}`);
   }
   if (!/Evaluate the following economic assertions:\s*$/.test(c.context.trim())) {
     throw new Error(`bad context end ${c.case_id}`);

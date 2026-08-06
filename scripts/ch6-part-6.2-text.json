@@ -93,7 +93,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.009",
     "title": "Cash Flow From Operating Activities",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 30800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (13100) |\n| Proceeds from new borrowing | 8360 |\n| Cash flow from financing activities | -4740 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 30800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (13100) |\n| Proceeds from new borrowing | 8360 |\n| Cash flow from financing activities | (4740) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this hotel chain, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this hotel chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
@@ -273,7 +273,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.018",
     "title": "Net Change in Cash and Cash Equivalents",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 40400 |\n| Cash flow from investing activities | (25200) |\n| Dividends paid | (23300) |\n| Proceeds from new borrowing | 17480 |\n| Cash flow from financing activities | -5820 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 40400 |\n| Cash flow from investing activities | (25200) |\n| Dividends paid | (23300) |\n| Proceeds from new borrowing | 17480 |\n| Cash flow from financing activities | (5820) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this printing company, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this printing company, the dividends paid line of (23300) euros belongs in investing activities.",
@@ -453,7 +453,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.032",
     "title": "Profit Raises Equity",
-    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (36000) |\n| Dividends paid | (11500) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -6500 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (36000) |\n| Dividends paid | (11500) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | (6500) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this fitness club chain, the dividends paid line of (11500) euros belongs in investing activities.",
       "For this fitness club chain, dividends paid to shareholders sit in financing activities, not operating activities.",
@@ -633,7 +633,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.046",
     "title": "Courier Van Fleet Cash Outflow",
-    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (46800) |\n| Dividends paid | (21700) |\n| Proceeds from new borrowing | 13720 |\n| Cash flow from financing activities | -7980 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (46800) |\n| Dividends paid | (21700) |\n| Proceeds from new borrowing | 13720 |\n| Cash flow from financing activities | (7980) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this catering company, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this catering company, the dividends paid line of (21700) euros belongs in investing activities.",
@@ -813,7 +813,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.066",
     "title": "Brewery Investing Cash Flow",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 69200 |\n| Cash flow from investing activities | (57600) |\n| Dividends paid | (9900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -4900 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 69200 |\n| Cash flow from investing activities | (57600) |\n| Dividends paid | (9900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | (4900) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this hotel chain, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this hotel chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
@@ -993,7 +993,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.079",
     "title": "Understanding the Three Cash Flow Sections",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 78800 |\n| Cash flow from investing activities | (68400) |\n| Dividends paid | (20100) |\n| Proceeds from new borrowing | 9960 |\n| Cash flow from financing activities | -10140 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 78800 |\n| Cash flow from investing activities | (68400) |\n| Dividends paid | (20100) |\n| Proceeds from new borrowing | 9960 |\n| Cash flow from financing activities | (10140) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this printing company, the dividends paid line of (20100) euros belongs in investing activities.",
       "For this printing company, dividends paid to shareholders sit in financing activities, not operating activities.",
@@ -1173,7 +1173,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.098",
     "title": "Reading a Statement of Profit and Loss",
-    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 88400 |\n| Cash flow from investing activities | (79200) |\n| Dividends paid | (8300) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -3300 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 88400 |\n| Cash flow from investing activities | (79200) |\n| Dividends paid | (8300) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | (3300) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this fitness club chain, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this fitness club chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
@@ -1353,7 +1353,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.122",
     "title": "Balance Sheet Versus Income Statement",
-    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (90000) |\n| Dividends paid | (18500) |\n| Proceeds from new borrowing | 6200 |\n| Cash flow from financing activities | -12300 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (90000) |\n| Dividends paid | (18500) |\n| Proceeds from new borrowing | 6200 |\n| Cash flow from financing activities | (12300) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this catering company, the dividends paid line of (18500) euros belongs in investing activities.",
       "For this catering company, the investing outflow of 90,000 euros means the business must be failing.",
@@ -1533,7 +1533,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.129",
     "title": "Equity Movements From Profit",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 107600 |\n| Cash flow from investing activities | (100800) |\n| Dividends paid | (28700) |\n| Proceeds from new borrowing | 15320 |\n| Cash flow from financing activities | -13380 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 107600 |\n| Cash flow from investing activities | (100800) |\n| Dividends paid | (28700) |\n| Proceeds from new borrowing | 15320 |\n| Cash flow from financing activities | (13380) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this hotel chain, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this hotel chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
@@ -1713,7 +1713,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.144",
     "title": "Straight-Line Charges Across Useful Life",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 117200 |\n| Cash flow from investing activities | (111600) |\n| Dividends paid | (16900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -11900 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 117200 |\n| Cash flow from investing activities | (111600) |\n| Dividends paid | (16900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | (11900) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "For this printing company, dividends paid to shareholders sit in financing activities, not operating activities.",
       "For this printing company, the dividends paid line of (16900) euros belongs in investing activities.",

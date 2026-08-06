@@ -6,7 +6,7 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=291 | Investing=-246\nYear 2 | Operating=324 | Investing=-362\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 291 | 324 |\n| Cash flow from investing activities | (246) | (362) |\n| Dividends paid | (57) | (73) |\n| Proceeds from new borrowing | 77 | 53 |\n| Cash flow from financing activities | 20 | -20 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=291 | Investing=-246\nYear 2 | Operating=324 | Investing=-362\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 291 | 324 |\n| Cash flow from investing activities | (246) | (362) |\n| Dividends paid | (57) | (73) |\n| Proceeds from new borrowing | 77 | 53 |\n| Cash flow from financing activities | 20 | (20) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
       "Investing cash flow is an outflow in both years.",
@@ -96,7 +96,7 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=314 | Investing=-347\nYear 2 | Operating=359 | Investing=-299\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 359 |\n| Cash flow from investing activities | (347) | (299) |\n| Dividends paid | (39) | (56) |\n| Proceeds from new borrowing | 60 | 50 |\n| Cash flow from financing activities | 21 | -6 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=314 | Investing=-347\nYear 2 | Operating=359 | Investing=-299\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 359 |\n| Cash flow from investing activities | (347) | (299) |\n| Dividends paid | (39) | (56) |\n| Proceeds from new borrowing | 60 | 50 |\n| Cash flow from financing activities | 21 | (6) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A negative cash flow from investing activities always proves the business is in financial trouble.",
       "Cash flow from operating activities grew by more than 13.7% from Year 1 to Year 2.",
@@ -156,7 +156,7 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=367 | Investing=-242\nYear 2 | Operating=397 | Investing=-285\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 367 | 397 |\n| Cash flow from investing activities | (242) | (285) |\n| Dividends paid | (41) | (65) |\n| Proceeds from new borrowing | 61 | 35 |\n| Cash flow from financing activities | 20 | -30 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=367 | Investing=-242\nYear 2 | Operating=397 | Investing=-285\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 367 | 397 |\n| Cash flow from investing activities | (242) | (285) |\n| Dividends paid | (41) | (65) |\n| Proceeds from new borrowing | 61 | 35 |\n| Cash flow from financing activities | 20 | (30) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 11.7% from Year 1 to Year 2.",
       "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow statement.",
@@ -546,7 +546,7 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=325 | Investing=-254\nYear 2 | Operating=367 | Investing=-321\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 325 | 367 |\n| Cash flow from investing activities | (254) | (321) |\n| Dividends paid | (70) | (92) |\n| Proceeds from new borrowing | 96 | 63 |\n| Cash flow from financing activities | 26 | -29 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=325 | Investing=-254\nYear 2 | Operating=367 | Investing=-321\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 325 | 367 |\n| Cash flow from investing activities | (254) | (321) |\n| Dividends paid | (70) | (92) |\n| Proceeds from new borrowing | 96 | 63 |\n| Cash flow from financing activities | 26 | (29) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 24.7% from Year 1 to Year 2.",
       "Purchase of office equipment for cash is classified as an operating cash outflow.",
@@ -606,7 +606,7 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=391 | Investing=-317\nYear 2 | Operating=441 | Investing=-368\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 391 | 441 |\n| Cash flow from investing activities | (317) | (368) |\n| Dividends paid | (50) | (57) |\n| Proceeds from new borrowing | 86 | 53 |\n| Cash flow from financing activities | 36 | -4 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=391 | Investing=-317\nYear 2 | Operating=441 | Investing=-368\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 391 | 441 |\n| Cash flow from investing activities | (317) | (368) |\n| Dividends paid | (50) | (57) |\n| Proceeds from new borrowing | 86 | 53 |\n| Cash flow from financing activities | 36 | (4) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 7.2% between Year 1 and Year 2.",
       "The income statement reports assets, liabilities and equity on a single reporting date.",
@@ -696,7 +696,7 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=305 | Investing=-346\nYear 2 | Operating=354 | Investing=-392\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | -50 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=305 | Investing=-346\nYear 2 | Operating=354 | Investing=-392\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
       "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
@@ -756,7 +756,7 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=398 | Investing=-253\nYear 2 | Operating=427 | Investing=-291\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 398 | 427 |\n| Cash flow from investing activities | (253) | (291) |\n| Dividends paid | (48) | (53) |\n| Proceeds from new borrowing | 75 | 50 |\n| Cash flow from financing activities | 27 | -3 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=398 | Investing=-253\nYear 2 | Operating=427 | Investing=-291\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 398 | 427 |\n| Cash flow from investing activities | (253) | (291) |\n| Dividends paid | (48) | (53) |\n| Proceeds from new borrowing | 75 | 50 |\n| Cash flow from financing activities | 27 | (3) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "A positive cash flow is not identical with a profit, because profit includes non-cash charges and accruals that cash flow does not.",
       "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.",
@@ -846,7 +846,7 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=321 | Investing=-276\nYear 2 | Operating=388 | Investing=-348\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 321 | 388 |\n| Cash flow from investing activities | (276) | (348) |\n| Dividends paid | (53) | (63) |\n| Proceeds from new borrowing | 86 | 56 |\n| Cash flow from financing activities | 33 | -7 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=321 | Investing=-276\nYear 2 | Operating=388 | Investing=-348\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 321 | 388 |\n| Cash flow from investing activities | (276) | (348) |\n| Dividends paid | (53) | (63) |\n| Proceeds from new borrowing | 86 | 56 |\n| Cash flow from financing activities | 33 | (7) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Customer collections of receivables are classified as financing cash inflows.",
       "Cash flow from operating activities grew by more than 12.6% from Year 1 to Year 2.",
@@ -906,7 +906,7 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=316 | Investing=-249\nYear 2 | Operating=347 | Investing=-340\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 316 | 347 |\n| Cash flow from investing activities | (249) | (340) |\n| Dividends paid | (58) | (76) |\n| Proceeds from new borrowing | 97 | 63 |\n| Cash flow from financing activities | 39 | -13 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=316 | Investing=-249\nYear 2 | Operating=347 | Investing=-340\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 316 | 347 |\n| Cash flow from investing activities | (249) | (340) |\n| Dividends paid | (58) | (76) |\n| Proceeds from new borrowing | 97 | 63 |\n| Cash flow from financing activities | 39 | (13) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 7.5% between Year 1 and Year 2.",
       "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow statement.",
@@ -996,7 +996,7 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=373 | Investing=-258\nYear 2 | Operating=434 | Investing=-308\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 373 | 434 |\n| Cash flow from investing activities | (258) | (308) |\n| Dividends paid | (36) | (42) |\n| Proceeds from new borrowing | 63 | 31 |\n| Cash flow from financing activities | 27 | -11 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=373 | Investing=-258\nYear 2 | Operating=434 | Investing=-308\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 373 | 434 |\n| Cash flow from investing activities | (258) | (308) |\n| Dividends paid | (36) | (42) |\n| Proceeds from new borrowing | 63 | 31 |\n| Cash flow from financing activities | 27 | (11) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 26.3% from Year 1 to Year 2.",
       "If revenues exceed costs and expenses, the company has a profit; if costs and expenses exceed revenue, it suffers a loss.",
@@ -1296,7 +1296,7 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=392 | Investing=-277\nYear 2 | Operating=451 | Investing=-293\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 392 | 451 |\n| Cash flow from investing activities | (277) | (293) |\n| Dividends paid | (45) | (57) |\n| Proceeds from new borrowing | 50 | 20 |\n| Cash flow from financing activities | 5 | -37 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=392 | Investing=-277\nYear 2 | Operating=451 | Investing=-293\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 392 | 451 |\n| Cash flow from investing activities | (277) | (293) |\n| Dividends paid | (45) | (57) |\n| Proceeds from new borrowing | 50 | 20 |\n| Cash flow from financing activities | 5 | (37) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 29.8% from Year 1 to Year 2.",
       "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.",
@@ -1356,7 +1356,7 @@
     "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=297 | Investing=-354\nYear 2 | Operating=336 | Investing=-416\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 297 | 336 |\n| Cash flow from investing activities | (354) | (416) |\n| Dividends paid | (58) | (73) |\n| Proceeds from new borrowing | 80 | 56 |\n| Cash flow from financing activities | 22 | -17 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=297 | Investing=-354\nYear 2 | Operating=336 | Investing=-416\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 297 | 336 |\n| Cash flow from investing activities | (354) | (416) |\n| Dividends paid | (58) | (73) |\n| Proceeds from new borrowing | 80 | 56 |\n| Cash flow from financing activities | 22 | (17) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 8% from Year 1 to Year 2.",
       "Customer collections of receivables are classified as financing cash inflows.",
@@ -1446,7 +1446,7 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=314 | Investing=-360\nYear 2 | Operating=380 | Investing=-370\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 380 |\n| Cash flow from investing activities | (360) | (370) |\n| Dividends paid | (69) | (92) |\n| Proceeds from new borrowing | 62 | 54 |\n| Cash flow from financing activities | -7 | -38 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=314 | Investing=-360\nYear 2 | Operating=380 | Investing=-370\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 380 |\n| Cash flow from investing activities | (360) | (370) |\n| Dividends paid | (69) | (92) |\n| Proceeds from new borrowing | 62 | 54 |\n| Cash flow from financing activities | (7) | (38) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 10.6% from Year 1 to Year 2.",
       "Profit for the year is reported in the income statement and increases retained earnings on the balance sheet, but it does not appear as a separate line item in the cash flow statement, which instead records actual cash inflows and outflows.",
@@ -1506,7 +1506,7 @@
     "difficulty_level": "4/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=282 | Investing=-359\nYear 2 | Operating=324 | Investing=-305\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 282 | 324 |\n| Cash flow from investing activities | (359) | (305) |\n| Dividends paid | (47) | (69) |\n| Proceeds from new borrowing | 77 | 61 |\n| Cash flow from financing activities | 30 | -8 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=282 | Investing=-359\nYear 2 | Operating=324 | Investing=-305\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 282 | 324 |\n| Cash flow from investing activities | (359) | (305) |\n| Dividends paid | (47) | (69) |\n| Proceeds from new borrowing | 77 | 61 |\n| Cash flow from financing activities | 30 | (8) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
       "A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets.",
@@ -1596,7 +1596,7 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=318 | Investing=-315\nYear 2 | Operating=348 | Investing=-285\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 318 | 348 |\n| Cash flow from investing activities | (315) | (285) |\n| Dividends paid | (68) | (77) |\n| Proceeds from new borrowing | 87 | 50 |\n| Cash flow from financing activities | 19 | -27 |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=318 | Investing=-315\nYear 2 | Operating=348 | Investing=-285\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 318 | 348 |\n| Cash flow from investing activities | (315) | (285) |\n| Dividends paid | (68) | (77) |\n| Proceeds from new borrowing | 87 | 50 |\n| Cash flow from financing activities | 19 | (27) |\n\nEvaluate the following economic assertions:",
     "statements": [
       "Cash flow from operating activities grew by more than 8.4% between Year 1 and Year 2.",
       "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.",
