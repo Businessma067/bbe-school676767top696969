@@ -10,7 +10,7 @@ export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
   3: 50,
   4: 50,
   5: 100,
-  6: 10,
+  6: 150,
 };
 
 export const DEFAULT_QUESTION_CAP = 50;

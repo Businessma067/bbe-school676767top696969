@@ -1,0 +1,2252 @@
+[
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.01",
+    "title": "Four Lenses of Financial Analysis",
+    "context": "Review the four broad purposes of financial statement analysis: liquidity, profitability, financial efficiency and financial structure. Evaluate the following economic assertions:",
+    "statements": [
+      "Working capital for a supermarket chain is calculated by subtracting current liabilities from current assets.",
+      "A supermarket chain with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a supermarket chain includes inventory in current assets before dividing by current liabilities.",
+      "A single return on capital employed figure for a supermarket chain is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a supermarket chain is calculated using only the cash balance rather than total equity."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The standard working capital definition applies to a supermarket chain: current assets minus current liabilities.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.02",
+    "title": "Liquidity and Solvency",
+    "context": "Analyze why ratio results should be interpreted alongside industry context or a business's own history. Evaluate the following economic assertions:",
+    "statements": [
+      "A supermarket chain should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "Inventory turnover for a supermarket chain is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "A higher inventory turnover at a supermarket chain always means more money is tied up in stock for longer periods.",
+      "If a supermarket chain takes out a short-term loan, working capital always rises because cash increases.",
+      "The current ratio and acid-test ratio for a supermarket chain always produce identical results regardless of inventory levels."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a supermarket chain because it leaves a cushion after meeting short-term obligations.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.03",
+    "title": "Working Capital Defined",
+    "context": "Consider a listed manufacturer whose shareholders compare its return on equity with sector peers. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio of a supermarket chain compares total current assets with total current liabilities.",
+      "Asset turnover for a supermarket chain compares profit before interest and tax with average total assets.",
+      "When interpreting return on capital employed for a supermarket chain, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a supermarket chain relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a supermarket chain relates revenue to the average total assets employed during the year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio analysis for a supermarket chain uses the current assets to current liabilities relationship.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "TRUE — Return on capital employed for a supermarket chain is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a supermarket chain.",
+      "TRUE — Asset turnover measures how much revenue a supermarket chain generates per unit of average assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.04",
+    "title": "Positive Working Capital Preference",
+    "context": "Analyze why positive working capital is generally preferred to negative working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Working capital for a consulting firm is calculated by subtracting current assets from current liabilities.",
+      "The equity ratio for a supermarket chain shows what proportion of total assets is financed by equity.",
+      "A consulting firm with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a consulting firm includes inventory in current assets before dividing by current liabilities.",
+      "A consulting firm should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "TRUE — Equity ratio analysis for a supermarket chain expresses equity as a share of total assets.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "TRUE — Positive working capital is generally desirable for a consulting firm because it leaves a cushion after meeting short-term obligations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.05",
+    "title": "Current Ratio Explained",
+    "context": "Review how the current ratio compares current assets with current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio of a consulting firm compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a consulting firm, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a consulting firm relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a consulting firm relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a consulting firm shows what proportion of total assets is financed by equity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio analysis for a consulting firm uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a consulting firm is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a consulting firm.",
+      "TRUE — Asset turnover measures how much revenue a consulting firm generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a consulting firm expresses equity as a share of total assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.06",
+    "title": "Ideal Current Ratio Range",
+    "context": "Analyze why a current ratio between one and a half and two is often described as a comfortable range. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a consulting firm shows what proportion of total assets is financed by liabilities.",
+      "A single return on capital employed figure for a consulting firm is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a consulting firm is calculated using only the cash balance rather than total equity.",
+      "Inventory turnover for a consulting firm is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "A higher inventory turnover at a consulting firm always means more money is tied up in stock for longer periods."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a consulting firm expresses total liabilities relative to total assets.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.07",
+    "title": "Acid-Test Ratio Without Inventory",
+    "context": "Consider a wholesaler that raised a short-term overdraft to pay suppliers and is reviewing the effect on working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "If a consulting firm takes out a short-term loan, working capital always rises because cash increases.",
+      "Working capital for a manufacturer is calculated by subtracting current liabilities from current assets.",
+      "The current ratio and acid-test ratio for a consulting firm always produce identical results regardless of inventory levels.",
+      "Asset turnover for a consulting firm compares profit before interest and tax with average total assets.",
+      "A manufacturer with negative working capital always has more cash than it needs for daily operations."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — The standard working capital definition applies to a manufacturer: current assets minus current liabilities.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.08",
+    "title": "Stricter Liquidity Testing",
+    "context": "Analyze why the acid-test ratio is a stricter liquidity test than the current ratio for inventory-heavy businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "A manufacturer should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The acid-test ratio for a manufacturer includes inventory in current assets before dividing by current liabilities.",
+      "The current ratio of a manufacturer compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a manufacturer, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a manufacturer relates profit before interest and tax to the equity shown on the balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a manufacturer because it leaves a cushion after meeting short-term obligations.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "TRUE — Current ratio analysis for a manufacturer uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a manufacturer is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a manufacturer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.09",
+    "title": "Short-Term Borrowing Effects",
+    "context": "Review how short-term borrowing can increase cash but also raise current liabilities and reduce working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Asset turnover for a manufacturer relates revenue to the average total assets employed during the year.",
+      "A single return on capital employed figure for a manufacturer is always meaningful without comparing it to other years or similar firms.",
+      "The equity ratio for a manufacturer shows what proportion of total assets is financed by equity.",
+      "Working capital for a construction group is calculated by subtracting current liabilities from current assets.",
+      "A construction group should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Asset turnover measures how much revenue a manufacturer generates per unit of average assets.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "TRUE — Equity ratio analysis for a manufacturer expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a construction group: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a construction group because it leaves a cushion after meeting short-term obligations."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.10",
+    "title": "Sustainable Working Capital Improvement",
+    "context": "Analyze why improving working capital sustainably may require more equity or long-term finance rather than repeated short-term loans. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio of a construction group compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a construction group, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a construction group relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a construction group relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a construction group shows what proportion of total assets is financed by equity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio analysis for a construction group uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a construction group is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a construction group.",
+      "TRUE — Asset turnover measures how much revenue a construction group generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a construction group expresses equity as a share of total assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.11",
+    "title": "Return on Equity Concept",
+    "context": "Consider a family-owned bakery comparing this year's profitability ratios with its own figures from five years ago. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a construction group shows what proportion of total assets is financed by liabilities.",
+      "Return on equity for a manufacturer is calculated using only the cash balance rather than total equity.",
+      "Working capital for a fashion retailer is calculated by subtracting current liabilities from current assets.",
+      "A fashion retailer should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a fashion retailer compares total current assets with total current liabilities."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a construction group expresses total liabilities relative to total assets.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "TRUE — The standard working capital definition applies to a fashion retailer: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a fashion retailer because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a fashion retailer uses the current assets to current liabilities relationship."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.12",
+    "title": "Return on Capital Employed Concept",
+    "context": "Analyze how return on capital employed relates profit before interest and tax to capital employed. Evaluate the following economic assertions:",
+    "statements": [
+      "When interpreting return on capital employed for a fashion retailer, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a fashion retailer relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a fashion retailer relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a fashion retailer shows what proportion of total assets is financed by equity.",
+      "Inventory turnover for a manufacturer is calculated by dividing revenue by average inventory rather than using cost of sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Return on capital employed for a fashion retailer is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a fashion retailer.",
+      "TRUE — Asset turnover measures how much revenue a fashion retailer generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a fashion retailer expresses equity as a share of total assets.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.13",
+    "title": "Capital Employed Approximation",
+    "context": "Review how capital employed can be approximated as equity plus non-current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a fashion retailer shows what proportion of total assets is financed by liabilities.",
+      "Working capital for a utility company is calculated by subtracting current liabilities from current assets.",
+      "A utility company should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a utility company compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a utility company, comparing the figure with similar businesses or with its own past years adds meaning."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a fashion retailer expresses total liabilities relative to total assets.",
+      "TRUE — The standard working capital definition applies to a utility company: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a utility company because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a utility company uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a utility company is most useful comparatively rather than in isolation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.14",
+    "title": "Comparative Return Interpretation",
+    "context": "Analyze why a single return on capital employed figure is most informative when compared over time or with similar firms. Evaluate the following economic assertions:",
+    "statements": [
+      "A higher inventory turnover at a manufacturer always means more money is tied up in stock for longer periods.",
+      "If a manufacturer takes out a short-term loan, working capital always rises because cash increases.",
+      "Return on equity for a utility company relates profit before interest and tax to the equity shown on the balance sheet.",
+      "The current ratio and acid-test ratio for a manufacturer always produce identical results regardless of inventory levels.",
+      "Asset turnover for a manufacturer compares profit before interest and tax with average total assets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a utility company.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.15",
+    "title": "Asset Turnover Measure",
+    "context": "Consider a transport fleet owner reviewing whether revenue growth is matched by efficient use of total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "Working capital for a construction group is calculated by subtracting current assets from current liabilities.",
+      "A construction group with negative working capital always has more cash than it needs for daily operations.",
+      "Asset turnover for a utility company relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a utility company shows what proportion of total assets is financed by equity.",
+      "A wholesaler should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "TRUE — Asset turnover measures how much revenue a utility company generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a utility company expresses equity as a share of total assets.",
+      "TRUE — Positive working capital is generally desirable for a wholesaler because it leaves a cushion after meeting short-term obligations."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.16",
+    "title": "Inventory Turnover Measure",
+    "context": "Analyze how inventory turnover relates cost of sales to average inventory. Evaluate the following economic assertions:",
+    "statements": [
+      "The acid-test ratio for a construction group includes inventory in current assets before dividing by current liabilities.",
+      "The current ratio of a wholesaler compares total current assets with total current liabilities.",
+      "A single return on capital employed figure for a construction group is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a construction group is calculated using only the cash balance rather than total equity.",
+      "When interpreting return on capital employed for a wholesaler, comparing the figure with similar businesses or with its own past years adds meaning."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "TRUE — Current ratio analysis for a wholesaler uses the current assets to current liabilities relationship.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "TRUE — Return on capital employed for a wholesaler is most useful comparatively rather than in isolation."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.17",
+    "title": "High Inventory Turnover Meaning",
+    "context": "Review why a higher inventory turnover generally suggests stock is sold and replaced more quickly. Evaluate the following economic assertions:",
+    "statements": [
+      "Return on equity for a wholesaler relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a wholesaler relates revenue to the average total assets employed during the year.",
+      "Inventory turnover for a construction group is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "The equity ratio for a wholesaler shows what proportion of total assets is financed by equity.",
+      "Working capital for a online retailer is calculated by subtracting current liabilities from current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a wholesaler.",
+      "TRUE — Asset turnover measures how much revenue a wholesaler generates per unit of average assets.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "TRUE — Equity ratio analysis for a wholesaler expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a online retailer: current assets minus current liabilities."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.18",
+    "title": "Retailers Versus Service Firms",
+    "context": "Analyze why retailers often carry more inventory relative to service firms, affecting working capital needs. Evaluate the following economic assertions:",
+    "statements": [
+      "A online retailer should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "A higher inventory turnover at a construction group always means more money is tied up in stock for longer periods.",
+      "If a construction group takes out a short-term loan, working capital always rises because cash increases.",
+      "The current ratio of a online retailer compares total current assets with total current liabilities.",
+      "The current ratio and acid-test ratio for a construction group always produce identical results regardless of inventory levels."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a online retailer because it leaves a cushion after meeting short-term obligations.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Current ratio analysis for a online retailer uses the current assets to current liabilities relationship.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.19",
+    "title": "Equity Ratio Structure",
+    "context": "Consider a cinema chain analysing whether short-term borrowing improved cash but weakened working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Asset turnover for a construction group compares profit before interest and tax with average total assets.",
+      "Working capital for a fashion retailer is calculated by subtracting current assets from current liabilities.",
+      "A fashion retailer with negative working capital always has more cash than it needs for daily operations.",
+      "When interpreting return on capital employed for a online retailer, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a online retailer relates profit before interest and tax to the equity shown on the balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "TRUE — Return on capital employed for a online retailer is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a online retailer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.20",
+    "title": "Debt Ratio Structure",
+    "context": "Analyze how the debt ratio shows total liabilities as a percentage of total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "The acid-test ratio for a fashion retailer includes inventory in current assets before dividing by current liabilities.",
+      "Asset turnover for a online retailer relates revenue to the average total assets employed during the year.",
+      "A single return on capital employed figure for a fashion retailer is always meaningful without comparing it to other years or similar firms.",
+      "The equity ratio for a online retailer shows what proportion of total assets is financed by equity.",
+      "Working capital for a hotel operator is calculated by subtracting current liabilities from current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "TRUE — Asset turnover measures how much revenue a online retailer generates per unit of average assets.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "TRUE — Equity ratio analysis for a online retailer expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a hotel operator: current assets minus current liabilities."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.21",
+    "title": "Profitability Relative to Size",
+    "context": "Review why liquidity analysis focuses on ability to pay short-term obligations on time. Evaluate the following economic assertions:",
+    "statements": [
+      "A hotel operator should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a hotel operator compares total current assets with total current liabilities.",
+      "Return on equity for a fashion retailer is calculated using only the cash balance rather than total equity.",
+      "Inventory turnover for a fashion retailer is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "A higher inventory turnover at a fashion retailer always means more money is tied up in stock for longer periods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a hotel operator because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a hotel operator uses the current assets to current liabilities relationship.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.22",
+    "title": "Financial Efficiency of Assets",
+    "context": "Analyze why profitability analysis relates profit to the size of equity or capital employed. Evaluate the following economic assertions:",
+    "statements": [
+      "If a fashion retailer takes out a short-term loan, working capital always rises because cash increases.",
+      "The current ratio and acid-test ratio for a fashion retailer always produce identical results regardless of inventory levels.",
+      "When interpreting return on capital employed for a hotel operator, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a hotel operator relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a fashion retailer compares profit before interest and tax with average total assets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "TRUE — Return on capital employed for a hotel operator is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a hotel operator.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.23",
+    "title": "Structure Between Equity and Debt",
+    "context": "Consider a highly geared construction group whose lenders focus on its debt ratio and interest cover. Evaluate the following economic assertions:",
+    "statements": [
+      "Working capital for a utility company is calculated by subtracting current assets from current liabilities.",
+      "Asset turnover for a hotel operator relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a hotel operator shows what proportion of total assets is financed by equity.",
+      "A utility company with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a utility company includes inventory in current assets before dividing by current liabilities."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "TRUE — Asset turnover measures how much revenue a hotel operator generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a hotel operator expresses equity as a share of total assets.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.24",
+    "title": "Peer Sector Comparison",
+    "context": "Analyze why financial structure analysis examines the balance between equity and borrowed funds. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a hotel operator shows what proportion of total assets is financed by liabilities.",
+      "Working capital for a pharmaceutical distributor is calculated by subtracting current liabilities from current assets.",
+      "A pharmaceutical distributor should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a pharmaceutical distributor compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a pharmaceutical distributor, comparing the figure with similar businesses or with its own past years adds meaning."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a hotel operator expresses total liabilities relative to total assets.",
+      "TRUE — The standard working capital definition applies to a pharmaceutical distributor: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a pharmaceutical distributor because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a pharmaceutical distributor uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a pharmaceutical distributor is most useful comparatively rather than in isolation."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.25",
+    "title": "Trend Analysis Over Years",
+    "context": "Review how comparing ratios with direct competitors in the same sector improves interpretation. Evaluate the following economic assertions:",
+    "statements": [
+      "A single return on capital employed figure for a utility company is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a utility company is calculated using only the cash balance rather than total equity.",
+      "Inventory turnover for a utility company is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "Return on equity for a pharmaceutical distributor relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a pharmaceutical distributor relates revenue to the average total assets employed during the year."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a pharmaceutical distributor.",
+      "TRUE — Asset turnover measures how much revenue a pharmaceutical distributor generates per unit of average assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.26",
+    "title": "Inventory and Acid-Test Interaction",
+    "context": "Analyze why comparing a business with itself across several years can reveal trends in efficiency or risk. Evaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio for a pharmaceutical distributor shows what proportion of total assets is financed by equity.",
+      "Working capital for a transport operator is calculated by subtracting current liabilities from current assets.",
+      "A transport operator should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a transport operator compares total current assets with total current liabilities.",
+      "A higher inventory turnover at a utility company always means more money is tied up in stock for longer periods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity ratio analysis for a pharmaceutical distributor expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a transport operator: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a transport operator because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a transport operator uses the current assets to current liabilities relationship.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.27",
+    "title": "Working Capital Versus Cash Flow",
+    "context": "Consider an online retailer with rapid sales growth tracking asset turnover relative to its investment base. Evaluate the following economic assertions:",
+    "statements": [
+      "When interpreting return on capital employed for a transport operator, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a transport operator relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a transport operator relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a transport operator shows what proportion of total assets is financed by equity.",
+      "Working capital for a software subscription business is calculated by subtracting current liabilities from current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Return on capital employed for a transport operator is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a transport operator.",
+      "TRUE — Asset turnover measures how much revenue a transport operator generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a transport operator expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a software subscription business: current assets minus current liabilities."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.28",
+    "title": "Trade Credit and Liabilities",
+    "context": "Analyze why working capital problems are related to but not identical to cash flow problems. Evaluate the following economic assertions:",
+    "statements": [
+      "A software subscription business should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "If a utility company takes out a short-term loan, working capital always rises because cash increases.",
+      "The current ratio of a software subscription business compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a software subscription business, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a software subscription business relates profit before interest and tax to the equity shown on the balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a software subscription business because it leaves a cushion after meeting short-term obligations.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Current ratio analysis for a software subscription business uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a software subscription business is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a software subscription business."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.29",
+    "title": "Investor Return Preferences",
+    "context": "Review how trade credit from suppliers increases current liabilities and can reduce working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio and acid-test ratio for a utility company always produce identical results regardless of inventory levels.",
+      "Asset turnover for a utility company compares profit before interest and tax with average total assets.",
+      "Working capital for a wholesaler is calculated by subtracting current assets from current liabilities.",
+      "Asset turnover for a software subscription business relates revenue to the average total assets employed during the year.",
+      "The equity ratio for a software subscription business shows what proportion of total assets is financed by equity."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "TRUE — Asset turnover measures how much revenue a software subscription business generates per unit of average assets.",
+      "TRUE — Equity ratio analysis for a software subscription business expresses equity as a share of total assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.30",
+    "title": "Average Assets in Turnover",
+    "context": "Analyze why investors may prefer a comparatively high return on capital employed within an industry. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a software subscription business shows what proportion of total assets is financed by liabilities.",
+      "Working capital for a medical-device maker is calculated by subtracting current liabilities from current assets.",
+      "A medical-device maker should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "A wholesaler with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a wholesaler includes inventory in current assets before dividing by current liabilities."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a software subscription business expresses total liabilities relative to total assets.",
+      "TRUE — The standard working capital definition applies to a medical-device maker: current assets minus current liabilities.",
+      "TRUE — Positive working capital is generally desirable for a medical-device maker because it leaves a cushion after meeting short-term obligations.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.31",
+    "title": "Average Inventory in Turnover",
+    "context": "Consider a steel producer whose investors demand context before interpreting a single return on capital employed figure. Evaluate the following economic assertions:",
+    "statements": [
+      "A single return on capital employed figure for a wholesaler is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a wholesaler is calculated using only the cash balance rather than total equity.",
+      "The current ratio of a medical-device maker compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a medical-device maker, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a medical-device maker relates profit before interest and tax to the equity shown on the balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "TRUE — Current ratio analysis for a medical-device maker uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a medical-device maker is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a medical-device maker."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.32",
+    "title": "Current Ratio Below One",
+    "context": "Analyze how average inventory smooths beginning and ending stock levels in turnover calculations. Evaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover for a wholesaler is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "Asset turnover for a medical-device maker relates revenue to the average total assets employed during the year.",
+      "A higher inventory turnover at a wholesaler always means more money is tied up in stock for longer periods.",
+      "The equity ratio for a medical-device maker shows what proportion of total assets is financed by equity.",
+      "Working capital for a cinema chain is calculated by subtracting current liabilities from current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "TRUE — Asset turnover measures how much revenue a medical-device maker generates per unit of average assets.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "TRUE — Equity ratio analysis for a medical-device maker expresses equity as a share of total assets.",
+      "TRUE — The standard working capital definition applies to a cinema chain: current assets minus current liabilities."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.33",
+    "title": "Inventory Conversion Risk",
+    "context": "Review why a business with a current ratio below one may struggle to meet short-term debts from current assets alone. Evaluate the following economic assertions:",
+    "statements": [
+      "A cinema chain should normally prefer positive working capital so that current assets exceed current liabilities after short-term debts are considered.",
+      "The current ratio of a cinema chain compares total current assets with total current liabilities.",
+      "When interpreting return on capital employed for a cinema chain, comparing the figure with similar businesses or with its own past years adds meaning.",
+      "Return on equity for a cinema chain relates profit before interest and tax to the equity shown on the balance sheet.",
+      "Asset turnover for a cinema chain relates revenue to the average total assets employed during the year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Positive working capital is generally desirable for a cinema chain because it leaves a cushion after meeting short-term obligations.",
+      "TRUE — Current ratio analysis for a cinema chain uses the current assets to current liabilities relationship.",
+      "TRUE — Return on capital employed for a cinema chain is most useful comparatively rather than in isolation.",
+      "TRUE — Return on equity links owner capital to profit before interest and tax for a cinema chain.",
+      "TRUE — Asset turnover measures how much revenue a cinema chain generates per unit of average assets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.34",
+    "title": "Lender View of Structure",
+    "context": "Analyze why excluding inventory from the acid-test ratio recognises conversion risk. Evaluate the following economic assertions:",
+    "statements": [
+      "If a wholesaler takes out a short-term loan, working capital always rises because cash increases.",
+      "The equity ratio for a cinema chain shows what proportion of total assets is financed by equity.",
+      "Because a supermarket chain holds substantial inventory that may not convert to cash quickly, the acid-test ratio provides a stricter liquidity check than the current ratio.",
+      "A higher inventory turnover at a supermarket chain generally indicates that goods are sold and replaced more quickly, tying up less money in stock.",
+      "The current ratio and acid-test ratio for a wholesaler always produce identical results regardless of inventory levels."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Equity ratio analysis for a cinema chain expresses equity as a share of total assets.",
+      "TRUE — Excluding inventory in the acid-test ratio matters for inventory-heavy businesses such as a supermarket chain.",
+      "TRUE — Rapid stock rotation at a supermarket chain is what a higher inventory turnover signals.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.35",
+    "title": "High Debt and Financial Risk",
+    "context": "Consider a property developer comparing equity ratio trends across two consecutive balance sheet dates. Evaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover for a supermarket chain relates cost of sales to average inventory over the period.",
+      "Because a fashion retailer holds substantial inventory that may not convert to cash quickly, the acid-test ratio provides a stricter liquidity check than the current ratio.",
+      "A higher inventory turnover at a fashion retailer generally indicates that goods are sold and replaced more quickly, tying up less money in stock.",
+      "A consulting firm with little inventory may show a current ratio and acid-test ratio that are closer together than those of an inventory-heavy retailer.",
+      "If a supermarket chain borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Inventory turnover connects purchasing or production cost with average stock levels for a supermarket chain.",
+      "TRUE — Excluding inventory in the acid-test ratio matters for inventory-heavy businesses such as a fashion retailer.",
+      "TRUE — Rapid stock rotation at a fashion retailer is what a higher inventory turnover signals.",
+      "TRUE — Low inventory at a consulting firm narrows the gap between current and acid-test liquidity measures.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a supermarket chain."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.36",
+    "title": "Owners' Return Benchmark",
+    "context": "Analyze why a high debt ratio may accompany higher financial risk for owners. Evaluate the following economic assertions:",
+    "statements": [
+      "Liquidity analysis for a supermarket chain asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a supermarket chain judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Financial structure analysis for a supermarket chain examines how assets are financed between equity and borrowed funds.",
+      "Asset turnover for a wholesaler compares profit before interest and tax with average total assets.",
+      "If a consulting firm borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a supermarket chain.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a supermarket chain.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a supermarket chain.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a consulting firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.37",
+    "title": "Sector-Specific Liquidity Norms",
+    "context": "Review how return on equity highlights profit relative to owners' capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Liquidity analysis for a consulting firm asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a consulting firm judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Working capital for a online retailer is calculated by subtracting current assets from current liabilities.",
+      "Financial structure analysis for a consulting firm examines how assets are financed between equity and borrowed funds.",
+      "A online retailer with negative working capital always has more cash than it needs for daily operations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a consulting firm.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a consulting firm.",
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a consulting firm.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.38",
+    "title": "Asset Turnover and Expansion",
+    "context": "Analyze why service businesses may show different typical current ratios from manufacturers. Evaluate the following economic assertions:",
+    "statements": [
+      "If a manufacturer borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase.",
+      "Liquidity analysis for a manufacturer asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a manufacturer judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Financial structure analysis for a manufacturer examines how assets are financed between equity and borrowed funds.",
+      "A current ratio between one and a half and two is often described as a comfortable liquidity range, though sector norms still matter."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a manufacturer.",
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a manufacturer.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a manufacturer.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a manufacturer.",
+      "TRUE — The one-and-a-half to two band is a common guideline for the current ratio when context is considered."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.39",
+    "title": "Turnover Expressed Per Year",
+    "context": "Consider a supermarket chain with heavy inventory levels reviewing its liquidity ratios before negotiating supplier credit. Evaluate the following economic assertions:",
+    "statements": [
+      "Ratio analysis should combine liquidity, profitability, financial efficiency and financial structure rather than relying on one measure alone.",
+      "Comparing ratio figures with businesses in unrelated industries can mislead because typical structures differ widely.",
+      "Improving working capital at a supermarket chain sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a supermarket chain sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a supermarket chain sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The four analysis purposes complement one another in a full review.",
+      "TRUE — Industry context is essential when benchmarking ratios.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a supermarket chain.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a supermarket chain.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a supermarket chain."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.40",
+    "title": "Ratios Plus Statement Reading",
+    "context": "Analyze why inventory turnover is expressed as times per year in ratio analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "The acid-test ratio for a online retailer includes inventory in current assets before dividing by current liabilities.",
+      "A single return on capital employed figure for a online retailer is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a online retailer is calculated using only the cash balance rather than total equity.",
+      "Improving working capital at a supermarket chain sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Inventory turnover for a online retailer is calculated by dividing revenue by average inventory rather than using cost of sales."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a supermarket chain.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.41",
+    "title": "Profit With Liquidity Squeeze",
+    "context": "Review how liquidity, profitability and structure interact when reading a set of accounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a supermarket chain sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a consulting firm sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "A higher inventory turnover at a online retailer always means more money is tied up in stock for longer periods.",
+      "If a online retailer takes out a short-term loan, working capital always rises because cash increases.",
+      "Improving working capital at a consulting firm sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a supermarket chain.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a consulting firm.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a consulting firm."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.42",
+    "title": "Pairing Current and Acid-Test",
+    "context": "Analyze why ratio analysis never replaces careful reading of the underlying statements. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio and acid-test ratio for a online retailer always produce identical results regardless of inventory levels.",
+      "Improving working capital at a consulting firm sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Asset turnover for a online retailer compares profit before interest and tax with average total assets.",
+      "Working capital for a hotel operator is calculated by subtracting current assets from current liabilities.",
+      "Improving working capital at a consulting firm sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a consulting firm.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a consulting firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.43",
+    "title": "Long-Term Funds in Capital Employed",
+    "context": "Consider a fashion retailer monitoring inventory turnover because unsold seasonal stock ties up cash. Evaluate the following economic assertions:",
+    "statements": [
+      "A hotel operator with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a hotel operator includes inventory in current assets before dividing by current liabilities.",
+      "A single return on capital employed figure for a hotel operator is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a hotel operator is calculated using only the cash balance rather than total equity.",
+      "Improving working capital at a consulting firm sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a consulting firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.44",
+    "title": "Consistent Profit Definitions",
+    "context": "Analyze why a firm can report profit yet still face a liquidity squeeze. Evaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover for a hotel operator is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "Improving working capital at a manufacturer sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a manufacturer sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "A higher inventory turnover at a hotel operator always means more money is tied up in stock for longer periods.",
+      "Improving working capital at a manufacturer sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a manufacturer.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a manufacturer.",
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a manufacturer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.45",
+    "title": "Inventory-Heavy Benchmarks",
+    "context": "Review how comparing acid-test and current ratios together gives a fuller liquidity picture. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a manufacturer sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a manufacturer sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a construction group sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a construction group sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "If a hotel operator takes out a short-term loan, working capital always rises because cash increases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a manufacturer.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a manufacturer.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a construction group.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a construction group.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.46",
+    "title": "Revenue Relative to Assets",
+    "context": "Analyze why capital employed measures the long-term funds financing the business operations. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio and acid-test ratio for a hotel operator always produce identical results regardless of inventory levels.",
+      "Improving working capital at a construction group sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a construction group sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Asset turnover for a hotel operator compares profit before interest and tax with average total assets.",
+      "Working capital for a software subscription business is calculated by subtracting current assets from current liabilities."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a construction group.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a construction group.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets.",
+      "FALSE — Working capital is current assets minus current liabilities, not the reverse."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.47",
+    "title": "Rising Debt Ratio Signal",
+    "context": "Consider a hotel operator with high trade payables assessing whether its current ratio sits in the commonly cited ideal range. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a construction group sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a fashion retailer sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "A software subscription business with negative working capital always has more cash than it needs for daily operations.",
+      "The acid-test ratio for a software subscription business includes inventory in current assets before dividing by current liabilities.",
+      "Improving working capital at a fashion retailer sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a construction group.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a fashion retailer.",
+      "FALSE — Negative working capital means current liabilities exceed current assets and does not imply excess cash.",
+      "FALSE — The acid-test ratio excludes inventory to provide a stricter liquidity test.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a fashion retailer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.48",
+    "title": "Equity and Debt Ratio Movement",
+    "context": "Analyze why inventory-heavy sectors accept different liquidity benchmarks from asset-light sectors. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a fashion retailer sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "A single return on capital employed figure for a software subscription business is always meaningful without comparing it to other years or similar firms.",
+      "Return on equity for a software subscription business is calculated using only the cash balance rather than total equity.",
+      "Inventory turnover for a software subscription business is calculated by dividing revenue by average inventory rather than using cost of sales.",
+      "Improving working capital at a fashion retailer sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a fashion retailer.",
+      "FALSE — Return on capital employed gains meaning chiefly from comparisons over time or with peers.",
+      "FALSE — Return on equity uses profit before interest and tax relative to equity, not cash alone.",
+      "FALSE — Inventory turnover uses cost of sales relative to average inventory, not revenue.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a fashion retailer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.49",
+    "title": "Loan Covenant Liquidity Floors",
+    "context": "Review how financial efficiency links revenue generation to the asset base employed. Evaluate the following economic assertions:",
+    "statements": [
+      "A higher inventory turnover at a software subscription business always means more money is tied up in stock for longer periods.",
+      "If a software subscription business takes out a short-term loan, working capital always rises because cash increases.",
+      "Improving working capital at a fashion retailer sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "The current ratio and acid-test ratio for a software subscription business always produce identical results regardless of inventory levels.",
+      "Asset turnover for a software subscription business compares profit before interest and tax with average total assets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Higher inventory turnover indicates faster stock rotation and less money tied up, not more.",
+      "FALSE — Short-term borrowing can increase cash yet reduce working capital when current liabilities rise.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a fashion retailer.",
+      "FALSE — When inventory is material, the acid-test ratio differs from the current ratio.",
+      "FALSE — Asset turnover relates revenue to average assets, not profit to assets."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.50",
+    "title": "Risk-Adjusted Owner Returns",
+    "context": "Analyze why a rising debt ratio may signal increased reliance on borrowed funds. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a utility company sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a utility company sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Financial statement ratios from different industries can always be compared directly without adjusting for business model differences.",
+      "Improving working capital at a utility company sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a utility company sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a utility company.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a utility company.",
+      "FALSE — Industry and business-model context is required before comparing ratios across firms.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a utility company.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a utility company."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.51",
+    "title": "Inventory Turnover in Retail",
+    "context": "Consider a grocery cooperative worried that negative working capital might signal risky short-term financing. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a utility company sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "A business with a current ratio below one always has more than enough liquid resources to settle every short-term obligation immediately.",
+      "Improving working capital at a wholesaler sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a wholesaler sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a wholesaler sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a utility company.",
+      "FALSE — A current ratio below one suggests current assets may not fully cover current liabilities.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a wholesaler.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a wholesaler.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a wholesaler."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.52",
+    "title": "Expansion and Revenue Match",
+    "context": "Analyze why lenders may require minimum liquidity ratios in loan agreements. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a wholesaler sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Working capital problems and cash flow problems are exactly the same issue described with different names.",
+      "Return on capital employed is best interpreted without reference to how capital employed was calculated.",
+      "Interpreting the return on capital employed of a supermarket chain alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive.",
+      "A supermarket chain that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a wholesaler.",
+      "FALSE — They are related but distinct: working capital is a balance-sheet snapshot concept whereas cash flow tracks movements over time.",
+      "FALSE — Understanding capital employed is part of interpreting return on capital employed correctly.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a supermarket chain.",
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a supermarket chain."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.53",
+    "title": "Cross-Industry Benchmark Traps",
+    "context": "Review how owners interpret return on equity when deciding whether performance justifies risk. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a wholesaler sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Interpreting the return on capital employed of a supermarket chain alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive.",
+      "A supermarket chain that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a supermarket chain alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive.",
+      "Interpreting the return on capital employed of a consulting firm alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a wholesaler.",
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a supermarket chain.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a supermarket chain.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a supermarket chain.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a consulting firm."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.54",
+    "title": "Liquidity for Supplier Payments",
+    "context": "Analyze why inventory turnover complements margin analysis when judging retail performance. Evaluate the following economic assertions:",
+    "statements": [
+      "A consulting firm that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation.",
+      "Improving working capital at a online retailer sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Interpreting the return on capital employed of a consulting firm alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive.",
+      "A consulting firm that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a consulting firm alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a consulting firm.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a online retailer.",
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a consulting firm.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a consulting firm.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a consulting firm."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.55",
+    "title": "Efficiency When Assets Grow",
+    "context": "Consider a craft exporter whose bank asks for both current ratio and acid-test ratio before renewing a facility. Evaluate the following economic assertions:",
+    "statements": [
+      "A consulting firm that compares its inventory turnover with the average for firms with similar inventory intensity gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a consulting firm alongside its performance before a major acquisition is more informative than treating one year's figure alone as decisive.",
+      "A consulting firm that compares its inventory turnover with its performance before a major acquisition gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a manufacturer alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive.",
+      "Improving working capital at a online retailer sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Benchmarking inventory turnover against the average for firms with similar inventory intensity aids interpretation for a consulting firm.",
+      "FALSE — Comparative context such as its performance before a major acquisition helps interpret return on capital employed for a consulting firm.",
+      "FALSE — Benchmarking inventory turnover against its performance before a major acquisition aids interpretation for a consulting firm.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a manufacturer.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a online retailer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.56",
+    "title": "Structure and Independence",
+    "context": "Analyze why ratio benchmarks from unrelated industries can mislead if applied blindly. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a online retailer sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a online retailer sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a online retailer sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a hotel operator sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a hotel operator sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a online retailer.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a online retailer.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a online retailer.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a hotel operator.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a hotel operator."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.57",
+    "title": "Comparing Similar Businesses",
+    "context": "Review the four broad purposes of financial statement analysis: liquidity, profitability, financial efficiency and financial structure. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a hotel operator sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a hotel operator sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a hotel operator sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a pharmaceutical distributor sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a pharmaceutical distributor sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a hotel operator.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a hotel operator.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a hotel operator.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a pharmaceutical distributor.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a pharmaceutical distributor."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.58",
+    "title": "Historical Ratio Trends",
+    "context": "Analyze why ratio results should be interpreted alongside industry context or a business's own history. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a pharmaceutical distributor sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "A manufacturer that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation.",
+      "Improving working capital at a pharmaceutical distributor sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a pharmaceutical distributor sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Interpreting the return on capital employed of a manufacturer alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a pharmaceutical distributor.",
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a manufacturer.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a pharmaceutical distributor.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a pharmaceutical distributor.",
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a manufacturer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.59",
+    "title": "Cash Injection Versus Structure",
+    "context": "Consider a consulting firm with few inventories comparing its working capital with that of a goods-based rival. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a transport operator sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a transport operator sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a transport operator sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a transport operator sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a software subscription business sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a transport operator.",
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a transport operator.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a transport operator.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a transport operator.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a software subscription business."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.60",
+    "title": "Operating Cushion After Short Debts",
+    "context": "Analyze why positive working capital is generally preferred to negative working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a medical-device maker sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "A manufacturer that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a manufacturer alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive.",
+      "Interpreting the return on capital employed of a manufacturer alongside its performance before a major acquisition is more informative than treating one year's figure alone as decisive.",
+      "A manufacturer that compares its inventory turnover with its performance before a major acquisition gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a medical-device maker.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a manufacturer.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a manufacturer.",
+      "FALSE — Comparative context such as its performance before a major acquisition helps interpret return on capital employed for a manufacturer.",
+      "FALSE — Benchmarking inventory turnover against its performance before a major acquisition aids interpretation for a manufacturer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.61",
+    "title": "Acid-Test for Inventory-Heavy Firms",
+    "context": "Review how the current ratio compares current assets with current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a medical-device maker sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a medical-device maker sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a medical-device maker sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a medical-device maker sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a cinema chain sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a medical-device maker.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a medical-device maker.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a medical-device maker.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a medical-device maker.",
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a cinema chain."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.62",
+    "title": "Return Compared Over Time",
+    "context": "Analyze why a current ratio between one and a half and two is often described as a comfortable range. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a cinema chain sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a cinema chain sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a cinema chain sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "Interpreting the return on capital employed of a manufacturer alongside its results after a restructuring programme is more informative than treating one year's figure alone as decisive.",
+      "A manufacturer that compares its inventory turnover with its results after a restructuring programme gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a cinema chain.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a cinema chain.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a cinema chain.",
+      "FALSE — Comparative context such as its results after a restructuring programme helps interpret return on capital employed for a manufacturer.",
+      "FALSE — Benchmarking inventory turnover against its results after a restructuring programme aids interpretation for a manufacturer."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.63",
+    "title": "Turnover and Tied-Up Stock",
+    "context": "Consider a capital-intensive utility comparing its return on capital employed with a lighter service business. Evaluate the following economic assertions:",
+    "statements": [
+      "Interpreting the return on capital employed of a construction group alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive.",
+      "Improving working capital at a cinema chain sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone.",
+      "The debt ratio for a supermarket chain shows what proportion of total assets is financed by liabilities.",
+      "Working capital for a consulting firm is calculated by subtracting current liabilities from current assets.",
+      "Inventory turnover for a fashion retailer relates cost of sales to average inventory over the period."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a construction group.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a cinema chain.",
+      "TRUE — Debt ratio analysis for a supermarket chain expresses total liabilities relative to total assets.",
+      "TRUE — The standard working capital definition applies to a consulting firm: current assets minus current liabilities.",
+      "TRUE — Inventory turnover connects purchasing or production cost with average stock levels for a fashion retailer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.64",
+    "title": "Asset Base and Revenue Growth",
+    "context": "Analyze why the acid-test ratio is a stricter liquidity test than the current ratio for inventory-heavy businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Because a wholesaler holds substantial inventory that may not convert to cash quickly, the acid-test ratio provides a stricter liquidity check than the current ratio.",
+      "A construction group that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a construction group alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive.",
+      "A higher inventory turnover at a wholesaler generally indicates that goods are sold and replaced more quickly, tying up less money in stock.",
+      "A construction group that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Excluding inventory in the acid-test ratio matters for inventory-heavy businesses such as a wholesaler.",
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a construction group.",
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a construction group.",
+      "TRUE — Rapid stock rotation at a wholesaler is what a higher inventory turnover signals.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a construction group."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.65",
+    "title": "Debt Ratio Versus Equity Ratio",
+    "context": "Review how short-term borrowing can increase cash but also raise current liabilities and reduce working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover for a wholesaler relates cost of sales to average inventory over the period.",
+      "Interpreting the return on capital employed of a construction group alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive.",
+      "Because a pharmaceutical distributor holds substantial inventory that may not convert to cash quickly, the acid-test ratio provides a stricter liquidity check than the current ratio.",
+      "A higher inventory turnover at a pharmaceutical distributor generally indicates that goods are sold and replaced more quickly, tying up less money in stock.",
+      "A construction group that compares its inventory turnover with the average for firms with similar inventory intensity gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Inventory turnover connects purchasing or production cost with average stock levels for a wholesaler.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a construction group.",
+      "TRUE — Excluding inventory in the acid-test ratio matters for inventory-heavy businesses such as a pharmaceutical distributor.",
+      "TRUE — Rapid stock rotation at a pharmaceutical distributor is what a higher inventory turnover signals.",
+      "FALSE — Benchmarking inventory turnover against the average for firms with similar inventory intensity aids interpretation for a construction group."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.66",
+    "title": "Working Capital in Operations",
+    "context": "Analyze why improving working capital sustainably may require more equity or long-term finance rather than repeated short-term loans. Evaluate the following economic assertions:",
+    "statements": [
+      "Interpreting the return on capital employed of a construction group alongside its performance before a major acquisition is more informative than treating one year's figure alone as decisive.",
+      "Inventory turnover for a pharmaceutical distributor relates cost of sales to average inventory over the period.",
+      "A software subscription business with little inventory may show a current ratio and acid-test ratio that are closer together than those of an inventory-heavy retailer.",
+      "If a construction group borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase.",
+      "Liquidity analysis for a construction group asks whether bills and short-term debts can be paid on time from available resources."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Comparative context such as its performance before a major acquisition helps interpret return on capital employed for a construction group.",
+      "TRUE — Inventory turnover connects purchasing or production cost with average stock levels for a pharmaceutical distributor.",
+      "TRUE — Low inventory at a software subscription business narrows the gap between current and acid-test liquidity measures.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a construction group.",
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a construction group."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.67",
+    "title": "Analysis Without Underlying Figures",
+    "context": "Consider a pharmaceutical distributor excluding inventory when calculating a stricter liquidity measure for its bankers. Evaluate the following economic assertions:",
+    "statements": [
+      "A construction group that compares its inventory turnover with its performance before a major acquisition gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a construction group alongside its results after a restructuring programme is more informative than treating one year's figure alone as decisive.",
+      "Profitability analysis for a construction group judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Interpreting the return on capital employed of a fashion retailer alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive.",
+      "Financial structure analysis for a construction group examines how assets are financed between equity and borrowed funds."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Benchmarking inventory turnover against its performance before a major acquisition aids interpretation for a construction group.",
+      "FALSE — Comparative context such as its results after a restructuring programme helps interpret return on capital employed for a construction group.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a construction group.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a fashion retailer.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a construction group."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.68",
+    "title": "Service Firm Working Capital",
+    "context": "Analyze how return on capital employed relates profit before interest and tax to capital employed. Evaluate the following economic assertions:",
+    "statements": [
+      "A fashion retailer that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a fashion retailer alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive.",
+      "If a fashion retailer borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase.",
+      "A fashion retailer that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a fashion retailer alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a fashion retailer.",
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a fashion retailer.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a fashion retailer.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a fashion retailer.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a fashion retailer."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.69",
+    "title": "Manufacturer Stock Levels",
+    "context": "Review how capital employed can be approximated as equity plus non-current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Liquidity analysis for a fashion retailer asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a fashion retailer judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Financial structure analysis for a fashion retailer examines how assets are financed between equity and borrowed funds.",
+      "If a utility company borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase.",
+      "Improving working capital at a transport operator sustainably may involve refinancing short-term debt into a long-term loan rather than relying on another short-term overdraft alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a fashion retailer.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a fashion retailer.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a fashion retailer.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a utility company.",
+      "TRUE — Refinancing short-term debt into a long-term loan is a structural way to strengthen working capital at a transport operator."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.70",
+    "title": "Return on Capital Employed Context",
+    "context": "Analyze why a single return on capital employed figure is most informative when compared over time or with similar firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a software subscription business sustainably may involve raising long-term equity rather than repeated overdrafts rather than relying on another short-term overdraft alone.",
+      "A fashion retailer that compares its inventory turnover with the average for firms with similar inventory intensity gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a fashion retailer alongside its performance before a major acquisition is more informative than treating one year's figure alone as decisive.",
+      "A fashion retailer that compares its inventory turnover with its performance before a major acquisition gains more insight than from a single turnover number viewed in isolation.",
+      "Interpreting the return on capital employed of a utility company alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Raising long-term equity rather than repeated overdrafts is a structural way to strengthen working capital at a software subscription business.",
+      "FALSE — Benchmarking inventory turnover against the average for firms with similar inventory intensity aids interpretation for a fashion retailer.",
+      "FALSE — Comparative context such as its performance before a major acquisition helps interpret return on capital employed for a fashion retailer.",
+      "FALSE — Benchmarking inventory turnover against its performance before a major acquisition aids interpretation for a fashion retailer.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a utility company."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.71",
+    "title": "Return on Equity Context",
+    "context": "Consider a software subscription business with low inventory explaining why its acid-test ratio differs from a manufacturer's. Evaluate the following economic assertions:",
+    "statements": [
+      "Improving working capital at a software subscription business sustainably may involve collecting receivables faster without cutting sales rather than relying on another short-term overdraft alone.",
+      "A utility company that compares its inventory turnover with a five-year trend in its own accounts gains more insight than from a single turnover number viewed in isolation.",
+      "Improving working capital at a software subscription business sustainably may involve negotiating longer supplier terms without harming relationships rather than relying on another short-term overdraft alone.",
+      "Improving working capital at a software subscription business sustainably may involve reducing slow-moving inventory through targeted promotions rather than relying on another short-term overdraft alone.",
+      "The debt ratio for a manufacturer shows what proportion of total assets is financed by liabilities."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Collecting receivables faster without cutting sales is a structural way to strengthen working capital at a software subscription business.",
+      "FALSE — Benchmarking inventory turnover against a five-year trend in its own accounts aids interpretation for a utility company.",
+      "TRUE — Negotiating longer supplier terms without harming relationships is a structural way to strengthen working capital at a software subscription business.",
+      "TRUE — Reducing slow-moving inventory through targeted promotions is a structural way to strengthen working capital at a software subscription business.",
+      "TRUE — Debt ratio analysis for a manufacturer expresses total liabilities relative to total assets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.72",
+    "title": "Liquidity Before Credit Negotiation",
+    "context": "Analyze how inventory turnover relates cost of sales to average inventory. Evaluate the following economic assertions:",
+    "statements": [
+      "Interpreting the return on capital employed of a utility company alongside a close competitor in the same sector is more informative than treating one year's figure alone as decisive.",
+      "The debt ratio for a utility company shows what proportion of total assets is financed by liabilities.",
+      "Working capital for a wholesaler is calculated by subtracting current liabilities from current assets.",
+      "A hotel operator with little inventory may show a current ratio and acid-test ratio that are closer together than those of an inventory-heavy retailer.",
+      "A utility company that compares its inventory turnover with a close competitor in the same sector gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Comparative context such as a close competitor in the same sector helps interpret return on capital employed for a utility company.",
+      "TRUE — Debt ratio analysis for a utility company expresses total liabilities relative to total assets.",
+      "TRUE — The standard working capital definition applies to a wholesaler: current assets minus current liabilities.",
+      "TRUE — Low inventory at a hotel operator narrows the gap between current and acid-test liquidity measures.",
+      "FALSE — Benchmarking inventory turnover against a close competitor in the same sector aids interpretation for a utility company."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.73",
+    "title": "Efficiency Across Asset Types",
+    "context": "Review why a higher inventory turnover generally suggests stock is sold and replaced more quickly. Evaluate the following economic assertions:",
+    "statements": [
+      "Liquidity analysis for a utility company asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a utility company judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "Financial structure analysis for a utility company examines how assets are financed between equity and borrowed funds.",
+      "If a wholesaler borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase.",
+      "The debt ratio for a wholesaler shows what proportion of total assets is financed by liabilities."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a utility company.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a utility company.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a utility company.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a wholesaler.",
+      "TRUE — Debt ratio analysis for a wholesaler expresses total liabilities relative to total assets."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.74",
+    "title": "Structure and Gearing Concerns",
+    "context": "Analyze why retailers often carry more inventory relative to service firms, affecting working capital needs. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a online retailer shows what proportion of total assets is financed by liabilities.",
+      "Interpreting the return on capital employed of a utility company alongside the average for firms with similar inventory intensity is more informative than treating one year's figure alone as decisive.",
+      "Liquidity analysis for a wholesaler asks whether bills and short-term debts can be paid on time from available resources.",
+      "Profitability analysis for a wholesaler judges whether profit is adequate relative to equity or capital employed rather than in isolation.",
+      "A utility company that compares its inventory turnover with the average for firms with similar inventory intensity gains more insight than from a single turnover number viewed in isolation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Debt ratio analysis for a online retailer expresses total liabilities relative to total assets.",
+      "FALSE — Comparative context such as the average for firms with similar inventory intensity helps interpret return on capital employed for a utility company.",
+      "TRUE — Solvency in the short run is the focus of liquidity analysis for a wholesaler.",
+      "TRUE — Profit size alone is insufficient without relating it to capital for a wholesaler.",
+      "FALSE — Benchmarking inventory turnover against the average for firms with similar inventory intensity aids interpretation for a utility company."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "text"
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.75",
+    "title": "Turnover Speed and Cash Tied Up",
+    "context": "Consider a medical-device maker benchmarking inventory turnover against another firm in the same industry. Evaluate the following economic assertions:",
+    "statements": [
+      "Interpreting the return on capital employed of a utility company alongside its performance before a major acquisition is more informative than treating one year's figure alone as decisive.",
+      "A utility company that compares its inventory turnover with its performance before a major acquisition gains more insight than from a single turnover number viewed in isolation.",
+      "Financial structure analysis for a wholesaler examines how assets are financed between equity and borrowed funds.",
+      "Interpreting the return on capital employed of a wholesaler alongside a five-year trend in its own accounts is more informative than treating one year's figure alone as decisive.",
+      "If a online retailer borrows additional short-term funds to pay suppliers, its cash may rise while working capital can fall because current liabilities increase."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Comparative context such as its performance before a major acquisition helps interpret return on capital employed for a utility company.",
+      "FALSE — Benchmarking inventory turnover against its performance before a major acquisition aids interpretation for a utility company.",
+      "TRUE — The equity-debt mix is the focus of structure analysis for a wholesaler.",
+      "FALSE — Comparative context such as a five-year trend in its own accounts helps interpret return on capital employed for a wholesaler.",
+      "TRUE — Short-term borrowing can boost cash yet reduce working capital for a online retailer."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "text"
+  }
+]
