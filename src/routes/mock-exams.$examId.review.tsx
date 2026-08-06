@@ -192,7 +192,9 @@ function ReviewExamPage() {
               {exam?.title ?? "Mock Exam"} — Review
             </h1>
             <p className="mt-1 text-sm text-muted-foreground">
-              Scored with the official wi2 method.
+              {isCustom
+                ? "Green = correct mark · Red = incorrect mark"
+                : "Scored with the official wi2 method."}
             </p>
           </div>
           <Link
@@ -206,12 +208,14 @@ function ReviewExamPage() {
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
             <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-taupe">
-              <Target className="h-3.5 w-3.5" /> Overall score
+              <Target className="h-3.5 w-3.5" /> {isCustom ? "Result" : "Overall score"}
             </div>
             <div className="font-display text-3xl font-bold text-caramel-deep">
-              {total.toFixed(1)} / {pointsTotal}
+              {isCustom ? `${pct}%` : `${total.toFixed(1)} / ${pointsTotal}`}
             </div>
-            <div className="mt-1 text-sm text-muted-foreground">{pct}%</div>
+            <div className="mt-1 text-sm text-muted-foreground">
+              {isCustom ? "Correct statement marks" : `${pct}%`}
+            </div>
           </div>
           <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
             <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-taupe">
@@ -226,15 +230,20 @@ function ReviewExamPage() {
           </div>
           <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
             <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-taupe">
-              <TrendingUp className="h-3.5 w-3.5" /> Tasks scored
+              <TrendingUp className="h-3.5 w-3.5" /> {isCustom ? "Tasks" : "Tasks scored"}
             </div>
             <div className="font-display text-3xl font-bold">
-              {taskScores.filter((s) => s > 0).length} / {taskScores.length}
+              {isCustom
+                ? `${marked.filter((m) => m.statements.some((s) => s.userMarked === s.isTrue)).length} / ${marked.length}`
+                : `${taskScores.filter((s) => s > 0).length} / ${taskScores.length}`}
             </div>
-            <div className="mt-1 text-sm text-muted-foreground">Tasks above zero</div>
+            <div className="mt-1 text-sm text-muted-foreground">
+              {isCustom ? "Tasks with any correct mark" : "Tasks above zero"}
+            </div>
           </div>
         </div>
 
+        {!isCustom && (
         <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
           <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
           <div className="space-y-4">
@@ -261,6 +270,7 @@ function ReviewExamPage() {
             })}
           </div>
         </div>
+        )}
 
         <h2 className="mb-4 font-display text-xl font-semibold">Question breakdown</h2>
         <div className="space-y-2">
@@ -268,6 +278,7 @@ function ReviewExamPage() {
             const q = m.question;
             const sm = SUBJECT_META[q.subject];
             const score = calculateTaskScore(q.maxPoints, m.statements);
+            const correctMarks = m.statements.filter((s) => s.userMarked === s.isTrue).length;
             const isOpen = open === q.id;
             return (
               <div key={q.id} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
@@ -277,14 +288,18 @@ function ReviewExamPage() {
                   className="flex w-full items-center gap-3 px-5 py-4 text-left transition-colors hover:bg-secondary/40"
                 >
                   <span className="w-7 shrink-0 font-mono text-sm text-taupe">{q.index}</span>
-                  <span
-                    className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${sm.badgeClass}`}
-                  >
-                    {sm.label}
-                  </span>
+                  {!isCustom && (
+                    <span
+                      className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${sm.badgeClass}`}
+                    >
+                      {sm.label}
+                    </span>
+                  )}
                   <span className="flex-1 truncate text-sm">{q.stem}</span>
                   <span className="shrink-0 font-mono text-sm font-semibold tabular-nums">
-                    {score.toFixed(1)} / {q.maxPoints.toFixed(1)} pts
+                    {isCustom
+                      ? `${correctMarks}/5`
+                      : `${score.toFixed(1)} / ${q.maxPoints.toFixed(1)} pts`}
                   </span>
                   <ChevronDown
                     className={`h-4 w-4 shrink-0 text-taupe transition-transform ${isOpen ? "rotate-180" : ""}`}

@@ -495,7 +495,7 @@ function CustomMocksTab({
         <div>
           <h2 className="font-display text-xl font-bold tracking-tight">Custom Mock Builder</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Generated mocks and your wi2 results.
+            Generated mocks and your practice history.
           </p>
         </div>
         <Link
@@ -577,9 +577,6 @@ function CustomMocksTab({
                             <span className="font-display text-lg font-bold">
                               {Math.round((best.points_earned / best.points_total) * 100)}%
                             </span>
-                            <span className="ml-2 text-xs text-muted-foreground">
-                              {best.points_earned.toFixed(1)}/{best.points_total}
-                            </span>
                           </>
                         ) : (
                           <span className="text-xs text-muted-foreground">Not taken yet</span>
@@ -629,9 +626,6 @@ function CustomMocksTab({
                     <td className="px-3 py-3">
                       <span className="font-display text-lg font-bold">
                         {Math.round((m.points_earned / m.points_total) * 100)}%
-                      </span>
-                      <span className="ml-2 text-xs text-muted-foreground">
-                        {m.points_earned.toFixed(1)}/{m.points_total}
                       </span>
                     </td>
                     <td className="px-3 py-3 text-muted-foreground">

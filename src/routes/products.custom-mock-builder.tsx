@@ -7,8 +7,6 @@ import {
   displayTitleForCustomMock,
   durationMinutesForQuestionCount,
   maxQuestionsForChapters,
-  pointsTotalForEconomicsQuestions,
-  presetsForMax,
 } from "@/config/custom-mock-builder";
 import {
   cacheCustomMock,
@@ -18,7 +16,7 @@ import {
 } from "@/lib/custom-mock-builder/client";
 import { buildCustomMock } from "@/lib/custom-mock-builder/build.functions";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
-import { chaptersFromSubtopicIds, getEnabledBookChapters } from "@/data/economics-subtopics";
+import { chaptersFromSubtopicIds, getCustomMockBookChapters } from "@/data/economics-subtopics";
 import { getCurrentAuthState } from "@/lib/auth-ui";
 import { clearSession, loadSession } from "@/lib/mock-exam-session";
 import {
@@ -49,7 +47,7 @@ export const Route = createFileRoute("/products/custom-mock-builder")({
 function CustomMockBuilderPage() {
   const navigate = useNavigate();
   const buildFn = useServerFn(buildCustomMock);
-  const bookChapters = useMemo(() => getEnabledBookChapters(), []);
+  const bookChapters = useMemo(() => getCustomMockBookChapters(), []);
 
   const [authReady, setAuthReady] = useState(false);
   const [selectedSubtopics, setSelectedSubtopics] = useState<string[]>([]);
@@ -94,8 +92,6 @@ function CustomMockBuilderPage() {
     return maxQuestionsForChapters(caps);
   }, [selectedSubtopics]);
 
-  const questionPresets = useMemo(() => presetsForMax(maxQuestions), [maxQuestions]);
-
   useEffect(() => {
     setQuestionCount((prev) => {
       const next = clampQuestionCount(prev, maxQuestions);
@@ -111,7 +107,6 @@ function CustomMockBuilderPage() {
   };
 
   const durationMinutes = durationMinutesForQuestionCount(questionCount);
-  const pointsTotal = pointsTotalForEconomicsQuestions(questionCount);
   const canBuild = selectedSubtopics.length > 0 && !building;
 
   const toggleSubtopic = (id: string) => {
@@ -237,7 +232,7 @@ function CustomMockBuilderPage() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <BookOpen className="h-3.5 w-3.5 text-[#8B5E3C]" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                From the book · Economics · Chapters 2–5
+                From the book · Economics · Chapters 2–3
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
@@ -333,29 +328,12 @@ function CustomMockBuilderPage() {
 
             <h2 className="mt-8 font-display text-xl font-semibold">Number of Questions</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Timed mode uses {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question. Max{" "}
-              {maxQuestions} for the selected chapter(s) (Ch.2–3 → 50).
+              Choose any count from 1 to {maxQuestions}. Timed mode uses{" "}
+              {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question.
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {questionPresets.map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  onClick={() => applyQuestionCount(n)}
-                  className={cn(
-                    "min-w-[72px] rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
-                    questionCount === n
-                      ? "border-[#8B5E3C] bg-[#8B5E3C] text-white shadow-sm"
-                      : "border-border bg-card hover:bg-secondary",
-                  )}
-                >
-                  {n}
-                </button>
-              ))}
-            </div>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <label htmlFor="custom-q-count" className="text-sm text-muted-foreground">
-                Custom
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <label htmlFor="custom-q-count" className="text-sm font-medium text-foreground">
+                Questions
               </label>
               <input
                 id="custom-q-count"
@@ -371,7 +349,7 @@ function CustomMockBuilderPage() {
                     applyQuestionCount(Number(customCountDraft));
                   }
                 }}
-                className="w-24 rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]"
+                className="w-28 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]"
               />
               <span className="text-xs text-muted-foreground">1–{maxQuestions}</span>
             </div>
@@ -381,9 +359,11 @@ function CustomMockBuilderPage() {
                 <Clock className="h-3.5 w-3.5" />
                 {durationMinutes} min timed
               </span>
-              <span>{pointsTotal} points · wi2 scoring</span>
               {selectedSubtopics.length > 0 && (
-                <span>{selectedSubtopics.length} subtopic{selectedSubtopics.length > 1 ? "s" : ""}</span>
+                <span>
+                  {selectedSubtopics.length} subtopic
+                  {selectedSubtopics.length > 1 ? "s" : ""}
+                </span>
               )}
             </div>
 
@@ -443,7 +423,6 @@ function CustomMockBuilderPage() {
                       </h3>
                       <p className="mt-1 text-xs text-muted-foreground">
                         {mock.questionCount} questions · {mock.durationMinutes} min ·{" "}
-                        {mock.pointsTotal} pts ·{" "}
                         {new Date(mock.createdAt).toLocaleDateString(undefined, {
                           year: "numeric",
                           month: "short",
@@ -484,10 +463,11 @@ function CustomMockBuilderPage() {
       <Dialog open={!!selected} onOpenChange={(o) => !o && setSelected(null)}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="font-display">{selected?.title ?? "Start mock"}</DialogTitle>
+            <DialogTitle className="font-display">
+              {selected ? displayTitleForCustomMock(selected) : "Start mock"}
+            </DialogTitle>
             <DialogDescription>
-              {selected?.questionCount} questions · {selected?.durationMinutes} minutes timed ·{" "}
-              {selected?.pointsTotal} points · wi2 scoring
+              {selected?.questionCount} questions · {selected?.durationMinutes} minutes timed
             </DialogDescription>
           </DialogHeader>
           <div className="mt-2 grid gap-3">

@@ -13,7 +13,7 @@ import type { ExamQuestion } from "@/lib/mock-exams";
 import {
   chaptersFromSubtopicIds,
   findSubtopic,
-  getEnabledBookChapters,
+  getCustomMockBookChapters,
 } from "@/data/economics-subtopics";
 
 const Input = z.object({
@@ -119,7 +119,7 @@ export const buildCustomMock = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => Input.parse(d))
   .handler(async ({ data, context }) => {
-    const enabled = getEnabledBookChapters();
+    const enabled = getCustomMockBookChapters();
     const enabledSubIds = new Set(enabled.flatMap((c) => c.subtopics.map((s) => s.id)));
     const subtopics = [...new Set(data.subtopics)].filter((id) => enabledSubIds.has(id)).sort();
     if (subtopics.length === 0) {

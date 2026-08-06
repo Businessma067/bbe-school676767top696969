@@ -4,21 +4,17 @@ import { SCORING_CONFIG } from "@/config/scoring-config";
 /** Minutes allotted per question for Custom Mock Builder timed mode. */
 export const CUSTOM_MOCK_MINUTES_PER_QUESTION = 2;
 
-/** Quick-select buttons; actual count may be any integer within the chapter cap. */
-export const CUSTOM_MOCK_QUESTION_PRESETS = [5, 10, 15, 20, 25, 30, 40, 50] as const;
-
-/** Max questions allowed when a chapter’s subtopics are selected (pool size also limits). */
+/** Max questions when chapter 2 or 3 subtopics are selected. */
 export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
   2: 50,
   3: 50,
-  4: 30,
-  5: 30,
 };
 
-export const DEFAULT_QUESTION_CAP = 30;
+export const DEFAULT_QUESTION_CAP = 50;
 
-/** @deprecated Use CUSTOM_MOCK_QUESTION_PRESETS; kept for older imports. */
-export const CUSTOM_MOCK_QUESTION_COUNTS = [5, 10, 20] as const;
+/** @deprecated Presets removed — use free 1…cap input. */
+export const CUSTOM_MOCK_QUESTION_PRESETS = [] as const;
+export const CUSTOM_MOCK_QUESTION_COUNTS = [] as const;
 export type CustomMockQuestionCount = number;
 
 export type CustomMockSubjectId = "economics" | "math" | "english";
@@ -53,8 +49,8 @@ export const CUSTOM_MOCK_SUBJECTS: Record<CustomMockSubjectId, CustomMockSubject
     chapters: [
       { num: 2, title: CHAPTER_TITLES[2] ?? "Basic economic concepts", enabled: true },
       { num: 3, title: CHAPTER_TITLES[3] ?? "Focus on different types of businesses", enabled: true },
-      { num: 4, title: CHAPTER_TITLES[4] ?? "Forms of business ownership and sources of finance", enabled: true },
-      { num: 5, title: CHAPTER_TITLES[5] ?? "Marketing", enabled: true },
+      { num: 4, title: CHAPTER_TITLES[4] ?? "Forms of business ownership and sources of finance", enabled: false },
+      { num: 5, title: CHAPTER_TITLES[5] ?? "Marketing", enabled: false },
       { num: 6, title: CHAPTER_TITLES[6] ?? "Accounting", enabled: false },
     ],
   },
@@ -154,6 +150,7 @@ export function clampQuestionCount(count: number, max: number): number {
   return Math.max(1, Math.min(max, Math.floor(count)));
 }
 
-export function presetsForMax(max: number): number[] {
-  return CUSTOM_MOCK_QUESTION_PRESETS.filter((n) => n <= max);
+/** @deprecated Preset buttons removed from the builder UI. */
+export function presetsForMax(_max: number): number[] {
+  return [];
 }

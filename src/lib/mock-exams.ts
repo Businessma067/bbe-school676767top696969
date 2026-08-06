@@ -14,7 +14,7 @@ export interface MockExamSummary {
   questionCount: number;
   durationMinutes: number;
   tier: ProductTier;
-  /** Present for Custom Mock Builder exams — total wi2 points. */
+  /** Present for Custom Mock Builder exams — used for progress sync only. */
   pointsTotal?: number;
 }
 
