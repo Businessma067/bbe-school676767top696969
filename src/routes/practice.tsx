@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 export const Route = createFileRoute("/practice")({
   component: PracticePage,
@@ -110,9 +111,9 @@ function PracticePage() {
     : 0;
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader maxWidthClassName="max-w-3xl" compact />
-      <main className="mx-auto max-w-3xl p-6 space-y-6">
+    <div className={PRACTICE_PAGE}>
+      <SiteHeader maxWidthClassName="max-w-none" compact />
+      <main className={`${PRACTICE_BODY} flex-col space-y-6`}>
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">Practice</h1>
           {submitted && (

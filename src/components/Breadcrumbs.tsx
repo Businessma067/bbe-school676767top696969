@@ -174,7 +174,7 @@ export function Breadcrumbs() {
       aria-label="Breadcrumb"
       className="border-b border-border/60 bg-background/70 backdrop-blur"
     >
-      <ol className="mx-auto flex max-w-7xl items-center gap-1.5 overflow-x-auto whitespace-nowrap px-6 py-2 text-xs lg:px-8">
+      <ol className="mx-auto flex w-full max-w-none items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-2 text-xs sm:px-5 lg:px-8 xl:px-10">
         <li className="flex items-center">
           {crumbs.length === 0 ? (
             <span className="inline-flex items-center gap-1 font-medium text-foreground">

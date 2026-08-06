@@ -10,6 +10,7 @@ import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedMo
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { scrubStatementHints } from "@/lib/case-context";
+import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -242,9 +243,9 @@ function EconomicsTasks() {
   };
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+    <div className={PRACTICE_PAGE}>
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-8">
+        <div className={PRACTICE_HEADER_INNER}>
           <Link to="/demo-practice" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
           </Link>
@@ -258,7 +259,7 @@ function EconomicsTasks() {
         </div>
       </header>
 
-      <div className="mx-auto flex w-full max-w-none flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10 2xl:px-12">
+      <div className={PRACTICE_BODY_STACK}>
         {/* Sidebar — expandable chapters with per-case checklist */}
         {!sidebarCollapsed && (
         <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0 2xl:w-96">

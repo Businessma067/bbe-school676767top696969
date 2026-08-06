@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { AuthNav } from "@/components/AuthNav";
+import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import {
   MATH_CHAPTERS,
@@ -130,9 +131,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
     tier === "demo" ? "Demo" : tier === "lite" ? "Lite Course" : "Full Course";
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+    <div className={PRACTICE_PAGE}>
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-8">
+        <div className={PRACTICE_HEADER_INNER}>
           <Link
             to={backTo}
             className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary"
@@ -152,7 +153,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         </div>
       </header>
 
-      <div className="mx-auto flex w-full max-w-none flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8 lg:py-10 2xl:px-12">
+      <div className={PRACTICE_BODY_STACK}>
         {!sidebarCollapsed && (
           <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0 2xl:w-96">
             <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">

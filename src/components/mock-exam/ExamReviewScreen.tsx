@@ -1,6 +1,7 @@
 import { Flag } from "lucide-react";
 import { isQuestionAnswered } from "@/lib/mock-exam-session";
 import type { ExamQuestion } from "@/lib/mock-exams";
+import { PRACTICE_BODY } from "@/lib/practice-layout";
 
 type Props = {
   questions: ExamQuestion[];
@@ -26,7 +27,7 @@ export function ExamReviewScreen({
   const flaggedQuestions = questions.filter((q) => flagged.has(q.id));
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
+    <div className={`${PRACTICE_BODY} flex-col py-10`}>
       <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
         Review before submission
       </h1>

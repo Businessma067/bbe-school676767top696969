@@ -28,6 +28,7 @@ import {
   seedFiredTimerWarnings,
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
+import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { scrubStatementHints } from "@/lib/case-context";
@@ -401,7 +402,7 @@ function TakeExamPage() {
 
   if (phase === "review") {
     return (
-      <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+      <div className="min-h-dvh bg-background font-sans text-foreground antialiased">
         <ExamReviewScreen
           questions={questions}
           answers={session.answers}
@@ -430,7 +431,7 @@ function TakeExamPage() {
   const answered = isQuestionAnswered(session.answers[q.id]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased">
+    <div className={`flex flex-col ${PRACTICE_PAGE}`}>
       {session.timed && (
         <TimerWarningPlaque
           timed={session.timed}
@@ -439,7 +440,7 @@ function TakeExamPage() {
         />
       )}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
+        <div className={PRACTICE_HEADER_INNER}>
           <div className="flex min-w-0 items-center gap-3">
             <h1 className="truncate font-display text-base font-bold">
               {exam?.title ?? "Mock Exam"}
@@ -501,8 +502,8 @@ function TakeExamPage() {
         )}
       </header>
 
-      <div className="mx-auto flex w-full max-w-[1200px] flex-1 gap-4 px-4 py-4 sm:px-6 lg:gap-5">
-        <aside className="hidden w-[200px] shrink-0 space-y-4 xl:block xl:w-[220px]">
+      <div className={PRACTICE_BODY}>
+        <aside className="hidden w-[200px] shrink-0 space-y-4 xl:block xl:w-[240px] 2xl:w-[260px]">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
             <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
               Question

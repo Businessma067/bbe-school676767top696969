@@ -8,6 +8,7 @@ import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
 import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { scrubStatementHints } from "@/lib/case-context";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
@@ -206,9 +207,9 @@ function ReviewExamPage() {
     );
   }
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+    <div className={PRACTICE_PAGE}>
       <SiteHeader
-        maxWidthClassName="max-w-5xl"
+        maxWidthClassName="max-w-none"
         actions={
           <Link
             to={isCustom ? "/products/custom-mock-builder" : "/mock-exams"}
@@ -218,7 +219,7 @@ function ReviewExamPage() {
           </Link>
         }
       />
-      <main className="mx-auto max-w-5xl px-6 py-12">
+      <main className={`${PRACTICE_BODY} flex-col py-12`}>
         <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="font-display text-3xl font-bold tracking-tight">
