@@ -1,0 +1,1802 @@
+[
+  {
+    "file": "src/data/economics-cases-ch2-subtopics.json",
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.04",
+    "title": "Business Operations and Institutional Needs",
+    "context": "Consider households, startups, and manufacturing firms interacting in a market system. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses provide goods like computers and services like installing software for people to satisfy their needs.",
+      "Manufacturers of smartphones might have an operational need for printed circuit boards produced by suppliers such as an electronics-components manufacturer.",
+      "To fabricate components, a manufacturer requires raw materials and a workforce rather than operating in isolation.",
+      "Individuals frequently exchange goods and services directly and are fully active participants in trading.",
+      "Households need food, shelter, and medical care, and they also want leisure activities such as cinema visits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Firms supply tangible goods and intangible services that help consumers satisfy needs.",
+      "TRUE — Component manufacturers depend on specialised inputs such as PCBs to assemble finished devices.",
+      "TRUE — Production requires limited inputs and labour; no firm can operate without securing those resources.",
+      "TRUE — Individuals trade with businesses and with each other; households are not excluded from exchange.",
+      "TRUE — Household demand spans essential needs and non-essential wants such as entertainment."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch2-subtopics.json",
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.12",
+    "title": "Needs, wants, and who has them",
+    "context": "Analyze claims about needs, wants, and which actors in the economy face them. Evaluate the following economic assertions:",
+    "statements": [
+      "A manufacturer of laptops may need printed circuit boards from a supplier like an electronics-components manufacturer to keep production running.",
+      "High-tech manufacturers have zero internal needs because only end consumers ever experience genuine need.",
+      "Households buy goods and services from businesses to satisfy both needs and wants in daily life.",
+      "Wants disappear automatically once every need has been fully satisfied in a given month.",
+      "Teenagers with pocket money are outside the economy until they register a business or join a formal household."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Firms have operational needs for inputs such as components and materials to manufacture products.",
+      "FALSE — Businesses have genuine operational needs for inputs, labour, and customers, not only final consumers.",
+      "TRUE — Households routinely purchase goods and services from firms to meet needs and wants.",
+      "FALSE — Wants can persist even after needs are met; satisfying one does not erase the other category.",
+      "FALSE — Individuals participate economically through consumption and choice long before becoming entrepreneurs."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch2-subtopics.json",
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.27",
+    "title": "Needs of businesses",
+    "context": "Review whether businesses themselves have operational needs in addition to household needs. Evaluate the following economic assertions:",
+    "statements": [
+      "A smartphone assembler needs printed circuit boards from specialised suppliers to manufacture devices.",
+      "Businesses have zero internal needs because only final consumers experience genuine need.",
+      "An entrepreneur needs customers and revenue to keep staff employed and operations running.",
+      "Operational needs of firms include workforce, premises, and raw materials, not only consumer demand.",
+      "If a firm is profitable, scarcity no longer applies to any of its inputs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Production relies on component inputs that firms genuinely need to assemble finished products.",
+      "FALSE — Firms have operational needs for inputs, labour, and sales, not only end consumers.",
+      "TRUE — Without customers and revenue, a business cannot sustain employment and operations.",
+      "TRUE — Firms require physical and human inputs as needs distinct from household consumption needs.",
+      "FALSE — Profitability does not make inputs unlimited; capacity and materials remain scarce."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch2-subtopics.json",
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.40",
+    "title": "Operational Needs of Businesses",
+    "context": "Analyze whether firms and entrepreneurs experience genuine needs beyond consumer demand. Evaluate the following economic assertions:",
+    "statements": [
+      "Cash flow to pay suppliers next month is a need for a small retailer even when sales are seasonal.",
+      "Customer demand itself can be a need when a firm requires sales to remain viable.",
+      "A laptop assembler needs printed circuit boards from suppliers to keep production lines running.",
+      "An entrepreneur needs reliable staff and premises to continue serving paying customers.",
+      "Expansion plans and wage bills are identical categories with no distinction."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Meeting obligations requires available funds within each period.",
+      "TRUE — Revenue from buyers is necessary for survival in market settings.",
+      "TRUE — Component inputs are operational needs for manufacturers.",
+      "TRUE — Workforce and facilities are business needs for ongoing operations.",
+      "FALSE — Needs concern continuing operation; wants reflect discretionary ambitions."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch2-subtopics.json",
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.23",
+    "title": "Leoben PCB Plant Expansion",
+    "context": "Consider an electronics-components plant in Leoben plant adding a plating line that raises monthly substrate output without raising unit prices. Evaluate the following economic assertions:",
+    "statements": [
+      "If demand stays fixed while supply shifts right, equilibrium substrate price may fall.",
+      "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
+      "Higher copper input prices could partially offset the expansion by shifting supply leftward.",
+      "Customers ordering substrates face lower shortage risk after a successful supply expansion.",
+      "Adding capacity that lowers unit cost can shift supply rightward for plated substrates."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Greater supply with unchanged demand lowers equilibrium price.",
+      "TRUE — Rightward supply shift with fixed demand raises equilibrium quantity.",
+      "TRUE — Rising material costs reduce quantity supplied at each price.",
+      "TRUE — Increased quantity supplied reduces excess demand at prior prices.",
+      "TRUE — Expanded efficient capacity increases quantity supplied at each price."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.05",
+    "title": "an electronics-components manufacturer Substrate Production Shift",
+    "context": "Consider how an electronics-components plant in Leoben runs a shift plating PCBs while sourcing laminate and scheduling engineers. Evaluate the following economic assertions:",
+    "statements": [
+      "Clean-room tools and testing rigs on the line are capital in secondary production.",
+      "Engineers monitoring substrate thickness supply specialised labour.",
+      "Plant management coordinating materials, staff, and orders supplies entrepreneurship.",
+      "Materials are land because copper is extracted from the earth.",
+      "Knowledge is a consumer good unless the firm registers patents."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Manufacturing equipment is part of the capital factor.",
+      "TRUE — Engineering and inspection work is skilled human resource use.",
+      "TRUE — Coordinating production factors and timing is entrepreneurship.",
+      "FALSE — Raw and processed inputs are combined with other factors; finished goods are outputs.",
+      "FALSE — Knowledge applied in production is a recognised factor."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.09",
+    "title": "Combining Production Factors",
+    "context": "Analyze how businesses combine factors to create offerings. Evaluate the following economic assertions:",
+    "statements": [
+      "Service firms combine labour with capital, technology, and entrepreneurial coordination.",
+      "A business combines factors of production to offer goods and/or services to customers.",
+      "Whichever factor is dominant replaces the need for any other factor.",
+      "Only manufacturing combines factors; services use labour alone.",
+      "Automated lines remove labour and knowledge from PCB production entirely."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Service delivery integrates multiple factors, not labour alone.",
+      "TRUE — Businesses exist by combining resources to deliver goods or services.",
+      "FALSE — One dominant factor does not remove the need to combine others.",
+      "FALSE — Service and manufacturing firms both combine multiple factors.",
+      "FALSE — Manufacturing still uses labour, knowledge, and coordination alongside capital."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.17",
+    "title": "PCB Manufacturing Inputs",
+    "context": "Review factors used in printed circuit board manufacturing. Evaluate the following economic assertions:",
+    "statements": [
+      "Substrate clean-room tools and testing rigs are capital in secondary production.",
+      "Engineering teams monitoring laminate batches supply skilled labour.",
+      "PCB fabrication requires labour and materials as well as capital equipment.",
+      "an electronics-components manufacturer combines workforce, materials, equipment, and entrepreneurial direction.",
+      "Knowledge of plating specifications applied on the line is a production factor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Manufacturing equipment is part of the capital factor.",
+      "TRUE — Inspection and engineering work is skilled human resource use.",
+      "TRUE — Manufacturing blends human resources, materials, and machinery.",
+      "TRUE — Large manufacturers integrate all major factors in production.",
+      "TRUE — Technical knowledge used in manufacturing counts among production factors."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.30",
+    "title": "Integrated Factor Use",
+    "context": "Review integrated use of production factors in business. Evaluate the following economic assertions:",
+    "statements": [
+      "Smartphone makers may need PCBs from suppliers such as an electronics-components manufacturer to keep production running.",
+      "Businesses provide goods and services by combining labour, land, capital, entrepreneurship, and often knowledge.",
+      "an electronics-components manufacturer combines all major factors when manufacturing PCBs and IC substrates.",
+      "two local IT-support entrepreneurs illustrate combining knowledge, labour, technology, capital, and entrepreneurship.",
+      "Dominant factors replace all others in sector analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Component suppliers combine factors to produce inputs other firms need.",
+      "TRUE — Production draws on multiple listed factors together.",
+      "TRUE — Large manufacturers integrate labour, materials, equipment, and coordination.",
+      "TRUE — Their venture uses skills, tools, finance, and coordination together.",
+      "FALSE — Dominance does not eliminate combined use of other factors."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.38",
+    "title": "Entrepreneurial Coordination Examples",
+    "context": "Analyze entrepreneurship in coordinating other factors. Evaluate the following economic assertions:",
+    "statements": [
+      "Coordinating a repair shop's parts orders and bookings supplies entrepreneurship.",
+      "Scheduling PCB shifts while sourcing laminate reflects entrepreneurship at a manufacturer.",
+      "Integrating robots with manual pick teams reflects entrepreneurship in logistics.",
+      "Any purchase decision is entrepreneurship because it spends money.",
+      "Selecting barrel suppliers and picker contracts reflects entrepreneurship at a winery."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Organising resources and operations is entrepreneurship.",
+      "TRUE — Coordinating production inputs and timing is entrepreneurship.",
+      "TRUE — Designing how factors combine operationally is entrepreneurial work.",
+      "TRUE — Spending on capital is capital use; entrepreneurship organises factors.",
+      "TRUE — Organising inputs and contracts is entrepreneurial coordination."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.40",
+    "title": "an electronics-components manufacturer Workforce and Materials",
+    "context": "Review whether manufacturing can run on capital alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Plant managers coordinating shifts and suppliers supply entrepreneurship.",
+      "Quality inspectors monitoring batches supply skilled labour on the line.",
+      "PCB manufacturing requires engineers, operators, and materials alongside equipment.",
+      "Copper-clad laminate stored for production is a material input combined with capital.",
+      "Component plants run on capital alone once equipment is installed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Coordinating production factors is entrepreneurship.",
+      "TRUE — Inspection work is skilled human resource use.",
+      "TRUE — Manufacturing still requires labour, materials, and coordination.",
+      "TRUE — Manufacturing uses materials alongside capital and labour.",
+      "FALSE — Manufacturing integrates labour, materials, equipment, and coordination."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.46",
+    "title": "Factor Combination Requirement",
+    "context": "Review whether businesses can rely on a single factor. Evaluate the following economic assertions:",
+    "statements": [
+      "PCB production blends labour, capital, materials, knowledge, and coordination.",
+      "Dominant factor emphasis in an industry removes other factors from production.",
+      "A firm can deliver goods using one dominant factor without combining others.",
+      "Services need only labour because output is intangible.",
+      "Winemaking needs only land because grapes ripen naturally."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Manufacturing integrates multiple factors rather than one alone.",
+      "TRUE — Businesses combine factors even when one appears dominant.",
+      "FALSE — Businesses combine multiple factors rather than one alone.",
+      "FALSE — Services still rely on capital, technology, and coordination.",
+      "FALSE — Winemaking also requires labour, capital, and management."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.48",
+    "title": "Integrated Production Examples",
+    "context": "Review integrated factor use in chapter examples. Evaluate the following economic assertions:",
+    "statements": [
+      "Identifying one example factor in a firm eliminates the need to consider others.",
+      "two local IT-support entrepreneurs show how knowledge, labour, technology, capital, and entrepreneurship work together.",
+      "Smartphone makers needing PCBs from suppliers such as an electronics-components manufacturer rely on combined factors upstream.",
+      "A winemaker illustrates combining land, labour, capital, entrepreneurship, and experience.",
+      "an electronics-components manufacturer illustrates capital-only production without workforce."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Businesses combine factors even when examples emphasise one.",
+      "TRUE — Their venture uses skills, tools, finance, and coordination.",
+      "TRUE — Component suppliers combine factors to produce inputs.",
+      "TRUE — Winemaking blends multiple listed factors.",
+      "FALSE — Manufacturing integrates labour, materials, equipment, and coordination."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.50",
+    "title": "Chapter 3.1 Synthesis",
+    "context": "Review integrated claims about factors of production. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses combine labour, land, capital, entrepreneurship, and often knowledge to create offerings.",
+      "an electronics-components manufacturer illustrates combining all major factors in PCB and substrate manufacturing.",
+      "Their refurbished-laptop venture combines knowledge, labour, technology, capital, and entrepreneurship.",
+      "Winemaking illustrates land-only production in agriculture.",
+      "Dominant factors make other factors irrelevant in analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Production typically integrates multiple listed factors.",
+      "TRUE — Large manufacturers integrate workforce, materials, equipment, and coordination.",
+      "TRUE — Their venture uses skills, tools, finance, and coordination together.",
+      "FALSE — Winemaking combines multiple factors beyond land.",
+      "FALSE — Dominance does not remove combined use of other factors."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.08",
+    "title": "Olive Farm and PCB Order",
+    "context": "Consider a Croatian farm sells olive oil while a Linz factory fills a PCB production order. Evaluate the following economic assertions:",
+    "statements": [
+      "PCB fabrication transforms materials and therefore belongs to secondary manufacturing.",
+      "The farm is secondary because bottled oil is a processed product.",
+      "Both activities belong to the tertiary sector because each sells to customers.",
+      "Fabricating PCBs from laminate is tertiary because components go to other businesses.",
+      "Harvesting and pressing olives on the farm is tertiary because oil is sold to customers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Component production transforms materials into manufactured goods.",
+      "FALSE — Agricultural production and harvesting remain primary even if some processing occurs on farm.",
+      "FALSE — Selling does not reclassify farming or manufacturing into services.",
+      "FALSE — Manufacturing for business customers remains secondary activity.",
+      "FALSE — Agricultural production remains primary even when products are sold."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.28",
+    "title": "an electronics-components manufacturer Secondary Role",
+    "context": "Review an electronics-components manufacturer manufacturing PCBs and IC substrates. Evaluate the following economic assertions:",
+    "statements": [
+      "Client technical advice alongside fabrication does not remove secondary classification.",
+      "Manufactured components are secondary-sector output regardless of input origins.",
+      "Selling components to smartphone makers keeps fabrication in secondary manufacturing.",
+      "Transforming laminate into PCBs is secondary manufacturing.",
+      "an electronics-components manufacturer is tertiary because it sells to smartphone makers, not consumers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Fabricating boards remains secondary even if advice accompanies sales.",
+      "TRUE — Manufactured components are secondary-sector output.",
+      "TRUE — Manufacturing for business customers remains secondary activity.",
+      "TRUE — Manufacturing components from materials is secondary activity.",
+      "FALSE — Selling to firms does not reclassify manufacturing as services."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.35",
+    "title": "GDP as an Economic Activity Indicator",
+    "context": "Review GDP as an overall activity indicator. Evaluate the following economic assertions:",
+    "statements": [
+      "GDP per capita indicates standard of living in the chapter's framing.",
+      "GDP does not replace all other indicators because it misses some income sources.",
+      "GDP counts final goods and services produced in a defined period.",
+      "GDP excludes final services such as insurance from its totals.",
+      "Insurance and other final services are omitted from official GDP totals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — GDP per capita is linked to living standards.",
+      "TRUE — GDP misses some informal and unpaid activity.",
+      "TRUE — GDP covers final domestic production over time.",
+      "FALSE — Final insurance premiums and claims services enter GDP when produced domestically.",
+      "FALSE — Service-sector final output is included when it meets GDP boundary rules."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.38",
+    "title": "Multi-sector Firms",
+    "context": "Analyze firms operating across more than one sector. Evaluate the following economic assertions:",
+    "statements": [
+      "The three-sector model classifies activities rather than assigning one label per economy.",
+      "A farm selling produce can only be classified as primary.",
+      "an electronics-components manufacturer manufacturing with client advice is tertiary only.",
+      "A single sector label on a firm blocks any activity in another sector.",
+      "One sector label applied to a firm prevents any activity in another sector."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — The model classifies activities, not single labels per economy.",
+      "FALSE — Mixed-sector firms may combine farming with processing or retail activities.",
+      "FALSE — Manufacturing can coexist with service offerings.",
+      "FALSE — Sector labels describe activities, not exclusive limits on what a firm may do.",
+      "FALSE — Classification by activity allows several sector types within one enterprise."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.41",
+    "title": "Printed Circuit Boards Sector",
+    "context": "Analyze how to classify PCB fabrication in the sector model. Evaluate the following economic assertions:",
+    "statements": [
+      "Client advice alongside fabrication does not remove secondary classification.",
+      "PCB advice to clients converts fabrication into tertiary services only.",
+      "Upstream copper mines supply laminate inputs without turning PCB fabrication into primary extraction.",
+      "Testing substrates in clean rooms becomes tertiary inspection service only.",
+      "Buying mined copper for boards does not move PCB production from secondary to primary."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Manufacturing remains secondary even if services accompany sales.",
+      "FALSE — Manufacturing remains secondary even if services accompany sales.",
+      "FALSE — Component fabrication stays secondary whatever raw materials are purchased.",
+      "FALSE — Quality steps in manufacturing stay secondary activity.",
+      "FALSE — Input from mines does not change the secondary nature of board manufacturing."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.47",
+    "title": "Transforming Raw Materials",
+    "context": "Review secondary-sector transformation. Evaluate the following economic assertions:",
+    "statements": [
+      "Timber mills exporting boards perform secondary processing of logs.",
+      "PCB fabrication is tertiary because components support services.",
+      "Sewing is tertiary because fashion is a consumer service.",
+      "Smelting remains primary because ore comes from mines.",
+      "Shipbuilding is tertiary because ships later carry cargo."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Milling logs into boards is secondary manufacturing.",
+      "FALSE — Manufacturing components is secondary activity.",
+      "FALSE — Sewing garments is secondary manufacturing.",
+      "FALSE — Processing ore or metal is secondary transformation.",
+      "FALSE — Building ships from materials is secondary manufacturing."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.50",
+    "title": "Chapter 3.2 Synthesis",
+    "context": "Review integrated sector and GDP claims. Evaluate the following economic assertions:",
+    "statements": [
+      "Emerging economies depend largely on primary activity while advanced EU states show tertiary dominance.",
+      "GDP measures final domestic production and supports growth comparisons when inflation-adjusted.",
+      "GDP critics cite missing income, quality limits, and disaster rebuild effects.",
+      "GDP correlates perfectly with health and happiness in every case.",
+      "Manufacturing PCBs and offering after-sales support collapse into a single tertiary label."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Development shifts sector shares toward services in rich economies.",
+      "TRUE — GDP totals final output; real growth uses adjusted figures.",
+      "TRUE — Standard criticisms include coverage, quality, and rebuild distortions.",
+      "FALSE — Correlation does not mean GDP fully measures welfare.",
+      "FALSE — Manufacturing stays secondary; support can be tertiary alongside it."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.04",
+    "title": "a humanitarian relief organisation Flood-relief Kits",
+    "context": "Consider a a humanitarian relief organisation branch collects donations before dispatching flood-relief kits to affected towns. Evaluate the following economic assertions:",
+    "statements": [
+      "Charging for some relief supplies converts a humanitarian relief organisation into a profit-maximiser.",
+      "Any surplus from donations can be reinvested into further relief work.",
+      "Not-for-profit status means the branch may ignore funding entirely.",
+      "Dispatching kits without prior inflows is typical NPO practice.",
+      "Relief organisations need no inflows because volunteers supply everything."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Cost recovery does not redefine a humanitarian NPO as profit-oriented.",
+      "TRUE — NPO surpluses are typically reinvested into the mission.",
+      "FALSE — NPOs must still secure and manage revenues or donations.",
+      "FALSE — Relief delivery requires funding for materials and logistics.",
+      "FALSE — Humanitarian delivery requires funded materials and logistics."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.06",
+    "title": "a wildlife conservation organisation Merchandise and Habitat Work",
+    "context": "Consider a a wildlife conservation organisation project sells branded merchandise and ploughs surplus into habitat protection. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling merchandise can raise funds for habitat work within an NPO model.",
+      "Merchandise income helps cover operating costs while funding conservation work.",
+      "Habitat work funded from surplus proves a wildlife conservation organisation maximises owner wealth.",
+      "a wildlife conservation organisation seeks maximum private owner wealth like a listed corporation.",
+      "a wildlife conservation organisation must distribute merchandise surplus as private shareholder dividends."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Trading can fund mission activities within an NPO.",
+      "TRUE — Trading can supplement donations to cover mission costs.",
+      "FALSE — Merchandising surpluses can fund mission work.",
+      "FALSE — a wildlife conservation organisation is a mission-driven non-profit organisation.",
+      "FALSE — NPO surpluses support mission reinvestment, not owner payouts."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.09",
+    "title": "Not-for-Profit Organisation Aims",
+    "context": "Analyze the main aim of not-for-profit organisations when they pursue a mission rather than owner profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Mission delivery still requires enough inflows to finance operations.",
+      "Not-for-profit organisations mainly aim to cover costs while pursuing a mission.",
+      "NPOs seek to cover costs rather than maximise owner profit.",
+      "an environmental campaign organisation, a wildlife conservation organisation, and a humanitarian relief organisation illustrate recognised not-for-profit examples.",
+      "Charity clinics billing insurers enough to cover running costs fit not-for-profit aims."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Even NPOs require income streams to operate.",
+      "TRUE — NPOs focus on covering costs rather than maximising owner profit.",
+      "TRUE — Mission focus replaces profit-maximisation for owners.",
+      "TRUE — These appear as NPO examples in the chapter.",
+      "TRUE — NPO healthcare seeks to cover costs while serving patients."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.15",
+    "title": "Surplus Reinvestment Mission",
+    "context": "Review reinvesting NPO surplus for mission delivery. Evaluate the following economic assertions:",
+    "statements": [
+      "a wildlife conservation organisation habitat projects funded by merchandising surplus show mission reinvestment.",
+      "Surplus at an environmental campaign organisation can support more campaigns rather than shareholder dividends.",
+      "Mission reinvestment means surplus is paid to private shareholders as annual bonuses.",
+      "NPO surplus must be paid out as shareholder dividends like a corporation.",
+      "Service upgrades prove an NPO failed because it spent less than donors gave."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — NPO merchandising surpluses can fund mission work.",
+      "TRUE — NPO surplus supports mission, not owner payouts.",
+      "FALSE — Surplus is reinvested into mission activities.",
+      "FALSE — NPO surpluses are reinvested, not distributed as owner dividends.",
+      "FALSE — Improving services aligns with NPO aims."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.16",
+    "title": "a humanitarian relief organisation Example",
+    "context": "Review a humanitarian relief organisation as a not-for-profit example. Evaluate the following economic assertions:",
+    "statements": [
+      "a humanitarian relief organisation kit dispatch requires prior inflows to fund materials and logistics.",
+      "Humanitarian relief funded by donations fits the not-for-profit model.",
+      "a humanitarian relief organisation is cited as an example of a non-profit organisation.",
+      "a humanitarian relief organisation operates without covering staff or warehouse costs.",
+      "Prior-year donation surplus cannot fund current aid parcel packing."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Relief delivery requires funding to cover operations.",
+      "TRUE — Donations are a key revenue source for many NPOs.",
+      "TRUE — a humanitarian relief organisation operates as a well-known NPO example.",
+      "TRUE — NPOs must finance ongoing operating expenses.",
+      "FALSE — Prior surpluses and donations enable ongoing operations."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.18",
+    "title": "a wildlife conservation organisation Example",
+    "context": "Review a wildlife conservation organisation as a non-profit example. Evaluate the following economic assertions:",
+    "statements": [
+      "Trading merchandise converts a wildlife conservation organisation into a commercial retailer maximising owner profit.",
+      "Wildlife programmes funded by prior fundraising surpluses show mission reinvestment.",
+      "a wildlife conservation organisation merchandising can fund habitat work without making a wildlife conservation organisation profit-oriented.",
+      "Environmental campaigns require no financing because advocacy is costless.",
+      "a wildlife conservation organisation behaves like a listed corporation maximising private owner wealth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Merchandise can fund an NPO without profit-maximising aims.",
+      "TRUE — Prior surpluses and donations can fund later projects.",
+      "TRUE — Merchandise can fund mission activities within an NPO model.",
+      "FALSE — Campaigns require staff, logistics, and covered costs.",
+      "FALSE — a wildlife conservation organisation is a mission-driven non-profit organisation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.19",
+    "title": "an environmental campaign organisation Mission Spending",
+    "context": "Consider how an environmental campaign organisation raises international funds while limiting spending to mission delivery. Evaluate the following economic assertions:",
+    "statements": [
+      "an environmental campaign organisation limiting spending to mission delivery fits NPO behaviour.",
+      "Mission delivery requires budgeting even for advocacy organisations.",
+      "Campaign surplus can support more campaigns rather than shareholder dividends.",
+      "an environmental campaign organisation is an example of a non-profit organisation.",
+      "International fundraising still requires covering staff and logistics costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — NPOs raise funds to cover mission operations.",
+      "TRUE — NPOs must manage revenues to cover mission delivery.",
+      "TRUE — NPO surplus supports mission, not owner payouts.",
+      "TRUE — an environmental campaign organisation appears as a representative NPO in the chapter.",
+      "TRUE — Even advocacy NPOs must cover operating costs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.22",
+    "title": "NPO Revenue Need",
+    "context": "Review why not-for-profit organisations still need revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Relief NGOs must secure inflows before dispatching kits to disaster zones.",
+      "an environmental campaign organisation campaigns depend on covering staff and logistics costs.",
+      "Mission status eliminates the need to track operating expenses.",
+      "Grants are symbolic recognition requiring no cost coverage.",
+      "Volunteer labour alone removes all NPO revenue requirements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — NPOs need resources to deliver goods and services.",
+      "TRUE — Campaigns require financed staff and operations.",
+      "FALSE — NPOs must manage costs to remain viable.",
+      "FALSE — Grants must cover real project and staff costs.",
+      "FALSE — Operations still require funded inflows."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.27",
+    "title": "Mission-driven Organisations",
+    "context": "Review mission focus in non-profit organisations. Evaluate the following economic assertions:",
+    "statements": [
+      "a wildlife conservation organisation illustrates environmental mission focus within an NPO model.",
+      "Mission-driven status means financial planning is unnecessary for NPOs.",
+      "a humanitarian relief organisation illustrates humanitarian mission delivery within an NPO model.",
+      "an environmental campaign organisation illustrates a mission-driven non-profit organisation.",
+      "Mission focus removes the need for any surplus reinvestment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — a wildlife conservation organisation is listed as a non-profit example.",
+      "TRUE — NPOs still need revenues to cover costs.",
+      "TRUE — a humanitarian relief organisation is a well-known NPO example.",
+      "TRUE — an environmental campaign organisation is cited as a representative NPO.",
+      "FALSE — Surplus can still enhance mission delivery."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.30",
+    "title": "a humanitarian relief organisation Aid Packing",
+    "context": "Consider how a humanitarian relief organisation volunteers pack aid parcels funded by prior-year donation surplus. Evaluate the following economic assertions:",
+    "statements": [
+      "Prior-year donation surplus can fund current aid parcel packing.",
+      "Aid parcels reflect humanitarian mission delivery rather than owner profit-maximisation.",
+      "Volunteers packing parcels show mission delivery using prior secured inflows.",
+      "Packed parcels depend on goodwill alone with no financed materials.",
+      "Each relief operation must start from zero funding regardless of prior surplus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Prior surpluses and donations enable ongoing NPO operations.",
+      "TRUE — Humanitarian delivery reflects mission focus, not owner profit-maximisation.",
+      "TRUE — Relief work relies on previously secured funding.",
+      "FALSE — Humanitarian delivery requires funded materials and logistics.",
+      "FALSE — Prior surpluses can fund later operations."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.33",
+    "title": "NPO Trap: Surplus Allowed",
+    "context": "Analyze traps about whether NPOs may earn surplus. Evaluate the following economic assertions:",
+    "statements": [
+      "Merchandise surplus at a wildlife conservation organisation can fund habitat work within the NPO model.",
+      "Not-for-profit labelling means no surplus may ever arise above costs.",
+      "NPO surplus reinvested for services differs from owner profit distribution.",
+      "Any surplus proves an NPO has abandoned its mission.",
+      "NPOs are barred from generating any amount above costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — NPO merchandising surpluses can fund mission work.",
+      "TRUE — NPOs may earn surplus reinvested for the mission.",
+      "TRUE — NPO surpluses support mission, not private dividends.",
+      "FALSE — Surplus can enhance mission delivery.",
+      "FALSE — NPOs may earn and reinvest surplus."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.37",
+    "title": "Non-profit Labelling",
+    "context": "Review what not-for-profit labelling implies. Evaluate the following economic assertions:",
+    "statements": [
+      "Labelling an organisation NPO does not remove the need for revenue.",
+      "Mission focus and cost coverage can coexist with surplus reinvestment.",
+      "Not-for-profit labelling signals mission focus rather than owner profit-maximisation.",
+      "an environmental campaign organisation, a wildlife conservation organisation, and a humanitarian relief organisation illustrate recognised NPO examples.",
+      "NPO labelling requires distributing surplus as owner dividends."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — NPOs still need inflows to operate.",
+      "TRUE — NPOs combine cost coverage with mission surplus use.",
+      "TRUE — NPOs prioritise mission cost coverage over owner profit.",
+      "TRUE — These organisations appear as NPO examples in the chapter.",
+      "FALSE — NPO surpluses are reinvested, not owner dividends."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.49",
+    "title": "Mixed Revenue Charities",
+    "context": "Analyze charities combining donations and earned income. Evaluate the following economic assertions:",
+    "statements": [
+      "a wildlife conservation organisation combining merchandise sales and donations illustrates mixed NPO revenue.",
+      "Mixed revenue converts charities into commercial retailers automatically.",
+      "Mixed donations and fees can sustain an NPO without owner profit distribution.",
+      "Only one revenue source is allowed for any charity.",
+      "Earned income from fees means surplus must become owner profit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — NPOs can combine trading and donations.",
+      "TRUE — Combined inflows can still support mission cost coverage.",
+      "TRUE — NPOs may combine donations, fees, and other inflows.",
+      "FALSE — NPOs may combine multiple inflow types.",
+      "FALSE — Surplus can reinvest in mission activities."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.50",
+    "title": "Chapter 3.3 Synthesis",
+    "context": "Review integrated profit-oriented and NPO claims. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit-oriented firms aim for revenue above costs, reinvest profit, and reward owner risk.",
+      "NPOs aim to cover costs, accept donations, and reinvest surplus for mission delivery.",
+      "These organisations are profit-oriented because they raise revenues.",
+      "Both require paying surplus to private shareholders.",
+      "Revenue alone satisfies profit aims without regard to expenses."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Commercial aims include surplus, reinvestment, and risk reward.",
+      "TRUE — NPOs combine cost coverage, donations, and mission reinvestment.",
+      "FALSE — These appear as NPO examples in the chapter.",
+      "FALSE — NPO surpluses reinvest in mission; commercial profit may reward owners.",
+      "FALSE — Profit requires revenues to exceed costs."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.04",
+    "title": "Small dual thresholds",
+    "context": "Analyze eU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "MSME excludes micro firms and covers only small and medium categories.",
+      "SMEs represent a narrow minority of EU firms because large corporations dominate registration statistics.",
+      "SME labels are purely descriptive and have no effect on access to finance or reporting rules.",
+      "an electronics-components manufacturer counts as a medium enterprise because it operates internationally.",
+      "Medium status permits turnover up to €50m or a balance sheet total up to €43m together with the staff cap."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Micro firms are explicitly included in MSME/SME groupings.",
+      "FALSE — SMEs form the vast majority, not a minority, of EU businesses.",
+      "FALSE — Definitions actively shape finance access and regulatory treatment.",
+      "FALSE — Medium status depends on thresholds, not on geographic scope alone.",
+      "TRUE — Medium classification uses staff plus either turnover or balance sheet financial ceilings."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.05",
+    "title": "Small turnover breach",
+    "context": "Consider a wholesaler that has thirty-eight staff but €10.4m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "A workforce of about ten thousand places an electronics-components manufacturer outside EU medium enterprise limits.",
+      "Approximately ninety-nine percent of businesses in the EU are SMEs.",
+      "Accounting requirements are identical for micro firms and large multinationals under EU practice.",
+      "Two hundred employees fall within the medium staff threshold.",
+      "Seven staff and a €1.9m balance sheet guarantee micro status despite turnover above €2m."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Ten thousand staff far exceeds the 250-employee medium ceiling.",
+      "TRUE — Official EU data cite that about 99% of EU businesses are SMEs.",
+      "FALSE — Size affects accounting rules, implying differences by category.",
+      "TRUE — 200 is below the 250-person medium limit.",
+      "FALSE — Exceeding the turnover cap disqualifies micro status even with qualifying staff and balance sheet."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.09",
+    "title": "an electronics-components manufacturer large scale",
+    "context": "Consider an electronics-components manufacturer employs roughly ten thousand staff worldwide. Evaluate the following economic assertions:",
+    "statements": [
+      "A balance sheet above €43m can disqualify medium status even with low turnover.",
+      "Crossing micro limits while staying within small thresholds reclassifies the firm as small.",
+      "Policies supporting SMEs affect the vast majority of EU businesses by number.",
+      "Size differences can mean different accounting rule sets for a micro supplier and an electronics-components manufacturer.",
+      "Small enterprises must record turnover not exceeding €10m."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — The €43m balance sheet limit is binding for medium classification.",
+      "TRUE — Qualifying within small limits replaces micro status.",
+      "TRUE — With ~99% SME share, SME-focused policy reaches most businesses.",
+      "TRUE — Size classification links to differing accounting rules between micro and large firms.",
+      "TRUE — €10m is the small turnover ceiling in the EU table."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.13",
+    "title": "Accounting rules by size",
+    "context": "Analyze a growing firm approaches medium thresholds. Evaluate the following economic assertions:",
+    "statements": [
+      "two local IT-support entrepreneurs illustrate micro-scale operations compared with an electronics-components manufacturer's large workforce.",
+      "Complete staff and financial data are needed to verify micro or other SME tiers.",
+      "SME definitions are irrelevant once a firm exports outside the home country.",
+      "One hundred and eighty employees fits the medium staff band if financial tests also pass.",
+      "Micro pairs sub-ten staff with €2m turnover or balance sheet limits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Local micro ventures contrast with an electronics-components manufacturer's large-scale workforce.",
+      "TRUE — Both staff and financial caps must be checked.",
+      "FALSE — Export activity does not override SME threshold tests.",
+      "TRUE — 180 is within medium's below-250 staff range.",
+      "TRUE — This matches the EU micro row in the official SME table."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.14",
+    "title": "Micro balance within cap",
+    "context": "Consider a consultancy that has seven staff, €2.3m turnover, and a €1.9m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "Operating alone prevents micro classification because micro requires at least five staff.",
+      "Large firms like an electronics-components manufacturer can employ thousands despite being few in number.",
+      "Three thousand staff can still fall within medium limits if turnover is managed.",
+      "Turnover within €10m alone makes a firm small even with three hundred employees.",
+      "Turnover above €50m prevents medium classification when that cap is breached."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — There is no minimum staff count for micro beyond the upper cap.",
+      "TRUE — an electronics-components manufacturer illustrates large-scale employment in a rare large firm.",
+      "FALSE — 3,000 far exceeds the 250-employee medium cap.",
+      "FALSE — Three hundred staff exceeds medium limits regardless of turnover.",
+      "TRUE — €55m exceeds the €50m medium turnover limit."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.17",
+    "title": "Two hundred fifty staff cap",
+    "context": "Analyze a textile plant employs exactly two hundred fifty workers with €40m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "EU SME tiers combine employee ceilings with turnover and/or balance sheet caps.",
+      "Nine staff alone proves micro status without financial documentation.",
+      "an electronics-components manufacturer counts as a micro enterprise because it supplies components to phone makers.",
+      "One hundred and twenty-five staff satisfies the medium employee threshold.",
+      "Staff headcount must be verified alongside turnover for medium classification."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Combined criteria define each tier in the EU table.",
+      "FALSE — Financial thresholds are mandatory for micro confirmation.",
+      "FALSE — Supplier role does not determine size; headcount and financials do.",
+      "TRUE — 125 is below 250 staff limit.",
+      "TRUE — Staff verification is mandatory alongside turnover."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.25",
+    "title": "an electronics-components manufacturer accounting contrast",
+    "context": "Analyze reporting expectations for an electronics-components manufacturer and a micro village supplier. Evaluate the following economic assertions:",
+    "statements": [
+      "Expanding headcount and turnover past small-tier limits can push a firm into the medium category.",
+      "Three thousand staff far exceeds the two hundred and fifty employee medium ceiling.",
+      "Outgrowing micro employee or financial caps can move a workshop into the small enterprise band.",
+      "Export activity does not override EU SME threshold tests for classification.",
+      "€200m turnover far exceeds the €50m medium turnover ceiling."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Progression to medium replaces small when medium limits are satisfied.",
+      "TRUE — 3,000 staff places a firm outside medium limits.",
+      "TRUE — Progression to small replaces micro when small limits are satisfied.",
+      "TRUE — Cross-border sales do not replace official size criteria.",
+      "TRUE — €200m turnover places a firm outside medium limits."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.29",
+    "title": "the other co-founder repair shop profile",
+    "context": "Consider steve runs a repair shop with one apprentice, two staff total, and €180k turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "€52m turnover still meets the medium turnover cap of €50m.",
+      "A €44m balance sheet still meets the medium balance sheet cap of €43m.",
+      "Two workers on payroll automatically places the shop above the micro employee band.",
+      "Employing six people forces the business out of micro classification on headcount alone.",
+      "Two hundred staff fits the medium employee ceiling below two hundred and fifty."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — €52m exceeds the €50m medium turnover threshold.",
+      "FALSE — €44m exceeds the €43m medium balance sheet threshold.",
+      "FALSE — Two is below ten and fits the micro staff ceiling.",
+      "FALSE — Six is below ten and fits the micro staff ceiling.",
+      "TRUE — 200 is below the 250-person medium limit."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.31",
+    "title": "Three thousand staff group",
+    "context": "Consider a tech group that employs three thousand staff with €200m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "Turnover of €1.8m exceeds the micro turnover cap of €2m.",
+      "Micro firms are included in SME counts and MSME groupings.",
+      "Ten thousand an electronics-components manufacturer staff fits the medium employee ceiling below two hundred and fifty.",
+      "Turnover of €9.5m exceeds the small turnover cap of €10m.",
+      "Turnover of €49m exceeds the medium turnover cap of €50m."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — €1.8m is within the €2m micro turnover ceiling.",
+      "TRUE — Micro enterprises form part of the SME category.",
+      "FALSE — 10,000 far exceeds the 250-person medium limit.",
+      "FALSE — €9.5m is within the €10m small turnover ceiling.",
+      "FALSE — €49m is within the €50m medium turnover ceiling."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.34",
+    "title": "Medium turnover breach path",
+    "context": "Analyze a firm has one hundred twenty staff, €52m turnover, and a €40m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "Medium status follows from international operations regardless of headcount.",
+      "an electronics-components manufacturer is classified as large under EU thresholds because headcount far exceeds medium limits.",
+      "Micro status requires fewer than ten staff plus turnover at or below €2m or balance sheet at or below €2m.",
+      "two local IT-support entrepreneurs's bakery with six staff meets the micro headcount test.",
+      "A firm with eight staff still needs turnover or balance sheet data to confirm micro status."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Medium status depends on EU thresholds, not geographic scope.",
+      "TRUE — an electronics-components manufacturer's ~10,000 staff exceeds the 250-person medium ceiling.",
+      "TRUE — Micro combines staff ceiling with one financial cap.",
+      "TRUE — Six employees is below the ten-person micro limit.",
+      "TRUE — Financial caps must be verified alongside headcount."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.35",
+    "title": "Small to medium transition",
+    "context": "Analyze a family manufacturer grows to one hundred eighty staff and €45m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "A village craft business with four staff meets the micro headcount test.",
+      "Micro status follows from supplying larger manufacturers regardless of headcount.",
+      "the other co-founder's repair shop with two staff meets the micro headcount test.",
+      "A retailer with thirty staff meets the small headcount test.",
+      "SME classification is optional for firms seeking EU support programmes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Four employees is below the ten-person micro limit.",
+      "FALSE — Supplier relationships do not determine EU size classification.",
+      "TRUE — Two employees is below the ten-person micro limit.",
+      "TRUE — Thirty employees is below the fifty-person small limit.",
+      "FALSE — Official SME criteria gate access to many support schemes."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.37",
+    "title": "one of the co-founders the other co-founder versus an electronics-components manufacturer",
+    "context": "Consider two local IT-support entrepreneurs's bakery with an electronics-components manufacturer when discussing business size. Evaluate the following economic assertions:",
+    "statements": [
+      "The medium financial test treats €43m as the upper balance sheet bound.",
+      "Micro eligibility includes balance sheet totals that do not exceed €2m.",
+      "Small-enterprise turnover qualification allows figures up to the €10m ceiling.",
+      "Micro turnover qualification permits annual sales up to €2m under EU tables.",
+      "Medium turnover qualification permits figures up to €50m when other criteria hold."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — €43m is the medium balance sheet ceiling.",
+      "TRUE — €2m is the micro balance sheet ceiling.",
+      "TRUE — €10m is the small turnover ceiling.",
+      "TRUE — €2m is the micro turnover ceiling.",
+      "TRUE — €50m is the medium turnover ceiling."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.42",
+    "title": "Micro local economy role",
+    "context": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following economic assertions:",
+    "statements": [
+      "Accounting rule sets can differ between micro firms and large groups such as an electronics-components manufacturer.",
+      "EU SME tables pair each tier with distinct staff and financial ceilings.",
+      "The EU medium cap for balance sheet is €50m rather than €43m.",
+      "Labeling €10m as the medium turnover ceiling misstates the EU threshold for that tier.",
+      "Calling €2m the small turnover cap incorrectly swaps micro and small financial limits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Size classification affects applicable accounting rules.",
+      "TRUE — Micro, small, and medium each have separate threshold rows.",
+      "FALSE — €43m is the medium balance sheet cap in the EU table.",
+      "FALSE — €10m is the small turnover cap, not the medium cap.",
+      "FALSE — €2m is the micro turnover cap, not the small cap."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.43",
+    "title": "Staff-only exam trap",
+    "context": "Analyze a case lists eight staff and asks whether SME status is certain. Evaluate the following economic assertions:",
+    "statements": [
+      "two local IT-support entrepreneurs count as a large enterprise because their bakery supplies many customers.",
+      "One hundred and twenty staff with €52m turnover fails the medium turnover test.",
+      "About ninety-nine percent of EU employees work in SMEs because ninety-nine percent of firms are SMEs.",
+      "an electronics-components manufacturer counts as a medium enterprise because its Austrian headquarters defines EU size.",
+      "Two hundred staff with €55m turnover fails the medium turnover test."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — two local IT-support entrepreneurs illustrate micro-scale operations, not large enterprise status.",
+      "TRUE — €52m exceeds the €50m medium turnover cap.",
+      "FALSE — The statistic refers to business numbers, not employment share.",
+      "FALSE — an electronics-components manufacturer's ~10,000 staff exceeds medium limits.",
+      "TRUE — €55m exceeds the €50m medium turnover cap."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.47",
+    "title": "SME synthesis review",
+    "context": "Analyze eU SME classification principles for exam review. Evaluate the following economic assertions:",
+    "statements": [
+      "Headcount alone confirms small status for a fifty-employee logistics company.",
+      "Incomplete turnover data still proves micro status when staff are nine.",
+      "Micro turnover of €1.6m balance sheet context still allows €1.6m balance sheet under €2m cap.",
+      "Supplier status to phone makers determines an electronics-components manufacturer size classification.",
+      "Headcount alone confirms micro status for a ten-employee family firm."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Fifty staff fails the below-fifty small staff test.",
+      "FALSE — Financial thresholds are mandatory for micro confirmation.",
+      "TRUE — €1.6m meets the micro balance sheet threshold.",
+      "FALSE — Headcount and financial thresholds determine EU size classification.",
+      "FALSE — Ten staff fails the below-ten micro staff test."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.48",
+    "title": "Turnover-only student error",
+    "context": "Analyze a student argues a firm is medium because turnover is €40m. Evaluate the following economic assertions:",
+    "statements": [
+      "Micro turnover of €1.7m balance sheet total stays within the €2m micro balance sheet cap.",
+      "two local IT-support entrepreneurs serve as micro-scale examples alongside an electronics-components manufacturer as a large firm.",
+      "SME classification principles combine staff ceilings with turnover and/or balance sheet caps.",
+      "About ninety-nine percent of EU businesses are SMEs by number rather than by employment share alone.",
+      "Medium balance sheet of €42m stays within the €43m medium cap."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — €1.7m meets the micro balance sheet threshold.",
+      "TRUE — Course examples contrast micro local ventures with an electronics-components manufacturer scale.",
+      "TRUE — Combined criteria define EU SME tiers in the official table.",
+      "TRUE — The statistic measures business counts.",
+      "TRUE — €42m meets the medium balance sheet threshold."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.04",
+    "title": "an electronics-components manufacturer multinational scope",
+    "context": "Consider an electronics-components manufacturer manufactures and sells across several countries. Evaluate the following economic assertions:",
+    "statements": [
+      "Regional scope allows unlimited customers anywhere on the globe.",
+      "Globalisation is described as the rise of multinational enterprises operating across borders.",
+      "Selling nationwide while owners stay in one town makes the business local by residence.",
+      "International business must cope with different cultures, languages, and currencies.",
+      "Operating internationally lengthens the supply chain and crosses legal and economic systems."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Regional businesses serve a limited area, not global markets.",
+      "TRUE — Globalisation is tied to spreading multinational enterprise activity.",
+      "FALSE — Nationwide sales indicate national scope despite owner location.",
+      "TRUE — Cultures, languages, and currencies are named complications of international business.",
+      "TRUE — International scope brings longer chains plus differing legal and economic frameworks."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.06",
+    "title": "Regional funding challenge",
+    "context": "Consider a regional craft firm that struggles to raise funds and find customers. Evaluate the following economic assertions:",
+    "statements": [
+      "an electronics-components manufacturer operating across countries illustrates a multinational enterprise reinventing its model.",
+      "Limited capital can constrain a local firm's ability to expand beyond its immediate market.",
+      "Currency differences disappear once a firm opens a foreign bank account.",
+      "Undercapitalisation affects only multinational firms building foreign factories.",
+      "Culture and language differences matter only to tourist shops, not to manufacturers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — an electronics-components manufacturer exemplifies large-scale multinational scope.",
+      "TRUE — Undercapitalisation limits growth for geographically focused firms.",
+      "FALSE — Operating across borders still involves multiple currencies.",
+      "FALSE — links undercapitalisation chiefly to local/regional business challenges.",
+      "FALSE — Cultures and languages apply to international business generally."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.08",
+    "title": "National supply chain length",
+    "context": "Analyze supply chain length for a national manufacturer versus a local workshop. Evaluate the following economic assertions:",
+    "statements": [
+      "Proximity to customers removes any need to seek sales for local firms.",
+      "National businesses operate in more than one country as long as they use domestic currency.",
+      "Currency differences arise when trading across international borders.",
+      "an electronics-components manufacturer is a local enterprise because its first plant was in one town.",
+      "Globalisation reflects more firms producing and selling beyond a single country."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Finding customers remains a cited challenge for local/regional firms.",
+      "FALSE — National firms stay within the home country.",
+      "TRUE — Multiple currencies are part of international business conditions.",
+      "FALSE — an electronics-components manufacturer exemplifies large multinational scope with cross-border activity.",
+      "TRUE — Rising multinationals underpin the view of globalisation."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.25",
+    "title": "Multinational reinvented firm",
+    "context": "Consider an electronics-components manufacturer expanded abroad and reinvented its business model. Evaluate the following economic assertions:",
+    "statements": [
+      "Operating nationally implies a longer supply chain than serving one neighbourhood.",
+      "Cross-border sales expose a firm to multiple legal and economic systems.",
+      "Local scope is not determined by EU SME headcount thresholds.",
+      "an electronics-components manufacturer illustrates how a firm can operate as a multinational with plants and customers abroad.",
+      "Regional firms compete for customers within the same limited territory."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — contrasts longer national chains with shorter local ones.",
+      "TRUE — International activity crosses differing legal and economic frameworks.",
+      "TRUE — Geographic scope and enterprise size classification are separate concepts.",
+      "TRUE — an electronics-components manufacturer is the course example of cross-border production and sales.",
+      "TRUE — Regional rivals share geographically bounded markets."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.30",
+    "title": "Globalisation rise trend",
+    "context": "Analyze whether globalisation chiefly means more firms operating across borders. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm visible online but shipping only within one city remains local/regional in scope.",
+      "A national supermarket chain is local because each store serves a neighbourhood.",
+      "Regional branding across provinces makes a firm multinational.",
+      "Supply chains shorten when a firm expands from local to national scope.",
+      "an electronics-components manufacturer counts as regional because its Austrian roots define scope permanently."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Limited delivery geography indicates local/regional rather than international reach.",
+      "FALSE — Country-wide domestic retail networks reflect national scope.",
+      "FALSE — Intra-country regional branding differs from cross-border operations.",
+      "FALSE — states national chains are longer than local ones.",
+      "FALSE — an electronics-components manufacturer operates internationally with cross-border production and sales."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.39",
+    "title": "Local versus global trap",
+    "context": "Analyze a student labels any online shop as global regardless of sales geography. Evaluate the following economic assertions:",
+    "statements": [
+      "an electronics-components manufacturer demonstrates multinational scope through foreign plants and international customers.",
+      "National airlines are local because passengers board at nearby airports.",
+      "Regional seasonal tourism proves multinational scope because visitors hold foreign passports.",
+      "A firm importing components for domestic assembly is a manufacturer in the supplier's country.",
+      "A telecom restricted to domestic mobile plans within one country fits national scope."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — the course uses an electronics-components manufacturer as a cross-border enterprise example.",
+      "FALSE — Domestic airport networks reflect national operating scope.",
+      "FALSE — Foreign passport holders visiting a regional hotel do not make the hotel multinational.",
+      "FALSE — Using imported inputs domestically differs from producing abroad.",
+      "TRUE — Domestic-only service plans align with national classification."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.47",
+    "title": "Local market saturation",
+    "context": "Analyze a local market becomes saturated when most nearby customers already buy. Evaluate the following economic assertions:",
+    "statements": [
+      "National procurement rules prove international scope because governments are global actors.",
+      "International supply chains are shorter than local ones due to container shipping.",
+      "Local market saturation limits growth when nearby demand is largely met.",
+      "an electronics-components manufacturer is classified as national because most staff work in Austria.",
+      "Regional competitors prove multinational scope because rivalry crosses town boundaries."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Domestic-only tendering within one country remains national scope.",
+      "FALSE — states international operations lengthen supply chains.",
+      "TRUE — Exhausted proximate demand constrains local expansion.",
+      "FALSE — Cross-border production and sales make an electronics-components manufacturer a multinational example.",
+      "FALSE — Regional rivalry within a limited area does not establish international scope."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.40",
+    "title": "one of the co-founders the other co-founder stakeholders",
+    "context": "Consider two local IT-support entrepreneurs's bakery, which affects owners, staff, suppliers, and neighbours. Evaluate the following economic assertions:",
+    "statements": [
+      "Bakery staff depend on the shop for wages and job security as employee stakeholders.",
+      "two local IT-support entrepreneurs as owners seek profit and bear risk from how the bakery trades.",
+      "one of the co-founders, the other co-founder, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery.",
+      "Only two local IT-support entrepreneurs count as stakeholders because they provided the original capital.",
+      "The flour supplier expects payment and future orders as a supplier stakeholder."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Employees depend on firm success for livelihood.",
+      "TRUE — Owners typically seek profit and bear business risk.",
+      "TRUE — Multiple groups affected by the bakery fit the stakeholder definition.",
+      "FALSE — Stakeholders include staff, suppliers, customers, and neighbours too.",
+      "TRUE — Suppliers expect payment and orders without needing ownership."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "file": "src/data/economics-cases-ch3-subtopics.json",
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.41",
+    "title": "an electronics-components manufacturer stakeholder spread",
+    "context": "Consider an electronics-components manufacturer affects owners, employees, suppliers, communities, and regulators in many countries. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees at an electronics-components manufacturer PCB plants are stakeholders affected by corporate decisions.",
+      "Government regulators in host countries hold stakeholder interests in an electronics-components manufacturer operations.",
+      "Communities near an electronics-components manufacturer facilities may be stakeholders affected by jobs and local spending.",
+      "an electronics-components manufacturer affects employees, suppliers, communities, and regulators across its operating countries.",
+      "A multinational like an electronics-components manufacturer has stakeholders only among its shareholders."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Employees are stakeholders through income, security, and identification.",
+      "TRUE — Government is a stakeholder via regulation, tax, and policy.",
+      "TRUE — Communities are affected by business activity and count as stakeholders.",
+      "TRUE — Large multinationals have broad stakeholder groups.",
+      "FALSE — Stakeholders include employees, suppliers, communities, and regulators too."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  }
+]
