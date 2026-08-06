@@ -1,8 +1,7 @@
 /**
- * Build shuffled slot plan for Ch.6 banks: 150 cases × 5 subtopics.
- * TRUE counts: exactly 30 of each 1..5.
- * Difficulty: 75 × 5/5, and 75 among 2/5, 3/5, 4/5 (25 each).
- * Cases 01–75 = textual half; 76–150 = table/chart half (same schedule rules).
+ * Ch.6 slot plan: 125 cases × 5 subtopics.
+ * Part 1 (text):  CASE 6.x.001–050 — 50 per subtopic
+ * Part 2 (table): CASE 6.x.051–125 — 75 per subtopic
  */
 import fs from "node:fs";
 
@@ -32,29 +31,32 @@ function truePositions(trueCount, rng) {
 
 function buildHalf(sub, halfTag, startIdx, count, seedOffset) {
   const rng = mulberry32(Number(sub.replace(".", "")) * 7919 + seedOffset);
+  const perTrue = count / 5;
   const trueCounts = shuffle(
     [
-      ...Array(15).fill(1),
-      ...Array(15).fill(2),
-      ...Array(15).fill(3),
-      ...Array(15).fill(4),
-      ...Array(15).fill(5),
+      ...Array(perTrue).fill(1),
+      ...Array(perTrue).fill(2),
+      ...Array(perTrue).fill(3),
+      ...Array(perTrue).fill(4),
+      ...Array(perTrue).fill(5),
     ],
     rng,
   );
+  const hard = Math.floor(count / 2);
+  const soft = count - hard;
   const diffs = shuffle(
     [
-      ...Array(38).fill("5/5"),
-      ...Array(13).fill("2/5"),
-      ...Array(12).fill("3/5"),
-      ...Array(12).fill("4/5"),
+      ...Array(hard).fill("5/5"),
+      ...Array(Math.floor(soft / 3)).fill("2/5"),
+      ...Array(Math.floor(soft / 3)).fill("3/5"),
+      ...Array(soft - 2 * Math.floor(soft / 3)).fill("4/5"),
     ],
     rng,
   );
   return trueCounts.map((tc, i) => {
     const n = startIdx + i;
     return {
-      case_id: `CASE ${sub}.${String(n).padStart(2, "0")}`,
+      case_id: `CASE ${sub}.${String(n).padStart(3, "0")}`,
       subsection: sub,
       half: halfTag,
       trueCount: tc,
@@ -68,8 +70,8 @@ const SUBS = ["6.1", "6.2", "6.3", "6.4", "6.5"];
 const out = {};
 
 for (const sub of SUBS) {
-  const text = buildHalf(sub, "text", 1, 75, 11);
-  const table = buildHalf(sub, "table", 76, 75, 77);
+  const text = buildHalf(sub, "text", 1, 50, 11);
+  const table = buildHalf(sub, "table", 51, 75, 77);
   out[sub] = [...text, ...table];
 }
 

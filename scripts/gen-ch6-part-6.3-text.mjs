@@ -905,11 +905,10 @@ const FALSE = buildFalsePool();
 
 console.log("Pools:", TRUE.length, "TRUE,", FALSE.length, "FALSE,", SCENE.length, "SCENE,", THEORY.length, "THEORY,", TITLES.length, "TITLES");
 
-if (slots.length !== 75) throw new Error(`expected 75 text slots, got ${slots.length}`);
-if (SCENE.length < 19) throw new Error(`SCENE pool only ${SCENE.length}, need >= 19`);
-if (THEORY.length < 55) throw new Error(`THEORY pool only ${THEORY.length}, need >= 55`);
-if (TITLES.length !== 75) throw new Error(`TITLES must be exactly 75, got ${TITLES.length}`);
-if (sceneIndices.length !== 19) throw new Error(`sceneIndices must be 19, got ${sceneIndices.length}`);
+if (slots.length !== 50) throw new Error(`expected 50 text slots, got ${slots.length}`);
+if (SCENE.length < 15) throw new Error(`SCENE pool only ${SCENE.length}, need >= 15`);
+if (THEORY.length < 40) throw new Error(`THEORY pool only ${THEORY.length}, need >= 40`);
+if (TITLES.length < 50) throw new Error(`TITLES need >= 50, got ${TITLES.length}`);
 
 const cases = buildCases({
   subsection: "6.3",

@@ -1,0 +1,2252 @@
+[
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.051",
+    "title": "Chart: Equity Versus Total Assets",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=487\nMachinery=155\nInventory=151\nTrade receivables=110\nCash and cash equivalents=45\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 487 |\n| Machinery | 155 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 61 |\n| Inventory | 151 |\n| Trade receivables | 110 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1085** |\n| **EQUITY** | |\n| Share capital | 265 |\n| Retained earnings | 246 |\n| Total equity | **511** |\n| **LIABILITIES** | |\n| Long-term bank loan | 230 |\n| Bonds payable | 45 |\n| Trade payables | 231 |\n| Bank overdraft | 68 |\n| Total liabilities | **574** |\n| Total equity and liabilities | **1085** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 163 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 151 |\n| Cash flow from investing activities | (237) |\n| Cash flow from financing activities | 51 |\n| Cash and cash equivalents at the beginning of the year | 80 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €163 thousand and equity of €511 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 20.7% on equity of €511 thousand is mainly useful when compared with similar businesses or past years rather than judged alone.",
+      "Working capital on this combined extract equals €7 thousand.",
+      "The net change in cash and cash equivalents for the year equals €-35 thousand.",
+      "Cash and cash equivalents at the end of the year equal €45 thousand and exceed €90 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Return on equity is about 31.9%.",
+      "TRUE — Comparative context makes return on capital employed meaningful.",
+      "FALSE — Working capital equals 7.",
+      "FALSE — Net change equals -35.",
+      "FALSE — Ending cash is about 45."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.052",
+    "title": "Chart: Asset Composition Pie",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=889 | Operating result=294\nYear 2 | Revenue=1082 | Operating result=344\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 889 | 1082 |\n| Cost of sales | (524) | (649) |\n| Gross profit | 365 | 433 |\n| Distribution costs | (39) | (48) |\n| General and administrative costs | (35) | (42) |\n| Other operating result | 3 | 1 |\n| Operating result | 294 | 344 |\n| Finance costs | (22) | (30) |\n| Finance costs – net | (19) | (27) |\n| Profit before tax | 275 | 317 |\n| Income taxes | (54) | (65) |\n| Profit for the year | 221 | 252 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €1082 thousand.",
+      "The operating result more than doubled from €294 thousand in Year 1 to €344 thousand in Year 2.",
+      "Revenue was higher in Year 2 at €1082 thousand than in Year 1 at €889 thousand.",
+      "Cost of sales of €649 thousand exceeded revenue of €1082 thousand in Year 2.",
+      "Profit for the year was higher in Year 2 at €252 thousand than in Year 1 at €221 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Margins were 41.1% then 40.0%.",
+      "FALSE — Operating result moved from 294 to 344.",
+      "TRUE — Revenue rose from 889 to 1082.",
+      "FALSE — Cost of sales was 649 against revenue 1082.",
+      "TRUE — Profit for the year was 221 then 252."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.053",
+    "title": "Chart: Share Price Movement",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=487 | Total assets=1078\nYear 2 | Equity=529 | Total assets=1184\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 467 | 510 |\n| Machinery | 136 | 142 |\n| Office equipment | 74 | 82 |\n| Patents, trademarks and licences | 55 | 55 |\n| Inventory | 155 | 173 |\n| Trade receivables | 102 | 116 |\n| Cash and cash equivalents | 89 | 106 |\n| Total assets | **1078** | **1184** |\n| **EQUITY** | | |\n| Share capital | 231 | 231 |\n| Retained earnings | 256 | 298 |\n| Total equity | **487** | **529** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 231 | 268 |\n| Bonds payable | 74 | 84 |\n| Trade payables | 198 | 210 |\n| Bank overdraft | 88 | 93 |\n| Total liabilities | **591** | **655** |\n| Total equity and liabilities | **1078** | **1184** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €231 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1078 thousand to €1184 thousand.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1184 thousand in Year 2.",
+      "Non-current assets of €732 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Trade payables of €210 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 231; retained earnings rose.",
+      "TRUE — Shares were 67.9% then 66.6%.",
+      "FALSE — Equity rose about 8.6%.",
+      "TRUE — Year 1 cover: 732 vs 792.",
+      "FALSE — Trade payables are current liabilities."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.054",
+    "title": "Gearing From Comparative Balance Sheets",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 476 |\n| Machinery | 184 |\n| Office equipment | 46 |\n| Patents, trademarks and licences | 20 |\n| Inventory | 93 |\n| Trade receivables | 146 |\n| Cash and cash equivalents | 61 |\n| Total assets | **1026** |\n| **EQUITY** | |\n| Share capital | 230 |\n| Retained earnings | 150 |\n| Total equity | **380** |\n| **LIABILITIES** | |\n| Long-term bank loan | 299 |\n| Bonds payable | 50 |\n| Trade payables | 219 |\n| Bank overdraft | 78 |\n| Total liabilities | **646** |\n| Total equity and liabilities | **1026** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1026 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €3 thousand is positive on this balance sheet.",
+      "The equity ratio on assets of €1026 thousand is below 30%.",
+      "Buildings of €476 thousand exceed machinery of €184 thousand.",
+      "Inventory of €93 thousand is recorded as a non-current intangible asset."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Current ratio is about 1.01.",
+      "TRUE — Working capital equals 3.",
+      "FALSE — Equity ratio is about 37.0%.",
+      "TRUE — Buildings 476 vs machinery 184.",
+      "FALSE — Inventory is a current asset."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.055",
+    "title": "Chart: Earnings Per Share Bar",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=289\nMachinery=120\nInventory=257\nTrade receivables=113\nCash and cash equivalents=77\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 289 |\n| Machinery | 120 |\n| Office equipment | 79 |\n| Patents, trademarks and licences | 51 |\n| Inventory | 257 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 77 |\n| Total assets | **986** |\n| **EQUITY** | |\n| Share capital | 238 |\n| Retained earnings | 214 |\n| Total equity | **452** |\n| **LIABILITIES** | |\n| Long-term bank loan | 221 |\n| Bonds payable | 78 |\n| Trade payables | 166 |\n| Bank overdraft | 69 |\n| Total liabilities | **534** |\n| Total equity and liabilities | **986** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 239 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 233 |\n| Cash flow from investing activities | (233) |\n| Cash flow from financing activities | 33 |\n| Cash and cash equivalents at the beginning of the year | 44 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €239 thousand and equity of €452 thousand, return on equity exceeds 35%.",
+      "Working capital on this combined extract equals €212 thousand.",
+      "The net change in cash and cash equivalents for the year equals €33 thousand.",
+      "Cash and cash equivalents at the end of the year equal €77 thousand and exceed €90 thousand.",
+      "Cash flow from investing activities of €-233 thousand was an inflow during the year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Return on equity is about 52.9%.",
+      "FALSE — Working capital equals 212.",
+      "FALSE — Net change equals 33.",
+      "FALSE — Ending cash is about 77.",
+      "FALSE — Investing cash flow was -233."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.056",
+    "title": "Chart: Operating and Investing Flows",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=970 | Operating result=270\nYear 2 | Revenue=1156 | Operating result=311\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 970 | 1156 |\n| Cost of sales | (620) | (749) |\n| Gross profit | 350 | 407 |\n| Distribution costs | (49) | (56) |\n| General and administrative costs | (32) | (39) |\n| Other operating result | 1 | (1) |\n| Operating result | 270 | 311 |\n| Finance costs | (17) | (20) |\n| Finance costs – net | (10) | (14) |\n| Profit before tax | 260 | 297 |\n| Income taxes | (50) | (61) |\n| Profit for the year | 210 | 236 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The operating result more than doubled from €270 thousand in Year 1 to €311 thousand in Year 2.",
+      "On this income statement, distribution costs of €56 thousand are deducted from revenue before gross profit is calculated.",
+      "Cost of sales of €749 thousand exceeded revenue of €1156 thousand in Year 2.",
+      "Revenue was higher in Year 2 at €1156 thousand than in Year 1 at €970 thousand.",
+      "Profit for the year was higher in Year 2 at €236 thousand than in Year 1 at €210 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Operating result moved from 270 to 311.",
+      "FALSE — Gross profit is revenue minus cost of sales only.",
+      "FALSE — Cost of sales was 749 against revenue 1156.",
+      "TRUE — Revenue rose from 970 to 1156.",
+      "TRUE — Profit for the year was 210 then 236."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.057",
+    "title": "Chart: Revenue and Operating Result",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=649 | Total assets=1402\nYear 2 | Equity=700 | Total assets=1515\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 501 | 516 |\n| Machinery | 242 | 257 |\n| Office equipment | 62 | 66 |\n| Patents, trademarks and licences | 57 | 57 |\n| Inventory | 263 | 307 |\n| Trade receivables | 169 | 181 |\n| Cash and cash equivalents | 108 | 131 |\n| Total assets | **1402** | **1515** |\n| **EQUITY** | | |\n| Share capital | 218 | 218 |\n| Retained earnings | 431 | 482 |\n| Total equity | **649** | **700** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 433 | 460 |\n| Bonds payable | 90 | 96 |\n| Trade payables | 162 | 187 |\n| Bank overdraft | 68 | 72 |\n| Total liabilities | **753** | **815** |\n| Total equity and liabilities | **1402** | **1515** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1515 thousand in Year 2.",
+      "Since share capital remained unchanged at €218 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Trade payables of €187 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1402 thousand to €1515 thousand.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €310 thousand to €360 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity rose about 7.9%.",
+      "TRUE — Share capital stayed at 218; retained earnings rose.",
+      "FALSE — Trade payables are current liabilities.",
+      "TRUE — Shares were 61.5% then 59.1%.",
+      "FALSE — Working capital moved from 310 to 360."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.058",
+    "title": "Chart: Beginning Versus Ending Balances",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=586 | Total assets=1087\nYear 2 | Equity=657 | Total assets=1185\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 298 | 306 |\n| Machinery | 211 | 228 |\n| Office equipment | 64 | 72 |\n| Patents, trademarks and licences | 52 | 52 |\n| Inventory | 273 | 320 |\n| Trade receivables | 139 | 158 |\n| Cash and cash equivalents | 50 | 49 |\n| Total assets | **1087** | **1185** |\n| **EQUITY** | | |\n| Share capital | 227 | 227 |\n| Retained earnings | 359 | 430 |\n| Total equity | **586** | **657** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 205 | 214 |\n| Bonds payable | 41 | 44 |\n| Trade payables | 185 | 192 |\n| Bank overdraft | 70 | 78 |\n| Total liabilities | **501** | **528** |\n| Total equity and liabilities | **1087** | **1185** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €227 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1087 thousand to €1185 thousand.",
+      "The equity ratio on total assets of €1185 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1185 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Non-current assets of €625 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 227; retained earnings rose.",
+      "TRUE — Shares were 57.5% then 55.5%.",
+      "TRUE — Equity ratio: 53.9% then 55.4%.",
+      "TRUE — Debt ratio: 46.1% then 44.6%.",
+      "TRUE — Year 1 cover: 625 vs 832."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.059",
+    "title": "Chart: Annual Depreciation by Asset",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=283\nMachinery=179\nInventory=86\nTrade receivables=89\nCash and cash equivalents=90\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 283 |\n| Machinery | 179 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 78 |\n| Inventory | 86 |\n| Trade receivables | 89 |\n| Cash and cash equivalents | 90 |\n| Total assets | **878** |\n| **EQUITY** | |\n| Share capital | 125 |\n| Retained earnings | 36 |\n| Total equity | **161** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 80 |\n| Trade payables | 213 |\n| Bank overdraft | 28 |\n| Total liabilities | **717** |\n| Total equity and liabilities | **878** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 239 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 232 |\n| Cash flow from investing activities | (219) |\n| Cash flow from financing activities | 45 |\n| Cash and cash equivalents at the beginning of the year | 32 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital on this combined extract equals €24 thousand.",
+      "The net change in cash and cash equivalents for the year equals €58 thousand.",
+      "With operating result of €239 thousand and equity of €161 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 37.5% on equity of €161 thousand is mainly useful when compared with similar businesses or past years rather than judged alone.",
+      "Cash and cash equivalents at the end of the year equal €90 thousand and exceed €90 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital equals 24.",
+      "FALSE — Net change equals 58.",
+      "TRUE — Return on equity is about 148.4%.",
+      "TRUE — Comparative context makes return on capital employed meaningful.",
+      "FALSE — Ending cash is about 90."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.060",
+    "title": "Equity Ratio Movement",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 441 |\n| Machinery | 158 |\n| Office equipment | 80 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 229 |\n| Trade receivables | 98 |\n| Cash and cash equivalents | 36 |\n| Total assets | **1136** |\n| **EQUITY** | |\n| Share capital | 150 |\n| Retained earnings | 362 |\n| Total equity | **512** |\n| **LIABILITIES** | |\n| Long-term bank loan | 406 |\n| Bonds payable | 43 |\n| Trade payables | 115 |\n| Bank overdraft | 60 |\n| Total liabilities | **624** |\n| Total equity and liabilities | **1136** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1136 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €188 thousand is positive on this balance sheet.",
+      "Buildings of €441 thousand exceed machinery of €158 thousand.",
+      "The equity ratio on assets of €1136 thousand is below 30%.",
+      "Total liabilities of €624 thousand exceed total equity of €512 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.07.",
+      "TRUE — Working capital equals 188.",
+      "TRUE — Buildings 441 vs machinery 158.",
+      "FALSE — Equity ratio is about 45.1%.",
+      "TRUE — Liabilities 624 vs equity 512."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.061",
+    "title": "Stock Market Reporting Extract",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=698 | Total assets=1208\nYear 2 | Equity=738 | Total assets=1288\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 430 | 457 |\n| Machinery | 218 | 230 |\n| Office equipment | 49 | 53 |\n| Patents, trademarks and licences | 78 | 78 |\n| Inventory | 195 | 204 |\n| Trade receivables | 146 | 168 |\n| Cash and cash equivalents | 92 | 98 |\n| Total assets | **1208** | **1288** |\n| **EQUITY** | | |\n| Share capital | 228 | 228 |\n| Retained earnings | 470 | 510 |\n| Total equity | **698** | **738** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 211 | 230 |\n| Bonds payable | 86 | 94 |\n| Trade payables | 166 | 174 |\n| Bank overdraft | 47 | 52 |\n| Total liabilities | **510** | **550** |\n| Total equity and liabilities | **1208** | **1288** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1288 thousand in Year 2.",
+      "Since share capital remained unchanged at €228 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1208 thousand to €1288 thousand.",
+      "Trade payables of €174 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Non-current assets of €775 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity rose about 5.7%.",
+      "TRUE — Share capital stayed at 228; retained earnings rose.",
+      "TRUE — Shares were 64.2% then 63.5%.",
+      "FALSE — Trade payables are current liabilities.",
+      "TRUE — Year 1 cover: 775 vs 995."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.062",
+    "title": "Balance Sheet Financing Mix",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 397 |\n| Machinery | 143 |\n| Office equipment | 56 |\n| Patents, trademarks and licences | 55 |\n| Inventory | 259 |\n| Trade receivables | 133 |\n| Cash and cash equivalents | 54 |\n| Total assets | **1097** |\n| **EQUITY** | |\n| Share capital | 136 |\n| Retained earnings | 513 |\n| Total equity | **649** |\n| **LIABILITIES** | |\n| Long-term bank loan | 204 |\n| Bonds payable | 69 |\n| Trade payables | 106 |\n| Bank overdraft | 69 |\n| Total liabilities | **448** |\n| Total equity and liabilities | **1097** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1097 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1097 thousand is below 30%.",
+      "Working capital of €271 thousand is positive on this balance sheet.",
+      "Inventory of €259 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €187 thousand exceed current liabilities of €175 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.55.",
+      "FALSE — Equity ratio is about 59.2%.",
+      "TRUE — Working capital equals 271.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Acid-test ratio is about 1.07."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.063",
+    "title": "Chart: Equity Versus Total Assets 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=723 | Total assets=1304\nYear 2 | Equity=815 | Total assets=1460\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 425 | 473 |\n| Machinery | 251 | 287 |\n| Office equipment | 73 | 81 |\n| Patents, trademarks and licences | 76 | 76 |\n| Inventory | 216 | 249 |\n| Trade receivables | 162 | 181 |\n| Cash and cash equivalents | 101 | 113 |\n| Total assets | **1304** | **1460** |\n| **EQUITY** | | |\n| Share capital | 285 | 285 |\n| Retained earnings | 438 | 530 |\n| Total equity | **723** | **815** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 333 | 366 |\n| Bonds payable | 70 | 81 |\n| Trade payables | 147 | 163 |\n| Bank overdraft | 31 | 35 |\n| Total liabilities | **581** | **645** |\n| Total equity and liabilities | **1304** | **1460** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €285 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1304 thousand to €1460 thousand.",
+      "The equity ratio on total assets of €1460 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1460 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Non-current assets of €825 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 285; retained earnings rose.",
+      "TRUE — Shares were 63.3% then 62.8%.",
+      "TRUE — Equity ratio: 55.4% then 55.8%.",
+      "TRUE — Debt ratio: 44.6% then 44.2%.",
+      "TRUE — Year 1 cover: 825 vs 1126."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.064",
+    "title": "Chart: Asset Composition Pie 2",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=508 | Total assets=1154\nYear 2 | Equity=580 | Total assets=1254\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 356 | 406 |\n| Machinery | 278 | 280 |\n| Office equipment | 66 | 74 |\n| Patents, trademarks and licences | 95 | 95 |\n| Inventory | 178 | 208 |\n| Trade receivables | 93 | 100 |\n| Cash and cash equivalents | 88 | 91 |\n| Total assets | **1154** | **1254** |\n| **EQUITY** | | |\n| Share capital | 241 | 241 |\n| Retained earnings | 267 | 339 |\n| Total equity | **508** | **580** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 380 | 401 |\n| Bonds payable | 55 | 58 |\n| Trade payables | 129 | 130 |\n| Bank overdraft | 82 | 85 |\n| Total liabilities | **646** | **674** |\n| Total equity and liabilities | **1154** | **1254** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €241 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1154 thousand to €1254 thousand.",
+      "The equity ratio on total assets of €1254 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1254 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Non-current assets of €795 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 241; retained earnings rose.",
+      "TRUE — Shares were 68.9% then 68.2%.",
+      "TRUE — Equity ratio: 44.0% then 46.3%.",
+      "TRUE — Debt ratio: 56.0% then 53.7%.",
+      "TRUE — Year 1 cover: 795 vs 943."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.065",
+    "title": "Chart: Share Price Movement 2",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=683 | Total assets=1168\nYear 2 | Equity=765 | Total assets=1287\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 490 | 547 |\n| Machinery | 193 | 216 |\n| Office equipment | 57 | 63 |\n| Patents, trademarks and licences | 82 | 82 |\n| Inventory | 160 | 172 |\n| Trade receivables | 156 | 176 |\n| Cash and cash equivalents | 30 | 31 |\n| Total assets | **1168** | **1287** |\n| **EQUITY** | | |\n| Share capital | 222 | 222 |\n| Retained earnings | 461 | 543 |\n| Total equity | **683** | **765** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 214 | 236 |\n| Bonds payable | 52 | 56 |\n| Trade payables | 191 | 198 |\n| Bank overdraft | 28 | 32 |\n| Total liabilities | **485** | **522** |\n| Total equity and liabilities | **1168** | **1287** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on total assets of €1287 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1287 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1287 thousand in Year 2.",
+      "Non-current assets of €822 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Inventory of €172 thousand was higher in Year 2 than inventory of €160 thousand in Year 1 on these figures."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity ratio: 58.5% then 59.4%.",
+      "TRUE — Debt ratio: 41.5% then 40.6%.",
+      "FALSE — Equity rose about 12.0%.",
+      "TRUE — Year 1 cover: 822 vs 949.",
+      "TRUE — Inventory was 160 then 172."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.066",
+    "title": "Two-Year Profit and Loss Account",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 121 |\n| Office equipment | 72 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 212 |\n| Trade receivables | 128 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1031** |\n| **EQUITY** | |\n| Share capital | 112 |\n| Retained earnings | 366 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 257 |\n| Bonds payable | 72 |\n| Trade payables | 142 |\n| Bank overdraft | 82 |\n| Total liabilities | **553** |\n| Total equity and liabilities | **1031** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1031 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €197 thousand is positive on this balance sheet.",
+      "Buildings of €354 thousand exceed machinery of €121 thousand.",
+      "Total liabilities of €553 thousand exceed total equity of €478 thousand.",
+      "Total assets equal total equity plus total liabilities at €1031 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.88.",
+      "TRUE — Working capital equals 197.",
+      "TRUE — Buildings 354 vs machinery 121.",
+      "TRUE — Liabilities 553 vs equity 478.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.067",
+    "title": "Operating Cash Flow Movement",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 389 |\n| Machinery | 218 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 86 |\n| Inventory | 195 |\n| Trade receivables | 153 |\n| Cash and cash equivalents | 100 |\n| Total assets | **1198** |\n| **EQUITY** | |\n| Share capital | 124 |\n| Retained earnings | 433 |\n| Total equity | **557** |\n| **LIABILITIES** | |\n| Long-term bank loan | 357 |\n| Bonds payable | 63 |\n| Trade payables | 187 |\n| Bank overdraft | 34 |\n| Total liabilities | **641** |\n| Total equity and liabilities | **1198** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1198 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €227 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €253 thousand exceed current liabilities of €221 thousand.",
+      "Buildings of €389 thousand exceed machinery of €218 thousand.",
+      "Total liabilities of €641 thousand exceed total equity of €557 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.03.",
+      "TRUE — Working capital equals 227.",
+      "TRUE — Acid-test ratio is about 1.14.",
+      "TRUE — Buildings 389 vs machinery 218.",
+      "TRUE — Liabilities 641 vs equity 557."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.068",
+    "title": "Chart: Operating and Investing Flows 2",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=783 | Operating result=241\nYear 2 | Revenue=883 | Operating result=257\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 783 | 883 |\n| Cost of sales | (467) | (522) |\n| Gross profit | 316 | 361 |\n| Distribution costs | (38) | (52) |\n| General and administrative costs | (39) | (50) |\n| Other operating result | 2 | (2) |\n| Operating result | 241 | 257 |\n| Finance costs | (17) | (20) |\n| Finance costs – net | (14) | (18) |\n| Profit before tax | 227 | 239 |\n| Income taxes | (48) | (49) |\n| Profit for the year | 179 | 190 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €883 thousand.",
+      "The operating result more than doubled from €241 thousand in Year 1 to €257 thousand in Year 2.",
+      "Revenue was higher in Year 2 at €883 thousand than in Year 1 at €783 thousand.",
+      "Cost of sales of €522 thousand exceeded revenue of €883 thousand in Year 2.",
+      "Profit for the year was higher in Year 2 at €190 thousand than in Year 1 at €179 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Margins were 40.4% then 40.9%.",
+      "FALSE — Operating result moved from 241 to 257.",
+      "TRUE — Revenue rose from 783 to 883.",
+      "FALSE — Cost of sales was 522 against revenue 883.",
+      "TRUE — Profit for the year was 179 then 190."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.069",
+    "title": "Chart: Revenue and Operating Result 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=323 | Total assets=1032\nYear 2 | Equity=346 | Total assets=1116\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 392 | 432 |\n| Machinery | 166 | 167 |\n| Office equipment | 59 | 61 |\n| Patents, trademarks and licences | 71 | 71 |\n| Inventory | 175 | 189 |\n| Trade receivables | 93 | 106 |\n| Cash and cash equivalents | 76 | 90 |\n| Total assets | **1032** | **1116** |\n| **EQUITY** | | |\n| Share capital | 197 | 197 |\n| Retained earnings | 126 | 149 |\n| Total equity | **323** | **346** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 363 | 401 |\n| Bonds payable | 60 | 65 |\n| Trade payables | 218 | 237 |\n| Bank overdraft | 68 | 67 |\n| Total liabilities | **709** | **770** |\n| Total equity and liabilities | **1032** | **1116** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €197 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1116 thousand in Year 2.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1032 thousand to €1116 thousand.",
+      "Trade payables of €237 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €58 thousand to €81 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 197; retained earnings rose.",
+      "FALSE — Equity rose about 7.1%.",
+      "TRUE — Shares were 66.7% then 65.5%.",
+      "FALSE — Trade payables are current liabilities.",
+      "FALSE — Working capital moved from 58 to 81."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.070",
+    "title": "Combined Financial Statement Pack",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 410 |\n| Machinery | 135 |\n| Office equipment | 68 |\n| Patents, trademarks and licences | 68 |\n| Inventory | 160 |\n| Trade receivables | 94 |\n| Cash and cash equivalents | 69 |\n| Total assets | **1004** |\n| **EQUITY** | |\n| Share capital | 103 |\n| Retained earnings | 168 |\n| Total equity | **271** |\n| **LIABILITIES** | |\n| Long-term bank loan | 439 |\n| Bonds payable | 64 |\n| Trade payables | 197 |\n| Bank overdraft | 33 |\n| Total liabilities | **733** |\n| Total equity and liabilities | **1004** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1004 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €93 thousand is positive on this balance sheet.",
+      "The equity ratio on assets of €1004 thousand is below 30%.",
+      "Buildings of €410 thousand exceed machinery of €135 thousand.",
+      "Total liabilities of €733 thousand exceed total equity of €271 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.40.",
+      "TRUE — Working capital equals 93.",
+      "TRUE — Equity ratio is about 27.0%.",
+      "TRUE — Buildings 410 vs machinery 135.",
+      "TRUE — Liabilities 733 vs equity 271."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.071",
+    "title": "Balance Sheet With Income Extract",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 400 |\n| Machinery | 167 |\n| Office equipment | 74 |\n| Patents, trademarks and licences | 35 |\n| Inventory | 266 |\n| Trade receivables | 135 |\n| Cash and cash equivalents | 38 |\n| Total assets | **1115** |\n| **EQUITY** | |\n| Share capital | 187 |\n| Retained earnings | 219 |\n| Total equity | **406** |\n| **LIABILITIES** | |\n| Long-term bank loan | 428 |\n| Bonds payable | 45 |\n| Trade payables | 151 |\n| Bank overdraft | 85 |\n| Total liabilities | **709** |\n| Total equity and liabilities | **1115** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €203 thousand is positive on this balance sheet.",
+      "Buildings of €400 thousand exceed machinery of €167 thousand.",
+      "Total liabilities of €709 thousand exceed total equity of €406 thousand.",
+      "Total assets equal total equity plus total liabilities at €1115 thousand.",
+      "Inventory of €266 thousand is recorded as a non-current intangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Working capital equals 203.",
+      "TRUE — Buildings 400 vs machinery 167.",
+      "TRUE — Liabilities 709 vs equity 406.",
+      "TRUE — The balance sheet balances.",
+      "FALSE — Inventory is a current asset."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.072",
+    "title": "Listed Company Performance Extract 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=839 | Operating result=212\nYear 2 | Revenue=983 | Operating result=243\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 839 | 983 |\n| Cost of sales | (542) | (634) |\n| Gross profit | 297 | 349 |\n| Distribution costs | (55) | (70) |\n| General and administrative costs | (30) | (39) |\n| Other operating result | 0 | 3 |\n| Operating result | 212 | 243 |\n| Finance costs | (21) | (29) |\n| Finance costs – net | (14) | (27) |\n| Profit before tax | 198 | 216 |\n| Income taxes | (49) | (54) |\n| Profit for the year | 149 | 162 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The operating result more than doubled from €212 thousand in Year 1 to €243 thousand in Year 2.",
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €983 thousand.",
+      "Revenue was higher in Year 2 at €983 thousand than in Year 1 at €839 thousand.",
+      "On this income statement, distribution costs of €70 thousand are deducted from revenue before gross profit is calculated.",
+      "Profit for the year was higher in Year 2 at €162 thousand than in Year 1 at €149 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Operating result moved from 212 to 243.",
+      "TRUE — Margins were 35.4% then 35.5%.",
+      "TRUE — Revenue rose from 839 to 983.",
+      "FALSE — Gross profit is revenue minus cost of sales only.",
+      "TRUE — Profit for the year was 149 then 162."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.073",
+    "title": "Stock Market Reporting Extract 2",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=292 | Total assets=1003\nYear 2 | Equity=310 | Total assets=1124\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 304 | 324 |\n| Machinery | 235 | 277 |\n| Office equipment | 48 | 54 |\n| Patents, trademarks and licences | 23 | 23 |\n| Inventory | 137 | 164 |\n| Trade receivables | 175 | 187 |\n| Cash and cash equivalents | 81 | 95 |\n| Total assets | **1003** | **1124** |\n| **EQUITY** | | |\n| Share capital | 187 | 187 |\n| Retained earnings | 105 | 123 |\n| Total equity | **292** | **310** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 362 | 406 |\n| Bonds payable | 71 | 81 |\n| Trade payables | 248 | 294 |\n| Bank overdraft | 30 | 33 |\n| Total liabilities | **711** | **814** |\n| Total equity and liabilities | **1003** | **1124** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €187 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1124 thousand in Year 2.",
+      "Trade payables of €294 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1003 thousand to €1124 thousand.",
+      "Total assets grew from €1003 thousand to €1124 thousand, an increase of more than 12% on this comparative balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 187; retained earnings rose.",
+      "FALSE — Equity rose about 6.2%.",
+      "FALSE — Trade payables are current liabilities.",
+      "TRUE — Shares were 60.8% then 60.3%.",
+      "TRUE — Asset growth about 12.1%."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.074",
+    "title": "Three-Asset Depreciation Schedule",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 166 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 86 |\n| Trade receivables | 165 |\n| Cash and cash equivalents | 87 |\n| Total assets | **906** |\n| **EQUITY** | |\n| Share capital | 133 |\n| Retained earnings | 289 |\n| Total equity | **422** |\n| **LIABILITIES** | |\n| Long-term bank loan | 268 |\n| Bonds payable | 71 |\n| Trade payables | 70 |\n| Bank overdraft | 75 |\n| Total liabilities | **484** |\n| Total equity and liabilities | **906** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €906 thousand is below 30%.",
+      "Inventory of €86 thousand is recorded as a non-current intangible asset.",
+      "On total assets of €906 thousand, the current ratio exceeds 1.20.",
+      "The current ratio on total assets of €906 thousand is below 1.00 on these figures.",
+      "Cash of €87 thousand exceeds trade receivables of €165 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity ratio is about 46.6%.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Current ratio is about 2.33.",
+      "FALSE — Current ratio is about 2.33.",
+      "FALSE — Cash 87 vs receivables 165."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.075",
+    "title": "Chart: Equity Versus Total Assets 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=724 | Total assets=1176\nYear 2 | Equity=773 | Total assets=1268\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 453 | 476 |\n| Machinery | 187 | 212 |\n| Office equipment | 39 | 44 |\n| Patents, trademarks and licences | 84 | 84 |\n| Inventory | 168 | 200 |\n| Trade receivables | 129 | 138 |\n| Cash and cash equivalents | 116 | 114 |\n| Total assets | **1176** | **1268** |\n| **EQUITY** | | |\n| Share capital | 101 | 101 |\n| Retained earnings | 623 | 672 |\n| Total equity | **724** | **773** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 259 | 285 |\n| Bonds payable | 78 | 87 |\n| Trade payables | 70 | 73 |\n| Bank overdraft | 45 | 50 |\n| Total liabilities | **452** | **495** |\n| Total equity and liabilities | **1176** | **1268** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €101 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1268 thousand in Year 2.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1176 thousand to €1268 thousand.",
+      "Non-current assets of €763 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Trade payables of €73 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 101; retained earnings rose.",
+      "FALSE — Equity rose about 6.8%.",
+      "TRUE — Shares were 64.9% then 64.4%.",
+      "TRUE — Year 1 cover: 763 vs 1061.",
+      "FALSE — Trade payables are current liabilities."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.076",
+    "title": "Chart: Asset Composition Pie 3",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=661 | Total assets=1180\nYear 2 | Equity=740 | Total assets=1281\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 438 | 473 |\n| Machinery | 272 | 283 |\n| Office equipment | 53 | 57 |\n| Patents, trademarks and licences | 71 | 71 |\n| Inventory | 163 | 189 |\n| Trade receivables | 149 | 170 |\n| Cash and cash equivalents | 34 | 38 |\n| Total assets | **1180** | **1281** |\n| **EQUITY** | | |\n| Share capital | 248 | 248 |\n| Retained earnings | 413 | 492 |\n| Total equity | **661** | **740** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 300 | 315 |\n| Bonds payable | 45 | 46 |\n| Trade payables | 137 | 141 |\n| Bank overdraft | 37 | 39 |\n| Total liabilities | **519** | **541** |\n| Total equity and liabilities | **1180** | **1281** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1281 thousand in Year 2.",
+      "Trade payables of €141 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €172 thousand to €217 thousand.",
+      "Since share capital remained unchanged at €248 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Total assets grew from €1180 thousand to €1281 thousand, an increase of more than 12% on this comparative balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity rose about 12.0%.",
+      "FALSE — Trade payables are current liabilities.",
+      "FALSE — Working capital moved from 172 to 217.",
+      "TRUE — Share capital stayed at 248; retained earnings rose.",
+      "FALSE — Asset growth about 8.6%."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.077",
+    "title": "Retail Balance Sheet Liquidity",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 323 |\n| Machinery | 144 |\n| Office equipment | 62 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 154 |\n| Trade receivables | 74 |\n| Cash and cash equivalents | 60 |\n| Total assets | **864** |\n| **EQUITY** | |\n| Share capital | 234 |\n| Retained earnings | -226 |\n| Total equity | **8** |\n| **LIABILITIES** | |\n| Long-term bank loan | 440 |\n| Bonds payable | 83 |\n| Trade payables | 243 |\n| Bank overdraft | 90 |\n| Total liabilities | **856** |\n| Total equity and liabilities | **864** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €864 thousand is below 30%.",
+      "The current ratio on total assets of €864 thousand is below 1.00 on these figures.",
+      "Buildings of €323 thousand exceed machinery of €144 thousand.",
+      "Total liabilities of €856 thousand exceed total equity of €8 thousand.",
+      "Total assets equal total equity plus total liabilities at €864 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Equity ratio is about 0.9%.",
+      "TRUE — Current ratio is about 0.86.",
+      "TRUE — Buildings 323 vs machinery 144.",
+      "TRUE — Liabilities 856 vs equity 8.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.078",
+    "title": "Turnover and Asset Base Review",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 301 |\n| Machinery | 144 |\n| Office equipment | 65 |\n| Patents, trademarks and licences | 28 |\n| Inventory | 94 |\n| Trade receivables | 86 |\n| Cash and cash equivalents | 105 |\n| Total assets | **823** |\n| **EQUITY** | |\n| Share capital | 121 |\n| Retained earnings | 156 |\n| Total equity | **277** |\n| **LIABILITIES** | |\n| Long-term bank loan | 246 |\n| Bonds payable | 59 |\n| Trade payables | 203 |\n| Bank overdraft | 38 |\n| Total liabilities | **546** |\n| Total equity and liabilities | **823** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €44 thousand is positive on this balance sheet.",
+      "Buildings of €301 thousand exceed machinery of €144 thousand.",
+      "Cash of €105 thousand exceeds trade receivables of €86 thousand.",
+      "Total liabilities of €546 thousand exceed total equity of €277 thousand.",
+      "Total assets equal total equity plus total liabilities at €823 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Working capital equals 44.",
+      "TRUE — Buildings 301 vs machinery 144.",
+      "TRUE — Cash 105 vs receivables 86.",
+      "TRUE — Liabilities 546 vs equity 277.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.079",
+    "title": "Return on Equity From Extract",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 414 |\n| Machinery | 216 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 32 |\n| Inventory | 126 |\n| Trade receivables | 78 |\n| Cash and cash equivalents | 75 |\n| Total assets | **1004** |\n| **EQUITY** | |\n| Share capital | 220 |\n| Retained earnings | 136 |\n| Total equity | **356** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 83 |\n| Trade payables | 84 |\n| Bank overdraft | 57 |\n| Total liabilities | **648** |\n| Total equity and liabilities | **1004** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €138 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €153 thousand exceed current liabilities of €141 thousand.",
+      "Buildings of €414 thousand exceed machinery of €216 thousand.",
+      "Inventory of €126 thousand is recorded as a non-current intangible asset.",
+      "Total liabilities of €648 thousand exceed total equity of €356 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Working capital equals 138.",
+      "TRUE — Acid-test ratio is about 1.09.",
+      "TRUE — Buildings 414 vs machinery 216.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Liabilities 648 vs equity 356."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.080",
+    "title": "Liquidity Ratio Assertion Pack",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 457 |\n| Machinery | 185 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 25 |\n| Inventory | 126 |\n| Trade receivables | 120 |\n| Cash and cash equivalents | 73 |\n| Total assets | **1043** |\n| **EQUITY** | |\n| Share capital | 196 |\n| Retained earnings | 301 |\n| Total equity | **497** |\n| **LIABILITIES** | |\n| Long-term bank loan | 353 |\n| Bonds payable | 71 |\n| Trade payables | 68 |\n| Bank overdraft | 54 |\n| Total liabilities | **546** |\n| Total equity and liabilities | **1043** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1043 thousand, the current ratio exceeds 1.20.",
+      "Excluding inventory, current assets of €193 thousand exceed current liabilities of €122 thousand.",
+      "Buildings of €457 thousand exceed machinery of €185 thousand.",
+      "Total liabilities of €546 thousand exceed total equity of €497 thousand.",
+      "The equity ratio on assets of €1043 thousand is below 30%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.61.",
+      "TRUE — Acid-test ratio is about 1.58.",
+      "TRUE — Buildings 457 vs machinery 185.",
+      "TRUE — Liabilities 546 vs equity 497.",
+      "FALSE — Equity ratio is about 47.7%."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.081",
+    "title": "Comparative Balance Sheet Structure 2",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 514 |\n| Machinery | 156 |\n| Office equipment | 31 |\n| Patents, trademarks and licences | 31 |\n| Inventory | 171 |\n| Trade receivables | 66 |\n| Cash and cash equivalents | 107 |\n| Total assets | **1076** |\n| **EQUITY** | |\n| Share capital | 120 |\n| Retained earnings | 500 |\n| Total equity | **620** |\n| **LIABILITIES** | |\n| Long-term bank loan | 239 |\n| Bonds payable | 77 |\n| Trade payables | 90 |\n| Bank overdraft | 50 |\n| Total liabilities | **456** |\n| Total equity and liabilities | **1076** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1076 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €204 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €173 thousand exceed current liabilities of €140 thousand.",
+      "Buildings of €514 thousand exceed machinery of €156 thousand.",
+      "Cash of €107 thousand exceeds trade receivables of €66 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.46.",
+      "TRUE — Working capital equals 204.",
+      "TRUE — Acid-test ratio is about 1.24.",
+      "TRUE — Buildings 514 vs machinery 156.",
+      "TRUE — Cash 107 vs receivables 66."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.082",
+    "title": "Two-Year Equity Development 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 369 |\n| Machinery | 172 |\n| Office equipment | 52 |\n| Patents, trademarks and licences | 31 |\n| Inventory | 212 |\n| Trade receivables | 135 |\n| Cash and cash equivalents | 95 |\n| Total assets | **1066** |\n| **EQUITY** | |\n| Share capital | 201 |\n| Retained earnings | 265 |\n| Total equity | **466** |\n| **LIABILITIES** | |\n| Long-term bank loan | 310 |\n| Bonds payable | 75 |\n| Trade payables | 159 |\n| Bank overdraft | 56 |\n| Total liabilities | **600** |\n| Total equity and liabilities | **1066** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1066 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1066 thousand is below 30%.",
+      "Excluding inventory, current assets of €230 thousand exceed current liabilities of €215 thousand.",
+      "Buildings of €369 thousand exceed machinery of €172 thousand.",
+      "Total liabilities of €600 thousand exceed total equity of €466 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.06.",
+      "FALSE — Equity ratio is about 43.7%.",
+      "TRUE — Acid-test ratio is about 1.07.",
+      "TRUE — Buildings 369 vs machinery 172.",
+      "TRUE — Liabilities 600 vs equity 466."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.083",
+    "title": "Chart: Annual Depreciation by Asset 3",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=442\nMachinery=196\nInventory=150\nTrade receivables=174\nCash and cash equivalents=99\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 442 |\n| Machinery | 196 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 150 |\n| Trade receivables | 174 |\n| Cash and cash equivalents | 99 |\n| Total assets | **1141** |\n| **EQUITY** | |\n| Share capital | 121 |\n| Retained earnings | 404 |\n| Total equity | **525** |\n| **LIABILITIES** | |\n| Long-term bank loan | 363 |\n| Bonds payable | 69 |\n| Trade payables | 125 |\n| Bank overdraft | 59 |\n| Total liabilities | **616** |\n| Total equity and liabilities | **1141** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 205 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 189 |\n| Cash flow from investing activities | (197) |\n| Cash flow from financing activities | 31 |\n| Cash and cash equivalents at the beginning of the year | 76 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital on this combined extract equals €239 thousand.",
+      "The net change in cash and cash equivalents for the year equals €23 thousand.",
+      "Cash flow from investing activities of €-197 thousand was an inflow during the year.",
+      "With operating result of €205 thousand and equity of €525 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 21.4% on equity of €525 thousand is mainly useful when compared with similar businesses or past years rather than judged alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital equals 239.",
+      "FALSE — Net change equals 23.",
+      "FALSE — Investing cash flow was -197.",
+      "TRUE — Return on equity is about 39.0%.",
+      "TRUE — Comparative context makes return on capital employed meaningful."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.084",
+    "title": "Listed Company Performance Extract 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=307 | Total assets=998\nYear 2 | Equity=350 | Total assets=1103\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 297 | 322 |\n| Machinery | 226 | 257 |\n| Office equipment | 79 | 84 |\n| Patents, trademarks and licences | 98 | 98 |\n| Inventory | 88 | 102 |\n| Trade receivables | 125 | 143 |\n| Cash and cash equivalents | 85 | 97 |\n| Total assets | **998** | **1103** |\n| **EQUITY** | | |\n| Share capital | 276 | 276 |\n| Retained earnings | 31 | 74 |\n| Total equity | **307** | **350** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 407 | 443 |\n| Bonds payable | 89 | 99 |\n| Trade payables | 133 | 138 |\n| Bank overdraft | 62 | 73 |\n| Total liabilities | **691** | **753** |\n| Total equity and liabilities | **998** | **1103** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1103 thousand in Year 2.",
+      "Trade payables of €138 thousand in Year 2 are classified under non-current liabilities because suppliers are normally allowed more than a year to be paid.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €103 thousand to €131 thousand.",
+      "Total assets grew from €998 thousand to €1103 thousand, an increase of more than 12% on this comparative balance sheet.",
+      "Since share capital remained unchanged at €276 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity rose about 14.0%.",
+      "FALSE — Trade payables are current liabilities.",
+      "FALSE — Working capital moved from 103 to 131.",
+      "FALSE — Asset growth about 10.5%.",
+      "TRUE — Share capital stayed at 276; retained earnings rose."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.085",
+    "title": "Stock Market Reporting Extract 3",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=463 | Total assets=971\nYear 2 | Equity=514 | Total assets=1049\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 374 | 402 |\n| Machinery | 215 | 229 |\n| Office equipment | 53 | 56 |\n| Patents, trademarks and licences | 38 | 38 |\n| Inventory | 134 | 154 |\n| Trade receivables | 61 | 68 |\n| Cash and cash equivalents | 96 | 102 |\n| Total assets | **971** | **1049** |\n| **EQUITY** | | |\n| Share capital | 108 | 108 |\n| Retained earnings | 355 | 406 |\n| Total equity | **463** | **514** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 310 | 321 |\n| Bonds payable | 59 | 65 |\n| Trade payables | 79 | 89 |\n| Bank overdraft | 60 | 60 |\n| Total liabilities | **508** | **535** |\n| Total equity and liabilities | **971** | **1049** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €108 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €971 thousand to €1049 thousand.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1049 thousand in Year 2.",
+      "The equity ratio on total assets of €1049 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1049 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 108; retained earnings rose.",
+      "TRUE — Shares were 70.0% then 69.1%.",
+      "FALSE — Equity rose about 11.0%.",
+      "TRUE — Equity ratio: 47.7% then 49.0%.",
+      "TRUE — Debt ratio: 52.3% then 51.0%."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.086",
+    "title": "Share Turnover and Price Table 3",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=399 | Total assets=1032\nYear 2 | Equity=436 | Total assets=1114\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 433 | 479 |\n| Machinery | 262 | 280 |\n| Office equipment | 30 | 33 |\n| Patents, trademarks and licences | 69 | 69 |\n| Inventory | 81 | 87 |\n| Trade receivables | 84 | 85 |\n| Cash and cash equivalents | 73 | 81 |\n| Total assets | **1032** | **1114** |\n| **EQUITY** | | |\n| Share capital | 106 | 106 |\n| Retained earnings | 293 | 330 |\n| Total equity | **399** | **436** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 312 | 329 |\n| Bonds payable | 44 | 47 |\n| Trade payables | 191 | 215 |\n| Bank overdraft | 86 | 87 |\n| Total liabilities | **633** | **678** |\n| Total equity and liabilities | **1032** | **1114** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €106 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €-39 thousand to €-49 thousand.",
+      "The equity ratio on total assets of €1114 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1114 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Inventory of €87 thousand was higher in Year 2 than inventory of €81 thousand in Year 1 on these figures."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 106; retained earnings rose.",
+      "TRUE — Working capital moved from -39 to -49.",
+      "TRUE — Equity ratio: 38.7% then 39.1%.",
+      "TRUE — Debt ratio: 61.3% then 60.9%.",
+      "TRUE — Inventory was 81 then 87."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.087",
+    "title": "Chart: Equity Versus Total Assets 4",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=383\nMachinery=185\nInventory=261\nTrade receivables=172\nCash and cash equivalents=100\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 383 |\n| Machinery | 185 |\n| Office equipment | 59 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 261 |\n| Trade receivables | 172 |\n| Cash and cash equivalents | 100 |\n| Total assets | **1239** |\n| **EQUITY** | |\n| Share capital | 209 |\n| Retained earnings | 359 |\n| Total equity | **568** |\n| **LIABILITIES** | |\n| Long-term bank loan | 362 |\n| Bonds payable | 60 |\n| Trade payables | 217 |\n| Bank overdraft | 32 |\n| Total liabilities | **671** |\n| Total equity and liabilities | **1239** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 189 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 212 |\n| Cash flow from investing activities | (278) |\n| Cash flow from financing activities | 71 |\n| Cash and cash equivalents at the beginning of the year | 95 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €189 thousand and equity of €568 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 19.1% on equity of €568 thousand is mainly useful when compared with similar businesses or past years rather than judged alone.",
+      "Working capital on this combined extract equals €284 thousand.",
+      "The net change in cash and cash equivalents for the year equals €5 thousand.",
+      "Cash flow from investing activities of €-278 thousand was an inflow during the year."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Return on equity is about 33.3%.",
+      "TRUE — Comparative context makes return on capital employed meaningful.",
+      "FALSE — Working capital equals 284.",
+      "FALSE — Net change equals 5.",
+      "FALSE — Investing cash flow was -278."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.088",
+    "title": "Chart: Asset Composition Pie 4",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=353 | Total assets=902\nYear 2 | Equity=385 | Total assets=945\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 302 | 318 |\n| Machinery | 176 | 188 |\n| Office equipment | 70 | 74 |\n| Patents, trademarks and licences | 72 | 72 |\n| Inventory | 108 | 111 |\n| Trade receivables | 86 | 84 |\n| Cash and cash equivalents | 88 | 98 |\n| Total assets | **902** | **945** |\n| **EQUITY** | | |\n| Share capital | 185 | 185 |\n| Retained earnings | 168 | 200 |\n| Total equity | **353** | **385** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 188 | 193 |\n| Bonds payable | 74 | 77 |\n| Trade payables | 216 | 213 |\n| Bank overdraft | 71 | 77 |\n| Total liabilities | **549** | **560** |\n| Total equity and liabilities | **902** | **945** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €185 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Working capital more than doubled between Year 1 and Year 2, moving from €-5 thousand to €3 thousand.",
+      "The equity ratio on total assets of €945 thousand improved from Year 1 to Year 2 on these published figures.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €945 thousand in Year 2.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €902 thousand to €945 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 185; retained earnings rose.",
+      "TRUE — Working capital moved from -5 to 3.",
+      "TRUE — Equity ratio: 39.1% then 40.7%.",
+      "FALSE — Equity rose about 9.1%.",
+      "FALSE — Shares were 68.7% then 69.0%."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.089",
+    "title": "Chart: Share Price Movement 4",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=426 | Total assets=1181\nYear 2 | Equity=414 | Total assets=1239\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 489 |\n| Machinery | 214 | 222 |\n| Office equipment | 59 | 64 |\n| Patents, trademarks and licences | 91 | 91 |\n| Inventory | 157 | 167 |\n| Trade receivables | 150 | 160 |\n| Cash and cash equivalents | 39 | 46 |\n| Total assets | **1181** | **1239** |\n| **EQUITY** | | |\n| Share capital | 205 | 205 |\n| Retained earnings | 221 | 209 |\n| Total equity | **426** | **414** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 386 | 438 |\n| Bonds payable | 70 | 79 |\n| Trade payables | 213 | 218 |\n| Bank overdraft | 86 | 90 |\n| Total liabilities | **755** | **825** |\n| Total equity and liabilities | **1181** | **1239** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1181 thousand to €1239 thousand.",
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1239 thousand in Year 2.",
+      "Non-current assets of €835 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Non-current liabilities of €456 thousand exceed equity of €426 thousand in Year 1, indicating a highly geared capital structure in that year.",
+      "Inventory of €167 thousand was higher in Year 2 than inventory of €157 thousand in Year 1 on these figures."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Shares were 70.7% then 69.9%.",
+      "FALSE — Equity rose about -2.8%.",
+      "TRUE — Year 1 cover: 835 vs 882.",
+      "TRUE — Non-current liabilities exceed equity in Year 1.",
+      "TRUE — Inventory was 157 then 167."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.090",
+    "title": "Equity Ratio Movement 2",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 443 |\n| Machinery | 266 |\n| Office equipment | 67 |\n| Patents, trademarks and licences | 97 |\n| Inventory | 189 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1245** |\n| **EQUITY** | |\n| Share capital | 284 |\n| Retained earnings | 201 |\n| Total equity | **485** |\n| **LIABILITIES** | |\n| Long-term bank loan | 426 |\n| Bonds payable | 54 |\n| Trade payables | 206 |\n| Bank overdraft | 74 |\n| Total liabilities | **760** |\n| Total equity and liabilities | **1245** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €1245 thousand is below 30%.",
+      "On total assets of €1245 thousand, the current ratio exceeds 1.20.",
+      "Inventory of €189 thousand is recorded as a non-current intangible asset.",
+      "Working capital of €92 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €183 thousand exceed current liabilities of €280 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity ratio is about 39.0%.",
+      "TRUE — Current ratio is about 1.33.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Working capital equals 92.",
+      "FALSE — Acid-test ratio is about 0.65."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.091",
+    "title": "Chart: Earnings Per Share Bar 4",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=341 | Total assets=1009\nYear 2 | Equity=360 | Total assets=1109\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 410 | 469 |\n| Machinery | 172 | 178 |\n| Office equipment | 50 | 54 |\n| Patents, trademarks and licences | 54 | 54 |\n| Inventory | 208 | 219 |\n| Trade receivables | 84 | 99 |\n| Cash and cash equivalents | 31 | 36 |\n| Total assets | **1009** | **1109** |\n| **EQUITY** | | |\n| Share capital | 113 | 113 |\n| Retained earnings | 228 | 247 |\n| Total equity | **341** | **360** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 299 | 333 |\n| Bonds payable | 77 | 82 |\n| Trade payables | 228 | 258 |\n| Bank overdraft | 64 | 76 |\n| Total liabilities | **668** | **749** |\n| Total equity and liabilities | **1009** | **1109** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity increased by more than 18% from Year 1 to Year 2 on this balance sheet where total assets reached €1109 thousand in Year 2.",
+      "Since share capital remained unchanged at €113 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1009 thousand to €1109 thousand.",
+      "Non-current assets of €686 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Non-current liabilities of €376 thousand exceed equity of €341 thousand in Year 1, indicating a highly geared capital structure in that year."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity rose about 5.6%.",
+      "TRUE — Share capital stayed at 113; retained earnings rose.",
+      "FALSE — Shares were 68.0% then 68.1%.",
+      "TRUE — Year 1 cover: 686 vs 717.",
+      "TRUE — Non-current liabilities exceed equity in Year 1."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.092",
+    "title": "Chart: Operating and Investing Flows 4",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=433 | Total assets=1053\nYear 2 | Equity=506 | Total assets=1168\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 393 | 425 |\n| Machinery | 269 | 317 |\n| Office equipment | 34 | 37 |\n| Patents, trademarks and licences | 23 | 23 |\n| Inventory | 164 | 175 |\n| Trade receivables | 101 | 113 |\n| Cash and cash equivalents | 69 | 78 |\n| Total assets | **1053** | **1168** |\n| **EQUITY** | | |\n| Share capital | 145 | 145 |\n| Retained earnings | 288 | 361 |\n| Total equity | **433** | **506** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 405 | 431 |\n| Bonds payable | 79 | 89 |\n| Trade payables | 66 | 71 |\n| Bank overdraft | 70 | 71 |\n| Total liabilities | **620** | **662** |\n| Total equity and liabilities | **1053** | **1168** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Since share capital remained unchanged at €145 thousand, the entire increase in equity between Year 1 and Year 2 came from internal sources rather than from new capital contributed by the owners.",
+      "The equity ratio on total assets of €1168 thousand improved from Year 1 to Year 2 on these published figures.",
+      "The debt ratio on assets of €1168 thousand decreased from Year 1 to Year 2 when total liabilities fell relative to assets.",
+      "Non-current assets of €719 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Non-current liabilities of €484 thousand exceed equity of €433 thousand in Year 1, indicating a highly geared capital structure in that year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Share capital stayed at 145; retained earnings rose.",
+      "TRUE — Equity ratio: 41.1% then 43.3%.",
+      "TRUE — Debt ratio: 58.9% then 56.7%.",
+      "TRUE — Year 1 cover: 719 vs 917.",
+      "TRUE — Non-current liabilities exceed equity in Year 1."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.093",
+    "title": "Chart: Revenue and Operating Result 4",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=353 | Total assets=1027\nYear 2 | Equity=396 | Total assets=1163\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 439 | 513 |\n| Machinery | 175 | 197 |\n| Office equipment | 43 | 50 |\n| Patents, trademarks and licences | 58 | 58 |\n| Inventory | 168 | 184 |\n| Trade receivables | 91 | 97 |\n| Cash and cash equivalents | 53 | 64 |\n| Total assets | **1027** | **1163** |\n| **EQUITY** | | |\n| Share capital | 228 | 228 |\n| Retained earnings | 125 | 168 |\n| Total equity | **353** | **396** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 377 | 431 |\n| Bonds payable | 72 | 80 |\n| Trade payables | 169 | 199 |\n| Bank overdraft | 56 | 57 |\n| Total liabilities | **674** | **767** |\n| Total equity and liabilities | **1027** | **1163** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total assets grew from €1027 thousand to €1163 thousand, an increase of more than 12% on this comparative balance sheet.",
+      "Non-current assets of €715 thousand in Year 1 are fully covered by the sum of equity and non-current liabilities in that year.",
+      "Non-current liabilities of €449 thousand exceed equity of €353 thousand in Year 1, indicating a highly geared capital structure in that year.",
+      "Non-current assets as a percentage of total assets decreased from Year 1 to Year 2 when total assets moved from €1027 thousand to €1163 thousand.",
+      "Inventory of €184 thousand was higher in Year 2 than inventory of €168 thousand in Year 1 on these figures."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Asset growth about 13.2%.",
+      "TRUE — Year 1 cover: 715 vs 802.",
+      "TRUE — Non-current liabilities exceed equity in Year 1.",
+      "FALSE — Shares were 69.6% then 70.3%.",
+      "TRUE — Inventory was 168 then 184."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.094",
+    "title": "Balance Sheet Point-in-Time Analysis 2",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 313 |\n| Machinery | 158 |\n| Office equipment | 33 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 195 |\n| Trade receivables | 82 |\n| Cash and cash equivalents | 84 |\n| Total assets | **915** |\n| **EQUITY** | |\n| Share capital | 103 |\n| Retained earnings | 136 |\n| Total equity | **239** |\n| **LIABILITIES** | |\n| Long-term bank loan | 383 |\n| Bonds payable | 52 |\n| Trade payables | 216 |\n| Bank overdraft | 25 |\n| Total liabilities | **676** |\n| Total equity and liabilities | **915** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Excluding inventory, current assets of €166 thousand exceed current liabilities of €241 thousand.",
+      "On total assets of €915 thousand, the current ratio exceeds 1.20.",
+      "The current ratio on total assets of €915 thousand is below 1.00 on these figures.",
+      "Share capital of €103 thousand equals retained earnings of €136 thousand.",
+      "The long-term bank loan of €383 thousand is classified as equity."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Acid-test ratio is about 0.69.",
+      "TRUE — Current ratio is about 1.50.",
+      "FALSE — Current ratio is about 1.50.",
+      "FALSE — Share capital 103 vs retained 136.",
+      "FALSE — It is a non-current liability."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.095",
+    "title": "Chart: Annual Depreciation by Asset 4",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=410\nMachinery=172\nInventory=253\nTrade receivables=144\nCash and cash equivalents=68\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 410 |\n| Machinery | 172 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 253 |\n| Trade receivables | 144 |\n| Cash and cash equivalents | 68 |\n| Total assets | **1139** |\n| **EQUITY** | |\n| Share capital | 227 |\n| Retained earnings | 321 |\n| Total equity | **548** |\n| **LIABILITIES** | |\n| Long-term bank loan | 330 |\n| Bonds payable | 42 |\n| Trade payables | 186 |\n| Bank overdraft | 33 |\n| Total liabilities | **591** |\n| Total equity and liabilities | **1139** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 229 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 213 |\n| Cash flow from investing activities | (229) |\n| Cash flow from financing activities | 49 |\n| Cash and cash equivalents at the beginning of the year | 35 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €229 thousand and equity of €548 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 24.9% on equity of €548 thousand is mainly useful when compared with similar businesses or past years rather than judged alone.",
+      "Working capital on this combined extract equals €246 thousand.",
+      "Cash and cash equivalents at the end of the year equal €68 thousand and exceed €90 thousand.",
+      "Cash flow from investing activities of €-229 thousand was an inflow during the year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Return on equity is about 41.8%.",
+      "TRUE — Comparative context makes return on capital employed meaningful.",
+      "FALSE — Working capital equals 246.",
+      "FALSE — Ending cash is about 68.",
+      "FALSE — Investing cash flow was -229."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.096",
+    "title": "Listed Company Performance Extract 4",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=25\nMarch | Price=25\nApril | Price=24\nMay | Price=24\nJune | Price=25\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 24 | 790,000 |\n| February | 25 | 790,000 |\n| March | 25 | 790,000 |\n| April | 24 | 790,000 |\n| May | 24 | 790,000 |\n| June | 25 | 790,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 248 |\n| Shares outstanding | 790,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The share price rose from €24 to €25, an increase of more than 20%.",
+      "With operating result of €248 thousand and 790,000 shares outstanding, earnings per share exceeds €0.35.",
+      "The last closing price of €25 is more than 50% above the first closing price of €24.",
+      "With 790,000 shares outstanding at a closing price of €25, market capitalisation exceeds €11 million.",
+      "The share price fell from €24 to €25 over the months shown."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change is about 4.2%.",
+      "FALSE — Earnings per share is about €0.31.",
+      "FALSE — The price rise compared with the 50% threshold.",
+      "TRUE — Market capitalisation is about €19.8 million.",
+      "FALSE — The last price 25 compared with the first 24."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.097",
+    "title": "Operating Cash Flow Movement 2",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 453 |\n| Machinery | 128 |\n| Office equipment | 49 |\n| Patents, trademarks and licences | 64 |\n| Inventory | 111 |\n| Trade receivables | 121 |\n| Cash and cash equivalents | 69 |\n| Total assets | **995** |\n| **EQUITY** | |\n| Share capital | 217 |\n| Retained earnings | 53 |\n| Total equity | **270** |\n| **LIABILITIES** | |\n| Long-term bank loan | 397 |\n| Bonds payable | 51 |\n| Trade payables | 222 |\n| Bank overdraft | 55 |\n| Total liabilities | **725** |\n| Total equity and liabilities | **995** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €24 thousand is positive on this balance sheet.",
+      "The equity ratio on assets of €995 thousand is below 30%.",
+      "Buildings of €453 thousand exceed machinery of €128 thousand.",
+      "Total liabilities of €725 thousand exceed total equity of €270 thousand.",
+      "Total assets equal total equity plus total liabilities at €995 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Working capital equals 24.",
+      "TRUE — Equity ratio is about 27.1%.",
+      "TRUE — Buildings 453 vs machinery 128.",
+      "TRUE — Liabilities 725 vs equity 270.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.098",
+    "title": "Cash Flow Versus Profit Distinction 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 491 |\n| Machinery | 196 |\n| Office equipment | 64 |\n| Patents, trademarks and licences | 86 |\n| Inventory | 153 |\n| Trade receivables | 91 |\n| Cash and cash equivalents | 58 |\n| Total assets | **1139** |\n| **EQUITY** | |\n| Share capital | 124 |\n| Retained earnings | 553 |\n| Total equity | **677** |\n| **LIABILITIES** | |\n| Long-term bank loan | 200 |\n| Bonds payable | 58 |\n| Trade payables | 149 |\n| Bank overdraft | 55 |\n| Total liabilities | **462** |\n| Total equity and liabilities | **1139** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1139 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1139 thousand is below 30%.",
+      "Inventory of €153 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €149 thousand exceed current liabilities of €204 thousand.",
+      "The current ratio on total assets of €1139 thousand is below 1.00 on these figures."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.48.",
+      "FALSE — Equity ratio is about 59.4%.",
+      "FALSE — Inventory is a current asset.",
+      "FALSE — Acid-test ratio is about 0.73.",
+      "FALSE — Current ratio is about 1.48."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.099",
+    "title": "Statement of Profit and Loss Trends 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 472 |\n| Machinery | 125 |\n| Office equipment | 59 |\n| Patents, trademarks and licences | 31 |\n| Inventory | 251 |\n| Trade receivables | 105 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1130** |\n| **EQUITY** | |\n| Share capital | 189 |\n| Retained earnings | 360 |\n| Total equity | **549** |\n| **LIABILITIES** | |\n| Long-term bank loan | 313 |\n| Bonds payable | 73 |\n| Trade payables | 129 |\n| Bank overdraft | 66 |\n| Total liabilities | **581** |\n| Total equity and liabilities | **1130** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1130 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1130 thousand is below 30%.",
+      "Working capital of €248 thousand is positive on this balance sheet.",
+      "Buildings of €472 thousand exceed machinery of €125 thousand.",
+      "Total liabilities of €581 thousand exceed total equity of €549 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.27.",
+      "FALSE — Equity ratio is about 48.6%.",
+      "TRUE — Working capital equals 248.",
+      "TRUE — Buildings 472 vs machinery 125.",
+      "TRUE — Liabilities 581 vs equity 549."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.100",
+    "title": "Chart: Asset Composition Pie 5",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=24\nApril | Price=23\nMay | Price=22\nJune | Price=22\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 24 | 441,000 |\n| February | 24 | 441,000 |\n| March | 24 | 441,000 |\n| April | 23 | 441,000 |\n| May | 22 | 441,000 |\n| June | 22 | 441,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 199 |\n| Shares outstanding | 441,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €199 thousand and 441,000 shares outstanding, earnings per share exceeds €0.35.",
+      "The share price rose from €24 to €22, an increase of more than 20%.",
+      "With 441,000 shares outstanding at a closing price of €22, market capitalisation exceeds €11 million.",
+      "The number of shares outstanding is 441,000, which is positive.",
+      "The last closing price of €22 is more than 50% above the first closing price of €24."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Earnings per share is about €0.45.",
+      "FALSE — Price change is about -8.3%.",
+      "FALSE — Market capitalisation is about €9.7 million.",
+      "TRUE — Shares outstanding equal 441,000.",
+      "FALSE — The price rise compared with the 50% threshold."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.101",
+    "title": "Chart: Share Price Movement 5",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=21\nMarch | Price=21\nApril | Price=21\nMay | Price=22\nJune | Price=22\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 21 | 760,000 |\n| February | 21 | 760,000 |\n| March | 21 | 760,000 |\n| April | 21 | 760,000 |\n| May | 22 | 760,000 |\n| June | 22 | 760,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 228 |\n| Shares outstanding | 760,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The share price rose from €21 to €22, an increase of more than 20%.",
+      "With 760,000 shares outstanding at a closing price of €22, market capitalisation exceeds €11 million.",
+      "With operating result of €228 thousand and 760,000 shares outstanding, earnings per share exceeds €0.35.",
+      "The last closing price of €22 is more than 50% above the first closing price of €21.",
+      "The share price fell from €21 to €22 over the months shown."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change is about 4.8%.",
+      "TRUE — Market capitalisation is about €16.7 million.",
+      "FALSE — Earnings per share is about €0.30.",
+      "FALSE — The price rise compared with the 50% threshold.",
+      "FALSE — The last price 22 compared with the first 21."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.102",
+    "title": "Cash Flow Linked to Balance Sheet 2",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 334 |\n| Machinery | 263 |\n| Office equipment | 45 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 186 |\n| Trade receivables | 171 |\n| Cash and cash equivalents | 54 |\n| Total assets | **1132** |\n| **EQUITY** | |\n| Share capital | 177 |\n| Retained earnings | 343 |\n| Total equity | **520** |\n| **LIABILITIES** | |\n| Long-term bank loan | 377 |\n| Bonds payable | 81 |\n| Trade payables | 91 |\n| Bank overdraft | 63 |\n| Total liabilities | **612** |\n| Total equity and liabilities | **1132** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1132 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1132 thousand is below 30%.",
+      "Working capital of €257 thousand is positive on this balance sheet.",
+      "Inventory of €186 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €225 thousand exceed current liabilities of €154 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.67.",
+      "FALSE — Equity ratio is about 45.9%.",
+      "TRUE — Working capital equals 257.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Acid-test ratio is about 1.46."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.103",
+    "title": "Chart: Earnings Per Share Bar 5",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=407\nMachinery=233\nInventory=278\nTrade receivables=159\nCash and cash equivalents=113\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 407 |\n| Machinery | 233 |\n| Office equipment | 60 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 278 |\n| Trade receivables | 159 |\n| Cash and cash equivalents | 113 |\n| Total assets | **1300** |\n| **EQUITY** | |\n| Share capital | 224 |\n| Retained earnings | 490 |\n| Total equity | **714** |\n| **LIABILITIES** | |\n| Long-term bank loan | 275 |\n| Bonds payable | 51 |\n| Trade payables | 177 |\n| Bank overdraft | 83 |\n| Total liabilities | **586** |\n| Total equity and liabilities | **1300** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 177 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 169 |\n| Cash flow from investing activities | (266) |\n| Cash flow from financing activities | 54 |\n| Cash and cash equivalents at the beginning of the year | 156 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With operating result of €177 thousand and equity of €714 thousand, return on equity exceeds 35%.",
+      "Return on capital employed of about 17.0% on equity of €714 thousand is mainly useful when compared with similar businesses or past years rather than judged alone.",
+      "Working capital on this combined extract equals €290 thousand.",
+      "The net change in cash and cash equivalents for the year equals €-43 thousand.",
+      "Cash flow from investing activities of €-266 thousand was an inflow during the year."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Return on equity is about 24.8%.",
+      "TRUE — Comparative context makes return on capital employed meaningful.",
+      "FALSE — Working capital equals 290.",
+      "FALSE — Net change equals -43.",
+      "FALSE — Investing cash flow was -266."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.104",
+    "title": "Chart: Operating and Investing Flows 5",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=802 | Operating result=224\nYear 2 | Revenue=923 | Operating result=244\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 802 | 923 |\n| Cost of sales | (506) | (590) |\n| Gross profit | 296 | 333 |\n| Distribution costs | (45) | (53) |\n| General and administrative costs | (30) | (36) |\n| Other operating result | 3 | 0 |\n| Operating result | 224 | 244 |\n| Finance costs | (19) | (25) |\n| Finance costs – net | (13) | (19) |\n| Profit before tax | 211 | 225 |\n| Income taxes | (44) | (48) |\n| Profit for the year | 167 | 177 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Revenue was higher in Year 2 at €923 thousand than in Year 1 at €802 thousand.",
+      "Profit for the year was higher in Year 2 at €177 thousand than in Year 1 at €167 thousand.",
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €923 thousand.",
+      "The operating result more than doubled from €224 thousand in Year 1 to €244 thousand in Year 2.",
+      "Cost of sales of €590 thousand exceeded revenue of €923 thousand in Year 2."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Revenue rose from 802 to 923.",
+      "TRUE — Profit for the year was 167 then 177.",
+      "FALSE — Margins were 36.9% then 36.1%.",
+      "FALSE — Operating result moved from 224 to 244.",
+      "FALSE — Cost of sales was 590 against revenue 923."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.105",
+    "title": "Depreciation and Book Value 2",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 283 |\n| Machinery | 183 |\n| Office equipment | 80 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 101 |\n| Trade receivables | 93 |\n| Cash and cash equivalents | 71 |\n| Total assets | **844** |\n| **EQUITY** | |\n| Share capital | 131 |\n| Retained earnings | 23 |\n| Total equity | **154** |\n| **LIABILITIES** | |\n| Long-term bank loan | 334 |\n| Bonds payable | 59 |\n| Trade payables | 237 |\n| Bank overdraft | 60 |\n| Total liabilities | **690** |\n| Total equity and liabilities | **844** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €844 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €-32 thousand is positive on this balance sheet.",
+      "The equity ratio on assets of €844 thousand is below 30%.",
+      "The current ratio on total assets of €844 thousand is below 1.00 on these figures.",
+      "Buildings of €283 thousand exceed machinery of €183 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Current ratio is about 0.89.",
+      "FALSE — Working capital equals -32.",
+      "TRUE — Equity ratio is about 18.2%.",
+      "TRUE — Current ratio is about 0.89.",
+      "TRUE — Buildings 283 vs machinery 183."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.106",
+    "title": "Balance Sheet With Depreciation Context 2",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 507 |\n| Machinery | 268 |\n| Office equipment | 33 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 130 |\n| Trade receivables | 136 |\n| Cash and cash equivalents | 90 |\n| Total assets | **1258** |\n| **EQUITY** | |\n| Share capital | 136 |\n| Retained earnings | 587 |\n| Total equity | **723** |\n| **LIABILITIES** | |\n| Long-term bank loan | 305 |\n| Bonds payable | 71 |\n| Trade payables | 125 |\n| Bank overdraft | 34 |\n| Total liabilities | **535** |\n| Total equity and liabilities | **1258** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1258 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1258 thousand is below 30%.",
+      "Excluding inventory, current assets of €226 thousand exceed current liabilities of €159 thousand.",
+      "Buildings of €507 thousand exceed machinery of €268 thousand.",
+      "Total assets equal total equity plus total liabilities at €1258 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.24.",
+      "FALSE — Equity ratio is about 57.5%.",
+      "TRUE — Acid-test ratio is about 1.42.",
+      "TRUE — Buildings 507 vs machinery 268.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.107",
+    "title": "Chart: Annual Depreciation by Asset 5",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=23\nFebruary | Price=23\nMarch | Price=23\nApril | Price=22\nMay | Price=22\nJune | Price=22\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 23 | 624,000 |\n| February | 23 | 624,000 |\n| March | 23 | 624,000 |\n| April | 22 | 624,000 |\n| May | 22 | 624,000 |\n| June | 22 | 624,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 186 |\n| Shares outstanding | 624,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With 624,000 shares outstanding at a closing price of €22, market capitalisation exceeds €11 million.",
+      "The share price rose from €23 to €22, an increase of more than 20%.",
+      "The number of shares outstanding is 624,000, which is positive.",
+      "The share price fell from €23 to €22 over the months shown.",
+      "Operating result of €186 thousand was below €200 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market capitalisation is about €13.7 million.",
+      "FALSE — Price change is about -4.3%.",
+      "TRUE — Shares outstanding equal 624,000.",
+      "TRUE — The last price 22 compared with the first 23.",
+      "TRUE — Operating result was 186."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.108",
+    "title": "Listed Company Performance Extract 5",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=1077 | Operating result=377\nYear 2 | Revenue=1244 | Operating result=441\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1077 | 1244 |\n| Cost of sales | (632) | (720) |\n| Gross profit | 445 | 524 |\n| Distribution costs | (40) | (45) |\n| General and administrative costs | (27) | (36) |\n| Other operating result | (1) | (2) |\n| Operating result | 377 | 441 |\n| Finance costs | (20) | (25) |\n| Finance costs – net | (16) | (21) |\n| Profit before tax | 361 | 420 |\n| Income taxes | (88) | (102) |\n| Profit for the year | 273 | 318 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The operating result more than doubled from €377 thousand in Year 1 to €441 thousand in Year 2.",
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €1244 thousand.",
+      "Revenue was higher in Year 2 at €1244 thousand than in Year 1 at €1077 thousand.",
+      "On this income statement, distribution costs of €45 thousand are deducted from revenue before gross profit is calculated.",
+      "Profit for the year was higher in Year 2 at €318 thousand than in Year 1 at €273 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Operating result moved from 377 to 441.",
+      "TRUE — Margins were 41.3% then 42.1%.",
+      "TRUE — Revenue rose from 1077 to 1244.",
+      "FALSE — Gross profit is revenue minus cost of sales only.",
+      "TRUE — Profit for the year was 273 then 318."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.109",
+    "title": "Return on Equity From Extract 2",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 373 |\n| Machinery | 203 |\n| Office equipment | 52 |\n| Patents, trademarks and licences | 82 |\n| Inventory | 134 |\n| Trade receivables | 130 |\n| Cash and cash equivalents | 70 |\n| Total assets | **1044** |\n| **EQUITY** | |\n| Share capital | 240 |\n| Retained earnings | 118 |\n| Total equity | **358** |\n| **LIABILITIES** | |\n| Long-term bank loan | 379 |\n| Bonds payable | 41 |\n| Trade payables | 195 |\n| Bank overdraft | 71 |\n| Total liabilities | **686** |\n| Total equity and liabilities | **1044** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1044 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €68 thousand is positive on this balance sheet.",
+      "Buildings of €373 thousand exceed machinery of €203 thousand.",
+      "Total liabilities of €686 thousand exceed total equity of €358 thousand.",
+      "Total assets equal total equity plus total liabilities at €1044 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.26.",
+      "TRUE — Working capital equals 68.",
+      "TRUE — Buildings 373 vs machinery 203.",
+      "TRUE — Liabilities 686 vs equity 358.",
+      "TRUE — The balance sheet balances."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.110",
+    "title": "Liquidity Ratio Assertion Pack 2",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 517 |\n| Machinery | 149 |\n| Office equipment | 37 |\n| Patents, trademarks and licences | 60 |\n| Inventory | 180 |\n| Trade receivables | 110 |\n| Cash and cash equivalents | 71 |\n| Total assets | **1124** |\n| **EQUITY** | |\n| Share capital | 148 |\n| Retained earnings | 381 |\n| Total equity | **529** |\n| **LIABILITIES** | |\n| Long-term bank loan | 249 |\n| Bonds payable | 89 |\n| Trade payables | 203 |\n| Bank overdraft | 54 |\n| Total liabilities | **595** |\n| Total equity and liabilities | **1124** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1124 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €104 thousand is positive on this balance sheet.",
+      "Buildings of €517 thousand exceed machinery of €149 thousand.",
+      "The equity ratio on assets of €1124 thousand is below 30%.",
+      "Total liabilities of €595 thousand exceed total equity of €529 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.40.",
+      "TRUE — Working capital equals 104.",
+      "TRUE — Buildings 517 vs machinery 149.",
+      "FALSE — Equity ratio is about 47.1%.",
+      "TRUE — Liabilities 595 vs equity 529."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.111",
+    "title": "Chart: Equity Versus Total Assets 6",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=430\nMachinery=213\nInventory=84\nTrade receivables=125\nCash and cash equivalents=31\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 430 |\n| Machinery | 213 |\n| Office equipment | 37 |\n| Patents, trademarks and licences | 78 |\n| Inventory | 84 |\n| Trade receivables | 125 |\n| Cash and cash equivalents | 31 |\n| Total assets | **998** |\n| **EQUITY** | |\n| Share capital | 294 |\n| Retained earnings | 57 |\n| Total equity | **351** |\n| **LIABILITIES** | |\n| Long-term bank loan | 397 |\n| Bonds payable | 82 |\n| Trade payables | 94 |\n| Bank overdraft | 74 |\n| Total liabilities | **647** |\n| Total equity and liabilities | **998** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 161 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 170 |\n| Cash flow from investing activities | (258) |\n| Cash flow from financing activities | 55 |\n| Cash and cash equivalents at the beginning of the year | 64 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital on this combined extract equals €72 thousand.",
+      "Cash and cash equivalents at the end of the year equal €31 thousand and exceed €90 thousand.",
+      "With operating result of €161 thousand and equity of €351 thousand, return on equity exceeds 35%.",
+      "Cash flow from investing activities of €-258 thousand was an inflow during the year.",
+      "Return on capital employed of about 19.4% on equity of €351 thousand is mainly useful when compared with similar businesses or past years rather than judged alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Working capital equals 72.",
+      "FALSE — Ending cash is about 31.",
+      "TRUE — Return on equity is about 45.9%.",
+      "FALSE — Investing cash flow was -258.",
+      "TRUE — Comparative context makes return on capital employed meaningful."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.112",
+    "title": "Chart: Asset Composition Pie 6",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=736 | Operating result=231\nYear 2 | Revenue=888 | Operating result=275\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 736 | 888 |\n| Cost of sales | (437) | (534) |\n| Gross profit | 299 | 354 |\n| Distribution costs | (36) | (41) |\n| General and administrative costs | (31) | (38) |\n| Other operating result | (1) | 0 |\n| Operating result | 231 | 275 |\n| Finance costs | (15) | (17) |\n| Finance costs – net | (8) | (14) |\n| Profit before tax | 223 | 261 |\n| Income taxes | (54) | (63) |\n| Profit for the year | 169 | 198 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €888 thousand.",
+      "The operating result more than doubled from €231 thousand in Year 1 to €275 thousand in Year 2.",
+      "Revenue was higher in Year 2 at €888 thousand than in Year 1 at €736 thousand.",
+      "On this income statement, distribution costs of €41 thousand are deducted from revenue before gross profit is calculated.",
+      "Cost of sales of €534 thousand exceeded revenue of €888 thousand in Year 2."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Margins were 40.6% then 39.9%.",
+      "FALSE — Operating result moved from 231 to 275.",
+      "TRUE — Revenue rose from 736 to 888.",
+      "FALSE — Gross profit is revenue minus cost of sales only.",
+      "FALSE — Cost of sales was 534 against revenue 888."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.113",
+    "title": "Balance Sheet Liquidity Extract 3",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 343 |\n| Machinery | 258 |\n| Office equipment | 49 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 255 |\n| Trade receivables | 107 |\n| Cash and cash equivalents | 115 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 186 |\n| Retained earnings | 596 |\n| Total equity | **782** |\n| **LIABILITIES** | |\n| Long-term bank loan | 193 |\n| Bonds payable | 42 |\n| Trade payables | 102 |\n| Bank overdraft | 87 |\n| Total liabilities | **424** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1206 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1206 thousand is below 30%.",
+      "Working capital of €288 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €222 thousand exceed current liabilities of €189 thousand.",
+      "Buildings of €343 thousand exceed machinery of €258 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.52.",
+      "FALSE — Equity ratio is about 64.8%.",
+      "TRUE — Working capital equals 288.",
+      "TRUE — Acid-test ratio is about 1.17.",
+      "TRUE — Buildings 343 vs machinery 258."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.114",
+    "title": "Gearing From Comparative Balance Sheets 3",
+    "difficulty_level": "4/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 426 |\n| Machinery | 245 |\n| Office equipment | 67 |\n| Patents, trademarks and licences | 48 |\n| Inventory | 134 |\n| Trade receivables | 62 |\n| Cash and cash equivalents | 102 |\n| Total assets | **1084** |\n| **EQUITY** | |\n| Share capital | 239 |\n| Retained earnings | 354 |\n| Total equity | **593** |\n| **LIABILITIES** | |\n| Long-term bank loan | 212 |\n| Bonds payable | 62 |\n| Trade payables | 176 |\n| Bank overdraft | 41 |\n| Total liabilities | **491** |\n| Total equity and liabilities | **1084** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €1084 thousand is below 30%.",
+      "Inventory of €134 thousand is recorded as a non-current intangible asset.",
+      "On total assets of €1084 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €81 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €164 thousand exceed current liabilities of €217 thousand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity ratio is about 54.7%.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Current ratio is about 1.37.",
+      "TRUE — Working capital equals 81.",
+      "FALSE — Acid-test ratio is about 0.76."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.115",
+    "title": "Working Capital From Balance Sheet Data 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 509 |\n| Machinery | 241 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 46 |\n| Inventory | 143 |\n| Trade receivables | 150 |\n| Cash and cash equivalents | 102 |\n| Total assets | **1245** |\n| **EQUITY** | |\n| Share capital | 141 |\n| Retained earnings | 445 |\n| Total equity | **586** |\n| **LIABILITIES** | |\n| Long-term bank loan | 319 |\n| Bonds payable | 75 |\n| Trade payables | 193 |\n| Bank overdraft | 72 |\n| Total liabilities | **659** |\n| Total equity and liabilities | **1245** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory of €143 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €252 thousand exceed current liabilities of €265 thousand.",
+      "The current ratio on total assets of €1245 thousand is below 1.00 on these figures.",
+      "Cash of €102 thousand exceeds trade receivables of €150 thousand.",
+      "Working capital of €130 thousand is positive on this balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Inventory is a current asset.",
+      "FALSE — Acid-test ratio is about 0.95.",
+      "FALSE — Current ratio is about 1.49.",
+      "FALSE — Cash 102 vs receivables 150.",
+      "TRUE — Working capital equals 130."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.116",
+    "title": "Current Ratio Calculation Set 3",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 466 |\n| Machinery | 175 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 86 |\n| Inventory | 176 |\n| Trade receivables | 146 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1170** |\n| **EQUITY** | |\n| Share capital | 152 |\n| Retained earnings | 470 |\n| Total equity | **622** |\n| **LIABILITIES** | |\n| Long-term bank loan | 202 |\n| Bonds payable | 82 |\n| Trade payables | 197 |\n| Bank overdraft | 67 |\n| Total liabilities | **548** |\n| Total equity and liabilities | **1170** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €1170 thousand is below 30%.",
+      "On total assets of €1170 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €139 thousand is positive on this balance sheet.",
+      "Inventory of €176 thousand is recorded as a non-current intangible asset.",
+      "Buildings of €466 thousand exceed machinery of €175 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity ratio is about 53.2%.",
+      "TRUE — Current ratio is about 1.53.",
+      "TRUE — Working capital equals 139.",
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Buildings 466 vs machinery 175."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.117",
+    "title": "Chart: Revenue and Operating Result 6",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=25\nMarch | Price=25\nApril | Price=24\nMay | Price=23\nJune | Price=23\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 24 | 736,000 |\n| February | 25 | 736,000 |\n| March | 25 | 736,000 |\n| April | 24 | 736,000 |\n| May | 23 | 736,000 |\n| June | 23 | 736,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 182 |\n| Shares outstanding | 736,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "With 736,000 shares outstanding at a closing price of €23, market capitalisation exceeds €11 million.",
+      "The number of shares outstanding is 736,000, which is positive.",
+      "The share price fell from €24 to €23 over the months shown.",
+      "The share price rose from €24 to €23, an increase of more than 20%.",
+      "Operating result of €182 thousand was below €200 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Market capitalisation is about €16.9 million.",
+      "TRUE — Shares outstanding equal 736,000.",
+      "TRUE — The last price 23 compared with the first 24.",
+      "FALSE — Price change is about -4.2%.",
+      "TRUE — Operating result was 182."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.118",
+    "title": "Non-Current Asset Share Trend 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 409 |\n| Machinery | 201 |\n| Office equipment | 56 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 121 |\n| Trade receivables | 144 |\n| Cash and cash equivalents | 41 |\n| Total assets | **1037** |\n| **EQUITY** | |\n| Share capital | 194 |\n| Retained earnings | 144 |\n| Total equity | **338** |\n| **LIABILITIES** | |\n| Long-term bank loan | 421 |\n| Bonds payable | 63 |\n| Trade payables | 187 |\n| Bank overdraft | 28 |\n| Total liabilities | **699** |\n| Total equity and liabilities | **1037** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1037 thousand, the current ratio exceeds 1.20.",
+      "The equity ratio on assets of €1037 thousand is below 30%.",
+      "Working capital of €91 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €185 thousand exceed current liabilities of €215 thousand.",
+      "The current ratio on total assets of €1037 thousand is below 1.00 on these figures."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.42.",
+      "FALSE — Equity ratio is about 32.6%.",
+      "TRUE — Working capital equals 91.",
+      "FALSE — Acid-test ratio is about 0.86.",
+      "FALSE — Current ratio is about 1.42."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.119",
+    "title": "Debt Ratio Comparative Analysis 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 310 |\n| Machinery | 124 |\n| Office equipment | 45 |\n| Patents, trademarks and licences | 82 |\n| Inventory | 223 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 92 |\n| Total assets | **957** |\n| **EQUITY** | |\n| Share capital | 112 |\n| Retained earnings | 324 |\n| Total equity | **436** |\n| **LIABILITIES** | |\n| Long-term bank loan | 303 |\n| Bonds payable | 75 |\n| Trade payables | 75 |\n| Bank overdraft | 68 |\n| Total liabilities | **521** |\n| Total equity and liabilities | **957** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €957 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €253 thousand is positive on this balance sheet.",
+      "Excluding inventory, current assets of €173 thousand exceed current liabilities of €143 thousand.",
+      "Buildings of €310 thousand exceed machinery of €124 thousand.",
+      "Cash of €92 thousand exceeds trade receivables of €81 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 2.77.",
+      "TRUE — Working capital equals 253.",
+      "TRUE — Acid-test ratio is about 1.21.",
+      "TRUE — Buildings 310 vs machinery 124.",
+      "TRUE — Cash 92 vs receivables 81."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.120",
+    "title": "Listed Company Performance Extract 6",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=20\nMarch | Price=21\nApril | Price=22\nMay | Price=23\nJune | Price=24\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 20 | 520,000 |\n| February | 20 | 520,000 |\n| March | 21 | 520,000 |\n| April | 22 | 520,000 |\n| May | 23 | 520,000 |\n| June | 24 | 520,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 195 |\n| Shares outstanding | 520,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The share price rose from €20 to €24, an increase of more than 20%.",
+      "The last closing price of €24 is more than 50% above the first closing price of €20.",
+      "With 520,000 shares outstanding at a closing price of €24, market capitalisation exceeds €11 million.",
+      "With operating result of €195 thousand and 520,000 shares outstanding, earnings per share exceeds €0.35.",
+      "The number of shares outstanding is 520,000, which is positive."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change is about 20.0%.",
+      "FALSE — The price rise compared with the 50% threshold.",
+      "TRUE — Market capitalisation is about €12.5 million.",
+      "TRUE — Earnings per share is about €0.38.",
+      "TRUE — Shares outstanding equal 520,000."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.121",
+    "title": "Comparative Assets and Liabilities 3",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 359 |\n| Machinery | 197 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 55 |\n| Inventory | 226 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 64 |\n| Total assets | **1090** |\n| **EQUITY** | |\n| Share capital | 102 |\n| Retained earnings | 378 |\n| Total equity | **480** |\n| **LIABILITIES** | |\n| Long-term bank loan | 363 |\n| Bonds payable | 47 |\n| Trade payables | 144 |\n| Bank overdraft | 56 |\n| Total liabilities | **610** |\n| Total equity and liabilities | **1090** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio on assets of €1090 thousand is below 30%.",
+      "On total assets of €1090 thousand, the current ratio exceeds 1.20.",
+      "Inventory of €226 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €177 thousand exceed current liabilities of €200 thousand.",
+      "The current ratio on total assets of €1090 thousand is below 1.00 on these figures."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Equity ratio is about 44.0%.",
+      "TRUE — Current ratio is about 2.02.",
+      "FALSE — Inventory is a current asset.",
+      "FALSE — Acid-test ratio is about 0.89.",
+      "FALSE — Current ratio is about 2.02."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.122",
+    "title": "Share Turnover and Price Table 6",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider share-price and reporting figures for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=17\nMarch | Price=17\nApril | Price=18\nMay | Price=18\nJune | Price=18\n[[/CHART]]\n\n| Month | Closing price (€) | Shares outstanding |\n| --- | ---: | ---: |\n| January | 17 | 551,000 |\n| February | 17 | 551,000 |\n| March | 17 | 551,000 |\n| April | 18 | 551,000 |\n| May | 18 | 551,000 |\n| June | 18 | 551,000 |\n\n| Annual figures (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 238 |\n| Shares outstanding | 551,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The share price rose from €17 to €18, an increase of more than 20%.",
+      "With 551,000 shares outstanding at a closing price of €18, market capitalisation exceeds €11 million.",
+      "With operating result of €238 thousand and 551,000 shares outstanding, earnings per share exceeds €0.35.",
+      "The number of shares outstanding is 551,000, which is positive.",
+      "The last closing price of €18 is more than 50% above the first closing price of €17."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Price change is about 5.9%.",
+      "FALSE — Market capitalisation is about €9.9 million.",
+      "TRUE — Earnings per share is about €0.43.",
+      "TRUE — Shares outstanding equal 551,000.",
+      "FALSE — The price rise compared with the 50% threshold."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.123",
+    "title": "Chart: Equity Versus Total Assets 7",
+    "difficulty_level": "5/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=805 | Operating result=259\nYear 2 | Revenue=910 | Operating result=273\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 805 | 910 |\n| Cost of sales | (470) | (539) |\n| Gross profit | 335 | 371 |\n| Distribution costs | (51) | (58) |\n| General and administrative costs | (27) | (36) |\n| Other operating result | 2 | (4) |\n| Operating result | 259 | 273 |\n| Finance costs | (21) | (23) |\n| Finance costs – net | (15) | (19) |\n| Profit before tax | 244 | 254 |\n| Income taxes | (48) | (51) |\n| Profit for the year | 196 | 203 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Gross profit as a percentage of revenue was higher in Year 2 than in Year 1 on this income statement where Year 2 revenue was €910 thousand.",
+      "The operating result more than doubled from €259 thousand in Year 1 to €273 thousand in Year 2.",
+      "Revenue was higher in Year 2 at €910 thousand than in Year 1 at €805 thousand.",
+      "On this income statement, distribution costs of €58 thousand are deducted from revenue before gross profit is calculated.",
+      "Cost of sales of €539 thousand exceeded revenue of €910 thousand in Year 2."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Margins were 41.6% then 40.8%.",
+      "FALSE — Operating result moved from 259 to 273.",
+      "TRUE — Revenue rose from 805 to 910.",
+      "FALSE — Gross profit is revenue minus cost of sales only.",
+      "FALSE — Cost of sales was 539 against revenue 910."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.124",
+    "title": "Balance Sheet Point-in-Time Analysis 3",
+    "difficulty_level": "3/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 460 |\n| Machinery | 120 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 73 |\n| Inventory | 265 |\n| Trade receivables | 66 |\n| Cash and cash equivalents | 114 |\n| Total assets | **1152** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 353 |\n| Total equity | **506** |\n| **LIABILITIES** | |\n| Long-term bank loan | 367 |\n| Bonds payable | 40 |\n| Trade payables | 203 |\n| Bank overdraft | 36 |\n| Total liabilities | **646** |\n| Total equity and liabilities | **1152** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "On total assets of €1152 thousand, the current ratio exceeds 1.20.",
+      "Working capital of €206 thousand is positive on this balance sheet.",
+      "Buildings of €460 thousand exceed machinery of €120 thousand.",
+      "Cash of €114 thousand exceeds trade receivables of €66 thousand.",
+      "Total liabilities of €646 thousand exceed total equity of €506 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "TRUE — Current ratio is about 1.86.",
+      "TRUE — Working capital equals 206.",
+      "TRUE — Buildings 460 vs machinery 120.",
+      "TRUE — Cash 114 vs receivables 66.",
+      "TRUE — Liabilities 646 vs equity 506."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.125",
+    "title": "Comparative Cash Flow Statement 3",
+    "difficulty_level": "2/5",
+    "tier": "full",
+    "half": "table",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 370 |\n| Machinery | 220 |\n| Office equipment | 59 |\n| Patents, trademarks and licences | 35 |\n| Inventory | 220 |\n| Trade receivables | 138 |\n| Cash and cash equivalents | 65 |\n| Total assets | **1107** |\n| **EQUITY** | |\n| Share capital | 229 |\n| Retained earnings | 177 |\n| Total equity | **406** |\n| **LIABILITIES** | |\n| Long-term bank loan | 437 |\n| Bonds payable | 81 |\n| Trade payables | 144 |\n| Bank overdraft | 39 |\n| Total liabilities | **701** |\n| Total equity and liabilities | **1107** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory of €220 thousand is recorded as a non-current intangible asset.",
+      "Excluding inventory, current assets of €203 thousand exceed current liabilities of €183 thousand.",
+      "Buildings of €370 thousand exceed machinery of €220 thousand.",
+      "Total liabilities of €701 thousand exceed total equity of €406 thousand.",
+      "The current ratio on total assets of €1107 thousand is below 1.00 on these figures."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "FALSE — Inventory is a current asset.",
+      "TRUE — Acid-test ratio is about 1.11.",
+      "TRUE — Buildings 370 vs machinery 220.",
+      "TRUE — Liabilities 701 vs equity 406.",
+      "FALSE — Current ratio is about 2.31."
+    ]
+  }
+]
