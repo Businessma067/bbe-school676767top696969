@@ -29,6 +29,7 @@ import {
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
 import { AuthNav } from "@/components/AuthNav";
+import { CaseContextRich } from "@/components/CaseContextRich";
 import {
   Sheet,
   SheetContent,
@@ -592,9 +593,7 @@ function TakeExamPage() {
             )}
           >
             <div className="relative p-5 sm:p-8 lg:p-10">
-              <p className="font-display text-lg font-semibold leading-relaxed sm:text-xl lg:text-[1.35rem]">
-                {q.stem}
-              </p>
+              <CaseContextRich content={q.stem} emphasized className="text-foreground" />
 
               <div className="mt-6 overflow-hidden rounded-xl border border-border">
                 <div className="border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe">

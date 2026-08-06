@@ -8,6 +8,7 @@ import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
 import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
+import { CaseContextRich } from "@/components/CaseContextRich";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
@@ -338,7 +339,7 @@ function ReviewExamPage() {
                 </button>
                 {isOpen && (
                   <div className="border-t border-border px-5 py-4">
-                    <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{q.stem}</p>
+                    <CaseContextRich content={q.stem} className="mb-4" />
                     <div className="space-y-3">
                       {q.statements.map((s, si) => {
                         const userMarked = m.statements[si].userMarked;

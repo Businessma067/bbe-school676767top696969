@@ -8,6 +8,7 @@ import { explainCase } from "@/lib/explain-case.functions";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { AuthNav } from "@/components/AuthNav";
+import { CaseContextRich } from "@/components/CaseContextRich";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -831,9 +832,7 @@ function CaseCard({
         )}
       </div>
 
-      <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
-        {data.context}
-      </p>
+      <CaseContextRich content={data.context} className="mt-3" />
 
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">

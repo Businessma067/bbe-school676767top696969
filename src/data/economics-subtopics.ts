@@ -91,7 +91,7 @@ export const ECONOMICS_BOOK_TOC: EconomicsChapterToc[] = [
   {
     num: 6,
     title: "Accounting — keeping record of business transactions",
-    enabled: false,
+    enabled: true,
     subtopics: [
       { id: "6.1", chapter: 6, title: "What a balance sheet is" },
       { id: "6.2", chapter: 6, title: "Other components of the financial statement of a business" },
@@ -110,9 +110,11 @@ export function getEnabledBookChapters(): EconomicsChapterToc[] {
   return ECONOMICS_BOOK_TOC.filter((c) => c.enabled);
 }
 
-/** Custom Mock Builder ships subtopic banks for chapters 2–5. */
+/** Custom Mock Builder ships subtopic banks for chapters 2–6. */
 export function getCustomMockBookChapters(): EconomicsChapterToc[] {
-  return ECONOMICS_BOOK_TOC.filter((c) => c.enabled && (c.num === 2 || c.num === 3 || c.num === 4 || c.num === 5));
+  return ECONOMICS_BOOK_TOC.filter(
+    (c) => c.enabled && (c.num === 2 || c.num === 3 || c.num === 4 || c.num === 5 || c.num === 6),
+  );
 }
 
 export function findSubtopic(id: string): EconomicsSubtopic | undefined {
