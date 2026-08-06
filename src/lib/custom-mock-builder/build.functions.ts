@@ -4,6 +4,7 @@ import { z } from "zod";
 import {
   clampQuestionCount,
   durationMinutesForQuestionCount,
+  formatCustomMockTitle,
   maxQuestionsForChapters,
   pointsTotalForEconomicsQuestions,
 } from "@/config/custom-mock-builder";
@@ -170,8 +171,7 @@ export const buildCustomMock = createServerFn({ method: "POST" })
 
     const durationMinutes = durationMinutesForQuestionCount(questionCount);
     const pointsTotal = pointsTotalForEconomicsQuestions(questionCount);
-    const label = subtopics.join(", ");
-    const title = `Custom Economics Mock · ${label} · ${questionCount}Q`;
+    const title = formatCustomMockTitle(subtopics, questionCount);
 
     const { data: inserted, error: insertError } = await context.supabase
       .from("custom_mocks")

@@ -20,7 +20,10 @@ import {
   fetchCustomMocks,
 } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
-import { isCustomExamId } from "@/config/custom-mock-builder";
+import {
+  displayTitleForCustomMock,
+  isCustomExamId,
+} from "@/config/custom-mock-builder";
 import {
   fetchSessionAnswerStats,
   type SessionAnswerStat,
@@ -557,7 +560,9 @@ function CustomMocksTab({
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">
-                        <p className="font-medium">{mock.title}</p>
+                        <p className="font-medium">
+                          {displayTitleForCustomMock(mock)}
+                        </p>
                         <p className="text-xs text-muted-foreground">
                           Ch. {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
                           {mock.durationMinutes} min

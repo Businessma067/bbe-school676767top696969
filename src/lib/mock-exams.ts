@@ -1,5 +1,6 @@
 import { SCORING_CONFIG, type SubjectKey } from "@/config/scoring-config";
 import {
+  displayTitleForCustomMock,
   isCustomExamId,
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
@@ -63,7 +64,7 @@ export function getExamById(id: string): MockExamSummary | undefined {
 export function summaryFromCustomMock(row: CustomMockRow): MockExamSummary {
   return {
     id: `custom-${row.id}`,
-    title: row.title,
+    title: displayTitleForCustomMock(row),
     questionCount: row.question_count,
     durationMinutes: row.duration_minutes,
     tier: "full",

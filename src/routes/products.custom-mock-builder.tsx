@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   CUSTOM_MOCK_MINUTES_PER_QUESTION,
   clampQuestionCount,
+  displayTitleForCustomMock,
   durationMinutesForQuestionCount,
   maxQuestionsForChapters,
   pointsTotalForEconomicsQuestions,
@@ -437,7 +438,9 @@ function CustomMockBuilderPage() {
                     className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between"
                   >
                     <div>
-                      <h3 className="font-display text-base font-semibold">{mock.title}</h3>
+                      <h3 className="font-display text-base font-semibold">
+                        {displayTitleForCustomMock(mock)}
+                      </h3>
                       <p className="mt-1 text-xs text-muted-foreground">
                         {mock.questionCount} questions · {mock.durationMinutes} min ·{" "}
                         {mock.pointsTotal} pts ·{" "}

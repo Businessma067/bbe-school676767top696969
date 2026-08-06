@@ -106,6 +106,41 @@ export function pointsTotalForEconomicsQuestions(count: number): number {
   return Number((count * CUSTOM_MOCK_SUBJECTS.economics.pointsPerQuestion).toFixed(2));
 }
 
+/** Breadcrumb / list title: `Custom Mock 3.3 10q` or `Custom Mock 2.1+2.2 10q`. */
+export function formatCustomMockTitle(
+  subtopics: string[],
+  questionCount: number,
+): string {
+  const label =
+    [...subtopics]
+      .filter(Boolean)
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+      .join("+") || "Economics";
+  return `Custom Mock ${label} ${questionCount}q`;
+}
+
+/** Prefer structured chapters; fall back to parsing legacy DB titles. */
+export function displayTitleForCustomMock(row: {
+  title: string;
+  chapters: string[];
+  question_count?: number;
+  questionCount?: number;
+}): string {
+  const count = row.question_count ?? row.questionCount ?? 0;
+  if (row.chapters?.length && count > 0) {
+    return formatCustomMockTitle(row.chapters, count);
+  }
+  const legacy = row.title.match(/·\s*([^·]+)\s*·\s*(\d+)\s*Q/i);
+  if (legacy) {
+    const subs = legacy[1]
+      .split(/,\s*/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+    return formatCustomMockTitle(subs, Number(legacy[2]));
+  }
+  return row.title;
+}
+
 /** Highest cap among selected book chapters (e.g. ch2→30, ch3→50). */
 export function maxQuestionsForChapters(chapterNums: number[]): number {
   if (chapterNums.length === 0) return DEFAULT_QUESTION_CAP;
