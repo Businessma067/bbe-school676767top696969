@@ -61,7 +61,7 @@ export const COURSE_CATALOG: Record<
   { name: string; tier: string; href: string }
 > = {
   "demo-practice": { name: "Demo Practice Package", tier: "demo", href: "/demo-practice" },
-  "lite-bbe-course": { name: "Lite BBE Course", tier: "lite", href: "/products/lite-bbe-course" },
+  "lite-bbe-course": { name: "Lite BBE Course", tier: "lite", href: "/products/lite-bbe-course-subjects" },
   "full-course": { name: "Full BBE Course", tier: "full", href: "/products/full-course-subjects" },
 };
 
