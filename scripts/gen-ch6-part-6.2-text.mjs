@@ -614,109 +614,125 @@ function cfTableCase(slot, idx) {
   const biz = BUSINESSES[idx % BUSINESSES.length];
   const asset = ASSETS[idx % ASSETS.length];
   const sc = cfScenario(idx);
-  const finCell = sc.financingIsInflow ? String(sc.financing) : `(${sc.financing})`;
+  const div = 8000 + ((idx * 1700) % 22000);
+  const borrow = sc.financingIsInflow
+    ? sc.financing + div
+    : Math.max(5000, div - sc.financing);
+  // Reconstruct financing so:fin = -div + borrow
+  const fin = -div + borrow;
   const context = `Consider the following cash flow statement extract (€) for a ${biz}.
 
 | Item | Amount |
 | --- | ---: |
 | Cash flow from operating activities | ${sc.operating} |
 | Cash flow from investing activities | (${sc.investing}) |
-| Cash flow from financing activities | ${finCell} |
-| Net change in cash and cash equivalents | **${sc.net}** |
+| Dividends paid | (${div}) |
+| Proceeds from new borrowing | ${borrow} |
+| Cash flow from financing activities | ${fin} |
 
 Evaluate the following economic assertions:`;
 
-  const wrongNet = sc.operating + sc.investing + (sc.financingIsInflow ? sc.financing : -sc.financing);
+  const opCoversInv = sc.operating > sc.investing;
   const pool = [
     {
       t: true,
-      s: `On extract ${idx + 1}, cash and cash equivalents change by ${fmt(sc.net)} euros in total.`,
-      e: `Operating ${sc.operating} − investing ${sc.investing} ${sc.financingIsInflow ? "+" : "−"} financing ${sc.financing} = ${sc.net}.`,
-    },
-    {
-      t: false,
-      s: `Treating the investing line as an addition, total cash would change by ${fmt(wrongNet)} euros on extract ${idx + 1}.`,
-      e: `Investing must be subtracted; correct net change is ${fmt(sc.net)} euros.`,
-    },
-    {
-      t: false,
-      s: `The operating figure alone of ${fmt(sc.operating)} euros is already the full net change on extract ${idx + 1}.`,
-      e: `That ignores investing and financing; correct net is ${fmt(sc.net)} euros.`,
+      s: `Dividends paid to shareholders sit in financing activities, not operating activities.`,
+      e: `Dividend payments are a financing activity.`,
     },
     {
       t: true,
-      s: `Purchases recorded under investing total an outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
-      e: `The investing line is (${sc.investing}).`,
-    },
-    {
-      t: false,
-      s: `The investing line on extract ${idx + 1} reports cash received of ${fmt(sc.investing)} euros.`,
-      e: `Investing is an outflow of ${fmt(sc.investing)} euros.`,
+      s: `A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.`,
+      e: `Investing and financing are recorded separately.`,
     },
     {
       t: true,
-      s: sc.financingIsInflow
-        ? `Financing activities add ${fmt(sc.financing)} euros to cash on extract ${idx + 1}.`
-        : `Financing activities remove ${fmt(sc.financing)} euros from cash on extract ${idx + 1}.`,
-      e: sc.financingIsInflow
-        ? `Financing is an inflow of ${fmt(sc.financing)} euros.`
-        : `Financing is an outflow of ${fmt(sc.financing)} euros.`,
-    },
-    {
-      t: false,
-      s: sc.financingIsInflow
-        ? `Financing activities remove ${fmt(sc.financing)} euros from cash on extract ${idx + 1}.`
-        : `Financing activities add ${fmt(sc.financing)} euros to cash on extract ${idx + 1}.`,
-      e: sc.financingIsInflow
-        ? `Financing is an inflow of ${fmt(sc.financing)} euros, not an outflow.`
-        : `Financing is an outflow of ${fmt(sc.financing)} euros, not an inflow.`,
-    },
-    {
-      t: sc.operating > sc.investing,
-      s: `Operating cash of ${fmt(sc.operating)} euros more than covers the investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
-      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
-    },
-    {
-      t: sc.operating <= sc.investing,
-      s: `Operating cash of ${fmt(sc.operating)} euros does not cover the investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1}.`,
-      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
+      s: `Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.`,
+      e: `Customer collections belong in operating cash flow.`,
     },
     {
       t: true,
-      s: `Buying new ${asset} for this ${biz} is classified under investing activities.`,
-      e: `Long-term asset purchases are investing cash flows.`,
+      s: `Buying new ${asset} is classified as an investing cash outflow.`,
+      e: `Long-term asset purchases are investing outflows.`,
+    },
+    {
+      t: true,
+      s: `A positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals.`,
+      e: `Profit and cash movement are different concepts.`,
     },
     {
       t: false,
-      s: `Buying new ${asset} for this ${biz} is classified under operating activities.`,
-      e: `Long-term asset purchases are investing, not operating.`,
+      s: `The dividends paid line of (${div}) euros belongs in investing activities.`,
+      e: `Dividends are financing outflows, not investing.`,
     },
     {
       t: false,
-      s: `An investing outflow of ${fmt(sc.investing)} euros on extract ${idx + 1} means this ${biz} must be failing.`,
+      s: `The investing outflow of ${fmt(sc.investing)} euros means the business must be failing.`,
       e: `Negative investing cash flow often just means assets were purchased.`,
     },
     {
-      t: true,
-      s: `For this ${biz}, collecting a trade receivable counts as an operating cash inflow.`,
-      e: `Trade-receivable collections sit in operating activities.`,
-    },
-    {
       t: false,
-      s: `For this ${biz}, repayments of borrowed money count as operating cash outflows.`,
+      s: `Repayments of borrowed money count as operating cash outflows.`,
       e: `Loan repayments are financing, not operating.`,
     },
     {
-      t: sc.net > 0,
-      s: `Over the year shown on extract ${idx + 1}, the cash balance increases by ${fmt(sc.net)} euros.`,
-      e: `Net change is ${sc.net}.`,
+      t: false,
+      s: `Customer collections of receivables are financing cash inflows.`,
+      e: `They are operating inflows.`,
     },
     {
-      t: sc.net <= 0,
-      s: `Over the year shown on extract ${idx + 1}, the cash balance decreases by ${fmt(Math.abs(sc.net))} euros.`,
-      e: `Net change is ${sc.net}.`,
+      t: sc.operating > 30000,
+      s: `Cash flow from operating activities exceeds 30,000 euros.`,
+      e: `Operating cash flow is ${sc.operating} euros.`,
     },
-  ];
+    {
+      t: sc.operating <= 30000,
+      s: `Cash flow from operating activities is at most 30,000 euros.`,
+      e: `Operating cash flow is ${sc.operating} euros.`,
+    },
+    {
+      t: div > 15000,
+      s: `Dividends paid exceed 15,000 euros.`,
+      e: `Dividends paid are ${div} euros.`,
+    },
+    {
+      t: div <= 15000,
+      s: `Dividends paid are at most 15,000 euros.`,
+      e: `Dividends paid are ${div} euros.`,
+    },
+    {
+      t: borrow > div,
+      s: `Proceeds from new borrowing (${borrow} euros) exceed dividends paid (${div} euros).`,
+      e: `Borrowing ${borrow} versus dividends ${div}.`,
+    },
+    {
+      t: borrow <= div,
+      s: `Proceeds from new borrowing (${borrow} euros) do not exceed dividends paid (${div} euros).`,
+      e: `Borrowing ${borrow} versus dividends ${div}.`,
+    },
+    {
+      t: opCoversInv,
+      s: `Operating cash flow (${sc.operating}) more than covers the investing outflow (${sc.investing}).`,
+      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
+    },
+    {
+      t: !opCoversInv,
+      s: `Operating cash flow (${sc.operating}) does not cover the investing outflow (${sc.investing}).`,
+      e: `Operating ${sc.operating} versus investing ${sc.investing}.`,
+    },
+    {
+      t: fin > 0,
+      s: `Cash flow from financing activities is positive at ${fin} euros.`,
+      e: `Financing cash flow is ${fin}.`,
+    },
+    {
+      t: fin <= 0,
+      s: `Cash flow from financing activities is not positive; it is ${fin} euros.`,
+      e: `Financing cash flow is ${fin}.`,
+    },
+  ].map((p) => ({
+    ...p,
+    s: `On cash-flow extract ${idx + 1} for a ${biz}: ${p.s}`,
+  }));
 
   const statements = [];
   const tactical_explanations = [];
@@ -737,8 +753,18 @@ Evaluate the following economic assertions:`;
     const uni = A.size + B.size - inter;
     return uni ? inter / uni >= 0.75 : false;
   };
+  // Prefer conceptual (textbook) statements first — PDF-style mix.
+  const ordered = [...pool].sort((a, b) => {
+    const score = (s) =>
+      /sit in financing|separate sections|trade receivable|classified as an investing|not the same thing as a profit|belongs in investing|must be failing|count as operating|financing cash inflows/.test(
+        s,
+      )
+        ? 1
+        : 0;
+    return score(b.s) - score(a.s);
+  });
   for (const want of slot.answer_key) {
-    const item = pool.find(
+    const item = ordered.find(
       (p) => p.t === want && !used.has(p.s) && !statements.some((s) => tooClose(s, p.s)),
     );
     if (!item) throw new Error(`cfTableCase pool miss ${slot.case_id} want=${want}`);

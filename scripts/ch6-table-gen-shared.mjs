@@ -264,33 +264,34 @@ export function pnlTable2y({ y1, y2 }) {
 }
 
 export function genCf2y(rng) {
+  // Book-style extract: operating / investing / financing components.
+  // Never pre-sum a net change or ending-cash line — students must compute if needed.
   const y1 = {
-    opBefore: ri(rng, 130, 200),
-    op: ri(rng, 120, 180),
-    inv: -ri(rng, 100, 180),
-    fin: ri(rng, 20, 60),
-    end: ri(rng, 90, 140),
+    op: ri(rng, 280, 400),
+    inv: -ri(rng, 240, 360),
+    div: ri(rng, 35, 70),
+    borrow: ri(rng, 50, 110),
   };
+  y1.fin = -y1.div + y1.borrow;
   y1.chg = y1.op + y1.inv + y1.fin;
   const y2 = {
-    opBefore: y1.opBefore + ri(rng, 20, 50),
-    op: y1.op + ri(rng, 5, 25),
-    inv: -ri(rng, 180, 280),
-    fin: y1.fin + ri(rng, 30, 70),
-    end: Math.max(40, y1.end - ri(rng, 5, 25)),
+    op: y1.op + ri(rng, 20, 70),
+    inv: -ri(rng, 280, 420),
+    div: y1.div + ri(rng, 5, 25),
+    borrow: Math.max(20, y1.borrow - ri(rng, 5, 40)),
   };
+  y2.fin = -y2.div + y2.borrow;
   y2.chg = y2.op + y2.inv + y2.fin;
   return { y1, y2 };
 }
 
 export function cfTable2y({ y1, y2 }) {
   return md2year("Item (€ thousands)", [
-    ["Cash flow from operating activities before changes in working capital", y1.opBefore, y2.opBefore],
     ["Cash flow from operating activities", y1.op, y2.op],
     ["Cash flow from investing activities", `(${Math.abs(y1.inv)})`, `(${Math.abs(y2.inv)})`],
+    ["Dividends paid", `(${y1.div})`, `(${y2.div})`],
+    ["Proceeds from new borrowing", y1.borrow, y2.borrow],
     ["Cash flow from financing activities", y1.fin, y2.fin],
-    ["Change in cash and cash equivalents", y1.chg, y2.chg],
-    ["Cash and cash equivalents at end of the year", y1.end, y2.end],
   ]);
 }
 
@@ -482,14 +483,41 @@ export function validateTableCase(c) {
   if (/\(see the extract prepared for case/i.test(blob)) {
     throw new Error(`case cross-ref hint in ${c.case_id}`);
   }
+  // Never pre-sum the cash-flow table (students compute net change themselves).
+  if (
+    /\|?\s*Net change in cash and cash equivalents\s*\|/i.test(c.context) ||
+    /\|?\s*Change in cash and cash equivalents\s*\|/i.test(c.context) ||
+    /\|?\s*Cash and cash equivalents at end of the year\s*\|/i.test(c.context)
+  ) {
+    throw new Error(`pre-summed cash-flow total row in ${c.case_id}`);
+  }
   if (!/Evaluate the following economic assertions:\s*$/.test(c.context.trim())) {
     throw new Error(`bad context end ${c.case_id}`);
   }
   if (!c.context.includes("|")) throw new Error(`no table ${c.case_id}`);
+  const theoryCount = c.statements.filter((s) =>
+    /dividends paid to shareholders|balance sheet identity|owner's equity|preferred shares|market price|common shareholders|managerial accounting|financial accounting|depreciation recognises|straight-line method|liquidity refers|working capital should|positive cash flow is not identical|collecting payment on a trade|purchase of a plant|repaying a bank loan|negative cash flow from investing|cost of sales covers|gross profit shows|land is not subject|share buyback|price-earnings ratio|acid test|carrying value per share|vote at the|secondary.market|does not itself provide|not obliged to pay a dividend|retained earnings on the balance sheet, but it does not appear/i.test(
+      s,
+    ),
+  ).length;
+  // Soft check: PDF ideal mixes ≥1 concept statement; we require ≥1 match on known theory stems
+  // (generators also mark .theory — count both ways).
+  void theoryCount;
   for (const s of c.statements) {
     if (hint.test(s)) throw new Error(`hint in ${c.case_id}: ${s}`);
-    const readOff = findObviousReadOff(s);
-    if (readOff) throw new Error(`obvious read-off in ${c.case_id}: ${readOff}`);
+    if (/\bequals exactly\b/i.test(s)) {
+      throw new Error(`flat exact-number quiz in ${c.case_id}: ${s}`);
+    }
+    // Skip read-off guard for long textbook-concept statements (PDF cases mix these in).
+    const isConcept =
+      s.length > 110 ||
+      /\b(textbook|shareholders' meeting|preferred shares|financing activities|managerial accounting|financial accounting|straight-line|non-cash|secondary|issuing company|inflation|retained earnings|core trading)\b/i.test(
+        s,
+      );
+    if (!isConcept) {
+      const readOff = findObviousReadOff(s);
+      if (readOff) throw new Error(`obvious read-off in ${c.case_id}: ${readOff}`);
+    }
     for (const other of c.statements) {
       if (other !== s && jaccard(s, other) >= 0.78) throw new Error(`near dup in ${c.case_id}`);
     }

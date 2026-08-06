@@ -3,13 +3,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.004",
     "title": "Balance Sheet as a Point-in-Time Snapshot",
-    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 26000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | 5500 |\n| Net change in cash and cash equivalents | **22500** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 26000 |\n| Cash flow from investing activities | (9000) |\n| Dividends paid | (8000) |\n| Proceeds from new borrowing | 13500 |\n| Cash flow from financing activities | 5500 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 1, cash and cash equivalents change by 22,500 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 40,500 euros on extract 1.",
-      "Purchases recorded under investing total an outflow of 9,000 euros on extract 1.",
-      "The operating figure alone of 26,000 euros is already the full net change on extract 1.",
-      "The investing line on extract 1 reports cash received of 9,000 euros."
+      "On cash-flow extract 1 for a bakery: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 1 for a bakery: The dividends paid line of (8000) euros belongs in investing activities.",
+      "On cash-flow extract 1 for a bakery: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 1 for a bakery: The investing outflow of 9,000 euros means the business must be failing.",
+      "On cash-flow extract 1 for a bakery: Repayments of borrowed money count as operating cash outflows."
     ],
     "answer_key": [
       true,
@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Operating 26000 − investing 9000 + financing 5500 = 22500.",
-      "FALSE — Investing must be subtracted; correct net change is 22,500 euros.",
-      "TRUE — The investing line is (9000).",
-      "FALSE — That ignores investing and financing; correct net is 22,500 euros.",
-      "FALSE — Investing is an outflow of 9,000 euros."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "FALSE — Loan repayments are financing, not operating."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -93,13 +93,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.009",
     "title": "Cash Flow From Operating Activities",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 30800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | (4740) |\n| Net change in cash and cash equivalents | **11660** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 30800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (13100) |\n| Proceeds from new borrowing | 8360 |\n| Cash flow from financing activities | -4740 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 4, cash and cash equivalents change by 11,660 euros in total.",
-      "Purchases recorded under investing total an outflow of 14,400 euros on extract 4.",
-      "Financing activities remove 4,740 euros from cash on extract 4.",
-      "Operating cash of 30,800 euros more than covers the investing outflow of 14,400 euros on extract 4.",
-      "Treating the investing line as an addition, total cash would change by 40,460 euros on extract 4."
+      "On cash-flow extract 4 for a hotel chain: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 4 for a hotel chain: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 4 for a hotel chain: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 4 for a hotel chain: Buying new kitchen equipment is classified as an investing cash outflow.",
+      "On cash-flow extract 4 for a hotel chain: The dividends paid line of (13100) euros belongs in investing activities."
     ],
     "answer_key": [
       true,
@@ -109,11 +109,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Operating 30800 − investing 14400 − financing 4740 = 11660.",
-      "TRUE — The investing line is (14400).",
-      "TRUE — Financing is an outflow of 4,740 euros.",
-      "TRUE — Operating 30800 versus investing 14400.",
-      "FALSE — Investing must be subtracted; correct net change is 11,660 euros."
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows.",
+      "FALSE — Dividends are financing outflows, not investing."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -183,13 +183,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.012",
     "title": "Negative Investing Cash Flow Explained",
-    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 35600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | 6820 |\n| Net change in cash and cash equivalents | **31620** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 35600 |\n| Cash flow from investing activities | (10800) |\n| Dividends paid | (18200) |\n| Proceeds from new borrowing | 25020 |\n| Cash flow from financing activities | 6820 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 53,220 euros on extract 7.",
-      "The operating figure alone of 35,600 euros is already the full net change on extract 7.",
-      "On extract 7, cash and cash equivalents change by 31,620 euros in total.",
-      "Purchases recorded under investing total an outflow of 10,800 euros on extract 7.",
-      "The investing line on extract 7 reports cash received of 10,800 euros."
+      "On cash-flow extract 7 for a furniture maker: The dividends paid line of (18200) euros belongs in investing activities.",
+      "On cash-flow extract 7 for a furniture maker: The investing outflow of 10,800 euros means the business must be failing.",
+      "On cash-flow extract 7 for a furniture maker: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 7 for a furniture maker: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 7 for a furniture maker: Repayments of borrowed money count as operating cash outflows."
     ],
     "answer_key": [
       false,
@@ -199,11 +199,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 31,620 euros.",
-      "FALSE — That ignores investing and financing; correct net is 31,620 euros.",
-      "TRUE — Operating 35600 − investing 10800 + financing 6820 = 31620.",
-      "TRUE — The investing line is (10800).",
-      "FALSE — Investing is an outflow of 10,800 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Loan repayments are financing, not operating."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -273,13 +273,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.018",
     "title": "Net Change in Cash and Cash Equivalents",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 40400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | (5820) |\n| Net change in cash and cash equivalents | **18380** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 40400 |\n| Cash flow from investing activities | (16200) |\n| Dividends paid | (23300) |\n| Proceeds from new borrowing | 17480 |\n| Cash flow from financing activities | -5820 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 10, cash and cash equivalents change by 18,380 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 50,780 euros on extract 10.",
-      "The operating figure alone of 40,400 euros is already the full net change on extract 10.",
-      "The investing line on extract 10 reports cash received of 16,200 euros.",
-      "Purchases recorded under investing total an outflow of 16,200 euros on extract 10."
+      "On cash-flow extract 10 for a printing company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 10 for a printing company: The dividends paid line of (23300) euros belongs in investing activities.",
+      "On cash-flow extract 10 for a printing company: The investing outflow of 16,200 euros means the business must be failing.",
+      "On cash-flow extract 10 for a printing company: Repayments of borrowed money count as operating cash outflows.",
+      "On cash-flow extract 10 for a printing company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections."
     ],
     "answer_key": [
       true,
@@ -289,11 +289,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 40400 − investing 16200 − financing 5820 = 18380.",
-      "FALSE — Investing must be subtracted; correct net change is 18,380 euros.",
-      "FALSE — That ignores investing and financing; correct net is 18,380 euros.",
-      "FALSE — Investing is an outflow of 16,200 euros.",
-      "TRUE — The investing line is (16200)."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "FALSE — Loan repayments are financing, not operating.",
+      "TRUE — Investing and financing are recorded separately."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -363,13 +363,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.025",
     "title": "Straight-Line Depreciation Method",
-    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 45200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | 8140 |\n| Net change in cash and cash equivalents | **40740** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 45200 |\n| Cash flow from investing activities | (12600) |\n| Dividends paid | (28400) |\n| Proceeds from new borrowing | 36540 |\n| Cash flow from financing activities | 8140 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 65,940 euros on extract 13.",
-      "On extract 13, cash and cash equivalents change by 40,740 euros in total.",
-      "The operating figure alone of 45,200 euros is already the full net change on extract 13.",
-      "Purchases recorded under investing total an outflow of 12,600 euros on extract 13.",
-      "Financing activities add 8,140 euros to cash on extract 13."
+      "On cash-flow extract 13 for a logistics company: The dividends paid line of (28400) euros belongs in investing activities.",
+      "On cash-flow extract 13 for a logistics company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 13 for a logistics company: The investing outflow of 12,600 euros means the business must be failing.",
+      "On cash-flow extract 13 for a logistics company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 13 for a logistics company: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
     ],
     "answer_key": [
       false,
@@ -379,11 +379,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 40,740 euros.",
-      "TRUE — Operating 45200 − investing 12600 + financing 8140 = 40740.",
-      "FALSE — That ignores investing and financing; correct net is 40,740 euros.",
-      "TRUE — The investing line is (12600).",
-      "TRUE — Financing is an inflow of 8,140 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -453,13 +453,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.032",
     "title": "Profit Raises Equity",
-    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | (6900) |\n| Net change in cash and cash equivalents | **34100** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (9000) |\n| Dividends paid | (11500) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -6500 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 52,100 euros on extract 16.",
-      "On extract 16, cash and cash equivalents change by 34,100 euros in total.",
-      "Purchases recorded under investing total an outflow of 9,000 euros on extract 16.",
-      "The operating figure alone of 50,000 euros is already the full net change on extract 16.",
-      "Financing activities remove 6,900 euros from cash on extract 16."
+      "On cash-flow extract 16 for a fitness club chain: The dividends paid line of (11500) euros belongs in investing activities.",
+      "On cash-flow extract 16 for a fitness club chain: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 16 for a fitness club chain: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 16 for a fitness club chain: The investing outflow of 9,000 euros means the business must be failing.",
+      "On cash-flow extract 16 for a fitness club chain: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
     ],
     "answer_key": [
       false,
@@ -469,11 +469,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 34,100 euros.",
-      "TRUE — Operating 50000 − investing 9000 − financing 6900 = 34100.",
-      "TRUE — The investing line is (9000).",
-      "FALSE — That ignores investing and financing; correct net is 34,100 euros.",
-      "TRUE — Financing is an outflow of 6,900 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Customer collections belong in operating cash flow."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -543,13 +543,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.038",
     "title": "Turnover and the Balance Sheet",
-    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 54800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | 9460 |\n| Net change in cash and cash equivalents | **49860** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 54800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (16600) |\n| Proceeds from new borrowing | 26060 |\n| Cash flow from financing activities | 9460 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 19, cash and cash equivalents change by 49,860 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 78,660 euros on extract 19.",
-      "Purchases recorded under investing total an outflow of 14,400 euros on extract 19.",
-      "The operating figure alone of 54,800 euros is already the full net change on extract 19.",
-      "The investing line on extract 19 reports cash received of 14,400 euros."
+      "On cash-flow extract 19 for a publishing house: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 19 for a publishing house: The dividends paid line of (16600) euros belongs in investing activities.",
+      "On cash-flow extract 19 for a publishing house: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 19 for a publishing house: The investing outflow of 14,400 euros means the business must be failing.",
+      "On cash-flow extract 19 for a publishing house: Repayments of borrowed money count as operating cash outflows."
     ],
     "answer_key": [
       true,
@@ -559,11 +559,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Operating 54800 − investing 14400 + financing 9460 = 49860.",
-      "FALSE — Investing must be subtracted; correct net change is 49,860 euros.",
-      "TRUE — The investing line is (14400).",
-      "FALSE — That ignores investing and financing; correct net is 49,860 euros.",
-      "FALSE — Investing is an outflow of 14,400 euros."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "FALSE — Loan repayments are financing, not operating."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -633,13 +633,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.046",
     "title": "Courier Van Fleet Cash Outflow",
-    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | (7980) |\n| Net change in cash and cash equivalents | **40820** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (10800) |\n| Dividends paid | (21700) |\n| Proceeds from new borrowing | 13720 |\n| Cash flow from financing activities | -7980 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 22, cash and cash equivalents change by 40,820 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 62,420 euros on extract 22.",
-      "Purchases recorded under investing total an outflow of 10,800 euros on extract 22.",
-      "Financing activities remove 7,980 euros from cash on extract 22.",
-      "Operating cash of 59,600 euros more than covers the investing outflow of 10,800 euros on extract 22."
+      "On cash-flow extract 22 for a catering company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 22 for a catering company: The dividends paid line of (21700) euros belongs in investing activities.",
+      "On cash-flow extract 22 for a catering company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 22 for a catering company: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 22 for a catering company: Buying new catering vans is classified as an investing cash outflow."
     ],
     "answer_key": [
       true,
@@ -649,11 +649,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 59600 − investing 10800 − financing 7980 = 40820.",
-      "FALSE — Investing must be subtracted; correct net change is 40,820 euros.",
-      "TRUE — The investing line is (10800).",
-      "TRUE — Financing is an outflow of 7,980 euros.",
-      "TRUE — Operating 59600 versus investing 10800."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -723,13 +723,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.056",
     "title": "Software Developer Profit and Cash Gap",
-    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 64400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | 10780 |\n| Net change in cash and cash equivalents | **58980** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 64400 |\n| Cash flow from investing activities | (16200) |\n| Dividends paid | (26800) |\n| Proceeds from new borrowing | 37580 |\n| Cash flow from financing activities | 10780 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 91,380 euros on extract 25.",
-      "On extract 25, cash and cash equivalents change by 58,980 euros in total.",
-      "Purchases recorded under investing total an outflow of 16,200 euros on extract 25.",
-      "Financing activities add 10,780 euros to cash on extract 25.",
-      "Operating cash of 64,400 euros more than covers the investing outflow of 16,200 euros on extract 25."
+      "On cash-flow extract 25 for a bakery: The dividends paid line of (26800) euros belongs in investing activities.",
+      "On cash-flow extract 25 for a bakery: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 25 for a bakery: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 25 for a bakery: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 25 for a bakery: Buying new commercial ovens is classified as an investing cash outflow."
     ],
     "answer_key": [
       false,
@@ -739,11 +739,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 58,980 euros.",
-      "TRUE — Operating 64400 − investing 16200 + financing 10780 = 58980.",
-      "TRUE — The investing line is (16200).",
-      "TRUE — Financing is an inflow of 10,780 euros.",
-      "TRUE — Operating 64400 versus investing 16200."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -813,13 +813,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.066",
     "title": "Brewery Investing Cash Flow",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 69200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | (9060) |\n| Net change in cash and cash equivalents | **47540** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 69200 |\n| Cash flow from investing activities | (12600) |\n| Dividends paid | (9900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -4900 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 28, cash and cash equivalents change by 47,540 euros in total.",
-      "Purchases recorded under investing total an outflow of 12,600 euros on extract 28.",
-      "Financing activities remove 9,060 euros from cash on extract 28.",
-      "Operating cash of 69,200 euros more than covers the investing outflow of 12,600 euros on extract 28.",
-      "Buying new kitchen equipment for this hotel chain is classified under investing activities."
+      "On cash-flow extract 28 for a hotel chain: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 28 for a hotel chain: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 28 for a hotel chain: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 28 for a hotel chain: Buying new kitchen equipment is classified as an investing cash outflow.",
+      "On cash-flow extract 28 for a hotel chain: A positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals."
     ],
     "answer_key": [
       true,
@@ -829,11 +829,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 69200 − investing 12600 − financing 9060 = 47540.",
-      "TRUE — The investing line is (12600).",
-      "TRUE — Financing is an outflow of 9,060 euros.",
-      "TRUE — Operating 69200 versus investing 12600.",
-      "TRUE — Long-term asset purchases are investing cash flows."
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows.",
+      "TRUE — Profit and cash movement are different concepts."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -903,13 +903,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.075",
     "title": "Arable Farm Land and Tractor",
-    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 74000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | 12100 |\n| Net change in cash and cash equivalents | **77100** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 74000 |\n| Cash flow from investing activities | (9000) |\n| Dividends paid | (15000) |\n| Proceeds from new borrowing | 27100 |\n| Cash flow from financing activities | 12100 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 95,100 euros on extract 31.",
-      "On extract 31, cash and cash equivalents change by 77,100 euros in total.",
-      "The operating figure alone of 74,000 euros is already the full net change on extract 31.",
-      "The investing line on extract 31 reports cash received of 9,000 euros.",
-      "Financing activities remove 12,100 euros from cash on extract 31."
+      "On cash-flow extract 31 for a furniture maker: The dividends paid line of (15000) euros belongs in investing activities.",
+      "On cash-flow extract 31 for a furniture maker: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 31 for a furniture maker: The investing outflow of 9,000 euros means the business must be failing.",
+      "On cash-flow extract 31 for a furniture maker: Repayments of borrowed money count as operating cash outflows.",
+      "On cash-flow extract 31 for a furniture maker: Customer collections of receivables are financing cash inflows."
     ],
     "answer_key": [
       false,
@@ -919,11 +919,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 77,100 euros.",
-      "TRUE — Operating 74000 − investing 9000 + financing 12100 = 77100.",
-      "FALSE — That ignores investing and financing; correct net is 77,100 euros.",
-      "FALSE — Investing is an outflow of 9,000 euros.",
-      "FALSE — Financing is an inflow of 12,100 euros, not an outflow."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "FALSE — Loan repayments are financing, not operating.",
+      "FALSE — They are operating inflows."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -993,13 +993,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.079",
     "title": "Understanding the Three Cash Flow Sections",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 78800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | (10140) |\n| Net change in cash and cash equivalents | **54260** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 78800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (20100) |\n| Proceeds from new borrowing | 9960 |\n| Cash flow from financing activities | -10140 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 83,060 euros on extract 34.",
-      "On extract 34, cash and cash equivalents change by 54,260 euros in total.",
-      "The operating figure alone of 78,800 euros is already the full net change on extract 34.",
-      "Purchases recorded under investing total an outflow of 14,400 euros on extract 34.",
-      "The investing line on extract 34 reports cash received of 14,400 euros."
+      "On cash-flow extract 34 for a printing company: The dividends paid line of (20100) euros belongs in investing activities.",
+      "On cash-flow extract 34 for a printing company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 34 for a printing company: The investing outflow of 14,400 euros means the business must be failing.",
+      "On cash-flow extract 34 for a printing company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 34 for a printing company: Repayments of borrowed money count as operating cash outflows."
     ],
     "answer_key": [
       false,
@@ -1009,11 +1009,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 54,260 euros.",
-      "TRUE — Operating 78800 − investing 14400 − financing 10140 = 54260.",
-      "FALSE — That ignores investing and financing; correct net is 54,260 euros.",
-      "TRUE — The investing line is (14400).",
-      "FALSE — Investing is an outflow of 14,400 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Loan repayments are financing, not operating."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1083,13 +1083,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.088",
     "title": "Financing Cash Flow and Borrowing",
-    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 83600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | 13420 |\n| Net change in cash and cash equivalents | **86220** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a logistics company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 83600 |\n| Cash flow from investing activities | (10800) |\n| Dividends paid | (25200) |\n| Proceeds from new borrowing | 38620 |\n| Cash flow from financing activities | 13420 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 37, cash and cash equivalents change by 86,220 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 107,820 euros on extract 37.",
-      "Purchases recorded under investing total an outflow of 10,800 euros on extract 37.",
-      "Financing activities add 13,420 euros to cash on extract 37.",
-      "Operating cash of 83,600 euros more than covers the investing outflow of 10,800 euros on extract 37."
+      "On cash-flow extract 37 for a logistics company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 37 for a logistics company: The dividends paid line of (25200) euros belongs in investing activities.",
+      "On cash-flow extract 37 for a logistics company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 37 for a logistics company: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 37 for a logistics company: Buying new forklift trucks is classified as an investing cash outflow."
     ],
     "answer_key": [
       true,
@@ -1099,11 +1099,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 83600 − investing 10800 + financing 13420 = 86220.",
-      "FALSE — Investing must be subtracted; correct net change is 86,220 euros.",
-      "TRUE — The investing line is (10800).",
-      "TRUE — Financing is an inflow of 13,420 euros.",
-      "TRUE — Operating 83600 versus investing 10800."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1173,13 +1173,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.098",
     "title": "Reading a Statement of Profit and Loss",
-    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 88400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | (11220) |\n| Net change in cash and cash equivalents | **60980** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 88400 |\n| Cash flow from investing activities | (16200) |\n| Dividends paid | (8300) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -3300 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 40, cash and cash equivalents change by 60,980 euros in total.",
-      "Purchases recorded under investing total an outflow of 16,200 euros on extract 40.",
-      "Financing activities remove 11,220 euros from cash on extract 40.",
-      "Operating cash of 88,400 euros more than covers the investing outflow of 16,200 euros on extract 40.",
-      "Buying new exercise equipment for this fitness club chain is classified under investing activities."
+      "On cash-flow extract 40 for a fitness club chain: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 40 for a fitness club chain: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 40 for a fitness club chain: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 40 for a fitness club chain: Buying new exercise equipment is classified as an investing cash outflow.",
+      "On cash-flow extract 40 for a fitness club chain: A positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals."
     ],
     "answer_key": [
       true,
@@ -1189,11 +1189,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 88400 − investing 16200 − financing 11220 = 60980.",
-      "TRUE — The investing line is (16200).",
-      "TRUE — Financing is an outflow of 11,220 euros.",
-      "TRUE — Operating 88400 versus investing 16200.",
-      "TRUE — Long-term asset purchases are investing cash flows."
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows.",
+      "TRUE — Profit and cash movement are different concepts."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1263,13 +1263,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.114",
     "title": "Accumulated Depreciation Over Time",
-    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 93200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | 14740 |\n| Net change in cash and cash equivalents | **95340** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 93200 |\n| Cash flow from investing activities | (12600) |\n| Dividends paid | (13400) |\n| Proceeds from new borrowing | 28140 |\n| Cash flow from financing activities | 14740 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 43, cash and cash equivalents change by 95,340 euros in total.",
-      "Purchases recorded under investing total an outflow of 12,600 euros on extract 43.",
-      "Financing activities add 14,740 euros to cash on extract 43.",
-      "Operating cash of 93,200 euros more than covers the investing outflow of 12,600 euros on extract 43.",
-      "Buying new binding machines for this publishing house is classified under investing activities."
+      "On cash-flow extract 43 for a publishing house: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 43 for a publishing house: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 43 for a publishing house: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 43 for a publishing house: Buying new binding machines is classified as an investing cash outflow.",
+      "On cash-flow extract 43 for a publishing house: A positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals."
     ],
     "answer_key": [
       true,
@@ -1279,11 +1279,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 93200 − investing 12600 + financing 14740 = 95340.",
-      "TRUE — The investing line is (12600).",
-      "TRUE — Financing is an inflow of 14,740 euros.",
-      "TRUE — Operating 93200 versus investing 12600.",
-      "TRUE — Long-term asset purchases are investing cash flows."
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows.",
+      "TRUE — Profit and cash movement are different concepts."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1353,13 +1353,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.122",
     "title": "Balance Sheet Versus Income Statement",
-    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (9000) |\n| Cash flow from financing activities | (12300) |\n| Net change in cash and cash equivalents | **76700** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (9000) |\n| Dividends paid | (18500) |\n| Proceeds from new borrowing | 6200 |\n| Cash flow from financing activities | -12300 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 94,700 euros on extract 46.",
-      "The operating figure alone of 98,000 euros is already the full net change on extract 46.",
-      "The investing line on extract 46 reports cash received of 9,000 euros.",
-      "On extract 46, cash and cash equivalents change by 76,700 euros in total.",
-      "Financing activities add 12,300 euros to cash on extract 46."
+      "On cash-flow extract 46 for a catering company: The dividends paid line of (18500) euros belongs in investing activities.",
+      "On cash-flow extract 46 for a catering company: The investing outflow of 9,000 euros means the business must be failing.",
+      "On cash-flow extract 46 for a catering company: Repayments of borrowed money count as operating cash outflows.",
+      "On cash-flow extract 46 for a catering company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 46 for a catering company: Customer collections of receivables are financing cash inflows."
     ],
     "answer_key": [
       false,
@@ -1369,11 +1369,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 76,700 euros.",
-      "FALSE — That ignores investing and financing; correct net is 76,700 euros.",
-      "FALSE — Investing is an outflow of 9,000 euros.",
-      "TRUE — Operating 98000 − investing 9000 − financing 12300 = 76700.",
-      "FALSE — Financing is an outflow of 12,300 euros, not an inflow."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "FALSE — Loan repayments are financing, not operating.",
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — They are operating inflows."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1443,13 +1443,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.125",
     "title": "Loan Repayment Cash Classification",
-    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 102800 |\n| Cash flow from investing activities | (14400) |\n| Cash flow from financing activities | 16060 |\n| Net change in cash and cash equivalents | **104460** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 102800 |\n| Cash flow from investing activities | (14400) |\n| Dividends paid | (23600) |\n| Proceeds from new borrowing | 39660 |\n| Cash flow from financing activities | 16060 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 133,260 euros on extract 49.",
-      "On extract 49, cash and cash equivalents change by 104,460 euros in total.",
-      "Purchases recorded under investing total an outflow of 14,400 euros on extract 49.",
-      "The operating figure alone of 102,800 euros is already the full net change on extract 49.",
-      "Financing activities add 16,060 euros to cash on extract 49."
+      "On cash-flow extract 49 for a bakery: The dividends paid line of (23600) euros belongs in investing activities.",
+      "On cash-flow extract 49 for a bakery: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 49 for a bakery: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 49 for a bakery: The investing outflow of 14,400 euros means the business must be failing.",
+      "On cash-flow extract 49 for a bakery: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
     ],
     "answer_key": [
       false,
@@ -1459,11 +1459,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 104,460 euros.",
-      "TRUE — Operating 102800 − investing 14400 + financing 16060 = 104460.",
-      "TRUE — The investing line is (14400).",
-      "FALSE — That ignores investing and financing; correct net is 104,460 euros.",
-      "TRUE — Financing is an inflow of 16,060 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Customer collections belong in operating cash flow."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -1533,13 +1533,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.129",
     "title": "Equity Movements From Profit",
-    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 107600 |\n| Cash flow from investing activities | (10800) |\n| Cash flow from financing activities | (13380) |\n| Net change in cash and cash equivalents | **83420** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a hotel chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 107600 |\n| Cash flow from investing activities | (10800) |\n| Dividends paid | (28700) |\n| Proceeds from new borrowing | 15320 |\n| Cash flow from financing activities | -13380 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 52, cash and cash equivalents change by 83,420 euros in total.",
-      "Purchases recorded under investing total an outflow of 10,800 euros on extract 52.",
-      "Treating the investing line as an addition, total cash would change by 105,020 euros on extract 52.",
-      "Financing activities remove 13,380 euros from cash on extract 52.",
-      "Operating cash of 107,600 euros more than covers the investing outflow of 10,800 euros on extract 52."
+      "On cash-flow extract 52 for a hotel chain: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 52 for a hotel chain: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 52 for a hotel chain: The dividends paid line of (28700) euros belongs in investing activities.",
+      "On cash-flow extract 52 for a hotel chain: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 52 for a hotel chain: Buying new kitchen equipment is classified as an investing cash outflow."
     ],
     "answer_key": [
       true,
@@ -1549,11 +1549,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 107600 − investing 10800 − financing 13380 = 83420.",
-      "TRUE — The investing line is (10800).",
-      "FALSE — Investing must be subtracted; correct net change is 83,420 euros.",
-      "TRUE — Financing is an outflow of 13,380 euros.",
-      "TRUE — Operating 107600 versus investing 10800."
+      "TRUE — Dividend payments are a financing activity.",
+      "TRUE — Investing and financing are recorded separately.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1623,13 +1623,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.134",
     "title": "Non-Cash Adjustments to Profit",
-    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 112400 |\n| Cash flow from investing activities | (16200) |\n| Cash flow from financing activities | 17380 |\n| Net change in cash and cash equivalents | **113580** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a furniture maker.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 112400 |\n| Cash flow from investing activities | (16200) |\n| Dividends paid | (11800) |\n| Proceeds from new borrowing | 29180 |\n| Cash flow from financing activities | 17380 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "Treating the investing line as an addition, total cash would change by 145,980 euros on extract 55.",
-      "On extract 55, cash and cash equivalents change by 113,580 euros in total.",
-      "The operating figure alone of 112,400 euros is already the full net change on extract 55.",
-      "Purchases recorded under investing total an outflow of 16,200 euros on extract 55.",
-      "Financing activities add 17,380 euros to cash on extract 55."
+      "On cash-flow extract 55 for a furniture maker: The dividends paid line of (11800) euros belongs in investing activities.",
+      "On cash-flow extract 55 for a furniture maker: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 55 for a furniture maker: The investing outflow of 16,200 euros means the business must be failing.",
+      "On cash-flow extract 55 for a furniture maker: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 55 for a furniture maker: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
     ],
     "answer_key": [
       false,
@@ -1639,11 +1639,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Investing must be subtracted; correct net change is 113,580 euros.",
-      "TRUE — Operating 112400 − investing 16200 + financing 17380 = 113580.",
-      "FALSE — That ignores investing and financing; correct net is 113,580 euros.",
-      "TRUE — The investing line is (16200).",
-      "TRUE — Financing is an inflow of 17,380 euros."
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Negative investing cash flow often just means assets were purchased.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
@@ -1713,13 +1713,13 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.144",
     "title": "Straight-Line Charges Across Useful Life",
-    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 117200 |\n| Cash flow from investing activities | (12600) |\n| Cash flow from financing activities | (14460) |\n| Net change in cash and cash equivalents | **90140** |\n\nEvaluate the following economic assertions:",
+    "context": "Consider the following cash flow statement extract (€) for a printing company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 117200 |\n| Cash flow from investing activities | (12600) |\n| Dividends paid | (16900) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | -11900 |\n\nEvaluate the following economic assertions:",
     "statements": [
-      "On extract 58, cash and cash equivalents change by 90,140 euros in total.",
-      "Treating the investing line as an addition, total cash would change by 115,340 euros on extract 58.",
-      "Purchases recorded under investing total an outflow of 12,600 euros on extract 58.",
-      "Financing activities remove 14,460 euros from cash on extract 58.",
-      "Operating cash of 117,200 euros more than covers the investing outflow of 12,600 euros on extract 58."
+      "On cash-flow extract 58 for a printing company: Dividends paid to shareholders sit in financing activities, not operating activities.",
+      "On cash-flow extract 58 for a printing company: The dividends paid line of (16900) euros belongs in investing activities.",
+      "On cash-flow extract 58 for a printing company: A business can report an investing outflow and still pay a dividend in the same year, because investing and financing are separate sections.",
+      "On cash-flow extract 58 for a printing company: Collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "On cash-flow extract 58 for a printing company: Buying new printing press is classified as an investing cash outflow."
     ],
     "answer_key": [
       true,
@@ -1729,11 +1729,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Operating 117200 − investing 12600 − financing 14460 = 90140.",
-      "FALSE — Investing must be subtracted; correct net change is 90,140 euros.",
-      "TRUE — The investing line is (12600).",
-      "TRUE — Financing is an outflow of 14,460 euros.",
-      "TRUE — Operating 117200 versus investing 12600."
+      "TRUE — Dividend payments are a financing activity.",
+      "FALSE — Dividends are financing outflows, not investing.",
+      "TRUE — Investing and financing are recorded separately.",
+      "TRUE — Customer collections belong in operating cash flow.",
+      "TRUE — Long-term asset purchases are investing outflows."
     ],
     "difficulty_level": "2/5",
     "tier": "full",

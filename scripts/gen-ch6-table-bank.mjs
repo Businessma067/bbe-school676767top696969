@@ -42,6 +42,7 @@ import {
   smallBsTable,
   validateTableCase,
 } from "./ch6-table-gen-shared.mjs";
+import { sampleTheory, topicsForSubsection } from "./ch6-theory-pool.mjs";
 
 const plan = JSON.parse(fs.readFileSync("scripts/ch6-slot-plan.json", "utf8"));
 const SUBS = ["6.1", "6.2", "6.3", "6.4", "6.5"];
@@ -149,14 +150,34 @@ function shareBelow(rng, subject, ofWhat, frac, lo, hi) {
 /* case assembly                                                           */
 /* ---------------------------------------------------------------------- */
 
-function pickFive(candidates, want) {
+function pickFive(candidates, want, { minTheory = 2, maxTheory = 3 } = {}) {
   const chosen = [];
   const used = new Set();
+  function theoryN(list) {
+    return list.filter((c) => c.theory).length;
+  }
   function backtrack(pos) {
-    if (pos === 5) return true;
+    if (pos === 5) {
+      const t = theoryN(chosen);
+      return t >= minTheory && t <= maxTheory;
+    }
+    const needTheory = theoryN(chosen) < minTheory;
+    const theoryFull = theoryN(chosen) >= maxTheory;
+    const order = [];
     for (let i = 0; i < candidates.length; i++) {
-      if (used.has(i)) continue;
-      if (Boolean(candidates[i].val) !== Boolean(want[pos])) continue;
+      if (!used.has(i) && Boolean(candidates[i].val) === Boolean(want[pos])) {
+        if (theoryFull && candidates[i].theory) continue;
+        order.push(i);
+      }
+    }
+    order.sort((a, b) => {
+      const ta = Number(!!candidates[a].theory);
+      const tb = Number(!!candidates[b].theory);
+      // Prefer theory until we have enough, then prefer calc.
+      if (needTheory) return tb - ta;
+      return ta - tb;
+    });
+    for (const i of order) {
       if (chosen.some((c) => jaccard(c.stmt, candidates[i].stmt) >= 0.78)) continue;
       used.add(i);
       chosen.push(candidates[i]);
@@ -166,14 +187,27 @@ function pickFive(candidates, want) {
     }
     return false;
   }
-  return backtrack(0) ? chosen : null;
+  if (backtrack(0)) return chosen;
+  // Soft fallbacks for hard answer_keys
+  if (minTheory > 1 || maxTheory < 4) {
+    return pickFive(candidates, want, { minTheory: 1, maxTheory: 4 });
+  }
+  return null;
 }
 
-function pack(slot, title, context, candidates, usedStmts) {
-  const fresh = candidates.filter((c) => !usedStmts.has(normStmt(c.stmt)));
+function pack(slot, title, context, candidates, usedStmts, rng) {
+  const topics = topicsForSubsection(slot.subsection);
+  const theory = sampleTheory(topics, rng || (() => 0.5), 12);
+  const calc = candidates
+    .filter((c) => !/\bequals exactly\b|\bis exactly €|\bis exactly \d/i.test(c.stmt))
+    .map((c) => ({ theory: false, ...c }));
+  const fresh = [...calc, ...theory].filter((c) => !usedStmts.has(normStmt(c.stmt)));
   const picked = pickFive(fresh, slot.answer_key);
   if (!picked) return null;
-  for (const p of picked) usedStmts.add(normStmt(p.stmt));
+  for (const p of picked) {
+    // Theory may reuse Fuhrmann stems across cases (PDF-style); keep calc stmts globally unique.
+    if (!p.theory) usedStmts.add(normStmt(p.stmt));
+  }
   return {
     subsection: slot.subsection,
     case_id: slot.case_id,
@@ -330,7 +364,7 @@ function bs2y(slot, rng, used) {
     growthUp(rng, "Total liabilities", (y2.liab - y1.liab) / y1.liab, 8, 26),
   ];
 
-  return pack(slot, titleFor(slot, "bs2y"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "bs2y"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -404,26 +438,26 @@ function bs1yCandidates(b, rng) {
       val: false,
       expl: `A bank overdraft is a current liability.`,
     },
-    (() => {
-      const { claimed, val } = exactRatio(rng, cr, { deltaMin: 0.2, deltaMax: 0.55 });
-      return { stmt: `The current ratio is exactly ${claimed.toFixed(2)}.`, val, expl: `Current ratio is ${cr.toFixed(2)}.` };
-    })(),
-    (() => {
-      const { claimed, val } = exactAmt(rng, wc, { deltaMin: 20, deltaMax: 60 });
-      return {
-        stmt: `Working capital equals exactly €${fmt(claimed)} thousand.`,
-        val,
-        expl: `Working capital = ${wc}.`,
-      };
-    })(),
-    (() => {
-      const { claimed, val } = exactPct(rng, er, { deltaMin: 3, deltaMax: 9 });
-      return { stmt: `The equity ratio is exactly ${claimed.toFixed(1)}%.`, val, expl: `Equity ratio ≈ ${pct(er).toFixed(1)}%.` };
-    })(),
-    (() => {
-      const { claimed, val } = exactRatio(rng, acid, { deltaMin: 0.15, deltaMax: 0.5 });
-      return { stmt: `The acid-test ratio is exactly ${claimed.toFixed(2)}.`, val, expl: `Acid-test ratio ≈ ${acid.toFixed(2)}.` };
-    })(),
+    withTimes(rng, 1.1, 2.2, (th) => ({
+      stmt: `The current ratio exceeds ${th.toFixed(2)}.`,
+      val: cr > th,
+      expl: `Current ratio is ${cr.toFixed(2)}.`,
+    })),
+    {
+      stmt: `Working capital is positive on this balance sheet.`,
+      val: wc > 0,
+      expl: `Working capital = ${wc}.`,
+    },
+    withPct(rng, 30, 55, (th) => ({
+      stmt: `The equity ratio exceeds ${th}%.`,
+      val: er * 100 > th,
+      expl: `Equity ratio ≈ ${pct(er).toFixed(1)}%.`,
+    })),
+    withTimes(rng, 0.7, 1.4, (th) => ({
+      stmt: `The acid-test ratio exceeds ${th.toFixed(2)}.`,
+      val: acid > th,
+      expl: `Acid-test ratio ≈ ${acid.toFixed(2)}.`,
+    })),
     {
       stmt: `Total assets of €${fmt(b.assets)} thousand equal total equity plus total liabilities.`,
       val: true,
@@ -468,7 +502,7 @@ function bs1y(slot, rng, used) {
     ["Cash and cash equivalents", b.cash],
   ]);
   const ctx = `Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${pie}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used);
+  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -478,45 +512,62 @@ function bs1y(slot, rng, used) {
 function cf2y(slot, rng, used) {
   const { y1, y2 } = genCf2y(rng);
   const opG = (y2.op - y1.op) / y1.op;
-  const endFall = y1.end > 0 ? (y1.end - y2.end) / y1.end : 0;
-  const invShare2 = Math.abs(y2.inv) / y2.op;
+  const divG = (y2.div - y1.div) / y1.div;
+  const finUp = y2.fin > y1.fin;
 
   const chart = chartBar("Operating and investing cash flows", [
     `Year 1 | Operating=${y1.op} | Investing=${y1.inv}`,
     `Year 2 | Operating=${y2.op} | Investing=${y2.inv}`,
   ]);
-  const ctx = `Consider the cash flow extract below (€ thousands).\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
+  const ctx = `Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n${chart}\n\n${cfTable2y({ y1, y2 })}\n\nEvaluate the following economic assertions:`;
 
   const cands = [
-    growthUp(rng, "Operating cash flow", opG, 6, 25),
-    withPct(rng, 100, 220, (th) => ({
-      stmt: `Year 2 investing outflow exceeds ${th}% of Year 2 operating cash flow.`,
-      val: invShare2 * 100 > th,
-      expl: `Investing/operating ≈ ${pct(invShare2).toFixed(1)}%.`,
+    {
+      stmt: `Cash flow from financing activities was higher in Year 2 than in Year 1.`,
+      val: finUp,
+      expl: `Financing moved from ${y1.fin} to ${y2.fin}.`,
+    },
+    withPct(rng, 8, 30, (th) => ({
+      stmt: `Cash flow from operating activities grew by more than ${th}% from Year 1 to Year 2.`,
+      val: opG * 100 > th,
+      expl: `Operating cash flow rose by about ${pct(opG).toFixed(1)}%.`,
     })),
-    withPct(rng, 5, 25, (th) => ({
-      stmt: `Year-end cash fell by more than ${th}% from Year 1 to Year 2.`,
-      val: endFall * 100 > th,
-      expl: `End-cash change ≈ ${pct(endFall).toFixed(1)}%.`,
+    withPct(rng, 10, 40, (th) => ({
+      stmt: `The increase in dividends paid from Year 1 to Year 2 was proportionally smaller than the increase in cash flow from operating activities.`,
+      val: divG < opG && divG * 100 < th,
+      expl: `Dividends grew ≈ ${pct(divG).toFixed(1)}%; operating cash flow grew ≈ ${pct(opG).toFixed(1)}%.`,
     })),
-    { stmt: `Year 2 operating cash flow is below the before-working-capital figure.`, val: y2.op < y2.opBefore, expl: `${y2.op} vs ${y2.opBefore}.` },
-    { stmt: `Investing cash flow is an outflow in both years.`, val: y1.inv < 0 && y2.inv < 0, expl: `Investing: ${y1.inv}, ${y2.inv}.` },
-    { stmt: `Year 2 financing cash flow is positive.`, val: y2.fin > 0, expl: `Financing Year 2 = ${y2.fin}.` },
-    { stmt: `Net cash change is positive in Year 1.`, val: y1.chg > 0, expl: `Year 1 change = ${y1.chg}.` },
-    { stmt: `Net cash change is positive in Year 2.`, val: y2.chg > 0, expl: `Year 2 change = ${y2.chg}.` },
-    (() => {
-      const { claimed, val } = exactAmt(rng, y2.end, { deltaMin: 10, deltaMax: 35 });
-      return { stmt: `Year 2 ending cash equals €${fmt(claimed)} thousand.`, val, expl: `Ending cash = €${fmt(y2.end)} thousand.` };
-    })(),
-    (() => {
-      const { claimed, val } = exactAmt(rng, y2.op, { deltaMin: 8, deltaMax: 30 });
-      return { stmt: `Year 2 operating cash flow equals €${fmt(claimed)} thousand.`, val, expl: `Operating cash flow = €${fmt(y2.op)} thousand.` };
-    })(),
-    { stmt: `Negative investing cash flow always means the business is failing.`, val: false, expl: `It often reflects asset purchases.` },
-    { stmt: `Collecting a customer invoice is an operating cash inflow.`, val: true, expl: `Trade-receivable collections are operating.` },
+    {
+      stmt: `Investing cash flow is an outflow in both years.`,
+      val: y1.inv < 0 && y2.inv < 0,
+      expl: `Investing: ${y1.inv}, ${y2.inv}.`,
+    },
+    {
+      stmt: `Proceeds from new borrowing were lower in Year 2 than in Year 1.`,
+      val: y2.borrow < y1.borrow,
+      expl: `Borrowing proceeds: ${y1.borrow} then ${y2.borrow}.`,
+    },
+    {
+      stmt: `Dividends paid rose from Year 1 to Year 2.`,
+      val: y2.div > y1.div,
+      expl: `Dividends: ${y1.div} then ${y2.div}.`,
+    },
+    growthUp(rng, "Cash flow from operating activities", opG, 6, 25),
+    {
+      theory: true,
+      stmt: `Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.`,
+      val: true,
+      expl: `Dividend payments are a financing activity.`,
+    },
+    {
+      theory: true,
+      stmt: `A business can have a negative cash flow from investing activities in the same year that it pays a dividend to its shareholders, since dividend payments and investment spending are recorded in different sections of the cash flow statement.`,
+      val: true,
+      expl: `Investing and financing are separate sections.`,
+    },
   ];
 
-  return pack(slot, titleFor(slot, "cf2y"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "cf2y"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -603,7 +654,7 @@ function pnl2y(slot, rng, used) {
     })(),
   ];
 
-  return pack(slot, titleFor(slot, "pnl2y"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "pnl2y"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -645,16 +696,16 @@ function dep(slot, rng, used) {
     })(),
     (() => {
       const { claimed, val } = exactAmt(rng, bvB3, { deltaMin: 2000, deltaMax: 6000 });
-      return { stmt: `After three years, the delivery truck's book value is €${fmt(claimed)}.`, val, expl: `Book value ≈ €${fmt(Math.round(bvB3))}.` };
+      return { stmt: `After three years, the delivery truck's carrying value is €${fmt(claimed)}.`, val, expl: `Carrying value ≈ €${fmt(Math.round(bvB3))}.` };
     })(),
     { stmt: `After three years, the computer equipment, originally costing €${fmt(costC)}, is fully written down to nil.`, val: 3 >= lifeC, expl: `Useful life is ${lifeC} years with no residual value.` },
     (() => {
       const mult = 0.85 + rng() * 0.1;
       const thAmt = Math.round(combined3 * mult);
       return {
-        stmt: `After three years, the combined book value of all three assets exceeds €${fmt(thAmt)}.`,
+        stmt: `After three years, the combined carrying value of all three assets exceeds €${fmt(thAmt)}.`,
         val: combined3 > thAmt,
-        expl: `Combined book value ≈ €${fmt(Math.round(combined3))}.`,
+        expl: `Combined carrying value ≈ €${fmt(Math.round(combined3))}.`,
       };
     })(),
     { stmt: `Without recording depreciation on the €${fmt(costA)} machinery, non-current assets on the balance sheet would be overstated.`, val: true, expl: `Assets would stay at historical cost without write-downs.` },
@@ -683,7 +734,7 @@ function dep(slot, rng, used) {
     { stmt: `Depreciation on the €${fmt(costA)} machinery, the €${fmt(costB)} delivery truck and the €${fmt(costC)} computer equipment is charged directly against cash in the year it is recorded.`, val: false, expl: `Depreciation is a non-cash accounting charge, not a cash payment.` },
   ];
 
-  return pack(slot, titleFor(slot, "dep"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "dep"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -696,11 +747,9 @@ function combined(slot, rng, used) {
   const cfOp = op + ri(rng, -20, 30);
   const cfInv = -ri(rng, 180, 300);
   const cfFin = ri(rng, 30, 80);
-  const cashBeg = b.cash - (cfOp + cfInv + cfFin);
   const roce = op / (b.equity + b.ncl);
   const roe = op / b.equity;
   const wc = b.ca - b.cl;
-  const net = cfOp + cfInv + cfFin;
   const cashConversion = cfOp / op;
   const invShareAssets = b.inventory / b.assets;
 
@@ -715,7 +764,6 @@ function combined(slot, rng, used) {
     ["Cash flow from operating activities", cfOp],
     ["Cash flow from investing activities", `(${Math.abs(cfInv)})`],
     ["Cash flow from financing activities", cfFin],
-    ["Cash and cash equivalents at the beginning of the year", cashBeg],
   ])}\n\nEvaluate the following economic assertions:`;
 
   const cands = [
@@ -729,61 +777,42 @@ function combined(slot, rng, used) {
       val: roce * 100 > th,
       expl: `Return on capital employed ≈ ${pct(roce).toFixed(1)}%.`,
     })),
-    {
-      stmt: `With an operating result of €${fmt(op)} thousand, return on capital employed is mainly useful when comparing similar businesses or the same business over time, not as a standalone absolute number.`,
-      val: true,
-      expl: `Comparative context matters for return on capital employed.`,
-    },
-    (() => {
-      const { claimed, val } = exactAmt(rng, wc, { deltaMin: 25, deltaMax: 70 });
-      return { stmt: `Working capital equals exactly €${fmt(claimed)} thousand.`, val, expl: `Working capital = ${wc}.` };
-    })(),
-    (() => {
-      const { claimed, val } = exactAmt(rng, net, { deltaMin: 15, deltaMax: 40 });
-      return { stmt: `The net change in cash and cash equivalents equals exactly €${fmt(claimed)} thousand.`, val, expl: `Net change = ${net}.` };
-    })(),
-    (() => {
-      const mult = 0.8 + rng() * 0.15;
-      const thAmt = Math.round((cashBeg + net) * mult);
-      return {
-        stmt: `Cash and cash equivalents at the end of the year exceed €${fmt(thAmt)} thousand.`,
-        val: cashBeg + net > thAmt,
-        expl: `Ending cash ≈ €${fmt(Math.round(cashBeg + net))} thousand.`,
-      };
-    })(),
+    withPct(rng, 35, 55, (th) => ({
+      stmt: `The equity ratio exceeds ${th}%.`,
+      val: (b.equity / b.assets) * 100 > th,
+      expl: `Equity ratio ≈ ${pct(b.equity / b.assets).toFixed(1)}%.`,
+    })),
     withPct(rng, 75, 105, (th) => ({
       stmt: `Cash flow from operating activities amounts to less than ${th}% of the operating result, indicating profit is only partly backed by cash.`,
       val: cashConversion * 100 < th,
       expl: `Cash conversion ≈ ${pct(cashConversion).toFixed(1)}% of the operating result.`,
     })),
-    withPct(rng, 80, 110, (th) => ({
-      stmt: `Cash flow from operating activities amounts to more than ${th}% of the operating result.`,
-      val: cashConversion * 100 > th,
-      expl: `Cash conversion ≈ ${pct(cashConversion).toFixed(1)}% of the operating result.`,
-    })),
+    shareAbove(rng, "Inventory", "total assets", invShareAssets, 10, 28),
     {
-      stmt: `With cash flow from operating activities of €${fmt(cfOp)} thousand, cash flow from investing activities was an inflow this year.`,
-      val: cfInv > 0,
+      stmt: `Working capital is positive on this extract.`,
+      val: wc > 0,
+      expl: `Working capital = ${wc}.`,
+    },
+    {
+      stmt: `Cash flow from investing activities was an outflow this year.`,
+      val: cfInv < 0,
       expl: `Investing cash flow = ${cfInv}.`,
     },
-    shareAbove(rng, "Inventory", "total assets", invShareAssets, 10, 28),
-    withPct(rng, 25, 45, (th) => ({
-      stmt: `Cash flow from financing activities covers less than ${th}% of the cash outflow used for investing activities.`,
-      val: (cfFin / Math.abs(cfInv)) * 100 < th,
-      expl: `Financing inflow is about ${pct(cfFin / Math.abs(cfInv)).toFixed(1)}% of investing outflow.`,
-    })),
     {
-      stmt: `Cash and cash equivalents at the beginning of the year were negative, implying the business started the year with a net overdraft position.`,
-      val: cashBeg < 0,
-      expl: `Beginning cash computed from the reconciliation is ${cashBeg}.`,
+      theory: true,
+      stmt: `Profit for the year is reported in the income statement and increases retained earnings within equity on the balance sheet, but it does not appear as a separate line item within the cash flow statement, which instead records actual cash inflows and outflows.`,
+      val: true,
+      expl: `Profit links to retained earnings; the cash flow statement tracks cash, not profit as a line.`,
     },
-    (() => {
-      const { claimed, val } = exactPct(rng, roe, { deltaMin: 4, deltaMax: 12 });
-      return { stmt: `Return on equity is exactly ${claimed.toFixed(1)}%.`, val, expl: `Return on equity ≈ ${pct(roe).toFixed(1)}%.` };
-    })(),
+    {
+      theory: true,
+      stmt: `The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.`,
+      val: true,
+      expl: `Assets = liabilities + equity.`,
+    },
   ];
 
-  return pack(slot, titleFor(slot, "combined"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "combined"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -886,7 +915,7 @@ function turnover(slot, rng, used) {
     })),
   ];
 
-  return pack(slot, titleFor(slot, "turnover"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "turnover"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -989,18 +1018,32 @@ function share(slot, rng, used) {
       return { stmt: `Earnings per share is exactly €${(claimed / 100).toFixed(2)}.`, val, expl: `Earnings per share ≈ €${eps.toFixed(2)}.` };
     })(),
     {
-      stmt: `With unchanged shares outstanding, rising market capitalisation means the share price rose.`,
+      theory: true,
+      stmt: `Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.`,
       val: true,
-      expl: `Market capitalisation = price × shares.`,
+      expl: `Secondary-market price rises do not raise new company cash.`,
     },
     {
-      stmt: `Lowest monthly share turnover is under half of the peak month.`,
-      val: minVol < maxVol / 2,
-      expl: `Low ${fmt(minVol)} vs peak ${fmt(maxVol)}.`,
+      theory: true,
+      stmt: `Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.`,
+      val: true,
+      expl: `Common shares vote; preferred shares usually receive a higher dividend without voting rights.`,
+    },
+    {
+      theory: true,
+      stmt: `Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.`,
+      val: true,
+      expl: `These match the textbook motives for buying shares.`,
+    },
+    {
+      theory: true,
+      stmt: `A corporation must always pay a dividend to its shareholders every year, regardless of its financial performance.`,
+      val: false,
+      expl: `There is no obligation to pay a dividend every year.`,
     },
   ];
 
-  return pack(slot, titleFor(slot, "share"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "share"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -1087,7 +1130,7 @@ function bsSmall(slot, rng, used) {
   const conceptual = conceptualPool(rng, "total assets", b.assets);
   const cands = [...numeric, ...conceptual];
 
-  return pack(slot, titleFor(slot, "bsSmall"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "bsSmall"), ctx, cands, used, rng);
 }
 
 function depSmall(slot, rng, used) {
@@ -1118,7 +1161,7 @@ function depSmall(slot, rng, used) {
   const conceptual = conceptualPool(rng, "the combined asset cost", d.cost + d.cost2);
   const cands = [...numeric, ...conceptual];
 
-  return pack(slot, titleFor(slot, "depSmall"), ctx, cands, used);
+  return pack(slot, titleFor(slot, "depSmall"), ctx, cands, used, rng);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -1150,7 +1193,7 @@ function rescue(slot, rng, used) {
     `Current liabilities=${b.cl}`,
   ]);
   const ctx = `Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n${bar}\n\n${bsTableSingle(b)}\n\nEvaluate the following economic assertions:`;
-  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used);
+  return pack(slot, titleFor(slot, "bs1y"), ctx, bs1yCandidates(b, rng), used, rng);
 }
 
 function generateCase(slot, used, tableIndex, tableCount) {
