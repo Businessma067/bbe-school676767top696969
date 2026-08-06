@@ -28,6 +28,7 @@ import {
   seedFiredTimerWarnings,
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
+import { AuthNav } from "@/components/AuthNav";
 import {
   Sheet,
   SheetContent,
@@ -476,6 +477,7 @@ function TakeExamPage() {
             >
               Review
             </button>
+            <AuthNav />
           </div>
         </div>
         {saveError && (

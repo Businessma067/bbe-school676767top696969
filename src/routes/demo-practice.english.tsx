@@ -2,6 +2,7 @@ import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
+import { AuthNav } from "@/components/AuthNav";
 
 import { cn } from "@/lib/utils";
 import {
@@ -548,13 +549,16 @@ function EnglishTasks() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-8">
           <Link to="/demo-practice" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
           </Link>
-          <div className="hidden sm:flex flex-col items-end leading-tight">
-            <span className="font-display text-sm font-bold tracking-tight">English</span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU BBE · Reading · Grammar · Vocabulary</span>
+          <div className="flex items-center gap-3">
+            <div className="hidden sm:flex flex-col items-end leading-tight">
+              <span className="font-display text-sm font-bold tracking-tight">English</span>
+              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU BBE · Reading · Grammar · Vocabulary</span>
+            </div>
+            <AuthNav />
           </div>
         </div>
       </header>

@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/dialog";
 import { BookOpen, ChevronDown, Clock, Loader2, PlayCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/custom-mock-builder")({
   head: () => ({
@@ -200,31 +201,17 @@ function CustomMockBuilderPage() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none tracking-tight text-primary-foreground">
-                BBE
-              </span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">
-                BBE School
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                WU Vienna · Prep
-              </span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/products/full-course-subjects"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Full Course
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="px-6 py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-3xl">
@@ -250,7 +237,8 @@ function CustomMockBuilderPage() {
           >
             <h2 className="font-display text-xl font-semibold">Select book subtopics</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              From Fuhrmann — Introduction to Business and Economics (same TOC as Full Course theory).
+              From Fuhrmann — Introduction to Business and Economics (same TOC as Full Course
+              theory).
             </p>
 
             <ul className="mt-5 space-y-3">
@@ -273,9 +261,7 @@ function CustomMockBuilderPage() {
                             open ? "rotate-0" : "-rotate-90",
                           )}
                         />
-                        <span className="font-display text-sm font-semibold">
-                          Chapter {ch.num}
-                        </span>
+                        <span className="font-display text-sm font-semibold">Chapter {ch.num}</span>
                         <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
                         {selectedInCh > 0 && (
                           <span className="ml-auto shrink-0 rounded-full bg-[#8B5E3C]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8B5E3C]">

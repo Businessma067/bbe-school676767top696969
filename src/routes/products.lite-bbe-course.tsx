@@ -1,14 +1,6 @@
 import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  BookOpen,
-  ListChecks,
-  Clock,
-  Users,
-  Lightbulb,
-  Check,
-  Quote,
-} from "lucide-react";
+import { BookOpen, ListChecks, Clock, Users, Lightbulb, Check, Quote } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -17,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { CompareTable } from "@/components/CompareTable";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
-
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
@@ -110,8 +102,7 @@ const liteFaqs = [
   },
   {
     question: "Is €279 a one time payment or a subscription?",
-    answer:
-      "A single one time payment of €279, no recurring charges, no subscription.",
+    answer: "A single one time payment of €279, no recurring charges, no subscription.",
   },
   {
     question: "What kind of support do I get with Light?",
@@ -140,8 +131,7 @@ const liteFaqs = [
   },
   {
     question: "Can I access Light on my phone as well as desktop?",
-    answer:
-      "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.",
+    answer: "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.",
   },
   {
     question: "Do the 500+ tasks include all three subjects equally?",
@@ -179,31 +169,17 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
 function LiteBbeCourseProduct() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
-              <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">
-                BBE
-              </span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold tracking-tight text-foreground">
-                BBE School
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                WU Vienna · Prep
-              </span>
-            </div>
-          </Link>
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
           <Link
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
           </Link>
-        </div>
-      </header>
+        }
+      />
 
       <main className="px-6 py-10 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl">
@@ -295,7 +271,9 @@ function LiteBbeCourseProduct() {
                       <h3 className="font-display text-base font-semibold text-foreground">
                         {item.title}
                       </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {item.text}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -310,17 +288,18 @@ function LiteBbeCourseProduct() {
             </h2>
 
             <p className="text-base leading-relaxed text-muted-foreground">
-              Not everyone is two months out from the exam, buried in prep, needing every tool at once.
-              Some applicants are still early, three, four, five months out, and just want to start
-              building real fundamentals without committing to the full experience yet. Light is built
-              exactly for that stage.
+              Not everyone is two months out from the exam, buried in prep, needing every tool at
+              once. Some applicants are still early, three, four, five months out, and just want to
+              start building real fundamentals without committing to the full experience yet. Light
+              is built exactly for that stage.
             </p>
 
             <blockquote className="relative my-8 rounded-2xl border-l-4 border-primary bg-secondary/50 p-6">
               <Quote className="absolute left-4 top-4 h-5 w-5 text-primary/40" aria-hidden="true" />
               <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
-                "What actually works is starting with a focused, genuinely solid set of practice, enough
-                to build real intuition for how the exam thinks, without the pressure of an all in commitment."
+                "What actually works is starting with a focused, genuinely solid set of practice,
+                enough to build real intuition for how the exam thinks, without the pressure of an
+                all in commitment."
               </p>
             </blockquote>
 
@@ -331,39 +310,46 @@ function LiteBbeCourseProduct() {
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  Real exam style questions across all three subjects: Business &amp; Economics, Math, and English.
+                  Real exam style questions across all three subjects: Business &amp; Economics,
+                  Math, and English.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  Explanations that actually teach the reasoning behind each answer, not just the correct letter.
+                  Explanations that actually teach the reasoning behind each answer, not just the
+                  correct letter.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  Two full mock exams under realistic timing, so you know exactly where you stand before the real test.
+                  Two full mock exams under realistic timing, so you know exactly where you stand
+                  before the real test.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
                 <span className="text-sm leading-relaxed text-muted-foreground">
-                  A clean upgrade path: everything you build here carries straight over to Full Access.
+                  A clean upgrade path: everything you build here carries straight over to Full
+                  Access.
                 </span>
               </li>
             </ul>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              That is what this package gives you. It is not a trimmed down teaser, it is a complete,
-              usable toolkit for this stage of your preparation. When you are ready to go further, Full
-              Access is there waiting. Light is not a smaller version of getting in. It is where getting
-              in actually starts.
+              That is what this package gives you. It is not a trimmed down teaser, it is a
+              complete, usable toolkit for this stage of your preparation. When you are ready to go
+              further, Full Access is there waiting. Light is not a smaller version of getting in.
+              It is where getting in actually starts.
             </p>
           </section>
 
-          <CompareTable highlight="lite" heading="How Light stacks up" subheading="Here is exactly what you unlock, and what waits for you if you upgrade later." />
-
+          <CompareTable
+            highlight="lite"
+            heading="How Light stacks up"
+            subheading="Here is exactly what you unlock, and what waits for you if you upgrade later."
+          />
 
           {/* FAQ */}
           <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">

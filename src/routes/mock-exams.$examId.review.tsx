@@ -7,6 +7,7 @@ import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
 import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
+import { SiteHeader } from "@/components/SiteHeader";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
@@ -24,7 +25,13 @@ function readAttempt(examId: string) {
   if (typeof window === "undefined") return null;
   try {
     const raw = sessionStorage.getItem(answersStorageKey(examId));
-    return raw ? (JSON.parse(raw) as { answers: Record<string, boolean[]>; timed: boolean; secondsTaken: number | null }) : null;
+    return raw
+      ? (JSON.parse(raw) as {
+          answers: Record<string, boolean[]>;
+          timed: boolean;
+          secondsTaken: number | null;
+        })
+      : null;
   } catch {
     return null;
   }
@@ -85,7 +92,10 @@ function ReviewExamPage() {
   }, [questions, attempt]);
 
   const { taskScores, total } = useMemo(
-    () => calculateExamScore(marked.map((m) => ({ maxPoints: m.question.maxPoints, statements: m.statements }))),
+    () =>
+      calculateExamScore(
+        marked.map((m) => ({ maxPoints: m.question.maxPoints, statements: m.statements })),
+      ),
     [marked],
   );
 
@@ -112,8 +122,8 @@ function ReviewExamPage() {
   }, [marked]);
 
   const subjectsToShow = useMemo(() => {
-    if (isCustom) return (["economics"] as const);
-    return (["economics", "english", "math"] as const);
+    if (isCustom) return ["economics"] as const;
+    return ["economics", "english", "math"] as const;
   }, [isCustom]);
 
   const subjectMax = useMemo(() => {
@@ -151,7 +161,17 @@ function ReviewExamPage() {
       correctCount: statementTotals.correctCount,
       statementCount: statementTotals.statementCount,
     });
-  }, [ready, attempt, exam, examId, perSubject, statementTotals, total, pointsTotal, questions.length]);
+  }, [
+    ready,
+    attempt,
+    exam,
+    examId,
+    perSubject,
+    statementTotals,
+    total,
+    pointsTotal,
+    questions.length,
+  ]);
 
   if (!ready) {
     return (
@@ -185,6 +205,17 @@ function ReviewExamPage() {
   }
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+      <SiteHeader
+        maxWidthClassName="max-w-5xl"
+        actions={
+          <Link
+            to={isCustom ? "/products/custom-mock-builder" : "/mock-exams"}
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            {isCustom ? "← Custom Mock Builder" : "← All mock exams"}
+          </Link>
+        }
+      />
       <main className="mx-auto max-w-5xl px-6 py-12">
         <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
           <div>
@@ -197,12 +228,6 @@ function ReviewExamPage() {
                 : "Scored with the official wi2 method."}
             </p>
           </div>
-          <Link
-            to={isCustom ? "/products/custom-mock-builder" : "/mock-exams"}
-            className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold transition-all hover:bg-secondary"
-          >
-            {isCustom ? "← Custom Mock Builder" : "← All mock exams"}
-          </Link>
         </div>
 
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
@@ -244,32 +269,35 @@ function ReviewExamPage() {
         </div>
 
         {!isCustom && (
-        <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
-          <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
-          <div className="space-y-4">
-            {subjectsToShow.map((s) => {
-              const sm = SUBJECT_META[s];
-              const earned = perSubject[s];
-              const max = subjectMax[s];
-              return (
-                <div key={s}>
-                  <div className="mb-1.5 flex items-center justify-between text-sm">
-                    <span className="font-medium">{sm.label}</span>
-                    <span className="font-mono tabular-nums text-muted-foreground">
-                      {earned.toFixed(1)} / {max}
-                    </span>
+          <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
+            <div className="space-y-4">
+              {subjectsToShow.map((s) => {
+                const sm = SUBJECT_META[s];
+                const earned = perSubject[s];
+                const max = subjectMax[s];
+                return (
+                  <div key={s}>
+                    <div className="mb-1.5 flex items-center justify-between text-sm">
+                      <span className="font-medium">{sm.label}</span>
+                      <span className="font-mono tabular-nums text-muted-foreground">
+                        {earned.toFixed(1)} / {max}
+                      </span>
+                    </div>
+                    <div className="h-2 overflow-hidden rounded-full bg-secondary">
+                      <div
+                        className="h-full rounded-full transition-all duration-700"
+                        style={{
+                          width: `${Math.min(100, max > 0 ? (earned / max) * 100 : 0)}%`,
+                          backgroundColor: sm.color,
+                        }}
+                      />
+                    </div>
                   </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-secondary">
-                    <div
-                      className="h-full rounded-full transition-all duration-700"
-                      style={{ width: `${Math.min(100, max > 0 ? (earned / max) * 100 : 0)}%`, backgroundColor: sm.color }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
         )}
 
         <h2 className="mb-4 font-display text-xl font-semibold">Question breakdown</h2>
@@ -281,7 +309,10 @@ function ReviewExamPage() {
             const correctMarks = m.statements.filter((s) => s.userMarked === s.isTrue).length;
             const isOpen = open === q.id;
             return (
-              <div key={q.id} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+              <div
+                key={q.id}
+                className="overflow-hidden rounded-xl border border-border bg-card shadow-sm"
+              >
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : q.id)}
@@ -316,7 +347,9 @@ function ReviewExamPage() {
                           <div
                             key={s.id}
                             className={`rounded-lg border p-3 ${
-                              correct ? "border-emerald-500/30 bg-emerald-500/5" : "border-red-500/30 bg-red-500/5"
+                              correct
+                                ? "border-emerald-500/30 bg-emerald-500/5"
+                                : "border-red-500/30 bg-red-500/5"
                             }`}
                           >
                             <div className="flex items-start gap-3">
@@ -335,8 +368,8 @@ function ReviewExamPage() {
                                   {s.text}
                                 </p>
                                 <p className="mt-1.5 text-xs text-taupe">
-                                  Your answer: <strong>{userMarked ? "True" : "—"}</strong> · Correct answer:{" "}
-                                  <strong>{s.isTrue ? "True" : "False"}</strong>
+                                  Your answer: <strong>{userMarked ? "True" : "—"}</strong> ·
+                                  Correct answer: <strong>{s.isTrue ? "True" : "False"}</strong>
                                 </p>
                                 <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                                   {s.explanation}

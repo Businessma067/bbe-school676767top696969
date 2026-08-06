@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
-import { AuthNav } from "@/components/AuthNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import { friendlyAuthError } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/account")({
@@ -43,7 +43,11 @@ function AccountPage() {
       setUser(u);
 
       const [pRes, rRes] = await Promise.all([
-        supabase.from("profiles").select("display_name, created_at").eq("user_id", u.id).maybeSingle(),
+        supabase
+          .from("profiles")
+          .select("display_name, created_at")
+          .eq("user_id", u.id)
+          .maybeSingle(),
         supabase.from("user_roles").select("role").eq("user_id", u.id),
       ]);
       if (cancelled) return;
@@ -53,17 +57,21 @@ function AccountPage() {
       setRole(rRes.data?.[0]?.role ?? "student");
       setLoading(false);
     })();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [navigate]);
-
-
 
   const handleSaveName = async () => {
     if (!user) return;
-    setSavingName(true); setNameMsg(null);
+    setSavingName(true);
+    setNameMsg(null);
     const { error } = await supabase
       .from("profiles")
-      .upsert({ user_id: user.id, display_name: nameDraft.trim() || null }, { onConflict: "user_id" });
+      .upsert(
+        { user_id: user.id, display_name: nameDraft.trim() || null },
+        { onConflict: "user_id" },
+      );
     setSavingName(false);
     if (error) setNameMsg(friendlyAuthError(error, "Could not save your name."));
     else {
@@ -78,7 +86,11 @@ function AccountPage() {
     const { error } = await supabase.auth.resetPasswordForEmail(user.email, {
       redirectTo: window.location.origin + "/reset-password",
     });
-    setResetMsg(error ? friendlyAuthError(error, "Could not send reset email.") : "Password reset link sent to your email.");
+    setResetMsg(
+      error
+        ? friendlyAuthError(error, "Could not send reset email.")
+        : "Password reset link sent to your email.",
+    );
   };
 
   const handleLogout = async () => {
@@ -127,17 +139,32 @@ function AccountPage() {
                       onChange={(e) => setNameDraft(e.target.value)}
                       className="flex-1 rounded-md border border-border bg-background px-2 py-1 text-sm"
                     />
-                    <button onClick={handleSaveName} disabled={savingName} className="rounded-md bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground disabled:opacity-60">
+                    <button
+                      onClick={handleSaveName}
+                      disabled={savingName}
+                      className="rounded-md bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground disabled:opacity-60"
+                    >
                       {savingName ? "Saving…" : "Save"}
                     </button>
-                    <button onClick={() => { setEditingName(false); setNameDraft(profile?.display_name ?? ""); }} className="rounded-md border border-border px-3 py-1 text-xs">
+                    <button
+                      onClick={() => {
+                        setEditingName(false);
+                        setNameDraft(profile?.display_name ?? "");
+                      }}
+                      className="rounded-md border border-border px-3 py-1 text-xs"
+                    >
                       Cancel
                     </button>
                   </>
                 ) : (
                   <>
                     <span className="font-medium">{profile?.display_name || "—"}</span>
-                    <button onClick={() => setEditingName(true)} className="text-xs text-primary hover:underline">Edit</button>
+                    <button
+                      onClick={() => setEditingName(true)}
+                      className="text-xs text-primary hover:underline"
+                    >
+                      Edit
+                    </button>
                   </>
                 )}
               </dd>
@@ -148,16 +175,25 @@ function AccountPage() {
               <dd className="mt-1 font-medium">{user?.email}</dd>
             </div>
             <div>
-              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Member since</dt>
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">
+                Member since
+              </dt>
               <dd className="mt-1 font-medium">{memberSince}</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Role</dt>
-              <dd className="mt-1"><span className="inline-flex rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold capitalize">{role}</span></dd>
+              <dd className="mt-1">
+                <span className="inline-flex rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold capitalize">
+                  {role}
+                </span>
+              </dd>
             </div>
           </dl>
           <div className="mt-6 flex flex-wrap gap-2">
-            <button onClick={handlePasswordReset} className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary">
+            <button
+              onClick={handlePasswordReset}
+              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+            >
               Change password
             </button>
           </div>
@@ -189,20 +225,16 @@ function AccountPage() {
 
 function PageHeader() {
   return (
-    <header className="border-b border-border/60 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
-            <span className="font-display text-xs font-bold leading-none text-primary-foreground tracking-tight">BBE</span>
-          </div>
-          <span className="font-display text-sm font-bold tracking-tight">BBE School</span>
+    <SiteHeader
+      sticky={false}
+      compact
+      maxWidthClassName="max-w-5xl"
+      actions={
+        <Link to="/practice" className="text-sm font-semibold text-primary hover:underline">
+          Practice →
         </Link>
-        <div className="flex items-center gap-3">
-          <Link to="/practice" className="text-sm font-semibold text-primary hover:underline">Practice →</Link>
-          <AuthNav />
-        </div>
-      </div>
-    </header>
+      }
+    />
   );
 }
 
@@ -228,7 +260,10 @@ function EmptyState({ msg, ctaTo, ctaLabel }: { msg: string; ctaTo: string; ctaL
   return (
     <div className="rounded-md border border-dashed border-border p-6 text-center">
       <p className="text-sm text-muted-foreground">{msg}</p>
-      <Link to={ctaTo} className="mt-3 inline-block rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
+      <Link
+        to={ctaTo}
+        className="mt-3 inline-block rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+      >
         {ctaLabel}
       </Link>
     </div>
