@@ -93,7 +93,7 @@
     "context": "Consider households, startups, and manufacturing firms interacting in a market system. Evaluate the following economic assertions:",
     "statements": [
       "Businesses provide goods like computers and services like installing software for people to satisfy their needs.",
-      "Manufacturers of smartphones might have an operational need for printed circuit boards produced by suppliers such as AT&S.",
+      "Manufacturers of smartphones may have an operational need for electronic components produced by specialised suppliers.",
       "To fabricate components, a manufacturer requires raw materials and a workforce rather than operating in isolation.",
       "Individuals frequently exchange goods and services directly and are fully active participants in trading.",
       "Households need food, shelter, and medical care, and they also want leisure activities such as cinema visits."
@@ -107,7 +107,7 @@
     ],
     "tactical_explanations": [
       "TRUE — Firms supply tangible goods and intangible services that help consumers satisfy needs.",
-      "TRUE — Component manufacturers depend on specialised inputs such as PCBs to assemble finished devices.",
+      "TRUE — Component manufacturers depend on specialised inputs to assemble finished devices.",
       "TRUE — Production requires limited inputs and labour; no firm can operate without securing those resources.",
       "TRUE — Individuals trade with businesses and with each other; households are not excluded from exchange.",
       "TRUE — Household demand spans essential needs and non-essential wants such as entertainment."
@@ -324,7 +324,7 @@
     "title": "Needs, wants, and who has them",
     "context": "Analyze claims about needs, wants, and which actors in the economy face them. Evaluate the following economic assertions:",
     "statements": [
-      "A manufacturer of laptops may need printed circuit boards from a supplier like AT&S to keep production running.",
+      "A manufacturer of laptops may need specialised electronic components from suppliers to keep production running.",
       "High-tech manufacturers have zero internal needs because only end consumers ever experience genuine need.",
       "Households buy goods and services from businesses to satisfy both needs and wants in daily life.",
       "Wants disappear automatically once every need has been fully satisfied in a given month.",
@@ -759,7 +759,7 @@
     "title": "Needs of businesses",
     "context": "Review whether businesses themselves have operational needs in addition to household needs. Evaluate the following economic assertions:",
     "statements": [
-      "A smartphone assembler needs printed circuit boards from specialised suppliers to manufacture devices.",
+      "A smartphone assembler needs specialised electronic components from suppliers to manufacture devices.",
       "Businesses have zero internal needs because only final consumers experience genuine need.",
       "An entrepreneur needs customers and revenue to keep staff employed and operations running.",
       "Operational needs of firms include workforce, premises, and raw materials, not only consumer demand.",
@@ -1138,7 +1138,7 @@
     "statements": [
       "Cash flow to pay suppliers next month is a need for a small retailer even when sales are seasonal.",
       "Customer demand itself can be a need when a firm requires sales to remain viable.",
-      "A laptop assembler needs printed circuit boards from suppliers to keep production lines running.",
+      "A laptop assembler needs specialised electronic components from suppliers to keep production lines running.",
       "An entrepreneur needs reliable staff and premises to continue serving paying customers.",
       "Expansion plans and wage bills are identical categories with no distinction."
     ],
@@ -1598,7 +1598,7 @@
     "subsection": "2.2",
     "case_id": "CASE 2.2.06",
     "title": "Mila: bookstore or swimming academy",
-    "context": "Consider mila can earn 60 euros at a bookstore or attend a free academy that might help a sports scholarship. Evaluate the following economic assertions:",
+    "context": "Consider Mila can earn 60 euros at a bookstore or attend a free academy that might help a sports scholarship. Evaluate the following economic assertions:",
     "statements": [
       "Saturday morning hours are scarce between the bookstore job and the academy.",
       "Choosing the academy means opportunity cost is 60 euros bookstore earnings forgone.",
@@ -2152,7 +2152,7 @@
     "context": "Consider leo has 400 euros for either a refurbished laptop or a full semester textbook set, not both. Evaluate the following economic assertions:",
     "statements": [
       "400 euros is a scarce student budget allocated between laptop and textbooks.",
-      "Buying the laptop means opportunity cost is study benefit forgone from owning the textbook set.",
+      "Buying the laptop means opportunity cost is study benefit forgone from owning standard economic reasoning set.",
       "Buying textbooks means opportunity cost is productivity benefit forgone from the laptop.",
       "Students are excluded from opportunity cost because education should be free of trade-offs.",
       "Opportunity cost requires at least three alternatives; two options are insufficient."
@@ -6157,7 +6157,7 @@
       "Central planning always matches consumer preferences perfectly with zero information problems.",
       "Social market economy abolishes all private firms and replaces them with central planning.",
       "Social market economies forbid any income support for the poor by definition.",
-      "Germany is often cited as an example of the social market economy approach."
+      "Germany is an example of the social market economy approach."
     ],
     "answer_key": [
       false,
@@ -6795,7 +6795,7 @@
       "Welfare institutions aim to reduce extreme inequality while preserving market efficiency.",
       "Social market economy abolishes private firms and replaces them with central planning boards.",
       "Regulation and social insurance can address market failures without abolishing price mechanisms.",
-      "Germany is frequently cited as an example of the social market economy model in practice."
+      "Germany is an example of the social market economy model in practice."
     ],
     "answer_key": [
       true,
@@ -7890,14 +7890,14 @@
   {
     "subsection": "2.6",
     "case_id": "CASE 2.6.23",
-    "title": "Leoben PCB Plant Expansion",
-    "context": "Consider an AT&S Leoben plant adding a plating line that raises monthly substrate output without raising unit prices. Evaluate the following economic assertions:",
+    "title": "Plant Capacity Expansion",
+    "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
     "statements": [
-      "If demand stays fixed while supply shifts right, equilibrium substrate price may fall.",
+      "If demand stays fixed while supply shifts right, equilibrium price may fall.",
       "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
-      "Higher copper input prices could partially offset the expansion by shifting supply leftward.",
-      "Customers ordering substrates face lower shortage risk after a successful supply expansion.",
-      "Adding capacity that lowers unit cost can shift supply rightward for plated substrates."
+      "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
+      "Customers ordering the product face lower shortage risk after a successful supply expansion.",
+      "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
     ],
     "answer_key": [
       true,

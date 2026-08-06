@@ -118,11 +118,11 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.05",
-    "title": "AT&S Substrate Production Shift",
-    "context": "Consider how AT&S Leoben runs a shift plating PCBs while sourcing laminate and scheduling engineers. Evaluate the following economic assertions:",
+    "title": "Factory Production Shift",
+    "context": "Consider a manufacturing plant running a shift while sourcing materials and scheduling engineers. Evaluate the following economic assertions:",
     "statements": [
-      "Clean-room tools and testing rigs on the line are capital in secondary production.",
-      "Engineers monitoring substrate thickness supply specialised labour.",
+      "Production tools and testing equipment on the line are capital in secondary production.",
+      "Engineers monitoring product quality supply specialised labour.",
       "Plant management coordinating materials, staff, and orders supplies entrepreneurship.",
       "Materials are land because copper is extracted from the earth.",
       "Knowledge is a consumer good unless the firm registers patents."
@@ -138,7 +138,7 @@
       "TRUE — Manufacturing equipment is part of the capital factor.",
       "TRUE — Engineering and inspection work is skilled human resource use.",
       "TRUE — Coordinating production factors and timing is entrepreneurship.",
-      "FALSE — Raw and processed inputs are combined with other factors; finished goods are outputs.",
+      "FALSE — Raw and processed inputs are materials combined with other factors; finished goods are outputs.",
       "FALSE — Knowledge applied in production is a recognised factor."
     ],
     "difficulty_level": "3/5",
@@ -205,8 +205,8 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.08",
-    "title": "Tina and Steve Repair Weekend",
-    "context": "Consider how tina and steve refurbish laptops, install software, and bill for weekend support calls. Evaluate the following economic assertions:",
+    "title": "A small IT-support venture Repair Weekend",
+    "context": "Consider how a small IT-support venture refurbish laptops, install software, and bill for weekend support calls. Evaluate the following economic assertions:",
     "statements": [
       "Their venture combines knowledge, labour, technology, capital, and entrepreneurship.",
       "Coordinating bookings, parts orders, and repairs supplies entrepreneurship.",
@@ -241,7 +241,7 @@
       "A business combines factors of production to offer goods and/or services to customers.",
       "Whichever factor is dominant replaces the need for any other factor.",
       "Only manufacturing combines factors; services use labour alone.",
-      "Automated lines remove labour and knowledge from PCB production entirely."
+      "Automated lines remove labour and knowledge from manufacturing entirely."
     ],
     "answer_key": [
       true,
@@ -466,14 +466,14 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.17",
-    "title": "PCB Manufacturing Inputs",
-    "context": "Review factors used in printed circuit board manufacturing. Evaluate the following economic assertions:",
+    "title": "Manufacturing Inputs",
+    "context": "Review factors used in industrial manufacturing. Evaluate the following economic assertions:",
     "statements": [
-      "Substrate clean-room tools and testing rigs are capital in secondary production.",
-      "Engineering teams monitoring laminate batches supply skilled labour.",
-      "PCB fabrication requires labour and materials as well as capital equipment.",
-      "AT&S combines workforce, materials, equipment, and entrepreneurial direction.",
-      "Knowledge of plating specifications applied on the line is a production factor."
+      "Clean-room tools and testing equipment are capital in secondary production.",
+      "Engineering teams monitoring material batches supply skilled labour.",
+      "Fabrication requires labour and materials as well as capital equipment.",
+      "A components manufacturer combines workforce, materials, equipment, and entrepreneurial direction.",
+      "Knowledge of process specifications applied on the line is a production factor."
     ],
     "answer_key": [
       true,
@@ -846,10 +846,10 @@
     "title": "Integrated Factor Use",
     "context": "Review integrated use of production factors in business. Evaluate the following economic assertions:",
     "statements": [
-      "Smartphone makers may need PCBs from suppliers such as AT&S to keep production running.",
+      "Smartphone makers may need electronic components from specialised suppliers to keep production running.",
       "Businesses provide goods and services by combining labour, land, capital, entrepreneurship, and often knowledge.",
-      "AT&S combines all major factors when manufacturing PCBs and IC substrates.",
-      "Tina and Steve illustrate combining knowledge, labour, technology, capital, and entrepreneurship.",
+      "A large components manufacturer combines all major factors when producing electronic parts.",
+      "A small IT-support venture combines knowledge, labour, technology, capital, and entrepreneurship.",
       "Dominant factors replace all others in sector analysis."
     ],
     "answer_key": [
@@ -863,7 +863,7 @@
       "TRUE — Component suppliers combine factors to produce inputs other firms need.",
       "TRUE — Production draws on multiple listed factors together.",
       "TRUE — Large manufacturers integrate labour, materials, equipment, and coordination.",
-      "TRUE — Their venture uses skills, tools, finance, and coordination together.",
+      "TRUE — The venture uses skills, tools, finance, and coordination together.",
       "FALSE — Dominance does not eliminate combined use of other factors."
     ],
     "difficulty_level": "3/5",
@@ -1079,23 +1079,23 @@
     "context": "Analyze entrepreneurship in coordinating other factors. Evaluate the following economic assertions:",
     "statements": [
       "Coordinating a repair shop's parts orders and bookings supplies entrepreneurship.",
-      "Scheduling PCB shifts while sourcing laminate reflects entrepreneurship at a manufacturer.",
+      "Scheduling production shifts while sourcing materials reflects entrepreneurship at a manufacturer.",
       "Integrating robots with manual pick teams reflects entrepreneurship in logistics.",
-      "Any purchase decision is entrepreneurship because it spends money.",
+      "Any purchase decision is entrepreneurship simply because money is spent.",
       "Selecting barrel suppliers and picker contracts reflects entrepreneurship at a winery."
     ],
     "answer_key": [
       true,
       true,
       true,
-      true,
+      false,
       true
     ],
     "tactical_explanations": [
       "TRUE — Organising resources and operations is entrepreneurship.",
       "TRUE — Coordinating production inputs and timing is entrepreneurship.",
       "TRUE — Designing how factors combine operationally is entrepreneurial work.",
-      "TRUE — Spending on capital is capital use; entrepreneurship organises factors.",
+      "FALSE — Spending alone is not entrepreneurship; entrepreneurship organises and combines factors.",
       "TRUE — Organising inputs and contracts is entrepreneurial coordination."
     ],
     "difficulty_level": "2/5",
@@ -1133,13 +1133,13 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.40",
-    "title": "AT&S Workforce and Materials",
+    "title": "Workforce and Materials in Manufacturing",
     "context": "Review whether manufacturing can run on capital alone. Evaluate the following economic assertions:",
     "statements": [
       "Plant managers coordinating shifts and suppliers supply entrepreneurship.",
       "Quality inspectors monitoring batches supply skilled labour on the line.",
-      "PCB manufacturing requires engineers, operators, and materials alongside equipment.",
-      "Copper-clad laminate stored for production is a material input combined with capital.",
+      "Manufacturing requires engineers, operators, and materials alongside equipment.",
+      "Materials stored for production are combined with capital and labour.",
       "Component plants run on capital alone once equipment is installed."
     ],
     "answer_key": [
@@ -1191,7 +1191,7 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.42",
-    "title": "Tina and Steve Factor Bundle",
+    "title": "A small IT-support venture Factor Bundle",
     "context": "Analyze the factor bundle in a laptop repair and software venture. Evaluate the following economic assertions:",
     "statements": [
       "Technical troubleshooting supplies labour as human resources.",
@@ -1310,7 +1310,7 @@
     "title": "Factor Combination Requirement",
     "context": "Review whether businesses can rely on a single factor. Evaluate the following economic assertions:",
     "statements": [
-      "PCB production blends labour, capital, materials, knowledge, and coordination.",
+      "Manufacturing blends labour, capital, materials, knowledge, and coordination.",
       "Dominant factor emphasis in an industry removes other factors from production.",
       "A firm can deliver goods using one dominant factor without combining others.",
       "Services need only labour because output is intangible.",
@@ -1318,14 +1318,14 @@
     ],
     "answer_key": [
       true,
-      true,
+      false,
       false,
       false,
       false
     ],
     "tactical_explanations": [
       "TRUE — Manufacturing integrates multiple factors rather than one alone.",
-      "TRUE — Businesses combine factors even when one appears dominant.",
+      "FALSE — Businesses still combine factors even when one appears dominant.",
       "FALSE — Businesses combine multiple factors rather than one alone.",
       "FALSE — Services still rely on capital, technology, and coordination.",
       "FALSE — Winemaking also requires labour, capital, and management."
@@ -1366,24 +1366,24 @@
     "subsection": "3.1",
     "case_id": "CASE 3.1.48",
     "title": "Integrated Production Examples",
-    "context": "Review integrated factor use in chapter examples. Evaluate the following economic assertions:",
+    "context": "Review integrated factor use across firm types. Evaluate the following economic assertions:",
     "statements": [
       "Identifying one example factor in a firm eliminates the need to consider others.",
-      "Tina and Steve show how knowledge, labour, technology, capital, and entrepreneurship work together.",
-      "Smartphone makers needing PCBs from suppliers such as AT&S rely on combined factors upstream.",
+      "A small IT-support venture shows how knowledge, labour, technology, capital, and entrepreneurship work together.",
+      "Smartphone makers needing electronic components from suppliers rely on combined factors upstream.",
       "A winemaker illustrates combining land, labour, capital, entrepreneurship, and experience.",
-      "AT&S illustrates capital-only production without workforce."
+      "A large components manufacturer illustrates capital-only production without workforce."
     ],
     "answer_key": [
-      true,
+      false,
       true,
       true,
       true,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Businesses combine factors even when examples emphasise one.",
-      "TRUE — Their venture uses skills, tools, finance, and coordination.",
+      "FALSE — Businesses combine factors even when examples emphasise one.",
+      "TRUE — The venture uses skills, tools, finance, and coordination.",
       "TRUE — Component suppliers combine factors to produce inputs.",
       "TRUE — Winemaking blends multiple listed factors.",
       "FALSE — Manufacturing integrates labour, materials, equipment, and coordination."
@@ -1423,12 +1423,12 @@
   {
     "subsection": "3.1",
     "case_id": "CASE 3.1.50",
-    "title": "Chapter 3.1 Synthesis",
+    "title": "Factors of Production Synthesis",
     "context": "Review integrated claims about factors of production. Evaluate the following economic assertions:",
     "statements": [
       "Businesses combine labour, land, capital, entrepreneurship, and often knowledge to create offerings.",
-      "AT&S illustrates combining all major factors in PCB and substrate manufacturing.",
-      "Their refurbished-laptop venture combines knowledge, labour, technology, capital, and entrepreneurship.",
+      "A large components manufacturer illustrates combining all major factors in industrial production.",
+      "A refurbished-laptop venture combines knowledge, labour, technology, capital, and entrepreneurship.",
       "Winemaking illustrates land-only production in agriculture.",
       "Dominant factors make other factors irrelevant in analysis."
     ],
@@ -1442,7 +1442,7 @@
     "tactical_explanations": [
       "TRUE — Production typically integrates multiple listed factors.",
       "TRUE — Large manufacturers integrate workforce, materials, equipment, and coordination.",
-      "TRUE — Their venture uses skills, tools, finance, and coordination together.",
+      "TRUE — The venture uses skills, tools, finance, and coordination together.",
       "FALSE — Winemaking combines multiple factors beyond land.",
       "FALSE — Dominance does not remove combined use of other factors."
     ],
@@ -1655,13 +1655,13 @@
   {
     "subsection": "3.2",
     "case_id": "CASE 3.2.08",
-    "title": "Olive Farm and PCB Order",
-    "context": "Consider a Croatian farm sells olive oil while a Linz factory fills a PCB production order. Evaluate the following economic assertions:",
+    "title": "Olive Farm and Factory Order",
+    "context": "Consider a farm selling olive oil while a factory fills an industrial production order. Evaluate the following economic assertions:",
     "statements": [
-      "PCB fabrication transforms materials and therefore belongs to secondary manufacturing.",
+      "Fabricating electronic components transforms materials and therefore belongs to secondary manufacturing.",
       "The farm is secondary because bottled oil is a processed product.",
       "Both activities belong to the tertiary sector because each sells to customers.",
-      "Fabricating PCBs from laminate is tertiary because components go to other businesses.",
+      "Fabricating components from materials is tertiary because parts go to other businesses.",
       "Harvesting and pressing olives on the farm is tertiary because oil is sold to customers."
     ],
     "answer_key": [
@@ -2061,12 +2061,12 @@
   {
     "subsection": "3.2",
     "case_id": "CASE 3.2.22",
-    "title": "Tina and Steve Sector Classification",
-    "context": "Analyze how to classify Tina and Steve's trading, software, and support activities. Evaluate the following economic assertions:",
+    "title": "A small IT-support venture Sector Classification",
+    "context": "Analyze how to classify a small IT-support venture's trading, software, and support activities. Evaluate the following economic assertions:",
     "statements": [
       "Developing software for customers is tertiary service activity.",
       "Refurbishing laptops and providing support are tertiary service activities.",
-      "Tina and Steve trade goods, develop software, and provide technical support in the tertiary sector.",
+      "A small IT-support venture trade goods, develop software, and provide technical support in the tertiary sector.",
       "Minerals inside devices do not reclassify their support activity as primary extraction.",
       "Handling physical laptops does not move their support work into secondary manufacturing."
     ],
@@ -2235,14 +2235,14 @@
   {
     "subsection": "3.2",
     "case_id": "CASE 3.2.28",
-    "title": "AT&S Secondary Role",
-    "context": "Review AT&S manufacturing PCBs and IC substrates. Evaluate the following economic assertions:",
+    "title": "Secondary Manufacturing Role",
+    "context": "Review a manufacturer producing electronic components for industrial buyers. Evaluate the following economic assertions:",
     "statements": [
       "Client technical advice alongside fabrication does not remove secondary classification.",
       "Manufactured components are secondary-sector output regardless of input origins.",
       "Selling components to smartphone makers keeps fabrication in secondary manufacturing.",
-      "Transforming laminate into PCBs is secondary manufacturing.",
-      "AT&S is tertiary because it sells to smartphone makers, not consumers."
+      "Transforming raw materials into finished components is secondary manufacturing.",
+      "The manufacturer is tertiary because it sells to smartphone makers, not final consumers."
     ],
     "answer_key": [
       true,
@@ -2252,7 +2252,7 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Fabricating boards remains secondary even if advice accompanies sales.",
+      "TRUE — Fabricating goods remains secondary even if advice accompanies sales.",
       "TRUE — Manufactured components are secondary-sector output.",
       "TRUE — Manufacturing for business customers remains secondary activity.",
       "TRUE — Manufacturing components from materials is secondary activity.",
@@ -2441,7 +2441,7 @@
     "title": "GDP as an Economic Activity Indicator",
     "context": "Review GDP as an overall activity indicator. Evaluate the following economic assertions:",
     "statements": [
-      "GDP per capita indicates standard of living in the chapter's framing.",
+      "GDP per capita is commonly used as an indicator of living standards.",
       "GDP does not replace all other indicators because it misses some income sources.",
       "GDP counts final goods and services produced in a defined period.",
       "GDP excludes final services such as insurance from its totals.",
@@ -2499,7 +2499,7 @@
     "title": "Software Support Sector Trap",
     "context": "Review sector traps around software support services. Evaluate the following economic assertions:",
     "statements": [
-      "Tina and Steve's technical support is tertiary even when tied to refurbished goods.",
+      "A small IT-support venture's technical support is tertiary even when tied to refurbished goods.",
       "Remote support abroad remains tertiary when produced domestically.",
       "Software helpdesks troubleshooting networks provide tertiary services.",
       "Writing code for clients is secondary manufacturing.",
@@ -2530,7 +2530,7 @@
     "statements": [
       "The three-sector model classifies activities rather than assigning one label per economy.",
       "A farm selling produce can only be classified as primary.",
-      "AT&S manufacturing with client advice is tertiary only.",
+      "A manufacturer that also gives client advice is tertiary only.",
       "A single sector label on a firm blocks any activity in another sector.",
       "One sector label applied to a firm prevents any activity in another sector."
     ],
@@ -2612,28 +2612,28 @@
   {
     "subsection": "3.2",
     "case_id": "CASE 3.2.41",
-    "title": "Printed Circuit Boards Sector",
-    "context": "Analyze how to classify PCB fabrication in the sector model. Evaluate the following economic assertions:",
+    "title": "Classifying Industrial Fabrication",
+    "context": "Analyze how to classify industrial fabrication in the sector model. Evaluate the following economic assertions:",
     "statements": [
       "Client advice alongside fabrication does not remove secondary classification.",
-      "PCB advice to clients converts fabrication into tertiary services only.",
-      "Upstream copper mines supply laminate inputs without turning PCB fabrication into primary extraction.",
-      "Testing substrates in clean rooms becomes tertiary inspection service only.",
-      "Buying mined copper for boards does not move PCB production from secondary to primary."
+      "Advice to clients converts fabrication into tertiary services only.",
+      "Buying mined metals as inputs turns factory fabrication into primary extraction.",
+      "Testing products in the factory becomes a tertiary inspection service only.",
+      "Buying mined materials for production does not move manufacturing from secondary to primary."
     ],
     "answer_key": [
       true,
       false,
       false,
       false,
-      false
+      true
     ],
     "tactical_explanations": [
       "TRUE — Manufacturing remains secondary even if services accompany sales.",
       "FALSE — Manufacturing remains secondary even if services accompany sales.",
       "FALSE — Component fabrication stays secondary whatever raw materials are purchased.",
       "FALSE — Quality steps in manufacturing stay secondary activity.",
-      "FALSE — Input from mines does not change the secondary nature of board manufacturing."
+      "TRUE — Input from mines does not change the secondary nature of manufacturing."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2790,7 +2790,7 @@
     "context": "Review secondary-sector transformation. Evaluate the following economic assertions:",
     "statements": [
       "Timber mills exporting boards perform secondary processing of logs.",
-      "PCB fabrication is tertiary because components support services.",
+      "Fabricating industrial components is tertiary because components support services.",
       "Sewing is tertiary because fashion is a consumer service.",
       "Smelting remains primary because ore comes from mines.",
       "Shipbuilding is tertiary because ships later carry cargo."
@@ -2847,7 +2847,7 @@
     "title": "Sector Trap Software Support",
     "context": "Review sector traps around software support. Evaluate the following economic assertions:",
     "statements": [
-      "Refurbished-goods support from Tina and Steve remains tertiary service activity.",
+      "Refurbished-goods support from a small IT-support venture remains tertiary service activity.",
       "Remote support to foreign clients remains tertiary.",
       "Network troubleshooting by software helpdesks counts as tertiary service activity.",
       "Manufacturing devices and supporting them can span secondary and tertiary activity.",
@@ -2873,14 +2873,14 @@
   {
     "subsection": "3.2",
     "case_id": "CASE 3.2.50",
-    "title": "Chapter 3.2 Synthesis",
+    "title": "Sector and GDP Synthesis",
     "context": "Review integrated sector and GDP claims. Evaluate the following economic assertions:",
     "statements": [
       "Emerging economies depend largely on primary activity while advanced EU states show tertiary dominance.",
       "GDP measures final domestic production and supports growth comparisons when inflation-adjusted.",
-      "GDP critics cite missing income, quality limits, and disaster rebuild effects.",
+      "GDP critics note missing income, quality limits, and disaster rebuild effects.",
       "GDP correlates perfectly with health and happiness in every case.",
-      "Manufacturing PCBs and offering after-sales support collapse into a single tertiary label."
+      "Manufacturing components and offering after-sales support collapse into a single tertiary label."
     ],
     "answer_key": [
       true,
@@ -2989,24 +2989,24 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.04",
-    "title": "Red Cross Flood-relief Kits",
-    "context": "Consider a Red Cross branch collects donations before dispatching flood-relief kits to affected towns. Evaluate the following economic assertions:",
+    "title": "Disaster Relief Funding",
+    "context": "Consider a humanitarian NPO collecting donations before dispatching flood-relief kits to affected towns. Evaluate the following economic assertions:",
     "statements": [
-      "Charging for some relief supplies converts Red Cross into a profit-maximiser.",
+      "Charging a cost-recovery fee for some supplies converts a humanitarian NPO into a profit-maximising firm.",
       "Any surplus from donations can be reinvested into further relief work.",
-      "Not-for-profit status means the branch may ignore funding entirely.",
+      "Not-for-profit status means the organisation may ignore funding entirely.",
       "Dispatching kits without prior inflows is typical NPO practice.",
       "Relief organisations need no inflows because volunteers supply everything."
     ],
     "answer_key": [
-      true,
+      false,
       true,
       false,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Cost recovery does not redefine a humanitarian NPO as profit-oriented.",
+      "FALSE — Cost recovery does not redefine a humanitarian NPO as profit-oriented.",
       "TRUE — NPO surpluses are typically reinvested into the mission.",
       "FALSE — NPOs must still secure and manage revenues or donations.",
       "FALSE — Relief delivery requires funding for materials and logistics.",
@@ -3047,14 +3047,14 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.06",
-    "title": "WWF Merchandise and Habitat Work",
-    "context": "Consider a WWF project sells branded merchandise and ploughs surplus into habitat protection. Evaluate the following economic assertions:",
+    "title": "Merchandise and Mission Funding",
+    "context": "Consider a conservation NPO that sells branded merchandise and ploughs surplus into habitat protection. Evaluate the following economic assertions:",
     "statements": [
       "Selling merchandise can raise funds for habitat work within an NPO model.",
       "Merchandise income helps cover operating costs while funding conservation work.",
-      "Habitat work funded from surplus proves WWF maximises owner wealth.",
-      "WWF seeks maximum private owner wealth like a listed corporation.",
-      "WWF must distribute merchandise surplus as private shareholder dividends."
+      "Habitat work funded from surplus proves the organisation maximises owner wealth.",
+      "A conservation NPO seeks maximum private owner wealth like a listed corporation.",
+      "A conservation NPO must distribute merchandise surplus as private shareholder dividends."
     ],
     "answer_key": [
       true,
@@ -3066,8 +3066,8 @@
     "tactical_explanations": [
       "TRUE — Trading can fund mission activities within an NPO.",
       "TRUE — Trading can supplement donations to cover mission costs.",
-      "FALSE — Merchandising surpluses can fund mission work.",
-      "FALSE — WWF is a mission-driven non-profit organisation.",
+      "FALSE — Merchandising surpluses can fund mission work without implying owner profit-maximisation.",
+      "FALSE — A conservation NPO is mission-driven and not organised to maximise private owner wealth.",
       "FALSE — NPO surpluses support mission reinvestment, not owner payouts."
     ],
     "difficulty_level": "2/5",
@@ -3138,24 +3138,24 @@
     "context": "Analyze the main aim of not-for-profit organisations when they pursue a mission rather than owner profit. Evaluate the following economic assertions:",
     "statements": [
       "Mission delivery still requires enough inflows to finance operations.",
-      "Not-for-profit organisations mainly aim to cover costs while pursuing a mission.",
-      "NPOs seek to cover costs rather than maximise owner profit.",
-      "Greenpeace, WWF, and Red Cross illustrate recognised not-for-profit examples.",
-      "Charity clinics billing insurers enough to cover running costs fit not-for-profit aims."
+      "Not-for-profit organisations pursue a social or environmental mission rather than owner profit-maximisation.",
+      "A surplus in an NPO is typically used to further the organisation's purpose.",
+      "Humanitarian, conservation, and environmental campaign NPOs all pursue mission delivery rather than private profit.",
+      "Not-for-profit status means the organisation may ignore funding needs entirely."
     ],
     "answer_key": [
       true,
       true,
       true,
       true,
-      true
+      false
     ],
     "tactical_explanations": [
-      "TRUE — Even NPOs require income streams to operate.",
-      "TRUE — NPOs focus on covering costs rather than maximising owner profit.",
-      "TRUE — Mission focus replaces profit-maximisation for owners.",
-      "TRUE — These appear as NPO examples in the chapter.",
-      "TRUE — NPO healthcare seeks to cover costs while serving patients."
+      "TRUE — NPOs still need revenues or donations to operate.",
+      "TRUE — The defining aim is mission delivery, not owner profit.",
+      "TRUE — Surpluses typically return to the mission.",
+      "TRUE — Different mission types can still share NPO characteristics.",
+      "FALSE — NPOs must still fund staff, materials, and logistics."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3308,14 +3308,14 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.15",
-    "title": "Surplus Reinvestment Mission",
-    "context": "Review reinvesting NPO surplus for mission delivery. Evaluate the following economic assertions:",
+    "title": "NPO Revenue Mix",
+    "context": "Review how not-for-profit organisations finance their activities. Evaluate the following economic assertions:",
     "statements": [
-      "WWF habitat projects funded by merchandising surplus show mission reinvestment.",
-      "Surplus at Greenpeace can support more campaigns rather than shareholder dividends.",
-      "Mission reinvestment means surplus is paid to private shareholders as annual bonuses.",
-      "NPO surplus must be paid out as shareholder dividends like a corporation.",
-      "Service upgrades prove an NPO failed because it spent less than donors gave."
+      "Donations and membership fees can fund not-for-profit operations.",
+      "Trading surplus can support mission spending within an NPO model.",
+      "Not-for-profit organisations never generate any surplus by definition.",
+      "Mission spending can only be financed by government grants.",
+      "Any surplus must be paid out as dividends to private owners."
     ],
     "answer_key": [
       true,
@@ -3325,11 +3325,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — NPO merchandising surpluses can fund mission work.",
-      "TRUE — NPO surplus supports mission, not owner payouts.",
-      "FALSE — Surplus is reinvested into mission activities.",
-      "FALSE — NPO surpluses are reinvested, not distributed as owner dividends.",
-      "FALSE — Improving services aligns with NPO aims."
+      "TRUE — Donations and fees are common NPO inflows.",
+      "TRUE — Trading can support mission costs without turning the NPO into a profit-maximiser.",
+      "FALSE — NPOs may generate surplus; they reinvest it rather than maximise owner profit.",
+      "FALSE — Funding sources can include donations, fees, and trading.",
+      "FALSE — NPO surplus supports the mission, not private dividends."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3337,28 +3337,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.16",
-    "title": "Red Cross Example",
-    "context": "Review the Red Cross as a not-for-profit example. Evaluate the following economic assertions:",
+    "title": "Humanitarian NPO Characteristics",
+    "context": "Review a humanitarian not-for-profit organisation as an economic actor. Evaluate the following economic assertions:",
     "statements": [
-      "Red Cross kit dispatch requires prior inflows to fund materials and logistics.",
-      "Humanitarian relief funded by donations fits the not-for-profit model.",
-      "The Red Cross is cited as an example of a non-profit organisation.",
-      "Red Cross operates without covering staff or warehouse costs.",
-      "Prior-year donation surplus cannot fund current aid parcel packing."
+      "A humanitarian NPO kit dispatch requires prior inflows to fund materials and logistics.",
+      "Mission delivery, not private profit-maximisation, is the organisation's primary aim.",
+      "A humanitarian NPO is legally the same as any listed for-profit corporation.",
+      "A humanitarian NPO operates without covering staff or warehouse costs.",
+      "Any surplus must be distributed as private shareholder dividends."
     ],
     "answer_key": [
       true,
       true,
-      true,
-      true,
+      false,
+      false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Relief delivery requires funding to cover operations.",
-      "TRUE — Donations are a key revenue source for many NPOs.",
-      "TRUE — Red Cross operates as a well-known NPO example.",
-      "TRUE — NPOs must finance ongoing operating expenses.",
-      "FALSE — Prior surpluses and donations enable ongoing operations."
+      "TRUE — Aid delivery needs funded materials and logistics.",
+      "TRUE — NPOs pursue mission aims rather than owner profit.",
+      "FALSE — NPO legal purpose differs from profit-maximising corporations.",
+      "FALSE — Staff and facilities still require funding.",
+      "FALSE — Surpluses support mission reinvestment."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3395,28 +3395,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.18",
-    "title": "WWF Example",
-    "context": "Review the World Wildlife Fund as a non-profit example. Evaluate the following economic assertions:",
+    "title": "Conservation NPO Characteristics",
+    "context": "Review a conservation not-for-profit organisation as an economic actor. Evaluate the following economic assertions:",
     "statements": [
-      "Trading merchandise converts WWF into a commercial retailer maximising owner profit.",
-      "Wildlife programmes funded by prior fundraising surpluses show mission reinvestment.",
-      "WWF merchandising can fund habitat work without making WWF profit-oriented.",
-      "Environmental campaigns require no financing because advocacy is costless.",
-      "WWF behaves like a listed corporation maximising private owner wealth."
+      "Trading merchandise can fund habitat work without making the organisation profit-oriented.",
+      "Habitat protection financed from surplus fits not-for-profit behaviour.",
+      "Trading merchandise converts a conservation NPO into a firm maximising owner profit.",
+      "A conservation NPO behaves like a listed corporation maximising private owner wealth.",
+      "Merchandise surplus must be paid as private shareholder dividends."
     ],
     "answer_key": [
       true,
       true,
-      true,
+      false,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Merchandise can fund an NPO without profit-maximising aims.",
-      "TRUE — Prior surpluses and donations can fund later projects.",
-      "TRUE — Merchandise can fund mission activities within an NPO model.",
-      "FALSE — Campaigns require staff, logistics, and covered costs.",
-      "FALSE — WWF is a mission-driven non-profit organisation."
+      "TRUE — Mission-funded trading is compatible with NPO status.",
+      "TRUE — Mission reinvestment is core NPO behaviour.",
+      "FALSE — Mission use of trading income does not redefine the organisation as profit-maximising.",
+      "FALSE — A conservation NPO is mission-driven, not owner-wealth-maximising.",
+      "FALSE — NPO surplus supports the mission."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3424,28 +3424,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.19",
-    "title": "Greenpeace Mission Spending",
-    "context": "Consider how Greenpeace raises international funds while limiting spending to mission delivery. Evaluate the following economic assertions:",
+    "title": "Environmental Campaign Spending",
+    "context": "Consider how an environmental campaign NPO raises funds while limiting spending to mission delivery. Evaluate the following economic assertions:",
     "statements": [
-      "Greenpeace limiting spending to mission delivery fits NPO behaviour.",
-      "Mission delivery requires budgeting even for advocacy organisations.",
-      "Campaign surplus can support more campaigns rather than shareholder dividends.",
-      "Greenpeace is an example of a non-profit organisation.",
-      "International fundraising still requires covering staff and logistics costs."
+      "Limiting spending to mission delivery fits not-for-profit behaviour.",
+      "Campaigns still depend on covering staff and logistics costs.",
+      "Fundraising for campaigns proves the organisation maximises private owner profit.",
+      "An environmental campaign NPO distributes surplus as owner dividends by definition.",
+      "Not-for-profit status removes any need for funding."
     ],
     "answer_key": [
       true,
       true,
-      true,
-      true,
-      true
+      false,
+      false,
+      false
     ],
     "tactical_explanations": [
-      "TRUE — NPOs raise funds to cover mission operations.",
-      "TRUE — NPOs must manage revenues to cover mission delivery.",
-      "TRUE — NPO surplus supports mission, not owner payouts.",
-      "TRUE — Greenpeace appears as a representative NPO in the chapter.",
-      "TRUE — Even advocacy NPOs must cover operating costs."
+      "TRUE — Mission-focused spending is characteristic of NPOs.",
+      "TRUE — Campaign delivery still has operating costs.",
+      "FALSE — Fundraising for a mission is not the same as owner profit-maximisation.",
+      "FALSE — NPO surplus is reinvested in the mission.",
+      "FALSE — NPOs still need inflows to operate."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3511,14 +3511,14 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.22",
-    "title": "NPO Revenue Need",
-    "context": "Review why not-for-profit organisations still need revenue. Evaluate the following economic assertions:",
+    "title": "NPO Mission versus Profit",
+    "context": "Analyze differences between not-for-profit and profit-oriented organisations. Evaluate the following economic assertions:",
     "statements": [
-      "Relief NGOs must secure inflows before dispatching kits to disaster zones.",
-      "Greenpeace campaigns depend on covering staff and logistics costs.",
-      "Mission status eliminates the need to track operating expenses.",
-      "Grants are symbolic recognition requiring no cost coverage.",
-      "Volunteer labour alone removes all NPO revenue requirements."
+      "Profit-oriented firms primarily seek owner returns, while NPOs primarily pursue a mission.",
+      "An NPO may earn a surplus and still remain not-for-profit if surplus serves the mission.",
+      "Any organisation that sells goods must be classified as profit-maximising.",
+      "NPOs never employ paid staff because volunteers cover all work.",
+      "Mission and surplus are mutually exclusive for every organisation."
     ],
     "answer_key": [
       true,
@@ -3528,11 +3528,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — NPOs need resources to deliver goods and services.",
-      "TRUE — Campaigns require financed staff and operations.",
-      "FALSE — NPOs must manage costs to remain viable.",
-      "FALSE — Grants must cover real project and staff costs.",
-      "FALSE — Operations still require funded inflows."
+      "TRUE — The core distinction is primary aim: profit versus mission.",
+      "TRUE — Surplus reinvested in the mission is compatible with NPO status.",
+      "FALSE — Trading does not automatically imply profit-maximisation.",
+      "FALSE — Many NPOs employ paid staff funded by inflows.",
+      "FALSE — NPOs can pursue a mission while managing a surplus."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3656,28 +3656,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.27",
-    "title": "Mission-driven Organisations",
-    "context": "Review mission focus in non-profit organisations. Evaluate the following economic assertions:",
+    "title": "NPO Mission Types",
+    "context": "Review how different not-for-profit missions share the same economic logic. Evaluate the following economic assertions:",
     "statements": [
-      "WWF illustrates environmental mission focus within an NPO model.",
-      "Mission-driven status means financial planning is unnecessary for NPOs.",
-      "Red Cross illustrates humanitarian mission delivery within an NPO model.",
-      "Greenpeace illustrates a mission-driven non-profit organisation.",
-      "Mission focus removes the need for any surplus reinvestment."
+      "A conservation NPO illustrates environmental mission focus within an NPO model.",
+      "A humanitarian NPO illustrates humanitarian mission delivery within an NPO model.",
+      "An environmental campaign NPO illustrates a mission-driven non-profit organisation.",
+      "Different mission labels remove the shared need to fund operations.",
+      "Mission type alone turns an NPO into a profit-maximising corporation."
     ],
     "answer_key": [
       true,
       true,
       true,
-      true,
+      false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — WWF is listed as a non-profit example.",
-      "TRUE — NPOs still need revenues to cover costs.",
-      "TRUE — Red Cross is a well-known NPO example.",
-      "TRUE — Greenpeace is cited as a representative NPO.",
-      "FALSE — Surplus can still enhance mission delivery."
+      "TRUE — Conservation work can be organised as an NPO mission.",
+      "TRUE — Humanitarian delivery can be organised as an NPO mission.",
+      "TRUE — Campaign advocacy can be organised as an NPO mission.",
+      "FALSE — All NPOs still need resources to operate.",
+      "FALSE — Mission type does not redefine the organisation as profit-maximising."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3743,28 +3743,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.30",
-    "title": "Red Cross Aid Packing",
-    "context": "Consider how Red Cross volunteers pack aid parcels funded by prior-year donation surplus. Evaluate the following economic assertions:",
+    "title": "Aid Packing and Prior Surplus",
+    "context": "Consider how a humanitarian NPO uses prior-year donation surplus to pack aid parcels. Evaluate the following economic assertions:",
     "statements": [
-      "Prior-year donation surplus can fund current aid parcel packing.",
+      "Prior surplus can fund later aid shipments for humanitarian organisations.",
       "Aid parcels reflect humanitarian mission delivery rather than owner profit-maximisation.",
-      "Volunteers packing parcels show mission delivery using prior secured inflows.",
-      "Packed parcels depend on goodwill alone with no financed materials.",
-      "Each relief operation must start from zero funding regardless of prior surplus."
+      "Using prior surplus for later aid proves the organisation maximises private owner wealth.",
+      "Humanitarian NPOs cannot retain unused funds from one period to the next.",
+      "Mission delivery requires no logistics funding if volunteers pack parcels."
     ],
     "answer_key": [
       true,
       true,
-      true,
+      false,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Prior surpluses and donations enable ongoing NPO operations.",
-      "TRUE — Humanitarian delivery reflects mission focus, not owner profit-maximisation.",
-      "TRUE — Relief work relies on previously secured funding.",
-      "FALSE — Humanitarian delivery requires funded materials and logistics.",
-      "FALSE — Prior surpluses can fund later operations."
+      "TRUE — Surpluses can be carried forward for mission use.",
+      "TRUE — Parcel packing serves the humanitarian mission.",
+      "FALSE — Mission use of surplus is not owner profit-maximisation.",
+      "FALSE — Unused inflows may be retained for later mission spending.",
+      "FALSE — Materials and logistics still require funded inputs."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3830,14 +3830,14 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.33",
-    "title": "NPO Trap: Surplus Allowed",
-    "context": "Analyze traps about whether NPOs may earn surplus. Evaluate the following economic assertions:",
+    "title": "Mixed NPO Revenue",
+    "context": "Analyze mixed funding sources for not-for-profit organisations. Evaluate the following economic assertions:",
     "statements": [
-      "Merchandise surplus at WWF can fund habitat work within the NPO model.",
-      "Not-for-profit labelling means no surplus may ever arise above costs.",
-      "NPO surplus reinvested for services differs from owner profit distribution.",
-      "Any surplus proves an NPO has abandoned its mission.",
-      "NPOs are barred from generating any amount above costs."
+      "A conservation NPO combining merchandise sales and donations illustrates mixed NPO revenue.",
+      "Surplus at an environmental campaign NPO can support more campaigns rather than shareholder dividends.",
+      "Merchandise surplus at a conservation NPO can fund habitat work within the NPO model.",
+      "Mixed revenue automatically converts every NPO into a profit-maximising firm.",
+      "Donations alone are the only lawful NPO funding source."
     ],
     "answer_key": [
       true,
@@ -3847,11 +3847,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — NPO merchandising surpluses can fund mission work.",
-      "TRUE — NPOs may earn surplus reinvested for the mission.",
-      "TRUE — NPO surpluses support mission, not private dividends.",
-      "FALSE — Surplus can enhance mission delivery.",
-      "FALSE — NPOs may earn and reinvest surplus."
+      "TRUE — NPOs may combine donations and trading income.",
+      "TRUE — Mission reinvestment replaces owner dividends.",
+      "TRUE — Trading surplus can finance conservation work.",
+      "FALSE — Revenue mix does not redefine the primary NPO aim.",
+      "FALSE — Trading and fees can also fund NPO activity."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3946,28 +3946,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.37",
-    "title": "Non-profit Labelling",
-    "context": "Review what not-for-profit labelling implies. Evaluate the following economic assertions:",
+    "title": "NPO Examples Across Missions",
+    "context": "Review shared characteristics of mission-driven not-for-profit organisations. Evaluate the following economic assertions:",
     "statements": [
-      "Labelling an organisation NPO does not remove the need for revenue.",
-      "Mission focus and cost coverage can coexist with surplus reinvestment.",
-      "Not-for-profit labelling signals mission focus rather than owner profit-maximisation.",
-      "Greenpeace, WWF, and Red Cross illustrate recognised NPO examples.",
-      "NPO labelling requires distributing surplus as owner dividends."
+      "Humanitarian, conservation, and environmental campaign organisations can all operate as NPOs.",
+      "Mission-driven organisations still face scarcity of funds and staff capacity.",
+      "NPO status abolishes all operating costs.",
+      "An NPO may ignore inflow management because there are never wages to pay.",
+      "Any organisation with a mission must be classified as primary-sector production."
     ],
     "answer_key": [
       true,
       true,
-      true,
-      true,
+      false,
+      false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — NPOs still need inflows to operate.",
-      "TRUE — NPOs combine cost coverage with mission surplus use.",
-      "TRUE — NPOs prioritise mission cost coverage over owner profit.",
-      "TRUE — These organisations appear as NPO examples in the chapter.",
-      "FALSE — NPO surpluses are reinvested, not owner dividends."
+      "TRUE — Different missions can share not-for-profit organisation status.",
+      "TRUE — Scarcity still constrains NPO resources.",
+      "FALSE — NPOs still incur operating costs.",
+      "FALSE — Many NPOs employ staff and manage payroll.",
+      "FALSE — Sector classification depends on activity, not mission label alone."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4294,28 +4294,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.49",
-    "title": "Mixed Revenue Charities",
-    "context": "Analyze charities combining donations and earned income. Evaluate the following economic assertions:",
+    "title": "Funding Disaster Relief",
+    "context": "Review funding humanitarian disaster relief. Evaluate the following economic assertions:",
     "statements": [
-      "WWF combining merchandise sales and donations illustrates mixed NPO revenue.",
-      "Mixed revenue converts charities into commercial retailers automatically.",
-      "Mixed donations and fees can sustain an NPO without owner profit distribution.",
-      "Only one revenue source is allowed for any charity.",
-      "Earned income from fees means surplus must become owner profit."
+      "Disaster relief requires funding for materials, transport, and staff or volunteers' support costs.",
+      "Surplus from earlier fundraising can finance later shipments.",
+      "Not-for-profit status removes the need for any inflow planning.",
+      "Relief can be delivered indefinitely without donations or other inflows.",
+      "Any surplus in relief work must become private owner profit."
     ],
     "answer_key": [
       true,
       true,
-      true,
+      false,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — NPOs can combine trading and donations.",
-      "TRUE — Combined inflows can still support mission cost coverage.",
-      "TRUE — NPOs may combine donations, fees, and other inflows.",
-      "FALSE — NPOs may combine multiple inflow types.",
-      "FALSE — Surplus can reinvest in mission activities."
+      "TRUE — Logistics and materials must be funded.",
+      "TRUE — Prior surplus can support later mission delivery.",
+      "FALSE — NPOs still plan and manage funding.",
+      "FALSE — Continuous delivery needs ongoing inflows.",
+      "FALSE — Mission surplus is not private owner profit."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4323,28 +4323,28 @@
   {
     "subsection": "3.3",
     "case_id": "CASE 3.3.50",
-    "title": "Chapter 3.3 Synthesis",
-    "context": "Review integrated profit-oriented and NPO claims. Evaluate the following economic assertions:",
+    "title": "NPO Synthesis",
+    "context": "Review core claims about not-for-profit organisations. Evaluate the following economic assertions:",
     "statements": [
-      "Profit-oriented firms aim for revenue above costs, reinvest profit, and reward owner risk.",
-      "NPOs aim to cover costs, accept donations, and reinvest surplus for mission delivery.",
-      "These organisations are profit-oriented because they raise revenues.",
-      "Both require paying surplus to private shareholders.",
-      "Revenue alone satisfies profit aims without regard to expenses."
+      "NPOs pursue a mission rather than maximising private owner profit.",
+      "Surpluses in NPOs typically return to mission delivery.",
+      "Humanitarian, conservation, and environmental campaign groups can illustrate NPO forms.",
+      "Selling goods always converts an NPO into a profit-maximising corporation.",
+      "NPOs can operate indefinitely with no inflows of any kind."
     ],
     "answer_key": [
       true,
       true,
-      false,
+      true,
       false,
       false
     ],
     "tactical_explanations": [
-      "TRUE — Commercial aims include surplus, reinvestment, and risk reward.",
-      "TRUE — NPOs combine cost coverage, donations, and mission reinvestment.",
-      "FALSE — These appear as NPO examples in the chapter.",
-      "FALSE — NPO surpluses reinvest in mission; commercial profit may reward owners.",
-      "FALSE — Profit requires revenues to exceed costs."
+      "TRUE — Mission aim distinguishes NPOs from profit-oriented firms.",
+      "TRUE — Mission reinvestment of surplus is standard NPO behaviour.",
+      "TRUE — Different mission types can share NPO characteristics.",
+      "FALSE — Trading for mission funding does not redefine the organisation as profit-maximising.",
+      "FALSE — Operations require donations, fees, grants, or trading income."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4382,7 +4382,7 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.02",
     "title": "Micro turnover edge case",
-    "context": "Consider tina and Steve's bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
+    "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
     "statements": [
       "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
       "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
@@ -4440,12 +4440,12 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.04",
     "title": "Small dual thresholds",
-    "context": "Analyze eU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
+    "context": "Analyze EU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
     "statements": [
       "MSME excludes micro firms and covers only small and medium categories.",
       "SMEs represent a narrow minority of EU firms because large corporations dominate registration statistics.",
       "SME labels are purely descriptive and have no effect on access to finance or reporting rules.",
-      "AT&S counts as a medium enterprise because it operates internationally.",
+      "A components manufacturer counts as a medium enterprise because it operates internationally.",
       "Medium status permits turnover up to €50m or a balance sheet total up to €43m together with the staff cap."
     ],
     "answer_key": [
@@ -4471,7 +4471,7 @@
     "title": "Small turnover breach",
     "context": "Consider a wholesaler that has thirty-eight staff but €10.4m turnover. Evaluate the following economic assertions:",
     "statements": [
-      "A workforce of about ten thousand places AT&S outside EU medium enterprise limits.",
+      "A workforce of about ten thousand places a components manufacturer outside EU medium enterprise limits.",
       "Approximately ninety-nine percent of businesses in the EU are SMEs.",
       "Accounting requirements are identical for micro firms and large multinationals under EU practice.",
       "Two hundred employees fall within the medium staff threshold.",
@@ -4584,13 +4584,13 @@
   {
     "subsection": "3.4",
     "case_id": "CASE 3.4.09",
-    "title": "AT&S large scale",
-    "context": "Consider aT&S employs roughly ten thousand staff worldwide. Evaluate the following economic assertions:",
+    "title": "A components manufacturer large scale",
+    "context": "Consider a components manufacturer employs roughly ten thousand staff worldwide. Evaluate the following economic assertions:",
     "statements": [
       "A balance sheet above €43m can disqualify medium status even with low turnover.",
       "Crossing micro limits while staying within small thresholds reclassifies the firm as small.",
       "Policies supporting SMEs affect the vast majority of EU businesses by number.",
-      "Size differences can mean different accounting rule sets for a micro supplier and AT&S.",
+      "Size differences can mean different accounting rule sets for a micro supplier and a components manufacturer.",
       "Small enterprises must record turnover not exceeding €10m."
     ],
     "answer_key": [
@@ -4703,7 +4703,7 @@
     "title": "Accounting rules by size",
     "context": "Analyze a growing firm approaches medium thresholds. Evaluate the following economic assertions:",
     "statements": [
-      "Tina and Steve illustrate micro-scale operations compared with AT&S's large workforce.",
+      "A small IT-support venture illustrate micro-scale operations compared with a components manufacturer's large workforce.",
       "Complete staff and financial data are needed to verify micro or other SME tiers.",
       "SME definitions are irrelevant once a firm exports outside the home country.",
       "One hundred and eighty employees fits the medium staff band if financial tests also pass.",
@@ -4717,7 +4717,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Local micro ventures contrast with AT&S's large-scale workforce.",
+      "TRUE — Local micro ventures contrast with a components manufacturer's large-scale workforce.",
       "TRUE — Both staff and financial caps must be checked.",
       "FALSE — Export activity does not override SME threshold tests.",
       "TRUE — 180 is within medium's below-250 staff range.",
@@ -4733,7 +4733,7 @@
     "context": "Consider a consultancy that has seven staff, €2.3m turnover, and a €1.9m balance sheet. Evaluate the following economic assertions:",
     "statements": [
       "Operating alone prevents micro classification because micro requires at least five staff.",
-      "Large firms like AT&S can employ thousands despite being few in number.",
+      "Large firms like a components manufacturer can employ thousands despite being few in number.",
       "Three thousand staff can still fall within medium limits if turnover is managed.",
       "Turnover within €10m alone makes a firm small even with three hundred employees.",
       "Turnover above €50m prevents medium classification when that cap is breached."
@@ -4747,7 +4747,7 @@
     ],
     "tactical_explanations": [
       "FALSE — There is no minimum staff count for micro beyond the upper cap.",
-      "TRUE — AT&S illustrates large-scale employment in a rare large firm.",
+      "TRUE — a components manufacturer illustrates large-scale employment in a rare large firm.",
       "FALSE — 3,000 far exceeds the 250-employee medium cap.",
       "FALSE — Three hundred staff exceeds medium limits regardless of turnover.",
       "TRUE — €55m exceeds the €50m medium turnover limit."
@@ -4821,7 +4821,7 @@
     "statements": [
       "EU SME tiers combine employee ceilings with turnover and/or balance sheet caps.",
       "Nine staff alone proves micro status without financial documentation.",
-      "AT&S counts as a micro enterprise because it supplies components to phone makers.",
+      "A components manufacturer counts as a micro enterprise because it supplies components to phone makers.",
       "One hundred and twenty-five staff satisfies the medium employee threshold.",
       "Staff headcount must be verified alongside turnover for medium classification."
     ],
@@ -4875,7 +4875,7 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.19",
     "title": "EU micro grant logic",
-    "context": "Analyze tina and Steve consider an EU micro-enterprise grant. Evaluate the following economic assertions:",
+    "context": "Analyze a small IT-support venture consider an EU micro-enterprise grant. Evaluate the following economic assertions:",
     "statements": [
       "Forty-five staff and €9.5m turnover together meet EU small enterprise thresholds.",
       "Thirty-eight staff fits the small employee ceiling below fifty.",
@@ -4933,7 +4933,7 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.21",
     "title": "Small €10m cap recall",
-    "context": "Analyze eU small-enterprise financial limits alongside staff criteria. Evaluate the following economic assertions:",
+    "context": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following economic assertions:",
     "statements": [
       "€180k turnover is well below the €2m micro turnover cap.",
       "A retailer is micro because turnover is under €10m despite thirty staff.",
@@ -5020,7 +5020,7 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.24",
     "title": "Growth micro to small",
-    "context": "Consider tina and Steve plan to hire staff and expand turnover. Evaluate the following economic assertions:",
+    "context": "Consider a small IT-support venture plan to hire staff and expand turnover. Evaluate the following economic assertions:",
     "statements": [
       "Village location prevents micro classification regardless of size metrics.",
       "€40m turnover alone is sufficient proof of medium enterprise status.",
@@ -5048,8 +5048,8 @@
   {
     "subsection": "3.4",
     "case_id": "CASE 3.4.25",
-    "title": "AT&S accounting contrast",
-    "context": "Analyze reporting expectations for AT&S and a micro village supplier. Evaluate the following economic assertions:",
+    "title": "A components manufacturer accounting contrast",
+    "context": "Analyze reporting expectations for a components manufacturer and a micro village supplier. Evaluate the following economic assertions:",
     "statements": [
       "Expanding headcount and turnover past small-tier limits can push a firm into the medium category.",
       "Three thousand staff far exceeds the two hundred and fifty employee medium ceiling.",
@@ -5164,8 +5164,8 @@
   {
     "subsection": "3.4",
     "case_id": "CASE 3.4.29",
-    "title": "Steve repair shop profile",
-    "context": "Consider steve runs a repair shop with one apprentice, two staff total, and €180k turnover. Evaluate the following economic assertions:",
+    "title": "Local repair shop profile",
+    "context": "Consider a technician who runs a repair shop with one apprentice, two staff total, and €180k turnover. Evaluate the following economic assertions:",
     "statements": [
       "€52m turnover still meets the medium turnover cap of €50m.",
       "A €44m balance sheet still meets the medium balance sheet cap of €43m.",
@@ -5227,7 +5227,7 @@
     "statements": [
       "Turnover of €1.8m exceeds the micro turnover cap of €2m.",
       "Micro firms are included in SME counts and MSME groupings.",
-      "Ten thousand AT&S staff fits the medium employee ceiling below two hundred and fifty.",
+      "Ten thousand a components manufacturer staff fits the medium employee ceiling below two hundred and fifty.",
       "Turnover of €9.5m exceeds the small turnover cap of €10m.",
       "Turnover of €49m exceeds the medium turnover cap of €50m."
     ],
@@ -5313,9 +5313,9 @@
     "context": "Analyze a firm has one hundred twenty staff, €52m turnover, and a €40m balance sheet. Evaluate the following economic assertions:",
     "statements": [
       "Medium status follows from international operations regardless of headcount.",
-      "AT&S is classified as large under EU thresholds because headcount far exceeds medium limits.",
+      "A components manufacturer is classified as large under EU thresholds because headcount far exceeds medium limits.",
       "Micro status requires fewer than ten staff plus turnover at or below €2m or balance sheet at or below €2m.",
-      "Tina and Steve's bakery with six staff meets the micro headcount test.",
+      "a neighbourhood bakery with six staff meets the micro headcount test.",
       "A firm with eight staff still needs turnover or balance sheet data to confirm micro status."
     ],
     "answer_key": [
@@ -5327,7 +5327,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Medium status depends on EU thresholds, not geographic scope.",
-      "TRUE — AT&S's ~10,000 staff exceeds the 250-person medium ceiling.",
+      "TRUE — a components manufacturer's ~10,000 staff exceeds the 250-person medium ceiling.",
       "TRUE — Micro combines staff ceiling with one financial cap.",
       "TRUE — Six employees is below the ten-person micro limit.",
       "TRUE — Financial caps must be verified alongside headcount."
@@ -5343,7 +5343,7 @@
     "statements": [
       "A village craft business with four staff meets the micro headcount test.",
       "Micro status follows from supplying larger manufacturers regardless of headcount.",
-      "Steve's repair shop with two staff meets the micro headcount test.",
+      "A local repair shop with two staff meets the micro headcount test.",
       "A retailer with thirty staff meets the small headcount test.",
       "SME classification is optional for firms seeking EU support programmes."
     ],
@@ -5396,8 +5396,8 @@
   {
     "subsection": "3.4",
     "case_id": "CASE 3.4.37",
-    "title": "Tina Steve versus AT&S",
-    "context": "Consider tina and Steve's bakery with AT&S when discussing business size. Evaluate the following economic assertions:",
+    "title": "Small bakery versus large manufacturer",
+    "context": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. Evaluate the following economic assertions:",
     "statements": [
       "The medium financial test treats €43m as the upper balance sheet bound.",
       "Micro eligibility includes balance sheet totals that do not exceed €2m.",
@@ -5544,7 +5544,7 @@
     "title": "Micro local economy role",
     "context": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following economic assertions:",
     "statements": [
-      "Accounting rule sets can differ between micro firms and large groups such as AT&S.",
+      "Accounting rule sets can differ between micro firms and large groups such as a components manufacturer.",
       "EU SME tables pair each tier with distinct staff and financial ceilings.",
       "The EU medium cap for balance sheet is €50m rather than €43m.",
       "Labeling €10m as the medium turnover ceiling misstates the EU threshold for that tier.",
@@ -5573,10 +5573,10 @@
     "title": "Staff-only exam trap",
     "context": "Analyze a case lists eight staff and asks whether SME status is certain. Evaluate the following economic assertions:",
     "statements": [
-      "Tina and Steve count as a large enterprise because their bakery supplies many customers.",
+      "A small IT-support venture count as a large enterprise because their bakery supplies many customers.",
       "One hundred and twenty staff with €52m turnover fails the medium turnover test.",
       "About ninety-nine percent of EU employees work in SMEs because ninety-nine percent of firms are SMEs.",
-      "AT&S counts as a medium enterprise because its Austrian headquarters defines EU size.",
+      "A components manufacturer counts as a medium enterprise because its Austrian headquarters defines EU size.",
       "Two hundred staff with €55m turnover fails the medium turnover test."
     ],
     "answer_key": [
@@ -5587,10 +5587,10 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Tina and Steve illustrate micro-scale operations, not large enterprise status.",
+      "FALSE — a small IT-support venture illustrate micro-scale operations, not large enterprise status.",
       "TRUE — €52m exceeds the €50m medium turnover cap.",
       "FALSE — The statistic refers to business numbers, not employment share.",
-      "FALSE — AT&S's ~10,000 staff exceeds medium limits.",
+      "FALSE — a components manufacturer's ~10,000 staff exceeds medium limits.",
       "TRUE — €55m exceeds the €50m medium turnover cap."
     ],
     "difficulty_level": "5/5",
@@ -5687,12 +5687,12 @@
     "subsection": "3.4",
     "case_id": "CASE 3.4.47",
     "title": "SME synthesis review",
-    "context": "Analyze eU SME classification principles for exam review. Evaluate the following economic assertions:",
+    "context": "Analyze EU SME classification principles for exam review. Evaluate the following economic assertions:",
     "statements": [
       "Headcount alone confirms small status for a fifty-employee logistics company.",
       "Incomplete turnover data still proves micro status when staff are nine.",
       "Micro turnover of €1.6m balance sheet context still allows €1.6m balance sheet under €2m cap.",
-      "Supplier status to phone makers determines AT&S size classification.",
+      "Supplier status to phone makers determines a components manufacturer size classification.",
       "Headcount alone confirms micro status for a ten-employee family firm."
     ],
     "answer_key": [
@@ -5719,7 +5719,7 @@
     "context": "Analyze a student argues a firm is medium because turnover is €40m. Evaluate the following economic assertions:",
     "statements": [
       "Micro turnover of €1.7m balance sheet total stays within the €2m micro balance sheet cap.",
-      "Tina and Steve serve as micro-scale examples alongside AT&S as a large firm.",
+      "A small IT-support venture serve as micro-scale examples alongside a components manufacturer as a large firm.",
       "SME classification principles combine staff ceilings with turnover and/or balance sheet caps.",
       "About ninety-nine percent of EU businesses are SMEs by number rather than by employment share alone.",
       "Medium balance sheet of €42m stays within the €43m medium cap."
@@ -5733,7 +5733,7 @@
     ],
     "tactical_explanations": [
       "TRUE — €1.7m meets the micro balance sheet threshold.",
-      "TRUE — Course examples contrast micro local ventures with AT&S scale.",
+      "TRUE — Course examples contrast micro local ventures with a components manufacturer scale.",
       "TRUE — Combined criteria define EU SME tiers in the official table.",
       "TRUE — The statistic measures business counts.",
       "TRUE — €42m meets the medium balance sheet threshold."
@@ -5889,8 +5889,8 @@
   {
     "subsection": "3.5",
     "case_id": "CASE 3.5.04",
-    "title": "AT&S multinational scope",
-    "context": "Consider aT&S manufactures and sells across several countries. Evaluate the following economic assertions:",
+    "title": "Multinational manufacturer scope",
+    "context": "Consider A components manufacturer that manufactures and sells across several countries. Evaluate the following economic assertions:",
     "statements": [
       "Regional scope allows unlimited customers anywhere on the globe.",
       "Globalisation is described as the rise of multinational enterprises operating across borders.",
@@ -5950,7 +5950,7 @@
     "title": "Regional funding challenge",
     "context": "Consider a regional craft firm that struggles to raise funds and find customers. Evaluate the following economic assertions:",
     "statements": [
-      "AT&S operating across countries illustrates a multinational enterprise reinventing its model.",
+      "A components manufacturer operating across countries illustrates a multinational enterprise reinventing its model.",
       "Limited capital can constrain a local firm's ability to expand beyond its immediate market.",
       "Currency differences disappear once a firm opens a foreign bank account.",
       "Undercapitalisation affects only multinational firms building foreign factories.",
@@ -5964,7 +5964,7 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — AT&S exemplifies large-scale multinational scope.",
+      "TRUE — a components manufacturer exemplifies large-scale multinational scope.",
       "TRUE — Undercapitalisation limits growth for geographically focused firms.",
       "FALSE — Operating across borders still involves multiple currencies.",
       "FALSE — links undercapitalisation chiefly to local/regional business challenges.",
@@ -6011,7 +6011,7 @@
       "Proximity to customers removes any need to seek sales for local firms.",
       "National businesses operate in more than one country as long as they use domestic currency.",
       "Currency differences arise when trading across international borders.",
-      "AT&S is a local enterprise because its first plant was in one town.",
+      "A components manufacturer is a local enterprise because its first plant was in one town.",
       "Globalisation reflects more firms producing and selling beyond a single country."
     ],
     "answer_key": [
@@ -6025,7 +6025,7 @@
       "FALSE — Finding customers remains a cited challenge for local/regional firms.",
       "FALSE — National firms stay within the home country.",
       "TRUE — Multiple currencies are part of international business conditions.",
-      "FALSE — AT&S exemplifies large multinational scope with cross-border activity.",
+      "FALSE — a components manufacturer exemplifies large multinational scope with cross-border activity.",
       "TRUE — Rising multinationals underpin the view of globalisation."
     ],
     "difficulty_level": "3/5",
@@ -6499,12 +6499,12 @@
     "subsection": "3.5",
     "case_id": "CASE 3.5.25",
     "title": "Multinational reinvented firm",
-    "context": "Consider aT&S expanded abroad and reinvented its business model. Evaluate the following economic assertions:",
+    "context": "Consider a components manufacturer expanded abroad and reinvented its business model. Evaluate the following economic assertions:",
     "statements": [
       "Operating nationally implies a longer supply chain than serving one neighbourhood.",
       "Cross-border sales expose a firm to multiple legal and economic systems.",
       "Local scope is not determined by EU SME headcount thresholds.",
-      "AT&S illustrates how a firm can operate as a multinational with plants and customers abroad.",
+      "A components manufacturer illustrates how a firm can operate as a multinational with plants and customers abroad.",
       "Regional firms compete for customers within the same limited territory."
     ],
     "answer_key": [
@@ -6518,7 +6518,7 @@
       "TRUE — contrasts longer national chains with shorter local ones.",
       "TRUE — International activity crosses differing legal and economic frameworks.",
       "TRUE — Geographic scope and enterprise size classification are separate concepts.",
-      "TRUE — AT&S is the course example of cross-border production and sales.",
+      "TRUE — a components manufacturer is the course example of cross-border production and sales.",
       "TRUE — Regional rivals share geographically bounded markets."
     ],
     "difficulty_level": "2/5",
@@ -6650,7 +6650,7 @@
       "A national supermarket chain is local because each store serves a neighbourhood.",
       "Regional branding across provinces makes a firm multinational.",
       "Supply chains shorten when a firm expands from local to national scope.",
-      "AT&S counts as regional because its Austrian roots define scope permanently."
+      "A components manufacturer counts as regional because its Austrian roots define scope permanently."
     ],
     "answer_key": [
       true,
@@ -6664,7 +6664,7 @@
       "FALSE — Country-wide domestic retail networks reflect national scope.",
       "FALSE — Intra-country regional branding differs from cross-border operations.",
       "FALSE — states national chains are longer than local ones.",
-      "FALSE — AT&S operates internationally with cross-border production and sales."
+      "FALSE — a components manufacturer operates internationally with cross-border production and sales."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6907,7 +6907,7 @@
     "title": "Local versus global trap",
     "context": "Analyze a student labels any online shop as global regardless of sales geography. Evaluate the following economic assertions:",
     "statements": [
-      "AT&S demonstrates multinational scope through foreign plants and international customers.",
+      "A components manufacturer demonstrates multinational scope through foreign plants and international customers.",
       "National airlines are local because passengers board at nearby airports.",
       "Regional seasonal tourism proves multinational scope because visitors hold foreign passports.",
       "A firm importing components for domestic assembly is a manufacturer in the supplier's country.",
@@ -6921,7 +6921,7 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — the course uses AT&S as a cross-border enterprise example.",
+      "TRUE — the course uses a components manufacturer as a cross-border enterprise example.",
       "FALSE — Domestic airport networks reflect national operating scope.",
       "FALSE — Foreign passport holders visiting a regional hotel do not make the hotel multinational.",
       "FALSE — Using imported inputs domestically differs from producing abroad.",
@@ -7142,7 +7142,7 @@
       "National procurement rules prove international scope because governments are global actors.",
       "International supply chains are shorter than local ones due to container shipping.",
       "Local market saturation limits growth when nearby demand is largely met.",
-      "AT&S is classified as national because most staff work in Austria.",
+      "A components manufacturer is classified as national because most staff work in Austria.",
       "Regional competitors prove multinational scope because rivalry crosses town boundaries."
     ],
     "answer_key": [
@@ -7156,7 +7156,7 @@
       "FALSE — Domestic-only tendering within one country remains national scope.",
       "FALSE — states international operations lengthen supply chains.",
       "TRUE — Exhausted proximate demand constrains local expansion.",
-      "FALSE — Cross-border production and sales make AT&S a multinational example.",
+      "FALSE — Cross-border production and sales make a components manufacturer a multinational example.",
       "FALSE — Regional rivalry within a limited area does not establish international scope."
     ],
     "difficulty_level": "3/5",
@@ -7282,13 +7282,13 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.02",
     "title": "Owner profit motives",
-    "context": "Consider tina and Steve evaluate what they as bakery owners seek from business performance. Evaluate the following economic assertions:",
+    "context": "Consider a small IT-support venture evaluate what they as bakery owners seek from business performance. Evaluate the following economic assertions:",
     "statements": [
-      "Tina and Steve have no interest in how the venture performs once the shop opens.",
-      "Profit rewards Tina and Steve for coordinating staff, suppliers, and customer service.",
+      "A small IT-support venture have no interest in how the venture performs once the shop opens.",
+      "Profit rewards a small IT-support venture for coordinating staff, suppliers, and customer service.",
       "Growing the bakery's reputation may increase the value of their investment over time.",
       "They accept business risk because poor trading could reduce their personal return.",
-      "Tina and Steve as owners seek profit from daily bread and pastry sales."
+      "A small IT-support venture as owners seek profit from daily bread and pastry sales."
     ],
     "answer_key": [
       false,
@@ -7369,7 +7369,7 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.05",
     "title": "Employee identification",
-    "context": "Consider bakery staff may identify with Tina and Steve's business success. Evaluate the following economic assertions:",
+    "context": "Consider bakery staff may identify with a small IT-support venture's business success. Evaluate the following economic assertions:",
     "statements": [
       "Staff depend on the bakery's continued operation for wages and job security.",
       "Employees are not stakeholders because they do not invest capital in the bakery.",
@@ -7514,12 +7514,12 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.10",
     "title": "Customer mutual dependency",
-    "context": "Consider tina and Steve's bakery customers, which depend on the shop for fresh bread. Evaluate the following economic assertions:",
+    "context": "Consider neighbourhood bakery customers who depend on the shop for fresh bread. Evaluate the following economic assertions:",
     "statements": [
       "Mutual dependency means both parties need each other for continued benefit.",
       "Customers depend on firms but firms do not depend on customers for revenue.",
       "Customers depend on the bakery for product quality and daily availability.",
-      "Tina and Steve depend on customers for revenue that keeps the bakery trading.",
+      "The bakery depends on customers for revenue that keeps the shop trading.",
       "If the bakery closes, regular customers lose a relied-upon source of fresh bread."
     ],
     "answer_key": [
@@ -7775,13 +7775,13 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.19",
     "title": "Market awareness factor",
-    "context": "Consider tina and Steve assess how market awareness affects their bakery stakeholders. Evaluate the following economic assertions:",
+    "context": "Consider a small IT-support venture assess how market awareness affects their bakery stakeholders. Evaluate the following economic assertions:",
     "statements": [
-      "Ignoring local taste trends could harm Tina and Steve's customers and their own returns.",
+      "Ignoring local taste trends could harm a small IT-support venture's customers and their own returns.",
       "Tracking customer preferences helps the bakery retain mutual dependency with its buyers.",
       "Market awareness helps a firm respond to customer and competitive stakeholder pressures.",
       "Market awareness concerns only rivals and has no bearing on customer stakeholders.",
-      "Understanding rival bakeries helps Tina and Steve keep quality attractive to regular buyers."
+      "Understanding rival bakeries helps a small IT-support venture keep quality attractive to regular buyers."
     ],
     "answer_key": [
       true,
@@ -7949,13 +7949,13 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.25",
     "title": "Customers quality price",
-    "context": "Analyze tina and Steve's regular buyers depend on consistent quality and fair pricing. Evaluate the following economic assertions:",
+    "context": "Analyze how a bakery's regular buyers depend on consistent quality and fair pricing. Evaluate the following economic assertions:",
     "statements": [
       "Customers suffer if a relied-upon provider fails to supply quality products on time.",
-      "Fair pricing and reliable quality keep Tina and Steve's regular buyers returning to the bakery.",
+      "Fair pricing and reliable quality keep a bakery's regular buyers returning to the bakery.",
       "Quality and price matter only to owners, not to customer stakeholders.",
       "Customers depend on firms for product quality and availability.",
-      "Buyers at Tina and Steve's bakery have no stake in whether the shop stays open."
+      "Buyers at a neighbourhood bakery have no stake in whether the shop stays open."
     ],
     "answer_key": [
       true,
@@ -8152,11 +8152,11 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.32",
     "title": "Supplier buyer relationship",
-    "context": "Analyze tina and Steve's flour supplier relies on their bakery for orders and payment. Evaluate the following economic assertions:",
+    "context": "Analyze how a bakery's flour supplier relies on their bakery for orders and payment. Evaluate the following economic assertions:",
     "statements": [
       "Only the bakery owners are stakeholders in the flour supply arrangement.",
-      "The flour supplier expects payment and future orders from Tina and Steve's bakery.",
-      "Tina and Steve depend on the supplier for quality flour while the supplier depends on their orders.",
+      "The flour supplier expects payment and future orders from a neighbourhood bakery.",
+      "The bakery depends on the supplier for quality flour while the supplier depends on bakery orders.",
       "Delayed bakery orders threaten the flour supplier's cash flow and staffing plans.",
       "Buyers and suppliers rely on each other for orders and cash flow."
     ],
@@ -8326,13 +8326,13 @@
     "subsection": "3.6",
     "case_id": "CASE 3.6.38",
     "title": "Growth versus community conflict",
-    "context": "Analyze tina and Steve plan a larger bakery extension opposed by neighbours. Evaluate the following economic assertions:",
+    "context": "Analyze a small IT-support venture plan a larger bakery extension opposed by neighbours. Evaluate the following economic assertions:",
     "statements": [
       "Expansion plans may clash with community preferences about noise and traffic.",
       "Community objections to a bakery extension illustrate conflicting stakeholder interests in practice.",
-      "Tina and Steve's growth ambitions may conflict with neighbours' wish to limit delivery traffic.",
+      "A small IT-support venture's growth ambitions may conflict with neighbours' wish to limit delivery traffic.",
       "Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions.",
-      "Neighbours opposing Tina and Steve's extension show conflicting stakeholder interests over local amenities."
+      "Neighbours opposing a small IT-support venture's extension show conflicting stakeholder interests over local amenities."
     ],
     "answer_key": [
       true,
@@ -8383,13 +8383,13 @@
   {
     "subsection": "3.6",
     "case_id": "CASE 3.6.40",
-    "title": "Tina Steve stakeholders",
-    "context": "Consider tina and Steve's bakery, which affects owners, staff, suppliers, and neighbours. Evaluate the following economic assertions:",
+    "title": "Bakery stakeholder groups",
+    "context": "Consider a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours. Evaluate the following economic assertions:",
     "statements": [
       "Bakery staff depend on the shop for wages and job security as employee stakeholders.",
-      "Tina and Steve as owners seek profit and bear risk from how the bakery trades.",
-      "Tina, Steve, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery.",
-      "Only Tina and Steve count as stakeholders because they provided the original capital.",
+      "Bakery owners seek profit and bear risk from how the shop trades.",
+      "The owners, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery.",
+      "Only a small IT-support venture count as stakeholders because they provided the original capital.",
       "The flour supplier expects payment and future orders as a supplier stakeholder."
     ],
     "answer_key": [
@@ -8412,14 +8412,14 @@
   {
     "subsection": "3.6",
     "case_id": "CASE 3.6.41",
-    "title": "AT&S stakeholder spread",
-    "context": "Consider aT&S affects owners, employees, suppliers, communities, and regulators in many countries. Evaluate the following economic assertions:",
+    "title": "Multinational stakeholder spread",
+    "context": "Consider a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries. Evaluate the following economic assertions:",
     "statements": [
-      "Employees at AT&S PCB plants are stakeholders affected by corporate decisions.",
-      "Government regulators in host countries hold stakeholder interests in AT&S operations.",
-      "Communities near AT&S facilities may be stakeholders affected by jobs and local spending.",
-      "AT&S affects employees, suppliers, communities, and regulators across its operating countries.",
-      "A multinational like AT&S has stakeholders only among its shareholders."
+      "Employees at a components manufacturer's plants are stakeholders affected by corporate decisions.",
+      "Government regulators in host countries hold stakeholder interests in a components manufacturer's operations.",
+      "Communities near a components manufacturer's facilities may be stakeholders affected by jobs and local spending.",
+      "A components manufacturer affects employees, suppliers, communities, and regulators across its operating countries.",
+      "A multinational like a components manufacturer has stakeholders only among its shareholders."
     ],
     "answer_key": [
       true,
