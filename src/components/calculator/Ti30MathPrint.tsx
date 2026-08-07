@@ -19,7 +19,99 @@ type GuideItem = {
   title: string;
   tab: Tab;
   steps: string[];
-  paste?: string;
+  /** When set, opens this Dist function in the wizard. */
+  distPick?: DistFn;
+  prbPick?: PrbFn;
+};
+
+type DistFn =
+  | "normalpdf"
+  | "normalcdf"
+  | "invnorm"
+  | "binompdf"
+  | "binomcdf"
+  | "poissonpdf"
+  | "poissoncdf";
+
+type PrbFn = "npr" | "ncr" | "fact" | "rand" | "randint";
+
+type DistField = { key: string; label: string; hint?: string; defaultValue: string };
+
+const DIST_DEFS: Record<
+  DistFn,
+  { title: string; menu: string; blurb: string; fields: DistField[]; hasBinomMode?: boolean }
+> = {
+  normalpdf: {
+    title: "Normalpdf",
+    menu: "1: Normalpdf",
+    blurb: "Density at x for N(μ, σ²). Defaults μ=0, σ=1.",
+    fields: [
+      { key: "x", label: "x", defaultValue: "" },
+      { key: "mu", label: "μ (mean)", defaultValue: "0" },
+      { key: "sigma", label: "σ (stddev)", defaultValue: "1" },
+    ],
+  },
+  normalcdf: {
+    title: "Normalcdf",
+    menu: "2: Normalcdf",
+    blurb: "Area between lowerbnd and upperbnd. Use −1E99 / 1E99 for ±∞.",
+    fields: [
+      { key: "lower", label: "lowerbnd", defaultValue: "-1E99" },
+      { key: "upper", label: "upperbnd", defaultValue: "1E99" },
+      { key: "mu", label: "μ (mean)", defaultValue: "0" },
+      { key: "sigma", label: "σ (stddev)", defaultValue: "1" },
+    ],
+  },
+  invnorm: {
+    title: "invNorm",
+    menu: "3: invNorm",
+    blurb: "x such that left-tail area = area. 0 < area < 1.",
+    fields: [
+      { key: "area", label: "area", defaultValue: "0.95" },
+      { key: "mu", label: "μ (mean)", defaultValue: "0" },
+      { key: "sigma", label: "σ (stddev)", defaultValue: "1" },
+    ],
+  },
+  binompdf: {
+    title: "Binompdf",
+    menu: "4: Binompdf",
+    blurb: "P(X = x) for Binomial(n, p). SINGLE = one x; ALL = x = 0…n.",
+    hasBinomMode: true,
+    fields: [
+      { key: "n", label: "numtrials (n)", defaultValue: "" },
+      { key: "p", label: "p (success)", defaultValue: "" },
+      { key: "x", label: "x (SINGLE)", defaultValue: "" },
+    ],
+  },
+  binomcdf: {
+    title: "Binomcdf",
+    menu: "5: Binomcdf",
+    blurb: "P(X ≤ x) for Binomial(n, p). SINGLE or ALL (cumulative 0…n).",
+    hasBinomMode: true,
+    fields: [
+      { key: "n", label: "numtrials (n)", defaultValue: "" },
+      { key: "p", label: "p (success)", defaultValue: "" },
+      { key: "x", label: "x (SINGLE)", defaultValue: "" },
+    ],
+  },
+  poissonpdf: {
+    title: "Poissonpdf",
+    menu: "6: Poissonpdf",
+    blurb: "P(X = x) for Poisson(μ). μ must be > 0.",
+    fields: [
+      { key: "mu", label: "μ (mean)", defaultValue: "" },
+      { key: "x", label: "x", defaultValue: "" },
+    ],
+  },
+  poissoncdf: {
+    title: "Poissoncdf",
+    menu: "7: Poissoncdf",
+    blurb: "P(X ≤ x) for Poisson(μ). μ must be > 0.",
+    fields: [
+      { key: "mu", label: "μ (mean)", defaultValue: "" },
+      { key: "x", label: "x", defaultValue: "" },
+    ],
+  },
 };
 
 const GUIDE: GuideItem[] = [
@@ -58,54 +150,52 @@ const GUIDE: GuideItem[] = [
     title: "Probability (nCr / nPr / ! / rand)",
     tab: "prb",
     steps: [
-      "Open the PRB tab.",
-      "nCr(n,r) or nPr(n,r) — enter args separated by commas, then =.",
-      "rand() and randint(lo,hi) for random draws.",
+      "Open PRB → pick nPr, nCr, !, rand, or randint.",
+      "Fill the labeled fields (n, r, …) — no syntax to memorize.",
+      "Tap CALC. Result appears on the LCD and in Ans.",
     ],
-    paste: "nCr(",
+    prbPick: "ncr",
   },
   {
     id: "dist-normal",
     title: "Distributions — Normal",
     tab: "dist",
     steps: [
-      "Open Dist (this is where Normal / Binomial / Poisson live).",
-      "normalpdf(x, μ, σ) — density. Defaults μ=0, σ=1 if omitted.",
-      "normalcdf(lo, hi, μ, σ) — area between lo and hi.",
-      "invNorm(area, μ, σ) — z/x for left-tail area.",
-      "Example: normalcdf(-1E99, 1.96) ≈ 0.975",
+      "Open Dist → choose Normalcdf (or Normalpdf / invNorm).",
+      "Fill lowerbnd, upperbnd, μ, σ (defaults are already loaded).",
+      "Tap CALC — result goes to the LCD. Tap Solve again to change inputs.",
     ],
-    paste: "normalcdf(",
+    distPick: "normalcdf",
   },
   {
     id: "dist-binom",
     title: "Distributions — Binomial",
     tab: "dist",
     steps: [
-      "binompdf(n, p, x) — P(X = x).",
-      "binomcdf(n, p, x) — P(X ≤ x).",
-      "Example: binompdf(10, 0.5, 3)",
+      "Dist → Binompdf or Binomcdf.",
+      "Enter n, p, and x. Use SINGLE for one x, or ALL for the full 0…n table.",
+      "Tap CALC.",
     ],
-    paste: "binompdf(",
+    distPick: "binompdf",
   },
   {
     id: "dist-poisson",
     title: "Distributions — Poisson",
     tab: "dist",
     steps: [
-      "poissonpdf(μ, x) — P(X = x).",
-      "poissoncdf(μ, x) — P(X ≤ x).",
+      "Dist → Poissonpdf or Poissoncdf.",
+      "Enter μ (> 0) and x, then CALC.",
     ],
-    paste: "poissonpdf(",
+    distPick: "poissonpdf",
   },
   {
     id: "stat",
     title: "1-Var & 2-Var stats",
     tab: "stat",
     steps: [
-      "Enter L1 values (comma or space separated) → Load L1.",
-      "For regression, also enter L2 → Load L2.",
-      "Read mean, σ, r, line a+bx from the results panel.",
+      "Enter L1 values (comma or space separated) → Load lists.",
+      "For regression, also enter L2 → Load lists.",
+      "Tap 1-Var Stats or LinReg to read mean, σ, r, a+bx.",
     ],
   },
   {
@@ -127,6 +217,39 @@ const GUIDE: GuideItem[] = [
     ],
   },
 ];
+
+function defaultsFor(fn: DistFn): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const f of DIST_DEFS[fn].fields) out[f.key] = f.defaultValue;
+  return out;
+}
+
+function FieldRow({
+  label,
+  value,
+  onChange,
+  hint,
+  className,
+}: {
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  hint?: string;
+  className?: string;
+}) {
+  return (
+    <label className={cn("block", className)}>
+      <span className="text-[10px] font-semibold text-taupe">{label}</span>
+      <input
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        inputMode="decimal"
+        className="mt-0.5 w-full rounded-lg border border-border bg-background px-2 py-1.5 font-mono text-xs text-foreground focus:border-caramel-deep focus:outline-none focus:ring-1 focus:ring-caramel-deep/40"
+      />
+      {hint ? <span className="mt-0.5 block text-[9px] text-muted-foreground">{hint}</span> : null}
+    </label>
+  );
+}
 
 function Key({
   label,
@@ -219,6 +342,12 @@ export function Ti30MathPrint({
   const [listDraft, setListDraft] = useState("");
   const [list2Draft, setList2Draft] = useState("");
   const [activeGuide, setActiveGuide] = useState<string | null>(null);
+  const [distFn, setDistFn] = useState<DistFn | null>(null);
+  const [distVals, setDistVals] = useState<Record<string, string>>({});
+  const [binomMode, setBinomMode] = useState<"single" | "all">("single");
+  const [distAllRows, setDistAllRows] = useState<{ x: number; y: string }[] | null>(null);
+  const [prbFn, setPrbFn] = useState<PrbFn | null>(null);
+  const [prbVals, setPrbVals] = useState<Record<string, string>>({ n: "", r: "", lo: "1", hi: "6" });
 
   const insert = useCallback(
     (s: string) => {
@@ -235,13 +364,109 @@ export function Ti30MathPrint({
     refresh();
   };
 
+  const pickDist = (fn: DistFn) => {
+    setDistFn(fn);
+    setDistVals(defaultsFor(fn));
+    setBinomMode("single");
+    setDistAllRows(null);
+    setTab("dist");
+    setGuideOpen(false);
+  };
+
+  const pickPrb = (fn: PrbFn) => {
+    setPrbFn(fn);
+    setPrbVals({ n: "", r: "", lo: "1", hi: "6" });
+    setTab("prb");
+    setGuideOpen(false);
+  };
+
   const openGuideItem = (g: GuideItem) => {
     setActiveGuide(g.id);
-    setTab(g.tab);
     setGuideOpen(true);
-    if (g.paste) {
-      engine.clearEntry();
-      engine.pushKey(g.paste);
+    if (g.distPick) {
+      setDistFn(g.distPick);
+      setDistVals(defaultsFor(g.distPick));
+      setBinomMode("single");
+      setDistAllRows(null);
+      setTab("dist");
+    } else if (g.prbPick) {
+      setPrbFn(g.prbPick);
+      setPrbVals({ n: "", r: "", lo: "1", hi: "6" });
+      setTab("prb");
+    } else {
+      setTab(g.tab);
+    }
+  };
+
+  const runDistCalc = () => {
+    if (!distFn) return;
+    setDistAllRows(null);
+    try {
+      const v = (k: string) => {
+        const raw = (distVals[k] ?? "").trim().replace(/−/g, "-");
+        if (!raw) throw new Error("SYNTAX");
+        return raw;
+      };
+      let expr = "";
+      if (distFn === "normalpdf") {
+        expr = `normalpdf(${v("x")},${v("mu")},${v("sigma")})`;
+      } else if (distFn === "normalcdf") {
+        expr = `normalcdf(${v("lower")},${v("upper")},${v("mu")},${v("sigma")})`;
+      } else if (distFn === "invnorm") {
+        expr = `invNorm(${v("area")},${v("mu")},${v("sigma")})`;
+      } else if (distFn === "binompdf" || distFn === "binomcdf") {
+        const nRaw = v("n");
+        const pRaw = v("p");
+        const n = Number(nRaw);
+        const p = Number(pRaw);
+        if (!Number.isFinite(n) || !Number.isFinite(p)) throw new Error("SYNTAX");
+        if (binomMode === "all") {
+          if (!Number.isInteger(n) || n < 0 || n > 80) throw new Error("DOMAIN");
+          const rows: { x: number; y: string }[] = [];
+          let last = 0;
+          for (let x = 0; x <= n; x++) {
+            const e = `${distFn}(${n},${p},${x})`;
+            last = engine.compute(e);
+            rows.push({ x, y: formatDisplay(last, engine.mode) });
+          }
+          engine.pushResult(`${distFn}(${n},${p},ALL)`, last);
+          setDistAllRows(rows);
+          refresh();
+          return;
+        }
+        expr = `${distFn}(${nRaw},${pRaw},${v("x")})`;
+      } else {
+        expr = `${distFn}(${v("mu")},${v("x")})`;
+      }
+      engine.evaluate(expr);
+      refresh();
+    } catch (e) {
+      engine.lastError = e instanceof Error ? e.message : "Error";
+      if (engine.lastError !== "DOMAIN" && engine.lastError !== "SYNTAX") {
+        engine.lastError = "Error";
+      }
+      refresh();
+    }
+  };
+
+  const runPrbCalc = () => {
+    if (!prbFn) return;
+    try {
+      const v = (k: string) => {
+        const raw = (prbVals[k] ?? "").trim().replace(/−/g, "-");
+        if (!raw && prbFn !== "rand") throw new Error("SYNTAX");
+        return raw;
+      };
+      let expr = "";
+      if (prbFn === "npr") expr = `nPr(${v("n")},${v("r")})`;
+      else if (prbFn === "ncr") expr = `nCr(${v("n")},${v("r")})`;
+      else if (prbFn === "fact") expr = `${v("n")}!`;
+      else if (prbFn === "rand") expr = "rand()";
+      else expr = `randint(${v("lo")},${v("hi")})`;
+      engine.evaluate(expr);
+      refresh();
+    } catch {
+      engine.lastError = "SYNTAX";
       refresh();
     }
   };
@@ -561,84 +786,215 @@ export function Ti30MathPrint({
         )}
 
         {tab === "prb" && (
-          <div className="grid grid-cols-2 gap-2">
-            <Key
-              label="nPr("
-              wide
-              onClick={() => {
-                insert("nPr(");
-                setTab("home");
-              }}
-            />
-            <Key
-              label="nCr("
-              wide
-              onClick={() => {
-                insert("nCr(");
-                setTab("home");
-              }}
-            />
-            <Key
-              label="!"
-              wide
-              onClick={() => {
-                insert("!");
-                setTab("home");
-              }}
-            />
-            <Key
-              label="rand"
-              wide
-              onClick={() => {
-                insert("rand()");
-                setTab("home");
-              }}
-            />
-            <Key
-              label="randint(A,B)"
-              wide
-              onClick={() => {
-                insert("randint(");
-                setTab("home");
-              }}
-            />
+          <div className="space-y-2 text-xs">
+            {prbFn == null ? (
+              <>
+                <p className="text-[10px] leading-relaxed text-muted-foreground">
+                  Probability menu — pick a function, then fill the fields (like the TI wizard).
+                </p>
+                {(
+                  [
+                    ["npr", "nPr"],
+                    ["ncr", "nCr"],
+                    ["fact", "!"],
+                    ["rand", "rand"],
+                    ["randint", "randint"],
+                  ] as const
+                ).map(([id, label]) => (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => pickPrb(id)}
+                    className="flex w-full items-center justify-between rounded-lg border border-border bg-background px-3 py-2 text-left text-[12px] font-semibold hover:border-caramel-deep/50 hover:bg-secondary/60"
+                  >
+                    {label}
+                    <span className="text-[10px] font-normal text-taupe">→</span>
+                  </button>
+                ))}
+              </>
+            ) : (
+              <>
+                <div className="flex items-center justify-between gap-2">
+                  <p className="font-display text-sm font-bold">{prbFn === "fact" ? "!" : prbFn}</p>
+                  <button
+                    type="button"
+                    className="text-[10px] font-semibold text-taupe hover:text-foreground"
+                    onClick={() => setPrbFn(null)}
+                  >
+                    ← Menu
+                  </button>
+                </div>
+                {(prbFn === "npr" || prbFn === "ncr") && (
+                  <div className="grid grid-cols-2 gap-2">
+                    <FieldRow
+                      label="n"
+                      value={prbVals.n}
+                      onChange={(v) => setPrbVals((s) => ({ ...s, n: v }))}
+                    />
+                    <FieldRow
+                      label="r"
+                      value={prbVals.r}
+                      onChange={(v) => setPrbVals((s) => ({ ...s, r: v }))}
+                    />
+                  </div>
+                )}
+                {prbFn === "fact" && (
+                  <FieldRow
+                    label="n"
+                    value={prbVals.n}
+                    onChange={(v) => setPrbVals((s) => ({ ...s, n: v }))}
+                  />
+                )}
+                {prbFn === "rand" && (
+                  <p className="text-[10px] text-muted-foreground">No inputs — taps CALC for a random in [0,1).</p>
+                )}
+                {prbFn === "randint" && (
+                  <div className="grid grid-cols-2 gap-2">
+                    <FieldRow
+                      label="lower"
+                      value={prbVals.lo}
+                      onChange={(v) => setPrbVals((s) => ({ ...s, lo: v }))}
+                    />
+                    <FieldRow
+                      label="upper"
+                      value={prbVals.hi}
+                      onChange={(v) => setPrbVals((s) => ({ ...s, hi: v }))}
+                    />
+                  </div>
+                )}
+                <button
+                  type="button"
+                  onClick={runPrbCalc}
+                  className="w-full rounded-lg bg-caramel-deep px-3 py-2 text-[12px] font-bold text-primary-foreground"
+                >
+                  CALC
+                </button>
+              </>
+            )}
           </div>
         )}
 
         {tab === "dist" && (
           <div className="space-y-2 text-xs">
-            <p className="text-[10px] leading-relaxed text-muted-foreground">
-              Dist menu (TI-30X Pro documented). Tap a function to paste it, finish args with commas, then =.
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              {(
-                [
-                  ["normalpdf(", "normalpdf"],
-                  ["normalcdf(", "normalcdf"],
-                  ["invNorm(", "invNorm"],
-                  ["binompdf(", "binompdf"],
-                  ["binomcdf(", "binomcdf"],
-                  ["poissonpdf(", "poissonpdf"],
-                  ["poissoncdf(", "poissoncdf"],
-                ] as const
-              ).map(([paste, label]) => (
-                <Key
-                  key={label}
-                  label={label}
-                  wide
-                  onClick={() => {
-                    insert(paste);
-                    setTab("home");
-                  }}
-                />
-              ))}
-            </div>
-            <div className="rounded-lg border border-dashed border-border bg-background/60 p-2 text-[10px] leading-relaxed text-muted-foreground">
-              <p className="mb-1 font-semibold text-foreground">Quick args</p>
-              <p>normalcdf(lower, upper [,μ] [,σ])</p>
-              <p>invNorm(area [,μ] [,σ])</p>
-              <p>binompdf(n, p, x) · poissonpdf(μ, x)</p>
-            </div>
+            {distFn == null ? (
+              <>
+                <p className="text-[10px] leading-relaxed text-muted-foreground">
+                  DISTR menu (TI-30X Pro). Pick a distribution — you get labeled input fields, then CALC.
+                </p>
+                {(Object.keys(DIST_DEFS) as DistFn[]).map((id) => (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => pickDist(id)}
+                    className="flex w-full items-center justify-between rounded-lg border border-border bg-background px-3 py-2 text-left hover:border-caramel-deep/50 hover:bg-secondary/60"
+                  >
+                    <span className="text-[12px] font-semibold">{DIST_DEFS[id].menu}</span>
+                    <span className="text-[10px] text-taupe">→</span>
+                  </button>
+                ))}
+              </>
+            ) : (
+              <>
+                <div className="flex items-center justify-between gap-2">
+                  <div>
+                    <p className="font-display text-sm font-bold">{DIST_DEFS[distFn].title}</p>
+                    <p className="text-[10px] leading-snug text-muted-foreground">{DIST_DEFS[distFn].blurb}</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="shrink-0 text-[10px] font-semibold text-taupe hover:text-foreground"
+                    onClick={() => {
+                      setDistFn(null);
+                      setDistAllRows(null);
+                    }}
+                  >
+                    ← Menu
+                  </button>
+                </div>
+
+                {DIST_DEFS[distFn].hasBinomMode && (
+                  <div className="flex gap-2">
+                    {(["single", "all"] as const).map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        onClick={() => setBinomMode(m)}
+                        className={cn(
+                          "flex-1 rounded-lg border px-2 py-1.5 text-[11px] font-semibold uppercase",
+                          binomMode === m
+                            ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
+                            : "border-border bg-background",
+                        )}
+                      >
+                        {m}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                  {DIST_DEFS[distFn].fields
+                    .filter((f) => !(DIST_DEFS[distFn].hasBinomMode && binomMode === "all" && f.key === "x"))
+                    .map((f) => (
+                      <FieldRow
+                        key={f.key}
+                        label={f.label}
+                        value={distVals[f.key] ?? ""}
+                        onChange={(val) => setDistVals((s) => ({ ...s, [f.key]: val }))}
+                        hint={f.hint}
+                      />
+                    ))}
+                </div>
+
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={runDistCalc}
+                    className="flex-1 rounded-lg bg-caramel-deep px-3 py-2 text-[12px] font-bold text-primary-foreground"
+                  >
+                    CALC
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setDistVals(defaultsFor(distFn));
+                      setDistAllRows(null);
+                    }}
+                    className="rounded-lg border border-border px-3 py-2 text-[11px] font-semibold"
+                  >
+                    Reset
+                  </button>
+                </div>
+
+                {distAllRows && (
+                  <div className="max-h-36 overflow-auto rounded-xl border border-border">
+                    <table className="w-full font-mono text-[11px]">
+                      <thead className="sticky top-0 bg-secondary text-taupe">
+                        <tr>
+                          <th className="px-2 py-1 text-left">x</th>
+                          <th className="px-2 py-1 text-left">
+                            {distFn === "binomcdf" ? "cdf" : "pdf"}
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {distAllRows.map((r) => (
+                          <tr key={r.x} className="border-t border-border">
+                            <td className="px-2 py-0.5">{r.x}</td>
+                            <td className="px-2 py-0.5">{r.y}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+
+                <p className="text-[9px] text-muted-foreground">
+                  Result prints on the LCD above (and stores to Ans). Change a field and CALC again — same as
+                  &quot;Solve again&quot; on TI.
+                </p>
+              </>
+            )}
           </div>
         )}
 

@@ -365,10 +365,7 @@ export class Ti30Engine {
     const expr = (expression ?? this.entry).trim();
     if (!expr) return formatDisplay(this.ans, this.mode);
     try {
-      const env = this.env();
-      const value = this.evalExpr(tokenize(this.normalize(expr)), env);
-      this.randSeed = env.randSeed;
-      this.ans = value;
+      const value = this.compute(expr);
       const display = formatDisplay(value, this.mode);
       this.history = [...this.history.slice(-20), { expr, result: display }];
       this.entry = "";
@@ -381,6 +378,28 @@ export class Ti30Engine {
         ? this.lastError
         : "Error";
     }
+  }
+
+  /** Evaluate without touching history / entry (for Dist ALL tables). */
+  compute(expression: string): number {
+    const expr = expression.trim();
+    if (!expr) throw new Error("SYNTAX");
+    const env = this.env();
+    const value = this.evalExpr(tokenize(this.normalize(expr)), env);
+    this.randSeed = env.randSeed;
+    this.ans = value;
+    this.lastError = null;
+    return value;
+  }
+
+  pushResult(expr: string, value: number): string {
+    const display = formatDisplay(value, this.mode);
+    this.ans = value;
+    this.history = [...this.history.slice(-20), { expr, result: display }];
+    this.entry = "";
+    this.fractionToggle = toFractionString(value);
+    this.lastError = null;
+    return display;
   }
 
   toggleFracDec(): string {
@@ -418,7 +437,12 @@ export class Ti30Engine {
       .replace(/π/g, "pi")
       .replace(/√/g, "sqrt")
       .replace(/²/g, "^2")
-      .replace(/(\d)([a-z(])/gi, "$1*$2")
+      // Implicit multiply (2π, 2(3)), but do not split scientific notation 1E99 / 1e-3.
+      .replace(/(\d)([a-z(])/gi, (full, digit: string, next: string, offset: number, str: string) => {
+        const fromNext = str.slice(offset + digit.length);
+        if (/^[eE][+-]?\d/.test(fromNext)) return full;
+        return `${digit}*${next}`;
+      })
       .replace(/\)(\d)/g, ")*$1")
       .replace(/\)([a-z(])/gi, ")*$1");
   }
