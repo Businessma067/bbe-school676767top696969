@@ -1,5 +1,5 @@
 {
-  "pageCount": 65,
+  "pageCount": 62,
   "chapters": [
     {
       "chapter": 2,
@@ -23,13 +23,13 @@
       "chapter": 5,
       "title": "Marketing",
       "startPage": 37,
-      "endPage": 51
+      "endPage": 49
     },
     {
       "chapter": 6,
       "title": "Accounting \u2014 keeping record of business transactions",
-      "startPage": 52,
-      "endPage": 64
+      "startPage": 50,
+      "endPage": 61
     }
   ],
   "placeholderFigures": []

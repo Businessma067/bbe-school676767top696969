@@ -1,7 +1,7 @@
 export default {
   "num": 5,
   "title": "Marketing",
-  "intro": "A workshop can craft the finest desk lamp in the city and still fail if nobody needs light in that form, at that price, in that place. Marketing is the disciplined work of finding who those people are, shaping what is offered to them, and making the exchange happen. It is not only advertising. It is research, design choices, pricing logic, distribution routes, and messages that stay consistent with one another.\n\nThis chapter walks that path from product idea to marketing mix. You will learn how firms set marketing objectives, choose between product and market orientation, research customers, segment markets, and blend the four Ps — including life-cycle thinking and the Boston Consulting Group matrix. By the end, you should be able to explain why a strong product still needs a market, and how each marketing tool supports the others.",
+  "intro": "A workshop can craft the finest desk lamp in the city and still fail if nobody needs light in that form, at that price, in that place. Marketing is the disciplined work of finding who those people are, shaping what is offered to them, and making the exchange happen — not only advertising, but research, design choices, pricing logic, distribution routes, and messages that stay consistent with one another.\n\nThis chapter walks that path from product idea to marketing mix. You will learn how firms set marketing objectives, choose between product and market orientation, research customers, segment markets, and blend the four Ps, including life-cycle thinking and the Boston Consulting Group matrix. By the end, you should be able to explain why a strong product still needs a market, and how each marketing tool supports the others.",
   "objectives": [
     "Define a product in marketing terms and distinguish goods, services, product lines, product mix, branding, USP and differentiation.",
     "State typical marketing objectives and explain how they connect (satisfaction, loyalty, awareness, sales, market share, profitability).",
@@ -18,7 +18,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Same object, different product story. River & Reed Workshop sells modular oak desk lamps. A co-working landlord buys twenty lamps for shared desks and books a lighting consultation so staff know how to adjust glare. A student buys one lamp for a rented room and never needs the consultation. Physically the lamp looks identical. In marketing, the exchanges are not the same product situation: one sits in a business-to-business relationship with an attached service; the other is a business-to-consumer purchase of a good alone."
+          "text": "Same object, different product story. River & Reed Workshop sells modular oak desk lamps: a co-working landlord buys twenty for shared desks and books a lighting consultation so staff know how to adjust glare, while a student buys one lamp for a rented room and never needs the consultation. Physically the lamp looks identical, yet in marketing the exchanges are not the same product situation — one sits in a business-to-business relationship with an attached service, the other is a business-to-consumer purchase of a good alone."
         },
         {
           "type": "idea",
@@ -27,11 +27,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Customers may be other businesses or private households. Goods and services sold from one business to another are producer products (business-to-business, B2B). The same categories sold to consumers are consumer products (business-to-consumer, B2C). Buyer and user need not be the same person: a parent may pay while a teenager uses the product; a facilities manager may purchase while employees use the lamps daily."
-        },
-        {
-          "type": "p",
-          "text": "Where customer value comes from. Value is not only the core function (light on a desk). Extra features (dimmers, USB ports), image (craft reputation), and the joy or reassurance of use all shape why someone chooses one offering over another. Marketing designs and communicates that whole package, not only the physical object."
+          "text": "Customers may be other businesses or private households. Goods and services sold from one business to another are producer products (business-to-business, B2B); the same categories sold to consumers are consumer products (business-to-consumer, B2C). Buyer and user need not be the same person: a parent may pay while a teenager uses the product, or a facilities manager may purchase while employees use the lamps daily. Value is not only the core function — light on a desk — because extra features such as dimmers or USB ports, image such as craft reputation, and the joy or reassurance of use all shape why someone chooses one offering over another. Marketing designs and communicates that whole package, not only the physical object."
         },
         {
           "type": "idea",
@@ -44,14 +40,8 @@ export default {
           "text": "The full range of product lines a business offers. Width increases when new lines are added (lamps plus wall sconces). Depth increases when more variants sit inside one line (more finishes of the same lamp)."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Specialisation: compete with one line and know that line deeply.",
-            "Diversification: add lines (mix extension) to reach more needs or spread risk.",
-            "Line extension: add variants inside an existing line (new sizes or colours).",
-            "Relaunch: minor changes such as packaging or colour to refresh interest.",
-            "Contraction: drop weak products or whole lines when relaunch no longer pays."
-          ]
+          "type": "p",
+          "text": "Portfolio shape can move in several directions. A firm may specialise by competing with one line and knowing that line deeply, or diversify by adding lines (mix extension) to reach more needs or spread risk. Line extension adds variants inside an existing line — new sizes or colours — while a relaunch uses minor changes such as packaging or colour to refresh interest. Contraction drops weak products or whole lines when relaunch no longer pays."
         },
         {
           "type": "idea",
@@ -65,35 +55,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "How branding and USP reinforce each other. A brand is the identity vehicle; a USP is the reason to prefer that identity. Without a believable difference, branding becomes empty decoration. Without a recognisable brand, a genuine difference is harder to remember and harder to charge for. Product differentiation aims to make the offer “special”, “unique”, or “better for this customer” than close substitutes."
+          "text": "Branding and USP reinforce each other: a brand is the identity vehicle, and a USP is the reason to prefer that identity. Without a believable difference, branding becomes empty decoration; without a recognisable brand, a genuine difference is harder to remember and harder to charge for. Product differentiation aims to make the offer special, unique, or better for this customer than close substitutes."
         },
         {
           "type": "p",
-          "text": "Goods versus services in the same firm."
-        },
-        {
-          "type": "p",
-          "text": "Goods: Physical lamp units that can be stored and shipped; Ownership typically transfers to the buyer; Quality can be inspected before use."
-        },
-        {
-          "type": "p",
-          "text": "Services: Lighting consultation and installation advice; Produced and consumed largely together; Quality often judged during or after delivery."
-        },
-        {
-          "type": "p",
-          "text": "Classify River & Reed’s offers. Oak desk lamp sold to a household → consumer product (B2C good). Same lamp sold to a co-working firm → producer product (B2B good). On-site lighting consultation → service product (can be B2B or B2C). Three heights of the same oak lamp → one product line (depth). Adding a wall-sconce line → mix extension (greater mix width). USP claim: “tools-free brightness change in under ten seconds” → differentiation on a usable feature, not only on slogan tone. Marketing treats all exchangeable goods and services as products; lines and mix describe portfolio shape; brand and USP explain preference."
-        },
-        {
-          "type": "think",
-          "prompt": "Name one good and one service from a café you know. Who is the buyer and who is the user in a school catering contract for that café?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: treating “product” as only a physical object. In marketing exams, repair contracts, tutoring hours and software licences are products if they are exchanged to meet needs."
-        },
-        {
-          "type": "exam",
-          "text": "Exam cue: if a stem switches the same device from office use to home use, the classification flips from producer (B2B) to consumer (B2C) even though the item is unchanged. Also watch for USP versus mere advertising noise — USP requires a distinctive benefit or perception."
+          "text": "Goods and services often sit inside the same firm. Goods are physical units that can be stored and shipped, ownership typically transfers to the buyer, and quality can be inspected before use. Services such as lighting consultation and installation advice are produced and consumed largely together, and quality is often judged during or after delivery. Classify River & Reed’s offers accordingly: an oak desk lamp sold to a household is a consumer product (B2C good); the same lamp sold to a co-working firm is a producer product (B2B good); an on-site lighting consultation is a service product that can be B2B or B2C; three heights of the same oak lamp form one product line (depth); adding a wall-sconce line is mix extension (greater mix width); and a USP claim such as “tools-free brightness change in under ten seconds” differentiates on a usable feature, not only on slogan tone. Marketing treats all exchangeable goods and services as products; lines and mix describe portfolio shape; brand and USP explain preference. A common mistake is treating “product” as only a physical object — repair contracts, tutoring hours and software licences are products if they are exchanged to meet needs — and when a stem switches the same device from office use to home use, the classification flips from producer (B2B) to consumer (B2C) even though the item is unchanged. USP also requires a distinctive benefit or perception, not mere advertising noise."
         }
       ]
     },
@@ -112,31 +78,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "How the main objectives link. Dissatisfied customers rarely buy again, so satisfaction feeds loyalty and future sales. Awareness matters because unknown offers are not chosen. A USP reduces pure price comparison and supports preference. Market share shows relative competitive position. Sales generate the revenue needed to cover costs. Profitability reimburses owners and funds reinvestment — higher sales help, but only within cost and price limits."
+          "text": "The main objectives link more tightly than a checklist suggests. Dissatisfied customers rarely buy again, so satisfaction feeds loyalty and future sales; awareness matters because unknown offers are not chosen; a USP reduces pure price comparison and supports preference; market share shows relative competitive position; sales generate the revenue needed to cover costs; and profitability reimburses owners and funds reinvestment — higher sales help, but only within cost and price limits. Customer satisfaction asks whether the offer met or beat expectations, because unsatisfied buyers leave and satisfied buyers often return. Loyalty asks whether they will choose us again and recommend us, which lowers acquisition pressure. Awareness asks whether target customers know we exist and what we offer, since choice requires recognition in the relevant set. USP and differentiation ask why us rather than a close substitute, supporting preference beyond lowest price. Sales ask how many units or how much revenue, because cash must flow in to cover costs and grow. Market share asks what fraction of the defined market is ours, signalling relative competitive strength. Profitability asks whether revenues cover costs with a surplus, rewarding capital and funding reinvestment."
         },
         {
           "type": "p",
-          "text": "Common marketing objectives and what they emphasise. Objective: Customer satisfaction — Core question: Did the offer meet or beat expectations? — Why it matters: Unsatisfied buyers leave; satisfied buyers often return Objective: Customer loyalty — Core question: Will they choose us again and recommend us? — Why it matters: Repeat demand lowers acquisition pressure Objective: Awareness — Core question: Do target customers know we exist and what we offer? — Why it matters: Choice requires recognition in the relevant set Objective: USP / differentiation — Core question: Why us rather than a close substitute? — Why it matters: Supports preference beyond lowest price Objective: Sales — Core question: How many units / how much revenue? — Why it matters: Cash inflow to cover costs and grow Objective: Market share — Core question: What fraction of the defined market is ours? — Why it matters: Signals relative competitive strength Objective: Profitability — Core question: Do revenues cover costs with a surplus? — Why it matters: Rewards capital and funds reinvestment"
-        },
-        {
-          "type": "p",
-          "text": "Translate PeakMeal’s whiteboard into actions. Satisfaction: shorten delivery windows and fix cold-meal complaints within 24 hours. Awareness: partner with two hospital noticeboards and a night-shift podcast, not random city-wide billboards. USP: “balanced meals that survive a 12-hour shift without reheating” — a concrete difference. Sales and share: track units in the defined city meal-prep market, not all food retail. Profitability: avoid deep discounts that raise share but destroy contribution. Objectives only work when the market is defined and tools (product, price, place, promotion) are aligned with those aims."
-        },
-        {
-          "type": "think",
-          "prompt": "If PeakMeal doubles awareness but satisfaction collapses, which objectives are likely to rise short-term and which are likely to fall next quarter?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: treating market share as automatically identical to profit. Share can rise through unsustainable discounts. Trap: treating USP as a slogan with no product or perception difference behind it."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: lists of objectives often include satisfaction/loyalty, USP/differentiation, sales, market share and profitability. Awareness may appear as a communication goal feeding those outcomes. Interrelatedness is a frequent true/false theme — satisfaction supports loyalty and repeat sales."
-        },
-        {
-          "type": "p",
-          "text": "Market share objectives need clear market measurement (section 5.5). USP and branding connect back to product differentiation (section 5.1) and forward into the marketing mix (section 5.7)."
+          "text": "Translate PeakMeal’s whiteboard into actions. Satisfaction means shorten delivery windows and fix cold-meal complaints within 24 hours. Awareness means partner with two hospital noticeboards and a night-shift podcast, not random city-wide billboards. The USP — “balanced meals that survive a 12-hour shift without reheating” — is a concrete difference. Sales and share track units in the defined city meal-prep market, not all food retail. Profitability means avoiding deep discounts that raise share but destroy contribution. Objectives only work when the market is defined and tools (product, price, place, promotion) are aligned with those aims. If awareness doubles while satisfaction collapses, short-term sales and recognition may rise while loyalty, repeat sales and next-quarter profitability are likely to fall. Market share is not automatically identical to profit, because share can rise through unsustainable discounts; a USP is not a slogan with no product or perception difference behind it. Market share objectives need clear market measurement (section 5.5), while USP and branding connect back to product differentiation (section 5.1) and forward into the marketing mix (section 5.7)."
         }
       ]
     },
@@ -146,7 +92,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Two clockmakers, two starting points. Atlas Gears spends eighteen months perfecting a mechanical desk clock with a sapphire face, then asks a salesperson how to push it into shops. North Harbor Time first interviews ferry crews and harbour offices about what fails in salty air, then designs a sealed quartz clock with oversized numerals for glove use. Both want reliable sales and a fair margin. Their starting questions differ: “How do we sell what we built?” versus “What should we build because customers need it?”"
+          "text": "Two clockmakers, two starting points. Atlas Gears spends eighteen months perfecting a mechanical desk clock with a sapphire face, then asks a salesperson how to push it into shops. North Harbor Time first interviews ferry crews and harbour offices about what fails in salty air, then designs a sealed quartz clock with oversized numerals for glove use. Both want reliable sales and a fair margin, yet their starting questions differ: “How do we sell what we built?” versus “What should we build because customers need it?”"
         },
         {
           "type": "idea",
@@ -160,19 +106,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Orientation starting points."
-        },
-        {
-          "type": "p",
-          "text": "Product orientation: Focus on production and features first; Then arrange sales and advertising; Belief: a strong product largely sells itself."
-        },
-        {
-          "type": "p",
-          "text": "Market orientation: Focus on needs and wants first; Then produce what customers require; Advantage: earlier response to market change."
-        },
-        {
-          "type": "p",
-          "text": "Same objectives, different path. Both orientations may pursue identical marketing objectives (sales, share, satisfaction). The product-oriented firm leans on feature quality to win. The market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist — but neglecting customer expectations is risky in either case."
+          "text": "Product orientation focuses on production and features first, then arranges sales and advertising, under the belief that a strong product largely sells itself. Market orientation focuses on needs and wants first, then produces what customers require, with the advantage of earlier response to market change. Both orientations may pursue identical marketing objectives such as sales, share and satisfaction; the product-oriented firm leans on feature quality to win, while the market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist, but neglecting customer expectations is risky in either case. Identical objectives do not prove identical orientation, because the sequence — build-then-sell versus research-then-build — can still differ."
         },
         {
           "type": "idea",
@@ -181,32 +115,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Loyalty cards and personal accounts often mean customers willingly trade anonymity for discounts and tailored offers. Firms then observe buying behaviour and personalise communication. That power helps market-oriented selling, but it also raises responsibility for privacy and consent."
-        },
-        {
-          "type": "p",
-          "text": "Reorient Atlas Gears without abandoning craft. Interview harbour and outdoor workers about fog, gloves and vibration. Keep the mechanical line for collectors (product-strength niche). Launch a sealed, high-contrast model for working docks (market-led line). Use optional CRM emails only with clear opt-in for service reminders. Orientation is a starting logic, not a ban on engineering excellence. Market orientation still needs real product competence."
-        },
-        {
-          "type": "think",
-          "prompt": "Would a pharmaceutical firm developing a new active ingredient start closer to product orientation or market orientation at the research stage? What must it still not neglect before launch?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: claiming that identical marketing objectives prove identical orientation. Objectives can match while the sequence (build-then-sell versus research-then-build) differs. Trap: treating CRM as “free data” with no sensitivity duties."
-        },
-        {
-          "type": "exam",
-          "text": "Exam cue: product orientation = features first; market orientation = needs first. CRM questions often test why personal data use matters and that loyalty schemes collect behaviour for later contact."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "Orientation is about starting point and emphasis.",
-            "Market orientation helps anticipate change earlier.",
-            "Neither approach should ignore the market entirely.",
-            "CRM extends relationships but demands careful data use."
-          ]
+          "text": "Loyalty cards and personal accounts often mean customers willingly trade anonymity for discounts and tailored offers. Firms then observe buying behaviour and personalise communication. That power helps market-oriented selling, but it also raises responsibility for privacy and consent; CRM is not “free data” with no sensitivity duties. Atlas Gears can reorient without abandoning craft by interviewing harbour and outdoor workers about fog, gloves and vibration, keeping the mechanical line for collectors as a product-strength niche, launching a sealed, high-contrast model for working docks as a market-led line, and using optional CRM emails only with clear opt-in for service reminders. Orientation is a starting logic, not a ban on engineering excellence: market orientation still needs real product competence, and neither approach should ignore the market entirely. Even a pharmaceutical firm developing a new active ingredient may start closer to product orientation at the research stage, yet it must still not neglect customer needs, safety expectations and market fit before launch."
         }
       ]
     },
@@ -225,39 +134,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "How marketing can inflate want. Continuous novelty and persuasive promotion can create desires people would not otherwise have had, encourage spending beyond intention or means, and speed up obsolescence of still-usable goods. Critics focus on these effects; defenders emphasise information and matching real needs. Either way, both businesses and consumers influence how sustainable the outcome is."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Firms: design for durability, repairability and honest claims; avoid deceptive urgency.",
-            "Consumers: question whether a purchase will be used; prefer reuse, repair and rental where sensible.",
-            "Shared aim: reduce wasteful churn without denying genuine needs."
-          ]
+          "text": "Marketing can inflate want. Continuous novelty and persuasive promotion can create desires people would not otherwise have had, encourage spending beyond intention or means, and speed up obsolescence of still-usable goods. Critics focus on these effects; defenders emphasise information and matching real needs. Either way, both businesses and consumers influence how sustainable the outcome is, so blaming only firms or only consumers misses the shared role. Firms can design for durability, repairability and honest claims, and avoid deceptive urgency; consumers can question whether a purchase will be used and prefer reuse, repair and rental where sensible. The shared aim is to reduce wasteful churn without denying genuine needs. Repair-and-reuse models keep devices and clothes in use longer; clothing rental for rare events can replace one-off cheap purchases; swap and second-hand circuits also shift status away from constant newness. Marketing can promote these patterns instead of only “upgrade now.” A green colour in an advert is not sustainable marketing if product and process substance are missing."
         },
         {
           "type": "p",
-          "text": "Repair-and-reuse models keep devices and clothes in use longer. Clothing rental for rare events can replace one-off cheap purchases. Swap and second-hand circuits also shift status away from constant newness. Marketing can promote these patterns instead of only “upgrade now”."
-        },
-        {
-          "type": "p",
-          "text": "Rewrite Mend & Wear’s campaign season. Replace “new drop every Friday” with “repair week” and free zipper clinics. Advertise rental for one-off events instead of disposable formalwear. Publish battery-health or fabric-care facts rather than vague “eco” labels. Train staff to suggest mend-first when a product still has life. Responsibility shows up in product design, claims, pricing of repair versus replacement, and promotion tone — not in a slogan alone."
-        },
-        {
-          "type": "think",
-          "prompt": "Is a “buy one, get one free” deal for single-use plastic cutlery compatible with a sustainability claim? What would need to change for the claim to be credible?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: equating any green colour in an advert with sustainable marketing. Without product and process substance, the communication is empty. Trap: blaming only firms or only consumers — both sides shape outcomes."
-        },
-        {
-          "type": "exam",
-          "text": "Exam themes: marketing may create wants; overconsumption risks; repair, reuse and rental as more sustainable patterns; shared responsibility of businesses and consumers."
-        },
-        {
-          "type": "p",
-          "text": "Sustainability choices feed the product P (durable design), promotion ethics, and sometimes pricing of repair services. They also interact with market orientation: listening to customers who already demand lower waste."
+          "text": "Mend & Wear can rewrite a campaign season by replacing “new drop every Friday” with “repair week” and free zipper clinics, advertising rental for one-off events instead of disposable formalwear, publishing battery-health or fabric-care facts rather than vague “eco” labels, and training staff to suggest mend-first when a product still has life. Responsibility shows up in product design, claims, pricing of repair versus replacement, and promotion tone — not in a slogan alone. A “buy one, get one free” deal for single-use plastic cutlery sits poorly beside a sustainability claim unless the offer itself changes toward durable, reusable or genuinely lower-waste alternatives. Sustainability choices feed the product P through durable design, promotion ethics, and sometimes pricing of repair services; they also interact with market orientation when firms listen to customers who already demand lower waste."
         }
       ]
     },
@@ -267,7 +148,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will. Another insists on evidence: street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with structured information about customers, rivals and the industry."
+          "text": "Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will; another insists on evidence through street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with structured information about customers, rivals and the industry."
         },
         {
           "type": "idea",
@@ -286,27 +167,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "Qualitative versus quantitative research."
+          "text": "Qualitative research explores motives, language and experiences in depth through interviews, focus groups and open observation notes; samples are smaller, meaning is rich, and statistical generalisation is limited. Quantitative research measures amounts, frequencies and relationships with numbers through structured questionnaires, counts and experiments with metrics; larger samples support stronger estimates of shares and averages. The two pairs work together: primary versus secondary answers who collected the data and for what, while qualitative versus quantitative answers what kind of insight. A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary). Primary research is tailored to the firm’s exact questions — useful for new product concept tests and satisfaction drivers — but costs time, money and design skill. Secondary research is faster and often cheaper or free — useful for market sizing and industry growth context — yet it may be generic, outdated or mismatched. A questionnaire the firm designs itself is primary, not secondary, research."
         },
         {
           "type": "p",
-          "text": "Qualitative: Explores motives, language and experiences in depth; Methods: interviews, focus groups, open observation notes; Smaller samples; rich meaning, limited statistical generalisation."
-        },
-        {
-          "type": "p",
-          "text": "Quantitative: Measures amounts, frequencies and relationships with numbers; Methods: structured questionnaires, counts, experiments with metrics; Larger samples; stronger for estimating shares and averages."
-        },
-        {
-          "type": "p",
-          "text": "How the two pairs work together. Primary versus secondary answers “who collected it and for what?” Qualitative versus quantitative answers “what kind of insight?” A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary)."
-        },
-        {
-          "type": "p",
-          "text": "Primary and secondary research at a glance. Source type: Primary — Strength: Tailored to the firm’s exact questions — Limitation: Cost, time, design skill needed — Typical use: New product concept tests; satisfaction drivers Source type: Secondary — Strength: Faster and often cheaper or free — Limitation: Generic; may be outdated or mismatched — Typical use: Market sizing; industry growth context"
-        },
-        {
-          "type": "p",
-          "text": "Customer analysis often asks who buys, what they do with the product, where they buy, when they buy, and why they choose one option over another. Buyer and user may differ; influencers (for example children) may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year."
+          "text": "Customer analysis often asks who buys, what they do with the product, where they buy, when they buy, and why they choose one option over another. Buyer and user may differ; influencers such as children may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year. A free government mobility report can be useful for sizing and context yet still insufficient before launching the €45 battery-swap plan, because it will not answer willingness to pay or the firm’s exact concept questions."
         },
         {
           "type": "idea",
@@ -332,23 +197,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Market potential can exceed current market volume if unrealised customers remain. A firm’s sales potential can exceed current sales if it can win rivals’ customers or claim part of that unrealised potential. Absolute share informs managers and investors; relative share adds competitive context the absolute figure alone hides."
-        },
-        {
-          "type": "p",
-          "text": "Share maths for GlassHarbor’s battery-swap plan. Defined market: city e-bike accessory subscriptions this year = €800,000. GlassHarbor subscription sales = €96,000. Absolute share = 96,000 / 800,000 = 0.12 = 12%. Largest rival holds 30% absolute share. Relative share = 12% / 30% = 0.4. If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide. GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit."
-        },
-        {
-          "type": "think",
-          "prompt": "Why might a free government mobility report be useful yet still insufficient before launching the €45 battery-swap plan?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: mixing value share with unit share without saying so. Trap: calling any questionnaire “secondary” research. Trap: reporting absolute share without defining the market boundaries."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: primary = own new data; secondary = existing data. Qualitative = depth/motives; quantitative = measurable magnitudes. Be ready to compute absolute and relative market share and to interpret market volume versus potential."
+          "text": "Market potential can exceed current market volume if unrealised customers remain. A firm’s sales potential can exceed current sales if it can win rivals’ customers or claim part of that unrealised potential. Absolute share informs managers and investors; relative share adds competitive context the absolute figure alone hides. For GlassHarbor’s battery-swap plan, define the market as city e-bike accessory subscriptions this year at €800,000, with GlassHarbor subscription sales of €96,000. Absolute share = 96,000 / 800,000 = 0.12 = 12%. If the largest rival holds 30% absolute share, relative share = 12% / 30% = 0.4. If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide. GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit. Do not mix value share with unit share without saying so, and do not report absolute share without defining the market boundaries."
         }
       ]
     },
@@ -377,7 +226,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "When a segment is worth forming. Segmentation is useful when groups are measurable (size, purchasing power), profitable, accessible through communication and distribution channels, and durable enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources."
+          "text": "Segmentation is useful when groups are measurable in size and purchasing power, profitable, accessible through communication and distribution channels, and durable enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources — a small customer group is not a valid segment if it cannot be measured, reached or served profitably."
         },
         {
           "type": "table",
@@ -417,52 +266,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting."
+          "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting. Undifferentiated or mass marketing uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. Differentiated or segment marketing designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. Concentrated or niche marketing deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume."
         },
         {
           "type": "p",
-          "text": "Three targeting strategies."
-        },
-        {
-          "type": "p",
-          "text": "Undifferentiated (mass): One offer for the whole market; Same promotion style for almost all; Economies of scale possible; less flexible; Common for widely used staples (soap, basic pens)."
-        },
-        {
-          "type": "p",
-          "text": "Differentiated vs concentrated: Differentiated (segment): different offers for several segments; Resources focus where strategic fit is strongest; Concentrated (niche): deep focus on a narrow subgroup; Small firms often niche; specialists can lead despite size."
-        },
-        {
-          "type": "p",
-          "text": "Mass, segment and niche marketing compared. Strategy: Mass marketing — Also called: Undifferentiated targeting — Offer pattern: Same product to all customers — Typical trade-off: Scale efficiency vs weak fit to special needs Strategy: Segment marketing — Also called: Differentiated targeting — Offer pattern: Different products for one or more segments — Typical trade-off: Better fit vs higher complexity/cost Strategy: Niche marketing — Also called: Concentrated targeting — Offer pattern: Focus on particular subgroups within segments — Typical trade-off: Depth and expertise vs limited volume"
-        },
-        {
-          "type": "p",
-          "text": "GlassHarbor chooses a niche inside a segment. Geographic: one coastal city and inner suburbs. Demographic: employed adults including shift workers. Psychographic: prefer lower waste and dislike unused ownership. Behavioural: regular commuters, not weekend hobby riders. Segment chosen: shift-working commuters with limited storage at home. Niche inside it: night-shift staff needing lit routes and battery-swap certainty. Positioning phrase: “get to the ward on time — battery panic optional.”. Concentrated targeting lets a small firm win relevance without matching mass producers on volume."
-        },
-        {
-          "type": "think",
-          "prompt": "Why can mass marketing of laundry detergent still make sense while mass marketing of specialised medical bikes usually does not?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: calling any small customer group a valid segment even when it cannot be measured, reached or served profitably. Trap: confusing niche marketing with “randomly ignoring research”. Niche is deliberate focus, not guesswork."
-        },
-        {
-          "type": "exam",
-          "text": "Exam cue: match bases (geo/demo/psycho/behavioural) to examples. Mass = ignore segment differences; segment = tailor to known segments; niche = deeper focus on subgroups. Economies of scale favour mass; small-firm constraints often favour niche."
-        },
-        {
-          "type": "p",
-          "text": "Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "Segmentation groups similar customers; targeting selects; positioning frames meaning.",
-            "Useful segments are measurable, profitable, accessible and durable.",
-            "Undifferentiated, differentiated and concentrated strategies trade scale against fit.",
-            "Niche specialists can lead a narrow market without being large overall."
-          ]
+          "text": "GlassHarbor chooses a niche inside a segment. Geographic focus is one coastal city and inner suburbs; demographic focus includes employed adults and shift workers; psychographic preference leans toward lower waste and dislike of unused ownership; behavioural focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Concentrated targeting lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
         }
       ]
     },
@@ -472,7 +280,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe. If promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The marketing mix is the craft of setting product, price, place and promotion so they play in tune for the target market."
+          "text": "Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe; if promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The marketing mix is the craft of setting product, price, place and promotion so they play in tune for the target market."
         },
         {
           "type": "idea",
@@ -486,7 +294,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "The basic idea is simple to state and hard to execute: provide a suitable product, at a price customers will accept, available in a convenient place, supported by a clear promotional message. Market research should inform all four dials."
+          "text": "The basic idea is simple to state and hard to execute: provide a suitable product, at a price customers will accept, available in a convenient place, supported by a clear promotional message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix."
         },
         {
           "type": "idea",
@@ -495,7 +303,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Most firms offer more than one item. Similar items form a product line; several lines form the product mix. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise (one line) or diversify (more lines). Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated."
+          "text": "Most firms offer more than one item. Similar items form a product line; several lines form the product mix. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise on one line or diversify across more lines. Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated."
         },
         {
           "type": "idea",
@@ -509,7 +317,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "What typically happens in each stage. Before launch there are development costs and no sales. Introduction often starts in loss: promotion is heavy and prices may be set to attract trial. Growth brings faster sales; average costs may fall with scale; profits usually appear and strengthen. Maturity peaks sales; growth slows; competition intensifies. Decline sees falling sales and profits; exit or efficiency becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months."
+          "text": "Before launch there are development costs and no sales. Introduction often starts in loss because promotion is heavy and prices may be set to attract trial among innovators and early adopters, with emphasis on market development. Growth brings faster sales into a widening mass market; average costs may fall with scale; profits usually appear and strengthen under a market-penetration emphasis. Maturity peaks sales in the mass market while growth slows and competition intensifies, so strategy becomes more defensive and profit peaks then comes under pressure. Decline sees falling sales and profits among loyal remainers, so efficiency or exit becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months."
         },
         {
           "type": "table",
@@ -564,15 +372,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "BCG categories. Category: Stars — Market growth: High — Relative market share: High — Management implication: Valuable; still need investment in promotion and capacity Category: Cash cows — Market growth: Low — Relative market share: High — Management implication: Generate cash with lower investment needs Category: Question marks — Market growth: High — Relative market share: Low — Management implication: Need decisions: invest to build share or withdraw Category: Dogs (poor dogs) — Market growth: Low — Relative market share: Low — Management implication: Limited future; candidates for harvest or exit"
-        },
-        {
-          "type": "p",
-          "text": "Balancing the portfolio. A healthy portfolio blends stars, cash cows and selected question marks, without too many dogs. Cash-cow revenues can fund stars (future cows) and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark; growth success can create a star; mature leaders become cash cows; decline risks dog status."
-        },
-        {
-          "type": "p",
-          "text": "Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
+          "text": "Stars sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. Cash cows sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. Question marks sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. Dogs, sometimes called poor dogs, sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
         },
         {
           "type": "idea",
@@ -580,16 +380,8 @@ export default {
           "text": "The amount customers pay. Hard to reset casually once a strategy is established. Influenced by costs, competitors’ prices and demand (willingness to pay). Lowest price is not automatically best."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Cost-based pricing: ensure costs are covered and a profit margin is possible.",
-            "Competition: hard to charge more without superiority or clear difference.",
-            "Demand: high willingness to pay supports higher prices."
-          ]
-        },
-        {
           "type": "p",
-          "text": "In the long run, total costs (fixed plus variable) must be covered. Variable costs rise with output; fixed costs (rent, insurance) do not vary directly with output in the short run. Break-even is where revenues equal total costs. Contribution per unit is selling price minus variable cost per unit; it helps cover fixed costs and then profit."
+          "text": "Cost-based pricing seeks to cover costs and allow a profit margin; competition makes it hard to charge more without superiority or clear difference; demand through high willingness to pay supports higher prices. In the long run, total costs — fixed plus variable — must be covered. Variable costs rise with output; fixed costs such as rent and insurance do not vary directly with output in the short run. Break-even is where revenues equal total costs. Contribution per unit is selling price minus variable cost per unit; it helps cover fixed costs and then profit."
         },
         {
           "type": "formula",
@@ -599,11 +391,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Variable-cost-plus (distribution) pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is variable cost: any price above it still contributes to fixed costs. Before changing prices, consider price elasticity of demand: elastic if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust."
-        },
-        {
-          "type": "p",
-          "text": "Break-even for a sealed dock clock. Variable cost per clock = €54; planned selling price = €90. Contribution = 90 − 54 = €36. Fixed costs for the line this period = €72,000. Break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each → €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone."
+          "text": "Variable-cost-plus, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is variable cost: any price above it still contributes to fixed costs. Before changing prices, consider price elasticity of demand: elastic if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone."
         },
         {
           "type": "idea",
@@ -611,17 +399,8 @@ export default {
           "text": "How and where the product is made available. A strong product fails if customers cannot find it where they expect it."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Distributors, wholesalers (sell on to businesses) and retailers (sell on to consumers)",
-            "Agents or brokers (especially in B2B)",
-            "Online selling, telemarketing",
-            "Vending machines, kiosks and similar formats"
-          ]
-        },
-        {
           "type": "p",
-          "text": "Channel partners bridge factory and final buyer: logistics, local information and advertising support. Beverage makers, for example, rarely sell every bottle direct to households nationwide; they need partners for reach."
+          "text": "Place can run through distributors, wholesalers who sell on to businesses, and retailers who sell on to consumers; through agents or brokers, especially in B2B; through online selling and telemarketing; and through formats such as vending machines and kiosks. Channel partners bridge factory and final buyer with logistics, local information and advertising support. Beverage makers, for example, rarely sell every bottle direct to households nationwide; they need partners for reach."
         },
         {
           "type": "idea",
@@ -629,49 +408,12 @@ export default {
           "text": "Activities that inform potential customers and the public about the business, its products and their benefits."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Advertising: TV, radio, online, social media, print, outdoor, transit",
-            "Direct mailing",
-            "Personal selling through salespeople",
-            "Sales promotions",
-            "Sponsorship of events, people or organisations",
-            "Public relations for a favourable image and stakeholder relationships"
-          ]
+          "type": "p",
+          "text": "Promotion tools include advertising on television, radio, online, social media, print, outdoor and transit; direct mailing; personal selling through salespeople; sales promotions; sponsorship of events, people or organisations; and public relations for a favourable image and stakeholder relationships. Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place."
         },
         {
           "type": "p",
-          "text": "Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place."
-        },
-        {
-          "type": "p",
-          "text": "Harmonised mix sketch for North Harbor’s dock clock. P: Product — Choice: Sealed quartz, oversized numerals, glove-friendly crown — Consistency check: Matches harbour-worker needs from research P: Price — Choice: Mid-premium above toy clocks; below luxury mechanicals — Consistency check: Signals durability without claiming jewellery status P: Place — Choice: Marine suppliers, selected hardware stores, direct web shop — Consistency check: Found where dock staff already buy kit P: Promotion — Choice: Demo videos with gloves on; harbour newsletter; trade stall — Consistency check: Shows the USP in use, not abstract luxury imagery"
-        },
-        {
-          "type": "think",
-          "prompt": "If North Harbor cuts price by 40% to chase volume while keeping “premium sealed instrument” ads, which mix conflict will customers notice first?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: memorising four Ps as a shopping list without harmonisation. Trap: placing a high-share product in a low-growth market as a star — that cell is a cash cow. Trap: treating break-even as guaranteeing cash in the bank regardless of credit and stock timing."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: four Ps definitions; life-cycle stage clues (loss at introduction, rapid sales in growth, peak then pressure in maturity, fall in decline); BCG axes are market growth and relative share; contribution = price − variable cost; elastic vs inelastic price response; place and promotion tool lists."
-        },
-        {
-          "type": "p",
-          "text": "The mix implements objectives (5.2) for chosen targets (5.6) using research (5.5). Orientation (5.3) shapes whether the product P starts from features or from stated needs. Responsibility (5.4) constrains claims and design inside the same mix."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "The mix is a blend: product, price, place, promotion must fit together.",
-            "Life-cycle stages differ in sales, profit and sensible strategy.",
-            "BCG maps growth against relative share to guide portfolio cash flows.",
-            "Pricing rests on costs, competition and demand — with contribution and elasticity as decision tools.",
-            "Place and promotion are not optional extras; they complete availability and meaning."
-          ]
+          "text": "A harmonised mix sketch for North Harbor’s dock clock keeps the dials aligned. Product is sealed quartz with oversized numerals and a glove-friendly crown, matching harbour-worker needs from research. Price is mid-premium — above toy clocks and below luxury mechanicals — signalling durability without claiming jewellery status. Place is marine suppliers, selected hardware stores and a direct web shop, where dock staff already buy kit. Promotion uses demo videos with gloves on, a harbour newsletter and a trade stall, showing the USP in use rather than abstract luxury imagery. If North Harbor cuts price by 40% to chase volume while keeping “premium sealed instrument” ads, customers will notice the price–position conflict first. The mix implements objectives (5.2) for chosen targets (5.6) using research (5.5). Orientation (5.3) shapes whether the product P starts from features or from stated needs. Responsibility (5.4) constrains claims and design inside the same mix."
         }
       ]
     }

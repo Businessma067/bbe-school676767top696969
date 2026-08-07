@@ -1367,15 +1367,15 @@ def blocks_to_flowables(blocks, width):
 
         elif t == "trap":
             text = (b.get("text") or "").strip()
-            # Strip loud "Trap:" prefix if present
             clean = re.sub(r"^(common\s+mistake|trap)\s*[:.—-]\s*", "", text, flags=re.I)
-            out.append(_prose(f"A common mistake: {clean}"))
+            # Keep as ordinary prose — no forced "A common mistake:" label
+            out.append(_prose(clean))
             plain_parts.append(clean)
 
         elif t == "exam":
             text = (b.get("text") or "").strip()
             clean = re.sub(r"^(exam(\s+recognition)?|in the exam)\s*[:.—-]\s*", "", text, flags=re.I)
-            out.append(_prose(f"In the exam: {clean}"))
+            out.append(_prose(clean))
             plain_parts.append(clean)
 
         elif t == "connect":

@@ -1,14 +1,14 @@
 export default {
   "num": 2,
   "title": "Basic economic concepts",
-  "intro": "Every purchase, every job offer, and every business idea sits inside the same system: people exchanging scarce resources. This chapter is your map of that system. You will move from everyday exchange, through scarcity and opportunity cost, into how economies organise decisions, how markets clear, and why competition matters. Treat each section as a station on one path — Scene to Idea to Mechanism — until the exam language starts to feel familiar.",
+  "intro": "Every purchase, every job offer, and every business idea sits inside the same system of people exchanging scarce resources, and this chapter is a map of that system. You will move from everyday exchange through scarcity and opportunity cost into how economies organise decisions, how markets clear, and why competition matters, until the exam language starts to feel familiar rather than foreign.",
   "objectives": [
     "Explain how households and businesses participate in exchange, and define what counts as a business.",
-    "Apply scarcity and opportunity cost to household, firm, and government choices — without confusing scarcity with poverty.",
+    "Apply scarcity and opportunity cost to household, firm, and government choices without confusing scarcity with poverty.",
     "Distinguish microeconomics from macroeconomics as two lenses on the same scarcity problem.",
     "Trace the circular flow among households, businesses, and government, and explain how specialisation and division of labour raise productivity.",
     "Compare market, planned, and mixed systems by who decides what, how, and for whom.",
-    "Use supply, demand, ceteris paribus, equilibrium, surplus/shortage, and competition to reason about market outcomes."
+    "Use supply, demand, ceteris paribus, equilibrium, surplus and shortage, and competition to reason about market outcomes."
   ],
   "sections": [
     {
@@ -17,7 +17,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Saturday at the campus gate. Mira sells repaired second-hand bikes from a fold-out stand near the tram stop. Students pay cash or card for a tuned bike; Mira pays a workshop for spare parts and rents storage for the winter. Across the street, a household buys tram tickets, groceries, and streaming. Nobody here is \"studying economics\" in the moment — yet every exchange is the economy at work."
+          "text": "Saturday at the campus gate, Mira sells repaired second-hand bikes from a fold-out stand near the tram stop, taking cash or card for a tuned bike while paying a workshop for spare parts and renting storage for the winter. Across the street a household buys tram tickets, groceries, and streaming, and although nobody here is studying economics in the moment, every exchange is the economy at work."
         },
         {
           "type": "idea",
@@ -27,39 +27,27 @@ export default {
         {
           "type": "idea",
           "term": "Exchange",
-          "text": "Exchange is the handing over of goods, services, money, or other means of payment so that needs and wants can be met. Money makes exchange easier, but barter (bike-repair lessons for homemade bread) still counts as exchange."
+          "text": "Exchange is the handing over of goods, services, money, or other means of payment so that needs and wants can be met. Money makes exchange easier, but barter — bike-repair lessons for homemade bread — still counts as exchange."
         },
         {
           "type": "p",
-          "text": "Three everyday roles. Households supply labour and buy goods and services. Businesses supply goods and services and buy inputs (labour, materials, equipment). People can hold both roles at once: Mira is a household member when she buys food, and an entrepreneur when she sells bikes. Businesses also have needs — a bike shop needs tyres, tools, and skilled repair hours."
+          "text": "Households supply labour and buy goods and services, while businesses supply goods and services and buy inputs such as labour, materials, and equipment, and people can hold both roles at once: Mira is a household member when she buys food and an entrepreneur when she sells bikes. Businesses also have needs of their own — a bike shop needs tyres, tools, and skilled repair hours — so the line between \"who buys\" and \"who sells\" is less a wall than a revolving door."
         },
         {
           "type": "p",
-          "text": "Needs are the basics people require for living and functioning (food, shelter, transport, care). Wants stretch beyond that into preferred extras (a designer helmet, a café brunch). Economics studies both, because scarce budgets force ranking across both categories."
+          "text": "Needs are the basics people require for living and functioning, such as food, shelter, transport, and care, whereas wants stretch beyond that into preferred extras like a designer helmet or a café brunch. Economics studies both, because scarce budgets force people to rank across both categories rather than treat wants as somehow outside the subject."
         },
         {
           "type": "p",
-          "text": "Is this a business?. Case A: A student occasionally fixes friends' bikes for free. No customers, no price — helpful, but not operating as a business for customers. Case B: The same student advertises on campus, charges 25 euros per tune-up, and buys parts to resell as part of the service. Goods/services are offered to customers for payment. Case C: Two neighbours swap tomatoes for jam. That is exchange, but neither party is running a business unless they systematically offer produce to customers. Only Case B clearly matches the business definition used in this course."
+          "text": "Whether something counts as a business depends on offering goods or services to customers for payment, not on how informal the stand looks. A student who occasionally fixes friends' bikes for free is being helpful without operating as a business; the same student who advertises on campus, charges 25 euros per tune-up, and buys parts to resell as part of the service clearly matches the definition used in this course; and two neighbours who swap tomatoes for jam are exchanging without either party running a business unless they systematically offer produce to customers."
         },
         {
-          "type": "think",
-          "prompt": "Name one good and one service you bought this week. For each, who was the household side and who was the business side of the exchange?"
+          "type": "p",
+          "text": "It helps to notice one good and one service you bought this week and, for each, who stood on the household side and who stood on the business side of the exchange, because that habit makes the definitions concrete. A common mistake is to assume that if you do not run a company you are somehow outside the economy, yet buying, working, saving, and even choosing not to spend are economic decisions, and there is no real opting out. Statements that restrict exchange to money alone, or that claim only entrepreneurs participate, are usually false; absolute words such as never, only, and always deserve suspicion, because barter and ordinary household purchases still count."
         },
         {
-          "type": "trap",
-          "text": "Trap: \"If I do not run a company, I am outside the economy.\" False. Buying, working, saving, and even choosing not to spend are economic decisions. There is no opting out."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: statements that restrict exchange to money only, or that claim only entrepreneurs participate, are usually false. Watch absolute words (never, only, always). Barter and household purchases still count."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Resources are not available in unlimited abundance.",
-            "Scarcity forces economising — managing limited means among competing uses.",
-            "Households, businesses, and governments all face that pressure."
-          ]
+          "type": "p",
+          "text": "Behind these everyday scenes sits a pressure that never quite goes away: resources are not available in unlimited abundance, so households, businesses, and governments all have to economise — managing limited means among competing uses — which is the bridge into scarcity and opportunity cost."
         }
       ]
     },
@@ -69,7 +57,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "One Saturday, two offers. Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio. She cannot do both. The clock is the scarce resource; the choice is the economics."
+          "text": "One Saturday, Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio, and she cannot do both. The clock is the scarce resource, and the choice is the economics."
         },
         {
           "type": "idea",
@@ -83,7 +71,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Why scarcity creates cost even without a receipt. When you pick option A, option B's benefit disappears. That lost benefit is the opportunity cost. A founder who \"pays herself zero\" still forgoes the salary she could have earned elsewhere. A city that resurfaces a road forgoes the rail link it could have funded with the same budget."
+          "text": "Scarcity creates cost even when no receipt is printed, because when you pick option A the benefit of option B disappears, and that lost benefit is the opportunity cost. A founder who \"pays herself zero\" still forgoes the salary she could have earned elsewhere, and a city that resurfaces a road forgoes the rail link it could have funded with the same budget, so the cost lives in the path not taken rather than only in the cash that changed hands."
         },
         {
           "type": "formula",
@@ -93,39 +81,15 @@ export default {
         },
         {
           "type": "p",
-          "text": "Scarcity versus poverty."
+          "text": "It is easy to confuse scarcity with poverty, yet they are not the same idea. Scarcity is the universal condition of limited means facing competing uses, and it applies to wealthy households and rich countries too, forcing trade-offs even when income is high. Poverty is a severe lack of means relative to basic needs — a social and material condition rather than the definition of scarcity — so poverty implies scarcity, but scarcity does not imply poverty."
         },
         {
           "type": "p",
-          "text": "Scarcity: Universal condition: limited means vs competing uses; Applies to wealthy households and rich countries too; Forces trade-offs even when income is high."
+          "text": "Opportunity cost always tracks the next-best path, not a shopping-list total. If Sara has 700 euros for one purchase and values a used laptop highly for study while ranking a washing machine as the next-best alternative for saving laundrette fees, and she buys the laptop, her opportunity cost is the benefit of the washing machine forgone — not laptop price plus washer price, and not every other item she once considered. The same logic catches the self-employment salary trap: Omar can earn 32,000 euros a year as an employed bike mechanic, yet when he starts a repair stall and draws no formal wage in year one the accounting wage may show zero while the opportunity cost of his time is at least the 32,000-euro employment package he refused, because a zero cash wage is not a zero opportunity cost."
         },
         {
           "type": "p",
-          "text": "Poverty: Severe lack of means relative to basic needs; A social and material condition, not the definition of scarcity; Poverty implies scarcity; scarcity does not imply poverty."
-        },
-        {
-          "type": "p",
-          "text": "Next-best, not all-rejected. Sara has 700 euros for one purchase: a used laptop (benefit she values highly for study) or a washing machine (next-best, valued for saving laundrette fees). She buys the laptop. Opportunity cost = benefit of the washing machine forgone — not laptop price + washer price, and not every other item she once considered. Opportunity cost tracks the next-best path, not a shopping-list total."
-        },
-        {
-          "type": "p",
-          "text": "Self-employment salary trap. Omar can earn 32,000 euros a year as an employed bike mechanic. He starts a repair stall and draws no formal wage in year one. The accounting wage may show 0, but the opportunity cost of his time is (at least) the 32,000 euros employment package he refused. Zero cash wage ≠ zero opportunity cost."
-        },
-        {
-          "type": "think",
-          "prompt": "If Leila chooses the photography gig, what is her opportunity cost — the 48-euro café pay, the fun of both, or the sum of every weekend plan she skipped?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap 1: Adding up all rejected options. Trap 2: Saying \"free\" activities have no opportunity cost. Trap 3: Equating scarcity with poverty so that high-income actors \"do not face scarcity.\""
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: true statements usually name the forgone next-best benefit. False statements often claim zero cost because no money moved, or treat opportunity cost as the price of the item bought, or as the sum of all alternatives."
-        },
-        {
-          "type": "p",
-          "text": "Scarcity → forced choice → opportunity cost. Later sections show the same logic inside markets (what suppliers forgo when prices are low) and inside government budgets (one project crowds out another)."
+          "text": "If Leila chooses the photography gig, her opportunity cost is the benefit of the café shift she gave up — the 48-euro pay in that story — not the fun of both options at once and not the sum of every weekend plan she skipped. Three mistakes keep returning: adding up all rejected options, saying \"free\" activities have no opportunity cost, and equating scarcity with poverty so that high-income actors supposedly do not face scarcity. True statements usually name the forgone next-best benefit, while false ones often claim zero cost because no money moved, treat opportunity cost as the price of the item bought, or inflate it into the sum of all alternatives. Scarcity forces choice, and choice creates opportunity cost; later sections show the same logic inside markets, where suppliers forgo better uses of their time when prices are low, and inside government budgets, where one project crowds out another."
         }
       ]
     },
@@ -135,7 +99,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Two headlines, two lenses. Headline A: \"Local bakery raises pastry prices after butter costs jump.\" Headline B: \"National unemployment falls while inflation edges up.\" Same economy, different zoom levels. Economics is the toolkit that explains both kinds of story."
+          "text": "Two headlines can sit in the same morning paper and still ask for different lenses: a local bakery raises pastry prices after butter costs jump, while national unemployment falls and inflation edges up. It is the same economy viewed at different zoom levels, and economics is the toolkit that explains both kinds of story."
         },
         {
           "type": "idea",
@@ -144,39 +108,15 @@ export default {
         },
         {
           "type": "p",
-          "text": "Two branches, one scarcity problem. Microeconomics zooms to units: one household, one firm, one market interaction (for example, how demand for e-bikes changes if buyers receive a purchase bonus). Macroeconomics zooms to aggregates: growth, unemployment, interest rates, the overall price level and inflation for a country or similar whole."
+          "text": "Both branches study the same scarcity problem from different distances. Microeconomics zooms to units — one household, one firm, one market interaction, such as how demand for e-bikes changes if buyers receive a purchase bonus — while macroeconomics zooms to aggregates such as growth, unemployment, interest rates, and the overall price level and inflation for a country or similar whole. When you ask whether more cafés will open on a street if rents fall, you are in micro territory of local firms and a local market; when you ask whether the country's average price level rose by 2% this year, you are looking at aggregate inflation and therefore at macro; and when you ask how one robotics start-up allocates its seed funding, you remain in micro because the unit of analysis is one business, even if the euro amounts are large. Scale of money alone does not decide the label — the unit of analysis does."
         },
         {
           "type": "p",
-          "text": "Microeconomics versus macroeconomics. Lens: Microeconomics — Focus: Individual households and businesses and how they interact — Typical questions: How does one market respond to a subsidy, tax, or preference shift? — Example objects: One firm's pricing; demand for tutoring hours; a household budget choice Lens: Macroeconomics — Focus: The overall economy and aggregate quantities — Typical questions: What is happening to national output, jobs, or inflation? — Example objects: GDP growth; unemployment rate; interest rates; consumer price inflation"
+          "text": "A government raise in the minimum wage that changes one supermarket's hiring plan can bridge both lenses: the national policy sits in a macro conversation about labour-market aggregates, while the supermarket's hiring response is a micro decision by one firm. Labelling anything involving government as automatically macro is a trap, because government can appear in micro through a tax on one product and in macro through a national fiscal stance, just as calling a single expensive purchase \"macro\" because the price tag is large confuses size with scale of analysis. On an exam, match the statement to the unit of analysis: words like inflation, unemployment, growth, and national price level lean macro, while one buyer, one seller, or one product market lean micro."
         },
         {
           "type": "p",
-          "text": "Classify the question. \"Will more cafés open on this street if rents fall?\" → micro (local firms and a local market). \"Did the country's average price level rise by 2% this year?\" → macro (aggregate inflation). \"How does one robotics start-up allocate its seed funding?\" → micro (one business), even if the euro amounts are large. Scale of money alone does not decide micro vs macro — the unit of analysis does."
-        },
-        {
-          "type": "think",
-          "prompt": "Is \"a government raises the minimum wage and one supermarket's hiring plan changes\" micro, macro, or a bridge between both? Name which part is which."
-        },
-        {
-          "type": "trap",
-          "text": "Trap: Labelling anything involving government as automatically macro. Government can appear in micro (a tax on one product) and in macro (national fiscal stance). Trap: Calling a single expensive purchase \"macro\" because the price tag is large."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: match the statement to the unit of analysis. Words like inflation, unemployment, growth, and national price level lean macro. One buyer, one seller, one product market lean micro."
-        },
-        {
-          "type": "p",
-          "text": "Section 2.2 gave you scarcity and opportunity cost — the shared engine. Section 2.3 names the science that studies those decisions at two scales. Markets (2.6) are mostly a micro stage; inflation talk later links to macro aggregates."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "Economics = decisions under limited resources.",
-            "Micro = units and their interaction; macro = aggregates.",
-            "Theories aim to explain and predict, not merely describe."
-          ]
+          "text": "Section 2.2 gave you scarcity and opportunity cost as the shared engine; this section names the science that studies those decisions at two scales. Markets in 2.6 are mostly a micro stage, while later inflation talk links to macro aggregates. In short, economics is the study of decisions under limited resources, micro looks at units and their interaction while macro looks at aggregates, and theories aim to explain and predict rather than merely describe."
         }
       ]
     },
@@ -186,7 +126,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Pay day and pizza night. On Friday, workers receive wages from firms. On Saturday, those same people spend part of the wages on pizzas, tram rides, and phone plans. Firms use the sales revenue to pay suppliers and next week's wages. Public authorities collect taxes and fund streets, schools, and security. The loop never really stops — it is a circular flow."
+          "text": "On Friday workers receive wages from firms, and on Saturday those same people spend part of the wages on pizzas, tram rides, and phone plans, while firms use the sales revenue to pay suppliers and next week's wages and public authorities collect taxes to fund streets, schools, and security. The loop never really stops; it is a circular flow."
         },
         {
           "type": "idea",
@@ -200,15 +140,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "Why money beats pure barter. Without money, trade needs a double coincidence of wants — each party must want what the other offers at the same time. Money works as a medium of exchange (flexibility), a unit of account (expressing value), and a store of value (holding purchasing power over time). Those functions work best when money's value stays reasonably stable."
+          "text": "Money beats pure barter because without it trade needs a double coincidence of wants — each party must want what the other offers at the same time — whereas money works as a medium of exchange that adds flexibility, a unit of account for expressing value, and a store of value for holding purchasing power over time, and those functions work best when money's value stays reasonably stable. When the general price level rises through inflation, the same money buys fewer goods and services so purchasing power falls, and price indexes measure that rise; very high inflation erodes trust in money as a store of value and pushes people to spend it quickly, while low, stable inflation is more compatible with money doing its job."
         },
         {
           "type": "p",
-          "text": "When the general price level rises (inflation), the same money buys fewer goods and services — purchasing power falls. Price indexes measure that rise. Very high inflation erodes trust in money as a store of value; people try to spend it quickly. Low, stable inflation is more compatible with money doing its job."
-        },
-        {
-          "type": "p",
-          "text": "Government in the loop. Public authorities tax households and businesses, then provide infrastructure, defence, police, and often large parts of health care and education. Some goods are hard for private firms to sell profitably because free riders cannot be excluded from enjoying them — so government provision financed by taxation fills the gap."
+          "text": "Government sits in the loop as well: public authorities tax households and businesses, then provide infrastructure, defence, police, and often large parts of health care and education. Some goods are hard for private firms to sell profitably because free riders cannot be excluded from enjoying them, so government provision financed by taxation fills the gap that pure market sale leaves open."
         },
         {
           "type": "idea",
@@ -216,33 +152,12 @@ export default {
           "text": "Exchange lets people and firms concentrate on what they do best instead of producing everything themselves. Specialisation appears inside households, inside firms (departments), between firms on the same or different production stages, across sectors, and across countries with different resources and know-how."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Household level: one person shops, another cooks — each focuses.",
-            "Firm level: procurement, production, sales, accounting, HR as distinct tasks.",
-            "Between firms: wood → boards → furniture → retail, or narrow product niches.",
-            "International level: different climates, resources, labour costs, and legal frameworks shape who produces what."
-          ]
+          "type": "p",
+          "text": "Specialisation shows up at every scale: inside a household one person may shop while another cooks so each can focus; inside a firm procurement, production, sales, accounting, and HR become distinct tasks; between firms wood becomes boards, then furniture, then a retail product, or firms settle into narrow niches; and internationally different climates, resources, labour costs, and legal frameworks shape who produces what. Without trade a household must grow food, sew clothes, repair bikes, and teach itself every skill, which is slow and inefficient, whereas with money and markets the household can sell labour hours and buy specialised goods and services. A bike shop specialises in repairs and a bakery specialises in bread, and both gain from focusing, so specialisation raises output and variety even as it ties people more tightly to exchange networks."
         },
         {
           "type": "p",
-          "text": "From self-sufficiency to trade. Without trade, a household must grow food, sew clothes, repair bikes, and teach itself every skill — slow and inefficient. With money and markets, the household sells labour hours and buys specialised goods/services. A bike shop specialises in repairs; a bakery specialises in bread; both gain from focusing. Specialisation raises output and variety — but ties people to exchange networks."
-        },
-        {
-          "type": "think",
-          "prompt": "If your country suddenly could not import any electronics, which specialisation advantages would vanish first for local retailers — and what new opportunity costs would appear?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: Treating specialisation as only upside. Highly specialised work can become boring; skills may be hard to redeploy; a firm brilliant in one niche is exposed if that niche collapses."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: circular-flow items often test who pays whom (wages vs taxes vs purchases). Money-function items test medium of exchange / unit of account / store of value. Specialisation items test efficiency gains and the flexibility risk."
-        },
-        {
-          "type": "p",
-          "text": "Circular flow is the stage. Economic systems (next section) decide how much of that stage is directed by markets versus by planners. Supply and demand (2.6) explain prices inside the market channels of the flow."
+          "text": "If a country suddenly could not import any electronics, local retailers would lose specialisation advantages that rested on global supply chains, and new opportunity costs would appear as scarce domestic capacity was pulled toward making what imports once covered. Specialisation is not only upside: highly specialised work can become boring, skills may be hard to redeploy, and a firm brilliant in one niche is exposed if that niche collapses. Circular-flow questions often test who pays whom among wages, taxes, and purchases; money-function questions test medium of exchange, unit of account, and store of value; and specialisation questions test efficiency gains alongside the flexibility risk. Circular flow is the stage on which later sections play: economic systems decide how much of that stage is directed by markets versus by planners, and supply and demand explain prices inside the market channels of the flow."
         }
       ]
     },
@@ -252,7 +167,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Three ways to allocate steel. Imagine a tonne of steel. In System A, private firms bid and households' spending patterns pull production toward cars or bridges. In System B, a planning office assigns the tonne to a factory list. In System C, markets do most of the steering, but government taxes, regulates, and funds social and environmental goals. Same scarce steel — different decision rights."
+          "text": "Imagine a tonne of steel and three ways to allocate it. In one system private firms bid and households' spending patterns pull production toward cars or bridges; in another a planning office assigns the tonne to a factory list; and in a third markets do most of the steering while government taxes, regulates, and funds social and environmental goals. Same scarce steel, different decision rights."
         },
         {
           "type": "idea",
@@ -261,7 +176,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Market, planned, mixed. In a market economy, individuals and businesses make many of their own economic decisions; prices and private ownership play a large role. In a planned system, government mainly or partly decides which goods and services are offered (and often at which prices) and controls resources and means of production; job and product choice for people is more limited. Most real countries sit somewhere in between as mixed systems: markets allocate widely, while government sets legal frameworks and may support the poor, protect the environment, or provide major public services (sometimes called social or eco-social market economies when the mix is deliberate)."
+          "text": "In a market economy individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a planned system government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as mixed systems in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services, sometimes called social or eco-social market economies when the mix is deliberate."
         },
         {
           "type": "figure",
@@ -306,23 +221,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Label the system signal. Signal 1: Private cafés freely set menus and prices; customers walk away if unhappy → market mechanism. Signal 2: A ministry assigns quarterly output quotas and fixed retail prices for staples → planned mechanism. Signal 3: Private firms compete, but government funds schools, taxes pollution, and runs a safety net → mixed. Judge by who holds the decision rights on what/how/for whom — not by slogans alone."
-        },
-        {
-          "type": "think",
-          "prompt": "If a country privatises shops but still sets fuel prices and owns the railways, which column of the comparison table is it drifting toward — and which decisions remain planned?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: Treating \"market economy\" as zero government. Even freer market systems rely on law. Trap: Assuming every mixed economy is identical — the mix can be light or heavy."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: map each statement onto what / how / for whom. Transformation stories (former planned systems adopting market principles) test whether you notice a shift in decision rights, not a change in geography alone."
-        },
-        {
-          "type": "p",
-          "text": "Systems set the rules of the game. Markets (next) are the coordination device that market-leaning and mixed systems use for many goods and services."
+          "text": "You can label the system by the signal rather than the slogan. Private cafés that freely set menus and prices while customers walk away if unhappy point to a market mechanism; a ministry that assigns quarterly output quotas and fixed retail prices for staples points to a planned mechanism; and private firms that compete while government funds schools, taxes pollution, and runs a safety net point to a mixed arrangement. Judge by who holds the decision rights on what, how, and for whom. If a country privatises shops but still sets fuel prices and owns the railways, it is drifting toward the mixed column even while some decisions remain planned, and it helps to remember that \"market economy\" never means zero government — even freer market systems rely on law — just as every mixed economy is not identical, because the mix can be light or heavy. Transformation stories about former planned systems adopting market principles test whether you notice a shift in decision rights, not a change in geography alone. Systems set the rules of the game, and markets — next — are the coordination device that market-leaning and mixed systems use for many goods and services."
         }
       ]
     },
@@ -332,7 +231,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "The 8 p.m. tutoring slot. Parents message tutors for evening maths help. At low hourly rates, many families want hours but few skilled tutors bother to log on. At very high rates, tutors flood the platform, but fewer families book. Somewhere in the middle, the hours people want line up with the hours tutors offer. That meeting point is the market at work."
+          "text": "Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the market at work."
         },
         {
           "type": "idea",
@@ -356,7 +255,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Why the supply curve slopes up. Higher prices pull more sellers in and encourage more hours from existing sellers. Opportunity cost explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising marginal cost — the extra cost of one more unit — also pushes firms to need a higher price before expanding output."
+          "text": "The supply curve slopes up because higher prices pull more sellers in and encourage more hours from existing sellers, while opportunity cost explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising marginal cost — the extra cost of one more unit — also pushes firms to need a higher price before expanding output."
         },
         {
           "type": "figure",
@@ -365,7 +264,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Why the demand curve slopes down. As price rises, more buyers cannot or will not pay; they cut hours or switch to substitutes (group classes, apps, self-study). As price falls, quantity demanded rises. Price and quantity demanded move in opposite directions, ceteris paribus."
+          "text": "The demand curve slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to substitutes such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and quantity demanded move in opposite directions when other things are held constant."
         },
         {
           "type": "figure",
@@ -427,60 +326,27 @@ export default {
         },
         {
           "type": "p",
-          "text": "Reading the tutoring schedule. At 30 euros, Qd = Qs = 400 hours → equilibrium price and quantity. At 36 euros, tutors offer 480 hours but families only want 300 → surplus of 180 hours; pressure for price to ease downward. At 18 euros, families want 620 hours but only 200 are offered → shortage of 420 hours; pressure for price to rise. Disequilibrium creates surplus or shortage; equilibrium balances both sides."
+          "text": "Reading the tutoring schedule, at 30 euros quantity demanded equals quantity supplied at 400 hours, which is the equilibrium price and quantity; at 36 euros tutors offer 480 hours but families only want 300, leaving a surplus of 180 hours and pressure for price to ease downward; and at 18 euros families want 620 hours while only 200 are offered, leaving a shortage of 420 hours and pressure for price to rise. Disequilibrium creates surplus or shortage, and equilibrium is the balance point where both sides meet."
         },
         {
           "type": "p",
-          "text": "Movement along a curve versus a shift."
+          "text": "A movement along a curve is caused by a change in the good's own price, sliding you to a new point on the same curve — for example, when the tutoring fee falls from 36 to 30 and you move along demand to a higher quantity. A shift of the curve is caused by a non-price determinant that breaks the ceteris paribus freeze, so the whole curve moves left or right — for example, when household incomes rise and demand shifts right at every price. Demand shifters include income, preferences, complementary goods, and substitutes; supply shifters include the number of suppliers, technology, resource prices, and price expectations; and other things equal, a rightward demand shift tends to raise equilibrium price and quantity while a rightward supply shift tends to lower price and raise quantity."
         },
         {
           "type": "p",
-          "text": "Movement along: Caused by a change in the good's own price; Slide to a new point on the same curve; Example: tutoring fee falls from 36 to 30 → move along demand to a higher quantity."
-        },
-        {
-          "type": "p",
-          "text": "Shift of the curve: Caused by a non-price determinant (ceteris paribus breaks); Whole curve moves left or right; Example: household incomes rise → demand shifts right at every price."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Demand shifters include: income, preferences, complementary goods, and substitutes.",
-            "Supply shifters include: number of suppliers, technology, resource prices, and price expectations.",
-            "A rightward demand shift (other things equal) tends to raise equilibrium price and quantity; a rightward supply shift tends to lower price and raise quantity."
-          ]
-        },
-        {
-          "type": "p",
-          "text": "Shift detective. Parents' incomes rise and they book more tutoring at each price → demand curve shifts right. A new app trains more tutors quickly → supply curve shifts right. Only the platform's listed hourly fee changes, preferences unchanged → movement along the curves, not a shift story. Ask: did the own-price change, or did a background condition change?"
-        },
-        {
-          "type": "p",
-          "text": "The same logic helps explain a classic inflation story: if the quantity of money rises and people can spend more, demand for goods can increase; if goods available do not rise in step, prices climb (\"too much money chasing too few goods\"). Raising the price of borrowing money (interest rates) can cool spending and ease price pressure — a bridge from micro curves to a macro outcome."
-        },
-        {
-          "type": "think",
-          "prompt": "Before looking back at the table: if a celebrity endorses online tutoring and preferences strengthen, does the demand curve shift, or do we merely move along it? Predict the direction of equilibrium price."
+          "text": "When parents' incomes rise and they book more tutoring at each price, the demand curve shifts right; when a new app trains more tutors quickly, the supply curve shifts right; and when only the platform's listed hourly fee changes while preferences stay unchanged, you are looking at movement along the curves rather than a shift story. The diagnostic question is whether the own-price changed or a background condition changed. The same logic helps explain a classic inflation story: if the quantity of money rises and people can spend more, demand for goods can increase, and if goods available do not rise in step, prices climb as too much money chases too few goods, while raising the price of borrowing money through interest rates can cool spending and ease price pressure — a bridge from micro curves to a macro outcome."
         },
         {
           "type": "trap",
-          "text": "Trap: Calling every change a \"shift.\" Own-price changes cause movements along a curve. Trap: Mixing surplus with shortage language. Trap: Ignoring ceteris paribus — then \"laws\" look broken when a second variable moved."
+          "text": "Not every change is a shift: when the good's own price changes you move along a curve, and when a background determinant changes the curve itself moves. Mixing surplus with shortage language, or ignoring ceteris paribus so that the \"laws\" look broken because a second variable moved, will also lead you astray."
         },
         {
           "type": "exam",
-          "text": "Exam recognition: draw or imagine the graph. Identify whether price changed (along) or a determinant changed (shift). At a stated price, compare Qd and Qs to name surplus or shortage. Equilibrium is the intersection story, not \"any price sellers like.\""
+          "text": "On exam items, draw or imagine the graph and ask whether price changed (movement along) or a determinant changed (shift). At a stated price, compare quantity demanded with quantity supplied to name surplus or shortage, remembering that equilibrium is the intersection story rather than any price sellers happen to like."
         },
         {
           "type": "p",
-          "text": "Opportunity cost (2.2) explains why supply dries up at low prices. Circular flow (2.4) is where these market trades sit. Competition (2.7) changes how much power sellers have over the price you just analysed."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "Law of supply: higher price → higher quantity supplied (ceteris paribus).",
-            "Law of demand: higher price → lower quantity demanded (ceteris paribus).",
-            "Equilibrium equates Qd and Qs; other prices create surplus or shortage.",
-            "Own-price → movement along; other factors → shift."
-          ]
+          "text": "Opportunity cost from 2.2 explains why supply dries up at low prices, circular flow from 2.4 is where these market trades sit, and competition in 2.7 changes how much power sellers have over the price you just analysed. The law of supply says that a higher price raises quantity supplied when other things are held constant; the law of demand says that a higher price lowers quantity demanded under the same freeze; equilibrium equates the two quantities while other prices create surplus or shortage; and own-price causes movement along a curve while other factors shift it."
         }
       ]
     },
@@ -490,7 +356,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "One kiosk on the summit. After a steep hike, there is a single hut selling soup. Hikers pay because walking another hour for alternatives is painful. Down in the town, five coffee shops sit on one street — a price rise at one shop sends customers next door. Same product category, very different competitive heat."
+          "text": "After a steep hike there is a single hut selling soup, and hikers pay because walking another hour for alternatives is painful, whereas down in the town five coffee shops sit on one street so a price rise at one shop sends customers next door. Same product category, very different competitive heat."
         },
         {
           "type": "idea",
@@ -499,66 +365,25 @@ export default {
         },
         {
           "type": "p",
-          "text": "From monopoly toward many sellers. One supplier → monopoly (rare in pure form, but possible for a national railway or a local-only seller such as the only bar inside a theatre). A few large suppliers → oligopoly (telecoms, car makers); rivals watch each other closely, and illegal cartels that fix terms to kill competition are generally not allowed. Many buyers and sellers with no single player able to set the price → the theoretical benchmark of perfect competition."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Perfect competition (theoretical checklist): full information for all players; free entry and exit; no personal preferences — goods are replaceable across sellers.",
-            "Real markets seldom match the checklist perfectly; standardised goods (for example some agricultural products) can come closer.",
-            "Even with fewer sellers, rivalry can still be fierce if competitors react aggressively."
-          ]
+          "text": "Markets stretch from monopoly toward many sellers. One supplier is a monopoly — rare in pure form, though possible for a national railway or a local-only seller such as the only bar inside a theatre. A few large suppliers form an oligopoly, as with telecoms or car makers, where rivals watch each other closely and illegal cartels that fix terms to kill competition are generally not allowed. Many buyers and sellers with no single player able to set the price approach the theoretical benchmark of perfect competition, which asks for full information for all players, free entry and exit, and no personal preferences because goods are replaceable across sellers. Real markets seldom match that checklist perfectly, though standardised goods such as some agricultural products can come closer, and even with fewer sellers rivalry can still be fierce if competitors react aggressively."
         },
         {
           "type": "p",
-          "text": "Competitive pressure at a glance."
+          "text": "Competitive pressure weakens when there are few suppliers or only one, when substitutes are weak, and when local demand is captive — as with the summit hut or the theatre bar — because the seller then has more pricing room. It strengthens when many suppliers offer close substitutes and buyers can switch easily, which is why laws often aim to protect rivalry for customers' benefit. Ranking pressure by counting suppliers and checking substitutes, a city tram platform that alone is licensed to run the system looks monopoly-like; four mobile networks watching each other's tariffs look like oligopoly; dozens of nearly identical grain sellers with easy entry sit nearer to perfect competition; and tutoring apps that multiply while video courses substitute for live hours intensify competition through both more suppliers and better substitutes."
         },
         {
           "type": "p",
-          "text": "Weaker competition: Few suppliers (or one); Weak substitutes; Local captive demand (summit hut, theatre bar); Seller has more pricing room."
-        },
-        {
-          "type": "p",
-          "text": "Stronger competition: Many suppliers; Close substitutes available; Easy for buyers to switch; Laws often aim to protect this rivalry for customers' benefit."
-        },
-        {
-          "type": "p",
-          "text": "Rank the competitive pressure. Case 1: Only platform licensed to run city trams → monopoly-like. Case 2: Four mobile networks, each watching the others' tariffs → oligopoly. Case 3: Dozens of nearly identical grain sellers with easy entry → nearer to perfect competition. Case 4: Tutoring apps multiply and video courses substitute live hours → competition intensifies via suppliers and substitutes. Count suppliers and check substitutes before you label the market form."
-        },
-        {
-          "type": "think",
-          "prompt": "A village has two bakeries. A supermarket opens with fresh bread daily. Which competition driver changed more — number of suppliers, or availability of substitutes — and what happens to each bakery's pricing room?"
-        },
-        {
-          "type": "trap",
-          "text": "Trap: Assuming monopoly is common. Course stance: monopolies are rare in market economies, though local monopoly-like pockets exist. Trap: Treating oligopoly as \"no competition\" — rivalry can be intense. Trap: Calling any agreement among rivals harmless; cartel-style agreements are usually illegal."
-        },
-        {
-          "type": "exam",
-          "text": "Exam recognition: if the stem adds suppliers or substitutes, competition rises. If it isolates a single local seller with no nearby alternative, think monopoly-like power. Perfect competition answers usually need the theoretical conditions, not just \"many shops.\""
-        },
-        {
-          "type": "p",
-          "text": "Competition shapes the supply side you drew in 2.6. Weak competition can hold price above a more rivalrous outcome; strong competition disciplines sellers — which is why policy often protects rivalry."
-        },
-        {
-          "type": "takeaways",
-          "items": [
-            "More suppliers and better substitutes → stronger competition.",
-            "Monopoly is rare; local monopoly-like situations still matter.",
-            "Oligopoly: few large players; cartels that suppress competition are generally illegal.",
-            "Perfect competition is a strict theoretical benchmark rarely met in full."
-          ]
+          "text": "If a village has two bakeries and a supermarket opens with fresh bread daily, both the number of suppliers and the availability of substitutes rise, and each bakery's pricing room shrinks as buyers gain easier alternatives. Monopoly is less common than people assume — the course stance is that monopolies are rare in market economies, though local monopoly-like pockets exist — and oligopoly should not be read as \"no competition,\" because rivalry can be intense, while cartel-style agreements among rivals are usually illegal rather than harmless. If an exam stem adds suppliers or substitutes, competition rises; if it isolates a single local seller with no nearby alternative, think monopoly-like power; and perfect-competition answers usually need the theoretical conditions, not merely \"many shops.\" Competition shapes the supply side you drew in 2.6: weak competition can hold price above a more rivalrous outcome, while strong competition disciplines sellers, which is why policy often protects rivalry."
         }
       ]
     }
   ],
   "recap": [
-    "Households and businesses exchange to meet needs and wants; a business offers goods/services to customers, usually for a price — and nobody fully opts out of economic decisions.",
-    "Scarcity forces allocation; opportunity cost is the next-best alternative forgone; scarcity is not the same as poverty.",
-    "Economics studies decisions under limited resources; micro looks at units and interactions, macro at aggregates such as growth, unemployment, and inflation.",
-    "Circular flow links households, businesses, and government; money eases exchange; division of labour enables specialisation with efficiency gains and flexibility risks.",
+    "Households and businesses exchange to meet needs and wants, a business offers goods or services to customers usually for a price, and nobody fully opts out of economic decisions.",
+    "Scarcity forces allocation, opportunity cost is the next-best alternative forgone, and scarcity is not the same as poverty.",
+    "Economics studies decisions under limited resources, with micro looking at units and interactions and macro looking at aggregates such as growth, unemployment, and inflation.",
+    "Circular flow links households, businesses, and government; money eases exchange; and division of labour enables specialisation with efficiency gains and flexibility risks.",
     "Market, planned, and mixed systems differ by who decides what is produced, how, and for whom.",
-    "Supply and demand (ceteris paribus) meet at equilibrium; own-price causes movements along curves, other factors shift them; surplus and shortage flag disequilibrium; more suppliers and substitutes intensify competition, while pure monopoly remains rare."
+    "Supply and demand meet at equilibrium under ceteris paribus; own-price causes movements along curves while other factors shift them; surplus and shortage flag disequilibrium; and more suppliers and substitutes intensify competition, while pure monopoly remains rare."
   ]
 };
