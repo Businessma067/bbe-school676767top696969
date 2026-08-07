@@ -1,5 +1,6 @@
 /**
- * Textbook table of contents for Fuhrmann — Introduction to Business and Economics.
+ * Textbook table of contents for the BBE School Economics Full Course
+ * (Introduction to Business and Economics, chapters 2–6).
  * Used by Custom Mock Builder for chapter / subtopic selection (not DB case serials).
  */
 

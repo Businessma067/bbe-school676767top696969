@@ -1,0 +1,978 @@
+Chapter 2. Basic economic concepts
+Chapter 2 builds the shared language of economics that every BBE applicant needs. You already participate in the economy every day—when you buy food, use public transport, work a part-time job, or choose how to spend limited study time. Those everyday acts are not side notes to “real” economics; they are the starting point. Economics exists because resources are scarce, choices therefore become unavoidable, and exchanging goods and services links households, businesses and government into one system.
+
+This chapter moves from participation and scarcity to the circular flow, money, economic systems, and the market mechanisms of supply and demand. It ends with how competition shapes what buyers face. The goal is not memorising slogans, but owning precise terms—scarcity, opportunity cost, microeconomics, macroeconomics, ceteris paribus, equilibrium, monopoly, oligopoly, perfect competition—so that exam statements become readable and defensible. Read for understanding first; then practise distinguishing movements along a curve from shifts of a curve, and planned from market systems.
+
+2.1 Being part of the economy
+
+An economy is the system in which people and organisations produce, distribute and exchange goods and services to satisfy needs and wants. You do not join the economy only when you found a company. As a member of a private household you already demand food, housing, education, healthcare, entertainment and transport. At the same time you may supply labour, skills, savings or ideas. That dual role—buyer and seller of resources—makes almost everyone an active participant.
+
+Business: A business is an entity that offers goods and/or services to customers, usually in exchange for money or another means of payment. It produces primarily for customers rather than only for the owners’ private household needs.
+
+Economy: The economy is the overall system of production, exchange and consumption through which households, businesses and public authorities interact to meet needs and wants.
+
+Households and businesses depend on each other. Households need goods and services that most people cannot produce efficiently alone. Businesses need customers, workers, raw materials and often credit. Private persons may also exchange with each other—selling a used bicycle, renting a room, or swapping garden produce—without a formal firm involved. Those private exchanges still belong to economic life because scarcity, valuation and mutual benefit remain present.
+
+Businesses themselves have needs. A bakery needs flour, energy, staff and premises. A software studio needs hardware, cloud services, designers and clients. One firm’s output often becomes another firm’s input. Chains of interdependence are therefore normal: mining or farming feeds manufacturing, manufacturing feeds wholesale and retail, and services wrap around almost every stage.
+
+Because wants tend to outrun what is freely available, exchanging would only be trivial in a world of unlimited abundance. That world does not exist. Resources must be managed; choices must be ranked. Economising—using limited means carefully—is not an optional lifestyle tip. No household, no firm and no government can opt out of economic decisions entirely.
+
+Everyone who produces, exchanges or consumes participates in the economy.
+
+Businesses exist to serve customers and usually charge a price for goods or services.
+
+Interdependence between households and firms is the normal structure of economic life.
+
+Because resources are scarce, economising cannot be avoided.
+
+2.2 Scarcity of resources and opportunity cost
+
+Scarcity means that resources available to meet goals are limited relative to wants. A bakery has only so many ovens and workers. A household has only so much income and time. A government has only so much tax revenue and borrowing capacity in a period. Scarcity forces allocation: deciding which uses win and which are postponed or rejected.
+
+Scarcity: Scarcity is the basic condition that resources are limited while needs and wants are effectively unlimited, so choices about allocation become necessary.
+
+Opportunity cost: Opportunity cost is the benefit of the next-best alternative that is given up when a choice is made. It is measured not only in money but also in time, comfort, risk or other valued outcomes of the forgone option.
+
+Every serious decision has a next-best alternative. Choosing to spend Saturday revising accounting rather than working an extra shift has an opportunity cost in wages not earned (and possibly in leisure for gone). Choosing to invest savings in a van for deliveries rather than leaving the money in a low-risk account means giving up interest and safety. Opportunity cost is therefore the economist’s way of making trade-offs visible.
+
+For firms, scarce resources include machines, materials, skilled staff, floor space and finance. Managers must decide what to produce, how to produce it, and for whom—classic allocation questions. For households, scarce resources include income, attention and hours in the day. Saving reduces current consumption; borrowing raises current purchasing power but creates future repayment obligations. Governments face scarcity when they decide budgets: more spending on one programme usually means less for another, higher taxes, or more debt.
+
+Opportunity cost is often hardest to see when the “price” is not written on a receipt. Studying full-time may look “free” of tuition at one institution, yet the next-best paid job still has a value. Founders who leave salaried employment give up salary, benefits and sometimes career tracks. That forgone package is opportunity cost even if the new venture’s accounts show no wage expense for the founder.
+
+Scarcity means limited resources relative to wants; it forces allocation decisions.
+
+Households, businesses and governments all face scarcity.
+
+Opportunity cost is the benefit of the next-best alternative that is sacrificed.
+
+Cash outlays are only one way costs appear; forgone alternatives matter too.
+
+2.3 Economics is the study of economic decisions
+
+Economics studies how individuals (in households), businesses and societies decide how to satisfy needs and wants with limited resources. It is both descriptive—explaining observed behaviour—and analytical—building models that isolate key relationships and generate predictions under stated assumptions.
+
+Economics: Economics is the study of how agents make decisions to allocate scarce resources in order to satisfy needs and wants, and of how those decisions interact in markets and across the economy as a whole.
+
+Microeconomics: Microeconomics focuses on individual households and businesses, their decisions, and how they interact in particular markets (for example how a subsidy changes demand for a product).
+
+Macroeconomics: Macroeconomics studies the economy in aggregate: growth, unemployment, interest rates, the overall price level and inflation, among other economy-wide phenomena.
+
+Micro and macro are complementary lenses, not rival clubs. A wage rise in one firm is a micro issue; rising unemployment nationwide is a macro issue. Yet firm-level hiring decisions accumulate into national employment figures, and national interest-rate policy feeds back into household borrowing and firm investment. Good exam answers name which lens a question uses.
+
+As a science, economics uses theories and simplifying assumptions. Models deliberately omit detail so that cause and effect become visible. That does not mean economists ignore complexity forever; it means they isolate mechanisms first. Predictions are conditional: “if incomes rise and tastes stay constant, demand for normal goods tends to rise.” Understanding the “if” is as important as remembering the conclusion.
+
+Economic decisions appear everywhere: whether to hire or automate, rent or buy, specialise or diversify, tax or borrow, consume now or save. Business studies then ask how organisations design products, finance assets and manage people inside that decision environment. Chapter 2 therefore supplies the common vocabulary before later chapters zoom into forms of ownership, marketing and accounting.
+
+Economics analyses scarce-resource decisions by households, firms and society.
+
+Microeconomics focuses on individual agents and particular markets.
+
+Macroeconomics focuses on aggregate outcomes such as growth and inflation.
+
+Economic theories simplify in order to explain and predict conditional relationships.
+
+2.4 Exchanging goods and services creates a circular flow and division of labour
+
+Exchange is the bridge that turns specialisation into a workable system. Households typically supply labour and receive wages; businesses supply goods and services and receive revenue. Those flows of real resources and money move in opposite directions around the same relationships: households → labour → firms → goods/services → households, and households ← wages ← firms ← payments for products ← households. This pattern is the circular flow of goods, services and money.
+
+Circular flow: The circular flow describes the continuous movement of resources, goods and services in one direction and monetary payments in the opposite direction between households, businesses and government.
+
+Government completes the picture. Public authorities levy taxes from households and firms and provide public goods, transfers and subsidies—roads, defence, policing, and often large parts of education and healthcare. Some goods create free-rider problems: people can benefit without paying voluntarily, so private firms underprovide them. Taxation finances those services when markets alone would fail to deliver adequate supply.
+
+Money (three functions): Money is a widely accepted means of payment. It serves as (1) a medium of exchange, allowing flexible trade without barter; (2) a unit of account, expressing and comparing values; and (3) a store of value, carrying purchasing power into the future when its value remains reasonably stable.
+
+Without money, trade requires barter: each party must want what the other offers at the same time. That “double coincidence of wants” makes many mutually beneficial deals impossible. Money breaks the coincidence. The unit-of-account function lets prices communicate scarcity. The store-of-value function lets people save and plan. Money performs these roles best when its purchasing power is fairly stable.
+
+Inflation: Inflation is a general rise in the prices of goods and services, which reduces the purchasing power of money. Price indexes measure how strong that general rise is. Mild inflation can be tolerated; the European Central Bank regards an inflation rate of slightly below 2% per year as generally beneficial. High inflation erodes trust in money as people rush to spend before prices rise further.
+
+Division of labour and specialisation follow from exchange. If every household tried to produce all it needed, people would waste time on tasks for which they have weak skills. Exchange lets agents concentrate on comparative strengths. Specialisation appears at several levels: within households (who cooks, who shops); within firms (procurement, production, sales, marketing, accounting, HR often as departments); between firms at the same production level (competing furniture makers) or along a production chain (timber → boards → furniture → retail); and internationally, where climate, resources, know-how, labour costs and legal rules differ across countries, shaping which activities locate where.
+
+Specialisation raises productivity but carries risks. Highly specialised work can become monotonous. Workers may lose flexibility if their narrow skills fall out of demand. A firm that masters one niche can also be vulnerable if demand for that niche collapses. Division of labour is therefore powerful, not free of downside.
+
+Exchange between households and firms creates a circular flow of real goods and money payments.
+
+Government taxes and provides public goods, transfers and subsidies within that flow.
+
+Money acts as medium of exchange, unit of account and store of value.
+
+Inflation reduces purchasing power; mild rates differ from high inflation that destroys trust.
+
+Division of labour enables specialisation at household, firm, industry-chain and international levels—with efficiency gains and flexibility risks.
+
+2.5 Different economic systems
+
+An economic system answers who decides what is produced, how it is produced, and who receives the output. The two classic poles are the market economy and the planned economy. Most real countries sit somewhere between pure textbooks ends of the spectrum.
+
+Market economy: In a market economy, individuals and businesses make many of their own economic decisions about production, consumption and prices, within a legal framework. Markets coordinate allocation through supply and demand.
+
+Planned economy: In a planned (or centrally planned) system, government mainly or partly decides which goods and services are produced, at which prices, and controls key resources and means of production. Job choice and product choice for citizens are limited compared with market systems.
+
+Within market-oriented countries, roles for the state still differ. A free market economy keeps government intervention comparatively light: rules of property, contract and competition exist, but officials do not routinely redirect production or redistribute extensively through aggressive intervention. A social market economy (or eco-social market economy) keeps markets as the main coordinating device while giving the state a stronger role—supporting the vulnerable, correcting market failures, and protecting the environment, among other tasks.
+
+Free market economy: A market system in which government mainly provides the legal framework and influences the economy relatively little beyond that framework.
+
+Social market economy: A market system combined with a more active government role in social protection, environmental and related policy goals, while market exchange remains central to allocation.
+
+Over recent decades, many formerly planned economies adopted market principles—across parts of Central and Eastern Europe, China and successor states of the Soviet Union, for example. Transformation is rarely overnight: legal institutions, property rights, competition culture and safety nets must catch up with price liberalisation. For the entrance exam, the key skill is classifying who has primary decision power over production and resources.
+
+Market economies emphasise private decision-making; planned economies emphasise state direction of production and resources.
+
+Free market systems minimise economic intervention beyond the legal order.
+
+Social (or eco-social) market systems keep markets but add stronger social and environmental roles for the state.
+
+Many former planned economies have shifted towards market principles.
+
+2.6 Supply and demand: households, businesses and the government meet in the market
+
+In a market economy, buyers and sellers communicate the conditions of exchange in markets. A market can be a physical place (a farmers’ market) or a virtual platform; trade can occur in shops, by phone or online. Markets differ by product: consumer goods, labour, housing, money, capital and commodities all have their own arenas. Households, businesses and government appear on both demand and supply sides depending on the market considered.
+
+Market: A market is the interaction of buyers and sellers who communicate and agree (implicitly or explicitly) on the terms of exchanging a good or service—whether face-to-face or through intermediaries and platforms.
+
+Supply: Supply of a good or service is the quantity available for purchase. It depends on production capacity and resources and, crucially, on the price that can be charged.
+
+Law of supply: Ceteris paribus (all other things held constant), a higher price leads to a higher quantity supplied for most goods and services. The supply curve slopes upward.
+
+Ceteris paribus: A modelling phrase meaning “all other relevant factors held constant”, used so that the effect of one variable (often price) can be isolated.
+
+Why does supply rise with price? Higher prices make it worthwhile for additional providers to enter and for existing providers to expand output. Marginal cost—the cost of producing one more unit—often rises as capacity is stretched, so firms need higher prices to cover those rising extra costs. Graphically, price is usually on the vertical axis and quantity on the horizontal axis; the supply schedule traces pairs (price, quantity supplied).
+
+Demand: Demand is the quantity of a good or service that customers are willing and able to buy at a given price.
+
+Law of demand: Ceteris paribus, a higher price leads to a lower quantity demanded for almost all goods and services. The demand curve slopes downward because quantity demanded is inversely related to price.
+
+Willingness to pay reflects the utility—or satisfaction—buyers expect. As price rises, more buyers drop out or buy less; as price falls, more buyers enter or buy more. Plotting those pairs produces a downward-sloping demand curve.
+
+Market equilibrium: Equilibrium (market) price is the price at which quantity supplied equals quantity demanded. There is neither surplus nor shortage at that clearing point where the curves intersect.
+
+Table talk helps. Imagine weekly hours of tutoring and euro prices: at a low price many students want hours but few tutors offer them (shortage). At a high price, many tutors offer hours but few students buy (surplus). Somewhere in between, plans match—that row is the equilibrium. Numbers in a textbook figure are illustrative; the logic transfers to any market drawn the same way.
+
+Non-price determinants shift entire curves. Demand shifts right when incomes rise for a normal good, when preferences strengthen, when complementary goods become more attractive, or when substitutes worsen. Demand shifts left under the opposite changes. Supply shifts right when more suppliers enter, technology improves, or resource costs fall; it shifts left when costs rise, suppliers exit, or providers expect better opportunities elsewhere and cut current offers.
+
+The same language illuminates one channel of inflation. If the quantity of money in an economy rises and demand for goods climbs while real output does not keep pace, general prices tend to rise—“too much money chasing too few goods”. Raising interest rates makes borrowing more expensive, which can cool demand and ease inflationary pressure. That link between money markets and goods markets is a macro application of supply–demand thinking.
+
+Markets coordinate buyers and sellers across physical and virtual settings.
+
+Law of supply: higher price → higher quantity supplied (ceteris paribus).
+
+Law of demand: higher price → lower quantity demanded (ceteris paribus).
+
+Equilibrium equates quantity supplied and demanded; surpluses and shortages push prices.
+
+Distinguish movements along curves from shifts caused by non-price factors.
+
+Money-market expansions that boost demand without matching supply help explain inflation dynamics.
+
+2.7 Competition in the market
+
+How intensively firms must compete depends mainly on the number of suppliers and how easily buyers can switch to substitutes. Market structure ranges from a single seller to many sellers of nearly identical products. The entrance exam expects clear definitions of monopoly, oligopoly and perfect competition, plus awareness that real markets often sit between the pure models.
+
+Monopoly: A monopoly exists when there is only one supplier in a market. Pure monopolies are rare, but a firm can enjoy monopoly-like power in a local area if no close alternative exists nearby.
+
+Oligopoly: An oligopoly is a market with few suppliers, each holding a relatively large share. Telecom operators or large car manufacturers often illustrate oligopolistic structures. Rival reactions matter: one firm’s price or product move typically triggers responses.
+
+Perfect competition: Perfect competition is a theoretical benchmark with so many buyers and sellers that no single agent can influence price. Assumptions include full information, free entry and exit, and no personal preferences—goods are replaceable (homogeneous).
+
+Monopolists can set prices with more freedom, constrained mainly by the demand curve and possible regulation. Local monopoly-like situations arise on a mountain hut with no neighbouring café, or a single cinema concession stand. Oligopolists watch each other carefully. They may compete fiercely on price and features, or they may be tempted to coordinate terms. Cartels—agreements that restrict competition—are generally illegal because competition law protects buyers.
+
+Perfect competition is rare as a complete package, yet some markets approximate it when products are nearly identical and rivalry is intense—certain agricultural markets, for example. Even with fewer sellers, competition can feel “almost perfect” if rivalry is very strong and products are standardised. The model remains useful as a reference point for asking how much market power a firm actually has.
+
+Policy makers usually favour competition because it pressures firms to keep prices in check, innovate and serve customers. Barriers to entry, exclusive control of a key input, or network effects can reduce competition. Substitutes discipline prices even when the branded product looks unique: if switching is easy, monopoly power shrinks.
+
+Market structure depends on the number of suppliers and the availability of substitutes.
+
+Monopoly: one supplier (sometimes only local). Oligopoly: few large suppliers. Perfect competition: many agents unable to set price alone.
+
+Cartels restricting competition are typically unlawful.
+
+Real markets mix features; models still help diagnose market power.
+
+Chapter synthesis: scarcity forces choices; exchange and money organise the circular flow; systems allocate decision rights; supply and demand set prices under varying competition.
+
+Chapter 3. Focus on different types of businesses
+Chapter 3 turns from general economic concepts to how businesses differ from one another. Households come in many shapes; so do firms. Some combine land-intensive processes, others live almost entirely on knowledge and service skills. Some extract raw materials, others manufacture, others sell services. Some chase profit for owners; others prioritise a social or environmental mission while still needing revenue. Size ranges from micro workshops to global employers. Geographic reach runs from the neighbourhood corner to multinational networks. Across all of those differences, every business operates inside an environment of stakeholders whose interests can align or conflict.
+
+For the BBE entrance exam, this chapter trains classification skill. You should be able to name factors of production, place an activity in the primary, secondary or tertiary sector, distinguish profit-oriented from not-for-profit organisations, apply SME size criteria in spirit, judge local versus national versus international scope, and map stakeholders. Precise terminology beats vague storytelling. Read each section as a lens you can stack: the same firm can be a tertiary, profit-oriented, micro, local business with a familiar stakeholder map—and exam items will mix those labels freely.
+
+3.1 Businesses combine different factors of production
+
+A business offers goods and/or services to customers. To create that offer it must combine factors of production—the resources used to generate output. Different industries emphasise different factors, which is one reason business landscapes look so varied. A vineyard leans on land; a consulting duo leans on labour, knowledge and entrepreneurship; a capital-intensive plant leans on machinery and finance. Most real firms use several factors at once.
+
+Factors of production: Factors of production are the resources used to create goods and services. Core categories include labour (human resources), land (natural resources), capital (machinery, plant, vehicles and financial resources), entrepreneurship (the organising and risk-taking function that combines other factors), and knowledge and technology.
+
+Labour: Labour covers all human effort and skills applied in production—from manual work to highly specialised professional services.
+
+Land: Land means natural resources: soil, minerals, water rights, locations and other gifts of nature used in production.
+
+Capital: Capital includes produced means of production such as machines, buildings, vehicles and tools, as well as financial resources used to fund them.
+
+Entrepreneurship: Entrepreneurship is the factor that brings land, labour and capital together, takes initiative and bears business risk in pursuit of an opportunity.
+
+Knowledge and technology sit alongside the classical trio plus entrepreneurship. Recipes, software, know-how and production methods can be decisive even when land holdings are modest. A logistics firm with clever routing algorithms may outperform a rival with more trucks but weaker systems. Technology does not replace the need for labour and capital; it reshapes how those factors combine and which skills earn a premium.
+
+Factor mixes explain business diversity. Repair and tutoring start-ups often run on founder labour, knowledge, light capital and entrepreneurship. Food producers may combine extensive land, seasonal labour, equipment and agronomic know-how. Electronics manufacturers typically assemble large amounts of capital equipment, specialised labour, purchased materials and process knowledge. When you classify a firm in an exam vignette, start by asking which factors dominate the value-creation story.
+
+Factors are scarce, so combining them well is an economic decision in the sense of Chapter 2. Hiring one skilled engineer means not spending that wage bill elsewhere. Buying land ties up finance that could have funded inventory. Entrepreneurship is itself scarce: not everyone is willing or able to organise production under uncertainty. Profit and persistence often reward teams that allocate factors thoughtfully rather than merely owning “more of everything”.
+
+Businesses create customer offers by combining factors of production.
+
+Core factors include labour, land, capital, entrepreneurship, plus knowledge and technology.
+
+Different factor intensities help explain why businesses look so different.
+
+Combining scarce factors well is itself an economic allocation problem.
+
+3.2 Businesses operate in the primary, secondary and/or tertiary sector
+
+The three-sector model classifies economic activity by what firms primarily do. The primary sector extracts raw materials from nature. The secondary sector transforms materials into manufactured goods. The tertiary sector provides services. A single enterprise can straddle more than one sector—for example a dairy that farms, processes cheese and runs a farm shop—but exam questions usually ask you to identify the dominant activity described.
+
+Primary sector: The primary sector covers extraction of raw materials from the earth, mainly farming, fishing, mining and forestry.
+
+Secondary sector: The secondary sector transforms raw materials into goods through manufacturing—cars, machinery, clothing, electronics components, processed foods and similar outputs.
+
+Tertiary sector: The tertiary sector comprises services such as distribution, banking, insurance, coaching, software support, hospitality, healthcare and education services.
+
+Development patterns matter. Emerging economies often depend relatively heavily on the primary sector. As countries become more economically developed, the tertiary sector usually becomes the largest share of output. In many highly developed EU economies, services can account for more than 70% of economic output, while the primary sector—though vital for food and materials—forms only a small percentage of measured output.
+
+Gross domestic product (GDP): GDP is the total monetary value of final goods and services produced within a country’s borders in a given period (usually a year). It is used as a measure of overall economic activity and, when adjusted for inflation, as an indicator of economic growth.
+
+GDP is correlated with some well-being indicators such as health status and reported happiness, yet it is debated as a complete welfare measure. It may miss some income sources, say little about sustainability or distribution, and can rise after disasters because rebuilding spending counts as production even though people are worse off. For the exam, know the definition and growth-link, and remember that critics question GDP as a perfect well-being score.
+
+Sector labels connect to Chapter 2’s circular flow and specialisation. Primary producers feed secondary processors; secondary goods move through tertiary distributors and financiers. International specialisation often follows sector strengths: some regions emphasise resource extraction, others advanced manufacturing, others financial or digital services. Do not assume “services” means “unimportant”: logistics, banking and design enable industrial and agricultural value chains.
+
+Primary: extract raw materials; secondary: manufacture goods; tertiary: provide services.
+
+Firms may operate in more than one sector, but dominance usually defines the label.
+
+Economic development typically raises the tertiary share of output.
+
+GDP measures the monetary value of final output within borders; growth is related to real GDP rises, with known limitations as a welfare metric.
+
+3.3 Businesses can be profit-oriented or not-for-profit
+
+Most businesses aim to continue over time. Sustaining operations usually requires that revenues cover costs and leave a surplus that can absorb shocks and fund reinvestment. Profit-oriented businesses explicitly pursue profit as a central goal: they intend revenues to exceed costs and expenses. That surplus rewards owners and investors for risk and can be ploughed back into capabilities that strengthen durability.
+
+Profit-oriented business: A profit-oriented business aims to earn profits—revenues higher than costs and expenses—so that owners are rewarded for risk and the firm can reinvest to remain viable and competitive.
+
+Not-for-profit / non-profit organisation (NPO): A not-for-profit organisation mainly aims to cover its costs while pursuing a mission (social, cultural, humanitarian, environmental, etc.). Any surplus is reinvested to enhance services or projects rather than distributed as a private profit goal.
+
+Not-for-profit status does not mean “money is irrelevant”. Hospitals run by charities, environmental organisations and cultural associations still need donations, fees, grants or membership income. Without sufficient inflows they cannot pay staff or deliver programmes. Surpluses, when they occur, are beneficial because they can expand impact—but the organising purpose is mission coverage rather than maximising owners’ financial returns.
+
+Hybrid situations appear in practice: social enterprises may earn commercial revenue while prioritising social outcomes. For exam classification, read the stated purpose. If the vignette stresses investor returns and market surplus as the driving aim, treat it as profit-oriented. If it stresses cost coverage and mission, with surplus recirculated into the cause, treat it as not-for-profit. Legal details of charity law vary by country; the conceptual contrast is what Fuhrmann-aligned prep emphasises.
+
+Profits matter to a profit-oriented firm’s stakeholders beyond owners: lenders watch repayment capacity; employees may link stability to financial health; communities may benefit from durable employers. Conversely, an NPO that chronically underfunds operations can fail its beneficiaries. Sound management of revenues and costs is therefore common ground—even when ultimate goals differ.
+
+Profit orientation aims for revenues above costs to reward risk and sustain the firm.
+
+Not-for-profits prioritise mission and cost coverage; surpluses support activities, not private profit goals.
+
+Both types need adequate financial inflows to operate.
+
+Classify by purpose and surplus use, not by whether numbers ever look positive.
+
+3.4 Businesses come "in all sizes": large and small
+
+Businesses range from micro outfits to large corporations. In the European Union, about 99% of all businesses are SMEs (small and medium-sized enterprises), sometimes discussed together with micro firms as MSMEs. Size categories matter practically: they affect access to finance programmes, eligibility for support schemes, and often the complexity of legal and accounting obligations.
+
+SME (small and medium-sized enterprise): SME is the umbrella for smaller firms below large-enterprise thresholds. EU practice further distinguishes micro, small and medium-sized companies using staff headcount together with turnover or balance-sheet total criteria.
+
+The European Commission’s widely cited size bands (staff headcount, and either turnover or balance-sheet total) run roughly as follows. Micro: fewer than 10 staff and ≤ €2 million turnover or balance-sheet total. Small: fewer than 50 staff and ≤ €10 million turnover or balance-sheet total. Medium-sized: fewer than 250 staff and ≤ €50 million turnover or ≤ €43 million balance-sheet total. Firms above those ceilings are treated as large. Exact application can involve additional ownership and linkage rules in formal EU definitions; for entrance-exam purposes, know the headline thresholds and why SME status matters.
+
+A two-person repair service that hires two assistants remains a micro firm by headcount. A manufacturer with around 10,000 employees is large. Between those poles sit tens of thousands of small and medium firms that form the backbone of employment in many regions. Size is not destiny: micro firms can be highly specialised and profitable; large firms can be inefficient. Size does, however, change management stretch, access to capital markets, and regulatory load.
+
+Accounting rules often ease burdens for smaller entities: simpler methods may be allowed when calculating profits or losses. That relief recognises limited administrative capacity. Conversely, larger entities face richer disclosure expectations because more stakeholders depend on their information. Chapter 6 develops accounting; Chapter 3 only flags that size and reporting obligations travel together.
+
+Businesses span micro, small, medium and large sizes.
+
+EU SME bands combine staff headcount with turnover or balance-sheet totals.
+
+Roughly 99% of EU businesses are SMEs; size affects finance access and often accounting duties.
+
+Large firms exceed SME ceilings and usually face richer requirements.
+
+3.5 Businesses may be local, national or international
+
+Geographic reach is another dimension of business variety. Some firms serve only a neighbourhood; others cover a whole country; others produce or sell across borders. Expansion widens opportunity but stretches logistics, regulation and cultural competence. Exam items often ask you to classify a firm’s market scope from the description of customers and locations.
+
+Local (regional) business: A local or regional business operates in a limited area. Most customers live nearby; the firm does not serve the national or international market in a material way.
+
+National business: A national business serves the home-country market but not international markets—for example an insurer or bakery chain present across one country yet not abroad.
+
+International (multinational) business: An international or multinational business makes and/or sells goods or services in more than one country, facing longer supply chains and cross-border legal, cultural and sometimes currency differences.
+
+Local firms often struggle with undercapitalisation: own funds are limited and external finance is hard to obtain, while customer acquisition in a small catchment can be fragile. Choosing a good location is critical because customers may not travel far. National firms still choose locations carefully but must also design distribution so goods and services reach other domestic regions; supply chains lengthen compared with purely local trade.
+
+Internationalisation responds when home markets feel too small or when cost and know-how advantages appear abroad. Challenges multiply: longer supply chains, different legal and economic systems, languages and cultures, and possibly multiple currencies. As more firms operate internationally, economic life becomes more globalised—globalisation referring to deepening cross-border integration of markets, production and information.
+
+Scope can change over time. A café may begin local, franchise nationally, then license a brand internationally. Online channels can blur labels: a tiny team may ship worldwide from one warehouse. For classification, emphasise where value is mainly made and sold according to the scenario, not marketing rhetoric about being “global” without evidence.
+
+Local firms serve nearby customers; national firms serve one country; international firms operate across borders.
+
+Local challenges often include funding and customer base; national reach lengthens domestic supply chains.
+
+Internationalisation adds legal, cultural, logistical and currency complexity and relates to globalisation.
+
+Classify by actual market and production geography described.
+
+3.6 Businesses operate in an environment – stakeholders are important
+
+Whatever their sector, size or reach, businesses sit inside an environment of other people and organisations. Anyone who is affected by a firm’s activities or who has an interest in what the firm does is a stakeholder. Globalisation expands that circle: distant suppliers, overseas customers and international NGOs may all become relevant. Rising environmental awareness also raises expectations that firms protect natural resources rather than treat nature as a free dump.
+
+Stakeholder: A stakeholder is anyone who is (potentially) affected by a business’s activities and/or has an interest in what the business does.
+
+Core stakeholder groups include owners, managers, employees, customers, suppliers, government, and local, national or international communities—as well as the natural environment as a domain of responsibility. Owners invest capital and seek returns for risk; they may also care about problem-solving and social contribution. Managers and employees depend on the firm for income and often for identity; the firm depends on their competence and commitment. Shared values and objectives support short- and long-run success.
+
+Suppliers and customers form mutual dependencies. Late or poor-quality deliveries halt production; unpaid invoices damage suppliers. Customers expect useful offers; without customers, revenue collapses. Governments collect taxes and set rules; communities experience jobs, congestion, pollution or cultural sponsorship. Ignoring a powerful stakeholder can threaten licence to operate even when short-term profits look fine.
+
+Environmental responsibility requires more than slogans. “Greenwashing”—claiming care without evidence—erodes trust. Credible firms report concrete impacts and improvements (energy, waste, water, emissions) and change processes accordingly. Stakeholder interests can conflict: owners may want higher margins while employees want higher wages and neighbours want quieter nights. Management includes negotiating those tensions rather than pretending they vanish.
+
+Stakeholders are only one success factor among several. Legal structure, financial structure, market awareness, cost control and profitability also matter—and later chapters expand those themes. Chapter 3 closes by insisting that classification of businesses (factors, sectors, profit orientation, size, geography) is incomplete without seeing the web of interests around every firm.
+
+Every business operates in an environment of interdependent stakeholders.
+
+Key groups include owners, managers, employees, customers, suppliers, government and communities; environmental impacts matter.
+
+Stakeholder interests can conflict; credible environmental claims need evidence, not greenwash.
+
+Chapter synthesis: classify firms by factors of production, sector, profit orientation, size and geographic reach—and always locate them among stakeholders.
+
+Together with Chapter 2, you now connect scarcity and markets to the concrete forms businesses take before later chapters on ownership, finance, marketing and accounting.
+
+Chapter 4. Forms of business ownership and sources of finance
+Once a business starts exchanging goods and services with customers, a practical legal question arises: who is the other party to the contract — the business as a separate entity, or the people who own and run it? The answer depends on the legal structure chosen for the firm. That choice shapes ownership, management, liability for debts and obligations, taxation of profits, continuity if an owner leaves or falls ill, and the range of financing options available.
+
+Founders must decide whether one person or several will own the business, whether owners will also manage day-to-day operations, whether liability is limited or unlimited, and how capital will be raised for start-up, operations and growth. Some owners want to direct strategy, organise activities and monitor performance themselves. Others prefer to invest capital and leave management to appointed directors. Finance matters at every stage: initial assets and recurring expenses must be paid for; some structures impose minimum capital rules; later expansion often requires funds beyond cash from sales alone. Legal form constrains and enables those options, which is why growing firms sometimes change structure as their financing needs evolve.
+
+Although names and formal rules differ across countries, the same basic ownership patterns appear widely: sole proprietorships (sole traders), partnerships (general and limited), and corporations (including public and private limited companies). German-speaking jurisdictions use labels such as Offene Gesellschaft (OG), Kommanditgesellschaft (KG), Aktiengesellschaft (AG) and Gesellschaft mit beschränkter Haftung (GmbH). This chapter develops those forms and then classifies the main sources of finance — internal and external, equity and debt, short-term and long-term — before examining the criteria used when choosing among them.
+
+4.1 Sole proprietorship / sole traders
+
+A sole proprietorship — also called a sole trader — is a business owned by one person who also manages and runs the business. It is easy to establish, especially for small firms, because there are typically no minimum capital requirements to get started. The business is not a legal entity of its own. In the eyes of the law, the firm and the owner are the same party. Contracts are concluded in the owner's name; debts and obligations attach to the owner personally.
+
+Because there is no separate legal personality, profits are reported on the owner's personal income tax statement. The owner pays tax on profits earned from the business as personal income, not as a corporation. That simplicity is attractive for small operations, but it also means personal and business financial affairs remain closely linked for tax and liability purposes.
+
+Management largely depends on the sole proprietor. On the one hand, the owner can make all management decisions without necessarily having to consider other opinions. That speed and clarity of control suit many micro-businesses. On the other hand, continuity problems may occur if the sole proprietor wants to retire or suffers a long-term illness: knowledge, relationships and decision rights are concentrated in one person. If support is needed, the proprietor can hire personnel, yet it remains the owner's task to take the most important management decisions and to bear the risk.
+
+Sole proprietorship (sole trader): A business owned by one person who also manages and runs it; the firm is not a separate legal entity, so profits are taxed as the owner's personal income and liability is unlimited.
+
+Unlimited liability: The owner is liable for all debts and obligations of the business; private assets are also at stake if business assets cannot cover what creditors are owed, or if private assets were pledged as collateral.
+
+Available financial funds for a sole proprietorship mainly depend on the financial capabilities of the owner. If the proprietor lacks funds, it will be difficult to set up the business. Most sole proprietors invest their own savings. If extra money is needed, they may seek investors and/or banks. The owner's investment and funds from outside investors and creditors are external sources of finance from the business's point of view.
+
+Banks and other financial institutions offer short-term credit (duration less than a year) and long-term credit. The creditor provides money for an agreed period, normally repayable with interest. Creditors often require assets as collateral, especially for long-term facilities; long-term bank loans are frequently secured on land and property (a mortgage). The most common short-term forms for small firms are a bank overdraft and trade credit. An overdraft is flexible: once the account is in place, the proprietor can draw funds when needed and pays interest only when the account is overdrawn. Trade credit arises when suppliers allow a payment period rather than requiring immediate settlement. All kinds of credit — short-term as well as long-term — are liabilities for the sole proprietor.
+
+Once the business generates revenues, internal sources of finance may become available. If revenues exceed expenses, profit can be retained and reinvested (unless withdrawn by the owner). Sale of assets that are no longer needed is another internal option. Internal funds matter because no interest or similar financing charges need be paid for them. Still, retained profit is only available after the business has begun to earn it, and withdrawing all profit as personal drawings leaves nothing to reinvest.
+
+Ownership and management: one person owns and runs the firm.
+
+Legal status: not a separate legal entity; taxed via personal income tax.
+
+Liability: unlimited — private assets can be reached by creditors.
+
+Continuity: retirement or long illness of the proprietor can threaten the firm.
+
+Finance: mainly owner's savings, bank credit, overdraft, trade credit; later retained earnings and asset sales.
+
+One owner-manager; no separate legal personality; personal income tax on profits.
+
+Unlimited liability links business failure to private assets.
+
+Control is centralised; continuity is fragile if the proprietor exits or falls ill.
+
+External finance depends heavily on the owner's savings, collateral and creditworthiness; internal finance grows with retained profit and asset sales.
+
+4.2 Partnership
+
+If two or more persons jointly found a business, the business is called a partnership. Partners need to set up a partnership agreement in order to settle rights and responsibilities as well as the division of profits and losses. A well-drafted agreement typically specifies each partner's percentage of ownership, how profit and loss are shared, the terms of the partnership, decision-making rules, dispute resolution, and what happens if a partner leaves, dies or wants to transfer an interest.
+
+In a general partnership all partners have equal rights, liabilities and responsibilities (unless the agreement allocates roles differently while still treating them as general partners for liability). They can share tasks and specialise. In difficult situations they can exchange ideas and, potentially, make better decisions than a single owner working alone. The firm remains unincorporated: it is not a legal person separate from the partners.
+
+General partnership: A partnership in which partners jointly own and manage the business and each partner has unlimited liability for the debts of the firm. In Austria this form is called Offene Gesellschaft (OG).
+
+Limited partnership: A partnership with at least one partner who is not involved in management and whose liability is limited to the amount contributed to the business. In Austria this form is called Kommanditgesellschaft (KG).
+
+Each partner in a general partnership is solely liable for all debts of the business (unlimited liability). That means a creditor can pursue any general partner for the full amount if business assets are insufficient — not merely for that partner's ownership percentage. Private assets of the partners may therefore be reached. Unlimited liability is the counterpart of the informal, flexible structure: partners gain shared control and specialised labour but accept personal exposure.
+
+In a limited partnership there is at least one partner who is not involved in the management of the business and whose liability is limited to the capital contributed. Active (general) partners typically retain unlimited liability and management rights; the limited partner provides finance and shares profits as agreed but does not run the firm. Crossing the management boundary can put limited-partner status — and limited liability — at risk under typical legal frameworks.
+
+Available financial funds for partnerships resemble those of sole proprietors, with an important scale difference: two or more partners can often invest more savings and raise more funds than a single owner, and may offer more private assets as collateral when seeking loans. Share issues on a stock exchange are not available to ordinary partnerships; equity comes from partners' capital contributions and any new partners admitted under the agreement.
+
+Formation: two or more persons; partnership agreement on rights, duties, profit and loss.
+
+General partnership / OG: equal rights and responsibilities; unlimited liability for each partner.
+
+Limited partnership / KG: at least one non-managing partner with liability capped at contribution.
+
+Finance: partners' savings, loans, overdrafts and trade credit — usually larger pool than a sole trader.
+
+Unincorporated: not a separate legal entity; personal taxation typically follows the partners' shares of profit.
+
+Partnerships require an agreement covering ownership, profits, duties and disputes.
+
+General partners: shared management benefits; unlimited personal liability for all firm debts.
+
+Limited partners: capital and profit share; liability limited to contribution; no management.
+
+Austrian labels: OG (general), KG (limited). Finance scale often exceeds a sole trader but stays below corporate equity markets.
+
+4.3 Corporations
+
+Corporations are businesses that are legal entities of their own. As legal persons they have the same rights and obligations, in business life, as natural persons: they can own land and property, hire people, close contracts, sue and be sued in their own name. The people who found the corporation and own a share of the business need not be involved in management, and the managers need not own a share. Corporations are more difficult to set up than sole proprietorships or partnerships, but shareholders' liability is usually limited to the amount invested when buying the shares.
+
+Corporation (legal person): An incorporated business with separate legal personality; ownership is divided into shares; shareholders' liability is typically limited to the capital they invested.
+
+Limited liability: Shareholders risk only the money paid (or unpaid but committed) for their shares; creditors cannot normally claim shareholders' private assets for company debts.
+
+Shareholders are not necessarily managers. Shareholders provide share capital but are neither obliged nor ordinarily entitled to run operations themselves. The corporation is managed by a board of directors — persons elected by the shareholders to make major business decisions and to represent shareholders' interests. The highest-ranking manager is often called the Chief Executive Officer (CEO). Other typical board roles include Chief Financial Officer (CFO), Chief Operating Officer (COO), Chief Information Officer (CIO) and Chief Marketing Officer (CMO). Separation of ownership and control is a defining feature of the corporate form: investors may specialise in risk-bearing capital while professional managers specialise in decision-making.
+
+Corporations usually have more options to raise funds than sole proprietors and partnerships. Their financial funds mainly comprise share capital as well as loans and credit. Share capital is the capital of the corporation divided into shares (also called stock). If share capital equals €1,000,000 and is divided into 100,000 shares, each share represents €10 or 0.001 per cent of the share capital. Persons who buy shares become shareholders. Shares can be bought when initially issued by the corporation or later from another shareholder. If all 100,000 shares are sold at that issue price, the corporation gains €1,000,000 as share capital. Large amounts can thus be raised. Share capital is usually not redeemed by the company; it is long-term or even permanent capital.
+
+A corporation's stock can but need not be listed on a stock market. A stock exchange is a regulated financial market where shares and other securities (for example bonds) can be bought and sold. Listed corporations must meet listing requirements. Shares are introduced at an issue price — an initial public offering (IPO) when first listed publicly — and subsequent prices are then driven by demand and supply. Rising demand may reflect expectations of profits, growth in market share or successful new products, and is also influenced by economic growth, interest rates and inflation. Critically, an increase in share prices after issue has no additional financing effect for the issuing corporation; the beneficiaries of secondary-market price rises are the selling shareholders only.
+
+People invest in shares for several reasons: supporting a business they believe in; seeking dividends (parts of profit paid to shareholders, with no automatic obligation to pay them every year); hoping for capital growth if prices rise; exercising voting rights at the stockholders' meeting (typically attached to common stock); and treating shares as a claim on real economic activity that may hold value better under inflation than some cash holdings. Preferred shares may offer higher dividends with weaker or no voting rights, depending on the terms.
+
+Naming conventions differ by jurisdiction. In the United Kingdom and some Commonwealth countries, the public limited company (PLC) is a familiar corporate form. In the USA one often sees Inc. (Incorporated) or Ltd (Limited). In German-speaking countries the Aktiengesellschaft (AG) is the classic share corporation; Austria requires a significant minimum capital to found an AG (commonly cited in the syllabus as €70,000). Another transnational form is the European Company (SE, société européenne), similar to an AG/PLC and governed by EU law in member states. Metrics of interest to investors include share price paths, market capitalisation (outstanding shares × current market price), dividend yield (dividend relative to price), and the price–earnings (P/E) ratio (share price relative to earnings per share).
+
+Besides bank loans and other credit available to smaller firms, large corporations can issue bonds: a loan relationship between investors as creditors and the corporation as borrower, with agreed repayment and interest. Bond interest is often lower than bank rates for comparable large volumes, which can make long-term investment in plant and infrastructure more affordable — without diluting ownership the way a new share issue does.
+
+Private limited companies are corporations and legal persons with limited liability, but their shares are usually not sold to the general public on a stock exchange; instead they are offered among existing owners or tightly controlled parties. Examples include the LLC in the USA, the private company limited by shares in the UK, and the Gesellschaft mit beschränkter Haftung (GmbH) in Austria and Germany. Austrian syllabus figures commonly cite a minimum capital of €35,000 for a GmbH — lower than for an AG, still a barrier compared with a partnership, and without the public flotation path of a listed AG.
+
+Legal personality: own land, hire, contract, sue and be sued.
+
+Limited liability of shareholders to capital invested in shares.
+
+Governance: shareholders elect a board; CEO and other C-level roles manage.
+
+Share capital is permanent-style equity; secondary price rises do not refinance the issuer.
+
+Public (AG/PLC) vs private (GmbH/private limited): listing and share transferability differ.
+
+Bonds add large-scale debt finance for big corporations.
+
+Corporations are separate legal persons with limited shareholder liability.
+
+Ownership (shareholders) and management (board/executives) can — and often do — diverge.
+
+Share capital and bonds expand financing beyond what partnerships usually access.
+
+Distinguish AG/PLC (often public) from GmbH/private limited (closed ownership).
+
+Secondary share price moves do not finance the issuer; dividends are discretionary profit distributions.
+
+4.4 Summary: Overview of forms of business ownership
+
+The forms of business ownership can be summarised by contrasting unincorporated and incorporated businesses. Unincorporated businesses are not legal entities of their own; incorporated businesses are legal persons. That single distinction drives differences in liability, taxation mechanics, continuity, and how ownership and management can be separated. Exam questions frequently test whether students can place a described firm on the correct side of this line and then identify the subtype.
+
+Among unincorporated businesses, owner(s) and manager(s) are typically the same person(s). With one owner, the structure is a sole trader / sole proprietorship. With more than one owner, the structure is a partnership — either a general partnership (all partners typically manage and face unlimited liability) or a limited partnership (with at least one limited partner outside management). Among incorporated businesses, owners and managers need not be the same persons: shareholders provide share capital while directors and executives run the company. This group includes public-style corporations such as AGs/PLCs and private limited companies such as GmbHs.
+
+Reading the overview as a decision path helps: start from how many owners and whether they want limited liability; then ask whether share transferability and public capital markets are needed; finally check minimum capital, disclosure and governance costs. Firms often begin unincorporated and incorporate later when risk, capital need or investor entry make separate legal personality and limited liability worth the formalities.
+
+Unincorporated — one owner: sole proprietorship / sole trader; owner manages; unlimited liability; personal tax on profits; no separate legal person.
+
+Unincorporated — more than one owner: partnership (OG general; KG limited); agreement governs rights; general partners unlimited liability.
+
+Incorporated: corporation / private limited company (AG, GmbH, PLC, Inc., Ltd, SE); legal person; limited liability; shareholders vs board/management.
+
+Setup difficulty: sole trader easiest → partnership → private limited → public corporation hardest / most regulated.
+
+Finance ladder: owner savings and bank credit → more partners' capital → share capital and possibly bonds for corporations.
+
+Liability comparison: unlimited (sole trader, general partners) vs limited (shareholders of corporations / limited partners within their contribution).
+
+Continuity: weakest for sole traders; stronger for partnerships if agreement provides succession; strongest for corporations as separate legal persons.
+
+Control: sole decision rights (sole trader) → shared (partners) → delegated to board (corporation).
+
+Public scrutiny: highest for listed corporations; lowest for sole traders.
+
+Classify first: unincorporated vs incorporated (legal person or not).
+
+Then ask: one owner or many; owners same as managers or not; limited or unlimited liability.
+
+Sole trader → partnership → private limited → public corporation is the usual complexity and finance ladder.
+
+Do not treat multi-owner status as incorporation by itself.
+
+4.5 Overview of sources of finance
+
+Every business needs financing — cash and credit that fund assets and cover expenses when sales receipts are insufficient or mistimed. Start-up requires money for equipment, inventory, rent, energy and insurance; ongoing operations and growth require further funds even when sales exist, because cash inflows and outflows rarely match perfectly. The balance sheet reveals which sources a business has already used (see Chapter 6 on accounting); large businesses are obliged to prepare such statements. For analysis, sources are classified along several overlapping dimensions: equity versus debt, internal versus external, and short-term versus long-term.
+
+Legal structure interacts with the menu of sources. Sole traders and partnerships rely heavily on owners' savings, bank credit, overdrafts and trade credit. Corporations add share capital as a major equity route and, when large enough, bonds as a large-scale debt route. Changing legal form is sometimes motivated precisely by the wish to unlock those corporate financing options.
+
+Equity finance: Funds that belong to the owners of the business (for example share capital and retained earnings). Equity is not a repayable loan with fixed interest, though owners expect returns via profit share, drawings or dividends.
+
+Debt finance: Borrowed funds that create liabilities: bank overdrafts, trade credit, bank loans, bonds and similar instruments, normally carrying interest and a repayment obligation.
+
+Equity finance may be internal or external. External equity includes funds provided by investors and share capital raised from owners who buy newly issued shares. Internal equity centres on retained earnings — profits kept in the business rather than distributed. Debt finance is external: creditors stand outside ownership. Short-term credit includes bank overdrafts, trade credit and short-term bank loans (typically under one year). Long-term credit includes longer bank loans, loans provided by owners, and bonds issued by larger corporations.
+
+A bank overdraft lets a firm draw beyond the credit balance on its current account up to an agreed limit; interest is charged on the overdrawn amount and the facility is flexible for uneven cash flows. Trade credit is supplier-granted delay in paying for purchases — free if within the agreed period, costly if discounts are lost or late-payment penalties apply. Bank loans provide a fixed sum for an agreed term with scheduled repayment. Bonds package large-scale borrowing from multiple investors with contractual interest. Retained earnings require prior profitable operations and a decision not to distribute all profit. Sale of assets that are no longer needed releases cash internally without creating new liabilities, but may reduce operating capacity if the asset is still useful.
+
+Equity (external): funds from investors; share capital.
+
+Equity (internal): retained earnings.
+
+Debt short-term: bank overdraft, trade credit, short-term bank loans.
+
+Debt long-term: bank loans, loans from owners, bonds.
+
+Other internal cash release: sale of surplus assets.
+
+Sort sources by equity vs debt, internal vs external, and short vs long term.
+
+Know the standard instruments: overdraft, trade credit, bank loans, bonds, share capital, retained earnings, asset sales.
+
+Equity does not require fixed interest repayment; debt does.
+
+The balance sheet records the financing already obtained.
+
+4.6 The choice of the source of finance
+
+When several sources of finance are available, businesses choose among them using systematic criteria — not only the headline interest rate. The decision should reflect costs, the intended use of the funds (especially the duration of the need), flexibility, the effect on control and ownership, risk including gearing and insolvency exposure, and how the financing matches the life of the assets or projects being funded. Current financial structure also constrains what lenders and investors will still offer.
+
+Costs comprise interest payments for loans and credit and administration costs for issuing shares or bonds (legal fees, underwriting, listing expenses). Equity may look 'cheaper' in months without dividends, yet it can be costly in ownership dilution and required returns over time. Cheap short-term debt can become expensive if rolled over repeatedly at rising rates.
+
+Flexibility matters when cash needs fluctuate: an overdraft can expand and contract with activity, whereas a fixed term loan leaves idle cash costing interest if drawn too early, or a funding gap if the term ends before the project does. Control is affected when new shareholders enter — voting power and strategic influence may shift — while pure debt leaves ownership percentages unchanged but adds covenants and repayment pressure. Risk rises with the share of loan capital: repayment and interest are contractual; missing them threatens insolvency.
+
+Matching (duration): Financing long-lived capital expenditures with long-term finance, and financing short-lived revenue expenditures with short-term sources, so repayment schedules align with the period over which benefits arise.
+
+High gearing: A high proportion of loan capital relative to equity. Highly geared businesses may struggle to obtain more credit except at higher interest or with more collateral, and face greater insolvency risk because loans must be repaid.
+
+If funds are used for capital expenditures — buying assets that will be used over some or many years — long-term finance is required. Revenue expenditures, such as buying materials used in near-term production, can safely be financed by short-term sources. Matching reduces the risk of having to refinance long assets under stress. A business that already has high gearing might face reluctant lenders, higher rates, and heavier collateral demands; such a firm should prefer internal sources and/or new equity investors or partners rather than stacking more debt.
+
+Cost: interest, fees, issue costs; opportunity cost of equity dilution.
+
+Flexibility: ability to draw, repay or reshape funding as needs change.
+
+Control: debt preserves ownership shares; new equity may dilute voting power.
+
+Risk / gearing: more debt raises fixed obligations and insolvency exposure.
+
+Matching: long assets ↔ long finance; short needs ↔ short finance.
+
+Existing structure: high gearing pushes toward retained earnings and equity partners.
+
+Choose finance using cost, flexibility, control, risk and duration matching — together.
+
+Match capital expenditure to long-term funds; revenue expenditure to short-term funds.
+
+High gearing limits further debt and raises insolvency risk; prefer internal equity or new investors.
+
+Debt protects ownership percentages but adds contractual repayment; equity may dilute control.
+
+Chapter 5. Marketing
+Producing a good or providing a service only makes sense if enough people want it and are willing to exchange something of value for it. Profit-seeking firms and non-profit organisations alike depend on sustained demand. Marketing is the management process — and for many organisations, a guiding philosophy — that identifies customers' needs and wants, shapes offerings around those needs, communicates benefits, sets prices customers will accept, and makes products available through distribution networks.
+
+Marketing is more than advertising, even though advertising is its most visible face. Critics note that promotion can push people to buy more than they need or can afford, and that continuous innovation can accelerate obsolescence and consumption. Supporters emphasise that good marketing creates genuine customer value: functional performance, additional features, image and the satisfaction users obtain. Creating value requires analysing the firm's strengths and know-how together with market research on customers and competitors.
+
+This chapter defines products in marketing terms, sets out marketing objectives, contrasts product orientation with market orientation, discusses responsibility and sustainability, develops market research including market-share measures, explains segmentation and targeting, and builds the marketing mix of product, price, place and promotion — including product portfolio tools such as the product life cycle and the Boston Consulting Group matrix.
+
+5.1 What a product is
+
+In marketing terminology, a product is every good and/or service that can be exchanged in order to fulfil the wishes and needs of customers. The definition is deliberately broad: tangible goods (a tool, a meal, a smartphone) and intangible services (repair, consulting, transport, education) both count when they can be offered in an exchange that satisfies customer needs. Bundles that combine goods and services — for example equipment sold with installation and maintenance — are still products in this sense.
+
+Customers can be other businesses or consumers (private households). Producer products are goods and services sold from one business to another (business-to-business, B2B). Consumer products are sold to consumers or private households (business-to-consumer, B2C). The classification hinges on the buyer's role and use, not on whether the item left a factory. The same physical printer is a producer product when purchased for an office workplace and a consumer product when purchased for a private home. Many firms operate in both B2B and B2C markets with different packaging, pricing, service levels and sales processes for each.
+
+Product (marketing): Every good and/or service that can be exchanged to fulfil customers' wishes and needs, including tangible items, services and combinations of both.
+
+Producer product (B2B): A good or service sold from one business to another for use in production, operations or resale.
+
+Consumer product (B2C): A good or service sold to private households or individual consumers for personal or household use.
+
+Value for the customer may come from core functionality, additional features, brand image and the enjoyment or status of use. A mobile phone creates value because users can reach others from almost anywhere (core function), and because they can message, receive email and browse online (additional features). Owning a sought-after model may also signal expertise or lifestyle (image and emotional benefit). Marketing therefore designs and communicates the whole benefit package, not only the physical object.
+
+Product = good and/or service offered in exchange for customer benefit.
+
+B2B / producer products: business buyers; often fewer, larger, more negotiated purchases.
+
+B2C / consumer products: household buyers; often denser competition and brand competition.
+
+Same item can switch category depending on buyer and use context.
+
+Services and hybrid offerings are fully included in the marketing definition of a product.
+
+Product = any exchangeable good and/or service meeting customer needs.
+
+B2B producer products vs B2C consumer products depend on who buys and why.
+
+Identical items can be producer or consumer products in different settings.
+
+Customer value spans function, features, image and experience — not hardware alone.
+
+5.2 Objectives of marketing
+
+To fulfil customers' wishes and needs, a business must analyse the market(s) it wants to operate in and be clear about its marketing objectives. Objectives give direction to research, product design, pricing, distribution and promotion. They are typically interconnected: progress on one supports others, while neglect of one can undermine the rest.
+
+Customer satisfaction is foundational. If customers are not satisfied with the product, they will not buy it again. Satisfied customers often become loyal customers who may repurchase and recommend the firm. Loyalty reduces acquisition cost over time and stabilises revenue. Measuring satisfaction through surveys, complaint rates or repurchase ratios turns a soft goal into something managers can track alongside sales.
+
+Creating a unique selling proposition (USP) — also linked to product differentiation — makes the offering special or better than rivals in the eyes of customers. Differentiation can rest on a tangible product characteristic (durability, features, service intensity) or on how the product is promoted and perceived (image, association, storytelling). Building a brand supports USP formation by making identity and quality claims recognisable across places and over time. Without some form of differentiation, competition collapses into pure price comparison, which squeezes margins.
+
+Gaining and maintaining market share indicates relative importance and competitiveness versus rivals. Share objectives force the firm to define the market carefully: too broad a definition makes share look tiny; too narrow a definition can flatter performance. Maintaining or increasing sales generates the revenues needed to cover production and operating costs and to support profit. Profitability reimburses owners for invested capital and allows retention of earnings for reinvestment in product development, capacity or marketing itself.
+
+Higher sales often support higher profit, but not without limits: growth that requires heavy discounting, costly promotions or overstretched operations can expand revenue while eroding margin. Marketing objectives must therefore be set as a coherent set — satisfaction and USP feeding loyalty and share, sales feeding profit — with cost and capacity constraints made explicit. Conflicting targets (for example maximum volume and maximum margin in the same quarter without a plan) produce incoherent mixes.
+
+Unique selling proposition (USP): A distinctive benefit or perceived difference that sets a product apart from similar offerings and supports differentiation and customer preference.
+
+Customer satisfaction → repeat purchase and loyalty.
+
+USP / differentiation / branding → stand out from competitors.
+
+Market share → relative competitive position.
+
+Sales volume / revenue → cover costs and fund operations.
+
+Profitability → reward owners and enable retained reinvestment.
+
+Core objectives: satisfaction, loyalty, USP/differentiation, market share, sales, profitability.
+
+Objectives interlock; satisfaction feeds loyalty and stable sales.
+
+USP and branding differentiate offerings.
+
+Sales growth without margin control can undermine profitability.
+
+5.3 Product orientation versus market orientation
+
+Over recent decades many businesses have moved from a product-oriented approach toward a market-oriented approach. A product-oriented business focuses on the product and its specifications first and later thinks about how to sell it — often believing that a good product sells itself, with advertising playing a supporting role. A market-oriented business first analyses customers' needs and wants and then tailors products to fulfil those requirements. Both may pursue similar high-level objectives (sales, share, profit), but their starting point and feedback loops differ.
+
+Market orientation has the advantage of anticipating changing needs and responding earlier than product-focused rivals. Suitability still depends on the product and the intensity of competition. Highly specialised engineering products with long development cycles may retain strong product focus, yet even they cannot permanently ignore market expectations. Neglecting the market risks building excellent objects that few customers want at the price offered.
+
+Product orientation: An approach that prioritises production and product features first, then seeks to sell what has been made.
+
+Market orientation: An approach that starts from customers' needs and wants and designs offerings to match them.
+
+Customer relationship management (CRM) aims to create a long-term relationship with customers. Data are kept so the firm can mail or email newsletters, coupons and product information that encourage repeat purchases. Using personal data has become a sensitive issue; careful, lawful and transparent use of personal data is indispensable. At the same time, many customers willingly share information through personal accounts and loyalty cards to obtain discounts and tailored offers. Firms that collect purchase histories can personalise assortments — a practical expression of market orientation — provided privacy expectations and rules are respected.
+
+Product orientation: focus on production and features → sell / advertise.
+
+Market orientation: focus on needs and wants → produce what customers require.
+
+CRM: long-term relationships via retained customer data and follow-up offers.
+
+Personal data: powerful for targeting, but must be handled sensitively and responsibly.
+
+Product orientation: make it, then sell it.
+
+Market orientation: learn needs, then make what fits.
+
+Market orientation helps anticipate change; competition and product type still matter.
+
+CRM supports loyalty; personal data require sensitive, responsible handling.
+
+5.4 The need for more responsibility and sustainability
+
+It is often claimed that businesses do not only respond to what customers need or want, but also create wishes and needs by continuously developing new products and advertising them — sometimes in unethical ways. Continuous innovation can accelerate the perceived obsolescence of still-working goods. Easy checkout, credit and persuasive messaging encourage unplanned buying. Many people spend more than they can afford, or more than they intended, acquiring items they do not really need and will barely use. Overconsumption strains household budgets, generates waste and depletes materials and energy along supply chains.
+
+Both businesses and consumers therefore need greater awareness of sustainable production and consumption and of the risks of consuming too much. Responsibility in this chapter is not a call to abandon marketing; it is a call to shape offers and messages so that informing and solving real problems outweighs manipulating impulse. Ethical advertising standards, honest claims and restraint in targeting vulnerable groups are part of that agenda.
+
+Practical alternatives already appear in many markets. Repair and reuse extend product life: devices and appliances are fixed rather than replaced at the first fault. Consumers can choose higher quality that lasts, share or swap goods among friends, and rent instead of buy for occasional needs. In clothing, more people prefer durable garments or rental for special events rather than cheap items discarded after a few wears. Firms can support these patterns with spare parts, repair services, refurbished lines and access-based business models — still marketing, but oriented toward longevity and use intensity rather than disposable volume alone.
+
+Sustainable consumption and production: Patterns of making and using goods and services that meet needs while reducing unnecessary waste, resource use and harmful overconsumption.
+
+Marketing can create desires beyond genuine need — a responsibility issue.
+
+Unethical advertising manipulates rather than informs fairly.
+
+Overconsumption: spending beyond means or intention; short product lives.
+
+Responses: repair, reuse, durable quality, renting, sharing; ethical promotion.
+
+Marketing can generate artificial or amplified wants; ethics matter.
+
+Overconsumption wastes money and resources.
+
+Repair, reuse, durable quality and renting are practical sustainable responses.
+
+Responsibility lies with both businesses and consumers.
+
+5.5 Market research
+
+Market research provides information about existing and prospective customers, the potential buyers of a firm's products, about competition, and about the industry in general. Research data come from two kinds of sources: primary and secondary. Sound decisions on segmentation, targeting and the marketing mix rest on this evidence.
+
+Primary information is gained by conducting an empirical study or by commissioning a market research institute. The study can be tailored to the business's specific interests: who customers are, which products they buy, what they think of those products, and whether they also buy rivals' goods. Methods include questionnaires administered to hundreds or thousands of respondents, personal or telephone interviews, and online surveys, followed by analysis and interpretation. Tailoring is a strength; cost is a weakness — especially for small businesses that cannot afford large primary programmes.
+
+Secondary information uses research already done by someone else, often for another purpose. Government agencies, trade and industry associations and other organisations publish data that may be free or inexpensive. Secondary sources are faster and cheaper but usually more general and less tailored to one firm's precise questions. Many projects combine secondary scans with selective primary follow-up.
+
+Primary market research: Original data collection designed for the commissioning business's questions (surveys, interviews, observation, experiments).
+
+Secondary market research: Use of existing data collected by others (statistics, published reports, industry studies), typically cheaper but less specific.
+
+Customer analysis is often central. Businesses try to learn who current and potential customers are (B2C consumers versus B2B buyers; also that buyer, user and influencer roles may differ — for example children influencing purchases paid for by parents). They study what customers do with products, to improve design around real use. They examine where customers buy, to evaluate distribution channels. They check when customers buy, to plan for seasonal swings and possible price differentiation over the year. They explore why customers choose one product over another, to guide development and market-share strategies.
+
+Market research also measures markets. Market size (market volume) is the total sales of a product by all businesses in the market, expressed as value (for example euros) or quantity (units). Tracking how volume evolves helps firms judge their position and prospects. Market share is the proportion of that market held by a business, product or brand. Absolute market share relates one firm's sales to total market volume. Relative market share places the firm against its largest competitor, adding competitive context that absolute share alone does not provide.
+
+Market potential exceeds market volume when further customers could still be won. Sales potential for one firm exceeds its current sales volume when the firm can still gain from competitors and share in market growth. Distinguishing volume (what is sold now) from potential (what could be sold) prevents over- or under-estimating opportunities.
+
+Primary: questionnaires, interviews, online surveys, commissioned studies — tailored, costly.
+
+Secondary: government, trade association and published data — cheaper, more general.
+
+Customer analysis: who / what / where / when / why (buyer ≠ user ≠ influencer possible).
+
+Market volume (size): total sales of all firms in the defined market (value or quantity).
+
+Absolute share = own sales / market volume; relative share = own share / largest rival's share.
+
+Market and sales potential exceed current volume when more customers or switchers can still be won.
+
+Primary = tailored new data (costly); secondary = existing data (cheaper, general).
+
+Customer analysis asks who, what, where, when and why.
+
+Market volume = total sales; absolute share = own sales / volume.
+
+Relative share = own share / largest competitor's share; potential exceeds current volume when more demand can be won.
+
+5.6 Market segmentation and targeting strategies
+
+Market research may reveal that characteristics such as age, gender, education, income, behaviour and interests help describe potential customers. Those characteristics can separate relatively homogeneous subgroups — market segments. Segmentation is worthwhile when segments are measurable (size, purchasing power), profitable, accessible through communication and distribution channels, and durable (not changing too quickly). The firm then selects which segment(s) to serve — targeting — and positions offerings so that the chosen groups see a clear match with their needs. Positioning builds an image or identity in the minds of target customers.
+
+Market segmentation: Dividing a market into relatively homogeneous subgroups of customers who share relevant characteristics.
+
+Targeting: Evaluating segment attractiveness and selecting one or more segments to enter with a tailored marketing approach.
+
+Positioning: Creating a distinctive image or identity for the product in the minds of the chosen target market(s).
+
+Common bases include geographic segmentation (where customers live or operate — a city and surrounding area, region or country), demographic segmentation (age, gender, education, income, employment status), psychographic segmentation (lifestyles, values, attitudes — for example environmental concern or preference for second-hand goods), and behavioural segmentation (usage intensity, occasions, loyalty, benefits sought). Effective marketers combine bases when a single cut is too crude.
+
+Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. It suits widely used items such as basic hygiene products or simple stationery and supports economies of scale: larger identical output can reduce cost per unit when some costs do not rise proportionally. The drawback is inflexibility when some customer groups change. Segment marketing (differentiated approaches) offers different products to one or more segments, focusing resources where strategic fit is strongest. Niche marketing goes further into particular subgroups within segments; many small specialised firms lead niches they understand deeply even if they could never serve a mass market.
+
+Bases: geographic, demographic, psychographic, behavioural.
+
+Segment quality tests: measurable, profitable, accessible, durable.
+
+Sequence: segmentation → targeting → positioning.
+
+Mass marketing: one offer for all; economies of scale; less flexibility.
+
+Segment marketing: tailored offers to selected segments.
+
+Niche marketing: deep focus on narrow subgroups; often used by smaller specialists.
+
+Segment with geographic, demographic, psychographic and behavioural lenses.
+
+Keep only measurable, profitable, accessible, durable segments.
+
+Target deliberately; then position for mental availability and fit.
+
+Choose mass, segment or niche strategy according to scale and specialisation.
+
+5.7 The marketing mix
+
+A marketing mix is a harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. It consists of four elements — product, price, place and promotion — the four Ps. Based on market research, the firm decides which goods and services to offer, at which price, where customers can obtain them, and with which message they are informed and persuaded. The Ps must fit together: a premium brand message fails if place is a discount channel and price undercuts quality cues, just as a convenience product fails if it is hard to find.
+
+Marketing mix (four Ps): The coordinated set of Product, Price, Place and Promotion decisions used to serve a target market.
+
+Product is at the heart of the mix and is usually the first major decision in serving a target market. Most firms offer a range rather than a single item. Closely similar items — for example several laptop configurations — form a product line. Several lines (laptops, monitors, printers, storage media) form a product mix. Brands — names, words, symbols or signs — distinguish products and firms, support USP and recognition, and signal consistent quality that customers can trust even when travelling or comparing unfamiliar outlets.
+
+Product-mix strategies describe how the range evolves. A firm may specialise in one line or diversify by adding lines (increasing mix width). It may deepen a line with more variants, pursue line extension (new items inside an existing line, such as new flavours) or mix extension (entirely new lines, such as adding yogurts beside ice cream). Alteration or relaunch covers minor updates (packaging, colours). When relaunch is insufficient, major redesign or elimination (contraction) removes weak products or lines. These choices keep the portfolio aligned with changing needs and with capacity and brand limits.
+
+The product life cycle (PLC) is a theoretical model of stages over a product's life — introduction, growth, maturity and decline — that typically differ in sales volume and profit. Before launch there are development costs and no sales, so the business starts from a loss position. In introduction, sales begin but costs of promotion and possibly low introductory prices may keep profit negative or thin; toward the end of introduction a small profit may appear. Linked to the Boston Consulting Group (BCG) matrix, a young item with low relative market share in a rapidly growing market is a 'question mark'.
+
+During growth, sales rise faster than costs; average costs may fall with higher output and economies of scale; market share rises in a still-growing market and the product may become a 'star' that deserves continued investment in promotion and capacity. Profit usually strengthens and often peaks around maturity. When market growth slows but relative share stays high, the product becomes a 'cash cow': investment needs fall while revenues remain strong. Eventually competition, price pressure and saturation pull the item toward 'poor dog' status and the decline stage, where sales and profits fall. PLC length varies enormously — detergents may seem to mature indefinitely; fads may exit within a year.
+
+A balanced portfolio blends stars, cash cows and selected question marks without too many dogs. Cash-cow revenues can fund stars (future cash cows) and question marks the firm believes in. Typical PLC strategy shifts move from market development (introduction) to penetration (growth), defensive positioning (maturity) and efficiency or exit (decline). Extension strategies aim to delay decline by changing the mix or entering new markets. Ansoff's product–market matrix organises growth options: market penetration (existing product, existing market — lowest risk), product development (new product, existing market), market development (existing product, new market) and diversification (new product and new market — highest risk, but can spread long-run risk across lines).
+
+Price is difficult to reset once customers form reference prices, so the initial strategy matters. Influences include costs (which must be covered in the long run, preferably with profit), competitors' prices for similar offers, and demand — how much customers are willing to pay. Cost-based pricing builds from cost; competition-based pricing watches rivals; demand-oriented pricing starts from willingness to pay. Total cost comprises fixed costs (independent of output in the relevant range, such as rent or insurance) and variable costs (rising with output). Contribution per unit equals selling price minus variable cost and feeds coverage of fixed costs. Break-even occurs where revenue equals total cost; break-even output equals fixed costs divided by contribution per unit (simplified one-product model).
+
+Variable-cost-plus pricing adds a markup to variable cost (for example 50% on €480 yields a €720 selling price before tax). In competitive markets and contract bidding, distribution pricing similarly adds markup to variable cost. The absolute lower limit for a short-run accepting price is variable cost: any price above that still contributes to fixed costs, though chronically pricing below full cost destroys long-run viability. Price elasticity of demand compares the percentage change in quantity demanded with the percentage change in price. Demand is elastic when the quantity response exceeds the price change in percentage terms (elasticity magnitude greater than one); inelastic when the quantity response is smaller. Few substitutes and necessities tend toward inelastic demand; luxury and easily substituted goods toward elastic demand. Short-run and long-run elasticities can differ as habits and substitutes adjust.
+
+Place (distribution) is easy to underestimate, yet a strong product fails if customers cannot find it where they expect it. Depending on the product, firms use distributors, wholesalers (who buy and resell to businesses), retailers (who buy and resell to consumers), agents or brokers (common in B2B), online selling, telemarketing, and formats such as vending machines or kiosks. Channel partners bridge factory and final buyer: logistics, local information and advertising support. A beverage producer, for example, cannot sell every unit directly to households nationwide and relies on wholesale and retail chains — or carefully designed direct-to-consumer online paths that still solve availability and delivery.
+
+Promotion covers activities that inform potential customers and the wider public about the business, its products and their benefits. The promotion mix includes advertising on TV and radio, online and social media, newspapers and magazines, billboards, buses and trains; direct mailing; personal selling through salespeople; sales promotions; sponsorship of events, people or organisations; and public relations that build a favourable image and stakeholder relationships. Small budgets may emphasise websites, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Whatever the tools, promotion must match the target segment and stay consistent with product quality cues, price positioning and place.
+
+Mixing the four Ps means checking coherence for the chosen target. A niche refurbished-equipment offer typically combines a ready-to-use supported product, a price clearly below new equivalents yet above variable cost, low-inventory delivery-based place, and modest targeted promotion — not mass national TV. Premium new-product launches need matching price, selective place and heavier awareness advertising. Exam questions often probe whether students see that changing one P without adjusting the others can break the blend.
+
+Product: lines, mix width/depth, brands, relaunch, extensions, PLC stages, BCG matrix, Ansoff options.
+
+Price: cost-, competition- and demand-based approaches; contribution; break-even logic; elasticity.
+
+Place: channel partners and direct paths that close the gap to the buyer.
+
+Promotion: advertising, direct mail, personal selling, sales promotion, sponsorship, PR.
+
+Harmony: the four Ps must send one coherent value proposition to the target market.
+
+Four Ps: product, price, place, promotion — used as one coherent mix.
+
+Manage lines, brands, PLC stages and BCG roles inside the product P.
+
+Price with costs, competition, demand, contribution and elasticity in view.
+
+Place delivers access; promotion delivers information and persuasion.
+
+Mismatch among the Ps wastes budget and confuses customers.
+
+Chapter 6. Accounting — keeping record of business transactions
+Every business generates a stream of transactions: purchases, sales, borrowings, repayments, wages, rents and many others. Bookkeepers record those transactions from supporting documents such as invoices and receipts so that the firm can later present a clear picture of its financial status. The reports built from that record are called accounts, and together they form the financial statement of the business.
+
+This chapter explains the three main components of that statement — the balance sheet, the income statement (also called the profit and loss account), and the cash flow statement — and how to read them carefully. You will learn the balance-sheet identity, how assets and claims on assets are classified, how profit relates to equity, why depreciation matters, why profit is not the same as cash flow, how financial accounting differs from management accounting, and how common ratios help you judge liquidity, profitability, leverage and efficiency. Share-related figures that investors use when reading published statements are included where they support analysis.
+
+Throughout, the focus is on concepts and methods needed for the WU BBE entrance exam: original explanations, worked euro examples, typical exam traps, and true/false statements with reasons.
+
+6.1 What a balance sheet is
+
+A balance sheet is a snapshot of what a business owns and how that ownership was financed on a particular date. On one side it lists assets — the resources controlled by the business and used in its operations. On the other side it lists claims on those assets: liabilities (amounts owed to outsiders) and owner's equity (the residual claim of the owners). Because every euro bound in an asset must have come from somewhere, the two sides always add up to the same total.
+
+Balance sheet: A statement of a company's assets and of how those assets were financed by liabilities and owner's equity at a specific point in time.
+
+Assets: Resources the business owns or controls that are used for the business and that have economic value (for example equipment, inventory, receivables and cash).
+
+Liabilities: Debts and obligations owed to other persons, businesses or banks that must be repaid at a certain point in time and/or over a certain period. Funds are often provided by banks or suppliers; money owed to suppliers is also called trade credit or trade payables.
+
+Owner's equity (capital): The residual interest in the assets after deducting liabilities — the portion of assets not financed by debt. It reflects funds provided by owners or shareholders and profits retained in the business.
+
+This identity must hold because (1) all assets were funded either through equity or through liabilities, (2) all funds are somehow bound or invested in the business — even cash held in a bank account was funded through equity or liabilities and is now bound in that form — and (3) any increase in assets must be financed by an increase in either liabilities or equity.
+
+Assets are usually listed in a standard order. Fixed assets (also called non-current assets) normally have a lifespan of more than one year and are intended to be used in the company for longer than one year; they usually cannot be turned into cash so easily. Current assets have higher liquidity: they are usually not used longer than a year because they are used up, spent in production, or sold.
+
+Non-current (fixed) assets: Assets with a useful life of more than one year that are intended for longer-term use in the business. Examples: property, plant, premises, buildings, machinery, office equipment (including computers used in the office), and financial assets meant to be kept longer than a year.
+
+Current assets: Assets with higher liquidity that are normally used up, sold or converted into cash within one year. Examples: inventory (merchandise not yet sold), accounts receivable / debtors (trade receivables — money owed to the business), and cash.
+
+Intangible assets: Assets that cannot be seen or touched but still have value for the business, such as trademarks, patents, copyrights and acquired licences. They are assets just as tangible items are.
+
+Liabilities are split by timing. Current liabilities are debts or obligations due within one year. Non-current liabilities have a duration of more than one year. Equity is the difference of assets and liabilities and is an indicator of the wealth of the company.
+
+A high equity ratio indicates that a larger portion of assets was financed by the company's own resources (funds from owners or shareholders) rather than by creditors. Sufficient equity matters because (1) equity usually does not have to be repaid on a fixed schedule, (2) it helps the business stay relatively independent from its creditors, and (3) if the company records a loss, a larger equity cushion reduces the risk of over-indebtedness.
+
+Changes in the balance sheet depend on how a purchase is financed. If a firm buys software and pays cash, one asset (software) rises and another (cash) falls by the same amount: total assets remain unchanged. This is an asset swap. If instead the firm buys the software on credit, assets rise and liabilities rise by the same amount, so the balance-sheet total increases. The identity still holds in both cases.
+
+Valuing assets is important and tricky. The outstanding amount of a bank loan is usually clear, but the worth of a building many years after it was built is harder to pin down. Businesses may wish to present themselves favourably, yet they must follow legal rules and regulations so that balance-sheet information can be trusted. Exam questions often test awareness that carrying amounts are not the same as market prices.
+
+Assets = liabilities + equity at every reporting date.
+
+Non-current assets serve longer than one year; current assets turn over within a year and are more liquid.
+
+Intangible assets (patents, trademarks, licences) are still assets.
+
+Equity ratio = equity / total assets; higher equity supports independence and loss absorption.
+
+Cash purchases swap assets; credit purchases expand assets and liabilities together.
+
+Valuation follows legal rules — carrying amounts need not equal market values.
+
+6.2 Other components of the financial statement
+
+The balance sheet alone cannot show how a business performed over a period. It states assets, liabilities and equity on a certain day, but it does not report total sales (turnover), the cost of producing goods and services, or other expenses. The financial statement therefore combines three main components: the balance sheet (assets, liabilities and equity), the income statement or profit and loss account (revenues, costs and expenses), and the cash flow statement (inflows and outflows of cash). Together they reveal performance over time as well as the position at a date.
+
+Income statement (profit and loss account): A period statement that summarises all revenues, costs and expenses over a time span (for example a year) to determine whether the business made a profit or a loss.
+
+Revenues: Income (usually cash or accounts receivable) generated from selling goods or services to customers.
+
+Costs: Resources consumed in order to produce the goods or provide the services sold.
+
+If revenues exceed costs and expenses, the company has a profit. If costs and expenses are higher than revenue, it suffers a loss. Profit for the year increases owner's equity (typically through retained earnings); a loss decreases equity. You can therefore learn about profit either from the income statement or from the change in equity between two balance-sheet dates (other owner transactions aside).
+
+Cost of sales (also called cost of goods sold) covers costs directly tied to production — materials, labour linked to production, and manufacturing overhead. Administration costs, shipping to customers and sales-staff costs are not included in cost of sales; they are operating expenses below gross profit. Gross profit shows earnings after deducting the direct costs of producing the goods, before those further operating expenses.
+
+In accounting, expenditures and expenses are not the same. Expenditures are payments made to purchase assets (non-current or current). Expenses are costs that have expired or been "used up" in producing the goods or services sold — for example cost of sales, salaries, marketing, interest, insurance and rent.
+
+Depreciation: Recognition that the value of fixed assets decreases as they are used up over time. Without depreciation, asset values in the accounts would be overstated and financial information flawed. Depreciation is an expense in the income statement, but unlike wages or energy it does not cause an actual cash payment in the period when it is charged.
+
+Over a trading year, the balance sheet also changes for many other reasons: new equipment may be bought, inventory levels adjust, customers may still owe money (receivables), the firm may still owe suppliers (trade payables), and part of a bank loan may be repaid. Equity rises when the firm is profitable and falls when it makes a loss.
+
+Cash flow statement: A statement that reveals the flows of cash into and out of the business during a period, distinguishing operating, investing and financing activities. Cash is needed for day-to-day operations and for investing; a positive cash flow is not identical with a profit.
+
+Cash flow from operations — cash generated or used by the core business (for example collecting receivables, paying for materials, settling trade credit). This is usually treated as the most important section and should ideally be positive.
+
+Cash flow from investments — cash spent on long-term assets (plant, office equipment) or received from selling such assets. A negative investing cash flow often simply means the firm invested; it is not automatically a crisis signal.
+
+Cash flow from financing — cash from investors or creditors, and outflows for interest in some presentations, dividends, or debt repayment.
+
+At the bottom of the cash flow statement, the net change in cash and cash equivalents reconciles opening and closing cash. If that figure is positive, more cash is available for further activities such as investment, expansion or debt repayment.
+
+Financial statements combine balance sheet, income statement and cash flow statement.
+
+Profit = revenues − costs and expenses; profit raises equity, losses reduce it.
+
+Cost of sales is production-linked; gross profit is before broader operating expenses.
+
+Straight-line depreciation spreads cost evenly over useful life; land is not depreciated; depreciation is non-cash.
+
+Cash flows split into operating, investing and financing; profit ≠ cash flow.
+
+Negative investing cash flow often signals investment, not collapse.
+
+6.3 What can be learnt from reading a balance sheet and an income statement
+
+Balance sheets and income statements should always be read with caution. Asset values depend on valuation rules; depreciation may lower carrying amounts below what an outsider thinks an asset is "really" worth. Still, careful reading — especially comparing positions over time and against competitors in the same industry — answers important questions about structure and performance.
+
+Question 1 (balance sheet): Which assets does the business have — is there a higher percentage of current or non-current assets, and is that mix typical for this type of business?
+
+Question 2 (balance sheet): How has equity developed, and how have the assets been financed? Is there a higher share of long-term or short-term liabilities?
+
+Question 3 (balance sheet): Is there a balance between non-current assets and long-term financial resources (equity plus non-current liabilities)? Long-term assets should preferably be financed with long-term funds.
+
+Question 4 (income statement): How have revenues developed? Have costs — especially cost of sales — moved in line with revenues?
+
+Question 5 (income statement): How have profits or losses developed?
+
+Two further earnings ideas appear when statements are read in detail. Earnings before interest, taxes, depreciation and amortisation add back non-cash charges to focus on operating cash-like performance; deducting depreciation and amortisation yields earnings before interest and taxes, a common operating-result measure. You do not need to memorise every line of a published statement, but you should know that gross profit focuses on production margins, while operating result also reflects distribution and administration costs.
+
+Read statements cautiously: valuation and depreciation affect reported asset values.
+
+Compare over time and within the same industry.
+
+Balance sheet → asset mix, financing, long-term cover; income statement → revenue, costs, profit.
+
+Long-term assets should be backed by equity and/or non-current liabilities.
+
+Gross profit and operating result answer different margin questions.
+
+6.4 Types of accounting — financial versus management accounting
+
+Accounts exist because many stakeholders need reliable information on the financial situation of a business. Internal users include owners, managers and employees: they want to know whether the business is thriving. Managers decide on cost cuts, pricing and investment; owners ask whether the return justifies the capital at risk. External users include tax authorities, suppliers, competitors, investors, banks and the media.
+
+Financial accounting: Accounting aimed at producing information — such as the balance sheet and the income statement — that is of interest both inside the firm and to external decision makers (tax authorities, banks, investors). Key outputs appear in annual reports and, for many large businesses, in selected figures published on company websites.
+
+Managerial (management) accounting: Accounting focused on providing information for the management of the business so managers can decide where to cut costs, how to calculate prices, and how to allocate resources. It is primarily an internal decision-support tool.
+
+Auditing: Independent checking of accounts for authenticity by an auditing company. For some companies this check is mandatory. The result of the auditing process appears in the annual report.
+
+Managers use both forms: they need management-accounting detail for operational decisions, and they also care about financial-accounting outcomes because banks, tax authorities and investors read those published figures. The same transaction may therefore feed both systems, but the reports differ in audience, detail, legal form and often in time horizon (historical external reporting versus forward-looking internal analysis).
+
+Financial accounting — standardised, externally oriented, legal and tax relevance, annual (and interim) statements.
+
+Management accounting — flexible, internal, decision-oriented (pricing, cost control, budgets), often more frequent and detailed by product or department.
+
+Auditing — independent assurance that published financial accounts can be trusted.
+
+Stakeholders inside and outside the firm use accounting information.
+
+Financial accounting → external and legal reporting (balance sheet, income statement, cash flows).
+
+Management accounting → internal decisions on costs, prices and resource use.
+
+Auditing independently checks authenticity of accounts for assurance.
+
+Managers typically use both systems.
+
+6.5 Analysis of financial statements
+
+Figures from the balance sheet and income statement can be turned into ratios that shed light on liquidity (or solvency), profitability (profit relative to capital employed or turnover), financial efficiency (how effectively resources are used), and financial structure (equity ratio and debt ratio). Because ratios vary widely across industries, comparisons are meaningful mainly within the same industry or sector, or for one business over several years. There may also be different accepted ways to calculate a given ratio — always check the definition before comparing.
+
+Liquidity is the ability of a business to pay its bills and repay its debts on time. One approach uses working capital (circulating capital), which focuses on short-term assets and liabilities and indicates whether the firm can cover day-to-day bills such as electricity, rent and wages and buy inputs for production.
+
+Working capital should be positive: current assets above current liabilities. If not, part of non-current assets may have been financed by short-term liabilities, which can cause trouble when those liabilities fall due. A low working capital level may also mean too little cash or too much reliance on trade credit. Retailers that hold a lot of inventory often need higher working capital than pure service businesses. High inventory helps meet customer demand quickly but ties up money, takes space, and risks obsolescence.
+
+Working-capital and cash-flow problems are linked but not identical. Short-term borrowing or overdrafts can ease a cash shortage yet raise current liabilities and thus reduce working capital. Improving both often requires more equity or more long-term credit.
+
+The current ratio should exceed 1 and is often considered healthy roughly between 1.5 and 2 (rules of thumb, industry-dependent). The acid test excludes inventories for a stricter liquidity check, because inventories may not turn into cash reliably.
+
+Profitability relates profit to the size of the business. A small absolute profit may be inadequate relative to capital invested and risk taken. Common measures use profit before interest and tax relative to equity or to capital employed. Capital employed is often equity plus non-current liabilities (or assets minus current liabilities). Average capital employed (average of opening and closing) is sometimes used instead of a period-end figure.
+
+Financial efficiency asks how well resources generate activity. Asset turnover relates turnover (revenue) to average assets or to average net assets (assets minus long-term liabilities). Inventory (stock) turnover relates cost of sales to average inventory and shows how many times stock was sold or used and replaced in a year. High inventory turnover usually means goods move quickly and less cash is tied up in stock.
+
+When analysing listed companies, investors also use share-related figures published with financial results. These bridge the income statement and market prices. Earnings per share divide profit attributable to ordinary shareholders by the number of shares outstanding. A share buyback reduces shares outstanding and can raise earnings per share even if total profit is unchanged. The price-earnings ratio divides the current share price by earnings per share: a ratio of about 16 means an investor pays roughly €16 of price for €1 of earnings. A low price-earnings ratio may suggest undervaluation or simply high current earnings; a high or rising ratio may mean the shares look expensive relative to earnings, or that investors expect stronger future growth. Dividend yield expresses the dividend relative to the share price. Market capitalisation (shares outstanding × market price) gauges size but is not automatically a measure of fundamental value, because prices move for many reasons. Carrying value per share, closing and high/low prices, and dividend per share complete the usual key-stock set. Remember: after shares already trade on an exchange, a rise in market price does not by itself bring new cash into the company — only sellers benefit; new equity cash comes from issuing new shares.
+
+Compare ratios within an industry and over time; know the exact definition used.
+
+Liquidity: working capital, current ratio, acid test (excludes inventory).
+
+Profitability: relate profit to equity or capital employed — absolute profit is not enough.
+
+Structure: equity ratio and debt ratio; efficiency: asset and inventory turnover.
+
+Share metrics (earnings per share, price-earnings, dividend yield, market capitalisation) help investors but secondary price rises do not fund the issuer.
+
+Interpret carefully: high inventory helps sales yet ties up cash; negative investing cash flow can be healthy investment.

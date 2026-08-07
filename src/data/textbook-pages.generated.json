@@ -1,0 +1,93 @@
+{
+  "CHAPTER_TITLES": {
+    "2": "Basic economic concepts",
+    "3": "Focus on different types of businesses",
+    "4": "Forms of business ownership and sources of finance",
+    "5": "Marketing",
+    "6": "Accounting — keeping record of business transactions"
+  },
+  "CHAPTER_PAGES": {
+    "2": [
+      "/bbe-theory/p03.png",
+      "/bbe-theory/p04.png",
+      "/bbe-theory/p05.png",
+      "/bbe-theory/p06.png",
+      "/bbe-theory/p07.png",
+      "/bbe-theory/p08.png",
+      "/bbe-theory/p09.png",
+      "/bbe-theory/p10.png",
+      "/bbe-theory/p11.png",
+      "/bbe-theory/p12.png",
+      "/bbe-theory/p13.png",
+      "/bbe-theory/p14.png",
+      "/bbe-theory/p15.png",
+      "/bbe-theory/p16.png"
+    ],
+    "3": [
+      "/bbe-theory/p17.png",
+      "/bbe-theory/p18.png",
+      "/bbe-theory/p19.png",
+      "/bbe-theory/p20.png",
+      "/bbe-theory/p21.png",
+      "/bbe-theory/p22.png",
+      "/bbe-theory/p23.png",
+      "/bbe-theory/p24.png",
+      "/bbe-theory/p25.png",
+      "/bbe-theory/p26.png",
+      "/bbe-theory/p27.png"
+    ],
+    "4": [
+      "/bbe-theory/p28.png",
+      "/bbe-theory/p29.png",
+      "/bbe-theory/p30.png",
+      "/bbe-theory/p31.png",
+      "/bbe-theory/p32.png",
+      "/bbe-theory/p33.png",
+      "/bbe-theory/p34.png",
+      "/bbe-theory/p35.png",
+      "/bbe-theory/p36.png",
+      "/bbe-theory/p37.png",
+      "/bbe-theory/p38.png",
+      "/bbe-theory/p39.png",
+      "/bbe-theory/p40.png",
+      "/bbe-theory/p41.png",
+      "/bbe-theory/p42.png"
+    ],
+    "5": [
+      "/bbe-theory/p43.png",
+      "/bbe-theory/p44.png",
+      "/bbe-theory/p45.png",
+      "/bbe-theory/p46.png",
+      "/bbe-theory/p47.png",
+      "/bbe-theory/p48.png",
+      "/bbe-theory/p49.png",
+      "/bbe-theory/p50.png",
+      "/bbe-theory/p51.png",
+      "/bbe-theory/p52.png",
+      "/bbe-theory/p53.png",
+      "/bbe-theory/p54.png",
+      "/bbe-theory/p55.png",
+      "/bbe-theory/p56.png",
+      "/bbe-theory/p57.png",
+      "/bbe-theory/p58.png",
+      "/bbe-theory/p59.png"
+    ],
+    "6": [
+      "/bbe-theory/p60.png",
+      "/bbe-theory/p61.png",
+      "/bbe-theory/p62.png",
+      "/bbe-theory/p63.png",
+      "/bbe-theory/p64.png",
+      "/bbe-theory/p65.png",
+      "/bbe-theory/p66.png",
+      "/bbe-theory/p67.png",
+      "/bbe-theory/p68.png",
+      "/bbe-theory/p69.png",
+      "/bbe-theory/p70.png",
+      "/bbe-theory/p71.png",
+      "/bbe-theory/p72.png",
+      "/bbe-theory/p73.png"
+    ]
+  },
+  "pageCount": 74
+}

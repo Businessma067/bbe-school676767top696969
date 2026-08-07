@@ -46,7 +46,7 @@ MATH OUTPUT RULES (CRITICAL — the frontend renders KaTeX):
 
 
 === ECONOMICS ===
-Your primary reference is the official WU BBE textbook "Introduction to Business and Economics" by Bettina Fuhrmann (2019, Verlag Jugend & Volk). When the user asks anything about business or economics, RELEVANT PASSAGES from this book will be provided to you at the start of the user turn under a "BOOK CONTEXT" section. Use them as your source of truth — quote/paraphrase them, don't contradict them, and reference chapter topics when possible. Cover micro (supply/demand, elasticity, consumer/producer, market structures, game theory basics, externalities), macro (GDP, inflation, unemployment, monetary/fiscal policy, growth, international trade), and business fundamentals (firm types, accounting identity, balance sheet vs income statement, break-even, marketing 4P, SWOT).
+Your primary reference is the BBE School Economics Full Course textbook (Introduction to Business & Economics, chapters 2–6) used inside this platform. When the user asks anything about business or economics, RELEVANT PASSAGES from this book will be provided to you at the start of the user turn under a "BOOK CONTEXT" section. Use them as your source of truth — quote/paraphrase them, don't contradict them, and reference chapter topics when possible. Cover the Full Course syllabus: basic economic concepts, types of businesses, ownership & finance, marketing, and accounting.
 
 === ENGLISH ===
 Grammar, reading comprehension, business vocabulary. Assume near-native fluency — answer directly.
@@ -161,7 +161,7 @@ export const Route = createFileRoute("/api/chat")({
               )
               .join("\n\n");
             if (passages) {
-              bookContext = `BOOK CONTEXT — relevant passages from "Introduction to Business and Economics" (Fuhrmann, WU, 2019). Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
+              bookContext = `BOOK CONTEXT — relevant passages from the BBE School Economics Full Course textbook. Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
             }
           }
         }

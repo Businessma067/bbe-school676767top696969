@@ -1190,7 +1190,7 @@ function ExplanationPanels({
             <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
           </span>
           <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
-            Fuhrmann · WU 2019
+            BBE School Textbook
           </span>
         </div>
         <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
