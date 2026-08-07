@@ -11,7 +11,7 @@
  * - log, ln, 10^x, e^x, powers, roots, 1/x, x², %, !
  * - nPr / nCr, rand / randint
  * - π, Ans, seven memories (x,y,z,t,a,b,c)
- * - Fractions + F↔D toggle, exact π/√ attempts
+ * - Dist: Normalpdf/cdf, invNorm, Binompdf/cdf, Poissonpdf/cdf (TI-30X Pro DISTR menu)
  */
 
 export type AngleMode = "DEG" | "RAD" | "GRAD";
@@ -60,6 +60,74 @@ function nCr(n: number, r: number): number {
   let out = 1;
   for (let i = 1; i <= r; i++) out = (out * (n - r + i)) / i;
   return out;
+}
+
+/** Abramowitz & Stegun erf approximation (public domain formula). */
+function erf(x: number): number {
+  const sign = x < 0 ? -1 : 1;
+  x = Math.abs(x);
+  const a1 = 0.254829592;
+  const a2 = -0.284496736;
+  const a3 = 1.421413741;
+  const a4 = -1.453152027;
+  const a5 = 1.061405429;
+  const p = 0.3275911;
+  const t = 1 / (1 + p * x);
+  const y = 1 - ((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.exp(-x * x);
+  return sign * y;
+}
+
+function normalPdf(x: number, mu = 0, sigma = 1): number {
+  if (sigma <= 0) throw new Error("DOMAIN");
+  const z = (x - mu) / sigma;
+  return Math.exp(-0.5 * z * z) / (sigma * Math.sqrt(2 * Math.PI));
+}
+
+function normalCdf(lo: number, hi: number, mu = 0, sigma = 1): number {
+  if (sigma <= 0) throw new Error("DOMAIN");
+  const z = (x: number) => (x - mu) / (sigma * Math.SQRT2);
+  return 0.5 * (erf(z(hi)) - erf(z(lo)));
+}
+
+function invNorm(area: number, mu = 0, sigma = 1): number {
+  if (sigma <= 0 || area <= 0 || area >= 1) throw new Error("DOMAIN");
+  // Binary search on normalCdf(-Inf, x)
+  let lo = mu - 10 * sigma;
+  let hi = mu + 10 * sigma;
+  for (let i = 0; i < 80; i++) {
+    const mid = (lo + hi) / 2;
+    const p = normalCdf(-1e99, mid, mu, sigma);
+    if (p < area) lo = mid;
+    else hi = mid;
+  }
+  return (lo + hi) / 2;
+}
+
+function binomPdf(n: number, p: number, x: number): number {
+  if (!Number.isInteger(n) || !Number.isInteger(x) || n < 0 || x < 0 || x > n || p < 0 || p > 1)
+    throw new Error("DOMAIN");
+  return nCr(n, x) * p ** x * (1 - p) ** (n - x);
+}
+
+function binomCdf(n: number, p: number, x: number): number {
+  if (!Number.isInteger(n) || !Number.isInteger(x) || n < 0 || x < 0 || p < 0 || p > 1)
+    throw new Error("DOMAIN");
+  let s = 0;
+  const up = Math.min(x, n);
+  for (let k = 0; k <= up; k++) s += binomPdf(n, p, k);
+  return s;
+}
+
+function poissonPdf(mu: number, x: number): number {
+  if (mu < 0 || !Number.isInteger(x) || x < 0) throw new Error("DOMAIN");
+  return (Math.exp(-mu) * mu ** x) / factorial(x);
+}
+
+function poissonCdf(mu: number, x: number): number {
+  if (mu < 0 || !Number.isInteger(x) || x < 0) throw new Error("DOMAIN");
+  let s = 0;
+  for (let k = 0; k <= x; k++) s += poissonPdf(mu, k);
+  return s;
 }
 
 function gcd(a: number, b: number): number {
@@ -513,7 +581,9 @@ export class Ti30Engine {
       }
 
       if (tok.t === "id") {
-        const id = take().v as string;
+        const idTok = take();
+        if (idTok.t !== "id") throw new Error("SYNTAX");
+        const id = idTok.v;
         if (id === "pi") return Math.PI;
         if (id === "e" && peek()?.t === "lp") {
           // e( ) not used; bare e is Euler
@@ -541,7 +611,6 @@ export class Ti30Engine {
           return nextRand(env);
         }
         if (id === "root") {
-          // root(y,x) = x-th root of y  OR  root(x) = sqrt
           const args = callArgs();
           if (args.length === 1) {
             if (args[0] < 0) throw new Error("DOMAIN");
@@ -553,6 +622,41 @@ export class Ti30Engine {
             return Math.sign(y) * Math.abs(y) ** (1 / x);
           }
           throw new Error("SYNTAX");
+        }
+
+        // DISTR menu (TI-30X Pro MultiView documented)
+        if (
+          id === "normalpdf" ||
+          id === "normalcdf" ||
+          id === "invnorm" ||
+          id === "binompdf" ||
+          id === "binomcdf" ||
+          id === "poissonpdf" ||
+          id === "poissoncdf"
+        ) {
+          const args = callArgs();
+          switch (id) {
+            case "normalpdf":
+              return normalPdf(args[0], args[1] ?? 0, args[2] ?? 1);
+            case "normalcdf":
+              return normalCdf(args[0], args[1], args[2] ?? 0, args[3] ?? 1);
+            case "invnorm":
+              return invNorm(args[0], args[1] ?? 0, args[2] ?? 1);
+            case "binompdf":
+              if (args.length !== 3) throw new Error("SYNTAX");
+              return binomPdf(args[0], args[1], args[2]);
+            case "binomcdf":
+              if (args.length !== 3) throw new Error("SYNTAX");
+              return binomCdf(args[0], args[1], args[2]);
+            case "poissonpdf":
+              if (args.length !== 2) throw new Error("SYNTAX");
+              return poissonPdf(args[0], args[1]);
+            case "poissoncdf":
+              if (args.length !== 2) throw new Error("SYNTAX");
+              return poissonCdf(args[0], args[1]);
+            default:
+              throw new Error("SYNTAX");
+          }
         }
 
         // function(
@@ -594,6 +698,32 @@ export class Ti30Engine {
       min: Math.min(...xs),
       max: Math.max(...xs),
     };
+  }
+
+  /** 2-Var stats on L1 (x) and L2 (y). */
+  stats2Var(): Record<string, number> | null {
+    const xs = this.lists.L1;
+    const ys = this.lists.L2;
+    const n = Math.min(xs.length, ys.length);
+    if (n === 0) return null;
+    const x = xs.slice(0, n);
+    const y = ys.slice(0, n);
+    const sx = x.reduce((a, b) => a + b, 0);
+    const sy = y.reduce((a, b) => a + b, 0);
+    const mx = sx / n;
+    const my = sy / n;
+    let sxx = 0;
+    let syy = 0;
+    let sxy = 0;
+    for (let i = 0; i < n; i++) {
+      sxx += (x[i] - mx) ** 2;
+      syy += (y[i] - my) ** 2;
+      sxy += (x[i] - mx) * (y[i] - my);
+    }
+    const r = sxx > 0 && syy > 0 ? sxy / Math.sqrt(sxx * syy) : 0;
+    const b = sxx > 0 ? sxy / sxx : 0;
+    const a = my - b * mx;
+    return { n, meanx: mx, meany: my, sumx: sx, sumy: sy, r, a, b, r2: r * r };
   }
 
   /** Function table y = f(x) for Auto mode — documented table feature. */

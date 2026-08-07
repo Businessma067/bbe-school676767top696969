@@ -3,7 +3,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthNav } from "@/components/AuthNav";
-import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
+import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 import { cn } from "@/lib/utils";
@@ -549,6 +550,7 @@ function EnglishTasks() {
   };
 
   return (
+    <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
         <div className={PRACTICE_HEADER_INNER}>
@@ -806,8 +808,8 @@ function EnglishTasks() {
           )}
         </main>
 
-        {/* Right panel — Reading shows the passage with highlight; Grammar shows the detailed AI breakdown. */}
-        <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
+        {/* Right panel — Calculator when open; else Reading / Grammar panels. */}
+        <PracticeRightSlot>
           {isGrammarCase ? (
             <GrammarExplanationPanel
               explanation={explanation}
@@ -825,10 +827,11 @@ function EnglishTasks() {
               onClose={() => setExplanation(null)}
             />
           )}
-        </aside>
+        </PracticeRightSlot>
 
       </div>
     </div>
+    </PracticeCalcProvider>
   );
 }
 

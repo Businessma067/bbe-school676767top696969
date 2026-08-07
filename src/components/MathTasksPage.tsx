@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { AuthNav } from "@/components/AuthNav";
-import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
+import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import {
@@ -132,6 +133,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
     tier === "demo" ? "Demo" : tier === "lite" ? "Lite Course" : "Full Course";
 
   return (
+    <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
         <div className={PRACTICE_HEADER_INNER}>
@@ -484,7 +486,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
           )}
         </main>
 
-        <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
+        <PracticeRightSlot>
           <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
             <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
               <NotebookPen className="h-3.5 w-3.5" /> Theory
@@ -504,7 +506,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               </div>
             )}
           </div>
-        </aside>
+        </PracticeRightSlot>
       </div>
 
       {customResetOpen && (
@@ -520,6 +522,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         />
       )}
     </div>
+    </PracticeCalcProvider>
   );
 }
 

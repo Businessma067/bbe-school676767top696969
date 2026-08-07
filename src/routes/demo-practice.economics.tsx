@@ -11,6 +11,8 @@ import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { scrubStatementHints } from "@/lib/case-context";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -243,6 +245,7 @@ function EconomicsTasks() {
   };
 
   return (
+    <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
         <div className={PRACTICE_HEADER_INNER}>
@@ -568,8 +571,8 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: AI Explanation Engine when active, Theory otherwise. */}
-        <aside className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0">
+        {/* Right panel: Calculator (when open) else AI Explanation / Theory. */}
+        <PracticeRightSlot>
           {explanation ? (
             <ExplanationPanels
               state={explanation}
@@ -598,7 +601,7 @@ function EconomicsTasks() {
               )}
             </div>
           )}
-        </aside>
+        </PracticeRightSlot>
       </div>
 
       {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
@@ -618,6 +621,7 @@ function EconomicsTasks() {
         />
       )}
     </div>
+    </PracticeCalcProvider>
   );
 }
 
