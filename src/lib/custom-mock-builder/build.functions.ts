@@ -20,6 +20,7 @@ import { scrubStatementHints } from "@/lib/case-context";
 const Input = z.object({
   subtopics: z.array(z.string().min(1)).min(1).max(40),
   questionCount: z.number().int().min(1).max(50),
+  topicCounts: z.record(z.string(), z.number().int().min(0)).optional(),
 });
 
 type CaseRow = {
@@ -55,15 +56,16 @@ function compareSubtopicId(a: string, b: string): number {
 
 /**
  * Pick for a custom mock in book/subtopic order:
- * - selected subtopics appear as contiguous blocks (e.g. all 2.3, then 4.5, then 6.2);
- * - within each subtopic the pool is shuffled so CASE …01, …02 order is not fixed;
- * - counts are distributed fairly across subtopics that still have available cases.
- * Legacy chapter-level rows (not in the selected subtopic list) append at the end if needed.
+ * - selected subtopics appear as contiguous blocks;
+ * - within each subtopic the pool is shuffled;
+ * - if topicCounts is provided, those targets are used (then capped by pool + remainder redistributed);
+ * - otherwise equal round-robin allotment.
  */
 function pickRandomFromSubtopics(
   pool: CaseRow[],
   subtopics: string[],
   questionCount: number,
+  topicCounts?: Record<string, number>,
 ): CaseRow[] {
   const bySub = new Map<string, CaseRow[]>();
   for (const row of pool) {
@@ -83,20 +85,49 @@ function pickRandomFromSubtopics(
   ];
 
   const allot = new Map<string, number>(orderedKeys.map((k) => [k, 0]));
-  let remaining = questionCount;
-  while (remaining > 0) {
-    let progressed = false;
+
+  if (topicCounts && Object.keys(topicCounts).length > 0) {
+    // Seed with requested counts (only for selected subtopics that have pool)
+    let remaining = questionCount;
     for (const k of orderedKeys) {
-      const used = allot.get(k) ?? 0;
+      if (k === "__mixed__") continue;
+      const want = Math.max(0, Math.floor(topicCounts[k] ?? 0));
       const avail = bySub.get(k)?.length ?? 0;
-      if (used < avail) {
-        allot.set(k, used + 1);
-        remaining--;
-        progressed = true;
-        if (remaining === 0) break;
-      }
+      const take = Math.min(want, avail, remaining);
+      allot.set(k, take);
+      remaining -= take;
     }
-    if (!progressed) break;
+    // Redistribute leftovers (undersupplied pools / rounding) fairly among keys with spare capacity
+    while (remaining > 0) {
+      let progressed = false;
+      for (const k of orderedKeys) {
+        const used = allot.get(k) ?? 0;
+        const avail = bySub.get(k)?.length ?? 0;
+        if (used < avail) {
+          allot.set(k, used + 1);
+          remaining--;
+          progressed = true;
+          if (remaining === 0) break;
+        }
+      }
+      if (!progressed) break;
+    }
+  } else {
+    let remaining = questionCount;
+    while (remaining > 0) {
+      let progressed = false;
+      for (const k of orderedKeys) {
+        const used = allot.get(k) ?? 0;
+        const avail = bySub.get(k)?.length ?? 0;
+        if (used < avail) {
+          allot.set(k, used + 1);
+          remaining--;
+          progressed = true;
+          if (remaining === 0) break;
+        }
+      }
+      if (!progressed) break;
+    }
   }
 
   const picked: CaseRow[] = [];
@@ -198,9 +229,21 @@ export const buildCustomMock = createServerFn({ method: "POST" })
       throw new Error("No Full Course questions found for the selected subtopics yet.");
     }
 
-    // Fair pick per subtopic; display order is contiguous blocks by book order
-    // (e.g. 2.3… then 4.5… then 6.2…). Within each block the cases are shuffled.
-    const picked = pickRandomFromSubtopics(pool, subtopics, questionCount);
+    let topicCounts = data.topicCounts;
+    if (topicCounts) {
+      // Keep only selected ids; if sum ≠ questionCount, drop and use equal (safe fallback)
+      const cleaned: Record<string, number> = {};
+      let sum = 0;
+      for (const id of subtopics) {
+        const n = Math.max(0, Math.floor(topicCounts[id] ?? 0));
+        cleaned[id] = n;
+        sum += n;
+      }
+      topicCounts = sum === questionCount ? cleaned : undefined;
+    }
+
+    // Weighted (or equal) pick per subtopic; display order is contiguous blocks by book order.
+    const picked = pickRandomFromSubtopics(pool, subtopics, questionCount, topicCounts);
     if (picked.length < questionCount) {
       throw new Error(
         `Only ${picked.length} Full Course questions available for the selected chapters (need ${questionCount}). Pick more chapters/subtopics or fewer questions.`,

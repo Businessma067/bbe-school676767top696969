@@ -4,16 +4,19 @@ import { SCORING_CONFIG } from "@/config/scoring-config";
 /** Minutes allotted per question for Custom Mock Builder timed mode. */
 export const CUSTOM_MOCK_MINUTES_PER_QUESTION = 2;
 
-/** Max questions when chapter 2 or 3 subtopics are selected. */
+/** Hard cap for an entire custom mock (UI + API). */
+export const CUSTOM_MOCK_MAX_QUESTIONS = 50;
+
+/** Per-chapter soft caps (never exceed CUSTOM_MOCK_MAX_QUESTIONS for a mock). */
 export const CHAPTER_QUESTION_CAPS: Record<number, number> = {
   2: 50,
   3: 50,
   4: 50,
-  5: 100,
-  6: 160,
+  5: 50,
+  6: 50,
 };
 
-export const DEFAULT_QUESTION_CAP = 50;
+export const DEFAULT_QUESTION_CAP = CUSTOM_MOCK_MAX_QUESTIONS;
 
 /** @deprecated Presets removed — use free 1…cap input. */
 export const CUSTOM_MOCK_QUESTION_PRESETS = [] as const;
@@ -140,12 +143,13 @@ export function displayTitleForCustomMock(row: {
   return row.title;
 }
 
-/** Highest cap among selected book chapters (e.g. ch2→30, ch3→50). */
+/** Cap for the whole mock — always ≤ CUSTOM_MOCK_MAX_QUESTIONS. */
 export function maxQuestionsForChapters(chapterNums: number[]): number {
-  if (chapterNums.length === 0) return DEFAULT_QUESTION_CAP;
-  return Math.max(
+  if (chapterNums.length === 0) return CUSTOM_MOCK_MAX_QUESTIONS;
+  const raw = Math.max(
     ...chapterNums.map((n) => CHAPTER_QUESTION_CAPS[n] ?? DEFAULT_QUESTION_CAP),
   );
+  return Math.min(raw, CUSTOM_MOCK_MAX_QUESTIONS);
 }
 
 export function clampQuestionCount(count: number, max: number): number {

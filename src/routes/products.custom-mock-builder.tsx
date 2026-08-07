@@ -1,7 +1,8 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
+  CUSTOM_MOCK_MAX_QUESTIONS,
   CUSTOM_MOCK_MINUTES_PER_QUESTION,
   clampQuestionCount,
   displayTitleForCustomMock,
@@ -16,7 +17,11 @@ import {
 } from "@/lib/custom-mock-builder/client";
 import { buildCustomMock } from "@/lib/custom-mock-builder/build.functions";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
-import { chaptersFromSubtopicIds, getCustomMockBookChapters } from "@/data/economics-subtopics";
+import {
+  chaptersFromSubtopicIds,
+  findSubtopic,
+  getCustomMockBookChapters,
+} from "@/data/economics-subtopics";
 import { getCurrentAuthState } from "@/lib/auth-ui";
 import { clearSession, loadSession } from "@/lib/mock-exam-session";
 import {
@@ -26,6 +31,14 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { TopicWeightSelector } from "@/components/custom-mock/TopicWeightSelector";
+import {
+  balancedPoint,
+  buildWeightedTopics,
+  topicCountsRecord,
+  type TopicWeightTopic,
+  type Vec2,
+} from "@/lib/topic-weight-engine";
 import { BookOpen, ChevronDown, Clock, Loader2, PlayCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -52,11 +65,13 @@ function CustomMockBuilderPage() {
 
   const [authReady, setAuthReady] = useState(false);
   const [selectedSubtopics, setSelectedSubtopics] = useState<string[]>([]);
+  /** Chapters start collapsed. */
   const [expanded, setExpanded] = useState<Record<number, boolean>>(() =>
-    Object.fromEntries(bookChapters.map((c) => [c.num, true])),
+    Object.fromEntries(bookChapters.map((c) => [c.num, false])),
   );
   const [questionCount, setQuestionCount] = useState(10);
   const [customCountDraft, setCustomCountDraft] = useState("10");
+  const [weightPoint, setWeightPoint] = useState<Vec2>(balancedPoint());
   const [building, setBuilding] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<CustomMockSummary[] | null>(null);
@@ -90,7 +105,7 @@ function CustomMockBuilderPage() {
 
   const maxQuestions = useMemo(() => {
     const caps = chaptersFromSubtopicIds(selectedSubtopics);
-    return maxQuestionsForChapters(caps);
+    return Math.min(maxQuestionsForChapters(caps), CUSTOM_MOCK_MAX_QUESTIONS);
   }, [selectedSubtopics]);
 
   useEffect(() => {
@@ -106,6 +121,28 @@ function CustomMockBuilderPage() {
     setQuestionCount(next);
     setCustomCountDraft(String(next));
   };
+
+  const weightTopics: TopicWeightTopic[] = useMemo(() => {
+    return [...selectedSubtopics]
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+      .map((id) => {
+        const meta = findSubtopic(id);
+        return {
+          id,
+          label: meta ? `${meta.id} ${meta.title}` : id,
+          shortLabel: id,
+        };
+      });
+  }, [selectedSubtopics]);
+
+  const weighted = useMemo(
+    () => buildWeightedTopics(weightTopics, weightPoint, questionCount, { snap: false }),
+    [weightTopics, weightPoint, questionCount],
+  );
+
+  const onWeightPointChange = useCallback((p: Vec2) => {
+    setWeightPoint(p);
+  }, []);
 
   const durationMinutes = durationMinutesForQuestionCount(questionCount);
   const canBuild = selectedSubtopics.length > 0 && !building;
@@ -135,6 +172,7 @@ function CustomMockBuilderPage() {
       const args: GenerateArgs = {
         subtopics: selectedSubtopics,
         questionCount,
+        topicCounts: topicCountsRecord(weighted.topics),
       };
       const result = await buildFn({ data: args });
       const row = await fetchCustomMockById(result.id);
@@ -214,7 +252,7 @@ function CustomMockBuilderPage() {
       />
 
       <main className="px-6 py-12 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <BookOpen className="h-3.5 w-3.5 text-[#8B5E3C]" />
@@ -226,131 +264,150 @@ function CustomMockBuilderPage() {
               Custom Mock Builder
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
-              Pick textbook subtopics (2.1, 2.2, …) and build a mock from existing Full Course
-              questions — no AI.
+              Pick textbook subtopics, shape the mix on the polygon, and build a mock from Full
+              Course questions — up to {CUSTOM_MOCK_MAX_QUESTIONS}.
             </p>
           </div>
 
           <section
-            className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8"
+            className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-7"
             style={{ borderTop: "4px solid #8B5E3C" }}
           >
-            <h2 className="font-display text-xl font-semibold">Select book subtopics</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              From Fuhrmann — Introduction to Business and Economics (same TOC as Full Course
-              theory).
-            </p>
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-start">
+              {/* LEFT — subtopic picker (collapsed by default) */}
+              <div className="min-w-0">
+                <h2 className="font-display text-xl font-semibold">Select book subtopics</h2>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Expand a chapter and tick sections. Topics appear as vertices on the right.
+                </p>
 
-            <ul className="mt-5 space-y-3">
-              {bookChapters.map((ch) => {
-                const open = expanded[ch.num] !== false;
-                const ids = ch.subtopics.map((s) => s.id);
-                const selectedInCh = ids.filter((id) => selectedSubtopics.includes(id)).length;
-                const allOn = selectedInCh === ids.length;
-                return (
-                  <li key={ch.num} className="overflow-hidden rounded-xl border border-border">
-                    <div className="flex items-stretch bg-secondary/30">
-                      <button
-                        type="button"
-                        onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !open }))}
-                        className="flex flex-1 items-center gap-2 px-4 py-3 text-left"
-                      >
-                        <ChevronDown
-                          className={cn(
-                            "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
-                            open ? "rotate-0" : "-rotate-90",
-                          )}
-                        />
-                        <span className="font-display text-sm font-semibold">Chapter {ch.num}</span>
-                        <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
-                        {selectedInCh > 0 && (
-                          <span className="ml-auto shrink-0 rounded-full bg-[#8B5E3C]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8B5E3C]">
-                            {selectedInCh}/{ids.length}
-                          </span>
+                <ul className="mt-5 space-y-2">
+                  {bookChapters.map((ch) => {
+                    const open = expanded[ch.num] === true;
+                    const ids = ch.subtopics.map((s) => s.id);
+                    const selectedInCh = ids.filter((id) => selectedSubtopics.includes(id)).length;
+                    const allOn = selectedInCh === ids.length && ids.length > 0;
+                    return (
+                      <li key={ch.num} className="overflow-hidden rounded-xl border border-border">
+                        <div className="flex items-stretch bg-secondary/30">
+                          <button
+                            type="button"
+                            onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !open }))}
+                            className="flex flex-1 items-center gap-2 px-3 py-2.5 text-left sm:px-4"
+                          >
+                            <ChevronDown
+                              className={cn(
+                                "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
+                                open ? "rotate-0" : "-rotate-90",
+                              )}
+                            />
+                            <span className="font-display text-sm font-semibold">
+                              Chapter {ch.num}
+                            </span>
+                            <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
+                            {selectedInCh > 0 && (
+                              <span className="ml-auto shrink-0 rounded-full bg-[#8B5E3C]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8B5E3C]">
+                                {selectedInCh}/{ids.length}
+                              </span>
+                            )}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => toggleChapterAll(ch.num)}
+                            className="shrink-0 border-l border-border px-3 text-[11px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+                          >
+                            {allOn ? "Clear" : "All"}
+                          </button>
+                        </div>
+                        {open && (
+                          <ul className="divide-y divide-border/60 px-2 py-1">
+                            {ch.subtopics.map((s) => {
+                              const checked = selectedSubtopics.includes(s.id);
+                              return (
+                                <li key={s.id}>
+                                  <label
+                                    className={cn(
+                                      "flex cursor-pointer items-start gap-3 rounded-lg px-3 py-2.5 transition-colors",
+                                      checked ? "bg-[#8B5E3C]/5" : "hover:bg-secondary/40",
+                                    )}
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      className="mt-0.5 h-4 w-4 rounded border-border accent-[#8B5E3C]"
+                                      checked={checked}
+                                      onChange={() => toggleSubtopic(s.id)}
+                                    />
+                                    <span>
+                                      <span className="text-sm font-semibold tabular-nums">
+                                        {s.id}
+                                      </span>
+                                      <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                        {s.title}
+                                      </span>
+                                    </span>
+                                  </label>
+                                </li>
+                              );
+                            })}
+                          </ul>
                         )}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => toggleChapterAll(ch.num)}
-                        className="shrink-0 border-l border-border px-3 text-[11px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
-                      >
-                        {allOn ? "Clear" : "All"}
-                      </button>
-                    </div>
-                    {open && (
-                      <ul className="divide-y divide-border/60 px-2 py-1">
-                        {ch.subtopics.map((s) => {
-                          const checked = selectedSubtopics.includes(s.id);
-                          return (
-                            <li key={s.id}>
-                              <label
-                                className={cn(
-                                  "flex cursor-pointer items-start gap-3 rounded-lg px-3 py-2.5 transition-colors",
-                                  checked ? "bg-[#8B5E3C]/5" : "hover:bg-secondary/40",
-                                )}
-                              >
-                                <input
-                                  type="checkbox"
-                                  className="mt-0.5 h-4 w-4 rounded border-border accent-[#8B5E3C]"
-                                  checked={checked}
-                                  onChange={() => toggleSubtopic(s.id)}
-                                />
-                                <span>
-                                  <span className="text-sm font-semibold tabular-nums">{s.id}</span>
-                                  <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
-                                    {s.title}
-                                  </span>
-                                </span>
-                              </label>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+                      </li>
+                    );
+                  })}
+                </ul>
 
-            <h2 className="mt-8 font-display text-xl font-semibold">Number of Questions</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Choose any count from 1 to {maxQuestions}. Timed mode uses{" "}
-              {CUSTOM_MOCK_MINUTES_PER_QUESTION} minutes per question.
-            </p>
-            <div className="mt-4 flex flex-wrap items-center gap-2">
-              <label htmlFor="custom-q-count" className="text-sm font-medium text-foreground">
-                Questions
-              </label>
-              <input
-                id="custom-q-count"
-                type="number"
-                min={1}
-                max={maxQuestions}
-                value={customCountDraft}
-                onChange={(e) => setCustomCountDraft(e.target.value)}
-                onBlur={() => applyQuestionCount(Number(customCountDraft))}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    e.preventDefault();
-                    applyQuestionCount(Number(customCountDraft));
-                  }
-                }}
-                className="w-28 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]"
-              />
-              <span className="text-xs text-muted-foreground">1–{maxQuestions}</span>
-            </div>
+                <h2 className="mt-8 font-display text-lg font-semibold">Number of Questions</h2>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  1–{maxQuestions} for the whole mock · {CUSTOM_MOCK_MINUTES_PER_QUESTION} min each
+                  timed
+                </p>
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  <label htmlFor="custom-q-count" className="text-sm font-medium text-foreground">
+                    Questions
+                  </label>
+                  <input
+                    id="custom-q-count"
+                    type="number"
+                    min={1}
+                    max={maxQuestions}
+                    value={customCountDraft}
+                    onChange={(e) => setCustomCountDraft(e.target.value)}
+                    onBlur={() => applyQuestionCount(Number(customCountDraft))}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        e.preventDefault();
+                        applyQuestionCount(Number(customCountDraft));
+                      }
+                    }}
+                    className="w-28 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]"
+                  />
+                  <span className="text-xs text-muted-foreground">max {CUSTOM_MOCK_MAX_QUESTIONS}</span>
+                </div>
 
-            <div className="mt-4 flex flex-wrap gap-4 text-xs text-muted-foreground">
-              <span className="inline-flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5" />
-                {durationMinutes} min timed
-              </span>
-              {selectedSubtopics.length > 0 && (
-                <span>
-                  {selectedSubtopics.length} subtopic
-                  {selectedSubtopics.length > 1 ? "s" : ""}
-                </span>
-              )}
+                <div className="mt-3 flex flex-wrap gap-4 text-xs text-muted-foreground">
+                  <span className="inline-flex items-center gap-1.5">
+                    <Clock className="h-3.5 w-3.5" />
+                    {durationMinutes} min timed
+                  </span>
+                  {selectedSubtopics.length > 0 && (
+                    <span>
+                      {selectedSubtopics.length} subtopic
+                      {selectedSubtopics.length > 1 ? "s" : ""}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* RIGHT — Topic Weight Selector */}
+              <div className="min-w-0 lg:sticky lg:top-24">
+                <TopicWeightSelector
+                  topics={weightTopics}
+                  questionCount={questionCount}
+                  point={weightPoint}
+                  onPointChange={onWeightPointChange}
+                  title="Topic Weight Selector"
+                />
+              </div>
             </div>
 
             {error && (
@@ -394,7 +451,7 @@ function CustomMockBuilderPage() {
               <p className="text-sm text-muted-foreground">Loading…</p>
             ) : history.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center text-sm text-muted-foreground">
-                No custom mocks yet. Select subtopics above and create your first one.
+                No custom mocks yet. Select subtopics and shape the mix above.
               </div>
             ) : (
               <div className="grid gap-4">

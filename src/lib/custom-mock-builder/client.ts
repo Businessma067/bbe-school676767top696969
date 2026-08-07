@@ -119,4 +119,6 @@ export function readCachedCustomMock(id: string): CustomMockRow | null {
 export type GenerateArgs = {
   subtopics: string[];
   questionCount: number;
+  /** Per-subtopic question targets from the Topic Weight Selector. */
+  topicCounts?: Record<string, number>;
 };

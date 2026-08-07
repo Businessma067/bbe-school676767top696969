@@ -28,6 +28,8 @@ export type CustomMockSummary = {
 export type GenerateCustomMockInput = {
   subtopics: string[];
   questionCount: number;
+  /** Per-subtopic question targets (sum must equal questionCount). */
+  topicCounts?: Record<string, number>;
 };
 
 export type GeneratedQuestionPayload = {
