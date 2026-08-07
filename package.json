@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "textbook:build": "node textbook/export-content.mjs && py textbook/generate_pdf.py && node textbook/rasterize.mjs",
+    "textbook:build": "node textbook/export-content.mjs && node textbook/export-theory-md.mjs && py textbook/generate_pdf.py && node textbook/rasterize.mjs",
+    "textbook:theory": "node textbook/export-content.mjs && node textbook/export-theory-md.mjs",
     "textbook:embeddings": "node --env-file=.env textbook/build-embeddings.mjs"
   },
   "dependencies": {

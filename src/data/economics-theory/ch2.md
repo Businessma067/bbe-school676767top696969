@@ -1,333 +1,168 @@
 # Chapter 2 — Basic economic concepts
 
-> **Chapter overview**
-> Before you can judge how a business is run, you need a picture of the economy it sits inside — and the basic ideas that shape every economic choice. This chapter introduces scarcity, opportunity cost, markets, supply and demand, and competition. These concepts appear again throughout the BBE course and directly frame how Tina and Steve think about founding T&S Computer Services and how AT&S fits into wider supply chains.
+Every purchase, every job offer, and every business idea sits inside the same system of people exchanging scarce resources, and this chapter is a map of that system. You will move from everyday exchange through scarcity and opportunity cost into how economies organise decisions, how markets clear, and why competition matters, until the exam language starts to feel familiar rather than foreign.
 
-> **Learning path**
-> - **2.1** — See how households, businesses, and individuals exchange goods and services, and why scarcity makes economic decisions unavoidable.
-> - **2.2** — Understand opportunity cost using Tina and Steve's career choice and the 35,000 euros salary alternative.
-> - **2.3** — Distinguish microeconomics from macroeconomics and what economics as a science tries to explain.
-> - **2.4** — Trace the circular flow of goods, services, and money; money's three functions; inflation and the ECB's 2% target; division of labour and specialisation.
-> - **2.5** — Compare planned economies, free market economies, and social or eco-social market economies.
-> - **2.6** — Apply the laws of supply and demand, find market equilibrium at 150 euros per hour, and link money supply to inflation.
-> - **2.7** — Recognise monopoly, oligopoly, cartels, and perfect competition — and where Tina and Steve might face limited local competition.
+## Learning objectives
 
----
+- Explain how households and businesses participate in exchange, and define what counts as a business.
+- Apply scarcity and opportunity cost to household, firm, and government choices without confusing scarcity with poverty.
+- Distinguish microeconomics from macroeconomics as two lenses on the same scarcity problem.
+- Trace the circular flow among households, businesses, and government, and explain how specialisation and division of labour raise productivity.
+- Compare market, planned, and mixed systems by who decides what, how, and for whom.
+- Use supply, demand, ceteris paribus, equilibrium, surplus and shortage, and competition to reason about market outcomes.
 
-## 2.1 Being part of the economy
+## 2.1 You are already in the economy
 
-> **In this section**
-> You will see that Tina and Steve were already part of the economy as consumers long before they became entrepreneurs — and that every participant depends on exchange because resources are scarce.
+Saturday at the campus gate, Mira sells repaired second-hand bikes from a fold-out stand near the tram stop, taking cash or card for a tuned bike while paying a workshop for spare parts and renting storage for the winter. Across the street a household buys tram tickets, groceries, and streaming, and although nobody here is studying economics in the moment, every exchange is the **economy** at work.
 
-Running a business places Tina and Steve inside the economy as entrepreneurs. Firms supply goods — computers, for example — and services — such as installing software — to people who need those offerings to satisfy their needs. A customer may need a working computer and ongoing technical support. Businesses have needs too. Manufacturers of smartphones, tablets, and laptops may depend on printed circuit boards (PCBs) from AT&S. AT&S, in turn, needs raw materials and a workforce to produce those boards. Individuals also trade directly: selling a house, an apartment, or a used car; swapping home-grown vegetables or flowers for a bottle of wine. Across the economy, people and organisations exchange goods and services to fulfil needs and wants.
+**Business** — A business is an entity that offers **goods and/or services** to customers. It does not produce mainly for the owner's private household alone; it serves customers, and it usually charges a **price** (or another payment) so something of value comes back.
 
-Tina and Steve were embedded in this network long before they launched their venture. As members of private households, they bought goods and services from many businesses. Like countless other households, they require food, housing, healthcare, transport, and leisure — sports, cinema, cafés, and restaurants. Businesses exist to supply what households and other businesses need and want.
+**Exchange** is the handing over of goods, services, money, or other means of payment so that needs and wants can be met. Money makes exchange easier, but **barter** — bike-repair lessons for homemade bread — still counts as exchange.
 
-Life would be simpler if everything we desired were available without limit. That is never the case.
+**Households** supply labour and buy goods and services, while **businesses** supply goods and services and buy inputs such as labour, materials, and equipment, and people can hold both roles at once: Mira is a household member when she buys food and an entrepreneur when she sells bikes. Businesses also have needs of their own — a bike shop needs tyres, tools, and skilled repair hours — so the line between "who buys" and "who sells" is less a wall than a revolving door.
 
-Resources are finite and must be allocated carefully.
+**Needs** are the basics people require for living and functioning, such as food, shelter, transport, and care, whereas **wants** stretch beyond that into preferred extras like a designer helmet or a café brunch. Economics studies both, because scarce budgets force people to rank across both categories rather than treat wants as somehow outside the subject.
 
-Because resources are limited, everyone must economise. No one can avoid making economic choices.
+Whether something counts as a business depends on offering goods or services to customers **for payment**, not on how informal the stand looks. A student who occasionally fixes friends' bikes for free is being helpful without operating as a business; the same student who advertises on campus, charges 25 euros per tune-up, and buys parts to resell as part of the service clearly matches the definition used in this course; and two neighbours who swap tomatoes for jam are exchanging without either party running a business unless they systematically offer produce to customers.
 
-| Observation | Implication |
-|---|---|
-| Needs and wants exceed what is freely available | Resources are scarce |
-| Scarcity affects households, firms, and government | Everyone must allocate limited means |
-| Exchange links consumers, suppliers, and traders | The economy is a web of interdependent decisions |
+It helps to notice one good and one service you bought this week and, for each, who stood on the household side and who stood on the business side of the exchange, because that habit makes the definitions concrete. A common mistake is to assume that if you do not run a company you are somehow outside the economy, yet buying, working, saving, and even choosing not to spend are **economic decisions**, and there is no real opting out. Statements that restrict exchange to money alone, or that claim only entrepreneurs participate, are usually false; absolute words such as never, only, and always deserve suspicion, because barter and ordinary household purchases still count.
 
-> **Example — Tina & Steve**
-> When Tina and Steve buy laptops for their office, they act as a household (or small business) demanding goods. When AT&S sells PCBs to a phone manufacturer, it acts as a supplier in a business-to-business market. When they later offer computer support locally, they add another supply side to the service market. Each role — buyer, seller, employee, entrepreneur — is a position inside the same economy.
+Behind these everyday scenes sits a pressure that never quite goes away: resources are not available in unlimited abundance, so households, businesses, and governments all have to **economise** — managing limited means among competing uses — which is the bridge into **scarcity** and **opportunity cost**.
 
-> **Key ideas**
-> - Tina and Steve participate as entrepreneurs within a network of households and businesses that exchange goods and services.
-> - Businesses such as AT&S illustrate how firms depend on one another as suppliers and customers.
-> - Individuals join the economy both as consumers and as direct traders of goods and services.
-> - Scarcity means economic decision-making is unavoidable for every household and business.
+## 2.2 Scarcity and opportunity cost
 
----
+One Saturday, Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio, and she cannot do both. The clock is the **scarce resource**, and the choice is the economics.
 
-## 2.2 Scarcity of resources and opportunity cost
+**Scarcity** means resources are **limited** while needs and wants pull in many directions. Time, money, machines, materials, and attention all run out. Scarcity forces **allocation choices** for households, businesses, and governments alike.
 
-> **In this section**
-> You will learn why limited resources force choices — and how opportunity cost puts a euro figure on the best alternative you give up.
+**Opportunity cost** is the benefit of the **next-best alternative** forgone when you choose something else. It is not the sum of every rejected option — only the **single best option** you actually gave up.
 
-Households and businesses face constraints on what they can achieve. A firm works with a fixed set of machines, tools, materials, and financial capital. A household earns a limited income to spend on goods and services, with perhaps a portion reserved for saving. Because resources are scarce, both firms and individuals must decide how to deploy them: what to produce, how to produce it, what to purchase, and how much to spend. Allocating scarce resources among competing uses is a central challenge for households, businesses, and governments alike.
+Scarcity creates cost even when no receipt is printed, because when you pick option A the benefit of option B disappears, and that lost benefit is the **opportunity cost**. A founder who "pays herself zero" still forgoes the salary she could have earned elsewhere, and a city that resurfaces a road forgoes the rail link it could have funded with the same budget, so the cost lives in the path not taken rather than only in the cash that changed hands.
 
-Tina and Steve face a concrete version of this problem. They could start their own business, or they could accept employment elsewhere. Suppose each could earn 35,000 euros per year in such a job. That figure represents the opportunity cost per person if they choose entrepreneurship instead. The concept works in reverse too: if they took those jobs, they would forgo whatever profit their business might have generated — a figure that is harder to estimate in advance.
+> **Opportunity cost (decision rule)**  
+> Opportunity cost of choosing A = benefit of the next-best alternative B that is given up  
+> *A = chosen option; B = best realistic alternative left behind (not every rejected dream).*
 
-Opportunity cost is the (financial) benefit of the (next best) alternative that is lost or given up in order to choose or achieve something else.
+It is easy to confuse **scarcity** with **poverty**, yet they are not the same idea. Scarcity is the universal condition of **limited means** facing competing uses, and it applies to wealthy households and rich countries too, forcing trade-offs even when income is high. **Poverty** is a severe lack of means relative to basic needs — a social and material condition rather than the definition of scarcity — so poverty implies scarcity, but scarcity does not imply poverty.
 
-| Choice | What is given up (opportunity cost) |
-|---|---|
-| Found T&S Computer Services | Salary of 35,000 euros per year per person (next best job) |
-| Take employed jobs at 35,000 euros | Unknown future profit from the business |
-| Spend on equipment | Other uses of the same money (saving, living costs) |
+Opportunity cost always tracks the **next-best path**, not a shopping-list total. If Sara has 700 euros for one purchase and values a used laptop highly for study while ranking a washing machine as the next-best alternative for saving laundrette fees, and she buys the laptop, her **opportunity cost** is the benefit of the washing machine forgone — not laptop price plus washer price, and not every other item she once considered. The same logic catches the self-employment salary trap: Omar can earn 32,000 euros a year as an employed bike mechanic, yet when he starts a repair stall and draws no formal wage in year one the accounting wage may show zero while the opportunity cost of his time is at least the 32,000-euro employment package he refused, because a zero cash wage is not a zero **opportunity cost**.
 
-> **Example — Tina & Steve**
-> If Steve could earn 35,000 euros per year as an IT employee, founding the business only makes sense if he expects the venture — including risk and effort — to beat that benchmark over time. The salary is not a fee they pay to start the firm; it is the value of the alternative they sacrifice. The same logic applies when they price services: an hourly rate below what they could earn elsewhere (or below what tires them less) will push them out of that market.
+If Leila chooses the photography gig, her opportunity cost is the benefit of the café shift she gave up — the 48-euro pay in that story — not the fun of both options at once and not the sum of every weekend plan she skipped. Three mistakes keep returning: adding up all rejected options, saying "free" activities have no **opportunity cost**, and equating **scarcity** with **poverty** so that high-income actors supposedly do not face scarcity. True statements usually name the forgone next-best benefit, while false ones often claim zero cost because no money moved, treat opportunity cost as the price of the item bought, or inflate it into the sum of all alternatives. **Scarcity** forces choice, and choice creates opportunity cost; later sections show the same logic inside markets, where suppliers forgo better uses of their time when prices are low, and inside government budgets, where one project crowds out another.
 
-> **Key ideas**
-> - Scarcity forces households, businesses, and governments to make choices about resource use.
-> - Limited machines, materials, income, and time all constrain what can be produced or consumed.
-> - Opportunity cost measures the value of the best alternative forgone when a decision is made.
-> - Tina and Steve's potential salary of 35,000 euros per year per person illustrates opportunity cost in a career choice.
+## 2.3 What economics studies
 
----
+Two headlines can sit in the same morning paper and still ask for different lenses: a local bakery raises pastry prices after butter costs jump, while national unemployment falls and inflation edges up. It is the same economy viewed at different zoom levels, and economics is the toolkit that explains both kinds of story.
 
-## 2.3 Economics as the study of economic decisions
+**Economics** studies how individuals (in households) and businesses make decisions to satisfy needs and wants with **limited resources**. It builds theories to explain observed behaviour and to make careful predictions.
 
-> **In this section**
-> You will see how economics divides into micro and macro levels — and what kinds of questions each branch asks.
+Both branches study the same **scarcity problem** from different distances. **Microeconomics** zooms to units — one household, one firm, one market interaction, such as how demand for e-bikes changes if buyers receive a purchase bonus — while **macroeconomics** zooms to **aggregates** such as growth, unemployment, interest rates, and the overall price level and inflation for a country or similar whole. When you ask whether more cafés will open on a street if rents fall, you are in micro territory of local firms and a local market; when you ask whether the country's average price level rose by 2% this year, you are looking at aggregate inflation and therefore at macro; and when you ask how one robotics start-up allocates its seed funding, you remain in micro because the unit of analysis is one business, even if the euro amounts are large. Scale of money alone does not decide the label — the unit of analysis does.
 
-Economics examines how individuals — as members of private households — and businesses decide how to satisfy needs and wants when resources are limited. The discipline spans many fields; two major branches are microeconomics and macroeconomics.
+A government raise in the minimum wage that changes one supermarket's hiring plan can bridge both lenses: the national policy sits in a **macro** conversation about labour-market aggregates, while the supermarket's hiring response is a **micro** decision by one firm. Labelling anything involving government as automatically macro is a trap, because government can appear in micro through a tax on one product and in macro through a national fiscal stance, just as calling a single expensive purchase "macro" because the price tag is large confuses size with scale of analysis. On an exam, match the statement to the **unit of analysis**: words like inflation, unemployment, growth, and national price level lean **macro**, while one buyer, one seller, or one product market lean micro.
 
-Microeconomics analyses the behaviour and decisions of individual households and businesses and the ways they interact. A typical microeconomic question might ask how demand for electric cars would change if buyers received a purchase bonus. That is a question about one market, one product, and the reactions of buyers and sellers.
+Section 2.2 gave you scarcity and opportunity cost as the shared engine; this section names the science that studies those decisions at two scales. Markets in 2.6 are mostly a micro stage, while later inflation talk links to macro aggregates. In short, economics is the study of decisions under **limited resources**, **micro** looks at units and their interaction while **macro** looks at aggregates, and theories aim to explain and predict rather than merely describe.
 
-Macroeconomics takes a broader view. It addresses questions about the economy as a whole — for a single country, for example — and about aggregate measures. It investigates economic growth, unemployment, interest rates, price levels, and inflation, among other topics. When the European Central Bank (ECB) discusses inflation near 2%, macroeconomics is at work.
+## 2.4 Circular flow, money, and specialisation
 
-As a science, economics aims both to explain observed patterns and to forecast outcomes, drawing on a range of theoretical frameworks.
+On Friday workers receive wages from firms, and on Saturday those same people spend part of the wages on pizzas, tram rides, and phone plans, while firms use the sales revenue to pay suppliers and next week's wages and public authorities collect taxes to fund streets, schools, and security. The loop never really stops; it is a **circular flow**.
 
-| Branch | Focus | Example question |
-|---|---|---|
-| Microeconomics | Individual households, businesses, single markets | How does a buyer bonus change demand for electric cars? |
-| Macroeconomics | Whole economy, aggregate variables | What happens to inflation when unemployment falls nationally? |
+**Circular flow** — Households mainly offer labour and receive wages; businesses offer goods and services and receive payment. Government levies taxes and provides goods, services, transfers, and subsidies. Together these streams form a **circular flow** of goods, services, and money.
 
-> **Example — Tina & Steve**
-> Microeconomics helps Tina and Steve think about their local hourly rate and how many hours of support customers will buy. Macroeconomics helps explain why energy prices or interest rates across Europe might change their costs or their customers' willingness to spend — even if their service quality stays the same.
+*Circular flow: households, businesses, and government exchanging labour, goods/services, taxes, transfers, and money payments.*
 
-> **Key ideas**
-> - Economics studies decision-making under scarcity by households and businesses.
-> - Microeconomics focuses on individual agents and their interactions; macroeconomics examines the overall economy.
-> - Macroeconomic topics include growth, unemployment, interest rates, and inflation.
-> - Economic theories serve both explanatory and predictive purposes.
+Money beats pure **barter** because without it trade needs a **double coincidence of wants** — each party must want what the other offers at the same time — whereas money works as a **medium of exchange** that adds flexibility, a **unit of account** for expressing value, and a store of value for holding purchasing power over time, and those functions work best when money's value stays reasonably stable. When the general price level rises through inflation, the same money buys fewer goods and services so purchasing power falls, and price indexes measure that rise; very high inflation erodes trust in money as a store of value and pushes people to spend it quickly, while low, stable inflation is more compatible with money doing its job.
 
----
+Government sits in the loop as well: public authorities tax households and businesses, then provide infrastructure, defence, police, and often large parts of health care and education. Some goods are hard for private firms to sell profitably because **free riders** cannot be excluded from enjoying them, so government provision financed by taxation fills the gap that pure market sale leaves open.
 
-## 2.4 Exchanging creates a circular flow and division of labour
+**Division of labour and specialisation** — Exchange lets people and firms concentrate on what they do best instead of producing everything themselves. **Specialisation** appears inside households, inside firms (departments), between firms on the same or different production stages, across sectors, and across countries with different resources and know-how.
 
-> **In this section**
-> You will follow money and goods as they move between households, businesses, and government — and see why specialisation depends on exchange.
+**Specialisation** shows up at every scale: inside a household one person may shop while another cooks so each can focus; inside a firm procurement, production, sales, accounting, and HR become distinct tasks; between firms wood becomes boards, then furniture, then a retail product, or firms settle into narrow niches; and internationally different climates, resources, labour costs, and legal frameworks shape who produces what. Without trade a household must grow food, sew clothes, repair bikes, and teach itself every skill, which is slow and inefficient, whereas with money and markets the household can sell labour hours and buy specialised goods and services. A bike shop specialises in repairs and a bakery specialises in bread, and both gain from focusing, so **specialisation** raises output and variety even as it ties people more tightly to exchange networks.
 
-Households primarily supply labour and receive wages in return. Businesses supply goods and services purchased by households and other businesses, receiving payment for what they sell (see Figure 1). Through these transactions, goods, services, and money circulate in a continuous loop. Money functions as a widely accepted medium of exchange, which makes trade far simpler than barter. Under barter, a trade occurs only when each party holds something the other wants. Without money, many mutually beneficial exchanges would never happen.
+If a country suddenly could not import any electronics, local retailers would lose specialisation advantages that rested on global supply chains, and new **opportunity costs** would appear as scarce domestic capacity was pulled toward making what imports once covered. Specialisation is not only upside: highly specialised work can become boring, skills may be hard to redeploy, and a firm brilliant in one niche is exposed if that niche collapses. Circular-flow questions often test who pays whom among wages, taxes, and purchases; money-function questions test **medium of exchange**, **unit of account**, and **store of value**; and specialisation questions test efficiency gains alongside the flexibility risk. Circular flow is the stage on which later sections play: economic systems decide how much of that stage is directed by markets versus by planners, and supply and demand explain prices inside the market channels of the flow.
 
-Money serves three essential roles:
+## 2.5 Economic systems: who decides?
 
-- **Medium of exchange** — it enables flexible trade (first function: medium of exchange).
+Imagine a tonne of steel and three ways to allocate it. In one system private firms bid and households' spending patterns pull production toward cars or bridges; in another a planning office assigns the tonne to a factory list; and in a third markets do most of the steering while government taxes, regulates, and funds social and environmental goals. Same scarce steel, different **decision rights**.
 
-- **Unit of account** — it provides a common measure for expressing value (second function: unit of account).
+**Economic system** — An economic system answers the allocation questions: **what** is produced, **how** it is produced, and **for whom** — by assigning decision power to markets, to planners, or to a mix of both.
 
-- **Store of value** — it allows purchasing power to be held over time (third function: store of value).
+In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services, sometimes called social or eco-social market economies when the mix is deliberate.
 
-Money performs these roles most effectively when its value stays relatively stable. When prices of goods and services rise across the board, each unit of currency buys less, and the purchasing power of money declines. Price indexes track the scale of this general price increase, known as inflation. Modest inflation is often acceptable; the European Central Bank regards an annual rate slightly below 2% as most beneficial for the economy. When inflation climbs well above that level, purchasing power erodes quickly. As the real quantity of goods and services obtainable for a given sum of money shrinks, confidence in money weakens and people seek to spend or convert it rapidly.
+*Spectrum of economic systems: planned coordination at one end, freer market coordination at the other, with mixed systems in between.*
 
-### Figure 1 — The circular flow
+*Comparing economic systems by decision rights*
+| Question | Market-leaning | Planned-leaning | Mixed (typical modern case) |
+| --- | --- | --- | --- |
+| What is produced? | Largely guided by demand, prices, and private profit/opportunity | Mainly set by government plans and targets | Markets dominate many goods; public priorities steer others |
+| How is it produced? | Firms choose methods and organise resources | Authorities control resources and production means (mainly/partly) | Private methods plus regulation, standards, and public providers |
+| For whom? | Income and market exchange shape access | Allocation and rationing more centrally directed; limited consumer/job choice | Markets distribute much; taxes/transfers and public services reshape access |
+| Government role | Can be thin (legal framework) in freer variants | Dominant in production and resource control | Active but not total — legal rules, social goals, environment, public goods |
 
-The circular flow links private households, businesses, and government (public authorities). Households offer labour to businesses and receive wages. Businesses supply goods and services to households and to other businesses, and receive payments. Government collects taxes from households and businesses, and uses the revenue to provide public goods, transfer payments, and subsidies. Goods, services, money, taxes, and subsidies move continuously among these sectors — no single block operates in isolation.
+You can label the system by the signal rather than the slogan. Private cafés that freely set menus and prices while customers walk away if unhappy point to a **market mechanism**; a ministry that assigns quarterly output quotas and fixed retail prices for staples points to a **planned mechanism**; and private firms that compete while government funds schools, taxes pollution, and runs a safety net point to a **mixed arrangement**. Judge by who holds the **decision rights** on what, how, and for whom. If a country privatises shops but still sets fuel prices and owns the railways, it is drifting toward the mixed column even while some decisions remain planned, and it helps to remember that "market economy" never means zero government — even freer market systems rely on law — just as every mixed economy is not identical, because the mix can be light or heavy. Transformation stories about former planned systems adopting market principles test whether you notice a shift in decision rights, not a change in geography alone. Systems set the rules of the game, and markets — next — are the coordination device that market-leaning and mixed systems use for many goods and services.
 
-```text
-                    Goods, services
-         ┌──────────────────────────────────────┐
-         │                                      │
-         │         GOVERNMENT                   │
-         │      (public authorities)            │
-         │                                      │
-         │   Taxes ◄──────────────► Goods,      │
-         │                      services,       │
-         │                      subsidies,      │
-         │                      transfer        │
-         │                      payments        │
-         └──────────┬─────────────────┬─────────┘
-                    │                 │
-           Taxes    │                 │  Goods, services
-                    │                 │
-    Wages           │                 │
-         ┌──────────▼─────────┐       │
-         │   PRIVATE          │       │
-         │   HOUSEHOLDS       │       │
-         │                    │       │
-         │   Labour ──────────┼───────┼──► BUSINESSES
-         └────────────────────┘       │
-                                      │
-                    Payments ◄────────┘
-                    (from households
-                     and other businesses)
+## 2.6 Supply, demand, and market equilibrium
 
-Figure 1. The circular flow of goods, services, and money within the economy
-```
+Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the **market** at work.
 
-Public authorities — chiefly governments — occupy an important position in this circular flow. They collect taxes from households and businesses and spend the revenue on public goods, transfer payments, and subsidies. Infrastructure such as roads and street lighting, together with services like national defence and public security (police), must be funded through taxation because private firms would not supply them profitably: "free riders" who do not pay cannot be excluded from using them. There is clear demand for these goods and services, yet private businesses have little incentive to provide them on a commercial basis. In many — though not all — countries, healthcare and education are also delivered largely by public authorities.
+**Market** — A market is where buyers and sellers communicate the terms of exchange. It can be a physical place (a flea market) or virtual (an online platform), and it can specialise (labour, housing, money, capital, commodities, consumer goods).
 
-### Division of labour and specialisation
+**Supply** is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter.
 
-Without trade in goods and services, every person would need to produce everything they consume. That approach would be slow, difficult, and wasteful, because people would spend time on tasks for which they lack skill. Exchange enables division of labour and specialisation: individuals and businesses can focus on what they do best. This principle accounts for the diversity of occupations and business types. A widely accepted medium of exchange such as money further eases specialisation. Specialisation appears at several levels:
+**Demand** is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service.
 
-- **Within households** — members can each take on tasks that suit their strengths or preferences; one person shops, another cooks.
+**Ceteris paribus** — Latin shorthand for "**all other things held constant**." Supply and demand laws isolate the price–quantity link while freezing other influences. When those other influences change, **curves shift**.
 
-- **Within businesses** — employees concentrate on distinct functions: production, procurement, sales, financial record-keeping, or human-resource management. These activities are often organised into departments such as procurement, production, sales, marketing, finance, and accounting.
+The **supply curve** slopes up because higher prices pull more sellers in and encourage more hours from existing sellers, while **opportunity cost** explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising **marginal cost** — the extra cost of one more unit — also pushes firms to need a higher price before expanding output.
 
-- **Among businesses** — each firm typically concentrates on a particular product range. Some retailers sell all types of furniture; others specialise in beds and couches; still others manufacture kitchens only. Firms at the same stage of production compete within a sector. Specialisation also operates across production stages (first level: wood and iron; second level: boards and nails; third level: tables; final level: retail sales) and across sectors of the economy (see chapter 3).
+*Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping.*
 
-- **Internationally** — countries differ in climate, natural resources, geography, and many other attributes. These differences shape conditions for industries — groups of businesses producing or selling the same product — and for business functions. AT&S maintains production sites in Europe and in Asia (China, India, and South Korea). European operations are highly diversified with relatively low volume; Asian operations achieve higher volume with lower product diversity. Variations in workforce know-how, labour costs, resource availability, and legal frameworks help explain this geographic division of labour.
+The **demand curve** slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to **substitutes** such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and **quantity demanded** move in opposite directions when other things are held constant.
 
-Division of labour brings substantial benefits, but it also carries drawbacks. Highly specialised workers may find their work repetitive over time. Narrow expertise reduces flexibility, making it harder to build skills in other areas. A business that excels in one niche faces serious risk if demand for that specialisation disappears — and workers may lose their jobs.
+*Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping.*
 
-> **Example — Tina & Steve**
-> Tina might focus on customer contact and scheduling while Steve handles technical repairs — household-style division of labour inside the firm. AT&S's split between diversified European sites and high-volume Asian plants shows the same principle on a global scale: each location does what conditions there make most efficient, and trade links the stages together.
+> **Market equilibrium condition**  
+> Equilibrium: quantity demanded = quantity supplied at the equilibrium (market) price  
+> *At that price there is neither surplus (Qs > Qd) nor shortage (Qd > Qs).*
 
-> **Key ideas**
-> - Households supply labour and receive wages; businesses supply goods and services and receive payments, creating a circular flow (Figure 1).
-> - Money acts as a medium of exchange, unit of account, and store of value; stable purchasing power is essential for trust in money.
-> - Inflation erodes purchasing power; the European Central Bank targets inflation slightly below 2% per year.
-> - Governments fund public goods and services through taxation because free riders cannot be excluded.
-> - Division of labour and specialisation raise efficiency at household, firm, sector, and international levels — illustrated by AT&S's European and Asian operations.
-> - Specialisation can lead to monotonous work, reduced flexibility, and vulnerability when market demand shifts.
+*Supply and demand together: intersection is equilibrium price and quantity. Above it, surplus; below it, shortage.*
 
----
+*Illustrative tutoring market schedule (original numbers)*
+| Price (euros/hour) | Quantity demanded (hours/week) | Quantity supplied (hours/week) | Market signal |
+| --- | --- | --- | --- |
+| 18 | 620 | 200 | Shortage — Qd > Qs |
+| 24 | 500 | 320 | Shortage |
+| 30 | 400 | 400 | Equilibrium |
+| 36 | 300 | 480 | Surplus — Qs > Qd |
+| 42 | 220 | 560 | Surplus |
 
-## 2.5 Different economic systems
+Reading the tutoring schedule, at 30 euros quantity demanded equals quantity supplied at 400 hours, which is the **equilibrium** price and quantity; at 36 euros tutors offer 480 hours but families only want 300, leaving a **surplus** of 180 hours and pressure for price to ease downward; and at 18 euros families want 620 hours while only 200 are offered, leaving a **shortage** of 420 hours and pressure for price to rise. Disequilibrium creates surplus or shortage, and **equilibrium** is the balance point where both sides meet.
 
-> **In this section**
-> You will compare how much freedom households and businesses have under planned economies versus different types of market economies.
+A **movement along a curve** is caused by a change in the good's **own price**, sliding you to a new point on the same curve — for example, when the tutoring fee falls from 36 to 30 and you move along demand to a higher quantity. A **shift of the curve** is caused by a non-price determinant that breaks the **ceteris paribus** freeze, so the whole curve moves left or right — for example, when household incomes rise and demand shifts right at every price. Demand shifters include income, preferences, complementary goods, and substitutes; supply shifters include the number of suppliers, technology, resource prices, and price expectations; and other things equal, a rightward demand shift tends to raise equilibrium price and quantity while a rightward supply shift tends to lower price and raise quantity.
 
-The governmental role described above applies chiefly in market economies. In a market economy, individuals and businesses are — to varying degrees — free to make their own economic decisions. In a planned economic system, government dominates: it (wholly or partly) determines which goods are produced, which services are offered, and at what prices. It also (wholly or partly) controls resources and the means of production. Citizens face restricted choices about employment and consumption.
+When parents' incomes rise and they book more tutoring at each price, the **demand curve shifts right**; when a new app trains more tutors quickly, the **supply curve shifts right**; and when only the platform's listed hourly fee changes while preferences stay unchanged, you are looking at **movement along** the curves rather than a **shift** story. The diagnostic question is whether the own-price changed or a background condition changed. The same logic helps explain a classic inflation story: if the quantity of money rises and people can spend more, demand for goods can increase, and if goods available do not rise in step, prices climb as too much money chases too few goods, while raising the price of borrowing money through interest rates can cool spending and ease price pressure — a bridge from micro curves to a macro outcome.
 
-Most countries today operate some form of market economy. Where government limits itself to establishing a legal framework and intervenes little in economic activity, the system approaches a "free market economy." Where government takes a more active role — supporting disadvantaged groups or protecting the environment, for example — the system is described as a "social market economy" or "eco-social market economy." Over recent decades, many former communist countries with planned economies have embraced market-economy principles. Central and Eastern European Countries (CEE), China, and former Soviet states illustrate this transition.
+Not every change is a **shift**: when the good's **own price** changes you move along a curve, and when a background determinant changes the curve itself moves. Mixing **surplus** with **shortage** language, or ignoring ceteris paribus so that the "laws" look broken because a second variable moved, will also lead you astray.
 
-| System | Who decides production and prices? | Typical government role |
-|---|---|---|
-| Planned economy | Government (mainly or wholly) | Controls resources, jobs, and output |
-| Free market economy | Households and businesses | Legal framework, limited intervention |
-| Social / eco-social market economy | Households and businesses, with policy limits | Support for the poor, environmental protection, wider welfare goals |
+On exam items, draw or imagine the graph and ask whether price changed (**movement along**) or a determinant changed (**shift**). At a stated price, compare **quantity demanded** with **quantity supplied** to name surplus or shortage, remembering that equilibrium is the intersection story rather than any price sellers happen to like.
 
-> **Example — Tina & Steve**
-> They are free to set hourly rates and target local customers, but must comply with registration, tax, and employment rules — typical of a social market economy between pure planning and minimal state intervention.
-
-> **Key ideas**
-> - Market economies leave most economic decisions to individuals and businesses; planned economies concentrate decision-making in government.
-> - Free market economies feature minimal government intervention; social and eco-social market economies involve broader public policy goals.
-> - Most countries worldwide operate some variant of a market economy.
-> - Former planned economies in CEE, China, and the former Soviet bloc have largely adopted market principles.
-
----
-
-## 2.6 Supply and demand: Households, businesses and the government meet in the market
-
-> **In this section**
-> You will see how buyers and sellers form markets, how supply and demand curves behave, where equilibrium sits at 150 euros per hour, and how money supply links to inflation.
-
-In a market economy, goods and services are bought and sold on markets. Buyers and sellers come together to negotiate the terms of exchange, thereby forming a market. A market may be a physical location — a flower market in Rome or a village flea market — or a virtual platform such as eBay or Amazon. Transactions occur in shops, over the phone, and through many other channels. Distinct markets exist for different products: consumer goods, labour (supply and demand for work), housing, money, capital, and commodities (supply and demand for raw materials).
-
-### 2.6.1 The law of supply
-
-Supply (of a certain good or service) is the quantity of that good or service that is available for purchase. This quantity depends primarily on production capacity and available resources, but also on the price the seller can charge. A higher price generally leads to a larger supply. Holding all other factors constant ("ceteris paribus"), this positive relationship holds for most goods and services in the economy — the **law of supply**.
-
-For Tina and Steve, the number of hours they and other computer-support providers are willing to work depends on the hourly rate customers will pay. The work is demanding and requires considerable skill. At a low price — say, below 30 euros per hour — no provider would enter the market. The opportunity cost would be too high: skilled workers could earn more in less tiring roles, so they would leave this market and offer a different service. As the price rises, more hours are supplied and additional providers enter.
-
-The upward slope of the supply curve also reflects **increasing marginal costs** faced by many industries and businesses. Marginal cost is the cost of producing an additional unit of a good or of providing an additional unit of a service. Beyond a certain output level, expansion becomes progressively more expensive as firms invest in additional machinery and staff, pushing marginal costs upward. Businesses will increase supply only when the price rises to meet or exceed marginal cost.
-
-![The supply curve for computer support services — price in euros on the vertical axis, quantity supplied per week in 1,000 hours on the horizontal axis (0 to 45); the curve slopes upward, showing that higher prices bring greater supply](/__l5e/assets-v1/067b9c1b-7972-476e-a72b-c936660ff648/tb-009-002.png)
-
-*Figure 2. The supply curve (price in euros, quantity in 1,000 hours per week).*
-
-> **Example — Tina & Steve**
-> Below 30 euros per hour, skilled technicians are unlikely to offer support — they can do better elsewhere. At higher rates, Tina and Steve are willing to work more hours, and more rivals may enter the local market. The supply curve summarises that willingness across the whole market.
-
-### 2.6.2 The law of demand
-
-Demand is the quantity of a good or service that customers are willing and able to buy. In most cases, a higher price leads to lower demand. The more Tina and Steve and their competitors charge per hour for technical computer support, the fewer customers will buy the service — because rising prices push some buyers beyond what they can afford or what they consider worthwhile, prompting them to seek alternative solutions. Willingness to pay reflects the utility, or satisfaction, that consumers expect from the service.
-
-![The demand curve for computer support services — price in euros versus quantity demanded per week in 1,000 hours (0 to 100); the curve slopes downward as quantity demanded falls when price rises](/__l5e/assets-v1/70a98ab2-9d55-43ba-b382-6af5f03d39d0/tb-009-003.png)
-
-*Figure 3. The demand curve (price in euros, quantity in 1,000 hours per week).*
-
-The graph shows that quantity demanded decreases as price rises and increases as price falls. Quantity demanded is therefore negatively or inversely related to price. Holding other factors constant ("ceteris paribus"), this pattern appears across nearly all goods and services — the **law of demand**.
-
-> **Example — Tina & Steve**
-> A household might gladly pay for two hours of help at a modest rate but refuse the same help if the hourly price doubles. Some customers switch to online guides or ask a friend instead. Demand is not just wishful thinking — it requires both willingness and ability to pay.
-
-### 2.6.3 The market equilibrium
-
-When supply and demand curves are plotted together, they intersect at a specific point: a price of **150 euros**. At that price, the quantity of hours demanded in the market equals the quantity of hours supplied.
-
-If these curves represent the entire market for computer support services, 150 euros per hour is the **market price**, also called the **equilibrium price**, because supply equals demand. At this price, the two sides of the market balance exactly. Quantity supplied matches quantity demanded, so there is neither a **surplus** (supply exceeding demand) nor a **shortage** (demand exceeding supply). At any price above equilibrium, suppliers would offer more hours than customers wish to buy, creating excess supply. At any price below equilibrium, customers would want more hours than providers are willing to supply, creating excess demand.
-
-![Supply and demand for computer support — upward supply and downward demand curves intersecting at the equilibrium market price of 150 euros per hour, quantity in 1,000 hours per week](/__l5e/assets-v1/33a549d3-851f-4661-82fc-a2d095a3383d/tb-009-004.png)
-
-![Supply and demand curves combined — equilibrium where quantity supplied equals quantity demanded at 150 euros; axes show price in euros and quantity in 1,000 hours (0 to 100)](/__l5e/assets-v1/78648cac-f750-4ec0-baa6-74a31c4055d5/tb-009-005.png)
-
-*Figure 4. Supply and demand intersect at the market price (price in euros, quantity in 1,000 hours per week).*
-
-In practice, factors beyond price also shift supply and demand.
-
-**Demand is also affected by:**
-
-| Factor | Effect on demand (ceteris paribus) |
-|---|---|
-| Income rises | Demand increases — curve shifts right |
-| Income falls | Demand decreases — curve shifts left |
-| Preferences favour support | Demand increases |
-| Preferences shift (e.g. to new computers) | Demand for substitutes (e.g. used PCs) may fall |
-| Strong complementary service | Demand for support likely rises |
-| Close substitute appears | Demand for original service falls (see chapter 5, Marketing) |
-
-**Supply is also affected by:**
-
-| Factor | Effect on supply (ceteris paribus) |
-|---|---|
-| More suppliers enter profitable market | Supply increases — curve shifts right |
-| Technology lowers barriers | More providers, supply rises |
-| Input costs fall while prices hold | More willing suppliers |
-| Providers expect prices to fall | Supply in that market may shrink |
-
-### Supply and demand for money
-
-The laws of supply and demand also illuminate a major driver of inflation. When the money supply in a country expands — often to stimulate economic activity — households and businesses can spend and invest more, raising demand for goods and services. If the quantity of available goods and services does not grow in step, prices rise. The phrase "too many dollars chasing too few goods" captures this dynamic succinctly. Central banks can counter inflation by raising the price of money — that is, interest rates. Higher borrowing costs tend to reduce spending, which lowers demand for goods and services and eases upward pressure on prices. > **Example — Tina & Steve**
-> More money in the economy without more technicians could push rates above 150 euros; easier remote tools and more providers could shift supply right and pull equilibrium down.
-
-> **Key ideas**
-> - Markets bring buyers and sellers together; they may be physical or virtual and exist for many product types.
-> - The law of supply states that, ceteris paribus, higher prices lead to greater quantities supplied; marginal cost explains the upward slope of the supply curve (Figure 2).
-> - The law of demand states that, ceteris paribus, higher prices lead to lower quantities demanded (Figure 3).
-> - Market equilibrium occurs where supply equals demand — at 150 euros per hour in the computer-support example (Figure 4).
-> - Non-price factors — income, preferences, complements, substitutes, supplier numbers, technology, input costs, and price expectations — shift supply and demand curves.
-> - Expanding the money supply without a matching increase in goods can cause inflation; higher interest rates can help restrain it.
-
----
+Opportunity cost from 2.2 explains why supply dries up at low prices, circular flow from 2.4 is where these market trades sit, and competition in 2.7 changes how much power sellers have over the price you just analysed. The **law of supply** says that a higher price raises **quantity supplied** when other things are held constant; the **law of demand** says that a higher price lowers **quantity demanded** under the same freeze; equilibrium equates the two quantities while other prices create surplus or shortage; and own-price causes movement along a curve while other factors shift it.
 
 ## 2.7 Competition in the market
 
-> **In this section**
-> You will classify markets by how many suppliers compete — from monopoly to perfect competition — and see where cartels and local monopolies fit in.
+After a steep hike there is a single hut selling soup, and hikers pay because walking another hour for alternatives is painful, whereas down in the town five coffee shops sit on one street so a price rise at one shop sends customers next door. Same product category, very different **competitive** heat.
 
-The intensity of competition in a market depends largely on how many suppliers operate and how readily customers can switch to substitute goods. A market with a single supplier is a **monopoly**. True monopolies are uncommon in market economies, but some goods and services are supplied by only one firm — railway services in certain countries, for example. A business may not be the sole provider nationally yet hold a monopoly position within a defined area. Owners of a ski hut who are the only food and beverage vendors on a particular mountain face a monopoly-like situation, as does a theatre bar with no nearby alternatives. Tina and Steve could encounter similar conditions if they were the sole computer-support provider within a 50 km radius.
+**Competition** — The intensity of competition rises when more **suppliers** sell in the market and when **substitute goods** are easy to find. More rivals and closer substitutes mean less room for any one seller to dictate terms.
 
-When only a few suppliers exist, the market structure is an **oligopoly**. Each firm holds a substantial market share — as in telecommunications or car manufacturing. Competition can be intense: a price or product change by one firm often provokes rapid responses from rivals seeking to protect their position. Suppliers may instead attempt to coordinate terms of sale to limit destructive rivalry. Such arrangements — **cartels** — are generally illegal. Competition law exists because competitive markets are considered beneficial for customers.
+Markets stretch from **monopoly** toward many sellers. One supplier is a monopoly — rare in pure form, though possible for a national railway or a local-only seller such as the only bar inside a theatre. A few large suppliers form an **oligopoly**, as with telecoms or car makers, where rivals watch each other closely and illegal cartels that fix terms to kill competition are generally not allowed. Many buyers and sellers with no single player able to set the price approach the theoretical benchmark of **perfect competition**, which asks for full information for all players, free entry and exit, and no personal preferences because goods are replaceable across sellers. Real markets seldom match that checklist perfectly, though standardised goods such as some agricultural products can come closer, and even with fewer sellers rivalry can still be fierce if competitors react aggressively.
 
-**Perfect competition** is a theoretical benchmark found in markets with so many buyers and sellers that no single participant can influence the price. Economists assume several conditions for perfect competition:
+Competitive pressure weakens when there are few suppliers or only one, when **substitutes** are weak, and when local demand is captive — as with the summit hut or the theatre bar — because the seller then has more pricing room. It strengthens when many suppliers offer close substitutes and buyers can switch easily, which is why laws often aim to protect rivalry for customers' benefit. Ranking pressure by counting suppliers and checking substitutes, a city tram platform that alone is licensed to run the system looks **monopoly-like**; four mobile networks watching each other's tariffs look like **oligopoly**; dozens of nearly identical grain sellers with easy entry sit nearer to **perfect competition**; and tutoring apps that multiply while video courses substitute for live hours intensify competition through both more suppliers and better substitutes.
 
-- All market participants — buyers and sellers — have complete information at all times.
+If a village has two bakeries and a supermarket opens with fresh bread daily, both the number of suppliers and the availability of substitutes rise, and each bakery's pricing room shrinks as buyers gain easier alternatives. **Monopoly** is less common than people assume — the course stance is that monopolies are rare in market economies, though local monopoly-like pockets exist — and **oligopoly** should not be read as "no competition," because rivalry can be intense, while **cartel-style** agreements among rivals are usually illegal rather than harmless. If an exam stem adds suppliers or substitutes, competition rises; if it isolates a single local seller with no nearby alternative, think monopoly-like power; and perfect-competition answers usually need the theoretical conditions, not merely "many shops." Competition shapes the supply side you drew in 2.6: weak competition can hold price above a more rivalrous outcome, while strong competition disciplines sellers, which is why policy often protects rivalry.
 
-- No barriers prevent entry to or exit from the market.
+## Chapter recap
 
-- No personal preferences give one supplier's product an advantage — goods must be interchangeable.
-
-Perfect competition rarely appears in practice, yet some markets approximate it. Agricultural markets and markets for standardised, nearly identical goods — regardless of which supplier offers them — are common examples. Even when the number of suppliers is not especially large, competition can approach "perfect" intensity when rivalry among firms is especially fierce and customers can switch easily between comparable offers.
-
-| Market form | Number of suppliers | Can one firm set price? | Examples / notes |
-|---|---|---|---|
-| Monopoly | One | Yes, within legal limits | National railway; sole vendor on a mountain |
-| Oligopoly | Few | Each has large share; mutual reactions | Telecom, car manufacturers |
-| Cartel (illegal agreement) | Few, coordinating | Attempt to fix terms jointly | Usually prohibited by competition law |
-| Perfect competition (theoretical) | Very many | No single buyer or seller moves price | Standardised goods, agriculture (approx.) |
-
-> **Example — Tina & Steve**
-> In a large city with many IT shops, they are price takers — close to competitive pressure even if the model is not perfect. If they alone offer a specialised service within 50 km, they gain short-term pricing power like the ski-hut vendor. They still face indirect substitutes: friends, online forums, or buying a new device instead of repairing.
-
-> **Key ideas**
-> - Competition depends on the number of suppliers and the availability of substitute goods.
-> - A monopoly features a single supplier; oligopolies feature a few firms with large market shares.
-> - Local monopolies — ski huts, theatre bars, or a sole regional service provider — limit customer choice despite the absence of a national monopoly.
-> - Cartels, which coordinate prices or terms among competitors, are generally illegal.
-> - Perfect competition requires full information, free entry and exit, and homogeneous products; real markets only approximate this ideal.
-
----
+- Households and businesses exchange to meet needs and wants, a business offers goods or services to customers usually for a price, and nobody fully opts out of economic decisions.
+- **Scarcity** forces allocation, **opportunity cost** is the next-best alternative forgone, and scarcity is not the same as poverty.
+- Economics studies decisions under limited resources, with **micro** looking at units and interactions and **macro** looking at aggregates such as growth, unemployment, and inflation.
+- **Circular flow** links households, businesses, and government; money eases exchange; and **division of labour** enables specialisation with efficiency gains and flexibility risks.
+- **Market**, **planned**, and **mixed** systems differ by who decides what is produced, how, and for whom.
+- Supply and demand meet at **equilibrium** under **ceteris paribus**; own-price causes **movements along** curves while other factors **shift** them; surplus and shortage flag disequilibrium; and more suppliers and substitutes intensify competition, while pure monopoly remains rare.

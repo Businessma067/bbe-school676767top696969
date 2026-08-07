@@ -1660,7 +1660,41 @@
             },
             {
               "type": "p",
-              "text": "For a diagnostic laptop costing €2,400 with a three-year useful life and residual €0, annual depreciation = 2,400 / 3 = €800, so book values fall to €1,600 after year 1, €800 after year 2 and €0 after year 3. For the van costing €14,000 with a five-year useful life and residual €2,000, depreciable cost is 12,000 and annual depreciation = 12,000 / 5 = €2,400. Each year the income statement includes these charges even though the cash outlay happened when the assets were bought, and **carrying (book) value** equals cost minus accumulated depreciation. The cash-flow trap is never to treat depreciation as a **cash outflow** in the year it is charged — the cash left when the asset was purchased as an investing outflow then."
+              "text": "Two Northline assets show how **straight-line depreciation** and **carrying (book) value** work. Each year the income statement includes the charge even though the cash outlay happened when the asset was bought. Never treat depreciation as a **cash outflow** in the year it is charged — the cash left at purchase as an investing outflow."
+            },
+            {
+              "type": "table",
+              "caption": "Straight-line depreciation examples (Northline)",
+              "headers": [
+                "Asset",
+                "Cost",
+                "Residual",
+                "Useful life",
+                "Annual depreciation",
+                "Book value after year 1"
+              ],
+              "rows": [
+                [
+                  "Diagnostic laptop",
+                  "€2,400",
+                  "€0",
+                  "3 years",
+                  "€800",
+                  "€1,600"
+                ],
+                [
+                  "Delivery van",
+                  "€14,000",
+                  "€2,000",
+                  "5 years",
+                  "€2,400",
+                  "€11,600"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "For the laptop, book value continues to €800 after year 2 and €0 after year 3. For the van, depreciable cost is 14,000 − 2,000 = 12,000, so annual depreciation = 12,000 / 5 = €2,400. **Carrying value** = cost − accumulated depreciation."
             },
             {
               "type": "idea",
@@ -1682,13 +1716,13 @@
               ],
               "rows": [
                 [
-                  "Tools and equipment (after depreciation; plus additions)",
+                  "Tools and equipment",
                   "31,000",
                   "Owner's equity",
                   "78,000"
                 ],
                 [
-                  "Delivery van (carrying value)",
+                  "Delivery van",
                   "11,600",
                   "Bank loan",
                   "15,000"
@@ -1730,7 +1764,52 @@
             },
             {
               "type": "p",
-              "text": "**Cash** change and **profit** can diverge sharply. Opening cash of €4,800 and closing cash of €40,700 imply a cash increase of €35,900 in the same year that profit was €54,000, and the gap exists because profit includes non-cash depreciation and accruals (credit sales, unpaid bills) while cash only counts actual movements — and because investing and financing cash also move the bank balance. A firm can therefore be **profitable and still short of cash**, or raise cash by borrowing without matching profit. Classifying a few movements makes the split concrete: customers settle €38,000 of receivables (operating inflow), parts paid in cash €16,000 (operating outflow), a new bench system bought for €9,000 cash (investing outflow), loan principal repaid €7,000 (financing outflow), and owners' drawings or dividend €5,000 (financing outflow), so the net from these items is (38,000 − 16,000) − 9,000 − 7,000 − 5,000 = +€1,000. Exam questions for 6.2 typically ask you to separate period from point-in-time, remember that **profit is not cash**, classify operating / investing / financing flows, compute straight-line depreciation and carrying value, spot that depreciation is an expense without a same-period cash payment, and keep expenditure (buy the asset) distinct from expense (use the asset up)."
+              "text": "**Cash** change and **profit** can diverge sharply. Opening cash €4,800 and closing cash €40,700 imply a cash increase of €35,900 in the same year that profit was €54,000, because profit includes non-cash depreciation and accruals while cash only counts actual movements — and because investing and financing cash also move the bank balance. A firm can be **profitable and still short of cash**, or raise cash by borrowing without matching profit."
+            },
+            {
+              "type": "table",
+              "caption": "Illustrative cash movements (selected items)",
+              "headers": [
+                "Movement",
+                "Class",
+                "€"
+              ],
+              "rows": [
+                [
+                  "Customers settle receivables",
+                  "Operating inflow",
+                  "+38,000"
+                ],
+                [
+                  "Parts paid in cash",
+                  "Operating outflow",
+                  "−16,000"
+                ],
+                [
+                  "New bench system bought",
+                  "Investing outflow",
+                  "−9,000"
+                ],
+                [
+                  "Loan principal repaid",
+                  "Financing outflow",
+                  "−7,000"
+                ],
+                [
+                  "Owners' drawings / dividend",
+                  "Financing outflow",
+                  "−5,000"
+                ],
+                [
+                  "Net of these items",
+                  "",
+                  "+1,000"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Exam cues for 6.2: separate period from point-in-time, remember that **profit is not cash**, classify operating / investing / financing flows, compute straight-line depreciation and carrying value, spot that depreciation is an expense without a same-period cash payment, and keep expenditure (buy the asset) distinct from expense (use the asset up)."
             }
           ]
         },
@@ -1744,15 +1823,192 @@
             },
             {
               "type": "p",
-              "text": "Cedar Circuit Components provides a sample statement of financial position in € thousands. Property, plant and equipment moves from 388 in Year 1 to 412 in Year 2; intangible assets from 52 to 48; other non-current assets from 30 to 35; so non-current assets rise from 470 to 495. Inventories move from 78 to 92, trade and other receivables from 64 to 71, and cash and cash equivalents from 86 to 118, so current assets rise from 228 to 281 and total assets from 698 to 776. On the financing side, share capital stays at 120 while reserves and retained earnings rise from 214 to 268, taking total equity from 334 to 388; non-current financial liabilities fall from 230 to 210 and other non-current liabilities rise from 24 to 28, so non-current liabilities fall from 254 to 238; trade and other payables rise from 78 to 96 and other current liabilities from 32 to 54, so current liabilities rise from 110 to 150; total liabilities therefore move from 364 to 388, and total equity and liabilities match total assets at 776 in Year 2 (698 in Year 1)."
+              "text": "Cedar Circuit Components publishes a sample statement of financial position in **€ thousands**. Compare the two years in the table — do not learn the story as a wall of prose."
+            },
+            {
+              "type": "table",
+              "caption": "Cedar Circuit Components — statement of financial position (€ thousands)",
+              "headers": [
+                "Line",
+                "Year 1",
+                "Year 2"
+              ],
+              "rows": [
+                [
+                  "Property, plant and equipment",
+                  "388",
+                  "412"
+                ],
+                [
+                  "Intangible assets",
+                  "52",
+                  "48"
+                ],
+                [
+                  "Other non-current assets",
+                  "30",
+                  "35"
+                ],
+                [
+                  "Non-current assets",
+                  "470",
+                  "495"
+                ],
+                [
+                  "Inventories",
+                  "78",
+                  "92"
+                ],
+                [
+                  "Trade and other receivables",
+                  "64",
+                  "71"
+                ],
+                [
+                  "Cash and cash equivalents",
+                  "86",
+                  "118"
+                ],
+                [
+                  "Current assets",
+                  "228",
+                  "281"
+                ],
+                [
+                  "Total assets",
+                  "698",
+                  "776"
+                ],
+                [
+                  "Share capital",
+                  "120",
+                  "120"
+                ],
+                [
+                  "Reserves and retained earnings",
+                  "214",
+                  "268"
+                ],
+                [
+                  "Total equity",
+                  "334",
+                  "388"
+                ],
+                [
+                  "Non-current financial liabilities",
+                  "230",
+                  "210"
+                ],
+                [
+                  "Other non-current liabilities",
+                  "24",
+                  "28"
+                ],
+                [
+                  "Non-current liabilities",
+                  "254",
+                  "238"
+                ],
+                [
+                  "Trade and other payables",
+                  "78",
+                  "96"
+                ],
+                [
+                  "Other current liabilities",
+                  "32",
+                  "54"
+                ],
+                [
+                  "Current liabilities",
+                  "110",
+                  "150"
+                ],
+                [
+                  "Total liabilities",
+                  "364",
+                  "388"
+                ],
+                [
+                  "Total equity and liabilities",
+                  "698",
+                  "776"
+                ]
+              ]
             },
             {
               "type": "p",
-              "text": "Reading that structure, **non-current assets / total assets** = 495 / 776 ≈ 63.8%, a plant-heavy mix typical of manufacturing, while the **equity ratio** = 388 / 776 = 50% means half of assets are financed by equity. **Long-term finance** = equity 388 + non-current liabilities 238 = 626, which exceeds non-current assets of 495, so long-term assets are covered by long-term resources, and cash of 118 exceeds trade payables of 96, so bills could be cleared from cash alone if needed. Overall the structure looks manufacturing-typical, moderately equity-funded, and matched on the long-term side."
+              "text": "Reading Year 2 structure: **non-current assets / total assets** = 495 / 776 ≈ 63.8% (plant-heavy, typical of manufacturing). **Equity ratio** = 388 / 776 = 50%. **Long-term finance** = equity 388 + non-current liabilities 238 = 626, covering non-current assets of 495. Cash of 118 exceeds trade payables of 96. Overall: manufacturing-typical mix, moderate equity funding, long-term assets matched by long-term finance."
             },
             {
               "type": "p",
-              "text": "Cedar's sample income statement (also € thousands) shows revenue rising from 520 to 640, cost of sales from 430 to 498, and gross profit from 90 to 142. Distribution costs move from 24 to 28, general and administrative costs from 30 to 36, and other operating result from 2 to 4, so operating result (**EBIT**) rises from 38 to 82. Finance costs net fall from 16 to 14, profit before tax rises from 22 to 68, income taxes from 8 to 16, and profit for the year from 14 to 52."
+              "text": "Cedar's income statement uses the same €-thousands scale. Compare years in the table, then interpret the profit layers."
+            },
+            {
+              "type": "table",
+              "caption": "Cedar Circuit Components — income statement (€ thousands)",
+              "headers": [
+                "Line",
+                "Year 1",
+                "Year 2"
+              ],
+              "rows": [
+                [
+                  "Revenue",
+                  "520",
+                  "640"
+                ],
+                [
+                  "Cost of sales",
+                  "430",
+                  "498"
+                ],
+                [
+                  "Gross profit",
+                  "90",
+                  "142"
+                ],
+                [
+                  "Distribution costs",
+                  "24",
+                  "28"
+                ],
+                [
+                  "Administration costs",
+                  "30",
+                  "36"
+                ],
+                [
+                  "Other operating result",
+                  "2",
+                  "4"
+                ],
+                [
+                  "Operating result (EBIT)",
+                  "38",
+                  "82"
+                ],
+                [
+                  "Finance costs (net)",
+                  "16",
+                  "14"
+                ],
+                [
+                  "Profit before tax",
+                  "22",
+                  "68"
+                ],
+                [
+                  "Income taxes",
+                  "8",
+                  "16"
+                ],
+                [
+                  "Profit for the year",
+                  "14",
+                  "52"
+                ]
+              ]
             },
             {
               "type": "idea",
@@ -1771,7 +2027,7 @@
             },
             {
               "type": "p",
-              "text": "Reading down the income statement, revenue minus COS gives **gross profit**, then operating expenses and other operating items shape the path toward **EBIT**, while finance income and costs sit below operating result and taxes sit near the bottom — each layer answering a different question about production margin, operating strength, then financing and tax effects. For Cedar, revenue rose by 640 − 520 = 120 (about +23.1%) while cost of sales rose by 498 − 430 = 68 (about +15.8%), so revenue grew faster than COS and gross profit jumped from 90 to 142, while EBIT more than doubled from 38 to 82. Top-line growth with a favourable COS relationship improved both gross profit and operating result; if instead revenue had risen only 10% while COS rose 18%, you would expect gross profit pressure and a story about weaker production efficiency or higher input prices. A common misreading is to put distribution or admin staff costs into **COGS**, which makes gross profit look worse for the wrong reason and confuses production performance with broader operating costs. Exam cues for 6.3 include calculating structure percentages, testing long-term matching, identifying what belongs in COS, interpreting gross profit versus EBIT, and remembering that statements need careful valuation awareness — and the durable lesson is that the balance sheet shows mix of assets and financing while the income statement shows revenue, costs and layered profits, with **COS** production-tied, gross profit as pre-operating-expense margin, and EBIT as the operating result, always stronger when compared across periods or peers than as a single lonely number."
+              "text": "Read the income statement in layers: revenue − **COS** → **gross profit**, then operating items → **EBIT**, then finance and tax. For Cedar, revenue rose faster (+23.1%) than cost of sales (+15.8%), so gross profit rose from 90 to 142 and EBIT more than doubled from 38 to 82. Do not put distribution or admin staff into **COGS** — that distorts production margin. Exam cues for 6.3: structure percentages, long-term matching, what belongs in COS, and reading gross profit versus EBIT across periods or peers."
             }
           ]
         },
@@ -1899,7 +2155,63 @@
             },
             {
               "type": "p",
-              "text": "For Cedar Year 2, equity = 388, total assets = 776 and total liabilities (debt) = 388, so the **equity ratio** = 388 / 776 = 50% and the **debt ratio** = 388 / 776 = 50% — half equity, half debt financing, a balanced structure on these definitions that still needs sector comparison. If Cedar financed a new plant mostly with short-term overdraft instead of equity or a long-term loan, liquidity would worsen first as current liabilities rose and working capital fell, while gearing would also shift toward more debt, so both clusters would move, not only one. Rounding the Year 2 picture: working capital €131k (positive short-term buffer), current ratio 1.87 (above 1, near the 1.5–2 band), acid-test 1.26 (above 1 without inventory), ROE 21.1% (return on owners' funds), ROCE 13.1% (return on long-term capital), asset turnover 0.87 (sales per €1 of assets), inventory turnover 5.9× (~62 days in stock), equity ratio 50% and debt ratio 50%. **Liquidity**, **profitability**, efficiency and gearing answer different questions about the same statements, so a firm can look profitable on ROE yet strained on the acid test, or highly efficient at turning assets while heavily geared — which is why you read the set together, always comparing within industry or over time and knowing the definition used."
+              "text": "For Cedar Year 2, equity = 388, total assets = 776 and total liabilities = 388, so the **equity ratio** and **debt ratio** are both 50%. If Cedar financed a new plant mostly with short-term overdraft instead of equity or a long-term loan, liquidity would worsen first (current liabilities up, working capital down) while gearing also shifts toward debt. **Liquidity**, **profitability**, efficiency and gearing answer different questions — a firm can look strong on ROE yet weak on the acid test — so read the set together, compare within industry or over time, and know which definition was used."
+            },
+            {
+              "type": "table",
+              "caption": "Cedar Year 2 — ratio snapshot (€ thousands inputs)",
+              "headers": [
+                "Ratio",
+                "Result",
+                "Reading"
+              ],
+              "rows": [
+                [
+                  "Working capital",
+                  "131",
+                  "Positive short-term buffer"
+                ],
+                [
+                  "Current ratio",
+                  "1.87",
+                  "Above 1; near 1.5–2 band"
+                ],
+                [
+                  "Acid-test ratio",
+                  "1.26",
+                  "Above 1 without inventory"
+                ],
+                [
+                  "ROE",
+                  "21.1%",
+                  "Return on owners' funds"
+                ],
+                [
+                  "ROCE",
+                  "13.1%",
+                  "Return on long-term capital"
+                ],
+                [
+                  "Asset turnover",
+                  "0.87",
+                  "Sales per €1 of average assets"
+                ],
+                [
+                  "Inventory turnover",
+                  "5.9× (~62 days)",
+                  "Stock renews about six times a year"
+                ],
+                [
+                  "Equity ratio",
+                  "50%",
+                  "Half equity financing"
+                ],
+                [
+                  "Debt ratio",
+                  "50%",
+                  "Half debt financing"
+                ]
+              ]
             }
           ]
         }

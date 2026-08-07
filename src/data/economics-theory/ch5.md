@@ -1,651 +1,190 @@
 # Chapter 5 — Marketing
 
-> **Chapter overview**
-> Marketing connects what a business can offer with what customers actually want — and at a price they will pay. For the BBE exam, you need to move beyond "advertising" and explain objectives, research, segmentation, and the four Ps as a coordinated strategy. Tina and Steve's computer-support venture runs through every section: from defining their products to choosing niche targeting and blending product, price, place, and promotion.
+A workshop can craft the finest desk lamp in the city and still fail if nobody needs light in that form, at that price, in that place. Marketing is the disciplined work of finding who those people are, shaping what is offered to them, and making the exchange happen — not only advertising, but research, design choices, pricing logic, distribution routes, and messages that stay consistent with one another.
 
-> **Learning path**
-> - After **5.1**, you can classify goods and services as B2B or B2C and explain what counts as a "product" in marketing terms.
-> - After **5.2**, you can list marketing objectives — satisfaction, USP, market share, sales, and profitability — and show how they reinforce one another.
-> - After **5.3**, you can contrast product orientation with market orientation and explain why CRM supports long-term customer relationships.
-> - After **5.4**, you can discuss sustainability and responsible consumption as a marketing challenge, not only an environmental one.
-> - After **5.5**, you can distinguish primary and secondary research, apply customer-analysis questions, and calculate absolute and relative market share.
-> - After **5.6**, you can explain segmentation, targeting, and positioning, and compare mass, segment, and niche marketing.
-> - After **5.7**, you can describe the four Ps, product life cycle, BCG and Ansoff matrices, break-even analysis, price elasticity, and assemble a harmonised marketing mix.
+This chapter walks that path from product idea to marketing mix. You will learn how firms set marketing objectives, choose between product and market orientation, research customers, segment markets, and blend the four Ps, including life-cycle thinking and the Boston Consulting Group matrix. By the end, you should be able to explain why a strong product still needs a market, and how each marketing tool supports the others.
 
----
+## Learning objectives
 
-## What marketing is — beyond advertising
+- Define a product in marketing terms and distinguish goods, services, product lines, product mix, branding, USP and differentiation.
+- State typical marketing objectives and explain how they connect (satisfaction, loyalty, awareness, sales, market share, profitability).
+- Contrast product orientation with market orientation and recognise the role of customer relationship management.
+- Discuss responsibility and sustainability pressures on marketing practice for firms and consumers.
+- Distinguish primary from secondary research and qualitative from quantitative approaches; calculate absolute and relative market share.
+- Apply segmentation bases and compare undifferentiated, differentiated and concentrated (niche) targeting.
+- Build a coherent marketing mix (product, price, place, promotion) and place offerings on the product life cycle and BCG matrix.
 
-Many people equate marketing with clever adverts or attractive shop displays. That view captures only the most visible part of the field. Marketing is the ongoing work of understanding customers, shaping offerings around their needs, and making sure the right message reaches the right audience at the right price and through the right channels.
+## 5.1 Product: goods, services, lines, brands and differentiation
 
-Critics argue that promotion, in particular, pushes people to buy more than they need or can afford. Constant product innovation accelerates obsolescence and drives consumption higher. In some cases, marketing even creates desires consumers would never have formed on their own.
+Same object, different product story. River & Reed Workshop sells modular oak desk lamps: a co-working landlord buys twenty for shared desks and books a lighting consultation so staff know how to adjust glare, while a student buys one lamp for a rented room and never needs the consultation. Physically the lamp looks identical, yet in marketing the exchanges are not the same **product** situation — one sits in a business-to-business relationship with an attached service, the other is a business-to-consumer purchase of a good alone.
 
-Less critical observers still judge a business by its commercials or product presentation. Yet even they recognise that "good marketing" involves more than advertising alone. The question remains: what does marketing actually cover?
+**Product (marketing)** — Every good and/or service that can be **exchanged** to fulfil customers’ wishes and needs. Tangible items and intangible support both count when they can be offered in exchange.
 
-No single definition enjoys universal acceptance. The **American Marketing Association** describes marketing as "the activity, set of institutions, and processes for creating, communicating, delivering, and exchanging offerings that have value for customers, clients, partners, and society at large" (www.ama.org). Many other definitions follow closely related logic. They portray marketing as a continuous management process that seeks to
+Customers may be other businesses or private households. Goods and services sold from one business to another are **producer products** (**B2B**); the same categories sold to consumers are **consumer products** (**B2C**). Buyer and user need not be the same person: a parent may pay while a teenager uses the product, or a facilities manager may purchase while employees use the lamps daily. Value is not only the core function — light on a desk — because extra features such as dimmers or USB ports, image such as craft reputation, and the joy or reassurance of use all shape why someone chooses one offering over another. Marketing designs and communicates that whole package, not only the physical object.
 
-- identify the needs and wants of (potential) customers,
+**Product line** — A set of **closely related products** — for example several desk-lamp models that differ in size, wood finish or power options but belong to the same family.
 
-- develop products and product features in line with those needs and wants, and
+**Product mix** — The full range of product lines a business offers. **Width** increases when new lines are added (lamps plus wall sconces). **Depth** increases when more variants sit inside one line (more finishes of the same lamp).
 
-- communicate the products and their benefits to (potential) customers
+Portfolio shape can move in several directions. A firm may **specialise** by competing with one line and knowing that line deeply, or **diversify** by adding lines (**mix extension**) to reach more needs or spread risk. **Line extension** adds variants inside an existing line — new sizes or colours — while a relaunch uses minor changes such as packaging or colour to refresh interest. Contraction drops weak products or whole lines when relaunch no longer pays.
 
-- at a price consumers are willing to pay, and
+**Brand** — A name, word(s), symbol and/or sign that **distinguishes** a product or business from others. Brands support recognition, signal a promised quality level, and help build loyalty when experience matches the promise.
 
-- make them available through a distribution network.
+**Unique selling proposition (USP)** — A **distinctive benefit** — real or clearly perceived — that sets an offering apart from similar products. **Differentiation** may rest on a product characteristic or on how the offer is promoted and understood.
 
-Some treat marketing not merely as a management process but as a philosophy that permeates the entire organisation. In either case, marketing is about **creating value for the customer**. It rests on analysing a business's strengths and the expertise it applies to product development. It also demands a careful study of the market and of what (potential) customers want and need.
+Branding and USP reinforce each other: a **brand** is the identity vehicle, and a **USP** is the reason to prefer that identity. Without a believable difference, branding becomes empty decoration; without a recognisable brand, a genuine difference is harder to remember and harder to charge for. **Product differentiation** aims to make the offer special, unique, or better for this customer than close substitutes.
 
-![Marketing as a management process linking business strengths to customer value through product development and market analysis](/__l5e/assets-v1/487d1b12-b227-414d-bd51-943b473ede93/tb-030-015.png)
+Goods and services often sit inside the same firm. Goods are physical units that can be stored and shipped, ownership typically transfers to the buyer, and quality can be inspected before use. Services such as lighting consultation and installation advice are produced and consumed largely together, and quality is often judged during or after delivery. Classify River & Reed’s offers accordingly: an oak desk lamp sold to a household is a **consumer product** (B2C good); the same lamp sold to a co-working firm is a **producer product** (B2B good); an on-site lighting consultation is a service product that can be B2B or B2C; three heights of the same oak lamp form one **product line** (depth); adding a wall-sconce line is **mix extension** (greater mix width); and a USP claim such as “tools-free brightness change in under ten seconds” differentiates on a usable feature, not only on slogan tone. Marketing treats all exchangeable goods and services as products; lines and mix describe portfolio shape; brand and USP explain preference. A common mistake is treating “product” as only a physical object — repair contracts, tutoring hours and software licences are products if they are exchanged to meet needs — and when a stem switches the same device from office use to home use, the classification flips from producer (B2B) to consumer (B2C) even though the item is unchanged. USP also requires a distinctive benefit or perception, not mere advertising noise.
 
-![How marketing activities create customer value through functionalities, features, image, and user satisfaction](/__l5e/assets-v1/37a4d6c7-2e10-4f54-8a77-7396864bc2d2/tb-030-016.png)
+## 5.2 Marketing objectives
 
-Value for the customer may arise from a product's core functionalities, from supplementary features, from the image it projects, or from the pleasure it brings to the user. A mobile phone creates value because it allows you to contact family and friends from almost anywhere (value through functionality), and because you can also receive emails, messages, and browse online (additional features). Purchasing the latest model of a particular phone with many extra functions may lead others to regard you as knowledgeable in the field — and that recognition can be a source of satisfaction in itself.
+Five targets on one whiteboard. Before PeakMeal, a meal-prep start-up, spends on ads, the founders write five annual targets: raise average satisfaction scores after delivery, lift brand awareness among night-shift hospital staff, grow unit sales by 15%, raise absolute market share in the city meal-prep niche from 6% to 9%, and keep contribution high enough for a thin operating profit. The list looks mixed — soft feelings and hard euros — but each target shapes different **marketing choices**.
 
-> **Example — Tina & Steve**
-> Tina and Steve do not run a factory; they repair computers, sell refurbished equipment, and write tailored software. Their marketing challenge is to show customers that value comes from reliable machines, ongoing support, and software that fits real needs — not from flashy advertising alone.
+**Marketing objectives** — Specific aims that guide market analysis and marketing action. Typical aims include customer **satisfaction** and **loyalty**, **awareness**, a unique selling proposition, **sales** volume or value, market share, and profitability. Objectives often reinforce each other rather than standing alone.
 
-> **Key ideas**
-> - Marketing spans research, product design, pricing, distribution, and communication — not just promotion.
-> - The AMA defines marketing as creating, communicating, delivering, and exchanging value for customers and society.
-> - Customer value can stem from functionality, extra features, image, or personal satisfaction.
+The main objectives link more tightly than a checklist suggests. Dissatisfied customers rarely buy again, so **satisfaction** feeds **loyalty** and future sales; **awareness** matters because unknown offers are not chosen; a **USP** reduces pure price comparison and supports preference; market share shows relative competitive position; sales generate the revenue needed to cover costs; and profitability reimburses owners and funds reinvestment — higher sales help, but only within cost and price limits. Customer satisfaction asks whether the offer met or beat expectations, because unsatisfied buyers leave and satisfied buyers often return. Loyalty asks whether they will choose us again and recommend us, which lowers acquisition pressure. Awareness asks whether target customers know we exist and what we offer, since choice requires recognition in the relevant set. USP and differentiation ask why us rather than a close substitute, supporting preference beyond lowest price. Sales ask how many units or how much revenue, because cash must flow in to cover costs and grow. Market share asks what fraction of the defined market is ours, signalling relative competitive strength. Profitability asks whether revenues cover costs with a surplus, rewarding capital and funding reinvestment.
 
----
-
-## 5.1 What a product is
-
-> **In this section**
-> You will learn how marketing defines a "product" and how the same item can be classified as B2B or B2C depending on who buys it.
-
-In marketing language, a **product** is any good and/or service that can be exchanged to satisfy customers' wishes and needs. The term is broader than a physical object on a shelf. A software licence, a repair visit, and a refurbished laptop all count as products when they are offered in exchange for payment or another form of value.
-
-Customers may be other businesses or private households (consumers). **Producer products** are goods and services sold from one business to another (**business-to-business**, **B2B**). **Consumer products** are sold to consumers or private households (**business-to-consumer**, **B2C**). The classification depends on who purchases and uses the item, not on the item's technical specifications.
-
-When Steve and Tina buy a printer for their office, it counts as a producer product. The identical printer used in their private homes would be classified as a consumer product. Tina and Steve provide computer support services primarily to private households (**B2C**), but also to other businesses (**B2B**). Their refurbished computers and support packages can therefore appear in both categories.
-
-> **Example — Tina & Steve**
-> A sole proprietor who buys a refurbished laptop from T&S for home use is a B2C customer. A small design studio that purchases three laptops and a support contract for its office is a B2B customer — even if the hardware is identical.
-
-> **Key ideas**
-> - In marketing, a product covers both goods and services offered in exchange.
-> - B2B products are sold to businesses; B2C products are sold to consumers or households.
-> - The same physical item can be B2B or B2C depending on who buys and uses it.
-
----
-
-## 5.2 Objectives of marketing
-
-> **In this section**
-> You will identify the main marketing objectives a business pursues and see how they connect to competitiveness and profitability.
-
-Before a business can meet customers' wishes and needs, it must analyse the market(s) in which it intends to compete and define its marketing objectives clearly. These objectives guide every later decision — from product design to promotional spending.
-
-Marketing objectives may include, but are not limited to:
-
-- **Customer satisfaction:** Dissatisfied customers will not buy — or buy again. Satisfied customers frequently become loyal repeat purchasers. This objective is closely linked to the others because loyalty supports market share and sales over time.
-
-- **Creating a unique selling proposition (USP):** A product with a USP is, or is perceived to be, different from competing offerings in some meaningful way. This is also known as **product differentiation** and may rest on a product characteristic or on how the product is promoted and perceived. Building a brand supports the creation of a USP. The product appears — or is made to appear — "special", "unique", or "better than the rest". Businesses pursue a USP because it helps attract and retain loyal customers.
-
-- **Gaining and maintaining market share:** Businesses aim to hold a defined share of the market, which reflects their relative standing compared with competitors and serves as an indicator of competitiveness.
-
-- **Maintaining or increasing sales:** Sales matter because revenues are needed to cover production costs and generate profit.
-
-- **Profitability:** As a rule, higher sales translate into higher profit — within certain limits. Profit rewards owners for their investment and can be retained and reinvested in the business.
-
-These objectives are not pursued in isolation. A strong USP can support market share, which in turn drives sales and profitability. Conversely, neglecting customer satisfaction undermines every other objective. Businesses therefore set marketing goals as part of a broader commercial strategy, reviewing them as market conditions change.
-
-> **Example — Tina & Steve**
-> T&S's USP is not the lowest price on a new laptop — it is reliable refurbished equipment plus hands-on support. Customer satisfaction and repeat business matter more to them than chasing mass-market sales volumes.
-
-> **Key ideas**
-> - Marketing objectives centre on satisfaction, differentiation (USP), market share, sales, and profitability.
-> - Customer satisfaction underpins loyalty and supports the other objectives.
-> - Objectives should be reviewed as market conditions evolve.
-
----
+Translate PeakMeal’s whiteboard into actions. Satisfaction means shorten delivery windows and fix cold-meal complaints within 24 hours. Awareness means partner with two hospital noticeboards and a night-shift podcast, not random city-wide billboards. The **USP** — “balanced meals that survive a 12-hour shift without reheating” — is a concrete difference. Sales and share track units in the defined city meal-prep market, not all food retail. Profitability means avoiding deep discounts that raise share but destroy contribution. Objectives only work when the market is defined and tools (**product**, **price**, **place**, promotion) are aligned with those aims. If awareness doubles while satisfaction collapses, short-term sales and recognition may rise while loyalty, repeat sales and next-quarter profitability are likely to fall. Market share is not automatically identical to profit, because share can rise through unsustainable discounts; a USP is not a slogan with no product or perception difference behind it. Market share objectives need clear market measurement (section 5.5), while USP and branding connect back to product differentiation (section 5.1) and forward into the marketing mix (section 5.7).
 
 ## 5.3 Product orientation versus market orientation
 
-> **In this section**
-> You will compare two strategic starting points — designing first versus listening first — and see how CRM builds lasting customer relationships.
+Two clockmakers, two starting points. Atlas Gears spends eighteen months perfecting a mechanical desk clock with a sapphire face, then asks a salesperson how to push it into shops. North Harbor Time first interviews ferry crews and harbour offices about what fails in salty air, then designs a sealed quartz clock with oversized numerals for glove use. Both want reliable sales and a fair margin, yet their starting questions differ: “**How do we sell what we built?**” versus “**What should we build because customers need it?**”
 
-Over recent decades, many businesses have shifted from a **product-oriented** approach to a **market-oriented** one. A product-oriented business concentrates first on the product and its specifications, and only afterwards considers how to sell it. A market-oriented business begins by analysing customers' needs and wants, then adapts its products to meet those requirements.
+**Product orientation** — An approach that focuses first on **production and product features**, then seeks to sell what has been made. Success is expected mainly from the quality and specifications of the product itself.
 
-Both types of business may pursue the same marketing objectives — even identical ones — but the product-oriented firm relies mainly on the quality of its product features to succeed. The market-oriented approach has the advantage of anticipating changing needs and responding to market shifts earlier than product-oriented rivals. Which approach suits a business depends largely on the product itself and the intensity of competition. Even so, the market and customer expectations should never be ignored.
+**Market orientation** — An approach that starts from customers’ **needs and wants**, then designs and adapts offerings to match them. Success depends on reading and responding to the market.
 
-```text
-Figure 10. Product orientation versus market orientation
+**Product orientation** focuses on production and features first, then arranges sales and advertising, under the belief that a strong product largely sells itself. **Market orientation** focuses on needs and wants first, then produces what customers require, with the advantage of earlier response to market change. Both orientations may pursue identical marketing objectives such as sales, share and satisfaction; the product-oriented firm leans on feature quality to win, while the market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist, but neglecting customer expectations is risky in either case. Identical objectives do not prove identical orientation, because the sequence — **build-then-sell** versus **research-then-build** — can still differ.
 
-  PRODUCT ORIENTATION          MARKET ORIENTATION
-  ─────────────────────        ─────────────────────
-  Focus: production            Focus: customers' needs/wants
-         and product features
+**Customer relationship management (CRM)** — Practices that aim at a **long-term relationship** with customers by keeping contact data and purchase history to send relevant information, offers and reminders — so customers return. Sensitive handling of **personal data** is indispensable.
 
-  Belief: "A good product       Belief: "Produce what customers
-          sells itself" /         need and want"
-          advertisement
+Loyalty cards and personal accounts often mean customers willingly trade anonymity for discounts and tailored offers. Firms then observe buying behaviour and personalise communication. That power helps market-oriented selling, but it also raises responsibility for **privacy** and **consent**; CRM is not “free data” with no sensitivity duties. Atlas Gears can reorient without abandoning craft by interviewing harbour and outdoor workers about fog, gloves and vibration, keeping the mechanical line for collectors as a product-strength niche, launching a sealed, high-contrast model for working docks as a market-led line, and using optional CRM emails only with clear opt-in for service reminders. **Orientation** is a starting logic, not a ban on engineering excellence: market orientation still needs real product competence, and neither approach should ignore the market entirely. Even a pharmaceutical firm developing a new active ingredient may start closer to product orientation at the research stage, yet it must still not neglect customer needs, safety expectations and market fit before launch.
 
-  Priority: Sales                Priority: Customer fit
-```
+## 5.4 Responsibility and sustainability in marketing
 
-**Customer relationship management (CRM)** seeks to build lasting relationships with customers. Their data is stored so that newsletters, coupons, and product information can be sent by mail or email, encouraging repeat purchases. The use of personal data has become a major issue, and handling it sensitively is essential. Through personal accounts and loyalty cards, however, customers often voluntarily surrender anonymity in exchange for discounts and other special offers. Many businesses therefore collect data on customers and their buying behaviour, enabling offers tailored to individual preferences.
+The jacket worn three times. A fashion pop-up pushes “drop” launches every fortnight. Mira buys a neon windbreaker for a festival, wears it three times, and bins it when the zipper fails. The brand’s marketing created urgency she did not plan for. Across town, Mend & Wear runs a repair desk, sells durable jackets with spare zippers, and rents formal coats for weddings. Same clothing market; different stance on how far marketing should push **consumption**.
 
-> **Example — Tina & Steve**
-> T&S follow a market-oriented logic: they ask what support customers need before recommending a machine. A simple CRM spreadsheet — noting each client's hardware, past repairs, and preferred contact channel — helps them offer relevant follow-up without intrusive marketing.
+**Responsible and sustainable marketing** — Practice that recognises marketing’s power to **shape wants**, not only to respond to them, and that seeks production and consumption patterns with lower waste, longer use, and fairer treatment of customers and society.
 
-> **Key ideas**
-> - Product orientation prioritises features; market orientation prioritises customer needs.
-> - Market orientation can help a business respond to change earlier than product-oriented rivals.
-> - CRM supports long-term relationships through personalised communication — provided personal data is handled responsibly.
+Marketing can **inflate want**. Continuous novelty and persuasive promotion can create desires people would not otherwise have had, encourage spending beyond intention or means, and speed up obsolescence of still-usable goods. Critics focus on these effects; defenders emphasise information and matching real needs. Either way, both businesses and consumers influence how sustainable the outcome is, so blaming only firms or only consumers misses the shared role. Firms can design for **durability**, **repairability** and honest claims, and avoid deceptive urgency; consumers can question whether a purchase will be used and prefer **reuse**, repair and rental where sensible. The shared aim is to reduce wasteful churn without denying genuine needs. Repair-and-reuse models keep devices and clothes in use longer; clothing rental for rare events can replace one-off cheap purchases; swap and second-hand circuits also shift status away from constant newness. Marketing can promote these patterns instead of only “upgrade now.” A green colour in an advert is not sustainable marketing if product and process substance are missing.
 
----
-
-## 5.4 The need for more responsibility and sustainability
-
-> **In this section**
-> You will examine how marketing can encourage overconsumption and why sustainability is a shared responsibility of businesses and consumers.
-
-It is frequently argued that businesses do more than respond to what customers need or want — they actively create new desires by developing and advertising products, sometimes in ways that raise ethical concerns. Many people spend beyond their means, or at least beyond what they originally planned. They purchase items they do not genuinely need and may use only briefly, if at all.
-
-It therefore seems desirable for both businesses and consumers to become more conscious of sustainable production and consumption and to recognise the risks of excessive consumption. Both sides need to act more responsibly and sustainably. Marketing that only maximises short-term sales without considering environmental or social impact may undermine long-term trust.
-
-Tina and Steve hope to contribute to sustainability through their business. Computers should remain in use longer: when a problem arises, the machine should be repaired and reused rather than replaced immediately. Their model extends the useful life of equipment and reduces electronic waste — a marketing message that resonates with environmentally conscious customers.
-
-Similar trends are visible in the clothing market. Growing numbers of consumers reject cheap garments discarded after a few months. They prefer high-quality clothing they can pass on to friends — and perhaps receive other quality items in return. Renting high-quality clothes is another emerging pattern: instead of buying inexpensive outfits for a single occasion, customers rent better-quality garments and return them afterwards.
-
-> **Example — Tina & Steve**
-> When a customer brings in a slow laptop, T&S propose a repair and software tune-up rather than pushing a replacement. That choice aligns their commercial offer with a sustainability narrative customers can understand and share.
-
-> **Key ideas**
-> - Marketing can encourage overconsumption; responsible behaviour matters on both sides of the market.
-> - Repair-and-reuse models extend product life and reduce waste.
-> - Sustainability trends in clothing illustrate broader shifts in consumer attitudes.
-
----
+Mend & Wear can rewrite a campaign season by replacing “new drop every Friday” with “repair week” and free zipper clinics, advertising rental for one-off events instead of disposable formalwear, publishing battery-health or fabric-care facts rather than vague “eco” labels, and training staff to suggest mend-first when a product still has life. Responsibility shows up in product design, claims, pricing of repair versus replacement, and promotion tone — not in a **slogan alone**. A “buy one, get one free” deal for single-use plastic cutlery sits poorly beside a sustainability claim unless the offer itself changes toward durable, reusable or genuinely lower-waste alternatives. Sustainability choices feed the product P through durable design, promotion ethics, and sometimes pricing of repair services; they also interact with market orientation when firms listen to customers who already demand lower waste.
 
 ## 5.5 Market research
 
-> **In this section**
-> You will distinguish primary and secondary research, apply the five customer-analysis questions, and interpret market size, share, and potential.
+Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will; another insists on evidence through street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with **structured information** about customers, rivals and the industry.
 
-**Market research** supplies information about a business's existing and prospective customers — the (potential) buyers of its product(s) — as well as about competitors and the industry as a whole. Without reliable data, segmentation, pricing, and promotion become guesswork. Research data can be drawn from two broad types of source.
+**Market research** — The collection and interpretation of information about existing and prospective customers, potential buyers, **competition** and the **industry**, used to support marketing decisions.
 
-### 5.5.1 Primary sources
+**Primary market research** — **Original data** gathered for the firm’s own questions — for example surveys, interviews, observation or experiments, sometimes via a research institute. Tailored and specific, but often costly.
 
-**Primary information** is obtained by carrying out an empirical study or commissioning a market research institute to collect data. Such a study can be designed around the specific needs and interests of the business. A firm might want to know who its customers are, which products they purchase, what they think of those products, and whether they also buy similar products from rivals.
+**Secondary market research** — Use of **existing data** collected by others — government statistics, trade association reports, published studies. Usually cheaper and faster, but more general and not built for the firm’s exact problem.
 
-Steve and Tina, for example, would like to learn more about their prospective customers: which computers do they need or want? How much are they willing to pay for laptops? How much support do they require, and of what kind? Do men and women, or older and younger users, answer these questions differently?
+**Qualitative research** explores motives, language and experiences in depth through interviews, focus groups and open observation notes; samples are smaller, meaning is rich, and statistical generalisation is limited. **Quantitative research** measures amounts, frequencies and relationships with numbers through structured questionnaires, counts and experiments with metrics; larger samples support stronger estimates of shares and averages. The two pairs work together: **primary** versus **secondary** answers who collected the data and for what, while qualitative versus quantitative answers what kind of insight. A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary). Primary research is tailored to the firm’s exact questions — useful for new product concept tests and satisfaction drivers — but costs time, money and design skill. Secondary research is faster and often cheaper or free — useful for market sizing and industry growth context — yet it may be generic, outdated or mismatched. A questionnaire the firm designs itself is primary, not secondary, research.
 
-Conducting a study can be expensive: administering hundreds or thousands of questionnaires, running personal or telephone interviews, setting up online surveys, and analysing and interpreting the results all cost money. Small businesses in particular often cannot afford this level of market research. When they do invest in primary research, they must define clear research questions in advance so that the data collected directly supports decision-making on product features, pricing, or promotion.
+Customer analysis often asks **who** buys, **what** they do with the product, **where** they buy, **when** they buy, and why they choose one option over another. Buyer and user may differ; influencers such as children may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year. A free government mobility report can be useful for sizing and context yet still insufficient before launching the €45 battery-swap plan, because it will not answer willingness to pay or the firm’s exact concept questions.
 
-### 5.5.2 Secondary sources
+**Market size (market volume)** — Total sales of a product by all businesses in a **defined market**, expressed as value (for example euros) or quantity (units).
 
-**Secondary information** relies on research that has already been conducted by others — possibly for a different purpose. Government agencies, trade and industry associations, or other businesses frequently publish research that is available free of charge and may help a firm understand its market. In most cases, however, the information will be fairly general and not tailored to the specific interests of a particular business. Secondary data is useful for context — industry trends, demographic shifts, competitor announcements — but rarely answers niche questions without supplementation. A sensible approach for small firms is to start with secondary sources — census data, industry reports, competitor websites — and invest in primary research only when a specific gap remains. That sequence keeps costs manageable while still grounding decisions in evidence.
+**Market share** — The proportion of a defined market held by a business, product or brand. **Absolute share** compares own sales to market volume; **relative share** compares own share to the largest competitor’s share.
 
-> **Example — Tina & Steve**
-> Before commissioning a local survey, T&S could read Austrian household technology-use statistics and study prices on refurbished-laptop marketplaces. Secondary data would reveal general price bands; primary research would then test whether their support package justifies a premium within that band.
+> **Absolute market share**  
+> Absolute market share = sales of one business (or brand) / market volume  
+> *Sales and market volume must use the same units (euros or units) and the same market definition.*
 
-### 5.5.3 Customer analysis
+> **Relative market share**  
+> Relative market share = own market share / largest competitor’s market share  
+> *A value of 1 means parity with the leader; below 1 means smaller than the leader.*
 
-**Customer analysis** is often a central component of market research. To learn more about (potential) customers, a business will typically investigate five questions:
+**Market potential** can exceed current **market volume** if unrealised customers remain. A firm’s sales potential can exceed current sales if it can win rivals’ customers or claim part of that unrealised potential. **Absolute share** informs managers and investors; **relative share** adds competitive context the absolute figure alone hides. For GlassHarbor’s battery-swap plan, define the market as city e-bike accessory subscriptions this year at €800,000, with GlassHarbor subscription sales of €96,000. Absolute share = 96,000 / 800,000 = 0.12 = 12%. If the largest rival holds 30% absolute share, relative share = 12% / 30% = 0.4. If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide. GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit. Do not mix value share with unit share without saying so, and do not report absolute share without defining the market boundaries.
 
-- **Who** its current and potential customers are: If they are consumers, the business operates in a **business-to-consumer** market (**B2C**); otherwise it operates in a **business-to-business** market (**B2B**). The buyer and the user of a product may not be the same person. Some individuals influence purchasing decisions (e.g. children) even though someone else (parents, grandparents, etc.) makes the actual purchase.
+## 5.6 Segmentation and targeting strategies
 
-- **What** customers do with the products: The more a business understands about how a product is used, the better it can develop and improve the offering to match customer needs.
+Not every rider wants the same bike. GlassHarbor’s research shows four different “ideal bikes” living in one city: students wanting cheap short hops, nurses wanting reliable night commuting, tourists wanting day rentals near the harbour, and cargo users needing stable racks. Treating all four as one average customer would produce a bike that delights nobody. **Segmentation** starts by grouping similar customers; **targeting** chooses whom to serve; **positioning** shapes what those groups believe the offer stands for.
 
-- **Where** customers buy the products: This information helps identify preferred distribution channels. Analysis may also reveal weaknesses in existing channels and point toward alternatives.
+**Market segmentation** — Dividing a market into relatively **homogeneous subgroups** of customers who share relevant characteristics for marketing decisions.
 
-- **When** customers buy the products: Identifying seasonal patterns supports production planning and may justify price differentiation throughout the year.
+**Targeting** — Evaluating segment attractiveness and selecting one or more segments to serve with a **tailored strategy**.
 
-- **Why** customers choose one product over another: Understanding motives and preferences is vital for product development and for increasing market share.
+**Positioning** — Creating a clear **image or identity** for the product in the minds of the chosen target market(s) so the offer fits their demands.
 
-Taken together, these five questions — who, what, where, when, and why — form a practical framework for structuring customer analysis. The answers guide not only product design but also decisions on distribution channels, promotional messages, and pricing levels.
+Segmentation is useful when groups are **measurable** in size and purchasing power, **profitable**, **accessible** through communication and distribution channels, and **durable** enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources — a small customer group is not a valid segment if it cannot be measured, reached or served profitably.
 
-### 5.5.4 Market measures
+*Common segmentation bases*
+| Base | Example variables | What it helps decide |
+| --- | --- | --- |
+| Geographic | City, region, country; urban vs rural | Coverage area, logistics, climate or language fit |
+| Demographic | Age, gender, education, income, employment status | Purchasing power and life-stage offers |
+| Psychographic | Lifestyle, values, attitudes (e.g. environmental concern) | Message tone and brand meaning |
+| Behavioural | Usage intensity, occasions, loyalty, benefits sought | Service level, pricing, loyalty programmes |
 
-Market research can also concentrate on measuring the market. **Market size** (or **market volume**) is the total sales of a product across all businesses in the market. It can be expressed as a value (e.g. in euros) or as a quantity (number of units sold).
+**Target market** — A group of people or businesses towards whom a firm markets goods, services or ideas with a strategy designed to satisfy their specific needs and preferences.
 
-**AT&S**, for example, is interested in the electronics market, particularly the market for substrates and PCBs. Understanding how these markets evolve is important for AT&S when assessing its own position and forecasting future developments. That is why AT&S has researched and collected data on these markets, as documented in its annual report.
+Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting. **Undifferentiated** or **mass marketing** uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. **Differentiated** or **segment marketing** designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. Concentrated or niche marketing deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume.
 
-In the AT&S annual report 2017/18, it reads as follows: According to current forecasts, the printed circuit board and substrate market is expected to increase from USD 57.5 billion in 2017 to USD 59.7 billion in 2018 (+3.8%). By 2020, further annual growth of just under 3% is expected (sources: Prismark, February 2018; Yole, March 2018). The computer, communication and consumer segments ('CCC') still account for a 70% share of the market. Key applications in these areas are smartphones, PCs and tablets, and servers. New applications such as wearables (smartwatches, smartglasses, etc.), 'Internet of Things (IoT)' devices or devices requiring high computing power for artiﬁcial intelligence offer excellent growth opportunities in the long term and are not limited to CCC applications. The automotive, aviation, industrial and medical segments ('AIM') correspond to roughly 20% of the total market and consist of a wide variety of applications; in addition to infotainment, applications for autonomous driving also promise attractive growth opportunities in this area. IC substrates account for the remaining approx. 10% of the market. Source: AT&S annual report 2017/18, p. 79.
+GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coastal city and inner suburbs; **demographic** focus includes employed adults and shift workers; **psychographic** preference leans toward lower waste and dislike of unused ownership; **behavioural** focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Concentrated targeting lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment.
 
-The global market for printed circuit boards and substrates is part of the entire electronics market, which comprises all electronic devices and electronic systems produced. The 25 largest electronics producers include manufacturers of end devices and electronic system suppliers from all relevant market segments (communication, consumer, computer, automotive, industrial and medical). Overall, the global electronics market is expected to reach a volume of approximately USD 2,027 billion in 2018, with annual growth rates of roughly 2.9% between 2018 and 2020 (Source: Prismark, February 2018). The strongest growth is forecast for the segments automotive, at 5.5%, industrial, at 4.4%, consumer, at 4.1% and communication, at 2.8%. In contrast, the computer segment is expected to decline slightly (-0.3%). Source: AT&S annual report 2017/18, p. 79.
+## 5.7 The marketing mix, life cycle and BCG matrix
 
-![AT&S annual report 2017/18 — market measures for printed circuit boards and substrates (Figure 11)](/__l5e/assets-v1/9a276f43-73d8-4756-9a05-513cbda58384/tb-035-017.png)
+Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe; if promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The **marketing mix** is the craft of setting **product**, **price**, **place** and promotion so they play in tune for the target market.
 
-![AT&S annual report 2017/18 — global electronics market volume and segment growth forecasts (Figure 12)](/__l5e/assets-v1/3830589d-bad8-41af-a649-85d9afb5e8fb/tb-035-018.png)
+**Marketing mix** — A harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. Classically organised as the **four Ps**: product, price, place and promotion.
 
-**Market share** refers to the proportion (percentage) of a given market held by a business or by its products or brands. It is calculated by dividing the sales of a business by total sales in the market.
+*The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.*
 
-> **Formula**
-> Absolute market share = sales volume of one business (or one brand) / market volume
+The basic idea is simple to state and hard to execute: provide a suitable **product**, at a **price** customers will accept, available in a convenient **place**, supported by a clear **promotional** message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix.
 
-Example: if the sales volume of one business is 150,000 euros and the whole market volume is 1,000,000 euros, the absolute market share of the business will be 15%. Absolute market share is important information for the business itself, but also for (potential) investors. However, this figure does not tell a lot about the other competitors in the market.
+**Product (as a mix element)** — All goods and services offered — the heart of the mix. Includes line and mix decisions, branding, quality level, features, packaging and supporting services.
 
-**Relative market share** shows how a business (or one of its brands) is performing relative to its largest competitor. This figure adds context to calculating the market share:
+Most firms offer more than one item. Similar items form a **product line**; several lines form the **product mix**. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise on one line or diversify across more lines. Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated.
 
-> **Formula**
-> Relative market share = market share of a business (or a brand) / largest competitor's market share
+**Product life cycle** — A theoretical model of stages in a product’s market life that differ in sales and profit: **introduction**, **growth**, **maturity** and **decline** (after development costs before launch).
 
-Example continued: if the largest competitor has a market share of 30%, then the relative market share will be 15/30 = 0.5
+*Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.*
 
-```text
-Figure 13. Market and sales volume versus market and sales potential
+Before launch there are development costs and no sales. **Introduction** often starts in loss because promotion is heavy and prices may be set to attract trial among innovators and early adopters, with emphasis on market development. **Growth** brings faster sales into a widening mass market; average costs may fall with scale; profits usually appear and strengthen under a market-penetration emphasis. **Maturity** peaks sales in the mass market while growth slows and competition intensifies, so strategy becomes more defensive and profit peaks then comes under pressure. **Decline** sees falling sales and profits among loyal remainers, so efficiency or exit becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months.
 
-  MARKET VOLUME          MARKET POTENTIAL
-  ─────────────          ─────────────────
-  Sales volume of        Market volume in the market
-  all firms in the       + Potential customers not yet
-  market                 served by any firm
+*Product life cycle characteristics (course-style summary)*
+| Stage | Typical strategy emphasis | Customers | Sales | Profit |
+| --- | --- | --- | --- | --- |
+| Introduction | Market development / trial | Innovators and early adopters | Low, then rising | None (often loss) |
+| Growth | Market penetration | Widening mass market | Rapid growth | Strong, rising toward peak |
+| Maturity | Defensive positioning | Mass market | Peak, slow growth | Peak then under pressure |
+| Decline | Efficiency or exit | Loyal remainers | Declining | Low or none |
 
-  SALES VOLUME           SALES POTENTIAL
-  ─────────────          ─────────────────
-  Sales volume of        Sales volume of one business
-  one business           + Gains from competitors
-                         + Share in the increase of
-                           market potential
-```
+**Boston Consulting Group (BCG) matrix** — A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **dogs** (poor dogs).
 
-Based on the assumptions that there are potential customers in the market that could be won, the market potential exceeds market volume, and the sales potential of a business exceeds its current sales volume. A firm with low absolute share but high sales potential may still have room to grow if it can convert undecided buyers or enter underserved segments.
+*Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.*
 
-> **Example — AT&S**
-> AT&S tracks PCB and substrate market growth forecasts to judge whether its own expansion plans align with industry trends. Rising AIM and IoT applications signal opportunities beyond the traditional CCC segments that still dominate volume.
+**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Dogs**, sometimes called poor dogs, sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term).
 
-> **Key ideas**
-> - Primary research is tailored but costly; secondary research is cheaper but often general.
-> - Customer analysis uses who, what, where, when, and why to guide marketing decisions.
-> - Market size, absolute and relative market share, and the volume-versus-potential distinction help assess competitive position.
+**Price** — The amount customers pay. Hard to reset casually once a strategy is established. Influenced by **costs**, competitors’ **prices** and **demand** (willingness to pay). Lowest price is not automatically best.
 
----
+**Cost-based pricing** seeks to cover costs and allow a profit margin; competition makes it hard to charge more without superiority or clear difference; demand through high willingness to pay supports higher prices. In the long run, **total costs** — fixed plus variable — must be covered. **Variable costs** rise with output; **fixed costs** such as rent and insurance do not vary directly with output in the short run. Break-even is where revenues equal total costs. Contribution per unit is selling price minus variable cost per unit; it helps cover fixed costs and then profit.
 
-## 5.6 Market segmentation and targeting strategies
+> **Contribution and break-even**  
+> Contribution per unit = selling price − variable cost per unit
+Break-even units ≈ fixed costs / contribution per unit  
+> *From the next whole unit above break-even, the simplified model shows profit (other factors held aside).*
 
-> **In this section**
-> You will learn how businesses divide markets into segments, choose target groups, position their products, and select a mass, segment, or niche strategy.
+**Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone.
 
-Market research may show that certain characteristics — such as age, gender, education level, income level, behavioural patterns, and interests — are useful for describing a business's (potential) customers. Steve and Tina have considered such characteristics and identified the following:
+**Place (distribution)** — How and where the product is made available. A strong product fails if customers cannot **find it** where they expect it.
 
-- **Geographic:** The Austrian city where their business is based and the surrounding area.
+Place can run through **distributors**, **wholesalers** who sell on to businesses, and **retailers** who sell on to consumers; through agents or brokers, especially in B2B; through online selling and telemarketing; and through formats such as vending machines and kiosks. Channel partners bridge factory and final buyer with logistics, local information and advertising support. Beverage makers, for example, rarely sell every bottle direct to households nationwide; they need partners for reach.
 
-- **Demographic:** Adult men and women, all ages, employed and retired as well as selfemployed.
+**Promotion** — Activities that **inform** potential customers and the public about the business, its products and their benefits.
 
-- **Psychographic:** People who want to get a laptop, but are not willing to pay the full price for a new one; people who care about the environment and are happy to use something second-hand; people who want assistance with getting their laptop started etc.
+Promotion tools include **advertising** on television, radio, online, social media, print, outdoor and transit; direct mailing; **personal selling** through salespeople; **sales promotions**; **sponsorship** of events, people or organisations; and public relations for a favourable image and stakeholder relationships. Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place.
 
-- **Buying behaviour:** People who buy a laptop for occasional use (not heavy users) etc.
+A harmonised mix sketch for North Harbor’s dock clock keeps the dials aligned. **Product** is sealed quartz with oversized numerals and a glove-friendly crown, matching harbour-worker needs from research. **Price** is mid-premium — above toy clocks and below luxury mechanicals — signalling durability without claiming jewellery status. **Place** is marine suppliers, selected hardware stores and a direct web shop, where dock staff already buy kit. **Promotion** uses demo videos with gloves on, a harbour newsletter and a trade stall, showing the USP in use rather than abstract luxury imagery. If North Harbor cuts price by 40% to chase volume while keeping “premium sealed instrument” ads, customers will notice the price–position conflict first. The mix implements objectives (5.2) for chosen targets (5.6) using research (5.5). Orientation (5.3) shapes whether the product P starts from features or from stated needs. Responsibility (5.4) constrains claims and design inside the same mix.
 
-These characteristics can be used to divide customers into relatively homogeneous subgroups — a process called **market segmentation**. Segmentation is worthwhile when the segments are measurable (size, purchasing power, etc.), profitable, reachable through communication and distribution channels, and durable (not changing too rapidly). Once suitable segments are identified, the business selects the segment(s) it wishes to serve (**targeting**). The next step is to **position** products so that it is clear which offering meets the needs of each targeted subgroup. Positioning is the process by which marketers seek to create an image or identity in the minds of their target market(s).
+## Chapter recap
 
-```text
-Figure 14. Market segmentation, targeting and positioning
-
-  SEGMENTATION ──► What are the characteristics of my (potential)
-                   customers? Can they be divided into groups?
-
-  TARGETING ─────► Which groups of customers are my target groups?
-
-  POSITIONING ───► Which products will meet the demands of my
-                   target customers?
-```
-
-### Mass marketing, segment marketing, and niche marketing
-
-A business applies **mass marketing** when it overlooks different market segments and offers the same product to all customers, promoting it in much the same way across segments. Mass marketing is common for products such as pens and pencils, soaps, personal hygiene items, and detergents — goods used by large numbers of people regardless of personal characteristics. Mass marketing allows a business to produce a high volume of identical products and sell them to a broad market. On one hand, this enables **economies of scale**: when many identical units are produced, certain costs do not rise in direct proportion to output but are spread across a larger number of products, reducing the cost per unit. On the other hand, mass marketing is inflexible and makes it harder to respond to changes within specific target markets.
-
-**Segment marketing** means offering different products to one or more segments (partial segmentation). Businesses concentrate their limited resources on products tailored to the needs and wants of customers in the segments they know best (**strategic fit**).
-
-**Niche marketing**, by contrast, focuses on particular segments of a market. Different products are offered to subgroups within segments (greater segmentation). Many small businesses favour niche marketing because they lack the capacity to supply a mass market. Some firms deliberately target selected segments because they have specialised in a particular field. When they excel in that field, they can become market leaders regardless of their size.
-
-Tina and Steve have chosen niche marketing. As a small business, they concentrate on customers with special needs rather than the mass market. They target individual persons, sole proprietors, and small offices / home offices (their segment) with limited funds for computer equipment, no need for the latest computer model or software release, and a strong need for technical support (their niche within the segment).
-
-Targeting is the first step toward an effective marketing strategy. It involves evaluating the attractiveness of each segment and selecting one or more segments to enter. A **target market** — a segment — is a group of people or businesses toward whom a business directs its goods, services, or ideas with a strategy designed to satisfy their specific needs and preferences. Serving the target market effectively requires a well-designed marketing mix as the second step.
-
-> **Example — Tina & Steve**
-> T&S do not compete with mass retailers on the latest gaming laptops. They win customers who value affordability, environmental conscience, and a technician who answers the phone when something goes wrong.
-
-> **Key ideas**
-> - Segmentation divides customers into homogeneous groups; targeting selects which groups to serve; positioning shapes product perception.
-> - Mass, segment, and niche marketing represent different levels of market focus.
-> - Tina and Steve pursue niche marketing within a defined segment of budget-conscious, support-dependent customers.
-
----
-
-## 5.7 The marketing mix
-
-> **In this section**
-> You will explore the four Ps — product, price, place, and promotion — and see how product strategy, pricing tools, distribution, and communication combine into one harmonised blend.
-
-A **marketing mix** is a coordinated combination of marketing tools that best satisfies the needs and wants of customers in the targeted market. It comprises four elements — **product**, **price**, **place**, and **promotion** — collectively known as the **four Ps**. Each element encompasses several tools. The core idea is to deliver a good at an affordable price, through a convenient channel, while communicating a clear message that encourages purchase.
-
-```text
-Figure 15. The four elements of the marketing mix
-
-  Which goods and services …     Are sold at which price?
-         PRODUCT  ◄────────►         PRICE
-
-  Based on which message?        Where?
-         PROMOTION ◄────────►        PLACE
-
-              ╔═══════════════════╗
-              ║   MARKETING MIX   ║
-              ║ (based on market   ║
-              ║    research)       ║
-              ╚═══════════════════╝
-```
-
-### 5.7.1 Product
-
-The first P, **"Product"**, covers all goods and services a business offers. This P lies at the heart of marketing and represents the most fundamental decision a business makes. Most firms offer not a single product but a range of products. Closely related products — such as several slightly different laptop computers — form a **product line**. A business may focus on one product line (laptops only) or operate several product lines (laptops, monitors, printers, storage media, and so on).
-
-**Brands** support product differentiation. A brand consists of a name or a few word(s) and/or a symbol and/or a sign. It distinguishes a product or business from competitors and is intended to build a **USP**, brand recognition, and brand loyalty. Some brands are recognised worldwide and look identical wherever they appear — the same colour, the same font, and so on. Brands also signal consistent quality at a defined level maintained across markets. For many customers, familiar brands provide trust and confidence in their choice. When travelling abroad and feeling uncomfortable or homesick, encountering a well-known brand can be reassuring.
-
-![How brands build recognition, trust, and loyalty through consistent visual identity across markets](/__l5e/assets-v1/ad969427-924a-49ae-a480-9d8444eefd28/tb-039-019.png)
-
-#### The product mix
-
-According to its product-mix strategy, a business may specialise in one type of product (offering a single product line) or diversify (offering multiple product lines, thereby increasing product mix width) — or pursue both approaches. As consumer needs and wants evolve, products must be updated periodically. Minor changes — such as new packaging or colours — are called a **relaunch**. When a relaunch is insufficient to retain customers, major changes become necessary, or the product may be removed from the line entirely.
-
-Businesses can add new products to an existing line (**line extension**, e.g. additional ice cream flavours) or introduce an entirely new product line (**mix extension**, e.g. yogurts alongside ice cream). Products may also be modified over time (replacing an existing ice cream range with a new one) or eliminated from the company's range when a relaunch appears unpromising.
-
-```text
-Figure 16. Product-mix strategies
-
-  EXPANSION          ALTERATION         CONTRACTION
-  ─────────          ──────────         ───────────
-  Line extension     Altering existing  Eliminating products
-  (depth of line)    products           or lines
-
-  Mix extension      ─                  ─
-  (number of lines)
-```
-
-Tina and Steve offer more than one product. Their portfolio effectively contains three distinct "products":
-
-- Used computers and computer equipment that is in good condition and ready to use.
-
-- Services relating to the computer, online help, technical support.
-
-- Development of software that is needed.
-
-While they target both consumers and businesses with the first two "products", the third is more relevant for businesses that may require tailored software not yet available on the market.
-
-Other businesses such as **AT&S** primarily target other firms that need AT&S products for their own production (Apple, for example, relies on AT&S components when manufacturing mobile phones). Depending on the application intended by the customer, AT&S has developed three different business units with a different range of products:
-
-Figure 17. Business units of AT&S (source: annual report 2017/18). Please note: the term EBITDA will be explained in chapter 6, Accounting
-
-The first business unit produces components used in manufacturing mobile phones, tablets, laptops, and digital cameras. The second focuses on components required for driver assistance systems in cars, control systems in machinery, and diagnostic medical instruments. The third specialises in producing memory cards and power modules in phones. Although these products may appear similar — especially to those with limited technical knowledge — they differ in characteristics such as their product cycles and in how they satisfy distinct customer needs across different segments. Organising production into separate business units allows AT&S to allocate resources, set priorities, and measure performance for each product area independently.
-
-#### The product life cycle and the Boston Consulting Group matrix
-
-The **product life cycle** is a theoretical model describing stages in a product's lifespan during which sales volume and profit differ.
-
-```text
-Figure 18. The product life cycle
-
-  Sales volume ──────╱‾‾‾‾‾‾‾‾╲────
-                    ╱            ╲
-  Profit/Loss  ────╱‾‾‾‾‾‾‾‾‾‾‾‾╲──
-
-  Stages:  Introduction → Growth → Maturity → Decline
-           (loss)         (rising)  (peak)     (falling)
-```
-
-![Product life cycle curve showing sales volume and profit across introduction, growth, maturity, and decline stages](/__l5e/assets-v1/d9559a25-9429-4376-921f-0f6ae0775b31/tb-041-020.png)
-
-Before a product reaches the market, there are no sales and no revenue flows into the business. Development costs are incurred nonetheless, so the introduction phase begins with a loss. After launch, sales begin, but costs may still exceed revenue because the business invests heavily in promotion (advertisements, sales events) and may set low introductory prices to attract buyers. In this phase, the product can be a **"question mark"**. According to the **Boston Consulting Group (BCG) matrix**, a product with low relative market share in a rapidly growing market is a "question mark".
-
-During the **growth** period, sales rise faster than costs (average costs may even fall thanks to increased output and economies of scale). As market share grows in a market that is still expanding, the product may become a **"star"**. Stars are highly valuable because of their strong market position. Maintaining that position requires investment in promotion and production capacity. Profit typically materialises during growth and peaks in the **maturity** stage.
-
-Once market growth slows but market share remains high, the product becomes a **"cash cow"**. Businesses generally invest less because growth is low. Revenues stay high while expenses decline. Eventually, however, profits tend to fall again as competition intensifies — often pushing prices down and promotion costs up. The product increasingly becomes a **"poor dog"** as it approaches the **decline** stage. Sales drop — sometimes sharply — and profits follow. Market growth is low and market share may also be relatively low.
-
-The product life cycle varies greatly in length across product categories. The maturity stage may last months or years; products such as detergents, toothpaste, or perfumes can appear to remain in maturity indefinitely. Other products ("fads") have very short life cycles and must be withdrawn within less than a year. Managers use the product life cycle model to anticipate changes in sales and profit and to plan marketing actions appropriate to each stage. During introduction, heavy promotion may be justified even while losses persist; in maturity, defensive positioning protects share; in decline, efficiency measures or a deliberate exit prevent cash drain. Recognising which stage a product occupies helps allocate marketing budget where it will have the greatest effect.
-
-```text
-Figure 19. The Boston Consulting Group matrix
-
-  High market growth
-        │
-  STARS │ QUESTION MARKS
-        │
-  ──────┼──────────────────
-        │
-  CASH  │ POOR DOGS
-  COWS  │
-        │
-  Low market growth
-
-  ──────────────────────────────►
-  Low          High
-        Relative market share
-```
-
-![BCG matrix plotting products by relative market share and market growth rate — stars, question marks, cash cows, and poor dogs](/__l5e/assets-v1/55b8b463-16c9-4cc7-9af3-23675855d3b6/tb-042-021.png)
-
-A business's product portfolio should be balanced — a mix of stars, cash cows, question marks, and not too many poor dogs. Revenues from cash cows can fund stars (the future cash cows) and invest in question marks the business believes in. Table 4 summarises product life cycle characteristics and strategies suited to each stage.
-
-| Stage | Strategy | Customers | Sales | Profit |
-|---|---|---|---|---|
-| Introduction | Market development | Innovators / early adopters | Low level, then rising | None (loss) |
-| Growth | Market penetration | Loyal customers | Rapid growth | Rising |
-| Maturity | Defensive positioning | Mass market | At a peak, then slow growth | Strong, then peak |
-| Decline | Efficiency or exit | Mass market | Declining | Declining / low/none |
-
-Table 4. Product life cycle characteristics
-
-To prevent sales from declining, a business may adopt a strategy to extend a product's life cycle — an **"extension strategy"**. Changing the product mix and entering new markets are the most important extension strategies, as illustrated in **Ansoff's product–market matrix**.
-
-#### Ansoff's product–market matrix as a development tool
-
-The **Ansoff matrix**, also known as the product–market matrix or the product/market expansion grid, is a development tool for businesses. To grow over the long term, firms must continuously reassess their strategies and remain ready to adapt — even when current performance is strong. They need to explore alternative ways of reaching new customers by further developing existing products and creating new ones.
-
-```text
-Figure 20. The Ansoff Matrix
-
-              EXISTING MARKET    NEW MARKET
-              ─────────────      ──────────
-  EXISTING    Market             Market
-  PRODUCT     penetration        development
-
-  NEW         Product            Diversification
-  PRODUCT     development
-```
-
-**Market penetration**, in the upper left quadrant, is the safest of the four options. Under this strategy, a business seeks to expand sales of existing product(s) — e.g. ice cream — in the existing market. This can be achieved by improving the product (e.g. enhancing the flavour), promoting it in new ways (e.g. new TV adverts), using additional distribution channels, or increasing sales personnel. It is a low-risk strategy because the business already knows the product and the market.
-
-**Product development**, in the lower left quadrant, carries slightly more risk, because the business must introduce a new product into the existing market (a new ice cream flavour or complementary products such as cookies and chocolate). This makes sense only when an identified problem cannot be solved with existing product(s).
-
-With **market development**, in the upper right quadrant, an existing product enters an entirely new market. Businesses identify new target groups that might also benefit from the product. A new use may be found, or additional features or benefits may be added.
-
-**Diversification**, in the lower right quadrant, is the riskiest option. Both the product and the market are new — two unknown variables at once. Diversification can, however, reduce long-term risk. With more than one product line targeting more than one market segment, a business can ensure that losses in one line may be offset by profits in another.
-
-> **Key ideas**
-> - Product decisions cover brands, product lines, mix strategies, and portfolio balance.
-> - The product life cycle and BCG matrix link sales stages to strategic categories.
-> - Ansoff's matrix compares four growth paths with different risk levels.
-
-### 5.7.2 Price
-
-The second P, **"Price"**, is equally critical and difficult to set. Once a price is established, changing the pricing strategy is challenging because it can confuse customers. The lowest possible price is not always the best way to attract buyers. The main influencing factors are:
-
-- **Costs**, because costs must be covered and — ideally — a profit earned. Setting price on the basis of cost is called **cost-based pricing**.
-
-- **The prices charged by the competition**, because if the product is not superior to or different from rival offerings, a higher price will be hard to justify.
-
-- **Demand**, because it matters how much customers are willing to pay. When demand is high, a higher price may be feasible.
-
-#### Cost-based pricing and the break-even point
-
-In the long run, every business must cover its total cost to survive. Total costs comprise **fixed costs** and **variable costs**. Variable costs rise directly with output (the more computers sold and the more client technical problems resolved, the higher the variable costs). Fixed costs are independent of output, such as office rent or insurance. When revenues exceed total cost, the business **"breaks even"**. The output required to break even is called the **"break-even point"**.
-
-Suppose Tina and Steve offered just one product — a certain type of laptop with certain specifications — with variable costs of **480 euros**, sold for **720 euros**. Fixed costs amount to **130,000 euros** (regardless of output). The break-even calculation proceeds as follows:
-
-| Step | Calculation | Result |
-|---|---|---|
-| Contribution per item | €720 − €480 | €240 |
-| Fixed costs to cover | — | €130,000 |
-| Break-even quantity | €130,000 ÷ €240 | 541.67 items |
-| First profitable unit | — | **542nd item** |
-
-- Selling price €720 − variable cost €480 = **€240** that contribute to covering fixed costs. This difference is called **contribution**.
-
-- The contribution of €240 per item covers the total fixed costs of €130,000 and then contributes to profit.
-
-- Fixed costs of €130,000 ÷ €240 contribution per item = **541.67 items** needed to cover fixed costs.
-
-- Starting with the **542nd item** sold, the business will make a profit. Below that level, the business will make a loss.
-
-```text
-Figure 21. Break-even point
-
-  Euros
-  1,000,000 ───────────────────────────── Revenues (rising)
-  900,000
-  800,000
-  700,000
-  600,000 ─────────────────────────────── Total costs
-  500,000
-  400,000
-  300,000
-  200,000
-  100,000 ─────────────────────────────── Fixed costs (flat)
-       0 ─────────────────────────────────►
-         0   200   400   600   800  1000  1200  1400
-                    Number of items
-
-  Break-even point: where Revenues = Total costs (~542 items)
-```
-
-Of course, the break-even point can be reached more easily by increasing prices and/or by reducing variable costs.
-
-#### Variable cost plus pricing / distribution pricing
-
-To calculate prices, a markup is added to the variable cost of producing a good (or service). If Tina and Steve choose to add a 50% markup and the variable cost of one laptop that they have just repaired and set up is 480 euros, then the selling price for one laptop would be 480 + 240 = **720 euros** (excl. VAT).
-
-Let's assume one customer offered to buy ten such laptops but was only willing to pay 6,000 euros for the ten laptops (excl. VAT). Should they refuse that offer? They would not earn the 50% markup, but they would be able to cover their variable costs (€4,800) and earn a contribution towards the fixed costs. Only if they are sure of selling the laptops to someone else for a higher price should they decline the offer.
-
-In fact, the variable costs of producing a good represent the absolute lower limit for the price of this good. As soon as the price exceeds the variable costs, this "excess" contributes to covering the fixed costs — the **contribution**. So if variable costs for one of these laptops were 480 euros and the price was 600 euros (excl. VAT), then 120 euros would contribute to covering the fixed costs and making a profit. In competitive markets that require businesses to consider the pricing policies of their competitors, businesses usually employ **distribution pricing** when setting prices for new products or for contract bidding: they add a certain markup to variable costs.
-
-#### Price elasticity of demand
-
-Before changing prices it makes sense to consider how customers might react to an increased or decreased price. A price adjustment will not affect demand uniformly for all types of products. How demand is affected depends on the **price elasticity of demand**. Demand is **"elastic"** if the change in demand (in per cent) exceeds the price adjustment (in per cent).
-
-Let's assume that lowering the price for used laptop computers from 500 to 400 euros (which is a price reduction of 20%) causes an increase in demand from 70 to 100 pieces (an increase in the quantity demanded of 43%). People who were thinking about buying a laptop computer now decide to buy one. And even people who already have a desktop computer purchase a laptop computer as a second option. Demand is elastic and price adjustments may make sense because the quantity demanded increases by 43% (and — depending on the costs — profits might also rise).
-
-Figure 22 shows an example of the effects of a price reduction on the quantity demanded and on revenues:
-
-- Price reduction of €100 / initial price €500 = **20%** price reduction.
-
-- Increase in demand of 30 units / initial demand 70 units = **43%** increase in quantity demanded.
-
-- The ratio +43 / −20 = **−2.15** is the price elasticity of demand as measured from the initial point on the demand curve. The demand for laptops is **elastic** (the ratio 2.15 is greater than 1), because the change in demand (+43%) exceeds the price adjustment (−20%).
-
-- Increase in revenues of €5,000 / initial revenues €35,000 = **14.3%** increase in revenues.
-
-```text
-Figure 22. Price elasticity of demand — elastic demand (used notebook computers)
-
-  Price     Revenue at €500 = €35,000
-  €500 ─    Revenue at €400 = €40,000
-  €400 ─    Revenue at €300 = €45,000
-  €300 ─
-            Demand: 70 → 100 → 150 units
-            Elasticity: −2.15 (elastic)
-```
-
-For other products, the situation might be different. Let's assume Steve and Tina have developed a computer program that optimises data storage and Internet security. If they sold a licence for that software for 60 euros they would be able to sell 90 licences per month. A €10 price reduction (−17%) would only increase the quantity of sold licences by 11% (and revenues would actually decrease), so a price reduction might not make much sense. Inelastic demand is often found with products that people need anyway and buy more or less regardless of the price. Salt, fuel or medicine are classic examples of such products.
-
-Let's have a closer look at the example in figure 23:
-
-- Price reduction €10; €60 initial price = **17%** price reduction.
-
-- Increase in quantity demanded of 10; initial quantity demanded 90 = **11%** increase in demand.
-
-- In this case, the price elasticity of demand amounts to +11 / −17 = **−0.65**. The demand is **inelastic** (the ratio 0.65 is less than 1) because the change in demand (+11%) is lower than the price adjustment (17%).
-
-- Revenues decrease by **400 euros**.
-
-```text
-Figure 23. Price elasticity of demand — inelastic demand (software licences)
-
-  Price     Revenue at €60 = €5,400
-  €60 ─     Revenue at €50 = €5,000
-  €50 ─     Revenue at €40 = €4,800
-  €40 ─
-            Demand: 90 → 100 → 120 units
-            Elasticity: −0.65 (inelastic)
-```
-
-Elasticity of demand does not only depend on prices and price change. Demand is more inelastic if a product cannot be easily substituted by other products. It is also important to note that elasticity in the short run (up to one year) might differ from elasticity in the long run. In the long run, demand for some products may be elastic (even if it is not in the short run) because it takes people some time to change their habits and find substitutes for products that have become more expensive (e.g. taking the train instead of driving by car in times of high fuel prices). At the same time, the opposite may be true for other products that are durable and can be stocked so people would quickly buy them when prices have dropped.
-
-> **Key ideas**
-> - Break-even analysis uses contribution per unit and fixed costs to find the minimum sales volume (542 items in T&S's example).
-> - Elastic demand (−2.15 for laptops) means a price cut can raise revenue; inelastic demand (−0.65 for software) means a price cut may reduce it.
-> - Variable cost plus pricing and distribution pricing set prices above variable costs to fund fixed costs and profit.
-
-### 5.7.3 Place
-
-The third P, **"Place"** or distribution, is sometimes underestimated. Yet a product can fail simply because it is unavailable where customers need it or expect to find it. Place is therefore as important as the other Ps in the marketing mix. Depending on the product, businesses may use one or more distribution channels, such as
-
-- distributors, wholesalers (who buy and resell to businesses) and/or retailers (who buy and resell to consumers),
-
-- agents or brokers (especially in B2B markets),
-
-- online selling on the Internet,
-
-- telemarketing,
-
-- vending machines, kiosks etc.
-
-Distribution partners help the manufacturer bridge the gap from the factory to the (final) consumer. They handle logistics and also inform consumers about products and support advertising activities. Consider a business that produces energy drinks (or any other beverages). It could not sell its entire output directly to consumers; it needs distribution partners to reach customers across a country — or around the world. The choice of channel affects not only where the product is available but also the speed of delivery, the level of customer service, and the final price the consumer pays.
-
-> **Example — Tina & Steve**
-> T&S deliver refurbished laptops directly to customers' homes rather than maintaining a large retail showroom. Their website lists current deals, combining online visibility with personal delivery — a place strategy suited to low inventory and fast turnover.
-
-> **Key ideas**
-> - Place (distribution) determines where and how customers access the product.
-> - Channels include wholesalers, retailers, agents, online sales, and direct delivery.
-> - Distribution partners handle logistics and support promotion beyond the manufacturer's reach.
-
-### 5.7.4 Promotion
-
-The fourth P, **"Promotion"**, covers all activities that inform (potential) customers and the general public about a business, its product(s), and the benefits those products offer. These activities comprise
-
-- advertising on TV and on the radio, on the Internet, on social media and in newspapers and magazines, on billboards, on buses and trains,
-
-- direct mailing,
-
-- personal selling (employing salespeople to communicate with customers and serving them well),
-
-- sales promotions,
-
-- sponsorship of events, of people and/or organisations and
-
-- all kinds of public relations activities. These aim to create a favourable image of the business among the public and develop a positive relationship to all stakeholders of the business.
-
-Promotion communicates the benefits of the product and reinforces the brand image. The promotional mix should be consistent with the other three Ps: there is little value in advertising a product widely if it is unavailable in the chosen distribution channels or priced beyond what the target market will accept.
-
-> **Example — Tina & Steve**
-> With a modest budget, T&S rely on a website, local newspaper ads, social networks, leaflets, and word-of-mouth from satisfied customers. Each channel reinforces the same message: affordable, supported computing without the hard sell.
-
-> **Key ideas**
-> - Promotion includes advertising, direct mail, personal selling, sales promotions, sponsorship, and PR.
-> - Effective promotion aligns with product, price, and place — not working against them.
-> - Even small businesses can combine low-cost channels into a coherent promotional mix.
-
-### 5.7.5 Mixing the four Ps for a harmonised blend
-
-Tina and Steve have thought carefully about how the four Ps fit together for their target market. Each element supports the others; none stands alone.
-
-**Product:** Steve and Tina are convinced that their products will meet demand on the market. Over the past years they have helped many friends and family members and they know that there are many more people who need support when buying, installing and maintaining a computer or a network. On the one hand they would try to buy used computers that are in good condition at a relatively low price and then sell them in an even better condition to people who do not necessarily want to have a brand new computer but who are happy to have a ready-to-use computer and always have support available. On the other hand they would also develop software that is tailored to the needs of their customers and support them when using it.
-
-**Price:** It is clear that used computers must be less expensive than new ones. So the price for a used laptop computer must be considerably lower than the price for a similar new laptop computer at any other computer store. So Tina and Steve need to watch that market very closely and try to find low-priced computers in order to beat the competition and cover their costs.
-
-**Place:** They cannot run a computer store where customers can choose from dozens of different models of computer. They are also not interested in having lots of computers in stock. Computer technology becomes obsolete very quickly and they also do not have a lot of space, so they decide to keep their stock relatively low and to resell as quickly as possible. This can be achieved by delivering the computers to their customers' homes. Additionally, they would offer current deals on their website. Please note: in this context, "stock" is a synonym for "inventory". As you have seen in chapter 4, stock can also be used as a synonym of "share".
-
-**Promotion:** People need to be aware of the product(s) and learn more about what is offered. Tina and Steve do not have a huge budget, but they can afford to set up a website, to put ads into local newspapers, they can be found on social networks and they use leaflets and hope for wordof-mouth advertising through customers who were satisfied with their service to work well for them.
-
-The harmonised blend works because every P reinforces the niche strategy from section 5.6: affordable refurbished equipment (product), priced below new alternatives (price), delivered directly with minimal inventory (place), and promoted through trusted local channels (promotion). Change one element without adjusting the others — for example, heavy TV advertising without stock to deliver — and the mix falls apart. For exam purposes, remember that the four Ps are not a checklist to be optimised separately. Market research feeds the mix; segmentation and targeting define whom the mix serves; and objectives such as USP and market share provide the benchmarks against which the mix is judged. Tina and Steve's blend is coherent because every tool points at the same customer: someone who wants a working computer, fair pricing, convenient delivery, and a technician they can trust.
-
-> **Key ideas**
-> - The marketing mix combines product, price, place, and promotion into one coherent strategy.
-> - Tina and Steve's four Ps align with niche marketing: refurbished hardware, competitive pricing, home delivery, and low-cost local promotion.
-> - Product decisions span brands, life cycle, BCG and Ansoff tools; pricing uses break-even and elasticity; place and promotion ensure availability and awareness.
+- A marketing product is any exchangeable good or service that fulfils wishes and needs; portfolios are shaped as lines and mixes, while **brands** and **USPs** drive differentiation.
+- Marketing objectives — satisfaction, loyalty, awareness, USP, sales, market share, profitability — should be explicit and mutually consistent.
+- **Product orientation** builds then sells; **market orientation** researches then builds; CRM extends relationships with careful data use.
+- Responsible marketing faces the risk of inflating wants and supports more sustainable production and consumption patterns such as repair, reuse and rental.
+- Market research combines **primary/secondary** sources and **qualitative/quantitative** methods; **absolute** and **relative share** quantify competitive position.
+- Segmentation uses geographic, demographic, psychographic and behavioural bases; targeting may be **undifferentiated** (mass), **differentiated** (segment) or **concentrated** (niche).
+- The **marketing mix** harmonises product, price, place and promotion; **life-cycle** stages and the **BCG matrix** guide how products are managed over time.

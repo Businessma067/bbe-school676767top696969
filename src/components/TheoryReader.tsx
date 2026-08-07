@@ -1,6 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { BookOpen, Target, AlertTriangle } from "lucide-react";
-import { CHAPTER_PAGES } from "@/data/textbook-pages";
+import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
+import { cn } from "@/lib/utils";
 
 type Props = {
   chapter: number;
@@ -8,21 +11,63 @@ type Props = {
   onGoToPractice: () => void;
 };
 
+type TocItem = { id: string; label: string };
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s.-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 80);
+}
+
+function extractToc(markdown: string): TocItem[] {
+  const items: TocItem[] = [];
+  for (const line of markdown.split("\n")) {
+    const m = /^(#{2,3})\s+(.+)$/.exec(line.trim());
+    if (!m) continue;
+    const label = m[2]!.trim();
+    items.push({ id: slugify(label), label });
+  }
+  return items;
+}
+
 export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
-  const pages = CHAPTER_PAGES[chapter] ?? [];
+  const theory = getEconomicsCourseTheory(chapter);
+  const markdown = theory?.markdown ?? "";
+  const toc = useMemo(() => extractToc(markdown), [markdown]);
   const [progress, setProgress] = useState(0);
+  const [activeId, setActiveId] = useState<string>("");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTo({ top: 0 });
     setProgress(0);
-  }, [chapter]);
+    setActiveId(toc[0]?.id ?? "");
+  }, [chapter, toc]);
 
   const onScroll = () => {
     const el = scrollRef.current;
     if (!el) return;
     const max = el.scrollHeight - el.clientHeight;
     setProgress(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
+
+    const rootTop = el.getBoundingClientRect().top;
+    let current = toc[0]?.id ?? "";
+    for (const item of toc) {
+      const node = el.querySelector<HTMLElement>(`#${CSS.escape(item.id)}`);
+      if (!node) continue;
+      if (node.getBoundingClientRect().top - rootTop <= 72) current = item.id;
+    }
+    setActiveId(current);
+  };
+
+  const jumpTo = (id: string) => {
+    const el = scrollRef.current;
+    const node = el?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
+    if (!el || !node) return;
+    el.scrollTo({ top: node.offsetTop - 8, behavior: "smooth" });
   };
 
   return (
@@ -51,32 +96,133 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
             style={{ width: `${progress}%` }}
           />
         </div>
+        {toc.length > 0 && (
+          <div className="flex gap-1.5 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {toc.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => jumpTo(item.id)}
+                className={cn(
+                  "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                  activeId === item.id
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {item.label.replace(/^(\d+\.\d+)\s+/, "$1 · ")}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div
         ref={scrollRef}
         onScroll={onScroll}
-        className="relative max-h-[calc(100vh-11rem)] overflow-y-auto bg-[oklch(0.96_0_0)]"
+        className="relative max-h-[calc(100vh-11rem)] overflow-y-auto bg-[oklch(0.985_0.005_75)]"
       >
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-3 py-8 sm:px-6 sm:py-12">
-          {pages.length === 0 && (
+        <article className="mx-auto max-w-3xl px-4 py-8 sm:px-8 sm:py-10">
+          {!markdown && (
             <div className="flex w-full items-start gap-2 rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
               <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
               <div className="font-semibold">Theory for this chapter isn&apos;t available yet.</div>
             </div>
           )}
 
-          {pages.map((url, i) => (
-            <figure key={url} className="w-full overflow-hidden rounded-lg bg-white shadow-sm">
-              <img
-                src={url}
-                alt={`Chapter ${chapter} — page ${i + 1}`}
-                loading={i === 0 ? "eager" : "lazy"}
-                className="block h-auto w-full"
-              />
-            </figure>
-          ))}
-        </div>
+          {markdown && (
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                h1: ({ children }) => (
+                  <h1 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                    {children}
+                  </h1>
+                ),
+                h2: ({ children }) => {
+                  const label = String(children);
+                  const id = slugify(label);
+                  return (
+                    <h2
+                      id={id}
+                      className="mb-3 mt-10 scroll-mt-4 border-b border-border/70 pb-2 font-display text-xl font-bold text-foreground first:mt-0"
+                    >
+                      {children}
+                    </h2>
+                  );
+                },
+                h3: ({ children }) => {
+                  const label = String(children);
+                  const id = slugify(label);
+                  return (
+                    <h3 id={id} className="mb-2 mt-8 scroll-mt-4 text-lg font-bold text-foreground">
+                      {children}
+                    </h3>
+                  );
+                },
+                p: ({ children }) => (
+                  <p className="mb-4 text-[15px] leading-7 text-foreground/95 sm:text-base sm:leading-7">
+                    {children}
+                  </p>
+                ),
+                strong: ({ children }) => (
+                  <strong className="font-semibold text-foreground">{children}</strong>
+                ),
+                em: ({ children }) => <em className="text-foreground/90">{children}</em>,
+                ul: ({ children }) => (
+                  <ul className="mb-4 list-disc space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">
+                    {children}
+                  </ul>
+                ),
+                ol: ({ children }) => (
+                  <ol className="mb-4 list-decimal space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">
+                    {children}
+                  </ol>
+                ),
+                li: ({ children }) => <li className="pl-0.5">{children}</li>,
+                blockquote: ({ children }) => (
+                  <blockquote className="mb-5 rounded-md border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
+                    {children}
+                  </blockquote>
+                ),
+                table: ({ children }) => (
+                  <div className="my-5 w-full overflow-x-auto rounded-lg border border-border bg-white shadow-sm">
+                    <table className="w-full min-w-[20rem] border-collapse text-[13px] sm:text-sm">
+                      {children}
+                    </table>
+                  </div>
+                ),
+                thead: ({ children }) => <thead className="bg-primary text-primary-foreground">{children}</thead>,
+                tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
+                tr: ({ children }) => <tr className="border-b border-border/80 last:border-0">{children}</tr>,
+                th: ({ children }) => (
+                  <th className="whitespace-nowrap px-3 py-2.5 text-left align-bottom font-semibold">
+                    {children}
+                  </th>
+                ),
+                td: ({ children }) => {
+                  const text = String(children ?? "");
+                  const numeric = /^[\d.,€$%\s×x~≈+-]+$/.test(text.trim()) && text.trim().length > 0;
+                  const total = /total/i.test(text);
+                  return (
+                    <td
+                      className={cn(
+                        "px-3 py-2.5 align-top leading-snug text-foreground",
+                        numeric && "whitespace-nowrap text-right tabular-nums",
+                        total && "font-semibold",
+                      )}
+                    >
+                      {children}
+                    </td>
+                  );
+                },
+                hr: () => <hr className="my-8 border-border" />,
+              }}
+            >
+              {markdown}
+            </ReactMarkdown>
+          )}
+        </article>
       </div>
     </div>
   );

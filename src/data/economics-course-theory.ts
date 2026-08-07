@@ -1,6 +1,7 @@
 /**
- * Rewritten Economics Full Course theory (Fuhrmann 2019 — chapters 2–6).
- * Original educational content derived from the in-project textbook; not scanned pages.
+ * Economics Full Course theory (chapters 2–6).
+ * Markdown is generated from economics-book/chapters via `npm run textbook:theory`.
+ * TheoryReader renders this text directly (no PDF pages).
  */
 
 import ch2 from "./economics-theory/ch2.md?raw";

@@ -1,325 +1,138 @@
 # Chapter 4 — Forms of business ownership and sources of finance
 
-> **Chapter overview**
-> Every business operates under a legal form that determines who owns it, who manages it, who bears liability for debts, and how money can be raised. These questions matter for the BBE entrance exam—and directly for Tina and Steve as they choose how to structure T&S Computer Services. This chapter compares sole proprietorships, partnerships, and corporations, explains how AT&S finances and governs itself as a listed AG, and surveys the main sources of finance available to businesses of different sizes.
+Before money moves, someone must answer a legal question: who is the firm? One owner with private assets at stake, several partners sharing risk, or a company that exists as its own legal person changes everything — who can be sued, who decides, and which doors to finance open. This chapter walks that path: ownership forms first, then the menu of equity and debt, then how to choose funding without mismatching purpose, cost, control, and gearing.
 
-> **Learning path**
-> - After **4.1**, you will understand sole proprietorships: easy to set up, unlimited liability, and financing mainly from personal savings and credit.
-> - After **4.2**, you will see why Tina and Steve choose an Austrian **OG** (general partnership) rather than going it alone.
-> - After **4.3**, you will know how corporations separate ownership from management, raise share capital, and list on stock exchanges—with AT&S as the leading example.
-> - After **4.4**, you will distinguish unincorporated from incorporated businesses and match each form to its typical ownership–management pattern.
-> - After **4.5**, you will classify sources of finance as equity or debt, internal or external.
-> - After **4.6**, you will apply three practical criteria—cost, purpose, and gearing—when choosing how to fund a business.
+## Learning objectives
 
-When a business begins trading goods or services, customers, suppliers, and investors soon ask a basic legal question: who are they actually dealing with—the business itself, or the individuals who founded and run it? The answer becomes urgent whenever a contract is signed, capital is invested, or a dispute reaches court. Who owns the business? Who exercises control? Who is the legal counterparty, and who can be sued? Is the firm a separate legal person, or legally identical with its owner or owners?
+- Explain sole proprietorship: owner equals manager, easy setup, unlimited liability, and fragile continuity.
+- Distinguish general and limited partnerships, including unlimited liability for general partners and the role of a partnership agreement.
+- Describe corporations as separate legal persons with limited liability, shareholders versus directors, and Austrian AG/GmbH capital notes.
+- Compare ownership forms using an overview figure and a structured comparison table.
+- Classify sources of finance as equity or debt and as internal or external, and recognise common instruments.
+- Choose finance by weighing cost, risk, control, flexibility, purpose, and gearing (leverage).
 
-The answer depends on the **legal structure** (also called the **form of business ownership**) chosen at establishment. That choice shapes four interconnected issues:
+## 4.1 Sole trader / sole proprietorship
 
-- **Ownership:** Is there one owner, several owners, or even another business as owner?
-- **Management:** Do the owners also run daily operations, or do different people manage the firm?
-- **Liability:** Who is responsible for debts and obligations—and is that liability limited or unlimited?
-- **Finance:** How can the business obtain the money it needs to start, survive, and grow?
+One person, one shop. Mara opens a bicycle repair booth near a station. She registers as a sole trader, puts €9,500 of her savings into tools and a workbench, and signs the rent herself. Customers deal with Mara — not with a company name that exists **separately** from her. When a supplier invoice is unpaid, the claim is against Mara personally.
 
-These questions matter to external parties, but they matter just as much to founders. Some owners want to be actively involved in management—setting objectives, planning activities, organising resources, and monitoring performance. Others prefer to invest capital and hold an ownership stake while leaving operational decisions to professional managers.
+**Sole proprietorship (sole trader)** — A business owned by one person who also manages and runs it. The firm is not a **separate legal entity**: owner and business are, legally, the **same person**.
 
-Finance runs through every stage of a business life. From the outset, money is needed for equipment, machinery, vehicles, and inventory, as well as recurring costs such as rent, energy, and insurance. Depending on the legal form, **minimum capital requirements** may apply before trading can begin. Once operations are under way, revenue from sales can fund day-to-day activity and, in good years, support expansion. Yet sales income is seldom sufficient on its own, and it may not arrive in the right amount or at the right time. Most businesses therefore rely on additional sources of finance throughout their lifecycle.
+How sole trading works day to day is shaped by that identity of owner and firm. Setup is usually the **easiest** of the main forms, because there is typically no minimum share capital barrier of the AG/GmbH type, and the owner makes the key management decisions while bearing the risk. Profits are reported on the owner’s personal income tax statement, and **continuity** is fragile: retirement, long illness, or death of the owner can interrupt or end the business unless someone else takes over. Staff can be hired, but the owner still owns the risk and the final decisions. Founders often choose this shell because it is simple and quick to establish, keeps full control of decisions, avoids sharing profits with co-owners, and taxes profits as personal income; what they must accept in return is **unlimited liability** with private assets at stake, finance limited by one person’s wealth and credit, continuity risk if the owner cannot continue, and the concentration of all major decisions and risk in one person.
 
-Legal structure and finance are closely linked. Incorporated forms such as corporations can issue shares and bonds; unincorporated forms are largely restricted to personal savings, credit, and retained profits. Businesses that outgrow their initial structure often reorganise specifically to access broader funding channels. Although names and detailed rules differ between countries, the underlying categories of ownership are broadly comparable worldwide.
+**Unlimited liability** — The sole proprietor is liable for all debts and obligations of the business. If business assets are not enough, **private assets** can be claimed by creditors.
 
----
+Finance for a sole trader leans heavily on the owner’s own capacity. Personal savings and other outside money from investors or banks are **external sources**; once the shop earns a surplus that is left in the business rather than withdrawn, that retained profit becomes an **internal source** and carries no interest charge. Short-term tools such as a bank overdraft and trade credit are common, while longer bank loans may need collateral, often property as a mortgage. A common mistake is to think that “small business” automatically means “safe private assets”: size does not create limited liability, and a tiny sole trader still faces **unlimited liability**. In exam stems, one owner who manages, is not a separate legal person, reports profits on personal tax, and puts private assets at risk points to sole trader with unlimited liability; continuity questions often test illness or retirement of that single owner. If Mara wanted a partner who invests money but never manages the shop, sole proprietorship would no longer be the right legal shell, because that structure admits only one owner — the investor role she has in mind belongs instead to partnership forms discussed next.
 
-## 4.1 Sole proprietorship / sole traders
-
-> **In this section**
-> You will learn how a one-person business is established, financed, and taxed—and why unlimited liability makes this form unsuitable for Tina and Steve.
-
-A **sole proprietorship** (also called a **sole trader** business) is owned by a single individual who typically also manages and runs it. It is straightforward to establish—particularly for small ventures—because no minimum capital is required. The business is **not** a separate legal entity. Legally and fiscally, the proprietor and the business are one and the same. Profits are reported on the owner's personal income tax statement, and the owner pays tax on business earnings accordingly. There is no separate corporate tax return.
-
-Management rests largely with the sole proprietor, who can make decisions independently without consulting co-owners or a board. That autonomy allows rapid responses to market changes but concentrates risk in a single person. **Continuity** may be threatened if the proprietor retires, becomes seriously ill, or is otherwise unable to work, since there is no built-in succession mechanism. Employees can be hired for support, but the most important management decisions and the full weight of financial risk remain with the owner.
-
-### Available financial funds for sole proprietors
-
-Financing capacity depends primarily on the proprietor's own financial position. Without adequate personal resources, starting the business becomes difficult. Most sole proprietors fund operations from **personal savings**. When more money is needed, they may seek funds from investors and/or banks. The owner's contribution, together with money from external investors and creditors, constitutes **external** sources of finance.
-
-Banks and other financial institutions offer **credit** on both **short-term** (duration less than one year) and **long-term** bases. A creditor lends money for an agreed period; repayment follows the contract terms, usually including **interest** as compensation for the risk and opportunity cost of lending. Creditors often require **collateral**—assets pledged against default—especially for long-term loans. Mortgages secured on land and property are a common example.
-
-Short-term credit frequently takes the form of a **bank overdraft** or **trade credit**. A bank overdraft is flexible: once a business account is opened, the proprietor can withdraw funds beyond the current balance when cash is needed. Interest is charged only on the overdrawn amount. **Trade credit** arises when a supplier agrees to defer payment, giving the business time to pay for purchases after delivery.
-
-All credit—short or long term—creates **liabilities** for the sole proprietor. Because liability is **unlimited**, private assets are exposed if the business fails or debts fall due. Creditors may pursue the proprietor's personal wealth—including savings, property, and possessions—to satisfy outstanding obligations.
-
-Once trading begins, **internal** sources of finance may become available. If revenues exceed expenses, the business makes a **profit** that can be retained and reinvested (unless withdrawn for personal use). Selling surplus or obsolete assets offers another internal option. Internal finance carries no interest charges, though it reduces funds available for the proprietor's personal use.
-
-> **Example — Tina & Steve**
-> A sole proprietorship does not suit Tina and Steve. They want to share tasks, share risk, and hold equal rights and responsibilities. Their vision of running T&S Computer Services together is better realised as a **partnership**.
-
-> **Key ideas**
-> - Sole proprietorships are easy to set up, offer full managerial control, and expose the owner to unlimited liability.
-> - Finance comes mainly from personal savings, credit (overdraft, trade credit, loans), and eventually retained earnings.
-> - Tina and Steve need a structure that allows shared ownership and management.
-
----
+Worked: Mara’s first-year money. At start-up she invests €9,500 savings — **external equity** from the owner’s point of view as funds put into the firm — and opens a current account with a €2,500 overdraft limit. In operations she buys spare parts on 30-day trade credit, so unpaid purchases are short-term liabilities. Year 1 profit before drawings is €22,000; she withdraws €16,000 for living costs and leaves €6,000 in the business, and that €6,000 left in is **internal finance** (**retained earnings**) on which no interest is owed. If sales crash and the overdraft plus supplier bills cannot be cleared from business cash, creditors can pursue Mara’s private assets under **unlimited liability**. Easy setup and full control therefore come with personal liability and finance that depends on one owner.
 
 ## 4.2 Partnership
 
-> **In this section**
-> You will see how partners share ownership, responsibility, and finance—and why Tina and Steve register T&S Computer Services as an Austrian OG.
+Two names on the door. Leo and Nina want to run a landscape design practice together. Neither wants sole-trader loneliness: they want to split design and client work, pool savings, and share decisions. They must still answer who is liable if a project goes wrong and the bank is unpaid.
 
-When two or more people jointly establish a business, the arrangement is called a **partnership**. Partners should draw up a **partnership agreement** defining rights, responsibilities, and how profits and losses are shared. The agreement should specify each partner's ownership percentage, profit-and-loss allocation, partnership terms, decision-making procedures, dispute resolution, and other relevant provisions.
+**Partnership** — A business jointly founded by two or more persons. Partners set rights, responsibilities, and profit/loss sharing in a **partnership agreement**. In Austria, a general partnership of this type is called **Offene Gesellschaft (OG)**.
 
-In a **general partnership**, all partners have equal rights, bear equal responsibilities, and face **unlimited liability**. Partners can divide tasks according to their skills, specialise in different areas, and consult one another when facing difficult decisions—often arriving at better outcomes than a single proprietor acting alone. In Austria this form is known as an **Offene Gesellschaft**, abbreviated **OG**.
+Agreement first, then daily work. The partnership agreement typically settles ownership shares, profit and loss splits, roles, decision rules, dispute resolution, and terms of the partnership. In a **general partnership**, partners jointly own and manage and each has **unlimited liability** for the firm’s debts, so a creditor may pursue any general partner for the full remaining debt, not only that partner’s “share.” Tasks can be specialised and ideas exchanged, which can improve decisions, and finance resembles sole trading but with more people who can contribute savings and supply collateral.
 
-Tina and Steve operate in Austria and choose to found an **OG** because they intend to participate equally in management and share financial risk. Their firm is named **T&S Computer Services OG**. Their partnership agreement will document ownership shares, profit-and-loss allocation, rights and duties, and procedures for resolving disagreements.
+**General partnership** — Partners jointly own and manage the business; each general partner has **unlimited liability** for the debts of the firm. Austrian label: **Offene Gesellschaft (OG)**.
 
-### Available financial funds for partnerships
+**Limited partnership** — A partnership with at least one partner who is not involved in management and whose liability is **limited to the amount contributed**. Austrian label: **Kommanditgesellschaft (KG)**. General (managing) partners still face **unlimited liability**.
 
-In general, the financial aspects of partnerships are similar to those of sole proprietors. However, two or more partners may together contribute more savings and pledge more private assets as collateral than a single proprietor. Each partner is **solely liable for all debts** of the business—**unlimited liability** applies to every partner in a general partnership, regardless of who incurred a particular obligation.
+The contrast between general partner and limited partner is therefore about management and liability together. A **general partner** is involved in management, faces **unlimited liability**, can bind the firm through management acts within the structure, and is typical in an OG as well as present in a KG as a managing partner. A **limited partner** is not involved in management, has liability **capped at the contribution**, provides capital while staying out of day-to-day running, and is the typical role in a KG alongside general partners. A limited partner must stay out of management if they want liability limited to their contribution, because stepping into management can undermine the limited status that the law attaches to that passive capital role. Another trap is treating the profit-sharing ratio as a liability cap: in a general partnership any general partner can be pursued for the whole remaining debt. Exam recognition for “two or more owners, agreement, unlimited for general partners, OG/KG” points to partnership; a silent capital provider with no management role and capped loss matches the limited partner / KG pattern. Partnerships remain unincorporated — like sole traders, they are not separate legal persons in the corporate sense you meet in 4.3 — and that is why unlimited liability for general partners matters so much.
 
-A **limited partnership** includes at least one partner who does not participate in management and whose liability is restricted to the capital contributed. This allows passive investors to supply funds without assuming operational responsibility or exposing their entire personal wealth. In Austria this form is the **Kommanditgesellschaft**, or **KG**.
+Worked: Leo, Nina, and a bank claim. They form an OG. Leo contributes €18,000; Nina contributes €12,000. After salaries for work done, they share profits 55:45. The firm borrows €35,000 to fit out a small studio. Business assets are later exhausted; €14,000 of bank debt remains. The bank may claim the **full €14,000** from Leo or from Nina (or both), not merely 55% from Leo and 45% from Nina. Alternatively they form a KG: an investor, Priya, contributes €20,000 as limited partner and takes no management role, so Priya’s loss is normally **capped at €20,000** while Leo and Nina as general partners still face **unlimited liability**. Profit shares do not cap a general partner’s liability; only a true limited-partner status limits loss to the contribution.
 
-> **Example — Tina & Steve**
-> Tina and Steve could also have founded a **GmbH** (private limited company), but Austria requires a minimum capital of **€35,000** for that form. They preferred a partnership for now, though a GmbH remains an option as the business matures. An **AG** (public limited company) would require **€70,000** minimum capital—far beyond their current means.
+## 4.3 Corporations / companies
 
-> **Key ideas**
-> - Partnerships combine shared ownership and management with contractual clarity through a partnership agreement.
-> - General partnerships (OG) carry unlimited joint liability; limited partnerships (KG) protect passive investors.
-> - Tina and Steve's OG reflects equal involvement and shared risk; GmbH (€35,000) and AG (€70,000) capital minima influenced their choice.
+The firm that can sign its own name. Three engineers want to build sensor modules. They need serious capital, want investors who do not all run the plant, and do not want every supplier claim to reach their private homes. They look at forming a company — a **legal person** that can own assets, hire staff, sue and be sued in its own name.
 
----
+**Corporation (company)** — An incorporated business with **separate legal personality**. Ownership is divided into **shares**. Shareholders’ liability is typically **limited** to the capital they invested. Owners need not manage; managers need not own shares.
 
-## 4.3 Corporations
+Separate person, limited loss, directors in charge. As a **legal person**, the company can own land and property, hire people, close contracts, and litigate. Shareholders provide share capital; they are neither obliged nor automatically entitled to manage day to day. Shareholders elect a **board of directors** to make major decisions and represent owners. The top executive is often called CEO; other roles may include CFO, COO, CIO, or CMO. Setup is harder than for unincorporated forms, and capital rules may apply — but **limited liability** is the core protection for owners.
 
-> **In this section**
-> You will learn how corporations function as legal persons, how shareholders and managers are separated, and how large firms such as AT&S raise equity and debt on capital markets.
+**Limited liability** — Shareholders are usually liable only up to the money invested when buying shares. Creditors claim against the **company**, not automatically against shareholders’ **private assets**.
 
-**Corporations** are legal entities in their own right—distinct from the individuals who create, own, or manage them. As **legal persons**, they hold rights and obligations comparable to natural persons: they may own land and property, employ staff, enter contracts, and sue or be sued in their own name.
+**Share capital** — Ownership capital divided into shares (stock). Buyers of shares become shareholders. Share capital raised at issue is **long-term or permanent capital** and is usually not redeemed by the company like a loan.
 
-Founders and shareholders need not manage the company, and managers need not own shares. This division allows specialists to run large organisations while investors supply capital from a distance. Corporations are more complex and costly to establish than sole proprietorships or partnerships, often requiring formal registration, statutory capital, and ongoing disclosure obligations. In return, shareholders' liability is typically **limited** to the amount invested when purchasing shares.
+> **Share slice of capital**  
+> Value per share at issue = total share capital ÷ number of shares  
+> *Example course pattern: €1,000,000 capital ÷ 100,000 shares = €10 per share (0.001% of capital each).*
 
-### 4.3.1 Shareholders are not (necessarily) managers of the business
+Shares can be bought at initial issue or later from another shareholder. A **stock exchange** is a regulated market where listed shares and other securities (such as **bonds**) can be traded, and listing requires compliance with rules. An **initial public offering (IPO)** introduces shares at an issue price; afterwards prices move with demand and supply. Rising **secondary-market** prices enrich trading shareholders — they do not inject extra cash into the issuing company. Investors may buy shares to support a business they believe in; dividends are parts of profit paid to shareholders, with no automatic duty to pay every year; capital growth is the hope that share prices rise; common stock typically includes voting rights at the stockholders’ meeting; and demand for shares reacts to firm prospects and to macro signals such as growth, interest rates, and inflation. A friend who says “my shares doubled on the exchange, so the company just raised twice the capital” confuses secondary trading with new corporate finance: the gain accrues among traders, not as fresh cash on the company’s books. Two further confusions are worth avoiding: owning shares is not the same as managing, so shareholders must not be treated as directors by default; and secondary share-price gains must not be treated as new corporate finance.
 
-> **In this section**
-> You will see who runs a corporation when shareholders supply capital but do not manage operations—and how AT&S organises its management board.
+Names differ by country: public limited company (PLC) in many English-speaking settings; Inc. or Ltd in others. In German-speaking countries the **Aktiengesellschaft (AG)** is the share corporation — Aktien means shares, Gesellschaft means corporation. In Austria, founding an AG requires minimum capital of about **€70,000**. The European Company (SE) is a related form under EU law. Private limited forms keep legal personality and limited liability but usually do not offer shares to the general public on an exchange; examples include the US LLC, the UK private company limited by shares, and Austria/Germany’s **Gesellschaft mit beschränkter Haftung (GmbH)**. In Austria, GmbH minimum capital is about **€35,000** — lower than for an AG, still a barrier versus a partnership, and without the public flotation path of a listed AG. Large corporations can also issue bonds: packaged borrowing from many investor-creditors with agreed interest and repayment. Bond interest is often lower than a comparable bank loan for big issuers, which helps fund plants and infrastructure, yet bondholders remain creditors, not owners. Investor metrics on listed shares include price path, market capitalisation (shares outstanding × market price), dividend yield, and the price–earnings (P/E) ratio. Exam recognition for separate legal person plus limited liability plus shares plus directors elected by shareholders points to corporation; Austrian numbers to remember are AG ≈ €70,000 minimum capital and GmbH ≈ €35,000; and bondholder is not shareholder. Share capital and bonds both appear again when you classify equity versus debt in 4.5 and when gearing rises in 4.6. In short, a corporation is a separate legal person; shareholders own while directors manage and the roles need not overlap; limited liability typically caps owners’ loss at invested capital; Austrian AG ≈ €70k and GmbH ≈ €35k set minimum capital, with GmbH shares not for public exchange flotation like a listed AG; and IPO cash is company finance while later market trades are not.
 
-If shareholders provide money for **share capital** but are neither obliged nor entitled to manage the company, who does? The corporation is managed by the **board of directors**—persons elected by shareholders to make major business decisions and represent shareholder interests. The highest-ranking manager is the **Chief Executive Officer (CEO)**. Other board members may include the **Chief Financial Officer (CFO)**, **Chief Operating Officer (COO)**, **Chief Information Officer (CIO)**, or **Chief Marketing Officer (CMO)**.
+Worked: issue price vs later market price. SensorCo issues 80,000 shares at €20 each at IPO → share capital raised = €1,600,000. Two years later the shares trade at €31. Market cap = 80,000 × €31 = €2,480,000. The €11 per-share rise goes to investors trading among themselves; SensorCo does **not** receive that secondary gain as new finance. Separately, SensorCo issues a €900,000 bond at 3.5% to expand a clean room. Bond investors are **creditors**. If SensorCo is structured as an Austrian GmbH instead of floating publicly, founders still enjoy limited liability once capital rules are met, but shares are not sold to the general public on an exchange. Issue raises company cash; later price rises do not. Bonds add debt, not ownership.
 
-The board of **AT&S** consists of three persons with different tasks and responsibilities:
+## 4.4 Overview comparison of ownership forms
 
-**a) Andreas Gerstenmayer** — Chairman of the Management Board (CEO), responsible for:
+Three founders, one vehicle fleet. Jonas, Ela, and Rafi need about €95,000 of vans for a cold-chain delivery start-up. They can go sole trader (one of them), form an OG, or meet capital rules for a GmbH. The legal shell changes liability, continuity, and who must manage.
 
-- Sales/marketing
-- Purchasing
-- Investor Relations/Public Relations/
-- Business Development Strategy Internal Communication
-- Compliance
+**Unincorporated vs incorporated** — **Unincorporated** businesses (sole trader, partnership) are not legal entities of their own. **Incorporated** businesses (corporations / limited companies) are legal persons. Among unincorporated firms, owners and managers are typically the same people; among incorporated firms, shareholders and directors need not be the same.
 
-**b) Monika Stoisser-Göhring** — Deputy Chairwoman of the Management Board and, as SFO, responsible for:
+*Forms of business ownership: unincorporated (sole trader; partnership) versus incorporated (corporations / limited liability companies), with ownership and management roles.*
 
-- Finance and Accounting
-- Legal & Internal Audit
-- Controlling
-- IT & Tools
-- Human Resources incl. CSR
+Reading the ownership map starts with **legal personality**. If none: one owner → **sole trader**; two or more → **partnership** (general and possibly limited partners). If **separate legal person**: shareholders provide capital; directors run the firm; liability of owners is typically limited to invested capital. Austrian AG/GmbH capital thresholds sit on the incorporated branch. When classifying in an exam, sort by legal personality first, then by number of owners, then by liability, and use the table mentally rather than inventing hybrid rules such as a “sole trader with limited liability.” A related trap is assuming that “more owners” automatically means limited liability: an OG with three partners still exposes general partners to unlimited liability. If one founder’s family home is their only major private asset, the liability row of the comparison is usually the decisive one.
 
-**c) Heinz Moitzi** — COO, responsible for:
+*Comparison of sole trader, partnership, and corporation*
+| Criterion | Sole trader | Partnership | Corporation / company |
+| --- | --- | --- | --- |
+| Legal personality | None — firm identical with owner | None — unincorporated | Separate legal person |
+| Owners | One person | Two or more partners | Shareholders |
+| Management | Owner manages | Partners manage (limited partners do not) | Board / directors; owners need not manage |
+| Liability | Unlimited | Unlimited for general partners; limited for limited partners (to contribution) | Limited to capital invested in shares |
+| Taxation of profits (course focus) | Personal income tax of owner | Typically personal tax on partners’ shares | Corporate framework (company and/or shareholders) |
+| Continuity | Fragile if owner retires or falls ill | Depends on agreement and partner succession | Stronger — legal person continues |
+| Typical finance access | Owner savings, overdraft, trade credit, bank loans | Partners’ capital, loans, overdraft, trade credit | Share capital, loans, bonds (larger firms); broader investor access |
+| Setup / minimum capital | Easiest; usually none | Agreement required; usually none | Harder; AG ≈ €70,000, GmbH ≈ €35,000 (Austria) |
 
-- Research & Development (R&D)
-- Quality Management
-- Maintenance
-- Business Process Excellence
-- Production
-- Environment & Sustainability
-- Quality Assurance
-- Safety
-- Supply and Disposal
+Worked: cold-chain fleet options. Sole trader path: Jonas alone owns the vans, faces unlimited liability, funds mainly from personal savings plus a bank loan; Ela and Rafi are employees or contractors, not co-owners. OG path: all three manage, pool capital toward the €95,000 fleet, share unlimited liability; a partnership agreement sets profit splits and decision rules. GmbH path: they meet Austrian minimum capital rules, take shares, enjoy **limited liability** to invested capital, and appoint managing directors (who may or may not be shareholders). Trade-off: GmbH limits personal asset risk and clarifies continuity of the legal person; it costs more effort and capital than an OG or sole trader. Same vans, different answers to “who is liable?” and “who must manage?”
 
-*Source: AT&S annual report 2017/18. The board of directors of AT&S, p. 11.*
+## 4.5 Sources of finance
 
-> **Key ideas**
-> - Ownership and management are separated in corporations; shareholders elect the board.
-> - The CEO leads strategic direction; specialist executives (CFO, COO, and others) manage functional areas.
-> - AT&S illustrates professional management of a large listed corporation.
+Money has a passport. A boutique hotel renovation needs cash for a roof, seasonal linen stock, and a slow winter. Some euros will come from profits kept in the business; some from a new investor; some from the bank and suppliers. Each euro should be labelled: **equity** or **debt**? **Internal** or **external**? Short-term or long-term?
 
-### 4.3.2 Available financial funds for corporations
+**Equity finance** — Funds that belong to the **owners** of the business — for example share capital and retained earnings. Equity may be **internal** (retained earnings) or **external** (investor funds / newly issued share capital).
 
-> **In this section**
-> You will understand share capital, stock exchanges, IPOs, investor motives, and how AT&S's listing history and shareholder structure illustrate corporate finance in practice.
+**Debt finance** — Borrowed funds that create **liabilities** owed to creditors: bank overdrafts, trade credit, bank loans, bonds, and similar instruments. In the standard course overview, debt finance is **external**.
 
-Corporations usually have more options to raise financial funds than sole proprietors and partnerships. Their financial funds mainly comprise **share capital** as well as loans and credit.
+*Sources of finance: equity (internal and external) versus debt (external), with common short-term and long-term instruments.*
 
-#### Share capital
-
-The capital of a corporation is divided into **shares**, which is why it is called **share capital**. If share capital equals €1,000,000 and is divided into 100,000 shares, each share (also called **stock**) represents €10, or 0.001 per cent of the share capital. Persons who buy shares become **shareholders**. Shares can be bought either at the time they are initially issued by the corporation or later from another shareholder who sells. If all 100,000 shares are actually sold, the corporation gains €1,000,000 as share capital. This example shows that huge amounts of money can be raised from the sale of shares. The share capital of AT&S equals **€141,846,000**. Share capital is usually not redeemed by the company; it is long-term or even permanent capital.
-
-A corporation's stock can but does not have to be listed on a **stock exchange**—a financial market, regulated by the authorities, where shares and other securities (e.g. bonds) can be easily bought and sold. Corporations that want their shares listed must comply with certain rules and fulfil listing requirements. Shares are introduced on the stock exchange at a certain price; this introduction is also called an **initial public offering (IPO)**. After the IPO, prices are determined by **demand and supply**. According to the laws of supply and demand, prices usually go up if demand for shares is high and vice versa.
-
-Demand for shares can change for many reasons: rising expectations that the business will make profits, increase market share, or successfully introduce a new product. Demand is also influenced by economic indicators such as **economic growth**, **interest rates**, and **inflation**. There is often higher demand when the economy is thriving (because many people have money to invest), with comparatively higher rates of inflation (because share prices may also increase), and comparatively low interest rates (because high interest rates make other investments more attractive).
-
-An increase in share prices **after** they have been issued does **not** have any additional financing effect for the issuing corporation. The beneficiaries of this increase are the shareholders only.
-
-Among the biggest stock markets of the world are the **New York Stock Exchange (NYSE)**, **Nasdaq Inc.** (New York), the **London Stock Exchange (LSE)**, the **Tokyo Stock Exchange**, **Hong Kong Exchanges and Clearing**, and the **Shanghai Stock Exchange**. Apart from the LSE, important European stock exchanges include the **Deutsche Börse** (Frankfurt), **NYSE Euronext** (Europe), the **SIX Swiss Exchange** (Geneva, Basel, and Zurich), **Borsa Italiana** (Milan), and the **Spanish Exchange**.
-
-People invest in shares for several important reasons:
-
-- The intent to provide money for a business they believe in and want to support financially.
-- **Annual income:** the wish to get **dividends** in return—distributions of profit to shareholders. There is no obligation for a corporation to do so, but if no dividends are paid over a longer period, shares might become unattractive and demand may fall.
-- **Capital growth:** the hope that share prices will rise and shares can be sold at a higher price than they were bought at.
-- **Voting rights** at the annual stockholders' meeting (common stock includes the right to vote). Holders of **preferred shares** do not have this right but earn a higher dividend.
-- Protection against inflation, since shares represent an investment in real values.
-
-In English-speaking countries, the **public limited company (PLC)** is a familiar corporate form—especially in the United Kingdom and Commonwealth countries. In the USA and elsewhere, labels such as "Inc." (Incorporated) or "Ltd" (Limited) are common. German-speaking countries use **Aktiengesellschaft**, abbreviated **AG** ("Aktien" = shares; "Gesellschaft" = corporation). The minimum capital requirement for founding an AG in Austria is **€70,000**—one reason Tina and Steve do not consider an AG appropriate for their business.
-
-Another type of corporation is the **European Company (SE, société européenne)**. It is similar to an AG or PLC but governed directly by Community law applicable in all—and only in—member states of the European Union.
-
-**AT&S** is an Austrian **AG**. Its shares were initially listed on the **Neuer Markt** of the **Frankfurt Stock Exchange** in **July 1999**. In spring 2008, AT&S decided to switch to its home stock exchange in Vienna. AT&S has been quoted on the **Vienna Stock Exchange's Prime Market** segment since **20 May 2008**. At the same time, application for delisting from the Frankfurt Stock Exchange and withdrawal of admission for AT&S shares to be traded on the regulated market (Prime Standard) of the Frankfurt Stock Exchange was filed. Delisting became effective as of **Sunday, 14 September 2008**; the last Frankfurt trading day was **Friday, 12 September 2008**. Since **Monday, 15 September 2008**, AT&S shares have been listed exclusively on the **Vienna Stock Exchange** (source: https://ats.net/investors/ats-share/basic-information/).
-
-According to AT&S's annual report, about **one third of the shares** are held by **two foundations**. The rest is **free float**—shares available on the stock exchange. A number of institutional investors have invested in AT&S shares, but around one third of the stocks are held by private investors and other shareholders.
-
-```text
-Figure 8. Shareholder structure of AT&S (source: annual report 2017/18)
-
-                    AT&S SHAREHOLDER STRUCTURE
-                    ──────────────────────────
-
-    ┌─────────────────────────┐     ┌──────────────────────────────┐
-    │  Two foundations        │     │  Free float (~two thirds)    │
-    │  (~one third of shares) │     │                              │
-    └─────────────────────────┘     │  • Institutional investors   │
-                                    │  • Private investors &       │
-                                    │    other shareholders        │
-                                    │    (~one third of total)     │
-                                    └──────────────────────────────┘
-```
-
-Investors monitor several **key figures** on shares:
-
-- **Share price** and its development. As **Table 2** shows, the price has risen over the past years, peaking at almost **€28** in financial year 2017/18 and falling to **€22** at the end of that financial year.
-- **Market capitalisation** ("market cap")—the total market value of a company's outstanding shares (shares held by all shareholders multiplied by the current market price). Institutional investors use market cap to gauge company size when diversifying portfolios. Market cap is not necessarily a meaningful metric for the value of a company, because share prices can move for reasons unrelated to underlying performance.
-- **Dividend yield**—the dividend expressed in relation to the share price.
-- **Price–earnings ratio (P/E ratio)** per share—the current share price relative to earnings per share. A P/E ratio of **15.94** means that an investor can expect to invest almost €16 in AT&S in order to receive one euro of AT&S's earnings. This ratio supports comparisons between companies or over time; a low P/E may signal undervaluation or strong current earnings.
-
-| Key stock figures | Unit | 2017/18 | 2016/17 | 2015/16 |
-|---|---|---:|---:|---:|
-| Closing price at 31 March | € | 22.00 | 10.29 | 12.90 |
-| High | € | 27.95 | 13.43 | 16.35 |
-| Low | € | 9.16 | 9.07 | 10.12 |
-| Market capitalisation, end of reporting period | € in millions | 854.7 | 399.8 | 501.2 |
-| Dividend per share | € | 0.36 | 0.10 | 0.36 |
-| Dividend yield (at the closing price) | % | 1.6 | 1.0 | 2.8 |
-| Earnings per share | € | 1.38 | (0.59) | 1.44 |
-| Carrying value per share | € | 18.31 | 13.90 | 14.64 |
-| Price–earnings ratio per share | | 15.94 | — | 8.96 |
-
-*Table 2. Key stock figures for AT&S (source: annual report 2017/18)*
-
-![Table 2. Key stock figures for AT&S (source: annual report 2017/18)](/__l5e/assets-v1/c136bf00-76b4-4e94-9f2e-906b5ae1cf93/tb-026-013.png)
-
-#### Liabilities
-
-Apart from loans and credit that other businesses can also use, big corporations also have the option to issue **bonds**. Bonds can be regarded as a loan between investors as creditors and a corporation. Investors provide the corporation with a certain amount of money for a specific time period, based on an agreement when to repay the debt and how much interest to pay. Issuing bonds can be more attractive to corporations than borrowing from banks, because the interest rate for bonds is often less than the interest rate for a bank loan. Borrowing large sums at low interest rates enables corporations to invest in long-term assets like plants, new infrastructure, and other large-scale projects.
-
-> **Key ideas**
-> - Corporations raise equity through share capital and debt through loans, credit, and bonds.
-> - IPOs and secondary-market prices respond to company prospects and macroeconomic conditions; price rises after issue benefit shareholders, not the issuer.
-> - AT&S illustrates listing history, shareholder structure, board governance, and investor metrics such as market cap, dividend yield, and P/E ratio.
-
-### 4.3.3 Private Limited Companies
-
-> **In this section**
-> You will learn about private limited companies such as the GmbH—a corporate form with limited liability whose shares are not traded on a public exchange.
-
-There are forms of **private limited companies** in many countries. As corporations, they are legal persons and the owners' liability is limited. However, shares usually are not sold to the general public at the stock exchange but are offered to the other owners of the company. The **Limited Liability Company (LLC)** in the USA, the private company limited by shares in the UK, and the **Gesellschaft mit beschränkter Haftung (GmbH)** in Austria and Germany are examples.
-
-Tina and Steve could also have founded a **GmbH**, but the minimum capital for such companies is **€35,000** in Austria. They preferred to found a partnership, but think that a limited liability company might be an interesting option for the future.
-
-![Comparison of minimum capital requirements and liability for Austrian business forms (source: textbook)](/__l5e/assets-v1/960642f7-b662-44af-bbbe-145f258f61c5/tb-027-014.png)
-
-> **Example — Tina & Steve**
-> Tina and Steve chose **T&S Computer Services OG** because they want equal management involvement and shared risk without meeting GmbH (€35,000) or AG (€70,000) capital requirements. A GmbH could become attractive later if they need limited liability and can raise the minimum capital.
-
-> **Key ideas**
-> - Private limited companies (e.g. GmbH) combine limited liability with restricted share transferability.
-> - Minimum capital rules (GmbH €35,000; AG €70,000) influenced Tina and Steve's decision to start as an OG.
-
----
-
-## 4.4 Summary: Overview of forms of business ownership
-
-> **In this section**
-> You will consolidate the main differences between unincorporated and incorporated business forms.
-
-**Figure 9** summarises the various forms of business ownership, differentiating between **unincorporated** and **incorporated** businesses. While unincorporated businesses are not legal entities of their own, incorporated businesses are legal persons.
-
-```text
-Figure 9. Forms of business ownership
-
-                    FORMS OF BUSINESS OWNERSHIP
-                    ═══════════════════════════
-
-    UNINCORPORATED                          INCORPORATED
-    (not a separate legal entity)           (legal person)
-    ─────────────────────────────           ─────────────────────────────
-
-    Owner(s) and manager(s)                 Owner(s) and manager(s)
-    ARE the same person(s)                  NEED NOT be the same person(s)
-
-    Ownership:                              Ownership:
-    • One owner, OR                         • Shareholders provide
-    • More than one owner                     share capital
-
-    Management:                             Management:
-    • Owners run the business               • Directors run the company
-
-    Examples:                               Examples:
-    • Sole trader / sole proprietor         • Corporations (e.g. AG, PLC)
-    • Partnership (e.g. OG, KG)             • Limited liability companies
-                                              (e.g. GmbH, LLC)
-```
-
-> **Key ideas**
-> - Unincorporated forms merge ownership and management; incorporated forms allow separation.
-> - Sole proprietorships and partnerships carry unlimited liability for active owners; corporations and private limited companies offer limited liability.
-
----
-
-## 4.5 Overview of sources of finance
-
-> **In this section**
-> You will classify the main sources of finance as equity or debt, and as internal or external.
-
-**Table 3** gives an overview of the most commonly used sources of finance. The balance sheet reveals the sources of finance that a business has used (see Chapter 6, Accounting). Large businesses are obliged to draw up such a balance sheet.
-
+*Sources of finance (course overview)*
 | Equity finance (internal and external) | Debt finance (external) |
-|---|---|
-| **Share capital** (external) | **Short-term credit:** e.g. bank overdraft, trade credit, short-term (bank) loans |
-| **Retained earnings** (internal) | **Long-term credit:** e.g. bank loan, loan provided by owners, bonds |
-| **Funds provided by investors** (external) | |
+| --- | --- |
+| Funds provided by investors (external) | Short-term credit: e.g. bank overdraft, trade credit, short-term (bank) loans |
+| Share capital (external) | Long-term credit: e.g. bank loan, loan provided by owners, bonds |
+| Retained earnings (internal) |  |
 
-*Table 3. Sources of finance*
+How each common instrument works follows from those labels. **Retained earnings** are profit kept in the firm rather than distributed — **internal equity** with no interest charge. **Share capital** and investor funds are outside owners injecting ownership capital — **external equity** that is usually permanent and not repaid like a loan. A bank overdraft lets the firm draw beyond the account balance up to a limit, with interest only when overdrawn, as flexible short-term debt. Trade credit is delayed payment allowed by suppliers for purchases, also short-term debt — not “free equity” merely because no bank interest appears on day one. Bank loans are a fixed sum with agreed term and scheduled repayment, short- or long-term. Bonds are large-scale borrowing from many investors with contractual interest — long-term debt for bigger corporations. Owner loans remain debt if structured as lending that must be repaid, and are not the same as share capital. Leasing can finance use of a long-lived asset with regular payments instead of an outright purchase loan, which is useful when matching asset life. Venture-style investor equity fits the “funds provided by investors” external-equity cell when outsiders buy ownership stakes to fund growth. Two classification traps are especially common: calling share capital “internal” because shares sit on the company’s books, when outside subscription makes share capital external equity; and treating trade credit as equity because suppliers are conversational “partners.” Exam recognition: equity means owners’ funds (internal retention or external shares/investors); debt means liabilities to creditors (always external in the course table); overdraft and trade credit are short-term debt; bonds and multi-year bank loans are long-term debt.
 
-**Equity finance** represents ownership capital. **Share capital** comes from shareholders who buy newly issued shares; **retained earnings** are profits reinvested in the business rather than distributed; **funds from investors** can include partner contributions or other equity injections. **Debt finance** must be repaid with interest. Short-term credit covers obligations due within a year; long-term credit and **bonds** fund assets and projects with longer payback periods.
+The balance sheet reveals which sources a business has used (see Chapter 6, Accounting). Large businesses are obliged to draw up such a balance sheet. Legal structure shapes the menu: sole traders and partnerships rely more on owner funds, overdrafts, trade credit, and loans; corporations add share issues and, for larger firms, bonds. Chapter 6 will show these sources on the balance sheet as **equity** and **liabilities** funding the **assets** side.
 
-> **Key ideas**
-> - Finance divides into equity (share capital, investor funds, retained earnings) and debt (short- and long-term credit, bonds).
-> - Internal sources (retained earnings) avoid interest costs; external sources expand funding capacity but may carry charges or dilute ownership.
+Worked: boutique hotel funding mix. Roof and bathrooms (multi-year assets): €40,000 retained earnings (internal equity) + €25,000 new share/investor capital (external equity) + €45,000 five-year bank loan (long-term debt). Winter linen and cleaning stock: €6,000 drawn on overdraft as needed (short-term debt) + €9,000 of supplies on 45-day trade credit (short-term debt). Optional: lease a laundry machine for seven years instead of buying with a short overdraft — better duration match. Sale of an unused catering trolley for €1,800 adds internal financing without interest. Labels: **equity** vs **debt**; **internal** vs **external**; short vs long — each line should have a clean passport. €40k + €25k equity and several debt lines can coexist; classification depends on ownership claim versus creditor claim, not on whether money feels “serious.”
 
----
+## 4.6 Choosing the source of finance
 
-## 4.6 The choice of the source of finance
+Cheap is not always right. A metal workshop can fund a €140,000 laser cutter (twelve-year life) and €18,000 of sheet metal for next month’s jobs. The bank waves a revolving overdraft with a low headline rate this week. An equity partner offers capital that never needs monthly instalments but wants voting influence. Which criteria decide?
 
-> **In this section**
-> You will apply three decision criteria—cost, intended use, and financial structure—when a business chooses among available funding options.
+**Finance choice criteria** — When several sources are available, selection usually weighs **costs**, the intended use (**purpose**) of the funds, and the firm’s current financial situation — especially how much loan capital it already carries. **Risk**, **control**, and flexibility complete the practical checklist.
 
-If a business has several sources of finance available, it will most probably make its decision based on **costs**, the **intended use** of the financial funds, and its **current financial situation**:
+How the criteria bite. **Cost** covers interest on loans and credit and the administration costs of issuing shares or bonds. **Purpose and matching** mean that **capital expenditure** on assets used for years needs long-term finance, while **revenue expenditure** such as materials can use short-term sources. Risk rises because debt must be repaid — too much raises insolvency risk. Control matters because new shareholders or partners may gain influence, whereas pure debt usually leaves ownership percentages unchanged but adds creditor pressure. Flexibility differs: overdrafts can be drawn and repaid within a limit, while committed long loans and covenants are less flexible. Gearing (leverage) asks how high loan capital already stands relative to equity: a high-geared firm can find lenders reluctant, face higher interest, or be asked for collateral, which pushes it toward retained earnings or new equity investors instead of yet another loan. A firm might therefore reject the lowest advertised interest rate this month if the source mismatches purpose and duration, dilutes control unacceptably, reduces flexibility too far, or piles debt onto an already high-geared balance sheet.
 
-- **Costs** comprise interest payments for loans and credit, or administration costs for issuing shares or bonds. Equity finance does not require regular interest payments, but issuing shares dilutes existing ownership and may involve legal and advisory fees. Debt finance creates a contractual obligation to repay principal and interest regardless of business performance.
+**High gearing (high leverage)** — A high proportion of **loan capital** relative to **equity**. It raises **insolvency risk** and may make further credit harder or more expensive to obtain.
 
-- **Purpose:** **Capital expenditures**—for buying assets that will be used over some or even many years—require **long-term finance** matched to the asset's useful life. **Revenue expenditures**—such as buying materials used for production—can safely be financed by short-term sources that are renewed as operations continue.
+> **Gearing intuition**  
+> High gearing ≈ large loan capital compared with equity capital  
+> *Course focus is the idea and consequences, not a single mandatory exam formula. Example: if loans already equal about 75% of capital employed, adding a large new loan is often difficult or punitive.*
 
-- **Financial structure:** A business that already has a high proportion of loan capital—a **high geared** business—might have difficulties obtaining more credit. Lenders might be reluctant to offer more funds, only at a higher price (a higher interest rate) and/or if collateral can be offered. Such a business should rather try to use internal sources of finance and/or find investors or business partners willing to provide funds. As loans must be repaid, a high proportion of loan capital can be a burden and increases the risk of **insolvency**.
+Putting the checklist into questions makes the trade-offs concrete. On cost, ask what interest or issue and administration costs apply, and compare loan interest with share or bond issuance costs. On purpose, ask whether the need is **capital expenditure** or **revenue expenditure**, matching long assets to long finance and materials to short finance. On risk, ask whether the money must be repaid on a fixed schedule, remembering that heavy debt raises insolvency risk if cash dips. On control, ask whether new owners gain votes or vetoes — equity can dilute influence while debt usually does not. On flexibility, ask whether the firm can draw, repay, or refinance easily — overdrafts are flexible, locked loans less so. On **gearing**, ask how high loan capital already is; when geared high, prefer retention or investors over more debt. Exam stems that mention capital versus revenue expenditure test matching; stems that mention reluctance of lenders, collateral, or insolvency risk test high gearing; stems that mention voting or ownership percentages test the control trade-off of equity. The traps to avoid are choosing finance by interest rate alone, funding a long-life machine with an overdraft, and piling on debt when already high geared because “growth needs money.” In practice, judge sources by cost, purpose, risk, control, flexibility, and gearing rather than by a single number; match long assets to long finance and short needs to short finance; recognise that high gearing raises repayment risk and can block or price up new debt; and when geared high, prefer internal funds or equity investors over another heavy loan. The legal form in 4.1–4.4 shapes which sources in 4.5 are even on the menu; 4.6 decides which menu item to pick under those criteria.
 
-> **Example — Tina & Steve**
-> If Tina and Steve later need new computers for the office, that is a capital expenditure calling for long-term finance or careful saving from retained profits. Paying for day-to-day supplies with a trade credit from a supplier is appropriate short-term finance. If they already owe heavily to the bank, adding more debt would raise their gearing and might trigger higher interest rates or a refusal of further credit.
+Worked: laser cutter vs sheet metal. Laser cutter (€140,000, ~12-year life): funding via revolving overdraft mismatches duration — the bank could demand repayment long before the machine pays for itself. Better: long-term loan, lease, or equity/retained funds. Sheet metal (€18,000 for next month): trade credit or a short-term facility matches the short cycle. Cost check: a bond or share issue has admin costs; a loan has interest — compare total cost, not only the poster rate. Control check: an equity partner funding the cutter may want board influence; a loan leaves share percentages intact but adds repayment risk. Gearing check: if loans already ≈ 75% of capital employed, lenders may refuse or charge more / demand collateral. Retained profit or an equity investor may be the feasible path. Match **purpose** and **duration** first; then price the cost, risk, control, flexibility, and gearing consequences.
 
-> **Key ideas**
-> - Financing decisions balance cost, duration, and existing leverage.
-> - Long-term assets need long-term funding; excessive debt raises insolvency risk and constrains future borrowing.
+## Chapter recap
+
+- Sole traders are owner-managed, easy to set up, face **unlimited liability**, and have fragile continuity.
+- Partnerships use an agreement; general partners have **unlimited liability** (OG); limited partners (KG) **cap loss** at their contribution and stay out of management.
+- Corporations are **separate legal persons** with **limited liability**; shareholders own, directors manage; Austrian AG ≈ €70k and GmbH ≈ €35k minimum capital.
+- Compare forms with the ownership-overview figure and the criterion table (personality, liability, management, continuity, finance, setup).
+- Finance splits into **equity** vs **debt** and **internal** vs **external**; know share capital, retained earnings, overdraft, trade credit, loans, bonds, and related tools.
+- Choose funding by **cost**, **risk**, **control**, **flexibility**, purpose (matching), and gearing — cheap debt is not always the right debt.
