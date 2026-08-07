@@ -128,7 +128,9 @@ function EconomicsTasks() {
         .from("economics_cases")
         .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order, subsection")
         .eq("tier", "full")
-        .order("sort_order", { ascending: true });
+        .in("subsection", CHAPTERS.map((c) => String(c.num)))
+        .order("sort_order", { ascending: true })
+        .limit(5000);
       if (cancel) return;
       if (error) setError(error.message);
       else setCases(((data as Case[]) ?? []).filter(isMainFullCourseCase));
