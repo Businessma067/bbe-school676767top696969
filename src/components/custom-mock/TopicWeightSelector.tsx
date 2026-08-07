@@ -312,12 +312,8 @@ export function TopicWeightSelector({
         )}
       </div>
 
-      <div
-        className={cn(
-          "relative mx-auto mt-2 w-full max-w-[min(100%,400px)]",
-          isManual && "pointer-events-none opacity-55",
-        )}
-      >
+      {!isManual && (
+      <div className="relative mx-auto mt-2 w-full max-w-[min(100%,400px)]">
         <div
           className="absolute inset-[8%] rounded-full blur-2xl"
           style={{ backgroundColor: "color-mix(in oklab, #8B5E3C 8%, transparent)" }}
@@ -504,10 +500,10 @@ export function TopicWeightSelector({
           />
         </svg>
       </div>
+      )}
 
+      {!isManual && (
       <div className="mt-3 flex flex-wrap gap-1.5">
-        {!isManual && (
-          <>
             <QuickBtn
               icon={<Equal className="h-3 w-3" />}
               label="Balanced"
@@ -540,9 +536,8 @@ export function TopicWeightSelector({
               label="Random"
               onClick={() => setPoint(randomBalancedPoint(computed.vertices), false)}
             />
-          </>
-        )}
       </div>
+      )}
 
       {isManual && (
         <div className="mt-3 space-y-2 rounded-xl border border-[#8B5E3C]/15 bg-white/65 p-3 shadow-sm backdrop-blur-sm">
