@@ -49,6 +49,8 @@ AXIS = HexColor("#4A423B")
 CURVE2 = HexColor("#8A6A4F")
 NOTE = HexColor("#3F3730")
 RULE = HexColor("#D9D0C6")
+FIG_EDGE = HexColor("#C9C0B6")
+FIG_FILL = HexColor("#FCFAF7")
 
 W, H = A4
 L_M, R_M, T_M, B_M = 19 * mm, 19 * mm, 20 * mm, 18 * mm
@@ -115,12 +117,13 @@ def strip_label(caption: str, kind: str) -> str:
 
 
 def lead_bold(term: str, text: str) -> str:
-    """Bold the term without repeating it when the sentence already opens with it."""
+    """Strong bold lead-in for definitions (Fuhrmann-style emphasis)."""
     term = (term or "").strip()
     text = (text or "").strip()
     for prefix in (term, f"The {term}", f"A {term}", f"An {term}"):
         if prefix and text.lower().startswith(prefix.lower()):
-            return f"<b>{esc(text[: len(prefix)])}</b>{esc(text[len(prefix) :])}"
+            rest = text[len(prefix):]
+            return f"<b>{esc(text[: len(prefix)])}</b>{esc(rest)}"
     return f"<b>{esc(term)}</b> {esc(text)}"
 
 
@@ -223,8 +226,12 @@ def styles():
             fontSize=11.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
         ),
         "bullet": ParagraphStyle(
-            "bu", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=3,
+            "bu", parent=b["Normal"], fontName="Helvetica-Bold",
+            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=4,
+        ),
+        "body_emph": ParagraphStyle(
+            "bem", parent=b["Normal"], fontName="Helvetica",
+            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "callout_label": ParagraphStyle(
             "cl", parent=b["Normal"], fontName="Helvetica-Bold",
@@ -268,19 +275,23 @@ def styles():
         ),
         "cell": ParagraphStyle(
             "cell", parent=b["Normal"], fontName="Helvetica",
-            fontSize=12, textColor=INK, leading=15.2, alignment=TA_LEFT,
+            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_LEFT,
+        ),
+        "cell_b": ParagraphStyle(
+            "cellb", parent=b["Normal"], fontName="Helvetica-Bold",
+            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_LEFT,
         ),
         "cell_c": ParagraphStyle(
             "cellc", parent=b["Normal"], fontName="Helvetica",
-            fontSize=12, textColor=INK, leading=15.2, alignment=TA_CENTER,
+            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_CENTER,
         ),
         "cell_h": ParagraphStyle(
             "cellh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=12, textColor=white, leading=15.2, alignment=TA_CENTER,
+            fontSize=11.5, textColor=white, leading=14.8, alignment=TA_CENTER,
         ),
         "cell_h_l": ParagraphStyle(
             "cellhl", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=12, textColor=white, leading=15.2, alignment=TA_LEFT,
+            fontSize=11.5, textColor=white, leading=14.8, alignment=TA_LEFT,
         ),
         "compare_h": ParagraphStyle(
             "cmh", parent=b["Normal"], fontName="Helvetica-Bold",
@@ -396,88 +407,119 @@ def callout(label: str, text: str, width: float, bg, title: str = "") -> KeepTog
     ])
 
 
-# ─── Tables ───────────────────────────────────────────────────────────
+# ─── Tables (Fuhrmann-style: orange header, dashed internals, no outer box) ─
+def _is_numeric_cell(val) -> bool:
+    s = str(val or "").strip()
+    if not s:
+        return False
+    s = (
+        s.replace(",", "")
+        .replace("€", "")
+        .replace("%", "")
+        .replace("≈", "")
+        .replace("~", "")
+        .replace(" ", "")
+    )
+    if s.endswith("k") or s.endswith("K"):
+        s = s[:-1]
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
+
 def make_table(headers, rows, width, caption: str = "", center_body: bool = False):
+    """Solid orange header, white text; dashed row/column rules; even TOP-aligned cells."""
     global TABLE_N
     TABLE_N += 1
     ncols = max(len(headers), 1)
-
-    if ncols >= 3:
-        first = width * 0.28
-        rest = (width - first) / (ncols - 1)
-        col_ws = [first] + [rest] * (ncols - 1)
-    elif ncols == 2:
-        col_ws = [width * 0.5, width * 0.5]
-    else:
-        col_ws = [width / ncols] * ncols
-
-    body_style = S["cell_c"] if center_body else S["cell"]
-    head_style = S["cell_h"] if center_body else S["cell_h_l"]
-
-    def cell(text, header=False):
-        return Paragraph(esc(str(text)), head_style if header else body_style)
-
-    data = [[cell(h, True) for h in headers]]
+    headers = list(headers) + [""] * max(0, ncols - len(headers))
+    norm_rows = []
     for row in rows:
         r = list(row) + [""] * max(0, ncols - len(row))
-        data.append([cell(r[i]) for i in range(ncols)])
+        norm_rows.append(r[:ncols])
+
+    # Column widths from content length (first column gets a label boost)
+    weights = []
+    for i in range(ncols):
+        samples = [str(headers[i])] + [str(r[i]) for r in norm_rows]
+        weights.append(max(8, max(len(s) for s in samples)))
+    if ncols >= 3:
+        weights[0] = max(weights[0], int(sum(weights) * 0.24))
+    total_w = sum(weights) or 1
+    col_ws = [width * w / total_w for w in weights]
+
+    # Per-column alignment: numeric columns centred, label columns left
+    aligns = []
+    for i in range(ncols):
+        vals = [r[i] for r in norm_rows if str(r[i]).strip()]
+        if center_body or (vals and all(_is_numeric_cell(v) for v in vals)):
+            aligns.append("CENTER")
+        else:
+            aligns.append("LEFT")
+
+    label_col = ncols >= 3 and aligns[0] == "LEFT"
+
+    def cell_para(text, header=False, align="LEFT", bold_label=False):
+        if header:
+            style = S["cell_h"] if align == "CENTER" else S["cell_h_l"]
+        elif bold_label:
+            style = S["cell_b"]
+        else:
+            style = S["cell_c"] if align == "CENTER" else S["cell"]
+        return Paragraph(esc(str(text)), style)
+
+    data = [[cell_para(headers[i], True, aligns[i]) for i in range(ncols)]]
+    for r in norm_rows:
+        data.append([
+            cell_para(r[i], False, aligns[i], bold_label=(label_col and i == 0))
+            for i in range(ncols)
+        ])
 
     t = Table(data, colWidths=col_ws, repeatRows=1)
-    t.setStyle(TableStyle([
+    cmds = [
         ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
         ("TEXTCOLOR", (0, 0), (-1, 0), white),
         ("TEXTCOLOR", (0, 1), (-1, -1), INK),
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 8),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 8),
-        ("TOPPADDING", (0, 0), (-1, -1), 7),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
-        ("LINEBELOW", (0, 0), (-1, -2), 0.55, ACCENT_LIGHT, 1, (1, 2)),
-        ("LINEAFTER", (0, 0), (-2, -1), 0.55, ACCENT_LIGHT, 1, (1, 2)),
-        ("LINEBELOW", (0, -1), (-1, -1), 0.8, ACCENT),
-    ]))
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 7),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 7),
+        ("TOPPADDING", (0, 0), (-1, -1), 6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+        # dashed internals like Fuhrmann — no heavy outer box
+        ("LINEBELOW", (0, 0), (-1, -2), 0.65, ACCENT_LIGHT, 1, (1.5, 2)),
+        ("LINEAFTER", (0, 0), (-2, -1), 0.65, ACCENT_LIGHT, 1, (1.5, 2)),
+        ("LINEBELOW", (0, -1), (-1, -1), 0.9, ACCENT),
+    ]
+    for i, al in enumerate(aligns):
+        cmds.append(("ALIGN", (i, 0), (i, -1), al))
+    t.setStyle(TableStyle(cmds))
 
     cap = strip_label(caption, "table")
     cap = f"Table {TABLE_N}. {cap}" if cap else f"Table {TABLE_N}."
-    return KeepTogether([t, Paragraph(esc(cap), S["caption"]), Spacer(1, 6)])
+    return KeepTogether([Spacer(1, 2), t, Paragraph(esc(cap), S["caption"]), Spacer(1, 6)])
 
 
 def make_compare(block: dict, width: float):
+    """Two-column comparison using the same table chrome (no orange outer box)."""
     left = block.get("left") or {}
     right = block.get("right") or {}
     title = block.get("title") or ""
+    headers = [left.get("title") or "A", right.get("title") or "B"]
+    li = left.get("items") or []
+    ri = right.get("items") or []
+    n = max(len(li), len(ri))
+    rows = []
+    for i in range(n):
+        rows.append([
+            li[i] if i < len(li) else "",
+            ri[i] if i < len(ri) else "",
+        ])
     parts = []
     if title:
-        parts.append(Paragraph(esc(title), S["worked_h"]))
-
-    def side_cell(side: dict):
-        items = side.get("items") or []
-        lines = [f"<b>{esc(side.get('title') or '')}</b>"]
-        for it in items:
-            lines.append(f"- {esc(it)}")
-        return Paragraph("<br/>".join(lines), S["compare_item"])
-
-    data = [[
-        Paragraph(esc((left.get("title") or "A")), S["compare_h"]),
-        Paragraph(esc((right.get("title") or "B")), S["compare_h"]),
-    ], [side_cell(left), side_cell(right)]]
-    col = width / 2
-    t = Table(data, colWidths=[col, col])
-    t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
-        ("BACKGROUND", (0, 1), (0, 1), ACCENT_SOFT),
-        ("BACKGROUND", (1, 1), (1, 1), SCENE_BG),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 8),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 8),
-        ("TOPPADDING", (0, 0), (-1, -1), 7),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
-        ("BOX", (0, 0), (-1, -1), 0.7, ACCENT),
-        ("LINEAFTER", (0, 0), (0, -1), 0.6, ACCENT_LIGHT),
-        ("LINEBELOW", (0, 0), (-1, 0), 0.7, ACCENT),
-    ]))
-    parts.append(t)
-    parts.append(Spacer(1, 8))
+        parts.append(Paragraph(f"<b>{esc(title)}</b>", S["body_boldlead"]))
+    parts.append(make_table(headers, rows, width, caption="Comparison"))
     return KeepTogether(parts)
 
 
@@ -502,7 +544,10 @@ def _txt(c, x, y, s, size=11.5, bold=False, color=None, align="c", italic=False)
         c.drawString(x, y, s)
 
 
-def _box(c, x, y, w, h, fill=white, stroke=ACCENT, dashed=True, lw=1.0, radius=0):
+def _box(c, x, y, w, h, fill=white, stroke=None, dashed=False, lw=0.7, radius=0):
+    # Soft grey edges by default — avoid stacking orange outlines inside figures
+    if stroke is None:
+        stroke = FIG_EDGE
     c.setFillColor(fill)
     c.setStrokeColor(stroke)
     c.setLineWidth(lw)
@@ -1201,12 +1246,11 @@ class Diagram(Flowable):
     def draw(self):
         c = self.canv
         c.saveState()
-        c.setFillColor(ACCENT_SOFT)
-        c.setStrokeColor(ACCENT)
-        c.setDash(2, 2)
-        c.setLineWidth(1.0)
+        # Quiet frame: light fill + thin grey edge (no dashed orange box)
+        c.setFillColor(FIG_FILL)
+        c.setStrokeColor(FIG_EDGE)
+        c.setLineWidth(0.7)
         c.rect(0, 0, self.width, self.height, stroke=1, fill=1)
-        c.setDash()
         drawer = FIGURES.get(self.fig_id)
         ix, iy = PAD, PAD
         iw, ih = self.width - 2 * PAD, self.height - 2 * PAD
@@ -1261,19 +1305,16 @@ def chrome(canvas, doc):
         return
     canvas.saveState()
 
-    # Running header — chapter title, word-safe fit
+    # Running header — light band + chapter title (no thick orange frame)
     if STATE.footer_chapter and doc.page > 2:
         max_w = W - L_M - R_M - 8
         label, size = fit_header_label(canvas, STATE.footer_chapter, max_w, 9.0)
         if label:
             canvas.setFillColor(ACCENT_SOFT)
-            canvas.rect(L_M, H - 13.5 * mm, W - L_M - R_M, 7.5 * mm, stroke=0, fill=1)
-            canvas.setStrokeColor(ACCENT)
-            canvas.setLineWidth(1.2)
-            canvas.line(L_M, H - 13.5 * mm, L_M + 18, H - 13.5 * mm)
+            canvas.rect(L_M, H - 13 * mm, W - L_M - R_M, 7 * mm, stroke=0, fill=1)
             canvas.setFillColor(ACCENT)
             canvas.setFont("Helvetica-Bold", size)
-            canvas.drawString(L_M + 6, H - 10.8 * mm, label)
+            canvas.drawRightString(W - R_M - 4, H - 10.5 * mm, label)
 
     # Footer
     canvas.setStrokeColor(RULE)
@@ -1303,7 +1344,8 @@ def formula_block(b: dict, width: float):
     box = Table(rows, colWidths=[width])
     box.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), ACCENT_SOFT),
-        ("BOX", (0, 0), (-1, -1), 0.9, ACCENT, 1, (1, 2)),
+        ("LINEBELOW", (0, -1), (-1, -1), 0.8, ACCENT),
+        ("LINEABOVE", (0, 0), (-1, 0), 0.8, ACCENT),
         ("LEFTPADDING", (0, 0), (-1, -1), 10),
         ("RIGHTPADDING", (0, 0), (-1, -1), 10),
         ("TOPPADDING", (0, 0), (-1, -1), 8),
@@ -1348,7 +1390,14 @@ def blocks_to_flowables(blocks, width):
         elif t == "idea":
             term = b.get("term") or ""
             text = b.get("text") or ""
-            out.append(Paragraph(lead_bold(term, text), S["body_boldlead"]))
+            # Stronger definition emphasis: bold term + em dash into the explanation
+            term_s = (term or "").strip()
+            text_s = (text or "").strip()
+            if term_s and text_s.lower().startswith(term_s.lower()):
+                html = lead_bold(term_s, text_s)
+            else:
+                html = f"<b>{esc(term_s)}</b> — {esc(text_s)}"
+            out.append(Paragraph(html, S["body_boldlead"]))
             plain_parts.append(f"{term}: {text}")
 
         elif t == "mechanism":
@@ -1509,9 +1558,7 @@ def build():
             for i, step in enumerate(self.steps):
                 x = i * (bw + gap)
                 c.setFillColor(ACCENT_SOFT)
-                c.setStrokeColor(ACCENT)
-                c.setLineWidth(0.8)
-                c.roundRect(x, 4, bw, 20, 3, stroke=1, fill=1)
+                c.roundRect(x, 4, bw, 20, 3, stroke=0, fill=1)
                 c.setFillColor(ACCENT)
                 c.setFont("Helvetica-Bold", 9)
                 c.drawCentredString(x + bw / 2, 11, step)

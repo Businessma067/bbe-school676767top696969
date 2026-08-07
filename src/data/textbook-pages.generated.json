@@ -44,10 +44,10 @@
       "/bbe-theory/p32.png",
       "/bbe-theory/p33.png",
       "/bbe-theory/p34.png",
-      "/bbe-theory/p35.png",
-      "/bbe-theory/p36.png"
+      "/bbe-theory/p35.png"
     ],
     "5": [
+      "/bbe-theory/p36.png",
       "/bbe-theory/p37.png",
       "/bbe-theory/p38.png",
       "/bbe-theory/p39.png",
@@ -59,10 +59,10 @@
       "/bbe-theory/p45.png",
       "/bbe-theory/p46.png",
       "/bbe-theory/p47.png",
-      "/bbe-theory/p48.png",
-      "/bbe-theory/p49.png"
+      "/bbe-theory/p48.png"
     ],
     "6": [
+      "/bbe-theory/p49.png",
       "/bbe-theory/p50.png",
       "/bbe-theory/p51.png",
       "/bbe-theory/p52.png",
@@ -72,10 +72,8 @@
       "/bbe-theory/p56.png",
       "/bbe-theory/p57.png",
       "/bbe-theory/p58.png",
-      "/bbe-theory/p59.png",
-      "/bbe-theory/p60.png",
-      "/bbe-theory/p61.png"
+      "/bbe-theory/p59.png"
     ]
   },
-  "pageCount": 62
+  "pageCount": 60
 }

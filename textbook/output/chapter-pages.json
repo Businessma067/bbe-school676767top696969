@@ -1,5 +1,5 @@
 {
-  "pageCount": 62,
+  "pageCount": 60,
   "chapters": [
     {
       "chapter": 2,
@@ -17,19 +17,19 @@
       "chapter": 4,
       "title": "Forms of business ownership and sources of finance",
       "startPage": 26,
-      "endPage": 36
+      "endPage": 35
     },
     {
       "chapter": 5,
       "title": "Marketing",
-      "startPage": 37,
-      "endPage": 49
+      "startPage": 36,
+      "endPage": 48
     },
     {
       "chapter": 6,
       "title": "Accounting \u2014 keeping record of business transactions",
-      "startPage": 50,
-      "endPage": 61
+      "startPage": 49,
+      "endPage": 59
     }
   ],
   "placeholderFigures": []
