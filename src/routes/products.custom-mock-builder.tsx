@@ -36,6 +36,7 @@ import {
   balancedPoint,
   buildWeightedTopics,
   topicCountsRecord,
+  weightedTopicsFromCounts,
   type TopicWeightTopic,
   type Vec2,
 } from "@/lib/topic-weight-engine";
@@ -72,6 +73,8 @@ function CustomMockBuilderPage() {
   const [questionCount, setQuestionCount] = useState(10);
   const [customCountDraft, setCustomCountDraft] = useState("10");
   const [weightPoint, setWeightPoint] = useState<Vec2>(balancedPoint());
+  const [manualMode, setManualMode] = useState(false);
+  const [manualCounts, setManualCounts] = useState<Record<string, number>>({});
   const [building, setBuilding] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<CustomMockSummary[] | null>(null);
@@ -140,6 +143,11 @@ function CustomMockBuilderPage() {
     [weightTopics, weightPoint, questionCount],
   );
 
+  const effectiveTopics = useMemo(() => {
+    if (!manualMode || weightTopics.length === 0) return weighted.topics;
+    return weightedTopicsFromCounts(weightTopics, manualCounts, questionCount);
+  }, [manualMode, weightTopics, manualCounts, questionCount, weighted.topics]);
+
   const onWeightPointChange = useCallback((p: Vec2) => {
     setWeightPoint(p);
   }, []);
@@ -172,7 +180,7 @@ function CustomMockBuilderPage() {
       const args: GenerateArgs = {
         subtopics: selectedSubtopics,
         questionCount,
-        topicCounts: topicCountsRecord(weighted.topics),
+        topicCounts: topicCountsRecord(effectiveTopics),
       };
       const result = await buildFn({ data: args });
       const row = await fetchCustomMockById(result.id);
@@ -405,6 +413,10 @@ function CustomMockBuilderPage() {
                   questionCount={questionCount}
                   point={weightPoint}
                   onPointChange={onWeightPointChange}
+                  manualMode={manualMode}
+                  onManualModeChange={setManualMode}
+                  manualCounts={manualCounts}
+                  onManualCountsChange={setManualCounts}
                   title="Topic Weight Selector"
                 />
               </div>

@@ -12,8 +12,12 @@ import {
   type TopicWeightTopic,
   type Vec2,
   type WeightedTopic,
+  seedCountsFromTopics,
+  setManualTopicCount,
+  topicCountsRecord,
+  weightedTopicsFromCounts,
 } from "@/lib/topic-weight-engine";
-import { Dices, Equal, Focus, RotateCcw } from "lucide-react";
+import { Dices, Equal, Focus, Keyboard, RotateCcw, Workflow } from "lucide-react";
 
 const ACCENT = "#8B5E3C";
 const ACCENT_SOFT = "#C4A484";
@@ -28,6 +32,11 @@ type Props = {
   /** Controlled control-point in unit space (radius≈1). */
   point?: Vec2;
   onPointChange?: (p: Vec2) => void;
+  /** When true, question counts come from manual fields. */
+  manualMode?: boolean;
+  onManualModeChange?: (manual: boolean) => void;
+  manualCounts?: Record<string, number>;
+  onManualCountsChange?: (counts: Record<string, number>) => void;
   title?: string;
 };
 
@@ -98,6 +107,10 @@ export function TopicWeightSelector({
   className,
   point: controlledPoint,
   onPointChange,
+  manualMode = false,
+  onManualModeChange,
+  manualCounts,
+  onManualCountsChange,
   title = "Topic weights",
 }: Props) {
   const gid = useId().replace(/:/g, "");
@@ -105,7 +118,11 @@ export function TopicWeightSelector({
   const dragging = useRef(false);
   const [localPoint, setLocalPoint] = useState<Vec2>(balancedPoint());
   const [draggingUi, setDraggingUi] = useState(false);
+  const [localManual, setLocalManual] = useState(false);
+  const [localCounts, setLocalCounts] = useState<Record<string, number>>({});
   const point = controlledPoint ?? localPoint;
+  const isManual = onManualModeChange ? manualMode : localManual;
+  const counts = onManualCountsChange ? (manualCounts ?? {}) : localCounts;
 
   const setPoint = useCallback(
     (p: Vec2, withSnap: boolean) => {
@@ -122,7 +139,20 @@ export function TopicWeightSelector({
     [controlledPoint, onPointChange, topics.length],
   );
 
-  const computed = useMemo(
+  const setManual = (v: boolean) => {
+    if (onManualModeChange) onManualModeChange(v);
+    else setLocalManual(v);
+  };
+
+  const setCounts = useCallback(
+    (next: Record<string, number>) => {
+      if (onManualCountsChange) onManualCountsChange(next);
+      else setLocalCounts(next);
+    },
+    [onManualCountsChange],
+  );
+
+  const mixerComputed = useMemo(
     () =>
       buildWeightedTopics(topics, point, questionCount, {
         snap: false,
@@ -130,11 +160,57 @@ export function TopicWeightSelector({
     [topics, point, questionCount],
   );
 
+  const displayTopics: WeightedTopic[] = useMemo(() => {
+    if (!isManual || topics.length === 0) return mixerComputed.topics;
+    return weightedTopicsFromCounts(topics, counts, questionCount);
+  }, [isManual, topics, counts, questionCount, mixerComputed.topics]);
+
+  const computed = mixerComputed;
+
   const topicKey = topics.map((t) => t.id).join("|");
   useEffect(() => {
     setPoint(balancedPoint(), false);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- only when membership changes
   }, [topicKey]);
+
+  useEffect(() => {
+    if (topics.length === 0) {
+      setCounts({});
+      return;
+    }
+    if (!isManual) return;
+    const ids = topics.map((t) => t.id);
+    const sum = ids.reduce((a, id) => a + (counts[id] ?? 0), 0);
+    const missing = ids.some((id) => counts[id] == null);
+    if (missing || sum !== questionCount) {
+      setCounts(seedCountsFromTopics(ids, questionCount, counts));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isManual, topicKey, questionCount]);
+
+  const enterManual = () => {
+    setCounts(
+      seedCountsFromTopics(
+        topics.map((t) => t.id),
+        questionCount,
+        topicCountsRecord(mixerComputed.topics),
+      ),
+    );
+    setManual(true);
+  };
+
+  const onCountField = (id: string, raw: string) => {
+    const n = raw === "" ? 0 : Number(raw);
+    setCounts(
+      setManualTopicCount(
+        topics.map((t) => t.id),
+        counts,
+        id,
+        n,
+        questionCount,
+      ),
+    );
+  };
 
   const clientToUnit = (clientX: number, clientY: number): Vec2 => {
     const svg = svgRef.current;
@@ -195,7 +271,7 @@ export function TopicWeightSelector({
   }
 
   if (topics.length === 1) {
-    const only = computed.topics[0];
+    const only = displayTopics[0];
     return (
       <PanelShell className={className}>
         <Header title={title} subtitle="One topic selected — full weight" />
@@ -208,7 +284,7 @@ export function TopicWeightSelector({
             {only.questions} question{only.questions === 1 ? "" : "s"}
           </p>
         </div>
-        <PreviewList topics={computed.topics} total={questionCount} />
+        <PreviewList topics={displayTopics} total={questionCount} />
       </PanelShell>
     );
   }
@@ -216,12 +292,32 @@ export function TopicWeightSelector({
   const svgVerts = computed.vertices.map(toSvg);
   const ctrl = toSvg(computed.point);
   const polyPoints = svgVerts.map((v) => `${v.x},${v.y}`).join(" ");
+  const labelTopics = displayTopics;
 
   return (
     <PanelShell className={className}>
-      <Header title={title} subtitle="Drag the point to shape how questions are split" />
+      <div className="flex flex-wrap items-start justify-between gap-2">
+        <Header
+          title={title}
+          subtitle={
+            isManual
+              ? "Type questions per topic — total always stays exact"
+              : "Drag the point to shape how questions are split"
+          }
+        />
+        {isManual ? (
+          <QuickBtn icon={<Workflow className="h-3 w-3" />} label="Use mixer" onClick={() => setManual(false)} />
+        ) : (
+          <QuickBtn icon={<Keyboard className="h-3 w-3" />} label="Enter manually" onClick={enterManual} />
+        )}
+      </div>
 
-      <div className="relative mx-auto mt-2 w-full max-w-[min(100%,400px)]">
+      <div
+        className={cn(
+          "relative mx-auto mt-2 w-full max-w-[min(100%,400px)]",
+          isManual && "pointer-events-none opacity-55",
+        )}
+      >
         <div
           className="absolute inset-[8%] rounded-full blur-2xl"
           style={{ backgroundColor: "color-mix(in oklab, #8B5E3C 8%, transparent)" }}
@@ -290,7 +386,7 @@ export function TopicWeightSelector({
           />
 
           {svgVerts.map((v, i) => {
-            const w = computed.topics[i]?.weight ?? 0;
+            const w = labelTopics[i]?.weight ?? 0;
             return (
               <line
                 key={`g-${topics[i].id}`}
@@ -311,8 +407,8 @@ export function TopicWeightSelector({
           })}
 
           {svgVerts.map((v, i) => {
-            const w = computed.topics[i]?.weight ?? 0;
-            const pct = Math.round(computed.topics[i]?.percent ?? 0);
+            const w = labelTopics[i]?.weight ?? 0;
+            const pct = Math.round(labelTopics[i]?.percent ?? 0);
             const label = topics[i].shortLabel ?? topics[i].label;
             const r = 4.5 + w * 3.5;
             const glow = w > 0.2;
@@ -410,41 +506,80 @@ export function TopicWeightSelector({
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
-        <QuickBtn
-          icon={<Equal className="h-3 w-3" />}
-          label="Balanced"
-          onClick={() => setPoint(balancedPoint(), false)}
-        />
-        <QuickBtn
-          icon={<RotateCcw className="h-3 w-3" />}
-          label="Reset"
-          onClick={() => setPoint(balancedPoint(), false)}
-        />
-        <QuickBtn
-          icon={<Focus className="h-3 w-3" />}
-          label="100% nearest"
-          onClick={() => {
-            const verts = computed.vertices;
-            let best = 0;
-            let bestD = Infinity;
-            verts.forEach((v, i) => {
-              const d = dist(point, v);
-              if (d < bestD) {
-                bestD = d;
-                best = i;
-              }
-            });
-            setPoint(vertexPoint(verts, best), false);
-          }}
-        />
-        <QuickBtn
-          icon={<Dices className="h-3 w-3" />}
-          label="Random"
-          onClick={() => setPoint(randomBalancedPoint(computed.vertices), false)}
-        />
+        {!isManual && (
+          <>
+            <QuickBtn
+              icon={<Equal className="h-3 w-3" />}
+              label="Balanced"
+              onClick={() => setPoint(balancedPoint(), false)}
+            />
+            <QuickBtn
+              icon={<RotateCcw className="h-3 w-3" />}
+              label="Reset"
+              onClick={() => setPoint(balancedPoint(), false)}
+            />
+            <QuickBtn
+              icon={<Focus className="h-3 w-3" />}
+              label="100% nearest"
+              onClick={() => {
+                const verts = computed.vertices;
+                let best = 0;
+                let bestD = Infinity;
+                verts.forEach((v, i) => {
+                  const d = dist(point, v);
+                  if (d < bestD) {
+                    bestD = d;
+                    best = i;
+                  }
+                });
+                setPoint(vertexPoint(verts, best), false);
+              }}
+            />
+            <QuickBtn
+              icon={<Dices className="h-3 w-3" />}
+              label="Random"
+              onClick={() => setPoint(randomBalancedPoint(computed.vertices), false)}
+            />
+          </>
+        )}
       </div>
 
-      <PreviewList topics={computed.topics} total={questionCount} />
+      {isManual && (
+        <div className="mt-3 space-y-2 rounded-xl border border-[#8B5E3C]/15 bg-white/65 p-3 shadow-sm backdrop-blur-sm">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-[#8B5E3C]/75">
+            Questions per topic
+          </p>
+          <ul className="space-y-2">
+            {topics.map((t) => (
+              <li key={t.id} className="flex items-center gap-2">
+                <label className="min-w-0 flex-1 truncate text-xs font-medium text-foreground" htmlFor={`q-${t.id}`}>
+                  <span className="tabular-nums text-muted-foreground">{t.id}</span>
+                  <span className="text-muted-foreground"> · </span>
+                  {t.label.replace(/^\d+\.\d+\s*/, "")}
+                </label>
+                <input
+                  id={`q-${t.id}`}
+                  type="number"
+                  min={0}
+                  max={questionCount}
+                  value={counts[t.id] ?? 0}
+                  onChange={(e) => onCountField(t.id, e.target.value)}
+                  className="w-16 rounded-md border border-[#8B5E3C]/25 bg-white px-2 py-1.5 text-center text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]/40"
+                />
+                <span className="w-10 text-right text-[10px] font-semibold tabular-nums text-[#8B5E3C]">
+                  {Math.round(displayTopics.find((x) => x.id === t.id)?.percent ?? 0)}%
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-[10px] text-muted-foreground">
+            Changing one field redistributes the rest so the sum stays{" "}
+            <span className="font-semibold text-foreground">{questionCount}</span>.
+          </p>
+        </div>
+      )}
+
+      <PreviewList topics={displayTopics} total={questionCount} />
     </PanelShell>
   );
 }

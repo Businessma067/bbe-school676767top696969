@@ -304,3 +304,72 @@ export function topicCountsRecord(topics: WeightedTopic[]): Record<string, numbe
   }
   return out;
 }
+
+/** Seed equal (or proportional) integer counts summing to total. */
+export function seedCountsFromTopics(
+  topicIds: string[],
+  total: number,
+  prefer?: Record<string, number>,
+): Record<string, number> {
+  if (topicIds.length === 0) return {};
+  if (topicIds.length === 1) return { [topicIds[0]]: total };
+  const weights =
+    prefer && topicIds.some((id) => (prefer[id] ?? 0) > 0)
+      ? normalizeWeights(topicIds.map((id) => prefer[id] ?? 0))
+      : topicIds.map(() => 1 / topicIds.length);
+  const counts = countsFromWeights(weights, total);
+  const out: Record<string, number> = {};
+  topicIds.forEach((id, i) => {
+    out[id] = counts[i] ?? 0;
+  });
+  return out;
+}
+
+/**
+ * Set one topic's question count; redistribute the remainder across the others
+ * (preserving their relative shares) so the sum stays exactly `total`.
+ */
+export function setManualTopicCount(
+  topicIds: string[],
+  current: Record<string, number>,
+  id: string,
+  value: number,
+  total: number,
+): Record<string, number> {
+  if (topicIds.length === 0) return {};
+  if (!topicIds.includes(id)) return { ...current };
+  const clamped = Math.max(0, Math.min(total, Math.floor(Number.isFinite(value) ? value : 0)));
+  if (topicIds.length === 1) return { [id]: total };
+
+  const others = topicIds.filter((x) => x !== id);
+  const rem = total - clamped;
+  const otherWeights = normalizeWeights(others.map((oid) => current[oid] ?? 0));
+  const distributed = countsFromWeights(otherWeights, rem);
+  const out: Record<string, number> = { [id]: clamped };
+  others.forEach((oid, i) => {
+    out[oid] = distributed[i] ?? 0;
+  });
+  return out;
+}
+
+/** Build WeightedTopic[] from manual integer counts (sum should equal total). */
+export function weightedTopicsFromCounts(
+  topics: TopicWeightTopic[],
+  counts: Record<string, number>,
+  total: number,
+): WeightedTopic[] {
+  const ids = topics.map((t) => t.id);
+  const safe =
+    Object.values(counts).reduce((a, b) => a + b, 0) === total && ids.every((id) => id in counts)
+      ? counts
+      : seedCountsFromTopics(ids, total, counts);
+  const weights = normalizeWeights(ids.map((id) => safe[id] ?? 0));
+  const percents = percentsFromWeights(weights);
+  return topics.map((t, i) => ({
+    ...t,
+    weight: weights[i] ?? 0,
+    percent: percents[i] ?? 0,
+    questions: safe[t.id] ?? 0,
+  }));
+}
+
