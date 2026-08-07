@@ -15,29 +15,23 @@ Use supply, demand, ceteris paribus, equilibrium, surplus/shortage, and competit
 
 2.1 You are already in the economy
 
-SCENE Saturday at the campus gate: Mira sells repaired second-hand bikes from a fold-out stand near the tram stop. Students pay cash or card for a tuned bike; Mira pays a workshop for spare parts and rents storage for the winter. Across the street, a household buys tram tickets, groceries, and streaming. Nobody here is "studying economics" in the moment — yet every exchange is the economy at work.
+Saturday at the campus gate. Mira sells repaired second-hand bikes from a fold-out stand near the tram stop. Students pay cash or card for a tuned bike; Mira pays a workshop for spare parts and rents storage for the winter. Across the street, a household buys tram tickets, groceries, and streaming. Nobody here is "studying economics" in the moment — yet every exchange is the economy at work.
 
 Business: A business is an entity that offers goods and/or services to customers. It does not produce mainly for the owner's private household alone; it serves customers, and it usually charges a price (or another payment) so something of value comes back.
 
 Exchange: Exchange is the handing over of goods, services, money, or other means of payment so that needs and wants can be met. Money makes exchange easier, but barter (bike-repair lessons for homemade bread) still counts as exchange.
 
-Households supply labour and buy goods and services. Businesses supply goods and services and buy inputs (labour, materials, equipment). People can hold both roles at once: Mira is a household member when she buys food, and an entrepreneur when she sells bikes. Businesses also have needs — a bike shop needs tyres, tools, and skilled repair hours.
+Three everyday roles. Households supply labour and buy goods and services. Businesses supply goods and services and buy inputs (labour, materials, equipment). People can hold both roles at once: Mira is a household member when she buys food, and an entrepreneur when she sells bikes. Businesses also have needs — a bike shop needs tyres, tools, and skilled repair hours.
 
 Needs are the basics people require for living and functioning (food, shelter, transport, care). Wants stretch beyond that into preferred extras (a designer helmet, a café brunch). Economics studies both, because scarce budgets force ranking across both categories.
 
-Case A: A student occasionally fixes friends' bikes for free. No customers, no price — helpful, but not operating as a business for customers.
-
-Case B: The same student advertises on campus, charges 25 euros per tune-up, and buys parts to resell as part of the service. Goods/services are offered to customers for payment.
-
-Case C: Two neighbours swap tomatoes for jam. That is exchange, but neither party is running a business unless they systematically offer produce to customers.
-
-Only Case B clearly matches the business definition used in this course.
+Is this a business?. Case A: A student occasionally fixes friends' bikes for free. No customers, no price — helpful, but not operating as a business for customers. Case B: The same student advertises on campus, charges 25 euros per tune-up, and buys parts to resell as part of the service. Goods/services are offered to customers for payment. Case C: Two neighbours swap tomatoes for jam. That is exchange, but neither party is running a business unless they systematically offer produce to customers. Only Case B clearly matches the business definition used in this course.
 
 Name one good and one service you bought this week. For each, who was the household side and who was the business side of the exchange?
 
-Trap: "If I do not run a company, I am outside the economy." False. Buying, working, saving, and even choosing not to spend are economic decisions. There is no opting out.
+"If I do not run a company, I am outside the economy." False. Buying, working, saving, and even choosing not to spend are economic decisions. There is no opting out.
 
-Exam recognition: statements that restrict exchange to money only, or that claim only entrepreneurs participate, are usually false. Watch absolute words (never, only, always). Barter and household purchases still count.
+statements that restrict exchange to money only, or that claim only entrepreneurs participate, are usually false. Watch absolute words (never, only, always). Barter and household purchases still count.
 
 Resources are not available in unlimited abundance.
 
@@ -45,83 +39,53 @@ Scarcity forces economising — managing limited means among competing uses.
 
 Households, businesses, and governments all face that pressure.
 
-You enter the economy as a household long before you found a firm.
-
-A business serves customers with goods/services, usually for a price.
-
-Exchange — monetary or barter — is the connective tissue of the economy.
-
-Can a volunteer soup kitchen still involve economic decisions even if meals are free to guests?
-
-Does charging a price turn every hobby into a business? What else is required?
-
 2.2 Scarcity and opportunity cost
 
-SCENE One Saturday, two offers: Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio. She cannot do both. The clock is the scarce resource; the choice is the economics.
+One Saturday, two offers. Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio. She cannot do both. The clock is the scarce resource; the choice is the economics.
 
 Scarcity: Scarcity means resources are limited while needs and wants pull in many directions. Time, money, machines, materials, and attention all run out. Scarcity forces allocation choices for households, businesses, and governments alike.
 
 Opportunity cost: Opportunity cost is the benefit of the next-best alternative forgone when you choose something else. It is not the sum of every rejected option — only the single best option you actually gave up.
 
-When you pick option A, option B's benefit disappears. That lost benefit is the opportunity cost. A founder who "pays herself zero" still forgoes the salary she could have earned elsewhere. A city that resurfaces a road forgoes the rail link it could have funded with the same budget.
+Why scarcity creates cost even without a receipt. When you pick option A, option B's benefit disappears. That lost benefit is the opportunity cost. A founder who "pays herself zero" still forgoes the salary she could have earned elsewhere. A city that resurfaces a road forgoes the rail link it could have funded with the same budget.
 
 Opportunity cost of choosing A = benefit of the next-best alternative B that is given up
 
-Sara has 700 euros for one purchase: a used laptop (benefit she values highly for study) or a washing machine (next-best, valued for saving laundrette fees).
+Scarcity versus poverty.
 
-She buys the laptop.
+Scarcity: Universal condition: limited means vs competing uses; Applies to wealthy households and rich countries too; Forces trade-offs even when income is high.
 
-Opportunity cost = benefit of the washing machine forgone — not laptop price + washer price, and not every other item she once considered.
+Poverty: Severe lack of means relative to basic needs; A social and material condition, not the definition of scarcity; Poverty implies scarcity; scarcity does not imply poverty.
 
-Opportunity cost tracks the next-best path, not a shopping-list total.
+Next-best, not all-rejected. Sara has 700 euros for one purchase: a used laptop (benefit she values highly for study) or a washing machine (next-best, valued for saving laundrette fees). She buys the laptop. Opportunity cost = benefit of the washing machine forgone — not laptop price + washer price, and not every other item she once considered. Opportunity cost tracks the next-best path, not a shopping-list total.
 
-Omar can earn 32,000 euros a year as an employed bike mechanic.
-
-He starts a repair stall and draws no formal wage in year one.
-
-The accounting wage may show 0, but the opportunity cost of his time is (at least) the 32,000 euros employment package he refused.
-
-Zero cash wage ≠ zero opportunity cost.
+Self-employment salary trap. Omar can earn 32,000 euros a year as an employed bike mechanic. He starts a repair stall and draws no formal wage in year one. The accounting wage may show 0, but the opportunity cost of his time is (at least) the 32,000 euros employment package he refused. Zero cash wage ≠ zero opportunity cost.
 
 If Leila chooses the photography gig, what is her opportunity cost — the 48-euro café pay, the fun of both, or the sum of every weekend plan she skipped?
 
 Trap 1: Adding up all rejected options. Trap 2: Saying "free" activities have no opportunity cost. Trap 3: Equating scarcity with poverty so that high-income actors "do not face scarcity."
 
-Exam recognition: true statements usually name the forgone next-best benefit. False statements often claim zero cost because no money moved, or treat opportunity cost as the price of the item bought, or as the sum of all alternatives.
+true statements usually name the forgone next-best benefit. False statements often claim zero cost because no money moved, or treat opportunity cost as the price of the item bought, or as the sum of all alternatives.
 
 Scarcity → forced choice → opportunity cost. Later sections show the same logic inside markets (what suppliers forgo when prices are low) and inside government budgets (one project crowds out another).
 
-Scarcity is universal; poverty is not the same idea.
-
-Opportunity cost = next-best alternative's benefit forgone.
-
-Households, firms, and governments all allocate limited resources.
-
-A student studies instead of earning 45 euros at a car wash. What is the opportunity cost?
-
-Why can a millionaire still face scarcity when planning a weekend?
-
 2.3 What economics studies
 
-SCENE Two headlines, two lenses: Headline A: "Local bakery raises pastry prices after butter costs jump." Headline B: "National unemployment falls while inflation edges up." Same economy, different zoom levels. Economics is the toolkit that explains both kinds of story.
+Two headlines, two lenses. Headline A: "Local bakery raises pastry prices after butter costs jump." Headline B: "National unemployment falls while inflation edges up." Same economy, different zoom levels. Economics is the toolkit that explains both kinds of story.
 
 Economics: Economics studies how individuals (in households) and businesses make decisions to satisfy needs and wants with limited resources. It builds theories to explain observed behaviour and to make careful predictions.
 
-Microeconomics zooms to units: one household, one firm, one market interaction (for example, how demand for e-bikes changes if buyers receive a purchase bonus). Macroeconomics zooms to aggregates: growth, unemployment, interest rates, the overall price level and inflation for a country or similar whole.
+Two branches, one scarcity problem. Microeconomics zooms to units: one household, one firm, one market interaction (for example, how demand for e-bikes changes if buyers receive a purchase bonus). Macroeconomics zooms to aggregates: growth, unemployment, interest rates, the overall price level and inflation for a country or similar whole.
 
-"Will more cafés open on this street if rents fall?" → micro (local firms and a local market).
+Microeconomics versus macroeconomics. Lens: Microeconomics — Focus: Individual households and businesses and how they interact — Typical questions: How does one market respond to a subsidy, tax, or preference shift? — Example objects: One firm's pricing; demand for tutoring hours; a household budget choice Lens: Macroeconomics — Focus: The overall economy and aggregate quantities — Typical questions: What is happening to national output, jobs, or inflation? — Example objects: GDP growth; unemployment rate; interest rates; consumer price inflation
 
-"Did the country's average price level rise by 2% this year?" → macro (aggregate inflation).
-
-"How does one robotics start-up allocate its seed funding?" → micro (one business), even if the euro amounts are large.
-
-Scale of money alone does not decide micro vs macro — the unit of analysis does.
+Classify the question. "Will more cafés open on this street if rents fall?" → micro (local firms and a local market). "Did the country's average price level rise by 2% this year?" → macro (aggregate inflation). "How does one robotics start-up allocate its seed funding?" → micro (one business), even if the euro amounts are large. Scale of money alone does not decide micro vs macro — the unit of analysis does.
 
 Is "a government raises the minimum wage and one supermarket's hiring plan changes" micro, macro, or a bridge between both? Name which part is which.
 
-Trap: Labelling anything involving government as automatically macro. Government can appear in micro (a tax on one product) and in macro (national fiscal stance). Trap: Calling a single expensive purchase "macro" because the price tag is large.
+Labelling anything involving government as automatically macro. Government can appear in micro (a tax on one product) and in macro (national fiscal stance). Trap: Calling a single expensive purchase "macro" because the price tag is large.
 
-Exam recognition: match the statement to the unit of analysis. Words like inflation, unemployment, growth, and national price level lean macro. One buyer, one seller, one product market lean micro.
+match the statement to the unit of analysis. Words like inflation, unemployment, growth, and national price level lean macro. One buyer, one seller, one product market lean micro.
 
 Section 2.2 gave you scarcity and opportunity cost — the shared engine. Section 2.3 names the science that studies those decisions at two scales. Markets (2.6) are mostly a micro stage; inflation talk later links to macro aggregates.
 
@@ -131,21 +95,17 @@ Micro = units and their interaction; macro = aggregates.
 
 Theories aim to explain and predict, not merely describe.
 
-Give one original micro question and one original macro question about the same city.
-
-Why is "all government activity is macro" too strong?
-
 2.4 Circular flow, money, and specialisation
 
-SCENE Pay day and pizza night: On Friday, workers receive wages from firms. On Saturday, those same people spend part of the wages on pizzas, tram rides, and phone plans. Firms use the sales revenue to pay suppliers and next week's wages. Public authorities collect taxes and fund streets, schools, and security. The loop never really stops — it is a circular flow.
+Pay day and pizza night. On Friday, workers receive wages from firms. On Saturday, those same people spend part of the wages on pizzas, tram rides, and phone plans. Firms use the sales revenue to pay suppliers and next week's wages. Public authorities collect taxes and fund streets, schools, and security. The loop never really stops — it is a circular flow.
 
 Circular flow: Households mainly offer labour and receive wages; businesses offer goods and services and receive payment. Government levies taxes and provides goods, services, transfers, and subsidies. Together these streams form a circular flow of goods, services, and money.
 
-Without money, trade needs a double coincidence of wants — each party must want what the other offers at the same time. Money works as a medium of exchange (flexibility), a unit of account (expressing value), and a store of value (holding purchasing power over time). Those functions work best when money's value stays reasonably stable.
+Why money beats pure barter. Without money, trade needs a double coincidence of wants — each party must want what the other offers at the same time. Money works as a medium of exchange (flexibility), a unit of account (expressing value), and a store of value (holding purchasing power over time). Those functions work best when money's value stays reasonably stable.
 
 When the general price level rises (inflation), the same money buys fewer goods and services — purchasing power falls. Price indexes measure that rise. Very high inflation erodes trust in money as a store of value; people try to spend it quickly. Low, stable inflation is more compatible with money doing its job.
 
-Public authorities tax households and businesses, then provide infrastructure, defence, police, and often large parts of health care and education. Some goods are hard for private firms to sell profitably because free riders cannot be excluded from enjoying them — so government provision financed by taxation fills the gap.
+Government in the loop. Public authorities tax households and businesses, then provide infrastructure, defence, police, and often large parts of health care and education. Some goods are hard for private firms to sell profitably because free riders cannot be excluded from enjoying them — so government provision financed by taxation fills the gap.
 
 Division of labour and specialisation: Exchange lets people and firms concentrate on what they do best instead of producing everything themselves. Specialisation appears inside households, inside firms (departments), between firms on the same or different production stages, across sectors, and across countries with different resources and know-how.
 
@@ -157,69 +117,37 @@ Between firms: wood → boards → furniture → retail, or narrow product niche
 
 International level: different climates, resources, labour costs, and legal frameworks shape who produces what.
 
-Without trade, a household must grow food, sew clothes, repair bikes, and teach itself every skill — slow and inefficient.
-
-With money and markets, the household sells labour hours and buys specialised goods/services.
-
-A bike shop specialises in repairs; a bakery specialises in bread; both gain from focusing.
-
-Specialisation raises output and variety — but ties people to exchange networks.
+From self-sufficiency to trade. Without trade, a household must grow food, sew clothes, repair bikes, and teach itself every skill — slow and inefficient. With money and markets, the household sells labour hours and buys specialised goods/services. A bike shop specialises in repairs; a bakery specialises in bread; both gain from focusing. Specialisation raises output and variety — but ties people to exchange networks.
 
 If your country suddenly could not import any electronics, which specialisation advantages would vanish first for local retailers — and what new opportunity costs would appear?
 
-Trap: Treating specialisation as only upside. Highly specialised work can become boring; skills may be hard to redeploy; a firm brilliant in one niche is exposed if that niche collapses.
+Treating specialisation as only upside. Highly specialised work can become boring; skills may be hard to redeploy; a firm brilliant in one niche is exposed if that niche collapses.
 
-Exam recognition: circular-flow items often test who pays whom (wages vs taxes vs purchases). Money-function items test medium of exchange / unit of account / store of value. Specialisation items test efficiency gains and the flexibility risk.
+circular-flow items often test who pays whom (wages vs taxes vs purchases). Money-function items test medium of exchange / unit of account / store of value. Specialisation items test efficiency gains and the flexibility risk.
 
 Circular flow is the stage. Economic systems (next section) decide how much of that stage is directed by markets versus by planners. Supply and demand (2.6) explain prices inside the market channels of the flow.
 
-Households, businesses, and government form interlocking flows of real goods/services and money.
-
-Money eases exchange; inflation weakens purchasing power.
-
-Division of labour enables specialisation — with efficiency gains and flexibility costs.
-
-Sketch three arrows: labour, wages, and a tax payment. Who sends each arrow?
-
-Name one advantage and one disadvantage of deep specialisation for a worker.
-
 2.5 Economic systems: who decides?
 
-SCENE Three ways to allocate steel: Imagine a tonne of steel. In System A, private firms bid and households' spending patterns pull production toward cars or bridges. In System B, a planning office assigns the tonne to a factory list. In System C, markets do most of the steering, but government taxes, regulates, and funds social and environmental goals. Same scarce steel — different decision rights.
+Three ways to allocate steel. Imagine a tonne of steel. In System A, private firms bid and households' spending patterns pull production toward cars or bridges. In System B, a planning office assigns the tonne to a factory list. In System C, markets do most of the steering, but government taxes, regulates, and funds social and environmental goals. Same scarce steel — different decision rights.
 
 Economic system: An economic system answers the allocation questions: what is produced, how it is produced, and for whom — by assigning decision power to markets, to planners, or to a mix of both.
 
-In a market economy, individuals and businesses make many of their own economic decisions; prices and private ownership play a large role. In a planned system, government mainly or partly decides which goods and services are offered (and often at which prices) and controls resources and means of production; job and product choice for people is more limited. Most real countries sit somewhere in between as mixed systems: markets allocate widely, while government sets legal frameworks and may support the poor, protect the environment, or provide major public services (sometimes called social or eco-social market economies when the mix is deliberate).
+Market, planned, mixed. In a market economy, individuals and businesses make many of their own economic decisions; prices and private ownership play a large role. In a planned system, government mainly or partly decides which goods and services are offered (and often at which prices) and controls resources and means of production; job and product choice for people is more limited. Most real countries sit somewhere in between as mixed systems: markets allocate widely, while government sets legal frameworks and may support the poor, protect the environment, or provide major public services (sometimes called social or eco-social market economies when the mix is deliberate).
 
-Signal 1: Private cafés freely set menus and prices; customers walk away if unhappy → market mechanism.
-
-Signal 2: A ministry assigns quarterly output quotas and fixed retail prices for staples → planned mechanism.
-
-Signal 3: Private firms compete, but government funds schools, taxes pollution, and runs a safety net → mixed.
-
-Judge by who holds the decision rights on what/how/for whom — not by slogans alone.
+Label the system signal. Signal 1: Private cafés freely set menus and prices; customers walk away if unhappy → market mechanism. Signal 2: A ministry assigns quarterly output quotas and fixed retail prices for staples → planned mechanism. Signal 3: Private firms compete, but government funds schools, taxes pollution, and runs a safety net → mixed. Judge by who holds the decision rights on what/how/for whom — not by slogans alone.
 
 If a country privatises shops but still sets fuel prices and owns the railways, which column of the comparison table is it drifting toward — and which decisions remain planned?
 
-Trap: Treating "market economy" as zero government. Even freer market systems rely on law. Trap: Assuming every mixed economy is identical — the mix can be light or heavy.
+Treating "market economy" as zero government. Even freer market systems rely on law. Trap: Assuming every mixed economy is identical — the mix can be light or heavy.
 
-Exam recognition: map each statement onto what / how / for whom. Transformation stories (former planned systems adopting market principles) test whether you notice a shift in decision rights, not a change in geography alone.
+map each statement onto what / how / for whom. Transformation stories (former planned systems adopting market principles) test whether you notice a shift in decision rights, not a change in geography alone.
 
 Systems set the rules of the game. Markets (next) are the coordination device that market-leaning and mixed systems use for many goods and services.
 
-Systems differ by who decides what, how, and for whom.
-
-Planned systems centralise; market systems decentralise; mixed systems combine.
-
-Real economies usually mix market allocation with public roles.
-
-Write one sentence that would only be true in a strongly planned system.
-
-Why is "no government" a poor description of a market economy?
-
 2.6 Supply, demand, and market equilibrium
 
-SCENE The 8 p.m. tutoring slot: Parents message tutors for evening maths help. At low hourly rates, many families want hours but few skilled tutors bother to log on. At very high rates, tutors flood the platform, but fewer families book. Somewhere in the middle, the hours people want line up with the hours tutors offer. That meeting point is the market at work.
+The 8 p.m. tutoring slot. Parents message tutors for evening maths help. At low hourly rates, many families want hours but few skilled tutors bother to log on. At very high rates, tutors flood the platform, but fewer families book. Somewhere in the middle, the hours people want line up with the hours tutors offer. That meeting point is the market at work.
 
 Market: A market is where buyers and sellers communicate the terms of exchange. It can be a physical place (a flea market) or virtual (an online platform), and it can specialise (labour, housing, money, capital, commodities, consumer goods).
 
@@ -229,19 +157,19 @@ Demand: Demand is the quantity customers are willing and able to buy. For most g
 
 Ceteris paribus: Latin shorthand for "all other things held constant." Supply and demand laws isolate the price–quantity link while freezing other influences. When those other influences change, curves shift.
 
-Higher prices pull more sellers in and encourage more hours from existing sellers. Opportunity cost explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising marginal cost — the extra cost of one more unit — also pushes firms to need a higher price before expanding output.
+Why the supply curve slopes up. Higher prices pull more sellers in and encourage more hours from existing sellers. Opportunity cost explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising marginal cost — the extra cost of one more unit — also pushes firms to need a higher price before expanding output.
 
-As price rises, more buyers cannot or will not pay; they cut hours or switch to substitutes (group classes, apps, self-study). As price falls, quantity demanded rises. Price and quantity demanded move in opposite directions, ceteris paribus.
+Why the demand curve slopes down. As price rises, more buyers cannot or will not pay; they cut hours or switch to substitutes (group classes, apps, self-study). As price falls, quantity demanded rises. Price and quantity demanded move in opposite directions, ceteris paribus.
 
 Equilibrium: quantity demanded = quantity supplied at the equilibrium (market) price
 
-At 30 euros, Qd = Qs = 400 hours → equilibrium price and quantity.
+Reading the tutoring schedule. At 30 euros, Qd = Qs = 400 hours → equilibrium price and quantity. At 36 euros, tutors offer 480 hours but families only want 300 → surplus of 180 hours; pressure for price to ease downward. At 18 euros, families want 620 hours but only 200 are offered → shortage of 420 hours; pressure for price to rise. Disequilibrium creates surplus or shortage; equilibrium balances both sides.
 
-At 36 euros, tutors offer 480 hours but families only want 300 → surplus of 180 hours; pressure for price to ease downward.
+Movement along a curve versus a shift.
 
-At 18 euros, families want 620 hours but only 200 are offered → shortage of 420 hours; pressure for price to rise.
+Movement along: Caused by a change in the good's own price; Slide to a new point on the same curve; Example: tutoring fee falls from 36 to 30 → move along demand to a higher quantity.
 
-Disequilibrium creates surplus or shortage; equilibrium balances both sides.
+Shift of the curve: Caused by a non-price determinant (ceteris paribus breaks); Whole curve moves left or right; Example: household incomes rise → demand shifts right at every price.
 
 Demand shifters include: income, preferences, complementary goods, and substitutes.
 
@@ -249,21 +177,15 @@ Supply shifters include: number of suppliers, technology, resource prices, and p
 
 A rightward demand shift (other things equal) tends to raise equilibrium price and quantity; a rightward supply shift tends to lower price and raise quantity.
 
-Parents' incomes rise and they book more tutoring at each price → demand curve shifts right.
-
-A new app trains more tutors quickly → supply curve shifts right.
-
-Only the platform's listed hourly fee changes, preferences unchanged → movement along the curves, not a shift story.
-
-Ask: did the own-price change, or did a background condition change?
+Shift detective. Parents' incomes rise and they book more tutoring at each price → demand curve shifts right. A new app trains more tutors quickly → supply curve shifts right. Only the platform's listed hourly fee changes, preferences unchanged → movement along the curves, not a shift story. Ask: did the own-price change, or did a background condition change?
 
 The same logic helps explain a classic inflation story: if the quantity of money rises and people can spend more, demand for goods can increase; if goods available do not rise in step, prices climb ("too much money chasing too few goods"). Raising the price of borrowing money (interest rates) can cool spending and ease price pressure — a bridge from micro curves to a macro outcome.
 
 Before looking back at the table: if a celebrity endorses online tutoring and preferences strengthen, does the demand curve shift, or do we merely move along it? Predict the direction of equilibrium price.
 
-Trap: Calling every change a "shift." Own-price changes cause movements along a curve. Trap: Mixing surplus with shortage language. Trap: Ignoring ceteris paribus — then "laws" look broken when a second variable moved.
+Calling every change a "shift." Own-price changes cause movements along a curve. Trap: Mixing surplus with shortage language. Trap: Ignoring ceteris paribus — then "laws" look broken when a second variable moved.
 
-Exam recognition: draw or imagine the graph. Identify whether price changed (along) or a determinant changed (shift). At a stated price, compare Qd and Qs to name surplus or shortage. Equilibrium is the intersection story, not "any price sellers like."
+draw or imagine the graph. Identify whether price changed (along) or a determinant changed (shift). At a stated price, compare Qd and Qs to name surplus or shortage. Equilibrium is the intersection story, not "any price sellers like."
 
 Opportunity cost (2.2) explains why supply dries up at low prices. Circular flow (2.4) is where these market trades sit. Competition (2.7) changes how much power sellers have over the price you just analysed.
 
@@ -275,17 +197,13 @@ Equilibrium equates Qd and Qs; other prices create surplus or shortage.
 
 Own-price → movement along; other factors → shift.
 
-Using the table, what is the surplus at 42 euros per hour?
-
-Name one event that shifts tutoring supply left, and state what happens to equilibrium price if demand is unchanged.
-
 2.7 Competition in the market
 
-SCENE One kiosk on the summit: After a steep hike, there is a single hut selling soup. Hikers pay because walking another hour for alternatives is painful. Down in the town, five coffee shops sit on one street — a price rise at one shop sends customers next door. Same product category, very different competitive heat.
+One kiosk on the summit. After a steep hike, there is a single hut selling soup. Hikers pay because walking another hour for alternatives is painful. Down in the town, five coffee shops sit on one street — a price rise at one shop sends customers next door. Same product category, very different competitive heat.
 
 Competition: The intensity of competition rises when more suppliers sell in the market and when substitute goods are easy to find. More rivals and closer substitutes mean less room for any one seller to dictate terms.
 
-One supplier → monopoly (rare in pure form, but possible for a national railway or a local-only seller such as the only bar inside a theatre). A few large suppliers → oligopoly (telecoms, car makers); rivals watch each other closely, and illegal cartels that fix terms to kill competition are generally not allowed. Many buyers and sellers with no single player able to set the price → the theoretical benchmark of perfect competition.
+From monopoly toward many sellers. One supplier → monopoly (rare in pure form, but possible for a national railway or a local-only seller such as the only bar inside a theatre). A few large suppliers → oligopoly (telecoms, car makers); rivals watch each other closely, and illegal cartels that fix terms to kill competition are generally not allowed. Many buyers and sellers with no single player able to set the price → the theoretical benchmark of perfect competition.
 
 Perfect competition (theoretical checklist): full information for all players; free entry and exit; no personal preferences — goods are replaceable across sellers.
 
@@ -293,21 +211,19 @@ Real markets seldom match the checklist perfectly; standardised goods (for examp
 
 Even with fewer sellers, rivalry can still be fierce if competitors react aggressively.
 
-Case 1: Only platform licensed to run city trams → monopoly-like.
+Competitive pressure at a glance.
 
-Case 2: Four mobile networks, each watching the others' tariffs → oligopoly.
+Weaker competition: Few suppliers (or one); Weak substitutes; Local captive demand (summit hut, theatre bar); Seller has more pricing room.
 
-Case 3: Dozens of nearly identical grain sellers with easy entry → nearer to perfect competition.
+Stronger competition: Many suppliers; Close substitutes available; Easy for buyers to switch; Laws often aim to protect this rivalry for customers' benefit.
 
-Case 4: Tutoring apps multiply and video courses substitute live hours → competition intensifies via suppliers and substitutes.
-
-Count suppliers and check substitutes before you label the market form.
+Rank the competitive pressure. Case 1: Only platform licensed to run city trams → monopoly-like. Case 2: Four mobile networks, each watching the others' tariffs → oligopoly. Case 3: Dozens of nearly identical grain sellers with easy entry → nearer to perfect competition. Case 4: Tutoring apps multiply and video courses substitute live hours → competition intensifies via suppliers and substitutes. Count suppliers and check substitutes before you label the market form.
 
 A village has two bakeries. A supermarket opens with fresh bread daily. Which competition driver changed more — number of suppliers, or availability of substitutes — and what happens to each bakery's pricing room?
 
-Trap: Assuming monopoly is common. Course stance: monopolies are rare in market economies, though local monopoly-like pockets exist. Trap: Treating oligopoly as "no competition" — rivalry can be intense. Trap: Calling any agreement among rivals harmless; cartel-style agreements are usually illegal.
+Assuming monopoly is common. Course stance: monopolies are rare in market economies, though local monopoly-like pockets exist. Trap: Treating oligopoly as "no competition" — rivalry can be intense. Trap: Calling any agreement among rivals harmless; cartel-style agreements are usually illegal.
 
-Exam recognition: if the stem adds suppliers or substitutes, competition rises. If it isolates a single local seller with no nearby alternative, think monopoly-like power. Perfect competition answers usually need the theoretical conditions, not just "many shops."
+if the stem adds suppliers or substitutes, competition rises. If it isolates a single local seller with no nearby alternative, think monopoly-like power. Perfect competition answers usually need the theoretical conditions, not just "many shops."
 
 Competition shapes the supply side you drew in 2.6. Weak competition can hold price above a more rivalrous outcome; strong competition disciplines sellers — which is why policy often protects rivalry.
 
@@ -318,10 +234,6 @@ Monopoly is rare; local monopoly-like situations still matter.
 Oligopoly: few large players; cartels that suppress competition are generally illegal.
 
 Perfect competition is a strict theoretical benchmark rarely met in full.
-
-Why might a theatre bar have pricing power even if the city has hundreds of bars?
-
-List two conditions from the perfect-competition checklist.
 
 Households and businesses exchange to meet needs and wants; a business offers goods/services to customers, usually for a price — and nobody fully opts out of economic decisions.
 
@@ -352,11 +264,13 @@ Map stakeholders versus shareholders, separate internal from external groups, an
 
 3.1 Factors of production: what every business combines
 
-SCENE Opening scene — HarborGlow workshop: HarborGlow builds weatherproof lanterns for marina shops. Copper sheet arrives from a metals dealer, a cutter shapes housings, assemblers fit LEDs, a founder negotiates shop shelf space, and a design spreadsheet decides which models to keep. The finished lantern looks simple. The resource mix behind it is not.
+Opening scene — HarborGlow workshop. HarborGlow builds weatherproof lanterns for marina shops. Copper sheet arrives from a metals dealer, a cutter shapes housings, assemblers fit LEDs, a founder negotiates shop shelf space, and a design spreadsheet decides which models to keep. The finished lantern looks simple. The resource mix behind it is not.
 
 Factors of production: Factors of production are the resources a business combines to create goods and services. In this course the core set is land, labour, capital and entrepreneurship (also called enterprise). Knowledge and technology reshape how those factors work together.
 
-Land supplies natural resources. Labour supplies human effort and skill. Capital supplies produced means of production and the financial resources that keep operations running. Entrepreneurship (enterprise) is the organising factor: it combines the others, chooses what to make, and bears the risk that the plan fails. Without enterprise, land, labour and capital sit idle or misaligned.
+How the four core factors fit together. Land supplies natural resources. Labour supplies human effort and skill. Capital supplies produced means of production and the financial resources that keep operations running. Entrepreneurship (enterprise) is the organising factor: it combines the others, chooses what to make, and bears the risk that the plan fails. Without enterprise, land, labour and capital sit idle or misaligned.
+
+Factors of production — what each factor covers. Factor: Land — What it covers in this course: Natural resources used in production (soil, water, minerals, forests, fisheries, sites with natural character) — HarborGlow example: Coastal workshop site; copper ore origin before refining Factor: Labour — What it covers in this course: All human resources applied in production — manual and mental, permanent and seasonal — HarborGlow example: Cutters, assemblers, bookkeeper, quality checker Factor: Capital — What it covers in this course: Machinery, plant, vehicles and financial resources used to operate — HarborGlow example: Press, leased laser cutter, delivery van, cash for payroll Factor: Entrepreneurship / enterprise — What it covers in this course: Bringing land, labour and capital together; coordinating decisions; bearing business risk — HarborGlow example: Founder choosing model range, signing shop contracts, absorbing unsold stock risk
 
 Labour is wider than shop-floor muscle. Planners, accountants, coaches and call-centre staff are labour when they supply human resources. Capital includes equipment whether owned or leased, plus inventories and cash used to run the business. Land is natural-resource based: standing forests and mineral deposits count; a finished oak barrel or cut timber ready for milling is an input that has already left the pure land category and is treated with capital/materials logic in classification tasks.
 
@@ -364,103 +278,63 @@ Entrepreneurship and enterprise: Entrepreneurship is the activity of organising 
 
 Knowledge and technology sit alongside the four core factors. Fermentation know-how, coding skill or irrigation software changes how land, labour and capital combine. They do not replace entrepreneurship: knowing how to blend wine is knowledge; deciding which vineyard contracts to sign and accepting the loss if the vintage fails is entrepreneurship.
 
-Alpine dairy pasture: meadow and water = land; milkers and cheese makers = labour; vats and refrigerated truck = capital; owner choosing herd size and cheese contracts = entrepreneurship.
-
-City coding studio in rented rooms: little agricultural land, but location still matters; developers = labour; laptops, licences and cash buffer = capital; founders pitching clients and carrying unpaid invoices = entrepreneurship; stack knowledge and tools = knowledge/technology.
-
-Printed-circuit plant: site and process water involve land/natural resources; engineers and operators = labour; lines, clean rooms and working capital = capital; plant leadership coordinating orders and risk = entrepreneurship.
-
-Different businesses emphasise different factors, but viable production almost always needs more than one factor at once.
+Worked classification — three different mixes. Alpine dairy pasture: meadow and water = land; milkers and cheese makers = labour; vats and refrigerated truck = capital; owner choosing herd size and cheese contracts = entrepreneurship. City coding studio in rented rooms: little agricultural land, but location still matters; developers = labour; laptops, licences and cash buffer = capital; founders pitching clients and carrying unpaid invoices = entrepreneurship; stack knowledge and tools = knowledge/technology. Printed-circuit plant: site and process water involve land/natural resources; engineers and operators = labour; lines, clean rooms and working capital = capital; plant leadership coordinating orders and risk = entrepreneurship. Different businesses emphasise different factors, but viable production almost always needs more than one factor at once.
 
 A technician replaces a phone screen using a spare part from inventory. Which factor is the technician? Which factor is the spare part? Who supplies entrepreneurship if a franchise owner decides which repairs to advertise this month?
 
-Trap: treating labour as only physical work, capital as only owned machines, or entrepreneurship as any purchase decision. Labour includes office and service work. Leased tools remain capital. Spending money alone is not entrepreneurship — organising factors and bearing business risk is.
+treating labour as only physical work, capital as only owned machines, or entrepreneurship as any purchase decision. Labour includes office and service work. Leased tools remain capital. Spending money alone is not entrepreneurship — organising factors and bearing business risk is.
 
-Exam recognition: stems often hand you a vignette (winery, repair shop, factory, insurer) and ask whether a named item is land, labour, capital or entrepreneurship. Translate the item into the factor definition first. Watch for false splits such as "services use only labour" or "risk-bearing is labour because it takes time."
+stems often hand you a vignette (winery, repair shop, factory, insurer) and ask whether a named item is land, labour, capital or entrepreneurship. Translate the item into the factor definition first. Watch for false splits such as "services use only labour" or "risk-bearing is labour because it takes time."
 
 Connect: factors of production are the micro building blocks that later feed sector classification (what the firm mainly does) and stakeholder analysis (who supplies or depends on those factors).
 
-Four core factors: land, labour, capital, entrepreneurship/enterprise.
-
-Knowledge and technology change how factors combine.
-
-Entrepreneurship organises and bears risk; it is not every skilled task.
-
-Classify inputs by economic role, not by whether the output feels "physical."
-
-Can labour include an insurance claims handler?
-
-Is a leased bottling line still capital?
-
-Does ordering barrels automatically equal entrepreneurship?
-
 3.2 Primary, secondary and tertiary sectors
 
-SCENE Opening scene — one metal, three businesses: Copper leaves a mine as ore. A cable plant draws it into wire. A grid-services firm installs and maintains household connections. Same material story, three different sector labels — because sector follows the firm’s main activity, not the material’s origin.
+Opening scene — one metal, three businesses. Copper leaves a mine as ore. A cable plant draws it into wire. A grid-services firm installs and maintains household connections. Same material story, three different sector labels — because sector follows the firm’s main activity, not the material’s origin.
 
 Three-sector model: The three-sector model sorts economic activity into primary (extraction of raw materials), secondary (manufacturing transformation into goods) and tertiary (services).
 
-Ask what the business mainly does day to day. If it extracts or harvests from nature, it is primary (farming, fishing, mining, forestry). If it transforms materials into goods, it is secondary (cars, ships, machinery, circuit boards, clothing, computers). If it provides services — distribution, banking, insurance, coaching, technical support, retail — it is tertiary. A retailer of packaged food is tertiary even though the food began on a farm.
+How to assign a sector. Ask what the business mainly does day to day. If it extracts or harvests from nature, it is primary (farming, fishing, mining, forestry). If it transforms materials into goods, it is secondary (cars, ships, machinery, circuit boards, clothing, computers). If it provides services — distribution, banking, insurance, coaching, technical support, retail — it is tertiary. A retailer of packaged food is tertiary even though the food began on a farm.
+
+Sector focus at a glance.
+
+Primary & secondary: Primary: pull resources from the earth/sea/forest; Secondary: reshape materials into goods; Output is typically tangible at the point of production; Often larger share in less developed economies (primary especially).
+
+Tertiary: Delivers services rather than extracting or fabricating; Includes trade, finance, coaching, support, logistics services; Can still use heavy capital and skilled labour; Dominates output in highly developed economies.
 
 As economic development advances, the tertiary sector usually grows in importance. In highly developed economies — for example EU countries with high GDP per capita — the tertiary sector commonly accounts for more than 70% of economic output, while the primary sector is a small percentage of output even though food production remains vital.
 
 Gross domestic product (GDP): GDP is the total monetary value of final goods and services produced within a country’s borders in a period (usually a year). It summarises overall economic activity and, when adjusted for inflation and rising over time, signals economic growth.
 
-GDP is useful for comparing activity and tracking growth, but it is imperfect for well-being. Not all income sources are captured. Quality and sustainability of growth are not scored. Rebuild spending after an ecological disaster can raise GDP even when people are worse off. Still, GDP often correlates with indicators such as health status and happiness.
+What GDP measures — and what it does not. GDP is useful for comparing activity and tracking growth, but it is imperfect for well-being. Not all income sources are captured. Quality and sustainability of growth are not scored. Rebuild spending after an ecological disaster can raise GDP even when people are worse off. Still, GDP often correlates with indicators such as health status and happiness.
 
-Copper mine extracting ore → primary.
-
-Plant turning copper into cables → secondary.
-
-Utility installing and maintaining household grid links → tertiary.
-
-Supermarket selling packaged food → tertiary (distribution/service), not primary.
-
-Classify the firm’s main operation. Do not drag every downstream seller back into the primary sector because inputs once grew on land.
+Worked sector walk-through. Copper mine extracting ore → primary. Plant turning copper into cables → secondary. Utility installing and maintaining household grid links → tertiary. Supermarket selling packaged food → tertiary (distribution/service), not primary. Classify the firm’s main operation. Do not drag every downstream seller back into the primary sector because inputs once grew on land.
 
 A software firm writes warehouse apps for manufacturers. Is the software firm secondary because manufacturers are secondary customers, or tertiary because it sells a service?
 
-Trap: labelling retail or logistics as secondary "because goods are involved," or assuming primary activity disappears in rich countries. Goods can move through tertiary channels; primary can be small in GDP share and still socially essential.
+labelling retail or logistics as secondary "because goods are involved," or assuming primary activity disappears in rich countries. Goods can move through tertiary channels; primary can be small in GDP share and still socially essential.
 
-Exam recognition: expect chains (mine → factory → installer → retailer) and one true sector label per firm. Developed-economy items often test the "tertiary > 70% of output" pattern and the idea that GDP growth is not the same as well-being.
-
-Primary extracts, secondary manufactures, tertiary serves.
-
-Assign sector by the firm’s main activity.
-
-Developed economies are typically tertiary-heavy.
-
-GDP tracks activity/growth; it is not a complete well-being scorecard.
-
-Name one primary, one secondary and one tertiary example that share a materials story.
-
-Why can primary be vital yet small in GDP share?
-
-Give one reason GDP can rise while well-being falls.
+expect chains (mine → factory → installer → retailer) and one true sector label per firm. Developed-economy items often test the "tertiary > 70% of output" pattern and the idea that GDP growth is not the same as well-being.
 
 3.3 Profit-oriented versus not-for-profit
 
-SCENE Opening scene — two roofs, two missions: PulseFit runs paid small-group training in a converted warehouse and expands only when expected surplus justifies new coaches. RiverAid collects donations and membership fees to fund flood-response kits; any surplus buys more kits and training, not private owner dividends. Both need cash. Only one treats owner profit as the central success metric.
+Opening scene — two roofs, two missions. PulseFit runs paid small-group training in a converted warehouse and expands only when expected surplus justifies new coaches. RiverAid collects donations and membership fees to fund flood-response kits; any surplus buys more kits and training, not private owner dividends. Both need cash. Only one treats owner profit as the central success metric.
 
 Profit-oriented business: A profit-oriented business aims for revenues above costs and expenses. Profit rewards owners/investors for risk and can be reinvested to strengthen durability and competitiveness.
 
 Not-for-profit organisation (NPO): A not-for-profit organisation mainly aims to cover costs while pursuing a mission. It still needs revenues — often donations, fees, grants or membership income — and may generate a surplus, but that surplus is reinvested into services or projects rather than treated as private profit as the organisation’s purpose.
 
-Covering costs is not optional. Without enough inflow, an NPO cannot deliver aid, culture or environmental work. A surplus is useful because it funds more projects and stronger delivery. The difference from a profit-oriented firm is the primary aim and how success is judged: mission delivery plus financial sustainability versus financial return alongside viability.
+Why surplus still matters for NPOs. Covering costs is not optional. Without enough inflow, an NPO cannot deliver aid, culture or environmental work. A surplus is useful because it funds more projects and stronger delivery. The difference from a profit-oriented firm is the primary aim and how success is judged: mission delivery plus financial sustainability versus financial return alongside viability.
 
-Private language school expands campuses when forecast profit covers rent risk → profit-oriented.
+Profit-oriented businesses and not-for-profit organisations compared. Aspect: Primary aim — Profit-oriented business: Earn profits (revenues above costs) as a central goal — Not-for-profit organisation (NPO): Cover costs while pursuing a mission Aspect: Use of surplus — Profit-oriented business: Reward owners/investors for risk; reinvest to strengthen the firm — Not-for-profit organisation (NPO): Reinvest to enhance services or projects; not distributed as private profit goal Aspect: Need for revenue — Profit-oriented business: Sales and other commercial income required — Not-for-profit organisation (NPO): Donations, fees, grants or membership income still required Aspect: Success focus — Profit-oriented business: Financial return alongside viability and competitiveness — Not-for-profit organisation (NPO): Mission delivery and financial sustainability Aspect: Typical examples — Profit-oriented business: Private firms, commercial partnerships, profit-seeking corporations — Not-for-profit organisation (NPO): Charities, humanitarian NGOs, many cultural and environmental associations
 
-International relief organisation raises donations for emergency shelters; overheads covered; excess expands programmes → not-for-profit.
-
-Both monitor cash weekly; only the school treats owner profit as a core success score.
-
-Cash discipline is shared. Purpose and surplus destination separate the two types.
+Worked contrast. Private language school expands campuses when forecast profit covers rent risk → profit-oriented. International relief organisation raises donations for emergency shelters; overheads covered; excess expands programmes → not-for-profit. Both monitor cash weekly; only the school treats owner profit as a core success score. Cash discipline is shared. Purpose and surplus destination separate the two types.
 
 An environmental NPO sells branded water bottles to fund river clean-ups and ends the year with a surplus. Does the surplus automatically turn it into a profit-oriented business?
 
-Trap: believing NPOs need no money, or that any surplus proves the organisation is secretly profit-oriented. NPOs need inflows; surplus used for mission is consistent with not-for-profit status. Conversely, a firm that reinvests heavily can still be profit-oriented if owner return remains a central aim.
+believing NPOs need no money, or that any surplus proves the organisation is secretly profit-oriented. NPOs need inflows; surplus used for mission is consistent with not-for-profit status. Conversely, a firm that reinvests heavily can still be profit-oriented if owner return remains a central aim.
 
-Exam recognition: look for aim language ("reward investors" vs "cover costs / mission"). Examples such as major humanitarian or environmental NGOs signal NPO. Do not confuse "needs revenue" with "is profit-oriented."
+look for aim language ("reward investors" vs "cover costs / mission"). Examples such as major humanitarian or environmental NGOs signal NPO. Do not confuse "needs revenue" with "is profit-oriented."
 
 Connect: profit orientation shapes which stakeholders push hardest (investors seeking return vs donors seeking mission proof), which Chapter 3.6 develops.
 
@@ -472,47 +346,25 @@ Both must manage money; purpose and surplus logic differ.
 
 3.4 Business size: SMEs and large firms
 
-SCENE Opening scene — same industry, different scale: Three bike businesses share one street name in conversation: a two-person repair loft, a regional frame workshop with dozens of staff, and a listed group with thousands of employees worldwide. Customers say "bike company" for all three. Size measures force a clearer label.
+Opening scene — same industry, different scale. Three bike businesses share one street name in conversation: a two-person repair loft, a regional frame workshop with dozens of staff, and a listed group with thousands of employees worldwide. Customers say "bike company" for all three. Size measures force a clearer label.
 
 SME (and MSME): SME (small and medium-sized enterprise), sometimes written MSME to highlight micro firms, is the umbrella for businesses below large-enterprise ceilings. Size matters for access to finance and support programmes, and often for how heavy accounting rules become.
 
-The course uses European Commission-style thresholds combining staff headcount with either turnover or balance-sheet total. About 99% of EU businesses are SMEs. Crossing the ceilings moves a firm into the large category. In many countries, smaller firms may use simpler accounting methods to calculate profit or loss (see Chapter 6).
+How size is measured in this course. The course uses European Commission-style thresholds combining staff headcount with either turnover or balance-sheet total. About 99% of EU businesses are SMEs. Crossing the ceilings moves a firm into the large category. In many countries, smaller firms may use simpler accounting methods to calculate profit or loss (see Chapter 6).
 
 Category = f(staff headcount, AND (turnover OR balance-sheet total))
 
-Studio A: 6 employees, €1.2 m turnover → micro.
-
-Studio B: 40 employees, €8 m turnover → small.
-
-Factory C: 180 employees, €40 m turnover, €30 m balance-sheet total → medium-sized.
-
-Group D: 8,000 employees worldwide → large.
-
-A–C sit inside SME bands (subject to full legal tests in real programmes); D is large. SME innovation support typically targets the SME side of that line.
+Worked size placements. Studio A: 6 employees, €1.2 m turnover → micro. Studio B: 40 employees, €8 m turnover → small. Factory C: 180 employees, €40 m turnover, €30 m balance-sheet total → medium-sized. Group D: 8,000 employees worldwide → large. A–C sit inside SME bands (subject to full legal tests in real programmes); D is large. SME innovation support typically targets the SME side of that line.
 
 A firm has 45 staff and €12 m turnover. Which ceiling does it fail for "small," and what category should you test next?
 
-Trap: using only employees, or treating "SME" as a vibe ("we feel small"). Headcount and financial ceilings both matter. Also remember medium-sized balance-sheet total peaks at €43 m in the course table, not €50 m.
+using only employees, or treating "SME" as a vibe ("we feel small"). Headcount and financial ceilings both matter. Also remember medium-sized balance-sheet total peaks at €43 m in the course table, not €50 m.
 
-Exam recognition: expect numeric vignettes. Place the firm before debating policy. Memorise the micro/small/medium ceilings and the idea that size affects funding access and accounting burden.
-
-Size uses staff, turnover and/or balance-sheet total.
-
-Course bands: micro <10; small <50; medium <250 (with matching € ceilings).
-
-Most EU firms are SMEs; large firms sit above the ceilings.
-
-Size affects support access and often accounting complexity.
-
-State the three micro ceilings.
-
-Why does the medium row show €50 m and €43 m?
-
-Name one reason size categories matter beyond vocabulary.
+expect numeric vignettes. Place the firm before debating policy. Memorise the micro/small/medium ceilings and the idea that size affects funding access and accounting burden.
 
 3.5 Local, national and international reach
 
-SCENE Opening scene — bread, policies, parts: A corner bakery sells to walkers within a few streets. A domestic insurer writes policies in every major city of one country but nowhere abroad. A components maker runs plants on two continents and ships to industrial buyers worldwide. Geography is not decoration — it changes logistics, law, language and funding pressure.
+Opening scene — bread, policies, parts. A corner bakery sells to walkers within a few streets. A domestic insurer writes policies in every major city of one country but nowhere abroad. A components maker runs plants on two continents and ships to industrial buyers worldwide. Geography is not decoration — it changes logistics, law, language and funding pressure.
 
 Local (regional) business: A local or regional business operates in a limited area. Most customers live nearby. It does not serve a national or international market. Typical early-stage challenges include winning enough local customers and avoiding undercapitalisation — own funds are thin and extra finance is hard to obtain.
 
@@ -520,63 +372,59 @@ National business: A national business serves the home-country market but not fo
 
 International / multinational business: An international or multinational business makes and/or sells goods and services in more than one country. Firms often expand abroad when the home market is too small. Cross-border reach brings longer supply chains, different legal and economic systems, cultures, languages and sometimes currencies.
 
-Each step outward adds interfaces. Local firms fight for nearby demand and cash. National firms must design domestic logistics and consistent delivery. International firms add borders: rules, cultures, languages and currency risk. As more firms operate across borders, markets and production integrate more deeply — globalisation.
+Why wider reach raises coordination load. Each step outward adds interfaces. Local firms fight for nearby demand and cash. National firms must design domestic logistics and consistent delivery. International firms add borders: rules, cultures, languages and currency risk. As more firms operate across borders, markets and production integrate more deeply — globalisation.
 
 Globalisation: Globalisation refers to the deepening cross-border integration of markets, production and information as more firms operate internationally.
 
-Neighbourhood bike workshop with clients within a few kilometres → local.
+Geographic reach compared.
 
-Supermarket chain in every major city of one country, none abroad → national.
+Local & national: Local: limited area; nearby customers; National: whole home country; no foreign market; Key frictions: funding (local), domestic logistics (national); Undercapitalisation is a classic local/small-firm pressure.
 
-Components manufacturer with plants in Europe and Asia selling worldwide → international/multinational.
+International / multinational: Make and/or sell in more than one country; Longer cross-border supply chains; Multiple legal/economic systems and cultures; Possible multi-currency operations; fuels globalisation.
 
-Same product family can sit at any reach level; the market map decides the label.
+Reach, market and typical challenges. Reach: Local / regional — Market served: Small limited area — Typical extra challenge: Customer acquisition nearby; undercapitalisation Reach: National — Market served: Home country only — Typical extra challenge: Longer domestic supply chain; multi-location delivery Reach: International / multinational — Market served: More than one country — Typical extra challenge: Borders: law, culture, language, currency, longer chains
+
+Worked geographic labels. Neighbourhood bike workshop with clients within a few kilometres → local. Supermarket chain in every major city of one country, none abroad → national. Components manufacturer with plants in Europe and Asia selling worldwide → international/multinational. Same product family can sit at any reach level; the market map decides the label.
 
 An online tutor teaches only students in one country but servers and payment processors sit abroad. For Chapter 3 reach classification, which market definition matters most — where customers are, or where the servers sit?
 
-Trap: calling any firm with an imported input "international," or treating multinational as a synonym for "large." Reach is about where the firm makes and/or sells. A micro exporter can be international; a huge domestic chain can remain national.
+calling any firm with an imported input "international," or treating multinational as a synonym for "large." Reach is about where the firm makes and/or sells. A micro exporter can be international; a huge domestic chain can remain national.
 
-Exam recognition: vignettes stress customer geography and plant locations. Match local / national / international definitions, then mention the matching challenge (undercapitalisation, domestic logistics, cross-border complexity).
+vignettes stress customer geography and plant locations. Match local / national / international definitions, then mention the matching challenge (undercapitalisation, domestic logistics, cross-border complexity).
 
 Connect: wider reach multiplies stakeholders across communities and governments — the next section.
 
-Local: limited area; funding and nearby demand are critical.
-
-National: home market only; longer domestic chain.
-
-International/multinational: make and/or sell across borders.
-
-Globalisation = deeper cross-border integration as such firms grow.
-
 3.6 Stakeholders, shareholders and conflicting interests
 
-SCENE Opening scene — night shifts at MeadowMill: MeadowMill processes dairy for supermarket buyers. Owners want faster fulfilment. Night shifts would please buyers and raise utilisation. Residents hate lorry noise after 22:00. Tired staff worry about safety. A river community watches wastewater quality. One decision, several legitimate interests — that is stakeholder reality.
+Opening scene — night shifts at MeadowMill. MeadowMill processes dairy for supermarket buyers. Owners want faster fulfilment. Night shifts would please buyers and raise utilisation. Residents hate lorry noise after 22:00. Tired staff worry about safety. A river community watches wastewater quality. One decision, several legitimate interests — that is stakeholder reality.
 
 Stakeholder: A stakeholder is anyone who is (potentially) affected by a business’s activities and/or has an interest in what the business does. Globalisation and stronger environmental expectations have widened the set of people and groups firms must consider.
 
 Shareholder: A shareholder is an owner of shares in a corporation — a specific ownership stake. Shareholders are stakeholders, but not all stakeholders are shareholders. Employees, customers, suppliers, neighbours and regulators can have strong interests without owning shares.
 
-Internal stakeholders operate inside the organisation: owners/shareholders, managers and employees. External stakeholders sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local/national/international communities and the natural environment. Managers may or may not also be owners.
+Internal versus external stakeholders. Internal stakeholders operate inside the organisation: owners/shareholders, managers and employees. External stakeholders sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local/national/international communities and the natural environment. Managers may or may not also be owners.
+
+Main stakeholder groups and typical interests. Stakeholder group: Owners / shareholders / investors — Internal / external: Internal (ownership) — Typical interest / concern: Return for risk; value growth; sometimes mission and social contribution Stakeholder group: Managers — Internal / external: Internal — Typical interest / concern: Income, career, ability to implement strategy Stakeholder group: Employees — Internal / external: Internal — Typical interest / concern: Wages, job security, meaningful work; shared values Stakeholder group: Customers — Internal / external: External — Typical interest / concern: Useful, reliable offers at acceptable prices; ongoing relationship Stakeholder group: Suppliers — Internal / external: External — Typical interest / concern: Timely orders, fair payment, stable future demand Stakeholder group: Government — Internal / external: External — Typical interest / concern: Tax compliance, observance of rules, contribution to public aims Stakeholder group: Communities (local, national, international) — Internal / external: External — Typical interest / concern: Jobs, congestion, pollution, cultural sponsorship, licence to operate Stakeholder group: Natural environment — Internal / external: External (affected system) — Typical interest / concern: Sustainable resource use; lower emissions, waste and ecological harm
+
+Shareholders versus the wider stakeholder set.
+
+Shareholders: Own shares in a company; Subset of stakeholders; Care strongly about returns and firm value; Can sell shares or the business to realise gains.
+
+Other stakeholders: May have no ownership stake; Include staff, buyers, suppliers, state, communities, environment; Care about jobs, prices, payment, rules, local quality of life; Can enable or block the firm even without shares.
 
 Owners invest capital and seek a payoff for risk. Successful trading can raise business value — often reflected in share prices for companies — which owners may realise by selling shares or the whole business. Profit need not be their only goal: solving customer problems and contributing to social welfare can matter too. Managers and employees depend on the firm for income and often for identity; the firm depends on them in return. Shared values and objectives support long-run success.
 
 Suppliers and customers create mutual dependency: quality, quantity and timing of inputs must match production needs, while payment and future orders keep suppliers alive; customers need reliable offers and the firm needs their demand. Communities and government are affected through jobs, taxes, congestion and pollution. Environmental responsibility requires concrete results, not greenwashing — claiming friendliness without proven action.
 
-Stakeholders pull in different directions. Faster delivery may raise owner returns and please customers yet harm residents and exhaust staff. Lower prices delight buyers but squeeze supplier margins. Stricter environmental filters protect rivers and may raise short-term costs. Good management makes conflicts visible and negotiates trade-offs instead of pretending one group is the only stakeholder.
+Why interests conflict. Stakeholders pull in different directions. Faster delivery may raise owner returns and please customers yet harm residents and exhaust staff. Lower prices delight buyers but squeeze supplier margins. Stricter environmental filters protect rivers and may raise short-term costs. Good management makes conflicts visible and negotiates trade-offs instead of pretending one group is the only stakeholder.
 
-List groups: family owners, plant managers, production staff, milk suppliers, supermarket buyers, municipal government, nearby residents, river ecosystem.
-
-Night-shift proposal: owners and some buyers gain speed; residents lose quiet; staff face fatigue risk; wastewater timing may worry environmental monitors.
-
-Decision quality depends on recognising the conflict early, not on denying that residents or staff are stakeholders.
-
-Conflicting interests are normal. Classification skill is listing who is affected and what each group wants before choosing a path.
+Worked stakeholder conflict — MeadowMill night shifts. List groups: family owners, plant managers, production staff, milk suppliers, supermarket buyers, municipal government, nearby residents, river ecosystem. Night-shift proposal: owners and some buyers gain speed; residents lose quiet; staff face fatigue risk; wastewater timing may worry environmental monitors. Decision quality depends on recognising the conflict early, not on denying that residents or staff are stakeholders. Conflicting interests are normal. Classification skill is listing who is affected and what each group wants before choosing a path.
 
 A city council cuts a supplier’s night delivery permit to protect residents. Which external stakeholders gained, and which internal stakeholders are most likely pressured next?
 
-Trap: equating "stakeholder" with "shareholder," or assuming only people inside the firm count. Another trap: treating environmental claims as enough without activities and proven results.
+equating "stakeholder" with "shareholder," or assuming only people inside the firm count. Another trap: treating environmental claims as enough without activities and proven results.
 
-Exam recognition: questions mix ownership language with staff, suppliers, communities and environment. Ask: who is affected or interested? Who owns shares? Is the group internal or external? Where do aims clash? Legal structure and finance (later chapters) sit beside stakeholder management as success factors.
+questions mix ownership language with staff, suppliers, communities and environment. Ask: who is affected or interested? Who owns shares? Is the group internal or external? Where do aims clash? Legal structure and finance (later chapters) sit beside stakeholder management as success factors.
 
 Connect: Chapter 4 turns to ownership forms and finance — how shareholders, partners and sole owners differ legally — while this section keeps the wider interest map in view.
 
@@ -587,12 +435,6 @@ Internal: owners/shareholders, managers, employees; external: customers, supplie
 Interests often conflict; businesses must manage trade-offs.
 
 Environmental responsibility needs results, not slogans.
-
-Give one stakeholder who is not a shareholder.
-
-Classify a municipal tax office as internal or external.
-
-Name a conflict between customers and nearby residents.
 
 Businesses combine land, labour, capital and entrepreneurship/enterprise (plus knowledge and technology) in different mixes.
 
@@ -623,101 +465,65 @@ Choose finance by weighing cost, risk, control, flexibility, purpose, and gearin
 
 4.1 Sole trader / sole proprietorship
 
-SCENE One person, one shop: Mara opens a bicycle repair booth near a station. She registers as a sole trader, puts €9,500 of her savings into tools and a workbench, and signs the rent herself. Customers deal with Mara — not with a company name that exists separately from her. When a supplier invoice is unpaid, the claim is against Mara personally.
+One person, one shop. Mara opens a bicycle repair booth near a station. She registers as a sole trader, puts €9,500 of her savings into tools and a workbench, and signs the rent herself. Customers deal with Mara — not with a company name that exists separately from her. When a supplier invoice is unpaid, the claim is against Mara personally.
 
 Sole proprietorship (sole trader): A business owned by one person who also manages and runs it. The firm is not a separate legal entity: owner and business are, legally, the same person.
 
-Setup is usually the easiest of the main forms: there is typically no minimum share capital barrier of the AG/GmbH type. The owner makes the key management decisions and bears the risk. Profits are reported on the owner’s personal income tax statement. Continuity is fragile — retirement, long illness, or death of the owner can interrupt or end the business unless someone else takes over. Staff can be hired, but the owner still owns the risk and the final decisions.
+How sole trading works day to day. Setup is usually the easiest of the main forms: there is typically no minimum share capital barrier of the AG/GmbH type. The owner makes the key management decisions and bears the risk. Profits are reported on the owner’s personal income tax statement. Continuity is fragile — retirement, long illness, or death of the owner can interrupt or end the business unless someone else takes over. Staff can be hired, but the owner still owns the risk and the final decisions.
 
 Unlimited liability: The sole proprietor is liable for all debts and obligations of the business. If business assets are not enough, private assets can be claimed by creditors.
 
 Finance for a sole trader leans heavily on the owner’s own capacity. Personal savings and other outside money from investors or banks are external sources. Once the shop earns a surplus that is left in the business rather than withdrawn, that retained profit becomes an internal source — and it carries no interest charge. Short-term tools such as a bank overdraft and trade credit are common; longer bank loans may need collateral (often property as a mortgage).
 
-Start-up: Mara invests €9,500 savings (external equity from the owner’s point of view as funds put into the firm) and opens a current account with a €2,500 overdraft limit.
+Strengths and pressure points of sole trading.
 
-Operations: she buys spare parts on 30-day trade credit; unpaid purchases are short-term liabilities.
+Why founders choose it: Simple and quick to establish; Full control of decisions; No need to share profits with co-owners; Profits taxed as personal income of the owner.
 
-Year 1 result: profit before drawings = €22,000. She withdraws €16,000 for living costs and leaves €6,000 in the business.
+What founders must accept: Unlimited liability — private assets at stake; Finance limited by one person’s wealth and credit; Continuity risk if the owner cannot continue; All major decisions and risk stay with one person.
 
-The €6,000 left in is internal finance (retained earnings). No interest is owed on that €6,000.
-
-If sales crash and the overdraft plus supplier bills cannot be cleared from business cash, creditors can pursue Mara’s private assets — unlimited liability.
-
-Easy setup and full control come with personal liability and finance that depends on one owner.
+Worked: Mara’s first-year money. Start-up: Mara invests €9,500 savings (external equity from the owner’s point of view as funds put into the firm) and opens a current account with a €2,500 overdraft limit. Operations: she buys spare parts on 30-day trade credit; unpaid purchases are short-term liabilities. Year 1 result: profit before drawings = €22,000. She withdraws €16,000 for living costs and leaves €6,000 in the business. The €6,000 left in is internal finance (retained earnings). No interest is owed on that €6,000. If sales crash and the overdraft plus supplier bills cannot be cleared from business cash, creditors can pursue Mara’s private assets — unlimited liability. Easy setup and full control come with personal liability and finance that depends on one owner.
 
 If Mara wants a partner who invests money but never manages the shop, is sole proprietorship still the right legal shell? Why or why not?
 
-Trap: thinking “small business” automatically means “safe private assets.” Size does not create limited liability. A tiny sole trader still faces unlimited liability.
+thinking “small business” automatically means “safe private assets.” Size does not create limited liability. A tiny sole trader still faces unlimited liability.
 
 Exam cue: if the stem says one owner who manages, not a separate legal person, profits on personal tax, and private assets at risk — mark sole trader / unlimited liability. Continuity questions often test illness or retirement of that single owner.
 
-Sole trader = one owner-manager; not a separate legal person.
-
-Unlimited liability puts private assets at stake.
-
-Setup is easy; continuity is fragile.
-
-Finance starts with owner funds and credit; retained profit is internal finance without interest.
-
-What does unlimited liability mean for a sole proprietor’s house or savings?
-
-Name one internal and one external source a sole trader might use after year one.
-
-Why can continuity be a problem even if the shop is profitable?
-
 4.2 Partnership
 
-SCENE Two names on the door: Leo and Nina want to run a landscape design practice together. Neither wants sole-trader loneliness: they want to split design and client work, pool savings, and share decisions. They must still answer: who is liable if a project goes wrong and the bank is unpaid?
+Two names on the door. Leo and Nina want to run a landscape design practice together. Neither wants sole-trader loneliness: they want to split design and client work, pool savings, and share decisions. They must still answer: who is liable if a project goes wrong and the bank is unpaid?
 
 Partnership: A business jointly founded by two or more persons. Partners set rights, responsibilities, and profit/loss sharing in a partnership agreement. In Austria, a general partnership of this type is called Offene Gesellschaft (OG).
 
-The partnership agreement typically settles ownership shares, profit and loss splits, roles, decision rules, dispute resolution, and terms of the partnership. In a general partnership, partners jointly own and manage and each has unlimited liability for the firm’s debts — a creditor may pursue any general partner for the full remaining debt, not only that partner’s “share.” Tasks can be specialised and ideas exchanged, which can improve decisions. Finance resembles sole trading but with more people who can contribute savings and supply collateral.
+Agreement first, then daily work. The partnership agreement typically settles ownership shares, profit and loss splits, roles, decision rules, dispute resolution, and terms of the partnership. In a general partnership, partners jointly own and manage and each has unlimited liability for the firm’s debts — a creditor may pursue any general partner for the full remaining debt, not only that partner’s “share.” Tasks can be specialised and ideas exchanged, which can improve decisions. Finance resembles sole trading but with more people who can contribute savings and supply collateral.
 
 General partnership: Partners jointly own and manage the business; each general partner has unlimited liability for the debts of the firm. Austrian label: Offene Gesellschaft (OG).
 
 Limited partnership: A partnership with at least one partner who is not involved in management and whose liability is limited to the amount contributed. Austrian label: Kommanditgesellschaft (KG). General (managing) partners still face unlimited liability.
 
-They form an OG. Leo contributes €18,000; Nina contributes €12,000. After salaries for work done, they share profits 55:45.
+General partner vs limited partner.
 
-The firm borrows €35,000 to fit out a small studio.
+General partner: Involved in management; Unlimited liability; Can bind the firm through management acts (within the structure); Typical in OG; also present in KG as managing partners.
 
-Business assets are later exhausted; €14,000 of bank debt remains.
+Limited partner: Not involved in management; Liability capped at contribution; Provides capital; stays out of day-to-day running; Typical role in a KG alongside general partners.
 
-The bank may claim the full €14,000 from Leo or from Nina (or both), not merely 55% from Leo and 45% from Nina.
-
-Alternative: they form a KG. An investor, Priya, contributes €20,000 as limited partner and takes no management role. Priya’s loss is normally capped at €20,000; Leo and Nina as general partners still face unlimited liability.
-
-Profit shares do not cap a general partner’s liability; only a true limited-partner status limits loss to the contribution.
+Worked: Leo, Nina, and a bank claim. They form an OG. Leo contributes €18,000; Nina contributes €12,000. After salaries for work done, they share profits 55:45. The firm borrows €35,000 to fit out a small studio. Business assets are later exhausted; €14,000 of bank debt remains. The bank may claim the full €14,000 from Leo or from Nina (or both), not merely 55% from Leo and 45% from Nina. Alternative: they form a KG. An investor, Priya, contributes €20,000 as limited partner and takes no management role. Priya’s loss is normally capped at €20,000; Leo and Nina as general partners still face unlimited liability. Profit shares do not cap a general partner’s liability; only a true limited-partner status limits loss to the contribution.
 
 Why must a limited partner stay out of management if they want liability limited to their contribution?
 
-Trap: treating the profit-sharing ratio as a liability cap. In a general partnership, any general partner can be pursued for the whole remaining debt.
+treating the profit-sharing ratio as a liability cap. In a general partnership, any general partner can be pursued for the whole remaining debt.
 
 Exam cue: “two or more owners, agreement, unlimited for general partners, OG/KG” → partnership. If a silent capital provider has no management role and capped loss → limited partner / KG pattern.
 
 Connect: partnerships remain unincorporated — like sole traders, they are not separate legal persons in the corporate sense you meet in 4.3. That is why unlimited liability for general partners matters so much.
 
-Partnerships need a clear agreement on ownership, profit/loss, and decisions.
-
-General partners: manage and face unlimited liability (OG).
-
-Limited partners: no management; liability limited to contribution (KG).
-
-More partners can pool capital and collateral, but general partners’ personal risk remains.
-
-List three topics a partnership agreement should settle.
-
-How does a KG protect a limited partner differently from an OG partner?
-
-Can a bank ignore profit shares when claiming from general partners?
-
 4.3 Corporations / companies
 
-SCENE The firm that can sign its own name: Three engineers want to build sensor modules. They need serious capital, want investors who do not all run the plant, and do not want every supplier claim to reach their private homes. They look at forming a company — a legal person that can own assets, hire staff, sue and be sued in its own name.
+The firm that can sign its own name. Three engineers want to build sensor modules. They need serious capital, want investors who do not all run the plant, and do not want every supplier claim to reach their private homes. They look at forming a company — a legal person that can own assets, hire staff, sue and be sued in its own name.
 
 Corporation (company): An incorporated business with separate legal personality. Ownership is divided into shares. Shareholders’ liability is typically limited to the capital they invested. Owners need not manage; managers need not own shares.
 
-As a legal person, the company can own land and property, hire people, close contracts, and litigate. Shareholders provide share capital; they are neither obliged nor automatically entitled to manage day to day. Shareholders elect a board of directors to make major decisions and represent owners. The top executive is often called CEO; other roles may include CFO, COO, CIO, or CMO. Setup is harder than for unincorporated forms, and capital rules may apply — but limited liability is the core protection for owners.
+Separate person, limited loss, directors in charge. As a legal person, the company can own land and property, hire people, close contracts, and litigate. Shareholders provide share capital; they are neither obliged nor automatically entitled to manage day to day. Shareholders elect a board of directors to make major decisions and represent owners. The top executive is often called CEO; other roles may include CFO, COO, CIO, or CMO. Setup is harder than for unincorporated forms, and capital rules may apply — but limited liability is the core protection for owners.
 
 Limited liability: Shareholders are usually liable only up to the money invested when buying shares. Creditors claim against the company, not automatically against shareholders’ private assets.
 
@@ -741,21 +547,11 @@ Names differ by country: public limited company (PLC) in many English-speaking s
 
 Large corporations can also issue bonds: packaged borrowing from many investor-creditors with agreed interest and repayment. Bond interest is often lower than a comparable bank loan for big issuers, which helps fund plants and infrastructure. Bondholders remain creditors, not owners. Investor metrics on listed shares include price path, market capitalisation (shares outstanding × market price), dividend yield, and the price–earnings (P/E) ratio.
 
-SensorCo issues 80,000 shares at €20 each at IPO → share capital raised = €1,600,000.
-
-Two years later the shares trade at €31. Market cap = 80,000 × €31 = €2,480,000.
-
-The €11 per-share rise goes to investors trading among themselves; SensorCo does not receive that secondary gain as new finance.
-
-Separately, SensorCo issues a €900,000 bond at 3.5% to expand a clean room. Bond investors are creditors.
-
-If SensorCo is structured as an Austrian GmbH instead of floating publicly, founders still enjoy limited liability once capital rules are met, but shares are not sold to the general public on an exchange.
-
-Issue raises company cash; later price rises do not. Bonds add debt, not ownership.
+Worked: issue price vs later market price. SensorCo issues 80,000 shares at €20 each at IPO → share capital raised = €1,600,000. Two years later the shares trade at €31. Market cap = 80,000 × €31 = €2,480,000. The €11 per-share rise goes to investors trading among themselves; SensorCo does not receive that secondary gain as new finance. Separately, SensorCo issues a €900,000 bond at 3.5% to expand a clean room. Bond investors are creditors. If SensorCo is structured as an Austrian GmbH instead of floating publicly, founders still enjoy limited liability once capital rules are met, but shares are not sold to the general public on an exchange. Issue raises company cash; later price rises do not. Bonds add debt, not ownership.
 
 A friend says: “My shares doubled on the exchange, so the company just raised twice the capital.” What went wrong in that reasoning?
 
-Trap: confusing shareholders with directors. Owning shares is not the same as managing. Trap: confusing secondary share-price gains with new corporate finance.
+confusing shareholders with directors. Owning shares is not the same as managing. Trap: confusing secondary share-price gains with new corporate finance.
 
 Exam cue: separate legal person + limited liability + shares + directors elected by shareholders → corporation. Austrian numbers: AG ≈ €70,000 minimum capital; GmbH ≈ €35,000. Bondholder ≠ shareholder.
 
@@ -771,123 +567,63 @@ AG ≈ €70k and GmbH ≈ €35k minimum capital in Austria; GmbH shares are no
 
 IPO cash is company finance; later market trades are not.
 
-Who sues whom if a customer contracts with a GmbH — the company or each shareholder personally?
-
-State the Austrian minimum capital notes for AG and GmbH.
-
-Why does a post-IPO price rise not fund a new machine?
-
 4.4 Overview comparison of ownership forms
 
-SCENE Three founders, one vehicle fleet: Jonas, Ela, and Rafi need about €95,000 of vans for a cold-chain delivery start-up. They can go sole trader (one of them), form an OG, or meet capital rules for a GmbH. The legal shell changes liability, continuity, and who must manage.
+Three founders, one vehicle fleet. Jonas, Ela, and Rafi need about €95,000 of vans for a cold-chain delivery start-up. They can go sole trader (one of them), form an OG, or meet capital rules for a GmbH. The legal shell changes liability, continuity, and who must manage.
 
 Unincorporated vs incorporated: Unincorporated businesses (sole trader, partnership) are not legal entities of their own. Incorporated businesses (corporations / limited companies) are legal persons. Among unincorporated firms, owners and managers are typically the same people; among incorporated firms, shareholders and directors need not be the same.
 
-Start with legal personality. If none: one owner → sole trader; two or more → partnership (general and possibly limited partners). If separate legal person: shareholders provide capital; directors run the firm; liability of owners is typically limited to invested capital. Austrian AG/GmbH capital thresholds sit on the incorporated branch.
+Reading the ownership map. Start with legal personality. If none: one owner → sole trader; two or more → partnership (general and possibly limited partners). If separate legal person: shareholders provide capital; directors run the firm; liability of owners is typically limited to invested capital. Austrian AG/GmbH capital thresholds sit on the incorporated branch.
 
-Sole trader path: Jonas alone owns the vans, faces unlimited liability, funds mainly from personal savings plus a bank loan; Ela and Rafi are employees or contractors, not co-owners.
-
-OG path: all three manage, pool capital toward the €95,000 fleet, share unlimited liability; a partnership agreement sets profit splits and decision rules.
-
-GmbH path: they meet Austrian minimum capital rules, take shares, enjoy limited liability to invested capital, and appoint managing directors (who may or may not be shareholders).
-
-Trade-off: GmbH limits personal asset risk and clarifies continuity of the legal person; it costs more effort and capital than an OG or sole trader.
-
-Same vans, different answers to “who is liable?” and “who must manage?”
+Worked: cold-chain fleet options. Sole trader path: Jonas alone owns the vans, faces unlimited liability, funds mainly from personal savings plus a bank loan; Ela and Rafi are employees or contractors, not co-owners. OG path: all three manage, pool capital toward the €95,000 fleet, share unlimited liability; a partnership agreement sets profit splits and decision rules. GmbH path: they meet Austrian minimum capital rules, take shares, enjoy limited liability to invested capital, and appoint managing directors (who may or may not be shareholders). Trade-off: GmbH limits personal asset risk and clarifies continuity of the legal person; it costs more effort and capital than an OG or sole trader. Same vans, different answers to “who is liable?” and “who must manage?”
 
 Which single row of the comparison table would matter most if one founder’s family home is their only major private asset?
 
-Trap: assuming “more owners” automatically means limited liability. An OG with three partners still exposes general partners to unlimited liability.
+assuming “more owners” automatically means limited liability. An OG with three partners still exposes general partners to unlimited liability.
 
 Exam cue: classify by legal personality first, then by number of owners, then by liability. Use the table mentally — do not invent hybrid rules (e.g. “sole trader with limited liability”).
 
-Unincorporated: sole trader or partnership; owners usually manage; unlimited liability for sole traders and general partners.
-
-Incorporated: separate legal person; shareholders vs directors; limited liability.
-
-Austrian capital notes: AG ≈ €70k; GmbH ≈ €35k.
-
-Choose the form knowing liability and continuity are not cosmetics — they are the product.
-
-Place OG, GmbH, and sole trader on the unincorporated/incorporated split.
-
-Who manages a listed AG day to day — every shareholder, or directors?
-
-Why might three founders still reject an OG even if setup is cheaper than a GmbH?
-
 4.5 Sources of finance
 
-SCENE Money has a passport: A boutique hotel renovation needs cash for a roof, seasonal linen stock, and a slow winter. Some euros will come from profits kept in the business; some from a new investor; some from the bank and suppliers. Each euro should be labelled: equity or debt? Internal or external? Short-term or long-term?
+Money has a passport. A boutique hotel renovation needs cash for a roof, seasonal linen stock, and a slow winter. Some euros will come from profits kept in the business; some from a new investor; some from the bank and suppliers. Each euro should be labelled: equity or debt? Internal or external? Short-term or long-term?
 
 Equity finance: Funds that belong to the owners of the business — for example share capital and retained earnings. Equity may be internal (retained earnings) or external (investor funds / newly issued share capital).
 
 Debt finance: Borrowed funds that create liabilities owed to creditors: bank overdrafts, trade credit, bank loans, bonds, and similar instruments. In the standard course overview, debt finance is external.
 
-Retained earnings: profit kept in the firm rather than distributed — internal equity, no interest charge. Share capital / investor funds: outside owners inject ownership capital — external equity; usually permanent, not repaid like a loan. Bank overdraft: draw beyond the account balance up to a limit; interest only when overdrawn; flexible short-term debt. Trade credit: suppliers allow delayed payment for purchases; short-term debt. Bank loans: fixed sum, agreed term, scheduled repayment; short- or long-term. Bonds: large-scale borrowing from many investors with contractual interest; long-term debt for bigger corporations. Owner loans: still debt if structured as lending that must be repaid — not the same as share capital. Leasing can finance use of a long-lived asset with regular payments instead of an outright purchase loan (useful when matching asset life). Venture-style investor equity fits the “funds provided by investors” external-equity cell when outsiders buy ownership stakes to fund growth.
+How each common instrument works. Retained earnings: profit kept in the firm rather than distributed — internal equity, no interest charge. Share capital / investor funds: outside owners inject ownership capital — external equity; usually permanent, not repaid like a loan. Bank overdraft: draw beyond the account balance up to a limit; interest only when overdrawn; flexible short-term debt. Trade credit: suppliers allow delayed payment for purchases; short-term debt. Bank loans: fixed sum, agreed term, scheduled repayment; short- or long-term. Bonds: large-scale borrowing from many investors with contractual interest; long-term debt for bigger corporations. Owner loans: still debt if structured as lending that must be repaid — not the same as share capital. Leasing can finance use of a long-lived asset with regular payments instead of an outright purchase loan (useful when matching asset life). Venture-style investor equity fits the “funds provided by investors” external-equity cell when outsiders buy ownership stakes to fund growth.
 
 The balance sheet reveals which sources a business has used (see Chapter 6, Accounting). Large businesses are obliged to draw up such a balance sheet. Legal structure shapes the menu: sole traders and partnerships rely more on owner funds, overdrafts, trade credit, and loans; corporations add share issues and, for larger firms, bonds.
 
-Roof and bathrooms (multi-year assets): €40,000 retained earnings (internal equity) + €25,000 new share/investor capital (external equity) + €45,000 five-year bank loan (long-term debt).
-
-Winter linen and cleaning stock: €6,000 drawn on overdraft as needed (short-term debt) + €9,000 of supplies on 45-day trade credit (short-term debt).
-
-Optional: lease a laundry machine for seven years instead of buying with a short overdraft — better duration match.
-
-Sale of an unused catering trolley for €1,800 adds internal financing without interest.
-
-Labels: equity vs debt; internal vs external; short vs long — each line should have a clean passport.
-
-€40k + €25k equity and several debt lines can coexist; classification depends on ownership claim versus creditor claim, not on whether money feels “serious.”
+Worked: boutique hotel funding mix. Roof and bathrooms (multi-year assets): €40,000 retained earnings (internal equity) + €25,000 new share/investor capital (external equity) + €45,000 five-year bank loan (long-term debt). Winter linen and cleaning stock: €6,000 drawn on overdraft as needed (short-term debt) + €9,000 of supplies on 45-day trade credit (short-term debt). Optional: lease a laundry machine for seven years instead of buying with a short overdraft — better duration match. Sale of an unused catering trolley for €1,800 adds internal financing without interest. Labels: equity vs debt; internal vs external; short vs long — each line should have a clean passport. €40k + €25k equity and several debt lines can coexist; classification depends on ownership claim versus creditor claim, not on whether money feels “serious.”
 
 Is trade credit “free equity” because no bank interest appears on day one? How should you classify it?
 
-Trap: calling share capital “internal” because shares sit on the company’s books. Registration is not the test — outside subscription makes share capital external equity. Trap: treating trade credit as equity because suppliers are “partners” in conversation only.
+calling share capital “internal” because shares sit on the company’s books. Registration is not the test — outside subscription makes share capital external equity. Trap: treating trade credit as equity because suppliers are “partners” in conversation only.
 
 Exam cue: equity = owners’ funds (internal retention or external shares/investors); debt = liabilities to creditors (always external in the course table). Overdraft and trade credit → short-term debt. Bonds and multi-year bank loans → long-term debt.
 
 Connect: Chapter 6 will show these sources on the balance sheet as equity and liabilities funding the assets side.
 
-Split finance into equity vs debt, then internal vs external.
-
-Retained earnings = internal equity; share capital and investor funds = external equity.
-
-Debt is external: overdraft, trade credit, loans, bonds (and similar).
-
-Instrument choice should match duration: short tools for short needs; long capital for long assets.
-
-Classify: retained earnings; new share issue; supplier 60-day terms; five-year bond.
-
-Why is an owner loan usually debt rather than equity?
-
-Which figure/table summarises the course menu of sources?
-
 4.6 Choosing the source of finance
 
-SCENE Cheap is not always right: A metal workshop can fund a €140,000 laser cutter (twelve-year life) and €18,000 of sheet metal for next month’s jobs. The bank waves a revolving overdraft with a low headline rate this week. An equity partner offers capital that never needs monthly instalments but wants voting influence. Which criteria decide?
+Cheap is not always right. A metal workshop can fund a €140,000 laser cutter (twelve-year life) and €18,000 of sheet metal for next month’s jobs. The bank waves a revolving overdraft with a low headline rate this week. An equity partner offers capital that never needs monthly instalments but wants voting influence. Which criteria decide?
 
 Finance choice criteria: When several sources are available, selection usually weighs costs, the intended use (purpose) of the funds, and the firm’s current financial situation — especially how much loan capital it already carries. Risk, control, and flexibility complete the practical checklist.
 
-Cost: interest on loans and credit; administration costs of issuing shares or bonds. Purpose / matching: capital expenditure on assets used for years needs long-term finance; revenue expenditure such as materials can use short-term sources. Risk: debt must be repaid — too much raises insolvency risk. Control: new shareholders or partners may gain influence; pure debt usually leaves ownership percentages unchanged but adds creditor pressure. Flexibility: overdrafts can be drawn and repaid within a limit; committed long loans and covenants are less flexible. Gearing (leverage): a high proportion of loan capital relative to equity (“high geared”) can make lenders reluctant, raise interest, or demand collateral — pushing the firm toward retained earnings or new equity investors instead of yet another loan.
+How the criteria bite. Cost: interest on loans and credit; administration costs of issuing shares or bonds. Purpose / matching: capital expenditure on assets used for years needs long-term finance; revenue expenditure such as materials can use short-term sources. Risk: debt must be repaid — too much raises insolvency risk. Control: new shareholders or partners may gain influence; pure debt usually leaves ownership percentages unchanged but adds creditor pressure. Flexibility: overdrafts can be drawn and repaid within a limit; committed long loans and covenants are less flexible. Gearing (leverage): a high proportion of loan capital relative to equity (“high geared”) can make lenders reluctant, raise interest, or demand collateral — pushing the firm toward retained earnings or new equity investors instead of yet another loan.
 
 High gearing (high leverage): A high proportion of loan capital relative to equity. It raises insolvency risk and may make further credit harder or more expensive to obtain.
 
 High gearing ≈ large loan capital compared with equity capital
 
-Laser cutter (€140,000, ~12-year life): funding via revolving overdraft mismatches duration — the bank could demand repayment long before the machine pays for itself. Better: long-term loan, lease, or equity/retained funds.
+Checklist when choosing finance. Criterion: Cost — Question to ask: What interest or issue/admin costs apply? — Typical implication: Compare loan interest with share/bond issuance costs Criterion: Purpose — Question to ask: Capital expenditure or revenue expenditure? — Typical implication: Long assets → long finance; materials → short finance Criterion: Risk — Question to ask: Must this money be repaid on a fixed schedule? — Typical implication: Heavy debt raises insolvency risk if cash dips Criterion: Control — Question to ask: Will new owners gain votes or vetoes? — Typical implication: Equity can dilute influence; debt usually does not Criterion: Flexibility — Question to ask: Can we draw, repay, or refinance easily? — Typical implication: Overdrafts are flexible; locked loans less so Criterion: Gearing — Question to ask: How high is loan capital already? — Typical implication: High gearing → prefer retention or investors over more debt
 
-Sheet metal (€18,000 for next month): trade credit or a short-term facility matches the short cycle.
-
-Cost check: a bond or share issue has admin costs; a loan has interest — compare total cost, not only the poster rate.
-
-Control check: an equity partner funding the cutter may want board influence; a loan leaves share percentages intact but adds repayment risk.
-
-Gearing check: if loans already ≈ 75% of capital employed, lenders may refuse or charge more / demand collateral. Retained profit or an equity investor may be the feasible path.
-
-Match purpose and duration first; then price the cost, risk, control, flexibility, and gearing consequences.
+Worked: laser cutter vs sheet metal. Laser cutter (€140,000, ~12-year life): funding via revolving overdraft mismatches duration — the bank could demand repayment long before the machine pays for itself. Better: long-term loan, lease, or equity/retained funds. Sheet metal (€18,000 for next month): trade credit or a short-term facility matches the short cycle. Cost check: a bond or share issue has admin costs; a loan has interest — compare total cost, not only the poster rate. Control check: an equity partner funding the cutter may want board influence; a loan leaves share percentages intact but adds repayment risk. Gearing check: if loans already ≈ 75% of capital employed, lenders may refuse or charge more / demand collateral. Retained profit or an equity investor may be the feasible path. Match purpose and duration first; then price the cost, risk, control, flexibility, and gearing consequences.
 
 Why might a firm reject the lowest advertised interest rate this month?
 
-Trap: choosing finance by interest rate alone. Trap: funding a long-life machine with an overdraft. Trap: piling on debt when already high geared because “growth needs money.”
+choosing finance by interest rate alone. Trap: funding a long-life machine with an overdraft. Trap: piling on debt when already high geared because “growth needs money.”
 
 Exam cue: stems that mention capital vs revenue expenditure test matching. Stems that mention reluctance of lenders, collateral, or insolvency risk test high gearing. Stems that mention voting or ownership percentages test the control trade-off of equity.
 
@@ -900,12 +636,6 @@ Match long assets to long finance; short needs to short finance.
 High gearing raises repayment risk and can block or price up new debt.
 
 When geared high, prefer internal funds or equity investors over another heavy loan.
-
-Give one capital-expenditure and one revenue-expenditure example and a suitable finance term for each.
-
-What does “high geared” mean for further borrowing?
-
-Name a control cost of raising external equity.
 
 Sole traders are owner-managed, easy to set up, face unlimited liability, and have fragile continuity.
 
@@ -940,13 +670,13 @@ Build a coherent marketing mix (product, price, place, promotion) and place offe
 
 5.1 Product: goods, services, lines, brands and differentiation
 
-SCENE Same object, different product story: River & Reed Workshop sells modular oak desk lamps. A co-working landlord buys twenty lamps for shared desks and books a lighting consultation so staff know how to adjust glare. A student buys one lamp for a rented room and never needs the consultation. Physically the lamp looks identical. In marketing, the exchanges are not the same product situation: one sits in a business-to-business relationship with an attached service; the other is a business-to-consumer purchase of a good alone.
+Same object, different product story. River & Reed Workshop sells modular oak desk lamps. A co-working landlord buys twenty lamps for shared desks and books a lighting consultation so staff know how to adjust glare. A student buys one lamp for a rented room and never needs the consultation. Physically the lamp looks identical. In marketing, the exchanges are not the same product situation: one sits in a business-to-business relationship with an attached service; the other is a business-to-consumer purchase of a good alone.
 
 Product (marketing): Every good and/or service that can be exchanged to fulfil customers’ wishes and needs. Tangible items and intangible support both count when they can be offered in exchange.
 
 Customers may be other businesses or private households. Goods and services sold from one business to another are producer products (business-to-business, B2B). The same categories sold to consumers are consumer products (business-to-consumer, B2C). Buyer and user need not be the same person: a parent may pay while a teenager uses the product; a facilities manager may purchase while employees use the lamps daily.
 
-Value is not only the core function (light on a desk). Extra features (dimmers, USB ports), image (craft reputation), and the joy or reassurance of use all shape why someone chooses one offering over another. Marketing designs and communicates that whole package, not only the physical object.
+Where customer value comes from. Value is not only the core function (light on a desk). Extra features (dimmers, USB ports), image (craft reputation), and the joy or reassurance of use all shape why someone chooses one offering over another. Marketing designs and communicates that whole package, not only the physical object.
 
 Product line: A set of closely related products — for example several desk-lamp models that differ in size, wood finish or power options but belong to the same family.
 
@@ -966,111 +696,67 @@ Brand: A name, word(s), symbol and/or sign that distinguishes a product or busin
 
 Unique selling proposition (USP): A distinctive benefit — real or clearly perceived — that sets an offering apart from similar products. Differentiation may rest on a product characteristic or on how the offer is promoted and understood.
 
-A brand is the identity vehicle; a USP is the reason to prefer that identity. Without a believable difference, branding becomes empty decoration. Without a recognisable brand, a genuine difference is harder to remember and harder to charge for. Product differentiation aims to make the offer “special”, “unique”, or “better for this customer” than close substitutes.
+How branding and USP reinforce each other. A brand is the identity vehicle; a USP is the reason to prefer that identity. Without a believable difference, branding becomes empty decoration. Without a recognisable brand, a genuine difference is harder to remember and harder to charge for. Product differentiation aims to make the offer “special”, “unique”, or “better for this customer” than close substitutes.
 
-Oak desk lamp sold to a household → consumer product (B2C good).
+Goods versus services in the same firm.
 
-Same lamp sold to a co-working firm → producer product (B2B good).
+Goods: Physical lamp units that can be stored and shipped; Ownership typically transfers to the buyer; Quality can be inspected before use.
 
-On-site lighting consultation → service product (can be B2B or B2C).
+Services: Lighting consultation and installation advice; Produced and consumed largely together; Quality often judged during or after delivery.
 
-Three heights of the same oak lamp → one product line (depth).
-
-Adding a wall-sconce line → mix extension (greater mix width).
-
-USP claim: “tools-free brightness change in under ten seconds” → differentiation on a usable feature, not only on slogan tone.
-
-Marketing treats all exchangeable goods and services as products; lines and mix describe portfolio shape; brand and USP explain preference.
+Classify River & Reed’s offers. Oak desk lamp sold to a household → consumer product (B2C good). Same lamp sold to a co-working firm → producer product (B2B good). On-site lighting consultation → service product (can be B2B or B2C). Three heights of the same oak lamp → one product line (depth). Adding a wall-sconce line → mix extension (greater mix width). USP claim: “tools-free brightness change in under ten seconds” → differentiation on a usable feature, not only on slogan tone. Marketing treats all exchangeable goods and services as products; lines and mix describe portfolio shape; brand and USP explain preference.
 
 Name one good and one service from a café you know. Who is the buyer and who is the user in a school catering contract for that café?
 
-Trap: treating “product” as only a physical object. In marketing exams, repair contracts, tutoring hours and software licences are products if they are exchanged to meet needs.
+treating “product” as only a physical object. In marketing exams, repair contracts, tutoring hours and software licences are products if they are exchanged to meet needs.
 
 Exam cue: if a stem switches the same device from office use to home use, the classification flips from producer (B2B) to consumer (B2C) even though the item is unchanged. Also watch for USP versus mere advertising noise — USP requires a distinctive benefit or perception.
 
-Products = exchangeable goods and/or services that fulfil wishes and needs.
-
-B2B versus B2C depends on the customer type, not on the factory process.
-
-Lines and mix describe how wide and deep the portfolio is.
-
-Brands identify; USPs differentiate; together they support preference and loyalty.
-
-Can a pure service be a product in marketing terms?
-
-What is the difference between a line extension and a mix extension?
-
-Why might two firms sell similar goods yet only one have a workable USP?
-
 5.2 Marketing objectives
 
-SCENE Five targets on one whiteboard: Before PeakMeal, a meal-prep start-up, spends on ads, the founders write five annual targets: raise average satisfaction scores after delivery, lift brand awareness among night-shift hospital staff, grow unit sales by 15%, raise absolute market share in the city meal-prep niche from 6% to 9%, and keep contribution high enough for a thin operating profit. The list looks mixed — soft feelings and hard euros — but each target shapes different marketing choices.
+Five targets on one whiteboard. Before PeakMeal, a meal-prep start-up, spends on ads, the founders write five annual targets: raise average satisfaction scores after delivery, lift brand awareness among night-shift hospital staff, grow unit sales by 15%, raise absolute market share in the city meal-prep niche from 6% to 9%, and keep contribution high enough for a thin operating profit. The list looks mixed — soft feelings and hard euros — but each target shapes different marketing choices.
 
 Marketing objectives: Specific aims that guide market analysis and marketing action. Typical aims include customer satisfaction and loyalty, awareness, a unique selling proposition, sales volume or value, market share, and profitability. Objectives often reinforce each other rather than standing alone.
 
-Dissatisfied customers rarely buy again, so satisfaction feeds loyalty and future sales. Awareness matters because unknown offers are not chosen. A USP reduces pure price comparison and supports preference. Market share shows relative competitive position. Sales generate the revenue needed to cover costs. Profitability reimburses owners and funds reinvestment — higher sales help, but only within cost and price limits.
+How the main objectives link. Dissatisfied customers rarely buy again, so satisfaction feeds loyalty and future sales. Awareness matters because unknown offers are not chosen. A USP reduces pure price comparison and supports preference. Market share shows relative competitive position. Sales generate the revenue needed to cover costs. Profitability reimburses owners and funds reinvestment — higher sales help, but only within cost and price limits.
 
-Satisfaction: shorten delivery windows and fix cold-meal complaints within 24 hours.
+Common marketing objectives and what they emphasise. Objective: Customer satisfaction — Core question: Did the offer meet or beat expectations? — Why it matters: Unsatisfied buyers leave; satisfied buyers often return Objective: Customer loyalty — Core question: Will they choose us again and recommend us? — Why it matters: Repeat demand lowers acquisition pressure Objective: Awareness — Core question: Do target customers know we exist and what we offer? — Why it matters: Choice requires recognition in the relevant set Objective: USP / differentiation — Core question: Why us rather than a close substitute? — Why it matters: Supports preference beyond lowest price Objective: Sales — Core question: How many units / how much revenue? — Why it matters: Cash inflow to cover costs and grow Objective: Market share — Core question: What fraction of the defined market is ours? — Why it matters: Signals relative competitive strength Objective: Profitability — Core question: Do revenues cover costs with a surplus? — Why it matters: Rewards capital and funds reinvestment
 
-Awareness: partner with two hospital noticeboards and a night-shift podcast, not random city-wide billboards.
-
-USP: “balanced meals that survive a 12-hour shift without reheating” — a concrete difference.
-
-Sales and share: track units in the defined city meal-prep market, not all food retail.
-
-Profitability: avoid deep discounts that raise share but destroy contribution.
-
-Objectives only work when the market is defined and tools (product, price, place, promotion) are aligned with those aims.
+Translate PeakMeal’s whiteboard into actions. Satisfaction: shorten delivery windows and fix cold-meal complaints within 24 hours. Awareness: partner with two hospital noticeboards and a night-shift podcast, not random city-wide billboards. USP: “balanced meals that survive a 12-hour shift without reheating” — a concrete difference. Sales and share: track units in the defined city meal-prep market, not all food retail. Profitability: avoid deep discounts that raise share but destroy contribution. Objectives only work when the market is defined and tools (product, price, place, promotion) are aligned with those aims.
 
 If PeakMeal doubles awareness but satisfaction collapses, which objectives are likely to rise short-term and which are likely to fall next quarter?
 
-Trap: treating market share as automatically identical to profit. Share can rise through unsustainable discounts. Trap: treating USP as a slogan with no product or perception difference behind it.
+treating market share as automatically identical to profit. Share can rise through unsustainable discounts. Trap: treating USP as a slogan with no product or perception difference behind it.
 
-Exam recognition: lists of objectives often include satisfaction/loyalty, USP/differentiation, sales, market share and profitability. Awareness may appear as a communication goal feeding those outcomes. Interrelatedness is a frequent true/false theme — satisfaction supports loyalty and repeat sales.
+lists of objectives often include satisfaction/loyalty, USP/differentiation, sales, market share and profitability. Awareness may appear as a communication goal feeding those outcomes. Interrelatedness is a frequent true/false theme — satisfaction supports loyalty and repeat sales.
 
 Market share objectives need clear market measurement (section 5.5). USP and branding connect back to product differentiation (section 5.1) and forward into the marketing mix (section 5.7).
 
-Marketing needs explicit objectives before tactics.
-
-Satisfaction and loyalty protect future demand.
-
-Awareness, USP, sales, share and profit pull different levers but should stay consistent.
-
-Share without contribution is a hollow win.
-
-Why is customer satisfaction interrelated with other marketing objectives?
-
-Give one reason a firm might accept lower short-term profit while chasing awareness.
-
-What does a USP objective try to achieve against rivals?
-
 5.3 Product orientation versus market orientation
 
-SCENE Two clockmakers, two starting points: Atlas Gears spends eighteen months perfecting a mechanical desk clock with a sapphire face, then asks a salesperson how to push it into shops. North Harbor Time first interviews ferry crews and harbour offices about what fails in salty air, then designs a sealed quartz clock with oversized numerals for glove use. Both want reliable sales and a fair margin. Their starting questions differ: “How do we sell what we built?” versus “What should we build because customers need it?”
+Two clockmakers, two starting points. Atlas Gears spends eighteen months perfecting a mechanical desk clock with a sapphire face, then asks a salesperson how to push it into shops. North Harbor Time first interviews ferry crews and harbour offices about what fails in salty air, then designs a sealed quartz clock with oversized numerals for glove use. Both want reliable sales and a fair margin. Their starting questions differ: “How do we sell what we built?” versus “What should we build because customers need it?”
 
 Product orientation: An approach that focuses first on production and product features, then seeks to sell what has been made. Success is expected mainly from the quality and specifications of the product itself.
 
 Market orientation: An approach that starts from customers’ needs and wants, then designs and adapts offerings to match them. Success depends on reading and responding to the market.
 
-Both orientations may pursue identical marketing objectives (sales, share, satisfaction). The product-oriented firm leans on feature quality to win. The market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist — but neglecting customer expectations is risky in either case.
+Orientation starting points.
+
+Product orientation: Focus on production and features first; Then arrange sales and advertising; Belief: a strong product largely sells itself.
+
+Market orientation: Focus on needs and wants first; Then produce what customers require; Advantage: earlier response to market change.
+
+Same objectives, different path. Both orientations may pursue identical marketing objectives (sales, share, satisfaction). The product-oriented firm leans on feature quality to win. The market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist — but neglecting customer expectations is risky in either case.
 
 Customer relationship management (CRM): Practices that aim at a long-term relationship with customers by keeping contact data and purchase history to send relevant information, offers and reminders — so customers return. Sensitive handling of personal data is indispensable.
 
 Loyalty cards and personal accounts often mean customers willingly trade anonymity for discounts and tailored offers. Firms then observe buying behaviour and personalise communication. That power helps market-oriented selling, but it also raises responsibility for privacy and consent.
 
-Interview harbour and outdoor workers about fog, gloves and vibration.
-
-Keep the mechanical line for collectors (product-strength niche).
-
-Launch a sealed, high-contrast model for working docks (market-led line).
-
-Use optional CRM emails only with clear opt-in for service reminders.
-
-Orientation is a starting logic, not a ban on engineering excellence. Market orientation still needs real product competence.
+Reorient Atlas Gears without abandoning craft. Interview harbour and outdoor workers about fog, gloves and vibration. Keep the mechanical line for collectors (product-strength niche). Launch a sealed, high-contrast model for working docks (market-led line). Use optional CRM emails only with clear opt-in for service reminders. Orientation is a starting logic, not a ban on engineering excellence. Market orientation still needs real product competence.
 
 Would a pharmaceutical firm developing a new active ingredient start closer to product orientation or market orientation at the research stage? What must it still not neglect before launch?
 
-Trap: claiming that identical marketing objectives prove identical orientation. Objectives can match while the sequence (build-then-sell versus research-then-build) differs. Trap: treating CRM as “free data” with no sensitivity duties.
+claiming that identical marketing objectives prove identical orientation. Objectives can match while the sequence (build-then-sell versus research-then-build) differs. Trap: treating CRM as “free data” with no sensitivity duties.
 
 Exam cue: product orientation = features first; market orientation = needs first. CRM questions often test why personal data use matters and that loyalty schemes collect behaviour for later contact.
 
@@ -1082,19 +768,13 @@ Neither approach should ignore the market entirely.
 
 CRM extends relationships but demands careful data use.
 
-State one advantage of market orientation over product orientation.
-
-Can two firms share the same sales target yet differ in orientation?
-
-Why do customers sometimes accept loyalty cards despite privacy costs?
-
 5.4 Responsibility and sustainability in marketing
 
-SCENE The jacket worn three times: A fashion pop-up pushes “drop” launches every fortnight. Mira buys a neon windbreaker for a festival, wears it three times, and bins it when the zipper fails. The brand’s marketing created urgency she did not plan for. Across town, Mend & Wear runs a repair desk, sells durable jackets with spare zippers, and rents formal coats for weddings. Same clothing market; different stance on how far marketing should push consumption.
+The jacket worn three times. A fashion pop-up pushes “drop” launches every fortnight. Mira buys a neon windbreaker for a festival, wears it three times, and bins it when the zipper fails. The brand’s marketing created urgency she did not plan for. Across town, Mend & Wear runs a repair desk, sells durable jackets with spare zippers, and rents formal coats for weddings. Same clothing market; different stance on how far marketing should push consumption.
 
 Responsible and sustainable marketing: Practice that recognises marketing’s power to shape wants, not only to respond to them, and that seeks production and consumption patterns with lower waste, longer use, and fairer treatment of customers and society.
 
-Continuous novelty and persuasive promotion can create desires people would not otherwise have had, encourage spending beyond intention or means, and speed up obsolescence of still-usable goods. Critics focus on these effects; defenders emphasise information and matching real needs. Either way, both businesses and consumers influence how sustainable the outcome is.
+How marketing can inflate want. Continuous novelty and persuasive promotion can create desires people would not otherwise have had, encourage spending beyond intention or means, and speed up obsolescence of still-usable goods. Critics focus on these effects; defenders emphasise information and matching real needs. Either way, both businesses and consumers influence how sustainable the outcome is.
 
 Firms: design for durability, repairability and honest claims; avoid deceptive urgency.
 
@@ -1104,41 +784,19 @@ Shared aim: reduce wasteful churn without denying genuine needs.
 
 Repair-and-reuse models keep devices and clothes in use longer. Clothing rental for rare events can replace one-off cheap purchases. Swap and second-hand circuits also shift status away from constant newness. Marketing can promote these patterns instead of only “upgrade now”.
 
-Replace “new drop every Friday” with “repair week” and free zipper clinics.
-
-Advertise rental for one-off events instead of disposable formalwear.
-
-Publish battery-health or fabric-care facts rather than vague “eco” labels.
-
-Train staff to suggest mend-first when a product still has life.
-
-Responsibility shows up in product design, claims, pricing of repair versus replacement, and promotion tone — not in a slogan alone.
+Rewrite Mend & Wear’s campaign season. Replace “new drop every Friday” with “repair week” and free zipper clinics. Advertise rental for one-off events instead of disposable formalwear. Publish battery-health or fabric-care facts rather than vague “eco” labels. Train staff to suggest mend-first when a product still has life. Responsibility shows up in product design, claims, pricing of repair versus replacement, and promotion tone — not in a slogan alone.
 
 Is a “buy one, get one free” deal for single-use plastic cutlery compatible with a sustainability claim? What would need to change for the claim to be credible?
 
-Trap: equating any green colour in an advert with sustainable marketing. Without product and process substance, the communication is empty. Trap: blaming only firms or only consumers — both sides shape outcomes.
+equating any green colour in an advert with sustainable marketing. Without product and process substance, the communication is empty. Trap: blaming only firms or only consumers — both sides shape outcomes.
 
 Exam themes: marketing may create wants; overconsumption risks; repair, reuse and rental as more sustainable patterns; shared responsibility of businesses and consumers.
 
 Sustainability choices feed the product P (durable design), promotion ethics, and sometimes pricing of repair services. They also interact with market orientation: listening to customers who already demand lower waste.
 
-Marketing can respond to needs and also create new wants.
-
-Overconsumption has private and social costs.
-
-Repair, reuse and rental are practical sustainability routes.
-
-Credible claims need substance behind the message.
-
-Give one criticism of aggressive product innovation cycles.
-
-How can a clothing firm market responsibility without stopping all sales?
-
-Why must consumers share responsibility for sustainable outcomes?
-
 5.5 Market research
 
-SCENE Guesswork is expensive: GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will. Another insists on evidence: street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with structured information about customers, rivals and the industry.
+Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will. Another insists on evidence: street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with structured information about customers, rivals and the industry.
 
 Market research: The collection and interpretation of information about existing and prospective customers, potential buyers, competition and the industry, used to support marketing decisions.
 
@@ -1146,7 +804,15 @@ Primary market research: Original data gathered for the firm’s own questions �
 
 Secondary market research: Use of existing data collected by others — government statistics, trade association reports, published studies. Usually cheaper and faster, but more general and not built for the firm’s exact problem.
 
-Primary versus secondary answers “who collected it and for what?” Qualitative versus quantitative answers “what kind of insight?” A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary).
+Qualitative versus quantitative research.
+
+Qualitative: Explores motives, language and experiences in depth; Methods: interviews, focus groups, open observation notes; Smaller samples; rich meaning, limited statistical generalisation.
+
+Quantitative: Measures amounts, frequencies and relationships with numbers; Methods: structured questionnaires, counts, experiments with metrics; Larger samples; stronger for estimating shares and averages.
+
+How the two pairs work together. Primary versus secondary answers “who collected it and for what?” Qualitative versus quantitative answers “what kind of insight?” A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary).
+
+Primary and secondary research at a glance. Source type: Primary — Strength: Tailored to the firm’s exact questions — Limitation: Cost, time, design skill needed — Typical use: New product concept tests; satisfaction drivers Source type: Secondary — Strength: Faster and often cheaper or free — Limitation: Generic; may be outdated or mismatched — Typical use: Market sizing; industry growth context
 
 Customer analysis often asks who buys, what they do with the product, where they buy, when they buy, and why they choose one option over another. Buyer and user may differ; influencers (for example children) may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year.
 
@@ -1160,43 +826,17 @@ Relative market share = own market share / largest competitor’s market share
 
 Market potential can exceed current market volume if unrealised customers remain. A firm’s sales potential can exceed current sales if it can win rivals’ customers or claim part of that unrealised potential. Absolute share informs managers and investors; relative share adds competitive context the absolute figure alone hides.
 
-Defined market: city e-bike accessory subscriptions this year = €800,000.
-
-GlassHarbor subscription sales = €96,000.
-
-Absolute share = 96,000 / 800,000 = 0.12 = 12%.
-
-Largest rival holds 30% absolute share.
-
-Relative share = 12% / 30% = 0.4.
-
-If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide.
-
-GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit.
+Share maths for GlassHarbor’s battery-swap plan. Defined market: city e-bike accessory subscriptions this year = €800,000. GlassHarbor subscription sales = €96,000. Absolute share = 96,000 / 800,000 = 0.12 = 12%. Largest rival holds 30% absolute share. Relative share = 12% / 30% = 0.4. If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide. GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit.
 
 Why might a free government mobility report be useful yet still insufficient before launching the €45 battery-swap plan?
 
-Trap: mixing value share with unit share without saying so. Trap: calling any questionnaire “secondary” research. Trap: reporting absolute share without defining the market boundaries.
+mixing value share with unit share without saying so. Trap: calling any questionnaire “secondary” research. Trap: reporting absolute share without defining the market boundaries.
 
-Exam recognition: primary = own new data; secondary = existing data. Qualitative = depth/motives; quantitative = measurable magnitudes. Be ready to compute absolute and relative market share and to interpret market volume versus potential.
-
-Research informs customers, competitors and industry context.
-
-Primary is tailored but costly; secondary is cheaper but general.
-
-Qualitative explains; quantitative measures.
-
-Share figures are only as good as the market definition behind them.
-
-Give one primary and one secondary source for a bakery considering a new gluten-free line.
-
-When is qualitative research especially valuable?
-
-If own sales are €50,000 and market volume is €500,000, what is absolute share?
+primary = own new data; secondary = existing data. Qualitative = depth/motives; quantitative = measurable magnitudes. Be ready to compute absolute and relative market share and to interpret market volume versus potential.
 
 5.6 Segmentation and targeting strategies
 
-SCENE Not every rider wants the same bike: GlassHarbor’s research shows four different “ideal bikes” living in one city: students wanting cheap short hops, nurses wanting reliable night commuting, tourists wanting day rentals near the harbour, and cargo users needing stable racks. Treating all four as one average customer would produce a bike that delights nobody. Segmentation starts by grouping similar customers; targeting chooses whom to serve; positioning shapes what those groups believe the offer stands for.
+Not every rider wants the same bike. GlassHarbor’s research shows four different “ideal bikes” living in one city: students wanting cheap short hops, nurses wanting reliable night commuting, tourists wanting day rentals near the harbour, and cargo users needing stable racks. Treating all four as one average customer would produce a bike that delights nobody. Segmentation starts by grouping similar customers; targeting chooses whom to serve; positioning shapes what those groups believe the offer stands for.
 
 Market segmentation: Dividing a market into relatively homogeneous subgroups of customers who share relevant characteristics for marketing decisions.
 
@@ -1204,31 +844,25 @@ Targeting: Evaluating segment attractiveness and selecting one or more segments 
 
 Positioning: Creating a clear image or identity for the product in the minds of the chosen target market(s) so the offer fits their demands.
 
-Segmentation is useful when groups are measurable (size, purchasing power), profitable, accessible through communication and distribution channels, and durable enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources.
+When a segment is worth forming. Segmentation is useful when groups are measurable (size, purchasing power), profitable, accessible through communication and distribution channels, and durable enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources.
 
 Target market: A group of people or businesses towards whom a firm markets goods, services or ideas with a strategy designed to satisfy their specific needs and preferences.
 
 Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting.
 
-Geographic: one coastal city and inner suburbs.
+Three targeting strategies.
 
-Demographic: employed adults including shift workers.
+Undifferentiated (mass): One offer for the whole market; Same promotion style for almost all; Economies of scale possible; less flexible; Common for widely used staples (soap, basic pens).
 
-Psychographic: prefer lower waste and dislike unused ownership.
+Differentiated vs concentrated: Differentiated (segment): different offers for several segments; Resources focus where strategic fit is strongest; Concentrated (niche): deep focus on a narrow subgroup; Small firms often niche; specialists can lead despite size.
 
-Behavioural: regular commuters, not weekend hobby riders.
+Mass, segment and niche marketing compared. Strategy: Mass marketing — Also called: Undifferentiated targeting — Offer pattern: Same product to all customers — Typical trade-off: Scale efficiency vs weak fit to special needs Strategy: Segment marketing — Also called: Differentiated targeting — Offer pattern: Different products for one or more segments — Typical trade-off: Better fit vs higher complexity/cost Strategy: Niche marketing — Also called: Concentrated targeting — Offer pattern: Focus on particular subgroups within segments — Typical trade-off: Depth and expertise vs limited volume
 
-Segment chosen: shift-working commuters with limited storage at home.
-
-Niche inside it: night-shift staff needing lit routes and battery-swap certainty.
-
-Positioning phrase: “get to the ward on time — battery panic optional.”
-
-Concentrated targeting lets a small firm win relevance without matching mass producers on volume.
+GlassHarbor chooses a niche inside a segment. Geographic: one coastal city and inner suburbs. Demographic: employed adults including shift workers. Psychographic: prefer lower waste and dislike unused ownership. Behavioural: regular commuters, not weekend hobby riders. Segment chosen: shift-working commuters with limited storage at home. Niche inside it: night-shift staff needing lit routes and battery-swap certainty. Positioning phrase: “get to the ward on time — battery panic optional.”. Concentrated targeting lets a small firm win relevance without matching mass producers on volume.
 
 Why can mass marketing of laundry detergent still make sense while mass marketing of specialised medical bikes usually does not?
 
-Trap: calling any small customer group a valid segment even when it cannot be measured, reached or served profitably. Trap: confusing niche marketing with “randomly ignoring research”. Niche is deliberate focus, not guesswork.
+calling any small customer group a valid segment even when it cannot be measured, reached or served profitably. Trap: confusing niche marketing with “randomly ignoring research”. Niche is deliberate focus, not guesswork.
 
 Exam cue: match bases (geo/demo/psycho/behavioural) to examples. Mass = ignore segment differences; segment = tailor to known segments; niche = deeper focus on subgroups. Economies of scale favour mass; small-firm constraints often favour niche.
 
@@ -1242,15 +876,9 @@ Undifferentiated, differentiated and concentrated strategies trade scale against
 
 Niche specialists can lead a narrow market without being large overall.
 
-Sort “values environmental reuse” into the correct segmentation base.
-
-Name one advantage and one drawback of undifferentiated targeting.
-
-What is positioning trying to fix in customers’ minds?
-
 5.7 The marketing mix, life cycle and BCG matrix
 
-SCENE Four dials, one sound: North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe. If promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The marketing mix is the craft of setting product, price, place and promotion so they play in tune for the target market.
+Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe. If promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The marketing mix is the craft of setting product, price, place and promotion so they play in tune for the target market.
 
 Marketing mix: A harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. Classically organised as the four Ps: product, price, place and promotion.
 
@@ -1262,11 +890,13 @@ Most firms offer more than one item. Similar items form a product line; several 
 
 Product life cycle: A theoretical model of stages in a product’s market life that differ in sales and profit: introduction, growth, maturity and decline (after development costs before launch).
 
-Before launch there are development costs and no sales. Introduction often starts in loss: promotion is heavy and prices may be set to attract trial. Growth brings faster sales; average costs may fall with scale; profits usually appear and strengthen. Maturity peaks sales; growth slows; competition intensifies. Decline sees falling sales and profits; exit or efficiency becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months.
+What typically happens in each stage. Before launch there are development costs and no sales. Introduction often starts in loss: promotion is heavy and prices may be set to attract trial. Growth brings faster sales; average costs may fall with scale; profits usually appear and strengthen. Maturity peaks sales; growth slows; competition intensifies. Decline sees falling sales and profits; exit or efficiency becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months.
 
 Boston Consulting Group (BCG) matrix: A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as stars, cash cows, question marks or dogs (poor dogs).
 
-A healthy portfolio blends stars, cash cows and selected question marks, without too many dogs. Cash-cow revenues can fund stars (future cows) and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark; growth success can create a star; mature leaders become cash cows; decline risks dog status.
+BCG categories. Category: Stars — Market growth: High — Relative market share: High — Management implication: Valuable; still need investment in promotion and capacity Category: Cash cows — Market growth: Low — Relative market share: High — Management implication: Generate cash with lower investment needs Category: Question marks — Market growth: High — Relative market share: Low — Management implication: Need decisions: invest to build share or withdraw Category: Dogs (poor dogs) — Market growth: Low — Relative market share: Low — Management implication: Limited future; candidates for harvest or exit
+
+Balancing the portfolio. A healthy portfolio blends stars, cash cows and selected question marks, without too many dogs. Cash-cow revenues can fund stars (future cows) and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark; growth success can create a star; mature leaders become cash cows; decline risks dog status.
 
 Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term).
 
@@ -1285,19 +915,7 @@ Break-even units ≈ fixed costs / contribution per unit
 
 Variable-cost-plus (distribution) pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is variable cost: any price above it still contributes to fixed costs. Before changing prices, consider price elasticity of demand: elastic if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust.
 
-Variable cost per clock = €54; planned selling price = €90.
-
-Contribution = 90 − 54 = €36.
-
-Fixed costs for the line this period = €72,000.
-
-Break-even units ≈ 72,000 / 36 = 2,000 clocks.
-
-A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each → €4,800 toward fixed costs.
-
-Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere.
-
-Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone.
+Break-even for a sealed dock clock. Variable cost per clock = €54; planned selling price = €90. Contribution = 90 − 54 = €36. Fixed costs for the line this period = €72,000. Break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each → €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone.
 
 Place (distribution): How and where the product is made available. A strong product fails if customers cannot find it where they expect it.
 
@@ -1327,11 +945,13 @@ Public relations for a favourable image and stakeholder relationships
 
 Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place.
 
+Harmonised mix sketch for North Harbor’s dock clock. P: Product — Choice: Sealed quartz, oversized numerals, glove-friendly crown — Consistency check: Matches harbour-worker needs from research P: Price — Choice: Mid-premium above toy clocks; below luxury mechanicals — Consistency check: Signals durability without claiming jewellery status P: Place — Choice: Marine suppliers, selected hardware stores, direct web shop — Consistency check: Found where dock staff already buy kit P: Promotion — Choice: Demo videos with gloves on; harbour newsletter; trade stall — Consistency check: Shows the USP in use, not abstract luxury imagery
+
 If North Harbor cuts price by 40% to chase volume while keeping “premium sealed instrument” ads, which mix conflict will customers notice first?
 
-Trap: memorising four Ps as a shopping list without harmonisation. Trap: placing a high-share product in a low-growth market as a star — that cell is a cash cow. Trap: treating break-even as guaranteeing cash in the bank regardless of credit and stock timing.
+memorising four Ps as a shopping list without harmonisation. Trap: placing a high-share product in a low-growth market as a star — that cell is a cash cow. Trap: treating break-even as guaranteeing cash in the bank regardless of credit and stock timing.
 
-Exam recognition: four Ps definitions; life-cycle stage clues (loss at introduction, rapid sales in growth, peak then pressure in maturity, fall in decline); BCG axes are market growth and relative share; contribution = price − variable cost; elastic vs inelastic price response; place and promotion tool lists.
+four Ps definitions; life-cycle stage clues (loss at introduction, rapid sales in growth, peak then pressure in maturity, fall in decline); BCG axes are market growth and relative share; contribution = price − variable cost; elastic vs inelastic price response; place and promotion tool lists.
 
 The mix implements objectives (5.2) for chosen targets (5.6) using research (5.5). Orientation (5.3) shapes whether the product P starts from features or from stated needs. Responsibility (5.4) constrains claims and design inside the same mix.
 
@@ -1344,14 +964,6 @@ BCG maps growth against relative share to guide portfolio cash flows.
 Pricing rests on costs, competition and demand — with contribution and elasticity as decision tools.
 
 Place and promotion are not optional extras; they complete availability and meaning.
-
-Which BCG cell has high growth and low relative share?
-
-State the contribution formula and one reason to accept a price below normal markup.
-
-List three promotion tools a low-budget service firm could still use.
-
-Name Ansoff’s four growth options from safest to riskiest.
 
 A marketing product is any exchangeable good or service that fulfils wishes and needs; portfolios are shaped as lines and mixes, while brands and USPs drive differentiation.
 
@@ -1382,7 +994,7 @@ Analyse liquidity, profitability, efficiency and gearing (financial structure) �
 
 6.1 The balance sheet — what the firm owns and how it is financed
 
-SCENE Opening day at Northline Bike Workshop: Mira and Jonas open a bicycle repair and retail workshop. On day one they list everything the business can use: tools and benches (€18,000), a small delivery van (€14,000), bikes held for resale (€9,200), and €4,800 in the business bank account. A bank lent them €22,000. The rest came from money and equipment they put in themselves. That list — and the story of who financed it — is the seed of a balance sheet.
+Opening day at Northline Bike Workshop. Mira and Jonas open a bicycle repair and retail workshop. On day one they list everything the business can use: tools and benches (€18,000), a small delivery van (€14,000), bikes held for resale (€9,200), and €4,800 in the business bank account. A bank lent them €22,000. The rest came from money and equipment they put in themselves. That list — and the story of who financed it — is the seed of a balance sheet.
 
 Assets: Resources the business owns and uses. Office tools that stay in the workshop and bikes waiting to be sold are both assets — but they are different kinds of assets, because one is kept for use and the other is held to be sold.
 
@@ -1392,33 +1004,31 @@ Owner's equity (equity): The portion of assets not financed by debt — what the
 
 Balance sheet: A statement at a point in time that lists assets on one side and shows how those assets were financed through liabilities and equity on the other. The two sides must equal.
 
-Every euro of asset was funded either by owners (equity) or by creditors (liabilities). Those funds are bound in whatever form the business currently holds — including cash. If assets rise, either liabilities or equity must rise by the same amount (unless another asset falls in an asset swap).
+Why the identity must hold. Every euro of asset was funded either by owners (equity) or by creditors (liabilities). Those funds are bound in whatever form the business currently holds — including cash. If assets rise, either liabilities or equity must rise by the same amount (unless another asset falls in an asset swap).
 
 Assets = liabilities + owner's equity
 
-Sum assets: tools & benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000.
-
-Liabilities: bank loan = €22,000.
-
-Equity = assets − liabilities = 46,000 − 22,000 = €24,000.
-
-Check: 46,000 = 22,000 + 24,000.
-
-Opening totals balance at €46,000 on each side.
+Build Northline's opening balance sheet. Sum assets: tools & benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. Liabilities: bank loan = €22,000. Equity = assets − liabilities = 46,000 − 22,000 = €24,000. Check: 46,000 = 22,000 + 24,000. Opening totals balance at €46,000 on each side.
 
 Before reading on: if Northline buys €1,500 of spare parts for cash, does total assets change? What if the same purchase is on supplier credit?
 
-Pay cash for an asset → one asset rises, cash falls by the same amount → total assets unchanged. Buy on credit → the asset rises and a liability (trade payable) rises by the same amount → balance-sheet total rises.
+Asset swap versus financed purchase. Pay cash for an asset → one asset rises, cash falls by the same amount → total assets unchanged. Buy on credit → the asset rises and a liability (trade payable) rises by the same amount → balance-sheet total rises.
 
-Start: assets 46,000; liabilities 22,000; equity 24,000.
+Two ways to buy €1,500 of spare parts. Start: assets 46,000; liabilities 22,000; equity 24,000. Cash purchase: inventory +1,500; cash −1,500. Totals still 46,000 = 22,000 + 24,000. Credit purchase: inventory +1,500; trade payables +1,500. Assets 47,500; liabilities 23,500; equity 24,000. Same economic item; different financing changes the totals.
 
-Cash purchase: inventory +1,500; cash −1,500. Totals still 46,000 = 22,000 + 24,000.
+Fixed (non-current) assets vs current assets.
 
-Credit purchase: inventory +1,500; trade payables +1,500. Assets 47,500; liabilities 23,500; equity 24,000.
+Fixed / non-current assets: Useful life normally more than one year; Intended for longer-term use in the business; Usually harder to turn into cash quickly; Examples: property, plant, buildings, machinery, office equipment kept for use; longer-term financial assets; intangible assets (patents, trademarks, copyrights).
 
-Same economic item; different financing changes the totals.
+Current assets: Higher liquidity; Normally used up, sold or converted within a year; Examples: inventory (merchandise not yet sold), trade receivables / debtors (money customers owe), cash.
 
 Intangible assets cannot be touched, but they still have value for the business — the same logic as tangible assets. A workshop may own none yet; a manufacturing group may report large patents, trademarks and licences.
+
+Liabilities by duration.
+
+Current liabilities: Due within one year; Examples: trade payables (trade credit to suppliers), bank overdraft, other short-term obligations.
+
+Non-current liabilities: Duration more than one year; Examples: long-term bank loans, bonds payable.
 
 Equity ratio = equity / total capital
 
@@ -1432,63 +1042,33 @@ Do not treat office computers used in the business as the same line as computers
 
 Exam cues for 6.1: 'point in time', 'assets = liabilities + equity', classify an item as non-current vs current, or decide whether a cash purchase changes the balance-sheet total. Valuation is constrained by rules — firms cannot freely invent asset values.
 
-The balance sheet is a snapshot: assets financed by liabilities + equity.
-
-Fixed assets serve long-term use; current assets turn over within about a year.
-
-Equity is the owners' financing share and a buffer against losses.
-
-State the balance-sheet identity in words and symbols.
-
-Give two fixed-asset and two current-asset examples.
-
-Explain why buying equipment with cash leaves total assets unchanged.
-
 6.2 Income statement, cash flow and depreciation
 
-SCENE Why one statement is not enough: Northline's end-of-year balance sheet shows stronger equity and more cash than on day one. That still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan. Performance over a period needs the full financial statement set.
+Why one statement is not enough. Northline's end-of-year balance sheet shows stronger equity and more cash than on day one. That still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan. Performance over a period needs the full financial statement set.
 
 Financial statement: The package that reveals performance over a period: balance sheet + income statement (profit and loss account) + cash flow statement. The balance sheet alone cannot show turnover or production costs.
 
 Income statement (profit and loss account): A period summary of revenues, costs and expenses. If revenues exceed costs and expenses → profit. If costs and expenses exceed revenue → loss.
 
-Revenue is income from selling goods or services (cash or receivables). Costs are resources consumed to produce those goods or services. Other expenses (rent, admin wages, energy, depreciation, and similar) also reduce the result. Profit is not 'cash left in the till' — it is the accounting surplus for the period.
+Revenue, costs and the profit test. Revenue is income from selling goods or services (cash or receivables). Costs are resources consumed to produce those goods or services. Other expenses (rent, admin wages, energy, depreciation, and similar) also reduce the result. Profit is not 'cash left in the till' — it is the accounting surplus for the period.
 
-Sales revenue for the year = €268,000.
-
-Costs and expenses (materials, wages, rent, energy, depreciation, other) = €214,000.
-
-Profit = 268,000 − 214,000 = €54,000.
-
-A €54,000 profit increases equity if retained in the business.
+Simple period profit. Sales revenue for the year = €268,000. Costs and expenses (materials, wages, rent, energy, depreciation, other) = €214,000. Profit = 268,000 − 214,000 = €54,000. A €54,000 profit increases equity if retained in the business.
 
 Profit raises equity; a loss lowers equity. You can spot performance in the income statement or in the change in equity between two balance-sheet dates — same economic story, two presentations.
 
 Depreciation: Recognition that fixed assets lose value as they are used up over time. Without it, balance-sheet asset values would be overstated and profit would ignore the wearing-out of equipment.
 
-Spread the depreciable cost evenly across the expected useful life so each year carries the same charge. Land is not depreciated. Depreciation is an expense in the income statement, but — unlike wages or energy — it does not cause a cash payment in the period when it is charged.
+Straight-line logic. Spread the depreciable cost evenly across the expected useful life so each year carries the same charge. Land is not depreciated. Depreciation is an expense in the income statement, but — unlike wages or energy — it does not cause a cash payment in the period when it is charged.
 
 Annual depreciation = (cost − residual value) / expected useful life
 
-Laptop: cost €2,400; useful life 3 years; residual €0 → annual depreciation = 2,400 / 3 = €800. Book values: year 1 → €1,600; year 2 → €800; year 3 → €0.
-
-Van: cost €14,000; useful life 5 years; residual €2,000 → depreciable cost = 12,000; annual depreciation = 12,000 / 5 = €2,400.
-
-Each year the income statement includes these charges; the cash outlay happened when the assets were bought.
-
-Carrying (book) value = cost − accumulated depreciation.
+Depreciate a diagnostic laptop and a van. Laptop: cost €2,400; useful life 3 years; residual €0 → annual depreciation = 2,400 / 3 = €800. Book values: year 1 → €1,600; year 2 → €800; year 3 → €0. Van: cost €14,000; useful life 5 years; residual €2,000 → depreciable cost = 12,000; annual depreciation = 12,000 / 5 = €2,400. Each year the income statement includes these charges; the cash outlay happened when the assets were bought. Carrying (book) value = cost − accumulated depreciation.
 
 Never treat depreciation as a cash outflow in the cash flow statement for the year it is charged. The cash left when the asset was purchased (an investing outflow then).
 
 Expenditures vs expenses: Expenditures are payments to purchase assets (non-current or current). Expenses are costs that have expired or been used up to produce the goods or services sold — for example COGS, salaries, marketing, interest, insurance and rent.
 
-Northline spends €12,000 cash on a new alignment machine (expenditure; investing cash outflow).
-
-If useful life is 6 years and residual is €0, annual depreciation expense = 12,000 / 6 = €2,000.
-
-In year 1, cash fell by €12,000, but the income statement expense is only €2,000.
-
-Buying the machine is an expenditure; using it up over time creates expenses.
+Expenditure that is not (yet) an expense. Northline spends €12,000 cash on a new alignment machine (expenditure; investing cash outflow). If useful life is 6 years and residual is €0, annual depreciation expense = 12,000 / 6 = €2,000. In year 1, cash fell by €12,000, but the income statement expense is only €2,000. Buying the machine is an expenditure; using it up over time creates expenses.
 
 Cash flow statement: Shows cash flowing into and out of the business during the period. Positive cash flow is not the same as profit.
 
@@ -1498,43 +1078,15 @@ Investing activities — cash spent on long-term assets or received from selling
 
 Financing activities — cash from investors or creditors; outflows for interest, dividends or debt repayment.
 
-Opening cash €4,800; closing cash €40,700 → cash increase = €35,900.
+Cash change versus profit. Opening cash €4,800; closing cash €40,700 → cash increase = €35,900. Same year profit was €54,000. The gap exists because profit includes non-cash depreciation and accruals (credit sales, unpaid bills), while cash only counts actual movements — and because investing and financing cash also move the bank balance. A firm can be profitable and still short of cash, or raise cash by borrowing without matching profit.
 
-Same year profit was €54,000.
-
-The gap exists because profit includes non-cash depreciation and accruals (credit sales, unpaid bills), while cash only counts actual movements — and because investing and financing cash also move the bank balance.
-
-A firm can be profitable and still short of cash, or raise cash by borrowing without matching profit.
-
-Customers settle €38,000 of receivables → operating inflow.
-
-Parts paid in cash €16,000 → operating outflow.
-
-New bench system bought for €9,000 cash → investing outflow.
-
-Loan principal repaid €7,000 → financing outflow.
-
-Owners' drawings / dividend €5,000 → financing outflow.
-
-Net from these items: (38,000 − 16,000) − 9,000 − 7,000 − 5,000 = +€1,000.
+Classify cash movements. Customers settle €38,000 of receivables → operating inflow. Parts paid in cash €16,000 → operating outflow. New bench system bought for €9,000 cash → investing outflow. Loan principal repaid €7,000 → financing outflow. Owners' drawings / dividend €5,000 → financing outflow. Net from these items: (38,000 − 16,000) − 9,000 − 7,000 − 5,000 = +€1,000.
 
 Exam cues for 6.2: period vs point-in-time; profit ≠ cash; classify operating / investing / financing; compute straight-line depreciation and carrying value; spot that depreciation is an expense without a same-period cash payment; separate expenditure (buy asset) from expense (use asset up).
 
-Income statement: period profit or loss from revenues minus costs and expenses.
-
-Depreciation spreads asset cost over useful life; it is non-cash in the charging year.
-
-Cash flow splits operating, investing and financing movements — needed because profit and cash diverge.
-
-Name the three components of the financial statement and what each shows.
-
-Calculate annual straight-line depreciation for a €9,000 machine, 4-year life, €1,000 residual.
-
-Give one example of an expenditure that is not immediately a full expense.
-
 6.3 Reading balance sheets and income statements
 
-SCENE Reading with caution — then with purpose: Asset values depend on valuation rules; depreciation can push book values below what an asset might fetch in a private sale. Still, comparing structure over time and against similar firms answers sharp questions about how the business is built and how it performed.
+Reading with caution — then with purpose. Asset values depend on valuation rules; depreciation can push book values below what an asset might fetch in a private sale. Still, comparing structure over time and against similar firms answers sharp questions about how the business is built and how it performed.
 
 Asset mix — mostly non-current or current, and is that typical for this kind of business?
 
@@ -1548,15 +1100,11 @@ Profit path — how did gross profit and operating profit develop?
 
 The first three questions are balance-sheet questions. The last two need the income statement.
 
-Non-current assets / total assets = 495 / 776 ≈ 63.8% — a plant-heavy mix typical of manufacturing.
+Sample statement of financial position — Cedar Circuit Components (€ thousands). Item: Property, plant and equipment — Year 2: 412 — Year 1: 388 Item: Intangible assets — Year 2: 48 — Year 1: 52 Item: Other non-current assets — Year 2: 35 — Year 1: 30 Item: Non-current assets — Year 2: 495 — Year 1: 470 Item: Inventories — Year 2: 92 — Year 1: 78 Item: Trade and other receivables — Year 2: 71 — Year 1: 64 Item: Cash and cash equivalents — Year 2: 118 — Year 1: 86 Item: Current assets — Year 2: 281 — Year 1: 228 Item: Total assets — Year 2: 776 — Year 1: 698 Item: Share capital — Year 2: 120 — Year 1: 120 Item: Reserves and retained earnings — Year 2: 268 — Year 1: 214 Item: Total equity — Year 2: 388 — Year 1: 334 Item: Non-current financial liabilities — Year 2: 210 — Year 1: 230 Item: Other non-current liabilities — Year 2: 28 — Year 1: 24 Item: Non-current liabilities — Year 2: 238 — Year 1: 254 Item: Trade and other payables — Year 2: 96 — Year 1: 78 Item: Other current liabilities — Year 2: 54 — Year 1: 32 Item: Current liabilities — Year 2: 150 — Year 1: 110 Item: Total liabilities — Year 2: 388 — Year 1: 364 Item: Total equity and liabilities — Year 2: 776 — Year 1: 698
 
-Equity ratio = 388 / 776 = 50% — half of assets financed by equity.
+Structure read on Cedar's balance sheet. Non-current assets / total assets = 495 / 776 ≈ 63.8% — a plant-heavy mix typical of manufacturing. Equity ratio = 388 / 776 = 50% — half of assets financed by equity. Long-term finance = equity 388 + non-current liabilities 238 = 626, which exceeds non-current assets 495 → long-term assets are covered by long-term resources. Cash 118 exceeds trade payables 96 — bills could be cleared from cash alone if needed. Structure looks manufacturing-typical, moderately equity-funded, and matched on the long-term side.
 
-Long-term finance = equity 388 + non-current liabilities 238 = 626, which exceeds non-current assets 495 → long-term assets are covered by long-term resources.
-
-Cash 118 exceeds trade payables 96 — bills could be cleared from cash alone if needed.
-
-Structure looks manufacturing-typical, moderately equity-funded, and matched on the long-term side.
+Sample income statement — Cedar Circuit Components (€ thousands). Item: Revenue — Year 2: 640 — Year 1: 520 Item: Cost of sales — Year 2: (498) — Year 1: (430) Item: Gross profit — Year 2: 142 — Year 1: 90 Item: Distribution costs — Year 2: (28) — Year 1: (24) Item: General and administrative costs — Year 2: (36) — Year 1: (30) Item: Other operating result — Year 2: 4 — Year 1: 2 Item: Operating result (EBIT) — Year 2: 82 — Year 1: 38 Item: Finance costs — net — Year 2: (14) — Year 1: (16) Item: Profit before tax — Year 2: 68 — Year 1: 22 Item: Income taxes — Year 2: (16) — Year 1: (8) Item: Profit for the year — Year 2: 52 — Year 1: 14
 
 Cost of sales (COS) / cost of goods sold (COGS): Costs tied directly to producing the products sold — direct materials, direct production labour and manufacturing overhead. Not included: administration, shipping to customers, or sales-personnel costs.
 
@@ -1564,17 +1112,9 @@ Gross profit: Earnings after deducting direct production costs from revenue — 
 
 EBITDA and EBIT: EBITDA (earnings before interest, taxes, depreciation and amortisation) looks at operating performance with a different treatment of non-cash charges. Deducting depreciation and amortisation yields EBIT (earnings before interest and taxes) — the operating result line used widely in analysis.
 
-Revenue − COS → gross profit. Then operating expenses (and other operating items) shape the path toward EBIT. Finance income and costs sit below operating result. Taxes sit near the bottom. Each layer answers a different question: production margin, operating strength, then financing and tax effects.
+Reading down the income statement. Revenue − COS → gross profit. Then operating expenses (and other operating items) shape the path toward EBIT. Finance income and costs sit below operating result. Taxes sit near the bottom. Each layer answers a different question: production margin, operating strength, then financing and tax effects.
 
-Revenue rose by 640 − 520 = 120 → about +23.1%.
-
-Cost of sales rose by 498 − 430 = 68 → about +15.8%.
-
-Revenue grew faster than COS → gross profit jumped from 90 to 142.
-
-EBIT more than doubled (38 → 82).
-
-Top-line growth with a favourable COS relationship improved both gross profit and operating result.
+Performance read on Cedar's income statement. Revenue rose by 640 − 520 = 120 → about +23.1%. Cost of sales rose by 498 − 430 = 68 → about +15.8%. Revenue grew faster than COS → gross profit jumped from 90 to 142. EBIT more than doubled (38 → 82). Top-line growth with a favourable COS relationship improved both gross profit and operating result.
 
 If revenue rose 10% but COS rose 18%, what would you expect for gross profit — and what story might that tell about production efficiency or input prices?
 
@@ -1588,51 +1128,35 @@ COS is production-tied; gross profit is pre-operating-expense margin; EBIT is th
 
 Compare periods and peers — a single number rarely speaks alone.
 
-Which three reading questions are answered from the balance sheet alone?
-
-What is excluded from COGS?
-
-How do gross profit and EBIT differ in what they include?
-
 6.4 Who uses accounts — financial vs management accounting
 
-SCENE Two rooms, two questions: In the workshop office, Mira asks whether specialty helmets cover their true cost if priced at €49. At the bank, the loan officer asks whether Northline can service debt and whether last year's accounts were reliable. Same business — different information jobs.
+Two rooms, two questions. In the workshop office, Mira asks whether specialty helmets cover their true cost if priced at €49. At the bank, the loan officer asks whether Northline can service debt and whether last year's accounts were reliable. Same business — different information jobs.
 
 Users of accounts: Internal users include owners, managers and employees — they care whether the business is thriving, whether costs need cutting, and whether the investment earns a return for the risk taken. External users include tax authorities, suppliers, competitors, investors, banks and the media.
 
+Two types of accounting.
+
+Management (managerial) accounting: Built for managers inside the firm; Supports decisions: where to cut costs, how to set prices, how to allocate resources; Often more detailed and forward-looking for internal use.
+
+Financial accounting: Produces statements such as the balance sheet and income statement; Serves decision makers inside and outside the firm (owners, banks, tax authorities, investors); Appears in annual reports; large firms often publish selected figures on their websites.
+
 Auditing: For some companies it is mandatory that an independent firm of accountants checks the accounts for authenticity. The outcome appears in the annual report.
 
-Managers need management accounting for operational choices, but they also watch financial accounting because banks, tax authorities and investors will judge the firm on those statements.
+Managers use both. Managers need management accounting for operational choices, but they also watch financial accounting because banks, tax authorities and investors will judge the firm on those statements.
 
-Management pack: estimated cost per custom bike build €1,120; proposed list price €1,490; expected monthly volume if price rises €40.
-
-Financial pack for the bank: equity €78,000; remaining loan €15,000; last year's profit €54,000; audited year-end statements.
-
-Tax authorities use the financial accounts to assess taxable profit.
-
-Price design leans on management accounting; external financing and tax lean on financial accounting.
+Same decision day, two information packs. Management pack: estimated cost per custom bike build €1,120; proposed list price €1,490; expected monthly volume if price rises €40. Financial pack for the bank: equity €78,000; remaining loan €15,000; last year's profit €54,000; audited year-end statements. Tax authorities use the financial accounts to assess taxable profit. Price design leans on management accounting; external financing and tax lean on financial accounting.
 
 Do not assume management accounting replaces the balance sheet and income statement. External parties — and many mandatory duties — rely on financial accounting.
 
 Exam cues for 6.4: match a user to internal vs external; decide whether a task is management accounting (pricing, cost cutting) or financial accounting (published statements, bank review); know that auditing is independent verification for authenticity.
 
-Accounts serve internal and external users with different stakes.
-
-Management accounting steers decisions inside; financial accounting reports the firm's position and performance for a wider audience.
-
-Auditing adds independent assurance where required.
-
-List three internal and three external users of financial information.
-
-Which type of accounting answers 'what price covers our costs?'
-
-What is auditing for?
-
 6.5 Analysis of financial statements
 
-SCENE From statements to ratios: Cedar's statements are complete — yet a lender still asks: can it pay bills on time? Does profit justify the capital tied up? Does stock sit too long? How heavily is it geared with debt? Ratios turn raw lines into comparable answers.
+From statements to ratios. Cedar's statements are complete — yet a lender still asks: can it pay bills on time? Does profit justify the capital tied up? Does stock sit too long? How heavily is it geared with debt? Ratios turn raw lines into comparable answers.
 
 Analysis clusters into liquidity (solvency in the short term), profitability (profit relative to capital or size), financial efficiency (how well resources generate activity), and financial structure / gearing (equity versus debt). Ratios vary sharply by industry — compare peers in the same sector, or one firm over several years. Always know which definition was used before you compare.
+
+Ratio map used in this course. Theme: Liquidity — Measure: Working capital — Core idea: Current assets left after current liabilities Theme: Liquidity — Measure: Current ratio — Core idea: Current assets per €1 of current liabilities Theme: Liquidity — Measure: Acid-test ratio — Core idea: Same idea, excluding inventory Theme: Profitability — Measure: ROE — Core idea: EBIT relative to equity Theme: Profitability — Measure: ROCE — Core idea: EBIT relative to capital employed Theme: Efficiency — Measure: Asset turnover — Core idea: Turnover per €1 of (average) assets Theme: Efficiency — Measure: Inventory turnover — Core idea: How many times stock is sold/replaced Theme: Gearing / structure — Measure: Equity ratio — Core idea: Equity as % of total assets Theme: Gearing / structure — Measure: Debt ratio — Core idea: Total debt as % of total assets
 
 Liquidity — intuition first. Imagine every short-term claim lands at once. Can the firm's relatively liquid resources (cash, receivables, inventory) cover those claims, and is anything left? That leftover idea is working capital. Retailers with heavy stock often need more working capital than a service firm with little inventory. High inventory can serve customers quickly, but it ties up money, needs space, and can become obsolete.
 
@@ -1642,17 +1166,9 @@ Current ratio = current assets / current liabilities
 
 Acid-test ratio = (current assets − inventory) / current liabilities
 
-Current assets = 281; inventory = 92; current liabilities = 150.
+Liquidity for Cedar (Year 2, € thousands). Current assets = 281; inventory = 92; current liabilities = 150. Working capital = 281 − 150 = 131 (positive). Current ratio = 281 / 150 ≈ 1.87 (above 1; inside a 1.5–2 comfort discussion). Acid-test = (281 − 92) / 150 = 189 / 150 = 1.26 (still above 1). Short-term cover looks adequate on these measures — still judge against industry peers.
 
-Working capital = 281 − 150 = 131 (positive).
-
-Current ratio = 281 / 150 ≈ 1.87 (above 1; inside a 1.5–2 comfort discussion).
-
-Acid-test = (281 − 92) / 150 = 189 / 150 = 1.26 (still above 1).
-
-Short-term cover looks adequate on these measures — still judge against industry peers.
-
-A short-term loan, overdraft or extra trade credit can ease a cash squeeze — but it raises current liabilities and can shrink working capital. Improving both cash and working capital more sustainably usually means adding equity or longer-term borrowing.
+Cash-flow patch vs working-capital health. A short-term loan, overdraft or extra trade credit can ease a cash squeeze — but it raises current liabilities and can shrink working capital. Improving both cash and working capital more sustainably usually means adding equity or longer-term borrowing.
 
 A current ratio above 1 is not automatically 'safe' if most current assets are slow-moving inventory. That is why the acid test exists. Also: fixing cash with short-term borrowing can worsen the working-capital picture.
 
@@ -1664,21 +1180,7 @@ ROE = profit before tax and interest (EBIT) / equity
 
 ROCE = profit before tax and interest (EBIT) / capital employed
 
-EBIT = 82; equity = 388.
-
-ROE = 82 / 388 ≈ 21.1%.
-
-Capital employed = assets − current liabilities = 776 − 150 = 626 (also equity 388 + non-current liabilities 238).
-
-ROCE = 82 / 626 ≈ 13.1%.
-
-If average capital employed were 640: ROCE = 82 / 640 = 12.8%.
-
-Returns look meaningful only beside peer ROCE/ROE and Cedar's own trend.
-
-In this course, ROE uses EBIT in the numerator — not 'profit for the year'. Swapping in bottom-line profit changes the ratio and breaks comparability with the course definition.
-
-Profitability exam cues: identify EBIT; compute ROE and ROCE; define capital employed two equivalent ways; prefer same-industry and over-time comparisons.
+ROE and ROCE for Cedar (Year 2, € thousands). EBIT = 82; equity = 388. ROE = 82 / 388 ≈ 21.1%. Capital employed = assets − current liabilities = 776 − 150 = 626 (also equity 388 + non-current liabilities 238). ROCE = 82 / 626 ≈ 13.1%. If average capital employed were 640: ROCE = 82 / 640 = 12.8%. Returns look meaningful only beside peer ROCE/ROE and Cedar's own trend.
 
 Efficiency — intuition first. Asset turnover asks how many euros of sales each euro of assets supports. Inventory turnover asks how often stock is sold or used up and replaced — high turnover means money is not trapped in the warehouse for long.
 
@@ -1686,21 +1188,7 @@ Asset turnover = turnover / average assets
 
 Inventory turnover = cost of sales / average inventory
 
-Turnover (revenue) = 640; assets Year 1 = 698; assets Year 2 = 776.
-
-Average assets = (698 + 776) / 2 = 737.
-
-Asset turnover = 640 / 737 ≈ 0.87 → about €0.87 of sales per €1 of average assets.
-
-Alternative with net assets: Year 2 net assets = 776 − 238 = 538; Year 1 = 698 − 254 = 444; average = 491; turnover / average net assets = 640 / 491 ≈ 1.30.
-
-Average inventory = (92 + 78) / 2 = 85; inventory turnover = 498 / 85 ≈ 5.9 times per year → roughly 365 / 5.9 ≈ 62 days.
-
-Stock renews about six times a year; asset productivity must be judged against manufacturing peers.
-
-Do not put revenue in the inventory-turnover numerator — the course uses cost of sales. Using sales inflates turnover and misstates how fast stock truly clears at cost.
-
-Efficiency exam cues: average assets correctly; choose total assets vs net assets consistently; inventory turnover = COS / average inventory; translate 'times per year' into approximate days.
+Efficiency for Cedar (€ thousands). Turnover (revenue) = 640; assets Year 1 = 698; assets Year 2 = 776. Average assets = (698 + 776) / 2 = 737. Asset turnover = 640 / 737 ≈ 0.87 → about €0.87 of sales per €1 of average assets. Alternative with net assets: Year 2 net assets = 776 − 238 = 538; Year 1 = 698 − 254 = 444; average = 491; turnover / average net assets = 640 / 491 ≈ 1.30. Average inventory = (92 + 78) / 2 = 85; inventory turnover = 498 / 85 ≈ 5.9 times per year → roughly 365 / 5.9 ≈ 62 days. Stock renews about six times a year; asset productivity must be judged against manufacturing peers.
 
 Gearing / financial structure — intuition first. Gearing asks how heavily the asset base leans on debt versus owners' funds. High debt can amplify returns but also raises dependence on creditors and loss pressure. The course measures structure with the equity ratio and the debt ratio.
 
@@ -1708,19 +1196,11 @@ Equity ratio = equity / total assets
 
 Debt ratio = total debt / total assets
 
-Equity = 388; total assets = 776; total liabilities (debt) = 388.
-
-Equity ratio = 388 / 776 = 50%.
-
-Debt ratio = 388 / 776 = 50%.
-
-Half equity, half debt financing — a balanced structure on these definitions; still compare within the sector.
+Gearing for Cedar Year 2. Equity = 388; total assets = 776; total liabilities (debt) = 388. Equity ratio = 388 / 776 = 50%. Debt ratio = 388 / 776 = 50%. Half equity, half debt financing — a balanced structure on these definitions; still compare within the sector.
 
 If Cedar financed a new plant mostly with short-term overdraft instead of equity or a long-term loan, which ratios would worsen first — liquidity, gearing, or both?
 
-A high equity ratio is not 'always better' in isolation, and a low one is not automatically failure — industry norms differ. Also do not confuse gearing (structure) with liquidity (short-term payment ability).
-
-Gearing exam cues: compute equity ratio and debt ratio; interpret 'financed by own resources' vs debt; keep structure separate from current/acid-test liquidity.
+Cedar Year 2 — ratio summary (figures rounded). Ratio: Working capital — Value: €131k — Quick reading: Positive short-term buffer Ratio: Current ratio — Value: 1.87 — Quick reading: Above 1; near 1.5–2 band Ratio: Acid-test ratio — Value: 1.26 — Quick reading: Above 1 without inventory Ratio: ROE (EBIT / equity) — Value: 21.1% — Quick reading: Return on owners' funds Ratio: ROCE (EBIT / capital employed) — Value: 13.1% — Quick reading: Return on long-term capital Ratio: Asset turnover (avg assets) — Value: 0.87 — Quick reading: Sales per €1 of assets Ratio: Inventory turnover — Value: 5.9× — Quick reading: ~62 days in stock Ratio: Equity ratio — Value: 50% — Quick reading: Half owner-financed Ratio: Debt ratio — Value: 50% — Quick reading: Half creditor-financed
 
 Liquidity, profitability, efficiency and gearing answer different questions about the same statements. A firm can look profitable (ROE) yet strained on the acid test, or highly efficient at turning assets while heavily geared. Read the set together.
 
@@ -1733,14 +1213,6 @@ Efficiency: asset turnover and inventory turnover show resource use.
 Gearing: equity ratio and debt ratio describe financial structure.
 
 Always compare within industry or over time; know the definition used.
-
-Why exclude inventory in the acid-test ratio?
-
-State the course formulas for ROE and ROCE.
-
-Compute equity and debt ratios if equity = 240 and total assets = 800.
-
-Why might a supermarket show a different current-ratio norm than a consulting firm?
 
 Balance sheet identity: assets = liabilities + equity; classify fixed/non-current vs current assets and liabilities; equity is the owners' financing share.
 

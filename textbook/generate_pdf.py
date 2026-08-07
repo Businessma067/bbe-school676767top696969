@@ -202,6 +202,10 @@ def styles():
             "bbl", parent=b["Normal"], fontName="Helvetica",
             fontSize=10.5, textColor=INK, leading=14.4, alignment=TA_JUSTIFY, spaceAfter=7,
         ),
+        "example": ParagraphStyle(
+            "ex", parent=b["Normal"], fontName="Helvetica-Oblique",
+            fontSize=10.5, textColor=INK, leading=14.4, alignment=TA_JUSTIFY, spaceAfter=7,
+        ),
         "obj_h": ParagraphStyle(
             "oh", parent=b["Normal"], fontName="Helvetica-Bold",
             fontSize=11, textColor=INK, spaceBefore=6, spaceAfter=6,
@@ -1320,20 +1324,26 @@ def worked_block(b: dict, width: float):
     return KeepTogether([Spacer(1, 2), *parts, Spacer(1, 4)])
 
 
+def _prose(text: str, style="body"):
+    return Paragraph(esc(text), S[style])
+
+
 def blocks_to_flowables(blocks, width):
+    """Prose-first rendering: almost everything is flowing text, not UI cards."""
     out = []
     for b in blocks:
         t = b.get("type")
 
         if t == "p":
-            out.append(Paragraph(esc(b.get("text") or ""), S["body"]))
+            out.append(_prose(b.get("text") or ""))
             plain_parts.append(b.get("text") or "")
 
         elif t == "scene":
-            title = b.get("title") or ""
-            text = b.get("text") or ""
-            out.append(callout("SCENE", text, width, SCENE_BG, title=title))
-            plain_parts.append(f"SCENE {title}: {text}")
+            title = (b.get("title") or "").strip()
+            text = (b.get("text") or "").strip()
+            body = f"{title}. {text}" if title and not text.startswith(title) else text
+            out.append(_prose(body))
+            plain_parts.append(body)
 
         elif t == "idea":
             term = b.get("term") or ""
@@ -1342,54 +1352,61 @@ def blocks_to_flowables(blocks, width):
             plain_parts.append(f"{term}: {text}")
 
         elif t == "mechanism":
-            out.append(callout(
-                "MECHANISM",
-                b.get("text") or "",
-                width,
-                MECH_BG,
-                title=b.get("title") or "",
-            ))
-            plain_parts.append(b.get("text") or "")
+            title = (b.get("title") or "").strip()
+            text = (b.get("text") or "").strip()
+            body = f"{title}. {text}" if title and not text.lower().startswith(title.lower()) else text
+            out.append(_prose(body))
+            plain_parts.append(body)
 
         elif t == "think":
-            prompt = b.get("prompt") or b.get("text") or ""
-            out.append(callout("THINK", prompt, width, THINK_BG))
-            plain_parts.append(prompt)
+            # Soft inline prompt — no coloured box
+            prompt = (b.get("prompt") or b.get("text") or "").strip()
+            if prompt:
+                out.append(Paragraph(f"<i>{esc(prompt)}</i>", S["example"]))
+                plain_parts.append(prompt)
 
         elif t == "trap":
-            out.append(callout("TRAP", b.get("text") or "", width, TRAP_BG))
-            plain_parts.append(b.get("text") or "")
+            text = (b.get("text") or "").strip()
+            # Strip loud "Trap:" prefix if present
+            clean = re.sub(r"^(common\s+mistake|trap)\s*[:.—-]\s*", "", text, flags=re.I)
+            out.append(_prose(f"A common mistake: {clean}"))
+            plain_parts.append(clean)
 
         elif t == "exam":
-            out.append(callout("EXAM", b.get("text") or "", width, EXAM_BG))
-            plain_parts.append(b.get("text") or "")
+            text = (b.get("text") or "").strip()
+            clean = re.sub(r"^(exam(\s+recognition)?|in the exam)\s*[:.—-]\s*", "", text, flags=re.I)
+            out.append(_prose(f"In the exam: {clean}"))
+            plain_parts.append(clean)
 
         elif t == "connect":
-            out.append(callout("CONNECT", b.get("text") or "", width, CONNECT_BG))
+            out.append(_prose(b.get("text") or ""))
             plain_parts.append(b.get("text") or "")
 
         elif t == "formula":
+            # Light formula strip only (not a full callout card)
             out.append(formula_block(b, width))
             plain_parts.append(b.get("text") or "")
 
         elif t == "worked":
-            out.append(worked_block(b, width))
+            title = b.get("title") or "Example"
+            steps = b.get("steps") or []
+            result = b.get("result") or ""
+            joined = " ".join(str(s).rstrip(".") + "." for s in steps)
+            body = f"{title}. {joined}"
+            if result:
+                body += f" {result}"
+            out.append(Paragraph(f"<i>{esc(body)}</i>", S["example"]))
+            plain_parts.append(body)
 
         elif t == "takeaways":
-            parts = [Paragraph("Key takeaways", S["take_h"])]
             for item in b.get("items") or []:
-                parts.append(SquareBullet(item, width))
+                out.append(SquareBullet(item, width))
                 plain_parts.append(item)
-            parts.append(Spacer(1, 4))
-            out.append(KeepTogether(parts))
+            out.append(Spacer(1, 4))
 
         elif t == "check":
-            parts = [Paragraph("Self-check", S["check_h"])]
-            for i, item in enumerate(b.get("items") or [], 1):
-                parts.append(Paragraph(f"<b>{i}.</b>  {esc(item)}", S["worked_step"]))
-                plain_parts.append(item)
-            parts.append(Spacer(1, 4))
-            out.append(KeepTogether(parts))
+            # Skip self-check boxes in the PDF — chapter recap covers revision
+            continue
 
         elif t == "bullets":
             for item in b.get("items") or []:
@@ -1410,10 +1427,22 @@ def blocks_to_flowables(blocks, width):
             out.append(figure_block(b.get("id") or "", b.get("caption") or "", width))
 
         elif t == "compare":
-            out.append(Spacer(1, 3))
-            out.append(make_compare(b, width))
+            # Two short prose paragraphs instead of a dual card
+            title = (b.get("title") or "").strip()
+            if title:
+                out.append(Paragraph(f"<b>{esc(title)}</b>", S["subsec"]))
+            left = b.get("left") or {}
+            right = b.get("right") or {}
+            for side in (left, right):
+                st = (side.get("title") or "").strip()
+                items = side.get("items") or []
+                if not st and not items:
+                    continue
+                joined = "; ".join(str(i) for i in items)
+                text = f"{st}: {joined}." if st else f"{joined}."
+                out.append(_prose(text))
+                plain_parts.append(text)
 
-        # Legacy / fallback types from older exports
         elif t == "definition":
             out.append(Paragraph(lead_bold(b.get("term") or "", b.get("text") or ""), S["body_boldlead"]))
             plain_parts.append(f"{b.get('term')}: {b.get('text')}")
@@ -1426,7 +1455,7 @@ def blocks_to_flowables(blocks, width):
             plain_parts.append(b.get("text") or "")
 
         elif b.get("text"):
-            out.append(Paragraph(esc(b["text"]), S["body"]))
+            out.append(_prose(b["text"]))
             plain_parts.append(b["text"])
 
     return out
