@@ -44,7 +44,7 @@ SCENE_BG = HexColor("#F7F4F0")
 THINK_BG = HexColor("#EEF4F1")
 CONNECT_BG = HexColor("#F5F2EE")
 MECH_BG = HexColor("#FBF0E6")
-GRID = HexColor("#E8DACB")
+GRID = HexColor("#F0E8DE")  # very light — guides must never compete with labels
 AXIS = HexColor("#4A423B")
 CURVE2 = HexColor("#8A6A4F")
 NOTE = HexColor("#3F3730")
@@ -106,14 +106,27 @@ def esc(s: str) -> str:
     )
 
 
-def strip_label(caption: str, kind: str) -> str:
-    """Drop any hand-written 'Figure 3.' / 'Table 2:' prefix so numbering stays global."""
-    return re.sub(
-        rf"^\s*{kind}\s*\d*\s*[.:\u2014-]?\s*",
-        "",
-        (caption or "").strip(),
-        flags=re.I,
-    )
+def rich(s: str) -> str:
+    """Escape text but honour **semantic bold** markers like the Fuhrmann book."""
+    s = (s or "").translate(_UNICODE_FIX)
+    parts = re.split(r"\*\*(.+?)\*\*", s)
+    out = []
+    for i, part in enumerate(parts):
+        piece = (
+            part.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("\n", "<br/>")
+        )
+        out.append(f"<b>{piece}</b>" if i % 2 else piece)
+    return "".join(out)
+
+
+def strip_label(caption: str, kind: str = "") -> str:
+    """Drop 'Figure 13.' / 'Table 9:' style prefixes — captions are descriptive only."""
+    s = (caption or "").strip()
+    s = re.sub(r"^\s*(figure|table|fig\.?|tab\.?)\s*\d*\s*[.:\u2014\-–—]?\s*", "", s, flags=re.I)
+    return s.strip()
 
 
 def lead_bold(term: str, text: str) -> str:
@@ -226,7 +239,7 @@ def styles():
             fontSize=11.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
         ),
         "bullet": ParagraphStyle(
-            "bu", parent=b["Normal"], fontName="Helvetica-Bold",
+            "bu", parent=b["Normal"], fontName="Helvetica",
             fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=4,
         ),
         "body_emph": ParagraphStyle(
@@ -316,7 +329,17 @@ class SquareBullet(Flowable):
     def __init__(self, text: str, width: float, style_name: str = "bullet"):
         super().__init__()
         self.width = width
-        self._p = Paragraph(esc(text), S[style_name])
+        # Bullets: first clause bold when marked with **…**; else lead phrase before —/:
+        raw = (text or "").strip()
+        if "**" in raw:
+            html = rich(raw)
+        else:
+            m = re.match(r"^(.+?)(\s*[—–\-:]\s*)(.+)$", raw, flags=re.S)
+            if m and len(m.group(1)) <= 48:
+                html = f"<b>{esc(m.group(1))}</b>{esc(m.group(2))}{rich(m.group(3)) if '**' in m.group(3) else esc(m.group(3))}"
+            else:
+                html = esc(raw)
+        self._p = Paragraph(html, S[style_name])
         self._h = 0
 
     def wrap(self, aw, ah):
@@ -450,11 +473,14 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
     total_w = sum(weights) or 1
     col_ws = [width * w / total_w for w in weights]
 
-    # Per-column alignment: numeric columns centred, label columns left
+    # Per-column alignment: money/numbers RIGHT, labels LEFT (Fuhrmann account style)
     aligns = []
     for i in range(ncols):
         vals = [r[i] for r in norm_rows if str(r[i]).strip()]
-        if center_body or (vals and all(_is_numeric_cell(v) for v in vals)):
+        hdr = str(headers[i]).strip().lower()
+        if hdr in ("eur", "€", "$", "%") or (vals and all(_is_numeric_cell(v) for v in vals)):
+            aligns.append("RIGHT")
+        elif center_body:
             aligns.append("CENTER")
         else:
             aligns.append("LEFT")
@@ -463,12 +489,19 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
 
     def cell_para(text, header=False, align="LEFT", bold_label=False):
         if header:
-            style = S["cell_h"] if align == "CENTER" else S["cell_h_l"]
+            style = S["cell_h"] if align != "LEFT" else S["cell_h_l"]
         elif bold_label:
             style = S["cell_b"]
+        elif align == "CENTER":
+            style = S["cell_c"]
+        elif align == "RIGHT":
+            # right-aligned via table ALIGN; keep left para style for wrapping control
+            style = ParagraphStyle(
+                "cellr", parent=S["cell"], alignment=TA_RIGHT,
+            )
         else:
-            style = S["cell_c"] if align == "CENTER" else S["cell"]
-        return Paragraph(esc(str(text)), style)
+            style = S["cell"]
+        return Paragraph(rich(str(text)) if "**" in str(text) else esc(str(text)), style)
 
     data = [[cell_para(headers[i], True, aligns[i]) for i in range(ncols)]]
     for r in norm_rows:
@@ -485,20 +518,24 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 7),
         ("RIGHTPADDING", (0, 0), (-1, -1), 7),
-        ("TOPPADDING", (0, 0), (-1, -1), 6),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
-        # dashed internals like Fuhrmann — no heavy outer box
-        ("LINEBELOW", (0, 0), (-1, -2), 0.65, ACCENT_LIGHT, 1, (1.5, 2)),
-        ("LINEAFTER", (0, 0), (-2, -1), 0.65, ACCENT_LIGHT, 1, (1.5, 2)),
+        ("TOPPADDING", (0, 0), (-1, -1), 7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+        # dashed internals like Fuhrmann — no heavy outer box; padding keeps text off dashes
+        ("LINEBELOW", (0, 0), (-1, -2), 0.55, ACCENT_LIGHT, 1, (1.5, 2.5)),
+        ("LINEAFTER", (0, 0), (-2, -1), 0.55, ACCENT_LIGHT, 1, (1.5, 2.5)),
         ("LINEBELOW", (0, -1), (-1, -1), 0.9, ACCENT),
     ]
     for i, al in enumerate(aligns):
         cmds.append(("ALIGN", (i, 0), (i, -1), al))
     t.setStyle(TableStyle(cmds))
 
+    # Caption without "Table N." — descriptive italic line only
     cap = strip_label(caption, "table")
-    cap = f"Table {TABLE_N}. {cap}" if cap else f"Table {TABLE_N}."
-    return KeepTogether([Spacer(1, 2), t, Paragraph(esc(cap), S["caption"]), Spacer(1, 6)])
+    parts = [Spacer(1, 2), t]
+    if cap:
+        parts.append(Paragraph(rich(cap), S["caption"]))
+    parts.append(Spacer(1, 6))
+    return KeepTogether(parts)
 
 
 def make_compare(block: dict, width: float):
@@ -578,6 +615,34 @@ def _arrow(c, x1, y1, x2, y2, color=ACCENT, lw=1.1, head=5.5, dashed=False):
     c.line(x1, y1, x2 - head * 0.8 * math.cos(ang), y2 - head * 0.8 * math.sin(ang))
     c.setDash()
     _head(c, x2, y2, ang, head, color)
+
+
+def _h_arrow_labeled(c, x1, x2, y, label, color=ACCENT, lw=1.15, head=5.5, size=9):
+    """Horizontal arrow with a clean label gap — text never sits on the shaft."""
+    if x2 < x1:
+        x1, x2 = x2, x1
+        to_right = False
+    else:
+        to_right = True
+    font = "Helvetica"
+    tw = c.stringWidth(label, font, size)
+    mid = (x1 + x2) / 2
+    gap = tw / 2 + 6
+    # leave a white pocket for the label
+    c.setFillColor(FIG_FILL)
+    c.rect(mid - gap, y - 5, gap * 2, 12, stroke=0, fill=1)
+    c.setStrokeColor(color)
+    c.setLineWidth(lw)
+    c.setDash()
+    if to_right:
+        c.line(x1, y, mid - gap, y)
+        c.line(mid + gap, y, x2 - head * 0.8, y)
+        _head(c, x2, y, 0, head, color)
+    else:
+        c.line(x2, y, mid + gap, y)
+        c.line(mid - gap, y, x1 + head * 0.8, y)
+        _head(c, x1, y, math.pi, head, color)
+    _txt(c, mid, y - 3, label, size, False, INK)
 
 
 def _arrow2(c, x1, y1, x2, y2, color=NOTE, lw=0.9, head=4.5):
@@ -708,17 +773,28 @@ def _fig_supply(c, x, y, w, h):
     def sup(q):
         return 20 + 5 * q
 
-    _curve(c, [(PX(4), PY(sup(4))), (PX(43), PY(sup(43)))], ACCENT, 2.0)
-    _txt(c, PX(43) + 4, PY(sup(43)) - 2, "S", 12, True, ACCENT, "l")
+    _curve(c, [(PX(4), PY(sup(4))), (PX(43), PY(sup(43)))], ACCENT, 2.2)
+    _txt(c, PX(43) + 5, PY(sup(43)) - 2, "S", 12, True, ACCENT, "l")
 
-    for q, name in ((12, "A"), (34, "B")):
-        _guides(c, ox, oy, PX(q), PY(sup(q)))
-        _marker(c, PX(q), PY(sup(q)), name, 5, -10)
+    # Horizontal price guides only (no long vertical dashes through annotations)
+    for q, name, dx, dy in ((12, "A", 7, 9), (34, "B", 7, 9)):
+        px, py = PX(q), PY(sup(q))
+        c.setStrokeColor(MUTED)
+        c.setLineWidth(0.55)
+        c.setDash(1.5, 2)
+        c.line(ox, py, px - 5, py)
+        # short stub toward the x-axis only — never a full drop through labels
+        c.line(px, py - 5, px, py - 18)
+        c.setDash()
+        _marker(c, px, py, name, dx, dy)
 
-    _txt(c, ox + 6, oy + ph - 8, "a higher price raises the quantity supplied (ceteris paribus)",
-         11.5, False, INK, "l", italic=True)
-    _txt(c, PX(25), PY(72), "from A to B only the price changed,", 11.5, False, INK, "l", italic=True)
-    _txt(c, PX(25), PY(48), "so we move along the same curve S", 11.5, False, INK, "l", italic=True)
+    # Notes only in the empty upper-left pocket above the curve
+    _txt(c, ox + 8, oy + ph - 12,
+         "higher price -> higher quantity supplied", 10, False, INK, "l", italic=True)
+    _txt(c, ox + 8, oy + ph - 26,
+         "(ceteris paribus)", 10, False, MUTED, "l", italic=True)
+    _txt(c, ox + 8, oy + ph - 44,
+         "A to B: only price changed — move along S", 10, False, INK, "l", italic=True)
 
 
 def _fig_demand(c, x, y, w, h):
@@ -729,17 +805,18 @@ def _fig_demand(c, x, y, w, h):
     def dem(q, shift=0.0):
         return 258 - 2.4 * (q + shift)
 
-    _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], ACCENT, 2.0)
-    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 12, True, ACCENT, "l")
+    _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], ACCENT, 2.2)
+    _txt(c, PX(92) + 5, PY(dem(92)) + 2, "D", 12, True, ACCENT, "l")
 
-    _curve(c, [(PX(8), PY(dem(8, 26))), (PX(66), PY(dem(66, 26)))], CURVE2, 1.4, dashed=True)
-    _txt(c, PX(66) + 4, PY(dem(66, 26)) + 2, "D1", 11, True, CURVE2, "l")
+    _curve(c, [(PX(8), PY(dem(8, 26))), (PX(66), PY(dem(66, 26)))], CURVE2, 1.5, dashed=True)
+    _txt(c, PX(66) + 5, PY(dem(66, 26)) + 2, "D1", 11, True, CURVE2, "l")
 
-    _arrow(c, PX(57.5), PY(120), PX(31.5), PY(120), CURVE2, 1.1, 5.5)
-    _txt(c, PX(70), PY(205), "a fall in demand shifts", 11.5, False, INK, "l", italic=True)
-    _txt(c, PX(70), PY(183), "the whole curve to D1", 11.5, False, INK, "l", italic=True)
-    _txt(c, PX(9), PY(70), "price change: move along D", 11.5, False, INK, "l", italic=True)
-    _txt(c, PX(9), PY(48), "non-price factors: D shifts to D1", 11.5, False, INK, "l", italic=True)
+    # Arrow between curves in clear mid band
+    _arrow(c, PX(52), PY(130), PX(28), PY(130), CURVE2, 1.2, 6)
+    _txt(c, PX(55), PY(145), "fall in demand -> whole curve shifts to D1",
+         10, False, INK, "l", italic=True)
+    _txt(c, ox + 8, oy + 20, "price change: move along D", 10, False, INK, "l", italic=True)
+    _txt(c, ox + 8, oy + 6, "income, tastes, substitutes: D shifts", 10, False, INK, "l", italic=True)
 
 
 def _fig_equilibrium(c, x, y, w, h):
@@ -756,66 +833,97 @@ def _fig_equilibrium(c, x, y, w, h):
     qe = (258 - 40) / (2.2 + 2.4)
     pe = sup(qe)
 
-    _curve(c, [(PX(8), PY(sup(8))), (PX(92), PY(sup(92)))], ACCENT, 2.0)
-    _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], AXIS, 1.8)
-    _txt(c, PX(92) + 4, PY(sup(92)) - 2, "S", 12, True, ACCENT, "l")
-    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 12, True, AXIS, "l")
+    _curve(c, [(PX(8), PY(sup(8))), (PX(92), PY(sup(92)))], ACCENT, 2.2)
+    _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], AXIS, 1.9)
+    _txt(c, PX(92) + 5, PY(sup(92)) - 2, "S", 12, True, ACCENT, "l")
+    _txt(c, PX(92) + 5, PY(dem(92)) + 2, "D", 12, True, AXIS, "l")
 
     ph_hi = 200
-    _arrow2(c, PX((258 - ph_hi) / 2.4), PY(ph_hi), PX((ph_hi - 40) / 2.2), PY(ph_hi))
-    _txt(c, PX(50), PY(ph_hi) + 5, "surplus: Qs > Qd, price falls", 11.5, False, INK)
+    x_lo = PX((258 - ph_hi) / 2.4)
+    x_hi = PX((ph_hi - 40) / 2.2)
+    _arrow2(c, x_lo, PY(ph_hi), x_hi, PY(ph_hi))
+    _txt(c, (x_lo + x_hi) / 2, PY(ph_hi) + 8, "surplus: Qs > Qd -> price falls",
+         10, False, INK)
 
     ph_lo = 90
-    _arrow2(c, PX((ph_lo - 40) / 2.2), PY(ph_lo), PX((258 - ph_lo) / 2.4), PY(ph_lo))
-    _txt(c, PX(48), PY(ph_lo) - 11, "shortage: Qd > Qs, price rises", 11.5, False, INK)
+    x_lo2 = PX((ph_lo - 40) / 2.2)
+    x_hi2 = PX((258 - ph_lo) / 2.4)
+    _arrow2(c, x_lo2, PY(ph_lo), x_hi2, PY(ph_lo))
+    _txt(c, (x_lo2 + x_hi2) / 2, PY(ph_lo) - 12, "shortage: Qd > Qs -> price rises",
+         10, False, INK)
 
-    _guides(c, ox, oy, PX(qe), PY(pe))
-    _marker(c, PX(qe), PY(pe), "E", 6, 4)
-    _txt(c, ox - 5, PY(pe) + 4, "P*", 12, True, ACCENT, "r")
-    _txt(c, PX(qe), oy - 19, "Q*", 12, True, ACCENT)
+    # Guides stop short of the marker; P*/Q* sit clear of the dashes
+    c.setStrokeColor(MUTED)
+    c.setLineWidth(0.55)
+    c.setDash(1.5, 2)
+    c.line(ox, PY(pe), PX(qe) - 6, PY(pe))
+    c.line(PX(qe), oy, PX(qe), PY(pe) - 6)
+    c.setDash()
+    _marker(c, PX(qe), PY(pe), "E", 8, 7)
+    _txt(c, ox - 6, PY(pe) + 5, "P*", 11, True, ACCENT, "r")
+    _txt(c, PX(qe) + 10, oy - 16, "Q*", 11, True, ACCENT, "l")
 
 
 def _fig_circular_flow(c, x, y, w, h):
-    bw, bh = w * 0.24, 92
-    lx = x + 2
-    rx = x + w - bw - 2
-    base = y + 24
-    gov_h = 26
-    gov_y = y + h - gov_h
+    """Three-sector circular flow: taxes up, public goods/transfers down, HH↔Biz opposite flows."""
+    bw, bh = w * 0.20, 42
     gx = x + (w - bw) / 2
+    gov_h = 28
+    gov_bottom = y + h - gov_h - 2
 
-    _box(c, gx, gov_y, bw, gov_h, ACCENT_SOFT, radius=2)
-    _txt(c, gx + bw / 2, gov_y + 9, "Government", 11.5, True, ACCENT)
+    lx, rx = x + 2, x + w - bw - 2
+    base = y + max(30, int(h * 0.28))
 
-    for px, l1, l2 in ((lx, "Private", "households"), (rx, "Businesses", "")):
-        _box(c, px, base, bw, bh, white, radius=2)
-        if l2:
-            _txt(c, px + bw / 2, base + bh / 2 + 2, l1, 11.5, True, ACCENT)
-            _txt(c, px + bw / 2, base + bh / 2 - 8, l2, 11.5, True, ACCENT)
-        else:
-            _txt(c, px + bw / 2, base + bh / 2 - 3, l1, 11.5, True, ACCENT)
+    _box(c, gx, gov_bottom, bw, gov_h, ACCENT_SOFT, stroke=FIG_EDGE, dashed=False, radius=2)
+    _txt(c, gx + bw / 2, gov_bottom + 10, "Government", 11, True, ACCENT)
 
-    x1, x2 = lx + bw + 6, rx - 6
+    _box(c, lx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=2)
+    _txt(c, lx + bw / 2, base + bh / 2 + 5, "Private", 11, True, INK)
+    _txt(c, lx + bw / 2, base + bh / 2 - 7, "households", 11, True, INK)
+
+    _box(c, rx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=2)
+    _txt(c, rx + bw / 2, base + bh / 2 - 3, "Businesses", 11, True, INK)
+
+    # Horizontal exchange corridor between the two boxes
+    x1, x2 = lx + bw + 8, rx - 8
+    mid = (x1 + x2) / 2
     lanes = [
-        (base + 76, "Goods and services", "left"),
-        (base + 54, "Payments for goods and services", "right"),
-        (base + 32, "Labour and other resources", "right"),
-        (base + 10, "Wages, rent, interest and profit", "left"),
+        (base + bh * 0.82, "Goods and services", "to_hh"),
+        (base + bh * 0.60, "Payments for goods and services", "to_biz"),
+        (base + bh * 0.38, "Labour and other resources", "to_biz"),
+        (base + bh * 0.16, "Wages, rent, interest and profit", "to_hh"),
     ]
     for ly, label, direction in lanes:
-        if direction == "left":
-            _arrow(c, x2, ly, x1, ly, ACCENT, 1.1, 5.5)
+        # to_hh: Businesses → Households (left); to_biz: Households → Businesses (right)
+        if direction == "to_hh":
+            _h_arrow_labeled(c, x2, x1, ly, label, ACCENT, 1.25, 6.5, 9)
         else:
-            _arrow(c, x1, ly, x2, ly, ACCENT, 1.1, 5.5)
-        _txt(c, (x1 + x2) / 2, ly + 4, label, 11.5, False, INK)
+            _h_arrow_labeled(c, x1, x2, ly, label, ACCENT, 1.25, 6.5, 9)
 
-    for px, side in ((lx + bw * 0.4, "r"), (rx + bw * 0.6, "l")):
-        _arrow(c, px, base + bh, px, gov_y - 3, ACCENT_LIGHT, 1.0, 5)
-        _txt(c, px + (-3 if side == "r" else 3), (base + bh + gov_y) / 2 - 3,
-             "taxes", 9, False, INK, side)
-    _txt(c, x + w / 2, gov_y - 12, "public goods, transfers and subsidies", 11.5, False, INK)
-    _txt(c, x + w / 2, y + 4, "real flows and monetary flows run in opposite directions",
-         11.5, False, INK, italic=True)
+    # Taxes: outer vertical arrows UP into government
+    tax_lx = lx + bw * 0.22
+    tax_rx = rx + bw * 0.78
+    tax_from = base + bh + 3
+    tax_to = gov_bottom - 1
+    _arrow(c, tax_lx, tax_from, tax_lx, tax_to, MUTED, 1.15, 5.5)
+    _txt(c, tax_lx + 6, (tax_from + tax_to) / 2 - 2, "taxes", 9, False, MUTED, "l")
+    _arrow(c, tax_rx, tax_from, tax_rx, tax_to, MUTED, 1.15, 5.5)
+    _txt(c, tax_rx - 6, (tax_from + tax_to) / 2 - 2, "taxes", 9, False, MUTED, "r")
+
+    # Public goods / transfers / subsidies: inner vertical arrows DOWN (labeled on each side)
+    down_lx = lx + bw * 0.78
+    down_rx = rx + bw * 0.22
+    mid_down = (gov_bottom + base + bh) / 2
+    _arrow(c, down_lx, gov_bottom - 1, down_lx, base + bh + 3, ACCENT, 1.2, 6)
+    _arrow(c, down_rx, gov_bottom - 1, down_rx, base + bh + 3, ACCENT, 1.2, 6)
+    _txt(c, down_lx + 5, mid_down + 6, "public goods,", 8.5, False, INK, "l")
+    _txt(c, down_lx + 5, mid_down - 5, "transfers", 8.5, False, INK, "l")
+    _txt(c, down_rx - 5, mid_down + 6, "subsidies &", 8.5, False, INK, "r")
+    _txt(c, down_rx - 5, mid_down - 5, "public goods", 8.5, False, INK, "r")
+
+    _txt(c, x + w / 2, y + 5,
+         "real flows and monetary flows run in opposite directions",
+         9.5, False, MUTED, italic=True)
 
 
 def _fig_sectors(c, x, y, w, h):
@@ -846,24 +954,24 @@ def _fig_sectors(c, x, y, w, h):
 
 
 def _fig_ownership(c, x, y, w, h):
-    def node(px, py, bw, bh, title, sub="", size=9.5, fill=white):
+    def node(px, py, bw, bh, title, sub="", size=9.5, fill=white, title_color=INK):
         _box(c, px, py, bw, bh, fill)
         if sub:
-            _txt(c, px + bw / 2, py + bh / 2 + 4, title, size, True, ACCENT)
-            _txt(c, px + bw / 2, py + bh / 2 - 9, sub, 11.5, False, INK)
+            _txt(c, px + bw / 2, py + bh / 2 + 4, title, size, True, title_color)
+            _txt(c, px + bw / 2, py + bh / 2 - 9, sub, 10.5, False, MUTED)
         else:
-            _txt(c, px + bw / 2, py + bh / 2 - 3, title, size, True, ACCENT)
+            _txt(c, px + bw / 2, py + bh / 2 - 3, title, size, True, title_color)
 
     root_w, root_h = w * 0.60, 28
     root_x = x + (w - root_w) / 2
     root_y = y + h - root_h
-    node(root_x, root_y, root_w, root_h, "Forms of business ownership", "", 10, ACCENT_SOFT)
+    node(root_x, root_y, root_w, root_h, "Forms of business ownership", "", 10, ACCENT_SOFT, ACCENT)
 
     mid_w, mid_h = w * 0.44, 42
     mid_y = y + h * 0.44
     lx, rx = x, x + w - mid_w
-    node(lx, mid_y, mid_w, mid_h, "Unincorporated", "no separate legal person; owner = manager")
-    node(rx, mid_y, mid_w, mid_h, "Incorporated", "separate legal person; limited liability")
+    node(lx, mid_y, mid_w, mid_h, "Unincorporated", "no separate legal person; owner = manager", 10.5, white, ACCENT)
+    node(rx, mid_y, mid_w, mid_h, "Incorporated", "separate legal person; limited liability", 10.5, white, ACCENT)
 
     _tree(c, root_x + root_w / 2, root_y, [lx + mid_w / 2, rx + mid_w / 2], mid_y + mid_h)
 
@@ -879,7 +987,7 @@ def _fig_ownership(c, x, y, w, h):
     xs = []
     for i, (t, s) in enumerate(leaves):
         px = x + i * (lw_ + gap)
-        node(px, leaf_y, lw_, leaf_h, t, s, 9)
+        node(px, leaf_y, lw_, leaf_h, t, s, 10, white, INK)
         xs.append(px + lw_ / 2)
 
     _tree(c, lx + mid_w / 2, mid_y, xs[:2], leaf_y + leaf_h)
@@ -908,17 +1016,16 @@ def _fig_mix(c, x, y, w, h):
     for title, sub, bx, by, _, _ in items:
         _box(c, bx, by, bw, bh, white)
         _txt(c, bx + bw / 2, by + bh - 17, title, 12, True, ACCENT)
-        _txt(c, bx + bw / 2, by + bh - 30, sub, 11.5, False, INK)
+        _txt(c, bx + bw / 2, by + bh - 30, sub, 10.5, False, INK)
 
     c.setFillColor(ACCENT_SOFT)
     c.setStrokeColor(ACCENT)
-    c.setLineWidth(1.1)
-    c.setDash(1.6, 1.6)
-    c.circle(cx, cy, r, stroke=1, fill=1)
+    c.setLineWidth(1.0)
     c.setDash()
+    c.circle(cx, cy, r, stroke=1, fill=1)
     _txt(c, cx, cy + 4, "Marketing", 12, True, ACCENT)
     _txt(c, cx, cy - 6, "mix", 12, True, ACCENT)
-    _txt(c, cx, cy - 18, "the four Ps", 11.5, False, INK)
+    _txt(c, cx, cy - 18, "the four Ps", 10.5, False, MUTED)
 
 
 def _fig_plc(c, x, y, w, h):
@@ -1051,46 +1158,54 @@ def _fig_fs(c, x, y, w, h):
 
 
 def _fig_bs(c, x, y, w, h):
+    """Fuhrmann-style T-account: orange rules, dotted separator ABOVE totals, clear gap."""
+    # Inner white panel with thin orange border (outer cream frame comes from Diagram)
+    note_h = 14
+    panel_b = y + note_h
+    panel_h = h - note_h
     mid = x + w / 2
-    top = y + h
-    bottom = y + 16
-    _box(c, x, bottom, w, top - bottom, white, ACCENT, dashed=False, lw=0.9)
+    top = panel_b + panel_h
+    _box(c, x, panel_b, w, panel_h, white, ACCENT, dashed=False, lw=1.0)
 
-    head_y = top - 24
+    head_y = top - 22
     c.setStrokeColor(ACCENT)
-    c.setLineWidth(0.9)
+    c.setLineWidth(1.0)
     c.line(x, head_y, x + w, head_y)
-    c.line(mid, bottom, mid, top)
-    _txt(c, x + w * 0.25, head_y + 8, "Assets", 12, True, ACCENT)
-    _txt(c, x + w * 0.75, head_y + 8, "Equity and liabilities", 12, True, ACCENT)
+    c.line(mid, panel_b, mid, top)
+    _txt(c, x + w * 0.25, head_y + 7, "Assets", 12, True, ACCENT)
+    _txt(c, x + w * 0.75, head_y + 7, "Equity and liabilities", 12, True, ACCENT)
 
     left = [("Office equipment", "25,000"), ("Van", "8,000"),
             ("Inventory", "12,500"), ("Cash and bank", "3,500")]
-    right = [("Owner's equity", "24,000"), ("Bank loan", "25,000"), ("", ""), ("", "")]
+    right = [("Owner's equity", "24,000"), ("Bank loan", "25,000")]
 
-    for i, ((la, lv), (ra, rv)) in enumerate(zip(left, right)):
-        yy = head_y - 16 - i * 14
-        if la:
-            _txt(c, x + 12, yy, la, 11.5, False, INK, "l")
-            _txt(c, mid - 12, yy, lv, 11.5, False, INK, "r")
-        if ra:
-            _txt(c, mid + 12, yy, ra, 11.5, False, INK, "l")
-            _txt(c, x + w - 12, yy, rv, 11.5, False, INK, "r")
+    row_gap = 15
+    for i, (la, lv) in enumerate(left):
+        yy = head_y - 18 - i * row_gap
+        _txt(c, x + 10, yy, la, 11, False, INK, "l")
+        _txt(c, mid - 10, yy, lv, 11, False, INK, "r")
+    for i, (ra, rv) in enumerate(right):
+        yy = head_y - 18 - i * row_gap
+        _txt(c, mid + 10, yy, ra, 11, False, INK, "l")
+        _txt(c, x + w - 10, yy, rv, 11, False, INK, "r")
 
-    tot_y = bottom + 10
+    # Totals sit clearly BELOW the dotted rule (never on the dashes)
+    tot_baseline = panel_b + 8
+    rule_y = tot_baseline + 14
     c.setStrokeColor(ACCENT_LIGHT)
-    c.setLineWidth(0.7)
-    c.setDash(1, 2)
-    c.line(x + 12, tot_y + 10, mid - 12, tot_y + 10)
-    c.line(mid + 12, tot_y + 10, x + w - 12, tot_y + 10)
+    c.setLineWidth(0.75)
+    c.setDash(1.2, 2.2)
+    c.line(x + 10, rule_y, mid - 10, rule_y)
+    c.line(mid + 10, rule_y, x + w - 10, rule_y)
     c.setDash()
-    _txt(c, x + 12, tot_y, "Total assets", 11.5, True, INK, "l")
-    _txt(c, mid - 12, tot_y, "49,000", 11.5, True, INK, "r")
-    _txt(c, mid + 12, tot_y, "Total equity and liabilities", 11.5, True, INK, "l")
-    _txt(c, x + w - 12, tot_y, "49,000", 11.5, True, INK, "r")
+    _txt(c, x + 10, tot_baseline, "Total assets", 11, True, INK, "l")
+    _txt(c, mid - 10, tot_baseline, "49,000", 11, True, INK, "r")
+    _txt(c, mid + 10, tot_baseline, "Total equity and liabilities", 11, True, INK, "l")
+    _txt(c, x + w - 10, tot_baseline, "49,000", 11, True, INK, "r")
 
-    _txt(c, x + w / 2, y + 3, "assets = equity + liabilities (both sides always balance)",
-         11.5, False, INK, italic=True)
+    _txt(c, x + w / 2, y + 2,
+         "assets = equity + liabilities (both sides always balance)",
+         10, False, MUTED, italic=True)
 
 
 def _fig_economic_systems(c, x, y, w, h):
@@ -1213,17 +1328,17 @@ FIGURES = {
 }
 
 FIG_HEIGHTS = {
-    "circular-flow": 245,
-    "supply-curve": 220,
-    "demand-curve": 220,
-    "equilibrium": 235,
+    "circular-flow": 268,
+    "supply-curve": 228,
+    "demand-curve": 228,
+    "equilibrium": 242,
     "economic-sectors": 148,
     "ownership-overview": 230,
     "marketing-mix": 210,
     "product-life-cycle": 220,
     "bcg-matrix": 225,
     "financial-statements": 165,
-    "balance-sheet": 172,
+    "balance-sheet": 188,
     "economic-systems": 175,
     "stakeholder-map": 250,
     "finance-sources": 210,
@@ -1268,13 +1383,13 @@ def figure_block(fid: str, caption: str, width: float):
     FIGURE_N += 1
     if fid and fid not in FIGURES and fid not in PLACEHOLDER_FIGS:
         PLACEHOLDER_FIGS.append(fid)
+    # Caption without "Figure N." — descriptive italic line only
     cap = strip_label(caption, "figure")
-    cap = f"Figure {FIGURE_N}. {cap}" if cap else f"Figure {FIGURE_N}."
-    return KeepTogether([
-        Diagram(fid, width),
-        Paragraph(esc(cap), S["caption"]),
-        Spacer(1, 4),
-    ])
+    parts = [Diagram(fid, width)]
+    if cap:
+        parts.append(Paragraph(rich(cap), S["caption"]))
+    parts.append(Spacer(1, 4))
+    return KeepTogether(parts)
 
 
 class SetHeader(Flowable):
@@ -1330,6 +1445,7 @@ def chrome(canvas, doc):
 
 
 def formula_block(b: dict, width: float):
+    """Soft wash + thick orange rule on top only (Fuhrmann callout style)."""
     label = b.get("label") or ""
     text = b.get("text") or ""
     vars_s = b.get("vars") or ""
@@ -1340,16 +1456,15 @@ def formula_block(b: dict, width: float):
     body = Paragraph("<br/>".join(bits), S["formula"])
     rows = [[body]]
     if vars_s:
-        rows.append([Paragraph(esc(vars_s), S["formula_vars"])])
+        rows.append([Paragraph(rich(vars_s) if "**" in vars_s else f"<i>{esc(vars_s)}</i>", S["formula_vars"])])
     box = Table(rows, colWidths=[width])
     box.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), ACCENT_SOFT),
-        ("LINEBELOW", (0, -1), (-1, -1), 0.8, ACCENT),
-        ("LINEABOVE", (0, 0), (-1, 0), 0.8, ACCENT),
-        ("LEFTPADDING", (0, 0), (-1, -1), 10),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LINEABOVE", (0, 0), (-1, 0), 2.2, ACCENT),  # top accent only
+        ("LEFTPADDING", (0, 0), (-1, -1), 12),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 12),
+        ("TOPPADDING", (0, 0), (-1, -1), 9),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 9),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
     ]))
     return KeepTogether([Spacer(1, 3), box, Spacer(1, 7)])
@@ -1367,7 +1482,8 @@ def worked_block(b: dict, width: float):
 
 
 def _prose(text: str, style="body"):
-    return Paragraph(esc(text), S[style])
+    """Body text with optional **semantic bold** markers."""
+    return Paragraph(rich(text or ""), S[style])
 
 
 def blocks_to_flowables(blocks, width):
@@ -1390,13 +1506,16 @@ def blocks_to_flowables(blocks, width):
         elif t == "idea":
             term = b.get("term") or ""
             text = b.get("text") or ""
-            # Stronger definition emphasis: bold term + em dash into the explanation
+            # Bold the defined term; honour **…** inside the explanation
             term_s = (term or "").strip()
             text_s = (text or "").strip()
             if term_s and text_s.lower().startswith(term_s.lower()):
-                html = lead_bold(term_s, text_s)
+                rest = text_s[len(term_s):]
+                html = f"<b>{esc(text_s[: len(term_s)])}</b>{rich(rest)}"
+            elif term_s:
+                html = f"<b>{esc(term_s)}</b> — {rich(text_s)}"
             else:
-                html = f"<b>{esc(term_s)}</b> — {esc(text_s)}"
+                html = rich(text_s)
             out.append(Paragraph(html, S["body_boldlead"]))
             plain_parts.append(f"{term}: {text}")
 
