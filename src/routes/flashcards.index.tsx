@@ -1,7 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
-import mathAsset from "@/assets/math-bw.jpg.asset.json";
-import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Layers } from "lucide-react";
@@ -25,12 +22,6 @@ export const Route = createFileRoute("/flashcards/")({
   }),
   component: FlashcardsIndexPage,
 });
-
-const SUBJECT_IMAGES: Record<string, string> = {
-  economics: economicsAsset.url,
-  math: mathAsset.url,
-  english: englishAsset.url,
-};
 
 function FlashcardsIndexPage() {
   return (
@@ -67,25 +58,22 @@ function FlashcardsIndexPage() {
           <div className="grid gap-6 md:grid-cols-3">
             {FLASHCARD_SUBJECTS.map((s) => {
               const n = countCards(s.sections);
-              return (
-                <div
-                  key={s.id}
-                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                  style={{ borderTop: `4px solid ${s.accent}` }}
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
-                    <img
-                      src={SUBJECT_IMAGES[s.id]}
-                      alt={`${s.title} flashcards`}
-                      width={768}
-                      height={576}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              const cardInner = (
+                <>
+                  <div
+                    className="relative flex aspect-[4/3] items-end overflow-hidden p-5"
+                    style={{
+                      background: `linear-gradient(145deg, ${s.accent} 0%, ${s.accent}cc 45%, #1a1a1a 120%)`,
+                    }}
+                  >
+                    <div
+                      className="pointer-events-none absolute inset-0 opacity-30"
+                      style={{
+                        backgroundImage:
+                          "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35), transparent 45%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.25), transparent 50%)",
+                      }}
                     />
-                    <span
-                      className="absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white shadow-sm"
-                      style={{ backgroundColor: s.accent }}
-                    >
+                    <span className="relative rounded-full bg-white/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
                       {s.tag}
                     </span>
                   </div>
@@ -105,30 +93,48 @@ function FlashcardsIndexPage() {
                         ? "Coming soon"
                         : `${n} cards · ${s.sections.length} topics`}
                     </p>
-                    {s.comingSoon ? (
-                      <button
-                        type="button"
-                        disabled
-                        className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-70 shadow-sm"
-                        style={{ backgroundColor: s.accent }}
-                      >
-                        Coming soon
-                      </button>
-                    ) : (
-                      <Link
-                        to="/flashcards/$subject"
-                        params={{ subject: s.id }}
-                        className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                        style={{
-                          backgroundColor: s.accent,
-                          boxShadow: `0 4px 14px -4px ${s.accent}80`,
-                        }}
-                      >
-                        Study flashcards →
-                      </Link>
-                    )}
+                    <span
+                      className={
+                        "mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm " +
+                        (s.comingSoon
+                          ? "cursor-not-allowed opacity-70"
+                          : "transition-all group-hover:brightness-110")
+                      }
+                      style={{
+                        backgroundColor: s.accent,
+                        boxShadow: s.comingSoon
+                          ? undefined
+                          : `0 4px 14px -4px ${s.accent}80`,
+                      }}
+                    >
+                      {s.comingSoon ? "Coming soon" : "Study flashcards →"}
+                    </span>
                   </div>
-                </div>
+                </>
+              );
+
+              if (s.comingSoon) {
+                return (
+                  <div
+                    key={s.id}
+                    className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+                    style={{ borderTop: `4px solid ${s.accent}` }}
+                  >
+                    {cardInner}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={s.id}
+                  to="/flashcards/$subject"
+                  params={{ subject: s.id }}
+                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                  style={{ borderTop: `4px solid ${s.accent}` }}
+                >
+                  {cardInner}
+                </Link>
               );
             })}
           </div>
