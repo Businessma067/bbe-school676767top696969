@@ -179,7 +179,8 @@ export function countsFromWeights(weights: number[], total: number): number[] {
 }
 
 export function percentsFromWeights(weights: number[]): number[] {
-  return weights.map((w) => Math.round(w * 1000) / 10); // 1 decimal
+  // Integer percents that always sum to exactly 100.
+  return countsFromWeights(weights, 100);
 }
 
 /** Renormalize floats so displayed percents aren't wildly off; keep exact sum of weights = 1. */
@@ -278,11 +279,6 @@ export function buildWeightedTopics(
   const weights = normalizeWeights(weightsFromPoint(p, vertices));
   const counts = countsFromWeights(weights, questionCount);
   const percents = percentsFromWeights(weights);
-  // Fix percent display to sum ~100 with largest-remainder on tenths
-  const adjPercents = countsFromWeights(
-    weights,
-    1000,
-  ).map((c) => c / 10);
 
   return {
     point: p,
@@ -293,7 +289,7 @@ export function buildWeightedTopics(
     topics: topics.map((t, i) => ({
       ...t,
       weight: weights[i] ?? 0,
-      percent: adjPercents[i] ?? percents[i] ?? 0,
+      percent: percents[i] ?? 0,
       questions: counts[i] ?? 0,
     })),
   };

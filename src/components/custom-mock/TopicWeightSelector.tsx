@@ -16,9 +16,10 @@ import {
 import { Dices, Equal, Focus, RotateCcw } from "lucide-react";
 
 const ACCENT = "#8B5E3C";
-const VIEW = 220;
-const PAD = 36;
-const R = 78;
+const ACCENT_SOFT = "#C4A484";
+const VIEW = 240;
+const PAD = 42;
+const R = 82;
 
 type Props = {
   topics: TopicWeightTopic[];
@@ -38,6 +39,59 @@ function fromSvg(sx: number, sy: number): Vec2 {
   return { x: (sx - VIEW / 2) / R, y: (sy - VIEW / 2) / R };
 }
 
+function PanelShell({
+  children,
+  className,
+  empty,
+}: {
+  children: ReactNode;
+  className?: string;
+  empty?: boolean;
+}) {
+  return (
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-2xl border border-[#8B5E3C]/20 shadow-[0_18px_40px_-28px_rgba(139,94,60,0.55)]",
+        className,
+      )}
+    >
+      {/* Warm ivory stage + radial caramel wash */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: `
+            radial-gradient(ellipse 85% 70% at 50% 28%, color-mix(in oklab, ${ACCENT} 18%, transparent) 0%, transparent 62%),
+            radial-gradient(ellipse 90% 80% at 80% 100%, color-mix(in oklab, ${ACCENT_SOFT} 22%, transparent) 0%, transparent 55%),
+            linear-gradient(165deg, #FBF7F1 0%, #F3EBE1 48%, #EDE3D6 100%)
+          `,
+        }}
+      />
+      {/* Dot grid */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, color-mix(in oklab, #8B5E3C 28%, transparent) 1px, transparent 0)",
+          backgroundSize: "14px 14px",
+          maskImage: "radial-gradient(ellipse 70% 65% at 50% 45%, black 20%, transparent 75%)",
+        }}
+      />
+      {/* Soft top highlight */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-24 opacity-60"
+        style={{
+          background:
+            "linear-gradient(180deg, color-mix(in oklab, white 70%, transparent), transparent)",
+        }}
+      />
+      <div className={cn("relative z-10 p-4 sm:p-5", empty && "min-h-[300px]")}>{children}</div>
+    </div>
+  );
+}
+
 export function TopicWeightSelector({
   topics,
   questionCount,
@@ -46,7 +100,7 @@ export function TopicWeightSelector({
   onPointChange,
   title = "Topic weights",
 }: Props) {
-  const gid = useId();
+  const gid = useId().replace(/:/g, "");
   const svgRef = useRef<SVGSVGElement>(null);
   const dragging = useRef(false);
   const [localPoint, setLocalPoint] = useState<Vec2>(balancedPoint());
@@ -60,7 +114,6 @@ export function TopicWeightSelector({
       if (withSnap && !dragging.current) {
         next = applyMagneticSnap(next, verts).point;
       } else if (withSnap && dragging.current) {
-        // Soft snap while dragging — only when very close
         next = applyMagneticSnap(next, verts, 0.05).point;
       }
       if (!controlledPoint) setLocalPoint(next);
@@ -72,12 +125,11 @@ export function TopicWeightSelector({
   const computed = useMemo(
     () =>
       buildWeightedTopics(topics, point, questionCount, {
-        snap: false, // already snapped in setPoint
+        snap: false,
       }),
     [topics, point, questionCount],
   );
 
-  // Reset to centre when topic set identity changes
   const topicKey = topics.map((t) => t.id).join("|");
   useEffect(() => {
     setPoint(balancedPoint(), false);
@@ -127,38 +179,37 @@ export function TopicWeightSelector({
 
   if (topics.length === 0) {
     return (
-      <div
-        className={cn(
-          "flex h-full min-h-[280px] flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-background/50 p-6 text-center",
-          className,
-        )}
-      >
-        <p className="font-display text-sm font-semibold text-foreground">Shape your mock</p>
-        <p className="mt-2 max-w-xs text-xs text-muted-foreground">
-          Select at least one subtopic on the left. With two or more, a polygon appears so you can
-          balance how many questions each topic gets.
-        </p>
-      </div>
+      <PanelShell className={className} empty>
+        <div className="flex h-full min-h-[260px] flex-col items-center justify-center text-center">
+          <div className="mb-3 grid h-12 w-12 place-items-center rounded-full border border-[#8B5E3C]/25 bg-white/50 shadow-sm">
+            <Focus className="h-5 w-5 text-[#8B5E3C]" />
+          </div>
+          <p className="font-display text-base font-bold text-foreground">Shape your mock</p>
+          <p className="mt-2 max-w-[16rem] text-xs leading-relaxed text-muted-foreground">
+            Select subtopics on the left. With two or more, a polygon appears so you can balance how
+            many of the {questionCount} questions each topic gets.
+          </p>
+        </div>
+      </PanelShell>
     );
   }
 
   if (topics.length === 1) {
     const only = computed.topics[0];
     return (
-      <div className={cn("flex flex-col", className)}>
-        <h3 className="font-display text-sm font-semibold">{title}</h3>
-        <p className="mt-1 text-xs text-muted-foreground">One topic selected — full weight.</p>
-        <div className="mt-4 rounded-xl border border-border bg-background/60 p-4">
+      <PanelShell className={className}>
+        <Header title={title} subtitle="One topic selected — full weight" />
+        <div className="mt-4 rounded-xl border border-[#8B5E3C]/15 bg-white/55 p-4 backdrop-blur-sm">
           <div className="flex items-baseline justify-between gap-2">
             <span className="text-sm font-semibold">{only.label}</span>
-            <span className="font-display text-lg font-bold tabular-nums text-[#8B5E3C]">100%</span>
+            <span className="font-display text-2xl font-bold tabular-nums text-[#8B5E3C]">100%</span>
           </div>
           <p className="mt-1 text-xs text-muted-foreground">
             {only.questions} question{only.questions === 1 ? "" : "s"}
           </p>
         </div>
         <PreviewList topics={computed.topics} total={questionCount} />
-      </div>
+      </PanelShell>
     );
   }
 
@@ -167,21 +218,19 @@ export function TopicWeightSelector({
   const polyPoints = svgVerts.map((v) => `${v.x},${v.y}`).join(" ");
 
   return (
-    <div className={cn("flex flex-col", className)}>
-      <div className="flex flex-wrap items-end justify-between gap-2">
-        <div>
-          <h3 className="font-display text-sm font-semibold">{title}</h3>
-          <p className="mt-0.5 text-[11px] text-muted-foreground">
-            Drag the point to shape how questions are split
-          </p>
-        </div>
-      </div>
+    <PanelShell className={className}>
+      <Header title={title} subtitle="Drag the point to shape how questions are split" />
 
-      <div className="relative mx-auto mt-3 w-full max-w-[min(100%,380px)]">
+      <div className="relative mx-auto mt-2 w-full max-w-[min(100%,400px)]">
+        <div
+          className="absolute inset-[8%] rounded-full blur-2xl"
+          style={{ backgroundColor: "color-mix(in oklab, #8B5E3C 8%, transparent)" }}
+          aria-hidden
+        />
         <svg
           ref={svgRef}
           viewBox={`${-PAD} ${-PAD} ${VIEW + PAD * 2} ${VIEW + PAD * 2}`}
-          className="w-full touch-none select-none"
+          className="relative w-full touch-none select-none drop-shadow-sm"
           role="application"
           aria-label="Topic weight polygon. Drag the control point to redistribute questions."
           tabIndex={0}
@@ -206,12 +255,17 @@ export function TopicWeightSelector({
           }}
         >
           <defs>
-            <radialGradient id={`${gid}-glow`} cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor={ACCENT} stopOpacity="0.55" />
+            <radialGradient id={`${gid}-glow`} cx="50%" cy="50%" r="55%">
+              <stop offset="0%" stopColor={ACCENT} stopOpacity="0.35" />
+              <stop offset="70%" stopColor={ACCENT_SOFT} stopOpacity="0.12" />
               <stop offset="100%" stopColor={ACCENT} stopOpacity="0" />
             </radialGradient>
-            <filter id={`${gid}-soft`} x="-40%" y="-40%" width="180%" height="180%">
-              <feGaussianBlur stdDeviation="1.2" result="b" />
+            <linearGradient id={`${gid}-fill`} x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#FFFCF8" stopOpacity="0.92" />
+              <stop offset="100%" stopColor="#F0E4D6" stopOpacity="0.78" />
+            </linearGradient>
+            <filter id={`${gid}-soft`} x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="1.4" result="b" />
               <feMerge>
                 <feMergeNode in="b" />
                 <feMergeNode in="SourceGraphic" />
@@ -219,24 +273,22 @@ export function TopicWeightSelector({
             </filter>
           </defs>
 
-          {/* Soft fill */}
+          <polygon points={polyPoints} fill={`url(#${gid}-glow)`} />
           <polygon
             points={polyPoints}
-            fill={`url(#${gid}-glow)`}
-            fillOpacity={0.35}
-            stroke={ACCENT}
-            strokeOpacity={0.35}
-            strokeWidth={1.25}
-          />
-          <polygon
-            points={polyPoints}
-            fill="color-mix(in oklab, var(--card) 70%, transparent)"
+            fill={`url(#${gid}-fill)`}
             stroke={ACCENT}
             strokeOpacity={0.55}
-            strokeWidth={1.5}
+            strokeWidth={1.75}
+          />
+          <polygon
+            points={polyPoints}
+            fill="none"
+            stroke="white"
+            strokeOpacity={0.5}
+            strokeWidth={0.75}
           />
 
-          {/* Guide lines */}
           {svgVerts.map((v, i) => {
             const w = computed.topics[i]?.weight ?? 0;
             return (
@@ -247,33 +299,35 @@ export function TopicWeightSelector({
                 x2={v.x}
                 y2={v.y}
                 stroke={ACCENT}
-                strokeWidth={0.8 + w * 2.2}
-                strokeOpacity={0.12 + w * 0.55}
-                style={{ transition: draggingUi ? "none" : "stroke-opacity 180ms ease, stroke-width 180ms ease" }}
+                strokeWidth={0.9 + w * 2.4}
+                strokeOpacity={0.14 + w * 0.55}
+                style={{
+                  transition: draggingUi
+                    ? "none"
+                    : "stroke-opacity 180ms ease, stroke-width 180ms ease",
+                }}
               />
             );
           })}
 
-          {/* Vertices + labels */}
           {svgVerts.map((v, i) => {
             const w = computed.topics[i]?.weight ?? 0;
-            const pct = computed.topics[i]?.percent ?? 0;
+            const pct = Math.round(computed.topics[i]?.percent ?? 0);
             const label = topics[i].shortLabel ?? topics[i].label;
-            const r = 4.2 + w * 3.2;
-            const glow = w > 0.22;
-            // Place label outside along radius
+            const r = 4.5 + w * 3.5;
+            const glow = w > 0.2;
             const ang = Math.atan2(v.y - VIEW / 2, v.x - VIEW / 2);
-            const lx = v.x + Math.cos(ang) * 18;
-            const ly = v.y + Math.sin(ang) * 18;
+            const lx = v.x + Math.cos(ang) * 20;
+            const ly = v.y + Math.sin(ang) * 20;
             return (
               <g key={topics[i].id}>
                 {glow && (
                   <circle
                     cx={v.x}
                     cy={v.y}
-                    r={r + 5}
+                    r={r + 6}
                     fill={ACCENT}
-                    opacity={0.18 + w * 0.25}
+                    opacity={0.16 + w * 0.28}
                     filter={`url(#${gid}-soft)`}
                   />
                 )}
@@ -282,22 +336,24 @@ export function TopicWeightSelector({
                   cy={v.y}
                   r={r}
                   fill={ACCENT}
-                  fillOpacity={0.35 + w * 0.55}
-                  stroke={ACCENT}
-                  strokeWidth={1.2}
-                  style={{ transition: draggingUi ? "none" : "r 180ms ease, fill-opacity 180ms ease" }}
+                  fillOpacity={0.4 + w * 0.55}
+                  stroke="#FFF9F2"
+                  strokeWidth={1.4}
+                  style={{
+                    transition: draggingUi ? "none" : "r 180ms ease, fill-opacity 180ms ease",
+                  }}
                 />
                 <text
                   x={lx}
-                  y={ly}
+                  y={ly - 1}
                   textAnchor="middle"
                   dominantBaseline="middle"
                   className="font-display"
                   style={{
-                    fontSize: 8.5,
+                    fontSize: 9,
                     fontWeight: 700,
-                    fill: "currentColor",
-                    opacity: 0.45 + w * 0.55,
+                    fill: "#2A2118",
+                    opacity: 0.5 + w * 0.5,
                     transition: draggingUi ? "none" : "opacity 180ms ease",
                   }}
                 >
@@ -305,31 +361,30 @@ export function TopicWeightSelector({
                 </text>
                 <text
                   x={lx}
-                  y={ly + 10}
+                  y={ly + 11}
                   textAnchor="middle"
                   dominantBaseline="middle"
                   style={{
-                    fontSize: 8,
-                    fontWeight: 600,
+                    fontSize: 9,
+                    fontWeight: 700,
                     fill: ACCENT,
-                    opacity: 0.55 + w * 0.45,
+                    opacity: 0.6 + w * 0.4,
                     transition: draggingUi ? "none" : "opacity 180ms ease",
                   }}
                 >
-                  {pct % 1 === 0 ? `${pct}%` : `${pct.toFixed(1)}%`}
+                  {pct}%
                 </text>
               </g>
             );
           })}
 
-          {/* Control point */}
           <circle
             cx={ctrl.x}
             cy={ctrl.y}
-            r={draggingUi ? 9 : 8}
+            r={draggingUi ? 11 : 9.5}
             fill={ACCENT}
-            stroke="white"
-            strokeWidth={2.5}
+            stroke="#FFF9F2"
+            strokeWidth={3}
             filter={`url(#${gid}-soft)`}
             style={{
               cursor: "grab",
@@ -343,7 +398,7 @@ export function TopicWeightSelector({
           <circle
             cx={ctrl.x}
             cy={ctrl.y}
-            r={18}
+            r={20}
             fill="transparent"
             style={{ cursor: "grab", touchAction: "none" }}
             onPointerDown={onPointerDown}
@@ -390,6 +445,18 @@ export function TopicWeightSelector({
       </div>
 
       <PreviewList topics={computed.topics} total={questionCount} />
+    </PanelShell>
+  );
+}
+
+function Header({ title, subtitle }: { title: string; subtitle: string }) {
+  return (
+    <div>
+      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8B5E3C]/80">Mixer</p>
+      <h3 className="mt-0.5 font-display text-base font-bold tracking-tight text-foreground">
+        {title}
+      </h3>
+      <p className="mt-0.5 text-[11px] text-muted-foreground">{subtitle}</p>
     </div>
   );
 }
@@ -407,7 +474,7 @@ function QuickBtn({
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center gap-1 rounded-lg border border-border bg-background px-2.5 py-1.5 text-[10px] font-semibold text-muted-foreground transition hover:border-[#8B5E3C]/40 hover:bg-secondary hover:text-foreground"
+      className="inline-flex items-center gap-1 rounded-lg border border-[#8B5E3C]/20 bg-white/55 px-2.5 py-1.5 text-[10px] font-semibold text-[#5C4634] shadow-sm backdrop-blur-sm transition hover:border-[#8B5E3C]/45 hover:bg-white/80"
     >
       {icon}
       {label}
@@ -418,26 +485,27 @@ function QuickBtn({
 function PreviewList({ topics, total }: { topics: WeightedTopic[]; total: number }) {
   const minutes = total * 2;
   return (
-    <div className="mt-4 rounded-xl border border-border bg-background/70 p-3">
-      <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Economics Mock</p>
+    <div className="mt-4 rounded-xl border border-[#8B5E3C]/15 bg-white/60 p-3.5 shadow-sm backdrop-blur-sm">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-[#8B5E3C]/75">
+        Economics Mock
+      </p>
       <ul className="mt-2 space-y-1.5">
         {topics.map((t) => (
           <li key={t.id} className="flex items-baseline justify-between gap-3 text-xs">
             <span className="min-w-0 truncate font-medium text-foreground">
               <span className="tabular-nums text-muted-foreground">{t.id}</span>{" "}
-              <span className="text-muted-foreground">·</span> {t.label.replace(/^\d+\.\d+\s*/, "")}
+              <span className="text-muted-foreground">·</span>{" "}
+              {t.label.replace(/^\d+\.\d+\s*/, "")}
             </span>
             <span className="shrink-0 tabular-nums text-muted-foreground">
-              <span className="font-semibold text-[#8B5E3C]">
-                {t.percent % 1 === 0 ? `${t.percent}%` : `${t.percent.toFixed(1)}%`}
-              </span>
-              <span className="mx-1.5 text-border">·</span>
+              <span className="font-semibold text-[#8B5E3C]">{Math.round(t.percent)}%</span>
+              <span className="mx-1.5 text-[#8B5E3C]/25">·</span>
               {t.questions}q
             </span>
           </li>
         ))}
       </ul>
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-2 text-[11px] font-semibold">
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-[#8B5E3C]/12 pt-2 text-[11px] font-semibold">
         <span>
           Total <span className="tabular-nums">{total}</span> Questions
         </span>
