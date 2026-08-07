@@ -1,3 +1,4 @@
+import { memo, useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import {
@@ -29,6 +30,11 @@ type CaseContextRichProps = {
 };
 
 const CHART_COLORS = ["#8B5A2B", "#2A1F17", "#A67C52", "#5C4033", "#C4A484", "#3D2914"];
+
+/** Case charts paint once — long Recharts spins feel stuck when parents re-render. */
+const CHART_ANIM = {
+  isAnimationActive: false,
+};
 
 function cleanCell(cell: string): string {
   return cell.replace(/\*\*/g, "").trim();
@@ -100,7 +106,7 @@ function CaseTable({ rows }: { rows: string[][] }) {
   );
 }
 
-function CaseChart({ chart }: { chart: CaseChartSpec }) {
+const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
   const title = chart.title?.trim();
   const height = 260;
 
@@ -110,7 +116,7 @@ function CaseChart({ chart }: { chart: CaseChartSpec }) {
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-taupe">{title}</p>
       ) : null}
       <div className="w-full" style={{ height }}>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" debounce={80}>
           {chart.type === "pie" ? (
             <PieChart>
               <Pie
@@ -120,12 +126,12 @@ function CaseChart({ chart }: { chart: CaseChartSpec }) {
                 cx="50%"
                 cy="50%"
                 outerRadius={90}
-                label={({ name, percent }) =>
-                  `${name} ${((percent ?? 0) * 100).toFixed(0)}%`
-                }
+                {...CHART_ANIM}
+                labelLine={false}
+                label={({ name, percent }) => `${name} ${Math.round((percent ?? 0) * 100)}%`}
               >
                 {chart.data.map((_, i) => (
-                  <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />
+                  <Cell key={`slice-${i}`} fill={CHART_COLORS[i % CHART_COLORS.length]} />
                 ))}
               </Pie>
               <Tooltip />
@@ -146,6 +152,7 @@ function CaseChart({ chart }: { chart: CaseChartSpec }) {
                   stroke={CHART_COLORS[i % CHART_COLORS.length]}
                   strokeWidth={2}
                   dot={{ r: 3 }}
+                  {...CHART_ANIM}
                 />
               ))}
             </LineChart>
@@ -162,6 +169,7 @@ function CaseChart({ chart }: { chart: CaseChartSpec }) {
                   dataKey={key}
                   fill={CHART_COLORS[i % CHART_COLORS.length]}
                   radius={[4, 4, 0, 0]}
+                  {...CHART_ANIM}
                 />
               ))}
             </BarChart>
@@ -170,13 +178,13 @@ function CaseChart({ chart }: { chart: CaseChartSpec }) {
       </div>
     </div>
   );
-}
+});
 
 /**
  * Renders economics case context with HTML tables, Recharts, and markdown prose.
  */
 export function CaseContextRich({ content, className, emphasized }: CaseContextRichProps) {
-  const segments = segmentCaseContext(content);
+  const segments = useMemo(() => segmentCaseContext(content), [content]);
 
   return (
     <div
@@ -197,7 +205,11 @@ export function CaseContextRich({ content, className, emphasized }: CaseContextR
     >
       {segments.map((seg, idx) => {
         if (seg.kind === "table") return <CaseTable key={`t-${idx}`} rows={seg.rows} />;
-        if (seg.kind === "chart") return <CaseChart key={`c-${idx}`} chart={seg.chart} />;
+        if (seg.kind === "chart") {
+          const c = seg.chart;
+          const key = `c-${c.type}-${c.title ?? ""}-${idx}-${c.data.length}`;
+          return <CaseChart key={key} chart={c} />;
+        }
         return (
           <ReactMarkdown key={`m-${idx}`} remarkPlugins={[remarkGfm]}>
             {seg.text}

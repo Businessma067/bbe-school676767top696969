@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Timer } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -15,11 +15,13 @@ type Tone = (typeof TIMER_WARNING_THRESHOLDS)[number]["tone"];
 type ActiveWarning = {
   minutes: number;
   tone: Tone;
+  /** Stable id for this display (threshold seconds). */
   id: number;
 };
 
 /** Each plaque stays visible for exactly 5 seconds. */
 const DISPLAY_MS = 5000;
+const EXIT_MS = 350;
 
 const TONE_STYLES: Record<
   Tone,
@@ -57,12 +59,21 @@ type Props = {
 
 /**
  * Cream plaque: "N minutes remaining" — catalog + custom timed mocks.
- * Visible 5 seconds, then slides out.
+ * Visible exactly 5 seconds (timer ticks must NOT cancel the hide).
  */
 export function TimerWarningPlaque({ secondsLeft, timed, firedRef }: Props) {
   const [active, setActive] = useState<ActiveWarning | null>(null);
   const [visible, setVisible] = useState(false);
+  const hideTimers = useRef<{ hide: number; clear: number } | null>(null);
 
+  const clearHideTimers = () => {
+    if (!hideTimers.current) return;
+    window.clearTimeout(hideTimers.current.hide);
+    window.clearTimeout(hideTimers.current.clear);
+    hideTimers.current = null;
+  };
+
+  // Detect newly crossed thresholds — do not schedule hide here (secondsLeft ticks every 1s).
   useEffect(() => {
     if (!timed || secondsLeft == null) return;
 
@@ -74,14 +85,28 @@ export function TimerWarningPlaque({ secondsLeft, timed, firedRef }: Props) {
     for (const t of newly) firedRef.current.add(t.seconds);
     const t = newly[newly.length - 1];
     setActive({ minutes: t.minutes, tone: t.tone, id: t.seconds });
-    setVisible(true);
-    const hide = window.setTimeout(() => setVisible(false), DISPLAY_MS);
-    const clear = window.setTimeout(() => setActive(null), DISPLAY_MS + 400);
-    return () => {
-      window.clearTimeout(hide);
-      window.clearTimeout(clear);
-    };
   }, [secondsLeft, timed, firedRef]);
+
+  // Own lifecycle for the visible plaque — keyed only by active.id
+  useEffect(() => {
+    if (!active) return;
+
+    clearHideTimers();
+    setVisible(true);
+
+    const hide = window.setTimeout(() => setVisible(false), DISPLAY_MS);
+    const clear = window.setTimeout(() => {
+      setActive(null);
+      hideTimers.current = null;
+    }, DISPLAY_MS + EXIT_MS);
+    hideTimers.current = { hide, clear };
+
+    return () => {
+      clearHideTimers();
+    };
+  }, [active?.id]);
+
+  useEffect(() => () => clearHideTimers(), []);
 
   if (!active) return null;
 
