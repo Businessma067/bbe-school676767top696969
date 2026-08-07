@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { BookOpen, Target, AlertTriangle } from "lucide-react";
+import { BookOpen, Target, AlertTriangle, Lightbulb, FlaskConical, Sigma, MapPin, GraduationCap } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +10,64 @@ type Props = {
   title: string;
   onGoToPractice: () => void;
 };
+
+type CalloutKind = "overview" | "section" | "key-ideas" | "formula" | "example" | "default";
+
+function blockText(children: ReactNode): string {
+  if (typeof children === "string") return children;
+  if (Array.isArray(children)) return children.map(blockText).join("");
+  if (children && typeof children === "object" && "props" in children) {
+    return blockText((children as { props?: { children?: ReactNode } }).props?.children);
+  }
+  return String(children ?? "");
+}
+
+function calloutKind(text: string): CalloutKind {
+  const t = text.trim();
+  if (/^\*\*Chapter overview\*\*/i.test(t) || /^\*\*Learning path\*\*/i.test(t)) return "overview";
+  if (/^\*\*In this section\*\*/i.test(t)) return "section";
+  if (/^\*\*Key ideas\*\*/i.test(t)) return "key-ideas";
+  if (/^\*\*Formula/i.test(t) || /^\*\*Important formula/i.test(t)) return "formula";
+  if (/^\*\*Example/i.test(t) || /^\*\*Worked example/i.test(t)) return "example";
+  return "default";
+}
+
+const CALLOUT_STYLES: Record<CalloutKind, { box: string; icon: typeof Lightbulb; label: string }> = {
+  overview: { box: "border-primary/30 bg-primary/8", icon: GraduationCap, label: "Overview" },
+  section: { box: "border-border bg-card/90", icon: MapPin, label: "Focus" },
+  "key-ideas": { box: "border-emerald-500/30 bg-emerald-500/8", icon: Lightbulb, label: "Key ideas" },
+  formula: { box: "border-amber-500/35 bg-amber-500/10", icon: Sigma, label: "Formula" },
+  example: { box: "border-sky-500/30 bg-sky-500/8", icon: FlaskConical, label: "Example" },
+  default: { box: "border-primary/25 bg-primary/5", icon: Lightbulb, label: "" },
+};
+
+function TheoryCallout({ children }: { children: ReactNode }) {
+  const text = blockText(children);
+  const kind = calloutKind(text);
+  const style = CALLOUT_STYLES[kind];
+  const Icon = style.icon;
+  const isDefault = kind === "default";
+
+  return (
+    <blockquote
+      className={cn(
+        "my-5 rounded-xl border px-4 py-3 not-italic",
+        style.box,
+        isDefault && "italic text-foreground/85",
+      )}
+    >
+      {!isDefault && (
+        <div className="mb-2 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
+          <Icon className="h-3.5 w-3.5 text-primary" />
+          {style.label}
+        </div>
+      )}
+      <div className="text-[15px] leading-relaxed text-foreground/90 [&_p:last-child]:mb-0 [&_p]:mb-2 [&_ul]:mb-0">
+        {children}
+      </div>
+    </blockquote>
+  );
+}
 
 function headingId(children: ReactNode): string | undefined {
   const text = String(children ?? "");
@@ -63,11 +121,7 @@ function TheoryMarkdown({ content }: { content: string }) {
         li: ({ children }) => <li className="pl-1">{children}</li>,
         strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
         em: ({ children }) => <em className="italic">{children}</em>,
-        blockquote: ({ children }) => (
-          <blockquote className="mb-4 border-l-4 border-primary/40 bg-primary/5 py-2 pl-4 pr-3 text-[15px] italic text-foreground/85">
-            {children}
-          </blockquote>
-        ),
+        blockquote: ({ children }) => <TheoryCallout>{children}</TheoryCallout>,
         table: ({ children }) => (
           <div className="my-5 w-full overflow-x-auto rounded-lg border border-border">
             <table className="w-full min-w-[20rem] border-collapse text-[13px]">{children}</table>
@@ -84,9 +138,16 @@ function TheoryMarkdown({ content }: { content: string }) {
         ),
         hr: () => <hr className="my-8 border-border/60" />,
         img: ({ src, alt }) => (
-          <figure className="my-6">
-            <img src={src} alt={alt ?? ""} className="mx-auto max-h-80 rounded-lg border border-border bg-white object-contain" loading="lazy" />
-            {alt && <figcaption className="mt-2 text-center text-xs text-muted-foreground">{alt}</figcaption>}
+          <figure className="my-6 rounded-xl border border-border bg-white p-3 shadow-sm">
+            <img
+              src={src}
+              alt={alt ?? ""}
+              className="mx-auto block h-auto max-h-[28rem] w-full object-contain"
+              loading="lazy"
+            />
+            {alt && alt !== "Figure" && (
+              <figcaption className="mt-3 text-center text-xs font-medium text-muted-foreground">{alt}</figcaption>
+            )}
           </figure>
         ),
         code: ({ children, className }) => {
