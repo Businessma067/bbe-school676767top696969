@@ -2,7 +2,7 @@ export default {
   num: 2,
   title: "Basic economic concepts",
   intro:
-    "Before one can study how a business is organised and managed, it is necessary to understand the economic environment of which every business forms a part. Basic economic concepts shape the decisions of firms and of individuals: what to offer for sale, what to purchase, how to manage limited resources, and how to finance expenditure.\n\nThis chapter develops that shared foundation. It begins with participation in the economy and the condition of scarcity that forces every household, firm and government to choose. It then presents economics as the study of such decisions, and shows how exchange creates a circular flow of goods, services and money, together with division of labour. Different economic systems allocate decision rights between private agents and the state in different ways. Markets coordinate buyers and sellers through supply and demand, and competition among suppliers shapes the setting in which those markets operate. The aim is a clear, connected understanding of these ideas rather than a list of slogans.",
+    "Before one can study how a business is organised and managed, it is necessary to understand the economic environment of which every business forms a part. Basic economic concepts shape the decisions of firms and of individuals: what to offer for sale, what to purchase, how to manage limited resources, and how to finance expenditure.\n\nThis chapter develops that shared foundation. It begins with participation in the economy and the condition of scarcity that forces every household, firm and government to choose. It then presents economics as the study of such decisions, and shows how exchange creates a circular flow of goods, services and money, together with division of labour. Different economic systems allocate decision rights between private agents and the state in different ways. Markets coordinate buyers and sellers through supply and demand, and competition among suppliers shapes the setting in which those markets operate.",
 
   sections: [
     {
@@ -11,34 +11,33 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "An economy is the system in which people and organisations produce, distribute and exchange goods and services in order to satisfy needs and wants. Running a business is one way of taking part in that system, but it is by no means the only way. Long before anyone founds a firm, people belong to private households that purchase food, housing, transport, medical care, education and leisure. Households also supply labour, skills and savings. In that dual role—demanders of goods and services and suppliers of resources—almost everyone is already an active participant.",
+          text: "By running a business, entrepreneurs become an active part of the economy. Businesses provide goods such as computers and services such as installing software for people who need these goods and services to satisfy their needs. Those needs might include having a computer as well as getting technical support. Not only individuals, but also businesses have needs: manufacturers of smartphones, tablets and laptops might need printed circuit boards produced by a specialised supplier. In turn, that supplier needs raw materials and a workforce to produce those boards. And individuals might also exchange goods and services with each other, like selling a house, an apartment or a used car, or exchanging vegetables or flowers from the garden and getting a bottle of wine in return. In the economy, people and businesses exchange goods and services to fulfil their needs and wants.",
         },
         {
           type: "p",
-          text: "Businesses provide the goods and services that households and other organisations cannot produce efficiently alone. A bakery supplies bread; a logistics firm supplies delivery; a software studio supplies applications and maintenance. Businesses themselves have needs: they require materials, energy, premises, finance and a workforce. One firm's output frequently becomes another firm's input. Manufacturing depends on mining or farming; retail and wholesale depend on manufacturing; services wrap around almost every stage. Chains of interdependence are therefore the normal structure of economic life, not an exception.",
+          text: "Therefore, people are part of the economy long before they start a business. As individuals, they belong to private households and buy goods and services from a wide range of businesses. Like thousands of other households, they need food, a home to live in, medical care, a car and/or other kinds of transportation; they want to do sports or go to the cinema, to a café or a restaurant. Businesses offer the goods and services that people — as part of private households or other businesses — need and/or want.",
         },
         {
           type: "definition",
           term: "Business",
-          text: "A business is an entity that offers goods and/or services to customers. It produces primarily for customers rather than only for the owners' private household needs, and usually charges a price so that something of value is received in return.",
-        },
-        {
-          type: "definition",
-          term: "Economy",
-          text: "The economy is the overall system of production, exchange and consumption through which households, businesses and public authorities interact to meet needs and wants.",
+          text: "A business is an entity that offers goods and/or services to customers.",
         },
         {
           type: "p",
-          text: "Exchange is not confined to formal firms. Private persons sell a used bicycle, rent a room, or swap garden produce for a bottle of wine. Those private exchanges still belong to economic life because scarcity, valuation and mutual benefit are present. Exchanging goods and services against money or another means of payment is a central characteristic of the modern economy.",
-        },
-        {
-          type: "p",
-          text: "Exchange would be much easier if everything people want were available in abundance. That is not the case. Resources are scarce and must be managed. For that reason everyone must economise: no household, firm or government can wholly opt out of economic decisions. It is a common mistake to treat “the economy” as something that happens only on stock markets or only among entrepreneurs. Employees, students who buy services, pensioners who consume goods, and taxpayers who help finance public goods are all participants.",
+          text: "A business produces primarily for customers rather than only for the owners’ private household needs, and usually charges a price so that something of value is received in return. The economy is the overall system of production, exchange and consumption through which households, businesses and public authorities interact to meet needs and wants.",
         },
         {
           type: "example",
           title: "Worked example",
           text: "A student works evenings in a café and spends wages on rent, food and a language course. She already takes part in the economy as a supplier of labour and as a consumer. If she later opens a tutoring service for secondary-school pupils, she remains a household member who buys transport and phones, but she additionally becomes an entrepreneur supplying education services. Both roles belong to the same economic system; only the mix of activities changes.",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Exchanging would be much easier if all that we want or need were available in abundance, but that is not the case.",
+            "Resources are scarce and need to be managed.",
+            "This is why we all need to economise. No one is able to opt out of making economic decisions.",
+          ],
         },
       ],
     },
@@ -49,7 +48,7 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "Both households and businesses have only limited resources with which to pursue their goals. A firm has a finite number of machines, a limited stock of materials and constrained financial means. A household has a finite income that can be spent on goods and services, with perhaps a part set aside for saving. Governments, too, face limits of tax revenue and borrowing capacity in any given period. Scarcity means that resources available to meet goals are limited relative to wants. Scarcity forces allocation: deciding which uses win and which are postponed or rejected.",
+          text: "Both households and businesses only have limited resources to pursue their goals: businesses have a certain number of machines and tools and a limited amount of material and financial resources to produce their goods and provide their services. Likewise, households only have a certain income that they are able to spend on purchasing goods and services, with maybe a part of that income left for saving. Resources are always scarce, and this scarcity of resources forces businesses as well as individuals to make decisions on how to use those limited resources: what and how to produce, what to buy, how much to spend.",
         },
         {
           type: "definition",
@@ -58,25 +57,25 @@ export default {
         },
         {
           type: "p",
-          text: "It is a basic economic problem for households, businesses and the government to decide how to use limited resources and to allocate them among different options. A graduate may found a business or take paid employment. A firm may invest in a delivery vehicle or keep funds in a safer interest-bearing account. A parliament may expand one public programme only by reducing another, raising taxes, or accepting more debt. In every such case the decision is not free of consequence: choosing one path means giving up another.",
+          text: "It is a basic economic problem of households, businesses and the government to decide how to use their limited resources and to make choices when allocating these scarce resources between different options. Two graduates can either found their own business or take jobs at another business and become employed. If they earned 35,000 euros per year in such a job, this 35,000 euros would be their opportunity cost per person if they decided to set up their own business. If they took these jobs, they would also have opportunity cost: the amount of money that they could have earned with their business. Of course, it would be difficult to tell how much that could have been.",
         },
         {
           type: "definition",
           term: "Opportunity cost",
-          text: "Opportunity cost is the benefit of the next-best alternative that is lost or given up when a choice is made. It is measured not only in money but also in time, comfort, risk or other valued outcomes of the forgone option.",
+          text: "Opportunity cost is the (financial) benefit of the (next best) alternative that is lost or given up in order to choose or achieve something else.",
         },
         {
           type: "p",
-          text: "Opportunity cost makes trade-offs visible. Spending a Saturday revising accounting rather than working an extra shift has an opportunity cost in wages not earned, and possibly in leisure. Founding a firm instead of taking a salaried job means giving up that salary and its associated security—even if the new venture's accounts show no wage expense for the founder. Opportunity cost is often hardest to see when no cash changes hands: studying may look “free” of tuition fees at one institution, yet the next-best paid job still has a value that is given up.",
+          text: "Opportunity cost makes trade-offs visible. Spending a Saturday revising accounting rather than working an extra shift has an opportunity cost in wages not earned, and possibly in leisure. Founding a firm instead of taking a salaried job means giving up that salary and its associated security — even if the new venture’s accounts show no wage expense for the founder. Opportunity cost is often hardest to see when no cash changes hands: studying may look “free” of tuition fees at one institution, yet the next-best paid job still has a value that is given up.",
         },
         {
           type: "p",
-          text: "Two clarifications matter. First, opportunity cost is the next-best alternative—the best option among those left behind—not the sum of every rejected dream. Second, scarcity is not the same as poverty. Even wealthy households and rich countries face scarcity because wants expand and resources remain finite for any given decision. It is a common mistake to claim that there is “no cost” whenever no money was paid. If a realistic alternative was deliberately given up, opportunity cost is present.",
+          text: "Two clarifications matter. First, opportunity cost is the next-best alternative — the best option among those left behind — not the sum of every rejected dream. Second, scarcity is not the same as poverty. Even wealthy households and rich countries face scarcity because wants expand and resources remain finite for any given decision.",
         },
         {
           type: "example",
           title: "Worked example",
-          text: "Two graduates can each earn €38,000 a year in employment. If they start a repair café instead, the opportunity cost of self-employment is at least that salary each—plus any benefits they would have received—because that package is the next-best realistic alternative. If the business later earns more than the combined forgone salaries after proper cost allowance, the choice can still be rational; the point is that zero reported wage for the founders does not mean zero cost of their time.",
+          text: "Two graduates can each earn €38,000 a year in employment. If they start a repair café instead, the opportunity cost of self-employment is at least that salary each — plus any benefits they would have received — because that package is the next-best realistic alternative. If the business later earns more than the combined forgone salaries after proper cost allowance, the choice can still be rational; the point is that zero reported wage for the founders does not mean zero cost of their time.",
         },
       ],
     },
@@ -86,40 +85,26 @@ export default {
       title: "Economics is the study of economic decisions",
       blocks: [
         {
-          type: "p",
-          text: "Economics is the study of how individuals (as members of private households), businesses and societies decide how to satisfy needs and wants with limited resources. It comprises a number of scientific fields and branches. Two that appear constantly in introductory work are microeconomics and macroeconomics. The discipline is both descriptive—explaining observed behaviour—and analytical—building models that isolate key relationships and generate predictions under stated assumptions.",
-        },
-        {
           type: "definition",
           term: "Economics",
-          text: "Economics is the study of how agents make decisions to allocate scarce resources in order to satisfy needs and wants, and of how those decisions interact in markets and across the economy as a whole.",
+          text: "Economics is the study of how individuals (as part of private households) and businesses make decisions to satisfy their needs and wants with limited resources.",
         },
         {
           type: "p",
-          text: "Microeconomics focuses on the behaviour and decisions of individual households and businesses and on how they interact in particular markets. A typical microeconomic question asks how demand for electric cars would change if buyers received a purchase bonus. Macroeconomics looks at the larger picture: economic growth, unemployment, interest rates, the overall price level and inflation, among other aggregate phenomena. The distinction is individual or market versus economy-wide, not “small firms” versus “large firms”.",
-        },
-        {
-          type: "definition",
-          term: "Microeconomics",
-          text: "Microeconomics focuses on individual households and businesses, their decisions, and how they interact in particular markets.",
-        },
-        {
-          type: "definition",
-          term: "Macroeconomics",
-          text: "Macroeconomics studies the economy in aggregate: growth, unemployment, interest rates, the overall price level and inflation, among other economy-wide phenomena.",
+          text: "It comprises a number of scientific fields and branches, two of which are microeconomics and macroeconomics. Microeconomics focuses on the behaviour and decisions of individual households and businesses and how they interact. A question in microeconomics could focus on the change in demand for electric cars if buyers of electric cars receive a bonus. In contrast, macroeconomics looks at the bigger picture and deals with questions concerning the overall economy (of one country for example) and aggregate quantities. Among other phenomena, it studies economic growth, unemployment, interest rates, price levels and inflation.",
         },
         {
           type: "p",
-          text: "The two lenses are complementary. A wage rise in one firm is a microeconomic issue; rising unemployment nationwide is macroeconomic. Yet firm-level hiring accumulates into national employment figures, and national interest-rate policy feeds back into household borrowing and firm investment. As a science, economics uses theories and simplifying assumptions. Models deliberately omit detail so that cause and effect become visible. Predictions are conditional: if incomes rise and tastes stay constant, demand for normal goods tends to rise. Understanding the “if” is as important as remembering the conclusion.",
+          text: "As a science, economics strives to explain the observed phenomena and also to make predictions, both based on various theories. Models deliberately omit detail so that cause and effect become visible. Predictions are conditional: if incomes rise and tastes stay constant, demand for normal goods tends to rise. Understanding the “if” is as important as remembering the conclusion.",
         },
         {
           type: "p",
-          text: "Economic decisions appear everywhere: whether to hire or automate, rent or buy, specialise or diversify, tax or borrow, consume now or save. Business studies then ask how organisations design products, finance assets and manage people inside that environment. Chapter 2 therefore supplies the common vocabulary before later chapters turn to ownership, marketing and accounting.",
+          text: "The two lenses are complementary. A wage rise in one firm is a microeconomic issue; rising unemployment nationwide is macroeconomic. Yet firm-level hiring accumulates into national employment figures, and national interest-rate policy feeds back into household borrowing and firm investment. Economic decisions appear everywhere: whether to hire or automate, rent or buy, specialise or diversify, tax or borrow, consume now or save. Business studies then ask how organisations design products, finance assets and manage people inside that environment.",
         },
         {
           type: "example",
           title: "Worked example",
-          text: "Question A asks how a €2,000 purchase bonus for electric bikes would affect demand for e-bikes in one city. That is microeconomics—buyers and sellers in one product market. Question B asks how inflation and unemployment evolved in the euro area last year. That is macroeconomics—aggregate indicators for a large economic area.",
+          text: "Question A asks how a €2,000 purchase bonus for electric bikes would affect demand for e-bikes in one city. That is microeconomics — buyers and sellers in one product market. Question B asks how inflation and unemployment evolved in the euro area last year. That is macroeconomics — aggregate indicators for a large economic area.",
         },
       ],
     },
@@ -130,7 +115,7 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "Exchange is the bridge that turns specialisation into a workable system. Households typically supply labour and receive wages; businesses supply goods and services and receive revenue. Those flows of real resources and money move in opposite directions around the same relationships. Households provide labour to firms and receive wages; firms provide goods and services to households and receive payment. This continuous movement of resources, goods and services in one direction and monetary payments in the other is the circular flow.",
+          text: "While households mainly offer labour and receive wages, businesses offer goods and services that are bought by households and other businesses and receive money for what they sell. This is how a circular flow of goods, services and money is created. As money is used as a means of exchange that is widely used and accepted, these exchanges can be carried out relatively easily. Without money, people would have to barter, which is much more complicated. If you want to acquire a good from another person, but do not have what this person wants in return, there will be no exchange.",
         },
         {
           type: "figure",
@@ -145,38 +130,61 @@ export default {
         },
         {
           type: "p",
-          text: "Public authorities complete the picture. Governments levy taxes from households and firms and use the proceeds to provide public goods, transfer payments and subsidies—roads, defence, policing, and often large parts of education and healthcare. Some goods create free-rider problems: people can benefit without paying voluntarily, so private firms alone would underprovide them. Taxation finances those services when markets would not deliver adequate supply on their own.",
+          text: "Money allows for a flexibility of exchange (first function: medium of exchange). It also allows us to express the value of things (second function: unit of account) and to store value over time (third function: store of value). Money fulfils these functions best if its value remains pretty stable over time. However, if there is a general rise in prices of goods and services, you can only buy a lower amount of goods and services, which means that the purchasing power of money (i.e. its value) declines.",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Medium of exchange: money allows flexible trade without barter.",
+            "Unit of account: money expresses and compares the value of things.",
+            "Store of value: money can carry purchasing power into the future when its value remains reasonably stable.",
+          ],
         },
         {
           type: "p",
-          text: "Money makes this pattern workable. As a widely accepted means of payment it allows flexible trade without barter. Without money, exchange requires a double coincidence of wants: each party must want what the other offers at the same time. Money breaks that coincidence. It also serves as a unit of account, expressing and comparing values through prices, and as a store of value, carrying purchasing power into the future when its value remains reasonably stable.",
-        },
-        {
-          type: "definition",
-          term: "Money (three functions)",
-          text: "Money is a widely accepted means of payment. It serves as (1) a medium of exchange, allowing flexible trade without barter; (2) a unit of account, expressing and comparing values; and (3) a store of value, carrying purchasing power into the future when its value remains reasonably stable.",
-        },
-        {
-          type: "p",
-          text: "Money fulfils these functions best when its purchasing power is fairly stable. A general rise in the prices of goods and services—inflation—reduces that purchasing power. Price indexes measure how strong the rise is. Mild inflation can be tolerated; the European Central Bank regards an inflation rate of slightly below 2% per year as generally beneficial. High inflation erodes trust: people rush to spend before prices rise further. It is a common mistake to confuse a price rise for one product with inflation; inflation is a general rise across many goods and services.",
+          text: "Price indexes allow us to measure the extent of this general increase in prices, a phenomenon that is also called inflation. Low inflation rates can be tolerated. The European Central Bank considers an inflation rate of slightly below 2% per year most beneficial to the economy. But if inflation rates are considerably higher, the purchasing power of money decreases considerably. As the amount of goods and services that can be bought for a certain amount of money continuously decreases, people lose their trust in money and try to get rid of it.",
         },
         {
           type: "definition",
           term: "Inflation",
-          text: "Inflation is a general rise in the prices of goods and services, which reduces the purchasing power of money. Price indexes measure the extent of that general rise.",
+          text: "Inflation is a general rise in the prices of goods and services, which reduces the purchasing power of money.",
         },
         {
           type: "p",
-          text: "Division of labour and specialisation follow from exchange. If every household tried to produce all it needed, people would waste time on tasks for which they have weak skills. Exchange lets agents concentrate on comparative strengths. Specialisation appears within households (who shops, who cooks); within firms as departments such as procurement, production, sales, marketing, finance and human resources; between firms at the same production level or along a chain (timber → boards → furniture → retail); and internationally, where climate, natural resources, know-how, labour costs and legal rules differ across countries.",
+          text: "In the circular flow of the economy, public authorities (mainly governments) also play an important role. They levy taxes from households and businesses and use the money to provide goods, transfer payments and subsidies. Such goods as infrastructure (e.g. streets and street lights) and services like national defence and public security (e.g. police) need to be provided by governments and financed by taxation. There is demand for these goods, but private businesses would not want to supply them as “free riders” (people who do not pay for a good or service) cannot be excluded from enjoying them. In many — but not all — countries, health care and education are also provided (at least to a large extent) by public authorities.",
         },
         {
           type: "p",
-          text: "Division of labour raises productivity but carries risks. Highly specialised work can become monotonous. Workers may lose flexibility if narrow skills fall out of demand. A firm that masters one niche can be vulnerable if demand for that niche collapses. Specialisation is therefore powerful, not free of downside. Money's three functions facilitate exchange; they are not themselves a guarantee of wealth. Wealth creation comes from production and exchange.",
+          text: "Without exchange of goods and services, individuals would have to produce everything they need themselves. That would be very difficult, time-consuming and inefficient because they would have to spend time on performing tasks that they lack the skills for. Exchanging goods and services allows for the division of labour and therefore specialisation. Individuals and businesses can concentrate on what they can do best. This explains the wide variety of jobs and of businesses. Using a widely accepted means of exchange like money facilitates the exchanges.",
+        },
+        {
+          type: "p",
+          text: "Specialisation can be found on many levels. Within households, for example, individuals can concentrate on what they can do best or what they like doing (like one individual does the shopping, the other one the cooking). The same principle applies to businesses: within businesses, some people concentrate on production, others on procurement, some others on sales, on recording all financial transactions or on managing human resources. Accordingly, these different tasks of a business are often summarised in different departments: procurement, production, sales, marketing, finance and accounting.",
+        },
+        {
+          type: "p",
+          text: "Specialisation can also be found between businesses as every business focuses on a special range of products: some offer all kinds of furniture, others just beds and couches, some others just produce kitchens. These businesses operate on the same level of production. But specialisation can also be based on division of labour between businesses on different levels of production (first level: production of wood and iron, second level: production of boards and nails, third level: production of tables, final level: selling them) or in different sectors of the economy (see Chapter 3).",
+        },
+        {
+          type: "p",
+          text: "Specialisation can also be found on an international level, as countries differ in climate, natural resources, geographical position and many other characteristics. Due to very different characteristics, countries also differ in their conditions for different industries (industry being a number of businesses that produce or sell the same product) and different business functions. A printed-circuit-board manufacturer, for example, may have production sites in Europe as well as in Asia. While production in Europe may be highly diversified and relatively low in volume, production in Asia may reach a much higher volume but have a lower product diversity. This kind of division of labour can be explained by differences in terms of know-how of the workforce, labour costs, availability of other resources and the legal framework in different countries.",
+        },
+        {
+          type: "p",
+          text: "While division of labour has many advantages, it also has some disadvantages that need to be considered: for very specialised workers, work may become boring over time. Being specialised also means less flexibility as it is hard to develop other skills or develop competencies in other fields. A specialised business may be brilliant in that field, but if — for some reason — that specialisation is not needed anymore, the business is at risk and people could lose their jobs.",
         },
         {
           type: "example",
           title: "Worked example",
-          text: "A bicycle repair shop specialises in assembly and aftercare; a separate supplier makes frames; a courier firm delivers parts. Money lets each focus: the shop need not barter repaired bikes for tubing. If inflation jumps sharply, the shop's cash balances buy fewer spare parts over a few weeks, showing that the store-of-value function weakens when the general price level rises quickly.",
+          text: "A bicycle repair shop specialises in assembly and aftercare; a separate supplier makes frames; a courier firm delivers parts. Money lets each focus: the shop need not barter repaired bikes for tubing. If inflation jumps sharply, the shop’s cash balances buy fewer spare parts over a few weeks, showing that the store-of-value function weakens when the general price level rises quickly.",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Specialisation appears within households, within firms, between firms, and internationally.",
+            "Money’s three functions facilitate exchange; they are not themselves a guarantee of wealth.",
+            "Division of labour raises productivity but can make work monotonous and reduce flexibility.",
+          ],
         },
       ],
     },
@@ -187,12 +195,12 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "An economic system answers who decides what is produced, how it is produced, and who receives the output. The two classic poles are the market economy and the planned economy. In market economies, individuals and businesses are—more or less—allowed to make many of their own economic decisions about production, consumption and prices within a legal framework. Markets coordinate allocation through supply and demand. In planned (or centrally planned) systems, government mainly or partly decides which goods and services are produced, at which prices, and controls key resources and means of production. Job choice and product choice for citizens are more limited than in market systems.",
+          text: "The role of governments described above is mainly true for the governments in some sort of market economy. While in market economies individuals and businesses are — more or less — allowed to make many of their own economic decisions, in planned economic systems the governments play a dominant role. They (mainly or partly) decide which goods are produced and which services are offered (at which prices). Furthermore, they (mainly or partly) control the resources and the means of production. People have a limited choice of which job to do and which products to buy.",
         },
         {
           type: "definition",
           term: "Market economy",
-          text: "In a market economy, individuals and businesses make many of their own economic decisions about production, consumption and prices, within a legal framework. Markets coordinate allocation through supply and demand.",
+          text: "In a market economy, individuals and businesses make many of their own economic decisions about production, consumption and prices, within a legal framework.",
         },
         {
           type: "definition",
@@ -201,7 +209,7 @@ export default {
         },
         {
           type: "p",
-          text: "Most real countries sit somewhere between the pure textbook ends of the spectrum. Even within market-oriented countries, roles for the state differ. A free market economy keeps government intervention comparatively light: rules of property, contract and competition exist, but officials do not routinely redirect production or redistribute extensively. A social market economy (or eco-social market economy) keeps markets as the main coordinating device while giving the state a stronger role—supporting the vulnerable, correcting market failures, and protecting the environment, among other tasks.",
+          text: "In most countries of the world, economies can be characterised as some kind of market economy. In some of these countries, the governments play a minor role by only providing the legal framework and not influencing the economy much, so their economic system comes close to what is called a “free market economy”. In many other countries, the government plays a more important role by influencing the economy to a somewhat higher extent, by supporting the poor and protecting the environment for example. These systems are called “social market economies” or “eco-social market economies”.",
         },
         {
           type: "table",
@@ -247,18 +255,8 @@ export default {
           ],
         },
         {
-          type: "definition",
-          term: "Free market economy",
-          text: "A market system in which government mainly provides the legal framework and influences the economy relatively little beyond that framework.",
-        },
-        {
-          type: "definition",
-          term: "Social market economy",
-          text: "A market system combined with a more active government role in social protection, environmental and related policy goals, while market exchange remains central to allocation.",
-        },
-        {
           type: "p",
-          text: "Over recent decades, many formerly planned economies adopted market principles—across parts of Central and Eastern Europe, China and successor states of the Soviet Union, for example. Transformation is rarely overnight: legal institutions, property rights, competition culture and safety nets must catch up with price liberalisation. A social market economy is still a market economy, not a planned economy: extra social and environmental intervention does not of itself amount to central planning of all production. Likewise, the mere fact that government provides schools or roads does not make a system planned; public goods appear in market economies too.",
+          text: "Over the past decades, a lot of former communist countries that used to have planned economic systems have adopted the main principles of the market economy. Many Central and Eastern European Countries (CEE), China and former Soviet countries are examples of such a transformation. Transformation is rarely overnight: legal institutions, property rights, competition culture and safety nets must catch up with price liberalisation.",
         },
         {
           type: "example",
@@ -274,31 +272,29 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "In a market economy, goods and services are offered and sold in markets. Buyers and sellers communicate the conditions of exchange and thus form a market. A market can be an actual place—a flower market in a city, a flea market in a village—or a virtual place such as an internet platform. Buying and selling take place in shops, by phone and online. Markets differ by what is traded: consumer goods, labour, housing, money, capital and commodities each have their own arenas. Households, businesses and government appear on both the demand and the supply side depending on the market considered.",
+          text: "In a market economy, goods and services are offered and sold on markets. Buyers and sellers meet to communicate the conditions of exchanging goods and services and thus form a market. A market can be an actual place, like a flower market in the city of Rome or a flea market in a small village, but it can also be a virtual place like a market on the Internet. Buying and selling take place in shops, but also on the phone. Therefore, there are many different markets, also depending on what is offered: consumer goods markets, labour markets (supply and demand for work), housing markets, money markets, capital markets, commodity markets (supply and demand for raw materials).",
         },
         {
           type: "definition",
           term: "Market",
-          text: "A market is the interaction of buyers and sellers who communicate and agree, implicitly or explicitly, on the terms of exchanging a good or service—whether face-to-face or through intermediaries and platforms.",
+          text: "A market is the interaction of buyers and sellers who communicate and agree, implicitly or explicitly, on the terms of exchanging a good or service.",
         },
         {
           type: "p",
-          text: "Supply of a good or service is the quantity available for purchase. That quantity depends on production capacity and resources and, crucially, on the price that can be charged. All other things held constant—ceteris paribus—a higher price leads to a higher quantity supplied for most goods and services. This relationship is the law of supply. Higher prices make it worthwhile for additional providers to enter and for existing providers to expand output. Marginal cost—the cost of producing one more unit—often rises as capacity is stretched, so firms need higher prices to cover those rising extra costs.",
-        },
-        {
-          type: "definition",
-          term: "Supply",
-          text: "Supply of a good or service is the quantity available for purchase. It depends on production capacity and resources and on the price that can be charged.",
+          text: "Supply of a certain good or service is the quantity of that good or service that is available for purchase. Basically, this quantity mainly depends on the businesses’ production capacities and the available resources, but also on the price that can be charged for the good or the service. The higher this price is, the higher the supply will be. All other things held constant (“ceteris paribus”), this relationship is true for most goods and services in the economy (law of supply).",
         },
         {
           type: "definition",
           term: "Law of supply",
-          text: "Ceteris paribus (all other things held constant), a higher price leads to a higher quantity supplied for most goods and services. The supply curve slopes upward.",
+          text: "Ceteris paribus, a higher price leads to a higher quantity supplied for most goods and services.",
         },
         {
-          type: "definition",
-          term: "Ceteris paribus",
-          text: "A modelling phrase meaning “all other relevant factors held constant”, used so that the effect of one variable (often price) can be isolated.",
+          type: "p",
+          text: "In a tutoring market, for example, the quantity of hours that tutors are willing to work depends on the price they can charge and that will be paid. It is skilled work. If the price is low, say below 30 euros per hour, few providers would offer that service. The opportunity cost would be too high: as the providers are skilled, they could earn more money by doing something else, so they would leave this market. The higher the price, the higher the number of hours that would be offered. More potential providers would enter the market and would be willing to offer a higher number of hours of their service.",
+        },
+        {
+          type: "p",
+          text: "The shape of the supply curve can also be explained by the concept of increasing marginal costs faced by many industries and businesses. Marginal cost is the cost of producing an additional unit of a good or by providing an additional unit of a service. As output increases and exceeds a certain level it will become more and more costly to produce; businesses need to build higher capacities (machinery, personnel) so marginal costs would rise. Only if the price level increases and exceeds (or at least equals) marginal costs would businesses be willing to produce and supply a higher amount.",
         },
         {
           type: "figure",
@@ -307,27 +303,18 @@ export default {
             "Figure 2. The supply curve — price on the vertical axis, quantity on the horizontal axis; the curve slopes upward as quantity supplied rises with price (ceteris paribus).",
         },
         {
-          type: "p",
-          text: "Graphically, price is usually placed on the vertical axis and quantity on the horizontal axis. The supply schedule traces pairs of price and quantity supplied. A change in price alone produces a movement along the supply curve. A non-price factor that changes supply at every price—more suppliers, better technology, lower resource costs—shifts the whole curve left or right.",
-        },
-        {
           type: "formula",
           label: "Supply relationship (ceteris paribus)",
           text: "As P ↑ → Qs ↑ (law of supply). Movement along the supply curve: a price change alone changes quantity supplied. Shift of the supply curve: a non-price factor changes supply at every price.",
         },
         {
           type: "p",
-          text: "Demand is the quantity of a good or service that customers are willing and able to buy at a given price. Usually the higher the price, the lower demand will be. Willingness to pay reflects the utility—or satisfaction—buyers expect. As price rises, more buyers drop out or buy less; as price falls, more buyers enter or buy more. Plotting those pairs produces a downward-sloping demand curve. Ceteris paribus, a higher price leads to a lower quantity demanded for almost all goods and services. That inverse relationship is the law of demand.",
-        },
-        {
-          type: "definition",
-          term: "Demand",
-          text: "Demand is the quantity of a good or service that customers are willing and able to buy at a given price.",
+          text: "Demand, on the other hand, is the quantity of a good or service that customers are willing and able to buy. Usually the higher the price is, the lower demand will be. The more tutors charge for their support service per hour, the more demand will decrease (because more and more people cannot afford such high prices or are not willing to pay such high prices for that service and will instead look for other ways to get help). People’s willingness to pay a certain price is related to the utility or the level of satisfaction the people get from consuming the service.",
         },
         {
           type: "definition",
           term: "Law of demand",
-          text: "Ceteris paribus, a higher price leads to a lower quantity demanded for almost all goods and services. The demand curve slopes downward.",
+          text: "Ceteris paribus, a higher price leads to a lower quantity demanded for almost all goods and services.",
         },
         {
           type: "figure",
@@ -342,7 +329,7 @@ export default {
         },
         {
           type: "p",
-          text: "If supply and demand are drawn together, they typically intersect at a certain price. At that point the quantity demanded equals the quantity supplied. That clearing price is the market or equilibrium price. There is neither surplus (supply exceeding demand) nor shortage (demand exceeding supply). At a price above equilibrium, quantity supplied tends to exceed quantity demanded and pressure builds for the price to fall. At a price below equilibrium, quantity demanded tends to exceed quantity supplied and pressure builds for the price to rise.",
+          text: "If we have a look at both curves, we can see that they intersect at a certain point. At this point, the quantity of hours that is demanded in the market equals the quantity of hours that is supplied. Assuming that these curves represent supply and demand in the whole market, this price would also be called the market price or equilibrium price (because supply equals demand). At that price, demand and supply balance each other out. As the quantity supplied equals the quantity demanded, there is neither a surplus (higher supply than demand) nor a shortage (higher demand than supply). At a higher price, demand would be lower than supply and vice versa.",
         },
         {
           type: "figure",
@@ -351,22 +338,25 @@ export default {
             "Figure 4. Market equilibrium — supply and demand intersect at the market (equilibrium) price, where quantity supplied equals quantity demanded.",
         },
         {
-          type: "definition",
-          term: "Market equilibrium",
-          text: "Equilibrium (market) price is the price at which quantity supplied equals quantity demanded. There is neither surplus nor shortage at that clearing point where the curves intersect.",
-        },
-        {
           type: "formula",
           label: "Equilibrium condition",
           text: "At equilibrium: Qs = Qd = Q*. If P > P*, typically Qs > Qd (surplus) and pressure for price to fall. If P < P*, typically Qd > Qs (shortage) and pressure for price to rise.",
         },
         {
           type: "p",
-          text: "In the real world, factors other than the good's own price also affect demand and supply. Demand shifts when incomes change, when consumer preferences change, when complementary goods become more or less attractive, or when substitutes become more or less available. An increase in demand at every price appears as a rightward shift of the demand curve; a decrease appears as a leftward shift. Supply shifts when the number of suppliers changes, when technology improves, when resource prices change, or when providers' price expectations lead them to expand or leave the market. It is a common mistake to say “demand increased” when only price fell and quantity demanded rose along an unchanged curve. Quantity demanded responds to price; demand as a whole responds to non-price factors.",
+          text: "In the real world, other factors than price also affect demand and supply.",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Demand shifts with changes in income, consumer preferences, complementary goods and the availability of substitutes.",
+            "Supply shifts with the number of suppliers, technological changes, resource prices and price expectations.",
+            "A change in price alone moves quantity along a curve; non-price factors shift the whole curve.",
+          ],
         },
         {
           type: "p",
-          text: "The same language illuminates one channel of inflation. If the quantity of money in an economy rises and demand for goods climbs while real output does not keep pace, general prices tend to rise—“too much money chasing too few goods”. Raising interest rates makes borrowing more expensive, which can cool demand and ease inflationary pressure. That link between money markets and goods markets is a macroeconomic application of supply–demand thinking.",
+          text: "The laws of supply and demand also help to understand one of the main causes of inflation. If the quantity of money within a country is increased (in order to stimulate the economy), people and businesses are able to buy more and to invest, so demand for goods and services usually rises. If the quantity of available goods and services in this country remains the same and does not increase accordingly, then the prices for goods and services will rise. “Too many dollars chasing too few goods” expresses very well what inflation is about. It is by increasing the price for money, i.e. the interest rates, that inflation can be fought. If it is more expensive to borrow money, people and businesses tend to spend less, demand for goods and services decreases again and so do their prices.",
         },
         {
           type: "example",
@@ -382,43 +372,46 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "The intensity of competition in a market depends mainly on the number of suppliers and on how easily buyers can switch to substitutes. Market structure ranges from a single seller to many sellers of nearly identical products. Pure models help diagnose market power even when real markets mix features.",
+          text: "The level of competition in a market is mainly influenced by the number of suppliers and the availability of substitute goods. If there is just one supplier, the market situation is called a monopoly. Monopolies are rare in a market economy but there might be goods and services that are only provided by one business (like the railway in some countries).",
         },
         {
           type: "p",
-          text: "If there is only one supplier, the market situation is called a monopoly. Pure monopolies are rare in a market economy, but a firm can enjoy monopoly-like power in a local area if no close alternative exists nearby—for example a ski hut that is the only place offering food on a particular mountain, or a single concession stand in a theatre. Monopolists can set prices with more freedom, constrained mainly by the demand curve and by possible regulation.",
+          text: "Some businesses might not be the sole suppliers in the whole market, but they might be the only supplier within a certain area, which also makes them a kind of monopolist. The owners of a ski hut might be in a monopoly-like situation if they are the only ones to offer food and beverages on a particular mountain. A theatre bar is in a similar situation. A tutoring service could find itself in such a situation if it is the only one that offers such a service within a radius of 50 km, for example.",
         },
         {
           type: "definition",
           term: "Monopoly",
-          text: "A monopoly exists when there is only one supplier in a market. Pure monopolies are rare, but a firm can enjoy monopoly-like power in a local area if no close alternative exists nearby.",
+          text: "A monopoly exists when there is only one supplier in a market.",
         },
         {
           type: "p",
-          text: "If there are few suppliers, each holding a relatively large share, the market form is an oligopoly. Telecom operators and large car manufacturers often illustrate oligopolistic structures. Rival reactions matter: one firm's price or product move typically triggers responses. Firms may compete fiercely on price and features, or they may be tempted to coordinate terms. Cartels—agreements that restrict competition—are generally illegal because competition law protects buyers. It is a common mistake to assume that cartel coordination is encouraged because it raises revenues for firms; policy supports competition for customers' benefit.",
+          text: "If there are a few suppliers, the market form is called an oligopoly. Each supplier has a relatively large share of the market (e.g. telecom companies, car manufacturers). Competition can be strong, because as soon as one supplier changes the product or the price, its competitors are very likely to react in order to maintain their share of the market. Alternatively, suppliers could try to negotiate their terms of sale in order to prevent such harmful competition. Such agreements — also called a cartel — are usually not considered legal. In general, laws support competition in a market because it is considered beneficial for customers.",
         },
         {
           type: "definition",
           term: "Oligopoly",
-          text: "An oligopoly is a market with few suppliers, each holding a relatively large share. Strategic interdependence means that one firm's moves typically prompt rivals to react.",
+          text: "An oligopoly is a market with few suppliers, each holding a relatively large share.",
         },
         {
           type: "p",
-          text: "Perfect competition is a theoretical benchmark with so many buyers and sellers that no single agent can influence price. Idealised assumptions include full information, free entry and exit, and no personal preferences—goods are replaceable (homogeneous). Perfect competition is rarely found as a complete package, yet some markets approximate it when products are nearly identical and rivalry is intense—certain agricultural markets, for example. Even with fewer sellers, competition can feel almost perfect if rivalry is very strong and products are standardised.",
+          text: "Perfect competition can (theoretically) be found in markets with so many suppliers and buyers that no single individual or business can possibly influence the price. Considering perfect competition, in economics we also assume the following (theoretical) prerequisites:",
         },
         {
-          type: "definition",
-          term: "Perfect competition",
-          text: "Perfect competition is a theoretical benchmark with so many buyers and sellers that no single agent can influence price. Assumptions include full information, free entry and exit, and homogeneous goods.",
+          type: "bullets",
+          items: [
+            "All market players (buyers and sellers) must have access to all information at all times.",
+            "There must not be any barriers to enter or exit the market.",
+            "There must not be any (personal) preferences — goods must be replaceable (homogeneous).",
+          ],
         },
         {
           type: "p",
-          text: "Policy makers usually favour competition because it pressures firms to keep prices in check, innovate and serve customers. Barriers to entry, exclusive control of a key input, or network effects can reduce competition. Substitutes discipline prices even when a branded product looks unique: if switching is easy, monopoly power shrinks. Geography and travel costs matter: a firm that is not the only seller in a whole country can still hold local monopoly power.",
+          text: "In real life, perfect competition is rarely found but, nevertheless, some markets come close to the concept of perfect competition. These are markets for goods and/or services that are almost identical (regardless of the supplier), e.g. agricultural markets, or that can be standardised. Even if the number of suppliers is not so high, competition can be almost “perfect” if competition among suppliers is especially fierce.",
         },
         {
           type: "example",
           title: "Worked example",
-          text: "A remote valley has one grocery van that visits twice a week and no other store within an hour's travel—locally monopoly-like for many staples. A national mobile phone market with three large network operators is oligopolistic: a promotional tariff by one usually prompts matching offers. A large wholesale market for standardised wheat grades, with many growers and buyers, comes closer to perfect competition than either example.",
+          text: "A remote valley has one grocery van that visits twice a week and no other store within an hour’s travel — locally monopoly-like for many staples. A national mobile phone market with three large network operators is oligopolistic: a promotional tariff by one usually prompts matching offers. A large wholesale market for standardised wheat grades, with many growers and buyers, comes closer to perfect competition than either example.",
         },
       ],
     },

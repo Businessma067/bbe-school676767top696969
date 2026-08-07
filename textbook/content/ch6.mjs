@@ -2,7 +2,7 @@ export default {
   num: 6,
   title: "Accounting — keeping record of business transactions",
   intro:
-    "Every business generates a stream of transactions: purchases, sales, borrowings, repayments, wages, rents and many others. Bookkeepers record those transactions from supporting documents such as invoices and receipts so that the firm can later present a clear picture of its financial status. The reports built from that record are called accounts, and together they form the financial statement of the business.\n\nThis chapter explains the three main components of that statement — the balance sheet, the income statement (also called the profit and loss account), and the cash flow statement — and how to read them carefully. You will learn the balance-sheet identity, how assets and claims on assets are classified, how profit relates to equity, why depreciation matters, why profit is not the same as cash flow, how financial accounting differs from management accounting, and how common ratios help you judge liquidity, profitability, leverage and efficiency. Share-related figures that investors use when reading published statements are included where they support analysis.",
+    "During their first year in business, firms buy and sell goods, support customers, hire assistants and deal with paperwork and bookkeeping. This means that a lot of business transactions like purchases, sales, borrowing and lending money take place and businesses need to keep accurate records of these business transactions. Bookkeepers are responsible for recording these transactions that are always verified by a document (e.g. an invoice or a receipt). The aim of recording all transactions is to generate information on the financial status of the business. Statements that provide this information are called accounts.\n\nThis chapter explains the three main components of the financial statement — the balance sheet, the income statement (profit and loss account), and the cash flow statement — and how to read and analyse them.",
 
   sections: [
     {
@@ -11,27 +11,16 @@ export default {
       blocks: [
         {
           type: "p",
-          text: "A balance sheet is a snapshot of what a business owns and how that ownership was financed on a particular date. On one side it lists assets — the resources controlled by the business and used in its operations. On the other side it lists claims on those assets: liabilities (amounts owed to outsiders) and owner's equity (the residual claim of the owners). Because every euro bound in an asset must have come from somewhere, the two sides always add up to the same total.",
+          text: "When a business starts, it uses equipment it already has as well as new purchases. Computers, office equipment and cars — these things are all assets, “things” that the business owns and that are used for the business. Owners make a list with all the assets of their business and their values in euros (on the left side of the list) and compare it with the amount of money that had to be borrowed from the bank (on the right side of the list) to pay for some of their purchases.",
+        },
+        {
+          type: "p",
+          text: "Please note that there are two types of computers that may appear in such a list: computers that are used in the office and are not for sale, and other computers that were bought to be resold (inventory). This difference is important because they are different types of assets. Only part of the assets may be financed by using money from a bank loan. The rest may be financed by the owners’ own resources. Therefore, the total amount of the bank loan (which is a liability, i.e. money that is owed to someone else) is lower than the total amount of the assets. The difference between these two positions is the amount that the owners were able to finance themselves; it is called owner’s equity. It is the proportion of the assets that was NOT financed by debt. If we add this position to the list, the list becomes a balance sheet.",
         },
         {
           type: "definition",
           term: "Balance sheet",
-          text: "A statement of a company's assets and of how those assets were financed by liabilities and owner's equity at a specific point in time.",
-        },
-        {
-          type: "definition",
-          term: "Assets",
-          text: "Resources the business owns or controls that are used for the business and that have economic value (for example equipment, inventory, receivables and cash).",
-        },
-        {
-          type: "definition",
-          term: "Liabilities",
-          text: "Debts and obligations owed to other persons, businesses or banks that must be repaid at a certain point in time and/or over a certain period. Funds are often provided by banks or suppliers; money owed to suppliers is also called trade credit or trade payables.",
-        },
-        {
-          type: "definition",
-          term: "Owner's equity (capital)",
-          text: "The residual interest in the assets after deducting liabilities — the portion of assets not financed by debt. It reflects funds provided by owners or shareholders and profits retained in the business.",
+          text: "A balance sheet comprises a company’s assets and reveals how they were financed. The amount of assets equals the amount of liabilities plus owner’s equity.",
         },
         {
           type: "formula",
@@ -39,25 +28,27 @@ export default {
           text: "Assets = liabilities + owner's equity",
         },
         {
-          type: "p",
-          text: "This identity must hold because (1) all assets were funded either through equity or through liabilities, (2) all funds are somehow bound or invested in the business — even cash held in a bank account was funded through equity or liabilities and is now bound in that form — and (3) any increase in assets must be financed by an increase in either liabilities or equity.",
-        },
-        {
           type: "figure",
           id: "balance-sheet",
-          caption: "The balance sheet: assets financed by liabilities and owner's equity.",
+          caption:
+            "The balance sheet: assets financed by liabilities and owner's equity.",
         },
         {
           type: "example",
           title: "Worked example — constructing a balance sheet",
-          text: "A newly founded consultancy holds the following resources on 1 January: office equipment and computers used in the office €25,000; a delivery van €8,000; computers held in stock for resale (inventory) €12,500; cash and bank deposits €3,500. A bank loan of €25,000 financed part of these purchases; the rest was financed by the owners.\n\nTotal assets = 25,000 + 8,000 + 12,500 + 3,500 = €49,000.\nLiabilities (bank loan) = €25,000.\nOwner's equity = assets − liabilities = 49,000 − 25,000 = €24,000.\n\nNotice that office computers (used in operations) and computers held for resale are different types of asset even though the physical items look similar: classification follows intended use, not appearance.",
+          text: "A newly founded consultancy holds the following resources on 1 January: office equipment and computers used in the office €25,000; a delivery van €8,000; computers held in stock for resale (inventory) €12,500; cash and bank deposits €3,500. A bank loan of €25,000 financed part of these purchases; the rest was financed by the owners.\n\nTotal assets = 25,000 + 8,000 + 12,500 + 3,500 = €49,000.\nLiabilities (bank loan) = €25,000.\nOwner's equity = assets − liabilities = 49,000 − 25,000 = €24,000.",
         },
         {
           type: "table",
           caption: "Simplified opening balance sheet (€)",
           headers: ["Assets", "€", "Liabilities and equity", "€"],
           rows: [
-            ["Office equipment (incl. computers)", "25,000", "Owner's equity (capital)", "24,000"],
+            [
+              "Office equipment (incl. computers)",
+              "25,000",
+              "Owner's equity (capital)",
+              "24,000",
+            ],
             ["Van", "8,000", "Bank loan (liabilities)", "25,000"],
             ["Inventory", "12,500", "", ""],
             ["Cash and bank deposit", "3,500", "", ""],
@@ -65,22 +56,38 @@ export default {
           ],
         },
         {
+          type: "bullets",
+          items: [
+            "All assets were funded either through equity or liabilities.",
+            "All funds are somehow bound or invested in the business (even money held as cash or in a bank account was either funded through equity or liabilities).",
+            "Any increase in assets must be financed by an increase in either liabilities or equity (capital).",
+          ],
+        },
+        {
           type: "p",
-          text: "Assets are usually listed in a standard order. Fixed assets (also called non-current assets) normally have a lifespan of more than one year and are intended to be used in the company for longer than one year; they usually cannot be turned into cash so easily. Current assets have higher liquidity: they are usually not used longer than a year because they are used up, spent in production, or sold. Examples of non-current assets include property, plant, premises, buildings, machinery, office equipment (including computers used in the office), and financial assets meant to be kept longer than a year. Examples of current assets include inventory (merchandise not yet sold), accounts receivable / debtors (trade receivables — money owed to the business), and cash. Intangible assets such as trademarks, patents, copyrights and acquired licences cannot be seen or touched but still have value; they are assets just as tangible items are.",
+          text: "Please note that if the firm buys computer software and pays cash, the total amount of the assets remains the same (one asset — software — increases, but another one — cash — decreases by the exact same amount, so it is just an “asset swap”). But if they buy the software on credit, then the amount of assets increases and liabilities also increase by the exact same amount. Accordingly, the balance sheet total increases.",
+        },
+        {
+          type: "p",
+          text: "Assets are usually listed in the balance sheet in a certain order. They comprise fixed assets (or non-current assets) that normally have a lifespan of more than one year and are intended to be used in the company for a longer time period than one year. Usually they cannot be turned into cash so easily. Current assets have higher liquidity. They are usually not used longer than a year because they are used up, spent in production or sold.",
         },
         {
           type: "definition",
           term: "Non-current (fixed) assets",
-          text: "Assets with a useful life of more than one year that are intended for longer-term use in the business.",
+          text: "Assets with a useful life of more than one year that are intended for longer-term use in the business (e.g. property, plant, machinery, office equipment).",
         },
         {
           type: "definition",
           term: "Current assets",
-          text: "Assets with higher liquidity that are normally used up, sold or converted into cash within one year.",
+          text: "Assets with higher liquidity that are normally used up, sold or converted into cash within one year (e.g. inventory, receivables, cash).",
         },
         {
           type: "p",
-          text: "Liabilities are split by timing. Current liabilities are debts or obligations due within one year. Non-current liabilities have a duration of more than one year. Equity is the difference of assets and liabilities and is an indicator of the wealth of the company.",
+          text: "There are also intangible assets like trademarks, patents and copyrights. Although they cannot be seen or touched they are also of value for the business like tangible assets are. Liabilities are debts and obligations that are owed to other persons, businesses or banks and need to be repaid at a certain point in time and/or over a certain period of time. These funds are usually provided by banks or suppliers. Money owed to suppliers is also called trade credit or trade payables. Current liabilities are debts or obligations that are due within one year. Accordingly, non-current liabilities have a duration of more than one year.",
+        },
+        {
+          type: "p",
+          text: "Equity / owner’s equity is the difference of assets and liabilities. It is an indicator of the wealth of the company. A high equity ratio (= equity / total capital) indicates that the respective portion of assets was financed by the company’s own resources (for example with funds provided by the owners or shareholders of the company). It is important for a business to have sufficient equity because: 1) equity usually does not have to be repaid, 2) it helps a business to be relatively independent from its creditors and 3) if the company has a loss and there is a higher amount of equity, the company will not be over-indebted.",
         },
         {
           type: "formula",
@@ -89,11 +96,7 @@ export default {
         },
         {
           type: "p",
-          text: "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources (funds from owners or shareholders) rather than by creditors. Sufficient equity matters because (1) equity usually does not have to be repaid on a fixed schedule, (2) it helps the business stay relatively independent from its creditors, and (3) if the company records a loss, a larger equity cushion reduces the risk of over-indebtedness. Using the opening balance sheet above: equity €24,000, total assets €49,000, so equity ratio = 24,000 / 49,000 ≈ 0.490, or about 49%. Almost half of the assets were financed by own resources; the remainder (about 51%) was financed by the bank loan.",
-        },
-        {
-          type: "p",
-          text: "Changes in the balance sheet depend on how a purchase is financed. If a firm buys software and pays cash, one asset (software) rises and another (cash) falls by the same amount: total assets remain unchanged. This is an asset swap. If instead the firm buys the software on credit, assets rise and liabilities rise by the same amount, so the balance-sheet total increases. The identity still holds in both cases. Buying an asset with cash does not automatically increase total assets; total assets rise only when the purchase is financed by new liabilities or new equity. Valuing assets is important and tricky. The outstanding amount of a bank loan is usually clear, but the worth of a building many years after it was built is harder to pin down. Businesses may wish to present themselves favourably, yet they must follow legal rules and regulations so that balance-sheet information can be trusted. Carrying amounts are not the same as market prices.",
+          text: "Determining the value of assets is an important but also tricky task. While it might not be difficult to determine the exact amount of a bank loan, it is more difficult to tell what a building is worth many years after it was built. Businesses usually want to present themselves in the best way possible when setting up their balance sheet. However, they need to stick to the legal rules and regulations that aim to ensure that information given in balance sheets can be trusted.",
         },
         {
           type: "example",
@@ -102,18 +105,20 @@ export default {
         },
       ],
     },
+
     {
       id: "6.2",
-      title: "Other components of the financial statement",
+      title: "Other components of the financial statement of a business",
       blocks: [
         {
           type: "p",
-          text: "The balance sheet alone cannot show how a business performed over a period. It states assets, liabilities and equity on a certain day, but it does not report total sales (turnover), the cost of producing goods and services, or other expenses. The financial statement therefore combines three main components: the balance sheet (assets, liabilities and equity), the income statement or profit and loss account (revenues, costs and expenses), and the cash flow statement (inflows and outflows of cash). Together they reveal performance over time as well as the position at a date.",
+          text: "The balance sheet is not the only component of the financial statement of a business. The financial statement of the business aims to show the performance of the business over a certain period of time, but the balance sheet only shows the assets, liabilities and equity at a certain point in time. It does not contain information on total sales (turnover), nor does it reveal the cost of producing the goods and services or other expenses. Therefore, the financial statement consists of the balance sheet, the income statement (profit and loss account) and the cash flow statement, which gives an insight into the inflow and outflow of cash.",
         },
         {
           type: "figure",
           id: "financial-statements",
-          caption: "Main components of a financial statement: balance sheet, income statement and cash flow statement.",
+          caption:
+            "Figure 24. The main components of a financial statement: balance sheet, income statement and cash flow statement.",
         },
         {
           type: "definition",
@@ -121,18 +126,8 @@ export default {
           text: "A period statement that summarises all revenues, costs and expenses over a time span (for example a year) to determine whether the business made a profit or a loss.",
         },
         {
-          type: "definition",
-          term: "Revenues",
-          text: "Income (usually cash or accounts receivable) generated from selling goods or services to customers.",
-        },
-        {
-          type: "definition",
-          term: "Costs",
-          text: "Resources consumed in order to produce the goods or provide the services sold.",
-        },
-        {
           type: "p",
-          text: "If revenues exceed costs and expenses, the company has a profit. If costs and expenses are higher than revenue, it suffers a loss. Profit for the year increases owner's equity (typically through retained earnings); a loss decreases equity. You can therefore learn about profit either from the income statement or from the change in equity between two balance-sheet dates (other owner transactions aside).",
+          text: "Revenues are the income (usually cash or accounts receivable) that is generated from selling goods or services to customers. Costs consist of resources that are consumed in order to produce the goods or provide the services. If the revenues exceed the costs and expenses, the company has a profit. If the company’s costs and expenses are higher than the revenue, it suffers a loss.",
         },
         {
           type: "example",
@@ -140,13 +135,13 @@ export default {
           text: "In one financial year a service firm records sales revenue of €400,000 and costs and expenses (materials, wages, rent, energy, depreciation and other expenses) of €310,000.\nProfit = 400,000 − 310,000 = €90,000.\nThat profit increases equity by €90,000 if it is retained in the business.",
         },
         {
-          type: "p",
-          text: "Cost of sales (also called cost of goods sold) covers costs directly tied to production — materials, labour linked to production, and manufacturing overhead. Administration costs, shipping to customers and sales-staff costs are not included in cost of sales; they are operating expenses below gross profit. Gross profit shows earnings after deducting the direct costs of producing the goods, before those further operating expenses. In accounting, expenditures and expenses are not the same. Expenditures are payments made to purchase assets (non-current or current). Expenses are costs that have expired or been \"used up\" in producing the goods or services sold — for example cost of sales, salaries, marketing, interest, insurance and rent.",
-        },
-        {
           type: "definition",
           term: "Depreciation",
-          text: "Recognition that the value of fixed assets decreases as they are used up over time. Without depreciation, asset values in the accounts would be overstated and financial information flawed. Depreciation is an expense in the income statement, but unlike wages or energy it does not cause an actual cash payment in the period when it is charged.",
+          text: "Recognition that the value of fixed assets decreases as they are used up over time. Depreciation is an expense in the income statement, but unlike wages or energy it does not cause an actual cash payment in the period when it is charged.",
+        },
+        {
+          type: "p",
+          text: "Fixed assets are used again and again over a longer period of time. A delivery van, for example, will be used for at least five more years. A new computer will be used for three years. During that time, the value of these assets decreases; it is “used up”. Without depreciation, the values of assets that are shown in the accounts would be inaccurate. The value of the assets in the balance sheet would be overstated and the financial information given would be flawed.",
         },
         {
           type: "formula",
@@ -156,18 +151,23 @@ export default {
         {
           type: "example",
           title: "Worked example — straight-line depreciation",
-          text: "A firm buys a computer for €2,100 and expects to use it for three years (expected useful life = 3 years), with no residual value for simplicity.\nAnnual depreciation = 2,100 / 3 = €700 per year.\n\nBook (carrying) values at year-end:\nAfter year 1: 2,100 − 700 = €1,400.\nAfter year 2: 1,400 − 700 = €700.\nAfter year 3: 700 − 700 = €0.\n\nEach year the income statement includes a €700 depreciation expense that reduces profit, while the cash outlay of €2,100 occurred when the computer was purchased (an investing cash outflow if paid then), not when depreciation is later recognised. Typical useful lives in practice vary by asset class (buildings longer than machinery; tools and office equipment often a few years). Land is not subject to depreciation.",
+          text: "A firm buys a computer for €2,100 and expects to use it for three years (expected useful life = 3 years), with no residual value for simplicity.\nAnnual depreciation = 2,100 / 3 = €700 per year.\n\nBook (carrying) values at year-end:\nAfter year 1: 2,100 − 700 = €1,400.\nAfter year 2: 1,400 − 700 = €700.\nAfter year 3: 700 − 700 = €0.\n\nEach year the income statement includes a €700 depreciation expense that reduces profit, while the cash outlay of €2,100 occurred when the computer was purchased.",
         },
         {
           type: "p",
-          text: "Over a trading year, the balance sheet also changes for many other reasons: new equipment may be bought, inventory levels adjust, customers may still owe money (receivables), the firm may still owe suppliers (trade payables), and part of a bank loan may be repaid. Equity rises when the firm is profitable and falls when it makes a loss. The following year-end statement illustrates those movements after a profitable first year.",
+          text: "At the end of a trading year, owners draw up another balance sheet to see how assets and capital structure have changed. Due to depreciation, fixed assets have a lower value than one year before. New equipment may have been bought, inventory levels adjust, some customers still owe money (accounts receivables), and the firm may still owe suppliers (trade credit or accounts payables). Part of a bank loan may have been repaid. Equity has increased significantly when the firm made a profit. To learn more about the performance of a business (profit or loss), you can either look at the income statement or at the development of (owner’s) equity. It is important to note that any profit increases and any loss decreases equity.",
         },
         {
           type: "table",
           caption: "Simplified year-end balance sheet after a profitable year (€)",
           headers: ["Assets", "€", "Liabilities and equity", "€"],
           rows: [
-            ["Office equipment (incl. computers)", "42,000", "Owner's equity", "114,000"],
+            [
+              "Office equipment (incl. computers)",
+              "42,000",
+              "Owner's equity",
+              "114,000",
+            ],
             ["Van", "40,000", "Bank loan", "12,500"],
             ["Car", "6,000", "Trade credit / payables", "15,000"],
             ["Inventory", "18,000", "", ""],
@@ -179,11 +179,19 @@ export default {
         {
           type: "definition",
           term: "Cash flow statement",
-          text: "A statement that reveals the flows of cash into and out of the business during a period, distinguishing operating, investing and financing activities. Cash is needed for day-to-day operations and for investing; a positive cash flow is not identical with a profit.",
+          text: "A statement that reveals the flows of cash into and out of the business during a period, distinguishing operating, investing and financing activities. A positive cash flow is not identical with a profit.",
         },
         {
           type: "p",
-          text: "Cash flow from operations shows how well a business generates cash with its core activities (for example collecting receivables, paying for materials, settling trade credit). This section is usually treated as the most important and should ideally be positive. Cash flow from investments shows cash spent on long-term assets (plant, office equipment) or received from selling such assets. A negative investing cash flow often simply means the firm invested; it is not automatically a crisis signal. Cash flow from financing refers to cash from investors or creditors, and outflows for interest in some presentations, dividends, or debt repayment. At the bottom of the cash flow statement, the net change in cash and cash equivalents reconciles opening and closing cash. If that figure is positive, more cash is available for further activities such as investment, expansion or debt repayment.",
+          text: "This is important information because cash is needed for the operating activities of the business and for investing. To learn more about a cash flow’s origin, a cash flow statement is prepared that differentiates between changes in cash positions in operations (the core activities of a business), investments and financing activities.",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Cash flow from operations shows how well a business generates cash with its core business — usually the most important part and ideally positive.",
+            "Cash flow from investments shows how cash is spent for long-term investments or generated by the sale of such assets. A negative figure often simply indicates that the business has invested.",
+            "Financing activities refer to cash flowing in from investors or creditors and flowing out for paying interest, dividends or repaying debt.",
+          ],
         },
         {
           type: "example",
@@ -193,78 +201,94 @@ export default {
         {
           type: "example",
           title: "Worked example — classifying cash flows",
-          text: "Classify these cash movements for a manufacturing firm in one year:\n• Customers pay €120,000 of trade receivables → operating inflow.\n• Raw materials paid in cash €45,000 → operating outflow.\n• New machine bought for €80,000 cash → investing outflow.\n• Bank loan repayment €15,000 → financing outflow.\n• Dividend paid to owners €10,000 → financing outflow.\n\nNet operating cash (simplified here) = 120,000 − 45,000 = €75,000 inflow.\nInvesting cash = −€80,000. Financing cash = −15,000 − 10,000 = −€25,000.\nApproximate net cash change from these items = 75,000 − 80,000 − 25,000 = −€30,000.",
+          text: "Classify these cash movements for a manufacturing firm in one year:\n• Customers pay €120,000 of trade receivables → operating inflow.\n• Raw materials paid in cash €45,000 → operating outflow.\n• New machine bought for €80,000 cash → investing outflow.\n• Bank loan repayment €15,000 → financing outflow.\n• Dividend paid to owners €10,000 → financing outflow.\n\nNet operating cash (simplified) = 120,000 − 45,000 = €75,000 inflow.\nInvesting cash = −€80,000. Financing cash = −€25,000.\nApproximate net cash change from these items = 75,000 − 80,000 − 25,000 = −€30,000.",
         },
       ],
     },
+
     {
       id: "6.3",
       title: "What can be learnt from reading a balance sheet and an income statement",
       blocks: [
         {
           type: "p",
-          text: "Balance sheets and income statements should always be read with caution. Asset values depend on valuation rules; depreciation may lower carrying amounts below what an outsider thinks an asset is \"really\" worth. Still, careful reading — especially comparing positions over time and against competitors in the same industry — answers important questions about structure and performance.",
+          text: "Balance sheets and income statements should always be read with some caution. A lot depends on the valuation of assets and businesses are not completely free to determine the values of their assets. Depreciation also decreases the value of assets in the balance sheet that might actually have a higher value. Nevertheless, a lot can be learnt by taking a closer look at the balance sheet and the income statement of a business. It is of particular interest to see how some positions have developed over time as well as in comparison to other competitors in the market.",
         },
         {
           type: "p",
-          text: "From the balance sheet one asks: Which assets does the business have — is there a higher percentage of current or non-current assets, and is that mix typical for this type of business? How has equity developed, and how have the assets been financed? Is there a higher share of long-term or short-term liabilities? Is there a balance between non-current assets and long-term financial resources (equity plus non-current liabilities)? Long-term assets should preferably be financed with long-term funds. If non-current assets clearly exceed the sum of equity and non-current liabilities, part of the long-term asset base is implicitly financed by short-term liabilities — a structural risk when those short-term claims must be refinanced.",
+          text: "This allows us to answer questions like:",
+        },
+        {
+          type: "bullets",
+          items: [
+            "Which assets does the business have — is there a higher percentage of current or non-current assets and is this typical of that type of business?",
+            "How has equity developed and how have the assets been financed? Is there a higher percentage of long-term or short-term liabilities?",
+            "Is there a balance between non-current assets and long-term financial resources?",
+            "How have revenues developed over the past year? Have costs, especially costs of sale, developed accordingly?",
+            "How have profits (or losses) developed?",
+          ],
         },
         {
           type: "p",
-          text: "From the income statement one asks: How have revenues developed? Have costs — especially cost of sales — moved in line with revenues? How have profits or losses developed? A single year's profit or asset mix is less informative than trends over several years and comparisons with similar firms in the same sector. Industry norms for fixed-asset intensity differ sharply between manufacturers and service firms.",
+          text: "The first three questions can be answered by analysing the balance sheet. Questions about revenues, costs and profits require a look at the statement of profit and loss. Cost of sales (COS) (or cost of goods sold (COGS)) are the costs that are directly tied to the production of the products like the cost of labour (that is directly linked to production), materials and manufacturing overhead. Administration costs, the cost of shipping to customers or the cost of sales personnel is NOT included in COGS. Gross profit reveals the earnings of a business after deducting the direct costs of producing the goods (without operating expenses). Earnings before interest, taxes, depreciation and amortisation (EBITDA) allow analysis of operating performance while including operating expenses differently; by deducting depreciation and amortisation, the next metric is earnings before interest and taxes (EBIT).",
+        },
+        {
+          type: "p",
+          text: "In accounting, expenditures and expenses are not the same. While expenditures are payments that are either made to purchase (non-current as well as current) assets, expenses are costs that have expired or were “used up” in order to produce the goods or provide the services that were sold. For example, COGS are considered to be expenses, and so are other expenses such as salaries, marketing costs, interest, insurance, rent, and so on.",
         },
         {
           type: "example",
           title: "Worked example — reading structure and performance (euros in thousands)",
-          text: "Suppose a manufacturing company reports at year-end: non-current assets 944; current assets 586; total assets 1,530. Equity 711; non-current liabilities 515; current liabilities 304; total equity and liabilities 1,530.\n\nShare of non-current assets = 944 / 1,530 ≈ 61.7%. A high fixed-asset share is typical of manufacturing that needs plant and machinery.\nEquity ratio = 711 / 1,530 ≈ 46.5% — almost half of assets financed by equity.\nLong-term finance available = equity 711 + non-current liabilities 515 = 1,226, which exceeds non-current assets 944. So long-term assets are covered by long-term resources.\n\nIncome statement (same year versus prior year): revenue rises from 815 to 992 (+177, about +21.7%), while cost of sales rises from 760 to 830 (+70, about +9.2%). Gross profit therefore rises sharply (from about 55 to about 162). Operating profit also improves strongly. Revenues grew faster than cost of sales — a favourable operating development when reading the income statement.",
-        },
-        {
-          type: "p",
-          text: "Two further earnings ideas appear when statements are read in detail. Earnings before interest, taxes, depreciation and amortisation add back non-cash charges to focus on operating cash-like performance; deducting depreciation and amortisation yields earnings before interest and taxes, a common operating-result measure. You do not need to memorise every line of a published statement, but you should know that gross profit focuses on production margins, while operating result also reflects distribution and administration costs.",
+          text: "Suppose a manufacturing company reports at year-end: non-current assets 944; current assets 586; total assets 1,530. Equity 711; non-current liabilities 515; current liabilities 304; total equity and liabilities 1,530.\n\nShare of non-current assets = 944 / 1,530 ≈ 61.7%. A high fixed-asset share is typical of manufacturing that needs plant and machinery.\nEquity ratio = 711 / 1,530 ≈ 46.5% — almost half of assets financed by equity.\nLong-term finance available = equity 711 + non-current liabilities 515 = 1,226, which exceeds non-current assets 944. So long-term assets are covered by long-term resources.\n\nIncome statement: revenue rises from 815 to 992 (+177, about +21.7%), while cost of sales rises from 760 to 830 (+70, about +9.2%). Gross profit therefore rises sharply. Revenues grew faster than cost of sales — a favourable operating development.",
         },
       ],
     },
+
     {
       id: "6.4",
-      title: "Types of accounting — financial versus management accounting",
+      title: "Use of these accounts – types of accounting",
       blocks: [
         {
           type: "p",
-          text: "Accounts exist because many stakeholders need reliable information on the financial situation of a business. Internal users include owners, managers and employees: they want to know whether the business is thriving. Managers decide on cost cuts, pricing and investment; owners ask whether the return justifies the capital at risk. External users include tax authorities, suppliers, competitors, investors, banks and the media.",
+          text: "These accounts are needed for a number of stakeholders who are interested in the financial situation of a business. Some of them are internal users like the owners of the business, the managers and the employees. They are all interested to learn if the business is thriving. Managers need to make decisions based on financial information (like “Do we need to cut costs in marketing?”) and owners will want to know if their investment is worth the risk (like “How much profit do I get in return for investing and risking my money?”). There are also external users of financial information like tax authorities, suppliers, competitors, investors and the media.",
+        },
+        {
+          type: "p",
+          text: "For some companies it is mandatory to have their accounts checked for authenticity by an independent firm of accountants, an auditing company. This task is called auditing. The result of the auditing process can be read in the annual report.",
+        },
+        {
+          type: "definition",
+          term: "Managerial accounting",
+          text: "Accounting focused on providing information for the management of the business so managers can decide where to cut costs, how to calculate prices, and how to allocate resources.",
         },
         {
           type: "definition",
           term: "Financial accounting",
-          text: "Accounting aimed at producing information — such as the balance sheet and the income statement — that is of interest both inside the firm and to external decision makers (tax authorities, banks, investors). Key outputs appear in annual reports and, for many large businesses, in selected figures published on company websites.",
-        },
-        {
-          type: "definition",
-          term: "Managerial (management) accounting",
-          text: "Accounting focused on providing information for the management of the business so managers can decide where to cut costs, how to calculate prices, and how to allocate resources. It is primarily an internal decision-support tool.",
-        },
-        {
-          type: "definition",
-          term: "Auditing",
-          text: "Independent checking of accounts for authenticity by an auditing company. For some companies this check is mandatory. The result of the auditing process appears in the annual report.",
+          text: "Accounting aimed at producing information — such as the balance sheet and the income statement — that is of interest both inside the firm and to external decision makers (tax authorities, banks, investors).",
         },
         {
           type: "p",
-          text: "Managers use both forms: they need management-accounting detail for operational decisions, and they also care about financial-accounting outcomes because banks, tax authorities and investors read those published figures. The same transaction may therefore feed both systems, but the reports differ in audience, detail, legal form and often in time horizon (historical external reporting versus forward-looking internal analysis). Managerial accounting does not exist mainly to satisfy tax authorities; it primarily supports internal decisions. Tax and creditor reporting belong to the domain of financial accounting (subject to local law). Internal users need accounting information as much as external users do.",
+          text: "Of course, managers are also interested in financial accounting, something that is also of interest for decision makers outside a business like tax authorities or banks. Information gained from financial accounting like the balance sheet and the income statement can be found in the annual reports for example. Many large businesses also publish selected information on their financials on their websites.",
         },
         {
           type: "example",
           title: "Worked example — who needs which information",
-          text: "A bakery considers raising the price of a specialty bread. Management accounting estimates cost per loaf (€1.80 materials and labour), contribution after variable costs, and effect on monthly volume if the retail price rises from €3.20 to €3.50.\n\nSeparately, the bank financing a new oven asks for the latest balance sheet and income statement (financial accounting): total equity €90,000, bank loan €40,000, last year's profit €25,000. Tax authorities use the same financial accounts to assess taxable profit.\n\nBoth information sets matter, but they answer different questions for different users.",
+          text: "A bakery considers raising the price of a specialty bread. Management accounting estimates cost per loaf (€1.80 materials and labour), contribution after variable costs, and effect on monthly volume if the retail price rises from €3.20 to €3.50.\n\nSeparately, the bank financing a new oven asks for the latest balance sheet and income statement (financial accounting): total equity €90,000, bank loan €40,000, last year's profit €25,000. Tax authorities use the same financial accounts to assess taxable profit.",
         },
       ],
     },
+
     {
       id: "6.5",
       title: "Analysis of financial statements",
       blocks: [
         {
           type: "p",
-          text: "Figures from the balance sheet and income statement can be turned into ratios that shed light on liquidity (or solvency), profitability (profit relative to capital employed or turnover), financial efficiency (how effectively resources are used), and financial structure (equity ratio and debt ratio). Because ratios vary widely across industries, comparisons are meaningful mainly within the same industry or sector, or for one business over several years. There may also be different accepted ways to calculate a given ratio — always check the definition before comparing. Making an absolute profit does not automatically mean the business is sufficiently profitable: profitability ratios relate profit to equity, capital employed or turnover.",
+          text: "The information given in the balance sheet and in the income statement can be used to calculate figures and ratios in order to learn more, e.g. about the liquidity (or the solvency) of a business, profitability (which refers to the relationship of profit to the capital employed or to the turnover), financial efficiency (which deals with the question how effectively a business has employed its resources) and financial structure (which can be evaluated on the basis of equity ratio and debt ratio).",
+        },
+        {
+          type: "p",
+          text: "Please note: Since these figures and ratios can vary a lot from one industry to another, some comparisons would not be very meaningful. Comparisons are meaningful for different businesses within the same industry or sector or for one single business over time (comparisons of several different financial years). There might also be different ways to calculate some of these ratios, so it is always important to know how ratios were calculated if you want to make comparisons.",
         },
         {
           type: "table",
@@ -275,25 +299,71 @@ export default {
             ["Structure", "Debt ratio", "total debt / total assets"],
             ["Liquidity", "Working capital", "current assets − current liabilities"],
             ["Liquidity", "Current ratio", "current assets / current liabilities"],
-            ["Liquidity", "Acid-test ratio", "(current assets − inventory) / current liabilities"],
-            ["Profitability", "Return on equity", "profit before interest and tax / equity"],
-            ["Profitability", "Return on capital employed", "profit before interest and tax / capital employed"],
-            ["Profitability", "Capital employed (one definition)", "equity + non-current liabilities  (or assets − current liabilities)"],
+            [
+              "Liquidity",
+              "Acid-test ratio",
+              "(current assets − inventory) / current liabilities",
+            ],
+            [
+              "Profitability",
+              "Return on equity",
+              "profit before interest and tax / equity",
+            ],
+            [
+              "Profitability",
+              "Return on capital employed",
+              "profit before interest and tax / capital employed",
+            ],
+            [
+              "Profitability",
+              "Capital employed (one definition)",
+              "equity + non-current liabilities  (or assets − current liabilities)",
+            ],
             ["Efficiency", "Asset turnover", "turnover / average assets"],
-            ["Efficiency", "Inventory (stock) turnover", "cost of sales / average inventory"],
-            ["Shares", "Earnings per share", "profit for ordinary shareholders / shares outstanding"],
+            [
+              "Efficiency",
+              "Inventory (stock) turnover",
+              "cost of sales / average inventory",
+            ],
+            [
+              "Shares",
+              "Earnings per share",
+              "profit for ordinary shareholders / shares outstanding",
+            ],
             ["Shares", "Price–earnings ratio", "share price / earnings per share"],
             ["Shares", "Dividend yield", "dividend per share / share price"],
-            ["Shares", "Market capitalisation", "shares outstanding × market price"],
+            [
+              "Shares",
+              "Market capitalisation",
+              "shares outstanding × market price",
+            ],
           ],
         },
         {
           type: "p",
-          text: "Liquidity is the ability of a business to pay its bills and repay its debts on time. One approach uses working capital (circulating capital), which focuses on short-term assets and liabilities and indicates whether the firm can cover day-to-day bills such as electricity, rent and wages and buy inputs for production. Working capital should be positive: current assets above current liabilities. If not, part of non-current assets may have been financed by short-term liabilities, which can cause trouble when those liabilities fall due. A low working capital level may also mean too little cash or too much reliance on trade credit. Retailers that hold a lot of inventory often need higher working capital than pure service businesses. High inventory helps meet customer demand quickly but ties up money, takes space, and risks obsolescence.",
+          text: "The term liquidity refers to the ability of a business to pay its bills and repay its debts on time. One approach to evaluate liquidity is to calculate the working capital of a business. Working capital (or circulating capital) indicates whether or not a business is able to pay its day-to-day bills such as electricity, rent and wages and buy components for its production. Therefore, the focus is on short-term assets and liabilities.",
+        },
+        {
+          type: "formula",
+          label: "Working capital",
+          text: "Working capital = current assets − current liabilities",
         },
         {
           type: "p",
-          text: "Working-capital and cash-flow problems are linked but not identical. Short-term borrowing or overdrafts can ease a cash shortage yet raise current liabilities and thus reduce working capital. Improving both often requires more equity or more long-term credit. The current ratio should exceed 1 and is often considered healthy roughly between 1.5 and 2 (rules of thumb, industry-dependent). The acid test excludes inventories for a stricter liquidity check, because inventories may not turn into cash reliably.",
+          text: "The calculation of working capital is based on the idea that current assets of a business are relatively liquid (meaning that they can be easily turned into cash). If all the current assets are turned into cash to repay current liabilities, working capital is the amount that is left over after all current debts have been paid. Working capital should be positive, meaning that current assets should be higher than current liabilities. If they are not, this would indicate that part of the non-current assets was financed by short-term liabilities, which might cause problems when these liabilities need to be repaid.",
+        },
+        {
+          type: "p",
+          text: "Working capital problems and cash flow problems are interlinked but not identical. Cash flow problems can be mitigated by borrowing money using a short-term bank loan or using overdraft facilities and trade credit. Although this brings cash into the business, it will increase current liabilities and reduce working capital. The most effective way to improve both working capital and cash flow is to increase equity or borrow more long-term credit.",
+        },
+        {
+          type: "formula",
+          label: "Liquidity ratios",
+          text: "Current ratio = current assets / current liabilities\nAcid test ratio = (current assets − inventory) / current liabilities",
+        },
+        {
+          type: "p",
+          text: "As current assets should exceed current liabilities, the current ratio should be greater than 1, ideally even between 1.5 and 2. It can be argued that inventories should not be taken into consideration for this calculation. There are many reasons why inventories could possibly not be turned into cash. This is why a modified calculation, the so-called acid test ratio, does not consider inventories and allows a stricter evaluation of liquidity.",
         },
         {
           type: "example",
@@ -302,16 +372,26 @@ export default {
         },
         {
           type: "p",
-          text: "Profitability relates profit to the size of the business. A small absolute profit may be inadequate relative to capital invested and risk taken. Common measures use profit before interest and tax relative to equity or to capital employed. Capital employed is often equity plus non-current liabilities (or assets minus current liabilities). Average capital employed (average of opening and closing) is sometimes used instead of a period-end figure.",
+          text: "If revenues exceed costs, the business makes a profit. This does not necessarily mean that the business is sufficiently profitable because the amount of profit might be minuscule in relation to the money that has been invested (and the risk that has been taken). Hence, profitability refers to a business’s profit in relation to an indicator of the size of the business (total assets or total average assets, total equity, turnover).",
+        },
+        {
+          type: "formula",
+          label: "Return ratios",
+          text: "ROE = profit before tax and interest (EBIT) / equity\nROCE = profit before tax and interest (EBIT) / capital employed\nCapital employed ≈ equity + non-current liabilities (or assets − current liabilities)",
         },
         {
           type: "example",
           title: "Worked example — return ratios (euros in thousands)",
-          text: "Operating profit before interest and tax 90; equity 711; total assets 1,530; current liabilities 304.\n\nReturn on equity = 90 / 711 ≈ 12.7%.\nCapital employed = 1,530 − 304 = 1,226.\nReturn on capital employed = 90 / 1,226 ≈ 7.3%.\n\nIf average capital employed were 1,168, return on capital employed = 90 / 1,168 ≈ 7.7%.\nThese figures are most useful when compared with peers in the same industry and with the firm's own history. Investors typically prefer comparatively high returns on capital employed, other things equal.",
+          text: "Operating profit before interest and tax 90; equity 711; total assets 1,530; current liabilities 304.\n\nReturn on equity = 90 / 711 ≈ 12.7%.\nCapital employed = 1,530 − 304 = 1,226.\nReturn on capital employed = 90 / 1,226 ≈ 7.3%.\n\nIf average capital employed were 1,168, ROCE = 90 / 1,168 ≈ 7.7%. These figures are most useful when compared with peers in the same industry and with the firm's own history.",
         },
         {
           type: "p",
-          text: "Financial efficiency asks how well resources generate activity. Asset turnover relates turnover (revenue) to average assets or to average net assets (assets minus long-term liabilities). Inventory (stock) turnover relates cost of sales to average inventory and shows how many times stock was sold or used and replaced in a year. High inventory turnover usually means goods move quickly and less cash is tied up in stock.",
+          text: "Financial efficiency refers to the question how efficiently a business has employed its resources. Two of the ratios that can be calculated to evaluate financial efficiency are asset turnover and inventory (stock) turnover. Asset turnover aims to indicate how much turnover was generated by every euro invested in total average assets or — alternatively — in net assets. Inventory turnover shows how many times a business has sold or used up and replaced inventory. High inventory turnover is important because it indicates that goods sell well and do not remain in stock for a long time.",
+        },
+        {
+          type: "formula",
+          label: "Efficiency ratios",
+          text: "Asset turnover = turnover / average assets\nInventory (stock) turnover = cost of sales / average inventory",
         },
         {
           type: "example",
@@ -320,12 +400,12 @@ export default {
         },
         {
           type: "p",
-          text: "When analysing listed companies, investors also use share-related figures published with financial results. These bridge the income statement and market prices. Earnings per share divide profit attributable to ordinary shareholders by the number of shares outstanding. A share buyback reduces shares outstanding and can raise earnings per share even if total profit is unchanged. The price-earnings ratio divides the current share price by earnings per share: a ratio of about 16 means an investor pays roughly €16 of price for €1 of earnings. A low price-earnings ratio may suggest undervaluation or simply high current earnings; a high or rising ratio may mean the shares look expensive relative to earnings, or that investors expect stronger future growth. Dividend yield expresses the dividend relative to the share price. Market capitalisation (shares outstanding × market price) gauges size but is not automatically a measure of fundamental value, because prices move for many reasons. After shares already trade on an exchange, a rise in market price does not by itself bring new cash into the company — only sellers benefit; new equity cash comes from issuing new shares.",
+          text: "When analysing listed companies, investors also use share-related figures published with financial results. Earnings per share divide profit attributable to ordinary shareholders by the number of shares outstanding. The price-earnings ratio divides the current share price by earnings per share. Dividend yield expresses the dividend relative to the share price. Market capitalisation (shares outstanding × market price) gauges size but is not necessarily a meaningful metric for the fundamental value of a company, because there are many reasons why share price might be particularly high or low. After shares already trade on an exchange, a rise in market price does not by itself bring new cash into the company — only sellers benefit; new equity cash comes from issuing new shares.",
         },
         {
           type: "example",
           title: "Worked example — earnings per share and price-earnings ratio",
-          text: "Profit attributable to ordinary shareholders €5,000,000; shares outstanding 2,000,000; market price €20.\n\nEarnings per share = 5,000,000 / 2,000,000 = €2.50.\nPrice-earnings ratio = 20 / 2.50 = 8.\nAn investor pays €8 of price per €1 of current earnings.\n\nIf the firm buys back 200,000 shares and profit stays €5,000,000, shares outstanding become 1,800,000 and earnings per share rise to 5,000,000 / 1,800,000 ≈ €2.78 — higher per-share earnings without any change in total profit.",
+          text: "Profit attributable to ordinary shareholders €5,000,000; shares outstanding 2,000,000; market price €20.\n\nEarnings per share = 5,000,000 / 2,000,000 = €2.50.\nPrice-earnings ratio = 20 / 2.50 = 8.\nAn investor pays €8 of price per €1 of current earnings.\n\nIf the firm buys back 200,000 shares and profit stays €5,000,000, shares outstanding become 1,800,000 and earnings per share rise to ≈ €2.78 — higher per-share earnings without any change in total profit.",
         },
       ],
     },
