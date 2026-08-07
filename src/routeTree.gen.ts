@@ -16,10 +16,10 @@ import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as ParentsRouteImport } from './routes/parents'
 import { Route as MockExamsRouteImport } from './routes/mock-exams'
-import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
@@ -39,6 +39,7 @@ import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/produc
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
 import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
+import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
 import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.math'
 import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
@@ -47,7 +48,6 @@ import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
-import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -84,11 +84,6 @@ const MockExamsRoute = MockExamsRouteImport.update({
   path: '/mock-exams',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FlashcardsRoute = FlashcardsRouteImport.update({
-  id: '/flashcards',
-  path: '/flashcards',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
   path: '/login',
@@ -102,6 +97,11 @@ const ImportantFeaturesRoute = ImportantFeaturesRouteImport.update({
 const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
   id: '/forgot-password',
   path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FlashcardsRoute = FlashcardsRouteImport.update({
+  id: '/flashcards',
+  path: '/flashcards',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DemoPracticeRoute = DemoPracticeRouteImport.update({
@@ -204,6 +204,11 @@ const ProductsCustomMockBuilderRoute =
     path: '/custom-mock-builder',
     getParentRoute: () => ProductsRoute,
   } as any)
+const FlashcardsSubjectRoute = FlashcardsSubjectRouteImport.update({
+  id: '/$subject',
+  path: '/$subject',
+  getParentRoute: () => FlashcardsRoute,
+} as any)
 const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
   id: '/features/answer-sheet',
   path: '/features/answer-sheet',
@@ -243,11 +248,6 @@ const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
   id: '/$examId/review',
   path: '/$examId/review',
   getParentRoute: () => MockExamsRoute,
-} as any)
-const FlashcardsSubjectRoute = FlashcardsSubjectRouteImport.update({
-  id: '/$subject',
-  path: '/$subject',
-  getParentRoute: () => FlashcardsRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -565,13 +565,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/flashcards': {
-      id: '/flashcards'
-      path: '/flashcards'
-      fullPath: '/flashcards'
-      preLoaderRoute: typeof FlashcardsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/login': {
       id: '/login'
       path: '/login'
@@ -591,6 +584,13 @@ declare module '@tanstack/react-router' {
       path: '/forgot-password'
       fullPath: '/forgot-password'
       preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flashcards': {
+      id: '/flashcards'
+      path: '/flashcards'
+      fullPath: '/flashcards'
+      preLoaderRoute: typeof FlashcardsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/demo-practice': {
@@ -726,6 +726,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/flashcards/$subject': {
+      id: '/flashcards/$subject'
+      path: '/$subject'
+      fullPath: '/flashcards/$subject'
+      preLoaderRoute: typeof FlashcardsSubjectRouteImport
+      parentRoute: typeof FlashcardsRoute
+    }
     '/features/answer-sheet': {
       id: '/features/answer-sheet'
       path: '/features/answer-sheet'
@@ -782,13 +789,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
       parentRoute: typeof MockExamsRoute
     }
-    '/flashcards/$subject': {
-      id: '/flashcards/$subject'
-      path: '/$subject'
-      fullPath: '/flashcards/$subject'
-      preLoaderRoute: typeof FlashcardsSubjectRouteImport
-      parentRoute: typeof FlashcardsRoute
-    }
   }
 }
 
@@ -820,6 +820,20 @@ const DemoPracticeRouteWithChildren = DemoPracticeRoute._addFileChildren(
   DemoPracticeRouteChildren,
 )
 
+interface FlashcardsRouteChildren {
+  FlashcardsSubjectRoute: typeof FlashcardsSubjectRoute
+  FlashcardsIndexRoute: typeof FlashcardsIndexRoute
+}
+
+const FlashcardsRouteChildren: FlashcardsRouteChildren = {
+  FlashcardsSubjectRoute: FlashcardsSubjectRoute,
+  FlashcardsIndexRoute: FlashcardsIndexRoute,
+}
+
+const FlashcardsRouteWithChildren = FlashcardsRoute._addFileChildren(
+  FlashcardsRouteChildren,
+)
+
 interface MockExamsRouteChildren {
   MockExamsIndexRoute: typeof MockExamsIndexRoute
   MockExamsExamIdReviewRoute: typeof MockExamsExamIdReviewRoute
@@ -834,20 +848,6 @@ const MockExamsRouteChildren: MockExamsRouteChildren = {
 
 const MockExamsRouteWithChildren = MockExamsRoute._addFileChildren(
   MockExamsRouteChildren,
-)
-
-interface FlashcardsRouteChildren {
-  FlashcardsIndexRoute: typeof FlashcardsIndexRoute
-  FlashcardsSubjectRoute: typeof FlashcardsSubjectRoute
-}
-
-const FlashcardsRouteChildren: FlashcardsRouteChildren = {
-  FlashcardsIndexRoute: FlashcardsIndexRoute,
-  FlashcardsSubjectRoute: FlashcardsSubjectRoute,
-}
-
-const FlashcardsRouteWithChildren = FlashcardsRoute._addFileChildren(
-  FlashcardsRouteChildren,
 )
 
 interface ProductsRouteChildren {
