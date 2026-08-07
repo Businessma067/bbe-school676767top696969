@@ -156,143 +156,143 @@ def styles():
     return {
         "cover_brand": ParagraphStyle(
             "cbr", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=12, textColor=ACCENT, spaceAfter=14,
+            fontSize=13, textColor=ACCENT, spaceAfter=14,
         ),
         "cover_title": ParagraphStyle(
             "cti", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=28, textColor=INK, leading=34, spaceAfter=10,
+            fontSize=30, textColor=INK, leading=36, spaceAfter=10,
         ),
         "cover_sub": ParagraphStyle(
             "csu", parent=b["Normal"], fontName="Helvetica",
-            fontSize=12, textColor=MUTED, leading=16, spaceAfter=6,
+            fontSize=13, textColor=MUTED, leading=17, spaceAfter=6,
         ),
         "cover_method": ParagraphStyle(
             "cme", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10, textColor=INK, leading=14, spaceBefore=16, spaceAfter=4,
+            fontSize=11, textColor=INK, leading=15, spaceBefore=16, spaceAfter=4,
         ),
         "toc_h": ParagraphStyle(
             "th", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=18, textColor=INK, spaceAfter=14,
+            fontSize=19, textColor=INK, spaceAfter=14,
         ),
         "toc_ch": ParagraphStyle(
             "tc", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=ACCENT, spaceBefore=12, spaceAfter=3,
+            fontSize=12.5, textColor=ACCENT, spaceBefore=12, spaceAfter=3,
         ),
         "toc_sec": ParagraphStyle(
             "ts", parent=b["Normal"], fontName="Helvetica",
-            fontSize=9.5, textColor=INK, leftIndent=14, leading=12.5, spaceAfter=1.5,
+            fontSize=10.5, textColor=INK, leftIndent=14, leading=13.5, spaceAfter=1.5,
         ),
         "ch_label": ParagraphStyle(
             "chl", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=10, textColor=ACCENT, spaceBefore=4, spaceAfter=4,
+            fontSize=11, textColor=ACCENT, spaceBefore=4, spaceAfter=4,
         ),
         "ch_title": ParagraphStyle(
             "cht", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=22, textColor=INK, leading=26, spaceBefore=2, spaceAfter=10,
+            fontSize=24, textColor=INK, leading=28, spaceBefore=2, spaceAfter=10,
         ),
         "sec": ParagraphStyle(
             "sec", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=13, textColor=ACCENT, leading=16, spaceBefore=14, spaceAfter=7,
+            fontSize=14, textColor=ACCENT, leading=17, spaceBefore=14, spaceAfter=7,
         ),
         "body": ParagraphStyle(
             "body", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14.4, alignment=TA_JUSTIFY, spaceAfter=7,
+            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "body_boldlead": ParagraphStyle(
             "bbl", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14.4, alignment=TA_JUSTIFY, spaceAfter=7,
+            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "example": ParagraphStyle(
             "ex", parent=b["Normal"], fontName="Helvetica-Oblique",
-            fontSize=10.5, textColor=INK, leading=14.4, alignment=TA_JUSTIFY, spaceAfter=7,
+            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "obj_h": ParagraphStyle(
             "oh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=INK, spaceBefore=6, spaceAfter=6,
+            fontSize=12, textColor=INK, spaceBefore=6, spaceAfter=6,
         ),
         "obj_item": ParagraphStyle(
             "oi", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14, leftIndent=18, spaceAfter=3,
+            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=18, spaceAfter=3,
         ),
         "recap_h": ParagraphStyle(
             "rh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=13, textColor=ACCENT, spaceBefore=10, spaceAfter=8,
+            fontSize=14, textColor=ACCENT, spaceBefore=10, spaceAfter=8,
         ),
         "caption": ParagraphStyle(
             "cap", parent=b["Normal"], fontName="Helvetica-Oblique",
-            fontSize=10.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
+            fontSize=11.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
         ),
         "bullet": ParagraphStyle(
             "bu", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14, leftIndent=16, spaceAfter=3,
+            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=3,
         ),
         "callout_label": ParagraphStyle(
             "cl", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=8.5, textColor=ACCENT, leading=11, spaceAfter=2,
+            fontSize=9.5, textColor=ACCENT, leading=12, spaceAfter=2,
         ),
         "callout_title": ParagraphStyle(
             "ctt", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=10.5, textColor=INK, leading=13.5, spaceAfter=2,
+            fontSize=11.5, textColor=INK, leading=14.5, spaceAfter=2,
         ),
         "callout_body": ParagraphStyle(
             "cb", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.2, textColor=INK, leading=13.8, alignment=TA_JUSTIFY, spaceAfter=0,
+            fontSize=11.2, textColor=INK, leading=15, alignment=TA_JUSTIFY, spaceAfter=0,
         ),
         "formula": ParagraphStyle(
             "fo", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14, alignment=TA_LEFT,
+            fontSize=11.5, textColor=INK, leading=15.2, alignment=TA_LEFT,
         ),
         "formula_vars": ParagraphStyle(
             "fv", parent=b["Normal"], fontName="Helvetica-Oblique",
-            fontSize=9.5, textColor=MUTED, leading=12.5, spaceBefore=3,
+            fontSize=10.5, textColor=MUTED, leading=13.5, spaceBefore=3,
         ),
         "worked_h": ParagraphStyle(
             "wh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=ACCENT, leading=14, spaceAfter=4,
+            fontSize=12, textColor=ACCENT, leading=15, spaceAfter=4,
         ),
         "worked_step": ParagraphStyle(
             "ws", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10.5, textColor=INK, leading=14, leftIndent=16, spaceAfter=3,
+            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=3,
         ),
         "worked_result": ParagraphStyle(
             "wr", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=10.5, textColor=INK, leading=14, spaceBefore=4, spaceAfter=6,
+            fontSize=11.5, textColor=INK, leading=15.2, spaceBefore=4, spaceAfter=6,
         ),
         "take_h": ParagraphStyle(
             "tkh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=INK, spaceBefore=4, spaceAfter=5,
+            fontSize=12, textColor=INK, spaceBefore=4, spaceAfter=5,
         ),
         "check_h": ParagraphStyle(
             "ckh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=INK, spaceBefore=4, spaceAfter=5,
+            fontSize=12, textColor=INK, spaceBefore=4, spaceAfter=5,
         ),
         "cell": ParagraphStyle(
             "cell", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11, textColor=INK, leading=14, alignment=TA_LEFT,
+            fontSize=12, textColor=INK, leading=15.2, alignment=TA_LEFT,
         ),
         "cell_c": ParagraphStyle(
             "cellc", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11, textColor=INK, leading=14, alignment=TA_CENTER,
+            fontSize=12, textColor=INK, leading=15.2, alignment=TA_CENTER,
         ),
         "cell_h": ParagraphStyle(
             "cellh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=white, leading=14, alignment=TA_CENTER,
+            fontSize=12, textColor=white, leading=15.2, alignment=TA_CENTER,
         ),
         "cell_h_l": ParagraphStyle(
             "cellhl", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11, textColor=white, leading=14, alignment=TA_LEFT,
+            fontSize=12, textColor=white, leading=15.2, alignment=TA_LEFT,
         ),
         "compare_h": ParagraphStyle(
             "cmh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=10.5, textColor=white, leading=13, alignment=TA_CENTER,
+            fontSize=11.5, textColor=white, leading=14, alignment=TA_CENTER,
         ),
         "compare_item": ParagraphStyle(
             "cmi", parent=b["Normal"], fontName="Helvetica",
-            fontSize=10, textColor=INK, leading=13, alignment=TA_LEFT,
+            fontSize=11, textColor=INK, leading=14, alignment=TA_LEFT,
         ),
         "end_title": ParagraphStyle(
             "et", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=18, textColor=INK, leading=22, spaceAfter=10,
+            fontSize=19, textColor=INK, leading=23, spaceAfter=10,
         ),
     }
 
@@ -482,7 +482,7 @@ def make_compare(block: dict, width: float):
 
 
 # ─── Drawing toolkit ──────────────────────────────────────────────────
-def _txt(c, x, y, s, size=10.5, bold=False, color=None, align="c", italic=False):
+def _txt(c, x, y, s, size=11.5, bold=False, color=None, align="c", italic=False):
     s = (s or "").translate(_UNICODE_FIX)
     if bold and italic:
         font = "Helvetica-BoldOblique"
@@ -563,10 +563,10 @@ def _chart(c, x, y, w, h, title, subtitle, max_q, max_p, q_step, p_step,
            x_label="Quantity", y_label="Price"):
     top = 0.0
     if title:
-        _txt(c, x, y + h - 9, title, 11, True, ACCENT, "l")
+        _txt(c, x, y + h - 9, title, 12, True, ACCENT, "l")
         if subtitle:
-            tw = c.stringWidth(title, "Helvetica-Bold", 11)
-            _txt(c, x + tw + 6, y + h - 9, subtitle, 10, False, INK, "l")
+            tw = c.stringWidth(title, "Helvetica-Bold", 12)
+            _txt(c, x + tw + 6, y + h - 9, subtitle, 11, False, INK, "l")
         top = 22.0
 
     ox, oy = x + 48, y + 36
@@ -600,21 +600,21 @@ def _chart(c, x, y, w, h, title, subtitle, max_q, max_p, q_step, p_step,
         c.setStrokeColor(AXIS)
         c.setLineWidth(0.6)
         c.line(ox - 3, yy, ox, yy)
-        _txt(c, ox - 5, yy - 2.5, str(int(p)), 10.5, False, INK, "r")
+        _txt(c, ox - 5, yy - 2.5, str(int(p)), 11.5, False, INK, "r")
         p += p_step
     q = 0
     while q <= max_q + 0.001:
         xx = ox + pw * (q / max_q)
         c.line(xx, oy - 3, xx, oy)
-        _txt(c, xx, oy - 12, str(int(q)), 10.5, False, INK)
+        _txt(c, xx, oy - 12, str(int(q)), 11.5, False, INK)
         q += q_step
 
     c.saveState()
     c.translate(ox - 30, oy + ph / 2)
     c.rotate(90)
-    _txt(c, 0, 0, y_label, 11, True, AXIS)
+    _txt(c, 0, 0, y_label, 12, True, AXIS)
     c.restoreState()
-    _txt(c, ox + pw + 9, oy - 24, x_label, 11, True, AXIS, "r")
+    _txt(c, ox + pw + 9, oy - 24, x_label, 12, True, AXIS, "r")
 
     return ox, oy, pw, ph, (lambda v: ox + pw * (v / max_q)), (lambda v: oy + ph * (v / max_p))
 
@@ -636,7 +636,7 @@ def _marker(c, x, y, label, dx=5, dy=4):
     c.setStrokeColor(ACCENT)
     c.setLineWidth(1.2)
     c.circle(x, y, 3.2, stroke=1, fill=1)
-    _txt(c, x + dx, y + dy, label, 11, True, ACCENT, "l")
+    _txt(c, x + dx, y + dy, label, 12, True, ACCENT, "l")
 
 
 def _guides(c, ox, oy, px, py):
@@ -650,9 +650,9 @@ def _guides(c, ox, oy, px, py):
 
 # ─── Figures ──────────────────────────────────────────────────────────
 def _fig_placeholder(c, x, y, w, h, fig_id: str = ""):
-    _txt(c, x + w / 2, y + h / 2 + 6, "Figure", 12, True, ACCENT)
+    _txt(c, x + w / 2, y + h / 2 + 6, "Figure", 13, True, ACCENT)
     if fig_id:
-        _txt(c, x + w / 2, y + h / 2 - 10, fig_id, 10, False, MUTED)
+        _txt(c, x + w / 2, y + h / 2 - 10, fig_id, 11, False, MUTED)
 
 
 def _fig_supply(c, x, y, w, h):
@@ -664,16 +664,16 @@ def _fig_supply(c, x, y, w, h):
         return 20 + 5 * q
 
     _curve(c, [(PX(4), PY(sup(4))), (PX(43), PY(sup(43)))], ACCENT, 2.0)
-    _txt(c, PX(43) + 4, PY(sup(43)) - 2, "S", 11, True, ACCENT, "l")
+    _txt(c, PX(43) + 4, PY(sup(43)) - 2, "S", 12, True, ACCENT, "l")
 
     for q, name in ((12, "A"), (34, "B")):
         _guides(c, ox, oy, PX(q), PY(sup(q)))
         _marker(c, PX(q), PY(sup(q)), name, 5, -10)
 
     _txt(c, ox + 6, oy + ph - 8, "a higher price raises the quantity supplied (ceteris paribus)",
-         10.5, False, INK, "l", italic=True)
-    _txt(c, PX(25), PY(72), "from A to B only the price changed,", 10.5, False, INK, "l", italic=True)
-    _txt(c, PX(25), PY(48), "so we move along the same curve S", 10.5, False, INK, "l", italic=True)
+         11.5, False, INK, "l", italic=True)
+    _txt(c, PX(25), PY(72), "from A to B only the price changed,", 11.5, False, INK, "l", italic=True)
+    _txt(c, PX(25), PY(48), "so we move along the same curve S", 11.5, False, INK, "l", italic=True)
 
 
 def _fig_demand(c, x, y, w, h):
@@ -685,16 +685,16 @@ def _fig_demand(c, x, y, w, h):
         return 258 - 2.4 * (q + shift)
 
     _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], ACCENT, 2.0)
-    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 11, True, ACCENT, "l")
+    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 12, True, ACCENT, "l")
 
     _curve(c, [(PX(8), PY(dem(8, 26))), (PX(66), PY(dem(66, 26)))], CURVE2, 1.4, dashed=True)
-    _txt(c, PX(66) + 4, PY(dem(66, 26)) + 2, "D1", 10, True, CURVE2, "l")
+    _txt(c, PX(66) + 4, PY(dem(66, 26)) + 2, "D1", 11, True, CURVE2, "l")
 
     _arrow(c, PX(57.5), PY(120), PX(31.5), PY(120), CURVE2, 1.1, 5.5)
-    _txt(c, PX(70), PY(205), "a fall in demand shifts", 10.5, False, INK, "l", italic=True)
-    _txt(c, PX(70), PY(183), "the whole curve to D1", 10.5, False, INK, "l", italic=True)
-    _txt(c, PX(9), PY(70), "price change: move along D", 10.5, False, INK, "l", italic=True)
-    _txt(c, PX(9), PY(48), "non-price factors: D shifts to D1", 10.5, False, INK, "l", italic=True)
+    _txt(c, PX(70), PY(205), "a fall in demand shifts", 11.5, False, INK, "l", italic=True)
+    _txt(c, PX(70), PY(183), "the whole curve to D1", 11.5, False, INK, "l", italic=True)
+    _txt(c, PX(9), PY(70), "price change: move along D", 11.5, False, INK, "l", italic=True)
+    _txt(c, PX(9), PY(48), "non-price factors: D shifts to D1", 11.5, False, INK, "l", italic=True)
 
 
 def _fig_equilibrium(c, x, y, w, h):
@@ -713,21 +713,21 @@ def _fig_equilibrium(c, x, y, w, h):
 
     _curve(c, [(PX(8), PY(sup(8))), (PX(92), PY(sup(92)))], ACCENT, 2.0)
     _curve(c, [(PX(8), PY(dem(8))), (PX(92), PY(dem(92)))], AXIS, 1.8)
-    _txt(c, PX(92) + 4, PY(sup(92)) - 2, "S", 11, True, ACCENT, "l")
-    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 11, True, AXIS, "l")
+    _txt(c, PX(92) + 4, PY(sup(92)) - 2, "S", 12, True, ACCENT, "l")
+    _txt(c, PX(92) + 4, PY(dem(92)) + 2, "D", 12, True, AXIS, "l")
 
     ph_hi = 200
     _arrow2(c, PX((258 - ph_hi) / 2.4), PY(ph_hi), PX((ph_hi - 40) / 2.2), PY(ph_hi))
-    _txt(c, PX(50), PY(ph_hi) + 5, "surplus: Qs > Qd, price falls", 10.5, False, INK)
+    _txt(c, PX(50), PY(ph_hi) + 5, "surplus: Qs > Qd, price falls", 11.5, False, INK)
 
     ph_lo = 90
     _arrow2(c, PX((ph_lo - 40) / 2.2), PY(ph_lo), PX((258 - ph_lo) / 2.4), PY(ph_lo))
-    _txt(c, PX(48), PY(ph_lo) - 11, "shortage: Qd > Qs, price rises", 10.5, False, INK)
+    _txt(c, PX(48), PY(ph_lo) - 11, "shortage: Qd > Qs, price rises", 11.5, False, INK)
 
     _guides(c, ox, oy, PX(qe), PY(pe))
     _marker(c, PX(qe), PY(pe), "E", 6, 4)
-    _txt(c, ox - 5, PY(pe) + 4, "P*", 11, True, ACCENT, "r")
-    _txt(c, PX(qe), oy - 19, "Q*", 11, True, ACCENT)
+    _txt(c, ox - 5, PY(pe) + 4, "P*", 12, True, ACCENT, "r")
+    _txt(c, PX(qe), oy - 19, "Q*", 12, True, ACCENT)
 
 
 def _fig_circular_flow(c, x, y, w, h):
@@ -740,15 +740,15 @@ def _fig_circular_flow(c, x, y, w, h):
     gx = x + (w - bw) / 2
 
     _box(c, gx, gov_y, bw, gov_h, ACCENT_SOFT, radius=2)
-    _txt(c, gx + bw / 2, gov_y + 9, "Government", 10.5, True, ACCENT)
+    _txt(c, gx + bw / 2, gov_y + 9, "Government", 11.5, True, ACCENT)
 
     for px, l1, l2 in ((lx, "Private", "households"), (rx, "Businesses", "")):
         _box(c, px, base, bw, bh, white, radius=2)
         if l2:
-            _txt(c, px + bw / 2, base + bh / 2 + 2, l1, 10.5, True, ACCENT)
-            _txt(c, px + bw / 2, base + bh / 2 - 8, l2, 10.5, True, ACCENT)
+            _txt(c, px + bw / 2, base + bh / 2 + 2, l1, 11.5, True, ACCENT)
+            _txt(c, px + bw / 2, base + bh / 2 - 8, l2, 11.5, True, ACCENT)
         else:
-            _txt(c, px + bw / 2, base + bh / 2 - 3, l1, 10.5, True, ACCENT)
+            _txt(c, px + bw / 2, base + bh / 2 - 3, l1, 11.5, True, ACCENT)
 
     x1, x2 = lx + bw + 6, rx - 6
     lanes = [
@@ -762,15 +762,15 @@ def _fig_circular_flow(c, x, y, w, h):
             _arrow(c, x2, ly, x1, ly, ACCENT, 1.1, 5.5)
         else:
             _arrow(c, x1, ly, x2, ly, ACCENT, 1.1, 5.5)
-        _txt(c, (x1 + x2) / 2, ly + 4, label, 10.5, False, INK)
+        _txt(c, (x1 + x2) / 2, ly + 4, label, 11.5, False, INK)
 
     for px, side in ((lx + bw * 0.4, "r"), (rx + bw * 0.6, "l")):
         _arrow(c, px, base + bh, px, gov_y - 3, ACCENT_LIGHT, 1.0, 5)
         _txt(c, px + (-3 if side == "r" else 3), (base + bh + gov_y) / 2 - 3,
              "taxes", 9, False, INK, side)
-    _txt(c, x + w / 2, gov_y - 12, "public goods, transfers and subsidies", 10.5, False, INK)
+    _txt(c, x + w / 2, gov_y - 12, "public goods, transfers and subsidies", 11.5, False, INK)
     _txt(c, x + w / 2, y + 4, "real flows and monetary flows run in opposite directions",
-         10.5, False, INK, italic=True)
+         11.5, False, INK, italic=True)
 
 
 def _fig_sectors(c, x, y, w, h):
@@ -787,12 +787,12 @@ def _fig_sectors(c, x, y, w, h):
         px = x + i * (bw + gap)
         py = top - bh
         _box(c, px, py, bw, bh, white)
-        _txt(c, px + bw / 2, py + bh - 16, title, 11, True, ACCENT)
-        _txt(c, px + bw / 2, py + bh - 29, kind, 10, True, INK)
+        _txt(c, px + bw / 2, py + bh - 16, title, 12, True, ACCENT)
+        _txt(c, px + bw / 2, py + bh - 29, kind, 11, True, INK)
         words = examples.split(", ")
         half = (len(words) + 1) // 2
-        _txt(c, px + bw / 2, py + bh - 45, ", ".join(words[:half]), 10.5, False, INK)
-        _txt(c, px + bw / 2, py + bh - 57, ", ".join(words[half:]), 10.5, False, INK)
+        _txt(c, px + bw / 2, py + bh - 45, ", ".join(words[:half]), 11.5, False, INK)
+        _txt(c, px + bw / 2, py + bh - 57, ", ".join(words[half:]), 11.5, False, INK)
         if i < 2:
             _arrow(c, px + bw + 4, py + bh / 2, px + bw + gap - 4, py + bh / 2, ACCENT, 1.2, 6)
     _txt(c, x + w / 2, y + 4,
@@ -805,7 +805,7 @@ def _fig_ownership(c, x, y, w, h):
         _box(c, px, py, bw, bh, fill)
         if sub:
             _txt(c, px + bw / 2, py + bh / 2 + 4, title, size, True, ACCENT)
-            _txt(c, px + bw / 2, py + bh / 2 - 9, sub, 10.5, False, INK)
+            _txt(c, px + bw / 2, py + bh / 2 - 9, sub, 11.5, False, INK)
         else:
             _txt(c, px + bw / 2, py + bh / 2 - 3, title, size, True, ACCENT)
 
@@ -862,8 +862,8 @@ def _fig_mix(c, x, y, w, h):
 
     for title, sub, bx, by, _, _ in items:
         _box(c, bx, by, bw, bh, white)
-        _txt(c, bx + bw / 2, by + bh - 17, title, 11, True, ACCENT)
-        _txt(c, bx + bw / 2, by + bh - 30, sub, 10.5, False, INK)
+        _txt(c, bx + bw / 2, by + bh - 17, title, 12, True, ACCENT)
+        _txt(c, bx + bw / 2, by + bh - 30, sub, 11.5, False, INK)
 
     c.setFillColor(ACCENT_SOFT)
     c.setStrokeColor(ACCENT)
@@ -871,9 +871,9 @@ def _fig_mix(c, x, y, w, h):
     c.setDash(1.6, 1.6)
     c.circle(cx, cy, r, stroke=1, fill=1)
     c.setDash()
-    _txt(c, cx, cy + 4, "Marketing", 11, True, ACCENT)
-    _txt(c, cx, cy - 6, "mix", 11, True, ACCENT)
-    _txt(c, cx, cy - 18, "the four Ps", 10.5, False, INK)
+    _txt(c, cx, cy + 4, "Marketing", 12, True, ACCENT)
+    _txt(c, cx, cy - 6, "mix", 12, True, ACCENT)
+    _txt(c, cx, cy - 18, "the four Ps", 11.5, False, INK)
 
 
 def _fig_plc(c, x, y, w, h):
@@ -887,7 +887,7 @@ def _fig_plc(c, x, y, w, h):
     c.line(ox, zero, ox + pw + 8, zero)
     _head(c, ox, oy + ph + 10, math.pi / 2, 5, AXIS)
     _head(c, ox + pw + 10, zero, 0, 5, AXIS)
-    _txt(c, ox - 5, zero - 2, "0", 10.5, False, INK, "r")
+    _txt(c, ox - 5, zero - 2, "0", 11.5, False, INK, "r")
 
     stages = [("Introduction", 0.00, 0.17), ("Growth", 0.17, 0.44),
               ("Maturity", 0.44, 0.74), ("Decline", 0.74, 1.00)]
@@ -898,7 +898,7 @@ def _fig_plc(c, x, y, w, h):
         c.line(ox + pw * end, oy, ox + pw * end, oy + ph)
     c.setDash()
     for name, a, b in stages:
-        _txt(c, ox + pw * (a + b) / 2, oy + ph + 1, name, 10.5, True, ACCENT)
+        _txt(c, ox + pw * (a + b) / 2, oy + ph + 1, name, 11.5, True, ACCENT)
 
     sales = c.beginPath()
     sales.moveTo(ox, zero + 3)
@@ -911,7 +911,7 @@ def _fig_plc(c, x, y, w, h):
     c.setStrokeColor(ACCENT)
     c.setLineWidth(2.0)
     c.drawPath(sales, stroke=1, fill=0)
-    _txt(c, ox + pw * 0.50, zero + ph * 0.62, "Sales", 11, True, ACCENT)
+    _txt(c, ox + pw * 0.50, zero + ph * 0.62, "Sales", 12, True, ACCENT)
 
     profit = c.beginPath()
     profit.moveTo(ox, zero - ph * 0.13)
@@ -926,14 +926,14 @@ def _fig_plc(c, x, y, w, h):
     c.setDash(3, 2)
     c.drawPath(profit, stroke=1, fill=0)
     c.setDash()
-    _txt(c, ox + pw * 0.30, zero + ph * 0.03, "Profit", 11, True, CURVE2)
+    _txt(c, ox + pw * 0.30, zero + ph * 0.03, "Profit", 12, True, CURVE2)
 
     c.saveState()
     c.translate(ox - 28, oy + ph / 2)
     c.rotate(90)
-    _txt(c, 0, 0, "Sales and profit", 10.5, True, AXIS)
+    _txt(c, 0, 0, "Sales and profit", 11.5, True, AXIS)
     c.restoreState()
-    _txt(c, ox + pw + 10, zero - 16, "Time", 10.5, True, AXIS, "r")
+    _txt(c, ox + pw + 10, zero - 16, "Time", 11.5, True, AXIS, "r")
     _txt(c, ox + 4, oy + 2, "losses in the introduction stage; profit peaks before sales do",
          9.5, False, INK, "l", italic=True)
 
@@ -954,9 +954,9 @@ def _fig_bcg(c, x, y, w, h):
         py = oy + row * qh
         fill = ACCENT_SOFT if (col + row) % 2 == 0 else white
         _box(c, px, py, qw, qh, fill, ACCENT_LIGHT, dashed=True, lw=0.8)
-        _txt(c, px + qw / 2, py + qh - 22, title, 12, True, ACCENT)
-        _txt(c, px + qw / 2, py + qh - 36, cond, 10, False, INK)
-        _txt(c, px + qw / 2, py + qh - 50, action, 10.5, False, INK, italic=True)
+        _txt(c, px + qw / 2, py + qh - 22, title, 13, True, ACCENT)
+        _txt(c, px + qw / 2, py + qh - 36, cond, 11, False, INK)
+        _txt(c, px + qw / 2, py + qh - 50, action, 11.5, False, INK, italic=True)
 
     c.setStrokeColor(AXIS)
     c.setLineWidth(0.9)
@@ -968,14 +968,14 @@ def _fig_bcg(c, x, y, w, h):
     c.saveState()
     c.translate(ox - 24, oy + ph / 2)
     c.rotate(90)
-    _txt(c, 0, 0, "Market growth", 10.5, True, AXIS)
+    _txt(c, 0, 0, "Market growth", 11.5, True, AXIS)
     c.restoreState()
-    _txt(c, ox - 5, oy + ph - 8, "high", 9.5, False, INK, "r")
-    _txt(c, ox - 5, oy + 6, "low", 9.5, False, INK, "r")
+    _txt(c, ox - 5, oy + ph - 8, "high", 10.5, False, INK, "r")
+    _txt(c, ox - 5, oy + 6, "low", 10.5, False, INK, "r")
 
-    _txt(c, ox + pw / 2, oy - 20, "Relative market share", 10.5, True, AXIS)
-    _txt(c, ox + qw / 2, oy - 10, "high", 9.5, False, INK)
-    _txt(c, ox + qw * 1.5, oy - 10, "low", 9.5, False, INK)
+    _txt(c, ox + pw / 2, oy - 20, "Relative market share", 11.5, True, AXIS)
+    _txt(c, ox + qw / 2, oy - 10, "high", 10.5, False, INK)
+    _txt(c, ox + qw * 1.5, oy - 10, "low", 10.5, False, INK)
 
 
 def _fig_fs(c, x, y, w, h):
@@ -983,7 +983,7 @@ def _fig_fs(c, x, y, w, h):
     root_x = x + (w - root_w) / 2
     root_y = y + h - root_h
     _box(c, root_x, root_y, root_w, root_h, ACCENT_SOFT)
-    _txt(c, root_x + root_w / 2, root_y + 8, "Financial statements", 11, True, ACCENT)
+    _txt(c, root_x + root_w / 2, root_y + 8, "Financial statements", 12, True, ACCENT)
 
     items = [
         ("Balance sheet", "what the business owns", "and how it is financed"),
@@ -998,9 +998,9 @@ def _fig_fs(c, x, y, w, h):
     for i, (t, l1, l2) in enumerate(items):
         px = x + i * (bw + gap)
         _box(c, px, by, bw, bh, white)
-        _txt(c, px + bw / 2, by + bh - 17, t, 11, True, ACCENT)
-        _txt(c, px + bw / 2, by + bh - 30, l1, 10.5, False, INK)
-        _txt(c, px + bw / 2, by + bh - 42, l2, 10.5, False, INK)
+        _txt(c, px + bw / 2, by + bh - 17, t, 12, True, ACCENT)
+        _txt(c, px + bw / 2, by + bh - 30, l1, 11.5, False, INK)
+        _txt(c, px + bw / 2, by + bh - 42, l2, 11.5, False, INK)
         xs.append(px + bw / 2)
     _tree(c, root_x + root_w / 2, root_y, xs, by + bh)
 
@@ -1016,8 +1016,8 @@ def _fig_bs(c, x, y, w, h):
     c.setLineWidth(0.9)
     c.line(x, head_y, x + w, head_y)
     c.line(mid, bottom, mid, top)
-    _txt(c, x + w * 0.25, head_y + 8, "Assets", 11, True, ACCENT)
-    _txt(c, x + w * 0.75, head_y + 8, "Equity and liabilities", 11, True, ACCENT)
+    _txt(c, x + w * 0.25, head_y + 8, "Assets", 12, True, ACCENT)
+    _txt(c, x + w * 0.75, head_y + 8, "Equity and liabilities", 12, True, ACCENT)
 
     left = [("Office equipment", "25,000"), ("Van", "8,000"),
             ("Inventory", "12,500"), ("Cash and bank", "3,500")]
@@ -1026,11 +1026,11 @@ def _fig_bs(c, x, y, w, h):
     for i, ((la, lv), (ra, rv)) in enumerate(zip(left, right)):
         yy = head_y - 16 - i * 14
         if la:
-            _txt(c, x + 12, yy, la, 10.5, False, INK, "l")
-            _txt(c, mid - 12, yy, lv, 10.5, False, INK, "r")
+            _txt(c, x + 12, yy, la, 11.5, False, INK, "l")
+            _txt(c, mid - 12, yy, lv, 11.5, False, INK, "r")
         if ra:
-            _txt(c, mid + 12, yy, ra, 10.5, False, INK, "l")
-            _txt(c, x + w - 12, yy, rv, 10.5, False, INK, "r")
+            _txt(c, mid + 12, yy, ra, 11.5, False, INK, "l")
+            _txt(c, x + w - 12, yy, rv, 11.5, False, INK, "r")
 
     tot_y = bottom + 10
     c.setStrokeColor(ACCENT_LIGHT)
@@ -1039,13 +1039,13 @@ def _fig_bs(c, x, y, w, h):
     c.line(x + 12, tot_y + 10, mid - 12, tot_y + 10)
     c.line(mid + 12, tot_y + 10, x + w - 12, tot_y + 10)
     c.setDash()
-    _txt(c, x + 12, tot_y, "Total assets", 10.5, True, INK, "l")
-    _txt(c, mid - 12, tot_y, "49,000", 10.5, True, INK, "r")
-    _txt(c, mid + 12, tot_y, "Total equity and liabilities", 10.5, True, INK, "l")
-    _txt(c, x + w - 12, tot_y, "49,000", 10.5, True, INK, "r")
+    _txt(c, x + 12, tot_y, "Total assets", 11.5, True, INK, "l")
+    _txt(c, mid - 12, tot_y, "49,000", 11.5, True, INK, "r")
+    _txt(c, mid + 12, tot_y, "Total equity and liabilities", 11.5, True, INK, "l")
+    _txt(c, x + w - 12, tot_y, "49,000", 11.5, True, INK, "r")
 
     _txt(c, x + w / 2, y + 3, "assets = equity + liabilities (both sides always balance)",
-         10.5, False, INK, italic=True)
+         11.5, False, INK, italic=True)
 
 
 def _fig_economic_systems(c, x, y, w, h):
@@ -1062,10 +1062,10 @@ def _fig_economic_systems(c, x, y, w, h):
         px = x + i * (bw + gap)
         fill = ACCENT_SOFT if i == 2 else white
         _box(c, px, by, bw, bh, fill)
-        _txt(c, px + bw / 2, by + bh - 18, title, 12, True, ACCENT)
-        _txt(c, px + bw / 2, by + bh - 34, sub, 10, False, MUTED)
+        _txt(c, px + bw / 2, by + bh - 18, title, 13, True, ACCENT)
+        _txt(c, px + bw / 2, by + bh - 34, sub, 11, False, MUTED)
         for j, line in enumerate(bullets):
-            _txt(c, px + 12, by + bh - 58 - j * 18, "-  " + line, 10.5, False, INK, "l")
+            _txt(c, px + 12, by + bh - 58 - j * 18, "-  " + line, 11.5, False, INK, "l")
     _txt(c, x + w / 2, y + 4,
          "systems differ by who decides what is produced, how, and for whom",
          10.5, False, INK, italic=True)
@@ -1075,8 +1075,8 @@ def _fig_stakeholder_map(c, x, y, w, h):
     cx, cy = x + w / 2, y + h / 2 + 4
     fw, fh = 78, 36
     _box(c, cx - fw / 2, cy - fh / 2, fw, fh, ACCENT_SOFT, dashed=False, lw=1.1, radius=3)
-    _txt(c, cx, cy + 4, "The firm", 11, True, ACCENT)
-    _txt(c, cx, cy - 10, "(business)", 9.5, False, MUTED)
+    _txt(c, cx, cy + 4, "The firm", 12, True, ACCENT)
+    _txt(c, cx, cy - 10, "(business)", 10.5, False, MUTED)
 
     groups = [
         ("Owners /\nshareholders", 0.5 * math.pi),
@@ -1097,10 +1097,10 @@ def _fig_stakeholder_map(c, x, y, w, h):
         _box(c, px - bw / 2, py - bh / 2, bw, bh, white, radius=2)
         lines = label.split("\n")
         if len(lines) == 1:
-            _txt(c, px, py - 3, lines[0], 9.5, True, INK)
+            _txt(c, px, py - 3, lines[0], 10.5, True, INK)
         else:
-            _txt(c, px, py + 4, lines[0], 9.5, True, INK)
-            _txt(c, px, py - 8, lines[1], 9.5, True, INK)
+            _txt(c, px, py + 4, lines[0], 10.5, True, INK)
+            _txt(c, px, py - 8, lines[1], 10.5, True, INK)
     _txt(c, x + w / 2, y + 3,
          "stakeholders can support or constrain the firm — interests may conflict",
          10, False, INK, italic=True)
@@ -1109,7 +1109,7 @@ def _fig_stakeholder_map(c, x, y, w, h):
 def _fig_finance_sources(c, x, y, w, h):
     mid = x + w / 2
     top = y + h - 8
-    _txt(c, mid, top - 4, "Sources of finance", 12, True, ACCENT)
+    _txt(c, mid, top - 4, "Sources of finance", 13, True, ACCENT)
 
     gap = 18
     bw = (w - gap) / 2
@@ -1118,8 +1118,8 @@ def _fig_finance_sources(c, x, y, w, h):
 
     # Equity
     _box(c, x, by, bw, bh, ACCENT_SOFT, dashed=False, lw=1.0)
-    _txt(c, x + bw / 2, by + bh - 18, "Equity", 12, True, ACCENT)
-    _txt(c, x + bw / 2, by + bh - 34, "ownership capital", 10, False, MUTED)
+    _txt(c, x + bw / 2, by + bh - 18, "Equity", 13, True, ACCENT)
+    _txt(c, x + bw / 2, by + bh - 34, "ownership capital", 11, False, MUTED)
     equity = [
         "Owner's capital / shares",
         "Retained profits",
@@ -1128,12 +1128,12 @@ def _fig_finance_sources(c, x, y, w, h):
         "Dilutes control if sold",
     ]
     for i, line in enumerate(equity):
-        _txt(c, x + 12, by + bh - 56 - i * 16, "-  " + line, 10.5, False, INK, "l")
+        _txt(c, x + 12, by + bh - 56 - i * 16, "-  " + line, 11.5, False, INK, "l")
 
     # Debt
     _box(c, x + bw + gap, by, bw, bh, white, dashed=False, lw=1.0)
-    _txt(c, x + bw + gap + bw / 2, by + bh - 18, "Debt", 12, True, ACCENT)
-    _txt(c, x + bw + gap + bw / 2, by + bh - 34, "borrowed capital", 10, False, MUTED)
+    _txt(c, x + bw + gap + bw / 2, by + bh - 18, "Debt", 13, True, ACCENT)
+    _txt(c, x + bw + gap + bw / 2, by + bh - 34, "borrowed capital", 11, False, MUTED)
     debt = [
         "Bank loans & overdrafts",
         "Trade credit",
@@ -1142,9 +1142,9 @@ def _fig_finance_sources(c, x, y, w, h):
         "Does not sell ownership",
     ]
     for i, line in enumerate(debt):
-        _txt(c, x + bw + gap + 12, by + bh - 56 - i * 16, "-  " + line, 10.5, False, INK, "l")
+        _txt(c, x + bw + gap + 12, by + bh - 56 - i * 16, "-  " + line, 11.5, False, INK, "l")
 
-    _txt(c, mid, y + 8, "vs", 11, True, ACCENT)
+    _txt(c, mid, y + 8, "vs", 12, True, ACCENT)
     _txt(c, mid, y + 3,
          "choose by cost, risk, control, and how long the money is needed",
          10, False, INK, italic=True)
@@ -1264,7 +1264,7 @@ def chrome(canvas, doc):
     # Running header — chapter title, word-safe fit
     if STATE.footer_chapter and doc.page > 2:
         max_w = W - L_M - R_M - 8
-        label, size = fit_header_label(canvas, STATE.footer_chapter, max_w, 8.0)
+        label, size = fit_header_label(canvas, STATE.footer_chapter, max_w, 9.0)
         if label:
             canvas.setFillColor(ACCENT_SOFT)
             canvas.rect(L_M, H - 13.5 * mm, W - L_M - R_M, 7.5 * mm, stroke=0, fill=1)
@@ -1280,10 +1280,10 @@ def chrome(canvas, doc):
     canvas.setLineWidth(0.5)
     canvas.line(L_M, 12 * mm, W - R_M, 12 * mm)
     canvas.setFillColor(MUTED)
-    canvas.setFont("Helvetica", 7.5)
+    canvas.setFont("Helvetica", 8.5)
     canvas.drawString(L_M, 7 * mm, "BBE ECONOMICS \xb7 FULL COURSE")
     canvas.setFillColor(INK)
-    canvas.setFont("Helvetica-Bold", 9)
+    canvas.setFont("Helvetica-Bold", 10)
     canvas.drawRightString(W - R_M, 7 * mm, str(doc.page))
     canvas.restoreState()
 
@@ -1513,7 +1513,7 @@ def build():
                 c.setLineWidth(0.8)
                 c.roundRect(x, 4, bw, 20, 3, stroke=1, fill=1)
                 c.setFillColor(ACCENT)
-                c.setFont("Helvetica-Bold", 8)
+                c.setFont("Helvetica-Bold", 9)
                 c.drawCentredString(x + bw / 2, 11, step)
 
     STATE.skip_chrome = True

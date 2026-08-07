@@ -1,35 +1,35 @@
 {
-  "pageCount": 59,
+  "pageCount": 65,
   "chapters": [
     {
       "chapter": 2,
       "title": "Basic economic concepts",
       "startPage": 3,
-      "endPage": 14
+      "endPage": 15
     },
     {
       "chapter": 3,
       "title": "Focus on different types of businesses",
-      "startPage": 15,
-      "endPage": 24
+      "startPage": 16,
+      "endPage": 25
     },
     {
       "chapter": 4,
       "title": "Forms of business ownership and sources of finance",
-      "startPage": 25,
-      "endPage": 34
+      "startPage": 26,
+      "endPage": 36
     },
     {
       "chapter": 5,
       "title": "Marketing",
-      "startPage": 35,
-      "endPage": 47
+      "startPage": 37,
+      "endPage": 51
     },
     {
       "chapter": 6,
       "title": "Accounting \u2014 keeping record of business transactions",
-      "startPage": 48,
-      "endPage": 58
+      "startPage": 52,
+      "endPage": 64
     }
   ],
   "placeholderFigures": []
