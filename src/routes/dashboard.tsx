@@ -32,6 +32,8 @@ import {
   AlertTriangle,
   GraduationCap,
   Wand2,
+  Gamepad2,
+  Layers,
 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
@@ -45,7 +47,7 @@ export const Route = createFileRoute("/dashboard")({
   }),
 });
 
-type TabId = "courses" | "mocks" | "custom";
+type TabId = "courses" | "mocks" | "custom" | "games";
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -142,6 +144,12 @@ function DashboardPage() {
               active={tab === "custom"}
               onClick={() => setTab("custom")}
             />
+            <SideItem
+              icon={<Gamepad2 className="h-4 w-4" />}
+              label="Games"
+              active={tab === "games"}
+              onClick={() => setTab("games")}
+            />
           </nav>
         </aside>
 
@@ -198,6 +206,9 @@ function DashboardPage() {
             <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
+            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
+              Games
+            </MobileTab>
           </div>
 
           <div className="mt-8">
@@ -212,11 +223,13 @@ function DashboardPage() {
               />
             ) : tab === "mocks" ? (
               <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
-            ) : (
+            ) : tab === "custom" ? (
               <CustomMocksTab
                 customMocks={customMocks!}
                 attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
               />
+            ) : (
+              <GamesTab />
             )}
           </div>
         </main>
@@ -491,6 +504,39 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
         {label}
       </p>
       <p className="font-display text-lg font-bold">{value}</p>
+    </div>
+  );
+}
+
+/* -------------------- GAMES TAB -------------------- */
+
+function GamesTab() {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-display text-xl font-bold tracking-tight">Games</h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Practice tools to reinforce Economics, Math, and English for the BBE exam.
+        </p>
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <Link
+          to="/flashcards"
+          className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div className="mb-3 grid h-10 w-10 place-items-center rounded-lg bg-secondary">
+            <Layers className="h-5 w-5 text-caramel-deep" />
+          </div>
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+            Study game
+          </p>
+          <h3 className="mt-1 font-display text-lg font-bold">Flashcards</h3>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Drill Economics terms, Math formulas, and English vocabulary with flip cards.
+          </p>
+          <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
+        </Link>
+      </div>
     </div>
   );
 }
