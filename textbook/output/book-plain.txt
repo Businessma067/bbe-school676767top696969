@@ -87,7 +87,7 @@ Planned economy: In a planned (or centrally planned) system, government mainly o
 
 Most real countries sit somewhere between the pure textbook ends of the spectrum. Even within market-oriented countries, roles for the state differ. A free market economy keeps government intervention comparatively light: rules of property, contract and competition exist, but officials do not routinely redirect production or redistribute extensively. A social market economy (or eco-social market economy) keeps markets as the main coordinating device while giving the state a stronger role—supporting the vulnerable, correcting market failures, and protecting the environment, among other tasks.
 
-Table 1. Comparison of free market, social market and planned economic systems | Feature / Free market economy / Social market economy / Planned economy
+Table 1. Comparison of free market, social market and planned economic systems
 
 Free market economy: A market system in which government mainly provides the legal framework and influences the economy relatively little beyond that framework.
 
@@ -216,7 +216,7 @@ Most businesses aim to continue over time. Sustaining operations usually require
 
 Not-for-profit organisations mainly aim to cover their costs while pursuing a social, cultural, humanitarian or environmental mission. They still need donations, fees, grants or membership income: without sufficient inflows they cannot pay staff or deliver programmes. Surpluses, when they occur, are beneficial because they can expand impact, but the organising purpose is mission coverage rather than maximising owners' financial returns. It is a common mistake to read “not-for-profit” as “never records a surplus” or “needs no revenue”. Surpluses support the mission; donations and other inflows remain necessary to cover costs.
 
-Table 1. Profit-oriented businesses and not-for-profit organisations compared | Aspect / Profit-oriented business / Not-for-profit organisation (NPO)
+Table 1. Profit-oriented businesses and not-for-profit organisations compared
 
 Profit-oriented business: A profit-oriented business aims to earn profits—revenues higher than costs and expenses—so that owners are rewarded for risk and the firm can reinvest to remain viable and competitive.
 
@@ -236,7 +236,7 @@ SME (small and medium-sized enterprise): SME is the umbrella for smaller firms b
 
 The European Commission’s widely cited size bands combine staff headcount with either turnover or balance-sheet total. Micro enterprises have fewer than 10 staff and turnover or balance-sheet total of at most €2 million. Small enterprises have fewer than 50 staff and at most €10 million on either financial measure. Medium-sized enterprises have fewer than 250 staff and turnover of at most €50 million or a balance-sheet total of at most €43 million. Firms above those ceilings are treated as large. Formal classification can involve additional ownership and linkage rules; for introductory purposes the headline thresholds and their practical importance are enough.
 
-Table 2. EU size categories of businesses (SME definition) | Company category / Staff headcount / Turnover / OR Balance sheet total
+Table 2. EU size categories of businesses (SME definition)
 
 A two-person repair service that hires two assistants remains a micro firm by headcount. A manufacturer with around 10,000 employees is large. Between those poles sit tens of thousands of small and medium firms that form the backbone of employment in many regions. Size is not destiny: micro firms can be highly specialised and profitable; large firms can be inefficient. Size does, however, change management stretch, access to capital markets, and regulatory load. It is a common mistake to treat “SME” as a synonym of “micro only”: medium-sized firms are still SMEs. Likewise, the claim that almost all EU businesses are SMEs refers to the count of enterprises, not automatically to every economic aggregate; large firms can still dominate revenues in some markets.
 
@@ -270,7 +270,7 @@ Whatever their sector, size or reach, businesses sit inside an environment of ot
 
 Stakeholder: A stakeholder is anyone who is (potentially) affected by a business’s activities and/or has an interest in what the business does.
 
-Table 3. Main stakeholder groups of a business and typical interests | Stakeholder group / Typical interest / concern
+Table 3. Main stakeholder groups of a business and typical interests
 
 Owners invest capital and seek returns for risk; they may also care about problem-solving and social contribution. Managers and employees depend on the firm for income and often for identity; the firm depends on their competence and commitment. Shared values and objectives support short- and long-run success. It is a common mistake to treat stakeholders as identical with shareholders: employees, suppliers, customers, communities and government also qualify when they are affected or interested.
 
@@ -349,7 +349,7 @@ Forms of business ownership: unincorporated versus incorporated structures.
 
 Among unincorporated businesses, owner(s) and manager(s) are typically the same person(s). With one owner, the structure is a sole trader / sole proprietorship. With more than one owner, the structure is a partnership — either a general partnership (all partners typically manage and face unlimited liability) or a limited partnership (with at least one limited partner outside management). Among incorporated businesses, owners and managers need not be the same persons: shareholders provide share capital while directors and executives run the company. This group includes public-style corporations such as AGs/PLCs and private limited companies such as GmbHs.
 
-Comparison of sole trader, partnership and corporation | Criterion / Sole trader / Partnership / Corporation
+Comparison of sole trader, partnership and corporation
 
 Reading the overview as a decision path helps: start from how many owners and whether they want limited liability; then ask whether share transferability and public capital markets are needed; finally check minimum capital, disclosure and governance costs. Firms often begin unincorporated and incorporate later when risk, capital need or investor entry make separate legal personality and limited liability worth the formalities. In complexity and financing reach, the usual ladder runs from sole trader to partnership to private limited company to public corporation.
 
@@ -363,7 +363,7 @@ Equity finance: Funds that belong to the owners of the business (for example sha
 
 Debt finance: Borrowed funds that create liabilities: bank overdrafts, trade credit, bank loans, bonds and similar instruments, normally carrying interest and a repayment obligation.
 
-Common sources of finance by equity/debt and horizon | Category / Internal / External
+Common sources of finance by equity/debt and horizon
 
 Equity finance may be internal or external. External equity includes funds provided by investors and share capital raised from owners who buy newly issued shares. Internal equity centres on retained earnings — profits kept in the business rather than distributed. Debt finance is external: creditors stand outside ownership. A bank overdraft lets a firm draw beyond the credit balance on its current account up to an agreed limit; interest is charged on the overdrawn amount and the facility is flexible for uneven cash flows. Trade credit is supplier-granted delay in paying for purchases — free if within the agreed period, costly if discounts are lost or late-payment penalties apply. Bank loans provide a fixed sum for an agreed term with scheduled repayment. Bonds package large-scale borrowing from multiple investors with contractual interest. Retained earnings require prior profitable operations and a decision not to distribute all profit; they are equity, not debt. Sale of assets that are no longer needed releases cash internally without creating new liabilities, but may reduce operating capacity if the asset is still useful. Trade credit and overdrafts are liabilities even when they feel routine: they must be repaid according to agreement and do not permanently fund long-lived assets without refinancing risk.
 
@@ -480,7 +480,7 @@ Targeting: Evaluating segment attractiveness and selecting one or more segments 
 
 Positioning: Creating a distinctive image or identity for the product in the minds of the chosen target market(s).
 
-Common segmentation variables | Base / Examples of variables / Typical use
+Common segmentation variables
 
 Effective marketers often combine bases when a single cut is too crude. Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. It suits widely used items such as basic hygiene products or simple stationery and supports economies of scale: larger identical output can reduce cost per unit when some costs do not rise proportionally. The drawback is inflexibility when some customer groups change. Segment marketing (differentiated approaches) offers different products to one or more segments, focusing resources where strategic fit is strongest. Niche marketing goes further into particular subgroups within segments; many small specialised firms lead niches they understand deeply even if they could never serve a mass market. Mass marketing is not "more segmentation"; it deliberately ignores segments. Niche marketing involves more, not less, focus on particular subgroups.
 
@@ -551,7 +551,7 @@ Owner's equity = assets − liabilities = 49,000 − 25,000 = €24,000.
 
 Notice that office computers (used in operations) and computers held for resale are different types of asset even though the physical items look similar: classification follows intended use, not appearance.
 
-Simplified opening balance sheet (€) | Assets / € / Liabilities and equity / €
+Simplified opening balance sheet (€)
 
 Assets are usually listed in a standard order. Fixed assets (also called non-current assets) normally have a lifespan of more than one year and are intended to be used in the company for longer than one year; they usually cannot be turned into cash so easily. Current assets have higher liquidity: they are usually not used longer than a year because they are used up, spent in production, or sold. Examples of non-current assets include property, plant, premises, buildings, machinery, office equipment (including computers used in the office), and financial assets meant to be kept longer than a year. Examples of current assets include inventory (merchandise not yet sold), accounts receivable / debtors (trade receivables — money owed to the business), and cash. Intangible assets such as trademarks, patents, copyrights and acquired licences cannot be seen or touched but still have value; they are assets just as tangible items are.
 
@@ -612,7 +612,7 @@ Each year the income statement includes a €700 depreciation expense that reduc
 
 Over a trading year, the balance sheet also changes for many other reasons: new equipment may be bought, inventory levels adjust, customers may still owe money (receivables), the firm may still owe suppliers (trade payables), and part of a bank loan may be repaid. Equity rises when the firm is profitable and falls when it makes a loss. The following year-end statement illustrates those movements after a profitable first year.
 
-Simplified year-end balance sheet after a profitable year (€) | Assets / € / Liabilities and equity / €
+Simplified year-end balance sheet after a profitable year (€)
 
 Cash flow statement: A statement that reveals the flows of cash into and out of the business during a period, distinguishing operating, investing and financing activities. Cash is needed for day-to-day operations and for investing; a positive cash flow is not identical with a profit.
 
@@ -674,7 +674,7 @@ Both information sets matter, but they answer different questions for different 
 
 Figures from the balance sheet and income statement can be turned into ratios that shed light on liquidity (or solvency), profitability (profit relative to capital employed or turnover), financial efficiency (how effectively resources are used), and financial structure (equity ratio and debt ratio). Because ratios vary widely across industries, comparisons are meaningful mainly within the same industry or sector, or for one business over several years. There may also be different accepted ways to calculate a given ratio — always check the definition before comparing. Making an absolute profit does not automatically mean the business is sufficiently profitable: profitability ratios relate profit to equity, capital employed or turnover.
 
-Selected ratio formulas used in financial analysis | Theme / Ratio / Formula
+Selected ratio formulas used in financial analysis
 
 Liquidity is the ability of a business to pay its bills and repay its debts on time. One approach uses working capital (circulating capital), which focuses on short-term assets and liabilities and indicates whether the firm can cover day-to-day bills such as electricity, rent and wages and buy inputs for production. Working capital should be positive: current assets above current liabilities. If not, part of non-current assets may have been financed by short-term liabilities, which can cause trouble when those liabilities fall due. A low working capital level may also mean too little cash or too much reliance on trade credit. Retailers that hold a lot of inventory often need higher working capital than pure service businesses. High inventory helps meet customer demand quickly but ties up money, takes space, and risks obsolescence.
 
