@@ -9,111 +9,46 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as AccountRouteImport } from './routes/account'
-import { Route as AdminRouteImport } from './routes/admin'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as DashboardRouteImport } from './routes/dashboard'
-import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
-import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
-import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as MockExamsRouteImport } from './routes/mock-exams'
-import { Route as ParentsRouteImport } from './routes/parents'
-import { Route as PracticeRouteImport } from './routes/practice'
-import { Route as ProductsRouteImport } from './routes/products'
-import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as SignupRouteImport } from './routes/signup'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
-import { Route as ApiChatRouteImport } from './routes/api/chat'
-import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
-import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
-import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
-import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.math'
-import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
-import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
+import { Route as SignupRouteImport } from './routes/signup'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
+import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PracticeRouteImport } from './routes/practice'
+import { Route as ParentsRouteImport } from './routes/parents'
+import { Route as MockExamsRouteImport } from './routes/mock-exams'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AccountRouteImport } from './routes/account'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
-import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
-import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
-import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
-import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
-import { Route as ProductsFullCourseMathRouteImport } from './routes/products.full-course-math'
-import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
-import { Route as ProductsLiteBbeCourseRouteImport } from './routes/products.lite-bbe-course'
-import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
+import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
+import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
-import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
+import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
+import { Route as ProductsLiteBbeCourseRouteImport } from './routes/products.lite-bbe-course'
+import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
+import { Route as ProductsFullCourseMathRouteImport } from './routes/products.full-course-math'
+import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/products.full-course-economics'
+import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
+import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
+import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
+import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
+import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.math'
+import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
+import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
+import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AccountRoute = AccountRouteImport.update({
-  id: '/account',
-  path: '/account',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/auth',
-  path: '/auth',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DemoPracticeRoute = DemoPracticeRouteImport.update({
-  id: '/demo-practice',
-  path: '/demo-practice',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
-  id: '/forgot-password',
-  path: '/forgot-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImportantFeaturesRoute = ImportantFeaturesRouteImport.update({
-  id: '/important-features',
-  path: '/important-features',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LoginRoute = LoginRouteImport.update({
-  id: '/login',
-  path: '/login',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MockExamsRoute = MockExamsRouteImport.update({
-  id: '/mock-exams',
-  path: '/mock-exams',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ParentsRoute = ParentsRouteImport.update({
-  id: '/parents',
-  path: '/parents',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PracticeRoute = PracticeRouteImport.update({
-  id: '/practice',
-  path: '/practice',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResetPasswordRoute = ResetPasswordRouteImport.update({
-  id: '/reset-password',
-  path: '/reset-password',
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SignupRoute = SignupRouteImport.update({
@@ -121,81 +56,106 @@ const SignupRoute = SignupRouteImport.update({
   path: '/signup',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
-  id: '/economics',
-  path: '/economics',
-  getParentRoute: () => AdminRoute,
-} as any)
-const ApiChatRoute = ApiChatRouteImport.update({
-  id: '/api/chat',
-  path: '/api/chat',
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
+const PracticeRoute = PracticeRouteImport.update({
+  id: '/practice',
+  path: '/practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ParentsRoute = ParentsRouteImport.update({
+  id: '/parents',
+  path: '/parents',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MockExamsRoute = MockExamsRouteImport.update({
+  id: '/mock-exams',
+  path: '/mock-exams',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImportantFeaturesRoute = ImportantFeaturesRouteImport.update({
+  id: '/important-features',
+  path: '/important-features',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoPracticeRoute = DemoPracticeRouteImport.update({
+  id: '/demo-practice',
+  path: '/demo-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccountRoute = AccountRouteImport.update({
+  id: '/account',
+  path: '/account',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => DemoPracticeRoute,
-} as any)
-const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
-  id: '/economics',
-  path: '/economics',
-  getParentRoute: () => DemoPracticeRoute,
-} as any)
-const DemoPracticeEnglishRoute = DemoPracticeEnglishRouteImport.update({
-  id: '/english',
-  path: '/english',
-  getParentRoute: () => DemoPracticeRoute,
-} as any)
-const DemoPracticeMathRoute = DemoPracticeMathRouteImport.update({
-  id: '/math',
-  path: '/math',
-  getParentRoute: () => DemoPracticeRoute,
-} as any)
-const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
-  id: '/features/answer-sheet',
-  path: '/features/answer-sheet',
   getParentRoute: () => rootRouteImport,
-} as any)
-const MockExamsIndexRoute = MockExamsIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => MockExamsRoute,
 } as any)
 const ProductsIndexRoute = ProductsIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => ProductsRoute,
 } as any)
-const ProductsCustomMockBuilderRoute =
-  ProductsCustomMockBuilderRouteImport.update({
-    id: '/custom-mock-builder',
-    path: '/custom-mock-builder',
+const MockExamsIndexRoute = MockExamsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => MockExamsRoute,
+} as any)
+const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => DemoPracticeRoute,
+} as any)
+const ProductsLiteBbeCourseSubjectsRoute =
+  ProductsLiteBbeCourseSubjectsRouteImport.update({
+    id: '/lite-bbe-course-subjects',
+    path: '/lite-bbe-course-subjects',
     getParentRoute: () => ProductsRoute,
   } as any)
-const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
-  id: '/demo-practice',
-  path: '/demo-practice',
-  getParentRoute: () => ProductsRoute,
-} as any)
-const ProductsFullCourseRoute = ProductsFullCourseRouteImport.update({
-  id: '/full-course',
-  path: '/full-course',
-  getParentRoute: () => ProductsRoute,
-} as any)
-const ProductsFullCourseEconomicsRoute =
-  ProductsFullCourseEconomicsRouteImport.update({
-    id: '/full-course-economics',
-    path: '/full-course-economics',
+const ProductsLiteBbeCourseMathRoute =
+  ProductsLiteBbeCourseMathRouteImport.update({
+    id: '/lite-bbe-course-math',
+    path: '/lite-bbe-course-math',
     getParentRoute: () => ProductsRoute,
   } as any)
-const ProductsFullCourseMathRoute = ProductsFullCourseMathRouteImport.update({
-  id: '/full-course-math',
-  path: '/full-course-math',
+const ProductsLiteBbeCourseRoute = ProductsLiteBbeCourseRouteImport.update({
+  id: '/lite-bbe-course',
+  path: '/lite-bbe-course',
   getParentRoute: () => ProductsRoute,
 } as any)
 const ProductsFullCourseSubjectsRoute =
@@ -204,31 +164,71 @@ const ProductsFullCourseSubjectsRoute =
     path: '/full-course-subjects',
     getParentRoute: () => ProductsRoute,
   } as any)
-const ProductsLiteBbeCourseRoute = ProductsLiteBbeCourseRouteImport.update({
-  id: '/lite-bbe-course',
-  path: '/lite-bbe-course',
+const ProductsFullCourseMathRoute = ProductsFullCourseMathRouteImport.update({
+  id: '/full-course-math',
+  path: '/full-course-math',
   getParentRoute: () => ProductsRoute,
 } as any)
-const ProductsLiteBbeCourseMathRoute =
-  ProductsLiteBbeCourseMathRouteImport.update({
-    id: '/lite-bbe-course-math',
-    path: '/lite-bbe-course-math',
+const ProductsFullCourseEconomicsRoute =
+  ProductsFullCourseEconomicsRouteImport.update({
+    id: '/full-course-economics',
+    path: '/full-course-economics',
     getParentRoute: () => ProductsRoute,
   } as any)
-const ProductsLiteBbeCourseSubjectsRoute =
-  ProductsLiteBbeCourseSubjectsRouteImport.update({
-    id: '/lite-bbe-course-subjects',
-    path: '/lite-bbe-course-subjects',
+const ProductsFullCourseRoute = ProductsFullCourseRouteImport.update({
+  id: '/full-course',
+  path: '/full-course',
+  getParentRoute: () => ProductsRoute,
+} as any)
+const ProductsDemoPracticeRoute = ProductsDemoPracticeRouteImport.update({
+  id: '/demo-practice',
+  path: '/demo-practice',
+  getParentRoute: () => ProductsRoute,
+} as any)
+const ProductsCustomMockBuilderRoute =
+  ProductsCustomMockBuilderRouteImport.update({
+    id: '/custom-mock-builder',
+    path: '/custom-mock-builder',
     getParentRoute: () => ProductsRoute,
   } as any)
-const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
-  id: '/$examId/review',
-  path: '/$examId/review',
-  getParentRoute: () => MockExamsRoute,
+const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
+  id: '/features/answer-sheet',
+  path: '/features/answer-sheet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoPracticeMathRoute = DemoPracticeMathRouteImport.update({
+  id: '/math',
+  path: '/math',
+  getParentRoute: () => DemoPracticeRoute,
+} as any)
+const DemoPracticeEnglishRoute = DemoPracticeEnglishRouteImport.update({
+  id: '/english',
+  path: '/english',
+  getParentRoute: () => DemoPracticeRoute,
+} as any)
+const DemoPracticeEconomicsRoute = DemoPracticeEconomicsRouteImport.update({
+  id: '/economics',
+  path: '/economics',
+  getParentRoute: () => DemoPracticeRoute,
+} as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
+  id: '/economics',
+  path: '/economics',
+  getParentRoute: () => AdminRoute,
 } as any)
 const MockExamsExamIdTakeRoute = MockExamsExamIdTakeRouteImport.update({
   id: '/$examId/take',
   path: '/$examId/take',
+  getParentRoute: () => MockExamsRoute,
+} as any)
+const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
+  id: '/$examId/review',
+  path: '/$examId/review',
   getParentRoute: () => MockExamsRoute,
 } as any)
 
@@ -481,102 +481,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/account': {
-      id: '/account'
-      path: '/account'
-      fullPath: '/account'
-      preLoaderRoute: typeof AccountRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/demo-practice': {
-      id: '/demo-practice'
-      path: '/demo-practice'
-      fullPath: '/demo-practice'
-      preLoaderRoute: typeof DemoPracticeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/forgot-password': {
-      id: '/forgot-password'
-      path: '/forgot-password'
-      fullPath: '/forgot-password'
-      preLoaderRoute: typeof ForgotPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/important-features': {
-      id: '/important-features'
-      path: '/important-features'
-      fullPath: '/important-features'
-      preLoaderRoute: typeof ImportantFeaturesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/login': {
-      id: '/login'
-      path: '/login'
-      fullPath: '/login'
-      preLoaderRoute: typeof LoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mock-exams': {
-      id: '/mock-exams'
-      path: '/mock-exams'
-      fullPath: '/mock-exams'
-      preLoaderRoute: typeof MockExamsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/parents': {
-      id: '/parents'
-      path: '/parents'
-      fullPath: '/parents'
-      preLoaderRoute: typeof ParentsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/practice': {
-      id: '/practice'
-      path: '/practice'
-      fullPath: '/practice'
-      preLoaderRoute: typeof PracticeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reset-password': {
-      id: '/reset-password'
-      path: '/reset-password'
-      fullPath: '/reset-password'
-      preLoaderRoute: typeof ResetPasswordRouteImport
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/signup': {
@@ -586,68 +495,103 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SignupRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin/economics': {
-      id: '/admin/economics'
-      path: '/economics'
-      fullPath: '/admin/economics'
-      preLoaderRoute: typeof AdminEconomicsRouteImport
-      parentRoute: typeof AdminRoute
-    }
-    '/api/chat': {
-      id: '/api/chat'
-      path: '/api/chat'
-      fullPath: '/api/chat'
-      preLoaderRoute: typeof ApiChatRouteImport
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/demo-practice/': {
-      id: '/demo-practice/'
+    '/practice': {
+      id: '/practice'
+      path: '/practice'
+      fullPath: '/practice'
+      preLoaderRoute: typeof PracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/parents': {
+      id: '/parents'
+      path: '/parents'
+      fullPath: '/parents'
+      preLoaderRoute: typeof ParentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mock-exams': {
+      id: '/mock-exams'
+      path: '/mock-exams'
+      fullPath: '/mock-exams'
+      preLoaderRoute: typeof MockExamsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/important-features': {
+      id: '/important-features'
+      path: '/important-features'
+      fullPath: '/important-features'
+      preLoaderRoute: typeof ImportantFeaturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo-practice': {
+      id: '/demo-practice'
+      path: '/demo-practice'
+      fullPath: '/demo-practice'
+      preLoaderRoute: typeof DemoPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/account': {
+      id: '/account'
+      path: '/account'
+      fullPath: '/account'
+      preLoaderRoute: typeof AccountRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
       path: '/'
-      fullPath: '/demo-practice/'
-      preLoaderRoute: typeof DemoPracticeIndexRouteImport
-      parentRoute: typeof DemoPracticeRoute
-    }
-    '/demo-practice/economics': {
-      id: '/demo-practice/economics'
-      path: '/economics'
-      fullPath: '/demo-practice/economics'
-      preLoaderRoute: typeof DemoPracticeEconomicsRouteImport
-      parentRoute: typeof DemoPracticeRoute
-    }
-    '/demo-practice/english': {
-      id: '/demo-practice/english'
-      path: '/english'
-      fullPath: '/demo-practice/english'
-      preLoaderRoute: typeof DemoPracticeEnglishRouteImport
-      parentRoute: typeof DemoPracticeRoute
-    }
-    '/demo-practice/math': {
-      id: '/demo-practice/math'
-      path: '/math'
-      fullPath: '/demo-practice/math'
-      preLoaderRoute: typeof DemoPracticeMathRouteImport
-      parentRoute: typeof DemoPracticeRoute
-    }
-    '/features/answer-sheet': {
-      id: '/features/answer-sheet'
-      path: '/features/answer-sheet'
-      fullPath: '/features/answer-sheet'
-      preLoaderRoute: typeof FeaturesAnswerSheetRouteImport
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/mock-exams/': {
-      id: '/mock-exams/'
-      path: '/'
-      fullPath: '/mock-exams/'
-      preLoaderRoute: typeof MockExamsIndexRouteImport
-      parentRoute: typeof MockExamsRoute
     }
     '/products/': {
       id: '/products/'
@@ -656,53 +600,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsIndexRouteImport
       parentRoute: typeof ProductsRoute
     }
-    '/products/custom-mock-builder': {
-      id: '/products/custom-mock-builder'
-      path: '/custom-mock-builder'
-      fullPath: '/products/custom-mock-builder'
-      preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
-      parentRoute: typeof ProductsRoute
+    '/mock-exams/': {
+      id: '/mock-exams/'
+      path: '/'
+      fullPath: '/mock-exams/'
+      preLoaderRoute: typeof MockExamsIndexRouteImport
+      parentRoute: typeof MockExamsRoute
     }
-    '/products/demo-practice': {
-      id: '/products/demo-practice'
-      path: '/demo-practice'
-      fullPath: '/products/demo-practice'
-      preLoaderRoute: typeof ProductsDemoPracticeRouteImport
-      parentRoute: typeof ProductsRoute
+    '/demo-practice/': {
+      id: '/demo-practice/'
+      path: '/'
+      fullPath: '/demo-practice/'
+      preLoaderRoute: typeof DemoPracticeIndexRouteImport
+      parentRoute: typeof DemoPracticeRoute
     }
-    '/products/full-course': {
-      id: '/products/full-course'
-      path: '/full-course'
-      fullPath: '/products/full-course'
-      preLoaderRoute: typeof ProductsFullCourseRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/full-course-economics': {
-      id: '/products/full-course-economics'
-      path: '/full-course-economics'
-      fullPath: '/products/full-course-economics'
-      preLoaderRoute: typeof ProductsFullCourseEconomicsRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/full-course-math': {
-      id: '/products/full-course-math'
-      path: '/full-course-math'
-      fullPath: '/products/full-course-math'
-      preLoaderRoute: typeof ProductsFullCourseMathRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/full-course-subjects': {
-      id: '/products/full-course-subjects'
-      path: '/full-course-subjects'
-      fullPath: '/products/full-course-subjects'
-      preLoaderRoute: typeof ProductsFullCourseSubjectsRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/lite-bbe-course': {
-      id: '/products/lite-bbe-course'
-      path: '/lite-bbe-course'
-      fullPath: '/products/lite-bbe-course'
-      preLoaderRoute: typeof ProductsLiteBbeCourseRouteImport
+    '/products/lite-bbe-course-subjects': {
+      id: '/products/lite-bbe-course-subjects'
+      path: '/lite-bbe-course-subjects'
+      fullPath: '/products/lite-bbe-course-subjects'
+      preLoaderRoute: typeof ProductsLiteBbeCourseSubjectsRouteImport
       parentRoute: typeof ProductsRoute
     }
     '/products/lite-bbe-course-math': {
@@ -712,25 +628,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsLiteBbeCourseMathRouteImport
       parentRoute: typeof ProductsRoute
     }
-    '/products/lite-bbe-course-subjects': {
-      id: '/products/lite-bbe-course-subjects'
-      path: '/lite-bbe-course-subjects'
-      fullPath: '/products/lite-bbe-course-subjects'
-      preLoaderRoute: typeof ProductsLiteBbeCourseSubjectsRouteImport
+    '/products/lite-bbe-course': {
+      id: '/products/lite-bbe-course'
+      path: '/lite-bbe-course'
+      fullPath: '/products/lite-bbe-course'
+      preLoaderRoute: typeof ProductsLiteBbeCourseRouteImport
       parentRoute: typeof ProductsRoute
     }
-    '/mock-exams/$examId/review': {
-      id: '/mock-exams/$examId/review'
-      path: '/$examId/review'
-      fullPath: '/mock-exams/$examId/review'
-      preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
-      parentRoute: typeof MockExamsRoute
+    '/products/full-course-subjects': {
+      id: '/products/full-course-subjects'
+      path: '/full-course-subjects'
+      fullPath: '/products/full-course-subjects'
+      preLoaderRoute: typeof ProductsFullCourseSubjectsRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/full-course-math': {
+      id: '/products/full-course-math'
+      path: '/full-course-math'
+      fullPath: '/products/full-course-math'
+      preLoaderRoute: typeof ProductsFullCourseMathRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/full-course-economics': {
+      id: '/products/full-course-economics'
+      path: '/full-course-economics'
+      fullPath: '/products/full-course-economics'
+      preLoaderRoute: typeof ProductsFullCourseEconomicsRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/full-course': {
+      id: '/products/full-course'
+      path: '/full-course'
+      fullPath: '/products/full-course'
+      preLoaderRoute: typeof ProductsFullCourseRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/demo-practice': {
+      id: '/products/demo-practice'
+      path: '/demo-practice'
+      fullPath: '/products/demo-practice'
+      preLoaderRoute: typeof ProductsDemoPracticeRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/custom-mock-builder': {
+      id: '/products/custom-mock-builder'
+      path: '/custom-mock-builder'
+      fullPath: '/products/custom-mock-builder'
+      preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/features/answer-sheet': {
+      id: '/features/answer-sheet'
+      path: '/features/answer-sheet'
+      fullPath: '/features/answer-sheet'
+      preLoaderRoute: typeof FeaturesAnswerSheetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo-practice/math': {
+      id: '/demo-practice/math'
+      path: '/math'
+      fullPath: '/demo-practice/math'
+      preLoaderRoute: typeof DemoPracticeMathRouteImport
+      parentRoute: typeof DemoPracticeRoute
+    }
+    '/demo-practice/english': {
+      id: '/demo-practice/english'
+      path: '/english'
+      fullPath: '/demo-practice/english'
+      preLoaderRoute: typeof DemoPracticeEnglishRouteImport
+      parentRoute: typeof DemoPracticeRoute
+    }
+    '/demo-practice/economics': {
+      id: '/demo-practice/economics'
+      path: '/economics'
+      fullPath: '/demo-practice/economics'
+      preLoaderRoute: typeof DemoPracticeEconomicsRouteImport
+      parentRoute: typeof DemoPracticeRoute
+    }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/economics': {
+      id: '/admin/economics'
+      path: '/economics'
+      fullPath: '/admin/economics'
+      preLoaderRoute: typeof AdminEconomicsRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/mock-exams/$examId/take': {
       id: '/mock-exams/$examId/take'
       path: '/$examId/take'
       fullPath: '/mock-exams/$examId/take'
       preLoaderRoute: typeof MockExamsExamIdTakeRouteImport
+      parentRoute: typeof MockExamsRoute
+    }
+    '/mock-exams/$examId/review': {
+      id: '/mock-exams/$examId/review'
+      path: '/$examId/review'
+      fullPath: '/mock-exams/$examId/review'
+      preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
       parentRoute: typeof MockExamsRoute
     }
   }
@@ -833,3 +833,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
