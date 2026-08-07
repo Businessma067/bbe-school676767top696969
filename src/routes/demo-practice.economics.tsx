@@ -9,6 +9,7 @@ import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { ExplanationText } from "@/components/ExplanationText";
 import { scrubStatementHints } from "@/lib/case-context";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
@@ -921,12 +922,15 @@ function CaseCard({
                     {activeExplanationIndex === i ? "AI textbook shown →" : "Show AI textbook explanation"}
                   </button>
                   {openExpl[i] && (
-                    <p className={cn(
-                      "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
-                      isCorrect ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200" : "bg-destructive/10 text-destructive",
-                    )}>
-                      {data.tactical_explanations[i]}
-                    </p>
+                    <ExplanationText
+                      text={data.tactical_explanations[i]}
+                      className={cn(
+                        "mt-1 w-full rounded-md p-3 text-xs",
+                        isCorrect
+                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
+                          : "bg-destructive/10 text-destructive",
+                      )}
+                    />
                   )}
                 </div>
               )}

@@ -10,6 +10,7 @@ import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { ExplanationText } from "@/components/ExplanationText";
 import { scrubStatementHints } from "@/lib/case-context";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
@@ -379,9 +380,10 @@ function ReviewExamPage() {
                                   Your answer: <strong>{userMarked ? "True" : "—"}</strong> ·
                                   Correct answer: <strong>{s.isTrue ? "True" : "False"}</strong>
                                 </p>
-                                <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                                  {s.explanation}
-                                </p>
+                                <ExplanationText
+                                  text={s.explanation}
+                                  className="mt-1.5 text-xs text-muted-foreground"
+                                />
                               </div>
                             </div>
                           </div>

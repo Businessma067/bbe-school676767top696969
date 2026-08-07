@@ -8,6 +8,7 @@ import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { TheoryReader } from "@/components/TheoryReader";
 import { CaseContextRich } from "@/components/CaseContextRich";
+import { ExplanationText } from "@/components/ExplanationText";
 import { scrubStatementHints } from "@/lib/case-context";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
@@ -947,12 +948,15 @@ function CaseCard({
                     {activeExplanationIndex === i ? "AI textbook shown →" : "Show AI textbook explanation"}
                   </button>
                   {openExpl[i] && (
-                    <p className={cn(
-                      "mt-1 w-full rounded-md p-3 text-xs leading-relaxed",
-                      isCorrect ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200" : "bg-destructive/10 text-destructive",
-                    )}>
-                      {data.tactical_explanations[i]}
-                    </p>
+                    <ExplanationText
+                      text={data.tactical_explanations[i]}
+                      className={cn(
+                        "mt-1 w-full rounded-md p-3 text-xs",
+                        isCorrect
+                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
+                          : "bg-destructive/10 text-destructive",
+                      )}
+                    />
                   )}
                 </div>
               )}
