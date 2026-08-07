@@ -18,8 +18,8 @@ import { Dices, Equal, Focus, RotateCcw } from "lucide-react";
 const ACCENT = "#8B5E3C";
 const ACCENT_SOFT = "#C4A484";
 const VIEW = 240;
-const PAD = 42;
-const R = 82;
+const PAD = 38;
+const R = 102;
 
 type Props = {
   topics: TopicWeightTopic[];
