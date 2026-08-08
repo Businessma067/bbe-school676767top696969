@@ -17,37 +17,132 @@ def flatten(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").strip())
 
 
-def mathify(text: str) -> str:
-    money: dict[str, str] = {}
+# Factor: 40, 0.21u, x, 3(y-5), 0.0375(2x+4000), (55-4a)
+# (?!\.\d) blocks backtracking that would truncate 3.50 into 3 + .50
+_FACTOR = (
+    r"(?:"
+    r"[+\-]?(?:"
+    r"\d+(?:\.\d+)?(?:[a-zA-Z]\d*)?"
+    r"|(?:[a-zA-Z]\d*)"
+    r")"
+    r"(?:\([^()]*(?:\([^()]*\)[^()]*)*\))?"
+    r"|\([^()]*(?:\([^()]*\)[^()]*)*\)"
+    r")"
+    r"(?!\.\d)"
+)
+_EXPR = rf"{_FACTOR}(?:\s*[+\-×·]\s*{_FACTOR})*"
 
-    def keep(m: re.Match) -> str:
-        k = f"§M{len(money)}§"
-        money[k] = m.group(0)
+# Currency compatible with FlashcardMath (never steal $6x / $360$)
+_CURRENCY = re.compile(
+    r"\$\d+(?:,\d{3})*(?:\.\d+)?(?:/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=(\\{^_$])"
+)
+
+
+def repair_math_artifacts(text: str) -> str:
+    """Heal known KaTeX wrap scars from older mathify passes."""
+    s = text or ""
+    for _ in range(8):
+        prev = s
+        # $lhs$ = rhs$  →  $lhs = rhs$  (split across dollars)
+        s = re.sub(r"\$([^$\n]+?)\$\s*=\s*([^$\n]+?)\$", r"$\1 = \2$", s)
+        # $y = 620 - 360$ $= 260$  →  $y = 620 - 360 = 260$
+        s = re.sub(r"\$([^$\n]+?)\$\s*\$=\s*", r"$\1 = ", s)
+        # $3x + 9$(5)$= 66$  →  $3x + 9(5) = 66$
+        s = re.sub(
+            r"\$([^$\n]+?)\$\(([^)]+)\)\$\s*=\s*([^$\n]+?)\$",
+            r"$\1(\2) = \3$",
+            s,
+        )
+        # $y = 2$(4800)$+ 4000 = 13600$  →  $y = 2(4800) + 4000 = 13600$
+        s = re.sub(
+            r"\$([^$\n]+?)\$\(([^)]+)\)\$\s*([+\-])\s*",
+            r"$\1(\2) \3 ",
+            s,
+        )
+        # $x = 10.70 - 4$(1.80)$  →  $x = 10.70 - 4(1.80)$
+        s = re.sub(r"\$([^$\n]+?)\$\(([^)]+)\)\$", r"$\1(\2)$", s)
+        # 40(10.70 - 4y)$+ 25y = 185$  →  $40(10.70 - 4y) + 25y = 185$
+        s = re.sub(
+            r"(?<![A-Za-z0-9$])(\d+\([^)]+\)(?:\s*[+\-]\s*[^=$\n]+)?)\s*\$([+\-])\s*",
+            r"$\1 \2 ",
+            s,
+        )
+        # predicted $= / True Value $=  →  predicted = / True Value =
+        s = re.sub(
+            r"(?i)\b(predicted|value|gives|equals|is)\s*\$=\s*",
+            r"\1 = ",
+            s,
+        )
+        # $0.$1275x  →  $0.1275x
+        s = re.sub(r"\$(\d+)\.\$(\d)", r"$\1.\2", s)
+        # $x = $10.70 - … = 3$.50$  → try close truncated decimal
+        s = re.sub(r"=\s*(\d+)\$\.(\d+)\$", r"= \1.\2$", s)
+        s = re.sub(r"\$=\s*\$(\d)", r"= $\1", s)
+        # currency scar inside math: $428.00 - $160y
+        s = re.sub(r"\$(\d+(?:,\d{3})*(?:\.\d+)?)\s*-\s*\$(\d)", r"$\1 - \2", s)
+        if s == prev:
+            break
+    return s
+
+
+def mathify(text: str) -> str:
+    """Wrap algebra in $...$ without chopping paren products or var=var eqs."""
+    bag: dict[str, str] = {}
+
+    def stash(m: re.Match) -> str:
+        k = f"§M{len(bag)}§"
+        bag[k] = m.group(0)
         return k
 
-    work = (text or "").replace("\u2212", "-")
-    work = re.sub(r"\$\d{1,3}(?:,\d{3})*(?:\.\d+)?", keep, work)
+    work = (text or "").replace("\u2212", "-").replace("→", " → ")
+    # Existing math first, then currency in remaining prose
+    work = re.sub(r"\$\$[\s\S]*?\$\$|\$[^$\n]+\$", stash, work)
+    work = _CURRENCY.sub(stash, work)
+
+    def wrap_eq(m: re.Match) -> str:
+        body = re.sub(r"\s+", " ", m.group(1).strip()).rstrip(".")
+        return f"${body}$"
+
+    # Prefer longer peel chains first: a = b = c
+    work = re.sub(
+        rf"(?<![A-Za-z0-9$§])({_EXPR}\s*=\s*{_EXPR}\s*=\s*{_EXPR})(?![A-Za-z0-9$§])",
+        wrap_eq,
+        work,
+    )
+    # Lock immediately so a later double-eq pass cannot nest inside
+    work = re.sub(r"\$[^$\n]+\$", stash, work)
+    work = re.sub(
+        rf"(?<![A-Za-z0-9$§])({_EXPR}\s*=\s*{_EXPR})(?![A-Za-z0-9$§])",
+        wrap_eq,
+        work,
+    )
+    work = re.sub(r"\$[^$\n]+\$", stash, work)
+
+    # Bare linear chunks WITHOUT nesting into eq wrappers (x - 50, 6x + 4y).
+    # Must start with a letter (not digit-juxtaposition like 2x) so we never
+    # split paren products such as 0.0375(2x+4000) or 4(1.80).
     work = re.sub(
         r"(?<![A-Za-z0-9$§])("
-        r"[+\-]?(?:\d*\.?\d*)?[a-zA-Z]"
-        r"(?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*"
-        r"\s*=\s*[+\-]?\d+(?:\.\d+)?"
-        r"(?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*"
-        r")(?![A-Za-z0-9$§])",
+        r"[a-zA-Z]\d*"
+        r"(?:\s*[+\-]\s*(?:\d*\.?\d+)(?:[a-zA-Z]\d*)?)+"
+        r")(?![A-Za-z0-9$§=(])",
         lambda m: "$" + m.group(1) + "$",
         work,
     )
-    work = re.sub(
-        r"(?<![A-Za-z0-9$§])("
-        r"(?:\d*\.?\d*)?[a-zA-Z]"
-        r"(?:\s*[+\-]\s*(?:\d*\.?\d+)(?:[a-zA-Z])?)+"
-        r")(?![A-Za-z0-9$§=])",
-        lambda m: "$" + m.group(1) + "$",
-        work,
-    )
-    for k, v in money.items():
+    for k, v in bag.items():
         work = work.replace(k, v)
-    return work
+    return repair_math_artifacts(work)
+
+
+def normalize_solution(sol: str) -> str:
+    """Repair PDF line-breaks mid-equation before we split into steps."""
+    s = (sol or "").replace("\r\n", "\n").replace("\u2212", "-")
+    s = re.sub(r"Final Answer:\s*.*", "", s, flags=re.S)
+    # "33 +\n0.21u = 0.29u" → "33 + 0.21u = 0.29u"
+    s = re.sub(r"([+\-=×··/^])\s*\n\s*", r"\1 ", s)
+    s = re.sub(r"\n\s*([+\-=])", r" \1", s)
+    s = s.replace("→", " → ")
+    return flatten(s)
 
 
 def extract_givens() -> dict[int, str]:
@@ -76,16 +171,27 @@ def eqs_from_model(model: str) -> list[str]:
 
 
 def split_core_and_note(eq: str) -> tuple[str, str]:
-    """Split 'lhs = rhs (note with possible = inside)' into core eq + note."""
+    """Split 'lhs = rhs (note with possible = inside)' into core eq + note.
+
+    Require whitespace before the paren so algebraic products like
+    `x - 5 = 3(y - 5)` are NOT treated as notes.
+    """
     eq = eq.replace("\u2212", "-").strip()
-    # Outermost trailing parenthetical note
-    m = re.match(r"^(.*?)(?:\s*\(([^()]*(?:\([^()]*\)[^()]*)*)\))\s*$", eq)
+    # Trailing prose note: "... = 62 (food only)" — space before '('
+    m = re.match(r"^(.*?\S)\s+\(([^()]*(?:\([^()]*\)[^()]*)*)\)\s*$", eq)
     if m and "=" in m.group(1):
-        return m.group(1).strip(), m.group(2).strip()
+        note = m.group(2).strip()
+        # No real English word → still algebra (e.g. "y - 5"), keep intact
+        if not re.search(r"[A-Za-z]{3,}", note):
+            return eq, ""
+        return m.group(1).strip(), note
     if " (" in eq:
         left, right = eq.split(" (", 1)
         if "=" in left:
-            return left.strip(), right.rstrip(")").strip()
+            note = right.rstrip(")").strip()
+            if not re.search(r"[A-Za-z]{3,}", note):
+                return eq, ""
+            return left.strip(), note
     return eq, ""
 
 
@@ -250,113 +356,46 @@ def existing_sections(overview: str) -> dict[str, str]:
 
 
 def format_solution_steps(solution: str) -> str:
-    sol = re.sub(r"Final Answer:\s*.*", "", solution or "", flags=re.S).strip()
-    sol = re.sub(r"\s+", " ", sol)
+    """Safe Solve steps: numbered prose + inline KaTeX (no aggressive $$ lifting)."""
+    sol = normalize_solution(solution)
     if not sol:
         return ""
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9$\\\"(])", sol) if s.strip()]
     merged: list[str] = []
     for s in sents:
-        if merged and merged[-1].rstrip().endswith(("vs.", "vs")):
+        if merged and re.search(r"[+\-×·/=]$", merged[-1].rstrip()):
+            merged[-1] = merged[-1] + " " + s
+        elif merged and merged[-1].rstrip().endswith(("vs.", "vs")):
             merged[-1] = merged[-1] + " " + s
         else:
             merged.append(s)
-    return "\n\n".join(
-        polish_numbered_step(f"**{i}.** {mathify(s)}") for i, s in enumerate(merged, 1)
-    )
+    out: list[str] = []
+    for i, s in enumerate(merged, 1):
+        s = mathify(s)
+        sm = re.match(r"^(.+?[.!?])\s+(.*)$", s)
+        if (
+            sm
+            and 12 <= len(sm.group(1)) <= 110
+            and not re.search(r"[+\-×·/=]$", sm.group(1).rstrip("."))
+        ):
+            title = sm.group(1).rstrip(".")
+            rest = sm.group(2).strip()
+            block = f"**{i}. {title}.**"
+            if rest:
+                block += f"\n\n{rest}"
+            out.append(block)
+        else:
+            out.append(f"**{i}.** {s}")
+    return "\n\n".join(out)
 
 
 def polish_numbered_step(block: str) -> str:
-    """Turn '**2.** prose: $eq$, so $x=…$' into screenshot-style title + display math."""
-    text = block.strip()
-    m2 = re.match(r"^\*\*(\d+)\.\*\*\s*(.*)$", text, flags=re.S)
-    m1 = re.match(r"^\*\*(\d+)\.\s+([^*]+?)\.\*\*\s*(.*)$", text, flags=re.S)
-    if m1:
-        n, title_seed, rest = m1.group(1), m1.group(2).strip(), (m1.group(3) or "").strip()
-        body = rest if rest else ""
-        if not body:
-            return text
-    elif m2:
-        n, body = m2.group(1), m2.group(2).strip()
-        title_seed = ""
-    else:
-        return text
-
-    if "$$" in body:
-        return text
-
-    parts = re.split(r"(\$[^$\n]+\$)", body)
-    title_bits: list[str] = []
-    display_eqs: list[str] = []
-    trailing: list[str] = []
-    seen_eq = False
-    for p in parts:
-        if not p:
-            continue
-        if p.startswith("$") and p.endswith("$"):
-            inner = p[1:-1].strip().replace("\u2212", "-")
-            if "=" in inner and re.search(r"[A-Za-z]", inner):
-                display_eqs.append(inner)
-                seen_eq = True
-                continue
-            (trailing if seen_eq else title_bits).append(p)
-            continue
-        (trailing if seen_eq else title_bits).append(p)
-
-    title = "".join(title_bits).strip()
-    title = re.sub(r"[:\s]+$", "", title).rstrip(".")
-    if title_seed and not title:
-        title = title_seed
-
-    trail = "".join(trailing).strip()
-    trail = re.sub(r"^[,;\s]+", "", trail)
-    # "… $eq1$ and $eq2$" → both display, drop conjunction
-    if display_eqs and re.fullmatch(r"and\s*\.?", trail, flags=re.I):
-        trail = ""
-    # "… $eq1$, so $eq2$" → keep conclusion inline
-    elif display_eqs and re.fullmatch(r"so\s*\.?", trail, flags=re.I):
-        last = display_eqs.pop()
-        trail = f"So ${last}$."
-    # "$y = 620 - 360$ = 260" → fold trailing "= 260" into the equation
-    elif display_eqs and re.match(r"^=\s*[+\-]?\d", trail):
-        display_eqs[-1] = f"{display_eqs[-1]} {trail.rstrip('.')}"
-        trail = ""
-    trail = re.sub(r"^(and|so)\s*\.\s*$", "", trail, flags=re.I).strip()
-    if trail.lower().startswith("so "):
-        trail = "So " + trail[3:]
-
-    if title and title.lower() in {"then", "so", "thus", "hence", "next"}:
-        title = "Find the remaining unknown"
-
-    if not display_eqs and not title_seed:
-        flat = body.strip()
-        sm = re.match(r"^(.+?[.!?])\s*(.*)$", flat, flags=re.S)
-        if sm and len(sm.group(1)) < 140:
-            t = sm.group(1).rstrip(".")
-            rest2 = sm.group(2).strip()
-            out = [f"**{n}. {t}.**"]
-            if rest2:
-                out += ["", rest2]
-            return "\n".join(out)
-        return f"**{n}.** {flat}"
-
-    if not display_eqs:
-        return text
-
-    out: list[str] = [f"**{n}. {title}.**" if title else f"**{n}.**"]
-    for eq in display_eqs:
-        out += ["", f"$$\n{eq}\n$$"]
-    if trail:
-        out += ["", trail]
-    return "\n".join(out)
+    """No-op: equation-lifting mangled PDF mid-line breaks."""
+    return block.strip()
 
 
 def polish_solve_section(solve: str) -> str:
-    if not solve.strip():
-        return solve
-    # Split on blank lines; polish each numbered step block
-    blocks = re.split(r"\n\s*\n", solve.strip())
-    return "\n\n".join(polish_numbered_step(b) for b in blocks)
+    return (solve or "").strip()
 
 
 def build_overview(task: dict, given: str, old_overview: str) -> str:
@@ -386,8 +425,14 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
     ]
 
     if given_clean:
-        parts.append(mathify(given_clean))
+        given_bits = mathify(given_clean)
+        given_bits = re.sub(r"\bLet ([a-zA-Z]\d*) = ", r"Let $\1 =$ ", given_bits)
+        parts.append(given_bits)
         parts.append("")
+
+    # Defining sentence above bullets (when given absent): keep screenshot $x =$ style
+    if parts and parts[0]:
+        parts[0] = re.sub(r"\bLet ([a-zA-Z]\d*) = ", r"Let $\1 =$ ", parts[0])
 
     bullets = building_from_model_lines(model_eqs, given_clean)
     if bullets:
@@ -413,6 +458,7 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
     # Drop orphan leftovers like "and ." / "So ." from aggressive eq lifting
     solve = re.sub(r"\n\n(?:and|so)\s*\.\s*(?=\n|\Z)", "\n", solve, flags=re.I)
     solve = re.sub(r"\n{3,}", "\n\n", solve).strip()
+    solve = repair_math_artifacts(solve)
     if solve:
         parts.append(solve)
     else:
@@ -424,7 +470,7 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
     parts += ["", f"**Answer.** {answer}"]
 
     # No coaching tips / Watch / Why — screenshots are plain tutorial prose only.
-    return "\n".join(parts).strip()
+    return repair_math_artifacts("\n".join(parts).strip())
 
 
 def main() -> None:
@@ -441,12 +487,18 @@ def main() -> None:
             }
         old = data[key].get("solution_overview") or ""
         data[key]["solution_overview"] = build_overview(t, givens.get(n, ""), old)
+        expls = list(data[key].get("tactical_explanations") or [])
+        data[key]["tactical_explanations"] = [
+            repair_math_artifacts(e or "") for e in expls
+        ]
 
     OV_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     # sample
-    for n in [1, 4, 52]:
+    for n in [1, 2, 4, 24, 41, 47]:
         print("=" * 60, n)
-        print(data[str(n)]["solution_overview"][:1100])
+        ov = data[str(n)]["solution_overview"]
+        m = re.search(r"\*\*Part 3: Solve\.\*\*([\s\S]*?)(?=\n\*\*Answer|\Z)", ov)
+        print((m.group(1) if m else ov)[:900])
         print()
 
 

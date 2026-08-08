@@ -121,61 +121,86 @@ type Part =
   | { type: "inline"; value: string }
   | { type: "display"; value: string };
 
-/**
- * Protect currency like $304.00 / $9,660.00 so they are not parsed as KaTeX.
- * Real math still uses $...$ / $$...$$ (including values like $0.25^{10}$).
- */
-/**
- * Protect currency so it is not parsed as KaTeX.
- * Matches: $304.00 · $9,660 · $2.00/GB · $14,100
- * Leaves real math alone: $0.25^{10}$ · $428.00-160y=185$ · $x+y=1$ · $360$
- */
-function protectCurrency(input: string): { text: string; restore: (s: string) => string } {
-  const bag: string[] = [];
-  const text = input.replace(
-    // Require: don't end before a decimal continuation (".25"), and don't steal math ops.
-    /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=(\\{^_$])/g,
-    (whole) => {
-      const key = `¤C${bag.length}¤`;
-      bag.push(whole);
-      return key;
-    },
-  );
-  return {
-    text,
-    restore: (s: string) => s.replace(/¤C(\d+)¤/g, (_, i) => bag[Number(i)] ?? ""),
-  };
+const CURRENCY_RE =
+  /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=(\\{^_$])/y;
+
+function looksLikeMathInner(inner: string): boolean {
+  const t = inner.trim();
+  if (!t) return false;
+  if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false; // prose between dollars
+  if (/[=+×·\-/^\\()_]/.test(t)) return true;
+  if (/[A-Za-z]/.test(t) && /\d/.test(t)) return true;
+  if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true; // $360$
+  return false;
 }
 
+/**
+ * Split prose / currency / KaTeX.
+ * Currency is claimed first at `$digits…` so `$6000 … $0.04(6000)=240$` does not
+ * falsely pair the currency `$` with the math opener. Already-valid math spans
+ * (inner looks like math) are taken as KaTeX.
+ */
 function splitMath(input: string): Part[] {
-  const { text: protectedText, restore } = protectCurrency(input);
-
-  const normalized = protectedText
+  const text = input
     .replace(/\\\(/g, "$")
     .replace(/\\\)/g, "$")
     .replace(/\\\[/g, "$$")
     .replace(/\\\]/g, "$$");
 
   const parts: Part[] = [];
-  const re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
-  let last = 0;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(normalized))) {
-    if (m.index > last) {
-      parts.push({ type: "text", value: restore(normalized.slice(last, m.index)) });
+  let i = 0;
+  let buf = "";
+
+  const flush = () => {
+    if (buf) {
+      parts.push({ type: "text", value: buf });
+      buf = "";
     }
-    if (m[1] != null) {
-      parts.push({ type: "display", value: restore(m[1]).trim() });
-    } else if (m[2] != null) {
-      parts.push({ type: "inline", value: restore(m[2]).trim() });
+  };
+
+  while (i < text.length) {
+    if (text.startsWith("$$", i)) {
+      const end = text.indexOf("$$", i + 2);
+      if (end !== -1) {
+        flush();
+        parts.push({ type: "display", value: text.slice(i + 2, end).trim() });
+        i = end + 2;
+        continue;
+      }
     }
-    last = m.index + m[0].length;
+
+    if (text[i] === "$") {
+      // Prefer currency at $digits when it does not look like delimited math later.
+      CURRENCY_RE.lastIndex = i;
+      const cur = CURRENCY_RE.exec(text);
+      if (cur && cur.index === i) {
+        const afterMath = text.indexOf("$", i + cur[0].length);
+        const between = afterMath === -1 ? "" : text.slice(i + 1, afterMath);
+        // If `$…$` from here would be math, don't steal currency from a math span
+        // like `$428.00 - 160y = 185$`.
+        if (!(afterMath !== -1 && looksLikeMathInner(between))) {
+          buf += cur[0];
+          i += cur[0].length;
+          continue;
+        }
+      }
+
+      const end = text.indexOf("$", i + 1);
+      if (end !== -1) {
+        const inner = text.slice(i + 1, end);
+        if (looksLikeMathInner(inner)) {
+          flush();
+          parts.push({ type: "inline", value: inner.trim() });
+          i = end + 1;
+          continue;
+        }
+      }
+    }
+
+    buf += text[i];
+    i += 1;
   }
-  if (last < normalized.length) {
-    parts.push({ type: "text", value: restore(normalized.slice(last)) });
-  }
-  if (parts.length === 0) {
-    parts.push({ type: "text", value: restore(normalized) });
-  }
+  flush();
+  if (parts.length === 0) parts.push({ type: "text", value: text });
   return parts;
 }
