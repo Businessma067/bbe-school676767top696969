@@ -127,15 +127,11 @@ def format_cases(eqs: list[str]) -> str:
         if e and e not in seen:
             seen.append(e)
     seen = seen[:4]
-    if len(seen) >= 2:
-        return (
-            "$$\n\\begin{cases}\n"
-            + " \\\\\n".join(seen[:2])
-            + "\n\\end{cases}\n$$"
-        )
-    if seen:
-        return f"$$\n{seen[0]}\n$$"
-    return ""
+    if not seen:
+        return ""
+    # Screenshot style: one centered equation per line with (1), (2) on the right
+    blocks = [f"$$\n{eq} \\tag{{{i}}}\n$$" for i, eq in enumerate(seen[:2], 1)]
+    return "\n\n".join(blocks)
 
 
 def month_labels_from_given(given: str) -> list[str] | None:
@@ -286,8 +282,9 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
         going = first or flatten(task.get("title") or "")
 
     given_clean = (given or "").strip()
+    # Plain intro paragraph (screenshots jump straight into Part 1 — no "What's going on" chip).
     parts = [
-        f"**What's going on.** {going}",
+        going,
         "",
         "**Part 1: Building the system.**",
         "",
@@ -325,10 +322,7 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
     answer = secs["answer"] or (task.get("final_answer") or "")
     parts += ["", f"**Answer.** {answer}"]
 
-    coach = (secs["coach"] or task.get("coach") or "").strip()
-    if coach:
-        parts += ["", coach]
-
+    # No coaching tips / Watch / Why — screenshots are plain tutorial prose only.
     return "\n".join(parts).strip()
 
 

@@ -580,47 +580,42 @@ function DifficultyPill({ level, active }: { level: string; active?: boolean }) 
   );
 }
 
-/** Section titles in the tutorial style (Part / Setup / Solve…). */
+/** Screenshot-style section titles: "Part 1: …" */
 function isSectionHeading(label: string): boolean {
-  return /^(What's going on|Building the system|Model|Solve|Answer|Part\s*\d+.*|Direct check|Setup|Computation)(\.|:)?$/i.test(
+  return /^(What's going on|Part\s*\d+.*|Model|Solve|Answer|Building the system)(\.|:)?$/i.test(
     label.trim(),
   );
 }
 
-/** Numbered/step labels: Equation 1, Step 2, 1. Translate… */
+/** Numbered step titles: "1. Translate…" or bare "1." */
 function isStepLabel(label: string): boolean {
-  return /^(Equation\s+\d+|Step\s+\d+|[A-E]\)|\d+\.)(\.|:)?$/i.test(label.trim())
-    || /^(Equation\s+\d+\.|Step\s+\d+\.)/i.test(label.trim());
+  const t = label.trim();
+  return /^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t) || /^[A-E]\)/.test(t);
 }
 
-/** Tip / note callouts — left-border like the sample "Note:". */
 function isNoteLabel(label: string): boolean {
-  return /^(Watch\.?|Why it fails\.?|Where it breaks\.?|Tip\.?|Note\.?|Related model relation\.?)(\.|:)?$/i.test(
-    label.trim(),
-  );
+  return /^Note\.?$/i.test(label.trim());
 }
 
 function classifyBoldLabel(label: string): "section" | "step" | "note" | "emphasis" {
   const t = label.trim();
   if (isNoteLabel(t)) return "note";
   if (isSectionHeading(t)) return "section";
-  // "1. Peel the fixed fee…" / "Equation 1." / "Step 2."
-  if (/^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t)) return "step";
-  if (/^Equation\s+\d+/i.test(t) || /^Step\s+\d+/i.test(t)) return "step";
-  if (/^[A-E]\)/.test(t)) return "step";
   if (isStepLabel(t)) return "step";
   return "emphasis";
 }
 
-/** Tutorial-style markdown + KaTeX: sans body, selective bold, airy display math. */
+/**
+ * Tutorial prose matching the reference screenshots:
+ * Inter body, bold Part / step titles, centered KaTeX, italic Note callouts.
+ */
 function MathProse({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split(/\n\n+/);
   return (
     <div
       className={cn(
-        "space-y-4 font-sans text-[15px] leading-[1.65] text-foreground/90 sm:text-[15.5px]",
-        "[&_.katex]:text-[1.08em] [&_.katex-display]:my-4 [&_.katex-display]:overflow-x-auto",
-        "[&_.katex-display]:py-1",
+        "space-y-4 font-expl text-[15px] leading-[1.55] text-[#222] sm:text-[15.5px]",
+        "[&_.katex]:text-[1.1em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto",
         className,
       )}
     >
@@ -636,64 +631,43 @@ function MathProse({ text, className }: { text: string; className?: string }) {
 
         const trimmed = para.trim();
 
-        // Standalone display math block
         if (/^\$\$[\s\S]+\$\$$/.test(trimmed) || /^\$[^$\n]+\$\s*$/.test(trimmed)) {
           return (
-            <div key={i} className="py-1">
+            <div key={i} className="py-0.5">
               <FlashcardMath text={trimmed} displayPrefer />
             </div>
           );
         }
 
-        // Section heading alone on a line: **What's going on.**
         const headerOnly = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
-        if (headerOnly) {
-          const kind = classifyBoldLabel(headerOnly[1]);
-          if (kind === "section") {
-            return (
-              <h4
-                key={i}
-                className="mb-0 mt-6 text-[16px] font-bold leading-snug tracking-tight text-foreground first:mt-0 sm:text-[17px]"
-              >
-                {headerOnly[1].replace(/[.!:]+$/, "")}
-              </h4>
-            );
-          }
-          if (kind === "note") {
-            return (
-              <aside
-                key={i}
-                className="my-3 border-l-[3px] border-foreground/25 py-1 pl-3 text-[14.5px] font-semibold italic leading-relaxed text-foreground/85"
-              >
-                {headerOnly[1].replace(/[.!:]+$/, "")}
-              </aside>
-            );
-          }
+        if (headerOnly && classifyBoldLabel(headerOnly[1]) === "section") {
+          return (
+            <h4
+              key={i}
+              className="mb-1 mt-7 text-[16px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[17px]"
+            >
+              {headerOnly[1].replace(/[.!:]+$/, "")}
+            </h4>
+          );
         }
 
-        // Note paragraph: **Watch.** rest… OR **Why it fails.** rest
-        const noteLead = trimmed.match(/^\*\*([^*]+)\*\*\s*([\s\S]*)$/);
-        if (noteLead && classifyBoldLabel(noteLead[1]) === "note") {
+        const noteLead = trimmed.match(/^\*\*(Note\.?)\*\*\s*([\s\S]*)$/i);
+        if (noteLead) {
           return (
             <aside
               key={i}
-              className="my-3 border-l-[3px] border-foreground/25 py-1.5 pl-3 text-[14.5px] leading-relaxed text-foreground/85"
+              className="my-4 border-l-[3px] border-[#c8c8c8] py-1 pl-4 text-[14.5px] italic leading-[1.55] text-[#333]"
             >
-              <span className="font-semibold italic">
-                {noteLead[1].replace(/[.!:]+$/, "")}.{" "}
-              </span>
-              <span className="font-semibold italic">
-                <RichMathLine text={noteLead[2]} />
-              </span>
+              <span className="font-bold not-italic">Note: </span>
+              <RichMathLine text={noteLead[2]} />
             </aside>
           );
         }
 
-        // Statement / part lead: **A) claim…** — **TRUE**
-        const stmtLead = trimmed.match(/^\*\*([A-E]\)[^*]+)\*\*/);
-        if (stmtLead) {
+        // A–E claim line
+        if (/^\*\*[A-E]\)/.test(trimmed)) {
           return (
-            <p key={i} className="m-0 mt-6 text-[15.5px] font-bold leading-snug text-foreground first:mt-0 sm:text-[16px]">
+            <p key={i} className="m-0 mt-8 text-[15.5px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[16px]">
               <RichMathLine text={trimmed} />
             </p>
           );
@@ -802,41 +776,38 @@ function RichMathLine({ text }: { text: string }) {
           const kind = classifyBoldLabel(p.value);
           if (kind === "section") {
             return (
-              <strong key={i} className="font-bold text-foreground">
+              <strong key={i} className="font-bold text-[#111]">
                 {p.value.replace(/[.!:]+$/, "")}.{" "}
               </strong>
             );
           }
           if (kind === "step") {
             return (
-              <strong key={i} className="font-bold text-foreground">
+              <strong key={i} className="font-bold text-[#111]">
                 <FlashcardMath text={p.value} />
               </strong>
             );
           }
           if (kind === "note") {
             return (
-              <strong key={i} className="font-semibold italic text-foreground">
-                {p.value.replace(/[.!:]+$/, "")}.{" "}
+              <strong key={i} className="font-bold text-[#111]">
+                Note:{" "}
               </strong>
             );
           }
-          // Emphasis: TRUE/FALSE, short highlights — real bold, not washed-out medium
           return (
-            <strong key={i} className="font-bold text-foreground">
+            <strong key={i} className="font-bold text-[#111]">
               <FlashcardMath text={p.value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
-            <em key={i} className="italic text-foreground/80">
+            <em key={i} className="italic text-[#444]">
               <FlashcardMath text={p.value} />
             </em>
           );
         }
-        // Prefer display for standalone equation-looking chunks mid-flow when $$ used;
-        // inline $...$ stays inline (variables in sentences, like the samples).
         return <FlashcardMath key={i} text={p.value} />;
       })}
     </span>
@@ -903,7 +874,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto bg-background px-5 py-5 sm:px-7 sm:py-6">
+      <div className="min-h-0 flex-1 overflow-y-auto bg-white px-6 py-6 sm:px-8 sm:py-7">
         <MathProse text={body} />
       </div>
     </div>
