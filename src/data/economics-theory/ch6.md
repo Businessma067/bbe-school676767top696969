@@ -28,8 +28,6 @@ The identity must hold because every euro of asset was funded either by owners (
 > Assets = liabilities + owner's equity  
 > *Assets = resources owned and used by the business; liabilities = amounts owed to outsiders; owner's equity = owners' financing claim (assets − liabilities).*
 
-[[FIGURE:balance-sheet|Balance sheet identity: every asset is financed by liabilities or by equity — the two financing sides add up to total assets.]]
-
 Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €20,000, so **equity** = assets − liabilities = 46,000 − 20,000 = €26,000, and the check 46,000 = 20,000 + 26,000 confirms that opening totals balance at €46,000 on each side.
 
 *Northline Bike Workshop — opening balance sheet (€)*

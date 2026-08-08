@@ -952,52 +952,6 @@ function FinancialStatements() {
 }
 
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
-function BalanceSheet() {
-  const left = [
-    ["Tools and workshop benches", "18,000"],
-    ["Delivery van", "14,000"],
-    ["Inventory (bikes for resale)", "9,200"],
-    ["Cash and bank", "4,800"],
-  ];
-  const right = [
-    ["Owner's equity", "26,000"],
-    ["Bank loan", "20,000"],
-  ];
-  return (
-    <div className="overflow-x-auto ring-1 ring-primary/30">
-      <table className="w-full min-w-[28rem] border-collapse text-sm">
-        <thead>
-          <tr className="border-b border-primary/40 text-primary">
-            <th className="px-3 py-2 text-left font-bold">Assets</th>
-            <th className="px-3 py-2 text-right font-bold">€</th>
-            <th className="border-l border-primary/40 px-3 py-2 text-left font-bold">Equity and liabilities</th>
-            <th className="px-3 py-2 text-right font-bold">€</th>
-          </tr>
-        </thead>
-        <tbody>
-          {left.map((row, i) => (
-            <tr key={row[0]} className="border-b border-border/50">
-              <td className="px-3 py-1.5">{row[0]}</td>
-              <td className="px-3 py-1.5 text-right tabular-nums">{row[1]}</td>
-              <td className="border-l border-primary/30 px-3 py-1.5">{right[i]?.[0] ?? ""}</td>
-              <td className="px-3 py-1.5 text-right tabular-nums">{right[i]?.[1] ?? ""}</td>
-            </tr>
-          ))}
-          <tr className="font-bold">
-            <td className="px-3 py-2">Total assets</td>
-            <td className="px-3 py-2 text-right tabular-nums">46,000</td>
-            <td className="border-l border-primary/30 px-3 py-2">Total equity and liabilities</td>
-            <td className="px-3 py-2 text-right tabular-nums">46,000</td>
-          </tr>
-        </tbody>
-      </table>
-      <p className="border-t border-border/60 px-3 py-2 text-center text-[11px] text-muted-foreground">
-        Northline opening: assets = equity + liabilities
-      </p>
-    </div>
-  );
-}
-
 const FIGURES: Record<string, () => ReactNode> = {
   "circular-flow": CircularFlow,
   "supply-curve": SupplyCurve,
@@ -1025,7 +979,6 @@ const FIGURES: Record<string, () => ReactNode> = {
   "price-elasticity-elastic": PriceElasticityElastic,
   "price-elasticity-inelastic": PriceElasticityInelastic,
   "financial-statements": FinancialStatements,
-  "balance-sheet": BalanceSheet,
 };
 
 export function TheoryFigure({ id, caption, className }: Props) {
