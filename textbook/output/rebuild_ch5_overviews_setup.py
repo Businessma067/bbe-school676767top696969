@@ -75,24 +75,49 @@ def eqs_from_model(model: str) -> list[str]:
     return out[:6]
 
 
+def split_core_and_note(eq: str) -> tuple[str, str]:
+    """Split 'lhs = rhs (note with possible = inside)' into core eq + note."""
+    eq = eq.replace("\u2212", "-").strip()
+    # Outermost trailing parenthetical note
+    m = re.match(r"^(.*?)(?:\s*\(([^()]*(?:\([^()]*\)[^()]*)*)\))\s*$", eq)
+    if m and "=" in m.group(1):
+        return m.group(1).strip(), m.group(2).strip()
+    if " (" in eq:
+        left, right = eq.split(" (", 1)
+        if "=" in left:
+            return left.strip(), right.rstrip(")").strip()
+    return eq, ""
+
+
+def is_numeric_peel_chain(eq: str) -> bool:
+    """True for fee/tax peels like 6x+4y = 70.00 - 8.00 = 62.00 (not prose notes)."""
+    core, _ = split_core_and_note(eq)
+    if core.count("=") < 2:
+        return False
+    parts = [p.strip() for p in core.split("=")]
+    if len(parts) < 3:
+        return False
+    if not re.search(r"[a-zA-Z]", parts[0]):
+        return False
+    numish = re.compile(r"^[+\-]?\d+(?:\.\d+)?(?:\s*[+\-]\s*\d+(?:\.\d+)?)*$")
+    return all(numish.match(p) for p in parts[1:])
+
+
 def clean_eq_for_cases(eq: str) -> str:
     eq = eq.replace("\u2212", "-")
     # Prefer rearranged form when present (must run before multi-= peeling)
     if "which rearranges to" in eq.lower():
         right = re.split(r"which rearranges to", eq, flags=re.I)[1].strip()
-        return right.split("(")[0].strip().rstrip(".")
+        core, _ = split_core_and_note(right)
+        return core.rstrip(".")
+    core, _ = split_core_and_note(eq)
     # Prefer final numeric result if chain: a = b - c = d
-    if eq.count("=") >= 2:
-        parts = [p.strip() for p in eq.split("=")]
-        tail = parts[-1].split("(")[0].strip()
-        if re.fullmatch(r"[+\-]?\d+(?:\.\d+)?", tail):
-            left = parts[0].split("(")[0].strip()
-            return f"{left} = {tail}"
-    if " (" in eq:
-        left = eq.split(" (")[0].strip()
-        if re.search(r"[a-zA-Z].*=", left):
-            return left
-    return eq
+    if is_numeric_peel_chain(core):
+        parts = [p.strip() for p in core.split("=")]
+        left = parts[0].strip()
+        tail = parts[-1].strip()
+        return f"{left} = {tail}"
+    return core
 
 
 def format_cases(eqs: list[str]) -> str:
@@ -120,52 +145,62 @@ def month_labels_from_given(given: str) -> list[str] | None:
     return None
 
 
+def display_eq(eq: str) -> str:
+    return f"$$\n{eq}\n$$"
+
+
 def describe_building_line(raw: str, index: int, row_label: str | None = None) -> str:
     raw_n = raw.replace("\u2212", "-").strip()
 
     if "which rearranges to" in raw_n.lower():
         left, right = re.split(r",\s*which rearranges to\s+", raw_n, flags=re.I)
+        left_core, left_note = split_core_and_note(left.strip())
+        rearranged = clean_eq_for_cases("which rearranges to " + right)
+        note_bit = f" ({left_note})" if left_note else ""
         return (
-            f"**Equation {index}.** Turn that story beat into symbols: "
-            f"${left.strip()}$, which rearranges to "
-            f"${clean_eq_for_cases('which rearranges to ' + right)}$."
+            f"**{index}. Turn that story beat into symbols{note_bit}.** "
+            f"The transfer is first written as ${left_core}$, which rearranges to a clean difference:\n\n"
+            f"{display_eq(rearranged)}"
         )
 
-    note = ""
-    core = raw_n
-    if " (" in raw_n and raw_n.count("=") <= 1:
-        core, note = raw_n.split(" (", 1)
-        note = note.rstrip(")").strip()
-        core = core.strip()
+    core, note = split_core_and_note(raw_n)
 
     # fee peel chain: 6x+4y = 70.00 - 8.00 = 62.00
-    if raw_n.count("=") >= 2:
-        parts = [p.strip() for p in raw_n.split("=")]
+    if is_numeric_peel_chain(core):
+        parts = [p.strip() for p in core.split("=")]
         left = parts[0]
-        mid = " = ".join(parts[1:-1]) if len(parts) > 2 else parts[1]
-        final = parts[-1].split("(")[0].strip()
+        mid = " = ".join(parts[1:-1])
+        final = parts[-1]
         return (
-            f"**Equation {index}.** Start from the printed total, peel the fee/tax, "
-            f"then keep only food×prices: "
-            f"${left} = {mid} = {final}$, so the clean system row is ${left} = {final}$."
+            f"**{index}. Peel the fixed fee/tax, then write the food×price row.** "
+            f"Start from the printed total: ${left} = {mid} = {final}$. The clean system equation is:\n\n"
+            f"{display_eq(f'{left} = {final}')}"
         )
 
-    display = clean_eq_for_cases(core if core else raw_n)
+    display = clean_eq_for_cases(core)
     if note:
-        return f"**Equation {index}.** From {note}: ${display}$."
+        return (
+            f"**{index}. Translate: {note}.** "
+            f"That observation becomes:\n\n{display_eq(display)}"
+        )
     if row_label:
-        return f"**Equation {index}.** From {row_label}: ${display}$."
-    # Hint from coefficients when bill-like: f + 40r = 29
+        return (
+            f"**{index}. Use {row_label}.** "
+            f"Write the equation:\n\n{display_eq(display)}"
+        )
     m = re.match(
         r"^([a-zA-Z])\s*\+\s*(\d+(?:\.\d+)?)([a-zA-Z])\s*=\s*(\d+(?:\.\d+)?)$",
         display.replace(" ", ""),
     )
     if m:
         return (
-            f"**Equation {index}.** From the quoted bill with {m.group(2)} "
-            f"extra units at rate ${m.group(3)}$: ${display}$."
+            f"**{index}. Read the bill with {m.group(2)} extra units.** "
+            f"At rate ${m.group(3)}$, that bill is:\n\n{display_eq(display)}"
         )
-    return f"**Equation {index}.** From this independent observation: ${display}$."
+    return (
+        f"**{index}. Record this independent observation.** "
+        f"In symbols:\n\n{display_eq(display)}"
+    )
 
 
 def building_from_model_lines(model_eqs: list[str], given: str = "") -> list[str]:
@@ -183,19 +218,35 @@ def existing_sections(overview: str) -> dict[str, str]:
     solve = ""
     answer = ""
     coach = ""
-    m = re.search(r"\*\*Solve\.\*\*\s*([\s\S]*?)(?=\n\*\*Answer\.\*\*|\Z)", text)
+    m = re.search(
+        r"\*\*(?:Part\s*\d+:\s*)?Solve\.?\*\*\s*([\s\S]*?)(?=\n\*\*Answer\.?\*\*|\Z)",
+        text,
+        flags=re.I,
+    )
     if m:
         solve = m.group(1).strip()
-    m = re.search(r"\*\*Answer\.\*\*\s*([^\n*]+)", text)
+    m = re.search(r"\*\*Answer\.?\*\*\s*([^\n*]+)", text, flags=re.I)
     if m:
         answer = m.group(1).strip()
-    # trailing coach tips (**Something:** ...)
     tips = re.findall(r"(\*\*[^*]+?:\*\*[^\n]+)", text)
-    # exclude What's going on / Building / Model / Solve / Answer headers that look similar
     coach_bits = []
     for t in tips:
         label = t.split(":**")[0].lower()
-        if any(k in label for k in ("what", "building", "model", "solve", "answer", "setup", "computation", "direct", "where")):
+        if any(
+            k in label
+            for k in (
+                "what",
+                "building",
+                "model",
+                "solve",
+                "answer",
+                "setup",
+                "computation",
+                "direct",
+                "where",
+                "part",
+            )
+        ):
             continue
         coach_bits.append(t)
     coach = "\n\n".join(coach_bits)
@@ -214,7 +265,7 @@ def format_solution_steps(solution: str) -> str:
             merged[-1] = merged[-1] + " " + s
         else:
             merged.append(s)
-    return "\n\n".join(f"**Step {i}.** {mathify(s)}" for i, s in enumerate(merged, 1))
+    return "\n\n".join(f"**{i}.** {mathify(s)}" for i, s in enumerate(merged, 1))
 
 
 def build_overview(task: dict, given: str, old_overview: str) -> str:
@@ -234,12 +285,11 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
             first += "."
         going = first or flatten(task.get("title") or "")
 
-    # Soften forced variable sermon in going if GIVEN already names them
     given_clean = (given or "").strip()
     parts = [
         f"**What's going on.** {going}",
         "",
-        "**Building the system.**",
+        "**Part 1: Building the system.**",
         "",
     ]
 
@@ -249,25 +299,23 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
 
     bullets = building_from_model_lines(model_eqs, given_clean)
     if bullets:
-        if given_clean:
-            parts.append("In symbols that becomes:")
-        else:
-            parts.append("From the stem, the two independent observations become:")
-        parts.append("")
-        parts.extend(bullets)
-        parts.append("")
+        for b in bullets:
+            parts.append(b)
+            parts.append("")
 
     parts += [
-        "**Model.**",
+        "**Part 2: The model.**",
         "",
         format_cases(model_eqs),
         "",
-        "**Solve.**",
+        "**Part 3: Solve.**",
         "",
     ]
 
     solve = secs["solve"] or format_solution_steps(task.get("solution") or "")
+    # normalize old "**Step N.**" headings toward sample "**N.** …"
     if solve:
+        solve = re.sub(r"\*\*Step\s+(\d+)\.\*\*", r"**\1.**", solve)
         parts.append(solve)
     else:
         parts.append(

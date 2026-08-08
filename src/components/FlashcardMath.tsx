@@ -18,27 +18,102 @@ export function FlashcardMath({
         if (part.type === "text") {
           return <span key={i}>{part.value}</span>;
         }
+        return <MathChunk key={i} part={part} displayPrefer={displayPrefer} />;
+      })}
+    </span>
+  );
+}
+
+function MathChunk({
+  part,
+  displayPrefer,
+}: {
+  part: { type: "inline" | "display"; value: string };
+  displayPrefer: boolean;
+}) {
+  const displayMode = part.type === "display" || (displayPrefer && part.type === "inline");
+  const chunks = sanitizeMathSource(part.value);
+
+  return (
+    <>
+      {chunks.map((chunk, j) => {
+        if (chunk.kind === "text") {
+          return (
+            <span key={j} className="mx-0.5">
+              {chunk.value}
+            </span>
+          );
+        }
         try {
-          const html = katex.renderToString(part.value, {
+          const html = katex.renderToString(chunk.value, {
             throwOnError: false,
-            displayMode: part.type === "display" || (displayPrefer && part.type === "inline"),
+            displayMode,
             strict: "ignore",
           });
           return (
             <span
-              key={i}
+              key={j}
               className={
-                part.type === "display" ? "my-2 block overflow-x-auto text-center" : "mx-0.5 inline-block"
+                displayMode
+                  ? "my-4 block overflow-x-auto py-1 text-center [&_.katex-display]:my-0"
+                  : "mx-0.5 inline-block align-baseline"
               }
               dangerouslySetInnerHTML={{ __html: html }}
             />
           );
         } catch {
-          return <span key={i}>{part.value}</span>;
+          return <span key={j}>{chunk.value}</span>;
         }
       })}
-    </span>
+    </>
   );
+}
+
+/**
+ * KaTeX collapses spaces and italicizes letters. Plain English left inside $...$
+ * therefore renders as jammed gibberish ("250kmgapclosed…"). Keep only clean
+ * math in KaTeX; force prose notes out as normal text.
+ */
+function sanitizeMathSource(src: string): { kind: "math" | "text"; value: string }[] {
+  const raw = src.trim();
+  if (!raw) return [];
+
+  if (!hasProseWords(raw)) {
+    return [{ kind: "math", value: raw }];
+  }
+
+  // "x + y = 125 (250 km gap closed in 2 hrs: 2(x+y) = 250)"
+  const noted = raw.match(/^(.+?=.+?)\s*(\([\s\S]*\))\s*$/);
+  if (noted) {
+    const eq = noted[1].trim();
+    const note = noted[2].trim();
+    if (!hasProseWords(eq)) {
+      return [
+        { kind: "math", value: eq },
+        { kind: "text", value: ` ${note}` },
+      ];
+    }
+  }
+
+  // Peel chain with trailing junk, or mixed junk — prefer leading clean equation.
+  const leadEq = raw.match(/^([A-Za-z0-9.\s+\-*/^=()]+?=\s*[+\-]?\d+(?:\.\d+)?)(?=\s|\)|$)/);
+  if (leadEq && !hasProseWords(leadEq[1])) {
+    const rest = raw.slice(leadEq[1].length).trim();
+    return rest
+      ? [
+          { kind: "math", value: leadEq[1].trim() },
+          { kind: "text", value: ` ${rest}` },
+        ]
+      : [{ kind: "math", value: leadEq[1].trim() }];
+  }
+
+  // Last resort: do not KaTeX prose — preserves spaces.
+  return [{ kind: "text", value: raw }];
+}
+
+function hasProseWords(s: string): boolean {
+  // Two consecutive English words (≥3 letters) → almost certainly not pure math.
+  return /[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(s);
 }
 
 type Part =
@@ -50,13 +125,22 @@ type Part =
  * Protect currency like $304.00 / $9,660.00 so they are not parsed as KaTeX.
  * Real math still uses $...$ / $$...$$ (including values like $0.25^{10}$).
  */
+/**
+ * Protect currency so it is not parsed as KaTeX.
+ * Matches: $304.00 · $9,660 · $2.00/GB · $14,100
+ * Leaves real math alone: $0.25^{10}$ · $428.00-160y=185$ · $x+y=1$ · $360$
+ */
 function protectCurrency(input: string): { text: string; restore: (s: string) => string } {
   const bag: string[] = [];
-  const text = input.replace(/\$(\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+(?:\.\d+)?)(?![\dA-Za-z\\{^_])/g, (_, num) => {
-    const key = `¤C${bag.length}¤`;
-    bag.push(`$${num}`);
-    return key;
-  });
+  const text = input.replace(
+    // Require: don't end before a decimal continuation (".25"), and don't steal math ops.
+    /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=(\\{^_$])/g,
+    (whole) => {
+      const key = `¤C${bag.length}¤`;
+      bag.push(whole);
+      return key;
+    },
+  );
   return {
     text,
     restore: (s: string) => s.replace(/¤C(\d+)¤/g, (_, i) => bag[Number(i)] ?? ""),

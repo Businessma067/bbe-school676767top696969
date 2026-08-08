@@ -74,16 +74,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 1,
     solution_overview: `**What's going on.** Let $x$ be the number of crates currently at the North depot and $y$ the number currently at the South depot. The first observation gives their combined stock, while the transfer note says that taking 50 from North and adding 50 to South makes the two stocks equal.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = crates at the North depot, y = crates at the South depot. The memo's transfer clue must be translated into an equation: after moving 50 crates from North to South, North would have $x - 50$ and South would have $y + 50$, and these are described as equal.
 
-In symbols that becomes:
+**1. Translate: combined total.** That observation becomes:
 
-**Equation 1.** From combined total: $x + y = 620$.
-**Equation 2.** Turn that story beat into symbols: $x - 50 = y + 50$, which rearranges to $x - y = 100$.
+$$
+x + y = 620
+$$
 
-**Model.**
+**2. Turn that story beat into symbols.** The transfer is first written as $x - 50 = y + 50$, which rearranges to a clean difference:
+
+$$
+x - y = 100
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -92,13 +99,15 @@ x - y = 100
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Add the equations: $2x=720$, so $x=360$.
+**1.** This is now a standard sum-and-difference pair: $x + y = 620$ and $x - y = 100$.
 
-**Step 2.** Substitute into the total: $y=620-360=260$.
+**2.** Adding the two equations eliminates y: $2x = 720$, so $x = 360$.
 
-**Step 3.** Check the transfer described in the memo: $360-50=310$ and $260+50=310$.
+**3.** Then $y = 620 - 360$ = 260.
+
+**4.** Check: 360 - 50 = 310 and 260 + 50 = 310 — the two depots do end up equal, confirming the translation was correct.
 
 **Answer.** North depot = 360 crates | South depot = 260 crates`,
   },
@@ -172,16 +181,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 2,
     solution_overview: `**What's going on.** Let $x$ be the price of one notebook and $y$ the price of one pen. The two invoices record different quantities of those same items, so each invoice total gives one price equation.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of one notebook, y = price of one pen.
 
-In symbols that becomes:
+**1. Translate: Invoice #101.** That observation becomes:
 
-**Equation 1.** From Invoice #101: $40x + 25y = 185.00$.
-**Equation 2.** From Invoice #102: $15x + 60y = 160.50$.
+$$
+40x + 25y = 185.00
+$$
 
-**Model.**
+**2. Translate: Invoice #102.** That observation becomes:
+
+$$
+15x + 60y = 160.50
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -190,13 +206,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide the second equation by $15$: $x+4y=10.70$, so $x=10.70-4y$.
+**1.** Divide Invoice #102 by 15 to simplify: $x + 4y = 10.70$, so $x = 10.70 - 4y$.
 
-**Step 2.** Substitute into the first invoice: $40(10.70-4y)+25y=185.00$. This becomes $428.00-160y+25y=185.00$, so $-135y=-243.00$ and $y=1.80$.
+**2.** Substitute into Invoice #101: 40(10.70 - 4y) + $25y = 185.00$.
 
-**Step 3.** Find the notebook price: $x=10.70-4(1.80)=3.50$.
+**3.** This expands to 428.00 - $160y + 25y = 185.00$, so $-135y = -243.00$, giving $y = 1.80$.
+
+**4.** Then $x = 10.70 - 4$(1.80) = 3.50.
 
 **Answer.** Notebook = $3.50 | Pen = $1.80`,
   },
@@ -270,16 +288,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 3,
     solution_overview: `**What's going on.** Let $a$ be the adult-ticket price and $c$ the child-ticket price. The matinee and evening had different mixes of adult and child tickets, but both sessions used the same two prices.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let a = adult ticket price, c = child ticket price.
 
-In symbols that becomes:
+**1. Translate: Saturday matinee.** That observation becomes:
 
-**Equation 1.** From Saturday matinee: $90a + 150c = 2130$.
-**Equation 2.** From Saturday evening: $160a + 40c = 2200$.
+$$
+90a + 150c = 2130
+$$
 
-**Model.**
+**2. Translate: Saturday evening.** That observation becomes:
+
+$$
+160a + 40c = 2200
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -288,13 +313,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide the evening equation by $40$: $4a+c=55$, so $c=55-4a$.
+**1.** Divide the evening equation by 40: $4a + c = 55$, so $c = 55 - 4a$.
 
-**Step 2.** Substitute into the matinee equation: $90a+150(55-4a)=2130$. Then $90a+8250-600a=2130$, so $-510a=-6120$ and $a=12$.
+**2.** Substitute into the matinee equation: $90a + 150$(55 - 4a) = 2130.
 
-**Step 3.** Find the child price: $c=55-4(12)=7$.
+**3.** This expands to $90a + 8250 - 600a = 2130$, so $-510a = -6120$, giving $a = 12$.
+
+**4.** Then $c = 55 - 48$ = 7.
 
 **Answer.** Adult ticket = $12.00 | Child ticket = $7.00`,
   },
@@ -366,16 +393,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 4,
     solution_overview: `**What's going on.** Let $x$ be the sandwich price and $y$ the wrap price. Each receipt includes the same $8.00 delivery fee, so the food-only totals must be found before comparing the two lunch orders.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of one sandwich, y = price of one wrap. Before writing any equation, the $8.00 delivery fee must be subtracted from each receipt total, since it is not part of either unknown price.
 
-In symbols that becomes:
+**1. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $6x + 4y = 70.00 - 8.00 = 62.00$. The clean system equation is:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $6x + 4y = 70.00 - 8.00 = 62.00$, so the clean system row is $6x + 4y = 62.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $3x + 9y = 74.00 - 8.00 = 66.00$, so the clean system row is $3x + 9y = 66.00$.
+$$
+6x + 4y = 62.00
+$$
 
-**Model.**
+**2. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $3x + 9y = 74.00 - 8.00 = 66.00$. The clean system equation is:
+
+$$
+3x + 9y = 66.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -384,13 +418,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Remove the delivery fee: $70.00-8.00=62.00$ and $74.00-8.00=66.00$.
+**1.** Multiply the second equation by 2: $6x + 18y = 132$.
 
-**Step 2.** Multiply the second food equation by $2$: $6x+18y=132$. Subtract $6x+4y=62$ to get $14y=70$, so $y=5$.
+**2.** Subtract the first equation: $14y = 70$, so $y = 5$.
 
-**Step 3.** Substitute into $3x+9y=66$: $3x+9(5)=66$, so $3x=21$ and $x=7$.
+**3.** Substitute back: $3x + 9$(5) = 66, so $3x = 21$, and $x = 7$.
 
 **Answer.** Sandwich = $7.00 | Wrap = $5.00
 
@@ -460,16 +494,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 5,
     solution_overview: `**What's going on.** Let $x$ be the amount placed in Account A and $y$ the amount placed in Account B. The accounts together received $10,000, and their different interest rates produced a combined $520 in interest.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = amount placed in Account A, y = amount placed in Account B.
 
-In symbols that becomes:
+**1. Translate: total split.** That observation becomes:
 
-**Equation 1.** From total split: $x + y = 10000$.
-**Equation 2.** From total interest: $0.04x + 0.07y = 520$.
+$$
+x + y = 10000
+$$
 
-**Model.**
+**2. Translate: total interest.** That observation becomes:
+
+$$
+0.04x + 0.07y = 520
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -478,13 +519,15 @@ x + y = 10000 \\\\
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** From the total split, $x=10000-y$.
+**1.** Solve the first equation for x: $x = 10000 - y$.
 
-**Step 2.** Substitute into the interest equation: $0.04(10000-y)+0.07y=520$. This gives $400-0.04y+0.07y=520$, so $0.03y=120$ and $y=4000$.
+**2.** Substitute: 0.04(10000 - y) + $0.07y = 520$.
 
-**Step 3.** Find Account A's balance: $x=10000-4000=6000$.
+**3.** This expands to 400 - $0.$04y + 0.07y$ = 520$, so $0.03y = 120$, and $y = 4000$.
+
+**4.** Then $x = 10000 - 4000$ = 6000.
 
 **Answer.** Account A = $6,000 | Account B = $4,000
 
@@ -556,16 +599,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 6,
     solution_overview: `**What's going on.** Let $x$ be the price of a Standard chair and $y$ the price of a Premium chair. Premium chairs cost $45 more each, while the shipment value combines 18 Standard and 12 Premium chairs.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of a Standard chair, y = price of a Premium chair.
 
-In symbols that becomes:
+**1. Translate: Premium priced $45 above Standard.** That observation becomes:
 
-**Equation 1.** From Premium priced $45 above Standard: $y = x + 45$.
-**Equation 2.** From shipment value: $18x + 12y = 9660$.
+$$
+y = x + 45
+$$
 
-**Model.**
+**2. Translate: shipment value.** That observation becomes:
+
+$$
+18x + 12y = 9660
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -574,13 +624,13 @@ y = x + 45 \\\\
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Replace $y$ in the shipment equation: $18x+12(x+45)=9660$.
+**1.** Substitute directly: $18x + 12$($x + 45$) = 9660.
 
-**Step 2.** Expand: $18x+12x+540=9660$, so $30x=9120$ and $x=304$.
+**2.** This expands to $18x + $12x + 540$ = 9660$, so $30x = 9120$, and $x = 304$.
 
-**Step 3.** Use the price gap: $y=304+45=349$.
+**3.** Then $y = 304 + 45$ = 349.
 
 **Answer.** Standard chair = $304.00 | Premium chair = $349.00`,
   },
@@ -654,16 +704,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 7,
     solution_overview: `**What's going on.** Let $f$ be ByteMobile's fixed monthly fee and $r$ its charge for each extra minute. The two customers paid for different overage amounts, but each bill includes the same fixed fee.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let f = fixed monthly fee, r = rate charged per extra minute. The advertisement never states the fixed fee or the rate directly — both must be recovered from the two example bills it quotes.
 
-In symbols that becomes:
+**1. Read the bill with 40 extra units.** At rate $r$, that bill is:
 
-**Equation 1.** From the quoted bill with 40 extra units at rate $r$: $f + 40r = 29.00$.
-**Equation 2.** From the quoted bill with 120 extra units at rate $r$: $f + 120r = 53.00$.
+$$
+f + 40r = 29.00
+$$
 
-**Model.**
+**2. Read the bill with 120 extra units.** At rate $r$, that bill is:
+
+$$
+f + 120r = 53.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -672,11 +729,11 @@ f + 120r = 53.00
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first bill from the second: $80r=24.00$, so $r=0.30$.
+**1.** Subtract the first equation from the second: $80r = 24.00$, so $r = 0.30$.
 
-**Step 2.** Substitute into the first bill: $f+40(0.30)=29.00$. Thus $f+12.00=29.00$, so $f=17.00$.
+**2.** Substitute back: $f + 12.00 = 29.00$, so $f = 17.00$.
 
 **Answer.** Fixed fee = $17.00 | Extra-minute rate = $0.30/min
 
@@ -752,16 +809,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 8,
     solution_overview: `**What's going on.** Let $s$ be the number of Standard ovens and $d$ the number of Deluxe ovens built this week. Their total count is 130, and their different assembly-hour requirements add to 795 hours.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let s = number of Standard ovens built, d = number of Deluxe ovens built. The material-cost column is not needed to find s and d — it becomes relevant only for statement E below.
 
-In symbols that becomes:
+**1. Translate: total ovens built.** That observation becomes:
 
-**Equation 1.** From total ovens built: $s + d = 130$.
-**Equation 2.** From total assembly hours: $4s + 9d = 795$.
+$$
+s + d = 130
+$$
 
-**Model.**
+**2. Translate: total assembly hours.** That observation becomes:
+
+$$
+4s + 9d = 795
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -770,13 +834,15 @@ s + d = 130 \\\\
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** From the oven-count equation, $s=130-d$.
+**1.** From the total-ovens equation, $s = 130 - d$.
 
-**Step 2.** Substitute into the hours equation: $4(130-d)+9d=795$. This becomes $520-4d+9d=795$, so $5d=275$ and $d=55$.
+**2.** Substitute into the hours equation: 4(130 - d) + $9d = 795$.
 
-**Step 3.** Find the Standard count: $s=130-55=75$.
+**3.** This expands to 520 - $4d + 9d = 795$, giving $5d = 275$, so $d = 55$.
+
+**4.** Then $s = 130 - 55$ = 75.
 
 **Answer.** Standard ovens = 75 | Deluxe ovens = 55
 
@@ -850,16 +916,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 9,
     solution_overview: `**What's going on.** Let $x$ be the sofa price and $y$ the armchair price. Each branch's gross sales must first be reduced by returns, leaving the net sales generated by its furniture mix.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of one sofa, y = price of one armchair. The gross figures cannot be used directly — each branch's returns must be subtracted first to isolate the value of items actually sold at listed prices.
 
-In symbols that becomes:
+**1. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $14x + 22y = 9760 - 460 = 9300$. The clean system equation is:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $14x + 22y = 9760 - 460 = 9300$, so the clean system row is $14x + 22y = 9300$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $20x + 10y = 9300 - 300 = 9000$, so the clean system row is $20x + 10y = 9000$.
+$$
+14x + 22y = 9300
+$$
 
-**Model.**
+**2. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $20x + 10y = 9300 - 300 = 9000$. The clean system equation is:
+
+$$
+20x + 10y = 9000
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -868,15 +941,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Compute net sales: $9760-460=9300$ for Riverside and $9300-300=9000$ for Hillcrest.
+**1.** Divide the Hillcrest equation by 10: $2x + y = 900$, so $y = 900 - 2x$.
 
-**Step 2.** Divide the Hillcrest equation by $10$: $2x+y=900$, so $y=900-2x$.
+**2.** Substitute into Riverside's equation: $14x + 22$(900 - 2x) = 9300.
 
-**Step 3.** Substitute into Riverside's equation: $14x+22(900-2x)=9300$. Then $14x+19800-44x=9300$, so $-30x=-10500$ and $x=350$.
+**3.** This expands to $14x + 19800 - 44x = 9300$, so $-30x = -10500$, giving $x = 350$.
 
-**Step 4.** Find the armchair price: $y=900-2(350)=200$.
+**4.** Then $y = 900 - 700$ = 200.
 
 **Answer.** Sofa = $350.00 | Armchair = $200.00
 
@@ -954,16 +1027,23 @@ This claim concerns whether the two bills determine the pricing rule uniquely. T
     sort_order: 10,
     solution_overview: `**What's going on.** Let $f$ be PrintFast's setup fee and $r$ its per-page rate. The two orders have different page counts, so the bill difference isolates the charge for 180 additional pages.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let f = PrintFast's setup fee, r = PrintFast's rate per page.
 
-In symbols that becomes:
+**1. Translate: Order #58.** That observation becomes:
 
-**Equation 1.** From Order #58: $f + 120r = 33.00$.
-**Equation 2.** From Order #96: $f + 300r = 69.00$.
+$$
+f + 120r = 33.00
+$$
 
-**Model.**
+**2. Translate: Order #96.** That observation becomes:
+
+$$
+f + 300r = 69.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -972,13 +1052,15 @@ f + 300r = 69.00
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first order from the second: $180r=36.00$, so $r=0.20$.
+**1.** Subtract Order #58's equation from Order #96's: $180r = 36.00$, so $r = 0.20$.
 
-**Step 2.** Substitute into the first order: $f+120(0.20)=33.00$. Thus $f+24.00=33.00$, so $f=9.00$.
+**2.** Substitute back: $f + 24.00 = 33.00$, so $f = 9.00$.
 
-**Step 3.** For 250 pages, $9.00+250(0.20)=59.00$. For 350 pages, $9.00+350(0.20)=79.00$.
+**3.** For a 250- page order: 9.00 + 250(0.20) = $59.00.
+
+**4.** For a 350-page order: 9.00 + 350(0.20) = $79.00.
 
 **Answer.** PrintFast setup fee = $9.00 | Rate = $0.20/page
 
@@ -1054,16 +1136,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 11,
     solution_overview: `**What's going on.** Let $x$ be the taco price and $y$ the burrito price. Ana's receipt gives one total, while Ben paid $5 more than Ana for a different taco-and-burrito order.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Nothing here states the taco or burrito price directly. What is known is Ana's order and total, plus a comparison between Ben's total and Ana's — that comparison must first be turned into an actual dollar figure for Ben's order before a system of two equations can be written.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $4x + 3y = 32.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $2x + 5y = 32.00 + 5.00 = 37.00$, so the clean system row is $2x + 5y = 37.00$.
+$$
+4x + 3y = 32.00
+$$
 
-**Model.**
+**2. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $2x + 5y = 32.00 + 5.00 = 37.00$. The clean system equation is:
+
+$$
+2x + 5y = 37.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -1072,13 +1161,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Ben's total is $32.00+5.00=37.00$.
+**1.** Multiply the second equation by 2: $4x + 10y = 74.00$.
 
-**Step 2.** Multiply Ben's equation by $2$: $4x+10y=74.00$. Subtract Ana's equation to get $7y=42.00$, so $y=6.00$.
+**2.** Subtract the first ($4x + 3y = 32.00$): $7y = 42.00$, so $y = 6.00$.
 
-**Step 3.** Substitute into Ana's receipt: $4x+3(6.00)=32.00$. Then $4x=14.00$, so $x=3.50$.
+**3.** Substituting back: $4x + 18.00 = 32.00$ → $x = 3.50$.
 
 **Answer.** Taco = $3.50 | Burrito = $6.00`,
   },
@@ -1161,16 +1250,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 12,
     solution_overview: `**What's going on.** Let $x$ be the paperback price and $y$ the hardcover price. The sales report gives revenue from 400 paperbacks and 220 hardcovers, while the pricing memo says each hardcover costs $5 more than a paperback.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = paperback price, y = hardcover price. Staff headcount and the loyalty-member percentage do not affect unit pricing and should be set aside.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $y = x + 5$.
-**Equation 2.** From this independent observation: $400x + 220y = 8540$.
+$$
+y = x + 5
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+400x + 220y = 8540
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -1179,13 +1275,13 @@ y = x + 5 \\\\
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Substitute the memo rule into the revenue equation: $400x+220(x+5)=8540$.
+**1.** Substitute directly: $400x + 220$($x + 5$) = 8540.
 
-**Step 2.** Expand: $620x+1100=8540$, so $620x=7440$ and $x=12$.
+**2.** Expanding: $620x + 1100 = 8540$ → $620x = 7440$ → $x = 12$.
 
-**Step 3.** Use the $5 gap: $y=12+5=17$.
+**3.** Then $y = 12 + 5$ = 17.
 
 **Answer.** Paperback = $12.00 | Hardcover = $17.00
 
@@ -1269,16 +1365,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 13,
     solution_overview: `**What's going on.** Let $x$ be the Standard plan's base fee and $y$ its overage rate per GB. The billing history gives two Standard-plan bills with different overage usage, while the flyer supplies Basic and Premium prices for comparison.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Standard plan's base fee, y = its per-GB overage rate. The Basic and Premium prices belong to different plans and should not be substituted into this customer's equations.
 
-In symbols that becomes:
+**1. Read the bill with 8 extra units.** At rate $y$, that bill is:
 
-**Equation 1.** From the quoted bill with 8 extra units at rate $y$: $x + 8y = 62.00$.
-**Equation 2.** From the quoted bill with 3 extra units at rate $y$: $x + 3y = 47.00$.
+$$
+x + 8y = 62.00
+$$
 
-**Model.**
+**2. Read the bill with 3 extra units.** At rate $y$, that bill is:
+
+$$
+x + 3y = 47.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -1287,11 +1390,11 @@ x + 3y = 47.00
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the second bill from the first: $5y=15$, so $y=3$.
+**1.** Subtract directly: $5y = 15$, so $y = 3$.
 
-**Step 2.** Substitute into $x+3y=47$: $x+9=47$, so $x=38$.
+**2.** Substitute back: $x + 9 = 47$, so $x = 38$.
 
 **Answer.** Standard base fee = $38.00 | Overage rate = $3.00/GB
 
@@ -1377,33 +1480,38 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 14,
     solution_overview: `**What's going on.** Let $x$ be the pre-tax nightly rate for a Standard room and $y$ the pre-tax nightly rate for a Suite. The two booking confirmations include 8% occupancy tax, so each printed total must be divided by $1.08$ before it can describe room revenue.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = nightly Standard rate, y = nightly Suite rate, both before tax. Each total must first be converted back to a pre-tax figure before it can be used in the model.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $10x + 4y = 2419.20 ÷ 1.08 = 2240.00$, so the clean system row is $10x + 4y = 2240.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $7x + 9y = 3099.60 ÷ 1.08 = 2870.00$, so the clean system row is $7x + 9y = 2870.00$.
+$$
+10x + 4y = 2419.20 ÷ 1.08 = 2240.00
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+7x + 9y = 3099.60 ÷ 1.08 = 2870.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
-10x + 4y = 2240.00 \\\\
-7x + 9y = 2870.00
+10x + 4y = 2419.20 ÷ 1.08 = 2240.00 \\\\
+7x + 9y = 3099.60 ÷ 1.08 = 2870.00
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Remove tax: $2419.20\\div1.08=2240.00$ and $3099.60\\div1.08=2870.00$.
+**1.** From the first equation, $5x + 2y = 1120$, so y = (1120 - 5x)/2.
 
-**Step 2.** Divide the first equation by $2$: $5x+2y=1120$, so $y=(1120-5x)/2$.
+**2.** Substituting into the second: $14x + 9$(1120 - 5x) = 5740 → $-31x = -4340$ → $x = 140$.
 
-**Step 3.** Substitute into the second equation. Doubling first gives $14x+9(1120-5x)=5740$, so $14x+10080-45x=5740$. Thus $-31x=-4340$ and $x=140$.
-
-**Step 4.** Find the Suite rate: $y=(1120-5(140))/2=210$.
+**3.** Then $y = 210$.
 
 **Answer.** Standard = $140.00/night (pre-tax) | Suite = $210.00/night (pre-tax)
 
@@ -1480,16 +1588,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 15,
     solution_overview: `**What's going on.** Let $x$ be Component A's actual unit cost and $y$ Component B's actual unit cost. January and February provide actual quantity-and-value records; March is only a forecast and is used later to judge claims about the projected prices.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for today's unit costs.
 
-In symbols that becomes:
+**1. Use the January row (actual data).** Write the equation:
 
-**Equation 1.** From the January row (actual data): $150x + 90y = 3150$.
-**Equation 2.** From the February row (actual data): $130x + 140y = 3660$.
+$$
+150x + 90y = 3150
+$$
 
-**Model.**
+**2. Use the February row (actual data).** Write the equation:
+
+$$
+130x + 140y = 3660
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -1498,15 +1613,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Simplify the equations: $5x+3y=105$ and $13x+14y=366$.
+**1.** Divide by 30 and 10 respectively: $5x + 3y = 105$; $13x + 14y = 366$.
 
-**Step 2.** Multiply them to align $y$: $70x+42y=1470$ and $39x+42y=1098$.
+**2.** Multiply by 14 and 3: $70x + 42y = 1470$; $39x + 42y = 1098$.
 
-**Step 3.** Subtract: $31x=372$, so $x=12$.
+**3.** Subtracting: $31x = 372$, so $x = 12$.
 
-**Step 4.** Substitute into $5x+3y=105$: $5(12)+3y=105$, so $3y=45$ and $y=15$.
+**4.** Then $3y = 45$, $y = 15$.
 
 **Answer.** Component A = $12.00/unit | Component B = $15.00/unit
 
@@ -1586,16 +1701,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 16,
     solution_overview: `**What's going on.** The two payroll totals combine 40 regular hours with different numbers of overtime hours. Solving them reveals the rates that were actually paid, then those rates can be compared with the contract.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = regular hourly wage, y = overtime rate actually paid. Only once both rates are known can they be compared against the contract's 1.5× rule.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $40x + 6y = 704$.
-**Equation 2.** From this independent observation: $40x + 2y = 608$.
+$$
+40x + 6y = 704
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+40x + 2y = 608
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -1604,13 +1726,11 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the second equation from the first: $4y=96$, so $y=24$.
+**1.** Subtracting cancels the 40x term: $4y = 96$, so $y = 24$.
 
-**Step 2.** Substitute $y=24$ into $40x+2y=608$: $40x+48=608$, so $x=14$.
-
-**Step 3.** The contract rate would be $1.5(14)=21$, while the actual overtime rate is $24$.
+**2.** Substituting back: $40x + 48 = 608$, so $x = 14$.
 
 **Answer.** Regular wage = $14.00/hr | Overtime actually paid = $24.00/hr (contract requires $21.00/hr)`,
   },
@@ -1684,31 +1804,36 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 17,
     solution_overview: `**What's going on.** May's printed amount includes a 10% late penalty, so it must first be converted back to its unpenalized bill. The two clean charge equations then determine the fixed fee and per-cubic-metre rate.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Since the 10% penalty was applied to May's whole bill rather than as a flat add-on, May's reported total must first be divided back down. The fixed charge and rate must be derived independently from the two bills, since the phone claim may not be accurate.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $x + 18y = 56.10 ÷ 1.10 = 51.00$, so the clean system row is $x + 18y = 51.00$.
-**Equation 2.** From the quoted bill with 25 extra units at rate $y$: $x + 25y = 65.00$.
+$$
+x + 18y = 56.10 ÷ 1.10 = 51.00
+$$
 
-**Model.**
+**2. Read the bill with 25 extra units.** At rate $y$, that bill is:
+
+$$
+x + 25y = 65.00
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
-x + 18y = 51.00 \\\\
+x + 18y = 56.10 ÷ 1.10 = 51.00 \\\\
 x + 25y = 65.00
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Remove May's penalty: $56.10\\div1.10=51.00$.
+**1.** Subtracting cancels x: $7y = 14.00$, so $y = 2.00$.
 
-**Step 2.** Subtract the first equation from the second: $7y=14$, so $y=2$.
-
-**Step 3.** Substitute into $x+18y=51$: $x+36=51$, so $x=15$.
+**2.** Substituting back: $x + 36 = 51$, so $x = 15.00$.
 
 **Answer.** Fixed charge = $15.00 | Rate = $2.00/m³ (billing office's claim does not match)
 
@@ -1780,31 +1905,36 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 18,
     solution_overview: `**What's going on.** Each company has a base fare plus a per-kilometre charge, but the two companies must be solved separately. Their resulting formulas can then be compared at any distance.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Each company must be modelled separately. Each "costs $X more than" comparison must first be converted into an absolute fare. Let x1, y1 be CityCab's base fare and rate, and x2, y2 be MetroX's.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $CityCab: x1 + 8y1 = 14.00, x1 + 20y1 = 26.00$, so the clean system row is $CityCab: x1 + 8y1 = 26.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $MetroX: x2 + 5y2 = 13.50, x2 + 15y2 = 28.50$, so the clean system row is $MetroX: x2 + 5y2 = 28.50$.
+$$
+CityCab: x1 + 8y1 = 14.00, x1 + 20y1 = 26.00
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+MetroX: x2 + 5y2 = 13.50, x2 + 15y2 = 28.50
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
-CityCab: x1 + 8y1 = 26.00 \\\\
-MetroX: x2 + 5y2 = 28.50
+CityCab: x1 + 8y1 = 14.00, x1 + 20y1 = 26.00 \\\\
+MetroX: x2 + 5y2 = 13.50, x2 + 15y2 = 28.50
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** For CityCab, subtract to get $12y_1=12$, hence $y_1=1$ and $x_1=6$.
+**1.** For CityCab, subtracting cancels x1: 12y1 = 12, so y1 = 1, x1 = 6.
 
-**Step 2.** For MetroX, subtract to get $10y_2=15$, hence $y_2=1.5$ and $x_2=6$.
-
-**Step 3.** The formulas are $6+d$ and $6+1.5d$.
+**2.** For MetroX: 10y2 = 15, so y2 = 1.5, x2 = 6.
 
 **Answer.** CityCab — base $6.00, rate $1.00/km | MetroX — base $6.00, rate $1.50/km
 
@@ -1888,31 +2018,36 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 19,
     solution_overview: `**What's going on.** The same two products have different unit prices at two vendors, so each vendor requires its own system. Once both price lists are known, the proposed order can be priced under each one.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Each vendor's unit prices are independent and must be solved separately. Let xA, yA denote Vendor A's prices, and xB, yB denote Vendor B's.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $Vendor A: 20xA + 15yA = 450, 25xA + 12yA = 441$, so the clean system row is $Vendor A: 20xA + 15yA = 441$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $Vendor B: 20xB + 15yB = 460, 25xB + 12yB = 467$, so the clean system row is $Vendor B: 20xB + 15yB = 467$.
+$$
+Vendor A: 20xA + 15yA = 450, 25xA + 12yA = 441
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+Vendor B: 20xB + 15yB = 460, 25xB + 12yB = 467
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
-Vendor A: 20xA + 15yA = 441 \\\\
-Vendor B: 20xB + 15yB = 467
+Vendor A: 20xA + 15yA = 450, 25xA + 12yA = 441 \\\\
+Vendor B: 20xB + 15yB = 460, 25xB + 12yB = 467
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Solve Vendor A's equations to get $x_A=9$ and $y_A=18$.
+**1.** Vendor A: dividing the first by 5 gives 4xA + 3yA = 90; solving with the second gives xA = 9, yA = 18.
 
-**Step 2.** Solve Vendor B's equations to get $x_B=11$ and $y_B=16$.
-
-**Step 3.** For $40$ X and $30$ Y, the totals are $40(9)+30(18)=900$ and $40(11)+30(16)=920$.
+**2.** Vendor B: the same approach gives xB = 11, yB = 16.
 
 **Answer.** Vendor A — X = $9, Y = $18 | Vendor B — X = $11, Y = $16
 
@@ -1986,29 +2121,36 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 20,
     solution_overview: `**What's going on.** The total revenue and the $1,000 difference first determine each company's Q1 revenue. Those revenues then form two equations for the common prices of Product P and Service Q.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Individual Q1 revenue figures are not stated directly — only their combined total and the gap between them. Those must first be turned into Alpha's and Beta's separate revenue figures (a small sum-and-difference step) before the unit-sales data can be used.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $Stage 1: A + B = 27200, B - A = 1000$, so the clean system row is $Stage 1: A + B = 1000$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $Stage 2: 150x + 80y = 13100, 100x + 130y = 14100$, so the clean system row is $Stage 2: 150x + 80y = 14100$.
+$$
+Stage 1: A + B = 27200, B - A = 1000
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+Stage 2: 150x + 80y = 13100, 100x + 130y = 14100
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
-Stage 1: A + B = 1000 \\\\
-Stage 2: 150x + 80y = 14100
+Stage 1: A + B = 27200, B - A = 1000 \\\\
+Stage 2: 150x + 80y = 13100, 100x + 130y = 14100
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Add the first two equations: $2B=28200$, so $B=14100$ and $A=13100$.
+**1.** Adding the Stage 1 equations: $2B = 28200$, so $B = 14100$, $A = 13100$.
 
-**Step 2.** Eliminate from $150x+80y=13100$ and $100x+130y=14100$ to get $x=50$ and $y=70$.
+**2.** For Stage 2, dividing by 10 and eliminating gives $x = 50$, $y = 70$.
 
 **Answer.** Product P = $50.00 | Service Q = $70.00
 
@@ -2088,16 +2230,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 21,
     solution_overview: `**What's going on.** Both members paid the same signup fee plus the same monthly rate, but for different month counts. Their payment histories reveal the actual charges, which can be tested against the flyer.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = the signup fee actually charged, y = the actual monthly rate. The flyer's advertised figures ($30 and $45) are a claim to be checked, not values to plug directly into the model.
 
-In symbols that becomes:
+**1. Translate: Maria.** That observation becomes:
 
-**Equation 1.** From Maria: $x + 6y = 284$.
-**Equation 2.** From Jason: $x + 10y = 448$.
+$$
+x + 6y = 284
+$$
 
-**Model.**
+**2. Translate: Jason.** That observation becomes:
+
+$$
+x + 10y = 448
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2106,11 +2255,11 @@ x + 10y = 448
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first equation from the second: $4y=164$, so $y=41$.
+**1.** Subtracting directly: $4y = 164$, so $y = 41$.
 
-**Step 2.** Substitute into Maria's equation: $x+6(41)=284$, so $x=38$.
+**2.** Substituting back: $x + 246 = 284$, so $x = 38$.
 
 **Answer.** Signup fee = $38.00 | Monthly rate = $41.00/month (flyer's figures do not match)
 
@@ -2192,16 +2341,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 22,
     solution_overview: `**What's going on.** The household totals are combinations of Basic and Premium plan-months with no connection fee. Solving the two equations gives each plan's monthly price.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Basic monthly price, y = Premium monthly price.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $4x + 3y = 169$.
-**Equation 2.** From this independent observation: $2x + 7y = 255$.
+$$
+4x + 3y = 169
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+2x + 7y = 255
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2210,13 +2366,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the first equation by $7$ and the second by $3$ to make $21y$ in both equations.
+**1.** Multiply the first by 7 and the second by 3: $28x + 21y = 1183$; $6x + 21y = 765$.
 
-**Step 2.** Subtract: $22x=418$, so $x=19$.
+**2.** Subtracting: $22x = 418$, so $x = 19$.
 
-**Step 3.** Substitute into $4x+3y=169$: $76+3y=169$, so $y=31$.
+**3.** Substituting back: 76 + $3y = 169$, so $y = 31$.
 
 **Answer.** Basic = $19.00/month | Premium = $31.00/month`,
   },
@@ -2302,16 +2458,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 23,
     solution_overview: `**What's going on.** Known bread and egg charges are removed from the receipts, leaving equations only for apples and almond milk. The loyalty note is irrelevant because neither receipt received that discount.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = current price per lb of organic apples, y = current price per carton of almond milk. Bread and egg prices are already known, and the loyalty-discount note is a distractor that does not apply here.
 
-In symbols that becomes:
+**1. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $5x + 3y = 50.00 - 3.60 - 4.40 = 42.00$. The clean system equation is:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $5x + 3y = 50.00 - 3.60 - 4.40 = 42.00$, so the clean system row is $5x + 3y = 42.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $2x + 5y = 43.20 - 3.60 = 39.60$, so the clean system row is $2x + 5y = 39.60$.
+$$
+5x + 3y = 42.00
+$$
 
-**Model.**
+**2. Peel the fixed fee/tax, then write the food×price row.** Start from the printed total: $2x + 5y = 43.20 - 3.60 = 39.60$. The clean system equation is:
+
+$$
+2x + 5y = 39.60
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2320,13 +2483,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the equations by $5$ and $3$, respectively, so each has $15y$.
+**1.** Multiply the first by 5 and the second by 3: $25x + 15y = 210$; $6x + 15y = 118.80$.
 
-**Step 2.** Subtract: $19x=91.20$, so $x=4.80$.
+**2.** Subtracting: $19x = 91.20$, so $x = 4.80$.
 
-**Step 3.** Substitute into $5x+3y=42$: $24+3y=42$, so $y=6$.
+**3.** Substituting back: 24.00 + $3y = 42.00$, so $y = 6.00$.
 
 **Answer.** Organic apples = $4.80/lb | Almond milk = $6.00/carton
 
@@ -2408,16 +2571,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 24,
     solution_overview: `**What's going on.** Standard bills contain one fixed connection fee plus a per-unit usage charge. After solving that formula, it can be compared with Solar's no-fee $0.29$ per-unit plan.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = fixed connection fee, y = rate per unit under the standard plan. Treat the $0.24/unit figure as a claim to verify.
 
-In symbols that becomes:
+**1. Read the bill with 240 extra units.** At rate $y$, that bill is:
 
-**Equation 1.** From the quoted bill with 240 extra units at rate $y$: $x + 240y = 83.40$.
-**Equation 2.** From the quoted bill with 380 extra units at rate $y$: $x + 380y = 112.80$.
+$$
+x + 240y = 83.40
+$$
 
-**Model.**
+**2. Read the bill with 380 extra units.** At rate $y$, that bill is:
+
+$$
+x + 380y = 112.80
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2426,13 +2596,13 @@ x + 380y = 112.80
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract: $140y=29.40$, so $y=0.21$.
+**1.** Subtracting directly: $140y = 29.40$, so $y = 0.21$.
 
-**Step 2.** Substitute into the first bill: $x+240(0.21)=83.40$, so $x=33$.
+**2.** Substituting back: $x + 50.40 = 83.40$, so $x = 33.00$.
 
-**Step 3.** Set $33+0.21u=0.29u$ to get the crossover $u=412.5$.
+**3.** To find the crossover with Solar: 33 + $0.21u = 0$.29u → $u = 412.5$ units.
 
 **Answer.** Fixed fee = $33.00 | Rate = $0.21/unit (customer service's figure does not match)
 
@@ -2510,31 +2680,42 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 25,
     solution_overview: `**What's going on.** Table 8's printed total includes a 10% service charge, so its food subtotal must be recovered before the two menu-price equations are formed. Table 5 already gives an off-peak subtotal.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of one pasta dish, y = price of one appetizer. Table 8's total must first be reconstructed as Table 5's total plus $46.00, and only then can the 10% service charge be stripped back out.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $6x + 4y = 174.00$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $5x + 7y = (174.00 + 46.00) ÷ 1.10 = 200.00$, so the clean system row is $5x + 7y = 200.00$.
+$$
+6x + 4y = 174.00
+$$
 
-**Model.**
+**2. Translate: 174.00 + 46.00) ÷ 1.10 = 200.00.** That observation becomes:
+
+$$
+5x + 7y =
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
 6x + 4y = 174.00 \\\\
-5x + 7y = 200.00
+5x + 7y =
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide the first equation by $2$ to get $3x+2y=87$.
+**1.** Divide Table 5's equation by 2: $3x + 2y = 87$.
 
-**Step 2.** Multiply this by $7$ and the second equation by $2$; subtracting gives $11x=209$, so $x=19$.
+**2.** Multiply by 7: $21x + 14y = 609$.
 
-**Step 3.** Substitute: $3(19)+2y=87$, so $y=15$.
+**3.** Multiply Table 8's equation by 2: $10x + 14y = 400$.
+
+**4.** Subtracting: $11x = 209$, so $x = 19$.
+
+**5.** Substituting back: 3(19) + $2y = 87$, so $y = 15$.
 
 **Answer.** Pasta dish = $19.00 | Appetizer = $15.00
 
@@ -2610,16 +2791,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 26,
     solution_overview: `**What's going on.** Shipment cost depends on quantities of Items M and N and their unit prices. The logged weight and volume are not part of the pricing equations.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = cost per unit of Item M, y = cost per unit of Item N. Weight and volume are logged for freight billing and play no role in the item pricing itself.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $110x + 80y = 4470$.
-**Equation 2.** From this independent observation: $70x + 150y = 5520$.
+$$
+110x + 80y = 4470
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+70x + 150y = 5520
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2628,13 +2816,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide by $10$: $11x+8y=447$ and $7x+15y=552$.
+**1.** Divide by 10: $11x + 8y = 447$; $7x + 15y = 552$.
 
-**Step 2.** Multiply by $15$ and $8$ to eliminate $y$: $109x=2289$, so $x=21$.
+**2.** Multiply by 15 and 8: $165x + 120y = 6705$; $56x + 120y = 4416$.
 
-**Step 3.** Substitute: $11(21)+8y=447$, so $y=27$.
+**3.** Subtracting: $109x = 2289$, so $x = 21$.
+
+**4.** Substituting back: 231 + $8y = 447$, so $y = 27$.
 
 **Answer.** Item M = $21.00/unit | Item N = $27.00/unit
 
@@ -2706,16 +2896,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 27,
     solution_overview: `**What's going on.** Job 1's seven bundles must be expanded into individual Standard and Premium units before it can be compared with Job 2. The solved rates can then test the new quotation.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per Standard unit, y = price per Premium unit. Job 1's bundles must first be converted into individual Standard and Premium units before the system can be written.
 
-In symbols that becomes:
+**1. Translate: Job 1, bundles expanded: 7×2, 7×5.** That observation becomes:
 
-**Equation 1.** From Job 1, bundles expanded: 7×2, 7×5: $14x + 35y = 1946$.
-**Equation 2.** From Job 2, as invoiced: $13x + 21y = 1301$.
+$$
+14x + 35y = 1946
+$$
 
-**Model.**
+**2. Translate: Job 2, as invoiced.** That observation becomes:
+
+$$
+13x + 21y = 1301
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2724,13 +2921,17 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Expand Job 1: $7(2)=14$ Standard and $7(5)=35$ Premium units.
+**1.** Divide Job 1's equation by 7: $2x + 5y = 278$.
 
-**Step 2.** Divide the first equation by $7$ and eliminate to get $x=29$.
+**2.** Multiply by 21 and Job 2's by 5: $42x + 105y = 5838$; $65x + 105y = 6505$.
 
-**Step 3.** From $2(29)+5y=278$, get $y=44$. The quotation is $8(29)+19(44)=1068$.
+**3.** Subtracting: $23x = 667$, so $x = 29$.
+
+**4.** Substituting back: 58 + $5y = 278$, so $y = 44$.
+
+**5.** Check the new quotation: 8(29) + 19(44) = $1,068, matching exactly.
 
 **Answer.** Standard = $29.00/unit | Premium = $44.00/unit`,
   },
@@ -2809,16 +3010,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 28,
     solution_overview: `**What's going on.** Reports 1 and 2 each combine meal-day per diem with mileage reimbursement. Report 3 is impossible because its listed total is below the meal-day amount alone, so it must be excluded.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = per-diem rate, y = per-mile rate. Identify which report cannot possibly be correct before building the model, and treat Finance's $0.40/mile belief as a claim to be checked.
 
-In symbols that becomes:
+**1. Translate: Report 1.** That observation becomes:
 
-**Equation 1.** From Report 1: $5x + 150y = 323$.
-**Equation 2.** From Report 2: $3x + 250y = 245$.
+$$
+5x + 150y = 323
+$$
 
-**Model.**
+**2. Translate: Report 2.** That observation becomes:
+
+$$
+3x + 250y = 245
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2827,13 +3035,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the equations by $3$ and $5$ to make $15x$.
+**1.** Report 3 must be checked before use: 7 meal days alone at any reasonable per-diem rate close to the other two reports' implied range already exceeds $120 — it is set aside as an entry error.
 
-**Step 2.** Subtract: $800y=256$, so $y=0.32$.
+**2.** Multiply the remaining two equations by 3 and 5: $15x + 450y = 969$; $15x + 1250y = 1225$.
 
-**Step 3.** Substitute into Report 1: $5x+48=323$, so $x=55$.
+**3.** Subtracting: $800y = 256$, so $y = 0.32$.
+
+**4.** Substituting back: $5x + 48 = 323$, so $x = 55$.
 
 **Answer.** Per diem = $55.00/day | Mileage rate = $0.32/mile (Finance's belief does not match)
 
@@ -2910,16 +3120,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 29,
     solution_overview: `**What's going on.** Week 2's smudged counts can be recovered from its total of 58 units and its 8-unit difference. Those recovered counts and Week 1 then determine the labor-hours required by each widget.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = labor-hours per Widget A, y = labor-hours per Widget B. Week 2's unit counts must first be recovered from the sticky note (a small sum-and-difference step) before the main system can be written.
 
-In symbols that becomes:
+**1. Translate: Week 1.** That observation becomes:
 
-**Equation 1.** From Week 1: $35x + 20y = 445$.
-**Equation 2.** From Week 2, recovered counts: $25x + 33y = 505$.
+$$
+35x + 20y = 445
+$$
 
-**Model.**
+**2. Translate: Week 2, recovered counts.** That observation becomes:
+
+$$
+25x + 33y = 505
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -2928,13 +3145,17 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** With $B=A+8$ and $A+B=58$, $2A+8=58$, so $A=25$ and $B=33$.
+**1.** Recover Week 2 first: B = $A + 8$, $A + B = 58$, so $2A + 8 = 58$, $A = 25$, $B = 33$.
 
-**Step 2.** Eliminate from the two week equations to get $x=7$, then $y=10$.
+**2.** Multiply Week 1 by 33 and Week 2 by 20: $1155x + 660y = 14685$; $500x + 660y = 10100$.
 
-**Step 3.** Week 3 satisfies $7A+10(15)=290$, so $A=20$.
+**3.** Subtracting: $655x = 4585$, so $x = 7$.
+
+**4.** Substituting back: 245 + $20y = 445$, so $y = 10$.
+
+**5.** Reconstruct Week 3: $7A + 10$(15) = 290, so $A = 20$.
 
 **Answer.** Widget A = 7 hrs/unit | Widget B = 10 hrs/unit
 
@@ -3011,16 +3232,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 30,
     solution_overview: `**What's going on.** North and South are the two reports that reconcile to common company-wide prices. Once those prices are found, East can be tested to locate and correct its data-entry error.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price of Product X, y = price of Product Y.
 
-In symbols that becomes:
+**1. Translate: North.** That observation becomes:
 
-**Equation 1.** From North: $85x + 70y = 4145$.
-**Equation 2.** From South: $55x + 95y = 3875$.
+$$
+85x + 70y = 4145
+$$
 
-**Model.**
+**2. Translate: South.** That observation becomes:
+
+$$
+55x + 95y = 3875
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3029,13 +3257,19 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide both equations by $5$: $17x+14y=829$ and $11x+19y=775$.
+**1.** North and South are used to derive the prices, since they reconcile with each other.
 
-**Step 2.** Eliminate $y$ to get $169x=4901$, so $x=29$.
+**2.** Divide by 5: $17x + 14y = 829$; $11x + 19y = 775$.
 
-**Step 3.** Substitute: $493+14y=829$, so $y=24$. East should be $65(29)+50(24)=3085$.
+**3.** Multiply by 19 and 14: $323x + 266y = 15751$; $154x + 266y = 10850$.
+
+**4.** Subtracting: $169x = 4901$, so $x = 29$.
+
+**5.** Substituting back: 493 + $14y = 829$, so $y = 24$.
+
+**6.** Testing East: 65(29) + 50(24) = $3,085, which does not match East's reported $3,200 — a $115 discrepancy, revealing East as the erroneous branch.
 
 **Answer.** Product X = $29.00/unit | Product Y = $24.00/unit`,
   },
@@ -3111,16 +3345,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 31,
     solution_overview: `**What's going on.** Let x be the Type A case price and y be the Type B case price. The two invoices give two equations for those fixed prices.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per case of Type A, y = price per case of Type B.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $9x + 13y = 527.45$.
-**Equation 2.** From this independent observation: $7x + 19y = 657.35$.
+$$
+9x + 13y = 527.45
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+7x + 19y = 657.35
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3129,11 +3370,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the first equation by 19 and the second by 13: 171x + 247y = 10021.55 and 91x + 247y = 8545.55.
+**1.** Multiply by 19 and 13: $171x + 247y = 10021.55$; $91x + 247y = 8545.55$.
 
-**Step 2.** Subtract to get 80x = 1476.00, so x = 18.45; then 9(18.45) + 13y = 527.45 gives y = 27.80.
+**2.** Subtracting: $80x = 1476.00$, so $x = 18.45$.
+
+**3.** Substituting back: 166.05 + $13y = 527.45$, so $y = 27.80$.
 
 **Answer.** Type A costs $18.45 per case and Type B costs $27.80 per case.`,
   },
@@ -3205,16 +3448,23 @@ Set the two prices equal: $145.50 + 1.85d = 1.35d. This gives 0.50d = −145.50,
     sort_order: 32,
     solution_overview: `**What's going on.** Let x be Swift Cargo's dispatch fee and y be its mileage rate. The two quoted Swift bills determine both values; the competitor is then a separate comparison.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Swift Cargo's fixed dispatch fee, y = Swift Cargo's rate per mile.
 
-In symbols that becomes:
+**1. Read the bill with 170 extra units.** At rate $y$, that bill is:
 
-**Equation 1.** From the quoted bill with 170 extra units at rate $y$: $x + 170y = 460.00$.
-**Equation 2.** From the quoted bill with 305 extra units at rate $y$: $x + 305y = 709.75$.
+$$
+x + 170y = 460.00
+$$
 
-**Model.**
+**2. Read the bill with 305 extra units.** At rate $y$, that bill is:
+
+$$
+x + 305y = 709.75
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3223,11 +3473,11 @@ x + 305y = 709.75
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first bill from the second: 135y = 249.75, so y = 1.85.
+**1.** Subtract directly: $135y = 249.75$, so $y = 1.85$.
 
-**Step 2.** Then x + 170(1.85) = 460.00 gives x = 145.50.
+**2.** Substituting back: $x + 314.50 = 460.00$, so $x = 145.50$.
 
 **Answer.** Swift Cargo charges a $145.50 dispatch fee plus $1.85 per mile.
 
@@ -3295,16 +3545,23 @@ A 2-drink, 2-pastry order costs 2($6.35) + 2($3.80) = $20.30. For seven days tha
     sort_order: 33,
     solution_overview: `**What's going on.** Let x be a Specialty Drink price and y be a Pastry price. The dollar totals, not the unrelated calorie figures, form the system.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per Specialty Drink, y = price per Pastry.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $7x + 9y = 78.65$.
-**Equation 2.** From this independent observation: $11x + 4y = 85.05$.
+$$
+7x + 9y = 78.65
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+11x + 4y = 85.05
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3313,11 +3570,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the equations by 4 and 9, giving 28x + 36y = 314.60 and 99x + 36y = 765.45.
+**1.** Multiply by 4 and 9: $28x + 36y = 314.60$; $99x + 36y = 765.45$.
 
-**Step 2.** Subtract to get 71x = 450.85, so x = 6.35; substituting gives y = 3.80.
+**2.** Subtracting: $71x = 450.85$, so $x = 6.35$.
+
+**3.** Substituting back: 44.45 + $9y = 78.65$, so $y = 3.80$.
 
 **Answer.** A Specialty Drink costs $6.35 and a Pastry costs $3.80.`,
   },
@@ -3385,16 +3644,23 @@ Adding $3 makes each baguette dozen $12.40. Email 2 would become 6($13.85) + 23(
     sort_order: 34,
     solution_overview: `**What's going on.** Let x be the wholesale price per dozen croissants and y be the price per dozen baguettes. Each email supplies one order-total equation.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = wholesale price per dozen croissants, y = wholesale price per dozen baguettes.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $14x + 11y = 297.30$.
-**Equation 2.** From this independent observation: $6x + 23y = 299.30$.
+$$
+14x + 11y = 297.30
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+6x + 23y = 299.30
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3403,11 +3669,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Match the y-coefficients by multiplying the equations by 23 and 11.
+**1.** Multiply by 23 and 11: $322x + 253y = 6837.90$; $66x + 253y = 3292.30$.
 
-**Step 2.** Subtraction gives 256x = 3545.60, so x = 13.85, and the first email then gives y = 9.40.
+**2.** Subtracting: $256x = 3545.60$, so $x = 13.85$.
+
+**3.** Substituting back: 193.90 + $11y = 297.30$, so $y = 9.40$.
 
 **Answer.** Croissants cost $13.85 per dozen and baguettes cost $9.40 per dozen.`,
   },
@@ -3477,16 +3745,23 @@ Five hundred Fabric Rolls produce 500($27.35) = $13,675.00. This is exactly the 
     sort_order: 35,
     solution_overview: `**What's going on.** Let x be the profit margin on a Fabric Roll and y the margin on a Yarn Spool. The two quarter reports determine the two per-unit margins.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = profit per Fabric Roll, y = profit per Yarn Spool.
 
-In symbols that becomes:
+**1. Record this independent observation.** In symbols:
 
-**Equation 1.** From this independent observation: $240x + 175y = 10029.00$.
-**Equation 2.** From this independent observation: $310x + 90y = 10260.50$.
+$$
+240x + 175y = 10029.00
+$$
 
-**Model.**
+**2. Record this independent observation.** In symbols:
+
+$$
+310x + 90y = 10260.50
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3495,11 +3770,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Eliminating y gives 32650x = 892977.50, so x = 27.35.
+**1.** Multiply by 90 and 175: $21600x + 15750y = 902610$; $54250x + 15750y = 1795587.5$.
 
-**Step 2.** Substituting into the first quarter equation gives y = 19.80.
+**2.** Subtracting: $32650x = 892977.5$, so $x = 27.35$.
+
+**3.** Substituting back: 6564.00 + $175y = 10029.00$, so $y = 19.80$.
 
 **Answer.** Fabric Roll margin = $27.35 per unit; Yarn Spool margin = $19.80 per unit.`,
   },
@@ -3572,16 +3849,23 @@ Invoices 1 and 3 together total $699.00 + $326.45 = $1,025.45 for 15 + 20 + 13 +
     sort_order: 36,
     solution_overview: `**What's going on.** Let x be the Nitrogen-type price and y be the Oxygen-type price. Invoice 2 is a 60% copy of Invoice 1, so use Invoice 1 and the independent Invoice 3.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per Nitrogen-type cylinder, y = price per Oxygen-type cylinder.
 
-In symbols that becomes:
+**1. Translate: Invoice 1.** That observation becomes:
 
-**Equation 1.** From Invoice 1: $15x + 20y = 699.00$.
-**Equation 2.** From Invoice 3, independent of Invoice 1: $13x + 5y = 326.45$.
+$$
+15x + 20y = 699.00
+$$
 
-**Model.**
+**2. Translate: Invoice 3, independent of Invoice 1.** That observation becomes:
+
+$$
+13x + 5y = 326.45
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3590,11 +3874,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply Invoice 3 by 4 and subtract Invoice 1: 37x = 606.80, so x = 16.40.
+**1.** Check Invoice 2 against Invoice 1 first: 419.40/699.00 = 0.60 exactly, and Invoice 2's quantities (9,12) are exactly 0.6 times Invoice 1's (15,20) — Invoice 2 is redundant.
 
-**Step 2.** Substituting into Invoice 1 gives y = 22.65.
+**2.** Multiply Invoice 3 by 4: $52x + 20y = 1305.80$.
+
+**3.** Subtract Invoice 1: $37x = 606.80$, so $x = 16.40$.
+
+**4.** Substituting back: 246.00 + $20y = 699.00$, so $y = 22.65$.
 
 **Answer.** Nitrogen-type cylinders cost $16.40 each and Oxygen-type cylinders cost $22.65 each.
 
@@ -3664,16 +3952,23 @@ The total work completed is 0.655 + 0.900 = 1.555 jobs over 23 logged hours. The
     sort_order: 37,
     solution_overview: `**What's going on.** Let x and y be Alvarez's and Bianchi's job-completion rates in jobs per hour. Each day's finished percentage equals the sum of each technician's rate-times-hours contribution.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = fraction of a job Alvarez completes per hour, y = fraction of a job Bianchi completes per hour.
 
-In symbols that becomes:
+**1. Translate: Monday.** That observation becomes:
 
-**Equation 1.** From Monday: $4x + 7y = 0.655$.
-**Equation 2.** From Tuesday: $9x + 3y = 0.900$.
+$$
+4x + 7y = 0.655
+$$
 
-**Model.**
+**2. Translate: Tuesday.** That observation becomes:
+
+$$
+9x + 3y = 0.900
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3682,11 +3977,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the first equation by 9 and the second by 4, then subtract: 51y = 2.295, so y = 0.045.
+**1.** Multiply by 9 and 4: $36x + 63y = 5.895$; $36x + 12y = 3.600$.
 
-**Step 2.** Substituting gives x = 0.085.
+**2.** Subtracting: $51y = 2.295$, so $y = 0.045$.
+
+**3.** Substituting back: $4x + 0.315 = 0.655$, so $x = 0.085$.
 
 **Answer.** Alvarez completes 0.085 job/hour (8.5%/hour), and Bianchi completes 0.045 job/hour (4.5%/hour).
 
@@ -3754,16 +4051,23 @@ With 260 T-Shirts and 310 Hoodies, profit is 260($11.65) + 310($18.40) = $8,733.
     sort_order: 38,
     solution_overview: `**What's going on.** Let x be the T-Shirt margin and y be the Hoodie margin. The first two seasons determine those margins, and Season 3 then reveals its missing T-Shirt count.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = profit per T-Shirt, y = profit per Hoodie.
 
-In symbols that becomes:
+**1. Translate: Season 1.** That observation becomes:
 
-**Equation 1.** From Season 1: $430x + 260y = 9793.50$.
-**Equation 2.** From Season 2: $275x + 410y = 10747.75$.
+$$
+430x + 260y = 9793.50
+$$
 
-**Model.**
+**2. Translate: Season 2.** That observation becomes:
+
+$$
+275x + 410y = 10747.75
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3772,11 +4076,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Elimination gives 104800x = 1220920, so x = 11.65; then the first season gives y = 18.40.
+**1.** Multiply by 410 and 260: $176300x + 106600y = 4015335$; $71500x + 106600y = 2794415$.
 
-**Step 2.** In Season 3, 11.65T + 18.40(310) = 8558.25, so T = 245.
+**2.** Subtracting: $104800x = 1220920$, so $x = 11.65$.
+
+**3.** Substituting back: 5009.50 + $260y = 9793.50$, so $y = 18.40$.
+
+**4.** Reconstruct Season 3's T-Shirt count T: $11.65T + 18.40$(310) = 8558.25, so $11.65T = 2854.25$, $T = 245$.
 
 **Answer.** T-Shirts earn $11.65 each, Hoodies earn $18.40 each, and Season 3 made 245 T-Shirts.`,
   },
@@ -3853,16 +4161,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 39,
     solution_overview: `**What's going on.** Let x be the flat handling fee and y be the price per kilogram. Convert the pound-recorded shipment to kilograms before solving the two billing equations.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = flat handling fee, y = rate per kilogram. Weights must be converted to kilograms before the model is built.
 
-In symbols that becomes:
+**1. Translate: Shipment 1, already in kg.** That observation becomes:
 
-**Equation 1.** From Shipment 1, already in kg: $x + 185y = 677.35$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $x + 260y = 913.60 (Shipment 2: 572 lb ÷ 2.2 = 260 kg)$, so the clean system row is $x + 260y = 260 kg)$.
+$$
+x + 185y = 677.35
+$$
 
-**Model.**
+**2. Translate: Shipment 2: 572 lb ÷ 2.2 = 260 kg.** That observation becomes:
+
+$$
+x + 260y = 913.60
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3871,11 +4186,17 @@ x + 260y = 913.60
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Shipment 2 is 572 ÷ 2.2 = 260 kg.
+**1.** Convert Shipment 2's weight: 572/2.2 = 260 kg.
 
-**Step 2.** Subtraction gives 75y = 236.25, so y = 3.15, and x = 677.35 − 185(3.15) = 94.60.
+**2.** Subtract directly: $75y = 236.25$, so $y = 3.15$.
+
+**3.** Substituting back: $x + 582.75 = 677.35$, so $x = 94.60$.
+
+**4.** Audit Shipment 3: 99/2.2 = 45 kg.
+
+**5.** Model predicts 94.60 + 45(3.15) = $236.35, but Shipment 3 was charged $239.80 — a $3.45 discrepancy.
 
 **Answer.** The handling fee is $94.60 and the rate is $3.15/kg; Shipment 3 should cost $236.35 rather than $239.80.
 
@@ -3949,16 +4270,23 @@ The clean-doubling hypothesis is $15.30 away from $952.10. The 50%-heavier hypot
     sort_order: 40,
     solution_overview: `**What's going on.** Client B used exactly twice Client A's compute and storage units. Therefore, a consistent fixed-price invoice for B would have to be exactly twice A's total.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per compute-unit, y = price per storage-unit.
 
-In symbols that becomes:
+**1. Translate: Client A.** That observation becomes:
 
-**Equation 1.** From Client A: $11x + 7y = 483.70$.
-**Equation 2.** From Client B, as reported: $22x + 14y = 952.10$.
+$$
+11x + 7y = 483.70
+$$
 
-**Model.**
+**2. Translate: Client B, as reported.** That observation becomes:
+
+$$
+22x + 14y = 952.10
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -3967,11 +4295,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Doubling Client A's equation gives 22x + 14y = 967.40.
+**1.** Client B's coefficients (22,14) are exactly double Client A's (11,7), so scaling Client A's equation by 2 gives $22x + 14y = 967.40$.
 
-**Step 2.** The reported B equation has the same left side but a $952.10 total, a $15.30 contradiction.
+**2.** Since the reported total is $952.10, not $967.40, the two equations are inconsistent — a $15.30 contradiction.
+
+**3.** No values of x and y satisfy both equations simultaneously: this is the parallel-lines case (proportional coefficients, non-proportional constants).
 
 **Answer.** No consistent compute and storage prices exist for both invoices; they disagree by $15.30.
 
@@ -4041,16 +4371,23 @@ The balance difference is $13,600 − $4,800 = $8,800. Relative to the smaller $
     sort_order: 41,
     solution_overview: `**What's going on.** Let x be Fund A's balance and y be Fund B's balance. The balance relationship plus the combined-interest equation determines both fund amounts.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = balance in Fund A, y = balance in Fund B.
 
-In symbols that becomes:
+**1. Translate: Fund B's balance, from the stated relationship.** That observation becomes:
 
-**Equation 1.** From Fund B's balance, from the stated relationship: $y = 2x + 4000$.
-**Equation 2.** From combined annual return: $0.0525x + 0.0375y = 762$.
+$$
+y = 2x + 4000
+$$
 
-**Model.**
+**2. Translate: combined annual return.** That observation becomes:
+
+$$
+0.0525x + 0.0375y = 762
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4059,11 +4396,11 @@ y = 2x + 4000 \\\\
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Substitute y = 2x + 4000: 0.0525x + 0.0375(2x + 4000) = 762.
+**1.** Substitute the first equation into the second: $0.0525x + 0.0375$($2x + 4000$) = 762 → $0.$1275x + 150$ = 762$ → $0.1275x = 612$ → $x = 4800$.
 
-**Step 2.** This gives 0.1275x = 612, so x = 4800 and y = 13600.
+**2.** Substitute back: $y = 2$(4800) + 4000 = 13600.
 
 **Answer.** Fund A holds $4,800 and Fund B holds $13,600.
 
@@ -4132,16 +4469,23 @@ Batch 1's 3:2 ratio makes A 3/5 = 60% of its volume. Batch 2's 5:1 ratio makes A
     sort_order: 42,
     solution_overview: `**What's going on.** The stated ratios first convert each batch into separate A and B volumes. Let x and y be the salt concentrations in g/L of Solutions A and B.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = grams of salt per liter in Solution A, y = grams of salt per liter in Solution B.
 
-In symbols that becomes:
+**1. Translate: Batch 1: 10 L split 3:2 → 6 L of A, 4 L of B.** That observation becomes:
 
-**Equation 1.** From Batch 1: 10 L split 3:2 → 6 L of A, 4 L of B: $6x + 4y = 144$.
-**Equation 2.** From Batch 2: 12 L split 5:1 → 10 L of A, 2 L of B: $10x + 2y = 184$.
+$$
+6x + 4y = 144
+$$
 
-**Model.**
+**2. Translate: Batch 2: 12 L split 5:1 → 10 L of A, 2 L of B.** That observation becomes:
+
+$$
+10x + 2y = 184
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4150,11 +4494,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide by 2 to get 3x + 2y = 72 and 5x + y = 92.
+**1.** Divide by 2: $3x + 2y = 72$; $5x + y = 92$, so $y = 92 - 5x$.
 
-**Step 2.** Substitute y = 92 − 5x to obtain x = 16 and y = 12.
+**2.** Substitute: $3x + 2$(92 - 5x) = 72 → $-7x = -112$ → $x = 16$.
+
+**3.** Then $y = 92 - 80$ = 12.
+
+**4.** Audit Batch 3 (1:3 over 8 $L = 2$ L A, 6 L B): predicted = 2(16) + 6(12) = 104 g, vs. 109 g recorded — a 5 g discrepancy.
 
 **Answer.** Solution A has 16 g/L and Solution B has 12 g/L; Batch 3 is predicted to contain 104 g, versus 109 g recorded.
 
@@ -4226,16 +4574,23 @@ The overtime-hours ratio is 7 ÷ 2.5 = 2.8. The gross-pay ratio is $882 ÷ $765 
     sort_order: 43,
     solution_overview: `**What's going on.** Let x be the base hourly wage and y be the extra overtime premium per overtime hour. An overtime hour pays x + y, so each employee's equation includes base pay for all worked hours plus the premium only for overtime hours.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = base hourly wage, y = overtime premium per hour (on top of the base wage, per OT hour).
 
-In symbols that becomes:
+**1. Translate: Employee A: 40 regular + 2.5 OT hours, each OT hour paid at x+y.** That observation becomes:
 
-**Equation 1.** From Employee A: 40 regular + 2.5 OT hours, each OT hour paid at x+y: $42.5x + 2.5y = 765$.
-**Equation 2.** From Employee B: 40 regular + 7 OT hours: $47x + 7y = 882$.
+$$
+42.5x + 2.5y = 765
+$$
 
-**Model.**
+**2. Translate: Employee B: 40 regular + 7 OT hours.** That observation becomes:
+
+$$
+47x + 7y = 882
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4244,11 +4599,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the first equation by 2.8 to match the 7y term.
+**1.** Multiply the first by 2.8 (so its y-coefficient matches): $119x + 7y = 2142$.
 
-**Step 2.** Subtracting the second equation gives 72x = 1260, so x = 17.50; substitution gives y = 8.50.
+**2.** Subtract the second: $72x = 1260$, so $x = 17.5$.
+
+**3.** Substitute back: 42.5(17.5) + $2.5y = 765$ → $2.5y = 21.25$ → $y = 8.5$.
 
 **Answer.** The base wage is $17.50/hour and the overtime premium is $8.50/hour, so overtime pays $26.00/hour.`,
   },
@@ -4323,16 +4680,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 44,
     solution_overview: `**What's going on.** Let x be the cedar wood price per meter and y the wire price per meter. Project 2 is a 1.5-times copy of Project 1, so Project 1 and Project 3 are the independent equations.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per meter of cedar wood fencing, y = price per meter of galvanized wire fencing.
 
-In symbols that becomes:
+**1. Translate: Project 1.** That observation becomes:
 
-**Equation 1.** From Project 1: $18x + 24y = 750$.
-**Equation 2.** From Project 3, independent of Project 1: $10x + 40y = 710$.
+$$
+18x + 24y = 750
+$$
 
-**Model.**
+**2. Translate: Project 3, independent of Project 1.** That observation becomes:
+
+$$
+10x + 40y = 710
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4341,11 +4705,17 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide the equations by 6 and 10: 3x + 4y = 125 and x + 4y = 71.
+**1.** Check Project 2 against Project 1: (27,36) = 1.5 × (18,24), and 1.5 × $750.00 = $1,125.00, matching Project 2 exactly — it is redundant.
 
-**Step 2.** Subtract to get 2x = 54, so x = 27 and y = 11.
+**2.** Divide Project 1 by 6: $3x + 4y = 125$.
+
+**3.** Divide Project 3 by 10: $x + 4y = 71$.
+
+**4.** Subtract: $2x = 54$, so $x = 27$.
+
+**5.** Substitute back: 27 + $4y = 71$, so $y = 11$.
 
 **Answer.** Cedar wood costs $27/m and galvanized wire costs $11/m.
 
@@ -4417,16 +4787,23 @@ Boat B is 77 − 48 = 29 km/h faster than Boat A. Relative to A, 29 ÷ 48 ≈ 60
     sort_order: 45,
     solution_overview: `**What's going on.** Let x be Boat A's speed and y be Boat B's speed. The opposite-direction trip supplies their closing-speed sum, while the head-start trip gives B four hours of travel and A one hour.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Boat A's speed (km/h), y = Boat B's speed (km/h).
 
-In symbols that becomes:
+**1. Translate: 250 km gap closed in 2 hrs: 2(x+y) = 250.** That observation becomes:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $x + y = 125 (250 km gap closed in 2 hrs: 2(x+y) = 250)$, so the clean system row is $x + y = 250)$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $x + 4y = 356 (Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs)$, so the clean system row is $x + 4y = 4 hrs)$.
+$$
+x + y = 125
+$$
 
-**Model.**
+**2. Translate: Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs.** That observation becomes:
+
+$$
+x + 4y = 356
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4435,11 +4812,11 @@ x + 4y = 356
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first equation from the second: 3y = 231, so y = 77.
+**1.** Subtract the first from the second: $3y = 231$, so $y = 77$.
 
-**Step 2.** Then x = 125 − 77 = 48.
+**2.** Substitute back: $x + 77 = 125$, so $x = 48$.
 
 **Answer.** Boat A travels 48 km/h and Boat B travels 77 km/h.
 
@@ -4514,16 +4891,23 @@ Average profit per tonne is total profit divided by total tonnage. **Setup.** Se
     sort_order: 46,
     solution_overview: `**What's going on.** Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and total profit survived, but Wheat tonnage is illegible.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = profit per tonne of Wheat, y = profit per tonne of Barley.
 
-In symbols that becomes:
+**1. Translate: Season 1: 240x+160y=42000, ÷80.** That observation becomes:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $3x + 2y = 525 (Season 1: 240x+160y = 42000, ÷80)$, so the clean system row is $3x + 2y = 42000, ÷80)$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $9x + 13y = 2415 (Season 2: 180x+260y = 48300, ÷20)$, so the clean system row is $9x + 13y = 48300, ÷20)$.
+$$
+3x + 2y = 525
+$$
 
-**Model.**
+**2. Translate: Season 2: 180x+260y=48300, ÷20.** That observation becomes:
+
+$$
+9x + 13y = 2415
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4532,15 +4916,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply by 13 and 2: $39x + 26y = 6825$; $18x + 26y = 4830$.
+**1.** Multiply by 13 and 2: $39x + 26y = 6825$; $18x + 26y = 4830$.
 
-**Step 2.** Subtract: $21x = 1995$, so $x = 95$.
+**2.** Subtract: $21x = 1995$, so $x = 95$.
 
-**Step 3.** Substitute back: 285 + $2y = 525$, so $y = 120$.
+**3.** Substitute back: 285 + $2y = 525$, so $y = 120$.
 
-**Step 4.** Reconstruct Season 3's Wheat tonnage T: 95T + 120(300) = 53100 → $T = 180$.
+**4.** Reconstruct Season 3's Wheat tonnage T: $95T + 120$(300) = 53100 → $T = 180$.
 
 **Answer.** Wheat = $95.00/t | Barley = $120.00/t | Season 3 Wheat reconstructed = 180 tonnes
 
@@ -4616,16 +5000,23 @@ The original condition says the elder was three times the younger five years ago
     sort_order: 47,
     solution_overview: `**What's going on.** Bramwell's HR system flagged an "elder" and "younger" employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = elder employee's current age, y = younger employee's current age.
 
-In symbols that becomes:
+**1. Translate: five years ago, elder was 3× younger.** That observation becomes:
 
-**Equation 1.** From five years ago, elder was 3× younger: $x - 5 = 3(y - 5)$.
-**Equation 2.** From in nine years, elder will be 2× younger: $x + 9 = 2(y + 9)$.
+$$
+x - 5 = 3
+$$
 
-**Model.**
+**2. Translate: in nine years, elder will be 2× younger.** That observation becomes:
+
+$$
+x + 9 = 2
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4634,13 +5025,13 @@ x + 9 = 2(y + 9)
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Expand: x = 3y − 10, and x = 2y + 9.
+**1.** Expand: x = $3y - 10$, and x = $2y + 9$.
 
-**Step 2.** Setting equal: 3y − 10 = 2y + 9, so $y = 19$.
+**2.** Setting equal: $3y - 10$ = $2y + 9$, so $y = 19$.
 
-**Step 3.** Substitute back: $x = 2$(19) + 9 = 47.
+**3.** Substitute back: $x = 2$(19) + 9 = 47.
 
 **Answer.** Elder employee = 47 years old | Younger employee = 19 years old
 
@@ -4713,16 +5104,23 @@ Compare B:A ratios before and after the unequal markups. **Setup.** Wholesale ra
     sort_order: 48,
     solution_overview: `**What's going on.** Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = wholesale cost of Product A, y = wholesale cost of Product B.
 
-In symbols that becomes:
+**1. Translate: Order 1: retail A is 1.32x, retail B is 1.18y.** That observation becomes:
 
-**Equation 1.** From Order 1: retail A is 1.32x, retail B is 1.18y: $10.56x + 5.9y = 1052.80$.
-**Equation 2.** From Order 3, independent of Order 1: $3.96x + 14.16y = 1350.60$.
+$$
+10.56x + 5.9y = 1052.80
+$$
 
-**Model.**
+**2. Translate: Order 3, independent of Order 1.** That observation becomes:
+
+$$
+3.96x + 14.16y = 1350.60
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4731,15 +5129,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Order 2 (16,10,$2,105.60) is exactly double Order 1 — redundant, set aside.
+**1.** Order 2 (16,10,$2,105.60) is exactly double Order 1 — redundant, set aside.
 
-**Step 2.** Multiply Order 1 by 0.375 (so its x-coefficient matches Order 3's): $3.96x + 2.2125y = 394.80$.
+**2.** Multiply Order 1 by 0.375 (so its x-coefficient matches Order 3's): $3.$96x + 2.2125y$ = 394.80$.
 
-**Step 3.** Subtract from Order 3: $11.9475y = 955.80$, so $y = 80.00$.
+**3.** Subtract from Order 3: $11.9475y = 955.80$, so $y = 80.00$.
 
-**Step 4.** Substitute back into Order 1: $10.56x + 472 = 1052.80$, so $x = 55.00$.
+**4.** Substitute back into Order 1: $10.$56x + 472$ = 1052.80$, so $x = 55.00$.
 
 **Answer.** Product A wholesale = $55.00 | Product B wholesale = $80.00
 
@@ -4809,16 +5207,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 49,
     solution_overview: `**What's going on.** The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4 draws, 2 losses in 15 matches, 75 points.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = points per win, y = points per draw.
 
-In symbols that becomes:
+**1. Translate: Falcons.** That observation becomes:
 
-**Equation 1.** From Falcons: $9x + 4y = 75$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $7x + 6y = 67 (Ravens: 75 - 8 = 67 total points)$, so the clean system row is $7x + 6y = 67 total points)$.
+$$
+9x + 4y = 75
+$$
 
-**Model.**
+**2. Translate: Ravens: 75 - 8 = 67 total points.** That observation becomes:
+
+$$
+7x + 6y = 67
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4827,13 +5232,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply by 3 and 2: $27x + 12y = 225$; $14x + 12y = 134$.
+**1.** Multiply by 3 and 2: $27x + 12y = 225$; $14x + 12y = 134$.
 
-**Step 2.** Subtract: $13x = 91$, so $x = 7$.
+**2.** Subtract: $13x = 91$, so $x = 7$.
 
-**Step 3.** Substitute back: 63 + $4y = 75$, so $y = 3$.
+**3.** Substitute back: 63 + $4y = 75$, so $y = 3$.
 
 **Answer.** Win = 7 points | Draw = 3 points
 
@@ -4908,16 +5313,23 @@ Combining batches adds each metal's volumes before applying the same densities. 
     sort_order: 50,
     solution_overview: `**What's going on.** Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal ≈ 9.5 L).
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = mass per liter of Metal A (kg/L), y = mass per liter of Metal B (kg/L).
 
-In symbols that becomes:
+**1. Translate: Batch 1.** That observation becomes:
 
-**Equation 1.** From Batch 1: $12x + 8y = 182.4$.
-**Equation 2.** From Batch 2: $5x + 15y = 209.0$.
+$$
+12x + 8y = 182.4
+$$
 
-**Model.**
+**2. Translate: Batch 2.** That observation becomes:
+
+$$
+5x + 15y = 209.0
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -4926,15 +5338,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide by 4 and 5: $3x + 2y = 45.6$; $x + 3y = 41.8$, so $x = 41.8$ − 3y.
+**1.** Divide by 4 and 5: $3x + 2y = 45.6$; $x + 3y = 41.8$, so $x = 41.8 - 3y$.
 
-**Step 2.** Substitute: 3(41.8 − 3y) + $2y = 45.6$ → −7y = −79.8 → $y = 11.4$.
+**2.** Substitute: 3(41.8 - 3y) + $2y = 45.6$ → $-7y = -79.8$ → $y = 11.4$.
 
-**Step 3.** Substitute back: $x = 41.8$ − 34.2 = 7.6.
+**3.** Substitute back: $x = 41.8 - 34.2$ = 7.6.
 
-**Step 4.** Audit Batch 3: predicted = 9.5(7.6) + 6(11.4) = 140.6 kg, vs. 147.0 kg recorded — a 6.4 kg discrepancy.
+**4.** Audit Batch 3: predicted = 9.5(7.6) + 6(11.4) = 140.6 kg, vs. 147.0 kg recorded — a 6.4 kg discrepancy.
 
 **Answer.** Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)
 
@@ -5008,16 +5420,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 51,
     solution_overview: `**What's going on.** Halcyon charges an annual fee equal to a percentage rate on assets under management (AUM), plus a flat retainer. Client 2's AUM is $600,000, fee $10,800.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = the percentage fee rate (as a decimal), y = the flat retainer ($).
 
-In symbols that becomes:
+**1. Translate: Client 2's total fee.** That observation becomes:
 
-**Equation 1.** From Client 2's total fee: $600000x + y = 10800$.
-**Equation 2.** From fee difference ÷ AUM difference — retainer cancels: $150000x = 2400$.
+$$
+600000x + y = 10800
+$$
 
-**Model.**
+**2. Translate: fee difference ÷ AUM difference — retainer cancels.** That observation becomes:
+
+$$
+150000x = 2400
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5026,11 +5445,11 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** The second equation already isolates x: $150000x = 2400$, so $x = 0.016$ (1.6%).
+**1.** The second equation already isolates x: $150000x = 2400$, so $x = 0.016$ (1.6%).
 
-**Step 2.** Substitute into the first: 600000(0.016) + $y = 10800$, so $y = 1200$.
+**2.** Substitute into the first: 600000(0.016) + $y = 10800$, so $y = 1200$.
 
 **Answer.** Fee rate = 1.6% of AUM | Retainer = $1,200.00 (Fee = 0.016·AUM + 1200)
 
@@ -5103,16 +5522,23 @@ Compare what fraction of each batch's total volume is Suspension B. **Setup.** B
     sort_order: 52,
     solution_overview: `**What's going on.** Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL. The two unknowns are the concentrations; batch volumes are known coefficients (convert L → mL first).
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = mg/mL concentration of Suspension A, y = mg/mL concentration of Suspension B.
 
-In symbols that becomes:
+**1. Translate: Batch 1.** That observation becomes:
 
-**Equation 1.** From Batch 1: $500x + 300y = 8880$.
-**Equation 2.** From Batch 2: $200x + 700y = 12600$.
+$$
+500x + 300y = 8880
+$$
 
-**Model.**
+**2. Translate: Batch 2.** That observation becomes:
+
+$$
+200x + 700y = 12600
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5121,17 +5547,17 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide by 100: $5x + 3y = 88.8$; $2x + 7y = 126$.
+**1.** Divide by 100: $5x + 3y = 88.8$; $2x + 7y = 126$.
 
-**Step 2.** Multiply by 7 and 3: $35x + 21y = 621.6$; $6x + 21y = 378$.
+**2.** Multiply by 7 and 3: $35x + 21y = 621.6$; $6x + 21y = 378$.
 
-**Step 3.** Subtract: $29x = 243.6$, so $x = 8.4$.
+**3.** Subtract: $29x = 243.6$, so $x = 8.4$.
 
-**Step 4.** Substitute back: 16.8 + $7y = 126$, so $y = 15.6$.
+**4.** Substitute back: 16.8 + $7y = 126$, so $y = 15.6$.
 
-**Step 5.** Audit Batch 3: predicted = 320(8.4) + 450(15.6) = 9,708 mg, vs. 9,700 mg recorded — an 8 mg discrepancy.
+**5.** Audit Batch 3: predicted = 320(8.4) + 450(15.6) = 9,708 mg, vs. 9,700 mg recorded — an 8 mg discrepancy.
 
 **Answer.** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded)
 
@@ -5201,16 +5627,23 @@ Each job's waste percentage is waste cost divided by usable-material cost. **Set
     sort_order: 53,
     solution_overview: `**What's going on.** Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per stud, y = price per drywall sheet. The ordered (waste-inflated) quantities must be computed from the usable amounts before any pricing model can be built.
 
-In symbols that becomes:
+**1. Translate: Job 1: 200×1.12=224 studs, 150×1.08=162 sheets.** That observation becomes:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $224x + 162y = 7164 (Job 1: 200×1.12 = 224 studs, 150×1.08 = 162 sheets)$, so the clean system row is $224x + 162y = 162 sheets)$.
-**Equation 2.** Start from the printed total, peel the fee/tax, then keep only food×prices: $392x + 189y = 8946 (Job 2: 350×1.12 = 392 studs, 175×1.08 = 189 sheets)$, so the clean system row is $392x + 189y = 189 sheets)$.
+$$
+224x + 162y = 7164
+$$
 
-**Model.**
+**2. Translate: Job 2: 350×1.12=392 studs, 175×1.08=189 sheets.** That observation becomes:
+
+$$
+392x + 189y = 8946
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5219,13 +5652,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply the first by 1.75 (so its x-coefficient, 224×1.75=392, matches the second): $392x + 283.5y = 12537$.
+**1.** Multiply the first by 1.75 (so its x-coefficient, 224×1.75=392, matches the second): $392x + 283.5y = 12537$.
 
-**Step 2.** Subtract the second: $94.5y = 3591$, so $y = 38.00$.
+**2.** Subtract the second: $94.5y = 3591$, so $y = 38.00$.
 
-**Step 3.** Substitute back: $224x + 6156 = 7164$, so $x = 4.50$.
+**3.** Substitute back: $224x + 6156 = 7164$, so $x = 4.50$.
 
 **Answer.** Stud price = $4.50 | Drywall sheet price = $38.00`,
   },
@@ -5302,16 +5735,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 54,
     solution_overview: `**What's going on.** A sensor's raw reading converts to a true value via True Value = (scale factor)×(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = the sensor's scale factor, y = the sensor's offset, so that True Value = x·(Reading) + y.
 
-In symbols that becomes:
+**1. Translate: Point 1.** That observation becomes:
 
-**Equation 1.** From Point 1: $12.4x + y = 56.90$.
-**Equation 2.** From Point 2: $31.7x + y = 124.45$.
+$$
+12.4x + y = 56.90
+$$
 
-**Model.**
+**2. Translate: Point 2.** That observation becomes:
+
+$$
+31.7x + y = 124.45
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5320,13 +5760,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract the first from the second: $19.3x = 67.55$, so $x = 3.50$.
+**1.** Subtract the first from the second: $19.3x = 67.55$, so $x = 3.50$.
 
-**Step 2.** Substitute back: 43.4 + $y = 56.90$, so $y = 13.50$.
+**2.** Substitute back: 43.4 + $y = 56.90$, so $y = 13.50$.
 
-**Step 3.** Verification: predicted = 45.0(3.5) + 13.5 = 171.00, vs. recorded 172.20 — a 1.20 discrepancy.
+**3.** Verification: predicted = 45.0(3.5) + 13.5 = 171.00, vs. recorded 172.20 — a 1.20 discrepancy.
 
 **Answer.** Scale factor = 3.50 | Offset = 13.50 | Verification predicted = 171.00 (vs. 172.20 recorded)
 
@@ -5396,16 +5836,23 @@ Compare the $1.35 price gap with 30% of Coffee's $6.20 price. **Setup.** Gap = 6
     sort_order: 55,
     solution_overview: `**What's going on.** Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost $2,943.20.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = price per kg of Coffee, y = price per kg of Cocoa. Individual weights within each shipment must be worked out from the total weight and ratio before a pricing model can be built.
 
-In symbols that becomes:
+**1. Translate: Shipment 1: 520 kg split 3:2 → 312 kg Coffee, 208 kg Cocoa.** That observation becomes:
 
-**Equation 1.** From Shipment 1: 520 kg split 3:2 → 312 kg Coffee, 208 kg Cocoa: $312x + 208y = 2943.2$.
-**Equation 2.** From Shipment 2: 800 kg split 5:3 → 500 kg Coffee, 300 kg Cocoa: $500x + 300y = 4555$.
+$$
+312x + 208y = 2943.2
+$$
 
-**Model.**
+**2. Translate: Shipment 2: 800 kg split 5:3 → 500 kg Coffee, 300 kg Cocoa.** That observation becomes:
+
+$$
+500x + 300y = 4555
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5414,13 +5861,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide by 8 and 100: $39x + 26y = 367.9$; $5x + 3y = 45.55$, so $x = 9.11$ − 0.6y.
+**1.** Divide by 8 and 100: $39x + 26y = 367.9$; $5x + 3y = 45.55$, so $x = 9.11 - 0.6y$.
 
-**Step 2.** Substitute: 39(9.11 − 0.6y) + $26y = 367.9$ → $2.6y = 12.61$ → $y = 4.85$.
+**2.** Substitute: 39(9.11 - 0.6y) + $26y = 367.9$ → $2.6y = 12.61$ → $y = 4.85$.
 
-**Step 3.** Substitute back: $x = 9.11$ − 2.91 = 6.20.
+**3.** Substitute back: $x = 9.11 - 2.91$ = 6.20.
 
 **Answer.** Coffee = $6.20/kg | Cocoa = $4.85/kg
 
@@ -5495,16 +5942,23 @@ Route 1's actual two-vehicle fuel is compared with two separate full-distance ru
     sort_order: 56,
     solution_overview: `**What's going on.** Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km).
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Truck fuel consumption (L/100km), y = Van fuel consumption (L/100km).
 
-In symbols that becomes:
+**1. Translate: Route 1, distances in hundreds of km.** That observation becomes:
 
-**Equation 1.** From Route 1, distances in hundreds of km: $8.5x + 6.2y = 383.6$.
-**Equation 2.** From Route 2, distances in hundreds of km: $5x + 9y = 322$.
+$$
+8.5x + 6.2y = 383.6
+$$
 
-**Model.**
+**2. Translate: Route 2, distances in hundreds of km.** That observation becomes:
+
+$$
+5x + 9y = 322
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5513,15 +5967,15 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Multiply by 9 and 6.2: $76.5x + 55.8y = 3452.4$; $31x + 55.8y = 1996.4$.
+**1.** Multiply by 9 and 6.2: $76.$5x + 55.8y$ = 3452.4$; $31x + 55.8y = 1996.4$.
 
-**Step 2.** Subtract: $45.5x = 1456$, so $x = 32.0$.
+**2.** Subtract: $45.5x = 1456$, so $x = 32.0$.
 
-**Step 3.** Substitute back: 160 + $9y = 322$, so $y = 18.0$.
+**3.** Substitute back: 160 + $9y = 322$, so $y = 18.0$.
 
-**Step 4.** Audit Route 3: predicted = 2.5(32) + 4(18) = 152 L, vs. 155 L recorded — a 3 L discrepancy.
+**4.** Audit Route 3: predicted = 2.5(32) + 4(18) = 152 L, vs. 155 L recorded — a 3 L discrepancy.
 
 **Answer.** Truck = 32.0 L/100km | Van = 18.0 L/100km | Route 3 predicted = 152.0 L (vs. 155.0 L recorded)
 
@@ -5591,16 +6045,23 @@ Substituting the solved unknowns into the scenario described by the statement re
     sort_order: 57,
     solution_overview: `**What's going on.** The $45,000 Whitmore Fund splits between a Bond Portfolio and an Equity Portfolio, each earning its own fixed rate. Current allocation ($27,000 Bonds, $18,000 Equities) returns $2,646.00.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Bond Portfolio's annual rate (%), y = Equity Portfolio's annual rate (%).
 
-In symbols that becomes:
+**1. Translate: current allocation.** That observation becomes:
 
-**Equation 1.** From current allocation: $270x + 180y = 2646$.
-**Equation 2.** From proposed reallocation: $180x + 270y = 2754$.
+$$
+270x + 180y = 2646
+$$
 
-**Model.**
+**2. Translate: proposed reallocation.** That observation becomes:
+
+$$
+180x + 270y = 2754
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5609,13 +6070,13 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Add the two equations: $450x + 450y = 5400$, so $x + y = 12$.
+**1.** Add the two equations: $450x + 450y = 5400$, so $x + y = 12$.
 
-**Step 2.** Subtract the first from the second: −$90x + 90y = 108$, so y − $x = 1.2$, i.e. y = x + 1.2.
+**2.** Subtract the first from the second: $-$90x + 90y$ = 108$, so $y - x = 1.2$, i.e. y = $x + 1.2$.
 
-**Step 3.** Substitute: x + (x+1.2) = 12, so $x = 5.4$, and $y = 6.6$.
+**3.** Substitute: x + ($x+1.2$) = 12, so $x = 5.4$, and $y = 6.6$.
 
 **Answer.** Bond rate = 5.4% | Equity rate = 6.6%
 
@@ -5696,16 +6157,23 @@ Combine 85 and 210 coverage units, paying the fixed fee once. **Setup.** Combine
     sort_order: 58,
     solution_overview: `**What's going on.** Ashford prices every policy as a fixed administrative fee plus a rate per $1,000 of coverage. A third policy's coverage amount is illegible, but its premium survived.
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = the fixed administrative fee per policy ($), y = the rate per $1,000 of coverage ($).
 
-In symbols that becomes:
+**1. Translate: Auto, coverage in units of $1,000.** That observation becomes:
 
-**Equation 1.** From Auto, coverage in units of $1,000: $x + 85y = 612.50$.
-**Equation 2.** From Home: $x + 210y = 1197.50$.
+$$
+x + 85y = 612.50
+$$
 
-**Model.**
+**2. Translate: Home.** That observation becomes:
+
+$$
+x + 210y = 1197.50
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5714,15 +6182,15 @@ x + 210y = 1197.50
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Subtract directly: $125y = 585$, so $y = 4.68$.
+**1.** Subtract directly: $125y = 585$, so $y = 4.68$.
 
-**Step 2.** Substitute back: $x + 397.80 = 612.50$, so $x = 214.70$.
+**2.** Substitute back: $x + 397.80 = 612.50$, so $x = 214.70$.
 
-**Step 3.** Reconstruct the Renters coverage C: 214.70 + $4.68C = 331.70$, so $C = 25$, i.e.
+**3.** Reconstruct the Renters coverage C: 214.70 + $4.68C = 331.70$, so $C = 25$, i.e.
 
-**Step 4.** $25,000.
+**4.** $25,000.
 
 **Answer.** Fixed fee = $214.70 | Rate = $4.68/$1,000 | Renters coverage reconstructed = $25,000
 
@@ -5792,16 +6260,23 @@ Compare that recomputed figure with the wording of the statement (quantity, dire
     sort_order: 59,
     solution_overview: `**What's going on.** Two species change by a fixed net number of individuals each year. At Year 2: Species A = 610, Species B = 730 (combined 1,340).
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Species A's net annual change (individuals/year), y = Species B's net annual change.
 
-In symbols that becomes:
+**1. Translate: combined growth of 432 over 4 years, Year 2 to Year 6: 4x+4y=432.** That observation becomes:
 
-**Equation 1.** Start from the printed total, peel the fee/tax, then keep only food×prices: $x + y = 108 (combined growth of 432 over 4 years, Year 2 to Year 6: 4x+4y = 432)$, so the clean system row is $x + y = 432)$.
-**Equation 2.** From Species A grows at twice Species B's rate: $x = 2y$.
+$$
+x + y = 108
+$$
 
-**Model.**
+**2. Translate: Species A grows at twice Species B's rate.** That observation becomes:
+
+$$
+x = 2y
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5810,11 +6285,11 @@ x = 2y
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Substitute the second into the first: $2y + y = 108$, so $y = 36$.
+**1.** Substitute the second into the first: $2y + y = 108$, so $y = 36$.
 
-**Step 2.** Then $x = 2$(36) = 72.
+**2.** Then $x = 2$(36) = 72.
 
 **Answer.** Species A = +72 individuals/year | Species B = +36 individuals/year`,
   },
@@ -5885,16 +6360,23 @@ Add the recorded daily outputs across all three days. **Setup.** Total = 3,990+4
     sort_order: 60,
     solution_overview: `**What's going on.** Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs).
 
-**Building the system.**
+**Part 1: Building the system.**
 
 Let x = Plant A's output rate (MWh/operating hr), y = Plant B's output rate (MWh/operating hr).
 
-In symbols that becomes:
+**1. Translate: Day 1.** That observation becomes:
 
-**Equation 1.** From Day 1: $14x + 20y = 3990$.
-**Equation 2.** From Day 2: $22x + 9y = 4072$.
+$$
+14x + 20y = 3990
+$$
 
-**Model.**
+**2. Translate: Day 2.** That observation becomes:
+
+$$
+22x + 9y = 4072
+$$
+
+**Part 2: The model.**
 
 $$
 \\begin{cases}
@@ -5903,19 +6385,19 @@ $$
 \\end{cases}
 $$
 
-**Solve.**
+**Part 3: Solve.**
 
-**Step 1.** Divide the first by 2: $7x + 10y = 1995$.
+**1.** Divide the first by 2: $7x + 10y = 1995$.
 
-**Step 2.** Multiply by 9: $63x + 90y = 17955$.
+**2.** Multiply by 9: $63x + 90y = 17955$.
 
-**Step 3.** Multiply the second by 10: $220x + 90y = 40720$.
+**3.** Multiply the second by 10: $220x + 90y = 40720$.
 
-**Step 4.** Subtract: $157x = 22765$, so $x = 145.0$.
+**4.** Subtract: $157x = 22765$, so $x = 145.0$.
 
-**Step 5.** Substitute back: 1015 + $10y = 1995$, so $y = 98.0$.
+**5.** Substitute back: 1015 + $10y = 1995$, so $y = 98.0$.
 
-**Step 6.** Audit Day 3: predicted = 17(145) + 11(98) = 3,543 MWh, vs. 3,553 MWh recorded — a 10 MWh discrepancy.
+**6.** Audit Day 3: predicted = 17(145) + 11(98) = 3,543 MWh, vs. 3,553 MWh recorded — a 10 MWh discrepancy.
 
 **Answer.** Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)
 

@@ -580,21 +580,47 @@ function DifficultyPill({ level, active }: { level: string; active?: boolean }) 
   );
 }
 
-/** Quiet structural labels so Overview doesn't flash bold every other word. */
-function isExplanationLabel(label: string): boolean {
-  return /^(What's going on|Building the system|Model|Solve|Answer|Equation\s+\d+|Step\s+\d+|Direct check|Setup|Computation|Watch\.?|Why it fails\.?|Tip\.?)(\.|:)?$/i.test(
+/** Section titles in the tutorial style (Part / Setup / Solve…). */
+function isSectionHeading(label: string): boolean {
+  return /^(What's going on|Building the system|Model|Solve|Answer|Part\s*\d+.*|Direct check|Setup|Computation)(\.|:)?$/i.test(
     label.trim(),
   );
 }
 
-/** Light markdown (**bold**, *italic*, pipe tables) plus KaTeX via FlashcardMath. */
+/** Numbered/step labels: Equation 1, Step 2, 1. Translate… */
+function isStepLabel(label: string): boolean {
+  return /^(Equation\s+\d+|Step\s+\d+|[A-E]\)|\d+\.)(\.|:)?$/i.test(label.trim())
+    || /^(Equation\s+\d+\.|Step\s+\d+\.)/i.test(label.trim());
+}
+
+/** Tip / note callouts — left-border like the sample "Note:". */
+function isNoteLabel(label: string): boolean {
+  return /^(Watch\.?|Why it fails\.?|Where it breaks\.?|Tip\.?|Note\.?|Related model relation\.?)(\.|:)?$/i.test(
+    label.trim(),
+  );
+}
+
+function classifyBoldLabel(label: string): "section" | "step" | "note" | "emphasis" {
+  const t = label.trim();
+  if (isNoteLabel(t)) return "note";
+  if (isSectionHeading(t)) return "section";
+  // "1. Peel the fixed fee…" / "Equation 1." / "Step 2."
+  if (/^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t)) return "step";
+  if (/^Equation\s+\d+/i.test(t) || /^Step\s+\d+/i.test(t)) return "step";
+  if (/^[A-E]\)/.test(t)) return "step";
+  if (isStepLabel(t)) return "step";
+  return "emphasis";
+}
+
+/** Tutorial-style markdown + KaTeX: sans body, selective bold, airy display math. */
 function MathProse({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split(/\n\n+/);
   return (
     <div
       className={cn(
-        "space-y-4 font-serif text-[15px] leading-[1.8] text-foreground sm:text-[16px]",
-        "[&_.katex]:text-[1.05em] [&_.katex-display]:my-3 [&_.katex-display]:overflow-x-auto",
+        "space-y-4 font-sans text-[15px] leading-[1.65] text-foreground/90 sm:text-[15.5px]",
+        "[&_.katex]:text-[1.08em] [&_.katex-display]:my-4 [&_.katex-display]:overflow-x-auto",
+        "[&_.katex-display]:py-1",
         className,
       )}
     >
@@ -602,23 +628,77 @@ function MathProse({ text, className }: { text: string; className?: string }) {
         const table = parseMarkdownTable(para);
         if (table) {
           return (
-            <div key={i} className="overflow-x-auto font-sans text-[14px]">
+            <div key={i} className="overflow-x-auto py-1 text-[14px]">
               <MarkdownTable data={table} />
             </div>
           );
         }
+
         const trimmed = para.trim();
-        const headerOnly = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
-        if (headerOnly && isExplanationLabel(headerOnly[1])) {
+
+        // Standalone display math block
+        if (/^\$\$[\s\S]+\$\$$/.test(trimmed) || /^\$[^$\n]+\$\s*$/.test(trimmed)) {
           return (
-            <p
+            <div key={i} className="py-1">
+              <FlashcardMath text={trimmed} displayPrefer />
+            </div>
+          );
+        }
+
+        // Section heading alone on a line: **What's going on.**
+        const headerOnly = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
+        if (headerOnly) {
+          const kind = classifyBoldLabel(headerOnly[1]);
+          if (kind === "section") {
+            return (
+              <h4
+                key={i}
+                className="mb-0 mt-6 text-[16px] font-bold leading-snug tracking-tight text-foreground first:mt-0 sm:text-[17px]"
+              >
+                {headerOnly[1].replace(/[.!:]+$/, "")}
+              </h4>
+            );
+          }
+          if (kind === "note") {
+            return (
+              <aside
+                key={i}
+                className="my-3 border-l-[3px] border-foreground/25 py-1 pl-3 text-[14.5px] font-semibold italic leading-relaxed text-foreground/85"
+              >
+                {headerOnly[1].replace(/[.!:]+$/, "")}
+              </aside>
+            );
+          }
+        }
+
+        // Note paragraph: **Watch.** rest… OR **Why it fails.** rest
+        const noteLead = trimmed.match(/^\*\*([^*]+)\*\*\s*([\s\S]*)$/);
+        if (noteLead && classifyBoldLabel(noteLead[1]) === "note") {
+          return (
+            <aside
               key={i}
-              className="mb-0.5 mt-5 font-sans text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground first:mt-0"
+              className="my-3 border-l-[3px] border-foreground/25 py-1.5 pl-3 text-[14.5px] leading-relaxed text-foreground/85"
             >
-              {headerOnly[1].replace(/[.!:]+$/, "")}
+              <span className="font-semibold italic">
+                {noteLead[1].replace(/[.!:]+$/, "")}.{" "}
+              </span>
+              <span className="font-semibold italic">
+                <RichMathLine text={noteLead[2]} />
+              </span>
+            </aside>
+          );
+        }
+
+        // Statement / part lead: **A) claim…** — **TRUE**
+        const stmtLead = trimmed.match(/^\*\*([A-E]\)[^*]+)\*\*/);
+        if (stmtLead) {
+          return (
+            <p key={i} className="m-0 mt-6 text-[15.5px] font-bold leading-snug text-foreground first:mt-0 sm:text-[16px]">
+              <RichMathLine text={trimmed} />
             </p>
           );
         }
+
         return (
           <p key={i} className="m-0">
             <RichMathLine text={para} />
@@ -719,30 +799,44 @@ function RichMathLine({ text }: { text: string }) {
     <span>
       {parts.map((p, i) => {
         if (p.kind === "bold") {
-          if (isExplanationLabel(p.value)) {
+          const kind = classifyBoldLabel(p.value);
+          if (kind === "section") {
             return (
-              <span
-                key={i}
-                className="mr-1 inline font-sans text-[0.72em] font-medium uppercase tracking-[0.1em] text-muted-foreground"
-              >
-                {p.value.replace(/[.!:]+$/, "")}
-              </span>
+              <strong key={i} className="font-bold text-foreground">
+                {p.value.replace(/[.!:]+$/, "")}.{" "}
+              </strong>
             );
           }
-          // Emphasize without heavy bold flashing through the paragraph.
+          if (kind === "step") {
+            return (
+              <strong key={i} className="font-bold text-foreground">
+                <FlashcardMath text={p.value} />
+              </strong>
+            );
+          }
+          if (kind === "note") {
+            return (
+              <strong key={i} className="font-semibold italic text-foreground">
+                {p.value.replace(/[.!:]+$/, "")}.{" "}
+              </strong>
+            );
+          }
+          // Emphasis: TRUE/FALSE, short highlights — real bold, not washed-out medium
           return (
-            <strong key={i} className="font-medium text-foreground">
+            <strong key={i} className="font-bold text-foreground">
               <FlashcardMath text={p.value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
-            <em key={i} className="not-italic text-muted-foreground">
+            <em key={i} className="italic text-foreground/80">
               <FlashcardMath text={p.value} />
             </em>
           );
         }
+        // Prefer display for standalone equation-looking chunks mid-flow when $$ used;
+        // inline $...$ stays inline (variables in sentences, like the samples).
         return <FlashcardMath key={i} text={p.value} />;
       })}
     </span>
@@ -809,7 +903,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5 sm:px-6">
+      <div className="min-h-0 flex-1 overflow-y-auto bg-background px-5 py-5 sm:px-7 sm:py-6">
         <MathProse text={body} />
       </div>
     </div>
