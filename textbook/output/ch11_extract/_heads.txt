@@ -1,0 +1,293 @@
+######## 11.1.txt ########
+
+===== PAGE 1 =====
+Financial Mathematics Practice Worksheet
+Chapter 11.1 – Interest Periods and Effective Rates
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Core formulas from Section 11.1: after t years a
+principal S0 earning nominal annual rate r with interest added n times per year grows to S0(1 + r/n)nt; the effective
+yearly rate is R = (1 + r/n)n − 1. Round dollar amounts to 2 decimal places and rates to 2 decimal places unless
+otherwise noted. Each task has 5 True/False statements (A–E); the number of true statements per task varies
+across the whole set (from 1 to 5) rather than being fixed.
+This set is built to spread evenly across every exercise type in Section 11.1:
+• Converting a nominal rate to an effective yearly rate R, for different n (Tasks 1, 5, 13)
+• Multi-year future value S0(1+r/n)nt for t ≠ 1 (Tasks 2, 8, 17)
+• Solving for time t via logarithms — doubling time, reaching a target (Tasks 6, 12, 20)
+• Solving for the required nominal rate r to hit a growth target (Tasks 9, 16)
+• Present value — how much had to be invested in the past to reach a value today (Tasks 11, 18)
+• Comparing two or more offers to see which is truly better (Tasks 3, 10, 19)
+• Converting a periodic (e.g., monthly credit-card) rate to an effective annual rate (Tasks 4, 14)
+• Comparing the same nominal rate under several compounding frequencies (Tasks 7, 15)
+
+===== PAGE 2 =====
+Task 1. Nominal Rate vs. Effective Rate on a Business Account
+(difficulty score 1/5)
+A print shop owner deposits $6,000 into a business savings account offering a nominal annual rate of
+7.20%, compounded monthly.
+Statements (True / False):
+a) The monthly periodic interest rate is 0.60%.
+b) The effective annual rate is approximately 7.44%.
+c) A $6,000 deposit left for exactly one year would grow to $6,446.54.
+d) If the bank instead compounded the same nominal rate annually, the effective annual rate would be
+higher than under monthly compounding.
+e) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.
+Solution – Task 1
+Given:
+P = $6,000
+Nominal annual rate r = 7.20% = 0.072
+Compounding frequency n = 12 (monthly)
+Time = 1 year
+Formula(s):
+Periodic rate = r/n
+R = (1 + r/n)n − 1
+
+######## 11.2.txt ########
+
+===== PAGE 1 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 1
+Financial Mathematics Practice Worksheet
+Chapter 11.2 – Continuous Compounding (Complete Set: Tasks 1–20)
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Key formulas: with continuous compounding of interest
+at nominal annual rate r, an initial principal S0 grows after t years to S(t) = S0·ert; each year the principal is multiplied by
+the same fixed factor er, so S(t+1) = S(t)·er. The effective interest rate with continuous compounding at annual rate r is
+er − 1, and this is also the largest effective annual rate obtainable at nominal rate r under any compounding frequency
+whatsoever, since (1 + r/n)n → er as n → ∞. Continuous compounding is therefore always at least as profitable for the
+lender as any less-frequent compounding at the SAME nominal rate, and the gap between them grows larger as either
+the interest rate or the number of years increases (and stays small for low rates over short periods) — though a higher
+nominal rate under less-frequent compounding can still outperform a lower nominal rate compounded continuously,
+since the ceiling result only compares schedules sharing one common rate. The identical exponential law, run with a
+negative rate, describes continuous depreciation: a value shrinking continuously at annual rate δ follows v(t) = v0·e−δt.
+Tasks 11–20 additionally combine these same results in multi-step ways — solving for an unknown rate or time from
+observed growth or decay, chaining sequential compounding phases, and comparing several instruments or assets at
+once — but every task relies exclusively on the formulas above. Round dollar amounts to 2 decimal places and rates to
+2 decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+1
+Continuous Compounding on a Bakery's Business Account
+1.0/5
+2
+Multi-Year Continuous Compounding for a Coffee Roasting Company
+1.2/5
+3
+Effective Annual Rate on a Continuously-Compounded Bond Fund
+1.4/5
+4
+Comparing Growth Factors on an Equipment Leasing Contract
+1.6/5
+5
+Year-Over-Year Growth by a Fixed Factor in a College Endowment Sub-Fund
+1.8/5
+
+######## 11.3.txt ########
+
+===== PAGE 1 =====
+Chapter 11.3 – Present Value (Tasks 1–20)  Financial Mathematics Practice Worksheet
+Page 1
+Financial Mathematics Practice Worksheet
+Chapter 11.3 – Present Value (Complete Set: Tasks 1–20)
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Key formulas: if the interest or discount rate is
+p% per year and r = p/100, the present discounted value (PDV) of an amount K payable in t years is K(1 + r)−t
+with annual interest payments, or Ke−rt with continuous compounding of interest. The (annual) discount factor is
+(1 + r)−1, whose reciprocal, 1 + r, equals one plus the discount rate; continuous compounding always produces a
+smaller present value than annual compounding at the same stated rate, since capital grows fastest under
+continuous compounding. Several tasks additionally draw on the chapter's optimal-timing result for an asset
+whose market value P(t) grows over time: the present value f(t) = P(t)e−rt is maximized at a time t* satisfying the
+first-order condition P′(t*) = rP(t*), subject to the second-order condition P″(t*) − rP′(t*) < 0 for a genuine
+maximum, with comparative-statics sensitivity dt*/dr = P(t*) / [P″(t*) − rP′(t*)]. All tasks below rely exclusively on
+these results. Round dollar amounts to 2 decimal places and rates/times to 2 decimal places unless otherwise
+noted.
+Contents
+Task
+Title
+Difficulty
+1
+Present Value of a Client Bonus Payment
+1/5
+2
+Continuous Compounding on a Consulting Milestone Payment
+1.3/5
+3
+Escrowed Sale Proceeds for a Landlord
+1.6/5
+4
+Funding a Future Equipment Purchase
+2/5
+5
+Implied Maturity of a Discounted Promissory Note
+2.3/5
+6
+Implied Continuous Discount Rate on a Collectible Painting
+2.5/5
+7
+
+######## 11.4.txt ########
+
+===== PAGE 1 =====
+Chapter 11.4 – Geometric Series (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 1
+Financial Mathematics Practice Worksheet
+Chapter 11.4 – Geometric Series (Complete Set: Tasks 1–20)
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Key formulas: a finite geometric series with first term
+a and quotient k ≠ 1 has sum sn = a + ak + ak2 + ··· + akn−1 = a·(kn − 1)/(k − 1); when k = 1, every term equals a and
+sn = a·n. An infinite geometric series a + ak + ak2 + ··· converges if and only if |k| < 1, in which case its sum is a/(1 −
+k); if |k| ≥ 1 the infinite series diverges and has no finite sum. Tasks 17 and 20 additionally draw on two related results
+about general (not necessarily geometric) infinite series: convergence requires the terms an to tend to 0, though this
+is necessary but not sufficient (the harmonic series 1 + 1/2 + 1/3 + ··· is the standard counterexample), and the
+p-series rule ∑1/np converges if and only if p > 1. All tasks below rely exclusively on these results. Round dollar and
+quantity amounts to 2 decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+1
+Startup Revenue Growth Over Five Years
+1/5
+2
+Perpetual Profit Stream from a Subscription Box Line
+1.3/5
+3
+Declining Annual Deposits into a Sinking Fund
+1.6/5
+4
+Lithium Reserve Depletion for a Mining Company
+1.9/5
+5
+Coal Reserves and Declining Output
+2.1/5
+6
+Alternating Correction Payments in a Trading Model
+2.3/5
+7
+Equal vs. Growing Pension Contributions
+2.5/5
+
+######## 11.5.txt ########
+
+===== PAGE 1 =====
+Section 11.5 – Total Present Value, Annuities, Annuities
+Due & Perpetuities
+Financial Mathematics Practice Worksheet
+Chapter 11.5 – Present Value, Future Value, Annuities, Annuities Due & Perpetuities (Complete Set: Tasks
+1–10)
+Tasks 1–10, sorted from easiest to hardest (difficulty 1.0/5 to 3.0/5). Key formulas: the present value of a
+single future payment of A due in n years, discounted at annual rate r, is x = A/(1+r)n; the future value of a
+present deposit P after n years is F = P(1+r)n. For n successive equal payments of a per period (an ordinary
+annuity, paid at the end of each period), the present value is Pn = (a/r)[1 − 1/(1+r)n], and the future value,
+immediately after the last payment, is Fn = (a/r)[(1+r)n − 1]. As n tends to infinity, the annuity's present-value
+formula reduces to the present value of a perpetuity, P = a/r. An annuity due shifts every payment to the
+START of each period instead of the end, so its present and future values are simply the corresponding
+ordinary-annuity values multiplied by (1+r): Pdue = Pn×(1+r) and Fdue = Fn×(1+r). Every task relies
+exclusively on these formulas. Round dollar amounts to 2 decimal places and rates/percentages to 2
+decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+1
+Present Value of a Single Future Payment for a Bakery Equipment Fund
+1.0/5
+2
+Future Value of a Freelancer's Present Deposit
+1.2/5
+3
+Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund
+1.4/5
+4
+Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund
+1.6/5
+5
+Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan
+1.8/5
+6
+Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship
+2.0/5
+7
+
+######## 11.6.txt ########
+
+===== PAGE 1 =====
+Chapter 11.6 – Mortgage Repayments
+Financial Mathematics Practice Worksheet
+Page 1
+Financial Mathematics Practice Worksheet
+Chapter 11.6 – Mortgage Repayments
+Tasks 1–13, sorted from easiest to hardest (difficulty 1/5 to 5/5, with Tasks 11–13 as extra harder capstone
+comparisons). Key ideas: a loan of K dollars repaid in n equal instalments of a dollars per period, at periodic interest
+rate r, satisfies K = (a/r)·[1−(1+r)−n], so the required payment is a = rK/[1−(1+r)−n]. Each payment splits into an interest
+part (r times the outstanding balance from the previous period) and a principal part (the rest of the payment, which
+reduces the balance). If the first payment is made immediately rather than at the end of the first period (an annuity
+due), the first payment counts at full face value and only the remaining n−1 payments are discounted. When the
+payment amount a is fixed in advance instead of solved for, the number of periods needed is the smallest integer n
+with n ≥ [ln a − ln(a−rK)]/ln(1+r); unless this holds with equality, the final payment will be smaller than a. Finally, when
+several deposits are made within a single interest period and the bank applies simple interest to money held for only
+part of that period, each deposit is multiplied by (1+r·t), where t is the remaining fraction of the period after the deposit
+is made. Tasks 11–13 additionally compare the present value of several complete payment schedules against each
+other — including schedules that combine an upfront cash portion with a later series of equal payments — to
+determine which schedule is cheapest, and how that conclusion can change at a different interest rate. Round dollar
+amounts to 2 decimal places unless otherwise noted.
+Task 1. Equipment Loan: Finding the Equal Annual Payment
+Difficulty: 1/5
+A small bakery-supply distributor borrows $60,000 at the beginning of the year to buy a delivery van and a
+walk-in cooler. The loan is to be repaid in 6 equal instalments at the end of each year, with interest charged at
+12% per year, compounding annually.
+Statements (True / False):
+a) The periodic interest rate to use in the payment formula is r = 0.12.
+b) The required equal annual payment is approximately $14,593.54.
+c) The interest portion of the first payment is exactly $7,200.00.
+d) The principal-repayment portion of the first payment is more than half of the total payment amount.
+e) The outstanding balance immediately after the second payment is approximately $45,000.00.
+Solution – Task 1
+Given:
+• K (loan amount) = $60,000
+• r (annual interest rate) = 0.12
+• n = 6 equal annual payments
+Formula(s):
+• Equal-payment formula: K = (a/r)·[1−(1+r)−n], so a = rK/[1−(1+r)−n]
+• Interest in a period = r × outstanding balance at the start of that period
+
+######## 11.7.txt ########
+
+===== PAGE 1 =====
+Section 11.7 — Internal Rate of 
+Return
+Practice Worksheet — Tasks 1–10
+Based exclusively on the concepts, formulas and worked example of Section 11.7: the net present value formula A = 
+a_0 + a_1/(1+r) + a_2/(1+r)^2 + ... + a_n/(1+r)^n, the internal rate of return equation (11.7.1), the substitution s 
+= (1+r)^-1, the one-period formula r = (b/a) - 1, and the uniqueness/positivity theorem for a_0 < 0 with a_1, ..., 
+a_n > 0.
+TASK 1
+Difficulty: 1/5
+A small bakery invests $8,000 in a new commercial oven. The oven is expected to generate a single net return of 
+$9,600, paid in full at the end of one year.
+Given:
+Symbol
+Value
+a0 (initial outlay)
+-$8,000
+a1 (return at end of 
+Year 1)
+$9,600
+n
+1 year
+Formula(s):
+For a one-year project: -a + (1+r)-1 b = 0,   so   r = (b/a) - 1
+Step-by-Step Calculation:
+Step 1: Identify a = 8,000 (amount invested) and b = 9,600 (amount returned).
+Step 2: r = (b/a) - 1 = (9,600 / 8,000) - 1 = 1.20 - 1 = 0.20 = 20%.
+Step 3 (for later statements): NPV at rate r is A = a0 + a1/(1+r).
+Statements:
+A) The internal rate of return for this project is exactly 20%.
+B) At an interest rate of 15%, the net present value of this project is positive.
+C) At an interest rate of 25%, the net present value of this project is positive.
+D) If the return had instead been $10,000 (outlay unchanged), the internal rate of return would exceed 24%.
+E) This project has a unique internal rate of return greater than -1.
+Explanation of Statements:
+A) r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.
+B) NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = $347.83, which is positive (15% is below the 20% IRR, so 
+NPV must be positive).
+C) NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -$320.00, which is negative, not positive (25% is above the 

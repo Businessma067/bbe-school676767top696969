@@ -1,0 +1,1091 @@
+
+===== PAGE 1 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 1
+Financial Mathematics Practice Worksheet
+Chapter 11.2 – Continuous Compounding (Complete Set: Tasks 1–20)
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Key formulas: with continuous compounding of interest
+at nominal annual rate r, an initial principal S0 grows after t years to S(t) = S0·ert; each year the principal is multiplied by
+the same fixed factor er, so S(t+1) = S(t)·er. The effective interest rate with continuous compounding at annual rate r is
+er − 1, and this is also the largest effective annual rate obtainable at nominal rate r under any compounding frequency
+whatsoever, since (1 + r/n)n → er as n → ∞. Continuous compounding is therefore always at least as profitable for the
+lender as any less-frequent compounding at the SAME nominal rate, and the gap between them grows larger as either
+the interest rate or the number of years increases (and stays small for low rates over short periods) — though a higher
+nominal rate under less-frequent compounding can still outperform a lower nominal rate compounded continuously,
+since the ceiling result only compares schedules sharing one common rate. The identical exponential law, run with a
+negative rate, describes continuous depreciation: a value shrinking continuously at annual rate δ follows v(t) = v0·e−δt.
+Tasks 11–20 additionally combine these same results in multi-step ways — solving for an unknown rate or time from
+observed growth or decay, chaining sequential compounding phases, and comparing several instruments or assets at
+once — but every task relies exclusively on the formulas above. Round dollar amounts to 2 decimal places and rates to
+2 decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+1
+Continuous Compounding on a Bakery's Business Account
+1.0/5
+2
+Multi-Year Continuous Compounding for a Coffee Roasting Company
+1.2/5
+3
+Effective Annual Rate on a Continuously-Compounded Bond Fund
+1.4/5
+4
+Comparing Growth Factors on an Equipment Leasing Contract
+1.6/5
+5
+Year-Over-Year Growth by a Fixed Factor in a College Endowment Sub-Fund
+1.8/5
+6
+Continuous Depreciation of a Courier Company's Van Fleet
+2.0/5
+7
+Doubling Time for a REIT's Continuously-Compounded Reserve Account
+2.3/5
+8
+Time for a Stamping Press to Lose Value Under Continuous Depreciation
+2.5/5
+9
+How the Continuous-vs-Annual Gap Widens With Rate and Time at a Regional Bank
+2.8/5
+10
+Continuous Compounding as the Ceiling on a Fund's Return at an Investment Advisory Firm
+3.0/5
+11
+Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund
+3.2/5
+12
+A Corporate Treasurer's Three-Bank Comparison With Differing Nominal Rates
+3.4/5
+13
+Net Growth Rate of a Hedge Fund After a Continuous Management Fee Drag
+3.6/5
+14
+Crossover Point Between a Growing Equity Stake and Shrinking Factory Equipment
+3.8/5
+15
+Verifying the Compounding-Frequency Ceiling Across Four Schedules for a Municipal Reserve 4.0/5
+16
+Reverse-Engineering the Upfront Deposit Needed for a Tuition Lock
+4.2/5
+17
+A Logistics Company's Two-Phase Continuous Growth: Expansion Then Maturity
+4.4/5
+18
+Reverse-Engineering a Crane's Implied Depreciation Rate for a Construction Equipment Reseller4.6/5
+19
+Doubling, Tripling, and Quadrupling Times for an Impact Investing Fund
+4.8/5
+
+===== PAGE 2 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 2
+20
+Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth and Decay
+5.0/5
+
+===== PAGE 3 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 3
+Task 1. Continuous Compounding on a Bakery's Business Account
+Difficulty: 1.0/5
+Ms. Delgado, the owner of an artisan bakery, deposits $4,500 into a business savings account that compounds
+interest continuously at a nominal annual rate of 5%.
+Statements (True / False):
+a) The balance after exactly 1 year is $4,730.72.
+b) The interest earned during the first year is $230.72.
+c) If the bank compounded the same 5% nominal rate annually (once per year) instead of continuously, the year-end
+balance would be $4,735.00.
+d) The dollar difference between continuous compounding and annual compounding at the same nominal rate is
+$5.72.
+e) The growth factor e^0.05 rounds to 1.0400.
+Solution – Task 1
+Given:
+• S0 = $4,500
+• Nominal annual rate r = 5% = 0.05
+• Compounding: continuous
+• t = 1 year
+Formula(s):
+• S(t) = S0·e^(rt)
+Step-by-Step Calculations:
+S(1) = 4,500 × e^0.05 = 4,500 × 1.0512711 = $4,730.72.
+Interest = 4,730.72 − 4,500.00 = $230.72.
+Annual (m = 1) compounding at 5%: S = 4,500 × 1.05 = $4,725.00.
+Difference = 4,730.72 − 4,725.00 = $5.72.
+e^0.05 = 1.0512711, which rounds to 1.0513, not 1.0400.
+Explanation of Each Statement:
+a) TRUE. Plugging S0 = 4,500, r = 0.05, and t = 1 into S(t) = S0e^(rt) gives 4,500 × e^0.05 = 4,500 × 1.0512711 =
+$4,730.72, matching the statement exactly. Continuous compounding assumes interest is being added at every instant
+rather than at discrete intervals, and this exponential formula captures that limiting behavior directly.
+b) TRUE. Interest earned is simply the year-end balance minus the original deposit: 4,730.72 − 4,500.00 = $230.72,
+matching the statement exactly.
+c) FALSE. Annual compounding at 5% for one year gives 4,500 × 1.05 = $4,725.00, not $4,735.00. The stated figure
+overstates the true annual-compounding balance by $10.00, and in any case it would still fall short of the
+continuous-compounding balance of $4,730.72, since continuous compounding is the most frequent schedule possible
+and can never be beaten by a less-frequent one at the same nominal rate.
+d) TRUE. The correctly computed annual balance is $4,725.00, so the gap versus the continuous balance is 4,730.72 −
+4,725.00 = $5.72, exactly as stated.
+e) FALSE. e raised to the power 0.05 equals approximately 1.0512711, which rounds to 1.0513, not 1.0400 — the
+figure of 1.0400 would instead correspond to a much smaller exponent and does not describe this 5%
+continuously-compounded growth factor at all.
+Final Answers — a: TRUE b: TRUE c: FALSE d: TRUE e: FALSE
+
+===== PAGE 4 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 4
+Task 2. Multi-Year Continuous Compounding for a Coffee Roasting Company
+Difficulty: 1.2/5
+A specialty coffee roasting company invests $3,200 of retained earnings into a fund that compounds continuously at
+a nominal annual rate of 8%, and plans to leave the funds untouched for 6 years.
+Statements (True / False):
+a) After 6 years, the balance is approximately $5,171.44.
+b) Doubling the 3-year balance gives the correct 6-year balance.
+c) The total interest earned over the 6 years is approximately $2,000.00.
+d) The 12-year balance would be exactly double the 6-year balance.
+e) The 12-year balance is less than double the 6-year balance.
+Solution – Task 2
+Given:
+• S0 = $3,200
+• Nominal annual rate r = 8% = 0.08
+• Compounding: continuous
+• t = 6 years (3 and 12 years for parts b, d, e)
+Formula(s):
+• S(t) = S0·e^(rt)
+Step-by-Step Calculations:
+S(6) = 3,200 × e^(0.08 × 6) = 3,200 × e^0.48 = 3,200 × 1.6161681 = $5,171.44.
+S(3) = 3,200 × e^(0.08 × 3) = 3,200 × e^0.24 = 3,200 × 1.2712492 = $4,067.998 ≈ $4,068.00; doubling gives
+$8,135.99, which does not equal S(6).
+Interest = 5,171.44 − 3,200.00 = $1,971.44, not $2,000.00.
+S(12) = 3,200 × e^(0.08 × 12) = 3,200 × e^0.96 = 3,200 × 2.6116965 = $8,357.43.
+Double of S(6) = 2 × 5,171.44 = $10,342.88; since $8,357.43 < $10,342.88, the 12-year balance is indeed less than
+double the 6-year balance.
+Explanation of Each Statement:
+a) TRUE. S(6) = 3,200 × e^0.48 = $5,171.44, matching the statement exactly.
+b) FALSE. The 3-year balance of $4,068.00 is correctly computed, but doubling it to get $8,135.99 does not reproduce
+the true 6-year balance of $5,171.44. Continuous growth compounds multiplicatively rather than additively, so
+extending the holding period from 3 to 6 years squares the 3-year growth factor (since e^0.48 = (e^0.24)^2) rather than
+simply doubling the balance, and the true 6-year figure is well below the doubled estimate.
+c) FALSE. The actual interest earned is 5,171.44 − 3,200.00 = $1,971.44, not $2,000.00 — the stated figure is a
+rounded-up approximation that does not match the precise calculation.
+d) FALSE. The true 12-year balance is 3,200 × e^0.96 = $8,357.43, which is noticeably less than double the 6-year
+balance of $5,171.44 (which would be $10,342.88). As in part (b), extending the time span multiplies growth factors
+rather than balances, so doubling the number of years does not double the account value.
+e) TRUE. The correctly computed 12-year balance is $8,357.43, and comparing this to double the 6-year balance
+($10,342.88) confirms that $8,357.43 is indeed smaller, consistent with the multiplicative (rather than additive) nature of
+continuous exponential growth.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 5 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 5
+Task 3. Effective Annual Rate on a Continuously-Compounded Bond Fund
+Difficulty: 1.4/5
+An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how
+the effective annual yield (EAR) compares to the nominal rate, and how it would change if the nominal rate doubled
+to 18%.
+Statements (True / False):
+a) The effective annual rate (EAR) is approximately 9.42%.
+b) On a $15,000 investment, the year-end balance is $16,412.61.
+c) The EAR exceeds the nominal rate by more than 0.75 percentage points.
+d) If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.
+e) At the 18% nominal rate, the EAR exceeds 19.5%.
+Solution – Task 3
+Given:
+• Nominal annual rate r = 9% = 0.09 (and 18% for parts d, e)
+• Compounding: continuous
+• P = $15,000 (part b)
+Formula(s):
+• EAR = e^r − 1
+• S(t) = S0·e^(rt)
+Step-by-Step Calculations:
+EAR = e^0.09 − 1 = 1.0941743 − 1 = 0.0941743 ≈ 9.42%.
+S(1) = 15,000 × e^0.09 = 15,000 × 1.0941743 = $16,412.61.
+Difference from nominal = 9.4174% − 9.00% = 0.4174 percentage points.
+At 18%: EAR = e^0.18 − 1 = 1.1972174 − 1 = 0.1972174 ≈ 19.72%.
+Double of the original EAR = 2 × 9.4174% = 18.8349%; since 19.72% > 18.83%, the new EAR does exceed double
+the original.
+Explanation of Each Statement:
+a) TRUE. EAR = e^0.09 − 1 ≈ 9.42%, matching the statement exactly.
+b) TRUE. S(1) = 15,000 × e^0.09 = $16,412.61, matching the statement exactly.
+c) FALSE. The actual gap between the EAR and the nominal rate is only about 0.4174 percentage points (9.4174% −
+9.00%), which is well under 0.75 percentage points, not more than it.
+d) TRUE. Doubling the nominal rate to 18% raises the EAR to approximately 19.72%, which is indeed higher than
+double the original EAR of 18.83%. This happens because e^r grows faster than linearly in r, so doubling the exponent
+more than doubles the resulting effective rate above the nominal baseline.
+e) TRUE. e^0.18 − 1 ≈ 19.72%, which is above 19.5%, matching the statement exactly.
+Final Answers — a: TRUE b: TRUE c: FALSE d: TRUE e: TRUE
+
+===== PAGE 6 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 6
+Task 4. Comparing Growth Factors on an Equipment Leasing Contract
+Difficulty: 1.6/5
+An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the
+growth factor K (the amount to which $1 grows over one year) under yearly, semi-annual, and continuous
+compounding, applied to a $75,000 balance.
+Statements (True / False):
+a) Under yearly compounding, K = 1.1000.
+b) Under semi-annual compounding, K = 1.1025.
+c) Under continuous compounding, K ≈ 1.1052.
+d) On the $75,000 balance, continuous compounding exceeds semi-annual compounding by $250.32.
+e) The gap between semi-annual and yearly compounding is larger than the gap between continuous and
+semi-annual compounding.
+Solution – Task 4
+Given:
+• Nominal annual rate r = i = 10% = 0.10
+• Compounding schedules: yearly (m = 1), semi-annual (m = 2), continuous
+• P = $75,000 (parts d, e)
+Formula(s):
+• Kyearly = 1 + i
+• Ksemi = (1 + i/2)^2
+• Kcontinuous = e^r
+Step-by-Step Calculations:
+K_yearly = 1 + 0.10 = 1.1000.
+K_semi = (1.05)^2 = 1.1025.
+K_cont = e^0.10 = 1.1051709.
+75,000 × (K_cont − K_semi) = 75,000 × (1.1051709 − 1.1025) = 75,000 × 0.0026709 = $200.32, not $250.32.
+75,000 × (K_semi − K_yearly) = 75,000 × 0.0025 = $187.50; comparing 187.50 to 200.32, the semi-vs-yearly gap is
+actually the smaller of the two.
+Explanation of Each Statement:
+a) TRUE. K_yearly = 1 + 0.10 = 1.1000, matching the statement exactly.
+b) TRUE. K_semi = (1.05)^2 = 1.1025, matching the statement exactly.
+c) TRUE. K_cont = e^0.10 ≈ 1.1052, matching the statement exactly.
+d) FALSE. The correctly computed gap on $75,000 is 75,000 × (1.1051709 − 1.1025) = $200.32, not $250.32; the
+stated figure overstates the true difference by exactly $50.00.
+e) FALSE. The semi-annual-versus-yearly gap is 75,000 × (1.1025 − 1.1000) = $187.50, which is in fact smaller than
+the continuous-versus-semi-annual gap of $200.32, not larger. This is consistent with the general pattern that each
+successive increase in compounding frequency adds a further boost, and as frequency approaches its continuous limit
+those incremental boosts do not need to shrink monotonically in absolute dollar terms.
+Final Answers — a: TRUE b: TRUE c: TRUE d: FALSE e: FALSE
+
+===== PAGE 7 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 7
+Task 5. Year-Over-Year Growth by a Fixed Factor in a College Endowment Sub-Fund
+Difficulty: 1.8/5
+A college endowment's growth sub-fund is currently valued at $95,000 and earns continuous compounding at a
+nominal annual rate of 4.5%. The board wants to project the balance forward using the property that the principal is
+multiplied by a fixed factor each year.
+Statements (True / False):
+a) One year from now, the balance will be approximately $98,500.00.
+b) Two years from now, the balance will be approximately $103,946.56.
+c) The dollar increase in year 1 is larger than the dollar increase in year 2.
+d) Each year, the balance is multiplied by a different factor.
+e) If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double.
+Solution – Task 5
+Given:
+• S(0) = $95,000
+• Nominal annual rate r = 4.5% = 0.045 (and 9% for part e)
+• Compounding: continuous
+Formula(s):
+• S(t + 1) = S(t)·e^r
+• S(t) = S0·e^(rt)
+Step-by-Step Calculations:
+S(1) = 95,000 × e^0.045 = 95,000 × 1.0460279 = $99,372.65, not $98,500.00.
+S(2) = 95,000 × e^0.09 = 95,000 × 1.0941743 = $103,946.56.
+Increase(0→1) = 99,372.65 − 95,000.00 = $4,372.65. Increase(1→2) = 103,946.56 − 99,372.65 = $4,573.91.
+The textbook property S(t + 1) = S(t)·e^r establishes that the SAME factor e^0.045 ≈ 1.0460 is applied every year,
+regardless of the current balance.
+At 9%: e^0.09 = 1.0941743, which is far less than 2 × e^0.045 = 2.0920557.
+Explanation of Each Statement:
+a) FALSE. S(1) = 95,000 × e^0.045 = $99,372.65, not $98,500.00 — the stated figure is too low by roughly $872.65.
+b) TRUE. S(2) = 95,000 × e^0.09 = $103,946.56, matching the statement exactly.
+c) FALSE. The increase actually grows larger over time as the balance compounds on itself: the year-1 increase is
+$4,372.65, which is smaller than the year-2 increase of $4,573.91, not larger as claimed.
+d) FALSE. This directly contradicts the property established in the text, S(t + 1) = S(t)·e^r: the multiplying factor e^r
+depends only on the fixed nominal rate r, not on the current size of the balance, so the SAME factor (here, e^0.045 ≈
+1.0460) is applied every single year no matter how large the balance has already grown.
+e) FALSE. Doubling the rate does not double the growth factor, because e^(2r) equals (e^r)^2, not 2 × e^r. Here e^0.09
+≈ 1.0942, which is nowhere near the claimed 2.0921 — that number instead comes from incorrectly doubling e^0.045
+directly rather than doubling the exponent inside it.
+Final Answers — a: FALSE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 8 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 8
+Task 6. Continuous Depreciation of a Courier Company's Van Fleet
+Difficulty: 2.0/5
+A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate
+of 10% (δ = 0.10), so that its value after t years follows v(t) = v0·e^(−δt).
+Statements (True / False):
+a) The fleet's value after 4 years is approximately $40,219.20.
+b) The fleet's value after 7 years is approximately $29,795.12.
+c) The 4-year value represents about 67.03% of the original $60,000 value.
+d) If the depreciation rate were instead 20% (double 10%), the 4-year value would fall below $25,000.
+e) The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.
+Solution – Task 6
+Given:
+• v0 = $60,000
+• Annual depreciation rate δ = 10% = 0.10 (and 20% for part d)
+• Compounding: continuous
+Formula(s):
+• v(t) = v0·e^(−δt)
+Step-by-Step Calculations:
+v(4) = 60,000 × e^(−0.10 × 4) = 60,000 × e^(−0.40) = 60,000 × 0.6703200 = $40,219.20.
+v(7) = 60,000 × e^(−0.10 × 7) = 60,000 × e^(−0.70) = 60,000 × 0.4965853 = $29,795.12.
+Percentage of original = 40,219.20 / 60,000 = 0.670320 ≈ 67.03%.
+At δ = 0.20: v(4) = 60,000 × e^(−0.80) = 60,000 × 0.4493290 = $26,959.74, which is above $25,000, not below it.
+v(1) = 60,000 × e^(−0.10) = $54,290.25, so year-1 loss = 60,000 − 54,290.25 = $5,709.75. v(3) = 60,000 × e^(−0.30) =
+$44,449.09, so year-4 loss = v(3) − v(4) = 44,449.09 − 40,219.20 = $4,229.89.
+Explanation of Each Statement:
+a) TRUE. v(4) = 60,000 × e^(−0.40) = $40,219.20, matching the statement exactly.
+b) TRUE. v(7) = 60,000 × e^(−0.70) = $29,795.12, matching the statement exactly.
+c) TRUE. 40,219.20 / 60,000 = 0.670320, which is approximately 67.03%, matching the statement exactly.
+d) FALSE. Doubling the depreciation rate to 20% gives v(4) = 60,000 × e^(−0.80) ≈ $26,959.74, which remains above
+$25,000 rather than falling below it.
+e) TRUE. Because continuous depreciation removes a fixed PROPORTION of the current value each year rather than a
+fixed dollar amount, the dollar decline is largest when the base value is largest (i.e., early on) and shrinks as the value
+itself shrinks. The first-year loss of about $5,709.75 is indeed larger than the fourth-year loss of about $4,229.89,
+confirming this pattern.
+Final Answers — a: TRUE b: TRUE c: TRUE d: FALSE e: TRUE
+
+===== PAGE 9 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 9
+Task 7. Doubling Time for a REIT's Continuously-Compounded Reserve Account
+Difficulty: 2.3/5
+A real estate investment trust (REIT) places $18,000 into a reserve account earning continuous compounding at a
+nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after
+three such doubling periods.
+Statements (True / False):
+a) The doubling time at 5.5% is approximately 12.60 years.
+b) At exactly 12.60 years, the balance reaches approximately $36,000.00.
+c) If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.
+d) After three full doubling periods, the balance would grow to 6 times the original principal.
+e) A higher interest rate r gives a longer doubling time.
+Solution – Task 7
+Given:
+• S0 = $18,000
+• Nominal annual rate r = 5.5% = 0.055 (and 11% for part c)
+• Compounding: continuous
+• Target: S(t) = 2S0
+Formula(s):
+• S(t) = S0·e^(rt)
+• Doubling time: e^(rt) = 2 ⇒ t = ln(2)/r
+Step-by-Step Calculations:
+ln(2) = 0.693147.
+t = 0.693147 / 0.055 = 12.6027 years.
+At 11%: t = 0.693147 / 0.11 = 6.3013 years, which is half of 12.6027, not unchanged.
+S(12.6027) = 18,000 × e^(0.055 × 12.6027) = 18,000 × e^0.693147 = 18,000 × 2 = $36,000.00.
+After 3 doubling periods (37.8080 years), the growth factor is 2 × 2 × 2 = 8, so S = 18,000 × 8 = $144,000.00, not 6 ×
+18,000 = $108,000.00.
+Explanation of Each Statement:
+a) TRUE. t = ln(2)/0.055 ≈ 12.60 years, matching the statement exactly.
+b) TRUE. By construction, e^(rt) = 2 at the doubling time, so the balance is exactly $36,000.00, twice the original
+$18,000, matching the statement exactly.
+c) FALSE. Doubling time is inversely proportional to the rate, not independent of it — doubling the rate to 11% HALVES
+the doubling time to approximately 6.30 years, it does not leave it unchanged at 12.60 years.
+d) FALSE. Each successive doubling period multiplies the balance by 2 again, so after three full doubling periods the
+balance has grown by a factor of 2 × 2 × 2 = 8, not 6. Eight times the original $18,000 principal is $144,000.00, not the
+$108,000.00 implied by a 6-times multiplier.
+e) FALSE. Since t = ln(2)/r has r in the denominator, a LARGER r produces a SMALLER (shorter) doubling time, not a
+longer one — this is exactly why doubling the rate from 5.5% to 11% cut the doubling time in half rather than
+lengthening it.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 10 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 10
+Task 8. Time for a Stamping Press to Lose Value Under Continuous Depreciation
+Difficulty: 2.5/5
+A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual
+rate of 18% (δ = 0.18). Management wants to know how long it will take for the press to lose 60% of its original value
+(retaining only 40%), and how that compares to a slower depreciation scenario and to losing a larger share of value.
+Statements (True / False):
+a) Setting v0·e^(−δt) = 0.40v0 and solving gives t = ln(2.5)/δ.
+b) The press will have lost 60% of its value after approximately 5.09 years.
+c) At that point, the press's remaining value is approximately $48,000.00.
+d) If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18
+years.
+e) The time to lose 80% of the value is longer than the time to lose 60% of the value.
+Solution – Task 8
+Given:
+• v0 = $120,000
+• Annual depreciation rate δ = 18% = 0.18 (and 9% for part d)
+• Compounding: continuous
+• Target: v(t) = 0.40v0 (and 0.20v0 for part e)
+Formula(s):
+• v(t) = v0·e^(−δt)
+• e^(−δt) = fraction remaining ⇒ t = −ln(fraction)/δ = ln(1/fraction)/δ
+Step-by-Step Calculations:
+1/0.40 = 2.5, and ln(2.5) = 0.916291.
+t = 0.916291 / 0.18 = 5.0905 years.
+v(5.0905) = 120,000 × 0.40 = $48,000.00.
+At δ = 0.09: t = 0.916291 / 0.09 = 10.1810 years, which is indeed double 5.0905 years, since halving δ doubles t.
+For 80% loss (retain 20%): 1/0.20 = 5, ln(5) = 1.609438. t = 1.609438 / 0.18 = 8.9413 years, which is longer than
+5.0905 years.
+Explanation of Each Statement:
+a) TRUE. Dividing both sides by v0 and taking natural logs of 1/0.40 = 2.5 gives δt = ln(2.5), so t = ln(2.5)/δ, matching
+the statement exactly.
+b) TRUE. t = ln(2.5)/0.18 ≈ 5.09 years, matching the statement exactly.
+c) TRUE. Retaining 40% of the original $120,000 value gives 120,000 × 0.40 = $48,000.00, matching the statement
+exactly.
+d) TRUE. Since t = ln(2.5)/δ has δ in the denominator, halving δ from 18% to 9% doubles the required time, from 5.09
+years to 10.18 years, exactly as stated.
+e) TRUE. Losing a larger share of the original value naturally takes longer under continuous proportional depreciation:
+reaching only 20% remaining (an 80% loss) requires t = ln(5)/0.18 ≈ 8.94 years, which is indeed longer than the 5.09
+years needed to reach 40% remaining (a 60% loss).
+Final Answers — a: TRUE b: TRUE c: TRUE d: TRUE e: TRUE
+
+===== PAGE 11 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 11
+Task 9. How the Continuous-vs-Annual Gap Widens With Rate and Time at a Regional
+Bank
+Difficulty: 2.8/5
+A regional bank's marketing team wants to demonstrate to clients how the dollar gap between continuous
+compounding and ordinary annual compounding changes with the interest rate and the holding period. It compares
+nominal rates of 3% and 15%, each applied for 1 year to a $25,000 deposit, and then extends the 3% case to an
+8-year horizon.
+Statements (True / False):
+a) At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on $25,000 is
+approximately $11.36.
+b) At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on $25,000 is
+approximately $295.86.
+c) The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.
+d) Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately $111.98.
+e) Continuous compounding becomes less advantageous to the lender over longer holding periods.
+Solution – Task 9
+Given:
+• P = $25,000
+• Nominal annual rates r = 3% and r = 15%
+• Compounding: continuous vs. annual (m = 1)
+• t = 1 year (and 8 years for part d, e)
+Formula(s):
+• Scont = P·e^(rt)
+• Sannual = P·(1 + r)^t
+Step-by-Step Calculations:
+At 3%, 1 yr: S_cont = 25,000 × e^0.03 = $25,761.36. S_annual = 25,000 × 1.03 = $25,750.00. Gap = $11.36.
+At 15%, 1 yr: S_cont = 25,000 × e^0.15 = $29,045.86. S_annual = 25,000 × 1.15 = $28,750.00. Gap = $295.86.
+Ratio = 295.86 / 11.36 ≈ 26.04, which is less than 30.
+At 3%, 8 yrs: S_cont = 25,000 × e^0.24 = $31,781.23. S_annual = 25,000 × (1.03)^8 = $31,669.25. Gap = $111.98.
+The 8-year gap ($111.98) is far larger than the 1-year gap ($11.36) at the same 3% rate, so the gap GROWS, not
+shrinks, as the horizon lengthens.
+Explanation of Each Statement:
+a) TRUE. Gap = 25,761.36 − 25,750.00 = $11.36, matching the statement exactly.
+b) TRUE. Gap = 29,045.86 − 28,750.00 = $295.86, matching the statement exactly.
+c) FALSE. The actual ratio is 295.86 / 11.36 ≈ 26.04, which is more than 15 but less than 30 — the claim of "more than
+30 times" overstates the true multiple.
+d) TRUE. Over 8 years at 3%, the gap grows to 31,781.23 − 31,669.25 = $111.98, matching the statement exactly.
+e) FALSE. This directly contradicts both the calculation above and the textbook's stated rule that the difference between
+continuous and less-frequent compounding widens as the number of years increases: here the 8-year gap ($111.98) is
+nearly ten times the 1-year gap ($11.36), showing continuous compounding becomes MORE advantageous to the
+lender over longer holding periods, not less.
+Final Answers — a: TRUE b: TRUE c: FALSE d: TRUE e: FALSE
+
+===== PAGE 12 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 12
+Task 10. Continuous Compounding as the Ceiling on a Fund's Return at an
+Investment Advisory Firm
+Difficulty: 3.0/5
+An investment advisory firm is evaluating a $400,000 allocation and comparing two funds that both quote a nominal
+annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to
+check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.
+Statements (True / False):
+a) Fund A's (continuous) year-end value is approximately $439,863.54.
+b) Fund B's (monthly) year-end value is approximately $439,750.00.
+c) The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding
+frequency, is approximately 9.50% — the same as the nominal rate itself.
+d) If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding
+value.
+e) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.
+Solution – Task 10
+Given:
+• P = $400,000
+• Nominal annual rate r = i = 9.5% = 0.095
+• Fund A: continuous compounding
+• Fund B: m = 12 (monthly); part d, e also consider m = 365 (daily)
+• t = 1 year
+Formula(s):
+• SA = P·e^(rt)
+• SB = P·(1 + i/m)^(mt)
+• EARmax = e^r − 1
+Step-by-Step Calculations:
+Fund A: S_A = 400,000 × e^0.095 = 400,000 × 1.0996589 = $439,863.54.
+Fund B (monthly): periodic rate = 0.095/12 = 0.0079167. S_B = 400,000 × (1.0079167)^12 = 400,000 × 1.0992476 =
+$439,699.03, not $439,750.00.
+EAR_max = e^0.095 − 1 ≈ 9.97%, which exceeds the 9.50% nominal rate; it is not equal to it.
+Fund B (daily): S_daily = 400,000 × (1 + 0.095/365)^365 = 400,000 × 1.0996453 = $439,858.10, which is still below
+S_A = $439,863.54.
+Gap (continuous vs. monthly) = 439,863.54 − 439,699.03 = $164.51. Gap (continuous vs. daily) = 439,863.54 −
+439,858.10 = $5.44.
+Explanation of Each Statement:
+a) TRUE. S_A = 400,000 × e^0.095 = $439,863.54, matching the statement exactly.
+b) FALSE. The correctly computed monthly-compounded value is 400,000 × (1.0079167)^12 = $439,699.03, not
+$439,750.00 — the stated figure overstates the true monthly value by about $50.97.
+c) FALSE. The continuous-compounding effective rate, e^0.095 − 1 ≈ 9.97%, is the true ceiling on the effective annual
+rate at a 9.5% nominal rate, and it is noticeably higher than 9.50% — the nominal and effective rates are equal only in
+the special case of annual (once-per-year) compounding, not as a general ceiling.
+
+===== PAGE 13 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 13
+d) FALSE. Daily compounding gives Fund B a value of approximately $439,858.10, which remains below Fund A's
+continuous-compounding value of $439,863.54, not above it. Since continuous compounding is the mathematical limit
+of compounding frequency as the number of periods tends to infinity, no finite compounding frequency — however
+frequent — can ever exceed it at the same nominal rate.
+e) TRUE. The gap shrinks from $164.51 (monthly) to $5.44 (daily) as the discrete schedule compounds more often,
+illustrating exactly how (1 + r/n)^n approaches e^r as n grows without ever reaching or surpassing it.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 14 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 14
+Task 11. Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund
+Difficulty: 3.2/5
+A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to
+$34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's
+value 2 further years into the future (5 years from the start).
+Statements (True / False):
+a) The implied nominal continuously-compounded rate is approximately 6.67%.
+b) Using this implied rate, the projected value 5 years from the start (2 years beyond the observed data) is
+approximately $39,078.52.
+c) A naive straight-line projection — extending the average dollar increase observed over the first 3 years for 2 more
+years — gives the same result as the correct exponential projection.
+d) At the implied rate, the fund's value would double from its original $28,000 in approximately 12.40 years.
+e) If the implied rate had instead been exactly 6.00%, the 3-year value would have been approximately $33,522.09,
+which is higher than the actual observed $34,200.00.
+Solution – Task 11
+Given:
+• S0 = $28,000
+• S(3) = $34,200 (observed)
+• Compounding: continuous
+• t = 3 years (observed); project to t = 5 years
+Formula(s):
+• S(t) = S0·e^(rt) ⇒ r = ln(S(t)/S0)/t
+• Doubling time: t = ln(2)/r
+Step-by-Step Calculations:
+r = ln(34,200/28,000)/3 = ln(1.221429)/3 = 0.200034/3 = 0.066674 ≈ 6.67%.
+S(5) = 28,000 × e^(0.066674 × 5) = 28,000 × e^0.333368 = 28,000 × 1.395661 = $39,078.52.
+Average dollar increase over 3 years = (34,200 − 28,000)/3 = $2,066.67/year. Naive linear projection: 34,200 + 2 ×
+2,066.67 = $38,333.33, which does not equal $39,078.52.
+Doubling time = ln(2)/0.066674 = 0.693147/0.066674 ≈ 10.3961 years.
+At r = 6.00%: S(3) = 28,000 × e^0.18 = 28,000 × 1.197217 = $33,522.09, which is LOWER than the actual observed
+$34,200.00, not higher.
+Explanation of Each Statement:
+a) TRUE. Dividing both sides of S(3) = S0e^(3r) by S0 and taking natural logs gives 3r = ln(34,200/28,000), so r =
+ln(1.221429)/3 ≈ 6.67%, matching the statement exactly.
+b) TRUE. Applying the implied rate for a further 2 years (5 years total from the start) gives S(5) = 28,000 × e^(0.066674
+× 5) ≈ $39,078.52, matching the statement exactly.
+c) FALSE. The naive straight-line projection assumes the DOLLAR amount added each year stays constant, giving
+$38,333.33, whereas the correct exponential projection assumes the PERCENTAGE growth rate stays constant, giving
+the higher figure of $39,078.52. Because exponential growth compounds on an ever-larger base, the two methods
+diverge once projected beyond the observed data, and they do not match.
+d) FALSE. t = ln(2)/0.066674 ≈ 10.40 years, not 12.40 years — the stated figure overstates the true doubling time by
+exactly 2 years.
+
+===== PAGE 15 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 15
+e) FALSE. A rate of 6.00% instead of 6.67% would have produced a SMALLER 3-year value, approximately
+$33,522.09, which is in fact lower than the actual observed $34,200.00, not higher — a lower assumed growth rate can
+never explain a larger observed increase over the same period.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 16 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 16
+Task 12. A Corporate Treasurer's Three-Bank Comparison With Differing Nominal
+Rates
+Difficulty: 3.4/5
+A corporate treasurer is placing $60,000 for 2 years and compares three offers: Bank X compounds continuously at a
+nominal annual rate of 6.8%; Bank Y compounds monthly at a nominal annual rate of 6.9%; Bank Z compounds
+quarterly at a nominal annual rate of 7.0%.
+Statements (True / False):
+a) Bank X's 2-year value is approximately $68,740.91.
+b) Bank Y's 2-year value is approximately $68,851.32.
+c) Bank Z's 2-year value is approximately $68,932.91, making it the highest of the three offers.
+d) Despite compounding continuously, Bank X's value is actually the lowest of the three offers.
+e) If Bank X's nominal rate were instead also raised to 7.0%, while keeping continuous compounding, its 2-year
+value would exceed Bank Z's value.
+Solution – Task 12
+Given:
+• P = $60,000
+• Bank X: r = 6.8% = 0.068, continuous
+• Bank Y: i = 6.9% = 0.069, m = 12 (monthly)
+• Bank Z: i = 7.0% = 0.070, m = 4 (quarterly)
+• t = 2 years
+Formula(s):
+• SX = P·e^(rt)
+• SY = P·(1 + i/12)^(12t)
+• SZ = P·(1 + i/4)^(4t)
+Step-by-Step Calculations:
+S_X = 60,000 × e^(0.068 × 2) = 60,000 × e^0.136 = 60,000 × 1.145682 = $68,740.91.
+S_Y = 60,000 × (1 + 0.069/12)^24 = 60,000 × (1.00575)^24 = 60,000 × 1.147522 = $68,851.32.
+S_Z = 60,000 × (1 + 0.070/4)^8 = 60,000 × (1.0175)^8 = 60,000 × 1.148882 = $68,932.91.
+Ordering the three results: $68,740.91 (X) < $68,851.32 (Y) < $68,932.91 (Z), so Bank X is actually the LOWEST, not
+the highest.
+If Bank X's rate were 7.0% instead of 6.8%: S_X' = 60,000 × e^(0.070 × 2) = 60,000 × e^0.14 = 60,000 × 1.150274 =
+$69,016.44, which does exceed Bank Z's $68,932.91.
+Explanation of Each Statement:
+a) TRUE. S_X = 60,000 × e^0.136 = $68,740.91, matching the statement exactly.
+b) TRUE. S_Y = 60,000 × (1.00575)^24 = $68,851.32, matching the statement exactly.
+c) TRUE. S_Z = 60,000 × (1.0175)^8 = $68,932.91, and comparing all three results confirms it is indeed the largest of
+the three.
+d) TRUE. The rule that continuous compounding is the most profitable schedule for the lender applies only when
+comparing different compounding FREQUENCIES at the SAME nominal rate. Here the three banks quote three
+DIFFERENT nominal rates, and Bank Z's higher quoted rate (7.0%) more than compensates for its less-frequent
+quarterly compounding, so Bank X's continuously-compounded value at the lowest rate (6.8%) does indeed end up the
+SMALLEST of the three, confirming the statement exactly.
+
+===== PAGE 17 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 17
+e) TRUE. Once Bank X's nominal rate is raised to match Bank Z's 7.0%, the ceiling result does apply (same nominal
+rate, comparing continuous to quarterly), so continuous compounding at 7.0% ($69,016.44) does exceed quarterly
+compounding at the same 7.0% ($68,932.91).
+Final Answers — a: TRUE b: TRUE c: TRUE d: TRUE e: TRUE
+
+===== PAGE 18 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 18
+Task 13. Net Growth Rate of a Hedge Fund After a Continuous Management Fee Drag
+Difficulty: 3.6/5
+A hedge fund's gross asset value of $2,000,000 grows continuously at a nominal annual rate of 9%, but the fund also
+deducts a continuous annual management fee of 2%, which acts as a constant drag on the growth rate.
+Statements (True / False):
+a) The net continuous growth rate, combining the 9% gross return and the 2% fee drag, is 11% per year.
+b) After 6 years, the net asset value is approximately $3,100,000.00.
+c) At this net rate, the fund's value would double in approximately 7.00 years.
+d) If the management fee instead rose to 3.5%, the 6-year net value would be approximately $2,781,936.26, and the
+doubling time would shorten to approximately 12.60 years.
+e) A higher management fee always reduces both the net growth rate and the fund's cumulative value at any future
+date, compared to a lower fee, all else equal.
+Solution – Task 13
+Given:
+• S0 = $2,000,000
+• Gross rate = 9% = 0.09; fee = 2% = 0.02 (and 3.5% = 0.035 for part d)
+• Compounding: continuous
+• t = 6 years
+Formula(s):
+• Net rate: rnet = rgross − fee
+• S(t) = S0·e^(rnett)
+• Doubling time: t = ln(2)/rnet
+Step-by-Step Calculations:
+r_net = 0.09 − 0.02 = 0.07 = 7%.
+S(6) = 2,000,000 × e^(0.07 × 6) = 2,000,000 × e^0.42 = 2,000,000 × 1.521962 = $3,043,923.11.
+Doubling time = ln(2)/0.07 = 0.693147/0.07 ≈ 9.9021 years.
+At fee = 3.5%: r_net' = 0.09 − 0.035 = 0.055. S(6) = 2,000,000 × e^0.33 = 2,000,000 × 1.390968 = $2,781,936.26.
+Doubling time = ln(2)/0.055 ≈ 12.6027 years, which is LONGER than 9.9021 years, not shorter.
+Comparing: a lower net rate (5.5% vs. 7%) always produces both a smaller 6-year value and a longer doubling time.
+Explanation of Each Statement:
+a) FALSE. The continuous fee drag must be SUBTRACTED from the gross rate, not added: 0.09 − 0.02 = 0.07, giving a
+net rate of 7% per year, not 11%. Adding the fee to the gross rate would describe a fee that BOOSTS returns, which
+contradicts the very idea of a management fee reducing the investor's growth.
+b) FALSE. The correctly computed net value is S(6) = 2,000,000 × e^0.42 = $3,043,923.11, not $3,100,000.00 — the
+stated figure overstates the true value by about $56,076.89.
+c) FALSE. The correct doubling time at the 7% net rate is ln(2)/0.07 ≈ 9.90 years, not 7.00 years; the stated figure
+understates the true doubling time by nearly 3 years.
+d) FALSE. The 6-year value of $2,781,936.26 at the higher 3.5% fee is correctly computed, but the doubling time at the
+resulting lower 5.5% net rate is ln(2)/0.055 ≈ 12.60 years, which is LONGER than the original 9.90 years, not shorter —
+a smaller net growth rate always takes MORE time to double an investment, never less.
+e) TRUE. Since the net rate is gross rate minus fee, a higher fee mechanically produces a lower net rate, and a lower
+net continuous rate produces a smaller value at every future date t > 0 (because e^(rt) is strictly increasing in r for fixed t
+
+===== PAGE 19 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 19
+> 0), so this general statement holds for any pair of fee levels compared under otherwise identical conditions.
+Final Answers — a: FALSE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 20 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 20
+Task 14. Crossover Point Between a Growing Equity Stake and Shrinking Factory
+Equipment
+Difficulty: 3.8/5
+A boutique investment firm holds two assets: Asset A, a start-up equity stake currently worth $50,000 and growing
+continuously at a nominal annual rate of 4%; and Asset B, aging factory equipment currently worth $250,000 and
+depreciating continuously at an annual rate of 12%. The firm wants to know whether, and when, Asset A's value will
+overtake Asset B's value.
+Statements (True / False):
+a) Setting A0e^(rAt) = B0e^(−δBt) and solving for t gives t = ln(B0/A0)/(rA + δB).
+b) The crossover occurs at approximately t ≈ 10.06 years, at which point both assets are worth approximately
+$74,767.44.
+c) At exactly t = 10 years, Asset A is already worth more than Asset B.
+d) Asset A can never actually overtake Asset B in value, no matter how long both trends continue.
+e) For any time beyond the crossover point, Asset A's value remains higher than Asset B's value.
+Solution – Task 14
+Given:
+• A0 = $50,000, rA = 4% = 0.04
+• B0 = $250,000, δB = 12% = 0.12
+• Compounding: continuous
+Formula(s):
+• A(t) = A0·e^(rAt)
+• B(t) = B0·e^(−δBt)
+• Crossover: t = ln(B0/A0)/(rA + δB)
+Step-by-Step Calculations:
+t = ln(250,000/50,000)/(0.04 + 0.12) = ln(5)/0.16 = 1.609438/0.16 = 10.0590 years.
+A(10.0590) = 50,000 × e^(0.04 × 10.0590) = $74,767.44. B(10.0590) = 250,000 × e^(−0.12 × 10.0590) = $74,767.44
+(equal, as required at crossover).
+A(10) = 50,000 × e^0.40 = 50,000 × 1.491825 = $74,591.23. B(10) = 250,000 × e^(−1.20) = 250,000 × 0.301194 =
+$75,298.55.
+At t = 10, A(10) = $74,591.23 < B(10) = $75,298.55, so A has NOT yet overtaken B at that point — consistent with the
+crossover occurring slightly later, at 10.06 years.
+Since A0 < B0, A(t) < B(t) at t = 0, but because A(t)/B(t) = (A0/B0)·e^((rA+δB)t) grows without bound as t increases (a
+strictly increasing exponential ratio), the ratio must eventually exceed 1, guaranteeing a crossover exists.
+Explanation of Each Statement:
+a) TRUE. Dividing both sides by A0e^(−δBt) and taking natural logs of the resulting equation B0/A0 = e^((rA + δB)t) gives
+exactly t = ln(B0/A0)/(rA + δB), matching the statement exactly.
+b) TRUE. t = ln(5)/0.16 ≈ 10.06 years, and at that time both A(t) and B(t) equal approximately $74,767.44, matching the
+statement exactly.
+c) FALSE. At t = 10 years, Asset A is worth approximately $74,591.23 while Asset B is still worth approximately
+$75,298.55 — Asset B is still ahead at this point, not Asset A, which is exactly why the crossover has not yet occurred
+by year 10 and instead happens slightly later, at about 10.06 years.
+d) FALSE. Although Asset B starts out five times larger, Asset A's slower but steady growth eventually overtakes Asset
+B's faster proportional shrinkage, because the RATIO A(t)/B(t) grows exponentially without bound as t increases (at
+
+===== PAGE 21 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 21
+combined rate rA + δB = 16% per year). No matter how large the initial gap, a strictly growing ratio must eventually cross
+1, which is exactly what the calculated crossover time of about 10.06 years confirms.
+e) TRUE. Once A(t) exceeds B(t) at the crossover, A continues to grow while B continues to shrink, so the gap between
+them (A(t) − B(t)) only widens further for all t beyond the crossover point, meaning Asset A remains ahead indefinitely
+thereafter.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 22 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 22
+Task 15. Verifying the Compounding-Frequency Ceiling Across Four Schedules for a
+Municipal Reserve
+Difficulty: 4.0/5
+A municipal finance office is comparing four compounding schedules, all at the same nominal annual rate of 7%,
+applied to a $40,000 reserve fund for exactly 1 year: annual, quarterly, monthly, and continuous. The office wants to
+confirm the textbook's claim that increasing compounding frequency strictly increases the year-end value, up to the
+continuous-compounding ceiling.
+Statements (True / False):
+a) The annual-compounding value is exactly $42,800.00.
+b) The quarterly-compounding value is approximately $42,874.36, and the monthly-compounding value is
+approximately $42,891.60.
+c) The four values, from smallest to largest, are ordered annual < quarterly < monthly < continuous.
+d) The dollar gap between monthly and quarterly compounding is smaller than the dollar gap between continuous
+and monthly compounding.
+e) No compounding schedule, however frequent, can ever produce a 1-year value exceeding the
+continuous-compounding value of $42,900.33 at this same 7% nominal rate.
+Solution – Task 15
+Given:
+• P = $40,000
+• Nominal annual rate i = r = 7% = 0.07
+• Schedules: annual (m = 1), quarterly (m = 4), monthly (m = 12), continuous
+• t = 1 year
+Formula(s):
+• Sm = P·(1 + i/m)^m for finite m
+• Scont = P·e^r
+Step-by-Step Calculations:
+Annual: S = 40,000 × 1.07 = $42,800.00.
+Quarterly: S = 40,000 × (1.0175)^4 = 40,000 × 1.0718590 = $42,874.36.
+Monthly: S = 40,000 × (1.0058333)^12 = 40,000 × 1.0722901 = $42,891.60.
+Continuous: S = 40,000 × e^0.07 = 40,000 × 1.0725082 = $42,900.33.
+Gap(monthly, quarterly) = 42,891.60 − 42,874.36 = $17.24. Gap(continuous, monthly) = 42,900.33 − 42,891.60 =
+$8.72; the second gap is SMALLER, not larger.
+Explanation of Each Statement:
+a) TRUE. 40,000 × 1.07 = $42,800.00, matching the statement exactly.
+b) TRUE. Quarterly gives $42,874.36 and monthly gives $42,891.60, and both do sit strictly between the annual value
+of $42,800.00 and the continuous value of $42,900.33, matching the statement exactly.
+c) TRUE. Listing the four results — $42,800.00, $42,874.36, $42,891.60, $42,900.33 — confirms they are strictly
+increasing in exactly this order as compounding frequency rises from annual through continuous, which is the
+textbook's claim being verified here.
+d) FALSE. The monthly-versus-quarterly gap is $17.24, which is actually LARGER than the continuous-versus-monthly
+gap of $8.72, not smaller. As compounding frequency keeps rising toward its continuous limit, each further increase in
+frequency contributes a progressively smaller additional dollar amount, since (1 + r/n)^n is converging toward e^r and
+the increments shrink as n grows large.
+
+===== PAGE 23 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 23
+e) TRUE. Since (1 + r/n)^n → e^r as n → ∞, and the sequence is strictly increasing in n, the continuous-compounding
+value e^r represents the supremum (least upper bound) that no finite-frequency schedule at the same nominal rate can
+ever reach or exceed.
+Final Answers — a: TRUE b: TRUE c: TRUE d: FALSE e: TRUE
+
+===== PAGE 24 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 24
+Task 16. Reverse-Engineering the Upfront Deposit Needed for a Tuition Lock
+Difficulty: 4.2/5
+A parent wants to guarantee exactly $100,000 available in 8 years for a child's college tuition, and is choosing
+between two continuously-compounded investment vehicles: Option 1 offers a nominal annual rate of 4.5%, while
+Option 2 offers a nominal annual rate of 6.0%. The parent wants to know how much must be deposited today under
+each option.
+Statements (True / False):
+a) Option 1 requires an upfront deposit of approximately $69,767.63.
+b) Option 2 requires an upfront deposit of approximately $61,878.34.
+c) Option 2 requires a larger upfront deposit than Option 1 to reach the same $100,000 target in 8 years.
+d) The difference in required upfront deposits between the two options is approximately $9,000.00, with Option 2
+requiring the larger amount.
+e) If the parent instead had only 4 years to reach the same $100,000 target under Option 1's 4.5% rate, the required
+upfront deposit would be smaller than the 8-year requirement.
+Solution – Task 16
+Given:
+• Target S(t) = $100,000
+• Option 1: r = 4.5% = 0.045, t = 8 years (and t = 4 years for part e)
+• Option 2: r = 6.0% = 0.06, t = 8 years
+• Compounding: continuous
+Formula(s):
+• S(t) = S0·e^(rt) ⇒ S0 = S(t)/e^(rt) = S(t)·e^(−rt)
+Step-by-Step Calculations:
+Option 1: S0 = 100,000 × e^(−0.045 × 8) = 100,000 × e^(−0.36) = 100,000 × 0.697676 = $69,767.63.
+Option 2: S0 = 100,000 × e^(−0.06 × 8) = 100,000 × e^(−0.48) = 100,000 × 0.618783 = $61,878.34.
+Difference = 69,767.63 − 61,878.34 = $7,889.29, with Option 1 requiring more upfront.
+Option 1 over 4 years: S0 = 100,000 × e^(−0.045 × 4) = 100,000 × e^(−0.18) = 100,000 × 0.835270 = $83,527.02.
+Comparing: $83,527.02 (4-year requirement) is LARGER than $69,767.63 (8-year requirement), not smaller.
+Explanation of Each Statement:
+a) TRUE. S0 = 100,000 × e^(−0.36) = $69,767.63, matching the statement exactly.
+b) TRUE. S0 = 100,000 × e^(−0.48) = $61,878.34, matching the statement exactly.
+c) FALSE. This has the direction backwards: a higher growth rate means each dollar deposited today grows to a larger
+sum by year 8, so REACHING the same $100,000 target actually requires depositing LESS upfront under the higher,
+6.0% rate ($61,878.34) than under the lower, 4.5% rate ($69,767.63), not more.
+d) FALSE. The correct difference is 69,767.63 − 61,878.34 = $7,889.29, not $9,000.00, and it is Option 1 (the LOWER
+rate) that requires the larger upfront amount, not Option 2 — the statement gets both the figure and the direction wrong.
+e) FALSE. With less time available to grow (4 years instead of 8), MORE money must be set aside today to still reach
+the same $100,000 target, not less. The correct 4-year requirement is $83,527.02, which is larger than the 8-year
+requirement of $69,767.63, since a shorter compounding horizon leaves less room for exponential growth to do the
+work.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 25 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 25
+Task 17. A Logistics Company's Two-Phase Continuous Growth: Expansion Then
+Maturity
+Difficulty: 4.4/5
+A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4
+years (a rapid expansion phase), then slows to a continuous nominal rate of 4% for the following 3 years (a maturity
+phase), for 7 years total.
+Statements (True / False):
+a) Revenue at the end of year 4 is approximately $2,685,284.46.
+b) Revenue at the end of year 7 is approximately $3,027,649.77.
+c) The single constant continuous rate that would have produced the same 7-year outcome starting from $1,800,000
+is approximately 7.43%.
+d) The effective 7-year rate is higher than the plain (unweighted) average of the two phase rates.
+e) If the two phases had instead occurred in the opposite order — 3 years at 4% followed by 4 years at 10% — the
+year-7 revenue would have come out exactly the same.
+Solution – Task 17
+Given:
+• S0 = $1,800,000
+• Phase 1: r1 = 10% = 0.10, t1 = 4 years
+• Phase 2: r2 = 4% = 0.04, t2 = 3 years
+Formula(s):
+• S(t1) = S0·e^(r1t1)
+• S(t1+t2) = S(t1)·e^(r2t2) = S0·e^(r1t1+r2t2)
+• Effective rate: reff = (r1t1 + r2t2)/(t1+t2)
+Step-by-Step Calculations:
+S(4) = 1,800,000 × e^(0.10 × 4) = 1,800,000 × e^0.40 = 1,800,000 × 1.491825 = $2,685,284.46.
+S(7) = S(4) × e^(0.04 × 3) = 2,685,284.46 × e^0.12 = 2,685,284.46 × 1.127497 = $3,027,649.77.
+Combined exponent = r1t1 + r2t2 = (0.10 × 4) + (0.04 × 3) = 0.40 + 0.12 = 0.52.
+r_eff = 0.52/7 = 0.074286 ≈ 7.43% (the TIME-WEIGHTED average, not the plain average).
+Plain (unweighted) average = (0.10 + 0.04)/2 = 0.07 = 7.00%, which does not equal 7.43%.
+Explanation of Each Statement:
+a) TRUE. S(4) = 1,800,000 × e^0.40 = $2,685,284.46, matching the statement exactly.
+b) TRUE. Applying the second phase's factor to the year-4 balance gives S(7) = 2,685,284.46 × e^0.12 =
+$3,027,649.77, matching the statement exactly.
+c) TRUE. Because S(7) = S0·e^(r1t1+r2t2), the single constant rate reproducing the same 7-year result solves reff =
+(r1t1+r2t2)/7 = 0.52/7 ≈ 7.43%, matching the statement exactly.
+d) TRUE. The correct effective rate is the TIME-WEIGHTED average of the two phase rates, weighted by how many
+years each phase lasted: (10% × 4 + 4% × 3)/7 = 7.43%, which is indeed higher than the plain, unweighted average of
+(10% + 4%)/2 = 7.00%. This makes sense because the faster-growing 10% phase lasted longer (4 years vs. 3 years)
+and so should count for more, pulling the true effective rate above the simple average.
+e) TRUE. Since S0·e^(r1t1)·e^(r2t2) = S0·e^(r1t1+r2t2), and ordinary multiplication is commutative, the combined
+exponent r1t1+r2t2 = 0.52 is exactly the same regardless of which phase happens first. Reversing the order of the two
+phases therefore produces the identical year-7 revenue of $3,027,649.77, exactly as stated.
+
+===== PAGE 26 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 26
+Final Answers — a: TRUE b: TRUE c: TRUE d: TRUE e: TRUE
+
+===== PAGE 27 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 27
+Task 18. Reverse-Engineering a Crane's Implied Depreciation Rate for a Construction
+Equipment Reseller
+Difficulty: 4.6/5
+A construction equipment reseller has a crane currently valued at $85,000 that, per accounting policy, must be
+written down to a resale value of $32,000 after 6 years of continuous depreciation. The reseller wants to know the
+implied annual depreciation rate δ, and compare the crane's value retention to a second, otherwise identical crane
+with a known δ = 15%.
+Statements (True / False):
+a) Solving v0·e^(−δt) = v(t) for δ gives δ = ln(v(t)/v0)/t.
+b) The implied depreciation rate for the first crane is approximately 16.28% per year.
+c) A second, otherwise identical crane purchased for the same $85,000 but depreciating continuously at a known
+rate of 15% per year would be worth approximately $36,000.00 after the same 6 years.
+d) The first crane retains more of its value after 6 years than the second crane.
+e) If the first crane's target resale value had instead been set at $40,000 after the same 6 years, the implied
+depreciation rate would be higher than 16.28%.
+Solution – Task 18
+Given:
+• v0 = $85,000
+• v(6) = $32,000 (first crane, implied δ); known δ = 15% (second crane); v(6) target = $40,000 for part e
+• Compounding: continuous
+• t = 6 years
+Formula(s):
+• v(t) = v0·e^(−δt) ⇒ δ = ln(v0/v(t))/t
+Step-by-Step Calculations:
+δ = ln(85,000/32,000)/6 = ln(2.65625)/6 = 0.976915/6 = 0.162819 ≈ 16.28%.
+Second crane: v(6) = 85,000 × e^(−0.15 × 6) = 85,000 × e^(−0.90) = 85,000 × 0.406570 = $34,558.42.
+Comparing final values: first crane retains $32,000.00, second crane retains $34,558.42 — the crane with the
+LOWER rate (15%) retains MORE value, not the one with the higher implied rate (16.28%).
+For a $40,000 target: δ = ln(85,000/40,000)/6 = ln(2.125)/6 = 0.753772/6 = 0.125629 ≈ 12.56%, which is lower than
+16.28%.
+Explanation of Each Statement:
+a) FALSE. This has the ratio inverted: dividing both sides by v0 and taking natural logs of v0/v(t) — not v(t)/v0 — gives δt
+= ln(v0/v(t)), so the correct formula is δ = ln(v0/v(t))/t. Using ln(v(t)/v0)/t instead would produce a NEGATIVE number
+here, since v(t) < v0, which cannot be a valid depreciation rate.
+b) TRUE. δ = ln(85,000/32,000)/6 ≈ 16.28%, matching the statement exactly.
+c) FALSE. The correctly computed value is v(6) = 85,000 × e^(−0.90) = $34,558.42, not $36,000.00 — the stated figure
+overstates the true value by about $1,441.58.
+d) FALSE. This has the logic backwards: a HIGHER depreciation rate means the asset loses value FASTER, not
+slower, so the first crane (implied rate 16.28%) actually retains LESS value after 6 years ($32,000.00) than the second
+crane at the lower 15% rate ($34,558.42), not more.
+e) FALSE. A higher target resale value of $40,000 (instead of $32,000) means LESS value was lost over the same 6
+years, which corresponds to a SMALLER implied depreciation rate, not a larger one: δ = ln(85,000/40,000)/6 ≈ 12.56%,
+which is LOWER than the original 16.28%, contradicting the statement.
+
+===== PAGE 28 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 28
+Final Answers — a: FALSE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 29 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 29
+Task 19. Doubling, Tripling, and Quadrupling Times for an Impact Investing Fund
+Difficulty: 4.8/5
+A socially-responsible impact investing fund places $12,000 into a continuously-compounded account at a nominal
+annual rate of 6.5%, and the fund's trustees want to understand exactly how the times needed to double, triple, and
+quadruple the initial investment relate to one another.
+Statements (True / False):
+a) The doubling time at 6.5% is approximately 10.66 years.
+b) The tripling time at 6.5% is approximately 16.90 years.
+c) The quadrupling time at 6.5% is approximately 21.33 years, and this is exactly equal to twice the doubling time.
+d) At the quadrupling time, the fund's value is exactly $48,000.00.
+e) The tripling time must be exactly 1.5 times the doubling time.
+Solution – Task 19
+Given:
+• S0 = $12,000
+• Nominal annual rate r = 6.5% = 0.065
+• Compounding: continuous
+• Targets: S(t) = 2S0, 3S0, 4S0
+Formula(s):
+• S(t) = S0·e^(rt)
+• Time to reach multiple M: t = ln(M)/r
+Step-by-Step Calculations:
+Doubling: t = ln(2)/0.065 = 0.693147/0.065 ≈ 10.6638 years.
+Tripling: t = ln(3)/0.065 = 1.098612/0.065 ≈ 16.9017 years.
+Quadrupling: t = ln(4)/0.065 = 1.386294/0.065 ≈ 21.3276 years.
+2 × (doubling time) = 2 × 10.6638 = 21.3276 years, which exactly equals the quadrupling time, since ln(4) = ln(2²) =
+2·ln(2).
+Ratio of tripling time to doubling time = ln(3)/ln(2) ≈ 1.5850, not 1.5; value at quadrupling time = 12,000 × 4 =
+$48,000.00.
+Explanation of Each Statement:
+a) TRUE. t = ln(2)/0.065 ≈ 10.66 years, matching the statement exactly.
+b) TRUE. t = ln(3)/0.065 ≈ 16.90 years, matching the statement exactly.
+c) TRUE. t = ln(4)/0.065 ≈ 21.33 years, and because 4 = 2² means ln(4) = 2ln(2), the quadrupling time is exactly twice
+the doubling time — reaching four times the principal is mathematically the same as doubling the investment twice in a
+row.
+d) TRUE. Four times the original $12,000 principal is 12,000 × 4 = $48,000.00, matching the statement exactly.
+e) FALSE. Times to reach a given multiple scale with the NATURAL LOGARITHM of that multiple, not with the multiple
+itself, since t = ln(M)/r. The ratio of the tripling time to the doubling time is therefore ln(3)/ln(2) ≈ 1.5850, not the naive
+ratio of the multipliers themselves (3/2 = 1.5) — these two ratios are close but not equal, and treating them as the same
+is a common but incorrect shortcut.
+Final Answers — a: TRUE b: TRUE c: TRUE d: TRUE e: FALSE
+
+===== PAGE 30 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 30
+Task 20. Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth
+and Decay
+Difficulty: 5.0/5
+A family office's capstone valuation combines three holdings, all valued in nominal (undiscounted) dollars and added
+together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing
+continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth
+$220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement
+currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its
+remaining 2 years (5 years total).
+Statements (True / False):
+a) Asset A's value after 5 years is approximately $202,478.82.
+b) Asset B's value after 5 years is approximately $140,278.19.
+c) Asset C's value after 5 years is approximately $130,000.00.
+d) The combined portfolio value after 5 years, adding all three assets together, is approximately $477,742.90, which
+is less than the sum of the three original principals.
+e) If Asset B's rate had instead been a continuous growth rate of the same 9% magnitude, its 5-year value would
+exceed $340,000.00.
+Solution – Task 20
+Given:
+• Asset A: A0 = $150,000, rA = 6% = 0.06, t = 5 years
+• Asset B: B0 = $220,000, δB = 9% = 0.09, t = 5 years
+• Asset C: C0 = $100,000, r1 = 8% for 3 years, then r2 = 3% for 2 years
+Formula(s):
+• A(t) = A0·e^(rAt)
+• B(t) = B0·e^(−δBt)
+• C(5) = C0·e^(r1·3)·e^(r2·2)
+• Portfolio total = A(5) + B(5) + C(5)
+Step-by-Step Calculations:
+A(5) = 150,000 × e^(0.06 × 5) = 150,000 × e^0.30 = 150,000 × 1.349859 = $202,478.82.
+B(5) = 220,000 × e^(−0.09 × 5) = 220,000 × e^(−0.45) = 220,000 × 0.637628 = $140,278.19.
+C(3) = 100,000 × e^(0.08 × 3) = 100,000 × e^0.24 = 100,000 × 1.271249 = $127,124.92. C(5) = 127,124.92 × e^(0.03
+× 2) = 127,124.92 × e^0.06 = 127,124.92 × 1.061837 = $134,985.88.
+Portfolio total = 202,478.82 + 140,278.19 + 134,985.88 = $477,742.89 (rounding to the cent). Sum of principals =
+150,000 + 220,000 + 100,000 = $470,000.00; the total ($477,742.89) is MORE than the principal sum, not less.
+If B0 grew instead of shrinking at 9%: B(5)' = 220,000 × e^(0.09 × 5) = 220,000 × e^0.45 = 220,000 × 1.568312 =
+$345,028.68, which does exceed $340,000.00.
+Explanation of Each Statement:
+a) TRUE. A(5) = 150,000 × e^0.30 = $202,478.82, matching the statement exactly.
+b) TRUE. B(5) = 220,000 × e^(−0.45) = $140,278.19, matching the statement exactly.
+c) FALSE. Chaining the two growth phases correctly gives C(3) = $127,124.92 and then C(5) = C(3) × e^0.06 =
+$134,985.88, not $130,000.00 — the stated figure understates the true value by about $4,985.88.
+d) FALSE. Adding the three 5-year values gives 202,478.82 + 140,278.19 + 134,985.88 = $477,742.89, which is
+actually MORE than the $470,000.00 sum of the three original principals, not less — the combined growth of Assets A
+
+===== PAGE 31 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 31
+and C outweighs the shrinkage of Asset B over this particular 5-year horizon.
+e) TRUE. Replacing Asset B's 9% depreciation with a 9% continuous growth rate over the same 5 years gives 220,000
+× e^0.45 ≈ $345,028.68, which does exceed $340,000.00, illustrating just how large the swing is between shrinking and
+growing at the same magnitude rate over a multi-year horizon.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 32 =====
+Chapter 11.2 – Continuous Compounding (Tasks 1–20)
+Financial Mathematics Practice Worksheet
+Page 32
+This worksheet (Tasks 1–20) relies exclusively on the continuous-compounding formula S(t) = S0ert, the fixed yearly growth factor er, the
+effective-rate formula er − 1 as the ceiling over any discrete compounding frequency at the same nominal rate, the general rule that
+continuous compounding is the most profitable schedule for the lender (with the gap widening as the rate or horizon grows), and the
+continuous-depreciation formula v(t) = v0e−δt, all combined in multi-step ways across Tasks 11–20, exactly as presented in Section 11.2.

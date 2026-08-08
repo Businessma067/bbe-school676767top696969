@@ -1,0 +1,1064 @@
+
+===== PAGE 1 =====
+Section 11.5 – Total Present Value, Annuities, Annuities
+Due & Perpetuities
+Financial Mathematics Practice Worksheet
+Chapter 11.5 – Present Value, Future Value, Annuities, Annuities Due & Perpetuities (Complete Set: Tasks
+1–10)
+Tasks 1–10, sorted from easiest to hardest (difficulty 1.0/5 to 3.0/5). Key formulas: the present value of a
+single future payment of A due in n years, discounted at annual rate r, is x = A/(1+r)n; the future value of a
+present deposit P after n years is F = P(1+r)n. For n successive equal payments of a per period (an ordinary
+annuity, paid at the end of each period), the present value is Pn = (a/r)[1 − 1/(1+r)n], and the future value,
+immediately after the last payment, is Fn = (a/r)[(1+r)n − 1]. As n tends to infinity, the annuity's present-value
+formula reduces to the present value of a perpetuity, P = a/r. An annuity due shifts every payment to the
+START of each period instead of the end, so its present and future values are simply the corresponding
+ordinary-annuity values multiplied by (1+r): Pdue = Pn×(1+r) and Fdue = Fn×(1+r). Every task relies
+exclusively on these formulas. Round dollar amounts to 2 decimal places and rates/percentages to 2
+decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+1
+Present Value of a Single Future Payment for a Bakery Equipment Fund
+1.0/5
+2
+Future Value of a Freelancer's Present Deposit
+1.2/5
+3
+Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund
+1.4/5
+4
+Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund
+1.6/5
+5
+Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan
+1.8/5
+6
+Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship
+2.0/5
+7
+Comparing Payment Streams via Present Value for a Machinery Purchase
+2.2/5
+8
+Comparing Savings Strategies via Future Value for a Construction Firm
+2.4/5
+9
+Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund
+2.7/5
+10
+Present Value of an Annuity Due for a Commercial Lease
+3.0/5
+
+===== PAGE 2 =====
+Task 1. Present Value of a Single Future Payment for a Bakery Equipment Fund
+Difficulty: 1.0/5
+Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly $5,000 available in 3
+years to replace a commercial oven, and plans to make a single deposit today into an account earning 7%
+annual interest.
+Statements (True / False):
+a) The amount she must deposit today is approximately $4,081.49.
+b) If the interest rate were instead 5%, the required deposit today would be LOWER than $4,081.49.
+c) The interest that will be earned over the 3 years is approximately $928.51.
+d) If the target amount were doubled to $10,000, the required deposit today would also exactly double, to
+approximately $8,162.98.
+e) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be
+exactly half of $4,081.49.
+Solution – Task 1
+Given:
+• Target future amount A = $5,000
+• Nominal annual rate r = 7% = 0.07 (and 5% for part b)
+• Compounding: annual, single deposit
+• t = 3 years (and 6 years for part e)
+Formula(s):
+• A single deposit today that grows to A after n years satisfies x(1+r)n = A, so x = A/(1+r)n
+Step-by-Step Calculations:
+x = 5,000/(1.07)3 = 5,000/1.225043 = $4,081.49.
+At r = 5%: x = 5,000/(1.05)3 = 5,000/1.157625 = $4,319.19, which is HIGHER than $4,081.49, not lower.
+Interest = 5,000.00 − 4,081.49 = $918.51.
+Since x is linear in the target amount A, doubling A to $10,000 gives x′ = 10,000/1.225043 = $8,162.98,
+exactly double the original $4,081.49.
+At 6 years: x = 5,000/(1.07)6 = 5,000/1.500730 = $3,331.71, which is NOT half of $4,081.49 (half would be
+$2,040.75).
+Explanation of Each Statement:
+a) TRUE. Plugging A = 5,000, r = 0.07, and n = 3 into x = A/(1+r)n gives 5,000/1.225043 = $4,081.49,
+matching the statement exactly.
+b) FALSE. A lower discount rate means each future dollar is discounted less severely, so LESS growth is
+assumed and MORE must be set aside today: at 5% the required deposit is $4,319.19, which is higher than
+the 7% figure of $4,081.49, not lower.
+c) FALSE. The interest earned is simply the future target minus today's deposit: 5,000.00 − 4,081.49 =
+$918.51, not $928.51 as stated.
+
+===== PAGE 3 =====
+d) TRUE. Because x = A/(1+r)n is directly proportional to A for fixed r and n, doubling the target amount
+exactly doubles the required deposit, from $4,081.49 to $8,162.98.
+e) FALSE. The discounting relationship is exponential in time, not linear, so doubling the horizon does not
+halve the deposit: the correct 6-year deposit is 5,000/(1.07)6 = $3,331.71, which is well above the naively
+halved figure of $2,040.75.
+Final Answers — a: TRUE b: FALSE c: FALSE d: TRUE e: FALSE
+
+===== PAGE 4 =====
+Task 2. Future Value of a Freelancer's Present Deposit
+Difficulty: 1.2/5
+A freelance graphic designer deposits $6,500 today into a business savings account earning 6% annual
+interest, and wants to project the accumulated value after 5 years, and again after a longer 10-year horizon.
+Statements (True / False):
+a) The accumulated value after 5 years is approximately $8,698.47.
+b) The interest earned during the first 5 years is approximately $2,198.47.
+c) The accumulated value after 10 years is exactly double the 5-year value.
+d) The interest earned during the SECOND 5-year period, approximately $2,942.04, is SMALLER than
+the interest earned during the FIRST 5-year period, approximately $2,198.47.
+e) If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of $8,698.47.
+Solution – Task 2
+Given:
+• Present deposit P = $6,500
+• Nominal annual rate r = 6% = 0.06 (and 3% for part e)
+• Compounding: annual, single deposit
+• n = 5 years (and 10 years for parts c, d)
+Formula(s):
+• A present deposit accumulates to F = P(1+r)n after n years
+Step-by-Step Calculations:
+F(5) = 6,500 × (1.06)5 = 6,500 × 1.338226 = $8,698.47.
+Interest(0→5) = 8,698.47 − 6,500.00 = $2,198.47.
+F(10) = 6,500 × (1.06)10 = 6,500 × 1.790847 = $11,640.51, not double F(5) = $17,396.94.
+Interest(5→10) = 11,640.51 − 8,698.47 = $2,942.04, compared with Interest(0→5) = $2,198.47.
+At r = 3%: F(5) = 6,500 × (1.03)5 = 6,500 × 1.159274 = $7,535.28, which is not half of $8,698.47.
+Explanation of Each Statement:
+a) TRUE. F(5) = 6,500 × (1.06)5 = $8,698.47, matching the statement exactly.
+b) TRUE. The 5-year interest earned is 8,698.47 − 6,500.00 = $2,198.47, matching the statement exactly.
+c) FALSE. Because compounding is exponential, not linear, in time, F(10) = 6,500 × (1.06)10 = $11,640.51,
+which is well below the naively doubled figure of $17,396.94.
+d) FALSE. The interest earned in the second 5-year block ($2,942.04) actually EXCEEDS that of the first
+block ($2,198.47), not the reverse, because interest is earned on an ever-larger accumulated balance as time
+passes — the hallmark of compound growth.
+e) FALSE. Halving the rate does not halve the future value, since (1+r)n is not linear in r: at 3%, F(5) =
+$7,535.28, which is considerably more than half of the 6%-rate value of $8,698.47.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 5 =====
+Task 3. Future Value of an Ordinary Annuity for a Dental Clinic's Equipment
+Fund
+Difficulty: 1.4/5
+A dental clinic owner deposits $2,000 at the end of each year into an equipment-replacement fund earning
+5% annual interest, for 6 years, and wants to understand how this future value relates to its present-value
+equivalent.
+Statements (True / False):
+a) The future value after 6 years is approximately $13,603.84.
+b) The total interest earned over the 6 years is approximately $1,703.84.
+c) The present-value equivalent of this future value is approximately $18,230.45.
+d) If the annual deposit were increased by 50%, to $3,000, the 6-year future value would also rise by
+exactly 50%, to approximately $21,405.76.
+e) If the number of annual deposits were doubled to 12 years, the future value would be LESS than
+double $13,603.84.
+Solution – Task 3
+Given:
+• Annual deposit a = $2,000
+• Nominal annual rate r = 5% = 0.05
+• Compounding: annual, ordinary annuity (end-of-year deposits)
+• n = 6 years (and 12 years for part e)
+Formula(s):
+• Fn = (a/r)[(1+r)n − 1]
+• Pn = (a/r)[1 − 1/(1+r)n]
+• Relationship: Fn = Pn(1+r)n
+Step-by-Step Calculations:
+F6 = (2,000/0.05)[(1.05)6 − 1] = 40,000 × 0.340096 = $13,603.84.
+Total deposits = 2,000 × 6 = $12,000.00. Interest = 13,603.84 − 12,000.00 = $1,603.84.
+The correct relationship is Pn = Fn/(1+r)n, giving P6 = 13,603.84/1.340096 = $10,151.40, not F6 × (1.05)6 =
+$18,230.45.
+F6′ = (3,000/0.05)[(1.05)6 − 1] = 13,603.84 × 1.5 = $20,405.76.
+F12 = (2,000/0.05)[(1.05)12 − 1] = 40,000 × 0.795856 = $31,834.24, compared with double F6 = $27,207.68.
+Explanation of Each Statement:
+a) TRUE. F6 = (2,000/0.05)[(1.05)6 − 1] = $13,603.84, matching the statement exactly.
+b) FALSE. Total deposits of $12,000.00 subtracted from the future value of $13,603.84 leaves $1,603.84 in
+interest, not $1,703.84 as stated.
+c) FALSE. This inverts the relationship Fn = Pn(1+r)n: to go from the future value back to the present value
+one must DIVIDE by (1+r)n, not multiply. The correctly computed present value is $10,151.40, not
+
+===== PAGE 6 =====
+$18,230.45.
+d) FALSE. Because Fn is directly proportional to the periodic deposit a, increasing a by 50% (from $2,000 to
+$3,000) increases F6 by exactly 50%, from $13,603.84 to $20,405.76, not $21,405.76 as stated.
+e) FALSE. F12 = $31,834.24 is actually MORE than double the 6-year value of $13,603.84 (double would be
+$27,207.68), not less, since extending the deposit period lets earlier deposits keep compounding on top of
+the additional deposits, so the future value grows faster than linearly with the number of periods.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 7 =====
+Task 4. Future Value of an Ordinary Annuity for a Logistics Company's Fleet
+Fund
+Difficulty: 1.6/5
+A logistics company deposits $3,500 at the end of each year into a fleet-replacement account earning 8%
+annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a
+higher rate.
+Statements (True / False):
+a) The future value after 10 years is approximately $50,702.97.
+b) The total interest earned over the 10 years is approximately $15,702.97.
+c) If the deposit period were extended to 20 years, the future value would be LESS than double
+$50,702.97.
+d) The interest-only portion of the 10-year future value, approximately $15,702.97, exceeds the total
+principal deposited of $35,000.00.
+e) If the interest rate rose to 10%, the 10-year future value would exceed $55,000.00.
+Solution – Task 4
+Given:
+• Annual deposit a = $3,500
+• Nominal annual rate r = 8% = 0.08 (and 10% for part e)
+• Compounding: annual, ordinary annuity
+• n = 10 years (and 20 years for part c)
+Formula(s):
+• Fn = (a/r)[(1+r)n − 1]
+Step-by-Step Calculations:
+F10 = (3,500/0.08)[(1.08)10 − 1] = 43,750 × 1.158925 = $50,702.97.
+Total deposits = 3,500 × 10 = $35,000.00. Interest = 50,702.97 − 35,000.00 = $15,702.97.
+F20 = (3,500/0.08)[(1.08)20 − 1] = 43,750 × 3.660957 = $160,166.87, which is far MORE than double F10
+($101,405.94), not less.
+Interest of $15,702.97 is compared with principal of $35,000.00; since 15,702.97 < 35,000.00, interest does
+not exceed principal.
+At r = 10%: F10 = (3,500/0.10)[(1.10)10 − 1] = 35,000 × 1.593742 = $55,780.97, which does exceed
+$55,000.00.
+Explanation of Each Statement:
+a) TRUE. F10 = (3,500/0.08)[(1.08)10 − 1] = $50,702.97, matching the statement exactly.
+b) TRUE. Total deposits of $35,000.00 subtracted from $50,702.97 leaves $15,702.97 in interest, matching
+the statement exactly.
+c) FALSE. Because the future value grows exponentially rather than linearly with the number of periods,
+doubling the deposit period to 20 years produces F20 = $160,166.87, which is well MORE than double the
+
+===== PAGE 8 =====
+10-year value, not less.
+d) FALSE. The interest earned ($15,702.97) is smaller than the total principal contributed ($35,000.00) over
+this particular 10-year horizon, not larger — contradicting the statement.
+e) TRUE. Raising the rate to 10% increases F10 to $55,780.97, which does exceed the $55,000.00 threshold
+stated.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 9 =====
+Task 5. Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan
+Difficulty: 1.8/5
+A retiree wants to withdraw $2,400 at the end of each year for the next 15 years from a retirement account
+earning 4.5% annual interest, and wants to know how much must be in the account today to support these
+withdrawals.
+Statements (True / False):
+a) The present value needed today is approximately $25,775.15.
+b) The total nominal withdrawals over 15 years, $36,000.00, exceed the required deposit of $25,775.15,
+illustrating that future dollars are worth less than present dollars.
+c) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to
+approximately $51,550.30.
+d) The gap between the total nominal withdrawals and today's required deposit, approximately
+$11,224.85, represents the total discount applied.
+e) If the interest rate were higher, the required present-value deposit would be HIGHER than $25,775.15.
+Solution – Task 5
+Given:
+• Annual withdrawal a = $2,400
+• Nominal annual rate r = 4.5% = 0.045 (and 6% for part e)
+• Compounding: annual, ordinary annuity
+• n = 15 years (and 30 years for part c)
+Formula(s):
+• Pn = (a/r)[1 − 1/(1+r)n]
+Step-by-Step Calculations:
+P15 = (2,400/0.045)[1 − 1/(1.045)15] = 53,333.33 × 0.483284 = $25,775.15.
+Total nominal withdrawals = 2,400 × 15 = $36,000.00; comparing to $25,775.15.
+P30 = (2,400/0.045)[1 − 1/(1.045)30] = 53,333.33 × 0.732998 = $39,091.65, which is not double the 15-year
+figure of $51,550.30.
+36,000.00 − 25,775.15 = $10,224.85.
+At r = 6%: P15 = (2,400/0.06)[1 − 1/(1.06)15] = 40,000 × 0.582735 = $23,309.40, which is LOWER than
+$25,775.15, not higher.
+Explanation of Each Statement:
+a) TRUE. P15 = (2,400/0.045)[1 − 1/(1.045)15] = $25,775.15, matching the statement exactly.
+b) TRUE. The $36,000.00 in total nominal withdrawals is indeed larger than the $25,775.15 that must be
+deposited today, since each future withdrawal is discounted back to a smaller present-day equivalent.
+c) FALSE. Because 1/(1+r)n shrinks nonlinearly as n grows, doubling the withdrawal period to 30 years raises
+the present value only to $39,091.65, not to the naively doubled figure of $51,550.30.
+
+===== PAGE 10 =====
+d) FALSE. Subtracting the required deposit from the total nominal withdrawals gives 36,000.00 − 25,775.15 =
+$10,224.85, not $11,224.85 as stated.
+e) FALSE. A higher interest rate discounts future withdrawals more heavily, which REDUCES the amount
+needed today, not increases it: at 6% only $23,309.40 is required, which is lower than the 4.5%-rate figure of
+$25,775.15.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 11 =====
+Task 6. Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit
+Scholarship
+Difficulty: 2.0/5
+A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years,
+with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual
+payment in perpetuity (forever) at the same rate.
+Statements (True / False):
+a) The present value needed to fund the 20-year annuity is approximately $57,349.67.
+b) The perpetuity value is approximately $83,333.33, exceeding the 20-year annuity's present value by
+approximately $25,983.66.
+c) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity
+value.
+d) If the term were extended to 40 years, the present value would rise to MORE than 95% of the
+perpetuity value.
+e) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the
+annuity present-value formula, so that the value converges to $83,333.33 as the limiting value.
+Solution – Task 6
+Given:
+• Annual payment a = $5,000
+• Nominal annual rate r = 6% = 0.06
+• Compounding: annual, ordinary annuity / perpetuity
+• n = 20 years (and 40 years for part d)
+Formula(s):
+• Pn = (a/r)[1 − 1/(1+r)n]
+• Perpetuity: P = a/r (limit as n → ∞)
+Step-by-Step Calculations:
+P20 = (5,000/0.06)[1 − 1/(1.06)20] = 83,333.33 × 0.688195 = $57,349.67.
+Perpetuity value = 5,000/0.06 = $83,333.33. Gap = 83,333.33 − 57,349.67 = $25,983.66.
+57,349.67 / 83,333.33 = 0.68820 ≈ 68.82%.
+P40 = (5,000/0.06)[1 − 1/(1.06)40] = 83,333.33 × 0.902778 = $75,231.50; 75,231.50 / 83,333.33 = 0.90278 ≈
+90.28%, which is not more than 95%.
+As n → ∞, (1+r)n → ∞, so 1/(1+r)n → 0, and Pn → a/r = 5,000/0.06 = $83,333.33.
+Explanation of Each Statement:
+a) TRUE. P20 = (5,000/0.06)[1 − 1/(1.06)20] = $57,349.67, matching the statement exactly.
+b) TRUE. The perpetuity value of $83,333.33 exceeds the 20-year annuity's present value of $57,349.67 by
+exactly $25,983.66, matching the statement exactly.
+c) FALSE. 57,349.67 divided by 83,333.33 gives 0.68820, or approximately 68.82%, not 72.82% as stated.
+
+===== PAGE 12 =====
+d) FALSE. Even after doubling the term to 40 years, the present value only reaches $75,231.50, or about
+90.28% of the perpetuity value — still short of 95%, since later payments are discounted so heavily that
+extending the horizon further yields diminishing gains.
+e) TRUE. This is exactly how Section 11.5 derives the perpetuity formula: letting n tend to infinity in the
+annuity present-value formula causes 1/(1+r)n to vanish, leaving the annuity's present value converging to
+a/r, matching the statement exactly.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 13 =====
+Task 7. Comparing Payment Streams via Present Value for a Machinery
+Purchase
+Difficulty: 2.2/5
+A supplier offers a company two payment options for a piece of machinery. Option 1: pay $18,000 today.
+Option 2: pay $2,500 at the end of each year for 9 years. Using an interest rate of 7%, the company wants to
+know which option has the lower present-value cost.
+Statements (True / False):
+a) The present value of Option 2's payments is approximately $16,288.18.
+b) Because $16,288.18 is less than $18,000.00, Option 2 is the financially better choice, saving
+approximately $1,811.82.
+c) If the interest rate were only 4%, Option 2's present value would be LOWER than $16,288.18, making
+Option 1 even less attractive by comparison.
+d) The total nominal payments under Option 2 over 9 years, $22,500.00, exceed the $18,000.00
+lump-sum cost of Option 1 by $4,600.00.
+e) Option 1's $18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9
+years to a future value of more than $34,000.00.
+Solution – Task 7
+Given:
+• Option 1: lump sum today = $18,000
+• Option 2: annual payment a = $2,500 for n = 9 years
+• Nominal annual rate r = 7% = 0.07 (and 4% for part c)
+• Compounding: annual, ordinary annuity
+Formula(s):
+• Pn = (a/r)[1 − 1/(1+r)n]
+• F = P(1+r)n
+Step-by-Step Calculations:
+P9 = (2,500/0.07)[1 − 1/(1.07)9] = 35,714.29 × 0.456069 = $16,288.18.
+18,000.00 − 16,288.18 = $1,711.82.
+At r = 4%: P9 = (2,500/0.04)[1 − 1/(1.04)9] = 62,500 × 0.297413 = $18,588.31, which is HIGHER than
+$16,288.18, not lower.
+Total Option-2 payments = 2,500 × 9 = $22,500.00. Difference from Option 1 = 22,500.00 − 18,000.00 =
+$4,500.00.
+F = 18,000 × (1.07)9 = 18,000 × 1.838459 = $33,092.26, which exceeds $33,000.00.
+Explanation of Each Statement:
+a) TRUE. P9 = (2,500/0.07)[1 − 1/(1.07)9] = $16,288.18, matching the statement exactly.
+b) FALSE. Since Option 2 costs only $16,288.18 in present-value terms versus Option 1's $18,000.00, Option
+2 is cheaper by exactly 18,000.00 − 16,288.18 = $1,711.82, not $1,811.82 as stated.
+
+===== PAGE 14 =====
+c) FALSE. A lower discount rate discounts future payments less severely, which RAISES their present value:
+at 4%, Option 2's present value rises to $18,588.31, which is higher than the 7%-rate figure of $16,288.18,
+not lower.
+d) FALSE. Total nominal payments of $22,500.00 exceed the $18,000.00 lump sum by exactly $4,500.00, not
+$4,600.00 as stated.
+e) FALSE. Growing the $18,000.00 lump sum forward at 7% for 9 years gives 18,000 × (1.07)9 = $33,092.26,
+which does not exceed $34,000.00 as claimed.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 15 =====
+Task 8. Comparing Savings Strategies via Future Value for a Construction Firm
+Difficulty: 2.4/5
+A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years,
+both earning 6% annual interest. Strategy A: deposit $12,000 today, all at once. Strategy B: deposit $1,400
+at the end of each year for 8 years.
+Statements (True / False):
+a) Strategy A's future value after 8 years is approximately $19,126.18.
+b) Strategy B's future value after 8 years is approximately $14,856.46.
+c) Strategy A yields a higher future value than Strategy B, by approximately $5,769.72.
+d) The total cash committed under Strategy B over the 8 years, $11,200.00, is MORE than the
+$12,000.00 committed upfront under Strategy A.
+e) If Strategy B's annual deposit were raised to $1,500, Strategy B's future value would still be LOWER
+than Strategy A's $19,126.18.
+Solution – Task 8
+Given:
+• Strategy A: single deposit P = $12,000 today
+• Strategy B: annual deposit a = $1,400 (and $1,500 for part e)
+• Nominal annual rate r = 6% = 0.06
+• n = 8 years
+Formula(s):
+• F = P(1+r)n
+• Fn = (a/r)[(1+r)n − 1]
+Step-by-Step Calculations:
+FA = 12,000 × (1.06)8 = 12,000 × 1.593848 = $19,126.18.
+FB = (1,400/0.06)[(1.06)8 − 1] = 23,333.33 × 0.593848 = $13,856.46.
+19,126.18 − 13,856.46 = $5,269.72.
+Total Strategy-B deposits = 1,400 × 8 = $11,200.00, compared with Strategy A's $12,000.00.
+With a = $1,500: FB′ = (1,500/0.06)[(1.06)8 − 1] = 25,000 × 0.593848 = $14,846.20, still below $19,126.18.
+Explanation of Each Statement:
+a) TRUE. FA = 12,000 × (1.06)8 = $19,126.18, matching the statement exactly.
+b) FALSE. FB = (1,400/0.06)[(1.06)8 − 1] = $13,856.46, not $14,856.46 as stated.
+c) FALSE. 19,126.18 − 13,856.46 = $5,269.72, not $5,769.72 as stated.
+d) FALSE. Total deposits under Strategy B are only $11,200.00, which is LESS than the $12,000.00
+committed upfront under Strategy A, not more.
+e) TRUE. Even when Strategy B's total nominal contributions are raised to exactly match Strategy A's
+$12,000.00 upfront amount, its future value only reaches $14,846.20, still well below Strategy A's $19,126.18
+— because front-loading the full amount gives it the maximum possible time to compound, an advantage
+
+===== PAGE 16 =====
+spread-out deposits cannot fully offset.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 17 =====
+Task 9. Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund
+Difficulty: 2.7/5
+A gym owner deposits $3,000 at the BEGINNING of each year (an annuity due) for 6 years into an
+equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth
+at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.
+Statements (True / False):
+a) The future value of these deposits at the end of year 6 is approximately $21,426.05.
+b) If the same $3,000 deposits were instead made at the END of each year, the future value would be
+approximately $20,405.76, which is LOWER than the annuity-due result.
+c) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately
+$1,120.29.
+d) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly
+double, to approximately $42,852.10.
+e) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the
+annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of
+interest growth, regardless of the number of payments or the interest rate.
+Solution – Task 9
+Given:
+• Annual deposit a = $3,000, made at the START of each year
+• Nominal annual rate r = 5% = 0.05
+• Compounding: annual, annuity due
+• n = 6 years (and 12 years for part d)
+Formula(s):
+• Future value of ordinary annuity: Fn = (a/r)[(1+r)n − 1]
+• Future value of annuity due: Fdue = Fn × (1+r)
+Step-by-Step Calculations:
+Fordinary(6) = (3,000/0.05)[(1.05)6 − 1] = 60,000 × 0.340096 = $20,405.76.
+Fdue(6) = 20,405.76 × 1.05 = $21,426.05.
+Gap = 21,426.05 − 20,405.76 = $1,020.29.
+Fordinary(12) = (3,000/0.05)[(1.05)12 − 1] = 60,000 × 0.795856 = $47,751.36; Fdue(12) = 47,751.36 × 1.05 =
+$50,138.93; double of $21,426.05 = $42,852.10.
+For any n and r, Fdue = Fordinary × (1+r) by construction, since every payment in an annuity due simply earns
+one extra period of interest compared to the corresponding ordinary annuity.
+Explanation of Each Statement:
+a) TRUE. Fdue(6) = Fordinary(6) × 1.05 = 20,405.76 × 1.05 = $21,426.05, matching the statement exactly.
+b) TRUE. Fordinary(6) = (3,000/0.05)[(1.05)6 − 1] = $20,405.76, which is indeed lower than the annuity-due
+result of $21,426.05, since end-of-year deposits each earn one fewer period of interest.
+
+===== PAGE 18 =====
+c) FALSE. The gap is 21,426.05 − 20,405.76 = $1,020.29, not $1,120.29 as stated.
+d) FALSE. Extending to 12 years gives Fdue(12) = $50,138.93, which is MORE than double the 6-year result
+($42,852.10 would be double) — not exactly double — because future value grows exponentially, not linearly,
+with the number of periods.
+e) TRUE. This is a direct structural identity: Fdue = Fordinary × (1+r) holds for any combination of a, r, and n,
+since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one
+additional period's growth factor.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 19 =====
+Task 10. Present Value of an Annuity Due for a Commercial Lease
+Difficulty: 3.0/5
+A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each
+year (an annuity due). The landlord's opportunity cost of capital is 6%, and the landlord wants to know the
+present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.
+Statements (True / False):
+a) The present value of the lease payments today is approximately $107,162.61.
+b) If the same $24,000 payments were instead due at the END of each year, the present value would be
+approximately $101,096.80, which is LOWER than the annuity-due result.
+c) The dollar gap between the annuity-due present value and the ordinary-annuity present value is
+approximately $7,065.81.
+d) If the lease term were extended to 10 years, the annuity-due present value would also exactly double,
+to approximately $214,325.22.
+e) The annuity-due present value can also be computed as the first $24,000 payment plus the present
+value of an ordinary annuity of the remaining 4 payments.
+Solution – Task 10
+Given:
+• Annual lease payment a = $24,000, due at the START of each year
+• Nominal annual rate r = 6% = 0.06
+• Compounding: annual, annuity due
+• n = 5 years (and 10 years for part d)
+Formula(s):
+• Present value of ordinary annuity: Pn = (a/r)[1 − 1/(1+r)n]
+• Present value of annuity due: Pdue = Pn × (1+r)
+• Alternative: Pdue = a + Pn−1
+Step-by-Step Calculations:
+Pordinary(5) = (24,000/0.06)[1 − 1/(1.06)5] = 400,000 × 0.252742 = $101,096.80.
+Pdue(5) = 101,096.80 × 1.06 = $107,162.61.
+Gap = 107,162.61 − 101,096.80 = $6,065.81.
+Pordinary(10) = (24,000/0.06)[1 − 1/(1.06)10] = 400,000 × 0.441605 = $176,642.00; Pdue(10) = 176,642.00 ×
+1.06 = $187,240.52; double of $107,162.61 = $214,325.22.
+Alternative check: a + P4 = 24,000 + (24,000/0.06)[1 − 1/(1.06)4] = 24,000 + 400,000 × 0.207906 = 24,000 +
+83,162.40 = $107,162.40 (matches Pdue(5), within rounding).
+Explanation of Each Statement:
+a) TRUE. Pdue(5) = Pordinary(5) × 1.06 = 101,096.80 × 1.06 = $107,162.61, matching the statement exactly.
+b) TRUE. Pordinary(5) = (24,000/0.06)[1 − 1/(1.06)5] = $101,096.80, which is indeed lower than the
+annuity-due result of $107,162.61, since discounting end-of-year payments back one extra period each
+reduces their present value.
+
+===== PAGE 20 =====
+c) FALSE. The gap is 107,162.61 − 101,096.80 = $6,065.81, not $7,065.81 as stated.
+d) FALSE. Extending to 10 years gives Pdue(10) = $187,240.52, which is LESS than double the 5-year result
+($214,325.22 would be double) — not exactly double — because discounting is exponential, not linear, in the
+number of periods, so later payments contribute progressively less.
+e) TRUE. Since the first payment of an annuity due occurs today (with zero discounting) and the remaining
+n−1 payments form an ordinary annuity one period later, splitting the payment stream this way gives a + Pn−1
+= 24,000 + $83,162.40 = $107,162.40, matching Pdue within rounding — confirming this alternative method is
+valid.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 21 =====
+This worksheet (Tasks 1–10) relies exclusively on the single-payment relationships x = A/(1+r)n and F = P(1+r)n, the present value of
+an ordinary annuity Pn = (a/r)[1 − 1/(1+r)n] (11.5.2), the future value of an ordinary annuity Fn = (a/r)[(1+r)n − 1] (11.5.3), the
+relationship Fn = Pn(1+r)n, the present value of a perpetuity P = a/r (11.5.4), obtained as the limit of the annuity present-value formula
+as n → ∞, and the annuity-due relationships Pdue = Pn(1+r) and Fdue = Fn(1+r), all combined in multi-step ways across Tasks 7–10,
+exactly as presented in Section 11.5.
+
+===== PAGE 22 =====
+Section 11.5 (continued) – Perpetuities, Growing
+Perpetuities & Continuous Compounding
+Financial Mathematics Practice Worksheet
+Chapter 11.5 – Advanced Applications (Complete Set: Tasks 11–20)
+Tasks 11–20, sorted from harder to hardest (difficulty 3.0/5 to 5.0/5). Building on Tasks 1–10, this set adds:
+the value of a deferred or advanced perpetuity, still governed by P = a/r; the growing perpetuity, where a
+payment of a1 expected one period from now grows at a constant rate g forever, valued as P = a1/(r − g),
+valid only when r > g; continuous-compounding present and future values of a single sum, S(t) = S0ert and
+S0 = S(t)e−rt; the annuity due, where each payment occurs at the START of the period rather than the end,
+so that PVdue = PVordinary×(1+r) and FVdue = FVordinary×(1+r); and comprehensive scenarios (Tasks 19–20)
+that combine several of these tools at once. Round dollar amounts to 2 decimal places and
+rates/percentages to 2 decimal places unless otherwise noted.
+Contents
+Task
+Title
+Difficulty
+11
+A Deferred Perpetuity for a Philanthropist's Endowed Fund
+3.0/5
+12
+Reverse-Engineering a Perpetual Preferred Stock's Fair Value
+3.2/5
+13
+Combined Renovation Cost and Perpetual Maintenance Fund for a City Park
+3.4/5
+14
+Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows
+3.6/5
+15
+The Gordon Growth Model for a Pension Fund's Stock Valuation
+3.8/5
+16
+Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician 4.0/5
+17
+Present Value Under Continuous Compounding for a Bond Retirement Fund
+4.2/5
+18
+Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone
+4.4/5
+19
+Mixed Financial Planning: Annuity Due, Continuous Compounding &amp; Perpetuity
+4.7/5
+20
+Capstone: A Family Office's Four-Component Windfall Allocation
+5.0/5
+
+===== PAGE 23 =====
+Task 11. A Deferred Perpetuity for a Philanthropist's Endowed Fund
+Difficulty: 3.0/5
+A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever,
+but the FIRST payment will not occur until the end of year 5 (i.e., payments run at t = 5, 6, 7, …). The fund
+earns 6% annual interest, and the philanthropist wants to know how much must be donated today.
+Statements (True / False):
+a) The value of the perpetuity as of the end of year 4 is approximately $166,666.67.
+b) Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately
+$132,015.61.
+c) If the first payment instead began immediately at the end of year 1, today's present value would be
+LOWER than the deferred value of $132,015.61.
+d) If the deferral were extended so the first payment begins at the end of year 9, today's present value
+would be LESS than half of $132,015.61.
+e) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.
+Solution – Task 11
+Given:
+• Annual payment a = $10,000, first payment at end of year 5
+• Nominal annual rate r = 6% = 0.06
+• Compounding: annual, deferred ordinary perpetuity
+• Deferral: value one period before first payment falls at t = 4 (and t = 8 for part d)
+Formula(s):
+• Perpetuity value (as of one period before first payment): V = a/r
+• Discount back to today: PV0 = V/(1+r)k, where k is the number of years from today to the valuation point
+Step-by-Step Calculations:
+V(at t=4) = 10,000/0.06 = $166,666.67.
+PV0 = 166,666.67/(1.06)4 = 166,666.67/1.262477 = $132,015.61.
+Immediate (non-deferred) perpetuity value = 10,000/0.06 = $166,666.67, which is HIGHER than
+$132,015.61, not lower.
+With first payment at t = 9: V(at t=8) = $166,666.67; PV0′ = 166,666.67/(1.06)8 = 166,666.67/1.593848 =
+$104,568.80, compared with half of $132,015.61 = $66,007.81.
+132,015.61/166,666.67 = 0.792094; 1/(1.06)4 = 1/1.262477 = 0.792094 — the two values match.
+Explanation of Each Statement:
+a) TRUE. The perpetuity formula a/r gives the value one period before the first payment; since the first
+payment falls at t = 5, that valuation point is t = 4, giving 10,000/0.06 = $166,666.67, matching the statement
+exactly.
+b) TRUE. Discounting $166,666.67 back 4 years at 6% gives 166,666.67/(1.06)4 = $132,015.61, matching
+the statement exactly.
+
+===== PAGE 24 =====
+c) FALSE. Deferring the payments pushes them further into the future, which REDUCES today's present
+value, not increases it: the immediate perpetuity is worth $166,666.67 today, which is higher than the
+deferred value of $132,015.61, not lower.
+d) FALSE. Extending the deferral to 8 years reduces the present value to $104,568.80, which remains well
+ABOVE half of the 4-year-deferred value ($66,007.81), not below it — the value shrinks as deferral
+lengthens, but not fast enough to fall below half in this case.
+e) FALSE. Because PV0 = V/(1.06)4, the ratio PV0/V is by definition exactly the 4-year discount factor
+1/(1.06)4 ≈ 0.7921, not 0.8321 as stated.
+Final Answers — a: TRUE b: TRUE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 25 =====
+Task 12. Reverse-Engineering a Perpetual Preferred Stock's Fair Value
+Difficulty: 3.2/5
+A preferred stock pays a fixed dividend of $4.25 per share at the end of each year, in perpetuity. Investors
+currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the
+fair value responds to changes in the required return and the dividend.
+Statements (True / False):
+a) The fair value per share is approximately $60.71.
+b) The stock is currently trading at $65.00 per share, which is below its fair value of $60.71, so the stock
+is UNDERVALUED.
+c) If the required return fell to 4%, the fair value would rise to $116.25 per share.
+d) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.
+e) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall
+to exactly $50.57, a 20% drop from the original $60.71.
+Solution – Task 12
+Given:
+• Annual dividend a = $4.25 (and $3.40 for part e)
+• Required return r = 7% = 0.07 (and 4% for parts c, d)
+• Compounding: annual, perpetuity
+Formula(s):
+• Perpetuity (fair value): P = a/r
+Step-by-Step Calculations:
+P = 4.25/0.07 = $60.71 (precisely $60.714286).
+Comparing the $55.00 market price to the $60.71 fair value.
+P′ = 4.25/0.04 = $106.25.
+Increase = (106.25 − 60.714286)/60.714286 = 45.535714/60.714286 = 0.750000, i.e., exactly 75.00%,
+algebraically equal to (rold/rnew − 1) = (0.07/0.04 − 1) = 0.75.
+P″ = 3.40/0.07 = $48.571429 ≈ $48.57; 48.571429/60.714286 = 0.80, confirming an exact 20% drop, since
+fair value is directly proportional to the dividend a.
+Explanation of Each Statement:
+a) TRUE. P = 4.25/0.07 = $60.71, matching the statement exactly.
+b) FALSE. The $65.00 market price sits ABOVE the $60.71 fair value, meaning the stock is OVERVALUED,
+not undervalued as claimed.
+c) FALSE. P′ = 4.25/0.04 = $106.25, not $116.25 as stated.
+d) FALSE. The increase works out to EXACTLY 75.00%, not more than 75% — a precise boundary case
+where the statement's claim of "more than" narrowly fails even though the number itself (75%) looks correct
+at first glance.
+
+===== PAGE 26 =====
+e) FALSE. Cutting the dividend by 20% cuts the fair value by exactly 20% as well, from $60.71 to $48.57, not
+$50.57 as stated.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 27 =====
+Task 13. Combined Renovation Cost and Perpetual Maintenance Fund for a City
+Park
+Difficulty: 3.4/5
+A city council wants to fund a park's perpetual maintenance, needing $15,000 per year forever, starting one
+year from now, PLUS an immediate one-time renovation cost of $50,000 paid today. The applicable interest
+rate is 4.5%, and the council also wants to see how a higher rate would change the total funding
+requirement.
+Statements (True / False):
+a) The present value of just the perpetual maintenance payments is approximately $333,333.33.
+b) Including the $50,000 immediate renovation cost, the total amount the city must set aside today is
+approximately $383,333.33.
+c) If the interest rate were instead 6%, the total required funding would be approximately $300,000.00.
+d) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.
+e) If the council only needed the perpetuity and the rate were 6%, the required funding of $250,000.00
+would be LESS than half of the original combined 4.5%-rate total of $383,333.33.
+Solution – Task 13
+Given:
+• Annual maintenance payment a = $15,000
+• Immediate renovation cost = $50,000
+• Nominal annual rate r = 4.5% = 0.045 (and 6% = 0.06 for parts c, d, e)
+• Compounding: annual, perpetuity + lump sum
+Formula(s):
+• Perpetuity: P = a/r
+• Total required funding = immediate cost + perpetuity value
+Step-by-Step Calculations:
+Perpetuity value = 15,000/0.045 = $333,333.33.
+Total = 50,000.00 + 333,333.33 = $383,333.33.
+At r = 6%: perpetuity value = 15,000/0.06 = $250,000.00; total = 50,000.00 + 250,000.00 = $300,000.00.
+Reduction = 383,333.33 − 300,000.00 = $83,333.33; ratio = 83,333.33/383,333.33 = 0.21739 ≈ 21.74%,
+which is more than 20%.
+Half of $383,333.33 = $191,666.67; comparing $250,000.00 to $191,666.67, $250,000.00 is LARGER, not
+smaller.
+Explanation of Each Statement:
+a) TRUE. Perpetuity value = 15,000/0.045 = $333,333.33, matching the statement exactly.
+b) TRUE. Adding the $50,000.00 renovation cost to the $333,333.33 perpetuity value gives $383,333.33,
+matching the statement exactly.
+
+===== PAGE 28 =====
+c) TRUE. At the higher 6% rate, the perpetuity value falls to $250,000.00, and adding the $50,000.00
+renovation cost gives a total of $300,000.00, matching the statement exactly.
+d) FALSE. The reduction of $83,333.33 represents approximately 21.74% of the original $383,333.33 total,
+which is more than 20% but not more than 25%.
+e) FALSE. The perpetuity-only requirement at 6% ($250,000.00) is actually LARGER than half of the original
+combined total ($191,666.67), not smaller — even though raising the rate shrank the perpetuity value
+considerably, it still exceeds half of the original combined (renovation + maintenance) total.
+Final Answers — a: TRUE b: TRUE c: TRUE d: FALSE e: FALSE
+
+===== PAGE 29 =====
+Task 14. Growing Perpetuity Valuation of a Rental Property's Escalating Cash
+Flows
+Difficulty: 3.6/5
+A real estate investor is evaluating a rental property expected to generate a net cash flow of $24,000 at the
+end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor
+requires an 8% annual return on investments of this type.
+Statements (True / False):
+a) The property's fair value is approximately $436,363.64.
+b) If the cash flows did NOT grow, the plain-perpetuity fair value, $300,000.00, is HIGHER than the
+growing-perpetuity value of $436,363.64.
+c) If the growth rate rose to 4%, the fair value would MORE than double, to over $872,727.28.
+d) If the required return instead fell to 6%, the fair value would be approximately $715,714.29.
+e) The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the
+growth rate were to equal or exceed the 8% required return, the formula could not be used.
+Solution – Task 14
+Given:
+• Next-year cash flow a1 = $24,000
+• Growth rate g = 2.5% = 0.025 (and 0%, 4% for parts b, c)
+• Required return r = 8% = 0.08 (and 6% for part d)
+• Compounding: annual, growing perpetuity
+Formula(s):
+• Growing perpetuity: P = a1/(r − g), valid only for r > g
+Step-by-Step Calculations:
+P = 24,000/(0.08 − 0.025) = 24,000/0.055 = $436,363.64.
+At g = 0%: P = 24,000/0.08 = $300,000.00, compared to $436,363.64.
+At g = 4%: P′ = 24,000/(0.08 − 0.04) = 24,000/0.04 = $600,000.00; double of $436,363.64 = $872,727.28;
+$600,000.00 < $872,727.28.
+At r = 6%: P″ = 24,000/(0.06 − 0.025) = 24,000/0.035 = $685,714.29.
+As g → r, the denominator (r − g) → 0, so the formula's output grows without bound and becomes undefined
+at g = r; for g > r, the denominator turns negative, which is not economically meaningful.
+Explanation of Each Statement:
+a) TRUE. P = 24,000/0.055 = $436,363.64, matching the statement exactly.
+b) FALSE. A non-growing cash flow of the same starting size is worth only $300,000.00, which is actually
+LOWER than the growing-perpetuity value of $436,363.64, not higher, since growth adds value by raising
+every future cash flow.
+c) FALSE. Raising the growth rate to 4% increases the fair value to $600,000.00, which is a substantial
+increase but is NOT more than double the original $436,363.64 (double would be $872,727.28) — the value
+
+===== PAGE 30 =====
+is highly sensitive to (r − g) but does not increase without limit until g approaches r more closely.
+d) FALSE. P″ = 24,000/0.035 = $685,714.29, not $715,714.29 as stated.
+e) TRUE. This is a direct structural requirement of the growing-perpetuity formula: it depends on the spread (r
+− g) staying strictly positive, so growth rates at or above the required return break the model entirely,
+matching the statement exactly.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 31 =====
+Task 15. The Gordon Growth Model for a Pension Fund's Stock Valuation
+Difficulty: 3.8/5
+A pension fund is valuing a stock that just paid a dividend of $3.00 per share (D0), expected to grow at a
+constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use
+the NEXT dividend, not the one just paid, in the valuation formula.
+Statements (True / False):
+a) The next dividend is $3.09.
+b) The fair value per share is approximately $54.50.
+c) Mistakenly using the just-paid dividend instead of next year's dividend would give a value of $50.00,
+which UNDERSTATES the correct fair value of $51.50 by $2.50.
+d) If the growth rate were instead 5%, the fair value would be MORE than double $51.50.
+e) If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a
+present value of exactly $0.00.
+Solution – Task 15
+Given:
+• Just-paid dividend D0 = $3.00
+• Growth rate g = 3% = 0.03 (and 5% for part d)
+• Required return r = 9% = 0.09
+• Compounding: annual, growing perpetuity
+Formula(s):
+• D1 = D0(1+g)
+• Growing perpetuity: P = D1/(r − g)
+Step-by-Step Calculations:
+D1 = 3.00 × 1.03 = $3.09.
+P = 3.09/(0.09 − 0.03) = 3.09/0.06 = $51.50.
+Incorrect calc: 3.00/0.06 = $50.00; difference = 51.50 − 50.00 = $1.50.
+At g = 5%: D1′ = 3.00 × 1.05 = $3.15; P′ = 3.15/(0.09 − 0.05) = 3.15/0.04 = $78.75; double of $51.50 =
+$103.00; $78.75 < $103.00.
+As g → r = 0.09, the denominator (r − g) → 0, driving the formula's result toward infinity, which is why the
+model requires r > g.
+Explanation of Each Statement:
+a) TRUE. D1 = 3.00 × 1.03 = $3.09, matching the statement exactly.
+b) FALSE. P = 3.09/0.06 = $51.50, not $54.50 as stated.
+c) FALSE. Using the just-paid dividend instead of next year's dividend gives $50.00, which is $1.50 below the
+correct $51.50, not $2.50 as stated.
+d) FALSE. Raising the growth rate to 5% increases the fair value substantially, to $78.75, but this is still short
+of double the original $51.50 (which would be $103.00) — the growing-perpetuity value rises sharply as g
+
+===== PAGE 32 =====
+approaches r, but 5% is not yet close enough to 9% to more than double it here.
+e) FALSE. As g → r, the formula's denominator (r − g) shrinks toward zero, driving the RESULT toward
+infinity, not toward $0.00 — the fair value becomes undefined (unboundedly large), not zero.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 33 =====
+Task 16. Comparing Level vs. Growing Royalty-Stream Purchase Deals for a
+Musician
+Difficulty: 4.0/5
+A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and
+both requiring a 10% return to be considered a fair buy. Deal 1 is a level (non-growing) perpetuity of $18,000
+per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.
+Statements (True / False):
+a) Deal 1's fair value is $180,000.00, which exceeds the $170,000 asking price by $10,000.00, making it
+a good buy.
+b) Deal 2's fair value is approximately $233,333.33, which exceeds the $170,000 asking price by more
+than $60,000.00.
+c) Deal 1 offers the larger "margin of safety" of the two deals.
+d) If Deal 2's growth rate were instead only 1%, its fair value would fall to approximately $155,555.56,
+making it a worse buy than its $170,000 asking price.
+e) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.
+Solution – Task 16
+Given:
+• Deal 1: level annual payment a = $18,000 (perpetuity)
+• Deal 2: next-year payment a1 = $14,000, growth g = 4% (and 1% for part d)
+• Required return r = 10% = 0.10
+• Asking price (both deals) = $170,000
+Formula(s):
+• Level perpetuity: P = a/r
+• Growing perpetuity: P = a1/(r − g)
+Step-by-Step Calculations:
+Deal 1: P = 18,000/0.10 = $180,000.00; margin = 180,000.00 − 170,000.00 = $10,000.00.
+Deal 2: P = 14,000/(0.10 − 0.04) = 14,000/0.06 = $233,333.33; margin = 233,333.33 − 170,000.00 =
+$63,333.33.
+Comparing margins: Deal 2's $63,333.33 vs. Deal 1's $10,000.00.
+At g = 1%: P′ = 14,000/(0.10 − 0.01) = 14,000/0.09 = $155,555.56, which is below the $170,000.00 asking
+price.
+Comparing $180,000.00 (Deal 1) to $233,333.33 (Deal 2).
+Explanation of Each Statement:
+a) TRUE. Deal 1's fair value is 18,000/0.10 = $180,000.00, exceeding the $170,000.00 price by $10,000.00,
+matching the statement exactly.
+b) TRUE. Deal 2's fair value is 14,000/0.06 = $233,333.33, exceeding the $170,000.00 price by $63,333.33,
+which is indeed more than $60,000.00.
+
+===== PAGE 34 =====
+c) FALSE. Deal 2's margin of safety ($63,333.33) is substantially larger than Deal 1's ($10,000.00), so it is
+Deal 2, not Deal 1, that offers more cushion above its asking price.
+d) TRUE. At the lower 1% growth rate, Deal 2's fair value falls to $155,555.56, which sits below the
+$170,000.00 asking price, making it a worse buy at that reduced growth assumption.
+e) FALSE. Deal 1's fair value ($180,000.00) is actually LESS than Deal 2's fair value ($233,333.33), not more
+— the growing payment stream, even with a lower starting payment, is worth substantially more due to its
+perpetual growth.
+Final Answers — a: TRUE b: TRUE c: FALSE d: TRUE e: FALSE
+
+===== PAGE 35 =====
+Task 17. Present Value Under Continuous Compounding for a Bond Retirement
+Fund
+Difficulty: 4.2/5
+A company needs to have $250,000 available in 12 years to retire a bond issue, and can invest in an
+account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how
+much must be invested today, and how this compares to ordinary annual compounding at the same nominal
+rate.
+Statements (True / False):
+a) The present value required today is approximately $129,213.75.
+b) This continuously compounded present value is HIGHER than the present value using ordinary annual
+compounding at the same 5.5% nominal rate.
+c) The difference between the annual-compounding present value and the continuous-compounding
+present value is approximately $4,280.35.
+d) If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required
+today would be LESS than half of $129,213.75.
+e) The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35%
+of value is "lost" to discounting each year.
+Solution – Task 17
+Given:
+• Target future amount = $250,000
+• Nominal annual rate r = 5.5% = 0.055
+• Compounding: continuous (and ordinary annual, for comparison)
+• t = 12 years (and 6 years for part d)
+Formula(s):
+• Continuous-compounding present value: S0 = S(t) · e−rt
+• Ordinary annual present value: S0 = S(t)/(1+r)t
+Step-by-Step Calculations:
+S0 = 250,000 × e−0.66 = 250,000 × 0.516855 = $129,213.75.
+Ordinary annual: S0 = 250,000/(1.055)12 = 250,000/1.901209 = $131,495.10; comparing to $129,213.75.
+Difference = 131,495.10 − 129,213.75 = $2,281.35, not $4,280.35.
+At t = 6: S0′ = 250,000 × e−0.33 = 250,000 × 0.718924 = $179,731.00; half of $129,213.75 = $64,606.88;
+$179,731.00 > $64,606.88.
+e−0.055 = 1/e0.055 = 1/1.056540 = 0.946480 ≈ 0.9465; 1 − 0.946480 = 0.053520 ≈ 5.35%.
+Explanation of Each Statement:
+a) TRUE. S0 = 250,000 × e−0.66 = $129,213.75, matching the statement exactly.
+b) FALSE. Continuous compounding is the most profitable schedule for the lender at any given nominal rate,
+so reaching the same $250,000 target requires depositing LESS today under continuous compounding
+
+===== PAGE 36 =====
+($129,213.75) than under ordinary annual compounding (approximately $131,495.10) — the continuous
+figure is LOWER, not higher.
+c) FALSE. The correctly computed gap is 131,495.10 − 129,213.75 = $2,281.35, not $4,280.35 — the stated
+figure roughly doubles the true difference.
+d) FALSE. Because discounting is exponential in time, halving the horizon does not halve the required
+deposit: at 6 years the required amount is $179,731.00, which is far MORE than half of the 12-year figure of
+$129,213.75, not less.
+e) TRUE. e−0.055 ≈ 0.9465 means only about 94.65% of a dollar's value one year from now is captured today,
+so approximately 5.35% is lost to discounting each year, matching the statement exactly.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: TRUE
+
+===== PAGE 37 =====
+Task 18. Continuous-Compounding Lump Sum vs. Discrete Annuity for a
+Biotech Milestone
+Difficulty: 4.4/5
+A biotech company sets aside $75,000 today in an account offering continuous compounding at a nominal
+6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to
+instead depositing the same $75,000 total, spread evenly as $8,333.33 at the end of each of the 9 years,
+into a separate account earning a discrete 6.25% annual rate.
+Statements (True / False):
+a) The lump sum's future value under continuous compounding is approximately $131,629.13.
+b) The annuity's future value is approximately $96,757.60, which is LOWER than the lump-sum
+continuous-compounding result, despite both strategies involving the same total $75,000 in contributions.
+c) The lump-sum strategy outperforms the annuity strategy by more than $30,000.00.
+d) This gap arises largely because the lump sum earns interest on the FULL $75,000 from day one, while
+the annuity's later deposits earn interest for only a very short time before the horizon ends.
+e) If the company had instead invested the full $75,000 using discrete ANNUAL compounding at the
+same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of $96,757.60.
+Solution – Task 18
+Given:
+• Lump sum P = $75,000 today
+• Equivalent annuity: annual deposit a = $8,333.33 for n = 9 years
+• Nominal annual rate r = 6.25% = 0.0625
+• Compounding: continuous (lump sum) vs. discrete annual (annuity and comparison)
+Formula(s):
+• Continuous compounding: S = P · ert
+• Future value of ordinary annuity: Fn = (a/r)[(1+r)n − 1]
+• Discrete compounding: S = P(1+r)n
+Step-by-Step Calculations:
+Scont = 75,000 × e0.5625 = 75,000 × 1.755055 = $131,629.13.
+F9 = (8,333.33/0.0625)[(1.0625)9 − 1] = 133,333.33 × 0.725682 = $96,757.60.
+Gap = 131,629.13 − 96,757.60 = $34,871.53.
+Deposits made later in an ordinary annuity have progressively less time to earn interest before the horizon
+ends, unlike the lump sum which compounds for the full 9 years.
+Sdiscrete = 75,000 × (1.0625)9 = 75,000 × 1.725682 = $129,426.15, compared with Scont = $131,629.13.
+Explanation of Each Statement:
+a) TRUE. Scont = 75,000 × e0.5625 = $131,629.13, matching the statement exactly.
+b) TRUE. F9 = $96,757.60, which is indeed lower than the lump-sum continuous-compounding result of
+$131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total
+
+===== PAGE 38 =====
+contributions are equal.
+c) TRUE. The gap is 131,629.13 − 96,757.60 = $34,871.53, which exceeds $30,000.00, matching the
+statement exactly.
+d) TRUE. This is the correct conceptual explanation: front-loading the entire amount lets it compound over
+the full horizon, while spreading contributions out means later deposits have little to no time to grow before
+the milestone date.
+e) TRUE. Sdiscrete = 75,000 × (1.0625)9 = $129,426.15, which does exceed the annuity strategy's future value
+of $96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result
+of $131,629.13).
+Final Answers — a: TRUE b: TRUE c: TRUE d: TRUE e: TRUE
+
+===== PAGE 39 =====
+Task 19. Mixed Financial Planning: Annuity Due, Continuous Compounding &
+Perpetuity
+Difficulty: 4.7/5
+A small business owner is juggling three separate financial arrangements, all at rates around 6–8%. First, an
+equipment lessor requires payments of $4,200 at the BEGINNING of each year (an annuity due) for 5 years
+at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous
+compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity
+option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.
+Statements (True / False):
+a) The present value of the annuity-due lease payments is approximately $18,110.94.
+b) The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately
+$27,610.90.
+c) The $20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7
+years, to approximately $31,439.24.
+d) The maintenance-reserve perpetuity, paying $3,000 per year forever at 8%, requires a present value
+of $37,500.00, which is LESS than double the present value of the 5-year annuity-due lease payments.
+e) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's
+present value, the continuous-compounding result is LARGER.
+Solution – Task 19
+Given:
+• Annuity due: a = $4,200, n = 5 years, r = 8% = 0.08
+• Continuous-compounding investment: P = $20,000, nominal r = 6% = 0.06, t = 7 years
+• Perpetuity: a = $3,000, r = 8% = 0.08
+Formula(s):
+• PVdue = (a/r)[1 − 1/(1+r)n] × (1+r)
+• FVdue = (a/r)[(1+r)n − 1] × (1+r)
+• Continuous compounding: S = P · ert
+• Perpetuity: P = a/r
+Step-by-Step Calculations:
+PVordinary = (4,200/0.08)[1 − 1/(1.08)5] = 52,500 × 0.319417 = $16,769.39; PVdue = 16,769.39 × 1.08 =
+$18,110.94.
+FVordinary = (4,200/0.08)[(1.08)5 − 1] = 52,500 × 0.469328 = $24,639.72; FVdue = 24,639.72 × 1.08 =
+$26,610.90.
+S = 20,000 × e0.42 = 20,000 × 1.521962 = $30,439.24.
+Perpetuity PV = 3,000/0.08 = $37,500.00; double of $18,110.94 = $36,221.88; $37,500.00 > $36,221.88.
+Comparing $30,439.24 to $37,500.00.
+Explanation of Each Statement:
+
+===== PAGE 40 =====
+a) TRUE. Computing the ordinary annuity present value first ($16,769.39) and then multiplying by (1.08) to
+shift each payment one period earlier gives $18,110.94, matching the statement exactly.
+b) FALSE. Computing the ordinary annuity future value first ($24,639.72) and then multiplying by (1.08) gives
+$26,610.90, not $27,610.90 as stated.
+c) FALSE. S = 20,000 × e0.42 = $30,439.24, not $31,439.24 as stated.
+d) FALSE. The perpetuity's $37,500.00 present value actually exceeds double the annuity-due lease value
+($36,221.88), so it is MORE than double, not less as stated.
+e) FALSE. The continuous-compounding investment grows to $30,439.24 after 7 years, which is LESS than
+the perpetuity's present value of $37,500.00, not larger.
+Final Answers — a: TRUE b: FALSE c: FALSE d: FALSE e: FALSE
+
+===== PAGE 41 =====
+Task 20. Capstone: A Family Office's Four-Component Windfall Allocation
+Difficulty: 5.0/5
+A family office is structuring a client's financial plan using four separate tools. Component 1: $150,000 is
+invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future
+purchase. Component 2: the client needs $80,000 available in 6 years for a home renovation, funded today
+by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of
+$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4:
+the remainder will endow a scholarship as a growing perpetuity paying $5,000 next year, growing 2%
+annually forever, at a required return of 7%.
+Statements (True / False):
+a) Component 1's accumulated value after 10 years under continuous compounding is approximately
+$247,308.20.
+b) Component 2's required deposit today, using discrete annual compounding, is approximately
+$57,396.85.
+c) Component 3's present value, the 12-year ordinary annuity of $10,000 at 7%, is approximately
+$79,429.40.
+d) Component 4's present value, the growing perpetuity paying $5,000 next year and growing at 2%
+forever at a 7% required return, is exactly $100,000.00.
+e) Summing the present-day resources committed to all four components — Component 1's initial
+investment, Component 2's required deposit today, Component 3's present value, and Component 4's
+present value — the total exceeds $500,000.00.
+Solution – Task 20
+Given:
+• Component 1: P = $150,000, nominal r = 5% = 0.05, t = 10 years, continuous compounding
+• Component 2: target = $80,000, r = 6% = 0.06, n = 6 years, discrete annual compounding
+• Component 3: a = $10,000, n = 12 years, r = 7% = 0.07, ordinary annuity
+• Component 4: a1 = $5,000, g = 2% = 0.02, r = 7% = 0.07, growing perpetuity
+Formula(s):
+• Continuous compounding: S = P · ert
+• Discrete single-sum present value: x = A/(1+r)n
+• Pn = (a/r)[1 − 1/(1+r)n]
+• Growing perpetuity: P = a1/(r − g)
+Step-by-Step Calculations:
+Component 1: S = 150,000 × e0.50 = 150,000 × 1.648721 = $247,308.20.
+Component 2: x = 80,000/(1.06)6 = 80,000/1.418519 = $56,396.85.
+Component 3: P12 = (10,000/0.07)[1 − 1/(1.07)12] = 142,857.14 × 0.556005 = $79,429.40.
+Component 4: P = 5,000/(0.07 − 0.02) = 5,000/0.05 = $100,000.00.
+Total = 150,000.00 + 56,396.85 + 79,429.40 + 100,000.00 = $385,826.25, which is LESS than $500,000.00.
+
+===== PAGE 42 =====
+Explanation of Each Statement:
+a) TRUE. S = 150,000 × e0.50 = $247,308.20, matching the statement exactly.
+b) FALSE. x = 80,000/(1.06)6 = $56,396.85, not $57,396.85 as stated.
+c) TRUE. P12 = (10,000/0.07)[1 − 1/(1.07)12] = $79,429.40, matching the statement exactly.
+d) TRUE. P = 5,000/0.05 = $100,000.00, matching the statement exactly.
+e) FALSE. Adding all four present-day figures gives $385,826.25 (using the correct Component 2 figure of
+$56,396.85), which is LESS than $500,000.00, not more — the plan is comfortably within, not in excess of,
+the available resources implied by this comparison.
+Final Answers — a: TRUE b: FALSE c: TRUE d: TRUE e: FALSE
+
+===== PAGE 43 =====
+This worksheet (Tasks 11–20) builds on Tasks 1–10 by adding the deferred and reverse-engineered applications of the perpetuity
+formula P = a/r; the growing perpetuity P = a1/(r − g), valid only for r > g, as used in real-estate, dividend-growth, and royalty-stream
+valuation; continuous-compounding present and future values of a single sum, S(t) = S0ert and S0 = S(t)e−rt; the annuity due, obtained
+by multiplying the corresponding ordinary-annuity present or future value by (1+r); and, in Tasks 19–20, comprehensive scenarios that
+require selecting and combining several of these tools within a single decision.

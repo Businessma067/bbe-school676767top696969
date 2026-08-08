@@ -1,9 +1,13 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Chapters 5 (Linear equations) and 13 (Binomial) are populated; others use placeholders.
+ * Chapters 5 (Linear equations), 11 (Financial mathematics), and 13 (Binomial) are populated; others use placeholders.
  */
 
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
+import {
+  MATH_CH11_FINANCIAL,
+  MATH_CH11_SUBSECTIONS,
+} from "@/data/math-ch11-financial";
 import ch13Binomial from "@/data/math-cases-ch13-binomial.json";
 
 export type MathTask = {
@@ -16,6 +20,8 @@ export type MathTask = {
   tactical_explanations: string[];
   difficulty_level: string;
   sort_order: number;
+  /** Book subsection id within a chapter, e.g. "11.3". */
+  subsection?: string;
   /** Shared worked solution (KaTeX / markdown-ish) shown with all statement explanations. */
   solution_overview?: string;
   /** Optional stem graphic clipped from the source PDF (public URL). */
@@ -26,10 +32,16 @@ export type MathTask = {
   placeholder?: boolean;
 };
 
+export type MathSubsection = {
+  id: string;
+  title: string;
+};
+
 export type MathChapter = {
   num: number;
   title: string;
   tasks: MathTask[];
+  subsections?: readonly MathSubsection[];
 };
 
 /** How many free (unlocked) tasks per chapter in the Demo tier. */
@@ -49,7 +61,7 @@ const CHAPTER_TITLES = [
   "Power functions",
   "Polynomial functions",
   "Exponential and logarithmic functions",
-  "Differentiation and single variable optimization",
+  "Financial mathematics",
   "Elementary probability",
   "Binomial distribution",
 ] as const;
@@ -74,10 +86,15 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   5: MATH_CH5_LINEAR_EQUATIONS,
+  11: MATH_CH11_FINANCIAL,
   13: (ch13Binomial.tasks as MathTask[]).map((t) => ({
     ...t,
     placeholder: false,
   })),
+};
+
+const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
+  11: MATH_CH11_SUBSECTIONS,
 };
 
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
@@ -86,6 +103,7 @@ export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
     num,
     title,
     tasks: CHAPTER_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
+    subsections: CHAPTER_SUBSECTIONS[num],
   };
 });
 

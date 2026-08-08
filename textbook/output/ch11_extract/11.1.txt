@@ -1,0 +1,823 @@
+
+===== PAGE 1 =====
+Financial Mathematics Practice Worksheet
+Chapter 11.1 – Interest Periods and Effective Rates
+Tasks 1–20, sorted from easiest to hardest (difficulty 1/5 to 5/5). Core formulas from Section 11.1: after t years a
+principal S0 earning nominal annual rate r with interest added n times per year grows to S0(1 + r/n)nt; the effective
+yearly rate is R = (1 + r/n)n − 1. Round dollar amounts to 2 decimal places and rates to 2 decimal places unless
+otherwise noted. Each task has 5 True/False statements (A–E); the number of true statements per task varies
+across the whole set (from 1 to 5) rather than being fixed.
+This set is built to spread evenly across every exercise type in Section 11.1:
+• Converting a nominal rate to an effective yearly rate R, for different n (Tasks 1, 5, 13)
+• Multi-year future value S0(1+r/n)nt for t ≠ 1 (Tasks 2, 8, 17)
+• Solving for time t via logarithms — doubling time, reaching a target (Tasks 6, 12, 20)
+• Solving for the required nominal rate r to hit a growth target (Tasks 9, 16)
+• Present value — how much had to be invested in the past to reach a value today (Tasks 11, 18)
+• Comparing two or more offers to see which is truly better (Tasks 3, 10, 19)
+• Converting a periodic (e.g., monthly credit-card) rate to an effective annual rate (Tasks 4, 14)
+• Comparing the same nominal rate under several compounding frequencies (Tasks 7, 15)
+
+===== PAGE 2 =====
+Task 1. Nominal Rate vs. Effective Rate on a Business Account
+(difficulty score 1/5)
+A print shop owner deposits $6,000 into a business savings account offering a nominal annual rate of
+7.20%, compounded monthly.
+Statements (True / False):
+a) The monthly periodic interest rate is 0.60%.
+b) The effective annual rate is approximately 7.44%.
+c) A $6,000 deposit left for exactly one year would grow to $6,446.54.
+d) If the bank instead compounded the same nominal rate annually, the effective annual rate would be
+higher than under monthly compounding.
+e) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.
+Solution – Task 1
+Given:
+P = $6,000
+Nominal annual rate r = 7.20% = 0.072
+Compounding frequency n = 12 (monthly)
+Time = 1 year
+Formula(s):
+Periodic rate = r/n
+R = (1 + r/n)n − 1
+FV = P × (1 + R)
+Step-by-Step Calculations:
+Periodic rate = 0.072/12 = 0.006 = 0.60%.
+R = (1.006)12 − 1 ≈ 1.074424 − 1 = 0.074424 ≈ 7.44%.
+FV = 6,000 × 1.074424 = $6,446.54.
+Annual compounding (n = 1) gives R = nominal rate = 7.20%, which is lower than 7.44%, not higher.
+Gap = 7.44% − 7.20% = 0.24 percentage points, which is far less than 1.00 point.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.072/12 = 0.60%, matching exactly.
+b) TRUE. R = (1.006)12 − 1 ≈ 7.44%, matching exactly.
+c) TRUE. FV = 6,000 × 1.074424 = $6,446.54, matching exactly.
+d) FALSE. Trap: annual compounding (n = 1) simply reproduces the nominal rate as R, so it would equal
+7.20%, which is lower than the monthly-compounded 7.44%, not higher.
+e) FALSE. Trap: the actual gap is only 7.44% − 7.20% = 0.24 percentage points, far less than 1.00
+percentage point.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: FALSE
+
+===== PAGE 3 =====
+(3 of 5 statements are TRUE) — Covers: R = (1+r/n)^n formula (11.1.2)
+
+===== PAGE 4 =====
+Task 2. Multi-Year Growth Under Quarterly Compounding
+(difficulty score 1.2/5)
+A deposit of $6,000 is put into an account earning interest at the annual rate of 8%, with interest paid
+quarterly. The owner wants to know how much will be in the account after 6 years.
+Statements (True / False):
+a) The quarterly periodic rate is 2.00%.
+b) The number of quarterly periods over 6 years is 24.
+c) The balance after 6 years is approximately $9,860.00.
+d) If the deposit were left for only 3 years instead of 6, the future value would be exactly half of the 6-year
+future value.
+e) The total percentage growth of the deposit over the 6 years is more than 65%.
+Solution – Task 2
+Given:
+S0 = $6,000
+Nominal annual rate r = 8% = 0.08
+Compounding frequency n = 4 (quarterly)
+Time t = 6 years
+Formula(s):
+Periodic rate = r/n
+S(t) = S0(1 + r/n)nt
+Step-by-Step Calculations:
+Periodic rate = 0.08/4 = 0.02 = 2.00%; nt = 4 × 6 = 24.
+S(6) = 6,000 × (1.02)24 ≈ 6,000 × 1.608435 = $9,650.61 (not $9,860.00).
+Compound growth is exponential, not linear, in time: (1.02)12 ≈ 1.268242, so the 3-year value would be about
+$7,609.45, which is NOT half of $9,650.61 (half would be $4,825.31).
+Total growth = (9,650.61 − 6,000)/6,000 ≈ 0.6084 = 60.84%, which is not more than 65%.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.08/4 = 2.00%, matching exactly.
+b) TRUE. nt = 4 × 6 = 24, matching exactly.
+c) FALSE. Trap: S(6) = 6,000 × (1.02)24 ≈ $9,650.61, not $9,860.00.
+d) FALSE. Trap: compound growth is an exponential function of time, not a linear one, so halving the time
+does not halve the future value. The 3-year balance (≈$7,609.45) is far more than half of the 6-year balance.
+e) FALSE. Trap: the actual total growth is (9,650.61 − 6,000)/6,000 ≈ 60.84%, which is less than 65%, not
+more.
+Final Answers — a: TRUE, b: TRUE, c: FALSE, d: FALSE, e: FALSE
+(2 of 5 statements are TRUE) — Covers: S(t) = S0(1+r/n)^(nt), multi-year (Example 11.1.1)
+
+===== PAGE 5 =====
+Task 3. Which Savings Offer Is Better?
+(difficulty score 1.4/5)
+A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid
+quarterly; Offer (ii) 6.5% with interest paid twice a year (semi-annually).
+Statements (True / False):
+a) The effective annual rate of Offer (i) is approximately 6.55%.
+b) The effective annual rate of Offer (ii) is approximately 6.61%.
+c) Offer (ii) is the better choice for the saver.
+d) Because Offer (i) compounds more frequently, it must have the higher effective rate.
+e) Depositing $10,000 for one year, Offer (ii) would produce more than $660 in interest.
+Solution – Task 3
+Given:
+P = $10,000
+Offer (i): r = 6.4%, n = 4 (quarterly)
+Offer (ii): r = 6.5%, n = 2 (semi-annual)
+Time = 1 year
+Formula(s):
+R = (1 + r/n)n − 1
+FV = P × (1 + R)
+Step-by-Step Calculations:
+Offer (i): periodic rate = 0.064/4 = 0.016. Ri = (1.016)4 − 1 ≈ 1.065533 − 1 = 0.065533 ≈ 6.55%.
+Offer (ii): periodic rate = 0.065/2 = 0.0325. Rii = (1.0325)2 − 1 = 1.066056 − 1 = 0.066056 ≈ 6.61%.
+Since Rii (6.61%) > Ri (6.55%), Offer (ii) is the better deal for the saver, despite compounding less often.
+Interesti = 10,000 × 0.065533 = $655.33. Interestii = 10,000 × 0.066056 = $660.56. Difference =
+$5.23–$5.24.
+Explanation of Each Statement:
+a) TRUE. Ri = (1.016)4 − 1 ≈ 6.55%, matching exactly.
+b) TRUE. Rii = (1.0325)2 − 1 ≈ 6.61%, matching exactly.
+c) TRUE. A higher effective annual rate directly means more money for the saver, so Offer (ii) is indeed
+better.
+d) FALSE. Trap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5% vs. 6.4%) is
+enough to give it the higher effective rate (6.61% vs. 6.55%) — frequency alone does not decide which offer
+is better.
+e) TRUE. 10,000 × (0.066056 − 0.065533) ≈ $5.23–$5.24, matching approximately.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: TRUE
+(4 of 5 statements are TRUE) — Covers: Comparing offers via R (Example 11.1.4)
+
+===== PAGE 6 =====
+Task 4. Credit Card Interest — Monthly Rate to Effective Annual Rate
+(difficulty score 1.6/5)
+A retail credit card charges interest on any outstanding balance at a rate of 1.75% per month.
+Statements (True / False):
+a) The nominal annual rate, quoted as 12 times the monthly rate, is 22.00%.
+b) The effective annual rate of interest is approximately 21.75%.
+c) An unpaid balance of $2,000 would grow to $2,420.00 after one year of accruing interest this way.
+d) The effective annual rate exceeds the nominal annual rate by more than 2.00 percentage points.
+e) If the monthly rate were instead 1.50%, the effective annual rate would still exceed 20%.
+Solution – Task 4
+Given:
+Monthly periodic rate = 1.75% = 0.0175
+n = 12 (months per year)
+Formula(s):
+Nominal annual rate = 12 × monthly rate
+R = (1 + monthly rate)12 − 1
+Step-by-Step Calculations:
+Nominal annual rate = 12 × 1.75% = 21.00% (not 22.00%).
+R = (1.0175)12 − 1 ≈ 1.231430 − 1 = 0.231430 ≈ 23.14% (not 21.75%).
+FV of $2,000 unpaid for 1 year = 2,000 × 1.231430 = $2,462.86 (not $2,420.00).
+Gap = 23.14% − 21.00% = 2.14 percentage points, which is indeed more than 2.00 percentage points.
+At a 1.50% monthly rate: R = (1.015)12 − 1 ≈ 1.195625 − 1 = 0.195625 ≈ 19.56%, which does NOT exceed
+20%.
+Explanation of Each Statement:
+a) FALSE. Trap: 12 × 1.75% = 21.00%, not 22.00%.
+b) FALSE. Trap: the true effective annual rate is (1.0175)12 − 1 ≈ 23.14%, not 21.75%.
+c) FALSE. Trap: FV = 2,000 × 1.231430 = $2,462.86, not $2,420.00.
+d) TRUE. 23.14% − 21.00% = 2.14 percentage points, which is indeed more than 2.00 percentage points.
+e) FALSE. Trap: at a 1.50% monthly rate, the effective annual rate is only about 19.56%, which falls just
+short of 20%, not above it.
+Final Answers — a: FALSE, b: FALSE, c: FALSE, d: TRUE, e: FALSE
+(1 of 5 statements are TRUE) — Covers: Periodic rate -> effective annual rate (Exercise 8 style)
+
+===== PAGE 7 =====
+Task 5. Quarterly Compounding on a Business Deposit
+(difficulty score 1.8/5)
+A veterinary clinic deposits $15,000 into a one-year business account earning a nominal annual rate of
+5.6%, compounded quarterly.
+Statements (True / False):
+a) The quarterly periodic rate is 1.40%.
+b) The effective annual rate is approximately 5.72%.
+c) The balance after one year is approximately $15,857.81.
+d) If the same nominal rate were instead compounded monthly, the resulting effective annual rate would
+be lower than under quarterly compounding.
+e) The gap between the EAR and the nominal rate exceeds 0.20 percentage points.
+Solution – Task 5
+Given:
+P = $15,000
+Nominal annual rate r = 5.6% = 0.056
+Compounding frequency n = 4 (quarterly)
+Time = 1 year
+Formula(s):
+Periodic rate = r/n
+R = (1 + r/n)n − 1
+FV = P × (1 + R)
+Step-by-Step Calculations:
+Periodic rate = 0.056/4 = 0.014 = 1.40%.
+R = (1.014)4 − 1 ≈ 1.057187 − 1 = 0.057187 ≈ 5.72%.
+FV = 15,000 × 1.057187 = $15,857.81.
+Monthly compounding of the same 5.6% nominal rate gives a slightly higher EAR (≈ 5.746%), not lower —
+more frequent compounding always raises EAR.
+Gap = 5.7187% − 5.60% ≈ 0.12 percentage points, which is less than 0.20 percentage points.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.056/4 = 1.40%, matching exactly.
+b) TRUE. R = (1.014)4 − 1 ≈ 5.72%, matching exactly.
+c) TRUE. FV = 15,000 × 1.057187 = $15,857.81, matching exactly.
+d) FALSE. Trap: switching to monthly compounding raises the EAR (to roughly 5.75%), since more frequent
+compounding never lowers the EAR for a fixed nominal rate.
+e) FALSE. Trap: the actual gap is only about 0.12 percentage points, which does not exceed 0.20
+percentage points.
+
+===== PAGE 8 =====
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: FALSE
+(3 of 5 statements are TRUE) — Covers: R = (1+r/n)^n formula (11.1.2)
+
+===== PAGE 9 =====
+Task 6. How Long to Double at 7.2% Compounded Monthly?
+(difficulty score 2.0/5)
+A savings account earns a nominal annual rate of 7.2%, compounded monthly. An investor wants to
+know how long it will take for a deposit to double in value.
+Statements (True / False):
+a) The monthly periodic rate is 0.60%.
+b) It takes approximately 108 months for the deposit to double.
+c) It would take approximately 58 months for the deposit to double, which would be exactly half of the
+actual doubling time.
+d) If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly
+double the original effective annual rate.
+e) Because (1 + r/n)t is an increasing function of t, the same logarithmic method used for doubling can be
+used to find the time needed for any other target growth multiple.
+Solution – Task 6
+Given:
+Nominal annual rate r = 7.2% = 0.072
+Compounding frequency n = 12 (monthly)
+Target: double the principal
+Formula(s):
+Periodic rate = r/n
+(1 + r/n)t = target multiple
+t = ln(target)/ln(1 + r/n)
+Step-by-Step Calculations:
+Periodic rate = 0.072/12 = 0.006 = 0.60%.
+Solve (1.006)t = 2: t = ln 2 / ln 1.006 ≈ 0.693147/0.0059821 ≈ 115.85 months ≈ 9.65 years (not 108 months).
+115.85 months is the correct doubling time, not 58 months (which is not even close to a clean half of it, since
+doubling time does not simply relate this way to a 'half time').
+At 14.4% nominal monthly, R = (1.012)12 − 1 ≈ 15.38%, but double the original 7.44% EAR would be 14.88%,
+not 15.38% — doubling the nominal rate does not exactly double the EAR.
+The same logarithmic method, t = ln(target)/ln(periodic factor), works for any target multiple, since the
+exponential growth curve is monotonically increasing — this is a general, valid technique.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.072/12 = 0.60%, matching exactly.
+b) FALSE. Trap: the correct doubling time is t = ln2/ln(1.006) ≈ 115.85 months (about 9.65 years), not 108
+months.
+c) FALSE. Trap: the true doubling time is about 115.85 months; 58 months is nowhere near it and is not
+meaningfully 'half' of the correct value in any valid sense.
+
+===== PAGE 10 =====
+d) FALSE. Trap: doubling the nominal rate raises the EAR to about 15.38%, but exactly double the original
+EAR of 7.44% would be 14.88% — the two figures are close but not equal, since EAR is a nonlinear (not
+proportional) function of the nominal rate.
+e) TRUE. Because (1 + r/n)t is a strictly increasing exponential function of t, solving for t via natural
+logarithms works for any target multiple, not just doubling — this is exactly the method used in Example
+11.1.2 of the textbook.
+Final Answers — a: TRUE, b: FALSE, c: FALSE, d: FALSE, e: TRUE
+(2 of 5 statements are TRUE) — Covers: Solving for t via logarithms (Example 11.1.2)
+
+===== PAGE 11 =====
+Task 7. Comparing Compounding Frequencies at a Fixed Nominal Rate
+(difficulty score 2.2/5)
+A finance student is asked to compute the effective yearly rate corresponding to a nominal annual
+interest rate of 15%, with interest added: (a) twice a year (semi-annually); (b) each quarter; (c) each
+month.
+Statements (True / False):
+a) The effective rate under semi-annual compounding is approximately 15.56%.
+b) The effective rate under quarterly compounding is approximately 15.87%.
+c) The effective rate under monthly compounding is approximately 16.08%.
+d) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the
+effective rate.
+e) The increase in effective rate from semi-annual to quarterly is smaller than the increase from quarterly
+to monthly.
+Solution – Task 7
+Given:
+Nominal annual rate r = 15% = 0.15
+n = 2 (semi-annual), n = 4 (quarterly), n = 12 (monthly)
+Formula(s):
+R = (1 + r/n)n − 1
+Step-by-Step Calculations:
+Semi-annual: R = (1.075)2 − 1 = 1.155625 − 1 = 0.155625 ≈ 15.56%.
+Quarterly: R = (1.0375)4 − 1 ≈ 1.158650 − 1 = 0.158650 ≈ 15.87%.
+Monthly: R = (1.0125)12 − 1 ≈ 1.160766 − 1 = 0.160766 ≈ 16.08%.
+Ranking confirms 15.56% < 15.87% < 16.08% as compounding frequency increases.
+First gap = 15.87% − 15.56% = 0.31 points; second gap = 16.08% − 15.87% = 0.21 points. The first gap is
+actually LARGER than the second, not smaller — each additional increase in frequency adds progressively
+less to the EAR.
+Explanation of Each Statement:
+a) TRUE. R = (1.075)2 − 1 = 15.5625%, matching exactly.
+b) TRUE. R = (1.0375)4 − 1 ≈ 15.87%, matching exactly.
+c) TRUE. R = (1.0125)12 − 1 ≈ 16.08%, matching exactly.
+d) TRUE. This textbook fact (Example 11.2.3 referenced in Section 11.1) is confirmed here: for a fixed r > 0,
+R strictly increases as n increases.
+e) FALSE. Trap: the gap from semi-annual to quarterly (0.31 points) is actually larger than the gap from
+quarterly to monthly (0.21 points), not smaller — the marginal benefit of increasing compounding frequency
+diminishes as n grows, which is why R never grows without bound even as n → ∞.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: TRUE, e: FALSE
+(4 of 5 statements are TRUE) — Covers: R increasing in n, multiple frequencies (Exercise 5 style)
+
+===== PAGE 12 =====
+Task 8. A Ten-Year Deposit Under Monthly Compounding
+(difficulty score 2.4/5)
+A grandparent deposits $4,000 into a trust account for a grandchild, earning a nominal annual rate of
+6%, compounded monthly, for 10 years.
+Statements (True / False):
+a) The monthly periodic rate is 0.50%.
+b) The number of monthly compounding periods over 10 years, nt, is 120.
+c) The balance after 10 years is approximately $7,277.60.
+d) The deposit exactly doubles in value over these 10 years.
+e) If compounded annually instead, the 10-year future value would exceed the future value obtained
+under monthly compounding.
+Solution – Task 8
+Given:
+S0 = $4,000
+Nominal annual rate r = 6% = 0.06
+Compounding frequency n = 12 (monthly)
+Time t = 10 years
+Formula(s):
+S(t) = S0(1 + r/n)nt
+Step-by-Step Calculations:
+Periodic rate = 0.06/12 = 0.005 = 0.50%; nt = 12 × 10 = 120.
+S(10) = 4,000 × (1.005)120 ≈ 4,000 × 1.8194 = $7,277.60.
+Growth factor is 1.8194, not 2.0, so the deposit has NOT quite doubled after 10 years (it would take about
+11.6 years to fully double at this rate).
+Annual compounding (n = 1): S(10) = 4,000 × (1.06)10 = 4,000 × 1.790847 = $7,163.39, which is LESS than
+$7,277.60, not more, since less frequent compounding always yields a smaller future value for the same
+nominal rate.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.06/12 = 0.50%, matching exactly.
+b) TRUE. nt = 12 × 10 = 120, matching exactly.
+c) TRUE. S(10) = 4,000 × (1.005)120 ≈ $7,277.60, matching exactly.
+d) FALSE. Trap: the growth factor is 1.8194, so the deposit is close to but has not yet doubled; it would need
+roughly 11.6 years, not 10, to fully double at this rate.
+e) FALSE. Trap: annual compounding produces a SMALLER future value ($7,163.39) than monthly
+compounding ($7,277.60) for the same nominal rate, since less frequent compounding always yields less
+growth, not more.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: FALSE
+
+===== PAGE 13 =====
+(3 of 5 statements are TRUE) — Covers: S(t) = S0(1+r/n)^(nt), multi-year (Example 11.1.1)
+
+===== PAGE 14 =====
+Task 9. What Rate Is Needed to Grow $50,000 to $80,000 in 8 Years?
+(difficulty score 2.6/5)
+An investment fund wants to grow $50,000 into $80,000 over 8 years, with interest compounded
+quarterly. The fund manager needs to find the required nominal annual rate.
+Statements (True / False):
+a) The required nominal annual rate, compounded quarterly, is approximately 5.92%.
+b) The corresponding quarterly periodic rate is approximately 1.48%.
+c) If the same growth were required in only 4 years instead of 8, the required nominal rate would be lower
+than in the original 8-year scenario.
+d) If the compounding were changed from quarterly to monthly, the required nominal rate would need to
+be higher than in the original quarterly scenario.
+e) Growing from $50,000 to $80,000 represents an increase of more than 65%.
+Solution – Task 9
+Given:
+S0 = $50,000
+Target S(t) = $80,000
+n = 4 (quarterly)
+t = 8 years, so nt = 32
+Formula(s):
+S(t) = S0(1 + r/n)nt
+r = n × [(S(t)/S0)1/nt − 1]
+Step-by-Step Calculations:
+(1 + r/4)32 = 80,000/50,000 = 1.6, so 1 + r/4 = (1.6)1/32 ≈ 1.014796, giving r ≈ 4 × 0.014796 ≈ 0.05918 ≈
+5.92%.
+Quarterly periodic rate = 5.92%/4 ≈ 1.48%.
+A shorter time horizon (4 years instead of 8) to reach the same growth factor of 1.6 requires a HIGHER rate,
+not a lower one, since less time demands faster growth.
+Monthly compounding is more frequent than quarterly, so it needs a LOWER nominal rate, not a higher one,
+to reach the same 1.6 growth factor over the same 8 years.
+Growth = (80,000 − 50,000)/50,000 = 30,000/50,000 = 0.60 = 60.00% exactly, which is not more than 65%.
+Explanation of Each Statement:
+a) TRUE. Solving (1 + r/4)32 = 1.6 gives r ≈ 5.92%, matching exactly.
+b) TRUE. Quarterly periodic rate = 5.92%/4 ≈ 1.48%, matching exactly.
+c) FALSE. Trap: reaching the same 1.6× growth factor in HALF the time (4 years instead of 8) requires a
+substantially HIGHER rate, not a lower one.
+d) FALSE. Trap: because monthly compounding is more frequent than quarterly, it actually needs a LOWER
+nominal rate than 5.92% to reach the same target — not a higher one.
+
+===== PAGE 15 =====
+e) FALSE. Trap: the actual increase is exactly (80,000 − 50,000)/50,000 = 60.00%, which is not more than
+65%.
+Final Answers — a: TRUE, b: TRUE, c: FALSE, d: FALSE, e: FALSE
+(2 of 5 statements are TRUE) — Covers: Solving for the nominal rate r
+
+===== PAGE 16 =====
+Task 10. Which Terms Are Better for a Borrower?
+(difficulty score 2.8/5)
+A borrower is comparing two loan terms: option (a) a nominal annual rate of 10.80%, with interest paid
+annually; option (b) a nominal annual rate of 10.40%, with interest paid quarterly.
+Statements (True / False):
+a) Option (a)'s effective annual rate is higher than option (b)'s effective annual rate.
+b) Option (b)'s effective annual rate is approximately 10.81%.
+c) Because option (b) quotes a lower nominal rate, it must be the cheaper option for the borrower.
+d) For the borrower, option (a) is more expensive than option (b).
+e) The two options' effective annual rates differ by more than 0.05 percentage points.
+Solution – Task 10
+Given:
+Option (a): r = 10.80%, n = 1 (annual)
+Option (b): r = 10.40%, n = 4 (quarterly)
+Time = 1 year
+Formula(s):
+R = (1 + r/n)n − 1
+Step-by-Step Calculations:
+Option (a): with n = 1, Ra = nominal rate = 10.80% exactly.
+Option (b): periodic rate = 0.104/4 = 0.026. Rb = (1.026)4 − 1 ≈ 1.108127 − 1 = 0.108127 ≈ 10.81%.
+Since Rb (10.81%) is very slightly higher than Ra (10.80%), option (a) is actually marginally cheaper for the
+borrower, even though its quoted nominal rate is higher.
+Difference = 10.8127% − 10.80% ≈ 0.013 percentage points, which is less than 0.05 percentage points.
+Explanation of Each Statement:
+a) FALSE. Trap: Ra = 10.80% is actually slightly LOWER than Rb ≈ 10.81%, not higher.
+b) TRUE. Rb = (1.026)4 − 1 ≈ 10.81%, matching exactly.
+c) FALSE. Trap: despite quoting a lower nominal rate, option (b)'s quarterly compounding pushes its
+effective rate very slightly above option (a)'s, so option (b) is actually marginally more expensive, not
+cheaper.
+d) FALSE. Trap: since 10.80% < 10.81%, option (a) is actually the slightly CHEAPER (less expensive)
+option for the borrower, not the more expensive one.
+e) FALSE. Trap: the actual difference is only about 0.013 percentage points, which is less than 0.05
+percentage points, not more.
+Final Answers — a: FALSE, b: TRUE, c: FALSE, d: FALSE, e: FALSE
+(1 of 5 statements are TRUE) — Covers: Comparing offers, borrower's perspective (Exercise 6 style)
+
+===== PAGE 17 =====
+Task 11. How Much Was Deposited 6 Years Ago?
+(difficulty score 3.0/5)
+A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant
+annual interest rate of 4.5% (paid once a year), to have exactly $40,000 available today.
+Statements (True / False):
+a) The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.
+b) The amount that would need to have been deposited 6 years ago is approximately $30,715.86.
+c) This present value is less than $32,000.
+d) If the rate had instead been 5.5%, the required present value would be higher than at 4.5%.
+e) The total interest earned over the 6 years on this deposit would be approximately $9,284.14.
+Solution – Task 11
+Given:
+Target S(t) = $40,000
+r = 4.5% = 0.045
+n = 1 (annual)
+t = 6 years
+Formula(s):
+S(t) = S0(1 + r)t
+S0 = S(t)/(1 + r)t
+Step-by-Step Calculations:
+(1.045)6 ≈ 1.302253.
+S0 = 40,000/1.302253 ≈ $30,715.86.
+$30,715.86 is indeed less than $32,000.
+A higher rate (5.5%) means the deposit grows faster, so LESS principal is needed today to reach the same
+$40,000 in 6 years — the required present value would be lower, not higher.
+Interest = 40,000 − 30,715.86 = $9,284.14.
+Explanation of Each Statement:
+a) TRUE. (1.045)6 ≈ 1.302253, matching exactly.
+b) TRUE. S0 = 40,000/1.302253 ≈ $30,715.86, matching exactly.
+c) TRUE. $30,715.86 < $32,000, matching exactly.
+d) FALSE. Trap: a higher interest rate (5.5%) grows money faster, so a SMALLER deposit today would
+suffice to reach the same $40,000 target — the required present value would be lower, not higher.
+e) TRUE. 40,000 − 30,715.86 = $9,284.14, matching exactly.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: TRUE
+(4 of 5 statements are TRUE) — Covers: Present value / backward calculation (Exercise 7(b) style)
+
+===== PAGE 18 =====
+Task 12. How Long to Grow £4,000 to £6,000?
+(difficulty score 3.2/5)
+A deposit of £4,000 earns a nominal annual rate of 6%, compounded monthly. An investor wants to
+know how long it will take for the balance to reach £6,000.
+Statements (True / False):
+a) It takes approximately 81.30 months to reach £6,000.
+b) It takes approximately 6.00 years exactly to reach £6,000.
+c) It takes approximately 48 months to reach £6,000.
+d) Because the deposit needs to grow by a factor of 1.5 rather than double, the required time must be
+less than half of this account's doubling time.
+e) The time required to reach £6,000, found using logarithms, is exactly 100 months.
+Solution – Task 12
+Given:
+S0 = £4,000
+Target S(t) = £6,000
+r = 6% = 0.06
+n = 12 (monthly)
+Formula(s):
+(1 + r/n)t = S(t)/S0
+t = ln(S(t)/S0) / ln(1 + r/n)
+Step-by-Step Calculations:
+Periodic rate = 0.06/12 = 0.005. Target ratio = 6,000/4,000 = 1.5.
+t = ln(1.5)/ln(1.005) ≈ 0.405465/0.0049875 ≈ 81.30 months ≈ 6.78 years.
+This is neither exactly 6.00 years nor 48 months (4 years) — both are incorrect approximations of the true
+81.30-month figure.
+Doubling time for this account = ln2/ln(1.005) ≈ 138.99 months; half of that is ≈ 69.5 months. The actual time
+to grow by 1.5× is 81.30 months, which is MORE than half the doubling time, not less.
+t = ln(1.5)/ln(1.005) ≈ 81.30, not 100.
+Explanation of Each Statement:
+a) TRUE. t = ln(1.5)/ln(1.005) ≈ 81.30 months ≈ 6.78 years, matching exactly.
+b) FALSE. Trap: the correct time is approximately 6.78 years, not exactly 6.00 years.
+c) FALSE. Trap: 48 months (4 years) is far short of the correct 81.30 months.
+d) FALSE. Trap: the doubling time is about 138.99 months, so half of that is about 69.5 months; the actual
+81.30 months needed for a 1.5× increase is MORE than that half, not less.
+e) FALSE. Trap: the correct value is approximately 81.30 months, not 100.
+Final Answers — a: TRUE, b: FALSE, c: FALSE, d: FALSE, e: FALSE
+(1 of 5 statements are TRUE) — Covers: Solving for t via logarithms (Example 11.1.2 / Exercise 4(b) style)
+
+===== PAGE 19 =====
+Task 13. Daily Compounding on a Money-Market Deposit
+(difficulty score 3.4/5)
+A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%,
+compounded daily (365-day year), for one year.
+Statements (True / False):
+a) The daily periodic rate is approximately 0.011644%.
+b) The effective annual rate is approximately 4.34%.
+c) The balance after one year is approximately $20,868.26.
+d) If compounded monthly instead, the effective annual rate would be higher than under daily
+compounding.
+e) The gap between the effective annual rate and the nominal rate exceeds 0.20 percentage points.
+Solution – Task 13
+Given:
+P = $20,000
+Nominal annual rate r = 4.25% = 0.0425
+Compounding frequency n = 365 (daily)
+Time = 1 year
+Formula(s):
+Periodic rate = r/n
+R = (1 + r/n)n − 1
+FV = P × (1 + R)
+Step-by-Step Calculations:
+Periodic rate = 0.0425/365 ≈ 0.00011644 = 0.011644%.
+R = (1 + 0.0425/365)365 − 1 ≈ 1.043413 − 1 = 0.043413 ≈ 4.34%.
+FV = 20,000 × 1.043413 = $20,868.26.
+Monthly compounding of 4.25% nominal gives R ≈ 4.33%, which is slightly LOWER than the daily EAR of
+4.34%, not higher — daily compounding is more frequent than monthly.
+Gap = 4.34% − 4.25% = 0.09 percentage points, which does not exceed 0.20 percentage points.
+Explanation of Each Statement:
+a) TRUE. Periodic rate = 0.0425/365 ≈ 0.011644%, matching exactly.
+b) TRUE. R ≈ 4.34%, matching exactly.
+c) TRUE. FV = 20,000 × 1.043413 = $20,868.26, matching exactly.
+d) FALSE. Trap: monthly compounding is less frequent than daily, so it produces a slightly LOWER EAR
+(≈4.33%), not a higher one.
+e) FALSE. Trap: the actual gap is only about 0.09 percentage points, which does not exceed 0.20
+percentage points.
+
+===== PAGE 20 =====
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: FALSE, e: FALSE
+(3 of 5 statements are TRUE) — Covers: R = (1+r/n)^n formula, daily compounding
+
+===== PAGE 21 =====
+Task 14. A Store Card's True Annual Cost
+(difficulty score 3.6/5)
+A retail store credit card charges interest on unpaid balances at a rate of 1.9% per month.
+Statements (True / False):
+a) The nominal annual rate, quoted as 12 times the monthly rate, is 22.80%.
+b) The effective annual rate of interest is approximately 25.34%.
+c) The effective annual rate is approximately 22.80%, the same as the nominal annual rate.
+d) A $3,000 unpaid balance would grow to $3,684.00 after one year.
+e) The effective annual rate exceeds the nominal annual rate by more than 3.00 percentage points.
+Solution – Task 14
+Given:
+Monthly periodic rate = 1.9% = 0.019
+n = 12 (months per year)
+Formula(s):
+Nominal annual rate = 12 × monthly rate
+R = (1 + monthly rate)12 − 1
+Step-by-Step Calculations:
+Nominal annual rate = 12 × 1.9% = 22.80%.
+R = (1.019)12 − 1 ≈ 1.253408 − 1 = 0.253408 ≈ 25.34%.
+FV of $3,000 unpaid for 1 year = 3,000 × 1.253408 = $3,760.22 (not $3,684.00).
+Gap = 25.34% − 22.80% ≈ 2.54 percentage points, which does not exceed 3.00 percentage points.
+Explanation of Each Statement:
+a) TRUE. 12 × 1.9% = 22.80%, matching exactly.
+b) TRUE. R = (1.019)12 − 1 ≈ 25.34%, matching exactly.
+c) FALSE. Trap: the effective annual rate (25.34%) is meaningfully higher than the nominal annual rate
+(22.80%), not the same — whenever n > 1, R always exceeds the nominal rate.
+d) FALSE. Trap: FV = 3,000 × 1.253408 = $3,760.22, not $3,684.00.
+e) FALSE. Trap: the actual gap is about 2.54 percentage points, which is less than 3.00 percentage points,
+not more.
+Final Answers — a: TRUE, b: TRUE, c: FALSE, d: FALSE, e: FALSE
+(2 of 5 statements are TRUE) — Covers: Periodic rate -> effective annual rate (Exercise 8 style)
+
+===== PAGE 22 =====
+Task 15. Effective Rates for a 10% Nominal Rate Under Three
+Frequencies
+(difficulty score 3.8/5)
+A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with
+interest added: (a) twice a year; (b) each quarter; (c) each month.
+Statements (True / False):
+a) The effective rate under semi-annual compounding is approximately 10.25%.
+b) The effective rate under quarterly compounding is approximately 10.38%.
+c) The effective rate under monthly compounding is approximately 10.47%.
+d) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the
+effective rate.
+e) The jump in effective rate from semi-annual to quarterly is smaller than the jump from quarterly to
+monthly.
+Solution – Task 15
+Given:
+Nominal annual rate r = 10% = 0.10
+n = 2 (semi-annual), n = 4 (quarterly), n = 12 (monthly)
+Formula(s):
+R = (1 + r/n)n − 1
+Step-by-Step Calculations:
+Semi-annual: R = (1.05)2 − 1 = 1.1025 − 1 = 0.1025 = 10.25%.
+Quarterly: R = (1.025)4 − 1 ≈ 1.103813 − 1 = 0.103813 ≈ 10.38%.
+Monthly: R = (1.0083333)12 − 1 ≈ 1.104713 − 1 = 0.104713 ≈ 10.47%.
+Confirms increasing R with increasing frequency: 10.25% < 10.38% < 10.47%.
+First jump = 10.38% − 10.25% = 0.13 points; second jump = 10.47% − 10.38% = 0.09 points — the first jump
+is LARGER than the second, not smaller.
+Explanation of Each Statement:
+a) TRUE. R = (1.05)2 − 1 = 10.25%, matching exactly.
+b) TRUE. R = (1.025)4 − 1 ≈ 10.38%, matching exactly.
+c) TRUE. R = (1.0083333)12 − 1 ≈ 10.47%, matching exactly.
+d) TRUE. This matches the textbook result that R strictly increases in n for a fixed r > 0.
+e) FALSE. Trap: the first jump (0.13 points) is larger than the second jump (0.09 points), not smaller — the
+marginal gain from increasing compounding frequency diminishes as n grows.
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: TRUE, e: FALSE
+(4 of 5 statements are TRUE) — Covers: R increasing in n, multiple frequencies (Exercise 5 style)
+
+===== PAGE 23 =====
+Task 16. What Growth Rate Would Multiply GDP by 50 in 80 Years?
+(difficulty score 4.0/5)
+An economist asks what constant annual percentage growth rate would be needed for a country's GDP
+to become 50 times as large after 80 years.
+Statements (True / False):
+a) The required annual growth rate is approximately 5.01%.
+b) The required annual growth rate is approximately 6.25%.
+c) Since 50 is half of 100, the required rate for 50× growth would be exactly half of the rate needed for
+100× growth over the same 80 years.
+d) At a growth rate of 5.01% per year, GDP would multiply by exactly 100 after 160 years.
+e) Achieving 50× growth in only 40 years would require an annual rate lower than 5.01%.
+Solution – Task 16
+Given:
+Target growth factor = 50
+t = 80 years
+Formula(s):
+(1 + r)t = target factor
+r = (target factor)1/t − 1
+Step-by-Step Calculations:
+(1 + r)80 = 50, so r = 501/80 − 1 ≈ 1.050115 − 1 = 0.050115 ≈ 5.01%.
+This is not 6.25%.
+Growth rates are found via a root (an exponential relationship), not a simple linear halving of the target
+multiple, so a rate for 50× growth is not simply half the rate for 100× growth.
+At r = 5.01%, after 160 years the growth factor is (1.050115)160 = (50)2 = 2,500, not 100.
+Achieving the same 50× growth in only 40 years (half the time) requires SOLVING r = 501/40 − 1 ≈ 9.65%,
+which is HIGHER than 5.01%, not lower — less time always demands a faster rate for the same target
+multiple.
+Explanation of Each Statement:
+a) TRUE. r = 501/80 − 1 ≈ 5.01%, matching exactly.
+b) FALSE. Trap: the correct rate is approximately 5.01%, not 6.25%.
+c) FALSE. Trap: because the relationship between growth factor and rate is exponential (via a root), rates do
+not scale linearly with the target multiple; halving the multiple does not halve the required rate.
+d) FALSE. Trap: at r = 5.01%, doubling the time to 160 years squares the growth factor (502 = 2,500), not
+just doubles it to 100.
+e) FALSE. Trap: reaching the same 50× growth in half the time (40 years instead of 80) requires a
+substantially HIGHER rate (≈9.65%), not a lower one.
+Final Answers — a: TRUE, b: FALSE, c: FALSE, d: FALSE, e: FALSE
+
+===== PAGE 24 =====
+(1 of 5 statements are TRUE) — Covers: Solving for the growth rate r (Exercise 3 style)
+
+===== PAGE 25 =====
+Task 17. Saving for a $25,000 Tuition Bill in 7 Years
+(difficulty score 4.2/5)
+A parent needs exactly $25,000 in 7 years for a tuition bill and is deciding how much to deposit today into
+one of two accounts: Account X, nominal 5.00% compounded monthly; Account Y, nominal 5.10%
+compounded quarterly.
+Statements (True / False):
+a) The amount needed today in Account X to reach $25,000 in 7 years is approximately $17,629.99.
+b) The amount needed today in Account Y to reach $25,000 in 7 years is approximately $17,534.28.
+c) Account X requires a smaller upfront deposit than Account Y to reach the same $25,000 target.
+d) Account Y's effective annual rate is higher than Account X's.
+e) Because Account X compounds more frequently, Account X must always require the smaller upfront
+deposit for any future target and any time horizon.
+Solution – Task 17
+Given:
+Target = $25,000 in t = 7 years
+Account X: r = 5.00%, n = 12 (monthly)
+Account Y: r = 5.10%, n = 4 (quarterly)
+Formula(s):
+S0 = Target / (1 + r/n)nt
+R = (1 + r/n)n − 1
+Step-by-Step Calculations:
+Account X: (1 + 0.05/12)84 ≈ 1.418038. S0,X = 25,000/1.418038 ≈ $17,629.99.
+Account Y: (1 + 0.051/4)28 ≈ 1.425964. S0,Y = 25,000/1.425964 ≈ $17,534.28.
+Since S0,Y < S0,X, Account Y actually requires the SMALLER upfront deposit, not Account X.
+RX = (1 + 0.05/12)12 − 1 ≈ 5.12%. RY = (1.01275)4 − 1 ≈ 5.20%. Indeed RY > RX, consistent with Account Y
+needing less principal.
+This scenario itself is a counterexample to statement (e): despite compounding more often, Account X needs
+the LARGER deposit here, because Account Y's higher nominal rate wins out.
+Explanation of Each Statement:
+a) TRUE. S0,X = 25,000/1.418038 ≈ $17,629.99, matching exactly.
+b) TRUE. S0,Y = 25,000/1.425964 ≈ $17,534.28, matching exactly.
+c) FALSE. Trap: Account Y actually requires the smaller upfront deposit ($17,534.28 vs. $17,629.99), not
+Account X.
+d) TRUE. RY ≈ 5.20% is indeed higher than RX ≈ 5.12%, matching exactly.
+e) FALSE. Trap: this task is itself a counterexample — Account X compounds more frequently but still
+requires the LARGER deposit, because Account Y's higher nominal rate more than compensates for its
+lower compounding frequency. Frequency alone never determines which account is better; the nominal rate
+
+===== PAGE 26 =====
+matters too.
+Final Answers — a: TRUE, b: TRUE, c: FALSE, d: TRUE, e: FALSE
+(3 of 5 statements are TRUE) — Covers: S(t) formula used for present value + decision-making
+
+===== PAGE 27 =====
+Task 18. How Much Was Invested 9 Years Ago?
+(difficulty score 4.4/5)
+A trustee needs to know how much would have had to be invested 9 years ago, compounded quarterly
+at a nominal annual rate of 4.4%, to have exactly $60,000 available today.
+Statements (True / False):
+a) The growth factor over the 9 years is approximately 1.4827.
+b) The amount that needed to be invested 9 years ago is approximately $40,467.83.
+c) This present value is more than $45,000.
+d) If the rate had instead been 5.0% nominal, the required present value would be higher than at 4.4%.
+e) The implied total interest earned over the 9 years on this investment is more than $20,000.
+Solution – Task 18
+Given:
+Target = $60,000 today
+r = 4.4% = 0.044
+n = 4 (quarterly)
+t = 9 years, so nt = 36
+Formula(s):
+S0 = Target / (1 + r/n)nt
+Step-by-Step Calculations:
+Periodic rate = 0.044/4 = 0.011. (1.011)36 ≈ 1.482658.
+S0 = 60,000/1.482658 ≈ $40,467.83.
+$40,467.83 is less than $45,000, not more.
+A higher rate (5.0%) grows money faster, so a SMALLER amount invested 9 years ago would reach $60,000
+today — the required present value would be lower, not higher.
+Interest = 60,000 − 40,467.83 = $19,532.17, which does not exceed $20,000.
+Explanation of Each Statement:
+a) TRUE. (1.011)36 ≈ 1.4827, matching exactly.
+b) TRUE. S0 = 60,000/1.482658 ≈ $40,467.83, matching exactly.
+c) FALSE. Trap: $40,467.83 is less than $45,000, not more.
+d) FALSE. Trap: a higher rate (5.0%) means less principal is needed today to reach the same $60,000 — the
+present value would be LOWER, not higher.
+e) FALSE. Trap: the implied interest is 60,000 − 40,467.83 = $19,532.17, which is just under $20,000, not
+more.
+Final Answers — a: TRUE, b: TRUE, c: FALSE, d: FALSE, e: FALSE
+(2 of 5 statements are TRUE) — Covers: Present value / backward calculation (Exercise 7(b) style)
+
+===== PAGE 28 =====
+Task 19. Three CDs That Are Closer Than They Look
+(difficulty score 4.7/5)
+A saver is comparing three one-year certificates of deposit for a $20,000 deposit: CD1: nominal 6.30%,
+compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded
+semi-annually.
+Statements (True / False):
+a) CD1's effective annual rate is approximately 6.49%.
+b) CD2's effective annual rate is approximately 6.55%.
+c) CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.
+d) CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.
+e) On the $20,000 deposit, choosing CD2 over CD1 would earn approximately $13.61 more in interest
+over the year.
+Solution – Task 19
+Given:
+P = $20,000
+CD1: r = 6.30%, n = 12 (monthly)
+CD2: r = 6.40%, n = 4 (quarterly)
+CD3: r = 6.45%, n = 2 (semi-annual)
+Time = 1 year
+Formula(s):
+R = (1 + r/n)n − 1
+Interest = P × R
+Step-by-Step Calculations:
+CD1: periodic rate = 0.063/12 = 0.00525. R1 = (1.00525)12 − 1 ≈ 1.064852 − 1 = 0.064852 ≈ 6.49%.
+CD2: periodic rate = 0.064/4 = 0.016. R2 = (1.016)4 − 1 ≈ 1.065533 − 1 = 0.065533 ≈ 6.55%.
+CD3: periodic rate = 0.0645/2 = 0.03225. R3 = (1.03225)2 − 1 ≈ 1.065540 − 1 = 0.065540 ≈ 6.55%,
+essentially tied with CD2 (difference under 0.01 points).
+CD1 has the lowest nominal rate (6.30%) and the lowest EAR (6.49%) of the three.
+Interest1 = 20,000 × 0.064852 = $1,297.04. Interest2 = 20,000 × 0.065533 = $1,310.65. Difference = $13.61.
+Explanation of Each Statement:
+a) TRUE. R1 = (1.00525)12 − 1 ≈ 6.49%, matching exactly.
+b) TRUE. R2 = (1.016)4 − 1 ≈ 6.55%, matching exactly.
+c) TRUE. R3 ≈ 6.55%, essentially matching CD2's rate even though CD3 compounds half as often, because
+CD3's slightly higher nominal rate makes up the difference.
+d) TRUE. CD1 has both the lowest quoted nominal rate and, consistent with that, the lowest effective annual
+rate of the three — no inversion occurs among these three CDs.
+e) TRUE. 20,000 × (0.065533 − 0.064852) ≈ $13.61, matching approximately.
+
+===== PAGE 29 =====
+Final Answers — a: TRUE, b: TRUE, c: TRUE, d: TRUE, e: TRUE
+(5 of 5 statements are TRUE) — Covers: Comparing offers across three compounding frequencies
+
+===== PAGE 30 =====
+Task 20. Which Account Reaches $22,000 First?
+(difficulty score 5.0/5)
+A family has $15,000 today and wants to know which of two accounts reaches $22,000 sooner: Account
+M, nominal 6.00% compounded monthly; Account Q, nominal 6.15% compounded quarterly.
+Statements (True / False):
+a) It would take approximately 76.8 months for Account M to grow $15,000 to $22,000.
+b) It would take Account Q the same amount of time as Account M to reach the same target.
+c) Because Account Q compounds less frequently, it must take longer than Account M to reach $22,000.
+d) Account M's effective annual rate is higher than Account Q's.
+e) If both accounts instead needed to reach $30,000, each account would take exactly twice as long as it
+took to reach $22,000.
+Solution – Task 20
+Given:
+S0 = $15,000, target = $22,000
+Account M: r = 6.00%, n = 12 (monthly)
+Account Q: r = 6.15%, n = 4 (quarterly)
+Formula(s):
+t = ln(target/S0) / ln(1 + r/n), in periods
+R = (1 + r/n)n − 1
+Step-by-Step Calculations:
+Target ratio = 22,000/15,000 ≈ 1.466667.
+Account M: periodic rate = 0.005. t = ln(1.466667)/ln(1.005) ≈ 0.382996/0.0049875 ≈ 76.81 months ≈ 6.40
+years.
+Account Q: periodic rate = 0.015375. t = ln(1.466667)/ln(1.015375) ≈ 0.382996/0.0152580 ≈ 25.10 quarters
+≈ 6.275 years, which is FASTER than Account M's 6.40 years, not identical and not slower.
+RM = (1.005)12 − 1 ≈ 6.17%. RQ = (1.015375)4 − 1 ≈ 6.29%. So RQ > RM, consistent with Q reaching the
+target faster.
+The time to reach a 1.4667× target and the time to reach a 2× target (doubling) are governed by different
+logarithms (ln 1.4667 vs. ln 2), so the time to double is NOT simply twice the time to reach 1.4667× growth.
+Explanation of Each Statement:
+a) TRUE. t = ln(1.466667)/ln(1.005) ≈ 76.8 months ≈ 6.40 years, matching exactly.
+b) FALSE. Trap: Account Q actually reaches the target faster, in about 6.275 years, not the same 6.40 years
+as Account M.
+c) FALSE. Trap: despite compounding less frequently, Account Q's higher nominal rate (6.15% vs. 6.00%)
+lets it reach the target faster (≈6.275 years) than Account M (≈6.40 years), not slower.
+d) FALSE. Trap: RQ (≈6.29%) is actually higher than RM (≈6.17%), not the other way around.
+
+===== PAGE 31 =====
+e) FALSE. Trap: the time to reach a different target multiple (2× instead of 1.4667×) is governed by a
+different logarithm (ln 2 vs. ln 1.4667) and is not simply double the original time; each target multiple requires
+its own separate calculation.
+Final Answers — a: TRUE, b: FALSE, c: FALSE, d: FALSE, e: FALSE
+(1 of 5 statements are TRUE) — Covers: Capstone: solving for t + comparing two accounts

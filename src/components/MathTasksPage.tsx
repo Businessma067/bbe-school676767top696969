@@ -83,6 +83,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
   );
+  const [expandedSub, setExpandedSub] = useState<Record<string, boolean>>({});
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [customResetOpen, setCustomResetOpen] = useState(false);
   const [showExplanations, setShowExplanations] = useState(false);
@@ -244,89 +245,216 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                               No tasks yet.
                             </li>
                           )}
-                          {list.map((c, i) => {
-                            const passed = progress.passed.includes(c.id);
-                            const rev = progress.revision.includes(c.id);
-                            const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                            const locked = isLocked(tier, ch.num, i);
-                            const lockedPos = locked ? i - freeLimitOf(tier, ch.num) : -1;
-                            const lockedOpacity = locked
-                              ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
-                              : undefined;
-                            return (
-                              <li key={c.id}>
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    setActiveChapter(ch.num);
-                                    setTimeout(() => setActiveIdx(i), 0);
-                                  }}
-                                  disabled={locked}
-                                  style={locked ? { opacity: lockedOpacity } : undefined}
-                                  className={cn(
-                                    "flex w-full items-center gap-2 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
-                                    active
-                                      ? "font-semibold text-primary"
-                                      : "text-foreground hover:bg-secondary/60",
-                                    locked &&
-                                      "cursor-not-allowed text-muted-foreground hover:bg-transparent",
-                                  )}
-                                >
-                                  <span
-                                    className={cn(
-                                      "grid h-4 w-4 shrink-0 place-items-center rounded border",
-                                      locked
-                                        ? "border-transparent bg-transparent text-muted-foreground"
-                                        : passed
-                                          ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
-                                          : rev
-                                            ? "border-destructive bg-destructive/10 text-destructive"
-                                            : "border-border bg-background",
+                          {ch.subsections && ch.subsections.length > 0
+                            ? ch.subsections.map((sub) => {
+                                const subTasks = list
+                                  .map((c, i) => ({ c, i }))
+                                  .filter(({ c }) => c.subsection === sub.id);
+                                const subKey = `${ch.num}:${sub.id}`;
+                                const subOpen = expandedSub[subKey] ?? true;
+                                const subDone = subTasks.filter(({ c }) =>
+                                  progress.passed.includes(c.id),
+                                ).length;
+                                const subPct =
+                                  subTasks.length === 0
+                                    ? 0
+                                    : Math.round((subDone / subTasks.length) * 100);
+                                return (
+                                  <li key={sub.id} className="mt-1">
+                                    <button
+                                      type="button"
+                                      onClick={() =>
+                                        setExpandedSub((e) => ({
+                                          ...e,
+                                          [subKey]: !subOpen,
+                                        }))
+                                      }
+                                      className="flex w-full items-center gap-2 px-3 py-1.5 pl-6 text-left hover:bg-secondary/50"
+                                    >
+                                      <ChevronDown
+                                        className={cn(
+                                          "h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform",
+                                          !subOpen && "-rotate-90",
+                                        )}
+                                      />
+                                      <span className="min-w-0 flex-1 truncate text-[11px] font-bold text-foreground">
+                                        {sub.id} {sub.title}
+                                      </span>
+                                      <ChapterProgressRing
+                                        pct={subPct}
+                                        done={subDone}
+                                        total={subTasks.length}
+                                      />
+                                    </button>
+                                    {subOpen && (
+                                      <ul className="pb-1">
+                                        {subTasks.map(({ c, i }, localI) => {
+                                          const passed = progress.passed.includes(c.id);
+                                          const rev = progress.revision.includes(c.id);
+                                          const active =
+                                            isActiveCh && activeList[activeIdx]?.id === c.id;
+                                          const locked = isLocked(tier, ch.num, i);
+                                          const lockedPos = locked
+                                            ? i - freeLimitOf(tier, ch.num)
+                                            : -1;
+                                          const lockedOpacity = locked
+                                            ? Math.max(
+                                                0.15,
+                                                0.6 - Math.min(lockedPos, 2) * 0.22,
+                                              )
+                                            : undefined;
+                                          return (
+                                            <li key={c.id}>
+                                              <button
+                                                type="button"
+                                                onClick={() => {
+                                                  setActiveChapter(ch.num);
+                                                  setTimeout(() => setActiveIdx(i), 0);
+                                                }}
+                                                disabled={locked}
+                                                style={
+                                                  locked ? { opacity: lockedOpacity } : undefined
+                                                }
+                                                className={cn(
+                                                  "flex w-full items-center gap-2 px-3 py-1.5 pl-12 text-left text-xs transition-colors",
+                                                  active
+                                                    ? "font-semibold text-primary"
+                                                    : "text-foreground hover:bg-secondary/60",
+                                                  locked &&
+                                                    "cursor-not-allowed text-muted-foreground hover:bg-transparent",
+                                                )}
+                                              >
+                                                <span
+                                                  className={cn(
+                                                    "grid h-4 w-4 shrink-0 place-items-center rounded border",
+                                                    locked
+                                                      ? "border-transparent bg-transparent text-muted-foreground"
+                                                      : passed
+                                                        ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
+                                                        : rev
+                                                          ? "border-destructive bg-destructive/10 text-destructive"
+                                                          : "border-border bg-background",
+                                                  )}
+                                                >
+                                                  {locked && (
+                                                    <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
+                                                  )}
+                                                  {!locked && passed && (
+                                                    <Check className="h-3 w-3" strokeWidth={3} />
+                                                  )}
+                                                  {!locked && !passed && rev && (
+                                                    <X className="h-3 w-3" strokeWidth={3} />
+                                                  )}
+                                                </span>
+                                                <span
+                                                  className={cn(
+                                                    "min-w-0 flex-1 truncate",
+                                                    passed &&
+                                                      !locked &&
+                                                      "text-muted-foreground line-through",
+                                                  )}
+                                                >
+                                                  Task {localI + 1}
+                                                  {locked && " · Locked"}
+                                                </span>
+                                                {!locked &&
+                                                  !c.placeholder &&
+                                                  c.difficulty_level !== "—" && (
+                                                    <DifficultyBars level={c.difficulty_level} />
+                                                  )}
+                                              </button>
+                                            </li>
+                                          );
+                                        })}
+                                      </ul>
                                     )}
+                                  </li>
+                                );
+                              })
+                            : list.map((c, i) => {
+                                const passed = progress.passed.includes(c.id);
+                                const rev = progress.revision.includes(c.id);
+                                const active = isActiveCh && activeList[activeIdx]?.id === c.id;
+                                const locked = isLocked(tier, ch.num, i);
+                                const lockedPos = locked ? i - freeLimitOf(tier, ch.num) : -1;
+                                const lockedOpacity = locked
+                                  ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
+                                  : undefined;
+                                return (
+                                  <li key={c.id}>
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        setActiveChapter(ch.num);
+                                        setTimeout(() => setActiveIdx(i), 0);
+                                      }}
+                                      disabled={locked}
+                                      style={locked ? { opacity: lockedOpacity } : undefined}
+                                      className={cn(
+                                        "flex w-full items-center gap-2 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
+                                        active
+                                          ? "font-semibold text-primary"
+                                          : "text-foreground hover:bg-secondary/60",
+                                        locked &&
+                                          "cursor-not-allowed text-muted-foreground hover:bg-transparent",
+                                      )}
+                                    >
+                                      <span
+                                        className={cn(
+                                          "grid h-4 w-4 shrink-0 place-items-center rounded border",
+                                          locked
+                                            ? "border-transparent bg-transparent text-muted-foreground"
+                                            : passed
+                                              ? "border-muted-foreground/40 bg-transparent text-muted-foreground"
+                                              : rev
+                                                ? "border-destructive bg-destructive/10 text-destructive"
+                                                : "border-border bg-background",
+                                        )}
+                                      >
+                                        {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
+                                        {!locked && passed && (
+                                          <Check className="h-3 w-3" strokeWidth={3} />
+                                        )}
+                                        {!locked && !passed && rev && (
+                                          <X className="h-3 w-3" strokeWidth={3} />
+                                        )}
+                                      </span>
+                                      <span
+                                        className={cn(
+                                          "min-w-0 flex-1 truncate",
+                                          passed && !locked && "text-muted-foreground line-through",
+                                        )}
+                                      >
+                                        Task {i + 1}
+                                        {locked && " · Locked"}
+                                      </span>
+                                      {!locked && !c.placeholder && c.difficulty_level !== "—" && (
+                                        <DifficultyBars level={c.difficulty_level} />
+                                      )}
+                                    </button>
+                                  </li>
+                                );
+                              })}
+                          {!ch.subsections?.length &&
+                            Array.from({ length: phantomCountFor(tier) }).map((_, p) => {
+                              const num = list.length + p + 1;
+                              const opacity = Math.max(0.08, 0.45 - p * 0.15);
+                              return (
+                                <li key={`phantom-${ch.num}-${p}`}>
+                                  <button
+                                    type="button"
+                                    disabled
+                                    style={{ opacity }}
+                                    className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
                                   >
-                                    {locked && <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />}
-                                    {!locked && passed && (
-                                      <Check className="h-3 w-3" strokeWidth={3} />
-                                    )}
-                                    {!locked && !passed && rev && (
-                                      <X className="h-3 w-3" strokeWidth={3} />
-                                    )}
-                                  </span>
-                                  <span
-                                    className={cn(
-                                      "min-w-0 flex-1 truncate",
-                                      passed && !locked && "text-muted-foreground line-through",
-                                    )}
-                                  >
-                                    Task {i + 1}
-                                    {locked && " · Locked"}
-                                  </span>
-                                  {!locked && !c.placeholder && c.difficulty_level !== "—" && (
-                                    <DifficultyBars level={c.difficulty_level} />
-                                  )}
-                                </button>
-                              </li>
-                            );
-                          })}
-                          {Array.from({ length: phantomCountFor(tier) }).map((_, p) => {
-                            const num = list.length + p + 1;
-                            const opacity = Math.max(0.08, 0.45 - p * 0.15);
-                            return (
-                              <li key={`phantom-${ch.num}-${p}`}>
-                                <button
-                                  type="button"
-                                  disabled
-                                  style={{ opacity }}
-                                  className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
-                                >
-                                  <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
-                                    <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
-                                  </span>
-                                  <span className="truncate">Task {num} · Locked</span>
-                                </button>
-                              </li>
-                            );
-                          })}
+                                    <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
+                                      <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
+                                    </span>
+                                    <span className="truncate">Task {num} · Locked</span>
+                                  </button>
+                                </li>
+                              );
+                            })}
                         </ul>
                       )}
                     </li>
@@ -1217,6 +1345,11 @@ function MathTaskCard({
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
           {task.case_id}
         </span>
+        {task.subsection && (
+          <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+            {task.subsection}
+          </span>
+        )}
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed

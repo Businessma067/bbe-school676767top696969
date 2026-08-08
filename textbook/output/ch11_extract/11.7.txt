@@ -1,0 +1,437 @@
+
+===== PAGE 1 =====
+Section 11.7 — Internal Rate of 
+Return
+Practice Worksheet — Tasks 1–10
+Based exclusively on the concepts, formulas and worked example of Section 11.7: the net present value formula A = 
+a_0 + a_1/(1+r) + a_2/(1+r)^2 + ... + a_n/(1+r)^n, the internal rate of return equation (11.7.1), the substitution s 
+= (1+r)^-1, the one-period formula r = (b/a) - 1, and the uniqueness/positivity theorem for a_0 < 0 with a_1, ..., 
+a_n > 0.
+TASK 1
+Difficulty: 1/5
+A small bakery invests $8,000 in a new commercial oven. The oven is expected to generate a single net return of 
+$9,600, paid in full at the end of one year.
+Given:
+Symbol
+Value
+a0 (initial outlay)
+-$8,000
+a1 (return at end of 
+Year 1)
+$9,600
+n
+1 year
+Formula(s):
+For a one-year project: -a + (1+r)-1 b = 0,   so   r = (b/a) - 1
+Step-by-Step Calculation:
+Step 1: Identify a = 8,000 (amount invested) and b = 9,600 (amount returned).
+Step 2: r = (b/a) - 1 = (9,600 / 8,000) - 1 = 1.20 - 1 = 0.20 = 20%.
+Step 3 (for later statements): NPV at rate r is A = a0 + a1/(1+r).
+Statements:
+A) The internal rate of return for this project is exactly 20%.
+B) At an interest rate of 15%, the net present value of this project is positive.
+C) At an interest rate of 25%, the net present value of this project is positive.
+D) If the return had instead been $10,000 (outlay unchanged), the internal rate of return would exceed 24%.
+E) This project has a unique internal rate of return greater than -1.
+Explanation of Statements:
+A) r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.
+B) NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = $347.83, which is positive (15% is below the 20% IRR, so 
+NPV must be positive).
+C) NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -$320.00, which is negative, not positive (25% is above the 
+20% IRR).
+D) With b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%.
+E) The chapter's theorem states that if a0 < 0 and all subsequent returns are positive, a unique internal rate of return 
+r* > -1 exists. Here a0 = -8,000 < 0 and a1 = 9,600 > 0, so the condition is satisfied.
+
+===== PAGE 2 =====
+A: TRUE   |   B: TRUE   |   C: FALSE   |   D: TRUE   |   E: TRUE
+TASK 2
+Difficulty: 2/5
+A logistics company spends $12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns 
+of $7,000 at the end of Year 1 and $7,000 at the end of Year 2.
+Given:
+Symbol
+Value
+a0
+-$12,000
+a1
+$7,000
+a2
+$7,000
+n
+2 years
+Formula(s):
+a0 + a1/(1+r) + a2/(1+r)2 = 0,   substitute s = (1+r)-1
+Step-by-Step Calculation:
+Step 1: -12,000 + 7,000/(1+r) + 7,000/(1+r)2 = 0.
+Step 2: Let s = (1+r)-1. Then 7,000s2 + 7,000s - 12,000 = 0. Dividing by 1,000: 7s2 + 7s - 12 = 0.
+Step 3: Discriminant = 72 + 4(7)(12) = 49 + 336 = 385. √385 ≈ 19.6214.
+Step 4: s = (-7 + 19.6214)/14 = 12.6214/14 ≈ 0.90153.
+Step 5: r = 1/s - 1 = 1/0.90153 - 1 ≈ 0.10922 ≈ 10.92%.
+Statements:
+A) The internal rate of return is approximately 10.92%.
+B) At an interest rate of 8%, the net present value of this project is positive.
+C) At an interest rate of 12%, the net present value of this project is positive.
+D) If the Year 2 return had instead been $8,000 (Year 1 unchanged at $7,000), the internal rate of return would 
+exceed 13%.
+E) Doubling both returns to $14,000 in Year 1 and $14,000 in Year 2 (outlay unchanged at $12,000) would result in 
+an internal rate of return of approximately 21.84%.
+Explanation of Statements:
+A) As calculated above, r ≈ 10.92%.
+B) NPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = $482.85, positive (8% is below 
+the IRR).
+C) NPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -$169.64, negative, not positive 
+(12% is above the IRR).
+D) With a2 = 8,000: 8,000s2 + 7,000s - 12,000 = 0 → 8s2 + 7s - 12 = 0. Discriminant = 49 + 384 = 433, √433 ≈ 
+20.809. s = (-7 + 20.809)/16 ≈ 0.8630, so r = 1/0.8630 - 1 ≈ 0.1587 = 15.87%, which exceeds 13%.
+E) With a1 = a2 = 14,000: 14,000s2 + 14,000s - 12,000 = 0 → 7s2 + 7s - 6 = 0. Discriminant = 49 + 168 = 217, √217 
+≈ 14.731. s = (-7 + 14.731)/14 ≈ 0.5522, so r = 1/0.5522 - 1 ≈ 0.8109 = 81.09% - far more than double 10.92% 
+(which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR.
+A: TRUE   |   B: TRUE   |   C: FALSE   |   D: TRUE   |   E: FALSE
+
+===== PAGE 3 =====
+TASK 3
+Difficulty: 2/5
+A boutique invests $20,000 in inventory and point-of-sale equipment. It expects net returns of $9,000 at the end of 
+Year 1 and $15,000 at the end of Year 2.
+Given:
+Symbol
+Value
+a0
+-$20,000
+a1
+$9,000
+a2
+$15,000
+n
+2 years
+Formula(s):
+a0 + a1/(1+r) + a2/(1+r)2 = 0,   s = (1+r)-1
+Step-by-Step Calculation:
+Step 1: 15,000s2 + 9,000s - 20,000 = 0. Dividing by 1,000: 15s2 + 9s - 20 = 0.
+Step 2: Discriminant = 92 + 4(15)(20) = 81 + 1,200 = 1,281. √1,281 ≈ 35.791.
+Step 3: s = (-9 + 35.791)/30 ≈ 0.89304.
+Step 4: r = 1/0.89304 - 1 ≈ 0.11978 ≈ 11.98%.
+Statements:
+A) The internal rate of return is approximately 11.98%.
+B) At a discount rate of 10%, the net present value of the project is positive.
+C) At a discount rate of 14%, the net present value of the project is positive.
+D) If the Year 1 return were $9,000 higher, with Year 2 unchanged at $15,000, the internal rate of return would 
+exceed 30%.
+E) The sum of all cash flows, a0 + a1 + a2, equals $4,000.
+Explanation of Statements:
+A) As calculated above, r ≈ 11.98%.
+B) NPV = -20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = $578.51, positive (10% is below 
+the IRR).
+C) NPV = -20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -$563.25, negative, not 
+positive (14% is above the IRR).
+D) With a1 = 18,000: 15,000s2 + 18,000s - 20,000 = 0 → 15s2 + 18s - 20 = 0. Discriminant = 324 + 1,200 = 1,524, 
+√1,524 ≈ 39.038. s = (-18 + 39.038)/30 ≈ 0.7013, r = 1/0.7013 - 1 ≈ 0.4259 = 42.59%, which exceeds 30%.
+E) a0 + a1 + a2 = -20,000 + 9,000 + 15,000 = $4,000, which is indeed positive, and this matches the chapter's stated 
+result that the internal rate of return is positive whenever this sum is positive - consistent with the computed r ≈ 
+11.98% > 0.
+A: TRUE   |   B: TRUE   |   C: FALSE   |   D: TRUE   |   E: TRUE
+TASK 4
+Difficulty: 3/5
+A retailer is choosing between two one-year uses of surplus cash. Project X: invest $15,000 now, receive $17,250 in 
+one year. Project Y: invest $22,000 now, receive $24,750 in one year.
+
+===== PAGE 4 =====
+Given:
+Symbol
+Value
+Project X: a, b
+$15,000, $17,250
+Project Y: a, b
+$22,000, $24,750
+n
+1 year (each project)
+Formula(s):
+r = (b/a) - 1   (one-year rate of return, applied to each project)
+Step-by-Step Calculation:
+Step 1: rX = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15%.
+Step 2: rY = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5%.
+Statements:
+A) The internal rate of return of Project X is exactly 15%.
+B) The internal rate of return of Project Y is exactly 12.5%.
+C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.
+D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present 
+value.
+E) If Project Y's payoff had instead been $25,000 (outlay unchanged at $22,000), its internal rate of return would 
+exceed that of Project X.
+Explanation of Statements:
+A) As calculated above, rX = 15%.
+B) As calculated above, rY = 12.5%.
+C) The chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 
+12.5% (Y), X should be preferred, not Y.
+D) NPVx at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = $540.54 (positive). NPVy at 11% = -22,000 + 
+24,750/1.11 = -22,000 + 22,297.30 = $297.30, which is also positive, not negative, because 11% is still below Y's 
+12.5% IRR.
+E) With b = 25,000: rY = (25,000/22,000) - 1 ≈ 0.1364 = 13.64%, which is still lower than Project X's 15%, so it 
+would not exceed X's rate.
+A: TRUE   |   B: TRUE   |   C: FALSE   |   D: FALSE   |   E: FALSE
+TASK 5
+Difficulty: 3/5
+A manufacturing upgrade has an initial outlay of $45,000. Installation disruption causes a net cash outflow of $3,000 
+at the end of Year 1, followed by net returns of $28,000 at the end of Year 2 and $35,000 at the end of Year 3.
+Given:
+Symbol
+Value
+a0
+-$45,000
+a1
+-$3,000
+a2
+$28,000
+a3
+$35,000
+n
+3 years
+Formula(s):
+
+===== PAGE 5 =====
+A = a0 + a1/(1+r) + a2/(1+r)2 + a3/(1+r)3
+Step-by-Step Calculation:
+Step 1 (r = 8%): A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 
+27,784.13 = $4,011.84.
+Step 2 (r = 12%): A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 
+24,912.31 = -$444.83.
+Step 3 (r = 15%): A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 
+23,013.07 = -$3,423.60.
+Statements:
+A) At r = 8%, the net present value of the project is approximately $4,012.
+B) At r = 12%, the net present value of the project is positive.
+C) The internal rate of return of this project lies between 12% and 15%.
+D) At r = 15%, the net present value of the project is approximately -$3,424.
+E) a1, a2, and a3 are all positive.
+Explanation of Statements:
+A) As calculated in Step 1, A ≈ $4,011.84 at r = 8%, which rounds to approximately $4,012.
+B) As calculated in Step 2, A ≈ -$444.83 at r = 12%, which is negative, not positive.
+C) The NPV is already negative at both r = 12% (-$444.83) and r = 15% (-$3,423.60), and it was positive at r = 8%. 
+This means the rate where NPV crosses zero lies between 8% and 12%, not between 12% and 15%.
+D) As calculated in Step 3, A ≈ -$3,423.60 at r = 15%, which rounds to approximately -$3,424.
+E) The theorem requires a0 < 0 and all of a1, ..., an to be strictly positive. Here a1 = -$3,000, which is negative, so this 
+precondition is not met - the theorem's guarantee of a unique internal rate of return does not apply to this cash flow 
+pattern.
+A: TRUE   |   B: FALSE   |   C: FALSE   |   D: TRUE   |   E: FALSE
+TASK 6
+Difficulty: 4/5
+A cafe chain invests $34,000 in a new espresso machine line. Expected net returns are $16,000 at the end of Year 1 
+and $24,000 at the end of Year 2.
+Given:
+Symbol
+Value
+a0
+-$34,000
+a1
+$16,000
+a2
+$24,000
+n
+2 years
+Formula(s):
+a0 + a1/(1+r) + a2/(1+r)2 = 0,   s = (1+r)-1
+Step-by-Step Calculation:
+Step 1: 24,000s2 + 16,000s - 34,000 = 0. Dividing by 2,000: 12s2 + 8s - 17 = 0.
+Step 2: Discriminant = 82 + 4(12)(17) = 64 + 816 = 880. √880 ≈ 29.665.
+Step 3: s = (-8 + 29.665)/24 ≈ 0.90270.
+
+===== PAGE 6 =====
+Step 4: r = 1/0.90270 - 1 ≈ 0.10778 ≈ 10.78%.
+Statements:
+A) The internal rate of return is approximately 14.5%.
+B) At an interest rate of 9%, the net present value of the project is negative.
+C) At an interest rate of 13%, the net present value of the project is negative.
+D) If the Year 2 return had instead been $20,000 (Year 1 unchanged at $16,000), the internal rate of return would 
+exceed the internal rate of return of the original project.
+E) Reducing the initial outlay to $30,000 (returns unchanged at $16,000 and $24,000) would lower the internal rate 
+of return.
+Explanation of Statements:
+A) As calculated above, r ≈ 10.78%, not 14.5%.
+B) NPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = $879.22, which is positive, 
+not negative (9% is below the 10.78% IRR).
+C) NPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -$1,045.19, which is 
+negative, confirming the statement (13% is above the IRR).
+D) With a2 = 20,000: 20,000s2 + 16,000s - 34,000 = 0 → 10s2 + 8s - 17 = 0. Discriminant = 64 + 680 = 744, √744 ≈ 
+27.276. s = (-8 + 27.276)/20 ≈ 0.9638, r = 1/0.9638 - 1 ≈ 0.0375 = 3.75%, which is far lower than 10.78%, not 
+higher.
+E) With a0 = -30,000: 24,000s2 + 16,000s - 30,000 = 0 → 12s2 + 8s - 15 = 0. Discriminant = 64 + 720 = 784 = 282 
+exactly. s = (-8 + 28)/24 = 20/24 ≈ 0.83333, r = 1/0.83333 - 1 = 0.20 = 20%, which is much higher than the original 
+10.78% - a smaller outlay for the same returns raises the internal rate of return, it does not lower it.
+A: FALSE   |   B: FALSE   |   C: TRUE   |   D: FALSE   |   E: FALSE
+TASK 7
+Difficulty: 4/5
+A logistics firm spends $40,000 automating a warehouse process. It expects net returns of $22,000 at the end of 
+Year 1 and $27,600 at the end of Year 2.
+Given:
+Symbol
+Value
+a0
+-$40,000
+a1
+$22,000
+a2
+$27,600
+n
+2 years
+Formula(s):
+A = a0 + a1/(1+r) + a2/(1+r)2
+Step-by-Step Calculation:
+Step 1: Test r = 15%: A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = $0.00 (to the 
+nearest cent).
+Step 2: Since A = 0 at r = 15%, this confirms r = 15% is the internal rate of return for this project.
+Statements:
+A) At r = 15%, the net present value of the project is $0 (to the nearest dollar).
+B) At an interest rate of 10%, the net present value of the project is positive.
+
+===== PAGE 7 =====
+C) At an interest rate of 20%, the net present value of the project is negative.
+D) The sum of all the project's cash flows, a0 + a1 + a2, equals $9,600.
+E) This project has a unique internal rate of return greater than -1.
+Explanation of Statements:
+A) As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.
+B) NPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = $2,809.92, positive (10% is 
+below the 15% IRR).
+C) NPV = -40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -$2,500.00, negative (20% is 
+above the 15% IRR).
+D) a0 + a1 + a2 = -40,000 + 22,000 + 27,600 = $9,600, which is positive, and this matches the chapter's result that the 
+internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0.
+E) The theorem's precondition (a0 < 0, all subsequent ai > 0) is satisfied exactly: a0 = -40,000 < 0, a1 = 22,000 > 0, a2 
+= 27,600 > 0.
+A: TRUE   |   B: TRUE   |   C: TRUE   |   D: TRUE   |   E: TRUE
+TASK 8
+Difficulty: 4/5
+A property developer invests $65,000 renovating a rental unit. Expected net rental income after expenses is $34,000 
+at the end of Year 1 and $42,000 at the end of Year 2.
+Given:
+Symbol
+Value
+a0
+-$65,000
+a1
+$34,000
+a2
+$42,000
+n
+2 years
+Formula(s):
+a0 + a1/(1+r) + a2/(1+r)2 = 0,   s = (1+r)-1
+Step-by-Step Calculation:
+Step 1: 42,000s2 + 34,000s - 65,000 = 0. Dividing by 1,000: 42s2 + 34s - 65 = 0.
+Step 2: Discriminant = 342 + 4(42)(65) = 1,156 + 10,920 = 12,076. √12,076 ≈ 109.891.
+Step 3: s = (-34 + 109.891)/84 ≈ 0.90346.
+Step 4: r = 1/0.90346 - 1 ≈ 0.10685 ≈ 10.69%.
+Statements:
+A) The internal rate of return is approximately 10.69%.
+B) At an interest rate of 9%, the net present value of the project is positive.
+C) At an interest rate of 12%, the net present value of the project is positive.
+D) Doubling both returns to $68,000 (Year 1) and $84,000 (Year 2), with the outlay unchanged at $65,000, would 
+more than double the internal rate of return.
+E) If the outlay were reduced to $60,000 (returns unchanged), the internal rate of return would be lower than the 
+internal rate of return of the original project.
+Explanation of Statements:
+
+===== PAGE 8 =====
+A) As calculated above, r ≈ 10.69%.
+B) NPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = $1,543.22, positive (9% is 
+below the IRR).
+C) NPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -$1,160.72, negative, not 
+positive (12% is above the IRR).
+D) With a1 = 68,000, a2 = 84,000: 84,000s2 + 68,000s - 65,000 = 0 → 84s2 + 68s - 65 = 0. Discriminant = 4,624 + 
+21,840 = 26,464, √26,464 ≈ 162.678. s = (-68 + 162.678)/168 ≈ 0.56356, r = 1/0.56356 - 1 ≈ 0.7744 = 77.44%. 
+Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that - more than 
+double.
+E) With a0 = -60,000: 42,000s2 + 34,000s - 60,000 = 0 → 42s2 + 34s - 60 = 0. Discriminant = 1,156 + 10,080 = 
+11,236 = 1062 exactly. s = (-34 + 106)/84 = 72/84 ≈ 0.85714, r = 1/0.85714 - 1 ≈ 0.16667 = 16.67%, which is higher 
+than 10.69%, not lower - a smaller outlay raises the internal rate of return.
+A: TRUE   |   B: TRUE   |   C: FALSE   |   D: TRUE   |   E: FALSE
+TASK 9
+Difficulty: 5/5
+A subscription software company spends $50,000 building a product and is comparing two versions. Option 1 (full 
+version): a steady net return of $6,000 at the end of every year, indefinitely into the future. Option 2 (scaled-back 
+version): the same $50,000 outlay, but returns of only $6,000 at the end of Year 1 and $6,000 at the end of Year 2, 
+with nothing paid afterward.
+Given:
+Symbol
+Value
+a0 (both options)
+-$50,000
+Option 1: ai (i = 1, 
+2, 3, ...)
+$6,000 each year, forever
+Option 2: a1, a2
+$6,000, $6,000 (n = 2)
+Formula(s):
+Option 1 (n → infinity, ai = a):  a0 + a/r = 0,  r = a / (-a0)
+Option 2 (n = 2):  a0 + a1/(1+r) + a2/(1+r)2 = 0,   s = (1+r)-1
+Step-by-Step Calculation:
+Step 1 (Option 1): As n → infinity, a0 + a/r = 0 gives r = a/(-a0) = 6,000/50,000 = 0.12 = 12%.
+Step 2 (Option 2): 6,000s2 + 6,000s - 50,000 = 0. Dividing by 1,000: 6s2 + 6s - 50 = 0. Dividing by 2: 3s2 + 3s - 25 = 
+0.
+Step 3: Discriminant = 32 + 4(3)(25) = 9 + 300 = 309. √309 ≈ 17.578.
+Step 4: The quadratic formula gives two roots for s: s = (-3 - 17.578)/6 ≈ -3.430 and s = (-3 + 17.578)/6 ≈ 2.430.
+Step 5: Converting each root to r = 1/s - 1: the first root gives r ≈ -1.291 (i.e. r < -1, outside the valid range), and the 
+second gives r ≈ -0.588 (i.e. r > -1, valid). So the unique valid internal rate of return for Option 2 is r* ≈ -58.84%.
+Statements:
+A) The limiting internal rate of return of Option 1 is 12%.
+B) The internal rate of return of Option 2 is approximately -58.84%.
+C) Option 2 has a unique internal rate of return greater than -1.
+D) The sum of Option 2's cash flows, a0 + a1 + a2, equals -$40,000.
+
+===== PAGE 9 =====
+E) If Option 2's Year 2 return were removed entirely, leaving only a0 = -$50,000 and a1 = $6,000, its internal rate of 
+return would be even lower than Option 2's own internal rate of return.
+Explanation of Statements:
+A) As calculated in Step 1, r = 6,000/50,000 = 0.12 = 12%.
+B) As calculated in Steps 2-5, the valid root gives r* ≈ -0.5884 = -58.84%.
+C) The theorem only requires a0 < 0 and all subsequent ai > 0 to guarantee a unique r* > -1; it does not require the 
+quadratic to have only one mathematical root. Here one root (r ≈ -1.291) falls outside the allowed range r > -1 and is 
+discarded, leaving exactly one valid root - precisely what the theorem guarantees.
+D) a0 + a1 + a2 = -50,000 + 6,000 + 6,000 = -$38,000, not -$40,000.
+E) With only a0 = -50,000 and a1 = 6,000: r = (6,000/50,000) - 1 = 0.12 - 1 = -0.88 = -88%. Since -88% is lower 
+(more negative) than -58.84%, the statement is correct.
+A: TRUE   |   B: TRUE   |   C: TRUE   |   D: FALSE   |   E: TRUE
+TASK 10
+Difficulty: 5/5
+A renewable energy cooperative is comparing two designs for a community solar project. Design A (two-year): 
+invest $120,000, with net returns of $54,000 at the end of Year 1 and $88,000 at the end of Year 2. Design B 
+(simpler, one-year): invest $70,000, with a single net return of $81,200 at the end of Year 1.
+Given:
+Symbol
+Value
+Design A: a0, a1, a2
+-$120,000, $54,000, $88,000
+Design B: a, b
+$70,000, $81,200
+n
+2 years (A) / 1 year (B)
+Formula(s):
+Design A (n = 2):  a0 + a1/(1+r) + a2/(1+r)2 = 0,   s = (1+r)-1
+Design B (n = 1):  r = (b/a) - 1
+Step-by-Step Calculation:
+Step 1 (Design A): 88,000s2 + 54,000s - 120,000 = 0. Dividing by 2,000: 44s2 + 27s - 60 = 0.
+Step 2: Discriminant = 272 + 4(44)(60) = 729 + 10,560 = 11,289. √11,289 ≈ 106.250.
+Step 3: s = (-27 + 106.250)/88 ≈ 0.90057, so r_A = 1/0.90057 - 1 ≈ 0.11041 ≈ 11.04%.
+Step 4 (Design B): r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16%.
+Statements:
+A) The internal rate of return of Design A is approximately 11.04%.
+B) The internal rate of return of Design B is exactly 16%.
+C) Based on the internal rate of return criterion, Design B should be preferred over Design A.
+D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present 
+value.
+E) If Design A's Year 1 return were $10,000 lower, with Year 2 unchanged at $88,000, its internal rate of return 
+would still exceed Design B's 16%.
+Explanation of Statements:
+A) As calculated in Steps 1-3, r_A ≈ 11.04%.
+
+===== PAGE 10 =====
+B) As calculated in Step 4, r_B = 16% exactly.
+C) The chapter's criterion is to prefer the project with the higher internal rate of return. Since 16% (Design B) 
+exceeds 11.04% (Design A), Design B should indeed be preferred.
+D) NPV_A at 13% = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -$3,295.48, 
+negative. NPV_B at 13% = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = $1,858.41, positive. Both parts of the 
+statement are correct.
+E) With a1 = 44,000: 88,000s2 + 44,000s - 120,000 = 0 → 22s2 + 11s - 30 = 0. Discriminant = 121 + 2,640 = 2,761, 
+√2,761 ≈ 52.545. s = (-11 + 52.545)/44 ≈ 0.94420, r = 1/0.94420 - 1 ≈ 0.05909 = 5.91%, which does not exceed 
+Design B's 16%.
+A: TRUE   |   B: TRUE   |   C: TRUE   |   D: TRUE   |   E: FALSE
