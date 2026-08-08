@@ -825,10 +825,9 @@ def setup_blurb(title: str, context: str) -> str:
 
 
 def craft_statement_tip(stmt: str, verdict: bool, reason: str) -> str:
-    """One short tip tied to THIS claim — prefers detail from the reason text."""
+    """Optional tip — only for real traps / thin thresholds. Empty string if not needed."""
     s = stmt.lower()
     r = reason.lower()
-    # Pull a concrete fragment from the reason (percent, dollar, or small calc)
     detail = ""
     m = re.search(
         r"(\d+(?:\.\d+)?\s*%|\$\d[\d,]*(?:\.\d+)?|\d+(?:\.\d+)?/\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*mg)",
@@ -837,57 +836,49 @@ def craft_statement_tip(stmt: str, verdict: bool, reason: str) -> str:
     if m:
         detail = m.group(1).replace("$", r"\$")
 
-    if not verdict:
-        if re.search(r"\b(more than|less than|exceed|at least|at most)\b", s):
-            bit = f" (here the key figure is {detail})" if detail else ""
-            return (
-                f"**Why it fails.** Bound language is the trap{bit}: compute the exact value, "
-                "then ask whether it really clears or misses the threshold as written."
-            )
-        if re.search(r"\b(fee|tax|loyalty|forecast|advertised|projected)\b", s + " " + r):
-            return (
-                "**Why it fails.** A fee, tax, ad, or forecast is being mixed into the solving "
-                "equations — peel or ignore it, then recompute the claim."
-            )
-        if re.search(r"\b(percent|%|ratio|proportion|share)\b", s):
-            bit = f" The check hinges on {detail}." if detail else ""
-            return (
-                f"**Why it fails.** Name the base of the percent/share before comparing.{bit}"
-            )
-        if re.search(r"\b(double|twice|half|transfer|moved|pooled)\b", s):
-            return (
-                "**Why it fails.** Replay the hypothetical from the solved values and change "
-                "only what the statement changes — mis-transfer and double-count are common."
-            )
-        bit = f" Key figure: {detail}." if detail else ""
-        return (
-            f"**Why it fails.** Recompute from the solved unknowns: the claim's number, "
-            f"direction, or scenario does not match.{bit}"
-        )
+    near = bool(
+        re.search(r"\b(only just|though only|near|thin|far below|exactly \d|hair)\b", reason, flags=re.I)
+    )
+    boundary = bool(re.search(r"\b(more than|less than|exceed|at least|at most)\b", s))
+    feeish = bool(re.search(r"\b(fee|tax|loyalty|forecast|advertised|projected)\b", s + " " + r))
+    pct = bool(re.search(r"\b(percent|%|proportion|share|ratio)\b", s))
+    transfer = bool(re.search(r"\b(transfer|difference between|moved|pooled|double|twice|half)\b", s))
+    convert = bool(re.search(r"\b(liter|converted|mL|mg/mL)\b", s + " " + r, flags=re.I))
 
-    if re.search(r"\b(more than|less than|exceed|at least|at most)\b", s):
-        bit = f" Margin clue: {detail}." if detail else ""
-        return (
-            f"**Watch.** True, but the margin can be thin — do not round a near miss "
-            f"into the opposite call.{bit}"
-        )
-    if re.search(r"\b(percent|%|proportion|share|ratio)\b", s):
+    # Skip plain wrong-number / direct-price claims
+    if not (boundary or feeish or pct or transfer or convert or near):
+        return ""
+
+    if not verdict:
+        if boundary:
+            bit = f" — key figure {detail}" if detail else ""
+            return f"Bound language is the trap{bit}: compute exact, then test the threshold"
+        if feeish:
+            return "A fee, tax, ad, or forecast got mixed into the solve — peel or ignore it, then recompute"
+        if pct:
+            return "Name the base of the percent/share before comparing"
+        if transfer:
+            return "Replay the hypothetical carefully; mis-transfer and double-count are common"
+        if convert:
+            return "Convert units first (e.g. L → mL) before multiplying by a per-mL rate"
+        return ""
+
+    if near or boundary:
         bit = f" ({detail})" if detail else ""
-        return (
-            f"**Watch.** Confirm the percent/share is of the base the wording actually names{bit}."
-        )
-    if re.search(r"\b(if |were |would |had )\b", s):
-        return (
-            "**Watch.** Counterfactuals keep the same unit prices/rates; only the changed "
-            "quantities (or the imagined tweak) move."
-        )
-    if detail:
-        return f"**Watch.** The arithmetic centers on {detail} — keep that figure in view when scanning the other claims."
+        return f"True, but the margin can be thin{bit} — do not round a near miss the wrong way"
+    if pct:
+        return "Confirm the percent/share is of the base the wording names"
+    if feeish:
+        return "Keep fee/tax/ad rows out of the price equations unless the claim asks for them"
+    if transfer:
+        return "Counterfactuals keep the same unit rates; only the changed quantities move"
+    if convert:
+        return "Volumes and concentrations use matching units end to end"
     return ""
 
 
 def expand_statement_reason(stmt: str, verdict: bool, raw: str) -> str:
-    """Frame the PDF check so each A–E block reads like a short argument, not a stamp."""
+    """Frame the PDF check; tip only when warranted, always on its own paragraph."""
     reason = mathify_for_expl(flatten(raw))
     if not reason:
         reason = "Compare the claim directly to the solved values from the system above."
@@ -902,7 +893,10 @@ def expand_statement_reason(stmt: str, verdict: bool, raw: str) -> str:
     tip = craft_statement_tip(stmt, verdict, reason)
     parts = [opener, "", reason]
     if tip:
-        parts += ["", tip]
+        # one-sentence tip: no trailing period
+        tip = tip.rstrip().rstrip(".")
+        label = "**Watch.**" if verdict else "**Why it fails.**"
+        parts += ["", f"{label} {tip}"]
     return "\n".join(parts)
 
 

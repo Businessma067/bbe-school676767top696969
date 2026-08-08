@@ -119,11 +119,20 @@ def format_letter_block(letter: str, stmt: str, verdict: str, reasoning: str, ti
         v = "FALSE"
     body = reasoning.strip()
     tip = (tip or "").strip()
-    if tip and not tip.startswith("**"):
-        tip = f"**Watch.** {tip}" if v == "TRUE" else f"**Why it fails.** {tip}"
+    # Strip label if agent already included it
+    tip = re.sub(r"^\*\*(Watch|Why it fails)\.\*\*\s*", "", tip).strip()
+    tip = tip.rstrip(".")
     parts = [f"**{letter}) {stmt}** — **{v}**", "", body]
-    if tip:
-        parts += ["", tip]
+    # Tip selection happens later in polish_ch5_tips.py; keep here only if tip looks trap-like
+    if tip and (
+        re.search(
+            r"(?i)\b(fee|tax|gap|transfer|percent|%|round|threshold|convert|distractor|"
+            r"more than|less than|net|gross|loyalty|forecast|mis-|double)\b",
+            tip + " " + stmt,
+        )
+    ):
+        label = "**Watch.**" if v == "TRUE" else "**Why it fails.**"
+        parts += ["", f"{label} {tip}"]
     return "\n".join(parts).strip()
 
 
@@ -154,9 +163,20 @@ def parse_verdict_blob(blob: str, stmt: str, letter: str) -> str:
         reasoning = re.sub(r"\nTip:.*", "", reasoning, flags=re.I | re.S).strip()
         reasoning = re.sub(r"\s+", " ", reasoning)
     prefix = "**Watch.** " if verdict == "TRUE" else "**Why it fails.** "
-    if tip and not tip.startswith("**"):
-        tip = prefix + tip
-    return format_letter_block(letter, stmt, verdict, reasoning, tip)
+    if tip:
+        tip = tip.strip().rstrip(".")
+        if not tip.startswith("**"):
+            tip = prefix + tip
+    # Always include tip text for polish pass to decide; attach with blank line
+    if tip:
+        return format_letter_block(
+            letter,
+            stmt,
+            verdict,
+            reasoning,
+            re.sub(r"^\*\*(Watch|Why it fails)\.\*\*\s*", "", tip).strip(),
+        )
+    return format_letter_block(letter, stmt, verdict, reasoning, "")
 
 
 def normalize_entry(num: int, raw_entry: dict | list) -> dict:

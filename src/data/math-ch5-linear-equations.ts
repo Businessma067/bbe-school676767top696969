@@ -22,24 +22,25 @@ export const MATH_CH5_LINEAR_EQUATIONS: MathTask[] = [
     tactical_explanations: [
       `**A) The North depot currently holds 360 crates.** — **TRUE**
 
-This claim gives North's current count. Solving the sum-and-difference system gives $2x=620+100=720$, so $x=360$; moving 50 crates then leaves North with $310$.
-**Watch.** The transfer amount is not North's current total.`,
+This claim gives North's current count. Solving the sum-and-difference system gives $2x=620+100=720$, so $x=360$; moving 50 crates then leaves North with $310$.`,
       `**B) The South depot currently holds 240 crates.** — **FALSE**
 
-This claim identifies South's current count. Once North is $360$, the total equation gives $y=620-360=260$, not $240$.
-**Why it fails.** Use the combined total after finding one depot's count.`,
+This claim identifies South's current count. Once North is $360$, the total equation gives $y=620-360=260$, not $240$.`,
       `**C) If 30 crates were moved from South to North instead, North would then hold 390 crates.** — **TRUE**
 
 This claim changes the direction of the move, so North gains crates. Starting from $360$, North would hold $360+30=390$.
-**Watch.** A move into North is addition for North.`,
+
+**Watch.** A move into North is addition for North`,
       `**D) The difference between the two depots today is 120 crates.** — **FALSE**
 
 This claim concerns the current gap, not the number transferred in the memo. The actual difference is $360-260=100$ crates.
-**Why it fails.** The 50-crate transfer closes a $100$-crate gap because both sides change.`,
+
+**Why it fails.** The 50-crate transfer closes a $100$-crate gap because both sides change`,
       `**E) Moving 50 crates from North to South (as the memo describes) would leave both depots holding 310 crates each.** — **TRUE**
 
 This claim checks the equalizing transfer. The new counts are $360-50=310$ and $260+50=310$, so they match.
-**Watch.** Check both depot totals after the same transfer.`,
+
+**Watch.** Check both depot totals after the same transfer`,
     ],
     difficulty_level: "1/5",
     sort_order: 1,
@@ -82,24 +83,21 @@ $$
     tactical_explanations: [
       `**A) A notebook costs $3.50.** — **TRUE**
 
-This claim states the notebook unit price. The solution gives $x=3.50$, and it fits Invoice #101 because $40(3.50)+25(1.80)=185.00$.
-**Watch.** Confirm a unit price against an actual invoice total.`,
+This claim states the notebook unit price. The solution gives $x=3.50$, and it fits Invoice #101 because $40(3.50)+25(1.80)=185.00$.`,
       `**B) A pen costs $2.10.** — **FALSE**
 
-This claim states the pen unit price. The elimination gives $-135y=-243.00$, so $y=1.80$, not $2.10$.
-**Why it fails.** Divide the full coefficient and total when solving for $y$.`,
+This claim states the pen unit price. The elimination gives $-135y=-243.00$, so $y=1.80$, not $2.10$.`,
       `**C) Invoice #101 (40 notebooks and 25 pens) totals $185.00.** — **TRUE**
 
-This claim checks the first invoice with the recovered prices. Its cost is $40(3.50)+25(1.80)=140.00+45.00=185.00$.
-**Watch.** Multiply each quantity by its own item price.`,
+This claim checks the first invoice with the recovered prices. Its cost is $40(3.50)+25(1.80)=140.00+45.00=185.00$.`,
       `**D) 10 notebooks and 10 pens purchased together would cost $53.00.** — **TRUE**
 
 This claim creates a new equal-quantity purchase. The total is $10(3.50)+10(1.80)=35.00+18.00=53.00$.
-**Watch.** Recalculate a new order instead of averaging old invoices.`,
+
+**Watch.** Recalculate a new order instead of averaging old invoices`,
       `**E) Invoice #102 (15 notebooks and 60 pens) totals $172.50.** — **FALSE**
 
-This claim gives an incorrect total for the second invoice. Using the prices gives $15(3.50)+60(1.80)=52.50+108.00=160.50$.
-**Why it fails.** Keep the total attached to the correct invoice.`,
+This claim gives an incorrect total for the second invoice. Using the prices gives $15(3.50)+60(1.80)=52.50+108.00=160.50$.`,
     ],
     difficulty_level: "1/5",
     sort_order: 2,
@@ -142,24 +140,21 @@ $$
     tactical_explanations: [
       `**A) An adult ticket costs $12.00.** — **TRUE**
 
-This claim gives the adult price. Solving the system produces $a=12$, and the evening revenue checks as $160(12)+40(7)=2200$.
-**Watch.** Match the adult coefficient with the adult price.`,
+This claim gives the adult price. Solving the system produces $a=12$, and the evening revenue checks as $160(12)+40(7)=2200$.`,
       `**B) A child ticket costs $7.00.** — **TRUE**
 
-This claim gives the child price. After $a=12$, the simplified evening equation gives $c=55-4(12)=7$.
-**Watch.** Substitute the solved adult price into the same session equation.`,
+This claim gives the child price. After $a=12$, the simplified evening equation gives $c=55-4(12)=7$.`,
       `**C) The Saturday matinee (90 adult, 150 child) generated $2,050.00 in revenue.** — **FALSE**
 
-This claim understates the matinee revenue. The actual calculation is $90(12)+150(7)=1080+1050=2130$, not $2050$.
-**Why it fails.** Add both ticket-revenue parts before comparing totals.`,
+This claim understates the matinee revenue. The actual calculation is $90(12)+150(7)=1080+1050=2130$, not $2050$.`,
       `**D) The Saturday evening session (160 adult, 40 child) generated $2,300.00 in revenue.** — **FALSE**
 
-This claim overstates the evening revenue. Its total is $160(12)+40(7)=1920+280=2200$.
-**Why it fails.** The $100$ difference is an arithmetic error, not a ticket-price change.`,
+This claim overstates the evening revenue. Its total is $160(12)+40(7)=1920+280=2200$.`,
       `**E) 50 adult tickets and 50 child tickets together would generate $1,000.00.** — **FALSE**
 
 This claim describes a fresh ticket mix. It would bring in $50(12)+50(7)=600+350=950$.
-**Why it fails.** Equal ticket counts do not make the two ticket prices equal.`,
+
+**Why it fails.** Equal ticket counts do not make the two ticket prices equal`,
     ],
     difficulty_level: "1/5",
     sort_order: 3,
@@ -199,23 +194,22 @@ $$
       `**A) A sandwich costs $7.00.** — **TRUE**
 
 This claim gives the sandwich price after the delivery fee is removed. The system gives $x=7$, and Receipt A's food is $6(7)+4(5)=62$.
-**Watch.** Remove the shared delivery fee before solving for food prices.`,
+
+**Watch.** Remove the shared delivery fee before solving for food prices`,
       `**B) A wrap costs $5.00.** — **TRUE**
 
-This claim gives the wrap price. Eliminating sandwiches gives $14y=70$, so $y=5$.
-**Watch.** Subtract equations only after they represent food-only totals.`,
+This claim gives the wrap price. Eliminating sandwiches gives $14y=70$, so $y=5$.`,
       `**C) Receipt A's food subtotal, before the $8.00 delivery fee is added, is $62.00.** — **TRUE**
 
-This claim separates the food from the delivery charge. Receipt A's subtotal is $70.00-8.00=62.00$.
-**Watch.** A receipt total and its food subtotal are different amounts.`,
+This claim separates the food from the delivery charge. Receipt A's subtotal is $70.00-8.00=62.00$.`,
       `**D) Receipt B's total, including the $8.00 delivery fee, is $74.00.** — **TRUE**
 
-This claim refers to the printed, fee-included receipt. Its food subtotal is $66.00$, and $66.00+8.00=74.00$.
-**Watch.** Add the fee back when the question asks for the full receipt.`,
+This claim refers to the printed, fee-included receipt. Its food subtotal is $66.00$, and $66.00+8.00=74.00$.`,
       `**E) A pickup order (no delivery fee) of 5 sandwiches and 5 wraps would cost $60.00.** — **TRUE**
 
 This claim is about food without delivery. The cost is $5(7)+5(5)=35+25=60$.
-**Watch.** Do not attach a delivery fee to a pickup order.`,
+
+**Watch.** Do not attach a delivery fee to a pickup order`,
     ],
     difficulty_level: "1/5",
     sort_order: 4,
@@ -256,24 +250,19 @@ $$
     tactical_explanations: [
       `**A) $6,500 was placed in Account A.** — **FALSE**
 
-This claim gives an amount for the 4% account. The solved amount is $x=6000$, not $6500$.
-**Why it fails.** The allocation must satisfy the weighted interest total, not just look near half-and-half.`,
+This claim gives an amount for the 4% account. The solved amount is $x=6000$, not $6500$.`,
       `**B) $4,500 was placed in Account B.** — **FALSE**
 
-This claim gives an amount for the 7% account. The system gives $y=4000$, not $4500$; moreover, $6500+4500$ would exceed the $10,000 total.
-**Why it fails.** Always check that proposed account balances add to the full investment.`,
+This claim gives an amount for the 7% account. The system gives $y=4000$, not $4500$; moreover, $6500+4500$ would exceed the $10,000 total.`,
       `**C) Account A earned $260.00 in interest over the year.** — **FALSE**
 
-This claim calculates interest for Account A incorrectly. At 4%, its $6000 balance earns $0.04(6000)=240$.
-**Why it fails.** Apply the stated rate to the actual principal.`,
+This claim calculates interest for Account A incorrectly. At 4%, its $6000 balance earns $0.04(6000)=240$.`,
       `**D) Account B earned $210.00 in interest over the year.** — **FALSE**
 
-This claim calculates the 7% account's interest incorrectly. Account B earns $0.07(4000)=280$, and $240+280=520$.
-**Why it fails.** The higher-rate account contributes $280$, not $210$.`,
+This claim calculates the 7% account's interest incorrectly. Account B earns $0.07(4000)=280$, and $240+280=520$.`,
       `**E) Had the entire $10,000 been placed in Account B alone, total interest for the year would have been $700.00.** — **TRUE**
 
-This claim places every dollar in the 7% account. The interest would be $0.07(10000)=700$.
-**Watch.** For a one-account scenario, use that account's rate on the whole total.`,
+This claim places every dollar in the 7% account. The interest would be $0.07(10000)=700$.`,
     ],
     difficulty_level: "1/5",
     sort_order: 5,
@@ -314,24 +303,21 @@ $$
     tactical_explanations: [
       `**A) A Standard chair is priced at $304.00.** — **TRUE**
 
-This claim states the Standard-chair price. Substitution into the shipment equation gives $x=304$.
-**Watch.** The $45 gap belongs in the Premium expression, not in the Standard price.`,
+This claim states the Standard-chair price. Substitution into the shipment equation gives $x=304$.`,
       `**B) A Premium chair is priced at $354.00.** — **FALSE**
 
 This claim is $5 too high. The Premium price is $304+45=349$, not $354$.
-**Why it fails.** Add the exact catalogue gap to the solved Standard price.`,
+
+**Why it fails.** Add the exact catalogue gap to the solved Standard price`,
       `**C) The 12 Premium chairs in the shipment are worth $4,188.00 in total.** — **TRUE**
 
-This claim uses the Premium-chair value. Their part of the shipment is $12(349)=4188$.
-**Watch.** Multiply the unit price by the Premium quantity only.`,
+This claim uses the Premium-chair value. Their part of the shipment is $12(349)=4188$.`,
       `**D) The price gap between one Premium chair and one Standard chair is $45.00.** — **TRUE**
 
-This claim checks the stated relationship. The solved prices differ by $349-304=45$.
-**Watch.** A price gap is found by subtraction, not by comparing shipment totals.`,
+This claim checks the stated relationship. The solved prices differ by $349-304=45$.`,
       `**E) A smaller order of 5 Standard chairs and 5 Premium chairs would cost more than $3,000.00.** — **TRUE**
 
-This claim evaluates a different order. Its value is $5(304)+5(349)=1520+1745=3265$, which exceeds $3000$.
-**Watch.** Recompute when the order quantities change.`,
+This claim evaluates a different order. Its value is $5(304)+5(349)=1520+1745=3265$, which exceeds $3000$.`,
     ],
     difficulty_level: "1/5",
     sort_order: 6,
@@ -370,24 +356,25 @@ $$
     tactical_explanations: [
       `**A) ByteMobile's fixed monthly fee is $17.00.** — **TRUE**
 
-This claim gives the part of every bill that does not depend on minutes. With $r=0.30$, the 40-minute bill leaves $29.00-40(0.30)=17.00$.
-**Watch.** Remove the usage charge to uncover the fixed fee.`,
+This claim gives the part of every bill that does not depend on minutes. With $r=0.30$, the 40-minute bill leaves $29.00-40(0.30)=17.00$.`,
       `**B) The extra-minute rate advertised is $0.30 per minute.** — **TRUE**
 
-This claim gives the overage rate. The bills differ by $53.00-29.00=24.00$ over $120-40=80$ minutes, so $r=24/80=0.30$.
-**Watch.** Use differences to cancel the shared monthly fee.`,
+This claim gives the overage rate. The bills differ by $53.00-29.00=24.00$ over $120-40=80$ minutes, so $r=24/80=0.30$.`,
       `**C) A customer using 200 extra minutes in a month would pay $80.00.** — **FALSE**
 
 This claim evaluates a 200-minute bill. The charge is $17.00+200(0.30)=17.00+60.00=77.00$.
-**Why it fails.** Include both the fixed fee and the per-minute charge.`,
+
+**Why it fails.** Include both the fixed fee and the per-minute charge`,
       `**D) A customer using 0 extra minutes would pay $0.00 that month.** — **FALSE**
 
 This claim ignores the plan's base cost. At zero extra minutes, the bill is $17.00+0(0.30)=17.00$.
-**Why it fails.** Zero usage does not remove a fixed monthly fee.`,
+
+**Why it fails.** Zero usage does not remove a fixed monthly fee`,
       `**E) The advertised rate ($0.30 per minute) is more than double a rival plan's rate of $0.20 per minute.** — **FALSE**
 
 This claim compares the two per-minute rates. Double $0.20$ is $0.40$, and $0.30$ is below that amount.
-**Why it fails.** Compare the rate with $2(0.20)$, not with $0.20$ itself.`,
+
+**Why it fails.** Compare the rate with $2(0.20)$, not with $0.20$ itself`,
     ],
     difficulty_level: "1/5",
     sort_order: 7,
@@ -432,24 +419,19 @@ $$
     tactical_explanations: [
       `**A) The division built 75 Standard ovens this week.** — **TRUE**
 
-This claim gives the Standard-oven count. The system gives $s=130-55=75$.
-**Watch.** Use the total count after solving for Deluxe ovens.`,
+This claim gives the Standard-oven count. The system gives $s=130-55=75$.`,
       `**B) The division built 45 Deluxe ovens this week.** — **FALSE**
 
-This claim understates the Deluxe count. The hours equation leads to $5d=275$, so $d=55$.
-**Why it fails.** Deluxe ovens must account for their 9 hours each.`,
+This claim understates the Deluxe count. The hours equation leads to $5d=275$, so $d=55$.`,
       `**C) Standard ovens accounted for 300 assembly hours this week.** — **TRUE**
 
-This claim converts the Standard count into hours. Standard ovens use $4(75)=300$ hours.
-**Watch.** Multiply the number built by that model's hours per oven.`,
+This claim converts the Standard count into hours. Standard ovens use $4(75)=300$ hours.`,
       `**D) Deluxe ovens accounted for 500 assembly hours this week.** — **FALSE**
 
-This claim gives the wrong Deluxe-hour contribution. Deluxe ovens used $9(55)=495$ hours, and $300+495=795$.
-**Why it fails.** The total is reconciled by $495$, not a rounded $500$.`,
+This claim gives the wrong Deluxe-hour contribution. Deluxe ovens used $9(55)=495$ hours, and $300+495=795$.`,
       `**E) The total material cost of all Standard ovens built this week is $9,000.00.** — **TRUE**
 
-This claim now uses the material-cost figure for Standard ovens. At $120 each, the cost is $75(120)=9000$.
-**Watch.** The material-cost data is useful here, even though it was not needed to solve the counts.`,
+This claim now uses the material-cost figure for Standard ovens. At $120 each, the cost is $75(120)=9000$.`,
     ],
     difficulty_level: "2/5",
     sort_order: 8,
@@ -494,24 +476,19 @@ $$
     tactical_explanations: [
       `**A) A sofa sells for $350.00.** — **TRUE**
 
-This claim gives the sofa price. The net-sales system solves to $x=350$.
-**Watch.** Build the equations from net sales, not printed gross sales.`,
+This claim gives the sofa price. The net-sales system solves to $x=350$.`,
       `**B) An armchair sells for $200.00.** — **TRUE**
 
-This claim gives the armchair price. From $2x+y=900$, $y=900-2(350)=200$.
-**Watch.** Use the simplified Hillcrest equation to back-substitute.`,
+This claim gives the armchair price. From $2x+y=900$, $y=900-2(350)=200$.`,
       `**C) Riverside's net sales (after its $460 in returns) were $9,300.00.** — **TRUE**
 
-This claim checks Riverside's return adjustment. Its net sales are $9760-460=9300$.
-**Watch.** Returns reduce gross sales by subtraction.`,
+This claim checks Riverside's return adjustment. Its net sales are $9760-460=9300$.`,
       `**D) Hillcrest's gross sales (before its $300 in returns) were $9,300.00.** — **TRUE**
 
-This claim names Hillcrest's gross-sales figure. The $9300$ gross total becomes $9000$ net after subtracting $300$ in returns.
-**Watch.** The same number can be gross for one branch and net for another.`,
+This claim names Hillcrest's gross-sales figure. The $9300$ gross total becomes $9000$ net after subtracting $300$ in returns.`,
       `**E) Had Riverside recorded zero returns that month, its gross and net sales would both have equalled $9,760.00.** — **TRUE**
 
-This claim removes Riverside's returns entirely. With no returns, net sales equal gross sales, which is $9760$.
-**Watch.** Net equals gross only when nothing is returned.`,
+This claim removes Riverside's returns entirely. With no returns, net sales equal gross sales, which is $9760$.`,
     ],
     difficulty_level: "2/5",
     sort_order: 9,
@@ -557,23 +534,26 @@ $$
       `**A) PrintFast's setup fee is $12.00.** — **FALSE**
 
 This claim gives the fixed portion of a PrintFast bill. Once the rate is $0.20$, the 120-page order leaves $33.00-24.00=9.00$ for the fee.
-**Why it fails.** The difference between order totals comes from extra pages, not from a second setup fee.`,
+
+**Why it fails.** The difference between order totals comes from extra pages, not from a second setup fee`,
       `**B) PrintFast's per-page rate is $0.25.** — **FALSE**
 
-This claim gives the page charge. The bill increase is $69.00-33.00=36.00$ for $300-120=180$ pages, so $r=36/180=0.20$.
-**Why it fails.** Divide by the 180-page difference.`,
+This claim gives the page charge. The bill increase is $69.00-33.00=36.00$ for $300-120=180$ pages, so $r=36/180=0.20$.`,
       `**C) A 250-page order at PrintFast would cost $60.00.** — **FALSE**
 
 This claim evaluates a new PrintFast order. Its exact cost is $9.00+250(0.20)=59.00$.
-**Why it fails.** Do not round $59.00$ up to the rival's flat quote.`,
+
+**Why it fails.** Do not round $59.00$ up to the rival's flat quote`,
       `**D) For a 350-page order, PrintFast would be cheaper than QuickCopy Center's flat $60.00 fee.** — **FALSE**
 
 This claim compares the two companies at 350 pages. PrintFast costs $9.00+350(0.20)=79.00$, which is greater than QuickCopy's $60.00$.
-**Why it fails.** The per-page charge makes PrintFast more expensive for this long order.`,
+
+**Why it fails.** The per-page charge makes PrintFast more expensive for this long order`,
       `**E) Because Order #58 and Order #96 involve different page counts at different total prices, these two invoices pin down one, and only one, possible combination of setup fee and per-page rate.** — **TRUE**
 
 This claim concerns whether the two bills determine the pricing rule uniquely. Their differing page counts make the rate solvable from the difference, and then either bill fixes the fee.
-**Watch.** Once the rate is fixed, one invoice determines the only possible setup fee.`,
+
+**Watch.** Once the rate is fixed, one invoice determines the only possible setup fee`,
     ],
     difficulty_level: "2/5",
     sort_order: 10,
@@ -616,24 +596,23 @@ $$
     tactical_explanations: [
       `**A) Ben paid more for his 5 burritos alone than Ana paid for her entire order.** — **FALSE**
 
-This claim compares only Ben's burritos with all of Ana's order. Five burritos cost $5(6.00)=30.00$, which is less than Ana's $32.00$ total.
-**Why it fails.** Paying more overall does not make every part of Ben's order more expensive.`,
+This claim compares only Ben's burritos with all of Ana's order. Five burritos cost $5(6.00)=30.00$, which is less than Ana's $32.00$ total.`,
       `**B) A burrito costs $2.50 more than a taco.** — **TRUE**
 
-This claim compares the two recovered item prices. The difference is $6.00-3.50=2.50$.
-**Watch.** Subtract the taco price from the burrito price.`,
+This claim compares the two recovered item prices. The difference is $6.00-3.50=2.50$.`,
       `**C) Had Ana ordered one fewer burrito (4 tacos and 2 burritos instead), she would have paid less than $28.00.** — **TRUE**
 
 This claim changes Ana's order by removing one burrito. The new total would be $4(3.50)+2(6.00)=14.00+12.00=26.00$, below $28.00$.
-**Watch.** Reprice the changed order rather than subtracting an arbitrary amount.`,
+
+**Watch.** Reprice the changed order rather than subtracting an arbitrary amount`,
       `**D) Ben's total order price exceeds $40.00.** — **FALSE**
 
-This claim concerns Ben's complete order. His total is $32.00+5.00=37.00$, which does not exceed $40.00$.
-**Why it fails.** The $5$ difference has already been incorporated into Ben's total.`,
+This claim concerns Ben's complete order. His total is $32.00+5.00=37.00$, which does not exceed $40.00$.`,
       `**E) Buying 6 tacos and 6 burritos together would cost $57.00.** — **TRUE**
 
 This claim makes an equal-quantity order. Its cost is $6(3.50)+6(6.00)=21.00+36.00=57.00$.
-**Watch.** Multiply both unit prices by six before adding.`,
+
+**Watch.** Multiply both unit prices by six before adding`,
     ],
     difficulty_level: "2/5",
     sort_order: 11,
@@ -679,24 +658,27 @@ $$
     tactical_explanations: [
       `**A) A paperback price of $12 is consistent with the pricing desk's $5 gap rule.** — **TRUE**
 
-This claim checks the paperback price against the pricing rule. If $x=12$, then $y=12+5=17$, so the gap is exactly $5$.
-**Watch.** Test the proposed paperback price by adding the stated gap.`,
+This claim checks the paperback price against the pricing rule. If $x=12$, then $y=12+5=17$, so the gap is exactly $5$.`,
       `**B) Hardcover editions are priced above $18.** — **FALSE**
 
 This claim describes the hardcover price incorrectly. The solved hardcover price is exactly $17.00$, not above $18$.
-**Why it fails.** The $5 gap is added to $12$, not to a guessed round price.`,
+
+**Why it fails.** The $5 gap is added to $12$, not to a guessed round price`,
       `**C) Had 500 paperbacks been sold instead of 400 (hardcover sales unchanged), revenue would have been $1,200 higher.** — **TRUE**
 
 This claim adds 100 paperbacks while leaving hardcovers unchanged. The extra revenue is $100(12)=1200$.
-**Watch.** Only the changed item count affects the increase.`,
+
+**Watch.** Only the changed item count affects the increase`,
       `**D) A customer buying 3 hardcovers and 2 paperbacks would pay less than $75.** — **FALSE**
 
 This claim totals a mixed customer purchase. The cost is $3(17)+2(12)=51+24=75$, exactly equal to $75$.
-**Why it fails.** “Less than” excludes an amount that is exactly $75$.`,
+
+**Why it fails.** “Less than” excludes an amount that is exactly $75$`,
       `**E) The reported $8,540 total could also have come from selling 310 hardcovers alone.** — **FALSE**
 
 This claim treats the report as a hardcover-only sale. But $310(17)=5270$, far below $8540$.
-**Why it fails.** The report's revenue depends on both paperback and hardcover sales.`,
+
+**Why it fails.** The report's revenue depends on both paperback and hardcover sales`,
     ],
     difficulty_level: "2/5",
     sort_order: 12,
@@ -742,23 +724,28 @@ $$
       `**A) The Standard plan has a lower base fee than the advertised Basic plan.** — **FALSE**
 
 This claim compares Standard's base fee with Basic's advertised $15$. Standard's solved base fee is $38$, which is higher.
-**Why it fails.** Compare base fees only, not the plans' overage rates.`,
+
+**Why it fails.** Compare base fees only, not the plans' overage rates`,
       `**B) The overage rate on the Standard plan is $3.00 per GB.** — **TRUE**
 
 This claim gives the variable charge. The two bills differ by $62-47=15$ over $8-3=5$ GB, so $y=15/5=3$.
-**Watch.** Subtract bills to remove the common base fee.`,
+
+**Watch.** Subtract bills to remove the common base fee`,
       `**C) A Standard customer using 10 GB of overage in May would be billed $68.00.** — **TRUE**
 
 This claim applies Standard's confirmed pricing to 10 GB. The bill is $38+10(3)=68$.
-**Watch.** Add the base fee once, then add the usage charge.`,
+
+**Watch.** Add the base fee once, then add the usage charge`,
       `**D) Switching from Standard to Premium would save money for a customer who typically uses 5 GB of overage per month.** — **TRUE**
 
 This claim compares plans at 5 GB. Standard costs $38+5(3)=53$, while Premium is a flat $40$, saving $13$.
-**Watch.** Compare both plans at the same usage level.`,
+
+**Watch.** Compare both plans at the same usage level`,
       `**E) For a customer using 8 GB of overage, the Basic plan works out cheaper than the Standard plan.** — **TRUE**
 
 This claim compares Basic and Standard at 8 GB. Basic costs $15+8(2)=31$, while Standard costs $38+8(3)=62$.
-**Watch.** Use each plan's own base fee and rate.`,
+
+**Watch.** Use each plan's own base fee and rate`,
     ],
     difficulty_level: "2/5",
     sort_order: 13,
@@ -804,23 +791,28 @@ $$
       `**A) After removing the occupancy tax, Weekend 1's booking revenue was $2,240.00.** — **TRUE**
 
 This claim reverses the 8% tax on Weekend 1. Dividing the printed total gives $2419.20\\div1.08=2240.00$.
-**Watch.** Undo a percentage increase by dividing by its multiplier.`,
+
+**Watch.** Undo a percentage increase by dividing by its multiplier`,
       `**B) A Suite costs $200 more per night than a Standard room.** — **FALSE**
 
 This claim overstates the room-rate gap. The pre-tax difference is $210-140=70$.
-**Why it fails.** Compare pre-tax room rates, not tax-included totals.`,
+
+**Why it fails.** Compare pre-tax room rates, not tax-included totals`,
       `**C) Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.** — **FALSE**
 
 This claim compares two pre-tax bookings. Six Standard rooms cost $6(140)=840$, and four Suites cost $4(210)=840$.
-**Why it fails.** The amounts are equal, so neither booking costs less.`,
+
+**Why it fails.** The amounts are equal, so neither booking costs less`,
       `**D) Including the 8% tax, a single Suite night costs $226.80.** — **TRUE**
 
 This claim adds occupancy tax to one Suite. The taxed cost is $210(1.08)=226.80$.
-**Watch.** Apply the tax multiplier after finding the pre-tax rate.`,
+
+**Watch.** Apply the tax multiplier after finding the pre-tax rate`,
       `**E) Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by $210.** — **TRUE**
 
 This claim adds exactly one Suite while leaving everything else unchanged. One more Suite contributes its pre-tax rate of $210$.
-**Watch.** With quantities otherwise fixed, one added room changes revenue by one unit price.`,
+
+**Watch.** With quantities otherwise fixed, one added room changes revenue by one unit price`,
     ],
     difficulty_level: "2/5",
     sort_order: 14,
@@ -869,24 +861,23 @@ $$
     tactical_explanations: [
       `**A) Component A's unit cost is $12.** — **TRUE**
 
-This claim gives Component A's actual cost. Elimination produces $31x=372$, so $x=12$.
-**Watch.** Use the actual January and February records to establish the unit cost.`,
+This claim gives Component A's actual cost. Elimination produces $31x=372$, so $x=12$.`,
       `**B) Component B's unit cost is $18.** — **FALSE**
 
-This claim mistakes the forecast implication for the actual price. After $x=12$, $5(12)+3y=105$ gives $y=15$, not $18$.
-**Why it fails.** Do not read forecast prices back into the actual records.`,
+This claim mistakes the forecast implication for the actual price. After $x=12$, $5(12)+3y=105$ gives $y=15$, not $18$.`,
       `**C) The March forecast assumes higher unit prices than what actually applied in January and February.** — **TRUE**
 
 This claim compares March's forecast with the actual prices. At actual costs, the forecast quantities would value at $200(12)+100(15)=3900$, below the forecast total of $4700$.
-**Watch.** A higher total for the same forecast quantities signals an assumed price increase.`,
+
+**Watch.** A higher total for the same forecast quantities signals an assumed price increase`,
       `**D) If March's forecast quantities (200 A + 100 B) were valued at the actual January/February unit costs, the result would be $4,700.** — **FALSE**
 
 This claim uses the wrong valuation basis. The actual-price value is $200(12)+100(15)=2400+1500=3900$.
-**Why it fails.** The $4700$ total belongs to the forecast's increased-price assumption.`,
+
+**Why it fails.** The $4700$ total belongs to the forecast's increased-price assumption`,
       `**E) The combined actual inventory value recorded for January and February is $6,810.** — **TRUE**
 
-This claim combines the two actual monthly values. Adding them gives $3150+3660=6810$.
-**Watch.** For the combined recorded value, add the two actual totals directly.`,
+This claim combines the two actual monthly values. Adding them gives $3150+3660=6810$.`,
     ],
     difficulty_level: "2/5",
     sort_order: 15,
@@ -935,24 +926,23 @@ $$
     tactical_explanations: [
       `**A) The overtime rate actually paid matches the contractual $1.5\\times$ regular-rate rule.** — **FALSE**
 
-The regular rate is $14$, so the contract requires $1.5(14)=21$ per overtime hour. Payroll used $24$, which is $3$ higher per overtime hour.
-**Why it fails.** Compare the calculated contractual rate with the actual rate, not merely with a payroll total.`,
+The regular rate is $14$, so the contract requires $1.5(14)=21$ per overtime hour. Payroll used $24$, which is $3$ higher per overtime hour.`,
       `**B) The regular hourly wage is $14.** — **TRUE**
 
-Subtracting the two payroll equations cancels the $40x$ regular-pay term and gives $4y=96$, so $y=24$. Then $40x+2(24)=608$ gives $x=14$.
-**Watch.** The equal 40-hour weeks are what make subtraction isolate overtime pay.`,
+Subtracting the two payroll equations cancels the $40x$ regular-pay term and gives $4y=96$, so $y=24$. Then $40x+2(24)=608$ gives $x=14$.`,
       `**C) Relative to the $1.5\\times$ contract rule, Worker 2 was overpaid by exactly $6.00 on their overtime hours.** — **TRUE**
 
-Worker 2 has 2 overtime hours. Contract pay would be $2(21)=42$, but actual overtime pay was $2(24)=48$, a difference of $6$.
-**Why it fails.** Do not call the $3$ hourly difference the total overpayment; multiply by the overtime hours.`,
+Worker 2 has 2 overtime hours. Contract pay would be $2(21)=42$, but actual overtime pay was $2(24)=48$, a difference of $6$.`,
       `**D) A third worker completing 40 regular + 4 overtime hours, paid at the rates actually used this week, would earn $656.** — **TRUE**
 
 At the actual rates, the worker earns $40(14)+4(24)$. That is $560+96=656$.
-**Watch.** This statement uses the observed $24$ overtime rate, not the contract rate.`,
+
+**Watch.** This statement uses the observed $24$ overtime rate, not the contract rate`,
       `**E) That same third worker, paid strictly under the $1.5\\times$ contract rule instead, would earn $644.** — **TRUE**
 
 Under the contract, overtime is $21$ per hour. The total would be $40(14)+4(21)=560+84=644$.
-**Why it fails.** Only the overtime portion changes from $656$ to $644$.`,
+
+**Why it fails.** Only the overtime portion changes from $656$ to $644$`,
     ],
     difficulty_level: "2/5",
     sort_order: 16,
@@ -991,24 +981,25 @@ $$
     tactical_explanations: [
       `**A) The billing office's claim of an $18.00 fixed monthly charge is correct.** — **FALSE**
 
-After removing the penalty, May's bill is $51$. With a $2$ rate, its usage costs $18(2)=36$, leaving a fixed charge of $15$, not $18$.
-**Why it fails.** Use the unpenalized May bill before finding the fixed part.`,
+After removing the penalty, May's bill is $51$. With a $2$ rate, its usage costs $18(2)=36$, leaving a fixed charge of $15$, not $18$.`,
       `**B) The rate charged is $2.00 per cubic metre.** — **TRUE**
 
 The bills differ by $65-51=14$ after May is corrected. Usage differs by $25-18=7$ m³, so the rate is $14\\div7=2$ dollars per m³.
-**Watch.** The rate comes from changes in bill and usage, because the fixed fee cancels.`,
+
+**Watch.** The rate comes from changes in bill and usage, because the fixed fee cancels`,
       `**C) After removing the late penalty, May's actual water charge was $51.00.** — **TRUE**
 
-The $56.10$ total is 110% of the original bill. Dividing by $1.10$ gives $51.00$.
-**Why it fails.** A 10% penalty is reversed by dividing by $1.10$, not by subtracting $5.61$.`,
+The $56.10$ total is 110% of the original bill. Dividing by $1.10$ gives $51.00$.`,
       `**D) A customer using 40 m³ in a month would be billed $85.00.** — **FALSE**
 
 The correct formula is $15+2u$. At $u=40$, the bill is $15+2(40)=95$.
-**Watch.** Keep the fixed $15$ charge when projecting another month's bill.`,
+
+**Watch.** Keep the fixed $15$ charge when projecting another month's bill`,
       `**E) Had the same 10% late penalty been applied to June's $65.00 bill, the total would have been $71.50.** — **TRUE**
 
 A 10% penalty multiplies the bill by $1.10$. Thus $65(1.10)=71.50$.
-**Why it fails.** The extra charge is $6.50$, so the final total is $71.50$, not $6.50$.`,
+
+**Why it fails.** The extra charge is $6.50$, so the final total is $71.50$, not $6.50$`,
     ],
     difficulty_level: "2/5",
     sort_order: 17,
@@ -1049,24 +1040,21 @@ $$
     tactical_explanations: [
       `**A) For a 10 km ride, CityCab works out cheaper than MetroX.** — **TRUE**
 
-CityCab charges $6+10(1)=16$. MetroX charges $6+10(1.5)=21$, so CityCab is $5$ cheaper.
-**Watch.** Compare totals at the stated 10 km, not just the kilometre rates.`,
+CityCab charges $6+10(1)=16$. MetroX charges $6+10(1.5)=21$, so CityCab is $5$ cheaper.`,
       `**B) Both companies charge the same base fare of $6.00.** — **TRUE**
 
-CityCab's rate is $1$, so $14-8(1)=6$. MetroX's rate is $1.50$, so $13.50-5(1.50)=6$.
-**Why it fails.** Equal bases here are a result of solving, not an assumption from the wording.`,
+CityCab's rate is $1$, so $14-8(1)=6$. MetroX's rate is $1.50$, so $13.50-5(1.50)=6$.`,
       `**C) For distances under 4 km, MetroX would be cheaper than CityCab.** — **FALSE**
 
 Their fares are $6+d$ and $6+1.5d$. For every positive $d$, $1.5d>d$, so MetroX costs more.
-**Watch.** A shared base means the larger per-kilometre rate loses immediately after 0 km.`,
+
+**Watch.** A shared base means the larger per-kilometre rate loses immediately after 0 km`,
       `**D) A 30 km CityCab ride costs $36.00.** — **TRUE**
 
-CityCab's formula is $6+d$. At 30 km, $6+30=36$.
-**Why it fails.** Include both the $6$ base fare and the $30$ distance charge.`,
+CityCab's formula is $6+d$. At 30 km, $6+30=36$.`,
       `**E) There is a distance of 5 km at which both companies charge exactly the same fare.** — **FALSE**
 
-Equating $6+d$ and $6+1.5d$ gives $d=1.5d$, so $d=0$. At 5 km, the fares are $11$ and $13.50$.
-**Watch.** Solve the equality; do not confuse MetroX's 5 km data point with a crossover.`,
+Equating $6+d$ and $6+1.5d$ gives $d=1.5d$, so $d=0$. At 5 km, the fares are $11$ and $13.50$.`,
     ],
     difficulty_level: "2/5",
     sort_order: 18,
@@ -1116,23 +1104,26 @@ $$
       `**A) Vendor A charges less than Vendor B for Product X.** — **TRUE**
 
 Vendor A charges $9$ per X, while Vendor B charges $11$ per X. Therefore A is $2$ cheaper for each X unit.
-**Watch.** Compare the two X prices only; Y's prices answer a different claim.`,
+
+**Watch.** Compare the two X prices only; Y's prices answer a different claim`,
       `**B) Vendor B charges less than Vendor A for Product Y.** — **TRUE**
 
 Vendor B's Y price is $16$, compared with Vendor A's $18$. B is therefore $2$ cheaper per Y unit.
-**Why it fails.** The cheaper vendor switches between X and Y, so there is no single always-cheaper supplier.`,
+
+**Why it fails.** The cheaper vendor switches between X and Y, so there is no single always-cheaper supplier`,
       `**C) For the upcoming order of 40 units X and 30 units Y, Vendor A is the cheaper overall choice.** — **TRUE**
 
-Vendor A costs $40(9)+30(18)=900$. Vendor B costs $40(11)+30(16)=920$, so A is lower by $20$.
-**Watch.** Price the complete mix; X's quantity makes A's X advantage decisive.`,
+Vendor A costs $40(9)+30(18)=900$. Vendor B costs $40(11)+30(16)=920$, so A is lower by $20$.`,
       `**D) Switching the entire upcoming order to Vendor B would reduce Bramble's total cost by $20.** — **FALSE**
 
 The current Vendor A total is $900$, while Vendor B would cost $920$. Switching raises the cost by $20$.
-**Why it fails.** State the direction of the difference as well as its size.`,
+
+**Why it fails.** State the direction of the difference as well as its size`,
       `**E) If the upcoming order changed to 60 units of Y only, Vendor B would work out cheaper than Vendor A.** — **TRUE**
 
 For Y only, Vendor A costs $60(18)=1080$ and Vendor B costs $60(16)=960$. Vendor B saves $120$.
-**Watch.** With no X units, A's lower X price is irrelevant.`,
+
+**Watch.** With no X units, A's lower X price is irrelevant`,
     ],
     difficulty_level: "2/5",
     sort_order: 19,
@@ -1175,24 +1166,23 @@ $$
     tactical_explanations: [
       `**A) Product P is priced at $50 and Service Q at $70, identically for both companies.** — **TRUE**
 
-Using Alpha's $13,100$ and Beta's $14,100$ revenue equations gives $x=50$ and $y=70$. Both equations use those same market prices.
-**Watch.** The companies have different sales quantities, not different product prices.`,
+Using Alpha's $13,100$ and Beta's $14,100$ revenue equations gives $x=50$ and $y=70$. Both equations use those same market prices.`,
       `**B) Beta generated more Q1 revenue than Alpha.** — **TRUE**
 
-The sum-and-difference information gives Beta $14,100$ and Alpha $13,100$. Beta is exactly $1,000$ higher.
-**Why it fails.** The stated difference says which company is ahead: $B-A=1000$.`,
+The sum-and-difference information gives Beta $14,100$ and Alpha $13,100$. Beta is exactly $1,000$ higher.`,
       `**C) If Alpha raises Product P's price by 10% next quarter with sales volumes unchanged, its total revenue would increase by exactly 10%.** — **FALSE**
 
 P rises from $50$ to $55$, adding $150(5)=750$ to Alpha's $13,100$. The new total is $13,850$, an increase of about $5.7%$.
-**Watch.** A percentage change in one revenue component is not the same percentage change in the whole total.`,
+
+**Watch.** A percentage change in one revenue component is not the same percentage change in the whole total`,
       `**D) Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.** — **FALSE**
 
 Alpha's projected revenue is $13,850$. Beta's current revenue is $14,100$, so Alpha remains $250$ lower.
-**Why it fails.** Calculate the new Alpha total before comparing it with Beta's benchmark.`,
+
+**Why it fails.** Calculate the new Alpha total before comparing it with Beta's benchmark`,
       `**E) Beta's revenue from Service Q subscriptions alone exceeds Alpha's entire Q1 revenue from Product P.** — **TRUE**
 
-Beta's Q revenue is $130(70)=9100$. Alpha's P revenue is $150(50)=7500$, so $9100>7500$.
-**Watch.** Compare the requested product lines, not the companies' total revenues.`,
+Beta's Q revenue is $130(70)=9100$. Alpha's P revenue is $150(50)=7500$, so $9100>7500$.`,
     ],
     difficulty_level: "2/5",
     sort_order: 20,
@@ -1234,23 +1224,28 @@ $$
       `**A) The flyer's advertised $30 signup fee matches what members are actually being charged.** — **FALSE**
 
 The records give a signup fee of $38$. That is $8$ more than the advertised $30$.
-**Why it fails.** Infer the fee from the histories instead of trusting the promotion.`,
+
+**Why it fails.** Infer the fee from the histories instead of trusting the promotion`,
       `**B) The monthly rate members are actually paying is lower than the advertised $45/month.** — **TRUE**
 
 The monthly rate from the two histories is $41$. Since $41<45$, the ongoing charge is lower than advertised.
-**Watch.** The flyer is wrong in two different directions: the fee is higher, but the monthly rate is lower.`,
+
+**Watch.** The flyer is wrong in two different directions: the fee is higher, but the monthly rate is lower`,
       `**C) Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.** — **FALSE**
 
 The flyer would produce $30+6(45)=300$. Maria actually paid $284$, which is $16$ less.
-**Why it fails.** Include the one-time signup fee when making the six-month flyer comparison.`,
+
+**Why it fails.** Include the one-time signup fee when making the six-month flyer comparison`,
       `**D) Jason paid more than $400 in total by his 10th payment.** — **TRUE**
 
 Jason's listed total is $448$. Since $448>400$, the claim follows directly.
-**Watch.** This is about the recorded total, not a recomputation using the flyer.`,
+
+**Watch.** This is about the recorded total, not a recomputation using the flyer`,
       `**E) A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay $492.** — **TRUE**
 
 With no signup fee, only the $41$ monthly rate remains. Thus $12(41)=492$.
-**Why it fails.** Do not add the $38$ fee after the statement explicitly removes it.`,
+
+**Why it fails.** Do not add the $38$ fee after the statement explicitly removes it`,
     ],
     difficulty_level: "3/5",
     sort_order: 21,
@@ -1293,24 +1288,27 @@ $$
     tactical_explanations: [
       `**A) The Basic plan costs $19 per month.** — **TRUE**
 
-Elimination gives $22x=418$. Therefore $x=19$ dollars per Basic plan-month.
-**Watch.** Check by substitution: $4(19)+3(31)=169$.`,
+Elimination gives $22x=418$. Therefore $x=19$ dollars per Basic plan-month.`,
       `**B) The Premium plan costs $35 per month.** — **FALSE**
 
 After finding Basic at $19$, $4(19)+3y=169$ gives $3y=93$ and $y=31$. Premium is not $35$.
-**Why it fails.** Finish the substitution rather than guessing a round price.`,
+
+**Why it fails.** Finish the substitution rather than guessing a round price`,
       `**C) Household 2's combined total is more than double Household 1's combined total.** — **FALSE**
 
 Household 2 totals $255$. Double Household 1's $169$ is $338$, and $255<338$.
-**Watch.** “More than double” requires comparing with $338$, not merely noting that $255$ is larger than $169$.`,
+
+**Watch.** “More than double” requires comparing with $338$, not merely noting that $255$ is larger than $169$`,
       `**D) There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.** — **FALSE**
 
 For $n$ months the costs are $19n$ and $31n$. They are equal only if $12n=0$, so $n=0$, not a positive number.
-**Why it fails.** With no fixed fee, unequal monthly rates cannot cross after zero months.`,
+
+**Why it fails.** With no fixed fee, unequal monthly rates cannot cross after zero months`,
       `**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined $250.** — **TRUE**
 
 The charge is $5(19)+5(31)=95+155=250$.
-**Watch.** Both five-month portions must be included once.`,
+
+**Watch.** Both five-month portions must be included once`,
     ],
     difficulty_level: "3/5",
     sort_order: 22,
@@ -1361,23 +1359,24 @@ $$
     tactical_explanations: [
       `**A) Organic apples cost $4.80 per pound.** — **TRUE**
 
-After known items are removed, elimination gives $19x=91.20$. Hence $x=4.80$ per pound.
-**Watch.** The $50$ receipt total includes $8$ of known bread and eggs.`,
+After known items are removed, elimination gives $19x=91.20$. Hence $x=4.80$ per pound.`,
       `**B) Almond milk costs less than organic apples, per unit.** — **FALSE**
 
 Almond milk costs $6$ per carton, while apples cost $4.80$ per pound. Numerically, $6>4.80$.
-**Why it fails.** Use the solved unit prices rather than comparing item quantities on a receipt.`,
+
+**Why it fails.** Use the solved unit prices rather than comparing item quantities on a receipt`,
       `**C) Five pounds of apples costs exactly the same as four cartons of almond milk.** — **TRUE**
 
-Five pounds cost $5(4.80)=24$. Four cartons cost $4(6)=24$.
-**Watch.** Both totals are exactly $24$, so no rounding judgment is needed.`,
+Five pounds cost $5(4.80)=24$. Four cartons cost $4(6)=24$.`,
       `**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than $47.00.** — **FALSE**
 
 A 5% discount on $50$ is $2.50$. The reduced total would be $50-2.50=47.50$, which is above $47$.
+
 **Why it fails.** “Less than $47$” is stricter than “about $47$.”`,
       `**E) Buying 10 lb of apples and 2 cartons of milk together costs more than $60.** — **FALSE**
 
 The cost is $10(4.80)+2(6)=48+12=60$. It equals $60$; it does not exceed it.
+
 **Watch.** Respect the strict wording “more than.”`,
     ],
     difficulty_level: "3/5",
@@ -1424,23 +1423,26 @@ $$
       `**A) The fixed connection fee is $33.** — **TRUE**
 
 At 240 units, usage costs $240(0.21)=50.40$. Subtracting from $83.40$ leaves $33$.
-**Watch.** Back-substitution is the direct way to recover the fixed portion.`,
+
+**Watch.** Back-substitution is the direct way to recover the fixed portion`,
       `**B) Customer service's claimed rate of $0.24 per unit is correct.** — **FALSE**
 
-The bill difference is $112.80-83.40=29.40$ for $380-240=140$ extra units. Thus the rate is $29.40\\div140=0.21$.
-**Why it fails.** The real bills contradict the unverified $0.24$ claim.`,
+The bill difference is $112.80-83.40=29.40$ for $380-240=140$ extra units. Thus the rate is $29.40\\div140=0.21$.`,
       `**C) At 280 units of usage, the standard plan costs less than $95.** — **TRUE**
 
 The standard bill is $33+280(0.21)=33+58.80=91.80$. Since $91.80<95$, the claim is true.
-**Watch.** Include the connection fee as well as the usage charge.`,
+
+**Watch.** Include the connection fee as well as the usage charge`,
       `**D) The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.** — **FALSE**
 
 Solar is $0.29u$, while standard is $33+0.21u$. They meet at $412.5$ units; above that, standard's lower rate wins.
-**Why it fails.** A plan with no fee can be cheaper initially without being cheaper forever.`,
+
+**Why it fails.** A plan with no fee can be cheaper initially without being cheaper forever`,
       `**E) At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan.** — **FALSE**
 
 Standard costs $33+500(0.21)=138$. Solar costs $500(0.29)=145$, so Solar is $7$ more.
-**Watch.** Since 500 is above 412.5, use the post-crossover conclusion.`,
+
+**Watch.** Since 500 is above 412.5, use the post-crossover conclusion`,
     ],
     difficulty_level: "3/5",
     sort_order: 24,
@@ -1482,23 +1484,26 @@ $$
       `**A) A pasta dish costs $19.** — **TRUE**
 
 After Table 8's fee is removed, solving the menu system gives $x=19$. Substitution also gives appetizer price $y=15$.
-**Watch.** Do not use the $220$ printed Table 8 amount as its pre-fee food total.`,
+
+**Watch.** Do not use the $220$ printed Table 8 amount as its pre-fee food total`,
       `**B) An appetizer costs more than a pasta dish.** — **FALSE**
 
 An appetizer costs $15$, while pasta costs $19$. Since $15<19$, the appetizer is cheaper.
-**Why it fails.** The quantity of appetizers in Table 8 does not indicate its unit price.`,
+
+**Why it fails.** The quantity of appetizers in Table 8 does not indicate its unit price`,
       `**C) Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly $26.00.** — **TRUE**
 
-Table 8's subtotal is $220\\div1.10=200$. Comparing it with Table 5's $174$ gives $200-174=26$.
-**Watch.** The $46$ printed-total difference includes the service charge and is not the subtotal difference.`,
+Table 8's subtotal is $220\\div1.10=200$. Comparing it with Table 5's $174$ gives $200-174=26$.`,
       `**D) If Table 5 had also been charged the 10% peak-hour service fee, its total would have been $191.40.** — **TRUE**
 
 Apply the multiplier to Table 5's $174$ subtotal: $174(1.10)=191.40$.
-**Why it fails.** Add 10% of $174$, which is $17.40$, rather than adding a flat $10$.`,
+
+**Why it fails.** Add 10% of $174$, which is $17.40$, rather than adding a flat $10$`,
       `**E) Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than $150.** — **TRUE**
 
 The subtotal is $4(19)+4(15)=136$. With service, $136(1.10)=149.60$, which is below $150$.
-**Watch.** Keep the cents: rounding $149.60$ early can obscure the strict comparison.`,
+
+**Watch.** Keep the cents: rounding $149.60$ early can obscure the strict comparison`,
     ],
     difficulty_level: "3/5",
     sort_order: 25,
@@ -1543,24 +1548,21 @@ $$
     tactical_explanations: [
       `**A) Item M costs $21 per unit.** — **TRUE**
 
-Elimination gives $109x=2289$. Therefore $x=21$ dollars per M unit.
-**Watch.** Verify the result in Shipment 1: $110(21)+80(27)=4470$.`,
+Elimination gives $109x=2289$. Therefore $x=21$ dollars per M unit.`,
       `**B) Item N costs $30 per unit.** — **FALSE**
 
-With $x=21$, the reduced first equation becomes $231+8y=447$. Thus $8y=216$ and $y=27$, not $30$.
-**Why it fails.** Do not infer price from a nearby weight or volume column.`,
+With $x=21$, the reduced first equation becomes $231+8y=447$. Thus $8y=216$ and $y=27$, not $30$.`,
       `**C) Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.** — **FALSE**
 
-Shipment 1 averages $4470\\div190\\approx23.53$ per item. Shipment 2 averages $5520\\div220\\approx25.09$, so the averages differ.
-**Watch.** Divide each total by its own total item count before comparing averages.`,
+Shipment 1 averages $4470\\div190\\approx23.53$ per item. Shipment 2 averages $5520\\div220\\approx25.09$, so the averages differ.`,
       `**D) 150 units of Item N alone would cost $4,050.** — **TRUE**
 
 Item N costs $27$ each. Thus $150(27)=4050$.
-**Why it fails.** This uses only N's unit price; Item M has no role in an N-only purchase.`,
+
+**Why it fails.** This uses only N's unit price; Item M has no role in an N-only purchase`,
       `**E) Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods.** — **FALSE**
 
-The cost equations use only item counts and the $21$ and $27$ unit prices. Weight is not a coefficient in either cost model.
-**Watch.** Correlated-looking logged data is not automatically a cause of the billed total.`,
+The cost equations use only item counts and the $21$ and $27$ unit prices. Weight is not a coefficient in either cost model.`,
     ],
     difficulty_level: "3/5",
     sort_order: 26,
@@ -1601,24 +1603,21 @@ $$
     tactical_explanations: [
       `**A) Standard planting costs $29 per unit.** — **TRUE**
 
-After expanding Job 1, elimination yields $x=29$. The original Job 1 total checks as $14(29)+35(44)=1946$.
-**Watch.** The bundle conversion must happen before any elimination.`,
+After expanding Job 1, elimination yields $x=29$. The original Job 1 total checks as $14(29)+35(44)=1946$.`,
       `**B) Premium planting costs $50 per unit.** — **FALSE**
 
-Using $x=29$ in $2x+5y=278$ gives $58+5y=278$. Therefore $y=44$, not $50$.
-**Why it fails.** Do not mistake an intermediate expression for the completed Premium price.`,
+Using $x=29$ in $2x+5y=278$ gives $58+5y=278$. Therefore $y=44$, not $50$.`,
       `**C) Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.** — **TRUE**
 
-Each of the 7 bundles has 2 Standard and 5 Premium units. So the counts are $7(2)=14$ and $7(5)=35$.
-**Watch.** Multiply both components of a bundle by the number of bundles.`,
+Each of the 7 bundles has 2 Standard and 5 Premium units. So the counts are $7(2)=14$ and $7(5)=35$.`,
       `**D) The Premium portion alone of Job 1 cost more than the entirety of Job 2.** — **TRUE**
 
 Job 1's Premium portion costs $35(44)=1540$. Job 2's whole invoice is $1301$, so $1540>1301$.
-**Why it fails.** A component total can exceed another job's full total when its quantity is large enough.`,
+
+**Why it fails.** A component total can exceed another job's full total when its quantity is large enough`,
       `**E) The new quotation of $1,068 is mathematically consistent with the confirmed rates.** — **TRUE**
 
-The quote should be $8(29)+19(44)=232+836=1068$. This matches the stated $1,068$ exactly.
-**Watch.** Test a quotation by recalculating it from the solved unit rates.`,
+The quote should be $8(29)+19(44)=232+836=1068$. This matches the stated $1,068$ exactly.`,
     ],
     difficulty_level: "3/5",
     sort_order: 27,
@@ -1662,24 +1661,25 @@ $$
     tactical_explanations: [
       `**A) The per diem is $55 per day.** — **TRUE**
 
-Using the valid reports gives $y=0.32$ per mile. Report 1 then gives $5x+150(0.32)=323$, so $5x=275$ and $x=55$.
-**Watch.** Solve from Reports 1 and 2 only, because Report 3 is inconsistent.`,
+Using the valid reports gives $y=0.32$ per mile. Report 1 then gives $5x+150(0.32)=323$, so $5x=275$ and $x=55$.`,
       `**B) Finance's belief that the mileage rate is $0.40/mile is correct.** — **FALSE**
 
-Elimination gives $800y=256$. Thus $y=0.32$, which is $0.08$ below Finance's claimed rate.
-**Why it fails.** Treat the finance figure as a claim rather than evidence.`,
+Elimination gives $800y=256$. Thus $y=0.32$, which is $0.08$ below Finance's claimed rate.`,
       `**C) Report 3 is impossible, since 7 meal days alone would require at least $385 at the confirmed per-diem rate — far more than its reported $120 total.** — **TRUE**
 
 Seven meal days cost $7(55)=385$ before mileage is added. A reported total of $120$ cannot pay even that portion.
-**Watch.** A nonnegative mileage charge cannot reduce the required reimbursement.`,
+
+**Watch.** A nonnegative mileage charge cannot reduce the required reimbursement`,
       `**D) Report 1's total exceeds Report 2's total by more than $80.** — **FALSE**
 
 The difference is $323-245=78$. Since $78$ is not greater than $80$, the statement fails.
-**Why it fails.** “More than $80$” excludes a difference of $80$ or less.`,
+
+**Why it fails.** “More than $80$” excludes a difference of $80$ or less`,
       `**E) Reports 1 and 2 combined reimbursed at least $550.** — **TRUE**
 
 Their combined total is $323+245=568$. Since $568\\ge550$, the claim is true.
-**Watch.** “At least” allows equality, but this sum is actually $18$ above the threshold.`,
+
+**Watch.** “At least” allows equality, but this sum is actually $18$ above the threshold`,
     ],
     difficulty_level: "3/5",
     sort_order: 28,
@@ -1725,24 +1725,21 @@ $$
     tactical_explanations: [
       `**A) Widget A requires 7 hours of labor to assemble.** — **TRUE**
 
-Using Week 1 and recovered Week 2 counts, elimination gives $x=7$. Week 1 then has $35(7)+20(10)=445$.
-**Watch.** The $25$ and $33$ Week 2 counts are essential to this conclusion.`,
+Using Week 1 and recovered Week 2 counts, elimination gives $x=7$. Week 1 then has $35(7)+20(10)=445$.`,
       `**B) Widget B requires 12 hours of labor to assemble.** — **FALSE**
 
-After $x=7$, Week 1 gives $245+20y=445$. Thus $20y=200$ and $y=10$, not $12$.
-**Why it fails.** Keep A's and B's coefficients matched to their own variables throughout substitution.`,
+After $x=7$, Week 1 gives $245+20y=445$. Thus $20y=200$ and $y=10$, not $12$.`,
       `**C) Week 2 actually produced 25 Widget A units and 33 Widget B units.** — **TRUE**
 
-The note says $B=A+8$ and $A+B=58$. Substitution gives $2A+8=58$, hence $A=25$ and $B=33$.
-**Watch.** Recover the counts from both relationships, not from the 505 labor total alone.`,
+The note says $B=A+8$ and $A+B=58$. Substitution gives $2A+8=58$, hence $A=25$ and $B=33$.`,
       `**D) If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.** — **FALSE**
 
 A's time becomes $7(1.20)=8.4$ hours. Week 1 would use $35(8.4)+20(10)=494$ hours, up $49$ from $445$, about 11%.
-**Why it fails.** Only Widget A's share of the weekly labor changes.`,
+
+**Why it fails.** Only Widget A's share of the weekly labor changes`,
       `**E) The illegible Week 3 entry can be reconstructed as 20 Widget A units.** — **TRUE**
 
-With 15 Widget B units, their labor is $15(10)=150$ hours. The remaining $290-150=140$ hours make $140\\div7=20$ Widget A units.
-**Watch.** Subtract the known Widget B labor before dividing by A's hours per unit.`,
+With 15 Widget B units, their labor is $15(10)=150$ hours. The remaining $290-150=140$ hours make $140\\div7=20$ Widget A units.`,
     ],
     difficulty_level: "3/5",
     sort_order: 29,
@@ -1788,24 +1785,21 @@ $$
     tactical_explanations: [
       `**A) Product X is priced at $29.** — **TRUE**
 
-Using the reconciled North and South reports, elimination gives $169x=4901$. Therefore $x=29$.
-**Watch.** Derive the prices from the matching pair before testing East.`,
+Using the reconciled North and South reports, elimination gives $169x=4901$. Therefore $x=29$.`,
       `**B) Product Y is priced at $28.** — **FALSE**
 
-Substituting $x=29$ into $17x+14y=829$ gives $493+14y=829$. Hence $14y=336$ and $y=24$.
-**Why it fails.** Do not stop after finding Product X; Product Y still requires substitution.`,
+Substituting $x=29$ into $17x+14y=829$ gives $493+14y=829$. Hence $14y=336$ and $y=24$.`,
       `**C) The East branch's reported revenue is fully consistent with the derived prices.** — **FALSE**
 
-At the derived prices, East should earn $65(29)+50(24)=3085$. Its reported revenue is $3200$, a discrepancy of $115$.
-**Watch.** Test each branch by rebuilding its revenue from its own quantities.`,
+At the derived prices, East should earn $65(29)+50(24)=3085$. Its reported revenue is $3200$, a discrepancy of $115$.`,
       `**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read $3,085.** — **TRUE**
 
 East sells 65 X units and 50 Y units. Its corrected revenue is $65(29)+50(24)=1885+1200=3085$.
-**Watch.** The correction follows the fixed company-wide prices, not the erroneous reported total.`,
+
+**Watch.** The correction follows the fixed company-wide prices, not the erroneous reported total`,
       `**E) North's reported revenue exceeds South's and East's reported revenues combined.** — **FALSE**
 
-North reports $4145$. South and East report $3875+3200=7075$, which is much greater than $4145$.
-**Why it fails.** Combine the two comparison branches before judging North's single total.`,
+North reports $4145$. South and East report $3875+3200=7075$, which is much greater than $4145$.`,
     ],
     difficulty_level: "3/5",
     sort_order: 30,
@@ -1850,27 +1844,23 @@ $$
 
 Type A costs $18.45 per case. Rounding $18.45 up to the next whole dollar gives $19.
 
-**Watch.** “Round up” means go to $19 even though $18.45 would round to $18 under ordinary nearest-dollar rounding.`,
+**Watch.** “Round up” means go to $19 even though $18.45 would round to $18 under ordinary nearest-dollar rounding`,
       `**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.** — **TRUE**
 
 The price gap is $27.80 − $18.45 = $9.35. That is greater than $9 and less than $10.
 
-**Watch.** Compare the actual difference, $9.35, to both endpoints rather than estimating from the invoice totals.`,
+**Watch.** Compare the actual difference, $9.35, to both endpoints rather than estimating from the invoice totals`,
       `**C) If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the $24 mark.** — **TRUE**
 
-Invoice 2 has 7 + 19 = 26 cases and totals $657.35. Its equal per-case share is $657.35 ÷ 26 ≈ $25.28, which is above $24.
-
-**Watch.** This is an average across mixed case types, not either individual case price.`,
+Invoice 2 has 7 + 19 = 26 cases and totals $657.35. Its equal per-case share is $657.35 ÷ 26 ≈ $25.28, which is above $24.`,
       `**D) Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.** — **FALSE**
 
-Swapping Invoice 1's quantities gives 13($18.45) + 9($27.80) = $490.05. That is not the original $527.45 total.
-
-**Why it fails.** Swapping quantities changes the total whenever the two prices differ; here they differ by $9.35.`,
+Swapping Invoice 1's quantities gives 13($18.45) + 9($27.80) = $490.05. That is not the original $527.45 total.`,
       `**E) Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium.** — **FALSE**
 
 The combined quantities are 16 Type A cases and 32 Type B cases. Their cost is 16($18.45) + 32($27.80) = $1,184.80, exactly $527.45 + $657.35.
 
-**Why it fails.** Fixed unit prices make combining orders additive; no bulk premium was included in the model.`,
+**Why it fails.** Fixed unit prices make combining orders additive; no bulk premium was included in the model`,
     ],
     difficulty_level: "3/5",
     sort_order: 31,
@@ -1915,27 +1905,21 @@ $$
 
 The dispatch fee is $145.50. It is exactly halfway between $145.00 and $146.00.
 
-**Watch.** The midpoint of consecutive whole dollars ends in 50 cents.`,
+**Watch.** The midpoint of consecutive whole dollars ends in 50 cents`,
       `**B) Per mile, Swift Cargo's rate is closer to $1.50 than to $2.00.** — **FALSE**
 
-Swift's rate is $1.85 per mile. It is $0.15 from $2.00 but $0.35 from $1.50, so it is closer to $2.00.
-
-**Why it fails.** “Closer” requires comparing both distances, not just noticing that $1.85 is below $2.`,
+Swift's rate is $1.85 per mile. It is $0.15 from $2.00 but $0.35 from $1.50, so it is closer to $2.00.`,
       `**C) A 250-mile haul comes in five cents under six hundred and eight dollars.** — **FALSE**
 
 At 250 miles, Swift costs $145.50 + 250($1.85) = $608.00. That is exactly $608, not five cents under.
 
-**Why it fails.** Keep the $145.50 fee in the calculation; using only the mileage charge gives the wrong total.`,
+**Why it fails.** Keep the $145.50 fee in the calculation; using only the mileage charge gives the wrong total`,
       `**D) At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of $270.** — **TRUE**
 
-The competitor charges 250($1.35) = $337.50. Swift costs $608.00, so the competitor saves $270.50, which is more than $270.
-
-**Watch.** Savings is Swift's bill minus the competitor's bill: $608.00 − $337.50.`,
+The competitor charges 250($1.35) = $337.50. Swift costs $608.00, so the competitor saves $270.50, which is more than $270.`,
       `**E) Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line — even though that intersection falls at a negative, and therefore meaningless, mileage.** — **TRUE**
 
-Set the two prices equal: $145.50 + 1.85d = 1.35d. This gives 0.50d = −145.50, so d = −291.
-
-**Watch.** Different slopes guarantee an algebraic intersection, even when its mileage is negative and has no practical meaning.`,
+Set the two prices equal: $145.50 + 1.85d = 1.35d. This gives 0.50d = −145.50, so d = −291.`,
     ],
     difficulty_level: "3/5",
     sort_order: 32,
@@ -1976,29 +1960,21 @@ For a fixed fee plus a rate, subtract two bills first: the shared fixed fee disa
     tactical_explanations: [
       `**A) A Specialty Drink's price, tripled, would clear twenty dollars.** — **FALSE**
 
-Three Specialty Drinks cost 3($6.35) = $19.05. Since $19.05 is below $20.00, the price does not clear twenty dollars.
-
-**Why it fails.** “Clear twenty” means strictly greater than $20.00, not merely close to it.`,
+Three Specialty Drinks cost 3($6.35) = $19.05. Since $19.05 is below $20.00, the price does not clear twenty dollars.`,
       `**B) Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined — quite a bit more, in fact.** — **TRUE**
 
-Four Pastries cost 4($3.80) = $15.20. One drink and one pastry cost $6.35 + $3.80 = $10.15, so four pastries cost $5.05 more.
-
-**Watch.** Build both combinations from the unit prices before comparing them.`,
+Four Pastries cost 4($3.80) = $15.20. One drink and one pastry cost $6.35 + $3.80 = $10.15, so four pastries cost $5.05 more.`,
       `**C) Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.** — **FALSE**
 
-The listed calorie totals are 6,100 and 5,400, but they give no calorie amount per drink or pastry. The quantities and dollar totals are the information that identify the prices.
-
-**Why it fails.** A number is useful only if the model links it to the unknowns; these calorie totals do not.`,
+The listed calorie totals are 6,100 and 5,400, but they give no calorie amount per drink or pastry. The quantities and dollar totals are the information that identify the prices.`,
       `**D) Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past $4.90.** — **TRUE**
 
-Receipt 1 has 7 + 9 = 16 items. Its average is $78.65 ÷ 16 ≈ $4.9156 per item, just above $4.90.
-
-**Watch.** This average is not a menu price because the receipt contains both drinks and pastries.`,
+Receipt 1 has 7 + 9 = 16 items. Its average is $78.65 ÷ 16 ≈ $4.9156 per item, just above $4.90.`,
       `**E) A week of daily 2-Drink-2-Pastry orders costs enough that, left over from $150, you'd have less than $8 in change.** — **TRUE**
 
 A 2-drink, 2-pastry order costs 2($6.35) + 2($3.80) = $20.30. For seven days that is $142.10, leaving $150.00 − $142.10 = $7.90.
 
-**Watch.** Multiply the daily total by all 7 days before finding the change.`,
+**Watch.** Multiply the daily total by all 7 days before finding the change`,
     ],
     difficulty_level: "3/5",
     sort_order: 33,
@@ -2037,29 +2013,23 @@ $$
     tactical_explanations: [
       `**A) Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.** — **TRUE**
 
-Four dozen croissants cost 4($13.85) = $55.40. That is greater than $55.00.
-
-**Watch.** The claim is about four dozen, so multiply the per-dozen price by 4.`,
+Four dozen croissants cost 4($13.85) = $55.40. That is greater than $55.00.`,
       `**B) The per-dozen gap between croissants and baguettes is closer to four dollars than to five.** — **TRUE**
 
-The price gap is $13.85 − $9.40 = $4.45. It is $0.45 from $4 and $0.55 from $5, making it closer to $4.
-
-**Watch.** A $4.45 gap is just below the $4.50 midpoint between $4 and $5.`,
+The price gap is $13.85 − $9.40 = $4.45. It is $0.45 from $4 and $0.55 from $5, making it closer to $4.`,
       `**C) Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.** — **FALSE**
 
 Ten dozen croissants cost $138.50, while ten dozen of each costs $138.50 + $94.00 = $232.50. The croissant share is about 59.6%, which is below three-fifths, or 60%.
 
-**Why it fails.** Compare $138.50 with the full $232.50 combined bill, not with the baguette cost alone.`,
+**Why it fails.** Compare $138.50 with the full $232.50 combined bill, not with the baguette cost alone`,
       `**D) Per dozen-item ordered, Email 1 runs pricier than Email 2 — and the gap clears two dollars.** — **FALSE**
 
 Email 1 averages $297.30 ÷ 25 ≈ $11.89 per dozen-item, while Email 2 averages $299.30 ÷ 29 ≈ $10.32. The difference is about $1.57, not more than $2.
 
-**Why it fails.** Use the total number of dozen-items in each email: 25 and 29.`,
+**Why it fails.** Use the total number of dozen-items in each email: 25 and 29`,
       `**E) Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty.** — **TRUE**
 
-Adding $3 makes each baguette dozen $12.40. Email 2 would become 6($13.85) + 23($12.40) = $368.30.
-
-**Watch.** Only the 23 baguette dozens get the $3 increase; the croissant price stays $13.85.`,
+Adding $3 makes each baguette dozen $12.40. Email 2 would become 6($13.85) + 23($12.40) = $368.30.`,
     ],
     difficulty_level: "3/5",
     sort_order: 34,
@@ -2102,29 +2072,23 @@ $$
     tactical_explanations: [
       `**A) Fabric Roll margins clear the $27 line, though not by enough to also clear $27.50.** — **TRUE**
 
-A Fabric Roll margin is $27.35. It is above $27.00 but below $27.50.
-
-**Watch.** Test each boundary separately; being above one amount does not mean it reaches the next.`,
+A Fabric Roll margin is $27.35. It is above $27.00 but below $27.50.`,
       `**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.** — **FALSE**
 
-Twice the Yarn Spool margin is 2($19.80) = $39.60. That does not exceed $40.00.
-
-**Why it fails.** “Just clear forty” still requires a value greater than $40, and $39.60 is short.`,
+Twice the Yarn Spool margin is 2($19.80) = $39.60. That does not exceed $40.00.`,
       `**C) Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears $8,400 — but only by a slender margin.** — **TRUE**
 
-The new mix earns 200($27.35) + 150($19.80) = $5,470 + $2,970 = $8,440. That is $40 above $8,400.
-
-**Watch.** Recalculate each product's contribution for the new quantities rather than scaling either quarter.`,
+The new mix earns 200($27.35) + 150($19.80) = $5,470 + $2,970 = $8,440. That is $40 above $8,400.`,
       `**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.** — **TRUE**
 
 The difference between the reported totals is $10,260.50 − $10,029.00 = $231.50. Removing the smallest hundred leaves $131.50, which still has three digits before the decimal.
 
-**Watch.** “Drop the smallest hundred” means subtract $100, not remove a digit from $231.50.`,
+**Watch.** “Drop the smallest hundred” means subtract $100, not remove a digit from $231.50`,
       `**E) Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round $13,675 — no cents required.** — **TRUE**
 
 Five hundred Fabric Rolls produce 500($27.35) = $13,675.00. This is exactly the stated round-dollar amount.
 
-**Watch.** The no-Yarn condition means there is only one term in this calculation.`,
+**Watch.** The no-Yarn condition means there is only one term in this calculation`,
     ],
     difficulty_level: "4/5",
     sort_order: 35,
@@ -2170,27 +2134,23 @@ $$
 
 Invoice 2's $419.40 is 60% of Invoice 1's $699.00. Its quantities, 9 and 12, are also 60% of 15 and 20.
 
-**Watch.** Check both the quantities and the total before calling one invoice a scaled repeat.`,
+**Watch.** Check both the quantities and the total before calling one invoice a scaled repeat`,
       `**B) Nitrogen-type cylinders are priced closer to $17.00 than to $16.00.** — **FALSE**
 
-Nitrogen costs $16.40. It is $0.40 from $16 and $0.60 from $17, so it is closer to $16.
-
-**Why it fails.** The $16.50 midpoint separates values closer to $16 from values closer to $17.`,
+Nitrogen costs $16.40. It is $0.40 from $16 and $0.60 from $17, so it is closer to $16.`,
       `**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.** — **TRUE**
 
 Four Oxygen cylinders cost 4($22.65) = $90.60. Six Nitrogen cylinders cost 6($16.40) = $98.40, so the Oxygen total is lower.
 
-**Watch.** Different quantities matter here: compare the two finished totals, not just $22.65 with $16.40.`,
+**Watch.** Different quantities matter here: compare the two finished totals, not just $22.65 with $16.40`,
       `**D) Double Invoice 3's order exactly, and the resulting bill would land above $655.** — **FALSE**
 
 Doubling Invoice 3 gives 26 Nitrogen and 10 Oxygen cylinders. The bill is 26($16.40) + 10($22.65) = $652.90, below $655.
 
-**Why it fails.** Doubling every quantity doubles the original $326.45 invoice to $652.90 exactly.`,
+**Why it fails.** Doubling every quantity doubles the original $326.45 invoice to $652.90 exactly`,
       `**E) Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the $20 mark.** — **TRUE**
 
-Invoices 1 and 3 together total $699.00 + $326.45 = $1,025.45 for 15 + 20 + 13 + 5 = 53 cylinders. The average is about $19.35 per cylinder, below $20.
-
-**Watch.** Use the combined dollar total and combined cylinder count to form the weighted average.`,
+Invoices 1 and 3 together total $699.00 + $326.45 = $1,025.45 for 15 + 20 + 13 + 5 = 53 cylinders. The average is about $19.35 per cylinder, below $20.`,
     ],
     difficulty_level: "4/5",
     sort_order: 36,
@@ -2233,27 +2193,21 @@ $$
 
 Alvarez's solo time is 1 ÷ 0.085 ≈ 11.76 hours. Rounded to the nearest hour, that is 12 hours.
 
-**Why it fails.** A value of 11.76 rounds up because its decimal part is at least 0.5.`,
+**Why it fails.** A value of 11.76 rounds up because its decimal part is at least 0.5`,
       `**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.** — **FALSE**
 
-Bianchi needs 1 ÷ 0.045 ≈ 22.22 hours for one job. Alvarez needs 2 ÷ 0.085 ≈ 23.53 hours for two jobs, so Bianchi's time is shorter.
-
-**Why it fails.** Compare the stated one-job Bianchi time with the stated two-job Alvarez time, not their hourly rates alone.`,
+Bianchi needs 1 ÷ 0.045 ≈ 22.22 hours for one job. Alvarez needs 2 ÷ 0.085 ≈ 23.53 hours for two jobs, so Bianchi's time is shorter.`,
       `**C) Their combined hourly output, expressed as a fraction, reduces to exactly 13/100 — no more, no less.** — **TRUE**
 
-Together they complete 0.085 + 0.045 = 0.130 job per hour. As a fraction, 0.130 = 13/100.
-
-**Watch.** Add rates only because both technicians are working on the same job during the same hour.`,
+Together they complete 0.085 + 0.045 = 0.130 job per hour. As a fraction, 0.130 = 13/100.`,
       `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to 1/7 than to 1/8.** — **TRUE**
 
-On Tuesday Bianchi completes 3(0.045) = 0.135 of a job. Its distance from 1/7 is about 0.0079, while its distance from 1/8 is 0.010.
-
-**Watch.** Compare decimal distances: 0.135 is marginally nearer 0.1429 than 0.125.`,
+On Tuesday Bianchi completes 3(0.045) = 0.135 of a job. Its distance from 1/7 is about 0.0079, while its distance from 1/8 is 0.010.`,
       `**E) Tally every hour either technician logged across both days — 23 in all — and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.** — **TRUE**
 
 The total work completed is 0.655 + 0.900 = 1.555 jobs over 23 logged hours. The average is 1.555 ÷ 23 ≈ 0.0676, or 6.76% per hour.
 
-**Watch.** Combine both days' completed-work amounts before dividing by the 23 total hours.`,
+**Watch.** Combine both days' completed-work amounts before dividing by the 23 total hours`,
     ],
     difficulty_level: "4/5",
     sort_order: 37,
@@ -2294,29 +2248,23 @@ $$
     tactical_explanations: [
       `**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.** — **FALSE**
 
-A T-Shirt margin is $11.65. It is $0.35 from $12 but $0.65 from $11, so it is closer to $12.
-
-**Why it fails.** The midpoint is $11.50; $11.65 lies on the twelve-dollar side.`,
+A T-Shirt margin is $11.65. It is $0.35 from $12 but $0.65 from $11, so it is closer to $12.`,
       `**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.** — **TRUE**
 
-A Hoodie margin is $18.40. It is $0.40 from $18 and $0.60 from $19, so it is closer to $18.
-
-**Watch.** The nearest-dollar comparison is based on differences of 40 cents and 60 cents.`,
+A Hoodie margin is $18.40. It is $0.40 from $18 and $0.60 from $19, so it is closer to $18.`,
       `**C) Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.** — **FALSE**
 
-The missing Season 3 count is 245 T-Shirts. Although 245 is divisible by 5, it is not divisible by 10.
-
-**Why it fails.** A multiple of 10 must end in 0; 245 ends in 5.`,
+The missing Season 3 count is 245 T-Shirts. Although 245 is divisible by 5, it is not divisible by 10.`,
       `**D) Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.** — **TRUE**
 
 Season 2 exceeds Season 1 by $10,747.75 − $9,793.50 = $954.25. Fifty-two Hoodies earn 52($18.40) = $956.80, so the gap is $2.55 short.
 
-**Watch.** “Barely fail to cover” means the profit gap must be less than, but near, the 52-Hoodie amount.`,
+**Watch.** “Barely fail to cover” means the profit gap must be less than, but near, the 52-Hoodie amount`,
       `**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count (Hoodies held at 310), and the profit crosses $8,700 — clearing it by less than $40.** — **TRUE**
 
 With 260 T-Shirts and 310 Hoodies, profit is 260($11.65) + 310($18.40) = $8,733.00. It clears $8,700 by $33, which is less than $40.
 
-**Watch.** Replace only the missing T-Shirt count; keep the 310 Hoodies unchanged.`,
+**Watch.** Replace only the missing T-Shirt count; keep the 310 Hoodies unchanged`,
     ],
     difficulty_level: "4/5",
     sort_order: 38,
@@ -2362,27 +2310,25 @@ $$
 
 The fee is $94.60, and $94.60 − $5.40 = $89.20. Its excess over $89 is $5.60, and $5.60 ÷ $89 ≈ 6.3%.
 
-**Watch.** The percentage comparison uses $89 as the reference amount, not $94.60.`,
+**Watch.** The percentage comparison uses $89 as the reference amount, not $94.60`,
       `**B) The per-kilogram rate, tripled, would land just shy of $9.50.** — **TRUE**
 
 Three times the $3.15/kg rate is $9.45. That is just below $9.50.
 
-**Watch.** “Just shy” means less than the target, and $9.45 is 5 cents below it.`,
+**Watch.** “Just shy” means less than the target, and $9.45 is 5 cents below it`,
       `**C) Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed — but doesn't match it exactly.** — **TRUE**
 
 Shipment 3 weighs 99 ÷ 2.2 = 45 kg, so the model predicts $94.60 + 45($3.15) = $236.35. The actual $239.80 bill differs by $3.45, which is within $4 but not exact.
 
-**Watch.** Convert 99 pounds to 45 kg before applying the per-kilogram charge.`,
+**Watch.** Convert 99 pounds to 45 kg before applying the per-kilogram charge`,
       `**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.** — **FALSE**
 
-Ninety-nine pounds converts to 99 ÷ 2.2 = 45 kg. Since 45 is not divisible by 7, the claim is false.
-
-**Why it fails.** Check divisibility after the unit conversion; 45 ÷ 7 is not a whole number.`,
+Ninety-nine pounds converts to 99 ÷ 2.2 = 45 kg. Since 45 is not divisible by 7, the claim is false.`,
       `**E) Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars.** — **TRUE**
 
 At 400 kg, the charge is $94.60 + 400($3.15) = $1,354.60. This is $4.60 above $1,350.
 
-**Watch.** Include the flat $94.60 fee in addition to the 400-kilogram charge.`,
+**Watch.** Include the flat $94.60 fee in addition to the 400-kilogram charge`,
     ],
     difficulty_level: "4/5",
     sort_order: 39,
@@ -2431,27 +2377,21 @@ $$
 
 Twice Client A's $483.70 invoice is $967.40. The excess over Client B's $952.10 is $15.30, and $15.30 ÷ $952.10 ≈ 1.607%.
 
-**Watch.** The percent overshoot is measured against the actual $952.10 bill.`,
+**Watch.** The percent overshoot is measured against the actual $952.10 bill`,
       `**B) For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's $952.10 billed amount.** — **TRUE**
 
-If B's doubled usage total is $952.10, A would need to be exactly half: $952.10 ÷ 2 = $476.05. A's reported $483.70 is not that value, exposing the inconsistency.
-
-**Watch.** Doubling both usage quantities doubles the entire bill when there is no separate fixed term.`,
+If B's doubled usage total is $952.10, A would need to be exactly half: $952.10 ÷ 2 = $476.05. A's reported $483.70 is not that value, exposing the inconsistency.`,
       `**C) The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.** — **TRUE**
 
-The error rate is about 1.61%. This is closer to 1/60 ≈ 1.67% than to 1/50 = 2%.
-
-**Watch.** Compare decimal percentages: the gap to 1.67% is much smaller than the gap to 2%.`,
+The error rate is about 1.61%. This is closer to 1/60 ≈ 1.67% than to 1/50 = 2%.`,
       `**D) Plugging in a purely hypothetical $14.20 per compute-unit and $31.75 per storage-unit — numbers with no basis in the real contract — Client A's invoice would compute to a figure just shy of $375.** — **FALSE**
 
-The hypothetical prices give 11($14.20) + 7($31.75) = $156.20 + $222.25 = $378.45. That is above $375, not just below it.
-
-**Why it fails.** Both hypothetical unit charges must be multiplied by Client A's 11 and 7 units.`,
+The hypothetical prices give 11($14.20) + 7($31.75) = $156.20 + $222.25 = $378.45. That is above $375, not just below it.`,
       `**E) Compare Client B's actual bill to two rival hypotheses — one assuming a clean doubling of Client A ($967.40), the other assuming a 50%-heavier surcharge instead of a full double ($725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does.** — **TRUE**
 
 The clean-doubling hypothesis is $15.30 away from $952.10. The 50%-heavier hypothesis, $725.55, is $226.55 away, so doubling is much closer.
 
-**Watch.** Closeness is based on absolute differences, even when neither proposed bill is correct.`,
+**Watch.** Closeness is based on absolute differences, even when neither proposed bill is correct`,
     ],
     difficulty_level: "4/5",
     sort_order: 40,
@@ -2494,27 +2434,21 @@ When every coefficient doubles, the total must double too; otherwise the system 
 
 Fund A earns 0.0525($4,800) = $252, while Fund B earns 0.0375($13,600) = $510. Triple A's interest is $756, and $510 is not more than that.
 
-**Why it fails.** Compare B's $510 with three times A's interest, not three times A's balance.`,
+**Why it fails.** Compare B's $510 with three times A's interest, not three times A's balance`,
       `**B) If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above $800.00.** — **TRUE**
 
-At 6.75%, Fund A would earn 0.0675($4,800) = $324. Adding Fund B's unchanged $510 gives $834, above $800.
-
-**Watch.** Change only Fund A's rate; Fund B remains at 3.75% and earns $510.`,
+At 6.75%, Fund A would earn 0.0675($4,800) = $324. Adding Fund B's unchanged $510 gives $834, above $800.`,
       `**C) The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).** — **TRUE**
 
 The total trust is $4,800 + $13,600 = $18,400. Its $762 return is $762 ÷ $18,400 ≈ 4.14%, which exceeds 4%.
 
-**Watch.** Divide total interest by the combined balance to get the overall return rate.`,
+**Watch.** Divide total interest by the combined balance to get the overall return rate`,
       `**D) Had the trust instead been split evenly ($9,200.00 in each fund) at the original rates, the total return would have come within $5.00 of the actual $762.00.** — **FALSE**
 
-An even $9,200 split earns $9,200(0.0525 + 0.0375) = $828. That is $66 away from $762, not within $5.
-
-**Why it fails.** With equal balances, add the two rates first, then multiply by the shared $9,200 balance.`,
+An even $9,200 split earns $9,200(0.0525 + 0.0375) = $828. That is $66 away from $762, not within $5.`,
       `**E) The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.** — **TRUE**
 
-The balance difference is $13,600 − $4,800 = $8,800. Relative to the smaller $4,800 balance, $8,800 ÷ $4,800 ≈ 183.3%, above 180%.
-
-**Watch.** “Relative to the smaller balance” makes $4,800 the denominator.`,
+The balance difference is $13,600 − $4,800 = $8,800. Relative to the smaller $4,800 balance, $8,800 ÷ $4,800 ≈ 183.3%, above 180%.`,
     ],
     difficulty_level: "4/5",
     sort_order: 41,
@@ -2560,29 +2494,21 @@ $$
     tactical_explanations: [
       `**A) The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.** — **TRUE**
 
-Batch 1 contains 144 g and Batch 2 contains 184 g. Together they contain 328 g, which exceeds 300 g.
-
-**Watch.** Add the batch salt totals directly because the claim combines the two completed batches.`,
+Batch 1 contains 144 g and Batch 2 contains 184 g. Together they contain 328 g, which exceeds 300 g.`,
       `**B) Solution B's concentration is more than 70% of Solution A's concentration.** — **TRUE**
 
 Solution B's concentration compared with A's is 12 ÷ 16 = 0.75, or 75%. Since 75% is more than 70%, the statement is true.
 
-**Watch.** “B as a percent of A” means divide B's 12 g/L by A's 16 g/L.`,
+**Watch.** “B as a percent of A” means divide B's 12 g/L by A's 16 g/L`,
       `**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B (with Solution A's 2 L taken as correct), the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.** — **TRUE**
 
-Keeping A at 2 L, the corrected B volume V satisfies 2(16) + 12V = 109. Thus V = 77/12 ≈ 6.4167 L, much closer to 6.4 L than 6.0 L.
-
-**Watch.** The recorded 109 g is the target total; replace only B's 6 L with V.`,
+Keeping A at 2 L, the corrected B volume V satisfies 2(16) + 12V = 109. Thus V = 77/12 ≈ 6.4167 L, much closer to 6.4 L than 6.0 L.`,
       `**D) Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.** — **FALSE**
 
-In a 3:1 A:B mixture, A is 3/4 of total volume and B is 1/4. Salt is 16(0.75V) + 12(0.25V) = 15V, so 15V = 130 gives V ≈ 8.67 L.
-
-**Why it fails.** The 3:1 ratio makes the mixture 75% A and 25% B, not 3 L and 1 L regardless of total volume.`,
+In a 3:1 A:B mixture, A is 3/4 of total volume and B is 1/4. Salt is 16(0.75V) + 12(0.25V) = 15V, so 15V = 130 gives V ≈ 8.67 L.`,
       `**E) Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did.** — **TRUE**
 
-Batch 1's 3:2 ratio makes A 3/5 = 60% of its volume. Batch 2's 5:1 ratio makes A 5/6 ≈ 83.3%, which is higher.
-
-**Watch.** Compare ratio shares, 3/5 and 5/6, rather than the raw A volumes 6 L and 10 L.`,
+Batch 1's 3:2 ratio makes A 3/5 = 60% of its volume. Batch 2's 5:1 ratio makes A 5/6 ≈ 83.3%, which is higher.`,
     ],
     difficulty_level: "4/5",
     sort_order: 42,
@@ -2623,29 +2549,27 @@ $$
     tactical_explanations: [
       `**A) If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed $6.00.** — **TRUE**
 
-Employee A's overtime rate is $17.50 + $8.50 = $26.00 per hour. Her 2.5 overtime hours pay $65.00, and 10% is $6.50, above $6.
-
-**Watch.** The bonus is based on all overtime pay, $65.00, not just the $8.50 premium portion.`,
+Employee A's overtime rate is $17.50 + $8.50 = $26.00 per hour. Her 2.5 overtime hours pay $65.00, and 10% is $6.50, above $6.`,
       `**B) Employee B's overtime pay (the portion earned specifically for hours beyond 40) is more than 40% of his total gross pay.** — **FALSE**
 
 Employee B's overtime pay is 7($26.00) = $182.00. As a share of $882, that is about 20.6%, well below 40%.
 
-**Why it fails.** Divide the $182 overtime amount by the full $882 gross pay to form the percentage.`,
+**Why it fails.** Divide the $182 overtime amount by the full $882 gross pay to form the percentage`,
       `**C) The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.** — **TRUE**
 
 At 45 base-rate hours each, each employee would earn 45($17.50) = $787.50, or $1,575 total. Their actual combined gross pay is $765 + $882 = $1,647, which is higher.
 
-**Watch.** The comparison scenario gives both employees the same 45-hour base-only calculation.`,
+**Watch.** The comparison scenario gives both employees the same 45-hour base-only calculation`,
       `**D) If the overtime premium were eliminated (overtime paid at the base rate) but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.** — **FALSE**
 
 A 15% higher base wage is $17.50(1.15) = $20.125 per hour. At that flat rate for 42.5 hours, A would earn about $855.31, which is greater than $765.
 
-**Why it fails.** Removing the premium does not mean removing payment for the overtime hours; all 42.5 hours still earn the raised base rate.`,
+**Why it fails.** Removing the premium does not mean removing payment for the overtime hours; all 42.5 hours still earn the raised base rate`,
       `**E) The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765).** — **TRUE**
 
 The overtime-hours ratio is 7 ÷ 2.5 = 2.8. The gross-pay ratio is $882 ÷ $765 ≈ 1.153, so the hours ratio is larger.
 
-**Watch.** Compare like ratios: B to A in overtime hours, then B to A in total gross pay.`,
+**Watch.** Compare like ratios: B to A in overtime hours, then B to A in total gross pay`,
     ],
     difficulty_level: "4/5",
     sort_order: 43,
@@ -2689,29 +2613,25 @@ $$
     tactical_explanations: [
       `**A) If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded $950.00.** — **TRUE**
 
-The changed Project 3 would cost 20($27) + 40($11) = $540 + $440 = $980. This is greater than $950.
-
-**Watch.** Keep the wire at its original 40 m while changing only wood to 20 m.`,
+The changed Project 3 would cost 20($27) + 40($11) = $540 + $440 = $980. This is greater than $950.`,
       `**B) The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.** — **TRUE**
 
 The price gap is $27 − $11 = $16. One hundred forty-five percent of the $11 wire price is 1.45($11) = $15.95, so $16 is greater.
 
-**Watch.** Convert 145% to 1.45 before multiplying by the wire price.`,
+**Watch.** Convert 145% to 1.45 before multiplying by the wire price`,
       `**C) Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs ($750.00 + $710.00).** — **FALSE**
 
 The combined materials cost 28($27) + 64($11) = $1,460. This equals $750 + $710 exactly, not less.
 
-**Why it fails.** Fixed per-meter pricing is linear, so joining the materials does not change their combined cost.`,
+**Why it fails.** Fixed per-meter pricing is linear, so joining the materials does not change their combined cost`,
       `**D) If wire fencing rose by $2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.** — **FALSE**
 
 At $13/m wire, Project 1 costs 18($27) + 24($13) = $798. The increase is $48, and $48 ÷ $750 = 6.4%, not more than 15%.
 
-**Why it fails.** Only the 24 wire meters increase by $2; the 18 wood meters remain at $27.`,
+**Why it fails.** Only the 24 wire meters increase by $2; the 18 wood meters remain at $27`,
       `**E) Project 3's cost per total meter installed (cost ÷ total meters of both materials) is higher than Project 1's cost per total meter installed.** — **FALSE**
 
-Project 3 averages $710 ÷ 50 = $14.20 per total meter. Project 1 averages $750 ÷ 42 ≈ $17.86 per total meter, so Project 3 is lower.
-
-**Why it fails.** Divide each project's cost by its total meters of both materials before comparing averages.`,
+Project 3 averages $710 ÷ 50 = $14.20 per total meter. Project 1 averages $750 ÷ 42 ≈ $17.86 per total meter, so Project 3 is lower.`,
     ],
     difficulty_level: "4/5",
     sort_order: 44,
@@ -2754,27 +2674,25 @@ $$
 
 Boat A travels at 48 km/h. Its time for 356 km is 356 ÷ 48 ≈ 7.42 hours, which is more than 7.
 
-**Watch.** Solo travel time is distance divided by that boat's speed.`,
+**Watch.** Solo travel time is distance divided by that boat's speed`,
       `**B) In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.** — **TRUE**
 
 In 2 hours, Boat A covers 2(48) = 96 km and Boat B covers 2(77) = 154 km. Their distance difference is 58 km, less than half of 250 km, which is 125 km.
 
-**Watch.** Find both meeting distances first, then subtract them before comparing with 125 km.`,
+**Watch.** Find both meeting distances first, then subtract them before comparing with 125 km`,
       `**C) If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.** — **FALSE**
 
 A 20% increase gives speeds 57.6 km/h and 92.4 km/h, for a 150 km/h closing speed. Closing 250 km then takes 250 ÷ 150 ≈ 1.667 hours, above 1.5 hours.
 
-**Why it fails.** Increasing both speeds by 20% changes the closing speed to 1.2(125) = 150, not enough to reach the claimed time.`,
+**Why it fails.** Increasing both speeds by 20% changes the closing speed to 1.2(125) = 150, not enough to reach the claimed time`,
       `**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.** — **TRUE**
 
-Their combined speed is 48 + 77 = 125 km/h. In 3 hours they cover 3(125) = 375 km, which exceeds 356 km.
-
-**Watch.** This asks for their combined distance, so use the sum of their speeds.`,
+Their combined speed is 48 + 77 = 125 km/h. In 3 hours they cover 3(125) = 375 km, which exceeds 356 km.`,
       `**E) Boat B's speed is more than 60% higher than Boat A's speed.** — **TRUE**
 
 Boat B is 77 − 48 = 29 km/h faster than Boat A. Relative to A, 29 ÷ 48 ≈ 60.4%, which is more than 60%.
 
-**Watch.** “Higher than Boat A” makes Boat A's 48 km/h the percentage denominator.`,
+**Watch.** “Higher than Boat A” makes Boat A's 48 km/h the percentage denominator`,
     ],
     difficulty_level: "4/5",
     sort_order: 45,
@@ -2820,29 +2738,25 @@ For craft moving toward each other, add their speeds to get the closing speed.`,
     tactical_explanations: [
       `**A) If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded $44,000.** — **FALSE**
 
-Wheat earns $95/t and Barley earns $120/t. 24,700 + 19,200 = $43,900, and $43,900 is not more than $44,000.
-
-**Why it fails.** For an “exceeds” claim, calculate the proposed scenario rather than rounding a near miss upward.`,
+Wheat earns $95/t and Barley earns $120/t. 24,700 + 19,200 = $43,900, and $43,900 is not more than $44,000.`,
       `**B) Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.** — **TRUE**
 
 Compare the per-tonne profit gap with 25% of Wheat's rate. The advantage is $25/t, while 25% of $95 is $23.75/t. Since 25 > 23.75, the advantage is more than 25%.
 
-**Watch.** A percentage comparison needs a reference amount: “25% of Wheat” means divide or multiply using Wheat's rate, not Barley's.`,
+**Watch.** A percentage comparison needs a reference amount: “25% of Wheat” means divide or multiply using Wheat's rate, not Barley's`,
       `**C) Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.** — **FALSE**
 
 Season 3's missing Wheat tonnage was reconstructed as 180 t. Season 3 produced 480 t and Season 2 produced 440 t. Since 480 is greater than 440, it is not less.
 
-**Why it fails.** Keep each season's row together before comparing totals; swapping a 300 with a 260 changes the conclusion.`,
+**Why it fails.** Keep each season's row together before comparing totals; swapping a 300 with a 260 changes the conclusion`,
       `**D) Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of $53,100 would have been understated by more than $3,500.** — **TRUE**
 
 The hypothetical changes only Season 3 Wheat from 180 t to 220 t. The hypothetical profit is $20,900 + $36,000 = $56,900. Its gap above the recorded $53,100 is $3,800, which is more than $3,500.
 
-**Watch.** When one quantity changes, recompute that row's total; do not treat the added 40 t as if it earned Barley's rate.`,
+**Watch.** When one quantity changes, recompute that row's total; do not treat the added 40 t as if it earned Barley's rate`,
       `**E) Season 2's profit per tonne of total output (total profit ÷ total tonnage) exceeds Season 1's profit per tonne of total output.** — **TRUE**
 
-Average profit per tonne is total profit divided by total tonnage. Season 1 is $105.00/t; Season 2 is about $109.77/t. The Season 2 average is higher.
-
-**Watch.** A combined average is total dollars divided by total tonnes, not the unweighted average of two crop rates.`,
+Average profit per tonne is total profit divided by total tonnage. Season 1 is $105.00/t; Season 2 is about $109.77/t. The Season 2 average is higher.`,
     ],
     difficulty_level: "4/5",
     sort_order: 46,
@@ -2896,22 +2810,22 @@ The present ages are elder 47 and younger 19. The ages will be 62 and 34, and tw
 
 The present age gap is compared with 45% of the elder's present age. The gap is 28 years and 45% of 47 is 21.15 years. Since 28 > 21.15, the condition holds.
 
-**Watch.** “Of the elder's age” fixes 47 as the denominator; using the younger age answers a different question.`,
+**Watch.** “Of the elder's age” fixes 47 as the denominator; using the younger age answers a different question`,
       `**C) Exactly 4.5 years from now (halfway to the nine-year mark), the elder employee will be more than 2.5 times the younger employee's age.** — **FALSE**
 
 Halfway to the nine-year mark is 4.5 years from now. The ratio is 51.5/23.5 ≈ 2.19, which is not more than 2.5.
 
-**Why it fails.** With fractional time, retain the .5 in both ages instead of rounding their ratio.`,
+**Why it fails.** With fractional time, retain the .5 in both ages instead of rounding their ratio`,
       `**D) Ten years ago, the sum of their ages was less than 40.** — **FALSE**
 
 Go back ten years from the present ages. The sum was 37 + 9 = 46, and 46 is not less than 40.
 
-**Why it fails.** “Ten years ago” applies to both people, even though the younger age becomes a single digit.`,
+**Why it fails.** “Ten years ago” applies to both people, even though the younger age becomes a single digit`,
       `**E) There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age.** — **TRUE**
 
 The original condition says the elder was three times the younger five years ago. Five years ago is indeed more than four years ago, so that required point in time exists.
 
-**Watch.** An existence claim can be settled by one stated example; there is no need to solve for another date.`,
+**Watch.** An existence claim can be settled by one stated example; there is no need to solve for another date`,
     ],
     difficulty_level: "4/5",
     sort_order: 47,
@@ -2961,29 +2875,23 @@ $$
     tactical_explanations: [
       `**A) If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual $1,350.60.** — **FALSE**
 
-Swapping the markup multipliers changes Product A to 1.18x and Product B to 1.32y. The total is $194.70 + $1,267.20 = $1,461.90, which is above the actual $1,350.60.
-
-**Why it fails.** A percentage markup is a multiplier, so 32% markup means 1.32 times wholesale, not 0.32 times wholesale.`,
+Swapping the markup multipliers changes Product A to 1.18x and Product B to 1.32y. The total is $194.70 + $1,267.20 = $1,461.90, which is above the actual $1,350.60.`,
       `**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.** — **TRUE**
 
 Compare each product's dollar markup per unit. A's markup is $17.60 and B's is $14.40. Then 14.40/17.60 ≈ 81.8%, which exceeds 80%.
 
-**Watch.** Compare the markup dollars, not the 18% and 32% labels alone; the wholesale costs differ.`,
+**Watch.** Compare the markup dollars, not the 18% and 32% labels alone; the wholesale costs differ`,
       `**C) Order 1's total retail markup (retail total minus wholesale cost total) exceeds $150.00.** — **TRUE**
 
-Order 1's markup is retail total minus wholesale total. Wholesale is $840.00, so the markup is $212.80. This exceeds $150.00.
-
-**Watch.** “Total markup” means a dollar difference between totals, not an average of the two markup percentages.`,
+Order 1's markup is retail total minus wholesale total. Wholesale is $840.00, so the markup is $212.80. This exceeds $150.00.`,
       `**D) If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than $280.00.** — **TRUE**
 
 Only Product B's quantity rises, by 3 units. One B sells for $94.40, so 3 more add $283.20. Since $283.20 > $280, the claim holds.
 
-**Watch.** For a one-item quantity change, find that item's retail unit price and multiply only by the change in quantity.`,
+**Watch.** For a one-item quantity change, find that item's retail unit price and multiply only by the change in quantity`,
       `**E) The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A.** — **TRUE**
 
-Compare B:A ratios before and after the unequal markups. Wholesale B:A ≈ 1.4545; retail B:A ≈ 1.3003. The wholesale ratio is larger.
-
-**Watch.** Ratios are unitless; use division consistently rather than comparing the two price differences.`,
+Compare B:A ratios before and after the unequal markups. Wholesale B:A ≈ 1.4545; retail B:A ≈ 1.3003. The wholesale ratio is larger.`,
     ],
     difficulty_level: "5/5",
     sort_order: 48,
@@ -3028,29 +2936,23 @@ $$
     tactical_explanations: [
       `**A) If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.** — **TRUE**
 
-A win is worth 7 points, so half a win is 3.5 points. The score would be 63 + 14 = 77, greater than the actual 75.
-
-**Watch.** “Half of a win” changes the draw value only; the win value remains 7.`,
+A win is worth 7 points, so half a win is 3.5 points. The score would be 63 + 14 = 77, greater than the actual 75.`,
       `**B) The Ravens earned more than 45% of their total points from draws alone.** — **FALSE**
 
 The Ravens earned 67 points total, including points from six draws. Draw points are 18, and 18/67 ≈ 26.9%, far below 45%.
 
-**Why it fails.** A contribution percentage uses the team's total points as the denominator, not its number of matches.`,
+**Why it fails.** A contribution percentage uses the team's total points as the denominator, not its number of matches`,
       `**C) Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.** — **TRUE**
 
-Apply the stated alternate scoring system to both records. The Falcons score 22 and the Ravens score 20, so the Falcons remain ahead.
-
-**Watch.** Re-score both teams from their wins and draws; do not scale the original 75 and 67 totals.`,
+Apply the stated alternate scoring system to both records. The Falcons score 22 and the Ravens score 20, so the Falcons remain ahead.`,
       `**D) The Falcons' win-to-draw point contribution ratio (points from wins ÷ points from draws) exceeds 15.** — **FALSE**
 
-Compare the Falcons' points from wins with their points from draws. The contributions are 63 and 12, giving 63/12 = 5.25. That does not exceed 15.
-
-**Why it fails.** A ratio of contributions uses point totals, not the raw 9 wins to 4 draws record.`,
+Compare the Falcons' points from wins with their points from draws. The contributions are 63 and 12, giving 63/12 = 5.25. That does not exceed 15.`,
       `**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total.** — **FALSE**
 
 Three draws become wins, leaving 12 wins and 1 draw. The revised score is 87, so the increase is 12 points, not more than 20.
 
-**Why it fails.** Converting a draw to a win adds 7 - 3 = 4 points each time, a quick way to track this change.`,
+**Why it fails.** Converting a draw to a win adds 7 - 3 = 4 points each time, a quick way to track this change`,
     ],
     difficulty_level: "5/5",
     sort_order: 49,
@@ -3098,29 +3000,25 @@ $$
     tactical_explanations: [
       `**A) If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.** — **TRUE**
 
-Use Metal A's 7.6 kg/L and Metal B's 11.4 kg/L in the altered Batch 1. The mass is 91.2 + 114 = 205.2 kg, which exceeds 200 kg.
-
-**Watch.** The hypothetical changes B from 8 L to 10 L, so leave A's 12 L unchanged.`,
+Use Metal A's 7.6 kg/L and Metal B's 11.4 kg/L in the altered Batch 1. The mass is 91.2 + 114 = 205.2 kg, which exceeds 200 kg.`,
       `**B) Metal B's density is more than 50% greater than Metal A's density.** — **FALSE**
 
 “More than 50% greater” is stricter than being exactly 50% greater. The increase is 3.8/7.6 = 0.50 = 50% exactly, not more than 50%.
 
-**Why it fails.** For “greater than” language, equality fails the claim even when the result looks close.`,
+**Why it fails.** For “greater than” language, equality fails the claim even when the result looks close`,
       `**C) The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.** — **TRUE**
 
 Batch 3's predicted mass is 140.6 kg while its recorded mass is 147.0 kg. This is about 4.35%, which is more than 4%.
 
-**Watch.** Audit percentages here are measured against the recorded total specified in the claim.`,
+**Watch.** Audit percentages here are measured against the recorded total specified in the claim`,
       `**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L (Metal B unchanged at 6 L), the predicted mass would come within 2 kg of the recorded 147.0 kg.** — **FALSE**
 
 Replace Batch 3's converted 9.5 L of A with 10 L while keeping B at 6 L. The result is 76 + 68.4 = 144.4 kg. Its distance from 147.0 kg is 2.6 kg, not within 2 kg.
 
-**Why it fails.** “Within 2 kg” means an absolute gap of 2 kg or less, not a rounded display value.`,
+**Why it fails.** “Within 2 kg” means an absolute gap of 2 kg or less, not a rounded display value`,
       `**E) Combining Batch 1 and Batch 2 into a single hypothetical batch (17 L Metal A + 23 L Metal B) would yield a total mass equal to the sum of their individual masses.** — **TRUE**
 
-Combining batches adds each metal's volumes before applying the same densities. This gives 129.2 + 262.2 = 391.4 kg, exactly equal to 182.4 + 209.0.
-
-**Watch.** With fixed density, mass is linear: pooling volumes and pooling masses give the same total.`,
+Combining batches adds each metal's volumes before applying the same densities. This gives 129.2 + 262.2 = 391.4 kg, exactly equal to 182.4 + 209.0.`,
     ],
     difficulty_level: "5/5",
     sort_order: 50,
@@ -3167,27 +3065,27 @@ $$
 
 The fee formula is 0.016(AUM) + 1,200. The fee is $14,800, and 14,800/850,000 ≈ 1.7412%. That is less than 1.75%.
 
-**Watch.** The flat retainer makes the effective rate different from the stated 1.6% management rate.`,
+**Watch.** The flat retainer makes the effective rate different from the stated 1.6% management rate`,
       `**B) The flat retainer accounts for more than 10% of Client 2's total fee.** — **TRUE**
 
 Compare the $1,200 retainer with Client 2's $10,800 total fee. The share is about 11.11%, which exceeds 10%.
 
-**Watch.** Use the total fee in the denominator when a claim asks what portion of that fee the retainer represents.`,
+**Watch.** Use the total fee in the denominator when a claim asks what portion of that fee the retainer represents`,
       `**C) If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM $750,000) would decrease compared to its actual amount.** — **TRUE**
 
 Client 1 has $750,000 AUM; both the rate and retainer are changed in the hypothetical. Actual fee = $13,200; revised fee = $12,900. The revised fee is lower.
 
-**Watch.** Percentage points are decimal-rate changes: 1.6% minus 0.2 points is 1.4%, or 0.014.`,
+**Watch.** Percentage points are decimal-rate changes: 1.6% minus 0.2 points is 1.4%, or 0.014`,
       `**D) The percentage-point difference in effective fee rate (total fee ÷ AUM) between Client 1 and Client 2 is more than 0.05 percentage points.** — **FALSE**
 
 Effective fee rates include the retainer and therefore differ by client. The rates are 1.76% and 1.80%, a difference of 0.04 percentage points. That is not more than 0.05.
 
-**Why it fails.** Subtract percentages in percentage points; 1.80% - 1.76% is 0.04 points, not 4%.`,
+**Why it fails.** Subtract percentages in percentage points; 1.80% - 1.76% is 0.04 points, not 4%`,
       `**E) A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee.** — **FALSE**
 
 Triple Client 2's AUM is $1,800,000, but the $1,200 retainer is not tripled. The new fee is $30,000, while triple Client 2's fee is $32,400. It is not more.
 
-**Why it fails.** Fixed charges break simple scaling: tripling the input does not triple a total that includes a one-time retainer.`,
+**Why it fails.** Fixed charges break simple scaling: tripling the input does not triple a total that includes a one-time retainer`,
     ],
     difficulty_level: "5/5",
     sort_order: 51,
@@ -3235,27 +3133,23 @@ $$
 
 The unknowns are concentrations: A = 8.4 mg/mL and B = 15.6 mg/mL. The increase is 7.2/8.4 ≈ 0.8571 = 85.71%, which is more than 85%.
 
-**Watch.** Concentration comparisons use mg/mL values directly; they are not mixture ratios or amounts of suspension.`,
+**Watch.** Concentration comparisons use mg/mL values directly; they are not mixture ratios or amounts of suspension`,
       `**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.** — **FALSE**
 
 Batch 3's A volume is 0.32 L = 320 mL, so its predicted content is 320(8.4) + 450(15.6) = 9,708 mg. The gap is 8 mg, and 8/9,700 ≈ 0.0825%, far below 1%.
 
-**Why it fails.** Convert liters to milliliters before multiplying by mg/mL: 0.32 L is 320 mL, not 0.32 mL.`,
+**Why it fails.** Convert liters to milliliters before multiplying by mg/mL: 0.32 L is 320 mL, not 0.32 mL`,
       `**C) If Batch 1's Suspension B volume were doubled (Suspension A unchanged at 500 mL), the new total content would exceed 13,500 mg.** — **TRUE**
 
-The hypothetical doubles Batch 1's B volume from 300 mL to 600 mL, while A remains 500 mL. The content is 4,200 + 9,360 = 13,560 mg, which exceeds 13,500 mg.
-
-**Watch.** Doubling a volume doubles only that suspension's mg contribution; A's contribution stays at 4,200 mg.`,
+The hypothetical doubles Batch 1's B volume from 300 mL to 600 mL, while A remains 500 mL. The content is 4,200 + 9,360 = 13,560 mg, which exceeds 13,500 mg.`,
       `**D) The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.** — **TRUE**
 
 Pool the recorded contents of Batches 1 and 2, then compare with twice Batch 2 alone. Pooled content is 21,480 mg and the benchmark is 25,200 mg. Since 21,480 < 25,200, the claim holds.
 
-**Watch.** This comparison uses total milligrams, so add content values—not concentration labels or volumes.`,
+**Watch.** This comparison uses total milligrams, so add content values—not concentration labels or volumes`,
       `**E) Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did.** — **TRUE**
 
-Compare what fraction of each batch's total volume is Suspension B. Batch 2 is about 77.78% B; Batch 3 is 450/770 ≈ 58.44% B. Batch 2's share is higher.
-
-**Watch.** For a volume proportion, use B volume divided by total batch volume after converting every volume to the same unit.`,
+Compare what fraction of each batch's total volume is Suspension B. Batch 2 is about 77.78% B; Batch 3 is 450/770 ≈ 58.44% B. Batch 2's share is higher.`,
     ],
     difficulty_level: "5/5",
     sort_order: 52,
@@ -3302,29 +3196,25 @@ $$
     tactical_explanations: [
       `**A) The total waste-related cost on Invoice 1 (the cost of the studs and drywall beyond the usable amounts) exceeds $700.00.** — **FALSE**
 
-Job 1 orders 24 waste studs and 12 waste drywall sheets beyond the usable amounts. Waste studs cost $108 and waste sheets cost $456, for $564 total. That does not exceed $700.
-
-**Why it fails.** Find waste quantities from the allowances separately before attaching each material's unit price.`,
+Job 1 orders 24 waste studs and 12 waste drywall sheets beyond the usable amounts. Waste studs cost $108 and waste sheets cost $456, for $564 total. That does not exceed $700.`,
       `**B) If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than $150.00.** — **TRUE**
 
 Reducing drywall waste to 5% changes Job 2's ordered drywall to 175(1.05) = 183.75 sheets. The new total is $8,746.50, a decrease of $199.50 from $8,946.00. This is more than $150.
 
-**Watch.** The stud allowance remains 12%, so keep the 392 ordered studs in the revised invoice.`,
+**Watch.** The stud allowance remains 12%, so keep the 392 ordered studs in the revised invoice`,
       `**C) Job 2's usable-material cost (studs and drywall priced at their per-unit rates, using only the 350 usable studs and 175 usable sheets, ignoring waste) is more than 90% of Invoice 2's actual as-ordered total.** — **TRUE**
 
 The usable-only cost excludes waste but uses Job 2's 350 studs and 175 sheets. Usable cost is $8,225, while 90% of the invoice is $8,051.40. Since $8,225 is higher, the claim is true.
 
-**Watch.** “More than 90%” is tested against 90% of the actual invoice, not by subtracting 10% of usable cost.`,
+**Watch.** “More than 90%” is tested against 90% of the actual invoice, not by subtracting 10% of usable cost`,
       `**D) The drywall price (y) is more than 8 times the stud price (x).** — **TRUE**
 
 Compare drywall's unit price with eight times the stud's unit price. 38/4.50 ≈ 8.44, which is more than 8.
 
-**Watch.** “More than 8 times” is a multiplicative test; dividing the two prices avoids comparing unlike dollar gaps.`,
+**Watch.** “More than 8 times” is a multiplicative test; dividing the two prices avoids comparing unlike dollar gaps`,
       `**E) Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total.** — **TRUE**
 
-Each job's waste percentage is waste cost divided by usable-material cost. Job 1 increases by about 8.545%; Job 2 by about 8.767%. Job 1's increase is smaller.
-
-**Watch.** Use each job's own usable subtotal as its percentage base; the dollar waste amounts alone are not comparable percentages.`,
+Each job's waste percentage is waste cost divided by usable-material cost. Job 1 increases by about 8.545%; Job 2 by about 8.767%. Job 1's increase is smaller.`,
     ],
     difficulty_level: "5/5",
     sort_order: 53,
@@ -3372,27 +3262,25 @@ $$
 
 The scale factor is 3.5, compared with 3.4. The excess is about 2.94%, which is more than 2.5%.
 
-**Watch.** “Exceeds 3.4 by” asks for the difference relative to 3.4, not relative to 3.5.`,
+**Watch.** “Exceeds 3.4 by” asks for the difference relative to 3.4, not relative to 3.5`,
       `**B) If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.** — **TRUE**
 
-Double the offset 13.5 to 27 while keeping scale 3.5. The value is 70+27 = 97, which exceeds 95.
-
-**Watch.** In an affine rule, changing the offset shifts the output by that amount regardless of the reading.`,
+Double the offset 13.5 to 27 while keeping scale 3.5. The value is 70+27 = 97, which exceeds 95.`,
       `**C) The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.** — **FALSE**
 
 At reading 45.0, the curve predicts 171.00 while the reference is 172.20. The difference is -1.20, so the prediction is lower, not higher; it cannot exceed the reference by more than 1%.
 
-**Why it fails.** Keep the sign of an audit difference; an underprediction cannot satisfy an “exceeding” statement.`,
+**Why it fails.** Keep the sign of an audit difference; an underprediction cannot satisfy an “exceeding” statement`,
       `**D) The percentage increase in true value between Point 1 and Point 2 is more than 100%.** — **TRUE**
 
 Compare the change from Point 1's 56.90 to Point 2's 124.45 with Point 1. The increase is 67.55/56.90 ≈ 118.7%, which exceeds 100%.
 
-**Watch.** Percentage increase is based on the starting value, Point 1, not the later value.`,
+**Watch.** Percentage increase is based on the starting value, Point 1, not the later value`,
       `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value (56.90).** — **FALSE**
 
 Predict the true value at reading 8.0 and compare it with half of 56.90. The prediction is 41.5; half of Point 1 is 28.45. Since 41.5 is not less than 28.45, the claim fails.
 
-**Why it fails.** Calculate the requested half separately; do not halve the reading and assume the offset halves too.`,
+**Why it fails.** Calculate the requested half separately; do not halve the reading and assume the offset halves too`,
     ],
     difficulty_level: "5/5",
     sort_order: 54,
@@ -3439,27 +3327,23 @@ $$
 
 Coffee costs $6.20/kg and Cocoa costs $4.85/kg. The premium is 1.35/4.85 ≈ 27.84%, which is more than 25%.
 
-**Watch.** “More than 25% more than Cocoa” uses Cocoa, the lower reference price, as the denominator.`,
+**Watch.** “More than 25% more than Cocoa” uses Cocoa, the lower reference price, as the denominator`,
       `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.** — **TRUE**
 
 Shipment 1 has 312 kg of Coffee out of its 3:2 split. Coffee contributes $1,934.40, and $1,934.40/$2,943.20 ≈ 65.72%. This exceeds 65%.
 
-**Watch.** Cost share is not weight share: multiply Coffee's kilograms by its own price before dividing by shipment cost.`,
+**Watch.** Cost share is not weight share: multiply Coffee's kilograms by its own price before dividing by shipment cost`,
       `**C) If Shipment 2's ratio had instead been 1:1 (400 kg of each) rather than 5:3, its total cost would have been lower than the actual $4,555.00.** — **TRUE**
 
-A 1:1 split of 800 kg gives 400 kg of each commodity. The hypothetical cost is $2,480+$1,940 = $4,420, less than $4,555.
-
-**Watch.** Turn a 1:1 ratio into equal half-weights before pricing the shipment.`,
+A 1:1 split of 800 kg gives 400 kg of each commodity. The hypothetical cost is $2,480+$1,940 = $4,420, less than $4,555.`,
       `**D) The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.** — **FALSE**
 
-Add the Coffee kilograms and Cocoa kilograms across both shipments, then price each total. Coffee costs $5,034.40 in total; Cocoa costs $2,463.80. Cocoa does not exceed Coffee.
-
-**Why it fails.** Across shipments, add quantities of the same commodity first; do not compare the two per-kg prices alone.`,
+Add the Coffee kilograms and Cocoa kilograms across both shipments, then price each total. Coffee costs $5,034.40 in total; Cocoa costs $2,463.80. Cocoa does not exceed Coffee.`,
       `**E) The price gap between Coffee and Cocoa (x - y) is less than 30% of Coffee's price.** — **TRUE**
 
 Compare the $1.35 price gap with 30% of Coffee's $6.20 price. The gap is $1.35 and the benchmark is $1.86. Since 1.35 < 1.86, the claim is true.
 
-**Watch.** This statement names Coffee as the reference, which differs from a “more than Cocoa” percentage comparison.`,
+**Watch.** This statement names Coffee as the reference, which differs from a “more than Cocoa” percentage comparison`,
     ],
     difficulty_level: "5/5",
     sort_order: 55,
@@ -3511,27 +3395,23 @@ $$
 
 Trucks use 32 L/100 km and Vans use 18 L/100 km. The excess is 14/18 ≈ 77.78%, which is more than 75%.
 
-**Watch.** Compare consumption rates in the same L/100 km unit; do not invert them into km/L midway.`,
+**Watch.** Compare consumption rates in the same L/100 km unit; do not invert them into km/L midway`,
       `**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.** — **FALSE**
 
 Route 3's predicted fuel is 152 L and its recorded fuel is 155 L. The difference is 3 L, or about 1.94% of 155 L. That is not more than 2%.
 
-**Why it fails.** “Below recorded” fixes 155 L as the percentage base, not the predicted 152 L.`,
+**Why it fails.** “Below recorded” fixes 155 L as the percentage base, not the predicted 152 L`,
       `**C) If Route 1's Van distance had instead been 900 km (Truck unchanged at 850 km), total fuel would have exceeded 430 L.** — **TRUE**
 
-Convert the hypothetical distances to hundreds of km for rates given per 100 km. The total is 272+162 = 434 L, which exceeds 430 L.
-
-**Watch.** A rate per 100 km needs distance divided by 100: 850 km becomes 8.5 rate-units.`,
+Convert the hypothetical distances to hundreds of km for rates given per 100 km. The total is 272+162 = 434 L, which exceeds 430 L.`,
       `**D) Route 2's fleet-wide average fuel efficiency (total fuel ÷ total distance, in L/100km) is closer to the Van's individual rate than to the Truck's individual rate.** — **TRUE**
 
-Route 2's combined fuel rate is found from its total fuel and total distance. The rate is 23 L/100 km. It is 5 from the Van rate 18 and 9 from the Truck rate 32, so it is closer to Van.
-
-**Watch.** A fleet average must use total fuel divided by total distance, not the simple mean (32+18)/2.`,
+Route 2's combined fuel rate is found from its total fuel and total distance. The rate is 23 L/100 km. It is 5 from the Van rate 18 and 9 from the Truck rate 32, so it is closer to Van.`,
       `**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance (850 + 620 = 1,470 km) at its own rate.** — **TRUE**
 
 Route 1's actual two-vehicle fuel is compared with two separate full-distance runs. This hypothetical sum is 470.4+264.6 = 735 L, greater than Route 1's actual 383.6 L.
 
-**Watch.** The comparison deliberately counts the combined distance twice—once for each vehicle type—so do not merge it into one 1,470 km run.`,
+**Watch.** The comparison deliberately counts the combined distance twice—once for each vehicle type—so do not merge it into one 1,470 km run`,
     ],
     difficulty_level: "5/5",
     sort_order: 56,
@@ -3578,27 +3458,23 @@ $$
 
 Bonds earn 5.4% and Equities earn 6.6%. The advantage is 1.2/5.4 ≈ 22.22%, which is more than 20%.
 
-**Watch.** The phrase “of the bond rate” makes 5.4%, not 6.6%, the reference for the relative comparison.`,
+**Watch.** The phrase “of the bond rate” makes 5.4%, not 6.6%, the reference for the relative comparison`,
       `**B) Under the current allocation, the blended rate (total return ÷ total fund) is less than 6%.** — **TRUE**
 
 The current allocation returns $2,646 on a $45,000 fund. The blended rate is 5.88%, which is less than 6%.
 
-**Watch.** A blended investment rate uses the fund's total return over its total principal.`,
+**Watch.** A blended investment rate uses the fund's total return over its total principal`,
       `**C) If the entire $45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns ($2,646.00 + $2,754.00 = $5,400.00).** — **FALSE**
 
-Put all $45,000 in Equities at 6.6% and compare with the sum of both described returns. The all-equity return is $2,970, while the benchmark is $5,400. It does not exceed it.
-
-**Why it fails.** The $5,400 benchmark combines two separate allocation scenarios, so it is much larger than one year's return from one allocation.`,
+Put all $45,000 in Equities at 6.6% and compare with the sum of both described returns. The all-equity return is $2,970, while the benchmark is $5,400. It does not exceed it.`,
       `**D) A 50/50 split ($22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.** — **TRUE**
 
-A 50/50 allocation places $22,500 in each portfolio. Both calculations give $2,700 exactly.
-
-**Watch.** Because the two allocations swap equal dollar amounts, their average corresponds to the equal split.`,
+A 50/50 allocation places $22,500 in each portfolio. Both calculations give $2,700 exactly.`,
       `**E) The bond rate is more than 80% of the equity rate.** — **TRUE**
 
 Test the Bond rate as a percentage of the Equity rate. This is about 81.8%, which is more than 80%.
 
-**Watch.** “Bond is what percent of Equity” requires Bond divided by Equity, not the reverse.`,
+**Watch.** “Bond is what percent of Equity” requires Bond divided by Equity, not the reverse`,
     ],
     difficulty_level: "5/5",
     sort_order: 57,
@@ -3650,27 +3526,27 @@ $$
 
 The Renters policy's premium reconstructs 25 units of $1,000 coverage. The coverage is $25,000, which is less than $30,000.
 
-**Watch.** The solved C = 25 is measured in thousands of dollars, so translate its unit before reporting coverage.`,
+**Watch.** The solved C = 25 is measured in thousands of dollars, so translate its unit before reporting coverage`,
       `**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.** — **FALSE**
 
 The administrative fee is $214.70 and the Auto premium is $612.50. The share is about 35.05%, which does not exceed 60%.
 
-**Why it fails.** Separate the fixed fee from the total before converting it to a percentage of the premium.`,
+**Why it fails.** Separate the fixed fee from the total before converting it to a percentage of the premium`,
       `**C) If the rate per $1,000 of coverage increased by 10% (fixed fee unchanged), the Home policy's premium would increase by more than $75.00.** — **TRUE**
 
 Only the per-$1,000 rate rises 10%; the fixed $214.70 fee stays unchanged. The new premium is $1,295.78, an increase of $98.28 from $1,197.50. This is more than $75.
 
-**Watch.** Apply the 10% increase to the rate component, not to the whole premium containing the fixed fee.`,
+**Watch.** Apply the 10% increase to the rate component, not to the whole premium containing the fixed fee`,
       `**D) The Home policy's premium per $1,000 of coverage is more than twice the Auto policy's premium per $1,000 of coverage.** — **FALSE**
 
 Divide each total premium by its coverage units to compare premium per $1,000. Home is about $5.70 per $1,000 and Auto about $7.21 per $1,000. Home is not more than twice Auto.
 
-**Why it fails.** A fixed fee inflates the per-unit average of smaller policies, so do not confuse these averages with the quoted variable rate.`,
+**Why it fails.** A fixed fee inflates the per-unit average of smaller policies, so do not confuse these averages with the quoted variable rate`,
       `**E) Combining the Auto and Home coverage into a single hypothetical policy (295 units of $1,000 coverage total) would cost less than the sum of their separate premiums ($612.50 + $1,197.50 = $1,810.00).** — **TRUE**
 
 Combine 85 and 210 coverage units, paying the fixed fee once. The result is $1,595.30, which is less than $1,810.00 for two separate policies.
 
-**Watch.** Combining policies saves exactly one administrative fee; the coverage-rate portion is unchanged.`,
+**Watch.** Combining policies saves exactly one administrative fee; the coverage-rate portion is unchanged`,
     ],
     difficulty_level: "5/5",
     sort_order: 58,
@@ -3719,27 +3595,21 @@ $$
 
 Species A grows by 72/year and B by 36/year over four years after Year 2. A = 898 and B = 874, making a gap of 24. Since 24 > 20, the claim holds.
 
-**Watch.** From Year 2 to Year 6 there are four growth intervals, not six.`,
+**Watch.** From Year 2 to Year 6 there are four growth intervals, not six`,
       `**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.** — **TRUE**
 
 In the hypothetical, B uses A's actual 72/year growth rate. B would be 1,018 and the combined total 1,916. The increase over 1,772 is 144, more than 140.
 
-**Watch.** Keep Species A at its actual Year 6 value; the hypothetical changes B's growth rate only.`,
+**Watch.** Keep Species A at its actual Year 6 value; the hypothetical changes B's growth rate only`,
       `**C) The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth : Species B's growth) is greater than 2.5 : 1.** — **FALSE**
 
-Compare total growth over the same four-year interval. The growths are 288 and 144, so the ratio is 2:1. It is not greater than 2.5:1.
-
-**Why it fails.** A shared time interval cancels from a growth ratio, leaving the annual-rate ratio 72:36.`,
+Compare total growth over the same four-year interval. The growths are 288 and 144, so the ratio is 2:1. It is not greater than 2.5:1.`,
       `**D) At some point between Year 2 and Year 6, the two species had equal populations.** — **TRUE**
 
-B leads at Year 2, but A leads at Year 6 under constant linear change. The difference changes from -120 to +24. A linear difference that changes sign must equal zero between those times.
-
-**Watch.** A sign change is enough to establish a crossover for linear growth; an exact date is not required.`,
+B leads at Year 2, but A leads at Year 6 under constant linear change. The difference changes from -120 to +24. A linear difference that changes sign must equal zero between those times.`,
       `**E) Species A overtakes Species B in total population size before Year 5.** — **FALSE**
 
-Solve for when the two population formulas are equal. 36(t-2)=120, so t≈5.33. The crossover is after Year 5, not before.
-
-**Why it fails.** Measure time from the stated Year 2 baseline; this avoids accidentally using the wrong starting populations.`,
+Solve for when the two population formulas are equal. 36(t-2)=120, so t≈5.33. The crossover is after Year 5, not before.`,
     ],
     difficulty_level: "5/5",
     sort_order: 59,
@@ -3785,27 +3655,23 @@ $$
 
 Plant A produces 145 MWh/hr and Plant B produces 98 MWh/hr. The excess is 47/98 ≈ 47.96%, which is more than 45%.
 
-**Watch.** “More than B's rate” means use B's 98 MWh/hr as the percentage reference.`,
+**Watch.** “More than B's rate” means use B's 98 MWh/hr as the percentage reference`,
       `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.** — **TRUE**
 
 Day 3's predicted output is 3,543 MWh and the recorded output is 3,553 MWh. The discrepancy is about 0.2815%, which is less than 0.3%.
 
-**Watch.** Convert 1,020 minutes to 17 hours before rate × time; otherwise the day-total units will be wrong.`,
+**Watch.** Convert 1,020 minutes to 17 hours before rate × time; otherwise the day-total units will be wrong`,
       `**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2 (29 hours), while Plant B operated for the combined time Plant A actually did (36 hours), the grand total would exceed the actual combined Day 1 + Day 2 total (8,062 MWh).** — **FALSE**
 
-The hypothetical gives A 29 hours and B 36 hours, reversing the actual combined hours. The output is 4,205+3,528 = 7,733 MWh, less than the actual 8,062 MWh.
-
-**Why it fails.** Attach each swapped time to its new plant rate; the higher-output plant loses hours in this scenario.`,
+The hypothetical gives A 29 hours and B 36 hours, reversing the actual combined hours. The output is 4,205+3,528 = 7,733 MWh, less than the actual 8,062 MWh.`,
       `**D) The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.** — **TRUE**
 
 Compare the two-plant combined rate with 2.4 times Plant B's rate. The combined rate is 243 MWh/hr, and the benchmark is 235.2 MWh/hr. Since 243 > 235.2, the claim is true.
 
-**Watch.** This asks for a sum of rates at the same time, not a time-weighted average output rate.`,
+**Watch.** This asks for a sum of rates at the same time, not a time-weighted average output rate`,
       `**E) Across all three days combined (using the recorded Day 3 value), total energy production exceeds 11,600 MWh.** — **TRUE**
 
-Add the recorded daily outputs across all three days. The three-day total is 11,615 MWh, which exceeds 11,600 MWh.
-
-**Watch.** The statement specifies recorded Day 3 output, so use 3,553 rather than the model's predicted 3,543.`,
+Add the recorded daily outputs across all three days. The three-day total is 11,615 MWh, which exceeds 11,600 MWh.`,
     ],
     difficulty_level: "5/5",
     sort_order: 60,
