@@ -9,6 +9,8 @@ from pathlib import Path
 
 import pymupdf
 
+from ch5_table_fixes import CONTEXT_FIXES, TABLE_MARKDOWN, sanitize_table_rows
+
 PDF = Path(r"c:\Users\bubli\Downloads\Linear_Equations_All_60_Tasks_Reranked-1.pdf")
 ROOT = Path(r"C:\Users\bubli\Projects\bbe-school-fixed")
 RAW_OUT = ROOT / "textbook" / "output" / "linear_eq_60_raw.json"
@@ -1017,7 +1019,7 @@ for num in range(1, 61):
             seed_bboxes.append(t.bbox)
 
     tables = extract_stem_tables(page, top, bottom)
-    tables = [normalize_sectioned_table(tab) for tab in tables]
+    tables = [sanitize_table_rows(normalize_sectioned_table(tab)) for tab in tables]
     prose_bboxes = []
     for b in seed_bboxes:
         prose_bboxes.append((b[0], b[1], b[2], min(bottom, b[3] + 60)))
@@ -1065,6 +1067,10 @@ for num in range(1, 61):
 
     # Context = narrative only (no forced Variables / Let x = ...)
     context = prose.strip()
+    if num in CONTEXT_FIXES:
+        context = CONTEXT_FIXES[num]
+    if num in TABLE_MARKDOWN:
+        tables_md = TABLE_MARKDOWN[num].strip()
 
     tasks.append(
         {

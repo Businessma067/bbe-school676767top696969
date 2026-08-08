@@ -36,6 +36,22 @@ statement_explanation = ns["statement_explanation"]
 build_overview = ns["build_overview"]
 
 tasks = json.loads(RAW.read_text(encoding="utf-8"))
+
+# Apply table/context hard fixes (same source of truth as PDF rebuild)
+import sys
+
+sys.path.insert(0, str(ROOT / "textbook" / "output"))
+from ch5_table_fixes import CONTEXT_FIXES, TABLE_MARKDOWN  # noqa: E402
+
+for t in tasks:
+    n = int(t["num"])
+    if n in CONTEXT_FIXES:
+        t["context"] = CONTEXT_FIXES[n]
+    if n in TABLE_MARKDOWN:
+        t["tables_markdown"] = TABLE_MARKDOWN[n].strip()
+RAW.write_text(json.dumps(tasks, ensure_ascii=False, indent=2), encoding="utf-8")
+print("applied table/context fixes to raw:", sorted(set(CONTEXT_FIXES) | set(TABLE_MARKDOWN)))
+
 overrides: dict[str, dict] = {}
 for path in OVERRIDE_PATHS:
     if not path.exists():

@@ -639,7 +639,7 @@ $$
     id: "math-5-12",
     case_id: "MATH 5.12",
     title: `Northgate Books Monthly Sales Report`,
-    context: `Paperback units sold Hardcover units sold Combined revenue (paperback + hardcover) Full-time staff on payroll Loyalty-member share of purchases Memo — Pricing Desk: "Hardcover editions are priced exactly $5 above the paperback price this quarter, across the board."`,
+    context: `Memo — Pricing Desk: "Hardcover editions are priced exactly $5 above the paperback price this quarter, across the board."`,
     tables_markdown: `| Metric | Value |
 | --- | --- |
 | Paperback units sold | 400 |
@@ -843,13 +843,12 @@ $$
     id: "math-5-15",
     case_id: "MATH 5.15",
     title: `Crestwood Distribution Centre, Inventory Valuation`,
-    context: `$4,700 (projected) Warehouse floor space: 12,000 sq ft. On-site staff: 9. (Not needed below.)`,
+    context: `Only the January and February rows report actual recorded inventory values. March is a forecast row and cannot be used to solve for today's unit costs. Warehouse floor space and on-site staff are distractors (not needed below).`,
     tables_markdown: `| Period | Type | Comp. A (units) | Comp. B (units) | Total Value |
 | --- | --- | --- | --- | --- |
 | January | Actual | 150 | 90 | $3,150 |
 | February | Actual | 130 | 140 | $3,660 |
-| March | Forecast | 200 | 100 $4,700 | (projected) |
-| Warehouse floor space: | 12,000 sq ft. On-site staff: 9. (Not | needed below.) |  |  |`,
+| March | Forecast | 200 | 100 | $4,700 (projected) |`,
     statements: [
       `Component A's unit cost is $12.`,
       `Component B's unit cost is $18.`,
@@ -2988,7 +2987,7 @@ $$
 | --- | --- | --- | --- |
 | Batch 1 | 12 L | 8 L | 182.4 kg |
 | Batch 2 | 5 L | 15 L | 209.0 kg |
-| Batch 3 (audit) 9.5 | L (conv.) | 6 L 147.0 kg | (recorded) |`,
+| Batch 3 (audit) | 9.5 L (conv.) | 6 L | 147.0 kg (recorded) |`,
     statements: [
       `If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.`,
       `Metal B's density is more than 50% greater than Metal A's density.`,
@@ -3119,7 +3118,7 @@ $$
 | --- | --- | --- | --- |
 | Batch 1 | 500 mL | 300 mL | 8,880 mg |
 | Batch 2 | 200 mL | 700 mL | 12,600 mg |
-| Batch 3 (QC) 0.32 | L (=320 mL) | 450 mL 9,700 | mg (recorded) |`,
+| Batch 3 (QC) | 0.32 L (=320 mL) | 450 mL | 9,700 mg (recorded) |`,
     statements: [
       `Suspension B's concentration is more than 85% higher than Suspension A's concentration.`,
       `Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.`,
@@ -3244,11 +3243,11 @@ $$
     case_id: "MATH 5.54",
     title: `Precision Dynamics — Sensor Calibration Curve Reconstruction`,
     context: `A sensor's raw reading converts to a true value via True Value = (scale factor)×(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check.`,
-    tables_markdown: `| Point | Reading | Reference True Value Role | Role |
+    tables_markdown: `| Point | Reading | Reference True Value | Role |
 | --- | --- | --- | --- |
-| Point 1 | 12.4 | 56.90 Calibration |  |
-| Point 2 | 31.7 | 124.45 Calibration |  |
-| Point 3 | 45.0 | 172.20 Verification (recorded) |  |`,
+| Point 1 | 12.4 | 56.90 | Calibration |
+| Point 2 | 31.7 | 124.45 | Calibration |
+| Point 3 | 45.0 | 172.20 | Verification (recorded) |`,
     statements: [
       `The scale factor exceeds 3.4 by more than 2.5%.`,
       `If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.`,
@@ -3379,9 +3378,9 @@ $$
     context: `Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km).`,
     tables_markdown: `| Route | Truck | Van | Total Fuel |
 | --- | --- | --- | --- |
-| Route 1 850 | km 620 | km | 383.6 L |
-| Route 2 500 | km 900 | km | 322.0 L |
-| Route 3 (audit) 155.3 mi (≈250 | km) 400 | km 155.0 L | (recorded) |`,
+| Route 1 | 850 km | 620 km | 383.6 L |
+| Route 2 | 500 km | 900 km | 322.0 L |
+| Route 3 (audit) | 155.3 mi (≈250 km) | 400 km | 155.0 L (recorded) |`,
     statements: [
       `Truck fuel consumption is more than 75% higher than Van fuel consumption.`,
       `Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.`,
@@ -3641,7 +3640,7 @@ $$
 | --- | --- | --- | --- |
 | Day 1 | 14 hrs | 20 hrs | 3,990 MWh |
 | Day 2 | 22 hrs | 9 hrs | 4,072 MWh |
-| Day 3 (audit) 1,020 min (=17 | hrs) | 11 hrs 3,553 MWh | (recorded) |`,
+| Day 3 (audit) | 1,020 min (=17 hrs) | 11 hrs | 3,553 MWh (recorded) |`,
     statements: [
       `Plant A's output rate exceeds Plant B's by more than 45%.`,
       `Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.`,
