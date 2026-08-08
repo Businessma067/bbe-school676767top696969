@@ -210,24 +210,11 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                               !isOpen && "-rotate-90",
                             )}
                           />
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-baseline justify-between gap-2">
-                              <span className="truncate text-sm font-bold text-foreground">
-                                {ch.num}. {ch.title}
-                              </span>
-                              <span className="shrink-0 text-[10px] font-bold text-muted-foreground">
-                                {done}/{total}
-                              </span>
-                            </div>
-                            <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-secondary">
-                              <div
-                                className={cn(
-                                  "h-full rounded-full transition-all",
-                                  pct === 100 && total > 0 ? "bg-emerald-500" : "bg-primary",
-                                )}
-                                style={{ width: `${pct}%` }}
-                              />
-                            </div>
+                          <div className="flex min-w-0 flex-1 items-center gap-2">
+                            <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                              {ch.num}. {ch.title}
+                            </span>
+                            <ChapterProgressRing pct={pct} done={done} total={total} />
                           </div>
                         </button>
                         <button
@@ -315,7 +302,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                     {locked && " · Locked"}
                                   </span>
                                   {!locked && !c.placeholder && c.difficulty_level !== "—" && (
-                                    <DifficultyDots level={c.difficulty_level} active={active} />
+                                    <DifficultyBars level={c.difficulty_level} />
                                   )}
                                 </button>
                               </li>
@@ -566,12 +553,23 @@ function parseDifficulty(level: string): { n: number; max: number } {
   return { n, max };
 }
 
-/** Compact filled-dot meter for the chapter sidebar list. */
-function DifficultyDots({ level, active }: { level: string; active?: boolean }) {
+/** Green → red heat for difficulty 1…5. */
+const DIFFICULTY_BAR_COLORS = [
+  "bg-emerald-500",
+  "bg-lime-500",
+  "bg-amber-400",
+  "bg-orange-500",
+  "bg-red-500",
+] as const;
+
+/** Cell-signal bars for the chapter sidebar task list. */
+function DifficultyBars({ level }: { level: string }) {
   const { n, max } = parseDifficulty(level);
+  const color = DIFFICULTY_BAR_COLORS[Math.max(0, n - 1)] ?? DIFFICULTY_BAR_COLORS[0];
+  const heights = ["h-[3px]", "h-[5px]", "h-[7px]", "h-[9px]", "h-[11px]"];
   return (
     <span
-      className="inline-flex shrink-0 items-center gap-[3px]"
+      className="inline-flex h-[11px] shrink-0 items-end gap-[2px]"
       title={`Difficulty ${level}`}
       aria-label={`Difficulty ${level}`}
     >
@@ -579,14 +577,9 @@ function DifficultyDots({ level, active }: { level: string; active?: boolean }) 
         <span
           key={i}
           className={cn(
-            "block h-1.5 w-1.5 rounded-full border",
-            i < n
-              ? active
-                ? "border-primary bg-primary"
-                : "border-primary/75 bg-primary/75"
-              : active
-                ? "border-primary/25 bg-transparent"
-                : "border-muted-foreground/30 bg-transparent",
+            "w-[3px] rounded-[1px]",
+            heights[i] ?? "h-[11px]",
+            i < n ? color : "bg-muted-foreground/20",
           )}
         />
       ))}
@@ -594,53 +587,67 @@ function DifficultyDots({ level, active }: { level: string; active?: boolean }) 
   );
 }
 
-/** Ring meter for the task card header (chapter view). */
-function DifficultyRing({ level }: { level: string }) {
-  const { n, max } = parseDifficulty(level);
-  const size = 22;
-  const stroke = 2.4;
+/** Chapter completion ring — sits to the right of the chapter title. */
+function ChapterProgressRing({
+  pct,
+  done,
+  total,
+}: {
+  pct: number;
+  done: number;
+  total: number;
+}) {
+  const size = 28;
+  const stroke = 2.5;
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
-  const dash = (n / max) * c;
+  const complete = total > 0 && pct === 100;
+  const dash = (Math.min(Math.max(pct, 0), 100) / 100) * c;
   return (
     <span
-      className="inline-flex items-center gap-1.5 rounded-md border border-border px-1.5 py-0.5 text-[10px] font-semibold text-taupe"
-      title={`Difficulty ${level}`}
-      aria-label={`Difficulty ${level}`}
+      className="relative inline-grid h-7 w-7 shrink-0 place-items-center"
+      title={`${done} of ${total} tasks passed (${pct}%)`}
+      aria-label={`Chapter progress ${pct} percent`}
     >
-      <span className="relative inline-grid h-[22px] w-[22px] place-items-center">
-        <svg
-          width={size}
-          height={size}
-          viewBox={`0 0 ${size} ${size}`}
-          className="absolute inset-0 -rotate-90 text-primary"
-          aria-hidden
-        >
-          <circle
-            cx={size / 2}
-            cy={size / 2}
-            r={r}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={stroke}
-            className="opacity-20"
-          />
-          <circle
-            cx={size / 2}
-            cy={size / 2}
-            r={r}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={stroke}
-            strokeLinecap="round"
-            strokeDasharray={`${dash} ${Math.max(c - dash, 0)}`}
-          />
-        </svg>
-        <span className="relative text-[10px] font-bold tabular-nums leading-none text-foreground">
-          {n}
-        </span>
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className={cn(
+          "absolute inset-0 -rotate-90",
+          complete ? "text-emerald-500" : "text-primary",
+        )}
+        aria-hidden
+      >
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={stroke}
+          className="opacity-15"
+        />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={`${dash} ${Math.max(c - dash, 0)}`}
+        />
+      </svg>
+      <span
+        className={cn(
+          "relative text-[8px] font-bold tabular-nums leading-none",
+          complete ? "text-emerald-600 dark:text-emerald-400" : "text-foreground",
+        )}
+      >
+        {pct}
+        <span className="text-[7px] font-semibold opacity-70">%</span>
       </span>
-      <span>Difficulty</span>
     </span>
   );
 }
@@ -1149,7 +1156,6 @@ function MathTaskCard({
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
           {task.case_id}
         </span>
-        <DifficultyRing level={task.difficulty_level} />
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
