@@ -938,25 +938,11 @@ function MathTaskCard({
 
       <h2 className="font-display text-lg font-bold tracking-tight">{task.title}</h2>
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
-        {task.figure ? (
-          <figure className="overflow-hidden rounded-xl border border-border bg-[#faf8f5] shadow-sm">
-            <img
-              src={task.figure}
-              alt={`Stem figure for ${task.title}`}
-              className="block h-auto w-full"
-              loading="lazy"
-            />
-          </figure>
-        ) : null}
-        {!task.figure ? <MathProse text={task.context} className="text-sm" /> : null}
-        {task.figure && task.context.includes("**Variables:**") ? (
-          <MathProse
-            text={task.context.slice(task.context.indexOf("**Variables:**"))}
-            className="text-sm"
-          />
-        ) : null}
-        {!task.figure && task.tables_markdown ? (
-          <MathProse text={task.tables_markdown} className="text-sm" />
+        <MathProse text={task.context} className="text-sm" />
+        {task.tables_markdown ? (
+          <div className="overflow-hidden rounded-xl border border-border bg-background p-2 sm:p-3">
+            <MathProse text={task.tables_markdown} className="text-sm" />
+          </div>
         ) : null}
       </div>
 

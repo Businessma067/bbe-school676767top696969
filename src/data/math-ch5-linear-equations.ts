@@ -1,7 +1,6 @@
 /**
  * Chapter 5 — Linear equations in two unknowns
- * 60 tasks from Linear_Equations_All_60_Tasks_Reranked PDF.
- * Binomial-length explanations; stem figures + markdown tables from PDF.
+ * Structured prose + markdown tables from PDF (UI-native, no screenshots).
  */
 
 import type { MathTask } from "@/data/math-chapters";
@@ -11,10 +10,9 @@ export const MATH_CH5_LINEAR_EQUATIONS: MathTask[] = [
     id: "math-5-1",
     case_id: "MATH 5.01",
     title: `Balancing Crate Counts Between Two Depots`,
-    context: `60. Continental Power Grid — Plant Output Rate Reconstruction — 10.0/10 TASK 1 — Balancing Crate Counts Between Two Depots Format: Internal Memo | Difficulty: 1.0/10 | (previously Task 1 (orig. Tasks 1–10 set)) The North depot and the South depot are together holding 620 crates this week. A scheduling note observes that if 50 crates were transferred from North to South, the two depots would end up holding exactly the same number of crates.
+    context: `The North depot and the South depot are together holding 620 crates this week. A scheduling note observes that if 50 crates were transferred from North to South, the two depots would end up holding exactly the same number of crates.
 
 **Variables:** Let x = crates at the North depot, y = crates at the South depot. The memo's transfer clue must be translated into an equation: after moving 50 crates from North to South, North would have x - 50 and South would have y + 50, and these are described as equal.`,
-    figure: "/math/ch5/task-01.png",
     statements: [
       `The North depot currently holds 360 crates.`,
       `The South depot currently holds 240 crates.`,
@@ -90,7 +88,10 @@ $$
     context: `Silverline Stationery Co. received two invoices from the same supplier this month. Notebooks and pens are billed at fixed unit prices that stayed the same on both invoices.
 
 **Variables:** Let x = price of one notebook, y = price of one pen.`,
-    figure: "/math/ch5/task-02.png",
+    tables_markdown: `| Invoice | Notebooks | Pens | Invoice Total |
+| --- | --- | --- | --- |
+| #101 | 40 | 25 | $185.00 |
+| #102 | 15 | 60 | $160.50 |`,
     statements: [
       `A notebook costs $3.50.`,
       `A pen costs $2.10.`,
@@ -163,10 +164,13 @@ $$
     id: "math-5-3",
     case_id: "MATH 5.03",
     title: `Pricing Adult and Child Tickets From a Box-Office Summary`,
-    context: `The Riverside Community Cinema's box-office system logged ticket counts and revenue for two Saturday screenings of the same film. Adult and child tickets are sold at fixed prices throughout the day. Saturday Matinee Saturday Evening
+    context: `The Riverside Community Cinema's box-office system logged ticket counts and revenue for two Saturday screenings of the same film. Adult and child tickets are sold at fixed prices throughout the day.
 
 **Variables:** Let a = adult ticket price, c = child ticket price.`,
-    figure: "/math/ch5/task-03.png",
+    tables_markdown: `| Session | Adult Tickets | Child Tickets | Revenue |
+| --- | --- | --- | --- |
+| Saturday Matinee | 90 | 150 | $2,130 |
+| Saturday Evening | 160 | 40 | $2,200 |`,
     statements: [
       `An adult ticket costs $12.00.`,
       `A child ticket costs $7.00.`,
@@ -242,7 +246,6 @@ $$
     context: `Corner Deli delivers office lunches for a flat $8.00 delivery fee added on top of the food cost, no matter the order size. Receipt A: 6 sandwiches, 4 wraps, plus the $8.00 delivery fee — total charged $70.00. Receipt B: 3 sandwiches, 9 wraps, plus the $8.00 delivery fee — total charged $74.00.
 
 **Variables:** Let x = price of one sandwich, y = price of one wrap. Before writing any equation, the $8.00 delivery fee must be subtracted from each receipt total, since it is not part of either unknown price.`,
-    figure: "/math/ch5/task-04.png",
     statements: [
       `A sandwich costs $7.00.`,
       `A wrap costs $5.00.`,
@@ -318,7 +321,6 @@ $$
     context: `An investor split a total of $10,000 between two accounts at the start of the year: Account A pays 4% simple annual interest, and Account B pays 7% simple annual interest. No deposits or withdrawals were made all year, and together the two accounts earned $520.00 in interest.
 
 **Variables:** Let x = amount placed in Account A, y = amount placed in Account B.`,
-    figure: "/math/ch5/task-05.png",
     statements: [
       `$6,500 was placed in Account A.`,
       `$4,500 was placed in Account B.`,
@@ -394,7 +396,6 @@ $$
     context: `Premium-grade office chairs are priced exactly $45 more per unit than Standard-grade chairs throughout the current catalogue. A recent shipment of 18 Standard chairs and 12 Premium chairs was valued at $9,660.00 in total.
 
 **Variables:** Let x = price of a Standard chair, y = price of a Premium chair.`,
-    figure: "/math/ch5/task-06.png",
     statements: [
       `A Standard chair is priced at $304.00.`,
       `A Premium chair is priced at $354.00.`,
@@ -470,7 +471,6 @@ $$
     context: `ByteMobile's ad boasts a "simple plan": one customer who went 40 minutes over their allowance last month paid $29.00 in total. A heavy user who went 120 minutes over paid $53.00 — the ad frames this as a low, predictable rate for every extra minute, on top of a small fixed monthly fee.
 
 **Variables:** Let f = fixed monthly fee, r = rate charged per extra minute. The advertisement never states the fixed fee or the rate directly — both must be recovered from the two example bills it quotes.`,
-    figure: "/math/ch5/task-07.png",
     statements: [
       `ByteMobile's fixed monthly fee is $17.00.`,
       `The extra-minute rate advertised is $0.30 per minute.`,
@@ -543,10 +543,13 @@ $$
     id: "math-5-8",
     case_id: "MATH 5.08",
     title: `Finding Weekly Output From a Production Report`,
-    context: `The table below lists standard specifications for two oven models. This week, the division completed 130 ovens in total and logged 795 assembly hours in total across both models. (Not every figure below is needed to find how many of each model were built.) Assembly Hrs/Unit Material Cost/Unit Standard Oven 4 hrs Deluxe Oven 9 hrs
+    context: `The table below lists standard specifications for two oven models. This week, the division completed 130 ovens in total and logged 795 assembly hours in total across both models. (Not every figure below is needed to find how many of each model were built.)
 
 **Variables:** Let s = number of Standard ovens built, d = number of Deluxe ovens built. The material-cost column is not needed to find s and d — it becomes relevant only for statement E below.`,
-    figure: "/math/ch5/task-08.png",
+    tables_markdown: `| Product | Assembly Hrs/Unit | Material Cost/Unit |
+| --- | --- | --- |
+| Standard Oven | 4 hrs | $120 |
+| Deluxe Oven | 9 hrs | $180 |`,
     statements: [
       `The division built 75 Standard ovens this week.`,
       `The division built 45 Deluxe ovens this week.`,
@@ -619,10 +622,13 @@ $$
     id: "math-5-9",
     case_id: "MATH 5.09",
     title: `Recovering Furniture Prices From Two Branches' Net Sales`,
-    context: `Two branches sold sofas and armchairs this month at company-wide fixed prices. "Net sales" (gross sales minus returns) is what actually reflects items sold at their listed prices. Sofas Sold Armchairs Sold Gross Sales
+    context: `Two branches sold sofas and armchairs this month at company-wide fixed prices. "Net sales" (gross sales minus returns) is what actually reflects items sold at their listed prices.
 
 **Variables:** Let x = price of one sofa, y = price of one armchair. The gross figures cannot be used directly — each branch's returns must be subtracted first to isolate the value of items actually sold at listed prices.`,
-    figure: "/math/ch5/task-09.png",
+    tables_markdown: `| Branch | Sofas Sold | Armchairs Sold | Gross Sales | Returns |
+| --- | --- | --- | --- | --- |
+| Riverside | 14 | 22 | $9,760 | $460 |
+| Hillcrest | 20 | 10 | $9,300 | $300 |`,
     statements: [
       `A sofa sells for $350.00.`,
       `An armchair sells for $200.00.`,
@@ -698,7 +704,6 @@ $$
     context: `PrintFast Express charges a fixed setup fee on every order, plus a constant charge per page. Order #58 (120 pages) billed $33.00, and Order #96 (300 pages) billed $69.00. A rival, QuickCopy Center, instead charges a flat $60.00 for any order up to 350 pages, regardless of length.
 
 **Variables:** Let f = PrintFast's setup fee, r = PrintFast's rate per page.`,
-    figure: "/math/ch5/task-10.png",
     statements: [
       `PrintFast's setup fee is $12.00.`,
       `PrintFast's per-page rate is $0.25.`,
@@ -774,7 +779,6 @@ $$
     context: `Two friends grabbed lunch separately from the same food truck, which sells only tacos and burritos at a fixed price each. Ana ordered 4 tacos and 3 burritos and paid $32.00 in total. Ben ordered 2 tacos and 5 burritos — and when he compared receipts with Ana afterward, he realized he had paid exactly $5.00 more than she did, even though neither of them knew the other's order size in advance.
 
 **Variables:** Nothing here states the taco or burrito price directly. What is known is Ana's order and total, plus a comparison between Ben's total and Ana's — that comparison must first be turned into an actual dollar figure for Ben's order before a system of two equations can be written.`,
-    figure: "/math/ch5/task-11.png",
     statements: [
       `Ben paid more for his 5 burritos alone than Ana paid for her entire order.`,
       `A burrito costs $2.50 more than a taco.`,
@@ -850,7 +854,14 @@ $$
     context: `Paperback units sold Hardcover units sold Combined revenue (paperback + hardcover) Full-time staff on payroll Loyalty-member share of purchases Memo — Pricing Desk: "Hardcover editions are priced exactly $5 above the paperback price this quarter, across the board."
 
 **Variables:** Let x = paperback price, y = hardcover price. Staff headcount and the loyalty-member percentage do not affect unit pricing and should be set aside.`,
-    figure: "/math/ch5/task-12.png",
+    tables_markdown: `| Metric | Value |
+| --- | --- |
+| Paperback units sold | 400 |
+| Hardcover units sold | 220 |
+| Combined revenue (paperback + hardcover) | $8,540 |
+| Full-time staff on payroll | 12 |
+| Loyalty-member share of purchases | 45% |
+| Memo — Pricing Desk: "Hardcover editions are priced exactly $5 above the paperback price this quarter, across the board." |  |`,
     statements: [
       `A paperback price of $12 is consistent with the pricing desk's $5 gap rule.`,
       `Hardcover editions are priced above $18.`,
@@ -923,10 +934,13 @@ $$
     id: "math-5-13",
     case_id: "MATH 5.13",
     title: `SkyLink Mobile Promotional Flyer`,
-    context: `SKYLINK MOBILE: BASIC — $15/month base + $2.00/GB overage. STANDARD — base fee and overage rate confirmed by billing history below. PREMIUM — $40/month, unlimited, no overage. Overage Used Total Bill 8 GB 3 GB
+    context: `SKYLINK MOBILE: BASIC — $15/month base + $2.00/GB overage. STANDARD — base fee and overage rate confirmed by billing history below. PREMIUM — $40/month, unlimited, no overage.
 
 **Variables:** Let x = Standard plan's base fee, y = its per-GB overage rate. The Basic and Premium prices belong to different plans and should not be substituted into this customer's equations.`,
-    figure: "/math/ch5/task-13.png",
+    tables_markdown: `| Month | Overage Used | Total Bill |
+| --- | --- | --- |
+| March | 8 GB | $62.00 |
+| April | 3 GB | $47.00 |`,
     statements: [
       `The Standard plan has a lower base fee than the advertised Basic plan.`,
       `The overage rate on the Standard plan is $3.00 per GB.`,
@@ -999,10 +1013,13 @@ $$
     id: "math-5-14",
     case_id: "MATH 5.14",
     title: `Lakeview Inn Booking Confirmations`,
-    context: `LAKEVIEW INN — Rate Card. Standard Rooms & Suites, free breakfast & Wi-Fi, all rates subject to 8% occupancy tax. Confirmation Standard Rooms Total Charged (incl. 8% tax) Weekend 1 Weekend 2
+    context: `LAKEVIEW INN — Rate Card. Standard Rooms & Suites, free breakfast & Wi-Fi, all rates subject to 8% occupancy tax.
 
 **Variables:** Let x = nightly Standard rate, y = nightly Suite rate, both before tax. Each total must first be converted back to a pre-tax figure before it can be used in the model.`,
-    figure: "/math/ch5/task-14.png",
+    tables_markdown: `| Confirmation | Standard Rooms | Suites | Total Charged (incl. 8% tax) |
+| --- | --- | --- | --- |
+| Weekend 1 | 10 | 4 | $2,419.20 |
+| Weekend 2 | 7 | 9 | $3,099.60 |`,
     statements: [
       `After removing the occupancy tax, Weekend 1's booking revenue was $2,240.00.`,
       `A Suite costs $200 more per night than a Standard room.`,
@@ -1075,10 +1092,15 @@ $$
     id: "math-5-15",
     case_id: "MATH 5.15",
     title: `Crestwood Distribution Centre, Inventory Valuation`,
-    context: `Comp. A (units) Comp. B (units) Total Value $4,700 (projected) Warehouse floor space: 12,000 sq ft. On-site staff: 9. (Not needed below.)
+    context: `$4,700 (projected) Warehouse floor space: 12,000 sq ft. On-site staff: 9. (Not needed below.)
 
 **Variables:** Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for today's unit costs.`,
-    figure: "/math/ch5/task-15.png",
+    tables_markdown: `| Period | Type | Comp. A (units) | Comp. B (units) | Total Value |
+| --- | --- | --- | --- | --- |
+| January | Actual | 150 | 90 | $3,150 |
+| February | Actual | 130 | 140 | $3,660 |
+| March | Forecast | 200 | 100 $4,700 | (projected) |
+| Warehouse floor space: | 12,000 sq ft. On-site staff: 9. (Not | needed below.) |  |  |`,
     statements: [
       `Component A's unit cost is $12.`,
       `Component B's unit cost is $18.`,
@@ -1151,10 +1173,13 @@ $$
     id: "math-5-16",
     case_id: "MATH 5.16",
     title: `Sunrise Staffing, Overtime Contract Check`,
-    context: `Sunrise Staffing's contract states overtime must be paid at exactly 1.5\\times the regular hourly wage. A union representative pulled this week's payroll for two workers, both completing a full 40-hour regular week, to check whether that rule was actually followed. Regular Hrs Overtime Hrs Total Pay Worker 1 Worker 2
+    context: `Sunrise Staffing's contract states overtime must be paid at exactly 1.5× the regular hourly wage. A union representative pulled this week's payroll for two workers, both completing a full 40-hour regular week, to check whether that rule was actually followed.
 
 **Variables:** Let x = regular hourly wage, y = overtime rate actually paid. Only once both rates are known can they be compared against the contract's 1.5\\times rule.`,
-    figure: "/math/ch5/task-16.png",
+    tables_markdown: `| Worker | Regular Hrs | Overtime Hrs | Total Pay |
+| --- | --- | --- | --- |
+| Worker 1 | 40 | 6 | $704 |
+| Worker 2 | 40 | 2 | $608 |`,
     statements: [
       `The overtime rate actually paid matches the contractual 1.5\\times regular-rate rule.`,
       `The regular hourly wage is $14.`,
@@ -1230,7 +1255,6 @@ $$
     context: `A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed $56.10 — but May's bill also carried a 10% late penalty applied to the entire bill. In June she used 25 m³ with no penalty, billed $65.00. The billing office insists its fixed charge is $18.00 and its rate is $1.85 per m³.
 
 **Variables:** Since the 10% penalty was applied to May's whole bill rather than as a flat add-on, May's reported total must first be divided back down. The fixed charge and rate must be derived independently from the two bills, since the phone claim may not be accurate.`,
-    figure: "/math/ch5/task-17.png",
     statements: [
       `The billing office's claim of an $18.00 fixed monthly charge is correct.`,
       `The rate charged is $2.00 per cubic metre.`,
@@ -1306,7 +1330,6 @@ $$
     context: `A commuter is deciding between two ride-hailing companies. An 8 km CityCab ride once cost $14.00, and a 20 km CityCab ride cost exactly $12.00 more than that. Separately, a 5 km MetroX ride cost $13.50, with a 15 km MetroX ride costing exactly $15.00 more.
 
 **Variables:** Each company must be modelled separately. Each "costs $X more than" comparison must first be converted into an absolute fare. Let x1, y1 be CityCab's base fare and rate, and x2, y2 be MetroX's.`,
-    figure: "/math/ch5/task-18.png",
     statements: [
       `For a 10 km ride, CityCab works out cheaper than MetroX.`,
       `Both companies charge the same base fare of $6.00.`,
@@ -1379,10 +1402,17 @@ $$
     id: "math-5-19",
     case_id: "MATH 5.19",
     title: `Bramble & Co., Vendor Quotation Comparison`,
-    context: `Bramble & Co.'s procurement team received quotations from two suppliers for Products X and Y. Neither vendor lists a unit price outright — both quotes only show bundled order totals. Bramble needs 40 units of X and 30 units of Y next month. Units X Units Y Vendor A Vendor B
+    context: `Bramble & Co.'s procurement team received quotations from two suppliers for Products X and Y. Neither vendor lists a unit price outright — both quotes only show bundled order totals. Bramble needs 40 units of X and 30 units of Y next month.
 
 **Variables:** Each vendor's unit prices are independent and must be solved separately. Let xA, yA denote Vendor A's prices, and xB, yB denote Vendor B's.`,
-    figure: "/math/ch5/task-19.png",
+    tables_markdown: `| Vendor | Order | Units X | Units Y | Total |
+| --- | --- | --- | --- | --- |
+|  | 1 | 20 | 15 | $450 |
+| Vendor A |  |  |  |  |
+|  | 2 | 25 | 12 | $441 |
+|  | 1 | 20 | 15 | $460 |
+| Vendor B |  |  |  |  |
+|  | 2 | 25 | 12 | $467 |`,
     statements: [
       `Vendor A charges less than Vendor B for Product X.`,
       `Vendor B charges less than Vendor A for Product Y.`,
@@ -1458,7 +1488,6 @@ $$
     context: `Alpha and Beta are sister companies that sell Product P and Service Q at identical market prices. Combined, they earned $27,200 in Q1 revenue, and Beta earned exactly $1,000 more than Alpha. Alpha sold 150 units of P and 80 subscriptions of Q; Beta sold 100 units of P and 130 subscriptions of Q. (Alpha's headcount grew 8% year-on-year versus Beta's 6% — a staffing detail with no bearing on pricing.)
 
 **Variables:** Individual Q1 revenue figures are not stated directly — only their combined total and the gap between them. Those must first be turned into Alpha's and Beta's separate revenue figures (a small sum-and-difference step) before the unit-sales data can be used.`,
-    figure: "/math/ch5/task-20.png",
     statements: [
       `Product P is priced at $50 and Service Q at $70, identically for both companies.`,
       `Beta generated more Q1 revenue than Alpha.`,
@@ -1534,7 +1563,6 @@ $$
     context: `FITZONE GYM — NEW MEMBER SPECIAL! "Join for just a $30 signup fee, then only $45/month!" An accounting team member is skeptical and pulls two real members' payment histories. Maria, after her 6th monthly payment, had paid $284 total. Jason, after his 10th monthly payment, had paid $448 total.
 
 **Variables:** Let x = the signup fee actually charged, y = the actual monthly rate. The flyer's advertised figures ($30 and $45) are a claim to be checked, not values to plug directly into the model.`,
-    figure: "/math/ch5/task-21.png",
     statements: [
       `The flyer's advertised $30 signup fee matches what members are actually being charged.`,
       `The monthly rate members are actually paying is lower than the advertised $45/month.`,
@@ -1607,10 +1635,13 @@ $$
     id: "math-5-22",
     case_id: "MATH 5.22",
     title: `StreamPlus — Household Billing Comparison`,
-    context: `StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Customer service pulled combined billing records mixing plan-months across two households. Basic-Months Premium-Months Combined Total Household 1 Household 2
+    context: `StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Customer service pulled combined billing records mixing plan-months across two households.
 
 **Variables:** Let x = Basic monthly price, y = Premium monthly price.`,
-    figure: "/math/ch5/task-22.png",
+    tables_markdown: `| Household | Basic-Months | Premium-Months | Combined Total |
+| --- | --- | --- | --- |
+| Household 1 | 4 | 3 | $169 |
+| Household 2 | 2 | 7 | $255 |`,
     statements: [
       `The Basic plan costs $19 per month.`,
       `The Premium plan costs $35 per month.`,
@@ -1683,10 +1714,21 @@ $$
     id: "math-5-23",
     case_id: "MATH 5.23",
     title: `Willow Market — Grocery Receipts`,
-    context: `Two items — organic apples and almond milk — recently had their prices updated. (A note on every receipt reminds shoppers that loyalty- card members save 5% storewide; neither receipt below belongs to a loyalty member, so no discount has actually been applied.) Bread (loaf) Eggs (dozen) Organic Apples (lb) Almond Milk (carton) Bread (loaf) Organic Apples (lb) Almond Milk (carton)
+    context: `Two items — organic apples and almond milk — recently had their prices updated. (A note on every receipt reminds shoppers that loyalty- card members save 5% storewide; neither receipt below belongs to a loyalty member, so no discount has actually been applied.)
 
 **Variables:** Let x = current price per lb of organic apples, y = current price per carton of almond milk. Bread and egg prices are already known, and the loyalty-discount note is a distractor that does not apply here.`,
-    figure: "/math/ch5/task-23.png",
+    tables_markdown: `| Receipt 1 | Qty | Price |
+| --- | --- | --- |
+| Bread (loaf) | 1 | $3.60 |
+| Eggs (dozen) | 1 | $4.40 |
+| Organic Apples (lb) | 5 | ? |
+| Almond Milk (carton) | 3 | ? |
+| Receipt Total |  | $50.00 |
+| Receipt 2 | Qty | Price |
+| Bread (loaf) | 1 | $3.60 |
+| Organic Apples (lb) | 2 | ? |
+| Almond Milk (carton) | 5 | ? |
+| Receipt Total |  | $43.20 |`,
     statements: [
       `Organic apples cost $4.80 per pound.`,
       `Almond milk costs less than organic apples, per unit.`,
@@ -1759,10 +1801,13 @@ $$
     id: "math-5-24",
     case_id: "MATH 5.24",
     title: `BrightHome Energy — Monthly Utility Bills`,
-    context: `BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is $0.24/unit, unverified against real data. BrightHome also offers a Solar Offset Plan with no connection fee, at a flat $0.29/unit. Units Consumed Total Charge Bill 1 Bill 2
+    context: `BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is $0.24/unit, unverified against real data. BrightHome also offers a Solar Offset Plan with no connection fee, at a flat $0.29/unit.
 
 **Variables:** Let x = fixed connection fee, y = rate per unit under the standard plan. Treat the $0.24/unit figure as a claim to verify.`,
-    figure: "/math/ch5/task-24.png",
+    tables_markdown: `| Bill | Units Consumed | Total Charge |
+| --- | --- | --- |
+| Bill 1 | 240 | $83.40 |
+| Bill 2 | 380 | $112.80 |`,
     statements: [
       `The fixed connection fee is $33.`,
       `Customer service's claimed rate of $0.24 per unit is correct.`,
@@ -1838,7 +1883,6 @@ $$
     context: `Trattoria Bella serves pasta and appetizers at consistent prices. Off-peak tables carry no service fee; peak tables automatically have a 10% service charge added before the bill is printed. Table 5 (off-peak) printed $174.00 for 6 pasta + 4 appetizers, with no fee. Table 8 (peak, fee already included) came to $46.00 more than Table 5's total, for 5 pasta + 7 appetizers.
 
 **Variables:** Let x = price of one pasta dish, y = price of one appetizer. Table 8's total must first be reconstructed as Table 5's total plus $46.00, and only then can the 10% service charge be stripped back out.`,
-    figure: "/math/ch5/task-25.png",
     statements: [
       `A pasta dish costs $19.`,
       `An appetizer costs more than a pasta dish.`,
@@ -1911,10 +1955,13 @@ $$
     id: "math-5-26",
     case_id: "MATH 5.26",
     title: `Meridian Distribution — Warehouse Inventory Summary`,
-    context: `Meridian Distribution ships Item M and Item N. The inventory system logs item counts, unit weight, unit volume, and total shipment cost — but only item counts and cost determine unit pricing. Item M Units Item N Units Wt. M (kg) Wt. N (kg) Shipment 1 Shipment 2
+    context: `Meridian Distribution ships Item M and Item N. The inventory system logs item counts, unit weight, unit volume, and total shipment cost — but only item counts and cost determine unit pricing.
 
 **Variables:** Let x = cost per unit of Item M, y = cost per unit of Item N. Weight and volume are logged for freight billing and play no role in the item pricing itself.`,
-    figure: "/math/ch5/task-26.png",
+    tables_markdown: `| Shipment | Item M Units | Item N Units | Wt. M (kg) | Wt. N (kg) | Cost |
+| --- | --- | --- | --- | --- | --- |
+| Shipment 1 | 110 | 80 | 2.4 | 1.7 | $4,470 |
+| Shipment 2 | 70 | 150 | 2.4 | 1.7 | $5,520 |`,
     statements: [
       `Item M costs $21 per unit.`,
       `Item N costs $30 per unit.`,
@@ -1990,7 +2037,6 @@ $$
     context: `Green Horizons prices Standard and Premium planting. Job 1's invoice records quantity in planting bundles (each bundle = 2 Standard + 5 Premium units), while Job 2's invoice lists individual units directly. Job 1: 7 bundles — Total $1,946. Job 2: 13 Standard + 21 Premium — Total $1,301. New Quotation: 8 Standard + 19 Premium — Quoted Total: $1,068.
 
 **Variables:** Let x = price per Standard unit, y = price per Premium unit. Job 1's bundles must first be converted into individual Standard and Premium units before the system can be written.`,
-    figure: "/math/ch5/task-27.png",
     statements: [
       `Standard planting costs $29 per unit.`,
       `Premium planting costs $50 per unit.`,
@@ -2063,10 +2109,14 @@ $$
     id: "math-5-28",
     case_id: "MATH 5.28",
     title: `Horizon Consulting — Travel Reimbursement Memo`,
-    context: `Reimbursement is a fixed per-diem for each meal day plus a fixed rate per mile. Finance separately believes the mileage rate is $0.40/mile, unconfirmed against payroll data. One of three reports contains a data-entry error making it financially impossible. Meal Days Miles Driven Total Reimbursed Report 1 Report 2 Report 3
+    context: `Reimbursement is a fixed per-diem for each meal day plus a fixed rate per mile. Finance separately believes the mileage rate is $0.40/mile, unconfirmed against payroll data. One of three reports contains a data-entry error making it financially impossible.
 
 **Variables:** Let x = per-diem rate, y = per-mile rate. Identify which report cannot possibly be correct before building the model, and treat Finance's $0.40/mile belief as a claim to be checked.`,
-    figure: "/math/ch5/task-28.png",
+    tables_markdown: `| Report | Meal Days | Miles Driven | Total Reimbursed |
+| --- | --- | --- | --- |
+| Report 1 | 5 | 150 | $323 |
+| Report 2 | 3 | 250 | $245 |
+| Report 3 | 7 | 40 | $120 |`,
     statements: [
       `The per diem is $55 per day.`,
       `Finance's belief that the mileage rate is $0.40/mile is correct.`,
@@ -2139,10 +2189,14 @@ $$
     id: "math-5-29",
     case_id: "MATH 5.29",
     title: `Cedarline Manufacturing — Weekly Production Log`,
-    context: `Cedarline assembles Widget A and Widget B on the same line, each requiring a fixed number of labor-hours. Week 1's log is fully legible. Week 2's log is smudged: unit counts are gone, but a sticky note reads "8 more Widget B than Widget A, 58 units total, using 505 labor- hours." Week 3 is water-damaged: the Widget A count is illegible. Widget A Widget B Total Labor-Hours Week 1 Week 2 (see note) (see note) Week 3
+    context: `Cedarline assembles Widget A and Widget B on the same line, each requiring a fixed number of labor-hours. Week 1's log is fully legible. Week 2's log is smudged: unit counts are gone, but a sticky note reads "8 more Widget B than Widget A, 58 units total, using 505 labor- hours." Week 3 is water-damaged: the Widget A count is illegible.
 
 **Variables:** Let x = labor-hours per Widget A, y = labor-hours per Widget B. Week 2's unit counts must first be recovered from the sticky note (a small sum-and-difference step) before the main system can be written.`,
-    figure: "/math/ch5/task-29.png",
+    tables_markdown: `| Week | Widget A | Widget B | Total Labor-Hours |
+| --- | --- | --- | --- |
+| Week 1 | 35 | 20 | 445 |
+| Week 2 | (see note) | (see note) | 505 |
+| Week 3 | (illegible) | 15 | 290 |`,
     statements: [
       `Widget A requires 7 hours of labor to assemble.`,
       `Widget B requires 12 hours of labor to assemble.`,
@@ -2215,10 +2269,14 @@ $$
     id: "math-5-30",
     case_id: "MATH 5.30",
     title: `Sterling Distributors — Regional Sales Dashboard`,
-    context: `Sterling Distributors' dashboard reports quarterly unit sales and revenue for Products X and Y, sold at company-wide fixed prices, across three branches. Two of the three branch reports are known to reconcile correctly; the third contains an uncorrected data-entry error, though the dashboard does not indicate which one. Product X Units Product Y Units Reported Revenue
+    context: `Sterling Distributors' dashboard reports quarterly unit sales and revenue for Products X and Y, sold at company-wide fixed prices, across three branches. Two of the three branch reports are known to reconcile correctly; the third contains an uncorrected data-entry error, though the dashboard does not indicate which one.
 
 **Variables:** Let x = price of Product X, y = price of Product Y.`,
-    figure: "/math/ch5/task-30.png",
+    tables_markdown: `| Branch | Product X Units | Product Y Units | Reported Revenue |
+| --- | --- | --- | --- |
+| North | 85 | 70 | $4,145 |
+| South | 55 | 95 | $3,875 |
+| East | 65 | 50 | $3,200 |`,
     statements: [
       `Product X is priced at $29.`,
       `Product Y is priced at $28.`,
@@ -2291,10 +2349,13 @@ $$
     id: "math-5-31",
     case_id: "MATH 5.31",
     title: `Riverside Hardware Supply — Two Fastener Invoices`,
-    context: `Riverside Hardware Supply ships Type A Bolts and Type B Hinges by the case, at fixed per-case prices. Type A Cases Type B Cases Invoice 1 Invoice 2
+    context: `Riverside Hardware Supply ships Type A Bolts and Type B Hinges by the case, at fixed per-case prices.
 
 **Variables:** Let x = price per case of Type A, y = price per case of Type B.`,
-    figure: "/math/ch5/task-31.png",
+    tables_markdown: `| Invoice | Type A Cases | Type B Cases | Total |
+| --- | --- | --- | --- |
+| Invoice 1 | 9 | 13 | $527.45 |
+| Invoice 2 | 7 | 19 | $657.35 |`,
     statements: [
       `Rounding Type A's case price up to the next whole dollar lands on exactly $19.00.`,
       `A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.`,
@@ -2367,10 +2428,13 @@ $$
     id: "math-5-32",
     case_id: "MATH 5.32",
     title: `Swift Cargo Co. vs. a Flat-Rate Competitor`,
-    context: `Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile. A competitor charges a flat $1.35 per mile with no dispatch fee at all. Total Charged by Swift Cargo Route 1 Route 2
+    context: `Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile. A competitor charges a flat $1.35 per mile with no dispatch fee at all.
 
 **Variables:** Let x = Swift Cargo's fixed dispatch fee, y = Swift Cargo's rate per mile.`,
-    figure: "/math/ch5/task-32.png",
+    tables_markdown: `| Route | Miles | Total Charged by Swift Cargo |
+| --- | --- | --- |
+| Route 1 | 170 | $460.00 |
+| Route 2 | 305 | $709.75 |`,
     statements: [
       `The dispatch fee sits exactly halfway between $145 and $146.`,
       `Per mile, Swift Cargo's rate is closer to $1.50 than to $2.00.`,
@@ -2446,7 +2510,6 @@ $$
     context: `Café Lumière sells Specialty Drinks and Pastries at fixed prices. Two till receipts also list a total calorie count, printed for the customer's reference only. Receipt 1: 7 Specialty Drinks + 9 Pastries — Total: $78.65 — (listed) Total Calories: 6,100 Receipt 2: 11 Specialty Drinks + 4 Pastries — Total: $85.05 — (listed) Total Calories: 5,400
 
 **Variables:** Let x = price per Specialty Drink, y = price per Pastry.`,
-    figure: "/math/ch5/task-33.png",
     statements: [
       `A Specialty Drink's price, tripled, would clear twenty dollars.`,
       `Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined — quite a bit more, in fact.`,
@@ -2522,7 +2585,6 @@ $$
     context: `Northgate Bakery Wholesale sells Croissants and Baguettes by the dozen at fixed wholesale prices. Email 1: "Order confirmed: 14 dozen croissants + 11 dozen baguettes. Total cost: $297.30." Email 2: "Order confirmed: 6 dozen croissants + 23 dozen baguettes. Total cost: $299.30."
 
 **Variables:** Let x = wholesale price per dozen croissants, y = wholesale price per dozen baguettes.`,
-    figure: "/math/ch5/task-34.png",
     statements: [
       `Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.`,
       `The per-dozen gap between croissants and baguettes is closer to four dollars than to five.`,
@@ -2595,10 +2657,13 @@ $$
     id: "math-5-35",
     case_id: "MATH 5.35",
     title: `Meridian Textiles — Quarterly Margin Verification`,
-    context: `Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools. Fabric Rolls Yarn Spools Total Profit
+    context: `Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.
 
 **Variables:** Let x = profit per Fabric Roll, y = profit per Yarn Spool.`,
-    figure: "/math/ch5/task-35.png",
+    tables_markdown: `| Quarter | Fabric Rolls | Yarn Spools | Total Profit |
+| --- | --- | --- | --- |
+| Q1 | 240 | 175 | $10,029.00 |
+| Q2 | 310 | 90 | $10,260.50 |`,
     statements: [
       `Fabric Roll margins clear the $27 line, though not by enough to also clear $27.50.`,
       `Yarn Spool's per-unit margin, doubled, would just clear forty dollars.`,
@@ -2671,10 +2736,14 @@ $$
     id: "math-5-36",
     case_id: "MATH 5.36",
     title: `Continental Gas Supply — Reconstructing Cylinder Prices`,
-    context: `A consultant reviewing Continental Gas Supply's cylinder pricing agreement was given three monthly supplier invoices for Nitrogen-type and Oxygen-type cylinders. Nitrogen Units Oxygen Units Invoice 1 Invoice 2 Invoice 3
+    context: `A consultant reviewing Continental Gas Supply's cylinder pricing agreement was given three monthly supplier invoices for Nitrogen-type and Oxygen-type cylinders.
 
 **Variables:** Let x = price per Nitrogen-type cylinder, y = price per Oxygen-type cylinder.`,
-    figure: "/math/ch5/task-36.png",
+    tables_markdown: `| Invoice | Nitrogen Units | Oxygen Units | Total |
+| --- | --- | --- | --- |
+| Invoice 1 | 15 | 20 | $699.00 |
+| Invoice 2 | 9 | 12 | $419.40 |
+| Invoice 3 | 13 | 5 | $326.45 |`,
     statements: [
       `Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.`,
       `Nitrogen-type cylinders are priced closer to $17.00 than to $16.00.`,
@@ -2750,7 +2819,6 @@ $$
     context: `On Monday's day shift, Alvarez logged 4 hours on an overhaul while Bianchi logged 7 hours on that same job; together they left it 65.5% finished. The next day, Alvarez put in 9 hours, Bianchi just 3, and an identical type of job was left 90.0% complete.
 
 **Variables:** Let x = fraction of a job Alvarez completes per hour, y = fraction of a job Bianchi completes per hour.`,
-    figure: "/math/ch5/task-37.png",
     statements: [
       `Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.`,
       `Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.`,
@@ -2826,7 +2894,6 @@ $$
     context: `Vantage Apparel earns a fixed profit per unit on T-Shirts and Hoodies. Season 1: 430 T-Shirts and 260 Hoodies, netting $9,793.50. Season 2: 275 T-Shirts and 410 Hoodies, netting $10,747.75. Season 3's paperwork survived only in part: 310 Hoodies and an overall profit of $8,558.25 are legible, but water damage erased the T-Shirt count entirely.
 
 **Variables:** Let x = profit per T-Shirt, y = profit per Hoodie.`,
-    figure: "/math/ch5/task-38.png",
     statements: [
       `T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.`,
       `Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.`,
@@ -2899,10 +2966,14 @@ $$
     id: "math-5-39",
     case_id: "MATH 5.39",
     title: `Continental Freight Co. — Cross-Unit Billing Audit`,
-    context: `Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped. One branch records weights in pounds (1 kg ≈ 2.2 lb). A third shipment is under audit. Total Charged Shipment 1 (Metric) 185 kg Shipment 2 (Imperial) 572 lb Shipment 3 (Imperial, audit) 99 lb
+    context: `Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped. One branch records weights in pounds (1 kg ≈ 2.2 lb). A third shipment is under audit.
 
 **Variables:** Let x = flat handling fee, y = rate per kilogram. Weights must be converted to kilograms before the model is built.`,
-    figure: "/math/ch5/task-39.png",
+    tables_markdown: `| Shipment | Weight | Total Charged |
+| --- | --- | --- |
+| Shipment 1 (Metric) | 185 kg | $677.35 |
+| Shipment 2 (Imperial) | 572 lb | $913.60 |
+| Shipment 3 (Imperial, audit) | 99 lb | $239.80 |`,
     statements: [
       `Knock five dollars and forty cents off the flat handling fee and you'd land on an even $89.20 — implying the real fee currently overshoots $89 by roughly six percent.`,
       `The per-kilogram rate, tripled, would land just shy of $9.50.`,
@@ -2975,10 +3046,13 @@ $$
     id: "math-5-40",
     case_id: "MATH 5.40",
     title: `Vantage Cloud Services — A Doubled Invoice That Doesn't Double`,
-    context: `Vantage Cloud Services bills every client under one fixed-rate structure: a per-compute-unit charge plus a per-storage-unit charge. Client B's usage is exactly double Client A's in both categories. Compute Units Storage Units Reported Total Client A Client B
+    context: `Vantage Cloud Services bills every client under one fixed-rate structure: a per-compute-unit charge plus a per-storage-unit charge. Client B's usage is exactly double Client A's in both categories.
 
 **Variables:** Let x = price per compute-unit, y = price per storage-unit.`,
-    figure: "/math/ch5/task-40.png",
+    tables_markdown: `| Client | Compute Units | Storage Units | Reported Total |
+| --- | --- | --- | --- |
+| Client A | 11 | 7 | $483.70 |
+| Client B | 22 | 14 | $952.10 |`,
     statements: [
       `Doubling every line of Client A's invoice implies Client B should owe $967.40 — a figure that overshoots what was actually billed by a hair over 1.6% of the real total.`,
       `For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's $952.10 billed amount.`,
@@ -3054,7 +3128,6 @@ $$
     context: `The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%. The officer's notes state Fund B's balance is $4,000 more than twice Fund A's balance, and the combined annual return from both funds is $762.00.
 
 **Variables:** Let x = balance in Fund A, y = balance in Fund B.`,
-    figure: "/math/ch5/task-41.png",
     statements: [
       `The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.`,
       `If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above $800.00.`,
@@ -3127,10 +3200,14 @@ $$
     id: "math-5-42",
     case_id: "MATH 5.42",
     title: `Solventis Labs — Ratio-Blended Batch Reconstruction`,
-    context: `Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio (A:B) rather than individual volumes. Total Volume Mixing Ratio (A:B) Total Salt Content Batch 1 10 L 3 : 2 144 g Batch 2 12 L 5 : 1 184 g Batch 3 (QC review) 8 L 1 : 3 109 g (recorded)
+    context: `Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio (A:B) rather than individual volumes.
 
 **Variables:** Let x = grams of salt per liter in Solution A, y = grams of salt per liter in Solution B.`,
-    figure: "/math/ch5/task-42.png",
+    tables_markdown: `| Batch | Total Volume | Mixing Ratio (A:B) | Total Salt Content |
+| --- | --- | --- | --- |
+| Batch 1 | 10 L | 3 : 2 | 144 g |
+| Batch 2 | 12 L | 5 : 1 | 184 g |
+| Batch 3 (QC review) | 8 L | 1 : 3 | 109 g (recorded) |`,
     statements: [
       `The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.`,
       `Solution B's concentration is more than 70% of Solution A's concentration.`,
@@ -3206,7 +3283,6 @@ $$
     context: `Union Mills pays a fixed base hourly wage plus a fixed overtime premium on top of the base wage for hours beyond 40/week. Employee A: 40 regular + 2.5 OT hours, $765.00 gross. Employee B: 40 regular + 7 OT hours, $882.00 gross.
 
 **Variables:** Let x = base hourly wage, y = overtime premium per hour (on top of the base wage, per OT hour).`,
-    figure: "/math/ch5/task-43.png",
     statements: [
       `If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed $6.00.`,
       `Employee B's overtime pay (the portion earned specifically for hours beyond 40) is more than 40% of his total gross pay.`,
@@ -3279,10 +3355,14 @@ $$
     id: "math-5-44",
     case_id: "MATH 5.44",
     title: `Greenfield Landscaping — Redundant Project Reconciliation`,
-    context: `Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new. Wood Fencing Wire Fencing Total Cost Project 1 18 m 24 m Project 2 27 m 36 m Project 3 10 m 40 m
+    context: `Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new.
 
 **Variables:** Let x = price per meter of cedar wood fencing, y = price per meter of galvanized wire fencing.`,
-    figure: "/math/ch5/task-44.png",
+    tables_markdown: `| Project | Wood Fencing | Wire Fencing | Total Cost |
+| --- | --- | --- | --- |
+| Project 1 | 18 m | 24 m | $750.00 |
+| Project 2 | 27 m | 36 m | $1,125.00 |
+| Project 3 | 10 m | 40 m | $710.00 |`,
     statements: [
       `If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded $950.00.`,
       `The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.`,
@@ -3301,7 +3381,7 @@ $$
 $$
 
 Tip: Keep the final values in view (**Cedar wood = $27.00/m | Galvanized wire = $11.00/m**) when testing the claim.`,
-      `**B) TRUE** — x - y = $27 - 11 = 16$, while 145% of the wire price is 1.45(11) = $15.95 — 16 exceeds 15.95, though only barely.
+      `**B) TRUE** — $x - y = 27 - 11$ = 16, while 145% of the wire price is 1.45(11) = $15.95 — 16 exceeds 15.95, though only barely.
 
 Key relation:
 
@@ -3358,7 +3438,6 @@ $$
     context: `Two Meridian Rail boats travel at fixed constant speeds. On one 250 km stretch, they start from opposite docks and meet after 2 hours. On a separate 356 km stretch, Boat B gets a 3-hour head start before Boat A departs; they meet exactly 1 hour after Boat A's departure.
 
 **Variables:** Let x = Boat A's speed (km/h), y = Boat B's speed (km/h).`,
-    figure: "/math/ch5/task-45.png",
     statements: [
       `The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.`,
       `In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.`,
@@ -3431,10 +3510,14 @@ $$
     id: "math-5-46",
     case_id: "MATH 5.46",
     title: `Meridian Textiles — Three-Season Profit Reconstruction`,
-    context: `Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and total profit survived, but Wheat tonnage is illegible. Total Profit Season 1 240 t 160 t Season 2 180 t 260 t Season 3 300 t
+    context: `Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and total profit survived, but Wheat tonnage is illegible.
 
 **Variables:** Let x = profit per tonne of Wheat, y = profit per tonne of Barley.`,
-    figure: "/math/ch5/task-46.png",
+    tables_markdown: `| Season | Wheat | Barley | Total Profit |
+| --- | --- | --- | --- |
+| Season 1 | 240 t | 160 t | $42,000 |
+| Season 2 | 180 t | 260 t | $48,300 |
+| Season 3 (illegible) |  | 300 t | $53,100 |`,
     statements: [
       `If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded $44,000.`,
       `Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.`,
@@ -3453,7 +3536,7 @@ $$
 $$
 
 Tip: Keep the final values in view (**Wheat = $95.00/t | Barley = $120.00/t | Season 3 Wheat reconstructed = 180 tonnes**) when testing the claim.`,
-      `**B) TRUE** — y - x = $120 - 95 = 25$, and 25% of Wheat's profit (95) is 23.75 — 25 exceeds 23.75.
+      `**B) TRUE** — $y - x = 120 - 95$ = 25, and 25% of Wheat's profit (95) is 23.75 — 25 exceeds 23.75.
 
 Key relation:
 
@@ -3510,7 +3593,6 @@ $$
     context: `Bramwell's HR system flagged an "elder" and "younger" employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.
 
 **Variables:** Let x = elder employee's current age, y = younger employee's current age.`,
-    figure: "/math/ch5/task-47.png",
     statements: [
       `Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.`,
       `The current age gap (x - y) is more than 45% of the elder employee's current age.`,
@@ -3583,10 +3665,14 @@ $$
     id: "math-5-48",
     case_id: "MATH 5.48",
     title: `Crestline Retail Group — Decimal Markup Reconstruction`,
-    context: `Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another. Product A Units Product B Units Retail Total Order 1 Order 2 Order 3
+    context: `Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another.
 
 **Variables:** Let x = wholesale cost of Product A, y = wholesale cost of Product B.`,
-    figure: "/math/ch5/task-48.png",
+    tables_markdown: `| Order | Product A Units | Product B Units | Retail Total |
+| --- | --- | --- | --- |
+| Order 1 | 8 | 5 | $1,052.80 |
+| Order 2 | 16 | 10 | $2,105.60 |
+| Order 3 | 3 | 12 | $1,350.60 |`,
     statements: [
       `If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual $1,350.60.`,
       `The dollar markup on Product B is more than 80% of the dollar markup on Product A.`,
@@ -3662,7 +3748,6 @@ $$
     context: `The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4 draws, 2 losses in 15 matches, 75 points. The Ravens: 7 wins, 6 draws, 1 loss in 14 matches, 8 points fewer than the Falcons.
 
 **Variables:** Let x = points per win, y = points per draw.`,
-    figure: "/math/ch5/task-49.png",
     statements: [
       `If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.`,
       `The Ravens earned more than 45% of their total points from draws alone.`,
@@ -3735,10 +3820,14 @@ $$
     id: "math-5-50",
     case_id: "MATH 5.50",
     title: `Meridian Alloys — Decimal Density Reconstruction and Audit`,
-    context: `Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal ≈ 9.5 L). Metal A Metal B Total Mass Batch 1 12 L 8 L 182.4 kg Batch 2 5 L 15 L 209.0 kg Batch 3 (audit) 9.5 L (conv.) 6 L 147.0 kg (recorded)
+    context: `Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal ≈ 9.5 L).
 
 **Variables:** Let x = mass per liter of Metal A (kg/L), y = mass per liter of Metal B (kg/L).`,
-    figure: "/math/ch5/task-50.png",
+    tables_markdown: `| Batch | Metal A | Metal B | Total Mass |
+| --- | --- | --- | --- |
+| Batch 1 | 12 L | 8 L | 182.4 kg |
+| Batch 2 | 5 L | 15 L | 209.0 kg |
+| Batch 3 (audit) 9.5 | L (conv.) | 6 L 147.0 kg | (recorded) |`,
     statements: [
       `If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.`,
       `Metal B's density is more than 50% greater than Metal A's density.`,
@@ -3814,7 +3903,6 @@ $$
     context: `Halcyon charges an annual fee equal to a percentage rate on assets under management (AUM), plus a flat retainer. Client 2's AUM is $600,000, fee $10,800. Client 1's AUM exceeds Client 2's by $150,000 and pays $2,400 more in total fees. The flat retainer is identical for every client, so it cancels out of any fee-difference comparison.
 
 **Variables:** Let x = the percentage fee rate (as a decimal), y = the flat retainer ($).`,
-    figure: "/math/ch5/task-51.png",
     statements: [
       `A client with AUM of $850,000 would pay a fee representing less than 1.75% of their AUM.`,
       `The flat retainer accounts for more than 10% of Client 2's total fee.`,
@@ -3887,10 +3975,14 @@ $$
     id: "math-5-52",
     case_id: "MATH 5.52",
     title: `Solventis Labs — Multi-Unit Suspension Concentration Reconstruction`,
-    context: `Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL. Suspension A Suspension B Total Content Batch 1 500 mL 300 mL 8,880 mg Batch 2 200 mL 700 mL 12,600 mg Batch 3 (QC) 0.32 L (=320 mL) 450 mL 9,700 mg (recorded)
+    context: `Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL.
 
 **Variables:** Let x = mg/mL concentration of Suspension A, y = mg/mL concentration of Suspension B.`,
-    figure: "/math/ch5/task-52.png",
+    tables_markdown: `| Batch | Suspension A | Suspension B | Total Content |
+| --- | --- | --- | --- |
+| Batch 1 | 500 mL | 300 mL | 8,880 mg |
+| Batch 2 | 200 mL | 700 mL | 12,600 mg |
+| Batch 3 (QC) 0.32 | L (=320 mL) | 450 mL 9,700 | mg (recorded) |`,
     statements: [
       `Suspension B's concentration is more than 85% higher than Suspension A's concentration.`,
       `Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.`,
@@ -3966,7 +4058,6 @@ $$
     context: `Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall. Job 1 needed 200 usable studs + 150 usable sheets, invoice $7,164.00. Job 2 needed 350 usable studs + 175 usable sheets, invoice $8,946.00.
 
 **Variables:** Let x = price per stud, y = price per drywall sheet. The ordered (waste-inflated) quantities must be computed from the usable amounts before any pricing model can be built.`,
-    figure: "/math/ch5/task-53.png",
     statements: [
       `The total waste-related cost on Invoice 1 (the cost of the studs and drywall beyond the usable amounts) exceeds $700.00.`,
       `If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than $150.00.`,
@@ -4039,10 +4130,14 @@ $$
     id: "math-5-54",
     case_id: "MATH 5.54",
     title: `Precision Dynamics — Sensor Calibration Curve Reconstruction`,
-    context: `A sensor's raw reading converts to a true value via True Value = (scale factor)\\times (Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check. Reference True Value Point 1 Point 2 Point 3 Verification (recorded)
+    context: `A sensor's raw reading converts to a true value via True Value = (scale factor)×(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check.
 
 **Variables:** Let x = the sensor's scale factor, y = the sensor's offset, so that True Value = x·(Reading) + y.`,
-    figure: "/math/ch5/task-54.png",
+    tables_markdown: `| Point | Reading | Reference True Value Role | Role |
+| --- | --- | --- | --- |
+| Point 1 | 12.4 | 56.90 Calibration |  |
+| Point 2 | 31.7 | 124.45 Calibration |  |
+| Point 3 | 45.0 | 172.20 Verification (recorded) |  |`,
     statements: [
       `The scale factor exceeds 3.4 by more than 2.5%.`,
       `If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.`,
@@ -4118,7 +4213,6 @@ $$
     context: `Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost $2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost $4,555.00.
 
 **Variables:** Let x = price per kg of Coffee, y = price per kg of Cocoa. Individual weights within each shipment must be worked out from the total weight and ratio before a pricing model can be built.`,
-    figure: "/math/ch5/task-55.png",
     statements: [
       `Coffee costs more than 25% more per kilogram than Cocoa.`,
       `Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.`,
@@ -4191,10 +4285,14 @@ $$
     id: "math-5-56",
     case_id: "MATH 5.56",
     title: `Continental Freight — Fleet Fuel Rate Reconstruction`,
-    context: `Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km). Total Fuel Route 1 850 km 620 km 383.6 L Route 2 500 km 900 km 322.0 L Route 3 (audit) 155.3 mi (≈250 km) 400 km 155.0 L (recorded)
+    context: `Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km).
 
 **Variables:** Let x = Truck fuel consumption (L/100km), y = Van fuel consumption (L/100km).`,
-    figure: "/math/ch5/task-56.png",
+    tables_markdown: `| Route | Truck | Van | Total Fuel |
+| --- | --- | --- | --- |
+| Route 1 850 | km 620 | km | 383.6 L |
+| Route 2 500 | km 900 | km | 322.0 L |
+| Route 3 (audit) 155.3 mi (≈250 | km) 400 | km 155.0 L | (recorded) |`,
     statements: [
       `Truck fuel consumption is more than 75% higher than Van fuel consumption.`,
       `Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.`,
@@ -4270,7 +4368,6 @@ $$
     context: `The $45,000 Whitmore Fund splits between a Bond Portfolio and an Equity Portfolio, each earning its own fixed rate. Current allocation ($27,000 Bonds, $18,000 Equities) returns $2,646.00. A proposed reallocation swapping those amounts ($18,000 Bonds, $27,000 Equities) would return $2,754.00.
 
 **Variables:** Let x = Bond Portfolio's annual rate (%), y = Equity Portfolio's annual rate (%).`,
-    figure: "/math/ch5/task-57.png",
     statements: [
       `The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.`,
       `Under the current allocation, the blended rate (total return ÷ total fund) is less than 6%.`,
@@ -4346,7 +4443,11 @@ $$
     context: `Ashford prices every policy as a fixed administrative fee plus a rate per $1,000 of coverage. A third policy's coverage amount is illegible, but its premium survived.
 
 **Variables:** Let x = the fixed administrative fee per policy ($), y = the rate per $1,000 of coverage ($).`,
-    figure: "/math/ch5/task-58.png",
+    tables_markdown: `| Policy | Coverage | Premium |
+| --- | --- | --- |
+| Auto | $85,000 | $612.50 |
+| Home | $210,000 | $1,197.50 |
+| Renters | (illegible) | $331.70 |`,
     statements: [
       `The reconstructed Renters coverage amount is less than $30,000.`,
       `The fixed administrative fee represents more than 60% of the Auto policy's total premium.`,
@@ -4422,7 +4523,6 @@ $$
     context: `Two species change by a fixed net number of individuals each year. At Year 2: Species A = 610, Species B = 730 (combined 1,340). At Year 6: combined population = 1,772. Species A grows at exactly twice the annual rate of Species B.
 
 **Variables:** Let x = Species A's net annual change (individuals/year), y = Species B's net annual change.`,
-    figure: "/math/ch5/task-59.png",
     statements: [
       `By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.`,
       `If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.`,
@@ -4495,10 +4595,14 @@ $$
     id: "math-5-60",
     case_id: "MATH 5.60",
     title: `Continental Power Grid — Plant Output Rate Reconstruction`,
-    context: `Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs). Plant A Plant B Total Energy Day 1 14 hrs 20 hrs 3,990 MWh Day 2 22 hrs 9 hrs 4,072 MWh Day 3 (audit) 1,020 min (=17 hrs) 11 hrs 3,553 MWh (recorded)
+    context: `Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs).
 
 **Variables:** Let x = Plant A's output rate (MWh/operating hr), y = Plant B's output rate (MWh/operating hr).`,
-    figure: "/math/ch5/task-60.png",
+    tables_markdown: `| Day | Plant A | Plant B | Total Energy |
+| --- | --- | --- | --- |
+| Day 1 | 14 hrs | 20 hrs | 3,990 MWh |
+| Day 2 | 22 hrs | 9 hrs | 4,072 MWh |
+| Day 3 (audit) 1,020 min (=17 | hrs) | 11 hrs 3,553 MWh | (recorded) |`,
     statements: [
       `Plant A's output rate exceeds Plant B's by more than 45%.`,
       `Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.`,
@@ -4535,7 +4639,7 @@ $$
 $$
 
 Tip: Keep the final values in view (**Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)**) when testing the claim.`,
-      `**D) TRUE** — x + y = $145 + 98 = 243$, and 2.4 times Plant B's rate is 2.4(98) = 235.2; 243 exceeds 235.2.
+      `**D) TRUE** — $x + y = 145 + 98$ = 243, and 2.4 times Plant B's rate is 2.4(98) = 235.2; 243 exceeds 235.2.
 
 Key relation:
 
