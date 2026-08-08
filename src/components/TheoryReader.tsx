@@ -151,28 +151,73 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
   const [progress, setProgress] = useState(0);
   const [activeId, setActiveId] = useState<string>("");
   const scrollRef = useRef<HTMLDivElement>(null);
+  const tocScrollRef = useRef<HTMLDivElement>(null);
+  const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const rafRef = useRef<number | null>(null);
+  const activeIdRef = useRef(activeId);
+  activeIdRef.current = activeId;
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTo({ top: 0 });
     setProgress(0);
     setActiveId(toc[0]?.id ?? "");
+    if (tocScrollRef.current) tocScrollRef.current.scrollTo({ left: 0 });
   }, [chapter, toc]);
 
-  const onScroll = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const max = el.scrollHeight - el.clientHeight;
-    setProgress(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
+  // Keep the active topic chip in view — scroll the strip when it reaches the edge.
+  useEffect(() => {
+    const container = tocScrollRef.current;
+    const chip = chipRefs.current[activeId];
+    if (!container || !chip || !activeId) return;
 
-    const rootTop = el.getBoundingClientRect().top;
-    let current = toc[0]?.id ?? "";
-    for (const item of toc) {
-      const node = el.querySelector<HTMLElement>(`#${CSS.escape(item.id)}`);
-      if (!node) continue;
-      if (node.getBoundingClientRect().top - rootTop <= 72) current = item.id;
+    const pad = 48;
+    const chipLeft = chip.offsetLeft;
+    const chipRight = chipLeft + chip.offsetWidth;
+    const viewLeft = container.scrollLeft;
+    const viewRight = viewLeft + container.clientWidth;
+    let nextLeft = viewLeft;
+
+    if (chipLeft < viewLeft + pad) {
+      nextLeft = Math.max(0, chipLeft - pad);
+    } else if (chipRight > viewRight - pad) {
+      nextLeft = Math.min(
+        container.scrollWidth - container.clientWidth,
+        chipRight - container.clientWidth + pad,
+      );
+    } else {
+      return;
     }
-    setActiveId(current);
+
+    container.scrollTo({ left: nextLeft, behavior: "smooth" });
+  }, [activeId]);
+
+  const onScroll = () => {
+    if (rafRef.current != null) return;
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = null;
+      const el = scrollRef.current;
+      if (!el) return;
+
+      const max = el.scrollHeight - el.clientHeight;
+      // Direct tracking (no CSS width transition) — avoids restart churn / stutter.
+      setProgress(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
+
+      const rootTop = el.getBoundingClientRect().top;
+      let current = toc[0]?.id ?? "";
+      for (const item of toc) {
+        const node = el.querySelector<HTMLElement>(`#${CSS.escape(item.id)}`);
+        if (!node) continue;
+        if (node.getBoundingClientRect().top - rootTop <= 72) current = item.id;
+      }
+      if (current !== activeIdRef.current) setActiveId(current);
+    });
   };
+
+  useEffect(() => {
+    return () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
 
   const jumpTo = (id: string) => {
     const el = scrollRef.current;
@@ -221,16 +266,22 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
         </div>
         <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
           <div
-            className="h-full rounded-full bg-primary transition-[width] duration-150"
-            style={{ width: `${progress}%` }}
+            className="h-full w-full origin-left rounded-full bg-primary will-change-transform"
+            style={{ transform: `scaleX(${progress / 100})` }}
           />
         </div>
         {toc.length > 0 && (
-          <div className="flex gap-1.5 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div
+            ref={tocScrollRef}
+            className="flex gap-1.5 overflow-x-auto scroll-smooth pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
             {toc.map((item) => (
               <button
                 key={item.id}
                 type="button"
+                ref={(node) => {
+                  chipRefs.current[item.id] = node;
+                }}
                 onClick={() => jumpTo(item.id)}
                 className={cn(
                   "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
