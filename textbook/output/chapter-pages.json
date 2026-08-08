@@ -1,5 +1,5 @@
 {
-  "pageCount": 63,
+  "pageCount": 69,
   "chapters": [
     {
       "chapter": 2,
@@ -11,25 +11,25 @@
       "chapter": 3,
       "title": "Focus on different types of businesses",
       "startPage": 16,
-      "endPage": 25
+      "endPage": 26
     },
     {
       "chapter": 4,
       "title": "Forms of business ownership and sources of finance",
-      "startPage": 26,
-      "endPage": 35
+      "startPage": 27,
+      "endPage": 37
     },
     {
       "chapter": 5,
       "title": "Marketing",
-      "startPage": 36,
-      "endPage": 48
+      "startPage": 38,
+      "endPage": 54
     },
     {
       "chapter": 6,
       "title": "Accounting \u2014 keeping record of business transactions",
-      "startPage": 49,
-      "endPage": 62
+      "startPage": 55,
+      "endPage": 68
     }
   ],
   "placeholderFigures": []

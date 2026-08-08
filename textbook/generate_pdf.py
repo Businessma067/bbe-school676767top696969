@@ -27,14 +27,31 @@ from reportlab.platypus import (
     Flowable,
 )
 
+from pdf_brand import (
+    CoverPage,
+    ChapterHero,
+    chapter_extra_photo,
+    end_page_photo,
+    draw_running_chrome,
+    register_fonts,
+    FONT_REG,
+    FONT_BOLD,
+    FONT_ITALIC,
+    FONT_DISP,
+    CARAMEL,
+    IVORY,
+)
+
 ROOT = Path(__file__).resolve().parent
 CONTENT = json.loads((ROOT / "output" / "book-content.json").read_text(encoding="utf-8"))
 OUT_PDF = ROOT / "output" / "bbe-economics-textbook.pdf"
 OUT_MANIFEST = ROOT / "output" / "chapter-pages.json"
 OUT_TEXT = ROOT / "output" / "book-plain.txt"
 
-ACCENT = HexColor("#C45C1A")
-ACCENT_SOFT = HexColor("#FBF0E6")
+register_fonts()
+
+ACCENT = CARAMEL  # site caramel / ember — used sparingly
+ACCENT_SOFT = HexColor("#F4E6D8")
 ACCENT_LIGHT = HexColor("#E8A06A")
 INK = HexColor("#1F1A17")
 MUTED = HexColor("#5C534C")
@@ -43,7 +60,7 @@ EXAM_BG = HexColor("#F3F0EA")
 SCENE_BG = HexColor("#F7F4F0")
 THINK_BG = HexColor("#EEF4F1")
 CONNECT_BG = HexColor("#F5F2EE")
-MECH_BG = HexColor("#FBF0E6")
+MECH_BG = HexColor("#F4E6D8")
 GRID = HexColor("#F0E8DE")  # very light — guides must never compete with labels
 AXIS = HexColor("#4A423B")
 CURVE2 = HexColor("#8A6A4F")
@@ -171,151 +188,151 @@ def styles():
     b = getSampleStyleSheet()
     return {
         "cover_brand": ParagraphStyle(
-            "cbr", parent=b["Normal"], fontName="Helvetica-Bold",
+            "cbr", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=13, textColor=ACCENT, spaceAfter=14,
         ),
         "cover_title": ParagraphStyle(
-            "cti", parent=b["Normal"], fontName="Helvetica-Bold",
+            "cti", parent=b["Normal"], fontName=FONT_DISP,
             fontSize=30, textColor=INK, leading=36, spaceAfter=10,
         ),
         "cover_sub": ParagraphStyle(
-            "csu", parent=b["Normal"], fontName="Helvetica",
+            "csu", parent=b["Normal"], fontName=FONT_REG,
             fontSize=13, textColor=MUTED, leading=17, spaceAfter=6,
         ),
         "cover_method": ParagraphStyle(
-            "cme", parent=b["Normal"], fontName="Helvetica",
+            "cme", parent=b["Normal"], fontName=FONT_REG,
             fontSize=11, textColor=INK, leading=15, spaceBefore=16, spaceAfter=4,
         ),
         "toc_h": ParagraphStyle(
-            "th", parent=b["Normal"], fontName="Helvetica-Bold",
+            "th", parent=b["Normal"], fontName=FONT_DISP,
             fontSize=19, textColor=INK, spaceAfter=14,
         ),
         "toc_ch": ParagraphStyle(
-            "tc", parent=b["Normal"], fontName="Helvetica-Bold",
+            "tc", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=12.5, textColor=ACCENT, spaceBefore=12, spaceAfter=3,
         ),
         "toc_sec": ParagraphStyle(
-            "ts", parent=b["Normal"], fontName="Helvetica",
+            "ts", parent=b["Normal"], fontName=FONT_REG,
             fontSize=10.5, textColor=INK, leftIndent=14, leading=13.5, spaceAfter=1.5,
         ),
         "ch_label": ParagraphStyle(
-            "chl", parent=b["Normal"], fontName="Helvetica-Bold",
+            "chl", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=11, textColor=ACCENT, spaceBefore=4, spaceAfter=4,
         ),
         "ch_title": ParagraphStyle(
-            "cht", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=24, textColor=INK, leading=28, spaceBefore=2, spaceAfter=10,
+            "cht", parent=b["Normal"], fontName=FONT_DISP,
+            fontSize=22, textColor=INK, leading=26, spaceBefore=2, spaceAfter=10,
         ),
         "sec": ParagraphStyle(
-            "sec", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=14, textColor=ACCENT, leading=17, spaceBefore=14, spaceAfter=7,
+            "sec", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=13.5, textColor=INK, leading=17, spaceBefore=14, spaceAfter=7,
         ),
         "body": ParagraphStyle(
-            "body", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
+            "body", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "body_boldlead": ParagraphStyle(
-            "bbl", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
+            "bbl", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "example": ParagraphStyle(
-            "ex", parent=b["Normal"], fontName="Helvetica-Oblique",
-            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
+            "ex", parent=b["Normal"], fontName=FONT_ITALIC,
+            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "obj_h": ParagraphStyle(
-            "oh", parent=b["Normal"], fontName="Helvetica-Bold",
+            "oh", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=12, textColor=INK, spaceBefore=6, spaceAfter=6,
         ),
         "obj_item": ParagraphStyle(
-            "oi", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=18, spaceAfter=3,
+            "oi", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.2, leftIndent=18, spaceAfter=3,
         ),
         "recap_h": ParagraphStyle(
-            "rh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=14, textColor=ACCENT, spaceBefore=10, spaceAfter=8,
+            "rh", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=14, textColor=INK, spaceBefore=10, spaceAfter=8,
         ),
         "caption": ParagraphStyle(
-            "cap", parent=b["Normal"], fontName="Helvetica-Oblique",
-            fontSize=11.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
+            "cap", parent=b["Normal"], fontName=FONT_ITALIC,
+            fontSize=10.5, textColor=MUTED, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
         ),
         "bullet": ParagraphStyle(
-            "bu", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=4,
+            "bu", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=4,
         ),
         "body_emph": ParagraphStyle(
-            "bem", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
+            "bem", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "callout_label": ParagraphStyle(
-            "cl", parent=b["Normal"], fontName="Helvetica-Bold",
+            "cl", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=9.5, textColor=ACCENT, leading=12, spaceAfter=2,
         ),
         "callout_title": ParagraphStyle(
-            "ctt", parent=b["Normal"], fontName="Helvetica-Bold",
+            "ctt", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=11.5, textColor=INK, leading=14.5, spaceAfter=2,
         ),
         "callout_body": ParagraphStyle(
-            "cb", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.2, textColor=INK, leading=15, alignment=TA_JUSTIFY, spaceAfter=0,
+            "cb", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.0, textColor=INK, leading=15, alignment=TA_JUSTIFY, spaceAfter=0,
         ),
         "formula": ParagraphStyle(
-            "fo", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.2, alignment=TA_LEFT,
+            "fo", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.2, alignment=TA_LEFT,
         ),
         "formula_vars": ParagraphStyle(
-            "fv", parent=b["Normal"], fontName="Helvetica-Oblique",
+            "fv", parent=b["Normal"], fontName=FONT_ITALIC,
             fontSize=10.5, textColor=MUTED, leading=13.5, spaceBefore=3,
         ),
         "worked_h": ParagraphStyle(
-            "wh", parent=b["Normal"], fontName="Helvetica-Bold",
+            "wh", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=12, textColor=ACCENT, leading=15, spaceAfter=4,
         ),
         "worked_step": ParagraphStyle(
-            "ws", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=3,
+            "ws", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=11.2, textColor=INK, leading=15.2, leftIndent=16, spaceAfter=3,
         ),
         "worked_result": ParagraphStyle(
-            "wr", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=INK, leading=15.2, spaceBefore=4, spaceAfter=6,
+            "wr", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=11.2, textColor=INK, leading=15.2, spaceBefore=4, spaceAfter=6,
         ),
         "take_h": ParagraphStyle(
-            "tkh", parent=b["Normal"], fontName="Helvetica-Bold",
+            "tkh", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=12, textColor=INK, spaceBefore=4, spaceAfter=5,
         ),
         "check_h": ParagraphStyle(
-            "ckh", parent=b["Normal"], fontName="Helvetica-Bold",
+            "ckh", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=12, textColor=INK, spaceBefore=4, spaceAfter=5,
         ),
         "cell": ParagraphStyle(
-            "cell", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_LEFT,
+            "cell", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=10.8, textColor=INK, leading=14.2, alignment=TA_LEFT,
         ),
         "cell_b": ParagraphStyle(
-            "cellb", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_LEFT,
+            "cellb", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=10.8, textColor=INK, leading=14.2, alignment=TA_LEFT,
         ),
         "cell_c": ParagraphStyle(
-            "cellc", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11.5, textColor=INK, leading=14.8, alignment=TA_CENTER,
+            "cellc", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=10.8, textColor=INK, leading=14.2, alignment=TA_CENTER,
         ),
         "cell_h": ParagraphStyle(
-            "cellh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=white, leading=14.8, alignment=TA_CENTER,
+            "cellh", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=10.8, textColor=white, leading=14.2, alignment=TA_CENTER,
         ),
         "cell_h_l": ParagraphStyle(
-            "cellhl", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=white, leading=14.8, alignment=TA_LEFT,
+            "cellhl", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=10.8, textColor=white, leading=14.2, alignment=TA_LEFT,
         ),
         "compare_h": ParagraphStyle(
-            "cmh", parent=b["Normal"], fontName="Helvetica-Bold",
-            fontSize=11.5, textColor=white, leading=14, alignment=TA_CENTER,
+            "cmh", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=11.0, textColor=white, leading=14, alignment=TA_CENTER,
         ),
         "compare_item": ParagraphStyle(
-            "cmi", parent=b["Normal"], fontName="Helvetica",
-            fontSize=11, textColor=INK, leading=14, alignment=TA_LEFT,
+            "cmi", parent=b["Normal"], fontName=FONT_REG,
+            fontSize=10.5, textColor=INK, leading=14, alignment=TA_LEFT,
         ),
         "end_title": ParagraphStyle(
-            "et", parent=b["Normal"], fontName="Helvetica-Bold",
+            "et", parent=b["Normal"], fontName=FONT_DISP,
             fontSize=19, textColor=INK, leading=23, spaceAfter=10,
         ),
     }
@@ -1340,6 +1357,348 @@ def _fig_finance_sources(c, x, y, w, h):
          10, False, INK, italic=True)
 
 
+def _fig_values_vision(c, x, y, w, h):
+    steps = [
+        ("Vision", "Where the firm wants to go"),
+        ("Values", "What people share and stand for"),
+        ("Objectives", "Concrete goals that guide action"),
+        ("People", "Employees & managers who deliver"),
+    ]
+    gap = 10
+    bw = (w - gap * 3) / 4
+    by = y + 28
+    bh = h - 50
+    for i, (t, s) in enumerate(steps):
+        bx = x + i * (bw + gap)
+        fill = ACCENT_SOFT if i == 0 else white
+        _box(c, bx, by, bw, bh, fill, lw=1.0)
+        _txt(c, bx + bw / 2, by + bh - 22, t, 11.5, True, ACCENT)
+        for j, line in enumerate(_wrap_simple(s, 16)):
+            _txt(c, bx + bw / 2, by + bh - 44 - j * 12, line, 9.5, False, INK)
+        if i < len(steps) - 1:
+            _txt(c, bx + bw + gap / 2, by + bh / 2, ">", 12, True, ACCENT)
+    _txt(c, x + w / 2, y + 8,
+         "Long-run success needs aligned people, values, objectives and vision.",
+         9.5, False, MUTED, italic=True)
+
+
+def _wrap_simple(text: str, max_chars: int) -> list[str]:
+    words = text.split()
+    lines, cur = [], ""
+    for word in words:
+        trial = (cur + " " + word).strip()
+        if len(trial) <= max_chars:
+            cur = trial
+        else:
+            if cur:
+                lines.append(cur)
+            cur = word
+    if cur:
+        lines.append(cur)
+    return lines or [""]
+
+
+def _fig_environment_impact(c, x, y, w, h):
+    mid = x + w / 2
+    _box(c, mid - 110, y + h - 42, 220, 28, ACCENT_SOFT, lw=1.0)
+    _txt(c, mid, y + h - 24, "Business activities  ->  environment", 11, True, ACCENT)
+    items = [
+        ("Energy & climate", "power use, emissions"),
+        ("Materials", "inputs, recycling, waste"),
+        ("Water", "consumption & discharge"),
+        ("Products in use", "lifetime, repair, reuse"),
+    ]
+    gap = 10
+    bw = (w - gap) / 2
+    bh = 48
+    for i, (t, s) in enumerate(items):
+        col, row = i % 2, i // 2
+        bx = x + col * (bw + gap)
+        by = y + h - 110 - row * (bh + 8)
+        _box(c, bx, by, bw, bh, white, lw=0.9)
+        _txt(c, bx + 10, by + bh - 16, t, 11, True, ACCENT, "l")
+        _txt(c, bx + 10, by + 14, s, 10, False, MUTED, "l")
+    _txt(c, mid, y + 8, "Concrete results matter — not greenwashing claims alone.", 9.5, False, MUTED, italic=True)
+
+
+def _fig_shareholder_structure(c, x, y, w, h):
+    _txt(c, x + w / 2, y + h - 12, "Shareholder structure (illustrative listed AG)", 12, True, ACCENT)
+    # Simple donut-like pie with wedges approximated as colored boxes + legend
+    data = [
+        ("Anchor foundations", 28, ACCENT),
+        ("Institutional free float", 47, MUTED),
+        ("Private & other free float", 25, HexColor("#A67C52")),
+    ]
+    cx, cy, r = x + w * 0.32, y + h * 0.48, min(w, h) * 0.28
+    # draw concentric arcs as stand-in pie slices labels beside
+    start = 90
+    for name, pct, col in data:
+        sweep = 360 * pct / 100
+        c.setStrokeColor(col)
+        c.setFillColor(col)
+        c.setLineWidth(14)
+        # arc approx via wedge fan of lines
+        steps = max(8, int(sweep / 8))
+        for i in range(steps):
+            a0 = math.radians(start - i * sweep / steps)
+            a1 = math.radians(start - (i + 1) * sweep / steps)
+            c.setStrokeColor(col)
+            c.setLineWidth(18)
+            c.line(cx + math.cos(a0) * (r - 8), cy + math.sin(a0) * (r - 8),
+                   cx + math.cos(a1) * (r - 8), cy + math.sin(a1) * (r - 8))
+        start -= sweep
+    c.setFillColor(FIG_FILL)
+    c.circle(cx, cy, r * 0.42, stroke=0, fill=1)
+    lx = x + w * 0.58
+    ly = y + h * 0.62
+    for name, pct, col in data:
+        c.setFillColor(col)
+        c.rect(lx, ly, 10, 10, stroke=0, fill=1)
+        _txt(c, lx + 16, ly + 1, f"{name}  {pct}%", 10, False, INK, "l")
+        ly -= 22
+
+
+def _fig_product_orientation(c, x, y, w, h):
+    gap = 14
+    bw = (w - gap) / 2
+    blocks = [
+        ("Product orientation", [
+            "Focus on production & product features",
+            "->",
+            "Sales",
+            '"A good product sells itself" / advertising',
+        ], white),
+        ("Market orientation", [
+            "Focus on customers' needs & wants",
+            "->",
+            "Produce what customers need",
+            "Research first, then build",
+        ], ACCENT_SOFT),
+    ]
+    for i, (title, lines, fill) in enumerate(blocks):
+        bx = x + i * (bw + gap)
+        _box(c, bx, y + 10, bw, h - 20, fill, lw=1.0)
+        _txt(c, bx + bw / 2, y + h - 36, title, 12, True, ACCENT)
+        yy = y + h - 60
+        for line in lines:
+            bold = line in ("Sales", "Produce what customers need")
+            _txt(c, bx + bw / 2, yy, line, 10 if not bold else 11, bold, INK if bold else MUTED)
+            yy -= 18
+
+
+def _fig_market_measures(c, x, y, w, h):
+    mid = x + w / 2
+    _box(c, mid - 100, y + h - 36, 200, 24, ACCENT_SOFT, lw=1.0)
+    _txt(c, mid, y + h - 20, "Market measures (course view)", 11, True, ACCENT)
+    items = [
+        ("Market volume", "total sales of all firms in a defined market"),
+        ("Absolute market share", "own sales / market volume"),
+        ("Relative market share", "own share / largest rival's share"),
+        ("Growth rates", "how segments expand or shrink over time"),
+    ]
+    gap, bw, bh = 10, (w - 10) / 2, 48
+    for i, (t, s) in enumerate(items):
+        col, row = i % 2, i // 2
+        bx = x + col * (bw + gap)
+        by = y + h - 100 - row * (bh + 8)
+        _box(c, bx, by, bw, bh, white, lw=0.9)
+        _txt(c, bx + 10, by + bh - 16, t, 11, True, ACCENT, "l")
+        _txt(c, bx + 10, by + 14, s, 9.5, False, MUTED, "l")
+
+
+def _fig_market_volume_potential(c, x, y, w, h):
+    _txt(c, x + w / 2, y + h - 10, "Volume vs potential", 12, True, ACCENT)
+    headers = ["", "Volume", "Potential"]
+    rows = [
+        ["All businesses", "Market volume — sales of all firms", "Market potential — volume + potential customers"],
+        ["One business", "Sales volume — sales of one firm", "Sales potential — volume + gains from rivals + share of growth"],
+    ]
+    col_w = [w * 0.18, w * 0.41, w * 0.41]
+    row_h = 46
+    hy = y + h - 36
+    # header
+    cx0 = x
+    for i, head in enumerate(headers):
+        c.setFillColor(ACCENT)
+        c.rect(cx0, hy - 22, col_w[i], 22, stroke=0, fill=1)
+        _txt(c, cx0 + col_w[i] / 2, hy - 15, head, 10, True, white)
+        cx0 += col_w[i]
+    for r, row in enumerate(rows):
+        ry = hy - 22 - (r + 1) * row_h
+        cx0 = x
+        for i, cell in enumerate(row):
+            fill = ACCENT_SOFT if i == 2 else (HexColor("#F3F0EA") if i == 1 else white)
+            c.setFillColor(fill)
+            c.setStrokeColor(RULE)
+            c.setLineWidth(0.5)
+            c.rect(cx0, ry, col_w[i], row_h, stroke=1, fill=1)
+            lines = _wrap_simple(cell, 28 if i else 14)
+            yy = ry + row_h - 14
+            for line in lines[:3]:
+                _txt(c, cx0 + 6, yy, line, 9, i == 0, INK, "l")
+                yy -= 11
+            cx0 += col_w[i]
+    _txt(c, x + w / 2, y + 8,
+         "Potential exceeds volume when unrealised customers (or rival gains) remain.",
+         9, False, MUTED, italic=True)
+
+
+def _fig_segmentation_targeting(c, x, y, w, h):
+    steps = [
+        ("Segmentation", "What characteristics? Can customers be grouped?"),
+        ("Targeting", "Which groups are our target markets?"),
+        ("Positioning", "Which offer meets those demands in their minds?"),
+    ]
+    gap = 12
+    bw = (w - gap * 2) / 3
+    for i, (t, q) in enumerate(steps):
+        bx = x + i * (bw + gap)
+        fill = ACCENT_SOFT if i == 2 else white
+        _box(c, bx, y + 18, bw, h - 36, fill, lw=1.0)
+        _txt(c, bx + bw / 2, y + h - 40, t, 12, True, ACCENT)
+        for j, line in enumerate(_wrap_simple(q, 22)):
+            _txt(c, bx + bw / 2, y + h - 62 - j * 12, line, 9.5, False, MUTED)
+        if i < 2:
+            _txt(c, bx + bw + gap / 2, y + h / 2, ">", 14, True, ACCENT)
+
+
+def _fig_product_mix_strategies(c, x, y, w, h):
+    _txt(c, x + w / 2, y + h - 12, "Product-mix strategies", 12, True, ACCENT)
+    cells = [
+        ("Line extension", "Increase the depth of a line"),
+        ("Mix extension", "Increase the number of lines"),
+        ("Alteration", "Alter existing products / relaunch"),
+        ("Contraction", "Eliminate products or lines"),
+    ]
+    gap = 10
+    bw, bh = (w - gap) / 2, (h - 50) / 2
+    for i, (t, s) in enumerate(cells):
+        col, row = i % 2, i // 2
+        bx = x + col * (bw + gap)
+        by = y + h - 30 - (row + 1) * (bh + gap) + gap
+        _box(c, bx, by, bw, bh, white, lw=0.9)
+        _txt(c, bx + bw / 2, by + bh - 18, t, 11, True, ACCENT)
+        _txt(c, bx + bw / 2, by + bh / 2 - 4, s, 10, False, MUTED)
+    _txt(c, x + w / 2, y + 6,
+         "Expansion deepens or widens; alteration refreshes; contraction removes weak items.",
+         9, False, MUTED, italic=True)
+
+
+def _fig_business_units(c, x, y, w, h):
+    units = [
+        ("Unit A", "Mobile & consumer devices", "phones, tablets, cameras"),
+        ("Unit B", "Automotive / industrial / medical", "control & diagnostic systems"),
+        ("Unit C", "Modules & power", "memory cards, power modules"),
+    ]
+    gap = 10
+    bw = (w - gap * 2) / 3
+    for i, (t, s, e) in enumerate(units):
+        bx = x + i * (bw + gap)
+        _box(c, bx, y + 16, bw, h - 32, white, lw=1.0)
+        _txt(c, bx + bw / 2, y + h - 40, t, 12, True, ACCENT)
+        for j, line in enumerate(_wrap_simple(s, 18)):
+            _txt(c, bx + bw / 2, y + h - 62 - j * 12, line, 10, True, INK)
+        _txt(c, bx + bw / 2, y + 36, e, 9.5, False, MUTED)
+
+
+def _fig_ansoff(c, x, y, w, h):
+    _txt(c, x + w / 2, y + h - 10, "Ansoff product-market matrix", 12, True, ACCENT)
+    label_w = 78
+    gap = 6
+    cw = (w - label_w - gap * 2) / 2
+    ch = (h - 48) / 2
+    # column headers
+    _txt(c, label_w + gap + cw / 2, y + h - 28, "Existing market", 9.5, True, MUTED)
+    _txt(c, label_w + gap * 2 + cw + cw / 2, y + h - 28, "New market", 9.5, True, MUTED)
+    cells = [
+        (0, 0, "Market penetration", "existing product · existing market", "safest", True),
+        (1, 0, "Market development", "existing product · new market", "medium risk", False),
+        (0, 1, "Product development", "new product · existing market", "medium risk", False),
+        (1, 1, "Diversification", "new product · new market", "riskiest", False),
+    ]
+    row_labels = ["Existing product", "New product"]
+    for col, row, t, s, r, soft in cells:
+        bx = x + label_w + gap + col * (cw + gap)
+        by = y + h - 40 - (row + 1) * (ch + gap) + gap
+        _box(c, bx, by, cw, ch, ACCENT_SOFT if soft else white, lw=0.9)
+        _txt(c, bx + cw / 2, by + ch - 16, t, 10.5, True, ACCENT)
+        _txt(c, bx + cw / 2, by + ch / 2 - 2, s, 9, False, MUTED)
+        _txt(c, bx + cw / 2, by + 12, r, 8.5, False, INK, italic=True)
+    for ri, lab in enumerate(row_labels):
+        by = y + h - 40 - (ri + 1) * (ch + gap) + gap + ch / 2 - 4
+        _txt(c, x + label_w - 4, by, lab, 8.5, True, MUTED, "r")
+
+
+def _fig_break_even(c, x, y, w, h):
+    # North Harbor: P=90, VC=54, FC=72000, BEP=2000
+    ox, oy, pw, ph, PX, PY = _chart(
+        c, x, y, w, h,
+        "Break-even", "North Harbor dock clocks",
+        4000, 360000, 800, 60000,
+        "Clocks sold", "EUR",
+    )
+    # rescale: max_q=4000 maps q, max_p was used as Y — revenue at 4000 = 360k
+    # Fixed = 72k horizontal
+    pts_fixed = [(PX(0), PY(72000)), (PX(4000), PY(72000))]
+    pts_total = [(PX(0), PY(72000)), (PX(4000), PY(72000 + 54 * 4000))]
+    pts_rev = [(PX(0), PY(0)), (PX(4000), PY(90 * 4000))]
+    _curve(c, pts_fixed, HexColor("#A67C52"), 1.4, dashed=True)
+    _curve(c, pts_total, MUTED, 2.0)
+    _curve(c, pts_rev, ACCENT, 2.4)
+    bep_x, bep_y = PX(2000), PY(90 * 2000)
+    _marker(c, bep_x, bep_y, "BEP", 7, 8)
+    _txt(c, ox + 8, oy + ph - 12, "Fixed", 9, False, HexColor("#A67C52"), "l")
+    _txt(c, ox + 8, oy + ph - 24, "Total costs", 9, False, MUTED, "l")
+    _txt(c, ox + 8, oy + ph - 36, "Revenues", 9, False, ACCENT, "l")
+    _txt(c, x + w / 2, y + 4, "Break-even at 2,000 clocks (contribution EUR 36 covers EUR 72,000).", 9, False, MUTED, italic=True)
+
+
+def _fig_pe_elastic(c, x, y, w, h):
+    ox, oy, pw, ph, PX, PY = _chart(
+        c, x, y, w, h,
+        "Elastic demand", "dock clocks",
+        180, 100, 20, 20,
+        "Quantity", "Price (EUR)",
+    )
+    # Remap using domain q 60-180, p 40-100 — chart uses 0-based max, so shift via scale
+    def qx(q):
+        return ox + pw * ((q - 60) / 120)
+
+    def py(p):
+        return oy + ph * ((p - 40) / 60)
+
+    pts = [(qx(80), py(90)), (qx(120), py(72)), (qx(160), py(54))]
+    _curve(c, pts, ACCENT, 2.4)
+    _marker(c, qx(80), py(90), "A", 6, 6)
+    _marker(c, qx(120), py(72), "B", 6, 6)
+    _txt(c, x + w / 2, y + 4,
+         "-20% price (90->72)  ->  +50% qty (80->120)  |e|=2.5 elastic",
+         9, False, MUTED, italic=True)
+
+
+def _fig_pe_inelastic(c, x, y, w, h):
+    ox, oy, pw, ph, PX, PY = _chart(
+        c, x, y, w, h,
+        "Inelastic demand", "workshop software licence",
+        260, 55, 20, 10,
+        "Quantity", "Price (EUR)",
+    )
+
+    def qx(q):
+        return ox + pw * ((q - 180) / 80)
+
+    def py(p):
+        return oy + ph * ((p - 20) / 35)
+
+    pts = [(qx(200), py(45)), (qx(220), py(36)), (qx(240), py(27))]
+    _curve(c, pts, ACCENT, 2.4)
+    _marker(c, qx(200), py(45), "A", 6, 6)
+    _marker(c, qx(220), py(36), "B", 6, 6)
+    _txt(c, x + w / 2, y + 4,
+         "Price cut raises quantity only a little — demand is inelastic, revenue falls.",
+         9, False, MUTED, italic=True)
+
+
 FIGURES = {
     "circular-flow": _fig_circular_flow,
     "supply-curve": _fig_supply,
@@ -1355,6 +1714,19 @@ FIGURES = {
     "economic-systems": _fig_economic_systems,
     "stakeholder-map": _fig_stakeholder_map,
     "finance-sources": _fig_finance_sources,
+    "values-vision": _fig_values_vision,
+    "environment-impact": _fig_environment_impact,
+    "shareholder-structure": _fig_shareholder_structure,
+    "product-orientation": _fig_product_orientation,
+    "market-measures": _fig_market_measures,
+    "market-volume-potential": _fig_market_volume_potential,
+    "segmentation-targeting": _fig_segmentation_targeting,
+    "product-mix-strategies": _fig_product_mix_strategies,
+    "business-units": _fig_business_units,
+    "ansoff-matrix": _fig_ansoff,
+    "break-even": _fig_break_even,
+    "price-elasticity-elastic": _fig_pe_elastic,
+    "price-elasticity-inelastic": _fig_pe_inelastic,
 }
 
 FIG_HEIGHTS = {
@@ -1372,6 +1744,19 @@ FIG_HEIGHTS = {
     "economic-systems": 175,
     "stakeholder-map": 250,
     "finance-sources": 210,
+    "values-vision": 150,
+    "environment-impact": 190,
+    "shareholder-structure": 200,
+    "product-orientation": 175,
+    "market-measures": 175,
+    "market-volume-potential": 175,
+    "segmentation-targeting": 140,
+    "product-mix-strategies": 175,
+    "business-units": 145,
+    "ansoff-matrix": 200,
+    "break-even": 245,
+    "price-elasticity-elastic": 230,
+    "price-elasticity-inelastic": 230,
 }
 
 
@@ -1446,32 +1831,16 @@ class ChapterStart(Flowable):
 
 def chrome(canvas, doc):
     # Cover: no page number / no chrome
-    if doc.page in STATE.cover_pages or STATE.skip_chrome:
-        return
-    canvas.saveState()
-
-    # Running header — light band + chapter title (no thick orange frame)
-    if STATE.footer_chapter and doc.page > 2:
-        max_w = W - L_M - R_M - 8
-        label, size = fit_header_label(canvas, STATE.footer_chapter, max_w, 9.0)
-        if label:
-            canvas.setFillColor(ACCENT_SOFT)
-            canvas.rect(L_M, H - 13 * mm, W - L_M - R_M, 7 * mm, stroke=0, fill=1)
-            canvas.setFillColor(ACCENT)
-            canvas.setFont("Helvetica-Bold", size)
-            canvas.drawRightString(W - R_M - 4, H - 10.5 * mm, label)
-
-    # Footer
-    canvas.setStrokeColor(RULE)
-    canvas.setLineWidth(0.5)
-    canvas.line(L_M, 12 * mm, W - R_M, 12 * mm)
-    canvas.setFillColor(MUTED)
-    canvas.setFont("Helvetica", 8.5)
-    canvas.drawString(L_M, 7 * mm, "BBE ECONOMICS \xb7 FULL COURSE")
-    canvas.setFillColor(INK)
-    canvas.setFont("Helvetica-Bold", 10)
-    canvas.drawRightString(W - R_M, 7 * mm, str(doc.page))
-    canvas.restoreState()
+    draw_running_chrome(
+        canvas,
+        doc,
+        page_w=W,
+        page_h=H,
+        l_m=L_M,
+        r_m=R_M,
+        chapter_label=STATE.footer_chapter,
+        skip=(doc.page in STATE.cover_pages or STATE.skip_chrome),
+    )
 
 
 def formula_block(b: dict, width: float):
@@ -1686,62 +2055,16 @@ def build():
     width = W - L_M - R_M
     story = []
 
-    # Cover
-    class CoverAccent(Flowable):
-        def __init__(self):
-            super().__init__()
-            self.width = width
-            self.height = 8
-
-        def draw(self):
-            c = self.canv
-            c.setFillColor(ACCENT)
-            c.rect(0, 2, 42, 5, stroke=0, fill=1)
-            c.setFillColor(ACCENT_SOFT)
-            c.rect(48, 2, self.width - 48, 5, stroke=0, fill=1)
-
-    class MethodSteps(Flowable):
-        def __init__(self, steps, w):
-            super().__init__()
-            self.steps = steps
-            self.width = w
-            self.height = 28
-
-        def draw(self):
-            c = self.canv
-            n = max(1, len(self.steps))
-            gap = 6
-            bw = (self.width - gap * (n - 1)) / n
-            for i, step in enumerate(self.steps):
-                x = i * (bw + gap)
-                c.setFillColor(ACCENT_SOFT)
-                c.rect(x, 4, bw, 20, stroke=0, fill=1)
-                c.setFillColor(ACCENT)
-                c.setFont("Helvetica-Bold", 9)
-                c.drawCentredString(x + bw / 2, 11, step)
-
+    # Cover — branded composition (photo + arcs), not orange tile stack
     STATE.skip_chrome = True
-    story.append(Spacer(1, 42 * mm))
-    story.append(CoverAccent())
-    story.append(Spacer(1, 14))
-    story.append(Paragraph(esc(brand), S["cover_brand"]))
-    story.append(Paragraph(esc(title), S["cover_title"]))
-    story.append(Paragraph(esc(subtitle), S["cover_sub"]))
-    story.append(Spacer(1, 8))
-    story.append(Paragraph(esc(method), S["cover_method"]))
-    story.append(Spacer(1, 6))
-    story.append(MethodSteps(
-        ["Scene", "Idea", "Mechanism", "Practice", "Exam"],
-        width,
+    story.append(CoverPage(
+        brand=brand,
+        title=title,
+        subtitle=subtitle,
+        method=method,
+        width=width,
+        page_h=H - T_M - B_M,
     ))
-    story.append(Spacer(1, 16))
-    story.append(Paragraph(
-        "Original teaching for the Economics Full Course — built for exam recognition, "
-        "not for reading like a traditional textbook reprint.",
-        S["cover_sub"],
-    ))
-    story.append(Spacer(1, 8))
-    story.append(Paragraph("Chapters 2 – 6", S["cover_sub"]))
     story.append(PageBreak())
 
     # TOC
@@ -1757,11 +2080,15 @@ def build():
     ranges: dict[int, dict] = {}
     for ch in chapters:
         story.append(ChapterStart(ch["num"], ch["title"]))
-        story.append(Paragraph(f"Chapter {ch['num']}", S["ch_label"]))
-        story.append(Paragraph(esc(ch["title"]), S["ch_title"]))
+        story.append(ChapterHero(ch["num"], ch["title"], width))
+        story.append(Spacer(1, 8))
         if ch.get("intro"):
             story.append(Paragraph(esc(ch["intro"]), S["body"]))
             plain_parts.append(f"Chapter {ch['num']}. {ch['title']}\n{ch['intro']}")
+
+        extra = chapter_extra_photo(ch["num"], width)
+        if extra:
+            story.append(extra)
 
         objectives = ch.get("objectives") or []
         if objectives:
@@ -1787,13 +2114,14 @@ def build():
         story.append(PageBreak())
 
     story.append(SetHeader(""))
-    story.append(Spacer(1, 50 * mm))
+    story.append(Spacer(1, 24 * mm))
     story.append(Paragraph("End of the Full Course theory", S["end_title"]))
     story.append(Paragraph(
         "You have walked the BBE Path from scene to exam language across Chapters 2–6. "
         "Continue with practice tasks for the chapter you have just studied.",
         S["body"],
     ))
+    story.extend(end_page_photo(width))
 
     OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
     doc = BaseDocTemplate(
@@ -1844,6 +2172,7 @@ def build():
     OUT_MANIFEST.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     OUT_TEXT.write_text("\n\n".join(plain_parts), encoding="utf-8")
     print(json.dumps(manifest, indent=2))
+    print(f"wrote {OUT_PDF} ({OUT_PDF.stat().st_size // 1024} KB)")
     if PLACEHOLDER_FIGS:
         print("PLACEHOLDER_FIGURES:", ", ".join(PLACEHOLDER_FIGS))
     else:

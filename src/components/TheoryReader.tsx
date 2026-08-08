@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { BookOpen, Target, AlertTriangle } from "lucide-react";
+import { BookOpen, Target, AlertTriangle, Download } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
+
+const MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
+const MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
 
 type Props = {
   chapter: number;
@@ -257,12 +260,21 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
               <div className="truncate font-display text-sm font-bold sm:text-base">{title}</div>
             </div>
           </div>
-          <button
-            onClick={onGoToPractice}
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:text-sm"
-          >
-            <Target className="h-4 w-4" /> Go to Practice
-          </button>
+          <div className="flex shrink-0 items-center gap-2">
+            <a
+              href={MATERIALS_PDF_URL}
+              download={MATERIALS_PDF_NAME}
+              className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:text-sm"
+            >
+              <Download className="h-4 w-4" /> Download materials
+            </a>
+            <button
+              onClick={onGoToPractice}
+              className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:text-sm"
+            >
+              <Target className="h-4 w-4" /> Go to Practice
+            </button>
+          </div>
         </div>
         <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
           <div
