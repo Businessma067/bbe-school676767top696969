@@ -28,6 +28,12 @@ function mdInline(s) {
 
 function blockToMd(b) {
   const t = b.type;
+  if (t === "subhead") {
+    const id = mdInline(b.id || "");
+    const title = mdInline(b.title || "");
+    if (!id && !title) return "";
+    return `### ${id ? `${id} ` : ""}${title}\n`;
+  }
   if (t === "p" || t === "scene" || t === "mechanism" || t === "connect" || t === "trap" || t === "exam") {
     let text = mdInline(b.text || b.prompt || "");
     if (t === "think" || b.prompt) text = mdInline(b.prompt || b.text || "");

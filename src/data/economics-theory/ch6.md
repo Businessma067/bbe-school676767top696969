@@ -43,7 +43,11 @@ Building Northline's opening balance sheet means summing **assets** first: tools
 
 Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 22,000 and equity 24,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 22,000 + 24,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 23,500 and equity 24,000 — the same economic item, but different financing changes the totals.
 
+### Fixed assets, current assets and intangibles
+
 Assets are also split by how long they stay in the business. **Fixed** or **non-current assets** normally have a useful life of more than one year, are intended for longer-term use, and are usually harder to turn into cash quickly; examples include property, plant, buildings, machinery, office equipment kept for use, longer-term financial assets, and intangible assets such as patents, trademarks and copyrights. **Current assets** have higher **liquidity** and are normally used up, sold or converted within a year — inventory (merchandise not yet sold), trade receivables or debtors (money customers owe), and cash. Intangible assets cannot be touched, but they still have value for the business under the same logic as tangible ones: a workshop may own none yet, while a manufacturing group may report large patents, trademarks and licences.
+
+### Liabilities and equity
 
 Liabilities follow a similar duration split. **Current liabilities** are due within one year and include trade payables (trade credit to suppliers), bank overdrafts and other short-term obligations, whereas **non-current liabilities** last more than one year and include long-term bank loans and bonds payable. A useful structure measure is the **equity ratio**, which asks what share of total capital the owners themselves have financed.
 
@@ -55,11 +59,13 @@ Equity usually does not have to be repaid like a loan, so a higher **equity shar
 
 ## 6.2 Other components of the financial statement of a business
 
-One statement is never enough on its own. Northline's end-of-year balance sheet may show stronger equity and more cash than on day one, yet that still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan, so performance over a **period** needs the full **financial statement** set.
+The balance sheet alone is not enough. It shows assets, liabilities and equity at a **point in time**, but not total sales, production costs or which cash movements came from operations versus a new loan. The **financial statement** of a business therefore combines the balance sheet, the **income statement** (profit and loss account) and the **cash flow statement** — together they reveal performance over a **period**.
 
 [[FIGURE:financial-statements|Three components of the financial statement: balance sheet (stock at a date), income statement (revenues, costs and expenses over a period), cash flow statement (cash in and cash out over a period).]]
 
 **Financial statement** — The package that reveals performance over a period: **balance sheet** + **income statement** (profit and loss account) + **cash flow statement**. The balance sheet alone cannot show turnover or production costs.
+
+### 6.2.1 Profit and loss account
 
 **Income statement (profit and loss account)** — A period summary of revenues, costs and expenses. If revenues exceed costs and expenses → **profit**. If costs and expenses exceed revenue → **loss**.
 
@@ -96,6 +102,8 @@ An expenditure is not yet an expense when Northline spends €12,000 cash on a n
 | Trade receivables | 6,800 |  |  |
 | Cash and bank | 40,700 |  |  |
 | Total assets | 101,500 | Total liabilities and equity | 101,500 |
+
+### 6.2.2 Cash flow statement
 
 **Cash flow statement** — Shows cash flowing into and out of the business during the period. Positive cash flow is **not the same as profit**.
 
@@ -190,6 +198,8 @@ Once Cedar's statements are complete, a lender still wants sharper answers: can 
 
 The ratio map for this course pairs each theme with a measure and a core idea: liquidity uses **working capital** (current assets left after current liabilities), the **current ratio** (current assets per €1 of current liabilities) and the **acid-test ratio** (the same idea excluding inventory); profitability uses **ROE** (EBIT relative to equity) and ROCE (EBIT relative to capital employed); efficiency uses asset turnover (turnover per €1 of average assets) and inventory turnover (how many times stock is sold or replaced); and gearing or structure uses the equity ratio (equity as a percentage of total assets) and the debt ratio (total debt as a percentage of total assets).
 
+### 6.5.1 Liquidity
+
 Liquidity starts with an intuition: imagine every short-term claim lands at once, and ask whether the firm's relatively liquid resources — cash, receivables, inventory — can cover those claims and leave anything over. That leftover idea is **working capital**; retailers with heavy stock often need more of it than a service firm with little inventory, and high inventory can serve customers quickly while also tying up money, needing space and risking obsolescence.
 
 > **Working capital**  
@@ -206,6 +216,8 @@ Liquidity starts with an intuition: imagine every short-term claim lands at once
 
 For Cedar in Year 2 (€ thousands), current assets = 281, inventory = 92 and current liabilities = 150, so **working capital** = 281 − 150 = 131 (positive), the **current ratio** = 281 / 150 ≈ 1.87 (above 1 and inside the 1.5–2 comfort discussion), and the **acid-test** = (281 − 92) / 150 = 189 / 150 = 1.26 (still above 1). Short-term cover looks adequate on these measures, though you still judge against industry peers. A short-term loan, overdraft or extra trade credit can ease a cash squeeze, but it raises current liabilities and can shrink working capital, whereas improving both cash and working capital more sustainably usually means adding equity or longer-term borrowing. A current ratio above 1 is not automatically “safe” if most current assets are slow-moving inventory — that is why the **acid test** exists — and fixing cash with short-term borrowing can worsen the working-capital picture. Liquidity exam work usually asks you to compute working capital, current ratio and acid test, interpret “greater than 1”, explain why inventory is dropped in the acid test, and link short-term borrowing to lower working capital.
 
+### 6.5.2 Profitability
+
 Profitability starts from a similar intuition: a profit of €50,000 sounds fine until you ask relative to how much capital was risked, so profitability compares profit to a size base — **equity**, **capital employed**, or **turnover** — and tiny profits on huge capital look weak.
 
 > **Return on equity (ROE)**  
@@ -217,6 +229,8 @@ Profitability starts from a similar intuition: a profit of €50,000 sounds fine
 > *Capital employed ≈ equity + non-current liabilities, or equivalently assets − current liabilities. Average capital employed (beginning and end of year, ÷ 2) may be used instead of the year-end figure.*
 
 For Cedar Year 2 (€ thousands), EBIT = 82 and equity = 388, so **ROE** = 82 / 388 ≈ 21.1%. **Capital employed** = assets − current liabilities = 776 − 150 = 626 (also equity 388 + non-current liabilities 238), so **ROCE** = 82 / 626 ≈ 13.1%; if average capital employed were 640, ROCE = 82 / 640 = 12.8%. Those returns look meaningful only beside peer ROCE/ROE and Cedar's own trend.
+
+### 6.5.3 Financial efficiency
 
 Efficiency asks how well resources generate activity: **asset turnover** asks how many euros of sales each euro of assets supports, while **inventory turnover** asks how often stock is sold or used up and replaced, with high turnover meaning money is not trapped in the warehouse for long.
 

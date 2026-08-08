@@ -54,6 +54,8 @@ Two clockmakers, two starting points. Atlas Gears spends eighteen months perfect
 
 **Market orientation** — An approach that starts from customers’ **needs and wants**, then designs and adapts offerings to match them. Success depends on reading and responding to the market.
 
+[[FIGURE:product-orientation|Product orientation versus market orientation — build-then-sell versus research-then-build.]]
+
 **Product orientation** focuses on production and features first, then arranges sales and advertising, under the belief that a strong product largely sells itself. **Market orientation** focuses on needs and wants first, then produces what customers require, with the advantage of earlier response to market change. Both orientations may pursue identical marketing objectives such as sales, share and satisfaction; the product-oriented firm leans on feature quality to win, while the market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist, but neglecting customer expectations is risky in either case. Identical objectives do not prove identical orientation, because the sequence — **build-then-sell** versus **research-then-build** — can still differ.
 
 **Customer relationship management (CRM)** — Practices that aim at a **long-term relationship** with customers by keeping contact data and purchase history to send relevant information, offers and reminders — so customers return. Sensitive handling of **personal data** is indispensable.
@@ -72,17 +74,31 @@ Mend & Wear can rewrite a campaign season by replacing “new drop every Friday�
 
 ## 5.5 Market research
 
-Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will; another insists on evidence through street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with **structured information** about customers, rivals and the industry.
+Guesswork is expensive. Market research collects and interprets information about customers, rivals and the industry so marketing decisions rest on **structured evidence** rather than hope. GlassHarbor Cycles, for example, wants to know whether commuters will pay €45/month for a battery-swap add-on — street interviews, a short questionnaire and published city mobility statistics all feed that decision.
 
 **Market research** — The collection and interpretation of information about existing and prospective customers, potential buyers, **competition** and the **industry**, used to support marketing decisions.
 
+### 5.5.1 Primary sources
+
 **Primary market research** — **Original data** gathered for the firm’s own questions — for example surveys, interviews, observation or experiments, sometimes via a research institute. Tailored and specific, but often costly.
+
+Primary research gathers **original data** for the firm’s own questions — surveys, interviews, observation or experiments, sometimes via a research institute. It is tailored and specific, but often costly in time, money and design skill. Use it when secondary sources cannot answer the exact concept, price or satisfaction question you face.
+
+### 5.5.2 Secondary sources
 
 **Secondary market research** — Use of **existing data** collected by others — government statistics, trade association reports, published studies. Usually cheaper and faster, but more general and not built for the firm’s exact problem.
 
+Secondary research uses **existing data** collected by others — government statistics, trade association reports, published studies. It is usually cheaper and faster, but more general and not built for the firm’s exact problem. A free mobility report can size a market yet still leave willingness-to-pay unanswered.
+
 **Qualitative research** explores motives, language and experiences in depth through interviews, focus groups and open observation notes; samples are smaller, meaning is rich, and statistical generalisation is limited. **Quantitative research** measures amounts, frequencies and relationships with numbers through structured questionnaires, counts and experiments with metrics; larger samples support stronger estimates of shares and averages. The two pairs work together: **primary** versus **secondary** answers who collected the data and for what, while qualitative versus quantitative answers what kind of insight. A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary). Primary research is tailored to the firm’s exact questions — useful for new product concept tests and satisfaction drivers — but costs time, money and design skill. Secondary research is faster and often cheaper or free — useful for market sizing and industry growth context — yet it may be generic, outdated or mismatched. A questionnaire the firm designs itself is primary, not secondary, research.
 
+### 5.5.3 Customer analysis
+
 Customer analysis often asks **who** buys, **what** they do with the product, **where** they buy, **when** they buy, and why they choose one option over another. Buyer and user may differ; influencers such as children may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year. A free government mobility report can be useful for sizing and context yet still insufficient before launching the €45 battery-swap plan, because it will not answer willingness to pay or the firm’s exact concept questions.
+
+### 5.5.4 Market measures
+
+[[FIGURE:market-measures|Market measures used in research and reports — volume, absolute share, relative share and growth.]]
 
 **Market size (market volume)** — Total sales of a product by all businesses in a **defined market**, expressed as value (for example euros) or quantity (units).
 
@@ -96,6 +112,8 @@ Customer analysis often asks **who** buys, **what** they do with the product, **
 > Relative market share = own market share / largest competitor’s market share  
 > *A value of 1 means parity with the leader; below 1 means smaller than the leader.*
 
+[[FIGURE:market-volume-potential|Market and sales volume versus market and sales potential — potential exceeds volume when unrealised customers or rival gains remain.]]
+
 **Market potential** can exceed current **market volume** if unrealised customers remain. A firm’s sales potential can exceed current sales if it can win rivals’ customers or claim part of that unrealised potential. **Absolute share** informs managers and investors; **relative share** adds competitive context the absolute figure alone hides. For GlassHarbor’s battery-swap plan, define the market as city e-bike accessory subscriptions this year at €800,000, with GlassHarbor subscription sales of €96,000. Absolute share = 96,000 / 800,000 = 0.12 = 12%. If the largest rival holds 30% absolute share, relative share = 12% / 30% = 0.4. If research estimates market potential at €1,000,000, about €200,000 of demand is still unrealised industry-wide. GlassHarbor is meaningful but far from leadership; relative share 0.4 makes that gap explicit. Do not mix value share with unit share without saying so, and do not report absolute share without defining the market boundaries.
 
 ## 5.6 Market segmentation and targeting strategies
@@ -107,6 +125,8 @@ Not every rider wants the same bike. GlassHarbor’s research shows four differe
 **Targeting** — Evaluating segment attractiveness and selecting one or more segments to serve with a **tailored strategy**.
 
 **Positioning** — Creating a clear **image or identity** for the product in the minds of the chosen target market(s) so the offer fits their demands.
+
+[[FIGURE:segmentation-targeting|Market segmentation, targeting and positioning — group customers, choose whom to serve, then shape the offer’s identity.]]
 
 Segmentation is useful when groups are **measurable** in size and purchasing power, **profitable**, **accessible** through communication and distribution channels, and **durable** enough that they do not dissolve too quickly. Without those conditions, fine slicing wastes resources — a small customer group is not a valid segment if it cannot be measured, reached or served profitably.
 
@@ -126,7 +146,7 @@ GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coasta
 
 ## 5.7 The marketing mix
 
-Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe; if promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The **marketing mix** is the craft of setting **product**, **price**, **place** and promotion so they play in tune for the target market.
+The **marketing mix** is a harmonised blend of tools that meets the needs of the target market. Classically it is the **four Ps**: **product**, **price**, **place** and **promotion**. If price screams luxury while the sales channel is a discount warehouse — or promotion promises glove-friendly numerals while the product ships tiny markings — customers will not know what to believe. The craft is to set all four so they play in tune.
 
 **Marketing mix** — A harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. Classically organised as the **four Ps**: product, price, place and promotion.
 
@@ -134,9 +154,15 @@ Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. 
 
 The basic idea is simple to state and hard to execute: provide a suitable **product**, at a **price** customers will accept, available in a convenient **place**, supported by a clear **promotional** message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix.
 
+### 5.7.1 Product
+
 **Product (as a mix element)** — All goods and services offered — the heart of the mix. Includes line and mix decisions, branding, quality level, features, packaging and supporting services.
 
 Most firms offer more than one item. Similar items form a **product line**; several lines form the **product mix**. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise on one line or diversify across more lines. Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated.
+
+[[FIGURE:product-mix-strategies|Product-mix strategies — line extension, mix extension, alteration and contraction.]]
+
+[[FIGURE:business-units|Business units in a diversified manufacturing portfolio — different units serve different customer applications and segments.]]
 
 **Product life cycle** — A theoretical model of stages in a product’s market life that differ in sales and profit: **introduction**, **growth**, **maturity** and **decline** (after development costs before launch).
 
@@ -156,7 +182,13 @@ Before launch there are development costs and no sales. **Introduction** often s
 
 [[FIGURE:bcg-matrix|Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.]]
 
-**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term).
+**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets.
+
+[[FIGURE:ansoff-matrix|Ansoff product–market matrix — penetration, product development, market development and diversification.]]
+
+Ansoff’s product–market matrix organises growth options: **market penetration** (existing product, existing market — safest), **product development** (new product, existing market), **market development** (existing product, new market), and **diversification** (new product and new market — riskiest, but can spread risk long term).
+
+### 5.7.2 Price
 
 **Price** — The amount customers pay. Hard to reset casually once a strategy is established. Influenced by **costs**, competitors’ **prices** and **demand** (willingness to pay). Lowest price is not automatically best.
 
@@ -167,15 +199,29 @@ Before launch there are development costs and no sales. **Introduction** often s
 Break-even units ≈ fixed costs / contribution per unit  
 > *From the next whole unit above break-even, the simplified model shows profit (other factors held aside).*
 
-**Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone.
+[[FIGURE:break-even|Break-even point — where the revenue line meets total costs (fixed costs are horizontal; variable and total costs rise with output).]]
+
+**Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere.
+
+Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust.
+
+[[FIGURE:price-elasticity-elastic|Price elasticity of demand — elastic example: a price cut raises quantity demanded enough that revenue can increase.]]
+
+[[FIGURE:price-elasticity-inelastic|Price elasticity of demand — inelastic example: a price cut raises quantity little, so revenue can fall.]]
+
+### 5.7.3 Place
 
 **Place (distribution)** — How and where the product is made available. A strong product fails if customers cannot **find it** where they expect it.
 
 Place can run through **distributors**, **wholesalers** who sell on to businesses, and **retailers** who sell on to consumers; through agents or brokers, especially in B2B; through online selling and telemarketing; and through formats such as vending machines and kiosks. Channel partners bridge factory and final buyer with logistics, local information and advertising support. Beverage makers, for example, rarely sell every bottle direct to households nationwide; they need partners for reach.
 
+### 5.7.4 Promotion
+
 **Promotion** — Activities that **inform** potential customers and the public about the business, its products and their benefits.
 
 Promotion tools include **advertising** on television, radio, online, social media, print, outdoor and transit; direct mailing; **personal selling** through salespeople; **sales promotions**; **sponsorship** of events, people or organisations; and public relations for a favourable image and stakeholder relationships. Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place.
+
+### 5.7.5 Mixing the four Ps for a harmonised blend
 
 A harmonised mix sketch for North Harbor’s dock clock keeps the dials aligned. **Product** is sealed quartz with oversized numerals and a glove-friendly crown, matching harbour-worker needs from research. **Price** is mid-premium — above toy clocks and below luxury mechanicals — signalling durability without claiming jewellery status. **Place** is marine suppliers, selected hardware stores and a direct web shop, where dock staff already buy kit. **Promotion** uses demo videos with gloves on, a harbour newsletter and a trade stall, showing the USP in use rather than abstract luxury imagery. If North Harbor cuts price by 40% to chase volume while keeping “premium sealed instrument” ads, customers will notice the price–position conflict first. The mix implements objectives (5.2) for chosen targets (5.6) using research (5.5). Orientation (5.3) shapes whether the product P starts from features or from stated needs. Responsibility (5.4) constrains claims and design inside the same mix.
 

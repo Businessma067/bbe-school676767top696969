@@ -1526,6 +1526,14 @@ def blocks_to_flowables(blocks, width):
             out.append(_prose(b.get("text") or ""))
             plain_parts.append(b.get("text") or "")
 
+        elif t == "subhead":
+            sid = (b.get("id") or "").strip()
+            title = (b.get("title") or "").strip()
+            label = f"{sid} {title}".strip() if sid else title
+            if label:
+                out.append(Paragraph(esc(label), S["sec"]))
+                plain_parts.append(label)
+
         elif t == "scene":
             title = (b.get("title") or "").strip()
             text = (b.get("text") or "").strip()

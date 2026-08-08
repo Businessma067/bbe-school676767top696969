@@ -101,13 +101,13 @@ You can label the system by the signal rather than the slogan. Private cafés th
 
 ## 2.6 Supply and demand: households, businesses and the government meet in the market
 
-Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the **market** at work.
+A market is where buyers and sellers agree the terms of exchange. Take online maths tutoring: at a low hourly rate many families want hours, but few skilled tutors bother to log on; at a very high rate tutors flood the platform, but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer — that meeting point is the market at work.
 
 **Market** — A market is where buyers and sellers communicate the terms of exchange. It can be a physical place (a flea market) or virtual (an online platform), and it can specialise (labour, housing, money, capital, commodities, consumer goods).
 
-**Supply** is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter.
+### 2.6.1 The law of supply
 
-**Demand** is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service.
+**Supply** is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter.
 
 **Ceteris paribus** — Latin shorthand for "**all other things held constant**." Supply and demand laws isolate the price–quantity link while freezing other influences. When those other influences change, **curves shift**.
 
@@ -115,9 +115,15 @@ The **supply curve** slopes up because higher prices pull more sellers in and en
 
 [[FIGURE:supply-curve|Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping.]]
 
+### 2.6.2 The law of demand
+
+**Demand** is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service.
+
 The **demand curve** slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to **substitutes** such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and **quantity demanded** move in opposite directions when other things are held constant.
 
 [[FIGURE:demand-curve|Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping.]]
+
+### 2.6.3 The market equilibrium
 
 > **Market equilibrium condition**  
 > Equilibrium: quantity demanded = quantity supplied at the equilibrium (market) price  

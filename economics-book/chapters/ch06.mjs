@@ -104,8 +104,16 @@ export default {
           "text": "Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 22,000 and equity 24,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 22,000 + 24,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 23,500 and equity 24,000 — the same economic item, but different financing changes the totals."
         },
         {
+          "type": "subhead",
+          "title": "Fixed assets, current assets and intangibles"
+        },
+        {
           "type": "p",
           "text": "Assets are also split by how long they stay in the business. **Fixed** or **non-current assets** normally have a useful life of more than one year, are intended for longer-term use, and are usually harder to turn into cash quickly; examples include property, plant, buildings, machinery, office equipment kept for use, longer-term financial assets, and intangible assets such as patents, trademarks and copyrights. **Current assets** have higher **liquidity** and are normally used up, sold or converted within a year — inventory (merchandise not yet sold), trade receivables or debtors (money customers owe), and cash. Intangible assets cannot be touched, but they still have value for the business under the same logic as tangible ones: a workshop may own none yet, while a manufacturing group may report large patents, trademarks and licences."
+        },
+        {
+          "type": "subhead",
+          "title": "Liabilities and equity"
         },
         {
           "type": "p",
@@ -129,7 +137,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "One statement is never enough on its own. Northline's end-of-year balance sheet may show stronger equity and more cash than on day one, yet that still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan, so performance over a **period** needs the full **financial statement** set."
+          "text": "The balance sheet alone is not enough. It shows assets, liabilities and equity at a **point in time**, but not total sales, production costs or which cash movements came from operations versus a new loan. The **financial statement** of a business therefore combines the balance sheet, the **income statement** (profit and loss account) and the **cash flow statement** — together they reveal performance over a **period**."
         },
         {
           "type": "figure",
@@ -140,6 +148,11 @@ export default {
           "type": "idea",
           "term": "Financial statement",
           "text": "The package that reveals performance over a period: **balance sheet** + **income statement** (profit and loss account) + **cash flow statement**. The balance sheet alone cannot show turnover or production costs."
+        },
+        {
+          "type": "subhead",
+          "id": "6.2.1",
+          "title": "Profit and loss account"
         },
         {
           "type": "idea",
@@ -172,10 +185,31 @@ export default {
         {
           "type": "table",
           "caption": "Straight-line depreciation examples (Northline)",
-          "headers": ["Asset", "Cost", "Residual", "Useful life", "Annual depreciation", "Book value after year 1"],
+          "headers": [
+            "Asset",
+            "Cost",
+            "Residual",
+            "Useful life",
+            "Annual depreciation",
+            "Book value after year 1"
+          ],
           "rows": [
-            ["Diagnostic laptop", "€2,400", "€0", "3 years", "€800", "€1,600"],
-            ["Delivery van", "€14,000", "€2,000", "5 years", "€2,400", "€11,600"]
+            [
+              "Diagnostic laptop",
+              "€2,400",
+              "€0",
+              "3 years",
+              "€800",
+              "€1,600"
+            ],
+            [
+              "Delivery van",
+              "€14,000",
+              "€2,000",
+              "5 years",
+              "€2,400",
+              "€11,600"
+            ]
           ]
         },
         {
@@ -240,6 +274,11 @@ export default {
           ]
         },
         {
+          "type": "subhead",
+          "id": "6.2.2",
+          "title": "Cash flow statement"
+        },
+        {
           "type": "idea",
           "term": "Cash flow statement",
           "text": "Shows cash flowing into and out of the business during the period. Positive cash flow is **not the same as profit**."
@@ -255,14 +294,42 @@ export default {
         {
           "type": "table",
           "caption": "Illustrative cash movements (selected items)",
-          "headers": ["Movement", "Class", "€"],
+          "headers": [
+            "Movement",
+            "Class",
+            "€"
+          ],
           "rows": [
-            ["Customers settle receivables", "Operating inflow", "+38,000"],
-            ["Parts paid in cash", "Operating outflow", "−16,000"],
-            ["New bench system bought", "Investing outflow", "−9,000"],
-            ["Loan principal repaid", "Financing outflow", "−7,000"],
-            ["Owners' drawings / dividend", "Financing outflow", "−5,000"],
-            ["Net of these items", "", "+1,000"]
+            [
+              "Customers settle receivables",
+              "Operating inflow",
+              "+38,000"
+            ],
+            [
+              "Parts paid in cash",
+              "Operating outflow",
+              "−16,000"
+            ],
+            [
+              "New bench system bought",
+              "Investing outflow",
+              "−9,000"
+            ],
+            [
+              "Loan principal repaid",
+              "Financing outflow",
+              "−7,000"
+            ],
+            [
+              "Owners' drawings / dividend",
+              "Financing outflow",
+              "−5,000"
+            ],
+            [
+              "Net of these items",
+              "",
+              "+1,000"
+            ]
           ]
         },
         {
@@ -286,28 +353,112 @@ export default {
         {
           "type": "table",
           "caption": "Cedar Circuit Components — statement of financial position (€ thousands)",
-          "headers": ["Line", "Year 1", "Year 2"],
+          "headers": [
+            "Line",
+            "Year 1",
+            "Year 2"
+          ],
           "rows": [
-            ["Property, plant and equipment", "388", "412"],
-            ["Intangible assets", "52", "48"],
-            ["Other non-current assets", "30", "35"],
-            ["Non-current assets", "470", "495"],
-            ["Inventories", "78", "92"],
-            ["Trade and other receivables", "64", "71"],
-            ["Cash and cash equivalents", "86", "118"],
-            ["Current assets", "228", "281"],
-            ["Total assets", "698", "776"],
-            ["Share capital", "120", "120"],
-            ["Reserves and retained earnings", "214", "268"],
-            ["Total equity", "334", "388"],
-            ["Non-current financial liabilities", "230", "210"],
-            ["Other non-current liabilities", "24", "28"],
-            ["Non-current liabilities", "254", "238"],
-            ["Trade and other payables", "78", "96"],
-            ["Other current liabilities", "32", "54"],
-            ["Current liabilities", "110", "150"],
-            ["Total liabilities", "364", "388"],
-            ["Total equity and liabilities", "698", "776"]
+            [
+              "Property, plant and equipment",
+              "388",
+              "412"
+            ],
+            [
+              "Intangible assets",
+              "52",
+              "48"
+            ],
+            [
+              "Other non-current assets",
+              "30",
+              "35"
+            ],
+            [
+              "Non-current assets",
+              "470",
+              "495"
+            ],
+            [
+              "Inventories",
+              "78",
+              "92"
+            ],
+            [
+              "Trade and other receivables",
+              "64",
+              "71"
+            ],
+            [
+              "Cash and cash equivalents",
+              "86",
+              "118"
+            ],
+            [
+              "Current assets",
+              "228",
+              "281"
+            ],
+            [
+              "Total assets",
+              "698",
+              "776"
+            ],
+            [
+              "Share capital",
+              "120",
+              "120"
+            ],
+            [
+              "Reserves and retained earnings",
+              "214",
+              "268"
+            ],
+            [
+              "Total equity",
+              "334",
+              "388"
+            ],
+            [
+              "Non-current financial liabilities",
+              "230",
+              "210"
+            ],
+            [
+              "Other non-current liabilities",
+              "24",
+              "28"
+            ],
+            [
+              "Non-current liabilities",
+              "254",
+              "238"
+            ],
+            [
+              "Trade and other payables",
+              "78",
+              "96"
+            ],
+            [
+              "Other current liabilities",
+              "32",
+              "54"
+            ],
+            [
+              "Current liabilities",
+              "110",
+              "150"
+            ],
+            [
+              "Total liabilities",
+              "364",
+              "388"
+            ],
+            [
+              "Total equity and liabilities",
+              "698",
+              "776"
+            ]
           ]
         },
         {
@@ -321,19 +472,67 @@ export default {
         {
           "type": "table",
           "caption": "Cedar Circuit Components — income statement (€ thousands)",
-          "headers": ["Line", "Year 1", "Year 2"],
+          "headers": [
+            "Line",
+            "Year 1",
+            "Year 2"
+          ],
           "rows": [
-            ["Revenue", "520", "640"],
-            ["Cost of sales", "430", "498"],
-            ["Gross profit", "90", "142"],
-            ["Distribution costs", "24", "28"],
-            ["Administration costs", "30", "36"],
-            ["Other operating result", "2", "4"],
-            ["Operating result (EBIT)", "38", "82"],
-            ["Finance costs (net)", "16", "14"],
-            ["Profit before tax", "22", "68"],
-            ["Income taxes", "8", "16"],
-            ["Profit for the year", "14", "52"]
+            [
+              "Revenue",
+              "520",
+              "640"
+            ],
+            [
+              "Cost of sales",
+              "430",
+              "498"
+            ],
+            [
+              "Gross profit",
+              "90",
+              "142"
+            ],
+            [
+              "Distribution costs",
+              "24",
+              "28"
+            ],
+            [
+              "Administration costs",
+              "30",
+              "36"
+            ],
+            [
+              "Other operating result",
+              "2",
+              "4"
+            ],
+            [
+              "Operating result (EBIT)",
+              "38",
+              "82"
+            ],
+            [
+              "Finance costs (net)",
+              "16",
+              "14"
+            ],
+            [
+              "Profit before tax",
+              "22",
+              "68"
+            ],
+            [
+              "Income taxes",
+              "8",
+              "16"
+            ],
+            [
+              "Profit for the year",
+              "14",
+              "52"
+            ]
           ]
         },
         {
@@ -398,6 +597,11 @@ export default {
           "text": "The ratio map for this course pairs each theme with a measure and a core idea: liquidity uses **working capital** (current assets left after current liabilities), the **current ratio** (current assets per €1 of current liabilities) and the **acid-test ratio** (the same idea excluding inventory); profitability uses **ROE** (EBIT relative to equity) and ROCE (EBIT relative to capital employed); efficiency uses asset turnover (turnover per €1 of average assets) and inventory turnover (how many times stock is sold or replaced); and gearing or structure uses the equity ratio (equity as a percentage of total assets) and the debt ratio (total debt as a percentage of total assets)."
         },
         {
+          "type": "subhead",
+          "id": "6.5.1",
+          "title": "Liquidity"
+        },
+        {
           "type": "p",
           "text": "Liquidity starts with an intuition: imagine every short-term claim lands at once, and ask whether the firm's relatively liquid resources — cash, receivables, inventory — can cover those claims and leave anything over. That leftover idea is **working capital**; retailers with heavy stock often need more of it than a service firm with little inventory, and high inventory can serve customers quickly while also tying up money, needing space and risking obsolescence."
         },
@@ -424,6 +628,11 @@ export default {
           "text": "For Cedar in Year 2 (€ thousands), current assets = 281, inventory = 92 and current liabilities = 150, so **working capital** = 281 − 150 = 131 (positive), the **current ratio** = 281 / 150 ≈ 1.87 (above 1 and inside the 1.5–2 comfort discussion), and the **acid-test** = (281 − 92) / 150 = 189 / 150 = 1.26 (still above 1). Short-term cover looks adequate on these measures, though you still judge against industry peers. A short-term loan, overdraft or extra trade credit can ease a cash squeeze, but it raises current liabilities and can shrink working capital, whereas improving both cash and working capital more sustainably usually means adding equity or longer-term borrowing. A current ratio above 1 is not automatically “safe” if most current assets are slow-moving inventory — that is why the **acid test** exists — and fixing cash with short-term borrowing can worsen the working-capital picture. Liquidity exam work usually asks you to compute working capital, current ratio and acid test, interpret “greater than 1”, explain why inventory is dropped in the acid test, and link short-term borrowing to lower working capital."
         },
         {
+          "type": "subhead",
+          "id": "6.5.2",
+          "title": "Profitability"
+        },
+        {
           "type": "p",
           "text": "Profitability starts from a similar intuition: a profit of €50,000 sounds fine until you ask relative to how much capital was risked, so profitability compares profit to a size base — **equity**, **capital employed**, or **turnover** — and tiny profits on huge capital look weak."
         },
@@ -442,6 +651,11 @@ export default {
         {
           "type": "p",
           "text": "For Cedar Year 2 (€ thousands), EBIT = 82 and equity = 388, so **ROE** = 82 / 388 ≈ 21.1%. **Capital employed** = assets − current liabilities = 776 − 150 = 626 (also equity 388 + non-current liabilities 238), so **ROCE** = 82 / 626 ≈ 13.1%; if average capital employed were 640, ROCE = 82 / 640 = 12.8%. Those returns look meaningful only beside peer ROCE/ROE and Cedar's own trend."
+        },
+        {
+          "type": "subhead",
+          "id": "6.5.3",
+          "title": "Financial efficiency"
         },
         {
           "type": "p",
@@ -486,17 +700,57 @@ export default {
         {
           "type": "table",
           "caption": "Cedar Year 2 — ratio snapshot (€ thousands inputs)",
-          "headers": ["Ratio", "Result", "Reading"],
+          "headers": [
+            "Ratio",
+            "Result",
+            "Reading"
+          ],
           "rows": [
-            ["Working capital", "131", "Positive short-term buffer"],
-            ["Current ratio", "1.87", "Above 1; near 1.5–2 band"],
-            ["Acid-test ratio", "1.26", "Above 1 without inventory"],
-            ["ROE", "21.1%", "Return on owners' funds"],
-            ["ROCE", "13.1%", "Return on long-term capital"],
-            ["Asset turnover", "0.87", "Sales per €1 of average assets"],
-            ["Inventory turnover", "5.9× (~62 days)", "Stock renews about six times a year"],
-            ["Equity ratio", "50%", "Half equity financing"],
-            ["Debt ratio", "50%", "Half debt financing"]
+            [
+              "Working capital",
+              "131",
+              "Positive short-term buffer"
+            ],
+            [
+              "Current ratio",
+              "1.87",
+              "Above 1; near 1.5–2 band"
+            ],
+            [
+              "Acid-test ratio",
+              "1.26",
+              "Above 1 without inventory"
+            ],
+            [
+              "ROE",
+              "21.1%",
+              "Return on owners' funds"
+            ],
+            [
+              "ROCE",
+              "13.1%",
+              "Return on long-term capital"
+            ],
+            [
+              "Asset turnover",
+              "0.87",
+              "Sales per €1 of average assets"
+            ],
+            [
+              "Inventory turnover",
+              "5.9× (~62 days)",
+              "Stock renews about six times a year"
+            ],
+            [
+              "Equity ratio",
+              "50%",
+              "Half equity financing"
+            ],
+            [
+              "Debt ratio",
+              "50%",
+              "Half debt financing"
+            ]
           ]
         }
       ]

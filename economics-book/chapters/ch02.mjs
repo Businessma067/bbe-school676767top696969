@@ -231,7 +231,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the **market** at work."
+          "text": "A market is where buyers and sellers agree the terms of exchange. Take online maths tutoring: at a low hourly rate many families want hours, but few skilled tutors bother to log on; at a very high rate tutors flood the platform, but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer — that meeting point is the market at work."
         },
         {
           "type": "idea",
@@ -239,14 +239,14 @@ export default {
           "text": "A market is where buyers and sellers communicate the terms of exchange. It can be a physical place (a flea market) or virtual (an online platform), and it can specialise (labour, housing, money, capital, commodities, consumer goods)."
         },
         {
-          "type": "idea",
-          "term": "Supply",
-          "text": "Supply is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter."
+          "type": "subhead",
+          "id": "2.6.1",
+          "title": "The law of supply"
         },
         {
           "type": "idea",
-          "term": "Demand",
-          "text": "Demand is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service."
+          "term": "Supply",
+          "text": "Supply is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter."
         },
         {
           "type": "idea",
@@ -263,6 +263,16 @@ export default {
           "caption": "Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping."
         },
         {
+          "type": "subhead",
+          "id": "2.6.2",
+          "title": "The law of demand"
+        },
+        {
+          "type": "idea",
+          "term": "Demand",
+          "text": "Demand is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service."
+        },
+        {
           "type": "p",
           "text": "The **demand curve** slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to **substitutes** such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and **quantity demanded** move in opposite directions when other things are held constant."
         },
@@ -270,6 +280,11 @@ export default {
           "type": "figure",
           "id": "demand-curve",
           "caption": "Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping."
+        },
+        {
+          "type": "subhead",
+          "id": "2.6.3",
+          "title": "The market equilibrium"
         },
         {
           "type": "formula",

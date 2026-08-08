@@ -43,6 +43,8 @@ To assign a sector, ask what the business mainly does day to day. If it extracts
 
 **Primary** and **secondary** activity usually leave a tangible output at the point of production, and they often take a larger share in less developed economies, especially primary extraction. **Tertiary** activity delivers services rather than extracting or fabricating, yet it can still use heavy capital and skilled labour; it includes trade, finance, coaching, support and logistics services, and it dominates output in highly developed economies.
 
+### GDP: definition and limitations
+
 As economic development advances, the **tertiary sector** usually grows in importance. In highly developed economies — for example EU countries with high GDP per capita — the tertiary sector commonly accounts for **more than 70%** of economic output, while the **primary sector** is a small percentage of output even though food production remains vital.
 
 **Gross domestic product (GDP)** — GDP is the total monetary value of **final goods and services** produced within a country’s borders in a period (usually a year). It summarises overall economic activity and, when adjusted for inflation and rising over time, signals **economic growth**.
@@ -120,9 +122,13 @@ At MeadowMill, which processes dairy for supermarket buyers, owners want faster 
 
 **Shareholder** — A shareholder is an owner of **shares** in a corporation — a specific ownership stake. Shareholders are stakeholders, but **not all stakeholders are shareholders**. Employees, customers, suppliers, neighbours and regulators can have strong interests without owning shares.
 
-[[FIGURE:stakeholder-map|Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it.]]
+[[FIGURE:stakeholder-map|Stakeholders of a business — the firm at the centre, with owners, managers, employees, customers, suppliers, government, communities and the environment around it.]]
 
 **Internal stakeholders** operate inside the organisation — owners and shareholders, managers and employees — while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners.
+
+[[FIGURE:values-vision|Interdependencies of people, values, objectives and vision — alignment supports long-run success.]]
+
+[[FIGURE:environment-impact|Business activities affect the environment through energy, materials, water and products in use — concrete results matter more than greenwashing claims.]]
 
 Owners, shareholders and investors care about return for risk, value growth and sometimes mission and social contribution; managers care about income, career and the ability to implement strategy; employees care about wages, job security, meaningful work and shared values. Outside the firm, customers want useful, reliable offers at acceptable prices and an ongoing relationship; suppliers want timely orders, fair payment and stable future demand; government wants tax compliance, observance of rules and contribution to public aims; communities care about jobs, congestion, pollution, cultural sponsorship and licence to operate; and the natural environment, as an affected system, points toward sustainable resource use and lower emissions, waste and ecological harm.
 

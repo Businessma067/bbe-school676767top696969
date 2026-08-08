@@ -12,7 +12,7 @@ type Props = {
   onGoToPractice: () => void;
 };
 
-type TocItem = { id: string; label: string };
+type TocItem = { id: string; label: string; level: 2 | 3 };
 type Segment =
   | { kind: "md"; text: string }
   | { kind: "figure"; id: string; caption: string };
@@ -34,7 +34,8 @@ function extractToc(markdown: string): TocItem[] {
     const m = /^(#{2,3})\s+(.+)$/.exec(line.trim());
     if (!m) continue;
     const label = m[2]!.trim();
-    items.push({ id: slugify(label), label });
+    const level = m[1]!.length === 3 ? 3 : 2;
+    items.push({ id: slugify(label), label, level });
   }
   return items;
 }
@@ -233,12 +234,17 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                 onClick={() => jumpTo(item.id)}
                 className={cn(
                   "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                  item.level === 3 && "opacity-90",
                   activeId === item.id
                     ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-muted-foreground hover:text-foreground",
+                    : item.level === 3
+                      ? "bg-secondary/70 text-muted-foreground hover:text-foreground"
+                      : "bg-secondary text-muted-foreground hover:text-foreground",
                 )}
               >
-                {item.label.replace(/^(\d+\.\d+)\s+/, "$1 · ")}
+                {item.label
+                  .replace(/^(\d+\.\d+\.\d+)\s+/, "$1 · ")
+                  .replace(/^(\d+\.\d+)\s+/, "$1 · ")}
               </button>
             ))}
           </div>

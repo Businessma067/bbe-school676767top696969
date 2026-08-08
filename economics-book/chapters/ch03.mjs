@@ -82,6 +82,10 @@ export default {
           "text": "**Primary** and **secondary** activity usually leave a tangible output at the point of production, and they often take a larger share in less developed economies, especially primary extraction. **Tertiary** activity delivers services rather than extracting or fabricating, yet it can still use heavy capital and skilled labour; it includes trade, finance, coaching, support and logistics services, and it dominates output in highly developed economies."
         },
         {
+          "type": "subhead",
+          "title": "GDP: definition and limitations"
+        },
+        {
           "type": "p",
           "text": "As economic development advances, the **tertiary sector** usually grows in importance. In highly developed economies — for example EU countries with high GDP per capita — the tertiary sector commonly accounts for **more than 70%** of economic output, while the **primary sector** is a small percentage of output even though food production remains vital."
         },
@@ -292,11 +296,21 @@ export default {
         {
           "type": "figure",
           "id": "stakeholder-map",
-          "caption": "Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it."
+          "caption": "Stakeholders of a business — the firm at the centre, with owners, managers, employees, customers, suppliers, government, communities and the environment around it."
         },
         {
           "type": "p",
           "text": "**Internal stakeholders** operate inside the organisation — owners and shareholders, managers and employees — while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners."
+        },
+        {
+          "type": "figure",
+          "id": "values-vision",
+          "caption": "Interdependencies of people, values, objectives and vision — alignment supports long-run success."
+        },
+        {
+          "type": "figure",
+          "id": "environment-impact",
+          "caption": "Business activities affect the environment through energy, materials, water and products in use — concrete results matter more than greenwashing claims."
         },
         {
           "type": "p",

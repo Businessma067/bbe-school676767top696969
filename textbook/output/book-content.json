@@ -249,7 +249,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the **market** at work."
+              "text": "A market is where buyers and sellers agree the terms of exchange. Take online maths tutoring: at a low hourly rate many families want hours, but few skilled tutors bother to log on; at a very high rate tutors flood the platform, but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer — that meeting point is the market at work."
             },
             {
               "type": "idea",
@@ -257,14 +257,14 @@
               "text": "A market is where buyers and sellers communicate the terms of exchange. It can be a physical place (a flea market) or virtual (an online platform), and it can specialise (labour, housing, money, capital, commodities, consumer goods)."
             },
             {
-              "type": "idea",
-              "term": "Supply",
-              "text": "Supply is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter."
+              "type": "subhead",
+              "id": "2.6.1",
+              "title": "The law of supply"
             },
             {
               "type": "idea",
-              "term": "Demand",
-              "text": "Demand is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service."
+              "term": "Supply",
+              "text": "Supply is the quantity of a good or service available for purchase. For most goods, a higher price raises the **quantity supplied**, **ceteris paribus** — the **law of supply**. Capacity, resources, and opportunity cost of the seller's time all matter."
             },
             {
               "type": "idea",
@@ -281,6 +281,16 @@
               "caption": "Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping."
             },
             {
+              "type": "subhead",
+              "id": "2.6.2",
+              "title": "The law of demand"
+            },
+            {
+              "type": "idea",
+              "term": "Demand",
+              "text": "Demand is the quantity customers are willing and able to buy. For most goods, a higher price lowers **quantity demanded**, **ceteris paribus** — the **law of demand**. Willingness to pay links to the utility (satisfaction) people get from the good or service."
+            },
+            {
               "type": "p",
               "text": "The **demand curve** slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to **substitutes** such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and **quantity demanded** move in opposite directions when other things are held constant."
             },
@@ -288,6 +298,11 @@
               "type": "figure",
               "id": "demand-curve",
               "caption": "Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping."
+            },
+            {
+              "type": "subhead",
+              "id": "2.6.3",
+              "title": "The market equilibrium"
             },
             {
               "type": "formula",
@@ -487,6 +502,10 @@
             {
               "type": "p",
               "text": "**Primary** and **secondary** activity usually leave a tangible output at the point of production, and they often take a larger share in less developed economies, especially primary extraction. **Tertiary** activity delivers services rather than extracting or fabricating, yet it can still use heavy capital and skilled labour; it includes trade, finance, coaching, support and logistics services, and it dominates output in highly developed economies."
+            },
+            {
+              "type": "subhead",
+              "title": "GDP: definition and limitations"
             },
             {
               "type": "p",
@@ -699,11 +718,21 @@
             {
               "type": "figure",
               "id": "stakeholder-map",
-              "caption": "Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it."
+              "caption": "Stakeholders of a business — the firm at the centre, with owners, managers, employees, customers, suppliers, government, communities and the environment around it."
             },
             {
               "type": "p",
               "text": "**Internal stakeholders** operate inside the organisation — owners and shareholders, managers and employees — while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners."
+            },
+            {
+              "type": "figure",
+              "id": "values-vision",
+              "caption": "Interdependencies of people, values, objectives and vision — alignment supports long-run success."
+            },
+            {
+              "type": "figure",
+              "id": "environment-impact",
+              "caption": "Business activities affect the environment through energy, materials, water and products in use — concrete results matter more than greenwashing claims."
             },
             {
               "type": "p",
@@ -773,6 +802,10 @@
               "text": "The sole proprietor is liable for all debts and obligations of the business. If business assets are not enough, **private assets** can be claimed by creditors."
             },
             {
+              "type": "subhead",
+              "title": "Available financial funds for sole proprietors"
+            },
+            {
               "type": "p",
               "text": "Finance for a sole trader leans heavily on the owner’s own capacity. Personal savings and other outside money from investors or banks are **external sources**; once the shop earns a surplus that is left in the business rather than withdrawn, that retained profit becomes an **internal source** and carries no interest charge. Short-term tools such as a bank overdraft and trade credit are common, while longer bank loans may need collateral, often property as a mortgage. A common mistake is to think that “small business” automatically means “safe private assets”: size does not create limited liability, and a tiny sole trader still faces **unlimited liability**. In exam stems, one owner who manages, is not a separate legal person, reports profits on personal tax, and puts private assets at risk points to sole trader with unlimited liability; continuity questions often test illness or retirement of that single owner. If Mara wanted a partner who invests money but never manages the shop, sole proprietorship would no longer be the right legal shell, because that structure admits only one owner — the investor role she has in mind belongs instead to partnership forms discussed next."
             },
@@ -805,6 +838,14 @@
               "text": "Partners jointly own and manage the business; each general partner has **unlimited liability** for the debts of the firm. Austrian label: **Offene Gesellschaft (OG)**."
             },
             {
+              "type": "subhead",
+              "title": "Available financial funds for partnerships"
+            },
+            {
+              "type": "p",
+              "text": "Funding for partnerships works much like sole trading, but two or more partners can usually pool more savings and offer more private assets as collateral for loans. Each **general partner** remains **solely liable** for all debts of the business (**unlimited liability**). Internal finance still comes from retained profit left in the firm; external finance includes partners’ capital contributions, bank loans, overdrafts and trade credit."
+            },
+            {
               "type": "idea",
               "term": "Limited partnership",
               "text": "A partnership with at least one partner who is not involved in management and whose liability is **limited to the amount contributed**. Austrian label: **Kommanditgesellschaft (KG)**. General (managing) partners still face **unlimited liability**."
@@ -825,7 +866,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "The firm that can sign its own name. Three engineers want to build sensor modules. They need serious capital, want investors who do not all run the plant, and do not want every supplier claim to reach their private homes. They look at forming a company — a **legal person** that can own assets, hire staff, sue and be sued in its own name."
+              "text": "A corporation is a business that is a **legal person** of its own: it can own assets, hire staff, sign contracts, sue and be sued in its own name. Owners hold **shares**; they need not manage day to day, and managers need not own shares. Setup is harder than for unincorporated forms, but shareholders’ liability is typically **limited** to the capital they invested. Three engineers building sensor modules often choose this shell when they need serious capital, outside investors, and a clear wall between company debts and private homes."
             },
             {
               "type": "idea",
@@ -833,13 +874,23 @@
               "text": "An incorporated business with **separate legal personality**. Ownership is divided into **shares**. Shareholders’ liability is typically **limited** to the capital they invested. Owners need not manage; managers need not own shares."
             },
             {
+              "type": "subhead",
+              "id": "4.3.1",
+              "title": "Shareholders are not (necessarily) managers of the business"
+            },
+            {
               "type": "p",
-              "text": "Separate person, limited loss, directors in charge. As a **legal person**, the company can own land and property, hire people, close contracts, and litigate. Shareholders provide share capital; they are neither obliged nor automatically entitled to manage day to day. Shareholders elect a **board of directors** to make major decisions and represent owners. The top executive is often called CEO; other roles may include CFO, COO, CIO, or CMO. Setup is harder than for unincorporated forms, and capital rules may apply — but **limited liability** is the core protection for owners."
+              "text": "As a **legal person**, the company can own land and property, hire people, close contracts, and litigate. Shareholders provide share capital, but they are neither obliged nor automatically entitled to manage day to day. Instead they elect a **board of directors** to make major decisions and represent owners. The top executive is often called CEO; other roles may include CFO, COO, CIO, or CMO. Setup is harder than for unincorporated forms, and capital rules may apply — but **limited liability** is the core protection for owners."
             },
             {
               "type": "idea",
               "term": "Limited liability",
               "text": "Shareholders are usually liable only up to the money invested when buying shares. Creditors claim against the **company**, not automatically against shareholders’ **private assets**."
+            },
+            {
+              "type": "subhead",
+              "id": "4.3.2",
+              "title": "Available financial funds for corporations"
             },
             {
               "type": "idea",
@@ -854,11 +905,21 @@
             },
             {
               "type": "p",
-              "text": "Shares can be bought at initial issue or later from another shareholder. A **stock exchange** is a regulated market where listed shares and other securities (such as **bonds**) can be traded, and listing requires compliance with rules. An **initial public offering (IPO)** introduces shares at an issue price; afterwards prices move with demand and supply. Rising **secondary-market** prices enrich trading shareholders — they do not inject extra cash into the issuing company. Investors may buy shares to support a business they believe in; dividends are parts of profit paid to shareholders, with no automatic duty to pay every year; capital growth is the hope that share prices rise; common stock typically includes voting rights at the stockholders’ meeting; and demand for shares reacts to firm prospects and to macro signals such as growth, interest rates, and inflation. A friend who says “my shares doubled on the exchange, so the company just raised twice the capital” confuses secondary trading with new corporate finance: the gain accrues among traders, not as fresh cash on the company’s books. Two further confusions are worth avoiding: owning shares is not the same as managing, so shareholders must not be treated as directors by default; and secondary share-price gains must not be treated as new corporate finance."
+              "text": "Shares can be bought at initial issue or later from another shareholder. A **stock exchange** is a regulated market where listed shares and other securities (such as **bonds**) can be traded, and listing requires compliance with rules. An **initial public offering (IPO)** introduces shares at an issue price; afterwards prices move with demand and supply. Rising **secondary-market** prices enrich trading shareholders — they do not inject extra cash into the issuing company. Investors may buy shares for dividends (parts of profit paid to shareholders, with no automatic duty to pay every year), for capital growth if prices rise, and for voting rights at the stockholders’ meeting. Large corporations can also issue **bonds**: packaged borrowing from many investor-creditors with agreed interest and repayment. Bondholders remain creditors, not owners. A common trap is treating a secondary share-price gain as new corporate finance — that gain accrues among traders, not as fresh cash on the company’s books."
+            },
+            {
+              "type": "figure",
+              "id": "shareholder-structure",
+              "caption": "Shareholder structure of a listed AG (illustrative): foundations may hold a large block while the rest is free float among institutional and private investors."
+            },
+            {
+              "type": "subhead",
+              "id": "4.3.3",
+              "title": "Private Limited Companies"
             },
             {
               "type": "p",
-              "text": "Names differ by country: public limited company (PLC) in many English-speaking settings; Inc. or Ltd in others. In German-speaking countries the **Aktiengesellschaft (AG)** is the share corporation — Aktien means shares, Gesellschaft means corporation. In Austria, founding an AG requires minimum capital of about **€70,000**. The European Company (SE) is a related form under EU law. Private limited forms keep legal personality and limited liability but usually do not offer shares to the general public on an exchange; examples include the US LLC, the UK private company limited by shares, and Austria/Germany’s **Gesellschaft mit beschränkter Haftung (GmbH)**. In Austria, GmbH minimum capital is about **€35,000** — lower than for an AG, still a barrier versus a partnership, and without the public flotation path of a listed AG. Large corporations can also issue bonds: packaged borrowing from many investor-creditors with agreed interest and repayment. Bond interest is often lower than a comparable bank loan for big issuers, which helps fund plants and infrastructure, yet bondholders remain creditors, not owners. Investor metrics on listed shares include price path, market capitalisation (shares outstanding × market price), dividend yield, and the price–earnings (P/E) ratio. Exam recognition for separate legal person plus limited liability plus shares plus directors elected by shareholders points to corporation; Austrian numbers to remember are AG ≈ €70,000 minimum capital and GmbH ≈ €35,000; and bondholder is not shareholder. Share capital and bonds both appear again when you classify equity versus debt in 4.5 and when gearing rises in 4.6. In short, a corporation is a separate legal person; shareholders own while directors manage and the roles need not overlap; limited liability typically caps owners’ loss at invested capital; Austrian AG ≈ €70k and GmbH ≈ €35k set minimum capital, with GmbH shares not for public exchange flotation like a listed AG; and IPO cash is company finance while later market trades are not."
+              "text": "Names differ by country: public limited company (PLC) in many English-speaking settings; Inc. or Ltd in others. In German-speaking countries the **Aktiengesellschaft (AG)** is the share corporation (Aktien = shares, Gesellschaft = corporation). In Austria, founding an AG requires minimum capital of about **€70,000**. The European Company (SE) is a related form under EU law. **Private limited** forms keep legal personality and limited liability but usually do **not** offer shares to the general public on an exchange — for example the US LLC, the UK private company limited by shares, and Austria/Germany’s **Gesellschaft mit beschränkter Haftung (GmbH)**. In Austria, GmbH minimum capital is about **€35,000**: lower than for an AG, still a barrier versus a partnership, and without the public flotation path of a listed AG. Austrian exam numbers to remember: AG ≈ €70,000 and GmbH ≈ €35,000."
             },
             {
               "type": "p",
@@ -1168,6 +1229,11 @@
               "text": "An approach that starts from customers’ **needs and wants**, then designs and adapts offerings to match them. Success depends on reading and responding to the market."
             },
             {
+              "type": "figure",
+              "id": "product-orientation",
+              "caption": "Product orientation versus market orientation — build-then-sell versus research-then-build."
+            },
+            {
               "type": "p",
               "text": "**Product orientation** focuses on production and features first, then arranges sales and advertising, under the belief that a strong product largely sells itself. **Market orientation** focuses on needs and wants first, then produces what customers require, with the advantage of earlier response to market change. Both orientations may pursue identical marketing objectives such as sales, share and satisfaction; the product-oriented firm leans on feature quality to win, while the market-oriented firm leans on continuous customer insight. Suitability depends on the product and on how many competitors exist, but neglecting customer expectations is risky in either case. Identical objectives do not prove identical orientation, because the sequence — **build-then-sell** versus **research-then-build** — can still differ."
             },
@@ -1211,7 +1277,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "Guesswork is expensive. GlassHarbor Cycles wants to know whether commuters will pay €45/month for a battery-swap add-on. One founder “just knows” they will; another insists on evidence through street interviews, a short online questionnaire, and city mobility statistics already published by the transport agency. Research will not remove all risk, but it replaces pure hope with **structured information** about customers, rivals and the industry."
+              "text": "Guesswork is expensive. Market research collects and interprets information about customers, rivals and the industry so marketing decisions rest on **structured evidence** rather than hope. GlassHarbor Cycles, for example, wants to know whether commuters will pay €45/month for a battery-swap add-on — street interviews, a short questionnaire and published city mobility statistics all feed that decision."
             },
             {
               "type": "idea",
@@ -1219,9 +1285,23 @@
               "text": "The collection and interpretation of information about existing and prospective customers, potential buyers, **competition** and the **industry**, used to support marketing decisions."
             },
             {
+              "type": "subhead",
+              "id": "5.5.1",
+              "title": "Primary sources"
+            },
+            {
               "type": "idea",
               "term": "Primary market research",
               "text": "**Original data** gathered for the firm’s own questions — for example surveys, interviews, observation or experiments, sometimes via a research institute. Tailored and specific, but often costly."
+            },
+            {
+              "type": "p",
+              "text": "Primary research gathers **original data** for the firm’s own questions — surveys, interviews, observation or experiments, sometimes via a research institute. It is tailored and specific, but often costly in time, money and design skill. Use it when secondary sources cannot answer the exact concept, price or satisfaction question you face."
+            },
+            {
+              "type": "subhead",
+              "id": "5.5.2",
+              "title": "Secondary sources"
             },
             {
               "type": "idea",
@@ -1230,11 +1310,30 @@
             },
             {
               "type": "p",
+              "text": "Secondary research uses **existing data** collected by others — government statistics, trade association reports, published studies. It is usually cheaper and faster, but more general and not built for the firm’s exact problem. A free mobility report can size a market yet still leave willingness-to-pay unanswered."
+            },
+            {
+              "type": "p",
               "text": "**Qualitative research** explores motives, language and experiences in depth through interviews, focus groups and open observation notes; samples are smaller, meaning is rich, and statistical generalisation is limited. **Quantitative research** measures amounts, frequencies and relationships with numbers through structured questionnaires, counts and experiments with metrics; larger samples support stronger estimates of shares and averages. The two pairs work together: **primary** versus **secondary** answers who collected the data and for what, while qualitative versus quantitative answers what kind of insight. A firm might use secondary city cycling counts (quantitative secondary), then primary interviews about battery anxiety (qualitative primary), then a priced survey of 400 riders (quantitative primary). Primary research is tailored to the firm’s exact questions — useful for new product concept tests and satisfaction drivers — but costs time, money and design skill. Secondary research is faster and often cheaper or free — useful for market sizing and industry growth context — yet it may be generic, outdated or mismatched. A questionnaire the firm designs itself is primary, not secondary, research."
+            },
+            {
+              "type": "subhead",
+              "id": "5.5.3",
+              "title": "Customer analysis"
             },
             {
               "type": "p",
               "text": "Customer analysis often asks **who** buys, **what** they do with the product, **where** they buy, **when** they buy, and why they choose one option over another. Buyer and user may differ; influencers such as children may shape a purchase paid for by someone else. Timing patterns reveal seasonality and opportunities for price differentiation across the year. A free government mobility report can be useful for sizing and context yet still insufficient before launching the €45 battery-swap plan, because it will not answer willingness to pay or the firm’s exact concept questions."
+            },
+            {
+              "type": "subhead",
+              "id": "5.5.4",
+              "title": "Market measures"
+            },
+            {
+              "type": "figure",
+              "id": "market-measures",
+              "caption": "Market measures used in research and reports — volume, absolute share, relative share and growth."
             },
             {
               "type": "idea",
@@ -1257,6 +1356,11 @@
               "label": "Relative market share",
               "text": "Relative market share = own market share / largest competitor’s market share",
               "vars": "A value of 1 means parity with the leader; below 1 means smaller than the leader."
+            },
+            {
+              "type": "figure",
+              "id": "market-volume-potential",
+              "caption": "Market and sales volume versus market and sales potential — potential exceeds volume when unrealised customers or rival gains remain."
             },
             {
               "type": "p",
@@ -1286,6 +1390,11 @@
               "type": "idea",
               "term": "Positioning",
               "text": "Creating a clear **image or identity** for the product in the minds of the chosen target market(s) so the offer fits their demands."
+            },
+            {
+              "type": "figure",
+              "id": "segmentation-targeting",
+              "caption": "Market segmentation, targeting and positioning — group customers, choose whom to serve, then shape the offer’s identity."
             },
             {
               "type": "p",
@@ -1343,7 +1452,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. If the price screams luxury while the sales channel is a discount warehouse, customers will not know what to believe; if promotion promises glove-friendly numerals but the product ships tiny markings, trust collapses. The **marketing mix** is the craft of setting **product**, **price**, **place** and promotion so they play in tune for the target market."
+              "text": "The **marketing mix** is a harmonised blend of tools that meets the needs of the target market. Classically it is the **four Ps**: **product**, **price**, **place** and **promotion**. If price screams luxury while the sales channel is a discount warehouse — or promotion promises glove-friendly numerals while the product ships tiny markings — customers will not know what to believe. The craft is to set all four so they play in tune."
             },
             {
               "type": "idea",
@@ -1360,6 +1469,11 @@
               "text": "The basic idea is simple to state and hard to execute: provide a suitable **product**, at a **price** customers will accept, available in a convenient **place**, supported by a clear **promotional** message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix."
             },
             {
+              "type": "subhead",
+              "id": "5.7.1",
+              "title": "Product"
+            },
+            {
               "type": "idea",
               "term": "Product (as a mix element)",
               "text": "All goods and services offered — the heart of the mix. Includes line and mix decisions, branding, quality level, features, packaging and supporting services."
@@ -1367,6 +1481,16 @@
             {
               "type": "p",
               "text": "Most firms offer more than one item. Similar items form a **product line**; several lines form the **product mix**. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise on one line or diversify across more lines. Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated."
+            },
+            {
+              "type": "figure",
+              "id": "product-mix-strategies",
+              "caption": "Product-mix strategies — line extension, mix extension, alteration and contraction."
+            },
+            {
+              "type": "figure",
+              "id": "business-units",
+              "caption": "Business units in a diversified manufacturing portfolio — different units serve different customer applications and segments."
             },
             {
               "type": "idea",
@@ -1435,7 +1559,21 @@
             },
             {
               "type": "p",
-              "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
+              "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets."
+            },
+            {
+              "type": "figure",
+              "id": "ansoff-matrix",
+              "caption": "Ansoff product–market matrix — penetration, product development, market development and diversification."
+            },
+            {
+              "type": "p",
+              "text": "Ansoff’s product–market matrix organises growth options: **market penetration** (existing product, existing market — safest), **product development** (new product, existing market), **market development** (existing product, new market), and **diversification** (new product and new market — riskiest, but can spread risk long term)."
+            },
+            {
+              "type": "subhead",
+              "id": "5.7.2",
+              "title": "Price"
             },
             {
               "type": "idea",
@@ -1453,8 +1591,32 @@
               "vars": "From the next whole unit above break-even, the simplified model shows profit (other factors held aside)."
             },
             {
+              "type": "figure",
+              "id": "break-even",
+              "caption": "Break-even point — where the revenue line meets total costs (fixed costs are horizontal; variable and total costs rise with output)."
+            },
+            {
               "type": "p",
-              "text": "**Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; inelastic if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere. Markup targets and short-run acceptance decisions both rest on contribution logic, not on vanity list prices alone."
+              "text": "**Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere."
+            },
+            {
+              "type": "p",
+              "text": "Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust."
+            },
+            {
+              "type": "figure",
+              "id": "price-elasticity-elastic",
+              "caption": "Price elasticity of demand — elastic example: a price cut raises quantity demanded enough that revenue can increase."
+            },
+            {
+              "type": "figure",
+              "id": "price-elasticity-inelastic",
+              "caption": "Price elasticity of demand — inelastic example: a price cut raises quantity little, so revenue can fall."
+            },
+            {
+              "type": "subhead",
+              "id": "5.7.3",
+              "title": "Place"
             },
             {
               "type": "idea",
@@ -1466,6 +1628,11 @@
               "text": "Place can run through **distributors**, **wholesalers** who sell on to businesses, and **retailers** who sell on to consumers; through agents or brokers, especially in B2B; through online selling and telemarketing; and through formats such as vending machines and kiosks. Channel partners bridge factory and final buyer with logistics, local information and advertising support. Beverage makers, for example, rarely sell every bottle direct to households nationwide; they need partners for reach."
             },
             {
+              "type": "subhead",
+              "id": "5.7.4",
+              "title": "Promotion"
+            },
+            {
               "type": "idea",
               "term": "Promotion",
               "text": "Activities that **inform** potential customers and the public about the business, its products and their benefits."
@@ -1473,6 +1640,11 @@
             {
               "type": "p",
               "text": "Promotion tools include **advertising** on television, radio, online, social media, print, outdoor and transit; direct mailing; **personal selling** through salespeople; **sales promotions**; **sponsorship** of events, people or organisations; and public relations for a favourable image and stakeholder relationships. Small budgets still have options: website, local ads, social presence, leaflets and word-of-mouth from satisfied customers. Promotion must match the target segment and stay consistent with product quality cues, price position and place."
+            },
+            {
+              "type": "subhead",
+              "id": "5.7.5",
+              "title": "Mixing the four Ps for a harmonised blend"
             },
             {
               "type": "p",
@@ -1597,8 +1769,16 @@
               "text": "Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 22,000 and equity 24,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 22,000 + 24,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 23,500 and equity 24,000 — the same economic item, but different financing changes the totals."
             },
             {
+              "type": "subhead",
+              "title": "Fixed assets, current assets and intangibles"
+            },
+            {
               "type": "p",
               "text": "Assets are also split by how long they stay in the business. **Fixed** or **non-current assets** normally have a useful life of more than one year, are intended for longer-term use, and are usually harder to turn into cash quickly; examples include property, plant, buildings, machinery, office equipment kept for use, longer-term financial assets, and intangible assets such as patents, trademarks and copyrights. **Current assets** have higher **liquidity** and are normally used up, sold or converted within a year — inventory (merchandise not yet sold), trade receivables or debtors (money customers owe), and cash. Intangible assets cannot be touched, but they still have value for the business under the same logic as tangible ones: a workshop may own none yet, while a manufacturing group may report large patents, trademarks and licences."
+            },
+            {
+              "type": "subhead",
+              "title": "Liabilities and equity"
             },
             {
               "type": "p",
@@ -1622,7 +1802,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "One statement is never enough on its own. Northline's end-of-year balance sheet may show stronger equity and more cash than on day one, yet that still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan, so performance over a **period** needs the full **financial statement** set."
+              "text": "The balance sheet alone is not enough. It shows assets, liabilities and equity at a **point in time**, but not total sales, production costs or which cash movements came from operations versus a new loan. The **financial statement** of a business therefore combines the balance sheet, the **income statement** (profit and loss account) and the **cash flow statement** — together they reveal performance over a **period**."
             },
             {
               "type": "figure",
@@ -1633,6 +1813,11 @@
               "type": "idea",
               "term": "Financial statement",
               "text": "The package that reveals performance over a period: **balance sheet** + **income statement** (profit and loss account) + **cash flow statement**. The balance sheet alone cannot show turnover or production costs."
+            },
+            {
+              "type": "subhead",
+              "id": "6.2.1",
+              "title": "Profit and loss account"
             },
             {
               "type": "idea",
@@ -1752,6 +1937,11 @@
                   "101,500"
                 ]
               ]
+            },
+            {
+              "type": "subhead",
+              "id": "6.2.2",
+              "title": "Cash flow statement"
             },
             {
               "type": "idea",
@@ -2072,6 +2262,11 @@
               "text": "The ratio map for this course pairs each theme with a measure and a core idea: liquidity uses **working capital** (current assets left after current liabilities), the **current ratio** (current assets per €1 of current liabilities) and the **acid-test ratio** (the same idea excluding inventory); profitability uses **ROE** (EBIT relative to equity) and ROCE (EBIT relative to capital employed); efficiency uses asset turnover (turnover per €1 of average assets) and inventory turnover (how many times stock is sold or replaced); and gearing or structure uses the equity ratio (equity as a percentage of total assets) and the debt ratio (total debt as a percentage of total assets)."
             },
             {
+              "type": "subhead",
+              "id": "6.5.1",
+              "title": "Liquidity"
+            },
+            {
               "type": "p",
               "text": "Liquidity starts with an intuition: imagine every short-term claim lands at once, and ask whether the firm's relatively liquid resources — cash, receivables, inventory — can cover those claims and leave anything over. That leftover idea is **working capital**; retailers with heavy stock often need more of it than a service firm with little inventory, and high inventory can serve customers quickly while also tying up money, needing space and risking obsolescence."
             },
@@ -2098,6 +2293,11 @@
               "text": "For Cedar in Year 2 (€ thousands), current assets = 281, inventory = 92 and current liabilities = 150, so **working capital** = 281 − 150 = 131 (positive), the **current ratio** = 281 / 150 ≈ 1.87 (above 1 and inside the 1.5–2 comfort discussion), and the **acid-test** = (281 − 92) / 150 = 189 / 150 = 1.26 (still above 1). Short-term cover looks adequate on these measures, though you still judge against industry peers. A short-term loan, overdraft or extra trade credit can ease a cash squeeze, but it raises current liabilities and can shrink working capital, whereas improving both cash and working capital more sustainably usually means adding equity or longer-term borrowing. A current ratio above 1 is not automatically “safe” if most current assets are slow-moving inventory — that is why the **acid test** exists — and fixing cash with short-term borrowing can worsen the working-capital picture. Liquidity exam work usually asks you to compute working capital, current ratio and acid test, interpret “greater than 1”, explain why inventory is dropped in the acid test, and link short-term borrowing to lower working capital."
             },
             {
+              "type": "subhead",
+              "id": "6.5.2",
+              "title": "Profitability"
+            },
+            {
               "type": "p",
               "text": "Profitability starts from a similar intuition: a profit of €50,000 sounds fine until you ask relative to how much capital was risked, so profitability compares profit to a size base — **equity**, **capital employed**, or **turnover** — and tiny profits on huge capital look weak."
             },
@@ -2116,6 +2316,11 @@
             {
               "type": "p",
               "text": "For Cedar Year 2 (€ thousands), EBIT = 82 and equity = 388, so **ROE** = 82 / 388 ≈ 21.1%. **Capital employed** = assets − current liabilities = 776 − 150 = 626 (also equity 388 + non-current liabilities 238), so **ROCE** = 82 / 626 ≈ 13.1%; if average capital employed were 640, ROCE = 82 / 640 = 12.8%. Those returns look meaningful only beside peer ROCE/ROE and Cedar's own trend."
+            },
+            {
+              "type": "subhead",
+              "id": "6.5.3",
+              "title": "Financial efficiency"
             },
             {
               "type": "p",
