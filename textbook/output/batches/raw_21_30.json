@@ -1,0 +1,332 @@
+[
+  {
+    "num": 21,
+    "title": "FitZone Gym — Checking the Advertised Rates",
+    "format": "Promotional Flyer  |  Difficulty: 4.1/10  |  (previously Task 12 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.1,
+    "difficulty_level": "2/5",
+    "narrative": "FITZONE GYM — NEW MEMBER SPECIAL! \"Join for just a $30 signup fee, then only $45/month!\" An accounting team member is\nskeptical and pulls two real members' payment histories. Maria, after her 6th monthly payment, had paid $284 total. Jason, after his 10th\nmonthly payment, had paid $448 total.",
+    "given": "Let x = the signup fee actually charged, y = the actual monthly rate. The flyer's advertised figures ($30 and $45) are a claim to be\nchecked, not values to plug directly into the model.",
+    "statements": [
+      "The flyer's advertised $30 signup fee matches what members are actually being charged.",
+      "The monthly rate members are actually paying is lower than the advertised $45/month.",
+      "Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.",
+      "Jason paid more than $400 in total by his 10th payment.",
+      "A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay $492."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "The real signup fee is $38, not the advertised $30 — the flyer understates what members are actually charged up front.",
+      "The real monthly rate is $41, indeed lower than the advertised $45 — the flyer overstates the ongoing cost while understating the signup fee.",
+      "The flyer's own rates over 6 months would total 30 + 6(45) = $300; Maria's real total of $284 is actually less than that, not more.",
+      "Jason's real total is $448, indeed more than $400.",
+      "12 × $41 = $492 exactly, a direct scaling of the confirmed real monthly rate with no signup fee included."
+    ],
+    "model": "x + 6y = 284 (Maria)\nx + 10y = 448 (Jason)",
+    "solution": "Subtracting directly: 4y = 164, so y = 41. Substituting back: x + 246 = 284, so x = 38.\nFinal Answer: Signup fee = $38.00  |  Monthly rate = $41.00/month (flyer's figures do not match)",
+    "general": "A straightforward subtract-directly elimination whose entire point is claim-verification: the advertised numbers are wrong in both directions (fee understated, rate overstated), and statement C tests whether the reader notices the two errors do not simply cancel out at 6 months."
+  },
+  {
+    "num": 22,
+    "title": "StreamPlus — Household Billing Comparison",
+    "format": "Comparison Table  |  Difficulty: 4.2/10  |  (previously Task 15 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.2,
+    "difficulty_level": "2/5",
+    "narrative": "StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Customer service pulled combined\nbilling records mixing plan-months across two households.\nHousehold\nBasic-Months\nPremium-Months\nCombined Total\nHousehold 1\n4\n3\n$169\nHousehold 2\n2\n7\n$255",
+    "given": "Let x = Basic monthly price, y = Premium monthly price.",
+    "statements": [
+      "The Basic plan costs $19 per month.",
+      "The Premium plan costs $35 per month.",
+      "Household 2's combined total is more than double Household 1's combined total.",
+      "There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.",
+      "A household billed for 5 months of Basic and 5 months of Premium would owe a combined $250."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "Solving the system gives x = $19 exactly, consistent with both households' combined bills.",
+      "Premium actually costs $31/month, not $35; substituting an assumed 'round' value instead of finishing the elimination is a common shortcut.",
+      "Household 2's total is $255, while double Household 1's total is $338; $255 falls short, so it is not more than double.",
+      "Since neither plan carries a fixed fee, an n-month Basic bill costs 19n and Premium costs 31n. These are equal only when n = 0 — there is no positive month count at which they ever match.",
+      "5(19) + 5(31) = $250 exactly, a direct application of both confirmed monthly rates."
+    ],
+    "model": "4x + 3y = 169\n2x + 7y = 255",
+    "solution": "Multiply the first by 7 and the second by 3: 28x + 21y = 1183; 6x + 21y = 765. Subtracting: 22x = 418, so x = 19. Substituting back: 76 +\n3y = 169, so y = 31.\nFinal Answer: Basic = $19.00/month  |  Premium = $31.00/month",
+    "general": "A clean elimination with no fee-removal or claim-checking layer; the difficulty here is entirely in statement D, which requires recognizing that two proportional (no-intercept) lines through the origin can only coincide at the origin itself — a conceptual point rather than a computational one."
+  },
+  {
+    "num": 23,
+    "title": "Willow Market — Grocery Receipts",
+    "format": "Supermarket Receipt  |  Difficulty: 4.4/10  |  (previously Task 13 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.4,
+    "difficulty_level": "2/5",
+    "narrative": "Two items — organic apples and almond milk — recently had their prices updated. (A note on every receipt reminds shoppers that loyalty-\ncard members save 5% storewide; neither receipt below belongs to a loyalty member, so no discount has actually been applied.)\nReceipt 1\nQty\nPrice\nBread (loaf)\n1\n$3.60\nEggs (dozen)\n1\n$4.40\nOrganic Apples (lb)\n5\n?\nAlmond Milk (carton)\n3\n?\nReceipt Total\n$50.00\nReceipt 2\nQty\nPrice\nBread (loaf)\n1\n$3.60\nOrganic Apples (lb)\n2\n?\nAlmond Milk (carton)\n5\n?\nReceipt Total\n$43.20",
+    "given": "Let x = current price per lb of organic apples, y = current price per carton of almond milk. Bread and egg prices are already known, and\nthe loyalty-discount note is a distractor that does not apply here.",
+    "statements": [
+      "Organic apples cost $4.80 per pound.",
+      "Almond milk costs less than organic apples, per unit.",
+      "Five pounds of apples costs exactly the same as four cartons of almond milk.",
+      "If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than $47.00.",
+      "Buying 10 lb of apples and 2 cartons of milk together costs more than $60."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "explanations": [
+      "After removing the known bread and egg prices, solving the resulting system gives exactly $4.80/lb.",
+      "Almond milk is actually the more expensive item, $6.00/carton versus apples' $4.80/lb — the reverse of the claim.",
+      "5(4.80) = $24.00 and 4(6.00) = $24.00 — exactly equal, not just close.",
+      "5% of $50.00 is $2.50, leaving $47.50 — not less than $47.00, only barely above it.",
+      "10(4.80) + 2(6.00) = $60.00 exactly — not more than $60, but equal to it."
+    ],
+    "model": "5x + 3y = 50.00 − 3.60 − 4.40 = 42.00\n2x + 5y = 43.20 − 3.60 = 39.60",
+    "solution": "Multiply the first by 5 and the second by 3: 25x + 15y = 210; 6x + 15y = 118.80. Subtracting: 19x = 91.20, so x = 4.80. Substituting back:\n24.00 + 3y = 42.00, so y = 6.00.\nFinal Answer: Organic apples = $4.80/lb  |  Almond milk = $6.00/carton",
+    "general": "Two known-item prices (bread, eggs) must be subtracted from each receipt before the system can be built — the same fee-removal mechanism as earlier tasks, but with two known quantities per receipt instead of one. Statements C, D, and E are all boundary-equality traps in a row, deliberately clustering the 'exactly equal, not strictly more/less' misreading in one task."
+  },
+  {
+    "num": 24,
+    "title": "BrightHome Energy — Monthly Utility Bills",
+    "format": "Utility Bill  |  Difficulty: 4.5/10  |  (previously Task 19 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.5,
+    "difficulty_level": "2/5",
+    "narrative": "BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is $0.24/unit, unverified\nagainst real data. BrightHome also offers a Solar Offset Plan with no connection fee, at a flat $0.29/unit.\nBill\nUnits Consumed\nTotal Charge\nBill 1\n240\n$83.40\nBill 2\n380\n$112.80",
+    "given": "Let x = fixed connection fee, y = rate per unit under the standard plan. Treat the $0.24/unit figure as a claim to verify.",
+    "statements": [
+      "The fixed connection fee is $33.",
+      "Customer service's claimed rate of $0.24 per unit is correct.",
+      "At 280 units of usage, the standard plan costs less than $95.",
+      "The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.",
+      "At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "explanations": [
+      "Subtracting the two bills isolates y first, and back-substitution confirms a $33.00 fixed fee exactly.",
+      "The actual rate is $0.21/unit, not the claimed $0.24 — the phone figure was never checked against real bills until now.",
+      "33 + 280(0.21) = $91.80, indeed less than $95.",
+      "The two plans cross at 412.5 units: below that, Solar is cheaper, but above it the standard plan's lower rate wins out.",
+      "At 500 units (above the 412.5-unit crossover), the standard plan costs $138.00 while Solar costs $145.00 — the standard plan is actually cheaper here."
+    ],
+    "model": "x + 240y = 83.40\nx + 380y = 112.80",
+    "solution": "Subtracting directly: 140y = 29.40, so y = 0.21. Substituting back: x + 50.40 = 83.40, so x = 33.00. To find the crossover with Solar: 33 +\n0.21u = 0.29u → u = 412.5 units.\nFinal Answer: Fixed fee = $33.00  |  Rate = $0.21/unit (customer service's figure does not match)",
+    "general": "Adds a genuine crossover-point calculation (solving 33 + 0.21u = 0.29u for u) on top of the usual claim-verification elimination, then tests that crossover from two different angles in statements D and E — a universal claim ('at every level') and a specific numeric check, both of which trade on the same easily-missed 412.5-unit threshold."
+  },
+  {
+    "num": 25,
+    "title": "Trattoria Bella — Off-Peak vs. Peak Bills",
+    "format": "Restaurant Bill  |  Difficulty: 4.7/10  |  (previously Task 11 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.7,
+    "difficulty_level": "2/5",
+    "narrative": "Trattoria Bella serves pasta and appetizers at consistent prices. Off-peak tables carry no service fee; peak tables automatically have a 10%\nservice charge added before the bill is printed. Table 5 (off-peak) printed $174.00 for 6 pasta + 4 appetizers, with no fee. Table 8 (peak,\nfee already included) came to $46.00 more than Table 5's total, for 5 pasta + 7 appetizers.",
+    "given": "Let x = price of one pasta dish, y = price of one appetizer. Table 8's total must first be reconstructed as Table 5's total plus $46.00, and\nonly then can the 10% service charge be stripped back out.",
+    "statements": [
+      "A pasta dish costs $19.",
+      "An appetizer costs more than a pasta dish.",
+      "Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly $26.00.",
+      "If Table 5 had also been charged the 10% peak-hour service fee, its total would have been $191.40.",
+      "Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than $150."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "Once Table 8's total is reconstructed and the fee removed, elimination gives x = $19.00 exactly, confirmed by both tables.",
+      "The appetizer is actually cheaper, at $15.00, versus the pasta dish's $19.00 — the reverse of the claim.",
+      "The pre-tax subtotal is $200.00 against Table 5's $174.00 — a gap of exactly $26.00, different from the printed $46.00 gap, which was measured after Table 8's service charge was added.",
+      "174.00 × 1.10 = $191.40, applying the same 10% multiplier used to strip the charge from Table 8.",
+      "Subtotal = 4(19) + 4(15) = $136.00; with the 10% charge, 136 × 1.10 = $149.60, just under $150 — a close call rewarding exact decimals over early rounding."
+    ],
+    "model": "6x + 4y = 174.00\n5x + 7y = (174.00 + 46.00) ÷ 1.10 = 200.00",
+    "solution": "Divide Table 5's equation by 2: 3x + 2y = 87. Multiply by 7: 21x + 14y = 609. Multiply Table 8's equation by 2: 10x + 14y = 400.\nSubtracting: 11x = 209, so x = 19. Substituting back: 3(19) + 2y = 87, so y = 15.\nFinal Answer: Pasta dish = $19.00  |  Appetizer = $15.00",
+    "general": "Combines two mechanisms in one model: reconstructing an unknown total from a relative clue (+$46), then stripping a 10% service charge back out of that reconstructed figure — two operations that must be done in the right order. Statement C specifically tests whether the reader confuses the printed $46.00 gap (measured after tax) with the true pre-tax gap ($26.00)."
+  },
+  {
+    "num": 26,
+    "title": "Meridian Distribution — Warehouse Inventory Summary",
+    "format": "Inventory Summary  |  Difficulty: 4.8/10  |  (previously Task 18 (orig. Tasks 11–20 set))",
+    "difficulty_10": 4.8,
+    "difficulty_level": "2/5",
+    "narrative": "Meridian Distribution ships Item M and Item N. The inventory system logs item counts, unit weight, unit volume, and total shipment cost\n— but only item counts and cost determine unit pricing.\nShipment\nItem M Units\nItem N Units\nWt. M (kg)\nWt. N (kg)\nCost\nShipment 1\n110\n80\n2.4\n1.7\n$4,470\nShipment 2\n70\n150\n2.4\n1.7\n$5,520",
+    "given": "Let x = cost per unit of Item M, y = cost per unit of Item N. Weight and volume are logged for freight billing and play no role in the item\npricing itself.",
+    "statements": [
+      "Item M costs $21 per unit.",
+      "Item N costs $30 per unit.",
+      "Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.",
+      "150 units of Item N alone would cost $4,050.",
+      "Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "explanations": [
+      "The elimination confirms $21.00 per unit for Item M, consistent with both shipments.",
+      "Item N actually costs $27, not $30; scanning the weight and volume columns for a price signal is a common but irrelevant distraction.",
+      "Shipment 1 averages 4470/190 ≈ $23.53/unit, while Shipment 2 averages 5520/220 ≈ $25.09/unit — close, but not equal.",
+      "150(27) = $4,050 exactly, scaling the confirmed unit price for Item N.",
+      "Shipment cost is determined entirely by item quantities and unit prices; the weight/volume figures are freight-billing data logged separately and play no causal role in the total, despite sitting right next to it."
+    ],
+    "model": "110x + 80y = 4470\n70x + 150y = 5520",
+    "solution": "Divide by 10: 11x + 8y = 447; 7x + 15y = 552. Multiply by 15 and 8: 165x + 120y = 6705; 56x + 120y = 4416. Subtracting: 109x = 2289,\nso x = 21. Substituting back: 231 + 8y = 447, so y = 27.\nFinal Answer: Item M = $21.00/unit  |  Item N = $27.00/unit",
+    "general": "The main trap is structural: two entire columns (unit weight, unit volume) are present purely as red herrings that never enter the pricing model at all, and statements B, C, and E each test a different way of being pulled toward those irrelevant columns."
+  },
+  {
+    "num": 27,
+    "title": "Green Horizons Landscaping — Job Quotation",
+    "format": "Quotation  |  Difficulty: 5.0/10  |  (previously Task 17 (orig. Tasks 11–20 set))",
+    "difficulty_10": 5.0,
+    "difficulty_level": "2/5",
+    "narrative": "Green Horizons prices Standard and Premium planting. Job 1's invoice records quantity in planting bundles (each bundle = 2 Standard +\n5 Premium units), while Job 2's invoice lists individual units directly.\nJob 1: 7 bundles — Total $1,946. Job 2: 13 Standard + 21 Premium — Total $1,301.\nNew Quotation: 8 Standard + 19 Premium — Quoted Total: $1,068.",
+    "given": "Let x = price per Standard unit, y = price per Premium unit. Job 1's bundles must first be converted into individual Standard and Premium\nunits before the system can be written.",
+    "statements": [
+      "Standard planting costs $29 per unit.",
+      "Premium planting costs $50 per unit.",
+      "Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.",
+      "The Premium portion alone of Job 1 cost more than the entirety of Job 2.",
+      "The new quotation of $1,068 is mathematically consistent with the confirmed rates."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "Elimination confirms x = $29 exactly, once Job 1's bundles are correctly expanded into individual units.",
+      "Premium actually prices at $44, not $50; a likely slip is treating an intermediate elimination value as the finished answer.",
+      "7 bundles × 2 Standard = 14, and 7 bundles × 5 Premium = 35 — the conversion needed before Job 1 can enter the model at all.",
+      "Job 1's Premium portion alone is 35(44) = $1,540, indeed more than Job 2's entire total of $1,301 — a single line item from one job can outweigh a whole other job.",
+      "The quoted 8(29) + 19(44) = $1,068 matches the issued quotation exactly, so it is internally consistent with the confirmed rates."
+    ],
+    "model": "14x + 35y = 1946 (Job 1, bundles expanded: 7×2, 7×5)\n13x + 21y = 1301 (Job 2, as invoiced)",
+    "solution": "Divide Job 1's equation by 7: 2x + 5y = 278. Multiply by 21 and Job 2's by 5: 42x + 105y = 5838; 65x + 105y = 6505. Subtracting: 23x =\n667, so x = 29. Substituting back: 58 + 5y = 278, so y = 44. Check the new quotation: 8(29) + 19(44) = $1,068, matching exactly.\nFinal Answer: Standard = $29.00/unit  |  Premium = $44.00/unit",
+    "general": "The main mechanism is unit conversion: Job 1's quantities are stated in bundles rather than individual units, and must be expanded (×2 and ×5 per bundle) before the system can even be written — skipping this step produces a totally different, unsolvable pair of equations. Statement E provides an unusually satisfying verification step, checking the solved prices against an independent third figure (the new quotation) rather than against the two equations that produced them."
+  },
+  {
+    "num": 28,
+    "title": "Horizon Consulting — Travel Reimbursement Memo",
+    "format": "Internal Company Memo  |  Difficulty: 5.1/10  |  (previously Task 16 (orig. Tasks 11–20 set))",
+    "difficulty_10": 5.1,
+    "difficulty_level": "3/5",
+    "narrative": "Reimbursement is a fixed per-diem for each meal day plus a fixed rate per mile. Finance separately believes the mileage rate is\n$0.40/mile, unconfirmed against payroll data. One of three reports contains a data-entry error making it financially impossible.\nReport\nMeal Days\nMiles Driven\nTotal Reimbursed\nReport 1\n5\n150\n$323\nReport 2\n3\n250\n$245\nReport 3\n7\n40\n$120",
+    "given": "Let x = per-diem rate, y = per-mile rate. Identify which report cannot possibly be correct before building the model, and treat Finance's\n$0.40/mile belief as a claim to be checked.",
+    "statements": [
+      "The per diem is $55 per day.",
+      "Finance's belief that the mileage rate is $0.40/mile is correct.",
+      "Report 3 is impossible, since 7 meal days alone would require at least $385 at the confirmed per-diem rate — far more than its reported $120 total.",
+      "Report 1's total exceeds Report 2's total by more than $80.",
+      "Reports 1 and 2 combined reimbursed at least $550."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Using Reports 1 and 2 (Report 3 set aside as impossible), elimination gives a per diem of exactly $55.00.",
+      "The mileage rate is actually $0.32/mile, not the claimed $0.40 — the belief was never checked against the underlying reports until now.",
+      "At $55/day, 7 meal days alone would need $385, already far above Report 3's $120 total before a single mile is counted — confirming it as the report that had to be excluded.",
+      "Report 1's total is $323 and Report 2's is $245, a gap of exactly $78 — not more than $80, only just short of it.",
+      "323 + 245 = $568, which does satisfy 'at least $550,' unlike statement D's stricter '$80' gap, which narrowly fails."
+    ],
+    "model": "5x + 150y = 323 (Report 1)\n3x + 250y = 245 (Report 2)",
+    "solution": "Report 3 must be checked before use: 7 meal days alone at any reasonable per-diem rate close to the other two reports' implied range\nalready exceeds $120 — it is set aside as an entry error. Multiply the remaining two equations by 3 and 5: 15x + 450y = 969; 15x + 1250y\n= 1225. Subtracting: 800y = 256, so y = 0.32. Substituting back: 5x + 48 = 323, so x = 55.\nFinal Answer: Per diem = $55.00/day  |  Mileage rate = $0.32/mile (Finance's belief does not match)",
+    "general": "Introduces plausibility-checking as a prerequisite step: one of three reports must be recognized as internally impossible (its total is too small for even the meal days alone) and excluded before the system is built — a different flavor of \"spot the bad row\" than the forecast-exclusion tasks earlier in this worksheet. Statements D and E are near-miss boundary traps ($78 vs. $80, $568 vs. $550) placed side by side."
+  },
+  {
+    "num": 29,
+    "title": "Cedarline Manufacturing — Weekly Production Log",
+    "format": "Production Report  |  Difficulty: 5.3/10  |  (previously Task 14 (orig. Tasks 11–20 set))",
+    "difficulty_10": 5.3,
+    "difficulty_level": "3/5",
+    "narrative": "Cedarline assembles Widget A and Widget B on the same line, each requiring a fixed number of labor-hours. Week 1's log is fully legible.\nWeek 2's log is smudged: unit counts are gone, but a sticky note reads \"8 more Widget B than Widget A, 58 units total, using 505 labor-\nhours.\" Week 3 is water-damaged: the Widget A count is illegible.\nWeek\nWidget A\nWidget B\nTotal Labor-Hours\nWeek 1\n35\n20\n445\nWeek 2\n(see note)\n(see note)\n505\nWeek 3\n(illegible)\n15\n290",
+    "given": "Let x = labor-hours per Widget A, y = labor-hours per Widget B. Week 2's unit counts must first be recovered from the sticky note (a small\nsum-and-difference step) before the main system can be written.",
+    "statements": [
+      "Widget A requires 7 hours of labor to assemble.",
+      "Widget B requires 12 hours of labor to assemble.",
+      "Week 2 actually produced 25 Widget A units and 33 Widget B units.",
+      "If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.",
+      "The illegible Week 3 entry can be reconstructed as 20 Widget A units."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Solving the recovered two-week system gives exactly 7 hours per Widget A, confirmed against both weeks' totals.",
+      "Widget B actually needs 10 hours, not 12; a common mistake is mixing up which coefficient belongs to A and which to B partway through elimination.",
+      "From B = A + 8 and A + B = 58, substitution gives 2A + 8 = 58, so A = 25 and B = 33 — the counts must be recovered this way before Week 2 can be used at all.",
+      "A 20% rise in Widget A's hours (7 → 8.4) raises Week 1's total from 445 to 494, an increase of only about 11%, not 20% — because Widget A's hours are only part of the week's total time.",
+      "Substituting the surviving Widget B count and total hours into the confirmed model, 7A + 10(15) = 290, gives A = 20 — a legitimate reconstruction, not a guess."
+    ],
+    "model": "35x + 20y = 445 (Week 1)\n25x + 33y = 505 (Week 2, recovered counts)",
+    "solution": "Recover Week 2 first: B = A + 8, A + B = 58, so 2A + 8 = 58, A = 25, B = 33. Multiply Week 1 by 33 and Week 2 by 20: 1155x + 660y =\n14685; 500x + 660y = 10100. Subtracting: 655x = 4585, so x = 7. Substituting back: 245 + 20y = 445, so y = 10. Reconstruct Week 3: 7A\n+ 10(15) = 290, so A = 20.\nFinal Answer: Widget A = 7 hrs/unit  |  Widget B = 10 hrs/unit",
+    "general": "Stacks three distinct mechanisms in one task: (1) recover Week 2's hidden counts via a sum-and-difference sub-system, (2) solve the main two- unknown system from Weeks 1 and 2, and (3) use the solved rates to reconstruct Week 3's missing count from a single equation. Statement D repeats the \"percentage change to one part scales the whole\" misconception seen elsewhere in this worksheet, here dressed up in a production- hours context instead of a revenue context."
+  },
+  {
+    "num": 30,
+    "title": "Sterling Distributors — Regional Sales Dashboard",
+    "format": "Business Dashboard  |  Difficulty: 5.4/10  |  (previously Task 20 (orig. Tasks 11–20 set))",
+    "difficulty_10": 5.4,
+    "difficulty_level": "3/5",
+    "narrative": "Sterling Distributors' dashboard reports quarterly unit sales and revenue for Products X and Y, sold at company-wide fixed prices, across\nthree branches. Two of the three branch reports are known to reconcile correctly; the third contains an uncorrected data-entry error,\nthough the dashboard does not indicate which one.\nBranch\nProduct X Units\nProduct Y Units\nReported Revenue\nNorth\n85\n70\n$4,145\nSouth\n55\n95\n$3,875\nEast\n65\n50\n$3,200",
+    "given": "Let x = price of Product X, y = price of Product Y.",
+    "statements": [
+      "Product X is priced at $29.",
+      "Product Y is priced at $28.",
+      "The East branch's reported revenue is fully consistent with the derived prices.",
+      "If the East branch's reported revenue were corrected to reflect the derived prices, it should read $3,085.",
+      "North's reported revenue exceeds South's and East's reported revenues combined."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "explanations": [
+      "Solving the North and South reports together gives x = $29 exactly, and this pair is internally consistent with each other.",
+      "Product Y prices out at $24, not $28; stopping partway through elimination and reading off an intermediate value is the likely source of this error.",
+      "65(29) + 50(24) = $3,085, not the reported $3,200; that $115 gap is exactly the data-entry error the dashboard warns about, and East is the branch responsible.",
+      "The corrected East figure, using the derived prices, is $3,085, matching the calculation above.",
+      "North's reported revenue is $4,145, while South and East together report $7,075 — North falls well short of that combined figure, despite being the single largest branch on its own."
+    ],
+    "model": "85x + 70y = 4145 (North)\n55x + 95y = 3875 (South)",
+    "solution": "North and South are used to derive the prices, since they reconcile with each other. Divide by 5: 17x + 14y = 829; 11x + 19y = 775.\nMultiply by 19 and 14: 323x + 266y = 15751; 154x + 266y = 10850. Subtracting: 169x = 4901, so x = 29. Substituting back: 493 + 14y =\n829, so y = 24. Testing East: 65(29) + 50(24) = $3,085, which does not match East's reported $3,200 — a $115 discrepancy, revealing\nEast as the erroneous branch.\nFinal Answer: Product X = $29.00/unit  |  Product Y = $24.00/unit",
+    "general": "This is the hardest task in the tier: three branches are given, but which two are reliable is never stated — the reader must choose a pairing (North & South), solve it, and then use the result to audit the third branch and quantify its error, all without being told in advance which branch is faulty. It is effectively an unsupervised version of the \"identify the bad row\" mechanism used more explicitly elsewhere in this worksheet."
+  }
+]

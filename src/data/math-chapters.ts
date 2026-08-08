@@ -3,6 +3,8 @@
  * Task content will be filled in later — placeholder slots keep the UI ready.
  */
 
+import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
+
 export type MathTask = {
   id: string;
   case_id: string;
@@ -13,6 +15,8 @@ export type MathTask = {
   tactical_explanations: string[];
   difficulty_level: string;
   sort_order: number;
+  /** Shared worked solution (KaTeX / markdown-ish) shown with all statement explanations. */
+  solution_overview?: string;
   /** True until real task content is authored. */
   placeholder?: boolean;
 };
@@ -63,12 +67,16 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
   });
 }
 
+const CHAPTER_OVERRIDES: Record<number, MathTask[]> = {
+  5: MATH_CH5_LINEAR_EQUATIONS,
+};
+
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   const num = i + 1;
   return {
     num,
     title,
-    tasks: makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
+    tasks: CHAPTER_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
   };
 });
 

@@ -1,0 +1,332 @@
+[
+  {
+    "num": 41,
+    "title": "Sterling Family Trust — Two-Fund Return Reconstruction",
+    "format": "Trust Officer's Memo  |  Difficulty: 7.1/10  |  (previously Task 41 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.1,
+    "difficulty_level": "4/5",
+    "narrative": "The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%. The officer's\nnotes state Fund B's balance is $4,000 more than twice Fund A's balance, and the combined annual return from both funds is $762.00.",
+    "given": "Let x = balance in Fund A, y = balance in Fund B.",
+    "statements": [
+      "The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.",
+      "If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above $800.00.",
+      "The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).",
+      "Had the trust instead been split evenly ($9,200.00 in each fund) at the original rates, the total return would have come within $5.00 of the actual $762.00.",
+      "The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Fund A earns 0.0525(4,800) = $252.00; Fund B earns 0.0375(13,600) = $510.00. Triple Fund A's interest would be $756.00, and $510.00 does not reach that.",
+      "At the raised rate, Fund A would earn 0.0675(4,800) = $324.00, giving a combined return of $324.00 + $510.00 = $834.00, above $800.00.",
+      "Total trust value is $18,400.00, and $762.00 ÷ $18,400.00 ≈ 4.14%, which exceeds 4%.",
+      "An even split would earn 9,200(0.0525 + 0.0375) = $828.00, which is $66.00 away from the actual $762.00 — far more than $5.00.",
+      "(13,600 − 4,800) ÷ 4,800 = 8,800 ÷ 4,800 ≈ 1.8333, or about 183.3%, which exceeds 180%."
+    ],
+    "model": "y = 2x + 4000 (Fund B's balance, from the stated relationship)\n0.0525x + 0.0375y = 762 (combined annual return)",
+    "solution": "Substitute the first equation into the second: 0.0525x + 0.0375(2x + 4000) = 762 → 0.1275x + 150 = 762 → 0.1275x = 612 → x = 4800.\nSubstitute back: y = 2(4800) + 4000 = 13600.\nFinal Answer: Fund A = $4,800.00  |  Fund B = $13,600.00",
+    "general": "The first task to require translating a worded algebraic relationship (\"$4,000 more than twice Fund A's balance\") directly into y = 2x + 4000 before any percentage arithmetic even begins, then layering simple-interest rate multiplication and relative-percentage-difference reasoning (statement E) on top. Every statement forces a fresh computation rather than a simple lookup of x or y."
+  },
+  {
+    "num": 42,
+    "title": "Solventis Labs — Ratio-Blended Batch Reconstruction",
+    "format": "Laboratory Batch Log  |  Difficulty: 7.3/10  |  (previously Task 42 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.3,
+    "difficulty_level": "4/5",
+    "narrative": "Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio\n(A:B) rather than individual volumes.\nBatch\nTotal Volume\nMixing Ratio (A:B)\nTotal Salt Content\nBatch 1\n10 L\n3 : 2\n144 g\nBatch 2\n12 L\n5 : 1\n184 g\nBatch 3 (QC review)\n8 L\n1 : 3\n109 g (recorded)",
+    "given": "Let x = grams of salt per liter in Solution A, y = grams of salt per liter in Solution B.",
+    "statements": [
+      "The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.",
+      "Solution B's concentration is more than 70% of Solution A's concentration.",
+      "If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B (with Solution A's 2 L taken as correct), the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.",
+      "Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.",
+      "Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Batch 1 contains 144 g and Batch 2 contains 184 g; combined, 328 g, which exceeds 300 g.",
+      "12 ÷ 16 = 0.75, or 75%, which is more than 70%.",
+      "If 2 L of A is correct, 2(16) + 12V = 109 → V = 77/12 ≈ 6.4167 L, only 0.0167 L from 6.4 L but 0.4167 L from 6.0 L.",
+      "In a 3:1 ratio, salt content = 16(0.75V) + 12(0.25V) = 15V. Setting 15V = 130 gives V ≈ 8.67 L, not 7.5 L.",
+      "Batch 2's 5:1 ratio means A is 5/6 ≈ 83.3% of volume, while Batch 1's 3:2 ratio means A is only 3/5 = 60% — Batch 2's proportion is higher."
+    ],
+    "model": "6x + 4y = 144 (Batch 1: 10 L split 3:2 → 6 L of A, 4 L of B)\n10x + 2y = 184 (Batch 2: 12 L split 5:1 → 10 L of A, 2 L of B)",
+    "solution": "Divide by 2: 3x + 2y = 72; 5x + y = 92, so y = 92 − 5x. Substitute: 3x + 2(92 − 5x) = 72 → −7x = −112 → x = 16. Then y = 92 − 80 = 12.\nAudit Batch 3 (1:3 over 8 L = 2 L A, 6 L B): predicted = 2(16) + 6(12) = 104 g, vs. 109 g recorded — a 5 g discrepancy.\nFinal Answer: Solution A = 16 g/L  |  Solution B = 12 g/L  |  Batch 3 predicted = 104 g (vs. 109 g recorded)",
+    "general": "Requires converting a stated ratio (3:2, 5:1, 1:3) plus a total volume into individual component volumes before the system can even be written — a genuinely new translation step compared to earlier tasks. Statement C then reverses the model to solve for a hypothetical corrected volume from a stated discrepancy, and statement D asks the reader to apply the derived concentrations to an entirely new mixing ratio and target mass."
+  },
+  {
+    "num": 43,
+    "title": "Union Mills Manufacturing — Fractional-Hour Overtime Reconstruction",
+    "format": "Payroll Audit Memo  |  Difficulty: 7.4/10  |  (previously Task 43 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.4,
+    "difficulty_level": "4/5",
+    "narrative": "Union Mills pays a fixed base hourly wage plus a fixed overtime premium on top of the base wage for hours beyond 40/week. Employee A:\n40 regular + 2.5 OT hours, $765.00 gross. Employee B: 40 regular + 7 OT hours, $882.00 gross.",
+    "given": "Let x = base hourly wage, y = overtime premium per hour (on top of the base wage, per OT hour).",
+    "statements": [
+      "If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed $6.00.",
+      "Employee B's overtime pay (the portion earned specifically for hours beyond 40) is more than 40% of his total gross pay.",
+      "The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.",
+      "If the overtime premium were eliminated (overtime paid at the base rate) but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.",
+      "The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Her actual 2.5 hours of OT pay = 2.5(26) = $65.00; 10% of that is $6.50, which exceeds $6.00.",
+      "Employee B's overtime pay is 7(26) = $182.00, and $182.00 ÷ $882.00 ≈ 20.6%, well short of 40%.",
+      "At 45 hours and the base rate alone, each would earn 45(17.5) = $787.50, combined $1,575.00. Their actual combined pay is $1,647.00, which is higher.",
+      "The new base wage would be 17.5(1.15) = $20.125/hour, so 42.5 hours at that flat rate ≈ $855.31 — higher than her actual $765.00, not lower.",
+      "7 ÷ 2.5 = 2.8, while 882 ÷ 765 ≈ 1.153 — the hours ratio is indeed greater than the pay ratio, since overtime hours are only a partial driver of total pay."
+    ],
+    "model": "42.5x + 2.5y = 765 (Employee A: 40 regular + 2.5 OT hours, each OT hour paid at x+y)\n47x + 7y = 882 (Employee B: 40 regular + 7 OT hours)",
+    "solution": "Multiply the first by 2.8 (so its y-coefficient matches): 119x + 7y = 2142. Subtract the second: 72x = 1260, so x = 17.5. Substitute back:\n42.5(17.5) + 2.5y = 765 → 2.5y = 21.25 → y = 8.5.\nFinal Answer: Base wage = $17.50/hour  |  Overtime premium = $8.50/hour (overtime rate = $26.00/hour)",
+    "general": "Uses fractional (2.5-hour) overtime quantities and an overtime rate defined as base-plus-premium (x+y per OT hour) rather than a flat multiplier, which changes how the equations must be weighted during elimination (multiplying by 2.8, a non-integer factor). Statement D constructs an entirely hypothetical pay policy and asks the reader to compare it against actual earnings, requiring a full recomputation rather than a simple percentage check."
+  },
+  {
+    "num": 44,
+    "title": "Greenfield Landscaping — Redundant Project Reconciliation",
+    "format": "Project Cost Ledger  |  Difficulty: 7.6/10  |  (previously Task 44 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.6,
+    "difficulty_level": "4/5",
+    "narrative": "Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a\nscaled repeat of another and adds nothing new.\nProject\nWood Fencing\nWire Fencing\nTotal Cost\nProject 1\n18 m\n24 m\n$750.00\nProject 2\n27 m\n36 m\n$1,125.00\nProject 3\n10 m\n40 m\n$710.00",
+    "given": "Let x = price per meter of cedar wood fencing, y = price per meter of galvanized wire fencing.",
+    "statements": [
+      "If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded $950.00.",
+      "The per-meter price gap between wood and wire (x − y) is more than 145% of the wire price per meter.",
+      "Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs ($750.00 + $710.00).",
+      "If wire fencing rose by $2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.",
+      "Project 3's cost per total meter installed (cost ÷ total meters of both materials) is higher than Project 1's cost per total meter installed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "explanations": [
+      "20(27) + 40(11) = 540 + 440 = $980.00, which exceeds $950.00.",
+      "x − y = 27 − 11 = 16, while 145% of the wire price is 1.45(11) = $15.95 — 16 exceeds 15.95, though only barely.",
+      "The combined project costs 28(27) + 64(11) = $1,460.00, which equals $750.00 + $710.00 exactly — the same, not less, since cost scales linearly with meters.",
+      "At $13.00/m wire, Project 1 would cost 18(27) + 24(13) = $798.00, an increase of $48.00, only about 6.4% — well under 15%.",
+      "Project 3's rate is $710.00 ÷ 50 m = $14.20/m, while Project 1's rate is $750.00 ÷ 42 m ≈ $17.86/m — Project 3's rate is lower, not higher."
+    ],
+    "model": "18x + 24y = 750 (Project 1)\n10x + 40y = 710 (Project 3, independent of Project 1)",
+    "solution": "Check Project 2 against Project 1: (27,36) = 1.5 × (18,24), and 1.5 × $750.00 = $1,125.00, matching Project 2 exactly — it is redundant.\nDivide Project 1 by 6: 3x + 4y = 125. Divide Project 3 by 10: x + 4y = 71. Subtract: 2x = 54, so x = 27. Substitute back: 27 + 4y = 71, so y\n= 11.\nFinal Answer: Cedar wood = $27.00/m  |  Galvanized wire = $11.00/m",
+    "general": "Requires spotting that Project 2 is an exact 1.5× scaled repeat of Project 1 (both in quantities and in total cost) before realizing only Projects 1 and 3 carry independent information — the same redundant-row mechanism as Continental Gas Supply earlier, but here the redundancy check must be performed on your own initiative rather than being flagged by the narrative. Statement C is the key conceptual trap, testing the belief that combining two orders into one somehow changes the total cost under a strictly linear pricing model."
+  },
+  {
+    "num": 45,
+    "title": "Meridian Rail — Two-Route Speed Reconstruction",
+    "format": "Dispatch Log Narrative  |  Difficulty: 7.7/10  |  (previously Task 45 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.7,
+    "difficulty_level": "4/5",
+    "narrative": "Two Meridian Rail boats travel at fixed constant speeds. On one 250 km stretch, they start from opposite docks and meet after 2 hours. On\na separate 356 km stretch, Boat B gets a 3-hour head start before Boat A departs; they meet exactly 1 hour after Boat A's departure.",
+    "given": "Let x = Boat A's speed (km/h), y = Boat B's speed (km/h).",
+    "statements": [
+      "The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.",
+      "In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.",
+      "If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.",
+      "The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.",
+      "Boat B's speed is more than 60% higher than Boat A's speed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "356 ÷ 48 ≈ 7.42 hours, which exceeds 7 hours.",
+      "At meeting, Boat B has covered 2(77)=154 km and Boat A 2(48)=96 km; the difference is 58 km, less than half of 250 km (125 km).",
+      "At +20%, speeds become 57.6 and 92.4 km/h, combined 150 km/h; 250 ÷ 150 ≈ 1.667 hours, still above 1.5 hours.",
+      "Combined speed is 125 km/h, so in 3 hours they together cover 375 km, which exceeds 356 km.",
+      "(77 − 48) ÷ 48 = 29/48 ≈ 60.4%, just over 60%."
+    ],
+    "model": "x + y = 125 (250 km gap closed in 2 hrs: 2(x+y) = 250)\nx + 4y = 356 (Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs)",
+    "solution": "Subtract the first from the second: 3y = 231, so y = 77. Substitute back: x + 77 = 125, so x = 48.\nFinal Answer: Boat A = 48 km/h  |  Boat B = 77 km/h",
+    "general": "A classic relative-motion (meeting-point) word problem, the first of its kind in the worksheet: the two equations come from translating \"meet after 2 hours\" and \"a 3-hour head start plus 1 more hour of travel\" into elapsed-time coefficients rather than being handed as prices or counts. Getting Boat B's travel time right (4 hours, not 1) is the single most important translation step in the whole task."
+  },
+  {
+    "num": 46,
+    "title": "Meridian Textiles — Three-Season Profit Reconstruction",
+    "format": "Quarterly Finance Summary  |  Difficulty: 7.9/10  |  (previously Task 46 (orig. Tasks 41–60 set))",
+    "difficulty_10": 7.9,
+    "difficulty_level": "4/5",
+    "narrative": "Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and\ntotal profit survived, but Wheat tonnage is illegible.\nSeason\nWheat\nBarley\nTotal Profit\nSeason 1\n240 t\n160 t\n$42,000\nSeason 2\n180 t\n260 t\n$48,300\nSeason 3\n(illegible)\n300 t\n$53,100",
+    "given": "Let x = profit per tonne of Wheat, y = profit per tonne of Barley.",
+    "statements": [
+      "If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded $44,000.",
+      "Barley's profit-per-tonne advantage over Wheat (y − x) represents more than 25% of Wheat's profit per tonne.",
+      "Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.",
+      "Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of $53,100 would have been understated by more than $3,500.",
+      "Season 2's profit per tonne of total output (total profit ÷ total tonnage) exceeds Season 1's profit per tonne of total output."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "260(95) + 160(120) = $43,900, which falls just short of $44,000.",
+      "y − x = 120 − 95 = 25, and 25% of Wheat's profit (95) is 23.75 — 25 exceeds 23.75.",
+      "Season 3's total is 180 + 300 = 480 tonnes, while Season 2's total is 180 + 260 = 440 tonnes — Season 3's total is greater, not less.",
+      "At 220 tonnes: 220(95) + 300(120) = $56,900. The gap from the recorded $53,100 is $3,800, which exceeds $3,500.",
+      "Season 1's rate is $42,000 ÷ 400 t = $105.00/t; Season 2's rate is $48,300 ÷ 440 t ≈ $109.77/t — Season 2's rate is higher."
+    ],
+    "model": "3x + 2y = 525 (Season 1: 240x+160y=42000, ÷80)\n9x + 13y = 2415 (Season 2: 180x+260y=48300, ÷20)",
+    "solution": "Multiply by 13 and 2: 39x + 26y = 6825; 18x + 26y = 4830. Subtract: 21x = 1995, so x = 95. Substitute back: 285 + 2y = 525, so y = 120.\nReconstruct Season 3's Wheat tonnage T: 95T + 120(300) = 53100 → T = 180.\nFinal Answer: Wheat = $95.00/t  |  Barley = $120.00/t  |  Season 3 Wheat reconstructed = 180 tonnes",
+    "general": "Same reconstruct-the-illegible-count mechanism seen in Cedarline and Vantage Apparel, applied a third time with yet another set of numbers, confirming this is a recurring, deliberately-repeated skill in this worksheet rather than a one-off trick. Statement C's coincidental near-equal tonnages (480 vs. 440) is a deliberate near-miss trap."
+  },
+  {
+    "num": 47,
+    "title": "Bramwell & Co. — Double-Condition Age Reconstruction",
+    "format": "HR Records Memo  |  Difficulty: 8.0/10  |  (previously Task 47 (orig. Tasks 41–60 set))",
+    "difficulty_10": 8.0,
+    "difficulty_level": "4/5",
+    "narrative": "Bramwell's HR system flagged an \"elder\" and \"younger\" employee for a data-entry conflict: five years ago, the elder was exactly three\ntimes as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.",
+    "given": "Let x = elder employee's current age, y = younger employee's current age.",
+    "statements": [
+      "Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.",
+      "The current age gap (x − y) is more than 45% of the elder employee's current age.",
+      "Exactly 4.5 years from now (halfway to the nine-year mark), the elder employee will be more than 2.5 times the younger employee's age.",
+      "Ten years ago, the sum of their ages was less than 40.",
+      "There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "In fifteen years: elder = 62, younger = 34. Double the younger's age would be 68, and 62 is less than 68.",
+      "The gap is 47 − 19 = 28, and 45% of the elder's age (47) is 21.15 — 28 exceeds 21.15.",
+      "At 4.5 years from now: elder = 51.5, younger = 23.5. 51.5 ÷ 23.5 ≈ 2.19, which does not exceed 2.5.",
+      "Ten years ago: elder = 37, younger = 9, sum = 46, which is not less than 40.",
+      "The scenario states this was true exactly five years ago, and five years is indeed more than four years ago."
+    ],
+    "model": "x − 5 = 3(y − 5) (five years ago, elder was 3× younger)\nx + 9 = 2(y + 9) (in nine years, elder will be 2× younger)",
+    "solution": "Expand: x = 3y − 10, and x = 2y + 9. Setting equal: 3y − 10 = 2y + 9, so y = 19. Substitute back: x = 2(19) + 9 = 47.\nFinal Answer: Elder employee = 47 years old  |  Younger employee = 19 years old",
+    "general": "A classic \"age problem\" translating two time-shifted multiplicative relationships (3× five years ago, 2× nine years from now) into two linear equations in x and y — a structurally different kind of relationship-translation than any prior task, since both equations involve the SAME two unknowns shifted by different amounts of time rather than two different observations at the same moment."
+  },
+  {
+    "num": 48,
+    "title": "Crestline Retail Group — Decimal Markup Reconstruction",
+    "format": "Retail Order Audit  |  Difficulty: 8.2/10  |  (previously Task 48 (orig. Tasks 41–60 set))",
+    "difficulty_10": 8.2,
+    "difficulty_level": "4/5",
+    "narrative": "Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another.\nOrder\nProduct A Units\nProduct B Units\nRetail Total\nOrder 1\n8\n5\n$1,052.80\nOrder 2\n16\n10\n$2,105.60\nOrder 3\n3\n12\n$1,350.60",
+    "given": "Let x = wholesale cost of Product A, y = wholesale cost of Product B.",
+    "statements": [
+      "If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual $1,350.60.",
+      "The dollar markup on Product B is more than 80% of the dollar markup on Product A.",
+      "Order 1's total retail markup (retail total minus wholesale cost total) exceeds $150.00.",
+      "If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than $280.00.",
+      "The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "With swapped markups, Order 3's retail total becomes 3(1.18×55) + 12(1.32×80) = $1,461.90, higher than the actual $1,350.60, not lower.",
+      "Product B's markup is 0.18(80) = $14.40; Product A's is 0.32(55) = $17.60. 14.40 ÷ 17.60 ≈ 81.8%, which exceeds 80%.",
+      "Order 1's wholesale total is 8(55) + 5(80) = $840.00; its retail total is $1,052.80, so the markup is $212.80, which exceeds $150.00.",
+      "Product B's retail price is 1.18(80) = $94.40 per unit; 3 extra units add $283.20, which exceeds $280.00.",
+      "Wholesale ratio: 80 ÷ 55 ≈ 1.4545. Retail ratio: (1.18×80) ÷ (1.32×55) ≈ 1.3003. The wholesale ratio is larger because Product A carries the bigger markup, compressing its retail-side gap."
+    ],
+    "model": "10.56x + 5.9y = 1052.80 (Order 1: retail A is 1.32x, retail B is 1.18y)\n3.96x + 14.16y = 1350.60 (Order 3, independent of Order 1)",
+    "solution": "Order 2 (16,10,$2,105.60) is exactly double Order 1 — redundant, set aside. Multiply Order 1 by 0.375 (so its x-coefficient matches Order\n3's): 3.96x + 2.2125y = 394.80. Subtract from Order 3: 11.9475y = 955.80, so y = 80.00. Substitute back into Order 1: 10.56x + 472 =\n1052.80, so x = 55.00.\nFinal Answer: Product A wholesale = $55.00  |  Product B wholesale = $80.00",
+    "general": "Layers markup percentages (32% and 18%) on top of the redundant-row mechanism, so the reader must both recognize Order 2 as a scaled duplicate AND correctly build retail-price coefficients (1.32x, 1.18y) before elimination even begins. Statement A asks for a full recomputation under a hypothetical swapped-markup policy, and statement E compares two different ratios (wholesale vs. retail) that move in opposite directions because of the differing markup rates."
+  },
+  {
+    "num": 49,
+    "title": "Fairview Amateur League — Cross-Team Points Reconstruction",
+    "format": "League Standings Memo  |  Difficulty: 8.3/10  |  (previously Task 49 (orig. Tasks 41–60 set))",
+    "difficulty_10": 8.3,
+    "difficulty_level": "4/5",
+    "narrative": "The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4\ndraws, 2 losses in 15 matches, 75 points. The Ravens: 7 wins, 6 draws, 1 loss in 14 matches, 8 points fewer than the Falcons.",
+    "given": "Let x = points per win, y = points per draw.",
+    "statements": [
+      "If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.",
+      "The Ravens earned more than 45% of their total points from draws alone.",
+      "Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.",
+      "The Falcons' win-to-draw point contribution ratio (points from wins ÷ points from draws) exceeds 15.",
+      "A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "explanations": [
+      "At half a win's value, a draw would be worth 3.5: 9(7) + 4(3.5) = 77, more than the actual 75.",
+      "The Ravens' draw points total 6(3) = 18, and 18 ÷ 67 ≈ 26.9%, well short of 45%.",
+      "Under 2-and-1 scoring: Falcons = 9(2) + 4(1) = 22; Ravens = 7(2) + 6(1) = 20. The Falcons still finish ahead.",
+      "The Falcons' win points total 9(7) = 63 and draw points total 4(3) = 12; 63 ÷ 12 = 5.25, which does not exceed 15.",
+      "The revised record would score 12(7) + 1(3) = 87, only 12 points above the actual 75 — not more than 20."
+    ],
+    "model": "9x + 4y = 75 (Falcons)\n7x + 6y = 67 (Ravens: 75 − 8 = 67 total points)",
+    "solution": "Multiply by 3 and 2: 27x + 12y = 225; 14x + 12y = 134. Subtract: 13x = 91, so x = 7. Substitute back: 63 + 4y = 75, so y = 3.\nFinal Answer: Win = 7 points  |  Draw = 3 points",
+    "general": "A sports-standings version of the same \"convert a stated point difference into an absolute total\" mechanism used in the Alpha & Beta Holdings task earlier (Ravens = Falcons − 8). Statements A and C both require re-running the scoring formula under an entirely different, hypothetical points system, rather than simply scaling the actual solved values."
+  },
+  {
+    "num": 50,
+    "title": "Meridian Alloys — Decimal Density Reconstruction and Audit",
+    "format": "Metallurgical Batch Report  |  Difficulty: 8.5/10  |  (previously Task 50 (orig. Tasks 41–60 set))",
+    "difficulty_10": 8.5,
+    "difficulty_level": "4/5",
+    "narrative": "Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in\nUS gallons and converted to liters (2.5 gal ≈ 9.5 L).\nBatch\nMetal A\nMetal B\nTotal Mass\nBatch 1\n12 L\n8 L\n182.4 kg\nBatch 2\n5 L\n15 L\n209.0 kg\nBatch 3 (audit)\n9.5 L (conv.)\n6 L\n147.0 kg (recorded)",
+    "given": "Let x = mass per liter of Metal A (kg/L), y = mass per liter of Metal B (kg/L).",
+    "statements": [
+      "If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.",
+      "Metal B's density is more than 50% greater than Metal A's density.",
+      "The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.",
+      "If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L (Metal B unchanged at 6 L), the predicted mass would come within 2 kg of the recorded 147.0 kg.",
+      "Combining Batch 1 and Batch 2 into a single hypothetical batch (17 L Metal A + 23 L Metal B) would yield a total mass equal to the sum of their individual masses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "12(7.6) + 10(11.4) = 91.2 + 114 = 205.2 kg, which exceeds 200 kg.",
+      "(11.4 − 7.6) ÷ 7.6 = 3.8/7.6 = 0.50 exactly, or 50% — equal to 50%, not more than it.",
+      "6.4 ÷ 147.0 ≈ 4.35%, which exceeds 4%.",
+      "At 10 L: 10(7.6) + 6(11.4) = 144.4 kg. The gap from 147.0 kg is 2.6 kg, which is not within 2 kg.",
+      "17(7.6) + 23(11.4) = 391.4 kg, which equals 182.4 + 209.0 = 391.4 kg exactly — mass combines linearly, as expected."
+    ],
+    "model": "12x + 8y = 182.4 (Batch 1)\n5x + 15y = 209.0 (Batch 2)",
+    "solution": "Divide by 4 and 5: 3x + 2y = 45.6; x + 3y = 41.8, so x = 41.8 − 3y. Substitute: 3(41.8 − 3y) + 2y = 45.6 → −7y = −79.8 → y = 11.4.\nSubstitute back: x = 41.8 − 34.2 = 7.6. Audit Batch 3: predicted = 9.5(7.6) + 6(11.4) = 140.6 kg, vs. 147.0 kg recorded — a 6.4 kg\ndiscrepancy.\nFinal Answer: Metal A = 7.6 kg/L  |  Metal B = 11.4 kg/L  |  Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)",
+    "general": "Combines a unit-conversion audit (gallons to liters) with decimal density values and a boundary trap (statement B lands on exactly 50%, testing whether 'more than' is read carefully against an exact tie). This is essentially the same three-part structure (solve, then audit a third row) used repeatedly across this tier, now dressed in metallurgical density units instead of prices or profits."
+  }
+]

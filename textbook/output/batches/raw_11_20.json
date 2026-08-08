@@ -1,0 +1,332 @@
+[
+  {
+    "num": 11,
+    "title": "Del Sol Food Truck",
+    "format": "Text Narrative  |  Difficulty: 2.5/10  |  (previously Task 21 (orig. Tasks 21–30 set))",
+    "difficulty_10": 2.5,
+    "difficulty_level": "1/5",
+    "narrative": "Two friends grabbed lunch separately from the same food truck, which sells only tacos and burritos at a fixed price each. Ana ordered 4\ntacos and 3 burritos and paid $32.00 in total. Ben ordered 2 tacos and 5 burritos — and when he compared receipts with Ana afterward,\nhe realized he had paid exactly $5.00 more than she did, even though neither of them knew the other's order size in advance.",
+    "given": "Nothing here states the taco or burrito price directly. What is known is Ana's order and total, plus a comparison between Ben's total and\nAna's — that comparison must first be turned into an actual dollar figure for Ben's order before a system of two equations can be written.",
+    "statements": [
+      "Ben paid more for his 5 burritos alone than Ana paid for her entire order.",
+      "A burrito costs $2.50 more than a taco.",
+      "Had Ana ordered one fewer burrito (4 tacos and 2 burritos instead), she would have paid less than $28.00.",
+      "Ben's total order price exceeds $40.00.",
+      "Buying 6 tacos and 6 burritos together would cost $57.00."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Ben's 5 burritos alone cost 5 × 6.00 = $30.00, less than Ana's full $32.00 order, not more. It's tempting to assume the person who 'paid more overall' also wins every partial comparison, but that isn't guaranteed here.",
+      "6.00 − 3.50 = $2.50 exactly, matching the solved prices.",
+      "4 tacos and 2 burritos would cost 4(3.50) + 2(6.00) = $26.00, indeed under $28.00.",
+      "Ben's order was built to total exactly $37.00, which does not exceed $40.00. Forgetting the $5.00 gap was already used to build the model — and adding it again on top of $37 — is a common slip.",
+      "6 tacos and 6 burritos cost 6(3.50) + 6(6.00) = $57.00 exactly."
+    ],
+    "model": "4x + 3y = 32.00\n2x + 5y = 32.00 + 5.00 = 37.00",
+    "solution": "Multiply the second equation by 2: 4x + 10y = 74.00. Subtract the first (4x + 3y = 32.00): 7y = 42.00, so y = 6.00. Substituting back: 4x +\n18.00 = 32.00 → x = 3.50.\nFinal Answer: Taco = $3.50  |  Burrito = $6.00",
+    "general": "The whole task rests on one small translation step: converting \"Ben paid $5.00 more than Ana\" into the equation 2x + 5y = 37.00. Once that is done, it is a completely ordinary elimination with round-number answers. Statement A is the main conceptual trap, testing whether \"paid more overall\" is wrongly assumed to extend to every partial sub-comparison."
+  },
+  {
+    "num": 12,
+    "title": "Northgate Books Monthly Sales Report",
+    "format": "Sales Report + Memo  |  Difficulty: 2.7/10  |  (previously Task 22 (orig. Tasks 21–30 set))",
+    "difficulty_10": 2.7,
+    "difficulty_level": "1/5",
+    "narrative": "Metric\nValue\nPaperback units sold\n400\nHardcover units sold\n220\nCombined revenue (paperback + hardcover)\n$8,540\nFull-time staff on payroll\n12\nLoyalty-member share of purchases\n45%\nMemo — Pricing Desk: \"Hardcover editions are priced exactly $5 above the paperback price this quarter, across the board.\"",
+    "given": "Let x = paperback price, y = hardcover price. Staff headcount and the loyalty-member percentage do not affect unit pricing and should be\nset aside.",
+    "statements": [
+      "A paperback price of $12 is consistent with the pricing desk's $5 gap rule.",
+      "Hardcover editions are priced above $18.",
+      "Had 500 paperbacks been sold instead of 400 (hardcover sales unchanged), revenue would have been $1,200 higher.",
+      "A customer buying 3 hardcovers and 2 paperbacks would pay less than $75.",
+      "The reported $8,540 total could also have come from selling 310 hardcovers alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "explanations": [
+      "With x = 12, the memo's rule gives y = 17, an exact $5 gap, so the two pieces of information are consistent.",
+      "The hardcover price settles at exactly $17.00, not above $18. Assuming a 'clean' $20 hardcover price without solving the system is a typical shortcut.",
+      "100 extra paperbacks at $12 each adds exactly $1,200, using only the paperback price and the change in quantity.",
+      "3 hardcovers and 2 paperbacks cost 3(17) + 2(12) = $75.00 exactly — equal to, not less than, $75.",
+      "310 hardcovers alone would bring in 310 × 17 = $5,270, nowhere near $8,540. The staff and loyalty-share figures are irrelevant distractions."
+    ],
+    "model": "y = x + 5\n400x + 220y = 8540",
+    "solution": "Substitute directly: 400x + 220(x + 5) = 8540. Expanding: 620x + 1100 = 8540 → 620x = 7440 → x = 12. Then y = 12 + 5 = 17.\nFinal Answer: Paperback = $12.00  |  Hardcover = $17.00",
+    "general": "A relation-plus-total system solved in one substitution step, with two deliberately irrelevant operational figures (headcount, loyalty share) planted in the report. Statement D is a boundary trap ('less than' vs. 'equal to'), and statement E tests whether decoy data gets mistakenly folded into the calculation."
+  },
+  {
+    "num": 13,
+    "title": "SkyLink Mobile Promotional Flyer",
+    "format": "Promotional Flyer  |  Difficulty: 2.8/10  |  (previously Task 25 (orig. Tasks 21–30 set))",
+    "difficulty_10": 2.8,
+    "difficulty_level": "1/5",
+    "narrative": "SKYLINK MOBILE: BASIC — $15/month base + $2.00/GB overage. STANDARD — base fee and overage rate confirmed by billing history\nbelow. PREMIUM — $40/month, unlimited, no overage.\nMonth\nOverage Used\nTotal Bill\nMarch\n8 GB\n$62.00\nApril\n3 GB\n$47.00",
+    "given": "Let x = Standard plan's base fee, y = its per-GB overage rate. The Basic and Premium prices belong to different plans and should not be\nsubstituted into this customer's equations.",
+    "statements": [
+      "The Standard plan has a lower base fee than the advertised Basic plan.",
+      "The overage rate on the Standard plan is $3.00 per GB.",
+      "A Standard customer using 10 GB of overage in May would be billed $68.00.",
+      "Switching from Standard to Premium would save money for a customer who typically uses 5 GB of overage per month.",
+      "For a customer using 8 GB of overage, the Basic plan works out cheaper than the Standard plan."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "Standard's base fee is $38.00, well above Basic's $15.00 — the higher figure buys a lower overage rate instead.",
+      "The elimination step isolates y = 3 directly, confirmed by both bills.",
+      "38 + 10(3) = $68.00 exactly, extending the confirmed rate to a new usage figure.",
+      "At 5 GB of overage, Standard costs 38 + 15 = $53.00, versus Premium's flat $40.00 — a $13.00 saving.",
+      "At 8 GB, Basic costs 15 + 8(2) = $31.00 versus Standard's 38 + 24 = $62.00 — Basic is substantially cheaper here."
+    ],
+    "model": "x + 8y = 62.00\nx + 3y = 47.00",
+    "solution": "Subtract directly: 5y = 15, so y = 3. Substitute back: x + 9 = 47, so x = 38.\nFinal Answer: Standard base fee = $38.00  |  Overage rate = $3.00/GB",
+    "general": "The simplest possible subtract-directly elimination (matching x-coefficients), dressed up with two decoy competitor plans that must be ignored when building the model but become relevant again for the decision-style statements D and E. Statement A is the main trap, testing whether 'advertised as entry-level' gets wrongly equated with 'cheapest base fee.'"
+  },
+  {
+    "num": 14,
+    "title": "Lakeview Inn Booking Confirmations",
+    "format": "Booking Confirmation  |  Difficulty: 3.0/10  |  (previously Task 23 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.0,
+    "difficulty_level": "2/5",
+    "narrative": "LAKEVIEW INN — Rate Card. Standard Rooms & Suites, free breakfast & Wi-Fi, all rates subject to 8% occupancy tax.\nConfirmation\nStandard Rooms\nSuites\nTotal Charged (incl. 8% tax)\nWeekend 1\n10\n4\n$2,419.20\nWeekend 2\n7\n9\n$3,099.60",
+    "given": "Let x = nightly Standard rate, y = nightly Suite rate, both before tax. Each total must first be converted back to a pre-tax figure before it\ncan be used in the model.",
+    "statements": [
+      "After removing the occupancy tax, Weekend 1's booking revenue was $2,240.00.",
+      "A Suite costs $200 more per night than a Standard room.",
+      "Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.",
+      "Including the 8% tax, a single Suite night costs $226.80.",
+      "Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by $210."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "2419.20 ÷ 1.08 = 2240.00 exactly, matching the pre-tax figure used to build the model.",
+      "The actual gap is 210 − 140 = $70, not $200. Forgetting to strip out the tax before comparing rates tends to inflate this estimate.",
+      "6 Standard rooms cost 6(140) = $840 and 4 Suites cost 4(210) = $840 — exactly equal, not one less than the other.",
+      "210 × 1.08 = $226.80, applying the same tax used to convert the confirmations.",
+      "One additional Suite adds exactly $210 in pre-tax revenue, since the Standard-room count is unchanged."
+    ],
+    "model": "10x + 4y = 2419.20 ÷ 1.08 = 2240.00\n7x + 9y = 3099.60 ÷ 1.08 = 2870.00",
+    "solution": "From the first equation, 5x + 2y = 1120, so y = (1120 − 5x)/2. Substituting into the second: 14x + 9(1120 − 5x) = 5740 → −31x = −4340\n→ x = 140. Then y = 210.\nFinal Answer: Standard = $140.00/night (pre-tax)  |  Suite = $210.00/night (pre-tax)",
+    "general": "Adds a tax-removal division step before the standard elimination, which is a genuinely new mechanism relative to Tasks 11–13. Statement C is a boundary-equality trap, and statement B punishes comparing tax-inclusive figures without adjusting for the 8% markup first."
+  },
+  {
+    "num": 15,
+    "title": "Crestwood Distribution Centre, Inventory Valuation",
+    "format": "Inventory Spreadsheet  |  Difficulty: 3.1/10  |  (previously Task 27 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.1,
+    "difficulty_level": "2/5",
+    "narrative": "Period\nType\nComp. A (units)\nComp. B (units)\nTotal Value\nJanuary\nActual\n150\n90\n$3,150\nFebruary\nActual\n130\n140\n$3,660\nMarch\nForecast\n200\n100\n$4,700 (projected)\nWarehouse floor space: 12,000 sq ft. On-site staff: 9. (Not needed below.)",
+    "given": "Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for\ntoday's unit costs.",
+    "statements": [
+      "Component A's unit cost is $12.",
+      "Component B's unit cost is $18.",
+      "The March forecast assumes higher unit prices than what actually applied in January and February.",
+      "If March's forecast quantities (200 A + 100 B) were valued at the actual January/February unit costs, the result would be $4,700.",
+      "The combined actual inventory value recorded for January and February is $6,810."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "The elimination confirms x = $12.00 exactly, reconciling with both actual monthly rows.",
+      "Component B actually costs $15.00, not $18.00. Reading the forecast row's higher implied prices back into the actual data is a natural but incorrect shortcut.",
+      "At actual costs, 200(12) + 100(15) = $3,900, well below the $4,700 forecast — the forecast does build in a price increase.",
+      "Valuing March's quantities at actual costs gives $3,900, not $4,700 — the $4,700 figure only appears because the forecast bakes in an assumed price rise.",
+      "Simply adding the two actual monthly totals, 3,150 + 3,660 = $6,810, without needing the unit costs at all."
+    ],
+    "model": "150x + 90y = 3150\n130x + 140y = 3660",
+    "solution": "Divide by 30 and 10 respectively: 5x + 3y = 105; 13x + 14y = 366. Multiply by 14 and 3: 70x + 42y = 1470; 39x + 42y = 1098.\nSubtracting: 31x = 372, so x = 12. Then 3y = 45, y = 15.\nFinal Answer: Component A = $12.00/unit  |  Component B = $15.00/unit",
+    "general": "Introduces the \"identify which rows are real data\" mechanism: a third, forecast row must be recognized and excluded before the system is even built. Statements B and D both punish letting the excluded forecast row leak back into the reasoning."
+  },
+  {
+    "num": 16,
+    "title": "Sunrise Staffing, Overtime Contract Check",
+    "format": "Payroll Table  |  Difficulty: 3.3/10  |  (previously Task 28 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.3,
+    "difficulty_level": "2/5",
+    "narrative": "Sunrise Staffing's contract states overtime must be paid at exactly 1.5× the regular hourly wage. A union representative pulled this\nweek's payroll for two workers, both completing a full 40-hour regular week, to check whether that rule was actually followed.\nWorker\nRegular Hrs\nOvertime Hrs\nTotal Pay\nWorker 1\n40\n6\n$704\nWorker 2\n40\n2\n$608",
+    "given": "Let x = regular hourly wage, y = overtime rate actually paid. Only once both rates are known can they be compared against the contract's\n1.5× rule.",
+    "statements": [
+      "The overtime rate actually paid matches the contractual 1.5× regular-rate rule.",
+      "The regular hourly wage is $14.",
+      "Relative to the 1.5× contract rule, Worker 2 was overpaid by exactly $6.00 on their overtime hours.",
+      "A third worker completing 40 regular + 4 overtime hours, paid at the rates actually used this week, would earn $656.",
+      "That same third worker, paid strictly under the 1.5× contract rule instead, would earn $644."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "1.5 × $14.00 = $21.00, but the payroll data shows $24.00 was actually paid — the contract's rule was not followed.",
+      "The elimination step isolates x = $14.00 directly, and it checks out against both workers' totals.",
+      "Under contract, 2 overtime hours should cost 2(21) = $42; the worker was actually paid 2(24) = $48, an overpayment of $6.00.",
+      "Using rates actually paid: 40(14) + 4(24) = $656.",
+      "Using the contractual rate: 40(14) + 4(21) = $644, $12 less than the company's actual practice."
+    ],
+    "model": "40x + 6y = 704\n40x + 2y = 608",
+    "solution": "Subtracting cancels the 40x term: 4y = 96, so y = 24. Substituting back: 40x + 48 = 608, so x = 14.\nFinal Answer: Regular wage = $14.00/hr  |  Overtime actually paid = $24.00/hr (contract requires $21.00/hr)",
+    "general": "A claim-verification task: the algebra is a simple direct-subtract elimination, but every statement requires holding two parallel numbers in mind (what was actually paid vs. what the contract requires) rather than just one solved value."
+  },
+  {
+    "num": 17,
+    "title": "Riverside Water Utility, Billing Dispute",
+    "format": "Text Narrative  |  Difficulty: 3.4/10  |  (previously Task 26 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.4,
+    "difficulty_level": "2/5",
+    "narrative": "A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed $56.10 — but May's bill also\ncarried a 10% late penalty applied to the entire bill. In June she used 25 m³ with no penalty, billed $65.00. The billing office insists its\nfixed charge is $18.00 and its rate is $1.85 per m³.",
+    "given": "Since the 10% penalty was applied to May's whole bill rather than as a flat add-on, May's reported total must first be divided back down.\nThe fixed charge and rate must be derived independently from the two bills, since the phone claim may not be accurate.",
+    "statements": [
+      "The billing office's claim of an $18.00 fixed monthly charge is correct.",
+      "The rate charged is $2.00 per cubic metre.",
+      "After removing the late penalty, May's actual water charge was $51.00.",
+      "A customer using 40 m³ in a month would be billed $85.00.",
+      "Had the same 10% late penalty been applied to June's $65.00 bill, the total would have been $71.50."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "The bills actually support a fixed charge of $15.00, not the claimed $18.00 — the billing office's own figure is wrong.",
+      "The elimination step gives y = $2.00 per m³ exactly, contradicting the claimed $1.85.",
+      "56.10 ÷ 1.10 = $51.00, undoing the 10% penalty rather than simply subtracting a flat amount.",
+      "40 m³ actually costs 15 + 80 = $95.00, not $85.00.",
+      "65.00 × 1.10 = $71.50, applying the same 10% multiplier used to recover May's genuine charge."
+    ],
+    "model": "x + 18y = 56.10 ÷ 1.10 = 51.00\nx + 25y = 65.00",
+    "solution": "Subtracting cancels x: 7y = 14.00, so y = 2.00. Substituting back: x + 36 = 51, so x = 15.00.\nFinal Answer: Fixed charge = $15.00  |  Rate = $2.00/m³ (billing office's claim does not match)",
+    "general": "Uses a percentage-based penalty (division) rather than a flat fee (subtraction), which is a subtly different mechanism from earlier fee-removal tasks and easy to get backwards. Statements A/B both test whether a verbal claim is taken at face value instead of checked against the underlying bills."
+  },
+  {
+    "num": 18,
+    "title": "CityCab vs. MetroX Fare Comparison",
+    "format": "Text Narrative  |  Difficulty: 3.6/10  |  (previously Task 24 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.6,
+    "difficulty_level": "2/5",
+    "narrative": "A commuter is deciding between two ride-hailing companies. An 8 km CityCab ride once cost $14.00, and a 20 km CityCab ride cost\nexactly $12.00 more than that. Separately, a 5 km MetroX ride cost $13.50, with a 15 km MetroX ride costing exactly $15.00 more.",
+    "given": "Each company must be modelled separately. Each \"costs $X more than\" comparison must first be converted into an absolute fare. Let x1,\ny1 be CityCab's base fare and rate, and x2, y2 be MetroX's.",
+    "statements": [
+      "For a 10 km ride, CityCab works out cheaper than MetroX.",
+      "Both companies charge the same base fare of $6.00.",
+      "For distances under 4 km, MetroX would be cheaper than CityCab.",
+      "A 30 km CityCab ride costs $36.00.",
+      "There is a distance of 5 km at which both companies charge exactly the same fare."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "explanations": [
+      "At 10 km, CityCab charges $16.00 while MetroX charges $21.00, so CityCab is cheaper.",
+      "Both systems independently solve to a $6.00 base fare, a coincidence worth double-checking rather than assuming.",
+      "Since both share the same base fare and MetroX's rate is higher, MetroX is never actually cheaper for any positive distance — they only tie at 0 km.",
+      "6 + 30(1) = $36.00 exactly.",
+      "Setting the two fare formulas equal gives d = 0, not 5 km — the companies only match at zero distance."
+    ],
+    "model": "CityCab: x1 + 8y1 = 14.00, x1 + 20y1 = 26.00\nMetroX: x2 + 5y2 = 13.50, x2 + 15y2 = 28.50",
+    "solution": "For CityCab, subtracting cancels x1: 12y1 = 12, so y1 = 1, x1 = 6. For MetroX: 10y2 = 15, so y2 = 1.5, x2 = 6.\nFinal Answer: CityCab — base $6.00, rate $1.00/km  |  MetroX — base $6.00, rate $1.50/km",
+    "general": "Requires solving two entirely independent 2×2 systems (one per company) rather than one, and both are fed by relative \"costs $X more\" clues that must be converted to absolute fares first. Statements C and E both test the same misconception in different guises: that a lower fixed cost or smaller distance somehow favors the company with the higher rate."
+  },
+  {
+    "num": 19,
+    "title": "Bramble & Co., Vendor Quotation Comparison",
+    "format": "Quotation Comparison  |  Difficulty: 3.7/10  |  (previously Task 29 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.7,
+    "difficulty_level": "2/5",
+    "narrative": "Bramble & Co.'s procurement team received quotations from two suppliers for Products X and Y. Neither vendor lists a unit price outright\n— both quotes only show bundled order totals. Bramble needs 40 units of X and 30 units of Y next month.\nVendor\nOrder\nUnits X\nUnits Y\nTotal\nVendor A\n1\n20\n15\n$450\n2\n25\n12\n$441\nVendor B\n1\n20\n15\n$460\n2\n25\n12\n$467",
+    "given": "Each vendor's unit prices are independent and must be solved separately. Let xA, yA denote Vendor A's prices, and xB, yB denote Vendor\nB's.",
+    "statements": [
+      "Vendor A charges less than Vendor B for Product X.",
+      "Vendor B charges less than Vendor A for Product Y.",
+      "For the upcoming order of 40 units X and 30 units Y, Vendor A is the cheaper overall choice.",
+      "Switching the entire upcoming order to Vendor B would reduce Bramble's total cost by $20.",
+      "If the upcoming order changed to 60 units of Y only, Vendor B would work out cheaper than Vendor A."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "Vendor A's $9 for Product X undercuts Vendor B's $11.",
+      "Vendor B's $16 for Product Y is cheaper than Vendor A's $18, the reverse pattern from Product X.",
+      "For 40 X + 30 Y, Vendor A totals $900, while Vendor B totals $920 — Vendor A is $20 cheaper overall despite losing on Product Y alone.",
+      "Switching to Vendor B would actually raise costs from $900 to $920, an increase of $20, not a reduction.",
+      "For 60 units of Y alone, Vendor A costs $1,080 while Vendor B costs $960 — here Vendor B's advantage on Y is the only thing that matters."
+    ],
+    "model": "Vendor A: 20xA + 15yA = 450, 25xA + 12yA = 441\nVendor B: 20xB + 15yB = 460, 25xB + 12yB = 467",
+    "solution": "Vendor A: dividing the first by 5 gives 4xA + 3yA = 90; solving with the second gives xA = 9, yA = 18. Vendor B: the same approach gives\nxB = 11, yB = 16.\nFinal Answer: Vendor A — X = $9, Y = $18  |  Vendor B — X = $11, Y = $16",
+    "general": "Like Task 18, this requires two independent 2×2 systems, but adds a genuine business-decision layer on top: the cheaper-per-unit vendor for one product is not necessarily the cheaper overall vendor for a mixed order. Statement D is the central trap, generalizing from the single-product comparison (B) to the wrong conclusion about the whole order."
+  },
+  {
+    "num": 20,
+    "title": "Alpha & Beta Holdings, Quarterly Dashboard",
+    "format": "Text Narrative  |  Difficulty: 3.9/10  |  (previously Task 30 (orig. Tasks 21–30 set))",
+    "difficulty_10": 3.9,
+    "difficulty_level": "2/5",
+    "narrative": "Alpha and Beta are sister companies that sell Product P and Service Q at identical market prices. Combined, they earned $27,200 in Q1\nrevenue, and Beta earned exactly $1,000 more than Alpha. Alpha sold 150 units of P and 80 subscriptions of Q; Beta sold 100 units of P\nand 130 subscriptions of Q. (Alpha's headcount grew 8% year-on-year versus Beta's 6% — a staffing detail with no bearing on pricing.)",
+    "given": "Individual Q1 revenue figures are not stated directly — only their combined total and the gap between them. Those must first be turned\ninto Alpha's and Beta's separate revenue figures (a small sum-and-difference step) before the unit-sales data can be used.",
+    "statements": [
+      "Product P is priced at $50 and Service Q at $70, identically for both companies.",
+      "Beta generated more Q1 revenue than Alpha.",
+      "If Alpha raises Product P's price by 10% next quarter with sales volumes unchanged, its total revenue would increase by exactly 10%.",
+      "Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.",
+      "Beta's revenue from Service Q subscriptions alone exceeds Alpha's entire Q1 revenue from Product P."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "The elimination confirms x = $50 and y = $70, holding for both companies' revenue rows simultaneously.",
+      "Beta's $14,100 exceeds Alpha's $13,100 by $1,000, straight out of the Stage 1 sum-and-difference step.",
+      "A 10% rise on Product P alone raises Alpha's revenue from $13,100 to $13,850, an increase of only about 5.7%, not 10% — because Product P is only part of Alpha's total revenue.",
+      "Alpha's projected revenue of $13,850 still falls short of Beta's current $14,100.",
+      "Beta's Service Q revenue is $9,100, while Alpha's entire Product P revenue is $7,500 — Beta's single revenue line from Q alone beats Alpha's whole P line."
+    ],
+    "model": "Stage 1: A + B = 27200, B − A = 1000\nStage 2: 150x + 80y = 13100, 100x + 130y = 14100",
+    "solution": "Adding the Stage 1 equations: 2B = 28200, so B = 14100, A = 13100. For Stage 2, dividing by 10 and eliminating gives x = 50, y = 70.\nFinal Answer: Product P = $50.00  |  Service Q = $70.00",
+    "general": "The hardest task in this tier: it stacks a preliminary sum-and-difference derivation on top of the usual two-unknown pricing system (a genuine two-stage solve), and its statements C/D test the classic misconception that a percentage change to one revenue stream scales an entire multi- product total by the same percentage."
+  }
+]

@@ -45,13 +45,20 @@ type Part =
   | { type: "display"; value: string };
 
 function splitMath(input: string): Part[] {
+  // Normalize LaTeX delimiters used by some batch writers.
+  const normalized = input
+    .replace(/\\\(/g, "$")
+    .replace(/\\\)/g, "$")
+    .replace(/\\\[/g, "$$")
+    .replace(/\\\]/g, "$$");
+
   const parts: Part[] = [];
   const re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
   let last = 0;
   let m: RegExpExecArray | null;
-  while ((m = re.exec(input))) {
+  while ((m = re.exec(normalized))) {
     if (m.index > last) {
-      parts.push({ type: "text", value: input.slice(last, m.index) });
+      parts.push({ type: "text", value: normalized.slice(last, m.index) });
     }
     if (m[1] != null) {
       parts.push({ type: "display", value: m[1].trim() });
@@ -60,11 +67,11 @@ function splitMath(input: string): Part[] {
     }
     last = m.index + m[0].length;
   }
-  if (last < input.length) {
-    parts.push({ type: "text", value: input.slice(last) });
+  if (last < normalized.length) {
+    parts.push({ type: "text", value: normalized.slice(last) });
   }
   if (parts.length === 0) {
-    parts.push({ type: "text", value: input });
+    parts.push({ type: "text", value: normalized });
   }
   return parts;
 }

@@ -1,0 +1,332 @@
+[
+  {
+    "num": 31,
+    "title": "Riverside Hardware Supply — Two Fastener Invoices",
+    "format": "Invoice Pair  |  Difficulty: 5.6/10  |  (previously Task 31 (orig. Tasks 31–40 set))",
+    "difficulty_10": 5.6,
+    "difficulty_level": "3/5",
+    "narrative": "Riverside Hardware Supply ships Type A Bolts and Type B Hinges by the case, at fixed per-case prices.\nInvoice\nType A Cases\nType B Cases\nTotal\nInvoice 1\n9\n13\n$527.45\nInvoice 2\n7\n19\n$657.35",
+    "given": "Let x = price per case of Type A, y = price per case of Type B.",
+    "statements": [
+      "Rounding Type A's case price up to the next whole dollar lands on exactly $19.00.",
+      "A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.",
+      "If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the $24 mark.",
+      "Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.",
+      "Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "explanations": [
+      "Type A solves to $18.45; rounding up (ceiling) to the next whole dollar gives $19.00 exactly.",
+      "The actual gap is 27.80 − 18.45 = $9.35 — more than $9.00 and less than $10.00.",
+      "$657.35 ÷ 26 cases ≈ $25.28, which clears $24.00.",
+      "The prices are not close ($18.45 vs $27.80, a $9.35 gap), and the swapped order actually totals 13(18.45) + 9(27.80) = $490.05 — not $527.45.",
+      "There is no bulk premium in a fixed-unit-price model: 16 Type A + 32 Type B is exactly the sum of both invoices' quantities, so its cost is necessarily exactly $527.45 + $657.35 = $1,184.80 — not more."
+    ],
+    "model": "9x + 13y = 527.45\n7x + 19y = 657.35",
+    "solution": "Multiply by 19 and 13: 171x + 247y = 10021.55; 91x + 247y = 8545.55. Subtracting: 80x = 1476.00, so x = 18.45. Substituting back:\n166.05 + 13y = 527.45, so y = 27.80.\nFinal Answer: Type A = $18.45/case  |  Type B = $27.80/case",
+    "general": "Purely decimal elimination with no reconstruction step, but the statements are deliberately worded in indirect, wordy phrasing ('clears the $24 mark', 'more than nine but less than ten') rather than plain numeric claims, forcing the reader to translate prose into a range check before comparing it to the solved decimal prices. Statements D and E both test the same misconception in different clothes: that unit-price systems behave non-linearly (swap-invariance, bulk premiums) when in fact they are perfectly linear."
+  },
+  {
+    "num": 32,
+    "title": "Swift Cargo Co. vs. a Flat-Rate Competitor",
+    "format": "Quotation Comparison  |  Difficulty: 5.7/10  |  (previously Task 35 (orig. Tasks 31–40 set))",
+    "difficulty_10": 5.7,
+    "difficulty_level": "3/5",
+    "narrative": "Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile. A competitor charges a flat $1.35 per mile with no dispatch fee\nat all.\nRoute\nMiles\nTotal Charged by Swift Cargo\nRoute 1\n170\n$460.00\nRoute 2\n305\n$709.75",
+    "given": "Let x = Swift Cargo's fixed dispatch fee, y = Swift Cargo's rate per mile.",
+    "statements": [
+      "The dispatch fee sits exactly halfway between $145 and $146.",
+      "Per mile, Swift Cargo's rate is closer to $1.50 than to $2.00.",
+      "A 250-mile haul comes in five cents under six hundred and eight dollars.",
+      "At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of $270.",
+      "Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line — even though that intersection falls at a negative, and therefore meaningless, mileage."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "The fee solves to $145.50, precisely the midpoint of $145.00 and $146.00.",
+      "The rate is $1.85 — $0.35 from $1.50 but only $0.15 from $2.00 — closer to $2.00, not $1.50.",
+      "145.50 + 250(1.85) = $608.00 exactly — not five cents under it.",
+      "$608.00 (Swift Cargo) − $337.50 (250 × 1.35, competitor) = $270.50 — just north of $270.",
+      "Setting 145.50 + 1.85d = 1.35d gives d = −291 — an algebraic intersection does exist, just not at any real-world (positive) distance."
+    ],
+    "model": "x + 170y = 460.00\nx + 305y = 709.75",
+    "solution": "Subtract directly: 135y = 249.75, so y = 1.85. Substituting back: x + 314.50 = 460.00, so x = 145.50.\nFinal Answer: Dispatch fee = $145.50  |  Rate = $1.85/mile",
+    "general": "Same subtract-directly mechanism as Task 31, but the statements lean harder into 'closer to which of two round numbers' framing (A, B, C), which requires computing the exact decimal and then comparing two differences rather than doing a single pass/fail check. Statement E introduces a genuinely different idea from anything earlier in the worksheet — algebraic solutions that exist but are physically meaningless (negative distance) — foreshadowing the true no-solution case used later in this tier."
+  },
+  {
+    "num": 33,
+    "title": "Café Lumière — Two Till Receipts",
+    "format": "Receipts with Nutrition Labels  |  Difficulty: 5.9/10  |  (previously Task 38 (orig. Tasks 31–40 set))",
+    "difficulty_10": 5.9,
+    "difficulty_level": "3/5",
+    "narrative": "Café Lumière sells Specialty Drinks and Pastries at fixed prices. Two till receipts also list a total calorie count, printed for the customer's\nreference only.\nReceipt 1: 7 Specialty Drinks + 9 Pastries — Total: $78.65 — (listed) Total Calories: 6,100\nReceipt 2: 11 Specialty Drinks + 4 Pastries — Total: $85.05 — (listed) Total Calories: 5,400",
+    "given": "Let x = price per Specialty Drink, y = price per Pastry.",
+    "statements": [
+      "A Specialty Drink's price, tripled, would clear twenty dollars.",
+      "Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined — quite a bit more, in fact.",
+      "Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.",
+      "Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past $4.90.",
+      "A week of daily 2-Drink-2-Pastry orders costs enough that, left over from $150, you'd have less than $8 in change."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "6.35 × 3 = $19.05, which does not clear $20.00.",
+      "4(3.80) = $15.20 versus 6.35 + 3.80 = $10.15 — $5.05 more.",
+      "The calorie figures are unrelated nutritional data; without the item quantities, no price can be derived from them no matter how they're combined with the totals.",
+      "78.65/16 ≈ $4.9156, just above $4.90.",
+      "Daily cost $20.30 × 7 = $142.10; $150.00 − $142.10 = $7.90, which is less than $8.00."
+    ],
+    "model": "7x + 9y = 78.65\n11x + 4y = 85.05",
+    "solution": "Multiply by 4 and 9: 28x + 36y = 314.60; 99x + 36y = 765.45. Subtracting: 71x = 450.85, so x = 6.35. Substituting back: 44.45 + 9y =\n78.65, so y = 3.80.\nFinal Answer: Specialty Drink = $6.35  |  Pastry = $3.80",
+    "general": "The calorie column exists purely to test statement C's tempting-but-false idea that any two numeric columns can be cross-referenced to recover prices — in reality only the quantity columns carry pricing information. The remaining statements require careful decimal arithmetic dressed in casual, almost conversational phrasing rather than direct mathematical language."
+  },
+  {
+    "num": 34,
+    "title": "Northgate Bakery Wholesale — Order Confirmation Emails",
+    "format": "Internal Email Thread  |  Difficulty: 6.0/10  |  (previously Task 36 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.0,
+    "difficulty_level": "3/5",
+    "narrative": "Northgate Bakery Wholesale sells Croissants and Baguettes by the dozen at fixed wholesale prices.\nEmail 1: \"Order confirmed: 14 dozen croissants + 11 dozen baguettes. Total cost: $297.30.\"\nEmail 2: \"Order confirmed: 6 dozen croissants + 23 dozen baguettes. Total cost: $299.30.\"",
+    "given": "Let x = wholesale price per dozen croissants, y = wholesale price per dozen baguettes.",
+    "statements": [
+      "Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.",
+      "The per-dozen gap between croissants and baguettes is closer to four dollars than to five.",
+      "Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.",
+      "Per dozen-item ordered, Email 1 runs pricier than Email 2 — and the gap clears two dollars.",
+      "Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "4(13.85) = $55.40, which clears $55.00.",
+      "13.85 − 9.40 = $4.45 — $0.45 from $4.00 but $0.55 from $5.00 — closer to $4.00.",
+      "10(13.85) = $138.50 out of a combined $232.50 is about 59.6% — just short of three-fifths (60%).",
+      "Email 1 averages $297.30/25 ≈ $11.89 per item, Email 2 averages $299.30/29 ≈ $10.32 — a gap of about $1.57, which does not clear $2.00.",
+      "New baguette price $12.40: 6(13.85) + 23(12.40) = $368.30 — the cents digit is indeed 30."
+    ],
+    "model": "14x + 11y = 297.30\n6x + 23y = 299.30",
+    "solution": "Multiply by 23 and 11: 322x + 253y = 6837.90; 66x + 253y = 3292.30. Subtracting: 256x = 3545.60, so x = 13.85. Substituting back:\n193.90 + 11y = 297.30, so y = 9.40.\nFinal Answer: Croissants = $13.85/dozen  |  Baguettes = $9.40/dozen",
+    "general": "Same decimal-elimination mechanism as the previous two tasks, but pushes the indirect phrasing further still ('reading between the lines', 'blow past', 'clears two dollars'), and statement C introduces a fraction-of-total comparison (three-fifths) that must be computed as a percentage rather than read off directly."
+  },
+  {
+    "num": 35,
+    "title": "Meridian Textiles — Quarterly Margin Verification",
+    "format": "Financial Summary  |  Difficulty: 6.2/10  |  (previously Task 37 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.2,
+    "difficulty_level": "3/5",
+    "narrative": "Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.\nQuarter\nFabric Rolls\nYarn Spools\nTotal Profit\nQ1\n240\n175\n$10,029.00\nQ2\n310\n90\n$10,260.50",
+    "given": "Let x = profit per Fabric Roll, y = profit per Yarn Spool.",
+    "statements": [
+      "Fabric Roll margins clear the $27 line, though not by enough to also clear $27.50.",
+      "Yarn Spool's per-unit margin, doubled, would just clear forty dollars.",
+      "Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears $8,400 — but only by a slender margin.",
+      "The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.",
+      "Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round $13,675 — no cents required."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "The margin is $27.35 — above $27.00 but below $27.50.",
+      "19.80 × 2 = $39.60, which does not clear $40.00.",
+      "200(27.35) + 150(19.80) = $8,440.00 — $40 above $8,400.",
+      "The gap is $231.50; subtracting $100 leaves $131.50, still a three-digit figure before the decimal.",
+      "500 × 27.35 = $13,675.00 exactly."
+    ],
+    "model": "240x + 175y = 10029.00\n310x + 90y = 10260.50",
+    "solution": "Multiply by 90 and 175: 21600x + 15750y = 902610; 54250x + 15750y = 1795587.5. Subtracting: 32650x = 892977.5, so x = 27.35.\nSubstituting back: 6564.00 + 175y = 10029.00, so y = 19.80.\nFinal Answer: Fabric Roll = $27.35/unit  |  Yarn Spool = $19.80/unit",
+    "general": "A slightly larger-magnitude version of the same decimal-elimination mechanism, with statement D introducing an unusual 'still a three-digit number after subtracting $100' framing that is really just a disguised way of asking whether the gap exceeds $200."
+  },
+  {
+    "num": 36,
+    "title": "Continental Gas Supply — Reconstructing Cylinder Prices",
+    "format": "Consultant's Report  |  Difficulty: 6.3/10  |  (previously Task 33 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.3,
+    "difficulty_level": "3/5",
+    "narrative": "A consultant reviewing Continental Gas Supply's cylinder pricing agreement was given three monthly supplier invoices for Nitrogen-type\nand Oxygen-type cylinders.\nInvoice\nNitrogen Units\nOxygen Units\nTotal\nInvoice 1\n15\n20\n$699.00\nInvoice 2\n9\n12\n$419.40\nInvoice 3\n13\n5\n$326.45",
+    "given": "Let x = price per Nitrogen-type cylinder, y = price per Oxygen-type cylinder.",
+    "statements": [
+      "Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.",
+      "Nitrogen-type cylinders are priced closer to $17.00 than to $16.00.",
+      "Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.",
+      "Double Invoice 3's order exactly, and the resulting bill would land above $655.",
+      "Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the $20 mark."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "419.40/699.00 = 0.60 exactly, and the quantities scale the same way — Invoice 2 duplicates Invoice 1's information rather than adding to it.",
+      "Nitrogen-type is $16.40 — $0.40 from $16.00 but $0.60 from $17.00 — closer to $16.00, not $17.00.",
+      "4(22.65) = $90.60 versus 6(16.40) = $98.40 — the four Oxygen-type cylinders do cost less.",
+      "Doubling Invoice 3's quantities gives 26(16.40) + 10(22.65) = $652.90 — not above $655.00.",
+      "($699.00 + $326.45)/(15+20+13+5) = $1,025.45/53 ≈ $19.35, which does not reach $20.00."
+    ],
+    "model": "15x + 20y = 699.00 (Invoice 1)\n13x + 5y = 326.45 (Invoice 3, independent of Invoice 1)",
+    "solution": "Check Invoice 2 against Invoice 1 first: 419.40/699.00 = 0.60 exactly, and Invoice 2's quantities (9,12) are exactly 0.6 times Invoice 1's\n(15,20) — Invoice 2 is redundant. Multiply Invoice 3 by 4: 52x + 20y = 1305.80. Subtract Invoice 1: 37x = 606.80, so x = 16.40.\nSubstituting back: 246.00 + 20y = 699.00, so y = 22.65.\nFinal Answer: Nitrogen-type = $16.40/unit  |  Oxygen-type = $22.65/unit",
+    "general": "Introduces the \"redundant row\" mechanism explicitly for the first time in this tier: one of three invoices must be recognized as a proportional scaled copy of another before the solver knows which two equations are actually independent. Statement A directly tests recognition of that redundancy, while statement E asks for a blended (pooled) rate across two different invoices, a genuinely different calculation from any individual invoice's own rate."
+  },
+  {
+    "num": 37,
+    "title": "Ferro Machine Shop — Two Technicians, Two Sessions",
+    "format": "Shift Log Narrative  |  Difficulty: 6.5/10  |  (previously Task 34 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.5,
+    "difficulty_level": "3/5",
+    "narrative": "On Monday's day shift, Alvarez logged 4 hours on an overhaul while Bianchi logged 7 hours on that same job; together they left it 65.5%\nfinished. The next day, Alvarez put in 9 hours, Bianchi just 3, and an identical type of job was left 90.0% complete.",
+    "given": "Let x = fraction of a job Alvarez completes per hour, y = fraction of a job Bianchi completes per hour.",
+    "statements": [
+      "Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.",
+      "Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.",
+      "Their combined hourly output, expressed as a fraction, reduces to exactly 13/100 — no more, no less.",
+      "Bianchi's slice of Tuesday's finished work, as a fraction, is closer to 1/7 than to 1/8.",
+      "Tally every hour either technician logged across both days — 23 in all — and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "1/0.085 ≈ 11.76 hours, which rounds up to 12, not down to 11.",
+      "Bianchi alone needs 1/0.045 ≈ 22.22 hours for one job; Alvarez alone needs 2/0.085 ≈ 23.53 hours for two jobs — Bianchi's single-job time is actually the shorter of the two.",
+      "0.085 + 0.045 = 0.130 = 13/100 exactly.",
+      "Bianchi contributed 3(0.045) = 0.135 on Tuesday; 1/7 ≈ 0.1429 is about 0.008 away, while 1/8 = 0.125 is about 0.010 away — marginally closer to 1/7.",
+      "(0.655 + 0.900)/23 ≈ 6.76%, which stays under 7%."
+    ],
+    "model": "4x + 7y = 0.655 (Monday)\n9x + 3y = 0.900 (Tuesday)",
+    "solution": "Multiply by 9 and 4: 36x + 63y = 5.895; 36x + 12y = 3.600. Subtracting: 51y = 2.295, so y = 0.045. Substituting back: 4x + 0.315 =\n0.655, so x = 0.085.\nFinal Answer: Alvarez = 0.085 job/hour (8.5%/hour)  |  Bianchi = 0.045 job/hour (4.5%/hour)",
+    "general": "A conceptually different flavor from every other task so far: a work-rate ('how much of a job per hour') system rather than a price or count system, with percentages standing in for completed-fraction units. This requires comfort converting between decimals, percentages, and fractions in the same task (statement D asks which of two fractions, 1/7 or 1/8, a decimal is closer to), and statements A and B both hinge on solo completion times that must be computed as reciprocals (1/rate) rather than direct multiplication."
+  },
+  {
+    "num": 38,
+    "title": "Vantage Apparel — A Water-Damaged Production Report",
+    "format": "Production Report Narrative  |  Difficulty: 6.6/10  |  (previously Task 39 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.6,
+    "difficulty_level": "3/5",
+    "narrative": "Vantage Apparel earns a fixed profit per unit on T-Shirts and Hoodies. Season 1: 430 T-Shirts and 260 Hoodies, netting $9,793.50. Season\n2: 275 T-Shirts and 410 Hoodies, netting $10,747.75. Season 3's paperwork survived only in part: 310 Hoodies and an overall profit of\n$8,558.25 are legible, but water damage erased the T-Shirt count entirely.",
+    "given": "Let x = profit per T-Shirt, y = profit per Hoodie.",
+    "statements": [
+      "T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.",
+      "Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.",
+      "Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.",
+      "Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.",
+      "Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count (Hoodies held at 310), and the profit crosses $8,700 — clearing it by less than $40."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "explanations": [
+      "The margin is $11.65 — $0.65 from $11.00 but only $0.35 from $12.00 — closer to $12.00.",
+      "The margin is $18.40 — $0.40 from $18.00 but $0.60 from $19.00 — closer to $18.00.",
+      "The reconstructed count is 245 units — a multiple of five, but not of ten.",
+      "The gap is $954.25; 52 Hoodies at $18.40 each would cost $956.80 — the gap falls just $2.55 short of covering that.",
+      "11.65(260) + 18.40(310) = $8,733.00, which clears $8,700 by $33 — less than $40."
+    ],
+    "model": "430x + 260y = 9793.50 (Season 1)\n275x + 410y = 10747.75 (Season 2)",
+    "solution": "Multiply by 410 and 260: 176300x + 106600y = 4015335; 71500x + 106600y = 2794415. Subtracting: 104800x = 1220920, so x = 11.65.\nSubstituting back: 5009.50 + 260y = 9793.50, so y = 18.40. Reconstruct Season 3's T-Shirt count T: 11.65T + 18.40(310) = 8558.25, so\n11.65T = 2854.25, T = 245.\nFinal Answer: T-Shirt = $11.65/unit  |  Hoodie = $18.40/unit  |  Season 3 T-Shirts reconstructed = 245 units",
+    "general": "Combines large decimal elimination with a reconstruction step (recovering Season 3's illegible T-Shirt count from its one surviving equation), the same two-stage shape as the Cedarline task earlier in the worksheet but with much less forgiving numbers. Statements A and C are both \"sounds true but isn't\" traps exploiting the closer-to-the-higher-round-number pattern and the multiple-of-ten vs. multiple-of-five distinction."
+  },
+  {
+    "num": 39,
+    "title": "Continental Freight Co. — Cross-Unit Billing Audit",
+    "format": "Freight Billing Report  |  Difficulty: 6.8/10  |  (previously Task 40 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.8,
+    "difficulty_level": "3/5",
+    "narrative": "Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped. One branch records weights in pounds (1 kg ≈\n2.2 lb). A third shipment is under audit.\nShipment\nWeight\nTotal Charged\nShipment 1 (Metric)\n185 kg\n$677.35\nShipment 2 (Imperial)\n572 lb\n$913.60\nShipment 3 (Imperial, audit)\n99 lb\n$239.80",
+    "given": "Let x = flat handling fee, y = rate per kilogram. Weights must be converted to kilograms before the model is built.",
+    "statements": [
+      "Knock five dollars and forty cents off the flat handling fee and you'd land on an even $89.20 — implying the real fee currently overshoots $89 by roughly six percent.",
+      "The per-kilogram rate, tripled, would land just shy of $9.50.",
+      "Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed — but doesn't match it exactly.",
+      "Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.",
+      "Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "$94.60 − $5.40 = $89.20; relative to $89.00, the real fee overshoots by (94.60−89)/89 ≈ 6.3%, roughly six percent.",
+      "3.15 × 3 = $9.45, just under $9.50.",
+      "Predicted $236.35 vs. actual $239.80 — a $3.45 gap, within $4.00 but not an exact match.",
+      "99/2.2 = 45 kg, and 45 is not divisible by 7 (45/7 ≈ 6.43).",
+      "94.60 + 400(3.15) = $1,354.60, just above $1,350.00."
+    ],
+    "model": "x + 185y = 677.35 (Shipment 1, already in kg)\nx + 260y = 913.60 (Shipment 2: 572 lb ÷ 2.2 = 260 kg)",
+    "solution": "Convert Shipment 2's weight: 572/2.2 = 260 kg. Subtract directly: 75y = 236.25, so y = 3.15. Substituting back: x + 582.75 = 677.35, so x\n= 94.60. Audit Shipment 3: 99/2.2 = 45 kg. Model predicts 94.60 + 45(3.15) = $236.35, but Shipment 3 was charged $239.80 — a $3.45\ndiscrepancy.\nFinal Answer: Handling fee = $94.60  |  Rate = $3.15/kg  |  Shipment 3 predicted = $236.35 (vs. $239.80 charged — a\n$3.45 discrepancy)",
+    "general": "Adds a unit-conversion layer (pounds to kilograms) on top of the audit/discrepancy mechanism used elsewhere in this tier, and requires performing that same conversion twice more within the statements themselves (B uses the derived rate, D re-checks the conversion arithmetic directly). The obscure phrasing throughout ('knock off', 'just shy of', 'creeps past') is consistent with the rest of this decimal-heavy tier."
+  },
+  {
+    "num": 40,
+    "title": "Vantage Cloud Services — A Doubled Invoice That Doesn't Double",
+    "format": "Internal Company Memo  |  Difficulty: 6.9/10  |  (previously Task 32 (orig. Tasks 31–40 set))",
+    "difficulty_10": 6.9,
+    "difficulty_level": "3/5",
+    "narrative": "Vantage Cloud Services bills every client under one fixed-rate structure: a per-compute-unit charge plus a per-storage-unit charge. Client\nB's usage is exactly double Client A's in both categories.\nClient\nCompute Units\nStorage Units\nReported Total\nClient A\n11\n7\n$483.70\nClient B\n22\n14\n$952.10",
+    "given": "Let x = price per compute-unit, y = price per storage-unit.",
+    "statements": [
+      "Doubling every line of Client A's invoice implies Client B should owe $967.40 — a figure that overshoots what was actually billed by a hair over 1.6% of the real total.",
+      "For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's $952.10 billed amount.",
+      "The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.",
+      "Plugging in a purely hypothetical $14.20 per compute-unit and $31.75 per storage-unit — numbers with no basis in the real contract — Client A's invoice would compute to a figure just shy of $375.",
+      "Compare Client B's actual bill to two rival hypotheses — one assuming a clean doubling of Client A ($967.40), the other assuming a 50%-heavier surcharge instead of a full double ($725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "2 × 483.70 = $967.40; the overshoot is 15.30/952.10 ≈ 1.607%, just over 1.6%.",
+      "Since Client B's usage is exactly double Client A's, consistency requires Client A's total to equal 952.10/2 = $476.05 exactly — precisely half.",
+      "1.61% is closer to 1/60 ≈ 1.67% (about 0.06 points away) than to 1/50 = 2% (0.39 points away).",
+      "11(14.20) + 7(31.75) = 156.20 + 222.25 = $378.45, which is above $375, not just shy of it.",
+      "|952.10 − 967.40| = $15.30 versus |952.10 − 725.55| = $226.55 — the doubling hypothesis is far closer to reality."
+    ],
+    "model": "11x + 7y = 483.70 (Client A)\n22x + 14y = 952.10 (Client B, as reported)",
+    "solution": "Client B's coefficients (22,14) are exactly double Client A's (11,7), so scaling Client A's equation by 2 gives 22x + 14y = 967.40. Since the\nreported total is $952.10, not $967.40, the two equations are inconsistent — a $15.30 contradiction. No values of x and y satisfy both\nequations simultaneously: this is the parallel-lines case (proportional coefficients, non-proportional constants).\nFinal Answer: No consistent solution exists for (x, y); the invoices contradict one another by $15.30.",
+    "general": "This is a fundamentally different kind of task from every other one in the worksheet: the system has NO solution at all, because Client B's coefficients are exactly proportional to Client A's (a scaled repeat) while the totals are not proportional by that same factor — the two equations describe parallel, non-intersecting lines. Recognizing that no (x, y) can satisfy both equations, rather than grinding through an elimination to a wrong answer, is itself the core skill being tested, and every statement is built around quantifying and contextualizing that contradiction rather than reporting a solved price."
+  }
+]

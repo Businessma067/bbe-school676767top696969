@@ -1,0 +1,332 @@
+[
+  {
+    "num": 1,
+    "title": "Balancing Crate Counts Between Two Depots",
+    "format": "Internal Memo  |  Difficulty: 1.0/10  |  (previously Task 1 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.0,
+    "difficulty_level": "1/5",
+    "narrative": "The North depot and the South depot are together holding 620 crates this week. A scheduling note observes that if 50 crates were\ntransferred from North to South, the two depots would end up holding exactly the same number of crates.",
+    "given": "Let x = crates at the North depot, y = crates at the South depot. The memo's transfer clue must be translated into an equation: after\nmoving 50 crates from North to South, North would have x − 50 and South would have y + 50, and these are described as equal.",
+    "statements": [
+      "The North depot currently holds 360 crates.",
+      "The South depot currently holds 240 crates.",
+      "If 30 crates were moved from South to North instead, North would then hold 390 crates.",
+      "The difference between the two depots today is 120 crates.",
+      "Moving 50 crates from North to South (as the memo describes) would leave both depots holding 310 crates each."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "The elimination step gives x = 360, and this also satisfies the memo's own equalizing check, so it is consistent both algebraically and in context.",
+      "The South depot holds 260 crates, not 240. A common slip is assuming the difference (100) can simply be split from the total the same way as North's value, instead of substituting back into x + y = 620.",
+      "Moving crates the other way adds to North's total rather than subtracting: 360 + 30 = 390.",
+      "The actual difference today is 360 − 260 = 100 crates. This trap comes from misreading the memo's '50 crates transferred' as itself being the current difference, when in fact a 50-crate transfer is what makes the totals equal, not what separates them today.",
+      "This is exactly the memo's own claim, confirmed by the numbers: 360 − 50 = 310 and 260 + 50 = 310."
+    ],
+    "model": "x + y = 620 (combined total)\nx − 50 = y + 50, which rearranges to x − y = 100",
+    "solution": "This is now a standard sum-and-difference pair: x + y = 620 and x − y = 100. Adding the two equations eliminates y: 2x = 720, so x = 360.\nThen y = 620 − 360 = 260. Check: 360 − 50 = 310 and 260 + 50 = 310 — the two depots do end up equal, confirming the translation was\ncorrect.\nFinal Answer: North depot = 360 crates  |  South depot = 260 crates",
+    "general": "The whole task hinges on correctly translating one sentence (\"transferring 50 crates would equalize the depots\") into the algebraic statement x − 50 = y + 50, rather than mistaking the transfer amount for the current difference between the depots. Once that translation is made, this is the simplest possible sum-and-difference system: no fees, no percentages, no unit conversions, and both unknowns come out as round numbers. The main traps are statement B (confusing total-minus-difference logic) and statement D (conflating the equalizing transfer with the current gap)."
+  },
+  {
+    "num": 2,
+    "title": "Reading Unit Prices Off Two Supplier Invoices",
+    "format": "Invoice Pair  |  Difficulty: 1.2/10  |  (previously Task 2 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.2,
+    "difficulty_level": "1/5",
+    "narrative": "Silverline Stationery Co. received two invoices from the same supplier this month. Notebooks and pens are billed at fixed unit prices that\nstayed the same on both invoices.\nInvoice\nNotebooks\nPens\nInvoice Total\n#101\n40\n25\n$185.00\n#102\n15\n60\n$160.50",
+    "given": "Let x = price of one notebook, y = price of one pen.",
+    "statements": [
+      "A notebook costs $3.50.",
+      "A pen costs $2.10.",
+      "Invoice #101 (40 notebooks and 25 pens) totals $185.00.",
+      "10 notebooks and 10 pens purchased together would cost $53.00.",
+      "Invoice #102 (15 notebooks and 60 pens) totals $172.50."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "explanations": [
+      "The unit price recovered for a notebook is $3.50, and it satisfies both invoices simultaneously, not just one of them.",
+      "A pen actually costs $1.80, not $2.10. Rounding −135y = −243.00 carelessly is the most likely source of this kind of error.",
+      "This is simply the invoice total as printed, exactly reproduced by 40(3.50) + 25(1.80).",
+      "10(3.50) + 10(1.80) = 35.00 + 18.00 = $53.00; note this is NOT the same as averaging either invoice total, since the notebook-to-pen ratio here differs from both invoices.",
+      "Invoice #102's printed total is $160.50, not $172.50 — a student who mixes up which invoice number goes with which total would produce this kind of error."
+    ],
+    "model": "40x + 25y = 185.00 (Invoice #101)\n15x + 60y = 160.50 (Invoice #102)",
+    "solution": "Divide Invoice #102 by 15 to simplify: x + 4y = 10.70, so x = 10.70 − 4y. Substitute into Invoice #101: 40(10.70 − 4y) + 25y = 185.00.\nThis expands to 428.00 − 160y + 25y = 185.00, so −135y = −243.00, giving y = 1.80. Then x = 10.70 − 4(1.80) = 3.50.\nFinal Answer: Notebook = $3.50  |  Pen = $1.80",
+    "general": "A clean, single-method elimination-by-substitution task with no reconstruction or claim-checking layer — both invoices state their totals directly. The only genuine trap is decimal carelessness during the substitution step (statement B) and simple misreading of which printed total belongs to which invoice (statement E); statement D checks whether the reader understands that a new quantity combination must be recalculated rather than interpolated from the two given invoices."
+  },
+  {
+    "num": 3,
+    "title": "Pricing Adult and Child Tickets From a Box-Office Summary",
+    "format": "Box-Office Summary  |  Difficulty: 1.3/10  |  (previously Task 3 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.3,
+    "difficulty_level": "1/5",
+    "narrative": "The Riverside Community Cinema's box-office system logged ticket counts and revenue for two Saturday screenings of the same film.\nAdult and child tickets are sold at fixed prices throughout the day.\nSession\nAdult Tickets\nChild Tickets\nRevenue\nSaturday Matinee\n90\n150\n$2,130\nSaturday Evening\n160\n40\n$2,200",
+    "given": "Let a = adult ticket price, c = child ticket price.",
+    "statements": [
+      "An adult ticket costs $12.00.",
+      "A child ticket costs $7.00.",
+      "The Saturday matinee (90 adult, 150 child) generated $2,050.00 in revenue.",
+      "The Saturday evening session (160 adult, 40 child) generated $2,300.00 in revenue.",
+      "50 adult tickets and 50 child tickets together would generate $1,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "explanations": [
+      "The recovered adult price of $12.00 reproduces both session totals correctly.",
+      "The recovered child price of $7.00 likewise reproduces both totals; swapping which price belongs to 'adult' and which to 'child' is a common mix-up when the two totals are close in size.",
+      "Using the actual prices, the matinee total is 90(12) + 150(7) = $2,130.00, not $2,050.00 — this simply misquotes the figure already printed in the summary table.",
+      "The evening total works out to 160(12) + 40(7) = $2,200.00, not $2,300.00 — a $100 overstatement of the value already given.",
+      "50(12) + 50(7) = 600 + 350 = $950.00, not $1,000.00. This combination appears in neither session, so it must be computed fresh rather than estimated from the table."
+    ],
+    "model": "90a + 150c = 2130 (Saturday matinee)\n160a + 40c = 2200 (Saturday evening)",
+    "solution": "Divide the evening equation by 40: 4a + c = 55, so c = 55 − 4a. Substitute into the matinee equation: 90a + 150(55 − 4a) = 2130. This\nexpands to 90a + 8250 − 600a = 2130, so −510a = −6120, giving a = 12. Then c = 55 − 48 = 7.\nFinal Answer: Adult ticket = $12.00  |  Child ticket = $7.00",
+    "general": "A textbook two-total elimination problem. The main thing being tested is not the algebra itself but attentiveness: statements C and D simply misquote figures that are already printed in the table (testing whether the reader re-derives values instead of trusting a plausible-sounding but wrong number), while statement E requires computing a genuinely new quantity combination rather than guessing at it."
+  },
+  {
+    "num": 4,
+    "title": "Stripping Out a Delivery Fee Before Pricing a Deli's Menu",
+    "format": "Delivery Receipts  |  Difficulty: 1.5/10  |  (previously Task 4 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.5,
+    "difficulty_level": "1/5",
+    "narrative": "Corner Deli delivers office lunches for a flat $8.00 delivery fee added on top of the food cost, no matter the order size. Receipt A: 6\nsandwiches, 4 wraps, plus the $8.00 delivery fee — total charged $70.00. Receipt B: 3 sandwiches, 9 wraps, plus the $8.00 delivery fee —\ntotal charged $74.00.",
+    "given": "Let x = price of one sandwich, y = price of one wrap. Before writing any equation, the $8.00 delivery fee must be subtracted from each\nreceipt total, since it is not part of either unknown price.",
+    "statements": [
+      "A sandwich costs $7.00.",
+      "A wrap costs $5.00.",
+      "Receipt A's food subtotal, before the $8.00 delivery fee is added, is $62.00.",
+      "Receipt B's total, including the $8.00 delivery fee, is $74.00.",
+      "A pickup order (no delivery fee) of 5 sandwiches and 5 wraps would cost $60.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "Once the $8.00 fee is removed from both receipts, the food-only system correctly gives $7.00 per sandwich; using the receipt totals (70 and 74) directly would instead produce the wrong prices.",
+      "The wrap price of $5.00 likewise depends on subtracting the fee first — this is the main interpretive step in the task, not the algebra itself.",
+      "70.00 − 8.00 = $62.00, matching Receipt A's food-only subtotal used to build the equation.",
+      "Receipt B's printed total, delivery fee included, is $74.00 — note this includes the fee, unlike the $66.00 figure used inside the equation itself.",
+      "A pickup order has no delivery fee to add: 5(7) + 5(5) = $60.00."
+    ],
+    "model": "6x + 4y = 70.00 − 8.00 = 62.00\n3x + 9y = 74.00 − 8.00 = 66.00",
+    "solution": "Multiply the second equation by 2: 6x + 18y = 132. Subtract the first equation: 14y = 70, so y = 5. Substitute back: 3x + 9(5) = 66, so 3x\n= 21, and x = 7.\nFinal Answer: Sandwich = $7.00  |  Wrap = $5.00",
+    "general": "The entire difficulty of this task is front-loaded into one interpretive step: recognizing that the flat $8.00 fee must be subtracted from both totals before the system is built, since it is a per-order charge, not a per-item price. Once that is done, the elimination itself is trivial. Every statement here is TRUE, which is itself worth noting — a reader who skips the fee-removal step would get the wrong x and y and likely start marking correct statements FALSE by mistake."
+  },
+  {
+    "num": 5,
+    "title": "Splitting Savings Between Two Interest-Bearing Accounts",
+    "format": "Personal Finance Summary  |  Difficulty: 1.6/10  |  (previously Task 5 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.6,
+    "difficulty_level": "1/5",
+    "narrative": "An investor split a total of $10,000 between two accounts at the start of the year: Account A pays 4% simple annual interest, and Account\nB pays 7% simple annual interest. No deposits or withdrawals were made all year, and together the two accounts earned $520.00 in\ninterest.",
+    "given": "Let x = amount placed in Account A, y = amount placed in Account B.",
+    "statements": [
+      "$6,500 was placed in Account A.",
+      "$4,500 was placed in Account B.",
+      "Account A earned $260.00 in interest over the year.",
+      "Account B earned $210.00 in interest over the year.",
+      "Had the entire $10,000 been placed in Account B alone, total interest for the year would have been $700.00."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "Account A actually holds $6,000, not $6,500. Because the two rates (4% and 7%) are close together, it is easy to mis-split the $10,000 roughly in half instead of solving the weighted equation properly.",
+      "Account B holds $4,000, not $4,500 — the same rough 50/50 guess produces this error too, and the two wrong figures would not even add to $10,000, a useful way to catch the mistake.",
+      "Account A's interest is 0.04 × 6,000 = $240.00, not $260.00. This kind of error often comes from applying a slightly wrong rate or a small arithmetic slip.",
+      "Account B's interest is 0.07 × 4,000 = $280.00, not $210.00. Note $240.00 + $280.00 = $520.00 matches the given total, confirming these (not statements C/D) are correct.",
+      "Placing the full $10,000 at the 7% rate gives 0.07 × 10,000 = $700.00, which is indeed higher than the $520.00 actually earned from the mixed allocation."
+    ],
+    "model": "x + y = 10000 (total split)\n0.04x + 0.07y = 520 (total interest)",
+    "solution": "Solve the first equation for x: x = 10000 − y. Substitute: 0.04(10000 − y) + 0.07y = 520. This expands to 400 − 0.04y + 0.07y = 520, so\n0.03y = 120, and y = 4000. Then x = 10000 − 4000 = 6000.\nFinal Answer: Account A = $6,000  |  Account B = $4,000",
+    "general": "This is the first task in the set to introduce percentage-rate coefficients (0.04 and 0.07) rather than simple per-unit prices, which is a small but real jump in abstraction. Every one of statements A–D is deliberately wrong, all clustered around the same natural mistake: eyeballing a rough 50/50 split instead of weighting by the two different rates. Statement E is the only true one, and it rewards actually multiplying through rather than assuming a blended-rate shortcut."
+  },
+  {
+    "num": 6,
+    "title": "Pricing Two Chair Grades From a Price Gap and a Shipment Value",
+    "format": "Stock Valuation Report  |  Difficulty: 1.8/10  |  (previously Task 6 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.8,
+    "difficulty_level": "1/5",
+    "narrative": "Premium-grade office chairs are priced exactly $45 more per unit than Standard-grade chairs throughout the current catalogue. A recent\nshipment of 18 Standard chairs and 12 Premium chairs was valued at $9,660.00 in total.",
+    "given": "Let x = price of a Standard chair, y = price of a Premium chair.",
+    "statements": [
+      "A Standard chair is priced at $304.00.",
+      "A Premium chair is priced at $354.00.",
+      "The 12 Premium chairs in the shipment are worth $4,188.00 in total.",
+      "The price gap between one Premium chair and one Standard chair is $45.00.",
+      "A smaller order of 5 Standard chairs and 5 Premium chairs would cost more than $3,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "The Standard chair price of $304.00 is what makes the shipment value work out exactly, once the $45 price gap is built into the second equation.",
+      "A Premium chair costs $349.00, not $354.00 — a tempting but incorrect shortcut is rounding $304 up to $310 first and then adding $45.",
+      "12 × 349.00 = $4,188.00, part of the shipment total of $9,660.00 (the remaining $5,472.00 comes from the 18 Standard chairs).",
+      "This is simply the relationship stated in the report and used to build the second equation: 349 − 304 = $45.00.",
+      "5(304) + 5(349) = 1,520 + 1,745 = $3,265.00, which is indeed more than $3,000.00 — this smaller order uses a different ratio (5-and-5) than the shipment (18-and-12), so it must be recalculated rather than scaled down."
+    ],
+    "model": "y = x + 45 (Premium priced $45 above Standard)\n18x + 12y = 9660 (shipment value)",
+    "solution": "Substitute directly: 18x + 12(x + 45) = 9660. This expands to 18x + 12x + 540 = 9660, so 30x = 9120, and x = 304. Then y = 304 + 45 =\n349.\nFinal Answer: Standard chair = $304.00  |  Premium chair = $349.00",
+    "general": "A relation-plus-total system solved by direct substitution rather than elimination, since one variable is already isolated. The only trap is statement B's rounding shortcut; everything else rewards careful direct computation from the two solved prices."
+  },
+  {
+    "num": 7,
+    "title": "Extracting a Hidden Rate Structure From a Mobile Ad",
+    "format": "Advertisement  |  Difficulty: 1.9/10  |  (previously Task 7 (orig. Tasks 1–10 set))",
+    "difficulty_10": 1.9,
+    "difficulty_level": "1/5",
+    "narrative": "ByteMobile's ad boasts a \"simple plan\": one customer who went 40 minutes over their allowance last month paid $29.00 in total. A heavy\nuser who went 120 minutes over paid $53.00 — the ad frames this as a low, predictable rate for every extra minute, on top of a small fixed\nmonthly fee.",
+    "given": "Let f = fixed monthly fee, r = rate charged per extra minute. The advertisement never states the fixed fee or the rate directly — both must\nbe recovered from the two example bills it quotes.",
+    "statements": [
+      "ByteMobile's fixed monthly fee is $17.00.",
+      "The extra-minute rate advertised is $0.30 per minute.",
+      "A customer using 200 extra minutes in a month would pay $80.00.",
+      "A customer using 0 extra minutes would pay $0.00 that month.",
+      "The advertised rate ($0.30 per minute) is more than double a rival plan's rate of $0.20 per minute."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "explanations": [
+      "The $17.00 fixed fee is what remains once the per-minute charge is subtracted out of either quoted bill.",
+      "The $0.30 rate is recovered from the DIFFERENCE between the two bills (a $24.00 gap over 80 extra minutes), not from either bill in isolation.",
+      "The actual charge is 17.00 + 200(0.30) = $77.00, not $80.00.",
+      "Even with zero extra minutes, the fixed fee of $17.00 still applies, so the bill would be $17.00, not $0.00 — the ad describes extra-minute charges on top of a fee, not instead of one.",
+      "Double the rival's $0.20 rate would be $0.40, and ByteMobile's $0.30 rate is lower than that, not more than double it."
+    ],
+    "model": "f + 40r = 29.00\nf + 120r = 53.00",
+    "solution": "Subtract the first equation from the second: 80r = 24.00, so r = 0.30. Substitute back: f + 12.00 = 29.00, so f = 17.00.\nFinal Answer: Fixed fee = $17.00  |  Extra-minute rate = $0.30/min",
+    "general": "A clean subtract-directly elimination (both equations share the same fixed-fee coefficient), the same mechanical shape used repeatedly at higher tiers of this worksheet for phone/utility/taxi-style problems. The traps are conceptual rather than computational: statement D tests whether the reader understands that a fixed fee still applies at zero usage, and statement E tests careless multiplication when comparing to a competitor's rate."
+  },
+  {
+    "num": 8,
+    "title": "Finding Weekly Output From a Production Report",
+    "format": "Production Report  |  Difficulty: 2.1/10  |  (previously Task 8 (orig. Tasks 1–10 set))",
+    "difficulty_10": 2.1,
+    "difficulty_level": "1/5",
+    "narrative": "The table below lists standard specifications for two oven models. This week, the division completed 130 ovens in total and logged 795\nassembly hours in total across both models. (Not every figure below is needed to find how many of each model were built.)\nProduct\nAssembly Hrs/Unit\nMaterial Cost/Unit\nStandard Oven\n4 hrs\n$120\nDeluxe Oven\n9 hrs\n$180",
+    "given": "Let s = number of Standard ovens built, d = number of Deluxe ovens built. The material-cost column is not needed to find s and d — it\nbecomes relevant only for statement E below.",
+    "statements": [
+      "The division built 75 Standard ovens this week.",
+      "The division built 45 Deluxe ovens this week.",
+      "Standard ovens accounted for 300 assembly hours this week.",
+      "Deluxe ovens accounted for 500 assembly hours this week.",
+      "The total material cost of all Standard ovens built this week is $9,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "explanations": [
+      "The unit and hours totals together pin down 75 Standard ovens; the material-cost column plays no role in finding this figure.",
+      "The division built 55 Deluxe ovens, not 45 — a common error is subtracting the hours figures instead of properly eliminating a variable, which tends to understate d.",
+      "4 hours × 75 Standard ovens = 300 hours, part of the 795-hour weekly total (the remaining 495 hours come from the Deluxe ovens).",
+      "Deluxe ovens actually used 9 × 55 = 495 hours, not 500 — note 300 + 495 = 795 matches the report's total exactly, confirming 495 is correct.",
+      "This is where the material-cost column finally matters: 75 Standard ovens × $120 each = $9,000.00. This statement could not have been answered from the hours data alone."
+    ],
+    "model": "s + d = 130 (total ovens built)\n4s + 9d = 795 (total assembly hours)",
+    "solution": "From the total-ovens equation, s = 130 − d. Substitute into the hours equation: 4(130 − d) + 9d = 795. This expands to 520 − 4d + 9d =\n795, giving 5d = 275, so d = 55. Then s = 130 − 55 = 75.\nFinal Answer: Standard ovens = 75  |  Deluxe ovens = 55",
+    "general": "A count-and-rate system (units + hours) rather than a price system, with one deliberately irrelevant column (material cost) planted to test selective reading — it turns out to matter only for the very last statement, which flips the \"irrelevant data\" expectation on its head."
+  },
+  {
+    "num": 9,
+    "title": "Recovering Furniture Prices From Two Branches' Net Sales",
+    "format": "Monthly Sales Summary  |  Difficulty: 2.2/10  |  (previously Task 9 (orig. Tasks 1–10 set))",
+    "difficulty_10": 2.2,
+    "difficulty_level": "1/5",
+    "narrative": "Two branches sold sofas and armchairs this month at company-wide fixed prices. \"Net sales\" (gross sales minus returns) is what actually\nreflects items sold at their listed prices.\nBranch\nSofas Sold\nArmchairs Sold\nGross Sales\nReturns\nRiverside\n14\n22\n$9,760\n$460\nHillcrest\n20\n10\n$9,300\n$300",
+    "given": "Let x = price of one sofa, y = price of one armchair. The gross figures cannot be used directly — each branch's returns must be subtracted\nfirst to isolate the value of items actually sold at listed prices.",
+    "statements": [
+      "A sofa sells for $350.00.",
+      "An armchair sells for $200.00.",
+      "Riverside's net sales (after its $460 in returns) were $9,300.00.",
+      "Hillcrest's gross sales (before its $300 in returns) were $9,300.00.",
+      "Had Riverside recorded zero returns that month, its gross and net sales would both have equalled $9,760.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "explanations": [
+      "The $350.00 sofa price only emerges correctly once each branch's returns have been subtracted from gross sales; using the gross figures directly would give a different (incorrect) system.",
+      "The armchair price of $200.00 depends on the same return-deduction step as the sofa price.",
+      "9,760 − 460 = $9,300.00, exactly the net-sales figure used to build Riverside's equation.",
+      "Hillcrest's gross sales figure, as printed, is $9,300.00 — note this coincides numerically with Riverside's net sales, but the two are different figures from different branches.",
+      "With no returns, net sales would simply equal gross sales, and Riverside's gross figure is $9,760.00."
+    ],
+    "model": "14x + 22y = 9760 − 460 = 9300 (Riverside, net)\n20x + 10y = 9300 − 300 = 9000 (Hillcrest, net)",
+    "solution": "Divide the Hillcrest equation by 10: 2x + y = 900, so y = 900 − 2x. Substitute into Riverside's equation: 14x + 22(900 − 2x) = 9300. This\nexpands to 14x + 19800 − 44x = 9300, so −30x = −10500, giving x = 350. Then y = 900 − 700 = 200.\nFinal Answer: Sofa = $350.00  |  Armchair = $200.00",
+    "general": "The interpretive step here is recognizing that \"gross sales\" is not what the fixed prices actually produced — returns must be netted out first for both branches before the system reflects real unit sales. Statement D is a deliberate numerical coincidence (Hillcrest's gross equals Riverside's net, both $9,300) designed to test whether the reader tracks which figure belongs to which branch and which stage (gross vs. net) rather than pattern-matching on the repeated number."
+  },
+  {
+    "num": 10,
+    "title": "Comparing a Print Shop's Own Rates Against a Rival's Flat Quote",
+    "format": "Price Quote Request  |  Difficulty: 2.4/10  |  (previously Task 10 (orig. Tasks 1–10 set))",
+    "difficulty_10": 2.4,
+    "difficulty_level": "1/5",
+    "narrative": "PrintFast Express charges a fixed setup fee on every order, plus a constant charge per page. Order #58 (120 pages) billed $33.00, and\nOrder #96 (300 pages) billed $69.00. A rival, QuickCopy Center, instead charges a flat $60.00 for any order up to 350 pages, regardless of\nlength.",
+    "given": "Let f = PrintFast's setup fee, r = PrintFast's rate per page.",
+    "statements": [
+      "PrintFast's setup fee is $12.00.",
+      "PrintFast's per-page rate is $0.25.",
+      "A 250-page order at PrintFast would cost $60.00.",
+      "For a 350-page order, PrintFast would be cheaper than QuickCopy Center's flat $60.00 fee.",
+      "Because Order #58 and Order #96 involve different page counts at different total prices, these two invoices pin down one, and only one, possible combination of setup fee and per-page rate."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "explanations": [
+      "PrintFast's setup fee is $9.00, not $12.00 — this kind of error can arise from subtracting the two ORDER totals (69 − 33 = 36) and mistakenly treating part of that gap as the fee instead of as 180 pages' worth of per-page charges.",
+      "The per-page rate is $0.20, not $0.25. The rate comes from dividing the $36.00 gap between the two orders by the 180-page gap between them, so using the wrong page difference is a likely source of error.",
+      "A 250-page order costs 9.00 + 250(0.20) = $59.00, not $60.00 — close enough to QuickCopy's flat fee to invite a careless rounding error, but not actually equal to it.",
+      "At 350 pages, PrintFast costs 9.00 + 350(0.20) = $79.00, which is MORE expensive than QuickCopy's flat $60.00, not cheaper — for long orders, PrintFast's per-page charge eventually overtakes a flat competitor's fee.",
+      "Because the two invoices describe genuinely different situations (different page counts, different totals), they behave like two non-parallel lines that cross at exactly one point — so exactly one fee-and-rate pair satisfies both at once."
+    ],
+    "model": "f + 120r = 33.00 (Order #58)\nf + 300r = 69.00 (Order #96)",
+    "solution": "Subtract Order #58's equation from Order #96's: 180r = 36.00, so r = 0.20. Substitute back: f + 24.00 = 33.00, so f = 9.00. For a 250-\npage order: 9.00 + 250(0.20) = $59.00. For a 350-page order: 9.00 + 350(0.20) = $79.00.\nFinal Answer: PrintFast setup fee = $9.00  |  Rate = $0.20/page",
+    "general": "This closes out the introductory tier by adding a competitor comparison (the flat $60.00 rival quote) on top of the standard fixed-fee-plus-rate model, and by including a meta-statement (E) about system uniqueness rather than a numeric claim — a preview of the more conceptual statement types used at higher difficulty tiers. Every A–D statement is a plausible-but-wrong number, rewarding a reader who recomputes rather than estimates."
+  }
+]
