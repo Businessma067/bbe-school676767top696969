@@ -1,9 +1,10 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Task content will be filled in later — placeholder slots keep the UI ready.
+ * Chapters 5 (Linear equations) and 13 (Binomial) are populated; others use placeholders.
  */
 
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
+import ch13Binomial from "@/data/math-cases-ch13-binomial.json";
 
 export type MathTask = {
   id: string;
@@ -67,8 +68,12 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
   });
 }
 
-const CHAPTER_OVERRIDES: Record<number, MathTask[]> = {
+const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   5: MATH_CH5_LINEAR_EQUATIONS,
+  13: (ch13Binomial.tasks as MathTask[]).map((t) => ({
+    ...t,
+    placeholder: false,
+  })),
 };
 
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {

@@ -1,0 +1,1617 @@
+{
+  "chapter": "Binomial distribution",
+  "source": "Bynominal_ALL.pdf",
+  "bbe_format": "True/False statements (usually A–E; questions 51–55 use A–F). Difficulty rated 1/5 to 5/5.",
+  "tasks": [
+    {
+      "id": "math-13-1",
+      "case_id": "MATH 13.01",
+      "title": "Multiple-Choice Guessing",
+      "context": "A 10-question multiple-choice exam has 4 answer choices per question (1 correct). Person A guesses every answer at random (p = 0.25). Person B has studied and knows the material well (p = 0.90). To pass, a person needs at least 7 correct out of 10. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Person A's probability of scoring a perfect 10/10 by guessing is less than 0.01%.",
+        "The probability that Person B passes (scores at least 7 out of 10) equals the sum, from x = 7 to 10, of the binomial probabilities P(X = x), using n = 10 and p = 0.90.",
+        "Person B is at least 300 times as likely as Person A to pass the exam.",
+        "Person B has a higher variance in number of correct answers than Person A.",
+        "Person A's mean (expected) number of correct answers is exactly one-fourth of the total number of questions."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(10/10) for Person A = $0.25^{10}$ ≈ 0.000095%, which is far below 0.01%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Raising a probability below 0.5 to a power of 10 or more shrinks it dramatically — expect results in the fraction-of-a-percent range without needing a calculator.",
+        "TRUE — \"At least 7 out of 10\" is, by definition, the sum of the individual probabilities for 7, 8, 9, and 10 correct answers.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Any 'at least k' phrase converts directly into a sum starting at k and ending at n — check the bounds match, not the underlying numbers.",
+        "FALSE — $P(X \\ge 7)$ for B ≈ 98.72% and for A ≈ 0.35%. The ratio is about 282, which is less than 300 — close, but the statement's threshold is not met.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Before accepting a big round-number ratio claim (like '300 times'), compute both $P(X \\ge k)$ values and divide — don't round the ratio up in your head.",
+        "FALSE — Var(A) = 10 × 0.25 × 0.75 = 1.875. Var(B) = 10 × 0.90 × 0.10 = 0.90. Person A's variance is higher, not Person B's.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Variance = $np$·(1−p) is biggest when p is closest to 0.5. A p of 0.25 (guessing) is closer to 0.5 than 0.90 (expert), so the guesser's scores vary more — even though the expert scores higher on average.",
+        "TRUE — Mean(A) = n × p = 10 × 0.25 = 2.5, and one-fourth of 10 questions is also 2.5 — this always happens when p is exactly 1/4.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: When p is a simple fraction (like 1/4), the mean $np$ is just that same fraction of n — no multiplication needed, just simplify the fraction of the total."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1
+    },
+    {
+      "id": "math-13-2",
+      "case_id": "MATH 13.02",
+      "title": "Free Throws — Rookie vs All-Star",
+      "context": "A basketball player takes 10 free throws. Player A is a rookie (p = 0.55 per shot). Player B is an all-star (p = 0.85 per shot). A \"clutch\" bonus is awarded for making at least 8 of the 10 shots. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Player B (the all-star) has more than a 20% chance of making all 10 shots in a row.",
+        "The probability that Player A earns the clutch bonus (at least 8 of 10 made) equals the sum, from x = 8 to 10, of the binomial probabilities P(X = x), using n = 10 and p = 0.55.",
+        "Player B is more than 9 times as likely as Player A to earn the clutch bonus.",
+        "Player A's results have a larger standard deviation than Player B's.",
+        "The expected number of made shots for Player B is exactly 3 more than for Player A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(10/10) for Player B = $0.85^{10}$ ≈ 19.69%, which is just under 20%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a 'perfect run' claim near a round-number threshold like 20%, compute p^n precisely rather than eyeballing — these are often deliberately close calls.",
+        "TRUE — \"At least 8 of 10\" is the sum of the individual probabilities for 8, 9, and 10 makes.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Convert 'at least' straight into a sum from the threshold to n; the wording alone tells you the bounds.",
+        "FALSE — $P(X \\ge 8)$ for B ≈ 82.02% and for A ≈ 9.96%. The ratio is about 8.24, which is more than 8 but not more than 9.\n\nTip: For ratio claims with a specific multiplier (like '9 times'), compute the exact ratio — don't round 8.24 up to 'about 9'.",
+        "TRUE — SD(A) = √(10 × 0.55 × 0.45) ≈ 1.573. SD(B) = √(10 × 0.85 × 0.15) ≈ 1.129. Player A's results are more spread out.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Compare which p is closer to 0.5 to predict which person's results vary more, before computing exact numbers.",
+        "TRUE — Mean(B) −Mean(A) = (10 × 0.85) −(10 × 0.55) = 8.5 −5.5 = 3 exactly.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: When two means share the same n, their difference is just n × (difference in p) — here 10 × (0.85 − 0.55) = 3, no need to compute each mean separately."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 2
+    },
+    {
+      "id": "math-13-3",
+      "case_id": "MATH 13.03",
+      "title": "Factory Batch Certification",
+      "context": "A factory runs a quality check on 20 items per batch. Inspector A is newly trained (p = 0.75 of correctly classifying each item). Inspector B is experienced (p = 0.95). Certification for a batch requires correctly classifying at least 18 of the 20 items. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Inspector A's probability of a flawless run (correctly classifying all 20 items) is less than 0.2%.",
+        "The probability that Inspector A certifies the batch (at least 18 of 20 correct) equals the sum, from x = 18 to 20, of the binomial probabilities P(X = x), using n = 20 and p = 0.75.",
+        "Inspector B is at least 10 times as likely as Inspector A to certify the batch.",
+        "Inspector A's variance in number of correctly classified items is more than 4 times Inspector B's variance.",
+        "On average, Inspector A does not meet the certification bar of 18 correctly classified items."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(20/20) for Inspector A = $0.75^{20}$ ≈ 0.317%, which is above 0.2%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a percentage is 'close' to a round threshold (0.317% vs. 0.2%), compute it exactly instead of relying on intuition about how small p^n 'should' feel.",
+        "TRUE — \"At least 18 of 20\" is the sum of the individual probabilities for 18, 19, and 20 correct classifications.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation questions never depend on the actual value of p — just match the wording ('at least k') to the sum's start and end points.",
+        "TRUE — $P(X \\ge 18)$ for B ≈ 92.45% and for A ≈ 9.13%. The ratio is about 10.13, which is (just barely) at least 10.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Ratio claims with round multipliers deserve exact division; here 10.13 is true for '≥10' but would be false for '≥10.5' or '≥11' — read the threshold carefully.",
+        "FALSE — Var(A) = 20 × 0.75 × 0.25 = 3.75. Var(B) = 20 × 0.95 × 0.05 = 0.95. The ratio 3.75 / 0.95 ≈ 3.95, which is close to but not more than 4 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: For variance-ratio claims, compute both variances first, then divide — a ratio that 'looks like' it should exceed a round number (4) may land just under it (3.95).",
+        "TRUE — Mean(A) = 20 × 0.75 = 15, which is below the certification bar of 18.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To check whether a mean clears a threshold, just compare $np$ to the threshold directly — no probability calculation needed."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3
+    },
+    {
+      "id": "math-13-4",
+      "case_id": "MATH 13.04",
+      "title": "First-Contact Resolutions",
+      "context": "A call center tracks whether calls are resolved on the first contact, out of 15 calls per shift. Agent A is a trainee (p = 0.60 per call). Agent B is a senior agent (p = 0.88 per call). A performance bonus requires resolving at least 13 of the 15 calls on first contact. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Agent B's probability of resolving all 15 calls on first contact is greater than 15%.",
+        "The probability that Agent A qualifies for the bonus (at least 13 of 15 resolved) equals the sum, from x = 13 to 15, of the binomial probabilities P(X = x), using n = 15 and p = 0.60.",
+        "Agent B is more than 25 times as likely as Agent A to qualify for the bonus.",
+        "Agent A's number of first-contact resolutions has a standard deviation greater than 2.",
+        "The expected number of calls resolved by Agent B (13.2) exceeds the bonus threshold of 13."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(15/15) for Agent B = $0.88^{15}$ ≈ 14.70%, which is just under 15%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a perfect-run probability is close to a round percentage, compute p^n exactly — 'close to 15%' claims are usually designed to trip up estimation.",
+        "TRUE — \"At least 13 of 15\" is the sum of the individual probabilities for 13, 14, and 15 resolutions.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation check is always about matching wording to bounds, regardless of which agent or probability is used.",
+        "TRUE — $P(X \\ge 13)$ for B ≈ 73.46% and for A ≈ 2.71%. The ratio is about 27.1, which is more than 25.\n\nTip: For 'more than X times as likely' claims, divide the two exact $P(X \\ge k)$ values rather than comparing the two success rates directly.",
+        "FALSE — SD(A) = √(15 × 0.60 × 0.40) ≈ 1.897, which is less than 2, not greater.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Don't assume a standard deviation is 'large' just because the success rate is moderate (60%) — compute √($np$·(1−p)) to check against the actual threshold given.",
+        "TRUE — Mean(B) = 15 × 0.88 = 13.2, which is greater than 13.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: Comparing a mean to a threshold is a single subtraction ($np$ −threshold) — no probability calculation is needed to answer this kind of statement."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4
+    },
+    {
+      "id": "math-13-5",
+      "case_id": "MATH 13.05",
+      "title": "Seed Germination Trays",
+      "context": "A gardener plants trays of 12 seeds. Seed Batch A is old stock (p = 0.40 germination chance per seed). Seed Batch B is fresh stock (p = 0.85). A tray counts as a \"full-tray success\" if at least 10 of the 12 seeds germinate. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Seed Batch A has less than a 1-in-1000 (0.1%) chance of all 12 seeds germinating.",
+        "The probability that Batch B achieves a full-tray success (at least 10 of 12 germinate) equals the sum, from x = 10 to 12, of the binomial probabilities P(X = x), using n = 12 and p = 0.85.",
+        "Batch B is more than 300 times as likely as Batch A to achieve a full-tray success.",
+        "Batch A has a lower variance in number of germinated seeds than Batch B.",
+        "The mean number of germinated seeds for Batch B is more than double the mean for Batch A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(12/12) for Batch A = $0.40^{12}$ ≈ 0.0017%, which is well under 0.1%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For very low p raised to a high power, expect the result to land in the hundredths-of-a-percent range or smaller — sanity-check against 0.1% before answering.",
+        "TRUE — \"At least 10 of 12\" is the sum of the individual probabilities for 10, 11, and 12 germinated seeds.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation pattern is identical every time: 'at least k out of n' means x runs from k to n.",
+        "FALSE — $P(X \\ge 10)$ for B ≈ 73.58% and for A ≈ 0.28%. The ratio is about 261.8, which is more than 250 but not more than 300.\n\nTip: Large ratio claims (hundreds of times) still need exact division — 261.8 sits between round numbers like 250 and 300, so read the threshold precisely.",
+        "FALSE — Var(A) = 12 × 0.40 × 0.60 = 2.88. Var(B) = 12 × 0.85 × 0.15 = 1.53. Batch A's variance is higher, not lower — 0.40 is closer to 0.5 than 0.85 is.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Distance from 0.5 predicts variance, not the size of p itself — 0.40 (distance 0.10) is closer to 0.5 than 0.85 (distance 0.35), so Batch A actually varies more.",
+        "TRUE — Mean(A) = 12 × 0.40 = 4.8. Mean(B) = 12 × 0.85 = 10.2. Since 10.2 / 4.8 ≈ 2.125, Batch B's mean is more than double Batch A's.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To compare two means as a multiple of each other, divide $np$ values directly — the n cancels out, so you're really just comparing the two p values as a ratio."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 5
+    },
+    {
+      "id": "math-13-6",
+      "case_id": "MATH 13.06",
+      "title": "Airport Security Audit",
+      "context": "An airport screens 25 test bags per audit. Agent A is newly certified (p = 0.70 of correctly flagging a prohibited item). Agent B is a veteran (p = 0.93). To pass the audit, an agent must correctly flag at least 23 of the 25 bags. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Agent A's probability of a flawless screening run (correctly flagging all 25 bags) is less than 0.01%.",
+        "The probability that Agent B passes the audit (at least 23 of 25 correctly flagged) equals the sum, from x = 23 to 25, of the binomial probabilities P(X = x), using n = 25 and p = 0.93.",
+        "Agent B is more than 80 times as likely as Agent A to pass the audit.",
+        "Agent A's variance in number of correctly flagged bags is more than triple Agent B's variance.",
+        "The mean number of correctly flagged bags for Agent B is more than 35% higher than for Agent A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — P(25/25) for Agent A = $0.70^{25}$ ≈ 0.0134%, which is above 0.01%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a perfect-run probability sits just above a round threshold like 0.01%, compute p^n to at least 3–4 significant figures rather than rounding early.",
+        "TRUE — \"At least 23 of 25\" is the sum of the individual probabilities for 23, 24, and 25 correctly flagged bags.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: 'At least k of n' always becomes a sum from k to n regardless of which person's p you're using — the notation check doesn't require any arithmetic.",
+        "TRUE — $P(X \\ge 23)$ for B ≈ 74.66% and for A ≈ 0.896%. The ratio is about 83.3, which clears 80 — but only just.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For close-call ratio claims, divide the two exact $P(X \\ge k)$ percentages rather than trusting a rounded mental estimate of 'roughly 80-something.'",
+        "TRUE — Var(A) = 25 × 0.70 × 0.30 = 5.25. Var(B) = 25 × 0.93 × 0.07 ≈ 1.6275. The ratio 5.25 / 1.6275 ≈ 3.23, which is more than triple.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Variance ratios can look large just because one p (0.93) is near an extreme — always divide $np$·(1−p) for both people rather than assuming 'more spread' from intuition.",
+        "FALSE — Mean(A) = 25 × 0.70 = 17.5. Mean(B) = 25 × 0.93 = 23.25. That's 23.25 / 17.5 ≈ 1.329, a 32.9% increase — more than 30%, but not more than 35%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To convert a mean ratio into a percent increase, subtract 1 from the ratio and multiply by 100 — 1.329 →32.9%, which lands between 30% and 35%."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 6
+    },
+    {
+      "id": "math-13-7",
+      "case_id": "MATH 13.07",
+      "title": "Archery Medal Round",
+      "context": "An archery competition awards a medal for hitting at least 8 bullseyes out of 9 arrows. Archer A is intermediate (p = 0.65 per arrow). Archer B is elite (p = 0.97 per arrow). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Archer B's probability of a perfect round (9 for 9 bullseyes) is greater than 75%.",
+        "The probability that Archer A earns the medal (at least 8 of 9 bullseyes) equals the sum, from x = 8 to 9, of the binomial probabilities P(X = x), using n = 9 and p = 0.65.",
+        "Archer B is more than 8 times as likely as Archer A to earn the medal.",
+        "Archer A's variance in number of bullseyes is more than 8 times Archer B's variance.",
+        "The expected number of bullseyes for Archer B is at least 3 more than for Archer A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — P(9/9) for Archer B = $0.97^{9}$ ≈ 76.02%, which is above 75%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a high-p perfect-run probability, compute the exact power rather than assuming 'expert = near certain' automatically clears any given percentage.",
+        "TRUE — \"At least 8 of 9\" is the sum of the individual probabilities for 8 and 9 bullseyes.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation pattern never changes with p — check that the bounds in the sum match the wording, nothing else.",
+        "TRUE — $P(X \\ge 8)$ for B ≈ 97.18% and for A ≈ 12.11%. The ratio is about 8.03, just over 8.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim — with a small n like 9, even elite players don't guarantee huge round-number ratios.",
+        "FALSE — Var(A) = 9 × 0.65 × 0.35 ≈ 2.0475. Var(B) = 9 × 0.97 × 0.03 ≈ 0.2619. The ratio is about 7.82, which is close to but not more than 8 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When a variance ratio is 'close to' a round number, compute both variances to at least 2 decimal places before deciding if the threshold is cleared.",
+        "FALSE — Mean(A) = 9 × 0.65 = 5.85. Mean(B) = 9 × 0.97 = 8.73. The difference is 2.88, which is close to but not at least 3.\n\nKey formulas:\n\n$$E[X]=np$$\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: For 'at least X more' claims on the mean, compute the exact difference (n × Δp) — a difference of 2.88 is not the same as 'at least 3.'"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7
+    },
+    {
+      "id": "math-13-8",
+      "case_id": "MATH 13.08",
+      "title": "Restaurant Satisfaction Survey",
+      "context": "Two restaurants survey 14 customers each about satisfaction. Restaurant A is new (p = 0.50 of a customer being satisfied). Restaurant B is established (p = 0.80). A \"good rating\" requires at least 11 of the 14 customers satisfied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Restaurant B's probability of a perfect run (all 14 customers satisfied) is greater than 5%.",
+        "The probability that Restaurant A earns a good rating (at least 11 of 14 satisfied) equals the sum, from x = 11 to 14, of the binomial probabilities P(X = x), using n = 14 and p = 0.50.",
+        "Restaurant B is more than 20 times as likely as Restaurant A to earn a good rating.",
+        "Restaurant A has a lower variance in number of satisfied customers than Restaurant B.",
+        "The expected number of satisfied customers for Restaurant B is exactly 60% higher than for Restaurant A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(14/14) for Restaurant B = $0.80^{14}$ ≈ 4.40%, which is below 5%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: A perfect-run probability under 5% is common even for a fairly high p once n climbs into the teens — always compute p^n rather than assuming 'high satisfaction rate' means an easy 5%+ chance.",
+        "TRUE — \"At least 11 of 14\" is the sum of the individual probabilities for 11, 12, 13, and 14 satisfied customers.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation questions are pure translation exercises: match 'at least k' to a sum starting at k and ending at n.",
+        "TRUE — $P(X \\ge 11)$ for B ≈ 69.82% and for A ≈ 2.87%. The ratio is about 24.3, more than 20.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Divide the two exact $P(X \\ge k)$ values for a ratio claim rather than comparing p values directly — small gaps in p can create large gaps in $P(X \\ge k)$.",
+        "FALSE — Var(A) = 14 × 0.50 × 0.50 = 3.5. Var(B) = 14 × 0.80 × 0.20 = 2.24. Restaurant A's variance is higher, not lower — p = 0.50 always gives the maximum possible variance for a fixed n.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Remember that p = 0.5 always produces the largest possible variance for a given n — don't assume the restaurant with the higher satisfaction rate also has 'tighter,' lower-variance results.",
+        "TRUE — Mean(A) = 14 × 0.50 = 7. Mean(B) = 14 × 0.80 = 11.2. Since 11.2 / 7 = 1.6, that's exactly 60% higher.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: When n is the same for both groups, the ratio of the means equals the ratio of the two p values directly (0.80 / 0.50 = 1.6) — no need to compute each mean separately first."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8
+    },
+    {
+      "id": "math-13-9",
+      "case_id": "MATH 13.09",
+      "title": "Phishing Awareness Test",
+      "context": "A company runs a phishing-email test with 18 emails. Staff A is untrained (p = 0.45 of correctly identifying a phishing email). Staff B is trained (p = 0.91). Passing the security review requires correctly identifying at least 16 of the 18 emails. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Staff A's probability of perfectly identifying all 18 phishing emails is less than 0.001%.",
+        "The probability that Staff B passes the security review (at least 16 of 18 correctly identified) equals the sum, from x = 16 to 18, of the binomial probabilities P(X = x), using n = 18 and p = 0.91.",
+        "Staff B is more than 6,000 times as likely as Staff A to pass the security review.",
+        "Staff A's variance in number of correctly identified emails is more than 3.5 times Staff B's variance.",
+        "The mean number of correctly identified emails for Staff B is more than double the mean for Staff A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(18/18) for Staff A = $0.45^{18}$ ≈ 0.00006%, far below 0.001%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For an untrained person facing a very demanding perfect-score requirement, expect probabilities in the millionths-of-a-percent range — this is a strong signal to compute in scientific notation.",
+        "TRUE — \"At least 16 of 18\" is the sum of the individual probabilities for 16, 17, and 18 correctly identified emails.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation never changes: 'at least k of n' is always Σ from k to n.",
+        "FALSE — $P(X \\ge 16)$ for B ≈ 78.32% and for A ≈ 0.0144%. The ratio is about 5,438, which is large but not more than 6,000.\n\nTip: Huge ratio claims (thousands of times) still need exact division — 5,438 sits between round numbers like 5,000 and 6,000, so check which side of the specific threshold it lands on.",
+        "FALSE — Var(A) = 18 × 0.45 × 0.55 ≈ 4.455. Var(B) = 18 × 0.91 × 0.09 ≈ 1.4742. The ratio is about 3.02, close to but not more than 3.5 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: A variance ratio 'close to' a round number like 3.5 needs precise computation — rounding 3.02 up to 'about 3.5' would flip the answer.",
+        "TRUE — Mean(A) = 18 × 0.45 = 8.1. Mean(B) = 18 × 0.91 = 16.38. Since 16.38 / 8.1 ≈ 2.02, that's more than double.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To check a 'more than double' mean claim, divide the two means directly (16.38 / 8.1 ≈ 2.02) rather than estimating from the two p values alone."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 9
+    },
+    {
+      "id": "math-13-10",
+      "case_id": "MATH 13.10",
+      "title": "Forecast Accuracy Award",
+      "context": "Two meteorologists each forecast 10 days. Meteorologist A has a solid track record (p = 0.60 of being correct on a given day). Meteorologist B is highly accurate (p = 0.95). An accuracy award requires being correct on at least 9 of the 10 days. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Meteorologist B's probability of a perfect week (correct forecast on all 10 days) is greater than 60%.",
+        "The probability that Meteorologist A wins the accuracy award (at least 9 of 10 correct) equals the sum, from x = 9 to 10, of the binomial probabilities P(X = x), using n = 10 and p = 0.60.",
+        "Meteorologist B is more than 20 times as likely as Meteorologist A to win the accuracy award.",
+        "Meteorologist A's variance in number of correct forecasts is more than 5 times Meteorologist B's variance.",
+        "The expected number of correct forecasts for Meteorologist B exceeds Meteorologist A's by more than 3."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(10/10) for Meteorologist B = $0.95^{10}$ ≈ 59.87%, which is just under 60%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: A 'greater than 60%' claim on a perfect-run probability with p = 0.95 looks obviously true at a glance — compute it anyway, since $0.95^{10}$ ≈ 59.87% lands just under the line.",
+        "TRUE — \"At least 9 of 10\" is the sum of the individual probabilities for 9 and 10 correct forecasts.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation checks are wording checks: match 'at least k' to a sum from k to n, independent of the specific p.",
+        "FALSE — $P(X \\ge 9)$ for B ≈ 91.39% and for A ≈ 4.64%. The ratio is about 19.7, close to but not more than 20.\n\nTip: Ratios 'close to' a round number like 20 need exact division of the two $P(X \\ge k)$ values — 19.7 rounds up in casual speech but does not clear the stated threshold.",
+        "TRUE — Var(A) = 10 × 0.60 × 0.40 = 2.4. Var(B) = 10 × 0.95 × 0.05 = 0.475. The ratio is about 5.05, just over 5.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When p is far from 0.5 in both directions but n is small, variance ratios can still land just past a round number — divide exactly rather than eyeballing.",
+        "TRUE — Mean(A) = 10 × 0.60 = 6. Mean(B) = 10 × 0.95 = 9.5. The difference is 3.5, which is more than 3.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: For 'exceeds by more than X' mean claims, compute n·(p_B −p_A) directly — here 10 × (0.95 − 0.60) = 3.5, which is more than 3."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10
+    },
+    {
+      "id": "math-13-11",
+      "case_id": "MATH 13.11",
+      "title": "Manufacturing Unit Audit",
+      "context": "A manufacturing plant audits 20 test units per inspection. Inspector A is newly trained (p = 0.55 of correctly identifying a defective unit). Inspector B is a veteran (p = 0.88). To pass the audit, an inspector must correctly identify at least 17 of the 20 units. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Inspector A's probability of a flawless inspection run (correctly identifying all 20 units) is less than 0.0005%.",
+        "The probability that Inspector B passes the audit (at least 17 of 20 correctly identified) equals the sum, from x = 17 to 20, of the binomial probabilities P(X = x), using n = 20 and p = 0.88.",
+        "Inspector B is more than 150 times as likely as Inspector A to pass the audit.",
+        "Inspector A's variance in number of correctly identified units is more than double Inspector B's variance.",
+        "The mean number of correctly identified units for Inspector B is more than 65% higher than for Inspector A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — P(20/20) for Inspector A = $0.55^{20}$ ≈ 0.000642%, which is above 0.0005%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a perfect-run probability sits just above a small round threshold, compute p^n to at least 3–4 significant figures rather than rounding early.",
+        "TRUE — \"At least 17 of 20\" is the sum of the individual probabilities for 17, 18, 19, and 20 correctly identified units.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: 'At least k of n' always becomes a sum from k to n regardless of which person's p you're using — the notation check doesn't require any arithmetic.",
+        "TRUE — $P(X \\ge 17)$ for B ≈ 78.73% and for A ≈ 0.493%. The ratio is about 159.6, which clears 150.\n\nTip: For ratio claims near a round number, divide the two exact $P(X \\ge k)$ percentages rather than trusting a rounded mental estimate.",
+        "TRUE — Var(A) = 20 × 0.55 × 0.45 = 4.95. Var(B) = 20 × 0.88 × 0.12 = 2.112. The ratio 4.95 / 2.112 ≈ 2.34, which is more than double.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Always divide $np$·(1−p) for both people rather than assuming 'more spread' from intuition about which p looks more extreme.",
+        "FALSE — Mean(A) = 20 × 0.55 = 11. Mean(B) = 20 × 0.88 = 17.6. That's 17.6 / 11 = 1.6, exactly a 60% increase — more than 55%, but not more than 65%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To convert a mean ratio into a percent increase, subtract 1 from the ratio and multiply by 100 — 1.6 →60%, which does not clear a 65% threshold."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11
+    },
+    {
+      "id": "math-13-12",
+      "case_id": "MATH 13.12",
+      "title": "Recorded Call Review",
+      "context": "A call center reviews 16 recorded calls per staff member. Staff A is newly hired (p = 0.60 of correctly resolving a call). Staff B is a senior agent (p = 0.92). To pass the review, a staff member must correctly resolve at least 14 of the 16 calls. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Staff A's probability of correctly resolving all 16 calls is greater than 0.02%.",
+        "The probability that Staff B passes the review (at least 14 of 16 correctly resolved) equals the sum, from x = 14 to 16, of the binomial probabilities P(X = x), using n = 16 and p = 0.92.",
+        "Staff B is more than 50 times as likely as Staff A to pass the review.",
+        "Staff A's variance in number of correctly resolved calls is more than triple Staff B's variance.",
+        "The mean number of correctly resolved calls for Staff B is more than 55% higher than for Staff A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — P(16/16) for Staff A = $0.60^{16}$ ≈ 0.0282%, which is above 0.02%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a low-p perfect-run probability with a moderately large n, compute the exact power rather than assuming it must fall under any given small threshold.",
+        "TRUE — \"At least 14 of 16\" is the sum of the individual probabilities for 14, 15, and 16 correctly resolved calls.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation pattern never changes with p — check that the bounds in the sum match the wording, nothing else.",
+        "FALSE — $P(X \\ge 14)$ for B ≈ 86.89% and for A ≈ 1.83%. The ratio is about 47.4, close to but not more than 50.\n\nTip: Ratios 'close to' a round number need exact division of the two $P(X \\ge k)$ values — 47.4 does not clear a 50-times threshold.",
+        "TRUE — Var(A) = 16 × 0.60 × 0.40 = 3.84. Var(B) = 16 × 0.92 × 0.08 ≈ 1.1776. The ratio is about 3.26, more than triple.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When a variance ratio is 'more than' a round number, compute both variances precisely — 3.26 clears a threshold of 3.",
+        "FALSE — Mean(A) = 16 × 0.60 = 9.6. Mean(B) = 16 × 0.92 = 14.72. That's 14.72 / 9.6 ≈ 1.533, a 53.3% increase — not more than 55%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: A percent increase of 53.3% is close to but does not clear a 55% threshold — always compute the exact ratio rather than rounding up."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 12
+    },
+    {
+      "id": "math-13-13",
+      "case_id": "MATH 13.13",
+      "title": "Typing Accuracy Test",
+      "context": "Two applicants take a 12-question typing accuracy test. Typist A is a beginner (p = 0.50 of typing a line correctly). Typist B is experienced (p = 0.75). Passing the test requires typing at least 9 of the 12 lines correctly. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Typist B's probability of a flawless test (all 12 lines correct) is greater than 3%.",
+        "The probability that Typist A passes the test (at least 9 of 12 correct) equals the sum, from x = 9 to 12, of the binomial probabilities P(X = x), using n = 12 and p = 0.50.",
+        "Typist B is more than 9 times as likely as Typist A to pass the test.",
+        "Typist A has a lower variance in number of lines correct than Typist B.",
+        "The expected number of lines correct for Typist B is exactly 50% higher than for Typist A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(12/12) for Typist B = $0.75^{12}$ ≈ 3.17%, which is above 3%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a perfect-run probability just above a round threshold, compute p^n to a few significant figures rather than estimating.",
+        "TRUE — \"At least 9 of 12\" is the sum of the individual probabilities for 9, 10, 11, and 12 lines correct.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation questions are pure translation exercises: match 'at least k' to a sum starting at k and ending at n.",
+        "FALSE — $P(X \\ge 9)$ for B ≈ 64.88% and for A ≈ 7.30%. The ratio is about 8.89, close to but not more than 9.\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim — 8.89 rounds up in casual speech but does not clear a 9-times threshold.",
+        "FALSE — Var(A) = 12 × 0.50 × 0.50 = 3.0. Var(B) = 12 × 0.75 × 0.25 = 2.25. Typist A's variance is higher, not lower — p = 0.50 always gives the maximum possible variance for a fixed n.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Remember that p = 0.5 always produces the largest possible variance for a given n — don't assume the more accurate typist also has the lower-variance results.",
+        "TRUE — Mean(A) = 12 × 0.50 = 6. Mean(B) = 12 × 0.75 = 9. Since 9 / 6 = 1.5, that's exactly 50% higher.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: When n is the same for both people, the ratio of the means equals the ratio of the two p values directly (0.75 / 0.50 = 1.5) — no need to compute each mean separately first."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 13
+    },
+    {
+      "id": "math-13-14",
+      "case_id": "MATH 13.14",
+      "title": "Cybersecurity Attack Drill",
+      "context": "A company runs a cybersecurity drill with 22 simulated attacks. Staff A is untrained (p = 0.40 of correctly identifying an attack). Staff B is trained (p = 0.89). Passing the drill requires correctly identifying at least 19 of the 22 attacks. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Staff A's probability of perfectly identifying all 22 attacks is less than 0.00001%.",
+        "The probability that Staff B passes the drill (at least 19 of 22 correctly identified) equals the sum, from x = 19 to 22, of the binomial probabilities P(X = x), using n = 22 and p = 0.89.",
+        "Staff B is more than 80,000 times as likely as Staff A to pass the drill.",
+        "Staff A's variance in number of correctly identified attacks is more than 2.5 times Staff B's variance.",
+        "The mean number of correctly identified attacks for Staff B is more than double the mean for Staff A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(22/22) for Staff A = $0.40^{22}$ ≈ 0.00000018%, far below 0.00001%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For an untrained person facing a very demanding perfect-score requirement, expect probabilities in the millionths-of-a-percent range or smaller — a strong signal to compute in scientific notation.",
+        "TRUE — \"At least 19 of 22\" is the sum of the individual probabilities for 19, 20, 21, and 22 correctly identified attacks.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation never changes: 'at least k of n' is always Σ from k to n.",
+        "FALSE — $P(X \\ge 19)$ for B ≈ 78.21% and for A ≈ 0.00101%. The ratio is about 77,303, which is large but not more than 80,000.\n\nTip: Huge ratio claims still need exact division — 77,303 sits between round numbers like 75,000 and 80,000, so check which side of the specific threshold it lands on.",
+        "FALSE — Var(A) = 22 × 0.40 × 0.60 = 5.28. Var(B) = 22 × 0.89 × 0.11 ≈ 2.1538. The ratio is about 2.45, close to but not more than 2.5 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: A variance ratio 'close to' a round number like 2.5 needs precise computation — rounding 2.45 up would flip the answer.",
+        "TRUE — Mean(A) = 22 × 0.40 = 8.8. Mean(B) = 22 × 0.89 = 19.58. Since 19.58 / 8.8 ≈ 2.225, that's more than double.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To check a 'more than double' mean claim, divide the two means directly rather than estimating from the two p values alone."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 14
+    },
+    {
+      "id": "math-13-15",
+      "case_id": "MATH 13.15",
+      "title": "Eight Free Throws Contest",
+      "context": "Two basketball players each attempt 8 free throws in a shooting contest. Player A is a solid shooter (p = 0.55 per attempt). Player B is an elite shooter (p = 0.90 per attempt). An award requires making at least 7 of the 8 free throws. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Player B's probability of a perfect round (8 for 8 free throws) is greater than 45%.",
+        "The probability that Player B earns the award (at least 7 of 8 made) equals the sum, from x = 7 to 8, of the binomial probabilities P(X = x), using n = 8 and p = 0.90.",
+        "Player B is more than 12 times as likely as Player A to earn the award.",
+        "Player A's variance in number of free throws made is more than triple Player B's variance.",
+        "The expected number of free throws made by Player B exceeds Player A's by more than 3."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — P(8/8) for Player B = $0.90^{8}$ ≈ 43.05%, which is below 45%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: A high-p perfect-run probability can look 'obviously' above a round threshold — compute the exact power rather than assuming an elite shooter clears any given percentage.",
+        "TRUE — \"At least 7 of 8\" is the sum of the individual probabilities for 7 and 8 free throws made.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation checks are wording checks: match 'at least k' to a sum from k to n, independent of the specific p.",
+        "TRUE — $P(X \\ge 7)$ for B ≈ 81.31% and for A ≈ 6.32%. The ratio is about 12.87, just over 12.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim — with a small n like 8, ratios can land just past a round-number threshold either way.",
+        "FALSE — Var(A) = 8 × 0.55 × 0.45 = 1.98. Var(B) = 8 × 0.90 × 0.10 = 0.72. The ratio is about 2.75, close to but not more than triple.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When a variance ratio is 'close to' a round number, compute both variances to at least 2 decimal places before deciding if the threshold is cleared.",
+        "FALSE — Mean(A) = 8 × 0.55 = 4.4. Mean(B) = 8 × 0.90 = 7.2. The difference is 2.8, which is close to but not more than 3.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: For 'exceeds by more than X' mean claims, compute n × (p_B −p_A) directly — 8 × (0.90 − 0.55) = 2.8, which is not more than 3."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 15
+    },
+    {
+      "id": "math-13-16",
+      "case_id": "MATH 13.16",
+      "title": "Diagnostic Kit Certification",
+      "context": "A lab tests two diagnostic kits on 15 known-positive samples. Kit A is an older model (p = 0.65 of correctly detecting a positive sample). Kit B is a newer model (p = 0.94). A kit is certified if it correctly detects at least 13 of the 15 samples. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Kit A's probability of completely failing to detect any of the 15 samples (X = 0) is greater than 0.0001%.",
+        "The probability that Kit B is certified (at least 13 of 15 correctly detected) equals the sum, from x = 13 to 15, of the binomial probabilities P(X = x), using n = 15 and p = 0.94.",
+        "Kit B is more than 15 times as likely as Kit A to be certified.",
+        "Kit A's standard deviation in number of correct detections is more than twice Kit B's standard deviation.",
+        "The mode (most likely single number of correct detections) for Kit A is 9."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — $P(X = 0)$ for Kit A = $0.35^{15}$ ≈ 0.0000145%, which is well below 0.0001%.\n\nTip: For a 'complete failure' probability (X=0) with a moderate n, compute (1−p)ⁿ directly — with n=15 and a failure rate of 0.35, the chance of 15 straight misses is vanishingly small.",
+        "TRUE — \"At least 13 of 15\" is the sum of the individual probabilities for 13, 14, and 15 correctly detected samples.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: 'At least k of n' always becomes a sum from k to n regardless of which kit's p you're using — the notation check doesn't require any arithmetic.",
+        "TRUE — $P(X \\ge 13)$ for B ≈ 94.29% and for A ≈ 6.17%. The ratio is about 15.27, which clears 15.\n\nTip: For ratio claims near a round number, divide the two exact $P(X \\ge k)$ percentages rather than trusting a rounded mental estimate.",
+        "TRUE — SD(A) = √(15 × 0.65 × 0.35) ≈ 1.847. SD(B) = √(15 × 0.94 × 0.06) ≈ 0.920. The ratio 1.847 / 0.920 ≈ 2.008, just over double.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Standard deviation is the square root of variance — take the square root of $np$·(1−p) for each person before dividing, don't divide the variances and call that the SD ratio.",
+        "FALSE — The pmf for Kit A peaks at x = 10 ($P(X = 10)$ is the largest single value), not x = 9.\n\nTip: For a fairly large $np$, the mode is close to $np$ — here $np$ = 9.75, so check both 9 and 10 rather than assuming the mode is always the rounded-down mean."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 16
+    },
+    {
+      "id": "math-13-17",
+      "case_id": "MATH 13.17",
+      "title": "Production Line Batches",
+      "context": "Two production lines each finish a batch of 10 units. Line A is older equipment (p = 0.45 of producing an acceptable unit). Line B is newly calibrated (p = 0.85). A batch passes inspection if at least 8 of the 10 units are acceptable. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The probability that Line B produces exactly 8 acceptable units, P(X = 8), is more than 10 times the probability that Line A produces exactly 8 acceptable units.",
+        "The probability that Line B's batch passes inspection (at least 8 of 10 acceptable) equals the sum, from x = 8 to 10, of the binomial probabilities P(X = x), using n = 10 and p = 0.85.",
+        "The probability that Line A produces at most 8 acceptable units is less than 95%.",
+        "Line A's standard deviation in number of acceptable units is more than 1.3 times Line B's standard deviation.",
+        "The expected number of acceptable units for Line B is exactly double that of Line A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — $P(X = 8)$ for Line A ≈ 2.29% and for Line B ≈ 27.59%. The ratio is about 12.05, more than 10.\n\nTip: Exact single-value probabilities P(X=k) are computed with the binomial pmf, not the cumulative sum — don't confuse this with 'at least 8.'",
+        "TRUE — \"At least 8 of 10\" is the sum of the individual probabilities for 8, 9, and 10 acceptable units.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation pattern never changes with p — check that the bounds in the sum match the wording, nothing else.",
+        "FALSE — $P(X \\le 8)$ for Line A ≈ 99.55%, which is above 95%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: 'At most k' is the cumulative probability up to and including k — for a low-p line, almost all outcomes fall at or below a modest cutoff like 8, so this is usually a very high percentage.",
+        "TRUE — SD(A) = √(10 × 0.45 × 0.55) ≈ 1.573. SD(B) = √(10 × 0.85 × 0.15) ≈ 1.129. The ratio 1.573 / 1.129 ≈ 1.393, more than 1.3.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Take the square root of each variance before comparing — SD ratios are always smaller than the corresponding variance ratios since √compresses the gap.",
+        "FALSE — Mean(A) = 10 × 0.45 = 4.5. Mean(B) = 10 × 0.85 = 8.5. The ratio 8.5 / 4.5 ≈ 1.889, close to but not exactly double.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: 'Exactly double' requires the ratio to equal 2.000 precisely — 1.889 is close enough to tempt a quick 'yes,' so always check the exact division."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 17
+    },
+    {
+      "id": "math-13-18",
+      "case_id": "MATH 13.18",
+      "title": "Sales Call Conversions",
+      "context": "Two sales reps each make 25 calls in a day. Rep A is new (p = 0.30 of converting a call into a sale). Rep B is experienced (p = 0.68). A rep has a \"strong day\" if more than half of the 25 calls convert, i.e. at least 13 conversions. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Rep A's probability of converting all 25 calls is greater than 0.0000001%.",
+        "The probability that Rep A has a strong day (at least 13 of 25 conversions) equals the sum, from x = 13 to 25, of the binomial probabilities P(X = x), using n = 25 and p = 0.30.",
+        "Rep B is more than 50 times as likely as Rep A to have a strong day.",
+        "Rep A's variance in number of conversions is greater than Rep B's variance.",
+        "The expected number of conversions for Rep B is more than double that of Rep A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(25/25) for Rep A = $0.30^{25}$ ≈ 0.0000000000085%, far below 0.0000001%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: With a low p and a large n, a perfect-run probability collapses far past most round thresholds — compute p^n in scientific notation rather than guessing it's 'small but not that small.'",
+        "TRUE — \"At least 13 of 25\" is the sum of the individual probabilities for 13 through 25 conversions.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation questions are pure translation exercises: match 'at least k' to a sum starting at k and ending at n.",
+        "TRUE — $P(X \\ge 13)$ for B ≈ 97.01% and for A ≈ 1.75%. The ratio is about 55.5, more than 50.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim rather than comparing p values directly — small gaps in p can create large gaps in $P(X \\ge k)$ once n is large.",
+        "FALSE — Var(A) = 25 × 0.30 × 0.70 = 5.25. Var(B) = 25 × 0.68 × 0.32 = 5.44. Rep B's variance is actually higher, since p = 0.68 sits closer to 0.5 than p = 0.30 does.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Variance depends on distance from p = 0.5, not on which p is 'better' — check |p −0.5| for both people before assuming the lower-p person has higher variance.",
+        "TRUE — Mean(A) = 25 × 0.30 = 7.5. Mean(B) = 25 × 0.68 = 17. The ratio 17 / 7.5 ≈ 2.267, more than double.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To check a 'more than double' mean claim, divide the two means directly rather than estimating from the two p values alone."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18
+    },
+    {
+      "id": "math-13-19",
+      "case_id": "MATH 13.19",
+      "title": "Practice Exam Scores",
+      "context": "Two students each answer 20 questions on a practice exam. Student A studied moderately (p = 0.50 of answering a question correctly). Student B studied intensively (p = 0.80). Passing requires at least 10 of the 20 questions correct. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Student A's probability of scoring below the passing threshold (fewer than 10 correct) is greater than 40%.",
+        "The probability that Student B passes (at least 10 of 20 correct) equals the sum, from x = 10 to 20, of the binomial probabilities P(X = x), using n = 20 and p = 0.80.",
+        "Student B is more than twice as likely as Student A to pass.",
+        "Student A's standard deviation in number correct is exactly 25% higher than Student B's.",
+        "The mean score for Student B exceeds Student A's mean by at least 6 points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(X<10) for Student A = $P(X \\le 9)$ ≈ 41.19%, which is above 40%.\n\nTip: 'Fewer than k' is the complement-style cumulative probability up to k−1 — here it's quicker to compute 1 −$P(X \\ge 10)$ than to sum $P(X = 0)$ through $P(X = 9)$ directly.",
+        "TRUE — \"At least 10 of 20\" is the sum of the individual probabilities for 10 through 20 correct answers.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation never changes: 'at least k of n' is always Σ from k to n.",
+        "FALSE — $P(X \\ge 10)$ for B ≈ 99.94% and for A ≈ 58.81%. The ratio is about 1.70, not more than 2.\n\nTip: When $P(X \\ge k)$ for the stronger person is already close to 100%, the ratio is capped near 1/$P(X \\ge k)$ for the weaker person — here that's roughly 1/0.588 ≈ 1.70, well short of 2.",
+        "TRUE — SD(A) = √(20 × 0.50 × 0.50) ≈ 2.236. SD(B) = √(20 × 0.80 × 0.20) ≈ 1.789. The ratio 2.236 / 1.789 = 1.25 exactly, a 25% increase.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: p = 0.5 gives the maximum variance and SD for a fixed n, so pairing it against any other p usually produces a clean, checkable SD ratio.",
+        "TRUE — Mean(A) = 20 × 0.50 = 10. Mean(B) = 20 × 0.80 = 16. The difference is exactly 6, which satisfies 'at least 6.'\n\nKey formulas:\n\n$$E[X]=np$$\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: 'At least X' includes equality — a difference of exactly 6 still makes an 'at least 6' claim true, don't mistake it for a near-miss."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 19
+    },
+    {
+      "id": "math-13-20",
+      "case_id": "MATH 13.20",
+      "title": "Surgical Success Rates",
+      "context": "Two surgeons each perform 14 procedures of a certain type in a year. Surgeon A has a strong record (p = 0.75 success per procedure). Surgeon B has an outstanding record (p = 0.96 success per procedure). A surgeon meets the benchmark if at least 12 of the 14 procedures succeed. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Surgeon B's probability of a flawless year (all 14 procedures successful) is more than 30 times Surgeon A's flawless-year probability.",
+        "The probability that Surgeon A meets the benchmark (at least 12 of 14 successful) equals the sum, from x = 12 to 14, of the binomial probabilities P(X = x), using n = 14 and p = 0.75.",
+        "Surgeon B is more than 3.5 times as likely as Surgeon A to meet the benchmark.",
+        "Surgeon A's standard deviation in number of successes is more than double Surgeon B's standard deviation.",
+        "The probability of exactly 12 successful procedures, P(X = 12), is higher for Surgeon A than for Surgeon B."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(14/14) for Surgeon A = $0.75^{14}$ ≈ 1.78%, and for Surgeon B = $0.96^{14}$ ≈ 56.47%. The ratio is about 31.7, more than 30.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For perfect-run ratio claims, divide the two exact p^n values — a p close to 1 (like 0.96) can produce a surprisingly large flawless-run probability even with a double-digit n.",
+        "TRUE — \"At least 12 of 14\" is the sum of the individual probabilities for 12, 13, and 14 successful procedures.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation checks are wording checks: match 'at least k' to a sum from k to n, independent of the specific p.",
+        "FALSE — $P(X \\ge 12)$ for B ≈ 98.33% and for A ≈ 28.11%. The ratio is about 3.50, essentially at but not clearing 3.5.\n\nTip: When a ratio lands right at a stated threshold, compute several decimal places before deciding — 3.4976 does not exceed 3.5, even though it rounds to 3.5.",
+        "TRUE — SD(A) = √(14 × 0.75 × 0.25) ≈ 1.620. SD(B) = √(14 × 0.96 × 0.04) ≈ 0.733. The ratio 1.620 / 0.733 ≈ 2.21, more than double.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Standard deviation ratios are smaller than variance ratios for the same pair — always take the square root before comparing to a 'double' threshold.",
+        "TRUE — $P(X = 12)$ for Surgeon A ≈ 18.02% and for Surgeon B ≈ 8.92%. Surgeon A's exact-12 probability is higher.\n\nTip: A very high p (like 0.96) concentrates probability near the maximum (14), which can make a specific lower value like 12 less likely than for a moderate-p surgeon whose distribution is centered closer to 12."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 20
+    },
+    {
+      "id": "math-13-21",
+      "case_id": "MATH 13.21",
+      "title": "Defect-Free Factory Batches",
+      "context": "Factory A inspects batches of 18 units; each unit is defect-free independently with probability 0.72. Factory B inspects batches of 24 units; each unit is defect-free independently with probability 0.91. A batch \"passes\" if at least 90% of its units are defect-free. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since 90% of 18 is 16.2, Factory A's batch passes with at least 16 defect-free units.",
+        "The probability that Factory A's batch passes equals the sum, from x = 17 to 18, of the binomial probabilities P(X = x), using n = 18 and p = 0.72.",
+        "Factory B is more than 25 times as likely as Factory A to have its batch pass.",
+        "Factory A's coefficient of variation (standard deviation ÷ mean) in number of defect-free units is more than double Factory B's coefficient of variation.",
+        "Factory B's standard deviation in number of defect-free units is higher than Factory A's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — 16 out of 18 is 16/18 ≈ 88.9%, which is below the 90% threshold. Because the count must be a whole number, \"at least 90%\" requires rounding 16.2 up to 17, not down to 16.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: For a percentage threshold on an integer count, always round up to the next whole unit (ceiling), never down — rounding down here would let a batch that actually falls short of 90% count as passing.",
+        "TRUE — With the correctly rounded threshold of 17, \"at least 17 of 18\" is exactly the sum of $P(X = 17)$ and $P(X = 18)$.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Once the count threshold is correctly established (here, 17 after rounding up from 16.2), the sum-notation translation is the same as always: k to n.",
+        "TRUE — $P(X \\ge 17)$ for A ≈ 2.163% and $P(X \\ge 22)$ for B ≈ 63.16%. The ratio is about 29.2, more than 25.\n\nTip: Even though A and B have different n, the ratio comparison still just requires dividing the two exact $P(X \\ge k)$ values — the different sample sizes don't change the method.",
+        "TRUE — CV(A) = SD(A)/Mean(A) = 1.905/12.96 ≈ 0.147. CV(B) = SD(B)/Mean(B) = 1.402/21.84 ≈ 0.0642. The ratio 0.147/0.0642 ≈ 2.29, more than double.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$\n\nTip: Coefficient of variation strips out scale (n and mean), so it's the right tool for comparing relative spread between two setups with different n — don't compare raw SDs directly when n differs.",
+        "FALSE — SD(A) = √(18 × 0.72 × 0.28) ≈ 1.905. SD(B) = √(24 × 0.91 × 0.09) ≈ 1.402. Factory A's standard deviation is actually higher, not Factory B's.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Don't assume more trials (n=24 > n=18) automatically means more spread — variance depends on $np$·(1−p) as a whole, and B's p=0.91 is far enough from 0.5 to shrink its spread below A's despite the larger n."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 21
+    },
+    {
+      "id": "math-13-22",
+      "case_id": "MATH 13.22",
+      "title": "Dual Quality Checks",
+      "context": "Two independent quality checks each run on the same batch of 30 identical components. Check A flags a component as faulty with probability 0.15 per component. Check B flags a component as faulty with probability 0.85 per component. Let X be the number of components flagged by each check. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Check A's variance in number of components flagged equals Check B's variance in number of components flagged.",
+        "Check B's coefficient of variation (standard deviation ÷ mean) is less than 20% of Check A's coefficient of variation.",
+        "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 30 components.",
+        "The probability that Check A flags at least 20 components is greater than the probability that Check B flags at most 10 components.",
+        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Var(A) = 30 × 0.15 × 0.85 = 3.825. Var(B) = 30 × 0.85 × 0.15 = 3.825. The product p(1−p) is identical whether p = 0.15 or p = 0.85, so the variances match exactly.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: p and 1−p always give the same variance for a fixed n, since p(1−p) = (1−p)p — check for this symmetry whenever two p-values are complements of each other.",
+        "TRUE — CV(A) = 1.956/4.5 ≈ 0.4346. CV(B) = 1.956/25.5 ≈ 0.0767. CV(B)/CV(A) ≈ 0.1765, which is less than 0.20 (20%).\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$\n\nTip: Equal SDs paired with very different means produce very different CVs — always divide SD by mean before comparing 'relative' spread, not just the raw SD.",
+        "TRUE — $P(X = 0)$ for A = $0.85^{30}$ ≈ 0.763%. $P(X = 30)$ for B = $0.85^{30}$ ≈ 0.763% (since $P(X = 30)$ for p=0.85 is just $0.85^{30}$). These are the same expression and so are exactly equal.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For complementary p-values (p and 1−p) on the same n, $P(X = 0)$ for one equals P(X=n) for the other — this mirror-image symmetry lets you skip a separate calculation.",
+        "FALSE — $P(X \\ge 20)$ for A ≈ 2.145 × 10⁻¹⁰ and $P(X \\le 10)$ for B ≈ 2.145 × 10⁻¹⁰ — these are exactly equal (the same complement symmetry), so A's probability is not greater than B's.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Whenever you see 'at least k' for p and 'at most (n−k)' for 1−p on the same n, expect exact equality, not a one-sided inequality — the binomial(n,p) and binomial(n,1−p) distributions are mirror images of each other.",
+        "FALSE — Skewness for a binomial is (1−2p)/√(np(1−p)). For p=0.15 this is +0.358; for p=0.85 it is −0.358. The magnitudes are equal — the distributions are equally skewed, just in opposite directions.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Complementary p-values (p and 1−p) always produce equal-magnitude, opposite-sign skewness — one is right-skewed and the other left-skewed by exactly the same amount, so neither is 'more' skewed."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 22
+    },
+    {
+      "id": "math-13-23",
+      "case_id": "MATH 13.23",
+      "title": "Calibration Line Acceptables",
+      "context": "Two calibration lines each produce batches of 20 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.75 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Line A's probability of landing in the mid-range (8 to 12 acceptable units) is more than 5 times Line B's probability of landing in that same range.",
+        "P(8 ≤X ≤12) for Line A equals the sum, from x = 8 to 12, of the binomial probabilities P(X = x), using n = 20 and p = 0.40.",
+        "The interval 8 to 12 lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the 8-to-12 mid-range.",
+        "Line A's mean is more than 3 standard deviations (of Line B's distribution) below Line B's mean."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(8≤X≤12) for A ≈ 56.31% and for B ≈ 10.16%. The ratio is about 5.54, more than 5.\n\nTip: Range probabilities are just a difference of two cumulative probabilities, $P(X \\le 12)$ −$P(X \\le 7)$ — compute each side's range probability this way, then divide for the ratio.",
+        "TRUE — P(8≤X≤12) is by definition the sum of P(X=x) for x = 8, 9, 10, 11, and 12.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: A bounded range 'a to b' always translates to a sum from a to b inclusive — the same logic as 'at least k' but with a stopping point on both ends.",
+        "FALSE — Line A's mean is 8 and SD ≈ 2.191, so one SD around the mean spans about 5.81 to 10.19. The interval 8–12 extends past 10.19, so it is not entirely contained within one SD.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$\n\nTip: Always compute mean ± SD explicitly and compare it to both endpoints of the stated range — a range can start inside one-SD territory but still extend beyond it.",
+        "FALSE — Line B's mean is 20 × 0.75 = 15, which is above the mid-range's upper bound of 12.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: Just compute n×p directly and check whether it falls between the two stated bounds — no need for any probability calculation here.",
+        "TRUE — The gap between the means is 15 −8 = 7. Line B's SD ≈ 1.936, and 3 × 1.936 ≈ 5.81. Since 7 > 5.81, the gap exceeds 3 of Line B's standard deviations.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$\n\nTip: To check an 'X standard deviations apart' claim, multiply the relevant SD by the stated number and compare it to the actual gap between the means, rather than eyeballing the two distributions."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 23
+    },
+    {
+      "id": "math-13-24",
+      "case_id": "MATH 13.24",
+      "title": "Team Trial Successes",
+      "context": "Two teams each complete 16 independent trials. Team A succeeds on each trial with probability 0.50. Team B succeeds on each trial with probability 0.85. A team \"clears the bar\" if it succeeds on at least 12 of the 16 trials. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The difference between Team B's and Team A's probability of clearing the bar (P(X≥12) for B minus P(X≥12) for A) is greater than 0.85.",
+        "The probability that Team B clears the bar equals the sum, from x = 12 to 16, of the binomial probabilities P(X = x), using n = 16 and p = 0.85.",
+        "The probability that Team A succeeds on exactly 8 trials is less than the probability that Team B succeeds on exactly 14 trials.",
+        "Team A's standard deviation in number of successes is more than 1.4 times Team B's standard deviation.",
+        "The difference in means (Team B's mean minus Team A's mean) is less than the difference in variances (Team A's variance minus Team B's variance)."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — $P(X \\ge 12)$ for A ≈ 3.84% and for B ≈ 92.09%. The difference is about 88.25 percentage points (0.8825), which is greater than 0.85.\n\nTip: For 'difference' claims, subtract the two probabilities directly rather than computing a ratio — a difference near 0.88 is easy to mistake for 'close to 0.85' without the exact subtraction.",
+        "TRUE — \"At least 12 of 16\" is the sum of the individual probabilities for 12 through 16 successes.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation is unaffected by which of the two entities (or which p) the statement is about — only the bounds k and n matter.",
+        "TRUE — $P(X = 8)$ for A ≈ 19.64% and $P(X = 14)$ for B ≈ 27.75%. 19.64% is less than 27.75%.\n\nTip: Exact-value comparisons across two different k's (8 for A, 14 for B) still just require computing each pmf value separately with the binomial formula and comparing the two numbers directly.",
+        "TRUE — SD(A) = √(16×0.5×0.5) = 2.0. SD(B) = √(16×0.85×0.15) ≈ 1.428. The ratio 2.0/1.428 ≈ 1.400, which just clears 1.4.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: When a ratio lands right at a stated threshold, carry a few decimal places — 1.4003 does exceed 1.4, even though it looks like it might round down.",
+        "FALSE — Mean difference (B −A) = 13.6 −8 = 5.6. Variance difference (A −B) = 4.0 −2.04 = 1.96. Since 5.6 is not less than 1.96, the statement is false.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$E[X]=np$$\n\nTip: Don't assume a 'difference in means' and a 'difference in variances' will be comparable in size — means scale with $np$ while variances scale with $np$·(1−p), so their differences can be an order of magnitude apart."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 24
+    },
+    {
+      "id": "math-13-25",
+      "case_id": "MATH 13.25",
+      "title": "Auditor Compliance Threshold",
+      "context": "Auditor A reviews 50 independent transactions, each compliant with probability 0.50, and we consider P(X ≥28). Auditor B reviews 10 independent transactions, each compliant with probability 0.90, and we consider P(X ≥9). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For Auditor A, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
+        "For Auditor B, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 9.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥28) for Auditor A differs from the exact binomial probability by less than 0.001.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥9) for Auditor B differs from the exact binomial probability by less than 0.01.",
+        "The normal approximation error is larger for Auditor B than for Auditor A, consistent with Auditor B failing the n·p ≥5 / n·(1−p) ≥5 rule of thumb."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — For Auditor A, $np$ = 50×0.5 = 25 and $n(1-p)$ = 50×0.5 = 25. Both are well above 5.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Always check both $np$ and $n(1-p)$ individually — a single large n does not guarantee both conditions hold if p is far from 0.5.",
+        "FALSE — $np$ = 10×0.9 = 9, which is ≥5, but $n(1-p)$ = 10×0.1 = 1, which is well below 5. Both conditions must hold, and this one fails.\n\nTip: The rule of thumb is an 'and,' not an 'or' — checking only $np$ and stopping there (as this statement implicitly invites) misses that the complementary condition can fail even when $np$ looks comfortably large.",
+        "TRUE — The exact $P(X \\ge 28)$ for Auditor A ≈ 0.23994. The continuity-corrected normal approximation gives ≈ 0.23975. The difference is about 0.000194, which is less than 0.001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: When both $np$ and $n(1-p)$ are comfortably above 5 (here, both are 25), expect the continuity- corrected normal approximation to be very close to the exact value — differences in the thousandths or smaller are typical.",
+        "FALSE — The exact $P(X \\ge 9)$ for Auditor B ≈ 0.7361. The continuity-corrected normal approximation gives ≈ 0.7009. The difference is about 0.0352, which is not less than 0.01.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: When the rule of thumb fails (as in part B), expect the normal approximation to noticeably miss the exact value — here the error is more than 3 percentage points, well above a 1-point tolerance.",
+        "TRUE — Auditor B's approximation error (≈ 0.0352) is about 180 times larger than Auditor A's (≈ 0.000194), matching the expectation that failing the rule of thumb ($n(1-p)$ = 1 for B) produces a much less reliable normal approximation.\n\nTip: Use the rule of thumb as a predictor, not just a checkbox: the more badly $np$ or $n(1-p)$ falls short of 5, the larger you should expect the approximation error to be, and this can be confirmed by comparing exact and approximate values directly."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 25
+    },
+    {
+      "id": "math-13-26",
+      "case_id": "MATH 13.26",
+      "title": "Advanced Factory Inspection",
+      "context": "Factory A inspects batches of 22 units; each unit is defect-free independently with probability 0.65. Factory B inspects batches of 20 units; each unit is defect-free independently with probability 0.92. A batch \"passes\" if at least 85% of Factory A's units are defect-free, or at least 90% of Factory B's units are defect-free (each factory judged against its own threshold). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since 85% of 22 is 18.7, Factory A's batch passes with at least 18 defect-free units.",
+        "The probability that Factory A's batch passes equals the sum, from x = 19 to 22, of the binomial probabilities P(X = x), using n = 22 and p = 0.65.",
+        "Factory B is more than 30 times as likely as Factory A to have its batch pass.",
+        "Factory A's coefficient of variation (standard deviation ÷ mean) in number of defect-free units is more than double Factory B's coefficient of variation.",
+        "Factory B's standard deviation in number of defect-free units is higher than Factory A's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — 18 out of 22 is 18/22 ≈ 81.8%, which is below the 85% threshold. Because the count must be a whole number, \"at least 85%\" requires rounding 18.7 up to 19, not down to 18.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — With the correctly rounded threshold of 19, \"at least 19 of 22\" is exactly the sum of $P(X = 19)$, $P(X = 20)$, $P(X = 21)$, and $P(X = 22)$.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — $P(X \\ge 19)$ for A ≈ 2.45% and $P(X \\ge 18)$ for B ≈ 78.79%. The ratio is about 32.1, more than 30.",
+        "TRUE — CV(A) = SD(A)/Mean(A) ≈ 2.237/14.3 ≈ 0.1564. CV(B) = SD(B)/Mean(B) ≈ 1.213/18.4 ≈ 0.0659. The ratio 0.1564/0.0659 ≈ 2.37, more than double.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "FALSE — SD(A) = √(22 × 0.65 × 0.35) ≈ 2.237. SD(B) = √(20 × 0.92 × 0.08) ≈ 1.213. Factory A's standard deviation is actually higher, not Factory B's.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 26
+    },
+    {
+      "id": "math-13-27",
+      "case_id": "MATH 13.27",
+      "title": "Dual Inspection Flags",
+      "context": "Two independent inspection checks each run on the same batch of 35 identical components. Check A flags a component as faulty with probability 0.22 per component. Check B flags a component as faulty with probability 0.78 per component. Let X be the number of components flagged by each check. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Check A's variance in number of components flagged equals Check B's variance in number of components flagged.",
+        "Check B's coefficient of variation (standard deviation ÷ mean) is less than 20% of Check A's coefficient of variation.",
+        "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 35 components.",
+        "The probability that Check A flags at least 25 components is greater than the probability that Check B flags at most 10 components.",
+        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Var(A) = 35 × 0.22 × 0.78 = 6.006. Var(B) = 35 × 0.78 × 0.22 = 6.006. The product p(1−p) is identical whether p = 0.22 or p = 0.78, so the variances match exactly.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$",
+        "FALSE — CV(A) = 2.451/7.7 ≈ 0.3183. CV(B) = 2.451/27.3 ≈ 0.0898. CV(B)/CV(A) ≈ 0.282, which is about 28.2% of CV(A), not less than 20%.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "TRUE — $P(X = 0)$ for A = $0.78^{35}$ ≈ 0.0167%. $P(X = 35)$ for B = $0.78^{35}$ ≈ 0.0167% (since $P(X = 35)$ for p=0.78 is just $0.78^{35}$). These are the same expression and so are exactly equal.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$",
+        "FALSE — $P(X \\ge 25)$ for A ≈ 6.229 × 10⁻¹⁰ and $P(X \\le 10)$ for B ≈ 6.229 × 10⁻¹⁰ — these are exactly equal (the same complement symmetry), so A's probability is not greater than B's.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Skewness for a binomial is (1−2p)/√(np(1−p)). For p=0.22 this is +0.2285; for p=0.78 it is −0.2285. The magnitudes are equal — the distributions are equally skewed, just in opposite directions.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 27
+    },
+    {
+      "id": "math-13-28",
+      "case_id": "MATH 13.28",
+      "title": "Production Acceptable Rates",
+      "context": "Two production lines each produce batches of 25 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.72 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Line A's probability of landing in the mid-range (8 to 12 acceptable units) is more than 70 times Line B's probability of landing in that same range.",
+        "P(8 ≤X ≤12) for Line A equals the sum, from x = 8 to 12, of the binomial probabilities P(X = x), using n = 25 and p = 0.40.",
+        "The interval 8 to 12 lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the 8-to-12 mid-range.",
+        "Line A's mean is more than 3 standard deviations (of Line B's distribution) below Line B's mean."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(8≤X≤12) for A ≈ 69.27% and for B ≈ 0.956%. The ratio is about 72.5, more than 70.",
+        "TRUE — P(8≤X≤12) is by definition the sum of P(X=x) for x = 8, 9, 10, 11, and 12.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — Line A's mean is 10 and SD ≈ 2.449, so one SD around the mean spans about 7.55 to 12.45. The interval 8–12 falls entirely inside that span.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "FALSE — Line B's mean is 25 × 0.72 = 18, which is above the mid-range's upper bound of 12.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The gap between the means is 18 −10 = 8. Line B's SD ≈ 2.245, and 3 × 2.245 ≈ 6.73. Since 8 > 6.73, the gap exceeds 3 of Line B's standard deviations.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 28
+    },
+    {
+      "id": "math-13-29",
+      "case_id": "MATH 13.29",
+      "title": "Extended Team Trials",
+      "context": "Two teams each complete 20 independent trials. Team A succeeds on each trial with probability 0.45. Team B succeeds on each trial with probability 0.80. A team \"clears the bar\" if it succeeds on at least 15 of the 20 trials. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The difference between Team B's and Team A's probability of clearing the bar (P(X≥15) for B minus P(X≥15) for A) is greater than 0.75.",
+        "The probability that Team B clears the bar equals the sum, from x = 15 to 20, of the binomial probabilities P(X = x), using n = 20 and p = 0.80.",
+        "The probability that Team A succeeds on exactly 9 trials is less than the probability that Team B succeeds on exactly 17 trials.",
+        "Team A's standard deviation in number of successes is more than 1.2 times Team B's standard deviation.",
+        "The difference in means (Team B's mean minus Team A's mean) is less than the difference in variances (Team A's variance minus Team B's variance)."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — $P(X \\ge 15)$ for A ≈ 0.64% and for B ≈ 80.42%. The difference is about 0.7978, which is greater than 0.75.",
+        "TRUE — \"At least 15 of 20\" is the sum of the individual probabilities for 15 through 20 successes.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — $P(X = 9)$ for A ≈ 17.71% and $P(X = 17)$ for B ≈ 20.54%. 17.71% is less than 20.54%.",
+        "TRUE — SD(A) = √(20×0.45×0.55) ≈ 2.225. SD(B) = √(20×0.80×0.20) ≈ 1.789. The ratio 2.225/1.789 ≈ 1.244, which is more than 1.2.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$",
+        "FALSE — Mean difference (B −A) = 16 −9 = 7.0. Variance difference (A −B) = 4.95 −3.20 = 1.75. Since 7.0 is not less than 1.75, the statement is false.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 29
+    },
+    {
+      "id": "math-13-30",
+      "case_id": "MATH 13.30",
+      "title": "Large Audit Compliance",
+      "context": "Auditor A reviews 60 independent transactions, each compliant with probability 0.50, and we consider P(X ≥33). Auditor B reviews 20 independent transactions, each compliant with probability 0.95, and we consider P(X ≥19). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For Auditor A, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
+        "For Auditor B, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 19.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥33) for Auditor A differs from the exact binomial probability by less than 0.001.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥19) for Auditor B differs from the exact binomial probability by less than 0.01.",
+        "The normal approximation error is larger for Auditor B than for Auditor A, consistent with Auditor B failing the n·p ≥5 / n·(1−p) ≥5 rule of thumb."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — For Auditor A, $np$ = 60×0.50 = 30 and $n(1-p)$ = 60×0.50 = 30. Both are well above 5.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — $np$ = 20×0.95 = 19, which is ≥5, but $n(1-p)$ = 20×0.05 = 1, which is well below 5. Both conditions must hold, and this one fails.",
+        "TRUE — The exact $P(X \\ge 33)$ for Auditor A ≈ 0.25948. The continuity-corrected normal approximation gives ≈ 0.25930. The difference is about 0.000176, which is less than 0.001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — The exact $P(X \\ge 19)$ for Auditor B ≈ 0.7358. The continuity-corrected normal approximation gives ≈ 0.6960. The difference is about 0.0398, which is not less than 0.01.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — Auditor B's approximation error (≈ 0.0398) is about 226 times larger than Auditor A's (≈ 0.000176), matching the expectation that failing the rule of thumb ($n(1-p)$ = 1 for B) produces a much less reliable normal approximation."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 30
+    },
+    {
+      "id": "math-13-31",
+      "case_id": "MATH 13.31",
+      "title": "Support Queue Tickets",
+      "context": "Support Queue A handles 28 tickets per day; each ticket is resolved the same day independently with probability 0.78. Support Queue B handles 16 tickets per day; each ticket is resolved the same day independently with probability 0.94. A day is \"on target\" for a queue if at most 15% of that queue's tickets are left unresolved by day's end. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since 15% of 28 is 4.2, Queue A is on target only if its number of unresolved tickets is at most 4 (not 4.2).",
+        "The probability that Queue A is on target equals the sum, from x = 24 to 28, of the binomial probabilities P(X = x) for the number resolved, using n = 28 and p = 0.78.",
+        "Queue B is more than 4 times as likely as Queue A to be on target.",
+        "The mode (single most likely value) of the number of tickets resolved by Queue A equals its mean rounded to the nearest whole number.",
+        "Queue B's standard deviation in number of tickets resolved is higher than Queue A's."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — \"At most 15%\" of 28 means at most 4.2 tickets unresolved. Since the count must be a whole number, the largest whole number satisfying \"at most 4.2\" is 4 — here the threshold rounds DOWN, unlike an \"at least\" threshold, which rounds up.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — Being on target requires at most 4 of 28 unresolved, i.e., at least 24 resolved, which is the sum of $P(X = 24)$ through $P(X = 28)$ for n=28, p=0.78.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — P(Queue A on target) = P(X≥24 | n=28, p=0.78) ≈ 23.04%. P(Queue B on target) = P(X≥14 | n=16, p=0.94) ≈ 93.27%. The ratio is about 4.05, more than 4.",
+        "TRUE — Queue A's mean is 28 × 0.78 = 21.84, which rounds to 22. The mode (the value of x with the highest P(X=x)) is also 22 here, so the two agree.\n\nKey formula:\n\n$$E[X]=np$$",
+        "FALSE — SD(A) = √(28 × 0.78 × 0.22) ≈ 2.192. SD(B) = √(16 × 0.94 × 0.06) ≈ 0.950. Queue A's standard deviation is actually higher, not Queue B's.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 31
+    },
+    {
+      "id": "math-13-32",
+      "case_id": "MATH 13.32",
+      "title": "Screening Test Samples",
+      "context": "Screening Test A is run on 500 independent samples and produces a false positive on any given sample with probability 0.004. Screening Test B is run on a different set of 500 independent samples and produces a false positive with probability 0.012. The two tests are independent of each other. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since n = 500 is large and p = 0.004 is small, the Poisson approximation with λ = n·p = 2.0 is an appropriate way to approximate Test A's false-positive count.",
+        "Using the Poisson approximation, the estimated probability that Test A produces exactly 0 false positives differs from the exact binomial probability by more than 0.001.",
+        "Because the two tests are independent, the probability that both tests produce zero false positives equals the product of each test's individual P(X = 0).",
+        "The probability that at least one of the two tests produces at least one false positive is less than 0.999.",
+        "The Poisson approximation error for P(X ≥5) is larger for Test B (λ = 6.0) than for Test A (λ = 2.0)."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — With n = 500 and p = 0.004, n is large, p is small, and $\\lambda$ = np = 2.0 is a moderate value — exactly the regime where the Poisson approximation to the binomial is expected to work well.\n\nKey formula:\n\n$$E[X]=np$$",
+        "FALSE — The exact $P(X = 0)$ for Test A is $0.996^{500}$ ≈ 13.479%. The Poisson approximation gives e⁻² ≈ 13.534%. The difference is about 0.00054, which is not more than 0.001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — Independence is precisely the condition under which a joint probability of two events factors as the product of their individual probabilities; this holds regardless of the specific p-values involved.",
+        "FALSE — P(both zero) = P(A=0) × P(B=0) ≈ 0.13479 × 0.00239 ≈ 0.000322. So P(at least one false positive) = 1 −0.000322 ≈ 0.999678, which is not less than 0.999 — it is slightly greater.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — For Test B ($\\lambda$=6), the exact $P(X \\ge 5)$ ≈ 71.656% versus a Poisson estimate of ≈ 71.494%, an error of about 0.00162. For Test A ($\\lambda$=2), the exact $P(X \\ge 5)$ ≈ 5.229% versus ≈ 5.265%, an error of about 0.00036. Test B's error is larger."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 32
+    },
+    {
+      "id": "math-13-33",
+      "case_id": "MATH 13.33",
+      "title": "Thirty Free Throws",
+      "context": "Player A attempts 30 free throws, making each shot independently with probability 0.72. Player B also attempts 30 free throws, making each shot independently with probability 0.55. Call a performance \"on pace\" if the player makes between 18 and 22 shots, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Player A's probability of an on-pace performance (18 to 22 makes) is more than 1.5 times Player B's probability of an on-pace performance.",
+        "P(18 ≤X ≤22) for Player A equals the sum, from x = 18 to 22, of the binomial probabilities P(X = x), using n = 30 and p = 0.72.",
+        "The median number of makes for Player B equals its mean rounded to the nearest whole number.",
+        "Player B's mean number of makes falls inside the 18-to-22 on-pace range.",
+        "The gap between Player A's mean and Player B's mean is more than 2 standard deviations of Player A's distribution."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(18≤X≤22) for A ≈ 58.07% and for B ≈ 34.71%. The ratio is about 1.673, more than 1.5.",
+        "TRUE — P(18≤X≤22) is by definition the sum of P(X=x) for x = 18 through 22.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Player B's mean is 30 × 0.55 = 16.5, which rounds to 16. But the median (the smallest x with cumulative probability at least 0.5) works out to 17, not 16 — a case where the mean-rounding shortcut for the median breaks down, since 16.5 sits exactly on a rounding boundary.\n\nKey formula:\n\n$$E[X]=np$$",
+        "FALSE — Player B's mean is 16.5, which is below the on-pace range's lower bound of 18.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The gap between the means is 21.6 −16.5 = 5.1. Player A's SD ≈ 2.459, and 2 × 2.459 ≈ 4.918. Since 5.1 > 4.918, the gap exceeds 2 of Player A's standard deviations.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 33
+    },
+    {
+      "id": "math-13-34",
+      "case_id": "MATH 13.34",
+      "title": "Hourly Production Units",
+      "context": "Production Line 1 makes 12 units per hour, each defect-free independently with probability 0.65. Production Line 2 makes 18 units per hour, each defect-free independently with probability 0.80. Every unit from both lines is dropped into one shared collection bin, so the bin's hourly total is the sum of the two lines' independent counts. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The total number of defect-free units in the shared bin follows a Binomial(30, 0.74) distribution, where 0.74 is the combined (pooled) defect-free rate across both lines.",
+        "The mean number of defect-free units in the shared bin equals (12 × 0.65) + (18 × 0.80) = 22.2, regardless of whether the combined count truly follows a binomial distribution.",
+        "Because the two lines have different defect-free probabilities, the true variance of the combined count (Line 1's variance plus Line 2's variance) is smaller than the variance of a Binomial(30, 0.74) distribution with the same mean.",
+        "Line 2 is more than 3 times as likely as Line 1 to have every single unit in its hourly batch come out defect-free.",
+        "Line 1's standard deviation in number of defect-free units is higher than Line 2's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — The mean of the pooled distribution would indeed be 22.2 (matching (12×0.65)+(18×0.80)), but the true variance of the sum, Var₁+Var₂ = 2.73+2.88 = 5.61, does not match the variance of a Binomial(30, 0.74) with the same mean, which is 30×0.74×0.26 ≈ 5.772 — about a 2.9% mismatch. Summing two binomials with different p does not generally produce another binomial distribution.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$E[X]=np$$",
+        "TRUE — Expected values always add for independent (or even dependent) random variables, regardless of whether the sum follows a named distribution: E[X₁+X₂] = E[X₁]+E[X₂] = 7.8 + 14.4 = 22.2.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The true variance of the sum is Var₁+Var₂ = 5.61. The variance of a Binomial(30, 0.74) with the same mean is 30×0.74×0.26 ≈ 5.772. Since 5.61 < 5.772, the true variance is indeed smaller.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$E[X]=np$$",
+        "TRUE — P(Line 1 fully defect-free) = $0.65^{12}$ ≈ 0.569%. P(Line 2 fully defect-free) = $0.80^{18}$ ≈ 1.801%. The ratio is about 3.17, more than 3.",
+        "FALSE — SD(Line 1) = √(12×0.65×0.35) ≈ 1.652. SD(Line 2) = √(18×0.80×0.20) ≈ 1.697. Line 2's standard deviation is actually the (slightly) higher one.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 34
+    },
+    {
+      "id": "math-13-35",
+      "case_id": "MATH 13.35",
+      "title": "Auditor C Compliance",
+      "context": "Auditor C reviews 45 independent transactions, each compliant with probability 0.60, and we consider P(X ≤30) — \"at most 30 compliant.\" Auditor D reviews 40 independent transactions, each compliant with probability 0.45, and we consider P(X ≥22) — \"at least 22 compliant.\" Both are to be estimated with the normal approximation, using a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For Auditor C, both n·p and n·(1−p) are at least 5 (27 and 18), so the usual rule of thumb for a valid normal approximation is satisfied.",
+        "Because Auditor C's event is an \"at most 30\" event, the continuity-corrected normal approximation should use z = (30 + 0.5 −mean) ÷ SD — adding 0.5, not subtracting it.",
+        "If 0.5 were subtracted instead of added (i.e., z = (30 −0.5 −mean) ÷ SD, the correction that is appropriate for \"at least\" events, not \"at most\" events), the resulting approximation would differ from the exact probability by more than 0.05.",
+        "Using the correct continuity correction, the normal-approximation estimate of P(X ≥22) for Auditor D differs from the exact binomial probability by less than 0.001.",
+        "Auditor C's correctly-corrected approximation error is more than 5 times as large as Auditor D's correctly-corrected approximation error."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — For Auditor C, $np$ = 45×0.60 = 27 and $n(1-p)$ = 45×0.40 = 18. Both comfortably exceed 5.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — For an \"at most k\" event, the continuity correction extends the boundary upward to k+0.5 before standardizing, since the discrete value k is being represented by the continuous interval up to k+0.5. \"At least k\" events use k−0.5 instead, extending the boundary downward. Mixing these up is a common source of error.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The exact $P(X \\le 30)$ for Auditor C is ≈ 0.85696. The correctly-corrected approximation (using 30.5) gives ≈ 0.85657, an error of only ≈ 0.00039. Using the wrong-direction correction (30−0.5=29.5) instead gives ≈ 0.77659, an error of about 0.0804 — well over 0.05.\n\nKey formulas:\n\n$$E[X]=np$$\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — The exact $P(X \\ge 22)$ for Auditor D is ≈ 0.13314. The continuity-corrected normal approximation (using 21.5) gives ≈ 0.13299, a difference of about 0.00015, which is less than 0.001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Auditor C's correctly-corrected error is about 0.00039, and Auditor D's is about 0.00015. The ratio is about 2.58, not more than 5."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 35
+    },
+    {
+      "id": "math-13-36",
+      "case_id": "MATH 13.36",
+      "title": "Low-Yield Factory Batches",
+      "context": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since 87% of 17 is 14.79, Factory A's batch passes with at least 14 defect-free units.",
+        "The probability that Factory A's batch passes equals the sum, from x = 15 to 17, of the binomial probabilities P(X = x), using n = 17 and p = 0.43.",
+        "Factory B is more than 150 times as likely as Factory A to have its batch pass.",
+        "Factory A's coefficient of variation (standard deviation ÷ mean) in number of defect-free units is more than double Factory B's coefficient of variation.",
+        "Factory B's standard deviation in number of defect-free units is higher than Factory A's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — 14 out of 17 is 14/17 ≈ 82.4%, below the 87% threshold. Because the count must be a whole number, \"at least 87%\" requires rounding 14.79 up to 15, not down to 14.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — With the correctly rounded threshold of 15, \"at least 15 of 17\" is exactly the sum of $P(X = 15)$, $P(X = 16)$, and $P(X = 17)$.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — $P(X \\ge 15)$ for A ≈ 0.0154% and $P(X \\ge 23)$ for B ≈ 2.989%. The ratio is about 193.9, more than 150.",
+        "FALSE — CV(A) = SD(A)/Mean(A) ≈ 2.041/7.31 ≈ 0.2792. CV(B) = SD(B)/Mean(B) ≈ 2.627/17.69 ≈ 0.1485. The ratio 0.2792/0.1485 ≈ 1.881, which is close to double but does not exceed it.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "TRUE — SD(A) = √(17 × 0.43 × 0.57) ≈ 2.041. SD(B) = √(29 × 0.61 × 0.39) ≈ 2.627. Factory B's standard deviation is indeed the higher one here — despite Factory A having the higher coefficient of variation, its smaller n keeps its raw SD below Factory B's.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 36
+    },
+    {
+      "id": "math-13-37",
+      "case_id": "MATH 13.37",
+      "title": "Component Flag Checks",
+      "context": "Two independent inspection checks each run on the same batch of 23 identical components. Check A flags a component as faulty with probability 0.34 per component. Check B flags a component as faulty with probability 0.66 per component. Let X be the number of components flagged by each check. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Check A's variance in number of components flagged equals Check B's variance in number of components flagged.",
+        "Check A's coefficient of variation (standard deviation ÷ mean) is more than double Check B's coefficient of variation.",
+        "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 23 components.",
+        "The probability that Check A flags at least 15 components is greater than the probability that Check B flags at most 8 components.",
+        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Var(A) = 23 × 0.34 × 0.66 ≈ 5.1612. Var(B) = 23 × 0.66 × 0.34 ≈ 5.1612. The product p(1−p) is identical whether p = 0.34 or p = 0.66, so the variances match exactly.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$",
+        "FALSE — CV(A) = 2.272/7.82 ≈ 0.2905. CV(B) = 2.272/15.18 ≈ 0.1497. The ratio 0.2905/0.1497 ≈ 1.941, which is close to double but does not exceed it.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "TRUE — $P(X = 0)$ for A = $0.66^{23}$ ≈ 0.00707%. $P(X = 23)$ for B = $0.66^{23}$ ≈ 0.00707% (since $P(X = 23)$ for p=0.66 is just $0.66^{23}$). These are the same expression and so are exactly equal.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$",
+        "FALSE — $P(X \\ge 15)$ for A ≈ 0.2191% and $P(X \\le 8)$ for B ≈ 0.2191% — these are exactly equal (the same complement symmetry), so A's probability is not greater than B's.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Skewness for a binomial is (1−2p)/√(np(1−p)). For p=0.34 this is +0.1409; for p=0.66 it is −0.1409. The magnitudes are equal — the distributions are equally skewed, just in opposite directions.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 37
+    },
+    {
+      "id": "math-13-38",
+      "case_id": "MATH 13.38",
+      "title": "Line A vs Line B Batches",
+      "context": "Production Line A makes batches of 27 units, with an acceptable-unit probability of 0.48 per unit. Production Line B makes batches of 19 units, with an acceptable-unit probability of 0.77 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 9 and 14, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Line A's probability of landing in the mid-range (9 to 14 acceptable units) is more than 1.5 times Line B's probability of landing in that same range.",
+        "P(9 ≤X ≤14) for Line A equals the sum, from x = 9 to 14, of the binomial probabilities P(X = x), using n = 27 and p = 0.48.",
+        "The interval 9 to 14 lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the 9-to-14 mid-range.",
+        "The gap between Line B's mean and Line A's mean is more than 0.6 standard deviations of Line A's distribution."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(9≤X≤14) for A ≈ 68.22% and for B ≈ 45.09%. The ratio is about 1.513, more than 1.5.",
+        "TRUE — P(9≤X≤14) is by definition the sum of P(X=x) for x = 9, 10, 11, 12, 13, and 14.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Line A's mean is 12.96 and SD ≈ 2.596, so one SD around the mean spans about 10.36 to 15.56. The interval's lower end, 9, falls below 10.36, so the interval is not entirely contained within one SD.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$",
+        "FALSE — Line B's mean is 19 × 0.77 = 14.63, which is just above the mid-range's upper bound of 14.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The gap between the means is 14.63 −12.96 = 1.67. Line A's SD ≈ 2.596, and 0.6 × 2.596 ≈ 1.558. Since 1.67 > 1.558, the gap exceeds 0.6 of Line A's standard deviations.\n\nKey formulas:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 38
+    },
+    {
+      "id": "math-13-39",
+      "case_id": "MATH 13.39",
+      "title": "Twenty-Three Trial Teams",
+      "context": "Two teams each complete 23 independent trials. Team A succeeds on each trial with probability 0.37. Team B succeeds on each trial with probability 0.83. A team \"clears the bar\" if it succeeds on at least 17 of the 23 trials. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The difference between Team B's and Team A's probability of clearing the bar (P(X≥17) for B minus P(X≥17) for A) is greater than 0.9.",
+        "The probability that Team B clears the bar equals the sum, from x = 17 to 23, of the binomial probabilities P(X = x), using n = 23 and p = 0.83.",
+        "The probability that Team A succeeds on exactly 8 trials is less than the probability that Team B succeeds on exactly 19 trials.",
+        "Team A's standard deviation in number of successes is more than 1.3 times Team B's standard deviation.",
+        "The difference in means (Team B's mean minus Team A's mean) is less than the difference in variances (Team A's variance minus Team B's variance)."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — $P(X \\ge 17)$ for A ≈ 0.0354% and for B ≈ 91.83%. The difference is about 0.9179, which is greater than 0.9.",
+        "TRUE — \"At least 17 of 23\" is the sum of the individual probabilities for 17 through 23 successes.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — $P(X = 8)$ for A ≈ 16.83% and $P(X = 19)$ for B ≈ 21.45%. 16.83% is less than 21.45%.",
+        "FALSE — SD(A) = √(23×0.37×0.63) ≈ 2.315. SD(B) = √(23×0.83×0.17) ≈ 1.801. The ratio 2.315/1.801 ≈ 1.285, which is close to 1.3 but does not exceed it.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$",
+        "FALSE — Mean difference (B −A) = 19.09 −8.51 = 10.58. Variance difference (A −B) = 5.3613 −3.2453 ≈ 2.116. Since 10.58 is not less than 2.116, the statement is false.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 39
+    },
+    {
+      "id": "math-13-40",
+      "case_id": "MATH 13.40",
+      "title": "Auditor E Threshold",
+      "context": "Auditor E reviews 53 independent transactions, each compliant with probability 0.43, and we consider P(X ≥27). Auditor F reviews 31 independent transactions, each compliant with probability 0.89, and we consider P(X ≥29). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For Auditor E, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
+        "For Auditor F, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 27.59.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥27) for Auditor E differs from the exact binomial probability by less than 0.001.",
+        "Using the normal approximation with continuity correction, the estimate of P(X ≥29) for Auditor F differs from the exact binomial probability by less than 0.01.",
+        "The normal approximation error is more than 300 times larger for Auditor F than for Auditor E."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — For Auditor E, $np$ = 53×0.43 = 22.79 and $n(1-p)$ = 53×0.57 = 30.21. Both are well above 5.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — $np$ = 31×0.89 = 27.59, which is ≥5, but $n(1-p)$ = 31×0.11 = 3.41, which is below 5. Both conditions must hold, and this one fails.",
+        "TRUE — The exact $P(X \\ge 27)$ for Auditor E ≈ 0.15171. The continuity-corrected normal approximation gives ≈ 0.15166. The difference is about 0.0000562, which is less than 0.001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — The exact $P(X \\ge 29)$ for Auditor F ≈ 0.32203. The continuity-corrected normal approximation gives ≈ 0.30071. The difference is about 0.02132, which is not less than 0.01.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — Auditor F's approximation error (≈ 0.02132) is about 380 times larger than Auditor E's (≈ 0.0000562), well more than 300 times — consistent with Auditor F failing the $n(1-p)$ ≥5 part of the rule of thumb."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 40
+    },
+    {
+      "id": "math-13-41",
+      "case_id": "MATH 13.41",
+      "title": "Rare Component Failures",
+      "context": "Component A is tested on 2,500 independent units and fails independently with probability 0.0012 per unit. Component B is tested on 6,000 independent units and fails independently with probability 0.0005 per unit. Both have the same expected number of failures, λ = n·p = 3. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since Component A and Component B have the same λ = n·p = 3, their exact binomial probability of zero failures, P(X = 0), is exactly equal.",
+        "For Component A, since n·p = 3 is less than 5, the usual rule of thumb for a valid normal approximation is not satisfied — even though n·(1−p) = 2,497 comfortably exceeds 5.",
+        "The Poisson approximation (λ = 3) estimates P(X = 0) to within 0.0001 of the exact binomial value for Component B.",
+        "Component A's standard deviation in number of failures is higher than Component B's.",
+        "The probability that Component A has at least 1 failure is higher than the probability that Component B has at least 1 failure."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — Exact $P(X = 0)$ for A = $0.9988^{2500}$ ≈ 4.96975%. Exact $P(X = 0)$ for B = $0.9995^{6000}$ ≈ 4.97497%. Matching $\\lambda$ only guarantees the Poisson approximation is the same for both — the exact binomial values still differ slightly (by about 0.0000523), since the finite-n correction depends on n and p individually, not just their product.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — $np$ = 2500×0.0012 = 3, which is below 5. Meanwhile $n(1-p)$ = 2500×0.9988 = 2497, far above 5. The rule of thumb requires BOTH conditions, so it fails here despite the huge $n(1-p)$.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — The Poisson estimate with $\\lambda$=3 gives $P(X = 0)$ ≈ 4.97871%. The exact value for Component B is ≈ 4.97497%. The difference is about 0.0000374, comfortably under 0.0001.",
+        "FALSE — Var(A) = 2500×0.0012×0.9988 ≈ 2.9964, so SD(A) ≈ 1.7310. Var(B) = 6000×0.0005×0.9995 ≈ 2.9985, so SD(B) ≈ 1.7316. Component B's SD is (very slightly) the higher one.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$",
+        "TRUE — P(A≥1) = 1 −P(A=0) ≈ 95.030%. P(B≥1) = 1 −P(B=0) ≈ 95.025%. Component A's probability is (very slightly) the higher one.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 41
+    },
+    {
+      "id": "math-13-42",
+      "case_id": "MATH 13.42",
+      "title": "Mutation Type Rates",
+      "context": "Mutation Type 1 occurs independently in each of 5,000 samples with probability 0.0006 per sample. Mutation Type 2 occurs independently in each of 60 samples with probability 0.05 per sample. Both have the same expected count, λ = n·p = 3. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Since both mutation types have the same λ = n·p = 3, the Poisson approximation is equally accurate for both.",
+        "For Type 1, the Poisson-approximated P(X = 0) differs from the exact binomial value by less than 0.0001.",
+        "For Type 2, the Poisson-approximated P(X = 0) differs from the exact binomial value by less than 0.0001.",
+        "The Poisson approximation's error in estimating P(X ≥6) is more than 80 times larger for Type 2 than for Type 1.",
+        "Type 1's standard deviation in mutation count is smaller than Type 2's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — Matching $\\lambda$ only means the two Poisson approximations are identical to each other — it says nothing about how close either approximation is to its own exact binomial value. Type 1 (n=5000, tiny p) sits deep in the regime where Poisson works well; Type 2 (n=60, p=0.05) does not.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — Exact $P(X = 0)$ for Type 1 ≈ 4.97423%. Poisson estimate ($\\lambda$=3) ≈ 4.97871%. The difference is about 0.0000448, under 0.0001.",
+        "FALSE — Exact $P(X = 0)$ for Type 2 ≈ 4.60698%. Poisson estimate ($\\lambda$=3) ≈ 4.97871%. The difference is about 0.00372, well over 0.0001.",
+        "TRUE — For $P(X \\ge 6)$: Type 1's exact value ≈ 8.3857%, Poisson estimate ≈ 8.3918%, an error of about 0.0000605. Type 2's exact value ≈ 7.8719%, Poisson estimate ≈ 8.3918%, an error of about 0.005199. The ratio is about 85.9, more than 80.",
+        "FALSE — Var(Type 1) = 5000×0.0006×0.9994 ≈ 2.9982, so SD ≈ 1.7315. Var(Type 2) = 60×0.05×0.95 = 2.85, so SD ≈ 1.6882. Type 1's SD is actually the larger one, since its p is so much closer to 0 that (1−p) barely shrinks the variance below np, whereas Type 2's larger p shrinks it more.\n\nKey formulas:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 42
+    },
+    {
+      "id": "math-13-43",
+      "case_id": "MATH 13.43",
+      "title": "Server Error Requests",
+      "context": "Service A handles 9,000 requests, each independently returning a server error with probability 0.00007 (λ = 0.63). Service B handles 20,000 requests, each independently returning a server error with probability 0.00004 (λ = 0.80). The two services operate independently of each other. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The exact probability that Service A has at least one error, 1 −(1 −p)ⁿ, differs from the approximation 1 −e^(−λ) by more than 0.0001.",
+        "Service B is more than 1.2 times as likely as Service A to have at least one error.",
+        "The expected total number of errors across both services combined is 1.43, regardless of whether the combined count itself follows a nameable distribution.",
+        "Service B's standard deviation in number of errors is higher than Service A's.",
+        "Since λ < 1 for both services, the Poisson approximation cannot be used here because the mean is below one."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — Exact P(at least 1 error) for A = 1 −$0.99993^{9000}$ ≈ 46.742%. The approximation 1−e^(−0.63) ≈ 46.741%. The difference is about 0.0000117, not more than 0.0001.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "FALSE — Exact P(at least 1 error) for A ≈ 46.742%, for B ≈ 55.068%. The ratio is about 1.178, close to but not exceeding 1.2.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$",
+        "TRUE — Expected values always add for independent (or even dependent) random variables: E[errors_A] + E[errors_B] = 0.63 + 0.80 = 1.43, regardless of whether the sum follows any particular named distribution.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — SD(A) = √(9000×0.00007×0.99993) ≈ 0.794. SD(B) = √(20000×0.00004×0.99996) ≈ 0.894. Service B's SD is the higher one.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$",
+        "FALSE — The Poisson approximation's validity depends on n being large and p being small (so that np·p, the higher-order terms, stay negligible) — not on $\\lambda$ itself being above or below 1. A $\\lambda$ under 1 (a rare-event count that's usually zero) is exactly the kind of situation the Poisson distribution was designed to model well.\n\nKey formula:\n\n$$E[X]=np$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 43
+    },
+    {
+      "id": "math-13-44",
+      "case_id": "MATH 13.44",
+      "title": "Three-Component Device",
+      "context": "A device has three independent components arranged so the device fails in a given cycle if at least one component fails. Component 1 fails with probability 0.00031 per cycle, Component 2 with probability 0.00047 per cycle, and Component 3 with probability 0.00022 per cycle. The device runs for 2,500 independent cycles. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The probability that the device fails in a single cycle is well approximated (to within 0.000001) by simply summing the three component failure probabilities.",
+        "Over 2,500 independent cycles, the expected number of device failures is more than 2.5.",
+        "For this device running over 2,500 cycles, n·p is less than 5, so the usual rule of thumb for a valid normal approximation is not satisfied — even though n·(1−p) is comfortably above 5.",
+        "The probability that a single cycle has no device failure, if computed by ignoring Components 2 and 3 entirely (using only 1 −p₁), differs from the true value by more than 0.0005.",
+        "The standard deviation in number of device failures over 2,500 cycles is greater than 2."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Exact system failure probability = 1 −(1−0.00031)(1−0.00047)(1−0.00022) ≈ 0.00099968. The naive sum is 0.00031+0.00047+0.00022 = 0.00100. The difference is about 3.17×10⁻⁷, under 0.000001.",
+        "FALSE — Using the exact per-cycle failure probability (≈ 0.00099968), the expected number of failures over 2,500 cycles is ≈ 2.4992, which is slightly under 2.5, not over it. (Only the naive-sum approximation would give exactly 2.5.)\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — $np$ ≈ 2500 × 0.00099968 ≈ 2.499, below 5. $n(1-p)$ ≈ 2497.5, far above 5. The rule of thumb needs both, so it fails here.",
+        "TRUE — The true P(no failure in a cycle) ≈ 0.99900. Using only Component 1 gives 1−0.00031 = 0.99969. The difference is about 0.00069, more than 0.0005 — ignoring two of the three components meaningfully overstates reliability.\n\nKey formula:\n\n$$E[X]=np$$",
+        "FALSE — Var ≈ 2500 × 0.00099968 × 0.99900 ≈ 2.497, so SD ≈ 1.580, which is not greater than 2.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 44
+    },
+    {
+      "id": "math-13-45",
+      "case_id": "MATH 13.45",
+      "title": "Poisson vs Normal Defectives",
+      "context": "A factory produces 1,800 units; each is defective independently with probability 0.0015. We consider P(X ≤1), the probability of at most one defective unit. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "n·p = 2.7 is well below 5, so the usual normal-approximation rule of thumb is not satisfied here.",
+        "Despite n·p being below 5, n is large enough and p is small enough that the Poisson approximation (λ = n·p = 2.7) is still expected to work well.",
+        "Using the Poisson approximation, the estimate of P(X ≤1) differs from the exact binomial value by less than 0.001.",
+        "Using the continuity-corrected normal approximation, the estimate of P(X ≤1) differs from the exact binomial value by less than 0.001.",
+        "The normal-approximation error here is more than 100 times larger than the Poisson-approximation error."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — $np$ = 1800 × 0.0015 = 2.7, below the usual 5 threshold for the normal approximation's rule of thumb.",
+        "TRUE — The Poisson approximation's validity condition is different from the normal approximation's: it wants n large and p small (so that terms beyond the first order in p become negligible), which is exactly satisfied here (n=1800, p=0.0015) even though $\\lambda$=2.7 is modest.\n\nKey formula:\n\n$$E[X]=np$$",
+        "TRUE — Exact $P(X \\le 1)$ ≈ 24.843%. Poisson estimate ($\\lambda$=2.7) ≈ 24.866%. The difference is about 0.00023, under 0.001.",
+        "FALSE — The continuity-corrected normal approximation gives ≈ 23.244%, versus the exact 24.843% — a difference of about 0.01599, far more than 0.001. The normal approximation struggles badly here because $np$ = 2.7 is well below 5.",
+        "FALSE — The normal-approximation error (≈ 0.01599) divided by the Poisson-approximation error (≈ 0.00023) is about 69, which is more than 50 but not more than 100."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 45
+    },
+    {
+      "id": "math-13-46",
+      "case_id": "MATH 13.46",
+      "title": "Bakery Quality Control",
+      "context": "A bakery runs a quality-control check on 18 pastries per batch. Baker A is a trainee (p = 0.45 of correctly shaping a pastry to spec). Baker B is an expert (p = 0.85). To pass the check, a baker must correctly shape at least 15 of the 18 pastries. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Baker A's probability of a flawless batch (all 18 pastries correct) is less than 0.0001%.",
+        "The probability that Baker B passes the check (at least 15 of 18 correct) equals the sum, from x = 15 to 18, of the binomial probabilities P(X = x), using n = 18 and p = 0.85.",
+        "Baker B is more than 750 times as likely as Baker A to pass the check.",
+        "Baker A's variance in number of correctly shaped pastries is more than double Baker B's variance.",
+        "The mean number of correctly shaped pastries for Baker B is more than 90% higher than for Baker A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(18/18) for Baker A = $0.45^{18}$ ≈ 0.0000573%, which is below 0.0001%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a perfect-run probability sitting just under a small round threshold, compute p^n to several significant figures rather than rounding early — it can flip the comparison.",
+        "TRUE — \"At least 15 of 18\" is the sum of the individual probabilities for 15, 16, 17, and 18 correctly shaped pastries.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: 'At least k of n' always becomes a sum from k to n regardless of whose p you're using — the notation check doesn't require any arithmetic.",
+        "FALSE — $P(X \\ge 15)$ for B ≈ 72.02% and for A ≈ 0.0997%. The ratio is about 722.4, which does not clear 750.\n\nTip: For ratio claims sitting close to a round number, divide the two exact $P(X \\ge k)$ percentages rather than trusting a rounded mental estimate.",
+        "FALSE — Var(A) = 18 × 0.45 × 0.55 = 4.455. Var(B) = 18 × 0.85 × 0.15 = 2.295. The ratio 4.455 / 2.295 ≈ 1.94, which is not more than double.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Always divide $np$·(1−p) for both people rather than assuming 'more spread' from intuition about which p looks more extreme.",
+        "TRUE — Mean(A) = 18 × 0.45 = 8.1. Mean(B) = 18 × 0.85 = 15.3. That's 15.3 / 8.1 ≈ 1.889, an 88.9% increase — more than 85%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To convert a mean ratio into a percent increase, subtract 1 from the ratio and multiply by 100 — 1.889 →88.9%, which clears an 85% threshold but should always be checked against the exact wording of the claim."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 46
+    },
+    {
+      "id": "math-13-47",
+      "case_id": "MATH 13.47",
+      "title": "Automated Test Cases",
+      "context": "A software team runs 25 automated test cases per release. Tester A is a new hire (p = 0.35 of correctly flagging a failing test case). Tester B is a senior engineer (p = 0.93). To pass the release gate, a tester must correctly flag at least 22 of the 25 test cases. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Tester A's probability of correctly flagging all 25 test cases is less than 0.0000001%.",
+        "The probability that Tester B clears the gate (at least 22 of 25 correctly flagged) equals the sum, from x = 22 to 25, of the binomial probabilities P(X = x), using n = 25 and p = 0.93.",
+        "Tester B is more than 15,000,000 times as likely as Tester A to clear the gate.",
+        "Tester A's variance in number of correctly flagged test cases is more than triple Tester B's variance.",
+        "The mean number of correctly flagged test cases for Tester B is more than 170% higher than for Tester A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — P(25/25) for Tester A = $0.35^{25}$ ≈ 0.0000000004%, far below 0.0000001%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a low-p perfect-run requirement with a large n, expect probabilities in the billionths range or smaller — compute in scientific notation rather than estimating.",
+        "TRUE — \"At least 22 of 25\" is the sum of the individual probabilities for 22, 23, 24, and 25 correctly flagged test cases.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation never changes with p — check that the bounds in the sum match the wording, nothing else.",
+        "FALSE — $P(X \\ge 22)$ for B ≈ 90.64% and for A ≈ 0.0000063%. The ratio is about 14,340,560, which is large but does not clear 15,000,000.\n\nTip: Huge ratio claims still need exact division — a value like 14.34 million sitting just under 15 million is easy to round up in casual speech but fails a strict threshold.",
+        "TRUE — Var(A) = 25 × 0.35 × 0.65 = 5.6875. Var(B) = 25 × 0.93 × 0.07 ≈ 1.6275. The ratio is about 3.49, more than triple.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When a variance ratio is 'more than' a round number, compute both variances precisely — 3.49 comfortably clears a threshold of 3.",
+        "FALSE — Mean(A) = 25 × 0.35 = 8.75. Mean(B) = 25 × 0.93 = 23.25. That's 23.25 / 8.75 ≈ 2.657, a 165.7% increase — not more than 170%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: A percent increase of 165.7% is close to but does not clear a 170% threshold — always compute the exact ratio rather than rounding up."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 47
+    },
+    {
+      "id": "math-13-48",
+      "case_id": "MATH 13.48",
+      "title": "Ten-Arrow Archery Contest",
+      "context": "Two archers each shoot 10 arrows in a contest. Archer A is a club-level shooter (p = 0.60 per arrow). Archer B is an elite shooter (p = 0.95 per arrow). An award requires hitting the target on at least 9 of the 10 arrows. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Archer B's probability of a perfect round (10 for 10) is greater than 60%.",
+        "The probability that Archer B earns the award (at least 9 of 10 hits) equals the sum, from x = 9 to 10, of the binomial probabilities P(X = x), using n = 10 and p = 0.95.",
+        "Archer B is more than 20 times as likely as Archer A to earn the award.",
+        "Archer A's variance in number of arrows hit is more than 5 times Archer B's variance.",
+        "The expected number of arrows hit by Archer B exceeds Archer A's by more than 3."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(10/10) for Archer B = $0.95^{10}$ ≈ 59.87%, which is below 60%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: A high-p perfect-run probability can look 'obviously' above a round threshold — compute the exact power rather than assuming an elite performer clears any given percentage.",
+        "TRUE — \"At least 9 of 10\" is the sum of the individual probabilities for 9 and 10 arrows hit.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation checks are wording checks: match 'at least k' to a sum from k to n, independent of the specific p.",
+        "FALSE — $P(X \\ge 9)$ for B ≈ 91.39% and for A ≈ 4.64%. The ratio is about 19.71, just under 20.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim — with a small n like 10, ratios can land just short of a round-number threshold.",
+        "TRUE — Var(A) = 10 × 0.60 × 0.40 = 2.40. Var(B) = 10 × 0.95 × 0.05 = 0.475. The ratio is about 5.05, more than 5 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: When a variance ratio is 'more than' a round number, compute both variances to at least 2 decimal places before deciding if the threshold is cleared.",
+        "TRUE — Mean(A) = 10 × 0.60 = 6.0. Mean(B) = 10 × 0.95 = 9.5. The difference is 3.5, which is more than 3.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: For 'exceeds by more than X' mean claims, compute n × (p_B −p_A) directly — 10 × (0.95 − 0.60) = 3.5, which clears a threshold of 3."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 48
+    },
+    {
+      "id": "math-13-49",
+      "case_id": "MATH 13.49",
+      "title": "Customer Email Resolutions",
+      "context": "A call center reviews 14 customer emails per agent. Agent A is newly onboarded (p = 0.50 of correctly resolving an email in one reply). Agent B is a senior agent (p = 0.80). To pass the review, an agent must correctly resolve at least 12 of the 14 emails. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Agent A's probability of correctly resolving all 14 emails is greater than 0.007%.",
+        "The probability that Agent B passes the review (at least 12 of 14 correctly resolved) equals the sum, from x = 12 to 14, of the binomial probabilities P(X = x), using n = 14 and p = 0.80.",
+        "Agent B is more than 70 times as likely as Agent A to pass the review.",
+        "Agent A's variance in number of correctly resolved emails is more than 1.5 times Agent B's variance.",
+        "The mean number of correctly resolved emails for Agent B is more than 60% higher than for Agent A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — P(14/14) for Agent A = $0.50^{14}$ ≈ 0.0061%, which is below 0.007%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a perfect-run probability sitting just under a small round threshold, compute p^n to a few significant figures rather than estimating.",
+        "TRUE — \"At least 12 of 14\" is the sum of the individual probabilities for 12, 13, and 14 correctly resolved emails.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Sum-notation questions are pure translation exercises: match 'at least k' to a sum starting at k and ending at n.",
+        "FALSE — $P(X \\ge 12)$ for B ≈ 44.81% and for A ≈ 0.647%. The ratio is about 69.25, just under 70.\n\nTip: Divide the exact $P(X \\ge k)$ values for a ratio claim — 69.25 rounds up in casual speech but does not clear a 70-times threshold.",
+        "TRUE — Var(A) = 14 × 0.50 × 0.50 = 3.5. Var(B) = 14 × 0.80 × 0.20 = 2.24. The ratio 3.5 / 2.24 ≈ 1.5625, which is more than 1.5 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: Remember that p = 0.5 always produces the largest possible variance for a given n — don't assume the more accurate agent also has the higher-variance results.",
+        "FALSE — Mean(A) = 14 × 0.50 = 7.0. Mean(B) = 14 × 0.80 = 11.2. That's 11.2 / 7.0 = 1.6, exactly a 60% increase — not more than 60%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: An increase that lands exactly on a round-number threshold fails a strict 'more than' claim — always check whether the wording allows equality."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 49
+    },
+    {
+      "id": "math-13-50",
+      "case_id": "MATH 13.50",
+      "title": "Diagnostic Scan Review",
+      "context": "A hospital has 30 scans reviewed in a diagnostic accuracy drill. Radiologist A is a resident (p = 0.65 of correctly reading a scan). Radiologist B is a senior attending (p = 0.97). To pass the drill, a radiologist must correctly read at least 27 of the 30 scans. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Radiologist A's probability of correctly reading all 30 scans is less than 0.0002%.",
+        "The probability that Radiologist B passes the drill (at least 27 of 30 correctly read) equals the sum, from x = 27 to 30, of the binomial probabilities P(X = x), using n = 30 and p = 0.97.",
+        "Radiologist B is more than 500 times as likely as Radiologist A to pass the drill.",
+        "Radiologist A's variance in number of correctly read scans is more than 8 times Radiologist B's variance.",
+        "The mean number of correctly read scans for Radiologist B is more than 45% higher than for Radiologist A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(30/30) for Radiologist A = $0.65^{30}$ ≈ 0.000244%, which is above 0.0002%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a perfect-run probability sits just above a small round threshold, compute p^n to several significant figures rather than rounding early.",
+        "TRUE — \"At least 27 of 30\" is the sum of the individual probabilities for 27, 28, 29, and 30 correctly read scans.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The sum-notation translation never changes: 'at least k of n' is always Σ from k to n.",
+        "TRUE — $P(X \\ge 27)$ for B ≈ 98.81% and for A ≈ 0.190%. The ratio is about 521.1, which clears 500.\n\nTip: For ratio claims near a round number, divide the two exact $P(X \\ge k)$ percentages rather than trusting a rounded mental estimate.",
+        "FALSE — Var(A) = 30 × 0.65 × 0.35 = 6.825. Var(B) = 30 × 0.97 × 0.03 ≈ 0.873. The ratio is about 7.82, close to but not more than 8 times.\n\nKey formula:\n\n$$\\mathrm{Var}(X)=np(1-p)$$\n\nTip: A variance ratio 'close to' a round number like 8 needs precise computation — rounding 7.82 up would flip the answer.",
+        "TRUE — Mean(A) = 30 × 0.65 = 19.5. Mean(B) = 30 × 0.97 = 29.1. That's 29.1 / 19.5 ≈ 1.492, a 49.2% increase — more than 45%.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: To convert a mean ratio into a percent increase, subtract 1 from the ratio and multiply by 100 — 1.492 →49.2%, which clears a 45% threshold."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 50
+    },
+    {
+      "id": "math-13-51",
+      "case_id": "MATH 13.51",
+      "title": "Airport Shift Screening",
+      "context": "An airport screens 28 bags per shift. Screener A is newly certified (p = 0.42 of correctly flagging a prohibited item). Screener B is a veteran (p = 0.91). To pass the shift audit, a screener must correctly flag at least 24 of the 28 bags. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Screener A's probability of a flawless shift (all 28 bags correctly flagged) is less than 0.0000000025%.",
+        "The probability that Screener A's correct-flag count falls between 18 and 22 (inclusive) equals the sum, from x = 18 to 22, of the binomial probabilities P(X = x), using n = 28 and p = 0.42.",
+        "Screener B is more than 400,000 times as likely as Screener A to pass the shift audit (≥24 of 28).",
+        "Screener A is less than half as likely as Screener B to land in the 18–22 range.",
+        "Screener A's standard deviation in number of correct flags is more than 1.75 times Screener B's standard deviation.",
+        "Screener B's expected score exceeds Screener A's expected score by more than 95 points."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(28/28) for Screener A = $0.42^{28}$ ≈ 0.0000000028%, which is above 0.0000000025%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For perfect-run probabilities near tiny thresholds, compute p^n in scientific notation to at least 3 significant figures — rounding early flips close calls.",
+        "TRUE — \"Between 18 and 22 inclusive\" is by definition the sum of the individual probabilities for 18, 19, 20, 21, and 22 correct flags.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: A ranged probability statement is always Σ from the lower to the upper bound — this is a definitional check, not a computation.",
+        "FALSE — $P(X \\ge 24)$ for B ≈ 89.82% and for A ≈ 0.000237%. The ratio is about 379,195, which does not clear 400,000.\n\nTip: When a ratio is described in the hundreds of thousands, divide the exact percentages rather than trusting the order of magnitude alone.",
+        "TRUE — P(18≤X≤22) for A ≈ 1.447% and for B ≈ 3.552%. The ratio A/B ≈ 0.407, which is less than 0.5 — so A is less than half as likely as B.\n\nTip: For range comparisons, compute both partial sums fully before dividing; a range near one person's tail can behave very differently from a range near their mean.",
+        "FALSE — SD(A) = √6.8208 ≈ 2.612. SD(B) = √2.2932 ≈ 1.514. The ratio is about 1.725, which does not clear 1.75.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Standard deviation ratios compress compared to variance ratios (since SD is a square root) — always recompute the ratio from SDs rather than reusing the variance ratio.",
+        "TRUE — Expected score A = 28×(5×0.42 −2×0.58) = 26.32. Expected score B = 28×(5×0.91 −2×0.09) = 122.36. The difference is 96.04, more than 95.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: For a linear scoring scheme, expected score simplifies to n×(reward×p −penalty×(1−p)) — compute this directly instead of finding E[X] and adjusting afterward."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 51
+    },
+    {
+      "id": "math-13-52",
+      "case_id": "MATH 13.52",
+      "title": "Vaccine Antibody Classification",
+      "context": "A vaccine trial has lab technicians classify antibody responses across 35 samples. Tech A is a first-year analyst (p = 0.38 of correctly classifying a sample). Tech B is a lead analyst (p = 0.94). To pass certification, a technician must correctly classify at least 30 of the 35 samples. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Tech A's probability of correctly classifying all 35 samples is less than 0.0000000000002%.",
+        "The probability that Tech A's correct-classification count falls between 22 and 27 (inclusive) equals the sum, from x = 22 to 27, of the binomial probabilities P(X = x), using n = 35 and p = 0.38.",
+        "Tech B is more than 150,000,000 times as likely as Tech A to pass certification (≥30 of 35).",
+        "Tech A is more than 3 times as likely as Tech B to land in the 22–27 range.",
+        "Tech A's standard deviation in number of correct classifications is more than double Tech B's standard deviation.",
+        "Tech B's expected score exceeds Tech A's expected score by more than 140 points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — P(35/35) for Tech A = $0.38^{35}$ ≈ 0.00000000000020%, which is below 0.0000000000002%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For an extreme low-p, high-n perfect-run requirement, expect probabilities far into the sub- trillionth-of-a-percent range — verify with scientific notation.",
+        "TRUE — \"Between 22 and 27 inclusive\" is the sum of the individual probabilities for 22 through 27 correct classifications.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The range-sum translation never changes: 'between a and b inclusive' is always Σ from a to b.",
+        "FALSE — $P(X \\ge 30)$ for B ≈ 98.32% and for A ≈ 0.00000081%. The ratio is about 120,691,097, which does not clear 150,000,000.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For ratios in the hundreds of millions, compute the exact division — a large number can still fall short of a stated round threshold.",
+        "FALSE — P(22≤X≤27) for A ≈ 0.250% and for B ≈ 0.0914%. The ratio A/B ≈ 2.74, which does not clear 3.\n\nTip: A ratio 'close to' a round number like 3 needs the full partial-sum computation on both sides, not just a comparison of the raw percentages.",
+        "TRUE — SD(A) = √8.246 ≈ 2.872. SD(B) = √1.974 ≈ 1.405. The ratio is about 2.044, more than double.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: Even when a variance ratio looks large, confirm the SD ratio separately — square-rooting shrinks the gap, and 2.04 still clears a 'double' threshold here.",
+        "FALSE — Expected score A = 35×(5×0.38 −2×0.62) = 23.1. Expected score B = 35×(5×0.94 −2×0.06) = 160.3. The difference is 137.2, which does not clear 140.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: For a linear scoring scheme, compute n×(reward×p −penalty×(1−p)) exactly for both people before subtracting — 137.2 falls just short of a 140-point threshold."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 52
+    },
+    {
+      "id": "math-13-53",
+      "case_id": "MATH 13.53",
+      "title": "Assembly Line Defect Inspection",
+      "context": "An assembly line has workers inspect 24 units per shift for hidden defects. Worker A is mid-training (p = 0.47 of correctly catching a defect). Worker B is a certified inspector (p = 0.89). To pass the shift audit, a worker must correctly catch at least 20 of the 24 defects. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Worker B's probability of a flawless shift (all 24 defects correctly caught) is greater than 6%.",
+        "The probability that Worker A's correct-catch count falls between 16 and 19 (inclusive) equals the sum, from x = 16 to 19, of the binomial probabilities P(X = x), using n = 24 and p = 0.47.",
+        "Worker B is more than 3,200 times as likely as Worker A to pass the shift audit (≥20 of 24).",
+        "Worker A is less than one-third as likely as Worker B to land in the 16–19 range.",
+        "Worker A's standard deviation in number of correct catches is more than 1.6 times Worker B's standard deviation.",
+        "Worker B's expected score exceeds Worker A's expected score by more than 70 points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — P(24/24) for Worker B = $0.89^{24}$ ≈ 6.10%, which is above 6%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For a perfect-run probability sitting just above a round threshold, compute p^n to a few significant figures rather than estimating.",
+        "TRUE — \"Between 16 and 19 inclusive\" is the sum of the individual probabilities for 16, 17, 18, and 19 correct catches.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: Range-sum statements are wording checks: match 'between a and b' to Σ from a to b, independent of p.",
+        "FALSE — $P(X \\ge 20)$ for B ≈ 88.35% and for A ≈ 0.0276%. The ratio is about 3,198, which does not clear 3,200.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: Ratios that look like they obviously clear a round number can still fall just short — divide the exact percentages rather than rounding the ratio up.",
+        "FALSE — P(16≤X≤19) for A ≈ 4.158% and for B ≈ 11.580%. The ratio A/B ≈ 0.359, which is more than one-third (0.333), so A is NOT less than one-third as likely.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: 'Less than one-third as likely' means the ratio must fall under 0.333 — a ratio of 0.359 is close but fails that specific bar.",
+        "FALSE — SD(A) = √5.9784 ≈ 2.445. SD(B) = √2.3496 ≈ 1.533. The ratio is about 1.595, which does not clear 1.6.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: When an SD ratio sits just under a stated multiple, recompute both square roots to at least 3 decimal places before deciding.",
+        "TRUE — Expected score A = 24×(5×0.47 −2×0.53) = 30.96. Expected score B = 24×(5×0.89 −2×0.11) = 101.52. The difference is 70.56, more than 70.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: Compute n×(reward×p −penalty×(1−p)) for each person directly — the difference of 70.56 clears a 70-point threshold by a narrow margin."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 53
+    },
+    {
+      "id": "math-13-54",
+      "case_id": "MATH 13.54",
+      "title": "Essay Grading Accuracy",
+      "context": "A testing agency has graders score 20 essays against a reference key. Grader A is newly trained (p = 0.52 of matching the reference key on a given essay). Grader B is a veteran grader (p = 0.90). To pass review, a grader must match the reference key on at least 17 of the 20 essays. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Grader A's probability of matching the reference key on all 20 essays is less than 0.0002%.",
+        "The probability that Grader A's matching-essay count falls between 14 and 16 (inclusive) equals the sum, from x = 14 to 16, of the binomial probabilities P(X = x), using n = 20 and p = 0.52.",
+        "Grader B is more than 400 times as likely as Grader A to pass review (≥17 of 20).",
+        "Grader A is more than 60% as likely as Grader B to land in the 14–16 range.",
+        "Grader A's standard deviation in number of matching essays is more than 1.65 times Grader B's standard deviation.",
+        "Grader B's expected score exceeds Grader A's expected score by more than 55 points."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — P(20/20) for Grader A = $0.52^{20}$ ≈ 0.000209%, which is above 0.0002%, not below it.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: When a perfect-run probability sits just above a small round threshold, compute p^n precisely rather than rounding early.",
+        "TRUE — \"Between 14 and 16 inclusive\" is the sum of the individual probabilities for 14, 15, and 16 matching essays.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The range-sum translation is a definitional check: Σ from a to b, regardless of the underlying p.",
+        "FALSE — $P(X \\ge 17)$ for B ≈ 86.70% and for A ≈ 0.225%. The ratio is about 385, which does not clear 400.\n\nTip: A ratio 'close to' 400 still needs exact division of the two percentages — 385 falls short.",
+        "TRUE — P(14≤X≤16) for A ≈ 7.917% and for B ≈ 13.057%. The ratio A/B ≈ 0.606, which clears 0.60.\n\nTip: For 'more than X% as likely' claims, compute the ratio A/B directly and compare it to the stated fraction rather than eyeballing the raw percentages.",
+        "TRUE — SD(A) = √4.992 ≈ 2.234. SD(B) = √1.80 ≈ 1.342. The ratio is about 1.665, which clears 1.65.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: SD ratios close to a stated multiple require full decimal precision on both square roots before comparing.",
+        "FALSE — Expected score A = 20×(5×0.52 −2×0.48) = 32.8. Expected score B = 20×(5×0.90 −2×0.10) = 86.0. The difference is 53.2, which does not clear 55.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: Compute the linear scoring expectation exactly for both people — 53.2 falls just short of a 55- point threshold."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 54
+    },
+    {
+      "id": "math-13-55",
+      "case_id": "MATH 13.55",
+      "title": "Air Traffic Control Simulator",
+      "context": "An air traffic control simulator runs 32 scenarios per certification attempt. Controller A is a trainee (p = 0.44 of correctly resolving a scenario). Controller B is a certified controller (p = 0.92). To pass certification, a controller must correctly resolve at least 27 of the 32 scenarios. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Controller A's probability of correctly resolving all 32 scenarios is less than 0.00000000038%.",
+        "The probability that Controller A's correct-resolution count falls between 20 and 24 (inclusive) equals the sum, from x = 20 to 24, of the binomial probabilities P(X = x), using n = 32 and p = 0.44.",
+        "Controller B is more than 320,000 times as likely as Controller A to pass certification (≥27 of 32).",
+        "Controller A is more than 9 times as likely as Controller B to land in the 20–24 range.",
+        "Controller A's standard deviation in number of correct resolutions is more than 1.8 times Controller B's standard deviation.",
+        "Controller B's expected score exceeds Controller A's expected score by more than 105 points."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "FALSE — P(32/32) for Controller A = $0.44^{32}$ ≈ 0.00000000039%, which is above 0.00000000038%.\n\nRecall the perfect-run formula:\n\n$$P(X=n)=p^{n}$$\n\nTip: For extremely small perfect-run probabilities, compare in scientific notation to enough significant figures — the comparison can flip on the third or fourth digit.",
+        "TRUE — \"Between 20 and 24 inclusive\" is the sum of the individual probabilities for 20 through 24 correct resolutions.\n\nKey formula:\n\n$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\nTip: The range-sum translation never changes: 'between a and b inclusive' is always Σ from a to b.",
+        "FALSE — $P(X \\ge 27)$ for B ≈ 96.10% and for A ≈ 0.000303%. The ratio is about 317,171, which does not clear 320,000.\n\nTip: Even ratios in the hundreds of thousands need exact division — 317,171 falls just short of a 320,000 threshold.",
+        "FALSE — P(20≤X≤24) for A ≈ 2.706% and for B ≈ 0.307%. The ratio A/B ≈ 8.81, which does not clear 9.\n\nTip: A ratio 'close to' a round number like 9 needs the full partial-sum computation on both sides before dividing.",
+        "TRUE — SD(A) = √7.8848 ≈ 2.808. SD(B) = √2.3552 ≈ 1.535. The ratio is about 1.830, which clears 1.8.\n\nKey formula:\n\n$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$\n\nTip: When an SD ratio sits just above a stated multiple, recompute both square roots to at least 3 decimal places to confirm.",
+        "TRUE — Expected score A = 32×(5×0.44 −2×0.56) = 34.56. Expected score B = 32×(5×0.92 −2×0.08) = 142.08. The difference is 107.52, more than 105.\n\nKey formula:\n\n$$E[X]=np$$\n\nTip: Compute n×(reward×p −penalty×(1−p)) for each person directly — the difference of 107.52 clears a 105-point threshold."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 55
+    }
+  ]
+}

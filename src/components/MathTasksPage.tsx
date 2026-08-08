@@ -551,14 +551,15 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   ) : (
                     <div className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
                       <p>
-                        BBE format: mark each of the five statements independently as True or
-                        False. The number of true statements varies by case.
+                        BBE format: mark each statement independently as True or False. Most
+                        tasks have five statements (A–E); a few advanced tasks use six (A–F).
+                        The number of true statements varies by case.
                       </p>
                       <TheoryToolkit chapter={activeChapter} />
                       <p>
                         After you check your answers, tap{" "}
                         <span className="font-semibold text-primary">Explanation</span> to open
-                        the full worked solution for all five statements here.
+                        the full worked solution for every statement here.
                       </p>
                     </div>
                   )}
@@ -613,6 +614,7 @@ function DifficultyPill({ level, active }: { level: string; active?: boolean }) 
 
 /** Light markdown (**bold**, *italic*) plus KaTeX via FlashcardMath. */
 function MathProse({ text, className }: { text: string; className?: string }) {
+  // Keep $$...$$ blocks intact (they may contain newlines for aligned formulas).
   const paragraphs = text.split(/\n\n+/);
   return (
     <div className={cn("space-y-2.5", className)}>
@@ -710,7 +712,7 @@ function AllExplanationsPanel({
   index: number;
   onClose: () => void;
 }) {
-  const letters = "ABCDE";
+  const letters = "ABCDEF";
   const body = [
     task.solution_overview?.trim() ?? "",
     "",
@@ -719,7 +721,7 @@ function AllExplanationsPanel({
       if (expl) return [expl, ""];
       const verdict = task.answer_key[i] ? "correct" : "false";
       return [
-        `**${letters[i]})** ${task.statements[i]} *(${verdict})*`,
+        `**${letters[i] ?? String(i + 1)})** ${task.statements[i]} *(${verdict})*`,
         "",
       ];
     }),
