@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { BookOpen, Target, AlertTriangle } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
+import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -12,6 +13,11 @@ type Props = {
 };
 
 type TocItem = { id: string; label: string };
+type Segment =
+  | { kind: "md"; text: string }
+  | { kind: "figure"; id: string; caption: string };
+
+const FIGURE_RE = /\[\[FIGURE:([a-z0-9-]+)(?:\|([^\]]*))?\]\]/gi;
 
 function slugify(text: string): string {
   return text
@@ -33,10 +39,114 @@ function extractToc(markdown: string): TocItem[] {
   return items;
 }
 
+function segmentTheory(markdown: string): Segment[] {
+  const segments: Segment[] = [];
+  let last = 0;
+  const re = new RegExp(FIGURE_RE.source, "gi");
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(markdown))) {
+    const before = markdown.slice(last, m.index).trim();
+    if (before) segments.push({ kind: "md", text: before });
+    segments.push({
+      kind: "figure",
+      id: m[1]!,
+      caption: (m[2] || "").trim(),
+    });
+    last = m.index + m[0].length;
+  }
+  const rest = markdown.slice(last).trim();
+  if (rest) segments.push({ kind: "md", text: rest });
+  return segments;
+}
+
+function MdBlock({ text }: { text: string }) {
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={{
+        h1: ({ children }) => (
+          <h1 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            {children}
+          </h1>
+        ),
+        h2: ({ children }) => {
+          const label = String(children);
+          const id = slugify(label);
+          return (
+            <h2
+              id={id}
+              className="mb-3 mt-10 scroll-mt-4 border-b border-border/70 pb-2 font-display text-xl font-bold text-foreground first:mt-0"
+            >
+              {children}
+            </h2>
+          );
+        },
+        h3: ({ children }) => {
+          const label = String(children);
+          const id = slugify(label);
+          return (
+            <h3 id={id} className="mb-2 mt-8 scroll-mt-4 text-lg font-bold text-foreground">
+              {children}
+            </h3>
+          );
+        },
+        p: ({ children }) => (
+          <p className="mb-4 text-[15px] leading-7 text-foreground/95 sm:text-base sm:leading-7">{children}</p>
+        ),
+        strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
+        em: ({ children }) => <em className="text-foreground/90">{children}</em>,
+        ul: ({ children }) => (
+          <ul className="mb-4 list-disc space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">{children}</ul>
+        ),
+        ol: ({ children }) => (
+          <ol className="mb-4 list-decimal space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">{children}</ol>
+        ),
+        li: ({ children }) => <li className="pl-0.5">{children}</li>,
+        blockquote: ({ children }) => (
+          <blockquote className="mb-5 border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
+            {children}
+          </blockquote>
+        ),
+        table: ({ children }) => (
+          <div className="my-5 w-full overflow-x-auto border border-border bg-white">
+            <table className="w-full min-w-[20rem] border-collapse text-[13px] sm:text-sm">{children}</table>
+          </div>
+        ),
+        thead: ({ children }) => <thead className="bg-primary text-primary-foreground">{children}</thead>,
+        tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
+        tr: ({ children }) => <tr className="border-b border-border/80 last:border-0">{children}</tr>,
+        th: ({ children }) => (
+          <th className="whitespace-nowrap px-3 py-2.5 text-left align-bottom font-semibold">{children}</th>
+        ),
+        td: ({ children }) => {
+          const text = String(children ?? "");
+          const numeric = /^[\d.,€$%\s×x~≈+\-−–]+$/.test(text.trim()) && text.trim().length > 0;
+          const total = /total/i.test(text);
+          return (
+            <td
+              className={cn(
+                "border-r border-border/50 px-3 py-2.5 align-top leading-snug text-foreground last:border-r-0",
+                numeric && "whitespace-nowrap text-right tabular-nums",
+                total && "font-semibold",
+              )}
+            >
+              {children}
+            </td>
+          );
+        },
+        hr: () => <hr className="my-8 border-border" />,
+      }}
+    >
+      {text}
+    </ReactMarkdown>
+  );
+}
+
 export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
   const theory = getEconomicsCourseTheory(chapter);
   const markdown = theory?.markdown ?? "";
   const toc = useMemo(() => extractToc(markdown), [markdown]);
+  const segments = useMemo(() => segmentTheory(markdown), [markdown]);
   const [progress, setProgress] = useState(0);
   const [activeId, setActiveId] = useState<string>("");
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -69,6 +179,24 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     if (!el || !node) return;
     el.scrollTo({ top: node.offsetTop - 8, behavior: "smooth" });
   };
+
+  let body: ReactNode = null;
+  if (!markdown) {
+    body = (
+      <div className="flex w-full items-start gap-2 border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
+        <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+        <div className="font-semibold">Theory for this chapter isn&apos;t available yet.</div>
+      </div>
+    );
+  } else {
+    body = segments.map((seg, i) =>
+      seg.kind === "figure" ? (
+        <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />
+      ) : (
+        <MdBlock key={`m-${i}`} text={seg.text} />
+      ),
+    );
+  }
 
   return (
     <div className="rounded-2xl border border-border bg-card shadow-sm">
@@ -122,120 +250,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
         onScroll={onScroll}
         className="relative max-h-[calc(100vh-11rem)] overflow-y-auto bg-[oklch(0.985_0.005_75)]"
       >
-        <article className="mx-auto max-w-3xl px-4 py-8 sm:px-8 sm:py-10">
-          {!markdown && (
-            <div className="flex w-full items-start gap-2 rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
-              <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
-              <div className="font-semibold">Theory for this chapter isn&apos;t available yet.</div>
-            </div>
-          )}
-
-          {markdown && (
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              components={{
-                h1: ({ children }) => (
-                  <h1 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                    {children}
-                  </h1>
-                ),
-                h2: ({ children }) => {
-                  const label = String(children);
-                  const id = slugify(label);
-                  return (
-                    <h2
-                      id={id}
-                      className="mb-3 mt-10 scroll-mt-4 border-b border-border/70 pb-2 font-display text-xl font-bold text-foreground first:mt-0"
-                    >
-                      {children}
-                    </h2>
-                  );
-                },
-                h3: ({ children }) => {
-                  const label = String(children);
-                  const id = slugify(label);
-                  return (
-                    <h3 id={id} className="mb-2 mt-8 scroll-mt-4 text-lg font-bold text-foreground">
-                      {children}
-                    </h3>
-                  );
-                },
-                p: ({ children }) => (
-                  <p className="mb-4 text-[15px] leading-7 text-foreground/95 sm:text-base sm:leading-7">
-                    {children}
-                  </p>
-                ),
-                strong: ({ children }) => (
-                  <strong className="font-semibold text-foreground">{children}</strong>
-                ),
-                em: ({ children }) => <em className="text-foreground/90">{children}</em>,
-                ul: ({ children }) => (
-                  <ul className="mb-4 list-disc space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">
-                    {children}
-                  </ul>
-                ),
-                ol: ({ children }) => (
-                  <ol className="mb-4 list-decimal space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">
-                    {children}
-                  </ol>
-                ),
-                li: ({ children }) => <li className="pl-0.5">{children}</li>,
-                blockquote: ({ children }) => (
-                  <blockquote className="mb-5 border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
-                    {children}
-                  </blockquote>
-                ),
-                img: ({ src, alt }) => (
-                  <img
-                    src={src}
-                    alt={alt || ""}
-                    loading="lazy"
-                    className="my-5 block h-auto w-full border border-border bg-white"
-                  />
-                ),
-                table: ({ children }) => (
-                  <div className="my-5 w-full overflow-x-auto border border-border bg-white">
-                    <table className="w-full min-w-[20rem] border-collapse text-[13px] sm:text-sm">
-                      {children}
-                    </table>
-                  </div>
-                ),
-                thead: ({ children }) => (
-                  <thead className="bg-primary text-primary-foreground">{children}</thead>
-                ),
-                tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
-                tr: ({ children }) => (
-                  <tr className="border-b border-border/80 last:border-0">{children}</tr>
-                ),
-                th: ({ children }) => (
-                  <th className="whitespace-nowrap px-3 py-2.5 text-left align-bottom font-semibold">
-                    {children}
-                  </th>
-                ),
-                td: ({ children }) => {
-                  const text = String(children ?? "");
-                  const numeric =
-                    /^[\d.,€$%\s×x~≈+\-−–]+$/.test(text.trim()) && text.trim().length > 0;
-                  const total = /total/i.test(text);
-                  return (
-                    <td
-                      className={cn(
-                        "border-r border-border/50 px-3 py-2.5 align-top leading-snug text-foreground last:border-r-0",
-                        numeric && "whitespace-nowrap text-right tabular-nums",
-                        total && "font-semibold",
-                      )}
-                    >
-                      {children}
-                    </td>
-                  );
-                },
-                hr: () => <hr className="my-8 border-border" />,
-              }}
-            >
-              {markdown}
-            </ReactMarkdown>
-          )}
-        </article>
+        <article className="mx-auto max-w-3xl px-4 py-8 sm:px-8 sm:py-10">{body}</article>
       </div>
     </div>
   );

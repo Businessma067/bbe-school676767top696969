@@ -1,6 +1,6 @@
 /**
  * Economics Full Course theory (chapters 2–6) for TheoryReader.
- * Markdown + embedded figure PNGs from `npm run textbook:theory`.
+ * Markdown from `npm run textbook:theory`; figures are live React/SVG via [[FIGURE:id|caption]].
  */
 
 import ch2 from "./economics-theory/ch2.md?raw";

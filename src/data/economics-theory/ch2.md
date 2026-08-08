@@ -67,9 +67,7 @@ On Friday workers receive wages from firms, and on Saturday those same people sp
 
 **Circular flow** — Households mainly offer labour and receive wages; businesses offer goods and services and receive payment. Government levies taxes and provides goods, services, transfers, and subsidies. Together these streams form a **circular flow** of goods, services, and money.
 
-![Circular flow: households, businesses, and government exchanging labour, goods/services, taxes, transfers, and money payments.](/bbe-theory/figs/circular-flow.png)
-
-*Circular flow: households, businesses, and government exchanging labour, goods/services, taxes, transfers, and money payments.*
+[[FIGURE:circular-flow|Circular flow: households, businesses, and government exchanging labour, goods/services, taxes, transfers, and money payments.]]
 
 Money beats pure **barter** because without it trade needs a **double coincidence of wants** — each party must want what the other offers at the same time — whereas money works as a **medium of exchange** that adds flexibility, a **unit of account** for expressing value, and a store of value for holding purchasing power over time, and those functions work best when money's value stays reasonably stable. When the general price level rises through inflation, the same money buys fewer goods and services so purchasing power falls, and price indexes measure that rise; very high inflation erodes trust in money as a store of value and pushes people to spend it quickly, while low, stable inflation is more compatible with money doing its job.
 
@@ -89,9 +87,7 @@ Imagine a tonne of steel and three ways to allocate it. In one system private fi
 
 In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services.
 
-![Spectrum of economic systems: planned coordination at one end, freer market coordination at the other, with mixed systems in between.](/bbe-theory/figs/economic-systems.png)
-
-*Spectrum of economic systems: planned coordination at one end, freer market coordination at the other, with mixed systems in between.*
+[[FIGURE:economic-systems|Spectrum of economic systems: planned coordination at one end, freer market coordination at the other, with mixed systems in between.]]
 
 *Comparing economic systems by decision rights*
 | Question | Market-leaning | Planned-leaning | Mixed (typical modern case) |
@@ -117,23 +113,17 @@ Parents message tutors for evening maths help, and at low hourly rates many fami
 
 The **supply curve** slopes up because higher prices pull more sellers in and encourage more hours from existing sellers, while **opportunity cost** explains the floor: if tutoring paid less than a tutor's next-best use of time, skilled people leave. Rising **marginal cost** — the extra cost of one more unit — also pushes firms to need a higher price before expanding output.
 
-![Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping.](/bbe-theory/figs/supply-curve.png)
-
-*Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping.*
+[[FIGURE:supply-curve|Supply curve for online maths tutoring (illustrative): price (euros per hour) on the vertical axis, quantity (hours per week) on the horizontal axis — upward sloping.]]
 
 The **demand curve** slopes down because as price rises more buyers cannot or will not pay, cutting hours or switching to **substitutes** such as group classes, apps, or self-study, whereas as price falls quantity demanded rises. Price and **quantity demanded** move in opposite directions when other things are held constant.
 
-![Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping.](/bbe-theory/figs/demand-curve.png)
-
-*Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping.*
+[[FIGURE:demand-curve|Demand curve for online maths tutoring (illustrative): higher price, lower quantity demanded — downward sloping.]]
 
 > **Market equilibrium condition**  
 > Equilibrium: quantity demanded = quantity supplied at the equilibrium (market) price  
 > *At that price there is neither surplus (Qs > Qd) nor shortage (Qd > Qs).*
 
-![Supply and demand together: intersection is equilibrium price and quantity. Above it, surplus; below it, shortage.](/bbe-theory/figs/equilibrium.png)
-
-*Supply and demand together: intersection is equilibrium price and quantity. Above it, surplus; below it, shortage.*
+[[FIGURE:equilibrium|Supply and demand together: intersection is equilibrium price and quantity. Above it, surplus; below it, shortage.]]
 
 *Illustrative tutoring market schedule (original numbers)*
 | Price (euros/hour) | Quantity demanded (hours/week) | Quantity supplied (hours/week) | Market signal |

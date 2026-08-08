@@ -130,9 +130,7 @@ Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. 
 
 **Marketing mix** — A harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. Classically organised as the **four Ps**: product, price, place and promotion.
 
-![The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.](/bbe-theory/figs/marketing-mix.png)
-
-*The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.*
+[[FIGURE:marketing-mix|The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.]]
 
 The basic idea is simple to state and hard to execute: provide a suitable **product**, at a **price** customers will accept, available in a convenient **place**, supported by a clear **promotional** message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix.
 
@@ -142,9 +140,7 @@ Most firms offer more than one item. Similar items form a **product line**; seve
 
 **Product life cycle** — A theoretical model of stages in a product’s market life that differ in sales and profit: **introduction**, **growth**, **maturity** and **decline** (after development costs before launch).
 
-![Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.](/bbe-theory/figs/product-life-cycle.png)
-
-*Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.*
+[[FIGURE:product-life-cycle|Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.]]
 
 Before launch there are development costs and no sales. **Introduction** often starts in loss because promotion is heavy and prices may be set to attract trial among innovators and early adopters, with emphasis on market development. **Growth** brings faster sales into a widening mass market; average costs may fall with scale; profits usually appear and strengthen under a market-penetration emphasis. **Maturity** peaks sales in the mass market while growth slows and competition intensifies, so strategy becomes more defensive and profit peaks then comes under pressure. **Decline** sees falling sales and profits among loyal remainers, so efficiency or exit becomes central. Stage length varies: some staples linger in maturity for years; fads may fade within months.
 
@@ -158,9 +154,7 @@ Before launch there are development costs and no sales. **Introduction** often s
 
 **Boston Consulting Group (BCG) matrix** — A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **poor dogs**.
 
-![Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.](/bbe-theory/figs/bcg-matrix.png)
-
-*Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.*
+[[FIGURE:bcg-matrix|Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.]]
 
 **Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term).
 

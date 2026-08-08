@@ -37,9 +37,7 @@ Follow one metal through three businesses and the sector labels change even thou
 
 **Three-sector model** — The three-sector model sorts economic activity into **primary** (extraction of raw materials), **secondary** (manufacturing transformation into goods) and **tertiary** (services).
 
-![Economic sectors — primary extracts, secondary manufactures, tertiary serves. Follow the main activity of the business, not the story of the raw material alone.](/bbe-theory/figs/economic-sectors.png)
-
-*Economic sectors — primary extracts, secondary manufactures, tertiary serves. Follow the main activity of the business, not the story of the raw material alone.*
+[[FIGURE:economic-sectors|Economic sectors — primary extracts, secondary manufactures, tertiary serves. Follow the main activity of the business, not the story of the raw material alone.]]
 
 To assign a sector, ask what the business mainly does day to day. If it extracts or harvests from nature, it is **primary** — farming, fishing, mining, forestry. If it transforms materials into goods, it is **secondary** — cars, ships, machinery, circuit boards, clothing, computers. If it provides services such as distribution, banking, insurance, coaching, technical support or retail, it is **tertiary**. A retailer of packaged food is **tertiary** even though the food began on a farm, because the firm’s main operation is distribution and service rather than extraction or fabrication.
 
@@ -122,9 +120,7 @@ At MeadowMill, which processes dairy for supermarket buyers, owners want faster 
 
 **Shareholder** — A shareholder is an owner of **shares** in a corporation — a specific ownership stake. Shareholders are stakeholders, but **not all stakeholders are shareholders**. Employees, customers, suppliers, neighbours and regulators can have strong interests without owning shares.
 
-![Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it.](/bbe-theory/figs/stakeholder-map.png)
-
-*Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it.*
+[[FIGURE:stakeholder-map|Stakeholder map — the business at the centre, with owners/shareholders, managers, employees, customers, suppliers, government, communities and the natural environment around it.]]
 
 **Internal stakeholders** operate inside the organisation — owners and shareholders, managers and employees — while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners.
 

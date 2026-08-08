@@ -73,9 +73,8 @@ function blockToMd(b) {
     const id = mdInline(b.id || "");
     const caption = mdInline(b.caption || "").replace(/^(Figure|Table)\s*\d*\s*[.:—-]?\s*/i, "");
     if (!id) return caption ? `*${caption}*\n` : "";
-    const alt = caption || id;
-    // Standalone figure PNGs from textbook/export-figures.py
-    return `![${alt}](/bbe-theory/figs/${id}.png)\n\n*${alt}*\n`;
+    // Live site figure marker — TheoryReader renders React/SVG (not PNG)
+    return `[[FIGURE:${id}|${caption || id}]]\n`;
   }
   if (t === "bullets" || t === "takeaways") {
     return (b.items || []).map((item) => `- ${mdInline(item)}`).join("\n") + "\n";
