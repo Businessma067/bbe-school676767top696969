@@ -55,7 +55,7 @@ function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "my-4 block overflow-x-auto py-1 text-center [&_.katex-display]:my-0"
+                  ? "my-0 block w-full overflow-x-auto py-1 text-center [&_.katex-display]:my-0 [&_.katex-display]:overflow-x-auto"
                   : "mx-0.5 inline-block align-baseline"
               }
               dangerouslySetInnerHTML={{ __html: html }}

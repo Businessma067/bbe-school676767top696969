@@ -10,7 +10,7 @@
       "The South depot currently holds 240 crates.",
       "If 30 crates were moved from South to North instead, North would then hold 390 crates.",
       "The difference between the two depots today is 120 crates.",
-      "Moving 50 crates from North to South (as the memo describes) would leave both depots holding 310 crates each."
+      "Moving 50 crates from North to South would leave both depots holding 310 crates each."
     ],
     "answer_key": [
       true,
@@ -106,7 +106,7 @@
       "A wrap costs $5.00.",
       "Receipt A's food subtotal, before the $8.00 delivery fee is added, is $62.00.",
       "Receipt B's total, including the $8.00 delivery fee, is $74.00.",
-      "A pickup order (no delivery fee) of 5 sandwiches and 5 wraps would cost $60.00."
+      "A pickup order of 5 sandwiches and 5 wraps would cost $60.00."
     ],
     "answer_key": [
       true,
@@ -1351,9 +1351,9 @@
     "tables_markdown": "",
     "statements": [
       "If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed $6.00.",
-      "Employee B's overtime pay (the portion earned specifically for hours beyond 40) is more than 40% of his total gross pay.",
+      "Employee B's overtime pay is more than 40% of his total gross pay.",
       "The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.",
-      "If the overtime premium were eliminated (overtime paid at the base rate) but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.",
+      "If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.",
       "The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765)."
     ],
     "answer_key": [
@@ -1386,7 +1386,7 @@
       "The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.",
       "Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs ($750.00 + $710.00).",
       "If wire fencing rose by $2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.",
-      "Project 3's cost per total meter installed (cost ÷ total meters of both materials) is higher than Project 1's cost per total meter installed."
+      "Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed."
     ],
     "answer_key": [
       true,
@@ -1450,7 +1450,7 @@
       "Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.",
       "Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.",
       "Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of $53,100 would have been understated by more than $3,500.",
-      "Season 2's profit per tonne of total output (total profit ÷ total tonnage) exceeds Season 1's profit per tonne of total output."
+      "Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output."
     ],
     "answer_key": [
       false,
@@ -1480,7 +1480,7 @@
     "statements": [
       "Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.",
       "The current age gap (x - y) is more than 45% of the elder employee's current age.",
-      "Exactly 4.5 years from now (halfway to the nine-year mark), the elder employee will be more than 2.5 times the younger employee's age.",
+      "Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.",
       "Ten years ago, the sum of their ages was less than 40.",
       "There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age."
     ],
@@ -1512,7 +1512,7 @@
     "statements": [
       "If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual $1,350.60.",
       "The dollar markup on Product B is more than 80% of the dollar markup on Product A.",
-      "Order 1's total retail markup (retail total minus wholesale cost total) exceeds $150.00.",
+      "Order 1's total retail markup exceeds $150.00.",
       "If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than $280.00.",
       "The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A."
     ],
@@ -1545,7 +1545,7 @@
       "If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.",
       "The Ravens earned more than 45% of their total points from draws alone.",
       "Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.",
-      "The Falcons' win-to-draw point contribution ratio (points from wins ÷ points from draws) exceeds 15.",
+      "The Falcons' win-to-draw point contribution ratio exceeds 15.",
       "A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total."
     ],
     "answer_key": [
@@ -1609,7 +1609,7 @@
       "A client with AUM of $850,000 would pay a fee representing less than 1.75% of their AUM.",
       "The flat retainer accounts for more than 10% of Client 2's total fee.",
       "If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM $750,000) would decrease compared to its actual amount.",
-      "The percentage-point difference in effective fee rate (total fee ÷ AUM) between Client 1 and Client 2 is more than 0.05 percentage points.",
+      "The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.",
       "A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee."
     ],
     "answer_key": [
@@ -1670,9 +1670,9 @@
     "context": "Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall. Job 1 needed 200 usable studs + 150 usable sheets, invoice $7,164.00. Job 2 needed 350 usable studs + 175 usable sheets, invoice $8,946.00.",
     "tables_markdown": "",
     "statements": [
-      "The total waste-related cost on Invoice 1 (the cost of the studs and drywall beyond the usable amounts) exceeds $700.00.",
+      "The total waste-related cost on Invoice 1 exceeds $700.00.",
       "If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than $150.00.",
-      "Job 2's usable-material cost (studs and drywall priced at their per-unit rates, using only the 350 usable studs and 175 usable sheets, ignoring waste) is more than 90% of Invoice 2's actual as-ordered total.",
+      "Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.",
       "The drywall price (y) is more than 8 times the stud price (x).",
       "Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total."
     ],
@@ -1769,7 +1769,7 @@
       "Truck fuel consumption is more than 75% higher than Van fuel consumption.",
       "Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.",
       "If Route 1's Van distance had instead been 900 km (Truck unchanged at 850 km), total fuel would have exceeded 430 L.",
-      "Route 2's fleet-wide average fuel efficiency (total fuel ÷ total distance, in L/100km) is closer to the Van's individual rate than to the Truck's individual rate.",
+      "Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.",
       "Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance (850 + 620 = 1,470 km) at its own rate."
     ],
     "answer_key": [
@@ -1799,7 +1799,7 @@
     "tables_markdown": "",
     "statements": [
       "The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.",
-      "Under the current allocation, the blended rate (total return ÷ total fund) is less than 6%.",
+      "Under the current allocation, the blended rate is less than 6%.",
       "If the entire $45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns ($2,646.00 + $2,754.00 = $5,400.00).",
       "A 50/50 split ($22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.",
       "The bond rate is more than 80% of the equity rate."
@@ -1864,7 +1864,7 @@
     "statements": [
       "By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.",
       "If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.",
-      "The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth : Species B's growth) is greater than 2.5 : 1.",
+      "The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth: Species B's growth) is greater than 2.5: 1.",
       "At some point between Year 2 and Year 6, the two species had equal populations.",
       "Species A overtakes Species B in total population size before Year 5."
     ],

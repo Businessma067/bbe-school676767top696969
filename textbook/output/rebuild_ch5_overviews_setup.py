@@ -261,7 +261,102 @@ def format_solution_steps(solution: str) -> str:
             merged[-1] = merged[-1] + " " + s
         else:
             merged.append(s)
-    return "\n\n".join(f"**{i}.** {mathify(s)}" for i, s in enumerate(merged, 1))
+    return "\n\n".join(
+        polish_numbered_step(f"**{i}.** {mathify(s)}") for i, s in enumerate(merged, 1)
+    )
+
+
+def polish_numbered_step(block: str) -> str:
+    """Turn '**2.** prose: $eq$, so $x=…$' into screenshot-style title + display math."""
+    text = block.strip()
+    m2 = re.match(r"^\*\*(\d+)\.\*\*\s*(.*)$", text, flags=re.S)
+    m1 = re.match(r"^\*\*(\d+)\.\s+([^*]+?)\.\*\*\s*(.*)$", text, flags=re.S)
+    if m1:
+        n, title_seed, rest = m1.group(1), m1.group(2).strip(), (m1.group(3) or "").strip()
+        body = rest if rest else ""
+        if not body:
+            return text
+    elif m2:
+        n, body = m2.group(1), m2.group(2).strip()
+        title_seed = ""
+    else:
+        return text
+
+    if "$$" in body:
+        return text
+
+    parts = re.split(r"(\$[^$\n]+\$)", body)
+    title_bits: list[str] = []
+    display_eqs: list[str] = []
+    trailing: list[str] = []
+    seen_eq = False
+    for p in parts:
+        if not p:
+            continue
+        if p.startswith("$") and p.endswith("$"):
+            inner = p[1:-1].strip().replace("\u2212", "-")
+            if "=" in inner and re.search(r"[A-Za-z]", inner):
+                display_eqs.append(inner)
+                seen_eq = True
+                continue
+            (trailing if seen_eq else title_bits).append(p)
+            continue
+        (trailing if seen_eq else title_bits).append(p)
+
+    title = "".join(title_bits).strip()
+    title = re.sub(r"[:\s]+$", "", title).rstrip(".")
+    if title_seed and not title:
+        title = title_seed
+
+    trail = "".join(trailing).strip()
+    trail = re.sub(r"^[,;\s]+", "", trail)
+    # "… $eq1$ and $eq2$" → both display, drop conjunction
+    if display_eqs and re.fullmatch(r"and\s*\.?", trail, flags=re.I):
+        trail = ""
+    # "… $eq1$, so $eq2$" → keep conclusion inline
+    elif display_eqs and re.fullmatch(r"so\s*\.?", trail, flags=re.I):
+        last = display_eqs.pop()
+        trail = f"So ${last}$."
+    # "$y = 620 - 360$ = 260" → fold trailing "= 260" into the equation
+    elif display_eqs and re.match(r"^=\s*[+\-]?\d", trail):
+        display_eqs[-1] = f"{display_eqs[-1]} {trail.rstrip('.')}"
+        trail = ""
+    trail = re.sub(r"^(and|so)\s*\.\s*$", "", trail, flags=re.I).strip()
+    if trail.lower().startswith("so "):
+        trail = "So " + trail[3:]
+
+    if title and title.lower() in {"then", "so", "thus", "hence", "next"}:
+        title = "Find the remaining unknown"
+
+    if not display_eqs and not title_seed:
+        flat = body.strip()
+        sm = re.match(r"^(.+?[.!?])\s*(.*)$", flat, flags=re.S)
+        if sm and len(sm.group(1)) < 140:
+            t = sm.group(1).rstrip(".")
+            rest2 = sm.group(2).strip()
+            out = [f"**{n}. {t}.**"]
+            if rest2:
+                out += ["", rest2]
+            return "\n".join(out)
+        return f"**{n}.** {flat}"
+
+    if not display_eqs:
+        return text
+
+    out: list[str] = [f"**{n}. {title}.**" if title else f"**{n}.**"]
+    for eq in display_eqs:
+        out += ["", f"$$\n{eq}\n$$"]
+    if trail:
+        out += ["", trail]
+    return "\n".join(out)
+
+
+def polish_solve_section(solve: str) -> str:
+    if not solve.strip():
+        return solve
+    # Split on blank lines; polish each numbered step block
+    blocks = re.split(r"\n\s*\n", solve.strip())
+    return "\n\n".join(polish_numbered_step(b) for b in blocks)
 
 
 def build_overview(task: dict, given: str, old_overview: str) -> str:
@@ -309,10 +404,16 @@ def build_overview(task: dict, given: str, old_overview: str) -> str:
         "",
     ]
 
-    solve = secs["solve"] or format_solution_steps(task.get("solution") or "")
-    # normalize old "**Step N.**" headings toward sample "**N.** …"
-    if solve:
+    # Prefer a fresh Solve from the PDF solution text (avoids stale mangled $$ steps).
+    solve = format_solution_steps(task.get("solution") or "")
+    if not solve:
+        solve = secs["solve"] or ""
         solve = re.sub(r"\*\*Step\s+(\d+)\.\*\*", r"**\1.**", solve)
+        solve = polish_solve_section(solve)
+    # Drop orphan leftovers like "and ." / "So ." from aggressive eq lifting
+    solve = re.sub(r"\n\n(?:and|so)\s*\.\s*(?=\n|\Z)", "\n", solve, flags=re.I)
+    solve = re.sub(r"\n{3,}", "\n\n", solve).strip()
+    if solve:
         parts.append(solve)
     else:
         parts.append(

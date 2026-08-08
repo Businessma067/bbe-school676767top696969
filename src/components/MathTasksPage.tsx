@@ -590,7 +590,7 @@ function isSectionHeading(label: string): boolean {
 /** Numbered step titles: "1. Translate…" or bare "1." */
 function isStepLabel(label: string): boolean {
   const t = label.trim();
-  return /^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t) || /^[A-E]\)/.test(t);
+  return /^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t);
 }
 
 function isNoteLabel(label: string): boolean {
@@ -601,81 +601,194 @@ function classifyBoldLabel(label: string): "section" | "step" | "note" | "emphas
   const t = label.trim();
   if (isNoteLabel(t)) return "note";
   if (isSectionHeading(t)) return "section";
-  if (isStepLabel(t)) return "step";
+  if (isStepLabel(t) || /^[A-E]\)/.test(t)) return "step";
   return "emphasis";
+}
+
+function isDisplayMathPara(trimmed: string): boolean {
+  return /^\$\$[\s\S]+\$\$$/.test(trimmed) || /^\$[^$\n]+\$\s*$/.test(trimmed);
+}
+
+function isStepStartPara(trimmed: string): boolean {
+  return /^\*\*\d+\./.test(trimmed);
+}
+
+function isPartStartPara(trimmed: string): boolean {
+  const m = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
+  return !!m && classifyBoldLabel(m[1]) === "section";
 }
 
 /**
  * Tutorial prose matching the reference screenshots:
- * Inter body, bold Part / step titles, centered KaTeX, italic Note callouts.
+ * Inter body, bold Part / step titles, airy centered KaTeX, Note callouts.
+ * Spacing mirrors the samples: ~24–32px between steps, generous air around equations.
  */
 function MathProse({ text, className }: { text: string; className?: string }) {
-  const paragraphs = text.split(/\n\n+/);
+  const paragraphs = text.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
+
+  // Group: each numbered step keeps its following prose/math until the next step/part/claim.
+  type Chunk =
+    | { kind: "part"; title: string }
+    | { kind: "step"; paras: string[] }
+    | { kind: "note"; body: string }
+    | { kind: "claim"; text: string }
+    | { kind: "math"; text: string }
+    | { kind: "table"; text: string }
+    | { kind: "para"; text: string };
+
+  const chunks: Chunk[] = [];
+  let i = 0;
+  while (i < paragraphs.length) {
+    const p = paragraphs[i];
+
+    if (parseMarkdownTable(p)) {
+      chunks.push({ kind: "table", text: p });
+      i += 1;
+      continue;
+    }
+
+    if (isDisplayMathPara(p) && (chunks.length === 0 || chunks[chunks.length - 1].kind !== "step")) {
+      chunks.push({ kind: "math", text: p });
+      i += 1;
+      continue;
+    }
+
+    const headerOnly = p.match(/^\*\*([^*]+)\*\*\s*$/);
+    if (headerOnly && classifyBoldLabel(headerOnly[1]) === "section") {
+      chunks.push({ kind: "part", title: headerOnly[1].replace(/[.!:]+$/, "") });
+      i += 1;
+      continue;
+    }
+
+    const noteLead = p.match(/^\*\*(Note\.?)\*\*\s*([\s\S]*)$/i);
+    if (noteLead) {
+      chunks.push({ kind: "note", body: noteLead[2] });
+      i += 1;
+      continue;
+    }
+
+    if (/^\*\*[A-E]\)/.test(p)) {
+      chunks.push({ kind: "claim", text: p });
+      i += 1;
+      continue;
+    }
+
+    if (isStepStartPara(p)) {
+      const paras = [p];
+      i += 1;
+      while (i < paragraphs.length) {
+        const nxt = paragraphs[i];
+        if (
+          isStepStartPara(nxt) ||
+          isPartStartPara(nxt) ||
+          /^\*\*[A-E]\)/.test(nxt) ||
+          /^\*\*(Note\.?)\*\*/i.test(nxt)
+        ) {
+          break;
+        }
+        paras.push(nxt);
+        i += 1;
+      }
+      chunks.push({ kind: "step", paras });
+      continue;
+    }
+
+    chunks.push({ kind: "para", text: p });
+    i += 1;
+  }
+
   return (
     <div
       className={cn(
-        "space-y-4 font-expl text-[15px] leading-[1.55] text-[#222] sm:text-[15.5px]",
-        "[&_.katex]:text-[1.1em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto",
+        "font-expl text-[15px] leading-[1.6] text-[#1f1f1f] sm:text-[15.5px]",
+        "[&_.katex]:text-[1.12em]",
         className,
       )}
     >
-      {paragraphs.map((para, i) => {
-        const table = parseMarkdownTable(para);
-        if (table) {
-          return (
-            <div key={i} className="overflow-x-auto py-1 text-[14px]">
-              <MarkdownTable data={table} />
-            </div>
-          );
-        }
-
-        const trimmed = para.trim();
-
-        if (/^\$\$[\s\S]+\$\$$/.test(trimmed) || /^\$[^$\n]+\$\s*$/.test(trimmed)) {
-          return (
-            <div key={i} className="py-0.5">
-              <FlashcardMath text={trimmed} displayPrefer />
-            </div>
-          );
-        }
-
-        const headerOnly = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
-        if (headerOnly && classifyBoldLabel(headerOnly[1]) === "section") {
+      {chunks.map((chunk, idx) => {
+        if (chunk.kind === "part") {
           return (
             <h4
-              key={i}
-              className="mb-1 mt-7 text-[16px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[17px]"
+              key={idx}
+              className="mb-3 mt-9 text-[16.5px] font-bold leading-snug tracking-tight text-[#111] first:mt-0 sm:text-[17.5px]"
             >
-              {headerOnly[1].replace(/[.!:]+$/, "")}
+              {chunk.title}
             </h4>
           );
         }
 
-        const noteLead = trimmed.match(/^\*\*(Note\.?)\*\*\s*([\s\S]*)$/i);
-        if (noteLead) {
+        if (chunk.kind === "note") {
           return (
             <aside
-              key={i}
-              className="my-4 border-l-[3px] border-[#c8c8c8] py-1 pl-4 text-[14.5px] italic leading-[1.55] text-[#333]"
+              key={idx}
+              className="my-6 border-l-[3px] border-[#c4c4c4] py-1.5 pl-4 text-[14.5px] font-semibold italic leading-[1.6] text-[#2a2a2a]"
             >
-              <span className="font-bold not-italic">Note: </span>
-              <RichMathLine text={noteLead[2]} />
+              <span className="font-bold">Note: </span>
+              <RichMathLine text={chunk.body} />
             </aside>
           );
         }
 
-        // A–E claim line
-        if (/^\*\*[A-E]\)/.test(trimmed)) {
+        if (chunk.kind === "claim") {
           return (
-            <p key={i} className="m-0 mt-8 text-[15.5px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[16px]">
-              <RichMathLine text={trimmed} />
+            <p
+              key={idx}
+              className="mb-3 mt-10 text-[15.5px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[16.5px]"
+            >
+              <RichMathLine text={chunk.text} />
             </p>
           );
         }
 
+        if (chunk.kind === "math") {
+          return (
+            <div key={idx} className="my-5">
+              <FlashcardMath text={chunk.text} displayPrefer />
+            </div>
+          );
+        }
+
+        if (chunk.kind === "table") {
+          const table = parseMarkdownTable(chunk.text);
+          return table ? (
+            <div key={idx} className="my-5 overflow-x-auto text-[14px]">
+              <MarkdownTable data={table} />
+            </div>
+          ) : null;
+        }
+
+        if (chunk.kind === "step") {
+          return (
+            <div key={idx} className="mb-7 mt-6 first:mt-3">
+              {chunk.paras.map((para, j) => {
+                if (isDisplayMathPara(para)) {
+                  return (
+                    <div key={j} className="my-5">
+                      <FlashcardMath text={para} displayPrefer />
+                    </div>
+                  );
+                }
+                // First line of step = bold title (+ optional rest); hang following prose slightly
+                return (
+                  <p
+                    key={j}
+                    className={cn(
+                      "m-0 leading-[1.6]",
+                      j === 0 ? "mb-2" : "mt-3",
+                      j > 0 && "pl-0",
+                    )}
+                  >
+                    <RichMathLine text={para} />
+                  </p>
+                );
+              })}
+            </div>
+          );
+        }
+
         return (
-          <p key={i} className="m-0">
-            <RichMathLine text={para} />
+          <p key={idx} className="mb-4 mt-0 leading-[1.6]">
+            <RichMathLine text={chunk.text} />
           </p>
         );
       })}
@@ -874,7 +987,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto bg-white px-6 py-6 sm:px-8 sm:py-7">
+      <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <MathProse text={body} />
       </div>
     </div>
