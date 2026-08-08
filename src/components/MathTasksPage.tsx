@@ -580,24 +580,49 @@ function DifficultyPill({ level, active }: { level: string; active?: boolean }) 
   );
 }
 
+/** Quiet structural labels so Overview doesn't flash bold every other word. */
+function isExplanationLabel(label: string): boolean {
+  return /^(What's going on|Building the system|Model|Solve|Answer|Equation\s+\d+|Step\s+\d+|Direct check|Setup|Computation|Watch\.?|Why it fails\.?|Tip\.?)(\.|:)?$/i.test(
+    label.trim(),
+  );
+}
+
 /** Light markdown (**bold**, *italic*, pipe tables) plus KaTeX via FlashcardMath. */
 function MathProse({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split(/\n\n+/);
   return (
-    <div className={cn("space-y-2.5", className)}>
+    <div
+      className={cn(
+        "space-y-4 font-serif text-[15px] leading-[1.8] text-foreground sm:text-[16px]",
+        "[&_.katex]:text-[1.05em] [&_.katex-display]:my-3 [&_.katex-display]:overflow-x-auto",
+        className,
+      )}
+    >
       {paragraphs.map((para, i) => {
         const table = parseMarkdownTable(para);
         if (table) {
           return (
-            <div key={i} className="overflow-x-auto">
+            <div key={i} className="overflow-x-auto font-sans text-[14px]">
               <MarkdownTable data={table} />
             </div>
           );
         }
+        const trimmed = para.trim();
+        const headerOnly = trimmed.match(/^\*\*([^*]+)\*\*\s*$/);
+        if (headerOnly && isExplanationLabel(headerOnly[1])) {
+          return (
+            <p
+              key={i}
+              className="mb-0.5 mt-5 font-sans text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground first:mt-0"
+            >
+              {headerOnly[1].replace(/[.!:]+$/, "")}
+            </p>
+          );
+        }
         return (
-          <div key={i} className="text-[13px] leading-relaxed [&_.katex-display]:my-2">
+          <p key={i} className="m-0">
             <RichMathLine text={para} />
-          </div>
+          </p>
         );
       })}
     </div>
@@ -694,15 +719,26 @@ function RichMathLine({ text }: { text: string }) {
     <span>
       {parts.map((p, i) => {
         if (p.kind === "bold") {
+          if (isExplanationLabel(p.value)) {
+            return (
+              <span
+                key={i}
+                className="mr-1 inline font-sans text-[0.72em] font-medium uppercase tracking-[0.1em] text-muted-foreground"
+              >
+                {p.value.replace(/[.!:]+$/, "")}
+              </span>
+            );
+          }
+          // Emphasize without heavy bold flashing through the paragraph.
           return (
-            <strong key={i} className="font-semibold text-foreground">
+            <strong key={i} className="font-medium text-foreground">
               <FlashcardMath text={p.value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
-            <em key={i} className="italic text-foreground/85">
+            <em key={i} className="not-italic text-muted-foreground">
               <FlashcardMath text={p.value} />
             </em>
           );
@@ -773,11 +809,8 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
-        <MathProse
-          text={body}
-          className="space-y-3 text-[13px] leading-relaxed text-foreground [&_em]:not-italic [&_em]:text-foreground/80"
-        />
+      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5 sm:px-6">
+        <MathProse text={body} />
       </div>
     </div>
   );
