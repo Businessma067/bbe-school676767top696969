@@ -61,11 +61,11 @@ export const Route = createFileRoute("/flashcards/$subject")({
 
 type DeckCard = Flashcard & { sectionId: string; sectionTitle: string; key: string };
 
-const SWIPE_THRESHOLD = 48;
-const SWIPE_VELOCITY = 0.45; // px/ms — a quick flick counts even below threshold
+const SWIPE_THRESHOLD = 28;
+const SWIPE_VELOCITY = 0.25; // px/ms — a light flick counts even below threshold
 const EXIT_MS = 260;
 const ENTER_MS = 320;
-const DRAG_ACTIVATE = 5;
+const DRAG_ACTIVATE = 4;
 
 function buildDeck(
   subjectId: string,
@@ -102,7 +102,11 @@ function FlashcardSubjectPage() {
     subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
   );
   const [deck, setDeck] = useState<DeckCard[]>(() =>
-    buildDeck(subjectId, subject.sections, "all"),
+    buildDeck(
+      subjectId,
+      subject.sections,
+      subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
+    ),
   );
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -137,9 +141,17 @@ function FlashcardSubjectPage() {
   }, [subjectId]);
 
   useEffect(() => {
+    const prevTerm = cardRef.current?.term;
     const next = buildDeck(subjectId, subject.sections, sectionId);
     setDeck(next);
-    setIndex(0);
+
+    // English modes share the same words — stay on the current word when switching.
+    let nextIndex = 0;
+    if (subjectId === "english" && prevTerm) {
+      const match = next.findIndex((c) => c.term === prevTerm);
+      if (match >= 0) nextIndex = match;
+    }
+    setIndex(nextIndex);
     queueRef.current = [];
     setFlipped(false);
     setDragX(0);
@@ -148,7 +160,7 @@ function FlashcardSubjectPage() {
     setEnterFrom(null);
     exitLockRef.current = false;
     pointerIdRef.current = null;
-    setSeen(0);
+    if (subjectId !== "english") setSeen(0);
   }, [sectionId, subject.sections, subjectId]);
 
   const card = deck[index];
@@ -198,8 +210,8 @@ function FlashcardSubjectPage() {
   }, []);
 
   const shouldAcceptSwipe = (dx: number, vx: number) => {
-    if (dx >= SWIPE_THRESHOLD || (dx > 18 && vx >= SWIPE_VELOCITY)) return "known" as const;
-    if (dx <= -SWIPE_THRESHOLD || (dx < -18 && vx <= -SWIPE_VELOCITY))
+    if (dx >= SWIPE_THRESHOLD || (dx > 8 && vx >= SWIPE_VELOCITY)) return "known" as const;
+    if (dx <= -SWIPE_THRESHOLD || (dx < -8 && vx <= -SWIPE_VELOCITY))
       return "unknown" as const;
     return null;
   };
@@ -415,7 +427,7 @@ function FlashcardSubjectPage() {
     transform = `translateX(${dragX}px) rotate(${dragX * 0.055}deg)`;
   }
 
-  const overlayOpacity = Math.min(0.55, Math.abs(dragX) / 120);
+  const overlayOpacity = Math.min(0.55, Math.abs(dragX) / 70);
   const busy = !!exitDir || !!enterFrom;
 
   const frontLabel =
@@ -430,7 +442,7 @@ function FlashcardSubjectPage() {
         ? "Synonyms"
         : sectionId === "eng-antonyms"
           ? "Antonyms"
-          : "Definition"
+          : "Meaning"
       : "Explanation";
 
   return (

@@ -9,7 +9,113 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** [word, synonyms CSV, definition, antonyms CSV] — curated academic bank */
+const ADVANCED_BUSINESS = [
+  ["amortisation", "write-down schedule, gradual repayment, depreciation (related)", "The spreading of a loan repayment or intangible asset cost over time.", "lump-sum repayment, immediate expensing"],
+  ["arbitrage", "price-gap trading, spread capture, riskless differential trade", "Profiting from price differences for the same asset across markets, often with little risk.", "directional speculation, one-way bet"],
+  ["attrition", "natural wastage, erosion, drip-loss", "Gradual workforce reduction through resignations and retirements rather than layoffs.", "hiring surge, headcount growth"],
+  ["austerity", "retrenchment, belt-tightening, fiscal restraint", "A policy of cutting public spending and tightening budgets, often after a crisis.", "stimulus, expansionary spending"],
+  ["backlash", "pushback, counter-reaction, revolt", "A strong adverse reaction against a policy, brand, or social change.", "embrace, endorsement, acclaim"],
+  ["bearish", "pessimistic, downbeat, sceptical", "Expecting prices or economic conditions to fall or deteriorate.", "bullish, optimistic, constructive"],
+  ["bellwether", "barometer, leading indicator, harbinger", "A company or indicator whose performance signals the direction of a wider market.", "laggard, idiosyncratic outlier"],
+  ["blue-chip", "premier stock, household-name giant, quality name", "A large, established, financially sound company (or its shares).", "penny stock, speculative micro-cap"],
+  ["bottleneck", "chokepoint, constraint, blockage", "A congestion point that slows an entire production, logistics, or hiring process.", "open capacity, free flow"],
+  ["bullish", "optimistic, upbeat, constructive", "Expecting prices or prospects to rise; confident about gains.", "bearish, pessimistic, cautious"],
+  ["cannibalise", "self-compete, displace own sales, eat into own demand", "When a new product takes sales from a firm’s own existing products.", "complement, cross-sell, expand the category"],
+  ["capitalise on", "exploit, leverage, seize", "To take full advantage of an opportunity for gain.", "miss, squander, forgo"],
+  ["cartel", "price-fixing ring, collusive group, consortium (illicit)", "Producers that collude to fix prices or limit output — often illegal.", "competitive industry, independent pricing"],
+  ["caveat", "proviso, qualification, reservation", "A warning or limiting condition attached to a claim, forecast, or agreement.", "unconditional promise, blank cheque"],
+  ["collateral", "security, pledge, guarantee asset", "An asset pledged to secure a loan and seized if the borrower defaults.", "unsecured claim, naked exposure"],
+  ["commodity", "raw material, bulk good, primary product", "A basic interchangeable good such as oil, wheat, or copper.", "differentiated product, branded specialty"],
+  ["complacent", "smug, unworried, overconfident", "Self-satisfied and insufficiently alert to risk after a calm period.", "vigilant, wary, concerned"],
+  ["contingency", "backup, fallback, Plan B", "A reserve plan for if something goes wrong; also an unexpected event.", "certainty, no fallback"],
+  ["convergence", "alignment, catching-up, harmonisation", "A coming together of levels, standards, or policies over time.", "divergence, polarisation, split"],
+  ["curtail", "cut, reduce, rein in", "To cut short or reduce spending, emissions, hours, or risk.", "expand, extend, ramp up"],
+  ["deadlock", "stalemate, impasse, gridlock", "A standstill in talks where neither side will move.", "breakthrough, settlement, compromise"],
+  ["deleverage", "reduce gearing, pay down debt, unwind leverage", "To reduce debt relative to equity or assets after a leveraged period.", "lever up, gear up, borrow more"],
+  ["dichotomy", "binary split, dualism, sharp contrast", "A division into two sharply contrasting parts or choices.", "continuum, spectrum, blend"],
+  ["discretionary", "optional, non-essential, judgement-based", "Left to choice rather than fixed by rule — e.g. discretionary spending.", "mandatory, automatic, non-discretionary"],
+  ["disparity", "gap, inequality, divergence", "A marked difference or inequality between groups, regions, or outcomes.", "parity, equality, convergence"],
+  ["divergence", "split, drift apart, deviation", "A moving apart of paths, policies, or performance that once were aligned.", "convergence, alignment, synchronisation"],
+  ["due diligence", "vetting, scrutiny, fact-finding review", "A rigorous investigation of a company or deal before investing or acquiring.", "negligence, cursory check, blind trust"],
+  ["embargo", "trade ban, blockade, prohibition", "An official ban on trade with a country or in certain goods.", "open trade, liberalisation"],
+  ["endogenous", "internally driven, home-grown, system-generated", "Generated from within a system by its own variables and behaviour.", "exogenous, external"],
+  ["endowment", "permanent fund, patrimony, natural gift", "A permanent fund whose income supports an institution; also a natural resource gift.", "operating budget only, resource scarcity"],
+  ["exacerbate", "aggravate, worsen, intensify", "To make a problem, conflict, or negative condition worse.", "alleviate, mitigate, ease"],
+  ["exogenous", "external, outside-driven, imported shock", "Coming from outside a model, firm, or economy (e.g. an oil shock).", "endogenous, internally generated"],
+  ["fiat", "decree currency, government-backed money", "Currency that has value by government decree rather than commodity backing.", "commodity money, gold standard"],
+  ["fiduciary", "trustee, custodian, duty-bound steward", "A person or body legally obliged to act in another’s best interests.", "arm’s-length counterparty, self-dealing agent"],
+  ["fiscal cliff", "abrupt tightening, sudden austerity brink", "A sharp, scheduled tightening of taxes and spending that threatens growth if unchanged.", "soft landing, gradual adjustment"],
+  ["friction", "transaction cost, drag, inefficiency", "Costs or barriers that slow deals — fees, delays, search costs, red tape.", "frictionless trade, seamless flow"],
+  ["headwind", "obstacle, drag, setback", "A force that makes progress harder, such as higher rates or weak demand.", "tailwind, boost, catalyst"],
+  ["hedge", "offset, protection, risk cover", "A position that offsets risk from another exposure (currency, rate, commodity).", "naked exposure, unhedged bet"],
+  ["hegemony", "supremacy, predominance, ascendancy", "Dominance of one state, firm, or idea over others in a system.", "multipolarity, parity, subordination"],
+  ["idiosyncratic", "company-specific, peculiar, distinctive", "Peculiar to one firm or asset rather than driven by the whole market.", "systematic, market-wide, generic"],
+  ["incumbent", "established player, reigning leader, status-quo firm", "The firm or person currently holding a market lead or office.", "challenger, newcomer, disruptor"],
+  ["inelastic", "price-insensitive, rigid, unresponsive", "Demand or supply that changes little when price changes.", "elastic, price-sensitive, responsive"],
+  ["interim", "provisional, stopgap, temporary", "Temporary; in force only until a permanent arrangement is made.", "permanent, definitive, final"],
+  ["jurisdiction", "legal remit, authority, territory", "The legal authority of a court or regulator, or the territory it covers.", "outside competence, lack of authority"],
+  ["laissez-faire", "non-intervention, free-market stance, hands-off policy", "A hands-off approach with minimal government intervention in markets.", "interventionism, heavy regulation"],
+  ["leverage", "gearing, borrowing; harness, exploit", "Debt used to amplify returns; or using something to maximum advantage.", "deleveraging; underuse, squander"],
+  ["liquidity", "cash availability, convertibility, short-term solvency", "How easily an asset turns into cash without a big price cut; ability to meet near-term bills.", "illiquidity, cash shortage, freeze"],
+  ["litigation", "lawsuit, court action, legal proceedings", "The process of taking legal action through the courts.", "settlement, mediation, out-of-court deal"],
+  ["macroeconomic", "economy-wide, aggregate-level, macro", "Concerning the whole economy — growth, inflation, unemployment, policy.", "microeconomic, firm-level"],
+  ["mitigation", "alleviation, reduction, cushioning", "Action that reduces the severity of a risk or harm.", "aggravation, exacerbation"],
+  ["nascent", "emerging, fledgling, embryonic", "Just beginning to develop; still in an early stage.", "mature, established, fully fledged"],
+  ["nominal", "face-value, current-price; token", "Measured in current money terms, not inflation-adjusted; or ‘in name only’.", "real (inflation-adjusted); substantial"],
+  ["obfuscate", "obscure, cloud, muddle", "To deliberately make something unclear or confusing.", "clarify, elucidate, spell out"],
+  ["oligopoly", "few-firm dominance, concentrated market", "A market dominated by a small number of large sellers.", "perfect competition, fragmented market"],
+  ["opaque", "obscure, non-transparent, murky", "Hard to see through or understand — unclear pricing, ownership, or reporting.", "transparent, clear, lucid"],
+  ["parity", "equivalence, equal footing, one-to-one match", "Equality of value, status, or purchasing power.", "disparity, imbalance, divergence"],
+  ["precipitous", "steep, abrupt, sharp", "Extremely steep or sudden — e.g. a precipitous fall in prices.", "gradual, gentle, measured"],
+  ["precarious", "unstable, insecure, perilous", "Not securely held; dependent on uncertain conditions.", "secure, stable, solid"],
+  ["protracted", "drawn-out, prolonged, lengthy", "Lasting longer than expected — talks, downturns, or disputes.", "brief, swift, short-lived"],
+  ["prudence", "caution, circumspection, conservatism", "Cautious, careful judgement — especially in finance and regulation.", "recklessness, imprudence, brinkmanship"],
+  ["quantitative easing", "QE, large-scale asset purchases, balance-sheet expansion", "Central-bank buying of assets at scale to inject liquidity and lower longer yields.", "quantitative tightening, balance-sheet runoff"],
+  ["quota", "allocation, cap, ration", "A fixed limit or share — on imports, emissions, or production.", "unlimited access, free allocation"],
+  ["ratchet", "one-way adjustment, irreversible step-up", "A mechanism that moves in one direction only — gains that are hard to reverse.", "two-way flexibility, reversible change"],
+  ["reallocate", "redeploy, reshuffle, shift", "To move resources, capital, or staff from one use to another.", "freeze allocation, leave unchanged"],
+  ["rebate", "refund, return, partial payback", "A partial refund after payment — tax, energy, or trade rebate.", "surcharge, extra charge"],
+  ["redress", "remedy, rectify, make amends", "To set right a wrong; also compensation for harm.", "ignore harm, perpetuate injustice"],
+  ["remit", "brief, scope, purview", "The official scope of someone’s job or an organisation’s authority.", "outside the brief, ultra vires"],
+  ["resilient", "robust, adaptable, durable", "Able to recover quickly from shocks — people, firms, supply chains, or markets.", "fragile, brittle, vulnerable"],
+  ["restructure", "reorganise, refinance, overhaul", "To reorganise debt, operations, or ownership — often under financial stress.", "maintain status quo, leave unchanged"],
+  ["retaliatory", "tit-for-tat, reciprocal, punitive response", "Done in response to a perceived attack — e.g. retaliatory tariffs.", "conciliatory, de-escalatory"],
+  ["rigorous", "stringent, meticulous, exacting", "Extremely thorough, strict, and logically exacting.", "sloppy, lax, superficial"],
+  ["salient", "prominent, striking, key", "Most noticeable or important; standing out among other facts.", "obscure, peripheral, negligible"],
+  ["sanction", "penalty, embargo; authorise", "A penalty for breaking rules, or official approval; as a verb, to penalise or authorise.", "reward; prohibit, disallow"],
+  ["scrutinise", "inspect, probe, audit closely", "To examine something very carefully for errors, risk, or misconduct.", "glance over, overlook, rubber-stamp"],
+  ["secular", "long-run, structural, enduring", "A long-term trend lasting years, not a short cyclical blip (e.g. secular stagnation).", "cyclical, transitory, short-term"],
+  ["sovereignty", "self-rule, autonomy, independence", "Supreme authority of a state over its territory; also data or control autonomy.", "dependence, subordination"],
+  ["speculation", "betting, conjectural trading, risk-taking", "Trading based on anticipated price moves rather than underlying use.", "hedging, long-term investing"],
+  ["stagflation", "inflationary stagnation, stagnant high-inflation mix", "Stagnant growth (or recession) combined with persistently high inflation.", "disinflationary boom, stable low-inflation growth"],
+  ["stakeholder", "interested party, constituent, claimholder", "Anyone with an interest in an organisation’s outcomes.", "bystander, outsider with no stake"],
+  ["stimulus", "boost, injection, reflationary support", "Policy action meant to boost demand and growth (spending, tax cuts, rate cuts).", "austerity, tightening, restraint"],
+  ["stringent", "rigorous, severe, exacting", "Strict, precise, and demanding — often said of rules or standards.", "lax, lenient, permissive"],
+  ["sustainability", "long-term viability, stewardship, ESG focus", "Meeting present needs without undermining future environmental, social, or economic ones.", "short-termism, depletion"],
+  ["synergy", "combined upside, complementary gains", "Extra value expected when firms combine — savings or revenue neither could achieve alone.", "diseconomy, friction, value destruction"],
+  ["systemic", "system-wide, structural, pervasive", "Affecting an entire system rather than one isolated part.", "idiosyncratic, isolated, localised"],
+  ["tacit", "unspoken, implicit, implied", "Understood without being stated openly — e.g. a tacit agreement.", "explicit, overt, spelled-out"],
+  ["tailwind", "boost, impetus, catalyst", "A favourable condition that helps growth or performance.", "headwind, drag, hindrance"],
+  ["tenure", "term of office, occupancy, permanent status", "The holding of an office or job for a period; also job-security status.", "dismissal, short fixed contract"],
+  ["trajectory", "path, course, arc", "The path something is on over time — growth, debt, emissions, or a career.", "static level, flatline, standstill"],
+  ["ubiquitous", "omnipresent, pervasive, widespread", "Present everywhere; seeming to appear in every context.", "rare, scarce, confined"],
+  ["underpin", "support, bolster, ground", "To support or form the foundation of an argument, price, or system.", "undermine, weaken, erode"],
+  ["underscore", "emphasise, highlight, stress", "To emphasise or highlight the importance of a point.", "downplay, gloss over, soft-pedal"],
+  ["unprecedented", "unheard-of, novel, without parallel", "Never known or experienced before; without prior example.", "familiar, routine, precedented"],
+  ["upheaval", "turmoil, disruption, shake-up", "A sudden, disruptive change that unsettles institutions or markets.", "stability, continuity, calm"],
+  ["utilisation", "usage rate, occupancy, capacity use", "The extent to which capacity, labour, or assets are actually being used.", "idle capacity, underuse, slack"],
+  ["valuation", "appraisal, pricing, worth estimate", "An estimate of what an asset, firm, or security is worth.", "unpriced asset, book cost only"],
+  ["viability", "feasibility, workability, commercial survival", "The ability to survive and succeed commercially or operationally.", "unviability, insolvency path"],
+  ["volatile", "unstable, erratic, turbulent", "Liable to change rapidly and unpredictably — prices, markets, or moods.", "stable, steady, calm"],
+  ["vulnerability", "exposure, susceptibility, fragility", "Exposure to harm from financial, cyber, climate, or supply-chain shocks.", "resilience, robustness, insulation"],
+  ["warrant", "justify; call-like right; authorisation", "To justify; or a security giving the right to buy shares at a set price.", "invalidate; lack of grounds"],
+  ["write-off", "charge-off, cancellation, zero impairment", "Removing an asset or bad debt from the books as worthless or uncollectable.", "recovery, reinstatement, write-up"],
+  ["writedown", "impairment charge, downward revaluation", "Reducing an asset’s book value because it has lost worth.", "write-up, revaluation gain"],
+  ["ameliorate", "improve, ease, relieve", "To make a bad situation better or less severe.", "worsen, exacerbate, aggravate"],
+];
+
 const BANK = [
+  ...ADVANCED_BUSINESS,
   ["abolish", "eliminate, eradicate, annul", "To formally put an end to a system, practice, or institution.", "establish, create, institute"],
   ["abrupt", "sudden, unexpected, curt", "Sudden and unexpected, often in a way that seems rude or incomplete.", "gradual, gentle, smooth"],
   ["abstract", "theoretical, conceptual, intangible", "Existing as an idea rather than as a concrete physical object.", "concrete, tangible, material"],
@@ -531,7 +637,7 @@ const BANK = [
   ["whereas", "while, although, but", "In contrast or comparison with the fact that.", "similarly, likewise, and"],
   ["whereby", "by which, through which, via which", "By which means; as a result of which.", "despite which, without which"],
   ["widespread", "extensive, common, prevalent", "Found or distributed over a large area or number of people.", "rare, limited, localized"],
-].slice(0, 220);
+];
 
 function uniqTerms(cards) {
   const seen = new Set();
@@ -545,15 +651,17 @@ function uniqTerms(cards) {
   return out;
 }
 
-function take200(cards, label) {
+const TARGET = 280;
+
+function takeN(cards, label) {
   const u = uniqTerms(cards);
-  if (u.length < 200) {
-    throw new Error(`${label}: only ${u.length} unique cards`);
+  if (u.length < TARGET) {
+    throw new Error(`${label}: only ${u.length} unique cards (need ${TARGET})`);
   }
-  return u.slice(0, 200);
+  return u.slice(0, TARGET);
 }
 
-const synonyms = take200(
+const synonyms = takeN(
   BANK.map(([w, syn]) => ({
     term: w,
     explanation: `Synonyms: ${syn}.`,
@@ -561,7 +669,7 @@ const synonyms = take200(
   "synonyms",
 );
 
-const meanings = take200(
+const meanings = takeN(
   BANK.map(([w, , def]) => ({
     term: w,
     explanation: def,
@@ -569,7 +677,7 @@ const meanings = take200(
   "meanings",
 );
 
-const antonyms = take200(
+const antonyms = takeN(
   BANK.map(([w, , , ant]) => ({
     term: w,
     explanation: `Antonyms: ${ant}.`,
