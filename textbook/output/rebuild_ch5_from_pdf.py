@@ -403,7 +403,112 @@ def mathify_for_expl(text: str) -> str:
     return text
 
 
-def short_explanation(letter: str, verdict: bool, raw: str, model: str, final: str) -> str:
+def is_label_row(row: list[str]) -> bool:
+    if not row:
+        return False
+    return bool(str(row[0]).strip()) and all(not str(c).strip() for c in row[1:])
+
+
+def normalize_sectioned_table(rows: list[list[str]]) -> list[list[str]]:
+    """
+    Fix PDF layout where a section label (e.g. 'Vendor A') sits on its own row
+    between/near data rows — fold it into the Vendor/first column instead.
+    """
+    if len(rows) < 2:
+        return rows
+    header, body = rows[0], [r[:] for r in rows[1:]]
+
+    def order_num(row: list[str]) -> int | None:
+        if len(row) < 2:
+            return None
+        try:
+            return int(str(row[1]).strip())
+        except ValueError:
+            return None
+
+    out: list[list[str]] = []
+    i = 0
+    while i < len(body):
+        row = body[i]
+        if is_label_row(row):
+            label = str(row[0]).strip()
+            if out and not str(out[-1][0]).strip():
+                out[-1][0] = label
+            j = i + 1
+            last_ord: int | None = None
+            while j < len(body) and not is_label_row(body[j]):
+                nxt = body[j][:]
+                ord_n = order_num(nxt)
+                # New vendor/group usually restarts at order 1 after a higher order.
+                if last_ord is not None and ord_n is not None and ord_n <= last_ord:
+                    break
+                if not str(nxt[0]).strip():
+                    nxt[0] = label
+                out.append(nxt)
+                if ord_n is not None:
+                    last_ord = ord_n
+                j += 1
+            i = j
+            continue
+        out.append(row[:])
+        i += 1
+    return [header] + out
+
+
+def trap_notes(given: str, general: str) -> str:
+    """Pedagogy/trap blurbs without forced variable names."""
+
+    def scrub(s: str) -> str:
+        s = flatten(s or "")
+        if not s:
+            return ""
+        # Drop forced variable assignments / "denote" naming instructions
+        s = re.sub(r"\bLet\s+.+?(?=\.\s|\.\Z|$)", "", s, flags=re.I)
+        s = re.sub(
+            r"\b(?:denote|write|choose)\b[^.]{0,80}\b(?:prices|variables|unknowns)\b[^.]{0,40}\.?",
+            "",
+            s,
+            flags=re.I,
+        )
+        s = re.sub(
+            r"\b[xyabcfrsd]\d?\s*=\s*[^.;]+[.;]?",
+            "",
+            s,
+            flags=re.I,
+        )
+        s = re.sub(r"\s{2,}", " ", s)
+        s = re.sub(r"\s+([.,;:])", r"\1", s)
+        return s.strip(" ;,")
+
+    chunks = []
+    for src in (given, general):
+        s = scrub(src)
+        if len(s) >= 40:
+            chunks.append(s)
+    if not chunks:
+        return ""
+    note = chunks[0]
+    if len(chunks) > 1 and chunks[1] not in note and len(note) + len(chunks[1]) < 420:
+        note = f"{note} {chunks[1]}"
+    # Final safety: nuke leftover Let / xA style crumbs
+    note = re.sub(r"\bLet\b[^.]{0,120}", "", note, flags=re.I)
+    note = re.sub(r"\bx[AB]\b|\by[AB]\b", "", note)
+    note = re.sub(r"\.{2,}", ".", note)
+    note = re.sub(r"\s{2,}", " ", note).strip(" ;,.")
+    if note and not note.endswith("."):
+        note += "."
+    return note
+
+
+def short_explanation(
+    letter: str,
+    verdict: bool,
+    raw: str,
+    model: str,
+    final: str,
+    traps: str,
+    is_first: bool,
+) -> str:
     label = "TRUE" if verdict else "FALSE"
     reason = mathify_for_expl(flatten(raw))
     eqs = []
@@ -419,19 +524,36 @@ def short_explanation(letter: str, verdict: bool, raw: str, model: str, final: s
             ln = re.split(r",\s*which rearranges to\s+", ln, flags=re.I)[0].strip()
         eqs.append(ln)
     formula = f"$$\n{eqs[0]}\n$$" if eqs else ""
-    tip = (
-        f"Tip: Keep the final values in view (**{final}**) when testing the claim."
-        if final
-        else "Tip: Check the claim against the **exact** solved values."
-    )
+
     parts = [f"**{letter}) {label}** — {reason}", ""]
     if formula:
         parts += ["Key relation:", "", formula, ""]
-    parts.append(tip)
+
+    if not verdict:
+        parts.append(
+            "Watch the trap: the false claim usually reuses a printed figure with one digit changed, "
+            "drops a fee/tax adjustment, or treats an *exact* boundary as *strict* inequality."
+        )
+        parts.append("")
+    else:
+        parts.append(
+            "Why it holds: the claim matches the solved values (or a short exact recalculation from them), "
+            "not an estimate from only part of the data."
+        )
+        parts.append("")
+
+    if is_first and traps:
+        parts.append(f"**Trap / unused data in this case:** {traps}")
+        parts.append("")
+
+    if final:
+        parts.append(f"Keep the solved values in view: **{final}**.")
+    else:
+        parts.append("Check the claim against the **exact** solved values before judging.")
     return "\n".join(parts).strip()
 
 
-def build_overview(model: str, final: str) -> str:
+def build_overview(model: str, final: str, traps: str) -> str:
     eqs = []
     for ln in clean(model).split("\n"):
         ln = ln.strip()
@@ -462,7 +584,10 @@ def build_overview(model: str, final: str) -> str:
         tex = f"$$\n{eqs[0]}\n$$"
     else:
         tex = mathify_for_expl(model)
-    return f"**Model**\n\n{tex}\n\n**Final answer:** {final}".strip()
+    parts = ["**Model**", "", tex, "", f"**Final answer:** {final}"]
+    if traps:
+        parts += ["", f"**Trap / unused data:** {traps}"]
+    return "\n".join(parts).strip()
 
 
 tasks = []
@@ -491,6 +616,8 @@ for num in range(1, 61):
     solution = solm.group(1).strip() if solm else ""
     am = re.search(r"STATEMENT ANALYSIS\n([\s\S]*?)\nGENERAL EXPLANATION\n", text)
     analysis = am.group(1).strip() if am else ""
+    genm = re.search(r"GENERAL EXPLANATION\n([\s\S]*)", text)
+    general = flatten(genm.group(1)) if genm else ""
 
     answers, explanations = [], []
     for lab in "ABCDE":
@@ -510,21 +637,21 @@ for num in range(1, 61):
     if fm:
         final = flatten(fm.group(1))
 
+    traps = trap_notes(given, general)
+
     top, bottom = stem_bounds(page, num)
-    # Capture seed bboxes before expansion for prose masking
     seed_bboxes = []
     for t in page.find_tables().tables:
         if t.bbox[1] < bottom and t.bbox[3] > top and not is_verdict(t.extract()):
             seed_bboxes.append(t.bbox)
 
     tables = extract_stem_tables(page, top, bottom)
-    # Mask prose using expanded table areas approx from markdown sizes — use seed bboxes + modest pad
+    tables = [normalize_sectioned_table(tab) for tab in tables]
     prose_bboxes = []
     for b in seed_bboxes:
         prose_bboxes.append((b[0], b[1], b[2], min(bottom, b[3] + 60)))
     prose = stem_prose(page, top, bottom, prose_bboxes)
     if not prose:
-        # plain-text fallback
         header_end = text.find("\nGIVEN\n")
         if header_end > 0:
             head = text[:header_end]
@@ -533,7 +660,6 @@ for num in range(1, 61):
             for i, line in enumerate(lines):
                 if line.startswith("TASK ") or line.startswith("Format:") or line.startswith("(previously"):
                     skip = i + 1
-            # drop obvious column soup lines
             keep = []
             for ln in lines[skip:]:
                 s = ln.strip()
@@ -555,10 +681,8 @@ for num in range(1, 61):
             md_parts.append(md)
     tables_md = "\n\n".join(md_parts)
 
-    ctx_parts = [prose] if prose else []
-    if given:
-        ctx_parts += ["", f"**Variables:** {given}"]
-    context = "\n".join(ctx_parts).strip()
+    # Context = narrative only (no forced Variables / Let x = ...)
+    context = prose.strip()
 
     tasks.append(
         {
@@ -572,6 +696,7 @@ for num in range(1, 61):
             "explanations": explanations,
             "model": model,
             "final_answer": final,
+            "traps": traps,
         }
     )
     print(f"task {num:02d}: tables={len(md_parts)} prose_len={len(prose)}")
@@ -593,7 +718,15 @@ for t in tasks:
     d5 = max(1, min(5, math.ceil(float(t["difficulty_10"]) / 2.0)))
     n = t["num"]
     expls = [
-        short_explanation("ABCDE"[i], t["answer_key"][i], t["explanations"][i], t["model"], t["final_answer"])
+        short_explanation(
+            "ABCDE"[i],
+            t["answer_key"][i],
+            t["explanations"][i],
+            t["model"],
+            t["final_answer"],
+            t.get("traps") or "",
+            is_first=(i == 0),
+        )
         for i in range(5)
     ]
     lines.append("  {")
@@ -616,7 +749,9 @@ for t in tasks:
     lines.append("    ],")
     lines.append(f'    difficulty_level: "{d5}/5",')
     lines.append(f"    sort_order: {n},")
-    lines.append(f"    solution_overview: `{esc(build_overview(t['model'], t['final_answer']))}`,")
+    lines.append(
+        f"    solution_overview: `{esc(build_overview(t['model'], t['final_answer'], t.get('traps') or ''))}`,"
+    )
     lines.append("  },")
 
 lines += ["];", ""]

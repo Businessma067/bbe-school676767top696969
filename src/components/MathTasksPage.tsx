@@ -659,13 +659,13 @@ function MarkdownTable({ data }: { data: string[][] }) {
   if (!data.length) return null;
   const [header, ...body] = data;
   return (
-    <table className="w-full min-w-[16rem] border-collapse overflow-hidden rounded-lg border border-border text-left text-[12px]">
+    <table className="w-full min-w-[20rem] border-collapse overflow-hidden rounded-xl border border-foreground/20 text-left text-[14px] shadow-sm">
       <thead>
-        <tr className="bg-secondary/70">
+        <tr className="bg-foreground text-background">
           {header.map((cell, i) => (
             <th
               key={i}
-              className="border-b border-border px-2.5 py-1.5 font-semibold text-foreground"
+              className="border-b border-foreground/20 px-3 py-2.5 text-[12px] font-bold uppercase tracking-wide"
             >
               <RichMathLine text={cell} />
             </th>
@@ -675,10 +675,22 @@ function MarkdownTable({ data }: { data: string[][] }) {
       {body.length > 0 && (
         <tbody>
           {body.map((row, ri) => (
-            <tr key={ri} className="odd:bg-background even:bg-secondary/30">
+            <tr
+              key={ri}
+              className={cn(
+                "border-b border-border last:border-b-0",
+                ri % 2 === 0 ? "bg-card" : "bg-secondary/40",
+              )}
+            >
               {row.map((cell, ci) => (
-                <td key={ci} className="border-b border-border/60 px-2.5 py-1.5 text-foreground/90">
-                  <RichMathLine text={cell} />
+                <td
+                  key={ci}
+                  className={cn(
+                    "px-3 py-2.5 text-[14px] leading-snug text-foreground",
+                    ci === 0 && "font-semibold",
+                  )}
+                >
+                  <RichMathLine text={cell || "—"} />
                 </td>
               ))}
             </tr>
@@ -940,7 +952,7 @@ function MathTaskCard({
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
         <MathProse text={task.context} className="text-sm" />
         {task.tables_markdown ? (
-          <div className="overflow-hidden rounded-xl border border-border bg-background p-2 sm:p-3">
+          <div className="overflow-x-auto rounded-xl">
             <MathProse text={task.tables_markdown} className="text-sm" />
           </div>
         ) : null}
