@@ -35,9 +35,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **North depot = 360 crates | South depot = 260 crates**.
-
-**Trap / unused data for this case:** Once that translation is made, this is the simplest possible sum-and-difference system: no fees, no percentages, no unit conversions, and both unknowns come out as round numbers. The main traps are statement B (confusing total-minus-difference logic) and statement D (conflating the equalizing transfer with the current gap).`,
+Values to use: **North depot = 360 crates | South depot = 260 crates**.`,
       `**B) The South depot currently holds 240 crates.** — **FALSE**
 
 The South depot holds 260 crates, not 240. A common slip is assuming the difference (100) can simply be split from the total the same way as North's value, instead of substituting back into $x + y = 620$.
@@ -163,8 +161,6 @@ $$
 
 **3. Final answer:** North depot = 360 crates | South depot = 260 crates
 
-**Trap / unused data:** Once that translation is made, this is the simplest possible sum-and-difference system: no fees, no percentages, no unit conversions, and both unknowns come out as round numbers. The main traps are statement B (confusing total-minus-difference logic) and statement D (conflating the equalizing transfer with the current gap).
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -200,9 +196,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Notebook = $3.50 | Pen = $1.80**.
-
-**Trap / unused data for this case:** A clean, single-method elimination-by-substitution task with no reconstruction or claim-checking layer — both invoices state their totals directly. The only genuine trap is decimal carelessness during the substitution step (statement B) and simple misreading of which printed total belongs to which invoice (statement E); statement D checks whether the reader understands that a new quantity combination must be recalculated rather than interpolated from the two given invoices.`,
+Values to use: **Notebook = $3.50 | Pen = $1.80**.`,
       `**B) A pen costs $2.10.** — **FALSE**
 
 A pen actually costs $1.80, not $2.10. Rounding $-135y = -243.00$ carelessly is the most likely source of this kind of error.
@@ -323,8 +317,6 @@ $$
 
 **3. Final answer:** Notebook = $3.50 | Pen = $1.80
 
-**Trap / unused data:** A clean, single-method elimination-by-substitution task with no reconstruction or claim-checking layer — both invoices state their totals directly. The only genuine trap is decimal carelessness during the substitution step (statement B) and simple misreading of which printed total belongs to which invoice (statement E); statement D checks whether the reader understands that a new quantity combination must be recalculated rather than interpolated from the two given invoices.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -360,9 +352,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Adult ticket = $12.00 | Child ticket = $7.00**.
-
-**Trap / unused data for this case:** A textbook two-total elimination problem. The main thing being tested is not the algebra itself but attentiveness: statements C and D simply misquote figures that are already printed in the table (testing whether the reader re-derives values instead of trusting a plausible-sounding but wrong number), while statement E requires computing a genuinely new quantity combination rather than guessing at it.`,
+Values to use: **Adult ticket = $12.00 | Child ticket = $7.00**.`,
       `**B) A child ticket costs $7.00.** — **TRUE**
 
 The recovered child price of $7.00 likewise reproduces both totals; swapping which price belongs to 'adult' and which to 'child' is a common mix-up when the two totals are close in size.
@@ -484,8 +474,6 @@ $$
 
 **3. Final answer:** Adult ticket = $12.00 | Child ticket = $7.00
 
-**Trap / unused data:** A textbook two-total elimination problem. The main thing being tested is not the algebra itself but attentiveness: statements C and D simply misquote figures that are already printed in the table (testing whether the reader re-derives values instead of trusting a plausible-sounding but wrong number), while statement E requires computing a genuinely new quantity combination rather than guessing at it.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -519,7 +507,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Sandwich = $7.00 | Wrap = $5.00**.
 
-**Trap / unused data for this case:** The entire difficulty of this task is front-loaded into one interpretive step: recognizing that the flat $8.00 fee must be subtracted from both totals before the system is built, since it is a per-order charge, not a per-item price. Once that is done, the elimination itself is trivial. Every statement here is TRUE, which is itself worth noting — a reader who skips the fee-removal step would get the wrong x and y and likely start marking correct statements FALSE by mistake.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.`,
       `**B) A wrap costs $5.00.** — **TRUE**
 
 The wrap price of $5.00 likewise depends on subtracting the fee first — this is the main interpretive step in the task, not the algebra itself.
@@ -632,7 +620,7 @@ $$
 
 **3. Final answer:** Sandwich = $7.00 | Wrap = $5.00
 
-**Trap / unused data:** The entire difficulty of this task is front-loaded into one interpretive step: recognizing that the flat $8.00 fee must be subtracted from both totals before the system is built, since it is a per-order charge, not a per-item price. Once that is done, the elimination itself is trivial. Every statement here is TRUE, which is itself worth noting — a reader who skips the fee-removal step would get the wrong x and y and likely start marking correct statements FALSE by mistake.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -667,7 +655,7 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Account A = $6,000 | Account B = $4,000**.
 
-**Trap / unused data for this case:** This is the first task in the set to introduce percentage-rate coefficients (0.04 and 0.07) rather than simple per-unit prices, which is a small but real jump in abstraction. Every one of statements A–D is deliberately wrong, all clustered around the same natural mistake: eyeballing a rough 50/50 split instead of weighting by the two different rates. Statement E is the only true one, and it rewards actually multiplying through rather than assuming a blended-rate shortcut.`,
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.`,
       `**B) $4,500 was placed in Account B.** — **FALSE**
 
 Account B holds $4,000, not $4,500 — the same rough 50/50 guess produces this error too, and the two wrong figures would not even add to $10,000, a useful way to catch the mistake.
@@ -789,7 +777,7 @@ $$
 
 **3. Final answer:** Account A = $6,000 | Account B = $4,000
 
-**Trap / unused data:** This is the first task in the set to introduce percentage-rate coefficients (0.04 and 0.07) rather than simple per-unit prices, which is a small but real jump in abstraction. Every one of statements A–D is deliberately wrong, all clustered around the same natural mistake: eyeballing a rough 50/50 split instead of weighting by the two different rates. Statement E is the only true one, and it rewards actually multiplying through rather than assuming a blended-rate shortcut.
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -822,9 +810,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Standard chair = $304.00 | Premium chair = $349.00**.
-
-**Trap / unused data for this case:** A relation-plus-total system solved by direct substitution rather than elimination, since one variable is already isolated. The only trap is statement B's rounding shortcut; everything else rewards careful direct computation from the two solved prices.`,
+Values to use: **Standard chair = $304.00 | Premium chair = $349.00**.`,
       `**B) A Premium chair is priced at $354.00.** — **FALSE**
 
 A Premium chair costs $349.00, not $354.00 — a tempting but incorrect shortcut is rounding $304 up to $310 first and then adding $45.
@@ -935,8 +921,6 @@ $$
 
 **3. Final answer:** Standard chair = $304.00 | Premium chair = $349.00
 
-**Trap / unused data:** A relation-plus-total system solved by direct substitution rather than elimination, since one variable is already isolated. The only trap is statement B's rounding shortcut; everything else rewards careful direct computation from the two solved prices.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -970,7 +954,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Fixed fee = $17.00 | Extra-minute rate = $0.30/min**.
 
-**Trap / unused data for this case:** A clean subtract-directly elimination (both equations share the same fixed-fee coefficient), the same mechanical shape used repeatedly at higher tiers of this worksheet for phone/utility/taxi-style problems. The traps are conceptual rather than computational: statement D tests whether the reader understands that a fixed fee still applies at zero usage, and statement E tests careless multiplication when comparing to a competitor's rate.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.`,
       `**B) The extra-minute rate advertised is $0.30 per minute.** — **TRUE**
 
 The $0.30 rate is recovered from the DIFFERENCE between the two bills (a $24.00 gap over 80 extra minutes), not from either bill in isolation.
@@ -1075,7 +1061,9 @@ $$
 
 **3. Final answer:** Fixed fee = $17.00 | Extra-minute rate = $0.30/min
 
-**Trap / unused data:** A clean subtract-directly elimination (both equations share the same fixed-fee coefficient), the same mechanical shape used repeatedly at higher tiers of this worksheet for phone/utility/taxi-style problems. The traps are conceptual rather than computational: statement D tests whether the reader understands that a fixed fee still applies at zero usage, and statement E tests careless multiplication when comparing to a competitor's rate.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -1114,7 +1102,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Standard ovens = 75 | Deluxe ovens = 55**.
 
-**Trap / unused data for this case:** A count-and-rate system (units + hours) rather than a price system, with one deliberately irrelevant column (material cost) planted to test selective reading — it turns out to matter only for the very last statement, which flips the "irrelevant data" expectation on its head.`,
+**Distractor:** The material-cost column is not needed to find the two unknowns — it becomes relevant only for statement E below.`,
       `**B) The division built 45 Deluxe ovens this week.** — **FALSE**
 
 The division built 55 Deluxe ovens, not 45 — a common error is subtracting the hours figures instead of properly eliminating a variable, which tends to understate d.
@@ -1237,7 +1225,7 @@ $$
 
 **3. Final answer:** Standard ovens = 75 | Deluxe ovens = 55
 
-**Trap / unused data:** A count-and-rate system (units + hours) rather than a price system, with one deliberately irrelevant column (material cost) planted to test selective reading — it turns out to matter only for the very last statement, which flips the "irrelevant data" expectation on its head.
+**Distractor:** The material-cost column is not needed to find the two unknowns — it becomes relevant only for statement E below.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -1276,7 +1264,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Sofa = $350.00 | Armchair = $200.00**.
 
-**Trap / unused data for this case:** The interpretive step here is recognizing that "gross sales" is not what the fixed prices actually produced — returns must be netted out first for both branches before the system reflects real unit sales. Statement D is a deliberate numerical coincidence (Hillcrest's gross equals Riverside's net, both $9,300) designed to test whether the reader tracks which figure belongs to which branch and which stage (gross vs. net) rather than pattern-matching on the repeated number.`,
+**Distractor:** The gross figures cannot be used directly — each branch's returns must be subtracted first to isolate the value of items actually sold at listed prices.
+
+**Net, not gross:** Only *net* units (or net dollars) belong in the price equations. Gross − returns comes first; plugging gross totals skews both unknowns.`,
       `**B) An armchair sells for $200.00.** — **TRUE**
 
 The armchair price of $200.00 depends on the same return-deduction step as the sofa price.
@@ -1398,7 +1388,9 @@ $$
 
 **3. Final answer:** Sofa = $350.00 | Armchair = $200.00
 
-**Trap / unused data:** The interpretive step here is recognizing that "gross sales" is not what the fixed prices actually produced — returns must be netted out first for both branches before the system reflects real unit sales. Statement D is a deliberate numerical coincidence (Hillcrest's gross equals Riverside's net, both $9,300) designed to test whether the reader tracks which figure belongs to which branch and which stage (gross vs. net) rather than pattern-matching on the repeated number.
+**Distractor:** The gross figures cannot be used directly — each branch's returns must be subtracted first to isolate the value of items actually sold at listed prices.
+
+**Net, not gross:** Only *net* units (or net dollars) belong in the price equations. Gross − returns comes first; plugging gross totals skews both unknowns.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -1433,7 +1425,9 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **PrintFast setup fee = $9.00 | Rate = $0.20/page**.
 
-**Trap / unused data for this case:** This closes out the introductory tier by adding a competitor comparison (the flat $60.00 rival quote) on top of the standard fixed-fee-plus-rate model, and by including a meta-statement (E) about system uniqueness rather than a numeric claim — a preview of the more conceptual statement types used at higher difficulty tiers. Every A–D statement is a plausible-but-wrong number, rewarding a reader who recomputes rather than estimates.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.`,
       `**B) PrintFast's per-page rate is $0.25.** — **FALSE**
 
 The per-page rate is $0.20, not $0.25. The rate comes from dividing the $36.00 gap between the two orders by the 180-page gap between them, so using the wrong page difference is a likely source of error.
@@ -1543,7 +1537,9 @@ page order: 9.00 + 250(0.20) = $59.00.
 
 **3. Final answer:** PrintFast setup fee = $9.00 | Rate = $0.20/page
 
-**Trap / unused data:** This closes out the introductory tier by adding a competitor comparison (the flat $60.00 rival quote) on top of the standard fixed-fee-plus-rate model, and by including a meta-statement (E) about system uniqueness rather than a numeric claim — a preview of the more conceptual statement types used at higher difficulty tiers. Every A–D statement is a plausible-but-wrong number, rewarding a reader who recomputes rather than estimates.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -1576,9 +1572,7 @@ $$
 
 Check: using the solved values from above, recompute what the claim asserts. The result disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/distractor left out), so the statement is false.
 
-Values to use: **Taco = $3.50 | Burrito = $6.00**.
-
-**Trap / unused data for this case:** The whole task rests on one small translation step: converting "Ben paid $5.00 more than Ana" into the equation 2x + 5y = 37.00. Once that is done, it is a completely ordinary elimination with round-number answers. Statement A is the main conceptual trap, testing whether "paid more overall" is wrongly assumed to extend to every partial sub-comparison.`,
+Values to use: **Taco = $3.50 | Burrito = $6.00**.`,
       `**B) A burrito costs $2.50 more than a taco.** — **TRUE**
 
 6.00 - 3.50 = $2.50 exactly, matching the solved prices.
@@ -1695,8 +1689,6 @@ $$
 
 **3. Final answer:** Taco = $3.50 | Burrito = $6.00
 
-**Trap / unused data:** The whole task rests on one small translation step: converting "Ben paid $5.00 more than Ana" into the equation 2x + 5y = 37.00. Once that is done, it is a completely ordinary elimination with round-number answers. Statement A is the main conceptual trap, testing whether "paid more overall" is wrongly assumed to extend to every partial sub-comparison.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -1737,7 +1729,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Paperback = $12.00 | Hardcover = $17.00**.
 
-**Trap / unused data for this case:** A relation-plus-total system solved in one substitution step, with two deliberately irrelevant operational figures (headcount, loyalty share) planted in the report. Statement D is a boundary trap ('less than' vs. 'equal to'), and statement E tests whether decoy data gets mistakenly folded into the calculation.`,
+**Distractor:** Staff headcount and the loyalty-member percentage do not affect unit pricing and should be set aside.`,
       `**B) Hardcover editions are priced above $18.** — **FALSE**
 
 The hardcover price settles at exactly $17.00, not above $18. Assuming a 'clean' $20 hardcover price without solving the system is a typical shortcut.
@@ -1848,7 +1840,7 @@ $$
 
 **3. Final answer:** Paperback = $12.00 | Hardcover = $17.00
 
-**Trap / unused data:** A relation-plus-total system solved in one substitution step, with two deliberately irrelevant operational figures (headcount, loyalty share) planted in the report. Statement D is a boundary trap ('less than' vs. 'equal to'), and statement E tests whether decoy data gets mistakenly folded into the calculation.
+**Distractor:** Staff headcount and the loyalty-member percentage do not affect unit pricing and should be set aside.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -1887,7 +1879,9 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Standard base fee = $38.00 | Overage rate = $3.00/GB**.
 
-**Trap / unused data for this case:** The simplest possible subtract-directly elimination (matching x-coefficients), dressed up with two decoy competitor plans that must be ignored when building the model but become relevant again for the decision-style statements D and E. Statement A is the main trap, testing whether 'advertised as entry-level' gets wrongly equated with 'cheapest base fee.'.`,
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.`,
       `**B) The overage rate on the Standard plan is $3.00 per GB.** — **TRUE**
 
 The elimination step isolates $y = 3$ directly, confirmed by both bills.
@@ -1992,7 +1986,9 @@ $$
 
 **3. Final answer:** Standard base fee = $38.00 | Overage rate = $3.00/GB
 
-**Trap / unused data:** The simplest possible subtract-directly elimination (matching x-coefficients), dressed up with two decoy competitor plans that must be ignored when building the model but become relevant again for the decision-style statements D and E. Statement A is the main trap, testing whether 'advertised as entry-level' gets wrongly equated with 'cheapest base fee.'.
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2031,7 +2027,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Standard = $140.00/night (pre-tax) | Suite = $210.00/night (pre-tax)**.
 
-**Trap / unused data for this case:** Adds a tax-removal division step before the standard elimination, which is a genuinely new mechanism relative to Tasks 11–13. Statement C is a boundary-equality trap, and statement B punishes comparing tax-inclusive figures without adjusting for the 8% markup first.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.`,
       `**B) A Suite costs $200 more per night than a Standard room.** — **FALSE**
 
 The actual gap is 210 - 140 = $70, not $200. Forgetting to strip out the tax before comparing rates tends to inflate this estimate.
@@ -2143,7 +2139,7 @@ $$
 
 **3. Final answer:** Standard = $140.00/night (pre-tax) | Suite = $210.00/night (pre-tax)
 
-**Trap / unused data:** Adds a tax-removal division step before the standard elimination, which is a genuinely new mechanism relative to Tasks 11–13. Statement C is a boundary-equality trap, and statement B punishes comparing tax-inclusive figures without adjusting for the 8% markup first.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2184,7 +2180,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Component A = $12.00/unit | Component B = $15.00/unit**.
 
-**Trap / unused data for this case:** Introduces the "identify which rows are real data" mechanism: a third, forecast row must be recognized and excluded before the system is even built. Statements B and D both punish letting the excluded forecast row leak back into the reasoning.`,
+**Distractor:** Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for today's unit costs.
+
+**Source check:** Projected rows, ads, and verbal claims are for judging statements — only measured invoices/logs go into the solving system.`,
       `**B) Component B's unit cost is $18.** — **FALSE**
 
 Component B actually costs $15.00, not $18.00. Reading the forecast row's higher implied prices back into the actual data is a natural but incorrect shortcut.
@@ -2309,7 +2307,9 @@ $$
 
 **3. Final answer:** Component A = $12.00/unit | Component B = $15.00/unit
 
-**Trap / unused data:** Introduces the "identify which rows are real data" mechanism: a third, forecast row must be recognized and excluded before the system is even built. Statements B and D both punish letting the excluded forecast row leak back into the reasoning.
+**Distractor:** Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for today's unit costs.
+
+**Source check:** Projected rows, ads, and verbal claims are for judging statements — only measured invoices/logs go into the solving system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2346,9 +2346,7 @@ $$
 
 Check: using the solved values from above, recompute what the claim asserts. The result disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/distractor left out), so the statement is false.
 
-Values to use: **Regular wage = $14.00/hr | Overtime actually paid = $24.00/hr (contract requires $21.00/hr)**.
-
-**Trap / unused data for this case:** A claim-verification task: the algebra is a simple direct-subtract elimination, but every statement requires holding two parallel numbers in mind (what was actually paid vs. what the contract requires) rather than just one solved value.`,
+Values to use: **Regular wage = $14.00/hr | Overtime actually paid = $24.00/hr (contract requires $21.00/hr)**.`,
       `**B) The regular hourly wage is $14.** — **TRUE**
 
 The elimination step isolates x = $14.00 directly, and it checks out against both workers' totals.
@@ -2453,8 +2451,6 @@ $$
 
 **3. Final answer:** Regular wage = $14.00/hr | Overtime actually paid = $24.00/hr (contract requires $21.00/hr)
 
-**Trap / unused data:** A claim-verification task: the algebra is a simple direct-subtract elimination, but every statement requires holding two parallel numbers in mind (what was actually paid vs. what the contract requires) rather than just one solved value.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -2488,7 +2484,7 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Fixed charge = $15.00 | Rate = $2.00/m³ (billing office's claim does not match)**.
 
-**Trap / unused data for this case:** Uses a percentage-based penalty (division) rather than a flat fee (subtraction), which is a subtly different mechanism from earlier fee-removal tasks and easy to get backwards. Statements A/B both test whether a verbal claim is taken at face value instead of checked against the underlying bills.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.`,
       `**B) The rate charged is $2.00 per cubic metre.** — **TRUE**
 
 The elimination step gives y = $2.00 per m³ exactly, contradicting the claimed $1.85.
@@ -2593,7 +2589,7 @@ $$
 
 **3. Final answer:** Fixed charge = $15.00 | Rate = $2.00/m³ (billing office's claim does not match)
 
-**Trap / unused data:** Uses a percentage-based penalty (division) rather than a flat fee (subtraction), which is a subtly different mechanism from earlier fee-removal tasks and easy to get backwards. Statements A/B both test whether a verbal claim is taken at face value instead of checked against the underlying bills.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2628,7 +2624,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **CityCab — base $6.00, rate $1.00/km | MetroX — base $6.00, rate $1.50/km**.
 
-**Trap / unused data for this case:** Requires solving two entirely independent 2\\times 2 systems (one per company) rather than one, and both are fed by relative "costs $X more" clues that must be converted to absolute fares first. Statements C and E both test the same misconception in different guises: that a lower fixed cost or smaller distance somehow favors the company with the higher rate.`,
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.`,
       `**B) Both companies charge the same base fare of $6.00.** — **TRUE**
 
 Both systems independently solve to a $6.00 base fare, a coincidence worth double-checking rather than assuming.
@@ -2717,7 +2713,7 @@ We solve carefully with elimination or substitution, writing each algebra step c
 
 **3. Final answer:** CityCab — base $6.00, rate $1.00/km | MetroX — base $6.00, rate $1.50/km
 
-**Trap / unused data:** Requires solving two entirely independent 2\\times 2 systems (one per company) rather than one, and both are fed by relative "costs $X more" clues that must be converted to absolute fares first. Statements C and E both test the same misconception in different guises: that a lower fixed cost or smaller distance somehow favors the company with the higher rate.
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2758,7 +2754,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Vendor A — X = $9, Y = $18 | Vendor B — X = $11, Y = $16**.
 
-**Trap / unused data for this case:** Like Task 18, this requires two independent 2\\times 2 systems, but adds a genuine business-decision layer on top: the cheaper-per-unit vendor for one product is not necessarily the cheaper overall vendor for a mixed order. Statement D is the central trap, generalizing from the single-product comparison (B) to the wrong conclusion about the whole order.`,
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.`,
       `**B) Vendor B charges less than Vendor A for Product Y.** — **TRUE**
 
 Vendor B's $16 for Product Y is cheaper than Vendor A's $18, the reverse pattern from Product X.
@@ -2856,7 +2852,7 @@ $$
 
 **3. Final answer:** Vendor A — X = $9, Y = $18 | Vendor B — X = $11, Y = $16
 
-**Trap / unused data:** Like Task 18, this requires two independent 2\\times 2 systems, but adds a genuine business-decision layer on top: the cheaper-per-unit vendor for one product is not necessarily the cheaper overall vendor for a mixed order. Statement D is the central trap, generalizing from the single-product comparison (B) to the wrong conclusion about the whole order.
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -2891,7 +2887,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Product P = $50.00 | Service Q = $70.00**.
 
-**Trap / unused data for this case:** The hardest task in this tier: it stacks a preliminary sum-and-difference derivation on top of the usual two-unknown pricing system (a genuine two-stage solve), and its statements C/D test the classic misconception that a percentage change to one revenue stream scales an entire multi- product total by the same percentage.`,
+**Source check:** Projected rows, ads, and verbal claims are for judging statements — only measured invoices/logs go into the solving system.`,
       `**B) Beta generated more Q1 revenue than Alpha.** — **TRUE**
 
 Beta's $14,100 exceeds Alpha's $13,100 by $1,000, straight out of the Stage 1 sum-and-difference step.
@@ -3000,7 +2996,7 @@ $$
 
 **3. Final answer:** Product P = $50.00 | Service Q = $70.00
 
-**Trap / unused data:** The hardest task in this tier: it stacks a preliminary sum-and-difference derivation on top of the usual two-unknown pricing system (a genuine two-stage solve), and its statements C/D test the classic misconception that a percentage change to one revenue stream scales an entire multi- product total by the same percentage.
+**Source check:** Projected rows, ads, and verbal claims are for judging statements — only measured invoices/logs go into the solving system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3035,7 +3031,9 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Signup fee = $38.00 | Monthly rate = $41.00/month (flyer's figures do not match)**.
 
-**Trap / unused data for this case:** A straightforward subtract-directly elimination whose entire point is claim-verification: the advertised numbers are wrong in both directions (fee understated, rate overstated), and statement C tests whether the reader notices the two errors do not simply cancel out at 6 months.`,
+**Distractor:** The flyer's advertised figures ($30 and $45) are a claim to be checked, not values to plug directly into the model.
+
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.`,
       `**B) The monthly rate members are actually paying is lower than the advertised $45/month.** — **TRUE**
 
 The real monthly rate is $41, indeed lower than the advertised $45 — the flyer overstates the ongoing cost while understating the signup fee.
@@ -3140,7 +3138,9 @@ $$
 
 **3. Final answer:** Signup fee = $38.00 | Monthly rate = $41.00/month (flyer's figures do not match)
 
-**Trap / unused data:** A straightforward subtract-directly elimination whose entire point is claim-verification: the advertised numbers are wrong in both directions (fee understated, rate overstated), and statement C tests whether the reader notices the two errors do not simply cancel out at 6 months.
+**Distractor:** The flyer's advertised figures ($30 and $45) are a claim to be checked, not values to plug directly into the model.
+
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3177,9 +3177,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Basic = $19.00/month | Premium = $31.00/month**.
-
-**Trap / unused data for this case:** A clean elimination with no fee-removal or claim-checking layer; the difficulty here is entirely in statement D, which requires recognizing that two proportional (no-intercept) lines through the origin can only coincide at the origin itself — a conceptual point rather than a computational one.`,
+Values to use: **Basic = $19.00/month | Premium = $31.00/month**.`,
       `**B) The Premium plan costs $35 per month.** — **FALSE**
 
 Premium actually costs $31/month, not $35; substituting an assumed 'round' value instead of finishing the elimination is a common shortcut.
@@ -3295,8 +3293,6 @@ $$
 
 **3. Final answer:** Basic = $19.00/month | Premium = $31.00/month
 
-**Trap / unused data:** A clean elimination with no fee-removal or claim-checking layer; the difficulty here is entirely in statement D, which requires recognizing that two proportional (no-intercept) lines through the origin can only coincide at the origin itself — a conceptual point rather than a computational one.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -3342,7 +3338,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Organic apples = $4.80/lb | Almond milk = $6.00/carton**.
 
-**Trap / unused data for this case:** Two known-item prices (bread, eggs) must be subtracted from each receipt before the system can be built — the same fee-removal mechanism as earlier tasks, but with two known quantities per receipt instead of one. Statements C, D, and E are all boundary-equality traps in a row, deliberately clustering the 'exactly equal, not strictly more/less' misreading in one task.`,
+**Distractor:** Bread and egg prices are already known, and the loyalty-discount note is a distractor that does not apply here.
+
+**Receipt:** Knock off every known-priced line first; only the leftover money feeds the system for the mystery items.`,
       `**B) Almond milk costs less than organic apples, per unit.** — **FALSE**
 
 Almond milk is actually the more expensive item, $6.00/carton versus apples' $4.80/lb — the reverse of the claim.
@@ -3458,7 +3456,9 @@ $$
 
 **3. Final answer:** Organic apples = $4.80/lb | Almond milk = $6.00/carton
 
-**Trap / unused data:** Two known-item prices (bread, eggs) must be subtracted from each receipt before the system can be built — the same fee-removal mechanism as earlier tasks, but with two known quantities per receipt instead of one. Statements C, D, and E are all boundary-equality traps in a row, deliberately clustering the 'exactly equal, not strictly more/less' misreading in one task.
+**Distractor:** Bread and egg prices are already known, and the loyalty-discount note is a distractor that does not apply here.
+
+**Receipt:** Knock off every known-priced line first; only the leftover money feeds the system for the mystery items.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3497,7 +3497,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Fixed fee = $33.00 | Rate = $0.21/unit (customer service's figure does not match)**.
 
-**Trap / unused data for this case:** Adds a genuine crossover-point calculation (solving 33 + 0.21u = 0.29u for u) on top of the usual claim-verification elimination, then tests that crossover from two different angles in statements D and E — a universal claim ('at every level') and a specific numeric check, both of which trade on the same easily-missed 412.5-unit threshold.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.`,
       `**B) Customer service's claimed rate of $0.24 per unit is correct.** — **FALSE**
 
 The actual rate is $0.21/unit, not the claimed $0.24 — the phone figure was never checked against real bills until now.
@@ -3617,7 +3619,9 @@ $$
 
 **3. Final answer:** Fixed fee = $33.00 | Rate = $0.21/unit (customer service's figure does not match)
 
-**Trap / unused data:** Adds a genuine crossover-point calculation (solving 33 + 0.21u = 0.29u for u) on top of the usual claim-verification elimination, then tests that crossover from two different angles in statements D and E — a universal claim ('at every level') and a specific numeric check, both of which trade on the same easily-missed 412.5-unit threshold.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3652,7 +3656,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Pasta dish = $19.00 | Appetizer = $15.00**.
 
-**Trap / unused data for this case:** Combines two mechanisms in one model: reconstructing an unknown total from a relative clue (+$46), then stripping a 10% service charge back out of that reconstructed figure — two operations that must be done in the right order. Statement C specifically tests whether the reader confuses the printed $46.00 gap (measured after tax) with the true pre-tax gap ($26.00).`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.`,
       `**B) An appetizer costs more than a pasta dish.** — **FALSE**
 
 The appetizer is actually cheaper, at $15.00, versus the pasta dish's $19.00 — the reverse of the claim.
@@ -3775,7 +3779,7 @@ $$
 
 **3. Final answer:** Pasta dish = $19.00 | Appetizer = $15.00
 
-**Trap / unused data:** Combines two mechanisms in one model: reconstructing an unknown total from a relative clue (+$46), then stripping a 10% service charge back out of that reconstructed figure — two operations that must be done in the right order. Statement C specifically tests whether the reader confuses the printed $46.00 gap (measured after tax) with the true pre-tax gap ($26.00).
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3814,7 +3818,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Item M = $21.00/unit | Item N = $27.00/unit**.
 
-**Trap / unused data for this case:** The main trap is structural: two entire columns (unit weight, unit volume) are present purely as red herrings that never enter the pricing model at all, and statements B, C, and E each test a different way of being pulled toward those irrelevant columns.`,
+**Distractor:** Weight and volume are logged for freight billing and play no role in the item pricing itself.`,
       `**B) Item N costs $30 per unit.** — **FALSE**
 
 Item N actually costs $27, not $30; scanning the weight and volume columns for a price signal is a common but irrelevant distraction.
@@ -3940,7 +3944,7 @@ $$
 
 **3. Final answer:** Item M = $21.00/unit | Item N = $27.00/unit
 
-**Trap / unused data:** The main trap is structural: two entire columns (unit weight, unit volume) are present purely as red herrings that never enter the pricing model at all, and statements B, C, and E each test a different way of being pulled toward those irrelevant columns.
+**Distractor:** Weight and volume are logged for freight billing and play no role in the item pricing itself.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -3973,9 +3977,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Standard = $29.00/unit | Premium = $44.00/unit**.
-
-**Trap / unused data for this case:** The main mechanism is unit conversion: Job 1's quantities are stated in bundles rather than individual units, and must be expanded (\\times 2 and \\times 5 per bundle) before the system can even be written — skipping this step produces a totally different, unsolvable pair of equations. Statement E provides an unusually satisfying verification step, checking the solved prices against an independent third figure (the new quotation) rather than against the two equations that produced them.`,
+Values to use: **Standard = $29.00/unit | Premium = $44.00/unit**.`,
       `**B) Premium planting costs $50 per unit.** — **FALSE**
 
 Premium actually prices at $44, not $50; a likely slip is treating an intermediate elimination value as the finished answer.
@@ -4100,8 +4102,6 @@ $$
 
 **3. Final answer:** Standard = $29.00/unit | Premium = $44.00/unit
 
-**Trap / unused data:** The main mechanism is unit conversion: Job 1's quantities are stated in bundles rather than individual units, and must be expanded (\\times 2 and \\times 5 per bundle) before the system can even be written — skipping this step produces a totally different, unsolvable pair of equations. Statement E provides an unusually satisfying verification step, checking the solved prices against an independent third figure (the new quotation) rather than against the two equations that produced them.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -4140,7 +4140,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Per diem = $55.00/day | Mileage rate = $0.32/mile (Finance's belief does not match)**.
 
-**Trap / unused data for this case:** Introduces plausibility-checking as a prerequisite step: one of three reports must be recognized as internally impossible (its total is too small for even the meal days alone) and excluded before the system is built — a different flavor of "spot the bad row" than the forecast-exclusion tasks earlier in this worksheet. Statements D and E are near-miss boundary traps ($78 vs. $80, $568 vs. $550) placed side by side.`,
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.`,
       `**B) Finance's belief that the mileage rate is $0.40/mile is correct.** — **FALSE**
 
 The mileage rate is actually $0.32/mile, not the claimed $0.40 — the belief was never checked against the underlying reports until now.
@@ -4260,7 +4260,7 @@ $$
 
 **3. Final answer:** Per diem = $55.00/day | Mileage rate = $0.32/mile (Finance's belief does not match)
 
-**Trap / unused data:** Introduces plausibility-checking as a prerequisite step: one of three reports must be recognized as internally impossible (its total is too small for even the meal days alone) and excluded before the system is built — a different flavor of "spot the bad row" than the forecast-exclusion tasks earlier in this worksheet. Statements D and E are near-miss boundary traps ($78 vs. $80, $568 vs. $550) placed side by side.
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -4300,7 +4300,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Widget A = 7 hrs/unit | Widget B = 10 hrs/unit**.
 
-**Trap / unused data for this case:** Stacks three distinct mechanisms in one task: (1) recover Week 2's hidden counts via a sum-and-difference sub-system, (2) solve the main two- unknown system from Weeks 1 and 2, and (3) use the solved rates to reconstruct Week 3's missing count from a single equation. Statement D repeats the "percentage change to one part scales the whole" misconception seen elsewhere in this worksheet, here dressed up in a production- hours context instead of a revenue context.`,
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.`,
       `**B) Widget B requires 12 hours of labor to assemble.** — **FALSE**
 
 Widget B actually needs 10 hours, not 12; a common mistake is mixing up which coefficient belongs to A and which to B partway through elimination.
@@ -4446,7 +4446,7 @@ $$
 
 **3. Final answer:** Widget A = 7 hrs/unit | Widget B = 10 hrs/unit
 
-**Trap / unused data:** Stacks three distinct mechanisms in one task: (1) recover Week 2's hidden counts via a sum-and-difference sub-system, (2) solve the main two- unknown system from Weeks 1 and 2, and (3) use the solved rates to reconstruct Week 3's missing count from a single equation. Statement D repeats the "percentage change to one part scales the whole" misconception seen elsewhere in this worksheet, here dressed up in a production- hours context instead of a revenue context.
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -4484,9 +4484,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Product X = $29.00/unit | Product Y = $24.00/unit**.
-
-**Trap / unused data for this case:** This is the hardest task in the tier: three branches are given, but which two are reliable is never stated — the reader must choose a pairing (North & South), solve it, and then use the result to audit the third branch and quantify its error, all without being told in advance which branch is faulty. It is effectively an unsupervised version of the "identify the bad row" mechanism used more explicitly elsewhere in this worksheet.`,
+Values to use: **Product X = $29.00/unit | Product Y = $24.00/unit**.`,
       `**B) Product Y is priced at $28.** — **FALSE**
 
 Product Y prices out at $24, not $28; stopping partway through elimination and reading off an intermediate value is the likely source of this error.
@@ -4618,8 +4616,6 @@ East as the erroneous branch.
 
 **3. Final answer:** Product X = $29.00/unit | Product Y = $24.00/unit
 
-**Trap / unused data:** This is the hardest task in the tier: three branches are given, but which two are reliable is never stated — the reader must choose a pairing (North & South), solve it, and then use the result to audit the third branch and quantify its error, all without being told in advance which branch is faulty. It is effectively an unsupervised version of the "identify the bad row" mechanism used more explicitly elsewhere in this worksheet.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -4655,9 +4651,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Type A = $18.45/case | Type B = $27.80/case**.
-
-**Trap / unused data for this case:** Purely decimal elimination with no reconstruction step, but the statements are deliberately worded in indirect, wordy phrasing ('clears the $24 mark', 'more than nine but less than ten') rather than plain numeric claims, forcing the reader to translate prose into a range check before comparing it to the solved decimal prices. Statements D and E both test the same misconception in different clothes: that unit-price systems behave non-linearly (swap-invariance, bulk premiums) when in fact they are perfectly linear.`,
+Values to use: **Type A = $18.45/case | Type B = $27.80/case**.`,
       `**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.** — **TRUE**
 
 The actual gap is 27.80 - 18.45 = $9.35 — more than $9.00 and less than $10.00.
@@ -4773,8 +4767,6 @@ $$
 
 **3. Final answer:** Type A = $18.45/case | Type B = $27.80/case
 
-**Trap / unused data:** Purely decimal elimination with no reconstruction step, but the statements are deliberately worded in indirect, wordy phrasing ('clears the $24 mark', 'more than nine but less than ten') rather than plain numeric claims, forcing the reader to translate prose into a range check before comparing it to the solved decimal prices. Statements D and E both test the same misconception in different clothes: that unit-price systems behave non-linearly (swap-invariance, bulk premiums) when in fact they are perfectly linear.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -4812,7 +4804,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Dispatch fee = $145.50 | Rate = $1.85/mile**.
 
-**Trap / unused data for this case:** Same subtract-directly mechanism as Task 31, but the statements lean harder into 'closer to which of two round numbers' framing (A, B, C), which requires computing the exact decimal and then comparing two differences rather than doing a single pass/fail check. Statement E introduces a genuinely different idea from anything earlier in the worksheet — algebraic solutions that exist but are physically meaningless (negative distance) — foreshadowing the true no-solution case used later in this tier.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.`,
       `**B) Per mile, Swift Cargo's rate is closer to $1.50 than to $2.00.** — **FALSE**
 
 The rate is $1.85 — $0.35 from $1.50 but only $0.15 from $2.00 — closer to $2.00, not $1.50.
@@ -4917,7 +4911,9 @@ $$
 
 **3. Final answer:** Dispatch fee = $145.50 | Rate = $1.85/mile
 
-**Trap / unused data:** Same subtract-directly mechanism as Task 31, but the statements lean harder into 'closer to which of two round numbers' framing (A, B, C), which requires computing the exact decimal and then comparing two differences rather than doing a single pass/fail check. Statement E introduces a genuinely different idea from anything earlier in the worksheet — algebraic solutions that exist but are physically meaningless (negative distance) — foreshadowing the true no-solution case used later in this tier.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Two boards:** Treat each vendor/plan as its own board: solve one price pair completely, then start the other — never pour both totals into one messy system.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -4950,9 +4946,7 @@ $$
 
 Check: using the solved values from above, recompute what the claim asserts. The result disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/distractor left out), so the statement is false.
 
-Values to use: **Specialty Drink = $6.35 | Pastry = $3.80**.
-
-**Trap / unused data for this case:** The calorie column exists purely to test statement C's tempting-but-false idea that any two numeric columns can be cross-referenced to recover prices — in reality only the quantity columns carry pricing information. The remaining statements require careful decimal arithmetic dressed in casual, almost conversational phrasing rather than direct mathematical language.`,
+Values to use: **Specialty Drink = $6.35 | Pastry = $3.80**.`,
       `**B) Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined — quite a bit more, in fact.** — **TRUE**
 
 4(3.80) = $15.20 versus 6.35 + 3.80 = $10.15 — $5.05 more.
@@ -5069,8 +5063,6 @@ $$
 
 **3. Final answer:** Specialty Drink = $6.35 | Pastry = $3.80
 
-**Trap / unused data:** The calorie column exists purely to test statement C's tempting-but-false idea that any two numeric columns can be cross-referenced to recover prices — in reality only the quantity columns carry pricing information. The remaining statements require careful decimal arithmetic dressed in casual, almost conversational phrasing rather than direct mathematical language.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -5102,9 +5094,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Croissants = $13.85/dozen | Baguettes = $9.40/dozen**.
-
-**Trap / unused data for this case:** Same decimal-elimination mechanism as the previous two tasks, but pushes the indirect phrasing further still ('reading between the lines', 'blow past', 'clears two dollars'), and statement C introduces a fraction-of-total comparison (three-fifths) that must be computed as a percentage rather than read off directly.`,
+Values to use: **Croissants = $13.85/dozen | Baguettes = $9.40/dozen**.`,
       `**B) The per-dozen gap between croissants and baguettes is closer to four dollars than to five.** — **TRUE**
 
 13.85 - 9.40 = $4.45 — $0.45 from $4.00 but $0.55 from $5.00 — closer to $4.00.
@@ -5220,8 +5210,6 @@ $$
 
 **3. Final answer:** Croissants = $13.85/dozen | Baguettes = $9.40/dozen
 
-**Trap / unused data:** Same decimal-elimination mechanism as the previous two tasks, but pushes the indirect phrasing further still ('reading between the lines', 'blow past', 'clears two dollars'), and statement C introduces a fraction-of-total comparison (three-fifths) that must be computed as a percentage rather than read off directly.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -5257,9 +5245,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Fabric Roll = $27.35/unit | Yarn Spool = $19.80/unit**.
-
-**Trap / unused data for this case:** A slightly larger-magnitude version of the same decimal-elimination mechanism, with statement D introducing an unusual 'still a three-digit number after subtracting $100' framing that is really just a disguised way of asking whether the gap exceeds $200.`,
+Values to use: **Fabric Roll = $27.35/unit | Yarn Spool = $19.80/unit**.`,
       `**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.** — **FALSE**
 
 19.80 \\times 2 = $39.60, which does not clear $40.00.
@@ -5374,8 +5360,6 @@ $$
 
 **3. Final answer:** Fabric Roll = $27.35/unit | Yarn Spool = $19.80/unit
 
-**Trap / unused data:** A slightly larger-magnitude version of the same decimal-elimination mechanism, with statement D introducing an unusual 'still a three-digit number after subtracting $100' framing that is really just a disguised way of asking whether the gap exceeds $200.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -5414,7 +5398,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Nitrogen-type = $16.40/unit | Oxygen-type = $22.65/unit**.
 
-**Trap / unused data for this case:** Introduces the "redundant row" mechanism explicitly for the first time in this tier: one of three invoices must be recognized as a proportional scaled copy of another before the solver knows which two equations are actually independent. Statement A directly tests recognition of that redundancy, while statement E asks for a blended (pooled) rate across two different invoices, a genuinely different calculation from any individual invoice's own rate.`,
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Nitrogen-type cylinders are priced closer to $17.00 than to $16.00.** — **FALSE**
 
 Nitrogen-type is $16.40 — $0.40 from $16.00 but $0.60 from $17.00 — closer to $16.00, not $17.00.
@@ -5528,7 +5512,7 @@ $$
 
 **3. Final answer:** Nitrogen-type = $16.40/unit | Oxygen-type = $22.65/unit
 
-**Trap / unused data:** Introduces the "redundant row" mechanism explicitly for the first time in this tier: one of three invoices must be recognized as a proportional scaled copy of another before the solver knows which two equations are actually independent. Statement A directly tests recognition of that redundancy, while statement E asks for a blended (pooled) rate across two different invoices, a genuinely different calculation from any individual invoice's own rate.
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -5563,7 +5547,7 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Alvarez = 0.085 job/hour (8.5%/hour) | Bianchi = 0.045 job/hour (4.5%/hour)**.
 
-**Trap / unused data for this case:** A conceptually different flavor from every other task so far: a work-rate ('how much of a job per hour') system rather than a price or count system, with percentages standing in for completed-fraction units. This requires comfort converting between decimals, percentages, and fractions in the same task (statement D asks which of two fractions, 1/7 or 1/8, a decimal is closer to), and statements A and B both hinge on solo completion times that must be computed as reciprocals (1/rate) rather than direct multiplication.`,
+**Rate × time:** Each person/plant contributes (rate)×(hours). Percents finished are just the right-hand sides — convert them to decimals before eliminating.`,
       `**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.** — **FALSE**
 
 Bianchi alone needs 1/0.045 ≈ 22.22 hours for one job; Alvarez alone needs 2/0.085 ≈ 23.53 hours for two jobs — Bianchi's single-job time is actually the shorter of the two.
@@ -5680,7 +5664,7 @@ $$
 
 **3. Final answer:** Alvarez = 0.085 job/hour (8.5%/hour) | Bianchi = 0.045 job/hour (4.5%/hour)
 
-**Trap / unused data:** A conceptually different flavor from every other task so far: a work-rate ('how much of a job per hour') system rather than a price or count system, with percentages standing in for completed-fraction units. This requires comfort converting between decimals, percentages, and fractions in the same task (statement D asks which of two fractions, 1/7 or 1/8, a decimal is closer to), and statements A and B both hinge on solo completion times that must be computed as reciprocals (1/rate) rather than direct multiplication.
+**Rate × time:** Each person/plant contributes (rate)×(hours). Percents finished are just the right-hand sides — convert them to decimals before eliminating.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -5713,9 +5697,7 @@ $$
 
 Check: using the solved values from above, recompute what the claim asserts. The result disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/distractor left out), so the statement is false.
 
-Values to use: **T-Shirt = $11.65/unit | Hoodie = $18.40/unit | Season 3 T-Shirts reconstructed = 245 units**.
-
-**Trap / unused data for this case:** Combines large decimal elimination with a reconstruction step (recovering Season 3's illegible T-Shirt count from its one surviving equation), the same two-stage shape as the Cedarline task earlier in the worksheet but with much less forgiving numbers. Statements A and C are both "sounds true but isn't" traps exploiting the closer-to-the-higher-round-number pattern and the multiple-of-ten vs. multiple-of-five distinction.`,
+Values to use: **T-Shirt = $11.65/unit | Hoodie = $18.40/unit | Season 3 T-Shirts reconstructed = 245 units**.`,
       `**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.** — **TRUE**
 
 The margin is $18.40 — $0.40 from $18.00 but $0.60 from $19.00 — closer to $18.00.
@@ -5841,8 +5823,6 @@ $$
 
 **3. Final answer:** T-Shirt = $11.65/unit | Hoodie = $18.40/unit | Season 3 T-Shirts reconstructed = 245 units
 
-**Trap / unused data:** Combines large decimal elimination with a reconstruction step (recovering Season 3's illegible T-Shirt count from its one surviving equation), the same two-stage shape as the Cedarline task earlier in the worksheet but with much less forgiving numbers. Statements A and C are both "sounds true but isn't" traps exploiting the closer-to-the-higher-round-number pattern and the multiple-of-ten vs. multiple-of-five distinction.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -5881,7 +5861,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Handling fee = $94.60 | Rate = $3.15/kg | Shipment 3 predicted = $236.35 (vs. $239.80 charged — a $3.45 discrepancy)**.
 
-**Trap / unused data for this case:** Adds a unit-conversion layer (pounds to kilograms) on top of the audit/discrepancy mechanism used elsewhere in this tier, and requires performing that same conversion twice more within the statements themselves (B uses the derived rate, D re-checks the conversion arithmetic directly). The obscure phrasing throughout ('knock off', 'just shy of', 'creeps past') is consistent with the rest of this decimal-heavy tier.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.`,
       `**B) The per-kilogram rate, tripled, would land just shy of $9.50.** — **TRUE**
 
 3.15 \\times 3 = $9.45, just under $9.50.
@@ -5995,7 +5977,9 @@ discrepancy.
 
 **3. Final answer:** Handling fee = $94.60 | Rate = $3.15/kg | Shipment 3 predicted = $236.35 (vs. $239.80 charged — a $3.45 discrepancy)
 
-**Trap / unused data:** Adds a unit-conversion layer (pounds to kilograms) on top of the audit/discrepancy mechanism used elsewhere in this tier, and requires performing that same conversion twice more within the statements themselves (B uses the derived rate, D re-checks the conversion arithmetic directly). The obscure phrasing throughout ('knock off', 'just shy of', 'creeps past') is consistent with the rest of this decimal-heavy tier.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6034,7 +6018,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **No consistent solution exists for (x, y); the invoices contradict one another by $15.30.**.
 
-**Trap / unused data for this case:** This is a fundamentally different kind of task from every other one in the worksheet: the system has NO solution at all, because Client B's coefficients are exactly proportional to Client A's (a scaled repeat) while the totals are not proportional by that same factor — the two equations describe parallel, non-intersecting lines. Recognizing that no (x, y) can satisfy both equations, rather than grinding through an elimination to a wrong answer, is itself the core skill being tested, and every statement is built around quantifying and contextualizing that contradiction rather than reporting a solved price.`,
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
+
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.`,
       `**B) For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's $952.10 billed amount.** — **TRUE**
 
 Since Client B's usage is exactly double Client A's, consistency requires Client A's total to equal 952.10/2 = $476.05 exactly — precisely half.
@@ -6131,7 +6117,9 @@ equations simultaneously: this is the parallel-lines case (proportional coeffici
 
 **3. Final answer:** No consistent solution exists for (x, y); the invoices contradict one another by $15.30.
 
-**Trap / unused data:** This is a fundamentally different kind of task from every other one in the worksheet: the system has NO solution at all, because Client B's coefficients are exactly proportional to Client A's (a scaled repeat) while the totals are not proportional by that same factor — the two equations describe parallel, non-intersecting lines. Recognizing that no (x, y) can satisfy both equations, rather than grinding through an elimination to a wrong answer, is itself the core skill being tested, and every statement is built around quantifying and contextualizing that contradiction rather than reporting a solved price.
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
+
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6166,7 +6154,7 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Fund A = $4,800.00 | Fund B = $13,600.00**.
 
-**Trap / unused data for this case:** The first task to require translating a worded algebraic relationship ("$4,000 more than twice Fund A's balance") directly into Every statement forces a fresh computation rather than a simple lookup of x or y.`,
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.`,
       `**B) If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above $800.00.** — **TRUE**
 
 At the raised rate, Fund A would earn 0.0675(4,800) = $324.00, giving a combined return of $324.00 + $510.00 = $834.00, above $800.00.
@@ -6271,7 +6259,7 @@ $$
 
 **3. Final answer:** Fund A = $4,800.00 | Fund B = $13,600.00
 
-**Trap / unused data:** The first task to require translating a worded algebraic relationship ("$4,000 more than twice Fund A's balance") directly into Every statement forces a fresh computation rather than a simple lookup of x or y.
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6311,7 +6299,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Solution A = 16 g/L | Solution B = 12 g/L | Batch 3 predicted = 104 g (vs. 109 g recorded)**.
 
-**Trap / unused data for this case:** Requires converting a stated ratio (3:2, 5:1, 1:3) plus a total volume into individual component volumes before the system can even be written — a genuinely new translation step compared to earlier tasks. Statement C then reverses the model to solve for a hypothetical corrected volume from a stated discrepancy, and statement D asks the reader to apply the derived concentrations to an entirely new mixing ratio and target mass.`,
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Solution B's concentration is more than 70% of Solution A's concentration.** — **TRUE**
 
 12 ÷ 16 = 0.75, or 75%, which is more than 70%.
@@ -6440,7 +6428,7 @@ $$
 
 **3. Final answer:** Solution A = 16 g/L | Solution B = 12 g/L | Batch 3 predicted = 104 g (vs. 109 g recorded)
 
-**Trap / unused data:** Requires converting a stated ratio (3:2, 5:1, 1:3) plus a total volume into individual component volumes before the system can even be written — a genuinely new translation step compared to earlier tasks. Statement C then reverses the model to solve for a hypothetical corrected volume from a stated discrepancy, and statement D asks the reader to apply the derived concentrations to an entirely new mixing ratio and target mass.
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6473,9 +6461,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Base wage = $17.50/hour | Overtime premium = $8.50/hour (overtime rate = $26.00/hour)**.
-
-**Trap / unused data for this case:** Uses fractional (2.5-hour) overtime quantities and an overtime rate defined as base-plus-premium (x+y per OT hour) rather than a flat multiplier, which changes how the equations must be weighted during elimination (multiplying by 2.8, a non-integer factor). Statement D constructs an entirely hypothetical pay policy and asks the reader to compare it against actual earnings, requiring a full recomputation rather than a simple percentage check.`,
+Values to use: **Base wage = $17.50/hour | Overtime premium = $8.50/hour (overtime rate = $26.00/hour)**.`,
       `**B) Employee B's overtime pay (the portion earned specifically for hours beyond 40) is more than 40% of his total gross pay.** — **FALSE**
 
 Employee B's overtime pay is 7(26) = $182.00, and $182.00 ÷ $882.00 ≈ 20.6%, well short of 40%.
@@ -6591,8 +6577,6 @@ $$
 
 **3. Final answer:** Base wage = $17.50/hour | Overtime premium = $8.50/hour (overtime rate = $26.00/hour)
 
-**Trap / unused data:** Uses fractional (2.5-hour) overtime quantities and an overtime rate defined as base-plus-premium (x+y per OT hour) rather than a flat multiplier, which changes how the equations must be weighted during elimination (multiplying by 2.8, a non-integer factor). Statement D constructs an entirely hypothetical pay policy and asks the reader to compare it against actual earnings, requiring a full recomputation rather than a simple percentage check.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -6631,7 +6615,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Cedar wood = $27.00/m | Galvanized wire = $11.00/m**.
 
-**Trap / unused data for this case:** Requires spotting that Project 2 is an exact 1.5\\times scaled repeat of Project 1 (both in quantities and in total cost) before realizing only Projects 1 and 3 carry independent information — the same redundant-row mechanism as Continental Gas Supply earlier, but here the redundancy check must be performed on your own initiative rather than being flagged by the narrative. Statement C is the key conceptual trap, testing the belief that combining two orders into one somehow changes the total cost under a strictly linear pricing model.`,
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.** — **TRUE**
 
 $x - y = 27 - 11$ = 16, while 145% of the wire price is 1.45(11) = $15.95 — 16 exceeds 15.95, though only barely.
@@ -6756,7 +6740,7 @@ $$
 
 **3. Final answer:** Cedar wood = $27.00/m | Galvanized wire = $11.00/m
 
-**Trap / unused data:** Requires spotting that Project 2 is an exact 1.5\\times scaled repeat of Project 1 (both in quantities and in total cost) before realizing only Projects 1 and 3 carry independent information — the same redundant-row mechanism as Continental Gas Supply earlier, but here the redundancy check must be performed on your own initiative rather than being flagged by the narrative. Statement C is the key conceptual trap, testing the belief that combining two orders into one somehow changes the total cost under a strictly linear pricing model.
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6791,7 +6775,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Boat A = 48 km/h | Boat B = 77 km/h**.
 
-**Trap / unused data for this case:** A classic relative-motion (meeting-point) word problem, the first of its kind in the worksheet: the two equations come from translating "meet after 2 hours" and "a 3-hour head start plus 1 more hour of travel" into elapsed-time coefficients rather than being handed as prices or counts. Getting Boat B's travel time right (4 hours, not 1) is the single most important translation step in the whole task.`,
+**Closing speed:** When two craft move toward each other, the distance equation is (speed₁ + speed₂)×time = stretch — one equation is a sum of rates, not a difference.`,
       `**B) In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.** — **TRUE**
 
 At meeting, Boat B has covered 2(77)=154 km and Boat A 2(48)=96 km; the difference is 58 km, less than half of 250 km (125 km).
@@ -6896,7 +6880,7 @@ $$
 
 **3. Final answer:** Boat A = 48 km/h | Boat B = 77 km/h
 
-**Trap / unused data:** A classic relative-motion (meeting-point) word problem, the first of its kind in the worksheet: the two equations come from translating "meet after 2 hours" and "a 3-hour head start plus 1 more hour of travel" into elapsed-time coefficients rather than being handed as prices or counts. Getting Boat B's travel time right (4 hours, not 1) is the single most important translation step in the whole task.
+**Closing speed:** When two craft move toward each other, the distance equation is (speed₁ + speed₂)×time = stretch — one equation is a sum of rates, not a difference.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -6936,7 +6920,9 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Wheat = $95.00/t | Barley = $120.00/t | Season 3 Wheat reconstructed = 180 tonnes**.
 
-**Trap / unused data for this case:** Same reconstruct-the-illegible-count mechanism seen in Cedarline and Vantage Apparel, applied a third time with yet another set of numbers, confirming this is a recurring, deliberately-repeated skill in this worksheet rather than a one-off trick. Statement C's coincidental near-equal tonnages (480 vs. 440) is a deliberate near-miss trap.`,
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.** — **TRUE**
 
 $y - x = 120 - 95$ = 25, and 25% of Wheat's profit (95) is 23.75 — 25 exceeds 23.75.
@@ -7057,7 +7043,9 @@ $$
 
 **3. Final answer:** Wheat = $95.00/t | Barley = $120.00/t | Season 3 Wheat reconstructed = 180 tonnes
 
-**Trap / unused data:** Same reconstruct-the-illegible-count mechanism seen in Cedarline and Vantage Apparel, applied a third time with yet another set of numbers, confirming this is a recurring, deliberately-repeated skill in this worksheet rather than a one-off trick. Statement C's coincidental near-equal tonnages (480 vs. 440) is a deliberate near-miss trap.
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7092,7 +7080,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Elder employee = 47 years old | Younger employee = 19 years old**.
 
-**Trap / unused data for this case:** A classic "age problem" translating two time-shifted multiplicative relationships (3\\times five years ago, 2\\times nine years from now) into two linear equations in x and y — a structurally different kind of relationship-translation than any prior task, since both equations involve the SAME two unknowns shifted by different amounts of time rather than two different observations at the same moment.`,
+**Ages shift:** Ages change by the same number of years on both sides. Translate 'n years ago' by subtracting n from *both* present ages before equating.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) The current age gap (x - y) is more than 45% of the elder employee's current age.** — **TRUE**
 
 The gap is $47 - 19 = 28$, and 45% of the elder's age (47) is 21.15 — 28 exceeds 21.15.
@@ -7203,7 +7193,9 @@ $$
 
 **3. Final answer:** Elder employee = 47 years old | Younger employee = 19 years old
 
-**Trap / unused data:** A classic "age problem" translating two time-shifted multiplicative relationships (3\\times five years ago, 2\\times nine years from now) into two linear equations in x and y — a structurally different kind of relationship-translation than any prior task, since both equations involve the SAME two unknowns shifted by different amounts of time rather than two different observations at the same moment.
+**Ages shift:** Ages change by the same number of years on both sides. Translate 'n years ago' by subtracting n from *both* present ages before equating.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7243,7 +7235,7 @@ Check: using the solved values from above, recompute what the claim asserts. The
 
 Values to use: **Product A wholesale = $55.00 | Product B wholesale = $80.00**.
 
-**Trap / unused data for this case:** Layers markup percentages (32% and 18%) on top of the redundant-row mechanism, so the reader must both recognize Order 2 as a scaled duplicate AND correctly build retail-price coefficients (1.32x, 1.18y) before elimination even begins. Statement A asks for a full recomputation under a hypothetical swapped-markup policy, and statement E compares two different ratios (wholesale vs. retail) that move in opposite directions because of the differing markup rates.`,
+**Markup:** Selling price = wholesale × (1 + markup). If statements quote markups, convert them to multipliers before comparing order totals.`,
       `**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.** — **TRUE**
 
 Product B's markup is 0.18(80) = $14.40; Product A's is 0.32(55) = $17.60. 14.40 ÷ 17.60 ≈ 81.8%, which exceeds 80%.
@@ -7359,7 +7351,7 @@ $$
 
 **3. Final answer:** Product A wholesale = $55.00 | Product B wholesale = $80.00
 
-**Trap / unused data:** Layers markup percentages (32% and 18%) on top of the redundant-row mechanism, so the reader must both recognize Order 2 as a scaled duplicate AND correctly build retail-price coefficients (1.32x, 1.18y) before elimination even begins. Statement A asks for a full recomputation under a hypothetical swapped-markup policy, and statement E compares two different ratios (wholesale vs. retail) that move in opposite directions because of the differing markup rates.
+**Markup:** Selling price = wholesale × (1 + markup). If statements quote markups, convert them to multipliers before comparing order totals.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7394,7 +7386,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Win = 7 points | Draw = 3 points**.
 
-**Trap / unused data for this case:** A sports-standings version of the same "convert a stated point difference into an absolute total" mechanism used in the Alpha & Beta Holdings task earlier (Ravens = Falcons - 8). Statements A and C both require re-running the scoring formula under an entirely different, hypothetical points system, rather than simply scaling the actual solved values.`,
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) The Ravens earned more than 45% of their total points from draws alone.** — **FALSE**
 
 The Ravens' draw points total 6(3) = 18, and 18 ÷ 67 ≈ 26.9%, well short of 45%.
@@ -7509,7 +7501,7 @@ $$
 
 **3. Final answer:** Win = 7 points | Draw = 3 points
 
-**Trap / unused data:** A sports-standings version of the same "convert a stated point difference into an absolute total" mechanism used in the Alpha & Beta Holdings task earlier (Ravens = Falcons - 8). Statements A and C both require re-running the scoring formula under an entirely different, hypothetical points system, rather than simply scaling the actual solved values.
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7549,7 +7541,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)**.
 
-**Trap / unused data for this case:** Combines a unit-conversion audit (gallons to liters) with decimal density values and a boundary trap (statement B lands on exactly 50%, testing whether 'more than' is read carefully against an exact tie). This is essentially the same three-part structure (solve, then audit a third row) used repeatedly across this tier, now dressed in metallurgical density units instead of prices or profits.`,
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Metal B's density is more than 50% greater than Metal A's density.** — **FALSE**
 
 (11.4 - 7.6) ÷ 7.6 = 3.8/7.6 = 0.50 exactly, or 50% — equal to 50%, not more than it.
@@ -7679,7 +7671,7 @@ $$
 
 **3. Final answer:** Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)
 
-**Trap / unused data:** Combines a unit-conversion audit (gallons to liters) with decimal density values and a boundary trap (statement B lands on exactly 50%, testing whether 'more than' is read carefully against an exact tie). This is essentially the same three-part structure (solve, then audit a third row) used repeatedly across this tier, now dressed in metallurgical density units instead of prices or profits.
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7714,7 +7706,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Fee rate = 1.6% of AUM | Retainer = $1,200.00 (Fee = 0.016·AUM + 1200)**.
 
-**Trap / unused data for this case:** Introduces a genuinely new algebraic shortcut: because the flat retainer is identical for every client, it cancels out of any fee DIFFERENCE between two clients, letting the rate x be found from a single equation (150000x = 2400) before the retainer is recovered separately. Statement E specifically tests the misconception that a fee combining a percentage rate and a flat component scales proportionally with AUM, which it does not because of the flat retainer.`,
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) The flat retainer accounts for more than 10% of Client 2's total fee.** — **TRUE**
 
 The retainer is $1,200.00 and Client 2's total fee is $10,800.00; 1,200/10,800 ≈ 11.11%, which exceeds 10%.
@@ -7821,7 +7813,7 @@ $$
 
 **3. Final answer:** Fee rate = 1.6% of AUM | Retainer = $1,200.00 (Fee = 0.016·AUM + 1200)
 
-**Trap / unused data:** Introduces a genuinely new algebraic shortcut: because the flat retainer is identical for every client, it cancels out of any fee DIFFERENCE between two clients, letting the rate x be found from a single equation (150000x = 2400) before the retainer is recovered separately. Statement E specifically tests the misconception that a fee combining a percentage rate and a flat component scales proportionally with AUM, which it does not because of the flat retainer.
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -7861,7 +7853,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded)**.
 
-**Trap / unused data for this case:** Essentially a laboratory-flavored twin of the Meridian Alloys and Continental Freight audit tasks: a unit conversion (L to mL) feeds a third-row audit, and statement A lands just barely above an 85% threshold, continuing this tier's pattern of razor-thin true/false boundaries.`,
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.** — **FALSE**
 
 The predicted/recorded difference is 8 mg, and 8/9,700 ≈ 0.0825%, far below 1%.
@@ -7993,7 +7985,7 @@ $$
 
 **3. Final answer:** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded)
 
-**Trap / unused data:** Essentially a laboratory-flavored twin of the Meridian Alloys and Continental Freight audit tasks: a unit conversion (L to mL) feeds a third-row audit, and statement A lands just barely above an 85% threshold, continuing this tier's pattern of razor-thin true/false boundaries.
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8026,9 +8018,7 @@ $$
 
 Check: using the solved values from above, recompute what the claim asserts. The result disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/distractor left out), so the statement is false.
 
-Values to use: **Stud price = $4.50 | Drywall sheet price = $38.00**.
-
-**Trap / unused data for this case:** Requires converting a percentage-based waste allowance into inflated order quantities (224, 162, 392, 189) before any equation exists, then reversing that same waste logic in several different directions across the statements (removing waste to find usable-only cost, changing the waste percentage hypothetically, and comparing waste percentages between two different jobs).`,
+Values to use: **Stud price = $4.50 | Drywall sheet price = $38.00**.`,
       `**B) If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than $150.00.** — **TRUE**
 
 At 5% drywall waste, ordered sheets = 183.75; new Invoice 2 = 392(4.50) + 183.75(38) = $8,746.50, a decrease of $199.50 from $8,946.00 — more than $150.00.
@@ -8145,8 +8135,6 @@ $$
 
 **3. Final answer:** Stud price = $4.50 | Drywall sheet price = $38.00
 
-**Trap / unused data:** Requires converting a percentage-based waste allowance into inflated order quantities (224, 162, 392, 189) before any equation exists, then reversing that same waste logic in several different directions across the statements (removing waste to find usable-only cost, changing the waste percentage hypothetically, and comparing waste percentages between two different jobs).
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -8185,7 +8173,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Scale factor = 3.50 | Offset = 13.50 | Verification predicted = 171.00 (vs. 172.20 recorded)**.
 
-**Trap / unused data for this case:** A calibration-curve task that is structurally identical to a fixed-fee-plus-rate model ( Statement C is a direction trap: the predicted value is actually below the reference, so any claim about it exceeding the reference is automatically false regardless of the percentage threshold named.`,
+**Affine map:** Here the two unknowns *are* the slope and intercept of True = (scale)×Reading + offset. Two calibration points → one 2×2 system.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.** — **TRUE**
 
 At double the offset (27.0): predicted = 3.5(20) + 27 = 97, which exceeds 95.
@@ -8298,7 +8288,9 @@ $$
 
 **3. Final answer:** Scale factor = 3.50 | Offset = 13.50 | Verification predicted = 171.00 (vs. 172.20 recorded)
 
-**Trap / unused data:** A calibration-curve task that is structurally identical to a fixed-fee-plus-rate model ( Statement C is a direction trap: the predicted value is actually below the reference, so any claim about it exceeding the reference is automatically false regardless of the percentage threshold named.
+**Affine map:** Here the two unknowns *are* the slope and intercept of True = (scale)×Reading + offset. Two calibration points → one 2×2 system.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8333,7 +8325,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Coffee = $6.20/kg | Cocoa = $4.85/kg**.
 
-**Trap / unused data for this case:** The same ratio-to-volume conversion mechanism as the Solventis Labs saline task, applied here to a two-shipment commodities blend with two different mixing ratios (3:2 and 5:3) rather than one ratio repeated — requiring the reader to redo the conversion independently for each shipment before elimination can begin.`,
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
+
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.** — **TRUE**
 
 Coffee's cost in Shipment 1 is 312(6.20) = $1,934.40, and $1,934.40 ÷ $2,943.20 ≈ 65.72%, which exceeds 65%.
@@ -8457,7 +8451,9 @@ $$
 
 **3. Final answer:** Coffee = $6.20/kg | Cocoa = $4.85/kg
 
-**Trap / unused data:** The same ratio-to-volume conversion mechanism as the Solventis Labs saline task, applied here to a two-shipment commodities blend with two different mixing ratios (3:2 and 5:3) rather than one ratio repeated — requiring the reader to redo the conversion independently for each shipment before elimination can begin.
+**Base + rate:** Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first (or keep it as a shared unknown) so you do not invent a third fake variable.
+
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8497,7 +8493,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Truck = 32.0 L/100km | Van = 18.0 L/100km | Route 3 predicted = 152.0 L (vs. 155.0 L recorded)**.
 
-**Trap / unused data for this case:** Repeats the unit-conversion-plus-audit structure once more (miles to km feeding a third-route check), with statement B landing just under a 2% threshold (1.94%) — another razor-thin boundary case — and statement D introducing a genuinely new idea: a blended, fleet-wide rate that must be compared against each individual rate to see which one it sits closer to.`,
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.`,
       `**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.** — **FALSE**
 
 The difference is 3 L, and 3/155 ≈ 1.94%, which is not more than 2%.
@@ -8620,7 +8616,7 @@ $$
 
 **3. Final answer:** Truck = 32.0 L/100km | Van = 18.0 L/100km | Route 3 predicted = 152.0 L (vs. 155.0 L recorded)
 
-**Trap / unused data:** Repeats the unit-conversion-plus-audit structure once more (miles to km feeding a third-route check), with statement B landing just under a 2% threshold (1.94%) — another razor-thin boundary case — and statement D introducing a genuinely new idea: a blended, fleet-wide rate that must be compared against each individual rate to see which one it sits closer to.
+**Missing cell:** When one entry is missing but another row is an exact scale (or double), rebuild the lost quantity from that proportion first, then solve for prices.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8655,7 +8651,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Bond rate = 5.4% | Equity rate = 6.6%**.
 
-**Trap / unused data for this case:** A genuinely elegant "add and subtract" system: adding the two allocation equations directly gives x + y, and subtracting gives y - x, sidestepping a traditional elimination-by-multiplication entirely. Statement C tests whether the reader mistakenly assumes the sum of two partial-allocation returns should be comparable to a single full-allocation return, when in fact they describe entirely different amounts of money earning interest.`,
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.
+
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.`,
       `**B) Under the current allocation, the blended rate (total return ÷ total fund) is less than 6%.** — **TRUE**
 
 The current blended rate is 2,646/45,000 = 5.88%, which is less than 6%.
@@ -8771,7 +8769,9 @@ $$
 
 **3. Final answer:** Bond rate = 5.4% | Equity rate = 6.6%
 
-**Trap / unused data:** A genuinely elegant "add and subtract" system: adding the two allocation equations directly gives x + y, and subtracting gives y - x, sidestepping a traditional elimination-by-multiplication entirely. Statement C tests whether the reader mistakenly assumes the sum of two partial-allocation returns should be comparable to a single full-allocation return, when in fact they describe entirely different amounts of money earning interest.
+**Interest mix:** Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. The rates are coefficients — do not average them and split the pile in half.
+
+**Mixture:** Turn the given ratio into two linked amounts (or one free unknown + a multiple) before writing the cost/mass equation — do not treat the ratio as a second price.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8811,7 +8811,9 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Fixed fee = $214.70 | Rate = $4.68/$1,000 | Renters coverage reconstructed = $25,000**.
 
-**Trap / unused data for this case:** The reconstruction step here (finding Renters' missing coverage from its one surviving premium equation) is the same mechanism used repeatedly across this tier, but statement D introduces a subtle, counter-intuitive result: a policy with MORE total coverage can have a LOWER effective rate per $1,000, purely because the same fixed fee is spread across a larger base — the opposite of what a reader might instinctively expect.`,
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.`,
       `**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.** — **FALSE**
 
 214.70/612.50 ≈ 35.05%, which does not exceed 60%.
@@ -8929,7 +8931,9 @@ $$
 
 **3. Final answer:** Fixed fee = $214.70 | Rate = $4.68/$1,000 | Renters coverage reconstructed = $25,000
 
-**Trap / unused data:** The reconstruction step here (finding Renters' missing coverage from its one surviving premium equation) is the same mechanism used repeatedly across this tier, but statement D introduces a subtle, counter-intuitive result: a policy with MORE total coverage can have a LOWER effective rate per $1,000, purely because the same fixed fee is spread across a larger base — the opposite of what a reader might instinctively expect.
+**Peel-first:** Strip the fixed fee, tax, or penalty out of each total before writing the two-unknown system — leave only the pure price × quantity rows.
+
+**Exact vs strict:** Several false claims swing on *exact* equality vs *more than* / *less than*. Compute the exact value, then compare — a near miss is still false.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
@@ -8962,9 +8966,7 @@ $$
 
 Check: after the system is solved above, substitute the recovered values back into this claim (or recompute the described scenario with those values). The numbers match exactly, so the statement is true.
 
-Values to use: **Species A = +72 individuals/year | Species B = +36 individuals/year**.
-
-**Trap / unused data for this case:** A linear-growth word problem where the two equations come from a combined-growth total and a stated ratio between the two growth rates, rather than from two separate direct observations. Statement D tests an intermediate-value-style argument (a lead reversal implies a crossing point) without requiring the exact crossing time, while statement E then demands that exact time and checks it against a specific year.`,
+Values to use: **Species A = +72 individuals/year | Species B = +36 individuals/year**.`,
       `**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.** — **TRUE**
 
 If Species B also grew at 72/year: Species B at Year 6 = 730 + 4(72) = 1,018. New combined total = 898 + 1,018 = 1,916, exceeding the actual 1,772 by 144 — more than 140.
@@ -9065,8 +9067,6 @@ $$
 
 **3. Final answer:** Species A = +72 individuals/year | Species B = +36 individuals/year
 
-**Trap / unused data:** A linear-growth word problem where the two equations come from a combined-growth total and a stated ratio between the two growth rates, rather than from two separate direct observations. Statement D tests an intermediate-value-style argument (a lead reversal implies a crossing point) without requiring the exact crossing time, while statement E then demands that exact time and checks it against a specific year.
-
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },
   {
@@ -9105,7 +9105,7 @@ Check: after the system is solved above, substitute the recovered values back in
 
 Values to use: **Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)**.
 
-**Trap / unused data for this case:** Closes the worksheet with the same unit-conversion-plus-audit shape used throughout this tier (minutes to hours, third-row discrepancy), and statement C is the most conceptually demanding trap in the entire 60-task set: it asks the reader to swap which plant gets which total operating time and correctly predict that the grand total goes DOWN, because pairing the higher-output plant with fewer hours (rather than more) reduces total production even though the same total hours are being worked overall. End of Worksheet — 60 Tasks — Linear Equations with Two Unknowns.`,
+**Rate × time:** Each person/plant contributes (rate)×(hours). Percents finished are just the right-hand sides — convert them to decimals before eliminating.`,
       `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.** — **TRUE**
 
 The discrepancy is 10 MWh, and 10/3,553 ≈ 0.2815%, which is less than 0.3%.
@@ -9237,7 +9237,7 @@ $$
 
 **3. Final answer:** Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)
 
-**Trap / unused data:** Closes the worksheet with the same unit-conversion-plus-audit shape used throughout this tier (minutes to hours, third-row discrepancy), and statement C is the most conceptually demanding trap in the entire 60-task set: it asks the reader to swap which plant gets which total operating time and correctly predict that the grand total goes DOWN, because pairing the higher-output plant with fewer hours (rather than more) reduces total production even though the same total hours are being worked overall. End of Worksheet — 60 Tasks — Linear Equations with Two Unknowns.
+**Rate × time:** Each person/plant contributes (rate)×(hours). Percents finished are just the right-hand sides — convert them to decimals before eliminating.
 
 Verify by substituting the final values back into both original equations before judging the statements.`,
   },

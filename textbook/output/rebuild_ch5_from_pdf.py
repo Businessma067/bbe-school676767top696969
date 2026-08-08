@@ -455,48 +455,260 @@ def normalize_sectioned_table(rows: list[list[str]]) -> list[list[str]]:
     return [header] + out
 
 
-def trap_notes(given: str, general: str) -> str:
-    """Pedagogy/trap blurbs without forced variable names."""
+def _scrub_tip_prose(tip: str) -> str:
+    """Clean PDF coaching sentences without wiping ordinary English words."""
+    tip = flatten(tip)
+    tip = re.sub(r"\bLet\s+[a-zA-Z]\w*(?:\s+and\s+[a-zA-Z]\w*)?\s*=\s*[^.;]+[.;]?", "", tip, flags=re.I)
+    tip = re.sub(r"\bfind\s+[a-z]\s+and\s+[a-z]\b", "find the two unknowns", tip, flags=re.I)
+    tip = re.sub(r"\bto find\s+[a-z]\s+and\s+[a-z]\b", "to find the two unknowns", tip, flags=re.I)
+    tip = re.sub(r"\s{2,}", " ", tip).strip(" ;,.")
+    return tip
 
-    def scrub(s: str) -> str:
-        s = flatten(s or "")
-        if not s:
-            return ""
-        s = re.sub(r"\bLet\s+.+?(?=\.\s|\.\Z|$)", "", s, flags=re.I)
-        s = re.sub(
-            r"\b(?:denote|write|choose)\b[^.]{0,80}\b(?:prices|variables|unknowns)\b[^.]{0,40}\.?",
-            "",
-            s,
-            flags=re.I,
-        )
-        # Drop pure translation-into-symbols coaching (x - 50 = y + 50 style lectures)
-        s = re.sub(
-            r"[^.]*\b(?:would have|translated into an equation|must be translated|algebraic statement)[^.]*\.",
-            "",
-            s,
-            flags=re.I,
-        )
-        s = re.sub(r"\b[xyabcfrsd]\d?\s*=\s*[^.;]+[.;]?", "", s, flags=re.I)
-        s = re.sub(r"\s{2,}", " ", s)
-        s = re.sub(r"\s+([.,;:])", r"\1", s)
-        return s.strip(" ;,")
 
-    # Prefer general pedagogy; fall back to scrubbed given
-    for src in (general, given):
-        s = scrub(src)
-        if len(s) >= 40:
-            note = s
-            break
-    else:
+def contextual_notes(
+    fmt: str,
+    narrative: str,
+    given: str,
+    general: str,
+    statements: list[str],
+    answer_key: list[bool],
+) -> list[tuple[str, str]]:
+    """
+    Sparse, case-specific coaching — only when a real trap or setup twist exists.
+    Skip plain sum-and-difference cases; never lecture about 'simplest system'.
+    """
+    narrative_l = (narrative or "").lower()
+    given_l = (given or "").lower()
+    general_l = (general or "").lower()
+    stmts_l = " ".join(statements).lower()
+    blob = " ".join([fmt, narrative_l, given_l, general_l, stmts_l])
+    notes: list[tuple[str, str]] = []
+
+    def add(label: str, text: str) -> None:
+        text = re.sub(r"\s{2,}", " ", text).strip()
+        if len(text) < 28:
+            return
+        for _, existing in notes:
+            if text[:50].lower() in existing.lower() or existing[:50].lower() in text.lower():
+                return
+        notes.append((label, text))
+
+    # Skip preacher notes about how "simple" the case is
+    def is_boilerplate(s: str) -> bool:
+        low = s.lower()
+        return any(
+            p in low
+            for p in (
+                "simplest possible",
+                "round numbers",
+                "main traps are statement",
+                "no fees, no percentages",
+            )
+        )
+
+    # --- Explicit unused / distractor column (PDF must mark it) ---
+    unused_hit = re.search(
+        r"([^.]*\b(?:not needed|need not|do not affect|does not affect|should be set aside|"
+        r"play no role|distractor|cannot be used|not every figure|"
+        r"loyalty[- ](?:card |discount )?note|advertised figures|"
+        r"claim to (?:be )?check|claim to verify|gross figures cannot)"
+        r"[^.]*\.)",
+        " ".join([given, narrative]),
+        flags=re.I,
+    )
+    if unused_hit:
+        tip = _scrub_tip_prose(unused_hit.group(1))
+        if len(tip) >= 40 and not is_boilerplate(tip):
+            add("Distractor", tip + ("" if tip.endswith(".") else "."))
+
+    # --- Peel constants: delivery / setup / connection / service / late penalty ---
+    if re.search(
+        r"\b(delivery fee|setup fee|connection fee|signup fee|handling fee|dispatch fee|"
+        r"service (?:fee|charge)|fixed (?:monthly )?fee|occupancy tax|late penalty|"
+        r"\d+%\s*(?:occupancy )?tax|\d+%\s*service)\b",
+        blob,
+    ) and not re.search(r"\bno (?:fees|separate connection fee)\b", blob):
+        add(
+            "Peel-first",
+            "Strip the fixed fee, tax, or penalty out of each total before writing the "
+            "two-unknown system — leave only the pure price × quantity rows.",
+        )
+
+    # --- Two rival vendors / suppliers / carriers (true multi-system) ---
+    if re.search(
+        r"\b(two suppliers|two vendors|vendor a\b|vendor b\b|supplier a\b|supplier b\b|"
+        r"quotations from two|competitor charges|deciding between two|"
+        r"two ride-hailing|citycab|quickcopy|printfast express|"
+        r"skylink mobile|basic\b.{0,40}\bstandard\b.{0,80}\boverage)\b",
+        blob,
+    ):
+        add(
+            "Two boards",
+            "Treat each vendor/plan as its own board: solve one price pair completely, "
+            "then start the other — never pour both totals into one messy system.",
+        )
+
+    # --- Interest / portfolio split ---
+    if re.search(r"\b(simple annual (?:interest|return)|interest|bond portfolio|equity portfolio|"
+                 r"fund a pays|account a pays)\b", blob) and re.search(r"%", blob):
+        add(
+            "Interest mix",
+            "Write principal₁ + principal₂ = total and r₁·p₁ + r₂·p₂ = interest earned. "
+            "The rates are coefficients — do not average them and split the pile in half.",
+        )
+
+    # --- Base + overage / per-distance energy (not bare "per unit" prices) ---
+    if re.search(
+        r"\b(overage|over (?:their )?allowance|per (?:gb|mile|km|page|kilogram)\b|"
+        r"fixed (?:dispatch|connection|handling|setup|monthly) fee plus|"
+        r"rate per (?:mile|km|kg|page|compute)|per-compute|per-storage|"
+        r"\$\d+(?:\.\d+)?/gb|\$\d+(?:\.\d+)? per mile)\b",
+        blob,
+    ):
+        add(
+            "Base + rate",
+            "Each bill is (fixed piece) + (usage × rate). Subtract the fixed piece first "
+            "(or keep it as a shared unknown) so you do not invent a third fake variable.",
+        )
+
+    # --- Gross vs net / returns ---
+    if re.search(r"\b(net sales|gross sales|returns must be subtracted|minus returns)\b", blob):
+        add(
+            "Net, not gross",
+            "Only *net* units (or net dollars) belong in the price equations. "
+            "Gross − returns comes first; plugging gross totals skews both unknowns.",
+        )
+
+    # --- Mixture / ratio batches ---
+    if re.search(r"\b(mixed\s+\d+\s*:\s*\d+|volume ratio|mass-per-liter|mg/ml|stock solution|"
+                 r"blend(?:s|ed)?|concentration)\b", blob):
+        add(
+            "Mixture",
+            "Turn the given ratio into two linked amounts (or one free unknown + a multiple) "
+            "before writing the cost/mass equation — do not treat the ratio as a second price.",
+        )
+
+    # --- Work-rate / % complete / plant output ---
+    if re.search(
+        r"\b(% finished|percent finished|overhaul|technician|mwh-per-hour|operating time|"
+        r"alvarez|bianchi|power plants?)\b",
+        blob,
+    ):
+        add(
+            "Rate × time",
+            "Each person/plant contributes (rate)×(hours). Percents finished are just the "
+            "right-hand sides — convert them to decimals before eliminating.",
+        )
+
+    # --- Scaled / double client / water-damaged missing cell ---
+    if re.search(r"\b(exactly double|scaled rep(?:lica)?|water-damaged|logged in min|"
+                 r"coverage was missing|volume was lost|distance was)\b", blob):
+        add(
+            "Missing cell",
+            "When one entry is missing but another row is an exact scale (or double), "
+            "rebuild the lost quantity from that proportion first, then solve for prices.",
+        )
+
+    # --- Calibration / linear convert ---
+    if re.search(r"\b(scale factor|true value|calibration|offset)\b", blob):
+        add(
+            "Affine map",
+            "Here the two unknowns *are* the slope and intercept of "
+            "True = (scale)×Reading + offset. Two calibration points → one 2×2 system.",
+        )
+
+    # --- Meet / opposite travel ---
+    if re.search(r"\b(opposite docks|meet (?:in|after)|combined,? they cover|closing speed)\b", blob):
+        add(
+            "Closing speed",
+            "When two craft move toward each other, the distance equation is "
+            "(speed₁ + speed₂)×time = stretch — one equation is a sum of rates, not a difference.",
+        )
+
+    # --- Age puzzles ---
+    if re.search(r"\b(years ago|elder|younger|age)\b", blob) and re.search(r"\b(was twice|three times|older)\b", blob):
+        add(
+            "Ages shift",
+            "Ages change by the same number of years on both sides. Translate "
+            "'n years ago' by subtracting n from *both* present ages before equating.",
+        )
+
+    # --- Markup over wholesale ---
+    if re.search(r"\b(marks? up|markup|over wholesale|profit margin)\b", blob) and re.search(r"%", blob):
+        add(
+            "Markup",
+            "Selling price = wholesale × (1 + markup). If statements quote markups, "
+            "convert them to multipliers before comparing order totals.",
+        )
+
+    # --- Receipt: known lines then mystery ---
+    if re.search(r"\b(receipt)\b", blob) and re.search(
+        r"\b(already known|bread and egg|loyalty[- ](?:card )?|organic apples)\b", blob
+    ):
+        add(
+            "Receipt",
+            "Knock off every known-priced line first; only the leftover money feeds "
+            "the system for the mystery items.",
+        )
+
+    # --- Ad / forecast / claim is not data ---
+    if (
+        re.search(r"\b(forecast|projected|projection|\$\d[\d,]* \(projected\))\b", blob)
+        or (
+            re.search(r"\b(ad boasts|advertised|customer service claims|flyer)\b", blob)
+            and re.search(r"\b(not needed|distractor|claim|verify|check)\b", blob + given_l + general_l)
+        )
+    ):
+        add(
+            "Source check",
+            "Projected rows, ads, and verbal claims are for judging statements — "
+            "only measured invoices/logs go into the solving system.",
+        )
+
+    # --- Boundary language across several false claims ---
+    boundary_false_n = sum(
+        1
+        for stmt, ans in zip(statements, answer_key)
+        if (not ans)
+        and re.search(r"\b(more than|less than|exceed(?:ed|s)?|strictly|at least|at most)\b", stmt, flags=re.I)
+    )
+    if boundary_false_n >= 2:
+        add(
+            "Exact vs strict",
+            "Several false claims swing on *exact* equality vs *more than* / *less than*. "
+            "Compute the exact value, then compare — a near miss is still false.",
+        )
+
+    # Prefer the most specific notes; never more than 2
+    priority = [
+        "Distractor",
+        "Peel-first",
+        "Receipt",
+        "Two boards",
+        "Interest mix",
+        "Base + rate",
+        "Net, not gross",
+        "Mixture",
+        "Rate × time",
+        "Missing cell",
+        "Affine map",
+        "Closing speed",
+        "Ages shift",
+        "Markup",
+        "Source check",
+        "Exact vs strict",
+    ]
+    notes.sort(key=lambda pair: priority.index(pair[0]) if pair[0] in priority else 99)
+    return notes[:2]
+
+
+def format_coach_block(notes: list[tuple[str, str]]) -> str:
+    if not notes:
         return ""
-
-    note = re.sub(r"\bLet\b[^.]{0,120}", "", note, flags=re.I)
-    note = re.sub(r"\bx[AB]\b|\by[AB]\b", "", note)
-    note = re.sub(r"\.{2,}", ".", note)
-    note = re.sub(r"\s{2,}", " ", note).strip(" ;,.")
-    if note and not note.endswith("."):
-        note += "."
-    return note
+    parts = []
+    for label, text in notes:
+        parts.append(f"**{label}:** {text}")
+    return "\n\n".join(parts)
 
 
 def extract_model_eqs(model: str) -> list[str]:
@@ -615,7 +827,7 @@ def statement_explanation(
     raw: str,
     model: str,
     final: str,
-    traps: str,
+    coach: str,
     is_first: bool,
 ) -> str:
     label = "TRUE" if verdict else "FALSE"
@@ -655,13 +867,14 @@ def statement_explanation(
         parts.append(f"Values to use: **{final}**.")
         parts.append("")
 
-    if is_first and traps:
-        parts.append(f"**Trap / unused data for this case:** {traps}")
+    # Only on the first statement, and only if this case earned contextual tips
+    if is_first and coach:
+        parts.append(coach)
 
     return "\n".join(parts).strip()
 
 
-def build_overview(model: str, solution: str, final: str, traps: str) -> str:
+def build_overview(model: str, solution: str, final: str, coach: str) -> str:
     parts = [
         "**1. Mathematical model**",
         "",
@@ -681,8 +894,8 @@ def build_overview(model: str, solution: str, final: str, traps: str) -> str:
             "simplify carefully, then back-substitute and verify both original equations."
         )
     parts += ["", f"**3. Final answer:** {final}"]
-    if traps:
-        parts += ["", f"**Trap / unused data:** {traps}"]
+    if coach:
+        parts += ["", coach]
     parts += [
         "",
         "Verify by substituting the final values back into both original equations before judging the statements.",
@@ -737,7 +950,20 @@ for num in range(1, 61):
     if fm:
         final = flatten(fm.group(1))
 
-    traps = trap_notes(given, general)
+    fmt_m = re.search(r"Format:\s*([^|\n]+)", text)
+    fmt = fmt_m.group(1).strip() if fmt_m else ""
+
+    # Narrative for coach detection (before stripping tables out of prose)
+    narrative_for_coach = ""
+    header_end = text.find("\nGIVEN\n")
+    if header_end > 0:
+        head = text[:header_end]
+        lines = head.split("\n")
+        skip = 0
+        for i, line in enumerate(lines):
+            if line.startswith("TASK ") or line.startswith("Format:") or line.startswith("(previously"):
+                skip = i + 1
+        narrative_for_coach = flatten(" ".join(lines[skip:]))
 
     top, bottom = stem_bounds(page, num)
     seed_bboxes = []
@@ -752,7 +978,6 @@ for num in range(1, 61):
         prose_bboxes.append((b[0], b[1], b[2], min(bottom, b[3] + 60)))
     prose = stem_prose(page, top, bottom, prose_bboxes)
     if not prose:
-        header_end = text.find("\nGIVEN\n")
         if header_end > 0:
             head = text[:header_end]
             lines = head.split("\n")
@@ -781,6 +1006,18 @@ for num in range(1, 61):
             md_parts.append(md)
     tables_md = "\n\n".join(md_parts)
 
+    # Coach from stem + statements + GIVEN only (skip page TOC / GENERAL sermon text)
+    coach = format_coach_block(
+        contextual_notes(
+            "",
+            prose or narrative_for_coach,
+            given,
+            "",
+            statements,
+            answers,
+        )
+    )
+
     # Context = narrative only (no forced Variables / Let x = ...)
     context = prose.strip()
 
@@ -797,10 +1034,10 @@ for num in range(1, 61):
             "model": model,
             "solution": solution,
             "final_answer": final,
-            "traps": traps,
+            "coach": coach,
         }
     )
-    print(f"task {num:02d}: tables={len(md_parts)} prose_len={len(prose)}")
+    print(f"task {num:02d}: tables={len(md_parts)} coach={'yes' if coach else 'no'}")
 
 RAW_OUT.write_text(json.dumps(tasks, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -826,7 +1063,7 @@ for t in tasks:
             t["explanations"][i],
             t["model"],
             t["final_answer"],
-            t.get("traps") or "",
+            t.get("coach") or "",
             is_first=(i == 0),
         )
         for i in range(5)
@@ -852,7 +1089,7 @@ for t in tasks:
     lines.append(f'    difficulty_level: "{d5}/5",')
     lines.append(f"    sort_order: {n},")
     lines.append(
-        f"    solution_overview: `{esc(build_overview(t['model'], t.get('solution') or '', t['final_answer'], t.get('traps') or ''))}`,"
+        f"    solution_overview: `{esc(build_overview(t['model'], t.get('solution') or '', t['final_answer'], t.get('coach') or ''))}`,"
     )
     lines.append("  },")
 
