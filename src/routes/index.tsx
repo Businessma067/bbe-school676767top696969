@@ -75,7 +75,7 @@ function Index() {
                   </span>
                 </div>
 
-                <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                <h1 className="font-display text-[2rem] font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl sm:leading-[1.05] lg:text-6xl">
                   Step by step preparation for your 2027 WU BBE exam
                 </h1>
 

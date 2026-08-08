@@ -189,7 +189,7 @@ export function CaseContextRich({ content, className, emphasized }: CaseContextR
   return (
     <div
       className={cn(
-        "case-context-rich max-w-full text-sm leading-relaxed text-muted-foreground",
+        "case-context-rich max-w-full break-words text-sm leading-relaxed text-muted-foreground",
         "[&_p]:mb-3 [&_p:last-child]:mb-0",
         "[&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5",
         "[&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5",

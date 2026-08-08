@@ -63,13 +63,18 @@ function segmentTheory(markdown: string): Segment[] {
   return segments;
 }
 
-function MdBlock({ text }: { text: string }) {
+function MdBlock({ text, dense }: { text: string; dense?: boolean }) {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
         h1: ({ children }) => (
-          <h1 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+          <h1
+            className={cn(
+              "break-words font-display font-bold tracking-tight text-foreground",
+              dense ? "mb-3 text-xl leading-snug" : "mb-4 text-2xl sm:text-3xl",
+            )}
+          >
             {children}
           </h1>
         ),
@@ -79,7 +84,12 @@ function MdBlock({ text }: { text: string }) {
           return (
             <h2
               id={id}
-              className="mb-3 mt-10 scroll-mt-4 border-b border-border/70 pb-2 font-display text-xl font-bold text-foreground first:mt-0"
+              className={cn(
+                "break-words border-b border-border/70 font-display font-bold text-foreground first:mt-0",
+                dense
+                  ? "mb-2 mt-6 scroll-mt-3 pb-1.5 text-lg leading-snug"
+                  : "mb-3 mt-10 scroll-mt-24 pb-2 text-xl sm:scroll-mt-4",
+              )}
             >
               {children}
             </h2>
@@ -89,38 +99,76 @@ function MdBlock({ text }: { text: string }) {
           const label = String(children);
           const id = slugify(label);
           return (
-            <h3 id={id} className="mb-2 mt-8 scroll-mt-4 text-lg font-bold text-foreground">
+            <h3
+              id={id}
+              className={cn(
+                "break-words font-bold text-foreground",
+                dense
+                  ? "mb-1.5 mt-5 scroll-mt-3 text-base leading-snug"
+                  : "mb-2 mt-8 scroll-mt-24 text-lg sm:scroll-mt-4",
+              )}
+            >
               {children}
             </h3>
           );
         },
         p: ({ children }) => (
-          <p className="mb-4 text-[15px] leading-7 text-foreground/95 sm:text-base sm:leading-7">{children}</p>
+          <p
+            className={cn(
+              "break-words text-foreground/95",
+              dense
+                ? "mb-3 text-[14px] leading-6"
+                : "mb-4 text-[15px] leading-7 sm:text-base sm:leading-7",
+            )}
+          >
+            {children}
+          </p>
         ),
         strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
         em: ({ children }) => <em className="text-foreground/90">{children}</em>,
         ul: ({ children }) => (
-          <ul className="mb-4 list-disc space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">{children}</ul>
+          <ul
+            className={cn(
+              "mb-4 list-disc space-y-1.5 pl-5",
+              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
+            )}
+          >
+            {children}
+          </ul>
         ),
         ol: ({ children }) => (
-          <ol className="mb-4 list-decimal space-y-1.5 pl-5 text-[15px] leading-7 sm:text-base">{children}</ol>
+          <ol
+            className={cn(
+              "mb-4 list-decimal space-y-1.5 pl-5",
+              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
+            )}
+          >
+            {children}
+          </ol>
         ),
-        li: ({ children }) => <li className="pl-0.5">{children}</li>,
+        li: ({ children }) => <li className="break-words pl-0.5">{children}</li>,
         blockquote: ({ children }) => (
-          <blockquote className="mb-5 border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
+          <blockquote
+            className={cn(
+              "mb-5 border-l-4 border-primary/70 bg-primary/5 px-3 text-foreground sm:px-4",
+              dense ? "py-2.5 text-[14px] leading-6" : "py-3 text-[15px] leading-7",
+            )}
+          >
             {children}
           </blockquote>
         ),
         table: ({ children }) => (
-          <div className="my-5 w-full overflow-x-auto border border-border bg-white">
-            <table className="w-full min-w-[20rem] border-collapse text-[13px] sm:text-sm">{children}</table>
+          <div className="my-4 w-full overflow-x-auto border border-border bg-white [-webkit-overflow-scrolling:touch]">
+            <table className="w-full min-w-[18rem] border-collapse text-[12px] sm:min-w-[20rem] sm:text-sm">{children}</table>
           </div>
         ),
         thead: ({ children }) => <thead className="bg-primary text-primary-foreground">{children}</thead>,
         tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
         tr: ({ children }) => <tr className="border-b border-border/80 last:border-0">{children}</tr>,
         th: ({ children }) => (
-          <th className="whitespace-nowrap px-3 py-2.5 text-left align-bottom font-semibold">{children}</th>
+          <th className="px-2 py-2 text-left align-bottom font-semibold sm:whitespace-nowrap sm:px-3 sm:py-2.5">
+            {children}
+          </th>
         ),
         td: ({ children }) => {
           const text = String(children ?? "");
@@ -129,7 +177,7 @@ function MdBlock({ text }: { text: string }) {
           return (
             <td
               className={cn(
-                "border-r border-border/50 px-3 py-2.5 align-top leading-snug text-foreground last:border-r-0",
+                "border-r border-border/50 px-2 py-2 align-top leading-snug text-foreground last:border-r-0 sm:px-3 sm:py-2.5",
                 numeric && "whitespace-nowrap text-right tabular-nums",
                 total && "font-semibold",
               )}
@@ -138,7 +186,7 @@ function MdBlock({ text }: { text: string }) {
             </td>
           );
         },
-        hr: () => <hr className="my-8 border-border" />,
+        hr: () => <hr className={cn("border-border", dense ? "my-5" : "my-8")} />,
       }}
     >
       {text}
@@ -169,7 +217,6 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     setReaderMode(false);
   }, [chapter, toc]);
 
-  // Exit reader mode on Escape; lock page scroll while reading fullscreen.
   useEffect(() => {
     if (!readerMode) return;
     const onKey = (e: KeyboardEvent) => {
@@ -184,8 +231,8 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     };
   }, [readerMode]);
 
-  // Keep the active topic chip in view — scroll the strip when it reaches the edge.
   useEffect(() => {
+    if (readerMode) return; // strip hidden in reader mode
     const container = tocScrollRef.current;
     const chip = chipRefs.current[activeId];
     if (!container || !chip || !activeId) return;
@@ -209,7 +256,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     }
 
     container.scrollTo({ left: nextLeft, behavior: "smooth" });
-  }, [activeId]);
+  }, [activeId, readerMode]);
 
   const onScroll = () => {
     if (rafRef.current != null) return;
@@ -219,7 +266,6 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       if (!el) return;
 
       const max = el.scrollHeight - el.clientHeight;
-      // Direct tracking (no CSS width transition) — avoids restart churn / stutter.
       setProgress(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
 
       const rootTop = el.getBoundingClientRect().top;
@@ -227,7 +273,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       for (const item of toc) {
         const node = el.querySelector<HTMLElement>(`#${CSS.escape(item.id)}`);
         if (!node) continue;
-        if (node.getBoundingClientRect().top - rootTop <= 72) current = item.id;
+        if (node.getBoundingClientRect().top - rootTop <= 56) current = item.id;
       }
       if (current !== activeIdRef.current) setActiveId(current);
     });
@@ -243,7 +289,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     const el = scrollRef.current;
     const node = el?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
     if (!el || !node) return;
-    el.scrollTo({ top: node.offsetTop - 8, behavior: "smooth" });
+    el.scrollTo({ top: Math.max(0, node.offsetTop - 8), behavior: "smooth" });
   };
 
   let body: ReactNode = null;
@@ -259,7 +305,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       seg.kind === "figure" ? (
         <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />
       ) : (
-        <MdBlock key={`m-${i}`} text={seg.text} />
+        <MdBlock key={`m-${i}`} text={seg.text} dense={readerMode} />
       ),
     );
   }
@@ -268,111 +314,117 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     <div
       className={cn(
         "flex flex-col border border-border bg-card shadow-sm",
-        readerMode
-          ? "fixed inset-0 z-[80] rounded-none border-0"
-          : "rounded-2xl",
+        readerMode ? "fixed inset-0 z-[80] rounded-none border-0" : "rounded-2xl",
       )}
     >
-      <div
-        className={cn(
-          "z-20 flex shrink-0 flex-col gap-2 border-b border-border bg-card/95 px-4 py-3 backdrop-blur sm:px-6",
-          readerMode ? "sticky top-0 rounded-none" : "sticky top-16 rounded-t-2xl",
-        )}
-      >
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex min-w-0 items-center gap-2">
-            <BookOpen className="h-4 w-4 shrink-0 text-primary" />
-            <div className="min-w-0">
-              <div className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-                Chapter {chapter} · Theory{readerMode ? " · Reader" : ""}
+      {/* Full chrome — hidden completely in reader mode so phones get max text space */}
+      {!readerMode && (
+        <div className="sticky top-14 z-20 flex shrink-0 flex-col gap-2 rounded-t-2xl border-b border-border bg-card/95 px-3 py-2.5 backdrop-blur sm:top-16 sm:gap-2 sm:px-6 sm:py-3">
+          <div className="flex items-start justify-between gap-2 sm:items-center sm:gap-3">
+            <div className="flex min-w-0 items-center gap-2">
+              <BookOpen className="h-4 w-4 shrink-0 text-primary" />
+              <div className="min-w-0">
+                <div className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+                  Chapter {chapter} · Theory
+                </div>
+                <div className="truncate font-display text-sm font-bold sm:text-base">{title}</div>
               </div>
-              <div className="truncate font-display text-sm font-bold sm:text-base">{title}</div>
             </div>
-          </div>
-          <div className="flex shrink-0 items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setReaderMode((v) => !v)}
-              aria-pressed={readerMode}
-              title={readerMode ? "Exit reader mode (Esc)" : "Reader mode — theory fullscreen"}
-              className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:text-sm"
-            >
-              {readerMode ? (
-                <>
-                  <Minimize2 className="h-4 w-4" /> Exit reader
-                </>
-              ) : (
-                <>
-                  <Maximize2 className="h-4 w-4" /> Reader mode
-                </>
-              )}
-            </button>
-            {!readerMode && (
+            <div className="flex shrink-0 flex-wrap items-center justify-end gap-1.5 sm:gap-2">
+              <button
+                type="button"
+                onClick={() => setReaderMode(true)}
+                title="Reader mode — theory fullscreen"
+                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
+              >
+                <Maximize2 className="h-4 w-4" />
+                <span className="hidden xs:inline sm:inline">Reader</span>
+              </button>
               <a
                 href={MATERIALS_PDF_URL}
                 download={MATERIALS_PDF_NAME}
-                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:text-sm"
+                title="Download materials"
+                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
               >
-                <Download className="h-4 w-4" /> Download materials
+                <Download className="h-4 w-4" />
+                <span className="hidden sm:inline">Download</span>
               </a>
-            )}
-            {!readerMode && (
               <button
                 onClick={onGoToPractice}
-                className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:text-sm"
+                className="inline-flex items-center gap-1.5 rounded-md bg-primary px-2.5 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:px-3 sm:text-sm"
               >
-                <Target className="h-4 w-4" /> Go to Practice
+                <Target className="h-4 w-4" />
+                <span className="hidden sm:inline">Practice</span>
               </button>
-            )}
+            </div>
           </div>
-        </div>
-        <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
-          <div
-            className="h-full w-full origin-left rounded-full bg-primary will-change-transform"
-            style={{ transform: `scaleX(${progress / 100})` }}
-          />
-        </div>
-        {toc.length > 0 && (
-          <div
-            ref={tocScrollRef}
-            className="flex gap-1.5 overflow-x-auto scroll-smooth pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
-            {toc.map((item) => (
-              <button
-                key={item.id}
-                type="button"
-                ref={(node) => {
-                  chipRefs.current[item.id] = node;
-                }}
-                onClick={() => jumpTo(item.id)}
-                className={cn(
-                  "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                  item.level === 3 && "opacity-90",
-                  activeId === item.id
-                    ? "bg-primary text-primary-foreground"
-                    : item.level === 3
-                      ? "bg-secondary/70 text-muted-foreground hover:text-foreground"
-                      : "bg-secondary text-muted-foreground hover:text-foreground",
-                )}
-              >
-                {item.label
-                  .replace(/^(\d+\.\d+\.\d+)\s+/, "$1 · ")
-                  .replace(/^(\d+\.\d+)\s+/, "$1 · ")}
-              </button>
-            ))}
+          <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
+            <div
+              className="h-full w-full origin-left rounded-full bg-primary will-change-transform"
+              style={{ transform: `scaleX(${progress / 100})` }}
+            />
           </div>
-        )}
-      </div>
+          {toc.length > 0 && (
+            <div
+              ref={tocScrollRef}
+              className="flex gap-1.5 overflow-x-auto scroll-smooth pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              {toc.map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  ref={(node) => {
+                    chipRefs.current[item.id] = node;
+                  }}
+                  onClick={() => jumpTo(item.id)}
+                  className={cn(
+                    "max-w-[11rem] shrink-0 truncate rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors sm:max-w-none",
+                    item.level === 3 && "opacity-90",
+                    activeId === item.id
+                      ? "bg-primary text-primary-foreground"
+                      : item.level === 3
+                        ? "bg-secondary/70 text-muted-foreground hover:text-foreground"
+                        : "bg-secondary text-muted-foreground hover:text-foreground",
+                  )}
+                >
+                  {item.label
+                    .replace(/^(\d+\.\d+\.\d+)\s+/, "$1 · ")
+                    .replace(/^(\d+\.\d+)\s+/, "$1 · ")}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Reader mode: floating exit only — no top menu */}
+      {readerMode && (
+        <button
+          type="button"
+          onClick={() => setReaderMode(false)}
+          title="Exit reader mode (Esc)"
+          className="fixed bottom-4 right-4 z-[90] inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2.5 text-xs font-bold text-primary-foreground shadow-lg hover:bg-primary/90 sm:bottom-6 sm:right-6 sm:text-sm"
+        >
+          <Minimize2 className="h-4 w-4" /> Exit
+        </button>
+      )}
 
       <div
         ref={scrollRef}
         onScroll={onScroll}
         className={cn(
           "relative flex-1 overflow-y-auto bg-[oklch(0.985_0.005_75)]",
-          readerMode ? "min-h-0" : "max-h-[calc(100vh-11rem)]",
+          readerMode ? "min-h-0" : "max-h-[calc(100dvh-10rem)] sm:max-h-[calc(100vh-11rem)]",
         )}
       >
-        <article className="mx-auto max-w-3xl px-4 py-8 sm:px-8 sm:py-10">{body}</article>
+        <article
+          className={cn(
+            "mx-auto max-w-3xl",
+            readerMode ? "px-3 py-4 pb-20 sm:px-8 sm:py-8 sm:pb-10" : "px-3 py-5 sm:px-8 sm:py-10",
+          )}
+        >
+          {body}
+        </article>
       </div>
     </div>
   );

@@ -264,7 +264,11 @@ function EconomicsTasks() {
       <div className={PRACTICE_BODY_STACK}>
         {/* Sidebar — expandable chapters with per-case checklist */}
         {!sidebarCollapsed && (
-        <aside className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0 2xl:w-96">
+        <aside className={cn(
+          "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:w-80 lg:shrink-0 2xl:w-96",
+          // On phones, hide the chapter list while reading theory so text has the screen.
+          theoryChapter !== null && "hidden lg:block",
+        )}>
           <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
             <div className="mb-3 flex items-center justify-between gap-2">
               <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">

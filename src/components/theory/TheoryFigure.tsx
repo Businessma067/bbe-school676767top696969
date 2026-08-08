@@ -450,18 +450,13 @@ function ValuesVision() {
   ];
   return (
     <div className="mx-auto max-w-2xl">
-      <div className="grid gap-2 sm:grid-cols-4">
-        {steps.map((step, i) => (
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-4">
+        {steps.map((step) => (
           <div key={step.t} className="flex flex-col items-center gap-2">
-            <Node soft={i === 0} className="w-full min-h-[4.5rem]">
+            <Node soft={step.t === "Vision"} className="w-full min-h-[4.5rem]">
               <div className="text-primary">{step.t}</div>
               <div className="mt-1 font-normal text-muted-foreground">{step.s}</div>
             </Node>
-            {i < steps.length - 1 ? (
-              <span className="hidden text-primary sm:block" aria-hidden>
-                →
-              </span>
-            ) : null}
           </div>
         ))}
       </div>
@@ -656,7 +651,7 @@ function SegmentationTargeting() {
     <div className="mx-auto flex max-w-2xl flex-col gap-2 sm:flex-row sm:items-stretch">
       {steps.map((s, i) => (
         <div key={s.t} className="flex flex-1 items-center gap-2">
-          <Node soft={i === 2} className="w-full min-h-[5.5rem]">
+          <Node soft={i === 2} className="w-full min-h-[5rem] sm:min-h-[5.5rem]">
             <div className="text-primary">{s.t}</div>
             <div className="mt-2 font-normal text-muted-foreground">{s.q}</div>
           </Node>
@@ -679,17 +674,15 @@ function MarketingMix() {
     { t: "Promotion", s: "advertising, sales, PR" },
   ];
   return (
-    <div className="relative mx-auto grid max-w-lg grid-cols-2 gap-3 pt-2">
-      {items.map((i) => (
-        <Node key={i.t} className="min-h-[4.25rem]">
-          <div className="text-primary">{i.t}</div>
-          <div className="mt-1 font-normal text-muted-foreground">{i.s}</div>
-        </Node>
-      ))}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 flex h-[4.5rem] w-[4.5rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center bg-[oklch(0.985_0.005_75)] text-center text-[11px] font-bold text-primary ring-2 ring-primary">
-        Marketing
-        <br />
-        mix
+    <div>
+      <div className="mb-3 text-center text-sm font-bold text-primary">Marketing mix</div>
+      <div className="mx-auto grid max-w-lg grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3">
+        {items.map((i) => (
+          <Node key={i.t} className="min-h-[3.75rem] sm:min-h-[4.25rem]">
+            <div className="text-primary">{i.t}</div>
+            <div className="mt-1 font-normal text-muted-foreground">{i.s}</div>
+          </Node>
+        ))}
       </div>
     </div>
   );
@@ -809,12 +802,22 @@ function AnsoffMatrix() {
   return (
     <div>
       <div className="mb-2 text-center text-sm font-bold text-primary">Ansoff product–market matrix</div>
-      <div className="mb-1 grid grid-cols-[4.5rem_1fr_1fr] gap-1 text-[11px] text-muted-foreground">
+      {/* Mobile: stacked cards — avoid cramped 3-column overlap */}
+      <div className="grid gap-2 sm:hidden">
+        {cells.map((c) => (
+          <Node key={c.t} soft={c.t === "Market penetration"} className="min-h-[4rem] text-left">
+            <div className="text-primary">{c.t}</div>
+            <div className="mt-1 font-normal text-muted-foreground">{c.s}</div>
+            <div className="mt-1 text-[10px] italic">{c.r}</div>
+          </Node>
+        ))}
+      </div>
+      <div className="mb-1 hidden grid-cols-[4.5rem_1fr_1fr] gap-1 text-[11px] text-muted-foreground sm:grid">
         <div />
         <div className="text-center font-semibold">Existing market</div>
         <div className="text-center font-semibold">New market</div>
       </div>
-      <div className="grid grid-cols-[4.5rem_1fr_1fr] gap-1 text-[12px]">
+      <div className="hidden grid-cols-[4.5rem_1fr_1fr] gap-1 text-[12px] sm:grid">
         <div className="flex items-center justify-end pr-1 text-[11px] font-semibold text-muted-foreground">Existing product</div>
         <Node soft className="min-h-[4.5rem]">
           <div className="text-primary">{cells[0]!.t}</div>

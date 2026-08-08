@@ -79,10 +79,10 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto flex items-center justify-between gap-4 px-6 py-4 lg:px-8",
+          "mx-auto flex items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8",
           maxWidthClassName,
-          compact && "py-4",
-          showNav && "gap-6",
+          compact && "py-3 sm:py-4",
+          showNav && "gap-4 sm:gap-6",
           innerClassName,
         )}
       >
