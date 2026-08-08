@@ -27,8 +27,9 @@
       "This is exactly the memo's own claim, confirmed by the numbers: 360 - 50 = 310 and 260 + 50 = 310."
     ],
     "model": "x + y = 620 (combined total)\nx − 50 = y + 50, which rearranges to x − y = 100",
+    "solution": "This is now a standard sum-and-difference pair: x + y = 620 and x − y = 100. Adding the two equations eliminates y: 2x = 720, so x = 360.\nThen y = 620 − 360 = 260. Check: 360 − 50 = 310 and 260 + 50 = 310 — the two depots do end up equal, confirming the translation was\ncorrect.\nFinal Answer: North depot = 360 crates  |  South depot = 260 crates",
     "final_answer": "North depot = 360 crates | South depot = 260 crates",
-    "traps": "The memo's transfer clue must be translated into an equation: after moving 50 crates from North to South, North would have x - 50 and South would have y + 50, and these are described as equal."
+    "traps": "Once that translation is made, this is the simplest possible sum-and-difference system: no fees, no percentages, no unit conversions, and both unknowns come out as round numbers. The main traps are statement B (confusing total-minus-difference logic) and statement D (conflating the equalizing transfer with the current gap)."
   },
   {
     "num": 2,
@@ -58,6 +59,7 @@
       "Invoice #102's printed total is $160.50, not $172.50 — a student who mixes up which invoice number goes with which total would produce this kind of error."
     ],
     "model": "40x + 25y = 185.00 (Invoice #101)\n15x + 60y = 160.50 (Invoice #102)",
+    "solution": "Divide Invoice #102 by 15 to simplify: x + 4y = 10.70, so x = 10.70 − 4y. Substitute into Invoice #101: 40(10.70 − 4y) + 25y = 185.00.\nThis expands to 428.00 − 160y + 25y = 185.00, so −135y = −243.00, giving y = 1.80. Then x = 10.70 − 4(1.80) = 3.50.\nFinal Answer: Notebook = $3.50  |  Pen = $1.80",
     "final_answer": "Notebook = $3.50 | Pen = $1.80",
     "traps": "A clean, single-method elimination-by-substitution task with no reconstruction or claim-checking layer — both invoices state their totals directly. The only genuine trap is decimal carelessness during the substitution step (statement B) and simple misreading of which printed total belongs to which invoice (statement E); statement D checks whether the reader understands that a new quantity combination must be recalculated rather than interpolated from the two given invoices."
   },
@@ -89,6 +91,7 @@
       "50(12) + 50(7) = 600 + 350 = $950.00, not $1,000.00. This combination appears in neither session, so it must be computed fresh rather than estimated from the table."
     ],
     "model": "90a + 150c = 2130 (Saturday matinee)\n160a + 40c = 2200 (Saturday evening)",
+    "solution": "Divide the evening equation by 40: 4a + c = 55, so c = 55 − 4a. Substitute into the matinee equation: 90a + 150(55 − 4a) = 2130. This\nexpands to 90a + 8250 − 600a = 2130, so −510a = −6120, giving a = 12. Then c = 55 − 48 = 7.\nFinal Answer: Adult ticket = $12.00  |  Child ticket = $7.00",
     "final_answer": "Adult ticket = $12.00 | Child ticket = $7.00",
     "traps": "A textbook two-total elimination problem. The main thing being tested is not the algebra itself but attentiveness: statements C and D simply misquote figures that are already printed in the table (testing whether the reader re-derives values instead of trusting a plausible-sounding but wrong number), while statement E requires computing a genuinely new quantity combination rather than guessing at it."
   },
@@ -120,8 +123,9 @@
       "A pickup order has no delivery fee to add: 5(7) + 5(5) = $60.00."
     ],
     "model": "6x + 4y = 70.00 − 8.00 = 62.00\n3x + 9y = 74.00 − 8.00 = 66.00",
+    "solution": "Multiply the second equation by 2: 6x + 18y = 132. Subtract the first equation: 14y = 70, so y = 5. Substitute back: 3x + 9(5) = 66, so 3x\n= 21, and x = 7.\nFinal Answer: Sandwich = $7.00  |  Wrap = $5.00",
     "final_answer": "Sandwich = $7.00 | Wrap = $5.00",
-    "traps": "Before writing any equation, the $8.00 delivery fee must be subtracted from each receipt total, since it is not part of either unknown price."
+    "traps": "The entire difficulty of this task is front-loaded into one interpretive step: recognizing that the flat $8.00 fee must be subtracted from both totals before the system is built, since it is a per-order charge, not a per-item price. Once that is done, the elimination itself is trivial. Every statement here is TRUE, which is itself worth noting — a reader who skips the fee-removal step would get the wrong x and y and likely start marking correct statements FALSE by mistake."
   },
   {
     "num": 5,
@@ -151,6 +155,7 @@
       "Placing the full $10,000 at the 7% rate gives 0.07 \\times 10,000 = $700.00, which is indeed higher than the $520.00 actually earned from the mixed allocation."
     ],
     "model": "x + y = 10000 (total split)\n0.04x + 0.07y = 520 (total interest)",
+    "solution": "Solve the first equation for x: x = 10000 − y. Substitute: 0.04(10000 − y) + 0.07y = 520. This expands to 400 − 0.04y + 0.07y = 520, so\n0.03y = 120, and y = 4000. Then x = 10000 − 4000 = 6000.\nFinal Answer: Account A = $6,000  |  Account B = $4,000",
     "final_answer": "Account A = $6,000 | Account B = $4,000",
     "traps": "This is the first task in the set to introduce percentage-rate coefficients (0.04 and 0.07) rather than simple per-unit prices, which is a small but real jump in abstraction. Every one of statements A–D is deliberately wrong, all clustered around the same natural mistake: eyeballing a rough 50/50 split instead of weighting by the two different rates. Statement E is the only true one, and it rewards actually multiplying through rather than assuming a blended-rate shortcut."
   },
@@ -182,6 +187,7 @@
       "5(304) + 5(349) = 1,520 + 1,745 = $3,265.00, which is indeed more than $3,000.00 — this smaller order uses a different ratio (5-and-5) than the shipment (18-and-12), so it must be recalculated rather than scaled down."
     ],
     "model": "y = x + 45 (Premium priced $45 above Standard)\n18x + 12y = 9660 (shipment value)",
+    "solution": "Substitute directly: 18x + 12(x + 45) = 9660. This expands to 18x + 12x + 540 = 9660, so 30x = 9120, and x = 304. Then y = 304 + 45 =\n349.\nFinal Answer: Standard chair = $304.00  |  Premium chair = $349.00",
     "final_answer": "Standard chair = $304.00 | Premium chair = $349.00",
     "traps": "A relation-plus-total system solved by direct substitution rather than elimination, since one variable is already isolated. The only trap is statement B's rounding shortcut; everything else rewards careful direct computation from the two solved prices."
   },
@@ -213,8 +219,9 @@
       "Double the rival's $0.20 rate would be $0.40, and ByteMobile's $0.30 rate is lower than that, not more than double it."
     ],
     "model": "f + 40r = 29.00\nf + 120r = 53.00",
+    "solution": "Subtract the first equation from the second: 80r = 24.00, so r = 0.30. Substitute back: f + 12.00 = 29.00, so f = 17.00.\nFinal Answer: Fixed fee = $17.00  |  Extra-minute rate = $0.30/min",
     "final_answer": "Fixed fee = $17.00 | Extra-minute rate = $0.30/min",
-    "traps": "The advertisement never states the fixed fee or the rate directly — both must be recovered from the two example bills it quotes."
+    "traps": "A clean subtract-directly elimination (both equations share the same fixed-fee coefficient), the same mechanical shape used repeatedly at higher tiers of this worksheet for phone/utility/taxi-style problems. The traps are conceptual rather than computational: statement D tests whether the reader understands that a fixed fee still applies at zero usage, and statement E tests careless multiplication when comparing to a competitor's rate."
   },
   {
     "num": 8,
@@ -244,8 +251,9 @@
       "This is where the material-cost column finally matters: 75 Standard ovens \\times $120 each = $9,000.00. This statement could not have been answered from the hours data alone."
     ],
     "model": "s + d = 130 (total ovens built)\n4s + 9d = 795 (total assembly hours)",
+    "solution": "From the total-ovens equation, s = 130 − d. Substitute into the hours equation: 4(130 − d) + 9d = 795. This expands to 520 − 4d + 9d =\n795, giving 5d = 275, so d = 55. Then s = 130 − 55 = 75.\nFinal Answer: Standard ovens = 75  |  Deluxe ovens = 55",
     "final_answer": "Standard ovens = 75 | Deluxe ovens = 55",
-    "traps": "The material-cost column is not needed to find s and d — it becomes relevant only for statement E below. A count-and-rate system (units + hours) rather than a price system, with one deliberately irrelevant column (material cost) planted to test selective reading — it turns out to matter only for the very last statement, which flips the \"irrelevant data\" expectation on its head."
+    "traps": "A count-and-rate system (units + hours) rather than a price system, with one deliberately irrelevant column (material cost) planted to test selective reading — it turns out to matter only for the very last statement, which flips the \"irrelevant data\" expectation on its head."
   },
   {
     "num": 9,
@@ -275,8 +283,9 @@
       "With no returns, net sales would simply equal gross sales, and Riverside's gross figure is $9,760.00."
     ],
     "model": "14x + 22y = 9760 − 460 = 9300 (Riverside, net)\n20x + 10y = 9300 − 300 = 9000 (Hillcrest, net)",
+    "solution": "Divide the Hillcrest equation by 10: 2x + y = 900, so y = 900 − 2x. Substitute into Riverside's equation: 14x + 22(900 − 2x) = 9300. This\nexpands to 14x + 19800 − 44x = 9300, so −30x = −10500, giving x = 350. Then y = 900 − 700 = 200.\nFinal Answer: Sofa = $350.00  |  Armchair = $200.00",
     "final_answer": "Sofa = $350.00 | Armchair = $200.00",
-    "traps": "The gross figures cannot be used directly — each branch's returns must be subtracted first to isolate the value of items actually sold at listed prices."
+    "traps": "The interpretive step here is recognizing that \"gross sales\" is not what the fixed prices actually produced — returns must be netted out first for both branches before the system reflects real unit sales. Statement D is a deliberate numerical coincidence (Hillcrest's gross equals Riverside's net, both $9,300) designed to test whether the reader tracks which figure belongs to which branch and which stage (gross vs. net) rather than pattern-matching on the repeated number."
   },
   {
     "num": 10,
@@ -306,6 +315,7 @@
       "Because the two invoices describe genuinely different situations (different page counts, different totals), they behave like two non-parallel lines that cross at exactly one point — so exactly one fee-and-rate pair satisfies both at once."
     ],
     "model": "f + 120r = 33.00 (Order #58)\nf + 300r = 69.00 (Order #96)",
+    "solution": "Subtract Order #58's equation from Order #96's: 180r = 36.00, so r = 0.20. Substitute back: f + 24.00 = 33.00, so f = 9.00. For a 250-\npage order: 9.00 + 250(0.20) = $59.00. For a 350-page order: 9.00 + 350(0.20) = $79.00.\nFinal Answer: PrintFast setup fee = $9.00  |  Rate = $0.20/page",
     "final_answer": "PrintFast setup fee = $9.00 | Rate = $0.20/page",
     "traps": "This closes out the introductory tier by adding a competitor comparison (the flat $60.00 rival quote) on top of the standard fixed-fee-plus-rate model, and by including a meta-statement (E) about system uniqueness rather than a numeric claim — a preview of the more conceptual statement types used at higher difficulty tiers. Every A–D statement is a plausible-but-wrong number, rewarding a reader who recomputes rather than estimates."
   },
@@ -337,8 +347,9 @@
       "6 tacos and 6 burritos cost 6(3.50) + 6(6.00) = $57.00 exactly."
     ],
     "model": "4x + 3y = 32.00\n2x + 5y = 32.00 + 5.00 = 37.00",
+    "solution": "Multiply the second equation by 2: 4x + 10y = 74.00. Subtract the first (4x + 3y = 32.00): 7y = 42.00, so y = 6.00. Substituting back: 4x +\n18.00 = 32.00 → x = 3.50.\nFinal Answer: Taco = $3.50  |  Burrito = $6.00",
     "final_answer": "Taco = $3.50 | Burrito = $6.00",
-    "traps": "Nothing here states the taco or burrito price directly. What is known is Ana's order and total, plus a comparison between Ben's total and Ana's — that comparison must first be turned into an actual dollar figure for Ben's order before a system of two equations can be written."
+    "traps": "The whole task rests on one small translation step: converting \"Ben paid $5.00 more than Ana\" into the equation 2x + 5y = 37.00. Once that is done, it is a completely ordinary elimination with round-number answers. Statement A is the main conceptual trap, testing whether \"paid more overall\" is wrongly assumed to extend to every partial sub-comparison."
   },
   {
     "num": 12,
@@ -368,8 +379,9 @@
       "310 hardcovers alone would bring in 310 \\times 17 = $5,270, nowhere near $8,540. The staff and loyalty-share figures are irrelevant distractions."
     ],
     "model": "y = x + 5\n400x + 220y = 8540",
+    "solution": "Substitute directly: 400x + 220(x + 5) = 8540. Expanding: 620x + 1100 = 8540 → 620x = 7440 → x = 12. Then y = 12 + 5 = 17.\nFinal Answer: Paperback = $12.00  |  Hardcover = $17.00",
     "final_answer": "Paperback = $12.00 | Hardcover = $17.00",
-    "traps": "Staff headcount and the loyalty-member percentage do not affect unit pricing and should be set aside. A relation-plus-total system solved in one substitution step, with two deliberately irrelevant operational figures (headcount, loyalty share) planted in the report. Statement D is a boundary trap ('less than' vs. 'equal to'), and statement E tests whether decoy data gets mistakenly folded into the calculation."
+    "traps": "A relation-plus-total system solved in one substitution step, with two deliberately irrelevant operational figures (headcount, loyalty share) planted in the report. Statement D is a boundary trap ('less than' vs. 'equal to'), and statement E tests whether decoy data gets mistakenly folded into the calculation."
   },
   {
     "num": 13,
@@ -399,8 +411,9 @@
       "At 8 GB, Basic costs 15 + 8(2) = $31.00 versus Standard's 38 + 24 = $62.00 — Basic is substantially cheaper here."
     ],
     "model": "x + 8y = 62.00\nx + 3y = 47.00",
+    "solution": "Subtract directly: 5y = 15, so y = 3. Substitute back: x + 9 = 47, so x = 38.\nFinal Answer: Standard base fee = $38.00  |  Overage rate = $3.00/GB",
     "final_answer": "Standard base fee = $38.00 | Overage rate = $3.00/GB",
-    "traps": "The Basic and Premium prices belong to different plans and should not be substituted into this customer's equations."
+    "traps": "The simplest possible subtract-directly elimination (matching x-coefficients), dressed up with two decoy competitor plans that must be ignored when building the model but become relevant again for the decision-style statements D and E. Statement A is the main trap, testing whether 'advertised as entry-level' gets wrongly equated with 'cheapest base fee.'."
   },
   {
     "num": 14,
@@ -430,8 +443,9 @@
       "One additional Suite adds exactly $210 in pre-tax revenue, since the Standard-room count is unchanged."
     ],
     "model": "10x + 4y = 2419.20 ÷ 1.08 = 2240.00\n7x + 9y = 3099.60 ÷ 1.08 = 2870.00",
+    "solution": "From the first equation, 5x + 2y = 1120, so y = (1120 − 5x)/2. Substituting into the second: 14x + 9(1120 − 5x) = 5740 → −31x = −4340\n→ x = 140. Then y = 210.\nFinal Answer: Standard = $140.00/night (pre-tax)  |  Suite = $210.00/night (pre-tax)",
     "final_answer": "Standard = $140.00/night (pre-tax) | Suite = $210.00/night (pre-tax)",
-    "traps": "Each total must first be converted back to a pre-tax figure before it can be used in the model. Adds a tax-removal division step before the standard elimination, which is a genuinely new mechanism relative to Tasks 11–13. Statement C is a boundary-equality trap, and statement B punishes comparing tax-inclusive figures without adjusting for the 8% markup first."
+    "traps": "Adds a tax-removal division step before the standard elimination, which is a genuinely new mechanism relative to Tasks 11–13. Statement C is a boundary-equality trap, and statement B punishes comparing tax-inclusive figures without adjusting for the 8% markup first."
   },
   {
     "num": 15,
@@ -461,8 +475,9 @@
       "Simply adding the two actual monthly totals, 3,150 + 3,660 = $6,810, without needing the unit costs at all."
     ],
     "model": "150x + 90y = 3150\n130x + 140y = 3660",
+    "solution": "Divide by 30 and 10 respectively: 5x + 3y = 105; 13x + 14y = 366. Multiply by 14 and 3: 70x + 42y = 1470; 39x + 42y = 1098.\nSubtracting: 31x = 372, so x = 12. Then 3y = 45, y = 15.\nFinal Answer: Component A = $12.00/unit  |  Component B = $15.00/unit",
     "final_answer": "Component A = $12.00/unit | Component B = $15.00/unit",
-    "traps": "Only the January and February rows report actual recorded values; March is explicitly labelled a forecast and cannot be used to solve for today's unit costs. Introduces the \"identify which rows are real data\" mechanism: a third, forecast row must be recognized and excluded before the system is even built. Statements B and D both punish letting the excluded forecast row leak back into the reasoning."
+    "traps": "Introduces the \"identify which rows are real data\" mechanism: a third, forecast row must be recognized and excluded before the system is even built. Statements B and D both punish letting the excluded forecast row leak back into the reasoning."
   },
   {
     "num": 16,
@@ -492,8 +507,9 @@
       "Using the contractual rate: 40(14) + 4(21) = $644, $12 less than the company's actual practice."
     ],
     "model": "40x + 6y = 704\n40x + 2y = 608",
+    "solution": "Subtracting cancels the 40x term: 4y = 96, so y = 24. Substituting back: 40x + 48 = 608, so x = 14.\nFinal Answer: Regular wage = $14.00/hr  |  Overtime actually paid = $24.00/hr (contract requires $21.00/hr)",
     "final_answer": "Regular wage = $14.00/hr | Overtime actually paid = $24.00/hr (contract requires $21.00/hr)",
-    "traps": "Only once both rates are known can they be compared against the contract's 1.5\\times rule. A claim-verification task: the algebra is a simple direct-subtract elimination, but every statement requires holding two parallel numbers in mind (what was actually paid vs. what the contract requires) rather than just one solved value."
+    "traps": "A claim-verification task: the algebra is a simple direct-subtract elimination, but every statement requires holding two parallel numbers in mind (what was actually paid vs. what the contract requires) rather than just one solved value."
   },
   {
     "num": 17,
@@ -523,8 +539,9 @@
       "65.00 \\times 1.10 = $71.50, applying the same 10% multiplier used to recover May's genuine charge."
     ],
     "model": "x + 18y = 56.10 ÷ 1.10 = 51.00\nx + 25y = 65.00",
+    "solution": "Subtracting cancels x: 7y = 14.00, so y = 2.00. Substituting back: x + 36 = 51, so x = 15.00.\nFinal Answer: Fixed charge = $15.00  |  Rate = $2.00/m³ (billing office's claim does not match)",
     "final_answer": "Fixed charge = $15.00 | Rate = $2.00/m³ (billing office's claim does not match)",
-    "traps": "Since the 10% penalty was applied to May's whole bill rather than as a flat add-on, May's reported total must first be divided back down. The fixed charge and rate must be derived independently from the two bills, since the phone claim may not be accurate."
+    "traps": "Uses a percentage-based penalty (division) rather than a flat fee (subtraction), which is a subtly different mechanism from earlier fee-removal tasks and easy to get backwards. Statements A/B both test whether a verbal claim is taken at face value instead of checked against the underlying bills."
   },
   {
     "num": 18,
@@ -554,8 +571,9 @@
       "Setting the two fare formulas equal gives d = 0, not 5 km — the companies only match at zero distance."
     ],
     "model": "CityCab: x1 + 8y1 = 14.00, x1 + 20y1 = 26.00\nMetroX: x2 + 5y2 = 13.50, x2 + 15y2 = 28.50",
+    "solution": "For CityCab, subtracting cancels x1: 12y1 = 12, so y1 = 1, x1 = 6. For MetroX: 10y2 = 15, so y2 = 1.5, x2 = 6.\nFinal Answer: CityCab — base $6.00, rate $1.00/km  |  MetroX — base $6.00, rate $1.50/km",
     "final_answer": "CityCab — base $6.00, rate $1.00/km | MetroX — base $6.00, rate $1.50/km",
-    "traps": "Each company must be modelled separately. Each \"costs $X more than\" comparison must first be converted into an absolute fare."
+    "traps": "Requires solving two entirely independent 2\\times 2 systems (one per company) rather than one, and both are fed by relative \"costs $X more\" clues that must be converted to absolute fares first. Statements C and E both test the same misconception in different guises: that a lower fixed cost or smaller distance somehow favors the company with the higher rate."
   },
   {
     "num": 19,
@@ -585,8 +603,9 @@
       "For 60 units of Y alone, Vendor A costs $1,080 while Vendor B costs $960 — here Vendor B's advantage on Y is the only thing that matters."
     ],
     "model": "Vendor A: 20xA + 15yA = 450, 25xA + 12yA = 441\nVendor B: 20xB + 15yB = 460, 25xB + 12yB = 467",
+    "solution": "Vendor A: dividing the first by 5 gives 4xA + 3yA = 90; solving with the second gives xA = 9, yA = 18. Vendor B: the same approach gives\nxB = 11, yB = 16.\nFinal Answer: Vendor A — X = $9, Y = $18  |  Vendor B — X = $11, Y = $16",
     "final_answer": "Vendor A — X = $9, Y = $18 | Vendor B — X = $11, Y = $16",
-    "traps": "Each vendor's unit prices are independent and must be solved separately."
+    "traps": "Like Task 18, this requires two independent 2\\times 2 systems, but adds a genuine business-decision layer on top: the cheaper-per-unit vendor for one product is not necessarily the cheaper overall vendor for a mixed order. Statement D is the central trap, generalizing from the single-product comparison (B) to the wrong conclusion about the whole order."
   },
   {
     "num": 20,
@@ -616,8 +635,9 @@
       "Beta's Service Q revenue is $9,100, while Alpha's entire Product P revenue is $7,500 — Beta's single revenue line from Q alone beats Alpha's whole P line."
     ],
     "model": "Stage 1: A + B = 27200, B − A = 1000\nStage 2: 150x + 80y = 13100, 100x + 130y = 14100",
+    "solution": "Adding the Stage 1 equations: 2B = 28200, so B = 14100, A = 13100. For Stage 2, dividing by 10 and eliminating gives x = 50, y = 70.\nFinal Answer: Product P = $50.00  |  Service Q = $70.00",
     "final_answer": "Product P = $50.00 | Service Q = $70.00",
-    "traps": "Individual Q1 revenue figures are not stated directly — only their combined total and the gap between them. Those must first be turned into Alpha's and Beta's separate revenue figures (a small sum-and-difference step) before the unit-sales data can be used."
+    "traps": "The hardest task in this tier: it stacks a preliminary sum-and-difference derivation on top of the usual two-unknown pricing system (a genuine two-stage solve), and its statements C/D test the classic misconception that a percentage change to one revenue stream scales an entire multi- product total by the same percentage."
   },
   {
     "num": 21,
@@ -647,8 +667,9 @@
       "12 \\times $41 = $492 exactly, a direct scaling of the confirmed real monthly rate with no signup fee included."
     ],
     "model": "x + 6y = 284 (Maria)\nx + 10y = 448 (Jason)",
+    "solution": "Subtracting directly: 4y = 164, so y = 41. Substituting back: x + 246 = 284, so x = 38.\nFinal Answer: Signup fee = $38.00  |  Monthly rate = $41.00/month (flyer's figures do not match)",
     "final_answer": "Signup fee = $38.00 | Monthly rate = $41.00/month (flyer's figures do not match)",
-    "traps": "The flyer's advertised figures ($30 and $45) are a claim to be checked, not values to plug directly into the model. A straightforward subtract-directly elimination whose entire point is claim-verification: the advertised numbers are wrong in both directions (fee understated, rate overstated), and statement C tests whether the reader notices the two errors do not simply cancel out at 6 months."
+    "traps": "A straightforward subtract-directly elimination whose entire point is claim-verification: the advertised numbers are wrong in both directions (fee understated, rate overstated), and statement C tests whether the reader notices the two errors do not simply cancel out at 6 months."
   },
   {
     "num": 22,
@@ -678,6 +699,7 @@
       "5(19) + 5(31) = $250 exactly, a direct application of both confirmed monthly rates."
     ],
     "model": "4x + 3y = 169\n2x + 7y = 255",
+    "solution": "Multiply the first by 7 and the second by 3: 28x + 21y = 1183; 6x + 21y = 765. Subtracting: 22x = 418, so x = 19. Substituting back: 76 +\n3y = 169, so y = 31.\nFinal Answer: Basic = $19.00/month  |  Premium = $31.00/month",
     "final_answer": "Basic = $19.00/month | Premium = $31.00/month",
     "traps": "A clean elimination with no fee-removal or claim-checking layer; the difficulty here is entirely in statement D, which requires recognizing that two proportional (no-intercept) lines through the origin can only coincide at the origin itself — a conceptual point rather than a computational one."
   },
@@ -709,8 +731,9 @@
       "10(4.80) + 2(6.00) = $60.00 exactly — not more than $60, but equal to it."
     ],
     "model": "5x + 3y = 50.00 − 3.60 − 4.40 = 42.00\n2x + 5y = 43.20 − 3.60 = 39.60",
+    "solution": "Multiply the first by 5 and the second by 3: 25x + 15y = 210; 6x + 15y = 118.80. Subtracting: 19x = 91.20, so x = 4.80. Substituting back:\n24.00 + 3y = 42.00, so y = 6.00.\nFinal Answer: Organic apples = $4.80/lb  |  Almond milk = $6.00/carton",
     "final_answer": "Organic apples = $4.80/lb | Almond milk = $6.00/carton",
-    "traps": "Bread and egg prices are already known, and the loyalty-discount note is a distractor that does not apply here."
+    "traps": "Two known-item prices (bread, eggs) must be subtracted from each receipt before the system can be built — the same fee-removal mechanism as earlier tasks, but with two known quantities per receipt instead of one. Statements C, D, and E are all boundary-equality traps in a row, deliberately clustering the 'exactly equal, not strictly more/less' misreading in one task."
   },
   {
     "num": 24,
@@ -740,8 +763,9 @@
       "At 500 units (above the 412.5-unit crossover), the standard plan costs $138.00 while Solar costs $145.00 — the standard plan is actually cheaper here."
     ],
     "model": "x + 240y = 83.40\nx + 380y = 112.80",
+    "solution": "Subtracting directly: 140y = 29.40, so y = 0.21. Substituting back: x + 50.40 = 83.40, so x = 33.00. To find the crossover with Solar: 33 +\n0.21u = 0.29u → u = 412.5 units.\nFinal Answer: Fixed fee = $33.00  |  Rate = $0.21/unit (customer service's figure does not match)",
     "final_answer": "Fixed fee = $33.00 | Rate = $0.21/unit (customer service's figure does not match)",
-    "traps": "Treat the $0.24/unit figure as a claim to verify. Adds a genuine crossover-point calculation (solving 33 + 0.21u = 0.29u for u) on top of the usual claim-verification elimination, then tests that crossover from two different angles in statements D and E — a universal claim ('at every level') and a specific numeric check, both of which trade on the same easily-missed 412.5-unit threshold."
+    "traps": "Adds a genuine crossover-point calculation (solving 33 + 0.21u = 0.29u for u) on top of the usual claim-verification elimination, then tests that crossover from two different angles in statements D and E — a universal claim ('at every level') and a specific numeric check, both of which trade on the same easily-missed 412.5-unit threshold."
   },
   {
     "num": 25,
@@ -771,8 +795,9 @@
       "Subtotal = 4(19) + 4(15) = $136.00; with the 10% charge, 136 \\times 1.10 = $149.60, just under $150 — a close call rewarding exact decimals over early rounding."
     ],
     "model": "6x + 4y = 174.00\n5x + 7y = (174.00 + 46.00) ÷ 1.10 = 200.00",
+    "solution": "Divide Table 5's equation by 2: 3x + 2y = 87. Multiply by 7: 21x + 14y = 609. Multiply Table 8's equation by 2: 10x + 14y = 400.\nSubtracting: 11x = 209, so x = 19. Substituting back: 3(19) + 2y = 87, so y = 15.\nFinal Answer: Pasta dish = $19.00  |  Appetizer = $15.00",
     "final_answer": "Pasta dish = $19.00 | Appetizer = $15.00",
-    "traps": "Table 8's total must first be reconstructed as Table 5's total plus $46.00, and only then can the 10% service charge be stripped back out."
+    "traps": "Combines two mechanisms in one model: reconstructing an unknown total from a relative clue (+$46), then stripping a 10% service charge back out of that reconstructed figure — two operations that must be done in the right order. Statement C specifically tests whether the reader confuses the printed $46.00 gap (measured after tax) with the true pre-tax gap ($26.00)."
   },
   {
     "num": 26,
@@ -802,8 +827,9 @@
       "Shipment cost is determined entirely by item quantities and unit prices; the weight/volume figures are freight-billing data logged separately and play no causal role in the total, despite sitting right next to it."
     ],
     "model": "110x + 80y = 4470\n70x + 150y = 5520",
+    "solution": "Divide by 10: 11x + 8y = 447; 7x + 15y = 552. Multiply by 15 and 8: 165x + 120y = 6705; 56x + 120y = 4416. Subtracting: 109x = 2289,\nso x = 21. Substituting back: 231 + 8y = 447, so y = 27.\nFinal Answer: Item M = $21.00/unit  |  Item N = $27.00/unit",
     "final_answer": "Item M = $21.00/unit | Item N = $27.00/unit",
-    "traps": "Weight and volume are logged for freight billing and play no role in the item pricing itself. The main trap is structural: two entire columns (unit weight, unit volume) are present purely as red herrings that never enter the pricing model at all, and statements B, C, and E each test a different way of being pulled toward those irrelevant columns."
+    "traps": "The main trap is structural: two entire columns (unit weight, unit volume) are present purely as red herrings that never enter the pricing model at all, and statements B, C, and E each test a different way of being pulled toward those irrelevant columns."
   },
   {
     "num": 27,
@@ -833,8 +859,9 @@
       "The quoted 8(29) + 19(44) = $1,068 matches the issued quotation exactly, so it is internally consistent with the confirmed rates."
     ],
     "model": "14x + 35y = 1946 (Job 1, bundles expanded: 7×2, 7×5)\n13x + 21y = 1301 (Job 2, as invoiced)",
+    "solution": "Divide Job 1's equation by 7: 2x + 5y = 278. Multiply by 21 and Job 2's by 5: 42x + 105y = 5838; 65x + 105y = 6505. Subtracting: 23x =\n667, so x = 29. Substituting back: 58 + 5y = 278, so y = 44. Check the new quotation: 8(29) + 19(44) = $1,068, matching exactly.\nFinal Answer: Standard = $29.00/unit  |  Premium = $44.00/unit",
     "final_answer": "Standard = $29.00/unit | Premium = $44.00/unit",
-    "traps": "Job 1's bundles must first be converted into individual Standard and Premium units before the system can be written."
+    "traps": "The main mechanism is unit conversion: Job 1's quantities are stated in bundles rather than individual units, and must be expanded (\\times 2 and \\times 5 per bundle) before the system can even be written — skipping this step produces a totally different, unsolvable pair of equations. Statement E provides an unusually satisfying verification step, checking the solved prices against an independent third figure (the new quotation) rather than against the two equations that produced them."
   },
   {
     "num": 28,
@@ -864,8 +891,9 @@
       "323 + 245 = $568, which does satisfy 'at least $550,' unlike statement D's stricter '$80' gap, which narrowly fails."
     ],
     "model": "5x + 150y = 323 (Report 1)\n3x + 250y = 245 (Report 2)",
+    "solution": "Report 3 must be checked before use: 7 meal days alone at any reasonable per-diem rate close to the other two reports' implied range\nalready exceeds $120 — it is set aside as an entry error. Multiply the remaining two equations by 3 and 5: 15x + 450y = 969; 15x + 1250y\n= 1225. Subtracting: 800y = 256, so y = 0.32. Substituting back: 5x + 48 = 323, so x = 55.\nFinal Answer: Per diem = $55.00/day  |  Mileage rate = $0.32/mile (Finance's belief does not match)",
     "final_answer": "Per diem = $55.00/day | Mileage rate = $0.32/mile (Finance's belief does not match)",
-    "traps": "Identify which report cannot possibly be correct before building the model, and treat Finance's $0.40/mile belief as a claim to be checked."
+    "traps": "Introduces plausibility-checking as a prerequisite step: one of three reports must be recognized as internally impossible (its total is too small for even the meal days alone) and excluded before the system is built — a different flavor of \"spot the bad row\" than the forecast-exclusion tasks earlier in this worksheet. Statements D and E are near-miss boundary traps ($78 vs. $80, $568 vs. $550) placed side by side."
   },
   {
     "num": 29,
@@ -895,8 +923,9 @@
       "Substituting the surviving Widget B count and total hours into the confirmed model, 7A + 10(15) = 290, gives A = 20 — a legitimate reconstruction, not a guess."
     ],
     "model": "35x + 20y = 445 (Week 1)\n25x + 33y = 505 (Week 2, recovered counts)",
+    "solution": "Recover Week 2 first: B = A + 8, A + B = 58, so 2A + 8 = 58, A = 25, B = 33. Multiply Week 1 by 33 and Week 2 by 20: 1155x + 660y =\n14685; 500x + 660y = 10100. Subtracting: 655x = 4585, so x = 7. Substituting back: 245 + 20y = 445, so y = 10. Reconstruct Week 3: 7A\n+ 10(15) = 290, so A = 20.\nFinal Answer: Widget A = 7 hrs/unit  |  Widget B = 10 hrs/unit",
     "final_answer": "Widget A = 7 hrs/unit | Widget B = 10 hrs/unit",
-    "traps": "Week 2's unit counts must first be recovered from the sticky note (a small sum-and-difference step) before the main system can be written."
+    "traps": "Stacks three distinct mechanisms in one task: (1) recover Week 2's hidden counts via a sum-and-difference sub-system, (2) solve the main two- unknown system from Weeks 1 and 2, and (3) use the solved rates to reconstruct Week 3's missing count from a single equation. Statement D repeats the \"percentage change to one part scales the whole\" misconception seen elsewhere in this worksheet, here dressed up in a production- hours context instead of a revenue context."
   },
   {
     "num": 30,
@@ -926,6 +955,7 @@
       "North's reported revenue is $4,145, while South and East together report $7,075 — North falls well short of that combined figure, despite being the single largest branch on its own."
     ],
     "model": "85x + 70y = 4145 (North)\n55x + 95y = 3875 (South)",
+    "solution": "North and South are used to derive the prices, since they reconcile with each other. Divide by 5: 17x + 14y = 829; 11x + 19y = 775.\nMultiply by 19 and 14: 323x + 266y = 15751; 154x + 266y = 10850. Subtracting: 169x = 4901, so x = 29. Substituting back: 493 + 14y =\n829, so y = 24. Testing East: 65(29) + 50(24) = $3,085, which does not match East's reported $3,200 — a $115 discrepancy, revealing\nEast as the erroneous branch.\nFinal Answer: Product X = $29.00/unit  |  Product Y = $24.00/unit",
     "final_answer": "Product X = $29.00/unit | Product Y = $24.00/unit",
     "traps": "This is the hardest task in the tier: three branches are given, but which two are reliable is never stated — the reader must choose a pairing (North & South), solve it, and then use the result to audit the third branch and quantify its error, all without being told in advance which branch is faulty. It is effectively an unsupervised version of the \"identify the bad row\" mechanism used more explicitly elsewhere in this worksheet."
   },
@@ -957,6 +987,7 @@
       "There is no bulk premium in a fixed-unit-price model: 16 Type A + 32 Type B is exactly the sum of both invoices' quantities, so its cost is necessarily exactly $527.45 + $657.35 = $1,184.80 — not more."
     ],
     "model": "9x + 13y = 527.45\n7x + 19y = 657.35",
+    "solution": "Multiply by 19 and 13: 171x + 247y = 10021.55; 91x + 247y = 8545.55. Subtracting: 80x = 1476.00, so x = 18.45. Substituting back:\n166.05 + 13y = 527.45, so y = 27.80.\nFinal Answer: Type A = $18.45/case  |  Type B = $27.80/case",
     "final_answer": "Type A = $18.45/case | Type B = $27.80/case",
     "traps": "Purely decimal elimination with no reconstruction step, but the statements are deliberately worded in indirect, wordy phrasing ('clears the $24 mark', 'more than nine but less than ten') rather than plain numeric claims, forcing the reader to translate prose into a range check before comparing it to the solved decimal prices. Statements D and E both test the same misconception in different clothes: that unit-price systems behave non-linearly (swap-invariance, bulk premiums) when in fact they are perfectly linear."
   },
@@ -988,6 +1019,7 @@
       "Setting 145.50 + 1.85d = 1.35d gives d = -291 — an algebraic intersection does exist, just not at any real-world (positive) distance."
     ],
     "model": "x + 170y = 460.00\nx + 305y = 709.75",
+    "solution": "Subtract directly: 135y = 249.75, so y = 1.85. Substituting back: x + 314.50 = 460.00, so x = 145.50.\nFinal Answer: Dispatch fee = $145.50  |  Rate = $1.85/mile",
     "final_answer": "Dispatch fee = $145.50 | Rate = $1.85/mile",
     "traps": "Same subtract-directly mechanism as Task 31, but the statements lean harder into 'closer to which of two round numbers' framing (A, B, C), which requires computing the exact decimal and then comparing two differences rather than doing a single pass/fail check. Statement E introduces a genuinely different idea from anything earlier in the worksheet — algebraic solutions that exist but are physically meaningless (negative distance) — foreshadowing the true no-solution case used later in this tier."
   },
@@ -1019,6 +1051,7 @@
       "Daily cost $20.30 \\times 7 = $142.10; $150.00 - $142.10 = $7.90, which is less than $8.00."
     ],
     "model": "7x + 9y = 78.65\n11x + 4y = 85.05",
+    "solution": "Multiply by 4 and 9: 28x + 36y = 314.60; 99x + 36y = 765.45. Subtracting: 71x = 450.85, so x = 6.35. Substituting back: 44.45 + 9y =\n78.65, so y = 3.80.\nFinal Answer: Specialty Drink = $6.35  |  Pastry = $3.80",
     "final_answer": "Specialty Drink = $6.35 | Pastry = $3.80",
     "traps": "The calorie column exists purely to test statement C's tempting-but-false idea that any two numeric columns can be cross-referenced to recover prices — in reality only the quantity columns carry pricing information. The remaining statements require careful decimal arithmetic dressed in casual, almost conversational phrasing rather than direct mathematical language."
   },
@@ -1050,6 +1083,7 @@
       "New baguette price $12.40: 6(13.85) + 23(12.40) = $368.30 — the cents digit is indeed 30."
     ],
     "model": "14x + 11y = 297.30\n6x + 23y = 299.30",
+    "solution": "Multiply by 23 and 11: 322x + 253y = 6837.90; 66x + 253y = 3292.30. Subtracting: 256x = 3545.60, so x = 13.85. Substituting back:\n193.90 + 11y = 297.30, so y = 9.40.\nFinal Answer: Croissants = $13.85/dozen  |  Baguettes = $9.40/dozen",
     "final_answer": "Croissants = $13.85/dozen | Baguettes = $9.40/dozen",
     "traps": "Same decimal-elimination mechanism as the previous two tasks, but pushes the indirect phrasing further still ('reading between the lines', 'blow past', 'clears two dollars'), and statement C introduces a fraction-of-total comparison (three-fifths) that must be computed as a percentage rather than read off directly."
   },
@@ -1081,6 +1115,7 @@
       "500 \\times 27.35 = $13,675.00 exactly."
     ],
     "model": "240x + 175y = 10029.00\n310x + 90y = 10260.50",
+    "solution": "Multiply by 90 and 175: 21600x + 15750y = 902610; 54250x + 15750y = 1795587.5. Subtracting: 32650x = 892977.5, so x = 27.35.\nSubstituting back: 6564.00 + 175y = 10029.00, so y = 19.80.\nFinal Answer: Fabric Roll = $27.35/unit  |  Yarn Spool = $19.80/unit",
     "final_answer": "Fabric Roll = $27.35/unit | Yarn Spool = $19.80/unit",
     "traps": "A slightly larger-magnitude version of the same decimal-elimination mechanism, with statement D introducing an unusual 'still a three-digit number after subtracting $100' framing that is really just a disguised way of asking whether the gap exceeds $200."
   },
@@ -1112,6 +1147,7 @@
       "($699.00 + $326.45)/(15+20+13+5) = $1,025.45/53 ≈ $19.35, which does not reach $20.00."
     ],
     "model": "15x + 20y = 699.00 (Invoice 1)\n13x + 5y = 326.45 (Invoice 3, independent of Invoice 1)",
+    "solution": "Check Invoice 2 against Invoice 1 first: 419.40/699.00 = 0.60 exactly, and Invoice 2's quantities (9,12) are exactly 0.6 times Invoice 1's\n(15,20) — Invoice 2 is redundant. Multiply Invoice 3 by 4: 52x + 20y = 1305.80. Subtract Invoice 1: 37x = 606.80, so x = 16.40.\nSubstituting back: 246.00 + 20y = 699.00, so y = 22.65.\nFinal Answer: Nitrogen-type = $16.40/unit  |  Oxygen-type = $22.65/unit",
     "final_answer": "Nitrogen-type = $16.40/unit | Oxygen-type = $22.65/unit",
     "traps": "Introduces the \"redundant row\" mechanism explicitly for the first time in this tier: one of three invoices must be recognized as a proportional scaled copy of another before the solver knows which two equations are actually independent. Statement A directly tests recognition of that redundancy, while statement E asks for a blended (pooled) rate across two different invoices, a genuinely different calculation from any individual invoice's own rate."
   },
@@ -1143,6 +1179,7 @@
       "(0.655 + 0.900)/23 ≈ 6.76%, which stays under 7%."
     ],
     "model": "4x + 7y = 0.655 (Monday)\n9x + 3y = 0.900 (Tuesday)",
+    "solution": "Multiply by 9 and 4: 36x + 63y = 5.895; 36x + 12y = 3.600. Subtracting: 51y = 2.295, so y = 0.045. Substituting back: 4x + 0.315 =\n0.655, so x = 0.085.\nFinal Answer: Alvarez = 0.085 job/hour (8.5%/hour)  |  Bianchi = 0.045 job/hour (4.5%/hour)",
     "final_answer": "Alvarez = 0.085 job/hour (8.5%/hour) | Bianchi = 0.045 job/hour (4.5%/hour)",
     "traps": "A conceptually different flavor from every other task so far: a work-rate ('how much of a job per hour') system rather than a price or count system, with percentages standing in for completed-fraction units. This requires comfort converting between decimals, percentages, and fractions in the same task (statement D asks which of two fractions, 1/7 or 1/8, a decimal is closer to), and statements A and B both hinge on solo completion times that must be computed as reciprocals (1/rate) rather than direct multiplication."
   },
@@ -1174,6 +1211,7 @@
       "11.65(260) + 18.40(310) = $8,733.00, which clears $8,700 by $33 — less than $40."
     ],
     "model": "430x + 260y = 9793.50 (Season 1)\n275x + 410y = 10747.75 (Season 2)",
+    "solution": "Multiply by 410 and 260: 176300x + 106600y = 4015335; 71500x + 106600y = 2794415. Subtracting: 104800x = 1220920, so x = 11.65.\nSubstituting back: 5009.50 + 260y = 9793.50, so y = 18.40. Reconstruct Season 3's T-Shirt count T: 11.65T + 18.40(310) = 8558.25, so\n11.65T = 2854.25, T = 245.\nFinal Answer: T-Shirt = $11.65/unit  |  Hoodie = $18.40/unit  |  Season 3 T-Shirts reconstructed = 245 units",
     "final_answer": "T-Shirt = $11.65/unit | Hoodie = $18.40/unit | Season 3 T-Shirts reconstructed = 245 units",
     "traps": "Combines large decimal elimination with a reconstruction step (recovering Season 3's illegible T-Shirt count from its one surviving equation), the same two-stage shape as the Cedarline task earlier in the worksheet but with much less forgiving numbers. Statements A and C are both \"sounds true but isn't\" traps exploiting the closer-to-the-higher-round-number pattern and the multiple-of-ten vs. multiple-of-five distinction."
   },
@@ -1205,8 +1243,9 @@
       "94.60 + 400(3.15) = $1,354.60, just above $1,350.00."
     ],
     "model": "x + 185y = 677.35 (Shipment 1, already in kg)\nx + 260y = 913.60 (Shipment 2: 572 lb ÷ 2.2 = 260 kg)",
+    "solution": "Convert Shipment 2's weight: 572/2.2 = 260 kg. Subtract directly: 75y = 236.25, so y = 3.15. Substituting back: x + 582.75 = 677.35, so x\n= 94.60. Audit Shipment 3: 99/2.2 = 45 kg. Model predicts 94.60 + 45(3.15) = $236.35, but Shipment 3 was charged $239.80 — a $3.45\ndiscrepancy.\nFinal Answer: Handling fee = $94.60  |  Rate = $3.15/kg  |  Shipment 3 predicted = $236.35 (vs. $239.80 charged — a\n$3.45 discrepancy)",
     "final_answer": "Handling fee = $94.60 | Rate = $3.15/kg | Shipment 3 predicted = $236.35 (vs. $239.80 charged — a $3.45 discrepancy)",
-    "traps": "Weights must be converted to kilograms before the model is built."
+    "traps": "Adds a unit-conversion layer (pounds to kilograms) on top of the audit/discrepancy mechanism used elsewhere in this tier, and requires performing that same conversion twice more within the statements themselves (B uses the derived rate, D re-checks the conversion arithmetic directly). The obscure phrasing throughout ('knock off', 'just shy of', 'creeps past') is consistent with the rest of this decimal-heavy tier."
   },
   {
     "num": 40,
@@ -1236,6 +1275,7 @@
       "|952.10 - 967.40| = $15.30 versus |952.10 - 725.55| = $226.55 — the doubling hypothesis is far closer to reality."
     ],
     "model": "11x + 7y = 483.70 (Client A)\n22x + 14y = 952.10 (Client B, as reported)",
+    "solution": "Client B's coefficients (22,14) are exactly double Client A's (11,7), so scaling Client A's equation by 2 gives 22x + 14y = 967.40. Since the\nreported total is $952.10, not $967.40, the two equations are inconsistent — a $15.30 contradiction. No values of x and y satisfy both\nequations simultaneously: this is the parallel-lines case (proportional coefficients, non-proportional constants).\nFinal Answer: No consistent solution exists for (x, y); the invoices contradict one another by $15.30.",
     "final_answer": "No consistent solution exists for (x, y); the invoices contradict one another by $15.30.",
     "traps": "This is a fundamentally different kind of task from every other one in the worksheet: the system has NO solution at all, because Client B's coefficients are exactly proportional to Client A's (a scaled repeat) while the totals are not proportional by that same factor — the two equations describe parallel, non-intersecting lines. Recognizing that no (x, y) can satisfy both equations, rather than grinding through an elimination to a wrong answer, is itself the core skill being tested, and every statement is built around quantifying and contextualizing that contradiction rather than reporting a solved price."
   },
@@ -1267,6 +1307,7 @@
       "(13,600 - 4,800) ÷ 4,800 = 8,800 ÷ 4,800 ≈ 1.8333, or about 183.3%, which exceeds 180%."
     ],
     "model": "y = 2x + 4000 (Fund B's balance, from the stated relationship)\n0.0525x + 0.0375y = 762 (combined annual return)",
+    "solution": "Substitute the first equation into the second: 0.0525x + 0.0375(2x + 4000) = 762 → 0.1275x + 150 = 762 → 0.1275x = 612 → x = 4800.\nSubstitute back: y = 2(4800) + 4000 = 13600.\nFinal Answer: Fund A = $4,800.00  |  Fund B = $13,600.00",
     "final_answer": "Fund A = $4,800.00 | Fund B = $13,600.00",
     "traps": "The first task to require translating a worded algebraic relationship (\"$4,000 more than twice Fund A's balance\") directly into Every statement forces a fresh computation rather than a simple lookup of x or y."
   },
@@ -1298,6 +1339,7 @@
       "Batch 2's 5:1 ratio means A is 5/6 ≈ 83.3% of volume, while Batch 1's 3:2 ratio means A is only 3/5 = 60% — Batch 2's proportion is higher."
     ],
     "model": "6x + 4y = 144 (Batch 1: 10 L split 3:2 → 6 L of A, 4 L of B)\n10x + 2y = 184 (Batch 2: 12 L split 5:1 → 10 L of A, 2 L of B)",
+    "solution": "Divide by 2: 3x + 2y = 72; 5x + y = 92, so y = 92 − 5x. Substitute: 3x + 2(92 − 5x) = 72 → −7x = −112 → x = 16. Then y = 92 − 80 = 12.\nAudit Batch 3 (1:3 over 8 L = 2 L A, 6 L B): predicted = 2(16) + 6(12) = 104 g, vs. 109 g recorded — a 5 g discrepancy.\nFinal Answer: Solution A = 16 g/L  |  Solution B = 12 g/L  |  Batch 3 predicted = 104 g (vs. 109 g recorded)",
     "final_answer": "Solution A = 16 g/L | Solution B = 12 g/L | Batch 3 predicted = 104 g (vs. 109 g recorded)",
     "traps": "Requires converting a stated ratio (3:2, 5:1, 1:3) plus a total volume into individual component volumes before the system can even be written — a genuinely new translation step compared to earlier tasks. Statement C then reverses the model to solve for a hypothetical corrected volume from a stated discrepancy, and statement D asks the reader to apply the derived concentrations to an entirely new mixing ratio and target mass."
   },
@@ -1329,6 +1371,7 @@
       "7 ÷ 2.5 = 2.8, while 882 ÷ 765 ≈ 1.153 — the hours ratio is indeed greater than the pay ratio, since overtime hours are only a partial driver of total pay."
     ],
     "model": "42.5x + 2.5y = 765 (Employee A: 40 regular + 2.5 OT hours, each OT hour paid at x+y)\n47x + 7y = 882 (Employee B: 40 regular + 7 OT hours)",
+    "solution": "Multiply the first by 2.8 (so its y-coefficient matches): 119x + 7y = 2142. Subtract the second: 72x = 1260, so x = 17.5. Substitute back:\n42.5(17.5) + 2.5y = 765 → 2.5y = 21.25 → y = 8.5.\nFinal Answer: Base wage = $17.50/hour  |  Overtime premium = $8.50/hour (overtime rate = $26.00/hour)",
     "final_answer": "Base wage = $17.50/hour | Overtime premium = $8.50/hour (overtime rate = $26.00/hour)",
     "traps": "Uses fractional (2.5-hour) overtime quantities and an overtime rate defined as base-plus-premium (x+y per OT hour) rather than a flat multiplier, which changes how the equations must be weighted during elimination (multiplying by 2.8, a non-integer factor). Statement D constructs an entirely hypothetical pay policy and asks the reader to compare it against actual earnings, requiring a full recomputation rather than a simple percentage check."
   },
@@ -1360,6 +1403,7 @@
       "Project 3's rate is $710.00 ÷ 50 m = $14.20/m, while Project 1's rate is $750.00 ÷ 42 m ≈ $17.86/m — Project 3's rate is lower, not higher."
     ],
     "model": "18x + 24y = 750 (Project 1)\n10x + 40y = 710 (Project 3, independent of Project 1)",
+    "solution": "Check Project 2 against Project 1: (27,36) = 1.5 × (18,24), and 1.5 × $750.00 = $1,125.00, matching Project 2 exactly — it is redundant.\nDivide Project 1 by 6: 3x + 4y = 125. Divide Project 3 by 10: x + 4y = 71. Subtract: 2x = 54, so x = 27. Substitute back: 27 + 4y = 71, so y\n= 11.\nFinal Answer: Cedar wood = $27.00/m  |  Galvanized wire = $11.00/m",
     "final_answer": "Cedar wood = $27.00/m | Galvanized wire = $11.00/m",
     "traps": "Requires spotting that Project 2 is an exact 1.5\\times scaled repeat of Project 1 (both in quantities and in total cost) before realizing only Projects 1 and 3 carry independent information — the same redundant-row mechanism as Continental Gas Supply earlier, but here the redundancy check must be performed on your own initiative rather than being flagged by the narrative. Statement C is the key conceptual trap, testing the belief that combining two orders into one somehow changes the total cost under a strictly linear pricing model."
   },
@@ -1391,6 +1435,7 @@
       "(77 - 48) ÷ 48 = 29/48 ≈ 60.4%, just over 60%."
     ],
     "model": "x + y = 125 (250 km gap closed in 2 hrs: 2(x+y) = 250)\nx + 4y = 356 (Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs)",
+    "solution": "Subtract the first from the second: 3y = 231, so y = 77. Substitute back: x + 77 = 125, so x = 48.\nFinal Answer: Boat A = 48 km/h  |  Boat B = 77 km/h",
     "final_answer": "Boat A = 48 km/h | Boat B = 77 km/h",
     "traps": "A classic relative-motion (meeting-point) word problem, the first of its kind in the worksheet: the two equations come from translating \"meet after 2 hours\" and \"a 3-hour head start plus 1 more hour of travel\" into elapsed-time coefficients rather than being handed as prices or counts. Getting Boat B's travel time right (4 hours, not 1) is the single most important translation step in the whole task."
   },
@@ -1422,6 +1467,7 @@
       "Season 1's rate is $42,000 ÷ 400 t = $105.00/t; Season 2's rate is $48,300 ÷ 440 t ≈ $109.77/t — Season 2's rate is higher."
     ],
     "model": "3x + 2y = 525 (Season 1: 240x+160y=42000, ÷80)\n9x + 13y = 2415 (Season 2: 180x+260y=48300, ÷20)",
+    "solution": "Multiply by 13 and 2: 39x + 26y = 6825; 18x + 26y = 4830. Subtract: 21x = 1995, so x = 95. Substitute back: 285 + 2y = 525, so y = 120.\nReconstruct Season 3's Wheat tonnage T: 95T + 120(300) = 53100 → T = 180.\nFinal Answer: Wheat = $95.00/t  |  Barley = $120.00/t  |  Season 3 Wheat reconstructed = 180 tonnes",
     "final_answer": "Wheat = $95.00/t | Barley = $120.00/t | Season 3 Wheat reconstructed = 180 tonnes",
     "traps": "Same reconstruct-the-illegible-count mechanism seen in Cedarline and Vantage Apparel, applied a third time with yet another set of numbers, confirming this is a recurring, deliberately-repeated skill in this worksheet rather than a one-off trick. Statement C's coincidental near-equal tonnages (480 vs. 440) is a deliberate near-miss trap."
   },
@@ -1453,6 +1499,7 @@
       "The scenario states this was true exactly five years ago, and five years is indeed more than four years ago."
     ],
     "model": "x − 5 = 3(y − 5) (five years ago, elder was 3× younger)\nx + 9 = 2(y + 9) (in nine years, elder will be 2× younger)",
+    "solution": "Expand: x = 3y − 10, and x = 2y + 9. Setting equal: 3y − 10 = 2y + 9, so y = 19. Substitute back: x = 2(19) + 9 = 47.\nFinal Answer: Elder employee = 47 years old  |  Younger employee = 19 years old",
     "final_answer": "Elder employee = 47 years old | Younger employee = 19 years old",
     "traps": "A classic \"age problem\" translating two time-shifted multiplicative relationships (3\\times five years ago, 2\\times nine years from now) into two linear equations in x and y — a structurally different kind of relationship-translation than any prior task, since both equations involve the SAME two unknowns shifted by different amounts of time rather than two different observations at the same moment."
   },
@@ -1484,6 +1531,7 @@
       "Wholesale ratio: 80 ÷ 55 ≈ 1.4545. Retail ratio: (1.18\\times 80) ÷ (1.32\\times 55) ≈ 1.3003. The wholesale ratio is larger because Product A carries the bigger markup, compressing its retail-side gap."
     ],
     "model": "10.56x + 5.9y = 1052.80 (Order 1: retail A is 1.32x, retail B is 1.18y)\n3.96x + 14.16y = 1350.60 (Order 3, independent of Order 1)",
+    "solution": "Order 2 (16,10,$2,105.60) is exactly double Order 1 — redundant, set aside. Multiply Order 1 by 0.375 (so its x-coefficient matches Order\n3's): 3.96x + 2.2125y = 394.80. Subtract from Order 3: 11.9475y = 955.80, so y = 80.00. Substitute back into Order 1: 10.56x + 472 =\n1052.80, so x = 55.00.\nFinal Answer: Product A wholesale = $55.00  |  Product B wholesale = $80.00",
     "final_answer": "Product A wholesale = $55.00 | Product B wholesale = $80.00",
     "traps": "Layers markup percentages (32% and 18%) on top of the redundant-row mechanism, so the reader must both recognize Order 2 as a scaled duplicate AND correctly build retail-price coefficients (1.32x, 1.18y) before elimination even begins. Statement A asks for a full recomputation under a hypothetical swapped-markup policy, and statement E compares two different ratios (wholesale vs. retail) that move in opposite directions because of the differing markup rates."
   },
@@ -1515,6 +1563,7 @@
       "The revised record would score 12(7) + 1(3) = 87, only 12 points above the actual 75 — not more than 20."
     ],
     "model": "9x + 4y = 75 (Falcons)\n7x + 6y = 67 (Ravens: 75 − 8 = 67 total points)",
+    "solution": "Multiply by 3 and 2: 27x + 12y = 225; 14x + 12y = 134. Subtract: 13x = 91, so x = 7. Substitute back: 63 + 4y = 75, so y = 3.\nFinal Answer: Win = 7 points  |  Draw = 3 points",
     "final_answer": "Win = 7 points | Draw = 3 points",
     "traps": "A sports-standings version of the same \"convert a stated point difference into an absolute total\" mechanism used in the Alpha & Beta Holdings task earlier (Ravens = Falcons - 8). Statements A and C both require re-running the scoring formula under an entirely different, hypothetical points system, rather than simply scaling the actual solved values."
   },
@@ -1546,6 +1595,7 @@
       "17(7.6) + 23(11.4) = 391.4 kg, which equals 182.4 + 209.0 = 391.4 kg exactly — mass combines linearly, as expected."
     ],
     "model": "12x + 8y = 182.4 (Batch 1)\n5x + 15y = 209.0 (Batch 2)",
+    "solution": "Divide by 4 and 5: 3x + 2y = 45.6; x + 3y = 41.8, so x = 41.8 − 3y. Substitute: 3(41.8 − 3y) + 2y = 45.6 → −7y = −79.8 → y = 11.4.\nSubstitute back: x = 41.8 − 34.2 = 7.6. Audit Batch 3: predicted = 9.5(7.6) + 6(11.4) = 140.6 kg, vs. 147.0 kg recorded — a 6.4 kg\ndiscrepancy.\nFinal Answer: Metal A = 7.6 kg/L  |  Metal B = 11.4 kg/L  |  Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)",
     "final_answer": "Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)",
     "traps": "Combines a unit-conversion audit (gallons to liters) with decimal density values and a boundary trap (statement B lands on exactly 50%, testing whether 'more than' is read carefully against an exact tie). This is essentially the same three-part structure (solve, then audit a third row) used repeatedly across this tier, now dressed in metallurgical density units instead of prices or profits."
   },
@@ -1577,6 +1627,7 @@
       "Triple Client 2's AUM ($1,800,000) gives a fee of 0.016(1,800,000) + 1,200 = $30,000.00. Triple Client 2's fee would be $32,400.00 — the actual fee falls short because the flat retainer does not scale with AUM."
     ],
     "model": "600000x + y = 10800 (Client 2's total fee)\n150000x = 2400 (fee difference ÷ AUM difference — retainer cancels)",
+    "solution": "The second equation already isolates x: 150000x = 2400, so x = 0.016 (1.6%). Substitute into the first: 600000(0.016) + y = 10800, so y =\n1200.\nFinal Answer: Fee rate = 1.6% of AUM  |  Retainer = $1,200.00 (Fee = 0.016·AUM + 1200)",
     "final_answer": "Fee rate = 1.6% of AUM | Retainer = $1,200.00 (Fee = 0.016·AUM + 1200)",
     "traps": "Introduces a genuinely new algebraic shortcut: because the flat retainer is identical for every client, it cancels out of any fee DIFFERENCE between two clients, letting the rate x be found from a single equation (150000x = 2400) before the retainer is recovered separately. Statement E specifically tests the misconception that a fee combining a percentage rate and a flat component scales proportionally with AUM, which it does not because of the flat retainer."
   },
@@ -1608,6 +1659,7 @@
       "Batch 2's Suspension B share is 700/900 ≈ 77.78% of its volume; Batch 3's is 450/770 ≈ 58.44% — Batch 2's proportion is higher."
     ],
     "model": "500x + 300y = 8880 (Batch 1)\n200x + 700y = 12600 (Batch 2)",
+    "solution": "Divide by 100: 5x + 3y = 88.8; 2x + 7y = 126. Multiply by 7 and 3: 35x + 21y = 621.6; 6x + 21y = 378. Subtract: 29x = 243.6, so x = 8.4.\nSubstitute back: 16.8 + 7y = 126, so y = 15.6. Audit Batch 3: predicted = 320(8.4) + 450(15.6) = 9,708 mg, vs. 9,700 mg recorded — an 8\nmg discrepancy.\nFinal Answer: Suspension A = 8.4 mg/mL  |  Suspension B = 15.6 mg/mL  |  Batch 3 predicted = 9,708 mg (vs. 9,700 mg\nrecorded)",
     "final_answer": "Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded)",
     "traps": "Essentially a laboratory-flavored twin of the Meridian Alloys and Continental Freight audit tasks: a unit conversion (L to mL) feeds a third-row audit, and statement A lands just barely above an 85% threshold, continuing this tier's pattern of razor-thin true/false boundaries."
   },
@@ -1639,8 +1691,9 @@
       "Job 1: usable cost = $6,600.00 vs. actual $7,164.00 — an 8.545% increase. Job 2: usable cost = $8,225.00 vs. actual $8,946.00 — an 8.767% increase. Job 1's percentage increase is the smaller of the two."
     ],
     "model": "224x + 162y = 7164 (Job 1: 200×1.12=224 studs, 150×1.08=162 sheets)\n392x + 189y = 8946 (Job 2: 350×1.12=392 studs, 175×1.08=189 sheets)",
+    "solution": "Multiply the first by 1.75 (so its x-coefficient, 224×1.75=392, matches the second): 392x + 283.5y = 12537. Subtract the second: 94.5y =\n3591, so y = 38.00. Substitute back: 224x + 6156 = 7164, so x = 4.50.\nFinal Answer: Stud price = $4.50  |  Drywall sheet price = $38.00",
     "final_answer": "Stud price = $4.50 | Drywall sheet price = $38.00",
-    "traps": "The ordered (waste-inflated) quantities must be computed from the usable amounts before any pricing model can be built."
+    "traps": "Requires converting a percentage-based waste allowance into inflated order quantities (224, 162, 392, 189) before any equation exists, then reversing that same waste logic in several different directions across the statements (removing waste to find usable-only cost, changing the waste percentage hypothetically, and comparing waste percentages between two different jobs)."
   },
   {
     "num": 54,
@@ -1670,6 +1723,7 @@
       "At a reading of 8.0: predicted = 3.5(8) + 13.5 = 41.5. Half of Point 1's value is 28.45, and 41.5 is not less than 28.45."
     ],
     "model": "12.4x + y = 56.90 (Point 1)\n31.7x + y = 124.45 (Point 2)",
+    "solution": "Subtract the first from the second: 19.3x = 67.55, so x = 3.50. Substitute back: 43.4 + y = 56.90, so y = 13.50. Verification: predicted =\n45.0(3.5) + 13.5 = 171.00, vs. recorded 172.20 — a 1.20 discrepancy.\nFinal Answer: Scale factor = 3.50  |  Offset = 13.50  |  Verification predicted = 171.00 (vs. 172.20 recorded)",
     "final_answer": "Scale factor = 3.50 | Offset = 13.50 | Verification predicted = 171.00 (vs. 172.20 recorded)",
     "traps": "A calibration-curve task that is structurally identical to a fixed-fee-plus-rate model ( Statement C is a direction trap: the predicted value is actually below the reference, so any claim about it exceeding the reference is automatically false regardless of the percentage threshold named."
   },
@@ -1701,8 +1755,9 @@
       "The price gap is 1.35, and 30% of Coffee's price is 1.86; 1.35 is less than 1.86."
     ],
     "model": "312x + 208y = 2943.2 (Shipment 1: 520 kg split 3:2 → 312 kg Coffee, 208 kg Cocoa)\n500x + 300y = 4555 (Shipment 2: 800 kg split 5:3 → 500 kg Coffee, 300 kg Cocoa)",
+    "solution": "Divide by 8 and 100: 39x + 26y = 367.9; 5x + 3y = 45.55, so x = 9.11 − 0.6y. Substitute: 39(9.11 − 0.6y) + 26y = 367.9 → 2.6y = 12.61 →\ny = 4.85. Substitute back: x = 9.11 − 2.91 = 6.20.\nFinal Answer: Coffee = $6.20/kg  |  Cocoa = $4.85/kg",
     "final_answer": "Coffee = $6.20/kg | Cocoa = $4.85/kg",
-    "traps": "Individual weights within each shipment must be worked out from the total weight and ratio before a pricing model can be built."
+    "traps": "The same ratio-to-volume conversion mechanism as the Solventis Labs saline task, applied here to a two-shipment commodities blend with two different mixing ratios (3:2 and 5:3) rather than one ratio repeated — requiring the reader to redo the conversion independently for each shipment before elimination can begin."
   },
   {
     "num": 56,
@@ -1732,6 +1787,7 @@
       "If each vehicle alone covered 1,470 km: 14.7(32) + 14.7(18) = 735.0 L, far more than Route 1's actual 383.6 L."
     ],
     "model": "8.5x + 6.2y = 383.6 (Route 1, distances in hundreds of km)\n5x + 9y = 322 (Route 2, distances in hundreds of km)",
+    "solution": "Multiply by 9 and 6.2: 76.5x + 55.8y = 3452.4; 31x + 55.8y = 1996.4. Subtract: 45.5x = 1456, so x = 32.0. Substitute back: 160 + 9y =\n322, so y = 18.0. Audit Route 3: predicted = 2.5(32) + 4(18) = 152 L, vs. 155 L recorded — a 3 L discrepancy.\nFinal Answer: Truck = 32.0 L/100km  |  Van = 18.0 L/100km  |  Route 3 predicted = 152.0 L (vs. 155.0 L recorded)",
     "final_answer": "Truck = 32.0 L/100km | Van = 18.0 L/100km | Route 3 predicted = 152.0 L (vs. 155.0 L recorded)",
     "traps": "Repeats the unit-conversion-plus-audit structure once more (miles to km feeding a third-route check), with statement B landing just under a 2% threshold (1.94%) — another razor-thin boundary case — and statement D introducing a genuinely new idea: a blended, fleet-wide rate that must be compared against each individual rate to see which one it sits closer to."
   },
@@ -1763,6 +1819,7 @@
       "5.4 ÷ 6.6 ≈ 81.8%, which is more than 80%."
     ],
     "model": "270x + 180y = 2646 (current allocation)\n180x + 270y = 2754 (proposed reallocation)",
+    "solution": "Add the two equations: 450x + 450y = 5400, so x + y = 12. Subtract the first from the second: −90x + 90y = 108, so y − x = 1.2, i.e. y = x\n+ 1.2. Substitute: x + (x+1.2) = 12, so x = 5.4, and y = 6.6.\nFinal Answer: Bond rate = 5.4%  |  Equity rate = 6.6%",
     "final_answer": "Bond rate = 5.4% | Equity rate = 6.6%",
     "traps": "A genuinely elegant \"add and subtract\" system: adding the two allocation equations directly gives x + y, and subtracting gives y - x, sidestepping a traditional elimination-by-multiplication entirely. Statement C tests whether the reader mistakenly assumes the sum of two partial-allocation returns should be comparable to a single full-allocation return, when in fact they describe entirely different amounts of money earning interest."
   },
@@ -1794,6 +1851,7 @@
       "A combined policy would cost 214.70 + 295(4.68) = $1,595.30, which is less than $1,810.00 because only one fixed fee applies instead of two."
     ],
     "model": "x + 85y = 612.50 (Auto, coverage in units of $1,000)\nx + 210y = 1197.50 (Home)",
+    "solution": "Subtract directly: 125y = 585, so y = 4.68. Substitute back: x + 397.80 = 612.50, so x = 214.70. Reconstruct the Renters coverage C:\n214.70 + 4.68C = 331.70, so C = 25, i.e. $25,000.\nFinal Answer: Fixed fee = $214.70  |  Rate = $4.68/$1,000  |  Renters coverage reconstructed = $25,000",
     "final_answer": "Fixed fee = $214.70 | Rate = $4.68/$1,000 | Renters coverage reconstructed = $25,000",
     "traps": "The reconstruction step here (finding Renters' missing coverage from its one surviving premium equation) is the same mechanism used repeatedly across this tier, but statement D introduces a subtle, counter-intuitive result: a policy with MORE total coverage can have a LOWER effective rate per $1,000, purely because the same fixed fee is spread across a larger base — the opposite of what a reader might instinctively expect."
   },
@@ -1825,6 +1883,7 @@
       "Setting 610 + 72(t-2) = 730 + 36(t-2) gives 36(t-2) = 120, so t-2 ≈ 3.33, t ≈ 5.33 — the crossover happens after Year 5, not before."
     ],
     "model": "x + y = 108 (combined growth of 432 over 4 years, Year 2 to Year 6: 4x+4y=432)\nx = 2y (Species A grows at twice Species B's rate)",
+    "solution": "Substitute the second into the first: 2y + y = 108, so y = 36. Then x = 2(36) = 72.\nFinal Answer: Species A = +72 individuals/year  |  Species B = +36 individuals/year",
     "final_answer": "Species A = +72 individuals/year | Species B = +36 individuals/year",
     "traps": "A linear-growth word problem where the two equations come from a combined-growth total and a stated ratio between the two growth rates, rather than from two separate direct observations. Statement D tests an intermediate-value-style argument (a lead reversal implies a crossing point) without requiring the exact crossing time, while statement E then demands that exact time and checks it against a specific year."
   },
@@ -1856,6 +1915,7 @@
       "3,990 + 4,072 + 3,553 = 11,615 MWh, which exceeds 11,600 MWh."
     ],
     "model": "14x + 20y = 3990 (Day 1)\n22x + 9y = 4072 (Day 2)",
+    "solution": "Divide the first by 2: 7x + 10y = 1995. Multiply by 9: 63x + 90y = 17955. Multiply the second by 10: 220x + 90y = 40720. Subtract: 157x\n= 22765, so x = 145.0. Substitute back: 1015 + 10y = 1995, so y = 98.0. Audit Day 3: predicted = 17(145) + 11(98) = 3,543 MWh, vs.\n3,553 MWh recorded — a 10 MWh discrepancy.\nFinal Answer: Plant A = 145.0 MWh/hr  |  Plant B = 98.0 MWh/hr  |  Day 3 predicted = 3,543 MWh (vs. 3,553 MWh\nrecorded)",
     "final_answer": "Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)",
     "traps": "Closes the worksheet with the same unit-conversion-plus-audit shape used throughout this tier (minutes to hours, third-row discrepancy), and statement C is the most conceptually demanding trap in the entire 60-task set: it asks the reader to swap which plant gets which total operating time and correctly predict that the grand total goes DOWN, because pairing the higher-output plant with fewer hours (rather than more) reduces total production even though the same total hours are being worked overall. End of Worksheet — 60 Tasks — Linear Equations with Two Unknowns."
   }

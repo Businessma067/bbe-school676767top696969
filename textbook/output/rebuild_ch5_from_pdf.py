@@ -462,7 +462,6 @@ def trap_notes(given: str, general: str) -> str:
         s = flatten(s or "")
         if not s:
             return ""
-        # Drop forced variable assignments / "denote" naming instructions
         s = re.sub(r"\bLet\s+.+?(?=\.\s|\.\Z|$)", "", s, flags=re.I)
         s = re.sub(
             r"\b(?:denote|write|choose)\b[^.]{0,80}\b(?:prices|variables|unknowns)\b[^.]{0,40}\.?",
@@ -470,27 +469,27 @@ def trap_notes(given: str, general: str) -> str:
             s,
             flags=re.I,
         )
+        # Drop pure translation-into-symbols coaching (x - 50 = y + 50 style lectures)
         s = re.sub(
-            r"\b[xyabcfrsd]\d?\s*=\s*[^.;]+[.;]?",
+            r"[^.]*\b(?:would have|translated into an equation|must be translated|algebraic statement)[^.]*\.",
             "",
             s,
             flags=re.I,
         )
+        s = re.sub(r"\b[xyabcfrsd]\d?\s*=\s*[^.;]+[.;]?", "", s, flags=re.I)
         s = re.sub(r"\s{2,}", " ", s)
         s = re.sub(r"\s+([.,;:])", r"\1", s)
         return s.strip(" ;,")
 
-    chunks = []
-    for src in (given, general):
+    # Prefer general pedagogy; fall back to scrubbed given
+    for src in (general, given):
         s = scrub(src)
         if len(s) >= 40:
-            chunks.append(s)
-    if not chunks:
+            note = s
+            break
+    else:
         return ""
-    note = chunks[0]
-    if len(chunks) > 1 and chunks[1] not in note and len(note) + len(chunks[1]) < 420:
-        note = f"{note} {chunks[1]}"
-    # Final safety: nuke leftover Let / xA style crumbs
+
     note = re.sub(r"\bLet\b[^.]{0,120}", "", note, flags=re.I)
     note = re.sub(r"\bx[AB]\b|\by[AB]\b", "", note)
     note = re.sub(r"\.{2,}", ".", note)
@@ -500,60 +499,7 @@ def trap_notes(given: str, general: str) -> str:
     return note
 
 
-def short_explanation(
-    letter: str,
-    verdict: bool,
-    raw: str,
-    model: str,
-    final: str,
-    traps: str,
-    is_first: bool,
-) -> str:
-    label = "TRUE" if verdict else "FALSE"
-    reason = mathify_for_expl(flatten(raw))
-    eqs = []
-    for ln in clean(model).split("\n"):
-        ln = ln.strip()
-        if "=" not in ln:
-            continue
-        if " (" in ln:
-            left = ln.split(" (")[0].strip()
-            if re.search(r"[a-zA-Z].*=", left):
-                ln = left
-        if "which rearranges" in ln.lower():
-            ln = re.split(r",\s*which rearranges to\s+", ln, flags=re.I)[0].strip()
-        eqs.append(ln)
-    formula = f"$$\n{eqs[0]}\n$$" if eqs else ""
-
-    parts = [f"**{letter}) {label}** — {reason}", ""]
-    if formula:
-        parts += ["Key relation:", "", formula, ""]
-
-    if not verdict:
-        parts.append(
-            "Watch the trap: the false claim usually reuses a printed figure with one digit changed, "
-            "drops a fee/tax adjustment, or treats an *exact* boundary as *strict* inequality."
-        )
-        parts.append("")
-    else:
-        parts.append(
-            "Why it holds: the claim matches the solved values (or a short exact recalculation from them), "
-            "not an estimate from only part of the data."
-        )
-        parts.append("")
-
-    if is_first and traps:
-        parts.append(f"**Trap / unused data in this case:** {traps}")
-        parts.append("")
-
-    if final:
-        parts.append(f"Keep the solved values in view: **{final}**.")
-    else:
-        parts.append("Check the claim against the **exact** solved values before judging.")
-    return "\n".join(parts).strip()
-
-
-def build_overview(model: str, final: str, traps: str) -> str:
+def extract_model_eqs(model: str) -> list[str]:
     eqs = []
     for ln in clean(model).split("\n"):
         ln = ln.strip()
@@ -577,16 +523,170 @@ def build_overview(model: str, final: str, traps: str) -> str:
     for e in eqs:
         if e not in seen:
             seen.append(e)
-    eqs = seen[:2]
+    return seen
+
+
+def format_model_tex(model: str) -> str:
+    eqs = extract_model_eqs(model)[:4]
     if len(eqs) >= 2:
-        tex = "$$\n\\begin{cases}\n" + " \\\\\n".join(eqs) + "\n\\end{cases}\n$$"
-    elif eqs:
-        tex = f"$$\n{eqs[0]}\n$$"
+        return "$$\n\\begin{cases}\n" + " \\\\\n".join(eqs[:2]) + "\n\\end{cases}\n$$"
+    if eqs:
+        return f"$$\n{eqs[0]}\n$$"
+    return mathify_for_expl(model)
+
+
+def format_solution_steps(solution: str) -> str:
+    """Turn PDF step-by-step prose into a readable worked solution with KaTeX."""
+    sol = clean(solution)
+    sol = re.sub(r"Final Answer:\s*.*", "", sol, flags=re.S).strip()
+    if not sol:
+        return ""
+
+    money = {}
+
+    def keep_money(m: re.Match) -> str:
+        k = f"§M{len(money)}§"
+        money[k] = m.group(0)
+        return k
+
+    work = re.sub(r"\$\d{1,3}(?:,\d{3})*(?:\.\d+)?", keep_money, sol)
+    for k, v in list(money.items()):
+        work = work.replace(k, v)
+
+    # Fix dangling "= 260" after a closed inline math span once money restored
+    work = re.sub(
+        r"\$([^$=]+)=([^$]+)\$\s*=\s*([+\-]?\d+(?:\.\d+)?)",
+        r"$\1=\2=\3$",
+        work,
+    )
+
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z(\"\\$])", work)
+    sentences = [s.strip() for s in sentences if s.strip()]
+
+    blocks: list[str] = [
+        "We solve carefully with elimination or substitution, writing each algebra step clearly."
+    ]
+    for i, sent in enumerate(sentences, start=1):
+        prose = mathify_for_expl(sent)
+        prose = re.sub(
+            r"\$([^$]+)\$\s*=\s*([+\-]?\d+(?:\.\d+)?)",
+            r"$\1=\2$",
+            prose,
+        )
+        # Split compound "A and B" display candidates into separate eqs
+        candidates = []
+        plain = re.sub(r"\$([^$]+)\$", r"\1", prose)
+        for piece in re.split(r"\band\b", plain):
+            piece = piece.strip(" ,;")
+            m = re.search(
+                r"([+\-]?(?:\d*\.?\d*)?[a-zA-Z](?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*"
+                r"\s*=\s*[+\-]?(?:\d+(?:\.\d+)?|(?:\d*\.?\d*)?[a-zA-Z])"
+                r"(?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*)",
+                piece,
+            )
+            if m:
+                e = m.group(1).strip()
+                if " " not in e.replace(" ", "") or re.search(r"[a-zA-Z].*=.*=", e) or re.search(
+                    r"[a-zA-Z].*=\s*[+\-]?\d", e
+                ):
+                    if len(e) <= 60 and "and" not in e.lower():
+                        candidates.append(e)
+        # Also take inline $...$ cores
+        for m in re.finditer(r"\$([^$]{3,60})\$", prose):
+            e = m.group(1).strip()
+            if "=" in e and "and" not in e.lower():
+                candidates.append(e)
+
+        blocks.append(f"**Step {i}.** {prose}")
+        seen = set()
+        for e in candidates:
+            if e in seen:
+                continue
+            seen.add(e)
+            blocks.append(f"$$\n{e}\n$$")
+
+    return "\n\n".join(blocks)
+
+
+def statement_explanation(
+    letter: str,
+    verdict: bool,
+    stmt: str,
+    raw: str,
+    model: str,
+    final: str,
+    traps: str,
+    is_first: bool,
+) -> str:
+    label = "TRUE" if verdict else "FALSE"
+    reason = mathify_for_expl(flatten(raw))
+    eqs = extract_model_eqs(model)
+
+    parts = [
+        f"**{letter}) {stmt}** — **{label}**",
+        "",
+        reason,
+        "",
+    ]
+
+    if eqs:
+        parts += [
+            "Related equation(s) from the model:",
+            "",
+            format_model_tex(model),
+            "",
+        ]
+
+    if verdict:
+        parts.append(
+            "Check: after the system is solved above, substitute the recovered values back into this "
+            "claim (or recompute the described scenario with those values). The numbers match exactly, "
+            "so the statement is true."
+        )
     else:
-        tex = mathify_for_expl(model)
-    parts = ["**Model**", "", tex, "", f"**Final answer:** {final}"]
+        parts.append(
+            "Check: using the solved values from above, recompute what the claim asserts. The result "
+            "disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/"
+            "distractor left out), so the statement is false."
+        )
+    parts.append("")
+
+    if final:
+        parts.append(f"Values to use: **{final}**.")
+        parts.append("")
+
+    if is_first and traps:
+        parts.append(f"**Trap / unused data for this case:** {traps}")
+
+    return "\n".join(parts).strip()
+
+
+def build_overview(model: str, solution: str, final: str, traps: str) -> str:
+    parts = [
+        "**1. Mathematical model**",
+        "",
+        "Translate each quantitative condition into an equation. (You may name the unknowns however you like.)",
+        "",
+        format_model_tex(model),
+        "",
+        "**2. Solve the system step by step**",
+        "",
+    ]
+    steps = format_solution_steps(solution)
+    if steps:
+        parts.append(steps)
+    else:
+        parts.append(
+            "Use elimination or substitution: isolate one unknown, substitute into the other equation, "
+            "simplify carefully, then back-substitute and verify both original equations."
+        )
+    parts += ["", f"**3. Final answer:** {final}"]
     if traps:
         parts += ["", f"**Trap / unused data:** {traps}"]
+    parts += [
+        "",
+        "Verify by substituting the final values back into both original equations before judging the statements.",
+    ]
     return "\n".join(parts).strip()
 
 
@@ -695,6 +795,7 @@ for num in range(1, 61):
             "answer_key": answers,
             "explanations": explanations,
             "model": model,
+            "solution": solution,
             "final_answer": final,
             "traps": traps,
         }
@@ -718,9 +819,10 @@ for t in tasks:
     d5 = max(1, min(5, math.ceil(float(t["difficulty_10"]) / 2.0)))
     n = t["num"]
     expls = [
-        short_explanation(
+        statement_explanation(
             "ABCDE"[i],
             t["answer_key"][i],
+            t["statements"][i],
             t["explanations"][i],
             t["model"],
             t["final_answer"],
@@ -750,7 +852,7 @@ for t in tasks:
     lines.append(f'    difficulty_level: "{d5}/5",')
     lines.append(f"    sort_order: {n},")
     lines.append(
-        f"    solution_overview: `{esc(build_overview(t['model'], t['final_answer'], t.get('traps') or ''))}`,"
+        f"    solution_overview: `{esc(build_overview(t['model'], t.get('solution') or '', t['final_answer'], t.get('traps') or ''))}`,"
     )
     lines.append("  },")
 
