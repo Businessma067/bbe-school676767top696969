@@ -77,93 +77,102 @@ function ChartFrame({ title, children, height = "h-[260px] sm:h-[300px]" }: { ti
   );
 }
 
-/** Clean CSS circular flow — rebuilt from scratch (no Unicode stubs, no dense SVG tangle). */
+/**
+ * Circular flow — one SVG coordinate system so arrows start/end on box edges
+ * (no floating middle column).
+ */
 function CircularFlow() {
-  const lanes: { label: string; dir: "left" | "right" }[] = [
-    { label: "Goods and services", dir: "left" },
-    { label: "Payments for goods and services", dir: "right" },
-    { label: "Labour and other resources", dir: "right" },
-    { label: "Wages, rent, interest and profit", dir: "left" },
+  const W = 720;
+  const H = 420;
+  // Large actor boxes
+  const gov = { x: 240, y: 12, w: 240, h: 64 };
+  const hh = { x: 12, y: 230, w: 190, h: 130 };
+  const biz = { x: 518, y: 230, w: 190, h: 130 };
+  const left = hh.x + hh.w; // right edge of households
+  const right = biz.x; // left edge of businesses
+  const midX = (left + right) / 2;
+  // y inside the side boxes so arrows visibly leave/enter the blocks
+  const lanes: { y: number; label: string; toBiz: boolean }[] = [
+    { y: 255, label: "Goods and services", toBiz: false },
+    { y: 288, label: "Payments for goods and services", toBiz: true },
+    { y: 321, label: "Labour and other resources", toBiz: true },
+    { y: 354, label: "Wages, rent, interest and profit", toBiz: false },
   ];
+  // Vertical attach points on box tops/bottoms
+  const hhTop = { x: hh.x + hh.w * 0.45, y: hh.y };
+  const bizTop = { x: biz.x + biz.w * 0.55, y: biz.y };
+  const govBotL = { x: gov.x + 48, y: gov.y + gov.h };
+  const govBotR = { x: gov.x + gov.w - 48, y: gov.y + gov.h };
 
   return (
-    <div className="mx-auto w-full max-w-xl" role="img" aria-label="Circular flow of goods, services and money">
-      <div className="flex justify-center">
-        <ActorBox soft>Government</ActorBox>
-      </div>
+    <div className="mx-auto w-full max-w-3xl" role="img" aria-label="Circular flow of goods, services and money">
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <marker id="cfArr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L10,5 L0,10 Z" fill={ACCENT} />
+          </marker>
+          <marker id="cfArrMute" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L9,4.5 L0,9 Z" fill={MUTED} />
+          </marker>
+        </defs>
 
-      <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-stretch gap-2 text-[11px] text-muted-foreground sm:gap-3 sm:text-xs">
-        <div className="flex flex-col items-center gap-1 text-center">
-          <span className="h-6 w-px bg-primary/50" />
-          <span>taxes ↑</span>
-          <span>public goods / transfers ↓</span>
-          <span className="h-6 w-px bg-primary/50" />
-        </div>
-        <div />
-        <div className="flex flex-col items-center gap-1 text-center">
-          <span className="h-6 w-px bg-primary/50" />
-          <span>taxes ↑</span>
-          <span>subsidies / public goods ↓</span>
-          <span className="h-6 w-px bg-primary/50" />
-        </div>
-      </div>
+        {/* Boxes first — large, then arrows leave their edges */}
+        <rect x={gov.x} y={gov.y} width={gov.w} height={gov.h} fill="oklch(0.96 0.025 55)" stroke={ACCENT} strokeWidth="2.5" />
+        <text x={gov.x + gov.w / 2} y={gov.y + 40} textAnchor="middle" fill={ACCENT} fontSize="22" fontWeight="700">
+          Government
+        </text>
 
-      <div className="mt-1 grid grid-cols-[minmax(5.5rem,7.5rem)_1fr_minmax(5.5rem,7.5rem)] items-center gap-2 sm:gap-4">
-        <ActorBox>
+        <rect x={hh.x} y={hh.y} width={hh.w} height={hh.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2.5" />
+        <text x={hh.x + hh.w / 2} y={hh.y + 58} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
           Private
-          <br />
+        </text>
+        <text x={hh.x + hh.w / 2} y={hh.y + 82} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
           households
-        </ActorBox>
+        </text>
 
-        <div className="flex flex-col justify-center gap-3 py-1">
-          {lanes.map((lane) => (
-            <FlowLane key={lane.label} label={lane.label} dir={lane.dir} />
-          ))}
-        </div>
+        <rect x={biz.x} y={biz.y} width={biz.w} height={biz.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2.5" />
+        <text x={biz.x + biz.w / 2} y={biz.y + 72} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
+          Businesses
+        </text>
 
-        <ActorBox>Businesses</ActorBox>
-      </div>
+        {/* Government links — start on box borders */}
+        <line x1={hhTop.x} y1={hhTop.y} x2={govBotL.x} y2={govBotL.y} stroke={MUTED} strokeWidth="2.25" markerEnd="url(#cfArrMute)" />
+        <line x1={bizTop.x} y1={bizTop.y} x2={govBotR.x} y2={govBotR.y} stroke={MUTED} strokeWidth="2.25" markerEnd="url(#cfArrMute)" />
+        <line x1={govBotL.x + 28} y1={govBotL.y} x2={hh.x + hh.w * 0.72} y2={hhTop.y} stroke={ACCENT} strokeWidth="2.25" markerEnd="url(#cfArr)" />
+        <line x1={govBotR.x - 28} y1={govBotR.y} x2={biz.x + biz.w * 0.28} y2={bizTop.y} stroke={ACCENT} strokeWidth="2.25" markerEnd="url(#cfArr)" />
 
-      <p className="mt-4 text-center text-[11px] italic text-muted-foreground sm:text-xs">
-        Real flows and monetary flows run in opposite directions.
-      </p>
-    </div>
-  );
-}
+        <text x={(hhTop.x + govBotL.x) / 2 - 6} y={148} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
+          taxes ↑
+        </text>
+        <text x={(hhTop.x + govBotL.x) / 2 - 6} y={168} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
+          public goods / transfers ↓
+        </text>
+        <text x={(bizTop.x + govBotR.x) / 2 + 6} y={148} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
+          taxes ↑
+        </text>
+        <text x={(bizTop.x + govBotR.x) / 2 + 6} y={168} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
+          subsidies / public goods ↓
+        </text>
 
-function ActorBox({ children, soft = false }: { children: ReactNode; soft?: boolean }) {
-  return (
-    <div
-      className={cn(
-        "flex min-h-[4.25rem] items-center justify-center px-3 py-2 text-center text-[13px] font-bold leading-snug",
-        soft
-          ? "bg-primary/10 text-primary ring-1 ring-primary/30"
-          : "bg-secondary/50 text-foreground ring-1 ring-border",
-      )}
-    >
-      {children}
-    </div>
-  );
-}
+        {/* Horizontal flows: from right edge of HH to left edge of Biz (and reverse) */}
+        {lanes.map((lane) => {
+          const x1 = lane.toBiz ? left : right;
+          const x2 = lane.toBiz ? right : left;
+          return (
+            <g key={lane.label}>
+              <line x1={x1} y1={lane.y} x2={x2} y2={lane.y} stroke={ACCENT} strokeWidth="2.5" markerEnd="url(#cfArr)" />
+              <rect x={midX - 122} y={lane.y - 11} width="244" height="20" rx="2" fill="oklch(0.985 0.005 75)" />
+              <text x={midX} y={lane.y + 4} textAnchor="middle" fill={INK} fontSize="12.5" fontWeight="600">
+                {lane.label}
+              </text>
+            </g>
+          );
+        })}
 
-function FlowLane({ label, dir }: { label: string; dir: "left" | "right" }) {
-  return (
-    <div className="relative flex h-7 items-center">
-      <div className="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-primary" />
-      {dir === "right" ? (
-        <span
-          aria-hidden
-          className="absolute right-0 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[5px] border-y-transparent border-l-[9px] border-l-primary"
-        />
-      ) : (
-        <span
-          aria-hidden
-          className="absolute left-0 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[5px] border-y-transparent border-r-[9px] border-r-primary"
-        />
-      )}
-      <span className="relative z-10 mx-auto bg-[oklch(0.985_0.005_75)] px-2 text-center text-[11px] leading-none text-foreground sm:text-xs">
-        {label}
-      </span>
+        <text x={W / 2} y={406} textAnchor="middle" fill={MUTED} fontSize="12" fontStyle="italic">
+          Real flows and monetary flows run in opposite directions.
+        </text>
+      </svg>
     </div>
   );
 }
