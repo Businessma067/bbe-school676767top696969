@@ -13,6 +13,9 @@ PDF = Path(r"c:\Users\bubli\Downloads\Linear_Equations_All_60_Tasks_Reranked-1.p
 ROOT = Path(r"C:\Users\bubli\Projects\bbe-school-fixed")
 RAW_OUT = ROOT / "textbook" / "output" / "linear_eq_60_raw.json"
 TS_OUT = ROOT / "src" / "data" / "math-ch5-linear-equations.ts"
+OVERRIDE_PATHS = [
+    ROOT / "textbook" / "output" / "ch5_expl_overrides.json",
+]
 
 doc = pymupdf.open(str(PDF))
 
@@ -579,13 +582,24 @@ def contextual_notes(
             "Gross − returns comes first; plugging gross totals skews both unknowns.",
         )
 
-    # --- Mixture / ratio batches ---
-    if re.search(r"\b(mixed\s+\d+\s*:\s*\d+|volume ratio|mass-per-liter|mg/ml|stock solution|"
-                 r"blend(?:s|ed)?|concentration)\b", blob):
+    # --- Mixture / ratio batches (not mere "concentration = unknown") ---
+    if re.search(
+        r"\b(mixed\s+\d+\s*:\s*\d+|volume ratio|mass-per-liter|stock solution|"
+        r"blend(?:s|ed)? (?:of |two |molten |shipment)|ratio-blended)\b",
+        blob,
+    ):
         add(
             "Mixture",
             "Turn the given ratio into two linked amounts (or one free unknown + a multiple) "
             "before writing the cost/mass equation — do not treat the ratio as a second price.",
+        )
+    elif re.search(r"\b(mg/ml|mg\\.? ?/? ?ml|concentration)\b", blob) and re.search(
+        r"\b(suspension|batch)\b", blob
+    ):
+        add(
+            "Concentration",
+            "Here volumes are the known coefficients and the unknowns are the two concentrations "
+            "(mg/mL). Convert every volume to the same unit before multiplying.",
         )
 
     # --- Work-rate / % complete / plant output ---
@@ -689,6 +703,7 @@ def contextual_notes(
         "Base + rate",
         "Net, not gross",
         "Mixture",
+        "Concentration",
         "Rate × time",
         "Missing cell",
         "Affine map",
@@ -748,7 +763,7 @@ def format_model_tex(model: str) -> str:
 
 
 def format_solution_steps(solution: str) -> str:
-    """Turn PDF step-by-step prose into a readable worked solution with KaTeX."""
+    """Turn PDF step-by-step prose into readable steps with inline KaTeX only (no duplicates)."""
     sol = clean(solution)
     sol = re.sub(r"Final Answer:\s*.*", "", sol, flags=re.S).strip()
     if not sol:
@@ -765,7 +780,6 @@ def format_solution_steps(solution: str) -> str:
     for k, v in list(money.items()):
         work = work.replace(k, v)
 
-    # Fix dangling "= 260" after a closed inline math span once money restored
     work = re.sub(
         r"\$([^$=]+)=([^$]+)\$\s*=\s*([+\-]?\d+(?:\.\d+)?)",
         r"$\1=\2=\3$",
@@ -775,9 +789,7 @@ def format_solution_steps(solution: str) -> str:
     sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z(\"\\$])", work)
     sentences = [s.strip() for s in sentences if s.strip()]
 
-    blocks: list[str] = [
-        "We solve carefully with elimination or substitution, writing each algebra step clearly."
-    ]
+    blocks: list[str] = []
     for i, sent in enumerate(sentences, start=1):
         prose = mathify_for_expl(sent)
         prose = re.sub(
@@ -785,39 +797,113 @@ def format_solution_steps(solution: str) -> str:
             r"$\1=\2$",
             prose,
         )
-        # Split compound "A and B" display candidates into separate eqs
-        candidates = []
-        plain = re.sub(r"\$([^$]+)\$", r"\1", prose)
-        for piece in re.split(r"\band\b", plain):
-            piece = piece.strip(" ,;")
-            m = re.search(
-                r"([+\-]?(?:\d*\.?\d*)?[a-zA-Z](?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*"
-                r"\s*=\s*[+\-]?(?:\d+(?:\.\d+)?|(?:\d*\.?\d*)?[a-zA-Z])"
-                r"(?:\s*[+\-]\s*(?:\d*\.?\d*)?[a-zA-Z]?)*)",
-                piece,
-            )
-            if m:
-                e = m.group(1).strip()
-                if " " not in e.replace(" ", "") or re.search(r"[a-zA-Z].*=.*=", e) or re.search(
-                    r"[a-zA-Z].*=\s*[+\-]?\d", e
-                ):
-                    if len(e) <= 60 and "and" not in e.lower():
-                        candidates.append(e)
-        # Also take inline $...$ cores
-        for m in re.finditer(r"\$([^$]{3,60})\$", prose):
-            e = m.group(1).strip()
-            if "=" in e and "and" not in e.lower():
-                candidates.append(e)
-
+        # Avoid repeating the same equation twice inside one sentence
+        prose = re.sub(r"(\$[^$]+\$)\s*;\s*\1", r"\1", prose)
         blocks.append(f"**Step {i}.** {prose}")
-        seen = set()
-        for e in candidates:
-            if e in seen:
-                continue
-            seen.add(e)
-            blocks.append(f"$$\n{e}\n$$")
 
     return "\n\n".join(blocks)
+
+
+def _first_sentences(text: str, n: int = 2) -> str:
+    parts = re.split(r"(?<=[.!?])\s+", flatten(text))
+    parts = [p.strip() for p in parts if p.strip()]
+    return " ".join(parts[:n]).strip()
+
+
+def setup_blurb(title: str, context: str) -> str:
+    """Short case-specific lead-in (unique because each stem is unique)."""
+    lead = _first_sentences(context, 2)
+    if not lead:
+        lead = flatten(title)
+    if lead and not lead.endswith("."):
+        lead += "."
+    return (
+        f"**What's going on.** {lead} "
+        "Name the two unknowns however you like, write one equation per independent observation, "
+        "solve the system, then judge each claim with those values."
+    )
+
+
+def craft_statement_tip(stmt: str, verdict: bool, reason: str) -> str:
+    """One short tip tied to THIS claim — prefers detail from the reason text."""
+    s = stmt.lower()
+    r = reason.lower()
+    # Pull a concrete fragment from the reason (percent, dollar, or small calc)
+    detail = ""
+    m = re.search(
+        r"(\d+(?:\.\d+)?\s*%|\$\d[\d,]*(?:\.\d+)?|\d+(?:\.\d+)?/\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*mg)",
+        reason,
+    )
+    if m:
+        detail = m.group(1).replace("$", r"\$")
+
+    if not verdict:
+        if re.search(r"\b(more than|less than|exceed|at least|at most)\b", s):
+            bit = f" (here the key figure is {detail})" if detail else ""
+            return (
+                f"**Why it fails.** Bound language is the trap{bit}: compute the exact value, "
+                "then ask whether it really clears or misses the threshold as written."
+            )
+        if re.search(r"\b(fee|tax|loyalty|forecast|advertised|projected)\b", s + " " + r):
+            return (
+                "**Why it fails.** A fee, tax, ad, or forecast is being mixed into the solving "
+                "equations — peel or ignore it, then recompute the claim."
+            )
+        if re.search(r"\b(percent|%|ratio|proportion|share)\b", s):
+            bit = f" The check hinges on {detail}." if detail else ""
+            return (
+                f"**Why it fails.** Name the base of the percent/share before comparing.{bit}"
+            )
+        if re.search(r"\b(double|twice|half|transfer|moved|pooled)\b", s):
+            return (
+                "**Why it fails.** Replay the hypothetical from the solved values and change "
+                "only what the statement changes — mis-transfer and double-count are common."
+            )
+        bit = f" Key figure: {detail}." if detail else ""
+        return (
+            f"**Why it fails.** Recompute from the solved unknowns: the claim's number, "
+            f"direction, or scenario does not match.{bit}"
+        )
+
+    if re.search(r"\b(more than|less than|exceed|at least|at most)\b", s):
+        bit = f" Margin clue: {detail}." if detail else ""
+        return (
+            f"**Watch.** True, but the margin can be thin — do not round a near miss "
+            f"into the opposite call.{bit}"
+        )
+    if re.search(r"\b(percent|%|proportion|share|ratio)\b", s):
+        bit = f" ({detail})" if detail else ""
+        return (
+            f"**Watch.** Confirm the percent/share is of the base the wording actually names{bit}."
+        )
+    if re.search(r"\b(if |were |would |had )\b", s):
+        return (
+            "**Watch.** Counterfactuals keep the same unit prices/rates; only the changed "
+            "quantities (or the imagined tweak) move."
+        )
+    if detail:
+        return f"**Watch.** The arithmetic centers on {detail} — keep that figure in view when scanning the other claims."
+    return ""
+
+
+def expand_statement_reason(stmt: str, verdict: bool, raw: str) -> str:
+    """Frame the PDF check so each A–E block reads like a short argument, not a stamp."""
+    reason = mathify_for_expl(flatten(raw))
+    if not reason:
+        reason = "Compare the claim directly to the solved values from the system above."
+    if not reason.endswith((".", "!", "?")):
+        reason += "."
+
+    if verdict:
+        opener = "Here is the check."
+    else:
+        opener = "Here is where the claim breaks."
+
+    tip = craft_statement_tip(stmt, verdict, reason)
+    parts = [opener, "", reason]
+    if tip:
+        parts += ["", tip]
+    return "\n".join(parts)
 
 
 def statement_explanation(
@@ -830,59 +916,28 @@ def statement_explanation(
     coach: str,
     is_first: bool,
 ) -> str:
+    del model, final, coach, is_first  # no more repeated model / values / coach spam
     label = "TRUE" if verdict else "FALSE"
-    reason = mathify_for_expl(flatten(raw))
-    eqs = extract_model_eqs(model)
+    body = expand_statement_reason(stmt, verdict, raw)
+    return f"**{letter}) {stmt}** — **{label}**\n\n{body}".strip()
 
+
+def build_overview(
+    model: str,
+    solution: str,
+    final: str,
+    coach: str,
+    title: str = "",
+    context: str = "",
+) -> str:
     parts = [
-        f"**{letter}) {stmt}** — **{label}**",
+        setup_blurb(title, context),
         "",
-        reason,
-        "",
-    ]
-
-    if eqs:
-        parts += [
-            "Related equation(s) from the model:",
-            "",
-            format_model_tex(model),
-            "",
-        ]
-
-    if verdict:
-        parts.append(
-            "Check: after the system is solved above, substitute the recovered values back into this "
-            "claim (or recompute the described scenario with those values). The numbers match exactly, "
-            "so the statement is true."
-        )
-    else:
-        parts.append(
-            "Check: using the solved values from above, recompute what the claim asserts. The result "
-            "disagrees with the wording (wrong figure, wrong direction, wrong threshold, or a fee/"
-            "distractor left out), so the statement is false."
-        )
-    parts.append("")
-
-    if final:
-        parts.append(f"Values to use: **{final}**.")
-        parts.append("")
-
-    # Only on the first statement, and only if this case earned contextual tips
-    if is_first and coach:
-        parts.append(coach)
-
-    return "\n".join(parts).strip()
-
-
-def build_overview(model: str, solution: str, final: str, coach: str) -> str:
-    parts = [
-        "**1. Mathematical model**",
-        "",
-        "Translate each quantitative condition into an equation. (You may name the unknowns however you like.)",
+        "**Model.**",
         "",
         format_model_tex(model),
         "",
-        "**2. Solve the system step by step**",
+        "**Solve.**",
         "",
     ]
     steps = format_solution_steps(solution)
@@ -890,16 +945,12 @@ def build_overview(model: str, solution: str, final: str, coach: str) -> str:
         parts.append(steps)
     else:
         parts.append(
-            "Use elimination or substitution: isolate one unknown, substitute into the other equation, "
-            "simplify carefully, then back-substitute and verify both original equations."
+            "Eliminate or substitute: clear a variable, solve the remaining one-variable equation, "
+            "back-substitute, and spot-check both originals."
         )
-    parts += ["", f"**3. Final answer:** {final}"]
+    parts += ["", f"**Answer.** {final}"]
     if coach:
         parts += ["", coach]
-    parts += [
-        "",
-        "Verify by substituting the final values back into both original equations before judging the statements.",
-    ]
     return "\n".join(parts).strip()
 
 
@@ -1041,6 +1092,20 @@ for num in range(1, 61):
 
 RAW_OUT.write_text(json.dumps(tasks, ensure_ascii=False, indent=2), encoding="utf-8")
 
+overrides: dict[str, dict] = {}
+for path in OVERRIDE_PATHS:
+    if not path.exists():
+        continue
+    try:
+        blob = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"WARN: bad override JSON {path}: {exc}")
+        continue
+    for key, val in blob.items():
+        if isinstance(val, dict) and "tactical_explanations" in val and "solution_overview" in val:
+            overrides[str(key)] = val
+    print(f"loaded overrides from {path.name}: {len(blob)} entries")
+
 lines = [
     "/**",
     " * Chapter 5 — Linear equations in two unknowns",
@@ -1055,19 +1120,32 @@ lines = [
 for t in tasks:
     d5 = max(1, min(5, math.ceil(float(t["difficulty_10"]) / 2.0)))
     n = t["num"]
-    expls = [
-        statement_explanation(
-            "ABCDE"[i],
-            t["answer_key"][i],
-            t["statements"][i],
-            t["explanations"][i],
+    ov = overrides.get(str(n))
+    if ov and len(ov.get("tactical_explanations") or []) == 5:
+        expls = [str(x) for x in ov["tactical_explanations"]]
+        overview = str(ov["solution_overview"])
+    else:
+        expls = [
+            statement_explanation(
+                "ABCDE"[i],
+                t["answer_key"][i],
+                t["statements"][i],
+                t["explanations"][i],
+                t["model"],
+                t["final_answer"],
+                t.get("coach") or "",
+                is_first=(i == 0),
+            )
+            for i in range(5)
+        ]
+        overview = build_overview(
             t["model"],
+            t.get("solution") or "",
             t["final_answer"],
             t.get("coach") or "",
-            is_first=(i == 0),
+            title=clean(t["title"]),
+            context=t.get("context") or "",
         )
-        for i in range(5)
-    ]
     lines.append("  {")
     lines.append(f'    id: "math-5-{n}",')
     lines.append(f'    case_id: "MATH 5.{n:02d}",')
@@ -1089,7 +1167,7 @@ for t in tasks:
     lines.append(f'    difficulty_level: "{d5}/5",')
     lines.append(f"    sort_order: {n},")
     lines.append(
-        f"    solution_overview: `{esc(build_overview(t['model'], t.get('solution') or '', t['final_answer'], t.get('coach') or ''))}`,"
+        f"    solution_overview: `{esc(overview)}`,"
     )
     lines.append("  },")
 
