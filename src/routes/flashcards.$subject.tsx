@@ -402,6 +402,21 @@ function FlashcardSubjectPage() {
   const overlayOpacity = Math.min(0.55, Math.abs(dragX) / 120);
   const busy = !!exitDir || !!enterFrom;
 
+  const frontLabel =
+    subjectId === "english"
+      ? "Word"
+      : subjectId === "math"
+        ? "Term / Formula"
+        : "Term";
+  const backLabel =
+    subjectId === "english"
+      ? sectionId === "eng-synonyms"
+        ? "Synonyms"
+        : sectionId === "eng-antonyms"
+          ? "Antonyms"
+          : "Definition"
+      : "Explanation";
+
   return (
     <div className="flashcards-page min-h-screen overflow-x-clip bg-background font-sans text-foreground antialiased">
       <SiteHeader
