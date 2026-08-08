@@ -18,6 +18,10 @@ export type MathTask = {
   sort_order: number;
   /** Shared worked solution (KaTeX / markdown-ish) shown with all statement explanations. */
   solution_overview?: string;
+  /** Optional stem graphic clipped from the source PDF (public URL). */
+  figure?: string;
+  /** Optional markdown pipe-tables reconstructed from the PDF. */
+  tables_markdown?: string;
   /** True until real task content is authored. */
   placeholder?: boolean;
 };

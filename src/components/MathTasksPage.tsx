@@ -165,9 +165,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
 
       <div className={cn(PRACTICE_BODY_STACK, "lg:flex lg:items-start lg:gap-6")}>
         {!sidebarCollapsed && (
-          <aside className="mb-6 w-full shrink-0 lg:mb-0 lg:w-72">
-            <div className="rounded-2xl border border-border bg-card p-3 shadow-sm lg:sticky lg:top-20">
-              <div className="mb-2 flex items-center justify-between px-1">
+          <aside className="mb-6 w-full shrink-0 lg:sticky lg:top-20 lg:mb-0 lg:h-[calc(100vh-6rem)] lg:w-80">
+            <div className="flex max-h-[min(70vh,36rem)] flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:max-h-none">
+              <div className="mb-2 flex shrink-0 items-center justify-between px-1">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                   Chapters
                 </span>
@@ -181,7 +181,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                 </button>
               </div>
 
-              <ul className="space-y-1">
+              <ul className="min-h-0 flex-1 space-y-1 overflow-y-auto overscroll-contain pr-1">
                 {chapters.map((ch) => {
                   const list = byChapter.get(ch.num) ?? [];
                   const done = list.filter((c) => progress.passed.includes(c.id)).length;
@@ -348,7 +348,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                 })}
               </ul>
 
-              <div className="mt-3 border-t border-border pt-3">
+              <div className="mt-3 shrink-0 border-t border-border pt-3">
                 <button
                   type="button"
                   onClick={() => setActiveChapter("revision")}
@@ -380,7 +380,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               <button
                 type="button"
                 onClick={() => setCustomResetOpen(true)}
-                className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl border border-dashed border-border px-3 py-2 text-xs font-semibold text-muted-foreground hover:border-primary hover:bg-primary/5 hover:text-primary"
+                className="mt-2 flex w-full shrink-0 items-center justify-center gap-1.5 rounded-xl border border-dashed border-border px-3 py-2 text-xs font-semibold text-muted-foreground hover:border-primary hover:bg-primary/5 hover:text-primary"
               >
                 <Settings2 className="h-3.5 w-3.5" /> Customize reset
               </button>
@@ -521,7 +521,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
           )}
         </main>
 
-        <PracticeRightSlot>
+        <PracticeRightSlot className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
           {showExplanations &&
           activeCase &&
           !activeCase.placeholder &&
@@ -612,18 +612,80 @@ function DifficultyPill({ level, active }: { level: string; active?: boolean }) 
   );
 }
 
-/** Light markdown (**bold**, *italic*) plus KaTeX via FlashcardMath. */
+/** Light markdown (**bold**, *italic*, pipe tables) plus KaTeX via FlashcardMath. */
 function MathProse({ text, className }: { text: string; className?: string }) {
-  // Keep $$...$$ blocks intact (they may contain newlines for aligned formulas).
   const paragraphs = text.split(/\n\n+/);
   return (
     <div className={cn("space-y-2.5", className)}>
-      {paragraphs.map((para, i) => (
-        <div key={i} className="text-xs leading-relaxed [&_.katex-display]:my-2">
-          <RichMathLine text={para} />
-        </div>
-      ))}
+      {paragraphs.map((para, i) => {
+        const table = parseMarkdownTable(para);
+        if (table) {
+          return (
+            <div key={i} className="overflow-x-auto">
+              <MarkdownTable data={table} />
+            </div>
+          );
+        }
+        return (
+          <div key={i} className="text-[13px] leading-relaxed [&_.katex-display]:my-2">
+            <RichMathLine text={para} />
+          </div>
+        );
+      })}
     </div>
+  );
+}
+
+function parseMarkdownTable(block: string): string[][] | null {
+  const lines = block
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  if (lines.length < 2) return null;
+  if (!lines.every((l) => l.startsWith("|") && l.endsWith("|"))) return null;
+  const rows = lines
+    .filter((l) => !/^\|\s*:?-{3,}/.test(l.replace(/\|/g, "|")))
+    .filter((l) => !/^(\|\s*:?-+:?\s*)+\|$/.test(l))
+    .map((l) =>
+      l
+        .slice(1, -1)
+        .split("|")
+        .map((c) => c.trim()),
+    );
+  return rows.length >= 1 ? rows : null;
+}
+
+function MarkdownTable({ data }: { data: string[][] }) {
+  if (!data.length) return null;
+  const [header, ...body] = data;
+  return (
+    <table className="w-full min-w-[16rem] border-collapse overflow-hidden rounded-lg border border-border text-left text-[12px]">
+      <thead>
+        <tr className="bg-secondary/70">
+          {header.map((cell, i) => (
+            <th
+              key={i}
+              className="border-b border-border px-2.5 py-1.5 font-semibold text-foreground"
+            >
+              <RichMathLine text={cell} />
+            </th>
+          ))}
+        </tr>
+      </thead>
+      {body.length > 0 && (
+        <tbody>
+          {body.map((row, ri) => (
+            <tr key={ri} className="odd:bg-background even:bg-secondary/30">
+              {row.map((cell, ci) => (
+                <td key={ci} className="border-b border-border/60 px-2.5 py-1.5 text-foreground/90">
+                  <RichMathLine text={cell} />
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      )}
+    </table>
   );
 }
 
@@ -875,9 +937,28 @@ function MathTaskCard({
       </div>
 
       <h2 className="font-display text-lg font-bold tracking-tight">{task.title}</h2>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">
-        <FlashcardMath text={task.context} />
-      </p>
+      <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
+        {task.figure ? (
+          <figure className="overflow-hidden rounded-xl border border-border bg-[#faf8f5] shadow-sm">
+            <img
+              src={task.figure}
+              alt={`Stem figure for ${task.title}`}
+              className="block h-auto w-full"
+              loading="lazy"
+            />
+          </figure>
+        ) : null}
+        {!task.figure ? <MathProse text={task.context} className="text-sm" /> : null}
+        {task.figure && task.context.includes("**Variables:**") ? (
+          <MathProse
+            text={task.context.slice(task.context.indexOf("**Variables:**"))}
+            className="text-sm"
+          />
+        ) : null}
+        {!task.figure && task.tables_markdown ? (
+          <MathProse text={task.tables_markdown} className="text-sm" />
+        ) : null}
+      </div>
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">

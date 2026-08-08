@@ -1232,7 +1232,7 @@ export function PracticeCalcPanel() {
 /** Right sticky slot: calculator when open, otherwise the Theory / explanation children. */
 export function PracticeRightSlot({
   children,
-  className = "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-96 lg:shrink-0",
+  className = "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem]",
 }: {
   children: ReactNode;
   className?: string;
