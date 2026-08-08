@@ -8,6 +8,7 @@ import {
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { FlashcardMath } from "@/components/FlashcardMath";
 import {
   countCards,
   getFlashcardSubject,
@@ -62,6 +63,7 @@ type DeckCard = Flashcard & { sectionId: string; sectionTitle: string; key: stri
 
 const SWIPE_THRESHOLD = 88;
 const EXIT_MS = 300;
+const DRAG_ACTIVATE = 12;
 
 function buildDeck(
   subjectId: string,
@@ -80,7 +82,7 @@ function buildDeck(
   );
 }
 
-function shuffleInPlaceCopy<T>(arr: T[]): T[] {
+function shuffleCopy<T>(arr: T[]): T[] {
   const next = [...arr];
   for (let i = next.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -107,13 +109,16 @@ function FlashcardSubjectPage() {
   const [seen, setSeen] = useState(0);
 
   const exitLockRef = useRef(false);
-  const dragActiveRef = useRef(false);
+  const pointerIdRef = useRef<number | null>(null);
   const startXRef = useRef(0);
+  const startYRef = useRef(0);
   const dragXRef = useRef(0);
   const movedRef = useRef(false);
+  const axisRef = useRef<"undecided" | "x" | "y">("undecided");
   const deckRef = useRef(deck);
   const progressRef = useRef(progress);
   const cardRef = useRef<DeckCard | undefined>(undefined);
+  const stageRef = useRef<HTMLDivElement | null>(null);
 
   deckRef.current = deck;
   progressRef.current = progress;
@@ -128,8 +133,10 @@ function FlashcardSubjectPage() {
     setIndex(0);
     setFlipped(false);
     setDragX(0);
+    dragXRef.current = 0;
     setExitDir(null);
     exitLockRef.current = false;
+    pointerIdRef.current = null;
     setSeen(0);
   }, [sectionId, subject.sections, subjectId]);
 
@@ -155,11 +162,22 @@ function FlashcardSubjectPage() {
 
   const knowledge: CardKnowledge | undefined = card ? progress[card.key] : undefined;
 
+  const resetDragState = useCallback(() => {
+    pointerIdRef.current = null;
+    movedRef.current = false;
+    axisRef.current = "undecided";
+    dragXRef.current = 0;
+    setDragX(0);
+    setDragging(false);
+    document.body.classList.remove("flashcard-swiping");
+  }, []);
+
   const rateCard = useCallback(
     (status: CardKnowledge) => {
       const current = cardRef.current;
       if (!current || exitLockRef.current) return;
       exitLockRef.current = true;
+      resetDragState();
 
       const key = current.key;
       const nextProgress = { ...progressRef.current, [key]: status };
@@ -170,21 +188,19 @@ function FlashcardSubjectPage() {
       setExitDir(status === "known" ? "right" : "left");
       window.setTimeout(() => {
         setFlipped(false);
-        setDragX(0);
-        dragXRef.current = 0;
         setExitDir(null);
         exitLockRef.current = false;
         setIndex(() => pickWeightedIndex(deckRef.current, nextProgress, key));
         setSeen((n) => n + 1);
       }, EXIT_MS);
     },
-    [subjectId],
+    [resetDragState, subjectId],
   );
 
   const goRelative = (delta: number) => {
     if (!deck.length || exitLockRef.current) return;
     setFlipped(false);
-    setDragX(0);
+    resetDragState();
     setIndex((i) => {
       const next = i + delta;
       if (next < 0) return deck.length - 1;
@@ -197,7 +213,7 @@ function FlashcardSubjectPage() {
     if (!deck.length || exitLockRef.current) return;
     const exclude = cardRef.current?.key;
     setFlipped(false);
-    setDragX(0);
+    resetDragState();
     setIndex(() => pickWeightedIndex(deckRef.current, progressRef.current, exclude));
     setSeen((n) => n + 1);
   };
@@ -221,41 +237,109 @@ function FlashcardSubjectPage() {
     return () => window.removeEventListener("keydown", onKey);
   }, [rateCard]);
 
+  // Safety net: clear stuck drag if the pointer ends outside the card (prevents hover-drag).
+  useEffect(() => {
+    const clearStuck = (e: PointerEvent) => {
+      if (pointerIdRef.current == null || pointerIdRef.current !== e.pointerId) return;
+      // Element handler usually runs first; if we still hold a pointer id, finish here.
+      const dx = dragXRef.current;
+      const moved = movedRef.current;
+      const axis = axisRef.current;
+      resetDragState();
+      if (axis === "x") {
+        if (dx >= SWIPE_THRESHOLD) rateCard("known");
+        else if (dx <= -SWIPE_THRESHOLD) rateCard("unknown");
+      } else if (!moved && axis === "undecided") {
+        setFlipped((f) => !f);
+      }
+    };
+    window.addEventListener("pointerup", clearStuck);
+    window.addEventListener("pointercancel", clearStuck);
+    return () => {
+      window.removeEventListener("pointerup", clearStuck);
+      window.removeEventListener("pointercancel", clearStuck);
+    };
+  }, [rateCard, resetDragState]);
+
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (exitLockRef.current || e.button !== 0) return;
-    dragActiveRef.current = true;
-    movedRef.current = false;
+    // Only primary mouse / touch / pen — ignore hover.
+    if (e.pointerType === "mouse" && e.buttons !== 1) return;
+
+    pointerIdRef.current = e.pointerId;
     startXRef.current = e.clientX;
+    startYRef.current = e.clientY;
     dragXRef.current = 0;
+    movedRef.current = false;
+    axisRef.current = "undecided";
     setDragging(true);
+    document.body.classList.add("flashcard-swiping");
+
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      /* ignore */
+    }
   };
 
   const onPointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (!dragActiveRef.current) return;
+    if (pointerIdRef.current !== e.pointerId) return;
+    // Require the button/contact to still be down (blocks hover motion).
+    if (e.pointerType === "mouse" && e.buttons !== 1) {
+      resetDragState();
+      return;
+    }
+
     const dx = e.clientX - startXRef.current;
+    const dy = e.clientY - startYRef.current;
+
+    if (axisRef.current === "undecided") {
+      if (Math.hypot(dx, dy) < DRAG_ACTIVATE) return;
+      axisRef.current = Math.abs(dx) >= Math.abs(dy) ? "x" : "y";
+      if (axisRef.current === "y") {
+        // Let the page scroll vertically; abort card drag.
+        try {
+          e.currentTarget.releasePointerCapture(e.pointerId);
+        } catch {
+          /* ignore */
+        }
+        resetDragState();
+        return;
+      }
+    }
+
+    if (axisRef.current !== "x") return;
+
+    e.preventDefault();
+    movedRef.current = true;
     dragXRef.current = dx;
-    if (Math.abs(dx) > 10) movedRef.current = true;
     setDragX(dx);
   };
 
-  const finishPointer = () => {
-    if (!dragActiveRef.current) return;
-    dragActiveRef.current = false;
-    setDragging(false);
+  const onPointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
+    if (pointerIdRef.current !== e.pointerId) return;
     const dx = dragXRef.current;
-    if (dx >= SWIPE_THRESHOLD) {
-      rateCard("known");
-      return;
+    const moved = movedRef.current;
+    const axis = axisRef.current;
+
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch {
+      /* ignore */
     }
-    if (dx <= -SWIPE_THRESHOLD) {
-      rateCard("unknown");
-      return;
+    resetDragState();
+
+    if (axis === "x") {
+      if (dx >= SWIPE_THRESHOLD) {
+        rateCard("known");
+        return;
+      }
+      if (dx <= -SWIPE_THRESHOLD) {
+        rateCard("unknown");
+        return;
+      }
     }
-    if (!movedRef.current) {
-      setFlipped((f) => !f);
-    }
-    setDragX(0);
-    dragXRef.current = 0;
+    if (!moved) setFlipped((f) => !f);
   };
 
   const swipeHint =
@@ -269,7 +353,7 @@ function FlashcardSubjectPage() {
   const busy = !!exitDir;
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
+    <div className="flashcards-page min-h-screen overflow-x-clip bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
@@ -282,7 +366,7 @@ function FlashcardSubjectPage() {
         }
       />
 
-      <main className="px-6 py-10 lg:px-8">
+      <main className="overflow-x-clip px-6 py-10 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
             <div>
@@ -330,7 +414,7 @@ function FlashcardSubjectPage() {
             <button
               type="button"
               onClick={() => {
-                setDeck((prev) => shuffleInPlaceCopy(prev));
+                setDeck((prev) => shuffleCopy(prev));
                 setIndex(0);
                 setFlipped(false);
               }}
@@ -368,68 +452,75 @@ function FlashcardSubjectPage() {
           </p>
 
           {card ? (
-            <div
-              className={
-                "flashcard-stage relative w-full touch-none " +
-                (busy ? "flashcard-exiting" : dragging ? "" : "flashcard-drag-settle")
-              }
-              style={{ transform }}
-              onPointerDown={onPointerDown}
-              onPointerMove={onPointerMove}
-              onPointerUp={finishPointer}
-              onPointerCancel={finishPointer}
-              role="button"
-              tabIndex={0}
-              aria-label={flipped ? "Flashcard explanation — tap to flip" : "Flashcard term — tap to flip"}
-            >
+            <div className="flashcard-viewport relative overflow-x-clip overflow-y-visible py-1">
               <div
-                className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-2xl"
-                style={{
-                  background:
-                    dragX > 20
-                      ? `rgba(16, 185, 129, ${overlayOpacity})`
-                      : dragX < -20
-                        ? `rgba(239, 68, 68, ${overlayOpacity})`
-                        : "transparent",
-                }}
-                aria-hidden
+                ref={stageRef}
+                className={
+                  "flashcard-stage relative w-full " +
+                  (busy ? "flashcard-exiting" : dragging ? "" : "flashcard-drag-settle")
+                }
+                style={{ transform }}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={onPointerUp}
+                onPointerCancel={onPointerUp}
+                role="button"
+                tabIndex={0}
+                aria-label={
+                  flipped ? "Flashcard explanation — tap to flip" : "Flashcard term — tap to flip"
+                }
               >
-                {Math.abs(dragX) > 24 && (
-                  <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
-                    {swipeHint}
-                  </span>
-                )}
-              </div>
+                <div
+                  className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-2xl"
+                  style={{
+                    background:
+                      dragX > 20
+                        ? `rgba(16, 185, 129, ${overlayOpacity})`
+                        : dragX < -20
+                          ? `rgba(239, 68, 68, ${overlayOpacity})`
+                          : "transparent",
+                  }}
+                  aria-hidden
+                >
+                  {Math.abs(dragX) > 24 && (
+                    <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
+                      {swipeHint}
+                    </span>
+                  )}
+                </div>
 
-              <div className="flashcard-flip w-full">
-                <div className={"flashcard-inner " + (flipped ? "is-flipped" : "")}>
-                  <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-8 shadow-sm">
-                    <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                      <Layers className="h-3 w-3" />
-                      Term / Formula
-                    </div>
-                    <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
-                      <p className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                        {card.term}
+                <div className="flashcard-flip w-full">
+                  <div className={"flashcard-inner " + (flipped ? "is-flipped" : "")}>
+                    <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-8 shadow-sm">
+                      <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                        <Layers className="h-3 w-3" />
+                        Term / Formula
+                      </div>
+                      <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
+                        <FlashcardMath
+                          text={card.term}
+                          className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
+                        />
+                      </div>
+                      <p className="mt-2 text-center text-xs text-muted-foreground">
+                        Tap to flip · press-and-drag to sort
                       </p>
                     </div>
-                    <p className="mt-2 text-center text-xs text-muted-foreground">
-                      Tap to flip · swipe to sort · ← don't know · → know
-                    </p>
-                  </div>
-                  <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-8 shadow-sm">
-                    <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                      <Layers className="h-3 w-3" />
-                      Explanation
-                    </div>
-                    <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
-                      <p className="text-base leading-relaxed text-foreground sm:text-lg">
-                        {card.explanation}
+                    <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-8 shadow-sm">
+                      <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                        <Layers className="h-3 w-3" />
+                        Explanation
+                      </div>
+                      <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
+                        <FlashcardMath
+                          text={card.explanation}
+                          className="text-base leading-relaxed text-foreground sm:text-lg"
+                        />
+                      </div>
+                      <p className="mt-2 text-center text-xs text-muted-foreground">
+                        Tap to flip · press-and-drag to sort
                       </p>
                     </div>
-                    <p className="mt-2 text-center text-xs text-muted-foreground">
-                      Tap to flip · swipe to sort · ← don't know · → know
-                    </p>
                   </div>
                 </div>
               </div>
