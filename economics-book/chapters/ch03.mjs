@@ -13,7 +13,7 @@ export default {
   "sections": [
     {
       "id": "3.1",
-      "title": "Factors of production: what every business combines",
+      "title": "Businesses combine different factors of production",
       "blocks": [
         {
           "type": "p",
@@ -22,7 +22,7 @@ export default {
         {
           "type": "idea",
           "term": "Factors of production",
-          "text": "Factors of production are the resources a business combines to create goods and services. In this course the core set is **land**, **labour**, **capital** and **entrepreneurship** (also called enterprise). Knowledge and technology reshape how those factors work together."
+          "text": "Factors of production are the resources a business combines to create goods and services. In this course the core set is **land**, **labour**, **capital** and **entrepreneurship**. Knowledge and technology reshape how those factors work together."
         },
         {
           "type": "p",
@@ -30,7 +30,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "In course language, **land** covers natural resources used in production — soil, water, minerals, forests, fisheries, and sites with natural character — so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** or enterprise brings land, labour and capital together, coordinates decisions and bears business risk — the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
+          "text": "In course language, **land** covers natural resources used in production — soil, water, minerals, forests, fisheries, and sites with natural character — so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** brings land, labour and capital together, coordinates decisions and bears business risk — the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
         },
         {
           "type": "p",
@@ -57,7 +57,7 @@ export default {
     },
     {
       "id": "3.2",
-      "title": "Primary, secondary and tertiary sectors",
+      "title": "Businesses operate in the primary, secondary and/or tertiary sector",
       "blocks": [
         {
           "type": "p",
@@ -102,7 +102,7 @@ export default {
     },
     {
       "id": "3.3",
-      "title": "Profit-oriented versus not-for-profit",
+      "title": "Businesses can be profit-oriented or not-for-profit",
       "blocks": [
         {
           "type": "p",
@@ -166,7 +166,7 @@ export default {
     },
     {
       "id": "3.4",
-      "title": "Business size: SMEs and large firms",
+      "title": "Businesses come \"in all sizes\": large and small",
       "blocks": [
         {
           "type": "p",
@@ -231,7 +231,7 @@ export default {
     },
     {
       "id": "3.5",
-      "title": "Local, national and international reach",
+      "title": "Businesses may be local, national or international",
       "blocks": [
         {
           "type": "p",
@@ -273,7 +273,7 @@ export default {
     },
     {
       "id": "3.6",
-      "title": "Stakeholders, shareholders and conflicting interests",
+      "title": "Businesses operate in an environment – stakeholders are important",
       "blocks": [
         {
           "type": "p",

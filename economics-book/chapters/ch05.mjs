@@ -8,13 +8,13 @@ export default {
     "Contrast product orientation with market orientation and recognise the role of customer relationship management.",
     "Discuss responsibility and sustainability pressures on marketing practice for firms and consumers.",
     "Distinguish primary from secondary research and qualitative from quantitative approaches; calculate absolute and relative market share.",
-    "Apply segmentation bases and compare undifferentiated, differentiated and concentrated (niche) targeting.",
+    "Apply segmentation bases and compare mass marketing, segment marketing and niche marketing.",
     "Build a coherent marketing mix (product, price, place, promotion) and place offerings on the product life cycle and BCG matrix."
   ],
   "sections": [
     {
       "id": "5.1",
-      "title": "Product: goods, services, lines, brands and differentiation",
+      "title": "What a product is",
       "blocks": [
         {
           "type": "p",
@@ -65,7 +65,7 @@ export default {
     },
     {
       "id": "5.2",
-      "title": "Marketing objectives",
+      "title": "Objectives of marketing",
       "blocks": [
         {
           "type": "p",
@@ -121,7 +121,7 @@ export default {
     },
     {
       "id": "5.4",
-      "title": "Responsibility and sustainability in marketing",
+      "title": "The need for more responsibility and sustainability",
       "blocks": [
         {
           "type": "p",
@@ -203,7 +203,7 @@ export default {
     },
     {
       "id": "5.6",
-      "title": "Segmentation and targeting strategies",
+      "title": "Market segmentation and targeting strategies",
       "blocks": [
         {
           "type": "p",
@@ -266,17 +266,17 @@ export default {
         },
         {
           "type": "p",
-          "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting. **Undifferentiated** or **mass marketing** uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. **Differentiated** or **segment marketing** designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. Concentrated or niche marketing deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume."
+          "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. **Mass marketing** uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. **Segment marketing** designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. **Niche marketing** deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume."
         },
         {
           "type": "p",
-          "text": "GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coastal city and inner suburbs; **demographic** focus includes employed adults and shift workers; **psychographic** preference leans toward lower waste and dislike of unused ownership; **behavioural** focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Concentrated targeting lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
+          "text": "GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coastal city and inner suburbs; **demographic** focus includes employed adults and shift workers; **psychographic** preference leans toward lower waste and dislike of unused ownership; **behavioural** focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Niche marketing lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
         }
       ]
     },
     {
       "id": "5.7",
-      "title": "The marketing mix, life cycle and BCG matrix",
+      "title": "The marketing mix",
       "blocks": [
         {
           "type": "p",
@@ -363,7 +363,7 @@ export default {
         {
           "type": "idea",
           "term": "Boston Consulting Group (BCG) matrix",
-          "text": "A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **dogs** (poor dogs)."
+          "text": "A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **poor dogs**."
         },
         {
           "type": "figure",
@@ -372,7 +372,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Dogs**, sometimes called poor dogs, sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
+          "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
         },
         {
           "type": "idea",
@@ -424,7 +424,7 @@ export default {
     "**Product orientation** builds then sells; **market orientation** researches then builds; CRM extends relationships with careful data use.",
     "Responsible marketing faces the risk of inflating wants and supports more sustainable production and consumption patterns such as repair, reuse and rental.",
     "Market research combines **primary/secondary** sources and **qualitative/quantitative** methods; **absolute** and **relative share** quantify competitive position.",
-    "Segmentation uses geographic, demographic, psychographic and behavioural bases; targeting may be **undifferentiated** (mass), **differentiated** (segment) or **concentrated** (niche).",
+    "Segmentation uses geographic, demographic, psychographic and behavioural bases; targeting may be **mass marketing**, **segment marketing** or **niche marketing**.",
     "The **marketing mix** harmonises product, price, place and promotion; **life-cycle** stages and the **BCG matrix** guide how products are managed over time."
   ]
 };

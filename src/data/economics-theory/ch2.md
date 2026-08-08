@@ -11,7 +11,7 @@ Every purchase, every job offer, and every business idea sits inside the same sy
 - Compare market, planned, and mixed systems by who decides what, how, and for whom.
 - Use supply, demand, ceteris paribus, equilibrium, surplus and shortage, and competition to reason about market outcomes.
 
-## 2.1 You are already in the economy
+## 2.1 Being part of the economy
 
 Saturday at the campus gate, Mira sells repaired second-hand bikes from a fold-out stand near the tram stop, taking cash or card for a tuned bike while paying a workshop for spare parts and renting storage for the winter. Across the street a household buys tram tickets, groceries, and streaming, and although nobody here is studying economics in the moment, every exchange is the **economy** at work.
 
@@ -29,7 +29,7 @@ It helps to notice one good and one service you bought this week and, for each, 
 
 Behind these everyday scenes sits a pressure that never quite goes away: resources are not available in unlimited abundance, so households, businesses, and governments all have to **economise** — managing limited means among competing uses — which is the bridge into **scarcity** and **opportunity cost**.
 
-## 2.2 Scarcity and opportunity cost
+## 2.2 Scarcity of resources and opportunity cost
 
 One Saturday, Leila can work a café shift that pays 48 euros for the afternoon, or photograph a local sports final that pays 40 euros but builds her portfolio, and she cannot do both. The clock is the **scarce resource**, and the choice is the economics.
 
@@ -49,7 +49,7 @@ Opportunity cost always tracks the **next-best path**, not a shopping-list total
 
 If Leila chooses the photography gig, her opportunity cost is the benefit of the café shift she gave up — the 48-euro pay in that story — not the fun of both options at once and not the sum of every weekend plan she skipped. Three mistakes keep returning: adding up all rejected options, saying "free" activities have no **opportunity cost**, and equating **scarcity** with **poverty** so that high-income actors supposedly do not face scarcity. True statements usually name the forgone next-best benefit, while false ones often claim zero cost because no money moved, treat opportunity cost as the price of the item bought, or inflate it into the sum of all alternatives. **Scarcity** forces choice, and choice creates opportunity cost; later sections show the same logic inside markets, where suppliers forgo better uses of their time when prices are low, and inside government budgets, where one project crowds out another.
 
-## 2.3 What economics studies
+## 2.3 Economics is the study of economic decisions
 
 Two headlines can sit in the same morning paper and still ask for different lenses: a local bakery raises pastry prices after butter costs jump, while national unemployment falls and inflation edges up. It is the same economy viewed at different zoom levels, and economics is the toolkit that explains both kinds of story.
 
@@ -61,7 +61,7 @@ A government raise in the minimum wage that changes one supermarket's hiring pla
 
 Section 2.2 gave you scarcity and opportunity cost as the shared engine; this section names the science that studies those decisions at two scales. Markets in 2.6 are mostly a micro stage, while later inflation talk links to macro aggregates. In short, economics is the study of decisions under **limited resources**, **micro** looks at units and their interaction while **macro** looks at aggregates, and theories aim to explain and predict rather than merely describe.
 
-## 2.4 Circular flow, money, and specialisation
+## 2.4 Exchanging goods and services creates a circular flow and division of labour
 
 On Friday workers receive wages from firms, and on Saturday those same people spend part of the wages on pizzas, tram rides, and phone plans, while firms use the sales revenue to pay suppliers and next week's wages and public authorities collect taxes to fund streets, schools, and security. The loop never really stops; it is a **circular flow**.
 
@@ -81,13 +81,13 @@ Government sits in the loop as well: public authorities tax households and busin
 
 If a country suddenly could not import any electronics, local retailers would lose specialisation advantages that rested on global supply chains, and new **opportunity costs** would appear as scarce domestic capacity was pulled toward making what imports once covered. Specialisation is not only upside: highly specialised work can become boring, skills may be hard to redeploy, and a firm brilliant in one niche is exposed if that niche collapses. Circular-flow questions often test who pays whom among wages, taxes, and purchases; money-function questions test **medium of exchange**, **unit of account**, and **store of value**; and specialisation questions test efficiency gains alongside the flexibility risk. Circular flow is the stage on which later sections play: economic systems decide how much of that stage is directed by markets versus by planners, and supply and demand explain prices inside the market channels of the flow.
 
-## 2.5 Economic systems: who decides?
+## 2.5 Different economic systems
 
 Imagine a tonne of steel and three ways to allocate it. In one system private firms bid and households' spending patterns pull production toward cars or bridges; in another a planning office assigns the tonne to a factory list; and in a third markets do most of the steering while government taxes, regulates, and funds social and environmental goals. Same scarce steel, different **decision rights**.
 
 **Economic system** — An economic system answers the allocation questions: **what** is produced, **how** it is produced, and **for whom** — by assigning decision power to markets, to planners, or to a mix of both.
 
-In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services, sometimes called social or eco-social market economies when the mix is deliberate.
+In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services.
 
 ![Spectrum of economic systems: planned coordination at one end, freer market coordination at the other, with mixed systems in between.](/bbe-theory/figs/economic-systems.png)
 
@@ -103,7 +103,7 @@ In a **market economy** individuals and businesses make many of their own econom
 
 You can label the system by the signal rather than the slogan. Private cafés that freely set menus and prices while customers walk away if unhappy point to a **market mechanism**; a ministry that assigns quarterly output quotas and fixed retail prices for staples points to a **planned mechanism**; and private firms that compete while government funds schools, taxes pollution, and runs a safety net point to a **mixed arrangement**. Judge by who holds the **decision rights** on what, how, and for whom. If a country privatises shops but still sets fuel prices and owns the railways, it is drifting toward the mixed column even while some decisions remain planned, and it helps to remember that "market economy" never means zero government — even freer market systems rely on law — just as every mixed economy is not identical, because the mix can be light or heavy. Transformation stories about former planned systems adopting market principles test whether you notice a shift in decision rights, not a change in geography alone. Systems set the rules of the game, and markets — next — are the coordination device that market-leaning and mixed systems use for many goods and services.
 
-## 2.6 Supply, demand, and market equilibrium
+## 2.6 Supply and demand: households, businesses and the government meet in the market
 
 Parents message tutors for evening maths help, and at low hourly rates many families want hours while few skilled tutors bother to log on, whereas at very high rates tutors flood the platform but fewer families book. Somewhere in the middle the hours people want line up with the hours tutors offer, and that meeting point is the **market** at work.
 

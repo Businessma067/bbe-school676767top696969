@@ -10,7 +10,7 @@ Every sale, purchase, wage payment and loan leaves a trail, and accounting is th
 - Contrast financial accounting with management accounting and identify who uses accounts.
 - Analyse liquidity, profitability, efficiency and gearing by moving from intuition to formula to interpretation of the same firm.
 
-## 6.1 The balance sheet — what the firm owns and how it is financed
+## 6.1 What a balance sheet is
 
 Opening day at Northline Bike Workshop finds Mira and Jonas listing everything the new bicycle repair and retail business can use: tools and benches for €18,000, a small delivery van for €14,000, bikes held for resale for €9,200, and €4,800 in the business bank account. A bank has lent them €22,000, and the rest has come from money and equipment they put in themselves, so that list of resources — and the story of who financed it — is already the seed of a **balance sheet**.
 
@@ -55,7 +55,7 @@ Liabilities follow a similar duration split. **Current liabilities** are due wit
 
 Equity usually does not have to be repaid like a loan, so a higher **equity share** supports independence from creditors and gives a larger cushion against over-indebtedness if the firm makes a loss. One classification trap worth keeping in mind is that office computers used in the business are not the same line as computers held for resale: the physical object type can be identical, yet one is a **fixed asset** and the other is **inventory** (a current asset). In exams, section 6.1 often signals a point-in-time snapshot, the identity **assets = liabilities + equity**, a non-current versus current classification, or a cash purchase that leaves the balance-sheet total unchanged — and valuation is constrained by rules, so firms cannot freely invent asset values.
 
-## 6.2 Income statement, cash flow and depreciation
+## 6.2 Other components of the financial statement of a business
 
 One statement is never enough on its own. Northline's end-of-year balance sheet may show stronger equity and more cash than on day one, yet that still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan, so performance over a **period** needs the full **financial statement** set.
 
@@ -119,7 +119,7 @@ Cash movements are grouped by purpose. **Operating activities** cover core busin
 
 Exam cues for 6.2: separate period from point-in-time, remember that **profit is not cash**, classify operating / investing / financing flows, compute straight-line depreciation and carrying value, spot that depreciation is an expense without a same-period cash payment, and keep expenditure (buy the asset) distinct from expense (use the asset up).
 
-## 6.3 Reading balance sheets and income statements
+## 6.3 What can be learnt from reading a balance sheet and an income statement
 
 Reading statements needs caution and then purpose, because asset values depend on valuation rules and depreciation can push book values below what an asset might fetch in a private sale — yet comparing structure over time and against similar firms still answers sharp questions about how the business is built and how it performed. On the balance sheet you ask what the **asset mix** looks like (mostly non-current or current, and whether that is typical), how **financing** has developed (equity path, more long-term or short-term liabilities), and whether non-current assets are covered by **long-term finance** (equity plus non-current liabilities). On the income statement you ask whether sales rose and whether **cost of sales** moved in line, and how gross profit and operating profit developed.
 
@@ -176,7 +176,7 @@ Cedar's income statement uses the same €-thousands scale. Compare years in the
 
 Read the income statement in layers: revenue − **COS** → **gross profit**, then operating items → **EBIT**, then finance and tax. For Cedar, revenue rose faster (+23.1%) than cost of sales (+15.8%), so gross profit rose from 90 to 142 and EBIT more than doubled from 38 to 82. Do not put distribution or admin staff into **COGS** — that distorts production margin. Exam cues for 6.3: structure percentages, long-term matching, what belongs in COS, and reading gross profit versus EBIT across periods or peers.
 
-## 6.4 Who uses accounts — financial vs management accounting
+## 6.4 Use of these accounts – types of accounting
 
 Two rooms ask two different questions of the same business. In the workshop office Mira wonders whether specialty helmets cover their true cost if priced at €49, while at the bank the loan officer asks whether Northline can service debt and whether last year's accounts were reliable — same firm, different **information jobs**.
 

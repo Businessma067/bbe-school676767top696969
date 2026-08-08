@@ -13,7 +13,7 @@ export default {
   "sections": [
     {
       "id": "4.1",
-      "title": "Sole trader / sole proprietorship",
+      "title": "Sole proprietorship / sole traders",
       "blocks": [
         {
           "type": "p",
@@ -82,7 +82,7 @@ export default {
     },
     {
       "id": "4.3",
-      "title": "Corporations / companies",
+      "title": "Corporations",
       "blocks": [
         {
           "type": "p",
@@ -129,7 +129,7 @@ export default {
     },
     {
       "id": "4.4",
-      "title": "Overview comparison of ownership forms",
+      "title": "Summary: Overview of forms of business ownership",
       "blocks": [
         {
           "type": "p",
@@ -217,7 +217,7 @@ export default {
     },
     {
       "id": "4.5",
-      "title": "Sources of finance",
+      "title": "Overview of sources of finance",
       "blocks": [
         {
           "type": "p",
@@ -276,7 +276,7 @@ export default {
     },
     {
       "id": "4.6",
-      "title": "Choosing the source of finance",
+      "title": "The choice of the source of finance",
       "blocks": [
         {
           "type": "p",

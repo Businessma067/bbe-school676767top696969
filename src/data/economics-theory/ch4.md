@@ -11,7 +11,7 @@ Before money moves, someone must answer a legal question: who is the firm? One o
 - Classify sources of finance as equity or debt and as internal or external, and recognise common instruments.
 - Choose finance by weighing cost, risk, control, flexibility, purpose, and gearing (leverage).
 
-## 4.1 Sole trader / sole proprietorship
+## 4.1 Sole proprietorship / sole traders
 
 One person, one shop. Mara opens a bicycle repair booth near a station. She registers as a sole trader, puts €9,500 of her savings into tools and a workbench, and signs the rent herself. Customers deal with Mara — not with a company name that exists **separately** from her. When a supplier invoice is unpaid, the claim is against Mara personally.
 
@@ -41,7 +41,7 @@ The contrast between general partner and limited partner is therefore about mana
 
 Worked: Leo, Nina, and a bank claim. They form an OG. Leo contributes €18,000; Nina contributes €12,000. After salaries for work done, they share profits 55:45. The firm borrows €35,000 to fit out a small studio. Business assets are later exhausted; €14,000 of bank debt remains. The bank may claim the **full €14,000** from Leo or from Nina (or both), not merely 55% from Leo and 45% from Nina. Alternatively they form a KG: an investor, Priya, contributes €20,000 as limited partner and takes no management role, so Priya’s loss is normally **capped at €20,000** while Leo and Nina as general partners still face **unlimited liability**. Profit shares do not cap a general partner’s liability; only a true limited-partner status limits loss to the contribution.
 
-## 4.3 Corporations / companies
+## 4.3 Corporations
 
 The firm that can sign its own name. Three engineers want to build sensor modules. They need serious capital, want investors who do not all run the plant, and do not want every supplier claim to reach their private homes. They look at forming a company — a **legal person** that can own assets, hire staff, sue and be sued in its own name.
 
@@ -63,7 +63,7 @@ Names differ by country: public limited company (PLC) in many English-speaking s
 
 Worked: issue price vs later market price. SensorCo issues 80,000 shares at €20 each at IPO → share capital raised = €1,600,000. Two years later the shares trade at €31. Market cap = 80,000 × €31 = €2,480,000. The €11 per-share rise goes to investors trading among themselves; SensorCo does **not** receive that secondary gain as new finance. Separately, SensorCo issues a €900,000 bond at 3.5% to expand a clean room. Bond investors are **creditors**. If SensorCo is structured as an Austrian GmbH instead of floating publicly, founders still enjoy limited liability once capital rules are met, but shares are not sold to the general public on an exchange. Issue raises company cash; later price rises do not. Bonds add debt, not ownership.
 
-## 4.4 Overview comparison of ownership forms
+## 4.4 Summary: Overview of forms of business ownership
 
 Three founders, one vehicle fleet. Jonas, Ela, and Rafi need about €95,000 of vans for a cold-chain delivery start-up. They can go sole trader (one of them), form an OG, or meet capital rules for a GmbH. The legal shell changes liability, continuity, and who must manage.
 
@@ -89,7 +89,7 @@ Reading the ownership map starts with **legal personality**. If none: one owner 
 
 Worked: cold-chain fleet options. Sole trader path: Jonas alone owns the vans, faces unlimited liability, funds mainly from personal savings plus a bank loan; Ela and Rafi are employees or contractors, not co-owners. OG path: all three manage, pool capital toward the €95,000 fleet, share unlimited liability; a partnership agreement sets profit splits and decision rules. GmbH path: they meet Austrian minimum capital rules, take shares, enjoy **limited liability** to invested capital, and appoint managing directors (who may or may not be shareholders). Trade-off: GmbH limits personal asset risk and clarifies continuity of the legal person; it costs more effort and capital than an OG or sole trader. Same vans, different answers to “who is liable?” and “who must manage?”
 
-## 4.5 Sources of finance
+## 4.5 Overview of sources of finance
 
 Money has a passport. A boutique hotel renovation needs cash for a roof, seasonal linen stock, and a slow winter. Some euros will come from profits kept in the business; some from a new investor; some from the bank and suppliers. Each euro should be labelled: **equity** or **debt**? **Internal** or **external**? Short-term or long-term?
 
@@ -114,7 +114,7 @@ The balance sheet reveals which sources a business has used (see Chapter 6, Acco
 
 Worked: boutique hotel funding mix. Roof and bathrooms (multi-year assets): €40,000 retained earnings (internal equity) + €25,000 new share/investor capital (external equity) + €45,000 five-year bank loan (long-term debt). Winter linen and cleaning stock: €6,000 drawn on overdraft as needed (short-term debt) + €9,000 of supplies on 45-day trade credit (short-term debt). Optional: lease a laundry machine for seven years instead of buying with a short overdraft — better duration match. Sale of an unused catering trolley for €1,800 adds internal financing without interest. Labels: **equity** vs **debt**; **internal** vs **external**; short vs long — each line should have a clean passport. €40k + €25k equity and several debt lines can coexist; classification depends on ownership claim versus creditor claim, not on whether money feels “serious.”
 
-## 4.6 Choosing the source of finance
+## 4.6 The choice of the source of finance
 
 Cheap is not always right. A metal workshop can fund a €140,000 laser cutter (twelve-year life) and €18,000 of sheet metal for next month’s jobs. The bank waves a revolving overdraft with a low headline rate this week. An equity partner offers capital that never needs monthly instalments but wants voting influence. Which criteria decide?
 

@@ -13,7 +13,7 @@ export default {
   "sections": [
     {
       "id": "2.1",
-      "title": "You are already in the economy",
+      "title": "Being part of the economy",
       "blocks": [
         {
           "type": "p",
@@ -53,7 +53,7 @@ export default {
     },
     {
       "id": "2.2",
-      "title": "Scarcity and opportunity cost",
+      "title": "Scarcity of resources and opportunity cost",
       "blocks": [
         {
           "type": "p",
@@ -95,7 +95,7 @@ export default {
     },
     {
       "id": "2.3",
-      "title": "What economics studies",
+      "title": "Economics is the study of economic decisions",
       "blocks": [
         {
           "type": "p",
@@ -122,7 +122,7 @@ export default {
     },
     {
       "id": "2.4",
-      "title": "Circular flow, money, and specialisation",
+      "title": "Exchanging goods and services creates a circular flow and division of labour",
       "blocks": [
         {
           "type": "p",
@@ -163,7 +163,7 @@ export default {
     },
     {
       "id": "2.5",
-      "title": "Economic systems: who decides?",
+      "title": "Different economic systems",
       "blocks": [
         {
           "type": "p",
@@ -176,7 +176,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services, sometimes called social or eco-social market economies when the mix is deliberate."
+          "text": "In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services."
         },
         {
           "type": "figure",
@@ -227,7 +227,7 @@ export default {
     },
     {
       "id": "2.6",
-      "title": "Supply, demand, and market equilibrium",
+      "title": "Supply and demand: households, businesses and the government meet in the market",
       "blocks": [
         {
           "type": "p",

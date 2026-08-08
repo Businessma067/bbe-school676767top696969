@@ -12,7 +12,7 @@ export default {
   "sections": [
     {
       "id": "6.1",
-      "title": "The balance sheet — what the firm owns and how it is financed",
+      "title": "What a balance sheet is",
       "blocks": [
         {
           "type": "p",
@@ -125,7 +125,7 @@ export default {
     },
     {
       "id": "6.2",
-      "title": "Income statement, cash flow and depreciation",
+      "title": "Other components of the financial statement of a business",
       "blocks": [
         {
           "type": "p",
@@ -273,7 +273,7 @@ export default {
     },
     {
       "id": "6.3",
-      "title": "Reading balance sheets and income statements",
+      "title": "What can be learnt from reading a balance sheet and an income statement",
       "blocks": [
         {
           "type": "p",
@@ -359,7 +359,7 @@ export default {
     },
     {
       "id": "6.4",
-      "title": "Who uses accounts — financial vs management accounting",
+      "title": "Use of these accounts – types of accounting",
       "blocks": [
         {
           "type": "p",

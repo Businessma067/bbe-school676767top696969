@@ -31,7 +31,7 @@
       "sections": [
         {
           "id": "2.1",
-          "title": "You are already in the economy",
+          "title": "Being part of the economy",
           "blocks": [
             {
               "type": "p",
@@ -71,7 +71,7 @@
         },
         {
           "id": "2.2",
-          "title": "Scarcity and opportunity cost",
+          "title": "Scarcity of resources and opportunity cost",
           "blocks": [
             {
               "type": "p",
@@ -113,7 +113,7 @@
         },
         {
           "id": "2.3",
-          "title": "What economics studies",
+          "title": "Economics is the study of economic decisions",
           "blocks": [
             {
               "type": "p",
@@ -140,7 +140,7 @@
         },
         {
           "id": "2.4",
-          "title": "Circular flow, money, and specialisation",
+          "title": "Exchanging goods and services creates a circular flow and division of labour",
           "blocks": [
             {
               "type": "p",
@@ -181,7 +181,7 @@
         },
         {
           "id": "2.5",
-          "title": "Economic systems: who decides?",
+          "title": "Different economic systems",
           "blocks": [
             {
               "type": "p",
@@ -194,7 +194,7 @@
             },
             {
               "type": "p",
-              "text": "In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services, sometimes called social or eco-social market economies when the mix is deliberate."
+              "text": "In a **market economy** individuals and businesses make many of their own economic decisions, with prices and private ownership playing a large role, whereas in a **planned system** government mainly or partly decides which goods and services are offered — and often at which prices — while controlling resources and means of production, so job and product choice for people is more limited. Most real countries sit somewhere in between as **mixed systems** in which markets allocate widely while government sets legal frameworks and may support the poor, protect the environment, or provide major public services."
             },
             {
               "type": "figure",
@@ -245,7 +245,7 @@
         },
         {
           "id": "2.6",
-          "title": "Supply, demand, and market equilibrium",
+          "title": "Supply and demand: households, businesses and the government meet in the market",
           "blocks": [
             {
               "type": "p",
@@ -420,7 +420,7 @@
       "sections": [
         {
           "id": "3.1",
-          "title": "Factors of production: what every business combines",
+          "title": "Businesses combine different factors of production",
           "blocks": [
             {
               "type": "p",
@@ -429,7 +429,7 @@
             {
               "type": "idea",
               "term": "Factors of production",
-              "text": "Factors of production are the resources a business combines to create goods and services. In this course the core set is **land**, **labour**, **capital** and **entrepreneurship** (also called enterprise). Knowledge and technology reshape how those factors work together."
+              "text": "Factors of production are the resources a business combines to create goods and services. In this course the core set is **land**, **labour**, **capital** and **entrepreneurship**. Knowledge and technology reshape how those factors work together."
             },
             {
               "type": "p",
@@ -437,7 +437,7 @@
             },
             {
               "type": "p",
-              "text": "In course language, **land** covers natural resources used in production — soil, water, minerals, forests, fisheries, and sites with natural character — so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** or enterprise brings land, labour and capital together, coordinates decisions and bears business risk — the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
+              "text": "In course language, **land** covers natural resources used in production — soil, water, minerals, forests, fisheries, and sites with natural character — so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** brings land, labour and capital together, coordinates decisions and bears business risk — the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
             },
             {
               "type": "p",
@@ -464,7 +464,7 @@
         },
         {
           "id": "3.2",
-          "title": "Primary, secondary and tertiary sectors",
+          "title": "Businesses operate in the primary, secondary and/or tertiary sector",
           "blocks": [
             {
               "type": "p",
@@ -509,7 +509,7 @@
         },
         {
           "id": "3.3",
-          "title": "Profit-oriented versus not-for-profit",
+          "title": "Businesses can be profit-oriented or not-for-profit",
           "blocks": [
             {
               "type": "p",
@@ -573,7 +573,7 @@
         },
         {
           "id": "3.4",
-          "title": "Business size: SMEs and large firms",
+          "title": "Businesses come \"in all sizes\": large and small",
           "blocks": [
             {
               "type": "p",
@@ -638,7 +638,7 @@
         },
         {
           "id": "3.5",
-          "title": "Local, national and international reach",
+          "title": "Businesses may be local, national or international",
           "blocks": [
             {
               "type": "p",
@@ -680,7 +680,7 @@
         },
         {
           "id": "3.6",
-          "title": "Stakeholders, shareholders and conflicting interests",
+          "title": "Businesses operate in an environment – stakeholders are important",
           "blocks": [
             {
               "type": "p",
@@ -752,7 +752,7 @@
       "sections": [
         {
           "id": "4.1",
-          "title": "Sole trader / sole proprietorship",
+          "title": "Sole proprietorship / sole traders",
           "blocks": [
             {
               "type": "p",
@@ -821,7 +821,7 @@
         },
         {
           "id": "4.3",
-          "title": "Corporations / companies",
+          "title": "Corporations",
           "blocks": [
             {
               "type": "p",
@@ -868,7 +868,7 @@
         },
         {
           "id": "4.4",
-          "title": "Overview comparison of ownership forms",
+          "title": "Summary: Overview of forms of business ownership",
           "blocks": [
             {
               "type": "p",
@@ -956,7 +956,7 @@
         },
         {
           "id": "4.5",
-          "title": "Sources of finance",
+          "title": "Overview of sources of finance",
           "blocks": [
             {
               "type": "p",
@@ -1015,7 +1015,7 @@
         },
         {
           "id": "4.6",
-          "title": "Choosing the source of finance",
+          "title": "The choice of the source of finance",
           "blocks": [
             {
               "type": "p",
@@ -1071,13 +1071,13 @@
         "Contrast product orientation with market orientation and recognise the role of customer relationship management.",
         "Discuss responsibility and sustainability pressures on marketing practice for firms and consumers.",
         "Distinguish primary from secondary research and qualitative from quantitative approaches; calculate absolute and relative market share.",
-        "Apply segmentation bases and compare undifferentiated, differentiated and concentrated (niche) targeting.",
+        "Apply segmentation bases and compare mass marketing, segment marketing and niche marketing.",
         "Build a coherent marketing mix (product, price, place, promotion) and place offerings on the product life cycle and BCG matrix."
       ],
       "sections": [
         {
           "id": "5.1",
-          "title": "Product: goods, services, lines, brands and differentiation",
+          "title": "What a product is",
           "blocks": [
             {
               "type": "p",
@@ -1128,7 +1128,7 @@
         },
         {
           "id": "5.2",
-          "title": "Marketing objectives",
+          "title": "Objectives of marketing",
           "blocks": [
             {
               "type": "p",
@@ -1184,7 +1184,7 @@
         },
         {
           "id": "5.4",
-          "title": "Responsibility and sustainability in marketing",
+          "title": "The need for more responsibility and sustainability",
           "blocks": [
             {
               "type": "p",
@@ -1266,7 +1266,7 @@
         },
         {
           "id": "5.6",
-          "title": "Segmentation and targeting strategies",
+          "title": "Market segmentation and targeting strategies",
           "blocks": [
             {
               "type": "p",
@@ -1329,17 +1329,17 @@
             },
             {
               "type": "p",
-              "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. Course language often says mass, segment and niche marketing; the same logic appears as undifferentiated, differentiated and concentrated (niche) targeting. **Undifferentiated** or **mass marketing** uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. **Differentiated** or **segment marketing** designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. Concentrated or niche marketing deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume."
+              "text": "Targeting strategies differ in how many segments they serve and how much the offer varies. **Mass marketing** uses one offer for the whole market with the same promotion style for almost all, which can bring economies of scale but less flexibility, and is common for widely used staples such as soap or basic pens. **Segment marketing** designs different offers for several segments and focuses resources where strategic fit is strongest, trading better fit against higher complexity and cost. **Niche marketing** deepens focus on a narrow subgroup, trading depth and expertise against limited volume; small firms often niche, and specialists can lead despite size. Niche marketing is deliberate focus, not randomly ignoring research. Mass marketing of laundry detergent can still make sense because needs are widely shared and scale efficiencies matter, while mass marketing of specialised medical bikes usually does not, because needs are narrow and fit matters more than volume."
             },
             {
               "type": "p",
-              "text": "GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coastal city and inner suburbs; **demographic** focus includes employed adults and shift workers; **psychographic** preference leans toward lower waste and dislike of unused ownership; **behavioural** focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Concentrated targeting lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
+              "text": "GlassHarbor chooses a niche inside a segment. **Geographic** focus is one coastal city and inner suburbs; **demographic** focus includes employed adults and shift workers; **psychographic** preference leans toward lower waste and dislike of unused ownership; **behavioural** focus is regular commuting rather than weekend hobby riding. The segment chosen is shift-working commuters with limited storage at home; the niche inside it is night-shift staff needing lit routes and battery-swap certainty; the positioning phrase is “get to the ward on time — battery panic optional.” Niche marketing lets a small firm win relevance without matching mass producers on volume. Targeting is only complete when the marketing mix (section 5.7) delivers a consistent product, price, place and promotion for the chosen segment."
             }
           ]
         },
         {
           "id": "5.7",
-          "title": "The marketing mix, life cycle and BCG matrix",
+          "title": "The marketing mix",
           "blocks": [
             {
               "type": "p",
@@ -1426,7 +1426,7 @@
             {
               "type": "idea",
               "term": "Boston Consulting Group (BCG) matrix",
-              "text": "A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **dogs** (poor dogs)."
+              "text": "A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **poor dogs**."
             },
             {
               "type": "figure",
@@ -1435,7 +1435,7 @@
             },
             {
               "type": "p",
-              "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Dogs**, sometimes called poor dogs, sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
+              "text": "**Stars** sit in high-growth markets with high relative share: they are valuable yet still need investment in promotion and capacity. **Cash cows** sit in low-growth markets with high relative share and generate cash with lower investment needs — so a high-share product in a low-growth market is a cash cow, not a star. **Question marks** sit in high-growth markets with low relative share and need decisions: invest to build share or withdraw. **Poor dogs** sit in low-growth markets with low relative share and have limited future, making them candidates for harvest or exit. A healthy portfolio blends stars, cash cows and selected question marks without too many poor dogs; cash-cow revenues can fund stars that may become future cows and promising question marks. Life-cycle stage and BCG cell often move together: introduction may look like a question mark, growth success can create a star, mature leaders become cash cows, and decline risks poor-dog status. Extension strategies try to delay decline — for example by changing the product mix or entering new markets. Ansoff’s product–market matrix organises options: market penetration (existing product, existing market — safest), product development (new product, existing market), market development (existing product, new market), and diversification (new product and new market — riskiest, but can spread risk long term)."
             },
             {
               "type": "idea",
@@ -1487,7 +1487,7 @@
         "**Product orientation** builds then sells; **market orientation** researches then builds; CRM extends relationships with careful data use.",
         "Responsible marketing faces the risk of inflating wants and supports more sustainable production and consumption patterns such as repair, reuse and rental.",
         "Market research combines **primary/secondary** sources and **qualitative/quantitative** methods; **absolute** and **relative share** quantify competitive position.",
-        "Segmentation uses geographic, demographic, psychographic and behavioural bases; targeting may be **undifferentiated** (mass), **differentiated** (segment) or **concentrated** (niche).",
+        "Segmentation uses geographic, demographic, psychographic and behavioural bases; targeting may be **mass marketing**, **segment marketing** or **niche marketing**.",
         "The **marketing mix** harmonises product, price, place and promotion; **life-cycle** stages and the **BCG matrix** guide how products are managed over time."
       ]
     },
@@ -1505,7 +1505,7 @@
       "sections": [
         {
           "id": "6.1",
-          "title": "The balance sheet — what the firm owns and how it is financed",
+          "title": "What a balance sheet is",
           "blocks": [
             {
               "type": "p",
@@ -1618,7 +1618,7 @@
         },
         {
           "id": "6.2",
-          "title": "Income statement, cash flow and depreciation",
+          "title": "Other components of the financial statement of a business",
           "blocks": [
             {
               "type": "p",
@@ -1815,7 +1815,7 @@
         },
         {
           "id": "6.3",
-          "title": "Reading balance sheets and income statements",
+          "title": "What can be learnt from reading a balance sheet and an income statement",
           "blocks": [
             {
               "type": "p",
@@ -2033,7 +2033,7 @@
         },
         {
           "id": "6.4",
-          "title": "Who uses accounts — financial vs management accounting",
+          "title": "Use of these accounts – types of accounting",
           "blocks": [
             {
               "type": "p",
