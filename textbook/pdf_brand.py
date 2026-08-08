@@ -77,6 +77,35 @@ CHAPTER_EXTRA = {
     6: (PHOTOS / "ch6-desk.jpg", "Statements turn transactions into a readable story of the firm."),
 }
 
+# Extra plates inserted between sections (not only chapter openers)
+SECTION_PHOTO_POOL = {
+    2: [
+        (PHOTOS / "mid-grocery.jpg", "Everyday buying and selling is where scarcity becomes real."),
+        (PHOTOS / "mid-shop.jpg", "Prices, queues and choices — microeconomics in motion."),
+        (PHOTOS / "ch2-city.jpg", "Households and firms meet in city markets every day."),
+    ],
+    3: [
+        (PHOTOS / "mid-factory.jpg", "Different factors of production shape how a firm works."),
+        (PHOTOS / "mid-tools.jpg", "Tools, labour and know-how combine into a business system."),
+        (PHOTOS / "ch3-storefront.jpg", "From the street, every firm tells a different production story."),
+    ],
+    4: [
+        (PHOTOS / "mid-meeting.jpg", "Ownership structure decides who carries risk and who decides."),
+        (PHOTOS / "mid-team.jpg", "Partners, managers and investors pull different levers."),
+        (PHOTOS / "ch4-office.jpg", "Finance is the language that turns ownership into action."),
+    ],
+    5: [
+        (PHOTOS / "mid-cafe.jpg", "Place and experience are part of the marketing mix."),
+        (PHOTOS / "mid-shop.jpg", "Retail shelves show product, price and promotion together."),
+        (PHOTOS / "ch5-retail.jpg", "Customer insight comes before the next product bet."),
+    ],
+    6: [
+        (PHOTOS / "mid-laptop.jpg", "Numbers become useful when they tell a clean story."),
+        (PHOTOS / "ch6-desk.jpg", "Books record what the firm owns, owes and earned."),
+        (PHOTOS / "mid-meeting.jpg", "Managers read statements before they approve the next move."),
+    ],
+}
+
 
 def photo_exists(path: Path | None) -> bool:
     return bool(path and path.exists() and path.stat().st_size > 2000)
@@ -381,9 +410,9 @@ class PhotoPlate(Flowable):
         c.setFillColor(CARAMEL)
         c.rect(0, self.height - self.img_h, 22, 2.4, stroke=0, fill=1)
         if self.caption:
-            c.setFillColor(MUTED)
-            c.setFont(FONT_ITALIC, 8.5)
-            for i, line in enumerate(_wrap(c, self.caption, FONT_ITALIC, 8.5, self.width - 4)[:2]):
+            c.setFillColor(CARAMEL)
+            c.setFont(FONT_BOLD, 8.5)
+            for i, line in enumerate(_wrap(c, self.caption, FONT_BOLD, 8.5, self.width - 4)[:2]):
                 c.drawString(0, 6 - i * 10, line)
         c.restoreState()
 
@@ -398,6 +427,19 @@ def chapter_extra_photo(num: int, width: float):
     return KeepTogether([Spacer(1, 6), PhotoPlate(path, caption, width, height=108), Spacer(1, 8)])
 
 
+def section_mid_photo(num: int, section_index: int, width: float):
+    """Insert a live photo after selected sections so chapters are not text-only walls."""
+    pool = SECTION_PHOTO_POOL.get(num) or []
+    available = [(p, cap) for p, cap in pool if photo_exists(p)]
+    if not available:
+        return None
+    # After 1st, 3rd, 5th… section (0-based: 0, 2, 4…)
+    if section_index % 2 != 0:
+        return None
+    path, caption = available[(section_index // 2) % len(available)]
+    return KeepTogether([Spacer(1, 8), PhotoPlate(path, caption, width, height=102), Spacer(1, 6)])
+
+
 def end_page_photo(width: float):
     path = PHOTOS / "end-study.jpg"
     if not photo_exists(path):
@@ -409,26 +451,23 @@ def end_page_photo(width: float):
 
 
 def draw_running_chrome(canvas, doc, *, page_w, page_h, l_m, r_m, chapter_label: str, skip: bool):
-    """Page chrome without orange header blocks — thin rule + ember tick."""
+    """Page chrome — espresso rules + caramel tick (not a grey band)."""
     if skip:
         return
     canvas.saveState()
-    # Soft ivory margin wash (very light)
-    canvas.setFillColor(IVORY)
-    canvas.rect(0, page_h - 16 * mm, page_w, 16 * mm, stroke=0, fill=1)
 
     # Thin espresso rule
     canvas.setStrokeColor(ESPRESSO)
-    canvas.setLineWidth(0.6)
+    canvas.setLineWidth(0.7)
     y = page_h - 12.5 * mm
     canvas.line(l_m, y, page_w - r_m, y)
     # Ember tick at left
     canvas.setStrokeColor(CARAMEL)
-    canvas.setLineWidth(2.0)
-    canvas.line(l_m, y, l_m + 16, y)
+    canvas.setLineWidth(2.2)
+    canvas.line(l_m, y, l_m + 18, y)
 
     if chapter_label and doc.page > 2:
-        canvas.setFillColor(MUTED)
+        canvas.setFillColor(ESPRESSO)
         canvas.setFont(FONT_BOLD, 8)
         label = chapter_label
         max_w = page_w - l_m - r_m - 24
@@ -442,19 +481,19 @@ def draw_running_chrome(canvas, doc, *, page_w, page_h, l_m, r_m, chapter_label:
     canvas.setStrokeColor(RULE)
     canvas.setLineWidth(0.5)
     canvas.line(l_m, 12 * mm, page_w - r_m, 12 * mm)
-    canvas.setFillColor(MUTED)
-    canvas.setFont(FONT_REG, 8)
-    canvas.drawString(l_m, 7 * mm, "BBE SCHOOL  ·  ECONOMICS FULL COURSE")
     canvas.setFillColor(ESPRESSO)
+    canvas.setFont(FONT_BOLD, 8)
+    canvas.drawString(l_m, 7 * mm, "BBE SCHOOL  ·  ECONOMICS FULL COURSE")
     canvas.setFont(FONT_BOLD, 9)
     canvas.drawRightString(page_w - r_m, 7 * mm, str(doc.page))
 
-    # Outer page arc whisper (right edge)
+    # Soft caramel arcs (brand motif), not grey wash
     try:
-        canvas.setStrokeColor(Color(CARAMEL.red, CARAMEL.green, CARAMEL.blue, alpha=0.12))
+        canvas.setStrokeColor(Color(CARAMEL.red, CARAMEL.green, CARAMEL.blue, alpha=0.14))
     except TypeError:
         canvas.setStrokeColor(CARAMEL_SOFT)
-    canvas.setLineWidth(0.8)
-    canvas.circle(page_w + 30, page_h * 0.35, 90, stroke=1, fill=0)
+    canvas.setLineWidth(0.9)
+    canvas.circle(page_w + 28, page_h * 0.38, 88, stroke=1, fill=0)
+    canvas.circle(page_w + 28, page_h * 0.38, 118, stroke=1, fill=0)
 
     canvas.restoreState()

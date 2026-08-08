@@ -31,6 +31,7 @@ from pdf_brand import (
     CoverPage,
     ChapterHero,
     chapter_extra_photo,
+    section_mid_photo,
     end_page_photo,
     draw_running_chrome,
     register_fonts,
@@ -40,6 +41,7 @@ from pdf_brand import (
     FONT_DISP,
     CARAMEL,
     IVORY,
+    ESPRESSO,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -53,18 +55,18 @@ register_fonts()
 ACCENT = CARAMEL  # site caramel / ember — used sparingly
 ACCENT_SOFT = HexColor("#F4E6D8")
 ACCENT_LIGHT = HexColor("#E8A06A")
-INK = HexColor("#1F1A17")
-MUTED = HexColor("#5C534C")
+INK = ESPRESSO  # match site: deep espresso, not grey wash
+MUTED = HexColor("#3F3730")  # warm dark secondary (was too grey)
 TRAP_BG = HexColor("#F8EDE8")
-EXAM_BG = HexColor("#F3F0EA")
-SCENE_BG = HexColor("#F7F4F0")
-THINK_BG = HexColor("#EEF4F1")
-CONNECT_BG = HexColor("#F5F2EE")
+EXAM_BG = HexColor("#F7F3EC")
+SCENE_BG = HexColor("#F7F3EC")
+THINK_BG = HexColor("#F4E6D8")
+CONNECT_BG = HexColor("#F7F3EC")
 MECH_BG = HexColor("#F4E6D8")
-GRID = HexColor("#F0E8DE")  # very light — guides must never compete with labels
-AXIS = HexColor("#4A423B")
+GRID = HexColor("#E8DFD4")
+AXIS = HexColor("#1A1614")
 CURVE2 = HexColor("#8A6A4F")
-NOTE = HexColor("#3F3730")
+NOTE = HexColor("#1A1614")
 RULE = HexColor("#D9D0C6")
 FIG_EDGE = HexColor("#C9C0B6")
 FIG_FILL = HexColor("#FCFAF7")
@@ -205,15 +207,19 @@ def styles():
         ),
         "toc_h": ParagraphStyle(
             "th", parent=b["Normal"], fontName=FONT_DISP,
-            fontSize=19, textColor=INK, spaceAfter=14,
+            fontSize=20, textColor=INK, spaceAfter=10,
         ),
         "toc_ch": ParagraphStyle(
             "tc", parent=b["Normal"], fontName=FONT_BOLD,
-            fontSize=12.5, textColor=ACCENT, spaceBefore=12, spaceAfter=3,
+            fontSize=12.5, textColor=INK, spaceBefore=12, spaceAfter=4,
         ),
         "toc_sec": ParagraphStyle(
             "ts", parent=b["Normal"], fontName=FONT_REG,
-            fontSize=10.5, textColor=INK, leftIndent=14, leading=13.5, spaceAfter=1.5,
+            fontSize=10.5, textColor=INK, leftIndent=8, leading=14, spaceAfter=2,
+        ),
+        "toc_pages": ParagraphStyle(
+            "tp", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=10.5, textColor=ACCENT, alignment=TA_RIGHT, leading=14,
         ),
         "ch_label": ParagraphStyle(
             "chl", parent=b["Normal"], fontName=FONT_BOLD,
@@ -227,13 +233,17 @@ def styles():
             "sec", parent=b["Normal"], fontName=FONT_BOLD,
             fontSize=13.5, textColor=INK, leading=17, spaceBefore=14, spaceAfter=7,
         ),
+        "subsec": ParagraphStyle(
+            "subsec", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=12, textColor=INK, leading=15, spaceBefore=10, spaceAfter=5,
+        ),
         "body": ParagraphStyle(
             "body", parent=b["Normal"], fontName=FONT_REG,
-            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
+            fontSize=11.2, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "body_boldlead": ParagraphStyle(
             "bbl", parent=b["Normal"], fontName=FONT_REG,
-            fontSize=11.2, textColor=INK, leading=15.4, alignment=TA_JUSTIFY, spaceAfter=8,
+            fontSize=11.2, textColor=INK, leading=15.6, alignment=TA_JUSTIFY, spaceAfter=8,
         ),
         "example": ParagraphStyle(
             "ex", parent=b["Normal"], fontName=FONT_ITALIC,
@@ -241,7 +251,7 @@ def styles():
         ),
         "obj_h": ParagraphStyle(
             "oh", parent=b["Normal"], fontName=FONT_BOLD,
-            fontSize=12, textColor=INK, spaceBefore=6, spaceAfter=6,
+            fontSize=12.5, textColor=INK, spaceBefore=6, spaceAfter=6,
         ),
         "obj_item": ParagraphStyle(
             "oi", parent=b["Normal"], fontName=FONT_REG,
@@ -252,8 +262,8 @@ def styles():
             fontSize=14, textColor=INK, spaceBefore=10, spaceAfter=8,
         ),
         "caption": ParagraphStyle(
-            "cap", parent=b["Normal"], fontName=FONT_ITALIC,
-            fontSize=10.5, textColor=MUTED, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
+            "cap", parent=b["Normal"], fontName=FONT_BOLD,
+            fontSize=10.5, textColor=ACCENT, alignment=TA_LEFT, spaceBefore=3, spaceAfter=10,
         ),
         "bullet": ParagraphStyle(
             "bu", parent=b["Normal"], fontName=FONT_REG,
@@ -1829,8 +1839,254 @@ class ChapterStart(Flowable):
         STATE.skip_chrome = False
 
 
+class SectionMark(Flowable):
+    """Invisible marker used to record section start pages for the TOC."""
+
+    def __init__(self, key: str, label: str):
+        super().__init__()
+        self.key = key
+        self.label = label
+        self.width = self.height = 0.1
+
+    def wrap(self, aw, ah):
+        return 0.1, 0.1
+
+    def draw(self):
+        return
+
+
+def _fmt_pages(start: int | None, end: int | None) -> str:
+    if not start:
+        return ""
+    if not end or end <= start:
+        return str(start)
+    return f"{start}–{end}"
+
+
+def _toc_flowables(chapters, width: float, section_pages: dict[str, dict]):
+    """Bullet list of sections with page ranges (site-style Contents)."""
+    parts = [Paragraph("Contents", S["toc_h"])]
+    parts.append(Paragraph(
+        "<b>Each topic below matches the live Theory Reader on BBE School.</b>",
+        S["body"],
+    ))
+
+    def toc_row(label_html: str, pages: str):
+        row = Table(
+            [[
+                Paragraph(label_html, S["toc_sec"]),
+                Paragraph(f"<b>{pages}</b>", S["toc_pages"]),
+            ]],
+            colWidths=[width - 52, 52],
+        )
+        row.setStyle(TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+            ("TOPPADDING", (0, 0), (-1, -1), 1),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 1),
+        ]))
+        return row
+
+    for ch in chapters:
+        ch_key = f"ch-{ch['num']}"
+        ch_meta = section_pages.get(ch_key) or {}
+        # Always emit a page field so TOC height matches between the two build passes.
+        ch_pages = _fmt_pages(ch_meta.get("start"), ch_meta.get("end")) or "—"
+        parts.append(Paragraph(f"<b>Chapter {ch['num']} · {esc(ch['title'])}</b>", S["toc_ch"]))
+        parts.append(toc_row("•  <b>Full chapter</b>", ch_pages))
+
+        for sec in ch.get("sections") or []:
+            key = f"{ch['num']}:{sec['id']}"
+            meta = section_pages.get(key) or {}
+            pages = _fmt_pages(meta.get("start"), meta.get("end")) or "—"
+            label = f"{sec['id']}  {esc(sec['title'])}"
+            parts.append(toc_row(f"•  <b>{label}</b>", pages))
+    parts.append(PageBreak())
+    return parts
+
+
+def build(section_pages: dict[str, dict] | None = None, write_outputs: bool = True):
+    global TABLE_N, FIGURE_N, CONTENT
+    # Always reload current site source (economics-book → book-content.json)
+    CONTENT = json.loads((ROOT / "output" / "book-content.json").read_text(encoding="utf-8"))
+    TABLE_N = FIGURE_N = 0
+    PLACEHOLDER_FIGS.clear()
+    plain_parts.clear()
+    section_pages = dict(section_pages or {})
+
+    cfg = CONTENT.get("config") or {}
+    brand = cfg.get("brand") or "BBE SCHOOL"
+    title = cfg.get("title") or "Economics Full Course"
+    subtitle = cfg.get("subtitle") or "A learning system"
+    method = cfg.get("method") or "BBE Path"
+    chapters = CONTENT.get("chapters") or []
+
+    width = W - L_M - R_M
+    story = []
+
+    # Cover — branded composition from current course materials
+    STATE.skip_chrome = True
+    story.append(CoverPage(
+        brand=brand,
+        title=title,
+        subtitle=subtitle,
+        method=method,
+        width=width,
+        page_h=H - T_M - B_M,
+    ))
+    story.append(PageBreak())
+
+    # TOC (page ranges filled on second pass)
+    STATE.skip_chrome = False
+    STATE.footer_chapter = ""
+    story.extend(_toc_flowables(chapters, width, section_pages))
+
+    ranges: dict[int, dict] = {}
+    collected: dict[str, dict] = {}
+    order: list[str] = []
+
+    for ch in chapters:
+        story.append(ChapterStart(ch["num"], ch["title"]))
+        story.append(SectionMark(f"ch-{ch['num']}", f"Chapter {ch['num']}"))
+        order.append(f"ch-{ch['num']}")
+        story.append(ChapterHero(ch["num"], ch["title"], width))
+        story.append(Spacer(1, 8))
+        if ch.get("intro"):
+            story.append(Paragraph(rich(ch["intro"]), S["body"]))
+            plain_parts.append(f"Chapter {ch['num']}. {ch['title']}\n{ch['intro']}")
+
+        extra = chapter_extra_photo(ch["num"], width)
+        if extra:
+            story.append(extra)
+
+        objectives = ch.get("objectives") or []
+        if objectives:
+            story.append(Paragraph("Learning objectives", S["obj_h"]))
+            for i, obj in enumerate(objectives, 1):
+                story.append(Paragraph(f"<b>{i}.</b>  {rich(obj)}", S["obj_item"]))
+                plain_parts.append(obj)
+            story.append(Spacer(1, 6))
+
+        secs = ch.get("sections") or []
+        for si, sec in enumerate(secs):
+            key = f"{ch['num']}:{sec['id']}"
+            story.append(SectionMark(key, f"{sec['id']} {sec['title']}"))
+            order.append(key)
+            story.append(Paragraph(f"<b>{sec['id']}</b>  {esc(sec['title'])}", S["sec"]))
+            plain_parts.append(f"{sec['id']} {sec['title']}")
+            story.extend(blocks_to_flowables(sec.get("blocks") or [], width))
+            mid = section_mid_photo(ch["num"], si, width)
+            if mid:
+                story.append(mid)
+
+        recap = ch.get("recap") or []
+        if recap:
+            story.append(Spacer(1, 8))
+            story.append(Paragraph("Chapter recap", S["recap_h"]))
+            for item in recap:
+                story.append(SquareBullet(item, width))
+                plain_parts.append(item)
+
+        story.append(PageBreak())
+
+    story.append(SetHeader(""))
+    story.append(Spacer(1, 24 * mm))
+    story.append(Paragraph("End of the Full Course theory", S["end_title"]))
+    story.append(Paragraph(
+        "You have walked the BBE Path from scene to exam language across Chapters 2–6. "
+        "Continue with practice tasks for the chapter you have just studied.",
+        S["body"],
+    ))
+    story.extend(end_page_photo(width))
+
+    OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
+    doc = BaseDocTemplate(
+        str(OUT_PDF),
+        pagesize=A4,
+        leftMargin=L_M,
+        rightMargin=R_M,
+        topMargin=T_M,
+        bottomMargin=B_M,
+        title=f"{title} — BBE School",
+        author="BBE School",
+    )
+    frame = Frame(L_M, B_M, width, H - T_M - B_M, id="normal")
+    doc.addPageTemplates([
+        PageTemplate(id="main", frames=[frame], onPage=lambda c, d: None, onPageEnd=chrome),
+    ])
+
+    def after_flowable(flowable):
+        if isinstance(flowable, ChapterStart):
+            ranges[flowable.num] = {
+                "chapter": flowable.num,
+                "title": flowable.title,
+                "startPage": doc.page,
+                "endPage": doc.page,
+            }
+        elif isinstance(flowable, SectionMark):
+            collected[flowable.key] = {
+                "label": flowable.label,
+                "start": doc.page,
+                "end": doc.page,
+            }
+        elif STATE.chapter in ranges:
+            ranges[STATE.chapter]["endPage"] = doc.page
+
+    doc.afterFlowable = after_flowable
+    STATE.cover_pages = {1}
+    STATE.skip_chrome = False
+    doc.build(story)
+
+    chapters_sorted = sorted(ranges.values(), key=lambda x: x["startPage"])
+    for i, r in enumerate(chapters_sorted):
+        if i + 1 < len(chapters_sorted):
+            r["endPage"] = chapters_sorted[i + 1]["startPage"] - 1
+        else:
+            r["endPage"] = max(r["startPage"], doc.page - 1)
+        collected[f"ch-{r['chapter']}"] = {
+            "label": r["title"],
+            "start": r["startPage"],
+            "end": r["endPage"],
+        }
+
+    # Close section ranges using next marker / chapter end (do not shrink chapter keys)
+    for i, key in enumerate(order):
+        if key not in collected or key.startswith("ch-"):
+            continue
+        if i + 1 < len(order):
+            nxt = collected.get(order[i + 1])
+            if nxt and nxt.get("start"):
+                collected[key]["end"] = max(collected[key]["start"], nxt["start"] - 1)
+        else:
+            collected[key]["end"] = doc.page
+
+    if write_outputs:
+        manifest = {
+            "pageCount": doc.page,
+            "chapters": chapters_sorted,
+            "sections": collected,
+            "placeholderFigures": list(PLACEHOLDER_FIGS),
+        }
+        OUT_MANIFEST.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        OUT_TEXT.write_text("\n\n".join(plain_parts), encoding="utf-8")
+        print(json.dumps({"pageCount": doc.page, "chapters": chapters_sorted, "placeholderFigures": PLACEHOLDER_FIGS}, indent=2))
+        print(f"wrote {OUT_PDF} ({OUT_PDF.stat().st_size // 1024} KB)")
+        if PLACEHOLDER_FIGS:
+            print("PLACEHOLDER_FIGURES:", ", ".join(PLACEHOLDER_FIGS))
+        else:
+            print("PLACEHOLDER_FIGURES: (none)")
+
+    return collected
+
+
+def build_with_toc():
+    """Two-pass build so Contents shows accurate section page ranges."""
+    first = build(section_pages=None, write_outputs=False)
+    return build(section_pages=first, write_outputs=True)
+
+
 def chrome(canvas, doc):
-    # Cover: no page number / no chrome
     draw_running_chrome(
         canvas,
         doc,
@@ -1844,7 +2100,7 @@ def chrome(canvas, doc):
 
 
 def formula_block(b: dict, width: float):
-    """Soft wash + thick orange rule on top only (Fuhrmann callout style)."""
+    """Soft wash + thick caramel rule on top only."""
     label = b.get("label") or ""
     text = b.get("text") or ""
     vars_s = b.get("vars") or ""
@@ -2036,148 +2292,6 @@ def blocks_to_flowables(blocks, width):
     return out
 
 
-def build():
-    global TABLE_N, FIGURE_N, CONTENT
-    # Reload in case export just ran
-    CONTENT = json.loads((ROOT / "output" / "book-content.json").read_text(encoding="utf-8"))
-    TABLE_N = FIGURE_N = 0
-    PLACEHOLDER_FIGS.clear()
-    plain_parts.clear()
-
-    cfg = CONTENT.get("config") or {}
-    brand = cfg.get("brand") or "BBE SCHOOL"
-    title = cfg.get("title") or "Economics Full Course"
-    subtitle = cfg.get("subtitle") or "A learning system"
-    method = cfg.get("method") or "BBE Path"
-    tagline = cfg.get("methodTagline") or "Scene → Idea → Mechanism → Practice → Exam"
-    chapters = CONTENT.get("chapters") or []
-
-    width = W - L_M - R_M
-    story = []
-
-    # Cover — branded composition (photo + arcs), not orange tile stack
-    STATE.skip_chrome = True
-    story.append(CoverPage(
-        brand=brand,
-        title=title,
-        subtitle=subtitle,
-        method=method,
-        width=width,
-        page_h=H - T_M - B_M,
-    ))
-    story.append(PageBreak())
-
-    # TOC
-    STATE.skip_chrome = False
-    STATE.footer_chapter = ""
-    story.append(Paragraph("Contents", S["toc_h"]))
-    for ch in chapters:
-        story.append(Paragraph(f"Chapter {ch['num']}  {esc(ch['title'])}", S["toc_ch"]))
-        for sec in ch.get("sections") or []:
-            story.append(Paragraph(f"{sec['id']}  {esc(sec['title'])}", S["toc_sec"]))
-    story.append(PageBreak())
-
-    ranges: dict[int, dict] = {}
-    for ch in chapters:
-        story.append(ChapterStart(ch["num"], ch["title"]))
-        story.append(ChapterHero(ch["num"], ch["title"], width))
-        story.append(Spacer(1, 8))
-        if ch.get("intro"):
-            story.append(Paragraph(esc(ch["intro"]), S["body"]))
-            plain_parts.append(f"Chapter {ch['num']}. {ch['title']}\n{ch['intro']}")
-
-        extra = chapter_extra_photo(ch["num"], width)
-        if extra:
-            story.append(extra)
-
-        objectives = ch.get("objectives") or []
-        if objectives:
-            story.append(Paragraph("Learning objectives", S["obj_h"]))
-            for i, obj in enumerate(objectives, 1):
-                story.append(Paragraph(f"<b>{i}.</b>  {esc(obj)}", S["obj_item"]))
-                plain_parts.append(obj)
-            story.append(Spacer(1, 6))
-
-        for sec in ch.get("sections") or []:
-            story.append(Paragraph(f"{sec['id']}  {esc(sec['title'])}", S["sec"]))
-            plain_parts.append(f"{sec['id']} {sec['title']}")
-            story.extend(blocks_to_flowables(sec.get("blocks") or [], width))
-
-        recap = ch.get("recap") or []
-        if recap:
-            story.append(Spacer(1, 8))
-            story.append(Paragraph("Chapter recap", S["recap_h"]))
-            for item in recap:
-                story.append(SquareBullet(item, width))
-                plain_parts.append(item)
-
-        story.append(PageBreak())
-
-    story.append(SetHeader(""))
-    story.append(Spacer(1, 24 * mm))
-    story.append(Paragraph("End of the Full Course theory", S["end_title"]))
-    story.append(Paragraph(
-        "You have walked the BBE Path from scene to exam language across Chapters 2–6. "
-        "Continue with practice tasks for the chapter you have just studied.",
-        S["body"],
-    ))
-    story.extend(end_page_photo(width))
-
-    OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
-    doc = BaseDocTemplate(
-        str(OUT_PDF),
-        pagesize=A4,
-        leftMargin=L_M,
-        rightMargin=R_M,
-        topMargin=T_M,
-        bottomMargin=B_M,
-        title=f"{title} — BBE School",
-        author="BBE School",
-    )
-    frame = Frame(L_M, B_M, width, H - T_M - B_M, id="normal")
-    doc.addPageTemplates([
-        PageTemplate(id="main", frames=[frame], onPage=lambda c, d: None, onPageEnd=chrome),
-    ])
-
-    def after_flowable(flowable):
-        if isinstance(flowable, ChapterStart):
-            ranges[flowable.num] = {
-                "chapter": flowable.num,
-                "title": flowable.title,
-                "startPage": doc.page,
-                "endPage": doc.page,
-            }
-        elif STATE.chapter in ranges:
-            ranges[STATE.chapter]["endPage"] = doc.page
-
-    doc.afterFlowable = after_flowable
-
-    # Mark cover as chrome-free once we know page 1 is the cover
-    STATE.cover_pages = {1}
-    STATE.skip_chrome = False
-    doc.build(story)
-
-    chapters_sorted = sorted(ranges.values(), key=lambda x: x["startPage"])
-    for i, r in enumerate(chapters_sorted):
-        if i + 1 < len(chapters_sorted):
-            r["endPage"] = chapters_sorted[i + 1]["startPage"] - 1
-        else:
-            r["endPage"] = max(r["startPage"], doc.page - 1)
-
-    manifest = {
-        "pageCount": doc.page,
-        "chapters": chapters_sorted,
-        "placeholderFigures": list(PLACEHOLDER_FIGS),
-    }
-    OUT_MANIFEST.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    OUT_TEXT.write_text("\n\n".join(plain_parts), encoding="utf-8")
-    print(json.dumps(manifest, indent=2))
-    print(f"wrote {OUT_PDF} ({OUT_PDF.stat().st_size // 1024} KB)")
-    if PLACEHOLDER_FIGS:
-        print("PLACEHOLDER_FIGURES:", ", ".join(PLACEHOLDER_FIGS))
-    else:
-        print("PLACEHOLDER_FIGURES: (none)")
-
 
 if __name__ == "__main__":
-    build()
+    build_with_toc()

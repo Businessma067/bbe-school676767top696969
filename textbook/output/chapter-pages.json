@@ -1,36 +1,218 @@
 {
-  "pageCount": 69,
+  "pageCount": 75,
   "chapters": [
     {
       "chapter": 2,
       "title": "Basic economic concepts",
-      "startPage": 3,
-      "endPage": 15
+      "startPage": 4,
+      "endPage": 17
     },
     {
       "chapter": 3,
       "title": "Focus on different types of businesses",
-      "startPage": 16,
-      "endPage": 26
+      "startPage": 18,
+      "endPage": 29
     },
     {
       "chapter": 4,
       "title": "Forms of business ownership and sources of finance",
-      "startPage": 27,
-      "endPage": 37
+      "startPage": 30,
+      "endPage": 41
     },
     {
       "chapter": 5,
       "title": "Marketing",
-      "startPage": 38,
-      "endPage": 54
+      "startPage": 42,
+      "endPage": 59
     },
     {
       "chapter": 6,
       "title": "Accounting \u2014 keeping record of business transactions",
-      "startPage": 55,
-      "endPage": 68
+      "startPage": 60,
+      "endPage": 74
     }
   ],
+  "sections": {
+    "ch-2": {
+      "label": "Basic economic concepts",
+      "start": 4,
+      "end": 17
+    },
+    "2:2.1": {
+      "label": "2.1 Being part of the economy",
+      "start": 4,
+      "end": 5
+    },
+    "2:2.2": {
+      "label": "2.2 Scarcity of resources and opportunity cost",
+      "start": 6,
+      "end": 6
+    },
+    "2:2.3": {
+      "label": "2.3 Economics is the study of economic decisions",
+      "start": 7,
+      "end": 7
+    },
+    "2:2.4": {
+      "label": "2.4 Exchanging goods and services creates a circular flow and division of labour",
+      "start": 8,
+      "end": 9
+    },
+    "2:2.5": {
+      "label": "2.5 Different economic systems",
+      "start": 10,
+      "end": 11
+    },
+    "2:2.6": {
+      "label": "2.6 Supply and demand: households, businesses and the government meet in the market",
+      "start": 12,
+      "end": 15
+    },
+    "2:2.7": {
+      "label": "2.7 Competition in the market",
+      "start": 16,
+      "end": 17
+    },
+    "ch-3": {
+      "label": "Focus on different types of businesses",
+      "start": 18,
+      "end": 29
+    },
+    "3:3.1": {
+      "label": "3.1 Businesses combine different factors of production",
+      "start": 18,
+      "end": 19
+    },
+    "3:3.2": {
+      "label": "3.2 Businesses operate in the primary, secondary and/or tertiary sector",
+      "start": 20,
+      "end": 21
+    },
+    "3:3.3": {
+      "label": "3.3 Businesses can be profit-oriented or not-for-profit",
+      "start": 22,
+      "end": 22
+    },
+    "3:3.4": {
+      "label": "3.4 Businesses come \"in all sizes\": large and small",
+      "start": 23,
+      "end": 24
+    },
+    "3:3.5": {
+      "label": "3.5 Businesses may be local, national or international",
+      "start": 25,
+      "end": 25
+    },
+    "3:3.6": {
+      "label": "3.6 Businesses operate in an environment \u2013 stakeholders are important",
+      "start": 26,
+      "end": 29
+    },
+    "ch-4": {
+      "label": "Forms of business ownership and sources of finance",
+      "start": 30,
+      "end": 41
+    },
+    "4:4.1": {
+      "label": "4.1 Sole proprietorship / sole traders",
+      "start": 30,
+      "end": 31
+    },
+    "4:4.2": {
+      "label": "4.2 Partnership",
+      "start": 32,
+      "end": 32
+    },
+    "4:4.3": {
+      "label": "4.3 Corporations",
+      "start": 33,
+      "end": 34
+    },
+    "4:4.4": {
+      "label": "4.4 Summary: Overview of forms of business ownership",
+      "start": 35,
+      "end": 36
+    },
+    "4:4.5": {
+      "label": "4.5 Overview of sources of finance",
+      "start": 37,
+      "end": 38
+    },
+    "4:4.6": {
+      "label": "4.6 The choice of the source of finance",
+      "start": 39,
+      "end": 41
+    },
+    "ch-5": {
+      "label": "Marketing",
+      "start": 42,
+      "end": 59
+    },
+    "5:5.1": {
+      "label": "5.1 What a product is",
+      "start": 42,
+      "end": 43
+    },
+    "5:5.2": {
+      "label": "5.2 Objectives of marketing",
+      "start": 44,
+      "end": 44
+    },
+    "5:5.3": {
+      "label": "5.3 Product orientation versus market orientation",
+      "start": 45,
+      "end": 46
+    },
+    "5:5.4": {
+      "label": "5.4 The need for more responsibility and sustainability",
+      "start": 47,
+      "end": 47
+    },
+    "5:5.5": {
+      "label": "5.5 Market research",
+      "start": 47,
+      "end": 49
+    },
+    "5:5.6": {
+      "label": "5.6 Market segmentation and targeting strategies",
+      "start": 50,
+      "end": 51
+    },
+    "5:5.7": {
+      "label": "5.7 The marketing mix",
+      "start": 52,
+      "end": 59
+    },
+    "ch-6": {
+      "label": "Accounting \u2014 keeping record of business transactions",
+      "start": 60,
+      "end": 74
+    },
+    "6:6.1": {
+      "label": "6.1 What a balance sheet is",
+      "start": 60,
+      "end": 62
+    },
+    "6:6.2": {
+      "label": "6.2 Other components of the financial statement of a business",
+      "start": 63,
+      "end": 65
+    },
+    "6:6.3": {
+      "label": "6.3 What can be learnt from reading a balance sheet and an income statement",
+      "start": 66,
+      "end": 68
+    },
+    "6:6.4": {
+      "label": "6.4 Use of these accounts \u2013 types of accounting",
+      "start": 69,
+      "end": 69
+    },
+    "6:6.5": {
+      "label": "6.5 Analysis of financial statements",
+      "start": 69,
+      "end": 75
+    }
+  },
   "placeholderFigures": []
 }
