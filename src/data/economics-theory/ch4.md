@@ -65,11 +65,11 @@ As a **legal person**, the company can own land and property, hire people, close
 
 > **Share slice of capital**  
 > Value per share at issue = total share capital ÷ number of shares  
-> *Example course pattern: €1,000,000 capital ÷ 100,000 shares = €10 per share (0.001% of capital each).*
+> *Example: €1,600,000 capital ÷ 80,000 shares = €20 per share at issue (SensorCo pattern).*
 
 Shares can be bought at initial issue or later from another shareholder. A **stock exchange** is a regulated market where listed shares and other securities (such as **bonds**) can be traded, and listing requires compliance with rules. An **initial public offering (IPO)** introduces shares at an issue price; afterwards prices move with demand and supply. Rising **secondary-market** prices enrich trading shareholders — they do not inject extra cash into the issuing company. Investors may buy shares for dividends (parts of profit paid to shareholders, with no automatic duty to pay every year), for capital growth if prices rise, and for voting rights at the stockholders’ meeting. Large corporations can also issue **bonds**: packaged borrowing from many investor-creditors with agreed interest and repayment. Bondholders remain creditors, not owners. A common trap is treating a secondary share-price gain as new corporate finance — that gain accrues among traders, not as fresh cash on the company’s books.
 
-[[FIGURE:shareholder-structure|Shareholder structure of a listed AG (illustrative): foundations may hold a large block while the rest is free float among institutional and private investors.]]
+[[FIGURE:shareholder-structure|Illustrative listed-AG shareholder structure (BBE example): an anchor block plus institutional and private free float — not a copy of any single annual-report pie.]]
 
 ### 4.3.3 Private Limited Companies
 

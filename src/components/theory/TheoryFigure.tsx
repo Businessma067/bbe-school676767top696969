@@ -77,160 +77,93 @@ function ChartFrame({ title, children, height = "h-[260px] sm:h-[300px]" }: { ti
   );
 }
 
-/** Full SVG circular flow — solid arrow lines (no Unicode “← →” stubs). */
+/** Clean CSS circular flow — rebuilt from scratch (no Unicode stubs, no dense SVG tangle). */
 function CircularFlow() {
-  const W = 640;
-  const H = 320;
-  const hh = { x: 28, y: 168, w: 118, h: 72 };
-  const biz = { x: 494, y: 168, w: 118, h: 72 };
-  const gov = { x: 248, y: 18, w: 144, h: 44 };
-  const x1 = hh.x + hh.w + 14;
-  const x2 = biz.x - 14;
-  const lanes: { y: number; label: string; to: "hh" | "biz" }[] = [
-    { y: 186, label: "Goods and services", to: "hh" },
-    { y: 212, label: "Payments for goods and services", to: "biz" },
-    { y: 238, label: "Labour and other resources", to: "biz" },
-    { y: 264, label: "Wages, rent, interest and profit", to: "hh" },
+  const lanes: { label: string; dir: "left" | "right" }[] = [
+    { label: "Goods and services", dir: "left" },
+    { label: "Payments for goods and services", dir: "right" },
+    { label: "Labour and other resources", dir: "right" },
+    { label: "Wages, rent, interest and profit", dir: "left" },
   ];
 
   return (
-    <div className="mx-auto w-full max-w-2xl">
-      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label="Circular flow of goods, services and money">
-        <defs>
-          <marker id="cf-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-            <path d="M0,0 L8,4 L0,8 Z" fill={ACCENT} />
-          </marker>
-          <marker id="cf-arrow-muted" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-            <path d="M0,0 L7,3.5 L0,7 Z" fill={MUTED} />
-          </marker>
-        </defs>
+    <div className="mx-auto w-full max-w-xl" role="img" aria-label="Circular flow of goods, services and money">
+      <div className="flex justify-center">
+        <ActorBox soft>Government</ActorBox>
+      </div>
 
-        {/* Government */}
-        <rect x={gov.x} y={gov.y} width={gov.w} height={gov.h} fill="oklch(0.97 0.02 55)" stroke={ACCENT} strokeWidth="1.25" />
-        <text x={gov.x + gov.w / 2} y={gov.y + 27} textAnchor="middle" fill={ACCENT} fontSize="13" fontWeight="700">
-          Government
-        </text>
+      <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-stretch gap-2 text-[11px] text-muted-foreground sm:gap-3 sm:text-xs">
+        <div className="flex flex-col items-center gap-1 text-center">
+          <span className="h-6 w-px bg-primary/50" />
+          <span>taxes ↑</span>
+          <span>public goods / transfers ↓</span>
+          <span className="h-6 w-px bg-primary/50" />
+        </div>
+        <div />
+        <div className="flex flex-col items-center gap-1 text-center">
+          <span className="h-6 w-px bg-primary/50" />
+          <span>taxes ↑</span>
+          <span>subsidies / public goods ↓</span>
+          <span className="h-6 w-px bg-primary/50" />
+        </div>
+      </div>
 
-        {/* Households / Businesses */}
-        <rect x={hh.x} y={hh.y} width={hh.w} height={hh.h} fill="oklch(0.96 0.01 75)" stroke="#C9BDB0" strokeWidth="1.25" />
-        <text x={hh.x + hh.w / 2} y={hh.y + 30} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+      <div className="mt-1 grid grid-cols-[minmax(5.5rem,7.5rem)_1fr_minmax(5.5rem,7.5rem)] items-center gap-2 sm:gap-4">
+        <ActorBox>
           Private
-        </text>
-        <text x={hh.x + hh.w / 2} y={hh.y + 48} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+          <br />
           households
-        </text>
+        </ActorBox>
 
-        <rect x={biz.x} y={biz.y} width={biz.w} height={biz.h} fill="oklch(0.96 0.01 75)" stroke="#C9BDB0" strokeWidth="1.25" />
-        <text x={biz.x + biz.w / 2} y={biz.y + 40} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
-          Businesses
-        </text>
+        <div className="flex flex-col justify-center gap-3 py-1">
+          {lanes.map((lane) => (
+            <FlowLane key={lane.label} label={lane.label} dir={lane.dir} />
+          ))}
+        </div>
 
-        {/* Horizontal exchange arrows with labels on the line */}
-        {lanes.map((lane) => {
-          const from = lane.to === "hh" ? x2 : x1;
-          const to = lane.to === "hh" ? x1 : x2;
-          return (
-            <g key={lane.label}>
-              <line
-                x1={from}
-                y1={lane.y}
-                x2={to}
-                y2={lane.y}
-                stroke={ACCENT}
-                strokeWidth="1.6"
-                markerEnd="url(#cf-arrow)"
-              />
-              <rect
-                x={(x1 + x2) / 2 - 108}
-                y={lane.y - 9}
-                width="216"
-                height="16"
-                fill="oklch(0.985 0.005 75)"
-              />
-              <text
-                x={(x1 + x2) / 2}
-                y={lane.y + 3}
-                textAnchor="middle"
-                fill={INK}
-                fontSize="10.5"
-              >
-                {lane.label}
-              </text>
-            </g>
-          );
-        })}
+        <ActorBox>Businesses</ActorBox>
+      </div>
 
-        {/* Taxes ↑ (outer) and public goods / transfers ↓ (inner) */}
-        <line
-          x1={hh.x + 28}
-          y1={hh.y - 2}
-          x2={hh.x + 28}
-          y2={gov.y + gov.h + 18}
-          stroke={MUTED}
-          strokeWidth="1.4"
-        />
-        <line
-          x1={hh.x + 28}
-          y1={gov.y + gov.h + 18}
-          x2={gov.x + 36}
-          y2={gov.y + gov.h + 2}
-          stroke={MUTED}
-          strokeWidth="1.4"
-          markerEnd="url(#cf-arrow-muted)"
-        />
-        <line
-          x1={biz.x + biz.w - 28}
-          y1={biz.y - 2}
-          x2={biz.x + biz.w - 28}
-          y2={gov.y + gov.h + 18}
-          stroke={MUTED}
-          strokeWidth="1.4"
-        />
-        <line
-          x1={biz.x + biz.w - 28}
-          y1={gov.y + gov.h + 18}
-          x2={gov.x + gov.w - 36}
-          y2={gov.y + gov.h + 2}
-          stroke={MUTED}
-          strokeWidth="1.4"
-          markerEnd="url(#cf-arrow-muted)"
-        />
-        <text x={hh.x + 36} y={130} fill={MUTED} fontSize="10" fontWeight="600">
-          taxes ↑
-        </text>
-        <text x={biz.x + biz.w - 70} y={130} fill={MUTED} fontSize="10" fontWeight="600">
-          taxes ↑
-        </text>
+      <p className="mt-4 text-center text-[11px] italic text-muted-foreground sm:text-xs">
+        Real flows and monetary flows run in opposite directions.
+      </p>
+    </div>
+  );
+}
 
-        <line
-          x1={gov.x + 52}
-          y1={gov.y + gov.h + 2}
-          x2={hh.x + hh.w - 22}
-          y2={hh.y - 4}
-          stroke={ACCENT}
-          strokeWidth="1.4"
-          markerEnd="url(#cf-arrow)"
-        />
-        <line
-          x1={gov.x + gov.w - 52}
-          y1={gov.y + gov.h + 2}
-          x2={biz.x + 22}
-          y2={biz.y - 4}
-          stroke={ACCENT}
-          strokeWidth="1.4"
-          markerEnd="url(#cf-arrow)"
-        />
-        <text x={168} y={96} fill={ACCENT} fontSize="9.5" fontWeight="600">
-          public goods / transfers ↓
-        </text>
-        <text x={378} y={96} fill={ACCENT} fontSize="9.5" fontWeight="600">
-          subsidies / public goods ↓
-        </text>
+function ActorBox({ children, soft = false }: { children: ReactNode; soft?: boolean }) {
+  return (
+    <div
+      className={cn(
+        "flex min-h-[4.25rem] items-center justify-center px-3 py-2 text-center text-[13px] font-bold leading-snug",
+        soft
+          ? "bg-primary/10 text-primary ring-1 ring-primary/30"
+          : "bg-secondary/50 text-foreground ring-1 ring-border",
+      )}
+    >
+      {children}
+    </div>
+  );
+}
 
-        <text x={W / 2} y={308} textAnchor="middle" fill={MUTED} fontSize="11" fontStyle="italic">
-          Real flows and monetary flows run in opposite directions
-        </text>
-      </svg>
+function FlowLane({ label, dir }: { label: string; dir: "left" | "right" }) {
+  return (
+    <div className="relative flex h-7 items-center">
+      <div className="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-primary" />
+      {dir === "right" ? (
+        <span
+          aria-hidden
+          className="absolute right-0 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[5px] border-y-transparent border-l-[9px] border-l-primary"
+        />
+      ) : (
+        <span
+          aria-hidden
+          className="absolute left-0 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[5px] border-y-transparent border-r-[9px] border-r-primary"
+        />
+      )}
+      <span className="relative z-10 mx-auto bg-[oklch(0.985_0.005_75)] px-2 text-center text-[11px] leading-none text-foreground sm:text-xs">
+        {label}
+      </span>
     </div>
   );
 }
@@ -505,9 +438,9 @@ function EnvironmentImpact() {
 /** Fuhrmann Fig. 8 — shareholder structure (course illustration from the book’s description). */
 function ShareholderStructure() {
   const data = [
-    { name: "Two foundations (~1/3)", value: 33 },
-    { name: "Institutional (free float)", value: 34 },
-    { name: "Private & other (free float)", value: 33 },
+    { name: "Anchor foundations (28%)", value: 28 },
+    { name: "Institutional free float (47%)", value: 47 },
+    { name: "Private & other free float (25%)", value: 25 },
   ];
   const colors = [ACCENT, MUTED, "#A67C52"];
   return (
@@ -848,85 +781,88 @@ function AnsoffMatrix() {
   );
 }
 
-/** Fuhrmann Fig. 21 */
+/** Break-even — North Harbor dock clocks (not the Fuhrmann 720/480/130k set). */
 function BreakEven() {
-  const data = Array.from({ length: 13 }, (_, i) => {
-    const q = i * 100;
-    const fixed = 130000;
-    const vc = 480 * q;
+  const price = 90;
+  const vc = 54;
+  const fixed = 72000;
+  const bep = fixed / (price - vc); // 2,000
+  const data = Array.from({ length: 11 }, (_, i) => {
+    const q = i * 400;
     return {
       q,
       fixed,
-      total: fixed + vc,
-      revenue: 720 * q,
+      total: fixed + vc * q,
+      revenue: price * q,
     };
   });
   return (
-    <ChartFrame title="Break-even point — revenues meet total costs" height="h-[280px] sm:h-[320px]">
+    <ChartFrame title="Break-even — North Harbor dock clocks (€90 price, €54 VC, €72k fixed)" height="h-[280px] sm:h-[320px]">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 12, left: 8, bottom: 16 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
           <XAxis
             dataKey="q"
             tick={{ fontSize: 10, fill: INK }}
-            label={{ value: "Number of items", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+            label={{ value: "Clocks sold", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
           />
           <YAxis tick={{ fontSize: 10, fill: INK }} tickFormatter={(v) => `${Math.round(v / 1000)}k`} />
           <Line type="linear" dataKey="fixed" name="Fixed costs" stroke="#A67C52" strokeWidth={1.5} strokeDasharray="4 3" dot={false} isAnimationActive={false} />
           <Line type="linear" dataKey="total" name="Total costs" stroke={MUTED} strokeWidth={2} dot={false} isAnimationActive={false} />
           <Line type="linear" dataKey="revenue" name="Revenues" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-          <ReferenceDot x={542} y={720 * 542} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} />
+          <ReferenceDot x={bep} y={price * bep} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} />
           <Legend />
         </LineChart>
       </ResponsiveContainer>
+      <Hint>Break-even at 2,000 clocks (contribution €36 covers €72,000 fixed costs).</Hint>
     </ChartFrame>
   );
 }
 
-/** Fuhrmann Fig. 22 — elastic demand */
+/** Elastic demand — original BBE numbers (not the book’s 500→400 / 70→100). */
 function PriceElasticityElastic() {
   const data = [
-    { q: 70, p: 500 },
-    { q: 100, p: 400 },
-    { q: 150, p: 300 },
+    { q: 80, p: 90 },
+    { q: 120, p: 72 },
+    { q: 160, p: 54 },
   ];
   return (
-    <ChartFrame title="Price elasticity — elastic demand (example)" height="h-[240px] sm:h-[280px]">
+    <ChartFrame title="Price elasticity — elastic demand (dock clocks)" height="h-[240px] sm:h-[280px]">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 16, left: 4, bottom: 16 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
-          <XAxis dataKey="q" type="number" domain={[60, 160]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Quantity", position: "insideBottom", offset: -4, fontSize: 11, fill: MUTED }} />
-          <YAxis dataKey="p" type="number" domain={[250, 550]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Price (€)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }} />
+          <XAxis dataKey="q" type="number" domain={[60, 180]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Quantity", position: "insideBottom", offset: -4, fontSize: 11, fill: MUTED }} />
+          <YAxis dataKey="p" type="number" domain={[40, 100]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Price (€)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }} />
           <Line type="linear" dataKey="p" stroke={ACCENT} strokeWidth={2.5} dot={{ r: 4 }} isAnimationActive={false} />
-          <ReferenceDot x={70} y={500} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
-          <ReferenceDot x={100} y={400} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
+          <ReferenceDot x={80} y={90} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
+          <ReferenceDot x={120} y={72} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
         </LineChart>
       </ResponsiveContainer>
-      <Hint>−20% price → +43% quantity · |ε| ≈ 2.15 → elastic · revenue can rise.</Hint>
+      <Hint>−20% price (€90→€72) → +50% quantity (80→120) · |ε| = 2.5 → elastic · revenue €7,200→€8,640.</Hint>
     </ChartFrame>
   );
 }
 
-/** Fuhrmann Fig. 23 — inelastic demand */
+/** Inelastic demand — original BBE numbers (not the book’s 60→50 / 90→100). */
 function PriceElasticityInelastic() {
   const data = [
-    { q: 90, p: 60 },
-    { q: 100, p: 50 },
-    { q: 120, p: 40 },
+    { q: 200, p: 45 },
+    { q: 220, p: 36 },
+    { q: 240, p: 27 },
   ];
   return (
-    <ChartFrame title="Price elasticity — inelastic demand (example)" height="h-[240px] sm:h-[280px]">
+    <ChartFrame title="Price elasticity — inelastic demand (workshop software licence)" height="h-[240px] sm:h-[280px]">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 16, left: 4, bottom: 16 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
-          <XAxis dataKey="q" type="number" domain={[80, 130]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Quantity", position: "insideBottom", offset: -4, fontSize: 11, fill: MUTED }} />
-          <YAxis dataKey="p" type="number" domain={[30, 70]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Price (€)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }} />
+          <XAxis dataKey="q" type="number" domain={[180, 260]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Quantity", position: "insideBottom", offset: -4, fontSize: 11, fill: MUTED }} />
+          <YAxis dataKey="p" type="number" domain={[20, 55]} tick={{ fontSize: 11, fill: INK }} label={{ value: "Price (€)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }} />
           <Line type="linear" dataKey="p" stroke={ACCENT} strokeWidth={2.5} dot={{ r: 4 }} isAnimationActive={false} />
-          <ReferenceDot x={90} y={60} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
-          <ReferenceDot x={100} y={50} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
+          <ReferenceDot x={200} y={45} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
+          <ReferenceDot x={220} y={36} r={4} fill="#fff" stroke={ACCENT} strokeWidth={2} />
         </LineChart>
       </ResponsiveContainer>
-      <Hint>−17% price → +11% quantity · |ε| ≈ 0.65 → inelastic · revenue can fall.</Hint>
+      <Hint>−20% price (€45→€36) → +10% quantity (200→220) · |ε| = 0.5 → inelastic · revenue €9,000→€7,920.</Hint>
     </ChartFrame>
   );
 }
@@ -954,16 +890,17 @@ function FinancialStatements() {
   );
 }
 
+/** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 function BalanceSheet() {
   const left = [
-    ["Office equipment", "25,000"],
-    ["Van", "8,000"],
-    ["Inventory", "12,500"],
-    ["Cash and bank", "3,500"],
+    ["Tools and workshop benches", "18,000"],
+    ["Delivery van", "14,000"],
+    ["Inventory (bikes for resale)", "9,200"],
+    ["Cash and bank", "4,800"],
   ];
   const right = [
-    ["Owner's equity", "24,000"],
-    ["Bank loan", "25,000"],
+    ["Owner's equity", "26,000"],
+    ["Bank loan", "20,000"],
   ];
   return (
     <div className="overflow-x-auto ring-1 ring-primary/30">
@@ -987,14 +924,14 @@ function BalanceSheet() {
           ))}
           <tr className="font-bold">
             <td className="px-3 py-2">Total assets</td>
-            <td className="px-3 py-2 text-right tabular-nums">49,000</td>
+            <td className="px-3 py-2 text-right tabular-nums">46,000</td>
             <td className="border-l border-primary/30 px-3 py-2">Total equity and liabilities</td>
-            <td className="px-3 py-2 text-right tabular-nums">49,000</td>
+            <td className="px-3 py-2 text-right tabular-nums">46,000</td>
           </tr>
         </tbody>
       </table>
       <p className="border-t border-border/60 px-3 py-2 text-center text-[11px] text-muted-foreground">
-        assets = equity + liabilities
+        Northline opening: assets = equity + liabilities
       </p>
     </div>
   );

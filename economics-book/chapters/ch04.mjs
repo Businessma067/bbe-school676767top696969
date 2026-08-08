@@ -133,7 +133,7 @@ export default {
           "type": "formula",
           "label": "Share slice of capital",
           "text": "Value per share at issue = total share capital ÷ number of shares",
-          "vars": "Example course pattern: €1,000,000 capital ÷ 100,000 shares = €10 per share (0.001% of capital each)."
+          "vars": "Example: €1,600,000 capital ÷ 80,000 shares = €20 per share at issue (SensorCo pattern)."
         },
         {
           "type": "p",
@@ -142,7 +142,7 @@ export default {
         {
           "type": "figure",
           "id": "shareholder-structure",
-          "caption": "Shareholder structure of a listed AG (illustrative): foundations may hold a large block while the rest is free float among institutional and private investors."
+          "caption": "Illustrative listed-AG shareholder structure (BBE example): an anchor block plus institutional and private free float — not a copy of any single annual-report pie."
         },
         {
           "type": "subhead",

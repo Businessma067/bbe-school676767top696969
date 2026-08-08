@@ -469,7 +469,7 @@ export default {
         {
           "type": "figure",
           "id": "break-even",
-          "caption": "Break-even point — where the revenue line meets total costs (fixed costs are horizontal; variable and total costs rise with output)."
+          "caption": "Break-even for North Harbor dock clocks — revenues meet total costs at 2,000 units (€90 price, €54 variable cost, €72,000 fixed)."
         },
         {
           "type": "p",
@@ -477,17 +477,17 @@ export default {
         },
         {
           "type": "p",
-          "text": "Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust."
+          "text": "Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. For North Harbor dock clocks, cutting price from €90 to €72 (−20%) lifts quantity from 80 to 120 (+50%), so |ε| = 2.5 (elastic) and revenue rises from €7,200 to €8,640. For a specialised workshop software licence, cutting from €45 to €36 (−20%) only lifts quantity from 200 to 220 (+10%), so |ε| = 0.5 (inelastic) and revenue falls from €9,000 to €7,920."
         },
         {
           "type": "figure",
           "id": "price-elasticity-elastic",
-          "caption": "Price elasticity of demand — elastic example: a price cut raises quantity demanded enough that revenue can increase."
+          "caption": "Elastic demand (dock clocks): €90→€72 (−20%) raises quantity 80→120 (+50%); |ε| = 2.5 and revenue rises."
         },
         {
           "type": "figure",
           "id": "price-elasticity-inelastic",
-          "caption": "Price elasticity of demand — inelastic example: a price cut raises quantity little, so revenue can fall."
+          "caption": "Inelastic demand (workshop software): €45→€36 (−20%) raises quantity only 200→220 (+10%); |ε| = 0.5 and revenue falls."
         },
         {
           "type": "subhead",

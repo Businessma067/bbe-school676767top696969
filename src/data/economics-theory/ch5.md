@@ -199,15 +199,15 @@ Ansoff’s product–market matrix organises growth options: **market penetratio
 Break-even units ≈ fixed costs / contribution per unit  
 > *From the next whole unit above break-even, the simplified model shows profit (other factors held aside).*
 
-[[FIGURE:break-even|Break-even point — where the revenue line meets total costs (fixed costs are horizontal; variable and total costs rise with output).]]
+[[FIGURE:break-even|Break-even for North Harbor dock clocks — revenues meet total costs at 2,000 units (€90 price, €54 variable cost, €72,000 fixed).]]
 
 **Variable-cost-plus**, or distribution, pricing adds a markup to variable cost — common when bidding or launching under competitive pressure. The short-run absolute lower limit is **variable cost**: any price above it still contributes to fixed costs. Break-even is a planning model, not a guarantee of cash in the bank regardless of credit and stock timing. For a sealed dock clock with variable cost €54 and planned selling price €90, contribution = 90 − 54 = €36. With fixed costs of €72,000 for the line this period, break-even units ≈ 72,000 / 36 = 2,000 clocks. A bulk buyer offers €70 each for 300 clocks: contribution = 70 − 54 = €16 each, or €4,800 toward fixed costs. Accept if those 300 would otherwise sit unsold; decline if they surely sell at €90 elsewhere.
 
-Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust.
+Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. For North Harbor dock clocks, cutting price from €90 to €72 (−20%) lifts quantity from 80 to 120 (+50%), so |ε| = 2.5 (elastic) and revenue rises from €7,200 to €8,640. For a specialised workshop software licence, cutting from €45 to €36 (−20%) only lifts quantity from 200 to 220 (+10%), so |ε| = 0.5 (inelastic) and revenue falls from €9,000 to €7,920.
 
-[[FIGURE:price-elasticity-elastic|Price elasticity of demand — elastic example: a price cut raises quantity demanded enough that revenue can increase.]]
+[[FIGURE:price-elasticity-elastic|Elastic demand (dock clocks): €90→€72 (−20%) raises quantity 80→120 (+50%); |ε| = 2.5 and revenue rises.]]
 
-[[FIGURE:price-elasticity-inelastic|Price elasticity of demand — inelastic example: a price cut raises quantity little, so revenue can fall.]]
+[[FIGURE:price-elasticity-inelastic|Inelastic demand (workshop software): €45→€36 (−20%) raises quantity only 200→220 (+10%); |ε| = 0.5 and revenue falls.]]
 
 ### 5.7.3 Place
 

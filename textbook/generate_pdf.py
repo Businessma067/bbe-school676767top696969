@@ -1205,9 +1205,9 @@ def _fig_bs(c, x, y, w, h):
     _txt(c, x + w * 0.25, head_y + 7, "Assets", 12, True, ACCENT)
     _txt(c, x + w * 0.75, head_y + 7, "Equity and liabilities", 12, True, ACCENT)
 
-    left = [("Office equipment", "25,000"), ("Van", "8,000"),
-            ("Inventory", "12,500"), ("Cash and bank", "3,500")]
-    right = [("Owner's equity", "24,000"), ("Bank loan", "25,000")]
+    left = [("Tools and benches", "18,000"), ("Delivery van", "14,000"),
+            ("Inventory (bikes)", "9,200"), ("Cash and bank", "4,800")]
+    right = [("Owner's equity", "26,000"), ("Bank loan", "20,000")]
 
     row_gap = 15
     for i, (la, lv) in enumerate(left):
@@ -1229,12 +1229,12 @@ def _fig_bs(c, x, y, w, h):
     c.line(mid + 10, rule_y, x + w - 10, rule_y)
     c.setDash()
     _txt(c, x + 10, tot_baseline, "Total assets", 11, True, INK, "l")
-    _txt(c, mid - 10, tot_baseline, "49,000", 11, True, INK, "r")
+    _txt(c, mid - 10, tot_baseline, "46,000", 11, True, INK, "r")
     _txt(c, mid + 10, tot_baseline, "Total equity and liabilities", 11, True, INK, "l")
-    _txt(c, x + w - 10, tot_baseline, "49,000", 11, True, INK, "r")
+    _txt(c, x + w - 10, tot_baseline, "46,000", 11, True, INK, "r")
 
     _txt(c, x + w / 2, y + 2,
-         "assets = equity + liabilities (both sides always balance)",
+         "Northline opening: assets = equity + liabilities",
          10, False, MUTED, italic=True)
 
 

@@ -901,7 +901,7 @@
               "type": "formula",
               "label": "Share slice of capital",
               "text": "Value per share at issue = total share capital ÷ number of shares",
-              "vars": "Example course pattern: €1,000,000 capital ÷ 100,000 shares = €10 per share (0.001% of capital each)."
+              "vars": "Example: €1,600,000 capital ÷ 80,000 shares = €20 per share at issue (SensorCo pattern)."
             },
             {
               "type": "p",
@@ -910,7 +910,7 @@
             {
               "type": "figure",
               "id": "shareholder-structure",
-              "caption": "Shareholder structure of a listed AG (illustrative): foundations may hold a large block while the rest is free float among institutional and private investors."
+              "caption": "Illustrative listed-AG shareholder structure (BBE example): an anchor block plus institutional and private free float — not a copy of any single annual-report pie."
             },
             {
               "type": "subhead",
@@ -1593,7 +1593,7 @@
             {
               "type": "figure",
               "id": "break-even",
-              "caption": "Break-even point — where the revenue line meets total costs (fixed costs are horizontal; variable and total costs rise with output)."
+              "caption": "Break-even for North Harbor dock clocks — revenues meet total costs at 2,000 units (€90 price, €54 variable cost, €72,000 fixed)."
             },
             {
               "type": "p",
@@ -1601,17 +1601,17 @@
             },
             {
               "type": "p",
-              "text": "Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust."
+              "text": "Before changing prices, consider **price elasticity of demand**: **elastic** if the percentage quantity change exceeds the percentage price change; **inelastic** if quantity responds less. Few substitutes and necessities lean inelastic; luxuries and easy substitutes lean elastic. Short-run and long-run elasticity can differ as habits and substitutes adjust. For North Harbor dock clocks, cutting price from €90 to €72 (−20%) lifts quantity from 80 to 120 (+50%), so |ε| = 2.5 (elastic) and revenue rises from €7,200 to €8,640. For a specialised workshop software licence, cutting from €45 to €36 (−20%) only lifts quantity from 200 to 220 (+10%), so |ε| = 0.5 (inelastic) and revenue falls from €9,000 to €7,920."
             },
             {
               "type": "figure",
               "id": "price-elasticity-elastic",
-              "caption": "Price elasticity of demand — elastic example: a price cut raises quantity demanded enough that revenue can increase."
+              "caption": "Elastic demand (dock clocks): €90→€72 (−20%) raises quantity 80→120 (+50%); |ε| = 2.5 and revenue rises."
             },
             {
               "type": "figure",
               "id": "price-elasticity-inelastic",
-              "caption": "Price elasticity of demand — inelastic example: a price cut raises quantity little, so revenue can fall."
+              "caption": "Inelastic demand (workshop software): €45→€36 (−20%) raises quantity only 200→220 (+10%); |ε| = 0.5 and revenue falls."
             },
             {
               "type": "subhead",
@@ -1681,7 +1681,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "Opening day at Northline Bike Workshop finds Mira and Jonas listing everything the new bicycle repair and retail business can use: tools and benches for €18,000, a small delivery van for €14,000, bikes held for resale for €9,200, and €4,800 in the business bank account. A bank has lent them €22,000, and the rest has come from money and equipment they put in themselves, so that list of resources — and the story of who financed it — is already the seed of a **balance sheet**."
+              "text": "Opening day at Northline Bike Workshop finds Mira and Jonas listing everything the new bicycle repair and retail business can use: tools and benches for €18,000, a small delivery van for €14,000, bikes held for resale for €9,200, and €4,800 in the business bank account. A bank has lent them €20,000, and the rest has come from money and equipment they put in themselves, so that list of resources — and the story of who financed it — is already the seed of a **balance sheet**."
             },
             {
               "type": "idea",
@@ -1720,7 +1720,7 @@
             },
             {
               "type": "p",
-              "text": "Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €22,000, so **equity** = assets − liabilities = 46,000 − 22,000 = €24,000, and the check 46,000 = 22,000 + 24,000 confirms that opening totals balance at €46,000 on each side."
+              "text": "Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €20,000, so **equity** = assets − liabilities = 46,000 − 20,000 = €26,000, and the check 46,000 = 20,000 + 26,000 confirms that opening totals balance at €46,000 on each side."
             },
             {
               "type": "table",
@@ -1736,13 +1736,13 @@
                   "Tools and workshop benches",
                   "18,000",
                   "Owner's equity",
-                  "24,000"
+                  "26,000"
                 ],
                 [
                   "Delivery van",
                   "14,000",
                   "Bank loan",
-                  "22,000"
+                  "20,000"
                 ],
                 [
                   "Inventory (bikes for resale)",
@@ -1766,7 +1766,7 @@
             },
             {
               "type": "p",
-              "text": "Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 22,000 and equity 24,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 22,000 + 24,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 23,500 and equity 24,000 — the same economic item, but different financing changes the totals."
+              "text": "Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 20,000 and equity 26,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 20,000 + 26,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 21,500 and equity 26,000 — the same economic item, but different financing changes the totals."
             },
             {
               "type": "subhead",

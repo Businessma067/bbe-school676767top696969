@@ -12,7 +12,7 @@ Every sale, purchase, wage payment and loan leaves a trail, and accounting is th
 
 ## 6.1 What a balance sheet is
 
-Opening day at Northline Bike Workshop finds Mira and Jonas listing everything the new bicycle repair and retail business can use: tools and benches for €18,000, a small delivery van for €14,000, bikes held for resale for €9,200, and €4,800 in the business bank account. A bank has lent them €22,000, and the rest has come from money and equipment they put in themselves, so that list of resources — and the story of who financed it — is already the seed of a **balance sheet**.
+Opening day at Northline Bike Workshop finds Mira and Jonas listing everything the new bicycle repair and retail business can use: tools and benches for €18,000, a small delivery van for €14,000, bikes held for resale for €9,200, and €4,800 in the business bank account. A bank has lent them €20,000, and the rest has come from money and equipment they put in themselves, so that list of resources — and the story of who financed it — is already the seed of a **balance sheet**.
 
 **Assets** — Resources the business **owns and uses**. Office tools that stay in the workshop and bikes waiting to be sold are both assets — but they are different kinds of assets, because one is kept for use and the other is held to be sold.
 
@@ -30,18 +30,18 @@ The identity must hold because every euro of asset was funded either by owners (
 
 [[FIGURE:balance-sheet|Balance sheet identity: every asset is financed by liabilities or by equity — the two financing sides add up to total assets.]]
 
-Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €22,000, so **equity** = assets − liabilities = 46,000 − 22,000 = €24,000, and the check 46,000 = 22,000 + 24,000 confirms that opening totals balance at €46,000 on each side.
+Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €20,000, so **equity** = assets − liabilities = 46,000 − 20,000 = €26,000, and the check 46,000 = 20,000 + 26,000 confirms that opening totals balance at €46,000 on each side.
 
 *Northline Bike Workshop — opening balance sheet (€)*
 | Assets | € | Liabilities and equity | € |
 | --- | --- | --- | --- |
-| Tools and workshop benches | 18,000 | Owner's equity | 24,000 |
-| Delivery van | 14,000 | Bank loan | 22,000 |
+| Tools and workshop benches | 18,000 | Owner's equity | 26,000 |
+| Delivery van | 14,000 | Bank loan | 20,000 |
 | Inventory (bikes for resale) | 9,200 |  |  |
 | Cash and bank | 4,800 |  |  |
 | Total assets | 46,000 | Total liabilities and equity | 46,000 |
 
-Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 22,000 and equity 24,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 22,000 + 24,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 23,500 and equity 24,000 — the same economic item, but different financing changes the totals.
+Before you read on, pause on a small financing choice: if Northline buys €1,500 of spare parts for cash, does total assets change, and what if the same purchase is on supplier credit? Paying cash for an asset is an **asset swap** in which one asset rises and cash falls by the same amount, so **total assets** stay unchanged; buying on credit raises the asset and a liability (**trade payable**) together, so the balance-sheet total rises. Starting from assets 46,000, liabilities 20,000 and equity 26,000, a cash purchase leaves inventory +1,500 and cash −1,500 with totals still 46,000 = 20,000 + 26,000, while a credit purchase leaves inventory +1,500 and trade payables +1,500, so assets become 47,500, liabilities 21,500 and equity 26,000 — the same economic item, but different financing changes the totals.
 
 ### Fixed assets, current assets and intangibles
 
