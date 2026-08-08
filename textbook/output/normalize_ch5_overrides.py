@@ -152,12 +152,12 @@ def parse_verdict_blob(blob: str, stmt: str, letter: str) -> str:
     solve = re.search(r"Solve:\s*(.+?)(?:\nAnswer:|\nTip:|\Z)", text, flags=re.I | re.S)
     bits = []
     if going:
-        bits.append(going.group(1).strip())
+        bits.append(flatten(going.group(1)))
+    if model:
+        bits.append("**Setup.** " + flatten(model.group(1)))
     if solve:
-        bits.append(solve.group(1).strip())
-    elif model:
-        bits.append(model.group(1).strip())
-    reasoning = " ".join(re.sub(r"\s+", " ", b) for b in bits if b)
+        bits.append("**Computation.** " + flatten(solve.group(1)))
+    reasoning = "\n\n".join(bits)
     if not reasoning:
         reasoning = re.sub(r"Verdict:\s*(True|False)\s*", "", text, flags=re.I)
         reasoning = re.sub(r"\nTip:.*", "", reasoning, flags=re.I | re.S).strip()
