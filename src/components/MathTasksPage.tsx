@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { AuthNav } from "@/components/AuthNav";
 import { FlashcardMath } from "@/components/FlashcardMath";
-import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
@@ -21,7 +21,6 @@ import {
   RotateCcw,
   BookOpen,
   AlertTriangle,
-  NotebookPen,
   Settings2,
   Lock,
   PanelLeftClose,
@@ -461,6 +460,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               inRevision={progress.revision.includes(activeCase.id)}
               explanationsOpen={showExplanations}
               onShowExplanations={() => setShowExplanations(true)}
+              onToggleExplanations={() => setShowExplanations((v) => !v)}
               onGraded={(allCorrect) => {
                 setProgress((prev) => {
                   const next: Progress = {
@@ -521,7 +521,14 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
           )}
         </main>
 
-        <PracticeRightSlot className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+        <MathPracticeAside
+          showExplanations={
+            showExplanations &&
+            !!activeCase &&
+            !activeCase.placeholder &&
+            !isLocked(tier, activeChapter, activeIdx)
+          }
+        >
           {showExplanations &&
           activeCase &&
           !activeCase.placeholder &&
@@ -531,47 +538,8 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
             />
-          ) : (
-            <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
-              <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                <NotebookPen className="h-3.5 w-3.5" /> Theory
-              </h3>
-              {activeCase && !isLocked(tier, activeChapter, activeIdx) ? (
-                <div className="min-h-0 flex-1 overflow-y-auto">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-                    Task {activeIdx + 1}
-                    {!activeCase.placeholder && activeCase.title
-                      ? ` · ${activeCase.title}`
-                      : ""}
-                  </p>
-                  {activeCase.placeholder ? (
-                    <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
-                      Theory notes for this topic will appear here once tasks are added.
-                    </div>
-                  ) : (
-                    <div className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
-                      <p>
-                        BBE format: mark each statement independently as True or False. Most
-                        tasks have five statements (A–E); a few advanced tasks use six (A–F).
-                        The number of true statements varies by case.
-                      </p>
-                      <TheoryToolkit chapter={activeChapter} />
-                      <p>
-                        After you check your answers, tap{" "}
-                        <span className="font-semibold text-primary">Explanation</span> to open
-                        the full worked solution for every statement here.
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
-                  Open a task to see its theory notes here.
-                </div>
-              )}
-            </div>
-          )}
-        </PracticeRightSlot>
+          ) : null}
+        </MathPracticeAside>
       </div>
 
       {customResetOpen && (
@@ -745,36 +713,20 @@ function RichMathLine({ text }: { text: string }) {
   );
 }
 
-function TheoryToolkit({ chapter }: { chapter: number | "revision" | null }) {
-  if (chapter === 5) {
-    return (
-      <div className="rounded-lg border border-border/70 bg-background/60 p-3">
-        <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-taupe">
-          Linear systems toolkit
-        </p>
-        <MathProse
-          text={
-            "$$\\begin{cases}a_1x+b_1y=c_1\\\\ a_2x+b_2y=c_2\\end{cases}$$\n\nElimination or substitution. Check unique / none / infinitely many solutions."
-          }
-        />
-      </div>
-    );
-  }
-  if (chapter === 13) {
-    return (
-      <div className="rounded-lg border border-border/70 bg-background/60 p-3">
-        <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-taupe">
-          Binomial toolkit
-        </p>
-        <MathProse
-          text={
-            "$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$\n\n$$E[X]=np,\\quad \\mathrm{Var}(X)=np(1-p)$$"
-          }
-        />
-      </div>
-    );
-  }
-  return null;
+function MathPracticeAside({
+  showExplanations,
+  children,
+}: {
+  showExplanations: boolean;
+  children: ReactNode;
+}) {
+  const calc = usePracticeCalcOptional();
+  if (!showExplanations && !calc?.open) return null;
+  return (
+    <PracticeRightSlot className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+      {children}
+    </PracticeRightSlot>
+  );
 }
 
 function AllExplanationsPanel({
@@ -868,6 +820,7 @@ function MathTaskCard({
   inRevision,
   explanationsOpen,
   onShowExplanations,
+  onToggleExplanations,
   onGraded,
   onResetProgress,
 }: {
@@ -877,6 +830,7 @@ function MathTaskCard({
   inRevision: boolean;
   explanationsOpen: boolean;
   onShowExplanations: () => void;
+  onToggleExplanations: () => void;
   onGraded: (allCorrect: boolean) => void;
   onResetProgress: () => void;
 }) {
@@ -902,6 +856,7 @@ function MathTaskCard({
   const handleSubmit = () => {
     setChecked(true);
     onGraded(correctCount === task.answer_key.length);
+    onShowExplanations();
   };
 
   const handleReset = () => {
@@ -969,15 +924,10 @@ function MathTaskCard({
           const isChecked = answers[i] === true;
           const correctAns = task.answer_key[i];
           const isCorrect = checked && isChecked === correctAns;
-          const isWrong = checked && isChecked !== correctAns;
           return (
             <li
               key={i}
-              className={cn(
-                "px-4 py-3 transition-colors",
-                isCorrect && "bg-emerald-500/5",
-                isWrong && "bg-destructive/5",
-              )}
+              className="px-4 py-3"
             >
               <div className="flex items-center gap-3">
                 <span className="w-6 text-center text-xs font-bold text-muted-foreground">
@@ -1046,7 +996,7 @@ function MathTaskCard({
           {checked && (
             <button
               type="button"
-              onClick={onShowExplanations}
+              onClick={onToggleExplanations}
               className={cn(
                 "inline-flex items-center gap-1.5 rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
                 explanationsOpen
@@ -1055,7 +1005,7 @@ function MathTaskCard({
               )}
             >
               <Sparkles className="h-4 w-4" />
-              {explanationsOpen ? "Explanation shown →" : "Explanation"}
+              {explanationsOpen ? "Hide Explanation" : "Explanation"}
             </button>
           )}
         </div>

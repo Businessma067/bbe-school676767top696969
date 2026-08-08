@@ -235,15 +235,10 @@ export default function EnglishReadingSimulator() {
                 const isChecked = userAns === true;
                 const correctAns = CASE.answer_key[i];
                 const isCorrect = checked && isChecked === correctAns;
-                const isWrong = checked && isChecked !== correctAns;
                 return (
                   <li
                     key={i}
-                    className={cn(
-                      "px-4 py-3 transition-colors",
-                      isCorrect && "bg-emerald-500/5",
-                      isWrong && "bg-destructive/5",
-                    )}
+                    className="px-4 py-3"
                   >
                     <div className="flex items-center gap-3">
                       <span className="w-6 text-center text-xs font-bold text-muted-foreground">

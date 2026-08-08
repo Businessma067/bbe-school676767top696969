@@ -357,7 +357,7 @@ function ReviewExamPage() {
                             key={s.id}
                             className={`rounded-lg border p-3 ${
                               correct
-                                ? "border-emerald-500/30 bg-emerald-500/5"
+                                ? "border-border bg-card"
                                 : "border-red-500/30 bg-red-500/5"
                             }`}
                           >

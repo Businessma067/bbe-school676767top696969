@@ -1,6 +1,6 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
@@ -14,7 +14,7 @@ import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { AuthNav } from "@/components/AuthNav";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
-import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
@@ -600,9 +600,9 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: Calculator (when open) else AI Explanation / Theory. */}
+        {/* Right panel: Calculator (when open) or AI Explanation — no empty Theory slot. */}
         {theoryChapter === null && (
-        <PracticeRightSlot>
+        <EconomicsPracticeAside hasExplanation={!!explanation}>
           {explanation ? (
             <ExplanationPanels
               state={explanation}
@@ -612,26 +612,8 @@ function EconomicsTasks() {
                 requestExplanation(activeCase, explanation.statementIndex);
               }}
             />
-          ) : (
-            <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-4">
-              <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                <NotebookPen className="h-3.5 w-3.5" /> Theory
-              </h3>
-              {activeCase ? (
-                <div className="min-h-0 flex-1 overflow-y-auto">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">Task {activeIdx + 1}</p>
-                  <div className="mt-4 rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs leading-relaxed text-muted-foreground">
-                    After you check your answers, tap <span className="font-semibold text-primary">Show AI textbook explanation</span> under any statement to open the double-panel engine here — a plain-English reasoning card plus the actual textbook passage with the key line highlighted.
-                  </div>
-                </div>
-              ) : (
-                <div className="rounded-lg border border-dashed border-border bg-background/60 p-4 text-xs text-muted-foreground">
-                  Open a case to see its theory notes here.
-                </div>
-              )}
-            </div>
-          )}
-        </PracticeRightSlot>
+          ) : null}
+        </EconomicsPracticeAside>
         )}
       </div>
 
@@ -885,15 +867,10 @@ function CaseCard({
           const correctAns = data.answer_key[i];
           const effective = isChecked;
           const isCorrect = checked && effective === correctAns;
-          const isWrong = checked && effective !== correctAns;
           return (
             <li
               key={i}
-              className={cn(
-                "px-4 py-3 transition-colors",
-                isCorrect && "bg-emerald-500/5",
-                isWrong && "bg-destructive/5",
-              )}
+              className="px-4 py-3"
             >
               <div className="flex items-center gap-3">
                 <span className="w-6 text-center text-xs font-bold text-muted-foreground">{i + 1}.</span>
@@ -1112,6 +1089,18 @@ type ExplanationPanelState = {
   data: { classic_explanation: string; textbook_context: string; highlight_text: string } | null;
   error: string | null;
 };
+
+function EconomicsPracticeAside({
+  hasExplanation,
+  children,
+}: {
+  hasExplanation: boolean;
+  children: ReactNode;
+}) {
+  const calc = usePracticeCalcOptional();
+  if (!hasExplanation && !calc?.open) return null;
+  return <PracticeRightSlot>{children}</PracticeRightSlot>;
+}
 
 function ExplanationPanels({
   state, onClose, onRetry,

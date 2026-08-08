@@ -218,15 +218,12 @@ export default function MathParabolaSimulator() {
                 const isChecked = userAns === true;
                 const correctAns = CASE.answer_key[i];
                 const isCorrect = checked && isChecked === correctAns;
-                const isWrong = checked && isChecked !== correctAns;
                 return (
                   <li
                     key={i}
                     className={cn(
                       "px-4 py-3 transition-colors",
                       activeIdx === i && "ring-1 ring-primary/50 bg-primary/5",
-                      isCorrect && "bg-emerald-500/5",
-                      isWrong && "bg-destructive/5",
                     )}
                   >
                     <div className="flex items-center gap-3">
