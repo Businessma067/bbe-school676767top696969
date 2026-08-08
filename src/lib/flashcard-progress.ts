@@ -47,28 +47,66 @@ export function cardWeight(status: CardKnowledge | undefined): number {
   return 2;
 }
 
+function shuffleInPlace<T>(arr: T[]): T[] {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * Build a full-cycle order: every card once before repeats.
+ * Soft priority: unknowns early, then unset, then known (shuffled within band).
+ */
+export function buildStudyOrder<T extends { key: string }>(
+  cards: T[],
+  progress: FlashcardProgressMap,
+  excludeKey?: string,
+): number[] {
+  if (cards.length === 0) return [];
+  const bands: [number[], number[], number[]] = [[], [], []];
+  for (let i = 0; i < cards.length; i++) {
+    if (excludeKey && cards[i].key === excludeKey) continue;
+    const s = progress[cards[i].key];
+    if (s === "unknown") bands[0].push(i);
+    else if (s === "known") bands[2].push(i);
+    else bands[1].push(i);
+  }
+  for (const band of bands) shuffleInPlace(band);
+  let order = [...bands[0], ...bands[1], ...bands[2]];
+  // Tiny decks can exclude everything — fall back to shuffle of all others
+  if (order.length === 0) {
+    order = cards.map((_, i) => i).filter((i) => cards[i].key !== excludeKey);
+    shuffleInPlace(order);
+  }
+  if (order.length === 0) order = [0];
+  return order;
+}
+
 export function pickWeightedIndex<T extends { key: string }>(
   cards: T[],
   progress: FlashcardProgressMap,
   excludeKey?: string,
 ): number {
-  if (cards.length === 0) return 0;
-  const weights = cards.map((c) => {
-    if (excludeKey && c.key === excludeKey) return 0;
-    return cardWeight(progress[c.key]);
-  });
-  const total = weights.reduce((a, b) => a + b, 0);
-  if (total <= 0) {
-    // All excluded — fall back to any other card, else 0
-    const alt = cards.findIndex((c) => c.key !== excludeKey);
-    return alt >= 0 ? alt : 0;
+  const order = buildStudyOrder(cards, progress, excludeKey);
+  return order[0] ?? 0;
+}
+
+/** Take next index from a depleting cycle queue; refill when exhausted. */
+export function takeNextFromQueue<T extends { key: string }>(
+  queue: number[],
+  cards: T[],
+  progress: FlashcardProgressMap,
+  excludeKey?: string,
+): { index: number; queue: number[] } {
+  if (cards.length === 0) return { index: 0, queue: [] };
+  let q = queue.filter((i) => i >= 0 && i < cards.length && cards[i].key !== excludeKey);
+  if (q.length === 0) {
+    q = buildStudyOrder(cards, progress, excludeKey);
   }
-  let r = Math.random() * total;
-  for (let i = 0; i < weights.length; i++) {
-    r -= weights[i];
-    if (r <= 0) return i;
-  }
-  return cards.length - 1;
+  const index = q[0] ?? 0;
+  return { index, queue: q.slice(1) };
 }
 
 export function summarizeProgress(

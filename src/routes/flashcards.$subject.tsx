@@ -19,7 +19,7 @@ import {
   cardKey,
   clearProgress,
   loadProgress,
-  pickWeightedIndex,
+  takeNextFromQueue,
   saveProgress,
   summarizeProgress,
   type CardKnowledge,
@@ -117,6 +117,7 @@ function FlashcardSubjectPage() {
   const axisRef = useRef<"undecided" | "x" | "y">("undecided");
   const deckRef = useRef(deck);
   const progressRef = useRef(progress);
+  const queueRef = useRef<number[]>([]);
   const cardRef = useRef<DeckCard | undefined>(undefined);
   const stageRef = useRef<HTMLDivElement | null>(null);
 
@@ -131,6 +132,7 @@ function FlashcardSubjectPage() {
     const next = buildDeck(subjectId, subject.sections, sectionId);
     setDeck(next);
     setIndex(0);
+    queueRef.current = [];
     setFlipped(false);
     setDragX(0);
     dragXRef.current = 0;
@@ -190,7 +192,14 @@ function FlashcardSubjectPage() {
         setFlipped(false);
         setExitDir(null);
         exitLockRef.current = false;
-        setIndex(() => pickWeightedIndex(deckRef.current, nextProgress, key));
+        const { index: nextIndex, queue } = takeNextFromQueue(
+          queueRef.current,
+          deckRef.current,
+          nextProgress,
+          key,
+        );
+        queueRef.current = queue;
+        setIndex(nextIndex);
         setSeen((n) => n + 1);
       }, EXIT_MS);
     },
@@ -214,7 +223,14 @@ function FlashcardSubjectPage() {
     const exclude = cardRef.current?.key;
     setFlipped(false);
     resetDragState();
-    setIndex(() => pickWeightedIndex(deckRef.current, progressRef.current, exclude));
+    const { index: nextIndex, queue } = takeNextFromQueue(
+      queueRef.current,
+      deckRef.current,
+      progressRef.current,
+      exclude,
+    );
+    queueRef.current = queue;
+    setIndex(nextIndex);
     setSeen((n) => n + 1);
   };
 
@@ -415,6 +431,7 @@ function FlashcardSubjectPage() {
               type="button"
               onClick={() => {
                 setDeck((prev) => shuffleCopy(prev));
+                queueRef.current = [];
                 setIndex(0);
                 setFlipped(false);
               }}
@@ -429,6 +446,7 @@ function FlashcardSubjectPage() {
                 clearProgress(subjectId);
                 setProgress({});
                 progressRef.current = {};
+                queueRef.current = [];
                 setDeck(buildDeck(subjectId, subject.sections, sectionId));
                 setIndex(0);
                 setFlipped(false);
