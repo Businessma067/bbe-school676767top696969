@@ -315,7 +315,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                     {locked && " · Locked"}
                                   </span>
                                   {!locked && !c.placeholder && c.difficulty_level !== "—" && (
-                                    <DifficultyPill level={c.difficulty_level} active={active} />
+                                    <DifficultyDots level={c.difficulty_level} active={active} />
                                   )}
                                 </button>
                               </li>
@@ -559,23 +559,88 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   );
 }
 
-function DifficultyPill({ level, active }: { level: string; active?: boolean }) {
-  const [num, den] = level.split("/");
+function parseDifficulty(level: string): { n: number; max: number } {
+  const [rawN, rawMax] = level.split("/");
+  const max = Math.max(1, Number(rawMax) || 5);
+  const n = Math.max(0, Math.min(Number(rawN) || 0, max));
+  return { n, max };
+}
+
+/** Compact filled-dot meter for the chapter sidebar list. */
+function DifficultyDots({ level, active }: { level: string; active?: boolean }) {
+  const { n, max } = parseDifficulty(level);
   return (
     <span
-      className={cn(
-        "inline-flex shrink-0 items-baseline gap-0.5 rounded-full border px-1.5 py-[1px] font-mono text-[10px] tabular-nums tracking-tight",
-        active
-          ? "border-primary/30 bg-primary/10 text-primary"
-          : "border-border/80 bg-secondary/70 text-muted-foreground",
-      )}
+      className="inline-flex shrink-0 items-center gap-[3px]"
       title={`Difficulty ${level}`}
+      aria-label={`Difficulty ${level}`}
     >
-      <span className={cn("font-semibold", active ? "text-primary" : "text-foreground")}>
-        {num}
+      {Array.from({ length: max }, (_, i) => (
+        <span
+          key={i}
+          className={cn(
+            "block h-1.5 w-1.5 rounded-full border",
+            i < n
+              ? active
+                ? "border-primary bg-primary"
+                : "border-primary/75 bg-primary/75"
+              : active
+                ? "border-primary/25 bg-transparent"
+                : "border-muted-foreground/30 bg-transparent",
+          )}
+        />
+      ))}
+    </span>
+  );
+}
+
+/** Ring meter for the task card header (chapter view). */
+function DifficultyRing({ level }: { level: string }) {
+  const { n, max } = parseDifficulty(level);
+  const size = 22;
+  const stroke = 2.4;
+  const r = (size - stroke) / 2;
+  const c = 2 * Math.PI * r;
+  const dash = (n / max) * c;
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-md border border-border px-1.5 py-0.5 text-[10px] font-semibold text-taupe"
+      title={`Difficulty ${level}`}
+      aria-label={`Difficulty ${level}`}
+    >
+      <span className="relative inline-grid h-[22px] w-[22px] place-items-center">
+        <svg
+          width={size}
+          height={size}
+          viewBox={`0 0 ${size} ${size}`}
+          className="absolute inset-0 -rotate-90 text-primary"
+          aria-hidden
+        >
+          <circle
+            cx={size / 2}
+            cy={size / 2}
+            r={r}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={stroke}
+            className="opacity-20"
+          />
+          <circle
+            cx={size / 2}
+            cy={size / 2}
+            r={r}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={stroke}
+            strokeLinecap="round"
+            strokeDasharray={`${dash} ${Math.max(c - dash, 0)}`}
+          />
+        </svg>
+        <span className="relative text-[10px] font-bold tabular-nums leading-none text-foreground">
+          {n}
+        </span>
       </span>
-      <span className="opacity-50">/</span>
-      <span>{den ?? "5"}</span>
+      <span>Difficulty</span>
     </span>
   );
 }
@@ -1084,9 +1149,7 @@ function MathTaskCard({
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
           {task.case_id}
         </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          Difficulty {task.difficulty_level}
-        </span>
+        <DifficultyRing level={task.difficulty_level} />
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
