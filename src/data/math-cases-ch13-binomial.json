@@ -1,0 +1,237 @@
+{
+  "chapter": "Binomial distribution",
+  "bbe_format": "Five independent True/False statements (A–E) per case; variable number of TRUE statements; Bin(n,p) with PMF, expectation, variance, and cumulative probabilities.",
+  "note": "Source PDF Bynominal_ALL.pdf was not available in the agent environment. Task 1 matches the official WU BBE practice problem; remaining tasks are exam-style binomial cases with verified keys and expanded solutions.",
+  "tasks": [
+    {
+      "id": "math-13-1",
+      "case_id": "MATH 13.01",
+      "title": "The Tennis Player",
+      "context": "From long-term observations, it has been calculated that a tennis player wins on average 17 out of 25 games. Assume that each game is an independent Bernoulli trial with the same success probability, and let a “success” mean that the player wins the game. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The probability that the player loses the next game is 0.32.",
+        "The expected number of games the player wins in a competition series of 12 games is 4.08.",
+        "The variance of the number of games the player wins out of 50 games is 10.88.",
+        "The probability that the player wins the next three games is less than 0.3.",
+        "The probability that the player wins at most four out of the next 6 games is more than 0.6."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Identify the success probability first.\n\nThe player wins 17 out of 25 games, so\n\n$$p = \\frac{17}{25} = 0.68.$$\n\nLosing is the complementary event, so\n\n$$q = 1 - p = 1 - 0.68 = 0.32.$$\n\nHence the probability of losing the next game is exactly $0.32$.",
+        "FALSE — For $X \\sim \\mathrm{Bin}(n,p)$ the expectation is\n\n$$E[X] = np.$$\n\nHere $n = 12$ and $p = 0.68$, so\n\n$$E[X] = 12 \\cdot 0.68 = 8.16.$$\n\nThe claimed value $4.08$ is wrong. It looks like someone multiplied by $q$ (or halved $8.16$). The correct expected number of wins is $8.16$, not $4.08$.",
+        "TRUE — For $X \\sim \\mathrm{Bin}(n,p)$ the variance is\n\n$$\\mathrm{Var}(X) = np(1-p) = npq.$$\n\nWith $n = 50$, $p = 0.68$, and $q = 0.32$,\n\n$$\\mathrm{Var}(X) = 50 \\cdot 0.68 \\cdot 0.32 = 50 \\cdot 0.2176 = 10.88.$$\n\nThe statement is therefore correct.",
+        "FALSE — Winning the next three independent games means three successes in a row:\n\n$$P(\\text{win next 3}) = p^3 = 0.68^3 = 0.314432.$$\n\nCompare with $0.3$:\n\n$$0.314432 > 0.3.$$\n\nSo the probability is not less than $0.3$. The statement is false.",
+        "TRUE — Let $X \\sim \\mathrm{Bin}(6, 0.68)$ be the number of wins in the next 6 games. We need\n\n$$P(X \\le 4) = \\sum_{k=0}^{4} \\binom{6}{k} (0.68)^k (0.32)^{6-k}.$$\n\nComputing term by term:\n\n$$\\begin{aligned}\nP(X=0) &= (0.32)^6 \\approx 0.001074,\\\\\nP(X=1) &= \\binom{6}{1}(0.68)(0.32)^5 \\approx 0.013690,\\\\\nP(X=2) &= \\binom{6}{2}(0.68)^2(0.32)^4 \\approx 0.072710,\\\\\nP(X=3) &= \\binom{6}{3}(0.68)^3(0.32)^3 \\approx 0.206210,\\\\\nP(X=4) &= \\binom{6}{4}(0.68)^4(0.32)^2 \\approx 0.328294.\n\\end{aligned}$$\n\nAdding these gives\n\n$$P(X \\le 4) \\approx 0.62198 > 0.6.$$\n\nThe statement is true."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 1
+    },
+    {
+      "id": "math-13-2",
+      "case_id": "MATH 13.02",
+      "title": "Fair Coin Flips",
+      "context": "A fair coin is flipped independently 8 times. Let $X$ be the number of heads obtained, so $X \\sim \\mathrm{Bin}(8, 1/2)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of heads is 4.",
+        "The variance of $X$ is 4.",
+        "The probability of getting exactly 4 heads is greater than 25%.",
+        "The probability of getting at least 6 heads is less than 15%.",
+        "By symmetry, $P(X \\le 2) = P(X \\ge 6)$."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — For a binomial random variable,\n\n$$E[X] = np = 8 \\cdot \\tfrac{1}{2} = 4.$$\n\nSo the expected number of heads is exactly 4.",
+        "FALSE — The variance formula is\n\n$$\\mathrm{Var}(X) = np(1-p) = 8 \\cdot \\tfrac{1}{2} \\cdot \\tfrac{1}{2} = 2.$$\n\nThe claimed value 4 is actually the mean, not the variance. So the statement is false.",
+        "TRUE — Use the binomial PMF:\n\n$$P(X = 4) = \\binom{8}{4} \\left(\\tfrac{1}{2}\\right)^8 = \\frac{70}{256} = 0.2734375.$$\n\nSince $0.2734375 > 0.25$, the probability is greater than 25%.",
+        "TRUE — Compute\n\n$$P(X \\ge 6) = P(X=6) + P(X=7) + P(X=8).$$\n\n$$\\begin{aligned}\nP(X=6) &= \\binom{8}{6}/256 = 28/256,\\\\\nP(X=7) &= \\binom{8}{7}/256 = 8/256,\\\\\nP(X=8) &= 1/256.\n\\end{aligned}$$\n\nHence\n\n$$P(X \\ge 6) = \\frac{37}{256} \\approx 0.1445 < 0.15.$$\n\nThe statement is true.",
+        "TRUE — Because $p = 1/2$, the distribution of $X$ is symmetric about its mean 4:\n\n$$P(X = k) = P(X = 8-k).$$\n\nTherefore\n\n$$P(X \\le 2) = P(X \\ge 6).$$\n\nBoth equal $37/256$."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 2
+    },
+    {
+      "id": "math-13-3",
+      "case_id": "MATH 13.03",
+      "title": "Factory Defectives",
+      "context": "In a factory, each item is defective independently with probability $p = 0.05$. A quality inspector draws a random sample of $n = 20$ items. Let $X$ be the number of defectives in the sample, so $X \\sim \\mathrm{Bin}(20, 0.05)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of defective items in the sample is 1.",
+        "The variance of $X$ is 0.95.",
+        "The probability that the sample contains no defectives is greater than 40%.",
+        "The probability of finding at least 2 defectives is less than 30%.",
+        "The probability of finding exactly one defective is greater than the probability of finding none."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Apply the mean formula:\n\n$$E[X] = np = 20 \\cdot 0.05 = 1.$$\n\nOn average the sample contains one defective item.",
+        "TRUE — Apply the variance formula:\n\n$$\\mathrm{Var}(X) = np(1-p) = 20 \\cdot 0.05 \\cdot 0.95 = 0.95.$$\n\nThe statement matches the exact variance.",
+        "FALSE — The probability of zero defectives is\n\n$$P(X = 0) = (0.95)^{20} \\approx 0.3585.$$\n\nSince $0.3585 < 0.40$, the probability is not greater than 40%. The statement is false.",
+        "TRUE — Use the complement of “fewer than 2 defectives”:\n\n$$P(X \\ge 2) = 1 - P(X=0) - P(X=1).$$\n\n$$P(X=1) = \\binom{20}{1}(0.05)(0.95)^{19} \\approx 0.3774.$$\n\nSo\n\n$$P(X \\ge 2) \\approx 1 - 0.3585 - 0.3774 = 0.2641 < 0.30.$$\n\nThe statement is true.",
+        "TRUE — From the calculations above,\n\n$$P(X=1) \\approx 0.3774 > P(X=0) \\approx 0.3585.$$\n\nFor a binomial with small $p$ and $np = 1$, the mode is at 0 and 1 with nearly similar mass, but here exactly-one is slightly larger than zero."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3
+    },
+    {
+      "id": "math-13-4",
+      "case_id": "MATH 13.04",
+      "title": "Multiple-Choice Guessing",
+      "context": "A student who has not studied answers a 10-question multiple-choice quiz by pure guessing. Each question has 4 options and exactly one correct answer, so the success probability per question is $p = 1/4$. Answers are independent. Let $X$ be the number of correct answers, so $X \\sim \\mathrm{Bin}(10, 1/4)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of correct answers is 2.5.",
+        "The variance of $X$ is 1.875.",
+        "The probability of scoring zero correct answers is greater than 10%.",
+        "The probability of getting at least 5 answers correct is greater than 10%.",
+        "The probability of getting exactly 2 correct answers is greater than 25%."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 10 \\cdot \\tfrac{1}{4} = 2.5.$$\n\nOn average the student gets 2.5 questions right by guessing.",
+        "TRUE —\n\n$$\\mathrm{Var}(X) = np(1-p) = 10 \\cdot \\tfrac{1}{4} \\cdot \\tfrac{3}{4} = \\frac{30}{16} = 1.875.$$\n\nThe variance is exactly 1.875.",
+        "FALSE —\n\n$$P(X=0) = \\left(\\tfrac{3}{4}\\right)^{10} \\approx 0.0563.$$\n\nThis is about 5.63%, which is not greater than 10%. The statement is false.",
+        "FALSE — Compute the upper tail:\n\n$$P(X \\ge 5) = \\sum_{k=5}^{10} \\binom{10}{k}\\left(\\tfrac{1}{4}\\right)^k\\left(\\tfrac{3}{4}\\right)^{10-k} \\approx 0.0781.$$\n\nSince $0.0781 < 0.10$, the probability is not greater than 10%.",
+        "TRUE —\n\n$$P(X=2) = \\binom{10}{2}\\left(\\tfrac{1}{4}\\right)^2\\left(\\tfrac{3}{4}\\right)^8 = 45 \\cdot \\frac{1}{16} \\cdot \\left(\\tfrac{3}{4}\\right)^8 \\approx 0.2816.$$\n\nBecause $0.2816 > 0.25$, the statement is true."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 4
+    },
+    {
+      "id": "math-13-5",
+      "case_id": "MATH 13.05",
+      "title": "Basketball Free Throws",
+      "context": "A basketball player makes each free throw independently with probability $p = 0.8$. In practice she takes $n = 5$ free throws. Let $X$ be the number of successful throws, so $X \\sim \\mathrm{Bin}(5, 0.8)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of successful free throws is 4.",
+        "The variance of $X$ is 0.8.",
+        "The probability that she makes all 5 free throws is greater than 30%.",
+        "The probability that she makes at most 3 free throws is greater than 30%.",
+        "The most likely single outcome among $k = 0,1,\\ldots,5$ is $X = 4$."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 5 \\cdot 0.8 = 4.$$\n\nShe is expected to make 4 of the 5 throws.",
+        "TRUE —\n\n$$\\mathrm{Var}(X) = np(1-p) = 5 \\cdot 0.8 \\cdot 0.2 = 0.8.$$\n\nThe variance equals 0.8.",
+        "TRUE — Making all five is five independent successes:\n\n$$P(X=5) = (0.8)^5 = 0.32768 > 0.30.$$\n\nSo the probability is greater than 30%.",
+        "FALSE — Compute the cumulative probability:\n\n$$P(X \\le 3) = \\sum_{k=0}^{3} \\binom{5}{k}(0.8)^k(0.2)^{5-k} = 0.26272.$$\n\nSince $0.26272 < 0.30$, the probability is not greater than 30%.",
+        "TRUE — Compare neighbouring probabilities near the mean:\n\n$$\\begin{aligned}\nP(X=3) &= \\binom{5}{3}(0.8)^3(0.2)^2 = 0.2048,\\\\\nP(X=4) &= \\binom{5}{4}(0.8)^4(0.2) = 0.4096,\\\\\nP(X=5) &= (0.8)^5 = 0.32768.\n\\end{aligned}$$\n\nThe largest value is $P(X=4) = 0.4096$, so $X = 4$ is the unique mode."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5
+    },
+    {
+      "id": "math-13-6",
+      "case_id": "MATH 13.06",
+      "title": "Sales Call Conversions",
+      "context": "A sales representative makes 12 independent calls in one afternoon. Each call converts into a sale with probability $p = 0.3$. Let $X$ be the number of sales, so $X \\sim \\mathrm{Bin}(12, 0.3)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of sales is 3.6.",
+        "The standard deviation of $X$ is greater than 1.5.",
+        "The probability of making no sales at all is less than 2%.",
+        "The probability of making at least 5 sales is greater than 30%.",
+        "The probability of making exactly 3 sales is greater than 20%."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 12 \\cdot 0.3 = 3.6.$$\n\nThe expected number of sales is 3.6.",
+        "TRUE — First compute the variance:\n\n$$\\mathrm{Var}(X) = np(1-p) = 12 \\cdot 0.3 \\cdot 0.7 = 2.52.$$\n\nThe standard deviation is\n\n$$\\sigma = \\sqrt{2.52} \\approx 1.587 > 1.5.$$\n\nThe statement is true.",
+        "TRUE —\n\n$$P(X=0) = (0.7)^{12} \\approx 0.01384 < 0.02.$$\n\nSo the probability of zero sales is less than 2%.",
+        "FALSE —\n\n$$P(X \\ge 5) = 1 - P(X \\le 4) \\approx 0.2763.$$\n\nBecause $0.2763 < 0.30$, the probability is not greater than 30%.",
+        "TRUE —\n\n$$P(X=3) = \\binom{12}{3}(0.3)^3(0.7)^9 = 220 \\cdot 0.027 \\cdot (0.7)^9 \\approx 0.2397.$$\n\nSince $0.2397 > 0.20$, the statement is true."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 6
+    },
+    {
+      "id": "math-13-7",
+      "case_id": "MATH 13.07",
+      "title": "Rainy Weekdays",
+      "context": "Weather records suggest that in a certain city each day is rainy independently with probability $p = 0.4$. Consider the next 7 days and let $X$ be the number of rainy days, so $X \\sim \\mathrm{Bin}(7, 0.4)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of rainy days in the week is 2.8.",
+        "The variance of $X$ is 1.68.",
+        "The probability of exactly 3 rainy days is greater than 25%.",
+        "The probability of at least 5 rainy days is greater than 15%.",
+        "The probability of no rainy days at all is less than 3%."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 7 \\cdot 0.4 = 2.8.$$\n\nOn average there are 2.8 rainy days.",
+        "TRUE —\n\n$$\\mathrm{Var}(X) = np(1-p) = 7 \\cdot 0.4 \\cdot 0.6 = 1.68.$$\n\nThe variance is exactly 1.68.",
+        "TRUE — Use the PMF:\n\n$$P(X=3) = \\binom{7}{3}(0.4)^3(0.6)^4 = 35 \\cdot 0.064 \\cdot 0.1296 = 0.290304.$$\n\nSince $0.290304 > 0.25$, the statement is true.",
+        "FALSE —\n\n$$P(X \\ge 5) = P(X=5)+P(X=6)+P(X=7).$$\n\n$$\\begin{aligned}\nP(X=5) &= \\binom{7}{5}(0.4)^5(0.6)^2 = 0.0774144,\\\\\nP(X=6) &= \\binom{7}{6}(0.4)^6(0.6) = 0.0172032,\\\\\nP(X=7) &= (0.4)^7 = 0.0016384.\n\\end{aligned}$$\n\nAdding yields\n\n$$P(X \\ge 5) = 0.096256 < 0.15.$$\n\nSo the statement is false.",
+        "TRUE —\n\n$$P(X=0) = (0.6)^7 = 0.0279936 < 0.03.$$\n\nThe probability of a completely dry week is less than 3%."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7
+    },
+    {
+      "id": "math-13-8",
+      "case_id": "MATH 13.08",
+      "title": "Startup Pitch Meetings",
+      "context": "A founder schedules 8 independent investor meetings. Historically, each meeting leads to a term-sheet offer with probability $p = 0.15$. Let $X$ be the number of offers received, so $X \\sim \\mathrm{Bin}(8, 0.15)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected number of offers is 1.2.",
+        "The variance of $X$ is greater than 1.",
+        "The probability of receiving no offers is greater than 25%.",
+        "The probability of receiving at least two offers is greater than 40%.",
+        "The probability of receiving exactly one offer is greater than the probability of receiving none."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 8 \\cdot 0.15 = 1.2.$$\n\nThe founder expects 1.2 offers from the eight meetings.",
+        "TRUE —\n\n$$\\mathrm{Var}(X) = np(1-p) = 8 \\cdot 0.15 \\cdot 0.85 = 1.02 > 1.$$\n\nThe variance is slightly above 1.",
+        "TRUE —\n\n$$P(X=0) = (0.85)^8 \\approx 0.2725 > 0.25.$$\n\nSo the chance of zero offers exceeds 25%.",
+        "FALSE —\n\n$$P(X \\ge 2) = 1 - P(X=0) - P(X=1).$$\n\n$$P(X=1) = \\binom{8}{1}(0.15)(0.85)^7 \\approx 0.3847.$$\n\nHence\n\n$$P(X \\ge 2) \\approx 1 - 0.2725 - 0.3847 = 0.3428 < 0.40.$$\n\nThe probability is not greater than 40%.",
+        "TRUE — From above,\n\n$$P(X=1) \\approx 0.3847 > P(X=0) \\approx 0.2725.$$\n\nExactly one offer is more likely than none."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 8
+    },
+    {
+      "id": "math-13-9",
+      "case_id": "MATH 13.09",
+      "title": "Bernoulli Setup Check",
+      "context": "Decide whether each scenario can be modelled by a binomial random variable $X \\sim \\mathrm{Bin}(n,p)$ counting the number of “successes”. Recall the four binomial conditions: fixed number of trials $n$, each trial has two outcomes, constant success probability $p$, and independent trials. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Tossing a fair die 10 times and counting how many times a 6 appears is a binomial setting with $n = 10$ and $p = 1/6$.",
+        "Drawing 5 cards without replacement from a 52-card deck and counting the number of aces is a binomial setting with $n = 5$ and $p = 4/52$.",
+        "If $X \\sim \\mathrm{Bin}(n,p)$, then $E[X] = np$ and $\\mathrm{Var}(X) = np(1-p)$ always hold.",
+        "If $X \\sim \\mathrm{Bin}(20, 0.5)$, then $P(X = 10)$ equals $\\binom{20}{10}/2^{20}$.",
+        "For any binomial $X$, the equality $P(X \\ge k) = 1 - P(X \\le k)$ is always true."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — There are $n = 10$ fixed independent tosses. Each toss is success (roll a 6) with constant probability $p = 1/6$, otherwise failure. All four binomial conditions hold, so\n\n$$X \\sim \\mathrm{Bin}\\!\\left(10,\\tfrac{1}{6}\\right).$$",
+        "FALSE — Without replacement the draws are dependent: after one ace is drawn, the probability of drawing another ace changes. The success probability is not constant across trials, so this is hypergeometric, not binomial.\n\n(If the cards were drawn with replacement, or the deck were reshuffled each time, then binomial would apply.)",
+        "TRUE — These are the standard moment formulas for every binomial distribution:\n\n$$E[X] = np, \\qquad \\mathrm{Var}(X) = np(1-p).$$\n\nThey follow from writing $X$ as a sum of $n$ i.i.d. Bernoulli($p$) indicators.",
+        "TRUE — With $p = 1/2$,\n\n$$P(X=10) = \\binom{20}{10}\\left(\\tfrac{1}{2}\\right)^{10}\\left(\\tfrac{1}{2}\\right)^{10} = \\frac{\\binom{20}{10}}{2^{20}}.$$\n\nThe identity is exact.",
+        "FALSE — The correct complement rule is\n\n$$P(X \\ge k) = 1 - P(X \\le k-1),$$\n\nnot $1 - P(X \\le k)$. Using $1 - P(X \\le k)$ would remove the point mass at $k$ as well and therefore undercounts $P(X \\ge k)$ whenever $P(X=k) > 0$."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 9
+    },
+    {
+      "id": "math-13-10",
+      "case_id": "MATH 13.10",
+      "title": "Mixed Binomial Calculations",
+      "context": "Let $X \\sim \\mathrm{Bin}(n,p)$ with $n = 9$ and $p = 2/3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The expected value is $E[X] = 6$.",
+        "The variance is $\\mathrm{Var}(X) = 2$.",
+        "Using the PMF, $P(X = 9) = (2/3)^9$, which is less than 3%.",
+        "Because $p > 1/2$, the distribution is skewed to the left (longer left tail).",
+        "The probability $P(X \\ge 1)$ equals $1 - (1/3)^9$, which is greater than 99%."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE —\n\n$$E[X] = np = 9 \\cdot \\tfrac{2}{3} = 6.$$\n\nThe mean is exactly 6.",
+        "TRUE —\n\n$$\\mathrm{Var}(X) = np(1-p) = 9 \\cdot \\tfrac{2}{3} \\cdot \\tfrac{1}{3} = 9 \\cdot \\tfrac{2}{9} = 2.$$\n\nThe variance is exactly 2.",
+        "TRUE — All nine trials must succeed:\n\n$$P(X=9) = \\left(\\tfrac{2}{3}\\right)^9 = \\frac{512}{19683} \\approx 0.0260 < 0.03.$$\n\nSo the probability is less than 3%.",
+        "TRUE — For a binomial distribution:\n\n- if $p < 1/2$, the mass concentrates on the left and the right tail is longer (right-skewed);\n- if $p > 1/2$, the mass concentrates on the right and the left tail is longer (left-skewed);\n- if $p = 1/2$, it is symmetric.\n\nHere $p = 2/3 > 1/2$, so the distribution is left-skewed.",
+        "TRUE — The complement of “at least one success” is “zero successes”:\n\n$$P(X \\ge 1) = 1 - P(X=0) = 1 - \\left(\\tfrac{1}{3}\\right)^9 = 1 - \\frac{1}{19683} \\approx 0.99995 > 0.99.$$\n\nThe probability exceeds 99%."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10
+    }
+  ]
+}
