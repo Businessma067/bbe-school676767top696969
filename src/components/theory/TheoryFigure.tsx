@@ -78,98 +78,118 @@ function ChartFrame({ title, children, height = "h-[260px] sm:h-[300px]" }: { ti
 }
 
 /**
- * Circular flow — one SVG coordinate system so arrows start/end on box edges
- * (no floating middle column).
+ * Circular flow — proportional SVG.
+ * Key: long edge-to-edge arrows; labels sit ON the line with only a tight text halo
+ * (a wide label plate was covering the shaft and made arrows look short).
  */
 function CircularFlow() {
-  const W = 720;
-  const H = 420;
-  // Large actor boxes
-  const gov = { x: 240, y: 12, w: 240, h: 64 };
-  const hh = { x: 12, y: 230, w: 190, h: 130 };
-  const biz = { x: 518, y: 230, w: 190, h: 130 };
-  const left = hh.x + hh.w; // right edge of households
-  const right = biz.x; // left edge of businesses
-  const midX = (left + right) / 2;
-  // y inside the side boxes so arrows visibly leave/enter the blocks
+  const W = 760;
+  const H = 460;
+  const gov = { x: 270, y: 18, w: 220, h: 58 };
+  const hh = { x: 24, y: 250, w: 150, h: 110 };
+  const biz = { x: 586, y: 250, w: 150, h: 110 };
+  const xL = hh.x + hh.w;
+  const xR = biz.x;
+  const mid = (xL + xR) / 2;
   const lanes: { y: number; label: string; toBiz: boolean }[] = [
-    { y: 255, label: "Goods and services", toBiz: false },
-    { y: 288, label: "Payments for goods and services", toBiz: true },
-    { y: 321, label: "Labour and other resources", toBiz: true },
-    { y: 354, label: "Wages, rent, interest and profit", toBiz: false },
+    { y: 272, label: "Goods and services", toBiz: false },
+    { y: 302, label: "Payments for goods & services", toBiz: true },
+    { y: 332, label: "Labour & other resources", toBiz: true },
+    { y: 362, label: "Wages, rent, interest, profit", toBiz: false },
   ];
-  // Vertical attach points on box tops/bottoms
-  const hhTop = { x: hh.x + hh.w * 0.45, y: hh.y };
-  const bizTop = { x: biz.x + biz.w * 0.55, y: biz.y };
-  const govBotL = { x: gov.x + 48, y: gov.y + gov.h };
-  const govBotR = { x: gov.x + gov.w - 48, y: gov.y + gov.h };
+
+  // Separate attach points so tax / transfer arrows don't cross into one blob
+  const hhTax = { x: hh.x + 40, y: hh.y };
+  const hhGoods = { x: hh.x + 110, y: hh.y };
+  const bizTax = { x: biz.x + 110, y: biz.y };
+  const bizGoods = { x: biz.x + 40, y: biz.y };
+  const govL = { x: gov.x + 55, y: gov.y + gov.h };
+  const govR = { x: gov.x + gov.w - 55, y: gov.y + gov.h };
 
   return (
     <div className="mx-auto w-full max-w-3xl" role="img" aria-label="Circular flow of goods, services and money">
-      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" preserveAspectRatio="xMidYMid meet">
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full overflow-visible" preserveAspectRatio="xMidYMid meet">
         <defs>
-          <marker id="cfArr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
-            <path d="M0,0 L10,5 L0,10 Z" fill={ACCENT} />
+          <marker id="cfArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill={ACCENT} />
           </marker>
-          <marker id="cfArrMute" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-            <path d="M0,0 L9,4.5 L0,9 Z" fill={MUTED} />
+          <marker id="cfArrMute" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill={MUTED} />
           </marker>
+          {/* Tight halo behind label text only — does not hide the arrow shaft */}
+          <filter id="cfHalo" x="-8%" y="-35%" width="116%" height="170%">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2.2" result="dilated" />
+            <feFlood floodColor="oklch(0.985 0.005 75)" result="haloColor" />
+            <feComposite in="haloColor" in2="dilated" operator="in" result="halo" />
+            <feMerge>
+              <feMergeNode in="halo" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
 
-        {/* Boxes first — large, then arrows leave their edges */}
-        <rect x={gov.x} y={gov.y} width={gov.w} height={gov.h} fill="oklch(0.96 0.025 55)" stroke={ACCENT} strokeWidth="2.5" />
-        <text x={gov.x + gov.w / 2} y={gov.y + 40} textAnchor="middle" fill={ACCENT} fontSize="22" fontWeight="700">
+        {/* Actor boxes */}
+        <rect x={gov.x} y={gov.y} width={gov.w} height={gov.h} fill="oklch(0.96 0.025 55)" stroke={ACCENT} strokeWidth="2" />
+        <text x={gov.x + gov.w / 2} y={gov.y + 37} textAnchor="middle" fill={ACCENT} fontSize="20" fontWeight="700">
           Government
         </text>
 
-        <rect x={hh.x} y={hh.y} width={hh.w} height={hh.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2.5" />
-        <text x={hh.x + hh.w / 2} y={hh.y + 58} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
+        <rect x={hh.x} y={hh.y} width={hh.w} height={hh.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2" />
+        <text x={hh.x + hh.w / 2} y={hh.y + 48} textAnchor="middle" fill={INK} fontSize="16" fontWeight="700">
           Private
         </text>
-        <text x={hh.x + hh.w / 2} y={hh.y + 82} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
+        <text x={hh.x + hh.w / 2} y={hh.y + 70} textAnchor="middle" fill={INK} fontSize="16" fontWeight="700">
           households
         </text>
 
-        <rect x={biz.x} y={biz.y} width={biz.w} height={biz.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2.5" />
-        <text x={biz.x + biz.w / 2} y={biz.y + 72} textAnchor="middle" fill={INK} fontSize="18" fontWeight="700">
+        <rect x={biz.x} y={biz.y} width={biz.w} height={biz.h} fill="oklch(0.95 0.012 75)" stroke="#B8A99A" strokeWidth="2" />
+        <text x={biz.x + biz.w / 2} y={biz.y + 60} textAnchor="middle" fill={INK} fontSize="16" fontWeight="700">
           Businesses
         </text>
 
-        {/* Government links — start on box borders */}
-        <line x1={hhTop.x} y1={hhTop.y} x2={govBotL.x} y2={govBotL.y} stroke={MUTED} strokeWidth="2.25" markerEnd="url(#cfArrMute)" />
-        <line x1={bizTop.x} y1={bizTop.y} x2={govBotR.x} y2={govBotR.y} stroke={MUTED} strokeWidth="2.25" markerEnd="url(#cfArrMute)" />
-        <line x1={govBotL.x + 28} y1={govBotL.y} x2={hh.x + hh.w * 0.72} y2={hhTop.y} stroke={ACCENT} strokeWidth="2.25" markerEnd="url(#cfArr)" />
-        <line x1={govBotR.x - 28} y1={govBotR.y} x2={biz.x + biz.w * 0.28} y2={bizTop.y} stroke={ACCENT} strokeWidth="2.25" markerEnd="url(#cfArr)" />
-
-        <text x={(hhTop.x + govBotL.x) / 2 - 6} y={148} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
+        {/* Gov ↔ HH: outer = taxes up, inner = public goods down */}
+        <line x1={hhTax.x} y1={hhTax.y} x2={govL.x} y2={govL.y} stroke={MUTED} strokeWidth="2" markerEnd="url(#cfArrMute)" />
+        <line x1={govL.x + 36} y1={govL.y} x2={hhGoods.x} y2={hhGoods.y} stroke={ACCENT} strokeWidth="2" markerEnd="url(#cfArr)" />
+        <text x={140} y={130} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
           taxes ↑
         </text>
-        <text x={(hhTop.x + govBotL.x) / 2 - 6} y={168} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
+        <text x={200} y={188} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
           public goods / transfers ↓
         </text>
-        <text x={(bizTop.x + govBotR.x) / 2 + 6} y={148} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
+
+        {/* Gov ↔ Biz */}
+        <line x1={bizTax.x} y1={bizTax.y} x2={govR.x} y2={govR.y} stroke={MUTED} strokeWidth="2" markerEnd="url(#cfArrMute)" />
+        <line x1={govR.x - 36} y1={govR.y} x2={bizGoods.x} y2={bizGoods.y} stroke={ACCENT} strokeWidth="2" markerEnd="url(#cfArr)" />
+        <text x={620} y={130} fill={MUTED} fontSize="12" fontWeight="700" textAnchor="middle">
           taxes ↑
         </text>
-        <text x={(bizTop.x + govBotR.x) / 2 + 6} y={168} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
+        <text x={560} y={188} fill={ACCENT} fontSize="11" fontWeight="600" textAnchor="middle">
           subsidies / public goods ↓
         </text>
 
-        {/* Horizontal flows: from right edge of HH to left edge of Biz (and reverse) */}
+        {/* HH ↔ Biz: full-length shafts from box edge to box edge */}
         {lanes.map((lane) => {
-          const x1 = lane.toBiz ? left : right;
-          const x2 = lane.toBiz ? right : left;
+          const x1 = lane.toBiz ? xL : xR;
+          const x2 = lane.toBiz ? xR : xL;
           return (
             <g key={lane.label}>
-              <line x1={x1} y1={lane.y} x2={x2} y2={lane.y} stroke={ACCENT} strokeWidth="2.5" markerEnd="url(#cfArr)" />
-              <rect x={midX - 122} y={lane.y - 11} width="244" height="20" rx="2" fill="oklch(0.985 0.005 75)" />
-              <text x={midX} y={lane.y + 4} textAnchor="middle" fill={INK} fontSize="12.5" fontWeight="600">
+              <line x1={x1} y1={lane.y} x2={x2} y2={lane.y} stroke={ACCENT} strokeWidth="2.25" markerEnd="url(#cfArr)" />
+              <text
+                x={mid}
+                y={lane.y - 6}
+                textAnchor="middle"
+                fill={INK}
+                fontSize="12"
+                fontWeight="600"
+                filter="url(#cfHalo)"
+              >
                 {lane.label}
               </text>
             </g>
           );
         })}
 
-        <text x={W / 2} y={406} textAnchor="middle" fill={MUTED} fontSize="12" fontStyle="italic">
+        <text x={W / 2} y={440} textAnchor="middle" fill={MUTED} fontSize="12" fontStyle="italic">
           Real flows and monetary flows run in opposite directions.
         </text>
       </svg>
