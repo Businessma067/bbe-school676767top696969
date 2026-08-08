@@ -1,7 +1,6 @@
 /**
- * Economics Full Course theory (chapters 2–6).
- * Markdown is generated from economics-book/chapters via `npm run textbook:theory`.
- * TheoryReader renders this text directly (no PDF pages).
+ * Economics Full Course theory (chapters 2–6) for TheoryReader.
+ * Markdown + embedded figure PNGs from `npm run textbook:theory`.
  */
 
 import ch2 from "./economics-theory/ch2.md?raw";

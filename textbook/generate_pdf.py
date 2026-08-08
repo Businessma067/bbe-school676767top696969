@@ -401,7 +401,8 @@ class Callout(Flowable):
         c.setFillColor(self.bg)
         c.setStrokeColor(RULE)
         c.setLineWidth(0.4)
-        c.roundRect(0, 0, self.width, self.height, 2, stroke=1, fill=1)
+        # Square corners (finance/account style — not rounded pills)
+        c.rect(0, 0, self.width, self.height, stroke=1, fill=1)
         c.setFillColor(self.bar)
         c.rect(0, 0, 4, self.height, stroke=0, fill=1)
         x = 4 + self.pad
@@ -453,7 +454,9 @@ def _is_numeric_cell(val) -> bool:
 
 
 def make_table(headers, rows, width, caption: str = "", center_body: bool = False):
-    """Solid orange header, white text; dashed row/column rules; even TOP-aligned cells."""
+    """Square finance table: orange header, dashed grid, numbers never wrap."""
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+
     global TABLE_N
     TABLE_N += 1
     ncols = max(len(headers), 1)
@@ -463,31 +466,61 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
         r = list(row) + [""] * max(0, ncols - len(row))
         norm_rows.append(r[:ncols])
 
-    # Column widths from content length (first column gets a label boost)
-    weights = []
-    for i in range(ncols):
-        samples = [str(headers[i])] + [str(r[i]) for r in norm_rows]
-        weights.append(max(8, max(len(s) for s in samples)))
-    if ncols >= 3:
-        weights[0] = max(weights[0], int(sum(weights) * 0.24))
-    total_w = sum(weights) or 1
-    col_ws = [width * w / total_w for w in weights]
-
-    # Per-column alignment: money/numbers RIGHT, labels LEFT (Fuhrmann account style)
+    # Per-column alignment: money/numbers RIGHT, labels LEFT
     aligns = []
     for i in range(ncols):
         vals = [r[i] for r in norm_rows if str(r[i]).strip()]
         hdr = str(headers[i]).strip().lower()
-        if hdr in ("eur", "€", "$", "%") or (vals and all(_is_numeric_cell(v) for v in vals)):
+        if hdr in ("eur", "€", "$", "%", "year 1", "year 2") or (
+            vals and all(_is_numeric_cell(v) for v in vals)
+        ):
             aligns.append("RIGHT")
         elif center_body:
             aligns.append("CENTER")
         else:
             aligns.append("LEFT")
 
+    # Classic 4-col T-account: label | EUR | label | EUR
+    hdrs_l = [str(h).strip().lower() for h in headers]
+    if ncols == 4 and hdrs_l[1] in ("eur", "€", "€") and hdrs_l[3] in ("eur", "€", "€"):
+        eur_w = max(52, stringWidth("000,000", "Helvetica-Bold", 11.5) + 18)
+        label_w = (width - 2 * eur_w) / 2
+        col_ws = [label_w, eur_w, label_w, eur_w]
+    else:
+        # Numeric cols get hard min width from content so "31,000" stays one line
+        col_ws = [0.0] * ncols
+        flex = []
+        for i in range(ncols):
+            samples = [str(headers[i])] + [str(r[i]) for r in norm_rows]
+            font = "Helvetica-Bold" if i == 0 else "Helvetica"
+            need = max(stringWidth(s, font, 11.5) for s in samples) + 16
+            if aligns[i] in ("RIGHT", "CENTER"):
+                col_ws[i] = max(need, 44)
+            else:
+                flex.append(i)
+                col_ws[i] = need
+        used = sum(col_ws)
+        if used > width and flex:
+            # shrink label cols first
+            over = used - width
+            flex_total = sum(col_ws[i] for i in flex) or 1
+            for i in flex:
+                col_ws[i] = max(48, col_ws[i] - over * (col_ws[i] / flex_total))
+        elif used < width:
+            rem = width - used
+            if flex:
+                for i in flex:
+                    col_ws[i] += rem / len(flex)
+            else:
+                col_ws[-1] += rem
+
     label_col = ncols >= 3 and aligns[0] == "LEFT"
 
     def cell_para(text, header=False, align="LEFT", bold_label=False):
+        raw = str(text)
+        # Short numeric cells: plain string (ReportLab will not wrap mid-number)
+        if not header and align == "RIGHT" and _is_numeric_cell(raw) and len(raw) <= 14:
+            return raw.translate(_UNICODE_FIX)
         if header:
             style = S["cell_h"] if align != "LEFT" else S["cell_h_l"]
         elif bold_label:
@@ -495,13 +528,10 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
         elif align == "CENTER":
             style = S["cell_c"]
         elif align == "RIGHT":
-            # right-aligned via table ALIGN; keep left para style for wrapping control
-            style = ParagraphStyle(
-                "cellr", parent=S["cell"], alignment=TA_RIGHT,
-            )
+            style = ParagraphStyle("cellr", parent=S["cell"], alignment=TA_RIGHT)
         else:
             style = S["cell"]
-        return Paragraph(rich(str(text)) if "**" in str(text) else esc(str(text)), style)
+        return Paragraph(rich(raw) if "**" in raw else esc(raw), style)
 
     data = [[cell_para(headers[i], True, aligns[i]) for i in range(ncols)]]
     for r in norm_rows:
@@ -515,21 +545,21 @@ def make_table(headers, rows, width, caption: str = "", center_body: bool = Fals
         ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
         ("TEXTCOLOR", (0, 0), (-1, 0), white),
         ("TEXTCOLOR", (0, 1), (-1, -1), INK),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 7),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 7),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 8),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 8),
         ("TOPPADDING", (0, 0), (-1, -1), 7),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
-        # dashed internals like Fuhrmann — no heavy outer box; padding keeps text off dashes
+        # Square grid — dashed internals, solid bottom rule (no rounded chrome)
+        ("BOX", (0, 0), (-1, -1), 0.9, ACCENT),
         ("LINEBELOW", (0, 0), (-1, -2), 0.55, ACCENT_LIGHT, 1, (1.5, 2.5)),
         ("LINEAFTER", (0, 0), (-2, -1), 0.55, ACCENT_LIGHT, 1, (1.5, 2.5)),
-        ("LINEBELOW", (0, -1), (-1, -1), 0.9, ACCENT),
+        ("LINEBELOW", (0, -1), (-1, -1), 1.0, ACCENT),
     ]
     for i, al in enumerate(aligns):
         cmds.append(("ALIGN", (i, 0), (i, -1), al))
     t.setStyle(TableStyle(cmds))
 
-    # Caption without "Table N." — descriptive italic line only
     cap = strip_label(caption, "table")
     parts = [Spacer(1, 2), t]
     if cap:
@@ -874,14 +904,14 @@ def _fig_circular_flow(c, x, y, w, h):
     lx, rx = x + 2, x + w - bw - 2
     base = y + max(30, int(h * 0.28))
 
-    _box(c, gx, gov_bottom, bw, gov_h, ACCENT_SOFT, stroke=FIG_EDGE, dashed=False, radius=2)
+    _box(c, gx, gov_bottom, bw, gov_h, ACCENT_SOFT, stroke=FIG_EDGE, dashed=False, radius=0)
     _txt(c, gx + bw / 2, gov_bottom + 10, "Government", 11, True, ACCENT)
 
-    _box(c, lx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=2)
+    _box(c, lx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=0)
     _txt(c, lx + bw / 2, base + bh / 2 + 5, "Private", 11, True, INK)
     _txt(c, lx + bw / 2, base + bh / 2 - 7, "households", 11, True, INK)
 
-    _box(c, rx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=2)
+    _box(c, rx, base, bw, bh, white, stroke=FIG_EDGE, dashed=False, radius=0)
     _txt(c, rx + bw / 2, base + bh / 2 - 3, "Businesses", 11, True, INK)
 
     # Horizontal exchange corridor between the two boxes
@@ -1234,7 +1264,7 @@ def _fig_economic_systems(c, x, y, w, h):
 def _fig_stakeholder_map(c, x, y, w, h):
     cx, cy = x + w / 2, y + h / 2 + 4
     fw, fh = 78, 36
-    _box(c, cx - fw / 2, cy - fh / 2, fw, fh, ACCENT_SOFT, dashed=False, lw=1.1, radius=3)
+    _box(c, cx - fw / 2, cy - fh / 2, fw, fh, ACCENT_SOFT, dashed=False, lw=1.1, radius=0)
     _txt(c, cx, cy + 4, "The firm", 12, True, ACCENT)
     _txt(c, cx, cy - 10, "(business)", 10.5, False, MUTED)
 
@@ -1254,7 +1284,7 @@ def _fig_stakeholder_map(c, x, y, w, h):
         py = cy + r * math.sin(ang)
         _arrow(c, cx + 28 * math.cos(ang), cy + 16 * math.sin(ang),
                px - 22 * math.cos(ang), py - 10 * math.sin(ang), ACCENT_LIGHT, 0.9, 4.5)
-        _box(c, px - bw / 2, py - bh / 2, bw, bh, white, radius=2)
+        _box(c, px - bw / 2, py - bh / 2, bw, bh, white, radius=0)
         lines = label.split("\n")
         if len(lines) == 1:
             _txt(c, px, py - 3, lines[0], 10.5, True, INK)
@@ -1677,7 +1707,7 @@ def build():
             for i, step in enumerate(self.steps):
                 x = i * (bw + gap)
                 c.setFillColor(ACCENT_SOFT)
-                c.roundRect(x, 4, bw, 20, 3, stroke=0, fill=1)
+                c.rect(x, 4, bw, 20, stroke=0, fill=1)
                 c.setFillColor(ACCENT)
                 c.setFont("Helvetica-Bold", 9)
                 c.drawCentredString(x + bw / 2, 11, step)

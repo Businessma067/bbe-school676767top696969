@@ -69,6 +69,8 @@ Three founders, one vehicle fleet. Jonas, Ela, and Rafi need about €95,000 of 
 
 **Unincorporated vs incorporated** — **Unincorporated** businesses (sole trader, partnership) are not legal entities of their own. **Incorporated** businesses (corporations / limited companies) are legal persons. Among unincorporated firms, owners and managers are typically the same people; among incorporated firms, shareholders and directors need not be the same.
 
+![Forms of business ownership: unincorporated (sole trader; partnership) versus incorporated (corporations / limited liability companies), with ownership and management roles.](/bbe-theory/figs/ownership-overview.png)
+
 *Forms of business ownership: unincorporated (sole trader; partnership) versus incorporated (corporations / limited liability companies), with ownership and management roles.*
 
 Reading the ownership map starts with **legal personality**. If none: one owner → **sole trader**; two or more → **partnership** (general and possibly limited partners). If **separate legal person**: shareholders provide capital; directors run the firm; liability of owners is typically limited to invested capital. Austrian AG/GmbH capital thresholds sit on the incorporated branch. When classifying in an exam, sort by legal personality first, then by number of owners, then by liability, and use the table mentally rather than inventing hybrid rules such as a “sole trader with limited liability.” A related trap is assuming that “more owners” automatically means limited liability: an OG with three partners still exposes general partners to unlimited liability. If one founder’s family home is their only major private asset, the liability row of the comparison is usually the decisive one.
@@ -94,6 +96,8 @@ Money has a passport. A boutique hotel renovation needs cash for a roof, seasona
 **Equity finance** — Funds that belong to the **owners** of the business — for example share capital and retained earnings. Equity may be **internal** (retained earnings) or **external** (investor funds / newly issued share capital).
 
 **Debt finance** — Borrowed funds that create **liabilities** owed to creditors: bank overdrafts, trade credit, bank loans, bonds, and similar instruments. In the standard course overview, debt finance is **external**.
+
+![Sources of finance: equity (internal and external) versus debt (external), with common short-term and long-term instruments.](/bbe-theory/figs/finance-sources.png)
 
 *Sources of finance: equity (internal and external) versus debt (external), with common short-term and long-term instruments.*
 

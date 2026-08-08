@@ -130,6 +130,8 @@ Four dials, one sound. North Harbor Time’s sealed dock clock is almost ready. 
 
 **Marketing mix** — A harmonised blend of marketing tools that best meets the needs and wants of customers in the targeted market. Classically organised as the **four Ps**: product, price, place and promotion.
 
+![The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.](/bbe-theory/figs/marketing-mix.png)
+
 *The four elements of the marketing mix: product, price, place and promotion — decisions that must stay consistent with one another and with market research.*
 
 The basic idea is simple to state and hard to execute: provide a suitable **product**, at a **price** customers will accept, available in a convenient **place**, supported by a clear **promotional** message. Market research should inform all four dials. Memorising the four Ps as a shopping list without harmonisation misses the point of the mix.
@@ -139,6 +141,8 @@ The basic idea is simple to state and hard to execute: provide a suitable **prod
 Most firms offer more than one item. Similar items form a **product line**; several lines form the **product mix**. Brands distinguish offerings and support USP, recognition and loyalty; familiar brands also reassure travellers who meet the same marks abroad. Mix strategy may specialise on one line or diversify across more lines. Relaunches refresh; line extensions deepen; mix extensions widen; weak items may be eliminated.
 
 **Product life cycle** — A theoretical model of stages in a product’s market life that differ in sales and profit: **introduction**, **growth**, **maturity** and **decline** (after development costs before launch).
+
+![Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.](/bbe-theory/figs/product-life-cycle.png)
 
 *Product life cycle: introduction, growth, maturity and decline — sales and profit follow different paths across stages.*
 
@@ -153,6 +157,8 @@ Before launch there are development costs and no sales. **Introduction** often s
 | Decline | Efficiency or exit | Loyal remainers | Declining | Low or none |
 
 **Boston Consulting Group (BCG) matrix** — A portfolio map of products by market growth (high/low) and relative market share (high/low), classifying them as **stars**, **cash cows**, **question marks** or **dogs** (poor dogs).
+
+![Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.](/bbe-theory/figs/bcg-matrix.png)
 
 *Boston Consulting Group matrix: stars and question marks in high-growth markets; cash cows and dogs in low-growth markets — split by high versus low relative market share.*
 

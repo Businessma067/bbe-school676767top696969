@@ -181,20 +181,32 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                 ),
                 li: ({ children }) => <li className="pl-0.5">{children}</li>,
                 blockquote: ({ children }) => (
-                  <blockquote className="mb-5 rounded-md border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
+                  <blockquote className="mb-5 border-l-4 border-primary/70 bg-primary/5 px-4 py-3 text-[15px] leading-7 text-foreground">
                     {children}
                   </blockquote>
                 ),
+                img: ({ src, alt }) => (
+                  <img
+                    src={src}
+                    alt={alt || ""}
+                    loading="lazy"
+                    className="my-5 block h-auto w-full border border-border bg-white"
+                  />
+                ),
                 table: ({ children }) => (
-                  <div className="my-5 w-full overflow-x-auto rounded-lg border border-border bg-white shadow-sm">
+                  <div className="my-5 w-full overflow-x-auto border border-border bg-white">
                     <table className="w-full min-w-[20rem] border-collapse text-[13px] sm:text-sm">
                       {children}
                     </table>
                   </div>
                 ),
-                thead: ({ children }) => <thead className="bg-primary text-primary-foreground">{children}</thead>,
+                thead: ({ children }) => (
+                  <thead className="bg-primary text-primary-foreground">{children}</thead>
+                ),
                 tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
-                tr: ({ children }) => <tr className="border-b border-border/80 last:border-0">{children}</tr>,
+                tr: ({ children }) => (
+                  <tr className="border-b border-border/80 last:border-0">{children}</tr>
+                ),
                 th: ({ children }) => (
                   <th className="whitespace-nowrap px-3 py-2.5 text-left align-bottom font-semibold">
                     {children}
@@ -202,12 +214,13 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                 ),
                 td: ({ children }) => {
                   const text = String(children ?? "");
-                  const numeric = /^[\d.,€$%\s×x~≈+-]+$/.test(text.trim()) && text.trim().length > 0;
+                  const numeric =
+                    /^[\d.,€$%\s×x~≈+\-−–]+$/.test(text.trim()) && text.trim().length > 0;
                   const total = /total/i.test(text);
                   return (
                     <td
                       className={cn(
-                        "px-3 py-2.5 align-top leading-snug text-foreground",
+                        "border-r border-border/50 px-3 py-2.5 align-top leading-snug text-foreground last:border-r-0",
                         numeric && "whitespace-nowrap text-right tabular-nums",
                         total && "font-semibold",
                       )}

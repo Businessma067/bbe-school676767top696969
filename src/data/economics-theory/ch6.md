@@ -28,6 +28,8 @@ The identity must hold because every euro of asset was funded either by owners (
 > Assets = liabilities + owner's equity  
 > *Assets = resources owned and used by the business; liabilities = amounts owed to outsiders; owner's equity = owners' financing claim (assets − liabilities).*
 
+![Balance sheet identity: every asset is financed by liabilities or by equity — the two financing sides add up to total assets.](/bbe-theory/figs/balance-sheet.png)
+
 *Balance sheet identity: every asset is financed by liabilities or by equity — the two financing sides add up to total assets.*
 
 Building Northline's opening balance sheet means summing **assets** first: tools and benches 18,000 + van 14,000 + inventory (bikes) 9,200 + cash 4,800 = €46,000. **Liabilities** are the bank loan of €22,000, so **equity** = assets − liabilities = 46,000 − 22,000 = €24,000, and the check 46,000 = 22,000 + 24,000 confirms that opening totals balance at €46,000 on each side.
@@ -56,6 +58,8 @@ Equity usually does not have to be repaid like a loan, so a higher **equity shar
 ## 6.2 Income statement, cash flow and depreciation
 
 One statement is never enough on its own. Northline's end-of-year balance sheet may show stronger equity and more cash than on day one, yet that still does not say how much was sold, what it cost to serve customers, or which cash movements came from repairs versus a new loan, so performance over a **period** needs the full **financial statement** set.
+
+![Three components of the financial statement: balance sheet (stock at a date), income statement (revenues, costs and expenses over a period), cash flow statement (cash in and cash out over a period).](/bbe-theory/figs/financial-statements.png)
 
 *Three components of the financial statement: balance sheet (stock at a date), income statement (revenues, costs and expenses over a period), cash flow statement (cash in and cash out over a period).*
 
