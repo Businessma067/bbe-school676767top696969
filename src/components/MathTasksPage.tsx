@@ -934,66 +934,127 @@ function MarkdownTable({ data }: { data: string[][] }) {
 }
 
 function RichMathLine({ text }: { text: string }) {
-  // Split on **bold** / *italic*, keeping $...$ / $$...$$ intact.
+  /**
+   * Bold/italic only — never regex-pair `$…$` here.
+   * FlashcardMath owns currency vs KaTeX. We mask $ regions first so `**`
+   * splitting cannot cut through math/currency.
+   */
+  const bag: string[] = [];
+  const stash = (whole: string) => {
+    const key = `¤R${bag.length}¤`;
+    bag.push(whole);
+    return key;
+  };
+
+  // Walk like FlashcardMath: $$ , currency-or-math $ , else copy
+  let masked = "";
+  const src = text;
+  let i = 0;
+  while (i < src.length) {
+    if (src.startsWith("$$", i)) {
+      const end = src.indexOf("$$", i + 2);
+      if (end !== -1) {
+        masked += stash(src.slice(i, end + 2));
+        i = end + 2;
+        continue;
+      }
+    }
+    if (src[i] === "$") {
+      const currency = src
+        .slice(i)
+        .match(
+          /^\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/,
+        );
+      if (currency) {
+        const after = src.indexOf("$", i + currency[0].length);
+        const between = after === -1 ? "" : src.slice(i + 1, after);
+        const asMath =
+          after !== -1 &&
+          /[=<>≠≤≥+×·\-/^\\()_]/.test(between) &&
+          !between.includes("|") &&
+          !/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(between) &&
+          !(
+            /[A-Za-z]{4,}/.test(between) &&
+            !/[=<>≠≤≥]/.test(between) &&
+            !/\\[a-zA-Z]+/.test(between)
+          );
+        if (!asMath) {
+          masked += stash(currency[0]);
+          i += currency[0].length;
+          continue;
+        }
+      }
+      const end = src.indexOf("$", i + 1);
+      if (end !== -1) {
+        masked += stash(src.slice(i, end + 1));
+        i = end + 1;
+        continue;
+      }
+    }
+    masked += src[i];
+    i += 1;
+  }
+
   const parts: { kind: "text" | "bold" | "italic"; value: string }[] = [];
-  const simple = /(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$|\*\*[^*]+?\*\*|\*[^*\n]+?\*)/g;
+  const simple = /(\*\*[^*]+?\*\*|\*[^*\n]+?\*)/g;
   let last = 0;
   let m: RegExpExecArray | null;
-  while ((m = simple.exec(text))) {
-    if (m.index > last) parts.push({ kind: "text", value: text.slice(last, m.index) });
+  while ((m = simple.exec(masked))) {
+    if (m.index > last) parts.push({ kind: "text", value: masked.slice(last, m.index) });
     const raw = m[0];
-    if (raw.startsWith("$$") || raw.startsWith("$")) {
-      parts.push({ kind: "text", value: raw });
-    } else if (raw.startsWith("**")) {
+    if (raw.startsWith("**")) {
       parts.push({ kind: "bold", value: raw.slice(2, -2) });
     } else {
       parts.push({ kind: "italic", value: raw.slice(1, -1) });
     }
     last = m.index + raw.length;
   }
-  if (last < text.length) parts.push({ kind: "text", value: text.slice(last) });
-  if (parts.length === 0) parts.push({ kind: "text", value: text });
+  if (last < masked.length) parts.push({ kind: "text", value: masked.slice(last) });
+  if (parts.length === 0) parts.push({ kind: "text", value: masked });
+
+  const restore = (s: string) => s.replace(/¤R(\d+)¤/g, (_, idx) => bag[Number(idx)] ?? "");
 
   return (
     <span>
-      {parts.map((p, i) => {
+      {parts.map((p, idx) => {
+        const value = restore(p.value);
         if (p.kind === "bold") {
-          const kind = classifyBoldLabel(p.value);
+          const kind = classifyBoldLabel(value);
           if (kind === "section") {
             return (
-              <strong key={i} className="font-bold text-[#111]">
-                {p.value.replace(/[.!:]+$/, "")}.{" "}
+              <strong key={idx} className="font-bold text-[#111]">
+                {value.replace(/[.!:]+$/, "")}.{" "}
               </strong>
             );
           }
           if (kind === "step") {
             return (
-              <strong key={i} className="font-bold text-[#111]">
-                <FlashcardMath text={p.value} />
+              <strong key={idx} className="font-bold text-[#111]">
+                <FlashcardMath text={value} />
               </strong>
             );
           }
           if (kind === "note") {
             return (
-              <strong key={i} className="font-bold text-[#111]">
+              <strong key={idx} className="font-bold text-[#111]">
                 Note:{" "}
               </strong>
             );
           }
           return (
-            <strong key={i} className="font-bold text-[#111]">
-              <FlashcardMath text={p.value} />
+            <strong key={idx} className="font-bold text-[#111]">
+              <FlashcardMath text={value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
-            <em key={i} className="italic text-[#444]">
-              <FlashcardMath text={p.value} />
+            <em key={idx} className="italic text-[#444]">
+              <FlashcardMath text={value} />
             </em>
           );
         }
-        return <FlashcardMath key={i} text={p.value} />;
+        return <FlashcardMath key={idx} text={value} />;
       })}
     </span>
   );

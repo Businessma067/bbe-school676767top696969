@@ -122,23 +122,57 @@ type Part =
   | { type: "display"; value: string };
 
 const CURRENCY_RE =
-  /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=(\\{^_$])/y;
+  /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
 
+/**
+ * Decide whether `$…$` contents are real KaTeX vs accidental pairing of two
+ * currency signs across prose: `$2,943.20. Shipment 2… cost $4,555.00`.
+ */
 function looksLikeMathInner(inner: string): boolean {
   const t = inner.trim();
   if (!t) return false;
-  if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false; // prose between dollars
-  if (/[=+×·\-/^\\()_]/.test(t)) return true;
-  if (/[A-Za-z]/.test(t) && /\d/.test(t)) return true;
-  if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true; // $360$
+
+  // Two consecutive English words → narrative prose
+  if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false;
+
+  // Answer lines: Notebook = $3.50 | Pen = $1.80
+  if (t.includes("|")) return false;
+
+  // Stem-style words with no equation mark → currency mid-sentence
+  if (
+    !/[=<>≠≤≥]/.test(t) &&
+    /\b(?:Shipment|Invoice|Account|Week|Batch|Season|Client|Fund|Route|Day|Point|Job|Branch|cost|total|mixed|price|rate|fee|balance|units?|kg|litres?|miles?)\b/i.test(
+      t,
+    )
+  ) {
+    return false;
+  }
+
+  // Any 4+ letter English token without eq/compare (and not a LaTeX command) is prose
+  if (/[A-Za-z]{4,}/.test(t) && !/[=<>≠≤≥]/.test(t) && !/\\[a-zA-Z]+/.test(t)) {
+    return false;
+  }
+
+  // Equations / comparisons / algebra
+  if (/[=<>≠≤≥+×·\-/^\\()_]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
+  // Bare answers like $360$
+  if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true;
+  // Short algebraic chunks (3x+2y, 160y)
+  if (
+    t.length <= 48 &&
+    /[a-zA-Z]/.test(t) &&
+    /\d/.test(t) &&
+    /^[+\-\d.a-zA-Z\s×·*^/()]+$/.test(t)
+  ) {
+    return true;
+  }
   return false;
 }
 
 /**
  * Split prose / currency / KaTeX.
- * Currency is claimed first at `$digits…` so `$6000 … $0.04(6000)=240$` does not
- * falsely pair the currency `$` with the math opener. Already-valid math spans
- * (inner looks like math) are taken as KaTeX.
+ * Currency amounts like `$2,943.20` stay text; real `$x+y=1$` stays math.
+ * Never let two currency signs swallow the prose between them as KaTeX.
  */
 function splitMath(input: string): Part[] {
   const text = input
@@ -170,14 +204,12 @@ function splitMath(input: string): Part[] {
     }
 
     if (text[i] === "$") {
-      // Prefer currency at $digits when it does not look like delimited math later.
+      // Prefer currency at $digits… unless this `$` opens a true math span.
       CURRENCY_RE.lastIndex = i;
       const cur = CURRENCY_RE.exec(text);
       if (cur && cur.index === i) {
         const afterMath = text.indexOf("$", i + cur[0].length);
         const between = afterMath === -1 ? "" : text.slice(i + 1, afterMath);
-        // If `$…$` from here would be math, don't steal currency from a math span
-        // like `$428.00 - 160y = 185$`.
         if (!(afterMath !== -1 && looksLikeMathInner(between))) {
           buf += cur[0];
           i += cur[0].length;
@@ -203,4 +235,9 @@ function splitMath(input: string): Part[] {
   flush();
   if (parts.length === 0) parts.push({ type: "text", value: text });
   return parts;
+}
+
+/** Exported for stem audits / unit checks. */
+export function __splitMathForAudit(input: string): Part[] {
+  return splitMath(input);
 }
