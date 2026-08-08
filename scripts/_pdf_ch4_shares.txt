@@ -1,0 +1,178 @@
+as people: legal persons can â€“ just like natural per-
+sons â€“ own land and property, hire people, close contracts, sue and be sued. The people
+who found the corporation and own a share of the business need not be involved in the
+management of the business, and the managers need not own a share of the business.
+Corporations are more difficult to set up, but the shareholdersâ€™ liability is usually limited to
+the amount of money they invested when buying the shares.
+4.3.1 Shareholders are not (necessarily) managers of the business
+So if shareholders only provide the money for share capital but are neither obliged nor en-
+titled to manage the company, who does? The corporation is managed by the board of
+directors, persons who are elected by the shareholders to make all major business deci-
+sions and to represent the shareholders.
+The highest-ranking manager of this board is called the Chief Executive Officer (CEO). Other
+board members are the Chief Financial Officer (CFO), Chief Operating Officer (COO), Chief
+Information Officer (CIO) or Chief Marketing Officer (CMO). The board of directors of AT&S
+consists of three persons with different tasks and responsibilities (see below).
+
+-- 23 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	26
+Forms of business ownership and sources of finance
+a) 	Andreas Gerstenmayer is Chairman of the Management Board (CEO)
+and responsible for
+âˆŽ 	Sales/marketing
+âˆŽ 	Investor Relations/Public Relations/
+Internal Communication
+âˆŽ 	Purchasing
+âˆŽ 	Business Development Strategy
+âˆŽ 	Compliance
+b) 	Monika Stoisser-GÃ¶hring is Deputy Chairwoman of the Management Board
+and as SFO responsible for
+âˆŽ 	Finance and Accounting
+âˆŽ 	Controlling
+âˆŽ 	Human Resources incl. CSR
+âˆŽ 	Legal & Internal Audit
+âˆŽ 	IT & Tools
+c) 	Heinz Moitzi is COO and responsible for:
+âˆŽ 	Research & Development (R&D)
+âˆŽ 	Maintenance
+âˆŽ 	Production
+âˆŽ 	Quality Assurance
+âˆŽ 	Supply and Disposal
+âˆŽ 	Quality Management
+âˆŽ 	Business Process Excellence
+âˆŽ 	Environment & Sustainability
+âˆŽ 	Safety
+Source: AT&S annual report 2017/18. The board of directors of AT&S, p. 11.
+4.3.2 Available financial funds for corporations
+Corporations usually have more options to raise financial funds than sole proprietors and
+partnerships. Their financial funds mainly comprise share capital as well as loans and
+credit.
+Share capital
+The capital of a corporation is divided into shares, which is why it is called share capital. If
+share capital equals 1,000,000 euros and is divided by 100,000 shares, each share (also
+called stock) represents 10 euros or 0.001 per cent of the share capital. Persons who buy
+shares become shareholders. Shares can be bought either at the time they are initially is-
+sued by the corporation or later on from some other shareholder who sells his shares. If all
+100,000 shares are actually sold, the corporation gains 1,000,000 euros as share capital.
+This example shows that huge amounts of money can be raised from the sale of shares.
+The share capital of AT&S for example equals 141,846,000 euros. Share capital is usually
+not redeemed by the company. It is long-term capital or even permanent capital.
+A corporationâ€™s stock can but does not have to be listed on a stock market or stock ex-
+change. A stock exchange is a financial market, regulated by the authorities, where shares
+and other securities (e.g. bonds) can be easily bought and sold by lots of people and busi-
+nesses. The corporations that want their shares to be listed have to comply with certain
+rules and fulfil listing requirements. The shares are introduced on the stock exchange at a
+certain price (this introduction is also called initial public offering (IPO)) and then the prices
+are determined by demand and supply. According to the laws of supply and demand, usu-
+ally the prices go up if demand for shares is high and vice versa. There are a lot of reasons
+why demand for shares of a corporation can change: rising demand can be due to peopleâ€™s
+expectations that the business is doing well, that it will make profits in the (near) future,
+
+-- 24 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	27
+that it will increase market share and/or successfully introduce a new product. Demand for
+shares is also influenced by economic indicators like economic growth, interest rates and
+inflation. Usually there is higher demand for shares when the economy is thriving (because
+many people have money to invest), with comparatively higher rates of inflation (because
+share prices would also increase) and comparatively low interest rates (because high inter-
+est rates would make other investments more attractive). Please note that an increase in
+share prices after they have been issued does not have any additional financing effect for
+the issuing corporation. The beneficiaries of this increase are the shareholders only.
+Among the biggest and most well-known stock markets of the world are the New York
+Stock Exchange (NYSE), Nasdaq Inc. in New York, London Stock Exchange (LSE), Tokyo
+Stock Exchange, Hong Kong Exchanges and Clearing, and Shanghai Stock Exchange. Apart
+from the LSE, the most important stock exchanges in Europe are the Deutsche BÃ¶rse in
+Frankfurt, the NYSE Euronext (Europe), the SIX Swiss Exchange (Geneva, Basel and Zurich),
+Borsa Italiana in Milan, and the Spanish Exchange.
+There are many reasons why people invest in shares. The most important reasons are:
+âˆŽ 	The intent to provide money for a business they believe in and want to support finan-
+cially.
+âˆŽ 	Annual income: The wish to get dividends in return; dividends are (part of the) profits
+of the corporation that are paid to the shareholders. There is no obligation for a cor-
+poration to do so, but if no dividends are paid over a longer period of time, the shares
+might become unattractive for investors and decreasing demand might lead to falling
+share prices.
+âˆŽ 	Capital growth: The hope that share prices will rise and the shares can be sold at a
+higher price than they were bought at.
+âˆŽ 	The wish to go to the annual stockholdersâ€™ meeting and have the chance to vote and
+influence some business decisions (because common stock includes the right to vote
+at the stockholdersâ€™ meeting). Shareholders of preferred shares of stock do not have
+this right but earn a higher dividend.
+âˆŽ 	That an investment in shares represents an investment in real values that will not
+lose its value so easily even in times of high inflation.
+In some English-speaking countries, the public limited company (PLC) is one type of such
+a corporation. The term PLC is more commonly used in the United Kingdom and some Com-
+monwealth countries. In the USA and other countries, you would rather find the denomina-
+tion â€œInc.â€, which stands for â€œIncorporatedâ€, or â€œLtdâ€ for â€œLimitedâ€. In German-speaking
+countries this form of legal structure for a business is called â€œAktiengesellschaftâ€ (abbrevi-
+ated AG) as â€œAktienâ€ means â€œsharesâ€ and â€œGesellschaftâ€ stands for â€œcorporationâ€. The min-
+imum capital requirement for founding an AG is 70,000 euros, which is the main reason why
+Tina and Steve do not consider an AG the appropriate legal structure for their business.
+Another type of corporation is the European Company (SE, sociÃ©tÃ© europÃ©enne). It is sim-
+ilar to an â€œAktiengesellschaftâ€ or PLC governed by Community law directly applicable in all
+â€“ and only in â€“ member states of the European Union.
+AT&S is an â€œAktiengesellschaftâ€ according to Austrian law, and the shares were initially
+listed on the Neuer Markt of the Frankfurt Stock Exchange in July 1999. In spring 2008,
+AT&S decided to switch to the home stock exchange in Vienna. AT&S has been quoted in
+
+-- 25 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	28
+Forms of business ownership and sources of finance
+the Vienna Stock Exchangeâ€™s Prime Market segment since 20 May 2008. At the same time,
+application for delisting from the Frankfurt Stock Exchange and withdrawal of the admission
+for AT&S shares to be traded on the regulated market (Prime Standard) of the Frankfurt Stock
+Exchange was filed. The delisting became effective as of Sunday, 14 September 2008. There-
+fore, the last day on which AT&S shares could be traded on the Frankfurt Stock Exchange was
+Friday, 12 September 2008. Since Monday, 15 September 2008, AT&S shares have been list-
+ed exclusively on the Vienna Stock Exchange (source: https://ats.net/investors/ats-share/
+basic-information/).
+According to the annual report that AT&S has to publish in order to provide information
+about its business activities and financial performance, about one third of the shares are
+held by two foundations. The rest is free float, which means that these two thirds of shares
+are actually available on the stock exchange. A number of institutional investors have in-
+vested in shares of AT&S, but around one third of the stocks are held by private investors
+and other shareholders.
+Figure 8. Shareholder structure of AT&S (source: annual report 2017/18)
+There are some key figures on shares that are of interest for investors:
+Share price and its development is one of them, and as can be seen from table 2, the price
+has risen over the past years, peaking at a price of almost 28 euros in the financial year
+2017/18 and falling to 22 euros at the end of that financial year.
+Market capitalisation or â€œmarket capâ€ is another metric that is often used â€“ especially by
+institutional investors â€“ to evaluate a corporationâ€™s size. In order to diversify their risks,
+investors usually buy shares from a number of companies that differ in various criteria, one
+of which is company size. Market cap is the total market value of a companyâ€™s (outstanding)
+shares (= shares currently held by all the shareholders multiplied by the current market
+price). Market cap is not necessarily a meaningful metric for the value of a company be-
+cause there are many reasons (that are not related to the value of the company) why share
+price might be particularly high or low.
+Dividend yield expresses the dividend in relation to the share price.
+Priceâ€“earnings ratio (P/E ratio) per share refers to a companyâ€™s current share price rela-
+tive to its earnings per share. A P/E ratio of 15.94 means that an investor can expect to in-
+
+-- 26 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	29
+vest almost 16 euros in AT&S in order to receive one euro of AT&Sâ€™s earnings. This ratio can
+be used to make comparisons between companies or for one company over time. A low P/E
+ratio usually indicates either that the shares are currently undervalued or that the company
+is thriving and earnings are high.
+Table 2. Key stock figures for AT&S (source: annual report 2017/18)
+Liabilities
+Apart from loans and credit that other businesses can also use, big corporations also have
+the option to issue bonds. Bonds can be regarded as a loan between investors as creditors
+and a corporation. The investors provide the corporation with a certain amount of money
+for a specific time period, based on an agreement when to repay the debt and how much
+interest to pay.
+Issuing bonds can be more attractive to corporations than borrowing from banks. The inter-
+est rate for bonds is often less than the interest rate for a bank loan. Borrowing large sums
+of money at low interest rates enables corporations to invest in long-term assets like plants,
+new infrastructure and other large-scale projects.
+4.3.3 Private Limited Companies
+There are forms of private limited companies in many countries of the world. As a form of
+corporation, they are legal persons and the ownersâ€™ liability is limited. However, shares
+usually are not sold to the general public at the stock exchange but are offered to the other
+owners of the company. The Limited Liability Company (LLC) in the USA, private company
+limited by shares in the UK, and the â€œG

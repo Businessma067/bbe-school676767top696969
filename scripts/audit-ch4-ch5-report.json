@@ -1,0 +1,6070 @@
+{
+  "total": 936,
+  "byType": {
+    "neon_false": 368,
+    "bad_case_id": 7,
+    "stmt_too_long": 2,
+    "dup_context": 153,
+    "cross_near_stmt": 202,
+    "near_context": 204
+  },
+  "issues": [
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.07",
+      "i": 4,
+      "s": "Pledging collateral for a bank loan fully exempts all remaining private assets f"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.15",
+      "i": 4,
+      "s": "A separate corporate tax return is required for every sole proprietorship regard"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.16",
+      "i": 0,
+      "s": "Trade credit from a supplier never requires repayment because deferred payment i"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.22",
+      "i": 3,
+      "s": "No financial requirements to start a sole proprietorship mean the owner never co"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.22",
+      "i": 4,
+      "s": "Financial capability of the sole proprietor has no bearing on funds available to"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.23",
+      "i": 0,
+      "s": "Sale of assets that are no longer needed is classified as external finance provi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.27",
+      "i": 0,
+      "s": "Retained profit is never accepted as security and therefore collateral applies o"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.28",
+      "i": 2,
+      "s": "Employees hired by the sole proprietor share unlimited liability for all busines"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.30",
+      "i": 1,
+      "s": "Trade credit carries no repayment obligation because it is classified as interna"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.32",
+      "i": 4,
+      "s": "Using internal finance means the sole proprietor no longer bears unlimited liabi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.33",
+      "i": 3,
+      "s": "Short-term credit is never recorded as a liability for the sole proprietor becau"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.36",
+      "i": 1,
+      "s": "Long-term creditors may waive all interest charges when land and buildings serve"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.40",
+      "i": 1,
+      "s": "Long-term illness of the owner has no continuity effect because employees legall"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.42",
+      "i": 4,
+      "s": "Insufficient personal wealth has no effect on whether a sole proprietorship can "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.43",
+      "i": 4,
+      "s": "All kinds of credit are optional gifts that create no repayment obligation for t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.45",
+      "i": 4,
+      "s": "Trade credit from suppliers never creates any liability for the sole proprietor."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.46",
+      "i": 4,
+      "s": "Pledging collateral for a long-term loan removes all unlimited liability exposur"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.1.50",
+      "i": 1,
+      "s": "Easy establishment with no capital requirements means the business never faces c"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.05",
+      "i": 0,
+      "s": "All partners in a limited partnership share equal unlimited liability because th"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.06",
+      "i": 2,
+      "s": "Incorporating as a partnership automatically grants every partner limited liabil"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.07",
+      "i": 4,
+      "s": "Under unlimited liability a creditor must collect an equal fraction of the debt "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.08",
+      "i": 2,
+      "s": "Partners in a general partnership must perform every management task themselves "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.10",
+      "i": 1,
+      "s": "A limited partnership requires no partnership agreement because liability rules "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.11",
+      "i": 0,
+      "s": "Every partner in a limited partnership enjoys liability capped at the capital ea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.12",
+      "i": 4,
+      "s": "Founders of a partnership may begin trading without any agreement because oral u"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.15",
+      "i": 2,
+      "s": "A partnership always raises less external finance than a corporation because sha"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.16",
+      "i": 1,
+      "s": "Recording unequal ownership percentages in the agreement converts unlimited liab"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.17",
+      "i": 2,
+      "s": "All partners in a limited partnership face equal unlimited liability because pro"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.19",
+      "i": 3,
+      "s": "Limited liability protects each consultant's private assets from all partnership"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.20",
+      "i": 0,
+      "s": "Every partner in a limited partnership shares equal unlimited liability because "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.23",
+      "i": 4,
+      "s": "Limited partnership status means no partner ever faces personal liability beyond"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.25",
+      "i": 0,
+      "s": "Every partner in a limited partnership enjoys capped liability because the busin"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.25",
+      "i": 2,
+      "s": "Joint founding requires that every participant be actively involved in daily man"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.26",
+      "i": 0,
+      "s": "Limited liability applies to all partners because partnerships are incorporated "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.27",
+      "i": 3,
+      "s": "Limited liability for all partners is the default rule in every general partners"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.28",
+      "i": 4,
+      "s": "A limited partner who refrains from management still carries unlimited liability"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.34",
+      "i": 4,
+      "s": "In a limited partnership all partners enjoy liability capped at the capital each"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.37",
+      "i": 0,
+      "s": "All partners in a limited partnership face equal unlimited liability because the"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.41",
+      "i": 3,
+      "s": "Limited liability for business debts applies to every partner in a general partn"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.42",
+      "i": 0,
+      "s": "A general partnership requires no written agreement when founders intend equal m"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.42",
+      "i": 2,
+      "s": "Limited-partnership status by itself caps every partner's exposure at capital co"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.44",
+      "i": 1,
+      "s": "A partnership formed by two founders requires no agreement when they verbally ag"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.44",
+      "i": 4,
+      "s": "A creditor under unlimited liability must sue all partners jointly and collect e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.45",
+      "i": 3,
+      "s": "A limited partnership can operate with every partner participating in management"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.49",
+      "i": 3,
+      "s": "Partners need not settle rights and responsibilities because equal founders alwa"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.2.50",
+      "i": 3,
+      "s": "Equal responsibilities in a general partnership require every partner to perform"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.02",
+      "i": 2,
+      "s": "Higher post-issue market prices oblige the corporation to pay matching dividends"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.03",
+      "i": 1,
+      "s": "Limited liability means shareholders can never lose any part of the money they p"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.04",
+      "i": 0,
+      "s": "Because they provided share capital, the founders must personally manage every m"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.05",
+      "i": 3,
+      "s": "Shareholders bear unlimited liability for all corporation debts beyond their ori"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.06",
+      "i": 2,
+      "s": "Shares can only be purchased from other shareholders and never directly from the"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.06",
+      "i": 3,
+      "s": "Each share sold at issue must always be priced above its nominal share of the re"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.07",
+      "i": 3,
+      "s": "Shares introduced on a stock exchange always trade at a fixed price set permanen"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.12",
+      "i": 1,
+      "s": "Because it is private, shareholders face unlimited liability for all bakery debt"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.12",
+      "i": 4,
+      "s": "Managers of the bakery are legally required to be the same persons who hold all "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.13",
+      "i": 0,
+      "s": "Corporations must pay dividends every year because shareholders have a legally f"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.13",
+      "i": 2,
+      "s": "Withholding dividends always raises share prices because retained profits guaran"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.14",
+      "i": 1,
+      "s": "Preferred shareholders always receive both superior dividends and full voting co"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.17",
+      "i": 4,
+      "s": "Once listed, a corporation must buy back all shares whenever investors sell on t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.19",
+      "i": 2,
+      "s": "Shareholders personally sign every supplier contract even when a corporation has"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.20",
+      "i": 3,
+      "s": "The corporation must issue bonus shares equal to every euro of secondary-market "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.21",
+      "i": 4,
+      "s": "Each share always carries exactly one vote regardless of whether it is preferred"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.22",
+      "i": 0,
+      "s": "Listing on a stock exchange is mandatory for every corporation before it may sel"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.34",
+      "i": 0,
+      "s": "Limited liability means shareholders are personally liable for all corporation t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.34",
+      "i": 3,
+      "s": "Managers who are not shareholders always enjoy the same limited liability cap as"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.35",
+      "i": 0,
+      "s": "Every corporation must distribute the entire annual profit as dividends to keep "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.35",
+      "i": 2,
+      "s": "Omitting dividends always leaves share prices unchanged because investors care o"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.37",
+      "i": 3,
+      "s": "High interest rates always increase share prices because corporations earn more "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.41",
+      "i": 2,
+      "s": "Hiring employees requires each shareholder to sign every employment contract per"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.43",
+      "i": 4,
+      "s": "Founders who sell all their shares immediately lose the corporation's legal pers"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.44",
+      "i": 1,
+      "s": "Retaining all profits guarantees rising share prices even when no dividends are "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.3.49",
+      "i": 1,
+      "s": "Preferred shareholders always hold superior voting power over common shareholder"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.02",
+      "i": 0,
+      "s": "Shareholders must personally manage daily operations in every corporation."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.02",
+      "i": 3,
+      "s": "Partnership agreements require that all partners remain passive investors while "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.04",
+      "i": 2,
+      "s": "Figure 9 treats every business with more than one owner as necessarily incorpora"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.06",
+      "i": 0,
+      "s": "Shareholders personally sign every supplier contract because they alone hold man"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.06",
+      "i": 1,
+      "s": "Partners in a general partnership usually delegate all management to directors w"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.10",
+      "i": 1,
+      "s": "Every unincorporated partnership automatically becomes a legal person once it re"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.12",
+      "i": 1,
+      "s": "Corporations require that every shareholder also serve as a director without exc"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.12",
+      "i": 4,
+      "s": "Shareholders always run incorporated companies personally rather than delegating"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.19",
+      "i": 3,
+      "s": "Every business that uses contracts with suppliers must therefore be incorporated"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.28",
+      "i": 0,
+      "s": "Shareholders run daily production schedules in every corporation because capital"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.34",
+      "i": 2,
+      "s": "Shareholders must always manage corporations personally because capital provider"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.37",
+      "i": 0,
+      "s": "Every shareholder in a corporation must sign employment contracts with staff bec"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.4.45",
+      "i": 2,
+      "s": "Employing a professional manager rather than an owner-manager always incorporate"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.5.12",
+      "i": 0,
+      "s": "Equity finance is always external because only shareholders provide it."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.5.35",
+      "i": 3,
+      "s": "Bonds are short-term debt finance because issuers pay coupons every six months."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.5.42",
+      "i": 4,
+      "s": "Share capital is debt finance because failing firms may leave shareholders with "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.02",
+      "i": 0,
+      "s": "Revenue expenditures on production inputs should always be matched with a twenty"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.05",
+      "i": 1,
+      "s": "Equity finance carries no cost element because issuing shares never involves adm"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.11",
+      "i": 4,
+      "s": "Revenue expenditure on production inputs should always be matched with bond fina"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.13",
+      "i": 3,
+      "s": "Revenue expenditure must never use short-term trade credit when the balance shee"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.18",
+      "i": 1,
+      "s": "Share issues carry no administration costs, so only loan interest needs comparis"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.18",
+      "i": 2,
+      "s": "All production materials must be financed through long-term bond issues regardle"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.22",
+      "i": 0,
+      "s": "Internal funds are never preferable to loans regardless of how high loan capital"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.22",
+      "i": 1,
+      "s": "Administration costs of share issues are excluded from cost comparisons because "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.24",
+      "i": 0,
+      "s": "A highly geared business should always add another large loan rather than use in"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.28",
+      "i": 2,
+      "s": "High gearing means intended use no longer influences whether finance should be s"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.29",
+      "i": 0,
+      "s": "High gearing means lenders will always match the lowest market interest rate on "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.29",
+      "i": 3,
+      "s": "Collateral requirements prove that revenue expenditure must always be financed t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.30",
+      "i": 0,
+      "s": "Interest is irrelevant to finance choice because lenders never charge for credit"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.30",
+      "i": 2,
+      "s": "Revenue expenditure on materials must be financed through share issues because e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.35",
+      "i": 1,
+      "s": "High gearing has no effect on whether lenders demand collateral for new credit."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.41",
+      "i": 2,
+      "s": "Administration costs apply only to bond issues and never to share issuance."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.42",
+      "i": 3,
+      "s": "High gearing requires that all spending, including weekly materials, be funded t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.45",
+      "i": 1,
+      "s": "Share issues involve no administration costs, so only bond coupons need comparis"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 4.6.45",
+      "i": 2,
+      "s": "High gearing guarantees that lenders will always match the lowest market interes"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.01",
+      "i": 4,
+      "s": "A printer is always a consumer product because households are the most visible e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.02",
+      "i": 0,
+      "s": "A printer is always a producer product because printers are produced by manufact"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.07",
+      "i": 1,
+      "s": "Goods given as gifts with no exchange are still products because they fulfil rec"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.08",
+      "i": 4,
+      "s": "The same printer must keep one fixed product label for all buyers because the de"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.15",
+      "i": 4,
+      "s": "The same computer must keep one fixed product label for all buyers because the d"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.24",
+      "i": 2,
+      "s": "The same desk must keep one fixed product label for all buyers because the desig"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.32",
+      "i": 3,
+      "s": "The same vehicle must keep one fixed product label for all buyers because the de"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.80",
+      "i": 3,
+      "s": "Network maintenance for a insurance company is a consumer product because servic"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.83",
+      "i": 4,
+      "s": "network maintenance fulfils needs and therefore is a product even when no paymen"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.86",
+      "i": 4,
+      "s": "Payroll processing for a accounting partnership is a consumer product because se"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.91",
+      "i": 0,
+      "s": "payroll processing fulfils needs and therefore is a product even when no payment"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.93",
+      "i": 4,
+      "s": "Equipment leasing for a shipping line is a consumer product because services are"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.1.99",
+      "i": 1,
+      "s": "equipment leasing fulfils needs and therefore is a product even when no payment "
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.1.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.06",
+      "i": 0,
+      "s": "Customer satisfaction has no connection to market share or sales volume objectiv"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.06",
+      "i": 3,
+      "s": "Satisfaction objectives mean customers must be delighted on every dimension or t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.07",
+      "i": 3,
+      "s": "Satisfied customers never recommend products to others, keeping satisfaction pri"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.11",
+      "i": 1,
+      "s": "Marketing objectives treat satisfaction as separate from loyalty with no connect"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.13",
+      "i": 1,
+      "s": "Satisfied customers never buy complementary products from the same firm."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.13",
+      "i": 4,
+      "s": "Repeat purchase rates falling while satisfaction scores rise always indicates da"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.16",
+      "i": 0,
+      "s": "A satisfied customer will never switch to a rival with a stronger USP."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.16",
+      "i": 2,
+      "s": "A unique selling proposition means the product is identical to all similar produ"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.17",
+      "i": 2,
+      "s": "Product differentiation requires the product to be objectively unique in every t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.17",
+      "i": 3,
+      "s": "Building a brand has no role in creating a unique selling proposition."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.20",
+      "i": 4,
+      "s": "Brand-building undermines differentiation by making all products appear the same"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.21",
+      "i": 2,
+      "s": "Differentiation objectives apply only to luxury goods and never to everyday prod"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.27",
+      "i": 2,
+      "s": "Differentiation means customers never compare the product with substitutes."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.27",
+      "i": 3,
+      "s": "A USP is created only when the product wins every industry quality award."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.29",
+      "i": 1,
+      "s": "Product differentiation is identical to market segmentation with no separate mea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.29",
+      "i": 3,
+      "s": "A USP eliminates all price competition because differentiated products have fixe"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.40",
+      "i": 4,
+      "s": "Market share measures absolute sales volume with no reference to competitors."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.41",
+      "i": 1,
+      "s": "A firm with the highest absolute sales always has the highest market share in ev"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.43",
+      "i": 4,
+      "s": "A declining market share always means absolute sales are falling."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.45",
+      "i": 1,
+      "s": "Maintaining market share requires no marketing expenditure if the product once l"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.46",
+      "i": 2,
+      "s": "Gaining share always improves profitability in the same reporting period."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.46",
+      "i": 4,
+      "s": "A firm can hold one hundred percent share in a market with no competitors by def"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.48",
+      "i": 0,
+      "s": "Market share and sales volume objectives always move in opposite directions."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.51",
+      "i": 0,
+      "s": "Market share is unchanged when a firm's sales double and all rivals' sales doubl"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.53",
+      "i": 1,
+      "s": "A rising share always results from improved customer dissatisfaction among rival"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.54",
+      "i": 2,
+      "s": "Market share objectives mean the firm must acquire every competitor."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.56",
+      "i": 3,
+      "s": "Higher sales always guarantee higher profit with no limitations whatsoever."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.62",
+      "i": 2,
+      "s": "A firm with rising sales never needs to monitor production costs."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.64",
+      "i": 4,
+      "s": "Maintaining sales means prices must rise every month regardless of demand."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.69",
+      "i": 0,
+      "s": "Higher sales figures always reduce production costs per unit to zero."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.74",
+      "i": 2,
+      "s": "Higher sales always reduce profit because production costs rise infinitely with "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.75",
+      "i": 2,
+      "s": "Marketing objectives never include profitability because marketing only targets "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.75",
+      "i": 3,
+      "s": "A firm with falling sales can always increase profit without any cost changes."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.77",
+      "i": 2,
+      "s": "There are no limitations on the link between higher sales and higher profit."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.79",
+      "i": 0,
+      "s": "Profits are unimportant because owners require no return on invested money."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.79",
+      "i": 1,
+      "s": "A discounting strategy that maximises unit sales always maximises profit simulta"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.80",
+      "i": 0,
+      "s": "Higher sales figures never contribute to profit under any market condition."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.81",
+      "i": 0,
+      "s": "Marketing success is judged only by share gains with no regard to profit."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.81",
+      "i": 1,
+      "s": "Profit reinvestment means paying all revenue to suppliers immediately."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.82",
+      "i": 3,
+      "s": "Profitability objectives apply only when the firm has no competitors."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.83",
+      "i": 0,
+      "s": "Limitations on the sales-profit link mean higher sales always lower profit."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.86",
+      "i": 4,
+      "s": "Sales covering production costs is sufficient for profit with no margin required"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.89",
+      "i": 4,
+      "s": "Higher sales always eliminate the need to reinvest profit in the business."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.90",
+      "i": 2,
+      "s": "Owners receive reimbursement only through wages, never through profit."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.91",
+      "i": 4,
+      "s": "Profitability and market share move in opposite directions in every case."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.2.97",
+      "i": 3,
+      "s": "Marketing that raises sales with rising costs always increases profit."
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.2.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.02",
+      "i": 2,
+      "s": "Product-oriented and market-oriented businesses must always pursue completely di"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.03",
+      "i": 1,
+      "s": "Orientation suitability is identical for every product regardless of competitive"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.05",
+      "i": 4,
+      "s": "Loyalty cards and personal accounts always preserve full customer anonymity with"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.09",
+      "i": 1,
+      "s": "CRM newsletters and coupons are unrelated to stored customer data and require no"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.10",
+      "i": 0,
+      "s": "Customers never willingly surrender anonymity because loyalty discounts are alwa"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.11",
+      "i": 1,
+      "s": "Orientation choice is fixed by law so every firm in a sector must use market ori"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.12",
+      "i": 3,
+      "s": "CRM long-term relationships require no communication because customers automatic"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.13",
+      "i": 3,
+      "s": "Market-oriented firms never collect customer data because data collection contra"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.13",
+      "i": 4,
+      "s": "Product-oriented businesses never advertise because they assume buyers discover "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.15",
+      "i": 4,
+      "s": "CRM is identical to a single promotional campaign with no aim of sustaining rela"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.16",
+      "i": 1,
+      "s": "Personal accounts and loyalty cards never record buying behaviour usable for lat"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.17",
+      "i": 2,
+      "s": "Competitor numbers have no bearing on whether product or market orientation is m"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.17",
+      "i": 4,
+      "s": "Sensitive data use means publishing all customer records publicly to maximise tr"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.19",
+      "i": 4,
+      "s": "Product-oriented firms never think about how to sell because superior features e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.20",
+      "i": 1,
+      "s": "CRM data retention is pointless because customers never return after receiving a"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.20",
+      "i": 2,
+      "s": "Loyalty discounts are unrelated to personal accounts because discounts apply ano"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.21",
+      "i": 0,
+      "s": "Buying-behaviour records cannot inform tailored offers because preferences never"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.21",
+      "i": 2,
+      "s": "Both orientations always require different profitability targets that make objec"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.22",
+      "i": 2,
+      "s": "Customer expectations matter only for market-oriented firms and never for produc"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.22",
+      "i": 4,
+      "s": "consumer electronics retailers using product orientation must first analyse ever"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.23",
+      "i": 3,
+      "s": "CRM at consumer electronics retailers requires deleting all personal records aft"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.26",
+      "i": 1,
+      "s": "Market-oriented consumer electronics retailers always respond later to changing "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.26",
+      "i": 3,
+      "s": "Product-oriented consumer electronics retailers never rely on feature quality an"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.26",
+      "i": 4,
+      "s": "regional supermarket chains using product orientation must first analyse every c"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.28",
+      "i": 0,
+      "s": "CRM at regional supermarket chains requires deleting all personal records after "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.28",
+      "i": 3,
+      "s": "Market-oriented regional supermarket chains always respond later to changing wan"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.29",
+      "i": 0,
+      "s": "Product-oriented regional supermarket chains never rely on feature quality and d"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.29",
+      "i": 2,
+      "s": "fashion garment suppliers using product orientation must first analyse every cus"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.30",
+      "i": 0,
+      "s": "CRM at fashion garment suppliers requires deleting all personal records after ea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.33",
+      "i": 0,
+      "s": "Market-oriented fashion garment suppliers always respond later to changing wants"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.33",
+      "i": 2,
+      "s": "Product-oriented fashion garment suppliers never rely on feature quality and dep"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.33",
+      "i": 3,
+      "s": "software subscription providers using product orientation must first analyse eve"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.34",
+      "i": 4,
+      "s": "CRM at software subscription providers requires deleting all personal records af"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.36",
+      "i": 2,
+      "s": "Market-oriented software subscription providers always respond later to changing"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.36",
+      "i": 3,
+      "s": "Product-oriented software subscription providers never rely on feature quality a"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.37",
+      "i": 0,
+      "s": "hotel loyalty programmes using product orientation must first analyse every cust"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.37",
+      "i": 4,
+      "s": "CRM at hotel loyalty programmes requires deleting all personal records after eac"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.40",
+      "i": 2,
+      "s": "Market-oriented hotel loyalty programmes always respond later to changing wants "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.42",
+      "i": 3,
+      "s": "Product-oriented hotel loyalty programmes never rely on feature quality and depe"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.43",
+      "i": 0,
+      "s": "dental membership schemes using product orientation must first analyse every cus"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.44",
+      "i": 1,
+      "s": "CRM at dental membership schemes requires deleting all personal records after ea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.48",
+      "i": 1,
+      "s": "Market-oriented dental membership schemes always respond later to changing wants"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.48",
+      "i": 2,
+      "s": "Product-oriented dental membership schemes never rely on feature quality and dep"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.49",
+      "i": 3,
+      "s": "furniture manufacturers using product orientation must first analyse every custo"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.51",
+      "i": 0,
+      "s": "CRM at furniture manufacturers requires deleting all personal records after each"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.56",
+      "i": 2,
+      "s": "Market-oriented furniture manufacturers always respond later to changing wants b"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.57",
+      "i": 1,
+      "s": "Product-oriented furniture manufacturers never rely on feature quality and depen"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.57",
+      "i": 2,
+      "s": "online grocery platforms using product orientation must first analyse every cust"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.58",
+      "i": 1,
+      "s": "CRM at online grocery platforms requires deleting all personal records after eac"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.59",
+      "i": 4,
+      "s": "Market-oriented online grocery platforms always respond later to changing wants "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.60",
+      "i": 2,
+      "s": "Product-oriented online grocery platforms never rely on feature quality and depe"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.60",
+      "i": 3,
+      "s": "fitness studio operators using product orientation must first analyse every cust"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.61",
+      "i": 3,
+      "s": "CRM at fitness studio operators requires deleting all personal records after eac"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.62",
+      "i": 3,
+      "s": "Market-oriented fitness studio operators always respond later to changing wants "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.63",
+      "i": 2,
+      "s": "Product-oriented fitness studio operators never rely on feature quality and depe"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.64",
+      "i": 1,
+      "s": "corporate catering firms using product orientation must first analyse every cust"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.65",
+      "i": 0,
+      "s": "CRM at corporate catering firms requires deleting all personal records after eac"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.65",
+      "i": 4,
+      "s": "Market-oriented corporate catering firms always respond later to changing wants "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.66",
+      "i": 0,
+      "s": "Product-oriented corporate catering firms never rely on feature quality and depe"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.66",
+      "i": 1,
+      "s": "independent bookshops using product orientation must first analyse every custome"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.67",
+      "i": 1,
+      "s": "CRM at independent bookshops requires deleting all personal records after each t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.69",
+      "i": 4,
+      "s": "Market-oriented independent bookshops always respond later to changing wants bec"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.71",
+      "i": 1,
+      "s": "Product-oriented independent bookshops never rely on feature quality and depend "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.71",
+      "i": 3,
+      "s": "vehicle service garages using product orientation must first analyse every custo"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.73",
+      "i": 4,
+      "s": "CRM at vehicle service garages requires deleting all personal records after each"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.74",
+      "i": 2,
+      "s": "Market-oriented vehicle service garages always respond later to changing wants b"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.74",
+      "i": 4,
+      "s": "Product-oriented vehicle service garages never rely on feature quality and depen"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.75",
+      "i": 2,
+      "s": "cosmetics producers using product orientation must first analyse every customer'"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.76",
+      "i": 4,
+      "s": "CRM at cosmetics producers requires deleting all personal records after each tra"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.77",
+      "i": 3,
+      "s": "Market-oriented cosmetics producers always respond later to changing wants becau"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.77",
+      "i": 4,
+      "s": "Product-oriented cosmetics producers never rely on feature quality and depend on"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.78",
+      "i": 0,
+      "s": "travel agencies using product orientation must first analyse every customer's ne"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.79",
+      "i": 2,
+      "s": "CRM at travel agencies requires deleting all personal records after each transac"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.80",
+      "i": 0,
+      "s": "Market-oriented travel agencies always respond later to changing wants because t"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.80",
+      "i": 2,
+      "s": "Product-oriented travel agencies never rely on feature quality and depend only o"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.80",
+      "i": 4,
+      "s": "artisan bakeries using product orientation must first analyse every customer's n"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.82",
+      "i": 3,
+      "s": "CRM at artisan bakeries requires deleting all personal records after each transa"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.83",
+      "i": 3,
+      "s": "Market-oriented artisan bakeries always respond later to changing wants because "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.3.84",
+      "i": 0,
+      "s": "Product-oriented artisan bakeries never rely on feature quality and depend only "
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.3.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.02",
+      "i": 3,
+      "s": "Businesses only respond to existing customer needs and never influence wishes th"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.02",
+      "i": 4,
+      "s": "All advertising is automatically ethical whenever it increases sales and informs"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.03",
+      "i": 3,
+      "s": "Overconsumption affects only wealthy households and never people with modest inc"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.04",
+      "i": 1,
+      "s": "Consumers always spend exactly the amount they initially planned because promoti"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.04",
+      "i": 2,
+      "s": "Every purchase consumers make reflects a genuine long-term need that will be sat"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.08",
+      "i": 3,
+      "s": "Renting clothes is always less sustainable than buying the cheapest available ga"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.08",
+      "i": 4,
+      "s": "Cheap disposable clothing is the only trend in apparel markets because durabilit"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.09",
+      "i": 3,
+      "s": "Ethical advertising means never mentioning product benefits because any persuasi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.10",
+      "i": 1,
+      "s": "Businesses have no role in creating consumer wants because demand is fixed indep"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.10",
+      "i": 2,
+      "s": "Consuming too much carries no risks for households or the environment when produ"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.10",
+      "i": 3,
+      "s": "Immediate replacement of faulty equipment is always required for sustainability "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.11",
+      "i": 0,
+      "s": "Marketing responsibility requires businesses to stop developing any new products"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.11",
+      "i": 1,
+      "s": "Consumers who exceed affordable spending limits do so only because prices rise, "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.12",
+      "i": 2,
+      "s": "Sustainable consumption means consumers must keep every product forever and may "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.13",
+      "i": 0,
+      "s": "Repair and reuse apply only to clothing and never to electronic equipment such a"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.13",
+      "i": 1,
+      "s": "Renting quality products eliminates all ownership and therefore removes any busi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.13",
+      "i": 2,
+      "s": "Ethical advertising requires identical messages for all products regardless of a"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.16",
+      "i": 0,
+      "s": "Businesses bear no responsibility for consumer budgets when advertising encourag"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.16",
+      "i": 2,
+      "s": "Refurbishment always wastes more resources than manufacturing a new unit regardl"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.17",
+      "i": 0,
+      "s": "Created needs through advertising benefit only businesses and never influence th"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.17",
+      "i": 4,
+      "s": "Consumers always recognise manipulative advertising and therefore never spend be"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.18",
+      "i": 3,
+      "s": "Responsible marketing means maximising impulse purchases because higher turnover"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.4.18",
+      "i": 4,
+      "s": "Households never buy items they will not use because rational consumers plan eve"
+    },
+    {
+      "type": "stmt_too_long",
+      "id": "CASE 5.4.20",
+      "i": 3,
+      "len": 221
+    },
+    {
+      "type": "stmt_too_long",
+      "id": "CASE 5.4.87",
+      "i": 0,
+      "len": 221
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.4.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.05",
+      "i": 2,
+      "s": "Market potential is always equal to current market volume because every customer"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.05",
+      "i": 4,
+      "s": "Secondary research is always tailored to the specific interests of the business "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.07",
+      "i": 3,
+      "s": "In a business-to-business market the customers are always final household consum"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.08",
+      "i": 1,
+      "s": "The buyer and user of a product must always be the same person in every market."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.08",
+      "i": 2,
+      "s": "Children can never influence purchasing decisions because only adults hold payme"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.08",
+      "i": 4,
+      "s": "When-customer analysis cannot reveal seasonal fluctuations because purchase date"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.13",
+      "i": 0,
+      "s": "Market volume and market potential are identical terms with no difference in mea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.15",
+      "i": 0,
+      "s": "Sales volume and sales potential must always be equal for a mature business."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.22",
+      "i": 4,
+      "s": "Market size can only be measured in euros and never as a quantity of pieces sold"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.23",
+      "i": 1,
+      "s": "Market size can only be measured as units sold and never as a euro value total."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.28",
+      "i": 0,
+      "s": "Influencers must always be the same person who completes payment for the product"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.28",
+      "i": 4,
+      "s": "Secondary research requires the firm to conduct personal interviews with every c"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.30",
+      "i": 0,
+      "s": "Absolute market share tells a firm exactly how every smaller rival is performing"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.32",
+      "i": 4,
+      "s": "Free secondary data are always tailored to each small firm's product line."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.33",
+      "i": 0,
+      "s": "Costly primary research is affordable for every small business according to the "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.36",
+      "i": 2,
+      "s": "Secondary research always replaces the need for any customer analysis."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.37",
+      "i": 3,
+      "s": "Market size decreases when every firm's sales in the market rise simultaneously."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.49",
+      "i": 1,
+      "s": "Market share can be computed without knowing total sales of all firms in the mar"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.55",
+      "i": 1,
+      "s": "Channel weakness cannot be detected because customers never reveal where they sh"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.58",
+      "i": 0,
+      "s": "Sales potential minus sales volume always equals zero in growing markets."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.61",
+      "i": 1,
+      "s": "Absolute and relative market share always produce identical numerical results."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.62",
+      "i": 0,
+      "s": "Small firms always prefer primary research because it is cheaper than secondary "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.66",
+      "i": 2,
+      "s": "Secondary information is always more detailed than primary data for one product "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.66",
+      "i": 4,
+      "s": "Relative market share of 0.5 always means the firm holds fifty per cent of the m"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.74",
+      "i": 4,
+      "s": "Government agency research is primary for every firm that later cites the public"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.75",
+      "i": 4,
+      "s": "A firm trailing the leader always has relative market share above one."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.78",
+      "i": 3,
+      "s": "Primary research never uses questionnaires because they are too expensive for an"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.78",
+      "i": 4,
+      "s": "Secondary research never comes from government agencies according to the chapter"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.80",
+      "i": 2,
+      "s": "Children never appear in customer-analysis examples about influence on purchases"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.82",
+      "i": 0,
+      "s": "Buyer and user must differ in every single purchase transaction."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.84",
+      "i": 4,
+      "s": "Customer analysis is separate from market research and never combined in practic"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.86",
+      "i": 0,
+      "s": "Market volume for all firms is smaller than sales volume of one large company."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.93",
+      "i": 4,
+      "s": "Secondary research requires new empirical collection for each business every yea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.95",
+      "i": 0,
+      "s": "Market size falls when every competitor increases its unit sales."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.96",
+      "i": 2,
+      "s": "Sales potential for one firm aggregates market volume for all competitors."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.97",
+      "i": 1,
+      "s": "Influencers always pay for products they recommend to others."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.99",
+      "i": 2,
+      "s": "Free secondary data are always outdated and therefore primary when less than one"
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.5.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.5.100",
+      "i": 4,
+      "s": "Market research never examines competition because antitrust law forbids it."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.01",
+      "i": 4,
+      "s": "Market segmentation requires every customer in a subgroup to be identical in all"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.03",
+      "i": 3,
+      "s": "A segment is measurable only when every member has been individually interviewed"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.05",
+      "i": 0,
+      "s": "A durable segment must never change over time in order to qualify for targeting."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.07",
+      "i": 0,
+      "s": "Mass marketing promotes the same product differently to every segment with highl"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.07",
+      "i": 1,
+      "s": "Economies of scale mean that every cost rises in direct proportion to output as "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.07",
+      "i": 3,
+      "s": "Economies of scale always raise cost per unit when total identical output increa"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.13",
+      "i": 0,
+      "s": "Targeting occasional users rather than intensive daily operators means listing e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.18",
+      "i": 4,
+      "s": "Targeting seasonal purchasers rather than year-round repeat buyers means listing"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.38",
+      "i": 2,
+      "s": "Targeting infrequent maintainers rather than continuous heavy consumers means li"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.46",
+      "i": 1,
+      "s": "Targeting trial buyers before occasional repeat purchase means listing every pos"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.51",
+      "i": 4,
+      "s": "Targeting weekend-only recreational users means listing every possible subgroup "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.59",
+      "i": 0,
+      "s": "Targeting single-purchase gift buyers rather than replenishment shoppers means l"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.69",
+      "i": 3,
+      "s": "Targeting contract renewers rather than first-time adopters means listing every "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.78",
+      "i": 2,
+      "s": "Targeting bulk-order institutional buyers versus single-unit shoppers means list"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.84",
+      "i": 3,
+      "s": "Targeting loyalty-program members with predictable basket patterns means listing"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.86",
+      "i": 3,
+      "s": "Ballpoint pens must always be niche marketed because only a few people use them."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.86",
+      "i": 4,
+      "s": "Mass marketing of ballpoint pens requires a separate bespoke formula for every d"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.89",
+      "i": 0,
+      "s": "If ballpoint pens output rises, cost per unit must rise because all costs increa"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.89",
+      "i": 4,
+      "s": "Segment marketing of ballpoint pens would still use one identical item for all b"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.90",
+      "i": 0,
+      "s": "Bar soap must always be niche marketed because only a few people use them."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.90",
+      "i": 2,
+      "s": "Mass marketing of bar soap requires a separate bespoke formula for every demogra"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.91",
+      "i": 2,
+      "s": "If bar soap output rises, cost per unit must rise because all costs increase in "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.91",
+      "i": 4,
+      "s": "Segment marketing of bar soap would still use one identical item for all buyers "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.93",
+      "i": 1,
+      "s": "Laundry detergent must always be niche marketed because only a few people use th"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.93",
+      "i": 3,
+      "s": "Mass marketing of laundry detergent requires a separate bespoke formula for ever"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.95",
+      "i": 2,
+      "s": "If laundry detergent output rises, cost per unit must rise because all costs inc"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.97",
+      "i": 3,
+      "s": "Segment marketing of laundry detergent would still use one identical item for al"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.97",
+      "i": 4,
+      "s": "Toothpaste must always be niche marketed because only a few people use them."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.98",
+      "i": 0,
+      "s": "Mass marketing of toothpaste requires a separate bespoke formula for every demog"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.99",
+      "i": 0,
+      "s": "If toothpaste output rises, cost per unit must rise because all costs increase i"
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.6.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.100",
+      "i": 1,
+      "s": "Segment marketing of toothpaste would still use one identical item for all buyer"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.100",
+      "i": 2,
+      "s": "Notebook paper must always be niche marketed because only a few people use them."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.6.100",
+      "i": 3,
+      "s": "Mass marketing of notebook paper requires a separate bespoke formula for every d"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.04",
+      "i": 0,
+      "s": "Brands consist only of production patents and contain no name, symbol, or sign v"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.04",
+      "i": 4,
+      "s": "During introduction the product life cycle always shows peak profit because earl"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.05",
+      "i": 3,
+      "s": "Maturity always lasts less than one year before every product automatically ente"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.09",
+      "i": 3,
+      "s": "Psychological pricing requires every product to be sold at a round number such a"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.11",
+      "i": 4,
+      "s": "Direct distribution always requires at least two intermediaries between producer"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.12",
+      "i": 2,
+      "s": "Indirect distribution means the producer delivers every product personally to ea"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.14",
+      "i": 0,
+      "s": "Economies of scale in the growth stage always raise average unit costs as output"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.14",
+      "i": 3,
+      "s": "Stars no longer require promotional or production investment once they first ach"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.16",
+      "i": 2,
+      "s": "Market research informs only the product P and has no role in price, place, or p"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.32",
+      "i": 0,
+      "s": "Selling breakfast cereals exclusively through wholesalers means the business use"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.36",
+      "i": 1,
+      "s": "Selling running shoes exclusively through wholesalers means the business uses di"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.40",
+      "i": 4,
+      "s": "Selling smart watches exclusively through wholesalers means the business uses di"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.45",
+      "i": 2,
+      "s": "Selling energy drinks exclusively through wholesalers means the business uses di"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.47",
+      "i": 3,
+      "s": "Selling hair conditioners exclusively through wholesalers means the business use"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.50",
+      "i": 0,
+      "s": "Selling LED light bulbs exclusively through wholesalers means the business uses "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.53",
+      "i": 1,
+      "s": "Selling travel backpacks exclusively through wholesalers means the business uses"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.61",
+      "i": 0,
+      "s": "Selling frozen pizzas exclusively through wholesalers means the business uses di"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.64",
+      "i": 2,
+      "s": "Selling mobile phone cases exclusively through wholesalers means the business us"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.67",
+      "i": 4,
+      "s": "Selling washing powders exclusively through wholesalers means the business uses "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.73",
+      "i": 3,
+      "s": "Selective distribution places the product in every possible outlet without limit"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.76",
+      "i": 3,
+      "s": "Sales events set the permanent list price for all future years of the product."
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.80",
+      "i": 0,
+      "s": "A familiar brand offers no reassurance to students because brands belong exclusi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.82",
+      "i": 3,
+      "s": "A familiar brand offers no reassurance to retirees because brands belong exclusi"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.84",
+      "i": 0,
+      "s": "A familiar brand offers no reassurance to premium buyers because brands belong e"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.85",
+      "i": 4,
+      "s": "A familiar brand offers no reassurance to budget shoppers because brands belong "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.92",
+      "i": 3,
+      "s": "A familiar brand offers no reassurance to rural customers because brands belong "
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.96",
+      "i": 2,
+      "s": "A familiar brand offers no reassurance to business clients because brands belong"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.98",
+      "i": 0,
+      "s": "A familiar brand offers no reassurance to young families because brands belong e"
+    },
+    {
+      "type": "bad_case_id",
+      "id": "CASE 5.7.100"
+    },
+    {
+      "type": "neon_false",
+      "id": "CASE 5.7.100",
+      "i": 2,
+      "s": "A familiar brand offers no reassurance to commuters because brands belong exclus"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.08",
+      "b": "CASE 4.5.21"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.03",
+      "b": "CASE 4.5.40"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.02",
+      "b": "CASE 4.5.41"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.06",
+      "b": "CASE 4.5.43"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.07",
+      "b": "CASE 4.5.44"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.09",
+      "b": "CASE 4.5.46"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.22",
+      "b": "CASE 4.5.48"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.5.12",
+      "b": "CASE 4.5.49"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.03",
+      "b": "CASE 4.6.40"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.04",
+      "b": "CASE 4.6.41"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.07",
+      "b": "CASE 4.6.44"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.08",
+      "b": "CASE 4.6.45"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.10",
+      "b": "CASE 4.6.47"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.11",
+      "b": "CASE 4.6.48"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.12",
+      "b": "CASE 4.6.49"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 4.6.01",
+      "b": "CASE 4.6.50"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.04",
+      "b": "CASE 5.1.64"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.08",
+      "b": "CASE 5.1.68"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.12",
+      "b": "CASE 5.1.72"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.16",
+      "b": "CASE 5.1.76"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.20",
+      "b": "CASE 5.1.80"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.24",
+      "b": "CASE 5.1.84"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.01",
+      "b": "CASE 5.1.87"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.28",
+      "b": "CASE 5.1.88"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.03",
+      "b": "CASE 5.1.89"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.05",
+      "b": "CASE 5.1.91"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.32",
+      "b": "CASE 5.1.92"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.07",
+      "b": "CASE 5.1.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.09",
+      "b": "CASE 5.1.95"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.36",
+      "b": "CASE 5.1.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.11",
+      "b": "CASE 5.1.97"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.13",
+      "b": "CASE 5.1.99"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.1.40",
+      "b": "CASE 5.1.100"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.25"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.28"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.31"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.34"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.37"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.40"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.43"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.46"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.49"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.52"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.55"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.58"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.61"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.64"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.67"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.70"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.73"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.01",
+      "b": "CASE 5.2.85"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.03",
+      "b": "CASE 5.2.87"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.04",
+      "b": "CASE 5.2.88"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.06",
+      "b": "CASE 5.2.90"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.07",
+      "b": "CASE 5.2.91"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.09",
+      "b": "CASE 5.2.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.11",
+      "b": "CASE 5.2.95"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.12",
+      "b": "CASE 5.2.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.14",
+      "b": "CASE 5.2.98"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.2.15",
+      "b": "CASE 5.2.99"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.04",
+      "b": "CASE 5.3.64"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.08",
+      "b": "CASE 5.3.68"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.12",
+      "b": "CASE 5.3.72"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.16",
+      "b": "CASE 5.3.76"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.20",
+      "b": "CASE 5.3.80"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.24",
+      "b": "CASE 5.3.84"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.28",
+      "b": "CASE 5.3.88"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.02",
+      "b": "CASE 5.3.89"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.03",
+      "b": "CASE 5.3.90"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.32",
+      "b": "CASE 5.3.92"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.06",
+      "b": "CASE 5.3.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.07",
+      "b": "CASE 5.3.94"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.36",
+      "b": "CASE 5.3.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.10",
+      "b": "CASE 5.3.97"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.11",
+      "b": "CASE 5.3.98"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.3.40",
+      "b": "CASE 5.3.100"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.02",
+      "b": "CASE 5.4.62"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.06",
+      "b": "CASE 5.4.66"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.10",
+      "b": "CASE 5.4.70"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.14",
+      "b": "CASE 5.4.74"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.18",
+      "b": "CASE 5.4.78"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.22",
+      "b": "CASE 5.4.82"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.01",
+      "b": "CASE 5.4.84"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.26",
+      "b": "CASE 5.4.86"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.04",
+      "b": "CASE 5.4.87"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.05",
+      "b": "CASE 5.4.88"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.30",
+      "b": "CASE 5.4.90"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.08",
+      "b": "CASE 5.4.91"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.09",
+      "b": "CASE 5.4.92"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.34",
+      "b": "CASE 5.4.94"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.12",
+      "b": "CASE 5.4.95"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.13",
+      "b": "CASE 5.4.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.38",
+      "b": "CASE 5.4.98"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.16",
+      "b": "CASE 5.4.99"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.4.17",
+      "b": "CASE 5.4.100"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.01",
+      "b": "CASE 5.5.61"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.05",
+      "b": "CASE 5.5.65"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.09",
+      "b": "CASE 5.5.69"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.13",
+      "b": "CASE 5.5.73"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.17",
+      "b": "CASE 5.5.77"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.21",
+      "b": "CASE 5.5.81"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.25",
+      "b": "CASE 5.5.85"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.29",
+      "b": "CASE 5.5.89"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.02",
+      "b": "CASE 5.5.90"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.03",
+      "b": "CASE 5.5.91"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.04",
+      "b": "CASE 5.5.92"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.33",
+      "b": "CASE 5.5.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.06",
+      "b": "CASE 5.5.94"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.07",
+      "b": "CASE 5.5.95"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.08",
+      "b": "CASE 5.5.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.37",
+      "b": "CASE 5.5.97"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.10",
+      "b": "CASE 5.5.98"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.11",
+      "b": "CASE 5.5.99"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.5.12",
+      "b": "CASE 5.5.100"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.01",
+      "b": "CASE 5.6.61"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.05",
+      "b": "CASE 5.6.65"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.09",
+      "b": "CASE 5.6.69"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.13",
+      "b": "CASE 5.6.73"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.17",
+      "b": "CASE 5.6.77"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.21",
+      "b": "CASE 5.6.81"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.25",
+      "b": "CASE 5.6.85"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.29",
+      "b": "CASE 5.6.89"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.33",
+      "b": "CASE 5.6.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.6.37",
+      "b": "CASE 5.6.97"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.17"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.20"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.23"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.26"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.29"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.32"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.35"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.38"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.41"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.44"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.47"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.50"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.53"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.56"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.59"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.62"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.65"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.68"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.71"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.74"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.01",
+      "b": "CASE 5.7.87"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.03",
+      "b": "CASE 5.7.89"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.04",
+      "b": "CASE 5.7.90"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.06",
+      "b": "CASE 5.7.92"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.07",
+      "b": "CASE 5.7.93"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.09",
+      "b": "CASE 5.7.95"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.10",
+      "b": "CASE 5.7.96"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.12",
+      "b": "CASE 5.7.98"
+    },
+    {
+      "type": "dup_context",
+      "a": "CASE 5.7.13",
+      "b": "CASE 5.7.99"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 4.1.06[1]",
+      "b": "CASE 4.1.40[0]",
+      "sa": "Continuity problems may occur if the sole proprietor wants to retire or suffers ",
+      "sb": "Continuity problems may occur if the sole proprietor suffers a long-term illness"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 4.1.19[4]",
+      "b": "CASE 4.1.40[0]",
+      "sa": "Continuity problems may occur when the sole proprietor retires or suffers long-t",
+      "sb": "Continuity problems may occur if the sole proprietor suffers a long-term illness"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 4.1.12[3]",
+      "b": "CASE 4.1.25[2]",
+      "sa": "Extra money can be sought from investors and/or from banks when personal funds p",
+      "sb": "Extra money can be sought from investors and/or from banks when personal funds a"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 4.1.13[3]",
+      "b": "CASE 4.1.24[2]",
+      "sa": "All kinds of credit, short-term as well as long-term, are liabilities for the so",
+      "sb": "All kinds of credit, short-term and long-term, are liabilities for the sole prop"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 4.2.03[2]",
+      "b": "CASE 4.2.24[1]",
+      "sa": "Partners together may offer more private assets as collateral when applying for ",
+      "sb": "Partners together may offer more private assets as collateral when jointly apply"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 4.2.09[3]",
+      "b": "CASE 4.2.46[0]",
+      "sa": "The partnership agreement should address decision-making procedures together wit",
+      "sb": "The partnership agreement should specify decision making together with methods f"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 4.2.05[2]",
+      "b": "CASE 4.2.25[4]",
+      "sa": "Managing partners in a limited partnership remain subject to unlimited liability",
+      "sb": "Managing partners in a limited partnership structure remain subject to unlimited"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 4.4.07[3]",
+      "b": "CASE 4.4.46[3]",
+      "sa": "Shareholders provide share capital to incorporated businesses while directors ru",
+      "sb": "Shareholders provide share capital to the incorporated winery while directors ru"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 4.4.11[0]",
+      "b": "CASE 4.4.19[1]",
+      "sa": "Partnerships are unincorporated businesses that may have more than one owner.",
+      "sb": "Partnerships are unincorporated businesses that may involve more than one owner."
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 4.6.17[1]",
+      "b": "CASE 4.6.28[0]",
+      "sa": "Capital expenditure on machinery used over many years should be matched with lon",
+      "sb": "Capital expenditure on machinery, plant, or vehicles used over many years should"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 4.6.25[0]",
+      "b": "CASE 4.6.32[3]",
+      "sa": "Capital expenditure on expansion assets used over many years requires long-term ",
+      "sb": "Capital expenditure on assets used over years requires long-term finance."
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 4.6.20[0]",
+      "b": "CASE 4.6.36[4]",
+      "sa": "Revenue expenditure on materials for current production can safely be financed b",
+      "sb": "Revenue expenditure on materials consumed in current production can safely be fi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.92,
+      "a": "CASE 4.6.22[3]",
+      "b": "CASE 4.6.50[1]",
+      "sa": "Revenue expenditure on materials for production must be financed exclusively thr",
+      "sb": "Revenue expenditure on production materials must be financed exclusively through"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 4.6.12[1]",
+      "b": "CASE 4.6.13[0]",
+      "sa": "A business with a high proportion of loan capital may have difficulties obtainin",
+      "sb": "A business with a high proportion of loan capital might have difficulties obtain"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.10[2]",
+      "b": "CASE 5.1.15[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged p",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged c"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.10[2]",
+      "b": "CASE 5.1.20[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged p",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged d"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.10[2]",
+      "b": "CASE 5.1.24[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged p",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged v"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.15[0]",
+      "b": "CASE 5.1.20[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged c",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged d"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.15[0]",
+      "b": "CASE 5.1.24[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged c",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged v"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.1.20[0]",
+      "b": "CASE 5.1.24[0]",
+      "sa": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged d",
+      "sb": "Fulfilment of customer wishes and needs is the purpose that makes an exchanged v"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.5.32[3]",
+      "b": "CASE 5.5.33[1]",
+      "sa": "A firm with sales of 80 million euros in a market of 400 million euros holds a 2",
+      "sb": "A firm with sales of 45 million euros in a market of 300 million euros holds a 1"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.5.32[3]",
+      "b": "CASE 5.5.35[0]",
+      "sa": "A firm with sales of 80 million euros in a market of 400 million euros holds a 2",
+      "sb": "A firm with sales of 7 million euros in a market of 140 million euros holds a 5 "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.5.33[1]",
+      "b": "CASE 5.5.35[0]",
+      "sa": "A firm with sales of 45 million euros in a market of 300 million euros holds a 1",
+      "sb": "A firm with sales of 7 million euros in a market of 140 million euros holds a 5 "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.27[4]",
+      "b": "CASE 5.3.33[1]",
+      "sa": "A market-oriented business tailors its offering after examining identified marke",
+      "sb": "A market-oriented business tailors its offering after examining requirements rev"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.19[3]",
+      "b": "CASE 5.3.24[0]",
+      "sa": "In product orientation, managers emphasise the product and its specifications be",
+      "sb": "In product orientation, managers emphasise the technical specifications of the o"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.3.20[3]",
+      "b": "CASE 5.3.24[2]",
+      "sa": "Product-oriented planning treats product and its specifications as the primary b",
+      "sb": "Product-oriented planning treats technical specifications of the offering as the"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[1]",
+      "b": "CASE 5.3.69[0]",
+      "sa": "CRM programmes may use posted coupon mailings to reward loyal buyers with ongoin",
+      "sb": "CRM programmes may use targeted coupon distributions to reward loyal buyers with"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[1]",
+      "b": "CASE 5.3.71[0]",
+      "sa": "CRM programmes may use posted coupon mailings to reward loyal buyers with ongoin",
+      "sb": "CRM programmes may use seasonal reminder mailings to reward loyal buyers with on"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[3]",
+      "b": "CASE 5.3.69[2]",
+      "sa": "CRM programmes may use posted coupon mailings to prompt additional visits throug",
+      "sb": "CRM programmes may use targeted coupon distributions to prompt additional visits"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[3]",
+      "b": "CASE 5.3.71[4]",
+      "sa": "CRM programmes may use posted coupon mailings to prompt additional visits throug",
+      "sb": "CRM programmes may use seasonal reminder mailings to prompt additional visits th"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[4]",
+      "b": "CASE 5.3.69[3]",
+      "sa": "CRM programmes may use posted coupon mailings to foster continuity rather than o",
+      "sb": "CRM programmes may use targeted coupon distributions to foster continuity rather"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.51[4]",
+      "b": "CASE 5.3.72[0]",
+      "sa": "CRM programmes may use posted coupon mailings to foster continuity rather than o",
+      "sb": "CRM programmes may use seasonal reminder mailings to foster continuity rather th"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.3.99[0]",
+      "b": "CASE 5.3.100[2]",
+      "sa": "CRM programmes may use posted coupon mailings to build durable commercial relati",
+      "sb": "CRM programmes may use targeted coupon distributions to build durable commercial"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 5.3.93[1]",
+      "b": "CASE 5.3.95[0]",
+      "sa": "A common misconception at consumer electronics retailers is that firms mislabels",
+      "sb": "A common misconception at consumer electronics retailers is that firms mislabels"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.4.16[3]",
+      "b": "CASE 5.4.17[3]",
+      "sa": "For electronics retailers in consumer electronics markets, businesses may create",
+      "sb": "For electronics retailers in apparel retailing, businesses may create wishes and"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.4.78[2]",
+      "b": "CASE 5.4.79[0]",
+      "sa": "For electronics retailers in consumer electronics markets, people frequently buy",
+      "sb": "For electronics retailers in apparel retailing, people frequently buy goods they"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.4.62[2]",
+      "b": "CASE 5.4.63[1]",
+      "sa": "For music-instrument dealers in consumer electronics markets, many people spend ",
+      "sb": "For music-instrument dealers in apparel retailing, many people spend more money "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.89,
+      "a": "CASE 5.7.73[4]",
+      "b": "CASE 5.7.77[4]",
+      "sa": "Market research on students can guide product features, price levels, distributi",
+      "sb": "Market research on retirees can guide product features, price levels, distributi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.73[4]",
+      "b": "CASE 5.7.81[2]",
+      "sa": "Market research on students can guide product features, price levels, distributi",
+      "sb": "Market research on fitness enthusiasts can guide product features, price levels,"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.73[4]",
+      "b": "CASE 5.7.89[2]",
+      "sa": "Market research on students can guide product features, price levels, distributi",
+      "sb": "Market research on premium buyers can guide product features, price levels, dist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.73[4]",
+      "b": "CASE 5.7.91[1]",
+      "sa": "Market research on students can guide product features, price levels, distributi",
+      "sb": "Market research on rural households can guide product features, price levels, di"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.73[4]",
+      "b": "CASE 5.7.93[2]",
+      "sa": "Market research on students can guide product features, price levels, distributi",
+      "sb": "Market research on urban commuters can guide product features, price levels, dis"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.77[4]",
+      "b": "CASE 5.7.81[2]",
+      "sa": "Market research on retirees can guide product features, price levels, distributi",
+      "sb": "Market research on fitness enthusiasts can guide product features, price levels,"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.77[4]",
+      "b": "CASE 5.7.89[2]",
+      "sa": "Market research on retirees can guide product features, price levels, distributi",
+      "sb": "Market research on premium buyers can guide product features, price levels, dist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.77[4]",
+      "b": "CASE 5.7.91[1]",
+      "sa": "Market research on retirees can guide product features, price levels, distributi",
+      "sb": "Market research on rural households can guide product features, price levels, di"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.77[4]",
+      "b": "CASE 5.7.93[2]",
+      "sa": "Market research on retirees can guide product features, price levels, distributi",
+      "sb": "Market research on urban commuters can guide product features, price levels, dis"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.79[4]",
+      "b": "CASE 5.7.82[1]",
+      "sa": "Market research on students informs only promotion decisions and cannot influenc",
+      "sb": "Market research on retirees informs only promotion decisions and cannot influenc"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.79[4]",
+      "b": "CASE 5.7.100[1]",
+      "sa": "Market research on students informs only promotion decisions and cannot influenc",
+      "sb": "Market research on commuters informs only promotion decisions and cannot influen"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.82[1]",
+      "b": "CASE 5.7.100[1]",
+      "sa": "Market research on retirees informs only promotion decisions and cannot influenc",
+      "sb": "Market research on commuters informs only promotion decisions and cannot influen"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.67[3]",
+      "b": "CASE 5.6.72[3]",
+      "sa": "Mass marketing of toothpaste trades flexibility for efficiency when one formula ",
+      "sb": "Mass marketing of shampoo trades flexibility for efficiency when one formula mus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.67[3]",
+      "b": "CASE 5.6.77[1]",
+      "sa": "Mass marketing of toothpaste trades flexibility for efficiency when one formula ",
+      "sb": "Mass marketing of pencils trades flexibility for efficiency when one formula mus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.67[3]",
+      "b": "CASE 5.6.83[3]",
+      "sa": "Mass marketing of toothpaste trades flexibility for efficiency when one formula ",
+      "sb": "Mass marketing of deodorant trades flexibility for efficiency when one formula m"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.72[3]",
+      "b": "CASE 5.6.77[1]",
+      "sa": "Mass marketing of shampoo trades flexibility for efficiency when one formula mus",
+      "sb": "Mass marketing of pencils trades flexibility for efficiency when one formula mus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.72[3]",
+      "b": "CASE 5.6.83[3]",
+      "sa": "Mass marketing of shampoo trades flexibility for efficiency when one formula mus",
+      "sb": "Mass marketing of deodorant trades flexibility for efficiency when one formula m"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.6.77[1]",
+      "b": "CASE 5.6.83[3]",
+      "sa": "Mass marketing of pencils trades flexibility for efficiency when one formula mus",
+      "sb": "Mass marketing of deodorant trades flexibility for efficiency when one formula m"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.60[2]",
+      "b": "CASE 5.6.68[2]",
+      "sa": "High-volume production of ballpoint pens allows fixed factory costs to be spread",
+      "sb": "High-volume production of toothpaste allows fixed factory costs to be spread acr"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.68[2]",
+      "b": "CASE 5.6.79[1]",
+      "sa": "High-volume production of toothpaste allows fixed factory costs to be spread acr",
+      "sb": "High-volume production of facial tissues allows fixed factory costs to be spread"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.61[2]",
+      "b": "CASE 5.6.67[0]",
+      "sa": "Automated filling lines for ballpoint pens become more cost-efficient per unit w",
+      "sb": "Automated filling lines for toothpaste become more cost-efficient per unit when "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.67[0]",
+      "b": "CASE 5.6.75[4]",
+      "sa": "Automated filling lines for toothpaste become more cost-efficient per unit when ",
+      "sb": "Automated filling lines for dishwashing liquid become more cost-efficient per un"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.67[0]",
+      "b": "CASE 5.6.81[1]",
+      "sa": "Automated filling lines for toothpaste become more cost-efficient per unit when ",
+      "sb": "Automated filling lines for facial tissues become more cost-efficient per unit w"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.61[3]",
+      "b": "CASE 5.6.68[1]",
+      "sa": "Segment marketing of ballpoint pens would imply different variants for different",
+      "sb": "Segment marketing of toothpaste would imply different variants for different sub"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.61[3]",
+      "b": "CASE 5.6.73[1]",
+      "sa": "Segment marketing of ballpoint pens would imply different variants for different",
+      "sb": "Segment marketing of shampoo would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.61[3]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of ballpoint pens would imply different variants for different",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.61[3]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of ballpoint pens would imply different variants for different",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[2]",
+      "b": "CASE 5.6.68[1]",
+      "sa": "Segment marketing of bar soap would imply different variants for different subgr",
+      "sb": "Segment marketing of toothpaste would imply different variants for different sub"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[2]",
+      "b": "CASE 5.6.73[1]",
+      "sa": "Segment marketing of bar soap would imply different variants for different subgr",
+      "sb": "Segment marketing of shampoo would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[2]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of bar soap would imply different variants for different subgr",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[2]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of bar soap would imply different variants for different subgr",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.66[1]",
+      "b": "CASE 5.6.68[1]",
+      "sa": "Segment marketing of laundry detergent would imply different variants for differ",
+      "sb": "Segment marketing of toothpaste would imply different variants for different sub"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.66[1]",
+      "b": "CASE 5.6.73[1]",
+      "sa": "Segment marketing of laundry detergent would imply different variants for differ",
+      "sb": "Segment marketing of shampoo would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.66[1]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of laundry detergent would imply different variants for differ",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.66[1]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of laundry detergent would imply different variants for differ",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.71[0]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of notebook paper would imply different variants for different"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.73[1]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of shampoo would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.75[2]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of dishwashing liquid would imply different variants for diffe"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.82[1]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of facial tissues would imply different variants for different"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.68[1]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of toothpaste would imply different variants for different sub",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.71[0]",
+      "b": "CASE 5.6.73[1]",
+      "sa": "Segment marketing of notebook paper would imply different variants for different",
+      "sb": "Segment marketing of shampoo would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.71[0]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of notebook paper would imply different variants for different",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.71[0]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of notebook paper would imply different variants for different",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.73[1]",
+      "b": "CASE 5.6.75[2]",
+      "sa": "Segment marketing of shampoo would imply different variants for different subgro",
+      "sb": "Segment marketing of dishwashing liquid would imply different variants for diffe"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.73[1]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of shampoo would imply different variants for different subgro",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.73[1]",
+      "b": "CASE 5.6.82[1]",
+      "sa": "Segment marketing of shampoo would imply different variants for different subgro",
+      "sb": "Segment marketing of facial tissues would imply different variants for different"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.73[1]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of shampoo would imply different variants for different subgro",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.75[2]",
+      "b": "CASE 5.6.77[4]",
+      "sa": "Segment marketing of dishwashing liquid would imply different variants for diffe",
+      "sb": "Segment marketing of pencils would imply different variants for different subgro"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.75[2]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of dishwashing liquid would imply different variants for diffe",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.77[4]",
+      "b": "CASE 5.6.82[1]",
+      "sa": "Segment marketing of pencils would imply different variants for different subgro",
+      "sb": "Segment marketing of facial tissues would imply different variants for different"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.77[4]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of pencils would imply different variants for different subgro",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.82[1]",
+      "b": "CASE 5.6.84[2]",
+      "sa": "Segment marketing of facial tissues would imply different variants for different",
+      "sb": "Segment marketing of deodorant would imply different variants for different subg"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.62[0]",
+      "b": "CASE 5.6.71[3]",
+      "sa": "If overhead costs for ballpoint pens production remain relatively stable, rising",
+      "sb": "If overhead costs for shampoo production remain relatively stable, rising output"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.66[0]",
+      "b": "CASE 5.6.71[3]",
+      "sa": "If overhead costs for laundry detergent production remain relatively stable, ris",
+      "sb": "If overhead costs for shampoo production remain relatively stable, rising output"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.71[3]",
+      "b": "CASE 5.6.82[2]",
+      "sa": "If overhead costs for shampoo production remain relatively stable, rising output",
+      "sb": "If overhead costs for facial tissues production remain relatively stable, rising"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.62[4]",
+      "b": "CASE 5.6.83[1]",
+      "sa": "Bulk purchasing of raw materials for bar soap can reduce input cost per unit whe",
+      "sb": "Bulk purchasing of raw materials for deodorant can reduce input cost per unit wh"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.71[1]",
+      "b": "CASE 5.6.83[1]",
+      "sa": "Bulk purchasing of raw materials for notebook paper can reduce input cost per un",
+      "sb": "Bulk purchasing of raw materials for deodorant can reduce input cost per unit wh"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.75[1]",
+      "b": "CASE 5.6.83[1]",
+      "sa": "Bulk purchasing of raw materials for dishwashing liquid can reduce input cost pe",
+      "sb": "Bulk purchasing of raw materials for deodorant can reduce input cost per unit wh"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[1]",
+      "b": "CASE 5.6.78[4]",
+      "sa": "Warehousing and distribution of bar soap in standardised packs may lower logisti",
+      "sb": "Warehousing and distribution of pencils in standardised packs may lower logistic"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[1]",
+      "b": "CASE 5.6.84[1]",
+      "sa": "Warehousing and distribution of bar soap in standardised packs may lower logisti",
+      "sb": "Warehousing and distribution of deodorant in standardised packs may lower logist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[4]",
+      "b": "CASE 5.6.78[4]",
+      "sa": "Warehousing and distribution of notebook paper in standardised packs may lower l",
+      "sb": "Warehousing and distribution of pencils in standardised packs may lower logistic"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[4]",
+      "b": "CASE 5.6.84[1]",
+      "sa": "Warehousing and distribution of notebook paper in standardised packs may lower l",
+      "sb": "Warehousing and distribution of deodorant in standardised packs may lower logist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.78[4]",
+      "b": "CASE 5.6.84[1]",
+      "sa": "Warehousing and distribution of pencils in standardised packs may lower logistic",
+      "sb": "Warehousing and distribution of deodorant in standardised packs may lower logist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[3]",
+      "b": "CASE 5.6.68[0]",
+      "sa": "A small producer unable to supply nationwide bar soap demand may focus on a narr",
+      "sb": "A small producer unable to supply nationwide toothpaste demand may focus on a na"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.64[3]",
+      "b": "CASE 5.6.85[0]",
+      "sa": "A small producer unable to supply nationwide bar soap demand may focus on a narr",
+      "sb": "A small producer unable to supply nationwide deodorant demand may focus on a nar"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.68[0]",
+      "b": "CASE 5.6.73[4]",
+      "sa": "A small producer unable to supply nationwide toothpaste demand may focus on a na",
+      "sb": "A small producer unable to supply nationwide dishwashing liquid demand may focus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.6.68[0]",
+      "b": "CASE 5.6.85[0]",
+      "sa": "A small producer unable to supply nationwide toothpaste demand may focus on a na",
+      "sb": "A small producer unable to supply nationwide deodorant demand may focus on a nar"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.6.73[4]",
+      "b": "CASE 5.6.85[0]",
+      "sa": "A small producer unable to supply nationwide dishwashing liquid demand may focus",
+      "sb": "A small producer unable to supply nationwide deodorant demand may focus on a nar"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.6.65[0]",
+      "b": "CASE 5.6.77[3]",
+      "sa": "A national advertising campaign for one standard laundry detergent brand can amo",
+      "sb": "A national advertising campaign for one standard pencils brand can amortise prom"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.66[3]",
+      "b": "CASE 5.6.76[3]",
+      "sa": "Limited production capacity for laundry detergent may push a firm toward segment",
+      "sb": "Limited production capacity for pencils may push a firm toward segment-specific "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.70[2]",
+      "b": "CASE 5.6.76[3]",
+      "sa": "Limited production capacity for notebook paper may push a firm toward segment-sp",
+      "sb": "Limited production capacity for pencils may push a firm toward segment-specific "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.86[1]",
+      "b": "CASE 5.6.89[2]",
+      "sa": "Market research revealing geographic differences can inform which subgroups a bu",
+      "sb": "Market research revealing demographic differences can inform which subgroups a b"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.86[1]",
+      "b": "CASE 5.6.93[4]",
+      "sa": "Market research revealing geographic differences can inform which subgroups a bu",
+      "sb": "Market research revealing psychographic differences can inform which subgroups a"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.86[1]",
+      "b": "CASE 5.6.96[4]",
+      "sa": "Market research revealing geographic differences can inform which subgroups a bu",
+      "sb": "Market research revealing behavioural differences can inform which subgroups a b"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.89[2]",
+      "b": "CASE 5.6.93[4]",
+      "sa": "Market research revealing demographic differences can inform which subgroups a b",
+      "sb": "Market research revealing psychographic differences can inform which subgroups a"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.89[2]",
+      "b": "CASE 5.6.96[4]",
+      "sa": "Market research revealing demographic differences can inform which subgroups a b",
+      "sb": "Market research revealing behavioural differences can inform which subgroups a b"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.93[4]",
+      "b": "CASE 5.6.96[4]",
+      "sa": "Market research revealing psychographic differences can inform which subgroups a",
+      "sb": "Market research revealing behavioural differences can inform which subgroups a b"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.87[2]",
+      "b": "CASE 5.6.92[0]",
+      "sa": "Mass marketing largely ignores detailed geographic differences and offers one pr",
+      "sb": "Mass marketing largely ignores detailed demographic differences and offers one p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.87[2]",
+      "b": "CASE 5.6.95[0]",
+      "sa": "Mass marketing largely ignores detailed geographic differences and offers one pr",
+      "sb": "Mass marketing largely ignores detailed psychographic differences and offers one"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.87[2]",
+      "b": "CASE 5.6.97[2]",
+      "sa": "Mass marketing largely ignores detailed geographic differences and offers one pr",
+      "sb": "Mass marketing largely ignores detailed behavioural differences and offers one p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.92[0]",
+      "b": "CASE 5.6.95[0]",
+      "sa": "Mass marketing largely ignores detailed demographic differences and offers one p",
+      "sb": "Mass marketing largely ignores detailed psychographic differences and offers one"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.92[0]",
+      "b": "CASE 5.6.97[2]",
+      "sa": "Mass marketing largely ignores detailed demographic differences and offers one p",
+      "sb": "Mass marketing largely ignores detailed behavioural differences and offers one p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.95[0]",
+      "b": "CASE 5.6.97[2]",
+      "sa": "Mass marketing largely ignores detailed psychographic differences and offers one",
+      "sb": "Mass marketing largely ignores detailed behavioural differences and offers one p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.88[0]",
+      "b": "CASE 5.6.92[1]",
+      "sa": "Segment marketing uses geographic insight to tailor products to one or more chos",
+      "sb": "Segment marketing uses demographic insight to tailor products to one or more cho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.88[0]",
+      "b": "CASE 5.6.95[1]",
+      "sa": "Segment marketing uses geographic insight to tailor products to one or more chos",
+      "sb": "Segment marketing uses psychographic insight to tailor products to one or more c"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.88[0]",
+      "b": "CASE 5.6.98[2]",
+      "sa": "Segment marketing uses geographic insight to tailor products to one or more chos",
+      "sb": "Segment marketing uses behavioural insight to tailor products to one or more cho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.92[1]",
+      "b": "CASE 5.6.95[1]",
+      "sa": "Segment marketing uses demographic insight to tailor products to one or more cho",
+      "sb": "Segment marketing uses psychographic insight to tailor products to one or more c"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.92[1]",
+      "b": "CASE 5.6.98[2]",
+      "sa": "Segment marketing uses demographic insight to tailor products to one or more cho",
+      "sb": "Segment marketing uses behavioural insight to tailor products to one or more cho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.6.95[1]",
+      "b": "CASE 5.6.98[2]",
+      "sa": "Segment marketing uses psychographic insight to tailor products to one or more c",
+      "sb": "Segment marketing uses behavioural insight to tailor products to one or more cho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.88[1]",
+      "b": "CASE 5.6.92[2]",
+      "sa": "Niche marketing applies deeper geographic insight to serve a narrow subgroup wit",
+      "sb": "Niche marketing applies deeper demographic insight to serve a narrow subgroup wi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.88[1]",
+      "b": "CASE 5.6.95[4]",
+      "sa": "Niche marketing applies deeper geographic insight to serve a narrow subgroup wit",
+      "sb": "Niche marketing applies deeper psychographic insight to serve a narrow subgroup "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.88[1]",
+      "b": "CASE 5.6.99[1]",
+      "sa": "Niche marketing applies deeper geographic insight to serve a narrow subgroup wit",
+      "sb": "Niche marketing applies deeper behavioural insight to serve a narrow subgroup wi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.92[2]",
+      "b": "CASE 5.6.95[4]",
+      "sa": "Niche marketing applies deeper demographic insight to serve a narrow subgroup wi",
+      "sb": "Niche marketing applies deeper psychographic insight to serve a narrow subgroup "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.92[2]",
+      "b": "CASE 5.6.99[1]",
+      "sa": "Niche marketing applies deeper demographic insight to serve a narrow subgroup wi",
+      "sb": "Niche marketing applies deeper behavioural insight to serve a narrow subgroup wi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.6.95[4]",
+      "b": "CASE 5.6.99[1]",
+      "sa": "Niche marketing applies deeper psychographic insight to serve a narrow subgroup ",
+      "sb": "Niche marketing applies deeper behavioural insight to serve a narrow subgroup wi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.81[1]",
+      "b": "CASE 5.7.83[3]",
+      "sa": "A product line aimed at students must contain unrelated categories such as food ",
+      "sb": "A product line aimed at retirees must contain unrelated categories such as food "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.38[2]",
+      "b": "CASE 5.7.41[0]",
+      "sa": "Low introductory pricing for a new household cleaners product can attract first ",
+      "sb": "Low introductory pricing for a new sportswear product can attract first buyers d"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.42[4]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new organic cereals product can attract first buy"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.46[0]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new office stationery product can attract first b"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.51[1]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new garden tools product can attract first buyers"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.54[0]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new pet food product can attract first buyers dur"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.56[1]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new skincare creams product can attract first buy"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.57[4]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new kitchen appliances product can attract first "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.59[4]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new children's toys product can attract first buy"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.84,
+      "a": "CASE 5.7.41[0]",
+      "b": "CASE 5.7.62[3]",
+      "sa": "Low introductory pricing for a new sportswear product can attract first buyers d",
+      "sb": "Low introductory pricing for a new bicycle accessories product can attract first"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.80[1]",
+      "b": "CASE 5.7.82[4]",
+      "sa": "Low introductory pricing aimed at students is classified as product-mix contract",
+      "sb": "Low introductory pricing aimed at retirees is classified as product-mix contract"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.80[1]",
+      "b": "CASE 5.7.100[4]",
+      "sa": "Low introductory pricing aimed at students is classified as product-mix contract",
+      "sb": "Low introductory pricing aimed at commuters is classified as product-mix contrac"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.82[4]",
+      "b": "CASE 5.7.100[4]",
+      "sa": "Low introductory pricing aimed at retirees is classified as product-mix contract",
+      "sb": "Low introductory pricing aimed at commuters is classified as product-mix contrac"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.7.41[2]",
+      "b": "CASE 5.7.51[3]",
+      "sa": "Seasonal sales events promoting sportswear are sales-promotion tools within the ",
+      "sb": "Seasonal sales events promoting garden tools are sales-promotion tools within th"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[0]",
+      "b": "CASE 5.7.81[3]",
+      "sa": "A promotional message tailored to students should align with the product and pri",
+      "sb": "A promotional message tailored to fitness enthusiasts should align with the prod"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[0]",
+      "b": "CASE 5.7.89[3]",
+      "sa": "A promotional message tailored to students should align with the product and pri",
+      "sb": "A promotional message tailored to premium buyers should align with the product a"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[0]",
+      "b": "CASE 5.7.91[3]",
+      "sa": "A promotional message tailored to students should align with the product and pri",
+      "sb": "A promotional message tailored to rural households should align with the product"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[0]",
+      "b": "CASE 5.7.93[3]",
+      "sa": "A promotional message tailored to students should align with the product and pri",
+      "sb": "A promotional message tailored to urban commuters should align with the product "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.7.74[1]",
+      "b": "CASE 5.7.78[1]",
+      "sa": "Affordable pricing for students supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for retirees supports the marketing-mix goal of offering valu"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[1]",
+      "b": "CASE 5.7.81[4]",
+      "sa": "Affordable pricing for students supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for fitness enthusiasts supports the marketing-mix goal of of"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[1]",
+      "b": "CASE 5.7.89[4]",
+      "sa": "Affordable pricing for students supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for premium buyers supports the marketing-mix goal of offerin"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[1]",
+      "b": "CASE 5.7.92[0]",
+      "sa": "Affordable pricing for students supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for rural households supports the marketing-mix goal of offer"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.74[1]",
+      "b": "CASE 5.7.93[4]",
+      "sa": "Affordable pricing for students supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for urban commuters supports the marketing-mix goal of offeri"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.78[1]",
+      "b": "CASE 5.7.81[4]",
+      "sa": "Affordable pricing for retirees supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for fitness enthusiasts supports the marketing-mix goal of of"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.78[1]",
+      "b": "CASE 5.7.89[4]",
+      "sa": "Affordable pricing for retirees supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for premium buyers supports the marketing-mix goal of offerin"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.78[1]",
+      "b": "CASE 5.7.92[0]",
+      "sa": "Affordable pricing for retirees supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for rural households supports the marketing-mix goal of offer"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.78[1]",
+      "b": "CASE 5.7.93[4]",
+      "sa": "Affordable pricing for retirees supports the marketing-mix goal of offering valu",
+      "sb": "Affordable pricing for urban commuters supports the marketing-mix goal of offeri"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.7.74[2]",
+      "b": "CASE 5.7.78[3]",
+      "sa": "Brand trust is especially valuable for students who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for retirees who rely on familiar names when "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.74[2]",
+      "b": "CASE 5.7.82[0]",
+      "sa": "Brand trust is especially valuable for students who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for fitness enthusiasts who rely on familiar "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.74[2]",
+      "b": "CASE 5.7.90[1]",
+      "sa": "Brand trust is especially valuable for students who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for premium buyers who rely on familiar names"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.74[2]",
+      "b": "CASE 5.7.92[1]",
+      "sa": "Brand trust is especially valuable for students who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for rural households who rely on familiar nam"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.74[2]",
+      "b": "CASE 5.7.94[0]",
+      "sa": "Brand trust is especially valuable for students who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for urban commuters who rely on familiar name"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.78[3]",
+      "b": "CASE 5.7.82[0]",
+      "sa": "Brand trust is especially valuable for retirees who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for fitness enthusiasts who rely on familiar "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.78[3]",
+      "b": "CASE 5.7.90[1]",
+      "sa": "Brand trust is especially valuable for retirees who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for premium buyers who rely on familiar names"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.78[3]",
+      "b": "CASE 5.7.92[1]",
+      "sa": "Brand trust is especially valuable for retirees who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for rural households who rely on familiar nam"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.78[3]",
+      "b": "CASE 5.7.94[0]",
+      "sa": "Brand trust is especially valuable for retirees who rely on familiar names when ",
+      "sb": "Brand trust is especially valuable for urban commuters who rely on familiar name"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 5.7.75[0]",
+      "b": "CASE 5.7.78[4]",
+      "sa": "Selective distribution may suit premium offers targeted at students when service",
+      "sb": "Selective distribution may suit premium offers targeted at retirees when service"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 5.7.75[0]",
+      "b": "CASE 5.7.90[2]",
+      "sa": "Selective distribution may suit premium offers targeted at students when service",
+      "sb": "Selective distribution may suit premium offers targeted at premium buyers when s"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.86,
+      "a": "CASE 5.7.78[4]",
+      "b": "CASE 5.7.90[2]",
+      "sa": "Selective distribution may suit premium offers targeted at retirees when service",
+      "sb": "Selective distribution may suit premium offers targeted at premium buyers when s"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.87,
+      "a": "CASE 5.7.75[1]",
+      "b": "CASE 5.7.79[2]",
+      "sa": "Personal selling may be effective for students when the product requires detaile",
+      "sb": "Personal selling may be effective for retirees when the product requires detaile"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.7.75[2]",
+      "b": "CASE 5.7.80[2]",
+      "sa": "A relaunch with updated packaging can refresh appeal among students without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among retirees without laun"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.75[2]",
+      "b": "CASE 5.7.84[1]",
+      "sa": "A relaunch with updated packaging can refresh appeal among students without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among fitness enthusiasts w"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.75[2]",
+      "b": "CASE 5.7.90[4]",
+      "sa": "A relaunch with updated packaging can refresh appeal among students without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among premium buyers withou"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.75[2]",
+      "b": "CASE 5.7.93[0]",
+      "sa": "A relaunch with updated packaging can refresh appeal among students without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among rural households with"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.75[2]",
+      "b": "CASE 5.7.94[3]",
+      "sa": "A relaunch with updated packaging can refresh appeal among students without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among urban commuters witho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.80[2]",
+      "b": "CASE 5.7.84[1]",
+      "sa": "A relaunch with updated packaging can refresh appeal among retirees without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among fitness enthusiasts w"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.80[2]",
+      "b": "CASE 5.7.90[4]",
+      "sa": "A relaunch with updated packaging can refresh appeal among retirees without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among premium buyers withou"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.80[2]",
+      "b": "CASE 5.7.93[0]",
+      "sa": "A relaunch with updated packaging can refresh appeal among retirees without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among rural households with"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.82,
+      "a": "CASE 5.7.80[2]",
+      "b": "CASE 5.7.94[3]",
+      "sa": "A relaunch with updated packaging can refresh appeal among retirees without laun",
+      "sb": "A relaunch with updated packaging can refresh appeal among urban commuters witho"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.75[3]",
+      "b": "CASE 5.7.85[2]",
+      "sa": "Line extension with a budget variant can attract students within an existing pro",
+      "sb": "Line extension with a budget variant can attract fitness enthusiasts within an e"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.75[3]",
+      "b": "CASE 5.7.89[1]",
+      "sa": "Line extension with a budget variant can attract students within an existing pro",
+      "sb": "Line extension with a budget variant can attract budget-conscious shoppers withi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.75[3]",
+      "b": "CASE 5.7.91[0]",
+      "sa": "Line extension with a budget variant can attract students within an existing pro",
+      "sb": "Line extension with a budget variant can attract premium buyers within an existi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.75[3]",
+      "b": "CASE 5.7.93[1]",
+      "sa": "Line extension with a budget variant can attract students within an existing pro",
+      "sb": "Line extension with a budget variant can attract rural households within an exis"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.75[3]",
+      "b": "CASE 5.7.95[0]",
+      "sa": "Line extension with a budget variant can attract students within an existing pro",
+      "sb": "Line extension with a budget variant can attract urban commuters within an exist"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.80[0]",
+      "b": "CASE 5.7.82[3]",
+      "sa": "A familiar brand offers no reassurance to students because brands belong exclusi",
+      "sb": "A familiar brand offers no reassurance to retirees because brands belong exclusi"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.80[0]",
+      "b": "CASE 5.7.100[2]",
+      "sa": "A familiar brand offers no reassurance to students because brands belong exclusi",
+      "sb": "A familiar brand offers no reassurance to commuters because brands belong exclus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.82[3]",
+      "b": "CASE 5.7.100[2]",
+      "sa": "A familiar brand offers no reassurance to retirees because brands belong exclusi",
+      "sb": "A familiar brand offers no reassurance to commuters because brands belong exclus"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.85,
+      "a": "CASE 5.7.80[3]",
+      "b": "CASE 5.7.83[0]",
+      "sa": "Selling through channels preferred by students is a promotion activity because i",
+      "sb": "Selling through channels preferred by retirees is a promotion activity because i"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.88,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.83[2]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to retirees is a price tool because sales staff set the permane"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.84[4]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to premium buyers is a price tool because sales staff set the p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.90[0]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to budget shoppers is a price tool because sales staff set the "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.95[2]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to rural customers is a price tool because sales staff set the "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.97[0]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to business clients is a price tool because sales staff set the"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.81[0]",
+      "b": "CASE 5.7.98[4]",
+      "sa": "Personal selling to students is a price tool because sales staff set the permane",
+      "sb": "Personal selling to young families is a price tool because sales staff set the p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.83[2]",
+      "b": "CASE 5.7.84[4]",
+      "sa": "Personal selling to retirees is a price tool because sales staff set the permane",
+      "sb": "Personal selling to premium buyers is a price tool because sales staff set the p"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.83[2]",
+      "b": "CASE 5.7.90[0]",
+      "sa": "Personal selling to retirees is a price tool because sales staff set the permane",
+      "sb": "Personal selling to budget shoppers is a price tool because sales staff set the "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.83[2]",
+      "b": "CASE 5.7.95[2]",
+      "sa": "Personal selling to retirees is a price tool because sales staff set the permane",
+      "sb": "Personal selling to rural customers is a price tool because sales staff set the "
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.83[2]",
+      "b": "CASE 5.7.97[0]",
+      "sa": "Personal selling to retirees is a price tool because sales staff set the permane",
+      "sb": "Personal selling to business clients is a price tool because sales staff set the"
+    },
+    {
+      "type": "cross_near_stmt",
+      "sim": 0.83,
+      "a": "CASE 5.7.83[2]",
+      "b": "CASE 5.7.98[4]",
+      "sa": "Personal selling to retirees is a price tool because sales staff set the permane",
+      "sb": "Personal selling to young families is a price tool because sales staff set the p"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.02",
+      "b": "CASE 4.5.41"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.03",
+      "b": "CASE 4.5.40"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.06",
+      "b": "CASE 4.5.43"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.07",
+      "b": "CASE 4.5.44"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.08",
+      "b": "CASE 4.5.21"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.09",
+      "b": "CASE 4.5.46"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.12",
+      "b": "CASE 4.5.49"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.5",
+      "sim": 1,
+      "a": "CASE 4.5.22",
+      "b": "CASE 4.5.48"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.01",
+      "b": "CASE 4.6.50"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.03",
+      "b": "CASE 4.6.40"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.04",
+      "b": "CASE 4.6.41"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.07",
+      "b": "CASE 4.6.44"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.08",
+      "b": "CASE 4.6.45"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.10",
+      "b": "CASE 4.6.47"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.11",
+      "b": "CASE 4.6.48"
+    },
+    {
+      "type": "near_context",
+      "sub": "4.6",
+      "sim": 1,
+      "a": "CASE 4.6.12",
+      "b": "CASE 4.6.49"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.01",
+      "b": "CASE 5.1.87"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.03",
+      "b": "CASE 5.1.89"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.04",
+      "b": "CASE 5.1.64"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.05",
+      "b": "CASE 5.1.91"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.07",
+      "b": "CASE 5.1.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.08",
+      "b": "CASE 5.1.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.09",
+      "b": "CASE 5.1.95"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.11",
+      "b": "CASE 5.1.97"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.12",
+      "b": "CASE 5.1.72"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.13",
+      "b": "CASE 5.1.99"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.16",
+      "b": "CASE 5.1.76"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.20",
+      "b": "CASE 5.1.80"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.24",
+      "b": "CASE 5.1.84"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.28",
+      "b": "CASE 5.1.88"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.32",
+      "b": "CASE 5.1.92"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.36",
+      "b": "CASE 5.1.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.1",
+      "sim": 1,
+      "a": "CASE 5.1.40",
+      "b": "CASE 5.1.100"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.01",
+      "b": "CASE 5.2.85"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.03",
+      "b": "CASE 5.2.87"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.04",
+      "b": "CASE 5.2.88"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.06",
+      "b": "CASE 5.2.90"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.07",
+      "b": "CASE 5.2.91"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.09",
+      "b": "CASE 5.2.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.25"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.40"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.55"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.10",
+      "b": "CASE 5.2.70"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.11",
+      "b": "CASE 5.2.95"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.12",
+      "b": "CASE 5.2.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.28"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.43"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.58"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.13",
+      "b": "CASE 5.2.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.14",
+      "b": "CASE 5.2.98"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.15",
+      "b": "CASE 5.2.99"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.31"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.46"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.16",
+      "b": "CASE 5.2.61"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.34"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.49"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.19",
+      "b": "CASE 5.2.64"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.37"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.52"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.22",
+      "b": "CASE 5.2.67"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.25",
+      "b": "CASE 5.2.40"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.25",
+      "b": "CASE 5.2.55"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.25",
+      "b": "CASE 5.2.70"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.28",
+      "b": "CASE 5.2.43"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.28",
+      "b": "CASE 5.2.58"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.28",
+      "b": "CASE 5.2.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.31",
+      "b": "CASE 5.2.46"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.31",
+      "b": "CASE 5.2.61"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.34",
+      "b": "CASE 5.2.49"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.34",
+      "b": "CASE 5.2.64"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.37",
+      "b": "CASE 5.2.52"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.37",
+      "b": "CASE 5.2.67"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.40",
+      "b": "CASE 5.2.55"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.40",
+      "b": "CASE 5.2.70"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.43",
+      "b": "CASE 5.2.58"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.43",
+      "b": "CASE 5.2.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.46",
+      "b": "CASE 5.2.61"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.49",
+      "b": "CASE 5.2.64"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.52",
+      "b": "CASE 5.2.67"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.55",
+      "b": "CASE 5.2.70"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.2",
+      "sim": 1,
+      "a": "CASE 5.2.58",
+      "b": "CASE 5.2.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.02",
+      "b": "CASE 5.3.89"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.03",
+      "b": "CASE 5.3.90"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.04",
+      "b": "CASE 5.3.64"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.06",
+      "b": "CASE 5.3.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.07",
+      "b": "CASE 5.3.94"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.08",
+      "b": "CASE 5.3.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.10",
+      "b": "CASE 5.3.97"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.11",
+      "b": "CASE 5.3.98"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.12",
+      "b": "CASE 5.3.72"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.16",
+      "b": "CASE 5.3.76"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.20",
+      "b": "CASE 5.3.80"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.24",
+      "b": "CASE 5.3.84"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.28",
+      "b": "CASE 5.3.88"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.32",
+      "b": "CASE 5.3.92"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.36",
+      "b": "CASE 5.3.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.3",
+      "sim": 1,
+      "a": "CASE 5.3.40",
+      "b": "CASE 5.3.100"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.01",
+      "b": "CASE 5.4.84"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.02",
+      "b": "CASE 5.4.62"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.04",
+      "b": "CASE 5.4.87"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.05",
+      "b": "CASE 5.4.88"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.06",
+      "b": "CASE 5.4.66"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.08",
+      "b": "CASE 5.4.91"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.09",
+      "b": "CASE 5.4.92"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.10",
+      "b": "CASE 5.4.70"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.12",
+      "b": "CASE 5.4.95"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.13",
+      "b": "CASE 5.4.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.14",
+      "b": "CASE 5.4.74"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.16",
+      "b": "CASE 5.4.99"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.17",
+      "b": "CASE 5.4.100"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.18",
+      "b": "CASE 5.4.78"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.22",
+      "b": "CASE 5.4.82"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.26",
+      "b": "CASE 5.4.86"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.30",
+      "b": "CASE 5.4.90"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.34",
+      "b": "CASE 5.4.94"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.4",
+      "sim": 1,
+      "a": "CASE 5.4.38",
+      "b": "CASE 5.4.98"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.01",
+      "b": "CASE 5.5.61"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.02",
+      "b": "CASE 5.5.90"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.03",
+      "b": "CASE 5.5.91"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.04",
+      "b": "CASE 5.5.92"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.05",
+      "b": "CASE 5.5.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.06",
+      "b": "CASE 5.5.94"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.07",
+      "b": "CASE 5.5.95"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.08",
+      "b": "CASE 5.5.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.09",
+      "b": "CASE 5.5.69"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.10",
+      "b": "CASE 5.5.98"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.11",
+      "b": "CASE 5.5.99"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.12",
+      "b": "CASE 5.5.100"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.13",
+      "b": "CASE 5.5.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.17",
+      "b": "CASE 5.5.77"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.21",
+      "b": "CASE 5.5.81"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.25",
+      "b": "CASE 5.5.85"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.29",
+      "b": "CASE 5.5.89"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.33",
+      "b": "CASE 5.5.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.5",
+      "sim": 1,
+      "a": "CASE 5.5.37",
+      "b": "CASE 5.5.97"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.01",
+      "b": "CASE 5.6.61"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.05",
+      "b": "CASE 5.6.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.09",
+      "b": "CASE 5.6.69"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.13",
+      "b": "CASE 5.6.73"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.17",
+      "b": "CASE 5.6.77"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.21",
+      "b": "CASE 5.6.81"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.25",
+      "b": "CASE 5.6.85"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.29",
+      "b": "CASE 5.6.89"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.33",
+      "b": "CASE 5.6.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.6",
+      "sim": 1,
+      "a": "CASE 5.6.37",
+      "b": "CASE 5.6.97"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.01",
+      "b": "CASE 5.7.87"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.17"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.32"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.47"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.02",
+      "b": "CASE 5.7.62"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.03",
+      "b": "CASE 5.7.89"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.04",
+      "b": "CASE 5.7.90"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.20"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.35"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.50"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.05",
+      "b": "CASE 5.7.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.06",
+      "b": "CASE 5.7.92"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.07",
+      "b": "CASE 5.7.93"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.23"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.38"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.53"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.08",
+      "b": "CASE 5.7.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.09",
+      "b": "CASE 5.7.95"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.10",
+      "b": "CASE 5.7.96"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.26"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.41"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.56"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.11",
+      "b": "CASE 5.7.71"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.12",
+      "b": "CASE 5.7.98"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.13",
+      "b": "CASE 5.7.99"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.29"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.44"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.59"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.14",
+      "b": "CASE 5.7.74"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.17",
+      "b": "CASE 5.7.32"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.17",
+      "b": "CASE 5.7.47"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.17",
+      "b": "CASE 5.7.62"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.20",
+      "b": "CASE 5.7.35"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.20",
+      "b": "CASE 5.7.50"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.20",
+      "b": "CASE 5.7.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.23",
+      "b": "CASE 5.7.38"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.23",
+      "b": "CASE 5.7.53"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.23",
+      "b": "CASE 5.7.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.26",
+      "b": "CASE 5.7.41"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.26",
+      "b": "CASE 5.7.56"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.26",
+      "b": "CASE 5.7.71"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.29",
+      "b": "CASE 5.7.44"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.29",
+      "b": "CASE 5.7.59"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.29",
+      "b": "CASE 5.7.74"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.32",
+      "b": "CASE 5.7.47"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.32",
+      "b": "CASE 5.7.62"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.35",
+      "b": "CASE 5.7.50"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.35",
+      "b": "CASE 5.7.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.38",
+      "b": "CASE 5.7.53"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.38",
+      "b": "CASE 5.7.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.41",
+      "b": "CASE 5.7.56"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.41",
+      "b": "CASE 5.7.71"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.44",
+      "b": "CASE 5.7.59"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.44",
+      "b": "CASE 5.7.74"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.47",
+      "b": "CASE 5.7.62"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.50",
+      "b": "CASE 5.7.65"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.53",
+      "b": "CASE 5.7.68"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.56",
+      "b": "CASE 5.7.71"
+    },
+    {
+      "type": "near_context",
+      "sub": "5.7",
+      "sim": 1,
+      "a": "CASE 5.7.59",
+      "b": "CASE 5.7.74"
+    }
+  ]
+}

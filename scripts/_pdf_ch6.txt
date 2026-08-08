@@ -1,0 +1,518 @@
+During their first year in business, Tina and Steve buy and sell a lot of computers, they sup-
+port their customers by solving their computer problems, and they hire two assistants who
+deal with the customers and other stakeholders, take care of the companyâ€™s website and
+do all the paperwork and the bookkeeping. This means that a lot of business transactions
+like purchases, sales, borrowing and lending money etc. take place and businesses need
+to keep accurate records of these business transactions. Bookkeepers are responsible
+for recording these transactions that are always verified by a document (e.g. an invoice or
+a receipt). The aim of recording all transactions is to generate information on the financial
+status of the business. Statements that provide this information are called accounts.
+6.1 	What a balance sheet is
+Tina and Steve have started their business, using computers that they already had as well
+as a new one. They have also purchased some equipment and office furniture and use Ti-
+naâ€™s car to drive to their customers. Computers, office equipment and cars â€“ these things
+are all assets, â€œthingsâ€ that the business owns and that are used for the business. Tina and
+Steve make a list with all the assets of their business and their values in euros (on the left
+side of the list) and compare it with the amount of money that had to be borrowed from the
+bank (on the right side of the list) to pay for some of their purchases:
+Assets 	euros 	euros
+Office equipment including computers 	25,000
+Car 	8,000
+Inventory: computers in stock to be sold again 	12,500 	Bank loan 	25,000
+Cash and bank deposit 	3,500
+49,000
+Please note that there are two types of computers in the list: computers that are used in
+the office and are not for sale, and other computers that were bought to be resold (inven-
+tory). This difference is important because they are different types of assets.
+Only part of the assets was financed by using money from the bank loan. This is due to the
+fact that Tina uses her own car exclusively for the company and Steve uses computers that
+he already owned. They also had some money of their own which they used for setting up
+the business. Therefore, the total amount of the bank loan (which is a liability, i.e. money
+that is owed to someone else) is lower than the total amount of the assets. The difference
+between these two positions is the amount that Tina and Steve were able to finance them-
+selves; it is called ownerâ€™s equity. It is the proportion of the assets that was NOT financed
+by debt. If we add this position to Tinaâ€™s and Steveâ€™s list, their list becomes a balance
+sheet:
+
+-- 50 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	53
+Assets (euros) 	Liabilities and equity (euros)
+Office equipment including
+computers 25,000 	Ownerâ€™s equity (capital) 	24,000
+Car 	8,000
+Inventory 	12,500 	Bank loan ( liabilities) 	25,000
+Cash and bank deposit 	3,500
+49,000 	49,000
+A balance sheet comprises a companyâ€™s assets and reveals how they were financed.
+The amount of assets equals the amount of liabilities plus ownerâ€™s equity:
+assets = liabilities + ownerâ€™s equity
+This must be an equation because
+âˆŽ 	all assets were funded either through equity or liabilities,
+âˆŽ 	all funds are somehow bound or invested in the business (even money held as cash
+or in a bank account was either funded through equity or liabilities and is bound in the
+specific form it is currently held) and
+âˆŽ 	any increase in assets must be financed by an increase in either liabilities or equity
+(capital).
+Please note that if Tina and Steve buy computer software and pay cash, the total amount
+of the assets remains the same (one asset â€“ software â€“ increases, but another one â€“ cash
+â€“ decreases by the exact same amount, so it is just an â€œasset swapâ€). But if they buy the
+software on credit, then the amount of assets increases and liabilities also increase by the
+exact same amount. Accordingly, the balance sheet total increases.
+Assets are usually listed in the balance sheet in a certain order. They comprise fixed assets
+(or non-current assets) that normally have a lifespan of more than one year and are in-
+tended to be used in the company for a longer time period than one year. Usually they can-
+not be turned into cash so easily. Current assets have higher liquidity. They are usually not
+used longer than a year because they are used up, spent in production or sold.
+Examples of fixed assets / non-current assets are property, plant, premises, buildings,
+machinery and all kind of equipment like office equipment, e.g. computers that are used in
+the office. Also financial assets â€“ if meant to be kept longer than a year â€“ can be fixed or
+non-current assets.
+Examples of current assets are inventory (merchandise that has not been sold yet, like
+computers in stock), accounts receivables / debtors (money that is owed to the business,
+also called trade receivables), cash.
+There are also intangible assets like trademarks, patents and copyrights. Although they
+cannot be seen or touched they are also of value for the business like tangible assets are.
+Tina and Steve do not have any intangible assets (yet), but the AT&S balance sheet (see
+below) contains intangible assets of almost 76 million euros, mainly acquired patents,
+trademarks and licenses.
+
+-- 51 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	54
+Accounting â€“ keeping record of business transactions
+Liabilities are debts and obligations that are owed to other persons, businesses or banks
+and need to be repaid at a certain point in time and/or over a certain period of time. These
+funds are usually provided by banks or suppliers. Money owed to suppliers is also called
+trade credit or trade payables. Current liabilities are debts or obligations that are due with-
+in one year. Accordingly, non-current liabilities have a duration of more than one year.
+Equity / ownerâ€™s equity is the difference of assets and liabilities. It is an indicator of the
+wealth of the company. A high equity ratio (= equity / total capital) indicates that the re-
+spective portion of assets was financed by the companyâ€™s own resources (for example with
+funds provided by the owners or shareholders of the company). It is important for a busi-
+ness to have sufficient equity because: 1) equity usually does not have to be repaid, 2) it
+helps a business to be relatively independent from its creditors and 3) if the company has
+a loss and there is a higher amount of equity, the company will not be over-indebted.
+Determining the value of assets is an important but also tricky task. While it might not be
+difficult to determine the exact amount of a bank loan, it is more difficult to tell what a build-
+ing is worth many years after it was built. Businesses usually want to present themselves
+in the best way possible when setting up their balance sheet. However, they need to stick
+to the legal rules and regulations that aim to ensure that information given in balance
+sheets can be trusted.
+6.2 	Other components of the financial statement of a business
+The balance sheet is not the only component of the financial statement of a business. The
+financial statement of the business aims to show the performance of the business over a
+certain period of time, but the balance sheet only shows the assets, liabilities and equity at a
+certain point in time. It does not contain information on total sales (turnover), nor does it
+reveal the cost of producing the goods and services or other expenses. Therefore, the finan-
+cial statement consists of the balance sheet, the income statement (profit and loss account)
+and the cash flow statement, which gives an insight into the inflow and outflow of cash.
+Figure 24. The main components of a financial statement of a business
+Balance sheet
+Assets, liabilities
+and equity
+Income
+statement
+Revenues, costs
+and expenses
+Cash flow
+statement
+Inflow and
+outflow of cash
+Financial statement
+reveals the performance of a business over a certain period of time
+
+-- 52 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	55
+6.2.1 Profit and loss account
+The profit and loss account is needed to determine whether a business has made a profit
+or a loss over a certain period of time. While the balance sheet contains the assets, liabili-
+ties and equity as of a certain day, all the revenues, costs and expenses that occur during
+a time period (e.g. a year) are summarised in the profit and loss account, which is also
+called income statement.
+Revenues are the income (usually cash or accounts receivable) that is generated from sell-
+ing goods or services to customers. Costs consist of resources that are consumed in order
+to produce the goods or provide the services.
+If the revenues exceed the costs and expenses, the company has a profit. If the companyâ€™s
+costs and expenses are higher than the revenue, it suffers a loss. Letâ€™s assume that the
+2018 income statement of T&S Computer Services OG contains
+âˆŽ 	sales revenue of â‚¬400,000 and
+âˆŽ 	costs and expenses (like material, wages, rent, energy, depreciation*) and other ex-
+penses) of â‚¬310,000, then the difference would be a profit of â‚¬90,000.
+*) Depreciation
+Fixed assets are used again and again over a longer period of time. Tinaâ€™s car for example
+will be used for at least five more years. Steveâ€™s new computer will be used for three years.
+During that time, the value of these assets decreases; it is â€œused upâ€. Recognising this
+effect is called depreciation. Without depreciation, the values of assets that are shown in
+the accounts would be inaccurate. The value of the assets in the balance sheet would be
+overstated and the financial information given would be flawed.
+Steve paid 2,100 euros for his computer and will use it for around three years (so three
+years is the â€œexpected useful lifeâ€ of the computer). Therefore, depreciation equals 700
+euros per year (using the straight line method to calculate depreciation). After the first year,
+the book value of this computer will be 1,400 euros (2,100 âˆ’ 700) in the balance sheet, 700
+euros after the second year and 0 euros after the third year.
+AT&S describes its depreciation method in the annual report: â€œFrom the time of their avail-
+ability for use, the assets are depreciated on a straight line basis over their expected useful
+lives. (â€¦) Land is not subject to depreciation. Scheduled depreciation is based on the fol-
+lowing useful lives: plants and buildings 10-50 years, machinery and technical equipment
+4-15 years, tools, fixtures, furniture and office equipment 3-15 years.â€
+As depreciation represents an assetâ€™s loss in value, it is recognised as an expense included
+in the income statement that reduces the (gross) profit, just like other expenses (wages for
+administration, staff, rent, energy, insurance) do. The main difference to other expenses like
+energy, heating or wages is the fact that depreciation does not cause an actual payment.
+Profits and losses cannot only be seen in the income statement
+At the end of 2018, Tina and Steve draw up another balance sheet to see how their assets
+and capital structure have changed over the first year of business. Due to depreciation, the
+loss of value of their fixed assets, their initial office equipment and the car have a lower
+value than one year before. As they have bought some more office equipment over the year,
+the position has risen to 42,000 euros. Their inventory has increased, but they try to keep
+
+-- 53 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	56
+Accounting â€“ keeping record of business transactions
+their inventory low because computers need a lot of space and lose their value very quick-
+ly. Some customers still owe them money (accounts receivables), just like they have not
+paid all their dues yet (trade credit or accounts payables). They were able to repay part of
+their bank loan.
+Assets (euros) 	Liabilities and equity (euros)
+Office equipment including
+computers 42,000 	Ownerâ€™s equity 	114,000
+Van 	40,000
+Car 	6,000
+Computers in stock to be sold
+again 18,000 	Bank loan 	12,500
+Receivables 	12,500 	Trade credit / payables 	15,000
+Cash and bank deposit 	23,000
+141,500 	141,500
+Equity has increased significantly, due to the profit that they made. To learn more about the
+performance of a business (profit or loss), you can either look at the income statement or
+at the development of (ownerâ€™s) equity. It is important to note that any profit increases and
+any loss decreases equity.
+6.2.2 Cash flow statement
+A cash flow statement is another component of the financial statement of a business. It
+reveals the flows of cash into and out of the business during the year. This is important
+information because cash is needed for the operating activities of the business and for in-
+vesting. But please note that a positive cash flow is not identical with a profit.
+At the beginning of 2018, Tina and Steve had 3,500 euros held in cash positions (including
+cash in bank deposits) and at the end of 2014, they had 23,000 euros in cash. This develop-
+ment results in a total cash flow of 19,500 euros (23,000 â€“ 3,500). This means that at the
+end of the year, there is more cash available, so cash must have flowed into the business.
+To learn more about a cash flowâ€™s origin, a cash flow statement is prepared that differenti-
+ates between changes in cash positions in
+âˆŽ 	operations (these are the core activities of a business, e.g. manufacturing PCBs),
+âˆŽ 	investments and
+âˆŽ 	financing activities.
+Cash flow from operations shows how well a business generates cash with its core
+business. Therefore, it is the most important part of the cash flow statement. This figure
+should be positive, showing that the business is doing well. If a customer pays a receivable
+for example, the payment represents cash from operations. Buying raw material or reduc-
+ing trade credit are activities recorded as cash flow from operations.
+Cash flow from investments shows how cash is spent for long-term investments (e.g. the
+purchase of a plant or office equipment) or generated by the sale of such assets. A negative
+
+-- 54 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	57
+figure does not necessarily indicate a problem. It rather indicates that the business has
+invested in some assets. Inflows of cash from investments could only come from the sale
+of assets or some investments held.
+Financing activities refer to cash that is flowing in from investors or creditors and flowing
+out for paying interest, dividends or repaying debt. At the bottom of the cash flow state-
+ment the net change in cash and equivalents can be found. If this figure is positive, then
+the business has had a positive cash flow that can be used for further activities like making
+investments, expanding the business or for repaying debt.
+The cash flow statement of AT&S shows an (overall) positive picture; cash flow has in-
+creased over the past year. Cash flow from operating activities has been positive and a bit
+higher in 2017/18 than in 2016/17. Due to investments, cash flow from investing activities
+was negative in both years but â€“ at least partly â€“ counterbalanced by cash flow from fi-
+nancing activities and from operating activities. All in all, cash flow is 67.2 million euros
+(270.7 â€“ 203.5) for 2017/18.
+Table 5. Example of a cash flow statement (source: AT&S annual report 2017/18)
+Please note: not all components of this cash flow statement have been explained in the text.
+6.3 	What can be learnt from reading a balance sheet and an
+income statement
+Balance sheets and income statements should always be read with some caution. A lot
+depends on the valuation of assets and businesses are not completely free to determine
+the values of their assets. Depreciation also decreases the value of assets in the balance
+sheet that might actually have a higher value.
+Nevertheless, a lot can be learnt by taking a closer look at the balance sheet and the in-
+come statement of a business. It is of particular interest to see how some positions have
+developed over time as well as in comparison to other competitors in the market. This al-
+lows us to answer questions like:
+Question 1: Which assets does the business have â€“ is there a higher percentage of current
+or non-current assets and is this typical of that type of business?
+Question 2: How has equity developed and how have the assets been financed? Is there a
+higher percentage of long-term or short-term liabilities?
+Question 3: Is there a balance between non-current assets and long-term financial re-
+sources?
+
+-- 55 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	58
+Accounting â€“ keeping record of business transactions
+Question 4: How have revenues developed over the past year? Have they increased â€“ and
+if yes, to what extent? Have the costs, especially costs of sale, developed accordingly?
+Question 5: How have profits (or losses) developed?
+The first three questions can be answered by analysing the balance sheet, for example the
+AT&S balance sheet as of 31 March 2018. Questions 4 and 5 require a look at the statement
+of profit and loss.
+AT&S balance sheet / Statement of financial position
+â‚¬ in thousands 	31 March 2018 	31 March 2017
+ASSETS
+Property, plant and equipment 	766,378 	833,095
+Intangible assets 	75,856 	91,655
+Financial assets 	284 	173
+Other assets 	101,749 	104,440
+Non-current assets 	944,267 	1,029,363
+Inventories 	136,097 	108,844
+Trade and other receivables 	119,711 	86,342
+Financial assets 	59,635 	8,660
+Cash and cash equivalents 	270,729 	203,485
+Current assets 	586,172 	407,331
+Total assets 	1,530,439 	1,436,694
+EQUITY
+Share capital 	141,846 	141,846
+Reserves and other equity 	200,392 	81,729
+Retained earnings 	369,153 	316,519
+Total equity 	711,391 	540,094
+LIABILITIES
+Non-current financial liabilities 	458,359 	519,830
+Provisions and other non-current liabilities 	56,917 	50,019
+Non-current liabilities 	515,276 	569,849
+Trade and other payables 	199,880 	230,845
+Other current liabilities and provisions 	103,892 	95,906
+Current liabilities 	303,772 	326,751
+Total liabilities 	819,048 	896,600
+Total equity and liabilities 	1,530,439 	1,436,694
+Source: AT&S annual report 2017/18
+
+-- 56 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	59
+Answer to question 1: The percentage of non-current assets is 61.7% of total assets,
+most of them being property, plant and equipment. This seems to be typical of a man-
+ufacturing business that needs production plants and a lot of equipment and machin-
+ery. Cash and cash equivalents account for almost half of the current assets (46.2%),
+whereas inventories have a significantly lower level (23.2% of current assets). The
+cash position is also a lot higher than trade payables, so the business would be able
+to pay all the bills if it were necessary.
+Answer to question 2: The total equity has increased by 171,297,000 euros. In 2018,
+it reached 46.8 per cent of total equity and liabilities (equity ratio). So almost half of
+the assets were financed by equity.
+Answer to question 3: Yes, there is, because non-current assets account for around
+944,267,000 euros and there is equity of approximately 711,391,000 euros and non-
+current liabilities (therefore, long-term) of around 458,359,000 euros. This is impor-
+tant because long-term assets should be financed with long-term financial resources.
+Questions 4 and 5 require a look at the statement of profit and loss.
+AT&S statement of profit and loss
+â‚¬ in thousands 	2017/18 	2016/17
+Revenue 	991,843 	814,906
+Cost of sales 	(829,539) 	(760,172)
+Gross profit 	162,304 	54,734
+Distribution costs 	(32,606) 	(29,392)
+General and admin. costs 	(39,480) 	(28,283)
+Other operating result 	68 	9,590
+Operating result
+(earnings before interest and taxes (EBIT))
+90,286 	6,649
+Finance income 	3,348 	2,646
+Finance costs 	(18,123) 	(20,145)
+Finance costs â€“ net 	(14,775) 	(17,499)
+Profit / (loss) before tax 	75,511 	(10,850)
+Income taxes 	(18,992) 	(12,047)
+Profit / (loss) for the year 	56,519 	(22,897)
+Source: AT&S annual report 2017/18
+
+-- 57 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	60
+Accounting â€“ keeping record of business transactions
+Please note:
+Cost of sales (COS) (or cost of goods sold (COGS)) are the costs that are directly tied to the
+production of the products like the cost of labour (that is directly linked to production), ma-
+terials and manufacturing overhead. For example, the COGS for a manufacturer of PCBs
+includes the material costs for the elements that are used for making PCBs and the labour
+costs for putting the PCBs together. Administration costs, the cost of shipping the PCBs to
+customers or the cost of sales personnel is NOT included in COGS.
+Gross profit reveals the earnings of a business after deducting the direct costs of producing
+the goods (without operating expenses). Therefore, it focuses on the financial performance
+of revenue from production only. There is another metric that allows us to analyse operating
+performance while including operating expenses: earnings before interest, taxes, depre-
+ciation and amortisation (EBITDA). By deducting depreciation and amortisation, the next
+metric for earnings of a business is gained: earnings before interest and taxes (EBIT).
+In accounting, expenditures and expenses are not the same. While expenditures are pay-
+ments that are either made to purchase (non-current as well as current) assets, expenses are
+costs that have expired or were â€œused upâ€ in order to produce the goods or provide the ser-
+vices that were sold. For example, COGS are considered to be expenses, and so are other
+expenses such as salaries, marketing costs, interest, insurance, rent, and so on.
+Answer to question 4: Revenues have increased by about 176,937,000 euros, which is
+an increase of 21.7% compared to revenues of the financial year 2016/17. Most inter-
+estingly, the cost of sales has only increased by around 9.1% (69,367 / 760,172 * 100).
+Answer to question 5: Gross profit has significantly increased (actually, it has more
+than tripled). The operating result has improved even more; it has reached almost 14
+times the amount of the previous financial year.
+6.4 	Use of these accounts â€“ types of accounting
+These accounts are needed for a number of stakeholders who are interested in the financial
+situation of a business. Some of them are internal users like the owners of the business, the
+managers and the employees. They are all interested to learn if the business is thriving. Man-
+agers need to make decisions based on financial information (like â€œDo we need to cut costs in
+marketing?â€) and owners will want to know if their investment is worth the risk (like â€œHow much
+profit do I get in return for investing and risking my money?â€). There are also external users of
+financial information like tax authorities, suppliers, competitors, investors and the media.
+For some companies it is mandatory to have their accounts checked for authenticity by an
+independent firm of accountants, an auditing company. This task is called auditing. The
+result of the auditing process can be read in the annual report.
+Managerial accounting focuses on providing information for the management of the busi-
+ness. Based on the data gained from managerial accounting, managers are able to make
+decisions like where to cut costs and how to calculate prices. Of course, managers are also
+interested in financial accounting, something that is also of interest for decision makers
+outside a business like tax authorities or banks. Information gained from financial account-
+ing like the balance sheet and the income statement can be found in the annual reports for
+example. Many large businesses also publish selected information on their financials on
+their websites.
+
+-- 58 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	61
+6.5 Analysis of financial statements
+The information given in the balance sheet and in the income statement can be used to
+calculate figures and ratios in order to learn more, e.g. about the
+âˆŽ 	liquidity (or the solvency) of a business,
+âˆŽ 	profitability, which refers to the relationship of profit to the capital employed or to
+the turnover,
+âˆŽ 	financial efficiency, which deals with the question how effectively a business has
+employed its resources and
+âˆŽ 	financial structure, which can be evaluated on the basis of equity ratio (equity in per
+cent of total assets) and debt ratio (total debt in per cent of total assets).
+Please note: Since these figures and ratios can vary a lot from one industry to another,
+some comparisons would not be very meaningful. Comparisons are meaningful for differ-
+ent businesses within the same industry or sector or for one single business over time
+(comparisons of several different financial years).
+There might also be different ways to calculate some of these ratios, so it is always impor-
+tant to know how ratios were calculated if you want to make comparisons.
+6.5.1 Liquidity
+The term liquidity refers to the ability of a business to pay its bills and repay its debts on
+time. One approach to evaluate liquidity is to calculate the working capital of a business.
+Working capital (or circulating capital) indicates whether or not a business is able to pay its
+day-to-day bills such as electricity, rent and wages and buy components for its production.
+Therefore, the focus is on short-term assets and liabilities.
+Working capital = current assets â€“ current liabilities
+The calculation of working capital is based on the idea that current assets of a business are
+relatively liquid (meaning that they can be easily turned into cash). Current assets comprise
+cash itself, inventory and accounts receivable. If all the current assets are turned into cash
+to repay current liabilities, working capital is the amount that is left over after all current
+debts have been paid.
+Working capital for AT&S in the financial year 2017/18:
+586,172 â€“ 303,772 = 282,400 (thousand euros)
+Working capital should be positive, meaning that current assets should be higher than cur-
+rent liabilities. If they are not, this would indicate that part of the non-current assets was
+financed by short-term liabilities, which might cause problems when these liabilities need
+to be repaid. A low level of working capital might also indicate that there is not enough cash
+or the business has borrowed too much through trade credit. Businesses that need a lot of
+inventory (like retailers) are likely to have higher levels of working capital than businesses
+that provide services (like a hairdresser or a business coach).
+A high level of inventory can be important to a business in order to satisfy customersâ€™ needs
+very quickly, but keeping inventories also has downsides for the business. First of all, it
+takes space, but it is also risky. Unused inventory ties up money in a business; it might be-
+come obsolete and lose its value.
+
+-- 59 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	62
+Accounting â€“ keeping record of business transactions
+Working capital problems and cash flow problems are interlinked but not identical. Cash
+flow problems can be mitigated by borrowing money using a short-term bank loan or using
+overdraft facilities and trade credit. Although this brings cash into the business, it will in-
+crease current liabilities and reduce working capital. The most effective way to improve
+both working capital and cash flow is to increase equity or borrow more long-term credit.
+Working capital can also be calculated as a ratio:
+Working capital ratio / current ratio = Current assets / current liabilities
+As current assets should exceed current liabilities, this ratio should be greater than 1, ide-
+ally even between 1.5 and 2.
+Working capital ratio for AT&S = 586,172 / 303,772 = 1.9
+It can be argued that inventories should not be taken into consideration for this calculation.
+There are many reasons why inventories could possibly not be turned into cash. This is why
+a modified calculation, the so-called acid test ratio, does not consider inventories and al-
+lows a stricter evaluation of liquidity.
+Acid test ratio = (current assets â€“ inventory) / current liabilities
+Acid test ratio for AT&S = (586,172 â€“ 136,097) / 303,772 = 1.5
+So the result of the acid test ratio for AT&S is still greater than 1, which indicates a sufficient
+level of liquidity.
+6.5.2 Profitability
+If revenues exceed costs, the business makes a profit. This does not necessarily mean that
+the business is sufficiently profitable because the amount of profit might be minuscule in
+relation to the money that has been invested (and the risk that has been taken). Hence,
+profitability refers to a businessâ€™s profit in relation to an indicator of the size of the business
+(total assets or total average assets, total equity, turnover).
+âˆŽ 	Return on equity
+ROE = profit before tax and interest (EBIT) / equity
+AT&S: 90,286 / 711,391 = 12.7%
+Another ratio that is often calculated is return on capital employed (ROCE). Capital em-
+ployed is usually the sum of equity and non-current liabilities (or simply assets minus cur-
+rent liabilities). Instead of capital employed at the end of the financial year, the average
+capital employed can be used (e.g. by summing up capital employed at the beginning and
+at the end of the financial year and dividing by 2).
+
+-- 60 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	63
+âˆŽ 	Return on capital employed
+ROCE = profit before tax and interest (EBIT) / capital employed
+AT&S:
+total capital employed = assets (1,530,439) â€“ current liabilities (303,772) = 1,226,667
+ROCE = 90,286 / 1,226,667 = 7.3%
+or with average capital employed: (1,226,667 + 1,109,943) / 2 = 1,168,305
+ROCE = 90,286 / 1,168,305 = 7.7%
+The ROCE figures are important for comparisons between different businesses in the
+same industry or sector as well as for the evaluation of profitability of one business
+over time. Investors usually prefer investments with a comparatively high ROCE (al-
+though the decision to invest may also depend on other criteria) and will have a close
+look at the development of ROCE over time.
+6.5.3 Financial efficiency
+Financial efficiency refers to the question how efficiently a business has employed its re-
+sources. Two of the ratios that can be calculated to evaluate financial efficiency are asset
+turnover and inventory (stock) turnover. Asset turnover aims to indicate how much turnover
+was generated by every euro invested in total average assets or â€“ alternatively â€“ in net as-
+sets (net assets being assets minus long-term liabilities):
+âˆŽ 	Asset turnover = turnover / average assets
+average assets = (assets at the beginning of the year + assets at the end
+of the year) / 2
+AT&S: average assets = (1,530,439 + 1,436,694) / 2 = 1,483,566.5
+asset turnover = 991,843 / 1,483,566.5 = 0.67
+or
+AT&S: net assets 2018 = 1,530,439 â€“ 515,276 = 1,015,163
+net assets 2017 = 1,436,694 â€“ 569,849 = 866,845
+average net assets = (1,015,163 + 866,845) / 2 = 941,004
+asset turnover = 991,843 / 941,004 = 1.05
+asset turnover = turnover / average net assets
+
+-- 61 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	64
+Accounting â€“ keeping record of business transactions
+So approximately one euro of turnover was generated by each euro invested in net assets.
+âˆŽ 	Inventory turnover or stock turnover
+Inventory turnover or stock turnover = cost of sales / (average) inventory
+= x times per year
+Inventory turnover is a ratio that shows how many times a business has sold or used
+up and replaced inventory. High inventory turnover is important because it indicates
+that goods sell well and do not remain in stock for a long time. So money spent on
+inventories is not tied up for a long time but quickly generates sales.
+AT&S: stock turnover = 829,539 / 122,470.5 (average inventory) = 6.8 times per year
+So inventory is sold or used up almost seven times per year, which means that inven-
+tory is completely renewed every 54 days.
+
+-- 62 of 63 --
+
+Introduction to Business and Economics
+WU Bachelor Program Business and Economics â€“
+Study Material for the Entrance Exam
+ISBN 978-3-7100-4250-8, Auflage [2019 â€“ 01001]
+Â© 2019 Verlag Jugend & Volk GmbH, Hainburger StraÃŸe 33, 1030 Wien
+Tel.: 01 533 56 36-0, Fax: 01 533 56 36-15
+E-Mail: service@westermanngruppe.at, www.westermanngruppe.at
+
+-- 63 of 63 --
+

@@ -1,0 +1,512 @@
+{
+  "generatedAt": "2026-08-06T22:51:41.873Z",
+  "scope": {
+    "ch6Bank": "src/data/economics-cases-ch6-subtopics.json",
+    "ch6Cases": 625,
+    "banksScannedForJargon": [
+      "src/data/economics-cases-ch2-subtopics.json",
+      "src/data/economics-cases-ch3-subtopics.json",
+      "src/data/economics-cases-ch4-subtopics.json",
+      "src/data/economics-cases-ch5-subtopics.json",
+      "src/data/economics-cases-ch6-subtopics.json"
+    ]
+  },
+  "ch6Quality": {
+    "caseCount": 625,
+    "metrics": {
+      "exactStmtDups": 412,
+      "exactStmtDupsTheoryInstances": 412,
+      "exactStmtDupsCalcInstances": 0,
+      "withinCaseNearDup078": 0,
+      "theoryStemReuseGroups": 154,
+      "theoryStemMaxCopies": 5,
+      "theoryStemsUsedOver10times": 0,
+      "numericExactDups": 0,
+      "cfLeadingMinusCells": 0,
+      "preSummedCfNetRows": 0,
+      "orphanEuros": 0,
+      "formulaHints": 0,
+      "abbreviations": 0,
+      "metaExtractLabels": 0,
+      "seeTheExtractSalt": 0
+    },
+    "samples": {
+      "exactStmtDups": [
+        {
+          "a": "CASE 6.1.006[0]",
+          "b": "CASE 6.1.018[0]",
+          "theory": true,
+          "preview": "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from credi"
+        },
+        {
+          "a": "CASE 6.1.007[0]",
+          "b": "CASE 6.1.019[0]",
+          "theory": true,
+          "preview": "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which "
+        },
+        {
+          "a": "CASE 6.1.005[0]",
+          "b": "CASE 6.1.020[0]",
+          "theory": true,
+          "preview": "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for lon"
+        },
+        {
+          "a": "CASE 6.1.011[0]",
+          "b": "CASE 6.1.025[0]",
+          "theory": true,
+          "preview": "Long-term assets should preferably be financed only with short-term trade credit."
+        },
+        {
+          "a": "CASE 6.1.017[0]",
+          "b": "CASE 6.1.027[0]",
+          "theory": true,
+          "preview": "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that "
+        },
+        {
+          "a": "CASE 6.1.017[0]",
+          "b": "CASE 6.1.030[0]",
+          "theory": true,
+          "preview": "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that "
+        },
+        {
+          "a": "CASE 6.1.007[0]",
+          "b": "CASE 6.1.031[0]",
+          "theory": true,
+          "preview": "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which "
+        },
+        {
+          "a": "CASE 6.1.011[0]",
+          "b": "CASE 6.1.033[0]",
+          "theory": true,
+          "preview": "Long-term assets should preferably be financed only with short-term trade credit."
+        },
+        {
+          "a": "CASE 6.1.022[0]",
+          "b": "CASE 6.1.035[0]",
+          "theory": true,
+          "preview": "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by"
+        },
+        {
+          "a": "CASE 6.1.011[0]",
+          "b": "CASE 6.1.036[0]",
+          "theory": true,
+          "preview": "Long-term assets should preferably be financed only with short-term trade credit."
+        },
+        {
+          "a": "CASE 6.1.022[0]",
+          "b": "CASE 6.1.037[0]",
+          "theory": true,
+          "preview": "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by"
+        },
+        {
+          "a": "CASE 6.1.022[0]",
+          "b": "CASE 6.1.038[0]",
+          "theory": true,
+          "preview": "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by"
+        },
+        {
+          "a": "CASE 6.1.013[0]",
+          "b": "CASE 6.1.040[0]",
+          "theory": true,
+          "preview": "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of asse"
+        },
+        {
+          "a": "CASE 6.1.022[0]",
+          "b": "CASE 6.1.044[0]",
+          "theory": true,
+          "preview": "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by"
+        },
+        {
+          "a": "CASE 6.1.013[0]",
+          "b": "CASE 6.1.047[0]",
+          "theory": true,
+          "preview": "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of asse"
+        },
+        {
+          "a": "CASE 6.1.017[0]",
+          "b": "CASE 6.1.048[0]",
+          "theory": true,
+          "preview": "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that "
+        },
+        {
+          "a": "CASE 6.1.014[0]",
+          "b": "CASE 6.1.050[0]",
+          "theory": true,
+          "preview": "Profit for the year increases equity through retained earnings, while a loss decreases equity."
+        },
+        {
+          "a": "CASE 6.1.014[0]",
+          "b": "CASE 6.1.051[0]",
+          "theory": true,
+          "preview": "Profit for the year increases equity through retained earnings, while a loss decreases equity."
+        },
+        {
+          "a": "CASE 6.1.014[0]",
+          "b": "CASE 6.1.052[0]",
+          "theory": true,
+          "preview": "Profit for the year increases equity through retained earnings, while a loss decreases equity."
+        },
+        {
+          "a": "CASE 6.1.006[0]",
+          "b": "CASE 6.1.053[0]",
+          "theory": true,
+          "preview": "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from credi"
+        },
+        {
+          "a": "CASE 6.1.013[0]",
+          "b": "CASE 6.1.053[4]",
+          "theory": true,
+          "preview": "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of asse"
+        },
+        {
+          "a": "CASE 6.1.034[0]",
+          "b": "CASE 6.1.054[0]",
+          "theory": true,
+          "preview": "Current liabilities are debts that must be repaid after more than one year."
+        },
+        {
+          "a": "CASE 6.1.009[0]",
+          "b": "CASE 6.1.057[0]",
+          "theory": true,
+          "preview": "Owner's equity is the portion of assets financed by bank loans and trade creditors."
+        },
+        {
+          "a": "CASE 6.1.009[0]",
+          "b": "CASE 6.1.059[0]",
+          "theory": true,
+          "preview": "Owner's equity is the portion of assets financed by bank loans and trade creditors."
+        },
+        {
+          "a": "CASE 6.1.005[0]",
+          "b": "CASE 6.1.061[0]",
+          "theory": true,
+          "preview": "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for lon"
+        }
+      ],
+      "exactStmtDupsCalc": [],
+      "withinCaseNearDup078": [],
+      "theoryStemTop": [
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.005[0]",
+            "CASE 6.1.020[0]",
+            "CASE 6.1.061[0]"
+          ],
+          "preview": "non current assets normally have a useful life of more than one year and are intended to be used in the busine"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.006[0]",
+            "CASE 6.1.018[0]",
+            "CASE 6.1.053[0]"
+          ],
+          "preview": "equity usually does not have to be repaid on a fixed schedule helps the business stay relatively independent f"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.007[0]",
+            "CASE 6.1.019[0]",
+            "CASE 6.1.031[0]"
+          ],
+          "preview": "the balance sheet identity requires that total assets always equal the sum of total liabilities and total equi"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.009[0]",
+            "CASE 6.1.057[0]",
+            "CASE 6.1.059[0]"
+          ],
+          "preview": "owner s equity is the portion of assets financed by bank loans and trade creditors"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.011[0]",
+            "CASE 6.1.025[0]",
+            "CASE 6.1.033[0]"
+          ],
+          "preview": "long term assets should preferably be financed only with short term trade credit"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.013[0]",
+            "CASE 6.1.040[0]",
+            "CASE 6.1.047[0]"
+          ],
+          "preview": "owner s equity is the residual claim remaining after liabilities are deducted from assets and it is the portio"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.014[0]",
+            "CASE 6.1.050[0]",
+            "CASE 6.1.051[0]"
+          ],
+          "preview": "profit for the year increases equity through retained earnings while a loss decreases equity"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.017[0]",
+            "CASE 6.1.027[0]",
+            "CASE 6.1.030[0]"
+          ],
+          "preview": "the same physical item can be inventory for a dealer that holds it for sale and a non current asset for a busi"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.022[0]",
+            "CASE 6.1.035[0]",
+            "CASE 6.1.037[0]"
+          ],
+          "preview": "a high equity ratio indicates that a larger portion of assets was financed by the company s own resources rath"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.034[0]",
+            "CASE 6.1.054[0]",
+            "CASE 6.1.077[0]"
+          ],
+          "preview": "current liabilities are debts that must be repaid after more than one year"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.058[0]",
+            "CASE 6.1.069[0]",
+            "CASE 6.1.071[0]"
+          ],
+          "preview": "buying software with cash always increases total assets because a new asset is added without reducing any othe"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.084[0]",
+            "CASE 6.1.115[0]",
+            "CASE 6.1.126[0]"
+          ],
+          "preview": "market capitalisation is the total market value of a company s outstanding shares and is often used to gauge s"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.085[0]",
+            "CASE 6.1.127[0]",
+            "CASE 6.3.088[0]"
+          ],
+          "preview": "voting rights ordinarily attach to common shares while preferred shareholders usually accept limited voting ri"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.087[0]",
+            "CASE 6.2.099[0]",
+            "CASE 6.2.112[0]"
+          ],
+          "preview": "return on equity and return on capital employed are most meaningful when comparing similar businesses or the s"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.089[0]",
+            "CASE 6.1.119[0]",
+            "CASE 6.2.110[4]"
+          ],
+          "preview": "when one shareholder sells shares to another on the stock exchange the corporation always receives the sale pr"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.090[0]",
+            "CASE 6.2.127[0]",
+            "CASE 6.3.086[4]"
+          ],
+          "preview": "a corporation is not obliged to pay a dividend every year regardless of performance unpaid dividends over a lo"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.091[0]",
+            "CASE 6.1.100[0]",
+            "CASE 6.1.123[0]"
+          ],
+          "preview": "investors may seek income from dividends capital gains if prices rise influence through voting or a hedge of r"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.092[0]",
+            "CASE 6.1.103[0]",
+            "CASE 6.1.110[0]"
+          ],
+          "preview": "any increase in the listed price of already issued shares transfers that increase as cash directly onto the co"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.095[0]",
+            "CASE 6.1.106[0]",
+            "CASE 6.3.081[0]"
+          ],
+          "preview": "a share buyback reduces the number of shares outstanding which can raise earnings per share even if total prof"
+        },
+        {
+          "count": 5,
+          "examples": [
+            "CASE 6.1.096[0]",
+            "CASE 6.1.125[0]",
+            "CASE 6.1.129[1]"
+          ],
+          "preview": "every corporation must distribute a cash dividend to shareholders in each financial year by law"
+        }
+      ],
+      "numericExactDups": [],
+      "cfLeadingMinusCells": [],
+      "preSummedCfNetRows": [],
+      "orphanEuros": [],
+      "formulaHints": [],
+      "abbreviations": [],
+      "metaExtractLabels": [],
+      "seeTheExtractSalt": []
+    }
+  },
+  "jargonScan": {
+    "note": "Heuristic: advanced finance jargon uncommon in Fuhrmann Intro Business/Economics undergrad text. Book-ish spell-outs (return on equity, working capital, market capitalisation) are NOT flagged; NPV/IRR/WACC/ROIC etc. flag even when spelled out.",
+    "perChapter": {
+      "ch2": {
+        "cases": 350,
+        "hits": 0,
+        "byTerm": {},
+        "examples": []
+      },
+      "ch3": {
+        "cases": 300,
+        "hits": 0,
+        "byTerm": {},
+        "examples": []
+      },
+      "ch4": {
+        "cases": 300,
+        "hits": 0,
+        "byTerm": {},
+        "examples": []
+      },
+      "ch5": {
+        "cases": 700,
+        "hits": 0,
+        "byTerm": {},
+        "examples": []
+      },
+      "ch6": {
+        "cases": 625,
+        "hits": 0,
+        "byTerm": {},
+        "examples": []
+      }
+    },
+    "termTotals": {},
+    "totalHits": 0
+  },
+  "scaffolding": {
+    "bookPdf": {
+      "path": "c:\\Users\\bubli\\Downloads\\2019_Fuhrmann_B_Introduction_to_Business_and_Economics (1).pdf",
+      "exists": true,
+      "bytes": 1498343
+    },
+    "ch6BookExtractMd": {
+      "path": "scripts/_ch6-book-extract.md",
+      "exists": false
+    },
+    "pdfTextExtracts": [
+      {
+        "path": "scripts/_pdf_ch2_5.txt",
+        "exists": true,
+        "bytes": 8080
+      },
+      {
+        "path": "scripts/_pdf_ch4_shares.txt",
+        "exists": true,
+        "bytes": 12272
+      },
+      {
+        "path": "scripts/_pdf_ch4_shares2.txt",
+        "exists": true,
+        "bytes": 4052
+      },
+      {
+        "path": "scripts/_pdf_ch6.txt",
+        "exists": true,
+        "bytes": 33050
+      },
+      {
+        "path": "scripts/_pdf_full.txt",
+        "exists": true,
+        "bytes": 152474
+      }
+    ],
+    "hasAnyPdfTxt": true,
+    "hasCh6PdfTxt": true,
+    "hasFullPdfTxt": true
+  },
+  "severity": {
+    "worst": "medium",
+    "countsBySeverity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 1,
+      "info": 4
+    },
+    "findings": [
+      {
+        "severity": "medium",
+        "metric": "exactStmtDups",
+        "count": 412,
+        "note": "All exact statement dups (theoryInstances=412, calcInstances=0)"
+      },
+      {
+        "severity": "info",
+        "metric": "nonBookJargonHits",
+        "count": 0,
+        "note": "No flagged advanced jargon hits in ch2–ch6 banks"
+      },
+      {
+        "severity": "info",
+        "metric": "bookPdfPresent",
+        "count": 1,
+        "note": "Book PDF present (1498343 bytes)"
+      },
+      {
+        "severity": "low",
+        "metric": "ch6BookExtractMdMissing",
+        "count": 1,
+        "note": "scripts/_ch6-book-extract.md absent (txt extracts may still exist)"
+      },
+      {
+        "severity": "info",
+        "metric": "pdfCh6TxtPresent",
+        "count": 1,
+        "note": "scripts/_pdf_ch6.txt present for book-term alignment"
+      },
+      {
+        "severity": "info",
+        "metric": "theoryStemMaxCopies",
+        "count": 5,
+        "note": "Theory stem max copies 5; reuse groups 154"
+      }
+    ],
+    "headline": {
+      "ch6GateClean": true,
+      "exactStmtDupsMostlyTheoryReuse": true,
+      "jargonHits": 0,
+      "scaffoldingOk": true
+    }
+  }
+}

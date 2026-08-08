@@ -1,0 +1,464 @@
+{
+  "generated_at": "2026-08-06T22:51:41.675Z",
+  "source_files": [
+    "src/data/economics-cases-ch4-subtopics.json",
+    "src/data/economics-cases-ch5-subtopics.json"
+  ],
+  "note": "Deep audit of Ch.4+Ch.5 FC banks. Case data was not modified. Prior scripts/audit-ch4-ch5-report.json is a narrower/stale checklist (neon_false, context dups, Jaccard≥0.82).",
+  "chapters": [
+    {
+      "chapter": 4,
+      "total_cases": 300,
+      "by_subsection": {
+        "4.1": 50,
+        "4.2": 50,
+        "4.3": 50,
+        "4.4": 50,
+        "4.5": 50,
+        "4.6": 50
+      },
+      "exact_duplicate_statements": {
+        "groups": 0,
+        "duplicate_slots": 0,
+        "extra_copies": 0,
+        "top_offenders": [],
+        "all_groups_sample": []
+      },
+      "within_case_near_duplicates": {
+        "threshold": 0.78,
+        "count": 0,
+        "examples": []
+      },
+      "cross_case_near_duplicates": {
+        "threshold": 0.9,
+        "count": 0,
+        "examples": []
+      },
+      "numeric_skeleton_duplicates": {
+        "note": "Same figures/structure with industry/retailer noun swaps; Jaccard may stay <0.90 because filler tokens differ.",
+        "groups": 0,
+        "top_offenders": []
+      },
+      "formula_hints": {
+        "count": 0,
+        "examples": []
+      },
+      "abbreviations": {
+        "count": 0,
+        "by_type": {},
+        "spelled_out_counts": {
+          "EBIT": 0,
+          "EBITDA": 0,
+          "ROE": 1,
+          "ROCE": 0,
+          "EPS": 0,
+          "P&L": 6,
+          "WC": 13
+        },
+        "preference_note": "Spelled-out forms are preferred for student-facing FC text; abbreviations EBIT|EBITDA|ROE|ROCE|EPS|P&L|WC should be avoided as whole words.",
+        "examples": []
+      },
+      "meta_extract_crossref": {
+        "count": 0,
+        "examples": []
+      },
+      "orphan_numeric_quizzes": {
+        "count": 0,
+        "definition": "Euro/percent quiz claiming a numerical result where context lacks givens/table AND the statement itself does not embed the conditions.",
+        "examples": []
+      },
+      "self_contained_numeric_no_context": {
+        "count": 0,
+        "definition": "Numeric/euro quiz with embedded givens (not a true orphan) but context has no supporting figures — often templates.",
+        "examples": []
+      },
+      "banned_book_names": {
+        "count": 0,
+        "examples": [],
+        "printed_circuit_board_mentions": {
+          "count": 0,
+          "note": "Long-form 'printed circuit board' (book AT&S theme) — not matched by \\bpcb\\b ban list; for awareness.",
+          "examples": []
+        }
+      },
+      "sample_textbook_alignment": [
+        {
+          "case_id": "CASE 4.2.10",
+          "title": "General Versus Limited Partner Roles",
+          "subsection": "4.2",
+          "toc_topic": "Partnership",
+          "judgment": "aligned",
+          "note": "TOC topic «Partnership»: matched 5/5 cues (partnership, partner, joint, unlimited, agreement).",
+          "issues": [],
+          "sample_statement": "Unlimited liability means private assets of partners may be reached if business assets cannot cover unpaid debts."
+        },
+        {
+          "case_id": "CASE 4.4.37",
+          "title": "Advanced Governance Misconceptions",
+          "subsection": "4.4",
+          "toc_topic": "Summary: Overview of forms of business ownership",
+          "judgment": "aligned",
+          "note": "TOC topic «Summary: Overview of forms of business ownership»: matched 3/7 cues (sole, partnership, corporation).",
+          "issues": [],
+          "sample_statement": "Every shareholder in a corporation must sign employment contracts with staff because shareholders run operations."
+        },
+        {
+          "case_id": "CASE 4.5.05",
+          "title": "Equity and Debt Sources in Practice",
+          "subsection": "4.5",
+          "toc_topic": "Overview of sources of finance",
+          "judgment": "aligned",
+          "note": "TOC topic «Overview of sources of finance»: matched 11/11 cues (source, financ, internal, external, debt).",
+          "issues": [
+            "answer skew 5T"
+          ],
+          "sample_statement": "Table 3 groups bank overdrafts, trade credit, and short-term loans under short-term debt finance."
+        },
+        {
+          "case_id": "CASE 4.5.12",
+          "title": "Single Correct Bond Classification",
+          "subsection": "4.5",
+          "toc_topic": "Overview of sources of finance",
+          "judgment": "aligned",
+          "note": "TOC topic «Overview of sources of finance»: matched 8/11 cues (source, financ, external, debt, equity).",
+          "issues": [],
+          "sample_statement": "Equity finance is always external because only shareholders provide it."
+        },
+        {
+          "case_id": "CASE 4.6.13",
+          "title": "Working Capital and Short-Term Credit",
+          "subsection": "4.6",
+          "toc_topic": "The choice of the source of finance",
+          "judgment": "aligned",
+          "note": "TOC topic «The choice of the source of finance»: matched 4/10 cues (cost, gear, loan, credit).",
+          "issues": [],
+          "sample_statement": "A business with a high proportion of loan capital might have difficulties obtaining more credit."
+        },
+        {
+          "case_id": "CASE 4.3.17",
+          "title": "Long-Term Nature of Share Capital",
+          "subsection": "4.3",
+          "toc_topic": "Corporations",
+          "judgment": "aligned",
+          "note": "TOC topic «Corporations»: matched 4/7 cues (corporation, shareholder, equity, shares).",
+          "issues": [],
+          "sample_statement": "Share capital must be repaid to shareholders on demand whenever market prices fall temporarily."
+        },
+        {
+          "case_id": "CASE 4.3.32",
+          "title": "Engineering Firm Share Price Rally",
+          "subsection": "4.3",
+          "toc_topic": "Corporations",
+          "judgment": "aligned",
+          "note": "TOC topic «Corporations»: matched 6/7 cues (corporation, shareholder, equity, shares, board).",
+          "issues": [],
+          "sample_statement": "The contract win obliged the firm to register the rally amount as new share capital on its books."
+        },
+        {
+          "case_id": "CASE 4.5.48",
+          "title": "Three True Core Concepts",
+          "subsection": "4.5",
+          "toc_topic": "Overview of sources of finance",
+          "judgment": "aligned",
+          "note": "TOC topic «Overview of sources of finance»: matched 9/11 cues (source, financ, internal, debt, equity).",
+          "issues": [],
+          "sample_statement": "Bank overdrafts are long-term debt finance because the facility remains open until the bank closes it."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "total_cases": 700,
+      "by_subsection": {
+        "5.1": 100,
+        "5.2": 100,
+        "5.3": 100,
+        "5.4": 100,
+        "5.5": 100,
+        "5.6": 100,
+        "5.7": 100
+      },
+      "exact_duplicate_statements": {
+        "groups": 0,
+        "duplicate_slots": 0,
+        "extra_copies": 0,
+        "top_offenders": [],
+        "all_groups_sample": []
+      },
+      "within_case_near_duplicates": {
+        "threshold": 0.78,
+        "count": 0,
+        "examples": []
+      },
+      "cross_case_near_duplicates": {
+        "threshold": 0.9,
+        "count": 0,
+        "examples": []
+      },
+      "numeric_skeleton_duplicates": {
+        "note": "Same figures/structure with industry/retailer noun swaps; Jaccard may stay <0.90 because filler tokens differ.",
+        "groups": 0,
+        "top_offenders": []
+      },
+      "formula_hints": {
+        "count": 0,
+        "examples": []
+      },
+      "abbreviations": {
+        "count": 0,
+        "by_type": {},
+        "spelled_out_counts": {
+          "EBIT": 0,
+          "EBITDA": 0,
+          "ROE": 0,
+          "ROCE": 0,
+          "EPS": 0,
+          "P&L": 0,
+          "WC": 0
+        },
+        "preference_note": "Spelled-out forms are preferred for student-facing FC text; abbreviations EBIT|EBITDA|ROE|ROCE|EPS|P&L|WC should be avoided as whole words.",
+        "examples": []
+      },
+      "meta_extract_crossref": {
+        "count": 0,
+        "examples": []
+      },
+      "orphan_numeric_quizzes": {
+        "count": 0,
+        "definition": "Euro/percent quiz claiming a numerical result where context lacks givens/table AND the statement itself does not embed the conditions.",
+        "examples": []
+      },
+      "self_contained_numeric_no_context": {
+        "count": 25,
+        "definition": "Numeric/euro quiz with embedded givens (not a true orphan) but context has no supporting figures — often templates.",
+        "examples": [
+          {
+            "id": "CASE 5.5.18[4]",
+            "statement": "A firm with sales of 50,000 euros in a 1,000,000 euro market holds a fifty per cent absolute share."
+          },
+          {
+            "id": "CASE 5.5.19[1]",
+            "statement": "A firm with sales of 150,000 euros in a 1,000,000 euro market holds a one point five per cent absolute share."
+          },
+          {
+            "id": "CASE 5.5.26[2]",
+            "statement": "If a business sells 150,000 euros in a market of 1,000,000 euros, its absolute market share is fifteen per cent."
+          },
+          {
+            "id": "CASE 5.5.31[4]",
+            "statement": "If total components market sales rise from 57.5 million euros to 59.7 million euros, market size measured in value has increased."
+          },
+          {
+            "id": "CASE 5.5.32[1]",
+            "statement": "If total packaging market sales rise from 420 million euros to 450 million euros, market size measured in value has increased."
+          },
+          {
+            "id": "CASE 5.5.32[2]",
+            "statement": "If total logistics services market sales rise from 310 million euros to 325 million euros, market size measured in value has increased."
+          },
+          {
+            "id": "CASE 5.5.32[3]",
+            "statement": "A firm with sales of 80 million euros in a market of 400 million euros holds a 20 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.33[1]",
+            "statement": "Absolute market share is 15 per cent when firm sales are 45 million euros and total market sales are 300 million euros."
+          },
+          {
+            "id": "CASE 5.5.34[0]",
+            "statement": "With firm sales of 12 million euros against a 48 million euro market, absolute share equals 25 per cent."
+          },
+          {
+            "id": "CASE 5.5.35[0]",
+            "statement": "Sales of 7 million euros out of a 140 million euro market represent a 5 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.55[3]",
+            "statement": "Printed-circuit-board producer sales of 40 million euros inside a 200 million euro market leave an absolute share of 20 per cent."
+          },
+          {
+            "id": "CASE 5.5.57[2]",
+            "statement": "Industrial adhesives sales of 57 million euros against a 342 million euro market imply an absolute share of 16.7 per cent."
+          },
+          {
+            "id": "CASE 5.5.59[1]",
+            "statement": "Commercial laundry equipment sales of 74 million euros in a 518 million euro market yield a 14.3 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.62[1]",
+            "statement": "For enterprise accounting software, 91 million euros of producer sales in a 728 million euro market imply an absolute share of 12.5 per cent"
+          },
+          {
+            "id": "CASE 5.5.64[1]",
+            "statement": "Organic breakfast cereals at 108 million euros of sales versus a 540 million euro market mean a 20 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.65[3]",
+            "statement": "Electric vehicle charger sales reach 125 million euros in a 750 million euro market, so absolute market share is 16.7 per cent."
+          },
+          {
+            "id": "CASE 5.5.69[0]",
+            "statement": "Medical diagnostic kit sales of 142 million euros versus a 994 million euro market correspond to a 14.3 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.70[3]",
+            "statement": "For warehouse automation systems, 159 million euros of producer sales in a 1272 million euro market imply an absolute share of 12.5 per cent"
+          },
+          {
+            "id": "CASE 5.5.72[0]",
+            "statement": "Specialty coffee roasting sales of 176 million euros in an 880 million euro market correspond to a 20 per cent absolute market share."
+          },
+          {
+            "id": "CASE 5.5.73[3]",
+            "statement": "Renewable-energy inverter producers holding 193 million euros of sales in a 1,158 million euro market account for 16.7 per cent absolute sha"
+          }
+        ]
+      },
+      "banned_book_names": {
+        "count": 0,
+        "examples": [],
+        "printed_circuit_board_mentions": {
+          "count": 3,
+          "note": "Long-form 'printed circuit board' (book AT&S theme) — not matched by \\bpcb\\b ban list; for awareness.",
+          "examples": [
+            {
+              "case_id": "CASE 5.5.54",
+              "title": "Production Planning From Timing"
+            },
+            {
+              "case_id": "CASE 5.5.55",
+              "title": "Preference Motives and Market Share"
+            },
+            {
+              "case_id": "CASE 5.5.56",
+              "title": "Electronics Market Segment Measures"
+            }
+          ]
+        }
+      },
+      "sample_textbook_alignment": [
+        {
+          "case_id": "CASE 5.3.40",
+          "title": "Needs-Led Product Tailoring",
+          "subsection": "5.3",
+          "toc_topic": "Product orientation versus market orientation",
+          "judgment": "partial",
+          "note": "Partial vs TOC «Product orientation versus market orientation». Hits: market orientation, orient.",
+          "issues": [],
+          "sample_statement": "Under market orientation, a hotel shapes offers from guest preferences rather than pushing a standard product unchanged."
+        },
+        {
+          "case_id": "CASE 5.6.05",
+          "title": "Behavioural Segmentation Patterns",
+          "subsection": "5.6",
+          "toc_topic": "Market segmentation and targeting strategies",
+          "judgment": "aligned",
+          "note": "TOC topic «Market segmentation and targeting strategies»: matched 5/8 cues (segmentation, segment, target, mass market, position).",
+          "issues": [],
+          "sample_statement": "A durable segment must never change over time in order to qualify for targeting."
+        },
+        {
+          "case_id": "CASE 5.6.17",
+          "title": "Mass Marketing for Everyday Products",
+          "subsection": "5.6",
+          "toc_topic": "Market segmentation and targeting strategies",
+          "judgment": "aligned",
+          "note": "TOC topic «Market segmentation and targeting strategies»: matched 7/8 cues (segmentation, segment, target, niche, mass market).",
+          "issues": [],
+          "sample_statement": "Niche marketing to customers who value environmental reuse of second-hand goods means selling one identical product to the entire national m"
+        },
+        {
+          "case_id": "CASE 5.5.40",
+          "title": "Price Differentiation Over the Year",
+          "subsection": "5.5",
+          "toc_topic": "Market research",
+          "judgment": "partial",
+          "note": "Partial vs TOC «Market research». Hits: market share, customer.",
+          "issues": [],
+          "sample_statement": "Total sales of all businesses in a product market form the denominator when calculating market share."
+        },
+        {
+          "case_id": "CASE 5.4.57",
+          "title": "Affordability Risks and Responsible Consumption",
+          "subsection": "5.4",
+          "toc_topic": "The need for more responsibility and sustainability",
+          "judgment": "partial",
+          "note": "Partial vs TOC «The need for more responsibility and sustainability». Hits: sustainab, responsib.",
+          "issues": [
+            "answer skew 5T"
+          ],
+          "sample_statement": "For car-hire firms, spending beyond affordable limits under promotional pressure is one of the consumption risks that responsible businesses"
+        },
+        {
+          "case_id": "CASE 5.2.63",
+          "title": "Ongoing Revenue From Sales",
+          "subsection": "5.2",
+          "toc_topic": "Objectives of marketing",
+          "judgment": "aligned",
+          "note": "TOC topic «Objectives of marketing»: matched 6/8 cues (objective, marketing, sales, profit, market share).",
+          "issues": [
+            "answer skew 5T"
+          ],
+          "sample_statement": "Defensive marketing aims to stop share loss to aggressive competitors."
+        },
+        {
+          "case_id": "CASE 5.6.38",
+          "title": "Communication and Distribution Access",
+          "subsection": "5.6",
+          "toc_topic": "Market segmentation and targeting strategies",
+          "judgment": "aligned",
+          "note": "TOC topic «Market segmentation and targeting strategies»: matched 6/8 cues (segmentation, segment, target, niche, position).",
+          "issues": [],
+          "sample_statement": "Positioning toward households with strong sustainability attitudes aims to create a distinct image of which product best serves that attitud"
+        },
+        {
+          "case_id": "CASE 5.2.75",
+          "title": "Brand Versus USP Confusion",
+          "subsection": "5.2",
+          "toc_topic": "Objectives of marketing",
+          "judgment": "aligned",
+          "note": "TOC topic «Objectives of marketing»: matched 6/8 cues (objective, marketing, sales, profit, awareness).",
+          "issues": [],
+          "sample_statement": "A business with rising sales but rising costs may still miss profit objectives."
+        }
+      ]
+    }
+  ],
+  "severity_ranked_summary": [
+    {
+      "severity": "medium",
+      "chapter": 5,
+      "category": "self_contained_numeric_no_context",
+      "count": 25,
+      "detail": "Self-contained euro quizzes with no figures in context (template smell)"
+    },
+    {
+      "severity": "low",
+      "chapter": 5,
+      "category": "printed_circuit_board_theme",
+      "count": 3,
+      "detail": "Long-form printed-circuit-board wording (near book AT&S example theme)"
+    },
+    {
+      "severity": "low",
+      "chapter": 5,
+      "category": "sample_alignment_partial",
+      "count": 3,
+      "detail": "3/8 sampled cases partially aligned"
+    }
+  ],
+  "totals_across_chapters": {
+    "cases": 1000,
+    "exact_dup_groups": 0,
+    "exact_dup_extra_copies": 0,
+    "within_case_near": 0,
+    "cross_case_near": 0,
+    "numeric_skeleton_groups": 0,
+    "formula_hints": 0,
+    "abbreviations": 0,
+    "meta_extract": 0,
+    "orphan_numeric": 0,
+    "self_contained_numeric": 25,
+    "banned_names": 0
+  }
+}

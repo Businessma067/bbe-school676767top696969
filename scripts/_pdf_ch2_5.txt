@@ -1,0 +1,149 @@
+WU Bachelor Program Business and Economics â€“
+Study Material for the Entrance Exam
+Introduction
+to Business
+and Economics
+Bettina Fuhrmann
+
+-- 1 of 63 --
+
+2 	I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S
+Foreword and acknowledgements
+This script has been written for students who are interested in the English WU bachelor
+study programme Business and Economics and want to take the entry exam. The content
+of this script has been taken from the book Fuhrmann, Bettina: Introduction to Business and
+Economics. Verlag Jugend & Volk, Wien, 2019. It is the aim of this book to explain some ba-
+sic concepts of business and economics and their interrelationships to those who are in-
+terested but have little previous knowledge of business matters and economic issues. As
+both business studies and economics are comprehensive, multifaceted and interdisciplin-
+ary scientific fields, a short introduction can only cover selected topics. Nevertheless, it is
+the intention of this short introduction to provide a solid basis on which to build more
+knowledge as well as to spark an enduring interest in business and economics and moti-
+vate readers to learn more.
+Such a textbook â€“ no matter how many pages it has â€“ always profits from feedback from
+other business teachers who are experts in their respective fields. I consider myself very
+lucky to have colleagues who have done so and contributed to the development of the text.
+Therefore, I would like to thank (in alphabetical order)
+Nora Cechovsky, Jesus Crespo Cuaresma, Ingrid Dobrovits, Eva Eberhartinger,
+Richard FortmÃ¼ller, Gerhard Geissler, Edith Littich, Harald Oberhofer,
+Rupert Sausgruber, Christiane Schopf, Gerhard Speckbacher,
+Rosanna Steininger, Barbara StÃ¶ttinger and Julia Szoncsitz
+for their valuable comments on the manuscript.
+I would also like to thank my family for letting me work on the book not only during count-
+less evenings but also on weekends. As it is my firm belief that economic knowledge is of
+utmost importance to each and every person regardless of his or her age, gender, or per-
+sonal background, I dedicate the book to all young learners who should understand â€“ the
+sooner the better â€“ that they are all an active part of the economy and there is no opting
+out of economic decisions.
+Bettina Fuhrmann
+Director of the Institute for Business Education
+Vienna University of Economics and Business
+Vienna, 2019
+
+-- 2 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	3
+Contents
+1. 	Introduction to business matters 	4
+2. 	Basic economic concepts 	7
+2.1 Being part of the economy 	7
+2.2 Scarcity of resources and opportunity cost 	7
+2.3 Economics is the study of economic decisions 	8
+2.4 Exchanging goods and services creates a circular flow and division of labour 	8
+2.5 Different economic systems 	10
+2.6 Supply and demand: households, businesses and the government meet in the
+market 11
+2.7 Competition in the market 	14
+3. 	Focus on different types of businesses 	15
+3.1 Businesses combine different factors of production 	15
+3.2 Businesses operate in the primary, secondary and/or tertiary sector 	15
+3.3 Businesses can be profit-oriented or not-for-profit 	16
+3.4 Businesses come â€œin all sizesâ€: large and small 	17
+3.5 Businesses may be local, national or international 	17
+3.6 Businesses operate in an environment â€“ stakeholders are important 	18
+4. 	Forms of business ownership and sources of finance 	21
+4.1 Sole proprietorship / sole traders 	22
+4.2 Partnership 	23
+4.3 Corporations 	23
+4.4 Summary: Overview of forms of business ownership 	28
+4.5 Overview of sources of finance 	29
+4.6 The choice of the source of finance 	29
+5. 	Marketing 	30
+5.1 What a product is 	31
+5.2 Objectives of marketing 	31
+5.3 Product orientation versus market orientation 	32
+5.4 The need for more responsibility and sustainability 	33
+5.5 Market research 	33
+5.6 Market segmentation and targeting strategies 	37
+5.7 The marketing mix 	39
+6. 	Accounting â€“ keeping record of business transactions 	50
+6.1 What a balance sheet is 	50
+6.2 Other components of the financial statement of a business 	52
+6.3 What can be learnt from reading a balance sheet and an income statement 	55
+6.4 Use of these accounts â€“ types of accounting 	58
+6.5 Analysis of financial statements 	59
+â€¦ to be continued in the book
+7. 	Personnel management â€“ because people matter
+8. 	Writing a business plan
+9. 	Case study
+
+-- 3 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S	6
+Basic economic concepts
+1 	Introduction to business matters
+Over the past few years Tina has noticed that
+quite a lot of people buy new computers even
+though their old ones are still working. At the
+same time other people are perfectly happy with a
+used computer as long as it works. They do not
+need to have the latest model, they are just inter-
+ested in having access to the Internet and the
+computer programs that they want to use. What is
+more, many people need help to get started with
+their new computer, and some also need help later on with new releases of software, data
+storage and security issues.
+At school and also later during their university studies, Tina and her former classmate
+Steve specialised in computer science and in business. They have always tried to help their
+families and friends with any computer is-
+sues. And as more and more friends of their
+friends as well as neighbours and acquain-
+tances of their families have asked for help,
+they have considered starting a business
+that offers a wide range of professional
+computer services.
+A business is an entity that offers goods
+and/or services to customers. Businesses
+do not produce primarily for their own needs
+or work exclusively for their familiesâ€™ and
+friendsâ€™ needs, but for someone else: for their customers. Businesses usually charge a
+price for their goods and services so that they get something in return. Exchanging goods
+and services against money or other means of payment (or exchange) is a main
+characteristic of the economy.
+Tina and Steve consider the following idea: buying used computers at a low price, checking
+and repairing them (if necessary), and adjusting/modifying them to the needs and wishes
+of their customers. By doing so, Tina and Steve are able to offer ready-to-use computers at
+an affordable price and create value for their customers.
+They also consider offering additional services such as setting up the computer at the us-
+erâ€™s home, installing software, connecting the computer to the Internet, explaining how to
+use the computer etc. Another idea that comes to their minds is offering online help for
+problems that might occur. Customers facing a problem with their computer would be sup-
+ported within 24 hours. Tina and Steve are even considering developing tailor-made soft-
+ware for their customers. With so many ideas, Tina and Steve are convinced that they can
+start a profitable business. That is exactly what they want to do as they need to earn mon-
+ey to make a living.
+
+-- 4 of 63 --
+
+I N T RO D U C T I O N TO B U S I N E S S A N D E CO N O M I C S 	7
+Alternatively, Tina and Steve could easily find jobs that they are interested in because they
+both have a profound knowledge of business and computer science. During their studies
+both of them worked for AT&S, the Austrian company Austria Technologie & Systemtechnik
+AG, for a couple of months and they liked that very much. AT&S (https://ats.net/de/) is a
+manufacturer of high-end printed circuit boards and of new technologies such as IC sub-
+strates, mSAP and advanced packaging. It is located in Styria with some production sites
+in Asia and ranks among the globally leading companies in that field. In Europe, AT&S is
+the market leader, with revenue of about â‚¬990 million and almost 10,000 employees.
+However, at the moment, they both prefer the idea of being self-employed, generating their
+own ideas, creating something new and being their own bosses. They prefer to become
+entrep

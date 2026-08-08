@@ -1,0 +1,934 @@
+{
+  "generated_at": "2026-08-06T22:51:40.793Z",
+  "source_files": {
+    "ch2": "C:\\Users\\bubli\\Projects\\bbe-school-fixed\\src\\data\\economics-cases-ch2-subtopics.json",
+    "ch3": "C:\\Users\\bubli\\Projects\\bbe-school-fixed\\src\\data\\economics-cases-ch3-subtopics.json"
+  },
+  "method_notes": {
+    "normalize": "lowercased; punctuation stripped; €→euro; whitespace collapsed",
+    "within_near": "Jaccard on stopword-filtered tokens >= 0.78, same case",
+    "cross_near": "Jaccard >= 0.90, different cases, exact-normalized matches excluded; bucketed by token keys",
+    "formula_hint": "/\\([^)]*(divided by|calculated as|defined as|equals|means)[^)]*\\)/i",
+    "abbreviations": "EBIT|EBITDA|ROE|ROCE|EPS|P&L|BS|IS|CF as whole words in statements",
+    "sample": "seeded shuffle: ch2 seed 20260207, ch3 seed 30360308"
+  },
+  "ch2": {
+    "chapter": "ch2",
+    "total_cases": 350,
+    "by_subsection": {
+      "2.1": 50,
+      "2.2": 50,
+      "2.3": 50,
+      "2.4": 50,
+      "2.5": 50,
+      "2.6": 50,
+      "2.7": 50
+    },
+    "exact_duplicate_statements": {
+      "group_count": 0,
+      "statement_occurrences_in_dups": 0,
+      "top_offenders": [],
+      "all_groups": []
+    },
+    "within_case_near_duplicates": {
+      "threshold": 0.78,
+      "pair_count": 0,
+      "pairs": [],
+      "all_pairs": []
+    },
+    "cross_case_near_duplicates": {
+      "threshold": 0.9,
+      "pair_count": 0,
+      "examples_10": [],
+      "pairs_sample": []
+    },
+    "formula_hints_in_parentheses": {
+      "count": 0,
+      "items": []
+    },
+    "abbreviations": {
+      "count": 0,
+      "items": []
+    },
+    "meta_labels": {
+      "count": 0,
+      "items": []
+    },
+    "obvious_read_offs": {
+      "count": 0,
+      "items": []
+    },
+    "orphan_euro_amounts": {
+      "count": 1,
+      "items": [
+        {
+          "case_id": "CASE 2.3.15",
+          "idx": 0,
+          "text": "Choosing a smartphone brand is classified as macroeconomics once the price exceeds €500.",
+          "context_snip": "Consider ten startups in a city receive venture funding; an analyst studies only one robotics firm's"
+        }
+      ]
+    },
+    "suspicious_banned_wording": {
+      "count": 0,
+      "items": []
+    },
+    "random_sample_judgment": [
+      {
+        "case_id": "CASE 2.3.36",
+        "title": "Scope Classification Workshop",
+        "subsection": "2.3",
+        "context": "Analyze rules students use to classify classroom examples as microeconomics or macroeconomics. Evaluate the following economic assertions:",
+        "statements": [
+          "Unit-level study covers one buyer or one seller, whereas economy-wide study covers national totals.",
+          "Economy-wide consumer price inflation published monthly is macroeconomics.",
+          "The discipline develops models at both unit level and aggregate level to handle scarcity.",
+          "All government activity is automatically macroeconomics.",
+          "Canteen meals are macro because food affects national health spending."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 2,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.4.11",
+        "title": "Barter weekend market",
+        "subsection": "2.4",
+        "context": "A hobby market allows only direct swaps: honey for bread, bread for pottery. Evaluate the following economic assertions:",
+        "statements": [
+          "Barter requires double coincidence of wants between each pair of traders.",
+          "Absence of money as medium of exchange makes multilateral trading chains harder to arrange.",
+          "Such swaps still constitute exchange under otherwise unchanged conditions.",
+          "Barter eliminates all comparison problems because traders always value goods equally.",
+          "Introducing money would add medium of exchange simplifying trades that barter complicates."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 5,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.5.47",
+        "title": "Market Variants Final Synthesis",
+        "subsection": "2.5",
+        "context": "Analyze free, social, and eco-social market economies relative to planned coordination and post-planned transformation. Evaluate the following economic assertions:",
+        "statements": [
+          "Market versus planned distinguishes price coordination from central directive coordination economy-wide.",
+          "Free market economy stresses private ownership, profit incentives, and consumer sovereignty.",
+          "Social market economy adds welfare and social partnership while keeping competitive product markets.",
+          "Eco-social models extend social market design by embedding ecological sustainability alongside competitive markets.",
+          "Transformation from planned systems shifts toward privatisation, competition, and price liberalisation over time."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 5,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.5.07",
+        "title": "German social partners",
+        "subsection": "2.5",
+        "context": "Employers' associations negotiate with unions under legal framework while firms compete in product markets. Evaluate social market:. Evaluate the following economic assertions:",
+        "statements": [
+          "Eco-social market systems abolish prices and reinstate pure planning for green goals.",
+          "Co-determination and welfare institutions aim at social peace without abolishing private firms.",
+          "Social market means unions set all output quotas replacing consumer demand entirely.",
+          "Market competition among firms can coexist with worker representation rules.",
+          "Eco-social market would add stronger environmental standards to this social-market base."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 4,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.5.10",
+        "title": "Consumer boycott effect",
+        "subsection": "2.5",
+        "context": "Shoppers boycott a brand over labour practices; sales collapse and retailer delists it. Evaluate market economy mechanisms:. Evaluate the following economic assertions:",
+        "statements": [
+          "Consumer spending choices can punish firms that lose public trust, illustrating consumer sovereignty.",
+          "Boycotts prove planned economies operate in every retail sector because only planners can delist goods.",
+          "Profit motive leads retailers to respond when falling demand threatens revenue.",
+          "Market prices and sales volumes signal reputational damage faster than quota revisions would.",
+          "Social market economy still relies on consumer demand signals alongside labour regulation."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 4,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.6.49",
+        "title": "Capstone Scenarios in Market Analysis",
+        "subsection": "2.6",
+        "context": "Review applied combinations of demand shifts, supply shifts, and inflation policy in everyday economic settings. Evaluate the following economic assertions:",
+        "statements": [
+          "Raising interest rates to fight inflation may slow housing demand by increasing mortgage costs.",
+          "Too much money relative to output can raise general prices even when one industry's supply expands.",
+          "A café facing higher coffee bean costs and rising commuter demand may see ambiguous price change.",
+          "Markets coordinate plans through prices, while policy may alter incentives via taxes, subsidies, or rates.",
+          "When festival demand surges but venue capacity is fixed, equilibrium ticket price tends to fall."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 4,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.6.23",
+        "title": "Plant Capacity Expansion",
+        "subsection": "2.6",
+        "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
+        "statements": [
+          "If demand stays fixed while supply shifts right, equilibrium price may fall.",
+          "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
+          "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
+          "Customers ordering the product face lower shortage risk after a successful supply expansion.",
+          "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 5,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 2.5.38",
+        "title": "Systems Models Closing Review",
+        "subsection": "2.5",
+        "context": "Analyze market versus planned coordination together with free, social, and eco-social market variants. Evaluate the following economic assertions:",
+        "statements": [
+          "Planned economies coordinate through central targets; market economies coordinate through prices and private incentives.",
+          "Free market economy highlights private property, competition, and consumer sovereignty.",
+          "Social market economy adds welfare and social partnership without eliminating competitive product markets.",
+          "Eco-social market economy integrates environmental sustainability with social market foundations.",
+          "Transformation from planned toward market systems includes privatisation and price liberalisation reforms."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 5,
+        "jargon_hits": 0
+      }
+    ]
+  },
+  "ch3": {
+    "chapter": "ch3",
+    "total_cases": 300,
+    "by_subsection": {
+      "3.1": 50,
+      "3.2": 50,
+      "3.3": 50,
+      "3.4": 50,
+      "3.5": 50,
+      "3.6": 50
+    },
+    "exact_duplicate_statements": {
+      "group_count": 0,
+      "statement_occurrences_in_dups": 0,
+      "top_offenders": [],
+      "all_groups": []
+    },
+    "within_case_near_duplicates": {
+      "threshold": 0.78,
+      "pair_count": 0,
+      "pairs": [],
+      "all_pairs": []
+    },
+    "cross_case_near_duplicates": {
+      "threshold": 0.9,
+      "pair_count": 0,
+      "examples_10": [],
+      "pairs_sample": []
+    },
+    "formula_hints_in_parentheses": {
+      "count": 0,
+      "items": []
+    },
+    "abbreviations": {
+      "count": 0,
+      "items": []
+    },
+    "meta_labels": {
+      "count": 0,
+      "items": []
+    },
+    "obvious_read_offs": {
+      "count": 17,
+      "items": [
+        {
+          "case_id": "CASE 3.4.01",
+          "idx": 4,
+          "text": "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m.",
+          "items": [
+            "balance sheet",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.05",
+          "idx": 4,
+          "text": "Seven staff and a €1.9m balance sheet guarantee micro status despite turnover above €2m.",
+          "items": [
+            "balance sheet",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.09",
+          "idx": 0,
+          "text": "A balance sheet above €43m can disqualify medium status even with low turnover.",
+          "items": [
+            "balance sheet",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.10",
+          "idx": 1,
+          "text": "Micro classification requires both turnover and balance sheet to stay below €2m simultaneously.",
+          "items": [
+            "turnover",
+            "balance sheet"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.12",
+          "idx": 0,
+          "text": "Turnover above €50m disqualifies medium status even if balance sheet qualifies.",
+          "items": [
+            "Turnover",
+            "balance sheet"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.16",
+          "idx": 1,
+          "text": "Medium status holds because balance sheet is within €43m despite turnover above €50m.",
+          "items": [
+            "balance sheet",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.18",
+          "idx": 2,
+          "text": "€55m turnover confirms medium status because balance sheet is below €43m.",
+          "items": [
+            "turnover",
+            "balance sheet"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 0,
+          "text": "€180k turnover is well below the €2m micro turnover cap.",
+          "items": [
+            "turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.25",
+          "idx": 4,
+          "text": "€200m turnover far exceeds the €50m medium turnover ceiling.",
+          "items": [
+            "turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 0,
+          "text": "€2.1m turnover exceeds the €2m micro turnover cap.",
+          "items": [
+            "turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 1,
+          "text": "€10.4m turnover exceeds the €10m small turnover cap.",
+          "items": [
+            "turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 2,
+          "text": "€52m turnover exceeds the €50m medium turnover cap.",
+          "items": [
+            "turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 4,
+          "text": "A €44m balance sheet exceeds the €43m medium balance sheet cap.",
+          "items": [
+            "balance sheet",
+            "balance sheet"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.31",
+          "idx": 0,
+          "text": "Turnover of €1.8m exceeds the micro turnover cap of €2m.",
+          "items": [
+            "Turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.31",
+          "idx": 3,
+          "text": "Turnover of €9.5m exceeds the small turnover cap of €10m.",
+          "items": [
+            "Turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.31",
+          "idx": 4,
+          "text": "Turnover of €49m exceeds the medium turnover cap of €50m.",
+          "items": [
+            "Turnover",
+            "turnover"
+          ]
+        },
+        {
+          "case_id": "CASE 3.4.50",
+          "idx": 3,
+          "text": "Medium status requires both turnover and balance sheet below their caps simultaneously.",
+          "items": [
+            "turnover",
+            "balance sheet"
+          ]
+        }
+      ]
+    },
+    "orphan_euro_amounts": {
+      "count": 45,
+      "items": [
+        {
+          "case_id": "CASE 3.4.09",
+          "idx": 0,
+          "text": "A balance sheet above €43m can disqualify medium status even with low turnover.",
+          "context_snip": "Consider a components manufacturer employs roughly ten thousand staff worldwide. Evaluate the follow"
+        },
+        {
+          "case_id": "CASE 3.4.09",
+          "idx": 4,
+          "text": "Small enterprises must record turnover not exceeding €10m.",
+          "context_snip": "Consider a components manufacturer employs roughly ten thousand staff worldwide. Evaluate the follow"
+        },
+        {
+          "case_id": "CASE 3.4.10",
+          "idx": 0,
+          "text": "Medium enterprises may report turnover up to €50m under EU definitions.",
+          "context_snip": "Analyze statements about the prevalence of SMEs in the European Union. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.10",
+          "idx": 1,
+          "text": "Micro classification requires both turnover and balance sheet to stay below €2m simultaneously.",
+          "context_snip": "Analyze statements about the prevalence of SMEs in the European Union. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.10",
+          "idx": 3,
+          "text": "Small firms may report turnover up to €50m provided staff are below fifty.",
+          "context_snip": "Analyze statements about the prevalence of SMEs in the European Union. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.12",
+          "idx": 0,
+          "text": "Turnover above €50m disqualifies medium status even if balance sheet qualifies.",
+          "context_snip": "Analyze terminology linking micro, small, and medium enterprises in EU policy. Evaluate the followin"
+        },
+        {
+          "case_id": "CASE 3.4.12",
+          "idx": 1,
+          "text": "Medium turnover cap is €10m, identical to the small limit.",
+          "context_snip": "Analyze terminology linking micro, small, and medium enterprises in EU policy. Evaluate the followin"
+        },
+        {
+          "case_id": "CASE 3.4.13",
+          "idx": 4,
+          "text": "Micro pairs sub-ten staff with €2m turnover or balance sheet limits.",
+          "context_snip": "Analyze a growing firm approaches medium thresholds. Evaluate the following economic assertions:"
+        },
+        {
+          "case_id": "CASE 3.4.18",
+          "idx": 1,
+          "text": "€2m turnover cap applies to small enterprises rather than micro.",
+          "context_snip": "Analyze when a firm is treated as large rather than SME under EU thresholds. Evaluate the following "
+        },
+        {
+          "case_id": "CASE 3.4.18",
+          "idx": 2,
+          "text": "€55m turnover confirms medium status because balance sheet is below €43m.",
+          "context_snip": "Analyze when a firm is treated as large rather than SME under EU thresholds. Evaluate the following "
+        },
+        {
+          "case_id": "CASE 3.4.19",
+          "idx": 0,
+          "text": "Forty-five staff and €9.5m turnover together meet EU small enterprise thresholds.",
+          "context_snip": "Analyze a small IT-support venture consider an EU micro-enterprise grant. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.19",
+          "idx": 2,
+          "text": "€1.8m turnover stays within the micro turnover cap of €2m.",
+          "context_snip": "Analyze a small IT-support venture consider an EU micro-enterprise grant. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.19",
+          "idx": 3,
+          "text": "Six employees fit the micro staff ceiling even when turnover exceeds €2m.",
+          "context_snip": "Analyze a small IT-support venture consider an EU micro-enterprise grant. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.20",
+          "idx": 3,
+          "text": "€48m turnover is within the €50m medium turnover cap.",
+          "context_snip": "Analyze how EU micro financial tests combine turnover and balance sheet figures. Evaluate the follow"
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 0,
+          "text": "€180k turnover is well below the €2m micro turnover cap.",
+          "context_snip": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 1,
+          "text": "A retailer is micro because turnover is under €10m despite thirty staff.",
+          "context_snip": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 2,
+          "text": "Four staff with €600k turnover can qualify as micro when financial caps are met.",
+          "context_snip": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 3,
+          "text": "Two hundred staff with €49m turnover and a €42m balance sheet can satisfy medium thresholds.",
+          "context_snip": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.21",
+          "idx": 4,
+          "text": "One hundred and twenty-five staff with €25m turnover and €30m balance sheet can satisfy medium thresholds.",
+          "context_snip": "Analyze EU small-enterprise financial limits alongside staff criteria. Evaluate the following econom"
+        },
+        {
+          "case_id": "CASE 3.4.23",
+          "idx": 1,
+          "text": "€43m is the medium balance sheet ceiling in the EU SME table.",
+          "context_snip": "Analyze policy makers note SMEs make up about ninety-nine percent of EU businesses. Evaluate the fol"
+        },
+        {
+          "case_id": "CASE 3.4.23",
+          "idx": 2,
+          "text": "€10m is the small turnover ceiling in the EU SME table.",
+          "context_snip": "Analyze policy makers note SMEs make up about ninety-nine percent of EU businesses. Evaluate the fol"
+        },
+        {
+          "case_id": "CASE 3.4.23",
+          "idx": 3,
+          "text": "€2m is the micro balance sheet ceiling in the EU SME table.",
+          "context_snip": "Analyze policy makers note SMEs make up about ninety-nine percent of EU businesses. Evaluate the fol"
+        },
+        {
+          "case_id": "CASE 3.4.23",
+          "idx": 4,
+          "text": "€50m is the medium turnover ceiling in the EU SME table.",
+          "context_snip": "Analyze policy makers note SMEs make up about ninety-nine percent of EU businesses. Evaluate the fol"
+        },
+        {
+          "case_id": "CASE 3.4.24",
+          "idx": 1,
+          "text": "€40m turnover alone is sufficient proof of medium enterprise status.",
+          "context_snip": "Consider a small IT-support venture plan to hire staff and expand turnover. Evaluate the following e"
+        },
+        {
+          "case_id": "CASE 3.4.25",
+          "idx": 4,
+          "text": "€200m turnover far exceeds the €50m medium turnover ceiling.",
+          "context_snip": "Analyze reporting expectations for a components manufacturer and a micro village supplier. Evaluate "
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 0,
+          "text": "€2.1m turnover exceeds the €2m micro turnover cap.",
+          "context_snip": "Analyze the EU medium enterprise turnover limit alongside other criteria. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 1,
+          "text": "€10.4m turnover exceeds the €10m small turnover cap.",
+          "context_snip": "Analyze the EU medium enterprise turnover limit alongside other criteria. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 2,
+          "text": "€52m turnover exceeds the €50m medium turnover cap.",
+          "context_snip": "Analyze the EU medium enterprise turnover limit alongside other criteria. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.26",
+          "idx": 4,
+          "text": "A €44m balance sheet exceeds the €43m medium balance sheet cap.",
+          "context_snip": "Analyze the EU medium enterprise turnover limit alongside other criteria. Evaluate the following eco"
+        },
+        {
+          "case_id": "CASE 3.4.28",
+          "idx": 2,
+          "text": "€2.1m turnover still meets the micro turnover cap of €2m.",
+          "context_snip": "Analyze a medium-sized exporter seeks a bank loan with EU guarantee backing. Evaluate the following "
+        },
+        {
+          "case_id": "CASE 3.4.28",
+          "idx": 3,
+          "text": "€10.4m turnover still meets the small turnover cap of €10m.",
+          "context_snip": "Analyze a medium-sized exporter seeks a bank loan with EU guarantee backing. Evaluate the following "
+        },
+        {
+          "case_id": "CASE 3.4.37",
+          "idx": 0,
+          "text": "The medium financial test treats €43m as the upper balance sheet bound.",
+          "context_snip": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. E"
+        },
+        {
+          "case_id": "CASE 3.4.37",
+          "idx": 1,
+          "text": "Micro eligibility includes balance sheet totals that do not exceed €2m.",
+          "context_snip": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. E"
+        },
+        {
+          "case_id": "CASE 3.4.37",
+          "idx": 2,
+          "text": "Small-enterprise turnover qualification allows figures up to the €10m ceiling.",
+          "context_snip": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. E"
+        },
+        {
+          "case_id": "CASE 3.4.37",
+          "idx": 3,
+          "text": "Micro turnover qualification permits annual sales up to €2m under EU tables.",
+          "context_snip": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. E"
+        },
+        {
+          "case_id": "CASE 3.4.37",
+          "idx": 4,
+          "text": "Medium turnover qualification permits figures up to €50m when other criteria hold.",
+          "context_snip": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. E"
+        },
+        {
+          "case_id": "CASE 3.4.40",
+          "idx": 4,
+          "text": "The EU micro cap for turnover is €10m rather than €2m.",
+          "context_snip": "Analyze claims linking SME business counts with employment patterns. Evaluate the following economic"
+        },
+        {
+          "case_id": "CASE 3.4.41",
+          "idx": 0,
+          "text": "Small enterprises must satisfy staff limits and the €10m turnover cap.",
+          "context_snip": "Analyze students must recall EU financial caps. Evaluate the following economic assertions:"
+        },
+        {
+          "case_id": "CASE 3.4.42",
+          "idx": 2,
+          "text": "The EU medium cap for balance sheet is €50m rather than €43m.",
+          "context_snip": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following e"
+        },
+        {
+          "case_id": "CASE 3.4.42",
+          "idx": 3,
+          "text": "Labeling €10m as the medium turnover ceiling misstates the EU threshold for that tier.",
+          "context_snip": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following e"
+        },
+        {
+          "case_id": "CASE 3.4.42",
+          "idx": 4,
+          "text": "Calling €2m the small turnover cap incorrectly swaps micro and small financial limits.",
+          "context_snip": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following e"
+        },
+        {
+          "case_id": "CASE 3.4.43",
+          "idx": 1,
+          "text": "One hundred and twenty staff with €52m turnover fails the medium turnover test.",
+          "context_snip": "Analyze a case lists eight staff and asks whether SME status is certain. Evaluate the following econ"
+        },
+        {
+          "case_id": "CASE 3.4.43",
+          "idx": 4,
+          "text": "Two hundred staff with €55m turnover fails the medium turnover test.",
+          "context_snip": "Analyze a case lists eight staff and asks whether SME status is certain. Evaluate the following econ"
+        },
+        {
+          "case_id": "CASE 3.4.44",
+          "idx": 4,
+          "text": "One hundred and eighty staff with €45m turnover can meet medium staff and turnover tests.",
+          "context_snip": "Analyze a firm crosses medium limits and becomes large. Evaluate the following economic assertions:"
+        },
+        {
+          "case_id": "CASE 3.4.47",
+          "idx": 2,
+          "text": "Micro turnover of €1.6m balance sheet context still allows €1.6m balance sheet under €2m cap.",
+          "context_snip": "Analyze EU SME classification principles for exam review. Evaluate the following economic assertions"
+        }
+      ]
+    },
+    "suspicious_banned_wording": {
+      "count": 0,
+      "items": []
+    },
+    "random_sample_judgment": [
+      {
+        "case_id": "CASE 3.1.42",
+        "title": "A small IT-support venture Factor Bundle",
+        "subsection": "3.1",
+        "context": "Analyze the factor bundle in a laptop repair and software venture. Evaluate the following economic assertions:",
+        "statements": [
+          "Hands-on technical fault-finding by staff is counted as the labour factor among the firm's resources.",
+          "Licensed diagnostic software and repair tools represent technology in the service model.",
+          "Refurbishing laptops uses spare parts inventory as capital.",
+          "The venture relies on entrepreneurship alone with no other factors.",
+          "Customer contact replaces all other factors in the venture."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 3,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.6.37",
+        "title": "Profit versus environment conflict",
+        "subsection": "3.6",
+        "context": "Consider higher profit targets may clash with environmental spending. Evaluate the following economic assertions:",
+        "statements": [
+          "Higher profit targets may clash with environmental spending on cleaner production.",
+          "Profit and environmental protection align perfectly with no trade-offs in every decision.",
+          "Owners and environmental stakeholders agree on every spending priority without exception.",
+          "Pollution control investments raise costs but create no tension with owner stakeholder interests.",
+          "Cleaner production spending can lower short-term profit and tension owner and environmental aims."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 3,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.2.40",
+        "title": "Standard of Living Link",
+        "subsection": "3.2",
+        "context": "Review linking GDP per capita to living standards. Evaluate the following economic assertions:",
+        "statements": [
+          "Living standards correlate with GDP though GDP misses some welfare dimensions.",
+          "Per capita averages miss distribution of income within a country.",
+          "GDP per capita fully captures inequality within a country.",
+          "Higher GDP per capita in EU members is unrelated to living standards.",
+          "Low GDP per capita alone defines an emerging economy's entire sector mix."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 4,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.4.22",
+        "title": "Medium balance sheet breach",
+        "subsection": "3.4",
+        "context": "Analyze a company has one hundred staff, €30m turnover, and a €43.5m balance sheet. Evaluate the following economic assertions:",
+        "statements": [
+          "Thirty staff with €9.9m turnover satisfies EU small enterprise thresholds.",
+          "A firm is small because turnover is only €25m despite one hundred twenty-five staff.",
+          "One hundred staff with €30m turnover fits the medium staff and turnover bands.",
+          "€2m is the micro turnover ceiling in the EU SME table.",
+          "Nine staff fits the micro employee ceiling pending turnover verification."
+        ],
+        "verdict": "mixed_or_thin",
+        "note": "Fewer textbook trigger terms; may be scenario-specific narrative rather than jargon.",
+        "textbook_keyword_hits": 0,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.2.15",
+        "title": "GDP Income Coverage Critique",
+        "subsection": "3.2",
+        "context": "Review criticisms that GDP misses some income. Evaluate the following economic assertions:",
+        "statements": [
+          "GDP omission of some income sources is one reason its use is debated.",
+          "Every barter transaction is always fully recorded in official GDP.",
+          "Unpaid home maintenance done by owners is always included in GDP.",
+          "GDP fully captures household volunteering and unpaid care in its totals.",
+          "Household volunteering and unpaid care are always counted in official GDP totals."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 5,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.5.20",
+        "title": "International sales only",
+        "subsection": "3.5",
+        "context": "Analyze a firm imports finished goods for domestic resale without foreign production. Evaluate the following economic assertions:",
+        "statements": [
+          "A firm that manufactures abroad but sells only at home still crosses into international scope.",
+          "Undercapitalisation is solved once a regional firm wins one large nearby contract.",
+          "Geographic scope labels depend on where a firm operates and sells, not owner residence alone.",
+          "Undercapitalisation can also affect national firms seeking rapid nationwide expansion.",
+          "Domestic public tenders make a firm multinational by exposing it to government rules."
+        ],
+        "verdict": "mixed_or_thin",
+        "note": "Fewer textbook trigger terms; may be scenario-specific narrative rather than jargon.",
+        "textbook_keyword_hits": 0,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.1.16",
+        "title": "Graz Tailor Workshop",
+        "subsection": "3.1",
+        "context": "Consider a Graz tailor orders sewing machines on hire-purchase and hires two apprentices for a growing workshop. Evaluate the following economic assertions:",
+        "statements": [
+          "Fabric purchased for client orders is a material input combined with labour and machines.",
+          "The tailor selecting machines and scheduling orders supplies entrepreneurship.",
+          "Apprentices cutting patterns and stitching garments supply labour.",
+          "Tailoring needs only labour because designs exist in the tailor's head.",
+          "Machines on hire-purchase are land because they occupy workshop space."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 3,
+        "jargon_hits": 0
+      },
+      {
+        "case_id": "CASE 3.1.12",
+        "title": "Leased Equipment as Capital",
+        "subsection": "3.1",
+        "context": "Analyze whether leased assets count as capital. Evaluate the following economic assertions:",
+        "statements": [
+          "A leased bottling line still functions as capital for a winery in production.",
+          "Leased warehouse robots used beside manual pickers are capital in a distribution hub.",
+          "Renting premises means no installed tools count as capital.",
+          "Hire-purchase machines are land because they stand in a workshop.",
+          "Seasonal leases turn machinery into land because work happens outdoors."
+        ],
+        "verdict": "textbook_fuhrmann_likely",
+        "note": "Statements use core micro/business-economics vocabulary consistent with school texts.",
+        "textbook_keyword_hits": 3,
+        "jargon_hits": 0
+      }
+    ]
+  },
+  "severity_ranked_summary": [
+    {
+      "severity": "HIGH",
+      "area": "CH3 obvious read-offs",
+      "detail": "17 statements"
+    },
+    {
+      "severity": "HIGH",
+      "area": "CH3 orphan euro amounts",
+      "detail": "45 statements"
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "CH2 orphan euro amounts",
+      "detail": "1 statements"
+    },
+    {
+      "severity": "LOW",
+      "area": "CH2 random sample (n=8) textbook vs jargon",
+      "detail": "8 textbook_likely, 0 mixed/thin, 0 jargon_risk"
+    },
+    {
+      "severity": "LOW",
+      "area": "CH3 random sample (n=8) textbook vs jargon",
+      "detail": "6 textbook_likely, 2 mixed/thin, 0 jargon_risk"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 exact duplicate statements",
+      "detail": "0 groups"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 within-case near-dups",
+      "detail": "0 pairs"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 cross-case near-dups",
+      "detail": "0 pairs"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 formula hints in parentheses",
+      "detail": "0 hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 finance abbreviations (EBIT|…|CF)",
+      "detail": "0 statement hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 meta extract labels",
+      "detail": "0 hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 obvious read-offs",
+      "detail": "0 statements"
+    },
+    {
+      "severity": "OK",
+      "area": "CH2 banned-ish wording",
+      "detail": "0 hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 exact duplicate statements",
+      "detail": "0 groups"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 within-case near-dups",
+      "detail": "0 pairs"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 cross-case near-dups",
+      "detail": "0 pairs"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 formula hints in parentheses",
+      "detail": "0 hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 finance abbreviations (EBIT|…|CF)",
+      "detail": "0 statement hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 meta extract labels",
+      "detail": "0 hits"
+    },
+    {
+      "severity": "OK",
+      "area": "CH3 banned-ish wording",
+      "detail": "0 hits"
+    }
+  ]
+}
