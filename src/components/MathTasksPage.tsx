@@ -551,8 +551,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   ) : (
                     <div className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
                       <p>
-                        BBE format: mark each of the five statements independently as True or
-                        False. The number of true statements varies by case.
+                        BBE format: mark each statement independently as True or False. Most
+                        tasks have five statements (A–E); a few advanced tasks use six (A–F).
+                        The number of true statements varies by case.
                       </p>
                       <div className="rounded-lg border border-border/70 bg-background/60 p-3">
                         <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -567,7 +568,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                       <p>
                         After you check your answers, tap{" "}
                         <span className="font-semibold text-primary">Explanation</span> to open
-                        the full worked solution for all five statements here.
+                        the full worked solution for every statement here.
                       </p>
                     </div>
                   )}
