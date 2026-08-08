@@ -1,5 +1,7 @@
 /** BBE flashcard decks for Economics, Math, and English. */
 
+import { ENGLISH_FLASHCARD_SECTIONS } from "./english-flashcards";
+
 export type Flashcard = {
   term: string;
   explanation: string;
@@ -452,6 +454,7 @@ export const MATH_FLASHCARD_SECTIONS: FlashcardSection[] = [
     ],
   },
 ];
+
 export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
   {
     id: "economics",
@@ -478,14 +481,13 @@ export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
   {
     id: "english",
     title: "English",
-    tag: "Language",
+    tag: "Vocabulary",
     description:
-      "Vocabulary and reading flashcards for the BBE English section — coming soon.",
+      "Business-news vocabulary in three modes — synonyms, antonyms, and definitions — in the style of BBC Worklife, CNN Business, and similar outlets.",
     accent: "#0ea5e9",
     downloadHref: null,
     downloadLabel: null,
-    sections: [],
-    comingSoon: true,
+    sections: ENGLISH_FLASHCARD_SECTIONS,
   },
 ];
 
