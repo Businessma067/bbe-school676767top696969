@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { BookOpen, Target, AlertTriangle, Download } from "lucide-react";
+import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2 } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
@@ -153,6 +153,7 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
   const segments = useMemo(() => segmentTheory(markdown), [markdown]);
   const [progress, setProgress] = useState(0);
   const [activeId, setActiveId] = useState<string>("");
+  const [readerMode, setReaderMode] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const tocScrollRef = useRef<HTMLDivElement>(null);
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -165,7 +166,23 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
     setProgress(0);
     setActiveId(toc[0]?.id ?? "");
     if (tocScrollRef.current) tocScrollRef.current.scrollTo({ left: 0 });
+    setReaderMode(false);
   }, [chapter, toc]);
+
+  // Exit reader mode on Escape; lock page scroll while reading fullscreen.
+  useEffect(() => {
+    if (!readerMode) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setReaderMode(false);
+    };
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [readerMode]);
 
   // Keep the active topic chip in view — scroll the strip when it reaches the edge.
   useEffect(() => {
@@ -248,32 +265,65 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
   }
 
   return (
-    <div className="rounded-2xl border border-border bg-card shadow-sm">
-      <div className="sticky top-16 z-20 flex flex-col gap-2 rounded-t-2xl border-b border-border bg-card/95 px-4 py-3 backdrop-blur sm:px-6">
+    <div
+      className={cn(
+        "flex flex-col border border-border bg-card shadow-sm",
+        readerMode
+          ? "fixed inset-0 z-[80] rounded-none border-0"
+          : "rounded-2xl",
+      )}
+    >
+      <div
+        className={cn(
+          "z-20 flex shrink-0 flex-col gap-2 border-b border-border bg-card/95 px-4 py-3 backdrop-blur sm:px-6",
+          readerMode ? "sticky top-0 rounded-none" : "sticky top-16 rounded-t-2xl",
+        )}
+      >
         <div className="flex items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-2">
             <BookOpen className="h-4 w-4 shrink-0 text-primary" />
             <div className="min-w-0">
               <div className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-                Chapter {chapter} · Theory
+                Chapter {chapter} · Theory{readerMode ? " · Reader" : ""}
               </div>
               <div className="truncate font-display text-sm font-bold sm:text-base">{title}</div>
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-2">
-            <a
-              href={MATERIALS_PDF_URL}
-              download={MATERIALS_PDF_NAME}
+            <button
+              type="button"
+              onClick={() => setReaderMode((v) => !v)}
+              aria-pressed={readerMode}
+              title={readerMode ? "Exit reader mode (Esc)" : "Reader mode — theory fullscreen"}
               className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:text-sm"
             >
-              <Download className="h-4 w-4" /> Download materials
-            </a>
-            <button
-              onClick={onGoToPractice}
-              className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:text-sm"
-            >
-              <Target className="h-4 w-4" /> Go to Practice
+              {readerMode ? (
+                <>
+                  <Minimize2 className="h-4 w-4" /> Exit reader
+                </>
+              ) : (
+                <>
+                  <Maximize2 className="h-4 w-4" /> Reader mode
+                </>
+              )}
             </button>
+            {!readerMode && (
+              <a
+                href={MATERIALS_PDF_URL}
+                download={MATERIALS_PDF_NAME}
+                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:text-sm"
+              >
+                <Download className="h-4 w-4" /> Download materials
+              </a>
+            )}
+            {!readerMode && (
+              <button
+                onClick={onGoToPractice}
+                className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:text-sm"
+              >
+                <Target className="h-4 w-4" /> Go to Practice
+              </button>
+            )}
           </div>
         </div>
         <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
@@ -317,7 +367,10 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       <div
         ref={scrollRef}
         onScroll={onScroll}
-        className="relative max-h-[calc(100vh-11rem)] overflow-y-auto bg-[oklch(0.985_0.005_75)]"
+        className={cn(
+          "relative flex-1 overflow-y-auto bg-[oklch(0.985_0.005_75)]",
+          readerMode ? "min-h-0" : "max-h-[calc(100vh-11rem)]",
+        )}
       >
         <article className="mx-auto max-w-3xl px-4 py-8 sm:px-8 sm:py-10">{body}</article>
       </div>
