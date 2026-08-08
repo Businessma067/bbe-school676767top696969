@@ -61,9 +61,11 @@ export const Route = createFileRoute("/flashcards/$subject")({
 
 type DeckCard = Flashcard & { sectionId: string; sectionTitle: string; key: string };
 
-const SWIPE_THRESHOLD = 88;
-const EXIT_MS = 300;
-const DRAG_ACTIVATE = 12;
+const SWIPE_THRESHOLD = 48;
+const SWIPE_VELOCITY = 0.45; // px/ms — a quick flick counts even below threshold
+const EXIT_MS = 260;
+const ENTER_MS = 320;
+const DRAG_ACTIVATE = 5;
 
 function buildDeck(
   subjectId: string,
@@ -96,7 +98,9 @@ function FlashcardSubjectPage() {
   const subject = getFlashcardSubject(subjectId)!;
   const total = countCards(subject.sections);
 
-  const [sectionId, setSectionId] = useState<string | "all">("all");
+  const [sectionId, setSectionId] = useState<string | "all">(() =>
+    subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
+  );
   const [deck, setDeck] = useState<DeckCard[]>(() =>
     buildDeck(subjectId, subject.sections, "all"),
   );
@@ -106,6 +110,7 @@ function FlashcardSubjectPage() {
   const [dragX, setDragX] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [exitDir, setExitDir] = useState<"left" | "right" | null>(null);
+  const [enterFrom, setEnterFrom] = useState<"left" | "right" | null>(null);
   const [seen, setSeen] = useState(0);
 
   const exitLockRef = useRef(false);
@@ -113,6 +118,9 @@ function FlashcardSubjectPage() {
   const startXRef = useRef(0);
   const startYRef = useRef(0);
   const dragXRef = useRef(0);
+  const lastXRef = useRef(0);
+  const lastTRef = useRef(0);
+  const velocityRef = useRef(0);
   const movedRef = useRef(false);
   const axisRef = useRef<"undecided" | "x" | "y">("undecided");
   const deckRef = useRef(deck);
@@ -137,6 +145,7 @@ function FlashcardSubjectPage() {
     setDragX(0);
     dragXRef.current = 0;
     setExitDir(null);
+    setEnterFrom(null);
     exitLockRef.current = false;
     pointerIdRef.current = null;
     setSeen(0);
@@ -152,15 +161,28 @@ function FlashcardSubjectPage() {
   const stats = useMemo(() => summarizeProgress(allKeys, progress), [allKeys, progress]);
 
   const sectionOptions = useMemo(
-    () => [
-      { id: "all" as const, label: `All topics (${total})` },
-      ...subject.sections.map((s) => ({
-        id: s.id,
-        label: `${s.title} (${s.cards.length})`,
-      })),
-    ],
-    [subject.sections, total],
+    () =>
+      subjectId === "english"
+        ? subject.sections.map((s) => ({
+            id: s.id,
+            label: `${s.title} (${s.cards.length})`,
+          }))
+        : [
+            { id: "all" as const, label: `All topics (${total})` },
+            ...subject.sections.map((s) => ({
+              id: s.id,
+              label: `${s.title} (${s.cards.length})`,
+            })),
+          ],
+    [subject.sections, subjectId, total],
   );
+
+  // English: default into Synonyms mode (no "all").
+  useEffect(() => {
+    if (subjectId === "english" && sectionId === "all") {
+      setSectionId(subject.sections[0]?.id ?? "all");
+    }
+  }, [subjectId, sectionId, subject.sections]);
 
   const knowledge: CardKnowledge | undefined = card ? progress[card.key] : undefined;
 
@@ -169,10 +191,18 @@ function FlashcardSubjectPage() {
     movedRef.current = false;
     axisRef.current = "undecided";
     dragXRef.current = 0;
+    velocityRef.current = 0;
     setDragX(0);
     setDragging(false);
     document.body.classList.remove("flashcard-swiping");
   }, []);
+
+  const shouldAcceptSwipe = (dx: number, vx: number) => {
+    if (dx >= SWIPE_THRESHOLD || (dx > 18 && vx >= SWIPE_VELOCITY)) return "known" as const;
+    if (dx <= -SWIPE_THRESHOLD || (dx < -18 && vx <= -SWIPE_VELOCITY))
+      return "unknown" as const;
+    return null;
+  };
 
   const rateCard = useCallback(
     (status: CardKnowledge) => {
@@ -187,11 +217,16 @@ function FlashcardSubjectPage() {
       setProgress(nextProgress);
       saveProgress(subjectId, nextProgress);
 
-      setExitDir(status === "known" ? "right" : "left");
+      const dir = status === "known" ? "right" : "left";
+      setExitDir(dir);
+      setEnterFrom(null);
+
       window.setTimeout(() => {
         setFlipped(false);
         setExitDir(null);
-        exitLockRef.current = false;
+        // Next card enters from the opposite side of the swipe (deck feel).
+        const from = dir === "right" ? "left" : "right";
+        setEnterFrom(from);
         const { index: nextIndex, queue } = takeNextFromQueue(
           queueRef.current,
           deckRef.current,
@@ -201,6 +236,10 @@ function FlashcardSubjectPage() {
         queueRef.current = queue;
         setIndex(nextIndex);
         setSeen((n) => n + 1);
+        window.setTimeout(() => {
+          setEnterFrom(null);
+          exitLockRef.current = false;
+        }, ENTER_MS);
       }, EXIT_MS);
     },
     [resetDragState, subjectId],
@@ -263,8 +302,8 @@ function FlashcardSubjectPage() {
       const axis = axisRef.current;
       resetDragState();
       if (axis === "x") {
-        if (dx >= SWIPE_THRESHOLD) rateCard("known");
-        else if (dx <= -SWIPE_THRESHOLD) rateCard("unknown");
+        const decision = shouldAcceptSwipe(dx, velocityRef.current);
+        if (decision) rateCard(decision);
       } else if (!moved && axis === "undecided") {
         setFlipped((f) => !f);
       }
@@ -286,6 +325,9 @@ function FlashcardSubjectPage() {
     startXRef.current = e.clientX;
     startYRef.current = e.clientY;
     dragXRef.current = 0;
+    lastXRef.current = e.clientX;
+    lastTRef.current = performance.now();
+    velocityRef.current = 0;
     movedRef.current = false;
     axisRef.current = "undecided";
     setDragging(true);
@@ -328,6 +370,11 @@ function FlashcardSubjectPage() {
 
     e.preventDefault();
     movedRef.current = true;
+    const now = performance.now();
+    const dt = Math.max(1, now - lastTRef.current);
+    velocityRef.current = (e.clientX - lastXRef.current) / dt;
+    lastXRef.current = e.clientX;
+    lastTRef.current = now;
     dragXRef.current = dx;
     setDragX(dx);
   };
@@ -335,6 +382,7 @@ function FlashcardSubjectPage() {
   const onPointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (pointerIdRef.current !== e.pointerId) return;
     const dx = dragXRef.current;
+    const vx = velocityRef.current;
     const moved = movedRef.current;
     const axis = axisRef.current;
 
@@ -346,12 +394,9 @@ function FlashcardSubjectPage() {
     resetDragState();
 
     if (axis === "x") {
-      if (dx >= SWIPE_THRESHOLD) {
-        rateCard("known");
-        return;
-      }
-      if (dx <= -SWIPE_THRESHOLD) {
-        rateCard("unknown");
+      const decision = shouldAcceptSwipe(dx, vx);
+      if (decision) {
+        rateCard(decision);
         return;
       }
     }
@@ -359,14 +404,34 @@ function FlashcardSubjectPage() {
   };
 
   const swipeHint =
-    dragX > 24 ? "Know →" : dragX < -24 ? "← Don't know" : "Swipe right = know · left = don't know";
+    dragX > 16 ? "Know →" : dragX < -16 ? "← Don't know" : "Swipe right = know · left = don't know";
 
-  const transform = exitDir
-    ? `translateX(${exitDir === "right" ? "130%" : "-130%"}) rotate(${exitDir === "right" ? 14 : -14}deg)`
-    : `translateX(${dragX}px) rotate(${dragX * 0.045}deg)`;
+  let transform: string | undefined;
+  if (exitDir) {
+    transform = `translateX(${exitDir === "right" ? "118%" : "-118%"}) rotate(${exitDir === "right" ? 16 : -16}deg)`;
+  } else if (enterFrom) {
+    transform = undefined; // CSS enter animation owns transform
+  } else {
+    transform = `translateX(${dragX}px) rotate(${dragX * 0.055}deg)`;
+  }
 
-  const overlayOpacity = Math.min(0.5, Math.abs(dragX) / 160);
-  const busy = !!exitDir;
+  const overlayOpacity = Math.min(0.55, Math.abs(dragX) / 120);
+  const busy = !!exitDir || !!enterFrom;
+
+  const frontLabel =
+    subjectId === "english"
+      ? "Word"
+      : subjectId === "math"
+        ? "Term / Formula"
+        : "Term";
+  const backLabel =
+    subjectId === "english"
+      ? sectionId === "eng-synonyms"
+        ? "Synonyms"
+        : sectionId === "eng-antonyms"
+          ? "Antonyms"
+          : "Definition"
+      : "Explanation";
 
   return (
     <div className="flashcards-page min-h-screen overflow-x-clip bg-background font-sans text-foreground antialiased">
@@ -413,20 +478,55 @@ function FlashcardSubjectPage() {
           </div>
 
           <div className="mb-6 flex flex-wrap items-center gap-3">
-            <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Topic
-            </label>
-            <select
-              value={sectionId}
-              onChange={(e) => setSectionId(e.target.value)}
-              className="min-w-[220px] flex-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30"
-            >
-              {sectionOptions.map((o) => (
-                <option key={o.id} value={o.id}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
+            {subjectId === "english" ? (
+              <>
+                <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Mode
+                </label>
+                <div className="flex flex-1 flex-wrap gap-2">
+                  {subject.sections.map((s) => {
+                    const active = sectionId === s.id;
+                    return (
+                      <button
+                        key={s.id}
+                        type="button"
+                        onClick={() => setSectionId(s.id)}
+                        className={
+                          "rounded-md border px-3 py-2 text-xs font-semibold transition-colors " +
+                          (active
+                            ? "border-transparent text-white shadow-sm"
+                            : "border-border bg-card text-foreground hover:bg-secondary")
+                        }
+                        style={
+                          active
+                            ? { backgroundColor: subject.accent }
+                            : undefined
+                        }
+                      >
+                        {s.title}
+                      </button>
+                    );
+                  })}
+                </div>
+              </>
+            ) : (
+              <>
+                <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Topic
+                </label>
+                <select
+                  value={sectionId}
+                  onChange={(e) => setSectionId(e.target.value)}
+                  className="min-w-[220px] flex-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30"
+                >
+                  {sectionOptions.map((o) => (
+                    <option key={o.id} value={o.id}>
+                      {o.label}
+                    </option>
+                  ))}
+                </select>
+              </>
+            )}
             <button
               type="button"
               onClick={() => {
@@ -475,9 +575,17 @@ function FlashcardSubjectPage() {
                 ref={stageRef}
                 className={
                   "flashcard-stage relative w-full " +
-                  (busy ? "flashcard-exiting" : dragging ? "" : "flashcard-drag-settle")
+                  (exitDir
+                    ? "flashcard-exiting"
+                    : enterFrom === "left"
+                      ? "flashcard-entering-left"
+                      : enterFrom === "right"
+                        ? "flashcard-entering-right"
+                        : dragging
+                          ? ""
+                          : "flashcard-drag-settle")
                 }
-                style={{ transform }}
+                style={transform ? { transform } : undefined}
                 onPointerDown={onPointerDown}
                 onPointerMove={onPointerMove}
                 onPointerUp={onPointerUp}
@@ -512,7 +620,7 @@ function FlashcardSubjectPage() {
                     <div className="flashcard-face flashcard-front rounded-2xl border border-border bg-card p-8 shadow-sm">
                       <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                         <Layers className="h-3 w-3" />
-                        Term / Formula
+                        {frontLabel}
                       </div>
                       <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
                         <FlashcardMath
@@ -521,13 +629,13 @@ function FlashcardSubjectPage() {
                         />
                       </div>
                       <p className="mt-2 text-center text-xs text-muted-foreground">
-                        Tap to flip · press-and-drag to sort
+                        Tap to flip · swipe to sort
                       </p>
                     </div>
                     <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-8 shadow-sm">
                       <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                         <Layers className="h-3 w-3" />
-                        Explanation
+                        {backLabel}
                       </div>
                       <div className="flex min-h-[220px] flex-col items-center justify-center px-2 pt-6 text-center sm:min-h-[260px]">
                         <FlashcardMath

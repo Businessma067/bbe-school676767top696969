@@ -91,7 +91,9 @@ function FlashcardsIndexPage() {
                     <p className="mt-3 text-xs font-semibold text-muted-foreground">
                       {s.comingSoon
                         ? "Coming soon"
-                        : `${n} cards · ${s.sections.length} topics`}
+                        : s.id === "english"
+                          ? `${n} cards · 3 modes`
+                          : `${n} cards · ${s.sections.length} topics`}
                     </p>
                     <span
                       className={

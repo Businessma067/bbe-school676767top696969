@@ -484,7 +484,7 @@ export const FLASHCARD_SUBJECTS: FlashcardSubject[] = [
     title: "English",
     tag: "Vocabulary",
     description:
-      "BBE English exam vocabulary — 200 unique cards each for synonyms, meanings, and antonyms.",
+      "BBE English exam vocabulary — 200 unique cards each for synonyms, meanings, and antonyms (business-news register).",
     accent: "#0ea5e9",
     downloadHref: null,
     downloadLabel: null,
