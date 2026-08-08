@@ -77,47 +77,160 @@ function ChartFrame({ title, children, height = "h-[260px] sm:h-[300px]" }: { ti
   );
 }
 
+/** Full SVG circular flow — solid arrow lines (no Unicode “← →” stubs). */
 function CircularFlow() {
-  return (
-    <div className="mx-auto max-w-2xl text-[11px] sm:text-xs">
-      <div className="mb-6 flex justify-center">
-        <Node soft className="min-w-[9rem]">
-          Government
-        </Node>
-      </div>
-      <div className="grid grid-cols-[1fr_minmax(9rem,1.4fr)_1fr] items-center gap-2 sm:gap-4">
-        <Node className="min-h-[3.5rem]">
-          Private
-          <br />
-          households
-        </Node>
-        <div className="space-y-2 text-[10px] sm:text-[11px]">
-          <FlowRow label="Goods and services" dir="left" />
-          <FlowRow label="Payments for goods & services" dir="right" />
-          <FlowRow label="Labour & other resources" dir="right" />
-          <FlowRow label="Wages, rent, interest, profit" dir="left" />
-        </div>
-        <Node className="flex min-h-[3.5rem] items-center justify-center">Businesses</Node>
-      </div>
-      <div className="mt-4 grid grid-cols-2 gap-3 text-center text-[10px] text-muted-foreground">
-        <div>taxes ↑ · public goods / transfers ↓</div>
-        <div>taxes ↑ · subsidies / public goods ↓</div>
-      </div>
-      <Hint>Real flows and monetary flows run in opposite directions.</Hint>
-    </div>
-  );
-}
+  const W = 640;
+  const H = 320;
+  const hh = { x: 28, y: 168, w: 118, h: 72 };
+  const biz = { x: 494, y: 168, w: 118, h: 72 };
+  const gov = { x: 248, y: 18, w: 144, h: 44 };
+  const x1 = hh.x + hh.w + 14;
+  const x2 = biz.x - 14;
+  const lanes: { y: number; label: string; to: "hh" | "biz" }[] = [
+    { y: 186, label: "Goods and services", to: "hh" },
+    { y: 212, label: "Payments for goods and services", to: "biz" },
+    { y: 238, label: "Labour and other resources", to: "biz" },
+    { y: 264, label: "Wages, rent, interest and profit", to: "hh" },
+  ];
 
-function FlowRow({ label, dir }: { label: string; dir: "left" | "right" }) {
   return (
-    <div className="flex items-center gap-1.5 text-primary">
-      <span className={cn("font-bold", dir === "left" ? "opacity-100" : "opacity-0")} aria-hidden>
-        ←
-      </span>
-      <span className="flex-1 text-center text-foreground">{label}</span>
-      <span className={cn("font-bold", dir === "right" ? "opacity-100" : "opacity-0")} aria-hidden>
-        →
-      </span>
+    <div className="mx-auto w-full max-w-2xl">
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label="Circular flow of goods, services and money">
+        <defs>
+          <marker id="cf-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill={ACCENT} />
+          </marker>
+          <marker id="cf-arrow-muted" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <path d="M0,0 L7,3.5 L0,7 Z" fill={MUTED} />
+          </marker>
+        </defs>
+
+        {/* Government */}
+        <rect x={gov.x} y={gov.y} width={gov.w} height={gov.h} fill="oklch(0.97 0.02 55)" stroke={ACCENT} strokeWidth="1.25" />
+        <text x={gov.x + gov.w / 2} y={gov.y + 27} textAnchor="middle" fill={ACCENT} fontSize="13" fontWeight="700">
+          Government
+        </text>
+
+        {/* Households / Businesses */}
+        <rect x={hh.x} y={hh.y} width={hh.w} height={hh.h} fill="oklch(0.96 0.01 75)" stroke="#C9BDB0" strokeWidth="1.25" />
+        <text x={hh.x + hh.w / 2} y={hh.y + 30} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+          Private
+        </text>
+        <text x={hh.x + hh.w / 2} y={hh.y + 48} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+          households
+        </text>
+
+        <rect x={biz.x} y={biz.y} width={biz.w} height={biz.h} fill="oklch(0.96 0.01 75)" stroke="#C9BDB0" strokeWidth="1.25" />
+        <text x={biz.x + biz.w / 2} y={biz.y + 40} textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+          Businesses
+        </text>
+
+        {/* Horizontal exchange arrows with labels on the line */}
+        {lanes.map((lane) => {
+          const from = lane.to === "hh" ? x2 : x1;
+          const to = lane.to === "hh" ? x1 : x2;
+          return (
+            <g key={lane.label}>
+              <line
+                x1={from}
+                y1={lane.y}
+                x2={to}
+                y2={lane.y}
+                stroke={ACCENT}
+                strokeWidth="1.6"
+                markerEnd="url(#cf-arrow)"
+              />
+              <rect
+                x={(x1 + x2) / 2 - 108}
+                y={lane.y - 9}
+                width="216"
+                height="16"
+                fill="oklch(0.985 0.005 75)"
+              />
+              <text
+                x={(x1 + x2) / 2}
+                y={lane.y + 3}
+                textAnchor="middle"
+                fill={INK}
+                fontSize="10.5"
+              >
+                {lane.label}
+              </text>
+            </g>
+          );
+        })}
+
+        {/* Taxes ↑ (outer) and public goods / transfers ↓ (inner) */}
+        <line
+          x1={hh.x + 28}
+          y1={hh.y - 2}
+          x2={hh.x + 28}
+          y2={gov.y + gov.h + 18}
+          stroke={MUTED}
+          strokeWidth="1.4"
+        />
+        <line
+          x1={hh.x + 28}
+          y1={gov.y + gov.h + 18}
+          x2={gov.x + 36}
+          y2={gov.y + gov.h + 2}
+          stroke={MUTED}
+          strokeWidth="1.4"
+          markerEnd="url(#cf-arrow-muted)"
+        />
+        <line
+          x1={biz.x + biz.w - 28}
+          y1={biz.y - 2}
+          x2={biz.x + biz.w - 28}
+          y2={gov.y + gov.h + 18}
+          stroke={MUTED}
+          strokeWidth="1.4"
+        />
+        <line
+          x1={biz.x + biz.w - 28}
+          y1={gov.y + gov.h + 18}
+          x2={gov.x + gov.w - 36}
+          y2={gov.y + gov.h + 2}
+          stroke={MUTED}
+          strokeWidth="1.4"
+          markerEnd="url(#cf-arrow-muted)"
+        />
+        <text x={hh.x + 36} y={130} fill={MUTED} fontSize="10" fontWeight="600">
+          taxes ↑
+        </text>
+        <text x={biz.x + biz.w - 70} y={130} fill={MUTED} fontSize="10" fontWeight="600">
+          taxes ↑
+        </text>
+
+        <line
+          x1={gov.x + 52}
+          y1={gov.y + gov.h + 2}
+          x2={hh.x + hh.w - 22}
+          y2={hh.y - 4}
+          stroke={ACCENT}
+          strokeWidth="1.4"
+          markerEnd="url(#cf-arrow)"
+        />
+        <line
+          x1={gov.x + gov.w - 52}
+          y1={gov.y + gov.h + 2}
+          x2={biz.x + 22}
+          y2={biz.y - 4}
+          stroke={ACCENT}
+          strokeWidth="1.4"
+          markerEnd="url(#cf-arrow)"
+        />
+        <text x={168} y={96} fill={ACCENT} fontSize="9.5" fontWeight="600">
+          public goods / transfers ↓
+        </text>
+        <text x={378} y={96} fill={ACCENT} fontSize="9.5" fontWeight="600">
+          subsidies / public goods ↓
+        </text>
+
+        <text x={W / 2} y={308} textAnchor="middle" fill={MUTED} fontSize="11" fontStyle="italic">
+          Real flows and monetary flows run in opposite directions
+        </text>
+      </svg>
     </div>
   );
 }
