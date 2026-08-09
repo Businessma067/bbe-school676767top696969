@@ -212,7 +212,7 @@
       "When every payment is identical, there is no changing ratio between consecutive terms - or equivalently, the ratio is exactly 1. Adding n copies of the same number a together is simply n×a, a much simpler formula than the ratio-based one needed when the terms actually change size from year to year, and it sidesteps the division-by-zero problem that the general formula would run into at k=1.",
       "With 15 identical annual payments of $12 million each, the total is just 12×15 = $180.00 million; no compounding or ratio calculation is needed since nothing changes from one year to the next.",
       "Growing the same $12 million starting payment by 4% every year for 15 years gives s15 = 12×($1.04^{15}$-1)/0.04. Since 1.04 to the 15th power is about 1.800944, this becomes 12×20.0236 ≈ $240.28 million, noticeably higher than the $240.11 million claimed.",
-      "The actual gap between the 4%-growth total (≈ $240.28 million) and the flat total ($180.00 million) is 240.28-180.00 = $60.28 million. That is not more than $65.00 million, so the claim overstates how much extra the growth scenario contributes.",
+      "The actual gap between the 4%-growth total (≈ $240.28 million) and the flat total ($180.00 million) is $240.28 million - $180.00 million = $60.28 million. That is not more than $65.00 million, so the claim overstates how much extra the growth scenario contributes.",
       "The general ratio-based formula for a finite geometric series has (k-1) in its denominator. If k were set to exactly 1 - the flat, no-growth case - that denominator becomes zero, and dividing by zero is undefined, so the formula simply cannot be evaluated as written. That is precisely why a separate, simpler rule - multiplying the constant payment by the number of years - has to be used whenever every term in the series is identical."
     ]
   },
@@ -241,7 +241,7 @@
     "steps": "Payment 2 = a·k = 15,000×0.88 = $13,200.00. $0.88^{8}$ ≈ 0.359635. s8 = 15,000·(1 - 0.359635)/0.12 = 15,000 × 5.336379 = $80,045.68. Infinite sum = 15,000/(1 - 0.88) = 15,000/0.12 = $125,000.00 (not $130,000.00). Ratio: 80,045.68/125,000.00 = 0.6404 ≈ 64.04%, which is not more than 75%. With k = 0.95: infinite sum = 15,000/(1 - 0.95) = 15,000/0.05 = $300,000.00, which is larger, not smaller, than the $125,000.00 obtained at k = 0.88.",
     "explanations": [
       "The second payment is the first payment multiplied once by the decay factor: 15,000×0.88 = $13,200.00, matching exactly.",
-      "Summing the first 8 payments uses s8 = a·(1-k8)/(1-k). Since 0.88 to the 8th power is about 0.359635, this becomes 15,000×(1-0.359635)/0.12 = 15,000×5.336379 ≈ $80,045.68.",
+      "Summing the first 8 payments uses s8 = a·(1-$k^{8}$)/(1-k). Since 0.88 to the 8th power is about 0.359635, this becomes 15,000×(1-0.359635)/0.12 = 15,000×5.336379 ≈ $80,045.68.",
       "Since |0.88|<1, letting the payments continue forever gives an infinite total of a/(1-k) = 15,000/(1-0.88) = 15,000/0.12 = $125,000.00, not $130,000.00.",
       "Dividing the 8-payment total by the true infinite total gives 80,045.68/125,000.00 ≈ 0.6404, or about 64%. That is below 75%, so the claim that the finite total represents more than 75% of the infinite total is incorrect.",
       "A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly from one year to the next, which makes the (1-k) denominator in the infinite-sum formula smaller - and a smaller denominator produces a larger result, not a smaller one. Concretely, 15,000/(1-0.95) = 15,000/0.05 = $300,000.00, far larger than the $125,000.00 obtained at k=0.88, so the claimed comparison has the direction backwards."
@@ -269,13 +269,13 @@
     ],
     "given": "• a (year-1 royalty) = $9,000\n• k (annual growth quotient) = 1.08\n• n = 12 years",
     "formulas": "• Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$\n• Term in year t: $a k^{t-1}$\n• Flat case (k = 1): sn = a·n",
-    "steps": "$1.08^{12}$ ≈ 2.518170. s12 = 9,000·(2.518170 - 1)/0.08 = 9,000 × 18.977128 = $170,794.15. $1.08^{11}$ = 2.518170/1.08 ≈ 2.331639. Year-12 payment = 9,000 × 2.331639 = $20,984.75. Flat total = 9,000 × 12 = $108,000.00. Difference = 170,794.15 - 108,000.00 = $62,794.15.",
+    "steps": "$1.08^{12}$ ≈ 2.518170. s12 = 9,000·(2.518170 - 1)/0.08 = 9,000 × 18.977128 = $170,794.15. $1.08^{11}$ = 2.518170/1.08 ≈ 2.331639. Year-12 payment = 9,000 × 2.331639 = $20,984.75. Flat total = 9,000 × 12 = $108,000.00. Difference = $170,794.15 - $108,000.00 = $62,794.15.",
     "explanations": [
       "The finite-sum formula sn=$a(k^{n}-1)/(k-1)$ only breaks down when its denominator, k-1, equals zero, which happens exactly when k=1. As long as k is anything other than 1 - including values greater than 1, such as 1.08 here - the formula is perfectly well defined and produces a valid total for any fixed, finite number of terms; the separate requirement that |k|<1 only matters when trying to add up infinitely many terms, not a specific finite count of them.",
       "Computing s12=9,000×($1.08^{12}$-1)/0.08 requires 1.08 raised to the 12th power, which is about 2.518170. That gives 9,000×(2.518170-1)/0.08 = 9,000×18.977128 ≈ $170,794.15, not $175,000.00.",
       "The infinite-sum formula a/(1-k) is only meaningful when the terms shrink toward zero as more are added, which requires |k| to be below 1. Here k=1.08 is greater than 1, so each successive royalty payment is larger than the last, growing without bound rather than shrinking - there is no finite total for the series to approach, so plugging these numbers into the infinite-sum formula produces a number with no real meaning, whether positive or negative.",
       "The 12th year's royalty equals the first payment multiplied by the ratio raised to the 11th power, since the first payment itself already corresponds to zero multiplications. Since 1.08 to the 11th power is about 2.331639, that gives 9,000×2.331639 ≈ $20,984.75, not $20,715.85.",
-      "Twelve flat annual payments of $9,000 with no growth at all would total 9,000×12 = $108,000.00. Comparing that to the actual 8%-growth total of about $170,794.15 gives a difference of 170,794.15-108,000.00 = $62,794.15, confirming the stated gap exactly."
+      "Twelve flat annual payments of $9,000 with no growth at all would total 9,000×12 = $108,000.00. Comparing that to the actual 8%-growth total of about $170,794.15 gives a difference of $170,794.15 - $108,000.00 = $62,794.15, confirming the stated gap exactly."
     ]
   },
   {
@@ -300,13 +300,13 @@
     ],
     "given": "• Finite phase: a = $4 million, k = 1.20, n = 6 years\n• Terminal phase: first term = year-6 revenue, quotient k = 0.85, infinite horizon",
     "formulas": "• Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$\n• Term in year t: $a k^{t-1}$\n• Infinite sum (|k| < 1): a/(1 - k)",
-    "steps": "$1.20^{6}$ = 2.985984. s6 = 4·(2.985984 - 1)/0.20 = 4 × 9.92992 = $39.72 million. $1.20^{5}$ = 2.48832; year-6 revenue = 4 × 2.48832 = $9.95 million. Terminal value = 9.95328/(1 - 0.85) = 9.95328/0.15 = $66.36 million. Combined value = 39.72 + 66.36 = $106.08 million, which is not less than $100 million.",
+    "steps": "$1.20^{6}$ = 2.985984. s6 = 4·(2.985984 - 1)/0.20 = 4 × 9.92992 = $39.72 million. $1.20^{5}$ = 2.48832; year-6 revenue = 4 × 2.48832 = $9.95 million. Terminal value = 9.95328/(1 - 0.85) = 9.95328/0.15 = $66.36 million. Combined value = $39.72 million + $66.36 million = $106.08 million, which is not less than $100 million.",
     "explanations": [
       "Summing 6 years of revenue that grows 20% each year uses s6=4×($1.20^{6}$-1)/0.20. Since 1.20 to the 6th power is 2.985984, this becomes 4×1.985984/0.20 = 4×9.92992 ≈ $39.72 million.",
       "Year-6 revenue equals the starting revenue multiplied by the growth factor raised to the 5th power, since year 1 itself already corresponds to zero multiplications: 4×$1.20^{5}$ = 4×2.48832 ≈ $9.95 million.",
       "The finite geometric-series formula only fails to apply when the ratio equals exactly 1, since that would divide by zero; it works perfectly well for any other ratio, whether smaller or larger than 1, as long as only a fixed, finite number of terms are being added. Here k=1.20 is simply the growth factor over a fixed 6-year window, and the formula handles it without any issue - the restriction that |k| be below 1 only applies when summing infinitely many terms, not a finite set of them.",
       "Treating the $9.95328 million of year-6 revenue as the starting payment of a new, separately declining perpetuity with ratio 0.85, the infinite total of that new stream is 9.95328/(1-0.85) = 9.95328/0.15 ≈ $66.36 million.",
-      "Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value ($66.36 million) gives 39.72+66.36 = $106.08 million, which is above $100 million, not below it."
+      "Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value ($66.36 million) gives $39.72 million + $66.36 million = $106.08 million, which is above $100 million, not below it."
     ]
   },
   {
@@ -331,12 +331,12 @@
     ],
     "given": "• s6 (total 6-month cost) = $58,000\n• k (monthly growth quotient) = 1.15\n• n = 6 months",
     "formulas": "• sn = $a(k^{n}-1)/(k-1)$ ⇒ a = sn·(k - 1)/($k^{n}-1$)\n• Term in month t: $a k^{t-1}$",
-    "steps": "Hypothetical: if month-1 cost were $1,000, month-2 cost = 1,000×1.15 = $1,150.00. $k^{6}$ = $1.15^{6}$ = 2.313060766. a = 58,000 × 0.15/(2.313060766 - 1) = 8,700/1.313060766 = $6,625.74. Month-6 cost = $a \\cdot k^{5}$ = 6,625.74 × 2.011357188 = $13,326.73. Months 4-6 cost = a·(k3+k4+k5) = 6,625.74 × (1.520875+1.749006+2.011357) = 6,625.74 × 5.281239 = $34,992.12. Flat monthly figure = 58,000/6 = $9,666.67, which is indeed greater than $6,625.74.",
+    "steps": "Hypothetical: if month-1 cost were $1,000, month-2 cost = 1,000×1.15 = $1,150.00. $k^{6}$ = $1.15^{6}$ = 2.313060766. a = 58,000 × 0.15/(2.313060766 - 1) = 8,700/1.313060766 = $6,625.74. Month-6 cost = $a \\cdot k^{5}$ = 6,625.74 × 2.011357188 = $13,326.73. Months 4-6 cost = $a(k^{3}+k^{4}+k^{5})$ = 6,625.74 × (1.520875 + 1.749006 + 2.011357) = 6,625.74 × 5.281239 = $34,992.12. Flat monthly figure = 58,000/6 = $9,666.67, which is indeed greater than $6,625.74.",
     "explanations": [
       "Regardless of what the actual first-month cost turns out to be, multiplying any given first-month figure by the 1.15 growth ratio gives the second month's cost; for a hypothetical $1,000 first month, that is 1,000×1.15 = $1,150.00, matching exactly.",
       "Rearranging the finite-sum formula to solve for the first term gives a = s6·(k-1)/($k^{6}-1$). Since 1.15 to the 6th power is about 2.313061, that becomes a = 58,000×0.15/1.313061 = 8,700/1.313061 ≈ $6,625.74.",
       "The 6th month's cost equals the first month's cost multiplied by the ratio raised to the 5th power, since month 1 itself already corresponds to zero multiplications: 6,625.74×$1.15^{5}$ = 6,625.74×2.011357 ≈ $13,326.73.",
-      "Adding the individual costs for months 4, 5, and 6 - that is, $a \\cdot k^{3}$ + $a \\cdot k^{4}$ + $a \\cdot k^{5}$ - gives 6,625.74×(1.520875+1.749006+2.011357) = 6,625.74×5.281239 ≈ $34,992.12, not $37,930.00.",
+      "Adding the individual costs for months 4, 5, and 6 - that is, $a \\cdot k^{3}$ + $a \\cdot k^{4}$ + $a \\cdot k^{5}$ - gives 6,625.74×(1.520875 + 1.749006 + 2.011357) = 6,625.74×5.281239 ≈ $34,992.12, not $37,930.00.",
       "Splitting the same $58,000 total evenly across 6 months gives 58,000/6 ≈ $9,666.67 per month. Since the actual first month's cost under 15% growth was only about $6,625.74, and a growing schedule always starts below its own average (because the larger later months pull the average up), the flat monthly figure is indeed higher than the growth scenario's starting cost."
     ]
   },
@@ -486,13 +486,13 @@
     ],
     "given": "• Territory A: a = $80,000, k = 1.06\n• Territory B: a = $95,000, k = 1.02\n• n = 8 years for both",
     "formulas": "• sn = $a(k^{n}-1)/(k-1)$\n• Term in year t: $a k^{t-1}$",
-    "steps": "$1.06^{8}$ = 1.593848075; sA,8 = 80,000·(1.593848075-1)/0.06 = 80,000 × 9.897468 = $791,797.43. $1.02^{8}$ = 1.171659381; sB,8 = 95,000·(1.171659381-1)/0.02 = 95,000 × 8.582969 = $815,382.06. Comparing totals: $791,797.43 (A) < $815,382.06 (B), so Territory A's total does NOT exceed Territory B's. Year-8 payment A = 80,000·$1.06^{7}$ = 80,000 × 1.503630 = $120,290.42. Year-8 payment B = 95,000·$1.02^{7}$ = 95,000 × 1.148686 = $109,125.14; indeed $120,290.42 > $109,125.14. Difference (B - A) = 815,382.06 - 791,797.43 = $23,584.63, which is NOT more than $30,000.",
+    "steps": "$1.06^{8}$ = 1.593848075; sA,8 = 80,000·(1.593848075-1)/0.06 = 80,000 × 9.897468 = $791,797.43. $1.02^{8}$ = 1.171659381; sB,8 = 95,000·(1.171659381-1)/0.02 = 95,000 × 8.582969 = $815,382.06. Comparing totals: $791,797.43 (A) < $815,382.06 (B), so Territory A's total does NOT exceed Territory B's. Year-8 payment A = 80,000·$1.06^{7}$ = 80,000 × 1.503630 = $120,290.42. Year-8 payment B = 95,000·$1.02^{7}$ = 95,000 × 1.148686 = $109,125.14; indeed $120,290.42 > $109,125.14. Difference (B - A) = $815,382.06 - $791,797.43 = $23,584.63, which is NOT more than $30,000.",
     "explanations": [
       "Summing Territory A's 8 years of royalties gives sA,8=80,000×($1.06^{8}$-1)/0.06. Since 1.06 to the 8th power is about 1.593848, this becomes 80,000×9.897468 ≈ $791,797.43.",
       "Summing Territory B's 8 years of royalties gives sB,8=95,000×($1.02^{8}$-1)/0.02. Since 1.02 to the 8th power is about 1.171659, this becomes 95,000×8.582969 ≈ $815,382.06.",
       "Comparing the two 8-year totals directly, $791,797.43 for Territory A is actually smaller than $815,382.06 for Territory B - Territory B's higher starting royalty outweighs Territory A's faster growth rate over this particular 8-year window, so Territory A's total does not exceed Territory B's; it falls short of it.",
       "Territory A's year-8 payment is 80,000×$1.06^{7}$ ≈ 80,000×1.503630 ≈ $120,290.42, while Territory B's year-8 payment is 95,000×$1.02^{7}$ ≈ 95,000×1.148686 ≈ $109,125.14. By year 8, repeated 6% compounding has pushed Territory A's individual payment above Territory B's, even though Territory A's running 8-year total still lags behind - a genuine subtlety in which the faster-growing stream overtakes the slower one term-by-term before it overtakes it in cumulative total.",
-      "The actual difference between the two totals is 815,382.06-791,797.43 = $23,584.63, which is below $30,000, not above it."
+      "The actual difference between the two totals is $815,382.06 - $791,797.43 = $23,584.63, which is below $30,000, not above it."
     ]
   },
   {
@@ -500,12 +500,12 @@
     "title": "Diminishing Marginal Returns from Advertising Spend",
     "difficulty_raw": "4.3/5",
     "difficulty_level": "4/5",
-    "context": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5{,}000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\\\sum a_n$ converges, using the rule that $\\sum 1/n^{p}$ converges if and only if p > 1.",
+    "context": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5{,}000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\sum a_n$ converges, using the rule that $\\sum 1/n^{p}$ converges if and only if p > 1.",
     "statements": [
       "With p = 1.5, the marginal benefit of the 4th campaign batch is approximately $650.00.",
       "With p = 1.5, the infinite series converges to a finite total value.",
       "If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.",
-      "a100 = $5.00, and this alone is enough to guarantee that the series $\\\\sum a_n$ converges.",
+      "a100 = $5.00, and this alone is enough to guarantee that the series $\\sum a_n$ converges.",
       "With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞."
     ],
     "answer_key": [
@@ -516,8 +516,8 @@
       true
     ],
     "given": "• $a_n = 5{,}000/n^{p}$\n• p = 1.5 (primary); p = 1 and p = 0.5 (comparison scenarios)",
-    "formulas": "• p-series rule: $\\\\sum_{n=1}^{\\\\infty} 1/n^{p}$ is convergent ⇔ p > 1\n• Necessary (not sufficient) condition for convergence: if $\\\\sum a_n$ converges, then $\\\\lim_{n\\\\to\\\\infty} a_n$ = 0",
-    "steps": "$4^{1.5} = 4 \\\\times \\\\sqrt{4}$ = 4 × 2 = 8; a4 = 5,000/8 = $625.00 (not $650.00). p = 1.5 > 1, so by the p-series rule $\\\\sum 5{,}000/n^{1.5}$ converges to some finite value. At p = 1, the series ∑5,000/n is exactly the classic harmonic-series pattern, which can be shown to diverge by grouping terms into blocks that each sum to more than 1/2 - it does NOT converge to a larger sum; it has no finite sum at all. $100^{1.5}$ = 100 × √100 = 100 × 10 = 1,000; a100 = 5,000/1,000 = $5.00 - correct value, but terms tending to 0 is necessary, NOT sufficient, for convergence (the harmonic series is the standard counterexample). p = 0.5 ≤ 1, so by the p-series rule $\\\\sum 5{,}000/n^{0.5}$ diverges, even though an = 5,000/√n → 0 as n → ∞.",
+    "formulas": "• p-series rule: $\\sum_{n=1}^{\\infty} 1/n^{p}$ is convergent ⇔ p > 1\n• Necessary (not sufficient) condition for convergence: if $\\sum a_n$ converges, then $\\lim_{n\\to\\infty} a_n$ = 0",
+    "steps": "$4^{1.5} = 4 \\times \\sqrt{4}$ = 4 × 2 = 8; a4 = 5,000/8 = $625.00 (not $650.00). p = 1.5 > 1, so by the p-series rule $\\sum 5{,}000/n^{1.5}$ converges to some finite value. At p = 1, the series ∑5,000/n is exactly the classic harmonic-series pattern, which can be shown to diverge by grouping terms into blocks that each sum to more than 1/2 - it does NOT converge to a larger sum; it has no finite sum at all. $100^{1.5}$ = 100 × √100 = 100 × 10 = 1,000; a100 = 5,000/1,000 = $5.00 - correct value, but terms tending to 0 is necessary, NOT sufficient, for convergence (the harmonic series is the standard counterexample). p = 0.5 ≤ 1, so by the p-series rule $\\sum 5{,}000/n^{0.5}$ diverges, even though an = 5,000/√n → 0 as n → ∞.",
     "explanations": [
       "Raising 4 to the power 1.5 means multiplying 4 by its own square root: 4×√4 = 4×2 = 8. Dividing the numerator by that gives 5,000/8 = $625.00, not $650.00.",
       "A series of the form $\\sum 1/n^{p}$ behaves in a very specific way depending on how large p is: when p is bigger than 1, the terms shrink toward zero quickly enough that adding infinitely many of them still produces a finite total, but when p is 1 or smaller, the terms don't shrink fast enough and the running total grows without bound. Since p=1.5 here is greater than 1, this series falls into the convergent category and does approach a finite total.",
@@ -547,13 +547,13 @@
       true
     ],
     "given": "• Revenue: a = $150,000, k = 1.01\n• Maintenance cost: a = $120,000, k = 1.03\n• Horizons: n = 12 years and n = 20 years",
-    "formulas": "• sn = $a(k^{n}-1)/(k-1)$\n• Cumulative profit = $s_{\\\\mathrm{revenue}} - s_{\\\\mathrm{cost}}$\n• Term in year t: $a k^{t-1}$",
-    "steps": "$1.01^{12}$ = 1.126825030; srev,12 = 150,000·(1.126825030-1)/0.01 = 150,000 × 12.682503 = $1,902,375.45. $1.03^{12}$ = 1.425760887; scost,12 = 120,000·(1.425760887-1)/0.03 = 120,000 × 14.192030 = $1,703,043.55. Cumulative 12-year profit = 1,902,375.45 - 1,703,043.55 = $199,331.90. Year-12 revenue = 150,000·$1.01^{11}$ = 150,000 × 1.115668 = $167,350.25. Year-12 cost = 120,000·$1.03^{11}$ = 120,000 × 1.384234 = $166,108.06. Net = 167,350.25 - 166,108.06 = $1,242.19. $1.01^{20}$ = 1.220190040; srev,20 = 150,000·(0.220190040)/0.01 = $3,302,850.60. $1.03^{20}$ = 1.806111235; scost,20 = 120,000·(0.806111235)/0.03 = $3,224,444.94. Profit20 = 3,302,850.60 - 3,224,444.94 = $78,405.66, which is indeed less than the 12-year profit of $199,331.90.",
+    "formulas": "• sn = $a(k^{n}-1)/(k-1)$\n• Cumulative profit = $s_{\\mathrm{revenue}} - s_{\\mathrm{cost}}$\n• Term in year t: $a k^{t-1}$",
+    "steps": "$1.01^{12}$ = 1.126825030; srev,12 = 150,000·(1.126825030-1)/0.01 = 150,000 × 12.682503 = $1,902,375.45. $1.03^{12}$ = 1.425760887; scost,12 = 120,000·(1.425760887-1)/0.03 = 120,000 × 14.192030 = $1,703,043.55. Cumulative 12-year profit = $1,902,375.45 - $1,703,043.55 = $199,331.90. Year-12 revenue = 150,000·$1.01^{11}$ = 150,000 × 1.115668 = $167,350.25. Year-12 cost = 120,000·$1.03^{11}$ = 120,000 × 1.384234 = $166,108.06. Net = $167,350.25 - $166,108.06 = $1,242.19. $1.01^{20}$ = 1.220190040; srev,20 = 150,000·(0.220190040)/0.01 = $3,302,850.60. $1.03^{20}$ = 1.806111235; scost,20 = 120,000·(0.806111235)/0.03 = $3,224,444.94. Profit20 = $3,302,850.60 - $3,224,444.94 = $78,405.66, which is indeed less than the 12-year profit of $199,331.90.",
     "explanations": [
       "Summing 12 years of revenue growing 1% annually gives srev,12=150,000×($1.01^{12}$-1)/0.01. Since 1.01 to the 12th power is about 1.126825, this becomes 150,000×12.682503 ≈ $1,902,375.45.",
       "Summing 12 years of maintenance cost growing 3% annually gives scost,12=120,000×($1.03^{12}$-1)/0.03. Since 1.03 to the 12th power is about 1.425761, this becomes 120,000×14.192030 ≈ $1,703,043.55.",
-      "Subtracting the cumulative cost from the cumulative revenue gives 1,902,375.45-1,703,043.55 = $199,331.90 as the total profit accumulated over the 12-year window.",
-      "In year 12 alone, revenue is 150,000×$1.01^{11}$ ≈ 150,000×1.115668 ≈ $167,350.25, while maintenance cost is 120,000×$1.03^{11}$ ≈ 120,000×1.384234 ≈ $166,108.06. Subtracting gives a net of 167,350.25-166,108.06 ≈ $1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.",
+      "Subtracting the cumulative cost from the cumulative revenue gives $1,902,375.45 - $1,703,043.55 = $199,331.90 as the total profit accumulated over the 12-year window.",
+      "In year 12 alone, revenue is 150,000×$1.01^{11}$ ≈ 150,000×1.115668 ≈ $167,350.25, while maintenance cost is 120,000×$1.03^{11}$ ≈ 120,000×1.384234 ≈ $166,108.06. Subtracting gives a net of $167,350.25 - $166,108.06 ≈ $1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.",
       "Extending the same calculations to 20 years gives a cumulative revenue of about $3,302,850.60 and a cumulative cost of about $3,224,444.94, for a 20-year profit of roughly $78,405.66, smaller than the 12-year profit of $199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up."
     ]
   },
@@ -599,7 +599,7 @@
       "Tranche 2 totals approximately $215,603.80.",
       "Tranche 3, valued as an infinite declining perpetuity, totals $375,000.00, making it the single largest of the three tranches.",
       "Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just $440,603.80.",
-      "f100 = $10.00, and this alone is sufficient to guarantee that the fee stream converges to a finite total."
+      "$f_{100}$ = $10.00, and this alone is sufficient to guarantee that the fee stream converges to a finite total."
     ],
     "answer_key": [
       true,
@@ -609,14 +609,14 @@
       false
     ],
     "given": "• Tranche 1: a = $25,000 per year, k = 1, n = 9 years\n• Tranche 2: a = $18,000, k = 1.07, n = 9 years\n• Tranche 3: a = $30,000, k = 0.92, infinite horizon\n• Fee stream (separate): $f_n = 1{,}000/n$",
-    "formulas": "• k = 1 case: sn = a·n\n• Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$\n• Infinite sum (|k| < 1): a/(1 - k)\n• Necessary (not sufficient) condition for convergence: convergence requires $\\\\lim_{n\\\\to\\\\infty} a_n$ = 0, but this alone does not guarantee convergence, as the harmonic-type counterexample below shows",
-    "steps": "Tranche 1: s = 25,000 × 9 = $225,000.00. Tranche 2: $1.07^{9}$ = 1.838459212; s = 18,000·(1.838459212-1)/0.07 = 18,000 × 11.977989 = $215,603.80. Tranche 3: s = 30,000/(1 - 0.92) = 30,000/0.08 = $375,000.00; comparing 375,000.00 > 225,000.00 > 215,603.80, Tranche 3 is indeed the largest. Combined total (all three) = 225,000.00 + 215,603.80 + 375,000.00 = $815,603.80. This combination is valid: a convergent infinite series (|k|=0.92<1) has a specific finite value, which may be added to finite sums just like any other fixed dollar amount. Fee stream: {100}$ = 1,000/100 = $10.00 is correct, but this series is the p-series case p = 1 (the harmonic series), which is known to diverge - terms shrinking to 0 is necessary but not sufficient for convergence.",
+    "formulas": "• k = 1 case: sn = a·n\n• Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$\n• Infinite sum (|k| < 1): a/(1 - k)\n• Necessary (not sufficient) condition for convergence: convergence requires $\\lim_{n\\to\\infty} a_n$ = 0, but this alone does not guarantee convergence, as the harmonic-type counterexample below shows",
+    "steps": "Tranche 1: s = 25,000 × 9 = $225,000.00. Tranche 2: $1.07^{9}$ = 1.838459212; s = 18,000·(1.838459212 - 1)/0.07 = 18,000 × 11.977989 = $215,603.80. Tranche 3: s = 30,000/(1 - 0.92) = 30,000/0.08 = $375,000.00; comparing 375,000.00 > 225,000.00 > 215,603.80, Tranche 3 is indeed the largest. Combined total (all three) = $225,000.00 + $215,603.80 + $375,000.00 = $815,603.80. This combination is valid: a convergent infinite series (|k|=0.92<1) has a specific finite value, which may be added to finite sums just like any other fixed dollar amount. Fee stream: $f_{100} = 1{,}000/100$ = $10.00 is correct, but this series is the p-series case p = 1 (the harmonic series), which is known to diverge - terms shrinking to 0 is necessary but not sufficient for convergence.",
     "explanations": [
       "When every one of the 9 annual coupons is identical at $25,000, there is no changing ratio to apply - the total is simply the number of years multiplied by the constant amount: 25,000×9 = $225,000.00.",
       "Summing 9 years of a coupon that grows 7% annually gives s=18,000×($1.07^{9}$-1)/0.07. Since 1.07 to the 9th power is about 1.838459, this becomes 18,000×11.977989 ≈ $215,603.80.",
       "Since the ratio 0.92 has absolute value below 1, letting this royalty stream continue forever gives a finite total of 30,000/(1-0.92) = 30,000/0.08 = $375,000.00. Comparing all three tranches - $225,000.00, $215,603.80, and $375,000.00 - the perpetual royalty stream is indeed the largest of the three, even though it starts with the smallest single payment; over an unlimited horizon, a slowly-declining stream can accumulate more value than either finite stream.",
       "There is nothing that prevents a convergent infinite series from being added to finite sums - once a series has a specific, finite total, that total behaves just like any other fixed dollar amount and can be combined with other fixed amounts through ordinary addition. Excluding Tranche 3 and reporting only $225,000.00 + $215,603.80 = $440,603.80 leaves out $375,000.00 of value that is just as real and just as calculable as the other two tranches; the correct combined total, including all three, is $225,000.00 + $215,603.80 + $375,000.00 = $815,603.80.",
-      "The individual term {100}$=1,000/100=$10.00 is calculated correctly, and it is true that these terms keep shrinking toward zero as n grows. But shrinking toward zero is only a necessary condition for convergence, never a sufficient one - a series can have terms that vanish in the limit and still fail to add up to any finite total. In fact, fn=1,000/n is exactly 1,000 times the series 1+1/2+1/3+···, which is the standard example of a series whose terms shrink to zero while its running total still grows without any upper bound. The analyst's reasoning is flawed, and no such guarantee of a finite total actually exists here."
+      "The individual term $f_{100} = 1{,}000/100$ = $10.00 is calculated correctly, and it is true that these terms keep shrinking toward zero as n grows. But shrinking toward zero is only a necessary condition for convergence, never a sufficient one - a series can have terms that vanish in the limit and still fail to add up to any finite total. In fact, fn=1,000/n is exactly 1,000 times the series 1+1/2+1/3+···, which is the standard example of a series whose terms shrink to zero while its running total still grows without any upper bound. The analyst's reasoning is flawed, and no such guarantee of a finite total actually exists here."
     ]
   }
 ]

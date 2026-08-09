@@ -19,9 +19,9 @@
       true,
       true
     ],
-    "given": "Given: Symbol Value a0 (initial outlay) -$8,000 a1 (return at end of Year 1) $9,600 n 1 year Formula(s): For a one-year project: -a + $(1+r)^{-1}$ b = 0, so r = (b/a) - 1 Step-by-Step Calculation: Step 1: Identify a = 8,000 (amount invested) and b = 9,600 (amount returned). Step 2: r = (b/a) - 1 = (9,600 / 8,000) - 1 = 1.20 - 1 = 0.20 = 20%. Step 3 (for later statements): NPV at rate r is A = $a_0 + a_1/(1+r)$.",
-    "formulas": "For a one-year project: -a + $(1+r)^{-1}$ b = 0, so r = (b/a) - 1",
-    "steps": "Step 1: Identify a = 8,000 (amount invested) and b = 9,600 (amount returned). Step 2: r = (b/a) - 1 = (9,600 / 8,000) - 1 = 1.20 - 1 = 0.20 = 20%. Step 3 (for later",
+    "given": "• $a_0$ (initial outlay) = -$8,000\n• $a_1$ (return at end of Year 1) = $9,600\n• $n = 1$ year",
+    "formulas": "• For a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$\n• Solving for $r$: $r = (b/a) - 1$",
+    "steps": "Step 1: Identify $a$ = $8,000 (amount invested) and $b$ = $9,600 (amount returned).\nStep 2: $r = (b/a) - 1 = (9,600/8,000) - 1 = 1.20 - 1 = 0.20 = 20\\%$.\nStep 3 (for later statements): NPV at rate $r$ is $A = a_0 + a_1/(1+r)$.",
     "explanations": [
       "r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.",
       "NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = $347.83, which is positive (15% is below the 20% IRR, so NPV must be positive).",
@@ -50,15 +50,15 @@
       true,
       false
     ],
-    "given": "Given: Symbol Value a0 -$12,000 a1 $7,000 a2 $7,000 n 2 years Formula(s): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, substitute s = $(1+r)^{-1}$ Step-by-Step Calculation: Step 1: -12,000 + 7,000/(1+r) + $7,000/(1+r)^{2}$ = 0. Step 2: Let s = $(1+r)^{-1}$. Then $7,000 s^{2}$ + 7,000s - 12,000 = 0. Dividing by 1,000: $7 s^{2}$ + 7s - 12 = 0. Step 3: Discriminant = $7^{2}$ + 4(7)(12) = 49 + 336 = 385. √385 ≈ 19.6214. Step 4: s = (-7 + 19.6214)/14 = 12.6214/14 ≈ 0.90153. Step 5: r = 1/s - 1 = 1/0.90153 - 1 ≈ 0.10922 ≈ 10.92%.",
-    "formulas": "$a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, substitute s = $(1+r)^{-1}$",
-    "steps": "Step 1: -12,000 + 7,000/(1+r) + $7,000/(1+r)^{2}$ = 0. Step 2: Let s = $(1+r)^{-1}$. Then $7,000 s^{2}$ + 7,000s - 12,000 = 0. Dividing by 1,000: $7 s^{2}$ + 7s - 12 = 0. Step 3: Discriminant = $7^{2}$ + 4(7)(12) = 49 + 336 = 385. √385 ≈ 19.6214. Step 4: s = (-7 + 19.6214)/14 = 12.6214/14 ≈ 0.90153. Step 5: r = 1/s - 1 = 1/0.90153 - 1 ≈ 0.10922 ≈ 10.92%.",
+    "given": "• $a_0$ = -$12,000\n• $a_1$ = $7,000\n• $a_2$ = $7,000\n• $n = 2$ years",
+    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$",
+    "steps": "Step 1: $-12,000 + 7,000/(1+r) + 7,000/(1+r)^{2} = 0$.\nStep 2: Let $s = (1+r)^{-1}$. Then $7,000s^{2} + 7,000s - 12,000 = 0$. Dividing by 1,000: $7s^{2} + 7s - 12 = 0$.\nStep 3: Discriminant = $7^{2} + 4(7)(12) = 49 + 336 = 385$. √385 ≈ 19.6214.\nStep 4: $s = (-7 + 19.6214)/14 = 12.6214/14 \\approx 0.90153$.\nStep 5: $r = 1/s - 1 = 1/0.90153 - 1 \\approx 0.10922 \\approx 10.92\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.92%.",
       "NPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = $482.85, positive (8% is below the IRR).",
       "NPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -$169.64, negative, not positive (12% is above the IRR).",
-      "With a2 = 8,000: $8,000 s^{2}$ + 7,000s - 12,000 = 0 → $8 s^{2}$ + 7s - 12 = 0. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. s = (-7 + 20.809)/16 ≈ 0.8630, so r = 1/0.8630 - 1 ≈ 0.1587 = 15.87%, which exceeds 13%.",
-      "With a1 = a2 = 14,000: $14,000 s^{2}$ + 14,000s - 12,000 = 0 → $7 s^{2}$ + 7s - 6 = 0. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. s = (-7 + 14.731)/14 ≈ 0.5522, so r = 1/0.5522 - 1 ≈ 0.8109 = 81.09% - far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR."
+      "With $a_2$ = $8,000: $8,000s^{2} + 7,000s - 12,000 = 0$ → $8s^{2} + 7s - 12 = 0$. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. $s = (-7 + 20.809)/16 \\approx 0.8630$, so $r = 1/0.8630 - 1 \\approx 0.1587 = 15.87\\%$, which exceeds 13%.",
+      "With both $a_1$ and $a_2$ equal to $14,000, the equation becomes $14,000s^{2} + 14,000s - 12,000 = 0$, i.e. $7s^{2} + 7s - 6 = 0$. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. $s = (-7 + 14.731)/14 \\approx 0.5522$, so $r = 1/0.5522 - 1 \\approx 0.8109 = 81.09\\%$ — far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR."
     ]
   },
   {
@@ -81,15 +81,15 @@
       true,
       true
     ],
-    "given": "Given: Symbol Value a0 -$20,000 a1 $9,000 a2 $15,000 n 2 years Formula(s): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Step-by-Step Calculation: Step 1: $15,000 s^{2}$ + 9,000s - 20,000 = 0. Dividing by 1,000: $15 s^{2}$ + 9s - 20 = 0. Step 2: Discriminant = $9^{2}$ + 4(15)(20) = 81 + 1,200 = 1,281. √1,281 ≈ 35.791. Step 3: s = (-9 + 35.791)/30 ≈ 0.89304. Step 4: r = 1/0.89304 - 1 ≈ 0.11978 ≈ 11.98%.",
-    "formulas": "$a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$",
-    "steps": "Step 1: $15,000 s^{2}$ + 9,000s - 20,000 = 0. Dividing by 1,000: $15 s^{2}$ + 9s - 20 = 0. Step 2: Discriminant = $9^{2}$ + 4(15)(20) = 81 + 1,200 = 1,281. √1,281 ≈ 35.791. Step 3: s = (-9 + 35.791)/30 ≈ 0.89304. Step 4: r = 1/0.89304 - 1 ≈ 0.11978 ≈ 11.98%.",
+    "given": "• $a_0$ = -$20,000\n• $a_1$ = $9,000\n• $a_2$ = $15,000\n• $n = 2$ years",
+    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "steps": "Step 1: $15,000s^{2} + 9,000s - 20,000 = 0$. Dividing by 1,000: $15s^{2} + 9s - 20 = 0$.\nStep 2: Discriminant = $9^{2} + 4(15)(20) = 81 + 1,200 = 1,281$. √1,281 ≈ 35.791.\nStep 3: $s = (-9 + 35.791)/30 \\approx 0.89304$.\nStep 4: $r = 1/0.89304 - 1 \\approx 0.11978 \\approx 11.98\\%$.",
     "explanations": [
       "As calculated above, r ≈ 11.98%.",
       "NPV = -20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = $578.51, positive (10% is below the IRR).",
       "NPV = -20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -$563.25, negative, not positive (14% is above the IRR).",
-      "With a1 = 18,000: $15,000 s^{2}$ + 18,000s - 20,000 = 0 → $15 s^{2}$ + 18s - 20 = 0. Discriminant = 324 + 1,200 = 1,524, √1,524 ≈ 39.038. s = (-18 + 39.038)/30 ≈ 0.7013, r = 1/0.7013 - 1 ≈ 0.4259 = 42.59%, which exceeds 30%.",
-      "a0 + a1 + a2 = -20,000 + 9,000 + 15,000 = $4,000, which is indeed positive, and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive - consistent with the computed r ≈ 11.98% > 0."
+      "With $a_1$ = $18,000: $15,000s^{2} + 18,000s - 20,000 = 0$ → $15s^{2} + 18s - 20 = 0$. Discriminant = 324 + 1,200 = 1,524, √1,524 ≈ 39.038. $s = (-18 + 39.038)/30 \\approx 0.7013$, $r = 1/0.7013 - 1 \\approx 0.4259 = 42.59\\%$, which exceeds 30%.",
+      "$a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000 = 4,000$ (a positive $4,000), and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive — consistent with the computed $r \\approx 11.98\\% > 0$."
     ]
   },
   {
@@ -112,15 +112,15 @@
       false,
       false
     ],
-    "given": "Given: Symbol Value Project X: a, b $15,000, $17,250 Project Y: a, b $22,000, $24,750 n 1 year (each project) Formula(s): r = (b/a) - 1 (one-year rate of return, applied to each project) Step-by-Step Calculation: Step 1: rX = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15%. Step 2: rY = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5%.",
-    "formulas": "r = (b/a) - 1 (one-year rate of return, applied to each project)",
-    "steps": "Step 1: rX = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15%. Step 2: rY = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5%.",
+    "given": "• Project X: $a$ = $15,000, $b$ = $17,250\n• Project Y: $a$ = $22,000, $b$ = $24,750\n• $n = 1$ year for each project",
+    "formulas": "• $r = (b/a) - 1$ (one-year rate of return, applied to each project)",
+    "steps": "Step 1: $r_X = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.\nStep 2: $r_Y = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.",
     "explanations": [
-      "As calculated above, rX = 15%.",
-      "As calculated above, rY = 12.5%.",
+      "As calculated above, $r_X = 15\\%$.",
+      "As calculated above, $r_Y = 12.5\\%$.",
       "The chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 12.5% (Y), X should be preferred, not Y.",
       "NPVx at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = $540.54 (positive). NPVy at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = $297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.",
-      "With b = 25,000: rY = (25,000/22,000) - 1 ≈ 0.1364 = 13.64%, which is still lower than Project X's 15%, so it would not exceed X's rate."
+      "With $b$ = $25,000: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate."
     ]
   },
   {
@@ -143,15 +143,15 @@
       true,
       false
     ],
-    "given": "Given: Symbol Value a0 -$45,000 a1 -$3,000 a2 $28,000 a3 $35,000 n 3 years Formula(s): A = $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ + $a_3/(1+r)^{3}$ Step-by-Step Calculation: Step 1 (r = 8%): A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = $4,011.84. Step 2 (r = 12%): A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -$444.83. Step 3 (r = 15%): A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -$3,423.60.",
-    "formulas": "A = $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ + $a_3/(1+r)^{3}$",
-    "steps": "Step 1 (r = 8%): A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = $4,011.84. Step 2 (r = 12%): A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -$444.83. Step 3 (r = 15%): A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -$3,423.60.",
+    "given": "• $a_0$ = -$45,000\n• $a_1$ = -$3,000\n• $a_2$ = $28,000\n• $a_3$ = $35,000\n• $n = 3$ years",
+    "formulas": "• $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$",
+    "steps": "Step 1 (r = 8%): A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = $4,011.84.\nStep 2 (r = 12%): A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -$444.83.\nStep 3 (r = 15%): A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -$3,423.60.",
     "explanations": [
       "As calculated in Step 1, A ≈ $4,011.84 at r = 8%, which rounds to approximately $4,012.",
       "As calculated in Step 2, A ≈ -$444.83 at r = 12%, which is negative, not positive.",
       "The NPV is already negative at both r = 12% (-$444.83) and r = 15% (-$3,423.60), and it was positive at r = 8%. This means the rate where NPV crosses zero lies between 8% and 12%, not between 12% and 15%.",
       "As calculated in Step 3, A ≈ -$3,423.60 at r = 15%, which rounds to approximately -$3,424.",
-      "The theorem requires a0 < 0 and all of a1,..., an to be strictly positive. Here a1 = -$3,000, which is negative, so this precondition is not met - the theorem's guarantee of a unique internal rate of return does not apply to this cash flow pattern."
+      "The theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly positive. Here $a_1$ = -$3,000, which is negative, so this precondition is not met — the theorem's guarantee of a unique internal rate of return does not apply to this cash flow pattern."
     ]
   },
   {
@@ -174,15 +174,15 @@
       false,
       false
     ],
-    "given": "Given: Symbol Value a0 -$34,000 a1 $16,000 a2 $24,000 n 2 years Formula(s): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Step-by-Step Calculation: Step 1: $24,000 s^{2}$ + 16,000s - 34,000 = 0. Dividing by 2,000: $12 s^{2}$ + 8s - 17 = 0. Step 2: Discriminant = $8^{2}$ + 4(12)(17) = 64 + 816 = 880. √880 ≈ 29.665. Step 3: s = (-8 + 29.665)/24 ≈ 0.90270. Step 4: r = 1/0.90270 - 1 ≈ 0.10778 ≈ 10.78%.",
-    "formulas": "$a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$",
-    "steps": "Step 1: $24,000 s^{2}$ + 16,000s - 34,000 = 0. Dividing by 2,000: $12 s^{2}$ + 8s - 17 = 0. Step 2: Discriminant = $8^{2}$ + 4(12)(17) = 64 + 816 = 880. √880 ≈ 29.665. Step 3: s = (-8 + 29.665)/24 ≈ 0.90270. Step 4: r = 1/0.90270 - 1 ≈ 0.10778 ≈ 10.78%.",
+    "given": "• $a_0$ = -$34,000\n• $a_1$ = $16,000\n• $a_2$ = $24,000\n• $n = 2$ years",
+    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "steps": "Step 1: $24,000s^{2} + 16,000s - 34,000 = 0$. Dividing by 2,000: $12s^{2} + 8s - 17 = 0$.\nStep 2: Discriminant = $8^{2} + 4(12)(17) = 64 + 816 = 880$. √880 ≈ 29.665.\nStep 3: $s = (-8 + 29.665)/24 \\approx 0.90270$.\nStep 4: $r = 1/0.90270 - 1 \\approx 0.10778 \\approx 10.78\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.78%, not 14.5%.",
       "NPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = $879.22, which is positive, not negative (9% is below the 10.78% IRR).",
       "NPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -$1,045.19, which is negative, confirming the statement (13% is above the IRR).",
-      "With a2 = 20,000: $20,000 s^{2}$ + 16,000s - 34,000 = 0 → $10 s^{2}$ + 8s - 17 = 0. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. s = (-8 + 27.276)/20 ≈ 0.9638, r = 1/0.9638 - 1 ≈ 0.0375 = 3.75%, which is far lower than 10.78%, not higher.",
-      "With a0 = -30,000: $24,000 s^{2}$ + 16,000s - 30,000 = 0 → $12 s^{2}$ + 8s - 15 = 0. Discriminant = 64 + 720 = $784 = 28^{2}$ exactly. s = (-8 + 28)/24 = 20/24 ≈ 0.83333, r = 1/0.83333 - 1 = 0.20 = 20%, which is much higher than the original 10.78% - a smaller outlay for the same returns raises the internal rate of return, it does not lower it."
+      "With $a_2$ = $20,000: $20,000s^{2} + 16,000s - 34,000 = 0$ → $10s^{2} + 8s - 17 = 0$. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. $s = (-8 + 27.276)/20 \\approx 0.9638$, $r = 1/0.9638 - 1 \\approx 0.0375 = 3.75\\%$, which is far lower than 10.78%, not higher.",
+      "With $a_0$ = -$30,000: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 15 = 0$. Discriminant = $64 + 720 = 784 = 28^{2}$ exactly. $s = (-8 + 28)/24 = 20/24 \\approx 0.83333$, $r = 1/0.83333 - 1 = 0.20 = 20\\%$, which is much higher than the original 10.78% — a smaller outlay for the same returns raises the internal rate of return, it does not lower it."
     ]
   },
   {
@@ -205,9 +205,9 @@
       true,
       true
     ],
-    "given": "Given: Symbol Value a0 -$40,000 a1 $22,000 a2 $27,600 n 2 years Formula(s): A = $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ Step-by-Step Calculation: Step 1: Test r = 15%: A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = $0.00 (to the nearest cent). Step 2: Since A = 0 at r = 15%, this confirms r = 15% is the internal rate of return for this project.",
-    "formulas": "A = $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$",
-    "steps": "Step 1: Test r = 15%: A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = $0.00 (to the nearest cent). Step 2: Since A = 0 at r = 15%, this confirms r = 15% is the internal rate of return for this project.",
+    "given": "• $a_0$ = -$40,000\n• $a_1$ = $22,000\n• $a_2$ = $27,600\n• $n = 2$ years",
+    "formulas": "• $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$",
+    "steps": "Step 1: Test $r = 15\\%$: A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = $0.00 (to the nearest cent).\nStep 2: Since $A = 0$ at $r = 15\\%$, this confirms $r = 15\\%$ is the internal rate of return for this project.",
     "explanations": [
       "As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.",
       "NPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = $2,809.92, positive (10% is below the 15% IRR).",
@@ -236,15 +236,15 @@
       true,
       false
     ],
-    "given": "Given: Symbol Value a0 -$65,000 a1 $34,000 a2 $42,000 n 2 years Formula(s): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Step-by-Step Calculation: Step 1: $42,000 s^{2}$ + 34,000s - 65,000 = 0. Dividing by 1,000: $42 s^{2}$ + 34s - 65 = 0. Step 2: Discriminant = $34^{2}$ + 4(42)(65) = 1,156 + 10,920 = 12,076. √12,076 ≈ 109.891. Step 3: s = (-34 + 109.891)/84 ≈ 0.90346. Step 4: r = 1/0.90346 - 1 ≈ 0.10685 ≈ 10.69%.",
-    "formulas": "$a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$",
-    "steps": "Step 1: $42,000 s^{2}$ + 34,000s - 65,000 = 0. Dividing by 1,000: $42 s^{2}$ + 34s - 65 = 0. Step 2: Discriminant = $34^{2}$ + 4(42)(65) = 1,156 + 10,920 = 12,076. √12,076 ≈ 109.891. Step 3: s = (-34 + 109.891)/84 ≈ 0.90346. Step 4: r = 1/0.90346 - 1 ≈ 0.10685 ≈ 10.69%.",
+    "given": "• $a_0$ = -$65,000\n• $a_1$ = $34,000\n• $a_2$ = $42,000\n• $n = 2$ years",
+    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "steps": "Step 1: $42,000s^{2} + 34,000s - 65,000 = 0$. Dividing by 1,000: $42s^{2} + 34s - 65 = 0$.\nStep 2: Discriminant = $34^{2} + 4(42)(65) = 1,156 + 10,920 = 12,076$. √12,076 ≈ 109.891.\nStep 3: $s = (-34 + 109.891)/84 \\approx 0.90346$.\nStep 4: $r = 1/0.90346 - 1 \\approx 0.10685 \\approx 10.69\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.69%.",
       "NPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = $1,543.22, positive (9% is below the IRR).",
       "NPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -$1,160.72, negative, not positive (12% is above the IRR).",
-      "With a1 = 68,000, a2 = 84,000: $84,000 s^{2}$ + 68,000s - 65,000 = 0 → $84 s^{2}$ + 68s - 65 = 0. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. s = (-68 + 162.678)/168 ≈ 0.56356, r = 1/0.56356 - 1 ≈ 0.7744 = 77.44%. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that - more than double.",
-      "With a0 = -60,000: $42,000 s^{2}$ + 34,000s - 60,000 = 0 → $42 s^{2}$ + 34s - 60 = 0. Discriminant = 1,156 + 10,080 = $11{,}236 = 106^{2}$ exactly. s = (-34 + 106)/84 = 72/84 ≈ 0.85714, r = 1/0.85714 - 1 ≈ 0.16667 = 16.67%, which is higher than 10.69%, not lower - a smaller outlay raises the internal rate of return."
+      "With $a_1$ = $68,000 and $a_2$ = $84,000: $84,000s^{2} + 68,000s - 65,000 = 0$ → $84s^{2} + 68s - 65 = 0$. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. $s = (-68 + 162.678)/168 \\approx 0.56356$, $r = 1/0.56356 - 1 \\approx 0.7744 = 77.44\\%$. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that — more than double.",
+      "With $a_0$ = -$60,000: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s - 60 = 0$. Discriminant = $1,156 + 10,080 = 11,236 = 106^{2}$ exactly. $s = (-34 + 106)/84 = 72/84 \\approx 0.85714$, $r = 1/0.85714 - 1 \\approx 0.16667 = 16.67\\%$, which is higher than 10.69%, not lower — a smaller outlay raises the internal rate of return."
     ]
   },
   {
@@ -267,15 +267,15 @@
       false,
       true
     ],
-    "given": "Given: Symbol Value a0 (both options) -$50,000 Option 1: ai (i = 1, 2, 3,...) $6,000 each year, forever Option 2: a1, a2 $6,000, $6,000 (n = 2) Formula(s): Option 1 (n → infinity, ai = a): a0 + a/r = 0, r = a / (-a0) Option 2 (n = 2): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Step-by-Step Calculation: Step 1 (Option 1): As n → infinity, a0 + a/r = 0 gives r = a/(-a0) = 6,000/50,000 = 0.12 = 12%. Step 2 (Option 2): $6,000 s^{2}$ + 6,000s - 50,000 = 0. Dividing by 1,000: $6 s^{2}$ + 6s - 50 = 0. Dividing by 2: $3 s^{2}$ + 3s - 25 = 0. Step 3: Discriminant = $3^{2}$ + 4(3)(25) = 9 + 300 = 309. √309 ≈ 17.578. Step 4: The quadratic formula gives two roots for s: s = (-3 - 17.578)/6 ≈ -3.430 and s = (-3 + 17.578)/6 ≈ 2.430. Step 5: Converting each root to r = 1/s - 1: the first root gives r ≈ -1.291 (i.e. r < -1, outside the valid range), and the second gives r ≈ -0.588 (i.e. r > -1, valid). So the unique valid internal rate of return for Option 2 is r* ≈ -58.84%.",
-    "formulas": "Option 1 (n → infinity, ai = a): a0 + a/r = 0, r = a / (-a0) Option 2 (n = 2): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$",
-    "steps": "Step 1 (Option 1): As n → infinity, a0 + a/r = 0 gives r = a/(-a0) = 6,000/50,000 = 0.12 = 12%. Step 2 (Option 2): $6,000 s^{2}$ + 6,000s - 50,000 = 0. Dividing by 1,000: $6 s^{2}$ + 6s - 50 = 0. Dividing by 2: $3 s^{2}$ + 3s - 25 = 0. Step 3: Discriminant = $3^{2}$ + 4(3)(25) = 9 + 300 = 309. √309 ≈ 17.578. Step 4: The quadratic formula gives two roots for s: s = (-3 - 17.578)/6 ≈ -3.430 and s = (-3 + 17.578)/6 ≈ 2.430. Step 5: Converting each root to r = 1/s - 1: the first root gives r ≈ -1.291 (i.e. r < -1, outside the valid range), and the second gives r ≈ -0.588 (i.e. r > -1, valid). So the unique valid internal rate of return for Option 2 is r* ≈ -58.84%.",
+    "given": "• $a_0$ (both options) = -$50,000\n• Option 1: $a_i$ = $6,000 each year, forever ($i = 1, 2, 3, \\ldots$)\n• Option 2: $a_1 = a_2$ = $6,000 ($n = 2$)",
+    "formulas": "• Option 1 (as $n \\to \\infty$, with $a_i = a$ each year): $a_0 + a/r = 0$, so $r = a/(-a_0)$\n• Option 2 ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$",
+    "steps": "Step 1 (Option 1): As $n \\to \\infty$, $a_0 + a/r = 0$ gives $r = a/(-a_0) = 6,000/50,000 = 0.12 = 12\\%$.\nStep 2 (Option 2): $6,000s^{2} + 6,000s - 50,000 = 0$. Dividing by 1,000: $6s^{2} + 6s - 50 = 0$. Dividing by 2: $3s^{2} + 3s - 25 = 0$.\nStep 3: Discriminant = $3^{2} + 4(3)(25) = 9 + 300 = 309$. √309 ≈ 17.578.\nStep 4: The quadratic formula gives two roots for $s$: $s = (-3 - 17.578)/6 \\approx -3.430$ and $s = (-3 + 17.578)/6 \\approx 2.430$.\nStep 5: Converting each root to $r = 1/s - 1$: the first root gives $r \\approx -1.291$ (i.e. $r < -1$, outside the valid range), and the second gives $r \\approx -0.588$ (i.e. $r > -1$, valid). So the unique valid internal rate of return for Option 2 is $r^{*} \\approx -58.84\\%$.",
     "explanations": [
-      "As calculated in Step 1, r = 6,000/50,000 = 0.12 = 12%.",
-      "As calculated in Steps 2-5, the valid root gives r* ≈ -0.5884 = -58.84%.",
-      "The theorem only requires a0 < 0 and all subsequent ai > 0 to guarantee a unique r* > -1; it does not require the quadratic to have only one mathematical root. Here one root (r ≈ -1.291) falls outside the allowed range r > -1 and is discarded, leaving exactly one valid root - precisely what the theorem guarantees.",
-      "a0 + a1 + a2 = -50,000 + 6,000 + 6,000 = -$38,000, not -$40,000.",
-      "With only a0 = -50,000 and a1 = 6,000: r = (6,000/50,000) - 1 = 0.12 - 1 = -0.88 = -88%. Since -88% is lower (more negative) than -58.84%, the statement is correct."
+      "As calculated in Step 1, $r = 6,000/50,000 = 0.12 = 12\\%$.",
+      "As calculated in Steps 2–5, the valid root gives $r^{*} \\approx -0.5884 = -58.84\\%$.",
+      "The theorem only requires $a_0 < 0$ and all subsequent $a_i > 0$ to guarantee a unique $r^{*} > -1$; it does not require the quadratic to have only one mathematical root. Here one root ($r \\approx -1.291$) falls outside the allowed range $r > -1$ and is discarded, leaving exactly one valid root — precisely what the theorem guarantees.",
+      "$a_0 + a_1 + a_2 = -50,000 + 6,000 + 6,000 = -38,000$, i.e. -$38,000, not -$40,000.",
+      "With only $a_0$ = -$50,000 and $a_1$ = $6,000: $r = (6,000/50,000) - 1 = 0.12 - 1 = -0.88 = -88\\%$. Since -88% is lower (more negative) than -58.84%, the statement is correct."
     ]
   },
   {
@@ -298,15 +298,15 @@
       true,
       false
     ],
-    "given": "Given: Symbol Value Design A: a0, a1, a2 -$120,000, $54,000, $88,000 Design B: a, b $70,000, $81,200 n 2 years (A) / 1 year (B) Formula(s): Design A (n = 2): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Design B (n = 1): r = (b/a) - 1 Step-by-Step Calculation: Step 1 (Design A): $88,000 s^{2}$ + 54,000s - 120,000 = 0. Dividing by 2,000: $44 s^{2}$ + 27s - 60 = 0. Step 2: Discriminant = $27^{2}$ + 4(44)(60) = 729 + 10,560 = 11,289. √11,289 ≈ 106.250. Step 3: s = (-27 + 106.250)/88 ≈ 0.90057, so r_A = 1/0.90057 - 1 ≈ 0.11041 ≈ 11.04%. Step 4 (Design B): r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16%.",
-    "formulas": "Design A (n = 2): $a_0 + a_1/(1+r)$ + $a_2/(1+r)^{2}$ = 0, s = $(1+r)^{-1}$ Design B (n = 1): r = (b/a) - 1",
-    "steps": "Step 1 (Design A): $88,000 s^{2}$ + 54,000s - 120,000 = 0. Dividing by 2,000: $44 s^{2}$ + 27s - 60 = 0. Step 2: Discriminant = $27^{2}$ + 4(44)(60) = 729 + 10,560 = 11,289. √11,289 ≈ 106.250. Step 3: s = (-27 + 106.250)/88 ≈ 0.90057, so r_A = 1/0.90057 - 1 ≈ 0.11041 ≈ 11.04%. Step 4 (Design B): r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16%.",
+    "given": "• Design A: $a_0$ = -$120,000, $a_1$ = $54,000, $a_2$ = $88,000\n• Design B: $a$ = $70,000, $b$ = $81,200\n• $n = 2$ years (Design A) / 1 year (Design B)",
+    "formulas": "• Design A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$\n• Design B ($n = 1$): $r = (b/a) - 1$",
+    "steps": "Step 1 (Design A): $88,000s^{2} + 54,000s - 120,000 = 0$. Dividing by 2,000: $44s^{2} + 27s - 60 = 0$.\nStep 2: Discriminant = $27^{2} + 4(44)(60) = 729 + 10,560 = 11,289$. √11,289 ≈ 106.250.\nStep 3: $s = (-27 + 106.250)/88 \\approx 0.90057$, so $r_A = 1/0.90057 - 1 \\approx 0.11041 \\approx 11.04\\%$.\nStep 4 (Design B): $r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.",
     "explanations": [
-      "As calculated in Steps 1-3, r_A ≈ 11.04%.",
-      "As calculated in Step 4, r_B = 16% exactly.",
+      "As calculated in Steps 1–3, $r_A \\approx 11.04\\%$.",
+      "As calculated in Step 4, $r_B = 16\\%$ exactly.",
       "The chapter's criterion is to prefer the project with the higher internal rate of return. Since 16% (Design B) exceeds 11.04% (Design A), Design B should indeed be preferred.",
       "NPV_A at 13% = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -$3,295.48, negative. NPV_B at 13% = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = $1,858.41, positive. Both parts of the statement are correct.",
-      "With a1 = 44,000: $88,000 s^{2}$ + 44,000s - 120,000 = 0 → $22 s^{2}$ + 11s - 30 = 0. Discriminant = 121 + 2,640 = 2,761, √2,761 ≈ 52.545. s = (-11 + 52.545)/44 ≈ 0.94420, r = 1/0.94420 - 1 ≈ 0.05909 = 5.91%, which does not exceed Design B's 16%."
+      "With $a_1$ = $44,000: $88,000s^{2} + 44,000s - 120,000 = 0$ → $22s^{2} + 11s - 30 = 0$. Discriminant = 121 + 2,640 = 2,761, √2,761 ≈ 52.545. $s = (-11 + 52.545)/44 \\approx 0.94420$, $r = 1/0.94420 - 1 \\approx 0.05909 = 5.91\\%$, which does not exceed Design B's 16%."
     ]
   }
 ]

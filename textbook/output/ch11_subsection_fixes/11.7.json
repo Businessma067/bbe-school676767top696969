@@ -27,7 +27,7 @@
       "NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = $347.83, which is positive (15% is below the 20% IRR, so NPV must be positive).",
       "NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -$320.00, which is negative, not positive (25% is above the 20% IRR).",
       "With b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%.",
-      "The chapter's theorem states that if a0 < 0 and all subsequent returns are positive, a unique internal rate of return r* > -1 exists. Here a0 = -8,000 < 0 and a1 = 9,600 > 0, so the condition is satisfied."
+      "The chapter's theorem states that if $a_0$ < 0 and all subsequent returns are positive, a unique internal rate of return $r^{*}$ > -1 exists. Here $a_0$ = -$8,000 < 0 and $a_1$ = $9,600 > 0, so the condition is satisfied."
     ]
   },
   {
@@ -72,7 +72,7 @@
       "At a discount rate of 10%, the net present value of the project is positive.",
       "At a discount rate of 14%, the net present value of the project is positive.",
       "If the Year 1 return were $9,000 higher, with Year 2 unchanged at $15,000, the internal rate of return would exceed 30%.",
-      "The sum of all cash flows, a0 + a1 + a2, equals $4,000."
+      "The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals $4,000."
     ],
     "answer_key": [
       true,
@@ -119,7 +119,7 @@
       "As calculated above, $r_X = 15\\%$.",
       "As calculated above, $r_Y = 12.5\\%$.",
       "The chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 12.5% (Y), X should be preferred, not Y.",
-      "NPVx at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = $540.54 (positive). NPVy at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = $297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.",
+      "$NPV_X$ at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = $540.54 (positive). $NPV_Y$ at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = $297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.",
       "With $b$ = $25,000: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate."
     ]
   },
@@ -134,7 +134,7 @@
       "At r = 12%, the net present value of the project is positive.",
       "The internal rate of return of this project lies between 12% and 15%.",
       "At r = 15%, the net present value of the project is approximately -$3,424.",
-      "a1, a2, and a3 are all positive."
+      "$a_1$, $a_2$, and $a_3$ are all positive."
     ],
     "answer_key": [
       true,
@@ -195,7 +195,7 @@
       "At r = 15%, the net present value of the project is $0 (to the nearest dollar).",
       "At an interest rate of 10%, the net present value of the project is positive.",
       "At an interest rate of 20%, the net present value of the project is negative.",
-      "The sum of all the project's cash flows, a0 + a1 + a2, equals $9,600.",
+      "The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals $9,600.",
       "This project has a unique internal rate of return greater than -1."
     ],
     "answer_key": [
@@ -212,8 +212,8 @@
       "As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.",
       "NPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = $2,809.92, positive (10% is below the 15% IRR).",
       "NPV = -40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -$2,500.00, negative (20% is above the 15% IRR).",
-      "a0 + a1 + a2 = -40,000 + 22,000 + 27,600 = $9,600, which is positive, and this matches the chapter's result that the internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0.",
-      "The theorem's precondition (a0 < 0, all subsequent ai > 0) is satisfied exactly: a0 = -40,000 < 0, a1 = 22,000 > 0, a2 = 27,600 > 0."
+      "$a_0$ + $a_1$ + $a_2$ = -40,000 + 22,000 + 27,600 = $9,600, which is positive, and this matches the chapter's result that the internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0.",
+      "The theorem's precondition ($a_0$ < 0, all subsequent $a_i$ > 0) is satisfied exactly: $a_0$ = -40,000 < 0, $a_1$ = 22,000 > 0, $a_2$ = 27,600 > 0."
     ]
   },
   {
@@ -257,8 +257,8 @@
       "The limiting internal rate of return of Option 1 is 12%.",
       "The internal rate of return of Option 2 is approximately -58.84%.",
       "Option 2 has a unique internal rate of return greater than -1.",
-      "The sum of Option 2's cash flows, a0 + a1 + a2, equals -$40,000.",
-      "If Option 2's Year 2 return were removed entirely, leaving only a0 = -$50,000 and a1 = $6,000, its internal rate of return would be even lower than Option 2's own internal rate of return."
+      "The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -$40,000.",
+      "If Option 2's Year 2 return were removed entirely, leaving only $a_0$ = -$50,000 and $a_1$ = $6,000, its internal rate of return would be even lower than Option 2's own internal rate of return."
     ],
     "answer_key": [
       true,

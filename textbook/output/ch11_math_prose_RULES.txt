@@ -1,0 +1,25 @@
+MATH vs PROSE RULES for Ch11 subsection rewrite
+================================================
+
+Goal: never confuse ordinary English with KaTeX.
+
+1. MATH (inside $...$ only):
+   - Variables with proper subscripts: $S_{\mathrm{discrete}}$, $S_{\mathrm{cont}}$, $K_{\mathrm{yearly}}$, $EAR_{\mathrm{max}}$, $PV_{\mathrm{I}}$, $PV_{\mathrm{II}}$, $a_{\mathrm{ordinary}}$, $i_m$, $r_A$, $\delta_B$
+   - NEVER glued words: Sdiscrete, Scont, Kyearly, EARmax, aordinary, PVII
+   - Algebra: $(1.0625)^{9}$, $e^{0.5625}$, $\times$, $=$
+   - Numbers inside a formula use {,} for thousands: $75{,}000$
+
+2. PROSE (outside $):
+   - Words: "matching the statement exactly", "which does exceed", "not", "so"
+   - Currency amounts as $131,629.13 (currency $, with commas) — NOT inside KaTeX when they are money results after the equation
+   - Example CORRECT:
+     $S_{\mathrm{discrete}} = 75{,}000 \times (1.0625)^{9}$ = $129,426.15, matching the statement exactly.
+     ↑ formula font for the equation        ↑ currency     ↑ normal text
+
+3. BAD (current bug):
+   Sdiscrete = 75,000 × (1.0625)⁹
+   (glued label, whole line looks like random math italics)
+
+4. Keep answer_key and numeric values unchanged. Presentation only.
+5. Keep newline+blank-line between consecutive • bullets.
+6. Write ONLY textbook/output/ch11_subsection_fixes/{sid}.json — do not edit ch11_raw.json or the TS file.

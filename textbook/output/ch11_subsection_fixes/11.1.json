@@ -83,13 +83,13 @@
     ],
     "given": "• P = $10,000\n• Offer (i): $r = 6.4\\%$, $n = 4$ (quarterly)\n• Offer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)\n• Time = 1 year",
     "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Future value $FV = P(1+R)$",
-    "steps": "Offer (i): periodic rate = 0.064/4 = 0.016.\nRi = $(1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nOffer (ii): periodic rate = 0.065/2 = 0.0325.\nRii = $(1.0325)^{2}$ - 1 = 1.066056 - 1 = 0.066056 ≈ 6.61%.\nSince Rii (6.61%) > Ri (6.55%), Offer (ii) is the better deal for the saver, despite compounding less often.\nInteresti = 10,000 × 0.065533 = $655.33.\nInterestii = 10,000 × 0.066056 = $660.56.\nDifference = $5.23-$5.24.",
+    "steps": "Offer (i): periodic rate = 0.064/4 = 0.016.\n$R_i$ = $(1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nOffer (ii): periodic rate = 0.065/2 = 0.0325.\n$R_{ii}$ = $(1.0325)^{2}$ - 1 = 1.066056 - 1 = 0.066056 ≈ 6.61%.\nSince $R_{ii}$ (6.61%) > $R_i$ (6.55%), Offer (ii) is the better deal for the saver, despite compounding less often.\nInterest for Offer (i) = 10,000 × 0.065533 = $655.33.\nInterest for Offer (ii) = 10,000 × 0.066056 = $660.56.\nDifference ≈ $5.23 to $5.24.",
     "explanations": [
-      "Ri = $(1.016)^{4}$ - 1 ≈ 6.55%, matching exactly.",
-      "Rii = $(1.0325)^{2}$ - 1 ≈ 6.61%, matching exactly.",
+      "$R_i$ = $(1.016)^{4}$ - 1 ≈ 6.55%, matching exactly.",
+      "$R_{ii}$ = $(1.0325)^{2}$ - 1 ≈ 6.61%, matching exactly.",
       "A higher effective annual rate directly means more money for the saver, so Offer (ii) is indeed better.",
       "Trap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5% vs. 6.4%) is enough to give it the higher effective rate (6.61% vs. 6.55%) - frequency alone does not decide which offer is better.",
-      "10,000 × (0.066056 - 0.065533) ≈ $5.23-$5.24, matching approximately."
+      "10,000 × (0.066056 - 0.065533) ≈ $5.23 to $5.24, matching approximately."
     ]
   },
   {
@@ -300,10 +300,10 @@
     ],
     "given": "• Option (a): $r = 10.80\\%$, $n = 1$ (annual)\n• Option (b): $r = 10.40\\%$, $n = 4$ (quarterly)\n• Time = 1 year",
     "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$",
-    "steps": "Option (a): with n = 1, Ra = nominal rate = 10.80% exactly.\nOption (b): periodic rate = 0.104/4 = 0.026.\nRb = $(1.026)^{4}$ - 1 ≈ 1.108127 - 1 = 0.108127 ≈ 10.81%.\nSince Rb (10.81%) is very slightly higher than Ra (10.80%), option (a) is actually marginally cheaper for the borrower, even though its quoted nominal rate is higher.\nDifference = 10.8127% - 10.80% ≈ 0.013 percentage points, which is less than 0.05 percentage points.",
+    "steps": "Option (a): with n = 1, $R_a$ = nominal rate = 10.80% exactly.\nOption (b): periodic rate = 0.104/4 = 0.026.\n$R_b$ = $(1.026)^{4}$ - 1 ≈ 1.108127 - 1 = 0.108127 ≈ 10.81%.\nSince $R_b$ (10.81%) is very slightly higher than $R_a$ (10.80%), option (a) is actually marginally cheaper for the borrower, even though its quoted nominal rate is higher.\nDifference = 10.8127% - 10.80% ≈ 0.013 percentage points, which is less than 0.05 percentage points.",
     "explanations": [
-      "Trap: Ra = 10.80% is actually slightly LOWER than Rb ≈ 10.81%, not higher.",
-      "Rb = $(1.026)^{4}$ - 1 ≈ 10.81%, matching exactly.",
+      "Trap: $R_a$ = 10.80% is actually slightly LOWER than $R_b$ ≈ 10.81%, not higher.",
+      "$R_b$ = $(1.026)^{4}$ - 1 ≈ 10.81%, matching exactly.",
       "Trap: despite quoting a lower nominal rate, option (b)'s quarterly compounding pushes its effective rate very slightly above option (a)'s, so option (b) is actually marginally more expensive, not cheaper.",
       "Trap: since 10.80% < 10.81%, option (a) is actually the slightly CHEAPER (less expensive) option for the borrower, not the more expensive one.",
       "Trap: the actual difference is only about 0.013 percentage points, which is less than 0.05 percentage points, not more."
@@ -579,11 +579,11 @@
     ],
     "given": "• P = $20,000\n• CD1: $r = 6.30\\%$, $n = 12$ (monthly)\n• CD2: $r = 6.40\\%$, $n = 4$ (quarterly)\n• CD3: $r = 6.45\\%$, $n = 2$ (semi-annual)\n• Time = 1 year",
     "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Interest earned $= P \\times R$",
-    "steps": "CD1: periodic rate = 0.063/12 = 0.00525. R1 = $(1.00525)^{12}$ - 1 ≈ 1.064852 - 1 = 0.064852 ≈ 6.49%.\nCD2: periodic rate = 0.064/4 = 0.016. R2 = $(1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nCD3: periodic rate = 0.0645/2 = 0.03225. R3 = $(1.03225)^{2}$ - 1 ≈ 1.065540 - 1 = 0.065540 ≈ 6.55%, essentially tied with CD2 (difference under 0.01 points).\nCD1 has the lowest nominal rate (6.30%) and the lowest EAR (6.49%) of the three.\nInterest1 = 20,000 × 0.064852 = $1,297.04. Interest2 = 20,000 × 0.065533 = $1,310.65. Difference = $13.61.",
+    "steps": "CD1: periodic rate = 0.063/12 = 0.00525. $R_1$ = $(1.00525)^{12}$ - 1 ≈ 1.064852 - 1 = 0.064852 ≈ 6.49%.\nCD2: periodic rate = 0.064/4 = 0.016. $R_2$ = $(1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nCD3: periodic rate = 0.0645/2 = 0.03225. $R_3$ = $(1.03225)^{2}$ - 1 ≈ 1.065540 - 1 = 0.065540 ≈ 6.55%, essentially tied with CD2 (difference under 0.01 points).\nCD1 has the lowest nominal rate (6.30%) and the lowest EAR (6.49%) of the three.\nInterest for CD1 = 20,000 × 0.064852 = $1,297.04. Interest for CD2 = 20,000 × 0.065533 = $1,310.65. Difference = $13.61.",
     "explanations": [
-      "R1 = $(1.00525)^{12}$ - 1 ≈ 6.49%, matching exactly.",
-      "R2 = $(1.016)^{4}$ - 1 ≈ 6.55%, matching exactly.",
-      "R3 ≈ 6.55%, essentially matching CD2's rate even though CD3 compounds half as often, because CD3's slightly higher nominal rate makes up the difference.",
+      "$R_1$ = $(1.00525)^{12}$ - 1 ≈ 6.49%, matching exactly.",
+      "$R_2$ = $(1.016)^{4}$ - 1 ≈ 6.55%, matching exactly.",
+      "$R_3$ ≈ 6.55%, essentially matching CD2's rate even though CD3 compounds half as often, because CD3's slightly higher nominal rate makes up the difference.",
       "CD1 has both the lowest quoted nominal rate and, consistent with that, the lowest effective annual rate of the three - no inversion occurs among these three CDs.",
       "20,000 × (0.065533 - 0.064852) ≈ $13.61, matching approximately."
     ]
@@ -610,12 +610,12 @@
     ],
     "given": "• $S_0$ = $15,000, target = $22,000\n• Account M: $r = 6.00\\%$, $n = 12$ (monthly)\n• Account Q: $r = 6.15\\%$, $n = 4$ (quarterly)",
     "formulas": "• Time to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)\n• Effective annual rate $R = (1+r/n)^{n} - 1$",
-    "steps": "Target ratio = 22,000/15,000 ≈ 1.466667.\nAccount M: periodic rate = 0.005. t = ln(1.466667)/ln(1.005) ≈ 0.382996/0.0049875 ≈ 76.81 months ≈ 6.40 years.\nAccount Q: periodic rate = 0.015375. t = ln(1.466667)/ln(1.015375) ≈ 0.382996/0.0152580 ≈ 25.10 quarters ≈ 6.275 years, which is FASTER than Account M's 6.40 years, not identical and not slower.\nRM = $(1.005)^{12}$ - 1 ≈ 6.17%. RQ = $(1.015375)^{4}$ - 1 ≈ 6.29%. So RQ > RM, consistent with Q reaching the target faster.\nThe time to reach a 1.4667× target and the time to reach a 2× target (doubling) are governed by different logarithms (ln 1.4667 vs. ln 2), so the time to double is NOT simply twice the time to reach 1.4667× growth.",
+    "steps": "Target ratio = 22,000/15,000 ≈ 1.466667.\nAccount M: periodic rate = 0.005. t = ln(1.466667)/ln(1.005) ≈ 0.382996/0.0049875 ≈ 76.81 months ≈ 6.40 years.\nAccount Q: periodic rate = 0.015375. t = ln(1.466667)/ln(1.015375) ≈ 0.382996/0.0152580 ≈ 25.10 quarters ≈ 6.275 years, which is FASTER than Account M's 6.40 years, not identical and not slower.\n$R_M$ = $(1.005)^{12}$ - 1 ≈ 6.17%. $R_Q$ = $(1.015375)^{4}$ - 1 ≈ 6.29%. So $R_Q$ > $R_M$, consistent with Q reaching the target faster.\nThe time to reach a 1.4667× target and the time to reach a 2× target (doubling) are governed by different logarithms (ln 1.4667 vs. ln 2), so the time to double is NOT simply twice the time to reach 1.4667× growth.",
     "explanations": [
       "t = ln(1.466667)/ln(1.005) ≈ 76.8 months ≈ 6.40 years, matching exactly.",
       "Trap: Account Q actually reaches the target faster, in about 6.275 years, not the same 6.40 years as Account M.",
       "Trap: despite compounding less frequently, Account Q's higher nominal rate (6.15% vs. 6.00%) lets it reach the target faster (≈6.275 years) than Account M (≈6.40 years), not slower.",
-      "Trap: RQ (≈6.29%) is actually higher than RM (≈6.17%), not the other way around.",
+      "Trap: $R_Q$ (≈6.29%) is actually higher than $R_M$ (≈6.17%), not the other way around.",
       "Trap: the time to reach a different target multiple (2× instead of 1.4667×) is governed by a different logarithm (ln 2 vs. ln 1.4667) and is not simply double the original time; each target multiple requires its own separate calculation."
     ]
   }

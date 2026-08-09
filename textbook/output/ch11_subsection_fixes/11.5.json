@@ -268,14 +268,14 @@
       true
     ],
     "given": "• Annual deposit a = $3,000, made at the START of each year\n• Nominal annual rate r = 5% = 0.05\n• Compounding: annual, annuity due\n• n = 6 years (and 12 years for part d)",
-    "formulas": "• Future value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$\n• Future value of annuity due: $F_{due}=F_n(1+r)$",
-    "steps": "$F_{ordinary}=(3,000/0.05)[(1.05)^{6}-1]$ = 60,000 × 0.340096 = $20,405.76, so the annuity-due value is $F_{due}=20,405.76\\times1.05=21,426.05$. The gap between them is 21,426.05 - 20,405.76 = $1,020.29, not $1,120.29. Extending to 12 years, $F_{ordinary}=(3,000/0.05)[(1.05)^{12}-1]$ = 60,000 × 0.795856 = $47,751.36, so $F_{due}=47,751.36\\times1.05=50,138.93$, well more than double the 6-year figure of $42,852.10, not exactly double. For any n and r, this identity $F_{due}=F_{ordinary}(1+r)$ always holds, since shifting each payment one period earlier simply multiplies by one extra period of growth.",
+    "formulas": "• Future value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$\n• Future value of annuity due: $F_{\\mathrm{due}}=F_n(1+r)$",
+    "steps": "$F_{\\mathrm{ordinary}} = (3{,}000/0.05)[(1.05)^{6}-1]$ = 60,000 × 0.340096 = $20,405.76, so the annuity-due value is $F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05$ = $21,426.05. The gap between them is 21,426.05 - 20,405.76 = $1,020.29, not $1,120.29. Extending to 12 years, $F_{\\mathrm{ordinary}} = (3{,}000/0.05)[(1.05)^{12}-1]$ = 60,000 × 0.795856 = $47,751.36, so $F_{\\mathrm{due}} = 47{,}751.36 \\times 1.05$ = $50,138.93, well more than double the 6-year figure of $42,852.10, not exactly double. For any n and r, this identity $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}}(1+r)$ always holds, since shifting each payment one period earlier simply multiplies by one extra period of growth.",
     "explanations": [
-      "Fdue(6) = Fordinary(6) × 1.05 = 20,405.76 × 1.05 = $21,426.05, matching the statement exactly.",
-      "Fordinary(6) = (3,000/0.05)$[(1.05)^{6} - 1]$ = $20,405.76, which is indeed lower than the annuity-due result of $21,426.05, since end-of-year deposits each earn one fewer period of interest.",
+      "$F_{\\mathrm{due}}(6) = F_{\\mathrm{ordinary}}(6) \\times 1.05 = 20{,}405.76 \\times 1.05$ = $21,426.05, matching the statement exactly.",
+      "$F_{\\mathrm{ordinary}}(6) = (3{,}000/0.05)[(1.05)^{6} - 1]$ = $20,405.76, which is indeed lower than the annuity-due result of $21,426.05, since end-of-year deposits each earn one fewer period of interest.",
       "The gap is 21,426.05 - 20,405.76 = $1,020.29, not $1,120.29 as stated.",
-      "Extending to 12 years gives Fdue(12) = $50,138.93, which is MORE than double the 6-year result ($42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods.",
-      "This is a direct structural identity: Fdue = Fordinary × (1+r) holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor."
+      "Extending to 12 years gives $F_{\\mathrm{due}}(12)$ = $50,138.93, which is MORE than double the 6-year result ($42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods.",
+      "This is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}} \\times (1+r)$ holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor."
     ]
   },
   {
@@ -299,14 +299,14 @@
       true
     ],
     "given": "• Annual lease payment a = $24,000, due at the START of each year\n• Nominal annual rate r = 6% = 0.06\n• Compounding: annual, annuity due\n• n = 5 years (and 10 years for part d)",
-    "formulas": "• Present value of ordinary annuity: $P_n=(a/r)[1-1/(1+r)^{n}]$\n• Present value of annuity due: $P_{due}=P_n(1+r)$\n• Alternative: $P_{due}=a+P_{n-1}$",
-    "steps": "$P_{ordinary}=(24,000/0.06)[1-1/(1.06)^{5}]$ = 400,000 × 0.252742 = $101,096.80, so the annuity-due value is $P_{due}=101,096.80\\times1.06=107,162.61$. The gap between them is 107,162.61 - 101,096.80 = $6,065.81, not $7,065.81. Extending to 10 years instead, $P_{ordinary}=(24,000/0.06)[1-1/(1.06)^{10}]$ = 400,000 × 0.441605 = $176,642.00, so $P_{due}=176,642.00\\times1.06=187,240.52$, less than double the 5-year figure of $214,325.22, not exactly double. As a check, $a+P_4=24,000+(24,000/0.06)[1-1/(1.06)^{4}]$ = 24,000 + 400,000 × 0.207906 = 24,000 + 83,162.40 = $107,162.40, matching $P_{due}$ within rounding.",
+    "formulas": "• Present value of ordinary annuity: $P_n=(a/r)[1-1/(1+r)^{n}]$\n• Present value of annuity due: $P_{\\mathrm{due}}=P_n(1+r)$\n• Alternative: $P_{\\mathrm{due}}=a+P_{n-1}$",
+    "steps": "$P_{\\mathrm{ordinary}} = (24{,}000/0.06)[1-1/(1.06)^{5}]$ = 400,000 × 0.252742 = $101,096.80, so the annuity-due value is $P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06$ = $107,162.61. The gap between them is 107,162.61 - 101,096.80 = $6,065.81, not $7,065.81. Extending to 10 years instead, $P_{\\mathrm{ordinary}} = (24{,}000/0.06)[1-1/(1.06)^{10}]$ = 400,000 × 0.441605 = $176,642.00, so $P_{\\mathrm{due}} = 176{,}642.00 \\times 1.06$ = $187,240.52, less than double the 5-year figure of $214,325.22, not exactly double. As a check, $a + P_4 = 24{,}000+(24{,}000/0.06)[1-1/(1.06)^{4}]$ = 24,000 + 400,000 × 0.207906 = 24,000 + 83,162.40 = $107,162.40, matching $P_{\\mathrm{due}}$ within rounding.",
     "explanations": [
-      "Pdue(5) = Pordinary(5) × 1.06 = 101,096.80 × 1.06 = $107,162.61, matching the statement exactly.",
-      "Pordinary(5) = (24,000/0.06)$[1 - 1/(1.06)^{5}]$ = $101,096.80, which is indeed lower than the annuity-due result of $107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.",
+      "$P_{\\mathrm{due}}(5) = P_{\\mathrm{ordinary}}(5) \\times 1.06 = 101{,}096.80 \\times 1.06$ = $107,162.61, matching the statement exactly.",
+      "$P_{\\mathrm{ordinary}}(5) = (24{,}000/0.06)[1 - 1/(1.06)^{5}]$ = $101,096.80, which is indeed lower than the annuity-due result of $107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.",
       "The gap is 107,162.61 - 101,096.80 = $6,065.81, not $7,065.81 as stated.",
-      "Extending to 10 years gives Pdue(10) = $187,240.52, which is LESS than double the 5-year result ($214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less.",
-      "Since the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives $24,000 today plus a discounted remainder of $83,162.40, for a combined total of $107,162.40, matching Pdue within rounding - confirming this alternative method is valid."
+      "Extending to 10 years gives $P_{\\mathrm{due}}(10)$ = $187,240.52, which is LESS than double the 5-year result ($214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less.",
+      "Since the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives $24,000 today plus a discounted remainder of $83,162.40, for a combined total of $107,162.40, matching $P_{\\mathrm{due}}$ within rounding - confirming this alternative method is valid."
     ]
   },
   {
@@ -548,13 +548,13 @@
     ],
     "given": "• Lump sum P = $75,000 today\n• Equivalent annuity: annual deposit a = $8,333.33 for n = 9 years\n• Nominal annual rate r = 6.25% = 0.0625\n• Compounding: continuous (lump sum) vs. discrete annual (annuity and comparison)",
     "formulas": "• Continuous compounding: $S=Pe^{rt}$\n• Future value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$\n• Discrete compounding: $S=P(1+r)^{n}$",
-    "steps": "$S_{cont}=75,000e^{0.5625}$ = 75,000 × 1.755055 = $131,629.13. Meanwhile $F_9=(8,333.33/0.0625)[(1.0625)^{9}-1]$ = 133,333.33 × 0.725682 = $96,757.60, well below the lump-sum figure despite equal total contributions. The gap is 131,629.13 - 96,757.60 = $34,871.53, which exceeds $30,000.00. Later deposits in the annuity have progressively less time to earn interest before the horizon ends, unlike the lump sum which compounds for the full nine years. Investing the full $75,000 with discrete annual compounding instead, $S_{discrete}=75,000(1.0625)^{9}$ = 75,000 × 1.725682 = $129,426.15, which exceeds the annuity's $96,757.60 but still falls short of the continuous-compounding result of $131,629.13.",
+    "steps": "$S_{\\mathrm{cont}} = 75{,}000 \\times e^{0.5625}$ = 75,000 × 1.755055 = $131,629.13. Meanwhile $F_9=(8{,}333.33/0.0625)[(1.0625)^{9}-1]$ = 133,333.33 × 0.725682 = $96,757.60, well below the lump-sum figure despite equal total contributions. The gap is 131,629.13 - 96,757.60 = $34,871.53, which exceeds $30,000.00. Later deposits in the annuity have progressively less time to earn interest before the horizon ends, unlike the lump sum which compounds for the full nine years. Investing the full $75,000 with discrete annual compounding instead, $S_{\\mathrm{discrete}} = 75{,}000 \\times (1.0625)^{9}$ = 75,000 × 1.725682 = $129,426.15, which exceeds the annuity's $96,757.60 but still falls short of the continuous-compounding result of $131,629.13.",
     "explanations": [
-      "Scont = 75,000 × $e^{0.5625}$ = $131,629.13, matching the statement exactly.",
+      "$S_{\\mathrm{cont}} = 75{,}000 \\times e^{0.5625}$ = $131,629.13, matching the statement exactly.",
       "F9 = $96,757.60, which is indeed lower than the lump-sum continuous-compounding result of $131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total contributions are equal.",
       "The gap is 131,629.13 - 96,757.60 = $34,871.53, which exceeds $30,000.00, matching the statement exactly.",
       "This is the correct conceptual explanation: front-loading the entire amount lets it compound over the full horizon, while spreading contributions out means later deposits have little to no time to grow before the milestone date.",
-      "Sdiscrete = 75,000 × $(1.0625)^{9}$ = $129,426.15, which does exceed the annuity strategy's future value of $96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result of $131,629.13)."
+      "$S_{\\mathrm{discrete}} = 75{,}000 \\times (1.0625)^{9}$ = $129,426.15, which does exceed the annuity strategy's future value of $96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result of $131,629.13)."
     ]
   },
   {
@@ -578,12 +578,12 @@
       false
     ],
     "given": "• Annuity due: a = $4,200, n = 5 years, r = 8% = 0.08\n• Continuous-compounding investment: P = $20,000 today, nominal r = 6% = 0.06, over a seven-year horizon\n• Perpetuity: a = $3,000, r = 8% = 0.08",
-    "formulas": "• $P_{due}=(a/r)[1-1/(1+r)^{n}](1+r)$\n• $F_{due}=(a/r)[(1+r)^{n}-1](1+r)$\n• Continuous compounding: $S=Pe^{rt}$\n• Perpetuity: $P=a/r$",
-    "steps": "$P_{ordinary}=(4,200/0.08)[1-1/(1.08)^{5}]$ = 52,500 × 0.319417 = $16,769.39, so $P_{due}=16,769.39\\times1.08=18,110.94$. $F_{ordinary}=(4,200/0.08)[(1.08)^{5}-1]$ = 52,500 × 0.469328 = $24,639.72, so $F_{due}=24,639.72\\times1.08=26,610.90$, not $27,610.90. The continuous-compounding investment grows to $S=20,000e^{0.42}$ = 20,000 × 1.521962 = $30,439.24, not $31,439.24. The maintenance perpetuity is worth 3,000/0.08 = $37,500.00 today, which exceeds double the annuity-due lease value of $36,221.88, so it is MORE than double, not less. Comparing the two, the perpetuity's $37,500.00 present value is LARGER than the continuous-compounding result of $30,439.24, not smaller.",
+    "formulas": "• $P_{\\mathrm{due}}=(a/r)[1-1/(1+r)^{n}](1+r)$\n• $F_{\\mathrm{due}}=(a/r)[(1+r)^{n}-1](1+r)$\n• Continuous compounding: $S=Pe^{rt}$\n• Perpetuity: $P=a/r$",
+    "steps": "$P_{\\mathrm{ordinary}} = (4{,}200/0.08)[1-1/(1.08)^{5}]$ = 52,500 × 0.319417 = $16,769.39, so $P_{\\mathrm{due}} = 16{,}769.39 \\times 1.08$ = $18,110.94. $F_{\\mathrm{ordinary}} = (4{,}200/0.08)[(1.08)^{5}-1]$ = 52,500 × 0.469328 = $24,639.72, so $F_{\\mathrm{due}} = 24{,}639.72 \\times 1.08$ = $26,610.90, not $27,610.90. The continuous-compounding investment grows to $S = 20{,}000 \\times e^{0.42}$ = 20,000 × 1.521962 = $30,439.24, not $31,439.24. The maintenance perpetuity is worth 3,000/0.08 = $37,500.00 today, which exceeds double the annuity-due lease value of $36,221.88, so it is MORE than double, not less. Comparing the two, the perpetuity's $37,500.00 present value is LARGER than the continuous-compounding result of $30,439.24, not smaller.",
     "explanations": [
       "Computing the ordinary annuity present value first ($16,769.39) and then multiplying by (1.08) to shift each payment one period earlier gives $18,110.94, matching the statement exactly.",
       "Computing the ordinary annuity future value first ($24,639.72) and then multiplying by (1.08) gives $26,610.90, not $27,610.90 as stated.",
-      "S = 20,000 × $e^{0.42}$ = $30,439.24, not $31,439.24 as stated.",
+      "$S = 20{,}000 \\times e^{0.42}$ = $30,439.24, not $31,439.24 as stated.",
       "The perpetuity's $37,500.00 present value actually exceeds double the annuity-due lease value ($36,221.88), so it is MORE than double, not less as stated.",
       "The continuous-compounding investment grows to $30,439.24 after 7 years, which is LESS than the perpetuity's present value of $37,500.00, not larger."
     ]
