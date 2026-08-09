@@ -47,7 +47,10 @@ def difficulty_for(sort_order: int, tasks_per_sub: int) -> str | None:
 
 def expl_ok(answer: bool, expl: str) -> bool:
     s = str(expl).lstrip()
-    # Math Ch11 style: **A) ...** (true|false)
+    # Letter claim header — verdict shown in answer_key / UI table
+    if re.match(r"^\*\*[A-E]\)", s):
+        return True
+    # Math Ch11 style: **A) ...** (true|false) leftover
     m = re.search(r"\((true|false)\)", s, flags=re.I)
     if m:
         got = m.group(1).lower() == "true"

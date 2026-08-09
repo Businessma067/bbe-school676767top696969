@@ -22,11 +22,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The soup was hot enough to warm us after the hike.**  (true)\n\nHot enough places enough after the adjective, which is the standard slot before a to-infinitive. The soup was hot enough to warm us reads as natural, living English and matches the sufficiency pattern you want after a hike.\n\n**Tip:** After adjectives, put enough last: adj + enough (+ to…).",
-        "**B) The soup was enough hot to warm us after the hike.**  (false)\n\nTrap: Enough cannot sit before the adjective here. Flip to hot enough (or switch the meaning to too hot if you mean excess).\n\n**Tip:** Never write enough + adjective; reverse it.",
-        "**C) It was such a noisy café that we could barely talk.**  (true)\n\nSuch a + adjective + singular countable noun + that-clause is the classic result pattern. Such a noisy café that… correctly intensifies the whole noun phrase, not just the adjective alone.\n\n**Tip:** Such takes the noun phrase; so takes the adjective alone.",
-        "**D) It was so a noisy café that we could barely talk.**  (false)\n\nTrap: So does not combine with a before a noun. Repair to such a noisy café that…, or drop the noun and write so noisy that…\n\n**Tip:** So a / so an is almost always wrong — use such a/an.",
-        "**E) The trail was too steep for beginners.**  (true)\n\nToo + adjective (+ for…) correctly marks excess relative to a purpose or audience. Too steep for beginners is exactly the shape you want when the trail goes past what beginners can handle.\n\n**Tip:** Too = excess; enough = sufficiency."
+        "**A) The soup was hot enough to warm us after the hike.**\n\nHot enough places enough after the adjective, which is the standard slot before a to-infinitive. The soup was hot enough to warm us reads as natural, living English and matches the sufficiency pattern you want after a hike.\n",
+        "**B) The soup was enough hot to warm us after the hike.**\n\nEnough cannot sit before the adjective here. Flip to hot enough (or switch the meaning to too hot if you mean excess).\n",
+        "**C) It was such a noisy café that we could barely talk.**\n\nSuch a + adjective + singular countable noun + that-clause is the classic result pattern. Such a noisy café that… correctly intensifies the whole noun phrase, not just the adjective alone.\n",
+        "**D) It was so a noisy café that we could barely talk.**\n\nSo does not combine with a before a noun. Repair to such a noisy café that…, or drop the noun and write so noisy that…\n",
+        "**E) The trail was too steep for beginners.**\n\nToo + adjective (+ for…) correctly marks excess relative to a purpose or audience. Too steep for beginners is exactly the shape you want when the trail goes past what beginners can handle.\n"
       ],
       "highlights": [
         "hot enough",
@@ -60,11 +60,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The fog was so thick that the ferry stayed in harbour.**  (true)\n\nSo + adjective + that-clause intensifies the quality and links a clear result. So thick that the ferry stayed in harbour keeps the adjective alone in so's slot and lets that introduce what followed.\n\n**Tip:** So + adj/adv (+ that…); keep the noun out of that slot.",
-        "**B) There was such excitement that the crowd started cheering early.**  (true)\n\nSuch + uncountable noun (excitement) + that needs no article. There was such excitement that… correctly treats excitement as a mass noun under such.\n\n**Tip:** Such + noun; no a/an with uncountables.",
-        "**C) There was so excitement that the crowd started cheering early.**  (false)\n\nTrap: So cannot modify a bare noun. Repair to such excitement or so much excitement that…\n\n**Tip:** So + noun needs much/many (or a determiner phrase).",
-        "**D) He is not tall enough for the roller coaster.**  (true)\n\nTall enough places enough after the adjective and before for. He is not tall enough for the roller coaster is the everyday sufficiency pattern under negation.\n\n**Tip:** Adj + enough + for / to…",
-        "**E) He is not enough tall for the roller coaster.**  (false)\n\nTrap: Enough tall reverses the required order. Flip to tall enough; only when a noun follows (enough time) can enough come first.\n\n**Tip:** If enough comes first, check whether a noun follows — not an adjective."
+        "**A) The fog was so thick that the ferry stayed in harbour.**\n\nSo + adjective + that-clause intensifies the quality and links a clear result. So thick that the ferry stayed in harbour keeps the adjective alone in so's slot and lets that introduce what followed.\n",
+        "**B) There was such excitement that the crowd started cheering early.**\n\nSuch + uncountable noun (excitement) + that needs no article. There was such excitement that… correctly treats excitement as a mass noun under such.\n",
+        "**C) There was so excitement that the crowd started cheering early.**\n\nSo cannot modify a bare noun. Repair to such excitement or so much excitement that…\n",
+        "**D) He is not tall enough for the roller coaster.**\n\nTall enough places enough after the adjective and before for. He is not tall enough for the roller coaster is the everyday sufficiency pattern under negation.\n",
+        "**E) He is not enough tall for the roller coaster.**\n\nEnough tall reverses the required order. Flip to tall enough; only when a noun follows (enough time) can enough come first.\n"
       ],
       "highlights": [
         "so thick that",
@@ -98,11 +98,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) It was such an early train that half the carriages were empty.**  (true)\n\nSuch an before a vowel-sound adjective + noun is correct — early begins with a vowel sound, so an is right. Such an early train that… builds the full noun phrase under such and adds a result clause.\n\n**Tip:** Such a/an agrees with the following sound, not with so.",
-        "**B) It was so an early train that half the carriages were empty.**  (false)\n\nTrap: So an is ungrammatical. Replace with such an early train that…, or restructure as so early that… without parking the noun after so.\n\n**Tip:** Article + noun belongs with such, not so.",
-        "**C) The suitcase is too heavy to lift alone.**  (true)\n\nToo + adjective + to-infinitive expresses excess that blocks a result. The suitcase is too heavy to lift alone means the weight stops a solo lift — a clean too…to pattern.\n\n**Tip:** Too…to often means \"so…that not\".",
-        "**D) The lecture was too much technical for first-year students.**  (false)\n\nTrap: Do not insert much between too and a single adjective. Write too technical; reserve too much for nouns (too much noise).\n\n**Tip:** Too much + noun; too + adjective.",
-        "**E) She sang so beautifully that the hall went silent.**  (true)\n\nSo + adverb + that-clause parallels so + adjective. She sang so beautifully that the hall went silent intensifies manner and states the result without dragging a noun into so's slot.\n\n**Tip:** Beautifully is an adverb, so so beautifully that… is fine."
+        "**A) It was such an early train that half the carriages were empty.**\n\nSuch an before a vowel-sound adjective + noun is correct — early begins with a vowel sound, so an is right. Such an early train that… builds the full noun phrase under such and adds a result clause.\n",
+        "**B) It was so an early train that half the carriages were empty.**\n\nSo an is ungrammatical. Replace with such an early train that…, or restructure as so early that… without parking the noun after so.\n",
+        "**C) The suitcase is too heavy to lift alone.**\n\nToo + adjective + to-infinitive expresses excess that blocks a result. The suitcase is too heavy to lift alone means the weight stops a solo lift — a clean too…to pattern.\n",
+        "**D) The lecture was too much technical for first-year students.**\n\nDo not insert much between too and a single adjective. Write too technical; reserve too much for nouns (too much noise).\n",
+        "**E) She sang so beautifully that the hall went silent.**\n\nSo + adverb + that-clause parallels so + adjective. She sang so beautifully that the hall went silent intensifies manner and states the result without dragging a noun into so's slot.\n"
       ],
       "highlights": [
         "such an early",
@@ -136,11 +136,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) We had enough daylight to finish photographing the mural.**  (true)\n\nEnough + noun is correct when enough quantifies a noun. We had enough daylight to finish photographing the mural treats daylight as the thing of which there was a sufficient amount.\n\n**Tip:** Enough + noun vs adjective + enough — two different slots.",
-        "**B) The path was so icy that cyclists walked their bikes.**  (true)\n\nSo + adjective + that correctly builds cause and result. The path was so icy that cyclists walked their bikes keeps icy in the adjective slot after so.\n\n**Tip:** Icy is adjectival; so icy that… fits.",
-        "**C) She typed so quickly notes that nobody could read them.**  (false)\n\nTrap: So quickly notes mixes the adverb pattern with a noun sitting where that or an infinitive should be. Repair to so quickly that… or such quick notes that…\n\n**Tip:** Do not park a noun right after so + adverb.",
-        "**D) The film was such gripping that we stayed until the credits.**  (false)\n\nTrap: Such needs a noun phrase: such a gripping film that…, not such gripping alone before that. Without a noun head, such has nothing to intensify.\n\n**Tip:** Such + (a/an) + (adj) + noun.",
-        "**E) The kitchen is large enough for a second fridge.**  (true)\n\nAdjective + enough + for + noun phrase is grammatical. The kitchen is large enough for a second fridge places enough after large and licenses the for-complement.\n\n**Tip:** Enough for X / enough to V — both common after adjectives."
+        "**A) We had enough daylight to finish photographing the mural.**\n\nEnough + noun is correct when enough quantifies a noun. We had enough daylight to finish photographing the mural treats daylight as the thing of which there was a sufficient amount.\n",
+        "**B) The path was so icy that cyclists walked their bikes.**\n\nSo + adjective + that correctly builds cause and result. The path was so icy that cyclists walked their bikes keeps icy in the adjective slot after so.\n",
+        "**C) She typed so quickly notes that nobody could read them.**\n\nSo quickly notes mixes the adverb pattern with a noun sitting where that or an infinitive should be. Repair to so quickly that… or such quick notes that…\n",
+        "**D) The film was such gripping that we stayed until the credits.**\n\nSuch needs a noun phrase: such a gripping film that…, not such gripping alone before that. Without a noun head, such has nothing to intensify.\n",
+        "**E) The kitchen is large enough for a second fridge.**\n\nAdjective + enough + for + noun phrase is grammatical. The kitchen is large enough for a second fridge places enough after large and licenses the for-complement.\n"
       ],
       "highlights": [
         "enough daylight",
@@ -174,11 +174,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) There was so much rain that the cricket match was abandoned.**  (true)\n\nSo much + uncountable noun (+ that) is the correct so + noun pattern. There was so much rain that the cricket match was abandoned pairs much with uncountable rain and states the result.\n\n**Tip:** Uncountable → so much; plural countable → so many.",
-        "**B) There were so many volunteers that the charity ran out of badges.**  (true)\n\nSo many + plural countable noun is parallel to so much. There were so many volunteers that… correctly chooses many for a plural count noun.\n\n**Tip:** Count the noun before choosing much/many.",
-        "**C) The recipe is too vaguely to follow without a video.**  (false)\n\nTrap: Too must modify an adjective after be when you mean the recipe itself: too vague to follow, not too vaguely. The -ly form is wrong for a subject complement here.\n\n**Tip:** After linking be, use too + adjective, not too + -ly adverb.",
-        "**D) The offer was not generous enough to tempt her back.**  (true)\n\nGenerous enough to… places enough correctly after the adjective. The offer was not generous enough to tempt her back is the standard not + adj + enough to… exam shape.\n\n**Tip:** Not + adj + enough to… is a common exam pattern.",
-        "**E) It was such bad weather that the outdoor market closed early.**  (true)\n\nSuch + adjective + uncountable noun (weather) needs no article. It was such bad weather that the outdoor market closed early is textbook such + mass noun phrasing.\n\n**Tip:** Such bad weather / such good news — no a/an."
+        "**A) There was so much rain that the cricket match was abandoned.**\n\nSo much + uncountable noun (+ that) is the correct so + noun pattern. There was so much rain that the cricket match was abandoned pairs much with uncountable rain and states the result.\n",
+        "**B) There were so many volunteers that the charity ran out of badges.**\n\nSo many + plural countable noun is parallel to so much. There were so many volunteers that… correctly chooses many for a plural count noun.\n",
+        "**C) The recipe is too vaguely to follow without a video.**\n\nToo must modify an adjective after be when you mean the recipe itself: too vague to follow, not too vaguely. The -ly form is wrong for a subject complement here.\n",
+        "**D) The offer was not generous enough to tempt her back.**\n\nGenerous enough to… places enough correctly after the adjective. The offer was not generous enough to tempt her back is the standard not + adj + enough to… exam shape.\n",
+        "**E) It was such bad weather that the outdoor market closed early.**\n\nSuch + adjective + uncountable noun (weather) needs no article. It was such bad weather that the outdoor market closed early is textbook such + mass noun phrasing.\n"
       ],
       "highlights": [
         "so much rain",
@@ -212,11 +212,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The app loads too slowly to be useful during live quizzes.**  (true)\n\nToo + adverb + to-infinitive correctly marks excess manner blocking a purpose. The app loads too slowly to be useful during live quizzes parallels too small to… with an adverb instead of an adjective.\n\n**Tip:** Too slowly to… parallels too small to…",
-        "**B) The photos were such blurry that we deleted the whole roll.**  (false)\n\nTrap: Such blurry lacks a noun head. Use such blurry photos that… or so blurry that…\n\n**Tip:** Such wants a noun; so wants an adjective.",
-        "**C) We do not have enough flour to bake a second loaf.**  (true)\n\nEnough + uncountable noun (flour) is correct before to. We do not have enough flour to bake a second loaf quantifies the ingredient, not an adjective.\n\n**Tip:** Enough flour / enough time — noun after enough.",
-        "**D) It was so narrow a bridge that only one car could cross.**  (true)\n\nSo + adjective + a + noun (+ that) is a formal but grammatical pattern. It was so narrow a bridge that only one car could cross matches such a narrow bridge in meaning while keeping the article after the adjective.\n\n**Tip:** So adj a noun ≈ such a adj noun; both appear in careful English.",
-        "**E) The library was enough quiet for evening revision.**  (false)\n\nTrap: Quiet is an adjective, so use quiet enough, not enough quiet. Flip enough to the post-adjective slot for evening revision.\n\n**Tip:** Enough before adjectives is a word-order error."
+        "**A) The app loads too slowly to be useful during live quizzes.**\n\nToo + adverb + to-infinitive correctly marks excess manner blocking a purpose. The app loads too slowly to be useful during live quizzes parallels too small to… with an adverb instead of an adjective.\n",
+        "**B) The photos were such blurry that we deleted the whole roll.**\n\nSuch blurry lacks a noun head. Use such blurry photos that… or so blurry that…\n",
+        "**C) We do not have enough flour to bake a second loaf.**\n\nEnough + uncountable noun (flour) is correct before to. We do not have enough flour to bake a second loaf quantifies the ingredient, not an adjective.\n",
+        "**D) It was so narrow a bridge that only one car could cross.**\n\nSo + adjective + a + noun (+ that) is a formal but grammatical pattern. It was so narrow a bridge that only one car could cross matches such a narrow bridge in meaning while keeping the article after the adjective.\n",
+        "**E) The library was enough quiet for evening revision.**\n\nQuiet is an adjective, so use quiet enough, not enough quiet. Flip enough to the post-adjective slot for evening revision.\n"
       ],
       "highlights": [
         "too slowly to",
@@ -250,11 +250,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The deadline is tight enough that any delay will cost us the slot.**  (true)\n\nAdjective + enough + that-clause is acceptable alongside enough to…. The deadline is tight enough that any delay will cost us the slot still means \"sufficiently tight,\" with that spelling out the consequence.\n\n**Tip:** Enough that… and enough to… both appear; meaning stays \"sufficient\".",
-        "**B) It was so clever puzzle that the whole class stayed late.**  (false)\n\nTrap: So clever puzzle misses the article/noun patterning needed with a countable singular. Use such a clever puzzle that… or so clever that…\n\n**Tip:** So + adj + countable noun without a is a classic miss.",
-        "**C) The courier arrived too late for us to catch the evening train.**  (true)\n\nToo + adverb/adjective + for + object + to-infinitive is a solid excess pattern. The courier arrived too late for us to catch the evening train means we could not catch it in time.\n\n**Tip:** Too late for X to V = X cannot V in time.",
-        "**D) Such were the crowds that the museum opened an extra wing.**  (true)\n\nInversion such were the crowds that… is formal but grammatical. Such + be + noun phrase + that intensifies the noun phrase with literary word order — still correct on a true/false grammar check.\n\n**Tip:** Such + be + noun phrase + that is literary/formal, not an error.",
-        "**E) The essay is too much short for a full literature review.**  (false)\n\nTrap: Too much short wrongly inserts much before an adjective. Use too short; save too much for nouns.\n\n**Tip:** Too much ≠ intensifier before adjectives."
+        "**A) The deadline is tight enough that any delay will cost us the slot.**\n\nAdjective + enough + that-clause is acceptable alongside enough to…. The deadline is tight enough that any delay will cost us the slot still means \"sufficiently tight,\" with that spelling out the consequence.\n",
+        "**B) It was so clever puzzle that the whole class stayed late.**\n\nSo clever puzzle misses the article/noun patterning needed with a countable singular. Use such a clever puzzle that… or so clever that…\n",
+        "**C) The courier arrived too late for us to catch the evening train.**\n\nToo + adverb/adjective + for + object + to-infinitive is a solid excess pattern. The courier arrived too late for us to catch the evening train means we could not catch it in time.\n",
+        "**D) Such were the crowds that the museum opened an extra wing.**\n\nInversion such were the crowds that… is formal but grammatical. Such + be + noun phrase + that intensifies the noun phrase with literary word order — still correct on a true/false grammar check.\n",
+        "**E) The essay is too much short for a full literature review.**\n\nToo much short wrongly inserts much before an adjective. Use too short; save too much for nouns.\n"
       ],
       "highlights": [
         "tight enough that",
@@ -288,11 +288,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The map was not clear enough for hikers to follow in mist.**  (true)\n\nNot + adjective + enough + for + noun + to-infinitive is fully grammatical. The map was not clear enough for hikers to follow in mist licenses the for…to… complement after enough.\n\n**Tip:** Enough often licenses a for…to… complement.",
-        "**B) They made so rapid progress that the language course finished early.**  (true)\n\nSo + adjective + uncountable noun (progress) without a is acceptable because progress is uncountable. They made so rapid progress that… contrasts with countable so clever puzzle, which needs an article.\n\n**Tip:** So + adj + uncountable noun can work; contrast so clever puzzle (countable needs a).",
-        "**C) They made such rapid progress that the language course finished early.**  (true)\n\nSuch + adjective + uncountable noun is the safer textbook twin of the previous pattern. They made such rapid progress that… is the exam-safe default many teachers prefer.\n\n**Tip:** Such rapid progress is the exam-safe default.",
-        "**D) The backpack is too heavily to carry up the ridge.**  (false)\n\nTrap: Too heavily is an adverb where an adjective is needed after be. Write too heavy to carry… (or restructure with a different verb if you truly need an adverb).\n\n**Tip:** Linking verb → too + adjective.",
-        "**E) We kept enough spare batteries to last the whole festival.**  (true)\n\nEnough + adjective + plural noun quantifies how many of that type you have. We kept enough spare batteries to last the whole festival means a sufficient number of that kind — noun phrase after enough, not the illegal enough + bare adjective flip.\n\n**Tip:** Enough spare batteries = a sufficient number of that kind."
+        "**A) The map was not clear enough for hikers to follow in mist.**\n\nNot + adjective + enough + for + noun + to-infinitive is fully grammatical. The map was not clear enough for hikers to follow in mist licenses the for…to… complement after enough.\n",
+        "**B) They made so rapid progress that the language course finished early.**\n\nSo + adjective + uncountable noun (progress) without a is acceptable because progress is uncountable. They made so rapid progress that… contrasts with countable so clever puzzle, which needs an article.\n",
+        "**C) They made such rapid progress that the language course finished early.**\n\nSuch + adjective + uncountable noun is the safer textbook twin of the previous pattern. They made such rapid progress that… is the exam-safe default many teachers prefer.\n",
+        "**D) The backpack is too heavily to carry up the ridge.**\n\nToo heavily is an adverb where an adjective is needed after be. Write too heavy to carry… (or restructure with a different verb if you truly need an adverb).\n",
+        "**E) We kept enough spare batteries to last the whole festival.**\n\nEnough + adjective + plural noun quantifies how many of that type you have. We kept enough spare batteries to last the whole festival means a sufficient number of that kind — noun phrase after enough, not the illegal enough + bare adjective flip.\n"
       ],
       "highlights": [
         "clear enough for",
@@ -326,11 +326,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The view was so stunning as to stop us mid-sentence.**  (true)\n\nSo + adjective + as to + infinitive is a formal result pattern parallel to so…that. The view was so stunning as to stop us mid-sentence means the view was stunning enough that it stopped us.\n\n**Tip:** So…as to… ≈ so…that someone does…",
-        "**B) The view was such stunning as to stop us mid-sentence.**  (false)\n\nTrap: Such does not take as to after a bare adjective. Use so stunning as to… or such a stunning view that…\n\n**Tip:** Such pairs with nouns; so…as to pairs with adjectives.",
-        "**C) The oven is not hot enough to crisp the pastry.**  (true)\n\nNot + adjective + enough + to… is correct. The oven is not hot enough to crisp the pastry places enough after hot before the purpose infinitive.\n\n**Tip:** Participial and ordinary adjectives both take enough after them.",
-        "**D) It was too a complicated route for a first visit.**  (false)\n\nTrap: Too a complicated wrongly puts the article right after too. Use too complicated a route or such a complicated route — never too a…\n\n**Tip:** Too + adj + a + noun is possible (too complicated a route), but too a… never is.",
-        "**E) There has been such an upsurge in tickets that the box office stayed open late.**  (true)\n\nSuch an + noun (+ that) correctly intensifies a countable singular. There has been such an upsurge in tickets that… chooses an because upsurge is countable singular.\n\n**Tip:** Upsurge is countable → such an upsurge."
+        "**A) The view was so stunning as to stop us mid-sentence.**\n\nSo + adjective + as to + infinitive is a formal result pattern parallel to so…that. The view was so stunning as to stop us mid-sentence means the view was stunning enough that it stopped us.\n",
+        "**B) The view was such stunning as to stop us mid-sentence.**\n\n** Such pairs with nouns; so…as to pairs with adjectives.\n\nTrap: Such does not take as to after a bare adjective. Use so stunning as to… or such a stunning view that…\n",
+        "**C) The oven is not hot enough to crisp the pastry.**\n\nNot + adjective + enough + to… is correct. The oven is not hot enough to crisp the pastry places enough after hot before the purpose infinitive.\n",
+        "**D) It was too a complicated route for a first visit.**\n\n** Too + adj + a + noun is possible (too complicated a route), but too a… never is.\n\nTrap: Too a complicated wrongly puts the article right after too. Use too complicated a route or such a complicated route — never too a…\n",
+        "**E) There has been such an upsurge in tickets that the box office stayed open late.**\n\nSuch an + noun (+ that) correctly intensifies a countable singular. There has been such an upsurge in tickets that… chooses an because upsurge is countable singular.\n"
       ],
       "highlights": [
         "so stunning as to",
@@ -364,11 +364,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The novel is too dense a book for a single weekend.**  (true)\n\nToo + adjective + a + noun (+ for…) is a formal pattern matching so adj a noun. The novel is too dense a book for a single weekend means an excessively dense book for that timeframe.\n\n**Tip:** Too dense a book = such a dense book in meaning of excess.",
-        "**B) Fans left because the queue was such long.**  (false)\n\nTrap: Such long needs a noun: such a long queue, or else so long that…. Bare such + adjective without a noun is incomplete.\n\n**Tip:** Bare such + adjective without noun is incomplete.",
-        "**C) We arrived early enough to claim seats near the stage.**  (true)\n\nAdverb early + enough + to-infinitive is correct — enough follows the adverb just as it follows adjectives. We arrived early enough to claim seats near the stage is everyday event English.\n\n**Tip:** Adv + enough mirrors adj + enough.",
-        "**D) The coach found the warm-up so rushed that she ordered another lap.**  (true)\n\nSo + adjective + that after a reporting verb is clean. The coach found the warm-up so rushed that she ordered another lap keeps so on the adjective in the object complement.\n\n**Tip:** Found X so adj that… keeps so on the adjective.",
-        "**E) She is enough experienced to lead the climbing group.**  (false)\n\nTrap: Experienced is an adjective, so write experienced enough, not enough experienced. Same flip rule as enough hot.\n\n**Tip:** Same flip rule as enough hot."
+        "**A) The novel is too dense a book for a single weekend.**\n\nToo + adjective + a + noun (+ for…) is a formal pattern matching so adj a noun. The novel is too dense a book for a single weekend means an excessively dense book for that timeframe.\n",
+        "**B) Fans left because the queue was such long.**\n\n** Bare such + adjective without noun is incomplete.\n\nTrap: Such long needs a noun: such a long queue, or else so long that…. Bare such + adjective without a noun is incomplete.\n",
+        "**C) We arrived early enough to claim seats near the stage.**\n\nAdverb early + enough + to-infinitive is correct — enough follows the adverb just as it follows adjectives. We arrived early enough to claim seats near the stage is everyday event English.\n",
+        "**D) The coach found the warm-up so rushed that she ordered another lap.**\n\nSo + adjective + that after a reporting verb is clean. The coach found the warm-up so rushed that she ordered another lap keeps so on the adjective in the object complement.\n",
+        "**E) She is enough experienced to lead the climbing group.**\n\n** Same flip rule as enough hot.\n\nTrap: Experienced is an adjective, so write experienced enough, not enough experienced. Same flip rule as enough hot.\n"
       ],
       "highlights": [
         "too dense a book",
@@ -402,11 +402,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The storm was so fierce as that ferries cancelled sailings.**  (false)\n\nTrap: So…as that mixes two patterns. Choose so…that or so…as to, not both markers stacked.\n\n**Tip:** Never stack as and that after so.",
-        "**B) The storm was so fierce that ferries cancelled sailings.**  (true)\n\nClean so + adjective + that result clause. The storm was so fierce that ferries cancelled sailings uses one linker only.\n\n**Tip:** One linker only: that or as to.",
-        "**C) We lacked enough evidence to challenge the referee's call.**  (true)\n\nEnough + noun (evidence) before a to-infinitive is correct. We lacked enough evidence to challenge the referee's call quantifies an uncountable noun under enough.\n\n**Tip:** Uncountables still take enough + noun.",
-        "**D) It was such a poorly printed map that hikers took wrong turns.**  (true)\n\nSuch a + adverb + adjective + noun is fine when the adverb modifies the adjective inside the noun phrase. It was such a poorly printed map that hikers took wrong turns — the whole noun phrase still sits after such.\n\n**Tip:** Such a poorly printed X = noun phrase after such.",
-        "**E) The hills are too steep for the juniors finish before dusk.**  (false)\n\nTrap: Missing to before the infinitive: write too steep for the juniors to finish before dusk. For + object needs to before the verb.\n\n**Tip:** For + object needs to before the verb."
+        "**A) The storm was so fierce as that ferries cancelled sailings.**\n\n** Never stack as and that after so.\n\nTrap: So…as that mixes two patterns. Choose so…that or so…as to, not both markers stacked.\n",
+        "**B) The storm was so fierce that ferries cancelled sailings.**\n\nClean so + adjective + that result clause. The storm was so fierce that ferries cancelled sailings uses one linker only.\n",
+        "**C) We lacked enough evidence to challenge the referee's call.**\n\nEnough + noun (evidence) before a to-infinitive is correct. We lacked enough evidence to challenge the referee's call quantifies an uncountable noun under enough.\n",
+        "**D) It was such a poorly printed map that hikers took wrong turns.**\n\nSuch a + adverb + adjective + noun is fine when the adverb modifies the adjective inside the noun phrase. It was such a poorly printed map that hikers took wrong turns — the whole noun phrase still sits after such.\n",
+        "**E) The hills are too steep for the juniors finish before dusk.**\n\n** For + object needs to before the verb.\n\nTrap: Missing to before the infinitive: write too steep for the juniors to finish before dusk. For + object needs to before the verb.\n"
       ],
       "highlights": [
         "so fierce as that",
@@ -440,11 +440,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) Practice stopped because the heat became so intense.**  (true)\n\nSo + adjective can stand without a that-clause when the result is implied by context. Practice stopped because the heat became so intense — that-clause is common but not obligatory.\n\n**Tip:** That-clause is common but not obligatory after so/such/too/enough.",
-        "**B) Practice stopped because the heat became such intense.**  (false)\n\nTrap: Such intense needs a noun (such intense heat) or a switch to so intense. After become, prefer so + adjective for a subject complement.\n\n**Tip:** After become, prefer so + adjective.",
-        "**C) The clause is worded carefully enough to avoid confusion.**  (true)\n\nCarefully enough places enough after the adverb modifying how the clause is worded. The clause is worded carefully enough to avoid confusion works like adj + enough + to…\n\n**Tip:** Adv + enough + to… works like adj + enough.",
-        "**D) There were too few lifeguards to watch every lane.**  (true)\n\nToo few + plural noun expresses insufficiency — an excess of scarcity. There were too few lifeguards to watch every lane is grammatical and means roughly not enough lifeguards.\n\n**Tip:** Too few ≈ not enough; grammar differs from too much + adj.",
-        "**E) The gallery hung so few paintings that the room felt empty.**  (true)\n\nSo few + plural noun + that is grammatical and parallel to so many. The gallery hung so few paintings that the room felt empty pairs few with a plural count noun under so.\n\n**Tip:** Few/little pair with so the same way many/much do."
+        "**A) Practice stopped because the heat became so intense.**\n\nSo + adjective can stand without a that-clause when the result is implied by context. Practice stopped because the heat became so intense — that-clause is common but not obligatory.\n",
+        "**B) Practice stopped because the heat became such intense.**\n\n** After become, prefer so + adjective.\n\nTrap: Such intense needs a noun (such intense heat) or a switch to so intense. After become, prefer so + adjective for a subject complement.\n",
+        "**C) The clause is worded carefully enough to avoid confusion.**\n\nCarefully enough places enough after the adverb modifying how the clause is worded. The clause is worded carefully enough to avoid confusion works like adj + enough + to…\n",
+        "**D) There were too few lifeguards to watch every lane.**\n\nToo few + plural noun expresses insufficiency — an excess of scarcity. There were too few lifeguards to watch every lane is grammatical and means roughly not enough lifeguards.\n",
+        "**E) The gallery hung so few paintings that the room felt empty.**\n\nSo few + plural noun + that is grammatical and parallel to so many. The gallery hung so few paintings that the room felt empty pairs few with a plural count noun under so.\n"
       ],
       "highlights": [
         "so intense",
@@ -478,11 +478,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The rule is such that latecomers wait for the next tour.**  (true)\n\nSuch that meaning \"of a kind that\" is a fixed formal pattern without an adjective after such. The rule is such that latecomers wait for the next tour means the nature of the rule produces that outcome.\n\n**Tip:** Noun + is such that… = the nature of X means…",
-        "**B) The rule is so that latecomers wait for the next tour.**  (false)\n\nTrap: So that expresses purpose (\"in order that\"), not the \"of a kind that\" reading. Here such that is required if you mean the rule's character.\n\n**Tip:** So that ≠ such that; different jobs.",
-        "**C) Runners pulled out, the course having become too muddy to race.**  (true)\n\nToo + adjective + to-infinitive inside a participial absolute is still grammatical. Runners pulled out, the course having become too muddy to race keeps the too…to shape in a reduced clause.\n\n**Tip:** Too…to… keeps its shape in reduced clauses.",
-        "**D) She left enough of a gap to let the next cyclist pass.**  (true)\n\nEnough of a + singular countable noun is idiomatic. She left enough of a gap to let the next cyclist pass — of a(n) before the singular count noun is the natural frame.\n\n**Tip:** Enough of a gap / enough of an issue — of a(n) before singular count nouns.",
-        "**E) The trail is not enough marked for night walking.**  (false)\n\nTrap: Marked is adjectival here, so write not marked enough, not not enough marked. Flip enough after the adjective even under negation.\n\n**Tip:** Flip enough after adjectives even with not."
+        "**A) The rule is such that latecomers wait for the next tour.**\n\nSuch that meaning \"of a kind that\" is a fixed formal pattern without an adjective after such. The rule is such that latecomers wait for the next tour means the nature of the rule produces that outcome.\n",
+        "**B) The rule is so that latecomers wait for the next tour.**\n\n** So that ≠ such that; different jobs.\n\nTrap: So that expresses purpose (\"in order that\"), not the \"of a kind that\" reading. Here such that is required if you mean the rule's character.\n",
+        "**C) Runners pulled out, the course having become too muddy to race.**\n\nToo + adjective + to-infinitive inside a participial absolute is still grammatical. Runners pulled out, the course having become too muddy to race keeps the too…to shape in a reduced clause.\n",
+        "**D) She left enough of a gap to let the next cyclist pass.**\n\nEnough of a + singular countable noun is idiomatic. She left enough of a gap to let the next cyclist pass — of a(n) before the singular count noun is the natural frame.\n",
+        "**E) The trail is not enough marked for night walking.**\n\n** Flip enough after adjectives even with not.\n\nTrap: Marked is adjectival here, so write not marked enough, not not enough marked. Flip enough after the adjective even under negation.\n"
       ],
       "highlights": [
         "such that",
@@ -516,11 +516,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) Attendance fell so low as volunteers began cancelling shifts.**  (false)\n\nTrap: So…as without to needs a different reading; here a result clause should use that (or so low as to cause…). So adj as + finite clause is not standard for result.\n\n**Tip:** So adj as + finite clause is not standard for result.",
-        "**B) Attendance fell so low that volunteers began cancelling shifts.**  (true)\n\nSo + adjective + that correctly states the result. Attendance fell so low that volunteers began cancelling shifts is the default result pattern.\n\n**Tip:** Default result linker after so/such is that.",
-        "**C) The visa proved too costly a requirement for the exchange student.**  (true)\n\nToo + adjective + a + noun (+ for…) is grammatical formal English. The visa proved too costly a requirement for the exchange student ≈ an excessively costly requirement.\n\n**Tip:** Too costly a requirement ≈ an excessively costly requirement.",
-        "**D) We cannot cook without such spices as the recipe lists.**  (true)\n\nSuch…as meaning \"the kind that\" with a relative-like clause is correct. We cannot cook without such spices as the recipe lists = the spices that the recipe lists.\n\n**Tip:** Such spices as X lists = the spices that X lists.",
-        "**E) The rebuild was enough extensive that the gallery closed for a year.**  (false)\n\nTrap: Enough extensive reverses order; need extensive enough that…. Enough never precedes the adjective in this frame.\n\n**Tip:** Enough never precedes the adjective in this frame."
+        "**A) Attendance fell so low as volunteers began cancelling shifts.**\n\n** So adj as + finite clause is not standard for result.\n\nTrap: So…as without to needs a different reading; here a result clause should use that (or so low as to cause…). So adj as + finite clause is not standard for result.\n",
+        "**B) Attendance fell so low that volunteers began cancelling shifts.**\n\nSo + adjective + that correctly states the result. Attendance fell so low that volunteers began cancelling shifts is the default result pattern.\n",
+        "**C) The visa proved too costly a requirement for the exchange student.**\n\nToo + adjective + a + noun (+ for…) is grammatical formal English. The visa proved too costly a requirement for the exchange student ≈ an excessively costly requirement.\n",
+        "**D) We cannot cook without such spices as the recipe lists.**\n\nSuch…as meaning \"the kind that\" with a relative-like clause is correct. We cannot cook without such spices as the recipe lists = the spices that the recipe lists.\n",
+        "**E) The rebuild was enough extensive that the gallery closed for a year.**\n\n** Enough never precedes the adjective in this frame.\n\nTrap: Enough extensive reverses order; need extensive enough that…. Enough never precedes the adjective in this frame.\n"
       ],
       "highlights": [
         "so low as volunteers",
@@ -554,11 +554,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The playlist was so arranged as to build toward the finale.**  (true)\n\nSo + past participle/adjective + as to + infinitive expresses designed result. The playlist was so arranged as to build toward the finale = arranged in such a way that it built toward the finale.\n\n**Tip:** So arranged as to… = arranged in such a way that…",
-        "**B) Cash on hand is barely enough for bus fare, let alone a taxi.**  (true)\n\nEnough for + noun works; barely intensifies sufficiency without breaking grammar. Cash on hand is barely enough for bus fare, let alone a taxi keeps enough in its quantity/sufficiency role.\n\n**Tip:** Modifiers like barely/almost can precede enough.",
-        "**C) It was too little time remaining to rehearse the second act.**  (false)\n\nTrap: It was too little time is awkward/wrong for this quantity reading. Prefer there was / we had too little time, or too little time remained.\n\n**Tip:** Watch dummy it with quantity noun phrases.",
-        "**D) There was too little time remaining to rehearse the second act.**  (true)\n\nThere was too little + uncountable noun (+ to…) is the natural existential pattern. There was too little time remaining to rehearse the second act frames the shortage cleanly.\n\n**Tip:** Prefer there-insertion with too little/much + noun.",
-        "**E) The dish became such favourite with locals that tourists queued daily.**  (false)\n\nTrap: Needs an article: such a favourite with… (or so popular with…). Countable singular after such almost always needs a/an.\n\n**Tip:** Countable singular after such almost always needs a/an."
+        "**A) The playlist was so arranged as to build toward the finale.**\n\nSo + past participle/adjective + as to + infinitive expresses designed result. The playlist was so arranged as to build toward the finale = arranged in such a way that it built toward the finale.\n",
+        "**B) Cash on hand is barely enough for bus fare, let alone a taxi.**\n\nEnough for + noun works; barely intensifies sufficiency without breaking grammar. Cash on hand is barely enough for bus fare, let alone a taxi keeps enough in its quantity/sufficiency role.\n\n**Tip:** ** Modifiers like barely/almost can precede enough.\n",
+        "**C) It was too little time remaining to rehearse the second act.**\n\n** Watch dummy it with quantity noun phrases.\n\nTrap: It was too little time is awkward/wrong for this quantity reading. Prefer there was / we had too little time, or too little time remained.\n",
+        "**D) There was too little time remaining to rehearse the second act.**\n\nThere was too little + uncountable noun (+ to…) is the natural existential pattern. There was too little time remaining to rehearse the second act frames the shortage cleanly.\n\n**Tip:** ** Prefer there-insertion with too little/much + noun.\n",
+        "**E) The dish became such favourite with locals that tourists queued daily.**\n\n** Countable singular after such almost always needs a/an.\n\nTrap: Needs an article: such a favourite with… (or so popular with…). Countable singular after such almost always needs a/an.\n"
       ],
       "highlights": [
         "so arranged as to",
@@ -592,11 +592,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The experiment is designed such that temperature stays constant.**  (true)\n\nDesigned such that… means \"in such a way that\" and is standard in scientific English. The experiment is designed such that temperature stays constant is a normal lab-register pattern.\n\n**Tip:** Verb + such that ≈ configured so that.",
-        "**B) The experiment is designed so that temperature stays constant.**  (true)\n\nDesigned so that… expressing purpose/result is also grammatical. Here so that and such that can both work, with so that leaning slightly more toward intended purpose.\n\n**Tip:** Here so that and such that can both work with slightly different nuance.",
-        "**C) The dough proved elastic enough that it stretched without tearing.**  (true)\n\nAdjective + enough + that-clause is acceptable. The dough proved elastic enough that it stretched without tearing = sufficiently elastic that it stretched without tearing.\n\n**Tip:** Elastic enough that… = sufficiently elastic that…",
-        "**D) He spoke with so a confident tone that doubts faded.**  (false)\n\nTrap: So a confident tone is wrong; use such a confident tone or so confidently that…. So a… returns as a trap even inside longer noun phrases.\n\n**Tip:** So a… returns as a trap even in longer NPs.",
-        "**E) We kept the talk short enough not to overrun the lunch break.**  (true)\n\nAdjective + enough + not to-infinitive correctly encodes avoidance. We kept the talk short enough not to overrun the lunch break = sufficiently short to avoid overrunning.\n\n**Tip:** Enough not to… = sufficiently… to avoid…"
+        "**A) The experiment is designed such that temperature stays constant.**\n\nDesigned such that… means \"in such a way that\" and is standard in scientific English. The experiment is designed such that temperature stays constant is a normal lab-register pattern.\n\n**Tip:** ** Verb + such that ≈ configured so that.\n",
+        "**B) The experiment is designed so that temperature stays constant.**\n\nDesigned so that… expressing purpose/result is also grammatical. Here so that and such that can both work, with so that leaning slightly more toward intended purpose.\n",
+        "**C) The dough proved elastic enough that it stretched without tearing.**\n\nAdjective + enough + that-clause is acceptable. The dough proved elastic enough that it stretched without tearing = sufficiently elastic that it stretched without tearing.\n",
+        "**D) He spoke with so a confident tone that doubts faded.**\n\n** So a… returns as a trap even in longer NPs.\n\nTrap: So a confident tone is wrong; use such a confident tone or so confidently that…. So a… returns as a trap even inside longer noun phrases.\n",
+        "**E) We kept the talk short enough not to overrun the lunch break.**\n\nAdjective + enough + not to-infinitive correctly encodes avoidance. We kept the talk short enough not to overrun the lunch break = sufficiently short to avoid overrunning.\n"
       ],
       "highlights": [
         "designed such that",
@@ -630,11 +630,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) Seldom is a coastline so eroded that no beach remains.**  (true)\n\nInversion with seldom does not break the inner so…that pattern. Seldom is a coastline so eroded that no beach remains — evaluate the so…that core as true.\n\n**Tip:** Judge the so/such/too/enough core even inside inversion shells.",
-        "**B) The tent proved insufficiently sturdy enough to survive the gale.**  (false)\n\nTrap: Insufficiently sturdy enough doubles the sufficiency marker. Use insufficiently sturdy or not sturdy enough — not both in one adjective phrase.\n\n**Tip:** One sufficiency tool per adjective phrase.",
-        "**C) Her complaint was not so much unfair as poorly timed.**  (true)\n\nNot so much X as Y is an established correlative; so is required in this idiom. Her complaint was not so much unfair as poorly timed is grammatical even though this is not ordinary so + adjective intensification.\n\n**Tip:** Not so much…as… ≠ ordinary so + adjective, but it is grammatical.",
-        "**D) The delay was such that, had we waited, the concert would have started.**  (true)\n\nSuch that introducing a counterfactual continuation is formal and correct. The delay was such that, had we waited, the concert would have started — such that can host complex follow-ons, including inverted conditionals.\n\n**Tip:** Such that can host complex follow-ons, including inverted conditionals.",
-        "**E) They priced the tickets too steeply for students to attend weekly.**  (true)\n\nToo + adverb + for + noun + to-infinitive marks excess manner or cost. They priced the tickets too steeply for students to attend weekly parallels too steep for X to V, with the adverb modifying the verb priced.\n\n**Tip:** Too steeply for X to V parallels too steep for X to V (adv vs adj depends on what is modified)."
+        "**A) Seldom is a coastline so eroded that no beach remains.**\n\nInversion with seldom does not break the inner so…that pattern. Seldom is a coastline so eroded that no beach remains — evaluate the so…that core as true.\n\n**Tip:** ** Judge the so/such/too/enough core even inside inversion shells.\n",
+        "**B) The tent proved insufficiently sturdy enough to survive the gale.**\n\n** One sufficiency tool per adjective phrase.\n\nTrap: Insufficiently sturdy enough doubles the sufficiency marker. Use insufficiently sturdy or not sturdy enough — not both in one adjective phrase.\n",
+        "**C) Her complaint was not so much unfair as poorly timed.**\n\nNot so much X as Y is an established correlative; so is required in this idiom. Her complaint was not so much unfair as poorly timed is grammatical even though this is not ordinary so + adjective intensification.\n",
+        "**D) The delay was such that, had we waited, the concert would have started.**\n\nSuch that introducing a counterfactual continuation is formal and correct. The delay was such that, had we waited, the concert would have started — such that can host complex follow-ons, including inverted conditionals.\n",
+        "**E) They priced the tickets too steeply for students to attend weekly.**\n\nToo + adverb + for + noun + to-infinitive marks excess manner or cost. They priced the tickets too steeply for students to attend weekly parallels too steep for X to V, with the adverb modifying the verb priced.\n\n**Tip:** ** Too steeply for X to V parallels too steep for X to V (adv vs adj depends on what is modified).\n"
       ],
       "highlights": [
         "so eroded that",
@@ -668,11 +668,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) No other runner moved so swiftly as to claim the lead overnight.**  (true)\n\nSo + adverb + as to + infinitive correctly states result after a comparative frame. No other runner moved so swiftly as to claim the lead overnight — so…as to… works with adverbs as well as adjectives.\n\n**Tip:** So…as to… works with adverbs as well as adjectives.",
-        "**B) No other runner moved such swiftly as to claim the lead overnight.**  (false)\n\nTrap: Such does not modify adverbs; such swiftly is impossible. Switch to so swiftly as to… or restructure with a noun phrase under such.\n\n**Tip:** Such → noun phrases only (or such that).",
-        "**C) The rule is drawn tightly enough that substitutions need consent.**  (true)\n\nAdverb/adjective + enough + that remains grammatical in careful register. The rule is drawn tightly enough that substitutions need consent = sufficiently tightly that…\n\n**Tip:** Tightly enough that… = sufficiently tightly that…",
-        "**D) We had rather too little daylight for a full summit attempt.**  (true)\n\nRather too + adjective/determiner phrase is idiomatic mild criticism. We had rather too little daylight for a full summit attempt — rather/a bit/far can modify too.\n\n**Tip:** Rather/a bit/far can modify too.",
-        "**E) The interface was so intuitive a design as users needed no tutorial.**  (false)\n\nTrap: So intuitive a design as + finite clause mismatches. Use so intuitive a design that…, or so intuitive that…, or so intuitive as to need… — so adj a noun pairs with that or as to, not bare as + clause.\n\n**Tip:** So adj a noun pairs with that or as to, not bare as + clause."
+        "**A) No other runner moved so swiftly as to claim the lead overnight.**\n\nSo + adverb + as to + infinitive correctly states result after a comparative frame. No other runner moved so swiftly as to claim the lead overnight — so…as to… works with adverbs as well as adjectives.\n",
+        "**B) No other runner moved such swiftly as to claim the lead overnight.**\n\n** Such → noun phrases only (or such that).\n\nTrap: Such does not modify adverbs; such swiftly is impossible. Switch to so swiftly as to… or restructure with a noun phrase under such.\n",
+        "**C) The rule is drawn tightly enough that substitutions need consent.**\n\nAdverb/adjective + enough + that remains grammatical in careful register. The rule is drawn tightly enough that substitutions need consent = sufficiently tightly that…\n",
+        "**D) We had rather too little daylight for a full summit attempt.**\n\nRather too + adjective/determiner phrase is idiomatic mild criticism. We had rather too little daylight for a full summit attempt — rather/a bit/far can modify too.\n",
+        "**E) The interface was so intuitive a design as users needed no tutorial.**\n\n** So adj a noun pairs with that or as to, not bare as + clause.\n\nTrap: So intuitive a design as + finite clause mismatches. Use so intuitive a design that…, or so intuitive that…, or so intuitive as to need… — so adj a noun pairs with that or as to, not bare as + clause.\n"
       ],
       "highlights": [
         "so swiftly as to",
@@ -706,11 +706,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) Only then did the river become high enough for kayaking to look safe.**  (true)\n\nInversion only then did… leaves high enough for… intact and grammatical. Only then did the river become high enough for kayaking to look safe — embedded enough patterns survive fronting and inversion.\n\n**Tip:** Embedded enough patterns survive fronting and inversion.",
-        "**B) The study was based on so biased a sample that the conclusions collapsed.**  (true)\n\nSo + adjective + a + noun + that is the formal pattern even inside a prepositional phrase. The study was based on so biased a sample that the conclusions collapsed = such a biased sample in meaning.\n\n**Tip:** So biased a sample = such a biased sample.",
-        "**C) The study was based on such biased a sample that the conclusions collapsed.**  (false)\n\nTrap: Such biased a sample mis-orders the article; need such a biased sample (article before the adjective). Never write such adj a noun.\n\n**Tip:** Such a + adj + noun, never such adj a noun.",
-        "**D) Supplies look healthy enough; still, they may prove too thin under strain.**  (true)\n\nTwo coordinated judgments: adjective + enough, and too + adjective, both well formed. Supplies look healthy enough; still, they may prove too thin under strain — enough and too can contrast without clashing.\n\n**Tip:** Enough and too can contrast in one sentence without clashing.",
-        "**E) He is too much of a perfectionist to submit an unfinished draft.**  (true)\n\nToo much of a + noun + to-infinitive is a fixed evaluative idiom. He is too much of a perfectionist to submit an unfinished draft = excessively perfectionist-like to submit it unfinished.\n\n**Tip:** Too much of a X to V = excessively X-like to V."
+        "**A) Only then did the river become high enough for kayaking to look safe.**\n\nInversion only then did… leaves high enough for… intact and grammatical. Only then did the river become high enough for kayaking to look safe — embedded enough patterns survive fronting and inversion.\n",
+        "**B) The study was based on so biased a sample that the conclusions collapsed.**\n\nSo + adjective + a + noun + that is the formal pattern even inside a prepositional phrase. The study was based on so biased a sample that the conclusions collapsed = such a biased sample in meaning.\n",
+        "**C) The study was based on such biased a sample that the conclusions collapsed.**\n\n** Such a + adj + noun, never such adj a noun.\n\nTrap: Such biased a sample mis-orders the article; need such a biased sample (article before the adjective). Never write such adj a noun.\n",
+        "**D) Supplies look healthy enough; still, they may prove too thin under strain.**\n\nTwo coordinated judgments: adjective + enough, and too + adjective, both well formed. Supplies look healthy enough; still, they may prove too thin under strain — enough and too can contrast without clashing.\n",
+        "**E) He is too much of a perfectionist to submit an unfinished draft.**\n\nToo much of a + noun + to-infinitive is a fixed evaluative idiom. He is too much of a perfectionist to submit an unfinished draft = excessively perfectionist-like to submit it unfinished.\n"
       ],
       "highlights": [
         "high enough for",
@@ -744,11 +744,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) Had the ice been thick enough, the skaters would have crossed the lake.**  (true)\n\nAdjective + enough inside an inverted third conditional is grammatical. Had the ice been thick enough, the skaters would have crossed the lake — enough stays adjective-final even in had-conditionals.\n\n**Tip:** Enough keeps adjective-final order even in had-conditionals.",
-        "**B) The rehearsal grew so protracted as nobody could finalise the cues.**  (false)\n\nTrap: So…as + finite clause is wrong for result; use so protracted that… or so protracted as to prevent…. Choose as to + infinitive, or that + clause — not as + clause after so + adj.\n\n**Tip:** As to + infinitive, or that + clause — not as + clause after so + adj.",
-        "**C) Whatever the poster promises, service is seldom swift enough to match it.**  (true)\n\nSeldom… enough to… correctly denies sufficiency. Whatever the poster promises, service is seldom swift enough to match it — frequency adverb + enough is fine.\n\n**Tip:** Frequency adverb + enough pattern is fine.",
-        "**D) It remains too early a stage for full automation of bookings.**  (true)\n\nToo + adjective + a + noun (+ for…) is formal but correct. It remains too early a stage for full automation of bookings = an excessively early stage.\n\n**Tip:** Too early a stage = an excessively early stage.",
-        "**E) Their reply was so that we cancelled the booking at once.**  (false)\n\nTrap: So that marks purpose (\"in order that\"), not the nature/result reading needed here. Use such that we cancelled… or Their reply was so blunt that we cancelled…. Reply/situation + such that = character/result; so that = purpose.\n\n**Tip:** Reply/situation + such that = character/result; so that = purpose."
+        "**A) Had the ice been thick enough, the skaters would have crossed the lake.**\n\nAdjective + enough inside an inverted third conditional is grammatical. Had the ice been thick enough, the skaters would have crossed the lake — enough stays adjective-final even in had-conditionals.\n",
+        "**B) The rehearsal grew so protracted as nobody could finalise the cues.**\n\n** As to + infinitive, or that + clause — not as + clause after so + adj.\n\nTrap: So…as + finite clause is wrong for result; use so protracted that… or so protracted as to prevent…. Choose as to + infinitive, or that + clause — not as + clause after so + adj.\n",
+        "**C) Whatever the poster promises, service is seldom swift enough to match it.**\n\nSeldom… enough to… correctly denies sufficiency. Whatever the poster promises, service is seldom swift enough to match it — frequency adverb + enough is fine.\n",
+        "**D) It remains too early a stage for full automation of bookings.**\n\nToo + adjective + a + noun (+ for…) is formal but correct. It remains too early a stage for full automation of bookings = an excessively early stage.\n",
+        "**E) Their reply was so that we cancelled the booking at once.**\n\n** Reply/situation + such that = character/result; so that = purpose.\n\nTrap: So that marks purpose (\"in order that\"), not the nature/result reading needed here. Use such that we cancelled… or Their reply was so blunt that we cancelled…. Reply/situation + such that = character/result; so that = purpose.\n"
       ],
       "highlights": [
         "thick enough",

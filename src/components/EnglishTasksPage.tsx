@@ -1105,16 +1105,12 @@ function AllExplanationsPanel({
   onClose: () => void;
 }) {
   const letters = "ABCDE";
-  const body = [
-    task.solution_overview?.trim() ?? "",
-    "",
-    ...task.statements.flatMap((stmt, i) => {
+  const body = task.statements
+    .flatMap((stmt, i) => {
       const expl = (task.tactical_explanations[i] ?? "").trim();
       if (expl) return [expl, ""];
-      const verdict = task.answer_key[i] ? "true" : "false";
-      return [`**${letters[i] ?? String(i + 1)}) ${stmt}.**  (${verdict})`, ""];
-    }),
-  ]
+      return [`**${letters[i] ?? String(i + 1)}) ${stmt}.**`, ""];
+    })
     .join("\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
@@ -1137,8 +1133,44 @@ function AllExplanationsPanel({
         </button>
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+        <AnswerKeyTable answerKey={task.answer_key} />
         <ExplanationProse text={body} />
       </div>
+    </div>
+  );
+}
+
+function AnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
+  const letters = "ABCDE";
+  const cols = answerKey.slice(0, 5);
+  return (
+    <div className="mb-8 overflow-x-auto">
+      <table className="w-full min-w-[16rem] border-collapse overflow-hidden rounded-xl border border-foreground/20 text-center text-[14px] shadow-sm">
+        <thead>
+          <tr className="bg-foreground text-background">
+            {cols.map((_, i) => (
+              <th
+                key={i}
+                className="border-b border-foreground/20 px-3 py-2.5 text-[12px] font-bold uppercase tracking-wide"
+              >
+                {letters[i] ?? i + 1}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-card">
+            {cols.map((ok, i) => (
+              <td
+                key={i}
+                className="border-b border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground last:border-b-0"
+              >
+                {ok ? "TRUE" : "FALSE"}
+              </td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

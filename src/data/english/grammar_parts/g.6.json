@@ -22,11 +22,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The neighbour who waters our plants is away this week.**  (true)\n\n\"Who\" correctly refers to a person in a restrictive clause that identifies which neighbour we mean. The clause is essential, so there are no commas, and nothing else tries to occupy the subject slot.\n\n**Tip:** For people in defining clauses, \"who\" or \"that\" both work.",
-        "**B) The recipe which my aunt shared it needs less salt.**  (false)\n\nTrap: leftover \"it\" doubles the object after the relative has already taken that job. Repair: drop \"it\" — \"The recipe which my aunt shared needs less salt.\" One object slot, one filler.\n\n**Tip:** Never leave a second object pronoun after a relative that already stands for it.",
-        "**C) The library who opens on Sundays stays busy all day.**  (false)\n\nTrap: a library is a thing, so \"who\" is the wrong pronoun. Repair: \"The library which/that opens on Sundays stays busy all day.\" Reserve \"who\" for people.\n\n**Tip:** Person → who/that; thing → which/that.",
-        "**D) The bus that stops outside the school leaves at eight.**  (true)\n\nRestrictive \"that\" correctly defines which bus; no commas are needed because the clause is essential to identify it. The relative is the subject of \"stops,\" and the sentence reads cleanly.\n\n**Tip:** No commas means the clause is essential to identify the noun.",
-        "**E) The park, that was closed after the storm, reopens tomorrow.**  (false)\n\nTrap: after commas (non-restrictive), exam English wants \"which,\" not \"that.\" Repair: \"The park, which was closed after the storm, reopens tomorrow.\" Commas signal extra information — and \"that\" is not welcome there.\n\n**Tip:** Commas + thing → which; commas ban \"that.\""
+        "**A) The neighbour who waters our plants is away this week.**\n\n\"Who\" correctly refers to a person in a restrictive clause that identifies which neighbour we mean. The clause is essential, so there are no commas, and nothing else tries to occupy the subject slot.\n",
+        "**B) The recipe which my aunt shared it needs less salt.**\n\nleftover \"it\" doubles the object after the relative has already taken that job. Repair: drop \"it\" — \"The recipe which my aunt shared needs less salt.\" One object slot, one filler.\n",
+        "**C) The library who opens on Sundays stays busy all day.**\n\na library is a thing, so \"who\" is the wrong pronoun. Repair: \"The library which/that opens on Sundays stays busy all day.\" Reserve \"who\" for people.\n",
+        "**D) The bus that stops outside the school leaves at eight.**\n\nRestrictive \"that\" correctly defines which bus; no commas are needed because the clause is essential to identify it. The relative is the subject of \"stops,\" and the sentence reads cleanly.\n",
+        "**E) The park, that was closed after the storm, reopens tomorrow.**\n\nafter commas (non-restrictive), exam English wants \"which,\" not \"that.\" Repair: \"The park, which was closed after the storm, reopens tomorrow.\" Commas signal extra information — and \"that\" is not welcome there.\n"
       ],
       "highlights": [
         "who waters",
@@ -60,11 +60,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The chef whose soup won the contest teaches on Saturdays.**  (true)\n\n\"Whose\" correctly shows possession: the soup belongs to the chef. You could rephrase as \"the chef's soup,\" which is exactly what \"whose\" encodes in a relative clause.\n\n**Tip:** If you can rephrase as \"X's Y,\" you almost always want \"whose.\"",
-        "**B) The cyclist who's helmet cracked bought a new one.**  (false)\n\nTrap: \"who's\" expands to \"who is,\" so \"who's helmet\" would mean \"who is helmet\" — nonsense. Repair: \"The cyclist whose helmet cracked bought a new one.\" You need possession, not a contraction.\n\n**Tip:** \"Who's\" = who is / who has; \"whose\" = of whom / of which.",
-        "**C) The concert, which sold out in an hour, starts at seven.**  (true)\n\nNon-restrictive \"which\" with commas correctly adds non-essential detail about a known concert. The commas tell you the clause is extra information, so \"which\" is the right pronoun for a thing.\n\n**Tip:** Extra information between commas takes \"which\" for things, never \"that.\"",
-        "**D) The students that organised the bake sale raised enough for the trip.**  (true)\n\nRestrictive \"that\" for people is acceptable in defining clauses that identify which students. The clause is essential, so there are no commas, and the grammar stands as written.\n\n**Tip:** In defining clauses about people, \"who\" sounds slightly more formal than \"that,\" but both are fine.",
-        "**E) The garage, who stores our bikes, needs a new lock.**  (false)\n\nTrap: a garage is not a person, so \"who\" is wrong. Repair: \"The garage, which stores our bikes, needs a new lock.\" Places and buildings take \"which,\" not \"who.\"\n\n**Tip:** Buildings and places → which."
+        "**A) The chef whose soup won the contest teaches on Saturdays.**\n\n\"Whose\" correctly shows possession: the soup belongs to the chef. You could rephrase as \"the chef's soup,\" which is exactly what \"whose\" encodes in a relative clause.\n",
+        "**B) The cyclist who's helmet cracked bought a new one.**\n\n\"who's\" expands to \"who is,\" so \"who's helmet\" would mean \"who is helmet\" — nonsense. Repair: \"The cyclist whose helmet cracked bought a new one.\" You need possession, not a contraction.\n",
+        "**C) The concert, which sold out in an hour, starts at seven.**\n\nNon-restrictive \"which\" with commas correctly adds non-essential detail about a known concert. The commas tell you the clause is extra information, so \"which\" is the right pronoun for a thing.\n",
+        "**D) The students that organised the bake sale raised enough for the trip.**\n\nRestrictive \"that\" for people is acceptable in defining clauses that identify which students. The clause is essential, so there are no commas, and the grammar stands as written.\n",
+        "**E) The garage, who stores our bikes, needs a new lock.**\n\na garage is not a person, so \"who\" is wrong. Repair: \"The garage, which stores our bikes, needs a new lock.\" Places and buildings take \"which,\" not \"who.\"\n"
       ],
       "highlights": [
         "whose soup",
@@ -98,11 +98,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The festival, that locals love, fills the square each July.**  (false)\n\nTrap: a comma-bound clause must use \"which,\" not \"that.\" Repair: \"The festival, which locals love, fills the square each July.\" The commas already signal that the clause is extra information.\n\n**Tip:** Spot the commas first; they ban \"that\" in careful exam English.",
-        "**B) The tutor whom we hired last autumn still helps on Fridays.**  (true)\n\nFormal \"whom\" correctly marks the object of \"hired\": we hired the tutor, so the relative stands for him/her. The structure is careful exam English and fully grammatical as written.\n\n**Tip:** If the relative would be \"him/her/them,\" \"whom\" is the careful choice.",
-        "**C) The kettle which boils too slowly needs replacing.**  (true)\n\nRestrictive \"which\" correctly defines which kettle; no commas are required because the clause is essential. British formal writing often prefers \"which\" even in defining clauses about things.\n\n**Tip:** Defining clauses about things allow \"which\" or \"that.\"",
-        "**D) The friend who we invited yesterday cannot come after all.**  (true)\n\nInformal object \"who\" is widely accepted here: we invited the friend, and bare \"who\" as object is grammatical in modern usage. Exams may prefer \"whom\" after a preposition, but bare object \"who\" is usually fine.\n\n**Tip:** Without a preceding preposition, object \"who\" is rarely marked wrong.",
-        "**E) The photos that Maya printed them are still on the table.**  (false)\n\nTrap: residual \"them\" doubles the object after \"that\" already stands for the photos. Repair: \"The photos that Maya printed are still on the table.\" The relative already equals the object.\n\n**Tip:** A second object pronoun after the relative is always wrong."
+        "**A) The festival, that locals love, fills the square each July.**\n\na comma-bound clause must use \"which,\" not \"that.\" Repair: \"The festival, which locals love, fills the square each July.\" The commas already signal that the clause is extra information.\n",
+        "**B) The tutor whom we hired last autumn still helps on Fridays.**\n\nFormal \"whom\" correctly marks the object of \"hired\": we hired the tutor, so the relative stands for him/her. The structure is careful exam English and fully grammatical as written.\n",
+        "**C) The kettle which boils too slowly needs replacing.**\n\nRestrictive \"which\" correctly defines which kettle; no commas are required because the clause is essential. British formal writing often prefers \"which\" even in defining clauses about things.\n",
+        "**D) The friend who we invited yesterday cannot come after all.**\n\nInformal object \"who\" is widely accepted here: we invited the friend, and bare \"who\" as object is grammatical in modern usage. Exams may prefer \"whom\" after a preposition, but bare object \"who\" is usually fine.\n",
+        "**E) The photos that Maya printed them are still on the table.**\n\nresidual \"them\" doubles the object after \"that\" already stands for the photos. Repair: \"The photos that Maya printed are still on the table.\" The relative already equals the object.\n"
       ],
       "highlights": [
         "that locals",
@@ -136,11 +136,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The runner who finished first still looked fresh.**  (true)\n\nRestrictive \"who\" correctly identifies the runner; the clause is needed to pick out which person, so there are no commas. The relative is the subject of \"finished,\" and the sentence is a textbook defining clause.\n\n**Tip:** No commas when the clause is needed to pick out which person.",
-        "**B) The map that we borrowed shows every hiking trail.**  (true)\n\nDefining \"that\" correctly restricts which map we borrowed. The relative is the object of \"borrowed,\" which is a standard, fully grammatical pattern for things.\n\n**Tip:** \"That\" is a safe default in restrictive clauses about things.",
-        "**C) The café whose windows face the river stays open late.**  (true)\n\n\"Whose\" can mark possession for things as well as people: \"the café whose windows…\" means \"the café's windows.\" The possessive relative is the right tool here.\n\n**Tip:** \"Whose + noun\" works for inanimate heads in careful English.",
-        "**D) The singer who's opening the show arrives at six.**  (true)\n\n\"Who's\" correctly expands to \"who is\" before \"opening.\" Try the expansion in place — \"the singer who is opening the show\" — and the sentence still works, so the contraction is justified.\n\n**Tip:** If \"who is\" fits, \"who's\" is right.",
-        "**E) The film which the class watched last week was subtitled.**  (true)\n\nRestrictive \"which\" correctly defines the film the class watched. Either \"which\" or \"that\" works in defining clauses about things, and no commas are needed.\n\n**Tip:** Defining thing-clauses: which or that."
+        "**A) The runner who finished first still looked fresh.**\n\nRestrictive \"who\" correctly identifies the runner; the clause is needed to pick out which person, so there are no commas. The relative is the subject of \"finished,\" and the sentence is a textbook defining clause.\n",
+        "**B) The map that we borrowed shows every hiking trail.**\n\nDefining \"that\" correctly restricts which map we borrowed. The relative is the object of \"borrowed,\" which is a standard, fully grammatical pattern for things.\n",
+        "**C) The café whose windows face the river stays open late.**\n\n\"Whose\" can mark possession for things as well as people: \"the café whose windows…\" means \"the café's windows.\" The possessive relative is the right tool here.\n",
+        "**D) The singer who's opening the show arrives at six.**\n\n\"Who's\" correctly expands to \"who is\" before \"opening.\" Try the expansion in place — \"the singer who is opening the show\" — and the sentence still works, so the contraction is justified.\n",
+        "**E) The film which the class watched last week was subtitled.**\n\nRestrictive \"which\" correctly defines the film the class watched. Either \"which\" or \"that\" works in defining clauses about things, and no commas are needed.\n"
       ],
       "highlights": [
         "who finished",
@@ -174,11 +174,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The cousin with whom we share a flat cooks on Sundays.**  (true)\n\nPreposition + \"whom\" is the formal, correct pattern when the cousin is the object of \"with\": we share a flat with the cousin. The structure is polished exam English.\n\n**Tip:** After a preposition, prefer \"whom\" (people) or \"which\" (things), not \"who\" or \"that.\"",
-        "**B) The playlist, that includes every song from the trip, is private.**  (false)\n\nTrap: non-restrictive needs \"which,\" not \"that.\" Repair: \"The playlist, which includes every song from the trip, is private.\" Commas + \"that\" is a classic exam fail.\n\n**Tip:** Commas signal extra information — use which for things.",
-        "**C) Anyone who's keys are missing should check lost property.**  (false)\n\nTrap: possession requires \"whose,\" not the contraction \"who's.\" Repair: \"Anyone whose keys are missing should check lost property.\" \"Who is keys\" is nonsense, so you wanted belonging.\n\n**Tip:** If \"who is keys\" sounds wrong, you wanted \"whose.\"",
-        "**D) The museum which we visited last month displays local pottery.**  (true)\n\nDefining \"which\" correctly identifies the museum we visited. Object relatives can keep \"which/that,\" and the clause is essential, so no commas are required.\n\n**Tip:** Object relatives for things: which/that (or omit the pronoun in informal style).",
-        "**E) The coach that designed the drills will explain them tonight.**  (true)\n\nRestrictive \"that\" for a person is acceptable in a defining clause that identifies which coach. \"Who\" is often preferred for people, but \"that\" is not an error here.\n\n**Tip:** Defining people-clauses: who or that."
+        "**A) The cousin with whom we share a flat cooks on Sundays.**\n\nPreposition + \"whom\" is the formal, correct pattern when the cousin is the object of \"with\": we share a flat with the cousin. The structure is polished exam English.\n",
+        "**B) The playlist, that includes every song from the trip, is private.**\n\nnon-restrictive needs \"which,\" not \"that.\" Repair: \"The playlist, which includes every song from the trip, is private.\" Commas + \"that\" is a classic exam fail.\n",
+        "**C) Anyone who's keys are missing should check lost property.**\n\npossession requires \"whose,\" not the contraction \"who's.\" Repair: \"Anyone whose keys are missing should check lost property.\" \"Who is keys\" is nonsense, so you wanted belonging.\n",
+        "**D) The museum which we visited last month displays local pottery.**\n\nDefining \"which\" correctly identifies the museum we visited. Object relatives can keep \"which/that,\" and the clause is essential, so no commas are required.\n",
+        "**E) The coach that designed the drills will explain them tonight.**\n\nRestrictive \"that\" for a person is acceptable in a defining clause that identifies which coach. \"Who\" is often preferred for people, but \"that\" is not an error here.\n"
       ],
       "highlights": [
         "with whom",
@@ -212,11 +212,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The bakery from which we order bread raised its prices slightly.**  (true)\n\n\"From which\" correctly links a thing after a preposition: we order bread from the bakery. Keeping the preposition with \"which\" is the formal pattern exams reward.\n\n**Tip:** Keep the preposition with \"which/whom\" in formal answers.",
-        "**B) The volunteer whom neighbours praised organised the litter pick.**  (true)\n\n\"Whom\" correctly marks the volunteer as the object of \"praised\": neighbours praised the volunteer. If you can replace the relative with \"him/her,\" \"whom\" is justified.\n\n**Tip:** Object of the relative-clause verb → whom is the careful form.",
-        "**C) The novel that Sam finished last night it still sits on the shelf.**  (false)\n\nTrap: residual \"it\" doubles the object after \"that\" already stands for the novel. Repair: \"The novel that Sam finished last night still sits on the shelf.\" One clause, one object slot.\n\n**Tip:** Never keep both the relative and \"it\" for the same object.",
-        "**D) Brighton, which hosts the festival, fills with visitors in May.**  (true)\n\nNon-restrictive \"which\" correctly adds a known fact about Brighton. Place names with commas almost always take \"which,\" not \"that,\" because the clause is extra information about an already-named city.\n\n**Tip:** Place names + commas → which.",
-        "**E) The friends who cake the party brought later left early.**  (false)\n\nTrap: word order inside the relative collapses — \"who cake the party brought\" is not English. Repair: \"The friends who brought the party cake later left early.\" Keep the clause's internal order like a normal statement after the relative.\n\n**Tip:** Subject–verb–object order still applies inside the relative clause."
+        "**A) The bakery from which we order bread raised its prices slightly.**\n\n\"From which\" correctly links a thing after a preposition: we order bread from the bakery. Keeping the preposition with \"which\" is the formal pattern exams reward.\n",
+        "**B) The volunteer whom neighbours praised organised the litter pick.**\n\n\"Whom\" correctly marks the volunteer as the object of \"praised\": neighbours praised the volunteer. If you can replace the relative with \"him/her,\" \"whom\" is justified.\n",
+        "**C) The novel that Sam finished last night it still sits on the shelf.**\n\nresidual \"it\" doubles the object after \"that\" already stands for the novel. Repair: \"The novel that Sam finished last night still sits on the shelf.\" One clause, one object slot.\n",
+        "**D) Brighton, which hosts the festival, fills with visitors in May.**\n\nNon-restrictive \"which\" correctly adds a known fact about Brighton. Place names with commas almost always take \"which,\" not \"that,\" because the clause is extra information about an already-named city.\n",
+        "**E) The friends who cake the party brought later left early.**\n\nword order inside the relative collapses — \"who cake the party brought\" is not English. Repair: \"The friends who brought the party cake later left early.\" Keep the clause's internal order like a normal statement after the relative.\n"
       ],
       "highlights": [
         "from which",
@@ -250,11 +250,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The neighbour to whom the parcel was delivered signed for it.**  (true)\n\n\"To whom\" is the formal object pattern after a preposition: the parcel was delivered to the neighbour. Preposition + whom is almost always safe for people in exam English.\n\n**Tip:** Preposition + person-relative → whom.",
-        "**B) The suitcase who's zip is broken stays in the loft.**  (false)\n\nTrap: a suitcase's zip needs \"whose,\" not \"who's.\" Repair: \"The suitcase whose zip is broken stays in the loft.\" \"Who's\" never marks possession — expand it and the error is obvious.\n\n**Tip:** Expand \"who's\"; if \"who is\" fails, try \"whose.\"",
-        "**C) Drivers whose licences have expired must renew them online.**  (true)\n\n\"Whose\" correctly marks possession for people in a defining clause: drivers' licences have expired. The pattern works with plural noun heads just as with singular.\n\n**Tip:** \"Whose\" works with plural heads.",
-        "**D) The beach that we walked along at dusk was almost empty.**  (true)\n\nRestrictive \"that\" correctly defines which beach we walked along. Object \"that/which\" can often be omitted in informal style (\"The beach we walked along…\"), but keeping \"that\" is fully correct.\n\n**Tip:** Defining place-clauses: that/which.",
-        "**E) The headteacher, that announced the trip, answered questions calmly.**  (false)\n\nTrap: non-restrictive about a person needs \"who,\" not \"that.\" Repair: \"The headteacher, who announced the trip, answered questions calmly.\" Commas + person → who; commas + thing → which; never that.\n\n**Tip:** Title or name + commas still bans \"that.\""
+        "**A) The neighbour to whom the parcel was delivered signed for it.**\n\n\"To whom\" is the formal object pattern after a preposition: the parcel was delivered to the neighbour. Preposition + whom is almost always safe for people in exam English.\n",
+        "**B) The suitcase who's zip is broken stays in the loft.**\n\na suitcase's zip needs \"whose,\" not \"who's.\" Repair: \"The suitcase whose zip is broken stays in the loft.\" \"Who's\" never marks possession — expand it and the error is obvious.\n",
+        "**C) Drivers whose licences have expired must renew them online.**\n\n\"Whose\" correctly marks possession for people in a defining clause: drivers' licences have expired. The pattern works with plural noun heads just as with singular.\n",
+        "**D) The beach that we walked along at dusk was almost empty.**\n\nRestrictive \"that\" correctly defines which beach we walked along. Object \"that/which\" can often be omitted in informal style (\"The beach we walked along…\"), but keeping \"that\" is fully correct.\n",
+        "**E) The headteacher, that announced the trip, answered questions calmly.**\n\nnon-restrictive about a person needs \"who,\" not \"that.\" Repair: \"The headteacher, who announced the trip, answered questions calmly.\" Commas + person → who; commas + thing → which; never that.\n"
       ],
       "highlights": [
         "to whom",
@@ -288,11 +288,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The email which Jess sent yesterday still needs a reply.**  (true)\n\nDefining \"which\" correctly identifies the email Jess sent. Subject or object relatives both allow \"which/that\" for things, and no commas are needed here.\n\n**Tip:** Thing + defining clause → which or that.",
-        "**B) The author of who the novel was written declined the interview.**  (false)\n\nTrap: after a preposition referring to a person, use \"whom,\" not \"who.\" Repair: \"The author of whom the novel was written declined the interview\" (or, more naturally, rephrase to avoid the awkward passive relative). \"Of who\" is almost never correct.\n\n**Tip:** Preposition + person → whom.",
-        "**C) The bridge that crosses the canal is closed for repairs.**  (true)\n\nRestrictive \"that\" correctly defines the bridge that crosses the canal. No commas appear because the clause picks out which bridge, and the grammar is clean.\n\n**Tip:** No commas when the clause picks out which bridge.",
-        "**D) Guests which arrive early may wait in the lobby.**  (false)\n\nTrap: guests are people, so \"which\" is the wrong pronoun. Repair: \"Guests who/that arrive early may wait in the lobby.\" \"Which\" for people is a strong red flag in exam marking.\n\n**Tip:** People → who/that, never which.",
-        "**E) The trainer whose tips improved my serve will join practice.**  (true)\n\n\"Whose tips\" correctly shows possession: the tips belong to the trainer. \"Whose + noun\" is the clean possessive relative pattern for people (and things).\n\n**Tip:** \"Whose + noun\" = belonging."
+        "**A) The email which Jess sent yesterday still needs a reply.**\n\nDefining \"which\" correctly identifies the email Jess sent. Subject or object relatives both allow \"which/that\" for things, and no commas are needed here.\n",
+        "**B) The author of who the novel was written declined the interview.**\n\nafter a preposition referring to a person, use \"whom,\" not \"who.\" Repair: \"The author of whom the novel was written declined the interview\" (or, more naturally, rephrase to avoid the awkward passive relative). \"Of who\" is almost never correct.\n",
+        "**C) The bridge that crosses the canal is closed for repairs.**\n\nRestrictive \"that\" correctly defines the bridge that crosses the canal. No commas appear because the clause picks out which bridge, and the grammar is clean.\n",
+        "**D) Guests which arrive early may wait in the lobby.**\n\nguests are people, so \"which\" is the wrong pronoun. Repair: \"Guests who/that arrive early may wait in the lobby.\" \"Which\" for people is a strong red flag in exam marking.\n",
+        "**E) The trainer whose tips improved my serve will join practice.**\n\n\"Whose tips\" correctly shows possession: the tips belong to the trainer. \"Whose + noun\" is the clean possessive relative pattern for people (and things).\n"
       ],
       "highlights": [
         "which Jess sent",
@@ -326,11 +326,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The notes, which the lecturer circulated, summarise the chapter.**  (true)\n\nNon-restrictive \"which\" correctly adds information about known notes. If you remove the clause, \"The notes summarise the chapter\" still names a clear noun, so commas + \"which\" are justified.\n\n**Tip:** Removable clause → commas + which for things.",
-        "**B) The applicant whom the panel interviewed withdrew this morning.**  (true)\n\nObject \"whom\" correctly follows because the panel interviewed the applicant. Swap in \"him/her\": if that fits, \"whom\" is justified, and the sentence is careful exam English.\n\n**Tip:** Him/her test → whom.",
-        "**C) Anyone who's still outside should come in before the rain.**  (true)\n\n\"Who's\" equals \"who is\" before \"still outside.\" Expand the contraction in place — \"Anyone who is still outside…\" — and the sentence still works, so keep \"who's.\"\n\n**Tip:** Expand first; keep \"who's\" only if \"who is/has\" fits.",
-        "**D) The app that tracks sleep was updated overnight.**  (true)\n\nRestrictive \"that\" correctly defines the app that tracks sleep. Everyday tech nouns follow the same who/which/that rules as any other thing.\n\n**Tip:** Apps and devices are things → that/which.",
-        "**E) The room in which the rehearsal takes place is on the second floor.**  (true)\n\n\"In which\" is the formal relative after a preposition for a place: the rehearsal takes place in the room. Formal writing prefers \"in which\" over a stranded preposition, though both can be grammatical.\n\n**Tip:** Formal place relative → in/at/on which."
+        "**A) The notes, which the lecturer circulated, summarise the chapter.**\n\nNon-restrictive \"which\" correctly adds information about known notes. If you remove the clause, \"The notes summarise the chapter\" still names a clear noun, so commas + \"which\" are justified.\n",
+        "**B) The applicant whom the panel interviewed withdrew this morning.**\n\nObject \"whom\" correctly follows because the panel interviewed the applicant. Swap in \"him/her\": if that fits, \"whom\" is justified, and the sentence is careful exam English.\n",
+        "**C) Anyone who's still outside should come in before the rain.**\n\n\"Who's\" equals \"who is\" before \"still outside.\" Expand the contraction in place — \"Anyone who is still outside…\" — and the sentence still works, so keep \"who's.\"\n",
+        "**D) The app that tracks sleep was updated overnight.**\n\nRestrictive \"that\" correctly defines the app that tracks sleep. Everyday tech nouns follow the same who/which/that rules as any other thing.\n",
+        "**E) The room in which the rehearsal takes place is on the second floor.**\n\n\"In which\" is the formal relative after a preposition for a place: the rehearsal takes place in the room. Formal writing prefers \"in which\" over a stranded preposition, though both can be grammatical.\n"
       ],
       "highlights": [
         "which the lecturer",
@@ -364,11 +364,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The tent, that leaks in heavy rain, stays in the shed.**  (false)\n\nTrap: use \"which\" after commas. Repair: \"The tent, which leaks in heavy rain, stays in the shed.\" Everyday nouns follow the same comma rule as any other thing.\n\n**Tip:** Commas + thing → which.",
-        "**B) The clerk to who complaints should be sent sits at desk four.**  (false)\n\nTrap: after \"to,\" use \"whom,\" not \"who.\" Repair: \"The clerk to whom complaints should be sent sits at desk four.\" Preposition + who is almost always wrong for people.\n\n**Tip:** Preposition + person → whom.",
-        "**C) Jars whose lids lack labels must be checked before use.**  (true)\n\n\"Whose\" correctly marks possession for jars and lids: jars whose lids lack labels. \"Whose\" is fine for inanimate nouns in careful English, not only for people.\n\n**Tip:** Whose works for things too.",
-        "**D) The witness who the lawyer called seemed unsure.**  (true)\n\nObject \"who\" is acceptable in modern usage for the person the lawyer called. Formal style may prefer \"whom,\" but bare \"who\" as object — with no preposition before it — is not marked wrong in most exams.\n\n**Tip:** Bare object who is usually fine; preposition forces whom.",
-        "**E) The recipe on which the cake depends needs soft butter.**  (true)\n\n\"On which\" correctly attaches the preposition to a thing: the cake depends on the recipe. Keep preposition + which together in formal answers.\n\n**Tip:** Formal thing-relative after a preposition → which."
+        "**A) The tent, that leaks in heavy rain, stays in the shed.**\n\n** Commas + thing → which.\n\nTrap: use \"which\" after commas. Repair: \"The tent, which leaks in heavy rain, stays in the shed.\" Everyday nouns follow the same comma rule as any other thing.\n",
+        "**B) The clerk to who complaints should be sent sits at desk four.**\n\n** Preposition + person → whom.\n\nTrap: after \"to,\" use \"whom,\" not \"who.\" Repair: \"The clerk to whom complaints should be sent sits at desk four.\" Preposition + who is almost always wrong for people.\n",
+        "**C) Jars whose lids lack labels must be checked before use.**\n\n\"Whose\" correctly marks possession for jars and lids: jars whose lids lack labels. \"Whose\" is fine for inanimate nouns in careful English, not only for people.\n",
+        "**D) The witness who the lawyer called seemed unsure.**\n\nObject \"who\" is acceptable in modern usage for the person the lawyer called. Formal style may prefer \"whom,\" but bare \"who\" as object — with no preposition before it — is not marked wrong in most exams.\n",
+        "**E) The recipe on which the cake depends needs soft butter.**\n\n\"On which\" correctly attaches the preposition to a thing: the cake depends on the recipe. Keep preposition + which together in formal answers.\n"
       ],
       "highlights": [
         "that leaks",
@@ -402,11 +402,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The teammates with who we share a pitch signed the same form.**  (false)\n\nTrap: use \"whom\" after \"with.\" Repair: \"The teammates with whom we share a pitch signed the same form.\" Any preposition before a person-relative wants \"whom.\"\n\n**Tip:** with/to/for/by + person → whom.",
-        "**B) Edinburgh, which remains our favourite base, hosts the fringe each August.**  (true)\n\nNon-restrictive \"which\" correctly adds a known fact about Edinburgh. City names with commas take \"which,\" not \"that\" or \"who,\" because the place is already identified by name.\n\n**Tip:** Named city + commas → which.",
-        "**C) The folder that Mia flagged contains old photos.**  (true)\n\nDefining \"that\" correctly restricts which folder Mia flagged. Ordinary nouns follow ordinary relative rules, and the clause is essential, so no commas appear.\n\n**Tip:** Defining thing-clause → that/which.",
-        "**D) A classmate who's been seconded to the drama club still joins practice.**  (true)\n\n\"Who's been\" expands to \"who has been,\" a correct present-perfect relative about the classmate. \"Who's\" covers both \"who is\" and \"who has,\" and the expansion fits here.\n\n**Tip:** Who's = who is OR who has — expand to check.",
-        "**E) The prototype, which the lab tested last night, failed the heat check.**  (true)\n\nNon-restrictive \"which\" correctly adds extra detail about an already-identified prototype. If the noun is already clear, commas + \"which\" are the pair for a thing.\n\n**Tip:** Already-identified thing + commas → which."
+        "**A) The teammates with who we share a pitch signed the same form.**\n\n** with/to/for/by + person → whom.\n\nTrap: use \"whom\" after \"with.\" Repair: \"The teammates with whom we share a pitch signed the same form.\" Any preposition before a person-relative wants \"whom.\"\n",
+        "**B) Edinburgh, which remains our favourite base, hosts the fringe each August.**\n\nNon-restrictive \"which\" correctly adds a known fact about Edinburgh. City names with commas take \"which,\" not \"that\" or \"who,\" because the place is already identified by name.\n",
+        "**C) The folder that Mia flagged contains old photos.**\n\nDefining \"that\" correctly restricts which folder Mia flagged. Ordinary nouns follow ordinary relative rules, and the clause is essential, so no commas appear.\n",
+        "**D) A classmate who's been seconded to the drama club still joins practice.**\n\n\"Who's been\" expands to \"who has been,\" a correct present-perfect relative about the classmate. \"Who's\" covers both \"who is\" and \"who has,\" and the expansion fits here.\n",
+        "**E) The prototype, which the lab tested last night, failed the heat check.**\n\nNon-restrictive \"which\" correctly adds extra detail about an already-identified prototype. If the noun is already clear, commas + \"which\" are the pair for a thing.\n"
       ],
       "highlights": [
         "with who",
@@ -440,11 +440,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The guide through whom we booked the tour confirmed the time.**  (true)\n\n\"Through whom\" correctly marks a person after a preposition: we booked the tour through the guide. Booking and arrangement phrases often need \"through/with whom.\"\n\n**Tip:** Arrangement verbs + person → through/with whom.",
-        "**B) Parcels that arrive damaged must be photographed immediately.**  (true)\n\nRestrictive \"that\" correctly defines which parcels arrive damaged. Everyday logistics nouns take the same defining \"that/which\" rules as any other thing.\n\n**Tip:** Defining thing-clause → that.",
-        "**C) The gardener whose allotment we admired stays on until dusk.**  (true)\n\n\"Whose allotment\" correctly shows possession: the allotment belongs to the gardener. \"Whose\" works cleanly before a concrete noun in a defining clause.\n\n**Tip:** Whose + concrete noun = belonging.",
-        "**D) The schedule for which we planned the weekend has changed.**  (true)\n\n\"For which\" correctly attaches the preposition to a thing: we planned the weekend for the schedule. Prefer \"for which\" over informal stranded \"which… for\" in formal answers.\n\n**Tip:** Formal writing keeps the preposition with which.",
-        "**E) Someone who's coat is still hanging here left early.**  (false)\n\nTrap: possession needs \"whose,\" not \"who's.\" Repair: \"Someone whose coat is still hanging here left early.\" \"Who's coat\" expands to \"who is coat\" — never possession.\n\n**Tip:** Who's + noun (possession attempt) → almost always replace with whose."
+        "**A) The guide through whom we booked the tour confirmed the time.**\n\n\"Through whom\" correctly marks a person after a preposition: we booked the tour through the guide. Booking and arrangement phrases often need \"through/with whom.\"\n",
+        "**B) Parcels that arrive damaged must be photographed immediately.**\n\nRestrictive \"that\" correctly defines which parcels arrive damaged. Everyday logistics nouns take the same defining \"that/which\" rules as any other thing.\n",
+        "**C) The gardener whose allotment we admired stays on until dusk.**\n\n\"Whose allotment\" correctly shows possession: the allotment belongs to the gardener. \"Whose\" works cleanly before a concrete noun in a defining clause.\n",
+        "**D) The schedule for which we planned the weekend has changed.**\n\n\"For which\" correctly attaches the preposition to a thing: we planned the weekend for the schedule. Prefer \"for which\" over informal stranded \"which… for\" in formal answers.\n",
+        "**E) Someone who's coat is still hanging here left early.**\n\n** Who's + noun (possession attempt) → almost always replace with whose.\n\nTrap: possession needs \"whose,\" not \"who's.\" Repair: \"Someone whose coat is still hanging here left early.\" \"Who's coat\" expands to \"who is coat\" — never possession.\n"
       ],
       "highlights": [
         "through whom",
@@ -478,11 +478,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The dentist by whom the filling was done explained the aftercare.**  (true)\n\n\"By whom\" correctly marks the agent in a formal relative: the filling was done by the dentist. The pattern is formal but grammatical, and exams accept it when asked for careful style.\n\n**Tip:** Passive agent + person → by whom.",
-        "**B) Players which miss warm-up cannot start the match.**  (false)\n\nTrap: people need \"who/that,\" not \"which.\" Repair: \"Players who miss warm-up cannot start the match.\" Never use \"which\" for players, guests, or classmates.\n\n**Tip:** Players/guests/classmates → who/that.",
-        "**C) A rule whose wording is unclear should be rewritten.**  (true)\n\n\"Whose wording\" correctly marks possession for a rule: the rule's wording is unclear. Documents and rules commonly take \"whose\" in exam English.\n\n**Tip:** Rules and documents can take whose.",
-        "**D) The hall at which we rehearsed drew a large crowd.**  (true)\n\n\"At which\" correctly attaches the preposition to an event or place: we rehearsed at the hall. Prefer \"at which / in which\" in formal answers when the exam wants the preposition kept with the relative.\n\n**Tip:** Formal place/event → at/in which.",
-        "**E) Anyone who's locker number is faded should ask at reception.**  (false)\n\nTrap: use \"whose,\" not \"who's.\" Repair: \"Anyone whose locker number is faded should ask at reception.\" \"Who's locker\" expands to \"who is locker,\" which never works.\n\n**Tip:** Expand who's; possession → whose."
+        "**A) The dentist by whom the filling was done explained the aftercare.**\n\n\"By whom\" correctly marks the agent in a formal relative: the filling was done by the dentist. The pattern is formal but grammatical, and exams accept it when asked for careful style.\n",
+        "**B) Players which miss warm-up cannot start the match.**\n\n** Players/guests/classmates → who/that.\n\nTrap: people need \"who/that,\" not \"which.\" Repair: \"Players who miss warm-up cannot start the match.\" Never use \"which\" for players, guests, or classmates.\n",
+        "**C) A rule whose wording is unclear should be rewritten.**\n\n\"Whose wording\" correctly marks possession for a rule: the rule's wording is unclear. Documents and rules commonly take \"whose\" in exam English.\n",
+        "**D) The hall at which we rehearsed drew a large crowd.**\n\n\"At which\" correctly attaches the preposition to an event or place: we rehearsed at the hall. Prefer \"at which / in which\" in formal answers when the exam wants the preposition kept with the relative.\n",
+        "**E) Anyone who's locker number is faded should ask at reception.**\n\n** Expand who's; possession → whose.\n\nTrap: use \"whose,\" not \"who's.\" Repair: \"Anyone whose locker number is faded should ask at reception.\" \"Who's locker\" expands to \"who is locker,\" which never works.\n"
       ],
       "highlights": [
         "by whom",
@@ -516,11 +516,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The friend in whom's flat we stayed later moved abroad.**  (false)\n\nTrap: malformed possession — never stack \"whom's.\" Repair: \"The friend in whose flat we stayed later moved abroad.\" After the preposition, use \"whose\" to mark the flat as belonging to the friend.\n\n**Tip:** Preposition + whose (+ noun), never whom's.",
-        "**B) Few of the tools on which the repair depends are in the box.**  (true)\n\n\"On which\" correctly links tools after a preposition: the repair depends on the tools. \"The X on which Y depends\" is a high-value formal pattern worth recognising on sight.\n\n**Tip:** depend on → on which in formal relatives.",
-        "**C) The baker that her sourdough won prizes has closed for a week.**  (false)\n\nTrap: replace \"that her\" with \"whose.\" Repair: \"The baker whose sourdough won prizes has closed for a week.\" \"That + possessive\" always signals a missing \"whose.\"\n\n**Tip:** that her/his/its → whose.",
-        "**D) Neighbours whom the council thanked stayed for photographs.**  (true)\n\nObject \"whom\" correctly refers to the neighbours the council thanked. Subject of the relative clause (\"the council\") + object relative \"whom\" is a clean formal structure.\n\n**Tip:** Verb object is a person → whom is justified.",
-        "**E) The shed where tools are kept, that flooded last spring, is locked.**  (false)\n\nTrap: mixing \"where\" with a second non-restrictive \"that\" is wrong. Repair: prefer \"…, which flooded last spring,…\" — a second relative after commas still cannot be \"that.\" Keep one clear non-restrictive \"which\" clause for the flood detail.\n\n**Tip:** Second comma-bound clause about a thing → which, never that."
+        "**A) The friend in whom's flat we stayed later moved abroad.**\n\n** Preposition + whose (+ noun), never whom's.\n\nTrap: malformed possession — never stack \"whom's.\" Repair: \"The friend in whose flat we stayed later moved abroad.\" After the preposition, use \"whose\" to mark the flat as belonging to the friend.\n",
+        "**B) Few of the tools on which the repair depends are in the box.**\n\n\"On which\" correctly links tools after a preposition: the repair depends on the tools. \"The X on which Y depends\" is a high-value formal pattern worth recognising on sight.\n\n**Tip:** ** depend on → on which in formal relatives.\n",
+        "**C) The baker that her sourdough won prizes has closed for a week.**\n\n** that her/his/its → whose.\n\nTrap: replace \"that her\" with \"whose.\" Repair: \"The baker whose sourdough won prizes has closed for a week.\" \"That + possessive\" always signals a missing \"whose.\"\n",
+        "**D) Neighbours whom the council thanked stayed for photographs.**\n\nObject \"whom\" correctly refers to the neighbours the council thanked. Subject of the relative clause (\"the council\") + object relative \"whom\" is a clean formal structure.\n\n**Tip:** ** Verb object is a person → whom is justified.\n",
+        "**E) The shed where tools are kept, that flooded last spring, is locked.**\n\n** Second comma-bound clause about a thing → which, never that.\n\nTrap: mixing \"where\" with a second non-restrictive \"that\" is wrong. Repair: prefer \"…, which flooded last spring,…\" — a second relative after commas still cannot be \"that.\" Keep one clear non-restrictive \"which\" clause for the flood detail.\n"
       ],
       "highlights": [
         "whom's flat",
@@ -554,11 +554,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The landlord to whose conditions we agreed released the keys.**  (true)\n\n\"To whose conditions\" correctly combines preposition and possession: we agreed to the landlord's conditions. \"To/with/under whose + noun\" is advanced but correct when both roles are needed.\n\n**Tip:** Preposition + whose + noun is a valid advanced pattern.",
-        "**B) Staff for whom flexitime was approved must log hours weekly.**  (true)\n\n\"For whom\" correctly marks people after a preposition: flexitime was approved for the staff. Approval and arrangement phrases often need \"for whom\" in formal writing.\n\n**Tip:** approved for / arranged for → for whom.",
-        "**C) The radio that the kids dismantled it cannot be put back together.**  (false)\n\nTrap: remove residual \"it.\" Repair: \"The radio that the kids dismantled cannot be put back together.\" Even in long sentences, residual objects after the relative are still errors.\n\n**Tip:** Relative already = object → delete it/them.",
-        "**D) Lisbon, which we use as our summer base, hosts a street-food fair.**  (true)\n\nNon-restrictive \"which\" correctly adds information about Lisbon. City names with commas take \"which,\" because the place is already identified and the clause is extra detail.\n\n**Tip:** Named city + commas → which.",
-        "**E) Anyone who's completed module three may sit the quiz.**  (true)\n\n\"Who's completed\" expands to \"who has completed,\" a correct present-perfect relative. Present-perfect \"who's\" is possession's innocent twin — expand to check, and here \"who has\" fits.\n\n**Tip:** Who's completed = who has completed."
+        "**A) The landlord to whose conditions we agreed released the keys.**\n\n\"To whose conditions\" correctly combines preposition and possession: we agreed to the landlord's conditions. \"To/with/under whose + noun\" is advanced but correct when both roles are needed.\n",
+        "**B) Staff for whom flexitime was approved must log hours weekly.**\n\n\"For whom\" correctly marks people after a preposition: flexitime was approved for the staff. Approval and arrangement phrases often need \"for whom\" in formal writing.\n",
+        "**C) The radio that the kids dismantled it cannot be put back together.**\n\n** Relative already = object → delete it/them.\n\nTrap: remove residual \"it.\" Repair: \"The radio that the kids dismantled cannot be put back together.\" Even in long sentences, residual objects after the relative are still errors.\n",
+        "**D) Lisbon, which we use as our summer base, hosts a street-food fair.**\n\nNon-restrictive \"which\" correctly adds information about Lisbon. City names with commas take \"which,\" because the place is already identified and the clause is extra detail.\n",
+        "**E) Anyone who's completed module three may sit the quiz.**\n\n\"Who's completed\" expands to \"who has completed,\" a correct present-perfect relative. Present-perfect \"who's\" is possession's innocent twin — expand to check, and here \"who has\" fits.\n"
       ],
       "highlights": [
         "to whose conditions",
@@ -592,11 +592,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A) The mentor of whom we sought advice later joined another club.**  (true)\n\n\"Of whom\" correctly marks the person after the preposition in a formal relative: we sought advice of the mentor. The wording is stiff but exam-correct.\n\n**Tip:** of/from whom is formal but safe.",
-        "**B) A paragraph that its purpose is unclear should be cut.**  (false)\n\nTrap: use \"whose,\" not \"that its.\" Repair: \"A paragraph whose purpose is unclear should be cut.\" \"That its\" is the same broken pattern as \"that her\" — a missing possessive relative.\n\n**Tip:** that its/her/his → whose.",
-        "**C) Helpers who the organisers thanked now lead regional teams.**  (true)\n\nObject \"who\" for people thanked is acceptable modern usage: the organisers thanked the helpers. Formal alternatives use \"whom\"; both are usually accepted without a preceding preposition.\n\n**Tip:** No preposition → object who or whom both typically pass.",
-        "**D) The portal via which parents upload forms went offline at noon.**  (true)\n\n\"Via which\" correctly attaches the preposition to a thing: parents upload forms via the portal. Tech and process nouns take \"which\" after prepositions, not \"who.\"\n\n**Tip:** Process/portal + preposition → via/through which.",
-        "**E) The interim coach, that arrived in May, reorganised training.**  (false)\n\nTrap: non-restrictive about a person needs \"who,\" not \"that.\" Repair: \"The interim coach, who arrived in May, reorganised training.\" Title + commas still bans \"that.\"\n\n**Tip:** Person + commas → who."
+        "**A) The mentor of whom we sought advice later joined another club.**\n\n\"Of whom\" correctly marks the person after the preposition in a formal relative: we sought advice of the mentor. The wording is stiff but exam-correct.\n",
+        "**B) A paragraph that its purpose is unclear should be cut.**\n\n** that its/her/his → whose.\n\nTrap: use \"whose,\" not \"that its.\" Repair: \"A paragraph whose purpose is unclear should be cut.\" \"That its\" is the same broken pattern as \"that her\" — a missing possessive relative.\n",
+        "**C) Helpers who the organisers thanked now lead regional teams.**\n\nObject \"who\" for people thanked is acceptable modern usage: the organisers thanked the helpers. Formal alternatives use \"whom\"; both are usually accepted without a preceding preposition.\n\n**Tip:** ** No preposition → object who or whom both typically pass.\n",
+        "**D) The portal via which parents upload forms went offline at noon.**\n\n\"Via which\" correctly attaches the preposition to a thing: parents upload forms via the portal. Tech and process nouns take \"which\" after prepositions, not \"who.\"\n",
+        "**E) The interim coach, that arrived in May, reorganised training.**\n\n** Person + commas → who.\n\nTrap: non-restrictive about a person needs \"who,\" not \"that.\" Repair: \"The interim coach, who arrived in May, reorganised training.\" Title + commas still bans \"that.\"\n"
       ],
       "highlights": [
         "of whom",
@@ -630,11 +630,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The climbers with whom we shared a rope reached the ridge first.**  (true)\n\n\"With whom\" correctly marks people after a preposition in a defining clause: we shared a rope with the climbers. Shared-activity language often uses this pattern.\n\n**Tip:** shared with / climbed with → with whom.",
-        "**B) Anyone whose rucksack holds food must hang it away from tents.**  (true)\n\n\"Whose rucksack\" correctly shows possession: anyone's rucksack that holds food. Outdoor and everyday policies love \"anyone whose + noun\" constructions.\n\n**Tip:** anyone whose + noun is a reliable template.",
-        "**C) The rule under which the contest will be judged is printed on page two.**  (true)\n\n\"Under which\" correctly links the governing framework: the contest will be judged under the rule. Contest and club English frequently uses this formal relative.\n\n**Tip:** rules/contests → under which.",
-        "**D) A volunteer who's already briefed the stewards need not attend the dry run.**  (true)\n\n\"Who's already briefed\" expands to \"who has already briefed.\" Final check: put \"who has\" in place — if it fits, the sentence can stand, and it does.\n\n**Tip:** Who's + past participle often = who has + past participle.",
-        "**E) The criteria against which entries are scored were agreed last autumn.**  (true)\n\n\"Against which\" correctly marks the standard of comparison: entries are scored against the criteria. \"The X against which Y is scored\" is a polished relative pattern.\n\n**Tip:** scored against / measured against → against which."
+        "**A) The climbers with whom we shared a rope reached the ridge first.**\n\n\"With whom\" correctly marks people after a preposition in a defining clause: we shared a rope with the climbers. Shared-activity language often uses this pattern.\n",
+        "**B) Anyone whose rucksack holds food must hang it away from tents.**\n\n\"Whose rucksack\" correctly shows possession: anyone's rucksack that holds food. Outdoor and everyday policies love \"anyone whose + noun\" constructions.\n\n**Tip:** ** anyone whose + noun is a reliable template.\n",
+        "**C) The rule under which the contest will be judged is printed on page two.**\n\n\"Under which\" correctly links the governing framework: the contest will be judged under the rule. Contest and club English frequently uses this formal relative.\n\n**Tip:** ** rules/contests → under which.\n",
+        "**D) A volunteer who's already briefed the stewards need not attend the dry run.**\n\n\"Who's already briefed\" expands to \"who has already briefed.\" Final check: put \"who has\" in place — if it fits, the sentence can stand, and it does.\n\n**Tip:** ** Who's + past participle often = who has + past participle.\n",
+        "**E) The criteria against which entries are scored were agreed last autumn.**\n\n\"Against which\" correctly marks the standard of comparison: entries are scored against the criteria. \"The X against which Y is scored\" is a polished relative pattern.\n"
       ],
       "highlights": [
         "with whom",
@@ -668,11 +668,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The shelf on whose edge the vase sat collapsed overnight.**  (true)\n\n\"On whose edge\" correctly combines preposition and possession for a thing: the vase sat on the shelf's edge. \"On/in/at whose + noun\" works for inanimate heads as well as people.\n\n**Tip:** Preposition + whose + noun for things is valid.",
-        "**B) Children for who the workshop was designed must be under twelve.**  (false)\n\nTrap: after \"for,\" use \"whom,\" not \"who.\" Repair: \"Children for whom the workshop was designed must be under twelve.\" Preposition + who is almost always wrong for people.\n\n**Tip:** for/to/with + person → whom.",
-        "**C) The camera that its battery died mid-shoot still needs charging.**  (false)\n\nTrap: replace \"that its\" with \"whose.\" Repair: \"The camera whose battery died mid-shoot still needs charging.\" \"That its\" is a possession failure wearing a defining-clause disguise.\n\n**Tip:** that its → whose.",
-        "**D) The island off which we camped has no mobile signal.**  (true)\n\n\"Off which\" correctly attaches the preposition to a place: we camped off the island. Geography often uses \"off/near/beside which\" in formal relatives.\n\n**Tip:** Geography prepositions + which.",
-        "**E) Someone who's waiting by the gate should come inside now.**  (true)\n\n\"Who's waiting\" expands to \"who is waiting.\" Expand once; if \"who is\" fits, keep \"who's\" — and here it does.\n\n**Tip:** Who's + -ing = who is + -ing."
+        "**A) The shelf on whose edge the vase sat collapsed overnight.**\n\n\"On whose edge\" correctly combines preposition and possession for a thing: the vase sat on the shelf's edge. \"On/in/at whose + noun\" works for inanimate heads as well as people.\n\n**Tip:** ** Preposition + whose + noun for things is valid.\n",
+        "**B) Children for who the workshop was designed must be under twelve.**\n\n** for/to/with + person → whom.\n\nTrap: after \"for,\" use \"whom,\" not \"who.\" Repair: \"Children for whom the workshop was designed must be under twelve.\" Preposition + who is almost always wrong for people.\n",
+        "**C) The camera that its battery died mid-shoot still needs charging.**\n\n** that its → whose.\n\nTrap: replace \"that its\" with \"whose.\" Repair: \"The camera whose battery died mid-shoot still needs charging.\" \"That its\" is a possession failure wearing a defining-clause disguise.\n",
+        "**D) The island off which we camped has no mobile signal.**\n\n\"Off which\" correctly attaches the preposition to a place: we camped off the island. Geography often uses \"off/near/beside which\" in formal relatives.\n",
+        "**E) Someone who's waiting by the gate should come inside now.**\n\n\"Who's waiting\" expands to \"who is waiting.\" Expand once; if \"who is\" fits, keep \"who's\" — and here it does.\n"
       ],
       "highlights": [
         "on whose edge",
@@ -706,11 +706,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The path along which we walked ends at the lighthouse.**  (true)\n\n\"Along which\" correctly links a place after a preposition: we walked along the path. Path, road, and route phrases often use \"along/by which\" in formal relatives.\n\n**Tip:** paths/roads → along/by which.",
-        "**B) A neighbour who's dog barks at dawn has apologised twice.**  (false)\n\nTrap: possession needs \"whose,\" not \"who's.\" Repair: \"A neighbour whose dog barks at dawn has apologised twice.\" Expand \"who's dog\" to \"who is dog\" and reject it at once.\n\n**Tip:** Who's + noun (dog/coat/keys) → whose.",
-        "**C) The committee members whom the mayor praised stayed for tea.**  (true)\n\nObject \"whom\" correctly refers to the committee members the mayor praised. Subject of the relative clause + object \"whom\" is a clean formal structure.\n\n**Tip:** praised/thanked/interviewed + person object → whom.",
-        "**D) The oven, that overheats on the fan setting, needs a service.**  (false)\n\nTrap: non-restrictive needs \"which,\" not \"that.\" Repair: \"The oven, which overheats on the fan setting, needs a service.\" Commas still ban \"that,\" even for household nouns.\n\n**Tip:** Commas + thing → which.",
-        "**E) Few of the routes by which hikers reach the summit stay open in winter.**  (true)\n\n\"By which\" correctly marks the means or route: hikers reach the summit by the routes. \"The X by which Y happens\" is a polished relative pattern.\n\n**Tip:** means/route → by which."
+        "**A) The path along which we walked ends at the lighthouse.**\n\n\"Along which\" correctly links a place after a preposition: we walked along the path. Path, road, and route phrases often use \"along/by which\" in formal relatives.\n",
+        "**B) A neighbour who's dog barks at dawn has apologised twice.**\n\n** Who's + noun (dog/coat/keys) → whose.\n\nTrap: possession needs \"whose,\" not \"who's.\" Repair: \"A neighbour whose dog barks at dawn has apologised twice.\" Expand \"who's dog\" to \"who is dog\" and reject it at once.\n",
+        "**C) The committee members whom the mayor praised stayed for tea.**\n\nObject \"whom\" correctly refers to the committee members the mayor praised. Subject of the relative clause + object \"whom\" is a clean formal structure.\n\n**Tip:** ** praised/thanked/interviewed + person object → whom.\n",
+        "**D) The oven, that overheats on the fan setting, needs a service.**\n\n** Commas + thing → which.\n\nTrap: non-restrictive needs \"which,\" not \"that.\" Repair: \"The oven, which overheats on the fan setting, needs a service.\" Commas still ban \"that,\" even for household nouns.\n",
+        "**E) Few of the routes by which hikers reach the summit stay open in winter.**\n\n\"By which\" correctly marks the means or route: hikers reach the summit by the routes. \"The X by which Y happens\" is a polished relative pattern.\n"
       ],
       "highlights": [
         "along which",
@@ -744,11 +744,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A) The potter from whom we bought the bowls still runs Saturday classes.**  (true)\n\n\"From whom\" correctly marks a person after a preposition: we bought the bowls from the potter. Buying and learning phrases often use \"from whom we bought/learned…\"\n\n**Tip:** bought from / learned from → from whom.",
-        "**B) Anyone whose laptop battery dies mid-flight should carry a spare charger.**  (true)\n\n\"Whose laptop battery\" correctly shows possession for anyone travelling. Travel reminders love \"anyone whose + noun\" constructions, and the belonging reading is clear.\n\n**Tip:** anyone whose + noun remains a reliable template.",
-        "**C) The chapter after which the quiz begins covers relative pronouns.**  (true)\n\n\"After which\" correctly links sequence for a thing: the quiz begins after the chapter. Chapter and section English frequently uses \"after which / before which.\"\n\n**Tip:** Sequence of sections → after/before which.",
-        "**D) A neighbour who's lived here since March already knows every shortcut.**  (true)\n\n\"Who's lived\" expands to \"who has lived.\" Final check: put \"who has\" in place — if it fits, the sentence can stand, and it does for a neighbour who has lived here since March.\n\n**Tip:** Who's + past participle → try who has.",
-        "**E) The tune to which the choir rehearsed was written last winter.**  (true)\n\n\"To which\" correctly attaches the preposition to a tune or thing: the choir rehearsed to the tune. Music and ceremony phrases often need \"to which\" in formal relatives.\n\n**Tip:** rehearsed to / set to → to which."
+        "**A) The potter from whom we bought the bowls still runs Saturday classes.**\n\n\"From whom\" correctly marks a person after a preposition: we bought the bowls from the potter. Buying and learning phrases often use \"from whom we bought/learned…\"\n",
+        "**B) Anyone whose laptop battery dies mid-flight should carry a spare charger.**\n\n\"Whose laptop battery\" correctly shows possession for anyone travelling. Travel reminders love \"anyone whose + noun\" constructions, and the belonging reading is clear.\n\n**Tip:** ** anyone whose + noun remains a reliable template.\n",
+        "**C) The chapter after which the quiz begins covers relative pronouns.**\n\n\"After which\" correctly links sequence for a thing: the quiz begins after the chapter. Chapter and section English frequently uses \"after which / before which.\"\n",
+        "**D) A neighbour who's lived here since March already knows every shortcut.**\n\n\"Who's lived\" expands to \"who has lived.\" Final check: put \"who has\" in place — if it fits, the sentence can stand, and it does for a neighbour who has lived here since March.\n\n**Tip:** ** Who's + past participle → try who has.\n",
+        "**E) The tune to which the choir rehearsed was written last winter.**\n\n\"To which\" correctly attaches the preposition to a tune or thing: the choir rehearsed to the tune. Music and ceremony phrases often need \"to which\" in formal relatives.\n"
       ],
       "highlights": [
         "from whom",

@@ -57,6 +57,9 @@ def main() -> int:
                     errors.append(f"{t.get('id')}: {field} len != 5")
             for a, e in zip(t.get("answer_key") or [], t.get("tactical_explanations") or []):
                 s = str(e).lstrip()
+                if re.match(r"^\*\*[A-E]\)", s):
+                    # Letter claim header — verdict lives in answer_key / UI table
+                    continue
                 m = re.search(r"\((true|false)\)", s, flags=re.I)
                 if m:
                     got = m.group(1).lower() == "true"
