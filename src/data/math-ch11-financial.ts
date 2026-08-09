@@ -1995,7 +1995,7 @@ The gap shrinks from \\$164.51 (monthly) to \\$5.44 (daily) as the discrete sche
     tactical_explanations: [
       `**A) The implied nominal continuously-compounded rate is approximately 6.67%.**  (true)
 
-Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives \\$3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.`,
+Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives $3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.`,
       `**B) Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately \\$39,078.52.**  (true)
 
 Applying the implied rate for a further 2 years (5 years total from the start) gives $S(5) = 28{,}000 \\times e^{0.066674 \\times 5}$ ≈ \\$39,078.52, matching the statement exactly.`,
@@ -2539,7 +2539,7 @@ t = ln(2)/0.065 ≈ 10.66 years, matching the statement exactly.`,
 t = ln(3)/0.065 ≈ 16.90 years, matching the statement exactly.`,
       `**C) The quadrupling time at 6.5% is approximately 21.33 years, and this is exactly equal to twice the doubling time.**  (true)
 
-t = ln(4)/0.065 ≈ 21.33 years, and because \\$4 = 2^{2}$ means $\\ln(4) = 2\\ln(2)$, the quadrupling time is exactly twice the doubling time - reaching four times the principal is mathematically the same as doubling the investment twice in a row.`,
+t = ln(4)/0.065 ≈ 21.33 years, and because $4 = 2^{2}$ means $\\ln(4) = 2\\ln(2)$, the quadrupling time is exactly twice the doubling time - reaching four times the principal is mathematically the same as doubling the investment twice in a row.`,
       `**D) At the quadrupling time, the fund's value is exactly \\$48,000.00.**  (true)
 
 Four times the original \\$12,000 principal is 12,000 × 4 = \\$48,000.00, matching the statement exactly.`,
@@ -3043,10 +3043,10 @@ Since the discount factor 0.45 corresponds to a fixed value of r × t (specifica
     tactical_explanations: [
       `**A) The present value of the \\$40{,}000 payment is approximately \\$36{,}281.18.**  (true)
 
-Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, \\$40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.`,
+Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $\\$40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.`,
       `**B) The present value of the \\$65{,}000 payment is approximately \\$50{,}930.87.**  (true)
 
-Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, \\$65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.`,
+Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $\\$65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.`,
       `**C) The combined present value of both payments together is approximately \\$87{,}212.05.**  (true)
 
 Since present values from different payment dates can simply be added together, the combined present value of both milestone payments is 36,281.18 + 50,930.87 ≈ \\$87{,}212.05.`,
@@ -3110,7 +3110,7 @@ Recomputing both payments with continuous compounding at 5% gives a combined pre
     tactical_explanations: [
       `**A) The present value of Option B is approximately \\$21{,}410.30.**  (true)
 
-Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, \\$25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.`,
+Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $\\$25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.`,
       `**B) Option A has a higher present value than Option B at the 6% rate.**  (true)
 
 Comparing the two options directly, Option A's \\$22{,}000 received today is worth more than Option B's present value of \\$21{,}410.30, so at this 6% rate the immediate payment is the financially larger of the two.`,
@@ -3360,7 +3360,7 @@ The actual gap between the equivalent annual rate (5.13%) and the continuous rat
     tactical_explanations: [
       `**A) The present value of the existing \\$42{,}000 receivable is approximately \\$35{,}264.01.**  (true)
 
-Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, \\$42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.`,
+Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $\\$42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.`,
       `**B) The present value still required from the second receivable is approximately \\$64{,}735.99.**  (true)
 
 Since the covenant requires a combined present value of \\$100{,}000 and the first receivable already supplies about \\$35{,}264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ \\$64{,}735.99.`,
@@ -3489,7 +3489,7 @@ Shortening the horizon from 4 years to 2 years means less time is available for 
 Because the wine's growth rate (5%) is smaller than the discount rate (8%), the derivative P'(t) always falls short of rP(t) at every t, so there is no interior point where the two become equal. With no interior critical point available, the present value is maximized right at the boundary, t* = 0, meaning the wine should be sold immediately.`,
       `**B) The present value of the batch if sold today (t = 0) is \\$40{,}000.**  (true)
 
-Evaluating P(t) at t = 0 gives $P(0) = \\$40\${,}000e^{0} = \\$40{,}000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.`,
+Evaluating P(t) at t = 0 gives $P(0) = \\$40{,}000 e^{0} = \\$40{,}000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.`,
       `**C) The present value of the batch if instead sold in 10 years is approximately \\$29{,}632.73.**  (true)
 
 Because the discount rate (8%) exceeds the wine's growth rate (5%), the present-value function actually shrinks as t increases; evaluating it at t = 10 gives approximately \\$29{,}632.73, which is indeed below the \\$40{,}000 obtained by selling today.`,
@@ -6772,7 +6772,7 @@ Multiplying the correct per-payment amount of \\$22,946.14 by the 10 total payme
 
 **Part 3: Solve.**
 
-**1.** Combined factor = \\$1 + (1/0.11)[1-(1.11)^{-9}]$ = 1 + 9.090909×(1-0.391110) = 1 + 5.537048 ≈ 6.537048.
+**1.** Combined factor = $1 + (1/0.11)[1-(1.11)^{-9}]$ = 1 + 9.090909×(1-0.391110) = 1 + 5.537048 ≈ 6.537048.
 
 **2.** a = 150,000/6.537048 ≈ \\$22,946.14.
 
@@ -7164,7 +7164,7 @@ Three annual loan payments of about \\$16,176.12 each add up to roughly \\$48,52
 
 **Part 3: Solve.**
 
-**1.** Combined factor = \\$1 + (1/0.12)[1-(1.12)^{-7}]$ ≈ 1 + 4.563757 = 5.563757; a = 90,000/5.563757 ≈ \\$16,176.12.
+**1.** Combined factor = $1 + (1/0.12)[1-(1.12)^{-7}]$ ≈ 1 + 4.563757 = 5.563757; a = 90,000/5.563757 ≈ \\$16,176.12.
 
 **2.** Balance immediately after the first (immediate) payment = \\$90,000 - \\$16,176.12 = \\$73,823.88.
 

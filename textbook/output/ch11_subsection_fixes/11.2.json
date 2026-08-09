@@ -333,7 +333,7 @@
     "formulas": "• $S(t) = S_0 e^{rt} \\Rightarrow r = \\ln(S(t)/S_0)/t$\n\n• Doubling time: $t = \\ln(2)/r$",
     "steps": "r = ln(34,200/28,000)/3 = ln(1.221429)/3 = 0.200034/3 = 0.066674 ≈ 6.67%. $S(5) = 28{,}000 \\times e^{0.066674 \\times 5} = 28{,}000 \\times e^{0.333368} = 28{,}000 \\times 1.395661 = \\$39{,}078.52$. Average dollar increase over 3 years = (34,200 - 28,000)/3 = \\$2,066.67/year. Naive linear projection: 34,200 + 2 × 2,066.67 = \\$38,333.33, which does not equal \\$39,078.52. Doubling time = ln(2)/0.066674 = 0.693147/0.066674 ≈ 10.3961 years. At r = 6.00%: $S(3) = 28{,}000 \\times e^{0.18} = 28{,}000 \\times 1.197217 = \\$33{,}522.09$, which is LOWER than the actual observed \\$34,200.00, not higher.",
     "explanations": [
-      "Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives \\$3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.",
+      "Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives $3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.",
       "Applying the implied rate for a further 2 years (5 years total from the start) gives $S(5) = 28{,}000 \\times e^{0.066674 \\times 5}$ ≈ \\$39,078.52, matching the statement exactly.",
       "The naive straight-line projection assumes the DOLLAR amount added each year stays constant, giving \\$38,333.33, whereas the correct exponential projection assumes the PERCENTAGE growth rate stays constant, giving the higher figure of \\$39,078.52. Because exponential growth compounds on an ever-larger base, the two methods diverge once projected beyond the observed data, and they do not match.",
       "t = ln(2)/0.066674 ≈ 10.40 years, not 12.40 years - the stated figure overstates the true doubling time by exactly 2 years.",
@@ -583,7 +583,7 @@
     "explanations": [
       "t = ln(2)/0.065 ≈ 10.66 years, matching the statement exactly.",
       "t = ln(3)/0.065 ≈ 16.90 years, matching the statement exactly.",
-      "t = ln(4)/0.065 ≈ 21.33 years, and because \\$4 = 2^{2}$ means $\\ln(4) = 2\\ln(2)$, the quadrupling time is exactly twice the doubling time - reaching four times the principal is mathematically the same as doubling the investment twice in a row.",
+      "t = ln(4)/0.065 ≈ 21.33 years, and because $4 = 2^{2}$ means $\\ln(4) = 2\\ln(2)$, the quadrupling time is exactly twice the doubling time - reaching four times the principal is mathematically the same as doubling the investment twice in a row.",
       "Four times the original \\$12,000 principal is 12,000 × 4 = \\$48,000.00, matching the statement exactly.",
       "Times to reach a given multiple scale with the NATURAL LOGARITHM of that multiple, not with the multiple itself, since t = ln(M)/r. The ratio of the tripling time to the doubling time is therefore ln(3)/ln(2) ≈ 1.5850, not the naive ratio of the multipliers themselves (3/2 = 1.5) - these two ratios are close but not equal, and treating them as the same is a common but incorrect shortcut."
     ]
