@@ -1,0 +1,31 @@
+# Ch11 half-math pass — wrap complete equations in ONE $...$ span
+# READ:  textbook/output/ch11_subsection_fixes/{sid}_INPUT.json
+#        textbook/output/_audit_half_math.txt (your sid section)
+# WRITE: textbook/output/ch11_subsection_fixes/{sid}.json
+
+## THE BUG (user screenshot)
+BAD:  `2A(t + k) = $r A(t + k)^{2}$`
+     → left side Roman prose, right side italic KaTeX
+GOOD: `$2A(t + k) = r A(t + k)^{2}$`
+
+## REQUIRED
+1. If an equation/assignment has ANY `$` on one side, wrap the WHOLE equation in one math span.
+   BAD:  `P'(t) = 2A(t + k)` left bare when nearby uses KaTeX, OR mix like above.
+   Pref: `$P'(t) = 2A(t + k)$`, `$P'(t*) = r P(t*)$`
+   BAD:  `853,333.33 × $e^{-1.625}$`
+   GOOD: `$853{,}333.33 \\times e^{-1.625}$`  OR keep number prose + `$e^{-1.625}$` only if no bare algebra vars on both sides of =
+   For `LHS = $RHS$` where LHS has letters (A,t,k,r,P,v,S…): → `$LHS = RHS$`
+
+2. English words stay OUTSIDE math. Split before "dividing", "gives", "so", "with".
+   GOOD: `$2A(t + k) = r A(t + k)^{2}$; dividing both sides by $A(t + k)$ …`
+
+3. Trailing punctuation: `;` `.` after closing `$` is OK in prose.
+
+4. Currency: keep `$a = \$8{,}000$` convention. Do NOT reintroduce raw `$8,000` next to math vars.
+
+5. No English inside `$...$`. No bullet `•`. No middot `·` — use `\times` / `×`.
+
+6. Do not change answer_key / other subsections / ch11_raw.json / .ts.
+
+OUTPUT: full task JSON array, same length as INPUT.
+After write: re-scan — zero matches of `[A-Za-z0-9)']\s*=\s*\$` (bare LHS = math RHS) except currency.

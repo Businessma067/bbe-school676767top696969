@@ -20,8 +20,8 @@
       false
     ],
     "given": "$K = \\$8{,}000$ (future bonus)\nNominal annual rate p = 5%, so r = 0.05\nt = 1 year (annual compounding)",
-    "formulas": "PDV = $K(1+r)^{-t}$",
-    "steps": "Discount factor = $(1.05)^{-1}$ = 1/1.05 ≈ 0.9524. PDV = 8,000 × 0.9524 ≈ \\$7{,}619.05. At r = 0.10: PDV = 8,000/1.10 ≈ \\$7{,}272.73. Difference (at 5%) = 8,000 - 7,619.05 = \\$380.95. At r = 0: PDV = 8,000 × $(1.00)^{-1} = \\$8{,}000$.",
+    "formulas": "$PDV = K(1+r)^{-t}$",
+    "steps": "Discount factor: $(1.05)^{-1}$ = 1/1.05 ≈ 0.9524. $PDV = 8{,}000 \\times 0.9524 \\approx \\$7{,}619.05$. At r = 0.10: $PDV = 8{,}000/1.10 \\approx \\$7{,}272.73$. Difference (at 5%) = 8,000 - 7,619.05 = \\$380.95. At r = 0: $PDV = 8{,}000 \\times (1.00)^{-1} = \\$8{,}000$.",
     "explanations": [
       "Dividing 1 by 1.05 asks how much of a single dollar due in a year is worth today at a 5% annual rate, and that calculation gives 1/1.05 ≈ 0.9524. This is exactly the (annual) discount factor the chapter defines as $(1+r)^{-1}$, so the statement matches the formula precisely.",
       "Multiplying the future amount by the discount factor found above converts the \\$8{,}000 due in a year into its equivalent value today: 8,000 × 0.9524 ≈ \\$7{,}619.05, which is exactly what the present-discounted-value formula $K(1+r)^{-1}$ produces here.",
@@ -51,8 +51,8 @@
       true
     ],
     "given": "$K = \\$12{,}000$ (milestone payment)\nContinuous annual rate p = 6%, so r = 0.06\nt = 3 years",
-    "formulas": "PDV = $Ke^{-rt}$",
-    "steps": "rt = 0.06 × 3 = 0.18, so $e^{-0.18}$ ≈ 0.8353. PDV = 12,000 × 0.8353 ≈ \\$10{,}023.24. Annual compounding: PDV = 12,000 × $(1.06)^{-3}$ = 12,000/1.191016 ≈ \\$10{,}075.66. Difference = 10,075.66 - 10,023.24 = \\$52.42. For t = 6: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so PDV = 12,000 × 0.6977 ≈ \\$8{,}372.11.",
+    "formulas": "$PDV = Ke^{-rt}$",
+    "steps": "rt = 0.06 × 3 = 0.18, so $e^{-0.18}$ ≈ 0.8353. $PDV = 12{,}000 \\times 0.8353 \\approx \\$10{,}023.24$. Annual compounding: $PDV = 12{,}000 \\times (1.06)^{-3} = 12{,}000/1.191016 \\approx \\$10{,}075.66$. Difference = 10,075.66 - 10,023.24 = \\$52.42. For t = 6: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so $PDV = 12{,}000 \\times 0.6977 \\approx \\$8{,}372.11$.",
     "explanations": [
       "Raising e to the power -0.18 (the product of the rate 0.06 and the time 3) gives the fraction of the future payment that survives continuous discounting over those 3 years, which works out to approximately 0.8353.",
       "Multiplying the \\$12{,}000 payment by the continuous discount factor of 0.8353 gives its present value: 12,000 × 0.8353 ≈ \\$10{,}023.24, exactly as the formula $Ke^{-rt}$ requires.",
@@ -82,7 +82,7 @@
       false
     ],
     "given": "$K = \\$45{,}000$ (escrowed proceeds)\nNominal/continuous annual rate p = 7%, so r = 0.07\nt = 8 years",
-    "formulas": "Annual: PDV = $K(1+r)^{-t}$\nContinuous: PDV = $Ke^{-rt}$",
+    "formulas": "Annual: $PDV = K(1+r)^{-t}$\nContinuous: $PDV = Ke^{-rt}$",
     "steps": "$(1.07)^{8}$ ≈ 1.718186, so $(1.07)^{-8}$ ≈ 0.5820. Annual PDV = 45,000 × 0.5820 ≈ \\$26{,}190.41. rt = 0.07 × 8 = 0.56, $e^{-0.56}$ ≈ 0.5712, so continuous PDV = 45,000 × 0.5712 ≈ \\$25{,}704.41. Difference = 26,190.41 - 25,704.41 = \\$486.00. At r = 0: both formulas reduce to K × 1 = \\$45{,}000.",
     "explanations": [
       "Compounding 1.07 eight times over gives $(1.07)^{8}$ ≈ 1.718186, and taking the reciprocal of that (since the exponent is negative) yields a discount factor of approximately 0.5820, matching the definition of $(1+r)^{-t}$ for annual compounding.",
@@ -113,12 +113,12 @@
       false
     ],
     "given": "$K = \\$150{,}000$ (target future amount)\nContinuous annual rate p = 4.5%, so r = 0.045\nt = 5 years",
-    "formulas": "Required deposit A = $Ke^{-rt}$",
-    "steps": "rt = 0.045 × 5 = 0.225, so $e^{-0.225}$ ≈ 0.7985. A = 150,000 × 0.7985 ≈ \\$119{,}777.40. Future value of \\$110{,}000 after 5 years at 4.5% continuous: 110,000 × $e^{0.225}$ ≈ 110,000 × 1.2523 ≈ \\$137{,}755.50. Annual compounding: A = 150,000 × $(1.045)^{-5}$ = 150,000/1.246182 ≈ \\$120{,}367.90. For t = 10: rt = 0.45, $e^{-0.45}$ ≈ 0.6376, so A = 150,000 × 0.6376 ≈ \\$95{,}644.20.",
+    "formulas": "Required deposit: $A = Ke^{-rt}$",
+    "steps": "rt = 0.045 × 5 = 0.225, so $e^{-0.225}$ ≈ 0.7985. $A = 150{,}000 \\times 0.7985 \\approx \\$119{,}777.40$. Future value of \\$110{,}000 after 5 years at 4.5% continuous: $110{,}000 \\times e^{0.225} \\approx 110{,}000 \\times 1.2523 \\approx \\$137{,}755.50$. Annual compounding: $A = 150{,}000 \\times (1.045)^{-5} = 150{,}000/1.246182 \\approx \\$120{,}367.90$. For t = 10: rt = 0.45, $e^{-0.45}$ ≈ 0.6376, so $A = 150{,}000 \\times 0.6376 \\approx \\$95{,}644.20$.",
     "explanations": [
       "The exponent rt = 0.225 comes directly from multiplying the 4.5% continuous rate by the 5-year horizon, and $e^{-0.225}$ ≈ 0.7985, not 0.8125, is the fraction of the \\$150{,}000 goal that needs to be set aside today.",
       "Multiplying the \\$150{,}000 target by the discount factor of 0.7985 gives the deposit required today: 150,000 × 0.7985 ≈ \\$119{,}777.40, which will grow into exactly \\$150{,}000 after 5 years of continuous compounding at 4.5%.",
-      "Growing \\$110{,}000 for 5 years at 4.5% continuous interest gives 110,000 × $e^{0.225}$ ≈ \\$137{,}755.50, which falls noticeably short of the \\$150{,}000 goal. Depositing less than the required \\$119{,}777.40 today simply cannot compound into the full target amount by the deadline.",
+      "Growing \\$110{,}000 for 5 years at 4.5% continuous interest gives $110{,}000 \\times e^{0.225} \\approx \\$137{,}755.50$, which falls noticeably short of the \\$150{,}000 goal. Depositing less than the required \\$119{,}777.40 today simply cannot compound into the full target amount by the deadline.",
       "Continuous compounding is the fastest possible way for money to grow at a given stated rate, so it needs the smallest starting deposit to reach a fixed future goal. Switching to annual compounding at the same 4.5% rate is less powerful, so it actually requires a larger deposit today, about \\$120{,}367.90, not a smaller one.",
       "Present-value discounting works exponentially in time, not linearly, so doubling the number of years does not simply halve the required deposit. At 10 years the required deposit is about \\$95{,}644.20, which is well above half of \\$119{,}777.40 (that half would be \\$59{,}888.70)."
     ]
@@ -144,7 +144,7 @@
       false
     ],
     "given": "$PDV = \\$18{,}500$ (purchase price)\n$K = \\$25{,}000$ (maturity payoff)\nNominal annual rate p = 6%, so r = 0.06",
-    "formulas": "Annual: PDV = $K(1+r)^{-t}$, so t = ln(K/PDV) / ln(1 + r)\nContinuous: PDV = $Ke^{-rt}$, so t = ln(K/PDV) / r",
+    "formulas": "Annual: $PDV = K(1+r)^{-t}$, so $t = \\ln(K/PDV)/\\ln(1+r)$\nContinuous: $PDV = Ke^{-rt}$, so $t = \\ln(K/PDV)/r$",
     "steps": "K/PDV = 25,000/18,500 ≈ 1.3514. ln(1.3514) ≈ 0.3011; ln(1.06) ≈ 0.05827. t = 0.3011/0.05827 ≈ 5.17 years. For a \\$20{,}000 price: ratio = 25,000/20,000 = 1.25, ln(1.25) ≈ 0.2231, t = 0.2231/0.05827 ≈ 3.83 years. Continuous: t = ln(1.3514)/0.06 ≈ 0.3011/0.06 ≈ 5.02 years. Compare: continuous t ≈ 5.02 years vs. annual t ≈ 5.17 years.",
     "explanations": [
       "Dividing the promised payoff by the price actually paid, 25,000/18,500, shows how many times the investor's money is expected to multiply by maturity, and that ratio works out to approximately 1.3514.",
@@ -175,7 +175,7 @@
       true
     ],
     "given": "$PDV = \\$27{,}000$ (price paid)\n$K = \\$60{,}000$ (future payoff)\nt = 12 years (continuous compounding)",
-    "formulas": "PDV = $Ke^{-rt}$, so r = -ln(PDV/K) / t",
+    "formulas": "$PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$",
     "steps": "PDV/K = 27,000/60,000 = 0.45. r = -ln(0.45)/12 = 0.798508/12 ≈ 0.0665 = 6.65%. For t = 6: rt = 0.0665 × 6 ≈ 0.3992, $e^{-0.3992}$ ≈ 0.6708, so PDV = 60,000 × 0.6708 ≈ \\$40{,}249.20. For a \\$30{,}000 price: ratio = 30,000/60,000 = 0.5, r = -ln(0.5)/12 = 0.693147/12 ≈ 0.0578 = 5.78%. For t = 24 with the same discount factor 0.45: r = -ln(0.45)/24 = 0.798508/24 ≈ 0.0333 = 3.33%.",
     "explanations": [
       "Dividing the \\$27{,}000 purchase price by the \\$60{,}000 eventual payoff gives 27,000/60,000, which reduces exactly to 0.45 with no rounding involved.",
@@ -206,8 +206,8 @@
       false
     ],
     "given": "$K_1 = \\$40{,}000$ due in $t_1 = 2$ years\n$K_2 = \\$65{,}000$ due in $t_2 = 5$ years\nNominal annual rate p = 5%, so r = 0.05",
-    "formulas": "Annual: PDV = $K(1+r)^{-t}$\nContinuous: PDV = $Ke^{-rt}$\nCombined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
-    "steps": "$\\mathrm{PDV}_1$ = 40,000 × $(1.05)^{-2}$ = 40,000/1.1025 ≈ \\$36{,}281.18. $\\mathrm{PDV}_2$ = 65,000 × $(1.05)^{-5}$ = 65,000/1.276282 ≈ \\$50{,}930.87. Combined PDV = 36,281.18 + 50,930.87 ≈ \\$87{,}212.05. Compare: \\$50{,}930.87 (from the \\$65{,}000 payment) vs. \\$36{,}281.18 (from the \\$40{,}000 payment). Continuous $\\mathrm{PDV}_1$ = 40,000 × $e^{-0.10}$ ≈ \\$36{,}193.48; continuous $\\mathrm{PDV}_2$ = 65,000 × $e^{-0.25}$ ≈ \\$50{,}622.07; combined ≈ \\$86{,}815.55.",
+    "formulas": "Annual: $PDV = K(1+r)^{-t}$\nContinuous: $PDV = Ke^{-rt}$\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$",
+    "steps": "$\\mathrm{PDV}_1 = 40{,}000 \\times (1.05)^{-2} = 40{,}000/1.1025 \\approx \\$36{,}281.18$. $\\mathrm{PDV}_2 = 65{,}000 \\times (1.05)^{-5} = 65{,}000/1.276282 \\approx \\$50{,}930.87$. Combined PDV = 36,281.18 + 50,930.87 ≈ \\$87{,}212.05. Compare: \\$50{,}930.87 (from the \\$65{,}000 payment) vs. \\$36{,}281.18 (from the \\$40{,}000 payment). Continuous $\\mathrm{PDV}_1 = 40{,}000 \\times e^{-0.10} \\approx \\$36{,}193.48$; continuous $\\mathrm{PDV}_2 = 65{,}000 \\times e^{-0.25} \\approx \\$50{,}622.07$; combined ≈ \\$86{,}815.55.",
     "explanations": [
       "Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.",
       "Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.",
@@ -237,7 +237,7 @@
       false
     ],
     "given": "Option $A = \\$22{,}000$ received today (t = 0)\nOption B: $K = \\$25{,}500$ due in t = 3 years\nBase nominal annual rate p = 6%, so r = 0.06",
-    "formulas": "PDV = $K(1+r)^{-t}$\nAn amount received today (t = 0) has present value equal to its face value",
+    "formulas": "$PDV = K(1+r)^{-t}$\nAn amount received today (t = 0) has present value equal to its face value",
     "steps": "$(1.06)^{3}$ ≈ 1.191016, so PDV of Option B = 25,500/1.191016 ≈ \\$21{,}410.30. Compare \\$22{,}000 (Option A, today) with \\$21{,}410.30 (Option B, discounted). At r = 0.03: $(1.03)^{3}$ ≈ 1.092727, so PDV = 25,500/1.092727 ≈ \\$23{,}336.02. At r = 0.06 the PDV was found above to be \\$21{,}410.30. At r = 0.05: $(1.05)^{3}$ ≈ 1.157625, so PDV = 25,500/1.157625 ≈ \\$22{,}029.40.",
     "explanations": [
       "Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.",
@@ -268,14 +268,14 @@
       false
     ],
     "given": "$P(t) = 5{,}000(t+2)^{2}$\nContinuous annual rate p = 8%, so r = 0.08",
-    "formulas": "Present value: f(t) = $P(t)e^{-rt}$\nOptimality condition: P'(t*) = rP(t*)",
-    "steps": "P'(t) = 10,000(t + 2). Set $10{,}000(t + 2) = 0.08 \\times 5{,}000(t+2)^{2} = 400(t+2)^{2}$. Dividing both sides by (t + 2): 10,000 = 400(t + 2), so t + 2 = 25, giving t* = 23 years. f(23) = $P(23)e^{-0.08 \\times 23} = 5{,}000(25)^{2}e^{-1.84}$ = 3,125,000 × 0.15879 ≈ \\$496{,}218.75. f(25) = $P(25)e^{-0.08 \\times 25} = 5{,}000(27)^{2}e^{-2}$ = 3,645,000 × 0.135335 ≈ \\$493{,}296.10.",
+    "formulas": "Present value: $f(t) = P(t)e^{-rt}$\nOptimality condition: $P'(t*) = rP(t*)$",
+    "steps": "$P'(t) = 10{,}000(t + 2)$. Set $10{,}000(t + 2) = 0.08 \\times 5{,}000(t+2)^{2} = 400(t+2)^{2}$. Dividing both sides by (t + 2): 10,000 = 400(t + 2), so t + 2 = 25, giving t* = 23 years. $f(23) = P(23)e^{-0.08 \\times 23} = 5{,}000(25)^{2}e^{-1.84}$ = 3,125,000 × 0.15879 ≈ \\$496{,}218.75. $f(25) = P(25)e^{-0.08 \\times 25} = 5{,}000(27)^{2}e^{-2}$ = 3,645,000 × 0.135335 ≈ \\$493{,}296.10.",
     "explanations": [
       "Setting the derivative condition P'(t*) = rP(t*) equal to the specific functions given here reduces, after dividing out the common factor (t + 2), to the simple equation 10,000 = 400(t + 2), which solves to t* = 23 years.",
       "The chapter's actual optimality condition multiplies P(t*) by the interest rate r, giving P'(t*) = rP(t*), not P'(t*) = P(t*)/r. Dividing by r instead of multiplying by it changes the equation entirely and would not correctly locate the present-value-maximizing time.",
-      "Evaluating the present-value function at the true optimum, f(23) = $5{,}000(25)^{2}e^{-1.84}$, gives approximately \\$496{,}218.75. That is well below the \\$623{,}000 claimed in the statement, which overstates the maximum present value by more than \\$126{,}000.",
+      "Evaluating the present-value function at the true optimum, $f(23) = 5{,}000(25)^{2}e^{-1.84}$, gives approximately \\$496{,}218.75. That is well below the \\$623{,}000 claimed in the statement, which overstates the maximum present value by more than \\$126{,}000.",
       "The chapter's discussion of this same tree-harvesting problem shows that a higher interest rate makes decision-makers more impatient, pulling the optimal cutting time earlier, not later. Repeating the same method with r = 10% instead of 8% gives an optimal time of only 18 years, confirming that the cutting time shortens rather than lengthens as the rate rises.",
-      "Evaluating the present-value function at t = 25 instead of at the optimum gives f(25) = $5{,}000(27)^{2}e^{-2}$ ≈ \\$493{,}296.10, which is lower than the \\$496{,}218.75 obtained at t* = 23. This confirms that t* = 23 really is the present-value-maximizing time, and waiting two extra years actually reduces value rather than increasing it."
+      "Evaluating the present-value function at t = 25 instead of at the optimum gives $f(25) = 5{,}000(27)^{2}e^{-2} \\approx \\$493{,}296.10$, which is lower than the \\$496{,}218.75 obtained at t* = 23. This confirms that t* = 23 really is the present-value-maximizing time, and waiting two extra years actually reduces value rather than increasing it."
     ]
   },
   {
@@ -299,11 +299,11 @@
       true
     ],
     "given": "$K_1 = \\$18{,}000$ due in $t_1 = 4$ years\n$K_2 = \\$30{,}000$ due in $t_2 = 9$ years\nContinuous annual rate p = 5.5%, so r = 0.055",
-    "formulas": "PDV = $Ke^{-rt}$\nCombined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
+    "formulas": "$PDV = Ke^{-rt}$\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$",
     "steps": "$\\mathrm{PDV}_1$: $rt_1$ = 0.055 × 4 = 0.22, $e^{-0.22}$ ≈ 0.8025, so $\\mathrm{PDV}_1$ = 18,000 × 0.8025 ≈ \\$14{,}445.34. $\\mathrm{PDV}_2$: $rt_2$ = 0.055 × 9 = 0.495, $e^{-0.495}$ ≈ 0.6096, so $\\mathrm{PDV}_2$ = 30,000 × 0.6096 ≈ \\$18{,}287.13. Combined PDV = 14,445.34 + 18,287.13 ≈ \\$32{,}732.47. Compare: \\$18{,}287.13 (from the \\$30{,}000 obligation) vs. \\$14{,}445.34 (from the \\$18{,}000 obligation). At r = 0: $e^{0}$ = 1 for both terms, so combined PDV = 18,000 + 30,000 = \\$48{,}000.",
     "explanations": [
-      "Discounting the \\$18{,}000 obligation back 4 years at the continuous 5.5% rate, 18,000 × $e^{-0.22}$, gives approximately \\$14{,}445.34 as its present value.",
-      "Discounting the \\$30{,}000 obligation back 9 years at the same rate, 30,000 × $e^{-0.495}$, gives approximately \\$18{,}287.13.",
+      "Discounting the \\$18{,}000 obligation back 4 years at the continuous 5.5% rate, $18{,}000 \\times e^{-0.22}$, gives approximately \\$14{,}445.34 as its present value.",
+      "Discounting the \\$30{,}000 obligation back 9 years at the same rate, $30{,}000 \\times e^{-0.495}$, gives approximately \\$18{,}287.13.",
       "Adding the two individual present values together, since both are expressed in today's dollars, gives the total lump sum the winery should pay now: 14,445.34 + 18,287.13 ≈ \\$32{,}732.47.",
       "Comparing the two contributions directly, the \\$30{,}000 obligation actually supplies the larger present value, about \\$18{,}287.13, versus about \\$14{,}445.34 for the \\$18{,}000 obligation. Its larger face amount more than offsets the extra 5 years of discounting it faces, so it does not contribute less than the smaller, sooner obligation.",
       "With no discounting at all, each payment's present value simply equals its face amount, so the combined lump sum reduces to 18,000 + 30,000 = \\$48{,}000, exactly the sum of the two face amounts."
@@ -330,12 +330,12 @@
       false
     ],
     "given": "$K = \\$50{,}000$\nContinuous annual rate p = 5%, so r = 0.05\nt = 7 years",
-    "formulas": "Continuous PDV = $Ke^{-rt}$\nEquivalent annual rate: setting $K(1+r_a)^{-t}$ = $Ke^{-rt}$ and cancelling K and t shows $1+r_a = e^{r}$ (independent of t)",
-    "steps": "rt = 0.05 × 7 = 0.35, $e^{-0.35}$ ≈ 0.704688, so PDV ≈ 50,000 × 0.704688 ≈ \\$35{,}234.40. $1+r_a = e^{0.05}$ ≈ 1.051271, so ra ≈ 0.051271 = 5.13%. Gap = 5.13% - 5.00% = 0.13 percentage points. At t = 3: continuous PDV = 50,000 × $e^{-0.15}$ ≈ \\$43{,}035.40; annual-equivalent PDV = 50,000 × $(1.051271)^{-3}$ ≈ \\$43{,}035.40 (identical).",
+    "formulas": "Continuous: $PDV = Ke^{-rt}$\nEquivalent annual rate: setting $K(1+r_a)^{-t} = Ke^{-rt}$ and cancelling K and t shows $1+r_a = e^{r}$ (independent of t)",
+    "steps": "rt = 0.05 × 7 = 0.35, $e^{-0.35}$ ≈ 0.704688, so $PDV \\approx 50{,}000 \\times 0.704688 \\approx \\$35{,}234.40$. $1+r_a = e^{0.05}$ ≈ 1.051271, so ra ≈ 0.051271 = 5.13%. Gap = 5.13% - 5.00% = 0.13 percentage points. At t = 3: continuous $PDV = 50{,}000 \\times e^{-0.15} \\approx \\$43{,}035.40$; annual-equivalent $PDV = 50{,}000 \\times (1.051271)^{-3} \\approx \\$43{,}035.40$ (identical).",
     "explanations": [
       "Raising the payment's exponent rt = 0.05 × 7 = 0.35 and applying $e^{-0.35}$ gives the fraction of the \\$50{,}000 that survives continuous discounting over 7 years, which comes to approximately 0.704688, so multiplying through gives a present value of about \\$35{,}234.40, not \\$33{,}100.00.",
       "Continuous compounding grows money faster than annual compounding at the same numerical rate, since interest accrues at every instant rather than once a year. To replicate that stronger effect with annual compounding, the annual rate must actually be set slightly above 5.00% - specifically about 5.13% - not left equal to the continuous rate.",
-      "Solving $1+r_a$ = $e^{0.05}$ gives ra ≈ 1.051271 - 1 = 5.13%, not 5.87%. The stated figure is too high and does not match the algebra of matching a continuous rate with an annual one.",
+      "Solving $1+r_a = e^{0.05}$ gives ra ≈ 1.051271 - 1 = 5.13%, not 5.87%. The stated figure is too high and does not match the algebra of matching a continuous rate with an annual one.",
       "Because the relationship $1+r_a = e^{r}$ does not depend on the payment horizon t, applying the 5.13% annual rate at a completely different horizon, t = 3, still reproduces the same present value as continuous compounding at 5% over that horizon: both methods give approximately \\$43{,}035.40.",
       "The actual gap between the equivalent annual rate (5.13%) and the continuous rate (5.00%) is only about 0.13 percentage points, since $e^{0.05}$ is very close to 1.05 for a small rate like this one. That gap is far below 1.00 percentage point, so the statement overstates the true difference substantially."
     ]
@@ -361,14 +361,14 @@
       true
     ],
     "given": "$K_1 = \\$42{,}000$ due in $t_1 = 3$ years\nTarget combined $PDV = \\$100{,}000$\nNominal annual rate p = 6%, so r = 0.06\nSecond receivable due in $t_2 = 6$ years, face amount $K_2$ unknown",
-    "formulas": "PDV = $K(1+r)^{-t}$\n$K_2$ = (Target − $\\mathrm{PV}_1$) × $(1+r)^{t_2}$",
-    "steps": "$\\mathrm{PV}_1$ = 42,000 × $(1.06)^{-3}$ = 42,000/1.191016 ≈ \\$35{,}264.01. $\\mathrm{PV}_2$ needed = 100,000 - 35,264.01 = \\$64{,}735.99. $K_2$ = 64,735.99 × $(1.06)^{6}$ = 64,735.99 × 1.418519 ≈ \\$91{,}829.24. If $t_2 = 3$: $K_2$ = 64,735.99 × $(1.06)^{3}$ = 64,735.99 × 1.191016 ≈ \\$77{,}101.60. At r = 8%: $K_2$ = 64,735.99 × $(1.08)^{6}$ = 64,735.99 × 1.586874 ≈ \\$102{,}727.88.",
+    "formulas": "$PDV = K(1+r)^{-t}$\n$K_2 = (\\mathrm{PDV}_{\\mathrm{target}} - \\mathrm{PV}_1)(1+r)^{t_2}$",
+    "steps": "$\\mathrm{PV}_1 = 42{,}000 \\times (1.06)^{-3} = 42{,}000/1.191016 \\approx \\$35{,}264.01$. $\\mathrm{PV}_2$ needed = 100,000 - 35,264.01 = \\$64{,}735.99. $K_2 = 64{,}735.99 \\times (1.06)^{6} = 64{,}735.99 \\times 1.418519 \\approx \\$91{,}829.24$. If $t_2 = 3$: $K_2 = 64{,}735.99 \\times (1.06)^{3} = 64{,}735.99 \\times 1.191016 \\approx \\$77{,}101.60$. At r = 8%: $K_2 = 64{,}735.99 \\times (1.08)^{6} = 64{,}735.99 \\times 1.586874 \\approx \\$102{,}727.88$.",
     "explanations": [
       "Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.",
       "Since the covenant requires a combined present value of \\$100{,}000 and the first receivable already supplies about \\$35{,}264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ \\$64{,}735.99.",
-      "To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: 64,735.99 × $(1.06)^{6}$ ≈ \\$91{,}829.24 is the face amount needed on a receivable due in 6 years.",
+      "To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: $64{,}735.99 \\times (1.06)^{6} \\approx \\$91{,}829.24$ is the face amount needed on a receivable due in 6 years.",
       "A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2 = 3$ gives only about \\$77{,}101.60, which is smaller than \\$91{,}829.24, the opposite of what the statement claims.",
-      "A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same \\$64{,}735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives 64,735.99 × $(1.08)^{6}$ ≈ \\$102{,}727.88, confirming the figure exactly."
+      "A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same \\$64{,}735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives $64{,}735.99 \\times (1.08)^{6} \\approx \\$102{,}727.88$, confirming the figure exactly."
     ]
   },
   {
@@ -392,7 +392,7 @@
       true
     ],
     "given": "Immediate option = \\$35{,}000 (today)\nContinuous annual rate p = 6.5%, so r = 0.065\nt = 4 years",
-    "formulas": "Indifference condition: Immediate amount = $Ke^{-rt}$, so K = Immediate amount × $e^{rt}$",
+    "formulas": "Indifference condition: $\\mathrm{PV}_0 = Ke^{-rt}$, so $K = \\mathrm{PV}_0\\, e^{rt}$",
     "steps": "rt = 0.065 × 4 = 0.26, so $e^{-0.26}$ ≈ 0.7711. K = 35,000/0.7711 ≈ \\$45{,}392.55. Excess over \\$35{,}000 = 45,392.55 - 35,000 = \\$10{,}392.55. At r = 9%: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so K = 35,000/0.6977 ≈ \\$50{,}166.53. At t = 2: rt = 0.13, $e^{-0.13}$ ≈ 0.8781, so K = 35,000/0.8781 ≈ \\$39{,}858.99.",
     "explanations": [
       "Multiplying the exponent’s two pieces, 0.065 × 4 = 0.26, and evaluating $e^{-0.26}$ correctly gives approximately 0.7711, not 0.8112. The value in the statement does not match this calculation.",
@@ -423,8 +423,8 @@
       false
     ],
     "given": "$P(t) = 40{,}000e^{0.05t}$\nContinuous annual discount rate p = 8%, so r = 0.08",
-    "formulas": "Present value: f(t) = $P(t)e^{-rt} = 40{,}000e^{(0.05-0.08)t} = 40{,}000e^{-0.03t}$\nOptimality condition: P'(t*) = rP(t*)",
-    "steps": "$P'(t) = 0.05 \\times 40{,}000e^{0.05t} = 0.05P(t)$, so the condition P'(t*) = rP(t*) would require 0.05P(t*) = 0.08P(t*), impossible for P(t*) > 0. Since f(t) = $40{,}000e^{-0.03t}$ is strictly decreasing for t ≥ 0, f is maximized at t = 0, giving f(0) = $P(0) = \\$40{,}000$. f(10) = $40{,}000e^{-0.03 \\times 10} = 40{,}000e^{-0.3}$ ≈ 40,000 × 0.740818 ≈ \\$29{,}632.73. Compare f(0) = \\$40{,}000 with f(10) ≈ \\$29{,}632.73. If r = 4% < 5% growth rate, f(t) = $40{,}000e^{(0.05-0.04)t} = 40{,}000e^{0.01t}$, which increases without bound in t.",
+    "formulas": "Present value: $f(t) = P(t)e^{-rt} = 40{,}000e^{(0.05-0.08)t} = 40{,}000e^{-0.03t}$\nOptimality condition: $P'(t*) = rP(t*)$",
+    "steps": "$P'(t) = 0.05 \\times 40{,}000e^{0.05t} = 0.05P(t)$, so the condition $P'(t*) = rP(t*)$ would require $0.05P(t*) = 0.08P(t*)$, impossible for P(t*) > 0. Since $f(t) = 40{,}000e^{-0.03t}$ is strictly decreasing for t ≥ 0, f is maximized at t = 0, giving $f(0) = P(0) = \\$40{,}000$. $f(10) = 40{,}000e^{-0.03 \\times 10} = 40{,}000e^{-0.3}$ ≈ 40,000 × 0.740818 ≈ \\$29{,}632.73. Compare $f(0) = \\$40{,}000$ with f(10) ≈ \\$29{,}632.73. If r = 4% < 5% growth rate, $f(t) = 40{,}000e^{(0.05-0.04)t} = 40{,}000e^{0.01t}$, which increases without bound in t.",
     "explanations": [
       "Because the wine's growth rate (5%) is smaller than the discount rate (8%), the derivative P'(t) always falls short of rP(t) at every t, so there is no interior point where the two become equal. With no interior critical point available, the present value is maximized right at the boundary, t* = 0, meaning the wine should be sold immediately.",
       "Evaluating P(t) at t = 0 gives $P(0) = \\$40{,}000 e^{0} = \\$40{,}000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.",
@@ -454,7 +454,7 @@
       true
     ],
     "given": "$P(t*) = \\$520{,}000$\n$P'(t*) = \\$46{,}800$\n$P''(t*) = \\$3{,}120$ per year\nContinuous annual rate p = 9%, so r = 0.09",
-    "formulas": "Optimality check: P'(t*) = rP(t*)\ndt*/dr = P(t*) / [P''(t*) - rP'(t*)]\nSecond-order condition for a maximum: P''(t*) - rP'(t*) < 0",
+    "formulas": "Optimality check: $P'(t*) = rP(t*)$\n$dt*/dr = P(t*) / [P''(t*) - rP'(t*)]$\nSecond-order condition for a maximum: $P''(t*) - rP'(t*) < 0$",
     "steps": "0.09 × 520,000 = \\$46{,}800, matching the given P'(t*) exactly. P''(t*) - rP'(t*) = 3,120 - 0.09(46,800) = 3,120 - 4,212 = -\\$1{,}092. dt*/dr = 520,000 / (-1,092) ≈ -476.19. A negative dt*/dr means t* moves in the opposite direction from r. -1,092 < 0, so the second-order condition holds.",
     "explanations": [
       "Multiplying the given interest rate by the given P(t*), 0.09 × 520,000, produces exactly \\$46{,}800, which matches the given P'(t*) precisely, confirming that the data really do describe a point satisfying the chapter's first-order optimality condition.",
@@ -485,10 +485,10 @@
       false
     ],
     "given": "$P(t) = 3{,}000(t+4)^{2}$\nContinuous annual rate p = 9%, so r = 0.09",
-    "formulas": "P'(t) = 6,000(t + 4)\nOptimality condition: P'(t*) = rP(t*)\ndt*/dr = P(t*) / [P''(t*) - rP'(t*)]",
-    "steps": "$6{,}000(t + 4) = 0.09 \\times 3{,}000(t+4)^{2} = 270(t+4)^{2}$; dividing by (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222, i.e., t* ≈ 18.22 years. $P(t*) = 3{,}000(22.2222)^{2}$ ≈ \\$1{,}481{,}481.48. f(t*) = $P(t*)e^{-0.09 \\times 18.2222}$ = 1,481,481.48 × $e^{-1.64}$ ≈ \\$287{,}377.84. P'(t*) = 6,000(22.2222) ≈ \\$133{,}333.33. P''(t) = 6,000 (constant). P''(t*) - rP'(t*) = 6,000 - 0.09(133,333.33) = 6,000 - 12,000 = -\\$6{,}000. dt*/dr = 1,481,481.48 / (-6,000) ≈ -246.91. General relation for this P(t): t* + 4 = 2/r, so t* = 2/r - 4. At r = 4.5%: t* = 2/0.045 - 4 ≈ 40.44 years.",
+    "formulas": "$P'(t) = 6{,}000(t + 4)$\nOptimality condition: $P'(t*) = rP(t*)$\n$dt*/dr = P(t*) / [P''(t*) - rP'(t*)]$",
+    "steps": "$6{,}000(t + 4) = 0.09 \\times 3{,}000(t+4)^{2} = 270(t+4)^{2}$; dividing by (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222, i.e., t* ≈ 18.22 years. $P(t*) = 3{,}000(22.2222)^{2}$ ≈ \\$1{,}481{,}481.48. $f(t*) = P(t*)e^{-0.09 \\times 18.2222} = 1{,}481{,}481.48 \\times e^{-1.64} \\approx \\$287{,}377.84$. $P'(t*) = 6{,}000(22.2222)$ ≈ \\$133{,}333.33. $P''(t) = 6{,}000$ (constant). $P''(t*) - rP'(t*) = 6{,}000 - 0.09(133{,}333.33) = 6{,}000 - 12{,}000 = -\\$6{,}000$. $dt*/dr = 1{,}481{,}481.48 / (-6{,}000)$ ≈ -246.91. General relation for this P(t): $t* + 4 = 2/r$, so $t* = 2/r - 4$. At r = 4.5%: $t* = 2/0.045 - 4$ ≈ 40.44 years.",
     "explanations": [
-      "Solving 6,000(t + 4) = $270(t + 4)^{2}$ by dividing out the common factor (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222 and t* ≈ 18.22 years, matching the optimality condition exactly.",
+      "Solving $6{,}000(t + 4) = 270(t + 4)^{2}$ by dividing out the common factor (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222 and t* ≈ 18.22 years, matching the optimality condition exactly.",
       "Evaluating P(t*) first and then multiplying by $e^{-rt^*}$ gives a present value of approximately \\$287{,}377.84, considerably above the \\$250{,}000.00 stated, which understates the true maximum by more than \\$37{,}000.",
       "Carefully computing P''(t*) - rP'(t*) = 6,000 - 12,000 gives -\\$6{,}000, not +\\$6{,}000. Moreover, a negative value here is precisely what confirms a maximum under the chapter's second-order condition, so the correct sign points to a maximum, not a minimum as the statement claims.",
       "Dividing P(t*) by the correctly signed denominator gives dt*/dr ≈ -246.91, which is negative, not positive. A negative sensitivity means a higher interest rate shortens the optimal harvest time rather than lengthening it.",
@@ -516,7 +516,7 @@
       true
     ],
     "given": "$K_1 = \\$250{,}000$ due in $t_1 = 2.5$ years\n$K_2 = \\$40{,}000$ due in $t_2 = 7/12$ year\nContinuous annual rate p = 11%, so r = 0.11",
-    "formulas": "PDV = $Ke^{-rt}$\nCombined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
+    "formulas": "$PDV = Ke^{-rt}$\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$",
     "steps": "$rt_1$ = 0.11 × 2.5 = 0.275, $e^{-0.275}$ ≈ 0.759572, so $\\mathrm{PV}_1$ = 250,000 × 0.759572 ≈ \\$189{,}893.03. $rt_2$ = 0.11 × 0.583333 ≈ 0.064167, $e^{-0.064167}$ ≈ 0.937849, so $\\mathrm{PV}_2$ = 40,000 × 0.937849 ≈ \\$37{,}513.95. Combined PDV = 189,893.03 + 37,513.95 ≈ \\$227{,}406.98. $\\mathrm{PV}_2$ ≈ \\$37{,}513.95, which is 40,000 - 37,513.95 = \\$2{,}486.05 less than face value, only about 6.2% of the face amount. At r = 0: $e^{0}$ = 1, so combined PDV = 250,000 + 40,000 = \\$290{,}000.",
     "explanations": [
       "Multiplying the exit payment's exponent, 0.11 × 2.5 = 0.275, into $e^{-0.275}$ gives approximately 0.759572, and applying that discount factor to \\$250{,}000 gives a present value of about \\$189{,}893.03.",
@@ -547,7 +547,7 @@
       true
     ],
     "given": "$PDV = \\$2{,}000{,}000$\n$K = \\$3{,}200{,}000$\nt = 4.5 years (continuous compounding)",
-    "formulas": "PDV = $Ke^{-rt}$, so r = -ln(PDV/K) / t",
+    "formulas": "$PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$",
     "steps": "PDV/K = 2,000,000/3,200,000 = 0.625. r = -ln(0.625)/4.5 = 0.470004/4.5 ≈ 0.104445 = 10.44%. For $K = \\$3{,}600{,}000$: ratio = 2,000,000/3,600,000 ≈ 0.555556, r = -ln(0.555556)/4.5 ≈ 0.587787/4.5 ≈ 0.130619 = 13.06%. For t = 3: r = -ln(0.625)/3 = 0.470004/3 ≈ 0.156668 = 15.67%. For t = 9 with the same discount factor 0.625: r = -ln(0.625)/9 = 0.470004/9 ≈ 0.052223 = 5.22%.",
     "explanations": [
       "Dividing the \\$2{,}000{,}000 price paid by the \\$3{,}200{,}000 guaranteed payout gives exactly 2,000,000/3,200,000 = 0.625, with no rounding involved.",
@@ -578,10 +578,10 @@
       false
     ],
     "given": "$P(t) = A(t + k)^{2}$, with A = 1,200, k = 5\nContinuous annual rate p = 7.5%, so r = 0.075",
-    "formulas": "P'(t) = 2A(t + k)\nOptimality condition: P'(t*) = rP(t*)",
-    "steps": "2A(t + k) = $r A(t + k)^{2}$; dividing both sides by A(t + k) (nonzero) gives 2 = r(t + k), so t* = 2/r - k. t* = 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years. $P(t*) = 1{,}200(26.6667)^{2}$ ≈ \\$853{,}333.33. f(t*) = 853,333.33 × $e^{-0.075 \\times 21.6667}$ = 853,333.33 × $e^{-1.625}$ ≈ \\$168{,}031.30. With k = 8: t* = 2/0.075 - 8 ≈ 26.6667 - 8 = 18.67 years. With r = 15%: t* = 2/0.15 - 5 = 13.3333 - 5 = 8.33 years. Half of the original 21.67 years is 10.83 years.",
+    "formulas": "$P'(t) = 2A(t + k)$\nOptimality condition: $P'(t*) = rP(t*)$",
+    "steps": "$2A(t + k) = r A(t + k)^{2}$; dividing both sides by $A(t + k)$ (nonzero) gives $2 = r(t + k)$, so $t* = 2/r - k$. $t* = 2/0.075 - 5 = 26.6667 - 5$ ≈ 21.67 years. $P(t*) = 1{,}200(26.6667)^{2}$ ≈ \\$853{,}333.33. $f(t*) = 853{,}333.33 \\times e^{-0.075 \\times 21.6667} = 853{,}333.33 \\times e^{-1.625} \\approx \\$168{,}031.30$. With k = 8: $t* = 2/0.075 - 8$ ≈ 26.6667 - 8 = 18.67 years. With r = 15%: $t* = 2/0.15 - 5 = 13.3333 - 5 = 8.33$ years. Half of the original 21.67 years is 10.83 years.",
     "explanations": [
-      "Dividing the optimality equation 2A(t + k) = $r A(t + k)^{2}$ through by the common factor A(t + k) leaves 2 = r(t + k), and rearranging for t gives exactly t* = 2/r - k, confirming the general formula.",
+      "Dividing the optimality equation $2A(t + k) = r A(t + k)^{2}$ through by the common factor $A(t + k)$ leaves $2 = r(t + k)$, and rearranging for t gives exactly $t* = 2/r - k$, confirming the general formula.",
       "Plugging r = 0.075 and k = 5 into t* = 2/r - k gives 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years.",
       "Evaluating P at t* and then discounting with $e^{-rt^*}$ gives a present value of approximately \\$168{,}031.30, well below the \\$195{,}500.00 stated, which overstates the true value by over \\$27{,}000.",
       "Since t* = 2/r - k decreases as k increases (a larger k is subtracted), raising k from 5 to 8 shortens the optimal harvest time. Recomputing with k = 8 gives t* ≈ 18.67 years, which is indeed shorter than the original 21.67 years.",
@@ -609,7 +609,7 @@
       false
     ],
     "given": "$K_1 = \\$30{,}000$ due in $t_1 = 5$ years\n$K_2 = \\$55{,}000$ due in $t_2 = 10$ years\nContinuous annual rate p = 8%, so r = 0.08",
-    "formulas": "PDV = $Ke^{-rt}$\nSince $t_2 = 2t_1$, the discount factor $e^{-rt_2}=(e^{-rt_1})^{2}$\nCombined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
+    "formulas": "$PDV = Ke^{-rt}$\nSince $t_2 = 2t_1$, the discount factor $e^{-rt_2}=(e^{-rt_1})^{2}$\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$",
     "steps": "$e^{-0.4}$ ≈ 0.670320. $e^{-0.8}$ ≈ 0.449329; note $(0.670320)^{2}$ ≈ 0.449329, confirming the squaring relationship. $\\mathrm{PV}_1$ = 30,000 × 0.670320 ≈ \\$20{,}109.60. $\\mathrm{PV}_2$ = 55,000 × 0.449329 ≈ \\$24{,}713.09. Combined PDV = 20,109.60 + 24,713.09 ≈ \\$44{,}822.69.",
     "explanations": [
       "Raising e to the power -0.4 (the product of the 8% rate and the 5-year horizon) gives a discount factor of approximately 0.6703 for the first payment.",
