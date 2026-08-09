@@ -8,37 +8,31 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If inflation rises, the central bank raises the policy rate.",
-        "If the board approves the budget, the firm will hire three analysts next month.",
-        "If demand increases, the warehouse will restocks overnight.",
-        "If cash flow improves, payroll will processes on Friday.",
-        "If the client signs today, logistics would ship the sample kit tomorrow for certain."
+        "If you heat ice, it melts.",
+        "If the library opens early, Maya will finish her essay before lunch.",
+        "If it rains tomorrow, we will cancels the picnic.",
+        "If Leo studies tonight, he passes the quiz for certain next week.",
+        "If the oven is ready, Sara will bakes the muffins."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [true, true, false, false, false],
       "tactical_explanations": [
-        "TRUE — This is a clean zero conditional: present simple in both clauses for a general business rule that always holds when the condition is met.\n\nTip: For habits and policy rules, keep both sides in present simple — not will.",
-        "TRUE — First conditional: a real future possibility takes present simple in the if-clause and will + base verb in the result.\n\nTip: After if for a real future plan, use present simple, then will in the main clause.",
-        "FALSE — The result clause mixes will with a third-person -s form (\"will restocks\"). After will you need the base form restock.\n\nTip: Modal will always takes a bare infinitive: will restock, never will restocks.",
-        "FALSE — After will the verb must stay bare: will process, not will processes. Agreement -s never follows a modal.\n\nTip: Scan will + verb: if you see an -s on that verb, the line is broken.",
-        "FALSE — A real tomorrow delivery plan needs will ship, not would ship. Would belongs to unreal or polite second-conditional territory.\n\nTip: Open near-term plans → will; reserve would for unreal or soft hypothetical results."
+        "TRUE — Zero conditional: present simple in both clauses for a general scientific fact that always holds.\n\nTip: Rules and natural facts → present + present, not will.",
+        "TRUE — First conditional: a real future plan takes present simple after if and will + base verb in the result.\n\nTip: Real near-future plans → if + present, main clause will + V1.",
+        "FALSE — After will the verb must stay bare: will cancel, not will cancels.\n\nTip: Modals never take a third-person -s on the following verb.",
+        "FALSE — A real future result needs will pass (or similar), not a bare present \"passes\" when you mean next week's outcome.\n\nTip: Open future results after a real condition usually take will, not plain present.",
+        "FALSE — Will takes the base form bake, not bakes.\n\nTip: Scan will + verb: if you see an -s, the line is broken."
       ],
       "highlights": [
-        "raises",
-        "will hire",
-        "will restocks",
-        "will processes",
-        "would ship"
+        "it melts",
+        "will finish",
+        "will cancels",
+        "he passes",
+        "will bakes"
       ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.2",
-      "solution_overview": "Walk each sentence like a checklist: is this a general rule (zero) or a real future plan (first)? Zero keeps present + present; first keeps present + will. Three lines fail on form — will + -s, and would where will is required."
+      "solution_overview": "Warm up on zero versus first: facts keep present + present; real plans keep present + will. Three lines fail on form — will + -s, and a bare present where a future result needs will."
     },
     {
       "id": "en-g-2-02",
@@ -46,37 +40,31 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the start-up had more working capital, it would expand into two new regions.",
-        "If I were the finance director, I would postpone the share buy-back.",
-        "If the supplier would have confirmed earlier, we would have met the launch date.",
-        "If margins were higher, the retailer would stock premium SKUs.",
-        "If the auditor were available on Monday, we would close the ledger then."
+        "If plants get no water, they die.",
+        "If Nora books the tickets today, we will sit together on the train.",
+        "If the bus is late, Tom will misses his lecture.",
+        "If you mix red and blue, you will get purple every time as a law of nature.",
+        "If the gym opens at six, Ana will train before work."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
-        "TRUE — Second conditional: past simple in the if-clause plus would + base verb for an unreal present or future business scenario.\n\nTip: Unreal now/soon → if + past simple, main clause would + infinitive.",
-        "TRUE — Formal were is the preferred subjunctive after if I for unreal advice or role-play, paired with would in the result.\n\nTip: In exams, prefer If I were … would … over If I was for hypothetical roles.",
-        "FALSE — Classic trap: do not put would have in the if-clause. The unreal past condition needs past perfect: If the supplier had confirmed earlier…\n\nTip: Never write if … would have; use if … had + past participle instead.",
-        "TRUE — Standard second conditional for a counterfactual present about margins and assortment.\n\nTip: Past simple + would is the default unreal-present frame.",
-        "TRUE — Were with a third-person singular subject is fine in careful business English for an unreal present condition.\n\nTip: If X were … would … is exam-safe for unreal present, even with he/she/it."
+        "TRUE — Zero conditional correctly states a general consequence with present simple on both sides.\n\nTip: Habitual or scientific truths prefer zero, not will.",
+        "TRUE — First conditional correctly links a real booking decision to a future seating plan.\n\nTip: Present in the if-clause; will in the result for open futures.",
+        "FALSE — Will misses is ungrammatical; use will miss.\n\nTip: After will, always use the bare infinitive.",
+        "FALSE — A timeless colour fact belongs in zero conditional (you get purple), not first with will.\n\nTip: If the result is always true, drop will and keep present + present.",
+        "TRUE — Clean first conditional for a real morning plan.\n\nTip: Real timetable + real intention → present + will."
       ],
       "highlights": [
-        "would expand",
-        "If I were",
-        "would have confirmed",
-        "would stock",
-        "were available"
+        "they die",
+        "will sit",
+        "will misses",
+        "will get",
+        "will train"
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.2",
-      "solution_overview": "These lines test unreal present (second conditional) and the infamous if … would have trap. Keep would only in the result clause; the if-clause wants past simple or were, never would have."
+      "solution_overview": "Separate always-true rules (zero) from open future plans (first). Reject will + -s, and reject will when the sentence is really stating a permanent fact."
     },
     {
       "id": "en-g-2-03",
@@ -84,37 +72,31 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the bank had tightened covenants sooner, the borrower would have refinanced elsewhere.",
-        "Had the logistics team booked the slots, the shipment would have cleared customs on time.",
-        "Had the CFO hedged the exposure, the firm will avoid the currency loss.",
-        "If procurement had dual-sourced the chip, production would not have stalled.",
-        "Had marketing tested the creative, the campaign would have launched with fewer revisions."
+        "If I were you, I would take the earlier train.",
+        "If the weather were better, we would cycle to the lake.",
+        "If she would have more free time, she would join the choir.",
+        "If Dan lived closer, he would walk to campus every day.",
+        "If I was the team captain tomorrow in this hypothetical, I would change the formation."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Third conditional: past perfect in the if-clause and would have + past participle for a closed past outcome.\n\nTip: Past unreal → if + had + V3, main clause would have + V3.",
-        "TRUE — Inverted third conditional: Had + subject + past participle replaces If + subject + had, with the same would have result.\n\nTip: Had the team … would have … equals If the team had … would have …",
-        "FALSE — After inverted Had … the result must stay in the third-conditional world (would have), not will. Will clashes with a finished past condition.\n\nTip: Inversion still needs would have / could have / might have — never bare will.",
-        "TRUE — Classic third conditional on a missed sourcing decision and its past production impact.\n\nTip: Check both verbs: had dual-sourced + would not have stalled.",
-        "TRUE — Another clean Had-inversion third conditional about campaign testing.\n\nTip: If the sentence starts with Had + past participle phrase, expect would have in the main clause."
+        "TRUE — Second conditional with formal were after if I, plus would + base verb for unreal advice.\n\nTip: Exams prefer If I were … would … for hypothetical roles.",
+        "TRUE — Past simple/were in the if-clause plus would marks an unreal present wish about the weather.\n\nTip: Unreal now → if + past, result would + V1.",
+        "FALSE — Do not put would in the if-clause; use If she had more free time…\n\nTip: Keep would in the result only; the if-clause wants past simple.",
+        "TRUE — Standard second conditional for a counterfactual present about distance and commuting.\n\nTip: Past simple + would is the default unreal-present frame.",
+        "FALSE — Careful exam English prefers were for unreal be after if, not was, especially in formal true/false items.\n\nTip: Hypothetical be → were is the safe exam choice."
       ],
       "highlights": [
-        "would have refinanced",
-        "Had the logistics",
-        "will avoid",
-        "would not have stalled",
-        "would have launched"
+        "If I were",
+        "were better",
+        "would have more",
+        "would walk",
+        "If I was"
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.2",
-      "solution_overview": "Focus on closed past regrets: past perfect (or Had-inversion) plus would have. The broken line swaps will into a past counterfactual — that tense clash is the giveaway."
+      "solution_overview": "These lines introduce unreal present (second conditional). Watch for would inside the if-clause and prefer were over was in careful hypothetical be."
     },
     {
       "id": "en-g-2-04",
@@ -122,37 +104,31 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the firm had entered the Nordic market last year, it would have a stronger brand there now.",
-        "If inventory were lower today, we would have ordered less last quarter.",
-        "If the tender is won, the contractor will mobilise within ten days.",
-        "If energy prices fall, factories cut night-shift overtime.",
-        "If I would be the project lead, I would freeze scope changes."
+        "Unless it rains, the match will go ahead.",
+        "As long as you water the herbs, they will stay fresh.",
+        "Unless you will hurry, we will miss the opening credits.",
+        "If only I knew her phone number now.",
+        "I wish I can speak Italian fluently this semester."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Mixed conditional: past cause (had entered) with a present result (would have a stronger brand now).\n\nTip: Past cause → present result: if + past perfect, would + present-state verb.",
-        "TRUE — The other common mix: unreal present condition (were lower today) explaining a different past action (would have ordered).\n\nTip: Present unreal → past result: if + past simple/were, would have + V3.",
-        "TRUE — Straightforward first conditional for a still-open tender outcome.\n\nTip: Open future deal → present + will.",
-        "TRUE — Zero conditional describing how plants generally respond when energy prices fall.\n\nTip: General operations rule → present + present.",
-        "FALSE — Avoid would in the if-clause. For an unreal role use If I were the project lead, I would freeze…\n\nTip: If I would be is almost always wrong; rewrite as If I were / If I was (informal)."
+        "TRUE — Unless (= if not) + present simple pairs cleanly with will for a real future sports plan.\n\nTip: Treat unless like if not: present in the condition, will in the result.",
+        "TRUE — As long as (= provided that) takes present simple for a real ongoing condition, then will in the result.\n\nTip: As long as / provided that → present + will for open conditions.",
+        "FALSE — After unless, avoid will; use present: Unless you hurry…\n\nTip: Unless / if / as long as rarely take will in the condition clause.",
+        "TRUE — If only + past simple correctly wishes about an unreal present lack of knowledge.\n\nTip: Present regrets with wish / if only → past simple.",
+        "FALSE — Wish about present ability needs past form: I wish I could speak…, not can.\n\nTip: After wish, shift the tense back one step from reality."
       ],
       "highlights": [
-        "would have a stronger",
-        "would have ordered",
-        "will mobilise",
-        "cut night-shift",
-        "If I would be"
+        "Unless it rains",
+        "As long as you water",
+        "Unless you will",
+        "If only I knew",
+        "wish I can"
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.2",
-      "solution_overview": "Four lines are healthy mixes of zero, first, and mixed conditionals. Isolate the if-clause that wrongly uses would — that is the only hard fail on this card."
+      "solution_overview": "Meet unless, as long as, and wish / if only at entry level. Keep will out of the condition clause, and shift tenses back after wish for present unreal situations."
     },
     {
       "id": "en-g-2-05",
@@ -160,37 +136,31 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Unless the invoice is paid by Friday, the wholesaler will suspend further deliveries.",
-        "If the KPI dashboard updates nightly, managers review exceptions each morning.",
-        "If headcount rose next spring, HR will open a graduate scheme.",
-        "Provided that compliance clears the script, the webinar will go live at noon.",
-        "If liquidity dried up tomorrow, treasurers would draw the revolving facility."
+        "If the cinema had more evening slots, we would go more often.",
+        "If I had known about the sale, I would have bought the jacket.",
+        "If they would practise every day, they would improve faster.",
+        "Unless Mia finishes her lab report, she will not watch the film.",
+        "As long as the neighbours keep quiet, I can revise until midnight."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Unless + present simple works like a first-conditional if-not clause, with will in the result.\n\nTip: Unless ≈ if not; keep present after unless for real future threats.",
-        "TRUE — Zero conditional for a recurring overnight data habit and the morning review that follows.\n\nTip: Habitual systems → present in both clauses.",
-        "FALSE — Mixing past simple (rose) with will for a still-possible next-spring plan is inconsistent. Use rises … will open, or rose … would open for unreal.\n\nTip: Match time frames: real future needs present + will, not past + will.",
-        "TRUE — Provided that behaves like if in a first conditional and correctly pairs with will.\n\nTip: Provided that / as long as take the same tense pattern as if.",
-        "TRUE — Second conditional for an unlikely near-term liquidity crunch: past simple + would.\n\nTip: Unlikely tomorrow-stress → past + would."
+        "TRUE — Second conditional for an unreal present about the cinema timetable.\n\nTip: Unreal present → past simple + would.",
+        "TRUE — Third conditional: past perfect in the if-clause and would have + past participle for a missed past opportunity.\n\nTip: Unreal past → if + had + V3, result would have + V3.",
+        "FALSE — Would does not belong in the if-clause; use If they practised…\n\nTip: Ban would from the condition; leave it for the result.",
+        "TRUE — Unless + present correctly sets a real study condition before a future plan.\n\nTip: Unless + present + will / will not is exam-safe for real futures.",
+        "TRUE — As long as + present states a real proviso that enables present ability.\n\nTip: As long as can support present results (can / may) as well as will."
       ],
       "highlights": [
-        "Unless the invoice",
-        "review exceptions",
-        "rose next spring",
-        "Provided that",
-        "would draw"
+        "would go",
+        "would have bought",
+        "would practise",
+        "Unless Mia finishes",
+        "As long as the neighbours"
       ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.2",
-      "solution_overview": "Watch connectors (unless, provided that) — they follow the same tense rules as if. The weak sentence pairs a past-form condition with will for an open future plan."
+      "solution_overview": "Blend second, third, unless, and as long as. The only clear fail is would inside the if-clause; everything else keeps the condition form clean."
     },
     {
       "id": "en-g-2-06",
@@ -198,37 +168,31 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the joint venture had secured the licence in March, it would be operating at full capacity now.",
-        "Had interest rates stayed low, the REIT would refinance the portfolio last autumn.",
-        "If customers complained about packaging, the brand redesigns the inserts.",
-        "If I were advising the board, I would ring-fence the contingency reserve.",
-        "If the merger would have closed in Q2, synergies would have appeared sooner."
+        "If the ferry had left on time, we would have reached the island before dusk.",
+        "Had she set an alarm, she would not have overslept.",
+        "If Ben had trained harder, he will have won the race.",
+        "I wish I had packed an umbrella yesterday.",
+        "If only the Wi-Fi worked in this café right now."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Mixed: past perfect condition with a present continuous-style result (would be operating now).\n\nTip: Past decision → present state: had + V3, then would + be + -ing / would + base.",
-        "FALSE — Had … stayed sets a third/mixed past frame, but would refinance (simple) fails to mark the missed autumn action; need would have refinanced.\n\nTip: A finished past result after Had … needs would have + V3.",
-        "TRUE — Zero conditional for a standing customer-service rule.\n\nTip: Whenever-style complaints → present + present.",
-        "TRUE — If I were + would is the polished second-conditional advisory pattern.\n\nTip: Hypothetical advice voice: If I were …, I would …",
-        "FALSE — Another if … would have trap in the condition clause; rewrite as If the merger had closed in Q2…\n\nTip: Delete would from every if-clause; use had + V3 for past unreal."
+        "TRUE — Classic third conditional for a missed travel outcome in the past.\n\nTip: Past unreal → had + V3 / would have + V3.",
+        "TRUE — Inverted third conditional (Had she set…) correctly replaces If she had set…\n\nTip: Had + subject + V3 is a formal shortcut for if + past perfect.",
+        "FALSE — The result must stay in the unreal past: would have won, not will have won.\n\nTip: Third conditional results use would have, never will have.",
+        "TRUE — Wish + past perfect correctly regrets a past packing choice.\n\nTip: Past regrets after wish / if only → past perfect.",
+        "TRUE — If only + past simple correctly wishes about an unreal present problem.\n\nTip: Present inconvenience → past simple after if only."
       ],
       "highlights": [
-        "would be operating",
-        "would refinance",
-        "redesigns the inserts",
-        "If I were advising",
-        "would have closed"
+        "would have reached",
+        "Had she set",
+        "will have won",
+        "wish I had packed",
+        "If only the Wi-Fi worked"
       ],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.2",
-      "solution_overview": "Two failures hide in past counterfactuals: one under-marks the result (would instead of would have), and one illegally places would have after if. The true lines show clean zero, mixed, and If I were patterns."
+      "solution_overview": "Focus on unreal past: third conditional, Had-inversion, and wish / if only. Reject will have where would have is required."
     },
     {
       "id": "en-g-2-07",
@@ -236,37 +200,31 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Should the underwriter demand more disclosure, the issuer will file an amended prospectus.",
-        "If unit costs fall below target, the plant will increase daily throughput.",
-        "If the franchisee paid royalties on time, the brand renews the territory next year.",
-        "Had the warehouse installed scanners earlier, picking errors would have dropped.",
-        "If demand softens, dynamic pricing lowers weekend rates automatically."
+        "If you don't water the tomatoes, they will wilt.",
+        "Unless you don't water the tomatoes, they will wilt.",
+        "As long as students submit drafts on Friday, the tutor will give feedback on Monday.",
+        "I wish the neighbours would stop drilling at dawn.",
+        "If only she will listen to the podcast before the seminar."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Formal first-conditional inversion with Should + subject + base verb, then will in the result.\n\nTip: Should the X … will … = If the X … will … for real future contingencies.",
-        "TRUE — Ordinary first conditional on a cost-threshold trigger.\n\nTip: Present after if + will for operational targets.",
-        "FALSE — Past simple paid paired with present renews for a next-year plan is a tense mash-up. Use pays … will renew, or paid … would renew.\n\nTip: Do not mix a past if-clause with a present-simple future result.",
-        "TRUE — Had-inversion third conditional on a past technology investment.\n\nTip: Had + V3 … would have + V3 is the inversion checklist.",
-        "TRUE — Zero conditional for an automated pricing rule.\n\nTip: System rules that always fire → present + present."
+        "TRUE — First conditional with a negative if-clause correctly predicts a real future result.\n\nTip: If + present (affirmative or negative) + will is fine for open futures.",
+        "FALSE — Unless already means if not, so Unless you don't creates a messy double negative; use Unless you water… or If you don't…\n\nTip: Avoid stacking unless with another negative.",
+        "TRUE — As long as + present correctly sets a real academic condition for a future result.\n\nTip: Provided / as long as behave like if for real conditions.",
+        "TRUE — Wish + would correctly complains about someone else's annoying present habit.\n\nTip: Wish + would = desire for a change in someone else's behaviour.",
+        "FALSE — If only for a present/future wish needs past or would, not will: If only she would listen… / If only she listened…\n\nTip: After if only, do not keep ordinary will."
       ],
       "highlights": [
-        "Should the underwriter",
-        "will increase",
-        "paid royalties",
-        "Had the warehouse",
-        "lowers weekend"
+        "If you don't water",
+        "Unless you don't",
+        "As long as students submit",
+        "wish the neighbours would",
+        "If only she will"
       ],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.2",
-      "solution_overview": "Should-inversion is just a formal first conditional — keep will in the result. Reject any line that jumps from a past if-clause straight into a present-simple future promise."
+      "solution_overview": "Watch polarity with unless, keep as long as in present for real plans, and use wish / if only + would for behaviour you want to change — not will."
     },
     {
       "id": "en-g-2-08",
@@ -274,37 +232,31 @@
       "title": "Task 8",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the catalogue were printed in colour, retail buyers would place larger orders.",
-        "If the courier arrives before noon, the clinic will still process same-day claims.",
-        "If R&D had patented the coating, competitors would not copy it so easily now.",
-        "If we would receive the escrow release, we will settle the contractors.",
-        "Were the exchange rate more stable, exporters would quote longer fixed prices."
+        "If the trail were less muddy, we would hike further.",
+        "If prices fall next month, more families will switch to seasonal produce.",
+        "If I would be taller, I would reach the top shelf easily.",
+        "Unless the museum closes early, we will see the sculpture wing.",
+        "I wish I were better at mental arithmetic."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Second conditional with were for an unreal present product decision.\n\nTip: Were / past simple + would marks counterfactual present.",
-        "TRUE — First conditional for a real same-day operations window.\n\nTip: Present + will for open daytime logistics.",
-        "TRUE — Mixed: past perfect cause with a present result (would not copy … now).\n\nTip: Past IP choice → present competitive pain: had + V3, would + base.",
-        "FALSE — Double fault: would in the if-clause and will in the result for what should be a simple first conditional (If we receive … we will settle).\n\nTip: Strip would from if; use present + will for real receipts.",
-        "TRUE — Were-inversion second conditional (Were the exchange rate …) equals If the exchange rate were…\n\nTip: Were + noun phrase … would … is formal unreal present."
+        "TRUE — Second conditional with were for an unreal present outdoor scenario.\n\nTip: Unreal be → were is preferred in careful English.",
+        "TRUE — First conditional: a real possible price change pairs with will switch. One everyday-economy line is fine among lifestyle topics.\n\nTip: Real future possibility → present + will.",
+        "FALSE — Never write If I would be; use If I were / If I was (exam: were).\n\nTip: Would stays out of the if-clause in standard conditionals.",
+        "TRUE — Unless + present + will correctly frames a real museum visit plan.\n\nTip: Unless = if not; keep present in the condition.",
+        "TRUE — Wish + were correctly marks an unreal present ability.\n\nTip: Wish I were is the formal pattern for present counterfactuals with be."
       ],
       "highlights": [
-        "were printed",
-        "will still process",
-        "would not copy",
-        "If we would receive",
-        "Were the exchange"
+        "were less muddy",
+        "will switch",
+        "If I would be",
+        "Unless the museum closes",
+        "wish I were"
       ],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.2",
-      "solution_overview": "Healthy second, first, mixed, and Were-inversion lines surround one toxic if we would receive … will settle pair. Train your eye to delete would from every if-clause first."
+      "solution_overview": "Consolidate second conditional, unless, wish + were, and one real first-conditional lifestyle/price line. The trap is If I would be."
     },
     {
       "id": "en-g-2-09",
@@ -312,37 +264,31 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the bond had been rated investment-grade, pension funds would hold larger positions today.",
-        "If churn stays under two percent, the SaaS firm will beat its ARR guidance.",
-        "Had the pilot failed safety checks, regulators would suspend the route indefinitely.",
-        "If staffing were flexible, overtime premiums would fall during peak weeks.",
-        "If the auctioneer would have set a higher reserve, the lot would have sold for more."
+        "If she had taken the earlier bus, she would be at the theatre now.",
+        "If he were more organised, he would have handed in the portfolio last Friday.",
+        "If they had left earlier, they would arrive yesterday evening.",
+        "If I had more patience as a child, I would have learned piano sooner.",
+        "If you heated the soup now, it would taste better."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
-        "TRUE — Mixed conditional: past rating event → present portfolio behaviour (would hold … today).\n\nTip: Look for now/today after a had-been condition — that signals mixed, not pure third.",
-        "TRUE — First conditional on a live KPI threshold and forward guidance.\n\nTip: Open metric path → present + will.",
-        "FALSE — Had the pilot failed frames a closed past check, so the result needs would have suspended, not would suspend (which reads like a present/future habit).\n\nTip: Past inversion + ongoing would is usually wrong; prefer would have for finished past results.",
-        "TRUE — Second conditional about an unreal present HR policy.\n\nTip: Were + would for counterfactual workforce design.",
-        "FALSE — If … would have set is the prohibited pattern; use If the auctioneer had set a higher reserve…\n\nTip: Past unreal conditions: had + V3 only — never would have after if."
+        "TRUE — Mixed conditional: past unreal cause (had taken) with present result (would be).\n\nTip: Past perfect in if + would + V1 = past cause, present effect.",
+        "TRUE — Mixed conditional: unreal present character (were) with past result (would have handed).\n\nTip: If + past / were + would have + V3 = present unreal trait, past consequence.",
+        "FALSE — A finished past result needs would have arrived, not would arrive, after a past perfect condition.\n\nTip: Past condition + past result → third, not first-looking would + V1 with yesterday.",
+        "FALSE — A childhood past state needs past perfect: If I had had more patience as a child…\n\nTip: Pure past regrets need had + past participle in the if-clause.",
+        "TRUE — Second conditional can use past simple heated for an unreal/unlikely present suggestion.\n\nTip: Soft hypothetical now → past + would."
       ],
       "highlights": [
-        "would hold larger",
-        "will beat",
-        "would suspend",
-        "would fall",
-        "would have set"
+        "would be at the theatre",
+        "would have handed",
+        "would arrive yesterday",
+        "If I had more patience as a child",
+        "If you heated"
       ],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.2",
-      "solution_overview": "Distinguish mixed present results from pure third-conditional past results. Two lines fail: one under-marks a past result after Had…, and one still smuggles would have into the if-clause."
+      "solution_overview": "Enter mixed conditionals: match the time of the cause to the time of the result. Reject would + V1 with clear past time markers, and reject weak past-perfect gaps in childhood regrets."
     },
     {
       "id": "en-g-2-10",
@@ -350,37 +296,31 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "As long as collateral covers the drawdown, the facility will remain available.",
-        "If freight rates spiked last winter, importers would switch to rail now.",
-        "If the prototype passes EMC tests, manufacturing will tool the moulds.",
-        "If I was the risk officer yesterday, I would have blocked the trade.",
-        "If volatility increases, option premiums rise across the board."
+        "As long as you will follow the recipe, the cake will rise.",
+        "Provided that the pool is open, we will swim after class.",
+        "I wish I didn't have to revise tonight.",
+        "If only they hadn't cancelled the outdoor concert last Saturday.",
+        "Unless she had missed the call, she would answer it now."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, true, false],
       "tactical_explanations": [
-        "TRUE — As long as + present simple with will is a standard first-conditional credit condition.\n\nTip: As long as / so long as follow first-conditional tense logic.",
-        "FALSE — A finished last-winter spike needs past perfect (had spiked) for a mixed link to now, or a different framing. Past simple + would … now is not the clean mixed pattern.\n\nTip: Past cause of a present result → if + had + V3, would + present.",
-        "TRUE — First conditional for a gated manufacturing step still ahead.\n\nTip: Open test gate → present + will.",
-        "FALSE — Yesterday forces a past unreal: If I had been the risk officer yesterday, I would have blocked… Was + would have mismatches the time adverb.\n\nTip: With yesterday/last week, prefer had been … would have, not was … would have.",
-        "TRUE — Zero conditional market rule: higher volatility, higher premiums.\n\nTip: Market identities → present + present."
+        "FALSE — As long as takes present for real conditions: As long as you follow…, not will follow.\n\nTip: Keep will out of as long as / provided that clauses.",
+        "TRUE — Provided that + present + will is a clean real-future proviso.\n\nTip: Provided that ≈ if / as long as for open conditions.",
+        "TRUE — Wish + past simple correctly regrets a present obligation.\n\nTip: Present annoyance after wish → past simple (didn't have to).",
+        "TRUE — If only + past perfect correctly regrets a finished past cancellation.\n\nTip: Closed past regrets → past perfect after if only / wish.",
+        "FALSE — The timelines clash: a past-perfect unless-clause wants a past result (would have answered), or rephrase as Unless she misses… she will answer / If she hadn't missed… she would answer now with matching mixed forms carefully.\n\nTip: Align condition time and result time; don't paste past perfect onto a plain would + V1 present without a clear mixed pattern."
       ],
       "highlights": [
-        "As long as",
-        "spiked last winter",
-        "will tool",
-        "was the risk",
-        "premiums rise"
+        "As long as you will",
+        "Provided that the pool is",
+        "wish I didn't",
+        "If only they hadn't",
+        "Unless she had missed"
       ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.2",
-      "solution_overview": "Time adverbs are the tell. Last winter and yesterday demand past-perfect conditions for counterfactuals; as long as and open tests stay in first-conditional territory."
+      "solution_overview": "Tighten connectors (as long as / provided that) and wish / if only tense shifts. Reject will after as long as and messy unless + past perfect with a simple present result."
     },
     {
       "id": "en-g-2-11",
@@ -388,37 +328,31 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Had tariffs been announced sooner, sourcing teams would already be dual-qualified now.",
-        "If the retailer offers free returns, conversion rates climb in the app.",
-        "If cash reserves are thinner, the group would cancel the dividend next week.",
-        "If the engineer had calibrated the line, scrap rates would be lower this morning.",
-        "Were investors fully informed, they would tolerate a longer payback period."
+        "If the tutor explained the theorem more slowly, more students would have passed last week's test.",
+        "If the tutor had explained the theorem more slowly, more students would pass the resit next month.",
+        "If the tutor had explained the theorem more slowly last term, more students would understand it now.",
+        "Had the trail been clearer, we would not have got lost.",
+        "If it weren't for the fog, we could see the harbour lights."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
-        "TRUE — Mixed after Had-inversion: past tariff shock → present continuous-like state (would already be dual-qualified now).\n\nTip: Had … been + would be … now is a valid mixed inversion.",
-        "TRUE — Zero conditional e-commerce rule linking a standing offer to conversion behaviour.\n\nTip: Standing commercial rules → present + present.",
-        "FALSE — Present simple are thinner with would cancel is a second-conditional mismatch; use were thinner … would cancel, or are thinner … will cancel.\n\nTip: Present real → will; unreal present → past/were + would — do not cross-wire them.",
-        "TRUE — Mixed: past calibration failure/success with a present scrap-rate result this morning.\n\nTip: Had + V3 … would be … now/this morning = mixed.",
-        "TRUE — Were-inversion second conditional on investor psychology.\n\nTip: Were + subject complement … would … for unreal present."
+        "TRUE — Mixed conditional: unreal present teaching style (explained) with a finished past result (would have passed).\n\nTip: If + past + would have + V3 = present unreal trait, past consequence.",
+        "FALSE — A finished past explanation (had explained) does not pair cleanly with a plain future would pass next month; use would have passed for a past test, or If she explained… would pass for unreal present/future.\n\nTip: Align the time of the condition with the time of the result.",
+        "TRUE — Mixed: past unreal teaching (had explained) with present result (would understand now).\n\nTip: Had + V3 / would + V1 = past cause, present effect.",
+        "TRUE — Inverted third conditional correctly reports a past hiking mishap avoided in an alternate past.\n\nTip: Had + subject + been / V3 replaces If + past perfect.",
+        "TRUE — If it weren't for + noun correctly introduces an unreal present obstacle, with could in the result.\n\nTip: If it weren't for X = without X (unreal present)."
       ],
       "highlights": [
-        "would already be",
-        "conversion rates climb",
-        "are thinner",
-        "would be lower",
-        "Were investors"
+        "would have passed",
+        "would pass the resit",
+        "would understand it now",
+        "Had the trail been",
+        "If it weren't for"
       ],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.2",
-      "solution_overview": "Real present facts take will; unreal present takes were/past + would. The false line keeps a real-present verb (are) but slips into would for next week."
+      "solution_overview": "Drill mixed timelines with a lifestyle pricing example, plus inversion and If it weren't for. Only the clearly time-aligned mixed line and the two standard patterns survive."
     },
     {
       "id": "en-g-2-12",
@@ -426,37 +360,31 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the consortium bids aggressively, the city will award the concession this quarter.",
-        "If wage growth outpaced productivity last year, unit labour costs would be elevated now.",
-        "If the broker would confirm the allocation, traders will hedge by the open.",
-        "If downtime exceeds four hours, service-level credits apply automatically.",
-        "Had the insurer priced flood risk correctly, claims would not have wiped the book."
+        "I wish you wouldn't leave your shoes in the hallway.",
+        "I wish you don't leave your shoes in the hallway.",
+        "If only the semester break were longer.",
+        "If water freezes, it will expands.",
+        "If water freezes, it expands."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — First conditional for a live tender still in play.\n\nTip: Open award window → present + will.",
-        "FALSE — Last year as a factual past driver of a present state needs had outpaced, not outpaced alone, in careful mixed form: If wage growth had outpaced … would be elevated now.\n\nTip: For past→present mixed, upgrade the if-clause to past perfect.",
-        "FALSE — Would confirm after if plus will hedge is a first-conditional wreck; write If the broker confirms … traders will hedge…\n\nTip: Real pre-open plans never put would in the if-clause.",
-        "TRUE — Zero conditional SLA rule written into the contract language.\n\nTip: Automatic contractual consequences → present + present.",
-        "TRUE — Full third conditional on a closed underwriting mistake.\n\nTip: Had + V3 … would not have + V3 for finished past damage."
+        "TRUE — Wish + would correctly asks for a change in habitual annoying behaviour.\n\nTip: Wish + would = stop doing that / please change.",
+        "FALSE — Wish does not take present simple like a command; use wouldn't leave or didn't leave.\n\nTip: After wish, shift the tense; don't keep ordinary present.",
+        "TRUE — If only + were correctly wishes for an unreal present length of break.\n\nTip: If only + past / were = present counterfactual.",
+        "FALSE — A scientific fact belongs in zero conditional, and will expands is doubly wrong (will + -s).\n\nTip: Zero facts: present + present; never will expands.",
+        "TRUE — Clean zero conditional for a physical law.\n\nTip: Permanent truths keep both clauses in present simple."
       ],
       "highlights": [
-        "will award",
-        "outpaced productivity",
-        "would confirm",
-        "credits apply",
-        "would not have wiped"
+        "wish you wouldn't",
+        "wish you don't",
+        "If only the semester break were",
+        "will expands",
+        "it expands"
       ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.2",
-      "solution_overview": "Two traps: a mixed that forgot past perfect after last year, and a first conditional polluted with would. The clean lines stay strictly first, zero, or third."
+      "solution_overview": "Contrast wish + would with the illegal wish + present, refresh if only + were, and return to zero conditional form for natural facts."
     },
     {
       "id": "en-g-2-13",
@@ -464,37 +392,31 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the CFO were to disclose the impairment early, analysts would reassess guidance within hours.",
-        "If negotiations break down, counsel will file for interim relief.",
-        "Had working capital been ring-fenced, the turnaround plan would succeed last month.",
-        "If order books thin further, factories will idle weekend shifts.",
-        "If I would have chaired the audit committee, related-party deals would have faced harder questions."
+        "If she studied abroad next year, she would improve her Spanish dramatically.",
+        "If she will study abroad next year, she improves her Spanish dramatically.",
+        "Should you need extra towels, the reception desk will help.",
+        "Were the path safer, children would use it after dark.",
+        "Had we known the gallery was free on Mondays, we would visit yesterday."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Were to + infinitive is an accepted formal second-conditional variant for a tentative unreal future disclosure.\n\nTip: If X were to + verb … would … softens an unlikely future step.",
-        "TRUE — First conditional litigation contingency still open.\n\nTip: Present + will for live legal forks.",
-        "FALSE — Had … been ring-fenced points to a past closed window (last month), so the result needs would have succeeded, not would succeed.\n\nTip: Past inversion + last month → would have + V3.",
-        "TRUE — First conditional operations response to thinning order books.\n\nTip: Real deterioration path → present + will.",
-        "FALSE — If I would have chaired is the textbook trap; correct: If I had chaired the audit committee…\n\nTip: Memorise the ban: no would have after if — ever."
+        "TRUE — Second conditional can mark an unlikely or tentative future plan (studied / would improve).\n\nTip: Unlikely future → past + would, even with next year.",
+        "FALSE — Will in the if-clause plus bare present improves is a broken first-conditional attempt.\n\nTip: Real future: If she studies… she will improve…",
+        "TRUE — Should you need… is a polite inverted first-conditional alternative to If you need…\n\nTip: Should + subject + V1 ≈ if + present for formal offers.",
+        "TRUE — Were the path safer… correctly inverts a second-conditional if-clause.\n\nTip: Were + subject + complement replaces If + subject + were.",
+        "FALSE — Inverted past perfect needs would have visited for a past result, not would visit yesterday.\n\nTip: Had we known… → would have + V3 for finished past outcomes."
       ],
       "highlights": [
-        "were to disclose",
-        "will file",
-        "would succeed",
-        "will idle",
-        "would have chaired"
+        "If she studied abroad",
+        "If she will study",
+        "Should you need",
+        "Were the path safer",
+        "would visit yesterday"
       ],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.2",
-      "solution_overview": "Were to is a polished second-conditional option, not an error. Failures here under-specify a past result after Had… and recycle the if I would have chaired trap."
+      "solution_overview": "Raise the bar with unlikely futures, Should/Were inversion, and Had-inversion. Keep will out of if-clauses and keep past results in would have."
     },
     {
       "id": "en-g-2-14",
@@ -502,37 +424,31 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Even if the patent lapses, the know-how will still protect margins for a while.",
-        "If yields had climbed faster, duration risk would look worse on today's dashboard.",
-        "If the stewardess announces a delay, passengers update their onward bookings.",
-        "Supposing the lease is extended, the bakery will keep the high-street unit.",
-        "If regulators had signalled forbearance, banks would not tighten lending standards so sharply now."
+        "If it had not been for the flat tyre, we would be camping by the lake tonight.",
+        "But for the flat tyre, we would be camping by the lake tonight.",
+        "If it was not for the flat tyre, we would have arrived hours ago.",
+        "As long as nobody objects, we can move the rehearsal to Thursday.",
+        "Unless anyone will complain, we can move the rehearsal to Thursday."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Even if still follows first-conditional tenses for a real possibility that does not block the result.\n\nTip: Even if + present, will … keeps the same skeleton as if.",
-        "TRUE — Mixed: faster past climb in yields → present dashboard appearance (would look … today).\n\nTip: Had + V3 … would + present verb + today/now = mixed.",
-        "TRUE — Zero conditional passenger-behaviour rule at the gate (business-travel operations context).\n\nTip: Habitual responses → present + present.",
-        "TRUE — Supposing that/if-equivalent first conditional with will.\n\nTip: Supposing ≈ if for real future estate decisions.",
-        "TRUE — Mixed policy signal: past forbearance cue → present lending stance.\n\nTip: Past perfect condition + would + present verb + now."
+        "TRUE — Mixed pattern: past obstacle (had not been) with present/future-facing result (would be camping tonight).\n\nTip: If it had not been for X + would + V1 = past cause, present effect.",
+        "TRUE — But for + noun is a compact equivalent of if it were not / had not been for.\n\nTip: But for X ≈ without X / if not for X.",
+        "FALSE — Prefer If it hadn't been for… would have arrived… (past) or If it weren't for… would be… (present); was not for with would have is non-standard here.\n\nTip: Keep If it weren't for (present) and If it hadn't been for (past) distinct.",
+        "TRUE — As long as + present + can correctly sets a real group condition.\n\nTip: As long as supports present modal results as well as will.",
+        "FALSE — Unless + will is wrong; use Unless anyone complains…\n\nTip: No will after unless in standard condition clauses."
       ],
       "highlights": [
-        "Even if",
-        "would look worse",
-        "passengers update",
-        "Supposing the lease",
-        "would not tighten"
+        "If it had not been for",
+        "But for the flat tyre",
+        "If it was not for",
+        "As long as nobody objects",
+        "Unless anyone will"
       ],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.2",
-      "solution_overview": "All five are sound — a rare full-true card. Confirm even if / supposing keep first-conditional logic, and that both mixed lines genuinely link a past perfect cause to a present result with now/today."
+      "solution_overview": "Practise If it had not been for / But for, keep weren't for versus hadn't been for distinct, and strip will from unless."
     },
     {
       "id": "en-g-2-15",
@@ -540,37 +456,31 @@
       "title": "Task 15",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the incubator mentors founders weekly, survival rates improve after year one.",
-        "If customs had cleared the consignment on Monday, shelves would not be empty this afternoon.",
-        "If I were in your position at treasury, I would ladder the maturities.",
-        "Had the pitch deck mentioned churn, the VC would ask harder questions in the room.",
-        "If spot prices rally, hedgers will roll their contracts forward."
+        "I wish I would have more free evenings.",
+        "I wish I had more free evenings.",
+        "If only the train hadn't been delayed, we wouldn't be queueing now.",
+        "If the coach hadn't been delayed, we wouldn't be queueing now.",
+        "Supposing the café closed early, where would we study?"
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, true, true],
       "tactical_explanations": [
-        "TRUE — Zero conditional describing an incubator operating model and its usual outcome.\n\nTip: Programme design rules → present + present.",
-        "TRUE — Mixed: Monday clearance (past perfect) versus empty shelves now (would not be … this afternoon).\n\nTip: Past logistics miss → present stockout: had + V3, would + be.",
-        "TRUE — Classic If I were … would … advisory second conditional in a treasury setting.\n\nTip: Exam gold: If I were …, I would …",
-        "FALSE — Had … mentioned sets a past counterfactual about the deck, so the room Q&A that followed needs would have asked, not would ask.\n\nTip: Finished past meeting → would have + V3 after Had…",
-        "TRUE — First conditional markets line for an open rally scenario.\n\nTip: Live price path → present + will."
+        "FALSE — Wish + would have is wrong for a present lack; use wish + past simple (had).\n\nTip: Wish I would have… is a classic exam error for present wishes.",
+        "TRUE — Wish + past simple correctly expresses an unreal present desire.\n\nTip: Present wish about states → past simple after wish.",
+        "TRUE — If only + past perfect cause with wouldn't be now is a valid mixed regret linking past delay to present queue.\n\nTip: Past perfect after if only can feed a present would/wouldn't result.",
+        "TRUE — Same mixed pattern with ordinary if instead of if only.\n\nTip: Past unreal cause → present continuous-looking result with would/wouldn't + be + -ing.",
+        "TRUE — Supposing + past simple introduces a second-conditional hypothesis with would in the question.\n\nTip: Supposing / suppose ≈ if for tentative scenarios."
       ],
       "highlights": [
-        "survival rates improve",
-        "would not be empty",
-        "If I were in",
-        "would ask harder",
-        "will roll"
+        "wish I would have",
+        "wish I had",
+        "If only the train hadn't",
+        "If the coach hadn't",
+        "Supposing the café closed"
       ],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.2",
-      "solution_overview": "Only the pitch-deck inversion fails by leaving the result in would ask instead of would have asked. Everything else cleanly covers zero, mixed, If I were, and first."
+      "solution_overview": "Kill the wish I would have trap, keep wish + past for present states, and confirm mixed past→present with if / if only plus supposing."
     },
     {
       "id": "en-g-2-16",
@@ -578,37 +488,31 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If carbon prices climb, cement producers pass on surcharges within the quarter.",
-        "If the syndicate had allocated more paper to retail, the aftermarket would be firmer today.",
-        "If onboarding takes longer than five days, enterprise clients will escalate to the account lead.",
-        "If the board would approve a rights issue, dilution would worry existing holders.",
-        "Were cash conversion weaker, ratings agencies would flag liquidity metrics."
+        "Even if the tickets are expensive, we will still go to the festival.",
+        "Even if the tickets were free, we will still stay home.",
+        "Whether or not it rains, the charity run will start at nine.",
+        "If so be the weather improves, we will hike.",
+        "If need be, we can share taxis after the concert."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Zero conditional industry pricing response.\n\nTip: Sector rule of thumb → present + present.",
-        "TRUE — Mixed primary-market decision (had allocated) with today's aftermarket tone (would be firmer today).\n\nTip: Past allocation → present trading: had + V3, would + be + today.",
-        "TRUE — First conditional SLA/escalation path still available.\n\nTip: Open service risk → present + will.",
-        "FALSE — Would approve after if is illegal; for unreal present write If the board approved … would worry, or for real future If the board approves … will worry.\n\nTip: Kill would in the if-clause, then choose second vs first consistently.",
-        "TRUE — Were-inversion second conditional on credit metrics.\n\nTip: Were + comparative … would … for unreal present credit stress."
+        "TRUE — Even if + present + will correctly means the result holds despite the condition.\n\nTip: Even if ≠ if; the main clause still follows real-future will here.",
+        "FALSE — Even if + past (were) wants would stay, not will stay.\n\nTip: Match even if tense to the result: past → would; present → will.",
+        "TRUE — Whether or not + present + will correctly says the run happens regardless of rain.\n\nTip: Whether or not = no matter if.",
+        "FALSE — If so be is archaic and not exam-standard; use If the weather improves…\n\nTip: Stick to standard if + present for real futures.",
+        "TRUE — If need be is an accepted fixed phrase meaning if it is necessary, here with can.\n\nTip: If need be is a set idiom; don't \"correct\" it to if needs be in formal keys."
       ],
       "highlights": [
-        "pass on surcharges",
-        "would be firmer",
-        "will escalate",
-        "would approve",
-        "Were cash conversion"
+        "Even if the tickets are",
+        "Even if the tickets were, we will",
+        "Whether or not it rains",
+        "If so be",
+        "If need be"
       ],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.2",
-      "solution_overview": "Four lines are textbook. The false one parks would inside the if-clause before another would — double would is your red flag."
+      "solution_overview": "Cover even if, whether or not, and fixed if need be, while rejecting tense clashes and archaic if so be."
     },
     {
       "id": "en-g-2-17",
@@ -616,37 +520,31 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Had the earn-out been structured more tightly, the acquirer would not be litigating the targets now.",
-        "If utilisation dips below seventy percent, the airline will wet-lease fewer aircraft next season.",
-        "If the controller was to restate revenue, auditors would expand sampling immediately.",
-        "If freight forwarders had digitalised documents earlier, demurrage would have been lower last peak season.",
-        "Only if collateral is topped up will the lender release the next tranche."
+        "If she were to apply for the scholarship, she would need two references.",
+        "If she was to have applied last term, she would need two references now.",
+        "Were he to practise daily, his serve would improve within weeks.",
+        "If I knew then what I know now, I would have chosen a different module.",
+        "If I had known then what I know now, I would have chosen a different module."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Mixed Had-inversion: past earn-out design → present litigation (would not be litigating … now).\n\nTip: Had … been + would be + -ing + now = mixed inversion.",
-        "TRUE — First conditional fleet-planning response to utilisation.\n\nTip: Season-ahead ops plan → present + will.",
-        "FALSE — Formal tentative unreal prefers were to, not was to, with a singular controller in careful exam English: If the controller were to restate…\n\nTip: In formal papers, stick to were to (not was to) after if for this pattern.",
-        "TRUE — Pure third conditional on a finished peak-season cost outcome.\n\nTip: Had + V3 … would have been … for closed past peaks.",
-        "TRUE — Only if inversion in a first-conditional credit release: Only if … will + subject + verb.\n\nTip: Only if moves will before the subject — still a real future condition."
+        "TRUE — If she were to apply is a formal second-conditional way to mark a hypothetical future step.\n\nTip: If + were to + V1 ≈ unlikely/formal if + past.",
+        "FALSE — Was to have applied mixed with would need now is over-stacked and non-standard for this item.\n\nTip: Prefer clear mixed or third forms; avoid was to have + mismatched results.",
+        "TRUE — Were he to practise… correctly inverts were to for a hypothetical training plan.\n\nTip: Were + subject + to + V1 replaces If + subject + were to.",
+        "FALSE — Knew then is underpowered for a clear past knowledge gap; the standard line uses had known then.\n\nTip: Past counterfactual knowledge → past perfect in the if-clause.",
+        "TRUE — Classic form: past perfect for past ignorance, would have chosen for the past decision.\n\nTip: Had known then… would have + V3 is the polished exam form."
       ],
       "highlights": [
-        "would not be litigating",
-        "will wet-lease",
-        "was to restate",
-        "would have been lower",
-        "Only if collateral"
+        "were to apply",
+        "was to have applied",
+        "Were he to practise",
+        "If I knew then",
+        "If I had known then"
       ],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.2",
-      "solution_overview": "Advanced packaging: mixed Had-inversion, Only if … will inversion, and the were to vs was to formality trap. Only the was to line should fall."
+      "solution_overview": "Advanced were to / Were … to inversion and the had known then pattern. Reject tangled was to have stacks and underpowered knew then for past counterfactuals."
     },
     {
       "id": "en-g-2-18",
@@ -654,37 +552,31 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If goodwill had not been written down, equity ratios would look healthier on the March pack.",
-        "If the night shift finishes the batch, QC will sample before dawn.",
-        "If distributors stocked deeper inventories, stock-outs would have been rarer during last Black Friday.",
-        "If I would be less exposed to FX, I would sleep better before reporting day.",
-        "Should volumes recover, the mill will restart the idle kiln."
+        "I'd rather you didn't stream loud videos while I'm revising.",
+        "I'd rather you don't stream loud videos while I'm revising.",
+        "It's time we left for the airport.",
+        "It's time we leave for the airport.",
+        "Suppose you won free concert tickets — what would you do?"
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Mixed accounting counterfactual: past write-down choice → present appearance of March ratios.\n\nTip: Had not + V3 … would look … on [present pack] = mixed.",
-        "TRUE — First conditional plant schedule still open tonight.\n\nTip: Same-night plan → present + will.",
-        "TRUE — Mixed the other way: unreal present stocking policy explaining a different past Black Friday (would have been rarer).\n\nTip: Present unreal → past result: if + past simple, would have + V3.",
-        "FALSE — If I would be is wrong; use If I were less exposed to FX, I would sleep better…\n\nTip: Replace If I would be with If I were every time.",
-        "TRUE — Should-inversion first conditional for a volume recovery path.\n\nTip: Should volumes … will … = If volumes … will …"
+        "TRUE — Would rather + past simple correctly softens a present preference about someone else's behaviour (conditional-adjacent).\n\nTip: I'd rather you + past = polite present preference.",
+        "FALSE — After I'd rather you, use past simple, not present don't.\n\nTip: Same backshift habit as wish: prefer past after I'd rather you.",
+        "TRUE — It's time + past simple is the standard formal pattern for a present urgency.\n\nTip: It's time we left = we should leave now.",
+        "FALSE — Careful exam keys usually want It's time we left, not leave.\n\nTip: It's time + past is the marked formal choice.",
+        "TRUE — Suppose + past + would correctly frames a second-conditional daydream.\n\nTip: Suppose / supposing pattern like if + past."
       ],
       "highlights": [
-        "would look healthier",
-        "will sample",
-        "would have been rarer",
-        "If I would be",
-        "Should volumes"
+        "I'd rather you didn't",
+        "I'd rather you don't",
+        "It's time we left",
+        "It's time we leave",
+        "Suppose you won"
       ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.2",
-      "solution_overview": "You need both mixed directions here — past→present and present→past — plus Should-inversion. The single fail is If I would be for an unreal present state."
+      "solution_overview": "Extend conditional logic into I'd rather you, it's time + past, and suppose. These share the same backshift instinct as wish and second conditionals."
     },
     {
       "id": "en-g-2-19",
@@ -692,37 +584,31 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Were it not for the hedge, the importer would be posting large FX losses this quarter.",
-        "If the catalogue had shipped in January, spring sell-through would have peaked earlier.",
-        "If headhunters find a match, the CHRO will reopen the search committee.",
-        "Had the covenant waiver been granted, the firm will avoid a technical default last Friday.",
-        "If payment terms lengthened industry-wide, working-capital cycles would stretch for everyone."
+        "If the inflation rate drops, household budgets will feel less pressure next quarter.",
+        "Had the storm not hit, the outdoor market would still be open this afternoon.",
+        "If only I could have attended the reunion last month.",
+        "I wish I could have attended the reunion last month.",
+        "Unless having finished the essay, she will not join us."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, true, true, true, false],
       "tactical_explanations": [
-        "TRUE — Were it not for … is a formal second/mixed-style inversion meaning if it were not for the hedge, with would be posting now.\n\nTip: Were it not for X … would … = If it were not for X …",
-        "TRUE — Pure third conditional on a missed January catalogue drop.\n\nTip: Had + V3 … would have + V3 for closed seasonal timing.",
-        "TRUE — First conditional hiring contingency.\n\nTip: Open search branch → present + will.",
-        "FALSE — Had … been granted plus last Friday demands would have avoided, not will avoid.\n\nTip: Past waiver story → would have + V3; will cannot rewrite last Friday.",
-        "TRUE — Second conditional industry-wide counterfactual on payment terms.\n\nTip: Past simple + would for unreal present credit norms."
+        "TRUE — First conditional with a real possible macro change and a future lifestyle effect.\n\nTip: Real future → present + will.",
+        "TRUE — Mixed: past unreal storm (Had … not hit) with present result (would still be open).\n\nTip: Negative inversion Had … not + V3 can feed a present would result.",
+        "TRUE — If only + could have + V3 correctly regrets a missed past ability/opportunity.\n\nTip: If only I could have… = past inability regret.",
+        "TRUE — Wish + could have + V3 matches the same past missed opportunity.\n\nTip: Wish I could have… parallels if only for past regrets about ability.",
+        "FALSE — Unless needs a finite clause (Unless she has finished…), not Unless having finished…\n\nTip: Unless + subject + verb; avoid dangling -ing after unless."
       ],
       "highlights": [
-        "Were it not for",
-        "would have peaked",
-        "will reopen",
-        "will avoid",
-        "would stretch"
+        "If the inflation rate drops",
+        "Had the storm not hit",
+        "If only I could have",
+        "wish I could have",
+        "Unless having finished"
       ],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.2",
-      "solution_overview": "Were it not for is advanced but legitimate. The broken Had … will avoid line tries to put a future auxiliary on last Friday — tense suicide."
+      "solution_overview": "Combine one light economy first conditional, mixed Had-not inversion, wish / if only + could have, and reject non-finite unless having."
     },
     {
       "id": "en-g-2-20",
@@ -730,37 +616,31 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "If the underwriter would have priced the IPO more tightly, aftermarket volatility would have been lower.",
-        "If backlog clears by June, the yard will takes two more hulls.",
-        "If energy hedges rolled off already, spot exposure would be biting harder now.",
-        "If I would be running the category, I would delist the slowest SKUs before the reset.",
-        "Had cyber insurance been renewed on time, incident costs would have been capped."
+        "It's high time we booked the campsite.",
+        "If you come to the hike, bring a reusable bottle.",
+        "I'll come cycling with you on Sunday provided the weather holds.",
+        "I'll come cycling with you on Sunday provided the weather will hold.",
+        "No sooner had we sat down than the fire alarm would go off."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, true, false, false],
       "tactical_explanations": [
-        "FALSE — The if-clause must not contain would have; write If the underwriter had priced the IPO more tightly…\n\nTip: Final reminder: if + had + V3, never if + would have.",
-        "FALSE — After will use the base verb take, not takes. Agreement -s never follows will.\n\nTip: will take / will ship / will hire — never will takes.",
-        "FALSE — A finished roll-off that explains present pain needs past perfect: If energy hedges had rolled off already…\n\nTip: Past cause of a present result → had + V3 in the if-clause.",
-        "FALSE — If I would be running is wrong; write If I were running the category, I would delist…\n\nTip: Replace If I would be with If I were in unreal present advice.",
-        "TRUE — Had-inversion third conditional on a missed renewal.\n\nTip: Had + been + V3 … would have been … seals the past counterfactual."
+        "TRUE — It's high time + past simple correctly marks present urgency with the same backshift as wish / it's time.\n\nTip: It's (high) time + past = we should do it now.",
+        "TRUE — Clear first-conditional imperative result: if + present, imperative bring…\n\nTip: Imperatives are fine as first-conditional results.",
+        "TRUE — Provided + present (holds) correctly sets a real weather condition for a future plan with will come.\n\nTip: Provided / providing + present, not will.",
+        "FALSE — Provided the weather will hold wrongly inserts will into the condition.\n\nTip: Same rule as if / as long as: no will in the proviso clause.",
+        "FALSE — No sooner… than needs a simple past result (went off), not conditional would go off.\n\nTip: No sooner is past sequencing, not a conditional frame."
       ],
       "highlights": [
-        "would have priced",
-        "will takes",
-        "rolled off already",
-        "If I would be running",
-        "Had cyber insurance"
+        "It's high time we booked",
+        "If you come to the hike, bring",
+        "provided the weather holds",
+        "provided the weather will",
+        "would go off"
       ],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.2",
-      "solution_overview": "Capstone stress test: four traps (if … would have, will + -s, missing past perfect in a mixed, If I would be) and one clean Had-inversion third conditional. Hunt errors before celebrating the true line."
+      "solution_overview": "Finish with it's high time, imperative first conditionals, and provided + present, while rejecting will after provided and would forced onto a no sooner sequence."
     }
   ]
 }

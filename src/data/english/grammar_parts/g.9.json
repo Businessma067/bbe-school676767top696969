@@ -8,21 +8,21 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "She is a auditor in the compliance team.",
-        "He bought a umbrella before the client visit.",
-        "We need an new laptop for the analyst.",
-        "The board approved an proposal this morning.",
-        "Please send me an email with the revised figures."
+        "She packed a apple in her lunchbox for the hike.",
+        "He bought an umbrella before the outdoor concert.",
+        "We need an new bicycle for the weekend trip.",
+        "The coach approved an plan for the relay team.",
+        "Please send me an email with the rehearsal times."
       ],
-      "answer_key": [false, false, false, false, true],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
-        "FALSE — \"Auditor\" begins with a vowel sound, so English needs \"an auditor,\" not \"a auditor.\" The rest of the sentence is fine; only the choice before the job title is wrong.\n\nTip: Match a/an to the sound that follows, not just the first letter on the page.",
-        "FALSE — \"Umbrella\" starts with a vowel sound, so the form must be \"an umbrella,\" not \"a umbrella.\"\n\nTip: First mention of one countable thing usually takes a/an — but only the matching form.",
-        "FALSE — \"New\" begins with a consonant sound (/n/), so English needs \"a new laptop,\" not \"an new laptop.\"\n\nTip: Adjectives do not change the a/an rule — listen to the sound right after a/an.",
-        "FALSE — \"Proposal\" begins with a consonant sound, so use \"a proposal,\" not \"an proposal.\"\n\nTip: Specific, already-identifiable groups like \"the board\" can stay; the error is only the form before proposal.",
-        "TRUE — \"Email\" begins with a vowel sound (/iː/), so \"an email\" is the correct first-mention form.\n\nTip: Say the next word aloud; if it starts with a vowel sound, use an."
+        "FALSE — \"Apple\" begins with a vowel sound, so English needs \"an apple,\" not \"a apple.\"\n\nTip: Match a/an to the sound that follows, not just the first letter on the page.",
+        "TRUE — \"Umbrella\" starts with a vowel sound, so \"an umbrella\" is the correct first-mention form.\n\nTip: First mention of one countable thing usually takes a/an — but only the matching form.",
+        "FALSE — \"New\" begins with a consonant sound (/n/), so English needs \"a new bicycle,\" not \"an new bicycle.\"\n\nTip: Adjectives do not change the a/an rule — listen to the sound right after a/an.",
+        "FALSE — \"Plan\" begins with a consonant sound, so use \"a plan,\" not \"an plan.\"\n\nTip: The rest of the sentence can stay; only the form before plan is wrong.",
+        "TRUE — \"Email\" begins with a vowel sound (/iː/), so \"an email\" is correct.\n\nTip: Say the next word aloud; if it starts with a vowel sound, use an."
       ],
-      "highlights": ["a auditor", "a umbrella", "an new laptop", "an proposal", "an email"],
+      "highlights": ["a apple", "an umbrella", "an new bicycle", "an plan", "an email"],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.9",
@@ -34,19 +34,19 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The manager asked for an honest update on the delay.",
-        "They hired a European consultant for the launch.",
-        "She completed a MBA while working full time.",
-        "We reserved an hotel near the conference centre.",
-        "He is an university lecturer in economics."
+        "The guide asked for an honest answer about the trail conditions.",
+        "They hired a European tutor for their French exchange.",
+        "She completed a MBA while volunteering at the library.",
+        "We reserved an hotel near the festival grounds.",
+        "He is an university student in biology."
       ],
       "answer_key": [true, true, false, false, false],
       "tactical_explanations": [
         "TRUE — \"Honest\" starts with a silent h, so the spoken form begins with a vowel sound and takes \"an.\"\n\nTip: Silent letters still decide a/an by sound, not spelling.",
         "TRUE — \"European\" begins with a /j/ sound (like \"you\"), which counts as a consonant sound, so \"a European\" is correct.\n\nTip: Eu- and u- words often take a when they sound like they start with \"y.\"",
         "FALSE — \"MBA\" is normally read letter by letter, starting with /em/, a vowel sound, so it needs \"an MBA.\"\n\nTip: With abbreviations, base a/an on how you pronounce the first letter.",
-        "FALSE — In standard modern pronunciation, \"hotel\" keeps the /h/, so \"a hotel\" is the usual form, not \"an hotel.\"\n\nTip: Prefer a before clearly sounded h- words in contemporary business English.",
-        "FALSE — \"University\" starts with a /j/ sound, so the correct form is \"a university lecturer.\"\n\nTip: If you can hear a \"y\" glide at the start, choose a."
+        "FALSE — In standard modern pronunciation, \"hotel\" keeps the /h/, so \"a hotel\" is the usual form, not \"an hotel.\"\n\nTip: Prefer a before clearly sounded h- words in contemporary English.",
+        "FALSE — \"University\" starts with a /j/ sound, so the correct form is \"a university student.\"\n\nTip: If you can hear a \"y\" glide at the start, choose a."
       ],
       "highlights": ["an honest", "a European", "a MBA", "an hotel", "an university"],
       "difficulty_level": "1/5",
@@ -60,21 +60,21 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "I read a report yesterday; the report raised several concerns.",
+        "I read a novel yesterday; the novel kept me awake until dawn.",
         "Please close a window; it is freezing in here.",
-        "She joined the firm as a junior analyst in 2022.",
+        "She joined the choir as a junior soprano in 2022.",
         "Could you pass me a salt from the tray?",
-        "They opened an office in Lisbon last spring."
+        "They opened an café on the corner last spring."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — First mention uses \"a report\"; the second mention switches to \"the report\" because the same document is now identified.\n\nTip: a/an introduces; the points back to something already specified.",
+        "TRUE — First mention uses \"a novel\"; the second mention switches to \"the novel\" because the same book is now identified.\n\nTip: a/an introduces; the points back to something already specified.",
         "FALSE — In this situation the window is a specific one in the room, so English expects \"the window,\" not \"a window.\"\n\nTip: When both speakers can identify the thing, prefer the.",
-        "TRUE — Job titles after \"as\" commonly take a/an for one role among many: \"as a junior analyst.\"\n\nTip: Roles and occupations usually need a/an in this pattern.",
+        "TRUE — Roles after \"as\" commonly take a/an for one role among many: \"as a junior soprano.\"\n\nTip: Occupations and roles usually need a/an in this pattern.",
         "FALSE — At the table, \"salt\" is a specific shared item, so \"the salt\" is the natural choice.\n\nTip: Shared, obvious objects in the immediate setting take the.",
-        "TRUE — \"An office\" correctly introduces one new branch; the city name needs no determiner here.\n\nTip: First mention of one countable workplace unit takes a/an."
+        "FALSE — \"Café\" begins with a consonant sound (/k/), so use \"a café,\" not \"an café.\"\n\nTip: Spelling with a vowel letter does not override a consonant sound."
       ],
-      "highlights": ["a report yesterday; the report", "a window", "as a junior analyst", "a salt", "an office"],
+      "highlights": ["a novel yesterday; the novel", "a window", "as a junior soprano", "a salt", "an café"],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.9",
@@ -86,21 +86,21 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The sun was still low when the shift began.",
+        "The sun was still low when the runners started.",
         "Moon looks unusually bright tonight over the harbour.",
-        "She is only person who reviewed the contract.",
-        "This is same clause we flagged last week.",
-        "He is the tallest candidate in the shortlist."
+        "She is only person who finished the crossword.",
+        "This is same recipe we used last winter.",
+        "He is the tallest player on the school team."
       ],
       "answer_key": [true, false, false, false, true],
       "tactical_explanations": [
-        "TRUE — Unique celestial bodies take \"the\": \"the sun.\" The workplace noun \"the shift\" is also definite in context.\n\nTip: One-of-a-kind referents almost always need the.",
+        "TRUE — Unique celestial bodies take \"the\": \"the sun.\" The runners are also definite in context.\n\nTip: One-of-a-kind referents almost always need the.",
         "FALSE — \"Moon\" in this sense needs \"the moon\"; leaving it bare is not standard.\n\nTip: Pair the with unique natural landmarks and celestial objects.",
         "FALSE — \"Only\" before a singular noun requires \"the only person.\"\n\nTip: Patterns with only, same, next, and last usually need the.",
-        "FALSE — The fixed pattern is \"the same clause,\" not bare \"same clause.\"\n\nTip: \"Same\" almost never stands without the in this use.",
-        "TRUE — Superlative forms take \"the\": \"the tallest candidate.\"\n\nTip: If you see -est or most + adjective for a unique ranking, expect the."
+        "FALSE — The fixed pattern is \"the same recipe,\" not bare \"same recipe.\"\n\nTip: \"Same\" almost never stands without the in this use.",
+        "TRUE — Superlative forms take \"the\": \"the tallest player.\"\n\nTip: If you see -est or most + adjective for a unique ranking, expect the."
       ],
-      "highlights": ["The sun", "Moon looks", "only person", "same clause", "the tallest"],
+      "highlights": ["The sun", "Moon looks", "only person", "same recipe", "the tallest"],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.9",
@@ -112,11 +112,11 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The team received useful advice from the mentor.",
-        "She gave me an advice about the presentation slides.",
-        "We still need more informations before we decide.",
-        "The laboratory ordered new equipment last month.",
-        "They bought an furniture for the meeting room."
+        "The hikers received useful advice from the ranger.",
+        "She gave me an advice about packing for cold weather.",
+        "We still need more informations before we choose a route.",
+        "The lab ordered new equipment for the science fair.",
+        "They bought an furniture for the guest room."
       ],
       "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
@@ -138,9 +138,9 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Progress on the merger has been slower than expected.",
-        "The news were surprising for the whole department.",
-        "Research shows that remote audits can save time.",
+        "Progress on the mural has been slower than expected.",
+        "The news were surprising for the whole neighbourhood.",
+        "Research shows that morning light can improve mood.",
         "We lack an evidence to support that claim.",
         "Traffic was heavy on the way to the airport."
       ],
@@ -149,14 +149,14 @@
         "TRUE — \"Progress\" is uncountable and correctly used with zero article for a general process underway.\n\nTip: Zero article is normal with progress, research, and similar abstracts.",
         "FALSE — \"News\" is uncountable and takes a singular verb: \"The news was surprising.\" The determiner \"the\" can stay; the verb must agree.\n\nTip: \"News\" looks plural but behaves as singular.",
         "TRUE — General research findings use zero article: \"Research shows…\"\n\nTip: When you mean research as a field or body of work in general, omit a/the.",
-        "FALSE — \"Evidence\" is uncountable, so \"an evidence\" is wrong; use \"evidence\" or \"a piece of evidence.\"\n\nTip: Legal and audit English still treats evidence as uncountable.",
+        "FALSE — \"Evidence\" is uncountable, so \"an evidence\" is wrong; use \"evidence\" or \"a piece of evidence.\"\n\nTip: Specificity does not make evidence countable with a/an.",
         "TRUE — \"Traffic\" is uncountable and takes zero article in this general statement about conditions.\n\nTip: Mass nouns for weather, traffic, and similar conditions usually need no a/an."
       ],
       "highlights": ["Progress on", "news were", "Research shows", "an evidence", "Traffic was"],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.9",
-      "solution_overview": "Several everyday business nouns are uncountable even when they end in -s or feel countable. Keep zero article for general reference and avoid a/an before evidence, progress, and traffic."
+      "solution_overview": "Several everyday nouns are uncountable even when they end in -s or feel countable. Keep zero article for general reference and avoid a/an before evidence, progress, and traffic."
     },
     {
       "id": "en-g-9-07",
@@ -165,20 +165,20 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Children need clear routines at home.",
-        "The customers expect faster replies during peak season.",
-        "Oil is still a major export for the region.",
-        "She drinks the coffee every morning before stand-up.",
-        "Managers should document key decisions carefully."
+        "The neighbours expect quieter evenings during exam week.",
+        "Water is still scarce after the long drought.",
+        "She drinks the coffee every morning before class.",
+        "Teachers should explain key ideas carefully."
       ],
       "answer_key": [true, true, true, false, true],
       "tactical_explanations": [
         "TRUE — Plural nouns in a general sense take zero article: \"Children need…\"\n\nTip: General plurals usually omit the.",
-        "TRUE — Here \"the customers\" can refer to the company's known customer base, so the is acceptable and natural.\n\nTip: The + plural is fine when the group is definite in context.",
-        "TRUE — Uncountable \"oil\" used generically takes zero article.\n\nTip: Materials and commodities in general statements often need no determiner.",
+        "TRUE — Here \"the neighbours\" can refer to the known people next door, so the is acceptable and natural.\n\nTip: The + plural is fine when the group is definite in context.",
+        "TRUE — Uncountable \"water\" used generically takes zero article.\n\nTip: Materials and substances in general statements often need no determiner.",
         "FALSE — Habitual general coffee-drinking uses zero article: \"She drinks coffee every morning,\" not \"the coffee,\" unless a specific coffee is meant.\n\nTip: Do not force the onto uncountables used in a general habitual sense.",
-        "TRUE — Plural \"Managers\" in a general professional statement correctly takes zero article.\n\nTip: Job-title plurals meaning \"managers in general\" stay bare."
+        "TRUE — Plural \"Teachers\" in a general professional statement correctly takes zero article.\n\nTip: Job-title plurals meaning \"teachers in general\" stay bare."
       ],
-      "highlights": ["Children need", "The customers", "Oil is", "the coffee every", "Managers should"],
+      "highlights": ["Children need", "The neighbours", "Water is", "the coffee every", "Teachers should"],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.9",
@@ -191,9 +191,9 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "He goes to work by bus on most weekdays.",
-        "She travelled to Paris by a train last Friday.",
-        "They sent the samples by courier overnight.",
-        "I usually go to the home after the evening shift.",
+        "She travelled to Lisbon by a train last Friday.",
+        "They sent the parcels by courier overnight.",
+        "I usually go to the home after the evening class.",
         "We went to school together in the same district."
       ],
       "answer_key": [true, false, true, false, true],
@@ -217,8 +217,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Her brother is still in hospital after the operation.",
-        "We drove past the hospital on our way to the plant.",
-        "Three board members are in the prison for fraud.",
+        "We drove past the hospital on our way to the lake.",
+        "Three activists are in the prison for peaceful protest.",
         "The prison on the hill dates from the nineteenth century.",
         "She stayed in bed until noon because of a migraine."
       ],
@@ -242,10 +242,10 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "She plays the piano at company events.",
+        "She plays the piano at family gatherings.",
         "He plays the football for the local amateur side.",
-        "They listen to the radio during the morning commute.",
-        "I watched a television until midnight after the audit.",
+        "They listen to the radio during the morning walk.",
+        "I watched a television until midnight after the film.",
         "She is learning the violin with a private tutor."
       ],
       "answer_key": [true, false, true, false, true],
@@ -268,21 +268,21 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Most employees supported the flexible-hours pilot.",
-        "The most of staff opposed the unpaid overtime plan.",
-        "Half of the budget has already been committed.",
-        "Both candidates gave a strong closing statement.",
-        "All of data must be encrypted before transfer."
+        "Most students supported the later start time.",
+        "The most of guests opposed the outdoor seating plan.",
+        "Half of the cake has already been eaten.",
+        "Both finalists gave a strong closing speech.",
+        "All of luggage must be labelled before check-in."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — \"Most\" + plural noun takes zero article when speaking generally about the majority: \"Most employees…\"\n\nTip: most + noun (no the) for general majorities.",
-        "FALSE — Do not say \"the most of staff\"; use \"most of the staff\" or \"most staff.\"\n\nTip: After most of, you normally need the + definite noun phrase.",
-        "TRUE — \"Half of the budget\" correctly combines the quantifier with a definite noun phrase.\n\nTip: half/most/some of + the + specific noun is a safe pattern.",
-        "TRUE — \"Both candidates\" needs no article before both; \"a strong closing statement\" correctly introduces one speech each.\n\nTip: both/all/each have their own determiner rules—do not stack the before both.",
-        "FALSE — \"All of data\" is incomplete; write \"all of the data\" or \"all data.\"\n\nTip: all of must be followed by a determined noun phrase (often with the)."
+        "TRUE — \"Most\" + plural noun takes zero article when speaking generally about the majority: \"Most students…\"\n\nTip: most + noun (no the) for general majorities.",
+        "FALSE — Do not say \"the most of guests\"; use \"most of the guests\" or \"most guests.\"\n\nTip: After most of, you normally need the + definite noun phrase.",
+        "TRUE — \"Half of the cake\" correctly combines the quantifier with a definite noun phrase.\n\nTip: half/most/some of + the + specific noun is a safe pattern.",
+        "TRUE — \"Both finalists\" needs no article before both; \"a strong closing speech\" correctly introduces one speech each.\n\nTip: both/all/each have their own determiner rules—do not stack the before both.",
+        "FALSE — \"All of luggage\" is incomplete; write \"all of the luggage\" or \"all luggage.\"\n\nTip: all of must be followed by a determined noun phrase (often with the)."
       ],
-      "highlights": ["Most employees", "The most of staff", "Half of the budget", "Both candidates", "All of data"],
+      "highlights": ["Most students", "The most of guests", "Half of the cake", "Both finalists", "All of luggage"],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.9",
@@ -296,19 +296,19 @@
       "statements": [
         "She is studying economics at a well-known university.",
         "He majored in the history before joining the museum.",
-        "They offer a course in business ethics this term.",
-        "The mathematics in this model is unexpectedly elegant.",
+        "They offer a course in photography this term.",
+        "The mathematics in this puzzle is unexpectedly elegant.",
         "She teaches the English at a private college."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "TRUE — Academic subjects usually take zero article: \"studying economics.\"\n\nTip: Subject names in general study contexts stay bare.",
         "FALSE — As a field of study, use \"history,\" not \"the history,\" unless a specific history is meant.\n\nTip: Zero article for subjects; the only when the noun is narrowed (the history of X).",
-        "TRUE — \"Business ethics\" as a course subject correctly appears without a/the before the subject name; \"a course\" is the countable shell.\n\nTip: Count the course, not the subject noun itself.",
-        "TRUE — Here \"the mathematics\" refers to the specific maths in this model, so the is justified.\n\nTip: The + subject is fine when limited by a postmodifier or clear context.",
+        "TRUE — \"Photography\" as a course subject correctly appears without a/the before the subject name; \"a course\" is the countable shell.\n\nTip: Count the course, not the subject noun itself.",
+        "TRUE — Here \"the mathematics\" refers to the specific maths in this puzzle, so the is justified.\n\nTip: The + subject is fine when limited by a postmodifier or clear context.",
         "FALSE — Language subjects in general take zero article: \"teaches English,\" not \"teaches the English.\"\n\nTip: Language names as school subjects are usually bare."
       ],
-      "highlights": ["studying economics", "the history before", "business ethics", "The mathematics", "the English at"],
+      "highlights": ["studying economics", "the history before", "photography this", "The mathematics", "the English at"],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.9",
@@ -320,11 +320,11 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The Netherlands remains a key logistics hub for the firm.",
-        "She moved to United Kingdom after the acquisition.",
-        "Their warehouse is just outside Hague, near the port.",
-        "We opened a branch in Brazil two years ago.",
-        "The Amazon is critical to several of our suppliers' routes."
+        "The Netherlands remains a popular cycling destination.",
+        "She moved to United Kingdom after finishing her degree.",
+        "Their hostel is just outside Hague, near the sea.",
+        "We spent two weeks in Brazil last summer.",
+        "The Amazon is vital to several rainforest ecosystems."
       ],
       "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
@@ -346,10 +346,10 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Lake Victoria appears in several of our regional case studies.",
+        "Lake Victoria appears in several geography textbooks.",
         "They sailed across Atlantic on a freighter.",
-        "Mount Everest still attracts extreme-tourism clients.",
-        "We spent a week in Alps after the summit.",
+        "Mount Everest still attracts extreme hikers.",
+        "We spent a week in Alps after the festival.",
         "The Sahara stretches across much of North Africa."
       ],
       "answer_key": [true, false, true, false, true],
@@ -372,21 +372,21 @@
       "title": "Task 15",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Poverty remains a structural challenge in several markets we serve.",
-        "The life is unpredictable for freelance consultants.",
+        "Poverty remains a serious challenge in many regions.",
+        "The life is unpredictable for freelance artists.",
         "Society must balance growth with environmental limits.",
-        "She values the honesty above everything else in negotiations.",
-        "Innovation drives long-term competitiveness in this sector."
+        "She values the honesty above everything else in friendships.",
+        "Curiosity drives long-term learning in this field."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Abstract nouns used in a general sense take zero article: \"Poverty remains…\"\n\nTip: General abstracts (poverty, society, innovation) are usually bare.",
-        "FALSE — General \"life\" does not take the: \"Life is unpredictable…\"\n\nTip: Use the life only when limited (the life of a consultant, the life she wanted).",
+        "TRUE — Abstract nouns used in a general sense take zero article: \"Poverty remains…\"\n\nTip: General abstracts (poverty, society, curiosity) are usually bare.",
+        "FALSE — General \"life\" does not take the: \"Life is unpredictable…\"\n\nTip: Use the life only when limited (the life of an artist, the life she wanted).",
         "TRUE — \"Society\" in a broad general claim correctly appears without a/the.\n\nTip: Zero article signals the concept as a whole.",
         "FALSE — As a general virtue, prefer \"honesty,\" not \"the honesty,\" unless a specific instance is meant.\n\nTip: Abstract virtues in general statements stay bare.",
-        "TRUE — \"Innovation\" as a general driver of competitiveness takes zero article.\n\nTip: If no postmodifier narrows the abstract, omit the."
+        "TRUE — \"Curiosity\" as a general driver of learning takes zero article.\n\nTip: If no postmodifier narrows the abstract, omit the."
       ],
-      "highlights": ["Poverty remains", "The life is", "Society must", "the honesty above", "Innovation drives"],
+      "highlights": ["Poverty remains", "The life is", "Society must", "the honesty above", "Curiosity drives"],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.9",
@@ -398,11 +398,11 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The advice she received from counsel was unusually clear.",
-        "Equipment that arrived yesterday is still in customs.",
+        "The advice she received from her coach was unusually clear.",
+        "Equipment that arrived yesterday is still in the hallway.",
         "An information in the appendix contradicts the summary.",
         "The research published last week challenges our assumptions.",
-        "We need a progress before the next steering meeting."
+        "We need a progress before the next rehearsal."
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
@@ -424,21 +424,21 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "She was appointed the CEO of a mid-sized fintech firm.",
-        "He became a head of legal after the reorganisation.",
-        "They elected her treasurer of the local trade association.",
-        "She is a only accountant who signed off on the figures.",
-        "He remains the unique bidder still active in round three."
+        "She was appointed the captain of the rowing club.",
+        "He became a head of the drama department after the reshuffle.",
+        "They elected her treasurer of the local book club.",
+        "She is a only photographer who stayed until closing.",
+        "He remains the unique finalist still active in round three."
       ],
       "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — After appoint/elect/name, English often uses \"the\" + unique role: \"appointed the CEO.\"\n\nTip: Unique office titles after appoint/elect frequently take the.",
-        "FALSE — Prefer \"the head of legal\" for a unique post, or rephrase; \"a head of legal\" sounds like one of several equal heads.\n\nTip: Unique organisational roles usually take the, not a.",
+        "TRUE — After appoint/elect/name, English often uses \"the\" + unique role: \"appointed the captain.\"\n\nTip: Unique office titles after appoint/elect frequently take the.",
+        "FALSE — Prefer \"the head of the drama department\" for a unique post, or rephrase; \"a head of…\" sounds like one of several equal heads.\n\nTip: Unique organisational roles usually take the, not a.",
         "TRUE — Zero article is also possible after elect/appoint when the title follows directly: \"elected her treasurer.\"\n\nTip: Both \"elected her treasurer\" and \"elected her the treasurer\" appear; bare title after the object is standard.",
-        "FALSE — \"Only\" requires \"the only accountant,\" not \"a only.\" Also, \"only\" begins with a vowel sound, so a would be wrong even without that rule.\n\nTip: the only is a fixed determiner pattern.",
-        "FALSE — Native wording prefers \"the only bidder\" (or \"the sole bidder\"); \"the unique bidder\" is awkward in this ranking sense.\n\nTip: For exclusivity in a set, only/sole beats unique with the."
+        "FALSE — \"Only\" requires \"the only photographer,\" not \"a only.\" Also, \"only\" begins with a vowel sound, so a would be wrong even without that rule.\n\nTip: the only is a fixed determiner pattern.",
+        "FALSE — Native wording prefers \"the only finalist\" (or \"the sole finalist\"); \"the unique finalist\" is awkward in this ranking sense.\n\nTip: For exclusivity in a set, only/sole beats unique with the."
       ],
-      "highlights": ["the CEO of", "a head of legal", "her treasurer", "a only accountant", "the unique bidder"],
+      "highlights": ["the captain of", "a head of the", "her treasurer", "a only photographer", "the unique finalist"],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.9",
@@ -450,11 +450,11 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "A number of clients have requested clearer invoices.",
-        "The number of open tickets fell after the release.",
-        "She has a knowledge of Portuguese that helps in negotiations.",
+        "A number of neighbours have requested clearer recycling rules.",
+        "The number of open tickets fell after the software update.",
+        "She has a knowledge of Portuguese that helps on trips.",
         "He has knowledge of Portuguese from years in Lisbon.",
-        "We saw a rise in demand after the product redesign."
+        "We saw a rise in visitors after the gallery redesign."
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -462,9 +462,9 @@
         "TRUE — \"The number of\" correctly refers to a specific total; here the noun phrase is fully determined and grammatical.\n\nTip: Contrast a number of (several) with the number of (the total count).",
         "TRUE — \"A knowledge of\" is an accepted pattern when knowledge is limited to a field: \"a knowledge of Portuguese.\"\n\nTip: Some abstracts allow a when followed by of + field.",
         "TRUE — Zero-article \"knowledge of\" is equally natural for the same idea.\n\nTip: Both a knowledge of and knowledge of can be correct; meaning stays general-competence.",
-        "TRUE — Countable \"rise\" correctly takes \"a\" for a newly mentioned increase: \"a rise in demand.\"\n\nTip: Singular countable nouns need a determiner in this slot."
+        "TRUE — Countable \"rise\" correctly takes \"a\" for a newly mentioned increase: \"a rise in visitors.\"\n\nTip: Singular countable nouns need a determiner in this slot."
       ],
-      "highlights": ["A number of clients", "The number of open", "a knowledge of", "has knowledge of", "a rise in"],
+      "highlights": ["A number of neighbours", "The number of open", "a knowledge of", "has knowledge of", "a rise in"],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.9",
@@ -476,11 +476,11 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Next week we will finalise the vendor shortlist.",
-        "The next week we will finalise the vendor shortlist.",
-        "In 1990s many retailers still relied on paper ledgers.",
-        "In the 1990s many retailers still relied on paper ledgers.",
-        "On Monday morning the team ships the first batch."
+        "Next week we will finalise the festival programme.",
+        "The next week we will finalise the festival programme.",
+        "In 1990s many families still relied on paper maps.",
+        "In the 1990s many families still relied on paper maps.",
+        "On Monday morning the team packs for the match."
       ],
       "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
@@ -502,21 +502,21 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "She is in charge of marketing for the northern region.",
-        "He was hit on head during the warehouse inspection.",
-        "They shook hands after settling the dispute.",
-        "Please write the report from beginning to the end carefully.",
-        "We need to keep costs under control this quarter."
+        "She is in charge of costumes for the school play.",
+        "He was hit on head during the basketball practice.",
+        "They shook hands after settling the argument.",
+        "Please write the essay from beginning to the end carefully.",
+        "We need to keep the garden under control this summer."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"In charge of marketing\" uses zero article before the functional area in this common workplace pattern.\n\nTip: Many be/in + noun phrases freeze without a/the (in charge, in debt, in trouble).",
+        "TRUE — \"In charge of costumes\" uses zero article before the functional area in this common pattern.\n\nTip: Many be/in + noun phrases freeze without a/the (in charge, in debt, in trouble).",
         "FALSE — Body-contact idioms take possessive or the: \"on the head\" / \"on his head,\" not bare \"on head.\"\n\nTip: on the + body part is the usual set phrase after verbs like hit/pat.",
         "TRUE — \"Shake hands\" is a fixed zero-article idiom.\n\nTip: Learn hands/arms/legs idioms as chunks; do not insert the automatically.",
         "FALSE — The paired idiom is \"from beginning to end\" (both bare) or \"from the beginning to the end\"; mixing bare beginning with \"the end\" is inconsistent.\n\nTip: Keep both sides of a fixed pair parallel in determiner choice.",
         "TRUE — \"Under control\" is a zero-article prepositional idiom.\n\nTip: under control / in progress / on schedule are typically bare."
       ],
-      "highlights": ["in charge of marketing", "on head during", "shook hands", "from beginning to the end", "under control"],
+      "highlights": ["in charge of costumes", "on head during", "shook hands", "from beginning to the end", "under control"],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.9",

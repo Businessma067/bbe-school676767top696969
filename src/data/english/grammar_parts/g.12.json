@@ -8,31 +8,31 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Despite the rising costs, the company expanded into two new markets.",
-        "Despite of the rising costs, the company expanded into two new markets.",
-        "Although the rising costs, the company expanded into two new markets.",
-        "Because the delay, the product launch slipped by three weeks.",
-        "The plan failed owing insufficient demand in the pilot region."
+        "Despite the heavy rain, we finished the outdoor photography session.",
+        "Despite of the heavy rain, we finished the outdoor photography session.",
+        "Although the heavy rain, we finished the outdoor photography session.",
+        "Because the delay, the museum tour started twenty minutes late.",
+        "The picnic was cancelled owing a sudden thunderstorm."
       ],
       "answer_key": [true, false, false, false, false],
       "tactical_explanations": [
-        "TRUE — \"Despite\" takes a noun phrase directly, so \"Despite the rising costs\" is well formed before the main clause.\n\nTip: If you can replace the linker with \"in spite of,\" you almost always want a noun, not a full clause.",
-        "FALSE — Never write \"despite of.\" Use \"despite the rising costs\" or \"in spite of the rising costs.\"\n\nTip: \"Despite of\" is one of the most common exam traps — delete \"of\" on sight.",
-        "FALSE — \"Although\" needs a clause with a verb: \"Although costs rose,\" not a bare noun phrase.\n\nTip: Ask \"is there a finite verb after although?\" If not, switch to despite / in spite of.",
+        "TRUE — \"Despite\" takes a noun phrase directly, so \"Despite the heavy rain\" is well formed before the main clause.\n\nTip: If you can replace the linker with \"in spite of,\" you almost always want a noun, not a full clause.",
+        "FALSE — Never write \"despite of.\" Use \"despite the heavy rain\" or \"in spite of the heavy rain.\"\n\nTip: \"Despite of\" is one of the most common exam traps — delete \"of\" on sight.",
+        "FALSE — \"Although\" needs a clause with a verb: \"Although it rained heavily,\" not a bare noun phrase.\n\nTip: Ask \"is there a finite verb after although?\" If not, switch to despite / in spite of.",
         "FALSE — \"Because\" introduces a clause; for a noun use \"because of the delay\" (or \"Because there was a delay\").\n\nTip: \"Because\" + noun is almost always wrong — insert \"of\" or rebuild as a full clause.",
-        "FALSE — The fixed pattern is \"owing to\" + noun: \"owing to insufficient demand.\"\n\nTip: Treat \"owing to\" as one unit; if \"to\" is missing, the sentence fails."
+        "FALSE — The fixed pattern is \"owing to\" + noun: \"owing to a sudden thunderstorm.\"\n\nTip: Treat \"owing to\" as one unit; if \"to\" is missing, the sentence fails."
       ],
       "highlights": [
-        "Despite the rising costs",
+        "Despite the heavy rain",
         "Despite of",
-        "Although the rising costs",
+        "Although the heavy rain",
         "Because the delay",
-        "owing insufficient"
+        "owing a sudden"
       ],
-      "solution_overview": "This set checks whether you pick the right linker shape: noun after despite / because of / owing to, and a full clause after although / because. Read each connector and ask what kind of material follows it before you mark true or false.",
       "difficulty_level": "1/5",
       "sort_order": 1,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "This set checks whether you pick the right linker shape: noun after despite / because of / owing to, and a full clause after although / because. Read each connector and ask what kind of material follows it before you mark true or false."
     },
     {
       "id": "en-g-12-02",
@@ -40,31 +40,31 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "In spite of the budget freeze, the research team finished the prototype.",
-        "Although the mid-year funding cut, the research team finished the prototype.",
-        "Costs rose; however, the firm still hired two analysts.",
-        "Costs rose, however the firm still hired two analysts without any stronger punctuation.",
-        "The merger stalled owing regulatory objections from two agencies."
+        "In spite of the crowded platform, Maya found a seat on the morning train.",
+        "Although the crowded platform, Maya found a seat on the morning train.",
+        "The trail was icy; however, the hikers still reached the summit café.",
+        "The trail was icy, however the hikers still reached the summit café without stronger punctuation.",
+        "The concert started late owing technical problems with the sound desk."
       ],
       "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "TRUE — \"In spite of\" + noun phrase is the correct concessive pattern here.\n\nTip: \"In spite of\" and \"despite\" are interchangeable before a noun; neither takes a bare clause.",
-        "FALSE — \"Although\" needs a clause with a verb: \"Although funding was cut mid-year…\"\n\nTip: A noun after although is almost always a despite transplant — rewrite or switch linker.",
+        "FALSE — \"Although\" needs a clause with a verb: \"Although the platform was crowded…\"\n\nTip: A noun after although is almost always a despite transplant — rewrite or switch linker.",
         "TRUE — As a conjunctive adverb, \"however\" sits well after a semicolon (or full stop) between two independent clauses.\n\nTip: Semicolon / period + however + comma is the clean formal pattern.",
         "FALSE — A bare comma before conjunctive \"however\" is weak or wrong in formal writing; prefer a semicolon or a new sentence.\n\nTip: If however could start a new sentence, do not glue it with only a comma.",
-        "FALSE — Restore the full linker: \"owing to regulatory objections.\"\n\nTip: \"Owing\" without \"to\" is never complete in this pattern."
+        "FALSE — Restore the full linker: \"owing to technical problems.\"\n\nTip: \"Owing\" without \"to\" is never complete in this pattern."
       ],
       "highlights": [
         "In spite of",
-        "Although the mid-year funding cut",
+        "Although the crowded platform",
         "however",
         "however",
-        "owing regulatory"
+        "owing technical"
       ],
-      "solution_overview": "Contrast linkers come in two families: despite / in spite of (noun) versus although (clause), plus however between full sentences. Check punctuation around however and whether owing to is complete.",
       "difficulty_level": "1/5",
       "sort_order": 2,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Contrast linkers come in two families: despite / in spite of (noun) versus although (clause), plus however between full sentences. Check punctuation around however and whether owing to is complete."
     },
     {
       "id": "en-g-12-03",
@@ -72,31 +72,31 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Because of the customs backlog, shipments arrived five days late.",
-        "Because shipments were delayed at customs, the warehouse ran short of stock.",
-        "Even though risks remained, the board approved the acquisition.",
-        "Even though the remaining risks, the board approved the acquisition.",
-        "Whereas revenue climbed, operating margins narrowed."
+        "Because of the closed bridge, cyclists took the riverside path instead.",
+        "Because the bridge was closed, cyclists took the riverside path instead.",
+        "Even though the recipe looked complicated, Leo baked the cake successfully.",
+        "Even though the complicated recipe, Leo baked the cake successfully.",
+        "Whereas the first half was quiet, the second half of the match was frantic."
       ],
       "answer_key": [true, true, true, false, true],
       "tactical_explanations": [
         "TRUE — \"Because of\" + noun phrase correctly gives the reason.\n\nTip: Use because of before nouns; reserve bare because for clauses.",
         "TRUE — \"Because\" + full clause is the other correct reason pattern.\n\nTip: If you already have subject + verb after because, do not add \"of.\"",
-        "TRUE — \"Even though\" takes a clause, and \"risks remained\" supplies one.\n\nTip: Even though ≈ although: both want finite clauses.",
-        "FALSE — \"Even though\" cannot take a noun phrase alone; write \"even though risks remained.\"\n\nTip: Swap even though → despite when only a noun follows.",
-        "TRUE — \"Whereas\" contrasts two full clauses cleanly.\n\nTip: Whereas needs clause + clause; \"whereas rising revenue\" without a verb is wrong."
+        "TRUE — \"Even though\" takes a clause, and \"the recipe looked complicated\" supplies one.\n\nTip: Even though ≈ although: both want finite clauses.",
+        "FALSE — \"Even though\" cannot take a noun phrase alone; write \"even though the recipe looked complicated.\"\n\nTip: Swap even though → despite when only a noun follows.",
+        "TRUE — \"Whereas\" contrasts two full clauses cleanly.\n\nTip: Whereas needs clause + clause; \"whereas a quiet first half\" without a verb is wrong."
       ],
       "highlights": [
         "Because of",
-        "Because shipments were delayed",
-        "Even though risks remained",
-        "Even though the remaining risks",
+        "Because the bridge was closed",
+        "Even though the recipe looked",
+        "Even though the complicated recipe",
         "Whereas"
       ],
-      "solution_overview": "Cause and concession each have a clause form and a noun form. Match because / even though / whereas to clauses, and because of to nouns — that single check resolves most of these items.",
       "difficulty_level": "1/5",
       "sort_order": 3,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Cause and concession each have a clause form and a noun form. Match because / even though / whereas to clauses, and because of to nouns — that single check resolves most of these items."
     },
     {
       "id": "en-g-12-04",
@@ -104,31 +104,31 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Despite of repeated warnings, the supplier missed every milestone.",
-        "In spite the repeated warnings, the supplier missed every milestone.",
-        "Although the supplier missed every milestone, the contract was renewed.",
-        "The audit was postponed because of staff shortages in the regional office.",
-        "Demand collapsed; however, inventory levels stayed high through May."
+        "Despite of repeated reminders, Nina forgot to water the balcony plants.",
+        "In spite the repeated reminders, Nina forgot to water the balcony plants.",
+        "Although Nina forgot to water the plants, they somehow survived the weekend.",
+        "The library was quiet because of a school holiday in the neighbourhood.",
+        "Tickets sold out early; however, a few returns appeared at the box office."
       ],
       "answer_key": [false, false, true, true, true],
       "tactical_explanations": [
-        "FALSE — Drop \"of\": \"Despite repeated warnings…\"\n\nTip: Despite never partners with of; in spite always needs of.",
+        "FALSE — Drop \"of\": \"Despite repeated reminders…\"\n\nTip: Despite never partners with of; in spite always needs of.",
         "FALSE — The full phrase is \"in spite of,\" not \"in spite\" alone.\n\nTip: Remember the trio: despite / in spite of / although — learn the prepositions as fixed spelling.",
         "TRUE — Although + clause correctly sets up the contrast with the main clause.\n\nTip: When the concessive idea has its own verb, although is usually safer than despite.",
-        "TRUE — Because of + noun phrase is the right causal linker here.\n\nTip: Staff shortages is a noun phrase, so because of (not bare because) is required.",
+        "TRUE — Because of + noun phrase is the right causal linker here.\n\nTip: A school holiday is a noun phrase, so because of (not bare because) is required.",
         "TRUE — Semicolon + however correctly joins two contrasting independent clauses.\n\nTip: Read however as a sentence adverb: it likes strong punctuation before it."
       ],
       "highlights": [
         "Despite of",
         "In spite the",
-        "Although the supplier missed",
+        "Although Nina forgot",
         "because of",
         "however"
       ],
-      "solution_overview": "Watch the spelling pairs: despite (no of) versus in spite of (of required). Then confirm although and however are doing clause-level work with proper punctuation.",
       "difficulty_level": "1/5",
       "sort_order": 4,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Watch the spelling pairs: despite (no of) versus in spite of (of required). Then confirm although and however are doing clause-level work with proper punctuation."
     },
     {
       "id": "en-g-12-05",
@@ -136,31 +136,31 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Owing to weak consumer confidence, retailers cut promotional budgets.",
-        "Because of weak consumer confidence, retailers cut promotional budgets.",
-        "Despite consumer confidence remaining weak, retailers still cut budgets.",
-        "Although consumer confidence remained weak, retailers still cut budgets.",
-        "However, the board delayed the dividend announcement until June."
+        "Owing to thick fog, the ferry crossing was postponed until noon.",
+        "Because of thick fog, the ferry crossing was postponed until noon.",
+        "Despite the fog lingering all morning, several walkers still set out.",
+        "Although the fog lingered all morning, several walkers still set out.",
+        "However, the coastal path remained closed for safety checks."
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
-        "TRUE — \"Owing to\" + noun phrase correctly states the cause.\n\nTip: Formal reports love owing to / because of before abstract nouns like confidence.",
+        "TRUE — \"Owing to\" + noun phrase correctly states the cause.\n\nTip: Formal notices often prefer owing to / because of before abstract nouns like fog.",
         "TRUE — \"Because of\" + noun phrase is an equally correct causal pattern here.\n\nTip: Because of and owing to are near-interchangeable before nouns.",
-        "TRUE — Despite can take a gerund noun phrase (\"consumer confidence remaining weak\").\n\nTip: Despite + -ing phrase is fine; despite + finite clause usually is not.",
-        "TRUE — Although + finite clause (\"remained weak\") is the clean concessive form.\n\nTip: If you can hear a tensed verb after although, the clause test usually passes.",
+        "TRUE — Despite can take a gerund noun phrase (\"the fog lingering all morning\").\n\nTip: Despite + -ing phrase is fine; despite + finite clause usually is not.",
+        "TRUE — Although + finite clause (\"lingered\") is the clean concessive form.\n\nTip: If you can hear a tensed verb after although, the clause test usually passes.",
         "TRUE — Sentence-initial \"However,\" with a following comma correctly opens a contrast.\n\nTip: Starting with However is fine; just do not leave it mid-sentence with only a weak comma before it."
       ],
       "highlights": [
         "Owing to",
         "Because of",
-        "Despite consumer confidence remaining",
-        "Although consumer confidence remained",
+        "Despite the fog lingering",
+        "Although the fog lingered",
         "However"
       ],
-      "solution_overview": "Here the traps sit in small words: the missing to after owing, and the wrong follow-on after although versus despite. Read the material after each linker as carefully as the linker itself.",
       "difficulty_level": "2/5",
       "sort_order": 5,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Here the traps sit in small words: the missing to after owing, and the wrong follow-on after although versus despite. Read the material after each linker as carefully as the linker itself."
     },
     {
       "id": "en-g-12-06",
@@ -168,31 +168,31 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The bid failed because of the incomplete disclosure package.",
-        "The bid failed because the disclosure package was incomplete.",
-        "The bid failed because of the disclosure package was incomplete.",
-        "In spite of incomplete disclosure, the committee advanced the bid to diligence.",
-        "Whereas the disclosure package was incomplete, the financial model looked solid."
+        "The rehearsal stopped because of a broken stage light.",
+        "The rehearsal stopped because a stage light was broken.",
+        "The rehearsal stopped because of a stage light was broken.",
+        "In spite of the broken light, the cast finished Act Two.",
+        "Whereas the lighting failed, the orchestra kept perfect timing."
       ],
       "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Because of + noun phrase correctly explains the failure.\n\nTip: Incomplete disclosure package is a noun — because of fits.",
+        "TRUE — Because of + noun phrase correctly explains the stoppage.\n\nTip: A broken stage light is a noun — because of fits.",
         "TRUE — Because + clause is equally correct when you spell out subject + verb.\n\nTip: Both because and because of can be right; the grammar after them decides.",
         "FALSE — Do not stack \"because of\" onto a full clause; drop \"of\" or rewrite the clause as a noun.\n\nTip: \"Because of + subject + verb\" is almost always a false hybrid.",
-        "TRUE — In spite of + noun phrase is the right concessive frame.\n\nTip: Incomplete disclosure is a noun idea — in spite of / despite both work.",
-        "TRUE — Whereas contrasts two complete clauses about disclosure versus the model.\n\nTip: Use whereas for side-by-side contrasts, not for simple cause."
+        "TRUE — In spite of + noun phrase is the right concessive frame.\n\nTip: The broken light is a noun idea — in spite of / despite both work.",
+        "TRUE — Whereas contrasts two complete clauses about lighting versus the orchestra.\n\nTip: Use whereas for side-by-side contrasts, not for simple cause."
       ],
       "highlights": [
-        "because of the incomplete",
-        "because the disclosure",
-        "because of the disclosure package was",
-        "In spite of incomplete",
-        "Whereas the disclosure"
+        "because of a broken",
+        "because a stage light",
+        "because of a stage light was",
+        "In spite of the broken",
+        "Whereas the lighting"
       ],
-      "solution_overview": "Cause linkers are easy until someone glues because of onto a whole clause. Check that after because of you only have a noun idea, and after because / whereas you have a real clause.",
       "difficulty_level": "2/5",
       "sort_order": 6,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Cause linkers are easy until someone glues because of onto a whole clause. Check that after because of you only have a noun idea, and after because / whereas you have a real clause."
     },
     {
       "id": "en-g-12-07",
@@ -200,11 +200,11 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Despite the fact that cash flow was tight, payroll was met on time.",
-        "Despite that cash flow was tight, payroll was met on time.",
-        "Although cash flow was tight, payroll was met on time.",
-        "Cash flow was tight. However, payroll was met on time.",
-        "Cash flow was tight however payroll was met on time."
+        "Despite the fact that the kitchen was tiny, they hosted a lively dinner.",
+        "Despite that the kitchen was tiny, they hosted a lively dinner.",
+        "Although the kitchen was tiny, they hosted a lively dinner.",
+        "The kitchen was tiny. However, the dinner still felt generous.",
+        "Space was limited however the hosts somehow seated twelve guests comfortably."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
@@ -217,14 +217,14 @@
       "highlights": [
         "Despite the fact that",
         "Despite that",
-        "Although cash flow",
+        "Although the kitchen",
         "However",
         "however"
       ],
-      "solution_overview": "Despite wants nouns; although wants clauses; however wants sentence-level punctuation. These five lines test those three habits in a cash-flow story.",
       "difficulty_level": "2/5",
       "sort_order": 7,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Despite wants nouns; although wants clauses; however wants sentence-level punctuation. These five lines test those three habits in a dinner-party story."
     },
     {
       "id": "en-g-12-08",
@@ -232,31 +232,31 @@
       "title": "Task 8",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Owing to the currency swing, imported components became markedly dearer.",
-        "Because of the currency swing, imported components became markedly dearer.",
-        "Although the currency swing, imported components became markedly dearer.",
-        "In spite of the currency swing, the pricing team held list prices steady.",
-        "Whereas the currency swing, the pricing team held list prices steady."
+        "Owing to a power cut, the cinema switched to an earlier screening.",
+        "Because of a power cut, the cinema switched to an earlier screening.",
+        "Although the power cut, the cinema switched to an earlier screening.",
+        "In spite of the power cut, the audience stayed in their seats.",
+        "Whereas the power cut, the audience stayed in their seats."
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Owing to + noun correctly marks the cause of the cost rise.\n\nTip: Owing to and because of are near twins before nouns.",
+        "TRUE — Owing to + noun correctly marks the cause of the schedule change.\n\nTip: Owing to and because of are near twins before nouns.",
         "TRUE — Because of + noun is equally correct in the same slot.\n\nTip: Either linker works; do not mix them with although’s clause rule.",
-        "FALSE — Although needs \"Although the currency swung\" or similar, not a bare noun.\n\nTip: Currency swing is a noun — feed it to despite / because of / owing to instead.",
-        "TRUE — In spite of + noun correctly frames the concession.\n\nTip: Holding prices steady despite a swing is a classic despite / in spite of pattern.",
-        "FALSE — Whereas requires a full clause, not a noun phrase.\n\nTip: Rewrite as \"Whereas the currency swung…\" or switch to despite."
+        "FALSE — Although needs \"Although there was a power cut\" or similar, not a bare noun.\n\nTip: Power cut is a noun — feed it to despite / because of / owing to instead.",
+        "TRUE — In spite of + noun correctly frames the concession.\n\nTip: Staying seated despite a power cut is a classic despite / in spite of pattern.",
+        "FALSE — Whereas requires a full clause, not a noun phrase.\n\nTip: Rewrite as \"Whereas the power failed…\" or switch to despite."
       ],
       "highlights": [
-        "Owing to the currency",
-        "Because of the currency",
-        "Although the currency swing",
-        "In spite of the currency",
-        "Whereas the currency swing"
+        "Owing to a power",
+        "Because of a power",
+        "Although the power cut",
+        "In spite of the power",
+        "Whereas the power cut"
       ],
-      "solution_overview": "Same noun idea — the currency swing — can follow owing to, because of, or in spite of, but not although or whereas. Let the linker dictate the grammar of what follows.",
       "difficulty_level": "2/5",
       "sort_order": 8,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Same noun idea — the power cut — can follow owing to, because of, or in spite of, but not although or whereas. Let the linker dictate the grammar of what follows."
     },
     {
       "id": "en-g-12-09",
@@ -264,31 +264,31 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The pilot succeeded despite early scepticism from the regional managers.",
-        "The pilot succeeded in spite of early scepticism from the regional managers.",
-        "The pilot succeeded although early scepticism from the regional managers.",
-        "Early scepticism was widespread; however, the pilot still met its adoption target.",
-        "Early scepticism was widespread, the pilot however still met its adoption target with no change in word order."
+        "The experiment succeeded despite early doubts from the lab team.",
+        "The experiment succeeded in spite of early doubts from the lab team.",
+        "The experiment succeeded although early doubts from the lab team.",
+        "Early doubts were widespread; however, the results still matched the prediction.",
+        "Early doubts were widespread, the results however still matched the prediction with no change in word order."
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "TRUE — Despite + noun phrase correctly expresses concession after the main clause.\n\nTip: Mid- or end-sentence despite is fine when a noun follows.",
         "TRUE — In spite of mirrors despite before the same noun phrase.\n\nTip: Prefer one style consistently in a report; both are grammatical.",
-        "FALSE — Although cannot take \"early scepticism…\" without a verb.\n\nTip: \"Although managers were sceptical\" would repair it.",
-        "TRUE — Semicolon + however correctly contrasts scepticism with the success metric.\n\nTip: Keep a comma after however in this pattern.",
-        "FALSE — Dropping however into the middle without proper clause punctuation / inversion patterns makes the sentence clumsy and formally wrong here.\n\nTip: Put however at the clause edge with a semicolon or period, not as a loose insert."
+        "FALSE — Although cannot take \"early doubts…\" without a verb.\n\nTip: \"Although the team had doubts\" would repair it.",
+        "TRUE — Semicolon + however correctly contrasts doubts with the successful results.\n\nTip: Keep a comma after however in this pattern.",
+        "FALSE — Dropping however into the middle without proper clause punctuation makes the sentence clumsy and formally wrong here.\n\nTip: Put however at the clause edge with a semicolon or period, not as a loose insert."
       ],
       "highlights": [
-        "despite early scepticism",
-        "in spite of early scepticism",
-        "although early scepticism",
+        "despite early doubts",
+        "in spite of early doubts",
+        "although early doubts",
         "however",
         "however"
       ],
-      "solution_overview": "Concession after a success statement usually wants despite / in spite of + noun. Although needs a clause, and however needs clear sentence boundaries — do not bury it mid-clause.",
       "difficulty_level": "3/5",
       "sort_order": 9,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Concession after a success statement usually wants despite / in spite of + noun. Although needs a clause, and however needs clear sentence boundaries — do not bury it mid-clause."
     },
     {
       "id": "en-g-12-10",
@@ -296,31 +296,31 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Because of rising energy tariffs, the plant shifted production overnight.",
-        "Because rising energy tariffs, the plant shifted production overnight.",
-        "Owing to rising energy tariffs, the plant shifted production overnight.",
-        "Despite rising energy tariffs, overnight shifts were not authorised.",
-        "Although rising energy tariffs forced a review, overnight shifts were not authorised."
+        "Because of rising pollen levels, many runners skipped the morning jog.",
+        "Because pollen levels were rising, many runners skipped the morning jog.",
+        "Because of pollen levels were rising, many runners skipped the morning jog.",
+        "Even though pollen levels were high, a few athletes still trained outdoors.",
+        "Even though high pollen levels, a few athletes still trained outdoors."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Because of + noun phrase correctly states the cause.\n\nTip: Rising energy tariffs is a noun phrase headed by tariffs.",
-        "FALSE — Bare because needs a clause: \"Because energy tariffs rose…\"\n\nTip: Missing of after because before a noun is an automatic false.",
-        "TRUE — Owing to + noun phrase is a formal alternative to because of.\n\nTip: In board minutes, owing to often sounds slightly more formal than because of.",
-        "TRUE — Despite + noun phrase correctly marks concession.\n\nTip: Same noun can follow despite or because of depending on whether you mean contrast or cause.",
-        "TRUE — Although + full clause (\"rising energy tariffs forced a review\") is grammatical.\n\nTip: Once a verb appears after although, the clause test is passed."
+        "TRUE — Because of + noun phrase correctly states the reason.\n\nTip: Rising pollen levels behaves as a noun idea after because of.",
+        "TRUE — Because + finite clause is the matching clause form.\n\nTip: Keep because of and because as a clean pair: noun versus clause.",
+        "FALSE — Because of must not introduce a full clause with were.\n\nTip: If you see a tensed verb after because of, rewrite immediately.",
+        "TRUE — Even though + clause correctly marks concession.\n\nTip: Even though and although share the same clause requirement.",
+        "FALSE — Even though cannot take a bare noun phrase.\n\nTip: Switch to despite high pollen levels, or add a verb after even though."
       ],
       "highlights": [
-        "Because of rising",
-        "Because rising",
-        "Owing to rising",
-        "Despite rising",
-        "Although rising energy tariffs forced"
+        "Because of rising pollen",
+        "Because pollen levels were",
+        "Because of pollen levels were",
+        "Even though pollen levels were",
+        "Even though high pollen"
       ],
-      "solution_overview": "One topic — energy tariffs — appears after cause, concession, and clause linkers. Decide first whether the sentence argues cause or contrast, then whether what follows is a noun or a clause.",
       "difficulty_level": "3/5",
       "sort_order": 10,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Cause and concession swap partners easily: because of / despite take nouns; because / even though take clauses. Spot the hybrid \"because of + were\" and the bare noun after even though."
     },
     {
       "id": "en-g-12-11",
@@ -328,31 +328,31 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The forecast was revised downward owing to softer order books in Q3.",
-        "The forecast was revised downward owing softer order books in Q3.",
-        "Softer order books reduced visibility; however, hiring plans stayed unchanged.",
-        "Softer order books reduced visibility, however hiring plans stayed unchanged.",
-        "In spite of softer order books, the firm kept its graduate intake."
+        "She kept painting, although her wrist ached after every session.",
+        "She kept painting despite her wrist ached after every session.",
+        "She kept painting in spite of her aching wrist.",
+        "Her wrist ached; she continued, however, with shorter sessions.",
+        "Her wrist ached, however she continued with shorter sessions using only a comma."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Owing to + noun phrase correctly explains the revision.\n\nTip: Soft order books = noun idea → owing to / because of.",
-        "FALSE — Restore \"to\": \"owing to softer order books.\"\n\nTip: Scan every owing for its partner to.",
-        "TRUE — Semicolon + however correctly contrasts visibility with hiring.\n\nTip: Two independent clauses around however need strong punctuation.",
-        "FALSE — A lone comma before however is not enough in formal exam style.\n\nTip: Upgrade the comma to a semicolon or start a new sentence.",
-        "TRUE — In spite of + noun phrase correctly frames the concession.\n\nTip: Keeping intake despite soft books is a textbook in spite of use."
+        "TRUE — Although + finite clause correctly softens the contrast.\n\nTip: Pain + continued activity is a natural although pattern.",
+        "FALSE — Despite cannot take the finite clause \"her wrist ached.\"\n\nTip: Use although, or \"despite her aching wrist.\"",
+        "TRUE — In spite of + noun phrase is the correct concessive noun form.\n\nTip: Convert the clause idea into a noun (aching wrist) for in spite of / despite.",
+        "TRUE — Parenthetical however between commas correctly contrasts ache with persistence.\n\nTip: Mid-clause however with commas on both sides is allowed.",
+        "FALSE — However joining two clauses with only a preceding comma is a classic splice error.\n\nTip: Semicolon or period before however when it links full clauses."
       ],
       "highlights": [
-        "owing to softer",
-        "owing softer",
+        "although her wrist ached",
+        "despite her wrist ached",
+        "in spite of her aching",
         "however",
-        "however",
-        "In spite of softer"
+        "however"
       ],
-      "solution_overview": "Forecast language often pairs owing to with commercial nouns and however with policy contrasts. Check the little words — to after owing, and the stop before however.",
       "difficulty_level": "3/5",
       "sort_order": 11,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "This set contrasts clause linkers with noun linkers around the same idea, then checks two however patterns: legal parenthetical commas versus an illegal comma splice."
     },
     {
       "id": "en-g-12-12",
@@ -360,31 +360,31 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Although the syndicate disagreed on valuation, talks continued into Friday night.",
-        "Despite the syndicate disagreed on valuation, talks continued into Friday night.",
-        "Despite the syndicate's disagreement on valuation, talks continued into Friday night.",
-        "Because of the syndicate's disagreement on valuation, talks nearly collapsed.",
-        "Whereas the syndicate disagreed on valuation, the strategic fit was never in doubt."
+        "Owing to roadworks on the ring road, the coach arrived forty minutes late.",
+        "Owing roadworks on the ring road, the coach arrived forty minutes late.",
+        "Despite roadworks slowing traffic, several passengers still made their connections.",
+        "Although roadworks slowing traffic, several passengers still made their connections.",
+        "Whereas the outbound coach was late, the return journey ran on time."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Although + clause correctly introduces the concession.\n\nTip: Disagreed is a finite verb — although is happy.",
-        "FALSE — Despite cannot take a finite clause directly; use although or turn the idea into a noun.\n\nTip: \"Despite + subject + verb\" is a high-frequency false pattern.",
-        "TRUE — Despite + noun phrase (\"the syndicate's disagreement\") is correct.\n\nTip: Nominalise the clause (disagreed → disagreement) when you insist on despite.",
-        "TRUE — Because of + noun phrase correctly states the near-collapse cause.\n\nTip: Same noun phrase can follow despite (contrast) or because of (cause).",
-        "TRUE — Whereas contrasts two full clauses about valuation versus strategic fit.\n\nTip: Whereas is for contrast, not cause — meaning must also fit."
+        "TRUE — Owing to + noun correctly explains the late arrival.\n\nTip: Travel notices often open with owing to + cause.",
+        "FALSE — Missing to: write \"owing to roadworks.\"\n\nTip: Scan for orphan \"owing\" without \"to.\"",
+        "TRUE — Despite + -ing phrase (\"roadworks slowing traffic\") is grammatical.\n\nTip: Despite + noun/-ing ≈ although + clause.",
+        "FALSE — Although needs a finite verb: \"Although roadworks slowed traffic…\"\n\nTip: \"Although + -ing\" without a clear subject is a frequent transfer error.",
+        "TRUE — Whereas contrasts two complete clauses about outbound versus return.\n\nTip: Whereas likes balanced clause pairs, not noun fragments."
       ],
       "highlights": [
-        "Although the syndicate disagreed",
-        "Despite the syndicate disagreed",
-        "Despite the syndicate's disagreement",
-        "Because of the syndicate's disagreement",
-        "Whereas the syndicate disagreed"
+        "Owing to roadworks",
+        "Owing roadworks",
+        "Despite roadworks slowing",
+        "Although roadworks slowing",
+        "Whereas the outbound"
       ],
-      "solution_overview": "The key subtlety is despite versus although: a finite clause after despite fails until you nominalise it. Because of and whereas then reuse the same content with different meanings.",
       "difficulty_level": "3/5",
       "sort_order": 12,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Check owing to completeness, then decide whether an -ing phrase belongs after despite (yes) or after although (usually no). Whereas still demands two full clauses."
     },
     {
       "id": "en-g-12-13",
@@ -392,31 +392,31 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Even though the underwriters demanded extra warranties, the issuer refused to reopen the prospectus.",
-        "Even though the underwriters' demand for extra warranties, the issuer refused to reopen the prospectus.",
-        "In spite of the underwriters demanding extra warranties, the issuer kept the prospectus closed.",
-        "The issuer refused; however, the underwriters still allocated a full book.",
-        "The issuer refused however the underwriters still allocated a full book without stops or commas."
+        "The choir performed well despite having had only two rehearsals that week.",
+        "The choir performed well although having had only two rehearsals that week.",
+        "Because of having only two rehearsals, the conductor shortened the programme.",
+        "Because having only two rehearsals, the conductor shortened the programme.",
+        "Having had only two rehearsals; however, the choir still sounded confident."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — Even though + clause correctly marks strong concession.\n\nTip: Even though is a more emphatic cousin of although — same clause rule.",
-        "FALSE — Even though needs a verb-bearing clause, not a noun phrase.\n\nTip: Switch to despite / in spite of before \"the underwriters' demand.\"",
-        "TRUE — In spite of + gerund noun phrase is grammatical.\n\nTip: \"X demanding Y\" after in spite of / despite is a useful compact pattern.",
-        "TRUE — Semicolon + however correctly contrasts refusal with allocation.\n\nTip: Keep both sides of however able to stand alone as sentences.",
-        "FALSE — However needs stronger punctuation than a bare run-on join.\n\nTip: Insert a semicolon/period and a comma after however."
+        "TRUE — Despite + perfect gerund phrase correctly marks concession.\n\nTip: Despite + having (had) … is a polished formal pattern.",
+        "FALSE — Although needs a finite clause: \"Although the choir had had only two rehearsals…\"\n\nTip: Do not transplant a despite -ing phrase under although.",
+        "TRUE — Because of + gerund noun phrase correctly states the cause.\n\nTip: Because of can take -ing phrases that act like nouns.",
+        "FALSE — Bare because needs subject + verb, not a hanging -ing phrase.\n\nTip: Add of, or rewrite: \"Because they had only two rehearsals…\"",
+        "FALSE — A dangling -ing opener cannot be glued to however with only a semicolon in this broken shape; rebuild as two full clauses.\n\nTip: However still needs a proper independent clause before and after it."
       ],
       "highlights": [
-        "Even though the underwriters demanded",
-        "Even though the underwriters' demand",
-        "In spite of the underwriters demanding",
-        "however",
+        "despite having had",
+        "although having had",
+        "Because of having",
+        "Because having",
         "however"
       ],
-      "solution_overview": "Capital-markets wording hides the same linker rules: even though wants clauses, in spite of can take -ing phrases, and however still needs sentence punctuation.",
       "difficulty_level": "4/5",
       "sort_order": 13,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Advanced concession and cause often use -ing phrases. They fit after despite / because of, but not after bare although / because, and they cannot rescue a malformed however pair."
     },
     {
       "id": "en-g-12-14",
@@ -424,31 +424,31 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Because the compliance filter flagged three counterparties, onboarding paused for a week.",
-        "Because of the compliance filter flagged three counterparties, onboarding paused for a week.",
-        "Owing to the compliance filter flagging three counterparties, onboarding paused for a week.",
-        "Despite the compliance filter flagging three counterparties, senior managers pressed ahead.",
-        "Although the compliance filter flagging three counterparties, senior managers pressed ahead."
+        "In spite of what the guidebook claimed, the gallery was still closed on Mondays.",
+        "Despite what the guidebook claimed, the gallery was still closed on Mondays.",
+        "Although what the guidebook claimed, the gallery was still closed on Mondays.",
+        "The guidebook was outdated; the gallery, however, posted clear opening hours online.",
+        "The guidebook was outdated however the gallery posted clear opening hours online."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Because + finite clause correctly gives the reason.\n\nTip: Flagged is past simple — perfect after because.",
-        "FALSE — Because of cannot introduce a finite clause; remove of or nominalise.\n\nTip: Spot the illegal \"because of + subject + verb\" stack.",
-        "TRUE — Owing to + -ing noun phrase is acceptable formal cause marking.\n\nTip: Gerund phrases after owing to / because of / despite are common in reports.",
-        "TRUE — Despite + -ing phrase correctly marks concession.\n\nTip: Same -ing phrase can mean cause (owing to) or contrast (despite) depending on the linker.",
-        "FALSE — Although needs a finite verb: \"Although the compliance filter flagged…\"\n\nTip: -ing after although is usually a despite transplant — reject it."
+        "TRUE — In spite of + free relative (\"what…\") works because the what-clause acts as a noun.\n\nTip: What/how clauses can follow in spite of / despite / because of.",
+        "TRUE — Despite + the same what-clause is equally correct.\n\nTip: Despite and in spite of share this noun-like object pattern.",
+        "FALSE — Although needs an ordinary clause, not \"although what…\" without a verb frame.\n\nTip: Prefer \"Although the guidebook claimed otherwise…\"",
+        "TRUE — Parenthetical however between commas correctly contrasts outdated print with online hours.\n\nTip: Commas both sides signal parenthetical however, not a splice.",
+        "FALSE — No strong punctuation before however between two clauses.\n\nTip: Insert a semicolon or start a new sentence."
       ],
       "highlights": [
-        "Because the compliance filter flagged",
-        "Because of the compliance filter flagged",
-        "Owing to the compliance filter flagging",
-        "Despite the compliance filter flagging",
-        "Although the compliance filter flagging"
+        "In spite of what",
+        "Despite what",
+        "Although what",
+        "however",
+        "however"
       ],
-      "solution_overview": "Compliance scenarios often use long noun phrases. Keep because for finite clauses, and reserve because of / owing to / despite for noun or -ing phrases — not the other way round.",
       "difficulty_level": "4/5",
       "sort_order": 14,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Wh-clauses behave like nouns after despite / in spite of, but although still wants a normal subject–verb clause. Pair that with a careful however punctuation check."
     },
     {
       "id": "en-g-12-15",
@@ -456,31 +456,31 @@
       "title": "Task 15",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Whereas domestic bookings surged, outbound leisure travel remained subdued.",
-        "Whereas domestic bookings, outbound leisure travel remained subdued.",
-        "Domestic bookings surged. However, outbound leisure travel remained subdued.",
-        "Despite domestic bookings surging, marketing spend on outbound routes rose.",
-        "Although domestic bookings surging, marketing spend on outbound routes rose."
+        "Whereas most guests preferred the terrace, a few stayed indoors near the fireplace.",
+        "Despite most guests preferred the terrace, a few stayed indoors near the fireplace.",
+        "In spite of most guests preferring the terrace, a few stayed indoors near the fireplace.",
+        "Because of most guests preferring the terrace, the hosts moved the buffet outside.",
+        "Although most guests preferring the terrace, the hosts moved the buffet outside."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Whereas contrasts two finite clauses about travel segments.\n\nTip: Both halves need a verb when whereas opens the sentence.",
-        "FALSE — Whereas cannot take a bare noun; add a verb (\"surged\").\n\nTip: Incomplete whereas clauses are easy to miss if you only read the second half.",
-        "TRUE — Separate sentences with However correctly mark the contrast.\n\nTip: Short sentences around however are often clearer than a long semicolon join.",
-        "TRUE — Despite + -ing noun phrase is grammatical concession.\n\nTip: \"Despite X -ing\" compresses \"although X -ed.\"",
-        "FALSE — Although needs \"Although domestic bookings surged…\"\n\nTip: Do not copy despite’s -ing pattern onto although."
+        "TRUE — Whereas + finite clause correctly opens a balanced contrast.\n\nTip: Whereas needs a tensed verb in each half of the contrast.",
+        "FALSE — Despite cannot take \"most guests preferred…\" as a finite clause.\n\nTip: Switch to although, or to \"despite most guests preferring…\"",
+        "TRUE — In spite of + -ing phrase correctly compresses the same idea.\n\nTip: Preferring turns the clause into a noun-like object for in spite of.",
+        "TRUE — Because of + -ing phrase correctly marks cause.\n\nTip: The same -ing phrase can serve cause (because of) or concession (in spite of).",
+        "FALSE — Although still needs \"Although most guests preferred…\" with a finite verb.\n\nTip: Final check on every although: find the tensed verb or mark false."
       ],
       "highlights": [
-        "Whereas domestic bookings surged",
-        "Whereas domestic bookings,",
-        "However",
-        "Despite domestic bookings surging",
-        "Although domestic bookings surging"
+        "Whereas most guests preferred",
+        "Despite most guests preferred",
+        "In spite of most guests preferring",
+        "Because of most guests preferring",
+        "Although most guests preferring"
       ],
-      "solution_overview": "Travel-data contrasts use whereas and however for clause-level opposition, while despite can take an -ing phrase. Although still refuses that -ing shortcut.",
       "difficulty_level": "4/5",
       "sort_order": 15,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "One party detail — terrace versus indoors — is reshaped under five linkers. Name the linker, name what follows it, and the true/false call becomes mechanical."
     },
     {
       "id": "en-g-12-16",
@@ -488,31 +488,31 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "In spite of having little collateral, the start-up secured a bridging facility.",
-        "Despite of having little collateral, the start-up secured a bridging facility.",
-        "Although having little collateral, the start-up secured a bridging facility.",
-        "Although it had little collateral, the start-up secured a bridging facility.",
-        "The start-up had little collateral; however, lenders still offered a bridging facility."
+        "In spite of having little free time, Sam joined the weekend cycling club.",
+        "Despite of having little free time, Sam joined the weekend cycling club.",
+        "Although having little free time, Sam joined the weekend cycling club.",
+        "Although he had little free time, Sam joined the weekend cycling club.",
+        "Free time was scarce; however, the club rides still felt restorative."
       ],
       "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
-        "TRUE — In spite of + gerund phrase (\"having little collateral\") is correct.\n\nTip: Perfect for concise concession before a surprising result.",
-        "FALSE — Remove of: \"Despite having little collateral…\"\n\nTip: Despite + -ing is fine; despite of + -ing is not.",
+        "TRUE — In spite of + having… correctly frames concession with a gerund.\n\nTip: Having + noun after in spite of / despite is a reliable pattern.",
+        "FALSE — Remove of: \"Despite having little free time…\"\n\nTip: Despite + -ing is fine; despite of + -ing is not.",
         "FALSE — Although does not take a bare -ing phrase in careful formal English; add a subject + finite verb.\n\nTip: \"Although having…\" is a common L2 transfer error from despite.",
-        "TRUE — Although + full clause repairs the previous pattern.\n\nTip: Insert a clear subject (it / the firm) after although when in doubt.",
-        "TRUE — Semicolon + however correctly contrasts weak collateral with lender appetite.\n\nTip: Keep however’s comma after the linker."
+        "TRUE — Although + full clause repairs the previous pattern.\n\nTip: Insert a clear subject (he / Sam) after although when in doubt.",
+        "TRUE — Semicolon + however correctly contrasts scarce time with the value of the rides.\n\nTip: Keep however’s comma after the linker."
       ],
       "highlights": [
         "In spite of having",
         "Despite of having",
         "Although having",
-        "Although it had",
+        "Although he had",
         "however"
       ],
-      "solution_overview": "Gerund concessions after in spite of / despite are elegant, but although still wants a full clause. Watch the fake \"despite of\" and the fake \"although -ing\" twins.",
       "difficulty_level": "4/5",
       "sort_order": 16,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Gerund concessions after in spite of / despite are elegant, but although still wants a full clause. Watch the fake \"despite of\" and the fake \"although -ing\" twins."
     },
     {
       "id": "en-g-12-17",
@@ -520,31 +520,31 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The bond issue cleared, owing to last-minute support from two anchor investors.",
-        "The bond issue cleared owing last-minute support from two anchor investors.",
-        "Last-minute support arrived; the pricing, however, stayed inside the marketed range.",
-        "Last-minute support arrived, however the pricing stayed inside the marketed range with only a comma before however.",
-        "Despite last-minute support arriving, several smaller accounts still cancelled orders."
+        "The match resumed, owing to a brief break in the storm clouds.",
+        "The match resumed owing a brief break in the storm clouds.",
+        "A break in the clouds arrived; the pitch, however, remained too wet for play.",
+        "A break in the clouds arrived, however the pitch remained too wet for play with only a comma before however.",
+        "Despite a break in the clouds arriving, several seats in the stand stayed empty."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "TRUE — Mid-sentence \"owing to\" + noun phrase correctly states the cause.\n\nTip: A comma before owing to is common when the cause follows the result.",
-        "FALSE — Missing to: write \"owing to last-minute support.\"\n\nTip: End-of-sentence owing still needs its to.",
-        "TRUE — Parenthetical however between commas correctly contrasts support with pricing.\n\nTip: Mid-clause however with commas is allowed when it does not join two bare clauses with a weak comma alone.",
+        "FALSE — Missing to: write \"owing to a brief break.\"\n\nTip: End-of-sentence owing still needs its to.",
+        "TRUE — Parenthetical however between commas correctly contrasts the break with the wet pitch.\n\nTip: Mid-clause however with commas is allowed when it does not join two bare clauses with a weak comma alone.",
         "FALSE — Using however as a coordinator with only a preceding comma remains poor formal style.\n\nTip: Distinguish parenthetical however (commas both sides) from clause-joining however (semicolon/period).",
         "TRUE — Despite + -ing phrase correctly marks concession.\n\nTip: \"Despite X arriving\" ≈ \"although X arrived.\""
       ],
       "highlights": [
-        "owing to last-minute",
-        "owing last-minute",
+        "owing to a brief",
+        "owing a brief",
         "however",
         "however",
-        "Despite last-minute support arriving"
+        "Despite a break in the clouds arriving"
       ],
-      "solution_overview": "Harder however items distinguish parenthetical mid-clause use from illegal comma splices. Pair that with a clean owing to check and a despite -ing concession.",
       "difficulty_level": "5/5",
       "sort_order": 17,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Harder however items distinguish parenthetical mid-clause use from illegal comma splices. Pair that with a clean owing to check and a despite -ing concession."
     },
     {
       "id": "en-g-12-18",
@@ -552,31 +552,31 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Because of how abruptly the corridor closed, logistics costs jumped overnight.",
-        "Because how abruptly the corridor closed, logistics costs jumped overnight.",
-        "Although how abruptly the corridor closed surprised planners, contingency stock covered the gap.",
-        "In spite of how abruptly the corridor closed, contingency stock covered the gap.",
-        "The corridor closed abruptly. Owing to that disruption, contingency stock was released."
+        "Because of how abruptly the trail narrowed, the group slowed to single file.",
+        "Because how abruptly the trail narrowed, the group slowed to single file.",
+        "Although how abruptly the trail narrowed surprised the guides, nobody turned back.",
+        "In spite of how abruptly the trail narrowed, nobody turned back.",
+        "The trail narrowed abruptly. Owing to that change, the group slowed to single file."
       ],
       "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
         "TRUE — Because of + free relative noun clause (\"how abruptly…\") is grammatical.\n\nTip: Wh-clauses can act as nouns after because of / despite / in spite of.",
         "FALSE — Bare because needs a normal clause, not \"because how…\" without of.\n\nTip: If a how/what clause follows, you usually need because of, not bare because.",
-        "TRUE — Although + clause including \"how abruptly…surprised\" is fine.\n\nTip: Here how-clause is inside a larger finite clause — although is satisfied.",
+        "TRUE — Although + clause including \"how abruptly…surprised\" is fine.\n\nTip: Here the how-clause sits inside a larger finite clause — although is satisfied.",
         "TRUE — In spite of + how-clause (noun-like) correctly marks concession.\n\nTip: In spite of how / despite what are polished formal patterns.",
-        "TRUE — Sentence-initial Owing to + noun correctly links to the prior disruption.\n\nTip: Pointing back with \"that disruption\" keeps owing to attached to a noun."
+        "TRUE — Sentence-initial Owing to + noun correctly links to the prior change.\n\nTip: Pointing back with \"that change\" keeps owing to attached to a noun."
       ],
       "highlights": [
         "Because of how",
         "Because how",
         "Although how abruptly",
         "In spite of how",
-        "Owing to that disruption"
+        "Owing to that change"
       ],
-      "solution_overview": "Advanced items use how-clauses as noun objects of because of / in spite of. Bare because still wants an ordinary subject–verb clause — do not drop of before how.",
       "difficulty_level": "5/5",
       "sort_order": 18,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Advanced items use how-clauses as noun objects of because of / in spite of. Bare because still wants an ordinary subject–verb clause — do not drop of before how."
     },
     {
       "id": "en-g-12-19",
@@ -584,31 +584,31 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Notwithstanding the delayed filings, the exchange allowed trading to resume — and despite the same delay, analysts kept their overweight ratings.",
-        "Despite delayed filings, analysts kept overweight ratings; however, several funds reduced exposure overnight.",
-        "Although delayed filings, analysts kept overweight ratings, however several funds reduced exposure overnight.",
-        "Owing to the delayed filings, the exchange postponed the opening auction.",
-        "Because of delayed filings were incomplete, the exchange postponed the opening auction."
+        "Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.",
+        "Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.",
+        "Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.",
+        "Owing to the delayed train, they walked the last kilometre along the canal.",
+        "Because of delayed trains were overcrowded, they walked the last kilometre along the canal."
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Despite + noun works in the second half; the sentence remains grammatical (notwithstanding is outside our trap set but does not break the despite use).\n\nTip: Focus on the despite + noun chunk — it is correctly formed.",
+        "TRUE — Despite + noun works in the second half; the sentence remains grammatical (notwithstanding sits outside the core trap set but does not break the despite use).\n\nTip: Focus on the despite + noun chunk — it is correctly formed.",
         "TRUE — Despite + noun and semicolon + however are both well formed.\n\nTip: Stacking two contrast tools is fine if each obeys its own rule.",
         "FALSE — Although lacks a clause, and however is joined with only a weak comma.\n\nTip: Two linker errors can hide in one sentence — check each separately.",
-        "TRUE — Owing to + noun correctly states the auction delay cause.\n\nTip: Exchange notices often prefer owing to for formal tone.",
-        "FALSE — Because of + finite clause is illegal; write \"Because filings were delayed\" or \"Because of incomplete delayed filings.\"\n\nTip: If a verb like were sits after because of, rewrite immediately."
+        "TRUE — Owing to + noun correctly states the reason for walking.\n\nTip: Travel delays often pair with owing to in formal notices.",
+        "FALSE — Because of + finite clause is illegal; write \"Because trains were delayed\" or \"Because of overcrowded delayed trains.\"\n\nTip: If a verb like were sits after because of, rewrite immediately."
       ],
       "highlights": [
         "despite the same delay",
         "however",
-        "Although delayed filings",
-        "Owing to the delayed filings",
-        "Because of delayed filings were"
+        "Although delayed trains",
+        "Owing to the delayed train",
+        "Because of delayed trains were"
       ],
-      "solution_overview": "Dense market sentences may contain two linkers. Score each linker on its own rule — noun versus clause, and however’s punctuation — rather than judging the sentence by overall \"feel.\"",
       "difficulty_level": "5/5",
       "sort_order": 19,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "Dense sentences may contain two linkers. Score each linker on its own rule — noun versus clause, and however’s punctuation — rather than judging the sentence by overall \"feel.\""
     },
     {
       "id": "en-g-12-20",
@@ -616,31 +616,31 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Whereas headcount rose in shared services, front-line capacity fell — a split that, however, the CEO refused to call a contradiction.",
-        "Despite headcount rose in shared services, front-line capacity fell.",
-        "In spite of headcount rising in shared services, front-line capacity fell.",
-        "Because of headcount rising in shared services, training budgets were ring-fenced.",
-        "Although headcount rising in shared services, training budgets were ring-fenced."
+        "Whereas membership rose at the community garden, weekend volunteering fell — a split that, however, the organisers refused to call a failure.",
+        "Despite membership rose at the community garden, weekend volunteering fell.",
+        "In spite of membership rising at the community garden, weekend volunteering fell.",
+        "Because of membership rising at the community garden, the organisers ordered more tools.",
+        "Although membership rising at the community garden, the organisers ordered more tools."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "TRUE — Whereas opens a proper clause contrast, and parenthetical however is correctly set off with commas.\n\nTip: Parenthetical however does not replace a missing verb after whereas.",
-        "FALSE — Despite cannot take the finite clause \"headcount rose…\"\n\nTip: Change to although, or to \"despite the rise in headcount.\"",
+        "FALSE — Despite cannot take the finite clause \"membership rose…\"\n\nTip: Change to although, or to \"despite the rise in membership.\"",
         "TRUE — In spite of + -ing phrase correctly compresses the contrast.\n\nTip: Rising turns the clause idea into a noun-like phrase for in spite of.",
         "TRUE — Because of + -ing phrase correctly marks cause.\n\nTip: Same -ing phrase can follow because of (cause) or in spite of (contrast).",
-        "FALSE — Although still needs \"Although headcount rose…\" with a finite verb.\n\nTip: Final check on every although: find the tensed verb or mark false."
+        "FALSE — Although still needs \"Although membership rose…\" with a finite verb.\n\nTip: Final check on every although: find the tensed verb or mark false."
       ],
       "highlights": [
-        "Whereas headcount rose",
-        "Despite headcount rose",
-        "In spite of headcount rising",
-        "Because of headcount rising",
-        "Although headcount rising"
+        "Whereas membership rose",
+        "Despite membership rose",
+        "In spite of membership rising",
+        "Because of membership rising",
+        "Although membership rising"
       ],
-      "solution_overview": "The last set mixes whereas, despite, in spite of, because of, and although around one workforce story. Name the linker, name what follows it, and the true/false call becomes mechanical even at exam speed.",
       "difficulty_level": "5/5",
       "sort_order": 20,
-      "subsection": "g.12"
+      "subsection": "g.12",
+      "solution_overview": "The last set mixes whereas, despite, in spite of, because of, and although around one community-garden story. Name the linker, name what follows it, and the true/false call becomes mechanical even at exam speed."
     }
   ]
 }

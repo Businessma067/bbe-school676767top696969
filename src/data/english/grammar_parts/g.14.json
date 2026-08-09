@@ -8,31 +8,31 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The board recommended that the proposal be reviewed before the vote.",
-        "It is essential that every applicant submits the form by Monday.",
-        "The committee insisted that the report is finalised within a week.",
-        "The manager demanded that the supplier pays the outstanding invoice immediately.",
-        "It is crucial that the sample remains uncontaminated during transit."
+        "The coach recommended that every player arrive forty minutes early.",
+        "It is essential that the lab notebook remains sealed overnight.",
+        "The landlord insisted that the tenant paints the hallway before moving out.",
+        "Friends suggested that she takes the night train to Lisbon.",
+        "It is crucial that the picnic baskets stays closed until noon."
       ],
       "answer_key": [true, false, false, false, false],
       "tactical_explanations": [
-        "TRUE — After \"recommended that,\" the formal subjunctive takes the base form \"be reviewed,\" not a present indicative.\n\nTip: Mandative triggers (recommend, insist, demand…) want the bare verb, even after a third-person singular subject.",
-        "FALSE — \"It is essential that\" requires the base form: \"every applicant submit,\" not \"submits.\"\n\nTip: Impersonal adjectives (essential, crucial, imperative) still trigger the same base-form pattern.",
-        "FALSE — After \"insisted that,\" use \"be finalised,\" not indicative \"is finalised.\"\n\nTip: Passive subjunctive needs \"be\" + past participle, never \"is/are\" + past participle.",
-        "FALSE — After \"demanded that,\" use \"pay,\" not the indicative \"pays.\"\n\nTip: Drop the third-person -s after any mandative that-clause.",
-        "FALSE — Use base form \"remain,\" not \"remains,\" after \"it is crucial that.\"\n\nTip: Stative verbs (remain, stay, keep) still lose -s in the formal subjunctive."
+        "TRUE — After \"recommended that,\" the formal subjunctive uses the base form \"arrive.\"\n\nTip: Mandative verbs (recommend, insist, demand) want the bare verb, even after a singular subject.",
+        "FALSE — \"It is essential that\" requires \"remain,\" not \"remains.\"\n\nTip: Impersonal adjectives (essential, crucial, vital) still trigger the base-form pattern.",
+        "FALSE — After \"insisted that,\" write \"paint,\" not \"paints.\"\n\nTip: Drop the third-person -s in any mandative that-clause.",
+        "FALSE — After \"suggested that,\" use \"take,\" not \"takes.\"\n\nTip: Soft verbs like suggest still forbid indicative -s in exam English.",
+        "FALSE — Use \"stay,\" not \"stays,\" after \"it is crucial that.\"\n\nTip: Stative verbs (stay, remain, keep) still lose -s in the formal subjunctive."
       ],
       "highlights": [
-        "be reviewed",
-        "submits",
-        "is finalised",
-        "pays",
-        "remains"
+        "arrive",
+        "remains",
+        "paints",
+        "takes",
+        "stays"
       ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.14",
-      "solution_overview": "Scan each sentence for a mandative trigger—recommend, insist, demand, or \"it is essential/crucial that.\" After that that-clause, the verb should be a bare base form (or \"be\" + participle), not a normal present indicative. Mark TRUE only when the base form is already in place."
+      "solution_overview": "Scan for mandative triggers—recommend, insist, suggest, or \"it is essential/crucial that.\" After the that-clause, expect a bare base form. Mark TRUE only when that base form is already there."
     },
     {
       "id": "en-g-14-02",
@@ -40,31 +40,31 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The regulator required that the bank disclose the contingency figures.",
-        "The panel proposed that the hearing is postponed until Friday.",
-        "It is imperative that the results be verified independently.",
-        "The council requested that the contractor submits revised drawings.",
-        "She suggested that he reconsiders the timeline before signing."
+        "The hiking club required that members bring spare batteries.",
+        "The gallery proposed that the exhibition is postponed until spring.",
+        "It is imperative that the recipe be followed exactly.",
+        "The librarian requested that each visitor returns borrowed maps today.",
+        "He suggested that Maya reconsiders the weekend itinerary."
       ],
       "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — \"Required that\" correctly takes the base form \"disclose.\"\n\nTip: Require, request, and demand behave like recommend: that + base form.",
-        "FALSE — After \"proposed that,\" write \"be postponed,\" not \"is postponed.\"\n\nTip: \"Is/are + past participle\" is indicative passive; the subjunctive passive needs \"be.\"",
-        "TRUE — \"It is imperative that… be verified\" uses the correct subjunctive passive.\n\nTip: Impersonal \"it is + adjective + that\" is a classic mandative frame.",
-        "FALSE — After \"requested that,\" use \"submit,\" not \"submits.\"\n\nTip: Do not add -s even when the subject of the that-clause is singular.",
-        "FALSE — After \"suggested that,\" use \"reconsider,\" not \"reconsiders.\"\n\nTip: Suggest and propose are softer verbs but still trigger the formal subjunctive in exam English."
+        "TRUE — \"Required that\" correctly takes the base form \"bring.\"\n\nTip: Require, request, and demand behave like recommend: that + base form.",
+        "FALSE — After \"proposed that,\" write \"be postponed,\" not \"is postponed.\"\n\nTip: Indicative passive uses \"is/are\"; the subjunctive passive needs \"be.\"",
+        "TRUE — \"It is imperative that… be followed\" uses the correct subjunctive passive.\n\nTip: Impersonal \"it is + adjective + that\" is a classic mandative frame.",
+        "FALSE — After \"requested that,\" use \"return,\" not \"returns.\"\n\nTip: Do not add -s even when the that-clause subject is singular.",
+        "FALSE — After \"suggested that,\" use \"reconsider,\" not \"reconsiders.\"\n\nTip: Suggest and propose are softer but still trigger the formal subjunctive here."
       ],
       "highlights": [
-        "disclose",
+        "bring",
         "is postponed",
-        "be verified",
-        "submits",
+        "be followed",
+        "returns",
         "reconsiders"
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.14",
-      "solution_overview": "These items mix require, propose, request, suggest, and \"it is imperative that.\" Treat them all the same way: look past the subject of the that-clause and check that the verb is base form. Indicative -s and \"is postponed\" are the FALSE marks."
+      "solution_overview": "These items mix require, propose, request, suggest, and \"it is imperative that.\" Treat them alike: look past the that-clause subject and check for a base form. Indicative -s and \"is postponed\" are the FALSE marks."
     },
     {
       "id": "en-g-14-03",
@@ -72,31 +72,31 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "It was recommended that the policy remain unchanged until the audit ended.",
-        "The ministry insisted that the tender documents are published online.",
-        "The ethics board demanded that the researcher withdraw the contested claim.",
-        "It is vital that every participant arrives fifteen minutes early.",
-        "The partners asked that the clause be redrafted in clearer language."
+        "It was recommended that the mural remain unfinished until the festival.",
+        "The neighbourhood group insisted that the streetlights are repaired tonight.",
+        "The drama coach demanded that the understudy learn the monologue by Friday.",
+        "It is vital that every volunteer arrives before the doors open.",
+        "The flatmates asked that the Wi-Fi password be changed after the party."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Past-tense \"was recommended that\" still takes present base form \"remain,\" not \"remained.\"\n\nTip: The mandative subjunctive does not backshift with the main verb's tense.",
-        "FALSE — Use \"be published,\" not \"are published,\" after \"insisted that.\"\n\nTip: Agreement with a plural subject does not licence indicative \"are\" in this pattern.",
-        "TRUE — \"Demanded that… withdraw\" is correct base-form usage.\n\nTip: Active subjunctive often looks identical to the infinitive without \"to.\"",
+        "TRUE — Past-tense \"was recommended that\" still takes present base form \"remain.\"\n\nTip: The mandative subjunctive does not backshift with the main verb's tense.",
+        "FALSE — Use \"be repaired,\" not \"are repaired,\" after \"insisted that.\"\n\nTip: A plural subject does not licence indicative \"are\" in this pattern.",
+        "TRUE — \"Demanded that… learn\" is correct base-form usage.\n\nTip: Active subjunctive often looks identical to the infinitive without \"to.\"",
         "FALSE — After \"it is vital that,\" write \"arrive,\" not \"arrives.\"\n\nTip: Vital, essential, and necessary all suppress the third-person -s.",
-        "TRUE — \"Asked that… be redrafted\" correctly uses the subjunctive passive.\n\nTip: Ask that + clause (formal) follows the same rule as request that."
+        "TRUE — \"Asked that… be changed\" correctly uses the subjunctive passive.\n\nTip: Ask that + clause (formal) follows the same rule as request that."
       ],
       "highlights": [
         "remain",
-        "are published",
-        "withdraw",
+        "are repaired",
+        "learn",
         "arrives",
-        "be redrafted"
+        "be changed"
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.14",
-      "solution_overview": "Watch for past-tense reporting verbs and impersonal \"it is vital that.\" Neither changes the rule: the that-clause verb stays in the base form. Flag any -s or \"are/is\" as incorrect."
+      "solution_overview": "Watch past-tense reporting verbs and impersonal \"it is vital that.\" Neither changes the rule: the that-clause verb stays in the base form. Flag any -s or \"are/is\" as incorrect."
     },
     {
       "id": "en-g-14-04",
@@ -104,31 +104,31 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The auditor recommended that management strengthen internal controls.",
-        "It is necessary that the warranty covers accidental damage as well.",
-        "The chair insisted that the minutes be circulated the same day.",
-        "Stakeholders demanded that the firm issues a public apology.",
-        "The guidance states that it is important that staff report conflicts of interest promptly."
+        "The yoga instructor recommended that beginners stretch after every class.",
+        "It is necessary that the tent covers the sleeping bags completely.",
+        "The choir director insisted that the sheet music be photocopied tonight.",
+        "Parents demanded that the school issues clearer trip instructions.",
+        "The guide stressed that it is important that hikers report injuries promptly."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Recommended that… strengthen\" is the expected base form.\n\nTip: Abstract subjects like \"management\" still take bare verbs after recommend.",
+        "TRUE — \"Recommended that… stretch\" is the expected base form.\n\nTip: Plural subjects still take bare verbs after recommend.",
         "FALSE — Use \"cover,\" not \"covers,\" after \"it is necessary that.\"\n\nTip: Necessary and essential never keep indicative agreement in careful exam usage.",
-        "TRUE — \"Insisted that… be circulated\" is correct subjunctive passive.\n\nTip: Time adverbials (\"the same day\") do not change the verb form.",
-        "FALSE — After \"demanded that,\" write \"issue,\" not \"issues.\"\n\nTip: A plural organisation noun (\"firm\") still takes a bare verb in the that-clause.",
-        "TRUE — Nested \"it is important that staff report\" correctly uses the base form.\n\nTip: The trigger can sit inside a larger sentence; find the that-clause first."
+        "TRUE — \"Insisted that… be photocopied\" is correct subjunctive passive.\n\nTip: Time adverbials do not change the verb form.",
+        "FALSE — After \"demanded that,\" write \"issue,\" not \"issues.\"\n\nTip: A singular institution (\"the school\") still takes a bare verb in the that-clause.",
+        "TRUE — Nested \"it is important that hikers report\" correctly uses the base form.\n\nTip: The trigger can sit inside a larger sentence; find the that-clause first."
       ],
       "highlights": [
-        "strengthen",
+        "stretch",
         "covers",
-        "be circulated",
+        "be photocopied",
         "issues",
         "report"
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.14",
-      "solution_overview": "Four of five sentences already use the mandative base form. The false ones keep ordinary present agreement (\"covers,\" \"issues\") after necessary/demand—those are the traps to strike."
+      "solution_overview": "Most lines already use the mandative base form. The false ones keep ordinary present agreement (\"covers,\" \"issues\") after necessary/demand—those are the traps to strike."
     },
     {
       "id": "en-g-14-05",
@@ -136,31 +136,31 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The tribunal ordered that the defendant disclose the email archive in full.",
-        "Counsel advised that the witness remains available for cross-examination.",
-        "It is desirable that the questionnaire be anonymous.",
-        "The lender stipulated that the borrower repay the facility within ninety days.",
-        "The memo urges that each division updates its contingency plan quarterly."
+        "The referee ordered that both captains leave the pitch together.",
+        "Her tutor advised that the draft remains unread until Monday.",
+        "It is desirable that the survey be anonymous.",
+        "The campsite rules stipulated that guests extinguish fires by ten.",
+        "The flyer urges that each neighbour updates the shared calendar weekly."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — \"Ordered that… disclose\" follows the mandative pattern.\n\nTip: Legal and formal verbs (order, stipulate, decree) are reliable subjunctive triggers.",
-        "FALSE — After \"advised that\" in this mandative sense, use \"remain,\" not \"remains.\"\n\nTip: Advise that + base form is the formal pattern tested here; do not keep -s.",
+        "TRUE — \"Ordered that… leave\" follows the mandative pattern.\n\nTip: Order, stipulate, and insist are reliable subjunctive triggers.",
+        "FALSE — After \"advised that\" in this mandative sense, use \"remain,\" not \"remains.\"\n\nTip: Advise that + base form is the formal pattern tested here.",
         "TRUE — \"It is desirable that… be anonymous\" correctly uses \"be.\"\n\nTip: Desirable, advisable, and preferable work like essential.",
-        "TRUE — \"Stipulated that… repay\" is the correct bare form.\n\nTip: Contract language often hides subjunctives—check the that-clause carefully.",
+        "TRUE — \"Stipulated that… extinguish\" is the correct bare form.\n\nTip: Rulebooks often hide subjunctives—check the that-clause carefully.",
         "FALSE — After \"urges that,\" write \"update,\" not \"updates.\"\n\nTip: Urge, recommend, and insist share the same base-form rule."
       ],
       "highlights": [
-        "disclose",
+        "leave",
         "remains",
         "be anonymous",
-        "repay",
+        "extinguish",
         "updates"
       ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.14",
-      "solution_overview": "Legal and advisory wording (order, advise, stipulate, urge) still triggers the formal subjunctive. Read past the institutional subject and verify the that-clause verb is bare."
+      "solution_overview": "Sports, tutoring, camping, and neighbourhood notices still trigger the formal subjunctive. Read past the subject and verify that the that-clause verb is bare."
     },
     {
       "id": "en-g-14-06",
@@ -168,25 +168,25 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The board moved that the dividend be suspended for one quarter.",
-        "Investors requested that the CEO explains the sudden revision.",
-        "It is critical that access logs be retained for seven years.",
-        "The supervisor insisted that nobody leave the site until clearance was given.",
-        "The circular recommends that departments consolidates overlapping budgets."
+        "The student council moved that the talent show be cancelled this term.",
+        "Tourists requested that the guide explains the mosaic in more detail.",
+        "It is critical that spare keys be left with a neighbour.",
+        "The warden insisted that nobody enter the reserve after dusk.",
+        "The handbook recommends that each class consolidates notes weekly."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — \"Moved that… be suspended\" is correct parliamentary/board subjunctive.\n\nTip: \"Move that\" in meeting minutes almost always takes the base form.",
-        "FALSE — Use \"explain,\" not \"explains,\" after \"requested that.\"\n\nTip: A singular title (\"the CEO\") is a frequent bait for -s.",
-        "TRUE — \"It is critical that… be retained\" uses the right passive subjunctive.\n\nTip: Critical and crucial are interchangeable triggers for this pattern.",
-        "TRUE — \"Insisted that nobody leave\" correctly uses the bare verb after a negative indefinite.\n\nTip: Nobody/everybody still take base form, not \"leaves.\"",
-        "FALSE — After \"recommends that,\" write \"consolidate,\" not \"consolidates.\"\n\nTip: Plural subjects do not need -s—and the subjunctive forbids it anyway."
+        "TRUE — \"Moved that… be cancelled\" is correct meeting-style subjunctive.\n\nTip: \"Move that\" in minutes almost always takes the base form.",
+        "FALSE — Use \"explain,\" not \"explains,\" after \"requested that.\"\n\nTip: A singular role (\"the guide\") is a frequent bait for -s.",
+        "TRUE — \"It is critical that… be left\" uses the right passive subjunctive.\n\nTip: Critical and crucial are interchangeable triggers for this pattern.",
+        "TRUE — \"Insisted that nobody enter\" correctly uses the bare verb after a negative indefinite.\n\nTip: Nobody/everybody still take base form, not \"enters.\"",
+        "FALSE — After \"recommends that,\" write \"consolidate,\" not \"consolidates.\"\n\nTip: Singular \"each class\" tempts -s—the subjunctive forbids it."
       ],
       "highlights": [
-        "be suspended",
+        "be cancelled",
         "explains",
-        "be retained",
-        "leave",
+        "be left",
+        "enter",
         "consolidates"
       ],
       "difficulty_level": "2/5",
@@ -200,16 +200,16 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The protocol requires that each sample be labelled before freezing.",
-        "It is essential that the chairperson opens the session punctually.",
-        "Shareholders proposed that the buy-back programme commence next month.",
-        "The inspector demanded that unsafe scaffolding were dismantled at once.",
-        "We recommended that the candidate not be shortlisted without references."
+        "The lab protocol requires that each sample be labelled before freezing.",
+        "It is essential that the host opens the doors punctually.",
+        "Classmates proposed that the film night commence after exams.",
+        "Residents demanded that unsafe scaffolding were dismantled at once.",
+        "We recommended that the nominee not be shortlisted without references."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Requires that… be labelled\" is correct.\n\nTip: Require that + passive subjunctive is standard in procedures and SOPs.",
-        "FALSE — Use \"open,\" not \"opens,\" after \"it is essential that.\"\n\nTip: Job titles after essential/imperative still take the bare verb.",
+        "TRUE — \"Requires that… be labelled\" is correct.\n\nTip: Require that + passive subjunctive is standard in procedures.",
+        "FALSE — Use \"open,\" not \"opens,\" after \"it is essential that.\"\n\nTip: Role nouns after essential/imperative still take the bare verb.",
         "TRUE — \"Proposed that… commence\" correctly uses the base form.\n\nTip: Formal verbs like commence are fine; keep them bare after propose.",
         "FALSE — After \"demanded that,\" use \"be dismantled,\" not \"were dismantled.\"\n\nTip: Do not confuse mandative \"be\" with the unreal \"were\" subjunctive.",
         "TRUE — Negation sits before the base form: \"not be shortlisted.\"\n\nTip: Write \"that X not + base,\" never \"that X does not\" in the formal pattern."
@@ -232,19 +232,19 @@
       "title": "Task 8",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The ombudsman recommended that the agency apologise to the complainant.",
-        "It is advisable that travellers avoids unmarked border crossings.",
-        "The contract provides that either party give thirty days' written notice.",
+        "The museum recommended that visitors apologise if they touch the exhibits.",
+        "It is advisable that travellers avoids unmarked mountain paths.",
+        "The lease provides that either tenant give thirty days' written notice.",
         "The faculty insisted that the thesis is submitted in electronic form only.",
-        "Her counsel urged that the injunction be lifted pending appeal."
+        "Her coach urged that the ban be lifted pending a medical check."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Recommended that… apologise\" uses British base-form spelling correctly.\n\nTip: Spelling (apologise/apologize) is separate from the subjunctive test—focus on the ending.",
+        "TRUE — \"Recommended that… apologise\" uses the base form correctly.\n\nTip: Spelling (apologise/apologize) is separate from the subjunctive test—focus on the ending.",
         "FALSE — After \"it is advisable that,\" write \"avoid,\" not \"avoids.\"\n\nTip: Advisable and preferable suppress -s exactly like essential.",
-        "TRUE — \"Provides that… give\" is a legal mandative with a bare verb.\n\nTip: \"Either party\" is singular in meaning but still takes base form here, not \"gives.\"",
+        "TRUE — \"Provides that… give\" is a formal mandative with a bare verb.\n\nTip: \"Either tenant\" still takes base form here, not \"gives.\"",
         "FALSE — Use \"be submitted,\" not \"is submitted,\" after \"insisted that.\"\n\nTip: Academic instructions often hide indicative passives—swap \"is\" for \"be.\"",
-        "TRUE — \"Urged that… be lifted\" is correct.\n\nTip: Court and counsel English is rich in formal subjunctives."
+        "TRUE — \"Urged that… be lifted\" is correct.\n\nTip: Sports and medical contexts still favour urge that + be + participle."
       ],
       "highlights": [
         "apologise",
@@ -256,7 +256,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.14",
-      "solution_overview": "Legal \"provides that\" and counsel \"urged that\" sit beside the usual recommend/insist frames. Correct items keep the bare verb; incorrect ones keep -s or indicative \"is.\""
+      "solution_overview": "Lease wording and coach \"urged that\" sit beside recommend/insist frames. Correct items keep the bare verb; incorrect ones keep -s or indicative \"is.\""
     },
     {
       "id": "en-g-14-09",
@@ -264,25 +264,25 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The compliance officer insisted that every gift above €50 is logged.",
+        "The club secretary insisted that every gift above €50 is logged.",
         "It is important that the appendix include the raw survey responses.",
-        "The syndicate demanded that interest payments resumes immediately.",
-        "Directors resolved that the subsidiary be wound up voluntarily.",
-        "The brief suggested that counsel prepares a chronology overnight."
+        "Fans demanded that ticket sales resumes immediately.",
+        "The allotment committee resolved that the shed be painted green.",
+        "The brief suggested that the designer prepares a mood board overnight."
       ],
       "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
         "FALSE — After \"insisted that,\" use \"be logged,\" not \"is logged.\"\n\nTip: Threshold phrases (€50, 10%, etc.) distract—still check the verb form.",
         "TRUE — \"It is important that… include\" correctly drops -s.\n\nTip: Important is among the highest-frequency impersonal triggers in exams.",
-        "FALSE — Use \"resume,\" not \"resumes,\" after \"demanded that.\"\n\nTip: Plural \"payments\" can tempt \"resume\" vs \"resumes\"—subjunctive wants bare \"resume\" either way.",
-        "TRUE — \"Resolved that… be wound up\" is correct board-resolution English.\n\nTip: Resolve/move/order that + be + participle is a fixed formal pattern.",
+        "FALSE — Use \"resume,\" not \"resumes,\" after \"demanded that.\"\n\nTip: Plural \"sales\" can tempt agreement noise—subjunctive wants bare \"resume\" either way.",
+        "TRUE — \"Resolved that… be painted\" is correct committee English.\n\nTip: Resolve/move/order that + be + participle is a fixed formal pattern.",
         "FALSE — After \"suggested that,\" write \"prepare,\" not \"prepares.\"\n\nTip: Soft verbs (suggest, recommend) still forbid indicative -s in the that-clause."
       ],
       "highlights": [
         "is logged",
         "include",
         "resumes",
-        "be wound up",
+        "be painted",
         "prepares"
       ],
       "difficulty_level": "3/5",
@@ -296,31 +296,31 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The watchdog recommended that lobbying contacts be disclosed quarterly.",
-        "It is mandatory that visitors wear protective footwear in the plant.",
-        "The arbitrator directed that both parties exchange witness lists by noon.",
-        "Management asked that overtime claims is filed before payroll closes.",
-        "The statute requires that the minister lay the report before Parliament."
+        "The park ranger recommended that picnic leftovers be packed out.",
+        "It is mandatory that visitors wear closed shoes in the workshop.",
+        "The debate chair directed that both teams exchange notes by noon.",
+        "The hostel asked that laundry tickets is collected before checkout.",
+        "The handbook requires that the captain lay the route map on the table."
       ],
       "answer_key": [true, true, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Recommended that… be disclosed\" is correct.\n\nTip: Frequency adverbs (quarterly) do not affect the subjunctive form.",
+        "TRUE — \"Recommended that… be packed\" is correct.\n\nTip: Particle verbs still sit under the same \"be\" + participle rule in the passive.",
         "TRUE — \"It is mandatory that visitors wear\" uses the bare plural verb correctly.\n\nTip: With plural subjects the base form looks like a normal present—confirm the trigger first.",
         "TRUE — \"Directed that… exchange\" is the right base form.\n\nTip: Direct, order, and instruct that all behave mandatively.",
-        "FALSE — Use \"be filed,\" not \"is filed,\" after \"asked that.\"\n\nTip: Singular collective objects (\"overtime claims\" as a batch) still take \"be,\" not \"is,\" in the passive subjunctive.",
-        "TRUE — \"Requires that the minister lay\" correctly uses bare \"lay.\"\n\nTip: Parliamentary English (\"lay a report\") is a classic formal-subjunctive habitat."
+        "FALSE — Use \"be collected,\" not \"is collected,\" after \"asked that.\"\n\nTip: When the that-clause looks almost normal, still verify \"be\" versus \"is.\"",
+        "TRUE — \"Requires that the captain lay\" correctly uses bare \"lay.\"\n\nTip: Formal instructions still want the base form after require that."
       ],
       "highlights": [
-        "be disclosed",
+        "be packed",
         "wear",
         "exchange",
-        "is filed",
+        "is collected",
         "lay"
       ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.14",
-      "solution_overview": "Four items are already correct; the single error is an indicative passive (\"is filed\") after \"asked that.\" When the that-clause looks almost normal, still verify \"be\" versus \"is.\""
+      "solution_overview": "Four items are already correct; the single error is an indicative passive (\"is collected\") after \"asked that.\" When the that-clause looks almost normal, still verify \"be\" versus \"is.\""
     },
     {
       "id": "en-g-14-11",
@@ -328,25 +328,25 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The lender insisted that the covenant remains in force after refinancing.",
+        "The landlord insisted that the deposit remains refundable after repairs.",
         "Researchers proposed that the pilot study be extended by six weeks.",
         "It is preferable that feedback is collected anonymously.",
-        "The union demanded that shift differentials be restored retrospectively.",
+        "The cycling club demanded that weekend rides be cancelled in high winds.",
         "The editor requested that the author cite the primary dataset explicitly."
       ],
       "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
-        "FALSE — After \"insisted that,\" use \"remain,\" not \"remains.\"\n\nTip: \"Remain in force\" is a set phrase—still strip the -s in mandative clauses.",
+        "FALSE — After \"insisted that,\" use \"remain,\" not \"remains.\"\n\nTip: \"Remain refundable\" is a set phrase—still strip the -s in mandative clauses.",
         "TRUE — \"Proposed that… be extended\" is correct.\n\nTip: Research English frequently uses propose that + be + participle.",
         "FALSE — Use \"be collected,\" not \"is collected,\" after \"it is preferable that.\"\n\nTip: Preferable/advisable + that still demand the subjunctive passive with \"be.\"",
-        "TRUE — \"Demanded that… be restored\" is correct.\n\nTip: Labour-relations wording often packs adjectives around a clean \"be\" + participle core.",
+        "TRUE — \"Demanded that… be cancelled\" is correct.\n\nTip: Club rules often pack weather conditions around a clean \"be\" + participle core.",
         "TRUE — \"Requested that… cite\" correctly uses the bare verb.\n\nTip: Academic request that + base form is standard formal style."
       ],
       "highlights": [
         "remains",
         "be extended",
         "is collected",
-        "be restored",
+        "be cancelled",
         "cite"
       ],
       "difficulty_level": "3/5",
@@ -360,31 +360,31 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The court decreed that the assets be frozen pending further order.",
-        "It is essential that confidentiality is maintained throughout the tender.",
-        "Partners agreed that the valuation methodology be revisited annually.",
-        "The coach insisted that every player arrives forty minutes before kick-off.",
+        "The festival board decreed that the murals be protected overnight.",
+        "It is essential that quiet hours is maintained throughout the hostel.",
+        "Neighbours agreed that the garden path be cleared before winter.",
+        "The coach insisted that every runner arrives forty minutes before the race.",
         "Guidance notes recommend that applicants enclose certified translations."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Decreed that… be frozen\" is correct formal subjunctive.\n\nTip: Decree, ordain, and enjoin are strong legal triggers.",
-        "FALSE — Use \"be maintained,\" not \"is maintained,\" after \"it is essential that.\"\n\nTip: Abstract nouns (confidentiality) still take \"be,\" not \"is,\" in the that-clause.",
-        "TRUE — \"Agreed that… be revisited\" correctly uses \"be.\"\n\nTip: Agree that can be factual or mandative; here the annual revision is a prescribed action.",
-        "FALSE — After \"insisted that,\" write \"arrive,\" not \"arrives.\"\n\nTip: Sports or workplace deadlines do not change the grammar rule.",
-        "TRUE — \"Recommend that applicants enclose\" uses the bare plural verb correctly.\n\nTip: When the subject is plural, correct and incorrect forms differ only after singular subjects—still confirm the trigger."
+        "TRUE — \"Decreed that… be protected\" is correct formal subjunctive.\n\nTip: Decree, ordain, and order are strong formal triggers.",
+        "FALSE — Use \"be maintained,\" not \"is maintained,\" after \"it is essential that.\"\n\nTip: Abstract house rules still take \"be,\" not \"is,\" in the that-clause.",
+        "TRUE — \"Agreed that… be cleared\" correctly uses \"be.\"\n\nTip: Agree that can be factual or mandative; here clearing is a prescribed action.",
+        "FALSE — After \"insisted that,\" write \"arrive,\" not \"arrives.\"\n\nTip: Sports deadlines do not change the grammar rule.",
+        "TRUE — \"Recommend that applicants enclose\" uses the bare plural verb correctly.\n\nTip: When the subject is plural, correct forms often look ordinary—still confirm the trigger."
       ],
       "highlights": [
-        "be frozen",
+        "be protected",
         "is maintained",
-        "be revisited",
+        "be cleared",
         "arrives",
         "enclose"
       ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.14",
-      "solution_overview": "Legal \"decreed that\" and softer \"agreed/recommend that\" share one test: base form after that. The two FALSE items keep indicative \"is\" and \"arrives.\""
+      "solution_overview": "Formal \"decreed that\" and softer \"agreed/recommend that\" share one test: base form after that. The two FALSE items keep indicative \"is\" and \"arrives.\""
     },
     {
       "id": "en-g-14-13",
@@ -392,17 +392,17 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The trustee recommended that the beneficiary not receive further advances.",
+        "The mentor recommended that the intern not receive further tasks this week.",
         "It was vital that the vaccine were stored below eight degrees.",
         "The panel insisted that discrepancies be reconciled before sign-off.",
-        "Auditors required that inventory counts takes place under dual control.",
+        "Kitchen staff required that inventory counts takes place under dual control.",
         "She asked that the embargo remain in place until the filing date."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "TRUE — Negated subjunctive \"not receive\" is correctly formed.\n\nTip: Place \"not\" immediately before the base verb; do not insert \"do/does.\"",
         "FALSE — After \"it was vital that,\" use \"be stored,\" not \"were stored.\"\n\nTip: Past-tense \"was vital\" does not licence past \"were\"; mandative still wants \"be.\"",
-        "TRUE — \"Insisted that… be reconciled\" is correct.\n\nTip: Plural abstract subjects (discrepancies) still take \"be,\" not \"are.\"",
+        "TRUE — \"Insisted that… be reconciled\" is correct.\n\nTip: Plural abstract subjects still take \"be,\" not \"are.\"",
         "FALSE — Use \"take,\" not \"takes,\" after \"required that.\"\n\nTip: Subject–verb lookalikes (\"counts takes\") are noise—strip to \"counts take.\"",
         "TRUE — \"Asked that… remain\" correctly keeps the base form.\n\nTip: \"Remain in place\" after ask/insist is a frequent correct pattern."
       ],
@@ -424,18 +424,18 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The statute provides that the authority publish the tariff annually.",
-        "It is crucial that no one tamper with the sealed evidence bags.",
-        "The board directed that bonuses be withheld pending the investigation.",
-        "Counsel recommended that the client waive privilege only in writing.",
+        "The charter provides that the club publish fixture lists annually.",
+        "It is crucial that no one tamper with the sealed sample bags.",
+        "The festival committee directed that banners be withheld pending the vote.",
+        "Her solicitor recommended that the client waive the interview recording.",
         "The notice requires that complaints be lodged within fourteen days."
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
-        "TRUE — \"Provides that… publish\" is bare-form statutory English.\n\nTip: Singular institutional subjects (\"the authority\") still take no -s here.",
+        "TRUE — \"Provides that… publish\" is bare-form formal English.\n\nTip: Singular institutional subjects still take no -s here.",
         "TRUE — After \"it is crucial that,\" \"no one tamper\" correctly uses the base form.\n\nTip: Indefinites (no one, everyone, anybody) still suppress -s in mandative clauses.",
-        "TRUE — \"Directed that… be withheld\" correctly uses the subjunctive passive.\n\nTip: Plural objects (\"bonuses\") still take \"be,\" not \"are,\" after direct that.",
-        "TRUE — \"Recommended that… waive\" is correct.\n\nTip: Legal \"waive\" after recommend is a high-frequency exam item.",
+        "TRUE — \"Directed that… be withheld\" correctly uses the subjunctive passive.\n\nTip: Plural objects still take \"be,\" not \"are,\" after direct that.",
+        "TRUE — \"Recommended that… waive\" is correct.\n\nTip: Formal \"waive\" after recommend is a high-frequency exam item.",
         "TRUE — \"Requires that… be lodged\" correctly uses \"be\" + participle.\n\nTip: Plural \"complaints\" still take \"be\" in the passive subjunctive."
       ],
       "highlights": [
@@ -457,8 +457,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "The committee moved that standing orders be suspended for the vote.",
-        "It is imperative that the nominee declares all related-party interests.",
-        "Underwriters required that the prospectus be amended before circulation.",
+        "It is imperative that the nominee declares all related hobbies.",
+        "Organisers required that the programme be amended before printing.",
         "The mediator suggested that each side makes one further concession.",
         "Clinicians insisted that the dosage remain constant during the trial."
       ],
@@ -466,7 +466,7 @@
       "tactical_explanations": [
         "TRUE — \"Moved that… be suspended\" is correct.\n\nTip: Procedural motions almost always use the formal subjunctive.",
         "FALSE — After \"it is imperative that,\" use \"declare,\" not \"declares.\"\n\nTip: Nominee/applicant/candidate after imperative are classic -s traps.",
-        "TRUE — \"Required that… be amended\" is correct.\n\nTip: Capital-markets English loves require that + be + participle.",
+        "TRUE — \"Required that… be amended\" is correct.\n\nTip: Event planning loves require that + be + participle.",
         "FALSE — Use \"make,\" not \"makes,\" after \"suggested that.\"\n\nTip: \"Each side\" is singular in form—exam writers plant -s here deliberately.",
         "TRUE — \"Insisted that… remain\" correctly uses the base form.\n\nTip: Clinical protocols often keep \"remain\" after insist/require."
       ],
@@ -480,7 +480,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.14",
-      "solution_overview": "Three correct mandatives and two indicative -s errors after imperative and suggest. \"Each\" and job-title subjects are the usual bait for an unwanted ending."
+      "solution_overview": "Three correct mandatives and two indicative -s errors after imperative and suggest. \"Each\" and role-title subjects are the usual bait for an unwanted ending."
     },
     {
       "id": "en-g-14-16",
@@ -488,23 +488,23 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The regulator stipulated that intermediaries not solicit retail clients cold.",
-        "It is necessary that the escrow account be opened in both names.",
-        "Shareholders demanded that the chairperson steps down forthwith.",
+        "The rules stipulated that volunteers not solicit donations door-to-door.",
+        "It is necessary that the shared fridge be emptied before the holiday.",
+        "Supporters demanded that the captain steps down after the match.",
         "The brief urged that exhibits be paginated consecutively.",
-        "Policy guidance recommends that remote staff uses only approved VPN links."
+        "IT guidance recommends that remote staff uses only the college VPN."
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "TRUE — Negated mandative \"not solicit\" is correctly formed.\n\nTip: After stipulate/require, \"that X not + verb\" is the formal negative.",
-        "TRUE — \"It is necessary that… be opened\" is correct.\n\nTip: Banking/escrow contexts recycle the same \"be\" + participle frame.",
+        "TRUE — \"It is necessary that… be emptied\" is correct.\n\nTip: Everyday chores recycle the same \"be\" + participle frame.",
         "FALSE — After \"demanded that,\" write \"step,\" not \"steps.\"\n\nTip: Dramatic verbs (step down, resign) still lose -s in the that-clause.",
-        "TRUE — \"Urged that… be paginated\" is correct.\n\nTip: Litigation documents favour urge/direct that + be + participle.",
-        "FALSE — Use \"use,\" not \"uses,\" after \"recommends that.\"\n\nTip: Collective \"staff\" often takes singular agreement in BrE—but the subjunctive still wants bare \"use.\""
+        "TRUE — \"Urged that… be paginated\" is correct.\n\nTip: Exhibition and catalogue English favour urge that + be + participle.",
+        "FALSE — Use \"use,\" not \"uses,\" after \"recommends that.\"\n\nTip: Collective \"staff\" may take singular agreement in BrE—but the subjunctive still wants bare \"use.\""
       ],
       "highlights": [
         "not solicit",
-        "be opened",
+        "be emptied",
         "steps",
         "be paginated",
         "uses"
@@ -520,22 +520,22 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The injunction provides that the defendant not contact the claimant directly.",
+        "The safety notice provides that the cleaner not enter the lab alone.",
         "It is desirable that the questionnaire were bilingual from the outset.",
-        "Partners insisted that profit shares be recalculated after the write-down.",
+        "Flatmates insisted that cleaning rotas be recalculated after the move.",
         "The assessor recommended that the candidate retakes the oral component.",
-        "Treasury directed that contingency reserves remain untouched this year."
+        "The ranger directed that contingency supplies remain untouched this season."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Court English \"provides that… not contact\" is a correct negated subjunctive.\n\nTip: Injunctions and orders are prime territory for \"that X not + base.\"",
+        "TRUE — Formal \"provides that… not enter\" is a correct negated subjunctive.\n\nTip: Notices and orders are prime territory for \"that X not + base.\"",
         "FALSE — After \"it is desirable that,\" use \"be bilingual,\" not \"were bilingual.\"\n\nTip: Do not import the unreal \"were\" into mandative clauses.",
-        "TRUE — \"Insisted that… be recalculated\" is correct.\n\nTip: Finance write-downs often appear beside clean \"be\" + participle forms.",
+        "TRUE — \"Insisted that… be recalculated\" is correct.\n\nTip: Household planning still uses clean \"be\" + participle forms.",
         "FALSE — Use \"retake,\" not \"retakes,\" after \"recommended that.\"\n\nTip: Exam/assessment vocabulary is a favourite place to hide -s.",
         "TRUE — \"Directed that… remain\" correctly uses the base form.\n\nTip: \"Remain untouched/unchanged\" after direct/insist is a high-yield pattern."
       ],
       "highlights": [
-        "not contact",
+        "not enter",
         "were bilingual",
         "be recalculated",
         "retakes",
@@ -544,7 +544,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.14",
-      "solution_overview": "At this level, watch unreal \"were\" bleeding into mandative frames and -s after recommend. Negated legal \"not + base\" is grammatical; \"were\" after desirable is not."
+      "solution_overview": "At this level, watch unreal \"were\" bleeding into mandative frames and -s after recommend. Negated formal \"not + base\" is grammatical; \"were\" after desirable is not."
     },
     {
       "id": "en-g-14-18",
@@ -552,18 +552,18 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The charter requires that the secretary keep minutes of every plenary.",
-        "It was insisted that the renegotiation starts before the bond matures.",
-        "External counsel advised that settlement talks be reopened quietly.",
-        "The syndicate proposed that voting thresholds is raised to seventy-five percent.",
+        "The society charter requires that the secretary keep minutes of every meeting.",
+        "It was insisted that the rehearsal starts before the hall closes.",
+        "External mentors advised that settlement talks be reopened quietly.",
+        "The club proposed that membership fees is raised next autumn.",
         "The protocol states that it is vital that specimens reach the lab within four hours."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "TRUE — \"Requires that… keep\" is correct bare-form usage.\n\nTip: Officer titles (secretary, treasurer) after require are classic test items.",
         "FALSE — After \"it was insisted that,\" use \"start,\" not \"starts.\"\n\nTip: Passive reporting (\"it was insisted\") does not change the that-clause rule.",
-        "TRUE — \"Advised that… be reopened\" is correct.\n\nTip: Advise that + be + participle is formal counsel English.",
-        "FALSE — Use \"be raised,\" not \"is raised,\" after \"proposed that.\"\n\nTip: Plural \"thresholds\" still take \"be\" in the passive subjunctive.",
+        "TRUE — \"Advised that… be reopened\" is correct.\n\nTip: Advise that + be + participle is formal advisory English.",
+        "FALSE — Use \"be raised,\" not \"is raised,\" after \"proposed that.\"\n\nTip: Plural \"fees\" still take \"be\" in the passive subjunctive.",
         "TRUE — \"It is vital that specimens reach\" correctly uses the bare plural verb.\n\nTip: Nested \"states that it is vital that…\" still ends in a mandative clause."
       ],
       "highlights": [
@@ -584,19 +584,19 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The board resolved that interim dividends not be declared this half.",
+        "The board resolved that interim prizes not be declared this half.",
         "It is essential that whoever chairs the panel has no prior conflict.",
-        "Lenders demanded that financial covenants be tightened after the breach.",
+        "Organisers demanded that stage cues be tightened after the dress run.",
         "The examiner insisted that each script is double-marked independently.",
         "Guidance recommends that the risk register be reviewed after every incident."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Negated passive \"not be declared\" is correctly formed.\n\nTip: Board resolutions often negate with \"not be\" + participle.",
+        "TRUE — Negated passive \"not be declared\" is correctly formed.\n\nTip: Resolutions often negate with \"not be\" + participle.",
         "FALSE — After \"it is essential that,\" use \"have,\" not \"has,\" even after \"whoever.\"\n\nTip: Free relatives (whoever) still sit under the mandative rule—no -s.",
-        "TRUE — \"Demanded that… be tightened\" is correct.\n\nTip: Covenant language after demand/require is almost always subjunctive.",
+        "TRUE — \"Demanded that… be tightened\" is correct.\n\nTip: Theatre and event language still uses demand that + be + participle.",
         "FALSE — Use \"be double-marked,\" not \"is double-marked,\" after \"insisted that.\"\n\nTip: Exam-administration passives are a favourite \"is\" trap.",
-        "TRUE — \"Recommends that… be reviewed\" is correct.\n\nTip: Risk and compliance manuals recycle this frame constantly."
+        "TRUE — \"Recommends that… be reviewed\" is correct.\n\nTip: Safety and ops manuals recycle this frame constantly."
       ],
       "highlights": [
         "not be declared",
@@ -620,13 +620,13 @@
         "It is critical that the spill kit remains sealed until an incident occurs.",
         "The tribunal ordered that costs be reserved pending written submissions.",
         "Her supervisor suggested that the abstract emphasises policy implications only.",
-        "Investors requested that management provide a bridge to the revised forecast."
+        "Class reps requested that management provide a clearer exam timetable."
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Provide that directors declare\" correctly uses the bare plural verb.\n\nTip: Articles of association are full of silent mandatives—spot the that-clause.",
-        "FALSE — After \"it is critical that,\" use \"remain,\" not \"remains.\"\n\nTip: Safety and ops manuals often leave an indicative -s by mistake.",
-        "TRUE — \"Ordered that costs be reserved\" is correct.\n\nTip: Costs/orders/injunctions after order that almost always take \"be.\"",
+        "TRUE — \"Provide that directors declare\" correctly uses the bare plural verb.\n\nTip: Articles and constitutions are full of silent mandatives—spot the that-clause.",
+        "FALSE — After \"it is critical that,\" use \"remain,\" not \"remains.\"\n\nTip: Safety manuals often leave an indicative -s by mistake.",
+        "TRUE — \"Ordered that costs be reserved\" is correct.\n\nTip: Costs/orders after order that almost always take \"be.\"",
         "FALSE — Use \"emphasise,\" not \"emphasises,\" after \"suggested that.\"\n\nTip: Academic suggest that + -s is one of the most common exam errors.",
         "TRUE — \"Requested that management provide\" correctly uses the base form.\n\nTip: Collective \"management\" still takes a bare verb in mandative English."
       ],
@@ -640,7 +640,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.14",
-      "solution_overview": "Close with statutory \"provide that,\" tribunal \"ordered that,\" and academic \"suggested that.\" Only the critical/suggest items keep unwanted -s; the rest already show proper base forms."
+      "solution_overview": "Close with constitutional \"provide that,\" tribunal \"ordered that,\" and academic \"suggested that.\" Only the critical/suggest items keep unwanted -s; the rest already show proper base forms."
     }
   ]
 }

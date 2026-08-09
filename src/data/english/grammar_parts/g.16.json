@@ -8,31 +8,31 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having reviewed the quarterly figures, the analyst revised the forecast.",
-        "Walking into the boardroom, the presentation slides were already on screen.",
-        "Concerned about liquidity, the bond issue was delayed until spring.",
-        "Having been delayed by customs, several complaints were logged online.",
-        "Frustrated by the slow response, several emails were sent overnight."
+        "Having packed the tent, Maya set off before sunrise.",
+        "Walking into the kitchen, the smell of coffee filled the room.",
+        "Exhausted after the hike, the sofa looked inviting.",
+        "Hoping to catch the early train, Leo left without breakfast.",
+        "Covered in mud, the boots were left by the door."
       ],
-      "answer_key": [true, false, false, false, false],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
-        "TRUE — The analyst is the logical subject of Having reviewed, so the opening participle attaches cleanly.\n\nTip: Ask who did the -ing / having action — that person must be the grammatical subject.",
-        "FALSE — The slides were not walking; rewrite as Walking into the boardroom, the directors found the slides already on screen.\n\nTip: If the subject cannot perform the participle, it is dangling.",
-        "FALSE — A bond issue cannot feel concerned; Concerned about liquidity, the treasurer delayed the bond issue until spring.\n\nTip: Past participles (Concerned, Exhausted) still need a human or animate logical subject.",
-        "FALSE — Complaints were not delayed by customs; Having been delayed by customs, the shipment prompted several online complaints.\n\nTip: Passive participles need the thing that underwent the delay as subject.",
-        "FALSE — Emails cannot feel frustrated; say Frustrated by the slow response, the manager sent several emails overnight.\n\nTip: Emotions + inanimate subject = classic dangling trap."
+        "TRUE — Maya is the logical subject of Having packed, so the opener attaches cleanly.\n\nTip: Ask who did the -ing / having action — that person must be the grammatical subject.",
+        "FALSE — The smell was not walking; rewrite as Walking into the kitchen, she noticed the smell of coffee.\n\nTip: If the subject cannot perform the participle, it is dangling.",
+        "FALSE — A sofa cannot feel exhausted; Exhausted after the hike, they sank onto the sofa.\n\nTip: Past participles of emotion still need a human or animate logical subject.",
+        "TRUE — Leo hoped to catch the train and is the subject after the comma.\n\nTip: Hoping / Wanting / Trying openers need the hoper as subject.",
+        "TRUE — The boots were covered in mud; the passive participle matches the subject.\n\nTip: Covered / Damaged / Painted can attach to things that underwent the state."
       ],
       "highlights": [
-        "Having reviewed",
+        "Having packed",
         "Walking into",
-        "Concerned about",
-        "Having been delayed",
-        "Frustrated by"
+        "Exhausted after",
+        "Hoping to catch",
+        "Covered in mud"
       ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.16",
-      "solution_overview": "For each opener, name the implied doer of the participle, then check whether that doer is the grammatical subject. Only the first sentence matches; the rest dangle."
+      "solution_overview": "For each opener, name the implied doer of the participle, then check whether that doer is the grammatical subject. Only three sentences match; the kitchen smell and the sofa dangle."
     },
     {
       "id": "en-g-16-02",
@@ -40,31 +40,31 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Delayed by fog, the flight departed three hours late.",
-        "Having analysed the survey data, several inconsistencies were noted.",
-        "Exhausted after the night shift, the nurse went straight home.",
-        "Reading the contract carefully, a hidden penalty clause became obvious.",
-        "Surprised by the sudden downturn, capital was withdrawn overnight."
+        "Delayed by fog, the ferry arrived two hours late.",
+        "Having tasted the soup, several spices were added.",
+        "Surprised by the score, the fans cheered louder.",
+        "Reading the map carefully, a shortcut became obvious.",
+        "Bored during the lecture, Mira started doodling."
       ],
-      "answer_key": [true, false, true, false, false],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — The flight is a logical patient of Delayed; the participle attaches correctly.\n\nTip: Passive -ed openers are fine when the subject was delayed, damaged, approved, etc.",
-        "FALSE — Inconsistencies did not analyse the data; use Having analysed the survey data, the team noted several inconsistencies.\n\nTip: Having + PP needs the analyser as subject, not the findings.",
-        "TRUE — The nurse is exhausted; subject and participle align.\n\nTip: Tired / Exhausted / Relieved almost always need a person as subject.",
-        "FALSE — A clause cannot read; rewrite Reading the contract carefully, the lawyer spotted a hidden penalty clause.\n\nTip: Present participles imply an agent who can act.",
-        "FALSE — Capital cannot be surprised; Surprised by the sudden downturn, investors withdrew capital overnight.\n\nTip: Keep the experiencer as subject across the comma."
+        "TRUE — The ferry is a logical patient of Delayed; the participle attaches correctly.\n\nTip: Passive -ed openers are fine when the subject was delayed, damaged, or approved.",
+        "FALSE — Spices did not taste the soup; Having tasted the soup, the cook added several spices.\n\nTip: Having + past participle needs the taster as subject, not the ingredients.",
+        "TRUE — The fans are surprised; subject and participle align.\n\nTip: Surprised / Relieved / Thrilled almost always need a person as subject.",
+        "FALSE — A shortcut cannot read; Reading the map carefully, she spotted a shortcut.\n\nTip: Present participles imply an agent who can act.",
+        "TRUE — Mira is bored and starts doodling; the attachment is clean.\n\nTip: Keep the experiencer as subject across the comma."
       ],
       "highlights": [
         "Delayed by fog",
-        "Having analysed",
-        "Exhausted after",
-        "Reading the contract",
-        "Surprised by"
+        "Having tasted",
+        "Surprised by",
+        "Reading the map",
+        "Bored during"
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.16",
-      "solution_overview": "Scan for Having + past participle and bare -ing openers. Only two sentences keep a matching subject; the others put findings, clauses, or capital in the doer slot."
+      "solution_overview": "Scan for Having + past participle and bare -ing openers. Three sentences keep a matching subject; spices and a shortcut wrongly sit in the doer slot."
     },
     {
       "id": "en-g-16-03",
@@ -72,31 +72,31 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having crossed the border, the travellers presented their passports.",
-        "Startled by the alarm, the meeting was adjourned at once.",
-        "Reviewing the bids, three suppliers were shortlisted immediately.",
-        "Published last spring, several updates remain outstanding.",
-        "Hoping to cut costs, overtime was banned across the division."
+        "Having crossed the bridge, the cyclists paused for water.",
+        "Startled by the alarm, the rehearsal was cancelled at once.",
+        "Published last year, the novel still sells well.",
+        "Hoping to improve her serve, tennis lessons were booked online.",
+        "Soaked by the rain, Tom's jacket hung by the radiator."
       ],
-      "answer_key": [true, false, false, false, false],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Travellers both crossed and presented; perfect participle is anchored.\n\nTip: Having + PP marks an earlier completed action by the same subject.",
-        "FALSE — A meeting cannot be startled; Startled by the alarm, the chair adjourned the meeting at once.\n\nTip: Emotion participles need people, not events or institutions as experiencers.",
-        "FALSE — Suppliers were not reviewing; Reviewing the bids, the procurement lead shortlisted three suppliers immediately.\n\nTip: Keep the reviewer as subject when the opener is Reviewing…",
-        "FALSE — Updates were not published last spring in this wording; Published last spring, the guidelines still leave several updates outstanding.\n\nTip: Past-participle openers need the thing that was published as subject.",
-        "FALSE — Overtime cannot hope; Hoping to cut costs, management banned overtime across the division.\n\nTip: Intent verbs (hoping, intending, aiming) need a human subject."
+        "TRUE — The cyclists crossed the bridge; Having crossed matches the subject.\n\nTip: Having + past participle is safe when the subject did that prior action.",
+        "FALSE — A rehearsal cannot be startled; Startled by the alarm, the cast cancelled the rehearsal.\n\nTip: Emotion participles need an animate experiencer.",
+        "TRUE — The novel was published last year; the passive participle fits.\n\nTip: Published / Written / Filmed can modify the work itself.",
+        "FALSE — Lessons cannot hope; Hoping to improve her serve, she booked tennis lessons online.\n\nTip: Hoping always points to a person with a goal.",
+        "TRUE — The jacket was soaked; Covered/Soaked openers can modify things.\n\nTip: Physical state on an object is usually grammatical."
       ],
       "highlights": [
         "Having crossed",
         "Startled by",
-        "Reviewing the bids",
-        "Published last spring",
-        "Hoping to cut"
+        "Published last year",
+        "Hoping to improve",
+        "Soaked by the rain"
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.16",
-      "solution_overview": "Only the travellers sentence attaches. Emotion, reviewing, published, and hoping openers all fail when the wrong noun follows the comma."
+      "solution_overview": "Warm up on clean matches versus classic dangles: startled rehearsal and hoping lessons. Published novel and soaked jacket show when things, not people, can carry a participle."
     },
     {
       "id": "en-g-16-04",
@@ -104,31 +104,31 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Entering the warehouse, the temperature dropped sharply.",
-        "Having missed the filing deadline, the applicant was disqualified.",
-        "Written in plain English, the privacy notice is easier to follow.",
-        "Driving to the site, a tyre burst on the motorway.",
-        "Based on last year's audit, the risk rating was lowered."
+        "Running down the pitch, the ball slipped past the keeper.",
+        "Confused by the instructions, Ana asked for help.",
+        "Having finished dessert, the plates were cleared away.",
+        "Written in pencil, the note was hard to read.",
+        "Looking for a quiet spot, the park bench seemed perfect."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
-        "FALSE — Temperature did not enter; Entering the warehouse, the inspectors noticed the temperature drop.\n\nTip: Motion -ing + weather/measurement subject is a textbook dangler.",
-        "TRUE — The applicant missed the deadline and was disqualified.\n\nTip: Perfect participle + same person as subject is usually safe.",
-        "TRUE — The notice is what was written; reduced relative works.\n\nTip: Written / Drafted / Signed + document subject is typically grammatical.",
-        "FALSE — A tyre cannot drive; Driving to the site, she had a tyre burst on the motorway.\n\nTip: Vehicles and parts are not drivers.",
-        "TRUE — The rating is based on the audit; Based on… correctly modifies the subject.\n\nTip: Based on / According to openers are fine when the subject is the conclusion or rating."
+        "FALSE — The ball was not running; Running down the pitch, the striker saw the ball slip past the keeper.\n\nTip: Sport scenes often dangle the ball or the score instead of the player.",
+        "TRUE — Ana is confused and asks; attachment is correct.\n\nTip: Confused / Puzzled + human subject is a safe pattern.",
+        "FALSE — Plates did not finish dessert; Having finished dessert, they cleared the plates away.\n\nTip: Having finished needs the eater, not the crockery.",
+        "TRUE — The note was written in pencil; the participle modifies the note.\n\nTip: Written / Typed / Printed can modify a document.",
+        "FALSE — A bench cannot look for a spot; Looking for a quiet spot, they chose the park bench.\n\nTip: Looking / Searching openers need a searcher as subject."
       ],
       "highlights": [
-        "Entering the warehouse",
-        "Having missed",
-        "Written in plain English",
-        "Driving to the site",
-        "Based on last year's audit"
+        "Running down",
+        "Confused by",
+        "Having finished",
+        "Written in pencil",
+        "Looking for"
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.16",
-      "solution_overview": "Three sentences hang on a person or document that matches the participle; two put the wrong noun after the comma. Fix danglers by renaming the subject to the real actor."
+      "solution_overview": "Only two lines work. The rest put a ball, plates, or a bench where a person should sit after the comma."
     },
     {
       "id": "en-g-16-05",
@@ -136,31 +136,31 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having negotiated all night, the delegates signed the protocol at dawn.",
-        "Seated near the exit, the observers left as soon as the vote was called.",
-        "Funded by the ministry, the pilot scheme ran for eighteen months.",
-        "Looking at the chart, the analysts called the downward trend unmistakable.",
-        "Realising the error too late, the clerk circulated a corrective memo."
+        "Having studied all night, Priya still felt unprepared.",
+        "Arriving late, seats near the stage were taken.",
+        "Burnt at the edges, the toast was scraped into the bin.",
+        "Thrilled by the invitation, a reply was sent immediately.",
+        "Wandering through the market, they bought fresh herbs."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Delegates negotiated and signed; sequence is clear.\n\nTip: Having + PP then main verb shows earlier → later for one subject.",
-        "TRUE — Observers were seated and then left; logical match.\n\nTip: Past participles of position (seated, located) often describe the subject’s state.",
-        "TRUE — The scheme was funded; patient subject fits.\n\nTip: Funded / Sponsored / Led by… + project subject is standard.",
-        "TRUE — Analysts can look at the chart; perception participle matches the subject.\n\nTip: Perception -ing (looking, listening) needs a perceiver as subject.",
-        "TRUE — The clerk realises and circulates; mental-state participle is anchored.\n\nTip: Mental-state participles need minds, not documents."
+        "TRUE — Priya studied and still felt unprepared; the subject matches.\n\nTip: Having + past participle + same person in the main clause is the standard pattern.",
+        "FALSE — Seats did not arrive late; Arriving late, we found the seats near the stage taken.\n\nTip: Arriving / Entering needs the arriver as subject.",
+        "TRUE — The toast was burnt; the passive participle fits the food.\n\nTip: Burnt / Overcooked / Undercooked can modify dishes.",
+        "FALSE — A reply cannot feel thrilled; Thrilled by the invitation, she sent a reply immediately.\n\nTip: Emotion + inanimate subject = classic dangling trap.",
+        "TRUE — They wandered and bought herbs; clean attachment.\n\nTip: Wandering / Strolling openers need the wanderer after the comma."
       ],
       "highlights": [
-        "Having negotiated",
-        "Seated near",
-        "Funded by",
-        "Looking at the chart",
-        "Realising the error"
+        "Having studied",
+        "Arriving late",
+        "Burnt at the edges",
+        "Thrilled by",
+        "Wandering through"
       ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.16",
-      "solution_overview": "All five attach cleanly: perfect participle, position participle, patientive Funded…, perception Looking…, and mental Realising… each keep a matching subject."
+      "solution_overview": "Three correct attachments and two dangles: seats that arrive and a reply that feels thrill. Keep asking who or what the participle really describes."
     },
     {
       "id": "en-g-16-06",
@@ -168,31 +168,31 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been briefed by counsel, the directors approved the settlement.",
-        "Turning the corner, the head office came into view.",
-        "Charged with fraud, the former CFO denied every allegation.",
-        "Comparing the two drafts, several typos stood out immediately.",
-        "Prepared under time pressure, the slides still covered the key risks."
+        "Built in the 1890s, the library still has wooden floors.",
+        "Hearing the doorbell, the cake was taken out of the oven.",
+        "Tired of waiting, the queue finally moved forward.",
+        "Having lost her keys, Jess borrowed her flatmate's spare.",
+        "Painted bright yellow, the door cheered up the hallway."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
-        "TRUE — Directors were briefed (passive perfect) and then approved.\n\nTip: Having been + PP = earlier passive experience of the subject.",
-        "FALSE — The head office did not turn; Turning the corner, we saw the head office come into view.\n\nTip: Motion openers need a mover as subject.",
-        "TRUE — The former CFO is the one charged; attachment is sound.\n\nTip: Legal past participles (charged, accused, convicted) take the person as subject.",
-        "FALSE — Typos do not compare drafts; Comparing the two drafts, the editor spotted several typos immediately.\n\nTip: Comparing / Examining + findings-as-subject is a frequent dangler.",
-        "TRUE — The slides were prepared; patient subject works.\n\nTip: Prepared / Written / Compiled under… + document subject is fine."
+        "TRUE — The library was built in the 1890s; Built modifies the building.\n\nTip: Built / Designed / Restored often modify places or objects.",
+        "FALSE — A cake cannot hear; Hearing the doorbell, she took the cake out of the oven.\n\nTip: Hearing / Seeing / Smelling need a perceiver.",
+        "FALSE — A queue cannot feel tired of waiting; Tired of waiting, the passengers finally moved forward.\n\nTip: Tired of… needs a person, not the line itself.",
+        "TRUE — Jess lost her keys and borrowed a spare; perfect match.\n\nTip: Having lost / Having forgotten needs the loser as subject.",
+        "TRUE — The door was painted yellow; the participle attaches to the door.\n\nTip: Painted / Decorated / Lined can modify objects."
       ],
       "highlights": [
-        "Having been briefed",
-        "Turning the corner",
-        "Charged with fraud",
-        "Comparing the two drafts",
-        "Prepared under time pressure"
+        "Built in the 1890s",
+        "Hearing the doorbell",
+        "Tired of waiting",
+        "Having lost",
+        "Painted bright yellow"
       ],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.16",
-      "solution_overview": "Watch motion and comparison openers especially — they almost never attach to buildings or typos. Passive perfect and patientive past participles are usually safe."
+      "solution_overview": "Object-friendly participles (Built, Painted) pass; perception and emotion openers fail when cake or a queue sits as subject."
     },
     {
       "id": "en-g-16-07",
@@ -200,31 +200,31 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Working from home, productivity rose by twelve percent.",
-        "Having submitted the tender, the consortium waited for clarification questions.",
-        "Alarmed by the breach, the IT team isolated the affected servers.",
-        "Stored in a cool warehouse, the samples remained stable.",
-        "Opening the spreadsheet, an unexpected formula error appeared."
+        "Jogging along the canal, a heron took off from the reeds.",
+        "Convinced she was right, Omar refused to change his answer.",
+        "Having been washed overnight, the shirts hung neatly on the line.",
+        "Opening the fridge, cold air rushed out.",
+        "Based on true events, the film kept audiences guessing."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
-        "FALSE — Productivity does not work from home; Working from home, staff raised productivity by twelve percent.\n\nTip: Abstract nouns (productivity, morale, demand) rarely do -ing actions.",
-        "TRUE — The consortium submitted and waited.\n\nTip: Institutional subjects can take Having + PP when the organisation is the actor.",
-        "TRUE — The IT team can be alarmed and isolate servers.\n\nTip: Emotion + team/person subject is grammatical.",
-        "TRUE — Samples were stored; state participle matches.\n\nTip: Stored / Kept / Held + physical object is a clean reduced relative.",
-        "FALSE — An error cannot open a spreadsheet; Opening the spreadsheet, the analyst found an unexpected formula error.\n\nTip: Instrumental -ing needs the user, not the discovery."
+        "FALSE — The heron was not jogging; Jogging along the canal, she saw a heron take off from the reeds.\n\nTip: Nature scenes often dangle wildlife instead of the walker.",
+        "TRUE — Omar is convinced and refuses; the participle matches.\n\nTip: Convinced / Determined + person is usually safe.",
+        "TRUE — The shirts had been washed; Having been + past participle fits the clothes.\n\nTip: Passive perfect participles can modify things that underwent the process.",
+        "FALSE — Cold air did not open the fridge; Opening the fridge, he felt cold air rush out.\n\nTip: Opening / Closing needs the person who opened it.",
+        "TRUE — The film is based on true events; Based on… correctly modifies the film.\n\nTip: Based on / Inspired by often modify books, films, or stories."
       ],
       "highlights": [
-        "Working from home",
-        "Having submitted",
-        "Alarmed by",
-        "Stored in",
-        "Opening the spreadsheet"
+        "Jogging along",
+        "Convinced she",
+        "Having been washed",
+        "Opening the fridge",
+        "Based on true events"
       ],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.16",
-      "solution_overview": "Reject any sentence where an abstract result or error is doing the opening action. Keep sentences where the organisation, team, or physical object is a plausible subject of the participle."
+      "solution_overview": "Watch wildlife and weather rush into the subject slot after -ing openers. Three lines attach correctly; the heron and the cold air do not."
     },
     {
       "id": "en-g-16-08",
@@ -232,31 +232,31 @@
       "title": "Task 8",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having checked the inventory twice, the warehouse supervisor closed the system.",
-        "Standing on the balcony, the harbour lights looked magnificent.",
-        "Issued in March, the interim report already needs an update.",
-        "Determined to meet the target, overtime was authorised until Friday.",
-        "Speaking off the record, the minister confirmed the draft timetable."
+        "Having missed the bus, a taxi seemed the only option.",
+        "Wrapped in foil, the leftovers stayed fresh until Friday.",
+        "Worried about the forecast, umbrellas were packed in every bag.",
+        "Climbing the stairs two at a time, Dan reached the flat first.",
+        "Known for its spicy sauce, the street stall draws long queues."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Supervisor checked then closed; perfect participle is anchored.\n\nTip: Same actor before and after the comma.",
-        "FALSE — Harbour lights were not standing; Standing on the balcony, we thought the harbour lights looked magnificent.\n\nTip: Location -ing needs the person located there.",
-        "TRUE — The report was issued; reduced relative is correct.\n\nTip: Issued / Released / Circulated + document subject = OK.",
-        "FALSE — Overtime cannot be determined; Determined to meet the target, management authorised overtime until Friday.\n\nTip: Determined / Eager / Keen require a willful subject.",
-        "TRUE — The minister is speaking; attachment is clear.\n\nTip: Speaking / Writing as openers need the speaker/writer as subject."
+        "FALSE — A taxi did not miss the bus; Having missed the bus, she decided a taxi was the only option.\n\nTip: Having missed needs the misser, not the alternative plan.",
+        "TRUE — The leftovers were wrapped; Wrapped modifies the food.\n\nTip: Wrapped / Sealed / Stored can modify leftovers and packages.",
+        "FALSE — Umbrellas cannot worry; Worried about the forecast, they packed umbrellas in every bag.\n\nTip: Worried / Anxious always need a person.",
+        "TRUE — Dan climbed and reached the flat; clean match.\n\nTip: Climbing / Running + person subject is straightforward.",
+        "TRUE — The stall is known for its sauce; Known for… attaches to the stall.\n\nTip: Known for / Famous for can modify places and things."
       ],
       "highlights": [
-        "Having checked",
-        "Standing on",
-        "Issued in March",
-        "Determined to meet",
-        "Speaking off the record"
+        "Having missed",
+        "Wrapped in foil",
+        "Worried about",
+        "Climbing the stairs",
+        "Known for its"
       ],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.16",
-      "solution_overview": "Attitude participles (Determined…) and posture participles (Standing…) are dangler magnets. Document participles (Issued…) and speech participles with a named speaker are usually fine."
+      "solution_overview": "Two dangles put a taxi and umbrellas in the experiencer role. The other three keep leftovers, Dan, and a stall as logical subjects."
     },
     {
       "id": "en-g-16-09",
@@ -264,31 +264,31 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been warned about volatility, the traders reduced their exposure.",
-        "While reviewing the ledger, several duplicate invoices surfaced.",
-        "Built in 2012, the data centre still meets current standards.",
-        "Convinced by the evidence, the panel upheld the sanction.",
-        "Arriving late to the briefing, the key slides had already been discussed."
+        "Having been postponed twice, the match finally went ahead on Sunday.",
+        "Turning the corner, a sudden gust nearly knocked her over.",
+        "Delighted with the results, the students shared their project online.",
+        "Growing in a sunny window, the herbs thrived all summer.",
+        "Expecting a quiet evening, the doorbell rang again and again."
       ],
       "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Traders were warned and then reduced exposure.\n\nTip: Having been + PP correctly marks earlier passive experience.",
-        "FALSE — Invoices do not review; While reviewing the ledger, the auditor found several duplicate invoices.\n\nTip: While + -ing still needs the reviewer as subject.",
-        "TRUE — The centre was built; patient subject fits.\n\nTip: Built / Constructed / Renovated + place/building is standard.",
-        "TRUE — The panel can be convinced and uphold a sanction.\n\nTip: Convinced / Persuaded take the decision-maker as subject.",
-        "FALSE — Slides did not arrive late; Arriving late to the briefing, she found the key slides had already been discussed.\n\nTip: Time-of-arrival openers need the latecomer."
+        "TRUE — The match had been postponed; Having been postponed correctly modifies it.\n\nTip: Having been + past participle works for events that underwent delay or change.",
+        "FALSE — A gust cannot turn the corner; Turning the corner, she was nearly knocked over by a sudden gust.\n\nTip: Turning / Rounding needs the walker or driver.",
+        "TRUE — The students are delighted; attachment is clean.\n\nTip: Delighted / Pleased + people is a reliable pattern.",
+        "TRUE — The herbs grow in the window; Growing modifies the herbs.\n\nTip: Growing / Blooming can modify plants.",
+        "FALSE — A doorbell cannot expect an evening; Expecting a quiet evening, they heard the doorbell ring again and again.\n\nTip: Expecting / Hoping need a human subject."
       ],
       "highlights": [
-        "Having been warned",
-        "While reviewing",
-        "Built in 2012",
-        "Convinced by",
-        "Arriving late"
+        "Having been postponed",
+        "Turning the corner",
+        "Delighted with",
+        "Growing in a sunny window",
+        "Expecting a quiet evening"
       ],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.16",
-      "solution_overview": "While + participle does not excuse a dangling structure — the logical subject rule still applies. Buildings and people attach cleanly; discoveries and slides usually do not."
+      "solution_overview": "Passive perfect on an event and plant-friendly Growing pass. Gusts and doorbells cannot turn corners or expect evenings."
     },
     {
       "id": "en-g-16-10",
@@ -296,31 +296,31 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having finalised the disclosure letter, counsel filed it before noon.",
-        "Running the stress test overnight, several capital shortfalls emerged.",
-        "Buried in the appendix, the critical assumption went unnoticed.",
-        "Pleased with the pilot results, the board extended funding.",
-        "Climbing the stairs to the lab, the samples began to thaw."
+        "Stolen from a museum decades ago, the painting was finally recovered.",
+        "Whistling a tune, the pavement glistened after the shower.",
+        "Having reheated the stew, leftovers never tasted better.",
+        "Shocked by the ending, viewers sat in silence for a moment.",
+        "Parked under a tree, the bicycle stayed cool in the heat."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
-        "TRUE — Counsel finalised and filed; same actor.\n\nTip: Perfect participle + professional subject is usually solid.",
-        "FALSE — Shortfalls do not run tests; Running the stress test overnight, the risk team found several capital shortfalls.\n\nTip: Process -ing + result-as-subject = dangler.",
-        "TRUE — The assumption was buried; reduced relative works.\n\nTip: Buried / Hidden / Nested in… + detail/subject is fine.",
-        "TRUE — The board can be pleased and extend funding.\n\nTip: Emotion adjective-participles still need a capable subject.",
-        "FALSE — Samples do not climb stairs; Climbing the stairs to the lab, the researchers noticed the samples beginning to thaw.\n\nTip: Never let cargo or samples perform locomotion openers."
+        "TRUE — The painting was stolen; Stolen modifies the artwork.\n\nTip: Stolen / Lost / Found can modify objects that underwent those events.",
+        "FALSE — Pavement cannot whistle; Whistling a tune, he noticed the pavement glistening after the shower.\n\nTip: Whistling / Humming need a person.",
+        "FALSE — Leftovers did not reheat the stew; Having reheated the stew, she thought leftovers never tasted better.\n\nTip: Having reheated needs the cook as subject.",
+        "TRUE — Viewers are shocked; the participle matches.\n\nTip: Shocked / Moved / Inspired + audience is fine.",
+        "TRUE — The bicycle was parked; Parked attaches to the bike.\n\nTip: Parked / Locked / Chained can modify vehicles and bikes."
       ],
       "highlights": [
-        "Having finalised",
-        "Running the stress test",
-        "Buried in the appendix",
-        "Pleased with",
-        "Climbing the stairs"
+        "Stolen from a museum",
+        "Whistling a tune",
+        "Having reheated",
+        "Shocked by the ending",
+        "Parked under a tree"
       ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.16",
-      "solution_overview": "Two danglers put results or samples in the doer slot. The other three keep counsel, an assumption, and the board as coherent subjects of their participles."
+      "solution_overview": "Object states (Stolen, Parked) and shocked viewers work. Whistling pavement and reheating leftovers swap the real agent out of the subject slot."
     },
     {
       "id": "en-g-16-11",
@@ -328,31 +328,31 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been rejected twice, the proposal was withdrawn without debate.",
-        "Using the new template, formatting errors fell by half.",
-        "Signed by both parties, the amendment took effect immediately.",
-        "Worried about reputational risk, a press embargo was imposed.",
-        "Following the guidelines strictly, the assessors scored each criterion."
+        "Having trained for months, the marathon still felt brutal.",
+        "Filled with old photographs, the album sat on the shelf.",
+        "Realising the mistake, a corrected draft was emailed at once.",
+        "Accompanied by a guide, the hikers crossed the ridge safely.",
+        "Sitting by the window, rain streaked the glass for hours."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — The proposal was rejected and then withdrawn; patient subject is consistent.\n\nTip: Having been + PP can take a document as subject when that document underwent the action.",
-        "FALSE — Errors do not use templates; Using the new template, editors cut formatting errors by half.\n\nTip: Using / Applying tools needs a user subject.",
-        "TRUE — The amendment was signed; reduced relative is correct.\n\nTip: Signed / Ratified / Endorsed + agreement subject is clean.",
-        "FALSE — An embargo cannot worry; Worried about reputational risk, communications imposed a press embargo.\n\nTip: Emotional openers + policy-as-subject fail.",
-        "TRUE — Assessors follow and score; attachment holds.\n\nTip: Following… as a manner opener needs the follower as subject."
+        "FALSE — The marathon did not train; Having trained for months, she still found the marathon brutal.\n\nTip: Having trained needs the athlete, not the race.",
+        "TRUE — The album was filled with photographs; Filled modifies the album.\n\nTip: Filled / Packed / Lined can modify containers and spaces.",
+        "FALSE — A draft cannot realise a mistake; Realising the mistake, he emailed a corrected draft at once.\n\nTip: Realising / Noticing need a thinker.",
+        "TRUE — The hikers were accompanied; Accompanied by… matches them.\n\nTip: Accompanied / Joined by can modify people.",
+        "FALSE — Rain was not sitting by the window; Sitting by the window, she watched rain streak the glass for hours.\n\nTip: Sitting / Standing openers need the sitter."
       ],
       "highlights": [
-        "Having been rejected",
-        "Using the new template",
-        "Signed by both parties",
-        "Worried about",
-        "Following the guidelines"
+        "Having trained",
+        "Filled with old photographs",
+        "Realising the mistake",
+        "Accompanied by a guide",
+        "Sitting by the window"
       ],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.16",
-      "solution_overview": "Instrumental Using… and emotional Worried… are the usual fail points here. Document subjects work for passive perfect and signed-amendment patterns."
+      "solution_overview": "Two pass; three fail by putting a race, a draft, or rain where a person should be. Mental verbs (Realising) are especially strict."
     },
     {
       "id": "en-g-16-12",
@@ -360,31 +360,31 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having consulted the stakeholders, the project lead revised the scope.",
-        "Seen from the river, the campus looks surprisingly compact.",
-        "Expecting a soft landing, asset prices were left unchanged.",
-        "Drawn from internal surveys, the chart understates regional gaps.",
-        "Leaving the building, the fire doors locked automatically behind them."
+        "Having been invited late, a seat near the back was all that remained.",
+        "Carved from oak, the table dominated the dining room.",
+        "Frustrated with the slow Wi-Fi, several restarts were tried.",
+        "Watching from the stands, they spotted their friend on the pitch.",
+        "Frozen solid overnight, the pond looked safe enough to skate on."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Project lead consulted and revised.\n\nTip: Having + PP of a deliberate action needs that actor as subject.",
-        "TRUE — Campus is what is seen; passive participle of perception is fine.\n\nTip: Seen from / Viewed from + place/building subject is idiomatic and grammatical.",
-        "FALSE — Prices do not expect; Expecting a soft landing, the committee left asset prices unchanged.\n\nTip: Expecting / Anticipating require a planner, not a price.",
-        "TRUE — The chart’s data were drawn from surveys; reduced relative sense holds.\n\nTip: Drawn from / Taken from + figure/chart subject is acceptable.",
-        "FALSE — Fire doors do not leave; Leaving the building, they heard the fire doors lock automatically.\n\nTip: Leaving / Entering need the people moving."
+        "FALSE — A seat was not invited; Having been invited late, she found only a seat near the back remained.\n\nTip: Having been invited needs the invitee.",
+        "TRUE — The table was carved from oak; Carved modifies the table.\n\nTip: Carved / Made / Assembled can modify furniture and objects.",
+        "FALSE — Restarts cannot feel frustrated; Frustrated with the slow Wi-Fi, he tried several restarts.\n\nTip: Frustrated / Annoyed need a person, not the remedy.",
+        "TRUE — They watched and spotted their friend; clean attachment.\n\nTip: Watching / Listening from… needs the observer as subject.",
+        "TRUE — The pond was frozen; Frozen solid overnight fits.\n\nTip: Frozen / Thawed / Flooded can modify places and surfaces."
       ],
       "highlights": [
-        "Having consulted",
-        "Seen from the river",
-        "Expecting a soft landing",
-        "Drawn from",
-        "Leaving the building"
+        "Having been invited",
+        "Carved from oak",
+        "Frustrated with",
+        "Watching from the stands",
+        "Frozen solid overnight"
       ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.16",
-      "solution_overview": "Seen from… and Drawn from… are legitimate patientive openers. Expecting… and Leaving… are not — restore a human subject for those."
+      "solution_overview": "Passive invitation and frustrated restarts dangle. Carved table, watching fans, and a frozen pond show when objects and people attach correctly."
     },
     {
       "id": "en-g-16-13",
@@ -392,31 +392,31 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been promoted mid-year, she inherited a strained budget.",
-        "Judging by the margins, the product line is barely viable.",
-        "Covered by insurance, the damaged consignment was written off.",
-        "Intending to reassure investors, calm wording was chosen for the release.",
-        "Once approved by compliance, the campaign can go live."
+        "Having mixed the batter too quickly, lumps remained in the cake.",
+        "Driven by curiosity, the children opened the attic door.",
+        "Stored in a cool cupboard, the spices kept their flavour for years.",
+        "Hearing the final whistle, celebrations spilled onto the pitch.",
+        "Located near the harbour, the café fills up every weekend."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
-        "TRUE — She was promoted and inherited the budget.\n\nTip: Having been + PP + same person is a safe pattern.",
-        "TRUE — Judging by… is a fixed, impersonal evaluative opener; no dangling actor is required.\n\nTip: Judging by / Considering / Given are often absolute-style and exam-accepted.",
-        "TRUE — Consignment was covered; patient subject matches.\n\nTip: Covered / Protected / Guaranteed by… + asset subject works.",
-        "FALSE — Wording cannot intend; Intending to reassure investors, the team chose calm wording for the release.\n\nTip: Intending / Meaning to… always need a willful subject.",
-        "TRUE — Once approved… is a reduced passive clause with the campaign as patient.\n\nTip: Once / When + PP often equals once it has been + PP."
+        "FALSE — Lumps did not mix the batter; Having mixed the batter too quickly, she left lumps in the cake.\n\nTip: Having mixed needs the baker.",
+        "TRUE — The children are driven by curiosity; Driven by… matches them.\n\nTip: Driven by / Motivated by can modify people with motives.",
+        "TRUE — The spices were stored cool; Stored modifies the spices.\n\nTip: Stored / Kept / Aged can modify food and goods.",
+        "FALSE — Celebrations cannot hear a whistle; Hearing the final whistle, the fans spilled onto the pitch in celebration.\n\nTip: Hearing needs ears — put the hearers as subject.",
+        "TRUE — The café is located near the harbour; Located attaches to the place.\n\nTip: Located / Situated / Nestled often modify buildings and venues."
       ],
       "highlights": [
-        "Having been promoted",
-        "Judging by the margins",
-        "Covered by insurance",
-        "Intending to reassure",
-        "Once approved"
+        "Having mixed",
+        "Driven by curiosity",
+        "Stored in a cool cupboard",
+        "Hearing the final whistle",
+        "Located near the harbour"
       ],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.16",
-      "solution_overview": "At this level, distinguish true danglers from conventional absolute openers like Judging by…. Only Intending… fails the logical-subject test here."
+      "solution_overview": "Abstract results (lumps, celebrations) steal the subject after Having and Hearing. Driven children and located café keep the logic straight."
     },
     {
       "id": "en-g-16-14",
@@ -424,31 +424,31 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having restructured the debt, interest costs fell sharply in Q3.",
-        "Granted under the emergency scheme, the waiver expires in June.",
-        "All things considered, the merger still looks premature.",
-        "Assuming constant demand, unit costs decline with scale.",
-        "Walking through the plant, safety violations were everywhere."
+        "Having been repaired poorly, the zipper jammed again within a week.",
+        "Crossing the busy square, street musicians played near the fountain.",
+        "Impressed by the choir, tickets for the next concert sold out.",
+        "Drying on the balcony, the sheets flapped in the breeze.",
+        "Hoping for clearer skies, the picnic was moved to Saturday."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
-        "FALSE — Interest costs did not restructure the debt; Having restructured the debt, the firm saw interest costs fall sharply in Q3.\n\nTip: Perfect participles of corporate actions need the firm/board as subject, not the metric.",
-        "TRUE — The waiver was granted; patient subject is correct.\n\nTip: Granted / Awarded / Issued under… + licence/waiver subject is fine.",
-        "TRUE — All things considered is a set absolute construction, not a dangling modifier of a missing person.\n\nTip: Memorise a few absolutes: all things considered, weather permitting, that said.",
-        "TRUE — Assuming… here sets a modelling condition; the main clause states the model’s implication with unit costs as subject in a scientific register.\n\nTip: Assuming / Holding constant… can introduce hypothetical premises in analysis writing.",
-        "FALSE — Violations do not walk; Walking through the plant, inspectors found safety violations everywhere.\n\nTip: Still apply the walking-subject rule even in denser prose."
+        "TRUE — The zipper had been repaired poorly; Having been repaired matches it.\n\nTip: Having been + past participle can modify objects that underwent a process.",
+        "FALSE — Musicians were not crossing (or the subject is ambiguous); Crossing the busy square, they heard street musicians near the fountain.\n\nTip: Crossing / Entering must describe the grammatical subject, not a nearby scene.",
+        "FALSE — Tickets cannot be impressed; Impressed by the choir, fans bought tickets until the next concert sold out.\n\nTip: Impressed / Amazed need an experiencer.",
+        "TRUE — The sheets were drying; Drying modifies the sheets.\n\nTip: Drying / Hanging / Airings can modify laundry and cloth.",
+        "FALSE — A picnic cannot hope; Hoping for clearer skies, they moved the picnic to Saturday.\n\nTip: Hoping always needs a person with a wish."
       ],
       "highlights": [
-        "Having restructured",
-        "Granted under",
-        "All things considered",
-        "Assuming constant demand",
-        "Walking through"
+        "Having been repaired",
+        "Crossing the busy square",
+        "Impressed by the choir",
+        "Drying on the balcony",
+        "Hoping for clearer skies"
       ],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.16",
-      "solution_overview": "Absolutes and modelling openers (All things considered, Assuming…) are grammatical conventions. Having restructured… still needs the restructurer, and Walking… still needs the walker."
+      "solution_overview": "Only two attach cleanly. Scene-setting Crossing, impressed tickets, and a hoping picnic are the traps."
     },
     {
       "id": "en-g-16-15",
@@ -456,31 +456,31 @@
       "title": "Task 15",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been delayed by industrial action, passengers were offered vouchers.",
-        "Taken at face value, the forecast looks overly optimistic.",
-        "Tired of endless revisions, the draft was abandoned overnight.",
-        "Weather permitting, the site visit will go ahead on Tuesday.",
-        "Having identified the bottleneck, throughput improved within a week."
+        "Having checked the timetable twice, the platform still looked empty.",
+        "Buried under autumn leaves, the path was easy to miss.",
+        "Amused by the cartoon, laughter filled the living room.",
+        "Using only leftover vegetables, they made a surprisingly good soup.",
+        "Designed for beginners, the course starts with simple chords."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Passengers were delayed (passive perfect) and then offered vouchers.\n\nTip: Having been delayed can take people as patients.",
-        "TRUE — The forecast is what is taken at face value; reduced relative sense.\n\nTip: Taken / Read / Interpreted as… + claim/forecast subject is OK.",
-        "FALSE — A draft cannot feel tired; Tired of endless revisions, the author abandoned the draft overnight.\n\nTip: Tired of / Fed up with need experiencers.",
-        "TRUE — Weather permitting is a classic absolute; no dangling actor.\n\nTip: Absolute noun + participle stands free of the main subject.",
-        "FALSE — Throughput did not identify anything; Having identified the bottleneck, operations improved throughput within a week.\n\nTip: Perfect participle of problem-finding needs the finder."
+        "FALSE — The platform did not check the timetable; Having checked the timetable twice, she still found the platform empty.\n\nTip: Having checked needs the checker.",
+        "TRUE — The path was buried under leaves; Buried modifies the path.\n\nTip: Buried / Hidden / Covered can modify places and paths.",
+        "FALSE — Laughter cannot be amused; Amused by the cartoon, they filled the living room with laughter.\n\nTip: Amused / Entertained need people.",
+        "TRUE — They used leftovers and made soup; Using… matches the cooks.\n\nTip: Using / Following + person subject is clean when the person does the using.",
+        "TRUE — The course was designed for beginners; Designed modifies the course.\n\nTip: Designed for / Intended for often modify products and courses."
       ],
       "highlights": [
-        "Having been delayed",
-        "Taken at face value",
-        "Tired of endless",
-        "Weather permitting",
-        "Having identified"
+        "Having checked",
+        "Buried under autumn leaves",
+        "Amused by the cartoon",
+        "Using only leftover vegetables",
+        "Designed for beginners"
       ],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.16",
-      "solution_overview": "Mix patientive perfects, evaluative Taken…, and an absolute (Weather permitting). Reject Tired… and Having identified… when the subject is the draft or the KPI."
+      "solution_overview": "Platforms and laughter cannot check or feel amusement. Buried path, cooking Using, and Designed course show correct object and agent matches."
     },
     {
       "id": "en-g-16-16",
@@ -488,31 +488,31 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Properly trained, junior analysts can handle the first-line review.",
-        "Having lost the original invoices, a reconstruction was attempted from bank statements.",
-        "Other things being equal, higher tariffs reduce import volumes.",
-        "Relieved at the outcome, celebrations continued late into the night.",
-        "Designed for remote audits, the checklist omits on-site sampling steps."
+        "Having been woken by birdsong, coffee seemed urgently necessary.",
+        "Sewn by hand, the costume took three weeks to finish.",
+        "Confused about the homework, several questions were emailed to the tutor.",
+        "Standing on tiptoe, she could just reach the top shelf.",
+        "Inspired by the podcast, a long walk through the city followed."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — Junior analysts are the ones trained; conditional past-participle opener attaches correctly.\n\nTip: Properly trained / If trained… often reduces If they are trained…",
-        "FALSE — A reconstruction cannot lose invoices; Having lost the original invoices, the accounts team attempted a reconstruction from bank statements.\n\nTip: Having lost / mislaid needs the loser as subject.",
-        "TRUE — Other things being equal is an absolute used in economics writing.\n\nTip: Absolutes have their own subject (other things) inside the phrase.",
-        "FALSE — Celebrations cannot feel relieved; Relieved at the outcome, the staff continued celebrating late into the night.\n\nTip: Emotion + event-as-subject remains dangling.",
-        "TRUE — The checklist was designed for that purpose; patient subject fits.\n\nTip: Designed for / Intended for + tool/document subject is standard."
+        "FALSE — Coffee was not woken by birdsong; Having been woken by birdsong, he decided coffee seemed urgently necessary.\n\nTip: Having been woken needs the sleeper.",
+        "TRUE — The costume was sewn by hand; Sewn modifies the costume.\n\nTip: Sewn / Knitted / Woven can modify garments and crafts.",
+        "FALSE — Questions cannot feel confused; Confused about the homework, she emailed several questions to the tutor.\n\nTip: Confused + inanimate subject is a dangling classic.",
+        "TRUE — She stood on tiptoe and reached; attachment is exact.\n\nTip: Standing / Kneeling + person subject is straightforward.",
+        "FALSE — A walk cannot be inspired; Inspired by the podcast, he took a long walk through the city.\n\nTip: Inspired / Motivated need a person, not the resulting activity."
       ],
       "highlights": [
-        "Properly trained",
-        "Having lost",
-        "Other things being equal",
-        "Relieved at the outcome",
-        "Designed for remote audits"
+        "Having been woken",
+        "Sewn by hand",
+        "Confused about",
+        "Standing on tiptoe",
+        "Inspired by the podcast"
       ],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.16",
-      "solution_overview": "Absolutes carry an internal subject; reduced conditionals like Properly trained… still share the main subject. Emotion and loss participles must not attach to celebrations or reconstructions."
+      "solution_overview": "Coffee, emailed questions, and a walk steal the experiencer role. Only the sewn costume and standing reacher attach correctly."
     },
     {
       "id": "en-g-16-17",
@@ -520,31 +520,31 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Having been briefed only that morning, several directors still asked basic questions.",
-        "The committee, having adjourned for lunch, resumed at two o'clock.",
-        "Considering the tight deadline, an extension seems justified.",
-        "Struck by the inconsistency, further sampling was ordered at once.",
-        "There being no quorum, the vote was postponed until Thursday."
+        "Having been warned about the tide, the beach was abandoned before dusk.",
+        "Balancing the tray carefully, not a single glass spilled.",
+        "Written for young readers, the story still amuses adults.",
+        "Exhausted but determined, the team finished the relay.",
+        "Glancing at her watch, the meeting seemed endless."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [false, false, true, true, false],
       "tactical_explanations": [
-        "TRUE — Directors were briefed; even if they still asked questions, they remain the logical patients of Having been briefed.\n\nTip: A surprising outcome does not make a matching subject into a dangler.",
-        "TRUE — Mid-clause Having adjourned clearly modifies the committee.\n\nTip: Participles after the subject (…, having…,) are often clearer than sentence-initial ones.",
-        "TRUE — Considering… functions like Given… / In view of… as an evaluative absolute-style opener.\n\nTip: Considering / Given / Regarding often need no separate human subject.",
-        "FALSE — Sampling cannot be struck by inconsistency; Struck by the inconsistency, the lead auditor ordered further sampling at once.\n\nTip: Struck by / Surprised by need experiencers.",
-        "TRUE — There being no quorum is an absolute with its own existential subject.\n\nTip: There being / It being constructions stand apart from the main subject."
+        "FALSE — The beach was not warned; Having been warned about the tide, they abandoned the beach before dusk.\n\nTip: Having been warned needs the people who received the warning.",
+        "FALSE — A glass did not balance the tray; Balancing the tray carefully, she spilled not a single glass.\n\nTip: Balancing / Carrying need the balancer as subject.",
+        "TRUE — The story was written for young readers; Written for… fits.\n\nTip: Written for / Aimed at can modify books and stories.",
+        "TRUE — The team is exhausted but determined; both participles match the team.\n\nTip: Paired adjectives/participles still need one logical subject.",
+        "FALSE — A meeting cannot glance at a watch; Glancing at her watch, she felt the meeting seemed endless.\n\nTip: Glancing / Peering need a person with eyes."
       ],
       "highlights": [
-        "Having been briefed",
-        "having adjourned",
-        "Considering the tight deadline",
-        "Struck by the inconsistency",
-        "There being no quorum"
+        "Having been warned",
+        "Balancing the tray",
+        "Written for young readers",
+        "Exhausted but determined",
+        "Glancing at her watch"
       ],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.16",
-      "solution_overview": "Advanced items mix mid-clause participles, Considering…, and There being… absolutes. Only Struck by… fails because further sampling is not an experiencer."
+      "solution_overview": "Harder dangles: warned beach, balancing glass, glancing meeting. Only the story and the exhausted team keep logical subjects."
     },
     {
       "id": "en-g-16-18",
@@ -552,31 +552,31 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The report having been leaked, the ministry brought the announcement forward.",
-        "Although exhausted, the final chapter was finished before midnight.",
-        "Not knowing the password, access to the shared drive was impossible.",
-        "Broadly speaking, the reform has improved filing discipline.",
-        "Having once worked in compliance, she spotted the gap immediately."
+        "Having reduced sugar in the recipe, the muffins tasted less sweet.",
+        "Caught in traffic, patience wore thin before the lights changed.",
+        "Hidden behind the curtains, the cat watched the room in silence.",
+        "Relying on memory alone, several steps in the dance were skipped.",
+        "Charged overnight, the phone lasted through the whole trip."
       ],
-      "answer_key": [true, false, false, true, true],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Absolute: the report having been leaked has its own subject (the report).\n\nTip: Noun + having been + PP before the comma is a full absolute, not a dangler.",
-        "FALSE — A chapter cannot be exhausted; Although exhausted, she finished the final chapter before midnight.\n\nTip: Although / While + adjective still needs the experiencer as main subject.",
-        "FALSE — Access cannot know a password; Not knowing the password, they could not access the shared drive.\n\nTip: Negated participles (Not knowing / Never having…) still need the knower.",
-        "TRUE — Broadly speaking is a fixed discourse absolute.\n\nTip: Broadly / Generally / Frankly speaking are conventional and accepted.",
-        "TRUE — She worked in compliance and spotted the gap; perfect participle matches.\n\nTip: Having once / previously + PP marks prior experience of the subject."
+        "FALSE — Muffins did not reduce the sugar; Having reduced sugar in the recipe, she found the muffins tasted less sweet.\n\nTip: Having reduced needs the cook, not the result.",
+        "FALSE — Patience cannot be caught in traffic; Caught in traffic, they felt patience wear thin before the lights changed.\n\nTip: Caught in… needs the travellers.",
+        "TRUE — The cat was hidden; Hidden behind… matches the cat.\n\nTip: Hidden / Crouched / Nestled can modify animals and people.",
+        "FALSE — Steps cannot rely on memory; Relying on memory alone, they skipped several steps in the dance.\n\nTip: Relying / Depending need a person.",
+        "TRUE — The phone was charged overnight; Charged modifies the phone.\n\nTip: Charged / Updated / Reset can modify devices."
       ],
       "highlights": [
-        "report having been leaked",
-        "Although exhausted",
-        "Not knowing the password",
-        "Broadly speaking",
-        "Having once worked"
+        "Having reduced sugar",
+        "Caught in traffic",
+        "Hidden behind the curtains",
+        "Relying on memory alone",
+        "Charged overnight"
       ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.16",
-      "solution_overview": "Absolutes with their own noun subject (The report having been…) and discourse markers (Broadly speaking) are grammatical. Although exhausted… and Not knowing… still dangle when the subject is a chapter or access."
+      "solution_overview": "Abstract patience and dance steps, plus muffins as cook, are the traps. Hidden cat and charged phone show clean object/animal attachment."
     },
     {
       "id": "en-g-16-19",
@@ -584,31 +584,31 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The data having been cleaned, the model was re-estimated overnight.",
-        "Without realising the conflict, the consultancy accepted both mandates.",
-        "Seated behind the glass, proceedings were hard to hear.",
-        "That said, the pilot should still proceed on a smaller scale.",
-        "Having never audited a bank before, the assignment felt daunting."
+        "Having been delayed by roadworks, arrival at the campsite came after midnight.",
+        "Folded neatly into the envelope, the letter waited for days.",
+        "Unsure which path to take, a coin was tossed in the clearing.",
+        "Waving from the platform, her friends disappeared as the train pulled out.",
+        "Torn at the corner, the poster still advertised the festival clearly."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
-        "TRUE — Absolute with the data as its own subject; main clause subject is the model.\n\nTip: Absolute subject ≠ main-clause subject by design.",
-        "TRUE — The consultancy is the one not realising and accepting.\n\nTip: Without + -ing still needs the non-realiser as subject.",
-        "FALSE — Proceedings were not seated; Seated behind the glass, observers found proceedings hard to hear.\n\nTip: Seated / Standing location participles need people.",
-        "TRUE — That said is a discourse absolute meaning nevertheless.\n\nTip: That said / That being so link ideas without dangling.",
-        "FALSE — An assignment cannot have audited; Having never audited a bank before, she found the assignment daunting.\n\nTip: Experience participles need the person with the experience."
+        "FALSE — Arrival was not delayed on the road; Having been delayed by roadworks, they reached the campsite after midnight.\n\nTip: Having been delayed needs the travellers, not the abstract arrival.",
+        "TRUE — The letter was folded; Folded neatly… modifies the letter.\n\nTip: Folded / Sealed / Stamped can modify mail and paper.",
+        "FALSE — A coin cannot feel unsure; Unsure which path to take, they tossed a coin in the clearing.\n\nTip: Unsure / Uncertain need a decision-maker.",
+        "FALSE — Her friends were not waving from the platform if they disappeared as the train pulled out — the waver should be the subject: Waving from the platform, she watched her friends disappear…\n\nTip: Check who is actually doing the waving; do not let the wrong noun sit after the comma.",
+        "TRUE — The poster was torn; Torn at the corner attaches correctly.\n\nTip: Torn / Faded / Crumpled can modify posters and paper."
       ],
       "highlights": [
-        "data having been cleaned",
-        "Without realising",
-        "Seated behind",
-        "That said",
-        "Having never audited"
+        "Having been delayed",
+        "Folded neatly",
+        "Unsure which path",
+        "Waving from the platform",
+        "Torn at the corner"
       ],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.16",
-      "solution_overview": "Absolutes and That said are free-standing. Without realising… is fine with a firm as subject; Seated… and Having never audited… are not fine with proceedings or the assignment as subjects."
+      "solution_overview": "Abstract arrival, an unsure coin, and a mismatched waving subject fail. Folded letter and torn poster keep object logic intact."
     },
     {
       "id": "en-g-16-20",
@@ -616,31 +616,31 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The figures having been reconciled, payroll was released the same afternoon.",
-        "Not having received a reply, a second reminder was issued on Friday.",
-        "Strictly speaking, the clause does not cover consequential loss.",
-        "Being the largest bidder, the consortium's offer set the reserve price.",
-        "Once the minutes had been approved, having no further business, the chair closed the meeting."
+        "Having tasted every sample, a clear favourite emerged among the cheeses.",
+        "Stacked against the wall, the canvases leaned at a dangerous angle.",
+        "Relieved the exam was over, celebration plans were made on the spot.",
+        "Following the river upstream, they found a quieter swimming spot.",
+        "Damaged in the storm, several tiles still clung to the roof."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — Absolute (figures having been reconciled) plus a separate main subject (payroll).\n\nTip: If the participle phrase has its own noun subject, it is an absolute, not a dangler.",
-        "FALSE — A reminder cannot fail to receive a reply; Not having received a reply, the clerk issued a second reminder on Friday.\n\nTip: Not having + PP needs the non-recipient as subject.",
-        "TRUE — Strictly speaking is a fixed evaluative absolute.\n\nTip: Strictly / Technically / Legally speaking pattern like Broadly speaking.",
-        "FALSE — The offer was not the bidder; Being the largest bidder, the consortium set the reserve price with its offer. As written, Being… wrongly modifies offer.\n\nTip: Being + role must modify the person/organisation, not their bid or document.",
-        "TRUE — Having no further business mid-clause clearly modifies the chair after the minutes clause.\n\nTip: Placement after the subject (the chair) removes dangling ambiguity."
+        "FALSE — A favourite did not taste the samples; Having tasted every sample, she found a clear favourite among the cheeses.\n\nTip: Having tasted needs the taster, not the outcome.",
+        "TRUE — The canvases were stacked; Stacked against… modifies them.\n\nTip: Stacked / Leaning / Piled can modify objects in space.",
+        "FALSE — Plans cannot feel relieved; Relieved the exam was over, they made celebration plans on the spot.\n\nTip: Relieved / Glad need a person.",
+        "TRUE — They followed the river and found a spot; Following… matches the hikers.\n\nTip: Following / Tracing a path needs the followers as subject.",
+        "TRUE — The tiles were damaged; Damaged in the storm fits.\n\nTip: Damaged / Cracked / Bent can modify parts and objects."
       ],
       "highlights": [
-        "figures having been reconciled",
-        "Not having received",
-        "Strictly speaking",
-        "Being the largest bidder",
-        "having no further business"
+        "Having tasted every sample",
+        "Stacked against the wall",
+        "Relieved the exam was over",
+        "Following the river upstream",
+        "Damaged in the storm"
       ],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.16",
-      "solution_overview": "Finish by separating absolutes and discourse markers from true danglers. Not having received… and Being the largest bidder… fail when they attach to a reminder or an offer instead of the clerk or the consortium."
+      "solution_overview": "Close with a tasting favourite and relieved plans as dangles, then three solid matches: stacked canvases, following hikers, and storm-damaged tiles."
     }
   ]
 }

@@ -8,25 +8,25 @@
       "title": "Task 1",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"The audit is delayed.\" → \"She said the audit was delayed.\"",
-        "Direct: \"Where is the briefing room?\" → \"He asked where was the briefing room.\"",
-        "Direct: \"We will submit the bid by noon.\" → \"They said they will submit the bid by noon.\"",
-        "Direct: \"Did you see the memo?\" → \"She asked if I had seen the memo.\"",
-        "Direct: \"I resigned yesterday.\" → \"He said he had resigned yesterday.\""
+        "Direct: \"The match starts at seven.\" → \"She said the match started at seven.\"",
+        "Direct: \"Where is the bus stop?\" → \"He asked where was the bus stop.\"",
+        "Direct: \"We will bake bread tomorrow.\" → \"They said they will bake bread tomorrow.\"",
+        "Direct: \"Did you lock the bike?\" → \"She asked if I had locked the bike.\"",
+        "Direct: \"I finished the essay yesterday.\" → \"He said he had finished the essay yesterday.\""
       ],
       "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
-        "TRUE — After a past reporting verb, present simple backshifts to past simple: \"is\" becomes \"was.\"\n\nTip: Past said/told/asked usually pulls the reported verb one step back in time.",
-        "FALSE — Embedded wh-questions keep statement order: subject before the verb. \"Where was the briefing room?\" is direct-question order.\n\nTip: Use \"where the briefing room was,\" not \"where was…\"",
-        "FALSE — \"Will\" normally backshifts to \"would\" after a past reporting verb.\n\nTip: \"They said they would submit the bid by noon.\"",
-        "TRUE — Yes/no questions take if/whether plus statement order, and present perfect often becomes past perfect.\n\nTip: \"asked if/whether + subject + had + past participle.\"",
+        "TRUE — After a past reporting verb, present simple backshifts to past simple: \"starts\" becomes \"started.\"\n\nTip: Past said/asked usually pulls the reported verb one step back in time.",
+        "FALSE — Embedded wh-questions keep statement order: subject before the verb. \"Where was the bus stop?\" is still direct-question order.\n\nTip: Use \"where the bus stop was,\" not \"where was…\"",
+        "FALSE — \"Will\" normally backshifts to \"would,\" and \"tomorrow\" usually becomes \"the next day.\"\n\nTip: \"They said they would bake bread the next day.\"",
+        "TRUE — Yes/no questions take if/whether plus statement order, and past simple often becomes past perfect.\n\nTip: \"asked if/whether + subject + had + past participle.\"",
         "FALSE — Time markers shift with the tense: \"yesterday\" becomes \"the day before\" (or \"the previous day\").\n\nTip: Pair backshift with deictic shifts: yesterday → the day before; tomorrow → the next day."
       ],
       "highlights": [
-        "was delayed",
+        "started at seven",
         "where was",
-        "will submit",
-        "if I had seen",
+        "will bake",
+        "if I had locked",
         "yesterday"
       ],
       "difficulty_level": "1/5",
@@ -40,26 +40,26 @@
       "title": "Task 2",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"I can fix the spreadsheet.\" → \"She said she can fix the spreadsheet.\"",
-        "Direct: \"When does the tender close?\" → \"He asked when the tender closed.\"",
-        "Direct: \"We must finish the draft today.\" → \"She said they had to finish the draft that day.\"",
-        "Direct: \"I have checked the figures.\" → \"He said he had checked the figures.\"",
-        "Direct: \"Are the invoices ready?\" → \"She asked are the invoices ready.\""
+        "Direct: \"I can swim across the lake.\" → \"She said she can swim across the lake.\"",
+        "Direct: \"When does the museum open?\" → \"He asked when the museum opened.\"",
+        "Direct: \"We must pack today.\" → \"She said they had to pack that day.\"",
+        "Direct: \"I have watered the plants.\" → \"He said he had watered the plants.\"",
+        "Direct: \"Are the tickets ready?\" → \"She asked are the tickets ready.\""
       ],
       "answer_key": [false, true, true, true, false],
       "tactical_explanations": [
-        "FALSE — Ability \"can\" typically backshifts to \"could\" after a past reporting verb.\n\nTip: \"She said she could fix the spreadsheet.\"",
+        "FALSE — Ability \"can\" typically backshifts to \"could\" after a past reporting verb.\n\nTip: \"She said she could swim across the lake.\"",
         "TRUE — Wh-word stays, tense backshifts, and the clause keeps subject–verb statement order.\n\nTip: \"asked when + subject + past verb,\" never \"when does/did…\"",
         "TRUE — Obligation \"must\" often becomes \"had to,\" and \"today\" shifts to \"that day.\"\n\nTip: Present obligation markers (must/today) usually reshape in past reports.",
         "TRUE — Present perfect backshifts cleanly to past perfect after said.\n\nTip: have/has + past participle → had + past participle.",
-        "FALSE — Reported yes/no questions need if/whether and statement order, not inverted \"are the invoices…\"\n\nTip: \"She asked whether the invoices were ready.\""
+        "FALSE — Reported yes/no questions need if/whether and statement order, not inverted \"are the tickets…\"\n\nTip: \"She asked whether the tickets were ready.\""
       ],
       "highlights": [
-        "can fix",
-        "when the tender closed",
+        "can swim",
+        "when the museum opened",
         "that day",
-        "had checked",
-        "are the invoices"
+        "had watered",
+        "are the tickets"
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
@@ -72,26 +72,26 @@
       "title": "Task 3",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"The board meets here tomorrow.\" → \"He said the board met here tomorrow.\"",
-        "Direct: \"Why did the supplier cancel?\" → \"She asked why did the supplier cancel.\"",
-        "Direct: \"I am reviewing the contract now.\" → \"He said he was reviewing the contract then.\"",
-        "Direct: \"Do not sign the annex.\" → \"She told me do not sign the annex.\"",
-        "Direct: \"We may raise prices next quarter.\" → \"They said they may raise prices next quarter.\""
+        "Direct: \"The choir rehearses here tomorrow.\" → \"He said the choir rehearsed here tomorrow.\"",
+        "Direct: \"Why did the neighbour leave?\" → \"She asked why did the neighbour leave.\"",
+        "Direct: \"I am reading the novel now.\" → \"He said he was reading the novel then.\"",
+        "Direct: \"Do not feed the stray cats.\" → \"She told me do not feed the stray cats.\"",
+        "Direct: \"We may hike next weekend.\" → \"They said they may hike next weekend.\""
       ],
       "answer_key": [false, false, true, false, false],
       "tactical_explanations": [
-        "FALSE — Place and time markers usually shift: \"here\" → \"there,\" \"tomorrow\" → \"the next day\" / \"the following day.\"\n\nTip: \"He said the board met there the following day.\"",
-        "FALSE — Embedded why-questions need statement order and usually past-perfect backshift: not \"why did the supplier…\"\n\nTip: \"She asked why the supplier had cancelled.\"",
+        "FALSE — Place and time markers usually shift: \"here\" → \"there,\" \"tomorrow\" → \"the next day\" / \"the following day.\"\n\nTip: \"He said the choir rehearsed there the following day.\"",
+        "FALSE — Embedded why-questions need statement order and usually past-perfect backshift: not \"why did the neighbour…\"\n\nTip: \"She asked why the neighbour had left.\"",
         "TRUE — Present continuous backshifts to past continuous, and \"now\" becomes \"then.\"\n\nTip: am/is/are + -ing → was/were + -ing; now → then.",
-        "FALSE — Negative commands in reports use told/asked + object + not + to-infinitive.\n\nTip: \"She told me not to sign the annex.\"",
-        "FALSE — \"May\" for possibility often becomes \"might,\" and \"next quarter\" should become \"the following quarter.\"\n\nTip: \"They said they might raise prices the following quarter.\""
+        "FALSE — Negative commands in reports use told/asked + object + not + to-infinitive.\n\nTip: \"She told me not to feed the stray cats.\"",
+        "FALSE — \"May\" for possibility often becomes \"might,\" and \"next weekend\" should become \"the following weekend.\"\n\nTip: \"They said they might hike the following weekend.\""
       ],
       "highlights": [
         "here tomorrow",
-        "why did the supplier",
+        "why did the neighbour",
         "then",
-        "do not sign",
-        "may raise prices next"
+        "do not feed",
+        "may hike next"
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
@@ -104,31 +104,31 @@
       "title": "Task 4",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Please email the client.\" → \"He asked me to email the client.\"",
-        "Direct: \"Who approved the budget?\" → \"She asked who had approved the budget.\"",
+        "Direct: \"Please text me the address.\" → \"He asked me to text him the address.\"",
+        "Direct: \"Who watered the garden?\" → \"She asked who had watered the garden.\"",
         "Direct: \"I will have finished by Friday.\" → \"He said he would have finished by Friday.\"",
-        "Direct: \"This policy starts next week.\" → \"She said that policy started the following week.\"",
-        "Direct: \"Have you updated the forecast?\" → \"He asked had I updated the forecast.\""
+        "Direct: \"This recipe needs more salt.\" → \"She said that recipe needed more salt.\"",
+        "Direct: \"Have you seen my keys?\" → \"He asked had I seen his keys.\""
       ],
       "answer_key": [true, true, true, true, false],
       "tactical_explanations": [
         "TRUE — Polite requests report as asked + object + to-infinitive.\n\nTip: Direct \"Please…\" → \"asked someone to…\"",
-        "TRUE — Subject questions keep who as subject; the tense still backshifts.\n\nTip: \"asked who had approved…\" is statement-like and correctly shifted.",
+        "TRUE — Subject questions keep who as subject; the tense still backshifts.\n\nTip: \"asked who had watered…\" is statement-like and correctly shifted.",
         "TRUE — Future perfect \"will have finished\" backshifts to \"would have finished.\"\n\nTip: will → would even inside perfect constructions.",
-        "TRUE — \"This/next\" often become \"that/the following\" after a past report.\n\nTip: Demonstratives and relative time words move with the reporting frame.",
-        "FALSE — Yes/no perfect questions need if/whether + statement order, not \"had I…\" inversion.\n\nTip: \"He asked whether I had updated the forecast.\""
+        "TRUE — \"This\" often becomes \"that\" after a past report, with present → past.\n\nTip: Demonstratives move with the reporting frame.",
+        "FALSE — Yes/no perfect questions need if/whether + statement order, not \"had I…\" inversion.\n\nTip: \"He asked whether I had seen his keys.\""
       ],
       "highlights": [
-        "to email",
-        "who had approved",
+        "to text him",
+        "who had watered",
         "would have finished",
-        "that policy",
-        "had I updated"
+        "that recipe",
+        "had I seen"
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.8",
-      "solution_overview": "Four solid reports cover requests, subject questions, future perfect backshift, and this/next shifts. The trap is leftover question inversion after asked."
+      "solution_overview": "Four solid reports cover requests, subject questions, future perfect backshift, and this→that. The trap is leftover question inversion after asked."
     },
     {
       "id": "en-g-8-05",
@@ -136,11 +136,11 @@
       "title": "Task 5",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"The margin is too thin.\" → \"The CFO told that the margin was too thin.\"",
-        "Direct: \"How long have you worked here?\" → \"She asked how long I had worked there.\"",
-        "Direct: \"We shall revise the offer.\" → \"He said they should revise the offer.\"",
-        "Direct: \"I saw the auditor last night.\" → \"She said she had seen the auditor the night before.\"",
-        "Direct: \"Can you join the call?\" → \"He asked could I join the call.\""
+        "Direct: \"The soup is too salty.\" → \"Mia told that the soup was too salty.\"",
+        "Direct: \"How long have you lived here?\" → \"She asked how long I had lived there.\"",
+        "Direct: \"We shall meet at noon.\" → \"He said they should meet at noon.\"",
+        "Direct: \"I saw the fox last night.\" → \"She said she had seen the fox the night before.\"",
+        "Direct: \"Can you join the hike?\" → \"He asked could I join the hike.\""
       ],
       "answer_key": [false, true, true, true, false],
       "tactical_explanations": [
@@ -148,12 +148,12 @@
         "TRUE — Present perfect → past perfect, \"here\" → \"there,\" and statement order after how long.\n\nTip: Bundle tense, place, and order shifts together.",
         "TRUE — Formal \"shall\" for future often reports as \"should\" (or \"would\") after past said.\n\nTip: Treat shall like will when backshifting future meaning.",
         "TRUE — Past simple → past perfect and \"last night\" → \"the night before.\"\n\nTip: Relative past time phrases shift just like yesterday/tomorrow.",
-        "FALSE — Modal yes/no reports need if/whether + subject + could, not \"could I…\" inversion.\n\nTip: \"He asked if I could join the call.\""
+        "FALSE — Modal yes/no reports need if/whether + subject + could, not \"could I…\" inversion.\n\nTip: \"He asked if I could join the hike.\""
       ],
       "highlights": [
         "told that",
-        "had worked there",
-        "should revise",
+        "had lived there",
+        "should meet",
         "the night before",
         "could I join"
       ],
@@ -168,11 +168,11 @@
       "title": "Task 6",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Submit the form before noon.\" → \"She told us to submit the form before noon.\"",
+        "Direct: \"Bring a spare towel.\" → \"She told us to bring a spare towel.\"",
         "Direct: \"I may be late.\" → \"He said he might be late.\"",
-        "Direct: \"Where have they put the samples?\" → \"She asked where they had put the samples.\"",
-        "Direct: \"We were discussing the merger.\" → \"He said they had been discussing the merger.\"",
-        "Direct: \"I leave for Vienna tonight.\" → \"She said she was leaving for Vienna that night.\""
+        "Direct: \"Where have they put the map?\" → \"She asked where they had put the map.\"",
+        "Direct: \"We were discussing the film.\" → \"He said they had been discussing the film.\"",
+        "Direct: \"I leave for Lisbon tonight.\" → \"She said she was leaving for Lisbon that night.\""
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -183,7 +183,7 @@
         "TRUE — Present simple for a near arrangement can report as past continuous, with \"tonight\" → \"that night.\"\n\nTip: Timetabled or arranged futures often surface as was/were + -ing in reports."
       ],
       "highlights": [
-        "to submit",
+        "to bring",
         "might be",
         "where they had put",
         "had been discussing",
@@ -200,25 +200,25 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"I must have left the badge at reception.\" → \"He said he must have left the badge at reception.\"",
-        "Direct: \"Will the bank renew the facility?\" → \"She asked would the bank renew the facility.\"",
-        "Direct: \"These costs are rising.\" → \"He said those costs were rising.\"",
-        "Direct: \"I used to work in compliance.\" → \"She said she used to work in compliance.\"",
-        "Direct: \"Don't forget the annex.\" → \"He reminded me not to forget the annex.\""
+        "Direct: \"I must have left my scarf at the café.\" → \"He said he must have left his scarf at the café.\"",
+        "Direct: \"Will the library renew the card?\" → \"She asked would the library renew the card.\"",
+        "Direct: \"These clouds are gathering.\" → \"He said those clouds were gathering.\"",
+        "Direct: \"I used to cycle to school.\" → \"She said she used to cycle to school.\"",
+        "Direct: \"Don't forget the tickets.\" → \"He reminded me not to forget the tickets.\""
       ],
       "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
         "TRUE — Deduction \"must have\" often stays unchanged because it already refers to a past conclusion.\n\nTip: Logical deduction with must have need not backshift further.",
-        "FALSE — Yes/no with will needs if/whether + would + subject, not \"would the bank…\" inversion.\n\nTip: \"She asked whether the bank would renew the facility.\"",
+        "FALSE — Yes/no with will needs if/whether + would + subject, not \"would the library…\" inversion.\n\nTip: \"She asked whether the library would renew the card.\"",
         "TRUE — \"These\" → \"those\" and present continuous → past continuous.\n\nTip: Demonstratives shift with the reporting viewpoint.",
         "TRUE — \"Used to\" already marks past habit and normally stays as used to after said.\n\nTip: No further backshift is required for used to.",
         "TRUE — Negative reminders use not + to-infinitive after remind/tell.\n\nTip: \"reminded me not to forget…\" mirrors \"told me not to…\""
       ],
       "highlights": [
         "must have left",
-        "would the bank",
-        "those costs were",
-        "used to work",
+        "would the library",
+        "those clouds were",
+        "used to cycle",
         "not to forget"
       ],
       "difficulty_level": "2/5",
@@ -232,8 +232,8 @@
       "title": "Task 8",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Why are you delaying the launch?\" → \"She asked why were we delaying the launch.\"",
-        "Direct: \"I ought to call the broker.\" → \"He said he ought to call the broker.\"",
+        "Direct: \"Why are you delaying the trip?\" → \"She asked why were we delaying the trip.\"",
+        "Direct: \"I ought to call my sister.\" → \"He said he ought to call his sister.\"",
         "Direct: \"We arrived two days ago.\" → \"They said they had arrived two days ago.\"",
         "Direct: \"Is this the final draft?\" → \"He asked if that was the final draft.\"",
         "Direct: \"I will phone you later today.\" → \"She said she would phone me later that day.\""
@@ -264,11 +264,11 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"We need not renew the licence yet.\" → \"She said they need not renew the licence yet.\"",
-        "Direct: \"What time does the flight leave?\" → \"He asked what time the flight left.\"",
+        "Direct: \"We need not renew the membership yet.\" → \"She said they need not renew the membership yet.\"",
+        "Direct: \"What time does the ferry leave?\" → \"He asked what time the ferry left.\"",
         "Direct: \"I have been waiting since Monday.\" → \"She said she had been waiting since Monday.\"",
         "Direct: \"Come back the day after tomorrow.\" → \"They told us to come back in two days' time.\"",
-        "Direct: \"I can't approve this invoice.\" → \"He said he couldn't approve that invoice.\""
+        "Direct: \"I can't approve this design.\" → \"He said he couldn't approve that design.\""
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -280,7 +280,7 @@
       ],
       "highlights": [
         "need not renew",
-        "what time the flight left",
+        "what time the ferry left",
         "had been waiting",
         "in two days' time",
         "couldn't approve that"
@@ -296,15 +296,15 @@
       "title": "Task 10",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Who did you promote?\" → \"She asked who did I promote.\"",
-        "Direct: \"The shares peaked last year.\" → \"He said the shares had peaked the year before.\"",
-        "Direct: \"Shall I postpone the webinar?\" → \"She asked if she should postpone the webinar.\"",
-        "Direct: \"We are going to expand into Poland.\" → \"They said they were going to expand into Poland.\"",
-        "Direct: \"I won't sign until Friday.\" → \"He said he won't sign until Friday.\""
+        "Direct: \"Who did you invite?\" → \"She asked who did I invite.\"",
+        "Direct: \"The cherries ripened last year.\" → \"He said the cherries had ripened the year before.\"",
+        "Direct: \"Shall I postpone the picnic?\" → \"She asked if she should postpone the picnic.\"",
+        "Direct: \"We are going to plant lavender.\" → \"They said they were going to plant lavender.\"",
+        "Direct: \"I won't leave until Friday.\" → \"He said he won't leave until Friday.\""
       ],
       "answer_key": [false, true, true, true, false],
       "tactical_explanations": [
-        "FALSE — Object questions drop do-support and use statement order: \"who I had promoted.\"\n\nTip: After asked, no \"did\" before the subject.",
+        "FALSE — Object questions drop do-support and use statement order: \"who I had invited.\"\n\nTip: After asked, no \"did\" before the subject.",
         "TRUE — Past simple → past perfect and \"last year\" → \"the year before.\"\n\nTip: Calendar \"last…\" phrases become \"the … before / previous …\"",
         "TRUE — Offer/suggestion shall I… reports as if/whether + should.\n\nTip: \"asked if she should…\" is the standard mapping.",
         "TRUE — \"Be going to\" backshifts was/were going to after past said.\n\nTip: Treat going-to futures like other present forms that shift one step.",
@@ -315,7 +315,7 @@
         "the year before",
         "if she should",
         "were going to",
-        "won't sign"
+        "won't leave"
       ],
       "difficulty_level": "3/5",
       "sort_order": 10,
@@ -328,26 +328,26 @@
       "title": "Task 11",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The analyst said, \"Inflation is sticky,\" and later reported that inflation is sticky.",
-        "Direct: \"Could you circulate the minutes?\" → \"She asked me if I could circulate the minutes.\"",
-        "Direct: \"I was working when the alert sounded.\" → \"He said he had been working when the alert had sounded.\"",
-        "Direct: \"Whose laptop is this?\" → \"He asked whose laptop was this.\"",
-        "Direct: \"We needn't have hired extra staff.\" → \"She said they needn't have hired extra staff.\""
+        "The guide said, \"Water freezes at zero,\" and later reported that water freezes at zero.",
+        "Direct: \"Could you pass the salt?\" → \"She asked me if I could pass the salt.\"",
+        "Direct: \"I was cooking when the power failed.\" → \"He said he had been cooking when the power had failed.\"",
+        "Direct: \"Whose umbrella is this?\" → \"He asked whose umbrella was this.\"",
+        "Direct: \"We needn't have brought extra chairs.\" → \"She said they needn't have brought extra chairs.\""
       ],
       "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "TRUE — When the situation is still true, some writers keep present tense after a past report; it is acceptable for ongoing facts.\n\nTip: Backshift is usual but not compulsory for permanently or still-valid truths.",
         "TRUE — Polite could you… can report as asked + if + could + statement order.\n\nTip: Ability/request could often stays could inside if-clauses.",
-        "FALSE — Over-shifting both verbs to past perfect can distort simultaneous past events; keep the time-clause past simple if it marks the interrupting moment.\n\nTip: Prefer \"had been working when the alert sounded.\"",
-        "FALSE — Statement order needed: \"whose laptop this was,\" not \"whose laptop was this.\"\n\nTip: Possessive wh-questions still lose inversion in reports.",
+        "FALSE — Over-shifting both verbs to past perfect can distort simultaneous past events; keep the time-clause past simple if it marks the interrupting moment.\n\nTip: Prefer \"had been cooking when the power failed.\"",
+        "FALSE — Statement order needed: \"whose umbrella this was,\" not \"whose umbrella was this.\"\n\nTip: Possessive wh-questions still lose inversion in reports.",
         "TRUE — \"Needn't have\" for unnecessary past action commonly remains needn't have.\n\nTip: Perfect modal forms for past comments often stay put."
       ],
       "highlights": [
-        "inflation is sticky",
-        "if I could circulate",
-        "had sounded",
+        "water freezes at zero",
+        "if I could pass",
+        "had failed",
         "was this",
-        "needn't have hired"
+        "needn't have brought"
       ],
       "difficulty_level": "3/5",
       "sort_order": 11,
@@ -360,11 +360,11 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Let's postpone the roadshow.\" → \"She suggested postponing the roadshow.\"",
+        "Direct: \"Let's postpone the rehearsal.\" → \"She suggested postponing the rehearsal.\"",
         "Direct: \"I wish I knew the answer.\" → \"He said he wished he knew the answer.\"",
-        "Direct: \"Had you finished before the outage?\" → \"She asked whether I had finished before the outage.\"",
+        "Direct: \"Had you finished before the storm?\" → \"She asked whether I had finished before the storm.\"",
         "Direct: \"We thrived here last spring.\" → \"They said they had thrived there the previous spring.\"",
-        "Direct: \"You had better renegotiate.\" → \"He said I had better renegotiate.\""
+        "Direct: \"You had better rest.\" → \"He said I had better rest.\""
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -379,7 +379,7 @@
         "wished he knew",
         "whether I had finished",
         "the previous spring",
-        "had better renegotiate"
+        "had better rest"
       ],
       "difficulty_level": "3/5",
       "sort_order": 12,
@@ -392,11 +392,11 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"I would rather stay remote.\" → \"She said she would rather stayed remote.\"",
-        "Direct: \"When will you publish the results?\" → \"He asked when we would publish the results.\"",
-        "Direct: \"I might have misread the clause.\" → \"He said he might have misread the clause.\"",
+        "Direct: \"I would rather stay indoors.\" → \"She said she would rather stayed indoors.\"",
+        "Direct: \"When will you publish the photos?\" → \"He asked when we would publish the photos.\"",
+        "Direct: \"I might have misread the map.\" → \"He said he might have misread the map.\"",
         "Direct: \"Stay where you are.\" → \"Security told us to stay where we were.\"",
-        "Direct: \"Did the regulator contact you yesterday?\" → \"She asked if the regulator had contacted me yesterday.\""
+        "Direct: \"Did the nurse call you yesterday?\" → \"She asked if the nurse had called me yesterday.\""
       ],
       "answer_key": [false, true, true, true, false],
       "tactical_explanations": [
@@ -404,7 +404,7 @@
         "TRUE — will→would inside a wh-clause with statement order.\n\nTip: \"asked when + subject + would + verb.\"",
         "TRUE — \"Might have\" for past possibility usually stays might have.\n\nTip: Perfect modals of speculation rarely need further change.",
         "TRUE — Imperative plus embedded where-clause: to-infinitive outside, backshift inside the where-clause.\n\nTip: \"to stay where we were\" — both layers handled.",
-        "FALSE — \"Yesterday\" should become \"the day before\" once the reporting verb is past.\n\nTip: \"…had contacted me the day before.\""
+        "FALSE — \"Yesterday\" should become \"the day before\" once the reporting verb is past.\n\nTip: \"…had called me the day before.\""
       ],
       "highlights": [
         "would rather stayed",
@@ -424,8 +424,8 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"I insist that the clause be rewritten.\" → \"She insisted that the clause be rewritten.\"",
-        "Direct: \"How much did the campaign cost?\" → \"He asked how much the campaign had cost.\"",
+        "Direct: \"I insist that the lyrics be rewritten.\" → \"She insisted that the lyrics be rewritten.\"",
+        "Direct: \"How much did the festival cost?\" → \"He asked how much the festival had cost.\"",
         "Direct: \"We will be launching next Monday.\" → \"They said they would be launching the following Monday.\"",
         "Direct: \"I never said that.\" → \"She claimed she had never said that.\"",
         "Direct: \"Are you being serious?\" → \"He asked if I was being serious.\""
@@ -436,11 +436,11 @@
         "TRUE — Object how-much questions drop did and backshift to past perfect with statement order.\n\nTip: \"asked how much + subject + had + past participle.\"",
         "TRUE — Future continuous will be + -ing → would be + -ing, and next → the following.\n\nTip: Progressive futures backshift the will piece only.",
         "TRUE — Past simple negation becomes past perfect in a past report when the earlier speech act is prior.\n\nTip: \"had never said\" places the denial further back.",
-        "TRUE — Present continuous passive-like being → past continuous being after if.\n\nTip: \"asked if I was being…\" — statement order, tense shifted."
+        "TRUE — Present continuous being → past continuous being after if.\n\nTip: \"asked if I was being…\" — statement order, tense shifted."
       ],
       "highlights": [
-        "clause be rewritten",
-        "how much the campaign had cost",
+        "lyrics be rewritten",
+        "how much the festival had cost",
         "would be launching",
         "had never said",
         "if I was being"
@@ -457,22 +457,22 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Direct: \"I would have called if I had known.\" → \"She said she would have called if she had known.\"",
-        "Direct: \"Which warehouse stores the spares?\" → \"He asked which warehouse did store the spares.\"",
+        "Direct: \"Which shelf holds the spices?\" → \"He asked which shelf did hold the spices.\"",
         "Direct: \"The offer expires the day after tomorrow.\" → \"They said the offer expired two days later.\"",
-        "Direct: \"Must we disclose the conflict?\" → \"She asked if they had to disclose the conflict.\"",
+        "Direct: \"Must we disclose the allergy?\" → \"She asked if they had to disclose the allergy.\"",
         "Direct: \"I am to present at nine.\" → \"He said he was to present at nine.\""
       ],
       "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
         "TRUE — Conditional perfect forms already sit far back and typically stay would have / had + past participle when reported.\n\nTip: Do not invent an extra layer beyond would have + past perfect.",
-        "FALSE — No do-support in the embedded clause: \"which warehouse stored the spares.\"\n\nTip: Wh-determiners keep statement order without did.",
+        "FALSE — No do-support in the embedded clause: \"which shelf held the spices.\"\n\nTip: Wh-determiners keep statement order without did.",
         "TRUE — \"The day after tomorrow\" → \"two days later\" / \"in two days\" is a natural time rewrite.\n\nTip: Far deixis is often paraphrased in polished reports.",
         "TRUE — Obligation must in questions often becomes had to after asked if.\n\nTip: \"asked if they had to…\" is the usual mapping.",
         "TRUE — Formal \"be to\" for scheduled duty backshifts was/were to.\n\nTip: am/is/are to → was/were to after past said."
       ],
       "highlights": [
         "would have called",
-        "did store",
+        "did hold",
         "two days later",
         "had to disclose",
         "was to present"
@@ -488,16 +488,16 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"You needn't worry about the audit.\" → \"He told me I didn't need to worry about the audit.\"",
-        "Direct: \"Whereabouts is the server rack?\" → \"She asked whereabouts was the server rack.\"",
+        "Direct: \"You needn't worry about the weather.\" → \"He told me I didn't need to worry about the weather.\"",
+        "Direct: \"Whereabouts is the camping stove?\" → \"She asked whereabouts was the camping stove.\"",
         "Direct: \"I have got to leave now.\" → \"He said he had got to leave then.\"",
-        "Direct: \"We shall have completed the roll-out by June.\" → \"They said they would have completed the roll-out by June.\"",
-        "Direct: \"Why must the filing be public?\" → \"She asked why the filing had to be public.\""
+        "Direct: \"We shall have completed the mural by June.\" → \"They said they would have completed the mural by June.\"",
+        "Direct: \"Why must the window stay open?\" → \"She asked why the window had to stay open.\""
       ],
       "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
         "TRUE — \"Needn't\" can report as didn't need to / needn't after a past frame.\n\nTip: Personal object after told plus shifted lack-of-obligation form.",
-        "FALSE — Even with whereabouts, keep statement order: \"whereabouts the server rack was.\"\n\nTip: Any wh-word still bans auxiliary-before-subject after asked.",
+        "FALSE — Even with whereabouts, keep statement order: \"whereabouts the camping stove was.\"\n\nTip: Any wh-word still bans auxiliary-before-subject after asked.",
         "TRUE — \"Have got to\" obligation backshifts to had got to, and now→then.\n\nTip: Treat have got to like must for backshift purposes.",
         "TRUE — shall have + past participle (future perfect) → would have + past participle.\n\nTip: Future perfect always yields would have in standard past reports.",
         "TRUE — why + must → why + had to with statement order.\n\nTip: Obligation questions lose must inversion and often become had to."
@@ -507,7 +507,7 @@
         "whereabouts was",
         "had got to leave then",
         "would have completed",
-        "why the filing had to"
+        "why the window had to"
       ],
       "difficulty_level": "4/5",
       "sort_order": 16,
@@ -520,11 +520,11 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Were the covenants breached last quarter?\" → \"Counsel asked whether the covenants had been breached the previous quarter.\"",
-        "Direct: \"I would prefer you not to disclose this yet.\" → \"She said she would prefer us not to disclose that yet.\"",
-        "Direct: \"Dare I ask for a waiver?\" → \"He asked if he dared ask for a waiver.\"",
-        "Direct: \"The team will have been negotiating for six hours by then.\" → \"She said the team would have been negotiating for six hours by then.\"",
-        "Direct: \"What if we delay the IPO?\" → \"He asked what if we delayed the IPO.\""
+        "Direct: \"Were the paths cleared last winter?\" → \"She asked whether the paths had been cleared the previous winter.\"",
+        "Direct: \"I would prefer you not to spoil this yet.\" → \"She said she would prefer us not to spoil that yet.\"",
+        "Direct: \"Dare I ask for a refund?\" → \"He asked if he dared ask for a refund.\"",
+        "Direct: \"The team will have been rehearsing for six hours by then.\" → \"She said the team would have been rehearsing for six hours by then.\"",
+        "Direct: \"What if we delay the concert?\" → \"He asked what if we delayed the concert.\""
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -535,10 +535,10 @@
         "TRUE — \"What if…\" hypotheticals often keep what if and simply backshift the following verb.\n\nTip: \"asked what if we delayed…\" is natural exam English."
       ],
       "highlights": [
-        "had been breached the previous quarter",
-        "not to disclose that",
+        "had been cleared the previous winter",
+        "not to spoil that",
         "if he dared ask",
-        "would have been negotiating",
+        "would have been rehearsing",
         "what if we delayed"
       ],
       "difficulty_level": "5/5",
@@ -552,31 +552,31 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Seldom have we seen such volatility.\" → \"She said seldom had they seen such volatility.\"",
+        "Direct: \"Seldom have we seen such fog.\" → \"She said seldom had they seen such fog.\"",
         "Direct: \"I was to have signed before noon.\" → \"He said he was to have signed before noon.\"",
         "Direct: \"Who should we notify first?\" → \"She asked who should we notify first.\"",
-        "Direct: \"The data will still be encrypted tomorrow morning.\" → \"He said the data would still be encrypted the next morning.\"",
-        "Direct: \"Might the bank extend the covenant holiday?\" → \"They asked might the bank extend the covenant holiday.\""
+        "Direct: \"The bread will still be warm tomorrow morning.\" → \"He said the bread would still be warm the next morning.\"",
+        "Direct: \"Might the shop extend its hours?\" → \"They asked might the shop extend its hours.\""
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "TRUE — Negative inversion can survive inside the reported clause after said, with pronoun and tense already matching.\n\nTip: Reporting rare inverted rhetoric may keep the inverted shape.",
         "TRUE — \"Was to have + past participle\" (unfulfilled plan) typically remains was to have…\n\nTip: This past-scheduled perfect form needs no further shift.",
         "FALSE — Embedded object questions need statement order: \"who we should notify first.\"\n\nTip: Modal should still follows the subject after asked.",
-        "TRUE — Passive future will be → would be, and tomorrow morning → the next morning.\n\nTip: Voice stays passive while will and time words move.",
-        "FALSE — Yes/no might needs if/whether + subject + might, not \"might the bank…\"\n\nTip: \"They asked whether the bank might extend…\""
+        "TRUE — Future will → would, and tomorrow morning → the next morning.\n\nTip: Will and time words move together after past said.",
+        "FALSE — Yes/no might needs if/whether + subject + might, not \"might the shop…\"\n\nTip: \"They asked whether the shop might extend…\""
       ],
       "highlights": [
         "seldom had they seen",
         "was to have signed",
         "who should we",
         "the next morning",
-        "might the bank"
+        "might the shop"
       ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.8",
-      "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and passive would-be time shifts are acceptable."
+      "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and would + next-morning time shifts are acceptable."
     },
     {
       "id": "en-g-8-19",
@@ -584,11 +584,11 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"I'd rather you didn't leak this.\" → \"She said she'd rather I didn't leak that.\"",
-        "Direct: \"How come the hedge failed?\" → \"He asked how come the hedge had failed.\"",
-        "Direct: \"We used not to disclose bonuses.\" → \"They said they used not to disclose bonuses.\"",
+        "Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"",
+        "Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"",
+        "Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"",
         "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
-        "Direct: \"Suppose we freeze hiring.\" → \"He suggested that we freeze hiring.\""
+        "Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\""
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
@@ -600,8 +600,8 @@
       ],
       "highlights": [
         "she'd rather I didn't",
-        "how come the hedge had failed",
-        "used not to disclose",
+        "how come the cake had collapsed",
+        "used not to skip",
         "would have finished",
         "suggested that we freeze"
       ],
@@ -616,24 +616,24 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Direct: \"Not only is the covenant tight, but the waiver is costly.\" → \"She said not only was the covenant tight, but the waiver was costly.\"",
-        "Direct: \"I needn't have flagged every footnote.\" → \"He said he needn't have flagged every footnote.\"",
-        "Direct: \"Where should the escrow sit?\" → \"Counsel asked where should the escrow sit.\"",
-        "Direct: \"By next March we will have been leasing the site for a decade.\" → \"They said that by the following March they would have been leasing the site for a decade.\"",
+        "Direct: \"Not only is the path steep, but the wind is fierce.\" → \"She said not only was the path steep, but the wind was fierce.\"",
+        "Direct: \"I needn't have packed every jumper.\" → \"He said he needn't have packed every jumper.\"",
+        "Direct: \"Where should the chairs sit?\" → \"She asked where should the chairs sit.\"",
+        "Direct: \"By next March we will have been leasing the studio for a decade.\" → \"They said that by the following March they would have been leasing the studio for a decade.\"",
         "Direct: \"Was anyone monitoring the feed then?\" → \"She asked was anyone monitoring the feed then.\""
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "TRUE — Correlative not only…but also can keep inversion after said while tenses sit in the past.\n\nTip: Reporting flashy inversion is optional but grammatical if pronouns and tenses align.",
         "TRUE — Needn't have for unnecessary past action stays needn't have.\n\nTip: Perfect absence-of-need does not become hadn't need.",
-        "FALSE — Statement order required: \"where the escrow should sit.\"\n\nTip: Modal should follows the subject in embedded wh-questions.",
+        "FALSE — Statement order required: \"where the chairs should sit.\"\n\nTip: Modal should follows the subject in embedded wh-questions.",
         "TRUE — next→the following and will have been + -ing → would have been + -ing.\n\nTip: Long future-perfect-continuous stacks only change will→would.",
         "FALSE — Yes/no past continuous needs if/whether + statement order: \"whether anyone was monitoring…\"\n\nTip: Never leave bare \"was anyone…\" after asked."
       ],
       "highlights": [
-        "not only was the covenant",
-        "needn't have flagged",
-        "where should the escrow",
+        "not only was the path",
+        "needn't have packed",
+        "where should the chairs",
         "would have been leasing",
         "asked was anyone"
       ],
