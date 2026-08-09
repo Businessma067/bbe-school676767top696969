@@ -54,14 +54,19 @@ Trap: the actual gap is only 7.44% - 7.20% = 0.24 percentage points, far less th
 **Part 1: Setup.**
 
 • P = $6,000
+
 • Nominal annual rate $r = 7.20\\% = 0.072$
+
 • Compounding frequency $n = 12$ (monthly)
+
 • Time = 1 year
 
 **Part 2: Formula.**
 
 • Monthly periodic rate $i_m = r/12$
+
 • Effective annual rate $R = (1+i_m)^{12} - 1$
+
 • Future value $FV = P(1+R)$
 
 **Part 3: Solve.**
@@ -116,13 +121,17 @@ Trap: the actual total growth is (9,650.61 - 6,000)/6,000 ≈ 60.84%, which is l
 **Part 1: Setup.**
 
 • $S_0$ = $6,000
+
 • Nominal annual rate $r = 8\\% = 0.08$
+
 • Compounding frequency $n = 4$ (quarterly)
+
 • Time $t = 6$ years
 
 **Part 2: Formula.**
 
 • Periodic rate $= r/n$
+
 • Future value $S(t) = S_0(1+r/n)^{nt}$
 
 **Part 3: Solve.**
@@ -175,13 +184,17 @@ Trap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5
 **Part 1: Setup.**
 
 • P = $10,000
+
 • Offer (i): $r = 6.4\\%$, $n = 4$ (quarterly)
+
 • Offer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)
+
 • Time = 1 year
 
 **Part 2: Formula.**
 
 • Effective annual rate $R = (1+r/n)^{n} - 1$
+
 • Future value $FV = P(1+R)$
 
 **Part 3: Solve.**
@@ -242,11 +255,13 @@ Trap: at a 1.50% monthly rate, the effective annual rate is only about 19.56%, w
 **Part 1: Setup.**
 
 • Monthly periodic rate: $i_m = 1.75\\% = 0.0175$
+
 • Months per year: $n = 12$
 
 **Part 2: Formula.**
 
 • Nominal annual rate $= 12 i_m$
+
 • Effective annual rate $R = (1 + i_m)^{12} - 1$
 
 **Part 3: Solve.**
@@ -301,14 +316,19 @@ Trap: the actual gap is only about 0.12 percentage points, which does not exceed
 **Part 1: Setup.**
 
 • P = $15,000
+
 • Nominal annual rate $r = 5.6\\% = 0.056$
+
 • Compounding frequency $n = 4$ (quarterly)
+
 • Time = 1 year
 
 **Part 2: Formula.**
 
 • Periodic rate $= r/n$
+
 • Effective annual rate $R = (1+r/n)^{n} - 1$
+
 • Future value $FV = P(1+R)$
 
 **Part 3: Solve.**
@@ -363,13 +383,17 @@ Because $(1 + r/n)^{t}$ is a strictly increasing exponential function of t, solv
 **Part 1: Setup.**
 
 • Nominal annual rate $r = 7.2\\% = 0.072$
+
 • Compounding frequency $n = 12$ (monthly)
+
 • Target: double the principal
 
 **Part 2: Formula.**
 
 • Monthly periodic rate $i_m = r/12$
+
 • Growth condition $(1+i_m)^{t} = M$ (M = target growth multiple)
+
 • Solve via logarithms: $t = \\ln M / \\ln(1+i_m)$
 
 **Part 3: Solve.**
@@ -424,6 +448,7 @@ Trap: the gap from semi-annual to quarterly (0.31 points) is actually larger tha
 **Part 1: Setup.**
 
 • Nominal annual rate $r = 15\\% = 0.15$
+
 • $n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)
 
 **Part 2: Formula.**
@@ -484,8 +509,11 @@ Trap: annual compounding produces a SMALLER future value ($7,163.39) than monthl
 **Part 1: Setup.**
 
 • $S_0$ = $4,000
+
 • Nominal annual rate $r = 6\\% = 0.06$
+
 • Compounding frequency $n = 12$ (monthly)
+
 • Time $t = 10$ years
 
 **Part 2: Formula.**
@@ -542,13 +570,17 @@ Trap: the actual increase is exactly (80,000 - 50,000)/50,000 = 60.00%, which is
 **Part 1: Setup.**
 
 • $S_0$ = $50,000
+
 • Target $S(t)$ = $80,000
+
 • $n = 4$ (quarterly)
+
 • $t = 8$ years, so $nt = 32$
 
 **Part 2: Formula.**
 
 • $S(t) = S_0(1+r/n)^{nt}$
+
 • Solve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$
 
 **Part 3: Solve.**
@@ -603,7 +635,9 @@ Trap: the actual difference is only about 0.013 percentage points, which is less
 **Part 1: Setup.**
 
 • Option (a): $r = 10.80\\%$, $n = 1$ (annual)
+
 • Option (b): $r = 10.40\\%$, $n = 4$ (quarterly)
+
 • Time = 1 year
 
 **Part 2: Formula.**
@@ -662,13 +696,17 @@ Trap: a higher interest rate (5.5%) grows money faster, so a SMALLER deposit tod
 **Part 1: Setup.**
 
 • Target $S(t)$ = $40,000
+
 • Nominal annual rate $r = 4.5\\% = 0.045$
+
 • $n = 1$ (annual)
+
 • Time $t = 6$ years
 
 **Part 2: Formula.**
 
 • Future value $S(t) = S_0(1+r)^{t}$
+
 • Present value $S_0 = S(t)/(1+r)^{t}$
 
 **Part 3: Solve.**
@@ -723,13 +761,17 @@ Trap: the correct value is approximately 81.30 months, not 100.`,
 **Part 1: Setup.**
 
 • $S_0$ = £4,000
+
 • Target $S(t)$ = £6,000
+
 • Nominal annual rate $r = 6\\% = 0.06$
+
 • Compounding frequency $n = 12$ (monthly)
 
 **Part 2: Formula.**
 
 • Growth equation $(1+r/n)^{t} = S(t)/S_0$
+
 • Solve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$
 
 **Part 3: Solve.**
@@ -788,14 +830,19 @@ Trap: the actual gap is only about 0.09 percentage points, which does not exceed
 **Part 1: Setup.**
 
 • P = $20,000
+
 • Nominal annual rate $r = 4.25\\% = 0.0425$
+
 • Compounding frequency $n = 365$ (daily)
+
 • Time = 1 year
 
 **Part 2: Formula.**
 
 • Periodic rate $= r/n$
+
 • Effective annual rate $R = (1+r/n)^{n} - 1$
+
 • Future value $FV = P(1+R)$
 
 **Part 3: Solve.**
@@ -850,11 +897,13 @@ Trap: the actual gap is about 2.54 percentage points, which is less than 3.00 pe
 **Part 1: Setup.**
 
 • Monthly periodic rate $i_m = 1.9\\% = 0.019$
+
 • Months per year $n = 12$
 
 **Part 2: Formula.**
 
 • Nominal annual rate $= 12 i_m$
+
 • Effective annual rate $R = (1 + i_m)^{12} - 1$
 
 **Part 3: Solve.**
@@ -907,6 +956,7 @@ Trap: the first jump (0.13 points) is larger than the second jump (0.09 points),
 **Part 1: Setup.**
 
 • Nominal annual rate $r = 10\\% = 0.10$
+
 • $n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)
 
 **Part 2: Formula.**
@@ -965,11 +1015,13 @@ Trap: reaching the same 50× growth in half the time (40 years instead of 80) re
 **Part 1: Setup.**
 
 • Target growth factor = 50
+
 • Time $t = 80$ years
 
 **Part 2: Formula.**
 
 • Growth equation $(1+r)^{t} = M$ (M = target growth factor)
+
 • Solve for rate $r = M^{1/t} - 1$
 
 **Part 3: Solve.**
@@ -1024,12 +1076,15 @@ Trap: this task is itself a counterexample - Account X compounds more frequently
 **Part 1: Setup.**
 
 • Target amount T = $25,000 after t = 7 years
+
 • Account X: r = 5.00%, n = 12 (monthly)
+
 • Account Y: r = 5.10%, n = 4 (quarterly)
 
 **Part 2: Formula.**
 
 • Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)
+
 • Effective annual rate $R = (1 + r/n)^{n} - 1$
 
 **Part 3: Solve.**
@@ -1088,13 +1143,17 @@ Trap: the implied interest is 60,000 - 40,467.83 = $19,532.17, which is just und
 **Part 1: Setup.**
 
 • Target amount T = $60,000 today
+
 • Nominal annual rate $r = 4.4\\% = 0.044$
+
 • Compounding frequency $n = 4$ (quarterly)
+
 • Time $t = 9$ years, so $nt = 36$
 
 **Part 2: Formula.**
 
 • Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)
+
 • Effective annual rate $R = (1 + r/n)^{n} - 1$
 
 **Part 3: Solve.**
@@ -1149,14 +1208,19 @@ CD1 has both the lowest quoted nominal rate and, consistent with that, the lowes
 **Part 1: Setup.**
 
 • P = $20,000
+
 • CD1: $r = 6.30\\%$, $n = 12$ (monthly)
+
 • CD2: $r = 6.40\\%$, $n = 4$ (quarterly)
+
 • CD3: $r = 6.45\\%$, $n = 2$ (semi-annual)
+
 • Time = 1 year
 
 **Part 2: Formula.**
 
 • Effective annual rate $R = (1+r/n)^{n} - 1$
+
 • Interest earned $= P \\times R$
 
 **Part 3: Solve.**
@@ -1217,12 +1281,15 @@ Trap: the time to reach a different target multiple (2× instead of 1.4667×) is
 **Part 1: Setup.**
 
 • $S_0$ = $15,000, target = $22,000
+
 • Account M: $r = 6.00\\%$, $n = 12$ (monthly)
+
 • Account Q: $r = 6.15\\%$, $n = 4$ (quarterly)
 
 **Part 2: Formula.**
 
 • Time to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)
+
 • Effective annual rate $R = (1+r/n)^{n} - 1$
 
 **Part 3: Solve.**
@@ -1283,8 +1350,11 @@ e raised to the power 0.05 equals approximately 1.0512711, which rounds to 1.051
 **Part 1: Setup.**
 
 • $S_0$ = $4,500
+
 • Nominal annual rate r = 5% = 0.05
+
 • Compounding: continuous
+
 • t = 1 year
 
 **Part 2: Formula.**
@@ -1343,8 +1413,11 @@ The correctly computed 12-year balance is $8,357.43, and comparing this to doubl
 **Part 1: Setup.**
 
 • $S_0$ = $3,200
+
 • Nominal annual rate r = 8% = 0.08
+
 • Compounding: continuous
+
 • t = 6 years (3 and 12 years for parts b, d, e)
 
 **Part 2: Formula.**
@@ -1403,12 +1476,15 @@ $e^{0.18}$ - 1 ≈ 19.72%, which is above 19.5%, matching the statement exactly.
 **Part 1: Setup.**
 
 • Nominal annual rate r = 9% = 0.09 (and 18% for parts d, e)
+
 • Compounding: continuous
+
 • P = $15,000 (part b)
 
 **Part 2: Formula.**
 
 • $EAR = e^{r} - 1$
+
 • $S(t) = S_0 e^{rt}$
 
 **Part 3: Solve.**
@@ -1463,13 +1539,17 @@ The semi-annual-versus-yearly gap is 75,000 × (1.1025 - 1.1000) = $187.50, whic
 **Part 1: Setup.**
 
 • Nominal annual rate r = i = 10% = 0.10
+
 • Compounding schedules: yearly (m = 1), semi-annual (m = 2), continuous
+
 • P = $75,000 (parts d, e)
 
 **Part 2: Formula.**
 
 • $K_{yearly} = 1 + i$
+
 • $K_{semi} = (1+i/2)^{2}$
+
 • $K_{continuous} = e^{r}$
 
 **Part 3: Solve.**
@@ -1524,12 +1604,15 @@ Doubling the rate does not double the growth factor, because $e^{2r}$ equals $(e
 **Part 1: Setup.**
 
 • S(0) = $95,000
+
 • Nominal annual rate r = 4.5% = 0.045 (and 9% for part e)
+
 • Compounding: continuous
 
 **Part 2: Formula.**
 
 • $S(t+1) = S(t)\\cdot e^{r}$
+
 • $S(t) = S_0 e^{rt}$
 
 **Part 3: Solve.**
@@ -1586,13 +1669,17 @@ Because continuous depreciation removes a fixed PROPORTION of the current value 
 **Part 1: Setup.**
 
 • $v_0$ = $60,000
+
 • Annual depreciation rate δ = 10% = 0.10 (and 20% for part d)
+
 • Compounding: continuous
 
 **Part 2: Formula.**
 
 • Value: $v(t) = v_0 e^{-\\delta t}$
+
 • Fraction remaining equals $e^{-\\delta t}$
+
 • Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$
 
 **Part 3: Solve.**
@@ -1649,13 +1736,17 @@ Since t = ln(2)/r has r in the denominator, a LARGER r produces a SMALLER (short
 **Part 1: Setup.**
 
 • $S_0$ = $18,000
+
 • Nominal annual rate r = 5.5% = 0.055 (and 11% for part c)
+
 • Compounding: continuous
+
 • Target: $S(t)$ = 2 $S_0$
 
 **Part 2: Formula.**
 
 • $S(t) = S_0 e^{rt}$
+
 • Doubling time: $e^{rt} = 2 \\Rightarrow t = \\ln(2)/r$
 
 **Part 3: Solve.**
@@ -1710,14 +1801,19 @@ Losing a larger share of the original value naturally takes longer under continu
 **Part 1: Setup.**
 
 • $v_0$ = $120,000
+
 • Annual depreciation rate δ = 18% = 0.18 (and 9% for part d)
+
 • Compounding: continuous
+
 • Target: v(t) = 0.40 $v_0$ (and 0.20 $v_0$ for part e)
 
 **Part 2: Formula.**
 
 • Value: $v(t) = v_0 e^{-\\delta t}$
+
 • Fraction remaining equals $e^{-\\delta t}$
+
 • Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$
 
 **Part 3: Solve.**
@@ -1774,13 +1870,17 @@ This directly contradicts both the calculation above and the textbook's stated r
 **Part 1: Setup.**
 
 • P = $25,000
+
 • Nominal annual rates r = 3% and r = 15%
+
 • Compounding: continuous vs. annual (m = 1)
+
 • t = 1 year (and 8 years for part d, e)
 
 **Part 2: Formula.**
 
 • $S_{cont} = P \\cdot e^{rt}$
+
 • $S_{annual} = P \\cdot (1+r)^{t}$
 
 **Part 3: Solve.**
@@ -1841,15 +1941,21 @@ The gap shrinks from $164.51 (monthly) to $5.44 (daily) as the discrete schedule
 **Part 1: Setup.**
 
 • P = $400,000
+
 • Nominal annual rate r = i = 9.5% = 0.095
+
 • Fund A: continuous compounding
+
 • Fund B: m = 12 (monthly); part d, e also consider m = 365 (daily)
+
 • t = 1 year
 
 **Part 2: Formula.**
 
 • $S_A = P \\cdot e^{rt}$
+
 • $S_B = P \\cdot (1+i/m)^{mt}$
+
 • $EAR_{max} = e^{r} - 1$
 
 **Part 3: Solve.**
@@ -1910,13 +2016,17 @@ A rate of 6.00% instead of 6.67% would have produced a SMALLER 3-year value, app
 **Part 1: Setup.**
 
 • $S_0$ = $28,000
+
 • S(3) = $34,200 (observed)
+
 • Compounding: continuous
+
 • t = 3 years (observed); project to t = 5 years
 
 **Part 2: Formula.**
 
 • $S(t) = S_0 e^{rt} \\Rightarrow r = \\ln(S(t)/S_0)/t$
+
 • Doubling time: $t = \\ln(2)/r$
 
 **Part 3: Solve.**
@@ -1973,15 +2083,21 @@ Once Bank X's nominal rate is raised to match Bank Z's 7.0%, the ceiling result 
 **Part 1: Setup.**
 
 • P = $60,000
+
 • Bank X: r = 6.8% = 0.068, continuous
+
 • Bank Y: i = 6.9% = 0.069, m = 12 (monthly)
+
 • Bank Z: i = 7.0% = 0.070, m = 4 (quarterly)
+
 • t = 2 years
 
 **Part 2: Formula.**
 
 • $S_X = P \\cdot e^{rt}$
+
 • $S_Y = P(1+i/12)^{12t}$
+
 • $S_Z = P(1+i/4)^{4t}$
 
 **Part 3: Solve.**
@@ -2036,14 +2152,19 @@ Since the net rate is gross rate minus fee, a higher fee mechanically produces a
 **Part 1: Setup.**
 
 • $S_0$ = $2,000,000
+
 • Gross rate = 9% = 0.09; fee = 2% = 0.02 (and 3.5% = 0.035 for part d)
+
 • Compounding: continuous
+
 • t = 6 years
 
 **Part 2: Formula.**
 
 • Net rate: $r_{net} = r_{gross} - r_{fee}$
+
 • $S(t) = S_0 e^{r_{net} t}$
+
 • Doubling time: $t = \\ln(2)/r_{net}$
 
 **Part 3: Solve.**
@@ -2104,13 +2225,17 @@ Once A(t) exceeds B(t) at the crossover, A continues to grow while B continues t
 **Part 1: Setup.**
 
 • A0 = $50,000, $r_A$ = 4% = 0.04
+
 • B0 = $250,000, $\\delta_B$ = 12% = 0.12
+
 • Compounding: continuous
 
 **Part 2: Formula.**
 
 • $A(t) = A_0 e^{r_A t}$
+
 • $B(t) = B_0 e^{-\\delta_B t}$
+
 • Crossover: $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$
 
 **Part 3: Solve.**
@@ -2169,13 +2294,17 @@ Since $(1+r/n)^{n}$ → $e^{r}$ as n → ∞, and the sequence is strictly incre
 **Part 1: Setup.**
 
 • P = $40,000
+
 • Nominal annual rate i = r = 7% = 0.07
+
 • Schedules: annual (m = 1), quarterly (m = 4), monthly (m = 12), continuous
+
 • t = 1 year
 
 **Part 2: Formula.**
 
 • $S_m = P(1+i/m)^{m}$ for finite $m$
+
 • $S_{cont} = P e^{r}$
 
 **Part 3: Solve.**
@@ -2232,8 +2361,11 @@ With less time available to grow (4 years instead of 8), MORE money must be set 
 **Part 1: Setup.**
 
 • Target $S(t)$ = $100,000
+
 • Option 1: r = 4.5% = 0.045, t = 8 years (and t = 4 years for part e)
+
 • Option 2: r = 6.0% = 0.06, t = 8 years
+
 • Compounding: continuous
 
 **Part 2: Formula.**
@@ -2292,13 +2424,17 @@ Since $S_0$·$e^{r_1 t_1} e^{r_2 t_2}$ = $S_0$·$e^{r_1 t_1+r_2 t_2}$, and ordin
 **Part 1: Setup.**
 
 • $S_0$ = $1,800,000
+
 • Phase 1: r1 = 10% = 0.10, t1 = 4 years
+
 • Phase 2: r2 = 4% = 0.04, t2 = 3 years
 
 **Part 2: Formula.**
 
 • $S(t_1) = S_0 \\cdot e^{r_1 t_1}$
+
 • $S(t_1+t_2) = S(t_1) \\cdot e^{r_2 t_2} = S_0 \\cdot e^{r_1 t_1+r_2 t_2}$
+
 • Effective rate: $r_{eff} = (r_1 t_1 + r_2 t_2)/(t_1+t_2)$
 
 **Part 3: Solve.**
@@ -2353,14 +2489,19 @@ A higher target resale value of $40,000 (instead of $32,000) means LESS value wa
 **Part 1: Setup.**
 
 • $v_0$ = $85,000
+
 • v(6) = $32,000 (first crane, implied δ); known δ = 15% (second crane); v(6) target = $40,000 for part e
+
 • Compounding: continuous
+
 • t = 6 years
 
 **Part 2: Formula.**
 
 • Value: $v(t) = v_0 e^{-\\delta t}$
+
 • Fraction remaining equals $e^{-\\delta t}$
+
 • Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$
 
 **Part 3: Solve.**
@@ -2413,13 +2554,17 @@ Times to reach a given multiple scale with the NATURAL LOGARITHM of that multipl
 **Part 1: Setup.**
 
 • $S_0$ = $12,000
+
 • Nominal annual rate r = 6.5% = 0.065
+
 • Compounding: continuous
+
 • Targets: $S(t)$ = 2 $S_0$, 3 $S_0$, 4 $S_0$
 
 **Part 2: Formula.**
 
 • $S(t) = S_0 e^{rt}$
+
 • Time to reach multiple $M$: $t = \\ln(M)/r$
 
 **Part 3: Solve.**
@@ -2474,14 +2619,19 @@ Replacing Asset B's 9% depreciation with a 9% continuous growth rate over the sa
 **Part 1: Setup.**
 
 • Asset A: A0 = $150,000, $r_A$ = 6% = 0.06, t = 5 years
+
 • Asset B: B0 = $220,000, $\\delta_B$ = 9% = 0.09, t = 5 years
+
 • Asset C: C0 = $100,000, r1 = 8% for 3 years, then r2 = 3% for 2 years
 
 **Part 2: Formula.**
 
 • $A(t) = A_0 e^{r_A t}$
+
 • $B(t) = B_0 e^{-\\delta_B t}$
+
 • $C(5) = C_0 e^{r_1 \\cdot 3} \\cdot e^{r_2 \\cdot 2}$
+
 • Portfolio total: $A(5) + B(5) + C(5)$
 
 **Part 3: Solve.**
@@ -2540,7 +2690,9 @@ A 0% interest rate means money today and money in a year are worth exactly the s
 **Part 1: Setup.**
 
 • K (future bonus) = $8,000
+
 • Nominal annual rate p = 5%, so r = 0.05
+
 • t = 1 year (annual compounding)
 
 **Part 2: Formula.**
@@ -2599,7 +2751,9 @@ A payment further in the future is discounted more heavily, since there are more
 **Part 1: Setup.**
 
 • K (milestone payment) = $12,000
+
 • Continuous annual rate p = 6%, so r = 0.06
+
 • t = 3 years
 
 **Part 2: Formula.**
@@ -2658,12 +2812,15 @@ With no interest or discounting at all (r = 0), both the annual formula $K(1+0)^
 **Part 1: Setup.**
 
 • K (escrowed proceeds) = $45,000
+
 • Nominal/continuous annual rate p = 7%, so r = 0.07
+
 • t = 8 years
 
 **Part 2: Formula.**
 
 • Annual: PDV = $K(1+r)^{-t}$
+
 • Continuous: PDV = $Ke^{-rt}$
 
 **Part 3: Solve.**
@@ -2718,7 +2875,9 @@ Present-value discounting works exponentially in time, not linearly, so doubling
 **Part 1: Setup.**
 
 • K (target future amount) = $150,000
+
 • Continuous annual rate p = 4.5%, so r = 0.045
+
 • t = 5 years
 
 **Part 2: Formula.**
@@ -2777,12 +2936,15 @@ Continuous compounding discounts a given ratio of payoff to price more efficient
 **Part 1: Setup.**
 
 • PDV (purchase price) = $18,500
+
 • K (maturity payoff) = $25,000
+
 • Nominal annual rate p = 6%, so r = 0.06
 
 **Part 2: Formula.**
 
 • Annual: PDV = $K(1+r)^{-t}$, so t = ln(K/PDV) / ln(1 + r)
+
 • Continuous: PDV = $Ke^{-rt}$, so t = ln(K/PDV) / r
 
 **Part 3: Solve.**
@@ -2841,7 +3003,9 @@ Since the discount factor 0.45 corresponds to a fixed value of r × t (specifica
 **Part 1: Setup.**
 
 • PDV (price paid) = $27,000
+
 • K (future payoff) = $60,000
+
 • t = 12 years (continuous compounding)
 
 **Part 2: Formula.**
@@ -2900,13 +3064,17 @@ Recomputing both payments with continuous compounding at 5% gives a combined pre
 **Part 1: Setup.**
 
 • K1 = $40,000 due in t1 = 2 years
+
 • K2 = $65,000 due in t2 = 5 years
+
 • Nominal annual rate p = 5%, so r = 0.05
 
 **Part 2: Formula.**
 
 • Annual: PDV = $K(1+r)^{-t}$
+
 • Continuous: PDV = $Ke^{-rt}$
+
 • Combined PDV = PDV1 + PDV2
 
 **Part 3: Solve.**
@@ -2963,12 +3131,15 @@ At a 5% discount rate, Option B's present value works out to approximately $22,0
 **Part 1: Setup.**
 
 • Option A = $22,000 received today (t = 0)
+
 • Option B: K = $25,500 due in t = 3 years
+
 • Base nominal annual rate p = 6%, so r = 0.06
 
 **Part 2: Formula.**
 
 • PDV = $K(1+r)^{-t}$
+
 • An amount received today (t = 0) has present value equal to its face value
 
 **Part 3: Solve.**
@@ -3023,11 +3194,13 @@ Evaluating the present-value function at t = 25 instead of at the optimum gives 
 **Part 1: Setup.**
 
 • P(t) = $5{,}000(t+2)^{2}$
+
 • Continuous annual rate p = 8%, so r = 0.08
 
 **Part 2: Formula.**
 
 • Present value: f(t) = $P(t)e^{-rt}$
+
 • Optimality condition: P'(t*) = rP(t*)
 
 **Part 3: Solve.**
@@ -3082,12 +3255,15 @@ With no discounting at all, each payment's present value simply equals its face 
 **Part 1: Setup.**
 
 • K1 = $18,000 due in t1 = 4 years
+
 • K2 = $30,000 due in t2 = 9 years
+
 • Continuous annual rate p = 5.5%, so r = 0.055
 
 **Part 2: Formula.**
 
 • PDV = $Ke^{-rt}$
+
 • Combined PDV = PDV1 + PDV2
 
 **Part 3: Solve.**
@@ -3144,12 +3320,15 @@ The actual gap between the equivalent annual rate (5.13%) and the continuous rat
 **Part 1: Setup.**
 
 • K = $50,000
+
 • Continuous annual rate p = 5%, so r = 0.05
+
 • t = 7 years
 
 **Part 2: Formula.**
 
 • Continuous PDV = $Ke^{-rt}$
+
 • Equivalent annual rate: setting $K(1+r_a)^{-t}$ = $Ke^{-rt}$ and cancelling K and t shows $1+r_a = e^{r}$ (independent of t)
 
 **Part 3: Solve.**
@@ -3202,13 +3381,17 @@ A higher discount rate erodes more of a future face amount's value by the time i
 **Part 1: Setup.**
 
 • K1 = $42,000 due in t1 = 3 years
+
 • Target combined PDV = $100,000
+
 • Nominal annual rate p = 6%, so r = 0.06
+
 • Second receivable due in t2 = 6 years, face amount K2 unknown
 
 **Part 2: Formula.**
 
 • PDV = $K(1+r)^{-t}$
+
 • K2 = (Target - PV1) × $(1+r)^{t_2}$
 
 **Part 3: Solve.**
@@ -3263,7 +3446,9 @@ Shortening the horizon from 4 years to 2 years means less time is available for 
 **Part 1: Setup.**
 
 • Immediate option = $35,000 (today)
+
 • Continuous annual rate p = 6.5%, so r = 0.065
+
 • t = 4 years
 
 **Part 2: Formula.**
@@ -3322,11 +3507,13 @@ If the growth rate (5%) instead exceeds the discount rate (4%), the present-valu
 **Part 1: Setup.**
 
 • P(t) = $40{,}000e^{0.05t}$
+
 • Continuous annual discount rate p = 8%, so r = 0.08
 
 **Part 2: Formula.**
 
 • Present value: f(t) = $P(t)e^{-rt}$ = $40{,}000e^{(0.05-0.08)t}$ = $40{,}000e^{-0.03t}$
+
 • Optimality condition: P'(t*) = rP(t*)
 
 **Part 3: Solve.**
@@ -3381,14 +3568,19 @@ Since P''(t*) - rP'(t*) works out to -$1,092, which is indeed less than zero, th
 **Part 1: Setup.**
 
 • P(t*) = $520,000
+
 • P'(t*) = $46,800
+
 • P''(t*) = $3,120 per year
+
 • Continuous annual rate p = 9%, so r = 0.09
 
 **Part 2: Formula.**
 
 • Optimality check: P'(t*) = rP(t*)
+
 • dt*/dr = P(t*) / [P''(t*) - rP'(t*)]
+
 • Second-order condition for a maximum: P''(t*) - rP'(t*) < 0
 
 **Part 3: Solve.**
@@ -3443,12 +3635,15 @@ Using the exact relation t* = 2/r - 4 derived from this particular P(t), halving
 **Part 1: Setup.**
 
 • P(t) = $3{,}000(t+4)^{2}$
+
 • Continuous annual rate p = 9%, so r = 0.09
 
 **Part 2: Formula.**
 
 • P'(t) = 6,000(t + 4)
+
 • Optimality condition: P'(t*) = rP(t*)
+
 • dt*/dr = P(t*) / [P''(t*) - rP'(t*)]
 
 **Part 3: Solve.**
@@ -3509,12 +3704,15 @@ With no discounting applied at all, each payment's present value collapses to it
 **Part 1: Setup.**
 
 • K1 = $250,000 due in t1 = 2.5 years
+
 • K2 = $40,000 due in t2 = 7/12 year
+
 • Continuous annual rate p = 11%, so r = 0.11
 
 **Part 2: Formula.**
 
 • PDV = $Ke^{-rt}$
+
 • Combined PDV = PDV1 + PDV2
 
 **Part 3: Solve.**
@@ -3569,7 +3767,9 @@ Since the discount factor 0.625 corresponds to a fixed value of the product r ×
 **Part 1: Setup.**
 
 • PDV = $2,000,000
+
 • K = $3,200,000
+
 • t = 4.5 years (continuous compounding)
 
 **Part 2: Formula.**
@@ -3628,11 +3828,13 @@ Doubling r to 15% gives t* = 2/0.15 - 5 = 8.33 years. Half of the original 21.67
 **Part 1: Setup.**
 
 • P(t) = $A(t + k)^{2}$, with A = 1,200, k = 5
+
 • Continuous annual rate p = 7.5%, so r = 0.075
 
 **Part 2: Formula.**
 
 • P'(t) = 2A(t + k)
+
 • Optimality condition: P'(t*) = rP(t*)
 
 **Part 3: Solve.**
@@ -3691,13 +3893,17 @@ Adding the two present values together, since both are already expressed in toda
 **Part 1: Setup.**
 
 • K1 = $30,000 due in t1 = 5 years
+
 • K2 = $55,000 due in t2 = 10 years
+
 • Continuous annual rate p = 8%, so r = 0.08
 
 **Part 2: Formula.**
 
 • PDV = $Ke^{-rt}$
+
 • Since t2 = 2t1, the discount factor $e^{-rt_2}=(e^{-rt_1})^{2}$
+
 • Combined PDV = PDV1 + PDV2
 
 **Part 3: Solve.**
@@ -3752,12 +3958,15 @@ Recomputing s5 carefully with a=50, k=1.10, n=5 gives exactly 50×(1.61051-1)/0.
 **Part 1: Setup.**
 
 • a (year-1 revenue) = $50 million
+
 • k (annual growth quotient) = 1.10
+
 • n = 5 years
 
 **Part 2: Formula.**
 
 • sn = a + ak + $ak^{2}$ + ··· + $ak^{n-1}$ = $a(k^{n}-1)/(k-1)$, for k ≠ 1
+
 • Term in year t (t = 1,…,5): $a k^{t-1}$
 
 **Part 3: Solve.**
@@ -3814,11 +4023,13 @@ A ratio of k=1.5 has absolute value 1.5, which is greater than 1, so the success
 **Part 1: Setup.**
 
 • a (month-1 profit) = $2,000
+
 • k (monthly decay quotient) = 0.5
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a + ak + $ak^{2}$ + ··· = a/(1 - k)
+
 • Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
 
 **Part 3: Solve.**
@@ -3873,11 +4084,13 @@ A ratio of k=1.10 has absolute value greater than 1, meaning each deposit would 
 **Part 1: Setup.**
 
 • a (year-1 deposit) = $800
+
 • k (annual decay quotient) = 0.90
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
 
 **Part 3: Solve.**
@@ -3934,13 +4147,17 @@ Comparing the growth scenario (≈3,773,368 tons over 10 years) to a flat 300,00
 **Part 1: Setup.**
 
 • Reserves = 18,000,000 tons
+
 • Constant extraction a = 300,000 tons/year (part a); 500,000 tons/year (part b)
+
 • Growth scenario: a = 300,000 tons, k = 1.05, n = 10 years
 
 **Part 2: Formula.**
 
 • Years to exhaustion at constant rate: t = Reserves / (annual extraction)
+
 • Constant terms (k = 1 case): sn = a·n
+
 • Finite geometric series (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$
 
 **Part 3: Solve.**
@@ -3999,12 +4216,15 @@ Summing only the first 20 years under the 3% decline gives s20 = 180×(1-$0.97^{
 **Part 1: Setup.**
 
 • Reserves = 9,000 million tons
+
 • a (this year's output) = 180 million tons
+
 • k = 0.97 (3% annual decline); alternative k = 0.95 (5% annual decline)
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
 
 **Part 3: Solve.**
@@ -4063,11 +4283,13 @@ With k=-1, each new term exactly cancels the one before it: starting from a, the
 **Part 1: Setup.**
 
 • a (first adjustment) = $4,000
+
 • k (sign-reversing decay quotient) = -0.5
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Special case k = -1: sn = a when n is odd, sn = 0 when n is even
 
 **Part 3: Solve.**
@@ -4122,11 +4344,13 @@ The general ratio-based formula for a finite geometric series has (k-1) in its d
 **Part 1: Setup.**
 
 • Equal-payment case: a = $12 million/year, n = 15 years, k = 1
+
 • Growth case: a = $12 million, k = 1.04, n = 15 years
 
 **Part 2: Formula.**
 
 • k = 1 case: sn = a·n
+
 • k ≠ 1 case: sn = $a(k^{n}-1)/(k-1)$
 
 **Part 3: Solve.**
@@ -4181,12 +4405,15 @@ A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly fro
 **Part 1: Setup.**
 
 • a (year-1 payment) = $15,000
+
 • k (annual decay quotient) = 0.88
+
 • n = 8 years (finite clause)
 
 **Part 2: Formula.**
 
 • Finite sum: $s_n = a(1 - k^{n})/(1 - k)$
+
 • Infinite sum (|k| < 1): a/(1 - k)
 
 **Part 3: Solve.**
@@ -4243,13 +4470,17 @@ Twelve flat annual payments of $9,000 with no growth at all would total 9,000×1
 **Part 1: Setup.**
 
 • a (year-1 royalty) = $9,000
+
 • k (annual growth quotient) = 1.08
+
 • n = 12 years
 
 **Part 2: Formula.**
 
 • Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$
+
 • Term in year t: $a k^{t-1}$
+
 • Flat case (k = 1): sn = a·n
 
 **Part 3: Solve.**
@@ -4306,12 +4537,15 @@ Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value
 **Part 1: Setup.**
 
 • Finite phase: a = $4 million, k = 1.20, n = 6 years
+
 • Terminal phase: first term = year-6 revenue, quotient k = 0.85, infinite horizon
 
 **Part 2: Formula.**
 
 • Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$
+
 • Term in year t: $a k^{t-1}$
+
 • Infinite sum (|k| < 1): a/(1 - k)
 
 **Part 3: Solve.**
@@ -4366,12 +4600,15 @@ Splitting the same $58,000 total evenly across 6 months gives 58,000/6 ≈ $9,66
 **Part 1: Setup.**
 
 • s6 (total 6-month cost) = $58,000
+
 • k (monthly growth quotient) = 1.15
+
 • n = 6 months
 
 **Part 2: Formula.**
 
 • sn = $a(k^{n}-1)/(k-1)$ ⇒ a = sn·(k - 1)/($k^{n}-1$)
+
 • Term in month t: $a k^{t-1}$
 
 **Part 3: Solve.**
@@ -4428,12 +4665,15 @@ A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95)
 **Part 1: Setup.**
 
 • a (year-1 payout) = $500,000
+
 • k = 0.98 (primary scenario); alternative k = 0.95
+
 • n = 10 years (for the finite check)
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
 
 **Part 3: Solve.**
@@ -4492,7 +4732,9 @@ With a slower 8% growth rate, the 10-year total is s10 = 200,000×($1.08^{10}$-1
 **Part 1: Setup.**
 
 • a (year-1 spend) = $200,000
+
 • k = 1.12 (primary); alternative k = 1.08
+
 • Target cumulative spend = $3,000,000
 
 **Part 2: Formula.**
@@ -4551,12 +4793,15 @@ A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90)
 **Part 1: Setup.**
 
 • a (first grant) = $50,000
+
 • k = 0.96 (primary); alternative k = 0.90
+
 • n = 15 grants (for the finite check)
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
 
 **Part 3: Solve.**
@@ -4613,12 +4858,15 @@ If the 2% quarterly decline continued forever instead of stopping at 20 quarters
 **Part 1: Setup.**
 
 • a (quarter-1 yield) = 10,000 lbs
+
 • k (quarterly decline quotient) = 0.98
+
 • n = 20 quarters (5 years)
 
 **Part 2: Formula.**
 
 • Finite sum: $s_n = a(1 - k^{n})/(1 - k)$
+
 • Infinite sum (|k| < 1): a/(1 - k)
 
 **Part 3: Solve.**
@@ -4675,12 +4923,15 @@ The actual difference between the two totals is $815,382.06 - $791,797.43 = $23,
 **Part 1: Setup.**
 
 • Territory A: a = $80,000, k = 1.06
+
 • Territory B: a = $95,000, k = 1.02
+
 • n = 8 years for both
 
 **Part 2: Formula.**
 
 • sn = $a(k^{n}-1)/(k-1)$
+
 • Term in year t: $a k^{t-1}$
 
 **Part 3: Solve.**
@@ -4737,11 +4988,13 @@ With p=0.5, which is not greater than 1, this series falls outside the convergen
 **Part 1: Setup.**
 
 • $a_n = 5{,}000/n^{p}$
+
 • p = 1.5 (primary); p = 1 and p = 0.5 (comparison scenarios)
 
 **Part 2: Formula.**
 
 • p-series rule: $\\sum_{n=1}^{\\infty} 1/n^{p}$ is convergent ⇔ p > 1
+
 • Necessary (not sufficient) condition for convergence: if $\\sum a_n$ converges, then $\\lim_{n\\to\\infty} a_n$ = 0
 
 **Part 3: Solve.**
@@ -4796,13 +5049,17 @@ Extending the same calculations to 20 years gives a cumulative revenue of about 
 **Part 1: Setup.**
 
 • Revenue: a = $150,000, k = 1.01
+
 • Maintenance cost: a = $120,000, k = 1.03
+
 • Horizons: n = 12 years and n = 20 years
 
 **Part 2: Formula.**
 
 • sn = $a(k^{n}-1)/(k-1)$
+
 • Cumulative profit = $s_{\\mathrm{revenue}} - s_{\\mathrm{cost}}$
+
 • Term in year t: $a k^{t-1}$
 
 **Part 3: Solve.**
@@ -4863,13 +5120,17 @@ The 7th year of the recovery scenario alone is 2,400,000×$1.06^{6}$ ≈ 2,400,0
 **Part 1: Setup.**
 
 • a (current annual free cash flow) = $2,400,000
+
 • Recession: k = 0.94 (infinite horizon)
+
 • Recovery: k = 1.06, n = 7 years (finite horizon)
 
 **Part 2: Formula.**
 
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Finite sum of first n terms: sn = a·($1-k^{n}$)/(1-k) or $a(k^{n}-1)/(k-1)$
+
 • Term in year t: $a k^{t-1}$
 
 **Part 3: Solve.**
@@ -4924,15 +5185,21 @@ The individual term $f_{100} = 1{,}000/100$ = $10.00 is calculated correctly, an
 **Part 1: Setup.**
 
 • Tranche 1: a = $25,000 per year, k = 1, n = 9 years
+
 • Tranche 2: a = $18,000, k = 1.07, n = 9 years
+
 • Tranche 3: a = $30,000, k = 0.92, infinite horizon
+
 • Fee stream (separate): $f_n = 1{,}000/n$
 
 **Part 2: Formula.**
 
 • k = 1 case: sn = a·n
+
 • Finite sum (k ≠ 1): sn = $a(k^{n}-1)/(k-1)$
+
 • Infinite sum (|k| < 1): a/(1 - k)
+
 • Necessary (not sufficient) condition for convergence: convergence requires $\\lim_{n\\to\\infty} a_n$ = 0, but this alone does not guarantee convergence, as the harmonic-type counterexample below shows
 
 **Part 3: Solve.**
@@ -4989,8 +5256,11 @@ The discounting relationship is exponential in time, not linear, so doubling the
 **Part 1: Setup.**
 
 • Target future amount A = $5,000
+
 • Nominal annual rate r = 7% = 0.07 (and 5% for part b)
+
 • Compounding: annual, single deposit
+
 • t = 3 years (and 6 years for part e)
 
 **Part 2: Formula.**
@@ -5049,8 +5319,11 @@ Halving the rate does not halve the future value, since $(1+r)^{n}$ is not linea
 **Part 1: Setup.**
 
 • Present deposit P = $6,500
+
 • Nominal annual rate r = 6% = 0.06 (and 3% for part e)
+
 • Compounding: annual, single deposit
+
 • n = 5 years (and 10 years for parts c, d)
 
 **Part 2: Formula.**
@@ -5109,14 +5382,19 @@ F12 = $31,834.24 is actually MORE than double the 6-year value of $13,603.84 (do
 **Part 1: Setup.**
 
 • Annual deposit a = $2,000
+
 • Nominal annual rate r = 5% = 0.05
+
 • Compounding: annual, ordinary annuity (end-of-year deposits)
+
 • n = 6 years (and 12 years for part e)
 
 **Part 2: Formula.**
 
 • $F_n=(a/r)[(1+r)^{n}-1]$
+
 • $P_n=(a/r)[1-1/(1+r)^{n}]$
+
 • Relationship: $F_n=P_n(1+r)^{n}$
 
 **Part 3: Solve.**
@@ -5171,8 +5449,11 @@ Raising the rate to 10% increases F10 to $55,780.97, which does exceed the $55,0
 **Part 1: Setup.**
 
 • Annual deposit a = $3,500
+
 • Nominal annual rate r = 8% = 0.08 (and 10% for part e)
+
 • Compounding: annual, ordinary annuity
+
 • n = 10 years (and 20 years for part c)
 
 **Part 2: Formula.**
@@ -5231,8 +5512,11 @@ A higher interest rate discounts future withdrawals more heavily, which REDUCES 
 **Part 1: Setup.**
 
 • Annual withdrawal a = $2,400
+
 • Nominal annual rate r = 4.5% = 0.045 (and 6% for part e)
+
 • Compounding: annual, ordinary annuity
+
 • n = 15 years (and 30 years for part c)
 
 **Part 2: Formula.**
@@ -5291,13 +5575,17 @@ This is exactly how Section 11.5 derives the perpetuity formula: letting n tend 
 **Part 1: Setup.**
 
 • Annual payment a = $5,000
+
 • Nominal annual rate r = 6% = 0.06
+
 • Compounding: annual, ordinary annuity / perpetuity
+
 • n = 20 years (and 40 years for part d)
 
 **Part 2: Formula.**
 
 • $P_n=(a/r)[1-1/(1+r)^{n}]$
+
 • Perpetuity: $P=a/r$ (limit as $n\\to\\infty$)
 
 **Part 3: Solve.**
@@ -5352,13 +5640,17 @@ Growing the $18,000.00 lump sum forward at 7% for 9 years gives 18,000 × $(1.07
 **Part 1: Setup.**
 
 • Option 1: lump sum today = $18,000
+
 • Option 2: annual payment a = $2,500 for n = 9 years
+
 • Nominal annual rate r = 7% = 0.07 (and 4% for part c)
+
 • Compounding: annual, ordinary annuity
 
 **Part 2: Formula.**
 
 • $P_n=(a/r)[1-1/(1+r)^{n}]$
+
 • $F=P(1+r)^{n}$
 
 **Part 3: Solve.**
@@ -5413,13 +5705,17 @@ Even when Strategy B's total nominal contributions are raised to exactly match S
 **Part 1: Setup.**
 
 • Strategy A: single deposit P = $12,000 today
+
 • Strategy B: annual deposit a = $1,400 per year (raised to $1,500 for part e)
+
 • Nominal annual rate r = 6% = 0.06
+
 • n = 8 years
 
 **Part 2: Formula.**
 
 • $F=P(1+r)^{n}$
+
 • $F_n=(a/r)[(1+r)^{n}-1]$
 
 **Part 3: Solve.**
@@ -5474,13 +5770,17 @@ This is a direct structural identity: Fdue = Fordinary × (1+r) holds for any co
 **Part 1: Setup.**
 
 • Annual deposit a = $3,000, made at the START of each year
+
 • Nominal annual rate r = 5% = 0.05
+
 • Compounding: annual, annuity due
+
 • n = 6 years (and 12 years for part d)
 
 **Part 2: Formula.**
 
 • Future value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$
+
 • Future value of annuity due: $F_{due}=F_n(1+r)$
 
 **Part 3: Solve.**
@@ -5533,14 +5833,19 @@ Since the first payment of an annuity due occurs today (with zero discounting) a
 **Part 1: Setup.**
 
 • Annual lease payment a = $24,000, due at the START of each year
+
 • Nominal annual rate r = 6% = 0.06
+
 • Compounding: annual, annuity due
+
 • n = 5 years (and 10 years for part d)
 
 **Part 2: Formula.**
 
 • Present value of ordinary annuity: $P_n=(a/r)[1-1/(1+r)^{n}]$
+
 • Present value of annuity due: $P_{due}=P_n(1+r)$
+
 • Alternative: $P_{due}=a+P_{n-1}$
 
 **Part 3: Solve.**
@@ -5593,13 +5898,17 @@ Because PV0 = $V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-yea
 **Part 1: Setup.**
 
 • Annual payment a = $10,000, first payment at end of year 5
+
 • Nominal annual rate r = 6% = 0.06
+
 • Compounding: annual, deferred ordinary perpetuity
+
 • Deferral: value one period before first payment falls at t = 4 (and t = 8 for part d)
 
 **Part 2: Formula.**
 
 • Perpetuity value (as of one period before first payment): $V=a/r$
+
 • Discount back to today: $PV_0=V/(1+r)^{k}$, where k is the number of years from today to the valuation point
 
 **Part 3: Solve.**
@@ -5654,7 +5963,9 @@ Cutting the dividend by 20% cuts the fair value by exactly 20% as well: from $60
 **Part 1: Setup.**
 
 • Annual dividend a = $4.25 per share (and $3.40 for part e)
+
 • Required return r = 7% = 0.07 (and 4% for parts c, d)
+
 • Compounding: annual, perpetuity
 
 **Part 2: Formula.**
@@ -5713,13 +6024,17 @@ The perpetuity-only requirement at 6% ($250,000.00) is actually LARGER than half
 **Part 1: Setup.**
 
 • Annual maintenance payment a = $15,000
+
 • Immediate renovation cost = $50,000
+
 • Nominal annual rate r = 4.5% = 0.045 (and 6% = 0.06 for parts c, d, e)
+
 • Compounding: annual, perpetuity + lump sum
 
 **Part 2: Formula.**
 
 • Perpetuity: $P=a/r$
+
 • Total required funding = immediate cost + perpetuity value
 
 **Part 3: Solve.**
@@ -5772,8 +6087,11 @@ This is a direct structural requirement of the growing-perpetuity formula: it de
 **Part 1: Setup.**
 
 • Next-year cash flow a1 = $24,000
+
 • Growth rate g = 2.5% = 0.025 (and 0%, 4% for parts b, c)
+
 • Required return r = 8% = 0.08 (and 6% for part d)
+
 • Compounding: annual, growing perpetuity
 
 **Part 2: Formula.**
@@ -5832,13 +6150,17 @@ As g → r, the formula's denominator (r - g) shrinks toward zero, driving the R
 **Part 1: Setup.**
 
 • Just-paid dividend D0 = $3.00
+
 • Growth rate g = 3% = 0.03 (and 5% for part d)
+
 • Required return r = 9% = 0.09
+
 • Compounding: annual, growing perpetuity
 
 **Part 2: Formula.**
 
 • $D_1=D_0(1+g)$
+
 • Growing perpetuity: $P=D_1/(r-g)$
 
 **Part 3: Solve.**
@@ -5893,13 +6215,17 @@ Deal 1's fair value ($180,000.00) is actually LESS than Deal 2's fair value ($23
 **Part 1: Setup.**
 
 • Deal 1: level annual payment a = $18,000 (perpetuity)
+
 • Deal 2: next-year payment a1 = $14,000, growth g = 4% (and 1% for part d)
+
 • Required return r = 10% = 0.10
+
 • Asking price (both deals) = $170,000
 
 **Part 2: Formula.**
 
 • Level perpetuity: $P=a/r$
+
 • Growing perpetuity: $P=a_1/(r-g)$
 
 **Part 3: Solve.**
@@ -5956,13 +6282,17 @@ $e^{-0.055}$ ≈ 0.9465 means only about 94.65% of a dollar's value one year fro
 **Part 1: Setup.**
 
 • Target future amount = $250,000
+
 • Nominal annual rate r = 5.5% = 0.055
+
 • Compounding: continuous (and ordinary annual, for comparison)
+
 • t = 12 years (and 6 years for part d)
 
 **Part 2: Formula.**
 
 • Continuous-compounding present value: $S_0=S(t)e^{-rt}$
+
 • Ordinary annual present value: $S_0=S(t)/(1+r)^{t}$
 
 **Part 3: Solve.**
@@ -6017,14 +6347,19 @@ Sdiscrete = 75,000 × $(1.0625)^{9}$ = $129,426.15, which does exceed the annuit
 **Part 1: Setup.**
 
 • Lump sum P = $75,000 today
+
 • Equivalent annuity: annual deposit a = $8,333.33 for n = 9 years
+
 • Nominal annual rate r = 6.25% = 0.0625
+
 • Compounding: continuous (lump sum) vs. discrete annual (annuity and comparison)
 
 **Part 2: Formula.**
 
 • Continuous compounding: $S=Pe^{rt}$
+
 • Future value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$
+
 • Discrete compounding: $S=P(1+r)^{n}$
 
 **Part 3: Solve.**
@@ -6079,14 +6414,19 @@ The continuous-compounding investment grows to $30,439.24 after 7 years, which i
 **Part 1: Setup.**
 
 • Annuity due: a = $4,200, n = 5 years, r = 8% = 0.08
+
 • Continuous-compounding investment: P = $20,000 today, nominal r = 6% = 0.06, over a seven-year horizon
+
 • Perpetuity: a = $3,000, r = 8% = 0.08
 
 **Part 2: Formula.**
 
 • $P_{due}=(a/r)[1-1/(1+r)^{n}](1+r)$
+
 • $F_{due}=(a/r)[(1+r)^{n}-1](1+r)$
+
 • Continuous compounding: $S=Pe^{rt}$
+
 • Perpetuity: $P=a/r$
 
 **Part 3: Solve.**
@@ -6141,15 +6481,21 @@ Adding all four present-day figures gives $385,826.25 (using the correct Compone
 **Part 1: Setup.**
 
 • Component 1: P = $150,000, nominal r = 5% = 0.05, t = 10 years, continuous compounding
+
 • Component 2: target = $80,000, r = 6% = 0.06, n = 6 years, discrete annual compounding
+
 • Component 3: a = $10,000, n = 12 years, r = 7% = 0.07, ordinary annuity
+
 • Component 4: a1 = $5,000, g = 2% = 0.02, r = 7% = 0.07, growing perpetuity
 
 **Part 2: Formula.**
 
 • Continuous compounding: $S=Pe^{rt}$
+
 • Discrete single-sum present value: $x=A/(1+r)^{n}$
+
 • $P_n=(a/r)[1-1/(1+r)^{n}]$
+
 • Growing perpetuity: $P=a_1/(r-g)$
 
 **Part 3: Solve.**
@@ -6204,15 +6550,21 @@ Carrying the amortization forward two full years - recomputing interest on the s
 **Part 1: Setup.**
 
 • K (loan amount) = $60,000
+
 • r (annual interest rate) = 0.12
+
 • n = 6 equal annual payments
 
 **Part 2: Formula.**
 
 • Equal-payment formula: K = (a/r)$[1-(1+r)^{-n}]$
+
 • Solving for the payment: a = rK/$[1-(1+r)^{-n}]$
+
 • Interest in a period = r × outstanding balance at the start of that period
+
 • Principal repaid in a period = payment - interest for that period
+
 • New balance = old balance - principal repaid
 
 **Part 3: Solve.**
@@ -6269,14 +6621,19 @@ Spreading the same debt over only 4 much larger annual payments, rather than 48 
 **Part 1: Setup.**
 
 • K (amount financed) = $24,000
+
 • Nominal annual rate = 9%, compounding monthly
+
 • Term = 4 years (48 monthly payments)
 
 **Part 2: Formula.**
 
 • Monthly periodic rate: r = nominal annual rate / 12
+
 • Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$
+
 • Total paid = a × n
+
 • Total interest = total paid - K
 
 **Part 3: Solve.**
@@ -6331,14 +6688,19 @@ Since the loan is fully paid off by the end of year 5 (the balance reaches exact
 **Part 1: Setup.**
 
 • K (loan amount) = $45,000
+
 • r (annual interest rate) = 0.10
+
 • n = 5 equal annual payments
 
 **Part 2: Formula.**
 
 • Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$
+
 • Interest in a period = r × outstanding balance at the start of that period
+
 • Principal repaid = payment - interest
+
 • New balance = old balance - principal repaid
 
 **Part 3: Solve.**
@@ -6397,12 +6759,15 @@ Multiplying the correct per-payment amount of $22,946.14 by the 10 total payment
 **Part 1: Setup.**
 
 • K (present value owed) = $150,000
+
 • r (annual interest rate) = 0.11
+
 • n = 10 total payments, first one immediate
 
 **Part 2: Formula.**
 
 • Annuity-due present value: K = a + (a/r)$[1-(1+r)^{-(n-1)}]$
+
 • Ordinary-annuity comparison: a_ordinary = rK/$[1-(1+r)^{-n}]$
 
 **Part 3: Solve.**
@@ -6457,13 +6822,17 @@ Subtracting the original $35,000 principal from the total amount paid (about $49
 **Part 1: Setup.**
 
 • K (loan amount) = $35,000
+
 • r (annual interest rate) = 0.13
+
 • a (fixed annual payment) = $10,000
 
 **Part 2: Formula.**
 
 • Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$; the final payment is smaller than a unless this holds exactly
+
 • Future value of loan after m years: $K(1+r)^{m}$
+
 • Future value of m fixed payments (valued at the time of the m-th payment): (a/r)$[(1+r)^{m} - 1]$
 
 **Part 3: Solve.**
@@ -6520,7 +6889,9 @@ The comparison in part (d) directly contradicts this claim: at 14% the instalmen
 **Part 1: Setup.**
 
 • Option A: $500,000 paid today
+
 • Option B: a = $100,000/year, n = 7 payments, first one immediate
+
 • Interest rates considered: 10% and 14% per year
 
 **Part 2: Formula.**
@@ -6577,12 +6948,15 @@ The gap between the correct balance (≈ $4,641.30) and the simplified, interest
 **Part 1: Setup.**
 
 • D (quarterly deposit) = $250
+
 • r (annual interest rate) = 0.08
+
 • Deposits made at the end of each quarter; interest credited once per year
 
 **Part 2: Formula.**
 
 • Year-end equivalent of quarterly deposits: $D(1+3r/4) + D(1+2r/4) + D(1+r/4) + D(1+0) = D(4+1.5r)$
+
 • Future value after N years, treating each year's equivalent as an ordinary annuity payment: (year-end value/r)$[(1+r)^{N} - 1]$
 
 **Part 3: Solve.**
@@ -6637,14 +7011,19 @@ Multiplying the monthly payment by all 240 months and subtracting the original $
 **Part 1: Setup.**
 
 • K (mortgage amount) = $200,000
+
 • Nominal annual rate = 6%, compounding monthly
+
 • Term = 20 years (240 monthly payments)
+
 • m = 60 payments already made
 
 **Part 2: Formula.**
 
 • Monthly periodic rate: r = nominal annual rate / 12
+
 • Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$
+
 • Outstanding balance after m payments (of an n-payment loan): remaining balance = (a/r)$[1-(1+r)^{-(n-m)}]$
 
 **Part 3: Solve.**
@@ -6701,13 +7080,17 @@ Treating the final payment as if it were also a full $25,000 payment produces a 
 **Part 1: Setup.**
 
 • K (loan amount) = $120,000
+
 • r (annual interest rate) = 0.14
+
 • a (fixed annual payment) = $25,000
 
 **Part 2: Formula.**
 
 • Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$
+
 • Future value of loan after m years: $K(1+r)^{m}$
+
 • Future value of m fixed payments (valued at the time of the m-th payment): (a/r)$[(1+r)^{m} - 1]$
 
 **Part 3: Solve.**
@@ -6764,14 +7147,19 @@ Three annual loan payments of about $16,176.12 each add up to roughly $48,528.36
 **Part 1: Setup.**
 
 • Equipment loan: K = $90,000, r = 0.12, n = 8 payments, first one immediate
+
 • Reserve fund: quarterly deposit = $300, annual rate = 0.09, interest credited once per year, N = 3 years
 
 **Part 2: Formula.**
 
 • Annuity-due present value: K = a + (a/r)$[1-(1+r)^{-(n-1)}]$
+
 • Amortization after the immediate first payment: remaining loan behaves as an ordinary annuity of a for the remaining n-1 payments
+
 • Interest each period = r × balance at start of that period
+
 • Year-end equivalent of quarterly deposits: $D(4+1.5r)$
+
 • Future value after N years = (year-end value/r)$[(1+r)^{N} - 1]$
 
 **Part 3: Solve.**
@@ -6828,14 +7216,19 @@ At 13%, Schedule III's present value (about $475,574.61) is still slightly highe
 **Part 1: Setup.**
 
 • Schedule I: $500,000 cash today
+
 • Schedule II: a = $95,000/year, n = 7, first payment immediate
+
 • Schedule III: $150,000 cash today + a = $60,000/year, n = 10, first of these payments one year later
+
 • Interest rates considered: 9% and 13% per year
 
 **Part 2: Formula.**
 
 • Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$
+
 • Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$
+
 • Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments
 
 **Part 3: Solve.**
@@ -6892,14 +7285,19 @@ At 12%, Schedule III's present value (about $775,015.93) is actually lower than 
 **Part 1: Setup.**
 
 • Schedule I: $850,000 cash today
+
 • Schedule II: a = $140,000/year, n = 9, first payment immediate
+
 • Schedule III: $300,000 cash today + a = $80,000/year, n = 11, first of these payments one year later
+
 • Interest rates considered: 8% and 12% per year
 
 **Part 2: Formula.**
 
 • Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$
+
 • Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$
+
 • Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments
 
 **Part 3: Solve.**
@@ -6956,14 +7354,19 @@ At the higher rate of 11.5%, Schedule II's present value drops to approximately 
 **Part 1: Setup.**
 
 • Schedule I: $2,400,000 cash today
+
 • Schedule II: a = $340,000/year, n = 10, first payment immediate
+
 • Schedule III: $600,000 cash today + a = $250,000/year, n = 9, first of these payments one year later
+
 • Interest rates considered: 7.5% and 11.5% per year
 
 **Part 2: Formula.**
 
 • Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$
+
 • Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$
+
 • Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments
 
 **Part 3: Solve.**
@@ -7020,12 +7423,15 @@ The chapter's theorem states that if a0 < 0 and all subsequent returns are posit
 **Part 1: Setup.**
 
 • $a_0$ (initial outlay) = -$8,000
+
 • $a_1$ (return at end of Year 1) = $9,600
+
 • $n = 1$ year
 
 **Part 2: Formula.**
 
 • For a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$
+
 • Solving for $r$: $r = (b/a) - 1$
 
 **Part 3: Solve.**
@@ -7076,13 +7482,17 @@ With both $a_1$ and $a_2$ equal to $14,000, the equation becomes $14,000s^{2} + 
 **Part 1: Setup.**
 
 • $a_0$ = -$12,000
+
 • $a_1$ = $7,000
+
 • $a_2$ = $7,000
+
 • $n = 2$ years
 
 **Part 2: Formula.**
 
 • $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • Substitute $s = (1+r)^{-1}$
 
 **Part 3: Solve.**
@@ -7143,13 +7553,17 @@ $a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000 = 4,000$ (a positive $4,000), and th
 **Part 1: Setup.**
 
 • $a_0$ = -$20,000
+
 • $a_1$ = $9,000
+
 • $a_2$ = $15,000
+
 • $n = 2$ years
 
 **Part 2: Formula.**
 
 • $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • $s = (1+r)^{-1}$
 
 **Part 3: Solve.**
@@ -7206,7 +7620,9 @@ With $b$ = $25,000: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, whic
 **Part 1: Setup.**
 
 • Project X: $a$ = $15,000, $b$ = $17,250
+
 • Project Y: $a$ = $22,000, $b$ = $24,750
+
 • $n = 1$ year for each project
 
 **Part 2: Formula.**
@@ -7259,9 +7675,13 @@ The theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly pos
 **Part 1: Setup.**
 
 • $a_0$ = -$45,000
+
 • $a_1$ = -$3,000
+
 • $a_2$ = $28,000
+
 • $a_3$ = $35,000
+
 • $n = 3$ years
 
 **Part 2: Formula.**
@@ -7316,13 +7736,17 @@ With $a_0$ = -$30,000: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 
 **Part 1: Setup.**
 
 • $a_0$ = -$34,000
+
 • $a_1$ = $16,000
+
 • $a_2$ = $24,000
+
 • $n = 2$ years
 
 **Part 2: Formula.**
 
 • $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • $s = (1+r)^{-1}$
 
 **Part 3: Solve.**
@@ -7379,8 +7803,11 @@ The theorem's precondition (a0 < 0, all subsequent ai > 0) is satisfied exactly:
 **Part 1: Setup.**
 
 • $a_0$ = -$40,000
+
 • $a_1$ = $22,000
+
 • $a_2$ = $27,600
+
 • $n = 2$ years
 
 **Part 2: Formula.**
@@ -7433,13 +7860,17 @@ With $a_0$ = -$60,000: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s -
 **Part 1: Setup.**
 
 • $a_0$ = -$65,000
+
 • $a_1$ = $34,000
+
 • $a_2$ = $42,000
+
 • $n = 2$ years
 
 **Part 2: Formula.**
 
 • $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • $s = (1+r)^{-1}$
 
 **Part 3: Solve.**
@@ -7496,13 +7927,17 @@ With only $a_0$ = -$50,000 and $a_1$ = $6,000: $r = (6,000/50,000) - 1 = 0.12 - 
 **Part 1: Setup.**
 
 • $a_0$ (both options) = -$50,000
+
 • Option 1: $a_i$ = $6,000 each year, forever ($i = 1, 2, 3, \\ldots$)
+
 • Option 2: $a_1 = a_2$ = $6,000 ($n = 2$)
 
 **Part 2: Formula.**
 
 • Option 1 (as $n \\to \\infty$, with $a_i = a$ each year): $a_0 + a/r = 0$, so $r = a/(-a_0)$
+
 • Option 2 ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • Substitute $s = (1+r)^{-1}$
 
 **Part 3: Solve.**
@@ -7563,13 +7998,17 @@ With $a_1$ = $44,000: $88,000s^{2} + 44,000s - 120,000 = 0$ → $22s^{2} + 11s -
 **Part 1: Setup.**
 
 • Design A: $a_0$ = -$120,000, $a_1$ = $54,000, $a_2$ = $88,000
+
 • Design B: $a$ = $70,000, $b$ = $81,200
+
 • $n = 2$ years (Design A) / 1 year (Design B)
 
 **Part 2: Formula.**
 
 • Design A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
 • Substitute $s = (1+r)^{-1}$
+
 • Design B ($n = 1$): $r = (b/a) - 1$
 
 **Part 3: Solve.**

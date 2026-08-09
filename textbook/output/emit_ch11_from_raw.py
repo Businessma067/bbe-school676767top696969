@@ -55,7 +55,45 @@ def format_formula_block(formulas: str) -> list[str]:
         if not item:
             continue
         out.append(f"• {item}" if not item.startswith("•") else item)
-    return out or [f"• {raw}"]
+    if not out:
+        out = [f"• {raw}"]
+    # Blank line between bullets so ExplanationBody (\n\n split) puts each on its own paragraph
+    spaced: list[str] = []
+    for i, ln in enumerate(out):
+        if i:
+            spaced.append("")
+        spaced.append(ln)
+    return spaced
+
+
+def bullet_paragraphs(text: str) -> str:
+    """Ensure consecutive • lines become separate paragraphs (blank line between)."""
+    if not text or "•" not in text:
+        return text
+    lines: list[str] = []
+    for ln in text.splitlines():
+        stripped = ln.strip()
+        if stripped.startswith("•"):
+            if lines and lines[-1].strip() != "":
+                lines.append("")
+            lines.append(stripped)
+        else:
+            lines.append(ln)
+    # Also split rare same-line doubles: "• a • b"
+    joined = "\n".join(lines)
+    if re.search(r"•[^\n]*•", joined):
+        pieces: list[str] = []
+        for ln in joined.splitlines():
+            if ln.count("•") > 1:
+                bits = [b.strip() for b in ln.split("•") if b.strip()]
+                for j, b in enumerate(bits):
+                    if j:
+                        pieces.append("")
+                    pieces.append(f"• {b}")
+            else:
+                pieces.append(ln)
+        joined = "\n".join(pieces)
+    return joined
 
 
 def build_overview(task: dict, sub_id: str) -> str:
@@ -95,15 +133,19 @@ def build_overview(task: dict, sub_id: str) -> str:
 
     parts += ["**Part 3: Solve.**", ""]
     if steps:
-        # Split steps into numbered pieces on sentence boundaries when possible
-        sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", steps) if s.strip()]
-        if len(sents) >= 2:
-            for i, s in enumerate(sents[:8], 1):
-                parts.append(f"**{i}.** {s}")
-                parts.append("")
-        else:
-            parts.append(steps)
+        if "•" in steps:
+            parts.extend(format_formula_block(steps))
             parts.append("")
+        else:
+            # Split steps into numbered pieces on sentence boundaries when possible
+            sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", steps) if s.strip()]
+            if len(sents) >= 2:
+                for i, s in enumerate(sents[:8], 1):
+                    parts.append(f"**{i}.** {s}")
+                    parts.append("")
+            else:
+                parts.append(steps)
+                parts.append("")
     else:
         parts.append("Evaluate each statement against the setup and formulas above.")
         parts.append("")
@@ -127,6 +169,7 @@ def build_tactical(task: dict) -> list[str]:
             if truth
             else "This claim does not match the calculated result — check the trap highlighted in the solution."
         )
+        body = bullet_paragraphs(body)
         block = f"**{letters[i]}) {stmt}**  ({verdict})\n\n{body}"
         out.append(block)
     return out
