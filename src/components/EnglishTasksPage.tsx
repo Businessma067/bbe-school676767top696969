@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthNav } from "@/components/AuthNav";
+import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -1104,6 +1105,20 @@ function AllExplanationsPanel({
   onClose: () => void;
 }) {
   const letters = "ABCDE";
+  const body = [
+    task.solution_overview?.trim() ?? "",
+    "",
+    ...task.statements.flatMap((stmt, i) => {
+      const expl = (task.tactical_explanations[i] ?? "").trim();
+      if (expl) return [expl, ""];
+      const verdict = task.answer_key[i] ? "true" : "false";
+      return [`**${letters[i] ?? String(i + 1)}) ${stmt}.**  (${verdict})`, ""];
+    }),
+  ]
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
   return (
     <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
@@ -1121,44 +1136,8 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 space-y-5 overflow-y-auto bg-white px-6 py-6 sm:px-8 sm:py-7">
-        {task.solution_overview?.trim() ? (
-          <div>
-            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-              Overview
-            </p>
-            <p className="whitespace-pre-line text-[13px] leading-relaxed text-foreground">
-              {task.solution_overview.trim()}
-            </p>
-          </div>
-        ) : null}
-        {task.statements.map((stmt, i) => {
-          const ok = !!task.answer_key[i];
-          const expl = (task.tactical_explanations[i] ?? "").trim();
-          return (
-            <div key={i} className="border-t border-border/70 pt-4 first:border-t-0 first:pt-0">
-              <div className="mb-2 flex flex-wrap items-center gap-2">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                  {letters[i] ?? i + 1})
-                </span>
-                <span
-                  className={cn(
-                    "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-                    ok
-                      ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-                      : "bg-destructive/15 text-destructive",
-                  )}
-                >
-                  {ok ? "TRUE" : "FALSE"}
-                </span>
-              </div>
-              <p className="mb-2 text-[13px] font-medium leading-relaxed text-foreground">{stmt}</p>
-              <p className="whitespace-pre-line text-[13px] leading-relaxed text-muted-foreground">
-                {expl}
-              </p>
-            </div>
-          );
-        })}
+      <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+        <ExplanationProse text={body} />
       </div>
     </div>
   );

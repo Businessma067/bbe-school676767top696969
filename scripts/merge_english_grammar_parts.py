@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -55,14 +56,18 @@ def main() -> int:
                 if len(t.get(field) or []) != 5:
                     errors.append(f"{t.get('id')}: {field} len != 5")
             for a, e in zip(t.get("answer_key") or [], t.get("tactical_explanations") or []):
-                pref = "TRUE" if a else "FALSE"
-                if not str(e).lstrip().startswith(("TRUE —", "TRUE—", "TRUE.", "FALSE —", "FALSE—", "FALSE.")):
-                    # normalize later; soft for now
-                    pass
-                if a and not str(e).upper().startswith("TRUE"):
-                    errors.append(f"{t.get('id')}: expl should be TRUE")
-                if (not a) and not str(e).upper().startswith("FALSE"):
-                    errors.append(f"{t.get('id')}: expl should be FALSE")
+                s = str(e).lstrip()
+                m = re.search(r"\((true|false)\)", s, flags=re.I)
+                if m:
+                    got = m.group(1).lower() == "true"
+                    if got is not bool(a):
+                        errors.append(f"{t.get('id')}: expl (true/false) mismatch")
+                else:
+                    u = s.upper()
+                    if a and not u.startswith("TRUE"):
+                        errors.append(f"{t.get('id')}: expl should be TRUE")
+                    if (not a) and not u.startswith("FALSE"):
+                        errors.append(f"{t.get('id')}: expl should be FALSE")
             n_true = sum(1 for x in (t.get("answer_key") or []) if x)
             if not (1 <= n_true <= 5):
                 errors.append(f"{t.get('id')}: true count {n_true}")

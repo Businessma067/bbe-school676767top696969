@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -45,9 +46,16 @@ def difficulty_for(sort_order: int, tasks_per_sub: int) -> str | None:
 
 
 def expl_ok(answer: bool, expl: str) -> bool:
-    s = str(expl).lstrip().upper()
+    s = str(expl).lstrip()
+    # Math Ch11 style: **A) ...** (true|false)
+    m = re.search(r"\((true|false)\)", s, flags=re.I)
+    if m:
+        got = m.group(1).lower() == "true"
+        return got is bool(answer)
+    # Legacy: TRUE — / FALSE —
+    u = s.upper()
     want = "TRUE" if answer else "FALSE"
-    return s.startswith(want)
+    return u.startswith(want)
 
 
 def audit_bank(name: str, path: Path, expected_subs: int, tasks_per_sub: int) -> list[str]:
