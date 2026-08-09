@@ -20,6 +20,7 @@ export function ExplanationProse({
     | { kind: "part"; title: string }
     | { kind: "claim"; text: string }
     | { kind: "note"; body: string }
+    | { kind: "close"; text: string }
     | { kind: "para"; text: string };
 
   const chunks: Chunk[] = [];
@@ -41,6 +42,14 @@ export function ExplanationProse({
     const tipPlain = p.match(/^(Tip|Trap|Note):\s*([\s\S]*)$/i);
     if (tipPlain) {
       chunks.push({ kind: "note", body: `${tipPlain[1]}: ${tipPlain[2]}` });
+      continue;
+    }
+    // Natural verdict lead-in (not bare true/false)
+    if (
+      /^(so|therefore|hence|thus|overall)\b/i.test(p) &&
+      /\b(true|false|holds|correct|incorrect|right|wrong)\b/i.test(p)
+    ) {
+      chunks.push({ kind: "close", text: p });
       continue;
     }
     chunks.push({ kind: "para", text: p });
@@ -84,6 +93,13 @@ export function ExplanationProse({
               <span className="font-bold not-italic">{label}: </span>
               <InlineMarks text={rest.join(":").trim()} />
             </aside>
+          );
+        }
+        if (chunk.kind === "close") {
+          return (
+            <p key={idx} className="mb-4 mt-3 font-semibold leading-[1.6] text-[#111]">
+              <InlineMarks text={chunk.text} />
+            </p>
           );
         }
         return (

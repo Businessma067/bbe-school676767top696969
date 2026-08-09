@@ -1,42 +1,33 @@
-# Math Ch11–style English grammar explanations
+# English Grammar explanation style (v2)
 
-Rewrite ONLY `solution_overview` and `tactical_explanations` on every task.
-KEEP statements, answer_key, highlights, ids, difficulty, sort_order unchanged (unless a highlight must be trimmed).
+Rewrite ONLY `tactical_explanations` (and keep `solution_overview` unused by UI — leave as-is).
+KEEP statements, answer_key, highlights, ids, difficulty, sort_order unchanged.
 
-## Per-statement format (copy Math Ch11)
-
-```
-**A) <exact statement text>.**  (true)
-
-Two to four living tutorial sentences explaining why. Direct coach voice like Math Ch11 — not telegraphic.
-
-**Tip:** optional short cue.
-```
-
-False example:
+## Per-statement shape
 
 ```
-**B) <exact statement text>.**  (false)
+**A) <exact statement text>.**
 
-Trap: … name the mistake, give the repair, one more clarifying sentence if useful.
+2–4 living tutorial sentences (always — never shorten just to add/remove Tip/Trap).
+
+[optional Tip or Trap — see rules]
+
+Closing verdict lead-in sentence (required).
 ```
 
-Letters A–E must match index. Verdict `(true)` / `(false)` must match `answer_key`.
+### Closing verdict (required, every item)
+Do NOT end with bare `(true)` / `(false)`.
+Write a natural one-sentence lead-in to the result, e.g.:
+- true: `So the statement holds: present perfect correctly marks the open time span.`
+- false: `So the statement is false: repair to "…".`
 
-## solution_overview format
+The last sentence must clearly land on true vs false for this letter.
 
-```
-Short scene-setting paragraph (1–2 sentences).
+### Tip / Trap (optional — analyze each item)
+- Use **Trap:** only when the false wording is a real near-miss / exam trap (looks plausible). Prefer mid/hard items (difficulty 3–5). Soft false that is obviously wrong → no Trap label; just explain, then closing verdict.
+- Use **Tip:** only when a short memorable cue adds something the body did not already say. Easy obvious trues → usually no Tip.
+- If Tip/Trap would merely restate the paragraph, omit it. Omitting must NOT cut the main sentences.
 
-**Part 1: What to watch for.**
-
-2–3 sentences on the grammar focus of THIS task.
-
-**Part 2: How to decide.**
-
-2–3 sentences on the decision method across A–E.
-
-**Answer.** A=TRUE, B=FALSE, …
-```
-
-Make overviews / explanations a couple sentences fuller than bare tips. Everyday themes stay as in statements. Valid UTF-8 (use ASCII hyphen or proper em dash — not mojibake). No commit.
+### Format notes
+- Letter A–E matches index; claim repeats the exact statement.
+- UTF-8, no mojibake. Valid JSON. No commit.
